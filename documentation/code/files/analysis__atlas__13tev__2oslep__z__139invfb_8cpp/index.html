@@ -14,11 +14,19 @@ Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle
 <span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg></span></button><div class=collapse id=onThisPage><div class="card card-body mt-3 py-1"><div class=page-links><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#classes>Classes</a></li><li><a href=#source-code>Source code</a></li></ul></nav></div></div></div></div><div class="page-links d-none d-xl-block"><h3>On this page</h3><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#classes>Classes</a></li><li><a href=#source-code>Source code</a></li></ul></nav></div></nav><main class="docs-content col-lg-11 col-xl-9 mx-xl-auto"><nav aria-label=breadcrumb><ol class=breadcrumb><li class=breadcrumb-item><a href=/>Home</a></li><li class=breadcrumb-item><a href=/documentation/>Documentation</a></li><li class=breadcrumb-item><a href=/documentation/code/>Code Reference</a></li><li class="breadcrumb-item active" aria-current=page>file analyses/Analysis_ATLAS_13TeV_2OSLEP_Z_139invfb.cpp</li></ol></nav><p class=lead></p><h1 id=file-analyses-analysis-atlas-13tev-2oslep-z-139invfb-cpp>file analyses/Analysis_ATLAS_13TeV_2OSLEP_Z_139invfb.cpp <a href=#file-analyses-analysis-atlas-13tev-2oslep-z-139invfb-cpp class=anchor aria-hidden=true>#</a></h1><p>[No description available]</p><h2 id=namespaces>Namespaces <a href=#namespaces class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th>Name</th></tr></thead><tbody><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit/>Gambit</a></strong><br>TODO: see if we can use this one:</td></tr><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit_1_1colliderbit/>Gambit::ColliderBit</a></strong></td></tr></tbody></table><h2 id=classes>Classes <a href=#classes class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th></th><th>Name</th></tr></thead><tbody><tr><td>class</td><td><strong><a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2oslep__z__139invfb/>Gambit::ColliderBit::Analysis_ATLAS_13TeV_2OSLEP_Z_139invfb</a></strong></td></tr></tbody></table><h2 id=source-code>Source code <a href=#source-code class=anchor aria-hidden=true>#</a></h2><pre><code>///
 ///  \author Tomas Gonzalo
 ///  \date 2019 June
+///
+///  \author Anders Kvellestad
+///  \date 2021 Sep
+///
 ///  *********************************************
 
-// Based on https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2019-016/
+// Based on confnote https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2019-016/
+// Updated to paper version (3-lepton and 1-lepton SRs):
+// - https://arxiv.org/abs/2006.05880
+// - https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-2018-21/
+// 
+// Luminosity: 139 fb^-1
 
-// - 139 fb^-1 data
 
 #include &lt;vector&gt;
 #include &lt;cmath&gt;
@@ -48,10 +56,12 @@ namespace Gambit
 
       // Counters for the number of accepted events for each signal region
       std::map&lt;string, EventCounter&gt; _counters = {
-        {&quot;SR1A&quot;, EventCounter(&quot;SR1A&quot;)},
-        {&quot;SR1B&quot;, EventCounter(&quot;SR1B&quot;)},
-        {&quot;SR2A&quot;, EventCounter(&quot;SR2A&quot;)},
-        {&quot;SR2B&quot;, EventCounter(&quot;SR2B&quot;)},
+        {&quot;SRZ1A&quot;, EventCounter(&quot;SRZ1A&quot;)},
+        {&quot;SRZ1B&quot;, EventCounter(&quot;SRZ1B&quot;)},
+        {&quot;SRZ2A&quot;, EventCounter(&quot;SRZ2A&quot;)},
+        {&quot;SRZ2B&quot;, EventCounter(&quot;SRZ2B&quot;)},
+        // {&quot;SRh1A&quot;, EventCounter(&quot;SRh1A&quot;)},
+        // {&quot;SRh1B&quot;, EventCounter(&quot;SRh1B&quot;)},
       };
 
        vector&lt;Cutflow&gt; _cutflow;
@@ -85,14 +95,19 @@ namespace Gambit
 
 
         str cutflow_name = &quot;ATLAS 2 opposite sign leptons at the Z peak 13 TeV&quot;;
-        vector&lt;str&gt; SR1A = {&quot;Trigger&quot;, &quot;Third leading lepton pT &gt; 20 GeV&quot;, &quot;|mll - mZ| &lt; 15 GeV&quot;, &quot;nb-tagged (pT &gt; 30 GeV) &gt;= 1&quot;, &quot;njets (pT &gt; 30 GeV) &gt;= 4&quot;, &quot;MET &gt; 250 GeV&quot;, &quot;mT23l &gt; 100 GeV&quot;};
-        vector&lt;str&gt; SR1B = {&quot;Trigger&quot;, &quot;Third leading lepton pT &gt; 20 GeV&quot;, &quot;|mll - mZ| &lt; 15 GeV&quot;, &quot;nb-tagged (pT &gt; 30 GeV) &gt;= 1&quot;, &quot;njets (pT &gt; 30 GeV) &gt;= 5&quot;, &quot;MET &gt; 150 GeV&quot;, &quot;pTll &gt; 150 GeV&quot;, &quot;Leading b-tagged jet pT &gt; 100 GeV&quot;};
-        vector&lt;str&gt; SR2A = {&quot;Trigger&quot;, &quot;Third leading lepton pT &lt; 20 GeV&quot;, &quot;|mll - mZ| &lt; 15 GeV&quot;, &quot;Leading jet pT &gt; 150 GeV&quot;, &quot;MET &gt; 200 GeV&quot;, &quot;pTll &lt; 50 GeV&quot;};
-        vector&lt;str&gt; SR2B = {&quot;Trigger&quot;, &quot;Third leading lepton pT &lt; 60 GeV&quot;, &quot;|mll - mZ| &lt; 15 GeV&quot;, &quot;nb-tagged (pT &gt; 30 GeV) &gt;= 1&quot;, &quot;MET &gt; 350 GeV&quot;, &quot;pTll &gt; 150 GeV&quot;};
-        _cutflow = { Cutflow(cutflow_name, SR1A),
-                     Cutflow(cutflow_name, SR1B),
-                     Cutflow(cutflow_name, SR2A),
-                     Cutflow(cutflow_name, SR2B) };
+        vector&lt;str&gt; SRZ1A = {&quot;Trigger&quot;, &quot;Third leading lepton pT &gt; 20 GeV&quot;, &quot;|mll - mZ| &lt; 15 GeV&quot;, &quot;nb-tagged (pT &gt; 30 GeV) &gt;= 1&quot;, &quot;njets (pT &gt; 30 GeV) &gt;= 4&quot;, &quot;MET &gt; 250 GeV&quot;, &quot;mT23l &gt; 100 GeV&quot;};
+        vector&lt;str&gt; SRZ1B = {&quot;Trigger&quot;, &quot;Third leading lepton pT &gt; 20 GeV&quot;, &quot;|mll - mZ| &lt; 15 GeV&quot;, &quot;nb-tagged (pT &gt; 30 GeV) &gt;= 1&quot;, &quot;njets (pT &gt; 30 GeV) &gt;= 5&quot;, &quot;MET &gt; 150 GeV&quot;, &quot;pTll &gt; 150 GeV&quot;, &quot;Leading b-tagged jet pT &gt; 100 GeV&quot;};
+        vector&lt;str&gt; SRZ2A = {&quot;Trigger&quot;, &quot;Third leading lepton pT &lt; 20 GeV&quot;, &quot;|mll - mZ| &lt; 15 GeV&quot;, &quot;Leading jet pT &gt; 150 GeV&quot;, &quot;MET &gt; 200 GeV&quot;, &quot;pTll &lt; 50 GeV&quot;};
+        vector&lt;str&gt; SRZ2B = {&quot;Trigger&quot;, &quot;Third leading lepton pT &lt; 60 GeV&quot;, &quot;|mll - mZ| &lt; 15 GeV&quot;, &quot;nb-tagged (pT &gt; 30 GeV) &gt;= 1&quot;, &quot;MET &gt; 350 GeV&quot;, &quot;pTll &gt; 150 GeV&quot;};
+        // vector&lt;str&gt; SRh1A = {&quot;Trigger&quot;, &quot;nb-tagged (pT &gt; 30 GeV) &gt;= 4&quot;, &quot;nh-cand &gt;= 1&quot;, &quot;mT &gt; 150 GeV&quot;, &quot;njets (pT &gt; 60 GeV) &gt;= 4&quot;, &quot;S &gt; 12&quot;};
+        // vector&lt;str&gt; SRh1B = {&quot;Trigger&quot;, &quot;nb-tagged (pT &gt; 30 GeV) &gt;= 4&quot;, &quot;nh-cand &gt;= 1&quot;, &quot;mT &gt; 150 GeV&quot;, &quot;njets (pT &gt; 60 GeV) &gt;= 6&quot;, &quot;S &gt; 7&quot;};
+        _cutflow = { Cutflow(cutflow_name, SRZ1A),
+                     Cutflow(cutflow_name, SRZ1B),
+                     Cutflow(cutflow_name, SRZ2A),
+                     Cutflow(cutflow_name, SRZ2B),
+                     // Cutflow(cutflow_name, SRh1A),
+                     // Cutflow(cutflow_name, SRh1B)
+         };
         //_test = {0,0,0,0,0};
         //_test2 = 0;
 
@@ -104,7 +119,6 @@ namespace Gambit
         // Baseline objects
         vector&lt;const HEPUtils::Particle*&gt; baselineElectrons;
         vector&lt;const HEPUtils::Particle*&gt; baselineMuons;
-        vector&lt;const HEPUtils::Particle*&gt; baselineTaus;
         vector&lt;const HEPUtils::Jet*&gt; baselineJets;
         vector&lt;const HEPUtils::Jet*&gt; baselineBJets;
         vector&lt;const HEPUtils::Jet*&gt; baselineNonBJets;
@@ -117,7 +131,7 @@ namespace Gambit
         //  _test2++;
 
         // Initialize cutflow
-        for(int i=0; i&lt;4; i++)
+        for(size_t i=0; i&lt;_cutflow.size(); i++)
           _cutflow[i].fillinit();
 
         // Electron candidates are reconstructed from isolated electromagnetic calorimeter energy deposits matched to ID tracks and are required to have |η| &lt; 2.47, a transverse momentum pT &gt; 4.5 GeV, and to pass the “LooseAndBLayer” requirement in arXiv: 1902.04655 [hep-ex].
@@ -138,7 +152,7 @@ namespace Gambit
 
         // Apply muon efficiency
         // Missing: &quot;Medium&quot; muon ID criteria
-        ATLAS::applyMuonEff(baselineMuons);
+        ATLAS::applyMuonEffR2(baselineMuons);
 
         // Missing: transverse and longitudinal impact parameter cuts
 
@@ -177,7 +191,8 @@ namespace Gambit
         // Find b-jets
         // Copied from ATLAS_13TeV_3b_24invfb
         double btag = 0.77; double cmisstag = 1/16.; double misstag = 1./113.;
-        for (const HEPUtils::Jet* jet : baselineJets) {
+        for (const HEPUtils::Jet* jet : baselineJets)
+        {
           // Tag
           if( jet-&gt;btag() &amp;&amp; random_bool(btag) ) baselineBJets.push_back(jet);
           // Misstag c-jet
@@ -187,6 +202,17 @@ namespace Gambit
           // Non b-jet
           else baselineNonBJets.push_back(jet);
         }
+
+        // // Number of baseline leptons
+        // size_t nBaselineLeptons = baselineElectrons.size() + baselineMuons.size();
+
+        // Scalar sum of the transverse momenta from all the reconstructed hard objects
+        // Needed for calculating ETmiss significance later
+        double HT = 0.0;
+        for (const HEPUtils::Jet* j : baselineJets) HT += j-&gt;pT();
+        for (const HEPUtils::Particle* p : event-&gt;photons()) HT += p-&gt;pT();
+        for (const HEPUtils::Particle* e : baselineElectrons) HT += e-&gt;pT();
+        for (const HEPUtils::Particle* mu : baselineMuons) HT += mu-&gt;pT();
 
         // Signal objects
         vector&lt;const HEPUtils::Jet*&gt; signalJets = baselineJets;
@@ -216,13 +242,22 @@ namespace Gambit
         sort(signalBJets.begin(), signalBJets.end(), compareJetPt);
         sort(signalLeptons.begin(), signalLeptons.end(), comparePt);
 
-        // Trigger requirements are
+        // Trigger requirements for SRZ are
         // - &gt;=3 signal leptons
         // - &gt;=1 SF-OS pair
         // - leading lepton pT &gt; 40 GeV
         // - subleading lepton pT &gt; 20 GeV
         // - Zlike, |mll - mZ| &lt; 15 GeV
-        bool preselection = false;
+        bool SRZpreselection = false;
+
+        // Trigger requirements for SRh are
+        // - 1 signal lepton
+        // - MET &gt; 230 GeV
+        // - lepton pT &gt; 30 GeV
+        // - h candidates &gt;= 1
+        // - n b-tagged jets (pT &gt; 30 GeV) &gt;= 4
+        // - mT &gt; 150 GeV
+        // bool SRhpreselection = false; // currently not used
 
         // Count signal leptons and jets
         size_t nSignalLeptons = signalLeptons.size();
@@ -252,8 +287,20 @@ namespace Gambit
             Zlike = true;
         }
 
+        // h candidate
+        vector&lt;vector&lt;const HEPUtils::Jet*&gt;&gt; BJetPairs = getBJetPairs(signalBJets);
+        double h_id_eff = 0.52; // Paper claims an efficiency between 50% and 54% but, depending on the mass of stop1
+        int nhcand = 0;
+        for(size_t i=0; i&lt;BJetPairs.size(); ++i)
+          if(random_bool(h_id_eff)) nhcand++;
+   
+        // Transverse mass from leading lepton with pT
+        // double mT = nSignalLeptons &gt; 0 and get_mT(signalLeptons.at(0)-&gt;mom(), ptot);  // currently not used
+
         // Combine all preselection cuts
-        preselection = nSignalLeptons &gt;= 3 &amp;&amp; SFOSpairs.size() &gt;= 1 &amp;&amp; signalLeptons.at(0)-&gt;pT() &gt; 40. &amp;&amp; signalLeptons.at(1)-&gt;pT() &gt; 20. &amp;&amp; Zlike;
+        SRZpreselection = nSignalLeptons &gt;= 3 &amp;&amp; SFOSpairs.size() &gt;= 1 &amp;&amp; signalLeptons.at(0)-&gt;pT() &gt; 40. &amp;&amp; signalLeptons.at(1)-&gt;pT() &gt; 20. &amp;&amp; Zlike;
+        // Currently not used
+        // SRhpreselection = nSignalLeptons == 1 and met &gt; 230. and signalLeptons.at(0)-&gt;pT() &gt; 30. and nhcand &gt;= 1 and nSignalBJets &gt;= 4 and signalBJets.at(3)-&gt;pT() &gt; 30. and mT &gt; 150.;
 
         // Construct the mT23l variable for the pair of SFOS with invariant mass closest to mZ and highest pT lepton not in the pair
         vector&lt;const HEPUtils::Particle*&gt; SFOSpairClosestToMZ;
@@ -296,9 +343,14 @@ namespace Gambit
           mT23l = mt2_calc.get_mt2();
         }
 
-        // Signal Regions
+        // Construct Object-based MET significance
+        // FIXME: Can only do event-based MET signficance for now
+        // double met_significance = met / sqrt(HT); // currently not used
+        
 
-        // Requirement                      SR1A     SR1B    SR2A    SR2B
+        // Signal Regions
+        // 3l
+        // Requirement                      SRZ1A    SRZ1B   SRZ2A   SRZ2B
         // ---------------------------------------------------------------
         // Third leading lepton pT           &gt;20      &gt;20     &lt;20     &lt;60   // done
         // njets (pT &gt; 30 GeV)               &gt;=4      &gt;=5     &gt;=3     &gt;=3   // done
@@ -309,8 +361,8 @@ namespace Gambit
         // pTll                               -      &gt;150     &lt;50    &gt;150   // done
         // mT23l                            &gt;100       -       -       -    // done
 
-        // SR1A
-        if (preselection &amp;&amp;
+        // SRZ1A
+        if (SRZpreselection &amp;&amp;
             signalLeptons.at(2)-&gt;pT() &gt; 20. &amp;&amp;
             nSignalJets &gt;= 4 &amp;&amp; signalJets.at(3)-&gt;pT() &gt; 30. &amp;&amp;
             nSignalBJets &gt;= 1 &amp;&amp; signalBJets.at(0)-&gt;pT() &gt; 30. &amp;&amp;
@@ -320,10 +372,10 @@ namespace Gambit
             // -
             mT23l &gt; 100.
            )
-          _counters.at(&quot;SR1A&quot;).add_event(event);
+          _counters.at(&quot;SRZ1A&quot;).add_event(event);
 
-        // SR1B
-        if (preselection &amp;&amp;
+        // SRZ1B
+        if (SRZpreselection &amp;&amp;
             signalLeptons.at(2)-&gt;pT() &gt; 20. &amp;&amp;
             nSignalJets &gt;= 5 &amp;&amp; signalJets.at(4)-&gt;pT() &gt; 30. &amp;&amp;
             nSignalBJets &gt;= 1 &amp;&amp; signalBJets.at(0)-&gt;pT() &gt; 30. &amp;&amp;
@@ -333,10 +385,10 @@ namespace Gambit
             pTll &gt; 150.
             // -
            )
-          _counters.at(&quot;SR1B&quot;).add_event(event);
+          _counters.at(&quot;SRZ1B&quot;).add_event(event);
 
-        // SR2A
-        if (preselection &amp;&amp;
+        // SRZ2A
+        if (SRZpreselection &amp;&amp;
             signalLeptons.at(2)-&gt;pT() &lt; 20. &amp;&amp;
             nSignalJets &gt;= 3 &amp;&amp; signalJets.at(2)-&gt;pT() &gt; 30. &amp;&amp;
             // -
@@ -346,10 +398,10 @@ namespace Gambit
             pTll &lt; 50.
             // -
            )
-          _counters.at(&quot;SR2A&quot;).add_event(event);
+          _counters.at(&quot;SRZ2A&quot;).add_event(event);
 
-        // SR2B
-        if (preselection &amp;&amp;
+        // SRZ2B
+        if (SRZpreselection &amp;&amp;
             signalLeptons.at(2)-&gt;pT() &lt; 60. &amp;&amp;
             nSignalJets &gt;= 3 &amp;&amp; signalJets.at(2)-&gt;pT() &gt; 30. &amp;&amp;
             nSignalBJets &gt;= 1 &amp;&amp; signalBJets.at(0)-&gt;pT() &gt; 30. &amp;&amp;
@@ -359,16 +411,33 @@ namespace Gambit
            pTll &gt; 150.
            // -
            )
-          _counters.at(&quot;SR2B&quot;).add_event(event);
+          _counters.at(&quot;SRZ2B&quot;).add_event(event);
+
+        // 1l
+        // Requirement                      SRh1A    SRh1B
+        // ---------------------------------------------------------------
+        // njets (pT &gt; 60 GeV)               &gt;=4      &gt;=6   // done
+        // Object-based MET significance     &gt;12      &gt;7    // done
+
+        // SRh1A
+        // if (SRhpreselection &amp;&amp;
+        //     nSignalJets &gt;= 4 &amp;&amp; signalJets.at(3)-&gt;pT() &gt; 60. &amp;&amp;
+        //     met_significance &gt; 12.
+        //    )
+        //   _counters.at(&quot;SRh1A&quot;).add_event(event);
+
+        // SRh1B
+        // if (SRhpreselection &amp;&amp;
+        //     nSignalJets &gt;= 6 &amp;&amp; signalJets.at(5)-&gt;pT() &gt; 60. &amp;&amp;
+        //     met_significance &gt; 7.
+        //    )
+        //   _counters.at(&quot;SRh1B&quot;).add_event(event);
 
         // Cutflows
 
-        // Fill cutflow with preselection trigger as defined by ATLAS
+        // Fill cutflow with preselection trigger as defined by ATLAS, for SRZ signal regions
         //if(nSignalLeptons &gt;= 3) _test[0]++;
-        //if(nSignalLeptons &gt;= 3 &amp;&amp; nSignalJets &gt;= 3 &amp;&amp; signalJets.at(2)-&gt;pT() &gt; 30.) _test[1]++;
-        //if(nSignalLeptons &gt;= 3 &amp;&amp; nSignalJets &gt;= 3 &amp;&amp; signalJets.at(2)-&gt;pT() &gt; 30. &amp;&amp; met &gt; 50.) _test[2]++;
-        //if(nSignalLeptons &gt;= 3 &amp;&amp; nSignalJets &gt;= 3 &amp;&amp; signalJets.at(2)-&gt;pT() &gt; 30. &amp;&amp; met &gt; 50. &amp;&amp; signalLeptons.at(0)-&gt;pT() &gt; 40.) _test[3]++;
-        //if(nSignalLeptons &gt;= 3 &amp;&amp; nSignalJets &gt;= 3 &amp;&amp; signalJets.at(2)-&gt;pT() &gt; 30. &amp;&amp; met &gt; 50. &amp;&amp; signalLeptons.at(0)-&gt;pT() &gt; 40. &amp;&amp; signalLeptons.at(1)-&gt;pT() &gt; 20.) _test[4]++;
+        //if(baselineElectrons.size() + baselineMuons.size() &gt;= 3) _test[1]++;
         if(nSignalLeptons &gt;= 3 &amp;&amp; nSignalJets &gt;= 3 &amp;&amp; signalJets.at(2)-&gt;pT() &gt; 30. &amp;&amp; met &gt; 50. &amp;&amp; signalLeptons.at(0)-&gt;pT() &gt; 40. &amp;&amp; signalLeptons.at(1)-&gt;pT() &gt; 20.)
         {
           // 1
@@ -458,6 +527,54 @@ namespace Gambit
             _cutflow[1].fill(8, SR[1]);
           else SR[1] = false;
         }
+
+        // Fill cutflow with preselection trigger as defined by ATLAS, for SRh signal aregions
+        // if (nSignalLeptons == 1 and nBaselineLeptons &gt; 1 and nSignalJets &gt;= 4 and signalJets.at(3)-&gt;pT() &gt; 30. and nSignalBJets &gt;= 3 and signalBJets.at(2)-&gt;pT() &gt; 30.)
+        // {
+        //   _cutflow[4].fill(1);
+        //   _cutflow[5].fill(1);
+ 
+        //   // 1
+        //   if (nSignalBJets &gt;= 4 and signalBJets.at(3)-&gt;pT() &gt; 30.)
+        //   {
+        //     _cutflow[4].fill(2);
+        //     _cutflow[5].fill(2);
+ 
+        //     // 2
+        //     if (nhcand &gt;= 1)
+        //     {
+        //       _cutflow[4].fill(3);
+        //       _cutflow[5].fill(3);
+ 
+        //       // 3
+        //       if (mT &gt; 150.)
+        //       {
+        //         _cutflow[4].fill(4);
+        //         _cutflow[5].fill(4);
+ 
+        //         // 4, SRh1A
+        //         if (nSignalJets &gt;= 4 and signalJets.at(3)-&gt;pT() &gt; 60.)
+        //         {
+        //           _cutflow[4].fill(5);
+ 
+        //           // 5
+        //           if (met_significance &gt; 12.)
+        //             _cutflow[4].fill(6);
+        //         }
+        //         // 4, SRh1B
+        //         if (nSignalJets &gt;= 6 and signalJets.at(3)-&gt;pT() &gt; 60.)
+        //         {
+        //           _cutflow[5].fill(5); 
+ 
+        //           // 5
+        //           if (met_significance &gt; 7.)
+        //             _cutflow[5].fill(6);
+        //         }
+        //       }
+        //     }
+        //   }
+        // } 
+ 
       }
 
       /// Combine the variables of another copy of this analysis (typically on another thread) into this one.
@@ -473,19 +590,18 @@ namespace Gambit
       virtual void collect_results()
       {
 
-        add_result(SignalRegionData(_counters.at(&quot;SR1A&quot;), 3., {5.4, 0.7}));
-        add_result(SignalRegionData(_counters.at(&quot;SR1B&quot;), 14., {12.8, 1.6}));
-        add_result(SignalRegionData(_counters.at(&quot;SR2A&quot;), 3., {5.7, 1.7}));
-        add_result(SignalRegionData(_counters.at(&quot;SR2B&quot;), 6., {5.4, 0.8}));
+        add_result(SignalRegionData(_counters.at(&quot;SRZ1A&quot;), 3., {5.7, 1.0}));
+        add_result(SignalRegionData(_counters.at(&quot;SRZ1B&quot;), 14., {12.1, 2.0}));
+        add_result(SignalRegionData(_counters.at(&quot;SRZ2A&quot;), 3., {5.6, 1.6}));
+        add_result(SignalRegionData(_counters.at(&quot;SRZ2B&quot;), 6., {5.5, 0.9}));
+        // add_result(SignalRegionData(_counters.at(&quot;SRh1A&quot;), 11., {17., 3.}));
+        // add_result(SignalRegionData(_counters.at(&quot;SRh1B&quot;), 24., {19., 5.}));
 
         #ifdef CHECK_CUTFLOW
           cout &lt;&lt; _cutflow &lt;&lt; endl;
           //cout &lt;&lt; &quot;n signal leptons before = &quot; &lt;&lt; _test2 &lt;&lt; endl;
           //cout &lt;&lt; &quot;n signal leptons = &quot; &lt;&lt; _test[0] &lt;&lt; endl;
-          //cout &lt;&lt; &quot;n signal jets (pT &gt; 30) = &quot; &lt;&lt; _test[1] &lt;&lt; endl;
-          //cout &lt;&lt; &quot;met = &quot; &lt;&lt; _test[2] &lt;&lt; endl;
-          //cout &lt;&lt; &quot;leading lepton pT &gt; 40 = &quot; &lt;&lt; _test[3] &lt;&lt; endl;
-          //cout &lt;&lt; &quot;subleading lepton pT &gt; 20 = &quot; &lt;&lt; _test[4] &lt;&lt; endl;
+          //cout &lt;&lt; &quot;n baseline leptons = &quot; &lt;&lt; _test[1] &lt;&lt; endl;
         #endif
 
 
@@ -506,7 +622,7 @@ namespace Gambit
 
   }
 }
-</code></pre><hr><p>Updated on 2022-09-08 at 03:46:48 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.a08b5ca912a508bc013bbd939befee438a0d2f798076e860e42147c7c0e2a01cf714847f7f5a2824876ce72867b0182df10e3537711faff352dd1ef41550be7c.js integrity="sha512-oItcqRKlCLwBO72Tm+/uQ4oNL3mAduhg5CFHx8DioBz3FIR/f1ooJIds5yhnsBgt8Q41N3Efr/NS3R70FVC+fA==" crossorigin=anonymous defer></script>
+</code></pre><hr><p>Updated on 2023-06-26 at 21:36:56 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.a08b5ca912a508bc013bbd939befee438a0d2f798076e860e42147c7c0e2a01cf714847f7f5a2824876ce72867b0182df10e3537711faff352dd1ef41550be7c.js integrity="sha512-oItcqRKlCLwBO72Tm+/uQ4oNL3mAduhg5CFHx8DioBz3FIR/f1ooJIds5yhnsBgt8Q41N3Efr/NS3R70FVC+fA==" crossorigin=anonymous defer></script>
 <script src=/js/highlight.min.ce91dadbce67e8eef36fa222c1c74c99f623c836cf6a316dffa1aeb390ab659d9a20d8145ceac39e049c555414fc360d31315e7980535dc6c03eb5374b7d559d.js integrity="sha512-zpHa285n6O7zb6IiwcdMmfYjyDbPajFt/6Gus5CrZZ2aINgUXOrDngScVVQU/DYNMTFeeYBTXcbAPrU3S31VnQ==" crossorigin=anonymous defer></script>
 <script src=/main.min.57d9a84956f7d60008c47938c7fdd2f75e8618ff1d09c5a5e2b32f91debaf7681f7ceca8b51aded60067c2136172134a91ebc0674487c76a04e3244d927ebdde.js integrity="sha512-V9moSVb31gAIxHk4x/3S916GGP8dCcWl4rMvkd6692gffOyotRre1gBnwhNhchNKkevAZ0SHx2oE4yRNkn693g==" crossorigin=anonymous defer></script>
-<script src=/index.min.2a2f6bd25e0a661102d8769165ef9d3273d4db5ae6edbc62261887d88167016dfb0f6310393f582bcc424de5dc6eab3a529fd305ba4c3afc8e551f0093ed322c.js integrity="sha512-Ki9r0l4KZhEC2HaRZe+dMnPU21rm7bxiJhiH2IFnAW37D2MQOT9YK8xCTeXcbqs6Up/TBbpMOvyOVR8Ak+0yLA==" crossorigin=anonymous defer></script></body></html>
+<script src=/index.min.95720397d55302de0e04fb8f4bf89a7396888a3be86803aa187cbc45924e9c35452b4bef718cd568b25ad872307d8f5537eab4c0045b8043c40628674a4fc53d.js integrity="sha512-lXIDl9VTAt4OBPuPS/iac5aIijvoaAOqGHy8RZJOnDVFK0vvcYzVaLJa2HIwfY9VN+q0wARbgEPEBihnSk/FPQ==" crossorigin=anonymous defer></script></body></html>

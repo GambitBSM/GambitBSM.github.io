@@ -11,7 +11,7 @@ Tutorials</button><div class=collapse id=section-tutorials><ul class="btn-toggle
 Help</button><div class=collapse id=section-help><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/help/common_problems_and_questions/>Common Problems and Questions</a></li><li><a class="docs-link rounded" href=/documentation/help/compiler_matrix/>Compiler Matrix</a></li><li><a class="docs-link rounded" href=/documentation/help/known_issues/>Known Issues</a></li><li><a class="docs-link rounded" href=/documentation/help/configuration_examples/>Configuration Examples</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-code aria-expanded=false>
 Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/code/index_classes/>Classes</a></li><li><a class="docs-link rounded" href=/documentation/code/index_files/>Files</a></li><li><a class="docs-link rounded" href=/documentation/code/index_pages/>Pages</a></li><li><a class="docs-link rounded" href=/documentation/code/index_namespaces/>Namespaces</a></li></ul></div></li></ul></nav></div><nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation"><div class=d-xl-none><button class="btn btn-outline-primary btn-sm doks-toc-toggle collapsed" type=button data-bs-toggle=collapse data-bs-target=#onThisPage aria-controls=doks-docs-nav aria-expanded=false aria-label="Toggle On this page navigation">
 <span>On this page</span>
-<span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg></span></button><div class=collapse id=onThisPage><div class="card card-body mt-3 py-1"><div class=page-links><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#source-code>Source code</a></li></ul></nav></div></div></div></div><div class="page-links d-none d-xl-block"><h3>On this page</h3><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#source-code>Source code</a></li></ul></nav></div></nav><main class="docs-content col-lg-11 col-xl-9 mx-xl-auto"><nav aria-label=breadcrumb><ol class=breadcrumb><li class=breadcrumb-item><a href=/>Home</a></li><li class=breadcrumb-item><a href=/documentation/>Documentation</a></li><li class=breadcrumb-item><a href=/documentation/code/>Code Reference</a></li><li class="breadcrumb-item active" aria-current=page>file src/file_lock.cpp</li></ol></nav><p class=lead></p><h1 id=file-src-file-lock-cpp>file src/file_lock.cpp <a href=#file-src-file-lock-cpp class=anchor aria-hidden=true>#</a></h1><p>[No description available] <a href=#detailed-description>More&mldr;</a></p><h2 id=namespaces>Namespaces <a href=#namespaces class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th>Name</th></tr></thead><tbody><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit/>Gambit</a></strong><br>TODO: see if we can use this one:</td></tr><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit_1_1utils/>Gambit::Utils</a></strong></td></tr></tbody></table><h2 id=detailed-description>Detailed Description <a href=#detailed-description class=anchor aria-hidden=true>#</a></h2><p><strong>Author</strong>:</p><ul><li>Ben Farmer (<a href=mailto:ben.farmer@gmail.com>ben.farmer@gmail.com</a>)</li><li>Pat Scott (<a href=mailto:p.scott@imperial.ac.uk>p.scott@imperial.ac.uk</a>)</li></ul><p><strong>Date</strong>:</p><ul><li>2016 Feb, 2019 Apr</li><li>2016, 2019 Sep</li></ul><p>GAMBIT file locking functions Use these to block access to sensitive parts of the code by other processes when we are using them. For example, some backends do stupid things like initialise themselves by writing and reading files; use these routines to force only one process at a time to perform these routines.</p><p>Can also be used to literally lock access to a particular file, e.g. HDF5Printer2 output uses these to serialise write access to the hdf5 output file.</p><p>Usage:</p><p>{ Utils::FileLock mylock(&ldquo;some_unique_name&rdquo;); mylock.get_lock(); /* Do sensitive stuff. No other process will be allowed into this code region while we are here. <em>/ mylock.release_lock(); } /</em> If not already done, lock is automatically released when &lsquo;mylock&rsquo; is destructed */</p><hr><p>Authors (add name and date if you modify):</p><hr><h2 id=source-code>Source code <a href=#source-code class=anchor aria-hidden=true>#</a></h2><pre><code>//   GAMBIT: Global and Modular BSM Inference Tool
+<span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg></span></button><div class=collapse id=onThisPage><div class="card card-body mt-3 py-1"><div class=page-links><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#source-code>Source code</a></li></ul></nav></div></div></div></div><div class="page-links d-none d-xl-block"><h3>On this page</h3><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#source-code>Source code</a></li></ul></nav></div></nav><main class="docs-content col-lg-11 col-xl-9 mx-xl-auto"><nav aria-label=breadcrumb><ol class=breadcrumb><li class=breadcrumb-item><a href=/>Home</a></li><li class=breadcrumb-item><a href=/documentation/>Documentation</a></li><li class=breadcrumb-item><a href=/documentation/code/>Code Reference</a></li><li class="breadcrumb-item active" aria-current=page>file src/file_lock.cpp</li></ol></nav><p class=lead></p><h1 id=file-src-file-lock-cpp>file src/file_lock.cpp <a href=#file-src-file-lock-cpp class=anchor aria-hidden=true>#</a></h1><p>[No description available] <a href=#detailed-description>More&mldr;</a></p><h2 id=namespaces>Namespaces <a href=#namespaces class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th>Name</th></tr></thead><tbody><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit/>Gambit</a></strong><br>TODO: see if we can use this one:</td></tr><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit_1_1utils/>Gambit::Utils</a></strong></td></tr></tbody></table><h2 id=detailed-description>Detailed Description <a href=#detailed-description class=anchor aria-hidden=true>#</a></h2><p><strong>Author</strong>:</p><ul><li>Ben Farmer (<a href=mailto:ben.farmer@gmail.com>ben.farmer@gmail.com</a>)</li><li>Pat Scott (<a href=mailto:p.scott@imperial.ac.uk>p.scott@imperial.ac.uk</a>)</li><li>Tomas Gonzalo (<a href=mailto:tomas.gonzalo@kit.edu>tomas.gonzalo@kit.edu</a>)</li></ul><p><strong>Date</strong>:</p><ul><li>2016 Feb, 2019 Apr</li><li>2016, 2019 Sep</li><li>2022 Oct</li></ul><p>GAMBIT file locking functions Use these to block access to sensitive parts of the code by other processes when we are using them. For example, some backends do stupid things like initialise themselves by writing and reading files; use these routines to force only one process at a time to perform these routines.</p><p>Can also be used to literally lock access to a particular file, e.g. HDF5Printer2 output uses these to serialise write access to the hdf5 output file.</p><p>Usage:</p><p>{ Utils::FileLock mylock(&ldquo;some_unique_name&rdquo;); mylock.get_lock(); /* Do sensitive stuff. No other process will be allowed into this code region while we are here. <em>/ mylock.release_lock(); } /</em> If not already done, lock is automatically released when &lsquo;mylock&rsquo; is destructed */</p><hr><p>Authors (add name and date if you modify):</p><hr><h2 id=source-code>Source code <a href=#source-code class=anchor aria-hidden=true>#</a></h2><pre><code>//   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
 ///  \file
 ///
@@ -54,6 +54,10 @@ Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle
 ///          (p.scott@imperial.ac.uk)
 ///  \date 2016, 2019 Sep
 ///
+///  \author Tomas Gonzalo
+///          (tomas.gonzalo@kit.edu)
+///  \date 2022 Oct
+///
 ///  *********************************************
 
 #include &lt;cstdio&gt;
@@ -87,11 +91,13 @@ namespace Gambit
       const std::string hardmsg(&quot;Now calling abort (will produce a core file for analysis if this is enabled on your system; if so please include this with the bug report)&quot;);
 
       /// Constructor
-      FileLock::FileLock(const std::string&amp; fname, const bool harderrs)
+      FileLock::FileLock(const std::string&amp; fname, const bool is_exhaustible, const bool harderrs)
        : my_lock_fname(ensure_path_exists(fname))
        , fd(open(my_lock_fname.c_str(), O_RDWR | O_CREAT, 0666)) // last argument is permissions, in case file has to be created.
        , have_lock(false)
        , hard_errors(harderrs)
+       , exhaustible(is_exhaustible)
+       , exhausted_lock(false)
       {
         /// Should check for errors opening the file. List of error codes is kind of long though, let people look it up themselves for now...
         if(fd&lt;0)
@@ -173,6 +179,7 @@ namespace Gambit
         have_lock = true;
       }
 
+
       /// Release a lock (error if no lock held)
       void FileLock::release_lock()
       {
@@ -183,6 +190,27 @@ namespace Gambit
           msg &lt;&lt; &quot;Tried to release lock for file '&quot;&lt;&lt;my_lock_fname&lt;&lt;&quot;', but it is not ours to release (i.e. get_lock() was not called, or the lock has already been released)! This indicates a logic error in whatever code tried to obtain the lock, please file a bug report.&quot;;
           if(hard_errors) { std::cerr&lt;&lt;&quot;Error! (&quot;&lt;&lt;LOCAL_INFO&lt;&lt;&quot;): &quot;&lt;&lt;msg.str()&lt;&lt;hardmsg&lt;&lt;std::endl; std::cerr.flush(); abort(); }
           else { utils_error().raise(LOCAL_INFO,msg.str()); }
+        }
+
+        // Always exhaust lock before relasing it, but only if it wasn't already exhausted
+        if(exhaustible and not exhausted())
+        {
+          ssize_t return_code = write(fd, &quot;1&quot;, 1);
+          if(return_code == -1)
+          {
+            std::ostringstream msg;
+            msg &lt;&lt; &quot;Tried exhausting the lock for file '&quot;&lt;&lt;my_lock_fname&lt;&lt;&quot;' but failed to do so. The file does not exist or it is corrupted. &quot;;
+            utils_error().raise(LOCAL_INFO, msg.str());
+          }
+          exhausted_lock = true;
+          #ifdef FILE_LOCK_DEBUG
+            int rank;
+            MPI_Comm_rank(MPI_COMM_WORLD,&amp;rank);
+            struct timeval tv;
+            struct timezone tz;
+            gettimeofday(&amp;tv, &amp;tz);
+            cout &lt;&lt; &quot;[&quot; &lt;&lt; tv.tv_sec &lt;&lt; &quot;.&quot; &lt;&lt; tv.tv_usec &lt;&lt; &quot;] Exhausting lock &quot; &lt;&lt; my_lock_fname &lt;&lt; &quot; in rank &quot; &lt;&lt; rank &lt;&lt; endl;
+          #endif
         }
 
         #ifdef FILE_LOCK_DEBUG
@@ -210,6 +238,49 @@ namespace Gambit
       /// Getter for lockfile name
       const std::string&amp; FileLock::get_filename() const { return my_lock_fname; }
 
+      /// Check if lock is exhausted
+      bool FileLock::exhausted()
+      {
+        // Only possible to do this if you have the lock
+        if(not have_lock)
+        {
+          /// Don't have the lock!
+          std::ostringstream msg;
+          msg &lt;&lt; &quot;Tried to check whether thelock for file '&quot;&lt;&lt;my_lock_fname&lt;&lt;&quot;' is exhausted, but it is not ours (i.e. get_lock() was not called, or the lock has already been released)! This indicates a logic error in whatever code tried to obtain the lock, please file a bug report.&quot;;
+          if(hard_errors) { std::cerr&lt;&lt;&quot;Error! (&quot;&lt;&lt;LOCAL_INFO&lt;&lt;&quot;): &quot;&lt;&lt;msg.str()&lt;&lt;hardmsg&lt;&lt;std::endl; std::cerr.flush(); abort(); }
+          else { utils_error().raise(LOCAL_INFO,msg.str()); }
+        }
+
+        // If the file is not exhaustible, throw an error as this is a misuse
+        if(not exhaustible)
+        {
+          std::ostringstream msg;
+          msg &lt;&lt; &quot;Tried checking exhaustion of a non-exhaustible file, this is a misuse of the file lock. If the file is meant to be exhaustible, set the appropriate argument in the constructor.&quot;;
+          utils_error().raise(LOCAL_INFO, msg.str());
+        }
+
+        if(exhausted_lock) return true;
+
+        // Try reading file
+        char exhaust[1];
+        ssize_t return_code = read(fd, exhaust, 1);
+        if(return_code &gt; 0 and exhaust[0] == '1')
+          exhausted_lock = true;
+        else
+          exhausted_lock = false;
+
+        #ifdef FILE_LOCK_DEBUG
+          int rank;
+          MPI_Comm_rank(MPI_COMM_WORLD,&amp;rank);
+          struct timeval tv;
+          struct timezone tz;
+          gettimeofday(&amp;tv, &amp;tz);
+          cout &lt;&lt; &quot;[&quot; &lt;&lt; tv.tv_sec &lt;&lt; &quot;.&quot; &lt;&lt; tv.tv_usec &lt;&lt; &quot;] Checking lock &quot; &lt;&lt; my_lock_fname &lt;&lt; &quot; for exhaustion in rank &quot; &lt;&lt; rank &lt;&lt; endl;
+        #endif
+
+        return exhausted_lock;
+      }
+
       /// @}
 
 
@@ -220,15 +291,21 @@ namespace Gambit
       const std::string ProcessLock::lock_suffix(&quot;.lock&quot;);
 
       /// Constructor
-      ProcessLock::ProcessLock(const std::string&amp; fname, const bool harderrs)
-       : FileLock(lock_prefix + fname + lock_suffix, harderrs)
+      ProcessLock::ProcessLock(const std::string&amp; fname, const bool is_exhaustible, const bool harderrs)
+       : FileLock(lock_prefix + fname + lock_suffix, is_exhaustible, harderrs)
       {}
+
+      /// Deleting existing locks
+      void ProcessLock::clean_locks()
+      {
+        remove_all_files_in(lock_prefix, false); // last argument is &quot;error_if_absent&quot; -&gt; No error if path does not exist
+      }
 
       /// @}
 
    }
 }
-</code></pre><hr><p>Updated on 2022-09-08 at 03:46:45 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.a08b5ca912a508bc013bbd939befee438a0d2f798076e860e42147c7c0e2a01cf714847f7f5a2824876ce72867b0182df10e3537711faff352dd1ef41550be7c.js integrity="sha512-oItcqRKlCLwBO72Tm+/uQ4oNL3mAduhg5CFHx8DioBz3FIR/f1ooJIds5yhnsBgt8Q41N3Efr/NS3R70FVC+fA==" crossorigin=anonymous defer></script>
+</code></pre><hr><p>Updated on 2023-06-26 at 21:36:53 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.a08b5ca912a508bc013bbd939befee438a0d2f798076e860e42147c7c0e2a01cf714847f7f5a2824876ce72867b0182df10e3537711faff352dd1ef41550be7c.js integrity="sha512-oItcqRKlCLwBO72Tm+/uQ4oNL3mAduhg5CFHx8DioBz3FIR/f1ooJIds5yhnsBgt8Q41N3Efr/NS3R70FVC+fA==" crossorigin=anonymous defer></script>
 <script src=/js/highlight.min.ce91dadbce67e8eef36fa222c1c74c99f623c836cf6a316dffa1aeb390ab659d9a20d8145ceac39e049c555414fc360d31315e7980535dc6c03eb5374b7d559d.js integrity="sha512-zpHa285n6O7zb6IiwcdMmfYjyDbPajFt/6Gus5CrZZ2aINgUXOrDngScVVQU/DYNMTFeeYBTXcbAPrU3S31VnQ==" crossorigin=anonymous defer></script>
 <script src=/main.min.57d9a84956f7d60008c47938c7fdd2f75e8618ff1d09c5a5e2b32f91debaf7681f7ceca8b51aded60067c2136172134a91ebc0674487c76a04e3244d927ebdde.js integrity="sha512-V9moSVb31gAIxHk4x/3S916GGP8dCcWl4rMvkd6692gffOyotRre1gBnwhNhchNKkevAZ0SHx2oE4yRNkn693g==" crossorigin=anonymous defer></script>
-<script src=/index.min.2a2f6bd25e0a661102d8769165ef9d3273d4db5ae6edbc62261887d88167016dfb0f6310393f582bcc424de5dc6eab3a529fd305ba4c3afc8e551f0093ed322c.js integrity="sha512-Ki9r0l4KZhEC2HaRZe+dMnPU21rm7bxiJhiH2IFnAW37D2MQOT9YK8xCTeXcbqs6Up/TBbpMOvyOVR8Ak+0yLA==" crossorigin=anonymous defer></script></body></html>
+<script src=/index.min.95720397d55302de0e04fb8f4bf89a7396888a3be86803aa187cbc45924e9c35452b4bef718cd568b25ad872307d8f5537eab4c0045b8043c40628674a4fc53d.js integrity="sha512-lXIDl9VTAt4OBPuPS/iac5aIijvoaAOqGHy8RZJOnDVFK0vvcYzVaLJa2HIwfY9VN+q0wARbgEPEBihnSk/FPQ==" crossorigin=anonymous defer></script></body></html>

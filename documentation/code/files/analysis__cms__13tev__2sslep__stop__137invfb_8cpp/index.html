@@ -16,7 +16,10 @@ Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle
 ///  \date 2019 June
 ///  *********************************************
 
-// Based on http://cms-results.web.cern.ch/cms-results/public-results/preliminary-results/SUS-19-008/index.html
+// Based on: 
+// - http://cms-results.web.cern.ch/cms-results/public-results/preliminary-results/SUS-19-008/index.html
+// - http://cms-results.web.cern.ch/cms-results/public-results/publications/SUS-19-008/index.html
+
 // Search for physics beyond the standard model in events with two same-sign leptons or at least three leptons and jets in proton-proton collisions at 13 TeV
 
 // Note:
@@ -44,178 +47,196 @@ namespace Gambit {
         // Counters for the number of accepted events for each signal region
         std::map&lt;string, EventCounter&gt; _counters = {
             // HH
-            {&quot;SRHH-0&quot;, EventCounter(&quot;SRHH-0&quot;)},
-            {&quot;SRHH-1&quot;, EventCounter(&quot;SRHH-1&quot;)},
-            {&quot;SRHH-2&quot;, EventCounter(&quot;SRHH-2&quot;)},
-            {&quot;SRHH-3&quot;, EventCounter(&quot;SRHH-3&quot;)},
-            {&quot;SRHH-4&quot;, EventCounter(&quot;SRHH-4&quot;)},
-            {&quot;SRHH-5&quot;, EventCounter(&quot;SRHH-5&quot;)},
-            {&quot;SRHH-6&quot;, EventCounter(&quot;SRHH-6&quot;)},
-            {&quot;SRHH-7&quot;, EventCounter(&quot;SRHH-7&quot;)},
-            {&quot;SRHH-8&quot;, EventCounter(&quot;SRHH-8&quot;)},
-            {&quot;SRHH-9&quot;, EventCounter(&quot;SRHH-9&quot;)},
-            {&quot;SRHH-10&quot;, EventCounter(&quot;SRHH-10&quot;)},
-            {&quot;SRHH-11&quot;, EventCounter(&quot;SRHH-11&quot;)},
-            {&quot;SRHH-12&quot;, EventCounter(&quot;SRHH-12&quot;)},
-            {&quot;SRHH-13&quot;, EventCounter(&quot;SRHH-13&quot;)},
-            {&quot;SRHH-14&quot;, EventCounter(&quot;SRHH-14&quot;)},
-            {&quot;SRHH-15&quot;, EventCounter(&quot;SRHH-15&quot;)},
-            {&quot;SRHH-16&quot;, EventCounter(&quot;SRHH-16&quot;)},
-            {&quot;SRHH-17&quot;, EventCounter(&quot;SRHH-17&quot;)},
-            {&quot;SRHH-18&quot;, EventCounter(&quot;SRHH-18&quot;)},
-            {&quot;SRHH-19&quot;, EventCounter(&quot;SRHH-19&quot;)},
-            {&quot;SRHH-20&quot;, EventCounter(&quot;SRHH-20&quot;)},
-            {&quot;SRHH-21&quot;, EventCounter(&quot;SRHH-21&quot;)},
-            {&quot;SRHH-22&quot;, EventCounter(&quot;SRHH-22&quot;)},
-            {&quot;SRHH-23&quot;, EventCounter(&quot;SRHH-23&quot;)},
-            {&quot;SRHH-24&quot;, EventCounter(&quot;SRHH-24&quot;)},
-            {&quot;SRHH-25&quot;, EventCounter(&quot;SRHH-25&quot;)},
-            {&quot;SRHH-26&quot;, EventCounter(&quot;SRHH-26&quot;)},
-            {&quot;SRHH-27&quot;, EventCounter(&quot;SRHH-27&quot;)},
-            {&quot;SRHH-28&quot;, EventCounter(&quot;SRHH-28&quot;)},
-            {&quot;SRHH-29&quot;, EventCounter(&quot;SRHH-29&quot;)},
-            {&quot;SRHH-30&quot;, EventCounter(&quot;SRHH-30&quot;)},
-            {&quot;SRHH-31&quot;, EventCounter(&quot;SRHH-31&quot;)},
-            {&quot;SRHH-32&quot;, EventCounter(&quot;SRHH-32&quot;)},
-            {&quot;SRHH-33&quot;, EventCounter(&quot;SRHH-33&quot;)},
-            {&quot;SRHH-34&quot;, EventCounter(&quot;SRHH-34&quot;)},
-            {&quot;SRHH-35&quot;, EventCounter(&quot;SRHH-35&quot;)},
-            {&quot;SRHH-36&quot;, EventCounter(&quot;SRHH-36&quot;)},
-            {&quot;SRHH-37&quot;, EventCounter(&quot;SRHH-37&quot;)},
-            {&quot;SRHH-38&quot;, EventCounter(&quot;SRHH-38&quot;)},
-            {&quot;SRHH-39&quot;, EventCounter(&quot;SRHH-39&quot;)},
-            {&quot;SRHH-40&quot;, EventCounter(&quot;SRHH-40&quot;)},
-            {&quot;SRHH-41&quot;, EventCounter(&quot;SRHH-41&quot;)},
-            {&quot;SRHH-42&quot;, EventCounter(&quot;SRHH-42&quot;)},
-            {&quot;SRHH-43&quot;, EventCounter(&quot;SRHH-43&quot;)},
-            {&quot;SRHH-44&quot;, EventCounter(&quot;SRHH-44&quot;)},
-            {&quot;SRHH-45&quot;, EventCounter(&quot;SRHH-45&quot;)},
-            {&quot;SRHH-46&quot;, EventCounter(&quot;SRHH-46&quot;)},
-            {&quot;SRHH-47&quot;, EventCounter(&quot;SRHH-47&quot;)},
-            {&quot;SRHH-48&quot;, EventCounter(&quot;SRHH-48&quot;)},
-            {&quot;SRHH-49&quot;, EventCounter(&quot;SRHH-49&quot;)},
-            {&quot;SRHH-50&quot;, EventCounter(&quot;SRHH-50&quot;)},
-            {&quot;SRHH-51&quot;, EventCounter(&quot;SRHH-51&quot;)},
-            {&quot;SRHH-52&quot;, EventCounter(&quot;SRHH-52&quot;)},
-            {&quot;SRHH-53&quot;, EventCounter(&quot;SRHH-53&quot;)},
-            {&quot;SRHH-54&quot;, EventCounter(&quot;SRHH-54&quot;)},
-            {&quot;SRHH-55&quot;, EventCounter(&quot;SRHH-55&quot;)},
-            {&quot;SRHH-56&quot;, EventCounter(&quot;SRHH-56&quot;)},
-            {&quot;SRHH-57&quot;, EventCounter(&quot;SRHH-57&quot;)},
-            {&quot;SRHH-58&quot;, EventCounter(&quot;SRHH-58&quot;)},
-            {&quot;SRHH-59&quot;, EventCounter(&quot;SRHH-59&quot;)},
-            {&quot;SRHH-60&quot;, EventCounter(&quot;SRHH-60&quot;)},
-            {&quot;SRHH-61&quot;, EventCounter(&quot;SRHH-61&quot;)},
-            // HL
-            {&quot;SRHL-0&quot;, EventCounter(&quot;SRHL-0&quot;)},
-            {&quot;SRHL-1&quot;, EventCounter(&quot;SRHL-1&quot;)},
-            {&quot;SRHL-2&quot;, EventCounter(&quot;SRHL-2&quot;)},
-            {&quot;SRHL-3&quot;, EventCounter(&quot;SRHL-3&quot;)},
-            {&quot;SRHL-4&quot;, EventCounter(&quot;SRHL-4&quot;)},
-            {&quot;SRHL-5&quot;, EventCounter(&quot;SRHL-5&quot;)},
-            {&quot;SRHL-6&quot;, EventCounter(&quot;SRHL-6&quot;)},
-            {&quot;SRHL-7&quot;, EventCounter(&quot;SRHL-7&quot;)},
-            {&quot;SRHL-8&quot;, EventCounter(&quot;SRHL-8&quot;)},
-            {&quot;SRHL-9&quot;, EventCounter(&quot;SRHL-9&quot;)},
-            {&quot;SRHL-10&quot;, EventCounter(&quot;SRHL-10&quot;)},
-            {&quot;SRHL-11&quot;, EventCounter(&quot;SRHL-11&quot;)},
-            {&quot;SRHL-12&quot;, EventCounter(&quot;SRHL-12&quot;)},
-            {&quot;SRHL-13&quot;, EventCounter(&quot;SRHL-13&quot;)},
-            {&quot;SRHL-14&quot;, EventCounter(&quot;SRHL-14&quot;)},
-            {&quot;SRHL-15&quot;, EventCounter(&quot;SRHL-15&quot;)},
-            {&quot;SRHL-16&quot;, EventCounter(&quot;SRHL-16&quot;)},
-            {&quot;SRHL-17&quot;, EventCounter(&quot;SRHL-17&quot;)},
-            {&quot;SRHL-18&quot;, EventCounter(&quot;SRHL-18&quot;)},
-            {&quot;SRHL-19&quot;, EventCounter(&quot;SRHL-19&quot;)},
-            {&quot;SRHL-20&quot;, EventCounter(&quot;SRHL-20&quot;)},
-            {&quot;SRHL-21&quot;, EventCounter(&quot;SRHL-21&quot;)},
-            {&quot;SRHL-22&quot;, EventCounter(&quot;SRHL-22&quot;)},
-            {&quot;SRHL-23&quot;, EventCounter(&quot;SRHL-23&quot;)},
-            {&quot;SRHL-24&quot;, EventCounter(&quot;SRHL-24&quot;)},
-            {&quot;SRHL-25&quot;, EventCounter(&quot;SRHL-25&quot;)},
-            {&quot;SRHL-26&quot;, EventCounter(&quot;SRHL-26&quot;)},
-            {&quot;SRHL-27&quot;, EventCounter(&quot;SRHL-27&quot;)},
-            {&quot;SRHL-28&quot;, EventCounter(&quot;SRHL-28&quot;)},
-            {&quot;SRHL-29&quot;, EventCounter(&quot;SRHL-29&quot;)},
-            {&quot;SRHL-30&quot;, EventCounter(&quot;SRHL-30&quot;)},
-            {&quot;SRHL-31&quot;, EventCounter(&quot;SRHL-31&quot;)},
-            {&quot;SRHL-32&quot;, EventCounter(&quot;SRHL-32&quot;)},
-            {&quot;SRHL-33&quot;, EventCounter(&quot;SRHL-33&quot;)},
-            {&quot;SRHL-34&quot;, EventCounter(&quot;SRHL-34&quot;)},
-            {&quot;SRHL-35&quot;, EventCounter(&quot;SRHL-35&quot;)},
-            {&quot;SRHL-36&quot;, EventCounter(&quot;SRHL-36&quot;)},
-            {&quot;SRHL-37&quot;, EventCounter(&quot;SRHL-37&quot;)},
-            {&quot;SRHL-38&quot;, EventCounter(&quot;SRHL-38&quot;)},
-            {&quot;SRHL-39&quot;, EventCounter(&quot;SRHL-39&quot;)},
-            {&quot;SRHL-40&quot;, EventCounter(&quot;SRHL-40&quot;)},
-            {&quot;SRHL-41&quot;, EventCounter(&quot;SRHL-41&quot;)},
-            {&quot;SRHL-42&quot;, EventCounter(&quot;SRHL-42&quot;)},
-            // LL
-            {&quot;SRLL-0&quot;, EventCounter(&quot;SRLL-0&quot;)},
-            {&quot;SRLL-1&quot;, EventCounter(&quot;SRLL-1&quot;)},
-            {&quot;SRLL-2&quot;, EventCounter(&quot;SRLL-2&quot;)},
-            {&quot;SRLL-3&quot;, EventCounter(&quot;SRLL-3&quot;)},
-            {&quot;SRLL-4&quot;, EventCounter(&quot;SRLL-4&quot;)},
-            {&quot;SRLL-5&quot;, EventCounter(&quot;SRLL-5&quot;)},
-            {&quot;SRLL-6&quot;, EventCounter(&quot;SRLL-6&quot;)},
-            {&quot;SRLL-7&quot;, EventCounter(&quot;SRLL-7&quot;)},
-            // LM
-            {&quot;SRLM-0&quot;, EventCounter(&quot;SRLM-0&quot;)},
-            {&quot;SRLM-1&quot;, EventCounter(&quot;SRLM-1&quot;)},
-            {&quot;SRLM-2&quot;, EventCounter(&quot;SRLM-2&quot;)},
-            {&quot;SRLM-3&quot;, EventCounter(&quot;SRLM-3&quot;)},
-            {&quot;SRLM-4&quot;, EventCounter(&quot;SRLM-4&quot;)},
-            {&quot;SRLM-5&quot;, EventCounter(&quot;SRLM-5&quot;)},
-            {&quot;SRLM-6&quot;, EventCounter(&quot;SRLM-6&quot;)},
-            {&quot;SRLM-7&quot;, EventCounter(&quot;SRLM-7&quot;)},
-            {&quot;SRLM-8&quot;, EventCounter(&quot;SRLM-8&quot;)},
-            {&quot;SRLM-9&quot;, EventCounter(&quot;SRLM-9&quot;)},
-            {&quot;SRLM-10&quot;, EventCounter(&quot;SRLM-10&quot;)},
-            // ML
-            {&quot;SRML-0&quot;, EventCounter(&quot;SRML-0&quot;)},
-            {&quot;SRML-1&quot;, EventCounter(&quot;SRML-1&quot;)},
-            {&quot;SRML-2&quot;, EventCounter(&quot;SRML-2&quot;)},
-            {&quot;SRML-3&quot;, EventCounter(&quot;SRML-3&quot;)},
-            {&quot;SRML-4&quot;, EventCounter(&quot;SRML-4&quot;)},
-            {&quot;SRML-5&quot;, EventCounter(&quot;SRML-5&quot;)},
-            {&quot;SRML-6&quot;, EventCounter(&quot;SRML-6&quot;)},
-            {&quot;SRML-7&quot;, EventCounter(&quot;SRML-7&quot;)},
-            {&quot;SRML-8&quot;, EventCounter(&quot;SRML-8&quot;)},
-            {&quot;SRML-9&quot;, EventCounter(&quot;SRML-9&quot;)},
-            {&quot;SRML-10&quot;, EventCounter(&quot;SRML-10&quot;)},
-            {&quot;SRML-11&quot;, EventCounter(&quot;SRML-11&quot;)},
-            {&quot;SRML-12&quot;, EventCounter(&quot;SRML-12&quot;)},
-            {&quot;SRML-13&quot;, EventCounter(&quot;SRML-13&quot;)},
-            {&quot;SRML-14&quot;, EventCounter(&quot;SRML-14&quot;)},
-            {&quot;SRML-15&quot;, EventCounter(&quot;SRML-15&quot;)},
-            {&quot;SRML-16&quot;, EventCounter(&quot;SRML-16&quot;)},
-            {&quot;SRML-17&quot;, EventCounter(&quot;SRML-17&quot;)},
-            {&quot;SRML-18&quot;, EventCounter(&quot;SRML-18&quot;)},
-            {&quot;SRML-19&quot;, EventCounter(&quot;SRML-19&quot;)},
-            {&quot;SRML-20&quot;, EventCounter(&quot;SRML-20&quot;)},
-            {&quot;SRML-21&quot;, EventCounter(&quot;SRML-21&quot;)},
-            {&quot;SRML-22&quot;, EventCounter(&quot;SRML-22&quot;)},
-            {&quot;SRML-23&quot;, EventCounter(&quot;SRML-23&quot;)},
-            {&quot;SRML-24&quot;, EventCounter(&quot;SRML-24&quot;)},
-            {&quot;SRML-25&quot;, EventCounter(&quot;SRML-25&quot;)},
-            {&quot;SRML-26&quot;, EventCounter(&quot;SRML-26&quot;)},
-            {&quot;SRML-27&quot;, EventCounter(&quot;SRML-27&quot;)},
-            {&quot;SRML-28&quot;, EventCounter(&quot;SRML-28&quot;)},
-            {&quot;SRML-29&quot;, EventCounter(&quot;SRML-29&quot;)},
-            {&quot;SRML-30&quot;, EventCounter(&quot;SRML-30&quot;)},
-            {&quot;SRML-31&quot;, EventCounter(&quot;SRML-31&quot;)},
-            {&quot;SRML-32&quot;, EventCounter(&quot;SRML-32&quot;)},
-            {&quot;SRML-33&quot;, EventCounter(&quot;SRML-33&quot;)},
-            {&quot;SRML-34&quot;, EventCounter(&quot;SRML-34&quot;)},
-            {&quot;SRML-35&quot;, EventCounter(&quot;SRML-35&quot;)},
-            {&quot;SRML-36&quot;, EventCounter(&quot;SRML-36&quot;)},
-            {&quot;SRML-37&quot;, EventCounter(&quot;SRML-37&quot;)},
-            {&quot;SRML-38&quot;, EventCounter(&quot;SRML-38&quot;)},
-            {&quot;SRML-39&quot;, EventCounter(&quot;SRML-39&quot;)},
-            {&quot;SRML-40&quot;, EventCounter(&quot;SRML-40&quot;)},
-            {&quot;SRML-41&quot;, EventCounter(&quot;SRML-41&quot;)},
-            {&quot;SRML-42&quot;, EventCounter(&quot;SRML-42&quot;)},
-            {&quot;SRML-43&quot;, EventCounter(&quot;SRML-43&quot;)},
+            {&quot;ISR1&quot;, EventCounter(&quot;ISR1&quot;)},
+            {&quot;ISR2&quot;, EventCounter(&quot;ISR2&quot;)},
+            {&quot;ISR3&quot;, EventCounter(&quot;ISR3&quot;)},
+            {&quot;ISR4&quot;, EventCounter(&quot;ISR4&quot;)},
+            {&quot;ISR5&quot;, EventCounter(&quot;ISR5&quot;)},
+            {&quot;ISR6&quot;, EventCounter(&quot;ISR6&quot;)},
+            {&quot;ISR7&quot;, EventCounter(&quot;ISR7&quot;)},
+            {&quot;ISR8&quot;, EventCounter(&quot;ISR8&quot;)},
+            {&quot;ISR9&quot;, EventCounter(&quot;ISR9&quot;)},
+            {&quot;ISR10&quot;, EventCounter(&quot;ISR10&quot;)},
+            {&quot;ISR11&quot;, EventCounter(&quot;ISR11&quot;)},
+            {&quot;ISR12&quot;, EventCounter(&quot;ISR12&quot;)},
+            {&quot;ISR13&quot;, EventCounter(&quot;ISR13&quot;)},
+            {&quot;ISR14&quot;, EventCounter(&quot;ISR14&quot;)},
+            {&quot;ISR15&quot;, EventCounter(&quot;ISR15&quot;)},
+            {&quot;ISR16&quot;, EventCounter(&quot;ISR16&quot;)},
+            {&quot;ISR17&quot;, EventCounter(&quot;ISR17&quot;)},
+            
+//            {&quot;SRHH-0&quot;, EventCounter(&quot;SRHH-0&quot;)},
+//            {&quot;SRHH-1&quot;, EventCounter(&quot;SRHH-1&quot;)},
+//            {&quot;SRHH-2&quot;, EventCounter(&quot;SRHH-2&quot;)},
+//            {&quot;SRHH-3&quot;, EventCounter(&quot;SRHH-3&quot;)},
+//            {&quot;SRHH-4&quot;, EventCounter(&quot;SRHH-4&quot;)},
+//            {&quot;SRHH-5&quot;, EventCounter(&quot;SRHH-5&quot;)},
+//            {&quot;SRHH-6&quot;, EventCounter(&quot;SRHH-6&quot;)},
+//            {&quot;SRHH-7&quot;, EventCounter(&quot;SRHH-7&quot;)},
+//            {&quot;SRHH-8&quot;, EventCounter(&quot;SRHH-8&quot;)},
+//            {&quot;SRHH-9&quot;, EventCounter(&quot;SRHH-9&quot;)},
+//            {&quot;SRHH-10&quot;, EventCounter(&quot;SRHH-10&quot;)},
+//            {&quot;SRHH-11&quot;, EventCounter(&quot;SRHH-11&quot;)},
+//            {&quot;SRHH-12&quot;, EventCounter(&quot;SRHH-12&quot;)},
+//            {&quot;SRHH-13&quot;, EventCounter(&quot;SRHH-13&quot;)},
+//            {&quot;SRHH-14&quot;, EventCounter(&quot;SRHH-14&quot;)},
+//            {&quot;SRHH-15&quot;, EventCounter(&quot;SRHH-15&quot;)},
+//            {&quot;SRHH-16&quot;, EventCounter(&quot;SRHH-16&quot;)},
+//            {&quot;SRHH-17&quot;, EventCounter(&quot;SRHH-17&quot;)},
+//            {&quot;SRHH-18&quot;, EventCounter(&quot;SRHH-18&quot;)},
+//            {&quot;SRHH-19&quot;, EventCounter(&quot;SRHH-19&quot;)},
+//            {&quot;SRHH-20&quot;, EventCounter(&quot;SRHH-20&quot;)},
+//            {&quot;SRHH-21&quot;, EventCounter(&quot;SRHH-21&quot;)},
+//            {&quot;SRHH-22&quot;, EventCounter(&quot;SRHH-22&quot;)},
+//            {&quot;SRHH-23&quot;, EventCounter(&quot;SRHH-23&quot;)},
+//            {&quot;SRHH-24&quot;, EventCounter(&quot;SRHH-24&quot;)},
+//            {&quot;SRHH-25&quot;, EventCounter(&quot;SRHH-25&quot;)},
+//            {&quot;SRHH-26&quot;, EventCounter(&quot;SRHH-26&quot;)},
+//            {&quot;SRHH-27&quot;, EventCounter(&quot;SRHH-27&quot;)},
+//            {&quot;SRHH-28&quot;, EventCounter(&quot;SRHH-28&quot;)},
+//            {&quot;SRHH-29&quot;, EventCounter(&quot;SRHH-29&quot;)},
+//            {&quot;SRHH-30&quot;, EventCounter(&quot;SRHH-30&quot;)},
+//            {&quot;SRHH-31&quot;, EventCounter(&quot;SRHH-31&quot;)},
+//            {&quot;SRHH-32&quot;, EventCounter(&quot;SRHH-32&quot;)},
+//            {&quot;SRHH-33&quot;, EventCounter(&quot;SRHH-33&quot;)},
+//            {&quot;SRHH-34&quot;, EventCounter(&quot;SRHH-34&quot;)},
+//            {&quot;SRHH-35&quot;, EventCounter(&quot;SRHH-35&quot;)},
+//            {&quot;SRHH-36&quot;, EventCounter(&quot;SRHH-36&quot;)},
+//            {&quot;SRHH-37&quot;, EventCounter(&quot;SRHH-37&quot;)},
+//            {&quot;SRHH-38&quot;, EventCounter(&quot;SRHH-38&quot;)},
+//            {&quot;SRHH-39&quot;, EventCounter(&quot;SRHH-39&quot;)},
+//            {&quot;SRHH-40&quot;, EventCounter(&quot;SRHH-40&quot;)},
+//            {&quot;SRHH-41&quot;, EventCounter(&quot;SRHH-41&quot;)},
+//            {&quot;SRHH-42&quot;, EventCounter(&quot;SRHH-42&quot;)},
+//            {&quot;SRHH-43&quot;, EventCounter(&quot;SRHH-43&quot;)},
+//            {&quot;SRHH-44&quot;, EventCounter(&quot;SRHH-44&quot;)},
+//            {&quot;SRHH-45&quot;, EventCounter(&quot;SRHH-45&quot;)},
+//            {&quot;SRHH-46&quot;, EventCounter(&quot;SRHH-46&quot;)},
+//            {&quot;SRHH-47&quot;, EventCounter(&quot;SRHH-47&quot;)},
+//            {&quot;SRHH-48&quot;, EventCounter(&quot;SRHH-48&quot;)},
+//            {&quot;SRHH-49&quot;, EventCounter(&quot;SRHH-49&quot;)},
+//            {&quot;SRHH-50&quot;, EventCounter(&quot;SRHH-50&quot;)},
+//            {&quot;SRHH-51&quot;, EventCounter(&quot;SRHH-51&quot;)},
+//            {&quot;SRHH-52&quot;, EventCounter(&quot;SRHH-52&quot;)},
+//            {&quot;SRHH-53&quot;, EventCounter(&quot;SRHH-53&quot;)},
+//            {&quot;SRHH-54&quot;, EventCounter(&quot;SRHH-54&quot;)},
+//            {&quot;SRHH-55&quot;, EventCounter(&quot;SRHH-55&quot;)},
+//            {&quot;SRHH-56&quot;, EventCounter(&quot;SRHH-56&quot;)},
+//            {&quot;SRHH-57&quot;, EventCounter(&quot;SRHH-57&quot;)},
+//            {&quot;SRHH-58&quot;, EventCounter(&quot;SRHH-58&quot;)},
+//            {&quot;SRHH-59&quot;, EventCounter(&quot;SRHH-59&quot;)},
+//            {&quot;SRHH-60&quot;, EventCounter(&quot;SRHH-60&quot;)},
+//            {&quot;SRHH-61&quot;, EventCounter(&quot;SRHH-61&quot;)},
+//            // HL
+//            {&quot;SRHL-0&quot;, EventCounter(&quot;SRHL-0&quot;)},
+//            {&quot;SRHL-1&quot;, EventCounter(&quot;SRHL-1&quot;)},
+//            {&quot;SRHL-2&quot;, EventCounter(&quot;SRHL-2&quot;)},
+//            {&quot;SRHL-3&quot;, EventCounter(&quot;SRHL-3&quot;)},
+//            {&quot;SRHL-4&quot;, EventCounter(&quot;SRHL-4&quot;)},
+//            {&quot;SRHL-5&quot;, EventCounter(&quot;SRHL-5&quot;)},
+//            {&quot;SRHL-6&quot;, EventCounter(&quot;SRHL-6&quot;)},
+//            {&quot;SRHL-7&quot;, EventCounter(&quot;SRHL-7&quot;)},
+//            {&quot;SRHL-8&quot;, EventCounter(&quot;SRHL-8&quot;)},
+//            {&quot;SRHL-9&quot;, EventCounter(&quot;SRHL-9&quot;)},
+//            {&quot;SRHL-10&quot;, EventCounter(&quot;SRHL-10&quot;)},
+//            {&quot;SRHL-11&quot;, EventCounter(&quot;SRHL-11&quot;)},
+//            {&quot;SRHL-12&quot;, EventCounter(&quot;SRHL-12&quot;)},
+//            {&quot;SRHL-13&quot;, EventCounter(&quot;SRHL-13&quot;)},
+//            {&quot;SRHL-14&quot;, EventCounter(&quot;SRHL-14&quot;)},
+//            {&quot;SRHL-15&quot;, EventCounter(&quot;SRHL-15&quot;)},
+//            {&quot;SRHL-16&quot;, EventCounter(&quot;SRHL-16&quot;)},
+//            {&quot;SRHL-17&quot;, EventCounter(&quot;SRHL-17&quot;)},
+//            {&quot;SRHL-18&quot;, EventCounter(&quot;SRHL-18&quot;)},
+//            {&quot;SRHL-19&quot;, EventCounter(&quot;SRHL-19&quot;)},
+//            {&quot;SRHL-20&quot;, EventCounter(&quot;SRHL-20&quot;)},
+//            {&quot;SRHL-21&quot;, EventCounter(&quot;SRHL-21&quot;)},
+//            {&quot;SRHL-22&quot;, EventCounter(&quot;SRHL-22&quot;)},
+//            {&quot;SRHL-23&quot;, EventCounter(&quot;SRHL-23&quot;)},
+//            {&quot;SRHL-24&quot;, EventCounter(&quot;SRHL-24&quot;)},
+//            {&quot;SRHL-25&quot;, EventCounter(&quot;SRHL-25&quot;)},
+//            {&quot;SRHL-26&quot;, EventCounter(&quot;SRHL-26&quot;)},
+//            {&quot;SRHL-27&quot;, EventCounter(&quot;SRHL-27&quot;)},
+//            {&quot;SRHL-28&quot;, EventCounter(&quot;SRHL-28&quot;)},
+//            {&quot;SRHL-29&quot;, EventCounter(&quot;SRHL-29&quot;)},
+//            {&quot;SRHL-30&quot;, EventCounter(&quot;SRHL-30&quot;)},
+//            {&quot;SRHL-31&quot;, EventCounter(&quot;SRHL-31&quot;)},
+//            {&quot;SRHL-32&quot;, EventCounter(&quot;SRHL-32&quot;)},
+//            {&quot;SRHL-33&quot;, EventCounter(&quot;SRHL-33&quot;)},
+//            {&quot;SRHL-34&quot;, EventCounter(&quot;SRHL-34&quot;)},
+//            {&quot;SRHL-35&quot;, EventCounter(&quot;SRHL-35&quot;)},
+//            {&quot;SRHL-36&quot;, EventCounter(&quot;SRHL-36&quot;)},
+//            {&quot;SRHL-37&quot;, EventCounter(&quot;SRHL-37&quot;)},
+//            {&quot;SRHL-38&quot;, EventCounter(&quot;SRHL-38&quot;)},
+//            {&quot;SRHL-39&quot;, EventCounter(&quot;SRHL-39&quot;)},
+//            {&quot;SRHL-40&quot;, EventCounter(&quot;SRHL-40&quot;)},
+//            {&quot;SRHL-41&quot;, EventCounter(&quot;SRHL-41&quot;)},
+//            {&quot;SRHL-42&quot;, EventCounter(&quot;SRHL-42&quot;)},
+//            // LL
+//            {&quot;SRLL-0&quot;, EventCounter(&quot;SRLL-0&quot;)},
+//            {&quot;SRLL-1&quot;, EventCounter(&quot;SRLL-1&quot;)},
+//            {&quot;SRLL-2&quot;, EventCounter(&quot;SRLL-2&quot;)},
+//            {&quot;SRLL-3&quot;, EventCounter(&quot;SRLL-3&quot;)},
+//            {&quot;SRLL-4&quot;, EventCounter(&quot;SRLL-4&quot;)},
+//            {&quot;SRLL-5&quot;, EventCounter(&quot;SRLL-5&quot;)},
+//            {&quot;SRLL-6&quot;, EventCounter(&quot;SRLL-6&quot;)},
+//            {&quot;SRLL-7&quot;, EventCounter(&quot;SRLL-7&quot;)},
+//            // LM
+//            {&quot;SRLM-0&quot;, EventCounter(&quot;SRLM-0&quot;)},
+//            {&quot;SRLM-1&quot;, EventCounter(&quot;SRLM-1&quot;)},
+//            {&quot;SRLM-2&quot;, EventCounter(&quot;SRLM-2&quot;)},
+//            {&quot;SRLM-3&quot;, EventCounter(&quot;SRLM-3&quot;)},
+//            {&quot;SRLM-4&quot;, EventCounter(&quot;SRLM-4&quot;)},
+//            {&quot;SRLM-5&quot;, EventCounter(&quot;SRLM-5&quot;)},
+//            {&quot;SRLM-6&quot;, EventCounter(&quot;SRLM-6&quot;)},
+//            {&quot;SRLM-7&quot;, EventCounter(&quot;SRLM-7&quot;)},
+//            {&quot;SRLM-8&quot;, EventCounter(&quot;SRLM-8&quot;)},
+//            {&quot;SRLM-9&quot;, EventCounter(&quot;SRLM-9&quot;)},
+//            {&quot;SRLM-10&quot;, EventCounter(&quot;SRLM-10&quot;)},
+//            // ML
+//            {&quot;SRML-0&quot;, EventCounter(&quot;SRML-0&quot;)},
+//            {&quot;SRML-1&quot;, EventCounter(&quot;SRML-1&quot;)},
+//            {&quot;SRML-2&quot;, EventCounter(&quot;SRML-2&quot;)},
+//            {&quot;SRML-3&quot;, EventCounter(&quot;SRML-3&quot;)},
+//            {&quot;SRML-4&quot;, EventCounter(&quot;SRML-4&quot;)},
+//            {&quot;SRML-5&quot;, EventCounter(&quot;SRML-5&quot;)},
+//            {&quot;SRML-6&quot;, EventCounter(&quot;SRML-6&quot;)},
+//            {&quot;SRML-7&quot;, EventCounter(&quot;SRML-7&quot;)},
+//            {&quot;SRML-8&quot;, EventCounter(&quot;SRML-8&quot;)},
+//            {&quot;SRML-9&quot;, EventCounter(&quot;SRML-9&quot;)},
+//            {&quot;SRML-10&quot;, EventCounter(&quot;SRML-10&quot;)},
+//            {&quot;SRML-11&quot;, EventCounter(&quot;SRML-11&quot;)},
+//            {&quot;SRML-12&quot;, EventCounter(&quot;SRML-12&quot;)},
+//            {&quot;SRML-13&quot;, EventCounter(&quot;SRML-13&quot;)},
+//            {&quot;SRML-14&quot;, EventCounter(&quot;SRML-14&quot;)},
+//            {&quot;SRML-15&quot;, EventCounter(&quot;SRML-15&quot;)},
+//            {&quot;SRML-16&quot;, EventCounter(&quot;SRML-16&quot;)},
+//            {&quot;SRML-17&quot;, EventCounter(&quot;SRML-17&quot;)},
+//            {&quot;SRML-18&quot;, EventCounter(&quot;SRML-18&quot;)},
+//            {&quot;SRML-19&quot;, EventCounter(&quot;SRML-19&quot;)},
+//            {&quot;SRML-20&quot;, EventCounter(&quot;SRML-20&quot;)},
+//            {&quot;SRML-21&quot;, EventCounter(&quot;SRML-21&quot;)},
+//            {&quot;SRML-22&quot;, EventCounter(&quot;SRML-22&quot;)},
+//            {&quot;SRML-23&quot;, EventCounter(&quot;SRML-23&quot;)},
+//            {&quot;SRML-24&quot;, EventCounter(&quot;SRML-24&quot;)},
+//            {&quot;SRML-25&quot;, EventCounter(&quot;SRML-25&quot;)},
+//            {&quot;SRML-26&quot;, EventCounter(&quot;SRML-26&quot;)},
+//            {&quot;SRML-27&quot;, EventCounter(&quot;SRML-27&quot;)},
+//            {&quot;SRML-28&quot;, EventCounter(&quot;SRML-28&quot;)},
+//            {&quot;SRML-29&quot;, EventCounter(&quot;SRML-29&quot;)},
+//            {&quot;SRML-30&quot;, EventCounter(&quot;SRML-30&quot;)},
+//            {&quot;SRML-31&quot;, EventCounter(&quot;SRML-31&quot;)},
+//            {&quot;SRML-32&quot;, EventCounter(&quot;SRML-32&quot;)},
+//            {&quot;SRML-33&quot;, EventCounter(&quot;SRML-33&quot;)},
+//            {&quot;SRML-34&quot;, EventCounter(&quot;SRML-34&quot;)},
+//            {&quot;SRML-35&quot;, EventCounter(&quot;SRML-35&quot;)},
+//            {&quot;SRML-36&quot;, EventCounter(&quot;SRML-36&quot;)},
+//            {&quot;SRML-37&quot;, EventCounter(&quot;SRML-37&quot;)},
+//            {&quot;SRML-38&quot;, EventCounter(&quot;SRML-38&quot;)},
+//            {&quot;SRML-39&quot;, EventCounter(&quot;SRML-39&quot;)},
+//            {&quot;SRML-40&quot;, EventCounter(&quot;SRML-40&quot;)},
+//            {&quot;SRML-41&quot;, EventCounter(&quot;SRML-41&quot;)},
+//            {&quot;SRML-42&quot;, EventCounter(&quot;SRML-42&quot;)},
+//            {&quot;SRML-43&quot;, EventCounter(&quot;SRML-43&quot;)},
         };
 
         Cutflow _cutflow;
@@ -352,7 +373,7 @@ namespace Gambit {
             _cutflow.fill(2);
 
             // At least two jets and MET&gt;50
-            if (nonbJets.size()&lt;2 or  met&lt;50) return;
+            if (Nj&lt;2 or  met&lt;50) return;
             _cutflow.fill(3);
 
             // Find the only SS lepton pair
@@ -376,336 +397,384 @@ namespace Gambit {
             }
 
             // M_T^{miss}
-            double MTmiss = sqrt(2.*leptons[SS1]-&gt;pT()*met*(1. - cos(leptons[SS1]-&gt;mom().deltaPhi(ptot))));
-            if (MTmiss&gt;sqrt(2.*leptons[SS2]-&gt;pT()*met*(1. - cos(leptons[SS2]-&gt;mom().deltaPhi(ptot))))) {
-                MTmiss = sqrt(2.*leptons[SS2]-&gt;pT()*met*(1. - cos(leptons[SS2]-&gt;mom().deltaPhi(ptot))));
+            double MTmin = sqrt(2.*leptons[SS1]-&gt;pT()*met*(1. - cos(leptons[SS1]-&gt;mom().deltaPhi(ptot))));
+            if (MTmin&gt;sqrt(2.*leptons[SS2]-&gt;pT()*met*(1. - cos(leptons[SS2]-&gt;mom().deltaPhi(ptot))))) {
+                MTmin = sqrt(2.*leptons[SS2]-&gt;pT()*met*(1. - cos(leptons[SS2]-&gt;mom().deltaPhi(ptot))));
             }
 
-            bool pp = leptons[SS1]-&gt;pid()&gt;0;
-            bool met_50_200 = met&gt;50 and met&lt;200;
-            bool met_200_300 = met&gt;200 and met&lt;300;
-            bool met_300_500 = met&gt;300 and met&lt;500;
-            bool met_500 = met&gt;500;
-            bool MTmiss_l_120 = MTmiss&lt;120;
-            bool MTmiss_g_120 = MTmiss&gt;120;
-            bool Nj_2_4 = Nj&gt;=2 and Nj&lt;=4;
-            bool Nj_5 = Nj&gt;=5;
-            bool HT_300 = HT&lt;300;
-            bool HT_300_1125 = HT&gt;300 and HT&lt;1125;
-            bool HT_1125_1300 = HT&gt;1125 and HT&lt;1300;
-            bool HT_1300_1600 = HT&gt;1300 and HT&lt;1600;
-            bool HT_1300 = HT&gt;1300;
-            bool HT_1600 = HT&gt;1600;
-            bool SSHH_combine = ((MTmiss_l_120&amp;&amp;((met_50_200&amp;&amp;Nj_5)||met_200_300)) or (MTmiss_g_120&amp;&amp;met&lt;300) )&amp;&amp;HT_300 ;
-
-            // SSHH: exactly 2 leptons, both with PT&gt;25 GeV, and MET&gt;50 GeV
+            // HH: exactly 2 leptons, both with PT&gt;25 GeV, and MET&gt;50 GeV
             if (leptons.size()==2 and leptons[1]-&gt;pT() &gt; 25.) {
-                if (Nb==0) {
-                    if (MTmiss_l_120 and met_50_200  and Nj_2_4 and HT_300)               _counters.at(&quot;SRHH-0&quot;).add_event(event);
-                    if (MTmiss_l_120 and met_50_200  and Nj_2_4 and HT_300_1125)          _counters.at(&quot;SRHH-1&quot;).add_event(event);
-                    if (SSHH_combine)                                                     _counters.at(&quot;SRHH-2&quot;).add_event(event);
-                    if (MTmiss_l_120 and met_50_200  and Nj_5   and HT_300_1125)          _counters.at(&quot;SRHH-3&quot;).add_event(event);
-                    if (MTmiss_l_120 and met_200_300 and Nj_2_4 and HT_300_1125 and pp)   _counters.at(&quot;SRHH-4&quot;).add_event(event);
-                    if (MTmiss_l_120 and met_200_300 and Nj_2_4 and HT_300_1125 and !pp)  _counters.at(&quot;SRHH-5&quot;).add_event(event);
-                    if (MTmiss_l_120 and met_200_300 and Nj_5   and HT_300_1125)          _counters.at(&quot;SRHH-6&quot;).add_event(event);
-                    if (MTmiss_g_120 and met_50_200  and Nj_2_4 and HT_300_1125 and pp)   _counters.at(&quot;SRHH-7&quot;).add_event(event);
-                    if (MTmiss_g_120 and met_50_200  and Nj_2_4 and HT_300_1125 and !pp)  _counters.at(&quot;SRHH-8&quot;).add_event(event);
-                    if (MTmiss_g_120 and((met_50_200&amp;&amp;Nj_5)||met_200_300)and HT_300_1125) _counters.at(&quot;SRHH-9&quot;).add_event(event);
-                } else if (Nb==1) {
-                    if (MTmiss_l_120 and met_50_200  and Nj_2_4 and HT_300)              _counters.at(&quot;SRHH-10&quot;).add_event(event);
-                    if (MTmiss_l_120 and met_50_200  and Nj_2_4 and HT_300_1125)         _counters.at(&quot;SRHH-11&quot;).add_event(event);
-                    if (SSHH_combine and pp)                                             _counters.at(&quot;SRHH-12&quot;).add_event(event);
-                    if (SSHH_combine and !pp)                                            _counters.at(&quot;SRHH-13&quot;).add_event(event);
-                    if (MTmiss_l_120 and met_50_200  and Nj_5   and HT_300_1125 and pp)  _counters.at(&quot;SRHH-14&quot;).add_event(event);
-                    if (MTmiss_l_120 and met_50_200  and Nj_5   and HT_300_1125 and !pp) _counters.at(&quot;SRHH-15&quot;).add_event(event);
-                    if (MTmiss_l_120 and met_200_300 and Nj_2_4 and HT_300_1125 and pp)  _counters.at(&quot;SRHH-16&quot;).add_event(event);
-                    if (MTmiss_l_120 and met_200_300 and Nj_2_4 and HT_300_1125 and !pp) _counters.at(&quot;SRHH-17&quot;).add_event(event);
-                    if (MTmiss_l_120 and met_200_300 and Nj_5   and HT_300_1125)         _counters.at(&quot;SRHH-18&quot;).add_event(event);
-                    if (MTmiss_g_120 and met_50_200  and Nj_2_4 and HT_300_1125 and pp)  _counters.at(&quot;SRHH-19&quot;).add_event(event);
-                    if (MTmiss_g_120 and met_50_200  and Nj_2_4 and HT_300_1125 and !pp) _counters.at(&quot;SRHH-20&quot;).add_event(event);
-                    if (MTmiss_g_120 and((met_50_200&amp;&amp;Nj_5)||met_200_300)and HT_300_1125) _counters.at(&quot;SRHH-21&quot;).add_event(event);
-                } else if (Nb==2){
-                    if (MTmiss_l_120 and met_50_200  and Nj_2_4 and HT_300)              _counters.at(&quot;SRHH-22&quot;).add_event(event);
-                    if (MTmiss_l_120 and met_50_200  and Nj_2_4 and HT_300_1125)         _counters.at(&quot;SRHH-23&quot;).add_event(event);
-                    if (SSHH_combine and pp)                                             _counters.at(&quot;SRHH-24&quot;).add_event(event);
-                    if (SSHH_combine and !pp)                                            _counters.at(&quot;SRHH-25&quot;).add_event(event);
-                    if (MTmiss_l_120 and met_50_200  and Nj_5   and HT_300_1125 and pp)  _counters.at(&quot;SRHH-26&quot;).add_event(event);
-                    if (MTmiss_l_120 and met_50_200  and Nj_5   and HT_300_1125 and !pp) _counters.at(&quot;SRHH-27&quot;).add_event(event);
-                    if (MTmiss_l_120 and met_200_300 and Nj_2_4 and HT_300_1125 and pp)  _counters.at(&quot;SRHH-28&quot;).add_event(event);
-                    if (MTmiss_l_120 and met_200_300 and Nj_2_4 and HT_300_1125 and !pp) _counters.at(&quot;SRHH-29&quot;).add_event(event);
-                    if (MTmiss_l_120 and met_200_300 and Nj_5   and HT_300_1125)         _counters.at(&quot;SRHH-30&quot;).add_event(event);
-                    if (MTmiss_g_120 and met_50_200  and Nj_2_4 and HT_300_1125 and pp)  _counters.at(&quot;SRHH-31&quot;).add_event(event);
-                    if (MTmiss_g_120 and met_50_200  and Nj_2_4 and HT_300_1125 and !pp) _counters.at(&quot;SRHH-32&quot;).add_event(event);
-                    if (MTmiss_g_120 and((met_50_200&amp;&amp;Nj_5)||met_200_300)and HT_300_1125) _counters.at(&quot;SRHH-33&quot;).add_event(event);
-                } else if (Nb&gt;=3){
-                    if (MTmiss_l_120 and met&lt;300                and HT_300 and pp)       _counters.at(&quot;SRHH-34&quot;).add_event(event);
-                    if (MTmiss_l_120 and met&lt;300                and HT_300 and !pp)      _counters.at(&quot;SRHH-35&quot;).add_event(event);
-                    if (MTmiss_l_120 and met&lt;300     and Nj_2_4 and HT_300_1125 and pp)  _counters.at(&quot;SRHH-36&quot;).add_event(event);
-                    if (MTmiss_l_120 and met&lt;300     and Nj_2_4 and HT_300_1125 and !pp) _counters.at(&quot;SRHH-37&quot;).add_event(event);
-                    if (MTmiss_l_120 and met&lt;300     and Nj_5   and HT_300_1125 and pp)  _counters.at(&quot;SRHH-38&quot;).add_event(event);
-                    if (MTmiss_l_120 and met&lt;300     and Nj_5   and HT_300_1125 and !pp) _counters.at(&quot;SRHH-39&quot;).add_event(event);
-                    if (MTmiss_g_120                            and HT_300)              _counters.at(&quot;SRHH-40&quot;).add_event(event);
-                    if (MTmiss_g_120 and met&lt;300     and Nj_2_4 and HT_300_1125 and pp)  _counters.at(&quot;SRHH-41&quot;).add_event(event);
-                    if (MTmiss_g_120 and met&lt;300     and Nj_2_4 and HT_300_1125 and !pp) _counters.at(&quot;SRHH-42&quot;).add_event(event);
-                    if (MTmiss_g_120 and met&lt;300     and Nj_5   and HT_300_1125 and pp)  _counters.at(&quot;SRHH-43&quot;).add_event(event);
-                    if (MTmiss_g_120 and met&lt;300     and Nj_5   and HT_300_1125 and !pp) _counters.at(&quot;SRHH-44&quot;).add_event(event);
-                }
-
-                if (met_300_500 and Nj_2_4 and HT&gt;300 and pp)  _counters.at(&quot;SRHH-45&quot;).add_event(event);
-                if (met_300_500 and Nj_2_4 and HT&gt;300 and !pp) _counters.at(&quot;SRHH-46&quot;).add_event(event);
-                if (met_500     and Nj_2_4 and HT&gt;300 and pp)  _counters.at(&quot;SRHH-47&quot;).add_event(event);
-                if (met_500     and Nj_2_4 and HT&gt;300 and !pp) _counters.at(&quot;SRHH-48&quot;).add_event(event);
-                if (met_300_500 and Nj_5   and HT&gt;300 and pp)  _counters.at(&quot;SRHH-49&quot;).add_event(event);
-                if (met_300_500 and Nj_5   and HT&gt;300 and !pp) _counters.at(&quot;SRHH-50&quot;).add_event(event);
-                if (met_500     and Nj_5   and HT&gt;300 and pp)  _counters.at(&quot;SRHH-51&quot;).add_event(event);
-                if (met_500     and Nj_5   and HT&gt;300 and !pp) _counters.at(&quot;SRHH-52&quot;).add_event(event);
-
-                if (HT_1125_1300 and met&lt;300 and Nj&lt;5) _counters.at(&quot;SRHH-53&quot;).add_event(event);
-                if (HT_1300_1600 and met&lt;300 and Nj&lt;5) _counters.at(&quot;SRHH-54&quot;).add_event(event);
-                if (HT_1600      and met&lt;300 and Nj&lt;5) _counters.at(&quot;SRHH-55&quot;).add_event(event);
-
-                if (HT_1125_1300 and met&lt;300 and Nj==5 and Nj==6) _counters.at(&quot;SRHH-56&quot;).add_event(event);
-                if (HT_1300_1600 and met&lt;300 and Nj==5 and Nj==6) _counters.at(&quot;SRHH-57&quot;).add_event(event);
-                if (HT_1600      and met&lt;300 and Nj==5 and Nj==6) _counters.at(&quot;SRHH-58&quot;).add_event(event);
-
-                if (HT_1125_1300 and met&lt;300 and Nj&lt;5) _counters.at(&quot;SRHH-59&quot;).add_event(event);
-                if (HT_1300_1600 and met&lt;300 and Nj&lt;5) _counters.at(&quot;SRHH-60&quot;).add_event(event);
-                if (HT_1600      and met&lt;300 and Nj&lt;5) _counters.at(&quot;SRHH-61&quot;).add_event(event);
+                if (Nb==0 and HT&gt;1000 and met&gt;250 )
+                    _counters.at(&quot;ISR1&quot;).add_event(event);
+                if (Nb&gt;=2 and HT&gt;1100 ) 
+                    _counters.at(&quot;ISR2&quot;).add_event(event);
+                if (Nb==0 and met&gt;500 ) 
+                    _counters.at(&quot;ISR3&quot;).add_event(event);
+                if (Nb&gt;=2 and met&gt;300 ) 
+                    _counters.at(&quot;ISR4&quot;).add_event(event);
+                if (Nb==0 and met&gt;250 and MTmin&gt;120 )
+                    _counters.at(&quot;ISR5&quot;).add_event(event);  
+                if (Nb&gt;=2 and met&gt;200 and MTmin&gt;120 )
+                    _counters.at(&quot;ISR6&quot;).add_event(event); 
+                if (Nj&gt;=8)
+                    _counters.at(&quot;ISR7&quot;).add_event(event); 
+                if (Nj&gt;=6 and MTmin&gt;120)
+                    _counters.at(&quot;ISR8&quot;).add_event(event);
+                if (Nb&gt;=3 and HT&gt;800)
+                    _counters.at(&quot;ISR9&quot;).add_event(event); 
             }
-
-            bool SSHL_combine = MTmiss_l_120&amp;&amp;( (met_50_200&amp;&amp;Nj_5) or met_200_300 )&amp;&amp;HT_300 ;
-
-            // SSHL: exactly 2 leptons, one with PT&gt;25 GeV, one with PT&lt;25 GeV,  and MET&gt;50 GeV
-            if (leptons.size()==2 and leptons[0]-&gt;pT() &gt; 25. and leptons[1]-&gt;pT() &lt; 25.) {
-                if (Nb==0 and MTmiss_l_120) {
-                    if ( met_50_200  and Nj_2_4 and HT_300)              _counters.at(&quot;SRHL-0&quot;).add_event(event);
-                    if ( met_50_200  and Nj_2_4 and HT_300_1125)         _counters.at(&quot;SRHL-1&quot;).add_event(event);
-                    if ( SSHL_combine)                                   _counters.at(&quot;SRHL-2&quot;).add_event(event);
-                    if ( met_50_200  and Nj_5 and HT_300_1125)           _counters.at(&quot;SRHL-3&quot;).add_event(event);
-                    if ( met_200_300 and Nj_2_4 and HT_300_1125 and pp)  _counters.at(&quot;SRHL-4&quot;).add_event(event);
-                    if ( met_200_300 and Nj_2_4 and HT_300_1125 and !pp) _counters.at(&quot;SRHL-5&quot;).add_event(event);
-                    if ( met_200_300 and Nj_5 and HT_300_1125)           _counters.at(&quot;SRHL-6&quot;).add_event(event);
-
-                } else if(Nb==1 and MTmiss_l_120) {
-                    if ( met_50_200  and Nj_2_4 and HT_300)              _counters.at(&quot;SRHL-7&quot;).add_event(event);
-                    if ( met_50_200  and Nj_2_4 and HT_300_1125)         _counters.at(&quot;SRHL-8&quot;).add_event(event);
-                    if ( SSHL_combine and pp)                            _counters.at(&quot;SRHL-9&quot;).add_event(event);
-                    if ( SSHL_combine and !pp)                           _counters.at(&quot;SRHL-10&quot;).add_event(event);
-                    if ( met_50_200  and Nj_5 and HT_300_1125 and pp)    _counters.at(&quot;SRHL-11&quot;).add_event(event);
-                    if ( met_50_200  and Nj_5 and HT_300_1125 and !pp)   _counters.at(&quot;SRHL-12&quot;).add_event(event);
-                    if ( met_200_300 and Nj_2_4 and HT_300_1125)         _counters.at(&quot;SRHL-13&quot;).add_event(event);
-                    if ( met_200_300 and Nj_5 and HT_300_1125 and pp)    _counters.at(&quot;SRHL-14&quot;).add_event(event);
-                    if ( met_200_300 and Nj_5 and HT_300_1125 and !pp)   _counters.at(&quot;SRHL-15&quot;).add_event(event);
-                } else if(Nb==2 and MTmiss_l_120) {
-                    if ( met_50_200  and Nj_2_4 and HT_300)              _counters.at(&quot;SRHL-16&quot;).add_event(event);
-                    if ( met_50_200  and Nj_2_4 and HT_300_1125)         _counters.at(&quot;SRHL-17&quot;).add_event(event);
-                    if ( SSHL_combine and pp)                            _counters.at(&quot;SRHL-18&quot;).add_event(event);
-                    if ( SSHL_combine and !pp)                           _counters.at(&quot;SRHL-19&quot;).add_event(event);
-                    if ( met_50_200  and Nj_5 and HT_300_1125 and pp)    _counters.at(&quot;SRHL-20&quot;).add_event(event);
-                    if ( met_50_200  and Nj_5 and HT_300_1125 and !pp)   _counters.at(&quot;SRHL-21&quot;).add_event(event);
-                    if ( met_200_300 and Nj_2_4 and HT_300_1125 and pp)  _counters.at(&quot;SRHL-22&quot;).add_event(event);
-                    if ( met_200_300 and Nj_2_4 and HT_300_1125 and !pp) _counters.at(&quot;SRHL-23&quot;).add_event(event);
-                    if ( met_200_300 and Nj_5 and HT_300_1125)           _counters.at(&quot;SRHL-24&quot;).add_event(event);
-                }else if(Nb==3 and MTmiss_l_120) {
-                    if ( met_50_200 and HT_300 and pp)                   _counters.at(&quot;SRHL-25&quot;).add_event(event);
-                    if ( met_50_200 and HT_300 and !pp)                  _counters.at(&quot;SRHL-26&quot;).add_event(event);
-                    if ( met_50_200 and HT_300_1125 and pp)              _counters.at(&quot;SRHL-27&quot;).add_event(event);
-                    if ( met_50_200 and HT_300_1125 and !pp)             _counters.at(&quot;SRHL-28&quot;).add_event(event);
-                    if ( met_200_300 and HT_300_1125)                    _counters.at(&quot;SRHL-29&quot;).add_event(event);
-                }
-                if (MTmiss_g_120 and met&lt;300 and HT_300)       _counters.at(&quot;SRHL-30&quot;).add_event(event);
-                if (MTmiss_g_120 and met&lt;300 and HT_300_1125)  _counters.at(&quot;SRHL-31&quot;).add_event(event);
-                if (met_300_500 and Nj_2_4 and HT&gt;300 and pp)  _counters.at(&quot;SRHL-32&quot;).add_event(event);
-                if (met_300_500 and Nj_2_4 and HT&gt;300 and !pp) _counters.at(&quot;SRHL-33&quot;).add_event(event);
-                if (met_500 and Nj_2_4 and HT&gt;300 and pp)      _counters.at(&quot;SRHL-34&quot;).add_event(event);
-                if (met_500 and Nj_2_4 and HT&gt;300 and !pp)     _counters.at(&quot;SRHL-35&quot;).add_event(event);
-                if (met_300_500 and Nj_5 and HT&gt;300 and pp)    _counters.at(&quot;SRHL-36&quot;).add_event(event);
-                if (met_300_500 and Nj_5 and HT&gt;300 and !pp)   _counters.at(&quot;SRHL-37&quot;).add_event(event);
-                if (met_500 and Nj_5 and HT&gt;300)               _counters.at(&quot;SRHL-38&quot;).add_event(event);
-
-                if (HT_1125_1300 and pp)  _counters.at(&quot;SRHL-39&quot;).add_event(event);
-                if (HT_1125_1300 and !pp) _counters.at(&quot;SRHL-40&quot;).add_event(event);
-                if (HT_1300 and pp)       _counters.at(&quot;SRHL-41&quot;).add_event(event);
-                if (HT_1300 and !pp)      _counters.at(&quot;SRHL-42&quot;).add_event(event);
-            }
-
-            // SSLL: exactly 2 leptons, both with PT&lt;25 GeV, and MET&gt;50 GeV
+            
+            // LL: exactly 2 leptons, both with PT&lt;25 GeV, and MET&gt;50 GeV
             if (leptons.size()==2 and leptons[0]-&gt;pT() &lt; 25. and leptons[1]-&gt;pT() &lt; 25.) {
-                if (HT&gt;400) {
-                    if (MTmiss_l_120) {
-                        if (Nb==0) {
-                            if (met_50_200) _counters.at(&quot;SRLL-0&quot;).add_event(event);
-                            else            _counters.at(&quot;SRLL-1&quot;).add_event(event);
-                        } else if (Nb==1) {
-                            if (met_50_200) _counters.at(&quot;SRLL-2&quot;).add_event(event);
-                            else            _counters.at(&quot;SRLL-3&quot;).add_event(event);
-                        } else if (Nb==2) {
-                            if (met_50_200) _counters.at(&quot;SRLL-4&quot;).add_event(event);
-                            else            _counters.at(&quot;SRLL-5&quot;).add_event(event);
-                        } else if (Nb&gt;=3)   _counters.at(&quot;SRLL-6&quot;).add_event(event);
-                    } else                  _counters.at(&quot;SRLL-7&quot;).add_event(event);
-                }
+                if (HT&gt;700)
+                    _counters.at(&quot;ISR10&quot;).add_event(event);
+                if (met&gt;200)
+                    _counters.at(&quot;ISR11&quot;).add_event(event);
+                if (Nj&gt;=6)
+                    _counters.at(&quot;ISR12&quot;).add_event(event);
+                if (Nb&gt;=3)
+                    _counters.at(&quot;ISR13&quot;).add_event(event);
             }
-
             // LM: exactly 2 leptons, both with PT&gt;25 GeV, and MET&lt;50 GeV
             if (leptons.size()==2 and leptons[0]-&gt;pT() &gt; 25. and leptons[1]-&gt;pT() &gt; 25.) {
-                if (HT_300_1125) {
-                    if (Nb==0) {
-                        if (Nj_2_4) _counters.at(&quot;SRLM-0&quot;).add_event(event);
-                        if (Nj_5)   _counters.at(&quot;SRLM-1&quot;).add_event(event);
-                    } else if (Nb==1){
-                        if (Nj_2_4) _counters.at(&quot;SRLM-2&quot;).add_event(event);
-                        if (Nj_5)   _counters.at(&quot;SRLM-3&quot;).add_event(event);
-                    } else if (Nb==2){
-                        if (Nj_2_4) _counters.at(&quot;SRLM-4&quot;).add_event(event);
-                        if (Nj_5)   _counters.at(&quot;SRLM-5&quot;).add_event(event);
-                    } else          _counters.at(&quot;SRLM-6&quot;).add_event(event);
-                } else if (HT_1125_1300){
-                    if (Nj_2_4) {
-                        _counters.at(&quot;SRLM-7&quot;).add_event(event);
-                    } else if (Nj_5) {
-                        _counters.at(&quot;SRLM-8&quot;).add_event(event);
-                    }
-                } else if (HT_1300){
-                    if (Nj_2_4) {
-                        _counters.at(&quot;SRLM-9&quot;).add_event(event);
-                    } else if (Nj_5) {
-                        _counters.at(&quot;SRLM-1&quot;).add_event(event);
-                    }
-                }
+                if (Nb==0 and HT&gt;1200 and met&lt;50 )
+                    _counters.at(&quot;ISR14&quot;).add_event(event);
+                if (Nb&gt;=2 and HT&gt;1000 and met&lt;50 )
+                    _counters.at(&quot;ISR15&quot;).add_event(event);
             }
-
             // ML: &gt;=3 leptons, at least one with PT&gt;25 GeV, and MET&gt;50 GeV
             if (leptons.size()&gt;=3 and leptons[0]-&gt;pT() &gt; 25.) {
-                bool on_Z=false;
-                size_t Z_l1;
-                size_t Z_l2;
-                for (size_t i=0; i&lt;leptons.size(); ++i) {
-                    for (size_t j=i+1; j&lt;leptons.size(); ++j) {
-                        if (leptons[i]-&gt;pid()+leptons[j]-&gt;pid()==0 and fabs((leptons[i]-&gt;mom()+leptons[j]-&gt;mom()).m()-91)&lt;15) {
-                            on_Z = true;
-                            Z_l1=i;
-                            Z_l2=j;
-                            break;
-                        }
-                    }
-                    if (on_Z) break;
-                }
-
-                if (not on_Z){ // off-Z
-                    if (Nb==0) {
-                        if (HT&lt;400) {
-                            if (met&lt;150) {
-                                if (MTmiss_l_120) _counters.at(&quot;SRML-0&quot;).add_event(event);
-                                else              _counters.at(&quot;SRML-1&quot;).add_event(event);
-                            } else if (met&lt;300) {
-                                if (MTmiss_l_120) _counters.at(&quot;SRML-2&quot;).add_event(event);
-                                else              _counters.at(&quot;SRML-3&quot;).add_event(event);
-                            }
-                        }
-                        else if (HT&lt;600) {
-                             if (met&lt;150)         _counters.at(&quot;SRML-4&quot;).add_event(event);
-                             else if (met&lt;300)    _counters.at(&quot;SRML-5&quot;).add_event(event);
-                        }
-                    } else if (Nb==1) {
-                        if (HT&lt;400) {
-                             if (met&lt;150)         _counters.at(&quot;SRML-6&quot;).add_event(event);
-                             else if (met&lt;300)    _counters.at(&quot;SRML-7&quot;).add_event(event);
-                        }
-                        else if (HT&lt;600) {
-                             if (met&lt;150)         _counters.at(&quot;SRML-8&quot;).add_event(event);
-                             else if (met&lt;300)    _counters.at(&quot;SRML-9&quot;).add_event(event);
-                        }
-                    } else if (Nb==2) {
-                        if (HT&lt;400) {
-                             if (met&lt;150)         _counters.at(&quot;SRML-10&quot;).add_event(event);
-                             else if (met&lt;300)    _counters.at(&quot;SRML-11&quot;).add_event(event);
-                        }
-                        else if (HT&lt;600) {
-                             if (met&lt;150)         _counters.at(&quot;SRML-12&quot;).add_event(event);
-                             else if (met&lt;300)    _counters.at(&quot;SRML-13&quot;).add_event(event);
-                        }
-                    } else if (Nb&gt;=3) {
-                        if (HT&lt;600)               _counters.at(&quot;SRML-14&quot;).add_event(event);
-                    }
-                    if (HT&gt;=600) {
-                        if (met&lt;150) {
-                            if (MTmiss_l_120)     _counters.at(&quot;SRML-15&quot;).add_event(event);
-                            else                  _counters.at(&quot;SRML-16&quot;).add_event(event);
-                        } else if (met&lt;300) {
-                            if (MTmiss_l_120)     _counters.at(&quot;SRML-17&quot;).add_event(event);
-                            else                  _counters.at(&quot;SRML-18&quot;).add_event(event);
-                        }
-                    }
-                    if (met&gt;300) {
-                        if (MTmiss_l_120)         _counters.at(&quot;SRML-19&quot;).add_event(event);
-                        else                      _counters.at(&quot;SRML-20&quot;).add_event(event);
-                    }
-                } else { // on-Z
-                    // M_T^{miss} for on-Z
-                    double MTmiss_Z = 1000;
-                    for (size_t i=0; i&lt;leptons.size(); ++i) {
-                        if ( (i != Z_l1) and (i != Z_l2)) {
-                            double MTmiss_try = sqrt(2.*leptons[i]-&gt;pT()*met*(1. - cos(leptons[i]-&gt;mom().deltaPhi(ptot))));
-                            if (MTmiss_try&lt;MTmiss_Z) MTmiss_Z=MTmiss_try;
-                        }
-                    }
-                    bool MTmiss_Z_l_120 = MTmiss_Z&lt;120;
-                    if (Nb==0) {
-                        if (HT&lt;400) {
-                            if (met&lt;150) {
-                                if (MTmiss_Z_l_120) _counters.at(&quot;SRML-21&quot;).add_event(event);
-                                else                _counters.at(&quot;SRML-22&quot;).add_event(event);
-                            } else if (met&lt;300) {
-                                if (MTmiss_Z_l_120) _counters.at(&quot;SRML-23&quot;).add_event(event);
-                                else                _counters.at(&quot;SRML-24&quot;).add_event(event);
-                            }
-                        }
-                        else if (HT&lt;600) {
-                            if (met&lt;150) {
-                                if (MTmiss_Z_l_120) _counters.at(&quot;SRML-25&quot;).add_event(event);
-                                else                _counters.at(&quot;SRML-26&quot;).add_event(event);
-                            } else if (met&lt;300) {
-                                if (MTmiss_Z_l_120) _counters.at(&quot;SRML-27&quot;).add_event(event);
-                                else                _counters.at(&quot;SRML-28&quot;).add_event(event);
-                            }
-                        }
-                    } else if (Nb==1) {
-                        if (HT&lt;400) {
-                             if (met&lt;150)           _counters.at(&quot;SRML-29&quot;).add_event(event);
-                             else if (met&lt;300)      _counters.at(&quot;SRML-30&quot;).add_event(event);
-                        }
-                        else if (HT&lt;600) {
-                             if (met&lt;150)           _counters.at(&quot;SRML-31&quot;).add_event(event);
-                             else if (met&lt;300)      _counters.at(&quot;SRML-32&quot;).add_event(event);
-                        }
-                    } else if (Nb==2) {
-                        if (HT&lt;400) {
-                             if (met&lt;150)           _counters.at(&quot;SRML-33&quot;).add_event(event);
-                             else if (met&lt;300)      _counters.at(&quot;SRML-34&quot;).add_event(event);
-                        }
-                        else if (HT&lt;600) {
-                             if (met&lt;150)           _counters.at(&quot;SRML-35&quot;).add_event(event);
-                             else if (met&lt;300)      _counters.at(&quot;SRML-36&quot;).add_event(event);
-                        }
-                    } else if (Nb&gt;=3) {
-                        if (HT&lt;600)                 _counters.at(&quot;SRML-37&quot;).add_event(event);
-                    }
-                    if (HT&gt;=600) {
-                        if (met&lt;150) {
-                            if (MTmiss_Z_l_120)     _counters.at(&quot;SRML-38&quot;).add_event(event);
-                            else                    _counters.at(&quot;SRML-39&quot;).add_event(event);
-                        } else if (met&lt;300) {
-                            if (MTmiss_Z_l_120)     _counters.at(&quot;SRML-40&quot;).add_event(event);
-                            else                    _counters.at(&quot;SRML-41&quot;).add_event(event);
-                        }
-                    }
-                    if (met&gt;300) {
-                        if (MTmiss_Z_l_120)         _counters.at(&quot;SRML-42&quot;).add_event(event);
-                        else                        _counters.at(&quot;SRML-43&quot;).add_event(event);
-                    }
-                }
+                if (Nb==0 and HT&gt;1000 and met&gt;300 )
+                    _counters.at(&quot;ISR16&quot;).add_event(event);
+                if (Nb&gt;=2 and HT&gt;1000)
+                    _counters.at(&quot;ISR17&quot;).add_event(event);
             }
+//            bool pp = leptons[SS1]-&gt;pid()&gt;0;
+//            bool met_50_200 = met&gt;50 and met&lt;200;
+//            bool met_200_300 = met&gt;200 and met&lt;300;
+//            bool met_300_500 = met&gt;300 and met&lt;500;
+//            bool met_500 = met&gt;500;
+//            bool MTmin_l_120 = MTmin&lt;120;
+//            bool MTmin_g_120 = MTmin&gt;120;
+//            bool Nj_2_4 = Nj&gt;=2 and Nj&lt;=4;
+//            bool Nj_5 = Nj&gt;=5;
+//            bool HT_300 = HT&lt;300;
+//            bool HT_300_1125 = HT&gt;300 and HT&lt;1125;
+//            bool HT_1125_1300 = HT&gt;1125 and HT&lt;1300;
+//            bool HT_1300_1600 = HT&gt;1300 and HT&lt;1600;
+//            bool HT_1300 = HT&gt;1300;
+//            bool HT_1600 = HT&gt;1600;
+//            bool SSHH_combine = ((MTmin_l_120&amp;&amp;((met_50_200&amp;&amp;Nj_5)||met_200_300)) or (MTmin_g_120&amp;&amp;met&lt;300) )&amp;&amp;HT_300 ;
+
+//            // SSHH: exactly 2 leptons, both with PT&gt;25 GeV, and MET&gt;50 GeV
+//            if (leptons.size()==2 and leptons[1]-&gt;pT() &gt; 25.) {
+
+//                if (Nb==0) {
+//                    if (MTmin_l_120 and met_50_200  and Nj_2_4 and HT_300)               _counters.at(&quot;SRHH-0&quot;).add_event(event);
+//                    if (MTmin_l_120 and met_50_200  and Nj_2_4 and HT_300_1125)          _counters.at(&quot;SRHH-1&quot;).add_event(event);
+//                    if (SSHH_combine)                                                     _counters.at(&quot;SRHH-2&quot;).add_event(event);
+//                    if (MTmin_l_120 and met_50_200  and Nj_5   and HT_300_1125)          _counters.at(&quot;SRHH-3&quot;).add_event(event);
+//                    if (MTmin_l_120 and met_200_300 and Nj_2_4 and HT_300_1125 and pp)   _counters.at(&quot;SRHH-4&quot;).add_event(event);
+//                    if (MTmin_l_120 and met_200_300 and Nj_2_4 and HT_300_1125 and !pp)  _counters.at(&quot;SRHH-5&quot;).add_event(event);
+//                    if (MTmin_l_120 and met_200_300 and Nj_5   and HT_300_1125)          _counters.at(&quot;SRHH-6&quot;).add_event(event);
+//                    if (MTmin_g_120 and met_50_200  and Nj_2_4 and HT_300_1125 and pp)   _counters.at(&quot;SRHH-7&quot;).add_event(event);
+//                    if (MTmin_g_120 and met_50_200  and Nj_2_4 and HT_300_1125 and !pp)  _counters.at(&quot;SRHH-8&quot;).add_event(event);
+//                    if (MTmin_g_120 and((met_50_200&amp;&amp;Nj_5)||met_200_300)and HT_300_1125) _counters.at(&quot;SRHH-9&quot;).add_event(event);
+//                } else if (Nb==1) {
+//                    if (MTmin_l_120 and met_50_200  and Nj_2_4 and HT_300)              _counters.at(&quot;SRHH-10&quot;).add_event(event);
+//                    if (MTmin_l_120 and met_50_200  and Nj_2_4 and HT_300_1125)         _counters.at(&quot;SRHH-11&quot;).add_event(event);
+//                    if (SSHH_combine and pp)                                             _counters.at(&quot;SRHH-12&quot;).add_event(event);
+//                    if (SSHH_combine and !pp)                                            _counters.at(&quot;SRHH-13&quot;).add_event(event);
+//                    if (MTmin_l_120 and met_50_200  and Nj_5   and HT_300_1125 and pp)  _counters.at(&quot;SRHH-14&quot;).add_event(event);
+//                    if (MTmin_l_120 and met_50_200  and Nj_5   and HT_300_1125 and !pp) _counters.at(&quot;SRHH-15&quot;).add_event(event);
+//                    if (MTmin_l_120 and met_200_300 and Nj_2_4 and HT_300_1125 and pp)  _counters.at(&quot;SRHH-16&quot;).add_event(event);
+//                    if (MTmin_l_120 and met_200_300 and Nj_2_4 and HT_300_1125 and !pp) _counters.at(&quot;SRHH-17&quot;).add_event(event);
+//                    if (MTmin_l_120 and met_200_300 and Nj_5   and HT_300_1125)         _counters.at(&quot;SRHH-18&quot;).add_event(event);
+//                    if (MTmin_g_120 and met_50_200  and Nj_2_4 and HT_300_1125 and pp)  _counters.at(&quot;SRHH-19&quot;).add_event(event);
+//                    if (MTmin_g_120 and met_50_200  and Nj_2_4 and HT_300_1125 and !pp) _counters.at(&quot;SRHH-20&quot;).add_event(event);
+//                    if (MTmin_g_120 and((met_50_200&amp;&amp;Nj_5)||met_200_300)and HT_300_1125) _counters.at(&quot;SRHH-21&quot;).add_event(event);
+//                } else if (Nb==2){
+//                    if (MTmin_l_120 and met_50_200  and Nj_2_4 and HT_300)              _counters.at(&quot;SRHH-22&quot;).add_event(event);
+//                    if (MTmin_l_120 and met_50_200  and Nj_2_4 and HT_300_1125)         _counters.at(&quot;SRHH-23&quot;).add_event(event);
+//                    if (SSHH_combine and pp)                                             _counters.at(&quot;SRHH-24&quot;).add_event(event);
+//                    if (SSHH_combine and !pp)                                            _counters.at(&quot;SRHH-25&quot;).add_event(event);
+//                    if (MTmin_l_120 and met_50_200  and Nj_5   and HT_300_1125 and pp)  _counters.at(&quot;SRHH-26&quot;).add_event(event);
+//                    if (MTmin_l_120 and met_50_200  and Nj_5   and HT_300_1125 and !pp) _counters.at(&quot;SRHH-27&quot;).add_event(event);
+//                    if (MTmin_l_120 and met_200_300 and Nj_2_4 and HT_300_1125 and pp)  _counters.at(&quot;SRHH-28&quot;).add_event(event);
+//                    if (MTmin_l_120 and met_200_300 and Nj_2_4 and HT_300_1125 and !pp) _counters.at(&quot;SRHH-29&quot;).add_event(event);
+//                    if (MTmin_l_120 and met_200_300 and Nj_5   and HT_300_1125)         _counters.at(&quot;SRHH-30&quot;).add_event(event);
+//                    if (MTmin_g_120 and met_50_200  and Nj_2_4 and HT_300_1125 and pp)  _counters.at(&quot;SRHH-31&quot;).add_event(event);
+//                    if (MTmin_g_120 and met_50_200  and Nj_2_4 and HT_300_1125 and !pp) _counters.at(&quot;SRHH-32&quot;).add_event(event);
+//                    if (MTmin_g_120 and((met_50_200&amp;&amp;Nj_5)||met_200_300)and HT_300_1125) _counters.at(&quot;SRHH-33&quot;).add_event(event);
+//                } else if (Nb&gt;=3){
+//                    if (MTmin_l_120 and met&lt;300                and HT_300 and pp)       _counters.at(&quot;SRHH-34&quot;).add_event(event);
+//                    if (MTmin_l_120 and met&lt;300                and HT_300 and !pp)      _counters.at(&quot;SRHH-35&quot;).add_event(event);
+//                    if (MTmin_l_120 and met&lt;300     and Nj_2_4 and HT_300_1125 and pp)  _counters.at(&quot;SRHH-36&quot;).add_event(event);
+//                    if (MTmin_l_120 and met&lt;300     and Nj_2_4 and HT_300_1125 and !pp) _counters.at(&quot;SRHH-37&quot;).add_event(event);
+//                    if (MTmin_l_120 and met&lt;300     and Nj_5   and HT_300_1125 and pp)  _counters.at(&quot;SRHH-38&quot;).add_event(event);
+//                    if (MTmin_l_120 and met&lt;300     and Nj_5   and HT_300_1125 and !pp) _counters.at(&quot;SRHH-39&quot;).add_event(event);
+//                    if (MTmin_g_120                            and HT_300)              _counters.at(&quot;SRHH-40&quot;).add_event(event);
+//                    if (MTmin_g_120 and met&lt;300     and Nj_2_4 and HT_300_1125 and pp)  _counters.at(&quot;SRHH-41&quot;).add_event(event);
+//                    if (MTmin_g_120 and met&lt;300     and Nj_2_4 and HT_300_1125 and !pp) _counters.at(&quot;SRHH-42&quot;).add_event(event);
+//                    if (MTmin_g_120 and met&lt;300     and Nj_5   and HT_300_1125 and pp)  _counters.at(&quot;SRHH-43&quot;).add_event(event);
+//                    if (MTmin_g_120 and met&lt;300     and Nj_5   and HT_300_1125 and !pp) _counters.at(&quot;SRHH-44&quot;).add_event(event);
+//                }
+
+//                if (met_300_500 and Nj_2_4 and HT&gt;300 and pp)  _counters.at(&quot;SRHH-45&quot;).add_event(event);
+//                if (met_300_500 and Nj_2_4 and HT&gt;300 and !pp) _counters.at(&quot;SRHH-46&quot;).add_event(event);
+//                if (met_500     and Nj_2_4 and HT&gt;300 and pp)  _counters.at(&quot;SRHH-47&quot;).add_event(event);
+//                if (met_500     and Nj_2_4 and HT&gt;300 and !pp) _counters.at(&quot;SRHH-48&quot;).add_event(event);
+//                if (met_300_500 and Nj_5   and HT&gt;300 and pp)  _counters.at(&quot;SRHH-49&quot;).add_event(event);
+//                if (met_300_500 and Nj_5   and HT&gt;300 and !pp) _counters.at(&quot;SRHH-50&quot;).add_event(event);
+//                if (met_500     and Nj_5   and HT&gt;300 and pp)  _counters.at(&quot;SRHH-51&quot;).add_event(event);
+//                if (met_500     and Nj_5   and HT&gt;300 and !pp) _counters.at(&quot;SRHH-52&quot;).add_event(event);
+
+//                if (HT_1125_1300 and met&lt;300 and Nj&lt;5) _counters.at(&quot;SRHH-53&quot;).add_event(event);
+//                if (HT_1300_1600 and met&lt;300 and Nj&lt;5) _counters.at(&quot;SRHH-54&quot;).add_event(event);
+//                if (HT_1600      and met&lt;300 and Nj&lt;5) _counters.at(&quot;SRHH-55&quot;).add_event(event);
+
+//                if (HT_1125_1300 and met&lt;300 and Nj==5 and Nj==6) _counters.at(&quot;SRHH-56&quot;).add_event(event);
+//                if (HT_1300_1600 and met&lt;300 and Nj==5 and Nj==6) _counters.at(&quot;SRHH-57&quot;).add_event(event);
+//                if (HT_1600      and met&lt;300 and Nj==5 and Nj==6) _counters.at(&quot;SRHH-58&quot;).add_event(event);
+
+//                if (HT_1125_1300 and met&lt;300 and Nj&lt;5) _counters.at(&quot;SRHH-59&quot;).add_event(event);
+//                if (HT_1300_1600 and met&lt;300 and Nj&lt;5) _counters.at(&quot;SRHH-60&quot;).add_event(event);
+//                if (HT_1600      and met&lt;300 and Nj&lt;5) _counters.at(&quot;SRHH-61&quot;).add_event(event);
+//            }
+
+//            bool SSHL_combine = MTmin_l_120&amp;&amp;( (met_50_200&amp;&amp;Nj_5) or met_200_300 )&amp;&amp;HT_300 ;
+
+//            // SSHL: exactly 2 leptons, one with PT&gt;25 GeV, one with PT&lt;25 GeV,  and MET&gt;50 GeV
+//            if (leptons.size()==2 and leptons[0]-&gt;pT() &gt; 25. and leptons[1]-&gt;pT() &lt; 25.) {
+//                if (Nb==0 and MTmin_l_120) {
+//                    if ( met_50_200  and Nj_2_4 and HT_300)              _counters.at(&quot;SRHL-0&quot;).add_event(event);
+//                    if ( met_50_200  and Nj_2_4 and HT_300_1125)         _counters.at(&quot;SRHL-1&quot;).add_event(event);
+//                    if ( SSHL_combine)                                   _counters.at(&quot;SRHL-2&quot;).add_event(event);
+//                    if ( met_50_200  and Nj_5 and HT_300_1125)           _counters.at(&quot;SRHL-3&quot;).add_event(event);
+//                    if ( met_200_300 and Nj_2_4 and HT_300_1125 and pp)  _counters.at(&quot;SRHL-4&quot;).add_event(event);
+//                    if ( met_200_300 and Nj_2_4 and HT_300_1125 and !pp) _counters.at(&quot;SRHL-5&quot;).add_event(event);
+//                    if ( met_200_300 and Nj_5 and HT_300_1125)           _counters.at(&quot;SRHL-6&quot;).add_event(event);
+
+//                } else if(Nb==1 and MTmin_l_120) {
+//                    if ( met_50_200  and Nj_2_4 and HT_300)              _counters.at(&quot;SRHL-7&quot;).add_event(event);
+//                    if ( met_50_200  and Nj_2_4 and HT_300_1125)         _counters.at(&quot;SRHL-8&quot;).add_event(event);
+//                    if ( SSHL_combine and pp)                            _counters.at(&quot;SRHL-9&quot;).add_event(event);
+//                    if ( SSHL_combine and !pp)                           _counters.at(&quot;SRHL-10&quot;).add_event(event);
+//                    if ( met_50_200  and Nj_5 and HT_300_1125 and pp)    _counters.at(&quot;SRHL-11&quot;).add_event(event);
+//                    if ( met_50_200  and Nj_5 and HT_300_1125 and !pp)   _counters.at(&quot;SRHL-12&quot;).add_event(event);
+//                    if ( met_200_300 and Nj_2_4 and HT_300_1125)         _counters.at(&quot;SRHL-13&quot;).add_event(event);
+//                    if ( met_200_300 and Nj_5 and HT_300_1125 and pp)    _counters.at(&quot;SRHL-14&quot;).add_event(event);
+//                    if ( met_200_300 and Nj_5 and HT_300_1125 and !pp)   _counters.at(&quot;SRHL-15&quot;).add_event(event);
+//                } else if(Nb==2 and MTmin_l_120) {
+//                    if ( met_50_200  and Nj_2_4 and HT_300)              _counters.at(&quot;SRHL-16&quot;).add_event(event);
+//                    if ( met_50_200  and Nj_2_4 and HT_300_1125)         _counters.at(&quot;SRHL-17&quot;).add_event(event);
+//                    if ( SSHL_combine and pp)                            _counters.at(&quot;SRHL-18&quot;).add_event(event);
+//                    if ( SSHL_combine and !pp)                           _counters.at(&quot;SRHL-19&quot;).add_event(event);
+//                    if ( met_50_200  and Nj_5 and HT_300_1125 and pp)    _counters.at(&quot;SRHL-20&quot;).add_event(event);
+//                    if ( met_50_200  and Nj_5 and HT_300_1125 and !pp)   _counters.at(&quot;SRHL-21&quot;).add_event(event);
+//                    if ( met_200_300 and Nj_2_4 and HT_300_1125 and pp)  _counters.at(&quot;SRHL-22&quot;).add_event(event);
+//                    if ( met_200_300 and Nj_2_4 and HT_300_1125 and !pp) _counters.at(&quot;SRHL-23&quot;).add_event(event);
+//                    if ( met_200_300 and Nj_5 and HT_300_1125)           _counters.at(&quot;SRHL-24&quot;).add_event(event);
+//                }else if(Nb==3 and MTmin_l_120) {
+//                    if ( met_50_200 and HT_300 and pp)                   _counters.at(&quot;SRHL-25&quot;).add_event(event);
+//                    if ( met_50_200 and HT_300 and !pp)                  _counters.at(&quot;SRHL-26&quot;).add_event(event);
+//                    if ( met_50_200 and HT_300_1125 and pp)              _counters.at(&quot;SRHL-27&quot;).add_event(event);
+//                    if ( met_50_200 and HT_300_1125 and !pp)             _counters.at(&quot;SRHL-28&quot;).add_event(event);
+//                    if ( met_200_300 and HT_300_1125)                    _counters.at(&quot;SRHL-29&quot;).add_event(event);
+//                }
+//                if (MTmin_g_120 and met&lt;300 and HT_300)       _counters.at(&quot;SRHL-30&quot;).add_event(event);
+//                if (MTmin_g_120 and met&lt;300 and HT_300_1125)  _counters.at(&quot;SRHL-31&quot;).add_event(event);
+//                if (met_300_500 and Nj_2_4 and HT&gt;300 and pp)  _counters.at(&quot;SRHL-32&quot;).add_event(event);
+//                if (met_300_500 and Nj_2_4 and HT&gt;300 and !pp) _counters.at(&quot;SRHL-33&quot;).add_event(event);
+//                if (met_500 and Nj_2_4 and HT&gt;300 and pp)      _counters.at(&quot;SRHL-34&quot;).add_event(event);
+//                if (met_500 and Nj_2_4 and HT&gt;300 and !pp)     _counters.at(&quot;SRHL-35&quot;).add_event(event);
+//                if (met_300_500 and Nj_5 and HT&gt;300 and pp)    _counters.at(&quot;SRHL-36&quot;).add_event(event);
+//                if (met_300_500 and Nj_5 and HT&gt;300 and !pp)   _counters.at(&quot;SRHL-37&quot;).add_event(event);
+//                if (met_500 and Nj_5 and HT&gt;300)               _counters.at(&quot;SRHL-38&quot;).add_event(event);
+
+//                if (HT_1125_1300 and pp)  _counters.at(&quot;SRHL-39&quot;).add_event(event);
+//                if (HT_1125_1300 and !pp) _counters.at(&quot;SRHL-40&quot;).add_event(event);
+//                if (HT_1300 and pp)       _counters.at(&quot;SRHL-41&quot;).add_event(event);
+//                if (HT_1300 and !pp)      _counters.at(&quot;SRHL-42&quot;).add_event(event);
+//            }
+
+//            // SSLL: exactly 2 leptons, both with PT&lt;25 GeV, and MET&gt;50 GeV
+//            if (leptons.size()==2 and leptons[0]-&gt;pT() &lt; 25. and leptons[1]-&gt;pT() &lt; 25.) {
+//                if (HT&gt;400) {
+//                    if (MTmin_l_120) {
+//                        if (Nb==0) {
+//                            if (met_50_200) _counters.at(&quot;SRLL-0&quot;).add_event(event);
+//                            else            _counters.at(&quot;SRLL-1&quot;).add_event(event);
+//                        } else if (Nb==1) {
+//                            if (met_50_200) _counters.at(&quot;SRLL-2&quot;).add_event(event);
+//                            else            _counters.at(&quot;SRLL-3&quot;).add_event(event);
+//                        } else if (Nb==2) {
+//                            if (met_50_200) _counters.at(&quot;SRLL-4&quot;).add_event(event);
+//                            else            _counters.at(&quot;SRLL-5&quot;).add_event(event);
+//                        } else if (Nb&gt;=3)   _counters.at(&quot;SRLL-6&quot;).add_event(event);
+//                    } else                  _counters.at(&quot;SRLL-7&quot;).add_event(event);
+//                }
+//            }
+
+//            // LM: exactly 2 leptons, both with PT&gt;25 GeV, and MET&lt;50 GeV
+//            if (leptons.size()==2 and leptons[0]-&gt;pT() &gt; 25. and leptons[1]-&gt;pT() &gt; 25.) {
+//                if (HT_300_1125) {
+//                    if (Nb==0) {
+//                        if (Nj_2_4) _counters.at(&quot;SRLM-0&quot;).add_event(event);
+//                        if (Nj_5)   _counters.at(&quot;SRLM-1&quot;).add_event(event);
+//                    } else if (Nb==1){
+//                        if (Nj_2_4) _counters.at(&quot;SRLM-2&quot;).add_event(event);
+//                        if (Nj_5)   _counters.at(&quot;SRLM-3&quot;).add_event(event);
+//                    } else if (Nb==2){
+//                        if (Nj_2_4) _counters.at(&quot;SRLM-4&quot;).add_event(event);
+//                        if (Nj_5)   _counters.at(&quot;SRLM-5&quot;).add_event(event);
+//                    } else          _counters.at(&quot;SRLM-6&quot;).add_event(event);
+//                } else if (HT_1125_1300){
+//                    if (Nj_2_4) {
+//                        _counters.at(&quot;SRLM-7&quot;).add_event(event);
+//                    } else if (Nj_5) {
+//                        _counters.at(&quot;SRLM-8&quot;).add_event(event);
+//                    }
+//                } else if (HT_1300){
+//                    if (Nj_2_4) {
+//                        _counters.at(&quot;SRLM-9&quot;).add_event(event);
+//                    } else if (Nj_5) {
+//                        _counters.at(&quot;SRLM-1&quot;).add_event(event);
+//                    }
+//                }
+//            }
+
+//            // ML: &gt;=3 leptons, at least one with PT&gt;25 GeV, and MET&gt;50 GeV
+//            if (leptons.size()&gt;=3 and leptons[0]-&gt;pT() &gt; 25.) {
+//                bool on_Z=false;
+//                size_t Z_l1;
+//                size_t Z_l2;
+//                for (size_t i=0; i&lt;leptons.size(); ++i) {
+//                    for (size_t j=i+1; j&lt;leptons.size(); ++j) {
+//                        if (leptons[i]-&gt;pid()+leptons[j]-&gt;pid()==0 and fabs((leptons[i]-&gt;mom()+leptons[j]-&gt;mom()).m()-91)&lt;15) {
+//                            on_Z = true;
+//                            Z_l1=i;
+//                            Z_l2=j;
+//                            break;
+//                        }
+//                    }
+//                    if (on_Z) break;
+//                }
+
+//                if (not on_Z){ // off-Z
+//                    if (Nb==0) {
+//                        if (HT&lt;400) {
+//                            if (met&lt;150) {
+//                                if (MTmin_l_120) _counters.at(&quot;SRML-0&quot;).add_event(event);
+//                                else              _counters.at(&quot;SRML-1&quot;).add_event(event);
+//                            } else if (met&lt;300) {
+//                                if (MTmin_l_120) _counters.at(&quot;SRML-2&quot;).add_event(event);
+//                                else              _counters.at(&quot;SRML-3&quot;).add_event(event);
+//                            }
+//                        }
+//                        else if (HT&lt;600) {
+//                             if (met&lt;150)         _counters.at(&quot;SRML-4&quot;).add_event(event);
+//                             else if (met&lt;300)    _counters.at(&quot;SRML-5&quot;).add_event(event);
+//                        }
+//                    } else if (Nb==1) {
+//                        if (HT&lt;400) {
+//                             if (met&lt;150)         _counters.at(&quot;SRML-6&quot;).add_event(event);
+//                             else if (met&lt;300)    _counters.at(&quot;SRML-7&quot;).add_event(event);
+//                        }
+//                        else if (HT&lt;600) {
+//                             if (met&lt;150)         _counters.at(&quot;SRML-8&quot;).add_event(event);
+//                             else if (met&lt;300)    _counters.at(&quot;SRML-9&quot;).add_event(event);
+//                        }
+//                    } else if (Nb==2) {
+//                        if (HT&lt;400) {
+//                             if (met&lt;150)         _counters.at(&quot;SRML-10&quot;).add_event(event);
+//                             else if (met&lt;300)    _counters.at(&quot;SRML-11&quot;).add_event(event);
+//                        }
+//                        else if (HT&lt;600) {
+//                             if (met&lt;150)         _counters.at(&quot;SRML-12&quot;).add_event(event);
+//                             else if (met&lt;300)    _counters.at(&quot;SRML-13&quot;).add_event(event);
+//                        }
+//                    } else if (Nb&gt;=3) {
+//                        if (HT&lt;600)               _counters.at(&quot;SRML-14&quot;).add_event(event);
+//                    }
+//                    if (HT&gt;=600) {
+//                        if (met&lt;150) {
+//                            if (MTmin_l_120)     _counters.at(&quot;SRML-15&quot;).add_event(event);
+//                            else                  _counters.at(&quot;SRML-16&quot;).add_event(event);
+//                        } else if (met&lt;300) {
+//                            if (MTmin_l_120)     _counters.at(&quot;SRML-17&quot;).add_event(event);
+//                            else                  _counters.at(&quot;SRML-18&quot;).add_event(event);
+//                        }
+//                    }
+//                    if (met&gt;300) {
+//                        if (MTmin_l_120)         _counters.at(&quot;SRML-19&quot;).add_event(event);
+//                        else                      _counters.at(&quot;SRML-20&quot;).add_event(event);
+//                    }
+//                } else { // on-Z
+//                    // M_T^{miss} for on-Z
+//                    double MTmin_Z = 1000;
+//                    for (size_t i=0; i&lt;leptons.size(); ++i) {
+//                        if ( (i != Z_l1) and (i != Z_l2)) {
+//                            double MTmin_try = sqrt(2.*leptons[i]-&gt;pT()*met*(1. - cos(leptons[i]-&gt;mom().deltaPhi(ptot))));
+//                            if (MTmin_try&lt;MTmin_Z) MTmin_Z=MTmin_try;
+//                        }
+//                    }
+//                    bool MTmin_Z_l_120 = MTmin_Z&lt;120;
+//                    if (Nb==0) {
+//                        if (HT&lt;400) {
+//                            if (met&lt;150) {
+//                                if (MTmin_Z_l_120) _counters.at(&quot;SRML-21&quot;).add_event(event);
+//                                else                _counters.at(&quot;SRML-22&quot;).add_event(event);
+//                            } else if (met&lt;300) {
+//                                if (MTmin_Z_l_120) _counters.at(&quot;SRML-23&quot;).add_event(event);
+//                                else                _counters.at(&quot;SRML-24&quot;).add_event(event);
+//                            }
+//                        }
+//                        else if (HT&lt;600) {
+//                            if (met&lt;150) {
+//                                if (MTmin_Z_l_120) _counters.at(&quot;SRML-25&quot;).add_event(event);
+//                                else                _counters.at(&quot;SRML-26&quot;).add_event(event);
+//                            } else if (met&lt;300) {
+//                                if (MTmin_Z_l_120) _counters.at(&quot;SRML-27&quot;).add_event(event);
+//                                else                _counters.at(&quot;SRML-28&quot;).add_event(event);
+//                            }
+//                        }
+//                    } else if (Nb==1) {
+//                        if (HT&lt;400) {
+//                             if (met&lt;150)           _counters.at(&quot;SRML-29&quot;).add_event(event);
+//                             else if (met&lt;300)      _counters.at(&quot;SRML-30&quot;).add_event(event);
+//                        }
+//                        else if (HT&lt;600) {
+//                             if (met&lt;150)           _counters.at(&quot;SRML-31&quot;).add_event(event);
+//                             else if (met&lt;300)      _counters.at(&quot;SRML-32&quot;).add_event(event);
+//                        }
+//                    } else if (Nb==2) {
+//                        if (HT&lt;400) {
+//                             if (met&lt;150)           _counters.at(&quot;SRML-33&quot;).add_event(event);
+//                             else if (met&lt;300)      _counters.at(&quot;SRML-34&quot;).add_event(event);
+//                        }
+//                        else if (HT&lt;600) {
+//                             if (met&lt;150)           _counters.at(&quot;SRML-35&quot;).add_event(event);
+//                             else if (met&lt;300)      _counters.at(&quot;SRML-36&quot;).add_event(event);
+//                        }
+//                    } else if (Nb&gt;=3) {
+//                        if (HT&lt;600)                 _counters.at(&quot;SRML-37&quot;).add_event(event);
+//                    }
+//                    if (HT&gt;=600) {
+//                        if (met&lt;150) {
+//                            if (MTmin_Z_l_120)     _counters.at(&quot;SRML-38&quot;).add_event(event);
+//                            else                    _counters.at(&quot;SRML-39&quot;).add_event(event);
+//                        } else if (met&lt;300) {
+//                            if (MTmin_Z_l_120)     _counters.at(&quot;SRML-40&quot;).add_event(event);
+//                            else                    _counters.at(&quot;SRML-41&quot;).add_event(event);
+//                        }
+//                    }
+//                    if (met&gt;300) {
+//                        if (MTmin_Z_l_120)         _counters.at(&quot;SRML-42&quot;).add_event(event);
+//                        else                        _counters.at(&quot;SRML-43&quot;).add_event(event);
+//                    }
+//                }
+//            }
 
             return;
         }
@@ -721,184 +790,201 @@ namespace Gambit {
 
 
         void collect_results() {
+            add_result(SignalRegionData(_counters.at(&quot;ISR1&quot;), 16, {12.7, 7.4}));
+            add_result(SignalRegionData(_counters.at(&quot;ISR2&quot;), 14, {11.0, 3.8}));
+            add_result(SignalRegionData(_counters.at(&quot;ISR3&quot;), 13, {10.4, 9.7}));
+            add_result(SignalRegionData(_counters.at(&quot;ISR4&quot;), 17, {11.4, 3.8}));
+            add_result(SignalRegionData(_counters.at(&quot;ISR5&quot;), 10, {6.6, 5.7}));
+            add_result(SignalRegionData(_counters.at(&quot;ISR6&quot;), 8, {6.3, 1.3}));
+            add_result(SignalRegionData(_counters.at(&quot;ISR7&quot;), 12, {7.0, 2.8}));
+            add_result(SignalRegionData(_counters.at(&quot;ISR8&quot;), 10, {6.2, 1.4}));
+            add_result(SignalRegionData(_counters.at(&quot;ISR9&quot;), 8, {7.8, 3.5}));
+            add_result(SignalRegionData(_counters.at(&quot;ISR10&quot;), 12, {10.4, 9.0}));
+            add_result(SignalRegionData(_counters.at(&quot;ISR11&quot;), 13, {12.1, 5.6}));
+            add_result(SignalRegionData(_counters.at(&quot;ISR12&quot;), 7, {7.1, 4.3}));
+            add_result(SignalRegionData(_counters.at(&quot;ISR13&quot;), 3, {1.61, 0.39}));
+            add_result(SignalRegionData(_counters.at(&quot;ISR14&quot;), 3, {3.6, 3.6}));
+            add_result(SignalRegionData(_counters.at(&quot;ISR15&quot;), 4, {2.34, 0.51}));
+            add_result(SignalRegionData(_counters.at(&quot;ISR16&quot;), 7, {5.6, 1.6}));
+            add_result(SignalRegionData(_counters.at(&quot;ISR17&quot;), 7, {5.7, 1.9}));
 
             // HH
-            add_result(SignalRegionData(_counters.at(&quot;SRHH-0&quot;), 1609, {1510, 310}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHH-1&quot;), 647, {590, 90}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHH-2&quot;), 132, {103, 22}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHH-3&quot;), 51, {38, 7}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHH-4&quot;), 49, {57, 10}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHH-5&quot;), 23, {32, 9}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHH-6&quot;), 7, {5.5, 1.7}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHH-7&quot;), 31, {25, 6}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHH-8&quot;), 20, {21, 5}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHH-9&quot;), 11, {9.4, 1.9}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHH-10&quot;), 1068, {930, 230}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHH-11&quot;), 370, {330, 70}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHH-12&quot;), 38, {36, 7}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHH-13&quot;), 31, {25, 5}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHH-14&quot;), 63, {44, 7}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHH-15&quot;), 38, {39, 8}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHH-16&quot;), 30, {27, 5}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHH-17&quot;), 15, {14.8, 3.2}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHH-18&quot;), 12, {11.5, 3.0}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHH-19&quot;), 14, {11.8, 2.6}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHH-20&quot;), 16, {9.6, 2.1}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHH-21&quot;), 15, {10.0, 1.6}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHH-22&quot;), 345, {270, 40}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHH-23&quot;), 169, {143, 20}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHH-24&quot;), 11, {15.2, 2.4}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHH-25&quot;), 18, {13.8, 3.4}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHH-26&quot;), 43, {33, 5}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHH-27&quot;), 38, {29, 4}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHH-28&quot;), 9, {11.5, 2.5}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHH-29&quot;), 5, {6.7, 1.2}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHH-30&quot;), 6, {7.5, 1.8}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHH-31&quot;), 14, {5.9, 1.0}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHH-32&quot;), 7, {6.5, 1.9}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHH-33&quot;), 11, {6.7, 1.2}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHH-34&quot;), 17, {10.3, 1.9}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHH-35&quot;), 11, {8.6, 1.7}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHH-36&quot;), 6, {10.6, 2.0}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHH-37&quot;), 5, {7.3, 1.3}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHH-38&quot;), 8, {9.6, 2.2}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHH-39&quot;), 11, {9.2, 1.9}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHH-40&quot;), 2, {1.3, 0.6}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHH-41&quot;), 1, {0.6, 0.4}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHH-42&quot;), 0, {0.8, 0.4}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHH-43&quot;), 1, {0.7, 0.4}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHH-44&quot;), 1, {0.7, 0.5}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHH-45&quot;), 59, {42, 7}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHH-46&quot;), 23, {18, 4}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHH-47&quot;), 10, {13, 9}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHH-48&quot;), 4, {2.0, 0.5}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHH-49&quot;), 13, {6.3, 1.0}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHH-50&quot;), 4, {3.7, 0.7}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHH-51&quot;), 4, {1.26, 0.33}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHH-52&quot;), 2, {0.4, 0.4}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHH-53&quot;), 24, {10.1, 1.5}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHH-54&quot;), 4, {7.0, 1.1}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHH-55&quot;), 5, {4.3, 0.9}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHH-56&quot;), 7, {5.3, 0.8}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHH-57&quot;), 6, {6, 6}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHH-58&quot;), 3, {2.2, 0.4}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHH-59&quot;), 5, {1.8, 0.5}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHH-60&quot;), 4, {1.9, 0.4}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHH-61&quot;), 0, {1.3, 0.9}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHH-0&quot;), 1609, {1510, 310}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHH-1&quot;), 647, {590, 90}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHH-2&quot;), 132, {103, 22}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHH-3&quot;), 51, {38, 7}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHH-4&quot;), 49, {57, 10}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHH-5&quot;), 23, {32, 9}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHH-6&quot;), 7, {5.5, 1.7}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHH-7&quot;), 31, {25, 6}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHH-8&quot;), 20, {21, 5}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHH-9&quot;), 11, {9.4, 1.9}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHH-10&quot;), 1068, {930, 230}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHH-11&quot;), 370, {330, 70}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHH-12&quot;), 38, {36, 7}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHH-13&quot;), 31, {25, 5}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHH-14&quot;), 63, {44, 7}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHH-15&quot;), 38, {39, 8}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHH-16&quot;), 30, {27, 5}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHH-17&quot;), 15, {14.8, 3.2}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHH-18&quot;), 12, {11.5, 3.0}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHH-19&quot;), 14, {11.8, 2.6}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHH-20&quot;), 16, {9.6, 2.1}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHH-21&quot;), 15, {10.0, 1.6}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHH-22&quot;), 345, {270, 40}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHH-23&quot;), 169, {143, 20}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHH-24&quot;), 11, {15.2, 2.4}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHH-25&quot;), 18, {13.8, 3.4}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHH-26&quot;), 43, {33, 5}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHH-27&quot;), 38, {29, 4}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHH-28&quot;), 9, {11.5, 2.5}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHH-29&quot;), 5, {6.7, 1.2}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHH-30&quot;), 6, {7.5, 1.8}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHH-31&quot;), 14, {5.9, 1.0}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHH-32&quot;), 7, {6.5, 1.9}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHH-33&quot;), 11, {6.7, 1.2}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHH-34&quot;), 17, {10.3, 1.9}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHH-35&quot;), 11, {8.6, 1.7}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHH-36&quot;), 6, {10.6, 2.0}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHH-37&quot;), 5, {7.3, 1.3}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHH-38&quot;), 8, {9.6, 2.2}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHH-39&quot;), 11, {9.2, 1.9}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHH-40&quot;), 2, {1.3, 0.6}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHH-41&quot;), 1, {0.6, 0.4}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHH-42&quot;), 0, {0.8, 0.4}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHH-43&quot;), 1, {0.7, 0.4}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHH-44&quot;), 1, {0.7, 0.5}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHH-45&quot;), 59, {42, 7}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHH-46&quot;), 23, {18, 4}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHH-47&quot;), 10, {13, 9}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHH-48&quot;), 4, {2.0, 0.5}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHH-49&quot;), 13, {6.3, 1.0}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHH-50&quot;), 4, {3.7, 0.7}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHH-51&quot;), 4, {1.26, 0.33}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHH-52&quot;), 2, {0.4, 0.4}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHH-53&quot;), 24, {10.1, 1.5}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHH-54&quot;), 4, {7.0, 1.1}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHH-55&quot;), 5, {4.3, 0.9}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHH-56&quot;), 7, {5.3, 0.8}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHH-57&quot;), 6, {6, 6}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHH-58&quot;), 3, {2.2, 0.4}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHH-59&quot;), 5, {1.8, 0.5}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHH-60&quot;), 4, {1.9, 0.4}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHH-61&quot;), 0, {1.3, 0.9}));
 
-            // HL
-            add_result(SignalRegionData(_counters.at(&quot;SRHL-0&quot;), 1504, {1300, 310}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHL-1&quot;), 319, {310, 70}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHL-2&quot;), 32, {25, 6}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHL-3&quot;), 32, {32, 8}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHL-4&quot;), 32, {29, 6}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHL-5&quot;), 11, {17, 6}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHL-6&quot;), 6, {4.5, 2.5}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHL-7&quot;), 1223, {1010, 250}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHL-8&quot;), 307, {270, 60}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHL-9&quot;), 5, {7.1, 1.7}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHL-10&quot;), 7, {6.5, 1.6}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHL-11&quot;), 42, {39, 9}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHL-12&quot;), 37, {31, 8}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHL-13&quot;), 27, {23, 5}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHL-14&quot;), 7, {2.1, 1.1}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHL-15&quot;), 2, {1.7, 0.9}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHL-16&quot;), 256, {210, 40}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHL-17&quot;), 104, {85, 14}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHL-18&quot;), 4, {2.5, 1.2}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHL-19&quot;), 3, {3.0, 1.5}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHL-20&quot;), 27, {18.9, 3.5}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHL-21&quot;), 18, {15.9, 2.8}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHL-22&quot;), 2, {3.3, 0.6}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHL-23&quot;), 2, {4.4, 1.6}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHL-24&quot;), 5, {4.5, 1.7}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHL-25&quot;), 8, {8.2, 2.2}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHL-26&quot;), 6, {8.1, 2.2}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHL-27&quot;), 12, {9.7, 2.1}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHL-28&quot;), 7, {10.8, 2.8}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHL-29&quot;), 3, {1.1, 0.4}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHL-30&quot;), 5, {2.2, 0.5}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHL-31&quot;), 3, {2.6, 0.5}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHL-32&quot;), 23, {22, 6}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHL-33&quot;), 8, {7.2, 1.4}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHL-34&quot;), 4, {2.3, 0.5}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHL-35&quot;), 1, {0.42, 0.33}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHL-36&quot;), 3, {3.2, 1.5}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHL-37&quot;), 0, {1.4, 0.6}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHL-38&quot;), 0, {0.41, 0.25}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHL-39&quot;), 7, {3.1, 0.7}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHL-40&quot;), 0, {4, 4}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHL-41&quot;), 8, {4.7, 0.9}));
-            add_result(SignalRegionData(_counters.at(&quot;SRHL-42&quot;), 6, {1.71, 0.35}));
+//            // HL
+//            add_result(SignalRegionData(_counters.at(&quot;SRHL-0&quot;), 1504, {1300, 310}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHL-1&quot;), 319, {310, 70}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHL-2&quot;), 32, {25, 6}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHL-3&quot;), 32, {32, 8}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHL-4&quot;), 32, {29, 6}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHL-5&quot;), 11, {17, 6}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHL-6&quot;), 6, {4.5, 2.5}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHL-7&quot;), 1223, {1010, 250}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHL-8&quot;), 307, {270, 60}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHL-9&quot;), 5, {7.1, 1.7}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHL-10&quot;), 7, {6.5, 1.6}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHL-11&quot;), 42, {39, 9}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHL-12&quot;), 37, {31, 8}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHL-13&quot;), 27, {23, 5}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHL-14&quot;), 7, {2.1, 1.1}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHL-15&quot;), 2, {1.7, 0.9}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHL-16&quot;), 256, {210, 40}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHL-17&quot;), 104, {85, 14}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHL-18&quot;), 4, {2.5, 1.2}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHL-19&quot;), 3, {3.0, 1.5}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHL-20&quot;), 27, {18.9, 3.5}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHL-21&quot;), 18, {15.9, 2.8}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHL-22&quot;), 2, {3.3, 0.6}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHL-23&quot;), 2, {4.4, 1.6}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHL-24&quot;), 5, {4.5, 1.7}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHL-25&quot;), 8, {8.2, 2.2}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHL-26&quot;), 6, {8.1, 2.2}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHL-27&quot;), 12, {9.7, 2.1}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHL-28&quot;), 7, {10.8, 2.8}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHL-29&quot;), 3, {1.1, 0.4}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHL-30&quot;), 5, {2.2, 0.5}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHL-31&quot;), 3, {2.6, 0.5}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHL-32&quot;), 23, {22, 6}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHL-33&quot;), 8, {7.2, 1.4}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHL-34&quot;), 4, {2.3, 0.5}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHL-35&quot;), 1, {0.42, 0.33}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHL-36&quot;), 3, {3.2, 1.5}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHL-37&quot;), 0, {1.4, 0.6}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHL-38&quot;), 0, {0.41, 0.25}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHL-39&quot;), 7, {3.1, 0.7}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHL-40&quot;), 0, {4, 4}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHL-41&quot;), 8, {4.7, 0.9}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRHL-42&quot;), 6, {1.71, 0.35}));
 
-            // LL
-            add_result(SignalRegionData(_counters.at(&quot;SRLL-0&quot;), 25, {20, 6}));
-            add_result(SignalRegionData(_counters.at(&quot;SRLL-1&quot;), 6, {4.9, 1.5}));
-            add_result(SignalRegionData(_counters.at(&quot;SRLL-2&quot;), 29, {23, 6}));
-            add_result(SignalRegionData(_counters.at(&quot;SRLL-3&quot;), 8, {4, 4}));
-            add_result(SignalRegionData(_counters.at(&quot;SRLL-4&quot;), 13, {7.7, 2.1}));
-            add_result(SignalRegionData(_counters.at(&quot;SRLL-5&quot;), 0, {1.5, 0.8}));
-            add_result(SignalRegionData(_counters.at(&quot;SRLL-6&quot;), 0, {2.5, 1.2}));
-            add_result(SignalRegionData(_counters.at(&quot;SRLL-7&quot;), 0, {0.07, 0.07}));
+//            // LL
+//            add_result(SignalRegionData(_counters.at(&quot;SRLL-0&quot;), 25, {20, 6}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRLL-1&quot;), 6, {4.9, 1.5}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRLL-2&quot;), 29, {23, 6}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRLL-3&quot;), 8, {4, 4}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRLL-4&quot;), 13, {7.7, 2.1}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRLL-5&quot;), 0, {1.5, 0.8}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRLL-6&quot;), 0, {2.5, 1.2}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRLL-7&quot;), 0, {0.07, 0.07}));
 
-            // LM
-            add_result(SignalRegionData(_counters.at(&quot;SRLM-0&quot;), 314, {240, 50}));
-            add_result(SignalRegionData(_counters.at(&quot;SRLM-1&quot;), 22, {20, 5}));
-            add_result(SignalRegionData(_counters.at(&quot;SRLM-2&quot;), 159, {140, 31}));
-            add_result(SignalRegionData(_counters.at(&quot;SRLM-3&quot;), 37, {32, 7}));
-            add_result(SignalRegionData(_counters.at(&quot;SRLM-4&quot;), 66, {54, 8}));
-            add_result(SignalRegionData(_counters.at(&quot;SRLM-5&quot;), 33, {22, 4}));
-            add_result(SignalRegionData(_counters.at(&quot;SRLM-6&quot;), 23, {9.7, 2.1}));
-            add_result(SignalRegionData(_counters.at(&quot;SRLM-7&quot;), 3, {1.5, 0.5}));
-            add_result(SignalRegionData(_counters.at(&quot;SRLM-8&quot;), 1, {1.6, 0.4}));
-            add_result(SignalRegionData(_counters.at(&quot;SRLM-9&quot;), 1, {2.9, 2.9}));
-            add_result(SignalRegionData(_counters.at(&quot;SRLM-10&quot;), 3, {1.9, 1.4}));
+//            // LM
+//            add_result(SignalRegionData(_counters.at(&quot;SRLM-0&quot;), 314, {240, 50}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRLM-1&quot;), 22, {20, 5}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRLM-2&quot;), 159, {140, 31}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRLM-3&quot;), 37, {32, 7}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRLM-4&quot;), 66, {54, 8}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRLM-5&quot;), 33, {22, 4}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRLM-6&quot;), 23, {9.7, 2.1}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRLM-7&quot;), 3, {1.5, 0.5}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRLM-8&quot;), 1, {1.6, 0.4}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRLM-9&quot;), 1, {2.9, 2.9}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRLM-10&quot;), 3, {1.9, 1.4}));
 
-            // ML
-            add_result(SignalRegionData(_counters.at(&quot;SRML-0&quot;), 263, {220, 40}));
-            add_result(SignalRegionData(_counters.at(&quot;SRML-1&quot;), 1, {2.5, 2.5}));
-            add_result(SignalRegionData(_counters.at(&quot;SRML-2&quot;), 34, {32, 6}));
-            add_result(SignalRegionData(_counters.at(&quot;SRML-3&quot;), 1, {0.9, 0.5}));
-            add_result(SignalRegionData(_counters.at(&quot;SRML-4&quot;), 28, {22, 4}));
-            add_result(SignalRegionData(_counters.at(&quot;SRML-5&quot;), 8, {9.5, 1.8}));
-            add_result(SignalRegionData(_counters.at(&quot;SRML-6&quot;), 265, {210, 40}));
-            add_result(SignalRegionData(_counters.at(&quot;SRML-7&quot;), 47, {36, 6}));
-            add_result(SignalRegionData(_counters.at(&quot;SRML-8&quot;), 20, {21.6, 3.2}));
-            add_result(SignalRegionData(_counters.at(&quot;SRML-9&quot;), 16, {11.6, 1.9}));
-            add_result(SignalRegionData(_counters.at(&quot;SRML-10&quot;), 105, {84, 11}));
-            add_result(SignalRegionData(_counters.at(&quot;SRML-11&quot;), 17, {15.5, 2.1}));
-            add_result(SignalRegionData(_counters.at(&quot;SRML-12&quot;), 21, {15.7, 2.2}));
-            add_result(SignalRegionData(_counters.at(&quot;SRML-13&quot;), 8, {5.3, 0.8}));
-            add_result(SignalRegionData(_counters.at(&quot;SRML-14&quot;), 12, {10.2, 2.1}));
-            add_result(SignalRegionData(_counters.at(&quot;SRML-15&quot;), 40, {27, 4}));
-            add_result(SignalRegionData(_counters.at(&quot;SRML-16&quot;), 2, {0.8, 0.5}));
-            add_result(SignalRegionData(_counters.at(&quot;SRML-17&quot;), 24, {17.8, 2.4}));
-            add_result(SignalRegionData(_counters.at(&quot;SRML-18&quot;), 0, {1.0, 0.4}));
-            add_result(SignalRegionData(_counters.at(&quot;SRML-19&quot;), 30, {17.8, 3.0}));
-            add_result(SignalRegionData(_counters.at(&quot;SRML-20&quot;), 2, {1.26, 0.33}));
-            add_result(SignalRegionData(_counters.at(&quot;SRML-21&quot;), 955, {830, 180}));
-            add_result(SignalRegionData(_counters.at(&quot;SRML-22&quot;), 136, {108, 22}));
-            add_result(SignalRegionData(_counters.at(&quot;SRML-23&quot;), 139, {117, 26}));
-            add_result(SignalRegionData(_counters.at(&quot;SRML-24&quot;), 8, {11.1, 2.3}));
-            add_result(SignalRegionData(_counters.at(&quot;SRML-25&quot;), 128, {111, 24}));
-            add_result(SignalRegionData(_counters.at(&quot;SRML-26&quot;), 20, {21, 5}));
-            add_result(SignalRegionData(_counters.at(&quot;SRML-27&quot;), 45, {42, 10}));
-            add_result(SignalRegionData(_counters.at(&quot;SRML-28&quot;), 3, {3.4, 0.9}));
-            add_result(SignalRegionData(_counters.at(&quot;SRML-29&quot;), 408, {320, 50}));
-            add_result(SignalRegionData(_counters.at(&quot;SRML-30&quot;), 50, {47, 8}));
-            add_result(SignalRegionData(_counters.at(&quot;SRML-31&quot;), 62, {51, 9}));
-            add_result(SignalRegionData(_counters.at(&quot;SRML-32&quot;), 24, {15.1, 2.6}));
-            add_result(SignalRegionData(_counters.at(&quot;SRML-33&quot;), 157, {131, 24}));
-            add_result(SignalRegionData(_counters.at(&quot;SRML-34&quot;), 24, {20, 4}));
-            add_result(SignalRegionData(_counters.at(&quot;SRML-35&quot;), 36, {27, 5}));
-            add_result(SignalRegionData(_counters.at(&quot;SRML-36&quot;), 11, {7.8, 1.5}));
-            add_result(SignalRegionData(_counters.at(&quot;SRML-37&quot;), 18, {12.9, 2.6}));
-            add_result(SignalRegionData(_counters.at(&quot;SRML-38&quot;), 117, {82, 14}));
-            add_result(SignalRegionData(_counters.at(&quot;SRML-39&quot;), 26, {18, 4}));
-            add_result(SignalRegionData(_counters.at(&quot;SRML-40&quot;), 29, {39, 8}));
-            add_result(SignalRegionData(_counters.at(&quot;SRML-41&quot;), 7, {4.9, 0.9}));
-            add_result(SignalRegionData(_counters.at(&quot;SRML-42&quot;), 44, {46, 10}));
-            add_result(SignalRegionData(_counters.at(&quot;SRML-43&quot;), 11, {5.7, 1.2}));
+//            // ML
+//            add_result(SignalRegionData(_counters.at(&quot;SRML-0&quot;), 263, {220, 40}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRML-1&quot;), 1, {2.5, 2.5}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRML-2&quot;), 34, {32, 6}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRML-3&quot;), 1, {0.9, 0.5}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRML-4&quot;), 28, {22, 4}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRML-5&quot;), 8, {9.5, 1.8}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRML-6&quot;), 265, {210, 40}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRML-7&quot;), 47, {36, 6}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRML-8&quot;), 20, {21.6, 3.2}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRML-9&quot;), 16, {11.6, 1.9}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRML-10&quot;), 105, {84, 11}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRML-11&quot;), 17, {15.5, 2.1}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRML-12&quot;), 21, {15.7, 2.2}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRML-13&quot;), 8, {5.3, 0.8}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRML-14&quot;), 12, {10.2, 2.1}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRML-15&quot;), 40, {27, 4}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRML-16&quot;), 2, {0.8, 0.5}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRML-17&quot;), 24, {17.8, 2.4}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRML-18&quot;), 0, {1.0, 0.4}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRML-19&quot;), 30, {17.8, 3.0}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRML-20&quot;), 2, {1.26, 0.33}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRML-21&quot;), 955, {830, 180}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRML-22&quot;), 136, {108, 22}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRML-23&quot;), 139, {117, 26}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRML-24&quot;), 8, {11.1, 2.3}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRML-25&quot;), 128, {111, 24}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRML-26&quot;), 20, {21, 5}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRML-27&quot;), 45, {42, 10}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRML-28&quot;), 3, {3.4, 0.9}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRML-29&quot;), 408, {320, 50}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRML-30&quot;), 50, {47, 8}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRML-31&quot;), 62, {51, 9}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRML-32&quot;), 24, {15.1, 2.6}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRML-33&quot;), 157, {131, 24}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRML-34&quot;), 24, {20, 4}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRML-35&quot;), 36, {27, 5}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRML-36&quot;), 11, {7.8, 1.5}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRML-37&quot;), 18, {12.9, 2.6}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRML-38&quot;), 117, {82, 14}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRML-39&quot;), 26, {18, 4}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRML-40&quot;), 29, {39, 8}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRML-41&quot;), 7, {4.9, 0.9}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRML-42&quot;), 44, {46, 10}));
+//            add_result(SignalRegionData(_counters.at(&quot;SRML-43&quot;), 11, {5.7, 1.2}));
 
             // static const vector&lt; vector&lt;double&gt; &gt; BKGCOV = {
             //     {},
@@ -922,7 +1008,7 @@ namespace Gambit {
 
   }
 }
-</code></pre><hr><p>Updated on 2022-09-08 at 03:46:48 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.a08b5ca912a508bc013bbd939befee438a0d2f798076e860e42147c7c0e2a01cf714847f7f5a2824876ce72867b0182df10e3537711faff352dd1ef41550be7c.js integrity="sha512-oItcqRKlCLwBO72Tm+/uQ4oNL3mAduhg5CFHx8DioBz3FIR/f1ooJIds5yhnsBgt8Q41N3Efr/NS3R70FVC+fA==" crossorigin=anonymous defer></script>
+</code></pre><hr><p>Updated on 2023-06-26 at 21:36:56 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.a08b5ca912a508bc013bbd939befee438a0d2f798076e860e42147c7c0e2a01cf714847f7f5a2824876ce72867b0182df10e3537711faff352dd1ef41550be7c.js integrity="sha512-oItcqRKlCLwBO72Tm+/uQ4oNL3mAduhg5CFHx8DioBz3FIR/f1ooJIds5yhnsBgt8Q41N3Efr/NS3R70FVC+fA==" crossorigin=anonymous defer></script>
 <script src=/js/highlight.min.ce91dadbce67e8eef36fa222c1c74c99f623c836cf6a316dffa1aeb390ab659d9a20d8145ceac39e049c555414fc360d31315e7980535dc6c03eb5374b7d559d.js integrity="sha512-zpHa285n6O7zb6IiwcdMmfYjyDbPajFt/6Gus5CrZZ2aINgUXOrDngScVVQU/DYNMTFeeYBTXcbAPrU3S31VnQ==" crossorigin=anonymous defer></script>
 <script src=/main.min.57d9a84956f7d60008c47938c7fdd2f75e8618ff1d09c5a5e2b32f91debaf7681f7ceca8b51aded60067c2136172134a91ebc0674487c76a04e3244d927ebdde.js integrity="sha512-V9moSVb31gAIxHk4x/3S916GGP8dCcWl4rMvkd6692gffOyotRre1gBnwhNhchNKkevAZ0SHx2oE4yRNkn693g==" crossorigin=anonymous defer></script>
-<script src=/index.min.2a2f6bd25e0a661102d8769165ef9d3273d4db5ae6edbc62261887d88167016dfb0f6310393f582bcc424de5dc6eab3a529fd305ba4c3afc8e551f0093ed322c.js integrity="sha512-Ki9r0l4KZhEC2HaRZe+dMnPU21rm7bxiJhiH2IFnAW37D2MQOT9YK8xCTeXcbqs6Up/TBbpMOvyOVR8Ak+0yLA==" crossorigin=anonymous defer></script></body></html>
+<script src=/index.min.95720397d55302de0e04fb8f4bf89a7396888a3be86803aa187cbc45924e9c35452b4bef718cd568b25ad872307d8f5537eab4c0045b8043c40628674a4fc53d.js integrity="sha512-lXIDl9VTAt4OBPuPS/iac5aIijvoaAOqGHy8RZJOnDVFK0vvcYzVaLJa2HIwfY9VN+q0wARbgEPEBihnSk/FPQ==" crossorigin=anonymous defer></script></body></html>

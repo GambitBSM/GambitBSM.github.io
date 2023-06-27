@@ -42,26 +42,26 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
                 // Member variables: 
             public:
                 // -- Static factory pointers: 
-                static Abstract_ParticleDataEntry* (*__factory0)(int, ::std::basic_string&lt;char&gt;, int, int, int, double, double, double, double, double);
-                static Abstract_ParticleDataEntry* (*__factory1)(int, ::std::basic_string&lt;char&gt;, int, int, int, double, double, double, double);
-                static Abstract_ParticleDataEntry* (*__factory2)(int, ::std::basic_string&lt;char&gt;, int, int, int, double, double, double);
-                static Abstract_ParticleDataEntry* (*__factory3)(int, ::std::basic_string&lt;char&gt;, int, int, int, double, double);
-                static Abstract_ParticleDataEntry* (*__factory4)(int, ::std::basic_string&lt;char&gt;, int, int, int, double);
-                static Abstract_ParticleDataEntry* (*__factory5)(int, ::std::basic_string&lt;char&gt;, int, int, int);
-                static Abstract_ParticleDataEntry* (*__factory6)(int, ::std::basic_string&lt;char&gt;, int, int);
-                static Abstract_ParticleDataEntry* (*__factory7)(int, ::std::basic_string&lt;char&gt;, int);
-                static Abstract_ParticleDataEntry* (*__factory8)(int, ::std::basic_string&lt;char&gt;);
+                static Abstract_ParticleDataEntry* (*__factory0)(int, std::string, int, int, int, double, double, double, double, double);
+                static Abstract_ParticleDataEntry* (*__factory1)(int, std::string, int, int, int, double, double, double, double);
+                static Abstract_ParticleDataEntry* (*__factory2)(int, std::string, int, int, int, double, double, double);
+                static Abstract_ParticleDataEntry* (*__factory3)(int, std::string, int, int, int, double, double);
+                static Abstract_ParticleDataEntry* (*__factory4)(int, std::string, int, int, int, double);
+                static Abstract_ParticleDataEntry* (*__factory5)(int, std::string, int, int, int);
+                static Abstract_ParticleDataEntry* (*__factory6)(int, std::string, int, int);
+                static Abstract_ParticleDataEntry* (*__factory7)(int, std::string, int);
+                static Abstract_ParticleDataEntry* (*__factory8)(int, std::string);
                 static Abstract_ParticleDataEntry* (*__factory9)(int);
                 static Abstract_ParticleDataEntry* (*__factory10)();
-                static Abstract_ParticleDataEntry* (*__factory11)(int, ::std::basic_string&lt;char&gt;, ::std::basic_string&lt;char&gt;, int, int, int, double, double, double, double, double);
-                static Abstract_ParticleDataEntry* (*__factory12)(int, ::std::basic_string&lt;char&gt;, ::std::basic_string&lt;char&gt;, int, int, int, double, double, double, double);
-                static Abstract_ParticleDataEntry* (*__factory13)(int, ::std::basic_string&lt;char&gt;, ::std::basic_string&lt;char&gt;, int, int, int, double, double, double);
-                static Abstract_ParticleDataEntry* (*__factory14)(int, ::std::basic_string&lt;char&gt;, ::std::basic_string&lt;char&gt;, int, int, int, double, double);
-                static Abstract_ParticleDataEntry* (*__factory15)(int, ::std::basic_string&lt;char&gt;, ::std::basic_string&lt;char&gt;, int, int, int, double);
-                static Abstract_ParticleDataEntry* (*__factory16)(int, ::std::basic_string&lt;char&gt;, ::std::basic_string&lt;char&gt;, int, int, int);
-                static Abstract_ParticleDataEntry* (*__factory17)(int, ::std::basic_string&lt;char&gt;, ::std::basic_string&lt;char&gt;, int, int);
-                static Abstract_ParticleDataEntry* (*__factory18)(int, ::std::basic_string&lt;char&gt;, ::std::basic_string&lt;char&gt;, int);
-                static Abstract_ParticleDataEntry* (*__factory19)(int, ::std::basic_string&lt;char&gt;, ::std::basic_string&lt;char&gt;);
+                static Abstract_ParticleDataEntry* (*__factory11)(int, std::string, std::string, int, int, int, double, double, double, double, double);
+                static Abstract_ParticleDataEntry* (*__factory12)(int, std::string, std::string, int, int, int, double, double, double, double);
+                static Abstract_ParticleDataEntry* (*__factory13)(int, std::string, std::string, int, int, int, double, double, double);
+                static Abstract_ParticleDataEntry* (*__factory14)(int, std::string, std::string, int, int, int, double, double);
+                static Abstract_ParticleDataEntry* (*__factory15)(int, std::string, std::string, int, int, int, double);
+                static Abstract_ParticleDataEntry* (*__factory16)(int, std::string, std::string, int, int, int);
+                static Abstract_ParticleDataEntry* (*__factory17)(int, std::string, std::string, int, int);
+                static Abstract_ParticleDataEntry* (*__factory18)(int, std::string, std::string, int);
+                static Abstract_ParticleDataEntry* (*__factory19)(int, std::string, std::string);
         
                 // -- Other member variables: 
         
@@ -71,29 +71,29 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         
                 void initPtr(Pythia8::ParticleData* particleDataPtrIn);
         
-                void setAll(::std::basic_string&lt;char&gt; nameIn, ::std::basic_string&lt;char&gt; antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn, double mMaxIn, double tau0In);
+                void setAll(std::string nameIn, std::string antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn, double mMaxIn, double tau0In);
         
-                void setAll(::std::basic_string&lt;char&gt; nameIn, ::std::basic_string&lt;char&gt; antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn, double mMaxIn);
+                void setAll(std::string nameIn, std::string antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn, double mMaxIn);
         
-                void setAll(::std::basic_string&lt;char&gt; nameIn, ::std::basic_string&lt;char&gt; antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn);
+                void setAll(std::string nameIn, std::string antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn);
         
-                void setAll(::std::basic_string&lt;char&gt; nameIn, ::std::basic_string&lt;char&gt; antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn);
+                void setAll(std::string nameIn, std::string antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn);
         
-                void setAll(::std::basic_string&lt;char&gt; nameIn, ::std::basic_string&lt;char&gt; antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In);
+                void setAll(std::string nameIn, std::string antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In);
         
-                void setAll(::std::basic_string&lt;char&gt; nameIn, ::std::basic_string&lt;char&gt; antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn);
+                void setAll(std::string nameIn, std::string antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn);
         
-                void setAll(::std::basic_string&lt;char&gt; nameIn, ::std::basic_string&lt;char&gt; antiNameIn, int spinTypeIn, int chargeTypeIn);
+                void setAll(std::string nameIn, std::string antiNameIn, int spinTypeIn, int chargeTypeIn);
         
-                void setAll(::std::basic_string&lt;char&gt; nameIn, ::std::basic_string&lt;char&gt; antiNameIn, int spinTypeIn);
+                void setAll(std::string nameIn, std::string antiNameIn, int spinTypeIn);
         
-                void setAll(::std::basic_string&lt;char&gt; nameIn, ::std::basic_string&lt;char&gt; antiNameIn);
+                void setAll(std::string nameIn, std::string antiNameIn);
         
-                void setName(::std::basic_string&lt;char&gt; nameIn);
+                void setName(std::string nameIn);
         
-                void setAntiName(::std::basic_string&lt;char&gt; antiNameIn);
+                void setAntiName(std::string antiNameIn);
         
-                void setNames(::std::basic_string&lt;char&gt; nameIn, ::std::basic_string&lt;char&gt; antiNameIn);
+                void setNames(std::string nameIn, std::string antiNameIn);
         
                 void setSpinType(int spinTypeIn);
         
@@ -135,9 +135,9 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         
                 bool hasAnti() const;
         
-                ::std::basic_string&lt;char&gt; name(int idIn) const;
+                ::std::string name(int idIn) const;
         
-                ::std::basic_string&lt;char&gt; name() const;
+                ::std::string name() const;
         
                 int spinType() const;
         
@@ -296,26 +296,26 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         
                 // Wrappers for original constructors: 
             public:
-                ParticleDataEntry(int idIn, ::std::basic_string&lt;char&gt; nameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn, double mMaxIn, double tau0In);
-                ParticleDataEntry(int idIn, ::std::basic_string&lt;char&gt; nameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn, double mMaxIn);
-                ParticleDataEntry(int idIn, ::std::basic_string&lt;char&gt; nameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn);
-                ParticleDataEntry(int idIn, ::std::basic_string&lt;char&gt; nameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn);
-                ParticleDataEntry(int idIn, ::std::basic_string&lt;char&gt; nameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In);
-                ParticleDataEntry(int idIn, ::std::basic_string&lt;char&gt; nameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn);
-                ParticleDataEntry(int idIn, ::std::basic_string&lt;char&gt; nameIn, int spinTypeIn, int chargeTypeIn);
-                ParticleDataEntry(int idIn, ::std::basic_string&lt;char&gt; nameIn, int spinTypeIn);
-                ParticleDataEntry(int idIn, ::std::basic_string&lt;char&gt; nameIn);
+                ParticleDataEntry(int idIn, std::string nameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn, double mMaxIn, double tau0In);
+                ParticleDataEntry(int idIn, std::string nameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn, double mMaxIn);
+                ParticleDataEntry(int idIn, std::string nameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn);
+                ParticleDataEntry(int idIn, std::string nameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn);
+                ParticleDataEntry(int idIn, std::string nameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In);
+                ParticleDataEntry(int idIn, std::string nameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn);
+                ParticleDataEntry(int idIn, std::string nameIn, int spinTypeIn, int chargeTypeIn);
+                ParticleDataEntry(int idIn, std::string nameIn, int spinTypeIn);
+                ParticleDataEntry(int idIn, std::string nameIn);
                 ParticleDataEntry(int idIn);
                 ParticleDataEntry();
-                ParticleDataEntry(int idIn, ::std::basic_string&lt;char&gt; nameIn, ::std::basic_string&lt;char&gt; antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn, double mMaxIn, double tau0In);
-                ParticleDataEntry(int idIn, ::std::basic_string&lt;char&gt; nameIn, ::std::basic_string&lt;char&gt; antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn, double mMaxIn);
-                ParticleDataEntry(int idIn, ::std::basic_string&lt;char&gt; nameIn, ::std::basic_string&lt;char&gt; antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn);
-                ParticleDataEntry(int idIn, ::std::basic_string&lt;char&gt; nameIn, ::std::basic_string&lt;char&gt; antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn);
-                ParticleDataEntry(int idIn, ::std::basic_string&lt;char&gt; nameIn, ::std::basic_string&lt;char&gt; antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In);
-                ParticleDataEntry(int idIn, ::std::basic_string&lt;char&gt; nameIn, ::std::basic_string&lt;char&gt; antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn);
-                ParticleDataEntry(int idIn, ::std::basic_string&lt;char&gt; nameIn, ::std::basic_string&lt;char&gt; antiNameIn, int spinTypeIn, int chargeTypeIn);
-                ParticleDataEntry(int idIn, ::std::basic_string&lt;char&gt; nameIn, ::std::basic_string&lt;char&gt; antiNameIn, int spinTypeIn);
-                ParticleDataEntry(int idIn, ::std::basic_string&lt;char&gt; nameIn, ::std::basic_string&lt;char&gt; antiNameIn);
+                ParticleDataEntry(int idIn, std::string nameIn, std::string antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn, double mMaxIn, double tau0In);
+                ParticleDataEntry(int idIn, std::string nameIn, std::string antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn, double mMaxIn);
+                ParticleDataEntry(int idIn, std::string nameIn, std::string antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn);
+                ParticleDataEntry(int idIn, std::string nameIn, std::string antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn);
+                ParticleDataEntry(int idIn, std::string nameIn, std::string antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In);
+                ParticleDataEntry(int idIn, std::string nameIn, std::string antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn);
+                ParticleDataEntry(int idIn, std::string nameIn, std::string antiNameIn, int spinTypeIn, int chargeTypeIn);
+                ParticleDataEntry(int idIn, std::string nameIn, std::string antiNameIn, int spinTypeIn);
+                ParticleDataEntry(int idIn, std::string nameIn, std::string antiNameIn);
         
                 // Special pointer-based constructor: 
                 ParticleDataEntry(Abstract_ParticleDataEntry* in);
@@ -341,7 +341,7 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 #include &quot;gambit/Backends/backend_undefs.hpp&quot;
 
 #endif /* __wrapper_ParticleDataEntry_decl_Pythia_8_212_h__ */
-</code></pre><hr><p>Updated on 2022-09-08 at 03:46:49 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.a08b5ca912a508bc013bbd939befee438a0d2f798076e860e42147c7c0e2a01cf714847f7f5a2824876ce72867b0182df10e3537711faff352dd1ef41550be7c.js integrity="sha512-oItcqRKlCLwBO72Tm+/uQ4oNL3mAduhg5CFHx8DioBz3FIR/f1ooJIds5yhnsBgt8Q41N3Efr/NS3R70FVC+fA==" crossorigin=anonymous defer></script>
+</code></pre><hr><p>Updated on 2023-06-26 at 21:36:57 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.a08b5ca912a508bc013bbd939befee438a0d2f798076e860e42147c7c0e2a01cf714847f7f5a2824876ce72867b0182df10e3537711faff352dd1ef41550be7c.js integrity="sha512-oItcqRKlCLwBO72Tm+/uQ4oNL3mAduhg5CFHx8DioBz3FIR/f1ooJIds5yhnsBgt8Q41N3Efr/NS3R70FVC+fA==" crossorigin=anonymous defer></script>
 <script src=/js/highlight.min.ce91dadbce67e8eef36fa222c1c74c99f623c836cf6a316dffa1aeb390ab659d9a20d8145ceac39e049c555414fc360d31315e7980535dc6c03eb5374b7d559d.js integrity="sha512-zpHa285n6O7zb6IiwcdMmfYjyDbPajFt/6Gus5CrZZ2aINgUXOrDngScVVQU/DYNMTFeeYBTXcbAPrU3S31VnQ==" crossorigin=anonymous defer></script>
 <script src=/main.min.57d9a84956f7d60008c47938c7fdd2f75e8618ff1d09c5a5e2b32f91debaf7681f7ceca8b51aded60067c2136172134a91ebc0674487c76a04e3244d927ebdde.js integrity="sha512-V9moSVb31gAIxHk4x/3S916GGP8dCcWl4rMvkd6692gffOyotRre1gBnwhNhchNKkevAZ0SHx2oE4yRNkn693g==" crossorigin=anonymous defer></script>
-<script src=/index.min.2a2f6bd25e0a661102d8769165ef9d3273d4db5ae6edbc62261887d88167016dfb0f6310393f582bcc424de5dc6eab3a529fd305ba4c3afc8e551f0093ed322c.js integrity="sha512-Ki9r0l4KZhEC2HaRZe+dMnPU21rm7bxiJhiH2IFnAW37D2MQOT9YK8xCTeXcbqs6Up/TBbpMOvyOVR8Ak+0yLA==" crossorigin=anonymous defer></script></body></html>
+<script src=/index.min.95720397d55302de0e04fb8f4bf89a7396888a3be86803aa187cbc45924e9c35452b4bef718cd568b25ad872307d8f5537eab4c0045b8043c40628674a4fc53d.js integrity="sha512-lXIDl9VTAt4OBPuPS/iac5aIijvoaAOqGHy8RZJOnDVFK0vvcYzVaLJa2HIwfY9VN+q0wARbgEPEBihnSk/FPQ==" crossorigin=anonymous defer></script></body></html>

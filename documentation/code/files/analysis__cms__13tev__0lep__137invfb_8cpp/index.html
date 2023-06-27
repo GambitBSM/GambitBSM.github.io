@@ -16,8 +16,12 @@ Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle
 #include &quot;gambit/ColliderBit/analyses/Cutflow.hpp&quot;
 #include &quot;gambit/ColliderBit/CMSEfficiencies.hpp&quot;
 
-namespace Gambit {
-  namespace ColliderBit {
+// #define CHECK_CUTFLOW
+
+namespace Gambit
+{
+  namespace ColliderBit
+  {
 
     using namespace std;
     using namespace HEPUtils;
@@ -27,227 +31,237 @@ namespace Gambit {
     ///
     /// Based on: http://cms-results.web.cern.ch/cms-results/public-results/publications/SUS-19-006/index.html
     ///
-    class Analysis_CMS_13TeV_0LEP_137invfb : public Analysis {
-    public:
+    class Analysis_CMS_13TeV_0LEP_137invfb : public Analysis
+    {
+      public:
 
-      // Required detector sim
-      static constexpr const char* detector = &quot;CMS&quot;;
+        // Required detector sim
+        static constexpr const char* detector = &quot;CMS&quot;;
 
-      // Numbers passing cuts
-      std::map&lt;string, EventCounter&gt; _counters = {
-        {&quot;SR1&quot;, EventCounter(&quot;SR1&quot;)},
-        {&quot;SR2&quot;, EventCounter(&quot;SR2&quot;)},
-        {&quot;SR3&quot;, EventCounter(&quot;SR3&quot;)},
-        {&quot;SR4&quot;, EventCounter(&quot;SR4&quot;)},
-        {&quot;SR5&quot;, EventCounter(&quot;SR5&quot;)},
-        {&quot;SR6&quot;, EventCounter(&quot;SR6&quot;)},
-        {&quot;SR7&quot;, EventCounter(&quot;SR7&quot;)},
-        {&quot;SR8&quot;, EventCounter(&quot;SR8&quot;)},
-        {&quot;SR9&quot;, EventCounter(&quot;SR9&quot;)},
-        {&quot;SR10&quot;, EventCounter(&quot;SR10&quot;)},
-        {&quot;SR11&quot;, EventCounter(&quot;SR11&quot;)},
-        {&quot;SR12&quot;, EventCounter(&quot;SR12&quot;)},
-      };
+        // Numbers passing cuts
+        std::map&lt;string, EventCounter&gt; _counters = {
+          {&quot;SR1&quot;, EventCounter(&quot;SR1&quot;)},
+          {&quot;SR2&quot;, EventCounter(&quot;SR2&quot;)},
+          {&quot;SR3&quot;, EventCounter(&quot;SR3&quot;)},
+          {&quot;SR4&quot;, EventCounter(&quot;SR4&quot;)},
+          {&quot;SR5&quot;, EventCounter(&quot;SR5&quot;)},
+          {&quot;SR6&quot;, EventCounter(&quot;SR6&quot;)},
+          {&quot;SR7&quot;, EventCounter(&quot;SR7&quot;)},
+          {&quot;SR8&quot;, EventCounter(&quot;SR8&quot;)},
+          {&quot;SR9&quot;, EventCounter(&quot;SR9&quot;)},
+          {&quot;SR10&quot;, EventCounter(&quot;SR10&quot;)},
+          {&quot;SR11&quot;, EventCounter(&quot;SR11&quot;)},
+          {&quot;SR12&quot;, EventCounter(&quot;SR12&quot;)},
+        };
 
-      static const size_t NUMSR = 12;
+        static const size_t NUMSR = 12;
 
-      Cutflow _cutflow;
-
-
-      Analysis_CMS_13TeV_0LEP_137invfb() :
-        _cutflow(&quot;CMS 0-lep 13 TeV&quot;,
-                 {&quot;Njet &gt;= 2&quot;, &quot;HT &gt; 300&quot;, &quot;HTmiss &gt; 300&quot;, &quot;HTmiss/HT &lt; 1&quot;,
-                     &quot;Nmuon = 0&quot;, &quot;Nelectron = 0&quot;, &quot;Nphoton = 0&quot;,
-                     &quot;Dphi_htmiss_j1&quot;, &quot;Dphi_htmiss_j2&quot;, &quot;Dphi_htmiss_j3&quot;, &quot;Dphi_htmiss_j4&quot;,
-                     &quot;Evt quality&quot;}) //, &quot;SR HTmiss&quot;, &quot;SR HT&quot;, &quot;SR Njet&quot;, &quot;SR Nbjet&quot;}
-      {
-        set_analysis_name(&quot;CMS_13TeV_0LEP_137invfb&quot;);
-        set_luminosity(137.0);
-      }
+        Cutflow _cutflow;
 
 
-      void run(const Event* event) {
-
-        _cutflow.fillinit();
-
-        // Get jets
-        vector&lt;const Jet*&gt; jets24, jets50;
-        for (const Jet* jet : event-&gt;jets()) {
-          if (jet-&gt;pT() &lt; 30) continue;
-          if (jet-&gt;abseta() &lt; 2.4) jets24.push_back(jet);
-          if (jet-&gt;abseta() &lt; 5.0) jets50.push_back(jet);
-        }
-        const size_t njets = jets24.size();
-        if (njets &lt; 2) return;
-        _cutflow.fill(1);
-
-        // Count b-jets
-        size_t nbjets = 0;
-        for (const Jet* j : jets24)
-          if (random_bool(j-&gt;btag() ? 0.65 : j-&gt;ctag() ? 0.13 : 0.016))
-            nbjets += 1;
-
-
-        // HT cut
-        double sumptj = 0;
-        for (const Jet* j : jets24) sumptj += j-&gt;pT();
-        const double ht = sumptj;
-        if (ht &lt; 300) return;
-        _cutflow.fill(2);
-
-        // HTmiss cut, from full set of jets
-        P4 htvec;
-        for (const Jet* jet : jets50) htvec += jet-&gt;mom();
-        const double htmiss = htvec.pT();
-        if (htmiss &lt; 300) return;
-        _cutflow.fill(3);
-
-        // HTmiss/HT cut
-        if (htmiss/ht &gt;= 1) return;
-        _cutflow.fill(4);
-
-
-        // Get baseline photons
-        vector&lt;const Particle*&gt; basephotons;
-        for (const Particle* gamma : event-&gt;photons())
-          if (gamma-&gt;pT() &gt; 10. &amp;&amp; gamma-&gt;abseta() &lt; 2.4)
-            basephotons.push_back(gamma);
-
-        // Get baseline electrons and apply efficiency
-        vector&lt;const Particle*&gt; baseelecs;
-        for (const Particle* electron : event-&gt;electrons())
-          if (electron-&gt;pT() &gt; 10. &amp;&amp; electron-&gt;abseta() &lt; 2.5)
-            baseelecs.push_back(electron);
-        CMS::applyElectronEff(baseelecs);
-
-        // Get baseline muons and apply efficiency
-        vector&lt;const Particle*&gt; basemuons;
-        for (const Particle* muon : event-&gt;muons())
-          if (muon-&gt;pT() &gt; 10. &amp;&amp; muon-&gt;abseta() &lt; 2.4)
-            basemuons.push_back(muon);
-        CMS::applyMuonEff(basemuons);
-
-
-        // Photon isolation
-        /// @todo Sum should actually be over all calo particles
-        vector&lt;const Particle*&gt; photons;
-        for (const Particle* y : basephotons) {
-          const double R = 0.3;
-          double sumpt = -y-&gt;pT();
-          for (const Jet* j : jets50)
-            if (y-&gt;mom().deltaR_eta(j-&gt;mom()) &lt; R) sumpt += j-&gt;pT();
-          if (sumpt/y-&gt;pT() &lt; 0.1) photons.push_back(y); //&lt; guess at threshold: real one not given, and varies between endcap/barrel
-        }
-
-        // Electron isolation
-        /// @todo Sum should actually be over all non-e/mu calo particles
-        vector&lt;const Particle*&gt; elecs;
-        for (const Particle* e : baseelecs) {
-          const double R = max(0.05, min(0.2, 10/e-&gt;pT()));
-          double sumpt = -e-&gt;pT();
-          for (const Jet* j : jets50)
-            if (e-&gt;mom().deltaR_eta(j-&gt;mom()) &lt; R) sumpt += j-&gt;pT();
-          if (sumpt/e-&gt;pT() &lt; 0.1) elecs.push_back(e);
-        }
-
-        // Muon isolation
-        /// @todo Sum should actually be over all non-e/mu calo particles
-        vector&lt;const Particle*&gt; muons;
-        for (const Particle* m : basemuons) {
-          const double R = max(0.05, min(0.2, 10/m-&gt;pT()));
-          double sumpt = -m-&gt;pT();
-          for (const Jet* j : jets50)
-            if (m-&gt;mom().deltaR_eta(j-&gt;mom()) &lt; R) sumpt += j-&gt;pT();
-          if (sumpt/m-&gt;pT() &lt; 0.2) muons.push_back(m);
+        Analysis_CMS_13TeV_0LEP_137invfb() :
+          _cutflow(&quot;CMS 0-lep 13 TeV&quot;,
+                   {&quot;Njet &gt;= 2&quot;, &quot;HT &gt; 300&quot;, &quot;HTmiss &gt; 300&quot;, &quot;HTmiss/HT &lt; 1&quot;,
+                       &quot;Nmuon = 0&quot;, &quot;Nelectron = 0&quot;, &quot;Nphoton = 0&quot;,
+                       &quot;Dphi_htmiss_j1&quot;, &quot;Dphi_htmiss_j2&quot;, &quot;Dphi_htmiss_j3&quot;, &quot;Dphi_htmiss_j4&quot;,
+                       &quot;Evt quality&quot;}) //, &quot;SR HTmiss&quot;, &quot;SR HT&quot;, &quot;SR Njet&quot;, &quot;SR Nbjet&quot;}
+        {
+          set_analysis_name(&quot;CMS_13TeV_0LEP_137invfb&quot;);
+          set_luminosity(137.0);
         }
 
 
-        // Veto the event if there are any remaining baseline leptons
-        if (!muons.empty()) return;
-        _cutflow.fill(5);
-        if (!elecs.empty()) return;
-        _cutflow.fill(6);
+        void run(const Event* event)
+        {
 
-        // Veto high-pT photons (should have negligible effect)
-        if (!photons.empty() &amp;&amp; photons[0]-&gt;pT() &gt; 100) return;
-        _cutflow.fill(7);
+          _cutflow.fillinit();
 
+          // Get jets
+          vector&lt;const Jet*&gt; jets24, jets50;
+          for (const Jet* jet : event-&gt;jets())
+          {
+            if (jet-&gt;pT() &lt; 30) continue;
+            if (jet-&gt;abseta() &lt; 2.4) jets24.push_back(jet);
+            if (jet-&gt;abseta() &lt; 5.0) jets50.push_back(jet);
+          }
+          const size_t njets = jets24.size();
+          if (njets &lt; 2) return;
+          _cutflow.fill(1);
 
-        // Lead jets isolation from Htmiss
-        if (deltaPhi(-htvec, jets24[0]-&gt;mom()) &lt; 0.5) return;
-        _cutflow.fill(8);
-        if (deltaPhi(-htvec, jets24[1]-&gt;mom()) &lt; 0.5) return;
-        _cutflow.fill(9);
-        if (jets24.size() &gt;= 3 &amp;&amp; deltaPhi(-htvec, jets24[2]-&gt;mom()) &lt; 0.3) return;
-        _cutflow.fill(10);
-        if (jets24.size() &gt;= 4 &amp;&amp; deltaPhi(-htvec, jets24[3]-&gt;mom()) &lt; 0.3) return;
-        _cutflow.fill(11);
-
-
-        // Downweight for event quality inefficiency
-        const double w = 0.95 * event-&gt;weight();
-        const double werr = 0.95 * event-&gt;weight_err();
-        if (random_bool(0.95)) _cutflow.fill(12);
+          // Count b-jets
+          size_t nbjets = 0;
+          for (const Jet* j : jets24)
+            if (random_bool(j-&gt;btag() ? 0.65 : j-&gt;ctag() ? 0.13 : 0.016))
+              nbjets += 1;
 
 
-        // Fill aggregate SR bins
-        if (htmiss &gt;= 600 &amp;&amp; ht &gt;=  600 &amp;&amp; njets &gt;=  2 &amp;&amp; nbjets == 0) _counters.at(&quot;SR1&quot;).add_event(w,werr);
-        if (htmiss &gt;= 850 &amp;&amp; ht &gt;= 1700 &amp;&amp; njets &gt;=  4 &amp;&amp; nbjets == 0) _counters.at(&quot;SR2&quot;).add_event(w,werr);
-        if (htmiss &gt;= 600 &amp;&amp; ht &gt;=  600 &amp;&amp; njets &gt;=  6 &amp;&amp; nbjets == 0) _counters.at(&quot;SR3&quot;).add_event(w,werr);
-        if (htmiss &gt;= 600 &amp;&amp; ht &gt;=  600 &amp;&amp; njets &gt;=  8 &amp;&amp; nbjets &lt;= 1) _counters.at(&quot;SR4&quot;).add_event(w,werr);
-        if (htmiss &gt;= 850 &amp;&amp; ht &gt;= 1700 &amp;&amp; njets &gt;= 10 &amp;&amp; nbjets &lt;= 1) _counters.at(&quot;SR5&quot;).add_event(w,werr);
-        if (htmiss &gt;= 300 &amp;&amp; ht &gt;=  300 &amp;&amp; njets &gt;=  4 &amp;&amp; nbjets &gt;= 2) _counters.at(&quot;SR6&quot;).add_event(w,werr);
-        if (htmiss &gt;= 600 &amp;&amp; ht &gt;=  600 &amp;&amp; njets &gt;=  2 &amp;&amp; nbjets &gt;= 2) _counters.at(&quot;SR7&quot;).add_event(w,werr);
-        if (htmiss &gt;= 350 &amp;&amp; ht &gt;=  350 &amp;&amp; njets &gt;=  6 &amp;&amp; nbjets &gt;= 2) _counters.at(&quot;SR8&quot;).add_event(w,werr);
-        if (htmiss &gt;= 600 &amp;&amp; ht &gt;=  600 &amp;&amp; njets &gt;=  4 &amp;&amp; nbjets &gt;= 2) _counters.at(&quot;SR9&quot;).add_event(w,werr);
-        if (htmiss &gt;= 300 &amp;&amp; ht &gt;=  300 &amp;&amp; njets &gt;=  8 &amp;&amp; nbjets &gt;= 3) _counters.at(&quot;SR10&quot;).add_event(w,werr);
-        if (htmiss &gt;= 600 &amp;&amp; ht &gt;=  600 &amp;&amp; njets &gt;=  6 &amp;&amp; nbjets &gt;= 1) _counters.at(&quot;SR11&quot;).add_event(w,werr);
-        if (htmiss &gt;= 850 &amp;&amp; ht &gt;=  850 &amp;&amp; njets &gt;= 10 &amp;&amp; nbjets &gt;= 3) _counters.at(&quot;SR12&quot;).add_event(w,werr);
+          // HT cut
+          double sumptj = 0;
+          for (const Jet* j : jets24) sumptj += j-&gt;pT();
+          const double ht = sumptj;
+          if (ht &lt; 300) return;
+          _cutflow.fill(2);
 
-      }
+          // HTmiss cut, from full set of jets
+          P4 htvec;
+          for (const Jet* jet : jets50) htvec += jet-&gt;mom();
+          const double htmiss = htvec.pT();
+          if (htmiss &lt; 300) return;
+          _cutflow.fill(3);
 
-
-      /// Combine the variables of another copy of this analysis (typically on another thread) into this one.
-      void combine(const Analysis* other)
-      {
-        const Analysis_CMS_13TeV_0LEP_137invfb* specificOther = dynamic_cast&lt;const Analysis_CMS_13TeV_0LEP_137invfb*&gt;(other);
-        for (auto&amp; pair : _counters) { pair.second += specificOther-&gt;_counters.at(pair.first); }
-      }
+          // HTmiss/HT cut
+          if (htmiss/ht &gt;= 1) return;
+          _cutflow.fill(4);
 
 
-      /// Register results objects with the results for each SR; obs &amp; bkg numbers from the CONF note
-      void collect_results() {
+          // Get baseline photons
+          vector&lt;const Particle*&gt; basephotons;
+          for (const Particle* gamma : event-&gt;photons())
+            if (gamma-&gt;pT() &gt; 10. &amp;&amp; gamma-&gt;abseta() &lt; 2.4)
+              basephotons.push_back(gamma);
 
-        add_result(SignalRegionData(_counters.at(&quot;SR1&quot;), 11281., {12319., add_quad(85., 450.)} ));
-        add_result(SignalRegionData(_counters.at(&quot;SR2&quot;), 74., {65.8, add_quad(6.0, 4.9)} ));
-        add_result(SignalRegionData(_counters.at(&quot;SR3&quot;), 505., {489., add_quad(15., 18.)} ));
-        add_result(SignalRegionData(_counters.at(&quot;SR4&quot;), 63., {54.3, add_quad(5.5, 2.5)} ));
-        add_result(SignalRegionData(_counters.at(&quot;SR5&quot;), 153., {141., add_quad(10., 9.)} ));
-        add_result(SignalRegionData(_counters.at(&quot;SR6&quot;), 10216., {10091., add_quad(115., 330.)} ));
-        add_result(SignalRegionData(_counters.at(&quot;SR7&quot;), 287., {336., add_quad(15., 26.)} ));
-        add_result(SignalRegionData(_counters.at(&quot;SR8&quot;), 1637., {1720., add_quad(35., 47.)} ));
-        add_result(SignalRegionData(_counters.at(&quot;SR9&quot;), 224., {230., add_quad(13., 12.)} ));
-        add_result(SignalRegionData(_counters.at(&quot;SR10&quot;), 168., {176., add_quad(11., 11.)} ));
-        add_result(SignalRegionData(_counters.at(&quot;SR11&quot;), 282., {304., add_quad(14., 16.)} ));
-        add_result(SignalRegionData(_counters.at(&quot;SR12&quot;), 0., {0.1, add_quad(1.2, 0.1)} ));
+          // Get baseline electrons and apply efficiency
+          vector&lt;const Particle*&gt; baseelecs;
+          for (const Particle* electron : event-&gt;electrons())
+            if (electron-&gt;pT() &gt; 10. &amp;&amp; electron-&gt;abseta() &lt; 2.5)
+              baseelecs.push_back(electron);
+          CMS::applyElectronEff(baseelecs);
 
-
-        // Cutflow printout
-        // const double sf = 137*crossSection()/femtobarn/sumOfWeights();
-        // _cutflows.scale(sf);
-        cout &lt;&lt; &quot;\nCUTFLOWS:\n&quot; &lt;&lt; _cutflow &lt;&lt; &quot;\n&quot; &lt;&lt; endl;
-        cout &lt;&lt; &quot;\nSRCOUNTS:\n&quot;;
-        // Note: The sum() call below gives the raw event count. Use weight_sum() for the sum of event weights.
-        for (auto&amp; pair : _counters) cout &lt;&lt; pair.second.sum() &lt;&lt; &quot;  &quot;;
-        cout &lt;&lt; &quot;\n&quot; &lt;&lt; endl;
-      }
+          // Get baseline muons and apply efficiency
+          vector&lt;const Particle*&gt; basemuons;
+          for (const Particle* muon : event-&gt;muons())
+            if (muon-&gt;pT() &gt; 10. &amp;&amp; muon-&gt;abseta() &lt; 2.4)
+              basemuons.push_back(muon);
+          CMS::applyMuonEff(basemuons);
 
 
-    protected:
+          // Photon isolation
+          /// @todo Sum should actually be over all calo particles
+          vector&lt;const Particle*&gt; photons;
+          for (const Particle* y : basephotons)
+          {
+            const double R = 0.3;
+            double sumpt = -y-&gt;pT();
+            for (const Jet* j : jets50)
+              if (y-&gt;mom().deltaR_eta(j-&gt;mom()) &lt; R) sumpt += j-&gt;pT();
+            if (sumpt/y-&gt;pT() &lt; 0.1) photons.push_back(y); //&lt; guess at threshold: real one not given, and varies between endcap/barrel
+          }
 
-      void analysis_specific_reset() {
-        for (auto&amp; pair : _counters) { pair.second.reset(); }
-      }
+          // Electron isolation
+          /// @todo Sum should actually be over all non-e/mu calo particles
+          vector&lt;const Particle*&gt; elecs;
+          for (const Particle* e : baseelecs)
+          {
+            const double R = max(0.05, min(0.2, 10/e-&gt;pT()));
+            double sumpt = -e-&gt;pT();
+            for (const Jet* j : jets50)
+              if (e-&gt;mom().deltaR_eta(j-&gt;mom()) &lt; R) sumpt += j-&gt;pT();
+            if (sumpt/e-&gt;pT() &lt; 0.1) elecs.push_back(e);
+          }
+
+          // Muon isolation
+          /// @todo Sum should actually be over all non-e/mu calo particles
+          vector&lt;const Particle*&gt; muons;
+          for (const Particle* m : basemuons)
+          {
+            const double R = max(0.05, min(0.2, 10/m-&gt;pT()));
+            double sumpt = -m-&gt;pT();
+            for (const Jet* j : jets50)
+              if (m-&gt;mom().deltaR_eta(j-&gt;mom()) &lt; R) sumpt += j-&gt;pT();
+            if (sumpt/m-&gt;pT() &lt; 0.2) muons.push_back(m);
+          }
+
+
+          // Veto the event if there are any remaining baseline leptons
+          if (!muons.empty()) return;
+          _cutflow.fill(5);
+          if (!elecs.empty()) return;
+          _cutflow.fill(6);
+
+          // Veto high-pT photons (should have negligible effect)
+          if (!photons.empty() &amp;&amp; photons[0]-&gt;pT() &gt; 100) return;
+          _cutflow.fill(7);
+
+
+          // Lead jets isolation from Htmiss
+          if (deltaPhi(-htvec, jets24[0]-&gt;mom()) &lt; 0.5) return;
+          _cutflow.fill(8);
+          if (deltaPhi(-htvec, jets24[1]-&gt;mom()) &lt; 0.5) return;
+          _cutflow.fill(9);
+          if (jets24.size() &gt;= 3 &amp;&amp; deltaPhi(-htvec, jets24[2]-&gt;mom()) &lt; 0.3) return;
+          _cutflow.fill(10);
+          if (jets24.size() &gt;= 4 &amp;&amp; deltaPhi(-htvec, jets24[3]-&gt;mom()) &lt; 0.3) return;
+          _cutflow.fill(11);
+
+
+          // Downweight for event quality inefficiency
+          const double w = 0.95 * event-&gt;weight();
+          const double werr = 0.95 * event-&gt;weight_err();
+          if (random_bool(0.95)) _cutflow.fill(12);
+
+
+          // Fill aggregate SR bins
+          if (htmiss &gt;= 600 &amp;&amp; ht &gt;=  600 &amp;&amp; njets &gt;=  2 &amp;&amp; nbjets == 0) _counters.at(&quot;SR1&quot;).add_event(w,werr);
+          if (htmiss &gt;= 850 &amp;&amp; ht &gt;= 1700 &amp;&amp; njets &gt;=  4 &amp;&amp; nbjets == 0) _counters.at(&quot;SR2&quot;).add_event(w,werr);
+          if (htmiss &gt;= 600 &amp;&amp; ht &gt;=  600 &amp;&amp; njets &gt;=  6 &amp;&amp; nbjets == 0) _counters.at(&quot;SR3&quot;).add_event(w,werr);
+          if (htmiss &gt;= 600 &amp;&amp; ht &gt;=  600 &amp;&amp; njets &gt;=  8 &amp;&amp; nbjets &lt;= 1) _counters.at(&quot;SR4&quot;).add_event(w,werr);
+          if (htmiss &gt;= 850 &amp;&amp; ht &gt;= 1700 &amp;&amp; njets &gt;= 10 &amp;&amp; nbjets &lt;= 1) _counters.at(&quot;SR5&quot;).add_event(w,werr);
+          if (htmiss &gt;= 300 &amp;&amp; ht &gt;=  300 &amp;&amp; njets &gt;=  4 &amp;&amp; nbjets &gt;= 2) _counters.at(&quot;SR6&quot;).add_event(w,werr);
+          if (htmiss &gt;= 600 &amp;&amp; ht &gt;=  600 &amp;&amp; njets &gt;=  2 &amp;&amp; nbjets &gt;= 2) _counters.at(&quot;SR7&quot;).add_event(w,werr);
+          if (htmiss &gt;= 350 &amp;&amp; ht &gt;=  350 &amp;&amp; njets &gt;=  6 &amp;&amp; nbjets &gt;= 2) _counters.at(&quot;SR8&quot;).add_event(w,werr);
+          if (htmiss &gt;= 600 &amp;&amp; ht &gt;=  600 &amp;&amp; njets &gt;=  4 &amp;&amp; nbjets &gt;= 2) _counters.at(&quot;SR9&quot;).add_event(w,werr);
+          if (htmiss &gt;= 300 &amp;&amp; ht &gt;=  300 &amp;&amp; njets &gt;=  8 &amp;&amp; nbjets &gt;= 3) _counters.at(&quot;SR10&quot;).add_event(w,werr);
+          if (htmiss &gt;= 600 &amp;&amp; ht &gt;=  600 &amp;&amp; njets &gt;=  6 &amp;&amp; nbjets &gt;= 1) _counters.at(&quot;SR11&quot;).add_event(w,werr);
+          if (htmiss &gt;= 850 &amp;&amp; ht &gt;=  850 &amp;&amp; njets &gt;= 10 &amp;&amp; nbjets &gt;= 3) _counters.at(&quot;SR12&quot;).add_event(w,werr);
+
+        }
+
+
+        /// Combine the variables of another copy of this analysis (typically on another thread) into this one.
+        void combine(const Analysis* other)
+        {
+          const Analysis_CMS_13TeV_0LEP_137invfb* specificOther = dynamic_cast&lt;const Analysis_CMS_13TeV_0LEP_137invfb*&gt;(other);
+          for (auto&amp; pair : _counters) { pair.second += specificOther-&gt;_counters.at(pair.first); }
+        }
+
+
+        /// Register results objects with the results for each SR; obs &amp; bkg numbers from the CONF note
+        void collect_results()
+        {
+
+          add_result(SignalRegionData(_counters.at(&quot;SR1&quot;), 11281., {12319., add_quad(85., 450.)} ));
+          add_result(SignalRegionData(_counters.at(&quot;SR2&quot;), 74., {65.8, add_quad(6.0, 4.9)} ));
+          add_result(SignalRegionData(_counters.at(&quot;SR3&quot;), 505., {489., add_quad(15., 18.)} ));
+          add_result(SignalRegionData(_counters.at(&quot;SR4&quot;), 63., {54.3, add_quad(5.5, 2.5)} ));
+          add_result(SignalRegionData(_counters.at(&quot;SR5&quot;), 153., {141., add_quad(10., 9.)} ));
+          add_result(SignalRegionData(_counters.at(&quot;SR6&quot;), 10216., {10091., add_quad(115., 330.)} ));
+          add_result(SignalRegionData(_counters.at(&quot;SR7&quot;), 287., {336., add_quad(15., 26.)} ));
+          add_result(SignalRegionData(_counters.at(&quot;SR8&quot;), 1637., {1720., add_quad(35., 47.)} ));
+          add_result(SignalRegionData(_counters.at(&quot;SR9&quot;), 224., {230., add_quad(13., 12.)} ));
+          add_result(SignalRegionData(_counters.at(&quot;SR10&quot;), 168., {176., add_quad(11., 11.)} ));
+          add_result(SignalRegionData(_counters.at(&quot;SR11&quot;), 282., {304., add_quad(14., 16.)} ));
+          add_result(SignalRegionData(_counters.at(&quot;SR12&quot;), 0., {0.1, add_quad(1.2, 0.1)} ));
+
+
+          // Cutflow printout
+          #ifdef CHECK_CUTFLOW
+            // const double sf = 137*crossSection()/femtobarn/sumOfWeights();
+            // _cutflows.scale(sf);
+            cout &lt;&lt; &quot;\nCUTFLOWS:\n&quot; &lt;&lt; _cutflow &lt;&lt; &quot;\n&quot; &lt;&lt; endl;
+            cout &lt;&lt; &quot;\nSRCOUNTS:\n&quot;;
+            // Note: The sum() call below gives the raw event count. Use weight_sum() for the sum of event weights.
+            for (auto&amp; pair : _counters) cout &lt;&lt; pair.second.sum() &lt;&lt; &quot;  &quot;;
+            cout &lt;&lt; &quot;\n&quot; &lt;&lt; endl;
+          #endif
+        }
+
+
+      protected:
+
+        void analysis_specific_reset()
+        {
+          for (auto&amp; pair : _counters) { pair.second.reset(); }
+        }
 
 
 
@@ -260,7 +274,7 @@ namespace Gambit {
 
   }
 }
-</code></pre><hr><p>Updated on 2022-09-08 at 03:46:48 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.a08b5ca912a508bc013bbd939befee438a0d2f798076e860e42147c7c0e2a01cf714847f7f5a2824876ce72867b0182df10e3537711faff352dd1ef41550be7c.js integrity="sha512-oItcqRKlCLwBO72Tm+/uQ4oNL3mAduhg5CFHx8DioBz3FIR/f1ooJIds5yhnsBgt8Q41N3Efr/NS3R70FVC+fA==" crossorigin=anonymous defer></script>
+</code></pre><hr><p>Updated on 2023-06-26 at 21:36:56 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.a08b5ca912a508bc013bbd939befee438a0d2f798076e860e42147c7c0e2a01cf714847f7f5a2824876ce72867b0182df10e3537711faff352dd1ef41550be7c.js integrity="sha512-oItcqRKlCLwBO72Tm+/uQ4oNL3mAduhg5CFHx8DioBz3FIR/f1ooJIds5yhnsBgt8Q41N3Efr/NS3R70FVC+fA==" crossorigin=anonymous defer></script>
 <script src=/js/highlight.min.ce91dadbce67e8eef36fa222c1c74c99f623c836cf6a316dffa1aeb390ab659d9a20d8145ceac39e049c555414fc360d31315e7980535dc6c03eb5374b7d559d.js integrity="sha512-zpHa285n6O7zb6IiwcdMmfYjyDbPajFt/6Gus5CrZZ2aINgUXOrDngScVVQU/DYNMTFeeYBTXcbAPrU3S31VnQ==" crossorigin=anonymous defer></script>
 <script src=/main.min.57d9a84956f7d60008c47938c7fdd2f75e8618ff1d09c5a5e2b32f91debaf7681f7ceca8b51aded60067c2136172134a91ebc0674487c76a04e3244d927ebdde.js integrity="sha512-V9moSVb31gAIxHk4x/3S916GGP8dCcWl4rMvkd6692gffOyotRre1gBnwhNhchNKkevAZ0SHx2oE4yRNkn693g==" crossorigin=anonymous defer></script>
-<script src=/index.min.2a2f6bd25e0a661102d8769165ef9d3273d4db5ae6edbc62261887d88167016dfb0f6310393f582bcc424de5dc6eab3a529fd305ba4c3afc8e551f0093ed322c.js integrity="sha512-Ki9r0l4KZhEC2HaRZe+dMnPU21rm7bxiJhiH2IFnAW37D2MQOT9YK8xCTeXcbqs6Up/TBbpMOvyOVR8Ak+0yLA==" crossorigin=anonymous defer></script></body></html>
+<script src=/index.min.95720397d55302de0e04fb8f4bf89a7396888a3be86803aa187cbc45924e9c35452b4bef718cd568b25ad872307d8f5537eab4c0045b8043c40628674a4fc53d.js integrity="sha512-lXIDl9VTAt4OBPuPS/iac5aIijvoaAOqGHy8RZJOnDVFK0vvcYzVaLJa2HIwfY9VN+q0wARbgEPEBihnSk/FPQ==" crossorigin=anonymous defer></script></body></html>

@@ -32,8 +32,8 @@ Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle
 #include &lt;sstream&gt;
 #include &lt;chrono&gt;
 #include &lt;thread&gt;
-// SQLite3 C interface 
-#include &lt;sqlite3.h&gt; 
+// SQLite3 C interface
+#include &lt;sqlite3.h&gt;
 
 #include &quot;gambit/Printers/printers/sqlitebase.hpp&quot;
 
@@ -58,7 +58,7 @@ namespace Gambit
     {
         typedef std::map&lt;std::string, std::string, Utils::ci_less&gt; mymaptype;
         mymaptype *colmap = static_cast&lt;mymaptype*&gt;(colmap_in);
-   
+
         // We know that the column name is the second column of the results set, and the
         // type is the third column
         std::string column_name(data[1]);
@@ -68,7 +68,7 @@ namespace Gambit
 
         // Add to map
         (*colmap)[column_name] = column_type;
-    
+
         return 0;
     }
 
@@ -97,7 +97,7 @@ namespace Gambit
     std::map&lt;std::string,std::string,Utils::ci_less&gt; fill_SQLtype_to_basic()
     {
        std::map&lt;std::string,std::string,Utils::ci_less&gt; out;
-       
+
        out[&quot;INT&quot;] = &quot;INTEGER&quot;;
        out[&quot;INTEGER&quot;] = &quot;INTEGER&quot;;
        out[&quot;TINYINT&quot;] = &quot;INTEGER&quot;;
@@ -107,7 +107,7 @@ namespace Gambit
        out[&quot;UNSIGNED BIG INT&quot;] = &quot;INTEGER&quot;;
        out[&quot;INT2&quot;] = &quot;INTEGER&quot;;
        out[&quot;INT8&quot;] = &quot;INTEGER&quot;;
-       
+
        out[&quot;CHARACTER(20)&quot;] = &quot;TEXT&quot;;
        out[&quot;VARCHAR(255)&quot;] = &quot;TEXT&quot;;
        out[&quot;VARYING CHARACTER(255)&quot;] = &quot;TEXT&quot;;
@@ -116,24 +116,24 @@ namespace Gambit
        out[&quot;NVARCHAR(100)&quot;] = &quot;TEXT&quot;;
        out[&quot;CLOB&quot;] = &quot;TEXT&quot;;
        out[&quot;TEXT&quot;] = &quot;TEXT&quot;;
-       
+
        out[&quot;BLOB&quot;] = &quot;NONE&quot;;
        out[&quot;NONE&quot;] = &quot;NONE&quot;;
-       
+
        out[&quot;DOUBLE&quot;] = &quot;REAL&quot;;
        out[&quot;DOUBLE PRECISION&quot;] = &quot;REAL&quot;;
        out[&quot;FLOAT&quot;] = &quot;REAL&quot;;
        out[&quot;REAL&quot;] = &quot;REAL&quot;;
-       
+
        out[&quot;DECIMAL(10,5)&quot;] = &quot;NUMERIC&quot;;
        out[&quot;BOOLEAN&quot;] = &quot;NUMERIC&quot;;
        out[&quot;DATE&quot;] = &quot;NUMERIC&quot;;
        out[&quot;DATETIME&quot;] = &quot;NUMERIC&quot;;
        out[&quot;NUMERIC&quot;] = &quot;NUMERIC&quot;;
- 
+
        return out;
-    }  
-    const std::map&lt;std::string,std::string,Utils::ci_less&gt; SQLtype_to_basic(fill_SQLtype_to_basic());  
+    }
+    const std::map&lt;std::string,std::string,Utils::ci_less&gt; SQLtype_to_basic(fill_SQLtype_to_basic());
 
     // Compare SQLite data types to see if they are equivalent to the same basic 'affinity' for a column
     bool SQLite_equaltypes(const std::string&amp; type1, const std::string&amp; type2)
@@ -163,6 +163,7 @@ namespace Gambit
     SQLiteBase::SQLiteBase()
     : database_file(&quot;uninitialised&quot;)
     , table_name(&quot;uninitialised&quot;)
+    , metadata_table_name(&quot;uninitialised&quot;)
     , db(NULL)
     , db_is_open(false)
     , table_exists(false)
@@ -176,20 +177,20 @@ namespace Gambit
 
     // Open database and 'attach' it to this object
     void SQLiteBase::open_db(const std::string&amp; path, char access)
-    { 
+    {
         // Check if we already have an open database
         if(db!=NULL)
         {
             std::stringstream err;
             err &lt;&lt; &quot;Refused to open database file '&quot;&lt;&lt;path&lt;&lt;&quot;'; a database file pointer has already been attached to the SQLite printer!&quot;;
-            printer_error().raise(LOCAL_INFO,err.str()); 
+            printer_error().raise(LOCAL_INFO,err.str());
         }
 
         if(db_is_open)
         {
             std::stringstream err;
             err &lt;&lt; &quot;Refused to open database file '&quot;&lt;&lt;path&lt;&lt;&quot;'; a database file is already flagged by the SQLite printer as open!&quot;;
-            printer_error().raise(LOCAL_INFO,err.str());  
+            printer_error().raise(LOCAL_INFO,err.str());
         }
 
         int sql_access;
@@ -203,13 +204,13 @@ namespace Gambit
            case '+':
               sql_access = SQLITE_OPEN_READWRITE | SQLITE_OPEN_CREATE;
               break;
-        }   
+        }
 
         int rc; // return code
         //rc = sqlite3_open(path.c_str(), &amp;db);
         rc = sqlite3_open_v2(path.c_str(), &amp;db, sql_access, NULL);
- 
-        if( rc ) 
+
+        if( rc )
         {
             std::stringstream err;
             err &lt;&lt; &quot;Failed to open database file '&quot;&lt;&lt;path&lt;&lt;&quot;' (are you sure it exists?). SQLite error was: &quot; &lt;&lt; sqlite3_errmsg(db);
@@ -234,7 +235,7 @@ namespace Gambit
         {
             std::stringstream err;
             err &lt;&lt; &quot;Attempted to access SQLite database pointer, but it is NULL! This means that some SQLitePrinter/Reader routine called 'get_db()' before the database was opened (or after it was closed)! This is a bug, please report it.&quot;;
-            printer_error().raise(LOCAL_INFO,err.str());  
+            printer_error().raise(LOCAL_INFO,err.str());
         }
         return db;
     }
@@ -250,23 +251,23 @@ namespace Gambit
             if(db==NULL)
             {
                 err &lt;&lt; &quot;Output readiness check failed! Database pointer was NULL!&quot;;
-                printer_error().raise(LOCAL_INFO,err.str());  
-            }   
+                printer_error().raise(LOCAL_INFO,err.str());
+            }
 
             if(!db_is_open)
             {
                 err &lt;&lt; &quot;Output readiness check failed! Database is not flagged as open!&quot;;
-                printer_error().raise(LOCAL_INFO,err.str());  
+                printer_error().raise(LOCAL_INFO,err.str());
             }
 
             if(!table_exists)
             {
                 err &lt;&lt; &quot;Output readiness check failed! Results table is not flagged as existing!&quot;;
-                printer_error().raise(LOCAL_INFO,err.str());  
+                printer_error().raise(LOCAL_INFO,err.str());
             }
         }
         // Else we are good to go!
-    } 
+    }
 
     // Function to repeatedly attempt an SQLite statement if the database is locked/busy
     int SQLiteBase::submit_sql(const std::string&amp; local_info, const std::string&amp; sqlstr, bool allow_fail, sql_callback_fptr callback, void* data, char **zErrMsg_in)
@@ -274,7 +275,7 @@ namespace Gambit
         int rc;
         char *zErrMsg;
         char **zErrMsg_ptr;
-        if(zErrMsg_in==NULL) 
+        if(zErrMsg_in==NULL)
         {
            zErrMsg_ptr = &amp;zErrMsg;
         }
@@ -301,7 +302,7 @@ namespace Gambit
             err &lt;&lt; &quot;SQL error: &quot; &lt;&lt; *zErrMsg_ptr &lt;&lt; std::endl;
 #ifdef SQL_DEBUG
             err &lt;&lt; &quot;The attempted SQL statement was:&quot;&lt;&lt;std::endl;
-            err &lt;&lt; sqlstr &lt;&lt; std::endl;; 
+            err &lt;&lt; sqlstr &lt;&lt; std::endl;;
 #endif
             sqlite3_free(*zErrMsg_ptr);
             printer_error().raise(local_info,err.str());
@@ -316,17 +317,17 @@ namespace Gambit
         std::stringstream sql;
         sql&lt;&lt;&quot;PRAGMA table_info(&quot;&lt;&lt;get_table_name()&lt;&lt;&quot;);&quot;;
 
-        /* Execute SQL statement */ 
+        /* Execute SQL statement */
         int rc;
         char *zErrMsg = 0;
         std::map&lt;std::string, std::string, Utils::ci_less&gt; colnames; // Will be passed to and filled by the callback function
         rc = submit_sql(LOCAL_INFO, sql.str(), true, &amp;col_name_callback, &amp;colnames, &amp;zErrMsg);
- 
+
         if( rc != SQLITE_OK ){
             std::stringstream err;
             err &lt;&lt; &quot;Failed to retrieve information about SQL column names in target table!&quot;&lt;&lt;std::endl;
             err &lt;&lt; &quot;  The attempted SQL statement was:&quot;&lt;&lt;std::endl;
-            err &lt;&lt; sql.str() &lt;&lt; std::endl; 
+            err &lt;&lt; sql.str() &lt;&lt; std::endl;
             sqlite3_free(zErrMsg);
             printer_error().raise(LOCAL_INFO,err.str());
         }
@@ -334,9 +335,11 @@ namespace Gambit
     }
 
     std::string SQLiteBase::get_database_file() {return database_file;}
-    std::string SQLiteBase::get_table_name() {return table_name;} 
+    std::string SQLiteBase::get_table_name() {return table_name;}
+    std::string SQLiteBase::get_metadata_table_name() {return metadata_table_name;}
     void SQLiteBase::set_table_name(const std::string&amp; t) {table_name=t;}
-  
+    void SQLiteBase::set_metadata_table_name(const std::string&amp; t) {metadata_table_name=t;}
+
     // For debugging: dump a row of a results table to std::cout
     void SQLiteBase::cout_row(sqlite3_stmt* tmp_stmt)
     {
@@ -355,7 +358,7 @@ namespace Gambit
         sql&lt;&lt;&quot;SELECT name FROM sqlite_master WHERE type='table' AND name='&quot;&lt;&lt;get_table_name()&lt;&lt;&quot;';&quot;;
         std::size_t count(0);
 
-        /* Execute SQL statement and iterate through results*/ 
+        /* Execute SQL statement and iterate through results*/
         sqlite3_stmt *temp_stmt;
         int rc = sqlite3_prepare_v2(get_db(), sql.str().c_str(), -1, &amp;temp_stmt, NULL);
         if (rc != SQLITE_OK) {
@@ -386,7 +389,7 @@ namespace Gambit
             printer_error().raise(LOCAL_INFO, err.str());
         }
         // Else the table exists, no problem.
-        set_table_exists(); 
+        set_table_exists();
     }
 
     // Sets the 'table_exists' flag to true
@@ -394,7 +397,7 @@ namespace Gambit
 
   }
 }
-</code></pre><hr><p>Updated on 2022-09-08 at 03:46:46 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.a08b5ca912a508bc013bbd939befee438a0d2f798076e860e42147c7c0e2a01cf714847f7f5a2824876ce72867b0182df10e3537711faff352dd1ef41550be7c.js integrity="sha512-oItcqRKlCLwBO72Tm+/uQ4oNL3mAduhg5CFHx8DioBz3FIR/f1ooJIds5yhnsBgt8Q41N3Efr/NS3R70FVC+fA==" crossorigin=anonymous defer></script>
+</code></pre><hr><p>Updated on 2023-06-26 at 21:36:54 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.a08b5ca912a508bc013bbd939befee438a0d2f798076e860e42147c7c0e2a01cf714847f7f5a2824876ce72867b0182df10e3537711faff352dd1ef41550be7c.js integrity="sha512-oItcqRKlCLwBO72Tm+/uQ4oNL3mAduhg5CFHx8DioBz3FIR/f1ooJIds5yhnsBgt8Q41N3Efr/NS3R70FVC+fA==" crossorigin=anonymous defer></script>
 <script src=/js/highlight.min.ce91dadbce67e8eef36fa222c1c74c99f623c836cf6a316dffa1aeb390ab659d9a20d8145ceac39e049c555414fc360d31315e7980535dc6c03eb5374b7d559d.js integrity="sha512-zpHa285n6O7zb6IiwcdMmfYjyDbPajFt/6Gus5CrZZ2aINgUXOrDngScVVQU/DYNMTFeeYBTXcbAPrU3S31VnQ==" crossorigin=anonymous defer></script>
 <script src=/main.min.57d9a84956f7d60008c47938c7fdd2f75e8618ff1d09c5a5e2b32f91debaf7681f7ceca8b51aded60067c2136172134a91ebc0674487c76a04e3244d927ebdde.js integrity="sha512-V9moSVb31gAIxHk4x/3S916GGP8dCcWl4rMvkd6692gffOyotRre1gBnwhNhchNKkevAZ0SHx2oE4yRNkn693g==" crossorigin=anonymous defer></script>
-<script src=/index.min.2a2f6bd25e0a661102d8769165ef9d3273d4db5ae6edbc62261887d88167016dfb0f6310393f582bcc424de5dc6eab3a529fd305ba4c3afc8e551f0093ed322c.js integrity="sha512-Ki9r0l4KZhEC2HaRZe+dMnPU21rm7bxiJhiH2IFnAW37D2MQOT9YK8xCTeXcbqs6Up/TBbpMOvyOVR8Ak+0yLA==" crossorigin=anonymous defer></script></body></html>
+<script src=/index.min.95720397d55302de0e04fb8f4bf89a7396888a3be86803aa187cbc45924e9c35452b4bef718cd568b25ad872307d8f5537eab4c0045b8043c40628674a4fc53d.js integrity="sha512-lXIDl9VTAt4OBPuPS/iac5aIijvoaAOqGHy8RZJOnDVFK0vvcYzVaLJa2HIwfY9VN+q0wARbgEPEBihnSk/FPQ==" crossorigin=anonymous defer></script></body></html>

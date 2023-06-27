@@ -51,16 +51,16 @@ namespace Gambit
     {
         // The Cantor pairing function should be good enough for this purpose I think
         // If we exceed the maximum size of size_t then we'll have to use a more space-efficient pairing function
-        return ((i+j)*(i+j+1))/2 + j; 
+        return ((i+j)*(i+j+1))/2 + j;
     }
 
 
     // Type of function pointer for SQLite callback function
     typedef int sql_callback_fptr(void*, int, char**, char**);
 
-    // Callback function for counting columns in table 
+    // Callback function for counting columns in table
     int col_name_callback(void* colmap_in, int /*count*/, char** data, char** /* columns */);
- 
+
     // Matching of SQL types to C++ types
     typedef long long int llint;
     typedef std::string str;
@@ -77,8 +77,8 @@ namespace Gambit
 
     // Map from all SQLite &quot;suggestion&quot; types into the five &quot;base&quot; SQLite types
     // Used for type comparisons.
-    std::map&lt;std::string,std::string, Utils::ci_less&gt; fill_SQLtype_to_basic();  
-    extern const std::map&lt;std::string,std::string, Utils::ci_less&gt; SQLtype_to_basic;  
+    std::map&lt;std::string,std::string, Utils::ci_less&gt; fill_SQLtype_to_basic();
+    extern const std::map&lt;std::string,std::string, Utils::ci_less&gt; SQLtype_to_basic;
 
     // Compare SQLite data types to see if they are equivalent to the same basic 'affinity' for a column
     bool SQLite_equaltypes(const std::string&amp; type1, const std::string&amp; type2);
@@ -94,7 +94,7 @@ namespace Gambit
     // (or if it points to end())
     template &lt;typename Iter, typename Cont&gt;
     std::string comma_unless_last(Iter it, const Cont&amp; c)
-    { 
+    {
        std::string out(&quot;&quot;);
        if((it == c.end()) || (next_el(it) == c.end()))
        { /* this is the last element or end(), do nothing */ }
@@ -113,15 +113,17 @@ namespace Gambit
       protected:
         std::string get_database_file();
         std::string get_table_name();
+        std::string get_metadata_table_name();
         void set_table_name(const std::string&amp; table_name);
- 
+        void set_metadata_table_name(const std::string&amp; metadata_table_name);
+
         // Verify that the outbase database is open and the results table exists
         void require_output_ready();
- 
+
         // Open database and 'attach' it to this object
         // A database will be created if it doesn't exist
         void open_db(const std::string&amp;, char access='r');
-    
+
         // Close the database file that is attached to this object
         void close_db();
 
@@ -130,7 +132,7 @@ namespace Gambit
 
         // Dump a row of results to std::cout
         void cout_row(sqlite3_stmt* tmp_stmt);
- 
+
         // Check that the required table exists
         // Sets 'table_exists' to true if successful, otherwise throws error
         void check_table_exists();
@@ -141,16 +143,17 @@ namespace Gambit
         // Get names and types for all columns in the target table
         // (Output is a map from names to types)
         std::map&lt;std::string, std::string, Utils::ci_less&gt; get_column_info();
- 
+
         // Submit an SQL statement to the database
-        int submit_sql(const std::string&amp; local_info, const std::string&amp; sqlstr, bool allow_fail=false, sql_callback_fptr callback=NULL, void* data=NULL, char **zErrMsg=NULL); 
- 
-      private: 
+        int submit_sql(const std::string&amp; local_info, const std::string&amp; sqlstr, bool allow_fail=false, sql_callback_fptr callback=NULL, void* data=NULL, char **zErrMsg=NULL);
+
+      private:
         // Path to SQLite database file
         std::string database_file;
 
         // Name of data table to be accessed
         std::string table_name;
+        std::string metadata_table_name;
 
         // Pointer to target sqlite3 database
         sqlite3* db;
@@ -167,7 +170,7 @@ namespace Gambit
 }
 
 #endif
-</code></pre><hr><p>Updated on 2022-09-08 at 03:46:46 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.a08b5ca912a508bc013bbd939befee438a0d2f798076e860e42147c7c0e2a01cf714847f7f5a2824876ce72867b0182df10e3537711faff352dd1ef41550be7c.js integrity="sha512-oItcqRKlCLwBO72Tm+/uQ4oNL3mAduhg5CFHx8DioBz3FIR/f1ooJIds5yhnsBgt8Q41N3Efr/NS3R70FVC+fA==" crossorigin=anonymous defer></script>
+</code></pre><hr><p>Updated on 2023-06-26 at 21:36:54 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.a08b5ca912a508bc013bbd939befee438a0d2f798076e860e42147c7c0e2a01cf714847f7f5a2824876ce72867b0182df10e3537711faff352dd1ef41550be7c.js integrity="sha512-oItcqRKlCLwBO72Tm+/uQ4oNL3mAduhg5CFHx8DioBz3FIR/f1ooJIds5yhnsBgt8Q41N3Efr/NS3R70FVC+fA==" crossorigin=anonymous defer></script>
 <script src=/js/highlight.min.ce91dadbce67e8eef36fa222c1c74c99f623c836cf6a316dffa1aeb390ab659d9a20d8145ceac39e049c555414fc360d31315e7980535dc6c03eb5374b7d559d.js integrity="sha512-zpHa285n6O7zb6IiwcdMmfYjyDbPajFt/6Gus5CrZZ2aINgUXOrDngScVVQU/DYNMTFeeYBTXcbAPrU3S31VnQ==" crossorigin=anonymous defer></script>
 <script src=/main.min.57d9a84956f7d60008c47938c7fdd2f75e8618ff1d09c5a5e2b32f91debaf7681f7ceca8b51aded60067c2136172134a91ebc0674487c76a04e3244d927ebdde.js integrity="sha512-V9moSVb31gAIxHk4x/3S916GGP8dCcWl4rMvkd6692gffOyotRre1gBnwhNhchNKkevAZ0SHx2oE4yRNkn693g==" crossorigin=anonymous defer></script>
-<script src=/index.min.2a2f6bd25e0a661102d8769165ef9d3273d4db5ae6edbc62261887d88167016dfb0f6310393f582bcc424de5dc6eab3a529fd305ba4c3afc8e551f0093ed322c.js integrity="sha512-Ki9r0l4KZhEC2HaRZe+dMnPU21rm7bxiJhiH2IFnAW37D2MQOT9YK8xCTeXcbqs6Up/TBbpMOvyOVR8Ak+0yLA==" crossorigin=anonymous defer></script></body></html>
+<script src=/index.min.95720397d55302de0e04fb8f4bf89a7396888a3be86803aa187cbc45924e9c35452b4bef718cd568b25ad872307d8f5537eab4c0045b8043c40628674a4fc53d.js integrity="sha512-lXIDl9VTAt4OBPuPS/iac5aIijvoaAOqGHy8RZJOnDVFK0vvcYzVaLJa2HIwfY9VN+q0wARbgEPEBihnSk/FPQ==" crossorigin=anonymous defer></script></body></html>

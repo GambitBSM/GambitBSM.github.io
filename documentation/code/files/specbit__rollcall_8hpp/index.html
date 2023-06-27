@@ -20,7 +20,7 @@ Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle
     (MSSM63atQ, MSSM63atMGUT) ,
     (MSSM_spectrum, Spectrum) 
 )
-</code></pre><p>Module function declarations for <a href>SpecBit_SM.cpp</a>.</p><p>Module function declarations for <a href=/documentation/code/files/specbit__mssm_8cpp/#file-src-specbit-mssm-cpp>SpecBit_MSSM.cpp</a> Module function declarations for <a href=/documentation/code/files/specbit__scalarsingletdm_8cpp/#file-src-specbit-scalarsingletdm-cpp>SpecBit_ScalarSingletDM.cpp</a> Module function declarations for SpecBit_VectorSingletDM_Z2.cpp Module function declarations for SpecBit_MajoranaSingletDM_Z2.cpp Module function declarations for SpecBit_DiracSingletDM_Z2.cpp Module function declarations for <a href=/documentation/code/files/specbit__mdm_8cpp/#file-src-specbit-mdm-cpp>SpecBit_MDM.cpp</a> Module function declarations for SpecBit_tests.cpp (new tests) Module function declarations for <a href=/documentation/code/files/specbit__dmeft_8cpp/#file-src-specbit-dmeft-cpp>SpecBit_DMEFT.cpp</a> For SpecBit testing only Functions to change the capability associated with a Spectrum object to &ldquo;SM_spectrum&rdquo;</p><h2 id=attributes-documentation>Attributes Documentation <a href=#attributes-documentation class=anchor aria-hidden=true>#</a></h2><h3 id=variable-sm-spectrum>variable SM_spectrum <a href=#variable-sm-spectrum class=anchor aria-hidden=true>#</a></h3><pre><code>START_CAPABILITY SM_spectrum;
+</code></pre><p>Module function declarations for <a href>SpecBit_SM.cpp</a>.</p><p>Module function declarations for <a href=/documentation/code/files/specbit__mssm_8cpp/#file-src-specbit-mssm-cpp>SpecBit_MSSM.cpp</a> Module function declarations for <a href=/documentation/code/files/specbit__scalarsingletdm_8cpp/#file-src-specbit-scalarsingletdm-cpp>SpecBit_ScalarSingletDM.cpp</a> Module function declarations for SpecBit_VectorSingletDM_Z2.cpp Module function declarations for SpecBit_MajoranaSingletDM_Z2.cpp Module function declarations for SpecBit_DiracSingletDM_Z2.cpp Module function declarations for <a href=/documentation/code/files/specbit__mdm_8cpp/#file-src-specbit-mdm-cpp>SpecBit_MDM.cpp</a> Module function declarations for SpecBit_tests.cpp (new tests) Module function declarations for <a href=/documentation/code/files/specbit__dmsimpvectormedvectordm_8cpp/#file-src-specbit-dmsimpvectormedvectordm-cpp>SpecBit_DMsimpVectorMedVectorDM.cpp</a> Module function declarations for <a href=/documentation/code/files/specbit__dmsimpvectormedscalardm_8cpp/#file-src-specbit-dmsimpvectormedscalardm-cpp>SpecBit_DMsimpVectorMedScalarDM.cpp</a> Module function declarations for <a href=/documentation/code/files/specbit__dmsimpvectormedmajoranadm_8cpp/#file-src-specbit-dmsimpvectormedmajoranadm-cpp>SpecBit_DMsimpVectorMedMajoranaDM.cpp</a> Module function declarations for <a href=/documentation/code/files/specbit__dmsimpvectormeddiracdm_8cpp/#file-src-specbit-dmsimpvectormeddiracdm-cpp>SpecBit_DMsimpVectorMedDiracDM.cpp</a> Module function declarations for <a href=/documentation/code/files/specbit__dmeft_8cpp/#file-src-specbit-dmeft-cpp>SpecBit_DMEFT.cpp</a> For SpecBit testing only Functions to change the capability associated with a Spectrum object to &ldquo;SM_spectrum&rdquo;</p><h2 id=attributes-documentation>Attributes Documentation <a href=#attributes-documentation class=anchor aria-hidden=true>#</a></h2><h3 id=variable-sm-spectrum>variable SM_spectrum <a href=#variable-sm-spectrum class=anchor aria-hidden=true>#</a></h3><pre><code>START_CAPABILITY SM_spectrum;
 </code></pre><h3 id=variable-old-capability>variable OLD_CAPABILITY <a href=#variable-old-capability class=anchor aria-hidden=true>#</a></h3><pre><code>START_CAPABILITY OLD_CAPABILITY;
 </code></pre><h3 id=variable-convert-nmssm-to-sm>variable convert_NMSSM_to_SM <a href=#variable-convert-nmssm-to-sm class=anchor aria-hidden=true>#</a></h3><pre><code>START_CAPABILITY convert_NMSSM_to_SM;
 </code></pre><h3 id=variable-spectrum>variable Spectrum <a href=#variable-spectrum class=anchor aria-hidden=true>#</a></h3><pre><code>START_CAPABILITY Spectrum;
@@ -77,7 +77,7 @@ START_MODULE
   #include &quot;gambit/SpecBit/SpecBit_MSSM_rollcall.hpp&quot;
 
   #include &quot;gambit/SpecBit/SpecBit_VS_rollcall.hpp&quot;
-  
+
   /// Module function declarations for SpecBit_ScalarSingletDM.cpp
   #include &quot;gambit/SpecBit/SpecBit_ScalarSingletDM_rollcall.hpp&quot;
 
@@ -95,6 +95,18 @@ START_MODULE
 
   /// Module function declarations for SpecBit_tests.cpp (new tests)
   #include &quot;gambit/SpecBit/SpecBit_tests_rollcall.hpp&quot;
+
+  /// Module function declarations for SpecBit_DMsimpVectorMedVectorDM.cpp
+  #include &quot;gambit/SpecBit/SpecBit_DMsimpVectorMedVectorDM_rollcall.hpp&quot;
+
+  /// Module function declarations for SpecBit_DMsimpVectorMedScalarDM.cpp
+  #include &quot;gambit/SpecBit/SpecBit_DMsimpVectorMedScalarDM_rollcall.hpp&quot;
+
+  /// Module function declarations for SpecBit_DMsimpVectorMedMajoranaDM.cpp
+  #include &quot;gambit/SpecBit/SpecBit_DMsimpVectorMedMajoranaDM_rollcall.hpp&quot;
+
+  /// Module function declarations for SpecBit_DMsimpVectorMedDiracDM.cpp
+  #include &quot;gambit/SpecBit/SpecBit_DMsimpVectorMedDiracDM_rollcall.hpp&quot;
 
   /// Module function declarations for SpecBit_DMEFT.cpp
   #include &quot;gambit/SpecBit/SpecBit_DMEFT_rollcall.hpp&quot;
@@ -131,7 +143,7 @@ START_MODULE
 #undef MODULE
 
 #endif /* defined(__SpecBit_rollcall_hpp__) */
-</code></pre><hr><p>Updated on 2022-09-08 at 03:46:45 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.a08b5ca912a508bc013bbd939befee438a0d2f798076e860e42147c7c0e2a01cf714847f7f5a2824876ce72867b0182df10e3537711faff352dd1ef41550be7c.js integrity="sha512-oItcqRKlCLwBO72Tm+/uQ4oNL3mAduhg5CFHx8DioBz3FIR/f1ooJIds5yhnsBgt8Q41N3Efr/NS3R70FVC+fA==" crossorigin=anonymous defer></script>
+</code></pre><hr><p>Updated on 2023-06-26 at 21:36:53 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.a08b5ca912a508bc013bbd939befee438a0d2f798076e860e42147c7c0e2a01cf714847f7f5a2824876ce72867b0182df10e3537711faff352dd1ef41550be7c.js integrity="sha512-oItcqRKlCLwBO72Tm+/uQ4oNL3mAduhg5CFHx8DioBz3FIR/f1ooJIds5yhnsBgt8Q41N3Efr/NS3R70FVC+fA==" crossorigin=anonymous defer></script>
 <script src=/js/highlight.min.ce91dadbce67e8eef36fa222c1c74c99f623c836cf6a316dffa1aeb390ab659d9a20d8145ceac39e049c555414fc360d31315e7980535dc6c03eb5374b7d559d.js integrity="sha512-zpHa285n6O7zb6IiwcdMmfYjyDbPajFt/6Gus5CrZZ2aINgUXOrDngScVVQU/DYNMTFeeYBTXcbAPrU3S31VnQ==" crossorigin=anonymous defer></script>
 <script src=/main.min.57d9a84956f7d60008c47938c7fdd2f75e8618ff1d09c5a5e2b32f91debaf7681f7ceca8b51aded60067c2136172134a91ebc0674487c76a04e3244d927ebdde.js integrity="sha512-V9moSVb31gAIxHk4x/3S916GGP8dCcWl4rMvkd6692gffOyotRre1gBnwhNhchNKkevAZ0SHx2oE4yRNkn693g==" crossorigin=anonymous defer></script>
-<script src=/index.min.2a2f6bd25e0a661102d8769165ef9d3273d4db5ae6edbc62261887d88167016dfb0f6310393f582bcc424de5dc6eab3a529fd305ba4c3afc8e551f0093ed322c.js integrity="sha512-Ki9r0l4KZhEC2HaRZe+dMnPU21rm7bxiJhiH2IFnAW37D2MQOT9YK8xCTeXcbqs6Up/TBbpMOvyOVR8Ak+0yLA==" crossorigin=anonymous defer></script></body></html>
+<script src=/index.min.95720397d55302de0e04fb8f4bf89a7396888a3be86803aa187cbc45924e9c35452b4bef718cd568b25ad872307d8f5537eab4c0045b8043c40628674a4fc53d.js integrity="sha512-lXIDl9VTAt4OBPuPS/iac5aIijvoaAOqGHy8RZJOnDVFK0vvcYzVaLJa2HIwfY9VN+q0wARbgEPEBihnSk/FPQ==" crossorigin=anonymous defer></script></body></html>

@@ -11,7 +11,7 @@ Tutorials</button><div class=collapse id=section-tutorials><ul class="btn-toggle
 Help</button><div class=collapse id=section-help><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/help/common_problems_and_questions/>Common Problems and Questions</a></li><li><a class="docs-link rounded" href=/documentation/help/compiler_matrix/>Compiler Matrix</a></li><li><a class="docs-link rounded" href=/documentation/help/known_issues/>Known Issues</a></li><li><a class="docs-link rounded" href=/documentation/help/configuration_examples/>Configuration Examples</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-code aria-expanded=false>
 Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/code/index_classes/>Classes</a></li><li><a class="docs-link rounded" href=/documentation/code/index_files/>Files</a></li><li><a class="docs-link rounded" href=/documentation/code/index_pages/>Pages</a></li><li><a class="docs-link rounded" href=/documentation/code/index_namespaces/>Namespaces</a></li></ul></div></li></ul></nav></div><nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation"><div class=d-xl-none><button class="btn btn-outline-primary btn-sm doks-toc-toggle collapsed" type=button data-bs-toggle=collapse data-bs-target=#onThisPage aria-controls=doks-docs-nav aria-expanded=false aria-label="Toggle On this page navigation">
 <span>On this page</span>
-<span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg></span></button><div class=collapse id=onThisPage><div class="card card-body mt-3 py-1"><div class=page-links><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#classes>Classes</a></li><li><a href=#defines>Defines</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#macros-documentation>Macros Documentation</a><ul><li><a href=#define-obslike-vertexid>define OBSLIKE_VERTEXID</a></li><li><a href=#define-normal-dependency>define NORMAL_DEPENDENCY</a></li><li><a href=#define-loop-manager-dependency>define LOOP_MANAGER_DEPENDENCY</a></li></ul></li><li><a href=#source-code>Source code</a></li></ul></nav></div></div></div></div><div class="page-links d-none d-xl-block"><h3>On this page</h3><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#classes>Classes</a></li><li><a href=#defines>Defines</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#macros-documentation>Macros Documentation</a><ul><li><a href=#define-obslike-vertexid>define OBSLIKE_VERTEXID</a></li><li><a href=#define-normal-dependency>define NORMAL_DEPENDENCY</a></li><li><a href=#define-loop-manager-dependency>define LOOP_MANAGER_DEPENDENCY</a></li></ul></li><li><a href=#source-code>Source code</a></li></ul></nav></div></nav><main class="docs-content col-lg-11 col-xl-9 mx-xl-auto"><nav aria-label=breadcrumb><ol class=breadcrumb><li class=breadcrumb-item><a href=/>Home</a></li><li class=breadcrumb-item><a href=/documentation/>Documentation</a></li><li class=breadcrumb-item><a href=/documentation/code/>Code Reference</a></li><li class="breadcrumb-item active" aria-current=page>file src/depresolver.cpp</li></ol></nav><p class=lead></p><h1 id=file-src-depresolver-cpp>file src/depresolver.cpp <a href=#file-src-depresolver-cpp class=anchor aria-hidden=true>#</a></h1><p>[No description available] <a href=#detailed-description>More&mldr;</a></p><h2 id=namespaces>Namespaces <a href=#namespaces class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th>Name</th></tr></thead><tbody><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit/>Gambit</a></strong><br>TODO: see if we can use this one:</td></tr><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit_1_1dres/>Gambit::DRes</a></strong></td></tr></tbody></table><h2 id=classes>Classes <a href=#classes class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th></th><th>Name</th></tr></thead><tbody><tr><td>class</td><td><strong><a href=/documentation/code/classes/classgambit_1_1dres_1_1edgewriter/>Gambit::DRes::edgeWriter</a></strong></td></tr><tr><td>class</td><td><strong><a href=/documentation/code/classes/classgambit_1_1dres_1_1labelwriter/>Gambit::DRes::labelWriter</a></strong></td></tr></tbody></table><h2 id=defines>Defines <a href=#defines class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th></th><th>Name</th></tr></thead><tbody><tr><td></td><td><strong><a href=/documentation/code/files/depresolver_8cpp/#define-obslike-vertexid>OBSLIKE_VERTEXID</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/files/depresolver_8cpp/#define-normal-dependency>NORMAL_DEPENDENCY</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/files/depresolver_8cpp/#define-loop-manager-dependency>LOOP_MANAGER_DEPENDENCY</a></strong></td></tr></tbody></table><h2 id=detailed-description>Detailed Description <a href=#detailed-description class=anchor aria-hidden=true>#</a></h2><p><strong>Author</strong>:</p><ul><li>Christoph Weniger (<a href=mailto:c.weniger@uva.nl>c.weniger@uva.nl</a>)</li><li>Pat Scott (<a href=mailto:patscott@physics.mcgill.ca>patscott@physics.mcgill.ca</a>)</li><li>Ben Farmer (<a href=mailto:benjamin.farmer@monash.edu>benjamin.farmer@monash.edu</a>)</li><li>Tomas Gonzalo (<a href=mailto:gonzalo@physik.rwth-aachen.de>gonzalo@physik.rwth-aachen.de</a>)</li><li>Patrick Stoecker (<a href=mailto:stoecker@physik.rwth-aachen.de>stoecker@physik.rwth-aachen.de</a>)</li></ul><p><strong>Date</strong>:</p><ul><li>2013 May, Jun, Jul, Sep</li><li>2014 Feb, Mar, Apr</li><li>2013 May, Jul, Aug, Nov 2014 Jan, Mar, Apr, Dec 2018 Sep, Nov</li><li>2013 Sep</li><li>2017 June 2019 May 2021 Sep</li><li>2020 May</li></ul><p>Dependency resolution with boost graph library</p><pre><code>    unravels the un-unravelable
+<span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg></span></button><div class=collapse id=onThisPage><div class="card card-body mt-3 py-1"><div class=page-links><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#classes>Classes</a></li><li><a href=#defines>Defines</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#macros-documentation>Macros Documentation</a><ul><li><a href=#define-obslike-vertexid>define OBSLIKE_VERTEXID</a></li><li><a href=#define-normal-dependency>define NORMAL_DEPENDENCY</a></li><li><a href=#define-loop-manager-dependency>define LOOP_MANAGER_DEPENDENCY</a></li></ul></li><li><a href=#source-code>Source code</a></li></ul></nav></div></div></div></div><div class="page-links d-none d-xl-block"><h3>On this page</h3><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#classes>Classes</a></li><li><a href=#defines>Defines</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#macros-documentation>Macros Documentation</a><ul><li><a href=#define-obslike-vertexid>define OBSLIKE_VERTEXID</a></li><li><a href=#define-normal-dependency>define NORMAL_DEPENDENCY</a></li><li><a href=#define-loop-manager-dependency>define LOOP_MANAGER_DEPENDENCY</a></li></ul></li><li><a href=#source-code>Source code</a></li></ul></nav></div></nav><main class="docs-content col-lg-11 col-xl-9 mx-xl-auto"><nav aria-label=breadcrumb><ol class=breadcrumb><li class=breadcrumb-item><a href=/>Home</a></li><li class=breadcrumb-item><a href=/documentation/>Documentation</a></li><li class=breadcrumb-item><a href=/documentation/code/>Code Reference</a></li><li class="breadcrumb-item active" aria-current=page>file src/depresolver.cpp</li></ol></nav><p class=lead></p><h1 id=file-src-depresolver-cpp>file src/depresolver.cpp <a href=#file-src-depresolver-cpp class=anchor aria-hidden=true>#</a></h1><p>[No description available] <a href=#detailed-description>More&mldr;</a></p><h2 id=namespaces>Namespaces <a href=#namespaces class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th>Name</th></tr></thead><tbody><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit/>Gambit</a></strong><br>TODO: see if we can use this one:</td></tr><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit_1_1dres/>Gambit::DRes</a></strong></td></tr></tbody></table><h2 id=classes>Classes <a href=#classes class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th></th><th>Name</th></tr></thead><tbody><tr><td>class</td><td><strong><a href=/documentation/code/classes/classgambit_1_1dres_1_1edgewriter/>Gambit::DRes::edgeWriter</a></strong></td></tr><tr><td>class</td><td><strong><a href=/documentation/code/classes/classgambit_1_1dres_1_1labelwriter/>Gambit::DRes::labelWriter</a></strong></td></tr></tbody></table><h2 id=defines>Defines <a href=#defines class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th></th><th>Name</th></tr></thead><tbody><tr><td></td><td><strong><a href=/documentation/code/files/depresolver_8cpp/#define-obslike-vertexid>OBSLIKE_VERTEXID</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/files/depresolver_8cpp/#define-normal-dependency>NORMAL_DEPENDENCY</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/files/depresolver_8cpp/#define-loop-manager-dependency>LOOP_MANAGER_DEPENDENCY</a></strong></td></tr></tbody></table><h2 id=detailed-description>Detailed Description <a href=#detailed-description class=anchor aria-hidden=true>#</a></h2><p><strong>Author</strong>:</p><ul><li>Christoph Weniger (<a href=mailto:c.weniger@uva.nl>c.weniger@uva.nl</a>)</li><li>Pat Scott (<a href=mailto:patscott@physics.mcgill.ca>patscott@physics.mcgill.ca</a>)</li><li>Ben Farmer (<a href=mailto:benjamin.farmer@monash.edu>benjamin.farmer@monash.edu</a>)</li><li>Tomas Gonzalo (<a href=mailto:gonzalo@physik.rwth-aachen.de>gonzalo@physik.rwth-aachen.de</a>)</li><li>Patrick Stoecker (<a href=mailto:stoecker@physik.rwth-aachen.de>stoecker@physik.rwth-aachen.de</a>)</li></ul><p><strong>Date</strong>:</p><ul><li>2013 May, Jun, Jul, Sep</li><li>2014 Feb, Mar, Apr</li><li>2013 May, Jul, Aug, Nov 2014 Jan, Mar, Apr, Dec 2018 Sep, Nov</li><li>2013 Sep</li><li>2017 June 2019 May 2020 June 2021 Sep</li><li>2020 May</li></ul><p>Dependency resolution with boost graph library</p><pre><code>    unravels the un-unravelable
 </code></pre><hr><p>Authors (add name and date if you modify):</p><hr><h2 id=macros-documentation>Macros Documentation <a href=#macros-documentation class=anchor aria-hidden=true>#</a></h2><h3 id=define-obslike-vertexid>define OBSLIKE_VERTEXID <a href=#define-obslike-vertexid class=anchor aria-hidden=true>#</a></h3><pre><code>#define OBSLIKE_VERTEXID 58915032
 </code></pre><h3 id=define-normal-dependency>define NORMAL_DEPENDENCY <a href=#define-normal-dependency class=anchor aria-hidden=true>#</a></h3><pre><code>#define NORMAL_DEPENDENCY 1
 </code></pre><h3 id=define-loop-manager-dependency>define LOOP_MANAGER_DEPENDENCY <a href=#define-loop-manager-dependency class=anchor aria-hidden=true>#</a></h3><pre><code>#define LOOP_MANAGER_DEPENDENCY 2
@@ -46,6 +46,7 @@ Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle
 ///          (gonzalo@physik.rwth-aachen.de)
 ///  \date 2017 June
 ///        2019 May
+///        2020 June
 ///        2021 Sep
 ///
 ///  \author Patrick Stoecker
@@ -58,6 +59,7 @@ Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle
 #include &quot;gambit/Models/models.hpp&quot;
 #include &quot;gambit/Utils/stream_overloads.hpp&quot;
 #include &quot;gambit/Utils/util_functions.hpp&quot;
+#include &quot;gambit/Utils/version.hpp&quot;
 #include &quot;gambit/Utils/bibtex_functions.hpp&quot;
 #include &quot;gambit/Utils/citation_keys.hpp&quot;
 #include &quot;gambit/Logs/logger.hpp&quot;
@@ -209,9 +211,16 @@ namespace Gambit
         cout &lt;&lt; (*f).name() &lt;&lt; &quot; vs &quot; &lt;&lt; rule.function &lt;&lt; endl;
         cout &lt;&lt; (*f).origin() &lt;&lt; &quot; vs &quot; &lt;&lt; rule.module &lt;&lt; endl;
       #endif
-      return ( stringComp( rule.function, (*f).name()) and
-               stringComp( rule.module, (*f).origin())
-             );
+      // Rule matches functor if the capability or module function
+      // is present and they (and the module if given) match
+      bool matches = false;
+      if (not rule.capability.empty())
+        matches = stringComp( rule.capability, f-&gt;capability() );
+      if (not rule.function.empty())
+        matches = stringComp( rule.function, f-&gt;name() );
+      if (not rule.module.empty())
+        matches = matches and stringComp( rule.module, f-&gt;origin());
+      return matches;
     }
 
 
@@ -439,6 +448,9 @@ namespace Gambit
 
       // Get BibTeX key entries for backends, modules, etc
       getCitationKeys();
+      
+      // Get the scanID
+      set_scanID();
 
       // Done
     }
@@ -2374,6 +2386,184 @@ namespace Gambit
       logger() &lt;&lt; EOM;
     }
 
+    /// Check for unused rules and options
+    void DependencyResolver::checkForUnusedRules(int mpi_rank)
+    {
+      std::vector&lt;Rule&gt; unusedRules;
+
+      const IniParser::ObservablesType &amp; entries = boundIniFile-&gt;getRules();
+      for(IniParser::ObservableType entry : entries)
+      {
+        #ifdef DEPRES_DEBUG
+          std::cout &lt;&lt; &quot;checking rule with capability &quot; &lt;&lt; entry.capability &lt;&lt; std::endl;
+        #endif
+        graph_traits&lt;DRes::MasterGraphType&gt;::vertex_iterator vi, vi_end;
+        bool unused = true;
+        for (boost::tie(vi, vi_end) = vertices(masterGraph); vi != vi_end; ++vi)
+        {
+          // Check only for enabled functors
+          if (masterGraph[*vi]-&gt;status() == 2)
+          {
+            if ( matchesRules(masterGraph[*vi], Rule(entry)) )
+            {
+              #ifdef DEPRES_DEBUG
+                std::cout &lt;&lt; &quot;rule for capability &quot; &lt;&lt; entry.capability &lt;&lt;&quot; used by vertex &quot; &lt;&lt; masterGraph[*vi]-&gt;capability() &lt;&lt; std::endl;
+              #endif
+              unused = false;
+              continue;
+            }
+          }
+        }
+        if (unused)
+          unusedRules.push_back(Rule(entry));
+      }
+
+      if(unusedRules.size() &gt; 0)
+      {
+        std::stringstream msg;
+        msg &lt;&lt; &quot;The following rules and options are not used in the current scan. This will not affect the results of the scan, but if you wish to avoid this warning you must remove all unused rules and options from the yaml file.&quot; &lt;&lt; endl;
+        for(auto rule :unusedRules)
+        {
+          if(not rule.capability.empty()) msg &lt;&lt; &quot;  capability: &quot; &lt;&lt; rule.capability &lt;&lt; endl;
+          if(not rule.function.empty())   msg &lt;&lt; &quot;  function: &quot; &lt;&lt; rule.function&lt;&lt; endl;
+          if(not rule.module.empty())     msg &lt;&lt; &quot;  module: &quot; &lt;&lt; rule.module &lt;&lt; endl;
+          if(not rule.type.empty())       msg &lt;&lt; &quot;  type: &quot; &lt;&lt; rule.type &lt;&lt; endl;
+          if(not rule.backend.empty())    msg &lt;&lt; &quot;  backend: &quot; &lt;&lt; rule.backend &lt;&lt; endl;
+          if(not rule.version.empty())    msg &lt;&lt; &quot;  version: &quot; &lt;&lt; rule.version &lt;&lt; endl;
+          if (rule.options.getNames().size() &gt; 0)
+          {
+            msg &lt;&lt; &quot;  options:&quot; &lt;&lt; endl;
+            msg &lt;&lt; rule.options.toString(2);
+          }
+          msg &lt;&lt; endl;
+        }
+        logger() &lt;&lt; msg.str() &lt;&lt; EOM;
+        if(mpi_rank == 0) std::cout &lt;&lt; msg.str() &lt;&lt; std::endl;
+      }
+    }
+
+    /// Construct metadata information from used observables, rules and options
+    /// Note: No keys can be identical (or differing only by capitalisation) 
+    ///       to those printed in the main file, otherwise the sqlite printer fails
+    map_str_str DependencyResolver::getMetadata()
+    {
+      map_str_str metadata;
+
+      // Gambit version
+      metadata[&quot;GAMBIT&quot;] = gambit_version();
+
+      // Date
+      auto now = std::chrono::system_clock::now();
+      auto in_time_t = std::chrono::system_clock::to_time_t(now);
+
+      std::stringstream ss;
+      ss &lt;&lt; std::put_time(std::localtime(&amp;in_time_t), &quot;%Y-%m-%d %H:%M&quot;);
+      metadata[&quot;Date&quot;] =  ss.str();
+
+      // scanID
+      if (boundIniFile-&gt;getValueOrDef&lt;bool&gt;(true, &quot;print_scanID&quot;))
+      {
+        ss.str(&quot;&quot;);
+        ss &lt;&lt; scanID;
+        metadata[&quot;Scan_ID&quot;] = ss.str();
+      }
+
+      // Parameters
+      YAML::Node parametersNode = boundIniFile-&gt;getParametersNode();
+      Options(parametersNode).toMap(metadata, &quot;Parameters&quot;);
+
+      // Priors
+      YAML::Node priorsNode = boundIniFile-&gt;getPriorsNode();
+      Options(priorsNode).toMap(metadata, &quot;Priors&quot;);
+
+      // Printer
+      YAML::Node printerNode = boundIniFile-&gt;getPrinterNode();
+      Options(printerNode).toMap(metadata, &quot;Printer&quot;);
+
+      // Scanners
+      YAML::Node scanNode = boundIniFile-&gt;getScannerNode();
+      str scanner = scanNode[&quot;use_scanner&quot;].as&lt;str&gt;();
+      metadata[&quot;Scanner::scanner&quot;] = scanner;
+      for(auto it = scanNode.begin(); it != scanNode.end(); ++it)
+      {
+        if(it-&gt;first.as&lt;str&gt;() == &quot;scanners&quot;)
+          Options(scanNode[&quot;scanners&quot;][scanner]).toMap(metadata, &quot;Scanner::options&quot;);
+        else if(it-&gt;first.as&lt;str&gt;() != &quot;use_scanner&quot;)
+          Options(*it).toMap(metadata, &quot;Scanner::&quot; + it-&gt;first.as&lt;str&gt;());
+      }
+
+      // ObsLikes
+      const IniParser::ObservablesType &amp;obslikes = boundIniFile-&gt;getObservables();
+      for (IniParser::ObservableType obslike : obslikes)
+      {
+        str key = &quot;ObsLikes::&quot; + obslike.capability;
+        metadata[key + &quot;::capability&quot;] = obslike.capability;
+        if(not obslike.purpose.empty())  metadata[key + &quot;::purpose&quot;] = obslike.purpose;
+        if(not obslike.function.empty()) metadata[key + &quot;::function&quot;] = obslike.function;
+        if(not obslike.type.empty())     metadata[key + &quot;::type&quot;] = obslike.type;
+        if(not obslike.module.empty())   metadata[key + &quot;::module&quot;] = obslike.module;
+        if(obslike.subcaps.size() and obslike.subcaps.IsSequence())
+        {
+          std::stringstream subcaps;
+          subcaps &lt;&lt; &quot;[&quot;;
+          for (auto subcap = obslike.subcaps.begin(); subcap != obslike.subcaps.end(); ++subcap)
+            subcaps &lt;&lt; *subcap &lt;&lt; &quot;,&quot;;
+          subcaps &lt;&lt; &quot;]&quot;;
+          metadata[key + &quot;::subcaps&quot;] = subcaps.str();
+
+        }
+      }
+
+      // Used rules and options
+      const IniParser::ObservablesType &amp;rules = boundIniFile-&gt;getRules();
+      for (IniParser::ObservableType rule : rules)
+      {
+        graph_traits&lt;DRes::MasterGraphType&gt;::vertex_iterator vi, vi_end;
+        for (boost::tie(vi, vi_end) = vertices(masterGraph); vi != vi_end; ++vi)
+        {
+          // Check only for enabled functors
+          if (masterGraph[*vi]-&gt;status() == 2)
+          {
+            if (matchesRules(masterGraph[*vi], Rule(rule)))
+            {
+              str key = &quot;Rules&quot;;
+              if(not rule.capability.empty())
+              {
+                key += &quot;::&quot; + rule.capability;
+                metadata[key + &quot;::capability&quot;] = rule.capability;
+              }
+              if(not rule.function.empty())
+              {
+                if (not rule.capability.empty()) key += &quot;::&quot; + rule.function;
+                metadata[key+&quot;::function&quot;] = rule.function;
+              }
+              if(not rule.module.empty())     metadata[key+&quot;::module&quot;] = rule.module;
+              if(not rule.type.empty())       metadata[key+&quot;::type&quot;] = rule.type;
+              if(not rule.backend.empty())    metadata[key+&quot;::backend&quot;] = rule.backend;
+              if(not rule.version.empty())    metadata[key+&quot;::version&quot;] = rule.version;
+              if(rule.options.getNames().size()) rule.options.toMap(metadata, key+&quot;::options&quot;);
+            }
+          }
+        }
+      }
+
+      // Logger
+      YAML::Node logNode = boundIniFile-&gt;getLoggerNode();
+      Options(logNode).toMap(metadata,&quot;Logger&quot;);
+
+      // KeyValues
+      YAML::Node keyvalue = boundIniFile-&gt;getKeyValuePairNode();
+      Options(keyvalue).toMap(metadata,&quot;KeyValue&quot;);
+
+      // YAML file
+      ss.str(&quot;&quot;);
+      ss &lt;&lt; boundIniFile-&gt;getYAMLNode();
+      metadata[&quot;YAML&quot;] = ss.str();
+
+      return metadata;
+
+    }
+
     // Resolve a dependency on backend classes
     void DependencyResolver::resolveVertexClassLoading(VertexID vertex)
     {
@@ -2407,6 +2597,29 @@ namespace Gambit
         backendsRequired.push_back(resolvedBackends);
       }
 
+    }
+
+    // Set the Scan ID
+    void DependencyResolver::set_scanID()
+    {
+      // Get the scanID from the yaml node.
+      scanID = boundIniFile-&gt;getValueOrDef&lt;int&gt;(-1, &quot;scanID&quot;);
+    
+      // If scanID is supplied by user, use that
+      if (scanID != -1)
+      {
+        return;
+      }
+      else
+      {
+        const std::chrono::time_point&lt;std::chrono::system_clock&gt; now = std::chrono::system_clock::now();
+        std::time_t in_time_t = std::chrono::system_clock::to_time_t(now);
+        std::chrono::milliseconds ms = std::chrono::duration_cast&lt;std::chrono::milliseconds&gt; (now.time_since_epoch()) - std::chrono::duration_cast&lt;std::chrono::seconds&gt; (now.time_since_epoch());
+        std::stringstream ss;
+        ss &lt;&lt; std::put_time(std::localtime(&amp;in_time_t), &quot;%H%M%S&quot;);
+        ss &lt;&lt; ms.count();
+        ss &gt;&gt; scanID;
+      }
     }
 
     // Get BibTeX citation keys for backends, modules, etc
@@ -2478,13 +2691,12 @@ namespace Gambit
         }
 
       }
-
     }
 
   }
 
 }
-</code></pre><hr><p>Updated on 2022-09-08 at 03:46:48 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.a08b5ca912a508bc013bbd939befee438a0d2f798076e860e42147c7c0e2a01cf714847f7f5a2824876ce72867b0182df10e3537711faff352dd1ef41550be7c.js integrity="sha512-oItcqRKlCLwBO72Tm+/uQ4oNL3mAduhg5CFHx8DioBz3FIR/f1ooJIds5yhnsBgt8Q41N3Efr/NS3R70FVC+fA==" crossorigin=anonymous defer></script>
+</code></pre><hr><p>Updated on 2023-06-26 at 21:36:55 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.a08b5ca912a508bc013bbd939befee438a0d2f798076e860e42147c7c0e2a01cf714847f7f5a2824876ce72867b0182df10e3537711faff352dd1ef41550be7c.js integrity="sha512-oItcqRKlCLwBO72Tm+/uQ4oNL3mAduhg5CFHx8DioBz3FIR/f1ooJIds5yhnsBgt8Q41N3Efr/NS3R70FVC+fA==" crossorigin=anonymous defer></script>
 <script src=/js/highlight.min.ce91dadbce67e8eef36fa222c1c74c99f623c836cf6a316dffa1aeb390ab659d9a20d8145ceac39e049c555414fc360d31315e7980535dc6c03eb5374b7d559d.js integrity="sha512-zpHa285n6O7zb6IiwcdMmfYjyDbPajFt/6Gus5CrZZ2aINgUXOrDngScVVQU/DYNMTFeeYBTXcbAPrU3S31VnQ==" crossorigin=anonymous defer></script>
 <script src=/main.min.57d9a84956f7d60008c47938c7fdd2f75e8618ff1d09c5a5e2b32f91debaf7681f7ceca8b51aded60067c2136172134a91ebc0674487c76a04e3244d927ebdde.js integrity="sha512-V9moSVb31gAIxHk4x/3S916GGP8dCcWl4rMvkd6692gffOyotRre1gBnwhNhchNKkevAZ0SHx2oE4yRNkn693g==" crossorigin=anonymous defer></script>
-<script src=/index.min.2a2f6bd25e0a661102d8769165ef9d3273d4db5ae6edbc62261887d88167016dfb0f6310393f582bcc424de5dc6eab3a529fd305ba4c3afc8e551f0093ed322c.js integrity="sha512-Ki9r0l4KZhEC2HaRZe+dMnPU21rm7bxiJhiH2IFnAW37D2MQOT9YK8xCTeXcbqs6Up/TBbpMOvyOVR8Ak+0yLA==" crossorigin=anonymous defer></script></body></html>
+<script src=/index.min.95720397d55302de0e04fb8f4bf89a7396888a3be86803aa187cbc45924e9c35452b4bef718cd568b25ad872307d8f5537eab4c0045b8043c40628674a4fc53d.js integrity="sha512-lXIDl9VTAt4OBPuPS/iac5aIijvoaAOqGHy8RZJOnDVFK0vvcYzVaLJa2HIwfY9VN+q0wARbgEPEBihnSk/FPQ==" crossorigin=anonymous defer></script></body></html>

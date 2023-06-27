@@ -15,9 +15,13 @@ Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle
 ///  \author Rose Kudzman-Blais
 ///  \date 2017 May
 ///
+///  \author Anders Kvellestad
+///  \date 2021 Oct
+///
 ///  *********************************************
 
-// Based on http://cms-results.web.cern.ch/cms-results/public-results/preliminary-results/SUS-16-043/index.html
+// Based on confnote http://cms-results.web.cern.ch/cms-results/public-results/preliminary-results/SUS-16-043/index.html
+// and the paper version http://cms-results.web.cern.ch/cms-results/public-results/publications/SUS-16-043/index.html
 
 #include &lt;vector&gt;
 #include &lt;cmath&gt;
@@ -30,10 +34,13 @@ Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle
 
 using namespace std;
 
-namespace Gambit {
-  namespace ColliderBit {
+namespace Gambit
+{
+  namespace ColliderBit
+  {
 
-    class Analysis_CMS_13TeV_1LEPbb_36invfb : public Analysis {
+    class Analysis_CMS_13TeV_1LEPbb_36invfb : public Analysis
+    {
     private:
 
       std::map&lt;string, EventCounter&gt; _counters = {
@@ -62,7 +69,8 @@ namespace Gambit {
       // Required detector sim
       static constexpr const char* detector = &quot;CMS&quot;;
 
-      Analysis_CMS_13TeV_1LEPbb_36invfb() {
+      Analysis_CMS_13TeV_1LEPbb_36invfb()
+      {
 
         set_analysis_name(&quot;CMS_13TeV_1LEPbb_36invfb&quot;);
         set_luminosity(35.9);
@@ -87,7 +95,8 @@ namespace Gambit {
       }
 
 
-      void run(const HEPUtils::Event* event) {
+      void run(const HEPUtils::Event* event)
+      {
 
         double met = event-&gt;met();
 
@@ -98,7 +107,8 @@ namespace Gambit {
         const vector&lt;double&gt; cEl={0.654,0.705,0.731,0.665,0.655,0.722};
         HEPUtils::BinnedFn2D&lt;double&gt; _eff2dEl(aEl,bEl,cEl);
         vector&lt;const HEPUtils::Particle*&gt; baselineElectrons;
-        for (const HEPUtils::Particle* electron : event-&gt;electrons()) {
+        for (const HEPUtils::Particle* electron : event-&gt;electrons())
+        {
           bool isEl=has_tag(_eff2dEl, electron-&gt;abseta(), electron-&gt;pT());
           if (electron-&gt;pT()&gt;5. &amp;&amp; electron-&gt;abseta()&lt;2.5 &amp;&amp; isEl)baselineElectrons.push_back(electron);
         }
@@ -109,18 +119,21 @@ namespace Gambit {
         const vector&lt;double&gt; cMu={0.761,0.804,0.814,0.805,0.769,0.813,0.846,0.82,0.819,0.847,0.834,0.852};
         HEPUtils::BinnedFn2D&lt;double&gt; _eff2dMu(aMu,bMu,cMu);
         vector&lt;const HEPUtils::Particle*&gt; baselineMuons;
-        for (const HEPUtils::Particle* muon : event-&gt;muons()) {
+        for (const HEPUtils::Particle* muon : event-&gt;muons())
+        {
           bool isMu=has_tag(_eff2dMu, muon-&gt;abseta(), muon-&gt;pT());
           if (muon-&gt;pT()&gt;5. &amp;&amp; muon-&gt;abseta()&lt;2.4 &amp;&amp; isMu)baselineMuons.push_back(muon);
         }
 
         vector&lt;const HEPUtils::Particle*&gt; baselineTaus;
-        for (const HEPUtils::Particle* tau : event-&gt;taus()) {
+        for (const HEPUtils::Particle* tau : event-&gt;taus())
+        {
           if (tau-&gt;pT()&gt;20. &amp;&amp; tau-&gt;abseta()&lt;2.3)baselineTaus.push_back(tau);
         }
 
         vector&lt;const HEPUtils::Jet*&gt; baselineJets;
-        for (const HEPUtils::Jet* jet : event-&gt;jets()) {
+        for (const HEPUtils::Jet* jet : event-&gt;jets())
+        {
           if (jet-&gt;pT()&gt;25. &amp;&amp;fabs(jet-&gt;eta())&lt;2.4)baselineJets.push_back(jet);
         }
 
@@ -131,25 +144,31 @@ namespace Gambit {
         vector&lt;const HEPUtils::Jet*&gt; signalJets;
         vector&lt;const HEPUtils::Jet*&gt; signalBJets;
 
-        for (size_t iEl=0;iEl&lt;baselineElectrons.size();iEl++) {
+        for (size_t iEl=0;iEl&lt;baselineElectrons.size();iEl++)
+        {
           if (baselineElectrons.at(iEl)-&gt;pT()&gt;30. &amp;&amp; baselineElectrons.at(iEl)-&gt;abseta()&lt;1.44)signalElectrons.push_back(baselineElectrons.at(iEl));
         }
 
-        for (size_t iMu=0;iMu&lt;baselineMuons.size();iMu++) {
+        for (size_t iMu=0;iMu&lt;baselineMuons.size();iMu++)
+        {
           if (baselineMuons.at(iMu)-&gt;pT()&gt;25. &amp;&amp; baselineMuons.at(iMu)-&gt;abseta()&lt;2.1)signalMuons.push_back(baselineMuons.at(iMu));
         }
 
-        for (size_t iJet=0;iJet&lt;baselineJets.size();iJet++) {
-          if (baselineJets.at(iJet)-&gt;pT()&gt;30.) {
+        for (size_t iJet=0;iJet&lt;baselineJets.size();iJet++)
+        {
+          if (baselineJets.at(iJet)-&gt;pT()&gt;30.)
+          {
             signalJets.push_back(baselineJets.at(iJet));
             if (baselineJets.at(iJet)-&gt;btag())signalBJets.push_back(baselineJets.at(iJet));
           }
         }
         vector&lt;const HEPUtils::Jet*&gt; signalBJets_temp=signalBJets;
         CMS::applyCSVv2MediumBtagEff(signalBJets_temp);
-        if (signalBJets_temp.size()&gt;0) {
+        if (signalBJets_temp.size()&gt;0)
+        {
           CMS::applyCSVv2LooseBtagEff(signalBJets_temp);
-          for (size_t iJet=0;iJet&lt;signalBJets_temp.size();iJet++) {
+          for (size_t iJet=0;iJet&lt;signalBJets_temp.size();iJet++)
+          {
             if (find(signalBJets.begin(),signalBJets.end(),signalBJets_temp.at(iJet))==signalBJets.end())signalBJets.push_back(signalBJets_temp.at(iJet));
           }
         }
@@ -180,25 +199,30 @@ namespace Gambit {
 
         if ((baselineMuons.size()+baselineElectrons.size())&gt;1)lepton2_veto=false;
         if (baselineTaus.size()&gt;0)tau_veto=false;
-        if (nSignalLeptons&gt;0 &amp;&amp; met&gt;50. &amp;&amp; lepton2_veto &amp;&amp; tau_veto &amp;&amp; nSignalJets==2 &amp;&amp; nSignalBJets==2) {
-          if (nSignalMuons==1) {
+        if (nSignalLeptons&gt;0 &amp;&amp; met&gt;50. &amp;&amp; lepton2_veto &amp;&amp; tau_veto &amp;&amp; nSignalJets==2 &amp;&amp; nSignalBJets==2)
+        {
+          if (nSignalMuons==1)
+          {
             bool hasTrig=has_tag(_eff2dMu_Trig, signalMuons.at(0)-&gt;abseta(), signalMuons.at(0)-&gt;pT());
             if (hasTrig)preselection=true;
           }
-          if (nSignalElectrons==1) {
+          if (nSignalElectrons==1)
+          {
             bool hasTrig=has_tag(_eff2dEl_Trig, signalElectrons.at(0)-&gt;abseta(), signalElectrons.at(0)-&gt;pT());
             if (hasTrig)preselection=true;
           }
         }
 
-        if (nSignalBJets&gt;1) {
+        if (nSignalBJets&gt;1) 
+        {
           mCT=sqrt(2*signalBJets.at(0)-&gt;pT()*signalBJets.at(1)-&gt;pT()*(1+cos(signalBJets.at(0)-&gt;mom().deltaPhi(signalBJets.at(1)-&gt;mom()))));
           mbb=(signalBJets.at(0)-&gt;mom()+signalBJets.at(1)-&gt;mom()).m();
         }
         if (signalLeptons.size()&gt;0)mT=sqrt(2*signalLeptons.at(0)-&gt;pT()*met*(1-cos(signalLeptons.at(0)-&gt;mom().deltaPhi(event-&gt;missingmom()))));
 
         //Signal Regions
-        if (preselection &amp;&amp; mbb&gt;90 &amp;&amp; mbb&lt;150 &amp;&amp; mCT&gt;170. &amp;&amp; met&gt;125. &amp;&amp; mT&gt;150.) {
+        if (preselection &amp;&amp; mbb&gt;90 &amp;&amp; mbb&lt;150 &amp;&amp; mCT&gt;170. &amp;&amp; met&gt;125. &amp;&amp; mT&gt;150.) 
+        {
           //SRA
           if (met&gt;125. &amp;&amp; met&lt;200.) _counters.at(&quot;SRA&quot;).add_event(event);
           //SRB
@@ -271,7 +295,8 @@ namespace Gambit {
         // cutFlowVectorCMS_500_125[8]=9.9;
         // cutFlowVectorCMS_500_125[9]=6.5;
 
-        for (size_t j=0;j&lt;NCUTS;j++){
+        for (size_t j=0;j&lt;NCUTS;j++)
+        {
           if(
              (j==0) ||
 
@@ -307,24 +332,33 @@ namespace Gambit {
         for (auto&amp; pair : _counters) { pair.second += specificOther-&gt;_counters.at(pair.first); }
 
         if (NCUTS != specificOther-&gt;NCUTS) NCUTS = specificOther-&gt;NCUTS;
-        for (size_t j = 0; j &lt; NCUTS; j++) {
+        for (size_t j = 0; j &lt; NCUTS; j++)
+        {
           cutFlowVector[j] += specificOther-&gt;cutFlowVector[j];
           cutFlowVector_str[j] = specificOther-&gt;cutFlowVector_str[j];
         }
       }
 
 
-      void collect_results() {
-
+      void collect_results() 
+      {
         add_result(SignalRegionData(_counters.at(&quot;SRA&quot;), 11., {7.5, 2.5}));
         add_result(SignalRegionData(_counters.at(&quot;SRB&quot;), 7., {8.7, 2.2}));
+
+        // Covariance
+        // - We know that the correlation coefficient is 0.61, see http://cms-results.web.cern.ch/cms-results/public-results/preliminary-results/SUS-16-043/index.html
+        static const vector&lt; vector&lt;double&gt; &gt; BKGCOV = {
+          { 6.25,   3.355 },  // cov(A,A), cov(A,B)
+          { 3.355,  4.84  },  // cov(B,A), cov(B,B)
+        };
+        set_covariance(BKGCOV);
 
       }
 
 
     protected:
-      void analysis_specific_reset() {
-
+      void analysis_specific_reset() 
+      {
         for (auto&amp; pair : _counters) { pair.second.reset(); }
 
         std::fill(cutFlowVector.begin(), cutFlowVector.end(), 0);
@@ -339,7 +373,7 @@ namespace Gambit {
 
   }
 }
-</code></pre><hr><p>Updated on 2022-09-08 at 03:46:48 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.a08b5ca912a508bc013bbd939befee438a0d2f798076e860e42147c7c0e2a01cf714847f7f5a2824876ce72867b0182df10e3537711faff352dd1ef41550be7c.js integrity="sha512-oItcqRKlCLwBO72Tm+/uQ4oNL3mAduhg5CFHx8DioBz3FIR/f1ooJIds5yhnsBgt8Q41N3Efr/NS3R70FVC+fA==" crossorigin=anonymous defer></script>
+</code></pre><hr><p>Updated on 2023-06-26 at 21:36:56 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.a08b5ca912a508bc013bbd939befee438a0d2f798076e860e42147c7c0e2a01cf714847f7f5a2824876ce72867b0182df10e3537711faff352dd1ef41550be7c.js integrity="sha512-oItcqRKlCLwBO72Tm+/uQ4oNL3mAduhg5CFHx8DioBz3FIR/f1ooJIds5yhnsBgt8Q41N3Efr/NS3R70FVC+fA==" crossorigin=anonymous defer></script>
 <script src=/js/highlight.min.ce91dadbce67e8eef36fa222c1c74c99f623c836cf6a316dffa1aeb390ab659d9a20d8145ceac39e049c555414fc360d31315e7980535dc6c03eb5374b7d559d.js integrity="sha512-zpHa285n6O7zb6IiwcdMmfYjyDbPajFt/6Gus5CrZZ2aINgUXOrDngScVVQU/DYNMTFeeYBTXcbAPrU3S31VnQ==" crossorigin=anonymous defer></script>
 <script src=/main.min.57d9a84956f7d60008c47938c7fdd2f75e8618ff1d09c5a5e2b32f91debaf7681f7ceca8b51aded60067c2136172134a91ebc0674487c76a04e3244d927ebdde.js integrity="sha512-V9moSVb31gAIxHk4x/3S916GGP8dCcWl4rMvkd6692gffOyotRre1gBnwhNhchNKkevAZ0SHx2oE4yRNkn693g==" crossorigin=anonymous defer></script>
-<script src=/index.min.2a2f6bd25e0a661102d8769165ef9d3273d4db5ae6edbc62261887d88167016dfb0f6310393f582bcc424de5dc6eab3a529fd305ba4c3afc8e551f0093ed322c.js integrity="sha512-Ki9r0l4KZhEC2HaRZe+dMnPU21rm7bxiJhiH2IFnAW37D2MQOT9YK8xCTeXcbqs6Up/TBbpMOvyOVR8Ak+0yLA==" crossorigin=anonymous defer></script></body></html>
+<script src=/index.min.95720397d55302de0e04fb8f4bf89a7396888a3be86803aa187cbc45924e9c35452b4bef718cd568b25ad872307d8f5537eab4c0045b8043c40628674a4fc53d.js integrity="sha512-lXIDl9VTAt4OBPuPS/iac5aIijvoaAOqGHy8RZJOnDVFK0vvcYzVaLJa2HIwfY9VN+q0wARbgEPEBihnSk/FPQ==" crossorigin=anonymous defer></script></body></html>

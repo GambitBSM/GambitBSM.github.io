@@ -19,6 +19,7 @@ Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle
 #include &quot;gambit/ColliderBit/ATLASEfficiencies.hpp&quot;
 #include &quot;gambit/ColliderBit/analyses/Analysis.hpp&quot;
 #include &quot;gambit/ColliderBit/mt2_bisect.h&quot;
+//#include &quot;gambit/ColliderBit/analyses/Perf_Plot.hpp&quot;
 
 using namespace std;
 
@@ -28,182 +29,209 @@ using namespace std;
 // based on: arXiv:1308.2631
 //
 //    Code by Martin White, Sky French.
+//    Updated by Kelton Whiteaker, June 2020
 //    Known errors:
 //    a) The isolation is already applied in the simulation rather than after overlap removal -&gt; the electron and muon veto technically require a veto on base-line electrons/muons not overlapping with jets
 //
 //    Known features:
-//    a) Must run simulator with 60% b tagging efficiency and ?% mis-id rate
+//    a) Must run simulator with 60% b tagging efficiency and ?% mis-id rate. Note from Kelton: detailed pT- and eta-dependent efficiencies for 60% operating point not available from public ATLAS results.
 
 
-namespace Gambit {
-  namespace ColliderBit {
+namespace Gambit
+{
+  namespace ColliderBit
+  {
 
 
-    class Analysis_ATLAS_8TeV_2bStop_20invfb : public Analysis {
-    private:
+    class Analysis_ATLAS_8TeV_2bStop_20invfb : public Analysis
+    {
+      private:
 
-      // Numbers passing cuts
-      double _numSRA, _numSRB;
-      double _numSRA15, _numSRA20, _numSRA25, _numSRA30, _numSRA35;
+        // Numbers passing cuts
+        double _numSRA, _numSRB;
+        double _numSRA15, _numSRA20, _numSRA25, _numSRA30, _numSRA35;
 
-      vector&lt;int&gt; cutFlowVector;
-      vector&lt;string&gt; cutFlowVector_str;
-      int NCUTS; //=2;
+        vector&lt;int&gt; cutFlowVector;
+        vector&lt;string&gt; cutFlowVector_str;
+        int NCUTS; //=2;
 
-      // Debug histos
+        // Debug histos
 
-    public:
+  //      Perf_Plot* plots_mct;
+  //      Perf_Plot* plots_mbb;
+  //      Perf_Plot* plots_met;
+  //      Perf_Plot* plots_ht3;
+  //      Perf_Plot* plots_allAcuts;
+  //      Perf_Plot* plots_allBcuts;
 
-      // Required detector sim
-      static constexpr const char* detector = &quot;ATLAS&quot;;
 
-      Analysis_ATLAS_8TeV_2bStop_20invfb() {
+      public:
 
-        set_analysis_name(&quot;ATLAS_8TeV_2bStop_20invfb&quot;);
-        set_luminosity(20.1);
+        // Required detector sim
+        static constexpr const char* detector = &quot;ATLAS&quot;;
 
-        _numSRA = 0 ; _numSRB = 0; _numSRA15 = 0; _numSRA20 = 0; _numSRA25 = 0; _numSRA30 = 0; _numSRA35 = 0;
-        NCUTS=30;
+        // constructor
+        Analysis_ATLAS_8TeV_2bStop_20invfb()
+        {
 
-        for(int i=0;i&lt;NCUTS;i++){
-          cutFlowVector.push_back(0);
-          cutFlowVector_str.push_back(&quot;&quot;);
-        }
+          set_analysis_name(&quot;ATLAS_8TeV_2bStop_20invfb&quot;);
+          set_luminosity(20.1);
 
-      }
+          _numSRA = 0 ; _numSRB = 0; _numSRA15 = 0; _numSRA20 = 0; _numSRA25 = 0; _numSRA30 = 0; _numSRA35 = 0;
+          NCUTS=30;
 
-      void run(const HEPUtils::Event* event) {
-
-        // Missing energy
-        HEPUtils::P4 ptot = event-&gt;missingmom();
-        double met = event-&gt;met();
-
-        // Now define vector of baseline electrons
-        vector&lt;const HEPUtils::Particle*&gt; baselineElectrons;
-        for (const HEPUtils::Particle* electron : event-&gt;electrons()) {
-          if (electron-&gt;pT() &gt; 7. &amp;&amp; fabs(electron-&gt;eta()) &lt; 2.47) baselineElectrons.push_back(electron);
-        }
-
-        // Apply electron efficiency
-        ATLAS::applyElectronEff(baselineElectrons);
-
-        // Now define vector of baseline muons
-        vector&lt;const HEPUtils::Particle*&gt; baselineMuons;
-        for (const HEPUtils::Particle* muon : event-&gt;muons()) {
-          if (muon-&gt;pT() &gt; 6. &amp;&amp; fabs(muon-&gt;eta()) &lt; 2.4) baselineMuons.push_back(muon);
-        }
-
-        // Apply muon efficiency
-        ATLAS::applyMuonEff(baselineMuons);
-
-        const std::vector&lt;double&gt; a = {0,10.};
-        const std::vector&lt;double&gt; b = {0,10000.};
-        const std::vector&lt;double&gt; c = {0.60};
-        HEPUtils::BinnedFn2D&lt;double&gt; _eff2d(a,b,c);
-
-        vector&lt;const HEPUtils::Jet*&gt; baselineJets;
-        vector&lt;const HEPUtils::Jet*&gt; bJets;
-        vector&lt;const HEPUtils::Jet*&gt; trueBJets; //for debugging
-
-        for (const HEPUtils::Jet* jet : event-&gt;jets()) {
-          if (jet-&gt;pT() &gt; 20. &amp;&amp; fabs(jet-&gt;eta()) &lt; 4.9) baselineJets.push_back(jet);
-        }
-
-        // Overlap removal
-        vector&lt;const HEPUtils::Particle*&gt; signalElectrons;
-        vector&lt;const HEPUtils::Particle*&gt; signalMuons;
-        vector&lt;const HEPUtils::Particle*&gt; electronsForVeto;
-        vector&lt;const HEPUtils::Particle*&gt; muonsForVeto;
-        vector&lt;const HEPUtils::Jet*&gt; goodJets;
-        vector&lt;const HEPUtils::Jet*&gt; signalJets;
-
-        // Remove any jet within dR=0.2 of an electrons
-        for (size_t iJet=0;iJet&lt;baselineJets.size();iJet++) {
-          bool overlap=false;
-          HEPUtils::P4 jetVec=baselineJets.at(iJet)-&gt;mom();
-          for (size_t iEl=0;iEl&lt;baselineElectrons.size();iEl++) {
-            HEPUtils::P4 elVec=baselineElectrons.at(iEl)-&gt;mom();
-            if (fabs(elVec.deltaR_eta(jetVec))&lt;0.2)overlap=true;
+          for(int i=0;i&lt;NCUTS;i++)
+          {
+            cutFlowVector.push_back(0);
+            cutFlowVector_str.push_back(&quot;&quot;);
           }
-          if (!overlap&amp;&amp;fabs(baselineJets.at(iJet)-&gt;eta())&lt;2.8)goodJets.push_back(baselineJets.at(iJet));
-          if (!overlap&amp;&amp;fabs(baselineJets.at(iJet)-&gt;eta())&lt;2.8 &amp;&amp; baselineJets.at(iJet)-&gt;pT()&gt;20.)signalJets.push_back(baselineJets.at(iJet));
+
+  //        vector&lt;const char*&gt; variablesNames = {&quot;met&quot;,&quot;mct&quot;,&quot;mbb&quot;,&quot;ht3&quot;};
+  //        plots_mct = new Perf_Plot(analysis_name()+&quot;_SRA_no-mct-cut&quot;, &amp;variablesNames);
+  //        plots_mbb = new Perf_Plot(analysis_name()+&quot;_SRA_no-mbb-cut&quot;, &amp;variablesNames);
+  //        plots_met = new Perf_Plot(analysis_name()+&quot;_SRB_no-met-cut&quot;, &amp;variablesNames);
+  //        plots_ht3 = new Perf_Plot(analysis_name()+&quot;_SRB_no-ht3-cut&quot;, &amp;variablesNames);
+  //        plots_allAcuts = new Perf_Plot(analysis_name()+&quot;_SRA_all-cuts&quot;, &amp;variablesNames);
+  //        plots_allBcuts = new Perf_Plot(analysis_name()+&quot;_SRB_all-cuts&quot;, &amp;variablesNames);
+
         }
 
-        // Remove electrons with dR=0.4 or surviving jets
-        for (size_t iEl=0;iEl&lt;baselineElectrons.size();iEl++) {
-          bool overlap=false;
-          HEPUtils::P4 elVec=baselineElectrons.at(iEl)-&gt;mom();
-          for (size_t iJet=0;iJet&lt;goodJets.size();iJet++) {
-            HEPUtils::P4 jetVec=goodJets.at(iJet)-&gt;mom();
-            if (fabs(elVec.deltaR_eta(jetVec))&lt;0.4)overlap=true;
+
+        void run(const HEPUtils::Event* event)
+        {
+
+          // Missing energy
+          HEPUtils::P4 ptot = event-&gt;missingmom();
+          double met = event-&gt;met();
+
+          // Now define vector of baseline electrons
+          vector&lt;const HEPUtils::Particle*&gt; baselineElectrons;
+          for (const HEPUtils::Particle* electron : event-&gt;electrons())
+          {
+            if (electron-&gt;pT() &gt; 7. &amp;&amp; fabs(electron-&gt;eta()) &lt; 2.47) baselineElectrons.push_back(electron);
           }
-          if (!overlap &amp;&amp; elVec.pT()&gt;25.)signalElectrons.push_back(baselineElectrons.at(iEl));
-          if(!overlap)electronsForVeto.push_back(baselineElectrons.at(iEl));
-        }
 
-        // Remove muons with dR=0.4 or surviving jets
-        for (size_t iMu=0;iMu&lt;baselineMuons.size();iMu++) {
-          bool overlap=false;
+          // Apply electron efficiency
+          ATLAS::applyElectronEff(baselineElectrons);
 
-          HEPUtils::P4 muVec=baselineMuons.at(iMu)-&gt;mom();
-
-          for (size_t iJet=0;iJet&lt;goodJets.size();iJet++) {
-            HEPUtils::P4 jetVec=goodJets.at(iJet)-&gt;mom();
-            if (fabs(muVec.deltaR_eta(jetVec))&lt;0.4)overlap=true;
+          // Now define vector of baseline muons
+          vector&lt;const HEPUtils::Particle*&gt; baselineMuons;
+          for (const HEPUtils::Particle* muon : event-&gt;muons())
+          {
+            if (muon-&gt;pT() &gt; 6. &amp;&amp; fabs(muon-&gt;eta()) &lt; 2.4) baselineMuons.push_back(muon);
           }
-          if (!overlap &amp;&amp; muVec.pT()&gt;25.)signalMuons.push_back(baselineMuons.at(iMu));
-          if(!overlap)muonsForVeto.push_back(baselineMuons.at(iMu));
-        }
 
-        for (const HEPUtils::Jet* jet : signalJets) {
-          bool hasTag=has_tag(_eff2d, fabs(jet-&gt;eta()), jet-&gt;pT());
-          if(jet-&gt;btag() &amp;&amp; hasTag &amp;&amp; fabs(jet-&gt;eta()) &lt; 2.5 &amp;&amp; jet-&gt;pT() &gt; 20.) bJets.push_back(jet);
-        }
+          // Apply muon efficiency
+          ATLAS::applyMuonEff(baselineMuons);
 
-        // We now have the signal electrons, muons, jets and b jets- move on to the analysis
+          const std::vector&lt;double&gt; a = {0,10.};
+          const std::vector&lt;double&gt; b = {0,10000.};
+          const std::vector&lt;double&gt; c = {0.60};  // b tagging efficiency
+  //        const std::vector&lt;double&gt; a = {0,2.1,10.};
+  //        const std::vector&lt;double&gt; b = {0,30.,40.,50.,70.,10000.};
+  //        const std::vector&lt;double&gt; c = {0.54,0.63,0.67,0.7,0.75,0.35,0.42,0.44,0.46,0.49};  // b tagging efficiency for 70% WP (this analysis is 60%)
+          HEPUtils::BinnedFn2D&lt;double&gt; _eff2d(a,b,c);
 
-        // Calculate common variables and cuts first
-        int nJets = signalJets.size();
+          vector&lt;const HEPUtils::Jet*&gt; baselineJets;
+          vector&lt;const HEPUtils::Jet*&gt; bJets;
+          vector&lt;const HEPUtils::Jet*&gt; trueBJets; //for debugging
 
-        //Jet cuts for each SR
-        bool passSRAJetCut=false;
-        bool passSRBJetCut=false;
-        bool passSRAbJetCut=false;
-        bool passSRBbJetCut=false;
+          for (const HEPUtils::Jet* jet : event-&gt;jets())
+          {
+            if (jet-&gt;pT() &gt; 20. &amp;&amp; fabs(jet-&gt;eta()) &lt; 4.9) baselineJets.push_back(jet);
+          }
 
-        double mbb=0;
-        double mCT=0;
+          // Overlap removal
+          vector&lt;const HEPUtils::Particle*&gt; signalElectrons;
+          vector&lt;const HEPUtils::Particle*&gt; signalMuons;
+          vector&lt;const HEPUtils::Particle*&gt; electronsForVeto;
+          vector&lt;const HEPUtils::Particle*&gt; muonsForVeto;
+          vector&lt;const HEPUtils::Jet*&gt; goodJets;
+          vector&lt;const HEPUtils::Jet*&gt; signalJets;
 
-    //cout &lt;&lt; &quot;TEST njets &quot; &lt;&lt; nJets &lt;&lt; &quot; nbjets &quot; &lt;&lt; bJets.size() &lt;&lt; endl;
-
-        if(nJets&gt;=2){
-          if(signalJets[0]-&gt;pT() &gt; 130.
-             &amp;&amp; signalJets[1]-&gt;pT() &gt; 50) {
-            if(nJets==2) {
-              passSRAJetCut=true;
-              if(bJets.size()==2) {
-                passSRAbJetCut=true;
-
-                mbb = (bJets[0]-&gt;mom()+bJets[1]-&gt;mom()).m();
-
-                double bjet1_ET = sqrt(bJets[0]-&gt;mom().pT()*bJets[0]-&gt;mom().pT()+bJets[0]-&gt;mom().m()*bJets[0]-&gt;mom().m());
-                double bjet2_ET = sqrt(bJets[1]-&gt;mom().pT()*bJets[1]-&gt;mom().pT()+bJets[1]-&gt;mom().m()*bJets[1]-&gt;mom().m());
-
-                double modPTdiff_squared=(bJets[0]-&gt;mom().px()-bJets[1]-&gt;mom().px())*(bJets[0]-&gt;mom().px()-bJets[1]-&gt;mom().px())
-                  +                      (bJets[0]-&gt;mom().py()-bJets[1]-&gt;mom().py())*(bJets[0]-&gt;mom().py()-bJets[1]-&gt;mom().py());
-
-                double mct_squared = pow(bjet1_ET+bjet2_ET,2)-modPTdiff_squared;
-                mCT = sqrt(mct_squared);
-              }
+          // Remove any jet within dR=0.2 of an electrons
+          // preprocessing
+          for (size_t iJet=0;iJet&lt;baselineJets.size();iJet++)
+          {
+            bool overlap=false;
+            HEPUtils::P4 jetVec=baselineJets.at(iJet)-&gt;mom();
+            for (size_t iEl=0;iEl&lt;baselineElectrons.size();iEl++)
+            {
+              HEPUtils::P4 elVec=baselineElectrons.at(iEl)-&gt;mom();
+              if (fabs(elVec.deltaR_eta(jetVec))&lt;0.2)overlap=true;
             }
-            if(nJets&gt;2) {
-              if(signalJets[2]-&gt;pT() &lt; 50.) {
+            if (!overlap&amp;&amp;fabs(baselineJets.at(iJet)-&gt;eta())&lt;2.8)goodJets.push_back(baselineJets.at(iJet));
+            if (!overlap&amp;&amp;fabs(baselineJets.at(iJet)-&gt;eta())&lt;2.8 &amp;&amp; baselineJets.at(iJet)-&gt;pT()&gt;20.)signalJets.push_back(baselineJets.at(iJet));
+          }
+
+          // Remove electrons with dR=0.4 or surviving jets
+          for (size_t iEl=0;iEl&lt;baselineElectrons.size();iEl++)
+          {
+            bool overlap=false;
+            HEPUtils::P4 elVec=baselineElectrons.at(iEl)-&gt;mom();
+            for (size_t iJet=0;iJet&lt;goodJets.size();iJet++)
+            {
+              HEPUtils::P4 jetVec=goodJets.at(iJet)-&gt;mom();
+              if (fabs(elVec.deltaR_eta(jetVec))&lt;0.4)overlap=true;
+            }
+            if (!overlap &amp;&amp; elVec.pT()&gt;25.)signalElectrons.push_back(baselineElectrons.at(iEl));
+            if(!overlap)electronsForVeto.push_back(baselineElectrons.at(iEl));
+          }
+
+          // Remove muons with dR=0.4 or surviving jets
+          for (size_t iMu=0;iMu&lt;baselineMuons.size();iMu++)
+          {
+            bool overlap=false;
+
+            HEPUtils::P4 muVec=baselineMuons.at(iMu)-&gt;mom();
+
+            for (size_t iJet=0;iJet&lt;goodJets.size();iJet++)
+            {
+              HEPUtils::P4 jetVec=goodJets.at(iJet)-&gt;mom();
+              if (fabs(muVec.deltaR_eta(jetVec))&lt;0.4)overlap=true;
+            }
+            if (!overlap &amp;&amp; muVec.pT()&gt;25.)signalMuons.push_back(baselineMuons.at(iMu));
+            if(!overlap)muonsForVeto.push_back(baselineMuons.at(iMu));
+          }
+
+          // for all signal (good) jets, b-tag if mc b hadron present
+          // btag() is mc
+          for (const HEPUtils::Jet* jet : signalJets)
+          {
+            bool hasTag=has_tag(_eff2d, fabs(jet-&gt;eta()), jet-&gt;pT());
+            if(jet-&gt;btag() &amp;&amp; hasTag &amp;&amp; fabs(jet-&gt;eta()) &lt; 2.5 &amp;&amp; jet-&gt;pT() &gt; 20.) bJets.push_back(jet);
+          }
+
+          // We now have the signal electrons, muons, jets and b jets- move on to the analysis
+
+          // Calculate common variables and cuts first
+          int nJets = signalJets.size();
+
+          //Jet cuts for each SR
+          bool passSRAJetCut=false;
+          bool passSRBJetCut=false;
+          bool passSRAbJetCut=false;
+          bool passSRBbJetCut=false;
+
+          double mbb=0;
+          double mCT=0;
+
+          //cout &lt;&lt; &quot;TEST njets &quot; &lt;&lt; nJets &lt;&lt; &quot; nbjets &quot; &lt;&lt; bJets.size() &lt;&lt; endl;
+
+          if(nJets&gt;=2)
+          {
+            if(signalJets[0]-&gt;pT() &gt; 130.
+               &amp;&amp; signalJets[1]-&gt;pT() &gt; 50)
+            {
+              if(nJets==2)
+              {
                 passSRAJetCut=true;
-                //Check that the two leading jets are the b jets
-                if(bJets.size()==2 &amp;&amp; (signalJets[0]-&gt;pT()==bJets[0]-&gt;pT()) &amp;&amp; (signalJets[1]-&gt;pT()==bJets[1]-&gt;pT())){
+                if(bJets.size()==2)
+                {
                   passSRAbJetCut=true;
 
                   mbb = (bJets[0]-&gt;mom()+bJets[1]-&gt;mom()).m();
+
                   double bjet1_ET = sqrt(bJets[0]-&gt;mom().pT()*bJets[0]-&gt;mom().pT()+bJets[0]-&gt;mom().m()*bJets[0]-&gt;mom().m());
                   double bjet2_ET = sqrt(bJets[1]-&gt;mom().pT()*bJets[1]-&gt;mom().pT()+bJets[1]-&gt;mom().m()*bJets[1]-&gt;mom().m());
 
@@ -212,226 +240,302 @@ namespace Gambit {
 
                   double mct_squared = pow(bjet1_ET+bjet2_ET,2)-modPTdiff_squared;
                   mCT = sqrt(mct_squared);
+                }
+              }
+              if(nJets&gt;2)
+              {
+                if(signalJets[2]-&gt;pT() &lt; 50.)
+                {
+                  passSRAJetCut=true;
+                  //Check that the two leading jets are the b jets
+                  if(bJets.size()==2 &amp;&amp; (signalJets[0]-&gt;pT()==bJets[0]-&gt;pT()) &amp;&amp; (signalJets[1]-&gt;pT()==bJets[1]-&gt;pT()))
+                  {
+                    passSRAbJetCut=true;
 
-                  //double bjet1_ET = sqrt(bjet1.Pt()*bjet1.Pt()+bjet1.M()*bjet1.M());
-                  //double bjet2_ET = sqrt(bjet2.Pt()*bjet2.Pt()+bjet2.M()*bjet2.M());
-                  //TVector2 bjet1_pT;
-                  //TVector2 bjet2_pT;
-                  //bjet1_pT.Set(bjet1.Px(),bjet1.Py());
-                  //bjet2_pT.Set(bjet2.Px(),bjet2.Py());
-                  //double mct_squared = pow(bjet1_ET+bjet2_ET,2)-(bjet1_pT-bjet2_pT).Mod2();
-                  //mCT = sqrt(mct_squared);
+                    mbb = (bJets[0]-&gt;mom()+bJets[1]-&gt;mom()).m();
+                    double bjet1_ET = sqrt(bJets[0]-&gt;mom().pT()*bJets[0]-&gt;mom().pT()+bJets[0]-&gt;mom().m()*bJets[0]-&gt;mom().m());
+                    double bjet2_ET = sqrt(bJets[1]-&gt;mom().pT()*bJets[1]-&gt;mom().pT()+bJets[1]-&gt;mom().m()*bJets[1]-&gt;mom().m());
+
+                    double modPTdiff_squared=(bJets[0]-&gt;mom().px()-bJets[1]-&gt;mom().px())*(bJets[0]-&gt;mom().px()-bJets[1]-&gt;mom().px())
+                      +                      (bJets[0]-&gt;mom().py()-bJets[1]-&gt;mom().py())*(bJets[0]-&gt;mom().py()-bJets[1]-&gt;mom().py());
+
+                    double mct_squared = pow(bjet1_ET+bjet2_ET,2)-modPTdiff_squared;
+                    mCT = sqrt(mct_squared);
+
+                    //double bjet1_ET = sqrt(bjet1.Pt()*bjet1.Pt()+bjet1.M()*bjet1.M());
+                    //double bjet2_ET = sqrt(bjet2.Pt()*bjet2.Pt()+bjet2.M()*bjet2.M());
+                    //TVector2 bjet1_pT;
+                    //TVector2 bjet2_pT;
+                    //bjet1_pT.Set(bjet1.Px(),bjet1.Py());
+                    //bjet2_pT.Set(bjet2.Px(),bjet2.Py());
+                    //double mct_squared = pow(bjet1_ET+bjet2_ET,2)-(bjet1_pT-bjet2_pT).Mod2();
+                    //mCT = sqrt(mct_squared);
+                  }
                 }
               }
             }
           }
-        }
 
-        if(nJets&gt;=3){
-          if(signalJets[0]-&gt;pT() &gt; 150.
-             &amp;&amp; signalJets[1]-&gt;pT() &gt; 30.
-             &amp;&amp; signalJets[2]-&gt;pT() &gt; 30.) {
-            passSRBJetCut=true;
-            //Check that the 2nd and 3rd leading jets are the b jets
-            if(bJets.size()==2 &amp;&amp; (bJets[0]-&gt;pT()==signalJets[1]-&gt;pT()) &amp;&amp; (bJets[1]-&gt;pT()==signalJets[2]-&gt;pT())) {
-              passSRBbJetCut=true;
+          if(nJets&gt;=3)
+          {
+            if(signalJets[0]-&gt;pT() &gt; 150.
+               &amp;&amp; signalJets[1]-&gt;pT() &gt; 30.
+               &amp;&amp; signalJets[2]-&gt;pT() &gt; 30.)
+            {
+              passSRBJetCut=true;
+              //Check that the 2nd and 3rd leading jets are the b jets
+              if(bJets.size()==2 &amp;&amp; (bJets[0]-&gt;pT()==signalJets[1]-&gt;pT()) &amp;&amp; (bJets[1]-&gt;pT()==signalJets[2]-&gt;pT()))
+              {
+                passSRBbJetCut=true;
 
-              mbb = (bJets[0]-&gt;mom()+bJets[1]-&gt;mom()).m();
-              double bjet1_ET = sqrt(bJets[0]-&gt;mom().pT()*bJets[0]-&gt;mom().pT()+bJets[0]-&gt;mom().m()*bJets[0]-&gt;mom().m());
-              double bjet2_ET = sqrt(bJets[1]-&gt;mom().pT()*bJets[1]-&gt;mom().pT()+bJets[1]-&gt;mom().m()*bJets[1]-&gt;mom().m());
+                mbb = (bJets[0]-&gt;mom()+bJets[1]-&gt;mom()).m();
+                double bjet1_ET = sqrt(bJets[0]-&gt;mom().pT()*bJets[0]-&gt;mom().pT()+bJets[0]-&gt;mom().m()*bJets[0]-&gt;mom().m());
+                double bjet2_ET = sqrt(bJets[1]-&gt;mom().pT()*bJets[1]-&gt;mom().pT()+bJets[1]-&gt;mom().m()*bJets[1]-&gt;mom().m());
 
-              double modPTdiff_squared=(bJets[0]-&gt;mom().px()-bJets[1]-&gt;mom().px())*(bJets[0]-&gt;mom().px()-bJets[1]-&gt;mom().px())
-                +                      (bJets[0]-&gt;mom().py()-bJets[1]-&gt;mom().py())*(bJets[0]-&gt;mom().py()-bJets[1]-&gt;mom().py());
+                double modPTdiff_squared=(bJets[0]-&gt;mom().px()-bJets[1]-&gt;mom().px())*(bJets[0]-&gt;mom().px()-bJets[1]-&gt;mom().px())
+                  +                      (bJets[0]-&gt;mom().py()-bJets[1]-&gt;mom().py())*(bJets[0]-&gt;mom().py()-bJets[1]-&gt;mom().py());
 
-              double mct_squared = pow(bjet1_ET+bjet2_ET,2)-modPTdiff_squared;
-              mCT = sqrt(mct_squared);
+                double mct_squared = pow(bjet1_ET+bjet2_ET,2)-modPTdiff_squared;
+                mCT = sqrt(mct_squared);
 
 
-              //mbb = (bjet1+bjet2).M();
-              //double bjet1_ET = sqrt(bjet1.Pt()*bjet1.Pt()+bjet1.M()*bjet1.M());
-              //double bjet2_ET = sqrt(bjet2.Pt()*bjet2.Pt()+bjet2.M()*bjet2.M());
-              //TVector2 bjet1_pT;
-              //TVector2 bjet2_pT;
-              //bjet1_pT.Set(bjet1.Px(),bjet1.Py());
-              //bjet2_pT.Set(bjet2.Px(),bjet2.Py());
-              //double mct_squared = pow(bjet1_ET+bjet2_ET,2)-(bjet1_pT-bjet2_pT).Mod2();
-              //mCT = sqrt(mct_squared);
+                //mbb = (bjet1+bjet2).M();
+                //double bjet1_ET = sqrt(bjet1.Pt()*bjet1.Pt()+bjet1.M()*bjet1.M());
+                //double bjet2_ET = sqrt(bjet2.Pt()*bjet2.Pt()+bjet2.M()*bjet2.M());
+                //TVector2 bjet1_pT;
+                //TVector2 bjet2_pT;
+                //bjet1_pT.Set(bjet1.Px(),bjet1.Py());
+                //bjet2_pT.Set(bjet2.Px(),bjet2.Py());
+                //double mct_squared = pow(bjet1_ET+bjet2_ET,2)-(bjet1_pT-bjet2_pT).Mod2();
+                //mCT = sqrt(mct_squared);
 
+              }
             }
+
           }
 
+          //Calculate dphi(jet,met) for the three leading jets
+          double dphi_jetmet1=9999;
+          if(nJets&gt;0)dphi_jetmet1=std::acos(std::cos(signalJets.at(0)-&gt;phi()-ptot.phi()));
+          double dphi_jetmet2=9999;
+          if(nJets&gt;1)dphi_jetmet2=std::acos(std::cos(signalJets.at(1)-&gt;phi()-ptot.phi()));
+          double dphi_jetmet3=9999;
+          if(nJets&gt;2)dphi_jetmet3=std::acos(std::cos(signalJets.at(2)-&gt;phi()-ptot.phi()));
+
+          double dphi_min = min(dphi_jetmet1,dphi_jetmet2);
+          dphi_min = min(dphi_min,dphi_jetmet3);
+
+          //Calculate meff (all jets with pT&gt;20 GeV, and met)
+          //double meff = met; (Unused)
+          //for (const HEPUtils::Jet* jet : signalJets) { (Unused)
+          //  if(jet-&gt;pT()&gt;20.)meff += jet-&gt;pT(); (Unused)
+          //} (Unused)
+          double meff2 = met; double meff3 = met; int nummeff=0;
+          for (const HEPUtils::Jet* jet : signalJets)
+          {
+            nummeff++;
+            if(nummeff&lt;=2 &amp;&amp; jet-&gt;pT()&gt;20.)meff2 += jet-&gt;pT();
+            if(nummeff&lt;=3 &amp;&amp; jet-&gt;pT()&gt;20.)meff3 += jet-&gt;pT();
+          }
+
+
+          //Calculate HT,3 (all jets except 3 highest pT)
+          double ht3 = 0; int num=0;
+          for (const HEPUtils::Jet* jet : signalJets)
+          {
+            num++;
+            if(num&gt;3 &amp;&amp; jet-&gt;pT()&gt;20.)ht3 += jet-&gt;pT();
+          }
+
+
+          //Cutflow flags
+          bool cut_ElectronVeto=false;
+          bool cut_MuonVeto=false;
+          //bool cut_2jets=false;
+          //bool cut_3jets=false;
+          bool cut_dPhiJet1=false;
+          bool cut_METGt150=false;
+          bool cut_METGt250=false;
+          bool cut_dPhiJets=false;
+          bool cut_METmeff2=false;
+          bool cut_METmeff3=false;
+
+          if(electronsForVeto.size()==0)cut_ElectronVeto=true;
+          if(muonsForVeto.size()==0)cut_MuonVeto=true;
+          //if(passSRAJetCut)cut_2jets=true;
+          //if(passSRBJetCut)cut_3jets=true;
+          if(dphi_jetmet1&gt;2.5)cut_dPhiJet1=true;
+          if(dphi_min&gt;0.4)cut_dPhiJets=true;
+          if(met&gt;150.)cut_METGt150=true;
+          if(met&gt;250.)cut_METGt250=true;
+          if(met/meff2&gt;0.25)cut_METmeff2=true;
+          if(met/meff3&gt;0.25)cut_METmeff3=true;
+
+
+  //        vector&lt;double&gt; variables={met, mCT, mbb, ht3};
+  //        if(met&gt;150. &amp;&amp; cut_MuonVeto &amp;&amp; cut_ElectronVeto &amp;&amp; passSRAJetCut &amp;&amp; passSRAbJetCut &amp;&amp; cut_dPhiJets &amp;&amp; cut_METmeff2 &amp;&amp; mbb &gt; 200.)plots_mct-&gt;fill(&amp;variables);
+  //        if(met&gt;150. &amp;&amp; cut_MuonVeto &amp;&amp; cut_ElectronVeto &amp;&amp; passSRAJetCut &amp;&amp; passSRAbJetCut &amp;&amp; cut_dPhiJets &amp;&amp; cut_METmeff2 &amp;&amp; mCT &gt; 150.)plots_mbb-&gt;fill(&amp;variables);
+  //        if(met&gt;80. &amp;&amp; cut_MuonVeto &amp;&amp; cut_ElectronVeto &amp;&amp; passSRBJetCut &amp;&amp; cut_dPhiJet1 &amp;&amp; passSRBbJetCut &amp;&amp; cut_dPhiJets &amp;&amp; cut_METmeff3 &amp;&amp; ht3&lt;50.)plots_met-&gt;fill(&amp;variables);
+  //        if(met&gt;250. &amp;&amp; cut_MuonVeto &amp;&amp; cut_ElectronVeto &amp;&amp; passSRBJetCut &amp;&amp; cut_dPhiJet1 &amp;&amp; passSRBbJetCut &amp;&amp; cut_dPhiJets &amp;&amp; cut_METmeff3)plots_ht3-&gt;fill(&amp;variables);
+  //        if(met&gt;150. &amp;&amp; cut_MuonVeto &amp;&amp; cut_ElectronVeto &amp;&amp; passSRAJetCut &amp;&amp; passSRAbJetCut &amp;&amp; cut_dPhiJets &amp;&amp; cut_METmeff2 &amp;&amp; mbb &gt; 200. &amp;&amp; mCT &gt; 150.)plots_allAcuts-&gt;fill(&amp;variables);
+  //        if(met&gt;250. &amp;&amp; cut_MuonVeto &amp;&amp; cut_ElectronVeto &amp;&amp; passSRBJetCut &amp;&amp; cut_dPhiJet1 &amp;&amp; passSRBbJetCut &amp;&amp; cut_dPhiJets &amp;&amp; cut_METmeff3 &amp;&amp; ht3&lt;50.)plots_allBcuts-&gt;fill(&amp;variables);
+
+
+          cutFlowVector_str[0] = &quot;No cuts &quot;;
+          cutFlowVector_str[1] = &quot;MET &gt; 80 &quot;;
+          cutFlowVector_str[2] = &quot;SRA: Lepton veto &quot;;
+          cutFlowVector_str[3] = &quot;SRA: MET &gt; 150 &quot;;
+          cutFlowVector_str[4] = &quot;SRA: Jet selection  &quot;;
+          cutFlowVector_str[5] = &quot;SRA: B jet selection  &quot;;
+          cutFlowVector_str[6] = &quot;SRA: dPhi_min &gt; 0.4 &quot;;
+          cutFlowVector_str[7] = &quot;SRA: MET/meff(2) &gt; 0.25 &quot;;
+          cutFlowVector_str[8] = &quot;SRA: mbb &gt; 200 &quot;;
+          cutFlowVector_str[9] = &quot;SRA: mCT &gt; 150 &quot;;
+          cutFlowVector_str[10] = &quot;SRA: mCT &gt; 200 &quot;;
+          cutFlowVector_str[11] = &quot;SRA: mCT &gt; 250 &quot;;
+          cutFlowVector_str[12] = &quot;SRA: mCT &gt; 300 &quot;;
+          cutFlowVector_str[13] = &quot;SRB: lepton veto &quot;;
+          cutFlowVector_str[14] = &quot;SRB: MET &gt; 250 &quot;;
+          cutFlowVector_str[15] = &quot;SRB: Jet selection &quot;;
+          cutFlowVector_str[16] = &quot;SRB: dPhi(pTmiss,j1) &gt; 2.5 &quot;;
+          cutFlowVector_str[17] = &quot;SRB: B jet selection &quot;;
+          cutFlowVector_str[18] = &quot;SRB: dPhi_min &gt; 0.4 &quot;;
+          cutFlowVector_str[19] = &quot;SRB: MET/meff(3) &gt; 0.25 &quot;;
+          cutFlowVector_str[20] = &quot;SRB: HT3 &lt; 50  &quot;;
+
+
+          for(int j=0;j&lt;NCUTS;j++)
+          {
+            if(
+               (j==0) ||
+
+               (j==1 &amp;&amp; met&gt;80.) ||
+
+               (j==2 &amp;&amp; met&gt;80. &amp;&amp; cut_MuonVeto &amp;&amp; cut_ElectronVeto) ||
+
+               (j==3 &amp;&amp; met&gt;150. &amp;&amp; cut_MuonVeto &amp;&amp; cut_ElectronVeto) ||
+
+               (j==4 &amp;&amp; met&gt;150. &amp;&amp; cut_MuonVeto &amp;&amp; cut_ElectronVeto &amp;&amp; passSRAJetCut) ||
+
+               (j==5 &amp;&amp; met&gt;150. &amp;&amp; cut_MuonVeto &amp;&amp; cut_ElectronVeto &amp;&amp; passSRAJetCut &amp;&amp; passSRAbJetCut) ||
+
+               (j==6 &amp;&amp; met&gt;150. &amp;&amp; cut_MuonVeto &amp;&amp; cut_ElectronVeto &amp;&amp; passSRAJetCut &amp;&amp; passSRAbJetCut &amp;&amp; cut_dPhiJets) ||
+
+               (j==7 &amp;&amp; met&gt;150. &amp;&amp; cut_MuonVeto &amp;&amp; cut_ElectronVeto &amp;&amp; passSRAJetCut &amp;&amp; passSRAbJetCut &amp;&amp; cut_dPhiJets &amp;&amp; cut_METmeff2) ||
+
+               (j==8 &amp;&amp; met&gt;150. &amp;&amp; cut_MuonVeto &amp;&amp; cut_ElectronVeto &amp;&amp; passSRAJetCut &amp;&amp; passSRAbJetCut &amp;&amp; cut_dPhiJets &amp;&amp; cut_METmeff2 &amp;&amp; mbb &gt; 200.) ||
+
+               (j==9 &amp;&amp; met&gt;150. &amp;&amp; cut_MuonVeto &amp;&amp; cut_ElectronVeto &amp;&amp; passSRAJetCut &amp;&amp; passSRAbJetCut &amp;&amp; cut_dPhiJets &amp;&amp; cut_METmeff2 &amp;&amp; mbb &gt; 200. &amp;&amp; mCT &gt; 150.) ||
+
+               (j==10 &amp;&amp; met&gt;150. &amp;&amp; cut_MuonVeto &amp;&amp; cut_ElectronVeto &amp;&amp; passSRAJetCut &amp;&amp; passSRAbJetCut &amp;&amp; cut_dPhiJets &amp;&amp; cut_METmeff2 &amp;&amp; mbb &gt; 200. &amp;&amp; mCT &gt; 200.) ||
+
+               (j==11 &amp;&amp; met&gt;150. &amp;&amp; cut_MuonVeto &amp;&amp; cut_ElectronVeto &amp;&amp; passSRAJetCut &amp;&amp; passSRAbJetCut &amp;&amp; cut_dPhiJets &amp;&amp; cut_METmeff2 &amp;&amp; mbb &gt; 200. &amp;&amp; mCT &gt; 250.) ||
+
+               (j==12 &amp;&amp; met&gt;150. &amp;&amp; cut_MuonVeto &amp;&amp; cut_ElectronVeto &amp;&amp; passSRAJetCut &amp;&amp; passSRAbJetCut &amp;&amp; cut_dPhiJets &amp;&amp; cut_METmeff2 &amp;&amp; mbb &gt; 200. &amp;&amp; mCT &gt; 300.) ||
+
+               (j==13 &amp;&amp; met&gt;80. &amp;&amp; cut_MuonVeto &amp;&amp; cut_ElectronVeto) ||
+
+               (j==14 &amp;&amp; met&gt;250. &amp;&amp; cut_MuonVeto &amp;&amp; cut_ElectronVeto) ||
+
+               (j==15 &amp;&amp; met&gt;250. &amp;&amp; cut_MuonVeto &amp;&amp; cut_ElectronVeto &amp;&amp; passSRBJetCut) ||
+
+               (j==16 &amp;&amp; met&gt;250. &amp;&amp; cut_MuonVeto &amp;&amp; cut_ElectronVeto &amp;&amp; passSRBJetCut &amp;&amp; cut_dPhiJet1) ||
+
+               (j==17 &amp;&amp; met&gt;250. &amp;&amp; cut_MuonVeto &amp;&amp; cut_ElectronVeto &amp;&amp; passSRBJetCut &amp;&amp; cut_dPhiJet1 &amp;&amp; passSRBbJetCut) ||
+
+               (j==18 &amp;&amp; met&gt;250. &amp;&amp; cut_MuonVeto &amp;&amp; cut_ElectronVeto &amp;&amp; passSRBJetCut &amp;&amp; cut_dPhiJet1 &amp;&amp; passSRBbJetCut &amp;&amp; cut_dPhiJets) ||
+
+               (j==19 &amp;&amp; met&gt;250. &amp;&amp; cut_MuonVeto &amp;&amp; cut_ElectronVeto &amp;&amp; passSRBJetCut &amp;&amp; cut_dPhiJet1 &amp;&amp; passSRBbJetCut &amp;&amp; cut_dPhiJets &amp;&amp; cut_METmeff3) ||
+
+               (j==20 &amp;&amp; met&gt;250. &amp;&amp; cut_MuonVeto &amp;&amp; cut_ElectronVeto &amp;&amp; passSRBJetCut &amp;&amp; cut_dPhiJet1 &amp;&amp; passSRBbJetCut &amp;&amp; cut_dPhiJets &amp;&amp; cut_METmeff3 &amp;&amp; ht3&lt;50.)
+
+               )cutFlowVector[j]++;
+          }
+
+          //We're now ready to apply the cuts for each signal region
+          //_numSRA, _numSRB, _numSRA15, _numSRA20, _numSRA25, _numSRA30, _numSRA35;
+
+          if(cut_ElectronVeto &amp;&amp; cut_MuonVeto &amp;&amp; cut_METGt150 &amp;&amp; passSRAJetCut &amp;&amp; passSRAbJetCut &amp;&amp; cut_dPhiJets &amp;&amp; cut_METmeff2 &amp;&amp; mbb&gt;200.)
+          {
+            _numSRA += event-&gt;weight();
+            if(mCT&gt;150.) _numSRA15 += event-&gt;weight();
+            if(mCT&gt;200.) _numSRA20 += event-&gt;weight();
+            if(mCT&gt;250.) _numSRA25 += event-&gt;weight();
+            if(mCT&gt;300.) _numSRA30 += event-&gt;weight();
+            if(mCT&gt;350.) _numSRA35 += event-&gt;weight();
+          }
+          if(cut_ElectronVeto &amp;&amp; cut_MuonVeto &amp;&amp; cut_METGt250 &amp;&amp; passSRBJetCut &amp;&amp; cut_dPhiJet1 &amp;&amp; passSRBbJetCut &amp;&amp; cut_dPhiJets &amp;&amp; cut_METmeff3 &amp;&amp; ht3&lt;50.) _numSRB += event-&gt;weight();
+
+
+          return;
+
         }
 
-        //Calculate dphi(jet,met) for the three leading jets
-        double dphi_jetmet1=9999;
-        if(nJets&gt;0)dphi_jetmet1=std::acos(std::cos(signalJets.at(0)-&gt;phi()-ptot.phi()));
-        double dphi_jetmet2=9999;
-        if(nJets&gt;1)dphi_jetmet2=std::acos(std::cos(signalJets.at(1)-&gt;phi()-ptot.phi()));
-        double dphi_jetmet3=9999;
-        if(nJets&gt;2)dphi_jetmet3=std::acos(std::cos(signalJets.at(2)-&gt;phi()-ptot.phi()));
+        /// Combine the variables of another copy of this analysis (typically on another thread) into this one.
+        void combine(const Analysis* other)
+        {
+          const Analysis_ATLAS_8TeV_2bStop_20invfb* specificOther
+                  = dynamic_cast&lt;const Analysis_ATLAS_8TeV_2bStop_20invfb*&gt;(other);
 
-        double dphi_min = min(dphi_jetmet1,dphi_jetmet2);
-        dphi_min = min(dphi_min,dphi_jetmet3);
-
-        //Calculate meff (all jets with pT&gt;20 GeV, and met)
-        //double meff = met; (Unused)
-        //for (const HEPUtils::Jet* jet : signalJets) { (Unused)
-        //  if(jet-&gt;pT()&gt;20.)meff += jet-&gt;pT(); (Unused)
-        //} (Unused)
-        double meff2 = met; double meff3 = met; int nummeff=0;
-        for (const HEPUtils::Jet* jet : signalJets) {
-          nummeff++;
-          if(nummeff&lt;=2 &amp;&amp; jet-&gt;pT()&gt;20.)meff2 += jet-&gt;pT();
-          if(nummeff&lt;=3 &amp;&amp; jet-&gt;pT()&gt;20.)meff3 += jet-&gt;pT();
+          if (NCUTS != specificOther-&gt;NCUTS) NCUTS = specificOther-&gt;NCUTS;
+          for (int j=0; j&lt;NCUTS; j++)
+          {
+            cutFlowVector[j] += specificOther-&gt;cutFlowVector[j];
+            cutFlowVector_str[j] = specificOther-&gt;cutFlowVector_str[j];
+          }
+          _numSRA += specificOther-&gt;_numSRA;
+          _numSRB += specificOther-&gt;_numSRB;
+          _numSRA15 += specificOther-&gt;_numSRA15;
+          _numSRA20 += specificOther-&gt;_numSRA20;
+          _numSRA25 += specificOther-&gt;_numSRA25;
+          _numSRA30 += specificOther-&gt;_numSRA30;
+          _numSRA35 += specificOther-&gt;_numSRA35;
         }
 
 
-        //Calculate HT,3 (all jets except 3 highest pT)
-        double ht3 = 0; int num=0;
-        for (const HEPUtils::Jet* jet : signalJets) {
-          num++;
-          if(num&gt;3 &amp;&amp; jet-&gt;pT()&gt;20.)ht3 += jet-&gt;pT();
+        void collect_results()
+        {
+
+          double scale_by=1.;
+          cout &lt;&lt; &quot;------------------------------------------------------------------------------------------------------------------------------ &quot;&lt;&lt;endl;
+          cout &lt;&lt; &quot;CUT FLOW: ATLAS 8 TeV 2b stop paper SUSY-2013-05&quot;&lt;&lt;endl;
+          cout &lt;&lt; &quot;------------------------------------------------------------------------------------------------------------------------------&quot;&lt;&lt;endl;
+          cout&lt;&lt; right &lt;&lt; setw(40) &lt;&lt; &quot;CUT&quot; &lt;&lt;  &quot;,&quot; &lt;&lt; setw(20) &lt;&lt; &quot;RAW&quot; &lt;&lt;  &quot;,&quot; &lt;&lt; setw(20) &lt;&lt; &quot;SCALED&quot;
+          &lt;&lt;  &quot;,&quot; &lt;&lt; setw(20) &lt;&lt; &quot;%&quot; &lt;&lt;  &quot;,&quot; &lt;&lt; setw(20) &lt;&lt; endl;
+          for (int j=0; j&lt;NCUTS; j++) {
+              cout &lt;&lt; right &lt;&lt;  setw(40) &lt;&lt; cutFlowVector_str[j].c_str() &lt;&lt;  &quot;,&quot; &lt;&lt; setw(20)
+              &lt;&lt; cutFlowVector[j] &lt;&lt;  &quot;,&quot; &lt;&lt; setw(20) &lt;&lt; cutFlowVector[j]*scale_by &lt;&lt;  &quot;,&quot; &lt;&lt; setw(20)
+              &lt;&lt; 100.*cutFlowVector[j]/cutFlowVector[0] &lt;&lt; &quot;%&quot; &lt;&lt; endl;
+          }
+          cout &lt;&lt; &quot;------------------------------------------------------------------------------------------------------------------------------ &quot;&lt;&lt;endl;
+
+          // add_result(SignalRegionData(&quot;SR label&quot;, n_obs, {n_sig_MC, n_sig_MC_sys}, {n_bkg, n_bkg_err}));
+
+          add_result(SignalRegionData(&quot;SRA15&quot;, 102., {_numSRA15, 0.}, { 94., 13.}));
+          add_result(SignalRegionData(&quot;SRA20&quot;, 48., {_numSRA20, 0.}, { 39., 6.}));
+          add_result(SignalRegionData(&quot;SRA25&quot;, 14., {_numSRA25, 0.}, { 15.8, 2.8}));
+          add_result(SignalRegionData(&quot;SRA30&quot;, 7., {_numSRA30, 0.}, { 5.9, 1.1}));
+          add_result(SignalRegionData(&quot;SRA35&quot;, 3., {_numSRA35, 0.}, { 2.5, 0.6}));
+          add_result(SignalRegionData(&quot;SRB&quot;, 65., {_numSRB, 0.}, { 64., 10.}));
+
+  //        plots_mct-&gt;createFile(luminosity(),(85.5847/50000));
+  //        plots_mbb-&gt;createFile(luminosity(),(85.5847/50000));
+  //        plots_met-&gt;createFile(luminosity(),(85.5847/50000));
+  //        plots_ht3-&gt;createFile(luminosity(),(85.5847/50000));
+  //        plots_allAcuts-&gt;createFile(luminosity(),(85.5847/50000));
+  //        plots_allBcuts-&gt;createFile(luminosity(),(85.5847/50000));
+
+          return;
         }
 
-        //Cutflow flags
-        bool cut_ElectronVeto=false;
-        bool cut_MuonVeto=false;
-        //bool cut_2jets=false;
-        //bool cut_3jets=false;
-        //bool cut_dPhiJet1=false;
-        bool cut_METGt150=false;
-        bool cut_METGt250=false;
-        bool cut_dPhiJets=false;
-        bool cut_METmeff2=false;
-        bool cut_METmeff3=false;
 
-        if(electronsForVeto.size()==0)cut_ElectronVeto=true;
-        if(muonsForVeto.size()==0)cut_MuonVeto=true;
-        //if(passSRAJetCut)cut_2jets=true;
-        //if(passSRBJetCut)cut_3jets=true;
-        //if(dphi_jetmet1&gt;2.5)cut_dPhiJet1=true;
-        if(dphi_min&gt;0.4)cut_dPhiJets=true;
-        if(met&gt;150.)cut_METGt150=true;
-        if(met&gt;250.)cut_METGt250=true;
-        if(met/meff2&gt;0.25)cut_METmeff2=true;
-        if(met/meff3&gt;0.25)cut_METmeff3=true;
+      protected:
+        void analysis_specific_reset()
+        {
+          _numSRA = 0 ; _numSRB = 0; _numSRA15 = 0; _numSRA20 = 0; _numSRA25 = 0; _numSRA30 = 0; _numSRA35 = 0;
 
-        cutFlowVector_str[0] = &quot;No cuts &quot;;
-        cutFlowVector_str[1] = &quot;MET &gt; 80 &quot;;
-        cutFlowVector_str[2] = &quot;Lepton veto &quot;;
-        cutFlowVector_str[3] = &quot;MET &gt; 150 &quot;;
-        cutFlowVector_str[4] = &quot;Jet selection &quot;;
-        cutFlowVector_str[5] = &quot;mbb &gt; 200 &quot;;
-        cutFlowVector_str[6] = &quot;mCT &gt; 150 &quot;;
-        cutFlowVector_str[7] = &quot;mCT &gt; 200 &quot;;
-        cutFlowVector_str[8] = &quot;mCT &gt; 250 &quot;;
-        cutFlowVector_str[9] = &quot;mCT &gt; 300 &quot;;
-        cutFlowVector_str[10] = &quot;SRB: lepton veto &quot;;
-        cutFlowVector_str[11] = &quot;SRB: MET &gt; 250 &quot;;
-        cutFlowVector_str[12] = &quot;SRB: Jet selection &quot;;
-        cutFlowVector_str[13] = &quot;SRB: HT3 &lt; 50  &quot;;
-        cutFlowVector_str[14] = &quot;SRA: Jet selection  &quot;;
-        cutFlowVector_str[15] = &quot;SRA: B jet selection  &quot;;
-
-
-        for(int j=0;j&lt;NCUTS;j++){
-          if(
-             (j==0) ||
-
-             (j==1 &amp;&amp; met&gt;80.) ||
-
-             (j==2 &amp;&amp; met&gt;80. &amp;&amp; cut_MuonVeto &amp;&amp; cut_ElectronVeto) ||
-
-             (j==3 &amp;&amp; met&gt;150. &amp;&amp; cut_MuonVeto &amp;&amp; cut_ElectronVeto) ||
-
-             (j==4 &amp;&amp; met&gt;150. &amp;&amp; cut_MuonVeto &amp;&amp; cut_ElectronVeto &amp;&amp; passSRAbJetCut &amp;&amp; passSRAJetCut) ||
-
-             (j==5 &amp;&amp; met&gt;150. &amp;&amp; cut_MuonVeto &amp;&amp; cut_ElectronVeto &amp;&amp; passSRAbJetCut &amp;&amp; passSRAJetCut &amp;&amp; mbb &gt; 200.) ||
-
-             (j==6 &amp;&amp; met&gt;150. &amp;&amp; cut_MuonVeto &amp;&amp; cut_ElectronVeto &amp;&amp; passSRAbJetCut &amp;&amp; passSRAJetCut &amp;&amp; mbb &gt; 200. &amp;&amp; mCT &gt; 150.) ||
-
-             (j==7 &amp;&amp; met&gt;150. &amp;&amp; cut_MuonVeto &amp;&amp; cut_ElectronVeto &amp;&amp; passSRAbJetCut &amp;&amp; passSRAJetCut &amp;&amp; mbb &gt; 200. &amp;&amp; mCT &gt; 200.) ||
-
-             (j==8 &amp;&amp; met&gt;150. &amp;&amp; cut_MuonVeto &amp;&amp; cut_ElectronVeto &amp;&amp; passSRAbJetCut &amp;&amp; passSRAJetCut &amp;&amp; mbb &gt; 200. &amp;&amp; mCT &gt; 250.) ||
-
-             (j==9 &amp;&amp; met&gt;150. &amp;&amp; cut_MuonVeto &amp;&amp; cut_ElectronVeto &amp;&amp; passSRAbJetCut &amp;&amp; passSRAJetCut &amp;&amp; mbb &gt; 200. &amp;&amp; mCT &gt; 300.) ||
-
-             (j==10 &amp;&amp; met&gt;150. &amp;&amp; cut_MuonVeto &amp;&amp; cut_ElectronVeto) ||
-
-             (j==11 &amp;&amp; met&gt;250. &amp;&amp; cut_MuonVeto &amp;&amp; cut_ElectronVeto) ||
-
-             (j==12 &amp;&amp; met&gt;250. &amp;&amp; cut_MuonVeto &amp;&amp; cut_ElectronVeto &amp;&amp; passSRBJetCut &amp;&amp; passSRBbJetCut) ||
-
-             (j==13 &amp;&amp; met&gt;250. &amp;&amp; cut_MuonVeto &amp;&amp; cut_ElectronVeto &amp;&amp; passSRBJetCut &amp;&amp; passSRBbJetCut &amp;&amp; ht3&lt;50.) ||
-
-             (j==14 &amp;&amp; met&gt;150. &amp;&amp; cut_MuonVeto &amp;&amp; cut_ElectronVeto &amp;&amp; passSRAJetCut) ||
-
-             (j==15 &amp;&amp; met&gt;150. &amp;&amp; cut_MuonVeto &amp;&amp; cut_ElectronVeto &amp;&amp; passSRAJetCut &amp;&amp; passSRAbJetCut)
-
-
-             )cutFlowVector[j]++;
+          std::fill(cutFlowVector.begin(), cutFlowVector.end(), 0);
         }
-
-        //We're now ready to apply the cuts for each signal region
-        //_numSRA, _numSRB, _numSRA15, _numSRA20, _numSRA25, _numSRA30, _numSRA35;
-
-        if(cut_ElectronVeto &amp;&amp; cut_MuonVeto &amp;&amp; cut_METGt150 &amp;&amp; passSRAJetCut &amp;&amp; passSRAbJetCut &amp;&amp; cut_dPhiJets &amp;&amp; cut_METmeff2 &amp;&amp; mbb&gt;200.) {
-          _numSRA += event-&gt;weight();
-          if(mCT&gt;150.) _numSRA15 += event-&gt;weight();
-          if(mCT&gt;200.) _numSRA20 += event-&gt;weight();
-          if(mCT&gt;250.) _numSRA25 += event-&gt;weight();
-          if(mCT&gt;300.) _numSRA30 += event-&gt;weight();
-          if(mCT&gt;350.) _numSRA35 += event-&gt;weight();
-        }
-        if(cut_ElectronVeto &amp;&amp; cut_MuonVeto &amp;&amp; cut_METGt250 &amp;&amp; passSRBJetCut &amp;&amp; passSRBbJetCut &amp;&amp; cut_dPhiJets &amp;&amp; cut_METmeff3 &amp;&amp; ht3&lt;50.) _numSRB += event-&gt;weight();
-
-
-        return;
-
-      }
-
-      /// Combine the variables of another copy of this analysis (typically on another thread) into this one.
-      void combine(const Analysis* other)
-      {
-        const Analysis_ATLAS_8TeV_2bStop_20invfb* specificOther
-                = dynamic_cast&lt;const Analysis_ATLAS_8TeV_2bStop_20invfb*&gt;(other);
-
-        if (NCUTS != specificOther-&gt;NCUTS) NCUTS = specificOther-&gt;NCUTS;
-        for (int j=0; j&lt;NCUTS; j++) {
-          cutFlowVector[j] += specificOther-&gt;cutFlowVector[j];
-          cutFlowVector_str[j] = specificOther-&gt;cutFlowVector_str[j];
-        }
-        _numSRA += specificOther-&gt;_numSRA;
-        _numSRB += specificOther-&gt;_numSRB;
-        _numSRA15 += specificOther-&gt;_numSRA15;
-        _numSRA20 += specificOther-&gt;_numSRA20;
-        _numSRA25 += specificOther-&gt;_numSRA25;
-        _numSRA30 += specificOther-&gt;_numSRA30;
-        _numSRA35 += specificOther-&gt;_numSRA35;
-      }
-
-
-      void collect_results() {
-
-        // add_result(SignalRegionData(&quot;SR label&quot;, n_obs, {n_sig_MC, n_sig_MC_sys}, {n_bkg, n_bkg_err}));
-
-        add_result(SignalRegionData(&quot;SRA15&quot;, 102., {_numSRA15, 0.}, { 94., 13.}));
-        add_result(SignalRegionData(&quot;SRA20&quot;, 48., {_numSRA20, 0.}, { 39., 6.}));
-        add_result(SignalRegionData(&quot;SRA25&quot;, 14., {_numSRA25, 0.}, { 15.8, 2.8}));
-        add_result(SignalRegionData(&quot;SRA30&quot;, 7., {_numSRA30, 0.}, { 5.9, 1.1}));
-        add_result(SignalRegionData(&quot;SRA35&quot;, 3., {_numSRA35, 0.}, { 2.5, 0.6}));
-        add_result(SignalRegionData(&quot;SRB&quot;, 65., {_numSRB, 0.}, { 64., 10.}));
-
-        return;
-      }
-
-
-    protected:
-      void analysis_specific_reset() {
-        _numSRA = 0 ; _numSRB = 0; _numSRA15 = 0; _numSRA20 = 0; _numSRA25 = 0; _numSRA30 = 0; _numSRA35 = 0;
-
-        std::fill(cutFlowVector.begin(), cutFlowVector.end(), 0);
-      }
 
     };
 
@@ -441,7 +545,7 @@ namespace Gambit {
 
   }
 }
-</code></pre><hr><p>Updated on 2022-09-08 at 03:46:48 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.a08b5ca912a508bc013bbd939befee438a0d2f798076e860e42147c7c0e2a01cf714847f7f5a2824876ce72867b0182df10e3537711faff352dd1ef41550be7c.js integrity="sha512-oItcqRKlCLwBO72Tm+/uQ4oNL3mAduhg5CFHx8DioBz3FIR/f1ooJIds5yhnsBgt8Q41N3Efr/NS3R70FVC+fA==" crossorigin=anonymous defer></script>
+</code></pre><hr><p>Updated on 2023-06-26 at 21:36:56 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.a08b5ca912a508bc013bbd939befee438a0d2f798076e860e42147c7c0e2a01cf714847f7f5a2824876ce72867b0182df10e3537711faff352dd1ef41550be7c.js integrity="sha512-oItcqRKlCLwBO72Tm+/uQ4oNL3mAduhg5CFHx8DioBz3FIR/f1ooJIds5yhnsBgt8Q41N3Efr/NS3R70FVC+fA==" crossorigin=anonymous defer></script>
 <script src=/js/highlight.min.ce91dadbce67e8eef36fa222c1c74c99f623c836cf6a316dffa1aeb390ab659d9a20d8145ceac39e049c555414fc360d31315e7980535dc6c03eb5374b7d559d.js integrity="sha512-zpHa285n6O7zb6IiwcdMmfYjyDbPajFt/6Gus5CrZZ2aINgUXOrDngScVVQU/DYNMTFeeYBTXcbAPrU3S31VnQ==" crossorigin=anonymous defer></script>
 <script src=/main.min.57d9a84956f7d60008c47938c7fdd2f75e8618ff1d09c5a5e2b32f91debaf7681f7ceca8b51aded60067c2136172134a91ebc0674487c76a04e3244d927ebdde.js integrity="sha512-V9moSVb31gAIxHk4x/3S916GGP8dCcWl4rMvkd6692gffOyotRre1gBnwhNhchNKkevAZ0SHx2oE4yRNkn693g==" crossorigin=anonymous defer></script>
-<script src=/index.min.2a2f6bd25e0a661102d8769165ef9d3273d4db5ae6edbc62261887d88167016dfb0f6310393f582bcc424de5dc6eab3a529fd305ba4c3afc8e551f0093ed322c.js integrity="sha512-Ki9r0l4KZhEC2HaRZe+dMnPU21rm7bxiJhiH2IFnAW37D2MQOT9YK8xCTeXcbqs6Up/TBbpMOvyOVR8Ak+0yLA==" crossorigin=anonymous defer></script></body></html>
+<script src=/index.min.95720397d55302de0e04fb8f4bf89a7396888a3be86803aa187cbc45924e9c35452b4bef718cd568b25ad872307d8f5537eab4c0045b8043c40628674a4fc53d.js integrity="sha512-lXIDl9VTAt4OBPuPS/iac5aIijvoaAOqGHy8RZJOnDVFK0vvcYzVaLJa2HIwfY9VN+q0wARbgEPEBihnSk/FPQ==" crossorigin=anonymous defer></script></body></html>

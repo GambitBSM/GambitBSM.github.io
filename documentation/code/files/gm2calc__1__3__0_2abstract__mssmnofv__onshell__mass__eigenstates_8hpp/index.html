@@ -74,9 +74,9 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
    
             virtual int solve_ewsb() =0;
    
-            virtual ::std::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt; &gt; name() const =0;
+            virtual ::std::string name() const =0;
    
-            virtual void print(::std::basic_ostream&lt;char, std::char_traits&lt;char&gt; &gt;&amp;) const =0;
+            virtual void print(std::ostream&amp;) const =0;
    
             virtual double get_MVG() const =0;
    
@@ -116,129 +116,129 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
    
             virtual double get_MSvtL() const =0;
    
-            virtual const ::Eigen::Array&lt;double, 2, 1, 0, 2, 1&gt;&amp; get_MSd() const =0;
+            virtual const ::Eigen::Array&lt;double, 2, 1, 0&gt;&amp; get_MSd() const =0;
    
             virtual double get_MSd(int) const =0;
    
-            virtual const ::Eigen::Array&lt;double, 2, 1, 0, 2, 1&gt;&amp; get_MSu() const =0;
+            virtual const ::Eigen::Array&lt;double, 2, 1, 0&gt;&amp; get_MSu() const =0;
    
             virtual double get_MSu(int) const =0;
    
-            virtual const ::Eigen::Array&lt;double, 2, 1, 0, 2, 1&gt;&amp; get_MSe() const =0;
+            virtual const ::Eigen::Array&lt;double, 2, 1, 0&gt;&amp; get_MSe() const =0;
    
             virtual double get_MSe(int) const =0;
    
-            virtual const ::Eigen::Array&lt;double, 2, 1, 0, 2, 1&gt;&amp; get_MSm() const =0;
+            virtual const ::Eigen::Array&lt;double, 2, 1, 0&gt;&amp; get_MSm() const =0;
    
             virtual double get_MSm(int) const =0;
    
-            virtual const ::Eigen::Array&lt;double, 2, 1, 0, 2, 1&gt;&amp; get_MStau() const =0;
+            virtual const ::Eigen::Array&lt;double, 2, 1, 0&gt;&amp; get_MStau() const =0;
    
             virtual double get_MStau(int) const =0;
    
-            virtual const ::Eigen::Array&lt;double, 2, 1, 0, 2, 1&gt;&amp; get_MSs() const =0;
+            virtual const ::Eigen::Array&lt;double, 2, 1, 0&gt;&amp; get_MSs() const =0;
    
             virtual double get_MSs(int) const =0;
    
-            virtual const ::Eigen::Array&lt;double, 2, 1, 0, 2, 1&gt;&amp; get_MSc() const =0;
+            virtual const ::Eigen::Array&lt;double, 2, 1, 0&gt;&amp; get_MSc() const =0;
    
             virtual double get_MSc(int) const =0;
    
-            virtual const ::Eigen::Array&lt;double, 2, 1, 0, 2, 1&gt;&amp; get_MSb() const =0;
+            virtual const ::Eigen::Array&lt;double, 2, 1, 0&gt;&amp; get_MSb() const =0;
    
             virtual double get_MSb(int) const =0;
    
-            virtual const ::Eigen::Array&lt;double, 2, 1, 0, 2, 1&gt;&amp; get_MSt() const =0;
+            virtual const ::Eigen::Array&lt;double, 2, 1, 0&gt;&amp; get_MSt() const =0;
    
             virtual double get_MSt(int) const =0;
    
-            virtual const ::Eigen::Array&lt;double, 2, 1, 0, 2, 1&gt;&amp; get_Mhh() const =0;
+            virtual const ::Eigen::Array&lt;double, 2, 1, 0&gt;&amp; get_Mhh() const =0;
    
             virtual double get_Mhh(int) const =0;
    
-            virtual const ::Eigen::Array&lt;double, 2, 1, 0, 2, 1&gt;&amp; get_MAh() const =0;
+            virtual const ::Eigen::Array&lt;double, 2, 1, 0&gt;&amp; get_MAh() const =0;
    
             virtual double get_MAh(int) const =0;
    
-            virtual const ::Eigen::Array&lt;double, 2, 1, 0, 2, 1&gt;&amp; get_MHpm() const =0;
+            virtual const ::Eigen::Array&lt;double, 2, 1, 0&gt;&amp; get_MHpm() const =0;
    
             virtual double get_MHpm(int) const =0;
    
-            virtual const ::Eigen::Array&lt;double, 4, 1, 0, 4, 1&gt;&amp; get_MChi() const =0;
+            virtual const ::Eigen::Array&lt;double, 4, 1, 0&gt;&amp; get_MChi() const =0;
    
             virtual double get_MChi(int) const =0;
    
-            virtual const ::Eigen::Array&lt;double, 2, 1, 0, 2, 1&gt;&amp; get_MCha() const =0;
+            virtual const ::Eigen::Array&lt;double, 2, 1, 0&gt;&amp; get_MCha() const =0;
    
             virtual double get_MCha(int) const =0;
    
             virtual double get_MVWm() const =0;
    
-            virtual ::Eigen::Array&lt;double, 1, 1, 0, 1, 1&gt; get_MChargedHiggs() const =0;
+            virtual ::Eigen::Array&lt;double, 1, 1, 0&gt; get_MChargedHiggs() const =0;
    
-            virtual ::Eigen::Array&lt;double, 1, 1, 0, 1, 1&gt; get_MPseudoscalarHiggs() const =0;
+            virtual ::Eigen::Array&lt;double, 1, 1, 0&gt; get_MPseudoscalarHiggs() const =0;
    
-            virtual const ::Eigen::Matrix&lt;double, 2, 2, 0, 2, 2&gt;&amp; get_ZD() const =0;
+            virtual const ::Eigen::Matrix&lt;double, 2, 2, 0&gt;&amp; get_ZD() const =0;
    
             virtual double get_ZD(int, int) const =0;
    
-            virtual const ::Eigen::Matrix&lt;double, 2, 2, 0, 2, 2&gt;&amp; get_ZU() const =0;
+            virtual const ::Eigen::Matrix&lt;double, 2, 2, 0&gt;&amp; get_ZU() const =0;
    
             virtual double get_ZU(int, int) const =0;
    
-            virtual const ::Eigen::Matrix&lt;double, 2, 2, 0, 2, 2&gt;&amp; get_ZE() const =0;
+            virtual const ::Eigen::Matrix&lt;double, 2, 2, 0&gt;&amp; get_ZE() const =0;
    
             virtual double get_ZE(int, int) const =0;
    
-            virtual const ::Eigen::Matrix&lt;double, 2, 2, 0, 2, 2&gt;&amp; get_ZM() const =0;
+            virtual const ::Eigen::Matrix&lt;double, 2, 2, 0&gt;&amp; get_ZM() const =0;
    
             virtual double get_ZM(int, int) const =0;
    
-            virtual const ::Eigen::Matrix&lt;double, 2, 2, 0, 2, 2&gt;&amp; get_ZTau() const =0;
+            virtual const ::Eigen::Matrix&lt;double, 2, 2, 0&gt;&amp; get_ZTau() const =0;
    
             virtual double get_ZTau(int, int) const =0;
    
-            virtual const ::Eigen::Matrix&lt;double, 2, 2, 0, 2, 2&gt;&amp; get_ZS() const =0;
+            virtual const ::Eigen::Matrix&lt;double, 2, 2, 0&gt;&amp; get_ZS() const =0;
    
             virtual double get_ZS(int, int) const =0;
    
-            virtual const ::Eigen::Matrix&lt;double, 2, 2, 0, 2, 2&gt;&amp; get_ZC() const =0;
+            virtual const ::Eigen::Matrix&lt;double, 2, 2, 0&gt;&amp; get_ZC() const =0;
    
             virtual double get_ZC(int, int) const =0;
    
-            virtual const ::Eigen::Matrix&lt;double, 2, 2, 0, 2, 2&gt;&amp; get_ZB() const =0;
+            virtual const ::Eigen::Matrix&lt;double, 2, 2, 0&gt;&amp; get_ZB() const =0;
    
             virtual double get_ZB(int, int) const =0;
    
-            virtual const ::Eigen::Matrix&lt;double, 2, 2, 0, 2, 2&gt;&amp; get_ZT() const =0;
+            virtual const ::Eigen::Matrix&lt;double, 2, 2, 0&gt;&amp; get_ZT() const =0;
    
             virtual double get_ZT(int, int) const =0;
    
-            virtual const ::Eigen::Matrix&lt;double, 2, 2, 0, 2, 2&gt;&amp; get_ZH() const =0;
+            virtual const ::Eigen::Matrix&lt;double, 2, 2, 0&gt;&amp; get_ZH() const =0;
    
             virtual double get_ZH(int, int) const =0;
    
-            virtual const ::Eigen::Matrix&lt;double, 2, 2, 0, 2, 2&gt;&amp; get_ZA() const =0;
+            virtual const ::Eigen::Matrix&lt;double, 2, 2, 0&gt;&amp; get_ZA() const =0;
    
             virtual double get_ZA(int, int) const =0;
    
-            virtual const ::Eigen::Matrix&lt;double, 2, 2, 0, 2, 2&gt;&amp; get_ZP() const =0;
+            virtual const ::Eigen::Matrix&lt;double, 2, 2, 0&gt;&amp; get_ZP() const =0;
    
             virtual double get_ZP(int, int) const =0;
    
-            virtual const ::Eigen::Matrix&lt;std::complex&lt;double&gt;, 4, 4, 0, 4, 4&gt;&amp; get_ZN() const =0;
+            virtual const ::Eigen::Matrix&lt;std::complex&lt;double&gt;, 4, 4, 0&gt;&amp; get_ZN() const =0;
    
             virtual const ::std::complex&lt;double&gt;&amp; get_ZN(int, int) const =0;
    
-            virtual const ::Eigen::Matrix&lt;std::complex&lt;double&gt;, 2, 2, 0, 2, 2&gt;&amp; get_UM() const =0;
+            virtual const ::Eigen::Matrix&lt;std::complex&lt;double&gt;, 2, 2, 0&gt;&amp; get_UM() const =0;
    
             virtual const ::std::complex&lt;double&gt;&amp; get_UM(int, int) const =0;
    
-            virtual const ::Eigen::Matrix&lt;std::complex&lt;double&gt;, 2, 2, 0, 2, 2&gt;&amp; get_UP() const =0;
+            virtual const ::Eigen::Matrix&lt;std::complex&lt;double&gt;, 2, 2, 0&gt;&amp; get_UP() const =0;
    
             virtual const ::std::complex&lt;double&gt;&amp; get_UP(int, int) const =0;
    
-            virtual void set_PhaseGlu(::std::complex&lt;double&gt;) =0;
+            virtual void set_PhaseGlu(std::complex&lt;double&gt;) =0;
    
             virtual ::std::complex&lt;double&gt; get_PhaseGlu() const =0;
    
@@ -318,59 +318,59 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
    
             virtual void calculate_MSvtL() =0;
    
-            virtual ::Eigen::Matrix&lt;double, 2, 2, 0, 2, 2&gt; get_mass_matrix_Sd() const =0;
+            virtual ::Eigen::Matrix&lt;double, 2, 2, 0&gt; get_mass_matrix_Sd() const =0;
    
             virtual void calculate_MSd() =0;
    
-            virtual ::Eigen::Matrix&lt;double, 2, 2, 0, 2, 2&gt; get_mass_matrix_Su() const =0;
+            virtual ::Eigen::Matrix&lt;double, 2, 2, 0&gt; get_mass_matrix_Su() const =0;
    
             virtual void calculate_MSu() =0;
    
-            virtual ::Eigen::Matrix&lt;double, 2, 2, 0, 2, 2&gt; get_mass_matrix_Se() const =0;
+            virtual ::Eigen::Matrix&lt;double, 2, 2, 0&gt; get_mass_matrix_Se() const =0;
    
             virtual void calculate_MSe() =0;
    
-            virtual ::Eigen::Matrix&lt;double, 2, 2, 0, 2, 2&gt; get_mass_matrix_Sm() const =0;
+            virtual ::Eigen::Matrix&lt;double, 2, 2, 0&gt; get_mass_matrix_Sm() const =0;
    
             virtual void calculate_MSm() =0;
    
-            virtual ::Eigen::Matrix&lt;double, 2, 2, 0, 2, 2&gt; get_mass_matrix_Stau() const =0;
+            virtual ::Eigen::Matrix&lt;double, 2, 2, 0&gt; get_mass_matrix_Stau() const =0;
    
             virtual void calculate_MStau() =0;
    
-            virtual ::Eigen::Matrix&lt;double, 2, 2, 0, 2, 2&gt; get_mass_matrix_Ss() const =0;
+            virtual ::Eigen::Matrix&lt;double, 2, 2, 0&gt; get_mass_matrix_Ss() const =0;
    
             virtual void calculate_MSs() =0;
    
-            virtual ::Eigen::Matrix&lt;double, 2, 2, 0, 2, 2&gt; get_mass_matrix_Sc() const =0;
+            virtual ::Eigen::Matrix&lt;double, 2, 2, 0&gt; get_mass_matrix_Sc() const =0;
    
             virtual void calculate_MSc() =0;
    
-            virtual ::Eigen::Matrix&lt;double, 2, 2, 0, 2, 2&gt; get_mass_matrix_Sb() const =0;
+            virtual ::Eigen::Matrix&lt;double, 2, 2, 0&gt; get_mass_matrix_Sb() const =0;
    
             virtual void calculate_MSb() =0;
    
-            virtual ::Eigen::Matrix&lt;double, 2, 2, 0, 2, 2&gt; get_mass_matrix_St() const =0;
+            virtual ::Eigen::Matrix&lt;double, 2, 2, 0&gt; get_mass_matrix_St() const =0;
    
             virtual void calculate_MSt() =0;
    
-            virtual ::Eigen::Matrix&lt;double, 2, 2, 0, 2, 2&gt; get_mass_matrix_hh() const =0;
+            virtual ::Eigen::Matrix&lt;double, 2, 2, 0&gt; get_mass_matrix_hh() const =0;
    
             virtual void calculate_Mhh() =0;
    
-            virtual ::Eigen::Matrix&lt;double, 2, 2, 0, 2, 2&gt; get_mass_matrix_Ah() const =0;
+            virtual ::Eigen::Matrix&lt;double, 2, 2, 0&gt; get_mass_matrix_Ah() const =0;
    
             virtual void calculate_MAh() =0;
    
-            virtual ::Eigen::Matrix&lt;double, 2, 2, 0, 2, 2&gt; get_mass_matrix_Hpm() const =0;
+            virtual ::Eigen::Matrix&lt;double, 2, 2, 0&gt; get_mass_matrix_Hpm() const =0;
    
             virtual void calculate_MHpm() =0;
    
-            virtual ::Eigen::Matrix&lt;double, 4, 4, 0, 4, 4&gt; get_mass_matrix_Chi() const =0;
+            virtual ::Eigen::Matrix&lt;double, 4, 4, 0&gt; get_mass_matrix_Chi() const =0;
    
             virtual void calculate_MChi() =0;
    
-            virtual ::Eigen::Matrix&lt;double, 2, 2, 0, 2, 2&gt; get_mass_matrix_Cha() const =0;
+            virtual ::Eigen::Matrix&lt;double, 2, 2, 0&gt; get_mass_matrix_Cha() const =0;
    
             virtual void calculate_MCha() =0;
    
@@ -441,7 +441,7 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 
 #endif /* __abstract_MSSMNoFV_onshell_mass_eigenstates_gm2calc_1_3_0_hpp__ */
-</code></pre><hr><p>Updated on 2022-09-08 at 03:46:49 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.a08b5ca912a508bc013bbd939befee438a0d2f798076e860e42147c7c0e2a01cf714847f7f5a2824876ce72867b0182df10e3537711faff352dd1ef41550be7c.js integrity="sha512-oItcqRKlCLwBO72Tm+/uQ4oNL3mAduhg5CFHx8DioBz3FIR/f1ooJIds5yhnsBgt8Q41N3Efr/NS3R70FVC+fA==" crossorigin=anonymous defer></script>
+</code></pre><hr><p>Updated on 2023-06-26 at 21:36:57 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.a08b5ca912a508bc013bbd939befee438a0d2f798076e860e42147c7c0e2a01cf714847f7f5a2824876ce72867b0182df10e3537711faff352dd1ef41550be7c.js integrity="sha512-oItcqRKlCLwBO72Tm+/uQ4oNL3mAduhg5CFHx8DioBz3FIR/f1ooJIds5yhnsBgt8Q41N3Efr/NS3R70FVC+fA==" crossorigin=anonymous defer></script>
 <script src=/js/highlight.min.ce91dadbce67e8eef36fa222c1c74c99f623c836cf6a316dffa1aeb390ab659d9a20d8145ceac39e049c555414fc360d31315e7980535dc6c03eb5374b7d559d.js integrity="sha512-zpHa285n6O7zb6IiwcdMmfYjyDbPajFt/6Gus5CrZZ2aINgUXOrDngScVVQU/DYNMTFeeYBTXcbAPrU3S31VnQ==" crossorigin=anonymous defer></script>
 <script src=/main.min.57d9a84956f7d60008c47938c7fdd2f75e8618ff1d09c5a5e2b32f91debaf7681f7ceca8b51aded60067c2136172134a91ebc0674487c76a04e3244d927ebdde.js integrity="sha512-V9moSVb31gAIxHk4x/3S916GGP8dCcWl4rMvkd6692gffOyotRre1gBnwhNhchNKkevAZ0SHx2oE4yRNkn693g==" crossorigin=anonymous defer></script>
-<script src=/index.min.2a2f6bd25e0a661102d8769165ef9d3273d4db5ae6edbc62261887d88167016dfb0f6310393f582bcc424de5dc6eab3a529fd305ba4c3afc8e551f0093ed322c.js integrity="sha512-Ki9r0l4KZhEC2HaRZe+dMnPU21rm7bxiJhiH2IFnAW37D2MQOT9YK8xCTeXcbqs6Up/TBbpMOvyOVR8Ak+0yLA==" crossorigin=anonymous defer></script></body></html>
+<script src=/index.min.95720397d55302de0e04fb8f4bf89a7396888a3be86803aa187cbc45924e9c35452b4bef718cd568b25ad872307d8f5537eab4c0045b8043c40628674a4fc53d.js integrity="sha512-lXIDl9VTAt4OBPuPS/iac5aIijvoaAOqGHy8RZJOnDVFK0vvcYzVaLJa2HIwfY9VN+q0wARbgEPEBihnSk/FPQ==" crossorigin=anonymous defer></script></body></html>

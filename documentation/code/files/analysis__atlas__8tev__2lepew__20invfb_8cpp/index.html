@@ -19,12 +19,17 @@ Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle
 #include &quot;gambit/ColliderBit/analyses/Analysis.hpp&quot;
 #include &quot;gambit/ColliderBit/ATLASEfficiencies.hpp&quot;
 #include &quot;gambit/ColliderBit/mt2_bisect.h&quot;
+//#include &quot;gambit/ColliderBit/analyses/Perf_Plot.hpp&quot;
+
+// #define CUTFLOW
+
 
 /* The ATLAS 2 lepton EW analysis (20fb^-1)
 
    based on: arXiv: 1403.5294
 
    Code by Martin White
+   Updated by Kelton Whiteaker, August 2020
 
    Known features: Signal leptons in the paper have certain isolation plus ID cuts (these are ignored here by default)
 
@@ -32,8 +37,10 @@ Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle
 
 */
 
-namespace Gambit {
-  namespace ColliderBit {
+namespace Gambit
+{
+  namespace ColliderBit
+  {
 
     using namespace std;
 
@@ -45,873 +52,1001 @@ namespace Gambit {
 
     bool sortByPT_2lep(const HEPUtils::Particle* lep1, const HEPUtils::Particle* lep2) { return (lep1-&gt;pT() &gt; lep2-&gt;pT()); }
 
-    class Analysis_ATLAS_8TeV_2LEPEW_20invfb : public Analysis {
-    private:
+    class Analysis_ATLAS_8TeV_2LEPEW_20invfb : public Analysis
+    {
+      private:
 
-      // Numbers passing cuts (doubles because we will use the trigger eff)
-      double _num_MT2_90_SF;
-      double _num_MT2_90_DF;
-      double _num_MT2_120_SF;
-      double _num_MT2_120_DF;
-      double _num_MT2_150_SF;
-      double _num_MT2_150_DF;
-      double _num_WWa_SF;
-      double _num_WWa_DF;
-      double _num_WWb_SF;
-      double _num_WWb_DF;
-      double _num_WWc_SF;
-      double _num_WWc_DF;
-      double _num_Zjets;
+        // Numbers passing cuts (doubles because we will use the trigger eff)
+        double _num_MT2_90_SF;
+        double _num_MT2_90_DF;
+        double _num_MT2_120_SF;
+        double _num_MT2_120_DF;
+        double _num_MT2_150_SF;
+        double _num_MT2_150_DF;
+        double _num_WWa_SF;
+        double _num_WWa_DF;
+        double _num_WWb_SF;
+        double _num_WWb_DF;
+        double _num_WWc_SF;
+        double _num_WWc_DF;
+        double _num_Zjets;
 
-      vector&lt;double&gt; cutFlowVector;
-      vector&lt;double&gt; cutFlowIncrements;
-      vector&lt;string&gt; cutFlowVector_str;
-      const static int NCUTS=90;
+        vector&lt;double&gt; cutFlowVector;
+        vector&lt;double&gt; cutFlowIncrements;
+        vector&lt;string&gt; cutFlowVector_str;
+        const static int NCUTS=90;
 
-    public:
+        // Debug histos
+  //      Perf_Plot* plots_mt2_NOmt2_SF;  // SR-mT2, no mt2 cut, SF
+  //      Perf_Plot* plots_mt2_NOmt2_DF;  // SR-mT2, no mt2 cut, DF
+  //      Perf_Plot* plots_Zjets_NOmet_SF;  // SR-Zjets, no met cut, SF
+  //      Perf_Plot* plots_WWa_NOmll_SF;  // SR-WWa, no mll cut, SF
+  //      Perf_Plot* plots_WWa_NOmll_DF;  // SR-WWa, no mll cut, DF
+  //      Perf_Plot* plots_WWa_NOmllORmet_SF;  // SR-WWa, no mll cut or met cut, SF
+  //      Perf_Plot* plots_WWa_NOmllORmet_DF;  // SR-WWa, no mll cut or met cut, DF
 
-      // Required detector sim
-      static constexpr const char* detector = &quot;ATLAS&quot;;
+      public:
 
-      Analysis_ATLAS_8TeV_2LEPEW_20invfb() {
+        // Required detector sim
+        static constexpr const char* detector = &quot;ATLAS&quot;;
 
-        set_analysis_name(&quot;ATLAS_8TeV_2LEPEW_20invfb&quot;);
-        set_luminosity(20.3);
+        Analysis_ATLAS_8TeV_2LEPEW_20invfb()
+        {
 
-        _num_MT2_90_SF=0;
-        _num_MT2_90_DF=0;
-        _num_MT2_120_SF=0;
-        _num_MT2_120_DF=0;
-        _num_MT2_150_SF=0;
-        _num_MT2_150_DF=0;
-        _num_WWa_SF=0;
-        _num_WWa_DF=0;
-        _num_WWb_SF=0;
-        _num_WWb_DF=0;
-        _num_WWc_SF=0;
-        _num_WWc_DF=0;
-        _num_Zjets=0;
+          set_analysis_name(&quot;ATLAS_8TeV_2LEPEW_20invfb&quot;);
+          set_luminosity(20.3);
 
-        for(int i=0;i&lt;NCUTS;i++){
-          cutFlowVector.push_back(0);
-          cutFlowVector_str.push_back(&quot;&quot;);
-          cutFlowIncrements.push_back(0.);
-        }
+          _num_MT2_90_SF=0;
+          _num_MT2_90_DF=0;
+          _num_MT2_120_SF=0;
+          _num_MT2_120_DF=0;
+          _num_MT2_150_SF=0;
+          _num_MT2_150_DF=0;
+          _num_WWa_SF=0;
+          _num_WWa_DF=0;
+          _num_WWb_SF=0;
+          _num_WWb_DF=0;
+          _num_WWc_SF=0;
+          _num_WWc_DF=0;
+          _num_Zjets=0;
 
-      }
+          for(int i=0;i&lt;NCUTS;i++)
+          {
+            cutFlowVector.push_back(0);
+            cutFlowVector_str.push_back(&quot;&quot;);
+            cutFlowIncrements.push_back(0.);
 
-      void EleEleOverlapRemoval(vector&lt;const HEPUtils::Particle*&gt; &amp;vec1, vector&lt;const HEPUtils::Particle*&gt; &amp;vec2, double DeltaRMax) {
-        //Routine to do electron-electron overlap check
-        //Discard lowest energy electron if two are found overlapping
-        vector&lt;const HEPUtils::Particle*&gt; Survivors;
+  //        vector&lt;const char*&gt; variablesNames = {&quot;mll&quot;,&quot;met&quot;,&quot;mt2&quot;};
+  //        plots_mt2_NOmt2_SF = new Perf_Plot(analysis_name()+&quot;_SF_SR-mT2_no-mt2-cut&quot;, &amp;variablesNames);
+  //        plots_mt2_NOmt2_DF = new Perf_Plot(analysis_name()+&quot;_DF_SR-mT2_no-mt2-cut&quot;, &amp;variablesNames);
+  //        plots_Zjets_NOmet_SF = new Perf_Plot(analysis_name()+&quot;_SF_SR-Zjets_no-met-cut&quot;, &amp;variablesNames);
+  //        plots_WWa_NOmll_SF = new Perf_Plot(analysis_name()+&quot;_SF_SR-WWa_no-mll-cut&quot;, &amp;variablesNames);
+  //        plots_WWa_NOmll_DF = new Perf_Plot(analysis_name()+&quot;_DF_SR-WWa_no-mll-cut&quot;, &amp;variablesNames);
+  //        plots_WWa_NOmllORmet_SF = new Perf_Plot(analysis_name()+&quot;_SF_SR-WWa_no-mll-met-cuts&quot;, &amp;variablesNames);
+  //        plots_WWa_NOmllORmet_DF = new Perf_Plot(analysis_name()+&quot;_DF_SR-WWa_no-mll-met-cuts&quot;, &amp;variablesNames);
 
-        for(unsigned int it1 = 0; it1 &lt; vec1.size(); it1++) {
-          bool overlap = false;
-          HEPUtils::P4 lep1mom=vec1.at(it1)-&gt;mom();
-          for(unsigned int it2 = 0; it2 &lt; vec2.size(); it2++) {
-            if(it1==it2)continue;
-            HEPUtils::P4 lep2mom=vec2.at(it2)-&gt;mom();
-            double dR;
-
-            dR=lep1mom.deltaR_eta(lep2mom);
-
-            if(fabs(dR) &lt;= DeltaRMax &amp;&amp; lep1mom.E()&lt;lep2mom.E()) overlap=true;
           }
-          if(overlap) continue;
-          Survivors.push_back(vec1.at(it1));
+
         }
-        vec1=Survivors;
 
-        return;
-      }
+        void EleEleOverlapRemoval(vector&lt;const HEPUtils::Particle*&gt; &amp;vec1, vector&lt;const HEPUtils::Particle*&gt; &amp;vec2, double DeltaRMax)
+        {
+          //Routine to do electron-electron overlap check
+          //Discard lowest energy electron if two are found overlapping
+          vector&lt;const HEPUtils::Particle*&gt; Survivors;
 
-      void LepLepOverlapRemoval(vector&lt;const HEPUtils::Particle*&gt; &amp;vec1, vector&lt;const HEPUtils::Particle*&gt; &amp;vec2, double DeltaRMax) {
-        //Routine to do lepton-lepton overlap check
-        //Discard first lepton if overlap is found
-        vector&lt;const HEPUtils::Particle*&gt; Survivors;
+          for(unsigned int it1 = 0; it1 &lt; vec1.size(); it1++)
+          {
+            bool overlap = false;
+            HEPUtils::P4 lep1mom=vec1.at(it1)-&gt;mom();
+            for(unsigned int it2 = 0; it2 &lt; vec2.size(); it2++)
+            {
+              if(it1==it2)continue;
+              HEPUtils::P4 lep2mom=vec2.at(it2)-&gt;mom();
+              double dR;
 
-        for(unsigned int it1 = 0; it1 &lt; vec1.size(); it1++) {
-          bool overlap = false;
-          HEPUtils::P4 lep1mom=vec1.at(it1)-&gt;mom();
-          for(unsigned int it2 = 0; it2 &lt; vec2.size(); it2++) {
-            if(it1==it2)continue;
-            HEPUtils::P4 lep2mom=vec2.at(it2)-&gt;mom();
-            double dR;
+              dR=lep1mom.deltaR_eta(lep2mom);
 
-            dR=lep1mom.deltaR_eta(lep2mom);
-
-            if(fabs(dR) &lt;= DeltaRMax)overlap=true;
+              if(fabs(dR) &lt;= DeltaRMax &amp;&amp; lep1mom.E()&lt;lep2mom.E()) overlap=true;
+            }
+            if(overlap) continue;
+            Survivors.push_back(vec1.at(it1));
           }
-          if(overlap) continue;
-          Survivors.push_back(vec1.at(it1));
+          vec1=Survivors;
+
+          return;
         }
-        vec1=Survivors;
 
-        return;
-      }
+        void LepLepOverlapRemoval(vector&lt;const HEPUtils::Particle*&gt; &amp;vec1, vector&lt;const HEPUtils::Particle*&gt; &amp;vec2, double DeltaRMax)
+        {
+          //Routine to do lepton-lepton overlap check
+          //Discard first lepton if overlap is found
+          vector&lt;const HEPUtils::Particle*&gt; Survivors;
 
-      void JetLeptonOverlapRemoval(vector&lt;const HEPUtils::Jet*&gt; &amp;jetvec, vector&lt;const HEPUtils::Particle*&gt; &amp;lepvec, double DeltaRMax) {
-        //Routine to do jet-lepton check
-        //Discards jets if they are within DeltaRMax of a lepton
+          for(unsigned int it1 = 0; it1 &lt; vec1.size(); it1++)
+          {
+            bool overlap = false;
+            HEPUtils::P4 lep1mom=vec1.at(it1)-&gt;mom();
+            for(unsigned int it2 = 0; it2 &lt; vec2.size(); it2++)
+            {
+              if(it1==it2)continue;
+              HEPUtils::P4 lep2mom=vec2.at(it2)-&gt;mom();
+              double dR;
 
-        vector&lt;const HEPUtils::Jet*&gt; Survivors;
+              dR=lep1mom.deltaR_eta(lep2mom);
 
-        for(unsigned int itjet = 0; itjet &lt; jetvec.size(); itjet++) {
-          bool overlap = false;
-          HEPUtils::P4 jetmom=jetvec.at(itjet)-&gt;mom();
-          for(unsigned int itlep = 0; itlep &lt; lepvec.size(); itlep++) {
-            HEPUtils::P4 lepmom=lepvec.at(itlep)-&gt;mom();
-            double dR=jetmom.deltaR_eta(lepmom);
-
-            if(fabs(dR) &lt;= DeltaRMax) overlap=true;
+              if(fabs(dR) &lt;= DeltaRMax)overlap=true;
+            }
+            if(overlap) continue;
+            Survivors.push_back(vec1.at(it1));
           }
-          if(overlap) continue;
-          Survivors.push_back(jetvec.at(itjet));
+          vec1=Survivors;
+
+          return;
         }
-        jetvec=Survivors;
 
-        return;
-      }
+        void JetLeptonOverlapRemoval(vector&lt;const HEPUtils::Jet*&gt; &amp;jetvec, vector&lt;const HEPUtils::Particle*&gt; &amp;lepvec, double DeltaRMax)
+        {
+          //Routine to do jet-lepton check
+          //Discards jets if they are within DeltaRMax of a lepton
 
-      void LeptonJetOverlapRemoval(vector&lt;const HEPUtils::Particle*&gt; &amp;lepvec, vector&lt;const HEPUtils::Jet*&gt; &amp;jetvec, double DeltaRMax) {
-        //Routine to do lepton-jet check
-        //Discards leptons if they are within DeltaRMax of a jet
+          vector&lt;const HEPUtils::Jet*&gt; Survivors;
 
-        vector&lt;const HEPUtils::Particle*&gt; Survivors;
-
-        for(unsigned int itlep = 0; itlep &lt; lepvec.size(); itlep++) {
-          bool overlap = false;
-          HEPUtils::P4 lepmom=lepvec.at(itlep)-&gt;mom();
-          for(unsigned int itjet= 0; itjet &lt; jetvec.size(); itjet++) {
+          for(unsigned int itjet = 0; itjet &lt; jetvec.size(); itjet++)
+          {
+            bool overlap = false;
             HEPUtils::P4 jetmom=jetvec.at(itjet)-&gt;mom();
-            double dR;
+            for(unsigned int itlep = 0; itlep &lt; lepvec.size(); itlep++)
+            {
+              HEPUtils::P4 lepmom=lepvec.at(itlep)-&gt;mom();
+              double dR=jetmom.deltaR_eta(lepmom);
 
-            dR=jetmom.deltaR_eta(lepmom);
-
-            if(fabs(dR) &lt;= DeltaRMax) overlap=true;
+              if(fabs(dR) &lt;= DeltaRMax) overlap=true;
+            }
+            if(overlap) continue;
+            Survivors.push_back(jetvec.at(itjet));
           }
-          if(overlap) continue;
-          Survivors.push_back(lepvec.at(itlep));
+          jetvec=Survivors;
+
+          return;
         }
-        lepvec=Survivors;
 
-        return;
-      }
+        void LeptonJetOverlapRemoval(vector&lt;const HEPUtils::Particle*&gt; &amp;lepvec, vector&lt;const HEPUtils::Jet*&gt; &amp;jetvec, double DeltaRMax)
+        {
+          //Routine to do lepton-jet check
+          //Discards leptons if they are within DeltaRMax of a jet
 
-      void RemoveLeptonsMllLt12(vector&lt;const HEPUtils::Particle*&gt; &amp;lepvec){
+          vector&lt;const HEPUtils::Particle*&gt; Survivors;
 
-        ssize_t removeLep1=-1;
-        ssize_t removeLep2=-1;
-        vector&lt;const HEPUtils::Particle*&gt; Survivors;
+          for(unsigned int itlep = 0; itlep &lt; lepvec.size(); itlep++)
+          {
+            bool overlap = false;
+            HEPUtils::P4 lepmom=lepvec.at(itlep)-&gt;mom();
+            for(unsigned int itjet= 0; itjet &lt; jetvec.size(); itjet++)
+            {
+              HEPUtils::P4 jetmom=jetvec.at(itjet)-&gt;mom();
+              double dR;
 
-        //Function removes SF lepton pairs with m_ll &lt; 12 GeV
-        for(unsigned int itlep1 = 0; itlep1 &lt; lepvec.size(); itlep1++) {
-          HEPUtils::P4 lepmom1=lepvec.at(itlep1)-&gt;mom();
-          for(unsigned int itlep2= itlep1; itlep2 &lt; lepvec.size(); itlep2++) {
-            if(itlep1!=itlep2){
-              HEPUtils::P4 lepmom2=lepvec.at(itlep2)-&gt;mom();
-              double mass=(lepmom1+lepmom2).m();
-              if(mass&lt;12.){
-                removeLep1=itlep1;
-                removeLep2=itlep2;
+              dR=jetmom.deltaR_eta(lepmom);
+
+              if(fabs(dR) &lt;= DeltaRMax) overlap=true;
+            }
+            if(overlap) continue;
+            Survivors.push_back(lepvec.at(itlep));
+          }
+          lepvec=Survivors;
+
+          return;
+        }
+
+        void RemoveLeptonsMllLt12(vector&lt;const HEPUtils::Particle*&gt; &amp;lepvec)
+        {
+
+          ssize_t removeLep1=-1;
+          ssize_t removeLep2=-1;
+          vector&lt;const HEPUtils::Particle*&gt; Survivors;
+
+          //Function removes SF lepton pairs with m_ll &lt; 12 GeV
+          for(unsigned int itlep1 = 0; itlep1 &lt; lepvec.size(); itlep1++)
+          {
+            HEPUtils::P4 lepmom1=lepvec.at(itlep1)-&gt;mom();
+            for(unsigned int itlep2= itlep1; itlep2 &lt; lepvec.size(); itlep2++)
+            {
+              if(itlep1!=itlep2)
+              {
+                HEPUtils::P4 lepmom2=lepvec.at(itlep2)-&gt;mom();
+                double mass=(lepmom1+lepmom2).m();
+                if(mass&lt;12.)
+                {
+                  removeLep1=itlep1;
+                  removeLep2=itlep2;
+                }
               }
             }
           }
-        }
-        for(unsigned int itlep = 0; itlep &lt; lepvec.size(); itlep++) {
-          if(itlep!=removeLep1 &amp;&amp; itlep!=removeLep2) Survivors.push_back(lepvec.at(itlep));
-        }
-
-        lepvec=Survivors;
-      }
-
-      void run(const HEPUtils::Event* event) {
-
-        // Missing energy
-        HEPUtils::P4 ptot = event-&gt;missingmom();
-        double met = event-&gt;met();
-
-        // Now define vector of baseline electrons
-        vector&lt;const HEPUtils::Particle*&gt; signalElectrons;
-        for (const HEPUtils::Particle* electron : event-&gt;electrons()) {
-          if (electron-&gt;pT() &gt; 10. &amp;&amp; fabs(electron-&gt;eta()) &lt; 2.47) signalElectrons.push_back(electron);
-        }
-
-        // Apply electron efficiency
-        ATLAS::applyElectronEff(signalElectrons);
-
-        // Now define vector of baseline muons
-        vector&lt;const HEPUtils::Particle*&gt; signalMuons;
-        for (const HEPUtils::Particle* muon : event-&gt;muons()) {
-          if (muon-&gt;pT() &gt; 10. &amp;&amp; fabs(muon-&gt;eta()) &lt; 2.4) signalMuons.push_back(muon);
-        }
-
-        // Apply muon efficiency
-        ATLAS::applyMuonEff(signalMuons);
-
-        vector&lt;const HEPUtils::Jet*&gt; signalJets;
-        for (const HEPUtils::Jet* jet : event-&gt;jets()) {
-          if (jet-&gt;pT() &gt; 20. &amp;&amp; fabs(jet-&gt;eta()) &lt; 4.5) signalJets.push_back(jet);
-          //if(jet-&gt;btag() &amp;&amp; fabs(jet-&gt;eta()) &lt; 2.5 &amp;&amp; jet-&gt;pT() &gt; 20.) bJets.push_back(jet);
-        }
-
-        vector&lt;const HEPUtils::Particle*&gt; signalTaus;
-        for (const HEPUtils::Particle* tau : event-&gt;taus()) {
-          if (tau-&gt;pT() &gt; 20. &amp;&amp; tau-&gt;abseta() &lt; 2.5) signalTaus.push_back(tau);
-        }
-        ATLAS::applyTauEfficiencyR1(signalTaus);
-
-        // Overlap removal
-
-        //Note that ATLAS use |eta|&lt;10 for removing jets close to electrons
-        //Then 2.8 is used for the rest of the overlap process
-        //Then the signal cut is applied for signal jets
-
-        EleEleOverlapRemoval(signalElectrons,signalElectrons,0.05);
-        JetLeptonOverlapRemoval(signalJets,signalElectrons,0.2);
-        LepLepOverlapRemoval(signalTaus,signalElectrons,0.2);
-        LepLepOverlapRemoval(signalTaus,signalMuons,0.2);
-        LeptonJetOverlapRemoval(signalElectrons,signalJets,0.4);
-        LeptonJetOverlapRemoval(signalMuons,signalJets,0.4);
-        //Note have not bothered with close-by electron and muon pairs (bremsstrahlung probably not significant in signal MC)
-
-        RemoveLeptonsMllLt12(signalElectrons);
-        RemoveLeptonsMllLt12(signalMuons);
-        JetLeptonOverlapRemoval(signalJets,signalTaus,0.2);
-
-        ATLAS::applyTightIDElectronSelection(signalElectrons);
-
-        int numElectrons=signalElectrons.size();
-        int numMuons=signalMuons.size();
-        int numTaus=signalTaus.size();
-
-        //Search for at least one SFOS pair
-        //m_SFOS must be &gt; 12 GeV
-
-
-        //Classify jets into various categories
-        vector&lt;const HEPUtils::Jet*&gt; centralBJets;
-        vector&lt;const HEPUtils::Jet*&gt; centralNonBJets;
-        vector&lt;const HEPUtils::Jet*&gt; forwardJets;
-
-        const std::vector&lt;double&gt; a = {0,10.};
-        const std::vector&lt;double&gt; b = {0,10000.};
-        const std::vector&lt;double&gt; c = {0.8};
-        HEPUtils::BinnedFn2D&lt;double&gt; _eff2d(a,b,c);
-
-        for (const HEPUtils::Jet* jet : signalJets) {
-          bool hasTag=has_tag(_eff2d, jet-&gt;abseta(), jet-&gt;pT());
-          if(fabs(jet-&gt;eta()) &lt; 2.4){
-            if(jet-&gt;btag() &amp;&amp; hasTag){
-              centralBJets.push_back(jet);
-            }
-            else {
-              centralNonBJets.push_back(jet);
-            }
-          }
-          if(fabs(jet-&gt;eta()) &gt; 2.4 &amp;&amp; jet-&gt;pT()&gt;30.)forwardJets.push_back(jet);
-        }
-
-        //Common cuts for all signal regions
-
-        bool leptonPTCut=false;
-        vector&lt;const HEPUtils::Particle*&gt; signalLeptons;
-        for (const HEPUtils::Particle* ele : signalElectrons) {
-          signalLeptons.push_back(ele);
-        }
-
-        for (const HEPUtils::Particle* muo : signalMuons) {
-          signalLeptons.push_back(muo);
-        }
-
-        std::sort(signalLeptons.begin(), signalLeptons.end(), sortByPT_2lep);
-
-
-        if(signalLeptons.size()==2 &amp;&amp; signalLeptons[0]-&gt;pT()&gt;35. &amp;&amp; signalLeptons[1]-&gt;pT()&gt;20.)leptonPTCut=true;
-
-        bool mllCut=false;
-        if(signalLeptons.size()==2 &amp;&amp; (signalLeptons[0]-&gt;mom()+signalLeptons[1]-&gt;mom()).m() &gt; 20.)mllCut=true;
-
-        bool isOS=false;
-        if(signalLeptons.size()==2 &amp;&amp; (signalLeptons[0]-&gt;pid()*signalLeptons[1]-&gt;pid()&lt;0))isOS=true;
-
-        bool passZVeto=true;
-        double mLepLep=0.;
-        if(signalLeptons.size()==2)mLepLep=(signalLeptons[0]-&gt;mom()+signalLeptons[1]-&gt;mom()).m();
-        if(mLepLep&gt;81.2 &amp;&amp; mLepLep&lt;101.2)passZVeto=false;
-
-        bool cut_SRMT290=false;
-        bool cut_SRMT2120=false;
-        bool cut_SRMT2150=false;
-
-        bool tauVeto=false;
-        if(numTaus==0)tauVeto=true;
-
-        int numCentralNonBJets=centralNonBJets.size();
-        int numCentralBJets=centralBJets.size();
-        int numForwardJets=forwardJets.size();
-
-        //Now do the MT2 signal regions
-
-        if(leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; tauVeto &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0){
-
-          //Calculate MT2
-          double pa[3] = { 0, signalLeptons[0]-&gt;mom().px(), signalLeptons[0]-&gt;mom().py() };
-          double pb[3] = { 0, signalLeptons[1]-&gt;mom().px(), signalLeptons[1]-&gt;mom().py() };
-          double pmiss[3] = { 0, ptot.px(), ptot.py() };
-          double mn = 0.;
-
-          mt2_bisect::mt2 mt2_calc;
-
-          mt2_calc.set_momenta(pa,pb,pmiss);
-          mt2_calc.set_mn(mn);
-          double mt2 = mt2_calc.get_mt2();
-
-          double mll=(signalLeptons[0]-&gt;mom() + signalLeptons[1]-&gt;mom()).m();
-
-
-          if(mt2&gt;90.)cut_SRMT290=true;
-          if(mt2&gt;120.)cut_SRMT2120=true;
-          if(mt2&gt;150.)cut_SRMT2150=true;
-
-          //Signal region increments use the trigger efficiencies for ee, emu and mumu triggers
-          if(mt2 &gt; 90. &amp;&amp; (numElectrons==1 &amp;&amp; numMuons==1)) _num_MT2_90_DF += event-&gt;weight() * 0.89;
-          if(passZVeto &amp;&amp; mt2 &gt; 90. &amp;&amp; (numElectrons==2 &amp;&amp; fabs(mll-91.)&gt;10)) _num_MT2_90_SF += event-&gt;weight() * 0.97;
-          if(passZVeto &amp;&amp; mt2 &gt; 90. &amp;&amp; (numMuons==2 &amp;&amp; fabs(mll-91.)&gt;10)) _num_MT2_90_SF += event-&gt;weight() * 0.75;
-
-          if(mt2 &gt; 120. &amp;&amp; (numElectrons==1 &amp;&amp; numMuons==1)) _num_MT2_120_DF += event-&gt;weight() * 0.89;
-          if(passZVeto &amp;&amp; mt2 &gt; 120. &amp;&amp; (numElectrons==2 &amp;&amp; fabs(mll-91.)&gt;10)) _num_MT2_120_SF += event-&gt;weight() * 0.97;
-          if(passZVeto &amp;&amp; mt2 &gt; 120. &amp;&amp;  (numMuons==2 &amp;&amp; fabs(mll-91.)&gt;10)) _num_MT2_120_SF += event-&gt;weight() * 0.75;
-
-          if(mt2 &gt; 150. &amp;&amp; (numElectrons==1 &amp;&amp; numMuons==1)) _num_MT2_150_DF += event-&gt;weight() * 0.89;
-          if(passZVeto &amp;&amp; mt2 &gt; 150. &amp;&amp; (numElectrons==2 &amp;&amp; fabs(mll-91.)&gt;10)) _num_MT2_150_SF += event-&gt;weight() * 0.97;
-          if(passZVeto &amp;&amp; mt2 &gt; 150. &amp;&amp; (numMuons==2 &amp;&amp; fabs(mll-91.)&gt;10)) _num_MT2_150_SF += event-&gt;weight() * 0.75;
-
-        }
-
-        //Now do the WW channels
-        bool passZVeto_WWa=false;
-        bool passPTll_WWa=false;
-        bool passMetRel_WWa=false;
-        bool passMll_WWa=false;
-
-        bool passMT2_WWb=false;
-        bool passMT2_WWc=false;
-        bool passMll_WWb=false;
-
-        if(leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; tauVeto &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0){
-
-          //Calculate ETmiss_rel
-          double dPhiMin=9999;
-          for(const HEPUtils::Jet* jet : centralBJets){
-            double dphi=fabs(jet-&gt;mom().deltaPhi(ptot));
-            if(fabs(dphi)&lt;dPhiMin)dPhiMin=dphi;
+          for(unsigned int itlep = 0; itlep &lt; lepvec.size(); itlep++)
+          {
+            if(itlep!=removeLep1 &amp;&amp; itlep!=removeLep2) Survivors.push_back(lepvec.at(itlep));
           }
 
-          for(const HEPUtils::Jet* jet : centralNonBJets){
-            double dphi=fabs(jet-&gt;mom().deltaPhi(ptot));
-            if(fabs(dphi)&lt;dPhiMin)dPhiMin=dphi;
-          }
-
-          for(const HEPUtils::Particle* lep : signalLeptons){
-            double dphi=fabs(lep-&gt;mom().deltaPhi(ptot));
-            if(fabs(dphi)&lt;dPhiMin)dPhiMin=dphi;
-          }
-
-          double ETmiss_rel=0;
-          if(dPhiMin&lt;(3.14/2)){
-            ETmiss_rel=met*sin(dPhiMin);
-          }
-          else {
-            ETmiss_rel=met;
-          }
-
-          //Calculate MT2
-          double pa[3] = { 0, signalLeptons[0]-&gt;mom().px(), signalLeptons[0]-&gt;mom().py() };
-          double pb[3] = { 0, signalLeptons[1]-&gt;mom().px(), signalLeptons[1]-&gt;mom().py() };
-          double pmiss[3] = { 0, ptot.px(), ptot.py() };
-          double mn = 0.;
-
-          mt2_bisect::mt2 mt2_calc;
-
-          mt2_calc.set_momenta(pa,pb,pmiss);
-          mt2_calc.set_mn(mn);
-          double mt2 = mt2_calc.get_mt2();
-
-          double mll=(signalLeptons[0]-&gt;mom() + signalLeptons[1]-&gt;mom()).m();
-
-          //Variables for cutflow debugging
-
-          if(fabs(mll-91.)&gt;10.)passZVeto_WWa=true;
-          if((signalLeptons[0]-&gt;mom() + signalLeptons[1]-&gt;mom()).pT() &gt; 80.)passPTll_WWa=true;
-          if(ETmiss_rel &gt; 80.)passMetRel_WWa=true;
-          if(mll &lt; 120.) passMll_WWa=true;
-
-          if(mt2 &gt; 90.)passMT2_WWb=true;
-          if(mll &lt; 170.)passMll_WWb=true;
-
-          if(mt2 &gt; 100.)passMT2_WWc=true;
-
-
-          if((signalLeptons[0]-&gt;mom() + signalLeptons[1]-&gt;mom()).pT() &gt; 80. &amp;&amp;
-             ETmiss_rel &gt; 80. &amp;&amp;
-             mll &lt; 120. &amp;&amp;
-             (numElectrons==1 &amp;&amp; numMuons==1)) _num_WWa_DF += event-&gt;weight() * 0.89;
-
-          if((signalLeptons[0]-&gt;mom() + signalLeptons[1]-&gt;mom()).pT() &gt; 80. &amp;&amp;
-             ETmiss_rel &gt; 80. &amp;&amp;
-             mll &lt; 120. &amp;&amp;
-             (numElectrons==2 &amp;&amp; fabs(mll-91.)&gt;10.)) _num_WWa_SF += event-&gt;weight() * 0.97;
-
-          if((signalLeptons[0]-&gt;mom() + signalLeptons[1]-&gt;mom()).pT() &gt; 80. &amp;&amp;
-             ETmiss_rel &gt; 80. &amp;&amp;
-             mll &lt; 120. &amp;&amp;
-             (numMuons==2 &amp;&amp; fabs(mll-91.)&gt;10.)) _num_WWa_SF += event-&gt;weight() * 0.75;
-
-          if(mt2 &gt; 90. &amp;&amp;
-             mll &lt; 170. &amp;&amp;
-             (numElectrons==1 &amp;&amp; numMuons==1)) _num_WWb_DF += event-&gt;weight() * 0.89;
-
-          if(mt2 &gt; 90. &amp;&amp;
-             mll &lt; 170. &amp;&amp;
-             (numElectrons==2 &amp;&amp; fabs(mll-91.)&gt;10.)) _num_WWb_SF += event-&gt;weight() * 0.97;
-
-
-          if(mt2 &gt; 90. &amp;&amp;
-             mll &lt; 170. &amp;&amp;
-             (numMuons==2 &amp;&amp; fabs(mll-91.)&gt;10.)) _num_WWb_SF += event-&gt;weight() * 0.75;
-
-          if(mt2 &gt; 100. &amp;&amp; (numElectrons==1 &amp;&amp; numMuons==1)) _num_WWc_DF += event-&gt;weight() * 0.89;
-
-          if(mt2 &gt; 100. &amp;&amp; (numElectrons==2 &amp;&amp; fabs(mll-91.)&gt;10.)) _num_WWc_SF += event-&gt;weight() * 0.97;
-
-          if(mt2 &gt; 100. &amp;&amp; (numMuons==2 &amp;&amp; fabs(mll-91.)&gt;10.)) _num_WWc_SF += event-&gt;weight() * 0.75;
-
+          lepvec=Survivors;
         }
 
-        //Finally, do the Z+jets signal region
-
-        bool passZWindow=true;
-        bool passPTll=true;
-        bool passETmissRel=true;
-        bool passdRll=true;
-        bool passMjj=true;
-        bool passJetPT=true;
-
-        if(leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; tauVeto &amp;&amp; numCentralNonBJets&gt;=2 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0){
-
-          double mll=(signalLeptons[0]-&gt;mom() + signalLeptons[1]-&gt;mom()).m();
-
-          //Calculate ETmiss_rel
-          double dPhiMin=9999;
-          for(const HEPUtils::Jet* jet : centralBJets){
-            double dphi=jet-&gt;mom().deltaPhi(ptot);
-            if(dphi&lt;dPhiMin)dPhiMin=dphi;
-          }
-
-          for(const HEPUtils::Jet* jet : centralNonBJets){
-            double dphi=jet-&gt;mom().deltaPhi(ptot);
-            if(dphi&lt;dPhiMin)dPhiMin=dphi;
-          }
-
-          for(const HEPUtils::Particle* lep : signalLeptons){
-            double dphi=lep-&gt;mom().deltaPhi(ptot);
-            if(dphi&lt;dPhiMin)dPhiMin=dphi;
-          }
-
-          double ETmiss_rel=0;
-          if(dPhiMin&lt;(3.14/2)){
-            ETmiss_rel=met*sin(dPhiMin);
-          }
-          else {
-            ETmiss_rel=met;
-          }
-
-
-          double dRll = signalLeptons[0]-&gt;mom().deltaR_eta(signalLeptons[1]-&gt;mom());
-
-          double mjj = (centralNonBJets[0]-&gt;mom()+centralNonBJets[1]-&gt;mom()).m();
-
-
-          //Cuts for cutflow debugging
-          if(ETmiss_rel&lt;=80.)passETmissRel=false;
-          if(fabs(mll-91.)&gt;10.)passZWindow=false;
-          if((signalLeptons[0]-&gt;mom()+signalLeptons[1]-&gt;mom()).pT()&lt;=80.)passPTll=false;
-          if(!(dRll &gt; 0.3 &amp;&amp; dRll &lt; 1.5))passdRll=false;
-          if(!(mjj &gt; 50. &amp;&amp; mjj&lt;100.))passMjj=false;
-          if(!(centralNonBJets[0]-&gt;pT()&gt;45. &amp;&amp; centralNonBJets[1]-&gt;pT()&gt;45.))passJetPT=false;
-
-          if(fabs(mll-91.)&lt;10 &amp;&amp; ETmiss_rel&gt;80. &amp;&amp; (signalLeptons[0]-&gt;mom()+signalLeptons[1]-&gt;mom()).pT()&gt;80. &amp;&amp; dRll &gt; 0.3 &amp;&amp; dRll &lt; 1.5 &amp;&amp; mjj &gt; 50. &amp;&amp; mjj&lt;100. &amp;&amp; passJetPT &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0)) _num_Zjets += event-&gt;weight() * 0.97;
-
-          if(fabs(mll-91.)&lt;10 &amp;&amp; ETmiss_rel&gt;80. &amp;&amp; (signalLeptons[0]-&gt;mom()+signalLeptons[1]-&gt;mom()).pT()&gt;80. &amp;&amp; dRll &gt; 0.3 &amp;&amp; dRll &lt; 1.5 &amp;&amp; mjj &gt; 50. &amp;&amp; mjj&lt;100. &amp;&amp; passJetPT &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2)) _num_Zjets += event-&gt;weight() * 0.75;
-
-        }
-
-        cutFlowVector_str[0] = &quot;No cuts &quot;;
-        cutFlowVector_str[1] = &quot;2 electrons &quot;;
-        cutFlowVector_str[2] = &quot;Lepton pT cuts (trigger) &quot;;
-        cutFlowVector_str[3] = &quot;mll cuts &quot;;
-        cutFlowVector_str[4] = &quot;OS leptons &quot;;
-        cutFlowVector_str[5] = &quot;tau veto &quot;;
-        cutFlowVector_str[6] = &quot;e+e-: Jet veto &quot;;
-        cutFlowVector_str[7] = &quot;e+e-: Z veto &quot;;
-        cutFlowVector_str[8] = &quot;e+e-: SR-MT290 &quot;;
-        cutFlowVector_str[9] = &quot;e+e-: SR-MT2120 &quot;;
-        cutFlowVector_str[10] = &quot;e+e-: SR-MT2150 &quot;;
-        cutFlowVector_str[11] = &quot;mu+mu-: 2 signal leptons &quot;;
-        cutFlowVector_str[12] = &quot;mu+mu-: Jet veto &quot;;
-        cutFlowVector_str[13] = &quot;mu+mu-: Z veto &quot;;
-        cutFlowVector_str[14] = &quot;mu+mu-: SR-MT290 &quot;;
-        cutFlowVector_str[15] = &quot;mu+mu-: SR-MT2120 &quot;;
-        cutFlowVector_str[16] = &quot;mu+mu-: SR-MT2150 &quot;;
-        cutFlowVector_str[17] = &quot;e+-mu-+: 2 signal leptons &quot;;
-        cutFlowVector_str[18] = &quot;e+-mu-+: Jet veto &quot;;
-        cutFlowVector_str[19] = &quot;e+-mu-+: Z veto &quot;;
-        cutFlowVector_str[20] = &quot;e+-mu-+: SR-MT290 &quot;;
-        cutFlowVector_str[21] = &quot;e+-mu-+: SR-MT2120 &quot;;
-        cutFlowVector_str[22] = &quot;e+-mu-+: SR-MT2150 &quot;;
-        cutFlowVector_str[23] = &quot;SRZjets e+e-: 2 signal leptons &quot;;
-        cutFlowVector_str[24] = &quot;SRZjets e+e-: &gt;=2 light jets &quot;;
-        cutFlowVector_str[25] = &quot;SRZjets e+e-: No b and forward jets &quot;;
-        cutFlowVector_str[26] = &quot;SRZjets e+e-: Z window &quot;;
-        cutFlowVector_str[27] = &quot;SRZjets e+e-: pTll &gt; 80 &quot;;
-        cutFlowVector_str[28] = &quot;SRZjets e+e-: ETmissrel &quot;;
-        cutFlowVector_str[29] = &quot;SRZjets e+e-: dRll &quot;;
-        cutFlowVector_str[30] = &quot;SRZjets e+e-: mjj &quot;;
-        cutFlowVector_str[31] = &quot;SRZjets e+e-: jet pT &quot;;
-        cutFlowVector_str[32] = &quot;SRZjets mu+mu-: 2 signal leptons &quot;;
-        cutFlowVector_str[33] = &quot;SRZjets mu+mu-: &gt;=2 light jets &quot;;
-        cutFlowVector_str[34] = &quot;SRZjets mu+mu-: No b and forward jets &quot;;
-        cutFlowVector_str[35] = &quot;SRZjets mu+mu-: Z window &quot;;
-        cutFlowVector_str[36] = &quot;SRZjets mu+mu-: pTll &gt; 80 &quot;;
-        cutFlowVector_str[37] = &quot;SRZjets mu+mu-: ETmissrel &quot;;
-        cutFlowVector_str[38] = &quot;SRZjets mu+mu-: dRll &quot;;
-        cutFlowVector_str[39] = &quot;SRZjets mu+mu-: mjj &quot;;
-        cutFlowVector_str[40] = &quot;SRZjets mu+mu-: jet pT &quot;;
-        cutFlowVector_str[41] = &quot;SRWWa e+e-: 2 leptons &quot;;
-        cutFlowVector_str[42] = &quot;SRWWa e+e-: Jet veto &quot;;
-        cutFlowVector_str[43] = &quot;SRWWa e+e-: Z veto &quot;;
-        cutFlowVector_str[44] = &quot;SRWWa e+e-: pTll &quot;;
-        cutFlowVector_str[45] = &quot;SRWWa e+e-: ETmissrel &quot;;
-        cutFlowVector_str[46] = &quot;SRWWa e+e-: mll &quot;;
-        cutFlowVector_str[47] = &quot;SRWWa mu+mu-: 2 leptons &quot;;
-        cutFlowVector_str[48] = &quot;SRWWa mu+mu-: Jet veto &quot;;
-        cutFlowVector_str[49] = &quot;SRWWa mu+mu-: Z veto &quot;;
-        cutFlowVector_str[50] = &quot;SRWWa mu+mu-: pTll &quot;;
-        cutFlowVector_str[51] = &quot;SRWWa mu+mu-: ETmissrel &quot;;
-        cutFlowVector_str[52] = &quot;SRWWa mu+mu-: mll &quot;;
-        cutFlowVector_str[53] = &quot;SRWWa e+mu-: 2 leptons &quot;;
-        cutFlowVector_str[54] = &quot;SRWWa e+mu-: Jet veto &quot;;
-        cutFlowVector_str[55] = &quot;SRWWa e+mu-: pTll &quot;;
-        cutFlowVector_str[56] = &quot;SRWWa e+mu-: ETmissrel &quot;;
-        cutFlowVector_str[57] = &quot;SRWWa e+mu-: mll &quot;;
-        cutFlowVector_str[58] = &quot;SRWWb e+e-: 2 leptons &quot;;
-        cutFlowVector_str[59] = &quot;SRWWb e+e-: Jet veto &quot;;
-        cutFlowVector_str[60] = &quot;SRWWb e+e-: Z veto &quot;;
-        cutFlowVector_str[61] = &quot;SRWWb e+e-: mT2 &gt; 90 &quot;;
-        cutFlowVector_str[62] = &quot;SRWWb e+e-: mll &lt; 170 &quot;;
-        cutFlowVector_str[63] = &quot;SRWWb mu+mu-: 2 leptons &quot;;
-        cutFlowVector_str[64] = &quot;SRWWb mu+mu-: Jet veto &quot;;
-        cutFlowVector_str[65] = &quot;SRWWb mu+mu-: Z veto &quot;;
-        cutFlowVector_str[66] = &quot;SRWWb mu+mu-: mT2 &gt; 90 &quot;;
-        cutFlowVector_str[67] = &quot;SRWWb mu+mu-: mll &lt; 170 &quot;;
-        cutFlowVector_str[68] = &quot;SRWWb e+mu-: 2 leptons &quot;;
-        cutFlowVector_str[69] = &quot;SRWWb e+mu-: Jet veto &quot;;
-        cutFlowVector_str[70] = &quot;SRWWb e+mu-: mT2 &gt; 90 &quot;;
-        cutFlowVector_str[71] = &quot;SRWWb e+mu-: mll &lt; 170 &quot;;
-        cutFlowVector_str[72] = &quot;SRWWc e+e-: 2 leptons &quot;;
-        cutFlowVector_str[73] = &quot;SRWWc e+e-: Jet veto &quot;;
-        cutFlowVector_str[74] = &quot;SRWWc e+e-: Z veto &quot;;
-        cutFlowVector_str[75] = &quot;SRWWc e+e-: mT2 &gt; 100 &quot;;
-        cutFlowVector_str[76] = &quot;SRWWc mu+mu-: 2 leptons &quot;;
-        cutFlowVector_str[77] = &quot;SRWWc mu+mu-: Jet veto &quot;;
-        cutFlowVector_str[78] = &quot;SRWWc mu+mu-: Z veto &quot;;
-        cutFlowVector_str[79] = &quot;SRWWc mu+mu-: mT2 &gt; 100 &quot;;
-        cutFlowVector_str[80] = &quot;SRWWc e+mu-: 2 leptons &quot;;
-        cutFlowVector_str[81] = &quot;SRWWc e+mu-: Jet veto &quot;;
-        cutFlowVector_str[82] = &quot;SRWWc e+mu-: mT2 &gt; 100 &quot;;
-
-        for(int j=0;j&lt;NCUTS;j++){
-          if(j&gt;=0 &amp;&amp; j&lt;=10)cutFlowIncrements[j]=0.97;
-          if(j&gt;=11 &amp;&amp; j&lt;=16)cutFlowIncrements[j]=0.75;
-          if(j&gt;=17 &amp;&amp; j&lt;=22)cutFlowIncrements[j]=0.89;
-
-          if(j&gt;=23 &amp;&amp; j&lt;=31)cutFlowIncrements[j]=0.97;
-          if(j&gt;=32 &amp;&amp; j&lt;=40)cutFlowIncrements[j]=0.75;
-
-          if(j&gt;=41 &amp;&amp; j&lt;=46)cutFlowIncrements[j]=0.97;
-          if(j&gt;=47 &amp;&amp; j&lt;=52)cutFlowIncrements[j]=0.75;
-          if(j&gt;=53 &amp;&amp; j&lt;=57)cutFlowIncrements[j]=0.89;
-
-          if(j&gt;=58 &amp;&amp; j&lt;=62)cutFlowIncrements[j]=0.97;
-          if(j&gt;=63 &amp;&amp; j&lt;=67)cutFlowIncrements[j]=0.75;
-          if(j&gt;=68 &amp;&amp; j&lt;=71)cutFlowIncrements[j]=0.89;
-
-          if(j&gt;=72 &amp;&amp; j&lt;=75)cutFlowIncrements[j]=0.97;
-          if(j&gt;=76 &amp;&amp; j&lt;=79)cutFlowIncrements[j]=0.75;
-          if(j&gt;=80 &amp;&amp; j&lt;=82)cutFlowIncrements[j]=0.89;
-        }
-
-
-        for(int j=0;j&lt;NCUTS;j++){
-          if( (j==0) ||
-
-              (j==1 &amp;&amp; signalElectrons.size()==2) ||
-
-              (j==2 &amp;&amp; signalElectrons.size()==2 &amp;&amp; leptonPTCut) ||
-
-              (j==3 &amp;&amp; signalElectrons.size()==2 &amp;&amp; leptonPTCut &amp;&amp; mllCut) ||
-
-              (j==4 &amp;&amp; signalElectrons.size()==2 &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS) ||
-
-              (j==5 &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; signalElectrons.size()==2 &amp;&amp; tauVeto) ||
-
-              (j==6 &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; signalElectrons.size()==2 &amp;&amp; tauVeto &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0) ||
-
-              (j==7 &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; signalElectrons.size()==2 &amp;&amp; tauVeto &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto) ||
-
-              (j==8 &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; signalElectrons.size()==2 &amp;&amp; tauVeto &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto &amp;&amp; cut_SRMT290) ||
-
-              (j==9 &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; signalElectrons.size()==2 &amp;&amp; tauVeto &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto &amp;&amp; cut_SRMT2120) ||
-
-              (j==10 &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; signalElectrons.size()==2 &amp;&amp; tauVeto &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto &amp;&amp; cut_SRMT2150) ||
-
-              //mumu MT2 regions
-
-              (j==11 &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; signalMuons.size()==2 &amp;&amp; tauVeto) ||
-
-              (j==12 &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; tauVeto &amp;&amp; signalMuons.size()==2 &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0) ||
-
-              (j==13 &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; tauVeto &amp;&amp; signalMuons.size()==2 &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto) ||
-
-              (j==14 &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; tauVeto &amp;&amp; signalMuons.size()==2 &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto &amp;&amp; cut_SRMT290) ||
-
-              (j==15 &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; tauVeto &amp;&amp; signalMuons.size()==2 &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto &amp;&amp; cut_SRMT2120) ||
-
-              (j==16 &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; tauVeto &amp;&amp; signalMuons.size()==2 &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto &amp;&amp; cut_SRMT2150) ||
-
-              //emu MT2 regions
-
-              (j==17 &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; tauVeto &amp;&amp; signalElectrons.size()==1 &amp;&amp; signalMuons.size()==1 &amp;&amp; (signalElectrons[0]-&gt;pid()*signalMuons[0]-&gt;pid())&lt;0 &amp;&amp; tauVeto) ||
-
-              (j==18 &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; tauVeto &amp;&amp; signalElectrons.size()==1 &amp;&amp; signalMuons.size()==1 &amp;&amp; (signalElectrons[0]-&gt;pid()*signalMuons[0]-&gt;pid())&lt;0 &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0) ||
-
-              (j==19 &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; tauVeto &amp;&amp; signalElectrons.size()==1 &amp;&amp; signalMuons.size()==1 &amp;&amp; (signalElectrons[0]-&gt;pid()*signalMuons[0]-&gt;pid())&lt;0 &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto) ||
-
-              (j==20 &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; tauVeto &amp;&amp; signalElectrons.size()==1 &amp;&amp; signalMuons.size()==1 &amp;&amp; (signalElectrons[0]-&gt;pid()*signalMuons[0]-&gt;pid())&lt;0 &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto &amp;&amp; cut_SRMT290) ||
-
-              (j==21 &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; tauVeto &amp;&amp; signalElectrons.size()==1 &amp;&amp; signalMuons.size()==1 &amp;&amp; (signalElectrons[0]-&gt;pid()*signalMuons[0]-&gt;pid())&lt;0 &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto &amp;&amp; cut_SRMT2120) ||
-
-              (j==22 &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; tauVeto &amp;&amp; signalElectrons.size()==1 &amp;&amp; signalMuons.size()==1 &amp;&amp; (signalElectrons[0]-&gt;pid()*signalMuons[0]-&gt;pid())&lt;0 &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto &amp;&amp; cut_SRMT2150) ||
-
-              //Start SR Z jets e+e-
-              (j==23 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0)) ||
-
-              (j==24 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0) &amp;&amp; numCentralNonBJets&gt;=2) ||
-
-              (j==25 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0) &amp;&amp; numCentralNonBJets&gt;=2 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0) ||
-
-              (j==26 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0) &amp;&amp; numCentralNonBJets&gt;=2 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZWindow) ||
-
-              (j==27 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0) &amp;&amp; numCentralNonBJets&gt;=2 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZWindow &amp;&amp; passPTll) ||
-
-              (j==28 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0) &amp;&amp; numCentralNonBJets&gt;=2 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZWindow &amp;&amp; passPTll &amp;&amp; passETmissRel) ||
-
-              (j==29 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0) &amp;&amp; numCentralNonBJets&gt;=2 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZWindow &amp;&amp; passPTll &amp;&amp; passETmissRel &amp;&amp; passdRll) ||
-
-              (j==30 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0) &amp;&amp; numCentralNonBJets&gt;=2 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZWindow &amp;&amp; passPTll &amp;&amp; passETmissRel &amp;&amp; passdRll &amp;&amp; passMjj) ||
-
-              (j==31 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0) &amp;&amp; numCentralNonBJets&gt;=2 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZWindow &amp;&amp; passPTll &amp;&amp; passETmissRel &amp;&amp; passdRll &amp;&amp; passMjj &amp;&amp; passJetPT) ||
-
-              //Start SR Z jets mu+mu-
-              (j==32 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2)) ||
-
-              (j==33 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2) &amp;&amp; numCentralNonBJets&gt;=2) ||
-
-              (j==34 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2) &amp;&amp; numCentralNonBJets&gt;=2 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0) ||
-
-              (j==35 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2) &amp;&amp; numCentralNonBJets&gt;=2 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZWindow) ||
-
-              (j==36 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2) &amp;&amp; numCentralNonBJets&gt;=2 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZWindow &amp;&amp; passPTll) ||
-
-              (j==37 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2) &amp;&amp; numCentralNonBJets&gt;=2 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZWindow &amp;&amp; passPTll &amp;&amp; passETmissRel) ||
-
-              (j==38 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2) &amp;&amp; numCentralNonBJets&gt;=2 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZWindow &amp;&amp; passPTll &amp;&amp; passETmissRel &amp;&amp; passdRll) ||
-
-              (j==39 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2) &amp;&amp; numCentralNonBJets&gt;=2 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZWindow &amp;&amp; passPTll &amp;&amp; passETmissRel &amp;&amp; passdRll &amp;&amp; passMjj) ||
-
-              (j==40 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2) &amp;&amp; numCentralNonBJets&gt;=2 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZWindow &amp;&amp; passPTll &amp;&amp; passETmissRel &amp;&amp; passdRll &amp;&amp; passMjj &amp;&amp; passJetPT) ||
-
-              //Now start WWa e+e-
-              (j==41 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0)) ||
-
-              (j==42 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0) ||
-
-              (j==43 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto_WWa) ||
-
-              (j==44 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto_WWa &amp;&amp; passPTll_WWa) ||
-
-              (j==45 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto_WWa &amp;&amp; passPTll_WWa &amp;&amp; passMetRel_WWa) ||
-
-              (j==46 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto_WWa &amp;&amp; passPTll_WWa &amp;&amp; passMetRel_WWa &amp;&amp; passMll_WWa) ||
-
-              //Now start WWa mu+mu-
-              (j==47 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2)) ||
-
-              (j==48 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0) ||
-
-              (j==49 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto_WWa) ||
-
-              (j==50 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto_WWa &amp;&amp; passPTll_WWa) ||
-
-              (j==51 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto_WWa &amp;&amp; passPTll_WWa &amp;&amp; passMetRel_WWa) ||
-
-              (j==52 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto_WWa &amp;&amp; passPTll_WWa &amp;&amp; passMetRel_WWa &amp;&amp; passMll_WWa) ||
-
-              //Now start WWa e+mu-
-              (j==53 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==1 &amp;&amp; numMuons==1)) ||
-
-              (j==54 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==1 &amp;&amp; numMuons==1) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0) ||
-
-              (j==55 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==1 &amp;&amp; numMuons==1) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto_WWa &amp;&amp; passPTll_WWa) ||
-
-              (j==56 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==1 &amp;&amp; numMuons==1) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto_WWa &amp;&amp; passPTll_WWa &amp;&amp; passMetRel_WWa) ||
-
-              (j==57 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==1 &amp;&amp; numMuons==1) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto_WWa &amp;&amp; passPTll_WWa &amp;&amp; passMetRel_WWa &amp;&amp; passMll_WWa) ||
-
-              //WWb e+ e-
-              (j==58 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0)) ||
-
-              (j==59 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0) ||
-
-              (j==60 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto_WWa) ||
-
-              (j==61 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto_WWa &amp;&amp; passMT2_WWb) ||
-
-              (j==62 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto_WWa &amp;&amp; passMT2_WWb &amp;&amp; passMll_WWb) ||
-
-              //WWb mu+ mu-
-              (j==63 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2)) ||
-
-              (j==64 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0) ||
-
-              (j==65 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto_WWa) ||
-
-              (j==66 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto_WWa &amp;&amp; passMT2_WWb) ||
-
-              (j==67 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto_WWa &amp;&amp; passMT2_WWb &amp;&amp; passMll_WWb) ||
-
-              //WWb e+mu-
-
-              (j==68 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==1 &amp;&amp; numMuons==1)) ||
-
-              (j==69 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==1 &amp;&amp; numMuons==1) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0) ||
-
-              (j==70 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==1 &amp;&amp; numMuons==1) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto_WWa &amp;&amp; passMT2_WWb) ||
-
-              (j==71 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==1 &amp;&amp; numMuons==1) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto_WWa &amp;&amp; passMT2_WWb &amp;&amp; passMll_WWb) ||
-
-              //WWc e+ e-
-              (j==72 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0)) ||
-
-              (j==73 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0) ||
-
-              (j==74 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto_WWa) ||
-
-              (j==75 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto_WWa &amp;&amp; passMT2_WWc) ||
-
-              //WWc mu+ mu-
-              (j==76 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2)) ||
-
-              (j==77 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0) ||
-
-              (j==78 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto_WWa) ||
-
-              (j==79 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto_WWa &amp;&amp; passMT2_WWc) ||
-
-              //WWc e+mu-
-
-              (j==80 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==1 &amp;&amp; numMuons==1)) ||
-
-              (j==81 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==1 &amp;&amp; numMuons==1) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0) ||
-
-              (j==82 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==1 &amp;&amp; numMuons==1) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto_WWa &amp;&amp; passMT2_WWc)
-
-              )cutFlowVector[j]=cutFlowVector[j]+cutFlowIncrements[j];
-
-        }
-        return;
-      }
-
-      /// Combine the variables of another copy of this analysis (typically on another thread) into this one.
-      void combine(const Analysis* other)
-      {
-        const Analysis_ATLAS_8TeV_2LEPEW_20invfb* specificOther
-                = dynamic_cast&lt;const Analysis_ATLAS_8TeV_2LEPEW_20invfb*&gt;(other);
-
-        for (int j=0; j&lt;NCUTS; j++)
+        void run(const HEPUtils::Event* event)
         {
-          cutFlowVector[j] += specificOther-&gt;cutFlowVector[j];
-          cutFlowIncrements[j] += specificOther-&gt;cutFlowIncrements[j];
-          cutFlowVector_str[j] = specificOther-&gt;cutFlowVector_str[j];
+
+          // Missing energy
+          HEPUtils::P4 ptot = event-&gt;missingmom();
+          double met = event-&gt;met();
+
+          // Now define vector of baseline electrons
+          vector&lt;const HEPUtils::Particle*&gt; signalElectrons;
+          for (const HEPUtils::Particle* electron : event-&gt;electrons())
+          {
+            if (electron-&gt;pT() &gt; 10. &amp;&amp; fabs(electron-&gt;eta()) &lt; 2.47) signalElectrons.push_back(electron);
+          }
+
+          // Apply electron efficiency
+          ATLAS::applyElectronEff(signalElectrons);
+
+          // Now define vector of baseline muons
+          vector&lt;const HEPUtils::Particle*&gt; signalMuons;
+          for (const HEPUtils::Particle* muon : event-&gt;muons())
+          {
+            if (muon-&gt;pT() &gt; 10. &amp;&amp; fabs(muon-&gt;eta()) &lt; 2.4) signalMuons.push_back(muon);
+          }
+
+          // Apply muon efficiency
+          ATLAS::applyMuonEff(signalMuons);
+
+          vector&lt;const HEPUtils::Jet*&gt; signalJets;
+          for (const HEPUtils::Jet* jet : event-&gt;jets())
+          {
+            if (jet-&gt;pT() &gt; 20. &amp;&amp; fabs(jet-&gt;eta()) &lt; 4.5) signalJets.push_back(jet);
+            //if(jet-&gt;btag() &amp;&amp; fabs(jet-&gt;eta()) &lt; 2.5 &amp;&amp; jet-&gt;pT() &gt; 20.) bJets.push_back(jet);
+          }
+
+          vector&lt;const HEPUtils::Particle*&gt; signalTaus;
+          for (const HEPUtils::Particle* tau : event-&gt;taus())
+          {
+            if (tau-&gt;pT() &gt; 20. &amp;&amp; tau-&gt;abseta() &lt; 2.5) signalTaus.push_back(tau);
+          }
+          ATLAS::applyTauEfficiencyR1(signalTaus);
+
+          // Overlap removal
+
+          //Note that ATLAS use |eta|&lt;10 for removing jets close to electrons
+          //Then 2.8 is used for the rest of the overlap process
+          //Then the signal cut is applied for signal jets
+
+          EleEleOverlapRemoval(signalElectrons,signalElectrons,0.05);
+          JetLeptonOverlapRemoval(signalJets,signalElectrons,0.2);
+          LepLepOverlapRemoval(signalTaus,signalElectrons,0.2);
+          LepLepOverlapRemoval(signalTaus,signalMuons,0.2);
+          LeptonJetOverlapRemoval(signalElectrons,signalJets,0.4);
+          LeptonJetOverlapRemoval(signalMuons,signalJets,0.4);
+          //Note have not bothered with close-by electron and muon pairs (bremsstrahlung probably not significant in signal MC)
+
+          RemoveLeptonsMllLt12(signalElectrons);
+          RemoveLeptonsMllLt12(signalMuons);
+          JetLeptonOverlapRemoval(signalJets,signalTaus,0.2);
+
+          // Make lists of candidate electrons/muons for later cuts on num candidates
+          vector&lt;const HEPUtils::Particle*&gt; candidateElectrons;
+          vector&lt;const HEPUtils::Particle*&gt; candidateMuons;
+          candidateElectrons = signalElectrons;
+          candidateMuons = signalMuons;
+          vector&lt;const HEPUtils::Particle*&gt; candidateLeptons;
+          for (const HEPUtils::Particle* ele : candidateElectrons)
+          {
+            candidateLeptons.push_back(ele);
+          }
+          for (const HEPUtils::Particle* muo : candidateMuons)
+          {
+            candidateLeptons.push_back(muo);
+          }
+
+          ATLAS::applyTightIDElectronSelection(signalElectrons);
+
+          int numElectrons=signalElectrons.size();
+          int numMuons=signalMuons.size();
+          int numTaus=signalTaus.size();
+
+          //Search for at least one SFOS pair
+          //m_SFOS must be &gt; 12 GeV
+
+
+          //Classify jets into various categories
+          vector&lt;const HEPUtils::Jet*&gt; centralBJets;
+          vector&lt;const HEPUtils::Jet*&gt; centralNonBJets;
+          vector&lt;const HEPUtils::Jet*&gt; forwardJets;
+
+          const std::vector&lt;double&gt; a = {0,10.};
+          const std::vector&lt;double&gt; b = {0,10000.};
+          const std::vector&lt;double&gt; c = {0.8};
+          HEPUtils::BinnedFn2D&lt;double&gt; _eff2d(a,b,c);
+
+          for (const HEPUtils::Jet* jet : signalJets)
+          {
+            bool hasTag=has_tag(_eff2d, jet-&gt;abseta(), jet-&gt;pT());
+            if(fabs(jet-&gt;eta()) &lt; 2.4)
+            {
+              if(jet-&gt;btag() &amp;&amp; hasTag)
+              {
+                centralBJets.push_back(jet);
+              }
+              else
+              {
+                centralNonBJets.push_back(jet);
+              }
+            }
+            if(fabs(jet-&gt;eta()) &gt; 2.4 &amp;&amp; jet-&gt;pT()&gt;30.)forwardJets.push_back(jet);
+          }
+
+          //Common cuts for all signal regions
+
+          bool leptonPTCut=false;
+          vector&lt;const HEPUtils::Particle*&gt; signalLeptons;
+          for (const HEPUtils::Particle* ele : signalElectrons)
+          {
+            signalLeptons.push_back(ele);
+          }
+
+          for (const HEPUtils::Particle* muo : signalMuons)
+          {
+            signalLeptons.push_back(muo);
+          }
+
+          std::sort(signalLeptons.begin(), signalLeptons.end(), sortByPT_2lep);
+
+          if(signalLeptons.size()==2 &amp;&amp; signalLeptons[0]-&gt;pT()&gt;35. &amp;&amp; signalLeptons[1]-&gt;pT()&gt;20. &amp;&amp; candidateLeptons.size()==2)leptonPTCut=true;
+          //if(signalLeptons.size()==2 &amp;&amp; signalLeptons[0]-&gt;pT()&gt;35. &amp;&amp; signalLeptons[1]-&gt;pT()&gt;20.)leptonPTCut=true;  // if you don't want the candidates cut
+
+          bool mllCut=false;
+          if(signalLeptons.size()==2 &amp;&amp; (signalLeptons[0]-&gt;mom()+signalLeptons[1]-&gt;mom()).m() &gt; 20.)mllCut=true;
+
+          bool isOS=false;
+          if(signalLeptons.size()==2 &amp;&amp; (signalLeptons[0]-&gt;pid()*signalLeptons[1]-&gt;pid()&lt;0))isOS=true;
+
+          bool passZVeto=true;
+          double mLepLep=0.;
+          if(signalLeptons.size()==2)mLepLep=(signalLeptons[0]-&gt;mom()+signalLeptons[1]-&gt;mom()).m();
+          if(mLepLep&gt;81.2 &amp;&amp; mLepLep&lt;101.2)passZVeto=false;
+
+          bool cut_SRMT290=false;
+          bool cut_SRMT2120=false;
+          bool cut_SRMT2150=false;
+
+          bool tauVeto=false;
+          if(numTaus==0)tauVeto=true;
+
+          int numCentralNonBJets=centralNonBJets.size();
+          int numCentralBJets=centralBJets.size();
+          int numForwardJets=forwardJets.size();
+
+          // need to initialize these in this scope to use them when filling perf_plots later
+          double mt2 = 0.0;
+          double dPhiMin=9999;
+          double ETmiss_rel = 0.0;
+          double mll = mLepLep;
+
+          //Now do the MT2 signal regions
+
+          if(leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; tauVeto &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0)
+          {
+
+            //Calculate MT2
+            double pa[3] = { 0, signalLeptons[0]-&gt;mom().px(), signalLeptons[0]-&gt;mom().py() };
+            double pb[3] = { 0, signalLeptons[1]-&gt;mom().px(), signalLeptons[1]-&gt;mom().py() };
+            double pmiss[3] = { 0, ptot.px(), ptot.py() };
+            double mn = 0.;
+
+            mt2_bisect::mt2 mt2_calc;
+
+            mt2_calc.set_momenta(pa,pb,pmiss);
+            mt2_calc.set_mn(mn);
+            mt2 = mt2_calc.get_mt2();
+  //          double mt2 = mt2_calc.get_mt2();  // was already initialized
+
+            mll=(signalLeptons[0]-&gt;mom() + signalLeptons[1]-&gt;mom()).m();
+  //          double mll=(signalLeptons[0]-&gt;mom() + signalLeptons[1]-&gt;mom()).m();
+
+
+            if(mt2&gt;90.)cut_SRMT290=true;
+            if(mt2&gt;120.)cut_SRMT2120=true;
+            if(mt2&gt;150.)cut_SRMT2150=true;
+
+            //Signal region increments use the trigger efficiencies for ee, emu and mumu triggers
+            if(mt2 &gt; 90. &amp;&amp; (numElectrons==1 &amp;&amp; numMuons==1)) _num_MT2_90_DF += event-&gt;weight() * 0.89;
+            if(passZVeto &amp;&amp; mt2 &gt; 90. &amp;&amp; (numElectrons==2 &amp;&amp; fabs(mll-91.)&gt;10)) _num_MT2_90_SF += event-&gt;weight() * 0.97;
+            if(passZVeto &amp;&amp; mt2 &gt; 90. &amp;&amp; (numMuons==2 &amp;&amp; fabs(mll-91.)&gt;10)) _num_MT2_90_SF += event-&gt;weight() * 0.75;
+
+            if(mt2 &gt; 120. &amp;&amp; (numElectrons==1 &amp;&amp; numMuons==1)) _num_MT2_120_DF += event-&gt;weight() * 0.89;
+            if(passZVeto &amp;&amp; mt2 &gt; 120. &amp;&amp; (numElectrons==2 &amp;&amp; fabs(mll-91.)&gt;10)) _num_MT2_120_SF += event-&gt;weight() * 0.97;
+            if(passZVeto &amp;&amp; mt2 &gt; 120. &amp;&amp;  (numMuons==2 &amp;&amp; fabs(mll-91.)&gt;10)) _num_MT2_120_SF += event-&gt;weight() * 0.75;
+
+            if(mt2 &gt; 150. &amp;&amp; (numElectrons==1 &amp;&amp; numMuons==1)) _num_MT2_150_DF += event-&gt;weight() * 0.89;
+            if(passZVeto &amp;&amp; mt2 &gt; 150. &amp;&amp; (numElectrons==2 &amp;&amp; fabs(mll-91.)&gt;10)) _num_MT2_150_SF += event-&gt;weight() * 0.97;
+            if(passZVeto &amp;&amp; mt2 &gt; 150. &amp;&amp; (numMuons==2 &amp;&amp; fabs(mll-91.)&gt;10)) _num_MT2_150_SF += event-&gt;weight() * 0.75;
+
+          }
+
+          //Now do the WW channels
+          bool passZVeto_WWa=false;
+          bool passPTll_WWa=false;
+          bool passMetRel_WWa=false;
+          bool passMll_WWa=false;
+
+          bool passMT2_WWb=false;
+          bool passMT2_WWc=false;
+          bool passMll_WWb=false;
+
+          if(leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; tauVeto &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0)
+          {
+
+            //Calculate ETmiss_rel
+            dPhiMin=9999;
+  //          double dPhiMin=9999;
+            for(const HEPUtils::Jet* jet : centralBJets)
+            {
+              double dphi=fabs(jet-&gt;mom().deltaPhi(ptot));
+              if(fabs(dphi)&lt;dPhiMin)dPhiMin=dphi;
+            }
+
+            for(const HEPUtils::Jet* jet : centralNonBJets)
+            {
+              double dphi=fabs(jet-&gt;mom().deltaPhi(ptot));
+              if(fabs(dphi)&lt;dPhiMin)dPhiMin=dphi;
+            }
+
+            for(const HEPUtils::Particle* lep : signalLeptons)
+            {
+              double dphi=fabs(lep-&gt;mom().deltaPhi(ptot));
+              if(fabs(dphi)&lt;dPhiMin)dPhiMin=dphi;
+            }
+
+            ETmiss_rel=0;
+  //          double ETmiss_rel=0;
+            if(dPhiMin&lt;(3.14/2))
+            {
+              ETmiss_rel=met*sin(dPhiMin);
+            }
+            else
+            {
+              ETmiss_rel=met;
+            }
+
+            //Calculate MT2
+            double pa[3] = { 0, signalLeptons[0]-&gt;mom().px(), signalLeptons[0]-&gt;mom().py() };
+            double pb[3] = { 0, signalLeptons[1]-&gt;mom().px(), signalLeptons[1]-&gt;mom().py() };
+            double pmiss[3] = { 0, ptot.px(), ptot.py() };
+            double mn = 0.;
+
+            mt2_bisect::mt2 mt2_calc;
+
+            mt2_calc.set_momenta(pa,pb,pmiss);
+            mt2_calc.set_mn(mn);
+            mt2 = mt2_calc.get_mt2();
+  //          double mt2 = mt2_calc.get_mt2();
+
+            mll=(signalLeptons[0]-&gt;mom() + signalLeptons[1]-&gt;mom()).m();
+  //          double mll=(signalLeptons[0]-&gt;mom() + signalLeptons[1]-&gt;mom()).m();
+
+            //Variables for cutflow debugging
+
+            if(fabs(mll-91.2)&gt;10.)passZVeto_WWa=true;
+            if((signalLeptons[0]-&gt;mom() + signalLeptons[1]-&gt;mom()).pT() &gt; 80.)passPTll_WWa=true;
+            if(ETmiss_rel &gt; 80.)passMetRel_WWa=true;
+            if(mll &lt; 120.) passMll_WWa=true;
+
+            if(mt2 &gt; 90.)passMT2_WWb=true;
+            if(mll &lt; 170.)passMll_WWb=true;
+
+            if(mt2 &gt; 100.)passMT2_WWc=true;
+
+
+            if((signalLeptons[0]-&gt;mom() + signalLeptons[1]-&gt;mom()).pT() &gt; 80. &amp;&amp;
+               ETmiss_rel &gt; 80. &amp;&amp;
+               mll &lt; 120. &amp;&amp;
+               (numElectrons==1 &amp;&amp; numMuons==1)) _num_WWa_DF += event-&gt;weight() * 0.89;
+
+            if((signalLeptons[0]-&gt;mom() + signalLeptons[1]-&gt;mom()).pT() &gt; 80. &amp;&amp;
+               ETmiss_rel &gt; 80. &amp;&amp;
+               mll &lt; 120. &amp;&amp;
+               (numElectrons==2 &amp;&amp; fabs(mll-91.)&gt;10.)) _num_WWa_SF += event-&gt;weight() * 0.97;
+
+            if((signalLeptons[0]-&gt;mom() + signalLeptons[1]-&gt;mom()).pT() &gt; 80. &amp;&amp;
+               ETmiss_rel &gt; 80. &amp;&amp;
+               mll &lt; 120. &amp;&amp;
+               (numMuons==2 &amp;&amp; fabs(mll-91.)&gt;10.)) _num_WWa_SF += event-&gt;weight() * 0.75;
+
+            if(mt2 &gt; 90. &amp;&amp;
+               mll &lt; 170. &amp;&amp;
+               (numElectrons==1 &amp;&amp; numMuons==1)) _num_WWb_DF += event-&gt;weight() * 0.89;
+
+            if(mt2 &gt; 90. &amp;&amp;
+               mll &lt; 170. &amp;&amp;
+               (numElectrons==2 &amp;&amp; fabs(mll-91.)&gt;10.)) _num_WWb_SF += event-&gt;weight() * 0.97;
+
+
+            if(mt2 &gt; 90. &amp;&amp;
+               mll &lt; 170. &amp;&amp;
+               (numMuons==2 &amp;&amp; fabs(mll-91.)&gt;10.)) _num_WWb_SF += event-&gt;weight() * 0.75;
+
+            if(mt2 &gt; 100. &amp;&amp; (numElectrons==1 &amp;&amp; numMuons==1)) _num_WWc_DF += event-&gt;weight() * 0.89;
+
+            if(mt2 &gt; 100. &amp;&amp; (numElectrons==2 &amp;&amp; fabs(mll-91.)&gt;10.)) _num_WWc_SF += event-&gt;weight() * 0.97;
+
+            if(mt2 &gt; 100. &amp;&amp; (numMuons==2 &amp;&amp; fabs(mll-91.)&gt;10.)) _num_WWc_SF += event-&gt;weight() * 0.75;
+
+          }
+
+          //Finally, do the Z+jets signal region
+
+          bool passZWindow=true;
+          bool passPTll=true;
+          bool passETmissRel=true;
+          bool passdRll=true;
+          bool passMjj=true;
+          bool passJetPT=true;
+
+          if(leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; tauVeto &amp;&amp; numCentralNonBJets&gt;=2 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0)
+          {
+
+            mll=(signalLeptons[0]-&gt;mom() + signalLeptons[1]-&gt;mom()).m();
+  //          double mll=(signalLeptons[0]-&gt;mom() + signalLeptons[1]-&gt;mom()).m();
+
+            //Calculate ETmiss_rel
+            dPhiMin=9999;
+  //          double dPhiMin=9999;
+            for(const HEPUtils::Jet* jet : centralBJets)
+            {
+              double dphi=jet-&gt;mom().deltaPhi(ptot);
+              if(dphi&lt;dPhiMin)dPhiMin=dphi;
+            }
+
+            for(const HEPUtils::Jet* jet : centralNonBJets)
+            {
+              double dphi=jet-&gt;mom().deltaPhi(ptot);
+              if(dphi&lt;dPhiMin)dPhiMin=dphi;
+            }
+
+            for(const HEPUtils::Particle* lep : signalLeptons)
+            {
+              double dphi=lep-&gt;mom().deltaPhi(ptot);
+              if(dphi&lt;dPhiMin)dPhiMin=dphi;
+            }
+
+            ETmiss_rel=0;
+  //          double ETmiss_rel=0;
+            if(dPhiMin&lt;(3.14/2))
+            {
+              ETmiss_rel=met*sin(dPhiMin);
+            }
+            else
+            {
+              ETmiss_rel=met;
+            }
+
+
+            double dRll = signalLeptons[0]-&gt;mom().deltaR_eta(signalLeptons[1]-&gt;mom());
+
+            double mjj = (centralNonBJets[0]-&gt;mom()+centralNonBJets[1]-&gt;mom()).m();
+
+
+            //Cuts for cutflow debugging
+            if(ETmiss_rel&lt;=80.)passETmissRel=false;
+            if(fabs(mll-91.)&gt;10.)passZWindow=false;
+            if((signalLeptons[0]-&gt;mom()+signalLeptons[1]-&gt;mom()).pT()&lt;=80.)passPTll=false;
+            if(!(dRll &gt; 0.3 &amp;&amp; dRll &lt; 1.5))passdRll=false;
+            if(!(mjj &gt; 50. &amp;&amp; mjj&lt;100.))passMjj=false;
+            if(!(centralNonBJets[0]-&gt;pT()&gt;45. &amp;&amp; centralNonBJets[1]-&gt;pT()&gt;45.))passJetPT=false;
+
+            if(fabs(mll-91.)&lt;10 &amp;&amp; ETmiss_rel&gt;80. &amp;&amp; (signalLeptons[0]-&gt;mom()+signalLeptons[1]-&gt;mom()).pT()&gt;80. &amp;&amp; dRll &gt; 0.3 &amp;&amp; dRll &lt; 1.5 &amp;&amp; mjj &gt; 50. &amp;&amp; mjj&lt;100. &amp;&amp; passJetPT &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0)) _num_Zjets += event-&gt;weight() * 0.97;
+
+            if(fabs(mll-91.)&lt;10 &amp;&amp; ETmiss_rel&gt;80. &amp;&amp; (signalLeptons[0]-&gt;mom()+signalLeptons[1]-&gt;mom()).pT()&gt;80. &amp;&amp; dRll &gt; 0.3 &amp;&amp; dRll &lt; 1.5 &amp;&amp; mjj &gt; 50. &amp;&amp; mjj&lt;100. &amp;&amp; passJetPT &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2)) _num_Zjets += event-&gt;weight() * 0.75;
+
+          }
+
+  //        vector&lt;double&gt; variables={mll, ETmiss_rel, mt2};
+  //        if(leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; ((numElectrons==0 &amp;&amp; numMuons==2) || (numElectrons==2 &amp;&amp; numMuons==0)) &amp;&amp; tauVeto &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto)plots_mt2_NOmt2_SF-&gt;fill(&amp;variables);
+  //        if(leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; tauVeto &amp;&amp; signalElectrons.size()==1 &amp;&amp; signalMuons.size()==1 &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0)plots_mt2_NOmt2_DF-&gt;fill(&amp;variables);
+  //        if(tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; ((numElectrons==0 &amp;&amp; numMuons==2) || (numElectrons==2 &amp;&amp; numMuons==0)) &amp;&amp; numCentralNonBJets&gt;=2 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZWindow &amp;&amp; passPTll &amp;&amp; passdRll &amp;&amp; passMjj &amp;&amp; passJetPT)plots_Zjets_NOmet_SF-&gt;fill(&amp;variables);
+  //        if(tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; ((numElectrons==0 &amp;&amp; numMuons==2) || (numElectrons==2 &amp;&amp; numMuons==0)) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto_WWa &amp;&amp; passPTll_WWa &amp;&amp; passMetRel_WWa)plots_WWa_NOmll_SF-&gt;fill(&amp;variables);
+  //        if(tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==1 &amp;&amp; numMuons==1) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passPTll_WWa &amp;&amp; passMetRel_WWa)plots_WWa_NOmll_DF-&gt;fill(&amp;variables);
+  //        if(tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; ((numElectrons==0 &amp;&amp; numMuons==2) || (numElectrons==2 &amp;&amp; numMuons==0)) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto_WWa &amp;&amp; passPTll_WWa)plots_WWa_NOmllORmet_SF-&gt;fill(&amp;variables);
+  //        if(tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==1 &amp;&amp; numMuons==1) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passPTll_WWa)plots_WWa_NOmllORmet_DF-&gt;fill(&amp;variables);
+
+          cutFlowVector_str[0] = &quot;No cuts &quot;;
+          cutFlowVector_str[1] = &quot;2 electrons &quot;;
+          cutFlowVector_str[2] = &quot;Lepton pT cuts (trigger) &quot;;
+          cutFlowVector_str[3] = &quot;mll cuts &quot;;
+          cutFlowVector_str[4] = &quot;OS leptons &quot;;
+          cutFlowVector_str[5] = &quot;tau veto &quot;;
+          cutFlowVector_str[6] = &quot;e+e-: Jet veto &quot;;
+          cutFlowVector_str[7] = &quot;e+e-: Z veto &quot;;
+          cutFlowVector_str[8] = &quot;e+e-: SR-MT290 &quot;;
+          cutFlowVector_str[9] = &quot;e+e-: SR-MT2120 &quot;;
+          cutFlowVector_str[10] = &quot;e+e-: SR-MT2150 &quot;;
+          cutFlowVector_str[11] = &quot;mu+mu-: 2 signal leptons &quot;;
+          cutFlowVector_str[12] = &quot;mu+mu-: Jet veto &quot;;
+          cutFlowVector_str[13] = &quot;mu+mu-: Z veto &quot;;
+          cutFlowVector_str[14] = &quot;mu+mu-: SR-MT290 &quot;;
+          cutFlowVector_str[15] = &quot;mu+mu-: SR-MT2120 &quot;;
+          cutFlowVector_str[16] = &quot;mu+mu-: SR-MT2150 &quot;;
+          cutFlowVector_str[17] = &quot;e+-mu-+: 2 signal leptons &quot;;
+          cutFlowVector_str[18] = &quot;e+-mu-+: Jet veto &quot;;
+          cutFlowVector_str[19] = &quot;e+-mu-+: SR-MT290 &quot;;
+          cutFlowVector_str[20] = &quot;e+-mu-+: SR-MT2120 &quot;;
+          cutFlowVector_str[21] = &quot;e+-mu-+: SR-MT2150 &quot;;
+          cutFlowVector_str[22] = &quot;SRZjets e+e-: 2 signal leptons &quot;;
+          cutFlowVector_str[23] = &quot;SRZjets e+e-: &gt;=2 light jets &quot;;
+          cutFlowVector_str[24] = &quot;SRZjets e+e-: No b and forward jets &quot;;
+          cutFlowVector_str[25] = &quot;SRZjets e+e-: Z window &quot;;
+          cutFlowVector_str[26] = &quot;SRZjets e+e-: pTll &gt; 80 &quot;;
+          cutFlowVector_str[27] = &quot;SRZjets e+e-: ETmissrel &quot;;
+          cutFlowVector_str[28] = &quot;SRZjets e+e-: dRll &quot;;
+          cutFlowVector_str[29] = &quot;SRZjets e+e-: mjj &quot;;
+          cutFlowVector_str[30] = &quot;SRZjets e+e-: jet pT &quot;;
+          cutFlowVector_str[31] = &quot;SRZjets mu+mu-: 2 signal leptons &quot;;
+          cutFlowVector_str[32] = &quot;SRZjets mu+mu-: &gt;=2 light jets &quot;;
+          cutFlowVector_str[33] = &quot;SRZjets mu+mu-: No b and forward jets &quot;;
+          cutFlowVector_str[34] = &quot;SRZjets mu+mu-: Z window &quot;;
+          cutFlowVector_str[35] = &quot;SRZjets mu+mu-: pTll &gt; 80 &quot;;
+          cutFlowVector_str[36] = &quot;SRZjets mu+mu-: ETmissrel &quot;;
+          cutFlowVector_str[37] = &quot;SRZjets mu+mu-: dRll &quot;;
+          cutFlowVector_str[38] = &quot;SRZjets mu+mu-: mjj &quot;;
+          cutFlowVector_str[39] = &quot;SRZjets mu+mu-: jet pT &quot;;
+          cutFlowVector_str[40] = &quot;SRWWa e+e-: 2 leptons &quot;;
+          cutFlowVector_str[41] = &quot;SRWWa e+e-: Jet veto &quot;;
+          cutFlowVector_str[42] = &quot;SRWWa e+e-: Z veto &quot;;
+          cutFlowVector_str[43] = &quot;SRWWa e+e-: pTll &quot;;
+          cutFlowVector_str[44] = &quot;SRWWa e+e-: ETmissrel &quot;;
+          cutFlowVector_str[45] = &quot;SRWWa e+e-: mll &quot;;
+          cutFlowVector_str[46] = &quot;SRWWa mu+mu-: 2 leptons &quot;;
+          cutFlowVector_str[47] = &quot;SRWWa mu+mu-: Jet veto &quot;;
+          cutFlowVector_str[48] = &quot;SRWWa mu+mu-: Z veto &quot;;
+          cutFlowVector_str[49] = &quot;SRWWa mu+mu-: pTll &quot;;
+          cutFlowVector_str[50] = &quot;SRWWa mu+mu-: ETmissrel &quot;;
+          cutFlowVector_str[51] = &quot;SRWWa mu+mu-: mll &quot;;
+          cutFlowVector_str[52] = &quot;SRWWa e+mu-: 2 leptons &quot;;
+          cutFlowVector_str[53] = &quot;SRWWa e+mu-: Jet veto &quot;;
+          cutFlowVector_str[54] = &quot;SRWWa e+mu-: pTll &quot;;
+          cutFlowVector_str[55] = &quot;SRWWa e+mu-: ETmissrel &quot;;
+          cutFlowVector_str[56] = &quot;SRWWa e+mu-: mll &quot;;
+          cutFlowVector_str[57] = &quot;SRWWb e+e-: 2 leptons &quot;;
+          cutFlowVector_str[58] = &quot;SRWWb e+e-: Jet veto &quot;;
+          cutFlowVector_str[59] = &quot;SRWWb e+e-: Z veto &quot;;
+          cutFlowVector_str[60] = &quot;SRWWb e+e-: mT2 &gt; 90 &quot;;
+          cutFlowVector_str[61] = &quot;SRWWb e+e-: mll &lt; 170 &quot;;
+          cutFlowVector_str[62] = &quot;SRWWb mu+mu-: 2 leptons &quot;;
+          cutFlowVector_str[63] = &quot;SRWWb mu+mu-: Jet veto &quot;;
+          cutFlowVector_str[64] = &quot;SRWWb mu+mu-: Z veto &quot;;
+          cutFlowVector_str[65] = &quot;SRWWb mu+mu-: mT2 &gt; 90 &quot;;
+          cutFlowVector_str[66] = &quot;SRWWb mu+mu-: mll &lt; 170 &quot;;
+          cutFlowVector_str[67] = &quot;SRWWb e+mu-: 2 leptons &quot;;
+          cutFlowVector_str[68] = &quot;SRWWb e+mu-: Jet veto &quot;;
+          cutFlowVector_str[69] = &quot;SRWWb e+mu-: mT2 &gt; 90 &quot;;
+          cutFlowVector_str[70] = &quot;SRWWb e+mu-: mll &lt; 170 &quot;;
+          cutFlowVector_str[71] = &quot;SRWWc e+e-: 2 leptons &quot;;
+          cutFlowVector_str[72] = &quot;SRWWc e+e-: Jet veto &quot;;
+          cutFlowVector_str[73] = &quot;SRWWc e+e-: Z veto &quot;;
+          cutFlowVector_str[74] = &quot;SRWWc e+e-: mT2 &gt; 100 &quot;;
+          cutFlowVector_str[75] = &quot;SRWWc mu+mu-: 2 leptons &quot;;
+          cutFlowVector_str[76] = &quot;SRWWc mu+mu-: Jet veto &quot;;
+          cutFlowVector_str[77] = &quot;SRWWc mu+mu-: Z veto &quot;;
+          cutFlowVector_str[78] = &quot;SRWWc mu+mu-: mT2 &gt; 100 &quot;;
+          cutFlowVector_str[79] = &quot;SRWWc e+mu-: 2 leptons &quot;;
+          cutFlowVector_str[80] = &quot;SRWWc e+mu-: Jet veto &quot;;
+          cutFlowVector_str[81] = &quot;SRWWc e+mu-: mT2 &gt; 100 &quot;;
+
+          for(int j=0;j&lt;NCUTS;j++)
+          {
+            if(j&gt;=0 &amp;&amp; j&lt;=10)cutFlowIncrements[j]=0.97;
+            if(j&gt;=11 &amp;&amp; j&lt;=16)cutFlowIncrements[j]=0.75;
+            if(j&gt;=17 &amp;&amp; j&lt;=21)cutFlowIncrements[j]=0.89;
+
+            if(j&gt;=22 &amp;&amp; j&lt;=30)cutFlowIncrements[j]=0.97;
+            if(j&gt;=31 &amp;&amp; j&lt;=39)cutFlowIncrements[j]=0.75;
+
+            if(j&gt;=40 &amp;&amp; j&lt;=45)cutFlowIncrements[j]=0.97;
+            if(j&gt;=46 &amp;&amp; j&lt;=51)cutFlowIncrements[j]=0.75;
+            if(j&gt;=52 &amp;&amp; j&lt;=56)cutFlowIncrements[j]=0.89;
+
+            if(j&gt;=57 &amp;&amp; j&lt;=61)cutFlowIncrements[j]=0.97;
+            if(j&gt;=62 &amp;&amp; j&lt;=66)cutFlowIncrements[j]=0.75;
+            if(j&gt;=67 &amp;&amp; j&lt;=70)cutFlowIncrements[j]=0.89;
+
+            if(j&gt;=71 &amp;&amp; j&lt;=74)cutFlowIncrements[j]=0.97;
+            if(j&gt;=75 &amp;&amp; j&lt;=78)cutFlowIncrements[j]=0.75;
+            if(j&gt;=79 &amp;&amp; j&lt;=81)cutFlowIncrements[j]=0.89;
+          }
+
+
+          for(int j=0;j&lt;NCUTS;j++)
+          {
+            if( (j==0) ||
+
+                (j==1 &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0)) ||
+
+                (j==2 &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0) &amp;&amp; leptonPTCut) ||
+
+                (j==3 &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0) &amp;&amp; leptonPTCut &amp;&amp; mllCut) ||
+
+                (j==4 &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0) &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS) ||
+
+                (j==5 &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0) &amp;&amp; tauVeto) ||
+
+                (j==6 &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0) &amp;&amp; tauVeto &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0) ||
+
+                (j==7 &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0) &amp;&amp; tauVeto &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto) ||
+
+                (j==8 &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0) &amp;&amp; tauVeto &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto &amp;&amp; cut_SRMT290) ||
+
+                (j==9 &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0) &amp;&amp; tauVeto &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto &amp;&amp; cut_SRMT2120) ||
+
+                (j==10 &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0) &amp;&amp; tauVeto &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto &amp;&amp; cut_SRMT2150) ||
+
+                //mumu MT2 regions
+
+                (j==11 &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2) &amp;&amp; tauVeto) ||
+
+                (j==12 &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2) &amp;&amp; tauVeto &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0) ||
+
+                (j==13 &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2) &amp;&amp; tauVeto &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto) ||
+
+                (j==14 &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2) &amp;&amp; tauVeto &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto &amp;&amp; cut_SRMT290) ||
+
+                (j==15 &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2) &amp;&amp; tauVeto &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto &amp;&amp; cut_SRMT2120) ||
+
+                (j==16 &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2) &amp;&amp; tauVeto &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto &amp;&amp; cut_SRMT2150) ||
+
+                //emu MT2 regions
+
+                (j==17 &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; tauVeto &amp;&amp; signalElectrons.size()==1 &amp;&amp; signalMuons.size()==1 &amp;&amp; tauVeto) ||
+
+                (j==18 &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; tauVeto &amp;&amp; signalElectrons.size()==1 &amp;&amp; signalMuons.size()==1 &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0) ||
+
+                (j==19 &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; tauVeto &amp;&amp; signalElectrons.size()==1 &amp;&amp; signalMuons.size()==1 &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; cut_SRMT290) ||
+
+                (j==20 &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; tauVeto &amp;&amp; signalElectrons.size()==1 &amp;&amp; signalMuons.size()==1 &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; cut_SRMT2120) ||
+
+                (j==21 &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; tauVeto &amp;&amp; signalElectrons.size()==1 &amp;&amp; signalMuons.size()==1 &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; cut_SRMT2150) ||
+
+                //Start SR Z jets e+e-
+                (j==22 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0)) ||
+
+                (j==23 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0) &amp;&amp; numCentralNonBJets&gt;=2) ||
+
+                (j==24 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0) &amp;&amp; numCentralNonBJets&gt;=2 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0) ||
+
+                (j==25 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0) &amp;&amp; numCentralNonBJets&gt;=2 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZWindow) ||
+
+                (j==26 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0) &amp;&amp; numCentralNonBJets&gt;=2 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZWindow &amp;&amp; passPTll) ||
+
+                (j==27 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0) &amp;&amp; numCentralNonBJets&gt;=2 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZWindow &amp;&amp; passPTll &amp;&amp; passETmissRel) ||
+
+                (j==28 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0) &amp;&amp; numCentralNonBJets&gt;=2 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZWindow &amp;&amp; passPTll &amp;&amp; passETmissRel &amp;&amp; passdRll) ||
+
+                (j==29 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0) &amp;&amp; numCentralNonBJets&gt;=2 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZWindow &amp;&amp; passPTll &amp;&amp; passETmissRel &amp;&amp; passdRll &amp;&amp; passMjj) ||
+
+                (j==30 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0) &amp;&amp; numCentralNonBJets&gt;=2 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZWindow &amp;&amp; passPTll &amp;&amp; passETmissRel &amp;&amp; passdRll &amp;&amp; passMjj &amp;&amp; passJetPT) ||
+
+                //Start SR Z jets mu+mu-
+                (j==31 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2)) ||
+
+                (j==32 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2) &amp;&amp; numCentralNonBJets&gt;=2) ||
+
+                (j==33 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2) &amp;&amp; numCentralNonBJets&gt;=2 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0) ||
+
+                (j==34 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2) &amp;&amp; numCentralNonBJets&gt;=2 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZWindow) ||
+
+                (j==35 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2) &amp;&amp; numCentralNonBJets&gt;=2 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZWindow &amp;&amp; passPTll) ||
+
+                (j==36 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2) &amp;&amp; numCentralNonBJets&gt;=2 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZWindow &amp;&amp; passPTll &amp;&amp; passETmissRel) ||
+
+                (j==37 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2) &amp;&amp; numCentralNonBJets&gt;=2 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZWindow &amp;&amp; passPTll &amp;&amp; passETmissRel &amp;&amp; passdRll) ||
+
+                (j==38 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2) &amp;&amp; numCentralNonBJets&gt;=2 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZWindow &amp;&amp; passPTll &amp;&amp; passETmissRel &amp;&amp; passdRll &amp;&amp; passMjj) ||
+
+                (j==39 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2) &amp;&amp; numCentralNonBJets&gt;=2 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZWindow &amp;&amp; passPTll &amp;&amp; passETmissRel &amp;&amp; passdRll &amp;&amp; passMjj &amp;&amp; passJetPT) ||
+
+                //Now start WWa e+e-
+                (j==40 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0)) ||
+
+                (j==41 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0) ||
+
+                (j==42 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto_WWa) ||
+
+                (j==43 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto_WWa &amp;&amp; passPTll_WWa) ||
+
+                (j==44 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto_WWa &amp;&amp; passPTll_WWa &amp;&amp; passMetRel_WWa) ||
+
+                (j==45 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto_WWa &amp;&amp; passPTll_WWa &amp;&amp; passMetRel_WWa &amp;&amp; passMll_WWa) ||
+
+                //Now start WWa mu+mu-
+                (j==46 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2)) ||
+
+                (j==47 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0) ||
+
+                (j==48 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto_WWa) ||
+
+                (j==49 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto_WWa &amp;&amp; passPTll_WWa) ||
+
+                (j==50 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto_WWa &amp;&amp; passPTll_WWa &amp;&amp; passMetRel_WWa) ||
+
+                (j==51 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto_WWa &amp;&amp; passPTll_WWa &amp;&amp; passMetRel_WWa &amp;&amp; passMll_WWa) ||
+
+                //Now start WWa e+mu-
+                (j==52 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==1 &amp;&amp; numMuons==1)) ||
+
+                (j==53 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==1 &amp;&amp; numMuons==1) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0) ||
+
+                (j==54 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==1 &amp;&amp; numMuons==1) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passPTll_WWa) ||
+
+                (j==55 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==1 &amp;&amp; numMuons==1) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passPTll_WWa &amp;&amp; passMetRel_WWa) ||
+
+                (j==56 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==1 &amp;&amp; numMuons==1) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passPTll_WWa &amp;&amp; passMetRel_WWa &amp;&amp; passMll_WWa) ||
+
+                //WWb e+ e-
+                (j==57 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0)) ||
+
+                (j==58 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0) ||
+
+                (j==59 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto_WWa) ||
+
+                (j==60 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto_WWa &amp;&amp; passMT2_WWb) ||
+
+                (j==61 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto_WWa &amp;&amp; passMT2_WWb &amp;&amp; passMll_WWb) ||
+
+                //WWb mu+ mu-
+                (j==62 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2)) ||
+
+                (j==63 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0) ||
+
+                (j==64 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto_WWa) ||
+
+                (j==65 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto_WWa &amp;&amp; passMT2_WWb) ||
+
+                (j==66 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto_WWa &amp;&amp; passMT2_WWb &amp;&amp; passMll_WWb) ||
+
+                //WWb e+mu-
+
+                (j==67 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==1 &amp;&amp; numMuons==1)) ||
+
+                (j==68 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==1 &amp;&amp; numMuons==1) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0) ||
+
+                (j==69 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==1 &amp;&amp; numMuons==1) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passMT2_WWb) ||
+
+                (j==70 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==1 &amp;&amp; numMuons==1) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passMT2_WWb &amp;&amp; passMll_WWb) ||
+
+                //WWc e+ e-
+                (j==71 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0)) ||
+
+                (j==72 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0) ||
+
+                (j==73 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto_WWa) ||
+
+                (j==74 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto_WWa &amp;&amp; passMT2_WWc) ||
+
+                //WWc mu+ mu-
+                (j==75 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2)) ||
+
+                (j==76 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0) ||
+
+                (j==77 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto_WWa) ||
+
+                (j==78 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passZVeto_WWa &amp;&amp; passMT2_WWc) ||
+
+                //WWc e+mu-
+
+                (j==79 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==1 &amp;&amp; numMuons==1)) ||
+
+                (j==80 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==1 &amp;&amp; numMuons==1) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0) ||
+
+                (j==81 &amp;&amp; tauVeto &amp;&amp; leptonPTCut &amp;&amp; mllCut &amp;&amp; isOS &amp;&amp; (numElectrons==1 &amp;&amp; numMuons==1) &amp;&amp; numCentralNonBJets==0 &amp;&amp; numCentralBJets==0 &amp;&amp; numForwardJets==0 &amp;&amp; passMT2_WWc)
+
+                )cutFlowVector[j]=cutFlowVector[j]+cutFlowIncrements[j];
+
+          }
+          return;
         }
 
-        _num_MT2_90_SF += specificOther-&gt;_num_MT2_90_SF;
-        _num_MT2_90_DF += specificOther-&gt;_num_MT2_90_DF;
-        _num_MT2_120_SF += specificOther-&gt;_num_MT2_120_SF;
-        _num_MT2_120_DF += specificOther-&gt;_num_MT2_120_DF;
-        _num_MT2_150_SF += specificOther-&gt;_num_MT2_150_SF;
-        _num_MT2_150_DF += specificOther-&gt;_num_MT2_150_DF;
-        _num_WWa_SF += specificOther-&gt;_num_WWa_SF;
-        _num_WWa_DF += specificOther-&gt;_num_WWa_DF;
-        _num_WWb_SF += specificOther-&gt;_num_WWb_SF;
-        _num_WWb_DF += specificOther-&gt;_num_WWb_DF;
-        _num_WWc_SF += specificOther-&gt;_num_WWc_SF;
-        _num_WWc_DF += specificOther-&gt;_num_WWc_DF;
-        _num_Zjets += specificOther-&gt;_num_Zjets;
-      }
+        /// Combine the variables of another copy of this analysis (typically on another thread) into this one.
+        void combine(const Analysis* other)
+        {
+          const Analysis_ATLAS_8TeV_2LEPEW_20invfb* specificOther
+                  = dynamic_cast&lt;const Analysis_ATLAS_8TeV_2LEPEW_20invfb*&gt;(other);
+
+          for (int j=0; j&lt;NCUTS; j++)
+          {
+            cutFlowVector[j] += specificOther-&gt;cutFlowVector[j];
+            cutFlowIncrements[j] += specificOther-&gt;cutFlowIncrements[j];
+            cutFlowVector_str[j] = specificOther-&gt;cutFlowVector_str[j];
+          }
+
+          _num_MT2_90_SF += specificOther-&gt;_num_MT2_90_SF;
+          _num_MT2_90_DF += specificOther-&gt;_num_MT2_90_DF;
+          _num_MT2_120_SF += specificOther-&gt;_num_MT2_120_SF;
+          _num_MT2_120_DF += specificOther-&gt;_num_MT2_120_DF;
+          _num_MT2_150_SF += specificOther-&gt;_num_MT2_150_SF;
+          _num_MT2_150_DF += specificOther-&gt;_num_MT2_150_DF;
+          _num_WWa_SF += specificOther-&gt;_num_WWa_SF;
+          _num_WWa_DF += specificOther-&gt;_num_WWa_DF;
+          _num_WWb_SF += specificOther-&gt;_num_WWb_SF;
+          _num_WWb_DF += specificOther-&gt;_num_WWb_DF;
+          _num_WWc_SF += specificOther-&gt;_num_WWc_SF;
+          _num_WWc_DF += specificOther-&gt;_num_WWc_DF;
+          _num_Zjets += specificOther-&gt;_num_Zjets;
+        }
 
 
-      void collect_results() {
+        void collect_results()
+        {
 
-        // add_result(SignalRegionData(&quot;SR label&quot;, n_obs, {n_sig_MC, n_sig_MC_sys}, {n_bkg, n_bkg_err}));
+          #ifdef CUTFLOW
+            double scale_by=1.;
+            cout &lt;&lt; &quot;------------------------------------------------------------------------------------------------------------------------------ &quot;&lt;&lt;endl;
+            cout &lt;&lt; &quot;CUT FLOW: ATLAS 8 TeV 2-lepton EW paper SUSY-2013-11&quot;&lt;&lt;endl;
+            cout &lt;&lt; &quot;------------------------------------------------------------------------------------------------------------------------------&quot;&lt;&lt;endl;
+            cout&lt;&lt; right &lt;&lt; setw(40) &lt;&lt; &quot;CUT&quot; &lt;&lt;  &quot;,&quot; &lt;&lt; setw(20) &lt;&lt; &quot;RAW&quot; &lt;&lt;  &quot;,&quot; &lt;&lt; setw(20) &lt;&lt; &quot;SCALED&quot;
+            &lt;&lt;  &quot;,&quot; &lt;&lt; setw(20) &lt;&lt; &quot;%&quot; &lt;&lt;  &quot;,&quot; &lt;&lt; setw(20) &lt;&lt; endl;
+            for (int j=0; j&lt;NCUTS; j++)
+            {
+                cout &lt;&lt; right &lt;&lt;  setw(40) &lt;&lt; cutFlowVector_str[j].c_str() &lt;&lt;  &quot;,&quot; &lt;&lt; setw(20)
+                &lt;&lt; cutFlowVector[j] &lt;&lt;  &quot;,&quot; &lt;&lt; setw(20) &lt;&lt; cutFlowVector[j]*scale_by &lt;&lt;  &quot;,&quot; &lt;&lt; setw(20)
+                &lt;&lt; 100.*cutFlowVector[j]/cutFlowVector[0] &lt;&lt; &quot;%&quot; &lt;&lt; endl;
+            }
+            cout &lt;&lt; &quot;------------------------------------------------------------------------------------------------------------------------------ &quot;&lt;&lt;endl;
+          #endif
 
-        add_result(SignalRegionData(&quot;MT2_90_SF&quot;, 33., {_num_MT2_90_SF, 0.}, {38.2, 5.1}));
-        add_result(SignalRegionData(&quot;MT2_90_DF&quot;, 21., {_num_MT2_90_DF, 0.}, {23.3, 3.7}));
-        add_result(SignalRegionData(&quot;MT2_120_SF&quot;, 5., {_num_MT2_120_SF, 0.}, {8.9, 2.1}));
-        add_result(SignalRegionData(&quot;MT2_120_DF&quot;, 5., {_num_MT2_120_DF, 0.}, {3.6, 1.2}));
-        add_result(SignalRegionData(&quot;MT2_150_SF&quot;, 3., {_num_MT2_150_SF, 0.}, {3.2, 0.7}));
-        add_result(SignalRegionData(&quot;MT2_150_DF&quot;, 2., {_num_MT2_150_DF, 0.}, {1.0, 0.5}));
-        add_result(SignalRegionData(&quot;WWa_SF&quot;, 73., {_num_WWa_SF, 0.}, {86.5, 7.4}));
-        add_result(SignalRegionData(&quot;WWa_DF&quot;, 70., {_num_WWa_DF, 0.}, {73.6, 7.9}));
-        add_result(SignalRegionData(&quot;WWb_SF&quot;, 26., {_num_WWb_SF, 0.}, {30.2, 3.5}));
-        add_result(SignalRegionData(&quot;WWb_DF&quot;, 17., {_num_WWb_DF, 0.}, {18.1, 2.6}));
-        add_result(SignalRegionData(&quot;WWc_SF&quot;, 10., {_num_WWc_SF, 0.}, {20.3, 3.5}));
-        add_result(SignalRegionData(&quot;WWc_DF&quot;, 11., {_num_WWc_DF, 0.}, {9.0, 2.2}));
-        add_result(SignalRegionData(&quot;Zjets&quot;, 1., {_num_Zjets, 0.}, {1.4, 0.6}));
+          // add_result(SignalRegionData(&quot;SR label&quot;, n_obs, {n_sig_MC, n_sig_MC_sys}, {n_bkg, n_bkg_err}));
 
-        return;
-      }
+          add_result(SignalRegionData(&quot;MT2_90_SF&quot;, 33., {_num_MT2_90_SF, 0.}, {38.2, 5.1}));
+          add_result(SignalRegionData(&quot;MT2_90_DF&quot;, 21., {_num_MT2_90_DF, 0.}, {23.3, 3.7}));
+          add_result(SignalRegionData(&quot;MT2_120_SF&quot;, 5., {_num_MT2_120_SF, 0.}, {8.9, 2.1}));
+          add_result(SignalRegionData(&quot;MT2_120_DF&quot;, 5., {_num_MT2_120_DF, 0.}, {3.6, 1.2}));
+          add_result(SignalRegionData(&quot;MT2_150_SF&quot;, 3., {_num_MT2_150_SF, 0.}, {3.2, 0.7}));
+          add_result(SignalRegionData(&quot;MT2_150_DF&quot;, 2., {_num_MT2_150_DF, 0.}, {1.0, 0.5}));
+          add_result(SignalRegionData(&quot;WWa_SF&quot;, 73., {_num_WWa_SF, 0.}, {86.5, 7.4}));
+          add_result(SignalRegionData(&quot;WWa_DF&quot;, 70., {_num_WWa_DF, 0.}, {73.6, 7.9}));
+          add_result(SignalRegionData(&quot;WWb_SF&quot;, 26., {_num_WWb_SF, 0.}, {30.2, 3.5}));
+          add_result(SignalRegionData(&quot;WWb_DF&quot;, 17., {_num_WWb_DF, 0.}, {18.1, 2.6}));
+          add_result(SignalRegionData(&quot;WWc_SF&quot;, 10., {_num_WWc_SF, 0.}, {20.3, 3.5}));
+          add_result(SignalRegionData(&quot;WWc_DF&quot;, 11., {_num_WWc_DF, 0.}, {9.0, 2.2}));
+          add_result(SignalRegionData(&quot;Zjets&quot;, 1., {_num_Zjets, 0.}, {1.4, 0.6}));
+
+  //        plots_mt2_NOmt2_SF-&gt;createFile(luminosity(),(34.38103/50000));
+  //        plots_mt2_NOmt2_DF-&gt;createFile(luminosity(),(34.38103/50000));
+  //        plots_Zjets_NOmet_SF-&gt;createFile(luminosity(),(310.76/50000));
+  //        plots_WWa_NOmll_SF-&gt;createFile(luminosity(),(5550.178/50000));
+  //        plots_WWa_NOmll_DF-&gt;createFile(luminosity(),(5550.178/50000));
+  //        plots_WWa_NOmllORmet_SF-&gt;createFile(luminosity(),(5550.178/50000));
+  //        plots_WWa_NOmllORmet_DF-&gt;createFile(luminosity(),(5550.178/50000));
+
+          return;
+        }
 
 
-    protected:
-      void analysis_specific_reset() {
-        _num_MT2_90_SF=0;
-        _num_MT2_90_DF=0;
-        _num_MT2_120_SF=0;
-        _num_MT2_120_DF=0;
-        _num_MT2_150_SF=0;
-        _num_MT2_150_DF=0;
-        _num_WWa_SF=0;
-        _num_WWa_DF=0;
-        _num_WWb_SF=0;
-        _num_WWb_DF=0;
-        _num_WWc_SF=0;
-        _num_WWc_DF=0;
-        _num_Zjets=0;
+      protected:
+        void analysis_specific_reset()
+        {
+          _num_MT2_90_SF=0;
+          _num_MT2_90_DF=0;
+          _num_MT2_120_SF=0;
+          _num_MT2_120_DF=0;
+          _num_MT2_150_SF=0;
+          _num_MT2_150_DF=0;
+          _num_WWa_SF=0;
+          _num_WWa_DF=0;
+          _num_WWb_SF=0;
+          _num_WWb_DF=0;
+          _num_WWc_SF=0;
+          _num_WWc_DF=0;
+          _num_Zjets=0;
 
-        std::fill(cutFlowVector.begin(), cutFlowVector.end(), 0);
-      }
+          std::fill(cutFlowVector.begin(), cutFlowVector.end(), 0);
+        }
 
     };
 
@@ -921,7 +1056,7 @@ namespace Gambit {
 
   }
 }
-</code></pre><hr><p>Updated on 2022-09-08 at 03:46:48 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.a08b5ca912a508bc013bbd939befee438a0d2f798076e860e42147c7c0e2a01cf714847f7f5a2824876ce72867b0182df10e3537711faff352dd1ef41550be7c.js integrity="sha512-oItcqRKlCLwBO72Tm+/uQ4oNL3mAduhg5CFHx8DioBz3FIR/f1ooJIds5yhnsBgt8Q41N3Efr/NS3R70FVC+fA==" crossorigin=anonymous defer></script>
+</code></pre><hr><p>Updated on 2023-06-26 at 21:36:56 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.a08b5ca912a508bc013bbd939befee438a0d2f798076e860e42147c7c0e2a01cf714847f7f5a2824876ce72867b0182df10e3537711faff352dd1ef41550be7c.js integrity="sha512-oItcqRKlCLwBO72Tm+/uQ4oNL3mAduhg5CFHx8DioBz3FIR/f1ooJIds5yhnsBgt8Q41N3Efr/NS3R70FVC+fA==" crossorigin=anonymous defer></script>
 <script src=/js/highlight.min.ce91dadbce67e8eef36fa222c1c74c99f623c836cf6a316dffa1aeb390ab659d9a20d8145ceac39e049c555414fc360d31315e7980535dc6c03eb5374b7d559d.js integrity="sha512-zpHa285n6O7zb6IiwcdMmfYjyDbPajFt/6Gus5CrZZ2aINgUXOrDngScVVQU/DYNMTFeeYBTXcbAPrU3S31VnQ==" crossorigin=anonymous defer></script>
 <script src=/main.min.57d9a84956f7d60008c47938c7fdd2f75e8618ff1d09c5a5e2b32f91debaf7681f7ceca8b51aded60067c2136172134a91ebc0674487c76a04e3244d927ebdde.js integrity="sha512-V9moSVb31gAIxHk4x/3S916GGP8dCcWl4rMvkd6692gffOyotRre1gBnwhNhchNKkevAZ0SHx2oE4yRNkn693g==" crossorigin=anonymous defer></script>
-<script src=/index.min.2a2f6bd25e0a661102d8769165ef9d3273d4db5ae6edbc62261887d88167016dfb0f6310393f582bcc424de5dc6eab3a529fd305ba4c3afc8e551f0093ed322c.js integrity="sha512-Ki9r0l4KZhEC2HaRZe+dMnPU21rm7bxiJhiH2IFnAW37D2MQOT9YK8xCTeXcbqs6Up/TBbpMOvyOVR8Ak+0yLA==" crossorigin=anonymous defer></script></body></html>
+<script src=/index.min.95720397d55302de0e04fb8f4bf89a7396888a3be86803aa187cbc45924e9c35452b4bef718cd568b25ad872307d8f5537eab4c0045b8043c40628674a4fc53d.js integrity="sha512-lXIDl9VTAt4OBPuPS/iac5aIijvoaAOqGHy8RZJOnDVFK0vvcYzVaLJa2HIwfY9VN+q0wARbgEPEBihnSk/FPQ==" crossorigin=anonymous defer></script></body></html>

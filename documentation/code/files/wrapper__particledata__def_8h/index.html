@@ -43,7 +43,7 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             get_BEptr()-&gt;initPtr__BOSS((*infoPtrIn).get_BEptr(), (*settingsPtrIn).get_BEptr(), (*rndmPtrIn).get_BEptr(), (*couplingsPtrIn).get_BEptr());
         }
         
-        inline bool ParticleData::init(::std::basic_string&lt;char&gt; startFile)
+        inline bool ParticleData::init(std::string startFile)
         {
             return get_BEptr()-&gt;init(startFile);
         }
@@ -58,27 +58,27 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             return get_BEptr()-&gt;init__BOSS(*particleDataIn.get_BEptr());
         }
         
-        inline bool ParticleData::reInit(::std::basic_string&lt;char&gt; startFile, bool xmlFormat)
+        inline bool ParticleData::reInit(std::string startFile, bool xmlFormat)
         {
             return get_BEptr()-&gt;reInit(startFile, xmlFormat);
         }
         
-        inline bool ParticleData::reInit(::std::basic_string&lt;char&gt; startFile)
+        inline bool ParticleData::reInit(std::string startFile)
         {
             return get_BEptr()-&gt;reInit__BOSS(startFile);
         }
         
-        inline bool ParticleData::readXML(::std::basic_string&lt;char&gt; inFile, bool reset)
+        inline bool ParticleData::readXML(std::string inFile, bool reset)
         {
             return get_BEptr()-&gt;readXML(inFile, reset);
         }
         
-        inline bool ParticleData::readXML(::std::basic_string&lt;char&gt; inFile)
+        inline bool ParticleData::readXML(std::string inFile)
         {
             return get_BEptr()-&gt;readXML__BOSS(inFile);
         }
         
-        inline void ParticleData::listXML(::std::basic_string&lt;char&gt; outFile)
+        inline void ParticleData::listXML(std::string outFile)
         {
             get_BEptr()-&gt;listXML(outFile);
         }
@@ -88,12 +88,12 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             return get_BEptr()-&gt;copyXML__BOSS(*particleDataIn.get_BEptr());
         }
         
-        inline bool ParticleData::loadXML(::std::basic_string&lt;char&gt; inFile, bool reset)
+        inline bool ParticleData::loadXML(std::string inFile, bool reset)
         {
             return get_BEptr()-&gt;loadXML(inFile, reset);
         }
         
-        inline bool ParticleData::loadXML(::std::basic_string&lt;char&gt; inFile)
+        inline bool ParticleData::loadXML(std::string inFile)
         {
             return get_BEptr()-&gt;loadXML__BOSS(inFile);
         }
@@ -108,32 +108,32 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             return get_BEptr()-&gt;processXML__BOSS();
         }
         
-        inline bool ParticleData::readFF(::std::basic_string&lt;char&gt; inFile, bool reset)
+        inline bool ParticleData::readFF(std::string inFile, bool reset)
         {
             return get_BEptr()-&gt;readFF(inFile, reset);
         }
         
-        inline bool ParticleData::readFF(::std::basic_string&lt;char&gt; inFile)
+        inline bool ParticleData::readFF(std::string inFile)
         {
             return get_BEptr()-&gt;readFF__BOSS(inFile);
         }
         
-        inline void ParticleData::listFF(::std::basic_string&lt;char&gt; outFile)
+        inline void ParticleData::listFF(std::string outFile)
         {
             get_BEptr()-&gt;listFF(outFile);
         }
         
-        inline bool ParticleData::readString(::std::basic_string&lt;char&gt; lineIn, bool warn, ::std::basic_ostream&lt;char&gt;&amp; os)
+        inline bool ParticleData::readString(std::string lineIn, bool warn, std::ostream&amp; os)
         {
             return get_BEptr()-&gt;readString(lineIn, warn, os);
         }
         
-        inline bool ParticleData::readString(::std::basic_string&lt;char&gt; lineIn, bool warn)
+        inline bool ParticleData::readString(std::string lineIn, bool warn)
         {
             return get_BEptr()-&gt;readString__BOSS(lineIn, warn);
         }
         
-        inline bool ParticleData::readString(::std::basic_string&lt;char&gt; lineIn)
+        inline bool ParticleData::readString(std::string lineIn)
         {
             return get_BEptr()-&gt;readString__BOSS(lineIn);
         }
@@ -143,7 +143,7 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             return get_BEptr()-&gt;readingFailed();
         }
         
-        inline void ParticleData::listAll(::std::basic_ostream&lt;char&gt;&amp; os)
+        inline void ParticleData::listAll(std::ostream&amp; os)
         {
             get_BEptr()-&gt;listAll(os);
         }
@@ -153,7 +153,7 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             get_BEptr()-&gt;listAll__BOSS();
         }
         
-        inline void ParticleData::listChanged(::std::basic_ostream&lt;char&gt;&amp; os)
+        inline void ParticleData::listChanged(std::ostream&amp; os)
         {
             get_BEptr()-&gt;listChanged(os);
         }
@@ -163,7 +163,7 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             get_BEptr()-&gt;listChanged__BOSS();
         }
         
-        inline void ParticleData::listChanged(bool changedRes, ::std::basic_ostream&lt;char&gt;&amp; os)
+        inline void ParticleData::listChanged(bool changedRes, std::ostream&amp; os)
         {
             get_BEptr()-&gt;listChanged(changedRes, os);
         }
@@ -173,7 +173,7 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             get_BEptr()-&gt;listChanged__BOSS(changedRes);
         }
         
-        inline void ParticleData::list(bool changedOnly, bool changedRes, ::std::basic_ostream&lt;char&gt;&amp; os)
+        inline void ParticleData::list(bool changedOnly, bool changedRes, std::ostream&amp; os)
         {
             get_BEptr()-&gt;list(changedOnly, changedRes, os);
         }
@@ -193,7 +193,7 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             get_BEptr()-&gt;list__BOSS();
         }
         
-        inline void ParticleData::list(int idList, ::std::basic_ostream&lt;char&gt;&amp; os)
+        inline void ParticleData::list(int idList, std::ostream&amp; os)
         {
             get_BEptr()-&gt;list(idList, os);
         }
@@ -203,17 +203,17 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             get_BEptr()-&gt;list__BOSS(idList);
         }
         
-        inline void ParticleData::list(::std::vector&lt;int&gt; idList, ::std::basic_ostream&lt;char&gt;&amp; os)
+        inline void ParticleData::list(std::vector&lt;int&gt; idList, std::ostream&amp; os)
         {
             get_BEptr()-&gt;list(idList, os);
         }
         
-        inline void ParticleData::list(::std::vector&lt;int&gt; idList)
+        inline void ParticleData::list(std::vector&lt;int&gt; idList)
         {
             get_BEptr()-&gt;list__BOSS(idList);
         }
         
-        inline void ParticleData::checkTable(::std::basic_ostream&lt;char&gt;&amp; os)
+        inline void ParticleData::checkTable(std::ostream&amp; os)
         {
             get_BEptr()-&gt;checkTable(os);
         }
@@ -223,7 +223,7 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             get_BEptr()-&gt;checkTable__BOSS();
         }
         
-        inline void ParticleData::checkTable(int verbosity, ::std::basic_ostream&lt;char&gt;&amp; os)
+        inline void ParticleData::checkTable(int verbosity, std::ostream&amp; os)
         {
             get_BEptr()-&gt;checkTable(verbosity, os);
         }
@@ -233,47 +233,47 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             get_BEptr()-&gt;checkTable__BOSS(verbosity);
         }
         
-        inline void ParticleData::addParticle(int idIn, ::std::basic_string&lt;char&gt; nameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn, double mMaxIn, double tau0In)
+        inline void ParticleData::addParticle(int idIn, std::string nameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn, double mMaxIn, double tau0In)
         {
             get_BEptr()-&gt;addParticle(idIn, nameIn, spinTypeIn, chargeTypeIn, colTypeIn, m0In, mWidthIn, mMinIn, mMaxIn, tau0In);
         }
         
-        inline void ParticleData::addParticle(int idIn, ::std::basic_string&lt;char&gt; nameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn, double mMaxIn)
+        inline void ParticleData::addParticle(int idIn, std::string nameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn, double mMaxIn)
         {
             get_BEptr()-&gt;addParticle__BOSS(idIn, nameIn, spinTypeIn, chargeTypeIn, colTypeIn, m0In, mWidthIn, mMinIn, mMaxIn);
         }
         
-        inline void ParticleData::addParticle(int idIn, ::std::basic_string&lt;char&gt; nameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn)
+        inline void ParticleData::addParticle(int idIn, std::string nameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn)
         {
             get_BEptr()-&gt;addParticle__BOSS(idIn, nameIn, spinTypeIn, chargeTypeIn, colTypeIn, m0In, mWidthIn, mMinIn);
         }
         
-        inline void ParticleData::addParticle(int idIn, ::std::basic_string&lt;char&gt; nameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn)
+        inline void ParticleData::addParticle(int idIn, std::string nameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn)
         {
             get_BEptr()-&gt;addParticle__BOSS(idIn, nameIn, spinTypeIn, chargeTypeIn, colTypeIn, m0In, mWidthIn);
         }
         
-        inline void ParticleData::addParticle(int idIn, ::std::basic_string&lt;char&gt; nameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In)
+        inline void ParticleData::addParticle(int idIn, std::string nameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In)
         {
             get_BEptr()-&gt;addParticle__BOSS(idIn, nameIn, spinTypeIn, chargeTypeIn, colTypeIn, m0In);
         }
         
-        inline void ParticleData::addParticle(int idIn, ::std::basic_string&lt;char&gt; nameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn)
+        inline void ParticleData::addParticle(int idIn, std::string nameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn)
         {
             get_BEptr()-&gt;addParticle__BOSS(idIn, nameIn, spinTypeIn, chargeTypeIn, colTypeIn);
         }
         
-        inline void ParticleData::addParticle(int idIn, ::std::basic_string&lt;char&gt; nameIn, int spinTypeIn, int chargeTypeIn)
+        inline void ParticleData::addParticle(int idIn, std::string nameIn, int spinTypeIn, int chargeTypeIn)
         {
             get_BEptr()-&gt;addParticle__BOSS(idIn, nameIn, spinTypeIn, chargeTypeIn);
         }
         
-        inline void ParticleData::addParticle(int idIn, ::std::basic_string&lt;char&gt; nameIn, int spinTypeIn)
+        inline void ParticleData::addParticle(int idIn, std::string nameIn, int spinTypeIn)
         {
             get_BEptr()-&gt;addParticle__BOSS(idIn, nameIn, spinTypeIn);
         }
         
-        inline void ParticleData::addParticle(int idIn, ::std::basic_string&lt;char&gt; nameIn)
+        inline void ParticleData::addParticle(int idIn, std::string nameIn)
         {
             get_BEptr()-&gt;addParticle__BOSS(idIn, nameIn);
         }
@@ -283,92 +283,92 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             get_BEptr()-&gt;addParticle__BOSS(idIn);
         }
         
-        inline void ParticleData::addParticle(int idIn, ::std::basic_string&lt;char&gt; nameIn, ::std::basic_string&lt;char&gt; antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn, double mMaxIn, double tau0In)
+        inline void ParticleData::addParticle(int idIn, std::string nameIn, std::string antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn, double mMaxIn, double tau0In)
         {
             get_BEptr()-&gt;addParticle(idIn, nameIn, antiNameIn, spinTypeIn, chargeTypeIn, colTypeIn, m0In, mWidthIn, mMinIn, mMaxIn, tau0In);
         }
         
-        inline void ParticleData::addParticle(int idIn, ::std::basic_string&lt;char&gt; nameIn, ::std::basic_string&lt;char&gt; antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn, double mMaxIn)
+        inline void ParticleData::addParticle(int idIn, std::string nameIn, std::string antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn, double mMaxIn)
         {
             get_BEptr()-&gt;addParticle__BOSS(idIn, nameIn, antiNameIn, spinTypeIn, chargeTypeIn, colTypeIn, m0In, mWidthIn, mMinIn, mMaxIn);
         }
         
-        inline void ParticleData::addParticle(int idIn, ::std::basic_string&lt;char&gt; nameIn, ::std::basic_string&lt;char&gt; antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn)
+        inline void ParticleData::addParticle(int idIn, std::string nameIn, std::string antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn)
         {
             get_BEptr()-&gt;addParticle__BOSS(idIn, nameIn, antiNameIn, spinTypeIn, chargeTypeIn, colTypeIn, m0In, mWidthIn, mMinIn);
         }
         
-        inline void ParticleData::addParticle(int idIn, ::std::basic_string&lt;char&gt; nameIn, ::std::basic_string&lt;char&gt; antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn)
+        inline void ParticleData::addParticle(int idIn, std::string nameIn, std::string antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn)
         {
             get_BEptr()-&gt;addParticle__BOSS(idIn, nameIn, antiNameIn, spinTypeIn, chargeTypeIn, colTypeIn, m0In, mWidthIn);
         }
         
-        inline void ParticleData::addParticle(int idIn, ::std::basic_string&lt;char&gt; nameIn, ::std::basic_string&lt;char&gt; antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In)
+        inline void ParticleData::addParticle(int idIn, std::string nameIn, std::string antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In)
         {
             get_BEptr()-&gt;addParticle__BOSS(idIn, nameIn, antiNameIn, spinTypeIn, chargeTypeIn, colTypeIn, m0In);
         }
         
-        inline void ParticleData::addParticle(int idIn, ::std::basic_string&lt;char&gt; nameIn, ::std::basic_string&lt;char&gt; antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn)
+        inline void ParticleData::addParticle(int idIn, std::string nameIn, std::string antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn)
         {
             get_BEptr()-&gt;addParticle__BOSS(idIn, nameIn, antiNameIn, spinTypeIn, chargeTypeIn, colTypeIn);
         }
         
-        inline void ParticleData::addParticle(int idIn, ::std::basic_string&lt;char&gt; nameIn, ::std::basic_string&lt;char&gt; antiNameIn, int spinTypeIn, int chargeTypeIn)
+        inline void ParticleData::addParticle(int idIn, std::string nameIn, std::string antiNameIn, int spinTypeIn, int chargeTypeIn)
         {
             get_BEptr()-&gt;addParticle__BOSS(idIn, nameIn, antiNameIn, spinTypeIn, chargeTypeIn);
         }
         
-        inline void ParticleData::addParticle(int idIn, ::std::basic_string&lt;char&gt; nameIn, ::std::basic_string&lt;char&gt; antiNameIn, int spinTypeIn)
+        inline void ParticleData::addParticle(int idIn, std::string nameIn, std::string antiNameIn, int spinTypeIn)
         {
             get_BEptr()-&gt;addParticle__BOSS(idIn, nameIn, antiNameIn, spinTypeIn);
         }
         
-        inline void ParticleData::addParticle(int idIn, ::std::basic_string&lt;char&gt; nameIn, ::std::basic_string&lt;char&gt; antiNameIn)
+        inline void ParticleData::addParticle(int idIn, std::string nameIn, std::string antiNameIn)
         {
             get_BEptr()-&gt;addParticle__BOSS(idIn, nameIn, antiNameIn);
         }
         
-        inline void ParticleData::setAll(int idIn, ::std::basic_string&lt;char&gt; nameIn, ::std::basic_string&lt;char&gt; antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn, double mMaxIn, double tau0In)
+        inline void ParticleData::setAll(int idIn, std::string nameIn, std::string antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn, double mMaxIn, double tau0In)
         {
             get_BEptr()-&gt;setAll(idIn, nameIn, antiNameIn, spinTypeIn, chargeTypeIn, colTypeIn, m0In, mWidthIn, mMinIn, mMaxIn, tau0In);
         }
         
-        inline void ParticleData::setAll(int idIn, ::std::basic_string&lt;char&gt; nameIn, ::std::basic_string&lt;char&gt; antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn, double mMaxIn)
+        inline void ParticleData::setAll(int idIn, std::string nameIn, std::string antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn, double mMaxIn)
         {
             get_BEptr()-&gt;setAll__BOSS(idIn, nameIn, antiNameIn, spinTypeIn, chargeTypeIn, colTypeIn, m0In, mWidthIn, mMinIn, mMaxIn);
         }
         
-        inline void ParticleData::setAll(int idIn, ::std::basic_string&lt;char&gt; nameIn, ::std::basic_string&lt;char&gt; antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn)
+        inline void ParticleData::setAll(int idIn, std::string nameIn, std::string antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn)
         {
             get_BEptr()-&gt;setAll__BOSS(idIn, nameIn, antiNameIn, spinTypeIn, chargeTypeIn, colTypeIn, m0In, mWidthIn, mMinIn);
         }
         
-        inline void ParticleData::setAll(int idIn, ::std::basic_string&lt;char&gt; nameIn, ::std::basic_string&lt;char&gt; antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn)
+        inline void ParticleData::setAll(int idIn, std::string nameIn, std::string antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn)
         {
             get_BEptr()-&gt;setAll__BOSS(idIn, nameIn, antiNameIn, spinTypeIn, chargeTypeIn, colTypeIn, m0In, mWidthIn);
         }
         
-        inline void ParticleData::setAll(int idIn, ::std::basic_string&lt;char&gt; nameIn, ::std::basic_string&lt;char&gt; antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In)
+        inline void ParticleData::setAll(int idIn, std::string nameIn, std::string antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In)
         {
             get_BEptr()-&gt;setAll__BOSS(idIn, nameIn, antiNameIn, spinTypeIn, chargeTypeIn, colTypeIn, m0In);
         }
         
-        inline void ParticleData::setAll(int idIn, ::std::basic_string&lt;char&gt; nameIn, ::std::basic_string&lt;char&gt; antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn)
+        inline void ParticleData::setAll(int idIn, std::string nameIn, std::string antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn)
         {
             get_BEptr()-&gt;setAll__BOSS(idIn, nameIn, antiNameIn, spinTypeIn, chargeTypeIn, colTypeIn);
         }
         
-        inline void ParticleData::setAll(int idIn, ::std::basic_string&lt;char&gt; nameIn, ::std::basic_string&lt;char&gt; antiNameIn, int spinTypeIn, int chargeTypeIn)
+        inline void ParticleData::setAll(int idIn, std::string nameIn, std::string antiNameIn, int spinTypeIn, int chargeTypeIn)
         {
             get_BEptr()-&gt;setAll__BOSS(idIn, nameIn, antiNameIn, spinTypeIn, chargeTypeIn);
         }
         
-        inline void ParticleData::setAll(int idIn, ::std::basic_string&lt;char&gt; nameIn, ::std::basic_string&lt;char&gt; antiNameIn, int spinTypeIn)
+        inline void ParticleData::setAll(int idIn, std::string nameIn, std::string antiNameIn, int spinTypeIn)
         {
             get_BEptr()-&gt;setAll__BOSS(idIn, nameIn, antiNameIn, spinTypeIn);
         }
         
-        inline void ParticleData::setAll(int idIn, ::std::basic_string&lt;char&gt; nameIn, ::std::basic_string&lt;char&gt; antiNameIn)
+        inline void ParticleData::setAll(int idIn, std::string nameIn, std::string antiNameIn)
         {
             get_BEptr()-&gt;setAll__BOSS(idIn, nameIn, antiNameIn);
         }
@@ -383,17 +383,17 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             return get_BEptr()-&gt;nextId(idIn);
         }
         
-        inline void ParticleData::name(int idIn, ::std::basic_string&lt;char&gt; nameIn)
+        inline void ParticleData::name(int idIn, std::string nameIn)
         {
             get_BEptr()-&gt;name(idIn, nameIn);
         }
         
-        inline void ParticleData::antiName(int idIn, ::std::basic_string&lt;char&gt; antiNameIn)
+        inline void ParticleData::antiName(int idIn, std::string antiNameIn)
         {
             get_BEptr()-&gt;antiName(idIn, antiNameIn);
         }
         
-        inline void ParticleData::names(int idIn, ::std::basic_string&lt;char&gt; nameIn, ::std::basic_string&lt;char&gt; antiNameIn)
+        inline void ParticleData::names(int idIn, std::string nameIn, std::string antiNameIn)
         {
             get_BEptr()-&gt;names(idIn, nameIn, antiNameIn);
         }
@@ -473,7 +473,7 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             return get_BEptr()-&gt;hasAnti(idIn);
         }
         
-        inline ::std::basic_string&lt;char&gt; ParticleData::name(int idIn)
+        inline ::std::string ParticleData::name(int idIn)
         {
             return get_BEptr()-&gt;name(idIn);
         }
@@ -812,7 +812,7 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 #include &quot;gambit/Backends/backend_undefs.hpp&quot;
 
 #endif /* __wrapper_ParticleData_def_Pythia_8_212_h__ */
-</code></pre><hr><p>Updated on 2022-09-08 at 03:46:49 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.a08b5ca912a508bc013bbd939befee438a0d2f798076e860e42147c7c0e2a01cf714847f7f5a2824876ce72867b0182df10e3537711faff352dd1ef41550be7c.js integrity="sha512-oItcqRKlCLwBO72Tm+/uQ4oNL3mAduhg5CFHx8DioBz3FIR/f1ooJIds5yhnsBgt8Q41N3Efr/NS3R70FVC+fA==" crossorigin=anonymous defer></script>
+</code></pre><hr><p>Updated on 2023-06-26 at 21:36:57 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.a08b5ca912a508bc013bbd939befee438a0d2f798076e860e42147c7c0e2a01cf714847f7f5a2824876ce72867b0182df10e3537711faff352dd1ef41550be7c.js integrity="sha512-oItcqRKlCLwBO72Tm+/uQ4oNL3mAduhg5CFHx8DioBz3FIR/f1ooJIds5yhnsBgt8Q41N3Efr/NS3R70FVC+fA==" crossorigin=anonymous defer></script>
 <script src=/js/highlight.min.ce91dadbce67e8eef36fa222c1c74c99f623c836cf6a316dffa1aeb390ab659d9a20d8145ceac39e049c555414fc360d31315e7980535dc6c03eb5374b7d559d.js integrity="sha512-zpHa285n6O7zb6IiwcdMmfYjyDbPajFt/6Gus5CrZZ2aINgUXOrDngScVVQU/DYNMTFeeYBTXcbAPrU3S31VnQ==" crossorigin=anonymous defer></script>
 <script src=/main.min.57d9a84956f7d60008c47938c7fdd2f75e8618ff1d09c5a5e2b32f91debaf7681f7ceca8b51aded60067c2136172134a91ebc0674487c76a04e3244d927ebdde.js integrity="sha512-V9moSVb31gAIxHk4x/3S916GGP8dCcWl4rMvkd6692gffOyotRre1gBnwhNhchNKkevAZ0SHx2oE4yRNkn693g==" crossorigin=anonymous defer></script>
-<script src=/index.min.2a2f6bd25e0a661102d8769165ef9d3273d4db5ae6edbc62261887d88167016dfb0f6310393f582bcc424de5dc6eab3a529fd305ba4c3afc8e551f0093ed322c.js integrity="sha512-Ki9r0l4KZhEC2HaRZe+dMnPU21rm7bxiJhiH2IFnAW37D2MQOT9YK8xCTeXcbqs6Up/TBbpMOvyOVR8Ak+0yLA==" crossorigin=anonymous defer></script></body></html>
+<script src=/index.min.95720397d55302de0e04fb8f4bf89a7396888a3be86803aa187cbc45924e9c35452b4bef718cd568b25ad872307d8f5537eab4c0045b8043c40628674a4fc53d.js integrity="sha512-lXIDl9VTAt4OBPuPS/iac5aIijvoaAOqGHy8RZJOnDVFK0vvcYzVaLJa2HIwfY9VN+q0wARbgEPEBihnSk/FPQ==" crossorigin=anonymous defer></script></body></html>

@@ -46,62 +46,62 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             get_BEptr()-&gt;initPtr__BOSS((*particleDataPtrIn).get_BEptr());
         }
         
-        inline void ParticleDataEntry::setAll(::std::basic_string&lt;char&gt; nameIn, ::std::basic_string&lt;char&gt; antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn, double mMaxIn, double tau0In)
+        inline void ParticleDataEntry::setAll(std::string nameIn, std::string antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn, double mMaxIn, double tau0In)
         {
             get_BEptr()-&gt;setAll(nameIn, antiNameIn, spinTypeIn, chargeTypeIn, colTypeIn, m0In, mWidthIn, mMinIn, mMaxIn, tau0In);
         }
         
-        inline void ParticleDataEntry::setAll(::std::basic_string&lt;char&gt; nameIn, ::std::basic_string&lt;char&gt; antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn, double mMaxIn)
+        inline void ParticleDataEntry::setAll(std::string nameIn, std::string antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn, double mMaxIn)
         {
             get_BEptr()-&gt;setAll__BOSS(nameIn, antiNameIn, spinTypeIn, chargeTypeIn, colTypeIn, m0In, mWidthIn, mMinIn, mMaxIn);
         }
         
-        inline void ParticleDataEntry::setAll(::std::basic_string&lt;char&gt; nameIn, ::std::basic_string&lt;char&gt; antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn)
+        inline void ParticleDataEntry::setAll(std::string nameIn, std::string antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn)
         {
             get_BEptr()-&gt;setAll__BOSS(nameIn, antiNameIn, spinTypeIn, chargeTypeIn, colTypeIn, m0In, mWidthIn, mMinIn);
         }
         
-        inline void ParticleDataEntry::setAll(::std::basic_string&lt;char&gt; nameIn, ::std::basic_string&lt;char&gt; antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn)
+        inline void ParticleDataEntry::setAll(std::string nameIn, std::string antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn)
         {
             get_BEptr()-&gt;setAll__BOSS(nameIn, antiNameIn, spinTypeIn, chargeTypeIn, colTypeIn, m0In, mWidthIn);
         }
         
-        inline void ParticleDataEntry::setAll(::std::basic_string&lt;char&gt; nameIn, ::std::basic_string&lt;char&gt; antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In)
+        inline void ParticleDataEntry::setAll(std::string nameIn, std::string antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In)
         {
             get_BEptr()-&gt;setAll__BOSS(nameIn, antiNameIn, spinTypeIn, chargeTypeIn, colTypeIn, m0In);
         }
         
-        inline void ParticleDataEntry::setAll(::std::basic_string&lt;char&gt; nameIn, ::std::basic_string&lt;char&gt; antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn)
+        inline void ParticleDataEntry::setAll(std::string nameIn, std::string antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn)
         {
             get_BEptr()-&gt;setAll__BOSS(nameIn, antiNameIn, spinTypeIn, chargeTypeIn, colTypeIn);
         }
         
-        inline void ParticleDataEntry::setAll(::std::basic_string&lt;char&gt; nameIn, ::std::basic_string&lt;char&gt; antiNameIn, int spinTypeIn, int chargeTypeIn)
+        inline void ParticleDataEntry::setAll(std::string nameIn, std::string antiNameIn, int spinTypeIn, int chargeTypeIn)
         {
             get_BEptr()-&gt;setAll__BOSS(nameIn, antiNameIn, spinTypeIn, chargeTypeIn);
         }
         
-        inline void ParticleDataEntry::setAll(::std::basic_string&lt;char&gt; nameIn, ::std::basic_string&lt;char&gt; antiNameIn, int spinTypeIn)
+        inline void ParticleDataEntry::setAll(std::string nameIn, std::string antiNameIn, int spinTypeIn)
         {
             get_BEptr()-&gt;setAll__BOSS(nameIn, antiNameIn, spinTypeIn);
         }
         
-        inline void ParticleDataEntry::setAll(::std::basic_string&lt;char&gt; nameIn, ::std::basic_string&lt;char&gt; antiNameIn)
+        inline void ParticleDataEntry::setAll(std::string nameIn, std::string antiNameIn)
         {
             get_BEptr()-&gt;setAll__BOSS(nameIn, antiNameIn);
         }
         
-        inline void ParticleDataEntry::setName(::std::basic_string&lt;char&gt; nameIn)
+        inline void ParticleDataEntry::setName(std::string nameIn)
         {
             get_BEptr()-&gt;setName(nameIn);
         }
         
-        inline void ParticleDataEntry::setAntiName(::std::basic_string&lt;char&gt; antiNameIn)
+        inline void ParticleDataEntry::setAntiName(std::string antiNameIn)
         {
             get_BEptr()-&gt;setAntiName(antiNameIn);
         }
         
-        inline void ParticleDataEntry::setNames(::std::basic_string&lt;char&gt; nameIn, ::std::basic_string&lt;char&gt; antiNameIn)
+        inline void ParticleDataEntry::setNames(std::string nameIn, std::string antiNameIn)
         {
             get_BEptr()-&gt;setNames(nameIn, antiNameIn);
         }
@@ -206,12 +206,12 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             return get_BEptr()-&gt;hasAnti();
         }
         
-        inline ::std::basic_string&lt;char&gt; ParticleDataEntry::name(int idIn) const
+        inline ::std::string ParticleDataEntry::name(int idIn) const
         {
             return get_BEptr()-&gt;name(idIn);
         }
         
-        inline ::std::basic_string&lt;char&gt; ParticleDataEntry::name() const
+        inline ::std::string ParticleDataEntry::name() const
         {
             return get_BEptr()-&gt;name__BOSS();
         }
@@ -603,63 +603,63 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         
         
         // Wrappers for original constructors: 
-        inline ParticleDataEntry::ParticleDataEntry(int idIn, ::std::basic_string&lt;char&gt; nameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn, double mMaxIn, double tau0In) :
+        inline ParticleDataEntry::ParticleDataEntry(int idIn, std::string nameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn, double mMaxIn, double tau0In) :
             WrapperBase(__factory0(idIn, nameIn, spinTypeIn, chargeTypeIn, colTypeIn, m0In, mWidthIn, mMinIn, mMaxIn, tau0In))
         {
             get_BEptr()-&gt;set_wptr(this);
             get_BEptr()-&gt;set_delete_wrapper(false);
         }
         
-        inline ParticleDataEntry::ParticleDataEntry(int idIn, ::std::basic_string&lt;char&gt; nameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn, double mMaxIn) :
+        inline ParticleDataEntry::ParticleDataEntry(int idIn, std::string nameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn, double mMaxIn) :
             WrapperBase(__factory1(idIn, nameIn, spinTypeIn, chargeTypeIn, colTypeIn, m0In, mWidthIn, mMinIn, mMaxIn))
         {
             get_BEptr()-&gt;set_wptr(this);
             get_BEptr()-&gt;set_delete_wrapper(false);
         }
         
-        inline ParticleDataEntry::ParticleDataEntry(int idIn, ::std::basic_string&lt;char&gt; nameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn) :
+        inline ParticleDataEntry::ParticleDataEntry(int idIn, std::string nameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn) :
             WrapperBase(__factory2(idIn, nameIn, spinTypeIn, chargeTypeIn, colTypeIn, m0In, mWidthIn, mMinIn))
         {
             get_BEptr()-&gt;set_wptr(this);
             get_BEptr()-&gt;set_delete_wrapper(false);
         }
         
-        inline ParticleDataEntry::ParticleDataEntry(int idIn, ::std::basic_string&lt;char&gt; nameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn) :
+        inline ParticleDataEntry::ParticleDataEntry(int idIn, std::string nameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn) :
             WrapperBase(__factory3(idIn, nameIn, spinTypeIn, chargeTypeIn, colTypeIn, m0In, mWidthIn))
         {
             get_BEptr()-&gt;set_wptr(this);
             get_BEptr()-&gt;set_delete_wrapper(false);
         }
         
-        inline ParticleDataEntry::ParticleDataEntry(int idIn, ::std::basic_string&lt;char&gt; nameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In) :
+        inline ParticleDataEntry::ParticleDataEntry(int idIn, std::string nameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In) :
             WrapperBase(__factory4(idIn, nameIn, spinTypeIn, chargeTypeIn, colTypeIn, m0In))
         {
             get_BEptr()-&gt;set_wptr(this);
             get_BEptr()-&gt;set_delete_wrapper(false);
         }
         
-        inline ParticleDataEntry::ParticleDataEntry(int idIn, ::std::basic_string&lt;char&gt; nameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn) :
+        inline ParticleDataEntry::ParticleDataEntry(int idIn, std::string nameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn) :
             WrapperBase(__factory5(idIn, nameIn, spinTypeIn, chargeTypeIn, colTypeIn))
         {
             get_BEptr()-&gt;set_wptr(this);
             get_BEptr()-&gt;set_delete_wrapper(false);
         }
         
-        inline ParticleDataEntry::ParticleDataEntry(int idIn, ::std::basic_string&lt;char&gt; nameIn, int spinTypeIn, int chargeTypeIn) :
+        inline ParticleDataEntry::ParticleDataEntry(int idIn, std::string nameIn, int spinTypeIn, int chargeTypeIn) :
             WrapperBase(__factory6(idIn, nameIn, spinTypeIn, chargeTypeIn))
         {
             get_BEptr()-&gt;set_wptr(this);
             get_BEptr()-&gt;set_delete_wrapper(false);
         }
         
-        inline ParticleDataEntry::ParticleDataEntry(int idIn, ::std::basic_string&lt;char&gt; nameIn, int spinTypeIn) :
+        inline ParticleDataEntry::ParticleDataEntry(int idIn, std::string nameIn, int spinTypeIn) :
             WrapperBase(__factory7(idIn, nameIn, spinTypeIn))
         {
             get_BEptr()-&gt;set_wptr(this);
             get_BEptr()-&gt;set_delete_wrapper(false);
         }
         
-        inline ParticleDataEntry::ParticleDataEntry(int idIn, ::std::basic_string&lt;char&gt; nameIn) :
+        inline ParticleDataEntry::ParticleDataEntry(int idIn, std::string nameIn) :
             WrapperBase(__factory8(idIn, nameIn))
         {
             get_BEptr()-&gt;set_wptr(this);
@@ -680,63 +680,63 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             get_BEptr()-&gt;set_delete_wrapper(false);
         }
         
-        inline ParticleDataEntry::ParticleDataEntry(int idIn, ::std::basic_string&lt;char&gt; nameIn, ::std::basic_string&lt;char&gt; antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn, double mMaxIn, double tau0In) :
+        inline ParticleDataEntry::ParticleDataEntry(int idIn, std::string nameIn, std::string antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn, double mMaxIn, double tau0In) :
             WrapperBase(__factory11(idIn, nameIn, antiNameIn, spinTypeIn, chargeTypeIn, colTypeIn, m0In, mWidthIn, mMinIn, mMaxIn, tau0In))
         {
             get_BEptr()-&gt;set_wptr(this);
             get_BEptr()-&gt;set_delete_wrapper(false);
         }
         
-        inline ParticleDataEntry::ParticleDataEntry(int idIn, ::std::basic_string&lt;char&gt; nameIn, ::std::basic_string&lt;char&gt; antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn, double mMaxIn) :
+        inline ParticleDataEntry::ParticleDataEntry(int idIn, std::string nameIn, std::string antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn, double mMaxIn) :
             WrapperBase(__factory12(idIn, nameIn, antiNameIn, spinTypeIn, chargeTypeIn, colTypeIn, m0In, mWidthIn, mMinIn, mMaxIn))
         {
             get_BEptr()-&gt;set_wptr(this);
             get_BEptr()-&gt;set_delete_wrapper(false);
         }
         
-        inline ParticleDataEntry::ParticleDataEntry(int idIn, ::std::basic_string&lt;char&gt; nameIn, ::std::basic_string&lt;char&gt; antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn) :
+        inline ParticleDataEntry::ParticleDataEntry(int idIn, std::string nameIn, std::string antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn) :
             WrapperBase(__factory13(idIn, nameIn, antiNameIn, spinTypeIn, chargeTypeIn, colTypeIn, m0In, mWidthIn, mMinIn))
         {
             get_BEptr()-&gt;set_wptr(this);
             get_BEptr()-&gt;set_delete_wrapper(false);
         }
         
-        inline ParticleDataEntry::ParticleDataEntry(int idIn, ::std::basic_string&lt;char&gt; nameIn, ::std::basic_string&lt;char&gt; antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn) :
+        inline ParticleDataEntry::ParticleDataEntry(int idIn, std::string nameIn, std::string antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn) :
             WrapperBase(__factory14(idIn, nameIn, antiNameIn, spinTypeIn, chargeTypeIn, colTypeIn, m0In, mWidthIn))
         {
             get_BEptr()-&gt;set_wptr(this);
             get_BEptr()-&gt;set_delete_wrapper(false);
         }
         
-        inline ParticleDataEntry::ParticleDataEntry(int idIn, ::std::basic_string&lt;char&gt; nameIn, ::std::basic_string&lt;char&gt; antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In) :
+        inline ParticleDataEntry::ParticleDataEntry(int idIn, std::string nameIn, std::string antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In) :
             WrapperBase(__factory15(idIn, nameIn, antiNameIn, spinTypeIn, chargeTypeIn, colTypeIn, m0In))
         {
             get_BEptr()-&gt;set_wptr(this);
             get_BEptr()-&gt;set_delete_wrapper(false);
         }
         
-        inline ParticleDataEntry::ParticleDataEntry(int idIn, ::std::basic_string&lt;char&gt; nameIn, ::std::basic_string&lt;char&gt; antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn) :
+        inline ParticleDataEntry::ParticleDataEntry(int idIn, std::string nameIn, std::string antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn) :
             WrapperBase(__factory16(idIn, nameIn, antiNameIn, spinTypeIn, chargeTypeIn, colTypeIn))
         {
             get_BEptr()-&gt;set_wptr(this);
             get_BEptr()-&gt;set_delete_wrapper(false);
         }
         
-        inline ParticleDataEntry::ParticleDataEntry(int idIn, ::std::basic_string&lt;char&gt; nameIn, ::std::basic_string&lt;char&gt; antiNameIn, int spinTypeIn, int chargeTypeIn) :
+        inline ParticleDataEntry::ParticleDataEntry(int idIn, std::string nameIn, std::string antiNameIn, int spinTypeIn, int chargeTypeIn) :
             WrapperBase(__factory17(idIn, nameIn, antiNameIn, spinTypeIn, chargeTypeIn))
         {
             get_BEptr()-&gt;set_wptr(this);
             get_BEptr()-&gt;set_delete_wrapper(false);
         }
         
-        inline ParticleDataEntry::ParticleDataEntry(int idIn, ::std::basic_string&lt;char&gt; nameIn, ::std::basic_string&lt;char&gt; antiNameIn, int spinTypeIn) :
+        inline ParticleDataEntry::ParticleDataEntry(int idIn, std::string nameIn, std::string antiNameIn, int spinTypeIn) :
             WrapperBase(__factory18(idIn, nameIn, antiNameIn, spinTypeIn))
         {
             get_BEptr()-&gt;set_wptr(this);
             get_BEptr()-&gt;set_delete_wrapper(false);
         }
         
-        inline ParticleDataEntry::ParticleDataEntry(int idIn, ::std::basic_string&lt;char&gt; nameIn, ::std::basic_string&lt;char&gt; antiNameIn) :
+        inline ParticleDataEntry::ParticleDataEntry(int idIn, std::string nameIn, std::string antiNameIn) :
             WrapperBase(__factory19(idIn, nameIn, antiNameIn))
         {
             get_BEptr()-&gt;set_wptr(this);
@@ -798,7 +798,7 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 #include &quot;gambit/Backends/backend_undefs.hpp&quot;
 
 #endif /* __wrapper_ParticleDataEntry_def_Pythia_8_212_h__ */
-</code></pre><hr><p>Updated on 2022-09-08 at 03:46:49 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.a08b5ca912a508bc013bbd939befee438a0d2f798076e860e42147c7c0e2a01cf714847f7f5a2824876ce72867b0182df10e3537711faff352dd1ef41550be7c.js integrity="sha512-oItcqRKlCLwBO72Tm+/uQ4oNL3mAduhg5CFHx8DioBz3FIR/f1ooJIds5yhnsBgt8Q41N3Efr/NS3R70FVC+fA==" crossorigin=anonymous defer></script>
+</code></pre><hr><p>Updated on 2023-06-26 at 21:36:57 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.a08b5ca912a508bc013bbd939befee438a0d2f798076e860e42147c7c0e2a01cf714847f7f5a2824876ce72867b0182df10e3537711faff352dd1ef41550be7c.js integrity="sha512-oItcqRKlCLwBO72Tm+/uQ4oNL3mAduhg5CFHx8DioBz3FIR/f1ooJIds5yhnsBgt8Q41N3Efr/NS3R70FVC+fA==" crossorigin=anonymous defer></script>
 <script src=/js/highlight.min.ce91dadbce67e8eef36fa222c1c74c99f623c836cf6a316dffa1aeb390ab659d9a20d8145ceac39e049c555414fc360d31315e7980535dc6c03eb5374b7d559d.js integrity="sha512-zpHa285n6O7zb6IiwcdMmfYjyDbPajFt/6Gus5CrZZ2aINgUXOrDngScVVQU/DYNMTFeeYBTXcbAPrU3S31VnQ==" crossorigin=anonymous defer></script>
 <script src=/main.min.57d9a84956f7d60008c47938c7fdd2f75e8618ff1d09c5a5e2b32f91debaf7681f7ceca8b51aded60067c2136172134a91ebc0674487c76a04e3244d927ebdde.js integrity="sha512-V9moSVb31gAIxHk4x/3S916GGP8dCcWl4rMvkd6692gffOyotRre1gBnwhNhchNKkevAZ0SHx2oE4yRNkn693g==" crossorigin=anonymous defer></script>
-<script src=/index.min.2a2f6bd25e0a661102d8769165ef9d3273d4db5ae6edbc62261887d88167016dfb0f6310393f582bcc424de5dc6eab3a529fd305ba4c3afc8e551f0093ed322c.js integrity="sha512-Ki9r0l4KZhEC2HaRZe+dMnPU21rm7bxiJhiH2IFnAW37D2MQOT9YK8xCTeXcbqs6Up/TBbpMOvyOVR8Ak+0yLA==" crossorigin=anonymous defer></script></body></html>
+<script src=/index.min.95720397d55302de0e04fb8f4bf89a7396888a3be86803aa187cbc45924e9c35452b4bef718cd568b25ad872307d8f5537eab4c0045b8043c40628674a4fc53d.js integrity="sha512-lXIDl9VTAt4OBPuPS/iac5aIijvoaAOqGHy8RZJOnDVFK0vvcYzVaLJa2HIwfY9VN+q0wARbgEPEBihnSk/FPQ==" crossorigin=anonymous defer></script></body></html>

@@ -11,7 +11,7 @@ Tutorials</button><div class=collapse id=section-tutorials><ul class="btn-toggle
 Help</button><div class=collapse id=section-help><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/help/common_problems_and_questions/>Common Problems and Questions</a></li><li><a class="docs-link rounded" href=/documentation/help/compiler_matrix/>Compiler Matrix</a></li><li><a class="docs-link rounded" href=/documentation/help/known_issues/>Known Issues</a></li><li><a class="docs-link rounded" href=/documentation/help/configuration_examples/>Configuration Examples</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-code aria-expanded=false>
 Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/code/index_classes/>Classes</a></li><li><a class="docs-link rounded" href=/documentation/code/index_files/>Files</a></li><li><a class="docs-link rounded" href=/documentation/code/index_pages/>Pages</a></li><li><a class="docs-link rounded" href=/documentation/code/index_namespaces/>Namespaces</a></li></ul></div></li></ul></nav></div><nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation"><div class=d-xl-none><button class="btn btn-outline-primary btn-sm doks-toc-toggle collapsed" type=button data-bs-toggle=collapse data-bs-target=#onThisPage aria-controls=doks-docs-nav aria-expanded=false aria-label="Toggle On this page navigation">
 <span>On this page</span>
-<span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg></span></button><div class=collapse id=onThisPage><div class="card card-body mt-3 py-1"><div class=page-links><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#defines>Defines</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#macros-documentation>Macros Documentation</a><ul><li><a href=#define-debug-prefix>define DEBUG_PREFIX</a></li></ul></li><li><a href=#source-code>Source code</a></li></ul></nav></div></div></div></div><div class="page-links d-none d-xl-block"><h3>On this page</h3><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#defines>Defines</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#macros-documentation>Macros Documentation</a><ul><li><a href=#define-debug-prefix>define DEBUG_PREFIX</a></li></ul></li><li><a href=#source-code>Source code</a></li></ul></nav></div></nav><main class="docs-content col-lg-11 col-xl-9 mx-xl-auto"><nav aria-label=breadcrumb><ol class=breadcrumb><li class=breadcrumb-item><a href=/>Home</a></li><li class=breadcrumb-item><a href=/documentation/>Documentation</a></li><li class=breadcrumb-item><a href=/documentation/code/>Code Reference</a></li><li class="breadcrumb-item active" aria-current=page>file src/getHepMCEvent.cpp</li></ol></nav><p class=lead></p><h1 id=file-src-gethepmcevent-cpp>file src/getHepMCEvent.cpp <a href=#file-src-gethepmcevent-cpp class=anchor aria-hidden=true>#</a></h1><p>[No description available] <a href=#detailed-description>More&mldr;</a></p><h2 id=namespaces>Namespaces <a href=#namespaces class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th>Name</th></tr></thead><tbody><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit/>Gambit</a></strong><br>TODO: see if we can use this one:</td></tr><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit_1_1colliderbit/>Gambit::ColliderBit</a></strong></td></tr></tbody></table><h2 id=defines>Defines <a href=#defines class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th></th><th>Name</th></tr></thead><tbody><tr><td></td><td><strong><a href=/documentation/code/files/gethepmcevent_8cpp/#define-debug-prefix>DEBUG_PREFIX</a></strong></td></tr></tbody></table><h2 id=detailed-description>Detailed Description <a href=#detailed-description class=anchor aria-hidden=true>#</a></h2><p><strong>Author</strong>:</p><ul><li>Andy Buckley (<a href=mailto:andy.buckley@cern.ch>andy.buckley@cern.ch</a>)</li><li>Pat Scott (<a href=mailto:p.scott@imperial.ac.uk>p.scott@imperial.ac.uk</a>)</li><li>Anders Kvellestad (<a href=mailto:a.kvellestad@imperial.ac.uk>a.kvellestad@imperial.ac.uk</a>)</li><li>Tomas Gonzalo (<a href=mailto:tomas.gonzalo@monash.edu>tomas.gonzalo@monash.edu</a>)</li><li>Tomek Procter (<a href=mailto:tsp116@ic.ac.uk>tsp116@ic.ac.uk</a>)</li><li>Yang Zhang (<a href=mailto:tsp116@ic.ac.uk>tsp116@ic.ac.uk</a>)</li></ul><p><strong>Date</strong>:</p><ul><li>2019 June</li><li>2019 June</li><li>2019 June</li><li>2019 Sep</li><li>2019 October</li><li>2020 June</li></ul><p>HepMC event file reader module function</p><hr><p>Authors (add name and date if you modify):</p><hr><h2 id=macros-documentation>Macros Documentation <a href=#macros-documentation class=anchor aria-hidden=true>#</a></h2><h3 id=define-debug-prefix>define DEBUG_PREFIX <a href=#define-debug-prefix class=anchor aria-hidden=true>#</a></h3><pre><code>#define DEBUG_PREFIX &quot;DEBUG: OMP thread &quot; &lt;&lt; omp_get_thread_num() &lt;&lt; &quot;:  &quot;
+<span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg></span></button><div class=collapse id=onThisPage><div class="card card-body mt-3 py-1"><div class=page-links><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#defines>Defines</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#macros-documentation>Macros Documentation</a><ul><li><a href=#define-debug-prefix>define DEBUG_PREFIX</a></li></ul></li><li><a href=#source-code>Source code</a></li></ul></nav></div></div></div></div><div class="page-links d-none d-xl-block"><h3>On this page</h3><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#defines>Defines</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#macros-documentation>Macros Documentation</a><ul><li><a href=#define-debug-prefix>define DEBUG_PREFIX</a></li></ul></li><li><a href=#source-code>Source code</a></li></ul></nav></div></nav><main class="docs-content col-lg-11 col-xl-9 mx-xl-auto"><nav aria-label=breadcrumb><ol class=breadcrumb><li class=breadcrumb-item><a href=/>Home</a></li><li class=breadcrumb-item><a href=/documentation/>Documentation</a></li><li class=breadcrumb-item><a href=/documentation/code/>Code Reference</a></li><li class="breadcrumb-item active" aria-current=page>file src/getHepMCEvent.cpp</li></ol></nav><p class=lead></p><h1 id=file-src-gethepmcevent-cpp>file src/getHepMCEvent.cpp <a href=#file-src-gethepmcevent-cpp class=anchor aria-hidden=true>#</a></h1><p>[No description available] <a href=#detailed-description>More&mldr;</a></p><h2 id=namespaces>Namespaces <a href=#namespaces class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th>Name</th></tr></thead><tbody><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit/>Gambit</a></strong><br>TODO: see if we can use this one:</td></tr><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit_1_1colliderbit/>Gambit::ColliderBit</a></strong></td></tr></tbody></table><h2 id=defines>Defines <a href=#defines class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th></th><th>Name</th></tr></thead><tbody><tr><td></td><td><strong><a href=/documentation/code/files/gethepmcevent_8cpp/#define-debug-prefix>DEBUG_PREFIX</a></strong></td></tr></tbody></table><h2 id=detailed-description>Detailed Description <a href=#detailed-description class=anchor aria-hidden=true>#</a></h2><p><strong>Author</strong>:</p><ul><li>Andy Buckley (<a href=mailto:andy.buckley@cern.ch>andy.buckley@cern.ch</a>)</li><li>Pat Scott (<a href=mailto:p.scott@imperial.ac.uk>p.scott@imperial.ac.uk</a>)</li><li>Anders Kvellestad (<a href=mailto:a.kvellestad@imperial.ac.uk>a.kvellestad@imperial.ac.uk</a>)</li><li>Tomas Gonzalo (<a href=mailto:tomas.gonzalo@monash.edu>tomas.gonzalo@monash.edu</a>)</li><li>Tomek Procter (<a href=mailto:t.procter.1@research.gla.ac.uk>t.procter.1@research.gla.ac.uk</a>)</li><li>Yang Zhang (<a href=mailto:tsp116@ic.ac.uk>tsp116@ic.ac.uk</a>)</li></ul><p><strong>Date</strong>:</p><ul><li>2019 June</li><li>2019 June</li><li>2019 June</li><li>2019 Sep, Oct</li><li>2020 Apr</li><li>2019 October</li><li>2021 November</li><li>2020 June</li></ul><p>HepMC event file reader module function</p><hr><p>Authors (add name and date if you modify):</p><hr><h2 id=macros-documentation>Macros Documentation <a href=#macros-documentation class=anchor aria-hidden=true>#</a></h2><h3 id=define-debug-prefix>define DEBUG_PREFIX <a href=#define-debug-prefix class=anchor aria-hidden=true>#</a></h3><pre><code>#define DEBUG_PREFIX &quot;DEBUG: OMP thread &quot; &lt;&lt; omp_get_thread_num() &lt;&lt; &quot;:  &quot;
 </code></pre><h2 id=source-code>Source code <a href=#source-code class=anchor aria-hidden=true>#</a></h2><pre><code>//   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
 ///  \file
@@ -36,11 +36,13 @@ Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle
 ///
 ///  \author Tomas Gonzalo
 ///          (tomas.gonzalo@monash.edu)
-///  \date 2019 Sep
+///  \date 2019 Sep, Oct
+///  \date 2020 Apr
 ///
 ///  \author Tomek Procter
-///           (tsp116@ic.ac.uk)
+///           (t.procter.1@research.gla.ac.uk)
 ///  \date 2019 October
+///  \date 2021 November
 ///
 ///  \author Yang Zhang
 ///           (tsp116@ic.ac.uk)
@@ -69,17 +71,14 @@ namespace Gambit
   namespace ColliderBit
   {
 
-    /// A nested function that reads in HepMC event files and converts them to HEPUtils::Event format
-    void getHepMCEvent(HEPUtils::Event&amp; result)
+    /// A nested function that reads in HepMC event files
+    void readHepMCEvent(HepMC3::GenEvent&amp; result, const str HepMC_filename,
+                        const MCLoopInfo&amp; RunMC, const int iteration,
+                        void(*halt)())
     {
-      using namespace Pipes::getHepMCEvent;
-
       result.clear();
 
-      // Get yaml options and initialise the HepMC reader
-      const static double antiktR = runOptions-&gt;getValueOrDef&lt;double&gt;(0.4, &quot;antiktR&quot;);
-      const static double jet_pt_min = runOptions-&gt;getValueOrDef&lt;double&gt;(10.0, &quot;jet_pt_min&quot;);
-      const static str HepMC_filename = runOptions-&gt;getValueOrDef&lt;str&gt;(&quot;&quot;, &quot;hepmc_filename&quot;);
+      // Initialise the HepMC reader
       static int HepMC_file_version = -1;
 
       static bool first = true;
@@ -115,17 +114,24 @@ namespace Gambit
               {
                 HepMC_file_version = 3;
                 break;
-              }else if (text_format == &quot;HepMC::IO_GenE&quot;){
+              }
+              else if (text_format == &quot;HepMC::IO_GenE&quot;)
+              {
                 HepMC_file_version = 2;
                 break;
-              } else
+              }
+              else
               {
-                throw std::runtime_error(&quot;Could not determine HepMC version from the string '&quot;+text_format+&quot;' extracted from the line '&quot;+line+&quot;'. Quitting...&quot;);
+                std::stringstream msg;
+                msg &lt;&lt;  &quot;Could not determine HepMC version from the string '&quot; &lt;&lt; text_format &lt;&lt; &quot;' extracted from the line '&quot; &lt;&lt; line &lt;&lt; &quot;'. Quitting...&quot;;
+                ColliderBit_error().raise(LOCAL_INFO, msg.str());
               }
             }
             else
             {
-              throw std::runtime_error(&quot;Could not determine HepMC version from the string '&quot;+short_line+&quot;' extracted from the line '&quot;+line+&quot;'. Quitting...&quot;);
+              std::stringstream msg;
+              msg &lt;&lt; &quot;Could not determine HepMC version from the string '&quot; &lt;&lt; short_line &lt;&lt; &quot;' extracted from the line '&quot; &lt;&lt; line &lt;&lt; &quot;'. Quitting...&quot;;
+              ColliderBit_error().raise(LOCAL_INFO, msg.str());
             }
           }
         }
@@ -134,49 +140,109 @@ namespace Gambit
 
       if(HepMC_file_version != 2 and HepMC_file_version != 3)
       {
-        throw std::runtime_error(&quot;Failed to determine HepMC version for input file &quot;+HepMC_filename+&quot;. Quitting...&quot;);
+        std::stringstream msg;
+        msg &lt;&lt; &quot;Failed to determine HepMC version for input file &quot; &lt;&lt; HepMC_filename &lt;&lt; &quot;. Quitting...&quot;;
+        ColliderBit_error().raise(LOCAL_INFO, msg.str());
       }
 
       static HepMC3::Reader *HepMCio;
 
       // Initialize the reader on the first iteration
-      if (*Loop::iteration == BASE_INIT)
+      if (iteration == BASE_INIT)
       {
         if (HepMC_file_version == 2)
+        {
           HepMCio = new HepMC3::ReaderAsciiHepMC2(HepMC_filename);
+        }
         else
+        {
           HepMCio = new HepMC3::ReaderAscii(HepMC_filename);
+        }
       }
 
       // Delete the reader in the last iteration
-      if (*Loop::iteration == BASE_FINALIZE)
+      if (iteration == BASE_FINALIZE)
         delete HepMCio;
 
       // Don't do anything else during special iterations
-      if (*Loop::iteration &lt; 0) return;
+      if (iteration &lt; 0) return;
 
       #ifdef COLLIDERBIT_DEBUG
-        cout &lt;&lt; DEBUG_PREFIX &lt;&lt; &quot;Event number: &quot; &lt;&lt; *Loop::iteration &lt;&lt; endl;
+        cout &lt;&lt; DEBUG_PREFIX &lt;&lt; &quot;Event number: &quot; &lt;&lt; iteration &lt;&lt; endl;
       #endif
 
-      // Attempt to read the next HepMC event as a HEPUtils event. If there are no more events, wrap up the loop and skip the rest of this iteration.
-      HepMC3::GenEvent ge(HepMC3::Units::GEV, HepMC3::Units::MM);
+      // Attempt to read the next HepMC event. If there are no more events, wrap up the loop and skip the rest of this iteration.
       bool event_retrieved = true;
       #pragma omp critical (reading_HepMCEvent)
       {
-        event_retrieved = HepMCio-&gt;read_event(ge);
+        event_retrieved = HepMCio-&gt;read_event(result);
 
         // FIXME This is a temp solution to ensure that the event reading
         //       stops when there are no more events in the HepMC file.
         //       Remove this once bugfix is implemented in HepMC.
-        if ((ge.particles().size() == 0) &amp;&amp; (ge.vertices().size() == 0)) event_retrieved = false;
+        if ((result.particles().size() == 0) &amp;&amp; (result.vertices().size() == 0)) event_retrieved = false;
       }
       if (not event_retrieved)
       {
         // Tell the MCLoopInfo instance that we have reached the end of the file
-        Dep::RunMC-&gt;report_end_of_event_file();
-        Loop::halt();
+        RunMC.report_end_of_event_file();
+        halt();
       }
+      if (not event_retrieved) halt();
+
+   }
+    /// A nested function that reads in HepMC event files
+    void getHepMCEvent(HepMC3::GenEvent&amp; result)
+    {
+      using namespace Pipes::getHepMCEvent;
+
+      // Get yaml options
+      const static str HepMC_filename = runOptions-&gt;getValueOrDef&lt;str&gt;(&quot;&quot;, &quot;hepmc_filename&quot;);
+
+      // Get the HepMC event
+      readHepMCEvent(result, HepMC_filename, *Dep::RunMC, *Loop::iteration, Loop::halt);
+
+    }
+
+    /// A nested function that reads in HepMC event files and converts them to HEPUtils::Event format
+    void getHepMCEvent_HEPUtils(HEPUtils::Event &amp;result)
+    {
+      using namespace Pipes::getHepMCEvent_HEPUtils;
+
+      // Get yaml options
+      const static str HepMC_filename = runOptions-&gt;getValueOrDef&lt;str&gt;(&quot;&quot;, &quot;hepmc_filename&quot;);
+      const static double antiktR = runOptions-&gt;getValueOrDef&lt;double&gt;(0.4, &quot;antiktR&quot;);
+      const static double jet_pt_min = runOptions-&gt;getValueOrDef&lt;double&gt;(10.0, &quot;jet_pt_min&quot;);
+
+      // Get the HepMC event
+      //HepMC3::GenEvent ge = *Dep::HardScatteringEvent;
+      HepMC3::GenEvent ge;
+      readHepMCEvent(ge, HepMC_filename, *Dep::RunMC, *Loop::iteration, Loop::halt);
+
+      //We need to not do anything else on special iterations, where an event has not actually been extracted:
+      if (*Loop::iteration &lt; 0) return;
+
+      //Set the weight
+      result.set_weight(ge.weight());
+
+      //Translate to HEPUtils event by calling the unified HEPMC/Pythia event converter:
+      Gambit::ColliderBit::convertParticleEvent(ge.particles(), result, antiktR, jet_pt_min);
+
+    }
+
+    void convertHepMCEvent_HEPUtils(HEPUtils::Event &amp;result)
+    {
+      using namespace Pipes::convertHepMCEvent_HEPUtils;
+
+      //Don't do anything on special iterations: you'll just end up dereferencing a nullptr
+      if (*Loop::iteration &lt; 0) return;
+
+      //HepMC Event should just be sitting waiting for us.
+      HepMC3::GenEvent ge = *Dep::HardScatteringEvent;
+
+      //Get yaml options required for conversion
+      const static double antiktR = runOptions-&gt;getValueOrDef&lt;double&gt;(0.4, &quot;antiktR&quot;);
+      const static double jet_pt_min = runOptions-&gt;getValueOrDef&lt;double&gt;(10.0, &quot;jet_pt_min&quot;);
 
       //Set the weight
       result.set_weight(ge.weight());
@@ -184,12 +250,12 @@ namespace Gambit
       //Translate to HEPUtils event by calling the unified HEPMC/Pythia event converter:
       Gambit::ColliderBit::convertParticleEvent(ge.particles(), result, antiktR, jet_pt_min);
     }
-  }
 
+  }
 }
 
 #endif
-</code></pre><hr><p>Updated on 2022-09-08 at 03:46:49 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.a08b5ca912a508bc013bbd939befee438a0d2f798076e860e42147c7c0e2a01cf714847f7f5a2824876ce72867b0182df10e3537711faff352dd1ef41550be7c.js integrity="sha512-oItcqRKlCLwBO72Tm+/uQ4oNL3mAduhg5CFHx8DioBz3FIR/f1ooJIds5yhnsBgt8Q41N3Efr/NS3R70FVC+fA==" crossorigin=anonymous defer></script>
+</code></pre><hr><p>Updated on 2023-06-26 at 21:36:56 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.a08b5ca912a508bc013bbd939befee438a0d2f798076e860e42147c7c0e2a01cf714847f7f5a2824876ce72867b0182df10e3537711faff352dd1ef41550be7c.js integrity="sha512-oItcqRKlCLwBO72Tm+/uQ4oNL3mAduhg5CFHx8DioBz3FIR/f1ooJIds5yhnsBgt8Q41N3Efr/NS3R70FVC+fA==" crossorigin=anonymous defer></script>
 <script src=/js/highlight.min.ce91dadbce67e8eef36fa222c1c74c99f623c836cf6a316dffa1aeb390ab659d9a20d8145ceac39e049c555414fc360d31315e7980535dc6c03eb5374b7d559d.js integrity="sha512-zpHa285n6O7zb6IiwcdMmfYjyDbPajFt/6Gus5CrZZ2aINgUXOrDngScVVQU/DYNMTFeeYBTXcbAPrU3S31VnQ==" crossorigin=anonymous defer></script>
 <script src=/main.min.57d9a84956f7d60008c47938c7fdd2f75e8618ff1d09c5a5e2b32f91debaf7681f7ceca8b51aded60067c2136172134a91ebc0674487c76a04e3244d927ebdde.js integrity="sha512-V9moSVb31gAIxHk4x/3S916GGP8dCcWl4rMvkd6692gffOyotRre1gBnwhNhchNKkevAZ0SHx2oE4yRNkn693g==" crossorigin=anonymous defer></script>
-<script src=/index.min.2a2f6bd25e0a661102d8769165ef9d3273d4db5ae6edbc62261887d88167016dfb0f6310393f582bcc424de5dc6eab3a529fd305ba4c3afc8e551f0093ed322c.js integrity="sha512-Ki9r0l4KZhEC2HaRZe+dMnPU21rm7bxiJhiH2IFnAW37D2MQOT9YK8xCTeXcbqs6Up/TBbpMOvyOVR8Ak+0yLA==" crossorigin=anonymous defer></script></body></html>
+<script src=/index.min.95720397d55302de0e04fb8f4bf89a7396888a3be86803aa187cbc45924e9c35452b4bef718cd568b25ad872307d8f5537eab4c0045b8043c40628674a4fc53d.js integrity="sha512-lXIDl9VTAt4OBPuPS/iac5aIijvoaAOqGHy8RZJOnDVFK0vvcYzVaLJa2HIwfY9VN+q0wARbgEPEBihnSk/FPQ==" crossorigin=anonymous defer></script></body></html>

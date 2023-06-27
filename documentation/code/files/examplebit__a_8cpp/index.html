@@ -518,53 +518,6 @@ namespace Gambit
     }
 
 
-    /// Example of using a BOSSed version of Pythia
-    void bossed_pythia_test_function(bool &amp;result)
-    {
-      using namespace Pipes::bossed_pythia_test_function;
-
-      cout &lt;&lt; &quot;Testing Pythia backend&quot; &lt;&lt; endl;
-      cout &lt;&lt; &quot;======================&quot; &lt;&lt; endl;
-
-      static str default_doc_path = GAMBIT_DIR &quot;/Backends/installed/Pythia/&quot; +
-                                    Backends::backendInfo().default_version(&quot;Pythia&quot;) +
-                                    &quot;/share/Pythia8/xmldoc/&quot;;
-
-      Pythia_default::Pythia8::Pythia pythia(default_doc_path, false);
-
-      pythia.readString(&quot;Beams:eCM = 8000.&quot;);
-      pythia.readString(&quot;HardQCD:all = on&quot;);
-      pythia.readString(&quot;PhaseSpace:pTHatMin = 20.&quot;);
-
-      pythia.readString(&quot;Next:numberShowInfo = 0&quot;);
-      pythia.readString(&quot;Next:numberShowProcess = 0&quot;);
-      pythia.readString(&quot;Next:numberShowEvent = 0&quot;);
-
-      pythia.init();
-
-      Pythia_default::Pythia8::Hist mult(&quot;charged multiplicity&quot;, 2, -0.5, 799.5);
-      // Begin event loop. Generate event. Skip if error. List first one.
-      for (int iEvent = 0; iEvent &lt; 2; ++iEvent) {
-        if (!pythia.next()) continue;
-        // Find number of all final charged particles and fill histogram.
-        int nCharged = 0;
-        for (int i = 0; i &lt; pythia.event.size(); ++i)
-          if (pythia.event[i].isFinal() &amp;&amp; pythia.event[i].isCharged())
-            ++nCharged;
-        mult.fill( nCharged );
-        cout &lt;&lt; &quot;Event: &quot; &lt;&lt; iEvent &lt;&lt; &quot;   nCharged: &quot; &lt;&lt; nCharged &lt;&lt; endl;
-      // End of event loop. Statistics. Histogram. Done.
-      }
-
-      pythia.stat();
-
-      cout &lt;&lt; &quot;Done testing Pythia backend&quot; &lt;&lt; endl;
-      cout &lt;&lt; &quot;===========================&quot; &lt;&lt; endl;
-
-      result = true;
-    }
-
-
     /// Tester for C/C++ backend array interfaces
     void Backend_array_test(double &amp;result)
     {
@@ -594,7 +547,7 @@ namespace Gambit
   }
 
 }
-</code></pre><hr><p>Updated on 2022-09-08 at 03:46:47 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.a08b5ca912a508bc013bbd939befee438a0d2f798076e860e42147c7c0e2a01cf714847f7f5a2824876ce72867b0182df10e3537711faff352dd1ef41550be7c.js integrity="sha512-oItcqRKlCLwBO72Tm+/uQ4oNL3mAduhg5CFHx8DioBz3FIR/f1ooJIds5yhnsBgt8Q41N3Efr/NS3R70FVC+fA==" crossorigin=anonymous defer></script>
+</code></pre><hr><p>Updated on 2023-06-26 at 21:36:55 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.a08b5ca912a508bc013bbd939befee438a0d2f798076e860e42147c7c0e2a01cf714847f7f5a2824876ce72867b0182df10e3537711faff352dd1ef41550be7c.js integrity="sha512-oItcqRKlCLwBO72Tm+/uQ4oNL3mAduhg5CFHx8DioBz3FIR/f1ooJIds5yhnsBgt8Q41N3Efr/NS3R70FVC+fA==" crossorigin=anonymous defer></script>
 <script src=/js/highlight.min.ce91dadbce67e8eef36fa222c1c74c99f623c836cf6a316dffa1aeb390ab659d9a20d8145ceac39e049c555414fc360d31315e7980535dc6c03eb5374b7d559d.js integrity="sha512-zpHa285n6O7zb6IiwcdMmfYjyDbPajFt/6Gus5CrZZ2aINgUXOrDngScVVQU/DYNMTFeeYBTXcbAPrU3S31VnQ==" crossorigin=anonymous defer></script>
 <script src=/main.min.57d9a84956f7d60008c47938c7fdd2f75e8618ff1d09c5a5e2b32f91debaf7681f7ceca8b51aded60067c2136172134a91ebc0674487c76a04e3244d927ebdde.js integrity="sha512-V9moSVb31gAIxHk4x/3S916GGP8dCcWl4rMvkd6692gffOyotRre1gBnwhNhchNKkevAZ0SHx2oE4yRNkn693g==" crossorigin=anonymous defer></script>
-<script src=/index.min.2a2f6bd25e0a661102d8769165ef9d3273d4db5ae6edbc62261887d88167016dfb0f6310393f582bcc424de5dc6eab3a529fd305ba4c3afc8e551f0093ed322c.js integrity="sha512-Ki9r0l4KZhEC2HaRZe+dMnPU21rm7bxiJhiH2IFnAW37D2MQOT9YK8xCTeXcbqs6Up/TBbpMOvyOVR8Ak+0yLA==" crossorigin=anonymous defer></script></body></html>
+<script src=/index.min.95720397d55302de0e04fb8f4bf89a7396888a3be86803aa187cbc45924e9c35452b4bef718cd568b25ad872307d8f5537eab4c0045b8043c40628674a4fc53d.js integrity="sha512-lXIDl9VTAt4OBPuPS/iac5aIijvoaAOqGHy8RZJOnDVFK0vvcYzVaLJa2HIwfY9VN+q0wARbgEPEBihnSk/FPQ==" crossorigin=anonymous defer></script></body></html>

@@ -41,7 +41,7 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         {
             public:
     
-                virtual void list(::std::basic_ostream&lt;char&gt;&amp;) const =0;
+                virtual void list(std::ostream&amp;) const =0;
     
                 virtual void list__BOSS() const =0;
     
@@ -67,7 +67,7 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
     
                 virtual bool tooLowPTmin() const =0;
     
-                virtual ::std::basic_string&lt;char&gt; name() const =0;
+                virtual ::std::string name() const =0;
     
                 virtual int code() const =0;
     
@@ -93,9 +93,9 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
     
                 virtual bool hasSub__BOSS() const =0;
     
-                virtual ::std::basic_string&lt;char&gt; nameSub(int) const =0;
+                virtual ::std::string nameSub(int) const =0;
     
-                virtual ::std::basic_string&lt;char&gt; nameSub__BOSS() const =0;
+                virtual ::std::string nameSub__BOSS() const =0;
     
                 virtual int codeSub(int) const =0;
     
@@ -265,9 +265,9 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
     
                 virtual ::std::vector&lt;int&gt; codesHard() =0;
     
-                virtual ::std::basic_string&lt;char&gt; nameProc(int) =0;
+                virtual ::std::string nameProc(int) =0;
     
-                virtual ::std::basic_string&lt;char&gt; nameProc__BOSS() =0;
+                virtual ::std::string nameProc__BOSS() =0;
     
                 virtual long int nTried(int) =0;
     
@@ -301,17 +301,17 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
     
                 virtual void errorReset() =0;
     
-                virtual void errorMsg(::std::basic_string&lt;char&gt;, ::std::basic_string&lt;char&gt;, bool, ::std::basic_ostream&lt;char&gt;&amp;) =0;
+                virtual void errorMsg(std::string, std::string, bool, std::ostream&amp;) =0;
     
-                virtual void errorMsg__BOSS(::std::basic_string&lt;char&gt;, ::std::basic_string&lt;char&gt;, bool) =0;
+                virtual void errorMsg__BOSS(std::string, std::string, bool) =0;
     
-                virtual void errorMsg__BOSS(::std::basic_string&lt;char&gt;, ::std::basic_string&lt;char&gt;) =0;
+                virtual void errorMsg__BOSS(std::string, std::string) =0;
     
-                virtual void errorMsg__BOSS(::std::basic_string&lt;char&gt;) =0;
+                virtual void errorMsg__BOSS(std::string) =0;
     
                 virtual int errorTotalNumber() =0;
     
-                virtual void errorStatistics(::std::basic_ostream&lt;char&gt;&amp;) =0;
+                virtual void errorStatistics(std::ostream&amp;) =0;
     
                 virtual void errorStatistics__BOSS() =0;
     
@@ -343,9 +343,9 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
     
                 virtual void setWeightFIRST(double) =0;
     
-                virtual ::std::basic_string&lt;char&gt; header(const ::std::basic_string&lt;char&gt;&amp;) =0;
+                virtual ::std::string header(const std::string&amp;) =0;
     
-                virtual ::std::vector&lt;std::basic_string&lt;char&gt;&gt; headerKeys() =0;
+                virtual ::std::vector&lt;std::string&gt; headerKeys() =0;
     
                 virtual int nProcessesLHEF() =0;
     
@@ -355,9 +355,9 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
     
                 virtual std::vector&lt;double&gt;&amp; sigmaLHEFSave_ref__BOSS() =0;
     
-                virtual std::map&lt;std::basic_string&lt;char&gt;, std::basic_string&lt;char&gt;&gt;*&amp; eventAttributes_ref__BOSS() =0;
+                virtual std::map&lt;std::string, std::string&gt;*&amp; eventAttributes_ref__BOSS() =0;
     
-                virtual std::map&lt;std::basic_string&lt;char&gt;, double&gt;*&amp; weights_detailed_ref__BOSS() =0;
+                virtual std::map&lt;std::string, double&gt;*&amp; weights_detailed_ref__BOSS() =0;
     
                 virtual std::vector&lt;double&gt;*&amp; weights_compressed_ref__BOSS() =0;
     
@@ -365,9 +365,9 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
     
                 virtual void setLHEF3EventInfo() =0;
     
-                virtual ::std::basic_string&lt;char&gt; getEventAttribute(::std::basic_string&lt;char&gt;, bool) =0;
+                virtual ::std::string getEventAttribute(std::string, bool) =0;
     
-                virtual ::std::basic_string&lt;char&gt; getEventAttribute__BOSS(::std::basic_string&lt;char&gt;) =0;
+                virtual ::std::string getEventAttribute__BOSS(std::string) =0;
     
                 virtual int LHEFversion() =0;
     
@@ -375,37 +375,37 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
     
                 virtual unsigned int getGeneratorSize() =0;
     
-                virtual ::std::basic_string&lt;char&gt; getGeneratorValue(unsigned int) =0;
+                virtual ::std::string getGeneratorValue(unsigned int) =0;
     
-                virtual ::std::basic_string&lt;char&gt; getGeneratorValue__BOSS() =0;
+                virtual ::std::string getGeneratorValue__BOSS() =0;
     
-                virtual ::std::basic_string&lt;char&gt; getGeneratorAttribute(unsigned int, ::std::basic_string&lt;char&gt;, bool) =0;
+                virtual ::std::string getGeneratorAttribute(unsigned int, std::string, bool) =0;
     
-                virtual ::std::basic_string&lt;char&gt; getGeneratorAttribute__BOSS(unsigned int, ::std::basic_string&lt;char&gt;) =0;
+                virtual ::std::string getGeneratorAttribute__BOSS(unsigned int, std::string) =0;
     
                 virtual unsigned int getWeightsDetailedSize() =0;
     
-                virtual double getWeightsDetailedValue(::std::basic_string&lt;char&gt;) =0;
+                virtual double getWeightsDetailedValue(std::string) =0;
     
-                virtual ::std::basic_string&lt;char&gt; getWeightsDetailedAttribute(::std::basic_string&lt;char&gt;, ::std::basic_string&lt;char&gt;, bool) =0;
+                virtual ::std::string getWeightsDetailedAttribute(std::string, std::string, bool) =0;
     
-                virtual ::std::basic_string&lt;char&gt; getWeightsDetailedAttribute__BOSS(::std::basic_string&lt;char&gt;, ::std::basic_string&lt;char&gt;) =0;
+                virtual ::std::string getWeightsDetailedAttribute__BOSS(std::string, std::string) =0;
     
                 virtual unsigned int getWeightsCompressedSize() =0;
     
                 virtual double getWeightsCompressedValue(unsigned int) =0;
     
-                virtual ::std::basic_string&lt;char&gt; getWeightsCompressedAttribute(::std::basic_string&lt;char&gt;, bool) =0;
+                virtual ::std::string getWeightsCompressedAttribute(std::string, bool) =0;
     
-                virtual ::std::basic_string&lt;char&gt; getWeightsCompressedAttribute__BOSS(::std::basic_string&lt;char&gt;) =0;
+                virtual ::std::string getWeightsCompressedAttribute__BOSS(std::string) =0;
     
-                virtual ::std::basic_string&lt;char&gt; getScalesValue(bool) =0;
+                virtual ::std::string getScalesValue(bool) =0;
     
-                virtual ::std::basic_string&lt;char&gt; getScalesValue__BOSS() =0;
+                virtual ::std::string getScalesValue__BOSS() =0;
     
-                virtual double getScalesAttribute(::std::basic_string&lt;char&gt;) =0;
+                virtual double getScalesAttribute(std::string) =0;
     
-                virtual void setHeader(const ::std::basic_string&lt;char&gt;&amp;, const ::std::basic_string&lt;char&gt;&amp;) =0;
+                virtual void setHeader(const std::string&amp;, const std::string&amp;) =0;
     
                 virtual void setAbortPartonLevel(bool) =0;
     
@@ -482,7 +482,7 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 
 #endif /* __abstract_Info_Pythia_8_212_h__ */
-</code></pre><hr><p>Updated on 2022-09-08 at 03:46:49 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.a08b5ca912a508bc013bbd939befee438a0d2f798076e860e42147c7c0e2a01cf714847f7f5a2824876ce72867b0182df10e3537711faff352dd1ef41550be7c.js integrity="sha512-oItcqRKlCLwBO72Tm+/uQ4oNL3mAduhg5CFHx8DioBz3FIR/f1ooJIds5yhnsBgt8Q41N3Efr/NS3R70FVC+fA==" crossorigin=anonymous defer></script>
+</code></pre><hr><p>Updated on 2023-06-26 at 21:36:57 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.a08b5ca912a508bc013bbd939befee438a0d2f798076e860e42147c7c0e2a01cf714847f7f5a2824876ce72867b0182df10e3537711faff352dd1ef41550be7c.js integrity="sha512-oItcqRKlCLwBO72Tm+/uQ4oNL3mAduhg5CFHx8DioBz3FIR/f1ooJIds5yhnsBgt8Q41N3Efr/NS3R70FVC+fA==" crossorigin=anonymous defer></script>
 <script src=/js/highlight.min.ce91dadbce67e8eef36fa222c1c74c99f623c836cf6a316dffa1aeb390ab659d9a20d8145ceac39e049c555414fc360d31315e7980535dc6c03eb5374b7d559d.js integrity="sha512-zpHa285n6O7zb6IiwcdMmfYjyDbPajFt/6Gus5CrZZ2aINgUXOrDngScVVQU/DYNMTFeeYBTXcbAPrU3S31VnQ==" crossorigin=anonymous defer></script>
 <script src=/main.min.57d9a84956f7d60008c47938c7fdd2f75e8618ff1d09c5a5e2b32f91debaf7681f7ceca8b51aded60067c2136172134a91ebc0674487c76a04e3244d927ebdde.js integrity="sha512-V9moSVb31gAIxHk4x/3S916GGP8dCcWl4rMvkd6692gffOyotRre1gBnwhNhchNKkevAZ0SHx2oE4yRNkn693g==" crossorigin=anonymous defer></script>
-<script src=/index.min.2a2f6bd25e0a661102d8769165ef9d3273d4db5ae6edbc62261887d88167016dfb0f6310393f582bcc424de5dc6eab3a529fd305ba4c3afc8e551f0093ed322c.js integrity="sha512-Ki9r0l4KZhEC2HaRZe+dMnPU21rm7bxiJhiH2IFnAW37D2MQOT9YK8xCTeXcbqs6Up/TBbpMOvyOVR8Ak+0yLA==" crossorigin=anonymous defer></script></body></html>
+<script src=/index.min.95720397d55302de0e04fb8f4bf89a7396888a3be86803aa187cbc45924e9c35452b4bef718cd568b25ad872307d8f5537eab4c0045b8043c40628674a4fc53d.js integrity="sha512-lXIDl9VTAt4OBPuPS/iac5aIijvoaAOqGHy8RZJOnDVFK0vvcYzVaLJa2HIwfY9VN+q0wARbgEPEBihnSk/FPQ==" crossorigin=anonymous defer></script></body></html>

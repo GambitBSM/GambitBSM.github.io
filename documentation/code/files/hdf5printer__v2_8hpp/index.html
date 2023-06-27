@@ -11,7 +11,7 @@ Tutorials</button><div class=collapse id=section-tutorials><ul class="btn-toggle
 Help</button><div class=collapse id=section-help><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/help/common_problems_and_questions/>Common Problems and Questions</a></li><li><a class="docs-link rounded" href=/documentation/help/compiler_matrix/>Compiler Matrix</a></li><li><a class="docs-link rounded" href=/documentation/help/known_issues/>Known Issues</a></li><li><a class="docs-link rounded" href=/documentation/help/configuration_examples/>Configuration Examples</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-code aria-expanded=false>
 Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/code/index_classes/>Classes</a></li><li><a class="docs-link rounded" href=/documentation/code/index_files/>Files</a></li><li><a class="docs-link rounded" href=/documentation/code/index_pages/>Pages</a></li><li><a class="docs-link rounded" href=/documentation/code/index_namespaces/>Namespaces</a></li></ul></div></li></ul></nav></div><nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation"><div class=d-xl-none><button class="btn btn-outline-primary btn-sm doks-toc-toggle collapsed" type=button data-bs-toggle=collapse data-bs-target=#onThisPage aria-controls=doks-docs-nav aria-expanded=false aria-label="Toggle On this page navigation">
 <span>On this page</span>
-<span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg></span></button><div class=collapse id=onThisPage><div class="card card-body mt-3 py-1"><div class=page-links><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#classes>Classes</a></li><li><a href=#defines>Defines</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#macros-documentation>Macros Documentation</a><ul><li><a href=#define-declare-print>define DECLARE_PRINT</a></li></ul></li><li><a href=#source-code>Source code</a></li></ul></nav></div></div></div></div><div class="page-links d-none d-xl-block"><h3>On this page</h3><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#classes>Classes</a></li><li><a href=#defines>Defines</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#macros-documentation>Macros Documentation</a><ul><li><a href=#define-declare-print>define DECLARE_PRINT</a></li></ul></li><li><a href=#source-code>Source code</a></li></ul></nav></div></nav><main class="docs-content col-lg-11 col-xl-9 mx-xl-auto"><nav aria-label=breadcrumb><ol class=breadcrumb><li class=breadcrumb-item><a href=/>Home</a></li><li class=breadcrumb-item><a href=/documentation/>Documentation</a></li><li class=breadcrumb-item><a href=/documentation/code/>Code Reference</a></li><li class="breadcrumb-item active" aria-current=page>file printers/hdf5printer_v2.hpp</li></ol></nav><p class=lead></p><h1 id=file-printers-hdf5printer-v2-hpp>file printers/hdf5printer_v2.hpp <a href=#file-printers-hdf5printer-v2-hpp class=anchor aria-hidden=true>#</a></h1><p>[No description available] <a href=#detailed-description>More&mldr;</a></p><h2 id=namespaces>Namespaces <a href=#namespaces class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th>Name</th></tr></thead><tbody><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit/>Gambit</a></strong><br>TODO: see if we can use this one:</td></tr><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit_1_1printers/>Gambit::Printers</a></strong><br>Forward declaration.</td></tr></tbody></table><h2 id=classes>Classes <a href=#classes class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th></th><th>Name</th></tr></thead><tbody><tr><td>class</td><td><strong><a href=/documentation/code/classes/classgambit_1_1printers_1_1hdf5datasetbase/>Gambit::Printers::HDF5DataSetBase</a></strong><br>Base class for interfacing to a HDF5 dataset.</td></tr><tr><td>class</td><td><strong><a href=/documentation/code/classes/classgambit_1_1printers_1_1hdf5datasetbasic/>Gambit::Printers::HDF5DataSetBasic</a></strong><br>Constructable class for doing basic operations on a HDF5 dataset.</td></tr><tr><td>class</td><td><strong><a href=/documentation/code/classes/classgambit_1_1printers_1_1hdf5dataset/>Gambit::Printers::HDF5DataSet</a></strong><br>Class for interfacing to a HDF5 dataset of fixed type.</td></tr><tr><td>class</td><td><strong><a href=/documentation/code/classes/classgambit_1_1printers_1_1hdf5bufferbase/>Gambit::Printers::HDF5BufferBase</a></strong><br>Base class for buffers.</td></tr><tr><td>class</td><td><strong><a href=/documentation/code/classes/classgambit_1_1printers_1_1hdf5buffer/>Gambit::Printers::HDF5Buffer</a></strong><br>Class to manage buffer for a single output label.</td></tr><tr><td>class</td><td><strong><a href=/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffert/>Gambit::Printers::HDF5MasterBufferT</a></strong><br>Class to manage a set of buffers for a single output type.</td></tr><tr><td>class</td><td><strong><a href=/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/>Gambit::Printers::HDF5MasterBuffer</a></strong></td></tr><tr><td>class</td><td><strong><a href=/documentation/code/classes/classgambit_1_1printers_1_1hdf5printer2/>Gambit::Printers::HDF5Printer2</a></strong><br>The main printer class for output to HDF5 format.</td></tr></tbody></table><h2 id=defines>Defines <a href=#defines class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th></th><th>Name</th></tr></thead><tbody><tr><td></td><td><strong><a href=/documentation/code/files/hdf5printer__v2_8hpp/#define-declare-print>DECLARE_PRINT</a></strong>(r, data, i, elem)</td></tr></tbody></table><h2 id=detailed-description>Detailed Description <a href=#detailed-description class=anchor aria-hidden=true>#</a></h2><p><strong>Author</strong>: Ben Farmer (<a href=mailto:b.farmer@imperial.ac.uk>b.farmer@imperial.ac.uk</a>)</p><p><strong>Date</strong>: 2019 Jan</p><p>HDF5 printer version 2</p><p>This version of the HDF5 printer is a near complete rewrite of the HDF5 printer, based on a &rsquo;transaction&rsquo; concept. Writes are performed on a single output file in &rsquo;transactions&rsquo;, during which the file is locked and cannot be accessed by other processes. The idea is based on how the SQLitePrinter works, though much more manual work is required since HDF5 does not natively work via transactions, unlike SQLite.</p><p>P.S. Also now supports dynamic changing of the buffer size!</p><hr><p>Authors (add name and date if you modify):</p><hr><h2 id=macros-documentation>Macros Documentation <a href=#macros-documentation class=anchor aria-hidden=true>#</a></h2><h3 id=define-declare-print>define DECLARE_PRINT <a href=#define-declare-print class=anchor aria-hidden=true>#</a></h3><pre><code>#define DECLARE_PRINT(
+<span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg></span></button><div class=collapse id=onThisPage><div class="card card-body mt-3 py-1"><div class=page-links><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#classes>Classes</a></li><li><a href=#defines>Defines</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#macros-documentation>Macros Documentation</a><ul><li><a href=#define-declare-print>define DECLARE_PRINT</a></li></ul></li><li><a href=#source-code>Source code</a></li></ul></nav></div></div></div></div><div class="page-links d-none d-xl-block"><h3>On this page</h3><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#classes>Classes</a></li><li><a href=#defines>Defines</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#macros-documentation>Macros Documentation</a><ul><li><a href=#define-declare-print>define DECLARE_PRINT</a></li></ul></li><li><a href=#source-code>Source code</a></li></ul></nav></div></nav><main class="docs-content col-lg-11 col-xl-9 mx-xl-auto"><nav aria-label=breadcrumb><ol class=breadcrumb><li class=breadcrumb-item><a href=/>Home</a></li><li class=breadcrumb-item><a href=/documentation/>Documentation</a></li><li class=breadcrumb-item><a href=/documentation/code/>Code Reference</a></li><li class="breadcrumb-item active" aria-current=page>file printers/hdf5printer_v2.hpp</li></ol></nav><p class=lead></p><h1 id=file-printers-hdf5printer-v2-hpp>file printers/hdf5printer_v2.hpp <a href=#file-printers-hdf5printer-v2-hpp class=anchor aria-hidden=true>#</a></h1><p>[No description available] <a href=#detailed-description>More&mldr;</a></p><h2 id=namespaces>Namespaces <a href=#namespaces class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th>Name</th></tr></thead><tbody><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit/>Gambit</a></strong><br>TODO: see if we can use this one:</td></tr><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit_1_1printers/>Gambit::Printers</a></strong><br>Forward declaration.</td></tr></tbody></table><h2 id=classes>Classes <a href=#classes class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th></th><th>Name</th></tr></thead><tbody><tr><td>class</td><td><strong><a href=/documentation/code/classes/classgambit_1_1printers_1_1hdf5datasetbase/>Gambit::Printers::HDF5DataSetBase</a></strong><br>Base class for interfacing to a HDF5 dataset.</td></tr><tr><td>class</td><td><strong><a href=/documentation/code/classes/classgambit_1_1printers_1_1hdf5datasetbasic/>Gambit::Printers::HDF5DataSetBasic</a></strong><br>Constructable class for doing basic operations on a HDF5 dataset.</td></tr><tr><td>class</td><td><strong><a href=/documentation/code/classes/classgambit_1_1printers_1_1hdf5dataset/>Gambit::Printers::HDF5DataSet</a></strong><br>Class for interfacing to a HDF5 dataset of fixed type.</td></tr><tr><td>class</td><td><strong><a href=/documentation/code/classes/classgambit_1_1printers_1_1hdf5bufferbase/>Gambit::Printers::HDF5BufferBase</a></strong><br>Base class for buffers.</td></tr><tr><td>class</td><td><strong><a href=/documentation/code/classes/classgambit_1_1printers_1_1hdf5buffer/>Gambit::Printers::HDF5Buffer</a></strong><br>Class to manage buffer for a single output label.</td></tr><tr><td>class</td><td><strong><a href=/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffert/>Gambit::Printers::HDF5MasterBufferT</a></strong><br>Class to manage a set of buffers for a single output type.</td></tr><tr><td>class</td><td><strong><a href=/documentation/code/classes/classgambit_1_1printers_1_1hdf5masterbuffer/>Gambit::Printers::HDF5MasterBuffer</a></strong></td></tr><tr><td>class</td><td><strong><a href=/documentation/code/classes/classgambit_1_1printers_1_1hdf5printer2/>Gambit::Printers::HDF5Printer2</a></strong><br>The main printer class for output to HDF5 format.</td></tr></tbody></table><h2 id=defines>Defines <a href=#defines class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th></th><th>Name</th></tr></thead><tbody><tr><td></td><td><strong><a href=/documentation/code/files/hdf5printer__v2_8hpp/#define-declare-print>DECLARE_PRINT</a></strong>(r, data, i, elem)</td></tr></tbody></table><h2 id=detailed-description>Detailed Description <a href=#detailed-description class=anchor aria-hidden=true>#</a></h2><p><strong>Author</strong>:</p><ul><li>Ben Farmer (<a href=mailto:b.farmer@imperial.ac.uk>b.farmer@imperial.ac.uk</a>)</li><li>Tomas Gonzalo (<a href=mailto:tomas.gonzalo@monash.edu>tomas.gonzalo@monash.edu</a>)</li></ul><p><strong>Date</strong>:</p><ul><li>2019 Jan</li><li>2020 June</li></ul><p>HDF5 printer version 2</p><p>This version of the HDF5 printer is a near complete rewrite of the HDF5 printer, based on a &rsquo;transaction&rsquo; concept. Writes are performed on a single output file in &rsquo;transactions&rsquo;, during which the file is locked and cannot be accessed by other processes. The idea is based on how the SQLitePrinter works, though much more manual work is required since HDF5 does not natively work via transactions, unlike SQLite.</p><p>P.S. Also now supports dynamic changing of the buffer size!</p><hr><p>Authors (add name and date if you modify):</p><hr><h2 id=macros-documentation>Macros Documentation <a href=#macros-documentation class=anchor aria-hidden=true>#</a></h2><h3 id=define-declare-print>define DECLARE_PRINT <a href=#define-declare-print class=anchor aria-hidden=true>#</a></h3><pre><code>#define DECLARE_PRINT(
     r,
     data,
     i,
@@ -45,6 +45,10 @@ void _print(elem const&amp;, const std::string&amp;, const int, const uint, cons
 ///  \author Ben Farmer
 ///          (b.farmer@imperial.ac.uk)
 ///  \date 2019 Jan
+///
+///  \author Tomas Gonzalo
+///          (tomas.gonzalo@monash.edu)
+///  \date 2020 June
 ///
 ///  *********************************************
 
@@ -234,6 +238,22 @@ namespace Gambit
          HDF5DataSet(const std::string&amp; name)
            : HDF5DataSetBase(name,get_hdf5_data_type&lt;T&gt;::type())
          {}
+
+         /// Write a single piece of data to disk at the target position
+         std::size_t write_single(const hid_t loc_id, const T&amp; data, const std::size_t target_pos, const bool force=false)
+         {
+             open_dataset(loc_id);
+             T buffer[MAX_BUFFER_SIZE];
+
+             buffer[0] = data;
+
+             write_buffer(buffer,1,target_pos,force);
+
+             std::size_t new_dset_size = get_dset_length();
+             close_dataset();
+
+             return new_dset_size;
+         }
 
          /// Write a vector of data to disk at the target position
          std::size_t write_vector(const hid_t loc_id, const std::vector&lt;T&gt;&amp; data, const std::size_t target_pos, const bool force=false)
@@ -1201,7 +1221,7 @@ namespace Gambit
       public:
 
         /// Constructor
-        HDF5MasterBuffer(const std::string&amp; filename, const std::string&amp; groupname, const bool sync, const std::size_t buffer_length
+        HDF5MasterBuffer(const std::string&amp; filename, const std::string&amp; groupname, const std::string&amp; metadata_groupname, const bool sync, const std::size_t buffer_length
 #ifdef WITH_MPI
           , GMPI::Comm&amp; comm
 #endif
@@ -1269,6 +1289,9 @@ namespace Gambit
 
         /// Empty all buffers to disk
         void flush();
+
+        /// Print metadata directly to disk
+        void print_metadata(std::map&lt;std::string,std::string&gt;, bool);
 
         #ifdef WITH_MPI
         /// Gather all buffer data on a certain rank process
@@ -1346,6 +1369,9 @@ namespace Gambit
         /// Report which group in the output file we are targeting
         std::string get_group();
 
+        /// Report the name of the metadata group on this file
+        std::string get_metadata_group();
+
         /// Report length of buffer for HDF5 output
         std::size_t get_buffer_length();
 
@@ -1367,8 +1393,14 @@ namespace Gambit
         /// Retrieve the location_id specifying where output should be created in the HDF5 file
         hid_t get_location_id();
 
+        /// Retrieve the metadata_id where the metadata should be created in the HDF5 file
+        hid_t get_metadata_id();
+
         /// Get next available position in the synchronised output datasets
         std::size_t get_next_free_position();
+
+        /// Get the next position for metadata entries
+        std::size_t get_next_metadata_position();
 
         /// Report number of buffers that we are managing
         std::size_t get_Nbuffers();
@@ -1429,10 +1461,12 @@ namespace Gambit
         /// Output file variales
         std::string file;  // Output HDF5 file
         std::string group; // HDF5 group location to store datasets
+        std::string metadata_group; // HDF5 group location to store metadata
 
         // Handles for HDF5 files and groups containing the datasets
         hid_t file_id;
         hid_t group_id;
+        hid_t metadata_id;
 
         // Handle to a location in a HDF5 to which the datasets will be written
         // i.e. a file or a group.
@@ -1495,6 +1529,9 @@ namespace Gambit
         /// Report group in output HDF5 file of output datasets
         std::string get_groupname();
 
+        /// Report metadata group in HDF5 file
+        std::string get_metadata_groupname();
+
         /// Report length of buffer for HDF5 output
         std::size_t get_buffer_length();
 
@@ -1523,6 +1560,10 @@ namespace Gambit
           BOOST_PP_SEQ_FOR_EACH_I(DECLARE_PRINT, , HDF5_BACKEND_TYPES)
         #endif
         #undef DECLARE_PRINT
+
+        // Print metadata info to file
+        void _print_metadata(map_str_str);
+
         ///@}
 
         /// Add buffer to the primary printers records
@@ -1547,6 +1588,9 @@ namespace Gambit
 
         std::size_t myRank;
         std::size_t mpiSize;
+
+        /// Last PPID pair printed
+        PPIDpair lastPointID;
 
 #ifdef WITH_MPI
         /// Gambit MPI communicator context for use within the hdf5 printer system
@@ -1579,6 +1623,9 @@ namespace Gambit
         /// Determine target group in output HDF5 file from options
         std::string get_groupname(const Options&amp; options);
 
+        /// Get the name of the metadata group
+        std::string get_metadata_groupname(const Options&amp; options);
+
         /// Get length of buffer from options (or primary printer)
         std::size_t get_buffer_length(const Options&amp; options);
 
@@ -1602,6 +1649,9 @@ namespace Gambit
         {
             // Forward the print information on to the master buffer manager object
             buffermaster.schedule_print&lt;T&gt;(value,label,mpirank,pointID);
+
+            // Update the last printed point ID
+            lastPointID = PPIDpair(pointID, mpirank);
         }
 
         template&lt;typename T&gt;
@@ -1638,7 +1688,7 @@ namespace Gambit
 }
 
 #endif
-</code></pre><hr><p>Updated on 2022-09-08 at 03:46:46 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.a08b5ca912a508bc013bbd939befee438a0d2f798076e860e42147c7c0e2a01cf714847f7f5a2824876ce72867b0182df10e3537711faff352dd1ef41550be7c.js integrity="sha512-oItcqRKlCLwBO72Tm+/uQ4oNL3mAduhg5CFHx8DioBz3FIR/f1ooJIds5yhnsBgt8Q41N3Efr/NS3R70FVC+fA==" crossorigin=anonymous defer></script>
+</code></pre><hr><p>Updated on 2023-06-26 at 21:36:54 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.a08b5ca912a508bc013bbd939befee438a0d2f798076e860e42147c7c0e2a01cf714847f7f5a2824876ce72867b0182df10e3537711faff352dd1ef41550be7c.js integrity="sha512-oItcqRKlCLwBO72Tm+/uQ4oNL3mAduhg5CFHx8DioBz3FIR/f1ooJIds5yhnsBgt8Q41N3Efr/NS3R70FVC+fA==" crossorigin=anonymous defer></script>
 <script src=/js/highlight.min.ce91dadbce67e8eef36fa222c1c74c99f623c836cf6a316dffa1aeb390ab659d9a20d8145ceac39e049c555414fc360d31315e7980535dc6c03eb5374b7d559d.js integrity="sha512-zpHa285n6O7zb6IiwcdMmfYjyDbPajFt/6Gus5CrZZ2aINgUXOrDngScVVQU/DYNMTFeeYBTXcbAPrU3S31VnQ==" crossorigin=anonymous defer></script>
 <script src=/main.min.57d9a84956f7d60008c47938c7fdd2f75e8618ff1d09c5a5e2b32f91debaf7681f7ceca8b51aded60067c2136172134a91ebc0674487c76a04e3244d927ebdde.js integrity="sha512-V9moSVb31gAIxHk4x/3S916GGP8dCcWl4rMvkd6692gffOyotRre1gBnwhNhchNKkevAZ0SHx2oE4yRNkn693g==" crossorigin=anonymous defer></script>
-<script src=/index.min.2a2f6bd25e0a661102d8769165ef9d3273d4db5ae6edbc62261887d88167016dfb0f6310393f582bcc424de5dc6eab3a529fd305ba4c3afc8e551f0093ed322c.js integrity="sha512-Ki9r0l4KZhEC2HaRZe+dMnPU21rm7bxiJhiH2IFnAW37D2MQOT9YK8xCTeXcbqs6Up/TBbpMOvyOVR8Ak+0yLA==" crossorigin=anonymous defer></script></body></html>
+<script src=/index.min.95720397d55302de0e04fb8f4bf89a7396888a3be86803aa187cbc45924e9c35452b4bef718cd568b25ad872307d8f5537eab4c0045b8043c40628674a4fc53d.js integrity="sha512-lXIDl9VTAt4OBPuPS/iac5aIijvoaAOqGHy8RZJOnDVFK0vvcYzVaLJa2HIwfY9VN+q0wARbgEPEBihnSk/FPQ==" crossorigin=anonymous defer></script></body></html>
