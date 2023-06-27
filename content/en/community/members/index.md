@@ -26,6 +26,8 @@ GAMBIT is developed by a growing community of theorists and experimentalists, in
 
 ### Gallery
 
+Here are some of our members with links to more information about them.
+
 <style>
   div.people table
   {

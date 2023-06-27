@@ -76,3 +76,6 @@ Supplementary data, including samples: <a href="https://doi.org/10.5281/zenodo.3
   <li>ColliderBit: a GAMBIT module for the calculation of high-energy collider observables and likelihoods, Eur. Phys. J. C 77 (2017) 795, <a href="https://arxiv.org/abs/1705.07919 ">arXiv:1705.07919</a> </li>
   <li>GAMBIT: The Global and Modular Beyond-the-Standard-Model Inference Tool, Eur. Phys. J. C 77 (2017) 784, Addendum: Eur. Phys. J. C 78 (2018) 98, <a href="https://arxiv.org/abs/1705.07908">arXiv:1705.07908</a> </li>
 </li></ul>
+
+### Outreach
+<a href="https://iopscience.iop.org/article/10.1088/2058-7058/30/3/38/pdf">Physics World </a> article on GAMBIT.
