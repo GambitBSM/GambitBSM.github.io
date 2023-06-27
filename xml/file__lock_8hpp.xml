@@ -4,22 +4,27 @@
     <compoundname>file_lock.hpp</compoundname>
     <includes local="no">string</includes>
     <includedby refid="3bithit_8cpp" local="yes">3bithit.cpp</includedby>
+    <includedby refid="CalcHEP__3__6__27_8cpp" local="yes">CalcHEP_3_6_27.cpp</includedby>
     <includedby refid="ColliderBit__InterpolatedYields_8cpp" local="yes">ColliderBit_InterpolatedYields.cpp</includedby>
     <includedby refid="DarkSUSY__5__1__3_8cpp" local="yes">DarkSUSY_5_1_3.cpp</includedby>
     <includedby refid="DarkSUSY__MSSM__6__1__1_8cpp" local="yes">DarkSUSY_MSSM_6_1_1.cpp</includedby>
     <includedby refid="DarkSUSY__MSSM__6__2__2_8cpp" local="yes">DarkSUSY_MSSM_6_2_2.cpp</includedby>
     <includedby refid="DarkSUSY__MSSM__6__2__5_8cpp" local="yes">DarkSUSY_MSSM_6_2_5.cpp</includedby>
+    <includedby refid="DarkSUSY__MSSM__6__4__0_8cpp" local="yes">DarkSUSY_MSSM_6_4_0.cpp</includedby>
     <includedby refid="DarkSUSY__generic__wimp__6__1__1_8cpp" local="yes">DarkSUSY_generic_wimp_6_1_1.cpp</includedby>
     <includedby refid="DarkSUSY__generic__wimp__6__2__2_8cpp" local="yes">DarkSUSY_generic_wimp_6_2_2.cpp</includedby>
     <includedby refid="DarkSUSY__generic__wimp__6__2__5_8cpp" local="yes">DarkSUSY_generic_wimp_6_2_5.cpp</includedby>
+    <includedby refid="DarkSUSY__generic__wimp__6__4__0_8cpp" local="yes">DarkSUSY_generic_wimp_6_4_0.cpp</includedby>
     <includedby refid="HiggsBounds__4__2__1_8cpp" local="yes">HiggsBounds_4_2_1.cpp</includedby>
     <includedby refid="HiggsBounds__4__3__1_8cpp" local="yes">HiggsBounds_4_3_1.cpp</includedby>
     <includedby refid="HiggsSignals__1__4_8cpp" local="yes">HiggsSignals_1_4.cpp</includedby>
     <includedby refid="decay__table_8cpp" local="yes">decay_table.cpp</includedby>
     <includedby refid="file__lock_8cpp" local="yes">file_lock.cpp</includedby>
+    <includedby refid="gambit_8cpp" local="yes">gambit.cpp</includedby>
     <includedby refid="hdf5printer__v2_8hpp" local="yes">hdf5printer_v2.hpp</includedby>
     <includedby refid="logging_8hpp" local="yes">logging.hpp</includedby>
     <includedby refid="spectrum_8cpp" local="yes">spectrum.cpp</includedby>
+    <includedby refid="terminator_8cpp" local="yes">terminator.cpp</includedby>
     <incdepgraph>
       <node id="1">
         <label>file_lock.hpp</label>
@@ -32,103 +37,123 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="4">
+      <node id="3">
+        <label>CalcHEP_3_6_27.cpp</label>
+        <link refid="CalcHEP__3__6__27_8cpp"/>
+      </node>
+      <node id="5">
         <label>DarkSUSY_5_1_3.cpp</label>
         <link refid="DarkSUSY__5__1__3_8cpp"/>
       </node>
-      <node id="5">
+      <node id="6">
         <label>DarkSUSY_MSSM_6_1_1.cpp</label>
         <link refid="DarkSUSY__MSSM__6__1__1_8cpp"/>
       </node>
-      <node id="6">
+      <node id="7">
         <label>DarkSUSY_MSSM_6_2_2.cpp</label>
         <link refid="DarkSUSY__MSSM__6__2__2_8cpp"/>
       </node>
-      <node id="7">
+      <node id="8">
         <label>DarkSUSY_MSSM_6_2_5.cpp</label>
         <link refid="DarkSUSY__MSSM__6__2__5_8cpp"/>
       </node>
-      <node id="8">
+      <node id="9">
+        <label>DarkSUSY_MSSM_6_4_0.cpp</label>
+        <link refid="DarkSUSY__MSSM__6__4__0_8cpp"/>
+      </node>
+      <node id="10">
         <label>DarkSUSY_generic_wimp_6_1_1.cpp</label>
         <link refid="DarkSUSY__generic__wimp__6__1__1_8cpp"/>
       </node>
-      <node id="9">
+      <node id="11">
         <label>DarkSUSY_generic_wimp_6_2_2.cpp</label>
         <link refid="DarkSUSY__generic__wimp__6__2__2_8cpp"/>
       </node>
-      <node id="10">
+      <node id="12">
         <label>DarkSUSY_generic_wimp_6_2_5.cpp</label>
         <link refid="DarkSUSY__generic__wimp__6__2__5_8cpp"/>
       </node>
-      <node id="18">
+      <node id="13">
+        <label>DarkSUSY_generic_wimp_6_4_0.cpp</label>
+        <link refid="DarkSUSY__generic__wimp__6__4__0_8cpp"/>
+      </node>
+      <node id="22">
         <label>ini_functions.cpp</label>
         <link refid="Backends_2src_2ini__functions_8cpp"/>
       </node>
-      <node id="3">
+      <node id="4">
         <label>ColliderBit_InterpolatedYields.cpp</label>
         <link refid="ColliderBit__InterpolatedYields_8cpp"/>
+      </node>
+      <node id="16">
+        <label>gambit.cpp</label>
+        <link refid="gambit_8cpp"/>
       </node>
       <node id="2">
         <label>3bithit.cpp</label>
         <link refid="3bithit_8cpp"/>
       </node>
-      <node id="11">
+      <node id="14">
         <label>decay_table.cpp</label>
         <link refid="decay__table_8cpp"/>
       </node>
-      <node id="17">
+      <node id="21">
         <label>functors.cpp</label>
         <link refid="Elements_2src_2functors_8cpp"/>
       </node>
-      <node id="19">
+      <node id="23">
         <label>ini_functions.cpp</label>
         <link refid="Elements_2src_2ini__functions_8cpp"/>
       </node>
-      <node id="23">
+      <node id="27">
         <label>spectrum.cpp</label>
         <link refid="spectrum_8cpp"/>
       </node>
-      <node id="16">
+      <node id="28">
+        <label>terminator.cpp</label>
+        <link refid="terminator_8cpp"/>
+      </node>
+      <node id="20">
         <label>logging.hpp</label>
         <link refid="logging_8hpp"/>
-        <childnode refid="17" relation="include">
-        </childnode>
-        <childnode refid="18" relation="include">
-        </childnode>
-        <childnode refid="19" relation="include">
-        </childnode>
-        <childnode refid="20" relation="include">
-        </childnode>
         <childnode refid="21" relation="include">
         </childnode>
         <childnode refid="22" relation="include">
         </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
       </node>
-      <node id="20">
+      <node id="24">
         <label>logger.cpp</label>
         <link refid="logger_8cpp"/>
       </node>
-      <node id="21">
+      <node id="25">
         <label>logging.cpp</label>
         <link refid="logging_8cpp"/>
       </node>
-      <node id="22">
+      <node id="26">
         <label>logmaster.cpp</label>
         <link refid="logmaster_8cpp"/>
       </node>
-      <node id="13">
+      <node id="17">
         <label>hdf5printer_v2.hpp</label>
         <link refid="hdf5printer__v2_8hpp"/>
-        <childnode refid="14" relation="include">
+        <childnode refid="18" relation="include">
         </childnode>
-        <childnode refid="15" relation="include">
+        <childnode refid="19" relation="include">
         </childnode>
       </node>
-      <node id="14">
+      <node id="18">
         <label>hdf5printer_v2.cpp</label>
         <link refid="hdf5printer__v2_8cpp"/>
       </node>
-      <node id="15">
+      <node id="19">
         <label>print_overloads.cpp</label>
         <link refid="hdf5printer__v2_2print__overloads_8cpp"/>
       </node>
@@ -159,12 +184,22 @@
         </childnode>
         <childnode refid="13" relation="include">
         </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
         <childnode refid="16" relation="include">
         </childnode>
-        <childnode refid="23" relation="include">
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
         </childnode>
       </node>
-      <node id="12">
+      <node id="15">
         <label>file_lock.cpp</label>
         <link refid="file__lock_8cpp"/>
       </node>
@@ -240,57 +275,70 @@
 <codeline lineno="48"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Lock<sp/>will<sp/>be<sp/>automatically<sp/>released<sp/>if<sp/>this<sp/>object<sp/>is<sp/>destructed</highlight></codeline>
 <codeline lineno="49" refid="classGambit_1_1Utils_1_1FileLock" refkind="compound"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classGambit_1_1Utils_1_1FileLock" kindref="compound">FileLock</ref></highlight></codeline>
 <codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="52"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Name<sp/>for<sp/>the<sp/>managed<sp/>lock<sp/>file</highlight></codeline>
-<codeline lineno="53"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>my_lock_fname;</highlight></codeline>
-<codeline lineno="54"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="55"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>C<sp/>file<sp/>descriptor<sp/>for<sp/>the<sp/>lock<sp/>file</highlight></codeline>
-<codeline lineno="56"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fd;</highlight></codeline>
-<codeline lineno="57"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="58"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Bool<sp/>to<sp/>indicate<sp/>if<sp/>we<sp/>already<sp/>have<sp/>the<sp/>lock</highlight></codeline>
-<codeline lineno="59"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>have_lock;</highlight></codeline>
-<codeline lineno="60"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="61"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Bool<sp/>to<sp/>indicate<sp/>that<sp/>hard<sp/>errors<sp/>should<sp/>be<sp/>thrown<sp/>rather<sp/>than<sp/>gambit<sp/>errors<sp/>(e.g.<sp/>for<sp/>use<sp/>in<sp/>loggers)</highlight></codeline>
-<codeline lineno="62"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>hard_errors;</highlight></codeline>
-<codeline lineno="63"><highlight class="normal"></highlight></codeline>
-<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="65"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Constructor</highlight></codeline>
-<codeline lineno="66"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1Utils_1_1FileLock_1a8bcce9a6c8168d1cf20ce1dfd751c48a" kindref="member">FileLock</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>fname,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>harderrs=</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="53"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Name<sp/>for<sp/>the<sp/>managed<sp/>lock<sp/>file</highlight></codeline>
+<codeline lineno="54"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>my_lock_fname;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="56"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>C<sp/>file<sp/>descriptor<sp/>for<sp/>the<sp/>lock<sp/>file</highlight></codeline>
+<codeline lineno="57"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>fd;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="59"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Bool<sp/>to<sp/>indicate<sp/>if<sp/>we<sp/>already<sp/>have<sp/>the<sp/>lock</highlight></codeline>
+<codeline lineno="60"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>have_lock;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="62"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Bool<sp/>to<sp/>indicate<sp/>that<sp/>hard<sp/>errors<sp/>should<sp/>be<sp/>thrown<sp/>rather<sp/>than<sp/>gambit<sp/>errors<sp/>(e.g.<sp/>for<sp/>use<sp/>in<sp/>loggers)</highlight></codeline>
+<codeline lineno="63"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>hard_errors;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="65"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Bool<sp/>to<sp/>indicate<sp/>if<sp/>the<sp/>file<sp/>has<sp/>the<sp/>ability<sp/>to<sp/>be<sp/>exhaustible</highlight></codeline>
+<codeline lineno="66"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>exhaustible;</highlight></codeline>
 <codeline lineno="67"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="68"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Destructor</highlight></codeline>
-<codeline lineno="69"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Closing<sp/>the<sp/>file<sp/>descriptor<sp/>will<sp/>automatically<sp/>release<sp/>any<sp/>lock<sp/>we<sp/>might<sp/>have</highlight></codeline>
-<codeline lineno="70"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1Utils_1_1FileLock_1a4f030db82976cb88db9737456dfb4c42" kindref="member">~FileLock</ref>();</highlight></codeline>
-<codeline lineno="71"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="72"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Obtain<sp/>lock<sp/>(or<sp/>wait<sp/>if<sp/>lock<sp/>cannot<sp/>be<sp/>obtained,<sp/>and<sp/>then<sp/>obtain<sp/>lock)</highlight></codeline>
-<codeline lineno="73"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Utils_1_1FileLock_1a40dc7048003861d5e543f4bf6876f0dd" kindref="member">get_lock</ref>();</highlight></codeline>
+<codeline lineno="68"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Bool<sp/>to<sp/>indicate<sp/>whether<sp/>the<sp/>lock<sp/>has<sp/>been<sp/>exhausted<sp/>or<sp/>not</highlight></codeline>
+<codeline lineno="69"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>exhausted_lock;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="72"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Constructor</highlight></codeline>
+<codeline lineno="73"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1Utils_1_1FileLock_1a576eee5f0872c3a6cf7a5cbd97f78852" kindref="member">FileLock</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>fname,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>is_exhaustible=</highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>harderrs=</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="74"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="75"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Release<sp/>a<sp/>lock<sp/>(error<sp/>if<sp/>no<sp/>lock<sp/>held)</highlight></codeline>
-<codeline lineno="76"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Utils_1_1FileLock_1a69e8e2574575749e13d78b30af04e2fc" kindref="member">release_lock</ref>();</highlight></codeline>
-<codeline lineno="77"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="78"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Getter<sp/>for<sp/>lockfile<sp/>name</highlight></codeline>
-<codeline lineno="79"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/><ref refid="classGambit_1_1Utils_1_1FileLock_1a8a6da1bd087bec267f997d71ba24cb0f" kindref="member">get_filename</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="81"><highlight class="normal"></highlight></codeline>
-<codeline lineno="82"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="83"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Class<sp/>to<sp/>manage<sp/>a<sp/>process<sp/>lock,<sp/>using<sp/>a<sp/>file</highlight></codeline>
-<codeline lineno="84" refid="classGambit_1_1Utils_1_1ProcessLock" refkind="compound"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classGambit_1_1Utils_1_1ProcessLock" kindref="compound">ProcessLock</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Utils_1_1FileLock" kindref="compound">FileLock</ref></highlight></codeline>
-<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="87"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Static<sp/>variable<sp/>for<sp/>the<sp/>lock-file<sp/>prefix<sp/>path,<sp/>i.e.<sp/>where<sp/>to<sp/>store<sp/>the<sp/>lock<sp/>file</highlight></codeline>
-<codeline lineno="88"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>lock_prefix;</highlight></codeline>
-<codeline lineno="89"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="90"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Static<sp/>variable<sp/>for<sp/>the<sp/>lock-file<sp/>extension</highlight></codeline>
-<codeline lineno="91"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>lock_suffix;</highlight></codeline>
-<codeline lineno="92"><highlight class="normal"></highlight></codeline>
-<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="94"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Constructor</highlight></codeline>
-<codeline lineno="95"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1Utils_1_1ProcessLock_1a7751fcf9d1b1090eef095d5d7b1cb447" kindref="member">ProcessLock</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>fname,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>harderrs=</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="97"><highlight class="normal"></highlight></codeline>
-<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="99"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="100"><highlight class="normal"></highlight></codeline>
-<codeline lineno="101"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="75"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Destructor</highlight></codeline>
+<codeline lineno="76"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Closing<sp/>the<sp/>file<sp/>descriptor<sp/>will<sp/>automatically<sp/>release<sp/>any<sp/>lock<sp/>we<sp/>might<sp/>have</highlight></codeline>
+<codeline lineno="77"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1Utils_1_1FileLock_1a4f030db82976cb88db9737456dfb4c42" kindref="member">~FileLock</ref>();</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="79"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Obtain<sp/>lock<sp/>(or<sp/>wait<sp/>if<sp/>lock<sp/>cannot<sp/>be<sp/>obtained,<sp/>and<sp/>then<sp/>obtain<sp/>lock)</highlight></codeline>
+<codeline lineno="80"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Utils_1_1FileLock_1a40dc7048003861d5e543f4bf6876f0dd" kindref="member">get_lock</ref>();</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="82"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Release<sp/>a<sp/>lock<sp/>(error<sp/>if<sp/>no<sp/>lock<sp/>held)</highlight></codeline>
+<codeline lineno="83"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Utils_1_1FileLock_1a69e8e2574575749e13d78b30af04e2fc" kindref="member">release_lock</ref>();</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="85"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Getter<sp/>for<sp/>lockfile<sp/>name</highlight></codeline>
+<codeline lineno="86"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/><ref refid="classGambit_1_1Utils_1_1FileLock_1a8a6da1bd087bec267f997d71ba24cb0f" kindref="member">get_filename</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="88"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Check<sp/>if<sp/>lock<sp/>is<sp/>exhausted</highlight></codeline>
+<codeline lineno="89"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Utils_1_1FileLock_1ad477dd4f642f82dad0ff025bc7614743" kindref="member">exhausted</ref>();</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="93"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Class<sp/>to<sp/>manage<sp/>a<sp/>process<sp/>lock,<sp/>using<sp/>a<sp/>file</highlight></codeline>
+<codeline lineno="94" refid="classGambit_1_1Utils_1_1ProcessLock" refkind="compound"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classGambit_1_1Utils_1_1ProcessLock" kindref="compound">ProcessLock</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Utils_1_1FileLock" kindref="compound">FileLock</ref></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="97"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Static<sp/>variable<sp/>for<sp/>the<sp/>lock-file<sp/>prefix<sp/>path,<sp/>i.e.<sp/>where<sp/>to<sp/>store<sp/>the<sp/>lock<sp/>file</highlight></codeline>
+<codeline lineno="98"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>lock_prefix;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="100"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Static<sp/>variable<sp/>for<sp/>the<sp/>lock-file<sp/>extension</highlight></codeline>
+<codeline lineno="101"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>lock_suffix;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="104"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Constructor</highlight></codeline>
+<codeline lineno="105"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1Utils_1_1ProcessLock_1a9ff6b49771f3ad7b15cdc27cfbfa4567" kindref="member">ProcessLock</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>fname,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>is_exhaustible=</highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>harderrs=</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="107"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Clean<sp/>up<sp/>existing<sp/>process<sp/>locks</highlight></codeline>
+<codeline lineno="108"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Utils_1_1ProcessLock_1acfdeb52036f423eae99040905d041fa1" kindref="member">clean_locks</ref>();</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="112"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
     <location file="Utils/include/gambit/Utils/file_lock.hpp"/>
   </compounddef>

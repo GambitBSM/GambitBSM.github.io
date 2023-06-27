@@ -1,11 +1,11 @@
 ---
-title: "file HepLike_1_2/wrapper_HL_Gaussian_def.h"
+title: "file HepLike_2_0/wrapper_HL_Gaussian_def.h"
 
 description: "[No description available]"
 
 ---
 
-# file HepLike_1_2/wrapper_HL_Gaussian_def.h
+# file HepLike_2_0/wrapper_HL_Gaussian_def.h
 
 [No description available]
 
@@ -34,8 +34,8 @@ namespace CAT_3(
 ## Source code
 
 ```
-#ifndef __wrapper_HL_Gaussian_def_HepLike_1_2_h__
-#define __wrapper_HL_Gaussian_def_HepLike_1_2_h__
+#ifndef __wrapper_HL_Gaussian_def_HepLike_2_0_h__
+#define __wrapper_HL_Gaussian_def_HepLike_2_0_h__
 
 #include <string>
 
@@ -84,14 +84,14 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
    
    // Wrappers for original constructors: 
    inline HL_Gaussian::HL_Gaussian() :
-      HL_Data(__factory0())
+      WrapperBase(__factory0())
    {
       get_BEptr()->set_wptr(this);
       get_BEptr()->set_delete_wrapper(false);
    }
    
-   inline HL_Gaussian::HL_Gaussian(::std::basic_string<char> s) :
-      HL_Data(__factory1(s))
+   inline HL_Gaussian::HL_Gaussian(std::string s) :
+      WrapperBase(__factory1(s))
    {
       get_BEptr()->set_wptr(this);
       get_BEptr()->set_delete_wrapper(false);
@@ -99,7 +99,7 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
    
    // Special pointer-based constructor: 
    inline HL_Gaussian::HL_Gaussian(Abstract_HL_Gaussian* in) :
-      HL_Data(in)
+      WrapperBase(in)
    {
       get_BEptr()->set_wptr(this);
       get_BEptr()->set_delete_wrapper(false);
@@ -107,7 +107,7 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
    
    // Copy constructor: 
    inline HL_Gaussian::HL_Gaussian(const HL_Gaussian& in) :
-      HL_Data(in.get_BEptr()->pointer_copy__BOSS())
+      WrapperBase(in.get_BEptr()->pointer_copy__BOSS())
    {
       get_BEptr()->set_wptr(this);
       get_BEptr()->set_delete_wrapper(false);
@@ -150,10 +150,10 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 #include "gambit/Backends/backend_undefs.hpp"
 
-#endif /* __wrapper_HL_Gaussian_def_HepLike_1_2_h__ */
+#endif /* __wrapper_HL_Gaussian_def_HepLike_2_0_h__ */
 ```
 
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:49 +0000
+Updated on 2023-06-26 at 21:36:57 +0000

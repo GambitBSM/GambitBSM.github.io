@@ -33,6 +33,11 @@ ATLAS-specific efficiency and smearing functions for super fast detector simulat
 | void | **[applyTightIDElectronSelection](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-applytightidelectronselection)**(std::vector< HEPUtils::Particle * > & electrons)<br>Alias to allow non-const particle vectors.  |
 | void | **[applyElectronIDEfficiency2019](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-applyelectronidefficiency2019)**(std::vector< const HEPUtils::Particle * > & electrons, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) operating_point) |
 | void | **[applyElectronIsolationEfficiency2019](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-applyelectronisolationefficiency2019)**(std::vector< const HEPUtils::Particle * > & electrons, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) operating_point) |
+| void | **[applyElectronReconstructionEfficiency2020](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-applyelectronreconstructionefficiency2020)**(std::vector< const HEPUtils::Particle * > & electrons, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) operating_point) |
+| void | **[applyElectronIDEfficiency2020](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-applyelectronidefficiency2020)**(std::vector< const HEPUtils::Particle * > & electrons, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) operating_point) |
+| void | **[applyElectronIsolationEfficiency2020](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-applyelectronisolationefficiency2020)**(std::vector< const HEPUtils::Particle * > & electrons, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) operating_point) |
+| void | **[applyMuonIDEfficiency2020](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-applymuonidefficiency2020)**(std::vector< const HEPUtils::Particle * > & muons, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) operating_point) |
+| void | **[applyMuonIsolationEfficiency2020](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1atlas/#function-applymuonisolationefficiency2020)**(std::vector< const HEPUtils::Particle * > & muons, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) operating_point) |
 
 
 ## Functions Documentation
@@ -309,10 +314,85 @@ inline void applyElectronIsolationEfficiency2019(
 Electron 2019 Isolation efficiency functions from [https://arxiv.org/pdf/1902.04655.pdf](https://arxiv.org/pdf/1902.04655.pdf)
 
 
+### function applyElectronReconstructionEfficiency2020
+
+```
+inline void applyElectronReconstructionEfficiency2020(
+    std::vector< const HEPUtils::Particle * > & electrons,
+    str operating_point
+)
+```
+
+
+**Note**: These efficiencies are 1D efficiencies so only dependence on p_T is used 
+
+Electron 2020 reconstruction efficiency functions in 1908.00005 using 81 fb^-1 of Run 2 data 
+
+
+### function applyElectronIDEfficiency2020
+
+```
+inline void applyElectronIDEfficiency2020(
+    std::vector< const HEPUtils::Particle * > & electrons,
+    str operating_point
+)
+```
+
+
+**Note**: These efficiencies are 1D efficiencies so only dependence on p_T is used 
+
+Electron 2020 ID efficiency functions in 1908.00005 using 81 fb^-1 of Run 2 data 
+
+
+### function applyElectronIsolationEfficiency2020
+
+```
+inline void applyElectronIsolationEfficiency2020(
+    std::vector< const HEPUtils::Particle * > & electrons,
+    str operating_point
+)
+```
+
+
+**Note**: These efficiencies are 1D efficiencies so only dependence on p_T is used 
+
+Electron 2020 isolation efficiency functions in 1908.00005 using 81 fb^-1 of Run 2 data 
+
+
+### function applyMuonIDEfficiency2020
+
+```
+inline void applyMuonIDEfficiency2020(
+    std::vector< const HEPUtils::Particle * > & muons,
+    str operating_point
+)
+```
+
+
+**Note**: These efficiencies are 1D efficiencies so only dependence on p_T is used 
+
+Muon 2020 identification efficiency functions from full Run2 dataset released in 2012.00578 
+
+
+### function applyMuonIsolationEfficiency2020
+
+```
+inline void applyMuonIsolationEfficiency2020(
+    std::vector< const HEPUtils::Particle * > & muons,
+    str operating_point
+)
+```
+
+
+**Note**: These efficiencies are 1D efficiencies so only dependence on p_T is used 
+
+Muon 2020 isolation efficiency functions from full Run2 dataset released in 2012.00578 
+
+
 
 
 
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:44 +0000
+Updated on 2023-06-26 at 21:36:52 +0000

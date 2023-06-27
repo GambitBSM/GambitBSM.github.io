@@ -1,11 +1,11 @@
 ---
-title: "file HepLike_1_2/wrapper_HL_ProfLikelihood_def.h"
+title: "file HepLike_2_0/wrapper_HL_ProfLikelihood_def.h"
 
 description: "[No description available]"
 
 ---
 
-# file HepLike_1_2/wrapper_HL_ProfLikelihood_def.h
+# file HepLike_2_0/wrapper_HL_ProfLikelihood_def.h
 
 [No description available]
 
@@ -34,8 +34,8 @@ namespace CAT_3(
 ## Source code
 
 ```
-#ifndef __wrapper_HL_ProfLikelihood_def_HepLike_1_2_h__
-#define __wrapper_HL_ProfLikelihood_def_HepLike_1_2_h__
+#ifndef __wrapper_HL_ProfLikelihood_def_HepLike_2_0_h__
+#define __wrapper_HL_ProfLikelihood_def_HepLike_2_0_h__
 
 #include <string>
 
@@ -84,14 +84,28 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
    
    // Wrappers for original constructors: 
    inline HL_ProfLikelihood::HL_ProfLikelihood() :
-      HL_Data(__factory0())
+      WrapperBase(__factory0()),
+      nxbins( get_BEptr()->nxbins_ref__BOSS()),
+      xmin( get_BEptr()->xmin_ref__BOSS()),
+      xmax( get_BEptr()->xmax_ref__BOSS()),
+      central_mes_val( get_BEptr()->central_mes_val_ref__BOSS()),
+      ObsName( get_BEptr()->ObsName_ref__BOSS()),
+      HL_RootFile( get_BEptr()->HL_RootFile_ref__BOSS()),
+      HL_PATH( get_BEptr()->HL_PATH_ref__BOSS())
    {
       get_BEptr()->set_wptr(this);
       get_BEptr()->set_delete_wrapper(false);
    }
    
-   inline HL_ProfLikelihood::HL_ProfLikelihood(::std::basic_string<char> s) :
-      HL_Data(__factory1(s))
+   inline HL_ProfLikelihood::HL_ProfLikelihood(std::string s) :
+      WrapperBase(__factory1(s)),
+      nxbins( get_BEptr()->nxbins_ref__BOSS()),
+      xmin( get_BEptr()->xmin_ref__BOSS()),
+      xmax( get_BEptr()->xmax_ref__BOSS()),
+      central_mes_val( get_BEptr()->central_mes_val_ref__BOSS()),
+      ObsName( get_BEptr()->ObsName_ref__BOSS()),
+      HL_RootFile( get_BEptr()->HL_RootFile_ref__BOSS()),
+      HL_PATH( get_BEptr()->HL_PATH_ref__BOSS())
    {
       get_BEptr()->set_wptr(this);
       get_BEptr()->set_delete_wrapper(false);
@@ -99,7 +113,14 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
    
    // Special pointer-based constructor: 
    inline HL_ProfLikelihood::HL_ProfLikelihood(Abstract_HL_ProfLikelihood* in) :
-      HL_Data(in)
+      WrapperBase(in),
+      nxbins( get_BEptr()->nxbins_ref__BOSS()),
+      xmin( get_BEptr()->xmin_ref__BOSS()),
+      xmax( get_BEptr()->xmax_ref__BOSS()),
+      central_mes_val( get_BEptr()->central_mes_val_ref__BOSS()),
+      ObsName( get_BEptr()->ObsName_ref__BOSS()),
+      HL_RootFile( get_BEptr()->HL_RootFile_ref__BOSS()),
+      HL_PATH( get_BEptr()->HL_PATH_ref__BOSS())
    {
       get_BEptr()->set_wptr(this);
       get_BEptr()->set_delete_wrapper(false);
@@ -107,7 +128,14 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
    
    // Copy constructor: 
    inline HL_ProfLikelihood::HL_ProfLikelihood(const HL_ProfLikelihood& in) :
-      HL_Data(in.get_BEptr()->pointer_copy__BOSS())
+      WrapperBase(in.get_BEptr()->pointer_copy__BOSS()),
+      nxbins( get_BEptr()->nxbins_ref__BOSS()),
+      xmin( get_BEptr()->xmin_ref__BOSS()),
+      xmax( get_BEptr()->xmax_ref__BOSS()),
+      central_mes_val( get_BEptr()->central_mes_val_ref__BOSS()),
+      ObsName( get_BEptr()->ObsName_ref__BOSS()),
+      HL_RootFile( get_BEptr()->HL_RootFile_ref__BOSS()),
+      HL_PATH( get_BEptr()->HL_PATH_ref__BOSS())
    {
       get_BEptr()->set_wptr(this);
       get_BEptr()->set_delete_wrapper(false);
@@ -150,10 +178,10 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 #include "gambit/Backends/backend_undefs.hpp"
 
-#endif /* __wrapper_HL_ProfLikelihood_def_HepLike_1_2_h__ */
+#endif /* __wrapper_HL_ProfLikelihood_def_HepLike_2_0_h__ */
 ```
 
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:49 +0000
+Updated on 2023-06-26 at 21:36:57 +0000

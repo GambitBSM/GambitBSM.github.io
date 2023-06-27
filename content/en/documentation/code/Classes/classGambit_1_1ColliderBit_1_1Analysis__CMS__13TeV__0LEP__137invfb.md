@@ -65,6 +65,7 @@ Inherits from [Gambit::ColliderBit::Analysis](/documentation/code/classes/classg
 | void | **[add_result](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/#function-add-result)**(const [SignalRegionData](/documentation/code/classes/structgambit_1_1colliderbit_1_1signalregiondata/) & sr)<br>Add the given result to the internal results list.  |
 | void | **[set_covariance](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/#function-set-covariance)**(const Eigen::MatrixXd & srcov)<br>Set the covariance matrix, expressing SR correlations.  |
 | void | **[set_covariance](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/#function-set-covariance)**(const std::vector< std::vector< double > > & srcov)<br>A convenience function for setting the SR covariance from a nested vector/initialiser list.  |
+| void | **[set_bkgjson](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/#function-set-bkgjson)**(const std::string & bkgpath)<br>A convenience function for setting the path to the [ATLAS]() FullLikes BKG Json file.  |
 
 
 ## Detailed Description
@@ -159,19 +160,19 @@ static const size_t NUMSR = 12;
 
 ```
 std::map< string, EventCounter > _counters = {
-        {"SR1", EventCounter("SR1")},
-        {"SR2", EventCounter("SR2")},
-        {"SR3", EventCounter("SR3")},
-        {"SR4", EventCounter("SR4")},
-        {"SR5", EventCounter("SR5")},
-        {"SR6", EventCounter("SR6")},
-        {"SR7", EventCounter("SR7")},
-        {"SR8", EventCounter("SR8")},
-        {"SR9", EventCounter("SR9")},
-        {"SR10", EventCounter("SR10")},
-        {"SR11", EventCounter("SR11")},
-        {"SR12", EventCounter("SR12")},
-      };
+          {"SR1", EventCounter("SR1")},
+          {"SR2", EventCounter("SR2")},
+          {"SR3", EventCounter("SR3")},
+          {"SR4", EventCounter("SR4")},
+          {"SR5", EventCounter("SR5")},
+          {"SR6", EventCounter("SR6")},
+          {"SR7", EventCounter("SR7")},
+          {"SR8", EventCounter("SR8")},
+          {"SR9", EventCounter("SR9")},
+          {"SR10", EventCounter("SR10")},
+          {"SR11", EventCounter("SR11")},
+          {"SR12", EventCounter("SR12")},
+        };
 ```
 
 
@@ -184,4 +185,4 @@ Cutflow _cutflow;
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:44 +0000
+Updated on 2023-06-26 at 21:36:51 +0000

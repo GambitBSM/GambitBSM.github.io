@@ -55,8 +55,6 @@ description: "[No description available]"
 |  | **[FUNCTION](/documentation/code/files/examplebit__a__rollcall_8hpp/#define-function)**  |
 |  | **[CAPABILITY](/documentation/code/files/examplebit__a__rollcall_8hpp/#define-capability)**  |
 |  | **[FUNCTION](/documentation/code/files/examplebit__a__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/examplebit__a__rollcall_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/examplebit__a__rollcall_8hpp/#define-function)**  |
 
 ## Detailed Description
 
@@ -245,20 +243,6 @@ double DEPENDENCY(
 
 ```
 #define CONDITIONAL_DEPENDENCY xsection
-```
-
-
-### define CAPABILITY
-
-```
-#define CAPABILITY nevents
-```
-
-
-### define FUNCTION
-
-```
-#define FUNCTION nevents_pred
 ```
 
 
@@ -600,15 +584,6 @@ START_MODULE
     #undef FUNCTION
   #undef CAPABILITY
 
-  // Pythia backend tester
-  #define CAPABILITY test_Pythia
-  START_CAPABILITY
-    #define FUNCTION bossed_pythia_test_function
-    START_FUNCTION(bool)
-    NEEDS_CLASSES_FROM(Pythia, default)
-    #undef FUNCTION
-  #undef CAPABILITY
-
 
   // Tester for C/C++ backend array interfaces
   #define CAPABILITY test_BE_Array
@@ -639,4 +614,4 @@ START_MODULE
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:47 +0000
+Updated on 2023-06-26 at 21:36:55 +0000

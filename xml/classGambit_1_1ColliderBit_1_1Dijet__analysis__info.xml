@@ -1,0 +1,167 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classGambit_1_1ColliderBit_1_1Dijet__analysis__info" kind="class" language="C++" prot="public">
+    <compoundname>Gambit::ColliderBit::Dijet_analysis_info</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classGambit_1_1ColliderBit_1_1Dijet__analysis__info_1a01fcdcaa3e7d236fd97447273b0b4c69" prot="public" static="no" mutable="no">
+        <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+        <definition>str Gambit::ColliderBit::Dijet_analysis_info::name</definition>
+        <argsstring></argsstring>
+        <name>name</name>
+        <qualifiedname>Gambit::ColliderBit::Dijet_analysis_info::name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="1252" column="13" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="1252" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1ColliderBit_1_1Dijet__analysis__info_1acc503beceded4b52eb829b61c89452a3" prot="public" static="no" mutable="no">
+        <type>std::map&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>, std::unique_ptr&lt; <ref refid="classGambit_1_1Utils_1_1interp1d__gsl__collection" kindref="compound">Utils::interp1d_gsl_collection</ref> &gt; &gt;</type>
+        <definition>std::map&lt;str,std::unique_ptr&lt;Utils::interp1d_gsl_collection&gt; &gt; Gambit::ColliderBit::Dijet_analysis_info::interp1d</definition>
+        <argsstring></argsstring>
+        <name>interp1d</name>
+        <qualifiedname>Gambit::ColliderBit::Dijet_analysis_info::interp1d</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="1255" column="18" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="1255" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1ColliderBit_1_1Dijet__analysis__info_1ab1103d2c512f0e0d7fa43689ae6ef44e" prot="public" static="no" mutable="no">
+        <type>std::map&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>, std::unique_ptr&lt; <ref refid="classGambit_1_1Utils_1_1interp2d__collection" kindref="compound">Utils::interp2d_collection</ref> &gt; &gt;</type>
+        <definition>std::map&lt;str,std::unique_ptr&lt;Utils::interp2d_collection&gt; &gt; Gambit::ColliderBit::Dijet_analysis_info::interp2d_simple</definition>
+        <argsstring></argsstring>
+        <name>interp2d_simple</name>
+        <qualifiedname>Gambit::ColliderBit::Dijet_analysis_info::interp2d_simple</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="1256" column="18" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="1256" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGambit_1_1ColliderBit_1_1Dijet__analysis__info_1a7cf8ffd8c87011f976c5efe9482336e2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::ColliderBit::Dijet_analysis_info::add_interp1d</definition>
+        <argsstring>(str name, str filename, std::vector&lt; str &gt; colnames)</argsstring>
+        <name>add_interp1d</name>
+        <qualifiedname>Gambit::ColliderBit::Dijet_analysis_info::add_interp1d</qualifiedname>
+        <param>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &gt;</type>
+          <declname>colnames</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="1258" column="14" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="1258" bodyend="1262"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1ColliderBit_1_1Dijet__analysis__info_1ab734258af048346c75c8c8ba8b0b888c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::ColliderBit::Dijet_analysis_info::add_interp2d_simple</definition>
+        <argsstring>(str name, str filename, std::vector&lt; str &gt; colnames)</argsstring>
+        <name>add_interp2d_simple</name>
+        <qualifiedname>Gambit::ColliderBit::Dijet_analysis_info::add_interp2d_simple</qualifiedname>
+        <param>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &gt;</type>
+          <declname>colnames</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="1264" column="14" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="1264" bodyend="1268"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1ColliderBit_1_1Dijet__analysis__info_1a6fa0c63a25a04f8915c89f7cfe9b3ba9" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const <ref refid="classGambit_1_1Utils_1_1interp1d__gsl__collection" kindref="compound">Utils::interp1d_gsl_collection</ref> &amp;</type>
+        <definition>const Utils::interp1d_gsl_collection &amp; Gambit::ColliderBit::Dijet_analysis_info::get_interp1d</definition>
+        <argsstring>(str name) const</argsstring>
+        <name>get_interp1d</name>
+        <qualifiedname>Gambit::ColliderBit::Dijet_analysis_info::get_interp1d</qualifiedname>
+        <param>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="1270" column="46" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="1270" bodyend="1273"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1ColliderBit_1_1Dijet__analysis__info_1ad3370a5558dd595a7e09a5e481a606ec" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classGambit_1_1Utils_1_1interp2d__collection" kindref="compound">Utils::interp2d_collection</ref> &amp;</type>
+        <definition>Utils::interp2d_collection &amp; Gambit::ColliderBit::Dijet_analysis_info::get_interp2d_simple</definition>
+        <argsstring>(str name) const</argsstring>
+        <name>get_interp2d_simple</name>
+        <qualifiedname>Gambit::ColliderBit::Dijet_analysis_info::get_interp2d_simple</qualifiedname>
+        <param>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="1275" column="36" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="1275" bodyend="1278"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A class to hold analysis information for DiJets (specific to DMsimp models) </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Gambit::ColliderBit::Dijet_analysis_info</label>
+        <link refid="classGambit_1_1ColliderBit_1_1Dijet__analysis__info"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>name</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>string</label>
+      </node>
+    </collaborationgraph>
+    <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="1248" column="5" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="1249" bodyend="1280"/>
+    <listofallmembers>
+      <member refid="classGambit_1_1ColliderBit_1_1Dijet__analysis__info_1a7cf8ffd8c87011f976c5efe9482336e2" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Dijet_analysis_info</scope><name>add_interp1d</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1Dijet__analysis__info_1ab734258af048346c75c8c8ba8b0b888c" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Dijet_analysis_info</scope><name>add_interp2d_simple</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1Dijet__analysis__info_1a6fa0c63a25a04f8915c89f7cfe9b3ba9" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Dijet_analysis_info</scope><name>get_interp1d</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1Dijet__analysis__info_1ad3370a5558dd595a7e09a5e481a606ec" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Dijet_analysis_info</scope><name>get_interp2d_simple</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1Dijet__analysis__info_1acc503beceded4b52eb829b61c89452a3" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Dijet_analysis_info</scope><name>interp1d</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1Dijet__analysis__info_1ab1103d2c512f0e0d7fa43689ae6ef44e" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Dijet_analysis_info</scope><name>interp2d_simple</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1Dijet__analysis__info_1a01fcdcaa3e7d236fd97447273b0b4c69" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Dijet_analysis_info</scope><name>name</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

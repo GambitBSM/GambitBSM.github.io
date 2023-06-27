@@ -1170,6 +1170,8 @@ description: "[No description available]"
 | char[100] | **[exp_corr_mom](/documentation/code/classes/structgambit_1_1parameters/#variable-exp-corr-mom)**  |
 | double | **[Re_DeltaC7](/documentation/code/classes/structgambit_1_1parameters/#variable-re-deltac7)**  |
 | double | **[Im_DeltaC7](/documentation/code/classes/structgambit_1_1parameters/#variable-im-deltac7)**  |
+| double | **[Re_DeltaC8](/documentation/code/classes/structgambit_1_1parameters/#variable-re-deltac8)**  |
+| double | **[Im_DeltaC8](/documentation/code/classes/structgambit_1_1parameters/#variable-im-deltac8)**  |
 | double | **[Re_DeltaC9](/documentation/code/classes/structgambit_1_1parameters/#variable-re-deltac9)**  |
 | double | **[Im_DeltaC9](/documentation/code/classes/structgambit_1_1parameters/#variable-im-deltac9)**  |
 | double | **[Re_DeltaC10](/documentation/code/classes/structgambit_1_1parameters/#variable-re-deltac10)**  |
@@ -1210,6 +1212,8 @@ description: "[No description available]"
 | double | **[Im_DeltaCQ2_tau](/documentation/code/classes/structgambit_1_1parameters/#variable-im-deltacq2-tau)**  |
 | double | **[Re_DeltaC7_Prime](/documentation/code/classes/structgambit_1_1parameters/#variable-re-deltac7-prime)**  |
 | double | **[Im_DeltaC7_Prime](/documentation/code/classes/structgambit_1_1parameters/#variable-im-deltac7-prime)**  |
+| double | **[Re_DeltaC8_Prime](/documentation/code/classes/structgambit_1_1parameters/#variable-re-deltac8-prime)**  |
+| double | **[Im_DeltaC8_Prime](/documentation/code/classes/structgambit_1_1parameters/#variable-im-deltac8-prime)**  |
 | double | **[Re_DeltaC9_Prime](/documentation/code/classes/structgambit_1_1parameters/#variable-re-deltac9-prime)**  |
 | double | **[Im_DeltaC9_Prime](/documentation/code/classes/structgambit_1_1parameters/#variable-im-deltac9-prime)**  |
 | double | **[Re_DeltaC10_Prime](/documentation/code/classes/structgambit_1_1parameters/#variable-re-deltac10-prime)**  |
@@ -9306,6 +9310,20 @@ double Im_DeltaC7 = 0.;
 ```
 
 
+### variable Re_DeltaC8
+
+```
+double Re_DeltaC8 = 0.;
+```
+
+
+### variable Im_DeltaC8
+
+```
+double Im_DeltaC8 = 0.;
+```
+
+
 ### variable Re_DeltaC9
 
 ```
@@ -9586,6 +9604,20 @@ double Im_DeltaC7_Prime = 0.;
 ```
 
 
+### variable Re_DeltaC8_Prime
+
+```
+double Re_DeltaC8_Prime = 0.;
+```
+
+
+### variable Im_DeltaC8_Prime
+
+```
+double Im_DeltaC8_Prime = 0.;
+```
+
+
 ### variable Re_DeltaC9_Prime
 
 ```
@@ -9644,4 +9676,4 @@ double Im_DeltaCQ2_Prime = 0.;
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:43 +0000
+Updated on 2023-06-26 at 21:36:51 +0000

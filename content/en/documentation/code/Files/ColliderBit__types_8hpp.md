@@ -16,12 +16,6 @@ description: "[No description available]"
 | **[Gambit](/documentation/code/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
 | **[Gambit::ColliderBit](/documentation/code/namespaces/namespacegambit_1_1colliderbit/)**  |
 
-## Classes
-
-|                | Name           |
-| -------------- | -------------- |
-| struct | **[Gambit::ColliderBit::AnalysisLogLikes](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisloglikes/)** <br>Container for loglike information for an analysis.  |
-
 ## Detailed Description
 
 
@@ -30,6 +24,7 @@ description: "[No description available]"
   * Abram Krislock ([a.m.b.krislock@fys.uio.no](mailto:a.m.b.krislock@fys.uio.no))
   * Pat Scott ([p.scott@imperial.ac.uk](mailto:p.scott@imperial.ac.uk)) 
   * Tomas Gonzalo ([t.e.gonzalo@fys.uio.no](mailto:t.e.gonzalo@fys.uio.no)) 
+  * Anders Kvellestad ([anders.kvellestad@fys.uio.no](mailto:anders.kvellestad@fys.uio.no)) 
 
 
 **Date**: 
@@ -37,6 +32,7 @@ description: "[No description available]"
   * 2018 Jan 
   * 2019 Jan, May
   * 2018 Feb
+  * 2021 Jun
 
 
 Type definition header for module ColliderBit.
@@ -93,6 +89,10 @@ Authors (add name if you modify):
 ///          (t.e.gonzalo@fys.uio.no)
 ///  \date 2018 Feb
 ///
+///  \author Anders Kvellestad
+///          (anders.kvellestad@fys.uio.no)
+///  \date 2021 Jun
+///
 ///  *********************************************
 
 
@@ -111,6 +111,7 @@ Authors (add name if you modify):
 #include "gambit/ColliderBit/detectors/BuckFast.hpp"
 #include "gambit/ColliderBit/analyses/AnalysisContainer.hpp"
 #include "gambit/ColliderBit/analyses/AnalysisData.hpp"
+#include "gambit/ColliderBit/analyses/AnalysisLogLikes.hpp"
 
 #include "gambit/ColliderBit/limits/ALEPHSleptonLimits.hpp"
 #include "gambit/ColliderBit/limits/L3GauginoLimits.hpp"
@@ -129,25 +130,7 @@ namespace Gambit
   {
 
     /// @brief Container for data from multiple analyses and SRs
-    typedef std::vector<AnalysisData> AnalysisNumbers;
     typedef std::vector<AnalysisData*> AnalysisDataPointers;
-
-    /// @brief Container for loglike information for an analysis
-    struct AnalysisLogLikes
-    {
-      std::map<std::string,int> sr_indices;  // Signed indices so that we can use negative values for special cases
-      std::map<std::string,double> sr_loglikes;
-
-      std::string combination_sr_label;
-      int combination_sr_index;
-      double combination_loglike;
-
-      AnalysisLogLikes() :
-        combination_sr_label("undefined"),
-        combination_sr_index(-2),
-        combination_loglike(0.0)
-        { }
-    };
 
     /// @brief Typedef for a string-to-AnalysisLogLikes map
     typedef std::map<std::string,AnalysisLogLikes> map_str_AnalysisLogLikes;
@@ -196,4 +179,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:48 +0000
+Updated on 2023-06-26 at 21:36:56 +0000

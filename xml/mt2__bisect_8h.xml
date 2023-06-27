@@ -4,6 +4,7 @@
     <compoundname>mt2_bisect.h</compoundname>
     <includedby refid="Analysis__ATLAS__13TeV__0LEPStop__36invfb_8cpp" local="yes">Analysis_ATLAS_13TeV_0LEPStop_36invfb.cpp</includedby>
     <includedby refid="Analysis__ATLAS__13TeV__1LEPStop__36invfb_8cpp" local="yes">Analysis_ATLAS_13TeV_1LEPStop_36invfb.cpp</includedby>
+    <includedby refid="Analysis__ATLAS__13TeV__1Lep2b__139invfb_8cpp" local="yes">Analysis_ATLAS_13TeV_1Lep2b_139invfb.cpp</includedby>
     <includedby refid="Analysis__ATLAS__13TeV__2LEPStop__139invfb_8cpp" local="yes">Analysis_ATLAS_13TeV_2LEPStop_139invfb.cpp</includedby>
     <includedby refid="Analysis__ATLAS__13TeV__2LEPStop__36invfb_8cpp" local="yes">Analysis_ATLAS_13TeV_2LEPStop_36invfb.cpp</includedby>
     <includedby refid="Analysis__ATLAS__13TeV__2OSLEP__Z__139invfb_8cpp" local="yes">Analysis_ATLAS_13TeV_2OSLEP_Z_139invfb.cpp</includedby>
@@ -14,6 +15,7 @@
     <includedby refid="Analysis__ATLAS__13TeV__4LEP__36invfb_8cpp" local="yes">Analysis_ATLAS_13TeV_4LEP_36invfb.cpp</includedby>
     <includedby refid="Analysis__ATLAS__13TeV__MultiLEP__36invfb_8cpp" local="yes">Analysis_ATLAS_13TeV_MultiLEP_36invfb.cpp</includedby>
     <includedby refid="Analysis__ATLAS__13TeV__MultiLEP__confnote__36invfb_8cpp" local="yes">Analysis_ATLAS_13TeV_MultiLEP_confnote_36invfb.cpp</includedby>
+    <includedby refid="Analysis__ATLAS__13TeV__PhotonGGM__1Photon__139invfb_8cpp" local="yes">Analysis_ATLAS_13TeV_PhotonGGM_1Photon_139invfb.cpp</includedby>
     <includedby refid="Analysis__ATLAS__13TeV__PhotonGGM__36invfb_8cpp" local="yes">Analysis_ATLAS_13TeV_PhotonGGM_36invfb.cpp</includedby>
     <includedby refid="Analysis__ATLAS__13TeV__RJ3L__lowmass__36invfb_8cpp" local="yes">Analysis_ATLAS_13TeV_RJ3L_lowmass_36invfb.cpp</includedby>
     <includedby refid="Analysis__ATLAS__13TeV__ZGammaGrav__CONFNOTE__80invfb_8cpp" local="yes">Analysis_ATLAS_13TeV_ZGammaGrav_CONFNOTE_80invfb.cpp</includedby>
@@ -26,6 +28,7 @@
     <includedby refid="Analysis__CMS__13TeV__1Photon1Lepton__36invfb_8cpp" local="yes">Analysis_CMS_13TeV_1Photon1Lepton_36invfb.cpp</includedby>
     <includedby refid="Analysis__CMS__13TeV__2LEPStop__36invfb_8cpp" local="yes">Analysis_CMS_13TeV_2LEPStop_36invfb.cpp</includedby>
     <includedby refid="Analysis__CMS__13TeV__2LEPsoft__36invfb_8cpp" local="yes">Analysis_CMS_13TeV_2LEPsoft_36invfb.cpp</includedby>
+    <includedby refid="Analysis__CMS__13TeV__2OSLEP__137invfb_8cpp" local="yes">Analysis_CMS_13TeV_2OSLEP_137invfb.cpp</includedby>
     <includedby refid="Analysis__CMS__13TeV__2OSLEP__36invfb_8cpp" local="yes">Analysis_CMS_13TeV_2OSLEP_36invfb.cpp</includedby>
     <includedby refid="Analysis__CMS__13TeV__2OSLEP__chargino__stop__36invfb_8cpp" local="yes">Analysis_CMS_13TeV_2OSLEP_chargino_stop_36invfb.cpp</includedby>
     <includedby refid="Analysis__CMS__13TeV__2OSLEP__confnote__36invfb_8cpp" local="yes">Analysis_CMS_13TeV_2OSLEP_confnote_36invfb.cpp</includedby>
@@ -35,7 +38,76 @@
     <includedby refid="Analysis__CMS__13TeV__MultiLEP__36invfb_8cpp" local="yes">Analysis_CMS_13TeV_MultiLEP_36invfb.cpp</includedby>
     <includedby refid="Analysis__CMS__13TeV__MultiLEP__Full__36invfb_8cpp" local="yes">Analysis_CMS_13TeV_MultiLEP_Full_36invfb.cpp</includedby>
     <includedby refid="Analysis__CMS__13TeV__Photon__GMSB__36invfb_8cpp" local="yes">Analysis_CMS_13TeV_Photon_GMSB_36invfb.cpp</includedby>
+    <includedby refid="Utils_8hpp" local="yes">Utils.hpp</includedby>
     <includedby refid="mt2__bisect_8cpp" local="yes">mt2_bisect.cpp</includedby>
+    <invincdepgraph>
+      <node id="3">
+        <label>ATLASEfficiencies.hpp</label>
+        <link refid="ATLASEfficiencies_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>CMSEfficiencies.hpp</label>
+        <link refid="CMSEfficiencies_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Utils.hpp</label>
+        <link refid="Utils_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>AnalysisUtil.hpp</label>
+        <link refid="AnalysisUtil_8hpp"/>
+      </node>
+      <node id="9">
+        <label>Cutflow.hpp</label>
+        <link refid="Cutflow_8hpp"/>
+      </node>
+      <node id="1">
+        <label>mt2_bisect.h</label>
+        <link refid="mt2__bisect_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>ColliderBit_InterpolatedYields.cpp</label>
+        <link refid="ColliderBit__InterpolatedYields_8cpp"/>
+      </node>
+      <node id="8">
+        <label>ColliderBit_measurements.cpp</label>
+        <link refid="ColliderBit__measurements_8cpp"/>
+      </node>
+      <node id="10">
+        <label>LHC_likelihoods.cpp</label>
+        <link refid="LHC__likelihoods_8cpp"/>
+      </node>
+      <node id="11">
+        <label>Utils.cpp</label>
+        <link refid="Utils_8cpp"/>
+      </node>
+      <node id="4">
+        <label>getBuckFast.cpp</label>
+        <link refid="getBuckFast_8cpp"/>
+      </node>
+    </invincdepgraph>
     <innerclass refid="classmt2__bisect_1_1mt2" prot="public">mt2_bisect::mt2</innerclass>
     <innernamespace refid="namespacemt2__bisect">mt2_bisect</innernamespace>
       <sectiondef kind="define">

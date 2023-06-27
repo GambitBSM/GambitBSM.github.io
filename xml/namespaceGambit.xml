@@ -95,6 +95,7 @@
     <innerclass refid="structGambit_1_1DS__RDLUN" prot="public">Gambit::DS_RDLUN</innerclass>
     <innerclass refid="structGambit_1_1DS__RDPADD" prot="public">Gambit::DS_RDPADD</innerclass>
     <innerclass refid="structGambit_1_1DS__RDPARS" prot="public">Gambit::DS_RDPARS</innerclass>
+    <innerclass refid="structGambit_1_1DS__RDPARS__OLD" prot="public">Gambit::DS_RDPARS_OLD</innerclass>
     <innerclass refid="structGambit_1_1DS__RDPTH" prot="public">Gambit::DS_RDPTH</innerclass>
     <innerclass refid="structGambit_1_1DS__RDSWITCH" prot="public">Gambit::DS_RDSWITCH</innerclass>
     <innerclass refid="structGambit_1_1DS__RDTIME" prot="public">Gambit::DS_RDTIME</innerclass>
@@ -285,6 +286,10 @@
     <innerclass refid="structGambit_1_1SpecTraits" prot="public">Gambit::SpecTraits</innerclass>
     <innerclass refid="structGambit_1_1SpecTraits_3_01Models_1_1DiracSingletDM__Z2SimpleSpec_01_4" prot="public">Gambit::SpecTraits&lt; Models::DiracSingletDM_Z2SimpleSpec &gt;</innerclass>
     <innerclass refid="structGambit_1_1SpecTraits_3_01Models_1_1DMEFTSimpleSpec_01_4" prot="public">Gambit::SpecTraits&lt; Models::DMEFTSimpleSpec &gt;</innerclass>
+    <innerclass refid="structGambit_1_1SpecTraits_3_01Models_1_1DMsimpVectorMedDiracDMSimpleSpec_01_4" prot="public">Gambit::SpecTraits&lt; Models::DMsimpVectorMedDiracDMSimpleSpec &gt;</innerclass>
+    <innerclass refid="structGambit_1_1SpecTraits_3_01Models_1_1DMsimpVectorMedMajoranaDMSimpleSpec_01_4" prot="public">Gambit::SpecTraits&lt; Models::DMsimpVectorMedMajoranaDMSimpleSpec &gt;</innerclass>
+    <innerclass refid="structGambit_1_1SpecTraits_3_01Models_1_1DMsimpVectorMedScalarDMSimpleSpec_01_4" prot="public">Gambit::SpecTraits&lt; Models::DMsimpVectorMedScalarDMSimpleSpec &gt;</innerclass>
+    <innerclass refid="structGambit_1_1SpecTraits_3_01Models_1_1DMsimpVectorMedVectorDMSimpleSpec_01_4" prot="public">Gambit::SpecTraits&lt; Models::DMsimpVectorMedVectorDMSimpleSpec &gt;</innerclass>
     <innerclass refid="structGambit_1_1SpecTraits_3_01Models_1_1MajoranaSingletDM__Z2SimpleSpec_01_4" prot="public">Gambit::SpecTraits&lt; Models::MajoranaSingletDM_Z2SimpleSpec &gt;</innerclass>
     <innerclass refid="structGambit_1_1SpecTraits_3_01Models_1_1ScalarSingletDM__Z2SimpleSpec_01_4" prot="public">Gambit::SpecTraits&lt; Models::ScalarSingletDM_Z2SimpleSpec &gt;</innerclass>
     <innerclass refid="structGambit_1_1SpecTraits_3_01Models_1_1ScalarSingletDM__Z3SimpleSpec_01_4" prot="public">Gambit::SpecTraits&lt; Models::ScalarSingletDM_Z3SimpleSpec &gt;</innerclass>
@@ -345,7 +350,9 @@
     <innernamespace refid="namespaceGambit_1_1NodeUtility">Gambit::NodeUtility</innernamespace>
     <innernamespace refid="namespaceGambit_1_1ObjectivesBit">Gambit::ObjectivesBit</innernamespace>
     <innernamespace refid="namespaceGambit_1_1Par">Gambit::Par</innernamespace>
-    <innernamespace refid="namespaceGambit_1_1PolyChord">Gambit::PolyChord</innernamespace>
+    <innernamespace refid="namespaceGambit_1_1PolyChord__1__17__1">Gambit::PolyChord_1_17_1</innernamespace>
+    <innernamespace refid="namespaceGambit_1_1PolyChord__1__18__2">Gambit::PolyChord_1_18_2</innernamespace>
+    <innernamespace refid="namespaceGambit_1_1PolyChord__1__20__1">Gambit::PolyChord_1_20_1</innernamespace>
     <innernamespace refid="namespaceGambit_1_1PostProcessor">Gambit::PostProcessor</innernamespace>
     <innernamespace refid="namespaceGambit_1_1PrecisionBit">Gambit::PrecisionBit</innernamespace>
     <innernamespace refid="namespaceGambit_1_1Printers">Gambit::Printers</innernamespace>
@@ -371,7 +378,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="170" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="170" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="174" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="174" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceGambit_1a6d15be2971e110422c5f2cde89c349fc" prot="public" static="no" mutable="no">
         <type>const double</type>
@@ -386,7 +393,40 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="171" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="171" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="175" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="175" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="variable" id="namespaceGambit_1afaada04d60cd1805b4bd39facb4431f1" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double Gambit::mz_central_observed</definition>
+        <argsstring></argsstring>
+        <name>mz_central_observed</name>
+        <qualifiedname>Gambit::mz_central_observed</qualifiedname>
+        <initializer>= 91.1876</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>M_Z (Breit-Wigner mass parameter ~ pole) = 91.1876 +/- 0.0021 GeV (1 sigma), Gaussian. Reference <ulink url="https://pdg.lbl.gov/2022/listings/rpp2022-list-z-boson.pdf">https://pdg.lbl.gov/2022/listings/rpp2022-list-z-boson.pdf</ulink> = R.L. Workmanet al. (Particle Data Group), Prog. Theor. Exp. Phys. 2022, 083C01 (2022) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="181" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="namespaceGambit_1a49fe5d0c894ac84ca46214a364994136" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double Gambit::mz_err_observed</definition>
+        <argsstring></argsstring>
+        <name>mz_err_observed</name>
+        <qualifiedname>Gambit::mz_err_observed</qualifiedname>
+        <initializer>= 0.0021</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="182" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="182" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -430,7 +470,7 @@
         </briefdescription>
         <detaileddescription>
 <para>Helpers</para>
-<sect1 id="namespaceGambit_1autotoc_md72">
+<sect1 id="namespaceGambit_1autotoc_md89">
 <title>========================================================================</title>
 <para>We used to have more of these, but now we only use the &quot;soft shutdown&quot; signal handler. Sets a &quot;shutdown_begun&quot; flag, which is checked each likelihood loop, after which MPI synchronisation followed by clean shutdown is attempted. </para>
 </sect1>
@@ -1467,7 +1507,22 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/basebaseprinter.hpp" line="53" column="20" bodyfile="Printers/include/gambit/Printers/basebaseprinter.hpp" bodystart="53" bodyend="-1"/>
+        <location file="Printers/include/gambit/Printers/basebaseprinter.hpp" line="54" column="20" bodyfile="Printers/include/gambit/Printers/basebaseprinter.hpp" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceGambit_1ae96b932df1a511063b912a23631f260b" prot="public" static="no">
+        <type>std::map&lt; std::string, std::string &gt;</type>
+        <definition>typedef std::map&lt; std::string, std::string &gt; Gambit::map_str_str</definition>
+        <argsstring></argsstring>
+        <name>map_str_str</name>
+        <qualifiedname>Gambit::map_str_str</qualifiedname>
+        <briefdescription>
+<para>Shorthand for a string-to-string map. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/basebaseprinter.hpp" line="55" column="20" bodyfile="Printers/include/gambit/Printers/basebaseprinter.hpp" bodystart="55" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespaceGambit_1a1c03e097efba1f551a18e452fc29a5ca" prot="public" static="no">
         <type>std::map&lt; std::string, double &gt;</type>
@@ -1511,7 +1566,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/util_types.hpp" line="64" column="21" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="64" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/util_types.hpp" line="66" column="21" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="66" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespaceGambit_1a88a4bdaa56b0e16ca75c8936050594ad" prot="public" static="no">
         <type>std::pair&lt; double, double &gt;</type>
@@ -1526,7 +1581,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/util_types.hpp" line="66" column="21" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="66" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/util_types.hpp" line="68" column="21" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="68" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespaceGambit_1ad59d3bd695b3851e7d7adbca2aa294aa" prot="public" static="no">
         <type>std::pair&lt; int, int &gt;</type>
@@ -1541,7 +1596,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/util_types.hpp" line="68" column="21" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="68" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/util_types.hpp" line="70" column="21" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="70" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespaceGambit_1a2d616c373dd240651db05cfc52c859c7" prot="public" static="no">
         <type>std::pair&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>, double &gt;</type>
@@ -1556,7 +1611,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/util_types.hpp" line="70" column="21" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="70" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/util_types.hpp" line="72" column="21" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="72" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespaceGambit_1a3a9c6ab1ad2c01094bec00ce98211f82" prot="public" static="no">
         <type>std::vector&lt; double &gt;</type>
@@ -1571,7 +1626,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/util_types.hpp" line="72" column="23" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="72" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/util_types.hpp" line="74" column="23" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="74" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespaceGambit_1a2290e245a3e5e88d71da60164481a023" prot="public" static="no">
         <type>std::vector&lt; std::vector&lt; double &gt; &gt;</type>
@@ -1586,7 +1641,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/util_types.hpp" line="74" column="23" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="74" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/util_types.hpp" line="76" column="23" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="76" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespaceGambit_1a5d7d3e157918b1a536f394671e12a328" prot="public" static="no">
         <type>std::map&lt; std::string, int &gt;</type>
@@ -1601,7 +1656,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/util_types.hpp" line="78" column="20" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="78" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/util_types.hpp" line="80" column="20" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="80" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespaceGambit_1a89325f4443e809eee69d8f00d882c52f" prot="public" static="no">
         <type>std::map&lt; std::string, std::map&lt; std::string, double &gt; &gt;</type>
@@ -1616,7 +1671,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/util_types.hpp" line="80" column="20" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="80" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/util_types.hpp" line="82" column="20" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="82" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespaceGambit_1a55029f6c6c6f6ab07a979608d79d5a0b" prot="public" static="no">
         <type>std::map&lt; const std::string, double &gt;</type>
@@ -1631,7 +1686,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/util_types.hpp" line="82" column="20" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="82" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/util_types.hpp" line="84" column="20" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="84" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespaceGambit_1ab73aeae729acb498a53c7cff54636e84" prot="public" static="no">
         <type>std::map&lt; const std::string, std::map&lt; const std::string, double &gt; &gt;</type>
@@ -1641,21 +1696,6 @@
         <qualifiedname>Gambit::map_const_str_map_const_str_dbl</qualifiedname>
         <briefdescription>
 <para>Shorthand for a const-string-to-const-string-to-double map. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Utils/include/gambit/Utils/util_types.hpp" line="84" column="20" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="84" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="typedef" id="namespaceGambit_1a51de803e5143010226b0a7c7e7e05b88" prot="public" static="no">
-        <type>std::map&lt; std::string, std::string &gt;</type>
-        <definition>typedef std::map&lt;std::string,std::string&gt; Gambit::map_str_str</definition>
-        <argsstring></argsstring>
-        <name>map_str_str</name>
-        <qualifiedname>Gambit::map_str_str</qualifiedname>
-        <briefdescription>
-<para>Shorthand for a string-to-string map. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -1676,7 +1716,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/util_types.hpp" line="88" column="20" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="88" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/util_types.hpp" line="90" column="20" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="90" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespaceGambit_1a35f0cff5217ce1cb5a0f0d6dbb7e5ebc" prot="public" static="no">
         <type>std::map&lt; int, double &gt;</type>
@@ -1691,7 +1731,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/util_types.hpp" line="90" column="20" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="90" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/util_types.hpp" line="92" column="20" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="92" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespaceGambit_1a9f1be5fd19020d0c0cd6a8452bb36fe0" prot="public" static="no">
         <type>std::map&lt; std::string, std::map&lt; std::string, std::string &gt; &gt;</type>
@@ -1706,7 +1746,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/util_types.hpp" line="92" column="20" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="92" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/util_types.hpp" line="94" column="20" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="94" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespaceGambit_1a1ff4cae18c1ff210e4f214a673d90d49" prot="public" static="no">
         <type>std::map&lt; std::pair&lt; int, int &gt;, double &gt;</type>
@@ -1721,7 +1761,26 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/util_types.hpp" line="94" column="20" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="94" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/util_types.hpp" line="96" column="20" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="namespaceGambit_1a84f5fc6e657e86056b842f5496cccbf9" prot="public" static="no">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::vector&lt; std::shared_ptr&lt; T &gt; &gt;</type>
+        <definition>using Gambit::vector_shared_ptr = typedef std::vector&lt;std::shared_ptr&lt;T&gt; &gt;</definition>
+        <argsstring></argsstring>
+        <name>vector_shared_ptr</name>
+        <qualifiedname>Gambit::vector_shared_ptr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/util_types.hpp" line="100" column="3" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="100" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespaceGambit_1a31098f655cfe35f4c64ca9240c427f11" prot="public" static="no">
         <type>void(*</type>
@@ -1736,7 +1795,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/util_types.hpp" line="97" column="11" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="97" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/util_types.hpp" line="103" column="11" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="103" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespaceGambit_1abd933db4e41415a5f75eac3fb0d03178" prot="public" static="no">
         <type>std::map&lt; int, <ref refid="structGambit_1_1triplet" kindref="compound">triplet</ref>&lt; double &gt; &gt;</type>
@@ -1751,7 +1810,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/util_types.hpp" line="143" column="20" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="143" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/util_types.hpp" line="149" column="20" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="149" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespaceGambit_1a9d7253bd2af4ce15e7618fc1d295b9b7" prot="public" static="no">
         <type>std::map&lt; std::string, <ref refid="classGambit_1_1safe__ptr" kindref="compound">safe_ptr</ref>&lt; const double &gt; &gt;</type>
@@ -1766,7 +1825,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/util_types.hpp" line="320" column="20" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="320" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/util_types.hpp" line="326" column="20" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="326" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespaceGambit_1ae1c485eb27f0a0cbeba4e764604efa45" prot="public" static="no">
         <type><ref refid="classGambit_1_1FcomplexT" kindref="compound">FcomplexT</ref>&lt; float &gt;</type>
@@ -1781,7 +1840,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/util_types.hpp" line="647" column="22" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="647" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/util_types.hpp" line="653" column="22" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="653" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespaceGambit_1afd5ea5da1e94d47f3a00d5747a719569" prot="public" static="no">
         <type><ref refid="classGambit_1_1FcomplexT" kindref="compound">FcomplexT</ref>&lt; float &gt;</type>
@@ -1795,7 +1854,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/util_types.hpp" line="648" column="22" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="648" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/util_types.hpp" line="654" column="22" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="654" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespaceGambit_1ae871ab8aee7f829c0665e177ce13c7c0" prot="public" static="no">
         <type><ref refid="classGambit_1_1FcomplexT" kindref="compound">FcomplexT</ref>&lt; double &gt;</type>
@@ -1809,7 +1868,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/util_types.hpp" line="649" column="21" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="649" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/util_types.hpp" line="655" column="21" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="655" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespaceGambit_1a9107f32ff19145cfe90f62477fb1e53a" prot="public" static="no">
         <type><ref refid="classGambit_1_1FcomplexT" kindref="compound">FcomplexT</ref>&lt; double &gt;</type>
@@ -1823,7 +1882,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/util_types.hpp" line="650" column="21" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="650" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/util_types.hpp" line="656" column="21" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="656" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespaceGambit_1a98085bc8e584e613f4e040a1de82ef2f" prot="public" static="no">
         <type><ref refid="classGambit_1_1FcomplexT" kindref="compound">FcomplexT</ref>&lt; long double &gt;</type>
@@ -1837,7 +1896,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/util_types.hpp" line="651" column="21" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="651" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/util_types.hpp" line="657" column="21" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="657" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespaceGambit_1ae68b92e6861f93b1c8a7afce161d1def" prot="public" static="no">
         <type>char</type>
@@ -1851,7 +1910,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/util_types.hpp" line="652" column="29" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="652" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/util_types.hpp" line="658" column="29" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="658" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespaceGambit_1a66fc0ad43cbf22ebfce44de34d4bbbf9" prot="public" static="no">
         <type>double</type>
@@ -1865,7 +1924,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/util_types.hpp" line="653" column="29" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="653" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/util_types.hpp" line="659" column="29" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="659" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespaceGambit_1a63f5cf98d1377bca5b0c09005640adaf" prot="public" static="no">
         <type>double</type>
@@ -1879,7 +1938,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/util_types.hpp" line="654" column="29" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="654" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/util_types.hpp" line="660" column="29" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="660" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespaceGambit_1ae168aa7a338802e1a6d2bdc1838f749e" prot="public" static="no">
         <type>double</type>
@@ -1893,7 +1952,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/util_types.hpp" line="655" column="29" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="655" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/util_types.hpp" line="661" column="29" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="661" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespaceGambit_1a26beefcf13bd6395a1995ba0e64ce94e" prot="public" static="no">
         <type>int</type>
@@ -1907,7 +1966,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/util_types.hpp" line="656" column="29" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="656" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/util_types.hpp" line="662" column="29" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="662" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespaceGambit_1a19ff149a5458accc9e29925758ceedcc" prot="public" static="no">
         <type>short</type>
@@ -1921,7 +1980,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/util_types.hpp" line="657" column="29" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="657" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/util_types.hpp" line="663" column="29" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="663" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespaceGambit_1a86ca1e40098dd3f69f7254438af773f1" prot="public" static="no">
         <type>long int</type>
@@ -1935,7 +1994,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/util_types.hpp" line="658" column="29" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="658" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/util_types.hpp" line="664" column="29" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="664" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespaceGambit_1ad350d5c4981ae7e32c9133e945c75bf1" prot="public" static="no">
         <type>long long</type>
@@ -1949,7 +2008,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/util_types.hpp" line="659" column="29" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="659" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/util_types.hpp" line="665" column="29" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="665" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespaceGambit_1a7c767fcb33ec614c97f11044019d6ade" prot="public" static="no">
         <type>int32_t</type>
@@ -1963,7 +2022,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/util_types.hpp" line="660" column="29" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="660" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/util_types.hpp" line="666" column="29" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="666" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespaceGambit_1a9cba043143e74c246ac2905c72f61b57" prot="public" static="no">
         <type>bool</type>
@@ -1977,7 +2036,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/util_types.hpp" line="661" column="29" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="661" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/util_types.hpp" line="667" column="29" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="667" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespaceGambit_1a1c305e2a7bfa29854b1bc18a3c670239" prot="public" static="no">
         <type>float</type>
@@ -1991,7 +2050,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/util_types.hpp" line="662" column="29" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="662" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/util_types.hpp" line="668" column="29" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="668" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespaceGambit_1a7af6215d45b218ddeed88b1424d38e21" prot="public" static="no">
         <type>float</type>
@@ -2005,7 +2064,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/util_types.hpp" line="663" column="29" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="663" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/util_types.hpp" line="669" column="29" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="669" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespaceGambit_1a7793eace4d373ef21e2d67ee8a219550" prot="public" static="no">
         <type>double</type>
@@ -2019,7 +2078,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/util_types.hpp" line="664" column="29" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="664" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/util_types.hpp" line="670" column="29" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="670" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespaceGambit_1acee67a68e9f6a9a7ee2b9315000c9377" prot="public" static="no">
         <type>long double</type>
@@ -2033,7 +2092,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/util_types.hpp" line="665" column="29" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="665" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/util_types.hpp" line="671" column="29" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="671" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespaceGambit_1a217e19dce18efd21e75742ca576cb9e1" prot="public" static="no">
         <type>void</type>
@@ -2048,7 +2107,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/util_types.hpp" line="668" column="24" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="668" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/util_types.hpp" line="674" column="24" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="674" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespaceGambit_1abc5d5ca48d62632e0022d9c5de132ad3" prot="public" static="no">
         <type>int</type>
@@ -2062,7 +2121,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/util_types.hpp" line="669" column="24" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="669" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/util_types.hpp" line="675" column="24" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="675" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespaceGambit_1af07bb16a821f9dea3915b4f0591c9a5d" prot="public" static="no">
         <type>double</type>
@@ -2076,7 +2135,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/util_types.hpp" line="670" column="24" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="670" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/util_types.hpp" line="676" column="24" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="676" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespaceGambit_1a0956ac52fc3b312a24bf3a8cf96eec68" prot="public" static="no">
         <type>bool</type>
@@ -2090,7 +2149,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/util_types.hpp" line="671" column="24" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="671" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/util_types.hpp" line="677" column="24" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="677" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespaceGambit_1a1694c1dbd3025b761580b8a9d10f0653" prot="public" static="no">
         <type>char</type>
@@ -2104,7 +2163,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/util_types.hpp" line="672" column="24" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="672" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/util_types.hpp" line="678" column="24" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="678" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespaceGambit_1a8663662bb6ee0c0e1b69ce615fb149d3" prot="public" static="no">
         <type>std::string</type>
@@ -2118,7 +2177,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/util_types.hpp" line="673" column="24" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="673" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/util_types.hpp" line="679" column="24" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="679" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="namespaceGambit_1a62b093810d82ecacb8c172f1dbcc03d8" prot="public" static="no">
         <templateparamlist>
@@ -2137,7 +2196,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/util_types.hpp" line="674" column="15" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="674" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/util_types.hpp" line="680" column="15" bodyfile="Utils/include/gambit/Utils/util_types.hpp" bodystart="680" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="var">
@@ -2256,6 +2315,21 @@
     &quot;GAMBIT:2017yxo&quot;, 
     &quot;Kvellestad:2019vxm&quot;, 
       
+    &quot;Bloor:2021gtp&quot;, 
+    &quot;Alloul:2013bka&quot;, 
+    &quot;Christensen:2008py&quot;, 
+    &quot;Christensen:2010wz&quot;, 
+    &quot;Christensen:2009jx&quot;, 
+    &quot;Degrande:2011ua&quot;, 
+    &quot;Pukhov:2004ca&quot;, 
+    &quot;Belyaev:2012qa&quot;, 
+    &quot;Belanger:2014vza&quot;, 
+    &quot;Belanger:2013oya&quot;, 
+    &quot;Belanger:2010gh&quot;, 
+    &quot;Belanger:2008sj&quot;, 
+    &quot;Belanger:2006is&quot;, 
+    &quot;Belanger:2004yn&quot;, 
+    &quot;Belanger:2001fz&quot;, 
   }</initializer>
         <briefdescription>
         </briefdescription>
@@ -2323,7 +2397,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="39" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="39" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="43" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="43" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceGambit_1ab83787acb92adb8122ba8253ac2c0306" prot="public" static="no" mutable="no">
         <type>const double</type>
@@ -2338,7 +2412,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="40" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="40" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="44" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="44" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceGambit_1ac0e4a486c5849872b9e86b849f3fe8ce" prot="public" static="no" mutable="no">
         <type>const double</type>
@@ -2353,7 +2427,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="41" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="41" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="45" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="45" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceGambit_1a8ec4c0c484692ed50f6998ceca9250ae" prot="public" static="no" mutable="no">
         <type>const double</type>
@@ -2368,7 +2442,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="42" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="42" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="46" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="46" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceGambit_1ae0ca8ad41dd85dd329b23601863e422a" prot="public" static="no" mutable="no">
         <type>const double</type>
@@ -2383,7 +2457,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="43" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="43" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="47" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="47" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceGambit_1aac6f06e15e8c1936ee501f1b3bb111a4" prot="public" static="no" mutable="no">
         <type>const double</type>
@@ -2398,7 +2472,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="44" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="44" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="48" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="48" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceGambit_1a0dac1d6b978915d378d81a0da4262e8c" prot="public" static="no" mutable="no">
         <type>const double</type>
@@ -2413,7 +2487,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="45" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="45" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="49" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="49" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceGambit_1aefda3877646b5fe61f5f588f8df6f43f" prot="public" static="no" mutable="no">
         <type>const double</type>
@@ -2428,7 +2502,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="46" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="46" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="50" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="50" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceGambit_1a356957820933e8a860b41898b40f08b6" prot="public" static="no" mutable="no">
         <type>const double</type>
@@ -2443,7 +2517,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="47" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="47" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="51" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="51" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceGambit_1a53d5519097e862c4c9a8d08d38908968" prot="public" static="no" mutable="no">
         <type>const double</type>
@@ -2458,7 +2532,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="48" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="48" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="52" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="52" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceGambit_1a61bd2ac1a0ba2d4be2c2c10185cad2e8" prot="public" static="no" mutable="no">
         <type>const double</type>
@@ -2473,7 +2547,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="49" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="49" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="53" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="53" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceGambit_1aef9586feae935ddb8b08d0a574d7807f" prot="public" static="no" mutable="no">
         <type>const double</type>
@@ -2488,7 +2562,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="50" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="50" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="54" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="54" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceGambit_1adfc925f59a385402080929b040afb8a3" prot="public" static="no" mutable="no">
         <type>const double</type>
@@ -2503,7 +2577,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="51" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="51" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="55" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="55" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceGambit_1aba5017ddf2938c3485fdfb5dc0a81008" prot="public" static="no" mutable="no">
         <type>const double</type>
@@ -2518,7 +2592,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="52" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="52" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="56" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="56" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceGambit_1ac1858f3f2cb51926c139d98a4906421e" prot="public" static="no" mutable="no">
         <type>const double</type>
@@ -2533,7 +2607,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="53" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="53" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="57" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="57" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceGambit_1a6087bd4b42e3ccc77dbb96df370ccd71" prot="public" static="no" mutable="no">
         <type>const double</type>
@@ -2548,7 +2622,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="54" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="54" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="58" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="58" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceGambit_1a9d5923bb17f607daa0f2446e37b7167e" prot="public" static="no" mutable="no">
         <type>const double</type>
@@ -2563,7 +2637,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="55" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="55" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="59" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="59" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceGambit_1a8c220f06717dd48e5ccf408c9c00119d" prot="public" static="no" mutable="no">
         <type>const double</type>
@@ -2578,7 +2652,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="56" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="56" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="60" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="60" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceGambit_1a6874ccdb597088e014fe3a011dedc7df" prot="public" static="no" mutable="no">
         <type>const double</type>
@@ -2593,7 +2667,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="57" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="57" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="61" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="61" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceGambit_1af492075f5bd406c6dc37d45fcb387f49" prot="public" static="no" mutable="no">
         <type>const double</type>
@@ -2608,7 +2682,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="58" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="58" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="62" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="62" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceGambit_1a10c2ea8e8d95b0dfcee72b03099253bf" prot="public" static="no" mutable="no">
         <type>const double</type>
@@ -2623,7 +2697,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="59" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="59" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="63" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="63" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceGambit_1a67e7ab108aa8fea8cdb4946da9fc9a9d" prot="public" static="no" mutable="no">
         <type>const double</type>
@@ -2639,7 +2713,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="62" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="62" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="66" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="66" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceGambit_1adabb2e3b95c73ab87eb95d86785e56d0" prot="public" static="no" mutable="no">
         <type>const double</type>
@@ -2654,7 +2728,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="63" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="63" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="67" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="67" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceGambit_1a172f3e09cb911c75c6f36d4373d7bbea" prot="public" static="no" mutable="no">
         <type>const double</type>
@@ -2669,7 +2743,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="64" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="64" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="68" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="68" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceGambit_1a07614a8c9e046462ca1721e04bd36476" prot="public" static="no" mutable="no">
         <type>const double</type>
@@ -2684,7 +2758,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="66" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="66" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="70" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="70" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceGambit_1a139c03a1136cef11524caeea3d77d666" prot="public" static="no" mutable="no">
         <type>const double</type>
@@ -2699,7 +2773,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="67" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="67" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="71" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="71" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceGambit_1acd7efba980804061a0dcc3fcad07bc9e" prot="public" static="no" mutable="no">
         <type>const double</type>
@@ -2714,7 +2788,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="69" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="69" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="73" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="73" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceGambit_1ab8e0dbf636da5e4e307111096d89a1ba" prot="public" static="no" mutable="no">
         <type>const double</type>
@@ -2729,7 +2803,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="70" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="70" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="74" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="74" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceGambit_1af3997ef48b0aefe0e2ebf116c6ea1009" prot="public" static="no" mutable="no">
         <type>const double</type>
@@ -2744,7 +2818,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="72" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="72" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="76" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="76" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceGambit_1a39d84b2c71ec572033f75821c64f1eb4" prot="public" static="no" mutable="no">
         <type>const double</type>
@@ -2759,7 +2833,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="73" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="73" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="77" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="77" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceGambit_1afbf6d5cbec32c945651accd5abd51356" prot="public" static="no" mutable="no">
         <type>const double</type>
@@ -2774,7 +2848,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="74" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="74" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="78" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="78" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceGambit_1a01f6d6c31458f1d065dd852d62c50627" prot="public" static="no" mutable="no">
         <type>const double</type>
@@ -2789,7 +2863,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="76" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="76" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="80" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="80" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceGambit_1ad09c50492b8b8554fa09deb5df71e38b" prot="public" static="no" mutable="no">
         <type>const double</type>
@@ -2804,7 +2878,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="78" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="78" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="82" column="16" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="82" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceGambit_1aacba88d84337f85102bda83082ae2c4c" prot="public" static="no" constexpr="yes" mutable="no">
         <type>constexpr double</type>
@@ -2820,7 +2894,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="86" column="20" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="86" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="90" column="20" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="90" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceGambit_1aebc3ed21de9d109dc2d6d37ce5a2d321" prot="public" static="no" constexpr="yes" mutable="no">
         <type>constexpr double</type>
@@ -2836,7 +2910,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="92" column="20" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="92" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="96" column="20" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="96" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceGambit_1abaae45327e7fd7cd617d88df7d91fde7" prot="public" static="no" constexpr="yes" mutable="no">
         <type>constexpr double</type>
@@ -2855,7 +2929,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="102" column="20" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="102" bodyend="-1"/>
+        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="106" column="20" bodyfile="Utils/include/gambit/Utils/numerical_constants.hpp" bodystart="106" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceGambit_1aa743a53c94ee9bf491d2ad3c5f736359" prot="public" static="yes" mutable="no">
         <type>const struct Gambit::Mesons_masses</type>
@@ -2869,7 +2943,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="129" column="16"/>
+        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="133" column="16"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceGambit_1a9fa385eda9c80715806a1cc2640a7218" prot="public" static="yes" mutable="no">
         <type>const struct Gambit::Mesons_decay_constants</type>
@@ -2883,7 +2957,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="164" column="25"/>
+        <location file="Utils/include/gambit/Utils/numerical_constants.hpp" line="168" column="25"/>
       </memberdef>
       <memberdef kind="variable" id="namespaceGambit_1a243cfd4fb3112388b0589f6daca72899" prot="public" static="no" mutable="no">
         <type>const int</type>
@@ -4463,7 +4537,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Elements/include/gambit/Elements/terminator.hpp" line="23" column="8" bodyfile="Elements/src/terminator.cpp" bodystart="21" bodyend="41" declfile="Elements/include/gambit/Elements/terminator.hpp" declline="23" declcolumn="8"/>
+        <location file="Elements/include/gambit/Elements/terminator.hpp" line="23" column="8" bodyfile="Elements/src/terminator.cpp" bodystart="22" bodyend="45" declfile="Elements/include/gambit/Elements/terminator.hpp" declline="23" declcolumn="8"/>
       </memberdef>
       <memberdef kind="function" id="namespaceGambit_1a71a3677e90be4381e9ab7064daacf6f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -4594,12 +4668,13 @@
           <declname>HE</declname>
         </param>
         <briefdescription>
+<para>Translation function for mA,mu parameterisation to mHu2,mHd2 parameterisation. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Models/src/models/MSSM63atX_mA.cpp" line="48" column="8" bodyfile="Models/src/models/MSSM63atX_mA.cpp" bodystart="48" bodyend="70" declfile="Models/include/gambit/Models/models/MSSM63atQ_mA.hpp" declline="37" declcolumn="9"/>
+        <location file="Models/src/models/MSSM_translation_helpers.cpp" line="52" column="8" bodyfile="Models/src/models/MSSM_translation_helpers.cpp" bodystart="52" bodyend="74" declfile="Models/include/gambit/Models/models/MSSM_translation_helpers.hpp" declline="33" declcolumn="9"/>
       </memberdef>
       <memberdef kind="function" id="namespaceGambit_1a9e9854fff961f15384f963feaf4b2488" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -4620,12 +4695,13 @@
           <declname>HE</declname>
         </param>
         <briefdescription>
+<para>Translation function for MSSM defined at RGE-determined scale (e.g. GUT, SUSY) to arbitrary scale Q. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Models/src/models/MSSM63atX.cpp" line="44" column="8" bodyfile="Models/src/models/MSSM63atX.cpp" bodystart="44" bodyend="60" declfile="Models/include/gambit/Models/models/MSSM63atQ_mA.hpp" declline="40" declcolumn="9"/>
+        <location file="Models/src/models/MSSM_translation_helpers.cpp" line="34" column="8" bodyfile="Models/src/models/MSSM_translation_helpers.cpp" bodystart="34" bodyend="50" declfile="Models/include/gambit/Models/models/MSSM_translation_helpers.hpp" declline="36" declcolumn="9"/>
       </memberdef>
       <memberdef kind="function" id="namespaceGambit_1a6ef5686aba26d591f95254604c20c2e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -4642,12 +4718,13 @@
           <declname>targetP</declname>
         </param>
         <briefdescription>
+<para>Translation functions for 20-parameter models to 25-parameter. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Models/src/models/MSSM20atX.cpp" line="61" column="8" bodyfile="Models/src/models/MSSM20atX.cpp" bodystart="61" bodyend="83"/>
+        <location file="Models/src/models/MSSM_translation_helpers.cpp" line="76" column="8" bodyfile="Models/src/models/MSSM_translation_helpers.cpp" bodystart="76" bodyend="98" declfile="Models/include/gambit/Models/models/MSSM_translation_helpers.hpp" declline="39" declcolumn="9"/>
       </memberdef>
       <memberdef kind="function" id="namespaceGambit_1a89315facb2f73ea3472ddce1dbc40186" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -4664,12 +4741,13 @@
           <declname>targetP</declname>
         </param>
         <briefdescription>
+<para>Translation functions for 25-parameter models to 30-parameter. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Models/src/models/MSSM25atX.cpp" line="46" column="8" bodyfile="Models/src/models/MSSM25atX.cpp" bodystart="46" bodyend="74"/>
+        <location file="Models/src/models/MSSM_translation_helpers.cpp" line="100" column="8" bodyfile="Models/src/models/MSSM_translation_helpers.cpp" bodystart="100" bodyend="128" declfile="Models/include/gambit/Models/models/MSSM_translation_helpers.hpp" declline="42" declcolumn="9"/>
       </memberdef>
       <memberdef kind="function" id="namespaceGambit_1ae05dec1681ef2cc0dde292d69f0f8db8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -4686,12 +4764,39 @@
           <declname>targetP</declname>
         </param>
         <briefdescription>
+<para>Translation functions for 30-parameter models to 63-parameter. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Models/src/models/MSSM30atX.cpp" line="66" column="8" bodyfile="Models/src/models/MSSM30atX.cpp" bodystart="66" bodyend="194"/>
+        <location file="Models/src/models/MSSM_translation_helpers.cpp" line="130" column="8" bodyfile="Models/src/models/MSSM_translation_helpers.cpp" bodystart="130" bodyend="258" declfile="Models/include/gambit/Models/models/MSSM_translation_helpers.hpp" declline="45" declcolumn="9"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceGambit_1ab3213fd2716bcdd5d5962d819ea5ef40" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::MSSM_mA_mG_to_MSSM_mhud</definition>
+        <argsstring>(const ModelParameters &amp;myP, ModelParameters &amp;targetP, const SubSpectrum &amp;HE)</argsstring>
+        <name>MSSM_mA_mG_to_MSSM_mhud</name>
+        <qualifiedname>Gambit::MSSM_mA_mG_to_MSSM_mhud</qualifiedname>
+        <param>
+          <type>const <ref refid="classGambit_1_1ModelParameters" kindref="compound">ModelParameters</ref> &amp;</type>
+          <declname>myP</declname>
+        </param>
+        <param>
+          <type><ref refid="classGambit_1_1ModelParameters" kindref="compound">ModelParameters</ref> &amp;</type>
+          <declname>targetP</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classGambit_1_1SubSpectrum" kindref="compound">SubSpectrum</ref> &amp;</type>
+          <declname>HE</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models/MSSMatQ_mA_mG.hpp" line="60" column="9" declfile="Models/include/gambit/Models/models/MSSMatQ_mA_mG.hpp" declline="60" declcolumn="9"/>
       </memberdef>
       <memberdef kind="function" id="namespaceGambit_1a70b0281899cca99ceee2ad05e729fb7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -6201,10 +6306,18 @@
 <para>Map in which to keep factory functions for the priors.</para>
 <para>Map in which to keep factory functions for the priors (prior_creators)</para>
 <para>Simulation of &quot;Search for photonic signatures of gauge-mediated supersymmetry in 13 TeV pp collisions with the ATLAS detector&quot;.</para>
+<para>Simulation of &quot;Search for new phenomena in final states with photons, jets and missing transverse momentum in pp collisions at sqrt(s)=13 TeV with the ATLAS detector&quot;.</para>
 <para><simplesect kind="author"><para>Anders Kvellestad </para>
 </simplesect>
 <simplesect kind="date"><para>2020 June <hruler/>
 </para>
+</simplesect>
+Based on:<itemizedlist>
+<listitem><para><ulink url="https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2021-028/">https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2021-028/</ulink></para>
+</listitem><listitem><para>code in Analysis_ATLAS_13TeV_PhotonGGM_36invfb.cpp by Martin White</para>
+</listitem></itemizedlist>
+</para>
+<para><simplesect kind="author"><para>Anders Kvellestad</para>
 </simplesect>
 Based on:<itemizedlist>
 <listitem><para><ulink url="https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-2016-27/">https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-2016-27/</ulink></para>
@@ -6214,7 +6327,12 @@ Based on:<itemizedlist>
 </simplesect>
 Known issues:</para>
 <para>1) Photon isolation requirement is missing 2) They use a bizarre HT definition where they don&apos;t apply overlap removal between photons and jets. This might not work for us, since jets won&apos;t be made by photons in our events.</para>
-<para><simplesect kind="author"><para>Gregory Martinez (<ulink url="mailto:gregory.david.martinez@gmail.com">gregory.david.martinez@gmail.com</ulink>) </para>
+<para><simplesect kind="author"><para>Tomas Gonzalo (<ulink url="mailto:gonzalo@physik.rwth-aachen.de">gonzalo@physik.rwth-aachen.de</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2021 July <hruler/>
+</para>
+</simplesect>
+<simplesect kind="author"><para>Gregory Martinez (<ulink url="mailto:gregory.david.martinez@gmail.com">gregory.david.martinez@gmail.com</ulink>) </para>
 </simplesect>
 <simplesect kind="date"><para>Feb 2014</para>
 </simplesect>
@@ -6305,6 +6423,10 @@ Known issues:</para>
 </sect1>
 <sect1 id="namespaceGambit_1autotoc_md21">
 <title>Function definitions</title>
+<para>================================================= </para>
+</sect1>
+<sect1 id="namespaceGambit_1autotoc_md23">
+<title>Function definitions</title>
 <para><simplesect kind="author"><para>Ben Farmer (<ulink url="mailto:ben.farmer@gmail.com">ben.farmer@gmail.com</ulink>) </para>
 </simplesect>
 <simplesect kind="date"><para>October 2013 - Aug 2016</para>
@@ -6317,11 +6439,15 @@ Known issues:</para>
 </simplesect>
 <simplesect kind="date"><para>May 2020</para>
 </simplesect>
+<simplesect kind="author"><para>Anders Kvellestad (<ulink url="mailto:anders.kvellestad@fys.uio.no">anders.kvellestad@fys.uio.no</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>June 2022</para>
+</simplesect>
 <hruler/>
 </para>
 <para>================================================= </para>
 </sect1>
-<sect1 id="namespaceGambit_1autotoc_md23">
+<sect1 id="namespaceGambit_1autotoc_md25">
 <title>Function definitions</title>
 <para><simplesect kind="author"><para>Ben Farmer (<ulink url="mailto:ben.farmer@gmail.com">ben.farmer@gmail.com</ulink>) </para>
 </simplesect>
@@ -6337,30 +6463,85 @@ Known issues:</para>
 </simplesect>
 <simplesect kind="date"><para>Jan 2021</para>
 </simplesect>
+<simplesect kind="author"><para>Anders Kvellestad (<ulink url="mailto:anders.kvellestad@fys.uio.no">anders.kvellestad@fys.uio.no</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>June 2022</para>
+</simplesect>
 <hruler/>
 </para>
 <para>================================================= </para>
 </sect1>
-<sect1 id="namespaceGambit_1autotoc_md25">
+<sect1 id="namespaceGambit_1autotoc_md27">
+<title>Function definitions</title>
+<para><simplesect kind="author"><para>Ben Farmer (<ulink url="mailto:ben.farmer@gmail.com">ben.farmer@gmail.com</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>October 2013 - Aug 2016</para>
+</simplesect>
+<simplesect kind="author"><para>Will Handley (<ulink url="mailto:wh260@cam.ac.uk">wh260@cam.ac.uk</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>May 2018, June 2021, Mar 2022</para>
+</simplesect>
+<simplesect kind="author"><para>Patrick Stoecker (<ulink url="mailto:stoecker@physik.rwth-aachen.de">stoecker@physik.rwth-aachen.de</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>May 2020</para>
+</simplesect>
+<simplesect kind="author"><para>Anders Kvellestad (<ulink url="mailto:anders.kvellestad@fys.uio.no">anders.kvellestad@fys.uio.no</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>June 2022</para>
+</simplesect>
+<hruler/>
+</para>
+<para>================================================= </para>
+</sect1>
+<sect1 id="namespaceGambit_1autotoc_md29">
 <title>Function definitions</title>
 <para>GAMBIT: Global and Modular BSM Inference Tool <hruler/>
 </para>
-<para>MSSM input parameter definition, with A pole mass and mu as explicit input parameters instead of mHu2 and mHd2 (GUT scale version)</para>
+<para>Declare a helper function for translating &apos;mA&apos; MSSM parameterisations into the primary parameterisations, and another for translating from scales MGUT and MSUSY to arbitrary scale Q.</para>
+<para><hruler/>
+</para>
+</sect1>
+<sect1 id="namespaceGambit_1autotoc_md43">
+<title>Authors</title>
+<para>(add name and date if you modify)</para>
+<para><simplesect kind="author"><para>Pat Scott (<ulink url="mailto:p.scott@imperial.ac.uk">p.scott@imperial.ac.uk</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2017 Aug</para>
+</simplesect>
+<hruler/>
+</para>
+<para>MSSM models with boundary conditions at MGUT scale</para>
+<para><ref refid="namespaceGambit_1_1Models" kindref="compound">Models</ref> included: MSSM63atMGUT MSSM30atMGUT MSSM25atMGUT MSSM20atMGUT</para>
+<para>Translation functions defined in MSSMatMGUT.cpp</para>
 <para><hruler/>
 </para>
 </sect1>
 <sect1 id="namespaceGambit_1autotoc_md44">
 <title>Authors</title>
 <para>(add name and date if you modify)</para>
-<para><simplesect kind="author"><para>Ben Farmer (<ulink url="mailto:benjamin.farmer@fysik.su.se">benjamin.farmer@fysik.su.se</ulink>) </para>
+<para><simplesect kind="author"><para>Ben Farmer (<ulink url="mailto:ben.farmer@gmail.com">ben.farmer@gmail.com</ulink>) </para>
 </simplesect>
-<simplesect kind="date"><para>2017 Sep</para>
+<simplesect kind="date"><para>2013 May </para>
+</simplesect>
+<simplesect kind="date"><para>2014 Mar </para>
+</simplesect>
+<simplesect kind="date"><para>2015 Jan, Aug</para>
+</simplesect>
+<simplesect kind="author"><para>Pat Scott (<ulink url="mailto:p.scott@imperial.ac.uk">p.scott@imperial.ac.uk</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2013 Sep </para>
+</simplesect>
+<simplesect kind="date"><para>2015 Sep</para>
+</simplesect>
+<simplesect kind="author"><para>Tomas Gonzalo (<ulink url="mailto:tomas.gonzalo@kit.edu">tomas.gonzalo@kit.edu</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2022 Sept</para>
 </simplesect>
 <hruler/>
 </para>
-<para>GAMBIT: Global and Modular BSM Inference Tool <hruler/>
-</para>
-<para>MSSM63 model declaration (version with boundary conditions at SUSY scale)</para>
+<para>MSSM models with boundary conditions at MGUT scale with A pole mass and mu as explicit input parameters instead of mHu2 and mHd2</para>
+<para><ref refid="namespaceGambit_1_1Models" kindref="compound">Models</ref> included: MSSM63atMGUT_mA MSSM30atMGUT_mA MSSM25atMGUT_mA MSSM20atMGUT_mA</para>
+<para>Translation functions defined in MSSMatMGUT_mA.cpp</para>
 <para><hruler/>
 </para>
 </sect1>
@@ -6369,37 +6550,181 @@ Known issues:</para>
 <para>(add name and date if you modify)</para>
 <para><simplesect kind="author"><para>Ben Farmer (<ulink url="mailto:benjamin.farmer@fysik.su.se">benjamin.farmer@fysik.su.se</ulink>) </para>
 </simplesect>
-<simplesect kind="date"><para>2017 Sep</para>
+<simplesect kind="date"><para>2017 Sep, Oct </para>
+</simplesect>
+<simplesect kind="date"><para>2015 Jan</para>
+</simplesect>
+<simplesect kind="author"><para>Pat Scott (<ulink url="mailto:p.scott@imperial.ac.uk">p.scott@imperial.ac.uk</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2017 Aug</para>
+</simplesect>
+<simplesect kind="author"><para>Tomas Gonzalo (<ulink url="mailto:tomas.gonzalo@kit.edu">tomas.gonzalo@kit.edu</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2022 Sept</para>
 </simplesect>
 <hruler/>
 </para>
-<para>GAMBIT: Global and Modular BSM Inference Tool <hruler/>
-</para>
-<para>MSSM input parameter definition, with A pole mass and mu as explicit input parameters instead of mHu2 and mHd2 (SUSY scale version)</para>
+<para>MSSM models with boundary conditions at MGUT scale with A pole mass and mu as explicit input parameters instead of mHu2 and mHd2 and with a light gravitino</para>
+<para><ref refid="namespaceGambit_1_1Models" kindref="compound">Models</ref> included: MSSM63atMGUT_mA_mG MSSM30atMGUT_mA_mG MSSM25atMGUT_mA_mG MSSM20atMGUT_mA_mG</para>
+<para>Translation functions defined in MSSMatMGUT_mA_mG.cpp</para>
 <para><hruler/>
 </para>
 </sect1>
 <sect1 id="namespaceGambit_1autotoc_md46">
 <title>Authors</title>
 <para>(add name and date if you modify)</para>
-<para><simplesect kind="author"><para>Ben Farmer (<ulink url="mailto:benjamin.farmer@fysik.su.se">benjamin.farmer@fysik.su.se</ulink>) </para>
+<para><simplesect kind="author"><para>Pat Scott (<ulink url="mailto:p.scott@imperial.ac.uk">p.scott@imperial.ac.uk</ulink>) </para>
 </simplesect>
-<simplesect kind="date"><para>2017 Sep</para>
+<simplesect kind="date"><para>2018 Sept</para>
+</simplesect>
+<simplesect kind="author"><para>Tomas Gonzalo (<ulink url="mailto:tomas.gonzalo@kit.edu">tomas.gonzalo@kit.edu</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2022 Sept</para>
 </simplesect>
 <hruler/>
 </para>
-<para>GAMBIT: Global and Modular BSM Inference Tool <hruler/>
+<para>MSSM models with boundary conditions at MGUT scale with a light gravitino</para>
+<para><ref refid="namespaceGambit_1_1Models" kindref="compound">Models</ref> included: MSSM63atMGUT_mG MSSM30atMGUT_mG MSSM25atMGUT_mG MSSM20atMGUT_mG</para>
+<para>Translation functions defined in MSSMatMGUT_mG.cpp</para>
+<para><hruler/>
 </para>
-<para>MSSM input parameter definition, with A pole mass and mu as explicit input parameters instead of mHu2 and mHd2.</para>
+</sect1>
+<sect1 id="namespaceGambit_1autotoc_md47">
+<title>Authors</title>
+<para>(add name and date if you modify)</para>
+<para><simplesect kind="author"><para>Pat Scott (<ulink url="mailto:p.scott@imperial.ac.uk">p.scott@imperial.ac.uk</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2018 Sep</para>
+</simplesect>
+<simplesect kind="author"><para>Tomas Gonzalo (<ulink url="mailto:tomas.gonzalo@kit.edu">tomas.gonzalo@kit.edu</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2022 Sept</para>
+</simplesect>
+<hruler/>
+</para>
+<para>MSSM models with boundary conditions at MSUSY scale</para>
+<para><ref refid="namespaceGambit_1_1Models" kindref="compound">Models</ref> included: MSSM63atMSUSY MSSM30atMSUSY MSSM25atMSUSY MSSM20atMSUSY</para>
+<para>Translation functions defined in MSSMatMSUSY.cpp</para>
 <para><hruler/>
 </para>
 </sect1>
 <sect1 id="namespaceGambit_1autotoc_md48">
 <title>Authors</title>
 <para>(add name and date if you modify)</para>
+<para><simplesect kind="author"><para>Ben Farmer (<ulink url="mailto:benjamin.farmer@fysik.su.se">benjamin.farmer@fysik.su.se</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2015 Jan </para>
+</simplesect>
+<simplesect kind="date"><para>2017 Sep, Oct</para>
+</simplesect>
+<simplesect kind="author"><para>Pat Scott (<ulink url="mailto:p.scott@imperial.ac.uk">p.scott@imperial.ac.uk</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2015 Sep</para>
+</simplesect>
+<simplesect kind="author"><para>Tomas Gonzalo (<ulink url="mailto:tomas.gonzalo@kit.edu">tomas.gonzalo@kit.edu</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2022 Sept</para>
+</simplesect>
+<hruler/>
+</para>
+<para>MSSM models with boundary conditions at MSUSY scale with A polea mass and mu as explicit input parameters instead of mHu2 and mHd2</para>
+<para><ref refid="namespaceGambit_1_1Models" kindref="compound">Models</ref> included: MSSM63atMSUSY_mA MSSM30atMSUSY_mA MSSM25atMSUSY_mA MSSM20atMSUSY_mA</para>
+<para>Translation functions defined in MSSMatMSUSY_mA.cpp</para>
+<para><hruler/>
+</para>
+</sect1>
+<sect1 id="namespaceGambit_1autotoc_md49">
+<title>Authors</title>
+<para>(add name and date if you modify)</para>
+<para><simplesect kind="author"><para>Ben Farmer (<ulink url="mailto:benjamin.farmer@fysik.su.se">benjamin.farmer@fysik.su.se</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2015 Jan </para>
+</simplesect>
+<simplesect kind="date"><para>2017 Sep, Oct</para>
+</simplesect>
+<simplesect kind="author"><para>Pat Scott (<ulink url="mailto:p.scott@imperial.ac.uk">p.scott@imperial.ac.uk</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2015 Sep</para>
+</simplesect>
+<simplesect kind="author"><para>Tomas Gonzalo (<ulink url="mailto:tomas.gonzalo@kit.edu">tomas.gonzalo@kit.edu</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2022 Sept</para>
+</simplesect>
+<hruler/>
+</para>
+<para>MSSM models with boundary conditions at MSUSY scale with A polea mass and mu as explicit input parameters instead of mHu2 and mHd2 and with a light gravitino</para>
+<para><ref refid="namespaceGambit_1_1Models" kindref="compound">Models</ref> included: MSSM63atMSUSY_mA_mG MSSM30atMSUSY_mA_mG MSSM25atMSUSY_mA_mG MSSM20atMSUSY_mA_mG</para>
+<para>Translation functions defined in MSSMatMSUSY_mA_mG.cpp</para>
+<para><hruler/>
+</para>
+</sect1>
+<sect1 id="namespaceGambit_1autotoc_md50">
+<title>Authors</title>
+<para>(add name and date if you modify)</para>
+<para><simplesect kind="author"><para>Pat Scott (<ulink url="mailto:p.scott@imperial.ac.uk">p.scott@imperial.ac.uk</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2018 Sep</para>
+</simplesect>
+<simplesect kind="author"><para>Tomas Gonzalo (<ulink url="mailto:tomas.gonzalo@kit.edu">tomas.gonzalo@kit.edu</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2022 Sept</para>
+</simplesect>
+<hruler/>
+</para>
+<para>MSSM models with boundary conditions at MSUSY scale with a light gravitino</para>
+<para><ref refid="namespaceGambit_1_1Models" kindref="compound">Models</ref> included: MSSM63atMSUSY_mG MSSM30atMSUSY_mG MSSM25atMSUSY_mG MSSM20atMSUSY_mG</para>
+<para>Translation functions defined in MSSMatMSUSY_mG.cpp</para>
+<para><hruler/>
+</para>
+</sect1>
+<sect1 id="namespaceGambit_1autotoc_md51">
+<title>Authors</title>
+<para>(add name and date if you modify)</para>
+<para><simplesect kind="author"><para>Pat Scott (<ulink url="mailto:p.scott@imperial.ac.uk">p.scott@imperial.ac.uk</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2018 Sep</para>
+</simplesect>
+<simplesect kind="author"><para>Tomas Gonzalo (<ulink url="mailto:tomas.gonzalo@kit.edu">tomas.gonzalo@kit.edu</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2022 Sept</para>
+</simplesect>
+<hruler/>
+</para>
+<para>MSSM models with boundary conditions at generic scale Q with A pole mass and mu as explicit input parameters instead of mHu2 and mHd2.</para>
+<para><ref refid="namespaceGambit_1_1Models" kindref="compound">Models</ref> included: MSSM63atQ_mA MSSM30atQ_mA MSSM24atQ_mA MSSM25atQ_mA MSSM20atQ_mA MSSM19atQ_mA MSSM16atQ_mA MSSM15atQ_mA MSSM11atQ_mA MSSM10atQ_mA MSSM10batQ_mA MSSM10catQ_mA MSSM9atQ_mA MSSM9batQ_mA MSSM7atQ_mA</para>
+<para>Translation functions defined in MSSMatQ_mA.cpp</para>
+<para><hruler/>
+</para>
+</sect1>
+<sect1 id="namespaceGambit_1autotoc_md53">
+<title>Authors</title>
+<para>(add name and date if you modify)</para>
 <para><simplesect kind="author"><para>Pat Scott (<ulink url="mailto:p.scott@imperial.ac.uk">p.scott@imperial.ac.uk</ulink>) </para>
 </simplesect>
 <simplesect kind="date"><para>2017 Aug</para>
+</simplesect>
+<simplesect kind="author"><para>Tomas Gonzalo (<ulink url="mailto:tomas.gonzalo@kit.edu">tomas.gonzalo@kit.edu</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2022 Sept</para>
+</simplesect>
+<hruler/>
+</para>
+<para>MSSM models with boundary conditions at generic scale Q with A pole mass and mu as explicit input parameters instead of mHu2 and mHd2 and with a light gravitino.</para>
+<para><ref refid="namespaceGambit_1_1Models" kindref="compound">Models</ref> included: MSSM63atQ_mA_mG MSSM30atQ_mA_mG MSSM24atQ_mA_mG MSSM25atQ_mA_mG MSSM20atQ_mA_mG MSSM19atQ_mA_mG MSSM16atQ_mA_mG MSSM15atQ_mA_mG MSSM11atQ_mA_mG MSSM10atQ_mA_mG MSSM10batQ_mA_mG MSSM10catQ_mA_mG MSSM9atQ_mA_mG MSSM9batQ_mA_mG MSSM7atQ_mA_mG</para>
+<para>Translation functions defined in MSSMatQ_mA_mG.cpp</para>
+<para><hruler/>
+</para>
+</sect1>
+<sect1 id="namespaceGambit_1autotoc_md54">
+<title>Authors</title>
+<para>(add name and date if you modify)</para>
+<para><simplesect kind="author"><para>Pat Scott (<ulink url="mailto:p.scott@imperial.ac.uk">p.scott@imperial.ac.uk</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2018 Sept</para>
+</simplesect>
+<simplesect kind="author"><para>Tomas Gonzalo (<ulink url="mailto:tomas.gonzalo@kit.edu">tomas.gonzalo@kit.edu</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2022 Sept</para>
 </simplesect>
 <hruler/>
 </para>
@@ -6409,7 +6734,7 @@ Known issues:</para>
 <para><hruler/>
 </para>
 </sect1>
-<sect1 id="namespaceGambit_1autotoc_md49">
+<sect1 id="namespaceGambit_1autotoc_md56">
 <title>Authors</title>
 <para>(add name and date if you modify)</para>
 <para><simplesect kind="author"><para>Jonathan Cornell </para>
@@ -6461,21 +6786,20 @@ Known issues:</para>
 </para>
 <para>GAMBIT: Global and Modular BSM Inference Tool <hruler/>
 </para>
-<para>Translation function definitions for all &apos;mA&apos; versions of 63 parameter MSSM, back to the corresponding mhu2 mhd2 parameterisations</para>
-<para>Contains translation functions for: MSSM63atQ_mA --&gt; MSSM63atQ MSSM63atMGUT_mA --&gt; MSSM63atMGUT MSSM63atMSUSY_mA --&gt; MSSM63atMSUSY</para>
+<para>Function implementations for MSSM translation helpers.</para>
 <para><hruler/>
 </para>
 </sect1>
-<sect1 id="namespaceGambit_1autotoc_md64">
+<sect1 id="namespaceGambit_1autotoc_md69">
 <title>Authors</title>
 <para>(add name and date if you modify)</para>
-<para><simplesect kind="author"><para>Pat Scott (<ulink url="mailto:p.scott@imperial.ac.uk">p.scott@imperial.ac.uk</ulink>) </para>
+<para><simplesect kind="author"><para>Ben Farmer (<ulink url="mailto:benjamin.farmer@fysik.su.se">benjamin.farmer@fysik.su.se</ulink>) </para>
 </simplesect>
-<simplesect kind="date"><para>2017 Aug</para>
+<simplesect kind="date"><para>2015 Aug, 2017 Oct</para>
 </simplesect>
-<simplesect kind="author"><para>Ben Farmer (<ulink url="mailto:benjamin.farmer@fysik.su.se">benjamin.farmer@fysik.su.se</ulink>) </para>
+<simplesect kind="author"><para>Pat Scott (<ulink url="mailto:p.scott@imperial.ac.uk">p.scott@imperial.ac.uk</ulink>) </para>
 </simplesect>
-<simplesect kind="date"><para>2017 Sep, Oct</para>
+<simplesect kind="date"><para>2018 Oct</para>
 </simplesect>
 <hruler/>
 </para>
@@ -6485,6 +6809,10 @@ Known issues:</para>
 <para><simplesect kind="author"><para>Ben Farmer (<ulink url="mailto:b.farmer@imperial.ac.uk">b.farmer@imperial.ac.uk</ulink>) </para>
 </simplesect>
 <simplesect kind="date"><para>2019 Jan</para>
+</simplesect>
+<simplesect kind="author"><para>Tomas Gonzalo (<ulink url="mailto:tomas.gonzalo@monash.edu">tomas.gonzalo@monash.edu</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2020 June</para>
 </simplesect>
 <hruler/>
 </para>

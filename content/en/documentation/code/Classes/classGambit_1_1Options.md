@@ -33,6 +33,8 @@ description: "[No description available]"
 | template <typename... args\> <br>YAML::Node | **[loadFromFile](/documentation/code/classes/classgambit_1_1options/#function-loadfromfile)**(const args &... keys) const<br>Get [YAML](/documentation/code/namespaces/namespaceyaml/) node from file.  |
 | YAML::const_iterator | **[begin](/documentation/code/classes/classgambit_1_1options/#function-begin)**() const<br>Return begin and end of options.  |
 | YAML::const_iterator | **[end](/documentation/code/classes/classgambit_1_1options/#function-end)**() const |
+| std::string | **[toString](/documentation/code/classes/classgambit_1_1options/#function-tostring)**(size_t level) const<br>Convert to string with some indentation.  |
+| void | **[toMap](/documentation/code/classes/classgambit_1_1options/#function-tomap)**([map_str_str](/documentation/code/namespaces/namespacegambit/#typedef-map-str-str) & map, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) header ="") const<br>Convert the options node a map.  |
 
 ## Detailed Description
 
@@ -209,6 +211,27 @@ inline YAML::const_iterator end() const
 ```
 
 
+### function toString
+
+```
+inline std::string toString(
+    size_t level
+) const
+```
+
+Convert to string with some indentation. 
+
+### function toMap
+
+```
+inline void toMap(
+    map_str_str & map,
+    str header =""
+) const
+```
+
+Convert the options node a map. 
+
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:43 +0000
+Updated on 2023-06-26 at 21:36:50 +0000

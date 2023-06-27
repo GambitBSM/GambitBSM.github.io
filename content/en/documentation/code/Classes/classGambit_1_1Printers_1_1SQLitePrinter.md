@@ -24,7 +24,9 @@ Inherits from [Gambit::Printers::BasePrinter](/documentation/code/classes/classg
 | virtual void | **[reset](/documentation/code/classes/classgambit_1_1printers_1_1sqliteprinter/#function-reset)**(bool force =false)<br>Function to signal to the printer to write buffer contents to disk.  |
 | virtual void | **[finalise](/documentation/code/classes/classgambit_1_1printers_1_1sqliteprinter/#function-finalise)**(bool abnormal =false)<br>Signal printer that scan is finished, and final output needs to be performed.  |
 | virtual [Options](/documentation/code/classes/classgambit_1_1options/) | **[resume_reader_options](/documentation/code/classes/classgambit_1_1printers_1_1sqliteprinter/#function-resume-reader-options)**() |
+| virtual void | **[_print_metadata](/documentation/code/classes/classgambit_1_1printers_1_1sqliteprinter/#function-print-metadata)**([map_str_str](/documentation/code/namespaces/namespacegambit/#typedef-map-str-str) metadata) |
 | template <typename T \> <br>void | **[_print](/documentation/code/classes/classgambit_1_1printers_1_1sqliteprinter/#function-print)**(T const & , const std::string & label, const int vertexID, const uint, const ulong)<br>Print functions.  |
+| template <typename T \> <br>void | **[_print](/documentation/code/classes/classgambit_1_1printers_1_1sqliteprinter/#function-print)**(T const & in, const std::string & label, const uint rank, const ulong pointID)<br>Print functions.  |
 | | **[SQLitePrinter](/documentation/code/classes/classgambit_1_1printers_1_1sqliteprinter/#function-sqliteprinter)**(const [Options](/documentation/code/classes/classgambit_1_1options/) & options, [BasePrinter](/documentation/code/classes/classgambit_1_1printers_1_1baseprinter/) *const primary =NULL)<br>Constructor (for construction via inifile options)  |
 | | **[~SQLitePrinter](/documentation/code/classes/classgambit_1_1printers_1_1sqliteprinter/#function-sqliteprinter)**()<br>Destructor.  |
 | std::size_t | **[get_max_buffer_length](/documentation/code/classes/classgambit_1_1printers_1_1sqliteprinter/#function-get-max-buffer-length)**() |
@@ -59,7 +61,9 @@ Inherits from [Gambit::Printers::BasePrinter](/documentation/code/classes/classg
 | -------------- | -------------- |
 | std::string | **[get_database_file](/documentation/code/classes/classgambit_1_1printers_1_1sqlitebase/#function-get-database-file)**() |
 | std::string | **[get_table_name](/documentation/code/classes/classgambit_1_1printers_1_1sqlitebase/#function-get-table-name)**() |
+| std::string | **[get_metadata_table_name](/documentation/code/classes/classgambit_1_1printers_1_1sqlitebase/#function-get-metadata-table-name)**() |
 | void | **[set_table_name](/documentation/code/classes/classgambit_1_1printers_1_1sqlitebase/#function-set-table-name)**(const std::string & table_name) |
+| void | **[set_metadata_table_name](/documentation/code/classes/classgambit_1_1printers_1_1sqlitebase/#function-set-metadata-table-name)**(const std::string & metadata_table_name) |
 | void | **[require_output_ready](/documentation/code/classes/classgambit_1_1printers_1_1sqlitebase/#function-require-output-ready)**() |
 | void | **[open_db](/documentation/code/classes/classgambit_1_1printers_1_1sqlitebase/#function-open-db)**(const std::string & path, char access ='r') |
 | void | **[close_db](/documentation/code/classes/classgambit_1_1printers_1_1sqlitebase/#function-close-db)**() |
@@ -89,6 +93,7 @@ Inherits from [Gambit::Printers::BasePrinter](/documentation/code/classes/classg
 | void | **[enable](/documentation/code/classes/classgambit_1_1printers_1_1basebaseprinter/#function-enable)**() |
 | template <typename T \> <br>void | **[print](/documentation/code/classes/classgambit_1_1printers_1_1basebaseprinter/#function-print)**(T const & in, const std::string & label, const int vertexID, const uint rank, const ulong pointID) |
 | template <typename T \> <br>void | **[print](/documentation/code/classes/classgambit_1_1printers_1_1basebaseprinter/#function-print)**(T const & in, const std::string & label, const uint rank, const ulong pointID) |
+| void | **[print_metadata](/documentation/code/classes/classgambit_1_1printers_1_1basebaseprinter/#function-print-metadata)**([map_str_str](/documentation/code/namespaces/namespacegambit/#typedef-map-str-str) datasets) |
 
 **Protected Attributes inherited from [Gambit::Printers::BaseBasePrinter](/documentation/code/classes/classgambit_1_1printers_1_1basebaseprinter/)**
 
@@ -167,6 +172,18 @@ virtual Options resume_reader_options()
 **Reimplements**: [Gambit::Printers::BasePrinter::resume_reader_options](/documentation/code/classes/classgambit_1_1printers_1_1baseprinter/#function-resume-reader-options)
 
 
+### function _print_metadata
+
+```
+virtual void _print_metadata(
+    map_str_str metadata
+)
+```
+
+
+**Reimplements**: [Gambit::Printers::BaseBasePrinter::_print_metadata](/documentation/code/classes/classgambit_1_1printers_1_1basebaseprinter/#function-print-metadata)
+
+
 ### function _print
 
 ```
@@ -177,6 +194,20 @@ inline void _print(
     const int vertexID,
     const uint,
     const ulong
+)
+```
+
+Print functions. 
+
+### function _print
+
+```
+template <typename T >
+inline void _print(
+    T const & in,
+    const std::string & label,
+    const uint rank,
+    const ulong pointID
 )
 ```
 
@@ -226,4 +257,4 @@ Helper print functions.
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:44 +0000
+Updated on 2023-06-26 at 21:36:52 +0000

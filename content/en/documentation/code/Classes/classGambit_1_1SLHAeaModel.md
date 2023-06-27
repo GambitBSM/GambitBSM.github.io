@@ -13,7 +13,7 @@ Skeleton "model" class which interacts with an SLHAea object.
 
 `#include <SLHASimpleSpec.hpp>`
 
-Inherited by [Gambit::MSSMea](/documentation/code/classes/classgambit_1_1mssmea/), [Gambit::SMea](/documentation/code/classes/classgambit_1_1smea/)
+Inherited by [Gambit::MSSMea](/documentation/code/classes/classgambit_1_1mssmea/), [Gambit::Models::DMsimpVectorMedDiracDMModel](/documentation/code/classes/classgambit_1_1models_1_1dmsimpvectormeddiracdmmodel/), [Gambit::Models::DMsimpVectorMedMajoranaDMModel](/documentation/code/classes/classgambit_1_1models_1_1dmsimpvectormedmajoranadmmodel/), [Gambit::Models::DMsimpVectorMedScalarDMModel](/documentation/code/classes/classgambit_1_1models_1_1dmsimpvectormedscalardmmodel/), [Gambit::Models::DMsimpVectorMedVectorDMModel](/documentation/code/classes/classgambit_1_1models_1_1dmsimpvectormedvectordmmodel/), [Gambit::SMea](/documentation/code/classes/classgambit_1_1smea/)
 
 ## Public Functions
 
@@ -152,4 +152,4 @@ PDG translation map (e.g. from SLHA1 to SLHA2 for MSSMskeleton)
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:43 +0000
+Updated on 2023-06-26 at 21:36:51 +0000

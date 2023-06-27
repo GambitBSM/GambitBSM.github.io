@@ -1,0 +1,1678 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="MSSMatQ_8hpp" kind="file" language="C++">
+    <compoundname>MSSMatQ.hpp</compoundname>
+    <includedby refid="MSSMatMGUT_8cpp" local="yes">MSSMatMGUT.cpp</includedby>
+    <includedby refid="MSSMatMGUT_8hpp" local="yes">MSSMatMGUT.hpp</includedby>
+    <includedby refid="MSSMatMSUSY_8cpp" local="yes">MSSMatMSUSY.cpp</includedby>
+    <includedby refid="MSSMatMSUSY_8hpp" local="yes">MSSMatMSUSY.hpp</includedby>
+    <includedby refid="MSSMatQ_8cpp" local="yes">MSSMatQ.cpp</includedby>
+    <includedby refid="MSSMatQ__mA_8hpp" local="yes">MSSMatQ_mA.hpp</includedby>
+    <invincdepgraph>
+      <node id="6">
+        <label>CMSSM.hpp</label>
+        <link refid="CMSSM_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>MSSMatMGUT.hpp</label>
+        <link refid="MSSMatMGUT_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>MSSMatMGUT_mA.hpp</label>
+        <link refid="MSSMatMGUT__mA_8hpp_source"/>
+      </node>
+      <node id="12">
+        <label>MSSMatMSUSY.hpp</label>
+        <link refid="MSSMatMSUSY_8hpp_source"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>MSSMatMSUSY_mA.hpp</label>
+        <link refid="MSSMatMSUSY__mA_8hpp_source"/>
+      </node>
+      <node id="1">
+        <label>MSSMatQ.hpp</label>
+        <link refid="MSSMatQ_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>MSSMatQ_mA.hpp</label>
+        <link refid="MSSMatQ__mA_8hpp_source"/>
+      </node>
+      <node id="5">
+        <label>NUHM1.hpp</label>
+        <link refid="NUHM1_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>NUHM2.hpp</label>
+        <link refid="NUHM2_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>mSUGRA.hpp</label>
+        <link refid="mSUGRA_8hpp"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>CMSSM.cpp</label>
+        <link refid="CMSSM_8cpp"/>
+      </node>
+      <node id="10">
+        <label>NUHM1.cpp</label>
+        <link refid="NUHM1_8cpp"/>
+      </node>
+      <node id="11">
+        <label>NUHM2.cpp</label>
+        <link refid="NUHM2_8cpp"/>
+      </node>
+      <node id="9">
+        <label>mSUGRA.cpp</label>
+        <link refid="mSUGRA_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespaceGambit">Gambit</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="MSSMatQ_8hpp_1a7c60e913478d07a44ac15c6fb2c5937f" prot="public" static="no">
+        <name>MODEL</name>
+        <initializer>MSSM63atQ</initializer>
+        <briefdescription>
+<para>FlexibleSUSY compatible general (63 parameters plus sign, plus input scale) MSSM parameterisation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Specialisation of MSSM63atQ with all off-diagonal m and A terms set to zero.</para>
+<para>MSSM models with boundary conditions at generic scale Q</para>
+<para>Models included: MSSM63atQ MSSM30atQ MSSM25atQ MSSM24atQ MSSM20atQ MSSM19atQ MSSM16atQ MSSM15atQ MSSM11atQ MSSM10atQ MSSM10batQ MSSM10catQ MSSM9atQ MSSM9batQ MSSM7atQ</para>
+<para>Translation functions defined in MSSMatQ.cpp</para>
+<para><hruler/>
+</para>
+<sect1 id="MSSMatQ_8hpp_1autotoc_md52">
+<title>Authors</title>
+<para>(add name and date if you modify)</para>
+<para><simplesect kind="author"><para>Ben Farmer (<ulink url="mailto:ben.farmer@gmail.com">ben.farmer@gmail.com</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2015 Jan</para>
+</simplesect>
+<simplesect kind="author"><para>Pat Scott (<ulink url="mailto:p.scott@imperial.ac.uk">p.scott@imperial.ac.uk</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2015 Sep</para>
+</simplesect>
+<simplesect kind="author"><para>Peter Athron (<ulink url="mailto:peter.athron@coepp.org.au">peter.athron@coepp.org.au</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2015 Sep</para>
+</simplesect>
+<simplesect kind="author"><para>Tomas Gonzalo (<ulink url="mailto:tomas.gonzalo@kit.edu">tomas.gonzalo@kit.edu</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2022 Sept</para>
+</simplesect>
+<hruler/>
+ </para>
+</sect1>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models/MSSMatQ.hpp" line="54" column="9" bodyfile="Models/include/gambit/Models/models/MSSMatQ.hpp" bodystart="377" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="MSSMatQ_8hpp_1a7c60e913478d07a44ac15c6fb2c5937f" prot="public" static="no">
+        <name>MODEL</name>
+        <initializer>MSSM30atQ</initializer>
+        <briefdescription>
+<para>FlexibleSUSY compatible general (63 parameters plus sign, plus input scale) MSSM parameterisation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Specialisation of MSSM63atQ with all off-diagonal m and A terms set to zero.</para>
+<para>MSSM models with boundary conditions at generic scale Q</para>
+<para>Models included: MSSM63atQ MSSM30atQ MSSM25atQ MSSM24atQ MSSM20atQ MSSM19atQ MSSM16atQ MSSM15atQ MSSM11atQ MSSM10atQ MSSM10batQ MSSM10catQ MSSM9atQ MSSM9batQ MSSM7atQ</para>
+<para>Translation functions defined in MSSMatQ.cpp</para>
+<para><hruler/>
+</para>
+<sect1 id="MSSMatQ_8hpp_1autotoc_md52">
+<title>Authors</title>
+<para>(add name and date if you modify)</para>
+<para><simplesect kind="author"><para>Ben Farmer (<ulink url="mailto:ben.farmer@gmail.com">ben.farmer@gmail.com</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2015 Jan</para>
+</simplesect>
+<simplesect kind="author"><para>Pat Scott (<ulink url="mailto:p.scott@imperial.ac.uk">p.scott@imperial.ac.uk</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2015 Sep</para>
+</simplesect>
+<simplesect kind="author"><para>Peter Athron (<ulink url="mailto:peter.athron@coepp.org.au">peter.athron@coepp.org.au</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2015 Sep</para>
+</simplesect>
+<simplesect kind="author"><para>Tomas Gonzalo (<ulink url="mailto:tomas.gonzalo@kit.edu">tomas.gonzalo@kit.edu</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2022 Sept</para>
+</simplesect>
+<hruler/>
+ </para>
+</sect1>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models/MSSMatQ.hpp" line="95" column="9" bodyfile="Models/include/gambit/Models/models/MSSMatQ.hpp" bodystart="377" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="MSSMatQ_8hpp_1a43bda94ea92b5a0e18e404892f3c2668" prot="public" static="no">
+        <name>PARENT</name>
+        <initializer>MSSM63atQ</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models/MSSMatQ.hpp" line="96" column="9" bodyfile="Models/include/gambit/Models/models/MSSMatQ.hpp" bodystart="378" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="MSSMatQ_8hpp_1a7c60e913478d07a44ac15c6fb2c5937f" prot="public" static="no">
+        <name>MODEL</name>
+        <initializer>MSSM25atQ</initializer>
+        <briefdescription>
+<para>FlexibleSUSY compatible general (63 parameters plus sign, plus input scale) MSSM parameterisation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Specialisation of MSSM63atQ with all off-diagonal m and A terms set to zero.</para>
+<para>MSSM models with boundary conditions at generic scale Q</para>
+<para>Models included: MSSM63atQ MSSM30atQ MSSM25atQ MSSM24atQ MSSM20atQ MSSM19atQ MSSM16atQ MSSM15atQ MSSM11atQ MSSM10atQ MSSM10batQ MSSM10catQ MSSM9atQ MSSM9batQ MSSM7atQ</para>
+<para>Translation functions defined in MSSMatQ.cpp</para>
+<para><hruler/>
+</para>
+<sect1 id="MSSMatQ_8hpp_1autotoc_md52">
+<title>Authors</title>
+<para>(add name and date if you modify)</para>
+<para><simplesect kind="author"><para>Ben Farmer (<ulink url="mailto:ben.farmer@gmail.com">ben.farmer@gmail.com</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2015 Jan</para>
+</simplesect>
+<simplesect kind="author"><para>Pat Scott (<ulink url="mailto:p.scott@imperial.ac.uk">p.scott@imperial.ac.uk</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2015 Sep</para>
+</simplesect>
+<simplesect kind="author"><para>Peter Athron (<ulink url="mailto:peter.athron@coepp.org.au">peter.athron@coepp.org.au</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2015 Sep</para>
+</simplesect>
+<simplesect kind="author"><para>Tomas Gonzalo (<ulink url="mailto:tomas.gonzalo@kit.edu">tomas.gonzalo@kit.edu</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2022 Sept</para>
+</simplesect>
+<hruler/>
+ </para>
+</sect1>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models/MSSMatQ.hpp" line="121" column="9" bodyfile="Models/include/gambit/Models/models/MSSMatQ.hpp" bodystart="377" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="MSSMatQ_8hpp_1a43bda94ea92b5a0e18e404892f3c2668" prot="public" static="no">
+        <name>PARENT</name>
+        <initializer>MSSM30atQ</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models/MSSMatQ.hpp" line="122" column="9" bodyfile="Models/include/gambit/Models/models/MSSMatQ.hpp" bodystart="378" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="MSSMatQ_8hpp_1a7c60e913478d07a44ac15c6fb2c5937f" prot="public" static="no">
+        <name>MODEL</name>
+        <initializer>MSSM24atQ</initializer>
+        <briefdescription>
+<para>FlexibleSUSY compatible general (63 parameters plus sign, plus input scale) MSSM parameterisation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Specialisation of MSSM63atQ with all off-diagonal m and A terms set to zero.</para>
+<para>MSSM models with boundary conditions at generic scale Q</para>
+<para>Models included: MSSM63atQ MSSM30atQ MSSM25atQ MSSM24atQ MSSM20atQ MSSM19atQ MSSM16atQ MSSM15atQ MSSM11atQ MSSM10atQ MSSM10batQ MSSM10catQ MSSM9atQ MSSM9batQ MSSM7atQ</para>
+<para>Translation functions defined in MSSMatQ.cpp</para>
+<para><hruler/>
+</para>
+<sect1 id="MSSMatQ_8hpp_1autotoc_md52">
+<title>Authors</title>
+<para>(add name and date if you modify)</para>
+<para><simplesect kind="author"><para>Ben Farmer (<ulink url="mailto:ben.farmer@gmail.com">ben.farmer@gmail.com</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2015 Jan</para>
+</simplesect>
+<simplesect kind="author"><para>Pat Scott (<ulink url="mailto:p.scott@imperial.ac.uk">p.scott@imperial.ac.uk</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2015 Sep</para>
+</simplesect>
+<simplesect kind="author"><para>Peter Athron (<ulink url="mailto:peter.athron@coepp.org.au">peter.athron@coepp.org.au</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2015 Sep</para>
+</simplesect>
+<simplesect kind="author"><para>Tomas Gonzalo (<ulink url="mailto:tomas.gonzalo@kit.edu">tomas.gonzalo@kit.edu</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2022 Sept</para>
+</simplesect>
+<hruler/>
+ </para>
+</sect1>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models/MSSMatQ.hpp" line="147" column="9" bodyfile="Models/include/gambit/Models/models/MSSMatQ.hpp" bodystart="377" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="MSSMatQ_8hpp_1a43bda94ea92b5a0e18e404892f3c2668" prot="public" static="no">
+        <name>PARENT</name>
+        <initializer>MSSM25atQ</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models/MSSMatQ.hpp" line="148" column="9" bodyfile="Models/include/gambit/Models/models/MSSMatQ.hpp" bodystart="378" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="MSSMatQ_8hpp_1a7c60e913478d07a44ac15c6fb2c5937f" prot="public" static="no">
+        <name>MODEL</name>
+        <initializer>MSSM20atQ</initializer>
+        <briefdescription>
+<para>FlexibleSUSY compatible general (63 parameters plus sign, plus input scale) MSSM parameterisation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Specialisation of MSSM63atQ with all off-diagonal m and A terms set to zero.</para>
+<para>MSSM models with boundary conditions at generic scale Q</para>
+<para>Models included: MSSM63atQ MSSM30atQ MSSM25atQ MSSM24atQ MSSM20atQ MSSM19atQ MSSM16atQ MSSM15atQ MSSM11atQ MSSM10atQ MSSM10batQ MSSM10catQ MSSM9atQ MSSM9batQ MSSM7atQ</para>
+<para>Translation functions defined in MSSMatQ.cpp</para>
+<para><hruler/>
+</para>
+<sect1 id="MSSMatQ_8hpp_1autotoc_md52">
+<title>Authors</title>
+<para>(add name and date if you modify)</para>
+<para><simplesect kind="author"><para>Ben Farmer (<ulink url="mailto:ben.farmer@gmail.com">ben.farmer@gmail.com</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2015 Jan</para>
+</simplesect>
+<simplesect kind="author"><para>Pat Scott (<ulink url="mailto:p.scott@imperial.ac.uk">p.scott@imperial.ac.uk</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2015 Sep</para>
+</simplesect>
+<simplesect kind="author"><para>Peter Athron (<ulink url="mailto:peter.athron@coepp.org.au">peter.athron@coepp.org.au</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2015 Sep</para>
+</simplesect>
+<simplesect kind="author"><para>Tomas Gonzalo (<ulink url="mailto:tomas.gonzalo@kit.edu">tomas.gonzalo@kit.edu</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2022 Sept</para>
+</simplesect>
+<hruler/>
+ </para>
+</sect1>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models/MSSMatQ.hpp" line="173" column="9" bodyfile="Models/include/gambit/Models/models/MSSMatQ.hpp" bodystart="377" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="MSSMatQ_8hpp_1a43bda94ea92b5a0e18e404892f3c2668" prot="public" static="no">
+        <name>PARENT</name>
+        <initializer>MSSM25atQ</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models/MSSMatQ.hpp" line="174" column="9" bodyfile="Models/include/gambit/Models/models/MSSMatQ.hpp" bodystart="378" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="MSSMatQ_8hpp_1a7c60e913478d07a44ac15c6fb2c5937f" prot="public" static="no">
+        <name>MODEL</name>
+        <initializer>MSSM19atQ</initializer>
+        <briefdescription>
+<para>FlexibleSUSY compatible general (63 parameters plus sign, plus input scale) MSSM parameterisation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Specialisation of MSSM63atQ with all off-diagonal m and A terms set to zero.</para>
+<para>MSSM models with boundary conditions at generic scale Q</para>
+<para>Models included: MSSM63atQ MSSM30atQ MSSM25atQ MSSM24atQ MSSM20atQ MSSM19atQ MSSM16atQ MSSM15atQ MSSM11atQ MSSM10atQ MSSM10batQ MSSM10catQ MSSM9atQ MSSM9batQ MSSM7atQ</para>
+<para>Translation functions defined in MSSMatQ.cpp</para>
+<para><hruler/>
+</para>
+<sect1 id="MSSMatQ_8hpp_1autotoc_md52">
+<title>Authors</title>
+<para>(add name and date if you modify)</para>
+<para><simplesect kind="author"><para>Ben Farmer (<ulink url="mailto:ben.farmer@gmail.com">ben.farmer@gmail.com</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2015 Jan</para>
+</simplesect>
+<simplesect kind="author"><para>Pat Scott (<ulink url="mailto:p.scott@imperial.ac.uk">p.scott@imperial.ac.uk</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2015 Sep</para>
+</simplesect>
+<simplesect kind="author"><para>Peter Athron (<ulink url="mailto:peter.athron@coepp.org.au">peter.athron@coepp.org.au</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2015 Sep</para>
+</simplesect>
+<simplesect kind="author"><para>Tomas Gonzalo (<ulink url="mailto:tomas.gonzalo@kit.edu">tomas.gonzalo@kit.edu</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2022 Sept</para>
+</simplesect>
+<hruler/>
+ </para>
+</sect1>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models/MSSMatQ.hpp" line="200" column="9" bodyfile="Models/include/gambit/Models/models/MSSMatQ.hpp" bodystart="377" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="MSSMatQ_8hpp_1a43bda94ea92b5a0e18e404892f3c2668" prot="public" static="no">
+        <name>PARENT</name>
+        <initializer>MSSM24atQ</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models/MSSMatQ.hpp" line="201" column="9" bodyfile="Models/include/gambit/Models/models/MSSMatQ.hpp" bodystart="378" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="MSSMatQ_8hpp_1a7c60e913478d07a44ac15c6fb2c5937f" prot="public" static="no">
+        <name>MODEL</name>
+        <initializer>MSSM16atQ</initializer>
+        <briefdescription>
+<para>FlexibleSUSY compatible general (63 parameters plus sign, plus input scale) MSSM parameterisation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Specialisation of MSSM63atQ with all off-diagonal m and A terms set to zero.</para>
+<para>MSSM models with boundary conditions at generic scale Q</para>
+<para>Models included: MSSM63atQ MSSM30atQ MSSM25atQ MSSM24atQ MSSM20atQ MSSM19atQ MSSM16atQ MSSM15atQ MSSM11atQ MSSM10atQ MSSM10batQ MSSM10catQ MSSM9atQ MSSM9batQ MSSM7atQ</para>
+<para>Translation functions defined in MSSMatQ.cpp</para>
+<para><hruler/>
+</para>
+<sect1 id="MSSMatQ_8hpp_1autotoc_md52">
+<title>Authors</title>
+<para>(add name and date if you modify)</para>
+<para><simplesect kind="author"><para>Ben Farmer (<ulink url="mailto:ben.farmer@gmail.com">ben.farmer@gmail.com</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2015 Jan</para>
+</simplesect>
+<simplesect kind="author"><para>Pat Scott (<ulink url="mailto:p.scott@imperial.ac.uk">p.scott@imperial.ac.uk</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2015 Sep</para>
+</simplesect>
+<simplesect kind="author"><para>Peter Athron (<ulink url="mailto:peter.athron@coepp.org.au">peter.athron@coepp.org.au</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2015 Sep</para>
+</simplesect>
+<simplesect kind="author"><para>Tomas Gonzalo (<ulink url="mailto:tomas.gonzalo@kit.edu">tomas.gonzalo@kit.edu</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2022 Sept</para>
+</simplesect>
+<hruler/>
+ </para>
+</sect1>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models/MSSMatQ.hpp" line="227" column="9" bodyfile="Models/include/gambit/Models/models/MSSMatQ.hpp" bodystart="377" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="MSSMatQ_8hpp_1a43bda94ea92b5a0e18e404892f3c2668" prot="public" static="no">
+        <name>PARENT</name>
+        <initializer>MSSM19atQ</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models/MSSMatQ.hpp" line="228" column="9" bodyfile="Models/include/gambit/Models/models/MSSMatQ.hpp" bodystart="378" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="MSSMatQ_8hpp_1a7c60e913478d07a44ac15c6fb2c5937f" prot="public" static="no">
+        <name>MODEL</name>
+        <initializer>MSSM15atQ</initializer>
+        <briefdescription>
+<para>FlexibleSUSY compatible general (63 parameters plus sign, plus input scale) MSSM parameterisation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Specialisation of MSSM63atQ with all off-diagonal m and A terms set to zero.</para>
+<para>MSSM models with boundary conditions at generic scale Q</para>
+<para>Models included: MSSM63atQ MSSM30atQ MSSM25atQ MSSM24atQ MSSM20atQ MSSM19atQ MSSM16atQ MSSM15atQ MSSM11atQ MSSM10atQ MSSM10batQ MSSM10catQ MSSM9atQ MSSM9batQ MSSM7atQ</para>
+<para>Translation functions defined in MSSMatQ.cpp</para>
+<para><hruler/>
+</para>
+<sect1 id="MSSMatQ_8hpp_1autotoc_md52">
+<title>Authors</title>
+<para>(add name and date if you modify)</para>
+<para><simplesect kind="author"><para>Ben Farmer (<ulink url="mailto:ben.farmer@gmail.com">ben.farmer@gmail.com</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2015 Jan</para>
+</simplesect>
+<simplesect kind="author"><para>Pat Scott (<ulink url="mailto:p.scott@imperial.ac.uk">p.scott@imperial.ac.uk</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2015 Sep</para>
+</simplesect>
+<simplesect kind="author"><para>Peter Athron (<ulink url="mailto:peter.athron@coepp.org.au">peter.athron@coepp.org.au</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2015 Sep</para>
+</simplesect>
+<simplesect kind="author"><para>Tomas Gonzalo (<ulink url="mailto:tomas.gonzalo@kit.edu">tomas.gonzalo@kit.edu</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2022 Sept</para>
+</simplesect>
+<hruler/>
+ </para>
+</sect1>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models/MSSMatQ.hpp" line="248" column="9" bodyfile="Models/include/gambit/Models/models/MSSMatQ.hpp" bodystart="377" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="MSSMatQ_8hpp_1a43bda94ea92b5a0e18e404892f3c2668" prot="public" static="no">
+        <name>PARENT</name>
+        <initializer>MSSM16atQ</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models/MSSMatQ.hpp" line="249" column="9" bodyfile="Models/include/gambit/Models/models/MSSMatQ.hpp" bodystart="378" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="MSSMatQ_8hpp_1a7c60e913478d07a44ac15c6fb2c5937f" prot="public" static="no">
+        <name>MODEL</name>
+        <initializer>MSSM11atQ</initializer>
+        <briefdescription>
+<para>FlexibleSUSY compatible general (63 parameters plus sign, plus input scale) MSSM parameterisation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Specialisation of MSSM63atQ with all off-diagonal m and A terms set to zero.</para>
+<para>MSSM models with boundary conditions at generic scale Q</para>
+<para>Models included: MSSM63atQ MSSM30atQ MSSM25atQ MSSM24atQ MSSM20atQ MSSM19atQ MSSM16atQ MSSM15atQ MSSM11atQ MSSM10atQ MSSM10batQ MSSM10catQ MSSM9atQ MSSM9batQ MSSM7atQ</para>
+<para>Translation functions defined in MSSMatQ.cpp</para>
+<para><hruler/>
+</para>
+<sect1 id="MSSMatQ_8hpp_1autotoc_md52">
+<title>Authors</title>
+<para>(add name and date if you modify)</para>
+<para><simplesect kind="author"><para>Ben Farmer (<ulink url="mailto:ben.farmer@gmail.com">ben.farmer@gmail.com</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2015 Jan</para>
+</simplesect>
+<simplesect kind="author"><para>Pat Scott (<ulink url="mailto:p.scott@imperial.ac.uk">p.scott@imperial.ac.uk</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2015 Sep</para>
+</simplesect>
+<simplesect kind="author"><para>Peter Athron (<ulink url="mailto:peter.athron@coepp.org.au">peter.athron@coepp.org.au</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2015 Sep</para>
+</simplesect>
+<simplesect kind="author"><para>Tomas Gonzalo (<ulink url="mailto:tomas.gonzalo@kit.edu">tomas.gonzalo@kit.edu</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2022 Sept</para>
+</simplesect>
+<hruler/>
+ </para>
+</sect1>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models/MSSMatQ.hpp" line="264" column="9" bodyfile="Models/include/gambit/Models/models/MSSMatQ.hpp" bodystart="377" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="MSSMatQ_8hpp_1a43bda94ea92b5a0e18e404892f3c2668" prot="public" static="no">
+        <name>PARENT</name>
+        <initializer>MSSM16atQ</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models/MSSMatQ.hpp" line="265" column="9" bodyfile="Models/include/gambit/Models/models/MSSMatQ.hpp" bodystart="378" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="MSSMatQ_8hpp_1a7c60e913478d07a44ac15c6fb2c5937f" prot="public" static="no">
+        <name>MODEL</name>
+        <initializer>MSSM10atQ</initializer>
+        <briefdescription>
+<para>FlexibleSUSY compatible general (63 parameters plus sign, plus input scale) MSSM parameterisation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Specialisation of MSSM63atQ with all off-diagonal m and A terms set to zero.</para>
+<para>MSSM models with boundary conditions at generic scale Q</para>
+<para>Models included: MSSM63atQ MSSM30atQ MSSM25atQ MSSM24atQ MSSM20atQ MSSM19atQ MSSM16atQ MSSM15atQ MSSM11atQ MSSM10atQ MSSM10batQ MSSM10catQ MSSM9atQ MSSM9batQ MSSM7atQ</para>
+<para>Translation functions defined in MSSMatQ.cpp</para>
+<para><hruler/>
+</para>
+<sect1 id="MSSMatQ_8hpp_1autotoc_md52">
+<title>Authors</title>
+<para>(add name and date if you modify)</para>
+<para><simplesect kind="author"><para>Ben Farmer (<ulink url="mailto:ben.farmer@gmail.com">ben.farmer@gmail.com</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2015 Jan</para>
+</simplesect>
+<simplesect kind="author"><para>Pat Scott (<ulink url="mailto:p.scott@imperial.ac.uk">p.scott@imperial.ac.uk</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2015 Sep</para>
+</simplesect>
+<simplesect kind="author"><para>Peter Athron (<ulink url="mailto:peter.athron@coepp.org.au">peter.athron@coepp.org.au</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2015 Sep</para>
+</simplesect>
+<simplesect kind="author"><para>Tomas Gonzalo (<ulink url="mailto:tomas.gonzalo@kit.edu">tomas.gonzalo@kit.edu</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2022 Sept</para>
+</simplesect>
+<hruler/>
+ </para>
+</sect1>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models/MSSMatQ.hpp" line="285" column="9" bodyfile="Models/include/gambit/Models/models/MSSMatQ.hpp" bodystart="377" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="MSSMatQ_8hpp_1a43bda94ea92b5a0e18e404892f3c2668" prot="public" static="no">
+        <name>PARENT</name>
+        <initializer>MSSM11atQ</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models/MSSMatQ.hpp" line="286" column="9" bodyfile="Models/include/gambit/Models/models/MSSMatQ.hpp" bodystart="378" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="MSSMatQ_8hpp_1a7c60e913478d07a44ac15c6fb2c5937f" prot="public" static="no">
+        <name>MODEL</name>
+        <initializer>MSSM10batQ</initializer>
+        <briefdescription>
+<para>FlexibleSUSY compatible general (63 parameters plus sign, plus input scale) MSSM parameterisation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Specialisation of MSSM63atQ with all off-diagonal m and A terms set to zero.</para>
+<para>MSSM models with boundary conditions at generic scale Q</para>
+<para>Models included: MSSM63atQ MSSM30atQ MSSM25atQ MSSM24atQ MSSM20atQ MSSM19atQ MSSM16atQ MSSM15atQ MSSM11atQ MSSM10atQ MSSM10batQ MSSM10catQ MSSM9atQ MSSM9batQ MSSM7atQ</para>
+<para>Translation functions defined in MSSMatQ.cpp</para>
+<para><hruler/>
+</para>
+<sect1 id="MSSMatQ_8hpp_1autotoc_md52">
+<title>Authors</title>
+<para>(add name and date if you modify)</para>
+<para><simplesect kind="author"><para>Ben Farmer (<ulink url="mailto:ben.farmer@gmail.com">ben.farmer@gmail.com</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2015 Jan</para>
+</simplesect>
+<simplesect kind="author"><para>Pat Scott (<ulink url="mailto:p.scott@imperial.ac.uk">p.scott@imperial.ac.uk</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2015 Sep</para>
+</simplesect>
+<simplesect kind="author"><para>Peter Athron (<ulink url="mailto:peter.athron@coepp.org.au">peter.athron@coepp.org.au</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2015 Sep</para>
+</simplesect>
+<simplesect kind="author"><para>Tomas Gonzalo (<ulink url="mailto:tomas.gonzalo@kit.edu">tomas.gonzalo@kit.edu</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2022 Sept</para>
+</simplesect>
+<hruler/>
+ </para>
+</sect1>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models/MSSMatQ.hpp" line="303" column="9" bodyfile="Models/include/gambit/Models/models/MSSMatQ.hpp" bodystart="377" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="MSSMatQ_8hpp_1a43bda94ea92b5a0e18e404892f3c2668" prot="public" static="no">
+        <name>PARENT</name>
+        <initializer>MSSM11atQ</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models/MSSMatQ.hpp" line="304" column="9" bodyfile="Models/include/gambit/Models/models/MSSMatQ.hpp" bodystart="378" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="MSSMatQ_8hpp_1a7c60e913478d07a44ac15c6fb2c5937f" prot="public" static="no">
+        <name>MODEL</name>
+        <initializer>MSSM10catQ</initializer>
+        <briefdescription>
+<para>FlexibleSUSY compatible general (63 parameters plus sign, plus input scale) MSSM parameterisation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Specialisation of MSSM63atQ with all off-diagonal m and A terms set to zero.</para>
+<para>MSSM models with boundary conditions at generic scale Q</para>
+<para>Models included: MSSM63atQ MSSM30atQ MSSM25atQ MSSM24atQ MSSM20atQ MSSM19atQ MSSM16atQ MSSM15atQ MSSM11atQ MSSM10atQ MSSM10batQ MSSM10catQ MSSM9atQ MSSM9batQ MSSM7atQ</para>
+<para>Translation functions defined in MSSMatQ.cpp</para>
+<para><hruler/>
+</para>
+<sect1 id="MSSMatQ_8hpp_1autotoc_md52">
+<title>Authors</title>
+<para>(add name and date if you modify)</para>
+<para><simplesect kind="author"><para>Ben Farmer (<ulink url="mailto:ben.farmer@gmail.com">ben.farmer@gmail.com</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2015 Jan</para>
+</simplesect>
+<simplesect kind="author"><para>Pat Scott (<ulink url="mailto:p.scott@imperial.ac.uk">p.scott@imperial.ac.uk</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2015 Sep</para>
+</simplesect>
+<simplesect kind="author"><para>Peter Athron (<ulink url="mailto:peter.athron@coepp.org.au">peter.athron@coepp.org.au</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2015 Sep</para>
+</simplesect>
+<simplesect kind="author"><para>Tomas Gonzalo (<ulink url="mailto:tomas.gonzalo@kit.edu">tomas.gonzalo@kit.edu</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2022 Sept</para>
+</simplesect>
+<hruler/>
+ </para>
+</sect1>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models/MSSMatQ.hpp" line="322" column="9" bodyfile="Models/include/gambit/Models/models/MSSMatQ.hpp" bodystart="377" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="MSSMatQ_8hpp_1a43bda94ea92b5a0e18e404892f3c2668" prot="public" static="no">
+        <name>PARENT</name>
+        <initializer>MSSM15atQ</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models/MSSMatQ.hpp" line="323" column="9" bodyfile="Models/include/gambit/Models/models/MSSMatQ.hpp" bodystart="378" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="MSSMatQ_8hpp_1a7c60e913478d07a44ac15c6fb2c5937f" prot="public" static="no">
+        <name>MODEL</name>
+        <initializer>MSSM9atQ</initializer>
+        <briefdescription>
+<para>FlexibleSUSY compatible general (63 parameters plus sign, plus input scale) MSSM parameterisation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Specialisation of MSSM63atQ with all off-diagonal m and A terms set to zero.</para>
+<para>MSSM models with boundary conditions at generic scale Q</para>
+<para>Models included: MSSM63atQ MSSM30atQ MSSM25atQ MSSM24atQ MSSM20atQ MSSM19atQ MSSM16atQ MSSM15atQ MSSM11atQ MSSM10atQ MSSM10batQ MSSM10catQ MSSM9atQ MSSM9batQ MSSM7atQ</para>
+<para>Translation functions defined in MSSMatQ.cpp</para>
+<para><hruler/>
+</para>
+<sect1 id="MSSMatQ_8hpp_1autotoc_md52">
+<title>Authors</title>
+<para>(add name and date if you modify)</para>
+<para><simplesect kind="author"><para>Ben Farmer (<ulink url="mailto:ben.farmer@gmail.com">ben.farmer@gmail.com</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2015 Jan</para>
+</simplesect>
+<simplesect kind="author"><para>Pat Scott (<ulink url="mailto:p.scott@imperial.ac.uk">p.scott@imperial.ac.uk</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2015 Sep</para>
+</simplesect>
+<simplesect kind="author"><para>Peter Athron (<ulink url="mailto:peter.athron@coepp.org.au">peter.athron@coepp.org.au</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2015 Sep</para>
+</simplesect>
+<simplesect kind="author"><para>Tomas Gonzalo (<ulink url="mailto:tomas.gonzalo@kit.edu">tomas.gonzalo@kit.edu</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2022 Sept</para>
+</simplesect>
+<hruler/>
+ </para>
+</sect1>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models/MSSMatQ.hpp" line="338" column="9" bodyfile="Models/include/gambit/Models/models/MSSMatQ.hpp" bodystart="377" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="MSSMatQ_8hpp_1a43bda94ea92b5a0e18e404892f3c2668" prot="public" static="no">
+        <name>PARENT</name>
+        <initializer>MSSM10atQ</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models/MSSMatQ.hpp" line="339" column="9" bodyfile="Models/include/gambit/Models/models/MSSMatQ.hpp" bodystart="378" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="MSSMatQ_8hpp_1a7c60e913478d07a44ac15c6fb2c5937f" prot="public" static="no">
+        <name>MODEL</name>
+        <initializer>MSSM9batQ</initializer>
+        <briefdescription>
+<para>FlexibleSUSY compatible general (63 parameters plus sign, plus input scale) MSSM parameterisation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Specialisation of MSSM63atQ with all off-diagonal m and A terms set to zero.</para>
+<para>MSSM models with boundary conditions at generic scale Q</para>
+<para>Models included: MSSM63atQ MSSM30atQ MSSM25atQ MSSM24atQ MSSM20atQ MSSM19atQ MSSM16atQ MSSM15atQ MSSM11atQ MSSM10atQ MSSM10batQ MSSM10catQ MSSM9atQ MSSM9batQ MSSM7atQ</para>
+<para>Translation functions defined in MSSMatQ.cpp</para>
+<para><hruler/>
+</para>
+<sect1 id="MSSMatQ_8hpp_1autotoc_md52">
+<title>Authors</title>
+<para>(add name and date if you modify)</para>
+<para><simplesect kind="author"><para>Ben Farmer (<ulink url="mailto:ben.farmer@gmail.com">ben.farmer@gmail.com</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2015 Jan</para>
+</simplesect>
+<simplesect kind="author"><para>Pat Scott (<ulink url="mailto:p.scott@imperial.ac.uk">p.scott@imperial.ac.uk</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2015 Sep</para>
+</simplesect>
+<simplesect kind="author"><para>Peter Athron (<ulink url="mailto:peter.athron@coepp.org.au">peter.athron@coepp.org.au</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2015 Sep</para>
+</simplesect>
+<simplesect kind="author"><para>Tomas Gonzalo (<ulink url="mailto:tomas.gonzalo@kit.edu">tomas.gonzalo@kit.edu</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2022 Sept</para>
+</simplesect>
+<hruler/>
+ </para>
+</sect1>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models/MSSMatQ.hpp" line="355" column="9" bodyfile="Models/include/gambit/Models/models/MSSMatQ.hpp" bodystart="377" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="MSSMatQ_8hpp_1a43bda94ea92b5a0e18e404892f3c2668" prot="public" static="no">
+        <name>PARENT</name>
+        <initializer>MSSM15atQ</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models/MSSMatQ.hpp" line="356" column="9" bodyfile="Models/include/gambit/Models/models/MSSMatQ.hpp" bodystart="378" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="MSSMatQ_8hpp_1a7c60e913478d07a44ac15c6fb2c5937f" prot="public" static="no">
+        <name>MODEL</name>
+        <initializer>MSSM7atQ</initializer>
+        <briefdescription>
+<para>FlexibleSUSY compatible general (63 parameters plus sign, plus input scale) MSSM parameterisation. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Specialisation of MSSM63atQ with all off-diagonal m and A terms set to zero.</para>
+<para>MSSM models with boundary conditions at generic scale Q</para>
+<para>Models included: MSSM63atQ MSSM30atQ MSSM25atQ MSSM24atQ MSSM20atQ MSSM19atQ MSSM16atQ MSSM15atQ MSSM11atQ MSSM10atQ MSSM10batQ MSSM10catQ MSSM9atQ MSSM9batQ MSSM7atQ</para>
+<para>Translation functions defined in MSSMatQ.cpp</para>
+<para><hruler/>
+</para>
+<sect1 id="MSSMatQ_8hpp_1autotoc_md52">
+<title>Authors</title>
+<para>(add name and date if you modify)</para>
+<para><simplesect kind="author"><para>Ben Farmer (<ulink url="mailto:ben.farmer@gmail.com">ben.farmer@gmail.com</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2015 Jan</para>
+</simplesect>
+<simplesect kind="author"><para>Pat Scott (<ulink url="mailto:p.scott@imperial.ac.uk">p.scott@imperial.ac.uk</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2015 Sep</para>
+</simplesect>
+<simplesect kind="author"><para>Peter Athron (<ulink url="mailto:peter.athron@coepp.org.au">peter.athron@coepp.org.au</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2015 Sep</para>
+</simplesect>
+<simplesect kind="author"><para>Tomas Gonzalo (<ulink url="mailto:tomas.gonzalo@kit.edu">tomas.gonzalo@kit.edu</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2022 Sept</para>
+</simplesect>
+<hruler/>
+ </para>
+</sect1>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models/MSSMatQ.hpp" line="377" column="9" bodyfile="Models/include/gambit/Models/models/MSSMatQ.hpp" bodystart="377" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="MSSMatQ_8hpp_1a43bda94ea92b5a0e18e404892f3c2668" prot="public" static="no">
+        <name>PARENT</name>
+        <initializer>MSSM9atQ</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models/MSSMatQ.hpp" line="378" column="9" bodyfile="Models/include/gambit/Models/models/MSSMatQ.hpp" bodystart="378" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="MSSMatQ_8hpp_1a164f793d47ed99101687eaed6e46d31f" prot="public" static="no" mutable="no">
+        <type>START_MODEL</type>
+        <definition>START_MODEL ml2_12</definition>
+        <argsstring></argsstring>
+        <name>ml2_12</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models/MSSMatQ.hpp" line="64" column="4" bodyfile="Models/include/gambit/Models/models/MSSMatQ.hpp" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="MSSMatQ_8hpp_1aedf5fa5184d5cfdcecc8af1dab24edc5" prot="public" static="no" mutable="no">
+        <type>START_MODEL</type>
+        <definition>START_MODEL ml2_13</definition>
+        <argsstring></argsstring>
+        <name>ml2_13</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models/MSSMatQ.hpp" line="64" column="11" bodyfile="Models/include/gambit/Models/models/MSSMatQ.hpp" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="MSSMatQ_8hpp_1af153a9fbd5a23806b9f3998b1cd539da" prot="public" static="no" mutable="no">
+        <type>START_MODEL</type>
+        <definition>START_MODEL ml2_22</definition>
+        <argsstring></argsstring>
+        <name>ml2_22</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models/MSSMatQ.hpp" line="65" column="22" bodyfile="Models/include/gambit/Models/models/MSSMatQ.hpp" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="MSSMatQ_8hpp_1a3508f15b8400977ad52ef71ed2e2e8c9" prot="public" static="no" mutable="no">
+        <type>START_MODEL</type>
+        <definition>START_MODEL ml2_23</definition>
+        <argsstring></argsstring>
+        <name>ml2_23</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models/MSSMatQ.hpp" line="65" column="29" bodyfile="Models/include/gambit/Models/models/MSSMatQ.hpp" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="MSSMatQ_8hpp_1ad70129571e1b3d8f75af8fb20c481310" prot="public" static="no" mutable="no">
+        <type>START_MODEL ml2_33</type>
+        <definition>START_MODEL ml2_33 mu2_12</definition>
+        <argsstring></argsstring>
+        <name>mu2_12</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models/MSSMatQ.hpp" line="72" column="4" bodyfile="Models/include/gambit/Models/models/MSSMatQ.hpp" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="MSSMatQ_8hpp_1ab9cf7e9c78b4735ba78be7fcba3c9e58" prot="public" static="no" mutable="no">
+        <type>START_MODEL ml2_33</type>
+        <definition>START_MODEL ml2_33 mu2_13</definition>
+        <argsstring></argsstring>
+        <name>mu2_13</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models/MSSMatQ.hpp" line="72" column="11" bodyfile="Models/include/gambit/Models/models/MSSMatQ.hpp" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="MSSMatQ_8hpp_1a1e2208125e7ce1458adab56858aab1b1" prot="public" static="no" mutable="no">
+        <type>START_MODEL ml2_33</type>
+        <definition>START_MODEL ml2_33 mu2_22</definition>
+        <argsstring></argsstring>
+        <name>mu2_22</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models/MSSMatQ.hpp" line="73" column="22" bodyfile="Models/include/gambit/Models/models/MSSMatQ.hpp" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="MSSMatQ_8hpp_1a69793196d4f0acae0c49d36d67a6fce6" prot="public" static="no" mutable="no">
+        <type>START_MODEL ml2_33</type>
+        <definition>START_MODEL ml2_33 mu2_23</definition>
+        <argsstring></argsstring>
+        <name>mu2_23</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models/MSSMatQ.hpp" line="73" column="29" bodyfile="Models/include/gambit/Models/models/MSSMatQ.hpp" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="MSSMatQ_8hpp_1a3ce8732eb2bcfce44024b69dbf5eb4ae" prot="public" static="no" mutable="no">
+        <type>START_MODEL ml2_33 mu2_33</type>
+        <definition>START_MODEL ml2_33 mu2_33 Ae_12</definition>
+        <argsstring></argsstring>
+        <name>Ae_12</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models/MSSMatQ.hpp" line="80" column="4" bodyfile="Models/include/gambit/Models/models/MSSMatQ.hpp" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="MSSMatQ_8hpp_1a06fe2a7e43eb7d8b724c0db43bcefebc" prot="public" static="no" mutable="no">
+        <type>START_MODEL ml2_33 mu2_33</type>
+        <definition>START_MODEL ml2_33 mu2_33 Ae_13</definition>
+        <argsstring></argsstring>
+        <name>Ae_13</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models/MSSMatQ.hpp" line="80" column="10" bodyfile="Models/include/gambit/Models/models/MSSMatQ.hpp" bodystart="80" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="MSSMatQ_8hpp_1a7b2c4b91dd384f0fd51b868ed530de51" prot="public" static="no" mutable="no">
+        <type>START_MODEL ml2_33 mu2_33</type>
+        <definition>START_MODEL ml2_33 mu2_33 Ae_21</definition>
+        <argsstring></argsstring>
+        <name>Ae_21</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models/MSSMatQ.hpp" line="81" column="14" bodyfile="Models/include/gambit/Models/models/MSSMatQ.hpp" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="MSSMatQ_8hpp_1af80cb53a74309271926f502a04c112b4" prot="public" static="no" mutable="no">
+        <type>START_MODEL ml2_33 mu2_33</type>
+        <definition>START_MODEL ml2_33 mu2_33 Ae_22</definition>
+        <argsstring></argsstring>
+        <name>Ae_22</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models/MSSMatQ.hpp" line="81" column="20" bodyfile="Models/include/gambit/Models/models/MSSMatQ.hpp" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="MSSMatQ_8hpp_1a8dfeb034c8c224984163a654b3cb7208" prot="public" static="no" mutable="no">
+        <type>START_MODEL ml2_33 mu2_33</type>
+        <definition>START_MODEL ml2_33 mu2_33 Ae_23</definition>
+        <argsstring></argsstring>
+        <name>Ae_23</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models/MSSMatQ.hpp" line="81" column="26" bodyfile="Models/include/gambit/Models/models/MSSMatQ.hpp" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="MSSMatQ_8hpp_1ab9fd272c9fe09bb63de4f30360228c1d" prot="public" static="no" mutable="no">
+        <type>START_MODEL ml2_33 mu2_33</type>
+        <definition>START_MODEL ml2_33 mu2_33 Ae_31</definition>
+        <argsstring></argsstring>
+        <name>Ae_31</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models/MSSMatQ.hpp" line="82" column="14" bodyfile="Models/include/gambit/Models/models/MSSMatQ.hpp" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="MSSMatQ_8hpp_1aac809b6aa51a1e88ad6f6432290f1a27" prot="public" static="no" mutable="no">
+        <type>START_MODEL ml2_33 mu2_33</type>
+        <definition>START_MODEL ml2_33 mu2_33 Ae_32</definition>
+        <argsstring></argsstring>
+        <name>Ae_32</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models/MSSMatQ.hpp" line="82" column="20" bodyfile="Models/include/gambit/Models/models/MSSMatQ.hpp" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="MSSMatQ_8hpp_1af769051249a6bd4f03ffe96c64d4689a" prot="public" static="no" mutable="no">
+        <type>START_MODEL ml2_33 mu2_33 Ae_33</type>
+        <definition>START_MODEL ml2_33 mu2_33 Ae_33 Au_12</definition>
+        <argsstring></argsstring>
+        <name>Au_12</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models/MSSMatQ.hpp" line="88" column="4" bodyfile="Models/include/gambit/Models/models/MSSMatQ.hpp" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="MSSMatQ_8hpp_1a0c9a5059fd3a847c01e179cb9e7a1032" prot="public" static="no" mutable="no">
+        <type>START_MODEL ml2_33 mu2_33 Ae_33</type>
+        <definition>START_MODEL ml2_33 mu2_33 Ae_33 Au_13</definition>
+        <argsstring></argsstring>
+        <name>Au_13</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models/MSSMatQ.hpp" line="88" column="10" bodyfile="Models/include/gambit/Models/models/MSSMatQ.hpp" bodystart="88" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="MSSMatQ_8hpp_1ad9e66d2a58d370dace73ce7216881766" prot="public" static="no" mutable="no">
+        <type>START_MODEL ml2_33 mu2_33 Ae_33</type>
+        <definition>START_MODEL ml2_33 mu2_33 Ae_33 Au_21</definition>
+        <argsstring></argsstring>
+        <name>Au_21</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models/MSSMatQ.hpp" line="89" column="14" bodyfile="Models/include/gambit/Models/models/MSSMatQ.hpp" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="MSSMatQ_8hpp_1a662b72bbc71aca4daa71d1b05fff0e6c" prot="public" static="no" mutable="no">
+        <type>START_MODEL ml2_33 mu2_33 Ae_33</type>
+        <definition>START_MODEL ml2_33 mu2_33 Ae_33 Au_22</definition>
+        <argsstring></argsstring>
+        <name>Au_22</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models/MSSMatQ.hpp" line="89" column="20" bodyfile="Models/include/gambit/Models/models/MSSMatQ.hpp" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="MSSMatQ_8hpp_1a19da5c981f594ae1faa53b5bad83a617" prot="public" static="no" mutable="no">
+        <type>START_MODEL ml2_33 mu2_33 Ae_33</type>
+        <definition>START_MODEL ml2_33 mu2_33 Ae_33 Au_23</definition>
+        <argsstring></argsstring>
+        <name>Au_23</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models/MSSMatQ.hpp" line="89" column="26" bodyfile="Models/include/gambit/Models/models/MSSMatQ.hpp" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="MSSMatQ_8hpp_1a4f53a384a30554e070456aca71e0e53f" prot="public" static="no" mutable="no">
+        <type>START_MODEL ml2_33 mu2_33 Ae_33</type>
+        <definition>START_MODEL ml2_33 mu2_33 Ae_33 Au_31</definition>
+        <argsstring></argsstring>
+        <name>Au_31</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models/MSSMatQ.hpp" line="90" column="14" bodyfile="Models/include/gambit/Models/models/MSSMatQ.hpp" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="MSSMatQ_8hpp_1a86852ea822df42745b50837180dfef51" prot="public" static="no" mutable="no">
+        <type>START_MODEL ml2_33 mu2_33 Ae_33</type>
+        <definition>START_MODEL ml2_33 mu2_33 Ae_33 Au_32</definition>
+        <argsstring></argsstring>
+        <name>Au_32</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models/MSSMatQ.hpp" line="90" column="20" bodyfile="Models/include/gambit/Models/models/MSSMatQ.hpp" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="MSSMatQ_8hpp_1a89be1972e2e38f8130b22df8e4b82f54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>START_MODEL</type>
+        <definition>START_MODEL DEFINEPARS</definition>
+        <argsstring>(mq2_11, mq2_12, mq2_13, mq2_22, mq2_23, mq2_33) DEFINEPARS(ml2_11</argsstring>
+        <name>DEFINEPARS</name>
+        <param>
+          <type>mq2_11</type>
+        </param>
+        <param>
+          <type>mq2_12</type>
+        </param>
+        <param>
+          <type>mq2_13</type>
+        </param>
+        <param>
+          <type>mq2_22</type>
+        </param>
+        <param>
+          <type>mq2_23</type>
+        </param>
+        <param>
+          <type>mq2_33</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Mass matrices are symmetric (Hermitian, and we are restricted to real entries at the moment) so only one &apos;triangle&apos; needed. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models/MSSMatQ.hpp" line="60" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="MSSMatQ_8hpp_1ae1cde872a96e8100753aefe317a0774a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>START_MODEL ml2_33</type>
+        <definition>START_MODEL ml2_33 DEFINEPARS</definition>
+        <argsstring>(md2_11, md2_12, md2_13, md2_22, md2_23, md2_33) DEFINEPARS(mu2_11</argsstring>
+        <name>DEFINEPARS</name>
+        <param>
+          <type>md2_11</type>
+        </param>
+        <param>
+          <type>md2_12</type>
+        </param>
+        <param>
+          <type>md2_13</type>
+        </param>
+        <param>
+          <type>md2_22</type>
+        </param>
+        <param>
+          <type>md2_23</type>
+        </param>
+        <param>
+          <type>md2_33</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models/MSSMatQ.hpp" line="68" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="MSSMatQ_8hpp_1a6fd2b127e64d093ad860614bd8895d44" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>START_MODEL ml2_33 mu2_33</type>
+        <definition>START_MODEL ml2_33 mu2_33 DEFINEPARS</definition>
+        <argsstring>(me2_11, me2_12, me2_13, me2_22, me2_23, me2_33) DEFINEPARS(Ae_11</argsstring>
+        <name>DEFINEPARS</name>
+        <param>
+          <type>me2_11</type>
+        </param>
+        <param>
+          <type>me2_12</type>
+        </param>
+        <param>
+          <type>me2_13</type>
+        </param>
+        <param>
+          <type>me2_22</type>
+        </param>
+        <param>
+          <type>me2_23</type>
+        </param>
+        <param>
+          <type>me2_33</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models/MSSMatQ.hpp" line="76" column="3"/>
+      </memberdef>
+      <memberdef kind="function" id="MSSMatQ_8hpp_1a776e7e716d046360e616e7a5f284a366" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>START_MODEL ml2_33 mu2_33 Ae_33</type>
+        <definition>START_MODEL ml2_33 mu2_33 Ae_33 DEFINEPARS</definition>
+        <argsstring>(Ad_11, Ad_12, Ad_13, Ad_21, Ad_22, Ad_23, Ad_31, Ad_32, Ad_33) DEFINEPARS(Au_11</argsstring>
+        <name>DEFINEPARS</name>
+        <param>
+          <type>Ad_11</type>
+        </param>
+        <param>
+          <type>Ad_12</type>
+        </param>
+        <param>
+          <type>Ad_13</type>
+        </param>
+        <param>
+          <type>Ad_21</type>
+        </param>
+        <param>
+          <type>Ad_22</type>
+        </param>
+        <param>
+          <type>Ad_23</type>
+        </param>
+        <param>
+          <type>Ad_31</type>
+        </param>
+        <param>
+          <type>Ad_32</type>
+        </param>
+        <param>
+          <type>Ad_33</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Models/include/gambit/Models/models/MSSMatQ.hpp" line="84" column="3"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/><sp/><sp/>GAMBIT:<sp/>Global<sp/>and<sp/>Modular<sp/>BSM<sp/>Inference<sp/>Tool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>*********************************************</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">///<sp/><sp/>MSSM<sp/>models<sp/>with<sp/>boundary<sp/>conditions<sp/>at<sp/>generic<sp/>scale<sp/>Q</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">///<sp/><sp/>Models<sp/>included:</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">///<sp/><sp/><sp/><sp/>MSSM63atQ</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">///<sp/><sp/><sp/><sp/>MSSM30atQ</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">///<sp/><sp/><sp/><sp/>MSSM25atQ</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">///<sp/><sp/><sp/><sp/>MSSM24atQ</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">///<sp/><sp/><sp/><sp/>MSSM20atQ</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">///<sp/><sp/><sp/><sp/>MSSM19atQ</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">///<sp/><sp/><sp/><sp/>MSSM16atQ</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">///<sp/><sp/><sp/><sp/>MSSM15atQ</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">///<sp/><sp/><sp/><sp/>MSSM11atQ</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">///<sp/><sp/><sp/><sp/>MSSM10atQ</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">///<sp/><sp/><sp/><sp/>MSSM10batQ</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">///<sp/><sp/><sp/><sp/>MSSM10catQ</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">///<sp/><sp/><sp/><sp/>MSSM9atQ</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">///<sp/><sp/><sp/><sp/>MSSM9batQ</highlight></codeline>
+<codeline lineno="21"><highlight class="comment">///<sp/><sp/><sp/><sp/>MSSM7atQ</highlight></codeline>
+<codeline lineno="22"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="23"><highlight class="comment">///<sp/><sp/>Translation<sp/>functions<sp/>defined<sp/>in<sp/>MSSMatQ.cpp</highlight></codeline>
+<codeline lineno="24"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="25"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
+<codeline lineno="26"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="27"><highlight class="comment">///<sp/><sp/>Authors</highlight></codeline>
+<codeline lineno="28"><highlight class="comment">///<sp/><sp/>=======</highlight></codeline>
+<codeline lineno="29"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="30"><highlight class="comment">///<sp/><sp/>(add<sp/>name<sp/>and<sp/>date<sp/>if<sp/>you<sp/>modify)</highlight></codeline>
+<codeline lineno="31"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="32"><highlight class="comment">///<sp/><sp/>\author<sp/>Ben<sp/>Farmer</highlight></codeline>
+<codeline lineno="33"><highlight class="comment">///<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(ben.farmer@gmail.com)</highlight></codeline>
+<codeline lineno="34"><highlight class="comment">///<sp/><sp/>\date<sp/>2015<sp/>Jan</highlight></codeline>
+<codeline lineno="35"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="36"><highlight class="comment">///<sp/><sp/>\author<sp/>Pat<sp/>Scott</highlight></codeline>
+<codeline lineno="37"><highlight class="comment">///<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(p.scott@imperial.ac.uk)</highlight></codeline>
+<codeline lineno="38"><highlight class="comment">///<sp/><sp/>\date<sp/>2015<sp/>Sep</highlight></codeline>
+<codeline lineno="39"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="40"><highlight class="comment">///<sp/><sp/>\author<sp/>Peter<sp/>Athron</highlight></codeline>
+<codeline lineno="41"><highlight class="comment">///<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(peter.athron@coepp.org.au)</highlight></codeline>
+<codeline lineno="42"><highlight class="comment">///<sp/><sp/>\date<sp/>2015<sp/>Sep</highlight></codeline>
+<codeline lineno="43"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="44"><highlight class="comment">///<sp/><sp/>\author<sp/>Tomas<sp/>Gonzalo</highlight></codeline>
+<codeline lineno="45"><highlight class="comment">///<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(tomas.gonzalo@kit.edu)</highlight></codeline>
+<codeline lineno="46"><highlight class="comment">///<sp/><sp/>\date<sp/>2022<sp/>Sept</highlight></codeline>
+<codeline lineno="47"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="48"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
+<codeline lineno="49"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__MSSMatQ_hpp__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__MSSMatQ_hpp__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="53"><highlight class="comment">///<sp/>FlexibleSUSY<sp/>compatible<sp/>general<sp/>(63<sp/>parameters<sp/>plus<sp/>sign,<sp/>plus<sp/>input<sp/>scale)<sp/>MSSM<sp/>parameterisation</highlight></codeline>
+<codeline lineno="54"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>MODEL<sp/>MSSM63atQ</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/>START_MODEL</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/>DEFINEPARS(Qin,TanBeta,SignMu,mHu2,mHd2,M1,M2,M3)</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">///<sp/>Mass<sp/>matrices<sp/>are<sp/>symmetric<sp/>(Hermitian,<sp/>and<sp/>we<sp/>are<sp/>restricted<sp/>to<sp/>real<sp/>entries<sp/>at<sp/>the<sp/>moment)</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="59"><highlight class="comment"><sp/><sp/>///<sp/>so<sp/>only<sp/>one<sp/>&apos;triangle&apos;<sp/>needed.</highlight></codeline>
+<codeline lineno="60"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>DEFINEPARS(mq2_11,<sp/>mq2_12,<sp/>mq2_13,</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mq2_22,<sp/>mq2_23,</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mq2_33)</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/>DEFINEPARS(ml2_11,<sp/>ml2_12,<sp/>ml2_13,</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ml2_22,<sp/>ml2_23,</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ml2_33)</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/>DEFINEPARS(md2_11,<sp/>md2_12,<sp/>md2_13,</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>md2_22,<sp/>md2_23,</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>md2_33)</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/>DEFINEPARS(mu2_11,<sp/>mu2_12,<sp/>mu2_13,</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mu2_22,<sp/>mu2_23,</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mu2_33)</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/>DEFINEPARS(me2_11,<sp/>me2_12,<sp/>me2_13,</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>me2_22,<sp/>me2_23,</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>me2_33)</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/>DEFINEPARS(Ae_11,<sp/>Ae_12,<sp/>Ae_13,</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Ae_21,<sp/>Ae_22,<sp/>Ae_23,</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Ae_31,<sp/>Ae_32,<sp/>Ae_33)</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/>DEFINEPARS(Ad_11,<sp/>Ad_12,<sp/>Ad_13,</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Ad_21,<sp/>Ad_22,<sp/>Ad_23,</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Ad_31,<sp/>Ad_32,<sp/>Ad_33)</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/>DEFINEPARS(Au_11,<sp/>Au_12,<sp/>Au_13,</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Au_21,<sp/>Au_22,<sp/>Au_23,</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Au_31,<sp/>Au_32,<sp/>Au_33)</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>MODEL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="94"><highlight class="comment">///<sp/><sp/>Specialisation<sp/>of<sp/>MSSM63atQ<sp/>with<sp/>all<sp/>off-diagonal<sp/>m<sp/>and<sp/>A<sp/>terms<sp/>set<sp/>to<sp/>zero.</highlight></codeline>
+<codeline lineno="95"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>MODEL<sp/>MSSM30atQ</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PARENT<sp/>MSSM63atQ</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/>START_MODEL</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/>DEFINEPARS(Qin,TanBeta,SignMu,mHu2,mHd2,M1,M2,M3)</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/>DEFINEPARS(mq2_1,<sp/>mq2_2,<sp/>mq2_3)</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/>DEFINEPARS(ml2_1,<sp/>ml2_2,<sp/>ml2_3)</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/>DEFINEPARS(md2_1,<sp/>md2_2,<sp/>md2_3)</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/>DEFINEPARS(mu2_1,<sp/>mu2_2,<sp/>mu2_3)</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/>DEFINEPARS(me2_1,<sp/>me2_2,<sp/>me2_3)</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/>DEFINEPARS(Ae_1,<sp/>Ae_2,<sp/>Ae_3)</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"></highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/>DEFINEPARS(Ad_1,<sp/>Ad_2,<sp/>Ad_3)</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/>DEFINEPARS(Au_1,<sp/>Au_2,<sp/>Au_3)</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/>INTERPRET_AS_PARENT_FUNCTION(MSSM30atQ_to_MSSM63atQ)</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>PARENT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>MODEL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MODEL<sp/>MSSM25atQ</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PARENT<sp/>MSSM30atQ</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/>START_MODEL</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/>DEFINEPARS(Qin,TanBeta,SignMu,mHu2,mHd2,M1,M2,M3)</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/>DEFINEPARS(mq2_1,<sp/>mq2_2,<sp/>mq2_3)</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/>DEFINEPARS(ml2_1,<sp/>ml2_2,<sp/>ml2_3)</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/>DEFINEPARS(md2_1,<sp/>md2_2,<sp/>md2_3)</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/>DEFINEPARS(mu2_1,<sp/>mu2_2,<sp/>mu2_3)</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/>DEFINEPARS(me2_1,<sp/>me2_2,<sp/>me2_3)</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/>DEFINEPARS(Ae_12,<sp/>Ae_3)</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/>DEFINEPARS(Ad_3)</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/>DEFINEPARS(Au_3)</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/>INTERPRET_AS_PARENT_FUNCTION(MSSM25atQ_to_MSSM30atQ)</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>PARENT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>MODEL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MODEL<sp/>MSSM24atQ</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PARENT<sp/>MSSM25atQ</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/>START_MODEL</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/>DEFINEPARS(Qin,TanBeta,SignMu,mHu2,mHd2,M1,M2,M3)</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/>DEFINEPARS(mq2_1,<sp/>mq2_2,<sp/>mq2_3)</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/>DEFINEPARS(ml2_1,<sp/>ml2_2,<sp/>ml2_3)</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/>DEFINEPARS(md2_1,<sp/>md2_2,<sp/>md2_3)</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/>DEFINEPARS(mu2_1,<sp/>mu2_2,<sp/>mu2_3)</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/>DEFINEPARS(me2_1,<sp/>me2_2,<sp/>me2_3)</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/>DEFINEPARS(Ae_3)</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/>DEFINEPARS(Ad_3)</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/>DEFINEPARS(Au_3)</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/>INTERPRET_AS_PARENT_FUNCTION(MSSM24atQ_to_MSSM25atQ)</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>PARENT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>MODEL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MODEL<sp/>MSSM20atQ</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PARENT<sp/>MSSM25atQ</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/>START_MODEL</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/>DEFINEPARS(Qin,TanBeta,SignMu,mHu2,mHd2,M1,M2,M3)</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/>DEFINEPARS(mq2_12,<sp/>mq2_3)</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/>DEFINEPARS(ml2_12,<sp/>ml2_3)</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/>DEFINEPARS(md2_12,<sp/>md2_3)</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/>DEFINEPARS(mu2_12,<sp/>mu2_3)</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/>DEFINEPARS(me2_12,<sp/>me2_3)</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/>DEFINEPARS(Ae_12,<sp/>Ae_3)</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/>DEFINEPARS(Ad_3)</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/>DEFINEPARS(Au_3)</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/>INTERPRET_AS_PARENT_FUNCTION(MSSM20atQ_to_MSSM25atQ)</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>PARENT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>MODEL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"></highlight><highlight class="comment">//<sp/>pMSSM</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MODEL<sp/>MSSM19atQ</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PARENT<sp/>MSSM24atQ</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/>START_MODEL</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/>DEFINEPARS(Qin,TanBeta,SignMu,mHu2,mHd2,M1,M2,M3)</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/>DEFINEPARS(mq2_12,<sp/>mq2_3)</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/>DEFINEPARS(ml2_12,<sp/>ml2_3)</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/>DEFINEPARS(md2_12,<sp/>md2_3)</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/>DEFINEPARS(mu2_12,<sp/>mu2_3)</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/>DEFINEPARS(me2_12,<sp/>me2_3)</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/>DEFINEPARS(Ae_3)</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/>DEFINEPARS(Ad_3)</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/>DEFINEPARS(Au_3)</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/>INTERPRET_AS_PARENT_FUNCTION(MSSM19atQ_to_MSSM24atQ)</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/>INTERPRET_AS_X_FUNCTION(MSSM20atQ,<sp/>MSSM19atQ_to_MSSM20atQ)</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>PARENT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>MODEL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MODEL<sp/>MSSM16atQ</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PARENT<sp/>MSSM19atQ</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/>START_MODEL</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/>DEFINEPARS(Qin,TanBeta,SignMu,mHu2,mHd2,M1,M2,M3)</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/>DEFINEPARS(mq2_12,<sp/>mq2_3,<sp/>mu2_3,<sp/>md2_3)</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/>DEFINEPARS(ml2_12,<sp/>ml2_3,<sp/>me2_3)</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/>DEFINEPARS(Ae_3)</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/>DEFINEPARS(Ad_3)</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/>DEFINEPARS(Au_3)</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/>INTERPRET_AS_PARENT_FUNCTION(MSSM16atQ_to_MSSM19atQ)</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>PARENT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>MODEL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>model<sp/>matches<sp/>the<sp/>one<sp/>explored<sp/>in<sp/>arXiv:1405.0622.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MODEL<sp/>MSSM15atQ</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PARENT<sp/>MSSM16atQ</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/>START_MODEL</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/>DEFINEPARS(Qin,TanBeta,SignMu,mHu2,mHd2,M1,M2,M3)</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/>DEFINEPARS(mq2_12,<sp/>mq2_3,<sp/>mu2_3,<sp/>md2_3)</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"></highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/>DEFINEPARS(ml2_12,<sp/>ml2_3,<sp/>me2_3)</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/>DEFINEPARS(A0,<sp/>Au_3)</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"></highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/>INTERPRET_AS_PARENT_FUNCTION(MSSM15atQ_to_MSSM16atQ)</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>PARENT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>MODEL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MODEL<sp/>MSSM11atQ</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PARENT<sp/>MSSM16atQ</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/>START_MODEL</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/>DEFINEPARS(Qin,TanBeta,SignMu,mHu2,mHd2,M1,M2,M3)</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/>DEFINEPARS(mq2)</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"></highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/>DEFINEPARS(ml2)</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"></highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/>DEFINEPARS(Ae_3)</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/>DEFINEPARS(Ad_3)</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/>DEFINEPARS(Au_3)</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"></highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/>INTERPRET_AS_PARENT_FUNCTION(MSSM11atQ_to_MSSM16atQ)</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>PARENT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>MODEL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"></highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MODEL<sp/>MSSM10atQ</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PARENT<sp/>MSSM11atQ</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/>START_MODEL</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/>DEFINEPARS(Qin,TanBeta,SignMu,mHu2,mHd2,M1,M2,M3)</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/>DEFINEPARS(mq2)</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"></highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/>DEFINEPARS(ml2)</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"></highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/>DEFINEPARS(Ad_3)</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"></highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/>DEFINEPARS(Au_3)</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/>INTERPRET_AS_PARENT_FUNCTION(MSSM10atQ_to_MSSM11atQ)</highlight></codeline>
+<codeline lineno="300"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>PARENT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="301"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>MODEL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="302"><highlight class="normal"></highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MODEL<sp/>MSSM10batQ</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="304"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PARENT<sp/>MSSM11atQ</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/>START_MODEL</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"></highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/>DEFINEPARS(Qin,TanBeta,SignMu,mHu2,mHd2,M1,M2,M3)</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"></highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/>DEFINEPARS(mf2)</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"></highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/>DEFINEPARS(Ae_3)</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"></highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/>DEFINEPARS(Ad_3)</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"></highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/>DEFINEPARS(Au_3)</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"></highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/>INTERPRET_AS_PARENT_FUNCTION(MSSM10batQ_to_MSSM11atQ)</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>PARENT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="319"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>MODEL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="320"><highlight class="normal"></highlight></codeline>
+<codeline lineno="321"><highlight class="normal"></highlight><highlight class="comment">//<sp/>This<sp/>model<sp/>matches<sp/>the<sp/>one<sp/>explored<sp/>in<sp/>arXiv:1504.03260<sp/>and<sp/>referred<sp/>to<sp/>as<sp/>&apos;pMSSM10&apos;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="322"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MODEL<sp/>MSSM10catQ</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="323"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PARENT<sp/>MSSM15atQ</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/>START_MODEL</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"></highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/>DEFINEPARS(Qin,TanBeta,SignMu,mHu2,mHd2,M1,M2,M3)</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"></highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/>DEFINEPARS(mq2_12,<sp/>mq2_3)</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"></highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/>DEFINEPARS(ml2)</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"></highlight></codeline>
+<codeline lineno="332"><highlight class="normal"><sp/><sp/>DEFINEPARS(A0)</highlight></codeline>
+<codeline lineno="333"><highlight class="normal"></highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/>INTERPRET_AS_PARENT_FUNCTION(MSSM10catQ_to_MSSM15atQ)</highlight></codeline>
+<codeline lineno="335"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>PARENT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="336"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>MODEL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="337"><highlight class="normal"></highlight></codeline>
+<codeline lineno="338"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MODEL<sp/>MSSM9atQ</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="339"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PARENT<sp/>MSSM10atQ</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/>START_MODEL</highlight></codeline>
+<codeline lineno="341"><highlight class="normal"></highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/>DEFINEPARS(Qin,TanBeta,SignMu,mHu2,mHd2,M1,M2,M3)</highlight></codeline>
+<codeline lineno="343"><highlight class="normal"></highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/>DEFINEPARS(mf2)</highlight></codeline>
+<codeline lineno="345"><highlight class="normal"></highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/>DEFINEPARS(Ad_3)</highlight></codeline>
+<codeline lineno="347"><highlight class="normal"></highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><sp/><sp/>DEFINEPARS(Au_3)</highlight></codeline>
+<codeline lineno="349"><highlight class="normal"></highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/>INTERPRET_AS_PARENT_FUNCTION(MSSM9atQ_to_MSSM10atQ)</highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/>INTERPRET_AS_X_FUNCTION(MSSM10batQ,<sp/>MSSM9atQ_to_MSSM10batQ)</highlight></codeline>
+<codeline lineno="352"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>PARENT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="353"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>MODEL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="354"><highlight class="normal"></highlight></codeline>
+<codeline lineno="355"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MODEL<sp/>MSSM9batQ</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="356"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PARENT<sp/>MSSM15atQ</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="357"><highlight class="normal"><sp/><sp/>START_MODEL</highlight></codeline>
+<codeline lineno="358"><highlight class="normal"></highlight></codeline>
+<codeline lineno="359"><highlight class="normal"><sp/><sp/>DEFINEPARS(Qin,TanBeta,SignMu,mHu2,mHd2,M1,M2,M3)</highlight></codeline>
+<codeline lineno="360"><highlight class="normal"></highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/>DEFINEPARS(mq2_3)</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"></highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><sp/><sp/>DEFINEPARS(msf2)</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"></highlight></codeline>
+<codeline lineno="365"><highlight class="normal"><sp/><sp/>DEFINEPARS(Au_3)</highlight></codeline>
+<codeline lineno="366"><highlight class="normal"></highlight></codeline>
+<codeline lineno="367"><highlight class="normal"><sp/><sp/>INTERPRET_AS_PARENT_FUNCTION(MSSM9batQ_to_MSSM15atQ)</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>PARENT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="369"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>MODEL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="370"><highlight class="normal"></highlight></codeline>
+<codeline lineno="371"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Forward<sp/>declaration<sp/>of<sp/>needed<sp/>types</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="372"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceGambit" kindref="compound">Gambit</ref></highlight></codeline>
+<codeline lineno="373"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="374"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">SMInputs;</highlight></codeline>
+<codeline lineno="375"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="376"><highlight class="normal"></highlight></codeline>
+<codeline lineno="377"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>MODEL<sp/>MSSM7atQ</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="378"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>PARENT<sp/>MSSM9atQ</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="379"><highlight class="normal"><sp/><sp/>START_MODEL</highlight></codeline>
+<codeline lineno="380"><highlight class="normal"></highlight></codeline>
+<codeline lineno="381"><highlight class="normal"><sp/><sp/>DEFINEPARS(Qin,TanBeta,SignMu,mHu2,mHd2,M2)</highlight></codeline>
+<codeline lineno="382"><highlight class="normal"></highlight></codeline>
+<codeline lineno="383"><highlight class="normal"><sp/><sp/>DEFINEPARS(mf2)</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"></highlight></codeline>
+<codeline lineno="385"><highlight class="normal"><sp/><sp/>DEFINEPARS(Ad_3)</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"></highlight></codeline>
+<codeline lineno="387"><highlight class="normal"><sp/><sp/>DEFINEPARS(Au_3)</highlight></codeline>
+<codeline lineno="388"><highlight class="normal"></highlight></codeline>
+<codeline lineno="389"><highlight class="normal"><sp/><sp/>INTERPRET_AS_PARENT_FUNCTION(MSSM7atQ_to_MSSM9atQ)</highlight></codeline>
+<codeline lineno="390"><highlight class="normal"><sp/><sp/><ref refid="model__macros_8hpp_1a853aa57afa9c39a82868c649cfa08974" kindref="member">INTERPRET_AS_PARENT_DEPENDENCY</ref>(SMINPUTS,<sp/>SMInputs)</highlight></codeline>
+<codeline lineno="391"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>PARENT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="392"><highlight class="normal"></highlight><highlight class="preprocessor">#undef<sp/>MODEL</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="393"><highlight class="normal"></highlight></codeline>
+<codeline lineno="394"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="Models/include/gambit/Models/models/MSSMatQ.hpp"/>
+  </compounddef>
+</doxygen>

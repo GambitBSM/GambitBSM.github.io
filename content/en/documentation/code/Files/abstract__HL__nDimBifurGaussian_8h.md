@@ -1,11 +1,11 @@
 ---
-title: "file HepLike_1_2/abstract_HL_nDimBifurGaussian.h"
+title: "file HepLike_2_0/abstract_HL_nDimBifurGaussian.h"
 
 description: "[No description available]"
 
 ---
 
-# file HepLike_1_2/abstract_HL_nDimBifurGaussian.h
+# file HepLike_2_0/abstract_HL_nDimBifurGaussian.h
 
 [No description available]
 
@@ -34,8 +34,8 @@ namespace CAT_3(
 ## Source code
 
 ```
-#ifndef __abstract_HL_nDimBifurGaussian_HepLike_1_2_h__
-#define __abstract_HL_nDimBifurGaussian_HepLike_1_2_h__
+#ifndef __abstract_HL_nDimBifurGaussian_HepLike_2_0_h__
+#define __abstract_HL_nDimBifurGaussian_HepLike_2_0_h__
 
 #include <cstddef>
 #include <iostream>
@@ -44,7 +44,6 @@ namespace CAT_3(
 #include "gambit/Backends/abstractbase.hpp"
 #include "forward_decls_abstract_classes.h"
 #include "forward_decls_wrapper_classes.h"
-#include "wrapper_HL_Data_decl.h"
 #include <boost/numeric/ublas/matrix.hpp>
 
 #include "identification.hpp"
@@ -53,30 +52,29 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 {
    
    
-   class Abstract_HL_nDimBifurGaussian : virtual public Abstract_HL_Data
+   class Abstract_HL_nDimBifurGaussian : public virtual AbstractBase
    {
       public:
    
          virtual void Read() =0;
    
-         virtual double GetChi2(::std::vector<double>) =0;
+         virtual double GetChi2(std::vector<double>) =0;
    
-         virtual double GetLikelihood(::std::vector<double>) =0;
+         virtual double GetLikelihood(std::vector<double>) =0;
    
-         virtual double GetLogLikelihood(::std::vector<double>) =0;
+         virtual double GetLogLikelihood(std::vector<double>) =0;
    
-         virtual double GetChi2(::std::vector<double>, ::boost::numeric::ublas::matrix<double>) =0;
+         virtual double GetChi2(std::vector<double>, boost::numeric::ublas::matrix<double>) =0;
    
-         virtual double GetLikelihood(::std::vector<double>, ::boost::numeric::ublas::matrix<double>) =0;
+         virtual double GetLikelihood(std::vector<double>, boost::numeric::ublas::matrix<double>) =0;
    
-         virtual double GetLogLikelihood(::std::vector<double>, ::boost::numeric::ublas::matrix<double>) =0;
+         virtual double GetLogLikelihood(std::vector<double>, boost::numeric::ublas::matrix<double>) =0;
    
-         virtual bool Restrict(::std::vector<std::basic_string<char>>) =0;
+         virtual bool Restrict(std::vector<std::string>) =0;
    
-         virtual ::std::vector<std::basic_string<char>> GetObservables() =0;
+         virtual ::std::vector<std::string> GetObservables() =0;
    
       public:
-         using Abstract_HL_Data::pointer_assign__BOSS;
          virtual void pointer_assign__BOSS(Abstract_HL_nDimBifurGaussian*) =0;
          virtual Abstract_HL_nDimBifurGaussian* pointer_copy__BOSS() =0;
    
@@ -96,8 +94,7 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             delete_wrapper = false;
          }
    
-         Abstract_HL_nDimBifurGaussian(const Abstract_HL_nDimBifurGaussian& in) : 
-            Abstract_HL_Data(in)
+         Abstract_HL_nDimBifurGaussian(const Abstract_HL_nDimBifurGaussian&)
          {
             wptr = 0;
             delete_wrapper = false;
@@ -128,10 +125,10 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 #include "gambit/Backends/backend_undefs.hpp"
 
 
-#endif /* __abstract_HL_nDimBifurGaussian_HepLike_1_2_h__ */
+#endif /* __abstract_HL_nDimBifurGaussian_HepLike_2_0_h__ */
 ```
 
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:49 +0000
+Updated on 2023-06-26 at 21:36:57 +0000

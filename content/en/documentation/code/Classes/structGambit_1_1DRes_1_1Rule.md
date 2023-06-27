@@ -25,8 +25,13 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
+| std::string | **[capability](/documentation/code/classes/structgambit_1_1dres_1_1rule/#variable-capability)**  |
+| std::string | **[type](/documentation/code/classes/structgambit_1_1dres_1_1rule/#variable-type)**  |
 | std::string | **[function](/documentation/code/classes/structgambit_1_1dres_1_1rule/#variable-function)**  |
 | std::string | **[module](/documentation/code/classes/structgambit_1_1dres_1_1rule/#variable-module)**  |
+| std::string | **[backend](/documentation/code/classes/structgambit_1_1dres_1_1rule/#variable-backend)**  |
+| std::string | **[version](/documentation/code/classes/structgambit_1_1dres_1_1rule/#variable-version)**  |
+| [Options](/documentation/code/classes/classgambit_1_1options/) | **[options](/documentation/code/classes/structgambit_1_1dres_1_1rule/#variable-options)**  |
 
 ## Detailed Description
 
@@ -60,6 +65,20 @@ inline Rule(
 
 ## Public Attributes Documentation
 
+### variable capability
+
+```
+std::string capability;
+```
+
+
+### variable type
+
+```
+std::string type;
+```
+
+
 ### variable function
 
 ```
@@ -74,6 +93,27 @@ std::string module;
 ```
 
 
+### variable backend
+
+```
+std::string backend;
+```
+
+
+### variable version
+
+```
+std::string version;
+```
+
+
+### variable options
+
+```
+Options options;
+```
+
+
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:44 +0000
+Updated on 2023-06-26 at 21:36:52 +0000

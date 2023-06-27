@@ -44,6 +44,7 @@ description: "[No description available]"
   * 2014 Aug 
   * 2015 May
   * 2019 May 
+  * 2020 June 
   * 2021 Sep
   * 2020 May
 
@@ -89,6 +90,7 @@ Authors (add name and date if you modify):
 ///  \author Tomas Gonzalo
 ///          (tomas.gonzalo@monash.edu)
 ///  \date 2019 May
+///  \date 2020 June
 ///  \date 2021 Sep
 ///
 ///  \author Patrick Stoecker
@@ -152,11 +154,21 @@ namespace Gambit
       Rule(std::string function, std::string module) : function(function), module(module) {};
       Rule(IniParser::ObservableType t)
       {
-        module = t.module;
+        capability = t.capability;
+        type  = t.type;
         function = t.function;
+        module = t.module;
+        backend = t.backend;
+        version = t.version;
+        options = t.options;
       };
+      std::string capability;
+      std::string type;
       std::string function;
       std::string module;
+      std::string backend;
+      std::string version;
+      Options options;
     };
 
     /// Information in parameter queue
@@ -250,6 +262,16 @@ namespace Gambit
         void invalidatePointAt(VertexID, bool);
 
         void resetAll();
+
+        /// Check for unused rules and options
+        void checkForUnusedRules(int);
+        
+        /// Set the Scan ID
+        void set_scanID();
+        int scanID;
+
+        /// Construct metadata information from used observables, rules and options
+        map_str_str getMetadata();
 
       private:
         /// Adds list of functor pointers to master graph
@@ -370,6 +392,7 @@ namespace Gambit
 
         /// Global flag for triggering printing of unitCubeParameters
         bool print_unitcube = false;
+        
   };
   }
 }
@@ -379,4 +402,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:48 +0000
+Updated on 2023-06-26 at 21:36:55 +0000

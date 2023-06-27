@@ -75,7 +75,7 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
          get_BEptr()->flag_no_convergence_me2(arg_1, arg_2);
       }
       
-      inline void MSSMNoFV_onshell_problems::flag_tachyon(const ::std::basic_string<char, std::char_traits<char>, std::allocator<char> >& arg_1)
+      inline void MSSMNoFV_onshell_problems::flag_tachyon(const std::string& arg_1)
       {
          get_BEptr()->flag_tachyon(arg_1);
       }
@@ -105,27 +105,27 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
          return get_BEptr()->have_warning();
       }
       
-      inline ::std::basic_string<char, std::char_traits<char>, std::allocator<char> > MSSMNoFV_onshell_problems::get_warnings() const
+      inline ::std::string MSSMNoFV_onshell_problems::get_warnings() const
       {
          return get_BEptr()->get_warnings();
       }
       
-      inline ::std::basic_string<char, std::char_traits<char>, std::allocator<char> > MSSMNoFV_onshell_problems::get_problems() const
+      inline ::std::string MSSMNoFV_onshell_problems::get_problems() const
       {
          return get_BEptr()->get_problems();
       }
       
-      inline void MSSMNoFV_onshell_problems::print(::std::basic_ostream<char, std::char_traits<char> >& arg_1) const
+      inline void MSSMNoFV_onshell_problems::print(std::ostream& arg_1) const
       {
          get_BEptr()->print(arg_1);
       }
       
-      inline void MSSMNoFV_onshell_problems::print_problems(::std::basic_ostream<char, std::char_traits<char> >& arg_1) const
+      inline void MSSMNoFV_onshell_problems::print_problems(std::ostream& arg_1) const
       {
          get_BEptr()->print_problems(arg_1);
       }
       
-      inline void MSSMNoFV_onshell_problems::print_warnings(::std::basic_ostream<char, std::char_traits<char> >& arg_1) const
+      inline void MSSMNoFV_onshell_problems::print_warnings(std::ostream& arg_1) const
       {
          get_BEptr()->print_warnings(arg_1);
       }
@@ -199,4 +199,4 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:49 +0000
+Updated on 2023-06-26 at 21:36:57 +0000

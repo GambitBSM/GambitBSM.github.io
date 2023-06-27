@@ -82,6 +82,7 @@ Inherited by [Gambit::ColliderBit::Analysis_ATLAS_13TeV_2OSLEP_chargino_binned_1
 | void | **[add_result](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/#function-add-result)**(const [SignalRegionData](/documentation/code/classes/structgambit_1_1colliderbit_1_1signalregiondata/) & sr)<br>Add the given result to the internal results list.  |
 | void | **[set_covariance](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/#function-set-covariance)**(const Eigen::MatrixXd & srcov)<br>Set the covariance matrix, expressing SR correlations.  |
 | void | **[set_covariance](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/#function-set-covariance)**(const std::vector< std::vector< double > > & srcov)<br>A convenience function for setting the SR covariance from a nested vector/initialiser list.  |
+| void | **[set_bkgjson](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/#function-set-bkgjson)**(const std::string & bkgpath)<br>A convenience function for setting the path to the [ATLAS]() FullLikes BKG Json file.  |
 
 
 ## Public Functions Documentation
@@ -224,4 +225,4 @@ Cutflow _cutflow;
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:43 +0000
+Updated on 2023-06-26 at 21:36:51 +0000

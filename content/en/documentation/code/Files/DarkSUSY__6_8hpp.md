@@ -15,8 +15,6 @@ description: "[No description available]"
 | -------------- | -------------- |
 | | **[BE_FUNCTION](/documentation/code/files/darksusy__6_8hpp/#function-be-function)**(dsrdstart , void , (int &, double(&)[1000], double(&)[1000], int &, double(&)[1000], double(&)[1000], int &, double(&)[1000]) , "dsrdstart_" , "dsrdstart" ) |
 | double double double int int int dsrdens | **[BE_VARIABLE](/documentation/code/files/darksusy__6_8hpp/#function-be-variable)**(ddcomlegacy , DS_DDCOMLEGACY , "ddcomlegacy_" , "ddcomlegacy" ) |
-| double double double int int int dsrdens rdtime | **[BE_VARIABLE](/documentation/code/files/darksusy__6_8hpp/#function-be-variable)**(rdpars , DS_RDPARS , "rdpars_" , "rdpars" ) |
-| double double double int int int dsrdens rdtime const double(&const | **[double](/documentation/code/files/darksusy__6_8hpp/#function-double)**(& ) |
 
 ## Attributes
 
@@ -83,27 +81,6 @@ double double double int int int dsrdens BE_VARIABLE(
     DS_DDCOMLEGACY ,
     "ddcomlegacy_" ,
     "ddcomlegacy" 
-)
-```
-
-
-### function BE_VARIABLE
-
-```
-double double double int int int dsrdens rdtime BE_VARIABLE(
-    rdpars ,
-    DS_RDPARS ,
-    "rdpars_" ,
-    "rdpars" 
-)
-```
-
-
-### function double
-
-```
-double double double int int int dsrdens rdtime const double(&const double(
-    & 
 )
 ```
 
@@ -208,7 +185,6 @@ BE_VARIABLE(dshmnoclue, DS_HMNOCLUE, "dshmnoclue_", "dshmnoclue")
 // Common blocks in the DarkSUSY core library
 BE_VARIABLE(ddcomlegacy, DS_DDCOMLEGACY, "ddcomlegacy_", "ddcomlegacy") //DD
 BE_VARIABLE(rdtime, DS_RDTIME,     "rdtime_",    "rdtime")    // RD timeout
-BE_VARIABLE(rdpars, DS_RDPARS,     "rdpars_",    "rdpars")    // gRD Parameters
 
 // Convenience functions (registration)
 BE_CONV_FUNCTION(DS_neutral_h_decay_channels, std::vector<std::vector<str>>, (), "get_DS_neutral_h_decay_channels")
@@ -220,4 +196,4 @@ BE_CONV_FUNCTION(dsgenericwimp_nusetup, void, (const double(&)[29], const double
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:49 +0000
+Updated on 2023-06-26 at 21:36:57 +0000

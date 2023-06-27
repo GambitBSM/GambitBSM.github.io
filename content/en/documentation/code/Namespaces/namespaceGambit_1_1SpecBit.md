@@ -41,7 +41,13 @@ description: "[No description available]"
 | bool | **[has_neutralino_LSP](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-has-neutralino-lsp)**(const [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) & result)<br>Check that the spectrum has a neutralino LSP.  |
 | bool | **[has_neutralino_LSP](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-has-neutralino-lsp)**(const [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) * result)<br>Helper to work with pointer.  |
 | void | **[get_SMINPUTS](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-sminputs)**([SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) & result)<br>[Gambit](/documentation/code/namespaces/namespacegambit/) module functions.  |
-| template <class MI \> <br>[Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) | **[run_FS_spectrum_generator](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-run-fs-spectrum-generator)**(const typename MI::InputParameters & input, const [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) & sminputs, const [Options](/documentation/code/classes/classgambit_1_1options/) & runOptions, const std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), [safe_ptr](/documentation/code/classes/classgambit_1_1safe__ptr/)< const double > > & input_Param)<br>Non-Gambit convenience functions.  |
+| void | **[check_LSP](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-check-lsp)**(const [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) & spec, const [Options](/documentation/code/classes/classgambit_1_1options/) & runOptions, bool gravitino_is_canonical_LSP)<br>Non-Gambit convenience functions.  |
+| void | **[check_LSP](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-check-lsp)**(const [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) * spec, const [Options](/documentation/code/classes/classgambit_1_1options/) & runOptions, bool gravitino_model)<br>Helper to work with pointer.  |
+| double | **[get_light_gravitino_mass](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-light-gravitino-mass)**(const std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), [safe_ptr](/documentation/code/classes/classgambit_1_1safe__ptr/)< const double > > & Param, const [Options](/documentation/code/classes/classgambit_1_1options/) & runOptions)<br>Check that the gravitino is actually light, and retrieve its mass.  |
+| void | **[add_gravitino_mass](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-add-gravitino-mass)**([Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) & spec, const std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), [safe_ptr](/documentation/code/classes/classgambit_1_1safe__ptr/)< const double > > & Param, const [Options](/documentation/code/classes/classgambit_1_1options/) & runOptions)<br>Add the gravitino mass if it is present (spectrum object version)  |
+| void | **[add_gravitino_mass](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-add-gravitino-mass)**([SLHAstruct](/documentation/code/namespaces/namespacegambit/#typedef-slhastruct) & slha, const std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), [safe_ptr](/documentation/code/classes/classgambit_1_1safe__ptr/)< const double > > & Param, const [Options](/documentation/code/classes/classgambit_1_1options/) & runOptions)<br>Add the gravitino mass if it is present (SLHAea version)  |
+| void | **[add_gravitino_mass_from_slhaea](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-add-gravitino-mass-from-slhaea)**([Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) & spec, const [SLHAstruct](/documentation/code/namespaces/namespacegambit/#typedef-slhastruct) & input_slha)<br>Add the gravitino mass to a spectrum object if it is present in an SLHAea object.  |
+| template <class MI \> <br>[Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) | **[run_FS_spectrum_generator](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-run-fs-spectrum-generator)**(const typename MI::InputParameters & input, const [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) & sminputs, const [Options](/documentation/code/classes/classgambit_1_1options/) & runOptions, const std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), [safe_ptr](/documentation/code/classes/classgambit_1_1safe__ptr/)< const double > > & input_Param, bool gravitino_model)<br>Compute an MSSM spectrum using flexiblesusy.  |
 | Eigen::Matrix< double, 3, 3 > | **[fill_3x3_parameter_matrix](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-fill-3x3-parameter-matrix)**(const std::string & rootname, const std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), [safe_ptr](/documentation/code/classes/classgambit_1_1safe__ptr/)< const double > > & Param)<br>Helper function for setting 3x3 matrix-valued parameters.  |
 | Eigen::Matrix< double, 3, 3 > | **[fill_3x3_symmetric_parameter_matrix](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-fill-3x3-symmetric-parameter-matrix)**(const std::string & rootname, const std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), [safe_ptr](/documentation/code/classes/classgambit_1_1safe__ptr/)< const double > > & Param)<br>As above, but for symmetric input (i.e. 6 entries, assumed to be the upper triangle)  |
 | template <class T \> <br>void | **[fill_MSSM63_input](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-fill-mssm63-input)**(T & input, const std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), [safe_ptr](/documentation/code/classes/classgambit_1_1safe__ptr/)< const double > > & Param) |
@@ -160,6 +166,21 @@ description: "[No description available]"
 | void | **[get_DMEFT_spectrum](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-dmeft-spectrum)**([Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) & result)<br>Get a simple wrapper for [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) object.  |
 | void | **[fill_map_from_DMEFT_spectrum](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-fill-map-from-dmeft-spectrum)**(std::map< std::string, double > & specmap, const [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) & spec) |
 | void | **[get_DMEFT_spectrum_as_map](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-dmeft-spectrum-as-map)**(std::map< std::string, double > & specmap) |
+| void | **[get_DMsimpVectorMedDiracDM_spectrum](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-dmsimpvectormeddiracdm-spectrum)**([Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) & result)<br>Get a (simple) [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) object wrapper for DMsimpVectorMedDiracDM_spectrum model.  |
+| void | **[fill_map_from_DMsimpVectorMedDiracDM_spectrum](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-fill-map-from-dmsimpvectormeddiracdm-spectrum)**(std::map< std::string, double > & specmap, const [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) & spec) |
+| void | **[get_DMsimpVectorMedDiracDM_spectrum_as_map](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-dmsimpvectormeddiracdm-spectrum-as-map)**(std::map< std::string, double > & specmap) |
+| void | **[Unitarity_Bound_DMsimpVectorMedDiracDM](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-unitarity-bound-dmsimpvectormeddiracdm)**(double & result)<br>Calculate whether or not unitarity is violated.  |
+| void | **[get_DMsimpVectorMedMajoranaDM_spectrum](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-dmsimpvectormedmajoranadm-spectrum)**([Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) & result)<br>Get a (simple) [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) object wrapper for DMsimpVectorMedMajoranaDM_spectrum model.  |
+| void | **[fill_map_from_DMsimpVectorMedMajoranaDM_spectrum](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-fill-map-from-dmsimpvectormedmajoranadm-spectrum)**(std::map< std::string, double > & specmap, const [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) & spec) |
+| void | **[get_DMsimpVectorMedMajoranaDM_spectrum_as_map](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-dmsimpvectormedmajoranadm-spectrum-as-map)**(std::map< std::string, double > & specmap) |
+| void | **[Unitarity_Bound_DMsimpVectorMedMajoranaDM](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-unitarity-bound-dmsimpvectormedmajoranadm)**(double & result)<br>Calculate whether or not unitarity is violated.  |
+| void | **[get_DMsimpVectorMedScalarDM_spectrum](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-dmsimpvectormedscalardm-spectrum)**([Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) & result)<br>Get a (simple) [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) object wrapper for DMsimpVectorMedScalarDM_spectrum model.  |
+| void | **[fill_map_from_DMsimpVectorMedScalarDM_spectrum](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-fill-map-from-dmsimpvectormedscalardm-spectrum)**(std::map< std::string, double > & specmap, const [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) & spec) |
+| void | **[get_DMsimpVectorMedScalarDM_spectrum_as_map](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-dmsimpvectormedscalardm-spectrum-as-map)**(std::map< std::string, double > & specmap) |
+| void | **[get_DMsimpVectorMedVectorDM_spectrum](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-dmsimpvectormedvectordm-spectrum)**([Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) & result)<br>Get a (simple) [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) object wrapper for DMsimpVectorMedVectorDM_spectrum model.  |
+| void | **[fill_map_from_DMsimpVectorMedVectorDM_spectrum](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-fill-map-from-dmsimpvectormedvectordm-spectrum)**(std::map< std::string, double > & specmap, const [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) & spec) |
+| void | **[get_DMsimpVectorMedVectorDM_spectrum_as_map](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-dmsimpvectormedvectordm-spectrum-as-map)**(std::map< std::string, double > & specmap) |
+| void | **[DecayWidthPerturbativity_DMsimpVectorMedVectorDM](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-decaywidthperturbativity-dmsimpvectormedvectordm)**(double & result)<br>Calculate the mediator decay width-mass ratio and invalidate the point if greater than 1.  |
 | void | **[get_MajoranaSingletDM_Z2_spectrum](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-majoranasingletdm-z2-spectrum)**([Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) & result)<br>Get a (simple) [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) object wrapper for the MajoranaSingletDM_Z2 model.  |
 | void | **[fill_map_from_MajoranaSingletDM_Z2spectrum](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-fill-map-from-majoranasingletdm-z2spectrum)**(std::map< std::string, double > & specmap, const [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) & majoranadmspec) |
 | void | **[get_MajoranaSingletDM_Z2_spectrum_as_map](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-majoranasingletdm-z2-spectrum-as-map)**(std::map< std::string, double > & specmap) |
@@ -321,6 +342,79 @@ void get_SMINPUTS(
 Set SMINPUTS (SLHA2) struct to match StandardModel_SLHA2 parameters. 
 
 
+### function check_LSP
+
+```
+void check_LSP(
+    const Spectrum & spec,
+    const Options & runOptions,
+    bool gravitino_is_canonical_LSP
+)
+```
+
+Non-Gambit convenience functions. 
+
+Check that the spectrum has the canonical LSP for the model being scanned. 
+
+
+### function check_LSP
+
+```
+void check_LSP(
+    const Spectrum * spec,
+    const Options & runOptions,
+    bool gravitino_model
+)
+```
+
+Helper to work with pointer. 
+
+### function get_light_gravitino_mass
+
+```
+double get_light_gravitino_mass(
+    const std::map< str, safe_ptr< const double > > & Param,
+    const Options & runOptions
+)
+```
+
+Check that the gravitino is actually light, and retrieve its mass. 
+
+### function add_gravitino_mass
+
+```
+void add_gravitino_mass(
+    Spectrum & spec,
+    const std::map< str, safe_ptr< const double > > & Param,
+    const Options & runOptions
+)
+```
+
+Add the gravitino mass if it is present (spectrum object version) 
+
+### function add_gravitino_mass
+
+```
+void add_gravitino_mass(
+    SLHAstruct & slha,
+    const std::map< str, safe_ptr< const double > > & Param,
+    const Options & runOptions
+)
+```
+
+Add the gravitino mass if it is present (SLHAea version) 
+
+### function add_gravitino_mass_from_slhaea
+
+```
+void add_gravitino_mass_from_slhaea(
+    Spectrum & spec,
+    const SLHAstruct & input_slha
+)
+```
+
+Add the gravitino mass to a spectrum object if it is present in an SLHAea object. 
+
 ### function run_FS_spectrum_generator
 
 ```
@@ -329,14 +423,12 @@ Spectrum run_FS_spectrum_generator(
     const typename MI::InputParameters & input,
     const SMInputs & sminputs,
     const Options & runOptions,
-    const std::map< str, safe_ptr< const double > > & input_Param
+    const std::map< str, safe_ptr< const double > > & input_Param,
+    bool gravitino_model
 )
 ```
 
-Non-Gambit convenience functions. 
-
-Compute an MSSM spectrum using flexiblesusy 
-
+Compute an MSSM spectrum using flexiblesusy. 
 
 TODO: Need to tell gambit that the spectrum is not viable somehow. For now just die.
 
@@ -1673,6 +1765,172 @@ void get_DMEFT_spectrum_as_map(
 ```
 
 
+### function get_DMsimpVectorMedDiracDM_spectrum
+
+```
+void get_DMsimpVectorMedDiracDM_spectrum(
+    Spectrum & result
+)
+```
+
+Get a (simple) [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) object wrapper for DMsimpVectorMedDiracDM_spectrum model. 
+
+### function fill_map_from_DMsimpVectorMedDiracDM_spectrum
+
+```
+void fill_map_from_DMsimpVectorMedDiracDM_spectrum(
+    std::map< std::string, double > & specmap,
+    const Spectrum & spec
+)
+```
+
+
+Use SpectrumContents routines to automate
+
+Use SpectrumContents routines to automate
+
+
+### function get_DMsimpVectorMedDiracDM_spectrum_as_map
+
+```
+void get_DMsimpVectorMedDiracDM_spectrum_as_map(
+    std::map< std::string, double > & specmap
+)
+```
+
+
+### function Unitarity_Bound_DMsimpVectorMedDiracDM
+
+```
+void Unitarity_Bound_DMsimpVectorMedDiracDM(
+    double & result
+)
+```
+
+Calculate whether or not unitarity is violated. 
+
+### function get_DMsimpVectorMedMajoranaDM_spectrum
+
+```
+void get_DMsimpVectorMedMajoranaDM_spectrum(
+    Spectrum & result
+)
+```
+
+Get a (simple) [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) object wrapper for DMsimpVectorMedMajoranaDM_spectrum model. 
+
+### function fill_map_from_DMsimpVectorMedMajoranaDM_spectrum
+
+```
+void fill_map_from_DMsimpVectorMedMajoranaDM_spectrum(
+    std::map< std::string, double > & specmap,
+    const Spectrum & spec
+)
+```
+
+
+Use SpectrumContents routines to automate
+
+Use SpectrumContents routines to automate
+
+
+### function get_DMsimpVectorMedMajoranaDM_spectrum_as_map
+
+```
+void get_DMsimpVectorMedMajoranaDM_spectrum_as_map(
+    std::map< std::string, double > & specmap
+)
+```
+
+
+### function Unitarity_Bound_DMsimpVectorMedMajoranaDM
+
+```
+void Unitarity_Bound_DMsimpVectorMedMajoranaDM(
+    double & result
+)
+```
+
+Calculate whether or not unitarity is violated. 
+
+### function get_DMsimpVectorMedScalarDM_spectrum
+
+```
+void get_DMsimpVectorMedScalarDM_spectrum(
+    Spectrum & result
+)
+```
+
+Get a (simple) [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) object wrapper for DMsimpVectorMedScalarDM_spectrum model. 
+
+### function fill_map_from_DMsimpVectorMedScalarDM_spectrum
+
+```
+void fill_map_from_DMsimpVectorMedScalarDM_spectrum(
+    std::map< std::string, double > & specmap,
+    const Spectrum & spec
+)
+```
+
+
+Use SpectrumContents routines to automate
+
+Use SpectrumContents routines to automate
+
+
+### function get_DMsimpVectorMedScalarDM_spectrum_as_map
+
+```
+void get_DMsimpVectorMedScalarDM_spectrum_as_map(
+    std::map< std::string, double > & specmap
+)
+```
+
+
+### function get_DMsimpVectorMedVectorDM_spectrum
+
+```
+void get_DMsimpVectorMedVectorDM_spectrum(
+    Spectrum & result
+)
+```
+
+Get a (simple) [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) object wrapper for DMsimpVectorMedVectorDM_spectrum model. 
+
+### function fill_map_from_DMsimpVectorMedVectorDM_spectrum
+
+```
+void fill_map_from_DMsimpVectorMedVectorDM_spectrum(
+    std::map< std::string, double > & specmap,
+    const Spectrum & spec
+)
+```
+
+
+Use SpectrumContents routines to automate
+
+Use SpectrumContents routines to automate
+
+
+### function get_DMsimpVectorMedVectorDM_spectrum_as_map
+
+```
+void get_DMsimpVectorMedVectorDM_spectrum_as_map(
+    std::map< std::string, double > & specmap
+)
+```
+
+
+### function DecayWidthPerturbativity_DMsimpVectorMedVectorDM
+
+```
+void DecayWidthPerturbativity_DMsimpVectorMedVectorDM(
+    double & result
+)
+```
+
+Calculate the mediator decay width-mass ratio and invalidate the point if greater than 1. 
+
 ### function get_MajoranaSingletDM_Z2_spectrum
 
 ```
@@ -1840,9 +2098,6 @@ void get_MSSM_spectrum_from_SLHAstruct(
 
 
 Get an MSSMSpectrum object from an SLHAstruct Wraps it up in [MSSMSimpleSpec](/documentation/code/classes/classgambit_1_1mssmsimplespec/); i.e. no RGE running possible. This can be used as a poor-man's interface to backend spectrum generators 
-
-
-TodoFIXME this needs to be fixed &ndash; is it needed any more? Where is this GAMBIT block supposed to be written? 
 
 
 ### function get_MSSM_spectrum_from_postprocessor
@@ -2463,4 +2718,4 @@ This function adds all entries of the spectrum object (as SLHAea) that need to b
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:45 +0000
+Updated on 2023-06-26 at 21:36:53 +0000

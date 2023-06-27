@@ -64,7 +64,7 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
          get_BEptr()->convert_to_slha();
       }
       
-      inline void MSSMNoFV_onshell_physical::print(::std::basic_ostream<char, std::char_traits<char> >& arg_1) const
+      inline void MSSMNoFV_onshell_physical::print(std::ostream& arg_1) const
       {
          get_BEptr()->print(arg_1);
       }
@@ -285,4 +285,4 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:49 +0000
+Updated on 2023-06-26 at 21:36:57 +0000

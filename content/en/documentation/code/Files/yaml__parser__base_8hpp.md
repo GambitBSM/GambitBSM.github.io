@@ -31,6 +31,7 @@ description: "[No description available]"
   * Gregory Martinez ([gregory.david.martinez@gmail.com](mailto:gregory.david.martinez@gmail.com)) 
   * Pat Scott ([patscott@physics.mcgill.ca](mailto:patscott@physics.mcgill.ca)) 
   * Markus Prim ([markus.prim@kit.edu](mailto:markus.prim@kit.edu)) 
+  * Tomas Gonzalo ([tomas.gonzalo@monash.edu](mailto:tomas.gonzalo@monash.edu)) 
 
 
 **Date**: 
@@ -40,6 +41,7 @@ description: "[No description available]"
   * 2014 Mar 
   * 2015 Mar
   * 2020 May
+  * 2020 June
 
 
 Base class for ini-file parsers using yaml-cpp
@@ -87,6 +89,10 @@ Authors (add name and date if you modify):
 ///          (markus.prim@kit.edu)
 ///  \date 2020 May
 ///
+///  \author Tomas Gonzalo
+///          (tomas.gonzalo@monash.edu)
+///  \date 2020 June
+///
 ///  *********************************************
 
 #ifndef __yaml_parser_base_hpp__
@@ -114,6 +120,9 @@ namespace Gambit
 
         /// Read in the YAML file
         virtual void readFile(str filename);
+
+        /// Getter for the full YAML node
+        YAML::Node getYAMLNode() const;
 
         /// Getters for key/value section
         /// @{
@@ -171,9 +180,13 @@ namespace Gambit
         
         /// Do the basic parsing of the YAML file
         void basicParse(YAML::Node,str);
-         
+
+        /// Print a node to file
+        void printNode(YAML::Node,str,bool);
+        
       private:     
 
+        YAML::Node YAMLNode;
         YAML::Node keyValuePairNode;
         YAML::Node parametersNode;
         YAML::Node priorsNode;
@@ -193,4 +206,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:45 +0000
+Updated on 2023-06-26 at 21:36:53 +0000

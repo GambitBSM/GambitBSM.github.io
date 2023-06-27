@@ -56,6 +56,7 @@ description: "[No description available]"
 | struct | **[Gambit::DS_RDPADD](/documentation/code/classes/structgambit_1_1ds__rdpadd/)**  |
 | struct | **[Gambit::DS_RDDOF](/documentation/code/classes/structgambit_1_1ds__rddof/)**  |
 | struct | **[Gambit::DS_RDERRORS](/documentation/code/classes/structgambit_1_1ds__rderrors/)**  |
+| struct | **[Gambit::DS_RDPARS_OLD](/documentation/code/classes/structgambit_1_1ds__rdpars__old/)**  |
 | struct | **[Gambit::DS_RDPARS](/documentation/code/classes/structgambit_1_1ds__rdpars/)**  |
 | struct | **[Gambit::DS_RDTIME](/documentation/code/classes/structgambit_1_1ds__rdtime/)**  |
 | struct | **[Gambit::DS5_DDCOM](/documentation/code/classes/structgambit_1_1ds5__ddcom/)**  |
@@ -470,10 +471,17 @@ namespace Gambit
       Finteger rderr,rdwar,rdinit;
   };
 
-  struct DS_RDPARS
+  struct DS_RDPARS_OLD
   {
       Fdouble cosmin,waccd,dpminr,dpthr,wdiffr,wdifft;
       Fdouble hstep,hmin,compeps,xinit,xfinal,umax,cfr,pmax;
+  };
+
+  struct DS_RDPARS
+  {
+      Fdouble cosmin,waccd,dpminr,dpmaxr,dpthr,wdiffr,wdifft;
+      Fdouble hstep,hmin,compeps,xinit,xfinal,umax,cfr,pmax,ptopr;
+      Fdouble theps,thepshi;
   };
 
   struct DS_RDTIME
@@ -590,4 +598,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:49 +0000
+Updated on 2023-06-26 at 21:36:57 +0000

@@ -60,17 +60,17 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
     
                 virtual Pythia8::Abstract_Hist& operator_equal__BOSS(const Pythia8::Abstract_Hist&) =0;
     
-                virtual void book(::std::basic_string<char>, int, double, double) =0;
+                virtual void book(std::string, int, double, double) =0;
     
-                virtual void book__BOSS(::std::basic_string<char>, int, double) =0;
+                virtual void book__BOSS(std::string, int, double) =0;
     
-                virtual void book__BOSS(::std::basic_string<char>, int) =0;
+                virtual void book__BOSS(std::string, int) =0;
     
-                virtual void book__BOSS(::std::basic_string<char>) =0;
+                virtual void book__BOSS(std::string) =0;
     
                 virtual void book__BOSS() =0;
     
-                virtual void name(::std::basic_string<char>) =0;
+                virtual void name(std::string) =0;
     
                 virtual void name__BOSS() =0;
     
@@ -80,19 +80,19 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
     
                 virtual void fill__BOSS(double) =0;
     
-                virtual void table(::std::basic_ostream<char>&, bool, bool) const =0;
+                virtual void table(std::ostream&, bool, bool) const =0;
     
-                virtual void table__BOSS(::std::basic_ostream<char>&, bool) const =0;
+                virtual void table__BOSS(std::ostream&, bool) const =0;
     
-                virtual void table__BOSS(::std::basic_ostream<char>&) const =0;
+                virtual void table__BOSS(std::ostream&) const =0;
     
                 virtual void table__BOSS() const =0;
     
-                virtual void table(::std::basic_string<char>, bool, bool) const =0;
+                virtual void table(std::string, bool, bool) const =0;
     
-                virtual void table__BOSS(::std::basic_string<char>, bool) const =0;
+                virtual void table__BOSS(std::string, bool) const =0;
     
-                virtual void table__BOSS(::std::basic_string<char>) const =0;
+                virtual void table__BOSS(std::string) const =0;
     
                 virtual double getBinContent(int) const =0;
     
@@ -180,4 +180,4 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:49 +0000
+Updated on 2023-06-26 at 21:36:57 +0000

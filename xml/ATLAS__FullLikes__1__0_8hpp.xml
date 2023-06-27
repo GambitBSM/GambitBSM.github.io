@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="ATLAS__FullLikes__1__0_8hpp" kind="file" language="C++">
+    <compoundname>ATLAS_FullLikes_1_0.hpp</compoundname>
+    <includes refid="include_2gambit_2Backends_2backend__undefs_8hpp" local="yes">gambit/Backends/backend_undefs.hpp</includes>
+    <includedby refid="ATLAS__FullLikes__1__0_8cpp" local="yes">ATLAS_FullLikes_1_0.cpp</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>gambit/Backends/backend_undefs.hpp</label>
+        <link refid="include_2gambit_2Backends_2backend__undefs_8hpp"/>
+      </node>
+      <node id="1">
+        <label>ATLAS_FullLikes_1_0.hpp</label>
+        <link refid="ATLAS__FullLikes__1__0_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="1">
+        <label>ATLAS_FullLikes_1_0.hpp</label>
+        <link refid="ATLAS__FullLikes__1__0_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ATLAS_FullLikes_1_0.cpp</label>
+        <link refid="ATLAS__FullLikes__1__0_8cpp"/>
+      </node>
+    </invincdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="ATLAS__FullLikes__1__0_8hpp_1a7f7848301604c58c8962207acd75ff6e" prot="public" static="no">
+        <name>BACKENDNAME</name>
+        <initializer>ATLAS_FullLikes</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Backends/include/gambit/Backends/frontends/ATLAS_FullLikes_1_0.hpp" line="19" column="9" bodyfile="Backends/include/gambit/Backends/frontends/ATLAS_FullLikes_1_0.hpp" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ATLAS__FullLikes__1__0_8hpp_1a339bf682af9659de270251e5d18011be" prot="public" static="no">
+        <name>BACKENDLANG</name>
+        <initializer>Python3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Backends/include/gambit/Backends/frontends/ATLAS_FullLikes_1_0.hpp" line="20" column="9" bodyfile="Backends/include/gambit/Backends/frontends/ATLAS_FullLikes_1_0.hpp" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ATLAS__FullLikes__1__0_8hpp_1a1c6d5de492ac61ad29aec7aa9a436bbf" prot="public" static="no">
+        <name>VERSION</name>
+        <initializer>1.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Backends/include/gambit/Backends/frontends/ATLAS_FullLikes_1_0.hpp" line="21" column="9" bodyfile="Backends/include/gambit/Backends/frontends/ATLAS_FullLikes_1_0.hpp" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ATLAS__FullLikes__1__0_8hpp_1a8d5a383ba38225163529bfcb55b74444" prot="public" static="no">
+        <name>SAFE_VERSION</name>
+        <initializer>1_0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Backends/include/gambit/Backends/frontends/ATLAS_FullLikes_1_0.hpp" line="22" column="9" bodyfile="Backends/include/gambit/Backends/frontends/ATLAS_FullLikes_1_0.hpp" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="ATLAS__FullLikes__1__0_8hpp_1a62a0f8a0b822f31ff84bc8252b33e7c8" prot="public" static="no">
+        <name>REFERENCE</name>
+        <initializer>ATL-PHYS-PUB-2019-029,pyhf,pyhf_joss</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Backends/include/gambit/Backends/frontends/ATLAS_FullLikes_1_0.hpp" line="23" column="9" bodyfile="Backends/include/gambit/Backends/frontends/ATLAS_FullLikes_1_0.hpp" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Example frontend header for the ATLAS_FullLikes backend</para>
+<para><hruler/>
+</para>
+<para>Authors (add name and date if you modify):</para>
+<para><simplesect kind="author"><para>Chris Chang (<ulink url="mailto:christopher.chang@uqconnect.edu.au">christopher.chang@uqconnect.edu.au</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2021</para>
+</simplesect>
+<hruler/>
+ </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/><sp/><sp/>GAMBIT:<sp/>Global<sp/>and<sp/>Modular<sp/>BSM<sp/>Inference<sp/>Tool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>*********************************************</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">///<sp/><sp/>\file</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">///<sp/><sp/>Example<sp/>frontend<sp/>header<sp/>for<sp/>the<sp/>ATLAS_FullLikes<sp/></highlight></codeline>
+<codeline lineno="6"><highlight class="comment">///<sp/><sp/>backend</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">///<sp/><sp/>Authors<sp/>(add<sp/>name<sp/>and<sp/>date<sp/>if<sp/>you<sp/>modify):</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">///<sp/><sp/>\author<sp/>Chris<sp/>Chang</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">///<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(christopher.chang@uqconnect.edu.au)</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">///<sp/><sp/>\date<sp/>2021</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BACKENDNAME<sp/>ATLAS_FullLikes</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BACKENDLANG<sp/>Python3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>VERSION<sp/>1.0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SAFE_VERSION<sp/>1_0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>REFERENCE<sp/>ATL-PHYS-PUB-2019-029,pyhf,pyhf_joss</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><ref refid="backend__macros_8hpp_1ac7b7c11119ba13dc612df0e3e744b165" kindref="member">LOAD_LIBRARY</ref></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>HAVE_PYBIND11</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/>BE_FUNCTION(FullLikes_ReadIn,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;,</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;),<sp/></highlight><highlight class="stringliteral">&quot;ReadIn&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;FullLikes_ReadIn&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/>BE_FUNCTION(FullLikes_FileExists,</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">,(const<sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;),&quot;FileExists&quot;,&quot;FullLikes_FileExists&quot;)</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/>BE_FUNCTION(FullLikes_Reset,</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,(const<sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;),&quot;Reset&quot;,&quot;FullLikes_Reset&quot;)<sp/></highlight><highlight class="comment">//TODO:<sp/>Chris<sp/>Chang.<sp/>This<sp/>is<sp/>currently<sp/>not<sp/>used.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/>BE_FUNCTION(FullLikes_Evaluate_pydict,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/>(<ref refid="python__helpers_8hpp_1a75d3d28c847302d727ee671263dae2f9" kindref="member">PyDict</ref>&amp;,const<sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;),<sp/>&quot;Evaluate&quot;,<sp/>&quot;FullLikes_Evaluate_pydict&quot;)</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/>BE_CONV_FUNCTION(FullLikes_Evaluate,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/>(std::map&lt;str,double&gt;&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;),<sp/></highlight><highlight class="stringliteral">&quot;FullLikes_Evaluate&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gambit/Backends/backend_undefs.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Backends/include/gambit/Backends/frontends/ATLAS_FullLikes_1_0.hpp"/>
+  </compounddef>
+</doxygen>

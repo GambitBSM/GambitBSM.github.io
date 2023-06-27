@@ -1,0 +1,289 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classGambit_1_1ColliderBit_1_1Analysis__ATLAS__13TeV__MONOJET__139infb" kind="class" language="C++" prot="public">
+    <compoundname>Gambit::ColliderBit::Analysis_ATLAS_13TeV_MONOJET_139infb</compoundname>
+    <basecompoundref refid="classGambit_1_1ColliderBit_1_1Analysis" prot="public" virt="non-virtual">Gambit::ColliderBit::Analysis</basecompoundref>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classGambit_1_1ColliderBit_1_1Analysis__ATLAS__13TeV__MONOJET__139infb_1a4a86f456aa81c31130d93c620dd4a6d6" prot="public" static="yes" constexpr="yes" mutable="no">
+        <type>constexpr const char *</type>
+        <definition>constexpr const char* Gambit::ColliderBit::Analysis_ATLAS_13TeV_MONOJET_139infb::detector</definition>
+        <argsstring></argsstring>
+        <name>detector</name>
+        <qualifiedname>Gambit::ColliderBit::Analysis_ATLAS_13TeV_MONOJET_139infb::detector</qualifiedname>
+        <initializer>= &quot;ATLAS&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/src/analyses/Analysis_ATLAS_13TeV_MONOJET_139infb.cpp" line="27" column="37" bodyfile="ColliderBit/src/analyses/Analysis_ATLAS_13TeV_MONOJET_139infb.cpp" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1ColliderBit_1_1Analysis__ATLAS__13TeV__MONOJET__139infb_1a9fc8883b09c7962c8a93a8b1376dc85e" prot="public" static="yes" mutable="no">
+        <type>const size_t</type>
+        <definition>const size_t Gambit::ColliderBit::Analysis_ATLAS_13TeV_MONOJET_139infb::NUMSR</definition>
+        <argsstring></argsstring>
+        <name>NUMSR</name>
+        <qualifiedname>Gambit::ColliderBit::Analysis_ATLAS_13TeV_MONOJET_139infb::NUMSR</qualifiedname>
+        <initializer>= 13</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/src/analyses/Analysis_ATLAS_13TeV_MONOJET_139infb.cpp" line="50" column="29" bodyfile="ColliderBit/src/analyses/Analysis_ATLAS_13TeV_MONOJET_139infb.cpp" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classGambit_1_1ColliderBit_1_1Analysis__ATLAS__13TeV__MONOJET__139infb_1adc8fe8e4ea2c961d87470bef528d64e0" prot="public" static="no" mutable="no">
+        <type>std::map&lt; string, <ref refid="classGambit_1_1ColliderBit_1_1EventCounter" kindref="compound">EventCounter</ref> &gt;</type>
+        <definition>std::map&lt;string, EventCounter&gt; Gambit::ColliderBit::Analysis_ATLAS_13TeV_MONOJET_139infb::_counters</definition>
+        <argsstring></argsstring>
+        <name>_counters</name>
+        <qualifiedname>Gambit::ColliderBit::Analysis_ATLAS_13TeV_MONOJET_139infb::_counters</qualifiedname>
+        <initializer>= {
+          {&quot;EM0&quot;, EventCounter(&quot;EM0&quot;)},
+          {&quot;EM1&quot;, EventCounter(&quot;EM1&quot;)},
+          {&quot;EM2&quot;, EventCounter(&quot;EM2&quot;)},
+          {&quot;EM3&quot;, EventCounter(&quot;EM3&quot;)},
+          {&quot;EM4&quot;, EventCounter(&quot;EM4&quot;)},
+          {&quot;EM5&quot;, EventCounter(&quot;EM5&quot;)},
+          {&quot;EM6&quot;, EventCounter(&quot;EM6&quot;)},
+          {&quot;EM7&quot;, EventCounter(&quot;EM7&quot;)},
+          {&quot;EM8&quot;, EventCounter(&quot;EM8&quot;)},
+          {&quot;EM9&quot;, EventCounter(&quot;EM9&quot;)},
+          {&quot;EM10&quot;, EventCounter(&quot;EM10&quot;)},
+          {&quot;EM11&quot;, EventCounter(&quot;EM11&quot;)},
+          {&quot;EM12&quot;, EventCounter(&quot;EM12&quot;)},
+        }</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/src/analyses/Analysis_ATLAS_13TeV_MONOJET_139infb.cpp" line="30" column="18" bodyfile="ColliderBit/src/analyses/Analysis_ATLAS_13TeV_MONOJET_139infb.cpp" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1ColliderBit_1_1Analysis__ATLAS__13TeV__MONOJET__139infb_1ab35f01c306b496db13878ee004bbba31" prot="public" static="no" mutable="no">
+        <type><ref refid="structGambit_1_1ColliderBit_1_1Cutflow" kindref="compound">Cutflow</ref></type>
+        <definition>Cutflow Gambit::ColliderBit::Analysis_ATLAS_13TeV_MONOJET_139infb::_cutflow</definition>
+        <argsstring></argsstring>
+        <name>_cutflow</name>
+        <qualifiedname>Gambit::ColliderBit::Analysis_ATLAS_13TeV_MONOJET_139infb::_cutflow</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/src/analyses/Analysis_ATLAS_13TeV_MONOJET_139infb.cpp" line="52" column="17" bodyfile="ColliderBit/src/analyses/Analysis_ATLAS_13TeV_MONOJET_139infb.cpp" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGambit_1_1ColliderBit_1_1Analysis__ATLAS__13TeV__MONOJET__139infb_1a552b3d962d642e9d5717f9ed704a5338" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::ColliderBit::Analysis_ATLAS_13TeV_MONOJET_139infb::Analysis_ATLAS_13TeV_MONOJET_139infb</definition>
+        <argsstring>()</argsstring>
+        <name>Analysis_ATLAS_13TeV_MONOJET_139infb</name>
+        <qualifiedname>Gambit::ColliderBit::Analysis_ATLAS_13TeV_MONOJET_139infb::Analysis_ATLAS_13TeV_MONOJET_139infb</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/src/analyses/Analysis_ATLAS_13TeV_MONOJET_139infb.cpp" line="54" column="9" bodyfile="ColliderBit/src/analyses/Analysis_ATLAS_13TeV_MONOJET_139infb.cpp" bodystart="54" bodyend="70"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1ColliderBit_1_1Analysis__ATLAS__13TeV__MONOJET__139infb_1ad88a3522539a807c9a6d12e2aad1ee53" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::ColliderBit::Analysis_ATLAS_13TeV_MONOJET_139infb::ejetOverlapRemoval</definition>
+        <argsstring>(vector&lt; const HEPUtils::Particle * &gt; &amp;electrons, vector&lt; const HEPUtils::Jet * &gt; &amp;jets, double DeltaRMin, double DeltaRMax)</argsstring>
+        <name>ejetOverlapRemoval</name>
+        <qualifiedname>Gambit::ColliderBit::Analysis_ATLAS_13TeV_MONOJET_139infb::ejetOverlapRemoval</qualifiedname>
+        <param>
+          <type>vector&lt; const HEPUtils::Particle * &gt; &amp;</type>
+          <declname>electrons</declname>
+        </param>
+        <param>
+          <type>vector&lt; const HEPUtils::Jet * &gt; &amp;</type>
+          <declname>jets</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>DeltaRMin</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>DeltaRMax</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/src/analyses/Analysis_ATLAS_13TeV_MONOJET_139infb.cpp" line="73" column="14" bodyfile="ColliderBit/src/analyses/Analysis_ATLAS_13TeV_MONOJET_139infb.cpp" bodystart="73" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1ColliderBit_1_1Analysis__ATLAS__13TeV__MONOJET__139infb_1a969c96d4080ef4a7f4394c02d7ffc74a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::ColliderBit::Analysis_ATLAS_13TeV_MONOJET_139infb::run</definition>
+        <argsstring>(const Event *event)</argsstring>
+        <name>run</name>
+        <qualifiedname>Gambit::ColliderBit::Analysis_ATLAS_13TeV_MONOJET_139infb::run</qualifiedname>
+        <param>
+          <type>const Event *</type>
+          <declname>event</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/src/analyses/Analysis_ATLAS_13TeV_MONOJET_139infb.cpp" line="91" column="14" bodyfile="ColliderBit/src/analyses/Analysis_ATLAS_13TeV_MONOJET_139infb.cpp" bodystart="91" bodyend="279"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1ColliderBit_1_1Analysis__ATLAS__13TeV__MONOJET__139infb_1a909a77281781329910617c665fedb37b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void Gambit::ColliderBit::Analysis_ATLAS_13TeV_MONOJET_139infb::combine</definition>
+        <argsstring>(const Analysis *other)</argsstring>
+        <name>combine</name>
+        <qualifiedname>Gambit::ColliderBit::Analysis_ATLAS_13TeV_MONOJET_139infb::combine</qualifiedname>
+        <reimplements refid="classGambit_1_1ColliderBit_1_1Analysis_1a16ed2b84d494f63537bd87d145273258">combine</reimplements>
+        <param>
+          <type>const <ref refid="classGambit_1_1ColliderBit_1_1Analysis" kindref="compound">Analysis</ref> *</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>Combine the variables of another copy of this analysis (typically on another thread) into this one. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/src/analyses/Analysis_ATLAS_13TeV_MONOJET_139infb.cpp" line="282" column="14" bodyfile="ColliderBit/src/analyses/Analysis_ATLAS_13TeV_MONOJET_139infb.cpp" bodystart="282" bodyend="286"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1ColliderBit_1_1Analysis__ATLAS__13TeV__MONOJET__139infb_1a2552b1bfb88adee040bc9a2ffa12dc9b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void Gambit::ColliderBit::Analysis_ATLAS_13TeV_MONOJET_139infb::collect_results</definition>
+        <argsstring>()</argsstring>
+        <name>collect_results</name>
+        <qualifiedname>Gambit::ColliderBit::Analysis_ATLAS_13TeV_MONOJET_139infb::collect_results</qualifiedname>
+        <reimplements refid="classGambit_1_1ColliderBit_1_1Analysis_1a7254c3cd2b3aee6981c99edc2103524b">collect_results</reimplements>
+        <briefdescription>
+<para>Gather together the info for likelihood calculation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/src/analyses/Analysis_ATLAS_13TeV_MONOJET_139infb.cpp" line="289" column="14" bodyfile="ColliderBit/src/analyses/Analysis_ATLAS_13TeV_MONOJET_139infb.cpp" bodystart="289" bodyend="314"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="protected-func">
+      <memberdef kind="function" id="classGambit_1_1ColliderBit_1_1Analysis__ATLAS__13TeV__MONOJET__139infb_1a810794ba340727be5ec66ce67aa350a2" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void Gambit::ColliderBit::Analysis_ATLAS_13TeV_MONOJET_139infb::analysis_specific_reset</definition>
+        <argsstring>()</argsstring>
+        <name>analysis_specific_reset</name>
+        <qualifiedname>Gambit::ColliderBit::Analysis_ATLAS_13TeV_MONOJET_139infb::analysis_specific_reset</qualifiedname>
+        <reimplements refid="classGambit_1_1ColliderBit_1_1Analysis_1ad60538ead8451d4c74814c92f241ca08">analysis_specific_reset</reimplements>
+        <briefdescription>
+<para>Reset the analysis-specific variables. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/src/analyses/Analysis_ATLAS_13TeV_MONOJET_139infb.cpp" line="318" column="14" bodyfile="ColliderBit/src/analyses/Analysis_ATLAS_13TeV_MONOJET_139infb.cpp" bodystart="318" bodyend="321"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para><ref refid="namespaceGambit_1_1ColliderBit_1_1ATLAS" kindref="compound">ATLAS</ref> Monojet analysis, with 139/fb of data. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Gambit::ColliderBit::Analysis</label>
+        <link refid="classGambit_1_1ColliderBit_1_1Analysis"/>
+      </node>
+      <node id="1">
+        <label>Gambit::ColliderBit::Analysis_ATLAS_13TeV_MONOJET_139infb</label>
+        <link refid="classGambit_1_1ColliderBit_1_1Analysis__ATLAS__13TeV__MONOJET__139infb"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>Gambit::ColliderBit::Analysis</label>
+        <link refid="classGambit_1_1ColliderBit_1_1Analysis"/>
+      </node>
+      <node id="1">
+        <label>Gambit::ColliderBit::Analysis_ATLAS_13TeV_MONOJET_139infb</label>
+        <link refid="classGambit_1_1ColliderBit_1_1Analysis__ATLAS__13TeV__MONOJET__139infb"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>_cutflow</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Gambit::ColliderBit::Cutflow</label>
+        <link refid="structGambit_1_1ColliderBit_1_1Cutflow"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>name</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>cuts</edgelabel>
+        </childnode>
+        <childnode refid="6" relation="usage">
+          <edgelabel>counts</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>string</label>
+      </node>
+      <node id="6">
+        <label>vector&lt; double &gt;</label>
+      </node>
+      <node id="5">
+        <label>vector&lt; string &gt;</label>
+      </node>
+    </collaborationgraph>
+    <location file="ColliderBit/src/analyses/Analysis_ATLAS_13TeV_MONOJET_139infb.cpp" line="22" column="5" bodyfile="ColliderBit/src/analyses/Analysis_ATLAS_13TeV_MONOJET_139infb.cpp" bodystart="23" bodyend="323"/>
+    <listofallmembers>
+      <member refid="classGambit_1_1ColliderBit_1_1Analysis__ATLAS__13TeV__MONOJET__139infb_1adc8fe8e4ea2c961d87470bef528d64e0" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_ATLAS_13TeV_MONOJET_139infb</scope><name>_counters</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1Analysis__ATLAS__13TeV__MONOJET__139infb_1ab35f01c306b496db13878ee004bbba31" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_ATLAS_13TeV_MONOJET_139infb</scope><name>_cutflow</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1Analysis_1aaece33bab954d82337af28138e893bcf" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_ATLAS_13TeV_MONOJET_139infb</scope><name>add</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1Analysis_1a129c783782dbf71bf5920676a6825f82" prot="protected" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_ATLAS_13TeV_MONOJET_139infb</scope><name>add_result</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1Analysis_1a3eeaadd4fec4b19602be715d1403607e" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_ATLAS_13TeV_MONOJET_139infb</scope><name>Analysis</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1Analysis__ATLAS__13TeV__MONOJET__139infb_1a552b3d962d642e9d5717f9ed704a5338" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_ATLAS_13TeV_MONOJET_139infb</scope><name>Analysis_ATLAS_13TeV_MONOJET_139infb</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1Analysis_1af499cb63caf6576d6ad837424b0616ac" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_ATLAS_13TeV_MONOJET_139infb</scope><name>analysis_name</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1Analysis__ATLAS__13TeV__MONOJET__139infb_1a810794ba340727be5ec66ce67aa350a2" prot="protected" virt="virtual"><scope>Gambit::ColliderBit::Analysis_ATLAS_13TeV_MONOJET_139infb</scope><name>analysis_specific_reset</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1Analysis_1a3e58cdb4d72d7bb80cff7d3124aee2c1" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_ATLAS_13TeV_MONOJET_139infb</scope><name>analyze</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1Analysis_1a297020aa68d1f38fe53da210a0ba12df" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_ATLAS_13TeV_MONOJET_139infb</scope><name>analyze</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1Analysis__ATLAS__13TeV__MONOJET__139infb_1a2552b1bfb88adee040bc9a2ffa12dc9b" prot="public" virt="virtual"><scope>Gambit::ColliderBit::Analysis_ATLAS_13TeV_MONOJET_139infb</scope><name>collect_results</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1Analysis__ATLAS__13TeV__MONOJET__139infb_1a909a77281781329910617c665fedb37b" prot="public" virt="virtual"><scope>Gambit::ColliderBit::Analysis_ATLAS_13TeV_MONOJET_139infb</scope><name>combine</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1Analysis__ATLAS__13TeV__MONOJET__139infb_1a4a86f456aa81c31130d93c620dd4a6d6" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_ATLAS_13TeV_MONOJET_139infb</scope><name>detector</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1Analysis__ATLAS__13TeV__MONOJET__139infb_1ad88a3522539a807c9a6d12e2aad1ee53" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_ATLAS_13TeV_MONOJET_139infb</scope><name>ejetOverlapRemoval</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1Analysis_1a1ec44b31958a10cdaa92c618e77b5461" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_ATLAS_13TeV_MONOJET_139infb</scope><name>get_results</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1Analysis_1a3c258242277f9b6239f7d009b7efb896" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_ATLAS_13TeV_MONOJET_139infb</scope><name>get_results</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1Analysis_1a90730956c35e8ab0538f296612361fbf" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_ATLAS_13TeV_MONOJET_139infb</scope><name>get_results_ptr</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1Analysis_1a04e2235c75dd5adfb5c6276ceb91a278" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_ATLAS_13TeV_MONOJET_139infb</scope><name>get_results_ptr</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1Analysis_1ab29800db11771a7d786f109b5dbe0140" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_ATLAS_13TeV_MONOJET_139infb</scope><name>luminosity</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1Analysis__ATLAS__13TeV__MONOJET__139infb_1a9fc8883b09c7962c8a93a8b1376dc85e" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_ATLAS_13TeV_MONOJET_139infb</scope><name>NUMSR</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1Analysis_1a81b74cf3a8dbc3d9ef0593f9510e3134" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_ATLAS_13TeV_MONOJET_139infb</scope><name>reset</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1Analysis__ATLAS__13TeV__MONOJET__139infb_1a969c96d4080ef4a7f4394c02d7ffc74a" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_ATLAS_13TeV_MONOJET_139infb</scope><name>run</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1Analysis_1a0dafd20d05d95ef37fe3389de7b0ae61" prot="protected" virt="pure-virtual" ambiguityscope="Gambit::ColliderBit::Analysis::"><scope>Gambit::ColliderBit::Analysis_ATLAS_13TeV_MONOJET_139infb</scope><name>run</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1Analysis_1a3c6f2c8b6f7069239d3407ba9456003c" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_ATLAS_13TeV_MONOJET_139infb</scope><name>scale</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1Analysis_1a4998785e3f5ebd96a148af8b4fbf575d" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_ATLAS_13TeV_MONOJET_139infb</scope><name>set_analysis_name</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1Analysis_1af5f66da284a6474f3c8f9e4368a68a48" prot="protected" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_ATLAS_13TeV_MONOJET_139infb</scope><name>set_bkgjson</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1Analysis_1a85634b0ca3817f602fa53630071879ae" prot="protected" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_ATLAS_13TeV_MONOJET_139infb</scope><name>set_covariance</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1Analysis_1af72693e91a323d2a7604e029b748564f" prot="protected" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_ATLAS_13TeV_MONOJET_139infb</scope><name>set_covariance</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1Analysis_1affc00d6a3606fda2e214b99dba9598c6" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_ATLAS_13TeV_MONOJET_139infb</scope><name>set_luminosity</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1Analysis_1ab3a56e82a29f91e87ad1d12b6b825b2c" prot="public" virt="virtual"><scope>Gambit::ColliderBit::Analysis_ATLAS_13TeV_MONOJET_139infb</scope><name>~Analysis</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

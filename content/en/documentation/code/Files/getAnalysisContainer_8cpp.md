@@ -45,7 +45,8 @@ description: "[No description available]"
   * 2019 Jan, Feb
   * 2017 March 
   * 2018 Jan 
-  * 2018 May
+  * 2018 May 
+  * 2021 Oct
 
 
 Initialisation functions for ColliderBit analyses.
@@ -126,6 +127,7 @@ Retrieve a container for analyses with EXPERIMENT.
 ///  \date   2017 March
 ///  \date   2018 Jan
 ///  \date   2018 May
+///  \date   2021 Oct
 ///
 ///  *********************************************
 
@@ -148,9 +150,15 @@ namespace Gambit
                               int iteration)
     {
       if (RunMC.analyses.empty() or iteration == BASE_INIT) return;
+
+      if (iteration == COLLIDER_INIT)
+      {
+        result.set_current_collider(RunMC.current_collider());
+      }
+
       if (not RunMC.current_analyses_exist_for(detname)) return;
 
-      if (iteration == START_SUBPROCESS)
+      if (iteration == COLLIDER_INIT_OMP)
       {
         // Register analysis container
         result.register_thread(detname+"AnalysisContainer");
@@ -216,4 +224,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:49 +0000
+Updated on 2023-06-26 at 21:36:56 +0000

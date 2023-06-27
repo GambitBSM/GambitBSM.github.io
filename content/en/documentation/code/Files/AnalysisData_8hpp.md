@@ -20,7 +20,6 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[Gambit::ColliderBit::SignalRegionData](/documentation/code/classes/structgambit_1_1colliderbit_1_1signalregiondata/)** <br>A simple container for the result of one signal region from one analysis.  |
 | struct | **[Gambit::ColliderBit::AnalysisData](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/)**  |
 
 ## Detailed Description
@@ -40,7 +39,7 @@ description: "[No description available]"
   * 2019 Feb
 
 
-AnalysisData and SignalRegion structures.
+AnalysisData struct.
 
 
 
@@ -62,7 +61,7 @@ Authors (add name and date if you modify):
 //   *********************************************
 ///  \file
 ///
-///  AnalysisData and SignalRegion structures.
+///  AnalysisData struct.
 ///
 ///  *********************************************
 ///
@@ -101,101 +100,12 @@ Authors (add name and date if you modify):
 #include <memory>
 #include <iomanip>
 #include <algorithm>
-#include "gambit/ColliderBit/analyses/EventCounter.hpp"
+#include "gambit/ColliderBit/analyses/SignalRegionData.hpp"
 
 namespace Gambit
 {
   namespace ColliderBit
   {
-
-
-    /// A simple container for the result of one signal region from one analysis.
-    struct SignalRegionData
-    {
-
-      /// Constructor with EventCounter arg for the signal count and SR name
-      SignalRegionData(const EventCounter& scounter,
-                       double nobs, const std::pair<double,double>& nbkg,
-                       double nsigscaled=0)
-       : SignalRegionData(scounter.name(), nobs, scounter.weight_sum(), nbkg.first, scounter.weight_sum_err(), nbkg.second, nsigscaled)
-      {}
-
-      /// Constructor with EventCounter arg for the signal count, but separate name
-      SignalRegionData(const std::string& sr,
-                       double nobs, const EventCounter& scounter, const std::pair<double,double>& nbkg,
-                       double nsigscaled=0)
-       : SignalRegionData(sr, nobs, scounter.weight_sum(), nbkg.first, scounter.weight_sum_err(), nbkg.second, nsigscaled)
-      {}
-
-      /// Constructor with {n,nsys} pair args
-      SignalRegionData(const std::string& sr,
-                       double nobs, const std::pair<double,double>& nsigMC, const std::pair<double,double>& nbkg,
-                       double nsigscaled=0)
-       : SignalRegionData(sr, nobs, nsigMC.first, nbkg.first, nsigMC.second, nbkg.second, nsigscaled)
-      {}
-
-      /// Constructor with separate n & nsys args
-      SignalRegionData(const std::string& sr,
-                       double nobs, double nsigMC, double nbkg,
-                       double nsigMCsys, double nbkgerr, double nsigscaled=0)
-       : sr_label(sr),
-         n_obs(nobs), n_sig_MC(nsigMC), n_sig_scaled(nsigscaled), n_bkg(nbkg),
-         n_sig_MC_sys(nsigMCsys), n_bkg_err(nbkgerr)
-      {}
-
-      /// Default constructor
-      SignalRegionData() {}
-
-      /// Consistency check
-      bool check() const
-      {
-        bool consistent = true;
-        /// @todo Add SR consistency checks
-        return consistent;
-      }
-
-      /// Uncertainty calculators
-      double scalefactor() const { return n_sig_MC == 0 ? 1 : n_sig_scaled / n_sig_MC; }
-
-      double calc_n_sig_MC_stat() const { return sqrt(n_sig_MC); }
-
-      double calc_n_sig_MC_err() const 
-      { 
-        double n_sig_MC_stat = calc_n_sig_MC_stat();
-        return sqrt( n_sig_MC_stat * n_sig_MC_stat + n_sig_MC_sys * n_sig_MC_sys ); 
-      }
-
-      double calc_n_sig_scaled_stat() const { return scalefactor() * calc_n_sig_MC_stat(); }
-
-      double calc_n_sig_scaled_sys() const { return scalefactor() * n_sig_MC_sys; }
-
-      double calc_n_sig_scaled_err() const { return scalefactor() * calc_n_sig_MC_err(); }
-
-      double calc_n_sigbkg_err() const 
-      { 
-        double n_sig_scaled_err = calc_n_sig_scaled_err();
-        return sqrt( n_sig_scaled_err * n_sig_scaled_err + n_bkg_err * n_bkg_err );  
-      }
-
-      /// @todo Set up a more complete system of getters/setters and make the member variables private
-
-      /// @name Signal region specification
-      //@{
-      std::string sr_label; ///< A label for the particular signal region of the analysis
-      //@}
-
-      /// @name Signal region data
-      //@{
-      double n_obs = 0; ///< The number of events passing selection for this signal region as reported by the experiment
-      double n_sig_MC = 0; ///< The number of simulated model events passing selection for this signal region
-      double n_sig_scaled = 0; ///< n_sig_MC, scaled to luminosity * cross-section
-      double n_bkg = 0; ///< The number of standard model events expected to pass the selection for this signal region, as reported by the experiment.
-      double n_sig_MC_sys = 0; ///< The absolute systematic error of n_sig_MC
-      double n_bkg_err = 0; ///< The absolute error of n_bkg
-      //@}
-
-    };
-
 
     /// A container for the result of an analysis, potentially with many signal regions and correlations
     ///
@@ -222,8 +132,8 @@ namespace Gambit
       ///
       /// If corrs is a null matrix (the default), this AnalysisData is to be interpreted as having no correlation
       /// information, and hence the likelihood calculation should use the single best-expected-limit SR.
-      AnalysisData(const std::vector<SignalRegionData>& srds, const Eigen::MatrixXd& cov=Eigen::MatrixXd())
-        : srdata(srds), srcov(cov)
+      AnalysisData(const std::vector<SignalRegionData>& srds, const Eigen::MatrixXd& cov=Eigen::MatrixXd(),const std::string path="")
+        : srdata(srds), srcov(cov), bkgjson_path(path)
       {
         check();
       }
@@ -239,6 +149,7 @@ namespace Gambit
           sr.n_sig_MC_sys = 0;
         }
         srcov = Eigen::MatrixXd();
+        bkgjson_path = "";
       }
 
       /// Number of analyses
@@ -257,18 +168,23 @@ namespace Gambit
         // check(); // bjf> This was wrong! Needs to be !=, not ==
         return srcov.rows() != 0;
       }
+      
+      /// Is there non-null correlation data?
+      bool hasFullLikes() const
+      {
+        return (!bkgjson_path.empty());
+      }
 
       /// @brief Add a SignalRegionData
       /// @todo Allow naming the SRs?
       void add(const SignalRegionData& srd)
       {
-        std::string key = analysis_name + srd.sr_label;
-        auto loc = srdata_identifiers.find(key);
+        auto loc = srdata_identifiers.find(srd.sr_label);
         if (loc == srdata_identifiers.end())
         {
           // If the signal region doesn't exist in this object yet, add it
           srdata.push_back(srd);
-          srdata_identifiers[key] = srdata.size() - 1;
+          srdata_identifiers[srd.sr_label] = srdata.size() - 1;
         }
         else
         {
@@ -295,7 +211,7 @@ namespace Gambit
 
       /// Analysis name
       std::string analysis_name;
-
+      
       /// Access the i'th signal region's data
       SignalRegionData& operator[] (size_t i) { return srdata[i]; }
       /// Access the i'th signal region's data (const)
@@ -315,6 +231,9 @@ namespace Gambit
 
       /// Optional covariance matrix between SRs (0x0 null matrix = no correlation info)
       Eigen::MatrixXd srcov;
+      
+      /// FullLikes bkg json file path realtive to the GAMBIT directory
+      std::string bkgjson_path;
 
     };
 
@@ -326,4 +245,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:48 +0000
+Updated on 2023-06-26 at 21:36:56 +0000

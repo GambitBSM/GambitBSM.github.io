@@ -79,11 +79,11 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         
                 ::std::pair<double, double> gauss2();
         
-                int pick(const ::std::vector<double>& prob);
+                int pick(const std::vector<double>& prob);
         
-                bool dumpState(::std::basic_string<char> fileName);
+                bool dumpState(std::string fileName);
         
-                bool readState(::std::basic_string<char> fileName);
+                bool readState(std::string fileName);
         
         
                 // Wrappers for original constructors: 
@@ -120,4 +120,4 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:49 +0000
+Updated on 2023-06-26 at 21:36:57 +0000

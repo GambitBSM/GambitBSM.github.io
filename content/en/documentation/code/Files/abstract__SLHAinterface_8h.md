@@ -65,7 +65,7 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
     
                 virtual void setPtr__BOSS(Pythia8::Abstract_Info*) =0;
     
-                virtual void init__BOSS(Pythia8::Abstract_Settings&, Pythia8::Abstract_Rndm*, Pythia8::Abstract_Couplings*, Pythia8::Abstract_ParticleData*, bool&, ::std::basic_stringstream<char>&) =0;
+                virtual void init__BOSS(Pythia8::Abstract_Settings&, Pythia8::Abstract_Rndm*, Pythia8::Abstract_Couplings*, Pythia8::Abstract_ParticleData*, bool&, std::stringstream&) =0;
     
                 virtual bool initSLHA__BOSS(Pythia8::Abstract_Settings&, Pythia8::Abstract_ParticleData*) =0;
     
@@ -135,4 +135,4 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:49 +0000
+Updated on 2023-06-26 at 21:36:57 +0000

@@ -19,7 +19,8 @@ Inherits from [Gambit::Utils::FileLock](/documentation/code/classes/classgambit_
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[ProcessLock](/documentation/code/classes/classgambit_1_1utils_1_1processlock/#function-processlock)**(const std::string & fname, const bool harderrs =false)<br>Constructor.  |
+| | **[ProcessLock](/documentation/code/classes/classgambit_1_1utils_1_1processlock/#function-processlock)**(const std::string & fname, const bool is_exhaustible =true, const bool harderrs =false)<br>Constructor.  |
+| void | **[clean_locks](/documentation/code/classes/classgambit_1_1utils_1_1processlock/#function-clean-locks)**()<br>Clean up existing process locks.  |
 
 ## Additional inherited members
 
@@ -27,11 +28,12 @@ Inherits from [Gambit::Utils::FileLock](/documentation/code/classes/classgambit_
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[FileLock](/documentation/code/classes/classgambit_1_1utils_1_1filelock/#function-filelock)**(const std::string & fname, const bool harderrs =false)<br>Constructor.  |
+| | **[FileLock](/documentation/code/classes/classgambit_1_1utils_1_1filelock/#function-filelock)**(const std::string & fname, const bool is_exhaustible =false, const bool harderrs =false)<br>Constructor.  |
 | | **[~FileLock](/documentation/code/classes/classgambit_1_1utils_1_1filelock/#function-filelock)**() |
 | void | **[get_lock](/documentation/code/classes/classgambit_1_1utils_1_1filelock/#function-get-lock)**()<br>Obtain lock (or wait if lock cannot be obtained, and then obtain lock)  |
 | void | **[release_lock](/documentation/code/classes/classgambit_1_1utils_1_1filelock/#function-release-lock)**()<br>Release a lock (error if no lock held)  |
 | const std::string & | **[get_filename](/documentation/code/classes/classgambit_1_1utils_1_1filelock/#function-get-filename)**() const<br>Getter for lockfile name.  |
+| bool | **[exhausted](/documentation/code/classes/classgambit_1_1utils_1_1filelock/#function-exhausted)**()<br>Check if lock is exhausted.  |
 
 
 ## Public Functions Documentation
@@ -41,12 +43,24 @@ Inherits from [Gambit::Utils::FileLock](/documentation/code/classes/classgambit_
 ```
 ProcessLock(
     const std::string & fname,
+    const bool is_exhaustible =true,
     const bool harderrs =false
 )
 ```
 
 Constructor. 
 
+### function clean_locks
+
+```
+static void clean_locks()
+```
+
+Clean up existing process locks. 
+
+Deleting existing locks. 
+
+
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:45 +0000
+Updated on 2023-06-26 at 21:36:53 +0000

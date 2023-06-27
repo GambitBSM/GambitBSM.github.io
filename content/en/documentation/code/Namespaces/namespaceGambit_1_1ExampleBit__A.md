@@ -31,7 +31,6 @@ description: "[No description available]"
 | void | **[local_xsection](/documentation/code/namespaces/namespacegambit_1_1examplebit__a/#function-local-xsection)**(double & result) |
 | void | **[large_print](/documentation/code/namespaces/namespacegambit_1_1examplebit__a/#function-large-print)**(std::map< std::string, double > & result) |
 | void | **[marg_poisson_test](/documentation/code/namespaces/namespacegambit_1_1examplebit__a/#function-marg-poisson-test)**(double & result)<br>Test inline marginalisation of a Poisson likelihood over a log-normally or Gaussianly-distributed nuisance parameter.  |
-| void | **[bossed_pythia_test_function](/documentation/code/namespaces/namespacegambit_1_1examplebit__a/#function-bossed-pythia-test-function)**(bool & result)<br>Example of using a BOSSed version of Pythia.  |
 | void | **[Backend_array_test](/documentation/code/namespaces/namespacegambit_1_1examplebit__a/#function-backend-array-test)**(double & result)<br>Tester for C/C++ backend array interfaces.  |
 | void | **[flat_likelihood](/documentation/code/namespaces/namespacegambit_1_1examplebit__a/#function-flat-likelihood)**(double & result)<br>Flat test likelihood for checking prior distributions.  |
 
@@ -220,16 +219,6 @@ void marg_poisson_test(
 
 Test inline marginalisation of a Poisson likelihood over a log-normally or Gaussianly-distributed nuisance parameter. 
 
-### function bossed_pythia_test_function
-
-```
-void bossed_pythia_test_function(
-    bool & result
-)
-```
-
-Example of using a BOSSed version of Pythia. 
-
 ### function Backend_array_test
 
 ```
@@ -266,4 +255,4 @@ Pointer to some function.
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:44 +0000
+Updated on 2023-06-26 at 21:36:52 +0000

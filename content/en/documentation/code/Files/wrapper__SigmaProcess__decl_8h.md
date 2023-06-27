@@ -132,13 +132,13 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         
                 void setScale();
         
-                ::std::basic_string<char> name() const;
+                ::std::string name() const;
         
                 int code() const;
         
                 int nFinal() const;
         
-                ::std::basic_string<char> inFlux() const;
+                ::std::string inFlux() const;
         
                 bool convert2mb() const;
         
@@ -259,4 +259,4 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:49 +0000
+Updated on 2023-06-26 at 21:36:57 +0000

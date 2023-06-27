@@ -1,11 +1,11 @@
 ---
-title: "file HepLike_1_2/wrapper_HL_BifurGaussian_decl.h"
+title: "file HepLike_2_0/wrapper_HL_BifurGaussian_decl.h"
 
 description: "[No description available]"
 
 ---
 
-# file HepLike_1_2/wrapper_HL_BifurGaussian_decl.h
+# file HepLike_2_0/wrapper_HL_BifurGaussian_decl.h
 
 [No description available]
 
@@ -34,8 +34,8 @@ namespace CAT_3(
 ## Source code
 
 ```
-#ifndef __wrapper_HL_BifurGaussian_decl_HepLike_1_2_h__
-#define __wrapper_HL_BifurGaussian_decl_HepLike_1_2_h__
+#ifndef __wrapper_HL_BifurGaussian_decl_HepLike_2_0_h__
+#define __wrapper_HL_BifurGaussian_decl_HepLike_2_0_h__
 
 #include <cstddef>
 #include <string>
@@ -56,7 +56,7 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
       public:
          // -- Static factory pointers: 
          static Abstract_HL_BifurGaussian* (*__factory0)();
-         static Abstract_HL_BifurGaussian* (*__factory1)(::std::basic_string<char>);
+         static Abstract_HL_BifurGaussian* (*__factory1)(std::string);
    
          // -- Other member variables: 
    
@@ -80,7 +80,7 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
          // Wrappers for original constructors: 
       public:
          HL_BifurGaussian();
-         HL_BifurGaussian(::std::basic_string<char> s);
+         HL_BifurGaussian(std::string s);
    
          // Special pointer-based constructor: 
          HL_BifurGaussian(Abstract_HL_BifurGaussian* in);
@@ -104,10 +104,10 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 #include "gambit/Backends/backend_undefs.hpp"
 
-#endif /* __wrapper_HL_BifurGaussian_decl_HepLike_1_2_h__ */
+#endif /* __wrapper_HL_BifurGaussian_decl_HepLike_2_0_h__ */
 ```
 
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:49 +0000
+Updated on 2023-06-26 at 21:36:57 +0000

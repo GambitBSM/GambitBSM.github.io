@@ -1,11 +1,11 @@
 ---
-title: "file HepLike_1_2/abstract_HL_BifurGaussian.h"
+title: "file HepLike_2_0/abstract_HL_BifurGaussian.h"
 
 description: "[No description available]"
 
 ---
 
-# file HepLike_1_2/abstract_HL_BifurGaussian.h
+# file HepLike_2_0/abstract_HL_BifurGaussian.h
 
 [No description available]
 
@@ -34,8 +34,8 @@ namespace CAT_3(
 ## Source code
 
 ```
-#ifndef __abstract_HL_BifurGaussian_HepLike_1_2_h__
-#define __abstract_HL_BifurGaussian_HepLike_1_2_h__
+#ifndef __abstract_HL_BifurGaussian_HepLike_2_0_h__
+#define __abstract_HL_BifurGaussian_HepLike_2_0_h__
 
 #include <cstddef>
 #include <iostream>
@@ -91,7 +91,7 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
          }
    
          Abstract_HL_BifurGaussian(const Abstract_HL_BifurGaussian& in) : 
-            Abstract_HL_Data(in), Abstract_HL_Gaussian(in)
+            Abstract_HL_Gaussian(in)
          {
             wptr = 0;
             delete_wrapper = false;
@@ -122,10 +122,10 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 #include "gambit/Backends/backend_undefs.hpp"
 
 
-#endif /* __abstract_HL_BifurGaussian_HepLike_1_2_h__ */
+#endif /* __abstract_HL_BifurGaussian_HepLike_2_0_h__ */
 ```
 
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:49 +0000
+Updated on 2023-06-26 at 21:36:57 +0000

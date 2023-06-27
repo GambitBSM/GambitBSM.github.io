@@ -1,11 +1,11 @@
 ---
-title: "file HepLike_1_2/wrapper_HL_nDimBifurGaussian_decl.h"
+title: "file HepLike_2_0/wrapper_HL_nDimBifurGaussian_decl.h"
 
 description: "[No description available]"
 
 ---
 
-# file HepLike_1_2/wrapper_HL_nDimBifurGaussian_decl.h
+# file HepLike_2_0/wrapper_HL_nDimBifurGaussian_decl.h
 
 [No description available]
 
@@ -34,8 +34,8 @@ namespace CAT_3(
 ## Source code
 
 ```
-#ifndef __wrapper_HL_nDimBifurGaussian_decl_HepLike_1_2_h__
-#define __wrapper_HL_nDimBifurGaussian_decl_HepLike_1_2_h__
+#ifndef __wrapper_HL_nDimBifurGaussian_decl_HepLike_2_0_h__
+#define __wrapper_HL_nDimBifurGaussian_decl_HepLike_2_0_h__
 
 #include <cstddef>
 #include <string>
@@ -43,7 +43,6 @@ namespace CAT_3(
 #include "forward_decls_wrapper_classes.h"
 #include "gambit/Backends/wrapperbase.hpp"
 #include "abstract_HL_nDimBifurGaussian.h"
-#include "wrapper_HL_Data_decl.h"
 #include <boost/numeric/ublas/matrix.hpp>
 
 #include "identification.hpp"
@@ -52,13 +51,13 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 {
    
    
-   class HL_nDimBifurGaussian : public HL_Data
+   class HL_nDimBifurGaussian : public WrapperBase
    {
          // Member variables: 
       public:
          // -- Static factory pointers: 
          static Abstract_HL_nDimBifurGaussian* (*__factory0)();
-         static Abstract_HL_nDimBifurGaussian* (*__factory1)(::std::basic_string<char>);
+         static Abstract_HL_nDimBifurGaussian* (*__factory1)(std::string);
    
          // -- Other member variables: 
    
@@ -66,27 +65,27 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
       public:
          void Read();
    
-         double GetChi2(::std::vector<double> theory);
+         double GetChi2(std::vector<double> theory);
    
-         double GetLikelihood(::std::vector<double> theory);
+         double GetLikelihood(std::vector<double> theory);
    
-         double GetLogLikelihood(::std::vector<double> theory);
+         double GetLogLikelihood(std::vector<double> theory);
    
-         double GetChi2(::std::vector<double> theory, ::boost::numeric::ublas::matrix<double> theory_cov);
+         double GetChi2(std::vector<double> theory, boost::numeric::ublas::matrix<double> theory_cov);
    
-         double GetLikelihood(::std::vector<double> theory, ::boost::numeric::ublas::matrix<double> theory_cov);
+         double GetLikelihood(std::vector<double> theory, boost::numeric::ublas::matrix<double> theory_cov);
    
-         double GetLogLikelihood(::std::vector<double> theory, ::boost::numeric::ublas::matrix<double> theory_cov);
+         double GetLogLikelihood(std::vector<double> theory, boost::numeric::ublas::matrix<double> theory_cov);
    
-         bool Restrict(::std::vector<std::basic_string<char>> arg_1);
+         bool Restrict(std::vector<std::string> arg_1);
    
-         ::std::vector<std::basic_string<char>> GetObservables();
+         ::std::vector<std::string> GetObservables();
    
    
          // Wrappers for original constructors: 
       public:
          HL_nDimBifurGaussian();
-         HL_nDimBifurGaussian(::std::basic_string<char> s);
+         HL_nDimBifurGaussian(std::string s);
    
          // Special pointer-based constructor: 
          HL_nDimBifurGaussian(Abstract_HL_nDimBifurGaussian* in);
@@ -110,10 +109,10 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 #include "gambit/Backends/backend_undefs.hpp"
 
-#endif /* __wrapper_HL_nDimBifurGaussian_decl_HepLike_1_2_h__ */
+#endif /* __wrapper_HL_nDimBifurGaussian_decl_HepLike_2_0_h__ */
 ```
 
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:49 +0000
+Updated on 2023-06-26 at 21:36:57 +0000

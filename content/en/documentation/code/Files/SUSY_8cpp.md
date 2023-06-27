@@ -22,12 +22,14 @@ description: "[No description available]"
 **Author**: 
 
   * Pat Scott ([p.scott@imperial.ac.uk](mailto:p.scott@imperial.ac.uk)) 
+  * Tomas Gonzalo ([tomas.gonzalo@monash.edu](mailto:tomas.gonzalo@monash.edu)) 
   * Anders Kvellestad ([anders.kvellestad@fys.uio.no](mailto:anders.kvellestad@fys.uio.no)) 
 
 
 **Date**: 
 
   * 2019 Jan
+  * 2019 Oct
   * 2019
 
 
@@ -63,6 +65,10 @@ Authors (add name and date if you modify):
 ///          (p.scott@imperial.ac.uk)
 ///  \date 2019 Jan
 ///
+///  \author Tomas Gonzalo
+///          (tomas.gonzalo@monash.edu)
+///  \date 2019 Oct
+///
 ///  \author Anders Kvellestad
 ///          (anders.kvellestad@fys.uio.no)
 ///  \date 2019
@@ -85,7 +91,7 @@ namespace Gambit
     GET_PYTHIA_AS_BASE_COLLIDER(getPythiaAsBase)
 
     // Run event generator
-    GET_PYTHIA_EVENT(generateEventPythia)
+    GET_PYTHIA_EVENT(generateEventPythia, Pythia_default::Pythia8::Event)
 
   }
 }
@@ -94,4 +100,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:48 +0000
+Updated on 2023-06-26 at 21:36:56 +0000

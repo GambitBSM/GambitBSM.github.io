@@ -47,6 +47,9 @@ Authors (add name and date if you modify):
   (std::string)                             \
   (triplet<double>)                         \
   (map_intpair_dbl)                         \
+  (map_const_str_dbl)                       \
+  (map_const_str_map_const_str_dbl)         \
+  (flav_prediction)                         \
 ```
 
 
@@ -88,6 +91,9 @@ Authors (add name and date if you modify):
   (std::string)                             \
   (triplet<double>)                         \
   (map_intpair_dbl)                         \
+  (map_const_str_dbl)                       \
+  (map_const_str_map_const_str_dbl)         \
+  (flav_prediction)                         \
 
 
 #define ASCII_BACKEND_TYPES                 \
@@ -100,4 +106,4 @@ Authors (add name and date if you modify):
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:46 +0000
+Updated on 2023-06-26 at 21:36:54 +0000

@@ -64,6 +64,7 @@ Inherits from [Gambit::ColliderBit::Analysis](/documentation/code/classes/classg
 | void | **[add_result](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/#function-add-result)**(const [SignalRegionData](/documentation/code/classes/structgambit_1_1colliderbit_1_1signalregiondata/) & sr)<br>Add the given result to the internal results list.  |
 | void | **[set_covariance](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/#function-set-covariance)**(const Eigen::MatrixXd & srcov)<br>Set the covariance matrix, expressing SR correlations.  |
 | void | **[set_covariance](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/#function-set-covariance)**(const std::vector< std::vector< double > > & srcov)<br>A convenience function for setting the SR covariance from a nested vector/initialiser list.  |
+| void | **[set_bkgjson](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/#function-set-bkgjson)**(const std::string & bkgpath)<br>A convenience function for setting the path to the [ATLAS]() FullLikes BKG Json file.  |
 
 
 ## Detailed Description
@@ -74,7 +75,7 @@ class Gambit::ColliderBit::Analysis_ATLAS_13TeV_0LEP_139invfb;
 
 [ATLAS]() Run 2 0-lepton jet+MET SUSY analysis, with 139/fb of data. 
 
-Based on: [https://cds.cern.ch/record/2686254](https://cds.cern.ch/record/2686254)[https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2019-040/](https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2019-040/)
+Originally based on this confnote: [https://cds.cern.ch/record/2686254](https://cds.cern.ch/record/2686254)[https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2019-040/](https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2019-040/) Updated to the paper version: [https://arxiv.org/abs/2010.14293](https://arxiv.org/abs/2010.14293)[https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-2018-22/](https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-2018-22/)
 
 ## Public Functions Documentation
 
@@ -159,17 +160,17 @@ static constexpr const char * detector = "ATLAS";
 
 ```
 std::map< string, EventCounter > _counters = {
-        {"2j-1600", EventCounter("2j-1600")},
-        {"2j-2200", EventCounter("2j-2200")},
-        {"2j-2800", EventCounter("2j-2800")},
-        {"4j-1000", EventCounter("4j-1000")},
-        {"4j-2200", EventCounter("4j-2200")},
-        {"4j-3400", EventCounter("4j-3400")},
-        {"5j-1600", EventCounter("5j-1600")},
-        {"6j-1000", EventCounter("6j-1000")},
-        {"6j-2200", EventCounter("6j-2200")},
-        {"6j-3400", EventCounter("6j-3400")},
-      };
+          {"2j-1600", EventCounter("2j-1600")},
+          {"2j-2200", EventCounter("2j-2200")},
+          {"2j-2800", EventCounter("2j-2800")},
+          {"4j-1000", EventCounter("4j-1000")},
+          {"4j-2200", EventCounter("4j-2200")},
+          {"4j-3400", EventCounter("4j-3400")},
+          {"5j-1600", EventCounter("5j-1600")},
+          {"6j-1000", EventCounter("6j-1000")},
+          {"6j-2200", EventCounter("6j-2200")},
+          {"6j-3400", EventCounter("6j-3400")},
+        };
 ```
 
 
@@ -182,4 +183,4 @@ Cutflows _cutflows;
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:43 +0000
+Updated on 2023-06-26 at 21:36:51 +0000

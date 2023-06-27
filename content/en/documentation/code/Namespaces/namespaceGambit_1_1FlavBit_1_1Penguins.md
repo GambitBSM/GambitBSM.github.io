@@ -13,29 +13,29 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| complex< double > | **[A1R](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1penguins/#function-a1r)**(int alpha, int beta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > mnu) |
-| complex< double > | **[A2L](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1penguins/#function-a2l)**(int alpha, int beta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > ml, vector< double > mnu) |
-| complex< double > | **[A2R](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1penguins/#function-a2r)**(int alpha, int beta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > ml, vector< double > mnu) |
-| complex< double > | **[VZw2w4LL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1penguins/#function-vzw2w4ll)**(int alpha, int beta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > ml, vector< double > mnu) |
-| complex< double > | **[VZw2w4LR](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1penguins/#function-vzw2w4lr)**(int alpha, int beta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > ml, vector< double > mnu) |
-| complex< double > | **[VZw2w4RR](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1penguins/#function-vzw2w4rr)**(int alpha, int beta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > ml, vector< double > mnu) |
-| complex< double > | **[VZw2w4RL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1penguins/#function-vzw2w4rl)**(int alpha, int beta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > ml, vector< double > mnu) |
-| complex< double > | **[VZw8LL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1penguins/#function-vzw8ll)**(int alpha, int beta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > mnu) |
-| complex< double > | **[VZw8LR](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1penguins/#function-vzw8lr)**(int alpha, int beta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > mnu) |
-| complex< double > | **[VZw10LL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1penguins/#function-vzw10ll)**(int alpha, int beta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > mnu) |
-| complex< double > | **[VZw10LR](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1penguins/#function-vzw10lr)**(int alpha, int beta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > mnu) |
-| complex< double > | **[VZsumLL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1penguins/#function-vzsumll)**(int alpha, int beta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > ml, vector< double > mnu) |
-| complex< double > | **[VZsumLR](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1penguins/#function-vzsumlr)**(int alpha, int beta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > ml, vector< double > mnu) |
-| complex< double > | **[VZsumRL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1penguins/#function-vzsumrl)**(int alpha, int beta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > ml, vector< double > mnu) |
-| complex< double > | **[VZsumRR](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1penguins/#function-vzsumrr)**(int alpha, int beta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > ml, vector< double > mnu) |
-| complex< double > | **[Shw2w4LL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1penguins/#function-shw2w4ll)**(int alpha, int beta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > ml, vector< double > mnu) |
-| complex< double > | **[Shw2w4LR](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1penguins/#function-shw2w4lr)**(int alpha, int beta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > ml, vector< double > mnu) |
-| complex< double > | **[Shw2w4RR](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1penguins/#function-shw2w4rr)**(int alpha, int beta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > ml, vector< double > mnu) |
-| complex< double > | **[Shw2w4RL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1penguins/#function-shw2w4rl)**(int alpha, int beta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > ml, vector< double > mnu) |
-| complex< double > | **[ShsumLL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1penguins/#function-shsumll)**(int alpha, int beta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > ml, vector< double > mnu) |
-| complex< double > | **[ShsumLR](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1penguins/#function-shsumlr)**(int alpha, int beta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > ml, vector< double > mnu) |
-| complex< double > | **[ShsumRL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1penguins/#function-shsumrl)**(int alpha, int beta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > ml, vector< double > mnu) |
-| complex< double > | **[ShsumRR](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1penguins/#function-shsumrr)**(int alpha, int beta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > ml, vector< double > mnu) |
+| std::complex< double > | **[A1R](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1penguins/#function-a1r)**(int alpha, int beta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< std::complex< double >, 3, 6 > U, std::vector< double > mnu) |
+| std::complex< double > | **[A2L](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1penguins/#function-a2l)**(int alpha, int beta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< std::complex< double >, 3, 6 > U, std::vector< double > ml, std::vector< double > mnu) |
+| std::complex< double > | **[A2R](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1penguins/#function-a2r)**(int alpha, int beta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< std::complex< double >, 3, 6 > U, std::vector< double > ml, std::vector< double > mnu) |
+| std::complex< double > | **[VZw2w4LL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1penguins/#function-vzw2w4ll)**(int alpha, int beta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< std::complex< double >, 3, 6 > U, std::vector< double > ml, std::vector< double > mnu) |
+| std::complex< double > | **[VZw2w4LR](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1penguins/#function-vzw2w4lr)**(int alpha, int beta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< std::complex< double >, 3, 6 > U, std::vector< double > ml, std::vector< double > mnu) |
+| std::complex< double > | **[VZw2w4RR](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1penguins/#function-vzw2w4rr)**(int alpha, int beta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< std::complex< double >, 3, 6 > U, std::vector< double > ml, std::vector< double > mnu) |
+| std::complex< double > | **[VZw2w4RL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1penguins/#function-vzw2w4rl)**(int alpha, int beta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< std::complex< double >, 3, 6 > U, std::vector< double > ml, std::vector< double > mnu) |
+| std::complex< double > | **[VZw8LL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1penguins/#function-vzw8ll)**(int alpha, int beta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< std::complex< double >, 3, 6 > U, std::vector< double > mnu) |
+| std::complex< double > | **[VZw8LR](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1penguins/#function-vzw8lr)**(int alpha, int beta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< std::complex< double >, 3, 6 > U, std::vector< double > mnu) |
+| std::complex< double > | **[VZw10LL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1penguins/#function-vzw10ll)**(int alpha, int beta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< std::complex< double >, 3, 6 > U, std::vector< double > mnu) |
+| std::complex< double > | **[VZw10LR](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1penguins/#function-vzw10lr)**(int alpha, int beta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< std::complex< double >, 3, 6 > U, std::vector< double > mnu) |
+| std::complex< double > | **[VZsumLL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1penguins/#function-vzsumll)**(int alpha, int beta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< std::complex< double >, 3, 6 > U, std::vector< double > ml, std::vector< double > mnu) |
+| std::complex< double > | **[VZsumLR](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1penguins/#function-vzsumlr)**(int alpha, int beta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< std::complex< double >, 3, 6 > U, std::vector< double > ml, std::vector< double > mnu) |
+| std::complex< double > | **[VZsumRL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1penguins/#function-vzsumrl)**(int alpha, int beta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< std::complex< double >, 3, 6 > U, std::vector< double > ml, std::vector< double > mnu) |
+| std::complex< double > | **[VZsumRR](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1penguins/#function-vzsumrr)**(int alpha, int beta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< std::complex< double >, 3, 6 > U, std::vector< double > ml, std::vector< double > mnu) |
+| std::complex< double > | **[Shw2w4LL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1penguins/#function-shw2w4ll)**(int alpha, int beta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< std::complex< double >, 3, 6 > U, std::vector< double > ml, std::vector< double > mnu) |
+| std::complex< double > | **[Shw2w4LR](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1penguins/#function-shw2w4lr)**(int alpha, int beta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< std::complex< double >, 3, 6 > U, std::vector< double > ml, std::vector< double > mnu) |
+| std::complex< double > | **[Shw2w4RR](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1penguins/#function-shw2w4rr)**(int alpha, int beta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< std::complex< double >, 3, 6 > U, std::vector< double > ml, std::vector< double > mnu) |
+| std::complex< double > | **[Shw2w4RL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1penguins/#function-shw2w4rl)**(int alpha, int beta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< std::complex< double >, 3, 6 > U, std::vector< double > ml, std::vector< double > mnu) |
+| std::complex< double > | **[ShsumLL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1penguins/#function-shsumll)**(int alpha, int beta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< std::complex< double >, 3, 6 > U, std::vector< double > ml, std::vector< double > mnu) |
+| std::complex< double > | **[ShsumLR](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1penguins/#function-shsumlr)**(int alpha, int beta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< std::complex< double >, 3, 6 > U, std::vector< double > ml, std::vector< double > mnu) |
+| std::complex< double > | **[ShsumRL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1penguins/#function-shsumrl)**(int alpha, int beta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< std::complex< double >, 3, 6 > U, std::vector< double > ml, std::vector< double > mnu) |
+| std::complex< double > | **[ShsumRR](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1penguins/#function-shsumrr)**(int alpha, int beta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< std::complex< double >, 3, 6 > U, std::vector< double > ml, std::vector< double > mnu) |
 
 
 ## Functions Documentation
@@ -43,12 +43,12 @@ description: "[No description available]"
 ### function A1R
 
 ```
-complex< double > A1R(
+std::complex< double > A1R(
     int alpha,
     int beta,
     SMInputs sminputs,
-    Eigen::Matrix< complex< double >, 3, 6 > U,
-    vector< double > mnu
+    Eigen::Matrix< std::complex< double >, 3, 6 > U,
+    std::vector< double > mnu
 )
 ```
 
@@ -56,13 +56,13 @@ complex< double > A1R(
 ### function A2L
 
 ```
-complex< double > A2L(
+std::complex< double > A2L(
     int alpha,
     int beta,
     SMInputs sminputs,
-    Eigen::Matrix< complex< double >, 3, 6 > U,
-    vector< double > ml,
-    vector< double > mnu
+    Eigen::Matrix< std::complex< double >, 3, 6 > U,
+    std::vector< double > ml,
+    std::vector< double > mnu
 )
 ```
 
@@ -70,13 +70,13 @@ complex< double > A2L(
 ### function A2R
 
 ```
-complex< double > A2R(
+std::complex< double > A2R(
     int alpha,
     int beta,
     SMInputs sminputs,
-    Eigen::Matrix< complex< double >, 3, 6 > U,
-    vector< double > ml,
-    vector< double > mnu
+    Eigen::Matrix< std::complex< double >, 3, 6 > U,
+    std::vector< double > ml,
+    std::vector< double > mnu
 )
 ```
 
@@ -84,13 +84,13 @@ complex< double > A2R(
 ### function VZw2w4LL
 
 ```
-complex< double > VZw2w4LL(
+std::complex< double > VZw2w4LL(
     int alpha,
     int beta,
     SMInputs sminputs,
-    Eigen::Matrix< complex< double >, 3, 6 > U,
-    vector< double > ml,
-    vector< double > mnu
+    Eigen::Matrix< std::complex< double >, 3, 6 > U,
+    std::vector< double > ml,
+    std::vector< double > mnu
 )
 ```
 
@@ -98,13 +98,13 @@ complex< double > VZw2w4LL(
 ### function VZw2w4LR
 
 ```
-complex< double > VZw2w4LR(
+std::complex< double > VZw2w4LR(
     int alpha,
     int beta,
     SMInputs sminputs,
-    Eigen::Matrix< complex< double >, 3, 6 > U,
-    vector< double > ml,
-    vector< double > mnu
+    Eigen::Matrix< std::complex< double >, 3, 6 > U,
+    std::vector< double > ml,
+    std::vector< double > mnu
 )
 ```
 
@@ -112,13 +112,13 @@ complex< double > VZw2w4LR(
 ### function VZw2w4RR
 
 ```
-complex< double > VZw2w4RR(
+std::complex< double > VZw2w4RR(
     int alpha,
     int beta,
     SMInputs sminputs,
-    Eigen::Matrix< complex< double >, 3, 6 > U,
-    vector< double > ml,
-    vector< double > mnu
+    Eigen::Matrix< std::complex< double >, 3, 6 > U,
+    std::vector< double > ml,
+    std::vector< double > mnu
 )
 ```
 
@@ -126,13 +126,13 @@ complex< double > VZw2w4RR(
 ### function VZw2w4RL
 
 ```
-complex< double > VZw2w4RL(
+std::complex< double > VZw2w4RL(
     int alpha,
     int beta,
     SMInputs sminputs,
-    Eigen::Matrix< complex< double >, 3, 6 > U,
-    vector< double > ml,
-    vector< double > mnu
+    Eigen::Matrix< std::complex< double >, 3, 6 > U,
+    std::vector< double > ml,
+    std::vector< double > mnu
 )
 ```
 
@@ -140,12 +140,12 @@ complex< double > VZw2w4RL(
 ### function VZw8LL
 
 ```
-complex< double > VZw8LL(
+std::complex< double > VZw8LL(
     int alpha,
     int beta,
     SMInputs sminputs,
-    Eigen::Matrix< complex< double >, 3, 6 > U,
-    vector< double > mnu
+    Eigen::Matrix< std::complex< double >, 3, 6 > U,
+    std::vector< double > mnu
 )
 ```
 
@@ -153,12 +153,12 @@ complex< double > VZw8LL(
 ### function VZw8LR
 
 ```
-complex< double > VZw8LR(
+std::complex< double > VZw8LR(
     int alpha,
     int beta,
     SMInputs sminputs,
-    Eigen::Matrix< complex< double >, 3, 6 > U,
-    vector< double > mnu
+    Eigen::Matrix< std::complex< double >, 3, 6 > U,
+    std::vector< double > mnu
 )
 ```
 
@@ -166,12 +166,12 @@ complex< double > VZw8LR(
 ### function VZw10LL
 
 ```
-complex< double > VZw10LL(
+std::complex< double > VZw10LL(
     int alpha,
     int beta,
     SMInputs sminputs,
-    Eigen::Matrix< complex< double >, 3, 6 > U,
-    vector< double > mnu
+    Eigen::Matrix< std::complex< double >, 3, 6 > U,
+    std::vector< double > mnu
 )
 ```
 
@@ -179,12 +179,12 @@ complex< double > VZw10LL(
 ### function VZw10LR
 
 ```
-complex< double > VZw10LR(
+std::complex< double > VZw10LR(
     int alpha,
     int beta,
     SMInputs sminputs,
-    Eigen::Matrix< complex< double >, 3, 6 > U,
-    vector< double > mnu
+    Eigen::Matrix< std::complex< double >, 3, 6 > U,
+    std::vector< double > mnu
 )
 ```
 
@@ -192,13 +192,13 @@ complex< double > VZw10LR(
 ### function VZsumLL
 
 ```
-complex< double > VZsumLL(
+std::complex< double > VZsumLL(
     int alpha,
     int beta,
     SMInputs sminputs,
-    Eigen::Matrix< complex< double >, 3, 6 > U,
-    vector< double > ml,
-    vector< double > mnu
+    Eigen::Matrix< std::complex< double >, 3, 6 > U,
+    std::vector< double > ml,
+    std::vector< double > mnu
 )
 ```
 
@@ -206,13 +206,13 @@ complex< double > VZsumLL(
 ### function VZsumLR
 
 ```
-complex< double > VZsumLR(
+std::complex< double > VZsumLR(
     int alpha,
     int beta,
     SMInputs sminputs,
-    Eigen::Matrix< complex< double >, 3, 6 > U,
-    vector< double > ml,
-    vector< double > mnu
+    Eigen::Matrix< std::complex< double >, 3, 6 > U,
+    std::vector< double > ml,
+    std::vector< double > mnu
 )
 ```
 
@@ -220,13 +220,13 @@ complex< double > VZsumLR(
 ### function VZsumRL
 
 ```
-complex< double > VZsumRL(
+std::complex< double > VZsumRL(
     int alpha,
     int beta,
     SMInputs sminputs,
-    Eigen::Matrix< complex< double >, 3, 6 > U,
-    vector< double > ml,
-    vector< double > mnu
+    Eigen::Matrix< std::complex< double >, 3, 6 > U,
+    std::vector< double > ml,
+    std::vector< double > mnu
 )
 ```
 
@@ -234,13 +234,13 @@ complex< double > VZsumRL(
 ### function VZsumRR
 
 ```
-complex< double > VZsumRR(
+std::complex< double > VZsumRR(
     int alpha,
     int beta,
     SMInputs sminputs,
-    Eigen::Matrix< complex< double >, 3, 6 > U,
-    vector< double > ml,
-    vector< double > mnu
+    Eigen::Matrix< std::complex< double >, 3, 6 > U,
+    std::vector< double > ml,
+    std::vector< double > mnu
 )
 ```
 
@@ -248,13 +248,13 @@ complex< double > VZsumRR(
 ### function Shw2w4LL
 
 ```
-complex< double > Shw2w4LL(
+std::complex< double > Shw2w4LL(
     int alpha,
     int beta,
     SMInputs sminputs,
-    Eigen::Matrix< complex< double >, 3, 6 > U,
-    vector< double > ml,
-    vector< double > mnu
+    Eigen::Matrix< std::complex< double >, 3, 6 > U,
+    std::vector< double > ml,
+    std::vector< double > mnu
 )
 ```
 
@@ -262,13 +262,13 @@ complex< double > Shw2w4LL(
 ### function Shw2w4LR
 
 ```
-complex< double > Shw2w4LR(
+std::complex< double > Shw2w4LR(
     int alpha,
     int beta,
     SMInputs sminputs,
-    Eigen::Matrix< complex< double >, 3, 6 > U,
-    vector< double > ml,
-    vector< double > mnu
+    Eigen::Matrix< std::complex< double >, 3, 6 > U,
+    std::vector< double > ml,
+    std::vector< double > mnu
 )
 ```
 
@@ -276,13 +276,13 @@ complex< double > Shw2w4LR(
 ### function Shw2w4RR
 
 ```
-complex< double > Shw2w4RR(
+std::complex< double > Shw2w4RR(
     int alpha,
     int beta,
     SMInputs sminputs,
-    Eigen::Matrix< complex< double >, 3, 6 > U,
-    vector< double > ml,
-    vector< double > mnu
+    Eigen::Matrix< std::complex< double >, 3, 6 > U,
+    std::vector< double > ml,
+    std::vector< double > mnu
 )
 ```
 
@@ -290,13 +290,13 @@ complex< double > Shw2w4RR(
 ### function Shw2w4RL
 
 ```
-complex< double > Shw2w4RL(
+std::complex< double > Shw2w4RL(
     int alpha,
     int beta,
     SMInputs sminputs,
-    Eigen::Matrix< complex< double >, 3, 6 > U,
-    vector< double > ml,
-    vector< double > mnu
+    Eigen::Matrix< std::complex< double >, 3, 6 > U,
+    std::vector< double > ml,
+    std::vector< double > mnu
 )
 ```
 
@@ -304,13 +304,13 @@ complex< double > Shw2w4RL(
 ### function ShsumLL
 
 ```
-complex< double > ShsumLL(
+std::complex< double > ShsumLL(
     int alpha,
     int beta,
     SMInputs sminputs,
-    Eigen::Matrix< complex< double >, 3, 6 > U,
-    vector< double > ml,
-    vector< double > mnu
+    Eigen::Matrix< std::complex< double >, 3, 6 > U,
+    std::vector< double > ml,
+    std::vector< double > mnu
 )
 ```
 
@@ -318,13 +318,13 @@ complex< double > ShsumLL(
 ### function ShsumLR
 
 ```
-complex< double > ShsumLR(
+std::complex< double > ShsumLR(
     int alpha,
     int beta,
     SMInputs sminputs,
-    Eigen::Matrix< complex< double >, 3, 6 > U,
-    vector< double > ml,
-    vector< double > mnu
+    Eigen::Matrix< std::complex< double >, 3, 6 > U,
+    std::vector< double > ml,
+    std::vector< double > mnu
 )
 ```
 
@@ -332,13 +332,13 @@ complex< double > ShsumLR(
 ### function ShsumRL
 
 ```
-complex< double > ShsumRL(
+std::complex< double > ShsumRL(
     int alpha,
     int beta,
     SMInputs sminputs,
-    Eigen::Matrix< complex< double >, 3, 6 > U,
-    vector< double > ml,
-    vector< double > mnu
+    Eigen::Matrix< std::complex< double >, 3, 6 > U,
+    std::vector< double > ml,
+    std::vector< double > mnu
 )
 ```
 
@@ -346,13 +346,13 @@ complex< double > ShsumRL(
 ### function ShsumRR
 
 ```
-complex< double > ShsumRR(
+std::complex< double > ShsumRR(
     int alpha,
     int beta,
     SMInputs sminputs,
-    Eigen::Matrix< complex< double >, 3, 6 > U,
-    vector< double > ml,
-    vector< double > mnu
+    Eigen::Matrix< std::complex< double >, 3, 6 > U,
+    std::vector< double > ml,
+    std::vector< double > mnu
 )
 ```
 
@@ -363,4 +363,4 @@ complex< double > ShsumRR(
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:44 +0000
+Updated on 2023-06-26 at 21:36:52 +0000

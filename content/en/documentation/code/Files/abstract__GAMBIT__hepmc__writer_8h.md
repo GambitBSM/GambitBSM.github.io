@@ -44,6 +44,7 @@ namespace CAT_3(
 #include "forward_decls_abstract_classes.h"
 #include "forward_decls_wrapper_classes.h"
 #include "wrapper_Pythia_decl.h"
+#include "HepMC3/GenEvent.h"
 
 #include "identification.hpp"
 
@@ -57,11 +58,13 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         {
             public:
     
-                virtual void init(::std::basic_string<char>, bool, bool) =0;
+                virtual void init(std::string, bool, bool) =0;
     
                 virtual void write_event_HepMC3__BOSS(Pythia8::Abstract_Pythia*) =0;
     
                 virtual void write_event_HepMC2__BOSS(Pythia8::Abstract_Pythia*) =0;
+    
+                virtual void convert_to_HepMC_event__BOSS(Pythia8::Abstract_Pythia*, HepMC3::GenEvent&) =0;
     
             public:
                 virtual void pointer_assign__BOSS(Abstract_GAMBIT_hepmc_writer*) =0;
@@ -121,4 +124,4 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:49 +0000
+Updated on 2023-06-26 at 21:36:57 +0000

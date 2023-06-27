@@ -224,7 +224,7 @@
 <codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>convert_to_slha()<sp/>=0;</highlight></codeline>
 <codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lep__mssm__xsecs_8hpp_1ad77ec694b2787bf548b6e9a9c62a259c" kindref="member">print</ref>(::std::basic_ostream&lt;</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">,<sp/>std::char_traits&lt;char&gt;<sp/>&gt;&amp;)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=0;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="lep__mssm__xsecs_8hpp_1ad77ec694b2787bf548b6e9a9c62a259c" kindref="member">print</ref>(std::ostream&amp;)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>=0;</highlight></codeline>
 <codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>MVG_ref__BOSS()<sp/>=0;</highlight></codeline>
 <codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
@@ -264,65 +264,65 @@
 <codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>MSvtL_ref__BOSS()<sp/>=0;</highlight></codeline>
 <codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/>::Eigen::Array&lt;double,<sp/>2,<sp/>1,<sp/>0,<sp/>2,<sp/>1&gt;&amp;<sp/>MSd_ref__BOSS()<sp/>=0;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/>::Eigen::Array&lt;double,<sp/>2,<sp/>1,<sp/>0&gt;&amp;<sp/>MSd_ref__BOSS()<sp/>=0;</highlight></codeline>
 <codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/>::Eigen::Array&lt;double,<sp/>2,<sp/>1,<sp/>0,<sp/>2,<sp/>1&gt;&amp;<sp/>MSu_ref__BOSS()<sp/>=0;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/>::Eigen::Array&lt;double,<sp/>2,<sp/>1,<sp/>0&gt;&amp;<sp/>MSu_ref__BOSS()<sp/>=0;</highlight></codeline>
 <codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/>::Eigen::Array&lt;double,<sp/>2,<sp/>1,<sp/>0,<sp/>2,<sp/>1&gt;&amp;<sp/>MSe_ref__BOSS()<sp/>=0;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/>::Eigen::Array&lt;double,<sp/>2,<sp/>1,<sp/>0&gt;&amp;<sp/>MSe_ref__BOSS()<sp/>=0;</highlight></codeline>
 <codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/>::Eigen::Array&lt;double,<sp/>2,<sp/>1,<sp/>0,<sp/>2,<sp/>1&gt;&amp;<sp/>MSm_ref__BOSS()<sp/>=0;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/>::Eigen::Array&lt;double,<sp/>2,<sp/>1,<sp/>0&gt;&amp;<sp/>MSm_ref__BOSS()<sp/>=0;</highlight></codeline>
 <codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/>::Eigen::Array&lt;double,<sp/>2,<sp/>1,<sp/>0,<sp/>2,<sp/>1&gt;&amp;<sp/>MStau_ref__BOSS()<sp/>=0;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/>::Eigen::Array&lt;double,<sp/>2,<sp/>1,<sp/>0&gt;&amp;<sp/>MStau_ref__BOSS()<sp/>=0;</highlight></codeline>
 <codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/>::Eigen::Array&lt;double,<sp/>2,<sp/>1,<sp/>0,<sp/>2,<sp/>1&gt;&amp;<sp/>MSs_ref__BOSS()<sp/>=0;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/>::Eigen::Array&lt;double,<sp/>2,<sp/>1,<sp/>0&gt;&amp;<sp/>MSs_ref__BOSS()<sp/>=0;</highlight></codeline>
 <codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/>::Eigen::Array&lt;double,<sp/>2,<sp/>1,<sp/>0,<sp/>2,<sp/>1&gt;&amp;<sp/>MSc_ref__BOSS()<sp/>=0;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/>::Eigen::Array&lt;double,<sp/>2,<sp/>1,<sp/>0&gt;&amp;<sp/>MSc_ref__BOSS()<sp/>=0;</highlight></codeline>
 <codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/>::Eigen::Array&lt;double,<sp/>2,<sp/>1,<sp/>0,<sp/>2,<sp/>1&gt;&amp;<sp/>MSb_ref__BOSS()<sp/>=0;</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/>::Eigen::Array&lt;double,<sp/>2,<sp/>1,<sp/>0&gt;&amp;<sp/>MSb_ref__BOSS()<sp/>=0;</highlight></codeline>
 <codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/>::Eigen::Array&lt;double,<sp/>2,<sp/>1,<sp/>0,<sp/>2,<sp/>1&gt;&amp;<sp/>MSt_ref__BOSS()<sp/>=0;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/>::Eigen::Array&lt;double,<sp/>2,<sp/>1,<sp/>0&gt;&amp;<sp/>MSt_ref__BOSS()<sp/>=0;</highlight></codeline>
 <codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/>::Eigen::Array&lt;double,<sp/>2,<sp/>1,<sp/>0,<sp/>2,<sp/>1&gt;&amp;<sp/>Mhh_ref__BOSS()<sp/>=0;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/>::Eigen::Array&lt;double,<sp/>2,<sp/>1,<sp/>0&gt;&amp;<sp/>Mhh_ref__BOSS()<sp/>=0;</highlight></codeline>
 <codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/>::Eigen::Array&lt;double,<sp/>2,<sp/>1,<sp/>0,<sp/>2,<sp/>1&gt;&amp;<sp/>MAh_ref__BOSS()<sp/>=0;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/>::Eigen::Array&lt;double,<sp/>2,<sp/>1,<sp/>0&gt;&amp;<sp/>MAh_ref__BOSS()<sp/>=0;</highlight></codeline>
 <codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/>::Eigen::Array&lt;double,<sp/>2,<sp/>1,<sp/>0,<sp/>2,<sp/>1&gt;&amp;<sp/>MHpm_ref__BOSS()<sp/>=0;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/>::Eigen::Array&lt;double,<sp/>2,<sp/>1,<sp/>0&gt;&amp;<sp/>MHpm_ref__BOSS()<sp/>=0;</highlight></codeline>
 <codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/>::Eigen::Array&lt;double,<sp/>4,<sp/>1,<sp/>0,<sp/>4,<sp/>1&gt;&amp;<sp/>MChi_ref__BOSS()<sp/>=0;</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/>::Eigen::Array&lt;double,<sp/>4,<sp/>1,<sp/>0&gt;&amp;<sp/>MChi_ref__BOSS()<sp/>=0;</highlight></codeline>
 <codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/>::Eigen::Array&lt;double,<sp/>2,<sp/>1,<sp/>0,<sp/>2,<sp/>1&gt;&amp;<sp/>MCha_ref__BOSS()<sp/>=0;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/>::Eigen::Array&lt;double,<sp/>2,<sp/>1,<sp/>0&gt;&amp;<sp/>MCha_ref__BOSS()<sp/>=0;</highlight></codeline>
 <codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>MVWm_ref__BOSS()<sp/>=0;</highlight></codeline>
 <codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/>::Eigen::Matrix&lt;double,<sp/>2,<sp/>2,<sp/>0,<sp/>2,<sp/>2&gt;&amp;<sp/>ZD_ref__BOSS()<sp/>=0;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/>::Eigen::Matrix&lt;double,<sp/>2,<sp/>2,<sp/>0&gt;&amp;<sp/>ZD_ref__BOSS()<sp/>=0;</highlight></codeline>
 <codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/>::Eigen::Matrix&lt;double,<sp/>2,<sp/>2,<sp/>0,<sp/>2,<sp/>2&gt;&amp;<sp/>ZU_ref__BOSS()<sp/>=0;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/>::Eigen::Matrix&lt;double,<sp/>2,<sp/>2,<sp/>0&gt;&amp;<sp/>ZU_ref__BOSS()<sp/>=0;</highlight></codeline>
 <codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/>::Eigen::Matrix&lt;double,<sp/>2,<sp/>2,<sp/>0,<sp/>2,<sp/>2&gt;&amp;<sp/>ZE_ref__BOSS()<sp/>=0;</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/>::Eigen::Matrix&lt;double,<sp/>2,<sp/>2,<sp/>0&gt;&amp;<sp/>ZE_ref__BOSS()<sp/>=0;</highlight></codeline>
 <codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/>::Eigen::Matrix&lt;double,<sp/>2,<sp/>2,<sp/>0,<sp/>2,<sp/>2&gt;&amp;<sp/>ZM_ref__BOSS()<sp/>=0;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/>::Eigen::Matrix&lt;double,<sp/>2,<sp/>2,<sp/>0&gt;&amp;<sp/>ZM_ref__BOSS()<sp/>=0;</highlight></codeline>
 <codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/>::Eigen::Matrix&lt;double,<sp/>2,<sp/>2,<sp/>0,<sp/>2,<sp/>2&gt;&amp;<sp/>ZTau_ref__BOSS()<sp/>=0;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/>::Eigen::Matrix&lt;double,<sp/>2,<sp/>2,<sp/>0&gt;&amp;<sp/>ZTau_ref__BOSS()<sp/>=0;</highlight></codeline>
 <codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/>::Eigen::Matrix&lt;double,<sp/>2,<sp/>2,<sp/>0,<sp/>2,<sp/>2&gt;&amp;<sp/>ZS_ref__BOSS()<sp/>=0;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/>::Eigen::Matrix&lt;double,<sp/>2,<sp/>2,<sp/>0&gt;&amp;<sp/>ZS_ref__BOSS()<sp/>=0;</highlight></codeline>
 <codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/>::Eigen::Matrix&lt;double,<sp/>2,<sp/>2,<sp/>0,<sp/>2,<sp/>2&gt;&amp;<sp/>ZC_ref__BOSS()<sp/>=0;</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/>::Eigen::Matrix&lt;double,<sp/>2,<sp/>2,<sp/>0&gt;&amp;<sp/>ZC_ref__BOSS()<sp/>=0;</highlight></codeline>
 <codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/>::Eigen::Matrix&lt;double,<sp/>2,<sp/>2,<sp/>0,<sp/>2,<sp/>2&gt;&amp;<sp/>ZB_ref__BOSS()<sp/>=0;</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/>::Eigen::Matrix&lt;double,<sp/>2,<sp/>2,<sp/>0&gt;&amp;<sp/>ZB_ref__BOSS()<sp/>=0;</highlight></codeline>
 <codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/>::Eigen::Matrix&lt;double,<sp/>2,<sp/>2,<sp/>0,<sp/>2,<sp/>2&gt;&amp;<sp/>ZT_ref__BOSS()<sp/>=0;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/>::Eigen::Matrix&lt;double,<sp/>2,<sp/>2,<sp/>0&gt;&amp;<sp/>ZT_ref__BOSS()<sp/>=0;</highlight></codeline>
 <codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/>::Eigen::Matrix&lt;double,<sp/>2,<sp/>2,<sp/>0,<sp/>2,<sp/>2&gt;&amp;<sp/>ZH_ref__BOSS()<sp/>=0;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/>::Eigen::Matrix&lt;double,<sp/>2,<sp/>2,<sp/>0&gt;&amp;<sp/>ZH_ref__BOSS()<sp/>=0;</highlight></codeline>
 <codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/>::Eigen::Matrix&lt;double,<sp/>2,<sp/>2,<sp/>0,<sp/>2,<sp/>2&gt;&amp;<sp/>ZA_ref__BOSS()<sp/>=0;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/>::Eigen::Matrix&lt;double,<sp/>2,<sp/>2,<sp/>0&gt;&amp;<sp/>ZA_ref__BOSS()<sp/>=0;</highlight></codeline>
 <codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/>::Eigen::Matrix&lt;double,<sp/>2,<sp/>2,<sp/>0,<sp/>2,<sp/>2&gt;&amp;<sp/>ZP_ref__BOSS()<sp/>=0;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/>::Eigen::Matrix&lt;double,<sp/>2,<sp/>2,<sp/>0&gt;&amp;<sp/>ZP_ref__BOSS()<sp/>=0;</highlight></codeline>
 <codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/>::Eigen::Matrix&lt;std::complex&lt;double&gt;,<sp/>4,<sp/>4,<sp/>0,<sp/>4,<sp/>4&gt;&amp;<sp/>ZN_ref__BOSS()<sp/>=0;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/>::Eigen::Matrix&lt;std::complex&lt;double&gt;,<sp/>4,<sp/>4,<sp/>0&gt;&amp;<sp/>ZN_ref__BOSS()<sp/>=0;</highlight></codeline>
 <codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/>::Eigen::Matrix&lt;std::complex&lt;double&gt;,<sp/>2,<sp/>2,<sp/>0,<sp/>2,<sp/>2&gt;&amp;<sp/>UM_ref__BOSS()<sp/>=0;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/>::Eigen::Matrix&lt;std::complex&lt;double&gt;,<sp/>2,<sp/>2,<sp/>0&gt;&amp;<sp/>UM_ref__BOSS()<sp/>=0;</highlight></codeline>
 <codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/>::Eigen::Matrix&lt;std::complex&lt;double&gt;,<sp/>2,<sp/>2,<sp/>0,<sp/>2,<sp/>2&gt;&amp;<sp/>UP_ref__BOSS()<sp/>=0;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>virtual<sp/>::Eigen::Matrix&lt;std::complex&lt;double&gt;,<sp/>2,<sp/>2,<sp/>0&gt;&amp;<sp/>UP_ref__BOSS()<sp/>=0;</highlight></codeline>
 <codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>pointer_assign__BOSS(Abstract_MSSMNoFV_onshell_physical*)<sp/>=0;</highlight></codeline>

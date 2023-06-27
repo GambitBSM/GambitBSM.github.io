@@ -122,9 +122,13 @@ namespace Gambit
 
     // Piggyback off existing print functions to build standard overloads
     USE_COMMON_PRINT_OVERLOAD(coutPrinter, map_str_dbl)
+    USE_COMMON_PRINT_OVERLOAD(coutPrinter, map_str_str)
     USE_COMMON_PRINT_OVERLOAD(coutPrinter, map_intpair_dbl)
     USE_COMMON_PRINT_OVERLOAD(coutPrinter, ModelParameters)
     USE_COMMON_PRINT_OVERLOAD(coutPrinter, triplet<double>)
+    USE_COMMON_PRINT_OVERLOAD(coutPrinter, map_const_str_dbl)
+    USE_COMMON_PRINT_OVERLOAD(coutPrinter, map_const_str_map_const_str_dbl)
+    USE_COMMON_PRINT_OVERLOAD(coutPrinter, flav_prediction)
     #ifndef SCANNER_STANDALONE
       USE_COMMON_PRINT_OVERLOAD(coutPrinter, DM_nucleon_couplings)
       USE_COMMON_PRINT_OVERLOAD(coutPrinter, BBN_container)
@@ -139,4 +143,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:46 +0000
+Updated on 2023-06-26 at 21:36:54 +0000

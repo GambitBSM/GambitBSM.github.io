@@ -20,9 +20,8 @@ description: "[No description available]"
 | -------------- | -------------- |
 | | **[interp2d_collection](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/#function-interp2d-collection)**(const std::string collection_name_in, const std::string file_name_in, const std::vector< std::string > colnames_in) |
 | | **[~interp2d_collection](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/#function-interp2d-collection)**() |
-| double | **[eval](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/#function-eval)**(double x, double y, size_t interp_index) const |
-| double | **[eval](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/#function-eval)**(double x, double y) const |
-| bool | **[is_inside_range](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/#function-is-inside-range)**(double x, double y) const |
+| double | **[eval](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/#function-eval)**(double x1, double x2, size_t interp_index) |
+| bool | **[is_inside_range](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/#function-is-inside-range)**(double x1, double x2) |
 
 ## Public Attributes
 
@@ -30,16 +29,18 @@ description: "[No description available]"
 | -------------- | -------------- |
 | std::string | **[collection_name](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/#variable-collection-name)**  |
 | std::string | **[file_name](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/#variable-file-name)**  |
-| std::string | **[x_name](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/#variable-x-name)**  |
-| std::string | **[y_name](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/#variable-y-name)**  |
+| std::string | **[x1_name](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/#variable-x1-name)**  |
+| std::string | **[x2_name](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/#variable-x2-name)**  |
 | std::vector< std::string > | **[interpolator_names](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/#variable-interpolator-names)**  |
-| std::vector< gsl_spline2d * > | **[splines](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/#variable-splines)**  |
-| std::vector< gsl_interp_accel * > | **[x_accels](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/#variable-x-accels)**  |
-| std::vector< gsl_interp_accel * > | **[y_accels](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/#variable-y-accels)**  |
-| double | **[x_min](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/#variable-x-min)**  |
-| double | **[x_max](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/#variable-x-max)**  |
-| double | **[y_min](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/#variable-y-min)**  |
-| double | **[y_max](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/#variable-y-max)**  |
+| std::vector< double > | **[x1_vec](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/#variable-x1-vec)**  |
+| std::vector< double > | **[x2_vec](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/#variable-x2-vec)**  |
+| std::vector< double > | **[x1_vec_unsorted](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/#variable-x1-vec-unsorted)**  |
+| std::vector< double > | **[x2_vec_unsorted](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/#variable-x2-vec-unsorted)**  |
+| std::vector< std::vector< double > > | **[interp_data](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/#variable-interp-data)**  |
+| double | **[x1_min](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/#variable-x1-min)**  |
+| double | **[x1_max](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/#variable-x1-max)**  |
+| double | **[x2_min](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/#variable-x2-min)**  |
+| double | **[x2_max](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/#variable-x2-max)**  |
 | size_t | **[n_interpolators](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__collection/#variable-n-interpolators)**  |
 
 ## Detailed Description
@@ -53,7 +54,7 @@ A class for holding a collection of 2D interpolators, created from reading a tab
 
 * The first two columns are taken to be the x and y grid points.
 * For each remaining column a 2D interpolation function f(x,y) is created
-* Note that GLS assumes the points are ordered according to increasing x (first) and y (second) values, i.e. an ordering like (x0,y0), (x1,y0), (x2,y0), ... (x0,y1), (x1,y1), (x2,y1), ... 
+* This is a simple linear interpolator that does not use GSL 
 
 ## Public Functions Documentation
 
@@ -79,20 +80,10 @@ interp2d_collection(
 
 ```
 double eval(
-    double x,
-    double y,
+    double x1,
+    double x2,
     size_t interp_index
-) const
-```
-
-
-### function eval
-
-```
-double eval(
-    double x,
-    double y
-) const
+)
 ```
 
 
@@ -100,9 +91,9 @@ double eval(
 
 ```
 bool is_inside_range(
-    double x,
-    double y
-) const
+    double x1,
+    double x2
+)
 ```
 
 
@@ -122,17 +113,17 @@ std::string file_name;
 ```
 
 
-### variable x_name
+### variable x1_name
 
 ```
-std::string x_name;
+std::string x1_name;
 ```
 
 
-### variable y_name
+### variable x2_name
 
 ```
-std::string y_name;
+std::string x2_name;
 ```
 
 
@@ -143,52 +134,66 @@ std::vector< std::string > interpolator_names;
 ```
 
 
-### variable splines
+### variable x1_vec
 
 ```
-std::vector< gsl_spline2d * > splines;
-```
-
-
-### variable x_accels
-
-```
-std::vector< gsl_interp_accel * > x_accels;
+std::vector< double > x1_vec;
 ```
 
 
-### variable y_accels
+### variable x2_vec
 
 ```
-std::vector< gsl_interp_accel * > y_accels;
-```
-
-
-### variable x_min
-
-```
-double x_min;
+std::vector< double > x2_vec;
 ```
 
 
-### variable x_max
+### variable x1_vec_unsorted
 
 ```
-double x_max;
-```
-
-
-### variable y_min
-
-```
-double y_min;
+std::vector< double > x1_vec_unsorted;
 ```
 
 
-### variable y_max
+### variable x2_vec_unsorted
 
 ```
-double y_max;
+std::vector< double > x2_vec_unsorted;
+```
+
+
+### variable interp_data
+
+```
+std::vector< std::vector< double > > interp_data;
+```
+
+
+### variable x1_min
+
+```
+double x1_min;
+```
+
+
+### variable x1_max
+
+```
+double x1_max;
+```
+
+
+### variable x2_min
+
+```
+double x2_min;
+```
+
+
+### variable x2_max
+
+```
+double x2_max;
 ```
 
 
@@ -201,4 +206,4 @@ size_t n_interpolators;
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:45 +0000
+Updated on 2023-06-26 at 21:36:53 +0000

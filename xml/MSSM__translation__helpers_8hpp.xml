@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="MSSM__translation__helpers_8hpp" kind="file" language="C++">
+    <compoundname>MSSM_translation_helpers.hpp</compoundname>
+    <includes refid="model__parameters_8hpp" local="yes">gambit/Utils/model_parameters.hpp</includes>
+    <includedby refid="MSSM__translation__helpers_8cpp" local="yes">MSSM_translation_helpers.cpp</includedby>
+    <includedby refid="MSSMatMGUT_8cpp" local="yes">MSSMatMGUT.cpp</includedby>
+    <includedby refid="MSSMatMGUT__mA_8cpp" local="yes">MSSMatMGUT_mA.cpp</includedby>
+    <includedby refid="MSSMatMGUT__mA__mG_8cpp" local="yes">MSSMatMGUT_mA_mG.cpp</includedby>
+    <includedby refid="MSSMatMGUT__mG_8cpp" local="yes">MSSMatMGUT_mG.cpp</includedby>
+    <includedby refid="MSSMatMSUSY_8cpp" local="yes">MSSMatMSUSY.cpp</includedby>
+    <includedby refid="MSSMatMSUSY__mA_8cpp" local="yes">MSSMatMSUSY_mA.cpp</includedby>
+    <includedby refid="MSSMatMSUSY__mA__mG_8cpp" local="yes">MSSMatMSUSY_mA_mG.cpp</includedby>
+    <includedby refid="MSSMatMSUSY__mG_8cpp" local="yes">MSSMatMSUSY_mG.cpp</includedby>
+    <includedby refid="MSSMatQ_8cpp" local="yes">MSSMatQ.cpp</includedby>
+    <includedby refid="MSSMatQ__mA_8cpp" local="yes">MSSMatQ_mA.cpp</includedby>
+    <includedby refid="MSSMatQ__mA__mG_8cpp" local="yes">MSSMatQ_mA_mG.cpp</includedby>
+    <includedby refid="MSSMatQ__mG_8cpp" local="yes">MSSMatQ_mG.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>MSSM_translation_helpers.hpp</label>
+        <link refid="MSSM__translation__helpers_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>gambit/Utils/export_symbols.hpp</label>
+        <link refid="export__symbols_8hpp"/>
+      </node>
+      <node id="2">
+        <label>gambit/Utils/model_parameters.hpp</label>
+        <link refid="model__parameters_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>iostream</label>
+      </node>
+      <node id="3">
+        <label>map</label>
+      </node>
+      <node id="4">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceGambit">Gambit</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="2"><highlight class="comment">///<sp/><sp/>GAMBIT:<sp/>Global<sp/>and<sp/>Modular<sp/>BSM<sp/>Inference<sp/>Tool</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">///<sp/><sp/>Declare<sp/>a<sp/>helper<sp/>function<sp/>for<sp/>translating<sp/>&apos;mA&apos;</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">///<sp/><sp/>MSSM<sp/>parameterisations<sp/>into<sp/>the<sp/>primary</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">///<sp/><sp/>parameterisations,<sp/>and<sp/>another<sp/>for<sp/>translating</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">///<sp/><sp/>from<sp/>scales<sp/>MGUT<sp/>and<sp/>MSUSY<sp/>to<sp/>arbitrary<sp/>scale<sp/>Q.</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">///<sp/><sp/>Authors</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">///<sp/><sp/>=======</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">///<sp/><sp/>(add<sp/>name<sp/>and<sp/>date<sp/>if<sp/>you<sp/>modify)</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">///<sp/><sp/>\author<sp/>Pat<sp/>Scott</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">///<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(p.scott@imperial.ac.uk)</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">///<sp/><sp/>\date<sp/>2017<sp/>Aug</highlight></codeline>
+<codeline lineno="20"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="21"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
+<codeline lineno="22"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__MSSM_translation_helpers_hpp__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__MSSM_translation_helpers_hpp__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="model__parameters_8hpp" kindref="compound">gambit/Utils/model_parameters.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceGambit" kindref="compound">Gambit</ref></highlight></codeline>
+<codeline lineno="29"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">SubSpectrum;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/><sp/><sp/>///<sp/>Translation<sp/>function<sp/>for<sp/>mA,mu<sp/>parameterisation<sp/>to<sp/>mHu2,mHd2<sp/>parameterisation</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1af7e254d36404611fec2d4e99440b898a" kindref="member">MSSM_mA_to_MSSM_mhud</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ModelParameters<sp/>&amp;myP,<sp/>ModelParameters<sp/>&amp;targetP,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>SubSpectrum&amp;<sp/>HE);</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/><sp/><sp/>///<sp/>Translation<sp/>function<sp/>for<sp/>MSSM<sp/>defined<sp/>at<sp/>RGE-determined<sp/>scale<sp/>(e.g.<sp/>GUT,<sp/>SUSY)<sp/>to<sp/>arbitrary<sp/>scale<sp/>Q</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1a9e9854fff961f15384f963feaf4b2488" kindref="member">MSSMatX_to_MSSMatQ</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ModelParameters<sp/>&amp;myP,<sp/>ModelParameters<sp/>&amp;targetP,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>SubSpectrum&amp;<sp/>HE);</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/><sp/><sp/>///<sp/>Translation<sp/>functions<sp/>for<sp/>20-parameter<sp/>models<sp/>to<sp/>25-parameter</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1a6ef5686aba26d591f95254604c20c2e7" kindref="member">MSSM20atX_to_MSSM25atX</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ModelParameters<sp/>&amp;myP,<sp/>ModelParameters<sp/>&amp;targetP);</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/><sp/><sp/>///<sp/>Translation<sp/>functions<sp/>for<sp/>25-parameter<sp/>models<sp/>to<sp/>30-parameter</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1a89315facb2f73ea3472ddce1dbc40186" kindref="member">MSSM25atX_to_MSSM30atX</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ModelParameters<sp/>&amp;myP,<sp/>ModelParameters<sp/>&amp;targetP);</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="44"><highlight class="comment"><sp/><sp/><sp/>///<sp/>Translation<sp/>functions<sp/>for<sp/>30-parameter<sp/>models<sp/>to<sp/>63-parameter</highlight></codeline>
+<codeline lineno="45"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1ae05dec1681ef2cc0dde292d69f0f8db8" kindref="member">MSSM30atX_to_MSSM63atX</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ModelParameters<sp/>&amp;myP,<sp/>ModelParameters<sp/>&amp;targetP);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="Models/include/gambit/Models/models/MSSM_translation_helpers.hpp"/>
+  </compounddef>
+</doxygen>

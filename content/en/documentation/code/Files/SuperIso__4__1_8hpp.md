@@ -16,6 +16,7 @@ description: "[No description available]"
 | [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) | **[BE_CONV_FUNCTION](/documentation/code/files/superiso__4__1_8hpp/#function-be-conv-function)**(A_BXsmumu_zero , double , (const parameters *) , "A_BXsmumu_zero" , (MSSM63atQ, MSSM63atMGUT, WC) ) |
 | [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) const parameters WC | **[BE_CONV_FUNCTION](/documentation/code/files/superiso__4__1_8hpp/#function-be-conv-function)**(A_BXstautau_highq2 , double , (const parameters *) , "A_BXstautau_highq2" , (MSSM63atQ, MSSM63atMGUT, WC) ) |
 | [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) const parameters WC const parameters WC | **[BE_CONV_FUNCTION](/documentation/code/files/superiso__4__1_8hpp/#function-be-conv-function)**(modified_AI_BKstarmumu_zero , double , (const parameters *) , "modified_AI_BKstarmumu_zero" , (MSSM63atQ, MSSM63atMGUT, WC) ) |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) const parameters WC const parameters WC const parameters WC | **[BE_CONV_FUNCTION](/documentation/code/files/superiso__4__1_8hpp/#function-be-conv-function)**(SuperIso_RKstar_computation , double , (const parameters *, double, double) , "SuperIso_RKstar_computation" , (MSSM63atQ, MSSM63atMGUT, WC) ) |
 
 ## Attributes
 
@@ -27,6 +28,7 @@ description: "[No description available]"
 | [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) const parameters | **[MSSM63atMGUT](/documentation/code/files/superiso__4__1_8hpp/#variable-mssm63atmgut)**  |
 | [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) const parameters WC const parameters | **[modified_AI_BKstarmumu](/documentation/code/files/superiso__4__1_8hpp/#variable-modified-ai-bkstarmumu)**  |
 | [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) const parameters WC const parameters WC const parameters | **[modified_delta0](/documentation/code/files/superiso__4__1_8hpp/#variable-modified-delta0)**  |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) const parameters WC const parameters WC const parameters WC const parameters | **[SuperIso_RK_computation](/documentation/code/files/superiso__4__1_8hpp/#variable-superiso-rk-computation)**  |
 
 ## Defines
 
@@ -109,6 +111,19 @@ LOAD_LIBRARY const parameters WC const parameters WC BE_CONV_FUNCTION(
 ```
 
 
+### function BE_CONV_FUNCTION
+
+```
+LOAD_LIBRARY const parameters WC const parameters WC const parameters WC BE_CONV_FUNCTION(
+    SuperIso_RKstar_computation ,
+    double ,
+    (const parameters *, double, double) ,
+    "SuperIso_RKstar_computation" ,
+    (MSSM63atQ, MSSM63atMGUT, WC) 
+)
+```
+
+
 
 ## Attributes Documentation
 
@@ -151,6 +166,13 @@ LOAD_LIBRARY const parameters WC const parameters modified_AI_BKstarmumu;
 
 ```
 LOAD_LIBRARY const parameters WC const parameters WC const parameters modified_delta0;
+```
+
+
+### variable SuperIso_RK_computation
+
+```
+LOAD_LIBRARY const parameters WC const parameters WC const parameters WC const parameters SuperIso_RK_computation;
 ```
 
 
@@ -294,6 +316,10 @@ BE_CONV_FUNCTION(modified_AI_BKstarmumu, double, (const parameters*), "modified_
 BE_CONV_FUNCTION(modified_AI_BKstarmumu_zero, double, (const parameters*), "modified_AI_BKstarmumu_zero", (MSSM63atQ, MSSM63atMGUT, WC))
 BE_CONV_FUNCTION(modified_delta0, double, (const parameters*), "modified_delta0", (MSSM63atQ, MSSM63atMGUT, WC))
 
+// TODO: Temporary restore of RK and RKstar convenience functions until their new interface is fixed
+BE_CONV_FUNCTION(SuperIso_RKstar_computation, double, (const parameters*, double, double), "SuperIso_RKstar_computation", (MSSM63atQ, MSSM63atMGUT, WC))
+BE_CONV_FUNCTION(SuperIso_RK_computation, double, (const parameters*, double, double), "SuperIso_RK_computation", (MSSM63atQ, MSSM63atMGUT, WC))
+
 // Undefine macros to avoid conflict with other backends
 #include "gambit/Backends/backend_undefs.hpp"
 ```
@@ -301,4 +327,4 @@ BE_CONV_FUNCTION(modified_delta0, double, (const parameters*), "modified_delta0"
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:49 +0000
+Updated on 2023-06-26 at 21:36:57 +0000

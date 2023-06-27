@@ -111,7 +111,8 @@ Authors (add name and date if you modify):
 // Load it
 LOAD_LIBRARY
 
-BE_ALLOW_MODELS(MSSM63atQ, MSSM63atMGUT, MSSM63atQ_mA, MSSM63atMGUT_mA)
+BE_ALLOW_MODELS(MSSM63atQ, MSSM63atMGUT, MSSM63atQ_mG, MSSM63atMGUT_mG)
+BE_ALLOW_MODELS(MSSM63atQ_mA, MSSM63atMGUT_mA, MSSM63atQ_mA_mG, MSSM63atMGUT_mA_mG)
 
 // Import functions
 
@@ -140,4 +141,4 @@ BE_CONV_FUNCTION(prospino_read_slha1_input, void, (const SLHAstruct&), "prospino
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:49 +0000
+Updated on 2023-06-26 at 21:36:57 +0000

@@ -39,6 +39,7 @@ namespace CAT_3(
 
 #include <string>
 #include "wrapper_Pythia_decl.h"
+#include "HepMC3/GenEvent.h"
 
 #include "identification.hpp"
 
@@ -49,7 +50,7 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
     {
         
         // Member functions: 
-        inline void GAMBIT_hepmc_writer::init(::std::basic_string<char> filename_in, bool HepMC2, bool HepMC3)
+        inline void GAMBIT_hepmc_writer::init(std::string filename_in, bool HepMC2, bool HepMC3)
         {
             get_BEptr()->init(filename_in, HepMC2, HepMC3);
         }
@@ -62,6 +63,11 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         inline void GAMBIT_hepmc_writer::write_event_HepMC2(Pythia8::Pythia* pythia)
         {
             get_BEptr()->write_event_HepMC2__BOSS((*pythia).get_BEptr());
+        }
+        
+        inline void GAMBIT_hepmc_writer::convert_to_HepMC_event(Pythia8::Pythia* pythia, HepMC3::GenEvent& event)
+        {
+            get_BEptr()->convert_to_HepMC_event__BOSS((*pythia).get_BEptr(), event);
         }
         
         
@@ -133,4 +139,4 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:49 +0000
+Updated on 2023-06-26 at 21:36:57 +0000

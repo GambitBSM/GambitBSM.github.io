@@ -86,9 +86,9 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="var">
-      <memberdef kind="variable" id="SuperIso__4__1_8hpp_1a7f66fbd24194b3ab861b789da5329de7" prot="public" static="no" mutable="no">
+      <memberdef kind="variable" id="SuperIso__4__1_8hpp_1ac1cc4258b5ad7980ab96323e8ac7a5ff" prot="public" static="no" mutable="no">
         <type><ref refid="frontend__macros_8hpp_1ac7b7c11119ba13dc612df0e3e744b165" kindref="member">LOAD_LIBRARY</ref></type>
-        <definition>LOAD_LIBRARY const parameters WC const parameters WC double</definition>
+        <definition>LOAD_LIBRARY const parameters WC const parameters WC const parameters WC const parameters double</definition>
         <argsstring></argsstring>
         <name>double</name>
         <briefdescription>
@@ -163,6 +163,19 @@
         <inbodydescription>
         </inbodydescription>
         <location file="Backends/include/gambit/Backends/frontends/SuperIso_4_1.hpp" line="98" column="26" bodyfile="Backends/include/gambit/Backends/frontends/SuperIso_4_1.hpp" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="SuperIso__4__1_8hpp_1a87be671b0c69e8c4644e180f1aa4d07e" prot="public" static="no" mutable="no">
+        <type><ref refid="frontend__macros_8hpp_1ac7b7c11119ba13dc612df0e3e744b165" kindref="member">LOAD_LIBRARY</ref> const parameters WC const parameters WC const parameters WC const parameters</type>
+        <definition>LOAD_LIBRARY const parameters WC const parameters WC const parameters WC const parameters SuperIso_RK_computation</definition>
+        <argsstring></argsstring>
+        <name>SuperIso_RK_computation</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Backends/include/gambit/Backends/frontends/SuperIso_4_1.hpp" line="102" column="40" bodyfile="Backends/include/gambit/Backends/frontends/SuperIso_4_1.hpp" bodystart="102" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -249,6 +262,34 @@
         <inbodydescription>
         </inbodydescription>
         <location file="Backends/include/gambit/Backends/frontends/SuperIso_4_1.hpp" line="97" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="SuperIso__4__1_8hpp_1af52a7b1db2e58c8970a4cbbaaba3af22" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="frontend__macros_8hpp_1ac7b7c11119ba13dc612df0e3e744b165" kindref="member">LOAD_LIBRARY</ref> const parameters WC const parameters WC const parameters WC</type>
+        <definition>LOAD_LIBRARY const parameters WC const parameters WC const parameters WC BE_CONV_FUNCTION</definition>
+        <argsstring>(SuperIso_RKstar_computation, double,(const parameters *, double, double), &quot;SuperIso_RKstar_computation&quot;,(MSSM63atQ, MSSM63atMGUT, WC)) BE_CONV_FUNCTION(SuperIso_RK_computation</argsstring>
+        <name>BE_CONV_FUNCTION</name>
+        <param>
+          <type>SuperIso_RKstar_computation</type>
+        </param>
+        <param>
+          <type>double</type>
+        </param>
+        <param>
+          <type>(const parameters *, double, double)</type>
+        </param>
+        <param>
+          <type>&quot;SuperIso_RKstar_computation&quot;</type>
+        </param>
+        <param>
+          <type>(MSSM63atQ, MSSM63atMGUT, WC)</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Backends/include/gambit/Backends/frontends/SuperIso_4_1.hpp" line="101" column="1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -373,8 +414,12 @@
 <codeline lineno="97"><highlight class="normal">BE_CONV_FUNCTION(modified_AI_BKstarmumu_zero,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/>(const<sp/>parameters*),<sp/>&quot;modified_AI_BKstarmumu_zero&quot;,<sp/>(MSSM63atQ,<sp/>MSSM63atMGUT,<sp/>WC))</highlight></codeline>
 <codeline lineno="98"><highlight class="normal">BE_CONV_FUNCTION(modified_delta0,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/>(const<sp/>parameters*),<sp/>&quot;modified_delta0&quot;,<sp/>(MSSM63atQ,<sp/>MSSM63atMGUT,<sp/>WC))</highlight></codeline>
 <codeline lineno="99"><highlight class="normal"></highlight></codeline>
-<codeline lineno="100"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Undefine<sp/>macros<sp/>to<sp/>avoid<sp/>conflict<sp/>with<sp/>other<sp/>backends</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="101"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gambit/Backends/backend_undefs.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="comment">//<sp/>TODO:<sp/>Temporary<sp/>restore<sp/>of<sp/>RK<sp/>and<sp/>RKstar<sp/>convenience<sp/>functions<sp/>until<sp/>their<sp/>new<sp/>interface<sp/>is<sp/>fixed</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="101"><highlight class="normal">BE_CONV_FUNCTION(SuperIso_RKstar_computation,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/>(const<sp/>parameters*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">),<sp/>&quot;SuperIso_RKstar_computation&quot;,<sp/>(MSSM63atQ,<sp/>MSSM63atMGUT,<sp/>WC))</highlight></codeline>
+<codeline lineno="102"><highlight class="normal">BE_CONV_FUNCTION(SuperIso_RK_computation,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/>(const<sp/>parameters*,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">),<sp/>&quot;SuperIso_RK_computation&quot;,<sp/>(MSSM63atQ,<sp/>MSSM63atMGUT,<sp/>WC))</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Undefine<sp/>macros<sp/>to<sp/>avoid<sp/>conflict<sp/>with<sp/>other<sp/>backends</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;gambit/Backends/backend_undefs.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="Backends/include/gambit/Backends/frontends/SuperIso_4_1.hpp"/>
   </compounddef>

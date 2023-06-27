@@ -49,6 +49,7 @@ Authors (add name and date if you modify):
 ///  *********************************************
 
 #include "gambit/Elements/terminator.hpp"
+#include "gambit/Utils/file_lock.hpp"
 
 void Gambit::terminator()
 {
@@ -69,6 +70,9 @@ void Gambit::terminator()
   {
     std::cout << "Exception not derived from std::exception." << std::endl;
   }
+
+  Utils::ProcessLock::clean_locks();
+
   exit(1);
 }
 ```
@@ -76,4 +80,4 @@ void Gambit::terminator()
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:47 +0000
+Updated on 2023-06-26 at 21:36:55 +0000

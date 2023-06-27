@@ -141,7 +141,7 @@
       <sectiondef kind="define">
       <memberdef kind="define" id="vevacious__1__0_2loaded__types_8hpp_1a58421680e425c29aed25a8f51ba41b5b" prot="public" static="no">
         <name>vevacious_1_0_all_data</name>
-        <initializer>  (( /*class*/(VevaciousPlusPlus)(VevaciousPlusPlus),    /*constructors*/((&quot;Factory_VevaciousPlusPlus_0__BOSS_1&quot;,(const std::basic_string&lt;char, std::char_traits&lt;char&gt;, std::allocator&lt;char&gt;&gt;&amp;))) )) \</initializer>
+        <initializer>  (( /*class*/(VevaciousPlusPlus)(VevaciousPlusPlus),    /*constructors*/((&quot;Factory_VevaciousPlusPlus_0__BOSS_1&quot;,(const std::string&amp;))) )) \</initializer>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -164,7 +164,7 @@
 <codeline lineno="6"><highlight class="normal"></highlight></codeline>
 <codeline lineno="7"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Indicate<sp/>which<sp/>types<sp/>are<sp/>provided<sp/>by<sp/>this<sp/>backend,<sp/>and<sp/>what<sp/>the<sp/>symbols<sp/>of<sp/>their<sp/>factories<sp/>are.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>vevacious_1_0_all_data<sp/>\</highlight></codeline>
-<codeline lineno="9"><highlight class="preprocessor"><sp/><sp/>((<sp/></highlight><highlight class="comment">/*class*/</highlight><highlight class="preprocessor">(VevaciousPlusPlus)(VevaciousPlusPlus),<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*constructors*/</highlight><highlight class="preprocessor">((&quot;Factory_VevaciousPlusPlus_0__BOSS_1&quot;</highlight><highlight class="normal">,(const<sp/>std::basic_string&lt;char,<sp/>std::char_traits&lt;char&gt;,<sp/>std::allocator&lt;char&gt;&gt;&amp;)))<sp/>))<sp/>\</highlight></codeline>
+<codeline lineno="9"><highlight class="preprocessor"><sp/><sp/>((<sp/></highlight><highlight class="comment">/*class*/</highlight><highlight class="preprocessor">(VevaciousPlusPlus)(VevaciousPlusPlus),<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*constructors*/</highlight><highlight class="preprocessor">((&quot;Factory_VevaciousPlusPlus_0__BOSS_1&quot;</highlight><highlight class="normal">,(const<sp/>std::string&amp;)))<sp/>))<sp/>\</highlight></codeline>
 <codeline lineno="10"><highlight class="normal"></highlight></codeline>
 <codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>If<sp/>the<sp/>default<sp/>version<sp/>has<sp/>been<sp/>loaded,<sp/>set<sp/>it<sp/>as<sp/>default.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>ALREADY_LOADED(CAT_3(BACKENDNAME,_,CAT(Default_,BACKENDNAME)))</highlight><highlight class="normal"></highlight></codeline>

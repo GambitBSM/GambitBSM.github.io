@@ -330,7 +330,43 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/baseprinter.hpp" line="175" column="9" bodyfile="Printers/include/gambit/Printers/basebaseprinter.hpp" bodystart="171" bodyend="188"/>
+        <location file="Printers/include/gambit/Printers/baseprinter.hpp" line="175" column="9" bodyfile="Printers/include/gambit/Printers/basebaseprinter.hpp" bodystart="179" bodyend="196"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Printers_1_1BasePrinter_1a8bc4355c30da325a9ef501d0723e559f" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>void</type>
+        <definition>void Gambit::Printers::BaseBasePrinter::_print</definition>
+        <argsstring>(T const &amp;in, const std::string &amp;label, const uint rank, const ulong pointID)</argsstring>
+        <name>_print</name>
+        <qualifiedname>Gambit::Printers::BasePrinter::_print</qualifiedname>
+        <param>
+          <type>T const &amp;</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>label</declname>
+        </param>
+        <param>
+          <type>const uint</type>
+          <declname>rank</declname>
+        </param>
+        <param>
+          <type>const ulong</type>
+          <declname>pointID</declname>
+        </param>
+        <briefdescription>
+<para>Same for overloaded function. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Printers/include/gambit/Printers/baseprinter.hpp" line="175" column="9" bodyfile="Printers/include/gambit/Printers/basebaseprinter.hpp" bodystart="200" bodyend="205"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -401,6 +437,8 @@
     <location file="Printers/include/gambit/Printers/baseprinter.hpp" line="86" column="5" bodyfile="Printers/include/gambit/Printers/baseprinter.hpp" bodystart="87" bodyend="183"/>
     <listofallmembers>
       <member refid="classGambit_1_1Printers_1_1BasePrinter_1acec290abd094f645c538be69aa1928cd" prot="protected" virt="non-virtual"><scope>Gambit::Printers::BasePrinter</scope><name>_print</name></member>
+      <member refid="classGambit_1_1Printers_1_1BasePrinter_1a8bc4355c30da325a9ef501d0723e559f" prot="protected" virt="non-virtual"><scope>Gambit::Printers::BasePrinter</scope><name>_print</name></member>
+      <member refid="classGambit_1_1Printers_1_1BaseBasePrinter_1a75444c260ec6d961e33f432008c04aca" prot="protected" virt="virtual"><scope>Gambit::Printers::BasePrinter</scope><name>_print_metadata</name></member>
       <member refid="classGambit_1_1Printers_1_1BaseBasePrinter_1afd407cfc481a665be9f397ae5a129ca2" prot="public" virt="non-virtual"><scope>Gambit::Printers::BasePrinter</scope><name>addToPrintList</name></member>
       <member refid="classGambit_1_1Printers_1_1BasePrinter_1abbb4a0a52992af14c237ab78f5542eff" prot="public" virt="virtual"><scope>Gambit::Printers::BasePrinter</scope><name>auxilliary_init</name></member>
       <member refid="classGambit_1_1Printers_1_1BaseBasePrinter_1a2d9abf4185ec718116c88fc0bebaff59" prot="public" virt="non-virtual"><scope>Gambit::Printers::BasePrinter</scope><name>BaseBasePrinter</name></member>
@@ -421,6 +459,7 @@
       <member refid="classGambit_1_1Printers_1_1BasePrinter_1acee0e7501541a0e7d6e432443b946a93" prot="private" virt="non-virtual"><scope>Gambit::Printers::BasePrinter</scope><name>primary_printer</name></member>
       <member refid="classGambit_1_1Printers_1_1BasePrinter_1a4ba4d6be89e5d91a2cc1a14e75acb6ce" prot="public" virt="non-virtual"><scope>Gambit::Printers::BasePrinter</scope><name>print</name></member>
       <member refid="classGambit_1_1Printers_1_1BasePrinter_1a1dfc2af5fc27c500b751bb7b57cbe0d9" prot="public" virt="non-virtual"><scope>Gambit::Printers::BasePrinter</scope><name>print</name></member>
+      <member refid="classGambit_1_1Printers_1_1BaseBasePrinter_1aaba21f744e2911585b80b89123336b4b" prot="public" virt="non-virtual"><scope>Gambit::Printers::BasePrinter</scope><name>print_metadata</name></member>
       <member refid="classGambit_1_1Printers_1_1BaseBasePrinter_1af405d35cb40f9d88543b1376f18d7643" prot="protected" virt="non-virtual"><scope>Gambit::Printers::BasePrinter</scope><name>printer_cooldown</name></member>
       <member refid="classGambit_1_1Printers_1_1BaseBasePrinter_1a38cea919f04f4c6b544b4a71aeca79db" prot="protected" virt="non-virtual"><scope>Gambit::Printers::BasePrinter</scope><name>printer_enabled</name></member>
       <member refid="classGambit_1_1Printers_1_1BaseBasePrinter_1aa0e06c38d025f5825b11572766387018" prot="public" virt="pure-virtual"><scope>Gambit::Printers::BasePrinter</scope><name>reset</name></member>

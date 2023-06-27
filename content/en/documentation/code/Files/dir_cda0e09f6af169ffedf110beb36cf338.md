@@ -23,33 +23,19 @@ description: "[No description available]"
 | **[models/HaloModels_Einasto.cpp](/documentation/code/files/halomodels__einasto_8cpp/#file-models-halomodels-einasto-cpp)**  |
 | **[models/HaloModels_gNFW.cpp](/documentation/code/files/halomodels__gnfw_8cpp/#file-models-halomodels-gnfw-cpp)**  |
 | **[models/Models/src/models/MajoranaSingletDM.cpp](/documentation/code/files/models_2src_2models_2majoranasingletdm_8cpp/#file-models-models-src-models-majoranasingletdm-cpp)**  |
-| **[models/MSSM10atQ.cpp](/documentation/code/files/mssm10atq_8cpp/#file-models-mssm10atq-cpp)**  |
-| **[models/MSSM10atQ_mA.cpp](/documentation/code/files/mssm10atq__ma_8cpp/#file-models-mssm10atq-ma-cpp)**  |
-| **[models/MSSM10batQ.cpp](/documentation/code/files/mssm10batq_8cpp/#file-models-mssm10batq-cpp)**  |
-| **[models/MSSM10batQ_mA.cpp](/documentation/code/files/mssm10batq__ma_8cpp/#file-models-mssm10batq-ma-cpp)**  |
-| **[models/MSSM10catQ.cpp](/documentation/code/files/mssm10catq_8cpp/#file-models-mssm10catq-cpp)**  |
-| **[models/MSSM10catQ_mA.cpp](/documentation/code/files/mssm10catq__ma_8cpp/#file-models-mssm10catq-ma-cpp)**  |
-| **[models/MSSM11atQ.cpp](/documentation/code/files/mssm11atq_8cpp/#file-models-mssm11atq-cpp)**  |
-| **[models/MSSM11atQ_mA.cpp](/documentation/code/files/mssm11atq__ma_8cpp/#file-models-mssm11atq-ma-cpp)**  |
-| **[models/MSSM15atQ.cpp](/documentation/code/files/mssm15atq_8cpp/#file-models-mssm15atq-cpp)**  |
-| **[models/MSSM15atQ_mA.cpp](/documentation/code/files/mssm15atq__ma_8cpp/#file-models-mssm15atq-ma-cpp)**  |
-| **[models/MSSM16atQ.cpp](/documentation/code/files/mssm16atq_8cpp/#file-models-mssm16atq-cpp)**  |
-| **[models/MSSM16atQ_mA.cpp](/documentation/code/files/mssm16atq__ma_8cpp/#file-models-mssm16atq-ma-cpp)**  |
-| **[models/MSSM19atQ.cpp](/documentation/code/files/mssm19atq_8cpp/#file-models-mssm19atq-cpp)**  |
-| **[models/MSSM19atQ_mA.cpp](/documentation/code/files/mssm19atq__ma_8cpp/#file-models-mssm19atq-ma-cpp)**  |
-| **[models/MSSM20atX.cpp](/documentation/code/files/mssm20atx_8cpp/#file-models-mssm20atx-cpp)**  |
-| **[models/MSSM24atQ.cpp](/documentation/code/files/mssm24atq_8cpp/#file-models-mssm24atq-cpp)**  |
-| **[models/MSSM24atQ_mA.cpp](/documentation/code/files/mssm24atq__ma_8cpp/#file-models-mssm24atq-ma-cpp)**  |
-| **[models/MSSM25atX.cpp](/documentation/code/files/mssm25atx_8cpp/#file-models-mssm25atx-cpp)**  |
-| **[models/MSSM30atX.cpp](/documentation/code/files/mssm30atx_8cpp/#file-models-mssm30atx-cpp)**  |
-| **[models/MSSM63atX.cpp](/documentation/code/files/mssm63atx_8cpp/#file-models-mssm63atx-cpp)**  |
-| **[models/MSSM63atX_mA.cpp](/documentation/code/files/mssm63atx__ma_8cpp/#file-models-mssm63atx-ma-cpp)**  |
-| **[models/MSSM7atQ.cpp](/documentation/code/files/mssm7atq_8cpp/#file-models-mssm7atq-cpp)**  |
-| **[models/MSSM7atQ_mA.cpp](/documentation/code/files/mssm7atq__ma_8cpp/#file-models-mssm7atq-ma-cpp)**  |
-| **[models/MSSM9atQ.cpp](/documentation/code/files/mssm9atq_8cpp/#file-models-mssm9atq-cpp)**  |
-| **[models/MSSM9atQ_mA.cpp](/documentation/code/files/mssm9atq__ma_8cpp/#file-models-mssm9atq-ma-cpp)**  |
-| **[models/MSSM9batQ.cpp](/documentation/code/files/mssm9batq_8cpp/#file-models-mssm9batq-cpp)**  |
-| **[models/MSSM9batQ_mA.cpp](/documentation/code/files/mssm9batq__ma_8cpp/#file-models-mssm9batq-ma-cpp)**  |
+| **[models/MSSM_translation_helpers.cpp](/documentation/code/files/mssm__translation__helpers_8cpp/#file-models-mssm-translation-helpers-cpp)**  |
+| **[models/MSSMatMGUT.cpp](/documentation/code/files/mssmatmgut_8cpp/#file-models-mssmatmgut-cpp)**  |
+| **[models/MSSMatMGUT_mA.cpp](/documentation/code/files/mssmatmgut__ma_8cpp/#file-models-mssmatmgut-ma-cpp)**  |
+| **[models/MSSMatMGUT_mA_mG.cpp](/documentation/code/files/mssmatmgut__ma__mg_8cpp/#file-models-mssmatmgut-ma-mg-cpp)**  |
+| **[models/MSSMatMGUT_mG.cpp](/documentation/code/files/mssmatmgut__mg_8cpp/#file-models-mssmatmgut-mg-cpp)**  |
+| **[models/MSSMatMSUSY.cpp](/documentation/code/files/mssmatmsusy_8cpp/#file-models-mssmatmsusy-cpp)**  |
+| **[models/MSSMatMSUSY_mA.cpp](/documentation/code/files/mssmatmsusy__ma_8cpp/#file-models-mssmatmsusy-ma-cpp)**  |
+| **[models/MSSMatMSUSY_mA_mG.cpp](/documentation/code/files/mssmatmsusy__ma__mg_8cpp/#file-models-mssmatmsusy-ma-mg-cpp)**  |
+| **[models/MSSMatMSUSY_mG.cpp](/documentation/code/files/mssmatmsusy__mg_8cpp/#file-models-mssmatmsusy-mg-cpp)**  |
+| **[models/MSSMatQ.cpp](/documentation/code/files/mssmatq_8cpp/#file-models-mssmatq-cpp)**  |
+| **[models/MSSMatQ_mA.cpp](/documentation/code/files/mssmatq__ma_8cpp/#file-models-mssmatq-ma-cpp)**  |
+| **[models/MSSMatQ_mA_mG.cpp](/documentation/code/files/mssmatq__ma__mg_8cpp/#file-models-mssmatq-ma-mg-cpp)**  |
+| **[models/MSSMatQ_mG.cpp](/documentation/code/files/mssmatq__mg_8cpp/#file-models-mssmatq-mg-cpp)**  |
 | **[models/mSUGRA.cpp](/documentation/code/files/msugra_8cpp/#file-models-msugra-cpp)**  |
 | **[models/nuclear_params.cpp](/documentation/code/files/nuclear__params_8cpp/#file-models-nuclear-params-cpp)**  |
 | **[models/NUHM1.cpp](/documentation/code/files/nuhm1_8cpp/#file-models-nuhm1-cpp)**  |
@@ -68,4 +54,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:46 +0000
+Updated on 2023-06-26 at 21:36:54 +0000

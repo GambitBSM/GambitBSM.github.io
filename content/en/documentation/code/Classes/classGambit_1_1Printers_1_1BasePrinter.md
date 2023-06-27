@@ -39,6 +39,7 @@ Inherited by [Gambit::Printers::HDF5Printer](/documentation/code/classes/classga
 |                | Name           |
 | -------------- | -------------- |
 | template <typename T \> <br>void | **[_print](/documentation/code/classes/classgambit_1_1printers_1_1baseprinter/#function-print)**(T const & , const std::string & label, const int vertexID, const uint, const ulong) |
+| template <typename T \> <br>void | **[_print](/documentation/code/classes/classgambit_1_1printers_1_1baseprinter/#function-print)**(T const & in, const std::string & label, const uint rank, const ulong pointID)<br>Same for overloaded function.  |
 
 ## Additional inherited members
 
@@ -61,6 +62,13 @@ Inherited by [Gambit::Printers::HDF5Printer](/documentation/code/classes/classga
 | virtual void | **[finalise](/documentation/code/classes/classgambit_1_1printers_1_1basebaseprinter/#function-finalise)**(bool abnormal =false) =0<br>Signal printer that scan is finished, and final output needs to be performed.  |
 | void | **[disable](/documentation/code/classes/classgambit_1_1printers_1_1basebaseprinter/#function-disable)**(int n =-1) |
 | void | **[enable](/documentation/code/classes/classgambit_1_1printers_1_1basebaseprinter/#function-enable)**() |
+| void | **[print_metadata](/documentation/code/classes/classgambit_1_1printers_1_1basebaseprinter/#function-print-metadata)**([map_str_str](/documentation/code/namespaces/namespacegambit/#typedef-map-str-str) datasets) |
+
+**Protected Functions inherited from [Gambit::Printers::BaseBasePrinter](/documentation/code/classes/classgambit_1_1printers_1_1basebaseprinter/)**
+
+|                | Name           |
+| -------------- | -------------- |
+| virtual void | **[_print_metadata](/documentation/code/classes/classgambit_1_1printers_1_1basebaseprinter/#function-print-metadata)**([map_str_str](/documentation/code/namespaces/namespacegambit/#typedef-map-str-str) ) |
 
 **Protected Attributes inherited from [Gambit::Printers::BaseBasePrinter](/documentation/code/classes/classgambit_1_1printers_1_1basebaseprinter/)**
 
@@ -217,6 +225,20 @@ inline void _print(
 Default _print function. Throws an error if no matching virtual function for the type of the attempted print is found. 
 
 
+### function _print
+
+```
+template <typename T >
+inline void _print(
+    T const & in,
+    const std::string & label,
+    const uint rank,
+    const ulong pointID
+)
+```
+
+Same for overloaded function. 
+
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:44 +0000
+Updated on 2023-06-26 at 21:36:52 +0000

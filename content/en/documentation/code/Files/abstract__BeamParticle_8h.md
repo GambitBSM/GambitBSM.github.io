@@ -128,7 +128,7 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
     
                 virtual int append__BOSS(int, int, double) =0;
     
-                virtual void list(::std::basic_ostream<char>&) const =0;
+                virtual void list(std::ostream&) const =0;
     
                 virtual void list__BOSS() const =0;
     
@@ -142,7 +142,7 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
     
                 virtual bool remnantFlavours__BOSS(Pythia8::Abstract_Event&) =0;
     
-                virtual bool remnantColours__BOSS(Pythia8::Abstract_Event&, ::std::vector<int>&, ::std::vector<int>&) =0;
+                virtual bool remnantColours__BOSS(Pythia8::Abstract_Event&, std::vector<int>&, std::vector<int>&) =0;
     
                 virtual double xRemnant(int) =0;
     
@@ -170,7 +170,7 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
     
                 virtual void setInitialCol__BOSS(Pythia8::Abstract_Event&) =0;
     
-                virtual void updateCol(::std::vector<std::pair<int, int>>) =0;
+                virtual void updateCol(std::vector<std::pair<int, int>>) =0;
     
                 virtual ::std::vector<std::pair<int, int>> getColUpdates() =0;
     
@@ -232,4 +232,4 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:49 +0000
+Updated on 2023-06-26 at 21:36:57 +0000

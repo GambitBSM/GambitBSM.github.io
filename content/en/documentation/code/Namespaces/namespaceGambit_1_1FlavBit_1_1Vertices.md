@@ -13,16 +13,16 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| complex< double > | **[VpL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1vertices/#function-vpl)**(int i, int j, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U) |
+| std::complex< double > | **[VpL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1vertices/#function-vpl)**(int i, int j, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< std::complex< double >, 3, 6 > U) |
 | double | **[EL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1vertices/#function-el)**(int i, int j, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs) |
 | double | **[ER](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1vertices/#function-er)**(int i, int j, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs) |
-| complex< double > | **[VL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1vertices/#function-vl)**(int i, int j, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs) |
-| complex< double > | **[VR](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1vertices/#function-vr)**(int i, int j, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs) |
-| complex< double > | **[DL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1vertices/#function-dl)**(int i, int j, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs) |
-| complex< double > | **[DR](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1vertices/#function-dr)**(int i, int j, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs) |
-| complex< double > | **[UL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1vertices/#function-ul)**(int i, int j, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs) |
-| complex< double > | **[UR](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1vertices/#function-ur)**(int i, int j, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs) |
-| complex< double > | **[VuL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1vertices/#function-vul)**(int i, int j, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs) |
+| std::complex< double > | **[VL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1vertices/#function-vl)**(int i, int j, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs) |
+| std::complex< double > | **[VR](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1vertices/#function-vr)**(int i, int j, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs) |
+| std::complex< double > | **[DL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1vertices/#function-dl)**(int i, int j, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs) |
+| std::complex< double > | **[DR](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1vertices/#function-dr)**(int i, int j, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs) |
+| std::complex< double > | **[UL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1vertices/#function-ul)**(int i, int j, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs) |
+| std::complex< double > | **[UR](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1vertices/#function-ur)**(int i, int j, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs) |
+| std::complex< double > | **[VuL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1vertices/#function-vul)**(int i, int j, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs) |
 | double | **[Fw](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1vertices/#function-fw)**([SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs) |
 | double | **[Zww](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1vertices/#function-zww)**([SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs) |
 | double | **[HL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1vertices/#function-hl)**(int i, int j, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs) |
@@ -38,11 +38,11 @@ description: "[No description available]"
 ### function VpL
 
 ```
-complex< double > VpL(
+std::complex< double > VpL(
     int i,
     int j,
     SMInputs sminputs,
-    Eigen::Matrix< complex< double >, 3, 6 > U
+    Eigen::Matrix< std::complex< double >, 3, 6 > U
 )
 ```
 
@@ -72,7 +72,7 @@ double ER(
 ### function VL
 
 ```
-complex< double > VL(
+std::complex< double > VL(
     int i,
     int j,
     SMInputs sminputs
@@ -83,7 +83,7 @@ complex< double > VL(
 ### function VR
 
 ```
-complex< double > VR(
+std::complex< double > VR(
     int i,
     int j,
     SMInputs sminputs
@@ -94,7 +94,7 @@ complex< double > VR(
 ### function DL
 
 ```
-complex< double > DL(
+std::complex< double > DL(
     int i,
     int j,
     SMInputs sminputs
@@ -105,7 +105,7 @@ complex< double > DL(
 ### function DR
 
 ```
-complex< double > DR(
+std::complex< double > DR(
     int i,
     int j,
     SMInputs sminputs
@@ -116,7 +116,7 @@ complex< double > DR(
 ### function UL
 
 ```
-complex< double > UL(
+std::complex< double > UL(
     int i,
     int j,
     SMInputs sminputs
@@ -127,7 +127,7 @@ complex< double > UL(
 ### function UR
 
 ```
-complex< double > UR(
+std::complex< double > UR(
     int i,
     int j,
     SMInputs sminputs
@@ -138,7 +138,7 @@ complex< double > UR(
 ### function VuL
 
 ```
-complex< double > VuL(
+std::complex< double > VuL(
     int i,
     int j,
     SMInputs sminputs
@@ -236,4 +236,4 @@ double HuR(
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:44 +0000
+Updated on 2023-06-26 at 21:36:52 +0000

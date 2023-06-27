@@ -243,7 +243,7 @@ LOAD_LIBRARY int fh_creal fh_creal fh_creal fh_creal fh_creal fh_creal fh_creal 
 
 LOAD_LIBRARY
 
-BE_ALLOW_MODELS(MSSM63atQ, MSSM63atMGUT)
+BE_ALLOW_MODELS(MSSM63atQ, MSSM63atMGUT, MSSM63atMGUT_mG, MSSM63atQ_mG)
 
 /* Next we use macros BE_VARIABLE and BE_FUNCTION to load pointers
  * (using dlsym) to the variables and functions within the library.
@@ -322,4 +322,4 @@ BE_INI_DEPENDENCY(unimproved_MSSM_spectrum, Spectrum)   // Need MSSM spectrum in
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:49 +0000
+Updated on 2023-06-26 at 21:36:57 +0000

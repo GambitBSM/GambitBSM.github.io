@@ -13,6 +13,8 @@ description: "[No description available]"
 
 Inherits from [Gambit::ColliderBit::Analysis](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/)
 
+Inherited by [Gambit::ColliderBit::Analysis_ATLAS_13TeV_PhotonGGM_1Photon_36invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__photonggm__1photon__36invfb/), [Gambit::ColliderBit::Analysis_ATLAS_13TeV_PhotonGGM_2Photon_36invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__photonggm__2photon__36invfb/)
+
 ## Public Functions
 
 |                | Name           |
@@ -33,6 +35,12 @@ Inherits from [Gambit::ColliderBit::Analysis](/documentation/code/classes/classg
 |                | Name           |
 | -------------- | -------------- |
 | constexpr const char * | **[detector](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__photonggm__36invfb/#variable-detector)**  |
+
+## Protected Attributes
+
+|                | Name           |
+| -------------- | -------------- |
+| std::map< string, [EventCounter](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/) > | **[_counters](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__photonggm__36invfb/#variable-counters)**  |
 
 ## Additional inherited members
 
@@ -63,6 +71,7 @@ Inherits from [Gambit::ColliderBit::Analysis](/documentation/code/classes/classg
 | void | **[add_result](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/#function-add-result)**(const [SignalRegionData](/documentation/code/classes/structgambit_1_1colliderbit_1_1signalregiondata/) & sr)<br>Add the given result to the internal results list.  |
 | void | **[set_covariance](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/#function-set-covariance)**(const Eigen::MatrixXd & srcov)<br>Set the covariance matrix, expressing SR correlations.  |
 | void | **[set_covariance](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/#function-set-covariance)**(const std::vector< std::vector< double > > & srcov)<br>A convenience function for setting the SR covariance from a nested vector/initialiser list.  |
+| void | **[set_bkgjson](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/#function-set-bkgjson)**(const std::string & bkgpath)<br>A convenience function for setting the path to the [ATLAS]() FullLikes BKG Json file.  |
 
 
 ## Public Functions Documentation
@@ -110,6 +119,9 @@ Gather together the info for likelihood calculation.
 **Reimplements**: [Gambit::ColliderBit::Analysis::collect_results](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/#function-collect-results)
 
 
+**Reimplemented by**: [Gambit::ColliderBit::Analysis_ATLAS_13TeV_PhotonGGM_1Photon_36invfb::collect_results](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__photonggm__1photon__36invfb/#function-collect-results), [Gambit::ColliderBit::Analysis_ATLAS_13TeV_PhotonGGM_2Photon_36invfb::collect_results](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__photonggm__2photon__36invfb/#function-collect-results)
+
+
 ## Protected Functions Documentation
 
 ### function analysis_specific_reset
@@ -132,6 +144,23 @@ static constexpr const char * detector = "ATLAS";
 ```
 
 
+## Protected Attributes Documentation
+
+### variable _counters
+
+```
+std::map< string, EventCounter > _counters = {
+          {"SRaa_SL", EventCounter("SRaa_SL")},
+          {"SRaa_SH", EventCounter("SRaa_SH")},
+          {"SRaa_WL", EventCounter("SRaa_WL")},
+          {"SRaa_WH", EventCounter("SRaa_WH")},
+          {"SRaj_L", EventCounter("SRaj_L")},
+          {"SRaj_L200", EventCounter("SRaj_L200")},
+          {"SRaj_H", EventCounter("SRaj_H")},
+        };
+```
+
+
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:43 +0000
+Updated on 2023-06-26 at 21:36:51 +0000

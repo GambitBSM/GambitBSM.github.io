@@ -53,7 +53,7 @@ description: "[No description available]"
 | bool | **[is_float_type](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-is-float-type)**(int inttype) |
 | template <typename T \> <br>T | **[type_ret](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-type-ret)**() |
 | template <class U ,typename... T\> <br>void | **[Enter_HDF5](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-enter-hdf5)**(hid_t dataset, T &... params) |
-| void | **[combine_hdf5_files](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-combine-hdf5-files)**(const std::string output_file, const std::string & base_file_name, const std::string & group, const size_t num, const bool resume, const bool cleanup, const bool skip, const std::vector< std::string > input_files =std::vector< std::string >()) |
+| void | **[combine_hdf5_files](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-combine-hdf5-files)**(const std::string output_file, const std::string & base_file_name, const std::string & group, const std::string & metadata_group, const size_t num, const bool resume, const bool cleanup, const bool skip, const std::vector< std::string > input_files =std::vector< std::string >()) |
 | std::unordered_map< [PPIDpair](/documentation/code/classes/structgambit_1_1printers_1_1ppidpair/), unsigned long long, [PPIDHash](/documentation/code/classes/structgambit_1_1printers_1_1ppidhash/), [PPIDEqual](/documentation/code/classes/structgambit_1_1printers_1_1ppidequal/) > | **[get_RA_write_hash](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-get-ra-write-hash)**(hid_t group_id, std::unordered_set< [PPIDpair](/documentation/code/classes/structgambit_1_1printers_1_1ppidpair/), [PPIDHash](/documentation/code/classes/structgambit_1_1printers_1_1ppidhash/), [PPIDEqual](/documentation/code/classes/structgambit_1_1printers_1_1ppidequal/) > & left_to_match) |
 | std::pair< std::vector< std::string >, std::vector< size_t > > | **[find_temporary_files](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-find-temporary-files)**(const std::string & finalfile)<br>Search for temporary files to be combined.  |
 | std::pair< std::vector< std::string >, std::vector< size_t > > | **[find_temporary_files](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-find-temporary-files)**(const std::string & finalfile, size_t & max_i)<br>Search for temporary files to be combined.  |
@@ -62,6 +62,7 @@ description: "[No description available]"
 | std::vector< std::string > | **[get_dset_names](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-get-dset-names)**(hid_t group_id) |
 | herr_t | **[op_func](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-op-func)**(hid_t loc_id, const char * name_in, const H5L_info_t * , void * operator_data) |
 | herr_t | **[op_func_aux](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-op-func-aux)**(hid_t loc_id, const char * name_in, const H5L_info_t * , void * operator_data) |
+| void | **[setup_hdf5_points](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-setup-hdf5-points)**(hid_t new_group, hid_t type, unsigned long long size_tot, const std::string & name) |
 | void | **[setup_hdf5_points](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-setup-hdf5-points)**(hid_t new_group, hid_t type, hid_t type2, unsigned long long size_tot, const std::string & name) |
 | std::vector< std::string > | **[getGroups](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-getgroups)**(std::string groups) |
 | hid_t | **[create_GAMBIT_fapl](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-create-gambit-fapl)**()<br>GAMBIT default file access property list.  |
@@ -444,6 +445,7 @@ inline void combine_hdf5_files(
     const std::string output_file,
     const std::string & base_file_name,
     const std::string & group,
+    const std::string & metadata_group,
     const size_t num,
     const bool resume,
     const bool cleanup,
@@ -534,6 +536,18 @@ inline herr_t op_func_aux(
     const char * name_in,
     const H5L_info_t * ,
     void * operator_data
+)
+```
+
+
+### function setup_hdf5_points
+
+```
+inline void setup_hdf5_points(
+    hid_t new_group,
+    hid_t type,
+    unsigned long long size_tot,
+    const std::string & name
 )
 ```
 
@@ -638,4 +652,4 @@ void * old_client_data;
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:45 +0000
+Updated on 2023-06-26 at 21:36:52 +0000

@@ -23,12 +23,14 @@ description: "[No description available]"
 
   * Christoph Weniger ([c.weniger@uva.nl](mailto:c.weniger@uva.nl)) 
   * Pat Scott ([patscott@physics.mcgill.ca](mailto:patscott@physics.mcgill.ca)) 
+  * Tomas Gonzalo ([tomas.gonzalo@monash.edu](mailto:tomas.gonzalo@monash.edu)) 
 
 
 **Date**: 
 
   * 2013 May, June, July
   * 2014 Mar
+  * 2020 June
 
 
 Base class for ini-file parsers using yaml-cpp
@@ -66,6 +68,10 @@ Authors (add name and date if you modify):
 ///  \author Pat Scott
 ///          (patscott@physics.mcgill.ca)
 ///  \date 2014 Mar
+///
+///  \author Tomas Gonzalo
+///          (tomas.gonzalo@monash.edu)
+///  \date 2020 June
 ///
 ///  *********************************************
 
@@ -203,6 +209,7 @@ namespace Gambit
     void Parser::basicParse(YAML::Node root, std::string filename)
     {
       recursiveImport(root,filename);
+      YAMLNode = root;
       parametersNode = root["Parameters"];
       priorsNode = root["Priors"];
       printerNode = root["Printer"];
@@ -232,6 +239,11 @@ namespace Gambit
       scannerNode["default_output_path"] = Utils::ensure_path_exists(defpath+"/scanner_plugins/");
       logNode    ["default_output_path"] = Utils::ensure_path_exists(defpath+"/logs/");
       printerNode["options"]["default_output_path"] = Utils::ensure_path_exists(defpath+"/samples/");
+
+      // Make a copy of yaml file in output dir
+      str new_filename = defpath+'/'+Utils::base_name(filename);
+      bool replace_yaml_file = getValueOrDef<bool>(true, "replace_yaml_file");
+      printNode(root,new_filename,replace_yaml_file);
 
       // Postprocessor is currently incompatible with 'print_timing_data', so need to pass this option on for checking
       scannerNode["print_timing_data"] = getValueOrDef<bool>(false,"print_timing_data");
@@ -338,6 +350,26 @@ namespace Gambit
       // Parameter must have no entries besides the value for this syntax to be valid
     }
 
+    /// Print a yaml node to file
+    void Parser::printNode(YAML::Node node, str filename, bool replace_yaml_file)
+    {
+      #ifdef WITH_MPI
+        int rank = GMPI::Comm().Get_rank();
+      #else
+        int rank = 0;
+      #endif
+      if (rank == 0) 
+      {
+        if(not Utils::file_exists(filename) or replace_yaml_file)
+        {
+          std::ofstream fout(filename); 
+          fout << node;
+        }
+      }
+    }
+
+    /// Getter for the full YAML Node
+    YAML::Node Parser::getYAMLNode()         const {return YAMLNode;}
     /// Getters for key/value section
     /// @{
     YAML::Node Parser::getParametersNode()   const {return parametersNode;}
@@ -403,4 +435,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:45 +0000
+Updated on 2023-06-26 at 21:36:53 +0000

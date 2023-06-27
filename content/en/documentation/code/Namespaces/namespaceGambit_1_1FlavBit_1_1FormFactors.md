@@ -13,33 +13,33 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| complex< double > | **[K1R](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1formfactors/#function-k1r)**(int alpha, int beta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > mnu) |
-| complex< double > | **[K2L](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1formfactors/#function-k2l)**(int alpha, int beta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > ml, vector< double > mnu) |
-| complex< double > | **[K2R](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1formfactors/#function-k2r)**(int alpha, int beta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > ml, vector< double > mnu) |
-| complex< double > | **[AVLL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1formfactors/#function-avll)**(int alpha, int beta, int gamma, int delta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > ml, vector< double > mnu) |
-| complex< double > | **[AVLR](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1formfactors/#function-avlr)**(int alpha, int beta, int gamma, int delta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > ml, vector< double > mnu) |
-| complex< double > | **[AVRL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1formfactors/#function-avrl)**(int alpha, int beta, int gamma, int delta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > ml, vector< double > mnu) |
-| complex< double > | **[AVRR](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1formfactors/#function-avrr)**(int alpha, int beta, int gamma, int delta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > ml, vector< double > mnu) |
-| complex< double > | **[ASLL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1formfactors/#function-asll)**(int alpha, int beta, int gamma, int delta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > ml, vector< double > mnu, double mh) |
-| complex< double > | **[ASLR](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1formfactors/#function-aslr)**(int alpha, int beta, int gamma, int delta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > ml, vector< double > mnu, double mh) |
-| complex< double > | **[ASRL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1formfactors/#function-asrl)**(int alpha, int beta, int gamma, int delta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > ml, vector< double > mnu, double mh) |
-| complex< double > | **[ASRR](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1formfactors/#function-asrr)**(int alpha, int beta, int gamma, int delta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > ml, vector< double > mnu, double mh) |
-| complex< double > | **[BVLL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1formfactors/#function-bvll)**(int alpha, int beta, int gamma, int delta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > ml, vector< double > mnu) |
-| complex< double > | **[BVLR](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1formfactors/#function-bvlr)**(int alpha, int beta, int gamma, int delta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > ml, vector< double > mnu) |
-| complex< double > | **[BVRL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1formfactors/#function-bvrl)**(int alpha, int beta, int gamma, int delta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > ml, vector< double > mnu) |
-| complex< double > | **[BVRR](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1formfactors/#function-bvrr)**(int alpha, int beta, int gamma, int delta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > ml, vector< double > mnu) |
-| complex< double > | **[BSLL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1formfactors/#function-bsll)**(int alpha, int beta, int gamma, int delta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > ml, vector< double > mnu, double mh) |
-| complex< double > | **[BSLR](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1formfactors/#function-bslr)**(int alpha, int beta, int gamma, int delta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > ml, vector< double > mnu, double mh) |
-| complex< double > | **[BSRL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1formfactors/#function-bsrl)**(int alpha, int beta, int gamma, int delta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > ml, vector< double > mnu, double mh) |
-| complex< double > | **[BSRR](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1formfactors/#function-bsrr)**(int alpha, int beta, int gamma, int delta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > ml, vector< double > mnu, double mh) |
-| complex< double > | **[CVLL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1formfactors/#function-cvll)**(int alpha, int beta, int gamma, int delta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > ml, vector< double > mnu) |
-| complex< double > | **[CVLR](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1formfactors/#function-cvlr)**(int alpha, int beta, int gamma, int delta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > ml, vector< double > mnu) |
-| complex< double > | **[CVRL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1formfactors/#function-cvrl)**(int alpha, int beta, int gamma, int delta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > ml, vector< double > mnu) |
-| complex< double > | **[CVRR](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1formfactors/#function-cvrr)**(int alpha, int beta, int gamma, int delta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > ml, vector< double > mnu) |
-| complex< double > | **[CSLL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1formfactors/#function-csll)**(int alpha, int beta, int gamma, int delta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > ml, vector< double > mnu, double mh) |
-| complex< double > | **[CSLR](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1formfactors/#function-cslr)**(int alpha, int beta, int gamma, int delta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > ml, vector< double > mnu, double mh) |
-| complex< double > | **[CSRL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1formfactors/#function-csrl)**(int alpha, int beta, int gamma, int delta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > ml, vector< double > mnu, double mh) |
-| complex< double > | **[CSRR](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1formfactors/#function-csrr)**(int alpha, int beta, int gamma, int delta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< complex< double >, 3, 6 > U, vector< double > ml, vector< double > mnu, double mh) |
+| std::complex< double > | **[K1R](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1formfactors/#function-k1r)**(int alpha, int beta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< std::complex< double >, 3, 6 > U, std::vector< double > mnu) |
+| std::complex< double > | **[K2L](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1formfactors/#function-k2l)**(int alpha, int beta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< std::complex< double >, 3, 6 > U, std::vector< double > ml, std::vector< double > mnu) |
+| std::complex< double > | **[K2R](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1formfactors/#function-k2r)**(int alpha, int beta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< std::complex< double >, 3, 6 > U, std::vector< double > ml, std::vector< double > mnu) |
+| std::complex< double > | **[AVLL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1formfactors/#function-avll)**(int alpha, int beta, int gamma, int delta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< std::complex< double >, 3, 6 > U, std::vector< double > ml, std::vector< double > mnu) |
+| std::complex< double > | **[AVLR](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1formfactors/#function-avlr)**(int alpha, int beta, int gamma, int delta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< std::complex< double >, 3, 6 > U, std::vector< double > ml, std::vector< double > mnu) |
+| std::complex< double > | **[AVRL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1formfactors/#function-avrl)**(int alpha, int beta, int gamma, int delta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< std::complex< double >, 3, 6 > U, std::vector< double > ml, std::vector< double > mnu) |
+| std::complex< double > | **[AVRR](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1formfactors/#function-avrr)**(int alpha, int beta, int gamma, int delta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< std::complex< double >, 3, 6 > U, std::vector< double > ml, std::vector< double > mnu) |
+| std::complex< double > | **[ASLL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1formfactors/#function-asll)**(int alpha, int beta, int gamma, int delta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< std::complex< double >, 3, 6 > U, std::vector< double > ml, std::vector< double > mnu, double mh) |
+| std::complex< double > | **[ASLR](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1formfactors/#function-aslr)**(int alpha, int beta, int gamma, int delta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< std::complex< double >, 3, 6 > U, std::vector< double > ml, std::vector< double > mnu, double mh) |
+| std::complex< double > | **[ASRL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1formfactors/#function-asrl)**(int alpha, int beta, int gamma, int delta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< std::complex< double >, 3, 6 > U, std::vector< double > ml, std::vector< double > mnu, double mh) |
+| std::complex< double > | **[ASRR](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1formfactors/#function-asrr)**(int alpha, int beta, int gamma, int delta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< std::complex< double >, 3, 6 > U, std::vector< double > ml, std::vector< double > mnu, double mh) |
+| std::complex< double > | **[BVLL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1formfactors/#function-bvll)**(int alpha, int beta, int gamma, int delta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< std::complex< double >, 3, 6 > U, std::vector< double > ml, std::vector< double > mnu) |
+| std::complex< double > | **[BVLR](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1formfactors/#function-bvlr)**(int alpha, int beta, int gamma, int delta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< std::complex< double >, 3, 6 > U, std::vector< double > ml, std::vector< double > mnu) |
+| std::complex< double > | **[BVRL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1formfactors/#function-bvrl)**(int alpha, int beta, int gamma, int delta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< std::complex< double >, 3, 6 > U, std::vector< double > ml, std::vector< double > mnu) |
+| std::complex< double > | **[BVRR](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1formfactors/#function-bvrr)**(int alpha, int beta, int gamma, int delta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< std::complex< double >, 3, 6 > U, std::vector< double > ml, std::vector< double > mnu) |
+| std::complex< double > | **[BSLL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1formfactors/#function-bsll)**(int alpha, int beta, int gamma, int delta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< std::complex< double >, 3, 6 > U, std::vector< double > ml, std::vector< double > mnu, double mh) |
+| std::complex< double > | **[BSLR](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1formfactors/#function-bslr)**(int alpha, int beta, int gamma, int delta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< std::complex< double >, 3, 6 > U, std::vector< double > ml, std::vector< double > mnu, double mh) |
+| std::complex< double > | **[BSRL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1formfactors/#function-bsrl)**(int alpha, int beta, int gamma, int delta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< std::complex< double >, 3, 6 > U, std::vector< double > ml, std::vector< double > mnu, double mh) |
+| std::complex< double > | **[BSRR](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1formfactors/#function-bsrr)**(int alpha, int beta, int gamma, int delta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< std::complex< double >, 3, 6 > U, std::vector< double > ml, std::vector< double > mnu, double mh) |
+| std::complex< double > | **[CVLL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1formfactors/#function-cvll)**(int alpha, int beta, int gamma, int delta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< std::complex< double >, 3, 6 > U, std::vector< double > ml, std::vector< double > mnu) |
+| std::complex< double > | **[CVLR](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1formfactors/#function-cvlr)**(int alpha, int beta, int gamma, int delta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< std::complex< double >, 3, 6 > U, std::vector< double > ml, std::vector< double > mnu) |
+| std::complex< double > | **[CVRL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1formfactors/#function-cvrl)**(int alpha, int beta, int gamma, int delta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< std::complex< double >, 3, 6 > U, std::vector< double > ml, std::vector< double > mnu) |
+| std::complex< double > | **[CVRR](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1formfactors/#function-cvrr)**(int alpha, int beta, int gamma, int delta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< std::complex< double >, 3, 6 > U, std::vector< double > ml, std::vector< double > mnu) |
+| std::complex< double > | **[CSLL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1formfactors/#function-csll)**(int alpha, int beta, int gamma, int delta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< std::complex< double >, 3, 6 > U, std::vector< double > ml, std::vector< double > mnu, double mh) |
+| std::complex< double > | **[CSLR](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1formfactors/#function-cslr)**(int alpha, int beta, int gamma, int delta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< std::complex< double >, 3, 6 > U, std::vector< double > ml, std::vector< double > mnu, double mh) |
+| std::complex< double > | **[CSRL](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1formfactors/#function-csrl)**(int alpha, int beta, int gamma, int delta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< std::complex< double >, 3, 6 > U, std::vector< double > ml, std::vector< double > mnu, double mh) |
+| std::complex< double > | **[CSRR](/documentation/code/namespaces/namespacegambit_1_1flavbit_1_1formfactors/#function-csrr)**(int alpha, int beta, int gamma, int delta, [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, Eigen::Matrix< std::complex< double >, 3, 6 > U, std::vector< double > ml, std::vector< double > mnu, double mh) |
 
 
 ## Functions Documentation
@@ -47,12 +47,12 @@ description: "[No description available]"
 ### function K1R
 
 ```
-complex< double > K1R(
+std::complex< double > K1R(
     int alpha,
     int beta,
     SMInputs sminputs,
-    Eigen::Matrix< complex< double >, 3, 6 > U,
-    vector< double > mnu
+    Eigen::Matrix< std::complex< double >, 3, 6 > U,
+    std::vector< double > mnu
 )
 ```
 
@@ -60,13 +60,13 @@ complex< double > K1R(
 ### function K2L
 
 ```
-complex< double > K2L(
+std::complex< double > K2L(
     int alpha,
     int beta,
     SMInputs sminputs,
-    Eigen::Matrix< complex< double >, 3, 6 > U,
-    vector< double > ml,
-    vector< double > mnu
+    Eigen::Matrix< std::complex< double >, 3, 6 > U,
+    std::vector< double > ml,
+    std::vector< double > mnu
 )
 ```
 
@@ -74,13 +74,13 @@ complex< double > K2L(
 ### function K2R
 
 ```
-complex< double > K2R(
+std::complex< double > K2R(
     int alpha,
     int beta,
     SMInputs sminputs,
-    Eigen::Matrix< complex< double >, 3, 6 > U,
-    vector< double > ml,
-    vector< double > mnu
+    Eigen::Matrix< std::complex< double >, 3, 6 > U,
+    std::vector< double > ml,
+    std::vector< double > mnu
 )
 ```
 
@@ -88,15 +88,15 @@ complex< double > K2R(
 ### function AVLL
 
 ```
-complex< double > AVLL(
+std::complex< double > AVLL(
     int alpha,
     int beta,
     int gamma,
     int delta,
     SMInputs sminputs,
-    Eigen::Matrix< complex< double >, 3, 6 > U,
-    vector< double > ml,
-    vector< double > mnu
+    Eigen::Matrix< std::complex< double >, 3, 6 > U,
+    std::vector< double > ml,
+    std::vector< double > mnu
 )
 ```
 
@@ -104,15 +104,15 @@ complex< double > AVLL(
 ### function AVLR
 
 ```
-complex< double > AVLR(
+std::complex< double > AVLR(
     int alpha,
     int beta,
     int gamma,
     int delta,
     SMInputs sminputs,
-    Eigen::Matrix< complex< double >, 3, 6 > U,
-    vector< double > ml,
-    vector< double > mnu
+    Eigen::Matrix< std::complex< double >, 3, 6 > U,
+    std::vector< double > ml,
+    std::vector< double > mnu
 )
 ```
 
@@ -120,15 +120,15 @@ complex< double > AVLR(
 ### function AVRL
 
 ```
-complex< double > AVRL(
+std::complex< double > AVRL(
     int alpha,
     int beta,
     int gamma,
     int delta,
     SMInputs sminputs,
-    Eigen::Matrix< complex< double >, 3, 6 > U,
-    vector< double > ml,
-    vector< double > mnu
+    Eigen::Matrix< std::complex< double >, 3, 6 > U,
+    std::vector< double > ml,
+    std::vector< double > mnu
 )
 ```
 
@@ -136,15 +136,15 @@ complex< double > AVRL(
 ### function AVRR
 
 ```
-complex< double > AVRR(
+std::complex< double > AVRR(
     int alpha,
     int beta,
     int gamma,
     int delta,
     SMInputs sminputs,
-    Eigen::Matrix< complex< double >, 3, 6 > U,
-    vector< double > ml,
-    vector< double > mnu
+    Eigen::Matrix< std::complex< double >, 3, 6 > U,
+    std::vector< double > ml,
+    std::vector< double > mnu
 )
 ```
 
@@ -152,15 +152,15 @@ complex< double > AVRR(
 ### function ASLL
 
 ```
-complex< double > ASLL(
+std::complex< double > ASLL(
     int alpha,
     int beta,
     int gamma,
     int delta,
     SMInputs sminputs,
-    Eigen::Matrix< complex< double >, 3, 6 > U,
-    vector< double > ml,
-    vector< double > mnu,
+    Eigen::Matrix< std::complex< double >, 3, 6 > U,
+    std::vector< double > ml,
+    std::vector< double > mnu,
     double mh
 )
 ```
@@ -169,15 +169,15 @@ complex< double > ASLL(
 ### function ASLR
 
 ```
-complex< double > ASLR(
+std::complex< double > ASLR(
     int alpha,
     int beta,
     int gamma,
     int delta,
     SMInputs sminputs,
-    Eigen::Matrix< complex< double >, 3, 6 > U,
-    vector< double > ml,
-    vector< double > mnu,
+    Eigen::Matrix< std::complex< double >, 3, 6 > U,
+    std::vector< double > ml,
+    std::vector< double > mnu,
     double mh
 )
 ```
@@ -186,15 +186,15 @@ complex< double > ASLR(
 ### function ASRL
 
 ```
-complex< double > ASRL(
+std::complex< double > ASRL(
     int alpha,
     int beta,
     int gamma,
     int delta,
     SMInputs sminputs,
-    Eigen::Matrix< complex< double >, 3, 6 > U,
-    vector< double > ml,
-    vector< double > mnu,
+    Eigen::Matrix< std::complex< double >, 3, 6 > U,
+    std::vector< double > ml,
+    std::vector< double > mnu,
     double mh
 )
 ```
@@ -203,15 +203,15 @@ complex< double > ASRL(
 ### function ASRR
 
 ```
-complex< double > ASRR(
+std::complex< double > ASRR(
     int alpha,
     int beta,
     int gamma,
     int delta,
     SMInputs sminputs,
-    Eigen::Matrix< complex< double >, 3, 6 > U,
-    vector< double > ml,
-    vector< double > mnu,
+    Eigen::Matrix< std::complex< double >, 3, 6 > U,
+    std::vector< double > ml,
+    std::vector< double > mnu,
     double mh
 )
 ```
@@ -220,15 +220,15 @@ complex< double > ASRR(
 ### function BVLL
 
 ```
-complex< double > BVLL(
+std::complex< double > BVLL(
     int alpha,
     int beta,
     int gamma,
     int delta,
     SMInputs sminputs,
-    Eigen::Matrix< complex< double >, 3, 6 > U,
-    vector< double > ml,
-    vector< double > mnu
+    Eigen::Matrix< std::complex< double >, 3, 6 > U,
+    std::vector< double > ml,
+    std::vector< double > mnu
 )
 ```
 
@@ -236,15 +236,15 @@ complex< double > BVLL(
 ### function BVLR
 
 ```
-complex< double > BVLR(
+std::complex< double > BVLR(
     int alpha,
     int beta,
     int gamma,
     int delta,
     SMInputs sminputs,
-    Eigen::Matrix< complex< double >, 3, 6 > U,
-    vector< double > ml,
-    vector< double > mnu
+    Eigen::Matrix< std::complex< double >, 3, 6 > U,
+    std::vector< double > ml,
+    std::vector< double > mnu
 )
 ```
 
@@ -252,15 +252,15 @@ complex< double > BVLR(
 ### function BVRL
 
 ```
-complex< double > BVRL(
+std::complex< double > BVRL(
     int alpha,
     int beta,
     int gamma,
     int delta,
     SMInputs sminputs,
-    Eigen::Matrix< complex< double >, 3, 6 > U,
-    vector< double > ml,
-    vector< double > mnu
+    Eigen::Matrix< std::complex< double >, 3, 6 > U,
+    std::vector< double > ml,
+    std::vector< double > mnu
 )
 ```
 
@@ -268,15 +268,15 @@ complex< double > BVRL(
 ### function BVRR
 
 ```
-complex< double > BVRR(
+std::complex< double > BVRR(
     int alpha,
     int beta,
     int gamma,
     int delta,
     SMInputs sminputs,
-    Eigen::Matrix< complex< double >, 3, 6 > U,
-    vector< double > ml,
-    vector< double > mnu
+    Eigen::Matrix< std::complex< double >, 3, 6 > U,
+    std::vector< double > ml,
+    std::vector< double > mnu
 )
 ```
 
@@ -284,15 +284,15 @@ complex< double > BVRR(
 ### function BSLL
 
 ```
-complex< double > BSLL(
+std::complex< double > BSLL(
     int alpha,
     int beta,
     int gamma,
     int delta,
     SMInputs sminputs,
-    Eigen::Matrix< complex< double >, 3, 6 > U,
-    vector< double > ml,
-    vector< double > mnu,
+    Eigen::Matrix< std::complex< double >, 3, 6 > U,
+    std::vector< double > ml,
+    std::vector< double > mnu,
     double mh
 )
 ```
@@ -301,15 +301,15 @@ complex< double > BSLL(
 ### function BSLR
 
 ```
-complex< double > BSLR(
+std::complex< double > BSLR(
     int alpha,
     int beta,
     int gamma,
     int delta,
     SMInputs sminputs,
-    Eigen::Matrix< complex< double >, 3, 6 > U,
-    vector< double > ml,
-    vector< double > mnu,
+    Eigen::Matrix< std::complex< double >, 3, 6 > U,
+    std::vector< double > ml,
+    std::vector< double > mnu,
     double mh
 )
 ```
@@ -318,15 +318,15 @@ complex< double > BSLR(
 ### function BSRL
 
 ```
-complex< double > BSRL(
+std::complex< double > BSRL(
     int alpha,
     int beta,
     int gamma,
     int delta,
     SMInputs sminputs,
-    Eigen::Matrix< complex< double >, 3, 6 > U,
-    vector< double > ml,
-    vector< double > mnu,
+    Eigen::Matrix< std::complex< double >, 3, 6 > U,
+    std::vector< double > ml,
+    std::vector< double > mnu,
     double mh
 )
 ```
@@ -335,15 +335,15 @@ complex< double > BSRL(
 ### function BSRR
 
 ```
-complex< double > BSRR(
+std::complex< double > BSRR(
     int alpha,
     int beta,
     int gamma,
     int delta,
     SMInputs sminputs,
-    Eigen::Matrix< complex< double >, 3, 6 > U,
-    vector< double > ml,
-    vector< double > mnu,
+    Eigen::Matrix< std::complex< double >, 3, 6 > U,
+    std::vector< double > ml,
+    std::vector< double > mnu,
     double mh
 )
 ```
@@ -352,15 +352,15 @@ complex< double > BSRR(
 ### function CVLL
 
 ```
-complex< double > CVLL(
+std::complex< double > CVLL(
     int alpha,
     int beta,
     int gamma,
     int delta,
     SMInputs sminputs,
-    Eigen::Matrix< complex< double >, 3, 6 > U,
-    vector< double > ml,
-    vector< double > mnu
+    Eigen::Matrix< std::complex< double >, 3, 6 > U,
+    std::vector< double > ml,
+    std::vector< double > mnu
 )
 ```
 
@@ -368,15 +368,15 @@ complex< double > CVLL(
 ### function CVLR
 
 ```
-complex< double > CVLR(
+std::complex< double > CVLR(
     int alpha,
     int beta,
     int gamma,
     int delta,
     SMInputs sminputs,
-    Eigen::Matrix< complex< double >, 3, 6 > U,
-    vector< double > ml,
-    vector< double > mnu
+    Eigen::Matrix< std::complex< double >, 3, 6 > U,
+    std::vector< double > ml,
+    std::vector< double > mnu
 )
 ```
 
@@ -384,15 +384,15 @@ complex< double > CVLR(
 ### function CVRL
 
 ```
-complex< double > CVRL(
+std::complex< double > CVRL(
     int alpha,
     int beta,
     int gamma,
     int delta,
     SMInputs sminputs,
-    Eigen::Matrix< complex< double >, 3, 6 > U,
-    vector< double > ml,
-    vector< double > mnu
+    Eigen::Matrix< std::complex< double >, 3, 6 > U,
+    std::vector< double > ml,
+    std::vector< double > mnu
 )
 ```
 
@@ -400,15 +400,15 @@ complex< double > CVRL(
 ### function CVRR
 
 ```
-complex< double > CVRR(
+std::complex< double > CVRR(
     int alpha,
     int beta,
     int gamma,
     int delta,
     SMInputs sminputs,
-    Eigen::Matrix< complex< double >, 3, 6 > U,
-    vector< double > ml,
-    vector< double > mnu
+    Eigen::Matrix< std::complex< double >, 3, 6 > U,
+    std::vector< double > ml,
+    std::vector< double > mnu
 )
 ```
 
@@ -416,15 +416,15 @@ complex< double > CVRR(
 ### function CSLL
 
 ```
-complex< double > CSLL(
+std::complex< double > CSLL(
     int alpha,
     int beta,
     int gamma,
     int delta,
     SMInputs sminputs,
-    Eigen::Matrix< complex< double >, 3, 6 > U,
-    vector< double > ml,
-    vector< double > mnu,
+    Eigen::Matrix< std::complex< double >, 3, 6 > U,
+    std::vector< double > ml,
+    std::vector< double > mnu,
     double mh
 )
 ```
@@ -433,15 +433,15 @@ complex< double > CSLL(
 ### function CSLR
 
 ```
-complex< double > CSLR(
+std::complex< double > CSLR(
     int alpha,
     int beta,
     int gamma,
     int delta,
     SMInputs sminputs,
-    Eigen::Matrix< complex< double >, 3, 6 > U,
-    vector< double > ml,
-    vector< double > mnu,
+    Eigen::Matrix< std::complex< double >, 3, 6 > U,
+    std::vector< double > ml,
+    std::vector< double > mnu,
     double mh
 )
 ```
@@ -450,15 +450,15 @@ complex< double > CSLR(
 ### function CSRL
 
 ```
-complex< double > CSRL(
+std::complex< double > CSRL(
     int alpha,
     int beta,
     int gamma,
     int delta,
     SMInputs sminputs,
-    Eigen::Matrix< complex< double >, 3, 6 > U,
-    vector< double > ml,
-    vector< double > mnu,
+    Eigen::Matrix< std::complex< double >, 3, 6 > U,
+    std::vector< double > ml,
+    std::vector< double > mnu,
     double mh
 )
 ```
@@ -467,15 +467,15 @@ complex< double > CSRL(
 ### function CSRR
 
 ```
-complex< double > CSRR(
+std::complex< double > CSRR(
     int alpha,
     int beta,
     int gamma,
     int delta,
     SMInputs sminputs,
-    Eigen::Matrix< complex< double >, 3, 6 > U,
-    vector< double > ml,
-    vector< double > mnu,
+    Eigen::Matrix< std::complex< double >, 3, 6 > U,
+    std::vector< double > ml,
+    std::vector< double > mnu,
     double mh
 )
 ```
@@ -487,4 +487,4 @@ complex< double > CSRR(
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:44 +0000
+Updated on 2023-06-26 at 21:36:52 +0000

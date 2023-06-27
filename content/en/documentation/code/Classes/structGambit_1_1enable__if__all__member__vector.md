@@ -36,4 +36,4 @@ typedef std::enable_if<is_all_member_vector<args...>::value, ret> Gambit::enable
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:42 +0000
+Updated on 2023-06-26 at 21:36:50 +0000

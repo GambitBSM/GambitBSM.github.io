@@ -26,6 +26,7 @@ description: "[No description available]"
   * Christopher Rogan ([christophersrogan@gmail.com](mailto:christophersrogan@gmail.com)) 
   * Pat Scott ([p.scott@imperial.ac.uk](mailto:p.scott@imperial.ac.uk)) 
   * Andy Buckley ([andy.buckley@cern.ch](mailto:andy.buckley@cern.ch)) 
+  * Tomas Gonzalo ([tomas.gonzalo@monash.edu](mailto:tomas.gonzalo@monash.edu)) 
 
 
 **Date**: 
@@ -35,6 +36,7 @@ description: "[No description available]"
   * 2018 Jan 
   * 2019 Jan
   * 2017 Jun
+  * 2019 July
 
 
 Rollcall header for ColliderBit module.
@@ -100,6 +102,10 @@ Authors (add name and date if you modify):
 ///          (andy.buckley@cern.ch)
 ///  \date 2017 Jun
 ///
+///  \author Tomas Gonzalo
+///          (tomas.gonzalo@monash.edu)
+///  \date 2019 July
+///
 ///  *********************************************
 
 #pragma once
@@ -116,9 +122,10 @@ START_MODULE
 #include "gambit/ColliderBit/ColliderBit_LEP_rollcall.hpp"
 #include "gambit/ColliderBit/ColliderBit_MC_rollcall.hpp"
 #include "gambit/ColliderBit/ColliderBit_models_rollcall.hpp"
+#include "gambit/ColliderBit/ColliderBit_measurements_rollcall.hpp"
 ```
 
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:48 +0000
+Updated on 2023-06-26 at 21:36:56 +0000

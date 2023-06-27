@@ -49,7 +49,7 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
    {
       
       // Member functions: 
-      inline void MSSMNoFV_onshell_susy_parameters::print(::std::basic_ostream<char, std::char_traits<char> >& arg_1) const
+      inline void MSSMNoFV_onshell_susy_parameters::print(std::ostream& arg_1) const
       {
          get_BEptr()->print(arg_1);
       }
@@ -69,7 +69,7 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
          return get_BEptr()->get_scale();
       }
       
-      inline void MSSMNoFV_onshell_susy_parameters::set_Yd(const ::Eigen::Matrix<double, 3, 3, 0, 3, 3>& Yd_)
+      inline void MSSMNoFV_onshell_susy_parameters::set_Yd(const Eigen::Matrix<double, 3, 3, 0>& Yd_)
       {
          get_BEptr()->set_Yd(Yd_);
       }
@@ -79,7 +79,7 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
          get_BEptr()->set_Yd(i, k, value);
       }
       
-      inline void MSSMNoFV_onshell_susy_parameters::set_Ye(const ::Eigen::Matrix<double, 3, 3, 0, 3, 3>& Ye_)
+      inline void MSSMNoFV_onshell_susy_parameters::set_Ye(const Eigen::Matrix<double, 3, 3, 0>& Ye_)
       {
          get_BEptr()->set_Ye(Ye_);
       }
@@ -89,7 +89,7 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
          get_BEptr()->set_Ye(i, k, value);
       }
       
-      inline void MSSMNoFV_onshell_susy_parameters::set_Yu(const ::Eigen::Matrix<double, 3, 3, 0, 3, 3>& Yu_)
+      inline void MSSMNoFV_onshell_susy_parameters::set_Yu(const Eigen::Matrix<double, 3, 3, 0>& Yu_)
       {
          get_BEptr()->set_Yu(Yu_);
       }
@@ -129,7 +129,7 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
          get_BEptr()->set_vu(vu_);
       }
       
-      inline const ::Eigen::Matrix<double, 3, 3, 0, 3, 3>& MSSMNoFV_onshell_susy_parameters::get_Yd() const
+      inline const ::Eigen::Matrix<double, 3, 3, 0>& MSSMNoFV_onshell_susy_parameters::get_Yd() const
       {
          return get_BEptr()->get_Yd();
       }
@@ -139,7 +139,7 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
          return get_BEptr()->get_Yd(i, k);
       }
       
-      inline const ::Eigen::Matrix<double, 3, 3, 0, 3, 3>& MSSMNoFV_onshell_susy_parameters::get_Ye() const
+      inline const ::Eigen::Matrix<double, 3, 3, 0>& MSSMNoFV_onshell_susy_parameters::get_Ye() const
       {
          return get_BEptr()->get_Ye();
       }
@@ -149,7 +149,7 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
          return get_BEptr()->get_Ye(i, k);
       }
       
-      inline const ::Eigen::Matrix<double, 3, 3, 0, 3, 3>& MSSMNoFV_onshell_susy_parameters::get_Yu() const
+      inline const ::Eigen::Matrix<double, 3, 3, 0>& MSSMNoFV_onshell_susy_parameters::get_Yu() const
       {
          return get_BEptr()->get_Yu();
       }
@@ -198,7 +198,7 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
          get_BEptr()->set_delete_wrapper(false);
       }
       
-      inline MSSMNoFV_onshell_susy_parameters::MSSMNoFV_onshell_susy_parameters(double scale_, const ::Eigen::Matrix<double, 3, 3, 0, 3, 3>& Yd_, const ::Eigen::Matrix<double, 3, 3, 0, 3, 3>& Ye_, const ::Eigen::Matrix<double, 3, 3, 0, 3, 3>& Yu_, double Mu_, double g1_, double g2_, double g3_, double vd_, double vu_) :
+      inline MSSMNoFV_onshell_susy_parameters::MSSMNoFV_onshell_susy_parameters(double scale_, const Eigen::Matrix<double, 3, 3, 0>& Yd_, const Eigen::Matrix<double, 3, 3, 0>& Ye_, const Eigen::Matrix<double, 3, 3, 0>& Yu_, double Mu_, double g1_, double g2_, double g3_, double vd_, double vu_) :
          WrapperBase(__factory1(scale_, Yd_, Ye_, Yu_, Mu_, g1_, g2_, g3_, vd_, vu_))
       {
          get_BEptr()->set_wptr(this);
@@ -265,4 +265,4 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:49 +0000
+Updated on 2023-06-26 at 21:36:57 +0000

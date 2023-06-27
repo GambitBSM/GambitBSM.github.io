@@ -15,6 +15,10 @@ description: "[No description available]"
 | -------------- | -------------- |
 | struct | **[Gambit::SpectrumContents::DiracSingletDM_Z2](/documentation/code/classes/structgambit_1_1spectrumcontents_1_1diracsingletdm__z2/)**  |
 | struct | **[Gambit::SpectrumContents::DMEFT](/documentation/code/classes/structgambit_1_1spectrumcontents_1_1dmeft/)**  |
+| struct | **[Gambit::SpectrumContents::DMsimpVectorMedDiracDM](/documentation/code/classes/structgambit_1_1spectrumcontents_1_1dmsimpvectormeddiracdm/)**  |
+| struct | **[Gambit::SpectrumContents::DMsimpVectorMedMajoranaDM](/documentation/code/classes/structgambit_1_1spectrumcontents_1_1dmsimpvectormedmajoranadm/)**  |
+| struct | **[Gambit::SpectrumContents::DMsimpVectorMedScalarDM](/documentation/code/classes/structgambit_1_1spectrumcontents_1_1dmsimpvectormedscalardm/)**  |
+| struct | **[Gambit::SpectrumContents::DMsimpVectorMedVectorDM](/documentation/code/classes/structgambit_1_1spectrumcontents_1_1dmsimpvectormedvectordm/)**  |
 | struct | **[Gambit::SpectrumContents::MajoranaSingletDM_Z2](/documentation/code/classes/structgambit_1_1spectrumcontents_1_1majoranasingletdm__z2/)**  |
 | struct | **[Gambit::SpectrumContents::MDM](/documentation/code/classes/structgambit_1_1spectrumcontents_1_1mdm/)**  |
 | struct | **[Gambit::SpectrumContents::MSSM](/documentation/code/classes/structgambit_1_1spectrumcontents_1_1mssm/)**  |
@@ -32,4 +36,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:45 +0000
+Updated on 2023-06-26 at 21:36:53 +0000

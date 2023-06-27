@@ -108,7 +108,162 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
-      <memberdef kind="function" id="SpecBit__MSSM_8cpp_1a8095ee41d40af0e9f5278c27c03684ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="SpecBit__MSSM_8cpp_1a61a97bad69a25ec0748938a7253a859f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::SpecBit::check_LSP</definition>
+        <argsstring>(const Spectrum &amp;spec, const Options &amp;runOptions, bool gravitino_is_canonical_LSP)</argsstring>
+        <name>check_LSP</name>
+        <qualifiedname>Gambit::SpecBit::check_LSP</qualifiedname>
+        <param>
+          <type>const <ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref> &amp;</type>
+          <declname>spec</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classGambit_1_1Options" kindref="compound">Options</ref> &amp;</type>
+          <declname>runOptions</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>gravitino_is_canonical_LSP</declname>
+        </param>
+        <briefdescription>
+<para>Non-Gambit convenience functions. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Check that the spectrum has the canonical LSP for the model being scanned. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SpecBit/src/SpecBit_MSSM.cpp" line="81" column="10" bodyfile="SpecBit/src/SpecBit_MSSM.cpp" bodystart="81" bodyend="115"/>
+      </memberdef>
+      <memberdef kind="function" id="SpecBit__MSSM_8cpp_1a0c7119974e871550412d535108f9aba5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::SpecBit::check_LSP</definition>
+        <argsstring>(const Spectrum *spec, const Options &amp;runOptions, bool gravitino_model)</argsstring>
+        <name>check_LSP</name>
+        <qualifiedname>Gambit::SpecBit::check_LSP</qualifiedname>
+        <param>
+          <type>const <ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref> *</type>
+          <declname>spec</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classGambit_1_1Options" kindref="compound">Options</ref> &amp;</type>
+          <declname>runOptions</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>gravitino_model</declname>
+        </param>
+        <briefdescription>
+<para>Helper to work with pointer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SpecBit/src/SpecBit_MSSM.cpp" line="117" column="10" bodyfile="SpecBit/src/SpecBit_MSSM.cpp" bodystart="117" bodyend="120"/>
+      </memberdef>
+      <memberdef kind="function" id="SpecBit__MSSM_8cpp_1a513c56fddd16ab1654fc9171b069e1d0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::SpecBit::get_light_gravitino_mass</definition>
+        <argsstring>(const std::map&lt; str, safe_ptr&lt; const double &gt; &gt; &amp;Param, const Options &amp;runOptions)</argsstring>
+        <name>get_light_gravitino_mass</name>
+        <qualifiedname>Gambit::SpecBit::get_light_gravitino_mass</qualifiedname>
+        <param>
+          <type>const std::map&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>, <ref refid="classGambit_1_1safe__ptr" kindref="compound">safe_ptr</ref>&lt; const double &gt; &gt; &amp;</type>
+          <declname>Param</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classGambit_1_1Options" kindref="compound">Options</ref> &amp;</type>
+          <declname>runOptions</declname>
+        </param>
+        <briefdescription>
+<para>Check that the gravitino is actually light, and retrieve its mass. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SpecBit/src/SpecBit_MSSM.cpp" line="123" column="12" bodyfile="SpecBit/src/SpecBit_MSSM.cpp" bodystart="123" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="SpecBit__MSSM_8cpp_1a635dc35875e6240759da022da6168f7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::SpecBit::add_gravitino_mass</definition>
+        <argsstring>(Spectrum &amp;spec, const std::map&lt; str, safe_ptr&lt; const double &gt; &gt; &amp;Param, const Options &amp;runOptions)</argsstring>
+        <name>add_gravitino_mass</name>
+        <qualifiedname>Gambit::SpecBit::add_gravitino_mass</qualifiedname>
+        <param>
+          <type><ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref> &amp;</type>
+          <declname>spec</declname>
+        </param>
+        <param>
+          <type>const std::map&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>, <ref refid="classGambit_1_1safe__ptr" kindref="compound">safe_ptr</ref>&lt; const double &gt; &gt; &amp;</type>
+          <declname>Param</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classGambit_1_1Options" kindref="compound">Options</ref> &amp;</type>
+          <declname>runOptions</declname>
+        </param>
+        <briefdescription>
+<para>Add the gravitino mass if it is present (spectrum object version) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SpecBit/src/SpecBit_MSSM.cpp" line="138" column="10" bodyfile="SpecBit/src/SpecBit_MSSM.cpp" bodystart="138" bodyend="141"/>
+      </memberdef>
+      <memberdef kind="function" id="SpecBit__MSSM_8cpp_1a73d3b2417738a209f01789a2bf9db7d9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::SpecBit::add_gravitino_mass</definition>
+        <argsstring>(SLHAstruct &amp;slha, const std::map&lt; str, safe_ptr&lt; const double &gt; &gt; &amp;Param, const Options &amp;runOptions)</argsstring>
+        <name>add_gravitino_mass</name>
+        <qualifiedname>Gambit::SpecBit::add_gravitino_mass</qualifiedname>
+        <param>
+          <type><ref refid="namespaceGambit_1a4df3d966ed9733910719e3497cb886c6" kindref="member">SLHAstruct</ref> &amp;</type>
+          <declname>slha</declname>
+        </param>
+        <param>
+          <type>const std::map&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>, <ref refid="classGambit_1_1safe__ptr" kindref="compound">safe_ptr</ref>&lt; const double &gt; &gt; &amp;</type>
+          <declname>Param</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classGambit_1_1Options" kindref="compound">Options</ref> &amp;</type>
+          <declname>runOptions</declname>
+        </param>
+        <briefdescription>
+<para>Add the gravitino mass if it is present (SLHAea version) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SpecBit/src/SpecBit_MSSM.cpp" line="144" column="10" bodyfile="SpecBit/src/SpecBit_MSSM.cpp" bodystart="144" bodyend="147"/>
+      </memberdef>
+      <memberdef kind="function" id="SpecBit__MSSM_8cpp_1a518c622eb289e121bccac8d91df42dbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::SpecBit::add_gravitino_mass_from_slhaea</definition>
+        <argsstring>(Spectrum &amp;spec, const SLHAstruct &amp;input_slha)</argsstring>
+        <name>add_gravitino_mass_from_slhaea</name>
+        <qualifiedname>Gambit::SpecBit::add_gravitino_mass_from_slhaea</qualifiedname>
+        <param>
+          <type><ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref> &amp;</type>
+          <declname>spec</declname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceGambit_1a4df3d966ed9733910719e3497cb886c6" kindref="member">SLHAstruct</ref> &amp;</type>
+          <declname>input_slha</declname>
+        </param>
+        <briefdescription>
+<para>Add the gravitino mass to a spectrum object if it is present in an SLHAea object. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SpecBit/src/SpecBit_MSSM.cpp" line="150" column="10" bodyfile="SpecBit/src/SpecBit_MSSM.cpp" bodystart="150" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="SpecBit__MSSM_8cpp_1a5042abe08bc4b09d33d80d00b57cf70a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
           <param>
             <type>class MI</type>
@@ -116,7 +271,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         </templateparamlist>
         <type><ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref></type>
         <definition>Spectrum Gambit::SpecBit::run_FS_spectrum_generator</definition>
-        <argsstring>(const typename MI::InputParameters &amp;input, const SMInputs &amp;sminputs, const Options &amp;runOptions, const std::map&lt; str, safe_ptr&lt; const double &gt; &gt; &amp;input_Param)</argsstring>
+        <argsstring>(const typename MI::InputParameters &amp;input, const SMInputs &amp;sminputs, const Options &amp;runOptions, const std::map&lt; str, safe_ptr&lt; const double &gt; &gt; &amp;input_Param, bool gravitino_model)</argsstring>
         <name>run_FS_spectrum_generator</name>
         <qualifiedname>Gambit::SpecBit::run_FS_spectrum_generator</qualifiedname>
         <param>
@@ -135,18 +290,21 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
           <type>const std::map&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>, <ref refid="classGambit_1_1safe__ptr" kindref="compound">safe_ptr</ref>&lt; const double &gt; &gt; &amp;</type>
           <declname>input_Param</declname>
         </param>
+        <param>
+          <type>bool</type>
+          <declname>gravitino_model</declname>
+        </param>
         <briefdescription>
-<para>Non-Gambit convenience functions. </para>
+<para>Compute an MSSM spectrum using flexiblesusy. </para>
         </briefdescription>
         <detaileddescription>
-<para>Compute an MSSM spectrum using flexiblesusy </para>
         </detaileddescription>
         <inbodydescription>
 <para>TODO: Need to tell gambit that the spectrum is not viable somehow. For now just die.</para>
 <para>Check what the problem was see: contrib/MassSpectra/flexiblesusy/src/problems.hpp</para>
 <para>Fast way for now:</para>
         </inbodydescription>
-        <location file="SpecBit/src/SpecBit_MSSM.cpp" line="91" column="14" bodyfile="SpecBit/src/SpecBit_MSSM.cpp" bodystart="92" bodyend="304"/>
+        <location file="SpecBit/src/SpecBit_MSSM.cpp" line="172" column="14" bodyfile="SpecBit/src/SpecBit_MSSM.cpp" bodystart="173" bodyend="393"/>
       </memberdef>
       <memberdef kind="function" id="SpecBit__MSSM_8cpp_1a360c373812dfee46650db2b3be4b5bdf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Eigen::Matrix&lt; double, 3, 3 &gt;</type>
@@ -169,7 +327,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="SpecBit/src/SpecBit_MSSM.cpp" line="514" column="19" bodyfile="SpecBit/src/SpecBit_MSSM.cpp" bodystart="514" bodyend="522"/>
+        <location file="SpecBit/src/SpecBit_MSSM.cpp" line="603" column="19" bodyfile="SpecBit/src/SpecBit_MSSM.cpp" bodystart="603" bodyend="611"/>
       </memberdef>
       <memberdef kind="function" id="SpecBit__MSSM_8cpp_1a6f94c4cb53d7d021748693c52f614784" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Eigen::Matrix&lt; double, 3, 3 &gt;</type>
@@ -192,7 +350,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="SpecBit/src/SpecBit_MSSM.cpp" line="525" column="19" bodyfile="SpecBit/src/SpecBit_MSSM.cpp" bodystart="525" bodyend="534"/>
+        <location file="SpecBit/src/SpecBit_MSSM.cpp" line="614" column="19" bodyfile="SpecBit/src/SpecBit_MSSM.cpp" bodystart="614" bodyend="623"/>
       </memberdef>
       <memberdef kind="function" id="SpecBit__MSSM_8cpp_1ac854e95e89c928ee3931148c9051a26e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -220,7 +378,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="SpecBit/src/SpecBit_MSSM.cpp" line="539" column="10" bodyfile="SpecBit/src/SpecBit_MSSM.cpp" bodystart="539" bodyend="585"/>
+        <location file="SpecBit/src/SpecBit_MSSM.cpp" line="628" column="10" bodyfile="SpecBit/src/SpecBit_MSSM.cpp" bodystart="628" bodyend="674"/>
       </memberdef>
       <memberdef kind="function" id="SpecBit__MSSM_8cpp_1a146852681982144b6bfdc23903717ed9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -247,7 +405,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="SpecBit/src/SpecBit_MSSM.cpp" line="593" column="10" bodyfile="SpecBit/src/SpecBit_MSSM.cpp" bodystart="593" bodyend="640"/>
+        <location file="SpecBit/src/SpecBit_MSSM.cpp" line="682" column="10" bodyfile="SpecBit/src/SpecBit_MSSM.cpp" bodystart="682" bodyend="729"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -268,7 +426,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="SpecBit/src/SpecBit_MSSM.cpp" line="652" column="10" bodyfile="SpecBit/src/SpecBit_MSSM.cpp" bodystart="652" bodyend="652"/>
+        <location file="SpecBit/src/SpecBit_MSSM.cpp" line="741" column="10" bodyfile="SpecBit/src/SpecBit_MSSM.cpp" bodystart="741" bodyend="741"/>
       </memberdef>
       <memberdef kind="function" id="SpecBit__MSSM_8cpp_1ada09944e12a9cae93f76f6609316cdf9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -286,7 +444,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="SpecBit/src/SpecBit_MSSM.cpp" line="653" column="10" bodyfile="SpecBit/src/SpecBit_MSSM.cpp" bodystart="653" bodyend="653"/>
+        <location file="SpecBit/src/SpecBit_MSSM.cpp" line="742" column="10" bodyfile="SpecBit/src/SpecBit_MSSM.cpp" bodystart="742" bodyend="742"/>
       </memberdef>
       <memberdef kind="function" id="SpecBit__MSSM_8cpp_1ac08a5ae6a9fa263f83a6d51310a7746f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -304,7 +462,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="SpecBit/src/SpecBit_MSSM.cpp" line="654" column="10" bodyfile="SpecBit/src/SpecBit_MSSM.cpp" bodystart="654" bodyend="654"/>
+        <location file="SpecBit/src/SpecBit_MSSM.cpp" line="743" column="10" bodyfile="SpecBit/src/SpecBit_MSSM.cpp" bodystart="743" bodyend="743"/>
       </memberdef>
       <memberdef kind="function" id="SpecBit__MSSM_8cpp_1a57ae4611210ce58e91d7d084b94f9a24" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -322,7 +480,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="SpecBit/src/SpecBit_MSSM.cpp" line="656" column="10" bodyfile="SpecBit/src/SpecBit_MSSM.cpp" bodystart="656" bodyend="680"/>
+        <location file="SpecBit/src/SpecBit_MSSM.cpp" line="745" column="10" bodyfile="SpecBit/src/SpecBit_MSSM.cpp" bodystart="745" bodyend="766"/>
       </memberdef>
       <memberdef kind="function" id="SpecBit__MSSM_8cpp_1a6f6d2703d92786c2a881cfd3a53cb098" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -339,7 +497,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="SpecBit/src/SpecBit_MSSM.cpp" line="1018" column="10" bodyfile="SpecBit/src/SpecBit_MSSM.cpp" bodystart="1018" bodyend="1021"/>
+        <location file="SpecBit/src/SpecBit_MSSM.cpp" line="1106" column="10" bodyfile="SpecBit/src/SpecBit_MSSM.cpp" bodystart="1106" bodyend="1109"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -374,7 +532,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
 <para>Add everything... use spectrum contents routines to automate task (make sure to use correct template parameter!)</para>
 <para>Verification routine should have taken care of invalid shapes etc, so won&apos;t check for that here.</para>
         </inbodydescription>
-        <location file="SpecBit/src/SpecBit_MSSM.cpp" line="1823" column="10" bodyfile="SpecBit/src/SpecBit_MSSM.cpp" bodystart="1823" bodyend="1898" declfile="SpecBit/src/SpecBit_MSSM.cpp" declline="1689" declcolumn="10"/>
+        <location file="SpecBit/src/SpecBit_MSSM.cpp" line="1916" column="10" bodyfile="SpecBit/src/SpecBit_MSSM.cpp" bodystart="1916" bodyend="1993" declfile="SpecBit/src/SpecBit_MSSM.cpp" declline="1782" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="SpecBit__MSSM_8cpp_1a0e1fdf29f66d90f0cd4ccca0a69667a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -400,7 +558,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
 <para>Since this is for printing we only want to invalidate the point if this is completely wrong. We can also plot the mixing if we are suspicious.</para>
 <para>return mass eigenstate strings that best represent required gauge eigenstate</para>
         </inbodydescription>
-        <location file="SpecBit/src/SpecBit_MSSM.cpp" line="1692" column="10" bodyfile="SpecBit/src/SpecBit_MSSM.cpp" bodystart="1692" bodyend="1779"/>
+        <location file="SpecBit/src/SpecBit_MSSM.cpp" line="1785" column="10" bodyfile="SpecBit/src/SpecBit_MSSM.cpp" bodystart="1785" bodyend="1872"/>
       </memberdef>
       <memberdef kind="function" id="SpecBit__MSSM_8cpp_1a4d8445d9e33ef047c18e84df6f08d074" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -418,7 +576,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="SpecBit/src/SpecBit_MSSM.cpp" line="1781" column="10" bodyfile="SpecBit/src/SpecBit_MSSM.cpp" bodystart="1781" bodyend="1799"/>
+        <location file="SpecBit/src/SpecBit_MSSM.cpp" line="1874" column="10" bodyfile="SpecBit/src/SpecBit_MSSM.cpp" bodystart="1874" bodyend="1892"/>
       </memberdef>
       <memberdef kind="function" id="SpecBit__MSSM_8cpp_1a515000f9d4c849bb37d9f2acd62eae7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -436,7 +594,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="SpecBit/src/SpecBit_MSSM.cpp" line="1800" column="10" bodyfile="SpecBit/src/SpecBit_MSSM.cpp" bodystart="1800" bodyend="1818"/>
+        <location file="SpecBit/src/SpecBit_MSSM.cpp" line="1893" column="10" bodyfile="SpecBit/src/SpecBit_MSSM.cpp" bodystart="1893" bodyend="1911"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="typedef">
@@ -3231,6 +3389,307 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         </inbodydescription>
         <location file="SpecBit/src/SpecBit_DMEFT.cpp" line="141" column="10" bodyfile="SpecBit/src/SpecBit_DMEFT.cpp" bodystart="141" bodyend="146"/>
       </memberdef>
+      <memberdef kind="function" id="SpecBit__DMsimpVectorMedDiracDM_8cpp_1a46c1cdf5d2f8d13de9651355fa31f049" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::SpecBit::get_DMsimpVectorMedDiracDM_spectrum</definition>
+        <argsstring>(Spectrum &amp;result)</argsstring>
+        <name>get_DMsimpVectorMedDiracDM_spectrum</name>
+        <qualifiedname>Gambit::SpecBit::get_DMsimpVectorMedDiracDM_spectrum</qualifiedname>
+        <param>
+          <type><ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref> &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+<para>Get a (simple) <ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref> object wrapper for DMsimpVectorMedDiracDM_spectrum model. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SpecBit/src/SpecBit_DMsimpVectorMedDiracDM.cpp" line="41" column="10" bodyfile="SpecBit/src/SpecBit_DMsimpVectorMedDiracDM.cpp" bodystart="41" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="SpecBit__DMsimpVectorMedDiracDM_8cpp_1af8a7ab27d2ff1261a453a4a96d9c4dc4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::SpecBit::fill_map_from_DMsimpVectorMedDiracDM_spectrum</definition>
+        <argsstring>(std::map&lt; std::string, double &gt; &amp;, const Spectrum &amp;)</argsstring>
+        <name>fill_map_from_DMsimpVectorMedDiracDM_spectrum</name>
+        <qualifiedname>Gambit::SpecBit::fill_map_from_DMsimpVectorMedDiracDM_spectrum</qualifiedname>
+        <param>
+          <type>std::map&lt; std::string, double &gt; &amp;</type>
+          <defname>specmap</defname>
+        </param>
+        <param>
+          <type>const <ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref> &amp;</type>
+          <defname>spec</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Use SpectrumContents routines to automate</para>
+<para>Use SpectrumContents routines to automate</para>
+        </inbodydescription>
+        <location file="SpecBit/src/SpecBit_DMsimpVectorMedDiracDM.cpp" line="159" column="10" bodyfile="SpecBit/src/SpecBit_DMsimpVectorMedDiracDM.cpp" bodystart="159" bodyend="211" declfile="SpecBit/src/SpecBit_DMsimpVectorMedDiracDM.cpp" declline="150" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="SpecBit__DMsimpVectorMedDiracDM_8cpp_1a996bb7a5b80c7be67ef9a98a25a8fb6c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::SpecBit::get_DMsimpVectorMedDiracDM_spectrum_as_map</definition>
+        <argsstring>(std::map&lt; std::string, double &gt; &amp;specmap)</argsstring>
+        <name>get_DMsimpVectorMedDiracDM_spectrum_as_map</name>
+        <qualifiedname>Gambit::SpecBit::get_DMsimpVectorMedDiracDM_spectrum_as_map</qualifiedname>
+        <param>
+          <type>std::map&lt; std::string, double &gt; &amp;</type>
+          <declname>specmap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SpecBit/src/SpecBit_DMsimpVectorMedDiracDM.cpp" line="152" column="10" bodyfile="SpecBit/src/SpecBit_DMsimpVectorMedDiracDM.cpp" bodystart="152" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="SpecBit__DMsimpVectorMedDiracDM_8cpp_1aef0a773e839e946a8faa15b549e2e9ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::SpecBit::Unitarity_Bound_DMsimpVectorMedDiracDM</definition>
+        <argsstring>(double &amp;result)</argsstring>
+        <name>Unitarity_Bound_DMsimpVectorMedDiracDM</name>
+        <qualifiedname>Gambit::SpecBit::Unitarity_Bound_DMsimpVectorMedDiracDM</qualifiedname>
+        <param>
+          <type>double &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+<para>Calculate whether or not unitarity is violated. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SpecBit/src/SpecBit_DMsimpVectorMedDiracDM.cpp" line="214" column="10" bodyfile="SpecBit/src/SpecBit_DMsimpVectorMedDiracDM.cpp" bodystart="214" bodyend="234"/>
+      </memberdef>
+      <memberdef kind="function" id="SpecBit__DMsimpVectorMedMajoranaDM_8cpp_1ad7b8d27ce998cab267439651dc070455" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::SpecBit::get_DMsimpVectorMedMajoranaDM_spectrum</definition>
+        <argsstring>(Spectrum &amp;result)</argsstring>
+        <name>get_DMsimpVectorMedMajoranaDM_spectrum</name>
+        <qualifiedname>Gambit::SpecBit::get_DMsimpVectorMedMajoranaDM_spectrum</qualifiedname>
+        <param>
+          <type><ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref> &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+<para>Get a (simple) <ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref> object wrapper for DMsimpVectorMedMajoranaDM_spectrum model. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SpecBit/src/SpecBit_DMsimpVectorMedMajoranaDM.cpp" line="41" column="10" bodyfile="SpecBit/src/SpecBit_DMsimpVectorMedMajoranaDM.cpp" bodystart="41" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="SpecBit__DMsimpVectorMedMajoranaDM_8cpp_1a4e95cfc82aa2f4c2c23294009555aef4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::SpecBit::fill_map_from_DMsimpVectorMedMajoranaDM_spectrum</definition>
+        <argsstring>(std::map&lt; std::string, double &gt; &amp;, const Spectrum &amp;)</argsstring>
+        <name>fill_map_from_DMsimpVectorMedMajoranaDM_spectrum</name>
+        <qualifiedname>Gambit::SpecBit::fill_map_from_DMsimpVectorMedMajoranaDM_spectrum</qualifiedname>
+        <param>
+          <type>std::map&lt; std::string, double &gt; &amp;</type>
+          <defname>specmap</defname>
+        </param>
+        <param>
+          <type>const <ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref> &amp;</type>
+          <defname>spec</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Use SpectrumContents routines to automate</para>
+<para>Use SpectrumContents routines to automate</para>
+        </inbodydescription>
+        <location file="SpecBit/src/SpecBit_DMsimpVectorMedMajoranaDM.cpp" line="158" column="10" bodyfile="SpecBit/src/SpecBit_DMsimpVectorMedMajoranaDM.cpp" bodystart="158" bodyend="210" declfile="SpecBit/src/SpecBit_DMsimpVectorMedMajoranaDM.cpp" declline="149" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="SpecBit__DMsimpVectorMedMajoranaDM_8cpp_1a8ca8f7f935f6e05f86d5f95e5af9ac1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::SpecBit::get_DMsimpVectorMedMajoranaDM_spectrum_as_map</definition>
+        <argsstring>(std::map&lt; std::string, double &gt; &amp;specmap)</argsstring>
+        <name>get_DMsimpVectorMedMajoranaDM_spectrum_as_map</name>
+        <qualifiedname>Gambit::SpecBit::get_DMsimpVectorMedMajoranaDM_spectrum_as_map</qualifiedname>
+        <param>
+          <type>std::map&lt; std::string, double &gt; &amp;</type>
+          <declname>specmap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SpecBit/src/SpecBit_DMsimpVectorMedMajoranaDM.cpp" line="151" column="10" bodyfile="SpecBit/src/SpecBit_DMsimpVectorMedMajoranaDM.cpp" bodystart="151" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="SpecBit__DMsimpVectorMedMajoranaDM_8cpp_1aaa5829ef0c448913c5be2ba51c5b76e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::SpecBit::Unitarity_Bound_DMsimpVectorMedMajoranaDM</definition>
+        <argsstring>(double &amp;result)</argsstring>
+        <name>Unitarity_Bound_DMsimpVectorMedMajoranaDM</name>
+        <qualifiedname>Gambit::SpecBit::Unitarity_Bound_DMsimpVectorMedMajoranaDM</qualifiedname>
+        <param>
+          <type>double &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+<para>Calculate whether or not unitarity is violated. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SpecBit/src/SpecBit_DMsimpVectorMedMajoranaDM.cpp" line="213" column="10" bodyfile="SpecBit/src/SpecBit_DMsimpVectorMedMajoranaDM.cpp" bodystart="213" bodyend="233"/>
+      </memberdef>
+      <memberdef kind="function" id="SpecBit__DMsimpVectorMedScalarDM_8cpp_1a7fbc0c2ae13d1b0426bf5b94b70ba77c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::SpecBit::get_DMsimpVectorMedScalarDM_spectrum</definition>
+        <argsstring>(Spectrum &amp;result)</argsstring>
+        <name>get_DMsimpVectorMedScalarDM_spectrum</name>
+        <qualifiedname>Gambit::SpecBit::get_DMsimpVectorMedScalarDM_spectrum</qualifiedname>
+        <param>
+          <type><ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref> &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+<para>Get a (simple) <ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref> object wrapper for DMsimpVectorMedScalarDM_spectrum model. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SpecBit/src/SpecBit_DMsimpVectorMedScalarDM.cpp" line="41" column="10" bodyfile="SpecBit/src/SpecBit_DMsimpVectorMedScalarDM.cpp" bodystart="41" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="SpecBit__DMsimpVectorMedScalarDM_8cpp_1a96f240a99c61e979aad818af1f293f15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::SpecBit::fill_map_from_DMsimpVectorMedScalarDM_spectrum</definition>
+        <argsstring>(std::map&lt; std::string, double &gt; &amp;, const Spectrum &amp;)</argsstring>
+        <name>fill_map_from_DMsimpVectorMedScalarDM_spectrum</name>
+        <qualifiedname>Gambit::SpecBit::fill_map_from_DMsimpVectorMedScalarDM_spectrum</qualifiedname>
+        <param>
+          <type>std::map&lt; std::string, double &gt; &amp;</type>
+          <defname>specmap</defname>
+        </param>
+        <param>
+          <type>const <ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref> &amp;</type>
+          <defname>spec</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Use SpectrumContents routines to automate</para>
+<para>Use SpectrumContents routines to automate</para>
+        </inbodydescription>
+        <location file="SpecBit/src/SpecBit_DMsimpVectorMedScalarDM.cpp" line="158" column="10" bodyfile="SpecBit/src/SpecBit_DMsimpVectorMedScalarDM.cpp" bodystart="158" bodyend="210" declfile="SpecBit/src/SpecBit_DMsimpVectorMedScalarDM.cpp" declline="149" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="SpecBit__DMsimpVectorMedScalarDM_8cpp_1a0c0dd70b88983173d7989a3e9cea89d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::SpecBit::get_DMsimpVectorMedScalarDM_spectrum_as_map</definition>
+        <argsstring>(std::map&lt; std::string, double &gt; &amp;specmap)</argsstring>
+        <name>get_DMsimpVectorMedScalarDM_spectrum_as_map</name>
+        <qualifiedname>Gambit::SpecBit::get_DMsimpVectorMedScalarDM_spectrum_as_map</qualifiedname>
+        <param>
+          <type>std::map&lt; std::string, double &gt; &amp;</type>
+          <declname>specmap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SpecBit/src/SpecBit_DMsimpVectorMedScalarDM.cpp" line="151" column="10" bodyfile="SpecBit/src/SpecBit_DMsimpVectorMedScalarDM.cpp" bodystart="151" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="SpecBit__DMsimpVectorMedVectorDM_8cpp_1a4e586feda9baf1aba96bd3c90ee02c04" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::SpecBit::get_DMsimpVectorMedVectorDM_spectrum</definition>
+        <argsstring>(Spectrum &amp;result)</argsstring>
+        <name>get_DMsimpVectorMedVectorDM_spectrum</name>
+        <qualifiedname>Gambit::SpecBit::get_DMsimpVectorMedVectorDM_spectrum</qualifiedname>
+        <param>
+          <type><ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref> &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+<para>Get a (simple) <ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref> object wrapper for DMsimpVectorMedVectorDM_spectrum model. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SpecBit/src/SpecBit_DMsimpVectorMedVectorDM.cpp" line="41" column="10" bodyfile="SpecBit/src/SpecBit_DMsimpVectorMedVectorDM.cpp" bodystart="41" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="SpecBit__DMsimpVectorMedVectorDM_8cpp_1a009edaceed73abff8c88764bc0a66d7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::SpecBit::fill_map_from_DMsimpVectorMedVectorDM_spectrum</definition>
+        <argsstring>(std::map&lt; std::string, double &gt; &amp;, const Spectrum &amp;)</argsstring>
+        <name>fill_map_from_DMsimpVectorMedVectorDM_spectrum</name>
+        <qualifiedname>Gambit::SpecBit::fill_map_from_DMsimpVectorMedVectorDM_spectrum</qualifiedname>
+        <param>
+          <type>std::map&lt; std::string, double &gt; &amp;</type>
+          <defname>specmap</defname>
+        </param>
+        <param>
+          <type>const <ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref> &amp;</type>
+          <defname>spec</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Use SpectrumContents routines to automate</para>
+<para>Use SpectrumContents routines to automate</para>
+        </inbodydescription>
+        <location file="SpecBit/src/SpecBit_DMsimpVectorMedVectorDM.cpp" line="158" column="10" bodyfile="SpecBit/src/SpecBit_DMsimpVectorMedVectorDM.cpp" bodystart="158" bodyend="210" declfile="SpecBit/src/SpecBit_DMsimpVectorMedVectorDM.cpp" declline="149" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="SpecBit__DMsimpVectorMedVectorDM_8cpp_1a2e63cd0547df32cfa4e7d0b0c9ad8c8f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::SpecBit::get_DMsimpVectorMedVectorDM_spectrum_as_map</definition>
+        <argsstring>(std::map&lt; std::string, double &gt; &amp;specmap)</argsstring>
+        <name>get_DMsimpVectorMedVectorDM_spectrum_as_map</name>
+        <qualifiedname>Gambit::SpecBit::get_DMsimpVectorMedVectorDM_spectrum_as_map</qualifiedname>
+        <param>
+          <type>std::map&lt; std::string, double &gt; &amp;</type>
+          <declname>specmap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SpecBit/src/SpecBit_DMsimpVectorMedVectorDM.cpp" line="151" column="10" bodyfile="SpecBit/src/SpecBit_DMsimpVectorMedVectorDM.cpp" bodystart="151" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="SpecBit__DMsimpVectorMedVectorDM_8cpp_1a28fd8d44a2d141ce0559da5174146da2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::SpecBit::DecayWidthPerturbativity_DMsimpVectorMedVectorDM</definition>
+        <argsstring>(double &amp;result)</argsstring>
+        <name>DecayWidthPerturbativity_DMsimpVectorMedVectorDM</name>
+        <qualifiedname>Gambit::SpecBit::DecayWidthPerturbativity_DMsimpVectorMedVectorDM</qualifiedname>
+        <param>
+          <type>double &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+<para>Calculate the mediator decay width-mass ratio and invalidate the point if greater than 1. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SpecBit/src/SpecBit_DMsimpVectorMedVectorDM.cpp" line="213" column="10" bodyfile="SpecBit/src/SpecBit_DMsimpVectorMedVectorDM.cpp" bodystart="213" bodyend="235"/>
+      </memberdef>
       <memberdef kind="function" id="SpecBit__MajoranaSingletDM_8cpp_1aa42a3a883bb2e1d03e2a75b178d3b41e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void Gambit::SpecBit::get_MajoranaSingletDM_Z2_spectrum</definition>
@@ -3469,7 +3928,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="SpecBit/src/SpecBit_MSSM.cpp" line="1029" column="10" bodyfile="SpecBit/src/SpecBit_MSSM.cpp" bodystart="1029" bodyend="1034"/>
+        <location file="SpecBit/src/SpecBit_MSSM.cpp" line="1117" column="10" bodyfile="SpecBit/src/SpecBit_MSSM.cpp" bodystart="1117" bodyend="1122"/>
       </memberdef>
       <memberdef kind="function" id="SpecBit__MSSM_8cpp_1a959101e1309d4e13bafe177f418f7068" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -3488,7 +3947,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="SpecBit/src/SpecBit_MSSM.cpp" line="1037" column="10" bodyfile="SpecBit/src/SpecBit_MSSM.cpp" bodystart="1037" bodyend="1040"/>
+        <location file="SpecBit/src/SpecBit_MSSM.cpp" line="1125" column="10" bodyfile="SpecBit/src/SpecBit_MSSM.cpp" bodystart="1125" bodyend="1128"/>
       </memberdef>
       <memberdef kind="function" id="SpecBit__MSSM_8cpp_1a81cfc49fd6aeb1cda8b9b46499d52be0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -3507,7 +3966,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="SpecBit/src/SpecBit_MSSM.cpp" line="1043" column="10" bodyfile="SpecBit/src/SpecBit_MSSM.cpp" bodystart="1043" bodyend="1046"/>
+        <location file="SpecBit/src/SpecBit_MSSM.cpp" line="1131" column="10" bodyfile="SpecBit/src/SpecBit_MSSM.cpp" bodystart="1131" bodyend="1134"/>
       </memberdef>
       <memberdef kind="function" id="SpecBit__MSSM_8cpp_1a4e1bd8bbe957866030020eb9c1488e2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -3526,7 +3985,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="SpecBit/src/SpecBit_MSSM.cpp" line="1052" column="10" bodyfile="SpecBit/src/SpecBit_MSSM.cpp" bodystart="1052" bodyend="1107"/>
+        <location file="SpecBit/src/SpecBit_MSSM.cpp" line="1140" column="10" bodyfile="SpecBit/src/SpecBit_MSSM.cpp" bodystart="1140" bodyend="1198"/>
       </memberdef>
       <memberdef kind="function" id="SpecBit__MSSM_8cpp_1a292d0ddb744f2550fcab1623d5b6d660" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -3544,10 +4003,8 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
 <para>Get an MSSMSpectrum object from an SLHAstruct Wraps it up in <ref refid="classGambit_1_1MSSMSimpleSpec" kindref="compound">MSSMSimpleSpec</ref>; i.e. no RGE running possible. This can be used as a poor-man&apos;s interface to backend spectrum generators </para>
         </detaileddescription>
         <inbodydescription>
-<para><xrefsect id="todo_1_todo000099"><xreftitle>Todo</xreftitle><xrefdescription><para>FIXME this needs to be fixed <ndash/> is it needed any more? Where is this GAMBIT block supposed to be written? </para>
-</xrefdescription></xrefsect></para>
         </inbodydescription>
-        <location file="SpecBit/src/SpecBit_MSSM.cpp" line="1112" column="10" bodyfile="SpecBit/src/SpecBit_MSSM.cpp" bodystart="1112" bodyend="1161"/>
+        <location file="SpecBit/src/SpecBit_MSSM.cpp" line="1203" column="10" bodyfile="SpecBit/src/SpecBit_MSSM.cpp" bodystart="1203" bodyend="1249"/>
       </memberdef>
       <memberdef kind="function" id="SpecBit__MSSM_8cpp_1aa4ca4943a0e98e44f5afba1793011d16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -3566,7 +4023,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="SpecBit/src/SpecBit_MSSM.cpp" line="1167" column="10" bodyfile="SpecBit/src/SpecBit_MSSM.cpp" bodystart="1167" bodyend="1217"/>
+        <location file="SpecBit/src/SpecBit_MSSM.cpp" line="1255" column="10" bodyfile="SpecBit/src/SpecBit_MSSM.cpp" bodystart="1255" bodyend="1310"/>
       </memberdef>
       <memberdef kind="function" id="SpecBit__MSSM_8cpp_1ae0e97dce0f51c49f39bcac9a234d800d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -3585,7 +4042,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="SpecBit/src/SpecBit_MSSM.cpp" line="1220" column="10" bodyfile="SpecBit/src/SpecBit_MSSM.cpp" bodystart="1220" bodyend="1329"/>
+        <location file="SpecBit/src/SpecBit_MSSM.cpp" line="1313" column="10" bodyfile="SpecBit/src/SpecBit_MSSM.cpp" bodystart="1313" bodyend="1422"/>
       </memberdef>
       <memberdef kind="function" id="SpecBit__MSSM_8cpp_1aec7644315417966384e2ee1ccd137f4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -3604,7 +4061,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="SpecBit/src/SpecBit_MSSM.cpp" line="1333" column="10" bodyfile="SpecBit/src/SpecBit_MSSM.cpp" bodystart="1333" bodyend="1407"/>
+        <location file="SpecBit/src/SpecBit_MSSM.cpp" line="1426" column="10" bodyfile="SpecBit/src/SpecBit_MSSM.cpp" bodystart="1426" bodyend="1500"/>
       </memberdef>
       <memberdef kind="function" id="SpecBit__MSSM_8cpp_1af739f33b2f42d4723a3ce7014d65b38b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -3623,7 +4080,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="SpecBit/src/SpecBit_MSSM.cpp" line="1414" column="10" bodyfile="SpecBit/src/SpecBit_MSSM.cpp" bodystart="1414" bodyend="1481"/>
+        <location file="SpecBit/src/SpecBit_MSSM.cpp" line="1507" column="10" bodyfile="SpecBit/src/SpecBit_MSSM.cpp" bodystart="1507" bodyend="1574"/>
       </memberdef>
       <memberdef kind="function" id="SpecBit__MSSM_8cpp_1abafff724b0e03f6e186781baacd69584" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; std::pair&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>, <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &gt; &gt;</type>
@@ -3642,7 +4099,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="SpecBit/src/SpecBit_MSSM.cpp" line="1485" column="17" bodyfile="SpecBit/src/SpecBit_MSSM.cpp" bodystart="1485" bodyend="1504"/>
+        <location file="SpecBit/src/SpecBit_MSSM.cpp" line="1578" column="17" bodyfile="SpecBit/src/SpecBit_MSSM.cpp" bodystart="1578" bodyend="1597"/>
       </memberdef>
       <memberdef kind="function" id="SpecBit__MSSM_8cpp_1a2b5c2f892707671d7cfad52df88cb32b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -3661,7 +4118,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="SpecBit/src/SpecBit_MSSM.cpp" line="1507" column="10" bodyfile="SpecBit/src/SpecBit_MSSM.cpp" bodystart="1507" bodyend="1582"/>
+        <location file="SpecBit/src/SpecBit_MSSM.cpp" line="1600" column="10" bodyfile="SpecBit/src/SpecBit_MSSM.cpp" bodystart="1600" bodyend="1675"/>
       </memberdef>
       <memberdef kind="function" id="SpecBit__MSSM_8cpp_1a7952646fe92194253f5e04c2d6cfffdb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -3680,7 +4137,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="SpecBit/src/SpecBit_MSSM.cpp" line="1586" column="10" bodyfile="SpecBit/src/SpecBit_MSSM.cpp" bodystart="1586" bodyend="1680"/>
+        <location file="SpecBit/src/SpecBit_MSSM.cpp" line="1679" column="10" bodyfile="SpecBit/src/SpecBit_MSSM.cpp" bodystart="1679" bodyend="1773"/>
       </memberdef>
       <memberdef kind="function" id="SpecBit__MSSM_8cpp_1a11f2befbc810ac12cf28944a4c0c1fed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -3698,7 +4155,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="SpecBit/src/SpecBit_MSSM.cpp" line="1900" column="10" bodyfile="SpecBit/src/SpecBit_MSSM.cpp" bodystart="1900" bodyend="1913"/>
+        <location file="SpecBit/src/SpecBit_MSSM.cpp" line="1995" column="10" bodyfile="SpecBit/src/SpecBit_MSSM.cpp" bodystart="1995" bodyend="2008"/>
       </memberdef>
       <memberdef kind="function" id="SpecBit__MSSM_8cpp_1a98915289e99e0a231471262b6a5a6625" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -3716,7 +4173,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="SpecBit/src/SpecBit_MSSM.cpp" line="1915" column="10" bodyfile="SpecBit/src/SpecBit_MSSM.cpp" bodystart="1915" bodyend="1935"/>
+        <location file="SpecBit/src/SpecBit_MSSM.cpp" line="2010" column="10" bodyfile="SpecBit/src/SpecBit_MSSM.cpp" bodystart="2010" bodyend="2030"/>
       </memberdef>
       <memberdef kind="function" id="SpecBit__MSSM_8cpp_1acc8dfeace1e819668b5731f5fec81af2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -3734,7 +4191,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="SpecBit/src/SpecBit_MSSM.cpp" line="1937" column="10" bodyfile="SpecBit/src/SpecBit_MSSM.cpp" bodystart="1937" bodyend="1996"/>
+        <location file="SpecBit/src/SpecBit_MSSM.cpp" line="2032" column="10" bodyfile="SpecBit/src/SpecBit_MSSM.cpp" bodystart="2032" bodyend="2091"/>
       </memberdef>
       <memberdef kind="function" id="SpecBit__ScalarSingletDM_8cpp_1ad18d835398f17b195ecd21c5e157fe90" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -3753,7 +4210,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="SpecBit/src/SpecBit_ScalarSingletDM.cpp" line="56" column="10" bodyfile="SpecBit/src/SpecBit_ScalarSingletDM.cpp" bodystart="56" bodyend="113"/>
+        <location file="SpecBit/src/SpecBit_ScalarSingletDM.cpp" line="56" column="10" bodyfile="SpecBit/src/SpecBit_ScalarSingletDM.cpp" bodystart="56" bodyend="116"/>
       </memberdef>
       <memberdef kind="function" id="SpecBit__ScalarSingletDM_8cpp_1a1df852d2c78544e9096f3404ad3b85b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -3772,7 +4229,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="SpecBit/src/SpecBit_ScalarSingletDM.cpp" line="116" column="10" bodyfile="SpecBit/src/SpecBit_ScalarSingletDM.cpp" bodystart="116" bodyend="175"/>
+        <location file="SpecBit/src/SpecBit_ScalarSingletDM.cpp" line="119" column="10" bodyfile="SpecBit/src/SpecBit_ScalarSingletDM.cpp" bodystart="119" bodyend="181"/>
       </memberdef>
       <memberdef kind="function" id="SpecBit__ScalarSingletDM_8cpp_1a7bad3ee6085ffedf4f8d6a88ae0b83c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -3803,7 +4260,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="SpecBit/src/SpecBit_ScalarSingletDM.cpp" line="290" column="10" bodyfile="SpecBit/src/SpecBit_ScalarSingletDM.cpp" bodystart="290" bodyend="314"/>
+        <location file="SpecBit/src/SpecBit_ScalarSingletDM.cpp" line="296" column="10" bodyfile="SpecBit/src/SpecBit_ScalarSingletDM.cpp" bodystart="296" bodyend="320"/>
       </memberdef>
       <memberdef kind="function" id="SpecBit__ScalarSingletDM_8cpp_1ad8e81aa874aff5ae85d83a365bca3b34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -3830,7 +4287,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="SpecBit/src/SpecBit_ScalarSingletDM.cpp" line="317" column="10" bodyfile="SpecBit/src/SpecBit_ScalarSingletDM.cpp" bodystart="317" bodyend="320"/>
+        <location file="SpecBit/src/SpecBit_ScalarSingletDM.cpp" line="323" column="10" bodyfile="SpecBit/src/SpecBit_ScalarSingletDM.cpp" bodystart="323" bodyend="326"/>
       </memberdef>
       <memberdef kind="function" id="SpecBit__ScalarSingletDM_8cpp_1adc288cc9afedbd6f8b025b28761bc053" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -3860,7 +4317,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="SpecBit/src/SpecBit_ScalarSingletDM.cpp" line="322" column="10" bodyfile="SpecBit/src/SpecBit_ScalarSingletDM.cpp" bodystart="322" bodyend="394"/>
+        <location file="SpecBit/src/SpecBit_ScalarSingletDM.cpp" line="328" column="10" bodyfile="SpecBit/src/SpecBit_ScalarSingletDM.cpp" bodystart="328" bodyend="400"/>
       </memberdef>
       <memberdef kind="function" id="SpecBit__ScalarSingletDM_8cpp_1aae390156c3e41a1513cf5d3e24368391" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -3879,7 +4336,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="SpecBit/src/SpecBit_ScalarSingletDM.cpp" line="568" column="10" bodyfile="SpecBit/src/SpecBit_ScalarSingletDM.cpp" bodystart="568" bodyend="598"/>
+        <location file="SpecBit/src/SpecBit_ScalarSingletDM.cpp" line="574" column="10" bodyfile="SpecBit/src/SpecBit_ScalarSingletDM.cpp" bodystart="574" bodyend="604"/>
       </memberdef>
       <memberdef kind="function" id="SpecBit__ScalarSingletDM_8cpp_1a282623732915af871abd97db751750aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -3907,7 +4364,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <inbodydescription>
 <para>Verification routine should have taken care of invalid shapes etc, so won&apos;t check for that here.</para>
         </inbodydescription>
-        <location file="SpecBit/src/SpecBit_ScalarSingletDM.cpp" line="601" column="10" bodyfile="SpecBit/src/SpecBit_ScalarSingletDM.cpp" bodystart="601" bodyend="651"/>
+        <location file="SpecBit/src/SpecBit_ScalarSingletDM.cpp" line="607" column="10" bodyfile="SpecBit/src/SpecBit_ScalarSingletDM.cpp" bodystart="607" bodyend="657"/>
       </memberdef>
       <memberdef kind="function" id="SpecBit__ScalarSingletDM_8cpp_1af14c178d1d84916b4904c6fac26066fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -3925,7 +4382,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="SpecBit/src/SpecBit_ScalarSingletDM.cpp" line="653" column="10" bodyfile="SpecBit/src/SpecBit_ScalarSingletDM.cpp" bodystart="653" bodyend="660"/>
+        <location file="SpecBit/src/SpecBit_ScalarSingletDM.cpp" line="659" column="10" bodyfile="SpecBit/src/SpecBit_ScalarSingletDM.cpp" bodystart="659" bodyend="666"/>
       </memberdef>
       <memberdef kind="function" id="SpecBit__ScalarSingletDM_8cpp_1a85127c2e27becd141929e97a01b08558" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -3943,7 +4400,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="SpecBit/src/SpecBit_ScalarSingletDM.cpp" line="662" column="6" bodyfile="SpecBit/src/SpecBit_ScalarSingletDM.cpp" bodystart="662" bodyend="669"/>
+        <location file="SpecBit/src/SpecBit_ScalarSingletDM.cpp" line="668" column="6" bodyfile="SpecBit/src/SpecBit_ScalarSingletDM.cpp" bodystart="668" bodyend="675"/>
       </memberdef>
       <memberdef kind="function" id="SpecBit__SM_8cpp_1a7b032de0cd57ae35490e28c3b6402241" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -4437,7 +4894,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <name>make_vpp_inputs</name>
         <qualifiedname>Gambit::SpecBit::make_vpp_inputs</qualifiedname>
         <param>
-          <type><ref refid="namespaceGambit_1a51de803e5143010226b0a7c7e7e05b88" kindref="member">map_str_str</ref> &amp;</type>
+          <type><ref refid="namespaceGambit_1ae96b932df1a511063b912a23631f260b" kindref="member">map_str_str</ref> &amp;</type>
           <declname>opts</declname>
         </param>
         <briefdescription>
@@ -4618,7 +5075,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <name>compare_panic_vacua</name>
         <qualifiedname>Gambit::SpecBit::compare_panic_vacua</qualifiedname>
         <param>
-          <type><ref refid="namespaceGambit_1a51de803e5143010226b0a7c7e7e05b88" kindref="member">map_str_str</ref> &amp;</type>
+          <type><ref refid="namespaceGambit_1ae96b932df1a511063b912a23631f260b" kindref="member">map_str_str</ref> &amp;</type>
           <declname>result</declname>
         </param>
         <briefdescription>
@@ -4656,7 +5113,7 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         <name>vevacious_file_location_MSSM</name>
         <qualifiedname>Gambit::SpecBit::vevacious_file_location_MSSM</qualifiedname>
         <param>
-          <type><ref refid="namespaceGambit_1a51de803e5143010226b0a7c7e7e05b88" kindref="member">map_str_str</ref> &amp;</type>
+          <type><ref refid="namespaceGambit_1ae96b932df1a511063b912a23631f260b" kindref="member">map_str_str</ref> &amp;</type>
           <declname>result</declname>
         </param>
         <briefdescription>

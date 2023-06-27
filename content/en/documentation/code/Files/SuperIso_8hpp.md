@@ -314,6 +314,8 @@ namespace Gambit
     /* Wilson Coefficients */
     double Re_DeltaC7 = 0.;
     double Im_DeltaC7 = 0.;
+    double Re_DeltaC8 = 0.;
+    double Im_DeltaC8 = 0.;
     double Re_DeltaC9 = 0.;
     double Im_DeltaC9 = 0.;
     double Re_DeltaC10 = 0.;
@@ -358,6 +360,8 @@ namespace Gambit
 
     double Re_DeltaC7_Prime = 0.;
     double Im_DeltaC7_Prime = 0.;
+    double Re_DeltaC8_Prime = 0.;
+    double Im_DeltaC8_Prime = 0.;
     double Re_DeltaC9_Prime = 0.;
     double Im_DeltaC9_Prime = 0.;
     double Re_DeltaC10_Prime = 0.;
@@ -505,4 +509,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:49 +0000
+Updated on 2023-06-26 at 21:36:57 +0000

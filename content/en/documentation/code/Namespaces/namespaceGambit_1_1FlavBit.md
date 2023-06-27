@@ -39,7 +39,7 @@ description: "[No description available]"
 | void | **[operator>>](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-operator)**(const YAML::Node & node, [Correlation](/documentation/code/classes/structgambit_1_1flavbit_1_1correlation/) & c)<br>Extraction operator for correlation.  |
 | void | **[operator>>](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-operator)**(const YAML::Node & node, [Measurement](/documentation/code/classes/structgambit_1_1flavbit_1_1measurement/) & v)<br>Extraction operator for measurement.  |
 | const [nuiscorr](/documentation/code/classes/structgambit_1_1nuiscorr/)(& | **[nuiscorr_help](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-nuiscorr-help)**([nuiscorr](/documentation/code/classes/structgambit_1_1nuiscorr/)(&) arr[ncorrnuis], const std::vector< [nuiscorr](/documentation/code/classes/structgambit_1_1nuiscorr/) > & v) |
-| void | **[print](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-print)**([flav_prediction](/documentation/code/classes/structgambit_1_1flav__prediction/) prediction, vector< std::string > names)<br>Print function for FlavBit predictions.  |
+| void | **[print](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-print)**([flav_prediction](/documentation/code/classes/structgambit_1_1flav__prediction/) prediction, std::vector< std::string > names)<br>Print function for FlavBit predictions.  |
 | void | **[Kstarll_Theory2Experiment_translation](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-kstarll-theory2experiment-translation)**([flav_observable_map](/documentation/code/namespaces/namespacegambit/#typedef-flav-observable-map) & prediction, int generation)<br>Translate B->K*ll observables from theory to LHCb convention.  |
 | void | **[Kstarll_Theory2Experiment_translation](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-kstarll-theory2experiment-translation)**(flav_covariance_map & prediction, int generation)<br>Translate B->K*ll covariances from theory to LHCb convention.  |
 | [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[path_to_latest_heplike_data](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-path-to-latest-heplike-data)**()<br>Find the path to the latest installed version of the HepLike data.  |
@@ -49,6 +49,9 @@ description: "[No description available]"
 | std::vector< double > | **[get_obs_theory](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-get-obs-theory)**(const [flav_prediction](/documentation/code/classes/structgambit_1_1flav__prediction/) & prediction, const std::vector< std::string > & observables)<br>Extract central values of the given observables from the central value map.  |
 | boost::numeric::ublas::matrix< double > | **[get_obs_covariance](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-get-obs-covariance)**(const [flav_prediction](/documentation/code/classes/structgambit_1_1flav__prediction/) & prediction, const std::vector< std::string > & observables)<br>Extract covariance matrix of the given observables from the covariance map.  |
 | void | **[SuperIso_prediction_helper](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-superiso-prediction-helper)**(const std::vector< std::string > & FB_obslist, const std::vector< std::string > & SI_obslist, [flav_prediction](/documentation/code/classes/structgambit_1_1flav__prediction/) & result, const [parameters](/documentation/code/classes/structgambit_1_1parameters/) & param, const [nuisance](/documentation/code/classes/structgambit_1_1nuisance/) & nuislist, void(*)(char **, int *, double **, const [parameters](/documentation/code/classes/structgambit_1_1parameters/) *, const [nuisance](/documentation/code/classes/structgambit_1_1nuisance/) *) get_predictions_nuisance, void(*)(int, [obsname](/documentation/code/classes/structgambit_1_1obsname/) *, int, double *, double *, const [nuisance](/documentation/code/classes/structgambit_1_1nuisance/) *, char **, const [parameters](/documentation/code/classes/structgambit_1_1parameters/) *) observables, void(*)([nuiscorr](/documentation/code/classes/structgambit_1_1nuiscorr/) *, int, double **, char **, int) convert_correlation, void(*)(double ***, char **, int *, const [parameters](/documentation/code/classes/structgambit_1_1parameters/) *, const [nuisance](/documentation/code/classes/structgambit_1_1nuisance/) *, double **) get_th_covariance_nuisance, bool useSMCovariance, bool SMCovarianceCached)<br>Helper function to avoid code duplication.  |
+| void | **[SuperIso_RKstar_0045_11](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-superiso-rkstar-0045-11)**(double & result)<br>SuperIso prediction for RK* in low q^2.  |
+| void | **[SuperIso_RKstar_11_60](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-superiso-rkstar-11-60)**(double & result)<br>RK* in intermediate q^2.  |
+| void | **[SuperIso_RK](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-superiso-rk)**(double & result)<br>RK between 1 and 6 GeV^2.  |
 | | **[SI_MULTI_PREDICTION_FUNCTION](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-si-multi-prediction-function)**(B2mumu ) |
 | _Atlas | **[SI_MULTI_PREDICTION_FUNCTION_BINS](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-si-multi-prediction-function-bins)**(B2KstarmumuAng , _2_4 , _Atlas ) |
 | _Atlas _Atlas | **[SI_MULTI_PREDICTION_FUNCTION_BINS](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-si-multi-prediction-function-bins)**(B2KstarmumuAng , _1_2 , _CMS ) |
@@ -97,7 +100,7 @@ description: "[No description available]"
 | void | **[RHN_taueemu](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-rhn-taueemu)**(double & result) |
 | void | **[RHN_tauemumu](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-rhn-tauemumu)**(double & result) |
 | void | **[RHN_taumumue](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-rhn-taumumue)**(double & result) |
-| void | **[RHN_mue_FF](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-rhn-mue-ff)**(const [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, std::vector< double > & mnu, Eigen::Matrix< complex< double >, 3, 6 > & U, const double mH, complex< double > & g0SL, complex< double > & g0SR, complex< double > & g0VL, complex< double > & g0VR, complex< double > & g1SL, complex< double > & g1SR, complex< double > & g1VL, complex< double > & g1VR) |
+| void | **[RHN_mue_FF](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-rhn-mue-ff)**(const [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) sminputs, std::vector< double > & mnu, Eigen::Matrix< std::complex< double >, 3, 6 > & U, const double mH, std::complex< double > & g0SL, std::complex< double > & g0SR, std::complex< double > & g0VL, std::complex< double > & g0VR, std::complex< double > & g1SL, std::complex< double > & g1SR, std::complex< double > & g1VL, std::complex< double > & g1VR) |
 | void | **[RHN_mueTi](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-rhn-mueti)**(double & result) |
 | void | **[RHN_mueAu](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-rhn-mueau)**(double & result) |
 | void | **[RHN_muePb](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-rhn-muepb)**(double & result) |
@@ -119,7 +122,7 @@ description: "[No description available]"
 | void | **[HEPLike_B2KstarmumuBr_LogLikelihood_LHCb](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-heplike-b2kstarmumubr-loglikelihood-lhcb)**(double & result)<br>HEPLike LogLikelihood B -> K* mu mu Br (LHCb)  |
 | void | **[HEPLike_B2KmumuBr_LogLikelihood_LHCb](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-heplike-b2kmumubr-loglikelihood-lhcb)**(double & result)<br>HEPLike LogLikelihood B -> K+ mu mu Br (LHCb)  |
 | void | **[HEPLike_Bs2phimumuBr_LogLikelihood](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-heplike-bs2phimumubr-loglikelihood)**(double & result) |
-| void | **[HEPLike_RK_LogLikelihood](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-heplike-rk-loglikelihood)**(double & result) |
+| void | **[HEPLike_RK_LogLikelihood_LHCb](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-heplike-rk-loglikelihood-lhcb)**(double & result) |
 | void | **[HEPLike_RKstar_LogLikelihood_LHCb](/documentation/code/namespaces/namespacegambit_1_1flavbit/#function-heplike-rkstar-loglikelihood-lhcb)**(double & result) |
 
 ## Attributes
@@ -226,7 +229,7 @@ const nuiscorr(& nuiscorr_help(
 ```
 void print(
     flav_prediction prediction,
-    vector< std::string > names
+    std::vector< std::string > names
 )
 ```
 
@@ -334,6 +337,36 @@ void SuperIso_prediction_helper(
 ```
 
 Helper function to avoid code duplication. 
+
+### function SuperIso_RKstar_0045_11
+
+```
+void SuperIso_RKstar_0045_11(
+    double & result
+)
+```
+
+SuperIso prediction for RK* in low q^2. 
+
+### function SuperIso_RKstar_11_60
+
+```
+void SuperIso_RKstar_11_60(
+    double & result
+)
+```
+
+RK* in intermediate q^2. 
+
+### function SuperIso_RK
+
+```
+void SuperIso_RK(
+    double & result
+)
+```
+
+RK between 1 and 6 GeV^2. 
 
 ### function SI_MULTI_PREDICTION_FUNCTION
 
@@ -830,16 +863,16 @@ void RHN_taumumue(
 void RHN_mue_FF(
     const SMInputs sminputs,
     std::vector< double > & mnu,
-    Eigen::Matrix< complex< double >, 3, 6 > & U,
+    Eigen::Matrix< std::complex< double >, 3, 6 > & U,
     const double mH,
-    complex< double > & g0SL,
-    complex< double > & g0SR,
-    complex< double > & g0VL,
-    complex< double > & g0VR,
-    complex< double > & g1SL,
-    complex< double > & g1SR,
-    complex< double > & g1VL,
-    complex< double > & g1VR
+    std::complex< double > & g0SL,
+    std::complex< double > & g0SR,
+    std::complex< double > & g0VL,
+    std::complex< double > & g0VR,
+    std::complex< double > & g1SL,
+    std::complex< double > & g1SR,
+    std::complex< double > & g1VL,
+    std::complex< double > & g1VR
 )
 ```
 
@@ -1072,10 +1105,10 @@ void HEPLike_Bs2phimumuBr_LogLikelihood(
 ```
 
 
-### function HEPLike_RK_LogLikelihood
+### function HEPLike_RK_LogLikelihood_LHCb
 
 ```
-void HEPLike_RK_LogLikelihood(
+void HEPLike_RK_LogLikelihood_LHCb(
     double & result
 )
 ```
@@ -1227,4 +1260,4 @@ _Atlas _Atlas _CMS _CMS _CMS _Belle _Belle _LHCb _LHCb _LHCb _0p0008_0p257;
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:44 +0000
+Updated on 2023-06-26 at 21:36:52 +0000

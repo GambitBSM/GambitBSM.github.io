@@ -161,6 +161,13 @@ namespace Gambit
           BOOST_PP_SEQ_FOR_EACH_I(DECLARE_PRINT, , ASCII_BACKEND_TYPES)
         #endif
         #undef DECLARE_PRINT
+
+        // Print metadata info to file
+        void _print_metadata(map_str_str)
+        {
+          // Do nothing
+        }
+
         ///@}
 
         /// Helper print functions
@@ -190,4 +197,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:46 +0000
+Updated on 2023-06-26 at 21:36:54 +0000

@@ -54,6 +54,7 @@ Authors (add name and date if you modify):
   (std::vector<double>)     \
   (bool)                    \
   (map_str_dbl)             \
+  (map_str_str)             \
   (ModelParameters)         \
   (triplet<double>)         \
   (map_intpair_dbl)         \
@@ -103,6 +104,7 @@ Authors (add name and date if you modify):
   (std::vector<double>)     \
   (bool)                    \
   (map_str_dbl)             \
+  (map_str_str)             \
   (ModelParameters)         \
   (triplet<double>)         \
   (map_intpair_dbl)         \
@@ -119,4 +121,4 @@ Authors (add name and date if you modify):
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:46 +0000
+Updated on 2023-06-26 at 21:36:54 +0000

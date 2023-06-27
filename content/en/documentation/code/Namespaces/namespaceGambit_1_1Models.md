@@ -22,6 +22,14 @@ Forward declaration of [Models::ModelFunctorClaw]() class for use in constructor
 | class | **[Gambit::Models::DiracSingletDM_Z2SimpleSpec](/documentation/code/classes/classgambit_1_1models_1_1diracsingletdm__z2simplespec/)**  |
 | struct | **[Gambit::Models::DMEFTModel](/documentation/code/classes/structgambit_1_1models_1_1dmeftmodel/)** <br>Simple DMEFT model object.  |
 | class | **[Gambit::Models::DMEFTSimpleSpec](/documentation/code/classes/classgambit_1_1models_1_1dmeftsimplespec/)**  |
+| class | **[Gambit::Models::DMsimpVectorMedDiracDMModel](/documentation/code/classes/classgambit_1_1models_1_1dmsimpvectormeddiracdmmodel/)** <br>Simple DMsimpVectorMedDiracDM model object.  |
+| class | **[Gambit::Models::DMsimpVectorMedDiracDMSimpleSpec](/documentation/code/classes/classgambit_1_1models_1_1dmsimpvectormeddiracdmsimplespec/)**  |
+| class | **[Gambit::Models::DMsimpVectorMedMajoranaDMModel](/documentation/code/classes/classgambit_1_1models_1_1dmsimpvectormedmajoranadmmodel/)** <br>Simple DMsimpVectorMedMajoranaDM model object.  |
+| class | **[Gambit::Models::DMsimpVectorMedMajoranaDMSimpleSpec](/documentation/code/classes/classgambit_1_1models_1_1dmsimpvectormedmajoranadmsimplespec/)**  |
+| class | **[Gambit::Models::DMsimpVectorMedScalarDMModel](/documentation/code/classes/classgambit_1_1models_1_1dmsimpvectormedscalardmmodel/)** <br>Simple DMsimpVectorMedScalarDM model object.  |
+| class | **[Gambit::Models::DMsimpVectorMedScalarDMSimpleSpec](/documentation/code/classes/classgambit_1_1models_1_1dmsimpvectormedscalardmsimplespec/)**  |
+| class | **[Gambit::Models::DMsimpVectorMedVectorDMModel](/documentation/code/classes/classgambit_1_1models_1_1dmsimpvectormedvectordmmodel/)** <br>Simple DMsimpVectorMedVectorDM model object.  |
+| class | **[Gambit::Models::DMsimpVectorMedVectorDMSimpleSpec](/documentation/code/classes/classgambit_1_1models_1_1dmsimpvectormedvectordmsimplespec/)**  |
 | struct | **[Gambit::Models::MajoranaSingletDM_Z2Model](/documentation/code/classes/structgambit_1_1models_1_1majoranasingletdm__z2model/)**  |
 | class | **[Gambit::Models::MajoranaSingletDM_Z2SimpleSpec](/documentation/code/classes/classgambit_1_1models_1_1majoranasingletdm__z2simplespec/)**  |
 | class | **[Gambit::Models::ModelFunctorClaw](/documentation/code/classes/classgambit_1_1models_1_1modelfunctorclaw/)**  |
@@ -128,4 +136,4 @@ Declare redirected constructor.
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:44 +0000
+Updated on 2023-06-26 at 21:36:52 +0000

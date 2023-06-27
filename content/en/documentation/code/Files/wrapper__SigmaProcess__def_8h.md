@@ -205,7 +205,7 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             get_BEptr()->setScale();
         }
         
-        inline ::std::basic_string<char> SigmaProcess::name() const
+        inline ::std::string SigmaProcess::name() const
         {
             return get_BEptr()->name();
         }
@@ -220,7 +220,7 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             return get_BEptr()->nFinal();
         }
         
-        inline ::std::basic_string<char> SigmaProcess::inFlux() const
+        inline ::std::string SigmaProcess::inFlux() const
         {
             return get_BEptr()->inFlux();
         }
@@ -506,4 +506,4 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:49 +0000
+Updated on 2023-06-26 at 21:36:57 +0000

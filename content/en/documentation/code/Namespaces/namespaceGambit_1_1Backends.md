@@ -16,8 +16,9 @@ description: "[No description available]"
 | **[Gambit::Backends::AlterBBN_2_2](/documentation/code/namespaces/namespacegambit_1_1backends_1_1alterbbn__2__2/)**  |
 | **[Gambit::Backends::gm2calc_1_2_0](/documentation/code/namespaces/namespacegambit_1_1backends_1_1gm2calc__1__2__0/)**  |
 | **[Gambit::Backends::gm2calc_1_3_0](/documentation/code/namespaces/namespacegambit_1_1backends_1_1gm2calc__1__3__0/)**  |
-| **[Gambit::Backends::HepLike_1_2](/documentation/code/namespaces/namespacegambit_1_1backends_1_1heplike__1__2/)**  |
+| **[Gambit::Backends::HepLike_2_0](/documentation/code/namespaces/namespacegambit_1_1backends_1_1heplike__2__0/)**  |
 | **[Gambit::Backends::Pythia_8_212](/documentation/code/namespaces/namespacegambit_1_1backends_1_1pythia__8__212/)**  |
+| **[Gambit::Backends::Rivet_3_1_5](/documentation/code/namespaces/namespacegambit_1_1backends_1_1rivet__3__1__5/)**  |
 | **[Gambit::Backends::vevacious_1_0](/documentation/code/namespaces/namespacegambit_1_1backends_1_1vevacious__1__0/)**  |
 
 ## Classes
@@ -339,4 +340,4 @@ Helper function that indicates if a type is numerical or not.
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:43 +0000
+Updated on 2023-06-26 at 21:36:51 +0000

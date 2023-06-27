@@ -63,11 +63,11 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
     
                 virtual Pythia8::Abstract_Event& operator_equal__BOSS(const Pythia8::Abstract_Event&) =0;
     
-                virtual void init__BOSS(::std::basic_string<char>, Pythia8::Abstract_ParticleData*, int) =0;
+                virtual void init__BOSS(std::string, Pythia8::Abstract_ParticleData*, int) =0;
     
-                virtual void init__BOSS(::std::basic_string<char>, Pythia8::Abstract_ParticleData*) =0;
+                virtual void init__BOSS(std::string, Pythia8::Abstract_ParticleData*) =0;
     
-                virtual void init__BOSS(::std::basic_string<char>) =0;
+                virtual void init__BOSS(std::string) =0;
     
                 virtual void init__BOSS() =0;
     
@@ -133,9 +133,9 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
     
                 virtual void list__BOSS() const =0;
     
-                virtual void list(::std::basic_ostream<char>&, int) const =0;
+                virtual void list(std::ostream&, int) const =0;
     
-                virtual void list__BOSS(::std::basic_ostream<char>&) const =0;
+                virtual void list__BOSS(std::ostream&) const =0;
     
                 virtual void list(bool, bool, int) const =0;
     
@@ -143,9 +143,9 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
     
                 virtual void list__BOSS(bool) const =0;
     
-                virtual void list(bool, bool, ::std::basic_ostream<char>&, int) const =0;
+                virtual void list(bool, bool, std::ostream&, int) const =0;
     
-                virtual void list__BOSS(bool, bool, ::std::basic_ostream<char>&) const =0;
+                virtual void list__BOSS(bool, bool, std::ostream&) const =0;
     
                 virtual void popBack(int) =0;
     
@@ -217,7 +217,7 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
     
                 virtual void restoreJunctionSize() =0;
     
-                virtual void listJunctions(::std::basic_ostream<char>&) const =0;
+                virtual void listJunctions(std::ostream&) const =0;
     
                 virtual void listJunctions__BOSS() const =0;
     
@@ -283,4 +283,4 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:49 +0000
+Updated on 2023-06-26 at 21:36:57 +0000

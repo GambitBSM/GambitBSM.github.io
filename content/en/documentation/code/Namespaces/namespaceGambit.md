@@ -39,7 +39,9 @@ TODO: see if we can use this one:  [More...](#detailed-description)
 | **[Gambit::NodeUtility](/documentation/code/namespaces/namespacegambit_1_1nodeutility/)**  |
 | **[Gambit::ObjectivesBit](/documentation/code/namespaces/namespacegambit_1_1objectivesbit/)**  |
 | **[Gambit::Par](/documentation/code/namespaces/namespacegambit_1_1par/)** <br>List of parameter types used to classify spectrum contents.  |
-| **[Gambit::PolyChord](/documentation/code/namespaces/namespacegambit_1_1polychord/)**  |
+| **[Gambit::PolyChord_1_17_1](/documentation/code/namespaces/namespacegambit_1_1polychord__1__17__1/)**  |
+| **[Gambit::PolyChord_1_18_2](/documentation/code/namespaces/namespacegambit_1_1polychord__1__18__2/)**  |
+| **[Gambit::PolyChord_1_20_1](/documentation/code/namespaces/namespacegambit_1_1polychord__1__20__1/)**  |
 | **[Gambit::PostProcessor](/documentation/code/namespaces/namespacegambit_1_1postprocessor/)**  |
 | **[Gambit::PrecisionBit](/documentation/code/namespaces/namespacegambit_1_1precisionbit/)**  |
 | **[Gambit::Printers](/documentation/code/namespaces/namespacegambit_1_1printers/)** <br>Forward declaration.  |
@@ -148,6 +150,7 @@ TODO: see if we can use this one:  [More...](#detailed-description)
 | struct | **[Gambit::DS_RDLUN](/documentation/code/classes/structgambit_1_1ds__rdlun/)**  |
 | struct | **[Gambit::DS_RDPADD](/documentation/code/classes/structgambit_1_1ds__rdpadd/)**  |
 | struct | **[Gambit::DS_RDPARS](/documentation/code/classes/structgambit_1_1ds__rdpars/)**  |
+| struct | **[Gambit::DS_RDPARS_OLD](/documentation/code/classes/structgambit_1_1ds__rdpars__old/)**  |
 | struct | **[Gambit::DS_RDPTH](/documentation/code/classes/structgambit_1_1ds__rdpth/)**  |
 | struct | **[Gambit::DS_RDSWITCH](/documentation/code/classes/structgambit_1_1ds__rdswitch/)**  |
 | struct | **[Gambit::DS_RDTIME](/documentation/code/classes/structgambit_1_1ds__rdtime/)**  |
@@ -338,6 +341,10 @@ TODO: see if we can use this one:  [More...](#detailed-description)
 | struct | **[Gambit::SpecTraits](/documentation/code/classes/structgambit_1_1spectraits/)**  |
 | struct | **[Gambit::SpecTraits< Models::DiracSingletDM_Z2SimpleSpec >](/documentation/code/classes/structgambit_1_1spectraits_3_01models_1_1diracsingletdm__z2simplespec_01_4/)** <br>Specialisation of traits class needed to inform base spectrum class of the Model and Input types.  |
 | struct | **[Gambit::SpecTraits< Models::DMEFTSimpleSpec >](/documentation/code/classes/structgambit_1_1spectraits_3_01models_1_1dmeftsimplespec_01_4/)** <br>Specialisation of traits class needed to inform base spectrum class of the Model and Input types.  |
+| struct | **[Gambit::SpecTraits< Models::DMsimpVectorMedDiracDMSimpleSpec >](/documentation/code/classes/structgambit_1_1spectraits_3_01models_1_1dmsimpvectormeddiracdmsimplespec_01_4/)** <br>Specialisation of traits class needed to inform base spectrum class of the Model and Input types.  |
+| struct | **[Gambit::SpecTraits< Models::DMsimpVectorMedMajoranaDMSimpleSpec >](/documentation/code/classes/structgambit_1_1spectraits_3_01models_1_1dmsimpvectormedmajoranadmsimplespec_01_4/)** <br>Specialisation of traits class needed to inform base spectrum class of the Model and Input types.  |
+| struct | **[Gambit::SpecTraits< Models::DMsimpVectorMedScalarDMSimpleSpec >](/documentation/code/classes/structgambit_1_1spectraits_3_01models_1_1dmsimpvectormedscalardmsimplespec_01_4/)** <br>Specialisation of traits class needed to inform base spectrum class of the Model and Input types.  |
+| struct | **[Gambit::SpecTraits< Models::DMsimpVectorMedVectorDMSimpleSpec >](/documentation/code/classes/structgambit_1_1spectraits_3_01models_1_1dmsimpvectormedvectordmsimplespec_01_4/)** <br>Specialisation of traits class needed to inform base spectrum class of the Model and Input types.  |
 | struct | **[Gambit::SpecTraits< Models::MajoranaSingletDM_Z2SimpleSpec >](/documentation/code/classes/structgambit_1_1spectraits_3_01models_1_1majoranasingletdm__z2simplespec_01_4/)** <br>Specialisation of traits class needed to inform base spectrum class of the Model and Input types.  |
 | struct | **[Gambit::SpecTraits< Models::ScalarSingletDM_Z2SimpleSpec >](/documentation/code/classes/structgambit_1_1spectraits_3_01models_1_1scalarsingletdm__z2simplespec_01_4/)** <br>Specialisation of traits class needed to inform base spectrum class of the Model and Input types.  |
 | struct | **[Gambit::SpecTraits< Models::ScalarSingletDM_Z3SimpleSpec >](/documentation/code/classes/structgambit_1_1spectraits_3_01models_1_1scalarsingletdm__z3simplespec_01_4/)** <br>Specialisation of traits class needed to inform base spectrum class of the Model and Input types.  |
@@ -435,6 +442,7 @@ TODO: see if we can use this one:  [More...](#detailed-description)
 | typedef double(*)(double &) | **[fptr_dd](/documentation/code/namespaces/namespacegambit/#typedef-fptr-dd)** <br>A double in, double out function pointer.  |
 | typedef LogTags::LogTag_declaration | **[LogTag](/documentation/code/namespaces/namespacegambit/#typedef-logtag)**  |
 | typedef std::map< std::string, double > | **[map_str_dbl](/documentation/code/namespaces/namespacegambit/#typedef-map-str-dbl)** <br>Shorthand for a string-to-double map.  |
+| typedef std::map< std::string, std::string > | **[map_str_str](/documentation/code/namespaces/namespacegambit/#typedef-map-str-str)** <br>Shorthand for a string-to-string map.  |
 | typedef std::map< std::string, double > | **[parameterMap](/documentation/code/namespaces/namespacegambit/#typedef-parametermap)**  |
 | typedef SLHAea::Coll | **[SLHAstruct](/documentation/code/namespaces/namespacegambit/#typedef-slhastruct)** <br>Less confusing name for SLHAea container class.  |
 | typedef std::pair< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > | **[sspair](/documentation/code/namespaces/namespacegambit/#typedef-sspair)** <br>Shorthand for a pair of standard strings.  |
@@ -447,11 +455,11 @@ TODO: see if we can use this one:  [More...](#detailed-description)
 | typedef std::map< std::string, std::map< std::string, double > > | **[map_str_map_str_dbl](/documentation/code/namespaces/namespacegambit/#typedef-map-str-map-str-dbl)** <br>Shorthand for a string-to-string-to-double map.  |
 | typedef std::map< const std::string, double > | **[map_const_str_dbl](/documentation/code/namespaces/namespacegambit/#typedef-map-const-str-dbl)** <br>Shorthand for a const-string-to-double map.  |
 | typedef std::map< const std::string, std::map< const std::string, double > > | **[map_const_str_map_const_str_dbl](/documentation/code/namespaces/namespacegambit/#typedef-map-const-str-map-const-str-dbl)** <br>Shorthand for a const-string-to-const-string-to-double map.  |
-| typedef std::map< std::string, std::string > | **[map_str_str](/documentation/code/namespaces/namespacegambit/#typedef-map-str-str)** <br>Shorthand for a string-to-string map.  |
 | typedef std::map< std::string, bool > | **[map_str_bool](/documentation/code/namespaces/namespacegambit/#typedef-map-str-bool)** <br>Shorthand for a string-to-bool map.  |
 | typedef std::map< int, double > | **[map_int_dbl](/documentation/code/namespaces/namespacegambit/#typedef-map-int-dbl)** <br>Shorthand for an int to double map.  |
 | typedef std::map< std::string, std::map< std::string, std::string > > | **[map_str_map_str_str](/documentation/code/namespaces/namespacegambit/#typedef-map-str-map-str-str)** <br>Shorthand for a string-to-string-to-string map.  |
 | typedef std::map< std::pair< int, int >, double > | **[map_intpair_dbl](/documentation/code/namespaces/namespacegambit/#typedef-map-intpair-dbl)** <br>Shorthand for an int-int pair to double map.  |
+| template <typename T \> <br>using std::vector< std::shared_ptr< T > > | **[vector_shared_ptr](/documentation/code/namespaces/namespacegambit/#using-vector-shared-ptr)**  |
 | typedef void(*)() | **[fptr_void](/documentation/code/namespaces/namespacegambit/#typedef-fptr-void)** <br>Shorthand for a pointer to a void function with no arguments.  |
 | typedef std::map< int, [triplet](/documentation/code/classes/structgambit_1_1triplet/)< double > > | **[map_int_triplet_dbl](/documentation/code/namespaces/namespacegambit/#typedef-map-int-triplet-dbl)** <br>Shorthand for an int-to-double triplet map.  |
 | typedef std::map< std::string, [safe_ptr](/documentation/code/classes/classgambit_1_1safe__ptr/)< const double > > | **[param_map_type](/documentation/code/namespaces/namespacegambit/#typedef-param-map-type)** <br>Shorthand for the type of the 'Param' map (string-to-double-safe_ptr map)  |
@@ -554,11 +562,12 @@ TODO: see if we can use this one:  [More...](#detailed-description)
 | void | **[SLHAea_add_QNumbers_from_subspec](/documentation/code/namespaces/namespacegambit/#function-slhaea-add-qnumbers-from-subspec)**([SLHAstruct](/documentation/code/namespaces/namespacegambit/#typedef-slhastruct) & slha, const [SubSpectrum](/documentation/code/classes/classgambit_1_1subspectrum/) & subspec, const std::pair< int, int > pdg_pair)<br>Adds QNUMBERS entry for a particle, SLHA index given by the PDG code.  |
 | bool | **[is_abs](/documentation/code/namespaces/namespacegambit/#function-is-abs)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) & s)<br>Helper function for checking if a particle or ratio has been requested as an absolute value.  |
 | EXPORT_SYMBOLS [Logging::LogMaster](/documentation/code/classes/classgambit_1_1logging_1_1logmaster/) & | **[logger](/documentation/code/namespaces/namespacegambit/#function-logger)**()<br>Function to retrieve a reference to the [Gambit](/documentation/code/namespaces/namespacegambit/) global log object.  |
-| void | **[MSSM_mA_to_MSSM_mhud](/documentation/code/namespaces/namespacegambit/#function-mssm-ma-to-mssm-mhud)**(const [ModelParameters](/documentation/code/classes/classgambit_1_1modelparameters/) & myP, [ModelParameters](/documentation/code/classes/classgambit_1_1modelparameters/) & targetP, const [SubSpectrum](/documentation/code/classes/classgambit_1_1subspectrum/) & HE) |
-| void | **[MSSMatX_to_MSSMatQ](/documentation/code/namespaces/namespacegambit/#function-mssmatx-to-mssmatq)**(const [ModelParameters](/documentation/code/classes/classgambit_1_1modelparameters/) & myP, [ModelParameters](/documentation/code/classes/classgambit_1_1modelparameters/) & targetP, const [SubSpectrum](/documentation/code/classes/classgambit_1_1subspectrum/) & HE) |
-| void | **[MSSM20atX_to_MSSM25atX](/documentation/code/namespaces/namespacegambit/#function-mssm20atx-to-mssm25atx)**(const [ModelParameters](/documentation/code/classes/classgambit_1_1modelparameters/) & myP, [ModelParameters](/documentation/code/classes/classgambit_1_1modelparameters/) & targetP) |
-| void | **[MSSM25atX_to_MSSM30atX](/documentation/code/namespaces/namespacegambit/#function-mssm25atx-to-mssm30atx)**(const [ModelParameters](/documentation/code/classes/classgambit_1_1modelparameters/) & myP, [ModelParameters](/documentation/code/classes/classgambit_1_1modelparameters/) & targetP) |
-| void | **[MSSM30atX_to_MSSM63atX](/documentation/code/namespaces/namespacegambit/#function-mssm30atx-to-mssm63atx)**(const [ModelParameters](/documentation/code/classes/classgambit_1_1modelparameters/) & myP, [ModelParameters](/documentation/code/classes/classgambit_1_1modelparameters/) & targetP) |
+| void | **[MSSM_mA_to_MSSM_mhud](/documentation/code/namespaces/namespacegambit/#function-mssm-ma-to-mssm-mhud)**(const [ModelParameters](/documentation/code/classes/classgambit_1_1modelparameters/) & myP, [ModelParameters](/documentation/code/classes/classgambit_1_1modelparameters/) & targetP, const [SubSpectrum](/documentation/code/classes/classgambit_1_1subspectrum/) & HE)<br>Translation function for mA,mu parameterisation to mHu2,mHd2 parameterisation.  |
+| void | **[MSSMatX_to_MSSMatQ](/documentation/code/namespaces/namespacegambit/#function-mssmatx-to-mssmatq)**(const [ModelParameters](/documentation/code/classes/classgambit_1_1modelparameters/) & myP, [ModelParameters](/documentation/code/classes/classgambit_1_1modelparameters/) & targetP, const [SubSpectrum](/documentation/code/classes/classgambit_1_1subspectrum/) & HE)<br>Translation function for MSSM defined at RGE-determined scale (e.g. GUT, SUSY) to arbitrary scale Q.  |
+| void | **[MSSM20atX_to_MSSM25atX](/documentation/code/namespaces/namespacegambit/#function-mssm20atx-to-mssm25atx)**(const [ModelParameters](/documentation/code/classes/classgambit_1_1modelparameters/) & myP, [ModelParameters](/documentation/code/classes/classgambit_1_1modelparameters/) & targetP)<br>Translation functions for 20-parameter models to 25-parameter.  |
+| void | **[MSSM25atX_to_MSSM30atX](/documentation/code/namespaces/namespacegambit/#function-mssm25atx-to-mssm30atx)**(const [ModelParameters](/documentation/code/classes/classgambit_1_1modelparameters/) & myP, [ModelParameters](/documentation/code/classes/classgambit_1_1modelparameters/) & targetP)<br>Translation functions for 25-parameter models to 30-parameter.  |
+| void | **[MSSM30atX_to_MSSM63atX](/documentation/code/namespaces/namespacegambit/#function-mssm30atx-to-mssm63atx)**(const [ModelParameters](/documentation/code/classes/classgambit_1_1modelparameters/) & myP, [ModelParameters](/documentation/code/classes/classgambit_1_1modelparameters/) & targetP)<br>Translation functions for 30-parameter models to 63-parameter.  |
+| void | **[MSSM_mA_mG_to_MSSM_mhud](/documentation/code/namespaces/namespacegambit/#function-mssm-ma-mg-to-mssm-mhud)**(const [ModelParameters](/documentation/code/classes/classgambit_1_1modelparameters/) & myP, [ModelParameters](/documentation/code/classes/classgambit_1_1modelparameters/) & targetP, const [SubSpectrum](/documentation/code/classes/classgambit_1_1subspectrum/) & HE) |
 | bool | **[orderer](/documentation/code/namespaces/namespacegambit/#function-orderer)**(std::pair< int, double > a, std::pair< int, double > b)<br>Helper function for sorting int, double pairs according to the double.  |
 | [Printers::BaseReader](/documentation/code/classes/classgambit_1_1printers_1_1basereader/) & | **[get_pp_reader](/documentation/code/namespaces/namespacegambit/#function-get-pp-reader)**() |
 | void | **[set_global_printer_manager](/documentation/code/namespaces/namespacegambit/#function-set-global-printer-manager)**([Printers::PrinterManager](/documentation/code/classes/classgambit_1_1printers_1_1printermanager/) * pm) |
@@ -629,6 +638,8 @@ TODO: see if we can use this one:  [More...](#detailed-description)
 | -------------- | -------------- |
 | const double | **[mw_central_observed](/documentation/code/namespaces/namespacegambit/#variable-mw-central-observed)**  |
 | const double | **[mw_err_observed](/documentation/code/namespaces/namespacegambit/#variable-mw-err-observed)**  |
+| const double | **[mz_central_observed](/documentation/code/namespaces/namespacegambit/#variable-mz-central-observed)**  |
+| const double | **[mz_err_observed](/documentation/code/namespaces/namespacegambit/#variable-mz-err-observed)**  |
 | | **[gambit_registry](/documentation/code/namespaces/namespacegambit/#variable-gambit-registry)**  |
 | [reg_elem](/documentation/code/classes/classgambit_1_1reg__elem/)< factory_type > | **[__scanner_factories__](/documentation/code/namespaces/namespacegambit/#variable-scanner-factories)**  |
 | const [SpecOverrideOptions](/documentation/code/classes/classgambit_1_1specoverrideoptions/)(0) | **[use_overrides](/documentation/code/namespaces/namespacegambit/#variable-use-overrides)**  |
@@ -691,7 +702,9 @@ TODO: see if we can use this one:
 **Author**: 
 
   * Anders Kvellestad 
+  * Anders Kvellestad
   * Martin White
+  * Tomas Gonzalo ([gonzalo@physik.rwth-aachen.de](mailto:gonzalo@physik.rwth-aachen.de)) 
   * Gregory Martinez ([gregory.david.martinez@gmail.com](mailto:gregory.david.martinez@gmail.com)) 
   * Gregory Martinez ([gregory.david.martinez@gmail.com](mailto:gregory.david.martinez@gmail.com)) 
   * Pat Scott ([p.scott@imperial.ac.uk](mailto:p.scott@imperial.ac.uk)) 
@@ -708,6 +721,9 @@ TODO: see if we can use this one:
 **Date**: 
 
   * 2020 June 
+
+------------------
+  * 2021 July 
 
 ------------------
   * Feb 2014
@@ -739,6 +755,13 @@ Map in which to keep factory functions for the priors (prior_creators)
 
 Simulation of "Search for photonic signatures of gauge-mediated supersymmetry in 13 TeV pp collisions with the ATLAS detector".
 
+Simulation of "Search for new phenomena in final states with photons, jets and missing transverse momentum in pp collisions at sqrt(s)=13 TeV with the ATLAS detector".
+
+
+Based on:
+
+* [https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2021-028/](https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2021-028/)
+* code in Analysis_ATLAS_13TeV_PhotonGGM_36invfb.cpp by Martin White
 
 Based on:
 
@@ -807,6 +830,11 @@ October 2013 - Aug 2016
 
 # Function definitions
 
+================================================= 
+
+
+# Function definitions
+
 Ben Farmer ([ben.farmer@gmail.com](mailto:ben.farmer@gmail.com)) 
 
 October 2013 - Aug 2016
@@ -818,6 +846,10 @@ May 2018
 Patrick Stoecker ([stoecker@physik.rwth-aachen.de](mailto:stoecker@physik.rwth-aachen.de)) 
 
 May 2020
+
+Anders Kvellestad ([anders.kvellestad@fys.uio.no](mailto:anders.kvellestad@fys.uio.no)) 
+
+June 2022
 
 
 
@@ -842,6 +874,35 @@ May 2020
 
 Jan 2021
 
+Anders Kvellestad ([anders.kvellestad@fys.uio.no](mailto:anders.kvellestad@fys.uio.no)) 
+
+June 2022
+
+
+
+------------------
+
+================================================= 
+
+
+# Function definitions
+
+Ben Farmer ([ben.farmer@gmail.com](mailto:ben.farmer@gmail.com)) 
+
+October 2013 - Aug 2016
+
+Will Handley ([wh260@cam.ac.uk](mailto:wh260@cam.ac.uk)) 
+
+May 2018, June 2021, Mar 2022
+
+Patrick Stoecker ([stoecker@physik.rwth-aachen.de](mailto:stoecker@physik.rwth-aachen.de)) 
+
+May 2020
+
+Anders Kvellestad ([anders.kvellestad@fys.uio.no](mailto:anders.kvellestad@fys.uio.no)) 
+
+June 2022
+
 
 
 ------------------
@@ -855,76 +916,7 @@ GAMBIT: Global and Modular BSM Inference Tool
 
 ------------------
 
-MSSM input parameter definition, with A pole mass and mu as explicit input parameters instead of mHu2 and mHd2 (GUT scale version)
-
-
-
-------------------
-
-
-# Authors
-
-(add name and date if you modify)
-
-Ben Farmer ([benjamin.farmer@fysik.su.se](mailto:benjamin.farmer@fysik.su.se)) 
-
-2017 Sep
-
-
-
-------------------
-
-GAMBIT: Global and Modular BSM Inference Tool 
-
-------------------
-
-MSSM63 model declaration (version with boundary conditions at SUSY scale)
-
-
-
-------------------
-
-
-# Authors
-
-(add name and date if you modify)
-
-Ben Farmer ([benjamin.farmer@fysik.su.se](mailto:benjamin.farmer@fysik.su.se)) 
-
-2017 Sep
-
-
-
-------------------
-
-GAMBIT: Global and Modular BSM Inference Tool 
-
-------------------
-
-MSSM input parameter definition, with A pole mass and mu as explicit input parameters instead of mHu2 and mHd2 (SUSY scale version)
-
-
-
-------------------
-
-
-# Authors
-
-(add name and date if you modify)
-
-Ben Farmer ([benjamin.farmer@fysik.su.se](mailto:benjamin.farmer@fysik.su.se)) 
-
-2017 Sep
-
-
-
-------------------
-
-GAMBIT: Global and Modular BSM Inference Tool 
-
-------------------
-
-MSSM input parameter definition, with A pole mass and mu as explicit input parameters instead of mHu2 and mHd2.
+Declare a helper function for translating 'mA' MSSM parameterisations into the primary parameterisations, and another for translating from scales MGUT and MSUSY to arbitrary scale Q.
 
 
 
@@ -938,6 +930,304 @@ MSSM input parameter definition, with A pole mass and mu as explicit input param
 Pat Scott ([p.scott@imperial.ac.uk](mailto:p.scott@imperial.ac.uk)) 
 
 2017 Aug
+
+
+
+------------------
+
+MSSM models with boundary conditions at MGUT scale
+
+[Models](/documentation/code/namespaces/namespacegambit_1_1models/) included: MSSM63atMGUT MSSM30atMGUT MSSM25atMGUT MSSM20atMGUT
+
+Translation functions defined in MSSMatMGUT.cpp
+
+
+
+------------------
+
+
+# Authors
+
+(add name and date if you modify)
+
+Ben Farmer ([ben.farmer@gmail.com](mailto:ben.farmer@gmail.com)) 
+
+2013 May 
+
+2014 Mar 
+
+2015 Jan, Aug
+
+Pat Scott ([p.scott@imperial.ac.uk](mailto:p.scott@imperial.ac.uk)) 
+
+2013 Sep 
+
+2015 Sep
+
+Tomas Gonzalo ([tomas.gonzalo@kit.edu](mailto:tomas.gonzalo@kit.edu)) 
+
+2022 Sept
+
+
+
+------------------
+
+MSSM models with boundary conditions at MGUT scale with A pole mass and mu as explicit input parameters instead of mHu2 and mHd2
+
+[Models](/documentation/code/namespaces/namespacegambit_1_1models/) included: MSSM63atMGUT_mA MSSM30atMGUT_mA MSSM25atMGUT_mA MSSM20atMGUT_mA
+
+Translation functions defined in MSSMatMGUT_mA.cpp
+
+
+
+------------------
+
+
+# Authors
+
+(add name and date if you modify)
+
+Ben Farmer ([benjamin.farmer@fysik.su.se](mailto:benjamin.farmer@fysik.su.se)) 
+
+2017 Sep, Oct 
+
+2015 Jan
+
+Pat Scott ([p.scott@imperial.ac.uk](mailto:p.scott@imperial.ac.uk)) 
+
+2017 Aug
+
+Tomas Gonzalo ([tomas.gonzalo@kit.edu](mailto:tomas.gonzalo@kit.edu)) 
+
+2022 Sept
+
+
+
+------------------
+
+MSSM models with boundary conditions at MGUT scale with A pole mass and mu as explicit input parameters instead of mHu2 and mHd2 and with a light gravitino
+
+[Models](/documentation/code/namespaces/namespacegambit_1_1models/) included: MSSM63atMGUT_mA_mG MSSM30atMGUT_mA_mG MSSM25atMGUT_mA_mG MSSM20atMGUT_mA_mG
+
+Translation functions defined in MSSMatMGUT_mA_mG.cpp
+
+
+
+------------------
+
+
+# Authors
+
+(add name and date if you modify)
+
+Pat Scott ([p.scott@imperial.ac.uk](mailto:p.scott@imperial.ac.uk)) 
+
+2018 Sept
+
+Tomas Gonzalo ([tomas.gonzalo@kit.edu](mailto:tomas.gonzalo@kit.edu)) 
+
+2022 Sept
+
+
+
+------------------
+
+MSSM models with boundary conditions at MGUT scale with a light gravitino
+
+[Models](/documentation/code/namespaces/namespacegambit_1_1models/) included: MSSM63atMGUT_mG MSSM30atMGUT_mG MSSM25atMGUT_mG MSSM20atMGUT_mG
+
+Translation functions defined in MSSMatMGUT_mG.cpp
+
+
+
+------------------
+
+
+# Authors
+
+(add name and date if you modify)
+
+Pat Scott ([p.scott@imperial.ac.uk](mailto:p.scott@imperial.ac.uk)) 
+
+2018 Sep
+
+Tomas Gonzalo ([tomas.gonzalo@kit.edu](mailto:tomas.gonzalo@kit.edu)) 
+
+2022 Sept
+
+
+
+------------------
+
+MSSM models with boundary conditions at MSUSY scale
+
+[Models](/documentation/code/namespaces/namespacegambit_1_1models/) included: MSSM63atMSUSY MSSM30atMSUSY MSSM25atMSUSY MSSM20atMSUSY
+
+Translation functions defined in MSSMatMSUSY.cpp
+
+
+
+------------------
+
+
+# Authors
+
+(add name and date if you modify)
+
+Ben Farmer ([benjamin.farmer@fysik.su.se](mailto:benjamin.farmer@fysik.su.se)) 
+
+2015 Jan 
+
+2017 Sep, Oct
+
+Pat Scott ([p.scott@imperial.ac.uk](mailto:p.scott@imperial.ac.uk)) 
+
+2015 Sep
+
+Tomas Gonzalo ([tomas.gonzalo@kit.edu](mailto:tomas.gonzalo@kit.edu)) 
+
+2022 Sept
+
+
+
+------------------
+
+MSSM models with boundary conditions at MSUSY scale with A polea mass and mu as explicit input parameters instead of mHu2 and mHd2
+
+[Models](/documentation/code/namespaces/namespacegambit_1_1models/) included: MSSM63atMSUSY_mA MSSM30atMSUSY_mA MSSM25atMSUSY_mA MSSM20atMSUSY_mA
+
+Translation functions defined in MSSMatMSUSY_mA.cpp
+
+
+
+------------------
+
+
+# Authors
+
+(add name and date if you modify)
+
+Ben Farmer ([benjamin.farmer@fysik.su.se](mailto:benjamin.farmer@fysik.su.se)) 
+
+2015 Jan 
+
+2017 Sep, Oct
+
+Pat Scott ([p.scott@imperial.ac.uk](mailto:p.scott@imperial.ac.uk)) 
+
+2015 Sep
+
+Tomas Gonzalo ([tomas.gonzalo@kit.edu](mailto:tomas.gonzalo@kit.edu)) 
+
+2022 Sept
+
+
+
+------------------
+
+MSSM models with boundary conditions at MSUSY scale with A polea mass and mu as explicit input parameters instead of mHu2 and mHd2 and with a light gravitino
+
+[Models](/documentation/code/namespaces/namespacegambit_1_1models/) included: MSSM63atMSUSY_mA_mG MSSM30atMSUSY_mA_mG MSSM25atMSUSY_mA_mG MSSM20atMSUSY_mA_mG
+
+Translation functions defined in MSSMatMSUSY_mA_mG.cpp
+
+
+
+------------------
+
+
+# Authors
+
+(add name and date if you modify)
+
+Pat Scott ([p.scott@imperial.ac.uk](mailto:p.scott@imperial.ac.uk)) 
+
+2018 Sep
+
+Tomas Gonzalo ([tomas.gonzalo@kit.edu](mailto:tomas.gonzalo@kit.edu)) 
+
+2022 Sept
+
+
+
+------------------
+
+MSSM models with boundary conditions at MSUSY scale with a light gravitino
+
+[Models](/documentation/code/namespaces/namespacegambit_1_1models/) included: MSSM63atMSUSY_mG MSSM30atMSUSY_mG MSSM25atMSUSY_mG MSSM20atMSUSY_mG
+
+Translation functions defined in MSSMatMSUSY_mG.cpp
+
+
+
+------------------
+
+
+# Authors
+
+(add name and date if you modify)
+
+Pat Scott ([p.scott@imperial.ac.uk](mailto:p.scott@imperial.ac.uk)) 
+
+2018 Sep
+
+Tomas Gonzalo ([tomas.gonzalo@kit.edu](mailto:tomas.gonzalo@kit.edu)) 
+
+2022 Sept
+
+
+
+------------------
+
+MSSM models with boundary conditions at generic scale Q with A pole mass and mu as explicit input parameters instead of mHu2 and mHd2.
+
+[Models](/documentation/code/namespaces/namespacegambit_1_1models/) included: MSSM63atQ_mA MSSM30atQ_mA MSSM24atQ_mA MSSM25atQ_mA MSSM20atQ_mA MSSM19atQ_mA MSSM16atQ_mA MSSM15atQ_mA MSSM11atQ_mA MSSM10atQ_mA MSSM10batQ_mA MSSM10catQ_mA MSSM9atQ_mA MSSM9batQ_mA MSSM7atQ_mA
+
+Translation functions defined in MSSMatQ_mA.cpp
+
+
+
+------------------
+
+
+# Authors
+
+(add name and date if you modify)
+
+Pat Scott ([p.scott@imperial.ac.uk](mailto:p.scott@imperial.ac.uk)) 
+
+2017 Aug
+
+Tomas Gonzalo ([tomas.gonzalo@kit.edu](mailto:tomas.gonzalo@kit.edu)) 
+
+2022 Sept
+
+
+
+------------------
+
+MSSM models with boundary conditions at generic scale Q with A pole mass and mu as explicit input parameters instead of mHu2 and mHd2 and with a light gravitino.
+
+[Models](/documentation/code/namespaces/namespacegambit_1_1models/) included: MSSM63atQ_mA_mG MSSM30atQ_mA_mG MSSM24atQ_mA_mG MSSM25atQ_mA_mG MSSM20atQ_mA_mG MSSM19atQ_mA_mG MSSM16atQ_mA_mG MSSM15atQ_mA_mG MSSM11atQ_mA_mG MSSM10atQ_mA_mG MSSM10batQ_mA_mG MSSM10catQ_mA_mG MSSM9atQ_mA_mG MSSM9batQ_mA_mG MSSM7atQ_mA_mG
+
+Translation functions defined in MSSMatQ_mA_mG.cpp
+
+
+
+------------------
+
+
+# Authors
+
+(add name and date if you modify)
+
+Pat Scott ([p.scott@imperial.ac.uk](mailto:p.scott@imperial.ac.uk)) 
+
+2018 Sept
+
+Tomas Gonzalo ([tomas.gonzalo@kit.edu](mailto:tomas.gonzalo@kit.edu)) 
+
+2022 Sept
 
 
 
@@ -1020,9 +1310,7 @@ GAMBIT: Global and Modular BSM Inference Tool
 
 ------------------
 
-Translation function definitions for all 'mA' versions of 63 parameter MSSM, back to the corresponding mhu2 mhd2 parameterisations
-
-Contains translation functions for: MSSM63atQ_mA --> MSSM63atQ MSSM63atMGUT_mA --> MSSM63atMGUT MSSM63atMSUSY_mA --> MSSM63atMSUSY
+Function implementations for MSSM translation helpers.
 
 
 
@@ -1033,13 +1321,13 @@ Contains translation functions for: MSSM63atQ_mA --> MSSM63atQ MSSM63atMGUT_mA -
 
 (add name and date if you modify)
 
-Pat Scott ([p.scott@imperial.ac.uk](mailto:p.scott@imperial.ac.uk)) 
-
-2017 Aug
-
 Ben Farmer ([benjamin.farmer@fysik.su.se](mailto:benjamin.farmer@fysik.su.se)) 
 
-2017 Sep, Oct
+2015 Aug, 2017 Oct
+
+Pat Scott ([p.scott@imperial.ac.uk](mailto:p.scott@imperial.ac.uk)) 
+
+2018 Oct
 
 
 
@@ -1054,6 +1342,10 @@ Authors (add name and date if you modify):
 Ben Farmer ([b.farmer@imperial.ac.uk](mailto:b.farmer@imperial.ac.uk)) 
 
 2019 Jan
+
+Tomas Gonzalo ([tomas.gonzalo@monash.edu](mailto:tomas.gonzalo@monash.edu)) 
+
+2020 June
 
 
 
@@ -1515,6 +1807,14 @@ typedef std::map< std::string, double > Gambit::map_str_dbl;
 
 Shorthand for a string-to-double map. 
 
+### typedef map_str_str
+
+```
+typedef std::map< std::string, std::string > Gambit::map_str_str;
+```
+
+Shorthand for a string-to-string map. 
+
 ### typedef parameterMap
 
 ```
@@ -1610,14 +1910,6 @@ typedef std::map<const std::string,std::map<const std::string,double> > Gambit::
 
 Shorthand for a const-string-to-const-string-to-double map. 
 
-### typedef map_str_str
-
-```
-typedef std::map<std::string,std::string> Gambit::map_str_str;
-```
-
-Shorthand for a string-to-string map. 
-
 ### typedef map_str_bool
 
 ```
@@ -1649,6 +1941,14 @@ typedef std::map< std::pair < int, int >, double> Gambit::map_intpair_dbl;
 ```
 
 Shorthand for an int-int pair to double map. 
+
+### using vector_shared_ptr
+
+```
+template <typename T >
+using Gambit::vector_shared_ptr = typedef std::vector<std::shared_ptr<T> >;
+```
+
 
 ### typedef fptr_void
 
@@ -2706,6 +3006,7 @@ void MSSM_mA_to_MSSM_mhud(
 )
 ```
 
+Translation function for mA,mu parameterisation to mHu2,mHd2 parameterisation. 
 
 ### function MSSMatX_to_MSSMatQ
 
@@ -2717,6 +3018,7 @@ void MSSMatX_to_MSSMatQ(
 )
 ```
 
+Translation function for MSSM defined at RGE-determined scale (e.g. GUT, SUSY) to arbitrary scale Q. 
 
 ### function MSSM20atX_to_MSSM25atX
 
@@ -2727,6 +3029,7 @@ void MSSM20atX_to_MSSM25atX(
 )
 ```
 
+Translation functions for 20-parameter models to 25-parameter. 
 
 ### function MSSM25atX_to_MSSM30atX
 
@@ -2737,6 +3040,7 @@ void MSSM25atX_to_MSSM30atX(
 )
 ```
 
+Translation functions for 25-parameter models to 30-parameter. 
 
 ### function MSSM30atX_to_MSSM63atX
 
@@ -2744,6 +3048,18 @@ void MSSM25atX_to_MSSM30atX(
 void MSSM30atX_to_MSSM63atX(
     const ModelParameters & myP,
     ModelParameters & targetP
+)
+```
+
+Translation functions for 30-parameter models to 63-parameter. 
+
+### function MSSM_mA_mG_to_MSSM_mhud
+
+```
+void MSSM_mA_mG_to_MSSM_mhud(
+    const ModelParameters & myP,
+    ModelParameters & targetP,
+    const SubSpectrum & HE
 )
 ```
 
@@ -3443,6 +3759,23 @@ const double mw_err_observed = 0.015;
 ```
 
 
+### variable mz_central_observed
+
+```
+const double mz_central_observed = 91.1876;
+```
+
+
+M_Z (Breit-Wigner mass parameter ~ pole) = 91.1876 +/- 0.0021 GeV (1 sigma), Gaussian. Reference [https://pdg.lbl.gov/2022/listings/rpp2022-list-z-boson.pdf](https://pdg.lbl.gov/2022/listings/rpp2022-list-z-boson.pdf) = R.L. Workmanet al. (Particle Data Group), Prog. Theor. Exp. Phys. 2022, 083C01 (2022) 
+
+
+### variable mz_err_observed
+
+```
+const double mz_err_observed = 0.0021;
+```
+
+
 ### variable gambit_registry
 
 ```
@@ -3503,6 +3836,21 @@ const std::vector< str > gambit_citation_keys =
     "GAMBIT:2017yxo", 
     "Kvellestad:2019vxm", 
       
+    "Bloor:2021gtp", 
+    "Alloul:2013bka", 
+    "Christensen:2008py", 
+    "Christensen:2010wz", 
+    "Christensen:2009jx", 
+    "Degrande:2011ua", 
+    "Pukhov:2004ca", 
+    "Belyaev:2012qa", 
+    "Belanger:2014vza", 
+    "Belanger:2013oya", 
+    "Belanger:2010gh", 
+    "Belanger:2008sj", 
+    "Belanger:2006is", 
+    "Belanger:2004yn", 
+    "Belanger:2001fz", 
   };
 ```
 
@@ -3846,4 +4194,4 @@ const int gambit_version_int =  10000*gambit_version_major + 100*gambit_version_
 
 -------------------------------
 
-Updated on 2022-09-08 at 03:46:42 +0000
+Updated on 2023-06-26 at 21:36:50 +0000
