@@ -42,7 +42,7 @@ Tutorial 3:
 ### March, 2022
 On-line tutorial given by Tomas Gonzalo on how to use and write code for GAMBIT.
 * [Slides](/tutorials/GAMBIT_Tutorial_Tomas/GAMBIT_Tutorial_Tomas.pdf)
-* [Video](/tutorials/GAMBIT_Tutorial_Tomas/GAMBIT_Tutorial_Tomas.mp4)
+* [Video](https://folk.universitetetioslo.no/ahye/GAMBIT_Tutorial_Tomas.mp4)
 
 
 ### Dartmouth-TRIUMF HEP/Cosmo tools bootcamp 26.10.17
