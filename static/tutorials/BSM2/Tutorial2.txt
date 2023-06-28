@@ -1,0 +1,50 @@
+INSTRUCTIONS FOR TUTORIAL 2
+===========================
+
+** Assuming you have followed the Pre-tutorial steps **
+
+Requirements
+------------
+
+* Modules: NeutrinoBit
+* Scanners: diver
+* Backends: none
+
+Model
+-----
+
+* Neutrinos.yaml (get from Tutorial resources)
+  Parameters: dmNu21, dmNu3l, theta12, theta13, theta23, delta13
+  Likelihoods:  theta12_NuFit_v3_2_lnL, theta23_NuFit_v3_2_lnL, theta13_NuFit_v3_2_lnL, deltaCP_NuFit_v3_2_lnL, md21_NuFit_v3_2_lnL, md3l_NuFit_v3_2_lnL
+
+Running scan
+------------
+
+* Run scan with various MPI process for speed
+
+    mpirun -np 4 ./gambit -f yaml_files/Neutrinos.yaml
+
+  And just wait...
+
+Check results
+-------------
+
+* Results are written in the "output" directory (e.g. runs/Neutrinos/samples)
+
+    h5ls runs/Neutrinos/samples/Neutrinos.hdf5/Neutrinos
+
+Plotting results
+----------------
+
+* To generate plots we use pippi
+  Pippi file: Neutrinos.pip
+
+    ./pippi/pippi Neutrinos.pip
+
+* Best fit point is printed in the parse directory (e.g. runs/Neutrinos/parse)
+
+    less runs/Neutrinos/parse/Neutrinos.best_all
+
+* Plots are generated in the selected plots directory (e.g runs/Neutrinos/plots)
+
+    okular runs/Neutrinos/plots/*

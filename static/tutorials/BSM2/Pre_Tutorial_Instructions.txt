@@ -1,0 +1,201 @@
+INSTRUCTIONS TO DOWNLOAD AND BUILD GAMBIT
+=========================================
+
+*** Please do these steps in advance of the Tutorial***
+
+Downloading GAMBIT
+------------------
+
+* Option 1 : for git users
+  git clone https://github.com/GambitBSM/gambit_2.2.git
+  cd gambit_2.2
+
+* Option 2: for everyone else, from Hepforge (if up)
+  wget http://www.hepforge.org/archive/gambit/gambit-2.2.1.tar.gz
+  tar -xvf gambit-2.2.1.tar.gz
+  cd gambit_2.2
+
+* Option 3: for everyone else, from GitHub
+  wget https://github.com/GambitBSM/gambit_2.2/archive/refs/heads/release_2.2.zip
+  unzip release_2.2.zip
+  mv gambit_2.2-release_2.2 gambit_2.2
+  cd gambit_2.2
+
+
+Building GAMBIT
+---------------
+
+* Easy way: Docker
+  Install Docker Community Edition Stable:
+     https://docs.docker.com/engine/installation/
+  Run
+     docker run -it gambitbsm/gambit-pippi
+  This will give you a bash shell with GAMBIT installed and ready to run.
+  Note that the download in this case is around 6 GB.
+
+  Docker reference:
+    docker run: run an image
+    docker ps: list active containers
+    docker ps -a: list active and stopped containers
+    docker cp: copy files between host and container
+    docker image ls: list available images/apps
+    docker help: useful!
+
+* Hard way: local build
+
+  Requirements for all Tutorials:
+   - gcc >= 5.1 / llvm clang >= 10 / AppleClang >= 13 / icc >= 15.0.2
+   - gfortran >= 5.1 / ifort >=15.0.2
+   - Cmake 2.8.12 or greater
+   - Python 2.7 or greater (Python 3 is supported)
+   - Python modules: yaml, future, os, re, datetime, sys, getopt, shutil and itertools.
+   - git
+   - Boost 1.48 or greater
+   - GNU Scientific Library (GSL) 2.1 or greater
+   - Eigen 3.1.0 or greater
+   - LAPACK
+   - pkg-config
+   - HDF5 (and hdf5-tools)
+   - MPI
+
+  Other requirements for Tutorial 1:
+   - ROOT (required for HEPLike)
+
+  Other requirements for Tutorial 3:
+   - Mathematica 7.0 or greater (required for GUM)
+   - UUID (required for the use of the WSTP interface for GUM)
+   - X11 development libraries (required for the use of GUM)
+   - Boost compiled libraries (required for the use of GUM): Boost.Python, Boost.Filesystem, Boost.System
+
+  OSX users:
+   - Either install gcc/g++ via homebrew
+   - Or to use clang, follow instructions in README_OSX.md
+
+  Instructions to build minimal version for Tutorials:
+
+    mkdir build
+    cd build
+    cmake -DWITH_MPI=on -DWITH_ROOT=on -Ditch="Cosmo;Collider;Precision;Mathematica;pybind" ..
+    make -j4 scanners
+    cmake .. (yes, do it again, needed to register the scanner plugins with the build system)
+    make -j4 superiso heplike
+    make -j4 gambit
+
+Plotting results
+----------------
+
+* For plotting we use pippi and ctioga2
+  To download pippi, in the GAMBIT build directory, run
+
+    make get-pippi
+
+  If the ctioga2 gem is not installed in your system
+
+    gem install ctioga2 (OSX or Linux)
+    *or*
+    apt-get install ctioga2 (Linux)
+    *or*
+    see http://ctioga2.sourceforge.net/install.html for help.
+
+* Note: ctioga2 does not work with Ruby 3.0. To install and select Ruby 2.7,
+  you must install rbenv and ruby-build, and then run
+
+    sudo rbenv install ruby-2.7.1
+    sudo rbenv global 2.7.1
+
+  If the installation of ruby fails, it means your version of openssl is too high for ruby 2.7.1.
+  In that case download the new version of ruby-build at
+    https://github.com/rbenv/ruby-build/releases/tag/v20220710
+  which automatically downloads the right version of openssl for ruby
+  (might need to also install autoconf and bison)
+
+Testing GAMBIT
+--------------
+
+* Use the diagnostics
+  ./gambit scanners
+  ./gambit backends
+
+* Run spartan example
+  ./gambit -f yaml_files/spartan.yaml
+
+
+Building GUM
+------------
+
+* In the gum directory
+
+    mkdir build
+    cd build
+    cmake ..
+    make -j4
+
+Troubleshooting
+---------------
+
+Below are some suggestions to sort out common problems. You may also check out http://gambit.hepforge.org/config
+to see examples of specific tweaks used to build GAMBIT on various clusters.
+
+
+* Missing Eigen?
+
+  If Eigen3 is not installed, go to the directory where you want to install it and do
+
+    wget http://bitbucket.org/eigen/eigen/get/3.3.3.tar.gz
+    tar xvzf 3.3.3.tar.gz
+
+  To point the GAMBIT cmake system to your copy of Eigen, use the cmake flag EIGEN3_INCLUDE_DIR, e.g.
+
+    cmake -D EIGEN3_INCLUDE_DIR=YOUR/PATH/TO/eigen-eigen-67e894c6cd8f ..
+
+* Scanner doesn't work?
+
+  Do you get "undefined symbol: run" or "undefined symbol: cdiver" or similar when running a scan?
+  You probably forgot to re-run "cmake .." after building your scanner. Try the following:
+
+    cd build
+    cmake ..
+    make gambit
+    cd ..
+
+  You can check the status of the scanners by running
+
+    ./gambit scanners
+
+* Dependency resolver can't find your spectrum capability
+
+  Maybe you did not build the right FlexibleSUSY model, make sure to add that at cmake time, e.g. for the CMSSM run
+
+    cmake -D BUILD_FS_MODELS="CMSSM" ..
+
+* I can't remember which cmake flags to use or which ones I used to compile
+
+  Check the file BUILD_OPTIONS.md for the full list of possible cmake options and after running cmake,
+  the file CMakeCache.txt in the build directory will tell you which ones you used.
+
+* Trouble compiling something unimportant? Ditch it
+
+    cmake -Ditch="something" ..
+
+* Need to clean up something?
+
+    make clean-something
+
+* Need to get rid of something?
+
+    make nuke-something
+
+* Need to start from scratch?
+
+  From the build directory, do
+
+    make nuke-all
+    cd ..
+    rm -f build
+
+
+* Don't know what something is?
+
+  Try asking GAMBIT.
+
+    ./gambit something

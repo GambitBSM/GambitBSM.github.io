@@ -1,0 +1,50 @@
+INSTRUCTIONS FOR TUTORIAL 1
+===========================
+
+** Assuming you have followed the Pre-tutorial steps **
+
+Requirements
+------------
+
+* Modules: FlavBit
+* Scanners: diver
+* Backends: SuperIso, HEPLike (Root)
+
+Model
+-----
+
+* WC_lite.yaml (already in the yaml_files directory)
+  Parameters: Re_DeltaC7, Re_Delta10
+  Likelihoods: b2sgamma_LogLikelihood, B2mumu_LogLikelihood_Atlas, B2mumu_LogLikelihood_CMS, B2mumu_LogLikelihood_LHCb
+
+Running scan
+------------
+
+* Run scan with various MPI process for speed
+
+    mpirun -np 4 ./gambit -f yaml_files/WC_lite.yaml
+
+  And just wait...
+
+Check results
+-------------
+
+* Results are written in the "output" directory (e.g. runs/WC_lite/samples)
+
+    h5ls runs/WC_lite/samples/WC.hdf5/WC
+
+Plotting results
+----------------
+
+* To generate plots we use pippi
+  Pippi file: WC_lite.pip
+
+    ./pippi/pippi WC_lite.pip
+
+* Best fit point is printed in the parse directory (e.g. runs/WC_lite/parse)
+
+    less runs/WC_lite/parse/WC.best_all
+
+* Plots are generated in the selected plots directory (e.g runs/WC_lite/plots)
+
+    okular runs/WC_lite/plots/*
