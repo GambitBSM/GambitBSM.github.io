@@ -1,0 +1,156 @@
+# YAML for sterile neutrino scans
+
+Parameters:
+
+  # SM parameters.
+  StandardModel_mNudiff:
+    # SLHA1
+    alphainv:  1.27940010E+02 # alpha^{-1}(mZ)^MSbar *
+    GF      :  1.16637870E-05 # G_Fermi **
+    alphaS  :  1.18500000E-01 # alpha_s(mZ)^MSbar ^
+    mZ      :  9.11876000E+01 # mZ(pole) !
+    mBmB    :  4.18000000E+00 # mb(mb)^MSbar &
+    mT      :  1.73340000E+02 # mtop(pole) $
+    mTau    :  1.77682000E+00 # mtau(pole) §
+
+    # SLHA2
+    mE      :  5.10998928E-04 # melectron(pole) § **
+    mMu     :  1.05658372E-01 # mmuon(pole) §
+    mD      :  4.80000000E-03 # md(2 GeV)^MSbar @
+    mU      :  2.30000000E-03 # mu(2 GeV)^MSbar @
+    mS      :  9.50000000E-02 # ms(2 GeV)^MSbar @
+    mCmC    :  1.27500000E+00 # mc(mc)^MSbar %
+
+    # CKM
+    # Wolfenstein parameterisation (matches SLHA2 VCKMIN block)
+    # from http://pdg.lbl.gov/2014/reviews/rpp2014-rev-ckm-matrix.pdf
+    CKM_lambda  :  0.22537
+    CKM_A       :  0.814
+    CKM_rhobar  :  0.117
+    CKM_etabar  :  0.353
+
+    mNu_light: 0
+    dmNu21:
+      range: [6e-5, 9e-5]
+      prior_type: flat
+    dmNu3l:
+      range: [2e-3, 3e-3]
+      prior_type: flat
+
+    alpha1: 0
+    alpha2: 0
+    delta13:
+      range: [0, 6.283] # 3-sigma range from NuFit
+    theta12:
+      range: [0.547684, 0.628144] # 3-sigma range from NuFit
+    theta23:
+      range: [0.670206, 0.925025] # 3-sigma range from NuFit
+    theta13:
+      range: [0.139452, 0.155509] # 3-sigma range from NuFit
+
+Priors:
+
+Printer:
+
+  printer: hdf5
+  options:
+    output_file: "Neutrinos.hdf5"
+    delete_file_on_restart: true
+    group: "/Neutrinos"
+
+Scanner:
+
+  use_scanner: de
+
+  scanners:
+
+    random:
+      plugin: random
+      point_number: 1000
+      like: LogLike
+
+    de:
+      plugin: diver
+      version: 1.0.4
+      like: LogLike
+      NP: 6000
+      convthresh: 1e-5
+      lambdajDE: true
+
+    multinest:
+      plugin: multinest
+      like: LogLike
+      nlive: 1000
+
+ObsLikes:
+
+  # NuFit v3.2 likelihoods
+
+  - capability: theta12_NuFit_v3_2_lnL
+    purpose: LogLike
+
+  - capability: theta23_NuFit_v3_2_lnL
+    purpose: LogLike
+
+  - capability: theta13_NuFit_v3_2_lnL
+    purpose: LogLike
+
+  - capability: deltaCP_NuFit_v3_2_lnL
+    purpose: LogLike
+
+  - capability: md21_NuFit_v3_2_lnL
+    purpose: LogLike
+
+  - capability: md3l_NuFit_v3_2_lnL
+    purpose: LogLike
+
+  # Observables
+
+  - capability: ordering
+    purpose: Observable
+
+  - capability: md21
+    purpose: Observable
+
+  - capability: md31
+    purpose: Observable
+
+  - capability: md32
+    purpose: Observable
+
+  - capability: min_mass
+    purpose: Observable
+
+  - capability: theta12
+    purpose: Observable
+
+  - capability: theta23
+    purpose: Observable
+
+  - capability: theta13
+    purpose: Observable
+
+  - capability: deltaCP
+    purpose: Observable
+
+Rules:
+
+Logger:
+
+  redirection:
+    [Debug] : "debug.log"
+    [Default] : "default.log"
+    [NeutrinoBit] : "NeutrinoBit.log"
+    [Dependency Resolver] : "dep_resolver.log"
+
+
+KeyValues:
+
+  dependency_resolution:
+    prefer_model_specific_functions: true
+
+  likelihood:
+    model_invalid_for_lnlike_below: -1e10
+    debug: true
+
+  default_output_path: "./runs/Neutrinos"

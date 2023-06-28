@@ -1,0 +1,236 @@
+
+
+Supported Compilers and Library Dependencies
+--------------------------------------------
+
+GAMBIT is built using the CMake system. The following libraries and packages must be installed 
+prior to configuration:
+
+COMPULSORY:
+
+ - gcc/gfortran 4.7.1 or greater, or icc/ifort 12.1.0 or greater
+
+   **  MacOS users: "gcc" and "g++" included with MacOS are actually clang, and don't work 
+   **  with GAMBIT because they lack OpenMP support. You will need to install gcc/gfortran 
+   **  separately (I would recommend using homebrew to install gcc@6).
+
+ - Python 2.7 or greater (Python 3 is not supported)
+ - Python modules: yaml, os, re, datetime, sys, getopt, shutil and itertools.
+ - Boost 1.41 or greater
+ - GNU Scientific Library (GSL) 1.10 or greater
+ - Eigen 3.1.0 or greater
+ - LAPACK
+ - PKG Config 
+ - cmake 2.8.5 or greater
+
+
+OPTIONAL:
+
+ - the h5py python module (for using hdf5 files)
+ - HDF5 (for using hdf5 files)
+
+   **  MacOS users: This must be compiled with gcc, and not clang. With homebrew you can do
+   **  this with: 
+   **    HOMEBREW_CC=gcc-6 HOMEBREW_CXX=g++-6 brew install hdf5 -s, 
+   **  where you replace gcc-6 and g++-6 with whatever version of gcc you have installed.
+
+ - MPI (required for parallel sampling)
+ - axel (speeds up downloads of backends and scanners)
+ - graphviz (required for model hierarchy and dependency tree plots)
+ - ROOT (required for the Delphes detector simulation, or the GreAT scanner from ScannerBit)
+
+   ** MacOS users: ROOT also needs to be compiled with g++ and not clang. This is almost 
+   ** certainly not worth the trouble. (We won't use Delphes or GreAT for the tutorials.)
+
+
+
+
+Download GAMBIT
+---------------
+
+  wget http://www.hepforge.org/archive/gambit/gambit-1.1.1.tar.gz
+  tar -xvf gambit-1.1.1.tar.gz
+  cd gambit_1.1-1.1.1
+
+
+
+
+Build GAMBIT
+------------
+
+The basic build instructions are as follows, but note that cmake will fail to find some 
+dependencies on some systems without guidance. More information is provided in the troubleshooting 
+section at the end of this file, and in the main GAMBIT paper (arXiv:1705.07908).
+
+Note that we will skip compilation of Delphes and the GreAT scanner for this tutorial, to avoid any 
+dependency on ROOT. We do this by passing the option -Ditch="Delphes;great" to cmake below.
+
+From the main gambit directory, do
+
+  mkdir build
+  cd build
+  cmake -Ditch="Delphes;great" ..
+  make -jn scanners (where n specifies the desired number of cores for the build, e.g. 4)
+  cmake ..          (Don't forget this step!)
+  make -jn gambit
+
+  **  MacOS users: You need to let cmake know which compiler to use. You can do that as follows
+  **    cmake -D CMAKE_CXX_COMPILER=g++-6 -D CMAKE_C_COMPILER=gcc-6 -D CMAKE_Fortran_COMPILER=gfortran-6 
+  **    -Ditch="Delphes;great" ../
+  **  To avoid issues with compilation of GreAT, instead of make scanners type:
+  **    make multinest
+  **    make diver
+
+
+
+
+Build backend codes
+-------------------
+
+To build all backend codes
+
+  make -jn backends
+
+
+You can also build individual backends using
+
+  make -jn <backend name>
+
+
+To clean a backend, do
+
+  make clean-<backend name>
+
+
+To completely remove a backend, do
+
+  make nuke-<backend name> 
+
+
+
+
+For plotting: Install pippi and ctioga2
+---------------------------------------
+
+To install pippi, do 
+
+  make get-pippi
+
+
+Pippi requires ctioga2. To install ctioga2 do either
+  
+  gem install ctioga2 (OSX or Linux)
+  *or*
+  apt-get install ctioga2 (Linux)
+  *or*
+  see http://ctioga2.sourceforge.net/install.html for help.
+
+
+
+
+Test GAMBIT
+-----------
+
+To see which backends and scanners have been installed correctly, go to the main GAMBIT directory and do
+
+  ./gambit backends
+  ./gambit scanners
+
+
+To run the GAMBIT spartan example, do
+
+  gambit -f yaml_files/spartan.yaml
+
+
+To run an example GAMBIT MSSM7 scan, do:
+
+  gambit -f yaml_files/MSSM7.yaml
+
+
+Other examples are provided in the yaml_files folder. Further readmes and documentation can also be found 
+in the doc folder.
+
+
+
+
+Troubleshooting
+---------------
+
+Below are some suggestions to sort out common problems. You may also check out http://gambit.hepforge.org/config
+to see examples of specific tweaks used to build GAMBIT on various clusters.
+
+
+Missing Eigen? 
+~~~~~~~~~~~~~~
+
+If Eigen3 is not installed, go to the directory where you want to install it and do
+  
+  wget http://bitbucket.org/eigen/eigen/get/3.3.3.tar.gz
+  tar xvzf 3.3.3.tar.gz
+
+To point the GAMBIT cmake system to your copy of Eigen, use the cmake flag EIGEN3_INCLUDE_DIR, e.g. 
+
+  cmake -Ditch="Delphes;great" -D EIGEN3_INCLUDE_DIR=YOUR/PATH/TO/eigen-eigen-67e894c6cd8f ..
+
+
+
+Scanner doesn't work?
+~~~~~~~~~~~~~~~~~~~~~
+
+Do you get "undefined symbol: run" or "undefined symbol: cdiver" or similar when running a scan?
+You probably forgot to re-run "cmake .." after building your scanner. Try the following:
+
+  cd build
+  cmake ..
+  make gambit
+  cd ..
+
+You can check the status of the scanners by running
+
+  ./gambit scanners
+
+
+
+Trouble compiling something unimportant? 
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  cmake -Ditch="something" ..
+
+
+
+Need to clean up something?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  make clean-something
+
+
+
+Need to get rid of something?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+  make nuke-something
+
+
+
+Need to start from scratch?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+From the build directory, do
+
+  make nuke-all
+  cd ..
+  rm -f build
+
+
+
+Don't know what something is?
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Try asking GAMBIT.
+
+  ./gambit something
+
+
+
+
+

@@ -1,0 +1,73 @@
+
+______________________
+
+Get the tutorial files
+______________________
+
+wget https://gambit.hepforge.org/resources/tutorials/WC_lite.pip
+
+wget https://gambit.hepforge.org/resources/tutorials/WC_lite.yaml
+
+
+
+_________________________________
+
+Try the GAMBIT diagnostics system
+_________________________________
+
+./gambit scanners
+./gambit diver
+./gambit backends
+./gambit SuperIso
+
+
+
+_________________________
+
+Run scan and check output
+_________________________
+
+# Here we set the number of MPI processes to 2 
+# and the number of OpenMP threads per MPI process to 1
+
+OMP_NUM_THREADS=1 mpiexec -np 2 ./gambit -rf WC_lite.yaml
+
+h5ls runs/WC_lite/samples/WC.hdf5/WC
+
+pippi/pippi WC_lite.pip
+
+less runs/WC_lite/parse/WC.best_all
+
+evince runs/WC_lite/plots/WC_7_like1D.pdf 
+evince runs/WC_lite/plots/WC_10_like1D.pdf
+evince runs/WC_lite/plots/WC_7_10_like2D.pdf
+
+
+
+
+
+___________________________________
+
+Suggestions for quick things to try
+___________________________________
+
+- Run a MultiNest scan. 
+  (Plotting the results will require some changes to WC_lite.pip)
+
+
+- Try to abort a scan (ctrl-c and wait...) and afterwards resume it 
+  safely by calling GAMBIT *without* the restart flag -r, i.e.
+  
+    ./gambit -f WC_lite.yaml 
+
+
+- Use the GAMBIT diagnostics system to figure out which function
+  calculates the b2sll log-likelihood. (Commented out in WC_lite.yaml)
+  
+  Take a look at this function in FlavBit/src/FlavBit.cpp  
+  (A fairly clean illustration of a GAMBIT module function.)
+
+
+
+
+

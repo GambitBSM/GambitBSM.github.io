@@ -1,0 +1,83 @@
+INSTRUCTIONS FOR TUTORIAL 2
+===========================
+
+** Assuming you have followed the Pre-tutorial steps **
+
+Requirements
+------------
+
+* Modules: SpecBit, DecayBit, DarkBit, GUM
+* Scanners: diver
+* Backends: CalcHEP, MicrOmegas
+* Other: Mathematica (FeynRules)
+
+Running GUM
+-----------
+
+* First the model needs to be known to gum
+
+    mkdir Models/MDMSM
+    mv Tutorial/MDMSM.fr Models/MDMSM
+
+* Run the gum file
+
+    ./gum -f Tutorial/MDMSM.gum
+
+  This will take a while
+
+Re-build GAMBIT
+---------------
+
+* GUM will give you the instructions on how to rebuild GAMBIT, in this case
+
+    cd ../build
+    cmake ..
+    make calchep micromegas_MDMSM
+
+* Do not build gambit yet as we also need to build other things for the scan
+
+   make diver
+   cmake ..
+   make ddcalc
+   make gamlike
+   make darksusy_generic_wimp
+   make -j4
+
+Model
+-----
+
+* MDMSM_Tute.yaml (get form the gum/Tutorial directory)
+  Parameters: mchi, mY, gchi, cY
+  Likelihoods: lnL_oh2, lnL_FermiLATdwarfs, LUX_2016_LogLikelihood, XENON1T_2018_LogLikelihood
+
+Running scan
+------------
+
+* Run scan with various MPI process for speed
+
+    mpirun -np 4 ./gambit -f yaml_files/MDMSM_Tute.yaml
+
+  And just wait... (this could take about 12 hours)
+
+Check results
+-------------
+
+* Results are written in the "output" directory (e.g. runs/MDMSM/samples)
+
+    h5ls runs/MDMSM/samples/MDMSM.hdf5
+
+Plotting results
+----------------
+
+* To generate plots we use pippi
+  Pippi file: MDMSM.pip
+
+    ./pippi/pippi gum/Tutorial/MDMSM.pip
+
+* Best fit point is printed in the parse directory (e.g. runs/MDMSM/parse)
+
+    less runs/MDMSM/parse/MDMSM.best_all
+
+* Plots are generated in the selected plots directory (e.g runs/MDMSM/plots)
+
+    okular runs/MDMSM/plots/*
