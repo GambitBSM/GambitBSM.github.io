@@ -1,6 +1,6 @@
 ---
 title: "Configuration Examples"
-description: "A list of specific cmake tweaks and environment variable hacks that have been useful for configuring and building GAMBIT in restricted environments, such as large clusters."
+description: "A list of specific cmake tweaks and environment variables that have been useful for configuring and building GAMBIT in restricted environments, such as large clusters."
 date: 2022-07-01T22:31:46+01:00
 lastmod: 2022-07-01T22:31:46+01:00
 draft: false
@@ -15,7 +15,7 @@ weight: 40
 
 <p>
 {{< alert icon="ⓘ" context="info">}}
-**Info**: Instructions for configuring and compiling GAMBIT can be found in the original paper describing the code <a href="http://arxiv.org/abs/1705.07908">arXiv:1705.07908 ⧉</a>.
+**Info**: General instructions for configuring and compiling GAMBIT can be found on the [installation page](/documentation/installation/installation_for_linux/) and in the original paper describing the code <a href="http://arxiv.org/abs/1705.07908">arXiv:1705.07908 ⧉</a>.
 {{< /alert >}}
 </p>
 <p>
@@ -24,14 +24,9 @@ weight: 40
 {{< /alert >}}
 </p>
 <p>
-The remainder of this page contains specific cmake tweaks and environment variable hacks that have been useful for configuring and building GAMBIT in more restricted environments, such as large clusters.
-</p>
+The remainder of this page contains specific cmake tweaks and environment variables that have been useful for configuring and building GAMBIT in more restricted environments, such as large clusters.
 
-### Aaron Vincent's OSX laptop
 
-<p>
-Instructions available <a href="https://www.physics.queensu.ca/facultysites/vincent/getting-gambit-to-run-on-osx-mojave/">here ⧉</a>.
-</p>
 
 ### lxplus6 (CERN) with LCG compilers
 
