@@ -24,6 +24,8 @@ weight: 10
   Supplementary data, including samples: <a href="https://doi.org/10.5281/zenodo.7704832"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.7704832.svg" alt="DOI"></a></li>
   <li>Global fits of simplified models for dark matter with GAMBIT II. Vector dark matter with an s-channel vector mediator, <a href="https://arxiv.org/abs/2303.08351">arXiv:2303.08351</a>.<br>
   Supplementary data, including samples: <a href="https://doi.org/10.5281/zenodo.7710586"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.7710586.svg" alt="DOI"></a></li>
+  <li>Fast and accurate AMS-02 antiproton likelihoods for global dark matter fits, <a href="https.arxiv.org/abs/2303.07362">arXiv:2303.07362</a>.<br>
+  Supplementary data, including samples: <a href="https://doi.org/10.5281/zenodo.7952765"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.7952765.svg" alt="DOI"></a></li>
   <li>Global fits of simplified models for dark matter with GAMBIT: I. Scalar and fermionic models with s-channel vector mediators, Eur. Phys. J. C 83 (2023) 3, 249, <a href="https://arxiv.org/abs/2209.13266">arXiv:2209.13266</a>.<br>
   Supplementary data, including samples: <a href="https://doi.org/10.5281/zenodo.6615830"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.6615830.svg" alt="DOI"></a></li>
   <li>Cosmological constraints on decaying axion-like particles: a global analysis, JCAP 12 (2022) 027, <a href="https://arxiv.org/abs/2205.13549">arXiv:2205.13549</a>.<br>
