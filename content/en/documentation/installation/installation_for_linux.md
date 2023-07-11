@@ -87,7 +87,7 @@ One of:
 
 ##### Python + modules
 
-Python ≥ 2.7, and Python modules `numpy`, `future`, `datetime`, `pyyaml`, `re`, `os`, `sys`, `getopt`, `shutil`, and `itertools`
+GAMBIT needs Python 3, and Python modules `numpy`, `future`, `datetime`, `pyyaml`, `re`, `os`, `sys`, `getopt`, `shutil`, and `itertools`
 
 {{< alert icon="ⓘ" context="info">}}
 
@@ -98,17 +98,16 @@ Python ≥ 2.7, and Python modules `numpy`, `future`, `datetime`, `pyyaml`, `re`
 <details>
   <summary>More info</summary>
 
-  Python 2 and Python 3 are developed separately, but both are supported. You might consider installing [Anaconda ⧉](https://www.anaconda.com/) instead, which packages Python along with various libraries and tools designed for scientific computing.
+  Depending on your current Python installation you might consider installing [Anaconda ⧉](https://www.anaconda.com/) instead, which packages Python along with various libraries and tools designed for scientific computing.
 
   | Package name | Available via major Linux package managers | Binaries available | Can be built from source | Notes |
   | --- | --- | --- | --- | --- |
   | `python3` | Yes | [Yes ⧉](http://www.aixtools.net/index.php/python3) | [Yes ⧉](https://www.python.org/downloads/source/) | - |
-  | `python2` | No | [Yes ⧉](http://www.aixtools.net/index.php/python2) | [Yes ⧉](https://www.python.org/downloads/source/) | - |
   | `python-dev` or `python-devel` or numbered variation | Yes | No | No | - |
 
   It is good practice to install Python modules within a virtual environment rather than system-wide; see [I can't or don't want to install dependencies system-wide](/documentation/help/common_problems_and_questions#i-can-t-or-don-t-want-to-install-dependencies-system-wide). 
 
-  There are a number of Python package managers, however `pip` is the most common. If you have an up-to-date installation of Python then this should already be installed, otherwise refer to the [Pip installation page ⧉](https://pip.pypa.io/en/stable/installation/). If you have Python 3 installed then you can optionally use the command `pip3` in place of `pip`. The individual modules can be installed using `pip install $MODULE_NAME`, and a list of installed modules can be viewed using `pip list`. Note that `re`, `os`, `sys`, `getopt`, `shutil`, and `itertools` are part of the Python Standard Library and should already be packaged with Python (attempting to install them with `pip` will result in `ERROR: No matching distribution found for $MODULE_NAME`).
+  There are a number of Python package managers, however `pip` is the most common. If you have an up-to-date installation of Python then this should already be installed, otherwise refer to the [Pip installation page ⧉](https://pip.pypa.io/en/stable/installation/). With Python 3 the command to use may be `pip3` in place of `pip`. The individual modules can be installed using `pip install $MODULE_NAME`, and a list of installed modules can be viewed using `pip list`. Note that `re`, `os`, `sys`, `getopt`, `shutil`, and `itertools` are part of the Python Standard Library and should already be packaged with Python (attempting to install them with `pip` will result in `ERROR: No matching distribution found for $MODULE_NAME`).
 
   {{< alert icon="ⓘ" context="info">}}
 

@@ -32,8 +32,8 @@ modules or `Bits`, along with various Core components and utilities. GAMBIT's `B
 | `ScannerBit` | The sampling module for Gambit. Implements various scanners which are programmed as plugins. |
 | `CosmoBit` | Computes cosmological observables and likelihoods. Can be used for studying models of inflation and variations in the properties of elementary particles, among other topics. |
 | `NeutrinoBit` | Calculates observables and likelihoods for neutrino physics. |
-| `ObjectivesBit` | - |
-| `PrecisionBit` | - |
+| `PrecisionBit` | Calculation of precision observables and likelihoods. |
+| `ObjectivesBit` | Provides standard test functions. |
 
 {{< alert icon="ⓘ" context="info">}}
 **Info**: A detailed discussion of the motivation, philosophy, and design of GAMBIT can be found in [the original paper ⧉](https://arxiv.org/abs/1705.07908)
