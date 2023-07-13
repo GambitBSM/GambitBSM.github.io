@@ -104,17 +104,20 @@ Here are some of our members with links to more information about them.
     <td><img src="/images/Paul_Jackson.jpg" alt="Paul Jackson" style="width:120px">
         <br><a href="https://researchers.adelaide.edu.au/profile/p.jackson">Paul Jackson ⧉</a> <br>
     </td>
+    <td><img src="/images/Adil.jpg" alt="Adil Jueid" style="width:120px">
+        <br><a href="https://inspirehep.net/authors/1384413?ui-citation-summary=true">Adil Jueid ⧉</a> <br>
+    </td>
     <td><img src="/images/felix.jpg" alt="Felix Kahlhoefer" style="width:90px">
         <br><a href="https://www.particle-theory.rwth-aachen.de/cms/Particle-Theory/Das-Institut/Mitarbeiter-TTK/Professoren/~oqfv/Felix-Kahlhoefer/?lidx=1">Felix Kahlhoefer ⧉</a> <br>
     </td>
     <td><img src="/images/Anders.jpg" alt="Anders Kvellestad" style="width:90px">
         <br><a href="https://www.mn.uio.no/fysikk/english/people/aca/anderkve/index.html">Anders Kvellestad ⧉</a> <br>
     </td>
+  </tr>
+  <tr>
     <td><img src="/images/Lucente.jpeg" alt="Michele Lucente" style="width:100px">
          <br><a href="https://www.humboldt-foundation.de/en/connect/explore-the-humboldt-network/singleview?tx_rsmavhsolr_solrview%5BpPersonId%5D=1211073&amp;cHash=42dbda3188ad687882baa02866372114">Michele Lucente ⧉</a> 
     </td>
-  </tr>
-  <tr>
     <td><img src="/images/Nazila.jpg" alt="Nazila Mahmoudi" style="width:105px">
       <br>Nazila Mahmoudi<br>
     </td>
@@ -127,11 +130,11 @@ Here are some of our members with links to more information about them.
     <td><img src="/images/Andre.jpg" alt="Andre Scaffidi" style="width:115px">
         <br>Andre Scaffidi<br>
     </td>
+  </tr>
+  <tr>
     <td><img src="/images/Pat.jpg" alt="Pat Scott" style="width:100px">
         <br><a href="http://researchers.uq.edu.au/researcher/24834">Pat Scott ⧉</a> <br>
     </td>
-  </tr>
-  <tr>
     <td><img src="/images/Cristian_Sierra.jpeg" alt="Cristian Sierra" style="width:120px">
         <br><a href="https://github.com/cristianfsierraf">Cristian Sierra ⧉</a> <br>
     </td>
@@ -144,11 +147,11 @@ Here are some of our members with links to more information about them.
     <td><img src="/images/Jeriek.jpg" alt="Jeriek Van den Abeele" style="width:100px">
       <br><a href="https://jeriek.github.io">Jeriek Van den Abeele ⧉</a> <br>
     </td>
+  </tr>
+  <tr>
     <td><img src="/images/aaronbw.jpeg" alt="Aaron Vincent" style="width:105px">
         <br><a href="https://www.physics.queensu.ca/facultysites/vincent/">Aaron Vincent ⧉</a> <br>
     </td>
-  </tr>
-  <tr>
     <td><img src="/images/Martin.jpg" alt="Martin White" style="width:98px">
         <br><a href="https://researchers.adelaide.edu.au/profile/martin.white">Martin White ⧉</a> <br>
     </td>
