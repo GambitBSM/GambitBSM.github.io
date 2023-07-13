@@ -104,7 +104,7 @@ Here are some of our members with links to more information about them.
     <td><img src="/images/Paul_Jackson.jpg" alt="Paul Jackson" style="width:120px">
         <br><a href="https://researchers.adelaide.edu.au/profile/p.jackson">Paul Jackson ⧉</a> <br>
     </td>
-    <td><img src="/images/Adil.jpg" alt="Adil Jueid" style="width:120px">
+    <td><img src="/images/Adil.JPG" alt="Adil Jueid" style="width:120px">
         <br><a href="https://inspirehep.net/authors/1384413?ui-citation-summary=true">Adil Jueid ⧉</a> <br>
     </td>
     <td><img src="/images/felix.jpg" alt="Felix Kahlhoefer" style="width:90px">
