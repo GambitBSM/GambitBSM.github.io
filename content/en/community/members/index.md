@@ -70,8 +70,8 @@ Here are some of our members with links to more information about them.
     <td><img src="/images/andyb.jpg" alt="Andy Buckley" style="width:110px">
         <br><a href="http://www.ppe.gla.ac.uk/~abuckley/">Andy Buckley ⧉</a> 
     </td>
-    <td><img src="https://www.imperial.ac.uk/ImageCropToolT4/imageTool/uploaded-images/Profile--tojpeg_1528721596115_x1.jpg" alt="Eliel Camargo-Molina" style="width:80px">
-       <br><a href="https://www.imperial.ac.uk/people/j.camargo-molina">José Eliel Camargo-Molina ⧉</a> <br>
+    <td><img src="/images/Eliel.jpg" alt="Eliel Camargo-Molina" style="width:100px">
+       <br><a href="https://eliel.camargo-molina.com/">Eliel Camargo-Molina ⧉</a> <br>
     </td>
     <td><img src="/images/Chris_Chang.png" alt="Christopher Chang" style="width:100px">
          <br>Christopher Chang<br>
