@@ -167,14 +167,7 @@ Here are some of our members with links to more information about them.
   </tr>
 </table>
 </div>
-<<<<<<< HEAD
     </td>
         </tr>
       </tbody>
     </table>
-=======
-    </td>
-        </tr>
-      </tbody>
-    </table>
->>>>>>> 15fbf9ddc383b2b0a3c998e18456d32a8ca20150
