@@ -132,8 +132,8 @@ Here are some of our members with links to more information about them.
     </td>
   </tr>
   <tr>
-    <td><img src="/images/Pat.jpg" alt="Pat Scott" style="width:100px">
-        <br><a href="http://researchers.uq.edu.au/researcher/24834">Pat Scott ⧉</a> <br>
+    <td><img src="/images/Pat.jpg" alt="Pat Scott" style="width:120px">
+        <br><a href="https://scholar.google.co.uk/citations?user=bgqXP70AAAAJ&hl=en&oi=ao">Pat Scott ⧉</a> <br>
     </td>
     <td><img src="/images/Cristian_Sierra.jpeg" alt="Cristian Sierra" style="width:120px">
         <br><a href="https://github.com/cristianfsierraf">Cristian Sierra ⧉</a> <br>
@@ -164,7 +164,7 @@ Here are some of our members with links to more information about them.
   </tr>
 </table>
 </div>
-		</td>
-	      </tr>
-	    </tbody>
-	  </table>
+    </td>
+        </tr>
+      </tbody>
+    </table>
