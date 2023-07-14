@@ -21,7 +21,7 @@ We welcome and encourage bug reports on GAMBIT. These should be submitted via th
 To automatically receive information of GAMBIT releases and other news you can join a low volume [email list](https://www.hepforge.org/lists/listinfo/gambit-announce).
 
 ### Contact
-Questions on specific parts of the GAMBIT framework should be directed to the persons responsible for the individual bits. Currently these are: 
+Questions on specific parts of the GAMBIT framework should be directed to the persons responsible for the individual bits. These are listed below. If you have GAMBIT software related questions that do not fit into the GitHub issues page given above, and you do not know who is responsile for the relevant part of the software, you can send an email to the <a href="mailto:gambit@projects.hepforge.org">GAMBIT community</a>. 
 
 | Bit           | Responsible | Email |
 |---|---|---|

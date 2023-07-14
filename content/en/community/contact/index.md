@@ -11,4 +11,5 @@ menu:
 weight: 50
 ---
 
-You can send an email to the GAMBIT community <a href="mailto:gambit@projects.hepforge.org">here</a>.
+If you would like to join the GAMBIT commuity, please send an email to <a href="mailto:gambit-community@projects.hepforge.org">GAMBIT com\
+munity list</a>.

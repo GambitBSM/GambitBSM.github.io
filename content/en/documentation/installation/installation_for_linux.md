@@ -73,7 +73,7 @@ One of:
   | `ifort` | No | Yes | No | Binaries can be downloaded as part of the [Intel oneAPI Base Toolkit ⧉](https://www.intel.com/content/www/us/en/developer/tools/oneapi/base-toolkit.html#gs.a3697a) (which also includes the ICC C++ compiler) or from the [standalone component page ⧉](https://www.intel.com/content/www/us/en/developer/articles/tool/oneapi-standalone-components.html). |
 </details>
 
-##### Cmake ≥ 2.8.12
+##### Cmake ≥ 3.2.3
 
 <details>
   <summary>More info</summary>
