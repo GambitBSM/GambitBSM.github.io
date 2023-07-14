@@ -101,7 +101,7 @@ Here are some of our members with links to more information about them.
     <td><img src="/images/WillHandley.jpg" alt="Will Handley" style="width:90px">
       <br><a href="https://www.kicc.cam.ac.uk/directory/wh260">Will Handley ⧉</a> <br>
     </td>
-    <td><img src="/images/LukasHergt.jpg" alt="Lukas Hergt" style="width:90px">
+    <td><img src="/images/LukasHergt.jpg" alt="Lukas Hergt" style="width:125px">
       <br><a href="https://phas.ubc.ca/users/lukas-hergt">Lukas Hergt ⧉</a> <br>
     </td>
     <td><img src="/images/Paul_Jackson.jpg" alt="Paul Jackson" style="width:120px">
