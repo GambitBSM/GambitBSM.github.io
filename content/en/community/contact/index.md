@@ -11,5 +11,6 @@ menu:
 weight: 50
 ---
 
-If you would like to join the GAMBIT commuity, please send an email to <a href="mailto:gambit-community@projects.hepforge.org">GAMBIT com\
-munity list</a>.
+If you would like to join the GAMBIT commuity, please send an email to <a href="mailto:gambit-community@projects.hepforge.org">GAMBIT community list</a>.
+
+If you are a meeting organiser and looking for a GAMBIT talk, please send an email to the Science Coordinators on the <a href="mailto:gambit-talks@projects.hepforge.org">GAMBIT talks list</a>.
