@@ -101,6 +101,9 @@ Here are some of our members with links to more information about them.
     <td><img src="/images/WillHandley.jpg" alt="Will Handley" style="width:90px">
       <br><a href="https://www.kicc.cam.ac.uk/directory/wh260">Will Handley ⧉</a> <br>
     </td>
+    <td><img src="/images/LukasHergt.jpg" alt="Lukas Hergt" style="width:125px">
+      <br><a href="https://phas.ubc.ca/users/lukas-hergt">Lukas Hergt ⧉</a> <br>
+    </td>
     <td><img src="/images/Paul_Jackson.jpg" alt="Paul Jackson" style="width:120px">
         <br><a href="https://researchers.adelaide.edu.au/profile/p.jackson">Paul Jackson ⧉</a> <br>
     </td>
@@ -110,11 +113,11 @@ Here are some of our members with links to more information about them.
     <td><img src="/images/felix.jpg" alt="Felix Kahlhoefer" style="width:90px">
         <br><a href="https://www.particle-theory.rwth-aachen.de/cms/Particle-Theory/Das-Institut/Mitarbeiter-TTK/Professoren/~oqfv/Felix-Kahlhoefer/?lidx=1">Felix Kahlhoefer ⧉</a> <br>
     </td>
+  </tr>
+  <tr>
     <td><img src="/images/Anders.jpg" alt="Anders Kvellestad" style="width:90px">
         <br><a href="https://www.mn.uio.no/fysikk/english/people/aca/anderkve/index.html">Anders Kvellestad ⧉</a> <br>
     </td>
-  </tr>
-  <tr>
     <td><img src="/images/Lucente.jpeg" alt="Michele Lucente" style="width:100px">
          <br><a href="https://www.humboldt-foundation.de/en/connect/explore-the-humboldt-network/singleview?tx_rsmavhsolr_solrview%5BpPersonId%5D=1211073&amp;cHash=42dbda3188ad687882baa02866372114">Michele Lucente ⧉</a> 
     </td>
@@ -127,13 +130,13 @@ Here are some of our members with links to more information about them.
     <td><img src="/images/Are.jpg" alt="Are Raklev" style="width:85px">
         <br><a href="https://www.mn.uio.no/fysikk/personer/vit/ahye/">Are Raklev ⧉</a> <br>
     </td>
+  </tr>
+  <tr>
     <td><img src="/images/Andre.jpg" alt="Andre Scaffidi" style="width:115px">
         <br>Andre Scaffidi<br>
     </td>
-  </tr>
-  <tr>
-    <td><img src="/images/Pat.jpg" alt="Pat Scott" style="width:100px">
-        <br><a href="http://researchers.uq.edu.au/researcher/24834">Pat Scott ⧉</a> <br>
+    <td><img src="/images/Pat.jpg" alt="Pat Scott" style="width:120px">
+        <br><a href="https://scholar.google.co.uk/citations?user=bgqXP70AAAAJ&hl=en&oi=ao">Pat Scott ⧉</a> <br>
     </td>
     <td><img src="/images/Cristian_Sierra.jpeg" alt="Cristian Sierra" style="width:120px">
         <br><a href="https://github.com/cristianfsierraf">Cristian Sierra ⧉</a> <br>
@@ -144,11 +147,11 @@ Here are some of our members with links to more information about them.
     <td><img src="/images/wei.jpg" alt="Wei Su" style="width:120px">
       <br><a href="http://inspirehep.net/author/profile/W.Su.2">Wei Su ⧉</a> <br>
     </td>
+  </tr>
+  <tr>
     <td><img src="/images/Jeriek.jpg" alt="Jeriek Van den Abeele" style="width:100px">
       <br><a href="https://jeriek.github.io">Jeriek Van den Abeele ⧉</a> <br>
     </td>
-  </tr>
-  <tr>
     <td><img src="/images/aaronbw.jpeg" alt="Aaron Vincent" style="width:105px">
         <br><a href="https://www.physics.queensu.ca/facultysites/vincent/">Aaron Vincent ⧉</a> <br>
     </td>
@@ -164,7 +167,7 @@ Here are some of our members with links to more information about them.
   </tr>
 </table>
 </div>
-		</td>
-	      </tr>
-	    </tbody>
-	  </table>
+    </td>
+        </tr>
+      </tbody>
+    </table>
