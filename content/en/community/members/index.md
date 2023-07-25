@@ -152,8 +152,8 @@ Here are some of our members with links to more information about them.
     <td><img src="/images/Jeriek.jpg" alt="Jeriek Van den Abeele" style="width:100px">
       <br><a href="https://jeriek.github.io">Jeriek Van den Abeele ⧉</a> <br>
     </td>
-    <td><img src="/images/aaronbw.jpeg" alt="Aaron Vincent" style="width:105px">
-        <br><a href="https://www.physics.queensu.ca/facultysites/vincent/">Aaron Vincent ⧉</a> <br>
+    <td><img src="/images/aaron.jpg" alt="Aaron Vincent" style="width:115px">
+        <br><a href="https://www.queensu.ca/academia/vincent/">Aaron Vincent ⧉</a> <br>
     </td>
     <td><img src="/images/Martin.jpg" alt="Martin White" style="width:98px">
         <br><a href="https://researchers.adelaide.edu.au/profile/martin.white">Martin White ⧉</a> <br>
