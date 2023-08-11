@@ -54,7 +54,7 @@ To run the scan, the user runs the `gambit` executable with the `-f` flag:
 GAMBIT ships with a number of minimal example YAML files, found in `yaml_files/`. As a first example, try running the `spartan.yaml` file:
 
 ```
-gambit -f yaml_files/spartan.yaml
+./gambit -f yaml_files/spartan.yaml
 ```
 
 {{< alert icon="⚠" context="danger">}}
