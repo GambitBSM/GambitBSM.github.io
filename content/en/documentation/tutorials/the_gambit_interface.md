@@ -46,7 +46,7 @@ The top level of the master initialisation file contains eight entries specified
 To run the scan, the user runs the `gambit` executable with the `-f` flag:
 
 ```
-gambit -f $PATH_TO_YAML_FILE
+./gambit -f $PATH_TO_YAML_FILE
 ```
 
 ### A first example
