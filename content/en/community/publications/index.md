@@ -22,9 +22,9 @@ weight: 10
 <ul>
   <li>Collider constraints on electroweakinos in the presence of a light gravitino, Eur. Phys. J. C 83 (2023) 6, 493, <a href="https://arxiv.org/abs/2303.09082">arXiv:2303.09082</a>.<br>
   Supplementary data, including samples: <a href="https://doi.org/10.5281/zenodo.7704832"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.7704832.svg" alt="DOI"></a></li>
-  <li>Global fits of simplified models for dark matter with GAMBIT II. Vector dark matter with an s-channel vector mediator, <a href="https://arxiv.org/abs/2303.08351">arXiv:2303.08351</a>.<br>
+  <li>Global fits of simplified models for dark matter with GAMBIT II. Vector dark matter with an s-channel vector mediator, Eur.Phys.J.C 83 (2023) 8, 692, <a href="https://arxiv.org/abs/2303.08351">arXiv:2303.08351</a>.<br>
   Supplementary data, including samples: <a href="https://doi.org/10.5281/zenodo.7710586"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.7710586.svg" alt="DOI"></a></li>
-  <li>Fast and accurate AMS-02 antiproton likelihoods for global dark matter fits, <a href="https.arxiv.org/abs/2303.07362">arXiv:2303.07362</a>.<br>
+  <li>Fast and accurate AMS-02 antiproton likelihoods for global dark matter fits, JCAP 08 (2023) 052, <a href="https.arxiv.org/abs/2303.07362">arXiv:2303.07362</a>.<br>
   Supplementary data, including samples: <a href="https://doi.org/10.5281/zenodo.7952765"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.7952765.svg" alt="DOI"></a></li>
   <li>Global fits of simplified models for dark matter with GAMBIT: I. Scalar and fermionic models with s-channel vector mediators, Eur. Phys. J. C 83 (2023) 3, 249, <a href="https://arxiv.org/abs/2209.13266">arXiv:2209.13266</a>.<br>
   Supplementary data, including samples: <a href="https://doi.org/10.5281/zenodo.6615830"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.6615830.svg" alt="DOI"></a></li>
