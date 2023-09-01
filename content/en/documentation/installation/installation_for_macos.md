@@ -48,15 +48,17 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 Install dependencies:
 ```
-brew install cmake
-brew install gfortran
-brew install libx11
 brew install boost
+brew install cmake
 brew install eigen
-brew install libomp
+brew install gfortran
 brew install gsl
-brew install ossp-uuid
 brew install hdf5@1.10
+brew install libomp
+brew install libx11
+brew install ossp-uuid
+brew install pkg-config
+
 pip3 install numpy
 pip3 install pyyaml
 ```
