@@ -56,14 +56,17 @@ Here are some of our members with links to more information about them.
     <td><img src="/images/Peter.jpg" alt="Peter Athron" style="width:100px">
         <br><a href="https://research.monash.edu/en/persons/peter-athron">Peter Athron ⧉</a>
     </td>
+    <td><img src="/images/neal_aviskozar.jpg" alt="Neal Avis Kozar" style="width:100px">
+        <br><a href="https://www.queensu.ca/physics/people-search/neal-avis-kozar">Neal Avis Kozar ⧉</a> <br>
+    </td>
     <td><img src="/images/Csaba.jfif" alt="Csaba Balazs" style="width:100px">
         <br><a href="https://research.monash.edu/en/persons/csaba-balazs">Csaba Balazs ⧉</a> <br>
     </td>
+  </tr>
+  <tr>
     <td><img src="/images/Ankit.jpg" alt="Ankit Beniwal" style="width:115px">
        <br><a href="https://cp3.irmp.ucl.ac.be/public/member/566/en">Ankit Beniwal ⧉</a> <br>
     </td>
-  </tr>
-  <tr>
     <td><img src="/images/torsten.jpg" alt="Torsten Bringmann" style="width:82px">
         <br><a href="https://www.mn.uio.no/fysikk/english/people/aca/troms/">Torsten Bringmann ⧉</a>
     </td>
@@ -76,11 +79,11 @@ Here are some of our members with links to more information about them.
     <td><img src="/images/Chris_Chang.png" alt="Christopher Chang" style="width:100px">
          <br>Christopher Chang<br>
     </td>
+  </tr>
+  <tr>
     <td><img src="/images/Cornell.png" alt="Jonathan Cornell" style="width:100px">
         <br><a href="https://weber.edu/physics/faculty.html">Jonathan Cornell ⧉</a> <br>
     </td>
-  </tr>
-  <tr>
     <td><img src="https://mdanning.web.cern.ch/mdanning/public/MD_zoom.jpg" alt="Matthias Danninger" style="width:115px">
         <br><a href="https://www.sfu.ca/physics/people/profiles/m_danninger.html">Matthias Danninger ⧉</a> <br>
     </td>
@@ -93,11 +96,11 @@ Here are some of our members with links to more information about them.
     <td><img src="/images/Tomas.jpg" alt="Tomas Gonzalo" style="width:100px">
          <br><a href="https://research.monash.edu/en/persons/tomas-gonzalo-velasco">Tomas Gonzalo ⧉</a>
     </td>
+  </tr>
+  <tr>
     <td><img src="/images/Philip_Grace.jpg" alt="Philip Grace" style="width:120px">
          <br>Philip Grace<br>
     </td>
-  </tr>
-  <tr>
     <td><img src="/images/WillHandley.jpg" alt="Will Handley" style="width:90px">
       <br><a href="https://www.willhandley.co.uk">Will Handley ⧉</a> <br>
     </td>
@@ -110,11 +113,11 @@ Here are some of our members with links to more information about them.
     <td><img src="/images/Adil.JPG" alt="Adil Jueid" style="width:120px">
         <br><a href="https://inspirehep.net/authors/1384413?ui-citation-summary=true">Adil Jueid ⧉</a> <br>
     </td>
+  </tr>
+  <tr>
     <td><img src="/images/felix.jpg" alt="Felix Kahlhoefer" style="width:90px">
         <br><a href="https://www.particle-theory.rwth-aachen.de/cms/Particle-Theory/Das-Institut/Mitarbeiter-TTK/Professoren/~oqfv/Felix-Kahlhoefer/?lidx=1">Felix Kahlhoefer ⧉</a> <br>
     </td>
-  </tr>
-  <tr>
     <td><img src="/images/Anders.jpg" alt="Anders Kvellestad" style="width:90px">
         <br><a href="https://www.mn.uio.no/fysikk/english/people/aca/anderkve/index.html">Anders Kvellestad ⧉</a> <br>
     </td>
@@ -127,11 +130,11 @@ Here are some of our members with links to more information about them.
     <td><img src="/images/Nazila.jpg" alt="Nazila Mahmoudi" style="width:105px">
       <br>Nazila Mahmoudi<br>
     </td>
+  </tr>
+  <tr>
     <td><img src="/images/Holly.jpeg" alt="Holly Pacey" style="width:120px">
         <br><a href="https://www.hep.phy.cam.ac.uk/~hp341/">Holly Pacey ⧉</a> <br>
     </td>
-  </tr>
-  <tr>
     <td><img src="/images/Are.jpg" alt="Are Raklev" style="width:85px">
         <br><a href="https://www.mn.uio.no/fysikk/personer/vit/ahye/">Are Raklev ⧉</a> <br>
     </td>
@@ -144,11 +147,11 @@ Here are some of our members with links to more information about them.
     <td><img src="/images/Cristian_Sierra.jpeg" alt="Cristian Sierra" style="width:120px">
         <br><a href="https://github.com/cristianfsierraf">Cristian Sierra ⧉</a> <br>
     </td>
+  </tr>
+  <tr>
     <td><img src="/images/Patrick_Stoecker.jpg" alt="Patrick Stöecker" style="width:105px">
       <br><a href="http://www.particle-theory.rwth-aachen.de/cms/Particle-Theory/Das-Institut/Mitarbeiter-TTK/Doktoranden/~qals/Patrick-Stoecker-RWTH-/?lidx=1">Patrick Stöcker ⧉</a> <br>
     </td>
-  </tr>
-  <tr>
     <td><img src="/images/wei.jpg" alt="Wei Su" style="width:120px">
       <br><a href="http://inspirehep.net/author/profile/W.Su.2">Wei Su ⧉</a> <br>
     </td>
@@ -161,11 +164,11 @@ Here are some of our members with links to more information about them.
     <td><img src="/images/Martin.jpg" alt="Martin White" style="width:98px">
         <br><a href="https://researchers.adelaide.edu.au/profile/martin.white">Martin White ⧉</a> <br>
     </td>
+  </tr>
+  <tr>
     <td><img src="/images/Yongcheng_Wu.jpeg" alt="Yongcheng Wu" style="width:120px">
         <br><a href="https://github.com/ycwu1030">Yongcheng Wu ⧉</a> <br>
     </td>
-  </tr>
-  <tr>
     <td><img src="/images/Yang_Zhang.jpeg" alt="Yang Zhang" style="width:120px">
         <br><a href="https://research.monash.edu/en/persons/yang-zhang">Yang Zhang ⧉</a> <br>
     </td>
