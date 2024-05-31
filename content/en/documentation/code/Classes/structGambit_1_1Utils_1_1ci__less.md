@@ -11,8 +11,6 @@ description: "[No description available]"
 
 [No description available]
 
-Inherits from std::binary_function< std::string, std::string, bool >
-
 ## Public Classes
 
 |                | Name           |
@@ -39,4 +37,4 @@ inline bool operator()(
 
 -------------------------------
 
-Updated on 2023-06-26 at 21:36:53 +0000
+Updated on 2024-05-31 at 15:12:05 +0000
