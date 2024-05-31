@@ -2687,4 +2687,4 @@ QUICK_FUNCTION(DecayBit, chargino_minus_2_decay_rates, NEW_CAPABILITY, chargino_
 
 -------------------------------
 
-Updated on 2023-06-26 at 21:36:55 +0000
+Updated on 2024-05-31 at 15:12:06 +0000

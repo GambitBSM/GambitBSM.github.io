@@ -25,7 +25,7 @@ weight: 30
 
 ### Installing compulsory dependencies
 
-GAMBIT has a number of compulsory dependencies, which must be installed for GAMBIT to be built and run. Some basic information is provided for each dependency. When given the option, **it is almost always better to install from source than from a package manager**. Installing from source means that the package will be present on your system in the same structure and configuration as the developers intended, which cannot always be guaranteed when using package managers. This will save you many headaches when you attempt to configure CMake to build GAMBIT!
+GAMBIT has a number of compulsory dependencies, which must be installed for GAMBIT to be built and run. Some basic information is provided for each dependency. When given the option, **it is almost always better to install from source than from a package manager**. Installing from source means that the package will be present on your system in the same structure and configuration as the developers intended, which cannot always be guaranteed when using package managers. This might save you some headaches when you configure CMake to build GAMBIT.
 
 {{< alert icon="⚠" context="danger">}}
 
@@ -38,10 +38,10 @@ GAMBIT has a number of compulsory dependencies, which must be installed for GAMB
 
 {{< /alert >}}
 
-##### C++ compiler
+##### C/C++ compiler
 
 One of:
-- GCC (GNU Compiler Collection) ≥ 5.1, 
+- GCC (GNU Compiler Collection) ≥ 9, 
 - LLVM Clang ≥ 10 
 - ICC (Intel C/C++ Compiler) ≥ 15.0.2
 
@@ -59,7 +59,7 @@ One of:
 ##### Fortran compiler
 
 One of: 
-- GFortran (GNU Fortran Compiler) ≥ 5.1 
+- GFortran (GNU Fortran Compiler) ≥ 9 
 - ifort (Intel Fortran Compiler) ≥ 15.0.2
 
 <details>
@@ -73,7 +73,7 @@ One of:
   | `ifort` | No | Yes | No | Binaries can be downloaded as part of the [Intel oneAPI Base Toolkit ⧉](https://www.intel.com/content/www/us/en/developer/tools/oneapi/base-toolkit.html#gs.a3697a) (which also includes the ICC C++ compiler) or from the [standalone component page ⧉](https://www.intel.com/content/www/us/en/developer/articles/tool/oneapi-standalone-components.html). |
 </details>
 
-##### Cmake ≥ 3.2.3
+##### Cmake ≥ 3.16.3
 
 <details>
   <summary>More info</summary>

@@ -20,4 +20,4 @@ class Gambit::Scanner::Function_Deleter;
 Functor that deletes a [Function_Base](/documentation/code/classes/classgambit_1_1scanner_1_1function__base/) functor. 
 -------------------------------
 
-Updated on 2023-06-26 at 21:36:52 +0000
+Updated on 2024-05-31 at 15:12:04 +0000
