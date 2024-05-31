@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         # Modified doxybook2 source code is present in the repo, so it must be built (uncomment if this is necessary)
       #- name: Build doxybook2
       #  run: cd doxybook2
