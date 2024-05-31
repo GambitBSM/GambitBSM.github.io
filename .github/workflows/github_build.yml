@@ -11,7 +11,7 @@ on:
       repo_to_document:
         description: 'Latest GAMBIT release repo'
         required: true
-        default: 'https://github.com/GambitBSM/gambit_2.4.git'
+        default: 'https://github.com/GambitBSM/gambit_2.5.git'
 
 jobs:
   
@@ -20,7 +20,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
         # Modified doxybook2 source code is present in the repo, so it must be built (uncomment if this is necessary)
       #- name: Build doxybook2
       #  run: cd doxybook2
@@ -62,11 +62,11 @@ jobs:
     if: ${{ always() }}
     steps:
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Cache npm packages
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
-          node-version: '16'
+          node-version: '20'
           # cache: 'npm'
       - name: Install npm dependencies and build site
         run: npm install
