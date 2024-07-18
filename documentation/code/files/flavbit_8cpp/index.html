@@ -908,7 +908,7 @@ namespace Gambit
         obs_theory.push_back(prediction.central_values.at(observables[i]));
       }
       return obs_theory;
-    };
+    }
 
     /// Extract covariance matrix of the given observables from the covariance map.
     boost::numeric::ublas::matrix&lt;double&gt; get_obs_covariance(const flav_prediction&amp; prediction, const std::vector&lt;std::string&gt;&amp; observables)
@@ -922,7 +922,7 @@ namespace Gambit
         }
       }
       return obs_covariance;
-    };
+    }
 
     /// Helper function to avoid code duplication.
     void SuperIso_prediction_helper(const std::vector&lt;std::string&gt;&amp; FB_obslist, const std::vector&lt;std::string&gt;&amp; SI_obslist, flav_prediction&amp; result,
@@ -945,10 +945,12 @@ namespace Gambit
       int nObservables = SI_obslist.size();
       if (flav_debug) std::cout&lt;&lt;&quot;Observables: &quot;&lt;&lt;std::endl;
 
-      char obsnames[nObservables][50];
+      std::vector&lt;std::vector&lt;char&gt;&gt; obsnames(nObservables, std::vector&lt;char&gt;(50));
+      std::vector&lt;char *&gt; obsnames_ptr(nObservables);
       for(int iObservable = 0; iObservable &lt; nObservables; iObservable++)
       {
-        strcpy(obsnames[iObservable], SI_obslist[iObservable].c_str());
+        obsnames_ptr[iObservable] = &amp;obsnames[iObservable][0];
+        strcpy(&amp;obsnames[iObservable][0], SI_obslist[iObservable].c_str());
         if( flav_debug) std::cout&lt;&lt;SI_obslist[iObservable].c_str()&lt;&lt;std::endl;
       }
 
@@ -959,7 +961,7 @@ namespace Gambit
       result_central = (double *) calloc(nObservables, sizeof(double));
 
       // Needed for SuperIso backend
-      get_predictions_nuisance((char**)obsnames, &amp;nObservables, &amp;result_central, &amp;param, &amp;nuislist);
+      get_predictions_nuisance((char**)&amp;obsnames_ptr[0], &amp;nObservables, &amp;result_central, &amp;param, &amp;nuislist);
 
       // Compute the central values
       for(int iObservable = 0; iObservable &lt; nObservables; ++iObservable)
@@ -975,7 +977,7 @@ namespace Gambit
       {
         for(int iObservable = 0; iObservable &lt; nObservables; ++iObservable)
         {
-          printf(&quot;%s=%.4e\n&quot;, obsnames[iObservable], result.central_values[FB_obslist[iObservable]]);
+          printf(&quot;%s=%.4e\n&quot;, &amp;obsnames[iObservable][0], result.central_values[FB_obslist[iObservable]]);
         }
       }
 
@@ -1026,12 +1028,12 @@ namespace Gambit
             param_SM.deltaCQp[ie]=0.;
           }
           // Use the SM values of the parameters to calculate the SM theory covariance.
-          get_th_covariance_nuisance(&amp;result_covariance, (char**)obsnames, &amp;nObservables, &amp;param_SM, &amp;nuislist, (double **)corr);
+          get_th_covariance_nuisance(&amp;result_covariance, (char**)&amp;obsnames_ptr[0], &amp;nObservables, &amp;param_SM, &amp;nuislist, (double **)corr);
         }
         else
         {
           // Calculate covariance at the new physics point.
-          get_th_covariance_nuisance(&amp;result_covariance, (char**)obsnames, &amp;nObservables, &amp;param, &amp;nuislist, (double **)corr);
+          get_th_covariance_nuisance(&amp;result_covariance, (char**)&amp;obsnames_ptr[0], &amp;nObservables, &amp;param, &amp;nuislist, (double **)corr);
         }
 
         // Fill the covariance matrix in the result structure
@@ -1062,7 +1064,7 @@ namespace Gambit
           for(int jObservable = iObservable; jObservable &lt; nObservables; ++jObservable)
           {
             printf(&quot;Covariance %s - %s: %.4e\n&quot;,
-              obsnames[iObservable], obsnames[jObservable], result.covariance[FB_obslist[iObservable]][FB_obslist[jObservable]]);
+              &amp;obsnames[iObservable][0], &amp;obsnames[jObservable][0], result.covariance[FB_obslist[iObservable]][FB_obslist[jObservable]]);
            }
         }
         std::cout &lt;&lt; &quot;Changing convention. After:&quot;&lt;&lt; std::endl;
@@ -3202,7 +3204,7 @@ namespace Gambit
 
   }
 }
-</code></pre><hr><p>Updated on 2024-05-31 at 15:12:06 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.c74020190c99936c745557be58fe8dd9b9fd92bf421fd77d5a107b28ee8a3ea3942a6fa76f67dd3a59aed0c588aa70f46a1df119d437dd747f0fa2a382b63b00.js integrity="sha512-x0AgGQyZk2x0VVe+WP6N2bn9kr9CH9d9WhB7KO6KPqOUKm+nb2fdOlmu0MWIqnD0ah3xGdQ33XR/D6KjgrY7AA==" crossorigin=anonymous defer></script>
+</code></pre><hr><p>Updated on 2024-07-18 at 13:53:33 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.c74020190c99936c745557be58fe8dd9b9fd92bf421fd77d5a107b28ee8a3ea3942a6fa76f67dd3a59aed0c588aa70f46a1df119d437dd747f0fa2a382b63b00.js integrity="sha512-x0AgGQyZk2x0VVe+WP6N2bn9kr9CH9d9WhB7KO6KPqOUKm+nb2fdOlmu0MWIqnD0ah3xGdQ33XR/D6KjgrY7AA==" crossorigin=anonymous defer></script>
 <script src=/js/highlight.min.36e95e9e3e9384ff10cda4162dfcde8cfce8605a647f8c3bedf1fb1df3913fcb34d67131872a03ccb60136dbf78ae205f8f9045750bf34ffb6f7a5bd84afa22a.js integrity="sha512-Nulenj6ThP8QzaQWLfzejPzoYFpkf4w77fH7HfORP8s01nExhyoDzLYBNtv3iuIF+PkEV1C/NP+296W9hK+iKg==" crossorigin=anonymous defer></script>
 <script src=/main.min.ef065bd7f2223ce7e096aef9a8c0dfcfdcb001015039b928682364daf09b21a1eb04a2bfb924dd166d991a963a384fc5567ef1f76e45bb565adc281fc0850e9d.js integrity="sha512-7wZb1/IiPOfglq75qMDfz9ywAQFQObkoaCNk2vCbIaHrBKK/uSTdFm2ZGpY6OE/FVn7x925Fu1Za3CgfwIUOnQ==" crossorigin=anonymous defer></script>
-<script src=https://gambitbsm.org/index.min.139166b12e5a2c6be8acfb60c970ee81197df23fb96abeb071c637f933d63ec984e96503dfa66e36f763c48e52346fd5bc8fd0b0747e0f724b49307848006c63.js integrity="sha512-E5FmsS5aLGvorPtgyXDugRl98j+5ar6wccY3+TPWPsmE6WUD36ZuNvdjxI5SNG/VvI/QsHR+D3JLSTB4SABsYw==" crossorigin=anonymous defer></script></body></html>
+<script src=https://gambitbsm.org/index.min.97f8c8f07457a5e9587386388f9ce0ee9fc13cde3f70402fbda69bb3fc331288a5c81cf70b523e0453a1360ce190ccde2a8a807c1042275f4ab5910ece4386ba.js integrity="sha512-l/jI8HRXpelYc4Y4j5zg7p/BPN4/cEAvvaabs/wzEoilyBz3C1I+BFOhNgzhkMzeKoqAfBBCJ19KtZEOzkOGug==" crossorigin=anonymous defer></script></body></html>

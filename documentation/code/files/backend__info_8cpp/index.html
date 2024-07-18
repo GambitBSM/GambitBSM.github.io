@@ -38,18 +38,11 @@ Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle
 #include &quot;gambit/cmake/cmake_variables.hpp&quot;
 #include &quot;gambit/Backends/backend_info.hpp&quot;
 #include &quot;gambit/Utils/util_functions.hpp&quot;
+#include &quot;gambit/Utils/python_interpreter.hpp&quot;
 #include &quot;gambit/Logs/logger.hpp&quot;
 
 #ifdef HAVE_MATHEMATICA
   #include MATHEMATICA_WSTP_H
-#endif
-
-#ifdef HAVE_PYBIND11
-
-  #include &quot;gambit/Utils/begin_ignore_warnings_pybind11.hpp&quot;
-  #include &lt;pybind11/embed.h&gt;
-  #include &quot;gambit/Utils/end_ignore_warnings.hpp&quot;
-
 #endif
 
 #ifdef HAVE_LINK_H
@@ -66,9 +59,6 @@ namespace Gambit
   Backends::backend_info::backend_info()
    : filename(GAMBIT_DIR &quot;/config/backend_locations.yaml&quot;)
    , default_filename(GAMBIT_DIR &quot;/config/backend_locations.yaml.default&quot;)
-   #ifdef HAVE_PYBIND11
-     , python_started(false)
-   #endif
   {
     // Attempt to read user yaml configuration file
     try
@@ -105,7 +95,7 @@ namespace Gambit
   Backends::backend_info::~backend_info()
   {
     #ifdef HAVE_PYBIND11
-      if (python_started)
+      if (not loaded_python_backends.empty())
       {
         for (auto it = loaded_python_backends.begin();
                   it != loaded_python_backends.end();
@@ -113,9 +103,6 @@ namespace Gambit
         {
           delete it-&gt;second;
         }
-        //TODO: Currently this causes memory leaks, so we let it die on its own
-        // If in the future this is fixed on the python side, we can uncomment it
-        //delete python_interpreter;
       }
     #endif
   }
@@ -231,12 +218,24 @@ namespace Gambit
   /// Given a backend and a safe version (with no periods), return the true version
   str Backends::backend_info::version_from_safe_version (str be, str sv) const
   {
+    if (safe_version_map.find(be) == safe_version_map.end())
+    {
+      std::ostringstream msg;
+      msg &lt;&lt; &quot;The backend \&quot;&quot; &lt;&lt; be &lt;&lt; &quot;\&quot; is not known to GAMBIT.&quot;;
+      backend_error().raise(LOCAL_INFO, msg.str());
+    }
     return safe_version_map.at(be).first.at(sv);
   }
 
   /// Given a backend and a true version (with periods), return the safe version
   str Backends::backend_info::safe_version_from_version (str be, str v) const
   {
+    if (safe_version_map.find(be) == safe_version_map.end())
+    {
+      std::ostringstream msg;
+      msg &lt;&lt; &quot;The backend \&quot;&quot; &lt;&lt; be &lt;&lt; &quot;\&quot; is not known to GAMBIT.&quot;;
+      backend_error().raise(LOCAL_INFO, msg.str());
+    }
     return safe_version_map.at(be).second.at(v);
   }
 
@@ -351,7 +350,6 @@ namespace Gambit
       }
       // and so on.
       else if (lang == &quot;PYTHON&quot; or lang == &quot;Python&quot; or
-               lang == &quot;PYTHON2&quot; or lang == &quot;Python2&quot; or
                lang == &quot;PYTHON3&quot; or lang == &quot;Python3&quot;)
       {
         needsPython[be+ver] = true;
@@ -583,21 +581,16 @@ namespace Gambit
         return;
       }
 
+      // Fire up the Python interpreter if it hasn't been started yet.
+      Utils::python_interpreter_guard g;
+
       // Bail now if the backend requires a version of Python that GAMBIT is not configured with.
       if (PYTHON_VERSION_MAJOR &lt; 2 or PYTHON_VERSION_MAJOR &gt; 3)
       {
-        err &lt;&lt; &quot;Unrecognised version of Python: &quot; &lt;&lt; PYTHON_VERSION_MAJOR &lt;&lt; endl;
+        err &lt;&lt; &quot;GAMBIT was configured with an unsupported version of Python: &quot; &lt;&lt; PYTHON_VERSION_MAJOR
+            &lt;&lt; &quot;. Only Python 3 is supported by GAMBIT.&quot; &lt;&lt; endl;
         backend_error().raise(LOCAL_INFO, err.str());
         works[be+ver] = false;
-        return;
-      }
-      if (PYTHON_VERSION_MAJOR != 2 and (lang == &quot;Python2&quot; or lang == &quot;PYTHON2&quot;))
-      {
-        err &lt;&lt; &quot;Failed loading Python backend &quot; &lt;&lt; be &lt;&lt; &quot; &quot; &lt;&lt; ver &lt;&lt; &quot;.&quot; &lt;&lt; endl
-            &lt;&lt; &quot;GAMBIT was configured with Python &quot; &lt;&lt; PYTHON_VERSION_MAJOR &lt;&lt; &quot; but this backend needs Python 2.&quot; &lt;&lt; endl;
-        backend_warning().raise(LOCAL_INFO, err.str());
-        works[be+ver] = false;
-        missingPythonVersion[be+ver] = 2;
         return;
       }
       if (PYTHON_VERSION_MAJOR != 3 and (lang == &quot;Python3&quot; or lang == &quot;PYTHON3&quot;))
@@ -610,11 +603,8 @@ namespace Gambit
         return;
       }
 
-      // Fire up the Python interpreter if it hasn't been started yet.
-      if (not python_started) start_python();
-
       // Add the path to the backend to the Python system path
-      pybind11::object sys_path = sys-&gt;attr(&quot;path&quot;);
+      pybind11::object sys_path = Utils::python_interpreter::get().sys-&gt;attr(&quot;path&quot;);
       pybind11::object sys_path_insert = sys_path.attr(&quot;insert&quot;);
       sys_path_insert(0,path_dir(be, ver));
 
@@ -641,7 +631,7 @@ namespace Gambit
 
       // Check if the loaded moule has actually come from the expected path.
       // First get the relevant os functions.
-      pybind11::object os_path = os-&gt;attr(&quot;path&quot;);
+      pybind11::object os_path = Utils::python_interpreter::get().os-&gt;attr(&quot;path&quot;);
       pybind11::object os_path_split = os_path.attr(&quot;split&quot;);
       // Get the path to the loaded module (Split the path at the last '/')
       pybind11::tuple full_loaded_path = os_path_split( new_module-&gt;attr(&quot;__file__&quot;) );
@@ -672,22 +662,6 @@ namespace Gambit
       loaded_python_backends[be+ver] = new_module;
     }
 
-    /// Fire up the Python interpreter
-    void Backends::backend_info::start_python()
-    {
-      // Create an instance of the interpreter.
-      python_interpreter = new pybind11::scoped_interpreter;
-      // Import the sys module, and save a wrapper to it for later.
-      static pybind11::module local_sys = pybind11::module::import(&quot;sys&quot;);
-      sys = &amp;local_sys;
-      // Import the os module, and save a wrapper to it for later.
-      static pybind11::module local_os = pybind11::module::import(&quot;os&quot;);
-      os = &amp;local_os;
-
-      logger() &lt;&lt; LogTags::backends &lt;&lt; LogTags::debug &lt;&lt; &quot;Python interpreter successfully started.&quot; &lt;&lt; EOM;
-      python_started = true;
-    }
-
     pybind11::module&amp; Backends::backend_info::getPythonBackend(const str&amp; be, const str&amp; ver)
     {
       static pybind11::module empty_python_module;
@@ -697,7 +671,7 @@ namespace Gambit
   #endif
 
 }
-</code></pre><hr><p>Updated on 2024-05-31 at 15:12:08 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.c74020190c99936c745557be58fe8dd9b9fd92bf421fd77d5a107b28ee8a3ea3942a6fa76f67dd3a59aed0c588aa70f46a1df119d437dd747f0fa2a382b63b00.js integrity="sha512-x0AgGQyZk2x0VVe+WP6N2bn9kr9CH9d9WhB7KO6KPqOUKm+nb2fdOlmu0MWIqnD0ah3xGdQ33XR/D6KjgrY7AA==" crossorigin=anonymous defer></script>
+</code></pre><hr><p>Updated on 2024-07-18 at 13:53:36 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.c74020190c99936c745557be58fe8dd9b9fd92bf421fd77d5a107b28ee8a3ea3942a6fa76f67dd3a59aed0c588aa70f46a1df119d437dd747f0fa2a382b63b00.js integrity="sha512-x0AgGQyZk2x0VVe+WP6N2bn9kr9CH9d9WhB7KO6KPqOUKm+nb2fdOlmu0MWIqnD0ah3xGdQ33XR/D6KjgrY7AA==" crossorigin=anonymous defer></script>
 <script src=/js/highlight.min.36e95e9e3e9384ff10cda4162dfcde8cfce8605a647f8c3bedf1fb1df3913fcb34d67131872a03ccb60136dbf78ae205f8f9045750bf34ffb6f7a5bd84afa22a.js integrity="sha512-Nulenj6ThP8QzaQWLfzejPzoYFpkf4w77fH7HfORP8s01nExhyoDzLYBNtv3iuIF+PkEV1C/NP+296W9hK+iKg==" crossorigin=anonymous defer></script>
 <script src=/main.min.ef065bd7f2223ce7e096aef9a8c0dfcfdcb001015039b928682364daf09b21a1eb04a2bfb924dd166d991a963a384fc5567ef1f76e45bb565adc281fc0850e9d.js integrity="sha512-7wZb1/IiPOfglq75qMDfz9ywAQFQObkoaCNk2vCbIaHrBKK/uSTdFm2ZGpY6OE/FVn7x925Fu1Za3CgfwIUOnQ==" crossorigin=anonymous defer></script>
-<script src=https://gambitbsm.org/index.min.139166b12e5a2c6be8acfb60c970ee81197df23fb96abeb071c637f933d63ec984e96503dfa66e36f763c48e52346fd5bc8fd0b0747e0f724b49307848006c63.js integrity="sha512-E5FmsS5aLGvorPtgyXDugRl98j+5ar6wccY3+TPWPsmE6WUD36ZuNvdjxI5SNG/VvI/QsHR+D3JLSTB4SABsYw==" crossorigin=anonymous defer></script></body></html>
+<script src=https://gambitbsm.org/index.min.97f8c8f07457a5e9587386388f9ce0ee9fc13cde3f70402fbda69bb3fc331288a5c81cf70b523e0453a1360ce190ccde2a8a807c1042275f4ab5910ece4386ba.js integrity="sha512-l/jI8HRXpelYc4Y4j5zg7p/BPN4/cEAvvaabs/wzEoilyBz3C1I+BFOhNgzhkMzeKoqAfBBCJ19KtZEOzkOGug==" crossorigin=anonymous defer></script></body></html>

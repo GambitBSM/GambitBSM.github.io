@@ -63,6 +63,7 @@ namespace Gambit
 
         namespace Plugins
         {
+
             ///Plugin info from inifile
             struct Proto_Plugin_Details
             {
@@ -86,6 +87,41 @@ namespace Gambit
                         : details(details), printer(printer), prior(prior), flags(details.flags), node(node) {}
             };
 
+        #ifdef HAVE_PYBIND11
+            struct EXPORT_SYMBOLS PyPlugin_Details
+            {
+                std::string plugin_name;
+                std::string package;
+                std::string type;
+                std::string version;
+                std::string loc;
+                std::string class_doc;
+                std::string init_doc;
+                std::string run_doc;
+                std::string status;
+                std::string error;
+
+                PyPlugin_Details() : plugin_name(&quot;&quot;), package(&quot;&quot;), type(&quot;&quot;), version(&quot;1.0.0&quot;), loc(&quot;&quot;), class_doc(&quot;&quot;), init_doc(&quot;&quot;), run_doc(&quot;&quot;), status(&quot;ok&quot;) {}
+
+                std::string print() const;
+
+                void debug() const
+                {
+                    std::cout &lt;&lt; &quot;pyplugin details:&quot; &lt;&lt; std::endl;
+                    std::cout &lt;&lt; &quot;  plugin_name: &quot; &lt;&lt; plugin_name &lt;&lt; std::endl;
+                    std::cout &lt;&lt; &quot;  package: &quot; &lt;&lt; package &lt;&lt; std::endl;
+                    std::cout &lt;&lt; &quot;  type: &quot; &lt;&lt; type &lt;&lt; std::endl;
+                    std::cout &lt;&lt; &quot;  version: &quot; &lt;&lt; version &lt;&lt; std::endl;
+                    std::cout &lt;&lt; &quot;  loc: &quot; &lt;&lt; loc &lt;&lt; std::endl;
+                    std::cout &lt;&lt; &quot;  class_doc: &quot; &lt;&lt; class_doc &lt;&lt; std::endl;
+                    std::cout &lt;&lt; &quot;  init_doc &quot; &lt;&lt; init_doc &lt;&lt; std::endl;
+                    std::cout &lt;&lt; &quot;  run_doc: &quot; &lt;&lt; run_doc &lt;&lt; std::endl;
+                    std::cout &lt;&lt; &quot;  status: &quot; &lt;&lt; status &lt;&lt; std::endl;
+                    std::cout &lt;&lt; &quot;  error: &quot; &lt;&lt; error &lt;&lt; std::endl;
+                }
+            };
+        #endif
+
             ///container class for the actual plugins detected by ScannerBit
             class EXPORT_SYMBOLS Plugin_Loader
             {
@@ -97,10 +133,18 @@ namespace Gambit
                 std::map&lt;std::string, std::map&lt;std::string, std::vector&lt;Plugin_Details&gt;&gt;&gt; excluded_plugin_map;
                 std::vector&lt;Plugin_Details&gt; total_plugins;
                 std::map&lt;std::string, std::map&lt;std::string, std::vector&lt;Plugin_Details&gt;&gt;&gt; total_plugin_map;
+            #ifdef HAVE_PYBIND11
+                std::map&lt;std::string, std::map&lt;std::string, PyPlugin_Details&gt;&gt; python_plugin_map;
+            #endif
                 std::vector&lt;Plugin_Details&gt; loadExcluded(const std::string &amp;);
                 void process(const std::string &amp;, const std::string &amp;, const std::string &amp;, std::vector&lt;Plugin_Details&gt;&amp;);
 
             public:
+            #ifdef HAVE_PYBIND11
+                void Load_PyPlugins(const std::string &amp;);
+                void Load_PyPlugins();
+            #endif
+
                 Plugin_Loader();
                 const std::vector&lt;Plugin_Details&gt; &amp;getPluginsVec() const {return total_plugins;}
                 const std::map&lt;std::string, std::map&lt;std::string, std::vector&lt;Plugin_Details&gt;&gt;&gt; &amp;getPluginsMap() const {return total_plugin_map;}
@@ -115,7 +159,10 @@ namespace Gambit
                 int print_plugin_to_screen (const std::string &amp;) const;
                 int print_plugin_to_screen (const std::string &amp;, const std::string &amp;) const;
                 int print_plugin_to_screen (const std::vector&lt;std::string&gt; &amp;) const;
-                Plugin_Details &amp;find (const std::string &amp;, const std::string &amp;, const std::string &amp;, const std::string &amp;) const;
+                Plugin_Details &amp;find (const std::string &amp;, std::string, const std::string &amp;, const std::string &amp;) const;
+            #ifdef HAVE_PYBIND11
+                PyPlugin_Details &amp;find_python_plugin (const std::string &amp;, const std::string &amp;);
+            #endif
             };
 
             ///Virtual container base class to store plugin values for resume function
@@ -159,10 +206,10 @@ namespace Gambit
                 Options options;
                 std::string def_out_path;
                 int MPIrank;
-                #ifdef WITH_MPI
+            #ifdef WITH_MPI
                 GMPI::Comm* scannerComm;
                 bool MPIdata_is_init;
-                #endif
+            #endif
                 /// Flag to indicate if early shutdown is in progess (e.g. due to intercepted OS signal). When set to 'true' scanners should at minimum close off their output files, and if possible they should stop scanning and return control to GAMBIT (or whatever the host code might be).
                 bool earlyShutdownInProgress;
 
@@ -207,13 +254,18 @@ namespace Gambit
                 bool resume_mode() const { return printer-&gt;resume_mode(); }
                 std::string temp_file_path() {return Gambit::Utils::ensure_path_exists(def_out_path + &quot;/temp_files/&quot;);}
 
-                #ifdef WITH_MPI
+            #ifdef HAVE_PYBIND11
+                void load_python_plugins();
+                PyPlugin_Details &amp;load_python_plugin(const std::string &amp;, const std::string &amp;);
+            #endif
+
+            #ifdef WITH_MPI
                 // tags for messages sent via scannerComm
                 static const int MIN_LOGL_MSG = 0;
                 ///Initialise any MPI functionality (currently just used to provide a communicator object to ScannerBit)
                 void initMPIdata(GMPI::Comm* newcomm);
                 GMPI::Comm&amp; scanComm();
-                #endif
+            #endif
                 int getRank() { return MPIrank; }
 
                 ///resume function
@@ -276,7 +328,7 @@ namespace Gambit
 }
 
 #endif
-</code></pre><hr><p>Updated on 2024-05-31 at 15:12:05 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.c74020190c99936c745557be58fe8dd9b9fd92bf421fd77d5a107b28ee8a3ea3942a6fa76f67dd3a59aed0c588aa70f46a1df119d437dd747f0fa2a382b63b00.js integrity="sha512-x0AgGQyZk2x0VVe+WP6N2bn9kr9CH9d9WhB7KO6KPqOUKm+nb2fdOlmu0MWIqnD0ah3xGdQ33XR/D6KjgrY7AA==" crossorigin=anonymous defer></script>
+</code></pre><hr><p>Updated on 2024-07-18 at 13:53:33 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.c74020190c99936c745557be58fe8dd9b9fd92bf421fd77d5a107b28ee8a3ea3942a6fa76f67dd3a59aed0c588aa70f46a1df119d437dd747f0fa2a382b63b00.js integrity="sha512-x0AgGQyZk2x0VVe+WP6N2bn9kr9CH9d9WhB7KO6KPqOUKm+nb2fdOlmu0MWIqnD0ah3xGdQ33XR/D6KjgrY7AA==" crossorigin=anonymous defer></script>
 <script src=/js/highlight.min.36e95e9e3e9384ff10cda4162dfcde8cfce8605a647f8c3bedf1fb1df3913fcb34d67131872a03ccb60136dbf78ae205f8f9045750bf34ffb6f7a5bd84afa22a.js integrity="sha512-Nulenj6ThP8QzaQWLfzejPzoYFpkf4w77fH7HfORP8s01nExhyoDzLYBNtv3iuIF+PkEV1C/NP+296W9hK+iKg==" crossorigin=anonymous defer></script>
 <script src=/main.min.ef065bd7f2223ce7e096aef9a8c0dfcfdcb001015039b928682364daf09b21a1eb04a2bfb924dd166d991a963a384fc5567ef1f76e45bb565adc281fc0850e9d.js integrity="sha512-7wZb1/IiPOfglq75qMDfz9ywAQFQObkoaCNk2vCbIaHrBKK/uSTdFm2ZGpY6OE/FVn7x925Fu1Za3CgfwIUOnQ==" crossorigin=anonymous defer></script>
-<script src=https://gambitbsm.org/index.min.139166b12e5a2c6be8acfb60c970ee81197df23fb96abeb071c637f933d63ec984e96503dfa66e36f763c48e52346fd5bc8fd0b0747e0f724b49307848006c63.js integrity="sha512-E5FmsS5aLGvorPtgyXDugRl98j+5ar6wccY3+TPWPsmE6WUD36ZuNvdjxI5SNG/VvI/QsHR+D3JLSTB4SABsYw==" crossorigin=anonymous defer></script></body></html>
+<script src=https://gambitbsm.org/index.min.97f8c8f07457a5e9587386388f9ce0ee9fc13cde3f70402fbda69bb3fc331288a5c81cf70b523e0453a1360ce190ccde2a8a807c1042275f4ab5910ece4386ba.js integrity="sha512-l/jI8HRXpelYc4Y4j5zg7p/BPN4/cEAvvaabs/wzEoilyBz3C1I+BFOhNgzhkMzeKoqAfBBCJ19KtZEOzkOGug==" crossorigin=anonymous defer></script></body></html>

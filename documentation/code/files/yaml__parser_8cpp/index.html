@@ -11,11 +11,7 @@ Tutorials</button><div class=collapse id=section-tutorials><ul class="btn-toggle
 Help</button><div class=collapse id=section-help><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/help/common_problems_and_questions/>Common Problems and Questions</a></li><li><a class="docs-link rounded" href=/documentation/help/compiler_matrix/>Compiler Matrix</a></li><li><a class="docs-link rounded" href=/documentation/help/known_issues/>Known Issues</a></li><li><a class="docs-link rounded" href=/documentation/help/configuration_examples/>Configuration Examples</a></li><li><a class="docs-link rounded" href=/documentation/help/support/>Support</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-code aria-expanded=false>
 Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/code/index_classes/>Classes</a></li><li><a class="docs-link rounded" href=/documentation/code/index_files/>Files</a></li><li><a class="docs-link rounded" href=/documentation/code/index_pages/>Pages</a></li><li><a class="docs-link rounded" href=/documentation/code/index_namespaces/>Namespaces</a></li></ul></div></li></ul></nav></div><nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation"><div class=d-xl-none><button class="btn btn-outline-primary btn-sm doks-toc-toggle collapsed" type=button data-bs-toggle=collapse data-bs-target=#onThisPage aria-controls=doks-docs-nav aria-expanded=false aria-label="Toggle On this page navigation">
 <span>On this page</span>
-<span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg></span></button><div class=collapse id=onThisPage><div class="card card-body mt-3 py-1"><div class=page-links><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#defines>Defines</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#macros-documentation>Macros Documentation</a><ul><li><a href=#define-read>define READ</a></li></ul></li><li><a href=#source-code>Source code</a></li></ul></nav></div></div></div></div><div class="page-links d-none d-xl-block"><h3>On this page</h3><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#defines>Defines</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#macros-documentation>Macros Documentation</a><ul><li><a href=#define-read>define READ</a></li></ul></li><li><a href=#source-code>Source code</a></li></ul></nav></div></nav><main class="docs-content col-lg-11 col-xl-9 mx-xl-auto"><nav aria-label=breadcrumb><ol class=breadcrumb><li class=breadcrumb-item><a href=/>Home</a></li><li class=breadcrumb-item><a href=/documentation/>Documentation</a></li><li class=breadcrumb-item><a href=/documentation/code/>Code Reference</a></li><li class="breadcrumb-item active" aria-current=page>file src/yaml_parser.cpp</li></ol></nav><p class=lead></p><h1 id=file-src-yaml-parser-cpp>file src/yaml_parser.cpp <a href=#file-src-yaml-parser-cpp class=anchor aria-hidden=true>#</a></h1><p>[No description available] <a href=#detailed-description>More&mldr;</a></p><h2 id=namespaces>Namespaces <a href=#namespaces class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th>Name</th></tr></thead><tbody><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit/>Gambit</a></strong><br>TODO: see if we can use this one:</td></tr><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit_1_1iniparser/>Gambit::IniParser</a></strong></td></tr><tr><td><strong><a href=/documentation/code/namespaces/namespaceyaml/>YAML</a></strong><br><a href>YAML</a> overloads for mass cut and mass cut ratio constituents.</td></tr></tbody></table><h2 id=defines>Defines <a href=#defines class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th></th><th>Name</th></tr></thead><tbody><tr><td></td><td><strong><a href=/documentation/code/files/yaml__parser_8cpp/#define-read>READ</a></strong>(NAME)</td></tr></tbody></table><h2 id=detailed-description>Detailed Description <a href=#detailed-description class=anchor aria-hidden=true>#</a></h2><p><strong>Author</strong>:</p><ul><li>Christoph Weniger (<a href=mailto:c.weniger@uva.nl>c.weniger@uva.nl</a>)</li><li>Pat Scott (<a href=mailto:patscott@physics.mcgill.ca>patscott@physics.mcgill.ca</a>)</li></ul><p><strong>Date</strong>:</p><ul><li>2013 May, June, July</li><li>2014 Mar</li><li>2015 Mar</li><li>2020 Apr</li></ul><p>Ini-file parser based on yaml-cpp</p><hr><p>Authors (add name and date if you modify):</p><hr><h2 id=macros-documentation>Macros Documentation <a href=#macros-documentation class=anchor aria-hidden=true>#</a></h2><h3 id=define-read>define READ <a href=#define-read class=anchor aria-hidden=true>#</a></h3><pre><code>#define READ(
-    NAME
-)
-if (node[#NAME].IsDefined()) rhs.NAME = node[#NAME].as&lt;std::string&gt;();
-</code></pre><h2 id=source-code>Source code <a href=#source-code class=anchor aria-hidden=true>#</a></h2><pre><code>//   GAMBIT: Global and Modular BSM Inference Tool
+<span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg></span></button><div class=collapse id=onThisPage><div class="card card-body mt-3 py-1"><div class=page-links><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#source-code>Source code</a></li></ul></nav></div></div></div></div><div class="page-links d-none d-xl-block"><h3>On this page</h3><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#source-code>Source code</a></li></ul></nav></div></nav><main class="docs-content col-lg-11 col-xl-9 mx-xl-auto"><nav aria-label=breadcrumb><ol class=breadcrumb><li class=breadcrumb-item><a href=/>Home</a></li><li class=breadcrumb-item><a href=/documentation/>Documentation</a></li><li class=breadcrumb-item><a href=/documentation/code/>Code Reference</a></li><li class="breadcrumb-item active" aria-current=page>file src/yaml_parser.cpp</li></ol></nav><p class=lead></p><h1 id=file-src-yaml-parser-cpp>file src/yaml_parser.cpp <a href=#file-src-yaml-parser-cpp class=anchor aria-hidden=true>#</a></h1><p>[No description available] <a href=#detailed-description>More&mldr;</a></p><h2 id=namespaces>Namespaces <a href=#namespaces class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th>Name</th></tr></thead><tbody><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit/>Gambit</a></strong><br>TODO: see if we can use this one:</td></tr><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit_1_1iniparser/>Gambit::IniParser</a></strong></td></tr><tr><td><strong><a href=/documentation/code/namespaces/namespaceyaml/>YAML</a></strong><br><a href>YAML</a> overloads for mass cut and mass cut ratio constituents.</td></tr></tbody></table><h2 id=detailed-description>Detailed Description <a href=#detailed-description class=anchor aria-hidden=true>#</a></h2><p><strong>Author</strong>:</p><ul><li>Christoph Weniger (<a href=mailto:c.weniger@uva.nl>c.weniger@uva.nl</a>)</li><li>Pat Scott (<a href=mailto:patscott@physics.mcgill.ca>patscott@physics.mcgill.ca</a>)</li></ul><p><strong>Date</strong>:</p><ul><li>2013 May, June, July</li><li>2014 Mar</li><li>2015 Mar</li><li>2020 Apr</li></ul><p>Ini-file parser based on yaml-cpp</p><hr><p>Authors (add name and date if you modify):</p><hr><h2 id=source-code>Source code <a href=#source-code class=anchor aria-hidden=true>#</a></h2><pre><code>//   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
 ///  \file
 ///
@@ -38,6 +34,7 @@ if (node[#NAME].IsDefined()) rhs.NAME = node[#NAME].as&lt;std::string&gt;();
 ///  *********************************************
 
 #include &quot;gambit/Core/yaml_parser.hpp&quot;
+#include &quot;gambit/Core/error_handlers.hpp&quot;
 
 namespace Gambit
 {
@@ -63,16 +60,60 @@ namespace Gambit
       YAML::Node outputNode = root[&quot;ObsLikes&quot;];
       YAML::Node rulesNode = root[&quot;Rules&quot;];
 
-      // Read likelihood/observables
+      // Read likelihoods and observables
       for(YAML::const_iterator it=outputNode.begin(); it!=outputNode.end(); ++it)
       {
-        observables.push_back((*it).as&lt;Types::Observable&gt;());
+        observables.push_back((*it).as&lt;DRes::Observable&gt;());
       }
 
       // Read rules
       for(YAML::const_iterator it=rulesNode.begin(); it!=rulesNode.end(); ++it)
       {
-        rules.push_back((*it).as&lt;Types::Observable&gt;());
+        // Set up a string to store any reasons given as to why the rule as
+        // posed in YAML cannot be interpreted as a module rule.
+        str module_rule_conversion_error;
+
+        // Try converting the YAML rule to a module rule.
+        try
+        {
+          module_rules.push_back(it-&gt;as&lt;DRes::ModuleRule&gt;());
+        }
+        catch(const std::runtime_error&amp; e)
+        {
+          module_rule_conversion_error = e.what();
+        }
+
+        // Try converting the YAML rule to a backend rule.
+        try
+        {
+          backend_rules.push_back(it-&gt;as&lt;DRes::BackendRule&gt;());
+        }
+        catch(const std::runtime_error&amp; e)
+        {
+          if (not module_rule_conversion_error.empty())
+          // Failed to convert to either a module or a backend rule.  We got a problem.
+          {
+            std::stringstream errmsg;
+            errmsg &lt;&lt; &quot;Invalid entry in Rules section. The yaml snippet &quot;&lt;&lt; std::endl
+                   &lt;&lt; std::endl &lt;&lt; *it &lt;&lt; std::endl &lt;&lt; std::endl;
+            if (module_rule_conversion_error == e.what())
+            {
+              // Same error in both cases. This means that it fails the general requirements of a rule.
+              errmsg &lt;&lt; &quot;does not form a valid rule. Reason: &quot; &lt;&lt; std::endl &lt;&lt; std::endl &lt;&lt; e.what() &lt;&lt; std::endl;
+            }
+            else
+            {
+              // The two errors differ. This means that it fails the specific requirements of each type of rule.
+              errmsg &lt;&lt; &quot;forms neither a valid rule for module functions,&quot; &lt;&lt; std::endl
+                     &lt;&lt; &quot;nor a valid rule for backend functions.&quot; &lt;&lt; std::endl &lt;&lt; std::endl
+                     &lt;&lt; &quot;Reason for failing as a rule for module functions: &quot; &lt;&lt; std::endl
+                     &lt;&lt; module_rule_conversion_error &lt;&lt; std::endl &lt;&lt; std::endl
+                     &lt;&lt; &quot;Reason for failing as a rule for backend functions: &quot; &lt;&lt; std::endl
+                     &lt;&lt; e.what() &lt;&lt; std::endl;
+            }
+            DRes::dependency_resolver_error().raise(LOCAL_INFO, errmsg.str());
+          }
+        }
       }
 
       // Read KeyValue section, find the default path entry, and pass this on
@@ -81,73 +122,489 @@ namespace Gambit
       YAML::Node scanNode    = getScannerNode();
       YAML::Node printerNode = getPrinterNode();
       YAML::Node logNode     = getLoggerNode();
-
     }
 
     /// Getters for private observable and rules entries
     /// @{
-    const ObservablesType&amp; IniFile::getObservables() const { return observables; }
-    const ObservablesType&amp; IniFile::getRules() const { return rules; }
+    const std::vector&lt;DRes::Observable&gt;&amp; IniFile::getObservables() const { return observables; }
+    const std::vector&lt;DRes::ModuleRule&gt;&amp; IniFile::getModuleRules() const { return module_rules; }
+    const std::vector&lt;DRes::BackendRule&gt;&amp; IniFile::getBackendRules() const { return backend_rules; }
     /// @}
 
   }
 
 }
 
-// Methods for converting from inifile to Observable format
+
+// Methods for converting from inifile to observable or rule format
 namespace YAML
 {
-  using namespace Gambit::IniParser::Types;
+  using namespace Gambit::DRes;
 
+  /// Helper function for trying to convert a YAML snippet to a nested module rule
+  void convert_to_module_rule(const YAML::detail::iterator_value y, std::vector&lt;ModuleRule&gt;&amp; v)
+  {
+    try
+    {
+      v.push_back(y.as&lt;ModuleRule&gt;());
+    }
+    catch(const std::runtime_error&amp; e)
+    {
+      std::stringstream errmsg;
+      errmsg &lt;&lt; &quot;Invalid entry in nested module rule contained in dependencies section. The yaml snippet &quot;&lt;&lt; std::endl
+             &lt;&lt; std::endl &lt;&lt; y &lt;&lt; std::endl &lt;&lt; std::endl;
+      errmsg &lt;&lt; &quot;does not form a valid module rule. Reason: &quot; &lt;&lt; std::endl &lt;&lt; std::endl &lt;&lt; e.what() &lt;&lt; std::endl;
+      Gambit::DRes::dependency_resolver_error().raise(LOCAL_INFO, errmsg.str());
+    }
+  }
+
+  /// Helper function for trying to convert a YAML snippet to a nested backend rule
+  void convert_to_backend_rule(const YAML::detail::iterator_value y, std::vector&lt;BackendRule&gt;&amp; v)
+  {
+    try
+    {
+      v.push_back(y.as&lt;BackendRule&gt;());
+    }
+    catch(const std::runtime_error&amp; e)
+    {
+      std::stringstream errmsg;
+      errmsg &lt;&lt; &quot;Invalid entry in nested backend rule contained in backends section. The yaml snippet &quot;&lt;&lt; std::endl
+             &lt;&lt; std::endl &lt;&lt; y &lt;&lt; std::endl &lt;&lt; std::endl;
+      errmsg &lt;&lt; &quot;does not form a valid backend rule. Reason: &quot; &lt;&lt; std::endl &lt;&lt; std::endl &lt;&lt; e.what() &lt;&lt; std::endl;
+      Gambit::DRes::dependency_resolver_error().raise(LOCAL_INFO, errmsg.str());
+    }
+  }
+
+  /// Convert yaml node to dependency resolver Observable type
   bool convert&lt;Observable&gt;::decode(const Node&amp; node, Observable&amp; rhs)
   {
-    #define READ(NAME) if (node[#NAME].IsDefined()) rhs.NAME = node[#NAME].as&lt;std::string&gt;();
-    READ(purpose)
-    READ(capability)
-    READ(type)
-    READ(function)
-    READ(module)
-    READ(backend)
-    READ(version)
-    #undef READ
+    // Save the include_all tag if given
+    if (node.Tag() == &quot;!include_all&quot;) rhs.include_all = true;
+    // Stop if any other tag has been given, as that isn't part of the current ObsLike spec.
+    else if (node.Tag() != &quot;?&quot;)
+    {
+      std::stringstream errmsg;
+      errmsg &lt;&lt; &quot;The ObsLikes entry &quot; &lt;&lt; std::endl &lt;&lt; node &lt;&lt; std::endl
+             &lt;&lt; &quot;is invalid, because it contains tag \&quot;&quot; &lt;&lt; node.Tag() &lt;&lt; &quot;\&quot;.&quot;
+             &lt;&lt; &quot;The only tag permitted in ObsLikes entries is !include_all.&quot; &lt;&lt; std::endl;
+      dependency_resolver_error().raise(LOCAL_INFO, errmsg.str());
+    }
 
-    if (node.Tag() == &quot;!weak&quot; or node.Tag() == &quot;!weakrule&quot;)
-      rhs.weakrule = true;
-    else
-      rhs.weakrule = false;
+    // Save the original node
+    rhs.yaml = node;
+
+    // Step through each of the entries in the node, making sure it is one of the permitted ones.
+    for(auto&amp; entry : node)
+    {
+      const std::string key = entry.first.as&lt;std::string&gt;(); 
+      if      (key == &quot;purpose&quot;)          rhs.purpose        = entry.second.as&lt;std::string&gt;();
+      else if (key == &quot;capability&quot;)       rhs.capability     = entry.second.as&lt;std::string&gt;();
+      else if (key == &quot;type&quot;)             rhs.type           = entry.second.as&lt;std::string&gt;();
+      else if (key == &quot;function&quot;)         rhs.function       = entry.second.as&lt;std::string&gt;();
+      else if (key == &quot;module&quot;)           rhs.module         = entry.second.as&lt;std::string&gt;();
+      else if (key == &quot;functionChain&quot;)    rhs.functionChain  = entry.second.as&lt;std::vector&lt;std::string&gt;&gt;();
+      else if (key == &quot;sub_capabilities&quot;) rhs.subcaps        = entry.second;
+      else if (key == &quot;printme&quot;)          rhs.printme        = entry.second.as&lt;bool&gt;();
+      else if (key == &quot;dependencies&quot;) for (auto&amp; de : entry.second) convert_to_module_rule(de, rhs.dependencies);
+      else if (key == &quot;backends&quot;)     for (auto&amp; be : entry.second) convert_to_backend_rule(be, rhs.backends);
+      else
+      {
+        std::stringstream errmsg;
+        errmsg &lt;&lt; &quot;The ObsLikes entry &quot; &lt;&lt; std::endl &lt;&lt; node &lt;&lt; std::endl
+               &lt;&lt; &quot;is invalid, because it contains the invalid field &quot; &lt;&lt; entry.first &lt;&lt; &quot;.&quot; &lt;&lt; std::endl;
+        dependency_resolver_error().raise(LOCAL_INFO, errmsg.str());
+      }
+    }
+
+    // Make sure that purpose is set
+    if (rhs.purpose == &quot;&quot;)
+    {
+      std::stringstream errmsg;
+      errmsg &lt;&lt; &quot;The ObsLikes entry &quot; &lt;&lt; std::endl &lt;&lt; node &lt;&lt; std::endl
+             &lt;&lt; &quot;is invalid, because it does not contain a \&quot;purpose\&quot; field.&quot; &lt;&lt; std::endl;
+      dependency_resolver_error().raise(LOCAL_INFO, errmsg.str());
+    }
+
+    // Make sure that capability, type, module or function is set. 
+    if (rhs.capability == &quot;&quot; and rhs.type == &quot;&quot; and rhs.module == &quot;&quot; and rhs.function == &quot;&quot;)
+    {
+      std::stringstream errmsg;
+      errmsg &lt;&lt; &quot;The ObsLikes entry &quot; &lt;&lt; std::endl &lt;&lt; node &lt;&lt; std::endl
+             &lt;&lt; &quot;is invalid, because it does not contain at least one of the&quot; &lt;&lt; std::endl
+             &lt;&lt; &quot;fields \&quot;capability\&quot;, \&quot;type\&quot;, \&quot;module\&quot; or \&quot;function\&quot;.&quot; &lt;&lt; std::endl;
+      dependency_resolver_error().raise(LOCAL_INFO, errmsg.str());
+    }
 
     // Strip leading &quot;Gambit::&quot; namespaces and whitespace, but preserve &quot;const &quot;.
     rhs.type = Gambit::Utils::fix_type(rhs.type);
 
-    if (node[&quot;printme&quot;].IsDefined())
-        rhs.printme = node[&quot;printme&quot;].as&lt;bool&gt;();
+    return true;
+  }
 
-    if (node[&quot;options&quot;].IsDefined())
-        rhs.options = Gambit::Options(node[&quot;options&quot;]);
-
-    if (node[&quot;sub_capabilities&quot;].IsDefined())
-        rhs.subcaps = node[&quot;sub_capabilities&quot;];
-
-    if (node[&quot;functionChain&quot;].IsDefined())
-        rhs.functionChain = node[&quot;functionChain&quot;].as&lt;std::vector&lt;std::string&gt;&gt;();
-
-    for(YAML::const_iterator it=node[&quot;dependencies&quot;].begin();
-        it!=node[&quot;dependencies&quot;].end(); ++it)
+  /// Throw an error if a yaml key is not one of those exclusively allowed in a module or backend rule.
+  bool check_field_is_valid_in_derived_rule(const std::string&amp; field)
+  {
+    if (not ModuleRule::permits_field(field) and not BackendRule::permits_field(field))
     {
-      rhs.dependencies.push_back((*it).as&lt;Observable&gt;());
+      throw std::runtime_error(std::string(&quot;  The field \&quot;&quot; + field + &quot;\&quot; is not permitted in Rule specifications.&quot;));
+    }
+    return true;
+  }
+
+  /// Throw an error if a yaml key is one of those exclusively allowed in a backend rule.
+  void throw_if_field_valid_only_in_backend_rule(const std::string&amp; field)
+  {
+    if (BackendRule::permits_field(field))
+    {
+      throw std::runtime_error(std::string(&quot;  The field \&quot;&quot; + field + &quot;\&quot; is only permitted in rules for backend functions.&quot;));
+    }
+  }
+
+  /// Throw an error if a yaml key is one of those exclusively allowed in a module rule.
+  void throw_if_field_valid_only_in_module_rule(const std::string&amp; field)
+  {
+    if (ModuleRule::permits_field(field))
+    {
+      throw std::runtime_error(std::string(&quot;  The field \&quot;&quot; + field + &quot;\&quot; is only permitted in rules for module functions.&quot;));
+    }
+  }
+
+  /// Throw an error if a field appears in both an if and a then block
+  void forbid_both_true(const std::string&amp; field, bool is_in_one_block, bool is_in_other_block)
+  {
+    if (not (is_in_one_block and is_in_other_block)) return;
+    throw std::runtime_error(std::string(&quot;  The field \&quot;&quot; + field + &quot;\&quot; appears in both the \&quot;if\&quot; and \&quot;then\&quot; blocks.&quot;));
+  }
+
+  /// Build the base-class parts of a rule from a yaml node
+  void build_rule(const Node&amp; node, Rule&amp; rhs)
+  {
+    // Save the original node
+    rhs.yaml = node;
+
+    // Register whether rule is weak or strong
+    if (node.Tag() == &quot;!weak&quot;)
+    {
+      rhs.weakrule = true;
+    }
+    else
+    {
+      rhs.weakrule = false;
+      // Stop if any other tag has been given, as that isn't part of the Rules spec.
+      if (node.Tag() != &quot;?&quot;)
+      {
+        std::stringstream errmsg;
+        errmsg &lt;&lt; &quot;  The Rules entry &quot; &lt;&lt; node &lt;&lt; &quot;contains tag \&quot;&quot; &lt;&lt; node.Tag() &lt;&lt; &quot;\&quot;.&quot; &lt;&lt; std::endl
+               &lt;&lt; &quot;  The only tag permitted in rules is \&quot;!weak\&quot;.&quot;;
+        throw std::runtime_error(errmsg.str());
+      }
     }
 
-    for(YAML::const_iterator it=node[&quot;backends&quot;].begin();
-        it!=node[&quot;backends&quot;].end(); ++it)
+    // A variable for keeping track of whether there have been non-base direct fields given.
+    bool contains_other_direct_fields = false;
+
+    // Step through each of the entries in the node, making sure it is one of the permitted ones.
+    for(auto&amp; entry : node)
     {
-      rhs.backends.push_back((*it).as&lt;Observable&gt;());
+      const std::string key = entry.first.as&lt;std::string&gt;(); 
+      if      (key == &quot;capability&quot;){rhs.capability = entry.second.as&lt;std::string&gt;(); rhs.if_capability = true;}
+      else if (key == &quot;type&quot;)      {rhs.type = entry.second.as&lt;std::string&gt;(); rhs.if_type = true;}
+      else if (key == &quot;function&quot;)  {rhs.function = entry.second.as&lt;std::string&gt;(); rhs.then_function = true;}
+      else if (key == &quot;if&quot;)        rhs.has_if = true;
+      else if (key == &quot;then&quot;)      rhs.has_then = true;
+      else contains_other_direct_fields = check_field_is_valid_in_derived_rule(key);
+    }
+
+    // Make sure that if and then either appear together or not at all
+    if ((rhs.has_if and not rhs.has_then) or (rhs.has_then and not rhs.has_if))
+    {
+      std::string first = (rhs.has_if ? &quot;if&quot; : &quot;then&quot;);
+      std::string second = (rhs.has_if ? &quot;then&quot; : &quot;if&quot;);
+      throw std::runtime_error(std::string(&quot;  The rule contains \&quot;&quot; + first + &quot;\&quot; without \&quot;&quot; + second + &quot;\&quot;.&quot;));
+    }
+
+    // Validate if-then blocks
+    if (rhs.has_if)
+    {
+      // Make sure that if an if-then clause is present, no other entries are.
+      if (contains_other_direct_fields or not (rhs.capability.empty() and
+                                               rhs.type.empty() and
+                                               rhs.function.empty()))
+      {
+        std::stringstream errmsg;
+        errmsg &lt;&lt; &quot;  The rule contains regular fields *and* an if-then clause. If a rule&quot; &lt;&lt; std::endl
+               &lt;&lt; &quot;  contains an if-then clause, all fields of the rule must be within that clause.&quot;;
+        throw std::runtime_error(errmsg.str());
+      }
+
+      // Make sure that if and then blocks are not empty
+      if (node[&quot;if&quot;].size() == 0) throw std::runtime_error(std::string(&quot;  The rule contains an empty 'if' block.&quot;));
+      if (node[&quot;then&quot;].size() == 0) throw std::runtime_error(std::string(&quot;  The rule contains an empty 'then' block.&quot;));
+
+      // Step through each of the entries in the if node, making sure it is one of the permitted ones.
+      for(auto&amp; entry : node[&quot;if&quot;])
+      {
+        const std::string key = entry.first.as&lt;std::string&gt;(); 
+        if      (key == &quot;capability&quot;) {rhs.capability = entry.second.as&lt;std::string&gt;(); rhs.if_capability = true;}
+        else if (key == &quot;type&quot;)       {rhs.type = entry.second.as&lt;std::string&gt;();       rhs.if_type = true;}
+        else if (key == &quot;function&quot;)   {rhs.function = entry.second.as&lt;std::string&gt;();   rhs.if_function = true;}
+        else check_field_is_valid_in_derived_rule(key);
+      }
+
+      // Step through each of the entries in the then node, making sure it is one of the permitted ones.
+      for(auto&amp; entry : node[&quot;then&quot;])
+      {
+        const std::string key = entry.first.as&lt;std::string&gt;(); 
+        if      (key == &quot;capability&quot;) {rhs.capability = entry.second.as&lt;std::string&gt;(); rhs.then_capability = true;}
+        else if (key == &quot;type&quot;)       {rhs.type = entry.second.as&lt;std::string&gt;();       rhs.then_type = true;}
+        else if (key == &quot;function&quot;)   {rhs.function = entry.second.as&lt;std::string&gt;();   rhs.then_function = true;}
+        else check_field_is_valid_in_derived_rule(key);
+      }
+
+      // Make sure there are no fields common to the if and then blocks.
+      forbid_both_true(&quot;capability&quot;, rhs.if_capability, rhs.then_capability);
+      forbid_both_true(&quot;type&quot;, rhs.if_type, rhs.then_type);
+      forbid_both_true(&quot;function&quot;, rhs.if_function, rhs.then_function);
+    }
+
+    // Strip leading &quot;Gambit::&quot; namespaces and whitespace, but preserve &quot;const &quot;.
+    rhs.type = Gambit::Utils::fix_type(rhs.type);
+  }
+
+  /// Set fields exclusive to module rules that can only appear as 'then' parts of a condition
+  void set_other_module_rule_fields(const YAML::detail::iterator_value&amp; entry, ModuleRule&amp; rhs)
+  {
+    const std::string key = entry.first.as&lt;std::string&gt;(); 
+    if (key == &quot;options&quot;)
+    {
+      YAML::Node node = entry.second.as&lt;YAML::Node&gt;();
+      if (node.IsNull()) throw std::runtime_error(std::string(&quot;  The options node is empty.&quot;));
+      rhs.options = node;
+      rhs.then_options = true;
+    }
+    else if (key == &quot;functionChain&quot;)
+    {
+      rhs.functionChain = entry.second.as&lt;std::vector&lt;std::string&gt;&gt;();
+      rhs.then_functionChain = true;
+    }
+    else if (key == &quot;dependencies&quot;)
+    {
+      for (auto&amp; dependencies_entry : entry.second)
+      {
+        // Try converting the entry to a module rule.
+        convert_to_module_rule(dependencies_entry, rhs.dependencies);
+        rhs.then_dependencies = true;
+      }
+    }
+    else if (key == &quot;backends&quot;)
+    {
+      for (auto&amp; backends_entry : entry.second)
+      {
+        // Try converting the entry to a backend rule.
+        convert_to_backend_rule(backends_entry, rhs.backends);
+        rhs.then_backends = true;
+      }
+    }
+    else throw_if_field_valid_only_in_backend_rule(key);
+  }
+
+  /// Convert yaml node to dependency resolver ModuleRule type
+  bool convert&lt;ModuleRule&gt;::decode(const Node&amp; node, ModuleRule&amp; rhs)
+  {
+    // Build the generic base-class parts of the rule
+    build_rule(node, rhs);
+
+    // Step through each of the entries in the node, making sure it is one of the permitted ones.
+    for(auto&amp; entry : node)
+    {
+      const std::string key = entry.first.as&lt;std::string&gt;(); 
+      if (key == &quot;module&quot;)
+      {
+        rhs.module = entry.second.as&lt;std::string&gt;(); 
+        rhs.then_module = true;
+      }
+      else set_other_module_rule_fields(entry, rhs);
+    }
+
+    // Validate if-then blocks
+    if (rhs.has_if)
+    {
+      // Step through each of the entries in the if node, making sure it is one of the permitted ones.
+      for(auto&amp; entry : node[&quot;if&quot;])
+      {
+        const std::string key = entry.first.as&lt;std::string&gt;();
+        if (key == &quot;module&quot;)
+        {
+          rhs.module = entry.second.as&lt;std::string&gt;();
+          rhs.if_module = true;
+        }
+        else if (key == &quot;functionChain&quot; or
+                 key == &quot;options&quot;       or
+                 key == &quot;dependencies&quot;  or
+                 key == &quot;backends&quot;)
+        {
+          throw std::runtime_error(std::string(&quot;  The field \&quot;&quot; + key + &quot;\&quot; cannot appear in an \&quot;if\&quot; block.&quot;));
+        }
+        else throw_if_field_valid_only_in_backend_rule(key);
+      }
+
+      // Step through each of the entries in the then node, making sure it is one of the permitted ones.
+      for(auto&amp; entry : node[&quot;then&quot;])
+      {
+        if (entry.first.as&lt;std::string&gt;() == &quot;module&quot;)
+        {
+          rhs.module = entry.second.as&lt;std::string&gt;(); 
+          rhs.then_module = true;
+        }
+        else set_other_module_rule_fields(entry, rhs);
+      }
+
+      // Make sure that module does not appear in both if and then blocks.
+      forbid_both_true(&quot;module&quot;, rhs.if_module, rhs.then_module);
+    }
+    // If there is no explicit if-then, make sure the default 'if' and 'then' conditions are actually implemented
+    else
+    {
+      if (not (rhs.if_capability or rhs.if_type))
+      {
+        std::stringstream errmsg;
+        errmsg &lt;&lt; &quot;  The rule contains neither an if-then block nor any capability or&quot; &lt;&lt; std::endl
+               &lt;&lt; &quot;  type entry able to be interpreted as an implicit if condition.&quot;;
+        throw std::runtime_error(errmsg.str());
+      }
+      if (not (rhs.then_function or
+               rhs.then_module or
+               rhs.then_options or
+               rhs.then_functionChain or
+               rhs.then_dependencies or
+               rhs.then_backends))
+      {
+        std::stringstream errmsg;
+        errmsg &lt;&lt; &quot;  The rule contains neither an if-then block nor an entry&quot; &lt;&lt; std::endl
+               &lt;&lt; &quot;  able to be interpreted as an implicit then condition.&quot;;
+        throw std::runtime_error(errmsg.str());
+      }
     }
 
     return true;
   }
 
+  /// Convert yaml node to dependency resolver BackendRule type
+  bool convert&lt;BackendRule&gt;::decode(const Node&amp; node, BackendRule&amp; rhs)
+  {
+    // Build the generic base-class parts of the rule
+    build_rule(node, rhs);
+
+    // Step through each of the entries in the node, making sure it is one of the permitted ones.
+    for(auto&amp; entry : node)
+    {
+      const std::string key = entry.first.as&lt;std::string&gt;();
+      if (key == &quot;version&quot;)
+      {
+        rhs.version = entry.second.as&lt;std::string&gt;(); 
+        rhs.then_version = true;
+      }
+      else if (key == &quot;backend&quot;)
+      {
+        rhs.backend = entry.second.as&lt;std::string&gt;(); 
+        rhs.then_backend = true;
+      }
+      else if (key == &quot;group&quot;)
+      {
+        rhs.group = entry.second.as&lt;std::string&gt;(); 
+        rhs.if_group = true;
+        // Given that there is a group keyword, re-interpret capability (if it is outside an if block) as a then condition. 
+        if (not rhs.has_if and rhs.if_capability)
+        {
+          rhs.if_capability = false;
+          rhs.then_capability = true;
+        }
+      } 
+      else throw_if_field_valid_only_in_module_rule(key);
+    }
+
+    // Validate if-then blocks
+    if (rhs.has_if)
+    {
+      // Step through each of the entries in the if node, making sure it is one of the permitted ones.
+      for(auto&amp; entry : node[&quot;if&quot;])
+      {
+        const std::string key = entry.first.as&lt;std::string&gt;();
+        if (key == &quot;version&quot;)
+        {
+          rhs.version = entry.second.as&lt;std::string&gt;(); 
+          rhs.if_version = true;
+        }
+        else if (key == &quot;backend&quot;)
+        {
+          rhs.backend = entry.second.as&lt;std::string&gt;(); 
+          rhs.if_backend = true;
+        }
+        else if (key == &quot;group&quot;)
+        {
+          rhs.group = entry.second.as&lt;std::string&gt;(); 
+          rhs.if_group = true;
+        }
+        else throw_if_field_valid_only_in_module_rule(key);
+      }
+
+      // Step through each of the entries in the then node, making sure it is one of the permitted ones.
+      for(auto&amp; entry : node[&quot;then&quot;])
+      {
+        const std::string key = entry.first.as&lt;std::string&gt;();
+        if (key == &quot;version&quot;)
+        {
+          rhs.version = entry.second.as&lt;std::string&gt;(); 
+          rhs.then_version = true;
+        }
+        else if (key == &quot;backend&quot;)
+        {
+          rhs.backend = entry.second.as&lt;std::string&gt;(); 
+          rhs.then_backend = true;
+        }
+        else if (key == &quot;group&quot;)
+        {
+          throw std::runtime_error(std::string(&quot;  The field \&quot;&quot; + key + &quot;\&quot; cannot appear in a \&quot;then\&quot; block.&quot;));
+        }
+        else throw_if_field_valid_only_in_module_rule(key);
+      }
+
+      // Make sure that version and backend do not appear in both if and then blocks.
+      forbid_both_true(&quot;version&quot;, rhs.if_version, rhs.then_version);
+      forbid_both_true(&quot;backend&quot;, rhs.if_backend, rhs.then_backend);
+    }
+    // If there is no explicit if-then, make sure the default 'then' condition is actually implemented
+    else
+    {
+      if (not (rhs.if_capability or rhs.if_type or rhs.if_group))
+      {
+        std::stringstream errmsg;
+        errmsg &lt;&lt; &quot;  The rule contains neither an if-then block nor any capability entry&quot; &lt;&lt; std::endl
+               &lt;&lt; &quot;  able to be interpreted as an implicit if condition.&quot;;
+        throw std::runtime_error(errmsg.str());
+      }
+      if (not (rhs.then_function or rhs.then_version or rhs.then_backend or rhs.then_capability))
+      {
+        std::stringstream errmsg;
+        errmsg &lt;&lt; &quot;  The rule contains neither an if-then block, nor an entry able to be&quot; &lt;&lt; std::endl
+               &lt;&lt; &quot;  interpreted as an implicit then condition.&quot; &lt;&lt; std::endl;
+        if (rhs.if_capability)
+        {
+          errmsg &lt;&lt; std::endl
+                 &lt;&lt; &quot;  Note that \&quot;capability\&quot; has already been implicitly interpreted as an if&quot; &lt;&lt; std::endl
+                 &lt;&lt; &quot;  condition.  Interpreting it as a then condition requires the presence of the&quot; &lt;&lt; std::endl
+                 &lt;&lt; &quot;  \&quot;group\&quot; keyword, which implicitly takes over the role of the if condition.&quot; &lt;&lt; std::endl;
+        }
+        throw std::runtime_error(errmsg.str());
+      }
+    }
+
+    return true;
+  }
+
+
 }
-</code></pre><hr><p>Updated on 2024-05-31 at 15:12:07 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.c74020190c99936c745557be58fe8dd9b9fd92bf421fd77d5a107b28ee8a3ea3942a6fa76f67dd3a59aed0c588aa70f46a1df119d437dd747f0fa2a382b63b00.js integrity="sha512-x0AgGQyZk2x0VVe+WP6N2bn9kr9CH9d9WhB7KO6KPqOUKm+nb2fdOlmu0MWIqnD0ah3xGdQ33XR/D6KjgrY7AA==" crossorigin=anonymous defer></script>
+</code></pre><hr><p>Updated on 2024-07-18 at 13:53:34 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.c74020190c99936c745557be58fe8dd9b9fd92bf421fd77d5a107b28ee8a3ea3942a6fa76f67dd3a59aed0c588aa70f46a1df119d437dd747f0fa2a382b63b00.js integrity="sha512-x0AgGQyZk2x0VVe+WP6N2bn9kr9CH9d9WhB7KO6KPqOUKm+nb2fdOlmu0MWIqnD0ah3xGdQ33XR/D6KjgrY7AA==" crossorigin=anonymous defer></script>
 <script src=/js/highlight.min.36e95e9e3e9384ff10cda4162dfcde8cfce8605a647f8c3bedf1fb1df3913fcb34d67131872a03ccb60136dbf78ae205f8f9045750bf34ffb6f7a5bd84afa22a.js integrity="sha512-Nulenj6ThP8QzaQWLfzejPzoYFpkf4w77fH7HfORP8s01nExhyoDzLYBNtv3iuIF+PkEV1C/NP+296W9hK+iKg==" crossorigin=anonymous defer></script>
 <script src=/main.min.ef065bd7f2223ce7e096aef9a8c0dfcfdcb001015039b928682364daf09b21a1eb04a2bfb924dd166d991a963a384fc5567ef1f76e45bb565adc281fc0850e9d.js integrity="sha512-7wZb1/IiPOfglq75qMDfz9ywAQFQObkoaCNk2vCbIaHrBKK/uSTdFm2ZGpY6OE/FVn7x925Fu1Za3CgfwIUOnQ==" crossorigin=anonymous defer></script>
-<script src=https://gambitbsm.org/index.min.139166b12e5a2c6be8acfb60c970ee81197df23fb96abeb071c637f933d63ec984e96503dfa66e36f763c48e52346fd5bc8fd0b0747e0f724b49307848006c63.js integrity="sha512-E5FmsS5aLGvorPtgyXDugRl98j+5ar6wccY3+TPWPsmE6WUD36ZuNvdjxI5SNG/VvI/QsHR+D3JLSTB4SABsYw==" crossorigin=anonymous defer></script></body></html>
+<script src=https://gambitbsm.org/index.min.97f8c8f07457a5e9587386388f9ce0ee9fc13cde3f70402fbda69bb3fc331288a5c81cf70b523e0453a1360ce190ccde2a8a807c1042275f4ab5910ece4386ba.js integrity="sha512-l/jI8HRXpelYc4Y4j5zg7p/BPN4/cEAvvaabs/wzEoilyBz3C1I+BFOhNgzhkMzeKoqAfBBCJ19KtZEOzkOGug==" crossorigin=anonymous defer></script></body></html>

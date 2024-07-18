@@ -88,7 +88,7 @@ namespace Gambit
       }
     }
 
-    Record::Record() : readyToPrint(false) {};
+    Record::Record() : readyToPrint(false) {}
 
     void Record::reset()
     {
@@ -186,6 +186,10 @@ namespace Gambit
       , lastPointID(nullpoint)
     {
       common_constructor(options);
+
+      // Choose whether or not to print invalid and suspicious point codes
+      print_suspicious_point_code = options.getValueOrDef&lt;bool&gt;(true,&quot;print_suspicious_point_code&quot;);
+      print_invalidation_code = options.getValueOrDef&lt;bool&gt;(true,&quot;print_invalidation_code&quot;);
     }
 
 
@@ -222,11 +226,14 @@ namespace Gambit
       AP_DBUG( std::cout &lt;&lt; &quot;Buffer (of asciiPrinter with name=\&quot;&quot;&lt;&lt;printer_name&lt;&lt;&quot;\&quot;) successfully dumped...&quot; &lt;&lt; std::endl; )
 
       // Add last point ID to metadata
-      std::stringstream ssPPID;
-      ssPPID &lt;&lt; lastPointID;
-      map_str_str lastpoint;
-      lastpoint[&quot;lastPointID&quot;] = ssPPID.str();
-      _print_metadata(lastpoint);
+      if (get_output_metadata())
+      {
+        std::stringstream ssPPID;
+        ssPPID &lt;&lt; lastPointID;
+        map_str_str lastpoint;
+        lastpoint[&quot;lastPointID&quot;] = ssPPID.str();
+        _print_metadata(lastpoint);
+      }
     }
 
     void asciiPrinter::flush()
@@ -261,6 +268,16 @@ namespace Gambit
     {
       //TODO: If a functor gets called twice without the printer advancing the data will currently just be overwritten. Should generate an error or something.
 
+      // Do not write invalid or suspicious points to buffer if they are not requested to be printed
+      if (!print_suspicious_point_code &amp;&amp; (functor_labels[0] == &quot;Suspicious Point Code&quot;))
+      {
+        return;
+      }
+      if (!print_invalidation_code &amp;&amp; (functor_labels[0] == &quot;Invalidation Code&quot;))
+      {
+        return;
+      }
+
       // Key for accessing buffer
       std::pair&lt;int,int&gt; bkey = std::make_pair(rank,pointID);
       PPIDpair ppid(pointID,rank); // This is a bit clunky because I added PPIDpairs later, so not all asciiprinter internals have been updated to use these instead of simple pairs.
@@ -269,12 +286,6 @@ namespace Gambit
       AP_DBUG( std::cout &lt;&lt; &quot;Rank &quot;&lt;&lt;myRealRank&lt;&lt;&quot;: adding data from (ptID,rank) &quot;&lt;&lt;ppid&lt;&lt;&quot;; labels=&quot;&lt;&lt;functor_labels&lt;&lt;std::endl; )
       AP_DBUG( std::cout &lt;&lt; &quot;Rank &quot;&lt;&lt;myRealRank&lt;&lt;&quot;: last point was from (ptID,rank) &quot;&lt;&lt;lastPointID&lt;&lt;std::endl; )
       //AP_DBUG( std::cout &lt;&lt; &quot;Rank &quot;&lt;&lt;this-&gt;getRank()&lt;&lt;&quot;: Note: nullpoint is (ptID,rank) &quot;&lt;&lt;nullpoint&lt;&lt;std::endl; )
-
-      // Do not write invalid or suspicious points to buffer as this will require extending the dataset, which is not possible in ascii
-      if (functor_labels[0] == &quot;Suspicious Point Code&quot;)
-        return;
-      if (functor_labels[0] == &quot;Invalidation Code&quot;)
-        return;
 
       if(lastPointID == nullpoint)
       {
@@ -339,6 +350,38 @@ namespace Gambit
          label_record[vID] = functor_labels;
       }
       //}
+
+      // Check if the Suspicious Point/Invalidation Code labels are in the buffer, and if not, add them
+      if (print_suspicious_point_code &amp;&amp; !Found_sus)
+      {
+        // Check which required entries are not present
+        for (auto entry: label_record)
+        {
+          if (entry.second[0] == &quot;Suspicious Point Code&quot;) {Found_sus = true;}
+        }
+        if (!Found_sus)
+        {
+          // Add Suspicious Point Code to the buffer
+          std::vector&lt;double&gt; default_data = {0};
+          std::vector&lt;std::string&gt; default_labels = {&quot;Suspicious Point Code&quot;};
+          addtobuffer(default_data, default_labels, get_main_param_id(&quot;Suspicious Point Code&quot;), rank, pointID);
+        }
+      }
+      if (print_invalidation_code &amp;&amp; !Found_inv)
+      {
+        // Check which required entries are not present
+        for (auto entry: label_record)
+        {
+          if (entry.second[0] == &quot;Invalidation Code&quot;) {Found_inv = true;}
+        }
+        if (!Found_inv)
+        {
+          // Add Suspicious Point Code to the buffer
+          std::vector&lt;double&gt; default_data = {0};
+          std::vector&lt;std::string&gt; default_labels = {&quot;Invalidation Code&quot;};
+          addtobuffer(default_data, default_labels, get_main_param_id(&quot;Invalidation Code&quot;), rank, pointID);
+        }
+      }
     }
 
     // write the printer buffer to file
@@ -441,6 +484,7 @@ namespace Gambit
         {
           int vID        = it-&gt;first;
           int length     = it-&gt;second;     // slots reserved in output file for these results
+          
           for (int i=0; i&lt;length; i++)
           {
             AP_DBUG( std::cout&lt;&lt;&quot;Column &quot;&lt;&lt;column_index&lt;&lt;&quot;: &quot;&lt;&lt;label_record.at(vID)[i]&lt;&lt;std::endl; )
@@ -484,6 +528,15 @@ namespace Gambit
             }
             uint length = it-&gt;second;      // slots reserved in output file for these results
 
+            // Setting some custom default values for when not printing a suspicious or invalid point code.
+            std::string default_value = &quot;none&quot;;
+            if (label_record.at(it-&gt;first).at(0) == &quot;Suspicious Point Code&quot; || label_record.at(it-&gt;first).at(0) == &quot;Invalidation Code&quot;)
+            {
+              std::stringstream stream;
+              stream &lt;&lt; std::scientific &lt;&lt; std::setprecision(precision) &lt;&lt; 0.0;
+              default_value = stream.str();
+            }
+
             // Print to the fstream!
             int colwidth = precision + 8;  // Just kind of guessing here; tweak as needed
             for (uint j=0;j&lt;length;j++)
@@ -491,7 +544,7 @@ namespace Gambit
               if(j&gt;=results-&gt;size())
               {
                 // Finished parsing results vector; fill remaining empty slots with 'none'
-                my_fstream&lt;&lt;std::setw(colwidth)&lt;&lt;&quot;none&quot;;
+                my_fstream&lt;&lt;std::setw(colwidth)&lt;&lt;default_value;
               }
               else
               {
@@ -538,7 +591,7 @@ namespace Gambit
 
   } // end namespace printers
 } // end namespace Gambit
-</code></pre><hr><p>Updated on 2024-05-31 at 15:12:06 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.c74020190c99936c745557be58fe8dd9b9fd92bf421fd77d5a107b28ee8a3ea3942a6fa76f67dd3a59aed0c588aa70f46a1df119d437dd747f0fa2a382b63b00.js integrity="sha512-x0AgGQyZk2x0VVe+WP6N2bn9kr9CH9d9WhB7KO6KPqOUKm+nb2fdOlmu0MWIqnD0ah3xGdQ33XR/D6KjgrY7AA==" crossorigin=anonymous defer></script>
+</code></pre><hr><p>Updated on 2024-07-18 at 13:53:33 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.c74020190c99936c745557be58fe8dd9b9fd92bf421fd77d5a107b28ee8a3ea3942a6fa76f67dd3a59aed0c588aa70f46a1df119d437dd747f0fa2a382b63b00.js integrity="sha512-x0AgGQyZk2x0VVe+WP6N2bn9kr9CH9d9WhB7KO6KPqOUKm+nb2fdOlmu0MWIqnD0ah3xGdQ33XR/D6KjgrY7AA==" crossorigin=anonymous defer></script>
 <script src=/js/highlight.min.36e95e9e3e9384ff10cda4162dfcde8cfce8605a647f8c3bedf1fb1df3913fcb34d67131872a03ccb60136dbf78ae205f8f9045750bf34ffb6f7a5bd84afa22a.js integrity="sha512-Nulenj6ThP8QzaQWLfzejPzoYFpkf4w77fH7HfORP8s01nExhyoDzLYBNtv3iuIF+PkEV1C/NP+296W9hK+iKg==" crossorigin=anonymous defer></script>
 <script src=/main.min.ef065bd7f2223ce7e096aef9a8c0dfcfdcb001015039b928682364daf09b21a1eb04a2bfb924dd166d991a963a384fc5567ef1f76e45bb565adc281fc0850e9d.js integrity="sha512-7wZb1/IiPOfglq75qMDfz9ywAQFQObkoaCNk2vCbIaHrBKK/uSTdFm2ZGpY6OE/FVn7x925Fu1Za3CgfwIUOnQ==" crossorigin=anonymous defer></script>
-<script src=https://gambitbsm.org/index.min.139166b12e5a2c6be8acfb60c970ee81197df23fb96abeb071c637f933d63ec984e96503dfa66e36f763c48e52346fd5bc8fd0b0747e0f724b49307848006c63.js integrity="sha512-E5FmsS5aLGvorPtgyXDugRl98j+5ar6wccY3+TPWPsmE6WUD36ZuNvdjxI5SNG/VvI/QsHR+D3JLSTB4SABsYw==" crossorigin=anonymous defer></script></body></html>
+<script src=https://gambitbsm.org/index.min.97f8c8f07457a5e9587386388f9ce0ee9fc13cde3f70402fbda69bb3fc331288a5c81cf70b523e0453a1360ce190ccde2a8a807c1042275f4ab5910ece4386ba.js integrity="sha512-l/jI8HRXpelYc4Y4j5zg7p/BPN4/cEAvvaabs/wzEoilyBz3C1I+BFOhNgzhkMzeKoqAfBBCJ19KtZEOzkOGug==" crossorigin=anonymous defer></script></body></html>

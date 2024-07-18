@@ -46,6 +46,7 @@ Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle
 
 #include &quot;gambit/Utils/yaml_options.hpp&quot;
 #include &quot;gambit/ScannerBit/priors.hpp&quot;
+#include &quot;gambit/ScannerBit/scanner_utils.hpp&quot;
 
 
 namespace Gambit 
@@ -72,56 +73,64 @@ namespace Gambit
             
             CompositePrior(const std::vector&lt;std::string&gt; &amp;params, const Options &amp;options);
             
+            double log_prior_density(const std::unordered_map&lt;std::string, double&gt; &amp;physical) const override 
+            {
+                double log_pdf_density = 0.0;
+                for (auto it = my_subpriors.begin(), end = my_subpriors.end(); it != end; ++it)
+                {
+                    log_pdf_density += (*it)-&gt;log_prior_density(physical);
+                }
+                
+                return log_pdf_density;
+            }
+            
             inline std::vector&lt;std::string&gt; getShownParameters() const override { return shown_param_names; }
             
             // Transformation from unit hypercube to physical parameters
-            void transform(const std::vector&lt;double&gt; &amp;unitPars, std::unordered_map&lt;std::string,double&gt; &amp;outputMap) const override
+            void transform(hyper_cube_ref&lt;double&gt; unitPars, std::unordered_map&lt;std::string,double&gt; &amp;outputMap) const override
             {
-                std::vector&lt;double&gt;::const_iterator unit_it = unitPars.begin(), unit_next;
-                for (auto it = my_subpriors.begin(), end = my_subpriors.end(); it != end; it++)
+                int unit_i = 0, unit_size;
+                for (auto it = my_subpriors.begin(), end = my_subpriors.end(); it != end; ++it)
                 {
-                    unit_next = unit_it + (*it)-&gt;size();
-                    std::vector&lt;double&gt; subUnit(unit_it, unit_next);
-                    unit_it = unit_next;
-                    (*it)-&gt;transform(subUnit, outputMap);
+                    unit_size = (*it)-&gt;size();
+                    (*it)-&gt;transform(unitPars.segment(unit_i, unit_size), outputMap);
+                    unit_i += unit_size;
                 }
             }
 
             // Transformation from physical parameters back to unit hypercube
-            std::vector&lt;double&gt; inverse_transform(const std::unordered_map&lt;std::string, double&gt; &amp;physical) const override
+            void inverse_transform(const std::unordered_map&lt;std::string, double&gt; &amp;physical, hyper_cube_ref&lt;double&gt; unit) const override
             {
-                std::vector&lt;double&gt; u;
+                int unit_i = 0, unit_size;
                 for (auto it = my_subpriors.begin(), end = my_subpriors.end(); it != end; it++)
                 {
-                    auto ublock = (*it)-&gt;inverse_transform(physical);
-                    u.insert(u.end(), ublock.begin(), ublock.end());
+                    unit_size = (*it)-&gt;size();
+                    (*it)-&gt;inverse_transform(physical, unit.segment(unit_i, unit_size));
+                    unit_i += unit_size;
                 }
 
-                // check it
-
-                for (const auto &amp;p : u)
+                // Check it
+                for (int i = 0, end = unit.size(); i &lt; end; ++i)
                 {
-                  if (p &gt; 1. || p &lt; 0.)
-                  {
-                    throw std::runtime_error(&quot;unit hypercube outside 0 and 1&quot;);
-                  }
+                    if (unit[i] &gt;= 1 || unit[i] &lt;= 0)
+                    {
+                        scan_warn &lt;&lt; &quot;unit hypercube outside 0 and 1&quot; &lt;&lt; scan_end;
+                    }
                 }
 
                 auto round_trip = physical;
-                transform(u, round_trip);
+                transform(unit, round_trip);
                 const double rtol = 1e-4;
                 for (const auto &amp;s : physical) 
                 {
-                  const double a = round_trip.at(s.first);
-                  const double b = s.second;
-                  const double rdiff = std::abs(a - b) / std::max(std::abs(a), std::abs(b));
-                  if (rdiff &gt; rtol)
-                  {
-                    throw std::runtime_error(&quot;could not convert physical parameters to hypercube&quot;);
-                  }
+                    const double a = round_trip.at(s.first);
+                    const double b = s.second;
+                    const double rdiff = std::abs(a - b) / std::max(std::abs(a), std::abs(b));
+                    if (rdiff &gt; rtol)
+                    {
+                        scan_err &lt;&lt; &quot;could not convert physical parameters to hypercube&quot; &lt;&lt; scan_end;
+                    }
                 }
-
-                return u;        
             }
             
             //~CompositePrior() noexcept
@@ -141,7 +150,7 @@ namespace Gambit
 } // end namespace Gambit
 
 #endif
-</code></pre><hr><p>Updated on 2024-05-31 at 15:12:05 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.c74020190c99936c745557be58fe8dd9b9fd92bf421fd77d5a107b28ee8a3ea3942a6fa76f67dd3a59aed0c588aa70f46a1df119d437dd747f0fa2a382b63b00.js integrity="sha512-x0AgGQyZk2x0VVe+WP6N2bn9kr9CH9d9WhB7KO6KPqOUKm+nb2fdOlmu0MWIqnD0ah3xGdQ33XR/D6KjgrY7AA==" crossorigin=anonymous defer></script>
+</code></pre><hr><p>Updated on 2024-07-18 at 13:53:32 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.c74020190c99936c745557be58fe8dd9b9fd92bf421fd77d5a107b28ee8a3ea3942a6fa76f67dd3a59aed0c588aa70f46a1df119d437dd747f0fa2a382b63b00.js integrity="sha512-x0AgGQyZk2x0VVe+WP6N2bn9kr9CH9d9WhB7KO6KPqOUKm+nb2fdOlmu0MWIqnD0ah3xGdQ33XR/D6KjgrY7AA==" crossorigin=anonymous defer></script>
 <script src=/js/highlight.min.36e95e9e3e9384ff10cda4162dfcde8cfce8605a647f8c3bedf1fb1df3913fcb34d67131872a03ccb60136dbf78ae205f8f9045750bf34ffb6f7a5bd84afa22a.js integrity="sha512-Nulenj6ThP8QzaQWLfzejPzoYFpkf4w77fH7HfORP8s01nExhyoDzLYBNtv3iuIF+PkEV1C/NP+296W9hK+iKg==" crossorigin=anonymous defer></script>
 <script src=/main.min.ef065bd7f2223ce7e096aef9a8c0dfcfdcb001015039b928682364daf09b21a1eb04a2bfb924dd166d991a963a384fc5567ef1f76e45bb565adc281fc0850e9d.js integrity="sha512-7wZb1/IiPOfglq75qMDfz9ywAQFQObkoaCNk2vCbIaHrBKK/uSTdFm2ZGpY6OE/FVn7x925Fu1Za3CgfwIUOnQ==" crossorigin=anonymous defer></script>
-<script src=https://gambitbsm.org/index.min.139166b12e5a2c6be8acfb60c970ee81197df23fb96abeb071c637f933d63ec984e96503dfa66e36f763c48e52346fd5bc8fd0b0747e0f724b49307848006c63.js integrity="sha512-E5FmsS5aLGvorPtgyXDugRl98j+5ar6wccY3+TPWPsmE6WUD36ZuNvdjxI5SNG/VvI/QsHR+D3JLSTB4SABsYw==" crossorigin=anonymous defer></script></body></html>
+<script src=https://gambitbsm.org/index.min.97f8c8f07457a5e9587386388f9ce0ee9fc13cde3f70402fbda69bb3fc331288a5c81cf70b523e0453a1360ce190ccde2a8a807c1042275f4ab5910ece4386ba.js integrity="sha512-l/jI8HRXpelYc4Y4j5zg7p/BPN4/cEAvvaabs/wzEoilyBz3C1I+BFOhNgzhkMzeKoqAfBBCJ19KtZEOzkOGug==" crossorigin=anonymous defer></script></body></html>

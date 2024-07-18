@@ -54,6 +54,14 @@ Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle
 #include &quot;gambit/Utils/util_functions.hpp&quot;
 #include &quot;gambit/ScannerBit/priors_rollcall.hpp&quot;
 
+#ifdef HAVE_PYBIND11
+  #include &quot;gambit/Utils/begin_ignore_warnings_pybind11.hpp&quot;
+  #include &lt;pybind11/embed.h&gt;
+  #include &quot;gambit/Utils/end_ignore_warnings.hpp&quot;
+
+  namespace py = pybind11;
+#endif
+
 namespace Gambit
 {
 
@@ -62,11 +70,273 @@ namespace Gambit
 
         namespace Plugins
         {
+
+            /*********************************************/
+            /************** PYTHON STUFF *****************/
+            /*********************************************/
+
+        #ifdef HAVE_PYBIND11
+            void pluginInfo::load_python_plugins()
+            {
+                plugins.Load_PyPlugins();
+            }
+
+            std::string PyPlugin_Details::print() const
+            {
+                std::stringstream out;
+                out &lt;&lt; &quot;\n\x1b[01m\x1b[04mGENERAL PLUGIN INFO\x1b[0m&quot; &lt;&lt; std::endl;
+                out &lt;&lt; &quot;\nname:     &quot; &lt;&lt; plugin_name;
+                out &lt;&lt; &quot;\ntype:     python &quot; &lt;&lt; type;
+                out &lt;&lt; &quot;\nversion:  &quot; &lt;&lt; version;
+                out &lt;&lt; &quot;\npackage:  &quot; &lt;&lt; package;
+                out &lt;&lt; &quot;\nstatus:   &quot;;
+                if (status == &quot;ok&quot;)
+                    out &lt;&lt; &quot;\x1b[32;01m&quot; &lt;&lt; status &lt;&lt; &quot;\x1b[0m&quot;;
+                else
+                    out &lt;&lt; &quot;\x1b[31;01m&quot; &lt;&lt; status &lt;&lt; &quot;\x1b[0m&quot;;
+
+                out &lt;&lt; &quot;\nlocation: &quot; &lt;&lt; loc &lt;&lt; std::endl;
+                if (error != &quot;&quot;)
+                    out &lt;&lt; &quot;\x1b[31;01m&quot; &lt;&lt; &quot;error output: &quot; &lt;&lt; &quot;\x1b[0m&quot; &lt;&lt; error &lt;&lt; std::endl;
+
+                out &lt;&lt; std::endl;
+
+                out &lt;&lt; &quot;\n\x1b[01m\x1b[04mDESCRIPTION\x1b[0m\n&quot; &lt;&lt; std::endl;
+                out &lt;&lt; class_doc &lt;&lt; std::endl &lt;&lt; std::endl;
+
+                if (init_doc != &quot;&quot;)
+                {
+                    out &lt;&lt; &quot;\n\x1b[01m\x1b[04mINIT DESCRIPTION\x1b[0m\n&quot; &lt;&lt; std::endl;
+                    out &lt;&lt; init_doc &lt;&lt; std::endl &lt;&lt; std::endl;
+                }
+
+                if (run_doc != &quot;&quot;)
+                {
+                    out &lt;&lt; &quot;\n\x1b[01m\x1b[04mRUN DESCRIPTION\x1b[0m\n&quot; &lt;&lt; std::endl;
+                    out &lt;&lt; run_doc &lt;&lt; std::endl &lt;&lt; std::endl;
+                }
+
+                return out.str();
+            }
+
+            void Plugin_Loader::Load_PyPlugins()
+            {
+                if (python_plugin_map.size() == 0)
+                {
+                    std::vector&lt;std::string&gt; types = {&quot;objective&quot;, &quot;scanner&quot;};
+                    for (auto &amp;&amp;type : types)
+                        Load_PyPlugins(type);
+                }
+            }
+
+            void Plugin_Loader::Load_PyPlugins(const std::string &amp;type)
+            {
+                py::scoped_interpreter *guard;
+                try
+                {
+                    guard = new py::scoped_interpreter();
+                }
+                catch(std::exception &amp;)
+                {
+                    guard = nullptr;
+                }
+                {
+                    std::string path = std::string(GAMBIT_DIR &quot;/ScannerBit/src/&quot;) + type + &quot;s/python/plugins&quot;;
+                    auto sys_list = py::list(py::module::import(&quot;sys&quot;).attr(&quot;path&quot;));
+                    sys_list.append(py::cast(path));
+
+                    if (FILE* p_f = popen((std::string(&quot;ls &quot;) + path).c_str(), &quot;r&quot;))
+                    {
+                        char path_buffer[1024];
+                        int p_n;
+                        std::string fname;
+                        std::stringstream ss;
+
+                        while ((p_n = fread(path_buffer, 1, sizeof path_buffer, p_f)) &gt; 0)
+                        {
+                            ss &lt;&lt; std::string(path_buffer, p_n);
+                        }
+                        while (ss &gt;&gt; fname)
+                        {
+                            std::string loc = path + &quot;/&quot; + fname;
+                            if (fname.substr(fname.size() - 3) == &quot;.py&quot;)
+                                fname = fname.substr(0, fname.size() - 3);
+                            else if (fname.substr(fname.size() - 4) == &quot;.pyc&quot;)
+                                fname = fname.substr(0, fname.size() - 4);
+                            try
+                            {
+                                auto file = py::module::import(fname.c_str());
+                                if (py::hasattr(file, &quot;__plugins__&quot;) &amp;&amp; py::isinstance&lt;py::dict&gt;(file.attr(&quot;__plugins__&quot;)))
+                                {
+                                    py::dict plugins = file.attr(&quot;__plugins__&quot;);
+                                    for (auto &amp;&amp;plug : plugins)
+                                    {
+
+                                        std::string plug_name = plug.first.cast&lt;std::string&gt;();
+                                        py::handle plug_class = plug.second;
+                                        if (python_plugin_map[type].find(plug_name) == python_plugin_map[type].end())
+                                        {
+                                            PyPlugin_Details detail;
+                                            detail.plugin_name = plug_name;
+                                            detail.package = fname;
+                                            detail.type = type;
+                                            detail.loc = path;
+
+                                            try
+                                            {
+                                                if (py::hasattr(plug_class, &quot;run&quot;) &amp;&amp; py::isinstance&lt;py::function&gt;(plug_class.attr(&quot;run&quot;)))
+                                                {
+                                                    auto run = plug_class.attr(&quot;run&quot;);
+                                                    if (py::hasattr(run, &quot;__doc__&quot;) &amp;&amp; py::isinstance&lt;py::str&gt;(run.attr(&quot;__doc__&quot;)))
+                                                    {
+                                                        detail.run_doc = run.attr(&quot;__doc__&quot;).cast&lt;std::string&gt;();
+                                                    }
+                                                }
+                                                else
+                                                {
+                                                    detail.status = &quot;\&quot;run\&quot; not defined&quot;;
+                                                }
+
+                                                if (py::hasattr(plug_class, &quot;__init__&quot;) &amp;&amp; py::isinstance&lt;py::function&gt;(plug_class.attr(&quot;__init__&quot;)))
+                                                {
+                                                    auto init = plug_class.attr(&quot;__init__&quot;);
+                                                    if (py::hasattr(init, &quot;__doc__&quot;)&amp;&amp; py::isinstance&lt;py::str&gt;(init.attr(&quot;__doc__&quot;)))
+                                                    {
+                                                        detail.init_doc = init.attr(&quot;__doc__&quot;).cast&lt;std::string&gt;();
+                                                    }
+                                                }
+                                                else
+                                                {
+                                                    detail.status = &quot;\&quot;__init__\&quot; not defined&quot;;
+                                                }
+
+                                                if (py::hasattr(file, &quot;__error__&quot;))
+                                                {
+                                                    if (py::isinstance&lt;py::str&gt;(file.attr(&quot;__error__&quot;)))
+                                                        detail.status = file.attr(&quot;__error__&quot;).cast&lt;std::string&gt;();
+                                                    else
+                                                        detail.status = &quot;error thrown&quot;;
+                                                }
+
+                                                if (py::hasattr(plug_class, &quot;__version__&quot;) &amp;&amp; py::isinstance&lt;py::str&gt;(plug_class.attr(&quot;__version__&quot;)))
+                                                {
+                                                    detail.version = plug_class.attr(&quot;__version__&quot;).cast&lt;std::string&gt;();
+                                                }
+
+                                                if (py::hasattr(plug_class, &quot;__doc__&quot;)&amp;&amp; py::isinstance&lt;py::str&gt;(plug_class.attr(&quot;__doc__&quot;)))
+                                                {
+                                                    detail.class_doc = plug_class.attr(&quot;__doc__&quot;).cast&lt;std::string&gt;();
+                                                }
+                                            }
+                                            catch(std::exception &amp;ex)
+                                            {
+                                                detail.status = &quot;plugin not loaded&quot;;
+                                                detail.error = ex.what();
+                                            }
+
+                                            python_plugin_map[type][plug_name] = detail;
+                                            //detail.debug();
+                                        }
+                                        else
+                                        {
+                                            scan_warn &lt;&lt; &quot;PYthon plugin \&quot;&quot; &lt;&lt; plug_name &lt;&lt; &quot;\&quot; of type \&quot;&quot; &lt;&lt; type &lt;&lt; &quot;\&quot; has multiple definitions.  Ignoring all but one.&quot; &lt;&lt; scan_end;
+                                        }
+                                    }
+                                }
+                            }
+                            catch (std::exception &amp;ex)
+                            {
+                                if (fname != &quot;utils&quot;)
+                                    scan_warn &lt;&lt; &quot;\&quot;&quot; &lt;&lt; fname &lt;&lt; &quot;\&quot; was not loaded: &quot; &lt;&lt; ex.what() &lt;&lt; scan_end;
+                            }
+
+                        }
+                    }
+
+                    sys_list.attr(&quot;pop&quot;)();
+                    }
+                if (guard != nullptr)
+                {
+                    delete guard;
+                }
+            }
+
+            PyPlugin_Details &amp;Plugin_Loader::find_python_plugin(const std::string &amp;type, const std::string &amp;plugin)
+            {
+                std::map&lt;std::string, std::map&lt;std::string, PyPlugin_Details&gt;&gt;::iterator find;
+                std::map&lt;std::string, PyPlugin_Details&gt;::iterator find2;
+
+                if (((find = python_plugin_map.find(type)) != python_plugin_map.end()) &amp;&amp;
+                    ((find2 = find-&gt;second.find(plugin)) != find-&gt;second.end()))
+                {
+                    return find2-&gt;second;
+                }
+                else
+                {
+                    scan_err &lt;&lt; &quot;Plugin \&quot;&quot; &lt;&lt; plugin &lt;&lt; &quot;\&quot; of type \&quot;&quot; &lt;&lt; type &lt;&lt; &quot;\&quot; is not found.&quot; &lt;&lt; scan_end;
+                    return find2-&gt;second;
+                }
+            }
+
+            PyPlugin_Details &amp;pluginInfo::load_python_plugin(const std::string &amp;type, const std::string &amp;plugin)
+            {
+                return plugins.find_python_plugin(type, plugin);
+            }
+
+            inline std::string print_plugins(std::map&lt;std::string, std::map&lt;std::string, std::vector&lt;Plugin_Details&gt;&gt;&gt;::const_iterator plugins,
+                                             const std::map&lt; std::string, std::map&lt;std::string, PyPlugin_Details&gt;&gt; &amp;pyplugins)
+            {
+                table_formatter table(plugins-&gt;first + &quot; PLUGINS&quot;, &quot;VERSION&quot;, &quot;STATUS&quot;);
+                table.capitalize_title();
+                table.padding(1);
+
+                std::map&lt;std::string, std::vector&lt;std::pair&lt;std::string, std::string&gt;&gt;&gt; temp;
+
+                for (auto it = plugins-&gt;second.begin(); it != plugins-&gt;second.end(); ++it)
+                {
+                    for (auto jt = it-&gt;second.begin(); jt != it-&gt;second.end(); ++jt)
+                    {
+                        temp[it-&gt;first].emplace_back(jt-&gt;version, jt-&gt;status);
+                    }
+                }
+
+                if (pyplugins.find(plugins-&gt;first) != pyplugins.end())
+                    for (auto &amp;&amp;elem : pyplugins.at(plugins-&gt;first))
+                    {
+                        temp[elem.first].emplace_back(elem.second.version, elem.second.status);
+                    }
+
+                for (auto&amp;&amp; elem : temp)
+                {
+                    for (auto it = elem.second.begin(); it != elem.second.end(); ++it)
+                    {
+                        if (it == elem.second.begin())
+                            table &lt;&lt; elem.first;
+                        else
+                            table &lt;&lt; &quot;&quot;;
+                        table &lt;&lt; it-&gt;first;
+                        if (it-&gt;second == &quot;ok&quot;)
+                            table.green() &lt;&lt; it-&gt;second;
+                        else
+                            table.red() &lt;&lt; it-&gt;second;
+                    }
+                }
+
+                return table.str();
+            }
+        #endif
+
+            /*************************************************/
+            /************** END PYTHON STUFF *****************/
+            /*************************************************/
+
             inline std::string print_plugins(std::map&lt; std::string, std::map&lt;std::string, std::vector&lt;Plugin_Details&gt; &gt; &gt;::const_iterator plugins)
             {
                 table_formatter table(plugins-&gt;first + &quot; PLUGINS&quot;, &quot;VERSION&quot;, &quot;STATUS&quot;);
                 table.capitalize_title();
                 table.padding(1);
+
+                std::map&lt;std::string, std::vector&lt;std::pair&lt;std::string, std::string&gt;&gt;&gt; temp;
 
                 for (auto it = plugins-&gt;second.begin(); it != plugins-&gt;second.end(); ++it)
                 {
@@ -85,7 +355,7 @@ namespace Gambit
                 return table.str();
             }
 
-            Plugin_Loader::Plugin_Loader() : path(GAMBIT_DIR &quot;/ScannerBit/lib/&quot;)
+            Plugin_Loader::Plugin_Loader() : path(GAMBIT_DIR &quot;/ScannerBit/lib/&quot;)//, python_plugin_map(pyplugin_info())
             {
                 std::string p_str;
                 std::ifstream lib_list(path + &quot;plugin_libraries.list&quot;);
@@ -111,6 +381,7 @@ namespace Gambit
                 {
                     scan_err &lt;&lt; &quot;Cannot open ./ScannerBit/lib/plugin_libraries.list&quot; &lt;&lt; scan_end;
                 }
+
             }
 
             /// Check a plugin map and return a flag indicating if a candidate plugin is already in the map or not.
@@ -252,6 +523,9 @@ namespace Gambit
             std::vector&lt;std::string&gt; Plugin_Loader::print_plugin_names(const std::string &amp;plug_type) const
             {
                 std::vector&lt;std::string&gt; vec;
+            #ifdef HAVE_PYBIND11
+                plugin_info.load_python_plugins();
+            #endif
 
                 if (plug_type != &quot;&quot;)
                 {
@@ -266,6 +540,12 @@ namespace Gambit
                         {
                             vec.push_back(it-&gt;first);
                         }
+
+                    #ifdef HAVE_PYBIND11
+                        if (python_plugin_map.find(plug_type) != python_plugin_map.end())
+                            for (auto &amp;&amp;elem : python_plugin_map.at(plug_type))
+                                vec.push_back(elem.first);
+                    #endif
                     }
                 }
                 else
@@ -276,6 +556,12 @@ namespace Gambit
                         {
                             vec.push_back(it2-&gt;first);
                         }
+
+                    #ifdef HAVE_PYBIND11
+                        if (python_plugin_map.find(it-&gt;first) != python_plugin_map.end())
+                            for (auto &amp;&amp;elem : python_plugin_map.at(it-&gt;first))
+                                vec.push_back(elem.first);
+                    #endif
                     }
                 }
 
@@ -371,6 +657,10 @@ namespace Gambit
 
             std::string Plugin_Loader::print_all(const std::string &amp;plug_type) const
             {
+            #ifdef HAVE_PYBIND11
+                plugin_info.load_python_plugins();
+            #endif
+
                 if (plug_type != &quot;&quot;)
                 {
                     auto plugins = total_plugin_map.find(plug_type);
@@ -380,15 +670,26 @@ namespace Gambit
                     }
                     else
                     {
+                    #ifdef HAVE_PYBIND11
+                        return print_plugins(plugins, python_plugin_map);
+                    #else
                         return print_plugins(plugins);
+                    #endif
                     }
                 }
                 else
                 {
+                    std::string ret = &quot;&quot;;
                     for (auto it = total_plugin_map.begin(), end = total_plugin_map.end(); it != end; it++)
                     {
-                        return print_plugins(it);
+                    #ifdef HAVE_PYBIND11
+                        ret += print_plugins(it, python_plugin_map);
+                    #else
+                        ret += print_plugins(it);
+                    #endif
                     }
+
+                    return ret;
                 }
 
                 return &quot;&quot;;
@@ -408,7 +709,7 @@ namespace Gambit
             {
                 std::unordered_map&lt;std::string, std::vector&lt;const Scanner::Plugins::Plugin_Details*&gt;&gt; vec;
                 std::stringstream output;
-                
+
                 for (auto it_map = getPluginsMap().begin(), end = getPluginsMap().end(); it_map!= end; it_map++)
                 {
                     auto it = it_map-&gt;second.find(name);
@@ -423,7 +724,7 @@ namespace Gambit
 
                 if (vec.size() == 0)
                 {
-                    return &quot;&quot;;
+                    return &quot;&quot;; //NOTE: Need to add python scanners here.
                 }
                 else
                 {
@@ -439,10 +740,25 @@ namespace Gambit
             std::string Plugin_Loader::print_plugin(const std::string &amp;type, const std::string &amp;plugin) const
             {
                 std::vector&lt;const Scanner::Plugins::Plugin_Details *&gt; vec;
-
                 if((getPluginsMap().find(type) == getPluginsMap().end()) || (getPluginsMap().at(type).find(plugin) == getPluginsMap().at(type).end()))
                 {
+                #ifdef HAVE_PYBIND11
+                    plugin_info.load_python_plugins();
+                    std::map&lt;std::string, std::map&lt;std::string, PyPlugin_Details&gt;&gt;::const_iterator find;
+                    std::map&lt;std::string, PyPlugin_Details&gt;::const_iterator find2;
+
+                    if (((find = python_plugin_map.find(type)) != python_plugin_map.end()) &amp;&amp;
+                        ((find2 = find-&gt;second.find(plugin)) != find-&gt;second.end()))
+                    {
+                        return find2-&gt;second.print();
+                    }
+                    else
+                    {
+                        return &quot;&quot;;
+                    }
+                #else
                     return &quot;&quot;;
+                #endif
                 }
 
                 for (auto it = getPluginsMap().at(type).at(plugin).begin(), end = getPluginsMap().at(type).at(plugin).end(); it != end; it++)
@@ -488,13 +804,17 @@ namespace Gambit
                 return 0;
             }
 
-            Plugin_Details &amp;Plugin_Loader::find (const std::string &amp;type, const std::string &amp;plugin, const std::string &amp;version, const std::string &amp;lib) const
+            Plugin_Details &amp;Plugin_Loader::find (const std::string &amp;type, std::string plugin, const std::string &amp;version, const std::string &amp;lib) const
             {
                 std::vector&lt;Plugin_Details_Ref&gt; plugins;
 
                 if((plugin_map.find(type) == plugin_map.end()) || (plugin_map.at(type).find(plugin) == plugin_map.at(type).end()))
                 {
+                #ifdef HAVE_PYBIND11
+                    plugin = &quot;python&quot;;
+                #else
                     scan_err &lt;&lt; &quot;There is no plugin named \&quot;&quot; &lt;&lt; plugin &lt;&lt;&quot;\&quot; of type \&quot;&quot; &lt;&lt; type &lt;&lt; &quot;\&quot;&quot; &lt;&lt; scan_end;
+                #endif
                 }
 
                 for (auto it = plugin_map.at(type).at(plugin).begin(), end = plugin_map.at(type).at(plugin).end(); it != end; it++)
@@ -720,7 +1040,7 @@ namespace Gambit
         }
     }
 }
-</code></pre><hr><p>Updated on 2024-05-31 at 15:12:05 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.c74020190c99936c745557be58fe8dd9b9fd92bf421fd77d5a107b28ee8a3ea3942a6fa76f67dd3a59aed0c588aa70f46a1df119d437dd747f0fa2a382b63b00.js integrity="sha512-x0AgGQyZk2x0VVe+WP6N2bn9kr9CH9d9WhB7KO6KPqOUKm+nb2fdOlmu0MWIqnD0ah3xGdQ33XR/D6KjgrY7AA==" crossorigin=anonymous defer></script>
+</code></pre><hr><p>Updated on 2024-07-18 at 13:53:33 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.c74020190c99936c745557be58fe8dd9b9fd92bf421fd77d5a107b28ee8a3ea3942a6fa76f67dd3a59aed0c588aa70f46a1df119d437dd747f0fa2a382b63b00.js integrity="sha512-x0AgGQyZk2x0VVe+WP6N2bn9kr9CH9d9WhB7KO6KPqOUKm+nb2fdOlmu0MWIqnD0ah3xGdQ33XR/D6KjgrY7AA==" crossorigin=anonymous defer></script>
 <script src=/js/highlight.min.36e95e9e3e9384ff10cda4162dfcde8cfce8605a647f8c3bedf1fb1df3913fcb34d67131872a03ccb60136dbf78ae205f8f9045750bf34ffb6f7a5bd84afa22a.js integrity="sha512-Nulenj6ThP8QzaQWLfzejPzoYFpkf4w77fH7HfORP8s01nExhyoDzLYBNtv3iuIF+PkEV1C/NP+296W9hK+iKg==" crossorigin=anonymous defer></script>
 <script src=/main.min.ef065bd7f2223ce7e096aef9a8c0dfcfdcb001015039b928682364daf09b21a1eb04a2bfb924dd166d991a963a384fc5567ef1f76e45bb565adc281fc0850e9d.js integrity="sha512-7wZb1/IiPOfglq75qMDfz9ywAQFQObkoaCNk2vCbIaHrBKK/uSTdFm2ZGpY6OE/FVn7x925Fu1Za3CgfwIUOnQ==" crossorigin=anonymous defer></script>
-<script src=https://gambitbsm.org/index.min.139166b12e5a2c6be8acfb60c970ee81197df23fb96abeb071c637f933d63ec984e96503dfa66e36f763c48e52346fd5bc8fd0b0747e0f724b49307848006c63.js integrity="sha512-E5FmsS5aLGvorPtgyXDugRl98j+5ar6wccY3+TPWPsmE6WUD36ZuNvdjxI5SNG/VvI/QsHR+D3JLSTB4SABsYw==" crossorigin=anonymous defer></script></body></html>
+<script src=https://gambitbsm.org/index.min.97f8c8f07457a5e9587386388f9ce0ee9fc13cde3f70402fbda69bb3fc331288a5c81cf70b523e0453a1360ce190ccde2a8a807c1042275f4ab5910ece4386ba.js integrity="sha512-l/jI8HRXpelYc4Y4j5zg7p/BPN4/cEAvvaabs/wzEoilyBz3C1I+BFOhNgzhkMzeKoqAfBBCJ19KtZEOzkOGug==" crossorigin=anonymous defer></script></body></html>

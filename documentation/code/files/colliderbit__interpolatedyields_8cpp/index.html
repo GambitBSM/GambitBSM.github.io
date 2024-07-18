@@ -11,7 +11,7 @@ Tutorials</button><div class=collapse id=section-tutorials><ul class="btn-toggle
 Help</button><div class=collapse id=section-help><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/help/common_problems_and_questions/>Common Problems and Questions</a></li><li><a class="docs-link rounded" href=/documentation/help/compiler_matrix/>Compiler Matrix</a></li><li><a class="docs-link rounded" href=/documentation/help/known_issues/>Known Issues</a></li><li><a class="docs-link rounded" href=/documentation/help/configuration_examples/>Configuration Examples</a></li><li><a class="docs-link rounded" href=/documentation/help/support/>Support</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-code aria-expanded=false>
 Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/code/index_classes/>Classes</a></li><li><a class="docs-link rounded" href=/documentation/code/index_files/>Files</a></li><li><a class="docs-link rounded" href=/documentation/code/index_pages/>Pages</a></li><li><a class="docs-link rounded" href=/documentation/code/index_namespaces/>Namespaces</a></li></ul></div></li></ul></nav></div><nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation"><div class=d-xl-none><button class="btn btn-outline-primary btn-sm doks-toc-toggle collapsed" type=button data-bs-toggle=collapse data-bs-target=#onThisPage aria-controls=doks-docs-nav aria-expanded=false aria-label="Toggle On this page navigation">
 <span>On this page</span>
-<span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg></span></button><div class=collapse id=onThisPage><div class="card card-body mt-3 py-1"><div class=page-links><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#classes>Classes</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#source-code>Source code</a></li></ul></nav></div></div></div></div><div class="page-links d-none d-xl-block"><h3>On this page</h3><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#classes>Classes</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#source-code>Source code</a></li></ul></nav></div></nav><main class="docs-content col-lg-11 col-xl-9 mx-xl-auto"><nav aria-label=breadcrumb><ol class=breadcrumb><li class=breadcrumb-item><a href=/>Home</a></li><li class=breadcrumb-item><a href=/documentation/>Documentation</a></li><li class=breadcrumb-item><a href=/documentation/code/>Code Reference</a></li><li class="breadcrumb-item active" aria-current=page>file src/ColliderBit_InterpolatedYields.cpp</li></ol></nav><p class=lead></p><h1 id=file-src-colliderbit-interpolatedyields-cpp>file src/ColliderBit_InterpolatedYields.cpp <a href=#file-src-colliderbit-interpolatedyields-cpp class=anchor aria-hidden=true>#</a></h1><p>[No description available] <a href=#detailed-description>More&mldr;</a></p><h2 id=namespaces>Namespaces <a href=#namespaces class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th>Name</th></tr></thead><tbody><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit/>Gambit</a></strong><br>TODO: see if we can use this one:</td></tr><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit_1_1colliderbit/>Gambit::ColliderBit</a></strong></td></tr></tbody></table><h2 id=classes>Classes <a href=#classes class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th></th><th>Name</th></tr></thead><tbody><tr><td>class</td><td><strong><a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1model__analysis__info/>Gambit::ColliderBit::Model_analysis_info</a></strong></td></tr><tr><td>struct</td><td><strong><a href=/documentation/code/classes/structgambit_1_1colliderbit_1_1__gsl__target__func__params/>Gambit::ColliderBit::_gsl_target_func_params</a></strong><br>A struct to contain parameters for the GSL optimiser target function.</td></tr><tr><td>class</td><td><strong><a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1dijet__analysis__info/>Gambit::ColliderBit::Dijet_analysis_info</a></strong><br>A class to hold analysis information for DiJets (specific to DMsimp models)</td></tr></tbody></table><h2 id=detailed-description>Detailed Description <a href=#detailed-description class=anchor aria-hidden=true>#</a></h2><p><strong>Author</strong>:</p><ul><li>Martin White (<a href=mailto:martin.white@adelaide.edu.au>martin.white@adelaide.edu.au</a>)</li><li>Andre Scaffidi (<a href=mailto:andre.scaffidi@adelaide.edu.au>andre.scaffidi@adelaide.edu.au</a>)</li><li>Tomas Gonzalo (<a href=mailto:gonzalo@physik.rwth-aachen.de>gonzalo@physik.rwth-aachen.de</a>)</li><li>Anders Kvellestad (<a href=mailto:anders.kvellestad@fys.uio.no>anders.kvellestad@fys.uio.no</a>)</li><li>Chris Chang (<a href=mailto:christopher.chang@uq.net.au>christopher.chang@uq.net.au</a>)</li></ul><p><strong>Date</strong>:</p><ul><li>2019 Aug</li><li>2021 Apr</li><li>2021 May</li><li>2022 June</li></ul><p>Functions for LHC analyses that use tabulated interpolations rather than direct MC simulation. For now this functionality is specific to the DMEFT and DMsimp models, but it will be turned into a general feature in ColliderBit.</p><hr><p>Authors (add name and date if you modify):</p><p>Analyses based on: arxiv:1711.03301 and <a href=https://journals.aps.org/prd/abstract/10.1103/PhysRevD.97.092005>https://journals.aps.org/prd/abstract/10.1103/PhysRevD.97.092005</a> 139invfb analysis based on arXiv:2102.10874</p><hr><h2 id=source-code>Source code <a href=#source-code class=anchor aria-hidden=true>#</a></h2><pre><code>//   GAMBIT: Global and Modular BSM Inference Tool
+<span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg></span></button><div class=collapse id=onThisPage><div class="card card-body mt-3 py-1"><div class=page-links><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#classes>Classes</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#source-code>Source code</a></li></ul></nav></div></div></div></div><div class="page-links d-none d-xl-block"><h3>On this page</h3><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#classes>Classes</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#source-code>Source code</a></li></ul></nav></div></nav><main class="docs-content col-lg-11 col-xl-9 mx-xl-auto"><nav aria-label=breadcrumb><ol class=breadcrumb><li class=breadcrumb-item><a href=/>Home</a></li><li class=breadcrumb-item><a href=/documentation/>Documentation</a></li><li class=breadcrumb-item><a href=/documentation/code/>Code Reference</a></li><li class="breadcrumb-item active" aria-current=page>file src/ColliderBit_InterpolatedYields.cpp</li></ol></nav><p class=lead></p><h1 id=file-src-colliderbit-interpolatedyields-cpp>file src/ColliderBit_InterpolatedYields.cpp <a href=#file-src-colliderbit-interpolatedyields-cpp class=anchor aria-hidden=true>#</a></h1><p>[No description available] <a href=#detailed-description>More&mldr;</a></p><h2 id=namespaces>Namespaces <a href=#namespaces class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th>Name</th></tr></thead><tbody><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit/>Gambit</a></strong><br>TODO: see if we can use this one:</td></tr><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit_1_1colliderbit/>Gambit::ColliderBit</a></strong></td></tr></tbody></table><h2 id=classes>Classes <a href=#classes class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th></th><th>Name</th></tr></thead><tbody><tr><td>class</td><td><strong><a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1model__analysis__info/>Gambit::ColliderBit::Model_analysis_info</a></strong></td></tr><tr><td>struct</td><td><strong><a href=/documentation/code/classes/structgambit_1_1colliderbit_1_1__gsl__target__func__params/>Gambit::ColliderBit::_gsl_target_func_params</a></strong><br>A struct to contain parameters for the GSL optimiser target function.</td></tr><tr><td>class</td><td><strong><a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1dijet__analysis__info/>Gambit::ColliderBit::Dijet_analysis_info</a></strong><br>A class to hold analysis information for DiJets (specific to DMsimp models)</td></tr></tbody></table><h2 id=detailed-description>Detailed Description <a href=#detailed-description class=anchor aria-hidden=true>#</a></h2><p><strong>Author</strong>:</p><ul><li>Martin White (<a href=mailto:martin.white@adelaide.edu.au>martin.white@adelaide.edu.au</a>)</li><li>Andre Scaffidi (<a href=mailto:andre.scaffidi@adelaide.edu.au>andre.scaffidi@adelaide.edu.au</a>)</li><li>Tomas Gonzalo (<a href=mailto:tomas.gonzalo@kit.edu>tomas.gonzalo@kit.edu</a>)</li><li>Anders Kvellestad (<a href=mailto:anders.kvellestad@fys.uio.no>anders.kvellestad@fys.uio.no</a>)</li><li>Chris Chang (<a href=mailto:christopher.chang@uq.net.au>christopher.chang@uq.net.au</a>)</li><li>Taylor R. Gray (<a href=mailto:gray@chalmers.se>gray@chalmers.se</a>)</li></ul><p><strong>Date</strong>:</p><ul><li>2019 Aug</li><li>2021 Apr, 2023 Nov</li><li>2021 May</li><li>2022 June</li><li>2023 Oct</li></ul><p>Functions for LHC analyses that use tabulated interpolations rather than direct MC simulation. For now this functionality is specific to the DMEFT and DMsimp models, but it will be turned into a general feature in ColliderBit.</p><hr><p>Authors (add name and date if you modify):</p><p>Analyses based on: arxiv:1711.03301 and <a href=https://journals.aps.org/prd/abstract/10.1103/PhysRevD.97.092005>https://journals.aps.org/prd/abstract/10.1103/PhysRevD.97.092005</a> 139invfb analysis based on arXiv:2102.10874</p><p>BEAMDUMP analyses based on: arXiv:1609.01770, arXiv:2307.02404, arXiv:1107.4580, arXiv:1807.06137</p><hr><h2 id=source-code>Source code <a href=#source-code class=anchor aria-hidden=true>#</a></h2><pre><code>//   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
 ///  \file
 ///
@@ -32,8 +32,8 @@ Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle
 ///  \date 2019 Aug
 ///
 ///  \author Tomas Gonzalo
-///          (gonzalo@physik.rwth-aachen.de)
-///  \date 2021 Apr
+///          (tomas.gonzalo@kit.edu)
+///  \date 2021 Apr, 2023 Nov
 ///
 ///  \author Anders Kvellestad
 ///          (anders.kvellestad@fys.uio.no)
@@ -43,8 +43,15 @@ Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle
 ///          (christopher.chang@uq.net.au)
 ///  \date 2022 June
 ///
+///  \author Taylor R. Gray
+///          (gray@chalmers.se)
+///  \date 2023 Oct
+///
 ///  Analyses based on: arxiv:1711.03301 and https://journals.aps.org/prd/abstract/10.1103/PhysRevD.97.092005
 ///  139invfb analysis based on arXiv:2102.10874
+///
+///  BEAMDUMP analyses based on:
+///     arXiv:1609.01770, arXiv:2307.02404, arXiv:1107.4580, arXiv:1807.06137
 ///
 ///  *********************************************
 
@@ -171,23 +178,51 @@ namespace Gambit
 
         }
 
+        bool has_interp1d(str name) const
+        {
+          return interp1d.find(name) != interp1d.end();
+        }
+
         const Utils::interp1d_gsl_collection&amp; get_interp1d(str name) const
         {
+          if(not has_interp1d(name))
+            ColliderBit_error().raise(LOCAL_INFO, &quot;ERROR! Interpolator does not have a 1d collection&quot;);
           return *interp1d.at(name);
+        }
+
+        bool has_interp2d(str name) const
+        {
+          return interp2d.find(name) != interp2d.end();
         }
 
         const Utils::interp2d_gsl_collection&amp; get_interp2d(str name) const
         {
+          if(not has_interp2d(name))
+            ColliderBit_error().raise(LOCAL_INFO, &quot;ERROR! Interpolator does not have a 2d collection&quot;);
           return *interp2d.at(name);
+        }
+
+        bool has_interp4d(str name) const
+        {
+          return interp4d.find(name) != interp4d.end();
         }
 
         Utils::interp4d_collection&amp; get_interp4d(str name) const
         {
+          if(not has_interp4d(name))
+            ColliderBit_error().raise(LOCAL_INFO, &quot;ERROR! Interpolator does not have a 4d collection&quot;);
           return *interp4d.at(name);
+        }
+
+        bool has_interp5d(str name) const
+        {
+          return interp5d.find(name) != interp5d.end();
         }
 
         Utils::interp5d_collection&amp; get_interp5d(str name) const
         {
+          if(not has_interp5d(name))
+            ColliderBit_error().raise(LOCAL_INFO, &quot;ERROR! Interpolator does not have a 5d collection&quot;);
           return *interp5d.at(name);
         }
 
@@ -221,10 +256,23 @@ namespace Gambit
     /// Forward declarations of functions in this file
     void DMEFT_fill_analysis_info_map();
     void DMsimp_fill_analysis_info_map(std::map&lt;str,str&gt;, std::map&lt;str,std::vector&lt;str&gt;&gt;, int);
+    void SubGeVDM_fill_analysis_info_map(std::map&lt;str,str&gt;, std::map&lt;str,std::vector&lt;str&gt;&gt;);
 
     void DMEFT_results(AnalysisDataPointers&amp;);
     void DMEFT_results_profiled(AnalysisDataPointers&amp;);
     void DMEFT_results_cutoff(AnalysisDataPointers&amp;);
+    void DMsimpVectorMedScalarDM_monojet_results(AnalysisDataPointers&amp;);
+    void DMsimpVectorMedMajoranaDM_monojet_results(AnalysisDataPointers&amp;);
+    void DMsimpVectorMedDiracDM_monojet_results(AnalysisDataPointers&amp;);
+    void SubGeVDM_results(AnalysisDataPointers&amp;);
+
+    void get_DMEFT_signal_yields_dim6_operator(std::vector&lt;double&gt;&amp;, const str, const Model_analysis_info&amp;, double, double, double, double);
+    void get_DMEFT_signal_yields_dim7_operator(std::vector&lt;double&gt;&amp;, const str, const Model_analysis_info&amp;, double, double, double);
+    void get_DMsimpVectorMedScalarDM_signal_yields(std::vector&lt;double&gt;&amp;, const Model_analysis_info&amp;, double, double, double, double);
+    void get_DMsimpVectorMedMajoranaDM_signal_yields(std::vector&lt;double&gt;&amp;, const Model_analysis_info&amp;, double, double, double, double);
+    void get_DMsimpVectorMedDiracDM_signal_yields(std::vector&lt;double&gt;&amp;, const Model_analysis_info&amp;, double, double, double, double, double);
+    void get_SubGeVDM_scalar_signal_yields(std::vector&lt;double&gt;&amp;, const Model_analysis_info&amp;, double, double, double, double);
+    void get_SubGeVDM_fermion_signal_yields(std::vector&lt;double&gt;&amp;, const Model_analysis_info&amp;, double, double, double, double);
 
     void get_DMEFT_signal_yields_dim6_operator(std::vector&lt;double&gt;&amp;, const str, const Model_analysis_info&amp;, double, double, double, double);
     void get_DMEFT_signal_yields_dim7_operator(std::vector&lt;double&gt;&amp;, const str, const Model_analysis_info&amp;, double, double, double);
@@ -235,6 +283,8 @@ namespace Gambit
 
     void get_all_DMEFT_signal_yields(std::vector&lt;double&gt;&amp;, const Model_analysis_info&amp;, const Spectrum&amp;);
     void get_all_DMsimp_signal_yields(std::vector&lt;double&gt;&amp;, const Model_analysis_info&amp;, const Spectrum&amp;, str&amp;);
+    void get_all_SubGeVDM_signal_yields(std::vector&lt;double&gt;&amp;, const Model_analysis_info&amp;, const Spectrum&amp;, str&amp;);
+
 
     void signal_modifier_function(AnalysisData&amp;, double, double);
     void signal_cutoff_function(AnalysisData&amp;, double);
@@ -244,6 +294,7 @@ namespace Gambit
     void calc_DMEFT_profiled_LHC_nuisance_params(map_str_dbl&amp;);
 
     void InterpolatedMCInfo(MCLoopInfo&amp;);
+
 
     // =========== Functions ===========
 
@@ -442,6 +493,81 @@ namespace Gambit
         current_ainfo-&gt;add_bkgcov(bkgcov);
 
       }
+
+      ////////////////////////////////////////////
+      /// NEW BEAM DUMP content added by Taylor
+      // New analysis: SubGeVBeamDump_MB_interpolated
+      ////////////////////////////////////////////
+
+      if (current_analysis_name == &quot;SubGeVBeamDump_MBe_interpolated&quot;) // MiniBooNE electron limits
+      {
+        // Create an entry in the global analysis_info_map and point the reference current_ainfo to it
+        analysis_info_map[current_analysis_name] = Model_analysis_info();
+        current_ainfo = &amp;(analysis_info_map[current_analysis_name]);
+
+        current_ainfo-&gt;name = current_analysis_name;
+
+        current_ainfo-&gt;obsnum = {0};
+        current_ainfo-&gt;bkgnum = {0.0};
+        current_ainfo-&gt;bkgerr = {0.0};
+
+        assert(current_ainfo-&gt;obsnum.size() == current_ainfo-&gt;bkgnum.size());
+        assert(current_ainfo-&gt;obsnum.size() == current_ainfo-&gt;bkgerr.size());
+        current_ainfo-&gt;n_signal_regions = current_ainfo-&gt;obsnum.size();
+      }
+
+      if (current_analysis_name == &quot;SubGeVBeamDump_MBN_interpolated&quot;) // MiniBooNE nucleon limits
+      {
+        // Create an entry in the global analysis_info_map and point the reference current_ainfo to it
+        analysis_info_map[current_analysis_name] = Model_analysis_info();
+        current_ainfo = &amp;(analysis_info_map[current_analysis_name]);
+
+        current_ainfo-&gt;name = current_analysis_name;
+
+        current_ainfo-&gt;obsnum = {0};
+        current_ainfo-&gt;bkgnum = {0.0};
+        current_ainfo-&gt;bkgerr = {0.0};
+
+        assert(current_ainfo-&gt;obsnum.size() == current_ainfo-&gt;bkgnum.size());
+        assert(current_ainfo-&gt;obsnum.size() == current_ainfo-&gt;bkgerr.size());
+        current_ainfo-&gt;n_signal_regions = current_ainfo-&gt;obsnum.size();
+      }
+
+      if (current_analysis_name == &quot;SubGeVBeamDump_LSND_interpolated&quot;) // LSND electron limits
+      {
+        // Create an entry in the global analysis_info_map and point the reference current_ainfo to it
+        analysis_info_map[current_analysis_name] = Model_analysis_info();
+        current_ainfo = &amp;(analysis_info_map[current_analysis_name]);
+
+        current_ainfo-&gt;name = current_analysis_name;
+
+        current_ainfo-&gt;obsnum = {242}; // not entirely sure about this number
+        current_ainfo-&gt;bkgnum = {229}; 
+        current_ainfo-&gt;bkgerr = {28};
+
+        assert(current_ainfo-&gt;obsnum.size() == current_ainfo-&gt;bkgnum.size());
+        assert(current_ainfo-&gt;obsnum.size() == current_ainfo-&gt;bkgerr.size());
+        current_ainfo-&gt;n_signal_regions = current_ainfo-&gt;obsnum.size();
+      }
+
+      if (current_analysis_name == &quot;SubGeVBeamDump_NA64_interpolated&quot;) // NA64 limits
+      {
+        // Create an entry in the global analysis_info_map and point the reference current_ainfo to it
+        analysis_info_map[current_analysis_name] = Model_analysis_info();
+        current_ainfo = &amp;(analysis_info_map[current_analysis_name]);
+
+        current_ainfo-&gt;name = current_analysis_name;
+
+        current_ainfo-&gt;obsnum = {0};
+        current_ainfo-&gt;bkgnum = {0.0};
+        current_ainfo-&gt;bkgerr = {0.0};
+
+        assert(current_ainfo-&gt;obsnum.size() == current_ainfo-&gt;bkgnum.size());
+        assert(current_ainfo-&gt;obsnum.size() == current_ainfo-&gt;bkgerr.size());
+        current_ainfo-&gt;n_signal_regions = current_ainfo-&gt;obsnum.size();
+      }
+
+
 
     }
 
@@ -1591,7 +1717,7 @@ namespace Gambit
         get_all_signal_yields(get_all_DMsimp_signal_yields, spec, analysis_data_map, result, modelname);
       }
 
-    };
+    }
 
 
     /// Fill the input vector with the total DMsimp signal prediction for each SR in the given LHC analysis
@@ -1899,8 +2025,9 @@ namespace Gambit
         first = false;
       }
 
-      double mMed;
-      double gq;
+      // Initialise to squash warning, these values will always be overwritten
+      double mMed = 0.0;
+      double gq = 0.0;
 
       // Pull Decay widths from CalcHEP
       DecayTable::Entry decays;
@@ -1933,6 +2060,10 @@ namespace Gambit
         mMed = spec.get(Par::Pole_Mass, &quot;Y1&quot;);
         gq   = spec.get(Par::dimensionless, &quot;gVq&quot;);
         decays = *Dep::Y1_decay_rates;
+      }
+      else
+      {
+        ColliderBit_error().raise(LOCAL_INFO, &quot;ERROR! ColliderBit_InterpolatedYields: Cannot use DMsimp Dijet likelihood for this model.&quot;);
       }
 
       double total_width = decays.width_in_GeV;
@@ -1969,11 +2100,367 @@ namespace Gambit
 
     }
 
+    //// NEW BEAM-DUMP Functions ////
+
+    /// A function for filling the analysis_info_map for the SubGeVDM_fermion and SubGeVDM_scalar models.
+    void SubGeVDM_fill_analysis_info_map(std::map&lt;str,str&gt; Analysis_data_path, std::map&lt;str,std::vector&lt;str&gt;&gt; Interpolation_columns)
+    {
+
+      std::vector&lt;str&gt; default_skip_analyses;  // The default is empty lists of analyses to skip
+      static const std::vector&lt;str&gt; skip_analyses = Pipes::calc_combined_LHC_LogLike::runOptions-&gt;getValueOrDef&lt;std::vector&lt;str&gt; &gt;(default_skip_analyses, &quot;skip_analyses&quot;);
+
+      // Helper variables
+      str current_analysis_name;
+      Model_analysis_info empty_analysis_info;
+      Model_analysis_info* current_ainfo;
+
+
+      // Analysis name
+      current_analysis_name = &quot;SubGeVBeamDump_MBe_interpolated&quot;;
+
+      if (std::find(skip_analyses.begin(), skip_analyses.end(), current_analysis_name) == skip_analyses.end())
+      {
+        if (not(Utils::file_exists(Analysis_data_path[current_analysis_name])))
+        {
+          ColliderBit_error().raise(LOCAL_INFO, &quot;ERROR! Cannot find interpolation data file: &quot; + Analysis_data_path[current_analysis_name]);
+        }
+
+        // Create an entry in the global analysis_info_map and point the reference current_ainfo to it
+        analysis_info_map[current_analysis_name] = Model_analysis_info();
+        current_ainfo = &amp;(analysis_info_map[current_analysis_name]);
+        fill_analysis_info_map(current_analysis_name, current_ainfo);
+        current_ainfo-&gt;add_interp2d(&quot;SubGeVBeamDump&quot;, Analysis_data_path[current_analysis_name], Interpolation_columns[current_analysis_name]);
+
+        current_ainfo = &amp;empty_analysis_info;
+      }
+
+      // Analysis name
+      current_analysis_name = &quot;SubGeVBeamDump_MBN_interpolated&quot;;
+
+      if (std::find(skip_analyses.begin(), skip_analyses.end(), current_analysis_name) == skip_analyses.end())
+      {
+        if (not(Utils::file_exists(Analysis_data_path[current_analysis_name])))
+        {
+          ColliderBit_error().raise(LOCAL_INFO, &quot;ERROR! Cannot find interpolation data file: &quot; + Analysis_data_path[current_analysis_name]);
+        }
+
+        // Create an entry in the global analysis_info_map and point the reference current_ainfo to it
+        analysis_info_map[current_analysis_name] = Model_analysis_info();
+        current_ainfo = &amp;(analysis_info_map[current_analysis_name]);
+        fill_analysis_info_map(current_analysis_name, current_ainfo);
+        current_ainfo-&gt;add_interp2d(&quot;SubGeVBeamDump&quot;, Analysis_data_path[current_analysis_name], Interpolation_columns[current_analysis_name]);
+
+        current_ainfo = &amp;empty_analysis_info;
+      }
+
+      // Analysis name
+      current_analysis_name = &quot;SubGeVBeamDump_LSND_interpolated&quot;;
+
+      if (std::find(skip_analyses.begin(), skip_analyses.end(), current_analysis_name) == skip_analyses.end())
+      {
+        if (not(Utils::file_exists(Analysis_data_path[current_analysis_name])))
+        {
+          ColliderBit_error().raise(LOCAL_INFO, &quot;ERROR! Cannot find interpolation data file: &quot; + Analysis_data_path[current_analysis_name]);
+        }
+
+        // Create an entry in the global analysis_info_map and point the reference current_ainfo to it
+        analysis_info_map[current_analysis_name] = Model_analysis_info();
+        current_ainfo = &amp;(analysis_info_map[current_analysis_name]);
+        fill_analysis_info_map(current_analysis_name, current_ainfo);
+        current_ainfo-&gt;add_interp2d(&quot;SubGeVBeamDump&quot;, Analysis_data_path[current_analysis_name], Interpolation_columns[current_analysis_name]);
+
+        current_ainfo = &amp;empty_analysis_info;
+      }
+
+      // Analysis name
+      current_analysis_name = &quot;SubGeVBeamDump_NA64_interpolated&quot;;
+
+      if (std::find(skip_analyses.begin(), skip_analyses.end(), current_analysis_name) == skip_analyses.end())
+      {
+        if (not(Utils::file_exists(Analysis_data_path[current_analysis_name])))
+        {
+          ColliderBit_error().raise(LOCAL_INFO, &quot;ERROR! Cannot find interpolation data file: &quot; + Analysis_data_path[current_analysis_name]);
+        }
+
+        // Create an entry in the global analysis_info_map and point the reference current_ainfo to it
+        analysis_info_map[current_analysis_name] = Model_analysis_info();
+        current_ainfo = &amp;(analysis_info_map[current_analysis_name]);
+        fill_analysis_info_map(current_analysis_name, current_ainfo);
+        current_ainfo-&gt;add_interp1d(&quot;SubGeVBeamDump&quot;, Analysis_data_path[current_analysis_name], Interpolation_columns[current_analysis_name]);
+
+        current_ainfo = &amp;empty_analysis_info;
+      }
+
+    }
+
+    /// Results for the SubGeVDM_fermion and SubGeVDM_scalar model
+    void SubGeVDM_results(AnalysisDataPointers&amp; result)
+    {
+      using namespace Pipes::SubGeVDM_results;
+
+      // Clear previous vectors, etc.
+      result.clear();
+
+      static bool first = true;
+
+      // We need thread_local AnalysisData instances. Let's collect them in a map.
+      thread_local std::map&lt;str,AnalysisData&gt; analysis_data_map;
+
+      // Store the locations of monojet interpolation data files to pass to DMsimp_fill_analysis_info_map
+      std::map&lt;str,str&gt; Analysis_data_path;
+      std::map&lt;str,std::vector&lt;str&gt;&gt; Interpolation_columns;
+
+      if(ModelInUse(&quot;SubGeVDM_scalar&quot;))
+      {
+        Analysis_data_path[&quot;SubGeVBeamDump_MBe_interpolated&quot;] = GAMBIT_DIR &quot;/ColliderBit/data/SubGeVDM/BeamDump/MB_electron_scalarDM_NEvents.txt&quot;;
+        Analysis_data_path[&quot;SubGeVBeamDump_MBN_interpolated&quot;] = GAMBIT_DIR &quot;/ColliderBit/data/SubGeVDM/BeamDump/MB_nucleon_scalarDM_NEvents.txt&quot;;
+        Analysis_data_path[&quot;SubGeVBeamDump_LSND_interpolated&quot;] = GAMBIT_DIR &quot;/ColliderBit/data/SubGeVDM/BeamDump/LSND_scalarDM_NEvents.txt&quot;;
+        Analysis_data_path[&quot;SubGeVBeamDump_NA64_interpolated&quot;] = GAMBIT_DIR &quot;/ColliderBit/data/SubGeVDM/BeamDump/NA64_2023.txt&quot;;
+
+        Interpolation_columns[&quot;SubGeVBeamDump_MBe_interpolated&quot;] = {&quot;mDM&quot;,&quot;mAp&quot;,&quot;signal_counts&quot;};
+        Interpolation_columns[&quot;SubGeVBeamDump_MBN_interpolated&quot;] = {&quot;mDM&quot;,&quot;mAp&quot;,&quot;signal_counts&quot;};
+        Interpolation_columns[&quot;SubGeVBeamDump_LSND_interpolated&quot;] = {&quot;mDM&quot;,&quot;mAp&quot;,&quot;signal_counts&quot;};
+        Interpolation_columns[&quot;SubGeVBeamDump_NA64_interpolated&quot;] = {&quot;mAp&quot;,&quot;epsilon&quot;};
+      }
+      else if(ModelInUse(&quot;SubGeVDM_fermion&quot;))
+      {
+        Analysis_data_path[&quot;SubGeVBeamDump_MBe_interpolated&quot;] = GAMBIT_DIR &quot;/ColliderBit/data/SubGeVDM/BeamDump/MB_electron_fermionDM_NEvents.txt&quot;;
+        Analysis_data_path[&quot;SubGeVBeamDump_MBN_interpolated&quot;] = GAMBIT_DIR &quot;/ColliderBit/data/SubGeVDM/BeamDump/MB_nucleon_fermionDM_NEvents.txt&quot;;
+        Analysis_data_path[&quot;SubGeVBeamDump_LSND_interpolated&quot;] = GAMBIT_DIR &quot;/ColliderBit/data/SubGeVDM/BeamDump/LSND_fermionDM_NEvents.txt&quot;;
+        Analysis_data_path[&quot;SubGeVBeamDump_NA64_interpolated&quot;] = GAMBIT_DIR &quot;/ColliderBit/data/SubGeVDM/BeamDump/NA64_2023.txt&quot;;
+
+        Interpolation_columns[&quot;SubGeVBeamDump_MBe_interpolated&quot;] = {&quot;mDM&quot;,&quot;mAp&quot;,&quot;signal_counts&quot;};
+        Interpolation_columns[&quot;SubGeVBeamDump_MBN_interpolated&quot;] = {&quot;mDM&quot;,&quot;mAp&quot;,&quot;signal_counts&quot;};
+        Interpolation_columns[&quot;SubGeVBeamDump_LSND_interpolated&quot;] = {&quot;mDM&quot;,&quot;mAp&quot;,&quot;signal_counts&quot;};
+        Interpolation_columns[&quot;SubGeVBeamDump_NA64_interpolated&quot;] = {&quot;mAp&quot;,&quot;epsilon&quot;};
+      }
+      else
+      {
+        ColliderBit_error().raise(LOCAL_INFO, &quot;ERROR! Model not known to GAMBIT&quot;);
+      }
+
+
+      // The first time this function is run we must initialize the global analysis_info_map
+      // and the thread_local analysis_data_map
+      if (first)
+      {
+        SubGeVDM_fill_analysis_info_map(Analysis_data_path,Interpolation_columns);
+
+        for (const std::pair&lt;const str, Model_analysis_info&gt;&amp; aname_ainfo_pair : analysis_info_map)
+        {
+          // Extract analysis name and use it to create an AnalysisData element in the analysis_data_map
+          str aname = aname_ainfo_pair.first;
+          analysis_data_map[aname] = AnalysisData(aname);
+        }
+
+        first = false;
+      }
+
+      // Retrieve the signal yields
+      const Spectrum&amp; spec = *Dep::SubGeVDM_spectrum;
+      str modelname;
+      if(ModelInUse(&quot;SubGeVDM_scalar&quot;))
+        modelname = &quot;SubGeVDM_scalar&quot;;
+      else if(ModelInUse(&quot;SubGeVDM_fermion&quot;))
+        modelname = &quot;SubGeVDM_fermion&quot;;
+      get_all_signal_yields(get_all_SubGeVDM_signal_yields, spec, analysis_data_map, result, modelname);
+
+    }
+
+    /// Fill the input vector with the total SubGeV signal prediction for each SR in the given analysis
+    void get_all_SubGeVDM_signal_yields(std::vector&lt;double&gt;&amp; sr_nums, const Model_analysis_info&amp; analysis_info, const Spectrum&amp; spec, str&amp; modelname)
+    {
+
+      // Get the yields
+      std::vector&lt;double&gt; signal(analysis_info.n_signal_regions, 0.);
+
+      // Get the parameters we need from the theory spectrum
+      if(modelname == &quot;SubGeVDM_scalar&quot;)
+      {
+        // TODO: If your model has more/less than 2 masses and 2 couplings, then the get_SubGeVBeamDump_MB_signal_yields function will need to be changed.
+        // TODO: Would need to change mass_i and coupling_i to the relevant parameters in your model
+        double mDM = spec.get(Par::Pole_Mass, &quot;DM&quot;);
+        double mAp = spec.get(Par::Pole_Mass, &quot;Ap&quot;);
+        double kappa = spec.get(Par::dimensionless, &quot;kappa&quot;);
+        double gDM = spec.get(Par::dimensionless, &quot;gDM&quot;);
+        get_SubGeVDM_scalar_signal_yields(signal, analysis_info, mDM, mAp, kappa, gDM);
+
+        double mApmdm_ratio = mAp/mDM;
+        if (mApmdm_ratio &lt;= 2.)
+          ColliderBit_error().raise(LOCAL_INFO, &quot;ERROR! mAp/mdm &lt;= 2., in off-shell regime&quot;); // beam dump yield will just return 0
+      }
+      else if(modelname == &quot;SubGeVDM_fermion&quot;)
+      {
+        double mDM = spec.get(Par::Pole_Mass, &quot;DM&quot;);
+        double mAp = spec.get(Par::Pole_Mass, &quot;Ap&quot;);
+        double kappa = spec.get(Par::dimensionless, &quot;kappa&quot;);
+        double gDM = spec.get(Par::dimensionless, &quot;gDM&quot;);
+        get_SubGeVDM_fermion_signal_yields(signal, analysis_info, mDM, mAp, kappa, gDM);
+
+        double mApmdm_ratio = mAp/mDM;
+        if (mApmdm_ratio &lt;= 2.)
+          ColliderBit_error().raise(LOCAL_INFO, &quot;ERROR! mAp/mdm &lt;= 2., in off-shell regime&quot;); // beam dump yield will just return 0
+      }
+      // Add yields and save in sr_num
+      for (size_t i = 0; i &lt; analysis_info.n_signal_regions; ++i)
+      {
+        sr_nums[i] = signal[i];
+      }
+    }
+
+    /// Fill the input vector with the signal prediction for the SubGeVBeamDump_MB model
+    /// TODO: If you apply some scaling based on couplings, then this is where you would want to do this
+    void get_SubGeVDM_scalar_signal_yields(std::vector&lt;double&gt;&amp; signal_yields, const Model_analysis_info&amp; analysis_info, double mDM, double mAp, double kappa, double gDM)
+    {
+      double signalcounts = 0.;
+
+      // SubGeVBeamDump contains both 1d and 2d interpolators, check which one this is
+      if(analysis_info.has_interp1d(&quot;SubGeVBeamDump&quot;))
+      {
+        // Get the interpolator collections for the given operator_key
+        const Utils::interp1d_gsl_collection&amp; eps_interp = analysis_info.get_interp1d(&quot;SubGeVBeamDump&quot;);
+
+        // If values are outside bounds give zero signal
+        if(eps_interp.is_inside_range(mAp))
+        {
+          // Compute the signal
+          // Note: The last entry in this function is the index of the column (minus the number of free params, i.e. 2)
+          double kappa_interp = eps_interp.eval(mAp, 0); // mAp and eps
+
+          double me = 0.000511; // mass of electron
+          double mmu = 0.1057; // mass of muon
+          double ee = 0.31343; // elementary charge
+          double width_ff = 0.0;
+          if (mAp &gt; 2*me) {width_ff += pow(kappa*ee,2) * (4*pow(mAp,2)+8*pow(me,2))*sqrt(pow(mAp,2)/4-pow(me,2)) / (24*pi*pow(mAp,2));}
+          if (mAp &gt; 2*mmu) {width_ff += pow(kappa*ee,2) * (4*pow(mAp,2)+8*pow(mmu,2))*sqrt(pow(mAp,2)/4-pow(mmu,2)) / (24*pi*pow(mAp,2));}
+          double width_XXscalar = pow(gDM,2)*(pow(mAp,2)-4*pow(mDM,2))/(8*pi*pow(mAp,2))*sqrt(pow(mAp,2)/4-pow(mDM,2));
+        //// Gamma_VtoXX / (Gamma_VtoXX + Gamma_Vtoff)
+          double BR_scalarDM  = width_XXscalar / (width_XXscalar + width_ff); // Branching ratio for scalar DM
+
+
+          signalcounts = pow(kappa,2) / (pow(kappa_interp,2)) * 2.3 * BR_scalarDM;
+        }
+
+      }
+      else if(analysis_info.has_interp2d(&quot;SubGeVBeamDump&quot;))
+      {
+        const Utils::interp2d_gsl_collection&amp; signal_interp = analysis_info.get_interp2d(&quot;SubGeVBeamDump&quot;);
+
+        // If values are outside bounds give zero signal
+        double signal = 0.;
+        if(signal_interp.is_inside_range(mDM, mAp))
+        {
+          // Compute the signal
+          // Note: The last entry in this function is the index of the column (minus the number of free params, i.e. 2)
+          signal = signal_interp.eval(mDM, mAp, 0); // mdm and mAp
+        }
+
+        // TODO: After interpolating the signal, apply any scaling, etc that you intend to.
+        double kappa_simulated  = 1e-4; // epsilon value which the data was simulated with
+        double gDM_simulated    = 2.5;  // gD (dark coupling between A' and DM) value which the data was simulated with
+
+        // TODO: change to values in numerical constants
+        double me = 0.000511; // mass of electron
+        double mmu = 0.1057; // mass of muon
+        double ee = 0.31343; // elementary charge
+
+
+        double width_ff = 0.0;
+        if (mAp &gt; 2*me) {width_ff += pow(kappa*ee,2) * (4*pow(mAp,2)+8*pow(me,2))*sqrt(pow(mAp,2)/4-pow(me,2)) / (24*pi*pow(mAp,2));}
+        if (mAp &gt; 2*mmu) {width_ff += pow(kappa*ee,2) * (4*pow(mAp,2)+8*pow(mmu,2))*sqrt(pow(mAp,2)/4-pow(mmu,2)) / (24*pi*pow(mAp,2));}
+
+        double width_XXscalar = pow(gDM,2)*(pow(mAp,2)-4*pow(mDM,2))/(8*pi*pow(mAp,2))*sqrt(pow(mAp,2)/4-pow(mDM,2));
+
+        //// Gamma_VtoXX / (Gamma_VtoXX + Gamma_Vtoff)
+        double BR_scalarDM  = width_XXscalar / (width_XXscalar + width_ff); // Branching ratio for scalar DM
+        signalcounts = signal * pow(kappa/kappa_simulated,4) * pow(gDM/gDM_simulated,2) * BR_scalarDM;
+
+      }
+
+      for (size_t sr_i = 0; sr_i &lt; analysis_info.n_signal_regions; ++sr_i)
+      {
+        signal_yields[sr_i] = signalcounts;
+      }
+    }
+
+    void get_SubGeVDM_fermion_signal_yields(std::vector&lt;double&gt;&amp; signal_yields, const Model_analysis_info&amp; analysis_info, double mDM, double mAp, double kappa, double gDM)
+    {
+      double signalcounts = 0.;
+
+      // SubGeVBeamDump contains both 1d and 2d interpolators, check which one this is
+      if(analysis_info.has_interp1d(&quot;SubGeVBeamDump&quot;))
+      {
+        // Get the interpolator collections for the given operator_key
+        const Utils::interp1d_gsl_collection&amp; eps_interp = analysis_info.get_interp1d(&quot;SubGeVBeamDump&quot;);
+
+        // If values are outside bounds give zero signal
+        if(eps_interp.is_inside_range(mAp))
+        {
+          // Compute the signal
+          // Note: The last entry in this function is the index of the column (minus the number of free params, i.e. 2)
+          double kappa_interp = eps_interp.eval(mAp, 0); // mAp and eps
+
+        double me = 0.000511; // mass of electron
+        double mmu = 0.1057; // mass of muon
+        double ee = 0.31343; // elementary charge
+        double width_ff = 0.0;
+        if (mAp &gt; 2*me) {width_ff += pow(kappa*ee,2) * (4*pow(mAp,2)+8*pow(me,2))*sqrt(pow(mAp,2)/4-pow(me,2)) / (24*pi*pow(mAp,2));}
+        if (mAp &gt; 2*mmu) {width_ff += pow(kappa*ee,2) * (4*pow(mAp,2)+8*pow(mmu,2))*sqrt(pow(mAp,2)/4-pow(mmu,2)) / (24*pi*pow(mAp,2));}
+
+        double width_XXfermion = pow(gDM,2)/3 * (4*pow(mAp,2)+8*pow(mDM,2)) * sqrt(pow(mAp,2)/4 - pow(mDM,2))/(8*pi*pow(mAp,2));
+        //// Gamma_VtoXX / (Gamma_VtoXX + Gamma_Vtoff)
+        double BR_fermionDM  = width_XXfermion / (width_XXfermion + width_ff); // Branching ratio for dirac fermion DM
+
+          signalcounts = pow(kappa,2) / (pow(kappa_interp,2)) * 2.3 * BR_fermionDM;
+        }
+      }
+
+      else if(analysis_info.has_interp2d(&quot;SubGeVBeamDump&quot;))
+      {
+        // Get the interpolator collections for the given operator_key
+        const Utils::interp2d_gsl_collection&amp; signal_interp = analysis_info.get_interp2d(&quot;SubGeVBeamDump&quot;);
+
+        // If values are outside bounds give zero signal
+        double signal = 0.;
+        if(signal_interp.is_inside_range(mDM, mAp))
+        {
+          // Compute the signal
+          // Note: The last entry in this function is the index of the column (minus the number of free params, i.e. 2)
+          signal = signal_interp.eval(mDM, mAp, 0); // mdm and mAp
+        }
+
+        // TODO: After interpolating the signal, apply any scaling, etc that you intend to.
+        double kappa_simulated  = 1e-4; // epsilon value which the data was simulated with
+        double gDM_simulated    = 2.5;  // gD (dark coupling between A' and DM) value which the data was simulated with
+
+        // TODO: change to values in numerical constants
+        double me = 0.000511; // mass of electron
+        double mmu = 0.1057; // mass of muon
+        double ee = 0.31343; // elementary charge
+
+
+        double width_ff = 0.0;
+        if (mAp &gt; 2*me) {width_ff += pow(kappa*ee,2) * (4*pow(mAp,2)+8*pow(me,2))*sqrt(pow(mAp,2)/4-pow(me,2)) / (24*pi*pow(mAp,2));}
+        if (mAp &gt; 2*mmu) {width_ff += pow(kappa*ee,2) * (4*pow(mAp,2)+8*pow(mmu,2))*sqrt(pow(mAp,2)/4-pow(mmu,2)) / (24*pi*pow(mAp,2));}
+
+        double width_XXfermion = pow(gDM,2)/3 * (4*pow(mAp,2)+8*pow(mDM,2)) * sqrt(pow(mAp,2)/4 - pow(mDM,2))/(8*pi*pow(mAp,2));
+
+        //// Gamma_VtoXX / (Gamma_VtoXX + Gamma_Vtoff)
+        double BR_fermionDM  = width_XXfermion / (width_XXfermion + width_ff); // Branching ratio for dirac fermion DM
+
+        signalcounts = signal * pow(kappa/kappa_simulated,4) * pow(gDM/gDM_simulated,2) * BR_fermionDM;
+      }
+
+      for (size_t sr_i = 0; sr_i &lt; analysis_info.n_signal_regions; ++sr_i)
+      {
+        signal_yields[sr_i] = signalcounts;
+      }
+    }
 
   } // namespace ColliderBit
 
 } // namespace Gambit
-</code></pre><hr><p>Updated on 2024-05-31 at 15:12:07 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.c74020190c99936c745557be58fe8dd9b9fd92bf421fd77d5a107b28ee8a3ea3942a6fa76f67dd3a59aed0c588aa70f46a1df119d437dd747f0fa2a382b63b00.js integrity="sha512-x0AgGQyZk2x0VVe+WP6N2bn9kr9CH9d9WhB7KO6KPqOUKm+nb2fdOlmu0MWIqnD0ah3xGdQ33XR/D6KjgrY7AA==" crossorigin=anonymous defer></script>
+</code></pre><hr><p>Updated on 2024-07-18 at 13:53:35 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.c74020190c99936c745557be58fe8dd9b9fd92bf421fd77d5a107b28ee8a3ea3942a6fa76f67dd3a59aed0c588aa70f46a1df119d437dd747f0fa2a382b63b00.js integrity="sha512-x0AgGQyZk2x0VVe+WP6N2bn9kr9CH9d9WhB7KO6KPqOUKm+nb2fdOlmu0MWIqnD0ah3xGdQ33XR/D6KjgrY7AA==" crossorigin=anonymous defer></script>
 <script src=/js/highlight.min.36e95e9e3e9384ff10cda4162dfcde8cfce8605a647f8c3bedf1fb1df3913fcb34d67131872a03ccb60136dbf78ae205f8f9045750bf34ffb6f7a5bd84afa22a.js integrity="sha512-Nulenj6ThP8QzaQWLfzejPzoYFpkf4w77fH7HfORP8s01nExhyoDzLYBNtv3iuIF+PkEV1C/NP+296W9hK+iKg==" crossorigin=anonymous defer></script>
 <script src=/main.min.ef065bd7f2223ce7e096aef9a8c0dfcfdcb001015039b928682364daf09b21a1eb04a2bfb924dd166d991a963a384fc5567ef1f76e45bb565adc281fc0850e9d.js integrity="sha512-7wZb1/IiPOfglq75qMDfz9ywAQFQObkoaCNk2vCbIaHrBKK/uSTdFm2ZGpY6OE/FVn7x925Fu1Za3CgfwIUOnQ==" crossorigin=anonymous defer></script>
-<script src=https://gambitbsm.org/index.min.139166b12e5a2c6be8acfb60c970ee81197df23fb96abeb071c637f933d63ec984e96503dfa66e36f763c48e52346fd5bc8fd0b0747e0f724b49307848006c63.js integrity="sha512-E5FmsS5aLGvorPtgyXDugRl98j+5ar6wccY3+TPWPsmE6WUD36ZuNvdjxI5SNG/VvI/QsHR+D3JLSTB4SABsYw==" crossorigin=anonymous defer></script></body></html>
+<script src=https://gambitbsm.org/index.min.97f8c8f07457a5e9587386388f9ce0ee9fc13cde3f70402fbda69bb3fc331288a5c81cf70b523e0453a1360ce190ccde2a8a807c1042275f4ab5910ece4386ba.js integrity="sha512-l/jI8HRXpelYc4Y4j5zg7p/BPN4/cEAvvaabs/wzEoilyBz3C1I+BFOhNgzhkMzeKoqAfBBCJ19KtZEOzkOGug==" crossorigin=anonymous defer></script></body></html>

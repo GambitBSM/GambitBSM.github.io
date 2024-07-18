@@ -113,7 +113,7 @@ scanner_plugin(minuit2, version(6, 23, 01))
     Gambit::Scanner::like_ptr model = get_purpose(get_inifile_value&lt;std::string&gt;(&quot;like&quot;));
     const double offset = get_inifile_value&lt;double&gt;(&quot;likelihood: lnlike_offset&quot;, 0.);
     model-&gt;setPurposeOffset(offset);
-    const auto names = model.get_names();
+    const auto names = model-&gt;get_names();
 
     // minuit2 algorithm options
     const std::string algorithm{get_inifile_value&lt;std::string&gt;(&quot;algorithm&quot;, &quot;combined&quot;)};
@@ -144,12 +144,12 @@ scanner_plugin(minuit2, version(6, 23, 01))
 
     if (physical_start_node)
     {
-      physical_start_map = model.transform(hypercube_start);
+      physical_start_map = model-&gt;transform(hypercube_start);
       for (auto &amp;s : physical_start_map)
       {
         s.second = get_node_value(physical_start_node, s.first, s.second);
       }
-      hypercube_start = model.inverse_transform(physical_start_map);
+      hypercube_start = model-&gt;inverse_transform(physical_start_map);
     }
     else
     {
@@ -157,7 +157,7 @@ scanner_plugin(minuit2, version(6, 23, 01))
       {
         hypercube_start[i] = get_node_value(hypercube_start_node, names[i], hypercube_start[i]);
       }
-      physical_start_map = model.transform(hypercube_start);
+      physical_start_map = model-&gt;transform(hypercube_start);
     }
 
     // get hypercube step (optional). It can be written in hypercube or physical
@@ -179,7 +179,7 @@ scanner_plugin(minuit2, version(6, 23, 01))
 
     if (physical_step_node)
     {
-      const auto center = model.transform(hypercube_start);
+      const auto center = model-&gt;transform(hypercube_start);
 
       for (int i = 0; i &lt; dim; i++)
       {
@@ -195,8 +195,8 @@ scanner_plugin(minuit2, version(6, 23, 01))
           auto backward = center;
           backward.at(names[i]) -= physical_step;
 
-          const auto hypercube_forward = model.inverse_transform(forward);
-          const auto hypercube_backward = model.inverse_transform(backward);
+          const auto hypercube_forward = model-&gt;inverse_transform(forward);
+          const auto hypercube_backward = model-&gt;inverse_transform(backward);
           const double mean_step = 0.5 * (hypercube_forward[i] - hypercube_backward[i]);
           hypercube_step.push_back(mean_step);
         }
@@ -299,7 +299,8 @@ scanner_plugin(minuit2, version(6, 23, 01))
     {
       v.push_back(best_fit_hypercube[i]);
     }
-    for (auto par : model.transform(v))
+
+    for (auto &amp;&amp;par : model-&gt;transform(v))
     {
       std::cout &lt;&lt; &quot;best-fit physical &quot; &lt;&lt; par.first &lt;&lt; &quot; = &quot; &lt;&lt; par.second &lt;&lt; std::endl;
     }
@@ -335,7 +336,7 @@ scanner_plugin(minuit2, version(6, 23, 01))
     return 0;
   }
 }
-</code></pre><hr><p>Updated on 2024-05-31 at 15:12:05 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.c74020190c99936c745557be58fe8dd9b9fd92bf421fd77d5a107b28ee8a3ea3942a6fa76f67dd3a59aed0c588aa70f46a1df119d437dd747f0fa2a382b63b00.js integrity="sha512-x0AgGQyZk2x0VVe+WP6N2bn9kr9CH9d9WhB7KO6KPqOUKm+nb2fdOlmu0MWIqnD0ah3xGdQ33XR/D6KjgrY7AA==" crossorigin=anonymous defer></script>
+</code></pre><hr><p>Updated on 2024-07-18 at 13:53:33 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.c74020190c99936c745557be58fe8dd9b9fd92bf421fd77d5a107b28ee8a3ea3942a6fa76f67dd3a59aed0c588aa70f46a1df119d437dd747f0fa2a382b63b00.js integrity="sha512-x0AgGQyZk2x0VVe+WP6N2bn9kr9CH9d9WhB7KO6KPqOUKm+nb2fdOlmu0MWIqnD0ah3xGdQ33XR/D6KjgrY7AA==" crossorigin=anonymous defer></script>
 <script src=/js/highlight.min.36e95e9e3e9384ff10cda4162dfcde8cfce8605a647f8c3bedf1fb1df3913fcb34d67131872a03ccb60136dbf78ae205f8f9045750bf34ffb6f7a5bd84afa22a.js integrity="sha512-Nulenj6ThP8QzaQWLfzejPzoYFpkf4w77fH7HfORP8s01nExhyoDzLYBNtv3iuIF+PkEV1C/NP+296W9hK+iKg==" crossorigin=anonymous defer></script>
 <script src=/main.min.ef065bd7f2223ce7e096aef9a8c0dfcfdcb001015039b928682364daf09b21a1eb04a2bfb924dd166d991a963a384fc5567ef1f76e45bb565adc281fc0850e9d.js integrity="sha512-7wZb1/IiPOfglq75qMDfz9ywAQFQObkoaCNk2vCbIaHrBKK/uSTdFm2ZGpY6OE/FVn7x925Fu1Za3CgfwIUOnQ==" crossorigin=anonymous defer></script>
-<script src=https://gambitbsm.org/index.min.139166b12e5a2c6be8acfb60c970ee81197df23fb96abeb071c637f933d63ec984e96503dfa66e36f763c48e52346fd5bc8fd0b0747e0f724b49307848006c63.js integrity="sha512-E5FmsS5aLGvorPtgyXDugRl98j+5ar6wccY3+TPWPsmE6WUD36ZuNvdjxI5SNG/VvI/QsHR+D3JLSTB4SABsYw==" crossorigin=anonymous defer></script></body></html>
+<script src=https://gambitbsm.org/index.min.97f8c8f07457a5e9587386388f9ce0ee9fc13cde3f70402fbda69bb3fc331288a5c81cf70b523e0453a1360ce190ccde2a8a807c1042275f4ab5910ece4386ba.js integrity="sha512-l/jI8HRXpelYc4Y4j5zg7p/BPN4/cEAvvaabs/wzEoilyBz3C1I+BFOhNgzhkMzeKoqAfBBCJ19KtZEOzkOGug==" crossorigin=anonymous defer></script></body></html>

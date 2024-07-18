@@ -15,7 +15,7 @@ Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle
 //   *********************************************
 ///  \file
 ///
-///  Utils classes for holding a 
+///  Utils classes for holding a
 ///  collection of 1D/2D gsl interpolators and
 ///  1D/2D/4D/5D linear interpolators.
 ///
@@ -52,9 +52,9 @@ namespace Gambit
   namespace Utils
   {
 
-    // 
+    //
     // interp1d_gsl_collection class methods
-    // 
+    //
 
     // Constructor
     interp1d_gsl_collection::interp1d_gsl_collection(const std::string collection_name_in, const std::string file_name_in, const std::vector&lt;std::string&gt; colnames_in)
@@ -92,9 +92,9 @@ namespace Gambit
       // Number of interpolators
       n_interpolators = interpolator_names.size();
 
-      // 
+      //
       // Create one GSL spline for each interpolator
-      // 
+      //
       std::vector&lt;double&gt; x_data = tab[x_name];
       int nx = x_data.size();
 
@@ -156,9 +156,9 @@ namespace Gambit
     }
 
 
-    // 
+    //
     // interp1d_collection class methods
-    // 
+    //
 
     // Constructor
     interp1d_collection::interp1d_collection(const std::string collection_name_in, const std::string file_name_in, const std::vector&lt;std::string&gt; colnames_in)
@@ -258,12 +258,12 @@ namespace Gambit
       bool test_u[] = {false};
       bool test_l[] = {false};
 
-      //Loop over all interp_data, and match value to coresponding value. 
+      //Loop over all interp_data, and match value to coresponding value.
       for (size_t k=0;k&lt;fi_values.size();k++)
       {
         // Reset Values
-        test_u[0] = false; test_u[1] = false;
-        test_l[0] = false; test_l[1] = false;
+        test_u[0] = false;
+        test_l[0] = false;
 
         // Check whether the values correspond to any of the upper/lower values. skip calculation if not...
         if (x1_vec_unsorted[k]==xi_upper[0]) { test_u[0]=true;}
@@ -294,9 +294,9 @@ namespace Gambit
     }
 
 
-    // 
+    //
     // interp2d_gsl_collection class methods
-    // 
+    //
 
     // Constructor
     interp2d_gsl_collection::interp2d_gsl_collection(const std::string collection_name_in, const std::string file_name_in, const std::vector&lt;std::string&gt; colnames_in)
@@ -335,9 +335,9 @@ namespace Gambit
       // Number of interpolators
       n_interpolators = interpolator_names.size();
 
-      // 
+      //
       // Create one GSL spline for each interpolator
-      // 
+      //
 
       // Get unique entries of &quot;x&quot; and &quot;y&quot; for the grid and grid size.
       std::vector&lt;double&gt; x_vec = tab[x_name];
@@ -392,6 +392,12 @@ namespace Gambit
     // Evaluate a given interpolation
     double interp2d_gsl_collection::eval(double x, double y, size_t interp_index) const
     {
+      if(not is_inside_range(x,y))
+      {
+        std::stringstream ss;
+        ss &lt;&lt; &quot;ERROR! Value (&quot; &lt;&lt; x &lt;&lt; &quot;, &quot; &lt;&lt; y &lt;&lt; &quot;) outside of range&quot;;
+        utils_error().raise(LOCAL_INFO, ss.str());
+      }
       return gsl_spline2d_eval(splines[interp_index], x, y, x_accels[interp_index], y_accels[interp_index]);
     }
 
@@ -412,9 +418,9 @@ namespace Gambit
     }
 
 
-    // 
+    //
     // interp2d_collection class methods
-    // 
+    //
 
     // Constructor
     interp2d_collection::interp2d_collection(const std::string collection_name_in, const std::string file_name_in, const std::vector&lt;std::string&gt; colnames_in)
@@ -534,7 +540,7 @@ namespace Gambit
           xi_lower[1] = x2_vec[i];
           xi_upper[1] = x2_vec[i+1];
         }
-        
+
         if (x2 &lt; x2_vec[i]) break;
       }
 
@@ -543,7 +549,7 @@ namespace Gambit
       bool test_u[] = {false,false};
       bool test_l[] = {false,false};
 
-      //Loop over all interp_data, and match value to coresponding value. 
+      //Loop over all interp_data, and match value to coresponding value.
       for (size_t k=0;k&lt;fi_values.size();k++)
       {
         // Reset Values
@@ -600,9 +606,9 @@ namespace Gambit
     }
 
 
-    // 
+    //
     // interp4d_collection class methods
-    // 
+    //
 
     // Constructor
     interp4d_collection::interp4d_collection(const std::string collection_name_in, const std::string file_name_in, const std::vector&lt;std::string&gt; colnames_in, bool allow_missing_points, double missing_pts_val)
@@ -782,7 +788,7 @@ namespace Gambit
       bool test_u[] = {false,false,false,false};
       bool test_l[] = {false,false,false,false};
 
-      //Loop over all interp_data, and match value to coresponding value. 
+      //Loop over all interp_data, and match value to coresponding value.
       for (size_t k=0;k&lt;fi_values.size();k++)
       {
         // Reset Values
@@ -865,9 +871,9 @@ namespace Gambit
     }
 
 
-    // 
+    //
     // interp5d_collection class methods
-    // 
+    //
 
     // Constructor
     interp5d_collection::interp5d_collection(const std::string collection_name_in, const std::string file_name_in, const std::vector&lt;std::string&gt; colnames_in, bool allow_missing_points, double missing_pts_val)
@@ -973,7 +979,7 @@ namespace Gambit
     // Destructor
     interp5d_collection::~interp5d_collection() {}
 
-    // Just some forward declarations... 
+    // Just some forward declarations...
     void InterpIter(int Ntemp,double xi_1,double xi_2,std::vector&lt;double&gt;&amp; fi,double test);
 
     // Evaluate a given interpolation
@@ -1068,7 +1074,7 @@ namespace Gambit
 
       // Find the corresponding function values
       // Using a default value of -1 as this is assumed not a valid result.
-      // Note: This will cause a problem if your interpolation is using -1. 
+      // Note: This will cause a problem if your interpolation is using -1.
       //       However, this should not be the case in any scenarios I can envision.
       std::vector&lt;double&gt; fi = {-1.0,-1.0,-1.0,-1.0,-1.0,-1.0,-1.0,-1.0,-1.0,-1.0,-1.0,-1.0,-1.0,-1.0,
                                 -1.0,-1.0,-1.0,-1.0,-1.0,-1.0,-1.0,-1.0,-1.0,-1.0,-1.0,-1.0,-1.0,-1.0,
@@ -1076,7 +1082,7 @@ namespace Gambit
       bool test_u[] = {false,false,false,false,false};
       bool test_l[] = {false,false,false,false,false};
 
-      //Loop over all interp_data, and match value to coresponding value. 
+      //Loop over all interp_data, and match value to coresponding value.
       for (size_t k=0;k&lt;fi_values.size();k++)
       {
         // Reset Values
@@ -1211,7 +1217,7 @@ namespace Gambit
 
   }
 }
-</code></pre><hr><p>Updated on 2024-05-31 at 15:12:05 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.c74020190c99936c745557be58fe8dd9b9fd92bf421fd77d5a107b28ee8a3ea3942a6fa76f67dd3a59aed0c588aa70f46a1df119d437dd747f0fa2a382b63b00.js integrity="sha512-x0AgGQyZk2x0VVe+WP6N2bn9kr9CH9d9WhB7KO6KPqOUKm+nb2fdOlmu0MWIqnD0ah3xGdQ33XR/D6KjgrY7AA==" crossorigin=anonymous defer></script>
+</code></pre><hr><p>Updated on 2024-07-18 at 13:53:32 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.c74020190c99936c745557be58fe8dd9b9fd92bf421fd77d5a107b28ee8a3ea3942a6fa76f67dd3a59aed0c588aa70f46a1df119d437dd747f0fa2a382b63b00.js integrity="sha512-x0AgGQyZk2x0VVe+WP6N2bn9kr9CH9d9WhB7KO6KPqOUKm+nb2fdOlmu0MWIqnD0ah3xGdQ33XR/D6KjgrY7AA==" crossorigin=anonymous defer></script>
 <script src=/js/highlight.min.36e95e9e3e9384ff10cda4162dfcde8cfce8605a647f8c3bedf1fb1df3913fcb34d67131872a03ccb60136dbf78ae205f8f9045750bf34ffb6f7a5bd84afa22a.js integrity="sha512-Nulenj6ThP8QzaQWLfzejPzoYFpkf4w77fH7HfORP8s01nExhyoDzLYBNtv3iuIF+PkEV1C/NP+296W9hK+iKg==" crossorigin=anonymous defer></script>
 <script src=/main.min.ef065bd7f2223ce7e096aef9a8c0dfcfdcb001015039b928682364daf09b21a1eb04a2bfb924dd166d991a963a384fc5567ef1f76e45bb565adc281fc0850e9d.js integrity="sha512-7wZb1/IiPOfglq75qMDfz9ywAQFQObkoaCNk2vCbIaHrBKK/uSTdFm2ZGpY6OE/FVn7x925Fu1Za3CgfwIUOnQ==" crossorigin=anonymous defer></script>
-<script src=https://gambitbsm.org/index.min.139166b12e5a2c6be8acfb60c970ee81197df23fb96abeb071c637f933d63ec984e96503dfa66e36f763c48e52346fd5bc8fd0b0747e0f724b49307848006c63.js integrity="sha512-E5FmsS5aLGvorPtgyXDugRl98j+5ar6wccY3+TPWPsmE6WUD36ZuNvdjxI5SNG/VvI/QsHR+D3JLSTB4SABsYw==" crossorigin=anonymous defer></script></body></html>
+<script src=https://gambitbsm.org/index.min.97f8c8f07457a5e9587386388f9ce0ee9fc13cde3f70402fbda69bb3fc331288a5c81cf70b523e0453a1360ce190ccde2a8a807c1042275f4ab5910ece4386ba.js integrity="sha512-l/jI8HRXpelYc4Y4j5zg7p/BPN4/cEAvvaabs/wzEoilyBz3C1I+BFOhNgzhkMzeKoqAfBBCJ19KtZEOzkOGug==" crossorigin=anonymous defer></script></body></html>

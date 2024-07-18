@@ -11,12 +11,7 @@ Tutorials</button><div class=collapse id=section-tutorials><ul class="btn-toggle
 Help</button><div class=collapse id=section-help><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/help/common_problems_and_questions/>Common Problems and Questions</a></li><li><a class="docs-link rounded" href=/documentation/help/compiler_matrix/>Compiler Matrix</a></li><li><a class="docs-link rounded" href=/documentation/help/known_issues/>Known Issues</a></li><li><a class="docs-link rounded" href=/documentation/help/configuration_examples/>Configuration Examples</a></li><li><a class="docs-link rounded" href=/documentation/help/support/>Support</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-code aria-expanded=false>
 Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/code/index_classes/>Classes</a></li><li><a class="docs-link rounded" href=/documentation/code/index_files/>Files</a></li><li><a class="docs-link rounded" href=/documentation/code/index_pages/>Pages</a></li><li><a class="docs-link rounded" href=/documentation/code/index_namespaces/>Namespaces</a></li></ul></div></li></ul></nav></div><nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation"><div class=d-xl-none><button class="btn btn-outline-primary btn-sm doks-toc-toggle collapsed" type=button data-bs-toggle=collapse data-bs-target=#onThisPage aria-controls=doks-docs-nav aria-expanded=false aria-label="Toggle On this page navigation">
 <span>On this page</span>
-<span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg></span></button><div class=collapse id=onThisPage><div class="card card-body mt-3 py-1"><div class=page-links><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#functions>Functions</a></li><li><a href=#functions-documentation>Functions Documentation</a><ul><li><a href=#function-get-heputils-event>function get_HEPUtils_event</a></li></ul></li><li><a href=#source-code>Source code</a></li></ul></nav></div></div></div></div><div class="page-links d-none d-xl-block"><h3>On this page</h3><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#functions>Functions</a></li><li><a href=#functions-documentation>Functions Documentation</a><ul><li><a href=#function-get-heputils-event>function get_HEPUtils_event</a></li></ul></li><li><a href=#source-code>Source code</a></li></ul></nav></div></nav><main class="docs-content col-lg-11 col-xl-9 mx-xl-auto"><nav aria-label=breadcrumb><ol class=breadcrumb><li class=breadcrumb-item><a href=/>Home</a></li><li class=breadcrumb-item><a href=/documentation/>Documentation</a></li><li class=breadcrumb-item><a href=/documentation/code/>Code Reference</a></li><li class="breadcrumb-item active" aria-current=page>file src/lhef2heputils.cpp</li></ol></nav><p class=lead></p><h1 id=file-src-lhef2heputils-cpp>file src/lhef2heputils.cpp <a href=#file-src-lhef2heputils-cpp class=anchor aria-hidden=true>#</a></h1><p>[No description available]</p><h2 id=namespaces>Namespaces <a href=#namespaces class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th>Name</th></tr></thead><tbody><tr><td><strong><a href=/documentation/code/namespaces/namespacefjns/>FJNS</a></strong></td></tr></tbody></table><h2 id=functions>Functions <a href=#functions class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th></th><th>Name</th></tr></thead><tbody><tr><td>void</td><td><strong><a href=/documentation/code/files/lhef2heputils_8cpp/#function-get-heputils-event>get_HEPUtils_event</a></strong>(const LHEF::Reader & lhe, Event & evt, double jet_pt_min)<br>Extract an LHE event as a HEPUtils::Event.</td></tr></tbody></table><h2 id=functions-documentation>Functions Documentation <a href=#functions-documentation class=anchor aria-hidden=true>#</a></h2><h3 id=function-get-heputils-event>function get_HEPUtils_event <a href=#function-get-heputils-event class=anchor aria-hidden=true>#</a></h3><pre><code>void get_HEPUtils_event(
-    const LHEF::Reader &amp; lhe,
-    Event &amp; evt,
-    double jet_pt_min
-)
-</code></pre><p>Extract an LHE event as a HEPUtils::Event.</p><p>TodoDress leptons?</p><p>TodoBug in HEPUtils::get_jets means that constituent info is lost for now&mldr;</p><h2 id=source-code>Source code <a href=#source-code class=anchor aria-hidden=true>#</a></h2><pre><code>// -*- C++ -*-
+<span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg></span></button><div class=collapse id=onThisPage><div class="card card-body mt-3 py-1"><div class=page-links><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#source-code>Source code</a></li></ul></nav></div></div></div></div><div class="page-links d-none d-xl-block"><h3>On this page</h3><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#source-code>Source code</a></li></ul></nav></div></nav><main class="docs-content col-lg-11 col-xl-9 mx-xl-auto"><nav aria-label=breadcrumb><ol class=breadcrumb><li class=breadcrumb-item><a href=/>Home</a></li><li class=breadcrumb-item><a href=/documentation/>Documentation</a></li><li class=breadcrumb-item><a href=/documentation/code/>Code Reference</a></li><li class="breadcrumb-item active" aria-current=page>file src/lhef2heputils.cpp</li></ol></nav><p class=lead></p><h1 id=file-src-lhef2heputils-cpp>file src/lhef2heputils.cpp <a href=#file-src-lhef2heputils-cpp class=anchor aria-hidden=true>#</a></h1><p>[No description available]</p><h2 id=namespaces>Namespaces <a href=#namespaces class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th>Name</th></tr></thead><tbody><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit/>Gambit</a></strong><br>TODO: see if we can use this one:</td></tr><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit_1_1colliderbit/>Gambit::ColliderBit</a></strong></td></tr><tr><td><strong><a href=/documentation/code/namespaces/namespacefjns/>FJNS</a></strong></td></tr></tbody></table><h2 id=source-code>Source code <a href=#source-code class=anchor aria-hidden=true>#</a></h2><pre><code>// -*- C++ -*-
 //   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
 ///
@@ -62,90 +57,105 @@ using namespace std;
 using namespace HEPUtils;
 using namespace FJNS;
 
-/// Extract an LHE event as a HEPUtils::Event
-void get_HEPUtils_event(const LHEF::Reader&amp; lhe, Event&amp; evt, double jet_pt_min)
+namespace Gambit
 {
 
-  P4 vmet;
-  vector&lt;PseudoJet&gt; jetparticles;
-
-  evt.set_weight(lhe.hepeup.weight());
-
-  // Loop over all particles in the event
-  for (int i = 0; i &lt; lhe.hepeup.NUP; ++i)
+  namespace ColliderBit
   {
-    // Get status and PID code
-    const int st = lhe.hepeup.ISTUP[i];
-    const int pid = lhe.hepeup.IDUP[i];
-    const int apid = fabs(pid);
 
-    // Use LHE-stable particles only
-    if (st != 1) continue;
-
-    // Get 4-momentum
-    const P4 p4 = P4::mkXYZM(lhe.hepeup.PUP[i][0], lhe.hepeup.PUP[i][1], lhe.hepeup.PUP[i][2], lhe.hepeup.PUP[i][4]);
-
-    // Store interacting prompt particles
-    /// @todo Dress leptons?
-    if (apid == 22 || apid == 11 || apid == 13 || apid == 15)
+    /// Extract an LHE event as a HEPUtils::Event
+    void get_HEPUtils_event(const LHEF::Reader&amp; lhe, Event&amp; evt, double jet_pt_min, std::vector&lt;jet_collection_settings&gt; all_jet_collection_settings)
     {
-      Particle* p = new Particle(p4, pid); // the event will take ownership of this pointer
-      p-&gt;set_prompt(true);
-      evt.add_particle(p);
+
+      P4 vmet;
+      vector&lt;PseudoJet&gt; jetparticles;
+
+      evt.set_weight(lhe.hepeup.weight());
+
+      // Loop over all particles in the event
+      for (int i = 0; i &lt; lhe.hepeup.NUP; ++i)
+      {
+        // Get status and PID code
+        const int st = lhe.hepeup.ISTUP[i];
+        const int pid = lhe.hepeup.IDUP[i];
+        const int apid = fabs(pid);
+
+        // Use LHE-stable particles only
+        if (st != 1) continue;
+
+        // Get 4-momentum
+        const P4 p4 = P4::mkXYZM(lhe.hepeup.PUP[i][0], lhe.hepeup.PUP[i][1], lhe.hepeup.PUP[i][2], lhe.hepeup.PUP[i][4]);
+
+        // Store interacting prompt particles
+        /// @todo Dress leptons?
+        if (apid == 22 || apid == 11 || apid == 13 || apid == 15)
+        {
+          Particle* p = new Particle(p4, pid); // the event will take ownership of this pointer
+          p-&gt;set_prompt(true);
+          evt.add_particle(p);
+        }
+
+        // Aggregate missing ET
+        else if (apid == 12 || apid == 14 || apid == 16 || apid == 1000022 || apid == 1000039)
+        {
+          Particle* p = new Particle(p4, pid); // the event will take ownership of this pointer
+          p-&gt;set_prompt(true);
+          evt.add_particle(p);
+          vmet += p4;
+        }
+
+        // Store non-prompt momenta for Jet building
+        else
+        {
+          PseudoJet pj = mk_pj(p4);
+          pj.set_user_index(apid);
+          jetparticles.push_back(pj);
+        }
+      }
+
+      // MET
+      vmet.setPz(0);
+      vmet.setM(0);
+      evt.set_missingmom(vmet);
+
+      // Jet Finding
+      for (jet_collection_settings jetcollection : all_jet_collection_settings)
+      {
+
+        // @todo get_jets function could accept a more general jet definition
+        vector&lt;PseudoJet&gt; jets = HEPUtils::get_jets(jetparticles, 0.4, jet_pt_min, FJalgorithm_map(jetcollection.algorithm));
+
+        for (const PseudoJet&amp; pj : jets)
+        {
+          bool hasC = false, hasB = false;
+          /// @todo Bug in HEPUtils::get_jets means that constituent info is lost for now...
+          // for (const PseudoJet&amp; c : pj.constituents()) {
+          //   if (c.user_index() == 4) hasC = true;
+          //   if (c.user_index() == 5) hasB = true;
+          // }
+          evt.add_jet(new Jet(mk_p4(pj), hasB, hasC), jetcollection.key);
+        }
+
+        #ifdef COLLIDERBIT_DEBUG
+          // Print event summary
+          cout &lt;&lt; &quot;  MET  = &quot; &lt;&lt; evt.met() &lt;&lt; &quot; GeV&quot; &lt;&lt; endl;
+          cout &lt;&lt; &quot;  #e   = &quot; &lt;&lt; evt.electrons().size() &lt;&lt; endl;
+          cout &lt;&lt; &quot;  #mu  = &quot; &lt;&lt; evt.muons().size() &lt;&lt; endl;
+          cout &lt;&lt; &quot;  #tau = &quot; &lt;&lt; evt.taus().size() &lt;&lt; endl;
+          cout &lt;&lt; &quot;  #jet = &quot; &lt;&lt; evt.jets().size() &lt;&lt; endl;
+          cout &lt;&lt; &quot;  #pho  = &quot; &lt;&lt; evt.photons().size() &lt;&lt; endl;
+          cout &lt;&lt; endl;
+        #endif
+      }
+
     }
 
-    // Aggregate missing ET
-    else if (apid == 12 || apid == 14 || apid == 16 || apid == 1000022 || apid == 1000039)
-    {
-      Particle* p = new Particle(p4, pid); // the event will take ownership of this pointer
-      p-&gt;set_prompt(true);
-      evt.add_particle(p);
-      vmet += p4;
-    }
-
-    // Store non-prompt momenta for Jet building
-    else
-    {
-      PseudoJet pj = mk_pj(p4);
-      pj.set_user_index(apid);
-      jetparticles.push_back(pj);
-    }
   }
-
-  // MET
-  vmet.setPz(0);
-  vmet.setM(0);
-  evt.set_missingmom(vmet);
-
-  // Jets
-  vector&lt;PseudoJet&gt; jets = get_jets(jetparticles, 0.4, jet_pt_min);
-
-  for (const PseudoJet&amp; pj : jets)
-  {
-    bool hasC = false, hasB = false;
-    /// @todo Bug in HEPUtils::get_jets means that constituent info is lost for now...
-    // for (const PseudoJet&amp; c : pj.constituents()) {
-    //   if (c.user_index() == 4) hasC = true;
-    //   if (c.user_index() == 5) hasB = true;
-    // }
-    evt.add_jet(new Jet(mk_p4(pj), hasB, hasC));
-  }
-
-  #ifdef COLLIDERBIT_DEBUG
-    // Print event summary
-    cout &lt;&lt; &quot;  MET  = &quot; &lt;&lt; evt.met() &lt;&lt; &quot; GeV&quot; &lt;&lt; endl;
-    cout &lt;&lt; &quot;  #e   = &quot; &lt;&lt; evt.electrons().size() &lt;&lt; endl;
-    cout &lt;&lt; &quot;  #mu  = &quot; &lt;&lt; evt.muons().size() &lt;&lt; endl;
-    cout &lt;&lt; &quot;  #tau = &quot; &lt;&lt; evt.taus().size() &lt;&lt; endl;
-    cout &lt;&lt; &quot;  #jet = &quot; &lt;&lt; evt.jets().size() &lt;&lt; endl;
-    cout &lt;&lt; &quot;  #pho  = &quot; &lt;&lt; evt.photons().size() &lt;&lt; endl;
-    cout &lt;&lt; endl;
-  #endif
 
 }
 
 #endif
-</code></pre><hr><p>Updated on 2024-05-31 at 15:12:08 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.c74020190c99936c745557be58fe8dd9b9fd92bf421fd77d5a107b28ee8a3ea3942a6fa76f67dd3a59aed0c588aa70f46a1df119d437dd747f0fa2a382b63b00.js integrity="sha512-x0AgGQyZk2x0VVe+WP6N2bn9kr9CH9d9WhB7KO6KPqOUKm+nb2fdOlmu0MWIqnD0ah3xGdQ33XR/D6KjgrY7AA==" crossorigin=anonymous defer></script>
+</code></pre><hr><p>Updated on 2024-07-18 at 13:53:35 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.c74020190c99936c745557be58fe8dd9b9fd92bf421fd77d5a107b28ee8a3ea3942a6fa76f67dd3a59aed0c588aa70f46a1df119d437dd747f0fa2a382b63b00.js integrity="sha512-x0AgGQyZk2x0VVe+WP6N2bn9kr9CH9d9WhB7KO6KPqOUKm+nb2fdOlmu0MWIqnD0ah3xGdQ33XR/D6KjgrY7AA==" crossorigin=anonymous defer></script>
 <script src=/js/highlight.min.36e95e9e3e9384ff10cda4162dfcde8cfce8605a647f8c3bedf1fb1df3913fcb34d67131872a03ccb60136dbf78ae205f8f9045750bf34ffb6f7a5bd84afa22a.js integrity="sha512-Nulenj6ThP8QzaQWLfzejPzoYFpkf4w77fH7HfORP8s01nExhyoDzLYBNtv3iuIF+PkEV1C/NP+296W9hK+iKg==" crossorigin=anonymous defer></script>
 <script src=/main.min.ef065bd7f2223ce7e096aef9a8c0dfcfdcb001015039b928682364daf09b21a1eb04a2bfb924dd166d991a963a384fc5567ef1f76e45bb565adc281fc0850e9d.js integrity="sha512-7wZb1/IiPOfglq75qMDfz9ywAQFQObkoaCNk2vCbIaHrBKK/uSTdFm2ZGpY6OE/FVn7x925Fu1Za3CgfwIUOnQ==" crossorigin=anonymous defer></script>
-<script src=https://gambitbsm.org/index.min.139166b12e5a2c6be8acfb60c970ee81197df23fb96abeb071c637f933d63ec984e96503dfa66e36f763c48e52346fd5bc8fd0b0747e0f724b49307848006c63.js integrity="sha512-E5FmsS5aLGvorPtgyXDugRl98j+5ar6wccY3+TPWPsmE6WUD36ZuNvdjxI5SNG/VvI/QsHR+D3JLSTB4SABsYw==" crossorigin=anonymous defer></script></body></html>
+<script src=https://gambitbsm.org/index.min.97f8c8f07457a5e9587386388f9ce0ee9fc13cde3f70402fbda69bb3fc331288a5c81cf70b523e0453a1360ce190ccde2a8a807c1042275f4ab5910ece4386ba.js integrity="sha512-l/jI8HRXpelYc4Y4j5zg7p/BPN4/cEAvvaabs/wzEoilyBz3C1I+BFOhNgzhkMzeKoqAfBBCJ19KtZEOzkOGug==" crossorigin=anonymous defer></script></body></html>
