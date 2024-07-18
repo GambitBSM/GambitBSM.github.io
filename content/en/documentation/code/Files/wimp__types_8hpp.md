@@ -29,12 +29,14 @@ description: "[No description available]"
 
   * Ben Farmer ([b.farmer@imperial.ac.uk](mailto:b.farmer@imperial.ac.uk)) 
   * Tomas Gonzalo ([gonzalo@physik.rwth-aachen.de](mailto:gonzalo@physik.rwth-aachen.de)) 
+  * Torsten Bringmann ([torsten.bringmann@fys.uio.no](mailto:torsten.bringmann@fys.uio.no)) 
 
 
 **Date**: 
 
   * 2019 Sep
   * 2021 Sep
+  * 2023 Nov
 
 
 Various container for WIMP particle and annihilation properties
@@ -74,6 +76,10 @@ Authors (add name and date if you modify):
 ///          (gonzalo@physik.rwth-aachen.de)
 ///  \date 2021 Sep
 ///
+///  \author Torsten Bringmann
+///          (torsten.bringmann@fys.uio.no)
+///  \date 2023 Nov
+///
 ///  *********************************************
 
 #ifndef __wimp_types_hpp__
@@ -89,6 +95,7 @@ namespace Gambit
     {
       double mass;
       unsigned int spinx2;
+      double etaDM; // primordial asymmetry
       bool sc; // Self-conjugate?
       std::string name; // Name in the particle database
       std::string conjugate; // Name of conjugate in the particle database
@@ -118,4 +125,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:06 +0000
+Updated on 2024-07-18 at 13:53:34 +0000

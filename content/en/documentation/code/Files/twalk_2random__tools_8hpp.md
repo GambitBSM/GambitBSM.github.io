@@ -525,41 +525,41 @@ class Cholesky
                         return true;
         }
 
-                bool EnterMat(const std::vector<std::vector<double>> &a)
+        bool EnterMat(const std::vector<std::vector<double>> &a)
+        {
+                double sum = 0;
+                int i, j, k;
+
+                for (i = 0; i < num; i++)
                 {
-                        double sum = 0;
-                        int i, j, k;
-
-                        for (i = 0; i < num; i++)
+                        for (j = 0; j < num; j++)
                         {
-                                for (j = 0; j < num; j++)
-                                {
-                                        el[i][j] = a[i][j];
-                                }
+                                el[i][j] = a[i][j];
                         }
-
-                        for (i = 0; i < num; i++)
-                        {
-                                for (j = i; j < num; j++)
-                                {
-                                        for(sum = el[i][j], k = i - 1; k >= 0; k--)
-                                                sum -= el[i][k]*el[j][k];
-                                        if(i ==j)
-                                        {
-                                                if(sum <= 0.0)
-                                                        return false;
-                                                el[i][i] = sqrt(sum);
-                                        }
-                                        else
-                                                el[j][i] = sum/el[i][i];
-                                }
-                        }
-                        for (i = 0; i < num; i++)
-                                for (j = 0; j < i; j++)
-                                        el[j][i] = 0.0;
-
-                        return true;
                 }
+
+                for (i = 0; i < num; i++)
+                {
+                        for (j = i; j < num; j++)
+                        {
+                                for(sum = el[i][j], k = i - 1; k >= 0; k--)
+                                        sum -= el[i][k]*el[j][k];
+                                if(i ==j)
+                                {
+                                        if(sum <= 0.0)
+                                                return false;
+                                        el[i][i] = sqrt(sum);
+                                }
+                                else
+                                        el[j][i] = sum/el[i][i];
+                        }
+                }
+                for (i = 0; i < num; i++)
+                        for (j = 0; j < i; j++)
+                                el[j][i] = 0.0;
+
+                return true;
+        }
 
         void EnterMat(double **a, int nin)
         {
@@ -948,7 +948,7 @@ class AdvanceDevs : public BasicDevs, public Cholesky
             int i;
             double dist = 0.0;
 
-            double vec[num];
+            std::vector<double> vec(num);
             double norm = 0.0;
             for (i = 0; i < num; i++)
             {
@@ -971,7 +971,7 @@ class AdvanceDevs : public BasicDevs, public Cholesky
             }
 
             EnterMat(cvar);
-            ElMult(vec, pin);
+            ElMult(&vec[0], pin);
             for (i = 0; i < num; i++)
             {
                 pin[i] = fac*dist*pin[i]/norm + p0[i];
@@ -985,7 +985,7 @@ class AdvanceDevs : public BasicDevs, public Cholesky
             int i;
             double dist = 0.0;
 
-            double vec[num];
+            std::vector<double> vec(num);
             double norm = 0.0;
             for (i = 0; i < num; i++)
             {
@@ -996,7 +996,7 @@ class AdvanceDevs : public BasicDevs, public Cholesky
 
             dist = pow(Doub(), 1.0/num);
 
-            ElMult(vec, pin);
+            ElMult(&vec[0], pin);
             for (i = 0; i < num; i++)
             {
                 pin[i] = fin*dist*pin[i] + p0[i];
@@ -1010,7 +1010,7 @@ class AdvanceDevs : public BasicDevs, public Cholesky
             int i;
             double dist = 0.0;
 
-            double vec[num];
+            std::vector<double> vec(num);
             double norm = 0.0;
             for (i = 0; i < num; i++)
             {
@@ -1022,7 +1022,7 @@ class AdvanceDevs : public BasicDevs, public Cholesky
             dist = pow(Doub(), 1.0/num);
 
             EnterMat(cvar);
-            ElMult(vec, pin);
+            ElMult(&vec[0], pin);
             for (i = 0; i < num; i++)
             {
                 pin[i] = fin*dist*pin[i] + p0[i];
@@ -1349,7 +1349,7 @@ class RandomBasis : public BasicDevs
         void RandRot()
         {
             double temp;
-            double vec[num];
+            std::vector<double> vec(num);
             int i, j, k;
 
             for (i = 0; i < num; i++)
@@ -1619,4 +1619,4 @@ class MultiNormDev : public RandomBasis, public Cholesky
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:05 +0000
+Updated on 2024-07-18 at 13:53:32 +0000

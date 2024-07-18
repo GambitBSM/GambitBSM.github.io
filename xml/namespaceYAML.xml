@@ -2,7 +2,9 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
   <compounddef id="namespaceYAML" kind="namespace" language="C++">
     <compoundname>YAML</compoundname>
-    <innerclass refid="structYAML_1_1convert_3_01Gambit_1_1IniParser_1_1Types_1_1Observable_01_4" prot="public">YAML::convert&lt; Gambit::IniParser::Types::Observable &gt;</innerclass>
+    <innerclass refid="structYAML_1_1convert_3_01Gambit_1_1DRes_1_1BackendRule_01_4" prot="public">YAML::convert&lt; Gambit::DRes::BackendRule &gt;</innerclass>
+    <innerclass refid="structYAML_1_1convert_3_01Gambit_1_1DRes_1_1ModuleRule_01_4" prot="public">YAML::convert&lt; Gambit::DRes::ModuleRule &gt;</innerclass>
+    <innerclass refid="structYAML_1_1convert_3_01Gambit_1_1DRes_1_1Observable_01_4" prot="public">YAML::convert&lt; Gambit::DRes::Observable &gt;</innerclass>
     <innerclass refid="structYAML_1_1convert_3_01Gambit_1_1nuiscorr_01_4" prot="public">YAML::convert&lt; Gambit::nuiscorr &gt;</innerclass>
     <innerclass refid="structYAML_1_1convert_3_01sdd_01_4" prot="public">YAML::convert&lt; sdd &gt;</innerclass>
     <innerclass refid="structYAML_1_1convert_3_01ssdd_01_4" prot="public">YAML::convert&lt; ssdd &gt;</innerclass>
@@ -36,11 +38,189 @@
         <location file="Elements/include/gambit/Elements/spectrum.hpp" line="55" column="21" bodyfile="Elements/include/gambit/Elements/spectrum.hpp" bodystart="55" bodyend="-1"/>
       </memberdef>
       </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="namespaceYAML_1a4b66438f3dbc63684f7582d43a239463" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void YAML::convert_to_module_rule</definition>
+        <argsstring>(const YAML::detail::iterator_value y, std::vector&lt; ModuleRule &gt; &amp;v)</argsstring>
+        <name>convert_to_module_rule</name>
+        <qualifiedname>YAML::convert_to_module_rule</qualifiedname>
+        <param>
+          <type>const YAML::detail::iterator_value</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="structGambit_1_1DRes_1_1ModuleRule" kindref="compound">ModuleRule</ref> &gt; &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+<para>Helper function for trying to convert a <ref refid="namespaceYAML" kindref="compound">YAML</ref> snippet to a nested module rule. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/src/yaml_parser.cpp" line="132" column="8" bodyfile="Core/src/yaml_parser.cpp" bodystart="132" bodyend="146"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceYAML_1a94288d596beb0ef75cc2b38ab5c3bd1a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void YAML::convert_to_backend_rule</definition>
+        <argsstring>(const YAML::detail::iterator_value y, std::vector&lt; BackendRule &gt; &amp;v)</argsstring>
+        <name>convert_to_backend_rule</name>
+        <qualifiedname>YAML::convert_to_backend_rule</qualifiedname>
+        <param>
+          <type>const YAML::detail::iterator_value</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="structGambit_1_1DRes_1_1BackendRule" kindref="compound">BackendRule</ref> &gt; &amp;</type>
+          <declname>v</declname>
+        </param>
+        <briefdescription>
+<para>Helper function for trying to convert a <ref refid="namespaceYAML" kindref="compound">YAML</ref> snippet to a nested backend rule. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/src/yaml_parser.cpp" line="149" column="8" bodyfile="Core/src/yaml_parser.cpp" bodystart="149" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceYAML_1a1a9bbc2f4f2c1a8a4f516aa447410bab" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool YAML::check_field_is_valid_in_derived_rule</definition>
+        <argsstring>(const std::string &amp;field)</argsstring>
+        <name>check_field_is_valid_in_derived_rule</name>
+        <qualifiedname>YAML::check_field_is_valid_in_derived_rule</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>field</declname>
+        </param>
+        <briefdescription>
+<para>Throw an error if a yaml key is not one of those exclusively allowed in a module or backend rule. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/src/yaml_parser.cpp" line="232" column="8" bodyfile="Core/src/yaml_parser.cpp" bodystart="232" bodyend="239"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceYAML_1ae4e326c84f28b3934f00bb94d139b5e0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void YAML::throw_if_field_valid_only_in_backend_rule</definition>
+        <argsstring>(const std::string &amp;field)</argsstring>
+        <name>throw_if_field_valid_only_in_backend_rule</name>
+        <qualifiedname>YAML::throw_if_field_valid_only_in_backend_rule</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>field</declname>
+        </param>
+        <briefdescription>
+<para>Throw an error if a yaml key is one of those exclusively allowed in a backend rule. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/src/yaml_parser.cpp" line="242" column="8" bodyfile="Core/src/yaml_parser.cpp" bodystart="242" bodyend="248"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceYAML_1ad5ff7156f657a15957d3b7126abf122a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void YAML::throw_if_field_valid_only_in_module_rule</definition>
+        <argsstring>(const std::string &amp;field)</argsstring>
+        <name>throw_if_field_valid_only_in_module_rule</name>
+        <qualifiedname>YAML::throw_if_field_valid_only_in_module_rule</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>field</declname>
+        </param>
+        <briefdescription>
+<para>Throw an error if a yaml key is one of those exclusively allowed in a module rule. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/src/yaml_parser.cpp" line="251" column="8" bodyfile="Core/src/yaml_parser.cpp" bodystart="251" bodyend="257"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceYAML_1a072f9c771d6ba4f73273d87f2dfead82" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void YAML::forbid_both_true</definition>
+        <argsstring>(const std::string &amp;field, bool is_in_one_block, bool is_in_other_block)</argsstring>
+        <name>forbid_both_true</name>
+        <qualifiedname>YAML::forbid_both_true</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>field</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>is_in_one_block</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>is_in_other_block</declname>
+        </param>
+        <briefdescription>
+<para>Throw an error if a field appears in both an if and a then block. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/src/yaml_parser.cpp" line="260" column="8" bodyfile="Core/src/yaml_parser.cpp" bodystart="260" bodyend="264"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceYAML_1abe98e963eda885779b6b4c46bbfecc61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void YAML::build_rule</definition>
+        <argsstring>(const Node &amp;node, Rule &amp;rhs)</argsstring>
+        <name>build_rule</name>
+        <qualifiedname>YAML::build_rule</qualifiedname>
+        <param>
+          <type>const Node &amp;</type>
+          <declname>node</declname>
+        </param>
+        <param>
+          <type><ref refid="structGambit_1_1DRes_1_1Rule" kindref="compound">Rule</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Build the base-class parts of a rule from a yaml node. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/src/yaml_parser.cpp" line="267" column="8" bodyfile="Core/src/yaml_parser.cpp" bodystart="267" bodyend="359"/>
+      </memberdef>
+      <memberdef kind="function" id="namespaceYAML_1a4c8023ea7f07267ebf867772b3361cca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void YAML::set_other_module_rule_fields</definition>
+        <argsstring>(const YAML::detail::iterator_value &amp;entry, ModuleRule &amp;rhs)</argsstring>
+        <name>set_other_module_rule_fields</name>
+        <qualifiedname>YAML::set_other_module_rule_fields</qualifiedname>
+        <param>
+          <type>const YAML::detail::iterator_value &amp;</type>
+          <declname>entry</declname>
+        </param>
+        <param>
+          <type><ref refid="structGambit_1_1DRes_1_1ModuleRule" kindref="compound">ModuleRule</ref> &amp;</type>
+          <declname>rhs</declname>
+        </param>
+        <briefdescription>
+<para>Set fields exclusive to module rules that can only appear as &apos;then&apos; parts of a condition. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/src/yaml_parser.cpp" line="362" column="8" bodyfile="Core/src/yaml_parser.cpp" bodystart="362" bodyend="396"/>
+      </memberdef>
+      </sectiondef>
     <briefdescription>
 <para><ref refid="namespaceYAML" kindref="compound">YAML</ref> overloads for mass cut and mass cut ratio constituents. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Core/include/gambit/Core/yaml_parser.hpp" line="122" column="1"/>
+    <location file="Core/include/gambit/Core/yaml_parser.hpp" line="77" column="1"/>
   </compounddef>
 </doxygen>

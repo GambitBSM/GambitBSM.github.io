@@ -52,6 +52,9 @@ Authors:
 #ifndef __gambit_main_hpp__
 #define __gambit_main_hpp__
 
+#include "gambit/ScannerBit/py_module.hpp"
+#include "gambit/ScannerBit/scannerbit.hpp"
+#include "gambit/ScannerBit/priors_rollcall.hpp"
 #include "gambit/Utils/signal_helpers.hpp"
 #include "gambit/Utils/signal_handling.hpp"
 #include "gambit/Utils/static_members.hpp"
@@ -66,8 +69,6 @@ Authors:
 #include "gambit/Core/core_singleton.hpp"
 #include "gambit/Logs/logger.hpp"
 #include "gambit/Printers/printermanager.hpp"
-#include "gambit/ScannerBit/scannerbit.hpp"
-#include "gambit/ScannerBit/priors_rollcall.hpp"
 
 #endif //__gambit_main_hpp__
 ```
@@ -75,4 +76,4 @@ Authors:
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:07 +0000
+Updated on 2024-07-18 at 13:53:34 +0000

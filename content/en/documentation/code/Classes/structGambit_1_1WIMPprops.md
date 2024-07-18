@@ -17,6 +17,7 @@ description: "[No description available]"
 | -------------- | -------------- |
 | double | **[mass](/documentation/code/classes/structgambit_1_1wimpprops/#variable-mass)**  |
 | unsigned int | **[spinx2](/documentation/code/classes/structgambit_1_1wimpprops/#variable-spinx2)**  |
+| double | **[etaDM](/documentation/code/classes/structgambit_1_1wimpprops/#variable-etadm)**  |
 | bool | **[sc](/documentation/code/classes/structgambit_1_1wimpprops/#variable-sc)**  |
 | std::string | **[name](/documentation/code/classes/structgambit_1_1wimpprops/#variable-name)**  |
 | std::string | **[conjugate](/documentation/code/classes/structgambit_1_1wimpprops/#variable-conjugate)**  |
@@ -34,6 +35,13 @@ double mass;
 
 ```
 unsigned int spinx2;
+```
+
+
+### variable etaDM
+
+```
+double etaDM;
 ```
 
 
@@ -60,4 +68,4 @@ std::string conjugate;
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:03 +0000
+Updated on 2024-07-18 at 13:53:30 +0000

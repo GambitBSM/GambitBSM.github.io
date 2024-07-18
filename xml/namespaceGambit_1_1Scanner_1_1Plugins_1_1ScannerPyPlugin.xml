@@ -1,0 +1,328 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="namespaceGambit_1_1Scanner_1_1Plugins_1_1ScannerPyPlugin" kind="namespace" language="C++">
+    <compoundname>Gambit::Scanner::Plugins::ScannerPyPlugin</compoundname>
+    <innerclass refid="structGambit_1_1Scanner_1_1Plugins_1_1ScannerPyPlugin_1_1like__hypercube" prot="public">Gambit::Scanner::Plugins::ScannerPyPlugin::like_hypercube</innerclass>
+    <innerclass refid="structGambit_1_1Scanner_1_1Plugins_1_1ScannerPyPlugin_1_1like__physical" prot="public">Gambit::Scanner::Plugins::ScannerPyPlugin::like_physical</innerclass>
+    <innerclass refid="structGambit_1_1Scanner_1_1Plugins_1_1ScannerPyPlugin_1_1like__prior__physical" prot="public">Gambit::Scanner::Plugins::ScannerPyPlugin::like_prior_physical</innerclass>
+    <innerclass refid="classGambit_1_1Scanner_1_1Plugins_1_1ScannerPyPlugin_1_1like__ptr__base" prot="public">Gambit::Scanner::Plugins::ScannerPyPlugin::like_ptr_base</innerclass>
+    <innerclass refid="structGambit_1_1Scanner_1_1Plugins_1_1ScannerPyPlugin_1_1prior__physical" prot="public">Gambit::Scanner::Plugins::ScannerPyPlugin::prior_physical</innerclass>
+    <innerclass refid="classGambit_1_1Scanner_1_1Plugins_1_1ScannerPyPlugin_1_1scanner__base" prot="public">Gambit::Scanner::Plugins::ScannerPyPlugin::scanner_base</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="py__module__scan_8hpp_1aafd6eeb6d251b239aea08b80254157fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>EXPORT_SYMBOLS <ref refid="structGambit_1_1Scanner_1_1Plugins_1_1pluginData" kindref="compound">pluginData</ref> *&amp;</type>
+        <definition>EXPORT_SYMBOLS pluginData *&amp; Gambit::Scanner::Plugins::ScannerPyPlugin::pythonPluginData</definition>
+        <argsstring>()</argsstring>
+        <name>pythonPluginData</name>
+        <qualifiedname>Gambit::Scanner::Plugins::ScannerPyPlugin::pythonPluginData</qualifiedname>
+        <briefdescription>
+<para>A function to export Python plugin data. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is used to export data related to the Python plugin. It returns a reference to a pointer to the <ref refid="structGambit_1_1Scanner_1_1Plugins_1_1pluginData" kindref="compound">pluginData</ref> object.</para>
+<para><simplesect kind="return"><para>Returns a reference to a pointer to the <ref refid="structGambit_1_1Scanner_1_1Plugins_1_1pluginData" kindref="compound">pluginData</ref> object. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/py_module_scan.hpp" line="37" column="43" bodyfile="ScannerBit/include/gambit/ScannerBit/py_module_scan.hpp" bodystart="37" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="py__module__scan_8hpp_1a2ab034d8dc14925daf824a5dded9e605" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T Gambit::Scanner::Plugins::ScannerPyPlugin::get_inifile_value</definition>
+        <argsstring>(const std::string &amp;in)</argsstring>
+        <name>get_inifile_value</name>
+        <qualifiedname>Gambit::Scanner::Plugins::ScannerPyPlugin::get_inifile_value</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+<para>A function to retrieve a value from the INI file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is used to retrieve a value from the INI file based on a given key. The key is passed as a parameter to the function.</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of the value to be retrieved from the INI file. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key for which the value is to be retrieved from the INI file. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns the value associated with the given key in the INI file. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/py_module_scan.hpp" line="54" column="19" bodyfile="ScannerBit/include/gambit/ScannerBit/py_module_scan.hpp" bodystart="54" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="py__module__scan_8hpp_1a250471714a02fdfd5e39bb5f7df442a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T Gambit::Scanner::Plugins::ScannerPyPlugin::get_inifile_value</definition>
+        <argsstring>(const std::string &amp;in, const T &amp;defaults)</argsstring>
+        <name>get_inifile_value</name>
+        <qualifiedname>Gambit::Scanner::Plugins::ScannerPyPlugin::get_inifile_value</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>in</declname>
+        </param>
+        <param>
+          <type>const T &amp;</type>
+          <declname>defaults</declname>
+        </param>
+        <briefdescription>
+<para>A function to retrieve a value from the INI file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is used to retrieve a value from the INI file based on a given key. If the key is not found, a default value is returned.</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of the value to be retrieved from the INI file. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key for which the value is to be retrieved from the INI file. </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>defaults</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The default value to be returned if the key is not found in the INI file. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns the value associated with the given key in the INI file, or the default value if the key is not found. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/py_module_scan.hpp" line="77" column="19" bodyfile="ScannerBit/include/gambit/ScannerBit/py_module_scan.hpp" bodystart="77" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="py__module__scan_8hpp_1a52dc118d2865c4138ff9b21799f2b56f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>YAML::Node</type>
+        <definition>YAML::Node Gambit::Scanner::Plugins::ScannerPyPlugin::get_inifile_node</definition>
+        <argsstring>(const std::string &amp;in)</argsstring>
+        <name>get_inifile_node</name>
+        <qualifiedname>Gambit::Scanner::Plugins::ScannerPyPlugin::get_inifile_node</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>in</declname>
+        </param>
+        <briefdescription>
+<para>A function to retrieve a node from the INI file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is used to retrieve a YAML::Node from the INI file based on a given key. The key is passed as a parameter to the function.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>in</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The key for which the node is to be retrieved from the INI file. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns the YAML::Node associated with the given key in the INI file. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/py_module_scan.hpp" line="95" column="35" bodyfile="ScannerBit/include/gambit/ScannerBit/py_module_scan.hpp" bodystart="95" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="py__module__scan_8hpp_1a90de425d340eec0bc3235ddaa62f9dfa" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>YAML::Node</type>
+        <definition>YAML::Node Gambit::Scanner::Plugins::ScannerPyPlugin::get_inifile_node</definition>
+        <argsstring>()</argsstring>
+        <name>get_inifile_node</name>
+        <qualifiedname>Gambit::Scanner::Plugins::ScannerPyPlugin::get_inifile_node</qualifiedname>
+        <briefdescription>
+<para>A function to retrieve the root node from the INI file. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is used to retrieve the root YAML::Node from the INI file.</para>
+<para><simplesect kind="return"><para>Returns the root YAML::Node of the INI file. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/py_module_scan.hpp" line="107" column="35" bodyfile="ScannerBit/include/gambit/ScannerBit/py_module_scan.hpp" bodystart="107" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="py__module__scan_8hpp_1ad7223ce8f4e4d9a7c7bcb02dbf4aba57" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T &amp;</type>
+        <definition>T &amp; Gambit::Scanner::Plugins::ScannerPyPlugin::get_input_value</definition>
+        <argsstring>(int i)</argsstring>
+        <name>get_input_value</name>
+        <qualifiedname>Gambit::Scanner::Plugins::ScannerPyPlugin::get_input_value</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+<para>A function to retrieve an input value by index. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is used to retrieve an input value from a data structure based on the given index.</para>
+<para><parameterlist kind="templateparam"><parameteritem>
+<parameternamelist>
+<parametername>T</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The type of the input value to be retrieved. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>i</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The index of the input value to be retrieved. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns a reference to the input value at the given index. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/py_module_scan.hpp" line="122" column="19" bodyfile="ScannerBit/include/gambit/ScannerBit/py_module_scan.hpp" bodystart="122" bodyend="125"/>
+      </memberdef>
+      <memberdef kind="function" id="py__module__scan_8hpp_1ad90ba78fb39969aa818a5576fac9cbba" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="printer__interface_8hpp_1ae767584d510b4dcaa3b82278ab1ecbd7" kindref="member">Gambit::Scanner::printer_interface</ref> &amp;</type>
+        <definition>Gambit::Scanner::printer_interface &amp; Gambit::Scanner::Plugins::ScannerPyPlugin::get_printer</definition>
+        <argsstring>()</argsstring>
+        <name>get_printer</name>
+        <qualifiedname>Gambit::Scanner::Plugins::ScannerPyPlugin::get_printer</qualifiedname>
+        <briefdescription>
+<para>A function to retrieve the printer interface. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is used to retrieve a reference to the printer interface from the Gambit::Scanner namespace.</para>
+<para><simplesect kind="return"><para>Returns a reference to the printer interface. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/py_module_scan.hpp" line="134" column="59" bodyfile="ScannerBit/include/gambit/ScannerBit/py_module_scan.hpp" bodystart="134" bodyend="137"/>
+      </memberdef>
+      <memberdef kind="function" id="py__module__scan_8hpp_1a6662dc6db7029a25de499af618fa251c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classGambit_1_1Priors_1_1BasePrior" kindref="compound">Gambit::Scanner::prior_interface</ref> &amp;</type>
+        <definition>Gambit::Scanner::prior_interface &amp; Gambit::Scanner::Plugins::ScannerPyPlugin::get_prior</definition>
+        <argsstring>()</argsstring>
+        <name>get_prior</name>
+        <qualifiedname>Gambit::Scanner::Plugins::ScannerPyPlugin::get_prior</qualifiedname>
+        <briefdescription>
+<para>A function to retrieve the prior interface. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is used to retrieve a reference to the prior interface from the Gambit::Scanner namespace.</para>
+<para><simplesect kind="return"><para>Returns a reference to the prior interface. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/py_module_scan.hpp" line="146" column="57" bodyfile="ScannerBit/include/gambit/ScannerBit/py_module_scan.hpp" bodystart="146" bodyend="149"/>
+      </memberdef>
+      <memberdef kind="function" id="py__module__scan_8hpp_1a77a5ace4f7203e5822c626918993a14e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned int &amp;</type>
+        <definition>unsigned int &amp; Gambit::Scanner::Plugins::ScannerPyPlugin::get_dimension</definition>
+        <argsstring>()</argsstring>
+        <name>get_dimension</name>
+        <qualifiedname>Gambit::Scanner::Plugins::ScannerPyPlugin::get_dimension</qualifiedname>
+        <briefdescription>
+<para>A function to retrieve the dimension. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is used to retrieve a reference to the dimension. The dimension could represent various aspects depending on the context, such as the dimension of a data structure, a mathematical space, etc.</para>
+<para><simplesect kind="return"><para>Returns a reference to the dimension. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/py_module_scan.hpp" line="158" column="37" bodyfile="ScannerBit/include/gambit/ScannerBit/py_module_scan.hpp" bodystart="158" bodyend="158"/>
+      </memberdef>
+      <memberdef kind="function" id="py__module__scan_8hpp_1a71272e867e38e328024ae75d8c84eaa0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::shared_ptr&lt; <ref refid="classGambit_1_1Scanner_1_1Function__Base" kindref="compound">Gambit::Scanner::Function_Base</ref>&lt; double(std::unordered_map&lt; std::string, double &gt; &amp;)&gt; &gt;</type>
+        <definition>std::shared_ptr&lt; Gambit::Scanner::Function_Base&lt; double(std::unordered_map&lt; std::string, double &gt; &amp;)&gt; &gt; Gambit::Scanner::Plugins::ScannerPyPlugin::get_purpose</definition>
+        <argsstring>(const std::string &amp;purpose)</argsstring>
+        <name>get_purpose</name>
+        <qualifiedname>Gambit::Scanner::Plugins::ScannerPyPlugin::get_purpose</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>purpose</declname>
+        </param>
+        <briefdescription>
+<para>A function to retrieve a function object based on its purpose. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This function is used to retrieve a function object from the Gambit::Scanner namespace based on its purpose. The purpose is passed as a parameter to the function.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>purpose</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The purpose of the function to be retrieved. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Returns a shared pointer to the function object associated with the given purpose. </para>
+</simplesect>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/py_module_scan.hpp" line="169" column="17" bodyfile="ScannerBit/include/gambit/ScannerBit/py_module_scan.hpp" bodystart="169" bodyend="178"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ScannerBit/include/gambit/ScannerBit/py_module_scan.hpp" line="27" column="13"/>
+  </compounddef>
+</doxygen>

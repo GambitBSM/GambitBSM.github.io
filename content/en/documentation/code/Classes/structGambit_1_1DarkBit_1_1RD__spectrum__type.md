@@ -26,6 +26,7 @@ description: "[No description available]"
 | std::vector< [TH_Resonance](/documentation/code/classes/structgambit_1_1darkbit_1_1th__resonance/) > | **[resonances](/documentation/code/classes/structgambit_1_1darkbit_1_1rd__spectrum__type/#variable-resonances)**  |
 | std::vector< double > | **[threshold_energy](/documentation/code/classes/structgambit_1_1darkbit_1_1rd__spectrum__type/#variable-threshold-energy)**  |
 | std::string | **[particle_index_type](/documentation/code/classes/structgambit_1_1darkbit_1_1rd__spectrum__type/#variable-particle-index-type)**  |
+| double | **[etaDM](/documentation/code/classes/structgambit_1_1darkbit_1_1rd__spectrum__type/#variable-etadm)**  |
 | bool | **[isSelfConj](/documentation/code/classes/structgambit_1_1darkbit_1_1rd__spectrum__type/#variable-isselfconj)**  |
 
 ## Public Functions Documentation
@@ -78,6 +79,13 @@ std::string particle_index_type;
 ```
 
 
+### variable etaDM
+
+```
+double etaDM;
+```
+
+
 ### variable isSelfConj
 
 ```
@@ -87,4 +95,4 @@ bool isSelfConj;
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:04 +0000
+Updated on 2024-07-18 at 13:53:31 +0000

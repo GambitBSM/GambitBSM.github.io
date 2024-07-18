@@ -5312,6 +5312,7 @@ START_MODULE
     BACKEND_REQ(get_th_covariance_nuisance, (libsuperiso), void, (double***, char**, int*, const parameters*, const nuisance*, double**))
     BACKEND_OPTION( (SuperIso, 4.1), (libsuperiso) )
     #undef FUNCTION
+
     #define FUNCTION FeynHiggs_prediction_Bsmumu
     START_FUNCTION(double)
     DEPENDENCY(FlavourObs, fh_FlavourObs_container)
@@ -5360,6 +5361,7 @@ START_MODULE
     BACKEND_REQ(get_th_covariance_nuisance, (libsuperiso), void, (double***, char**, int*, const parameters*, const nuisance*, double**))
     BACKEND_OPTION( (SuperIso, 4.1), (libsuperiso) )
     #undef FUNCTION
+
     #define FUNCTION FeynHiggs_prediction_bsgamma
     START_FUNCTION(double)
     DEPENDENCY(FlavourObs, fh_FlavourObs_container)
@@ -6766,4 +6768,4 @@ START_MODULE
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:06 +0000
+Updated on 2024-07-18 at 13:53:33 +0000

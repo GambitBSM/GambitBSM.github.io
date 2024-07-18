@@ -331,7 +331,7 @@ Analysis_ATLAS_7TeV_1OR2LEPStop_4_7invfb()
     incrementCut(Total_events);
     std::vector<const Particle*> electrons = event->electrons();
     std::vector<const Particle*> muons = event->muons();
-    std::vector<const Jet*> jets = event->jets();
+    std::vector<const Jet*> jets = event->jets("antikt_R04");
 
     electrons = AnalysisUtil::filterPtEta(electrons, 20, 2.47);
     muons = AnalysisUtil::filterPtEta(muons, 10, 2.4);
@@ -612,4 +612,4 @@ DEFINE_ANALYSIS_FACTORY(ATLAS_7TeV_1OR2LEPStop_4_7invfb)
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:07 +0000
+Updated on 2024-07-18 at 13:53:34 +0000

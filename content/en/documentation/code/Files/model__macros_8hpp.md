@@ -50,7 +50,6 @@ description: "[No description available]"
 |  | **[CLASSLOAD_NEEDED](/documentation/code/files/model__macros_8hpp/#define-classload-needed)**(...)  |
 |  | **[ALLOW_MODELS](/documentation/code/files/model__macros_8hpp/#define-allow-models)**(...)  |
 |  | **[MAKE_PRIMARY_MODEL_FUNCTOR](/documentation/code/files/model__macros_8hpp/#define-make-primary-model-functor)**(FUNCTION, CAPABILITY, ORIGIN)  |
-|  | **[MODULE_START_MODEL](/documentation/code/files/model__macros_8hpp/#define-module-start-model)** <br>"In module" version of the START_MODEL macro  |
 |  | **[MODULE_INTERPRET_AS_X_FUNCTION](/documentation/code/files/model__macros_8hpp/#define-module-interpret-as-x-function)**(MODEL_X, FUNC) <br>"In module" version of the INTERPRET_AS_X_FUNCTION macro  |
 |  | **[MODULE_INTERPRET_AS_X_DEPENDENCY](/documentation/code/files/model__macros_8hpp/#define-module-interpret-as-x-dependency)**(MODEL_X, DEP, TYPE) <br>"In module" version of the INTERPRET_AS_X_DEPENDENCY macro  |
 |  | **[CORE_START_MODEL](/documentation/code/files/model__macros_8hpp/#define-core-start-model)**  |
@@ -184,7 +183,7 @@ Supplementary version of MAKE_FUNCTOR modded for primary_parameters functors.
 ### define START_MODEL
 
 ```
-#define START_MODEL MODULE_START_MODEL
+#define START_MODEL /* Do nothing */
 ```
 
 
@@ -530,33 +529,6 @@ MAKE_PRIMARY_MODEL_FUNCTOR_MAIN(FUNCTION,CAPABILITY,ORIGIN) \
 ```
 
 
-### define MODULE_START_MODEL
-
-```
-#define MODULE_START_MODEL   IF_TOKEN_UNDEFINED(MODEL,FAIL("You must define MODEL before calling "        \
-   "START_MODEL."))                                                            \
-  /*_Pragma("message declaring model...") \
-  _Pragma( STRINGIFY(CAT("message Forward declaring model: ",MODEL)) )      */ \
-  namespace Gambit                                                             \
-  {                                                                            \
-   namespace Models                                                            \
-   {                                                                           \
-    namespace MODEL                                                            \
-    {                                                                          \
-      /* Module errors */                                                      \
-      error& CAT(MODEL,_error)();                                              \
-      /* Module warnings */                                                    \
-      warning& CAT(MODEL,_warning)();                                          \
-    }                                                                          \
-   }                                                                           \
-  }                                                                            \
-```
-
-"In module" version of the START_MODEL macro 
-
-"Rollcall" macros. These are lifted straight from [module_macros_incore.hpp](/documentation/code/files/module__macros__incore_8hpp/#file-elements-module-macros-incore-hpp) but are modified here and there to suit the role of models. 
-
-
 ### define MODULE_INTERPRET_AS_X_FUNCTION
 
 ```
@@ -595,6 +567,9 @@ MAKE_PRIMARY_MODEL_FUNCTOR_MAIN(FUNCTION,CAPABILITY,ORIGIN) \
 ```
 
 "In module" version of the INTERPRET_AS_X_FUNCTION macro 
+
+"Rollcall" macros. These are lifted straight from [module_macros_incore.hpp](/documentation/code/files/module__macros__incore_8hpp/#file-elements-module-macros-incore-hpp) but are modified here and there to suit the role of models. 
+
 
 ### define MODULE_INTERPRET_AS_X_DEPENDENCY
 
@@ -798,7 +773,7 @@ Macro to easily get the Pipes for an INTERPRET_AS_X function, for retrieving dep
   #define CLASSLOAD_NEEDED(BACKEND, VERSION)               CORE_CLASSLOAD_NEEDED(BACKEND, VERSION, IS_MODEL)
 #else
   #include "gambit/Elements/module_macros_inmodule_defs.hpp"
-  #define START_MODEL                                       MODULE_START_MODEL
+  #define START_MODEL                                       /* Do nothing */
   #define DEFINEPARS(...)                                   /* Do nothing */
   #define MAP_TO_CAPABILITY(PARAMETER,CAPABILITY)           /* Do nothing */
   #define INTERPRET_AS_X_FUNCTION(MODEL_X,FUNC)             MODULE_INTERPRET_AS_X_FUNCTION(MODEL_X,FUNC)
@@ -849,26 +824,6 @@ Macro to easily get the Pipes for an INTERPRET_AS_X function, for retrieving dep
 //  ****************************************************************************
 /// "Rollcall" macros. These are lifted straight from module_macros_incore.hpp
 /// but are modified here and there to suit the role of models.
-
-/// "In module" version of the START_MODEL macro
-#define MODULE_START_MODEL                                                     \
-  IF_TOKEN_UNDEFINED(MODEL,FAIL("You must define MODEL before calling "        \
-   "START_MODEL."))                                                            \
-  /*_Pragma("message declaring model...") \
-  _Pragma( STRINGIFY(CAT("message Forward declaring model: ",MODEL)) )      */ \
-  namespace Gambit                                                             \
-  {                                                                            \
-   namespace Models                                                            \
-   {                                                                           \
-    namespace MODEL                                                            \
-    {                                                                          \
-      /* Module errors */                                                      \
-      error& CAT(MODEL,_error)();                                              \
-      /* Module warnings */                                                    \
-      warning& CAT(MODEL,_warning)();                                          \
-    }                                                                          \
-   }                                                                           \
-  }                                                                            \
 
 /// "In module" version of the INTERPRET_AS_X_FUNCTION macro
 #define MODULE_INTERPRET_AS_X_FUNCTION(MODEL_X,FUNC)                           \
@@ -1183,4 +1138,4 @@ Macro to easily get the Pipes for an INTERPRET_AS_X function, for retrieving dep
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:06 +0000
+Updated on 2024-07-18 at 13:53:33 +0000

@@ -28,6 +28,7 @@ description: "[No description available]"
 
   * Pat Scott 
   * Tomas Gonzalo ([gonzalo@physik.rwth-aachen.de](mailto:gonzalo@physik.rwth-aachen.de)) 
+  * Patrick Stoecker ([stoecker@physik.rwth-aachen.de](mailto:stoecker@physik.rwth-aachen.de)) 
 
 
 **Date**: 
@@ -35,6 +36,7 @@ description: "[No description available]"
   * 2013 Aug 
   * 2014 Feb, Aug
   * 2021 Sep
+  * 2023 May
 
 
 GAMBIT Core driver class.
@@ -72,6 +74,10 @@ Authors (add name and date if you modify):
 ///  \author Tomas Gonzalo
 ///          (gonzalo@physik.rwth-aachen.de)
 ///  \date 2021 Sep
+///
+///  \author Patrick Stoecker
+///          (stoecker@physik.rwth-aachen.de)
+///  \date 2023 May
 ///
 ///  *********************************************
 
@@ -166,13 +172,16 @@ namespace Gambit
 
     /// Free-form diagnostic functions
     /// @{
-    void ff_module_diagnostic(const str &);
-    void ff_backend_diagnostic(const str &);
-    void ff_capability_diagnostic(const str &);
-    void ff_model_diagnostic(const str &);
-    void ff_scanner_diagnostic(const str &);
-    void ff_test_function_diagnostic(const str &);
-    void ff_prior_diagnostic(const str &);
+    void free_form_diagnostic(const str&);
+    void ff_module_diagnostic(const str &, str&);
+    void ff_module_function_diagnostic(const str &, str&);
+    void ff_backend_diagnostic(const str &, str&);
+    void ff_backend_function_diagnostic(const str &, str&);
+    void ff_capability_diagnostic(const str &, str&);
+    void ff_model_diagnostic(const str &, str&);
+    void ff_scanner_diagnostic(const str &, str&);
+    void ff_test_function_diagnostic(const str &, str&);
+    void ff_prior_diagnostic(const str &, str&);
     /// @}
 
     /// Compute the status of a given backend
@@ -295,4 +304,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:07 +0000
+Updated on 2024-07-18 at 13:53:34 +0000

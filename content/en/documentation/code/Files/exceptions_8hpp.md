@@ -32,6 +32,7 @@ description: "[No description available]"
 | class | **[Gambit::SoftShutdownException](/documentation/code/classes/classgambit_1_1softshutdownexception/)** <br>Special exception used during controlled early shutdown.  |
 | class | **[Gambit::HardShutdownException](/documentation/code/classes/classgambit_1_1hardshutdownexception/)** <br>Special exception used during emergency early shutdown.  |
 | class | **[Gambit::MPIShutdownException](/documentation/code/classes/classgambit_1_1mpishutdownexception/)** <br>Special exception raised when emergency shutdown triggered via MPI.  |
+| class | **[Gambit::Suspicious_point_exception](/documentation/code/classes/classgambit_1_1suspicious__point__exception/)** <br>[Gambit](/documentation/code/namespaces/namespacegambit/) suspicious point exception class.  |
 
 ## Detailed Description
 
@@ -432,6 +433,29 @@ namespace Gambit
     private:
       std::string myWhat;
   };
+  
+  
+  /// Gambit suspicious point exception class.
+  class Suspicious_point_exception
+  {
+
+    public:
+
+      /// Constructor
+      Suspicious_point_exception() {}
+
+      /// Raise the suspicious point exception. Print it with a message and a code. The default code is 1.
+      void raise(const std::string &msg, int code, bool debug);
+      //void raise(const std::string &msg, int code=1, bool debug=false)
+      //{
+      //  // get the printer pointer
+      //  Printers::BasePrinter& printer = *(get_global_printer_manager()->printerptr);
+      //  printer.print(code, "Suspicious Point Code", Printers::get_main_param_id("Suspicious Point Code"), printer.getRank(), Printers::get_point_id());
+     // 
+     //   if (debug) std::cout << "Point Suspicious (" << code << "): " << msg << std::endl;
+     // }
+
+  };
 
 }
 
@@ -442,4 +466,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:05 +0000
+Updated on 2024-07-18 at 13:53:32 +0000

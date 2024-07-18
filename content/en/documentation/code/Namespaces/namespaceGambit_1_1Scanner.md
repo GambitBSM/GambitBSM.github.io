@@ -58,7 +58,7 @@ description: "[No description available]"
 | struct | **[Gambit::Scanner::is_args_convertible](/documentation/code/classes/structgambit_1_1scanner_1_1is__args__convertible/)**  |
 | struct | **[Gambit::Scanner::is_args_convertible< ret1(), ret2()>](/documentation/code/classes/structgambit_1_1scanner_1_1is__args__convertible_3_01ret1_07_08_00_01ret2_07_08_4/)**  |
 | struct | **[Gambit::Scanner::is_args_convertible< ret1(arg1, args1...), ret2(arg2, args2...)>](/documentation/code/classes/structgambit_1_1scanner_1_1is__args__convertible_3_01ret1_07arg1_00_01args1_8_8_8_08_00_01ret2_07arg2_00_01args2_8_8_8_08_4/)**  |
-| class | **[Gambit::Scanner::like_ptr](/documentation/code/classes/classgambit_1_1scanner_1_1like__ptr/)** <br>likelihood container for scanner plugins.  |
+| class | **[Gambit::Scanner::like_ptr](/documentation/code/classes/classgambit_1_1scanner_1_1like__ptr/)** <br>likelihood pointer holder for scanner plugins.  |
 | class | **[Gambit::Scanner::Multi_Scanner_Plugin_Function](/documentation/code/classes/classgambit_1_1scanner_1_1multi__scanner__plugin__function/)**  |
 | class | **[Gambit::Scanner::Multi_Scanner_Plugin_Function< ret(args...)>](/documentation/code/classes/classgambit_1_1scanner_1_1multi__scanner__plugin__function_3_01ret_07args_8_8_8_08_4/)** <br>Objective functor made up of multiple plugins.  |
 | class | **[Gambit::Scanner::Plugin_Function_Factory](/documentation/code/classes/classgambit_1_1scanner_1_1plugin__function__factory/)** <br>Factory class to make objectives using objective plugins.  |
@@ -80,9 +80,14 @@ description: "[No description available]"
 |                | Name           |
 | -------------- | -------------- |
 | typedef [Priors::BasePrior](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/) | **[prior_interface](/documentation/code/namespaces/namespacegambit_1_1scanner/#typedef-prior-interface)**  |
-| typedef void *(const std::map< std::string, std::vector< std::string > > &, const std::vector< std::pair< std::string, std::string > > &) | **[multi_func_type](/documentation/code/namespaces/namespacegambit_1_1scanner/#typedef-multi-func-type)**  |
+| typedef void *(const std::map< std::string, std::vector< std::string > > &, const std::vector< std::pair< std::string, std::string > > &, const Factory_Base &) | **[multi_func_type](/documentation/code/namespaces/namespacegambit_1_1scanner/#typedef-multi-func-type)**  |
 | typedef [Printers::BasePrinterManager](/documentation/code/classes/classgambit_1_1printers_1_1baseprintermanager/) | **[printer_interface](/documentation/code/namespaces/namespacegambit_1_1scanner/#typedef-printer-interface)** <br>typedef printer_interface_temp printer_interface;  |
 | typedef [Printers::BaseBasePrinter](/documentation/code/classes/classgambit_1_1printers_1_1basebaseprinter/) | **[printer](/documentation/code/namespaces/namespacegambit_1_1scanner/#typedef-printer)** <br>Type of the printer objects.  |
+| template <typename T \> <br>using Eigen::Matrix< T, Eigen::Dynamic, 1 > | **[vector](/documentation/code/namespaces/namespacegambit_1_1scanner/#using-vector)** <br>A vector.  |
+| template <typename T \> <br>using Eigen::Matrix< T, 1, Eigen::Dynamic > | **[row_vector](/documentation/code/namespaces/namespacegambit_1_1scanner/#using-row-vector)** <br>A row vector.  |
+| template <typename T \> <br>using Eigen::Matrix< T, Eigen::Dynamic, Eigen::Dynamic > | **[matrix](/documentation/code/namespaces/namespacegambit_1_1scanner/#using-matrix)** <br>A matrix.  |
+| template <typename T \> <br>using Eigen::Ref< [vector](/documentation/code/namespaces/namespacegambit_1_1scanner/#using-vector)< T >, 0, Eigen::Stride< Eigen::Dynamic, Eigen::Dynamic > > | **[hyper_cube_ref](/documentation/code/namespaces/namespacegambit_1_1scanner/#using-hyper-cube-ref)** <br>Represents the unit hypercube.  |
+| template <typename T \> <br>using Eigen::Map< [vector](/documentation/code/namespaces/namespacegambit_1_1scanner/#using-vector)< T >, Eigen::Unaligned, Eigen::Stride< 1, 1 > > | **[map_vector](/documentation/code/namespaces/namespacegambit_1_1scanner/#using-map-vector)** <br>Vector using raw data.  |
 
 ## Functions
 
@@ -112,12 +117,12 @@ description: "[No description available]"
 | void | **[resume_file_input](/documentation/code/namespaces/namespacegambit_1_1scanner/#function-resume-file-input)**(std::ifstream & in, std::string & param) |
 | void | **[resume_file_output](/documentation/code/namespaces/namespacegambit_1_1scanner/#function-resume-file-output)**(std::ofstream & out, std::string & param) |
 | size_t | **[resume_size_of](/documentation/code/namespaces/namespacegambit_1_1scanner/#function-resume-size-of)**(std::string & param) |
-| | **[LOAD_FUNC_TEMPLATE](/documentation/code/namespaces/namespacegambit_1_1scanner/#function-load-func-template)**([Scanner_Plugin_Function](/documentation/code/classes/classgambit_1_1scanner_1_1scanner__plugin__function/) , double(std::unordered_map< std::string, double > &) ) |
-| | **[LOAD_FUNC_TEMPLATE](/documentation/code/namespaces/namespacegambit_1_1scanner/#function-load-func-template)**([Scanner_Plugin_Function](/documentation/code/classes/classgambit_1_1scanner_1_1scanner__plugin__function/) , void(const std::vector< double > &, std::unordered_map< std::string, double > &) ) |
-| | **[LOAD_FUNC_TEMPLATE](/documentation/code/namespaces/namespacegambit_1_1scanner/#function-load-func-template)**([Scanner_Plugin_Function](/documentation/code/classes/classgambit_1_1scanner_1_1scanner__plugin__function/) , std::vector< double > std::unordered_map< std::string, double > &) |
-| | **[LOAD_MULTI_FUNC_TEMPLATE](/documentation/code/namespaces/namespacegambit_1_1scanner/#function-load-multi-func-template)**([Multi_Scanner_Plugin_Function](/documentation/code/classes/classgambit_1_1scanner_1_1multi__scanner__plugin__function/) , double(std::unordered_map< std::string, double > &) ) |
 | void | **[assign_aux_numbers](/documentation/code/namespaces/namespacegambit_1_1scanner/#function-assign-aux-numbers)**() |
 | template <typename... T\> <br>void | **[assign_aux_numbers](/documentation/code/namespaces/namespacegambit_1_1scanner/#function-assign-aux-numbers)**(const std::string & tag, const T &... params) |
+| std::string | **[pytype](/documentation/code/namespaces/namespacegambit_1_1scanner/#function-pytype)**(py::handle o)<br>Determines the Python type of a given object.  |
+| template <typename T \> <br>bool | **[is_pytype](/documentation/code/namespaces/namespacegambit_1_1scanner/#function-is-pytype)**(py::kwargs args, const std::string & type ="dtype", bool def_type =false)<br>Checks if a given Python object matches a specified type.  |
+| py::object | **[yaml_to_dict](/documentation/code/namespaces/namespacegambit_1_1scanner/#function-yaml-to-dict)**(const YAML::Node & node)<br>Converts a [YAML](/documentation/code/namespaces/namespaceyaml/) node to a Python dictionary.  |
+| YAML::Node | **[dict_to_yaml](/documentation/code/namespaces/namespacegambit_1_1scanner/#function-dict-to-yaml)**(py::handle o)<br>Converts a Python dictionary to a [YAML](/documentation/code/namespaces/namespaceyaml/) node.  |
 | EXPORT_SYMBOLS [error](/documentation/code/classes/classgambit_1_1error/) & | **[scan_error](/documentation/code/namespaces/namespacegambit_1_1scanner/#function-scan-error)**()<br>Scanner errors.  |
 | EXPORT_SYMBOLS [warning](/documentation/code/classes/classgambit_1_1warning/) & | **[scan_warning](/documentation/code/namespaces/namespacegambit_1_1scanner/#function-scan-warning)**()<br>Scanner warnings.  |
 | template <typename... T\> <br>auto | **[zip](/documentation/code/namespaces/namespacegambit_1_1scanner/#function-zip)**(const T &... containers)<br>Use for combine container in a range loop: for (auto &&x : zip(a, b)){...}.  |
@@ -156,7 +161,7 @@ typedef Priors::BasePrior Gambit::Scanner::prior_interface;
 ### typedef multi_func_type
 
 ```
-typedef void * Gambit::Scanner::multi_func_type(const std::map< std::string, std::vector< std::string > > &, const std::vector< std::pair< std::string, std::string > > &);
+typedef void * Gambit::Scanner::multi_func_type(const std::map< std::string, std::vector< std::string > > &, const std::vector< std::pair< std::string, std::string > > &, const Factory_Base &);
 ```
 
 
@@ -175,6 +180,51 @@ typedef Printers::BaseBasePrinter Gambit::Scanner::printer;
 ```
 
 Type of the printer objects. 
+
+### using vector
+
+```
+template <typename T >
+using Gambit::Scanner::vector = typedef Eigen::Matrix<T, Eigen::Dynamic, 1>;
+```
+
+A vector. 
+
+### using row_vector
+
+```
+template <typename T >
+using Gambit::Scanner::row_vector = typedef Eigen::Matrix<T, 1, Eigen::Dynamic>;
+```
+
+A row vector. 
+
+### using matrix
+
+```
+template <typename T >
+using Gambit::Scanner::matrix = typedef Eigen::Matrix<T, Eigen::Dynamic, Eigen::Dynamic>;
+```
+
+A matrix. 
+
+### using hyper_cube_ref
+
+```
+template <typename T >
+using Gambit::Scanner::hyper_cube_ref = typedef Eigen::Ref<vector<T>, 0, Eigen::Stride<Eigen::Dynamic, Eigen::Dynamic> >;
+```
+
+Represents the unit hypercube. 
+
+### using map_vector
+
+```
+template <typename T >
+using Gambit::Scanner::map_vector = typedef Eigen::Map<vector<T>, Eigen::Unaligned, Eigen::Stride<1, 1> >;
+```
+
+Vector using raw data. 
 
 
 ## Functions Documentation
@@ -435,46 +485,6 @@ inline size_t resume_size_of(
 ```
 
 
-### function LOAD_FUNC_TEMPLATE
-
-```
-LOAD_FUNC_TEMPLATE(
-    Scanner_Plugin_Function ,
-    double(std::unordered_map< std::string, double > &) 
-)
-```
-
-
-### function LOAD_FUNC_TEMPLATE
-
-```
-LOAD_FUNC_TEMPLATE(
-    Scanner_Plugin_Function ,
-    void(const std::vector< double > &, std::unordered_map< std::string, double > &) 
-)
-```
-
-
-### function LOAD_FUNC_TEMPLATE
-
-```
-LOAD_FUNC_TEMPLATE(
-    Scanner_Plugin_Function ,
-    std::vector< double > std::unordered_map< std::string, double > &
-)
-```
-
-
-### function LOAD_MULTI_FUNC_TEMPLATE
-
-```
-LOAD_MULTI_FUNC_TEMPLATE(
-    Multi_Scanner_Plugin_Function ,
-    double(std::unordered_map< std::string, double > &) 
-)
-```
-
-
 ### function assign_aux_numbers
 
 ```
@@ -491,6 +501,96 @@ inline void assign_aux_numbers(
     const T &... params
 )
 ```
+
+
+### function pytype
+
+```
+inline std::string pytype(
+    py::handle o
+)
+```
+
+Determines the Python type of a given object. 
+
+**Parameters**: 
+
+  * **obj** The Python object whose type is to be determined. 
+
+
+**Return**: A string representation of the Python object's type. 
+
+This function inspects a Python object and returns a string representation of its type.
+
+
+### function is_pytype
+
+```
+template <typename T >
+bool is_pytype(
+    py::kwargs args,
+    const std::string & type ="dtype",
+    bool def_type =false
+)
+```
+
+Checks if a given Python object matches a specified type. 
+
+**Parameters**: 
+
+  * **args** The Python kwargs object containing the arguments. 
+  * **type** The key in the kwargs to check the type of. Defaults to "dtype". 
+  * **def_type** The default return value if the type key is not found in the kwargs. Defaults to false. 
+
+
+**Template Parameters**: 
+
+  * **T** The type to check against. 
+
+
+**Return**: True if the object matches the specified type, false otherwise. 
+
+This function inspects a Python object and checks if it matches the specified type.
+
+
+### function yaml_to_dict
+
+```
+inline py::object yaml_to_dict(
+    const YAML::Node & node
+)
+```
+
+Converts a [YAML](/documentation/code/namespaces/namespaceyaml/) node to a Python dictionary. 
+
+**Parameters**: 
+
+  * **node** The [YAML](/documentation/code/namespaces/namespaceyaml/) node to be converted. 
+
+
+**Return**: A Python dictionary that represents the [YAML](/documentation/code/namespaces/namespaceyaml/) node. 
+
+This function recursively traverses a [YAML](/documentation/code/namespaces/namespaceyaml/) node and constructs a corresponding Python dictionary.
+
+
+### function dict_to_yaml
+
+```
+inline YAML::Node dict_to_yaml(
+    py::handle o
+)
+```
+
+Converts a Python dictionary to a [YAML](/documentation/code/namespaces/namespaceyaml/) node. 
+
+**Parameters**: 
+
+  * **o** The Python object to be converted. 
+
+
+**Return**: A [YAML](/documentation/code/namespaces/namespaceyaml/) node that represents the Python dictionary. 
+
+This function recursively traverses a Python dictionary and constructs a corresponding [YAML](/documentation/code/namespaces/namespaceyaml/) node.
 
 
 ### function scan_error
@@ -666,7 +766,7 @@ inline YAML::Node combineNodes(
 
 ```
 gambit_registry {
-            typedef void* func_type(const std::vector<std::string> &, const std::string &);
+            typedef void* func_type(const std::vector<std::string> &, const std::string &, const Factory_Base &);
 ```
 
 
@@ -696,4 +796,4 @@ int ScannerBit_handlers = register_ScannerBit_handlers();
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:04 +0000
+Updated on 2024-07-18 at 13:53:32 +0000

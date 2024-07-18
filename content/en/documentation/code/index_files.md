@@ -312,6 +312,51 @@ weight: 30
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/libfarraytest_8hpp/#file-backend-types-libfarraytest-hpp>backend_types/libFarrayTest.hpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/libfirst_8hpp/#file-backend-types-libfirst-hpp>backend_types/libfirst.hpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/nulike_8hpp/#file-backend-types-nulike-hpp>backend_types/nulike.hpp<a></b><br>
+<details><summary><b>dir <a href=/documentation/code/files/dir_d39cb809c78643126e50dded50f102d7/#dir-obscura-1-1-0>obscura_1_1_0<a></b></summary>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/abstract__dm__detector_8hpp/#file-obscura-1-1-0-abstract-dm-detector-hpp>obscura_1_1_0/abstract_DM_Detector.hpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/abstract__dm__detector__crystal_8hpp/#file-obscura-1-1-0-abstract-dm-detector-crystal-hpp>obscura_1_1_0/abstract_DM_Detector_Crystal.hpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/abstract__dm__detector__ionization_8hpp/#file-obscura-1-1-0-abstract-dm-detector-ionization-hpp>obscura_1_1_0/abstract_DM_Detector_Ionization.hpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/abstract__dm__detector__ionization__er_8hpp/#file-obscura-1-1-0-abstract-dm-detector-ionization-er-hpp>obscura_1_1_0/abstract_DM_Detector_Ionization_ER.hpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/abstract__dm__detector__ionization__migdal_8hpp/#file-obscura-1-1-0-abstract-dm-detector-ionization-migdal-hpp>obscura_1_1_0/abstract_DM_Detector_Ionization_Migdal.hpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/abstract__dm__distribution_8hpp/#file-obscura-1-1-0-abstract-dm-distribution-hpp>obscura_1_1_0/abstract_DM_Distribution.hpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/abstract__dm__particle_8hpp/#file-obscura-1-1-0-abstract-dm-particle-hpp>obscura_1_1_0/abstract_DM_Particle.hpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/abstract__dm__particle__si_8hpp/#file-obscura-1-1-0-abstract-dm-particle-si-hpp>obscura_1_1_0/abstract_DM_Particle_SI.hpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/abstract__dm__particle__standard_8hpp/#file-obscura-1-1-0-abstract-dm-particle-standard-hpp>obscura_1_1_0/abstract_DM_Particle_Standard.hpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/abstract__standard__halo__model_8hpp/#file-obscura-1-1-0-abstract-standard-halo-model-hpp>obscura_1_1_0/abstract_Standard_Halo_Model.hpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/include_2gambit_2backends_2backend__types_2obscura__1__1__0_2identification_8hpp/#file-obscura-1-1-0-include-gambit-backends-backend-types-obscura-1-1-0-identification-hpp>obscura_1_1_0/include/gambit/Backends/backend_types/obscura_1_1_0/identification.hpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/obscura__1__1__0_2forward__decls__abstract__classes_8hpp/#file-obscura-1-1-0-obscura-1-1-0-forward-decls-abstract-classes-hpp>obscura_1_1_0/obscura_1_1_0/forward_decls_abstract_classes.hpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/obscura__1__1__0_2forward__decls__wrapper__classes_8hpp/#file-obscura-1-1-0-obscura-1-1-0-forward-decls-wrapper-classes-hpp>obscura_1_1_0/obscura_1_1_0/forward_decls_wrapper_classes.hpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/obscura__1__1__0_2loaded__types_8hpp/#file-obscura-1-1-0-obscura-1-1-0-loaded-types-hpp>obscura_1_1_0/obscura_1_1_0/loaded_types.hpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/wrapper__dm__detector_8hpp/#file-obscura-1-1-0-wrapper-dm-detector-hpp>obscura_1_1_0/wrapper_DM_Detector.hpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/wrapper__dm__detector__crystal_8hpp/#file-obscura-1-1-0-wrapper-dm-detector-crystal-hpp>obscura_1_1_0/wrapper_DM_Detector_Crystal.hpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/wrapper__dm__detector__crystal__decl_8hpp/#file-obscura-1-1-0-wrapper-dm-detector-crystal-decl-hpp>obscura_1_1_0/wrapper_DM_Detector_Crystal_decl.hpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/wrapper__dm__detector__crystal__def_8hpp/#file-obscura-1-1-0-wrapper-dm-detector-crystal-def-hpp>obscura_1_1_0/wrapper_DM_Detector_Crystal_def.hpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/wrapper__dm__detector__ionization_8hpp/#file-obscura-1-1-0-wrapper-dm-detector-ionization-hpp>obscura_1_1_0/wrapper_DM_Detector_Ionization.hpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/wrapper__dm__detector__ionization__er_8hpp/#file-obscura-1-1-0-wrapper-dm-detector-ionization-er-hpp>obscura_1_1_0/wrapper_DM_Detector_Ionization_ER.hpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/wrapper__dm__detector__ionization__er__decl_8hpp/#file-obscura-1-1-0-wrapper-dm-detector-ionization-er-decl-hpp>obscura_1_1_0/wrapper_DM_Detector_Ionization_ER_decl.hpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/wrapper__dm__detector__ionization__er__def_8hpp/#file-obscura-1-1-0-wrapper-dm-detector-ionization-er-def-hpp>obscura_1_1_0/wrapper_DM_Detector_Ionization_ER_def.hpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/wrapper__dm__detector__ionization__migdal_8hpp/#file-obscura-1-1-0-wrapper-dm-detector-ionization-migdal-hpp>obscura_1_1_0/wrapper_DM_Detector_Ionization_Migdal.hpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/wrapper__dm__detector__ionization__migdal__decl_8hpp/#file-obscura-1-1-0-wrapper-dm-detector-ionization-migdal-decl-hpp>obscura_1_1_0/wrapper_DM_Detector_Ionization_Migdal_decl.hpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/wrapper__dm__detector__ionization__migdal__def_8hpp/#file-obscura-1-1-0-wrapper-dm-detector-ionization-migdal-def-hpp>obscura_1_1_0/wrapper_DM_Detector_Ionization_Migdal_def.hpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/wrapper__dm__detector__ionization__decl_8hpp/#file-obscura-1-1-0-wrapper-dm-detector-ionization-decl-hpp>obscura_1_1_0/wrapper_DM_Detector_Ionization_decl.hpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/wrapper__dm__detector__ionization__def_8hpp/#file-obscura-1-1-0-wrapper-dm-detector-ionization-def-hpp>obscura_1_1_0/wrapper_DM_Detector_Ionization_def.hpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/wrapper__dm__detector__decl_8hpp/#file-obscura-1-1-0-wrapper-dm-detector-decl-hpp>obscura_1_1_0/wrapper_DM_Detector_decl.hpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/wrapper__dm__detector__def_8hpp/#file-obscura-1-1-0-wrapper-dm-detector-def-hpp>obscura_1_1_0/wrapper_DM_Detector_def.hpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/wrapper__dm__distribution_8hpp/#file-obscura-1-1-0-wrapper-dm-distribution-hpp>obscura_1_1_0/wrapper_DM_Distribution.hpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/wrapper__dm__distribution__decl_8hpp/#file-obscura-1-1-0-wrapper-dm-distribution-decl-hpp>obscura_1_1_0/wrapper_DM_Distribution_decl.hpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/wrapper__dm__distribution__def_8hpp/#file-obscura-1-1-0-wrapper-dm-distribution-def-hpp>obscura_1_1_0/wrapper_DM_Distribution_def.hpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/wrapper__dm__particle_8hpp/#file-obscura-1-1-0-wrapper-dm-particle-hpp>obscura_1_1_0/wrapper_DM_Particle.hpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/wrapper__dm__particle__si_8hpp/#file-obscura-1-1-0-wrapper-dm-particle-si-hpp>obscura_1_1_0/wrapper_DM_Particle_SI.hpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/wrapper__dm__particle__si__decl_8hpp/#file-obscura-1-1-0-wrapper-dm-particle-si-decl-hpp>obscura_1_1_0/wrapper_DM_Particle_SI_decl.hpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/wrapper__dm__particle__si__def_8hpp/#file-obscura-1-1-0-wrapper-dm-particle-si-def-hpp>obscura_1_1_0/wrapper_DM_Particle_SI_def.hpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/wrapper__dm__particle__standard_8hpp/#file-obscura-1-1-0-wrapper-dm-particle-standard-hpp>obscura_1_1_0/wrapper_DM_Particle_Standard.hpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/wrapper__dm__particle__standard__decl_8hpp/#file-obscura-1-1-0-wrapper-dm-particle-standard-decl-hpp>obscura_1_1_0/wrapper_DM_Particle_Standard_decl.hpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/wrapper__dm__particle__standard__def_8hpp/#file-obscura-1-1-0-wrapper-dm-particle-standard-def-hpp>obscura_1_1_0/wrapper_DM_Particle_Standard_def.hpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/wrapper__dm__particle__decl_8hpp/#file-obscura-1-1-0-wrapper-dm-particle-decl-hpp>obscura_1_1_0/wrapper_DM_Particle_decl.hpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/wrapper__dm__particle__def_8hpp/#file-obscura-1-1-0-wrapper-dm-particle-def-hpp>obscura_1_1_0/wrapper_DM_Particle_def.hpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/wrapper__standard__halo__model_8hpp/#file-obscura-1-1-0-wrapper-standard-halo-model-hpp>obscura_1_1_0/wrapper_Standard_Halo_Model.hpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/wrapper__standard__halo__model__decl_8hpp/#file-obscura-1-1-0-wrapper-standard-halo-model-decl-hpp>obscura_1_1_0/wrapper_Standard_Halo_Model_decl.hpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/wrapper__standard__halo__model__def_8hpp/#file-obscura-1-1-0-wrapper-standard-halo-model-def-hpp>obscura_1_1_0/wrapper_Standard_Halo_Model_def.hpp<a></b><br></details>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/plc_8hpp/#file-backend-types-plc-hpp>backend_types/plc.hpp<a></b><br>
 <details><summary><b>dir <a href=/documentation/code/files/dir_f1f2e6ca6d947d21943ec8ed42424e5a/#dir-vevacious-1-0>vevacious_1_0<a></b></summary>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/abstract__vevaciousplusplus_8hpp/#file-vevacious-1-0-abstract-vevaciousplusplus-hpp>vevacious_1_0/abstract_VevaciousPlusPlus.hpp<a></b><br>
@@ -340,6 +385,7 @@ weight: 30
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/ddcalc__2__2__0_8hpp/#file-frontends-ddcalc-2-2-0-hpp>frontends/DDCalc_2_2_0.hpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/ddcalc__2__3__0_8hpp/#file-frontends-ddcalc-2-3-0-hpp>frontends/DDCalc_2_3_0.hpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/darkages__1__2__0_8hpp/#file-frontends-darkages-1-2-0-hpp>frontends/DarkAges_1_2_0.hpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/darkcast__1__1_8hpp/#file-frontends-darkcast-1-1-hpp>frontends/DarkCast_1_1.hpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/darksusy__5__1__3_8hpp/#file-frontends-darksusy-5-1-3-hpp>frontends/DarkSUSY_5_1_3.hpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/darksusy__mssm__6__1__1_8hpp/#file-frontends-darksusy-mssm-6-1-1-hpp>frontends/DarkSUSY_MSSM_6_1_1.hpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/darksusy__mssm__6__2__2_8hpp/#file-frontends-darksusy-mssm-6-2-2-hpp>frontends/DarkSUSY_MSSM_6_2_2.hpp<a></b><br>
@@ -363,10 +409,8 @@ weight: 30
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/libfirst__1__1_8hpp/#file-frontends-libfirst-1-1-hpp>frontends/LibFirst_1_1.hpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/libfortran__1__0_8hpp/#file-frontends-libfortran-1-0-hpp>frontends/LibFortran_1_0.hpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/libmathematicatest__1__0_8hpp/#file-frontends-libmathematicatest-1-0-hpp>frontends/LibMathematicaTest_1_0.hpp<a></b><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/libsecond__1__0_8hpp/#file-frontends-libsecond-1-0-hpp>frontends/LibSecond_1_0.hpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/libsecond__1__1_8hpp/#file-frontends-libsecond-1-1-hpp>frontends/LibSecond_1_1.hpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/libsecond__1__2_8hpp/#file-frontends-libsecond-1-2-hpp>frontends/LibSecond_1_2.hpp<a></b><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/libthird__1__0_8hpp/#file-frontends-libthird-1-0-hpp>frontends/LibThird_1_0.hpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/libthird__1__1_8hpp/#file-frontends-libthird-1-1-hpp>frontends/LibThird_1_1.hpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/libthird__1__2_8hpp/#file-frontends-libthird-1-2-hpp>frontends/LibThird_1_2.hpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/micromegas__dmsimpvectormedvectordm__3__6__9__2_8hpp/#file-frontends-micromegas-dmsimpvectormedvectordm-3-6-9-2-hpp>frontends/MicrOmegas_DMsimpVectorMedVectorDM_3_6_9_2.hpp<a></b><br>
@@ -384,8 +428,8 @@ weight: 30
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/rivet__3__1__5_8hpp/#file-frontends-rivet-3-1-5-hpp>frontends/Rivet_3_1_5.hpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/spheno__3__3__8_8hpp/#file-frontends-spheno-3-3-8-hpp>frontends/SPheno_3_3_8.hpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/spheno__4__0__3_8hpp/#file-frontends-spheno-4-0-3-hpp>frontends/SPheno_4_0_3.hpp<a></b><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/susy-hit__1__5_8hpp/#file-frontends-susy-hit-1-5-hpp>frontends/SUSY-HIT_1_5.hpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/susyhd__1__0__2_8hpp/#file-frontends-susyhd-1-0-2-hpp>frontends/SUSYHD_1_0_2.hpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/susy__hit__1__5_8hpp/#file-frontends-susy-hit-1-5-hpp>frontends/SUSY_HIT_1_5.hpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/superiso__4__1_8hpp/#file-frontends-superiso-4-1-hpp>frontends/SuperIso_4_1.hpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/classy__2__6__3_8hpp/#file-frontends-classy-2-6-3-hpp>frontends/classy_2_6_3.hpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/classy__2__9__3_8hpp/#file-frontends-classy-2-9-3-hpp>frontends/classy_2_9_3.hpp<a></b><br>
@@ -402,6 +446,7 @@ weight: 30
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/nulike__1__0__7_8hpp/#file-frontends-nulike-1-0-7-hpp>frontends/nulike_1_0_7.hpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/nulike__1__0__8_8hpp/#file-frontends-nulike-1-0-8-hpp>frontends/nulike_1_0_8.hpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/nulike__1__0__9_8hpp/#file-frontends-nulike-1-0-9-hpp>frontends/nulike_1_0_9.hpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/obscura__1__1__0_8hpp/#file-frontends-obscura-1-1-0-hpp>frontends/obscura_1_1_0.hpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/pbarlike__1__0_8hpp/#file-frontends-pbarlike-1-0-hpp>frontends/pbarlike_1_0.hpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/plc__3__0_8hpp/#file-frontends-plc-3-0-hpp>frontends/plc_3_0.hpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/salami__0__1__0_8hpp/#file-frontends-salami-0-1-0-hpp>frontends/salami_0_1_0.hpp<a></b><br>
@@ -470,6 +515,7 @@ weight: 30
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/ddcalc__2__2__0_8cpp/#file-frontends-ddcalc-2-2-0-cpp>frontends/DDCalc_2_2_0.cpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/ddcalc__2__3__0_8cpp/#file-frontends-ddcalc-2-3-0-cpp>frontends/DDCalc_2_3_0.cpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/darkages__1__2__0_8cpp/#file-frontends-darkages-1-2-0-cpp>frontends/DarkAges_1_2_0.cpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/darkcast__1__1_8cpp/#file-frontends-darkcast-1-1-cpp>frontends/DarkCast_1_1.cpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/darksusy__5__1__3_8cpp/#file-frontends-darksusy-5-1-3-cpp>frontends/DarkSUSY_5_1_3.cpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/darksusy__mssm__6__1__1_8cpp/#file-frontends-darksusy-mssm-6-1-1-cpp>frontends/DarkSUSY_MSSM_6_1_1.cpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/darksusy__mssm__6__2__2_8cpp/#file-frontends-darksusy-mssm-6-2-2-cpp>frontends/DarkSUSY_MSSM_6_2_2.cpp<a></b><br>
@@ -489,7 +535,6 @@ weight: 30
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/libmathematicatest_8cpp/#file-frontends-libmathematicatest-cpp>frontends/LibMathematicaTest.cpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/libsecond__1__1_8cpp/#file-frontends-libsecond-1-1-cpp>frontends/LibSecond_1_1.cpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/libsecond__1__2_8cpp/#file-frontends-libsecond-1-2-cpp>frontends/LibSecond_1_2.cpp<a></b><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/libthird__1__0_8cpp/#file-frontends-libthird-1-0-cpp>frontends/LibThird_1_0.cpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/libthird__1__1_8cpp/#file-frontends-libthird-1-1-cpp>frontends/LibThird_1_1.cpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/libthird__1__2_8cpp/#file-frontends-libthird-1-2-cpp>frontends/LibThird_1_2.cpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/micromegas__dmsimpvectormedvectordm__3__6__9__2_8cpp/#file-frontends-micromegas-dmsimpvectormedvectordm-3-6-9-2-cpp>frontends/MicrOmegas_DMsimpVectorMedVectorDM_3_6_9_2.cpp<a></b><br>
@@ -506,8 +551,8 @@ weight: 30
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/rivet__3__1__5_8cpp/#file-frontends-rivet-3-1-5-cpp>frontends/Rivet_3_1_5.cpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/spheno__3__3__8_8cpp/#file-frontends-spheno-3-3-8-cpp>frontends/SPheno_3_3_8.cpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/spheno__4__0__3_8cpp/#file-frontends-spheno-4-0-3-cpp>frontends/SPheno_4_0_3.cpp<a></b><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/susy-hit__1__5_8cpp/#file-frontends-susy-hit-1-5-cpp>frontends/SUSY-HIT_1_5.cpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/susyhd__1__0__2_8cpp/#file-frontends-susyhd-1-0-2-cpp>frontends/SUSYHD_1_0_2.cpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/susy__hit__1__5_8cpp/#file-frontends-susy-hit-1-5-cpp>frontends/SUSY_HIT_1_5.cpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/superiso__4__1_8cpp/#file-frontends-superiso-4-1-cpp>frontends/SuperIso_4_1.cpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/classy__2__6__3_8cpp/#file-frontends-classy-2-6-3-cpp>frontends/classy_2_6_3.cpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/classy__2__9__3_8cpp/#file-frontends-classy-2-9-3-cpp>frontends/classy_2_9_3.cpp<a></b><br>
@@ -596,6 +641,7 @@ weight: 30
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/topness_8h/#file-colliderbit-topness-h>ColliderBit/topness.h<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/xsec_8hpp/#file-colliderbit-xsec-hpp>ColliderBit/xsec.hpp<a></b><br></details></details></details>
 <details><summary><b>dir <a href=/documentation/code/files/dir_ebc0d8ef92b132863f07a78e664e2ed5/#dir-src>src<a></b></summary>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/colliderbit__bfactories_8cpp/#file-src-colliderbit-bfactories-cpp>src/ColliderBit_Bfactories.cpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/colliderbit__higgs_8cpp/#file-src-colliderbit-higgs-cpp>src/ColliderBit_Higgs.cpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/colliderbit__interpolatedyields_8cpp/#file-src-colliderbit-interpolatedyields-cpp>src/ColliderBit_InterpolatedYields.cpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/colliderbit__lep_8cpp/#file-src-colliderbit-lep-cpp>src/ColliderBit_LEP.cpp<a></b><br>
@@ -715,6 +761,9 @@ weight: 30
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/gambit_8hpp/#file-core-gambit-hpp>Core/gambit.hpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/likelihood__container_8hpp/#file-core-likelihood-container-hpp>Core/likelihood_container.hpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/modelgraph_8hpp/#file-core-modelgraph-hpp>Core/modelgraph.hpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/observable_8hpp/#file-core-observable-hpp>Core/observable.hpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/resolution__utilities_8hpp/#file-core-resolution-utilities-hpp>Core/resolution_utilities.hpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/rule_8hpp/#file-core-rule-hpp>Core/rule.hpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/yaml__description__database_8hpp/#file-core-yaml-description-database-hpp>Core/yaml_description_database.hpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/yaml__parser_8hpp/#file-core-yaml-parser-hpp>Core/yaml_parser.hpp<a></b><br></details></details></details>
 <details><summary><b>dir <a href=/documentation/code/files/dir_6635075fd29d94b1e79ef2060fed20a6/#dir-src>src<a></b></summary>
@@ -730,6 +779,9 @@ weight: 30
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/gambit_8cpp/#file-src-gambit-cpp>src/gambit.cpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/likelihood__container_8cpp/#file-src-likelihood-container-cpp>src/likelihood_container.cpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/modelgraph_8cpp/#file-src-modelgraph-cpp>src/modelgraph.cpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/observable_8cpp/#file-src-observable-cpp>src/observable.cpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/resolution__utilities_8cpp/#file-src-resolution-utilities-cpp>src/resolution_utilities.cpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/rule_8cpp/#file-src-rule-cpp>src/rule.cpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/yaml__description__database_8cpp/#file-src-yaml-description-database-cpp>src/yaml_description_database.cpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/yaml__parser_8cpp/#file-src-yaml-parser-cpp>src/yaml_parser.cpp<a></b><br></details></details>
 <details><summary><b>dir <a href=/documentation/code/files/dir_b1a5fa1245cbf0e22758453297d4af82/#dir-cosmobit>CosmoBit<a></b></summary>
@@ -792,6 +844,9 @@ weight: 30
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/relicdensity_8cpp/#file-src-relicdensity-cpp>src/RelicDensity.cpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/simplehist_8cpp/#file-src-simplehist-cpp>src/SimpleHist.cpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/simplelikelihoods_8cpp/#file-src-simplelikelihoods-cpp>src/SimpleLikelihoods.cpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/subgevdm__selfinteractions_8cpp/#file-src-subgevdm-selfinteractions-cpp>src/SubGeVDM_SelfInteractions.cpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/subgevdm__fermion_8cpp/#file-src-subgevdm-fermion-cpp>src/SubGeVDM_fermion.cpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/subgevdm__scalar_8cpp/#file-src-subgevdm-scalar-cpp>src/SubGeVDM_scalar.cpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/sunneutrinos_8cpp/#file-src-sunneutrinos-cpp>src/SunNeutrinos.cpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/wimp__eft_8cpp/#file-src-wimp-eft-cpp>src/WIMP_EFT.cpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/xray_8cpp/#file-src-xray-cpp>src/Xray.cpp<a></b><br>
@@ -850,6 +905,7 @@ weight: 30
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/type__equivalency_8hpp/#file-elements-type-equivalency-hpp>Elements/type_equivalency.hpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/types__rollcall_8hpp/#file-elements-types-rollcall-hpp>Elements/types_rollcall.hpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/virtual__higgs_8hpp/#file-elements-virtual-higgs-hpp>Elements/virtual_higgs.hpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/virtual__photon_8hpp/#file-elements-virtual-photon-hpp>Elements/virtual_photon.hpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/wimp__types_8hpp/#file-elements-wimp-types-hpp>Elements/wimp_types.hpp<a></b><br></details></details></details>
 <details><summary><b>dir <a href=/documentation/code/files/dir_f215fb19f14658ee94d4edb7cc681380/#dir-src>src<a></b></summary>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/elements_2src_2functors_8cpp/#file-src-elements-src-functors-cpp>src/Elements/src/functors.cpp<a></b><br>
@@ -868,6 +924,7 @@ weight: 30
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/translator_8cpp/#file-src-translator-cpp>src/translator.cpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/type__equivalency_8cpp/#file-src-type-equivalency-cpp>src/type_equivalency.cpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/virtual__higgs_8cpp/#file-src-virtual-higgs-cpp>src/virtual_higgs.cpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/virtual__photon_8cpp/#file-src-virtual-photon-cpp>src/virtual_photon.cpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/wimp__types_8cpp/#file-src-wimp-types-cpp>src/wimp_types.cpp<a></b><br></details></details>
 <details><summary><b>dir <a href=/documentation/code/files/dir_f54536861c7dac42d8c31fef7a166e8f/#dir-examplebit-a>ExampleBit_A<a></b></summary>
 <details><summary><b>dir <a href=/documentation/code/files/dir_73419aae21f2790e2a34b6020470874c/#dir-examples>examples<a></b></summary>
@@ -928,6 +985,7 @@ weight: 30
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/smhiggssimplespec_8hpp/#file-simplespectra-smhiggssimplespec-hpp>SimpleSpectra/SMHiggsSimpleSpec.hpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/smsimplespec_8hpp/#file-simplespectra-smsimplespec-hpp>SimpleSpectra/SMSimpleSpec.hpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/scalarsingletdmsimplespec_8hpp/#file-simplespectra-scalarsingletdmsimplespec-hpp>SimpleSpectra/ScalarSingletDMSimpleSpec.hpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/subgevdmsimplespec_8hpp/#file-simplespectra-subgevdmsimplespec-hpp>SimpleSpectra/SubGeVDMSimpleSpec.hpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/superrenormhpsimplespec_8hpp/#file-simplespectra-superrenormhpsimplespec-hpp>SimpleSpectra/SuperRenormHPSimpleSpec.hpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/vectorsingletdm__z2simplespec_8hpp/#file-simplespectra-vectorsingletdm-z2simplespec-hpp>SimpleSpectra/VectorSingletDM_Z2SimpleSpec.hpp<a></b><br></details>
 <details><summary><b>dir <a href=/documentation/code/files/dir_32866373456f1f290529472640617045/#dir-spectrumcontents>SpectrumContents<a></b></summary>
@@ -981,6 +1039,7 @@ weight: 30
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/standardmodel__higgs__running_8hpp/#file-models-standardmodel-higgs-running-hpp>models/StandardModel_Higgs_running.hpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/standardmodel__slha2_8hpp/#file-models-standardmodel-slha2-hpp>models/StandardModel_SLHA2.hpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/standardmodel__mnudiff_8hpp/#file-models-standardmodel-mnudiff-hpp>models/StandardModel_mNudiff.hpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/subgevdm_8hpp/#file-models-subgevdm-hpp>models/SubGeVDM.hpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/superrenormhp_8hpp/#file-models-superrenormhp-hpp>models/SuperRenormHP.hpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/superrenormhp__relic__density__param_8hpp/#file-models-superrenormhp-relic-density-param-hpp>models/SuperRenormHP_relic_density_param.hpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/superrenormhp__solar__neutrino_8hpp/#file-models-superrenormhp-solar-neutrino-hpp>models/SuperRenormHP_solar_neutrino.hpp<a></b><br>
@@ -1016,7 +1075,8 @@ weight: 30
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/models_2src_2spectrumcontents_2vectorsingletdm_8cpp/#file-spectrumcontents-models-src-spectrumcontents-vectorsingletdm-cpp>SpectrumContents/Models/src/SpectrumContents/VectorSingletDM.cpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/sm_8cpp/#file-spectrumcontents-sm-cpp>SpectrumContents/SM.cpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/smhiggs_8cpp/#file-spectrumcontents-smhiggs-cpp>SpectrumContents/SMHiggs.cpp<a></b><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/sm__slha_8cpp/#file-spectrumcontents-sm-slha-cpp>SpectrumContents/SM_slha.cpp<a></b><br></details>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/sm__slha_8cpp/#file-spectrumcontents-sm-slha-cpp>SpectrumContents/SM_slha.cpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/spectrumcontents_2subgevdm_8cpp/#file-spectrumcontents-spectrumcontents-subgevdm-cpp>SpectrumContents/SpectrumContents/SubGeVDM.cpp<a></b><br></details>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/claw__singleton_8cpp/#file-src-claw-singleton-cpp>src/claw_singleton.cpp<a></b><br>
 <details><summary><b>dir <a href=/documentation/code/files/dir_cda0e09f6af169ffedf110beb36cf338/#dir-models>models<a></b></summary>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/cmssm_8cpp/#file-models-cmssm-cpp>models/CMSSM.cpp<a></b><br>
@@ -1051,6 +1111,7 @@ weight: 30
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/standardmodel__mnudiff_8cpp/#file-models-standardmodel-mnudiff-cpp>models/StandardModel_mNudiff.cpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/wc_8cpp/#file-models-wc-cpp>models/WC.cpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/msugra_8cpp/#file-models-msugra-cpp>models/mSUGRA.cpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/models_2subgevdm_8cpp/#file-models-models-subgevdm-cpp>models/models/SubGeVDM.cpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/nuclear__params_8cpp/#file-models-nuclear-params-cpp>models/nuclear_params.cpp<a></b><br></details>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/models_8cpp/#file-src-models-cpp>src/models.cpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/partmap_8cpp/#file-src-partmap-cpp>src/partmap.cpp<a></b><br>
@@ -1089,6 +1150,7 @@ weight: 30
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/baseprinter_8hpp/#file-printers-baseprinter-hpp>Printers/baseprinter.hpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/baseprintermanager_8hpp/#file-printers-baseprintermanager-hpp>Printers/baseprintermanager.hpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/printer__id__tools_8hpp/#file-printers-printer-id-tools-hpp>Printers/printer_id_tools.hpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/printer__utils_8hpp/#file-printers-printer-utils-hpp>Printers/printer_utils.hpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/printermanager_8hpp/#file-printers-printermanager-hpp>Printers/printermanager.hpp<a></b><br>
 <details><summary><b>dir <a href=/documentation/code/files/dir_d2ed7e40e7419349c45ea707e78efe0a/#dir-printers>printers<a></b></summary>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/asciiprinter_8hpp/#file-printers-asciiprinter-hpp>printers/asciiprinter.hpp<a></b><br>
@@ -1172,8 +1234,14 @@ weight: 30
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/lognormal_8hpp/#file-priors-lognormal-hpp>priors/lognormal.hpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/plugin_8hpp/#file-priors-plugin-hpp>priors/plugin.hpp<a></b><br></details>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/priors_8hpp/#file-scannerbit-priors-hpp>ScannerBit/priors.hpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/py__module_8hpp/#file-scannerbit-py-module-hpp>ScannerBit/py_module.hpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/py__module__obj_8hpp/#file-scannerbit-py-module-obj-hpp>ScannerBit/py_module_obj.hpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/py__module__scan_8hpp/#file-scannerbit-py-module-scan-hpp>ScannerBit/py_module_scan.hpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/py__module__scanbit_8hpp/#file-scannerbit-py-module-scanbit-hpp>ScannerBit/py_module_scanbit.hpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/python__utils_8hpp/#file-scannerbit-python-utils-hpp>ScannerBit/python_utils.hpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/scan_8hpp/#file-scannerbit-scan-hpp>ScannerBit/scan.hpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/scanner__plugin_8hpp/#file-scannerbit-scanner-plugin-hpp>ScannerBit/scanner_plugin.hpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/scanner__util__types_8hpp/#file-scannerbit-scanner-util-types-hpp>ScannerBit/scanner_util_types.hpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/scanner__utils_8hpp/#file-scannerbit-scanner-utils-hpp>ScannerBit/scanner_utils.hpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/scannerbit_8hpp/#file-scannerbit-scannerbit-hpp>ScannerBit/scannerbit.hpp<a></b><br>
 <details><summary><b>dir <a href=/documentation/code/files/dir_d8899288cb095d9f40a7187612d7e0b7/#dir-scanners>scanners<a></b></summary>
@@ -1210,6 +1278,8 @@ weight: 30
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/twalk_2random__tools_8hpp/#file-twalk-twalk-random-tools-hpp>twalk/twalk/random_tools.hpp<a></b><br></details></details></details></details></details>
 <details><summary><b>dir <a href=/documentation/code/files/dir_7e7214566a1bf7120f8297a8773531b2/#dir-src>src<a></b></summary>
 <details><summary><b>dir <a href=/documentation/code/files/dir_8175e00b46706161a3f1b29a9c3d0e1e/#dir-objectives>objectives<a></b></summary>
+<details><summary><b>dir <a href=/documentation/code/files/dir_ad0521b326460f0174b8906ff1985a58/#dir-python>python<a></b></summary>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/objectives_2python_2python_8cpp/#file-python-objectives-python-python-cpp>python/objectives/python/python.cpp<a></b><br></details>
 <details><summary><b>dir <a href=/documentation/code/files/dir_6612f8e8ba8b632b4cbae0c0d5ded04b/#dir-test-functions>test_functions<a></b></summary>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/examples_8cpp/#file-test-functions-examples-cpp>test_functions/examples.cpp<a></b><br></details></details>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/plugin__comparators_8cpp/#file-src-plugin-comparators-cpp>src/plugin_comparators.cpp<a></b><br>
@@ -1254,6 +1324,8 @@ weight: 30
 <details><summary><b>dir <a href=/documentation/code/files/dir_956502f093d814aec56dee1681ec96bb/#dir-postprocessor-2-0-0>postprocessor_2.0.0<a></b></summary>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/postprocessor__2_80_80_2postprocessor_8cpp/#file-postprocessor-2-0-0-postprocessor-2-0-0-postprocessor-cpp>postprocessor_2.0.0/postprocessor_2.0.0/postprocessor.cpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/postprocessor__2_80_80_2postprocessor__object_8cpp/#file-postprocessor-2-0-0-postprocessor-2-0-0-postprocessor-object-cpp>postprocessor_2.0.0/postprocessor_2.0.0/postprocessor_object.cpp<a></b><br></details>
+<details><summary><b>dir <a href=/documentation/code/files/dir_84793138ed52c70fb4604542838f6727/#dir-python>python<a></b></summary>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/scanners_2python_2python_8cpp/#file-python-scanners-python-python-cpp>python/scanners/python/python.cpp<a></b><br></details>
 <details><summary><b>dir <a href=/documentation/code/files/dir_2fc5b0cddd582275265e6d78b79ba9e2/#dir-simple>simple<a></b></summary>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/grid_8cpp/#file-simple-grid-cpp>simple/grid.cpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/random_8cpp/#file-simple-random-cpp>simple/random.cpp<a></b><br>
@@ -1291,6 +1363,7 @@ weight: 30
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/specbit__majoranasingletdm__rollcall_8hpp/#file-specbit-specbit-majoranasingletdm-rollcall-hpp>SpecBit/SpecBit_MajoranaSingletDM_rollcall.hpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/specbit__sm__rollcall_8hpp/#file-specbit-specbit-sm-rollcall-hpp>SpecBit/SpecBit_SM_rollcall.hpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/specbit__scalarsingletdm__rollcall_8hpp/#file-specbit-specbit-scalarsingletdm-rollcall-hpp>SpecBit/SpecBit_ScalarSingletDM_rollcall.hpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/specbit__subgevdm__rollcall_8hpp/#file-specbit-specbit-subgevdm-rollcall-hpp>SpecBit/SpecBit_SubGeVDM_rollcall.hpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/specbit__superrenormhp__rollcall_8hpp/#file-specbit-specbit-superrenormhp-rollcall-hpp>SpecBit/SpecBit_SuperRenormHP_rollcall.hpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/specbit__vs__rollcall_8hpp/#file-specbit-specbit-vs-rollcall-hpp>SpecBit/SpecBit_VS_rollcall.hpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/specbit__vectorsingletdm__rollcall_8hpp/#file-specbit-specbit-vectorsingletdm-rollcall-hpp>SpecBit/SpecBit_VectorSingletDM_rollcall.hpp<a></b><br>
@@ -1318,6 +1391,7 @@ weight: 30
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/specbit__majoranasingletdm_8cpp/#file-src-specbit-majoranasingletdm-cpp>src/SpecBit_MajoranaSingletDM.cpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/specbit__sm_8cpp/#file-src-specbit-sm-cpp>src/SpecBit_SM.cpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/specbit__scalarsingletdm_8cpp/#file-src-specbit-scalarsingletdm-cpp>src/SpecBit_ScalarSingletDM.cpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/specbit__subgevdm_8cpp/#file-src-specbit-subgevdm-cpp>src/SpecBit_SubGeVDM.cpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/specbit__superrenormhp_8cpp/#file-src-specbit-superrenormhp-cpp>src/SpecBit_SuperRenormHP.cpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/specbit__vs_8cpp/#file-src-specbit-vs-cpp>src/SpecBit_VS.cpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/specbit__vectorsingletdm_8cpp/#file-src-specbit-vectorsingletdm-cpp>src/SpecBit_VectorSingletDM.cpp<a></b><br>
@@ -1353,6 +1427,7 @@ weight: 30
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/mpiwrapper_8hpp/#file-utils-mpiwrapper-hpp>Utils/mpiwrapper.hpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/new__mpi__datatypes_8hpp/#file-utils-new-mpi-datatypes-hpp>Utils/new_mpi_datatypes.hpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/numerical__constants_8hpp/#file-utils-numerical-constants-hpp>Utils/numerical_constants.hpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/python__interpreter_8hpp/#file-utils-python-interpreter-hpp>Utils/python_interpreter.hpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/safebool_8hpp/#file-utils-safebool-hpp>Utils/safebool.hpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/screen__print__utils_8hpp/#file-utils-screen-print-utils-hpp>Utils/screen_print_utils.hpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/signal__handling_8hpp/#file-utils-signal-handling-hpp>Utils/signal_handling.hpp<a></b><br>
@@ -1389,6 +1464,7 @@ weight: 30
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/model__parameters_8cpp/#file-src-model-parameters-cpp>src/model_parameters.cpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/mpiwrapper_8cpp/#file-src-mpiwrapper-cpp>src/mpiwrapper.cpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/new__mpi__datatypes_8cpp/#file-src-new-mpi-datatypes-cpp>src/new_mpi_datatypes.cpp<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/python__interpreter_8cpp/#file-src-python-interpreter-cpp>src/python_interpreter.cpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/screen__print__utils_8cpp/#file-src-screen-print-utils-cpp>src/screen_print_utils.cpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/signal__handling_8cpp/#file-src-signal-handling-cpp>src/signal_handling.cpp<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>file <a href=/documentation/code/files/signal__helpers_8cpp/#file-src-signal-helpers-cpp>src/signal_helpers.cpp<a></b><br>
@@ -1408,4 +1484,4 @@ weight: 30
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:08 +0000
+Updated on 2024-07-18 at 13:53:36 +0000

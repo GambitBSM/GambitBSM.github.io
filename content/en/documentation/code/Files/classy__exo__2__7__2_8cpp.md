@@ -28,7 +28,7 @@ description: "[No description available]"
   * 2021 January, March
 
 
-Frontend source for the exoclassy backend.
+Frontend source for the classy_exo backend.
 
 
 
@@ -50,7 +50,7 @@ Authors (add name and date if you modify):
 //   *********************************************
 ///  \file
 ///
-///  Frontend source for the exoclassy backend.
+///  Frontend source for the classy_exo backend.
 ///
 ///  *********************************************
 ///
@@ -246,7 +246,7 @@ Authors (add name and date if you modify):
         else
         {
           std::ostringstream errMssg;
-          errMssg << "The chosen version of classy [classy_" << STRINGIFY(VERSION) << "] ";
+          errMssg << "The chosen version of classy [classy_exo_" << STRINGIFY(VERSION) << "] ";
           errMssg << "cannot handle the argument \'" << entry << "\' ";
           errMssg << "of the iput 'chi_type' (aka. 'energy_repartition_coefficient').\n";
           errMssg << "Please adjust your input or use a suitable version.";
@@ -455,7 +455,7 @@ BE_INI_FUNCTION
     if(first_run)
     {
       max_errors = runOptions->getValueOrDef<int>(100,"max_errors");
-      cosmo = classy.attr("Class")();
+      cosmo = classy_exo.attr("Class")();
       // check input for consistency
       class_input_consistency_checks(cosmo_input_dict);
 
@@ -484,19 +484,19 @@ BE_INI_FUNCTION
       //int recomputed = cosmo.attr("recomputed").cast<int>();
 
       // set cosmological parameters
-      logger() << LogTags::debug << "[classy_"<< STRINGIFY(VERSION) <<"] These are the inputs:"<<endl;
+      logger() << LogTags::debug << "[classy_exo_"<< STRINGIFY(VERSION) <<"] These are the inputs:"<<endl;
       logger() << pybind11::repr(cosmo_input_dict) << EOM;
       cosmo.attr("set")(cosmo_input_dict);
 
       // Try to run class and catch potential errors
-      logger() << LogTags::info << "[classy_"<< STRINGIFY(VERSION) <<"] Start to run \"cosmo.compute\"" << EOM;
+      logger() << LogTags::info << "[classy_exo_"<< STRINGIFY(VERSION) <<"] Start to run \"cosmo.compute\"" << EOM;
       try
       {
         // Try to run classy
         cosmo.attr("compute")();
         // reset counter when no exception is thrown.
         error_counter = 0;
-        logger() << LogTags::info << "[classy_"<< STRINGIFY(VERSION) <<"] \"cosmo.compute\" was successful" << EOM;
+        logger() << LogTags::info << "[classy_exo_"<< STRINGIFY(VERSION) <<"] \"cosmo.compute\" was successful" << EOM;
       }
       catch (std::exception &e)
       {
@@ -549,7 +549,7 @@ BE_INI_FUNCTION
     // identical CLASS input -- skip compute step & save time!
     else
     {
-      logger() << LogTags::info << "[classy_"<< STRINGIFY(VERSION) <<"] \"cosmo.compute\" was skipped, input was identical to previously computed point" << EOM;
+      logger() << LogTags::info << "[classy_exo_"<< STRINGIFY(VERSION) <<"] \"cosmo.compute\" was skipped, input was identical to previously computed point" << EOM;
       // CLASS did not recompute -> save this information in cosmo container, so MontePython
       // (and potentially other backends) has access to this information and can skip
       // their computations as well
@@ -572,4 +572,4 @@ END_BE_INI_FUNCTION
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:08 +0000
+Updated on 2024-07-18 at 13:53:36 +0000

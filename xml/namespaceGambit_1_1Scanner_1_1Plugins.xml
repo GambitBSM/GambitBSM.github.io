@@ -19,9 +19,12 @@
     <innerclass refid="structGambit_1_1Scanner_1_1Plugins_1_1pluginData" prot="public">Gambit::Scanner::Plugins::pluginData</innerclass>
     <innerclass refid="classGambit_1_1Scanner_1_1Plugins_1_1pluginInfo" prot="public">Gambit::Scanner::Plugins::pluginInfo</innerclass>
     <innerclass refid="structGambit_1_1Scanner_1_1Plugins_1_1Proto__Plugin__Details" prot="public">Gambit::Scanner::Plugins::Proto_Plugin_Details</innerclass>
+    <innerclass refid="structGambit_1_1Scanner_1_1Plugins_1_1pyplugin__info" prot="public">Gambit::Scanner::Plugins::pyplugin_info</innerclass>
     <innerclass refid="classGambit_1_1Scanner_1_1Plugins_1_1VersionCompare" prot="public">Gambit::Scanner::Plugins::VersionCompare</innerclass>
     <innerclass refid="classGambit_1_1Scanner_1_1Plugins_1_1VersionCompareBase" prot="public">Gambit::Scanner::Plugins::VersionCompareBase</innerclass>
     <innerclass refid="classGambit_1_1Scanner_1_1Plugins_1_1VersionCompareBottom" prot="public">Gambit::Scanner::Plugins::VersionCompareBottom</innerclass>
+    <innernamespace refid="namespaceGambit_1_1Scanner_1_1Plugins_1_1ObjPyPlugin">Gambit::Scanner::Plugins::ObjPyPlugin</innernamespace>
+    <innernamespace refid="namespaceGambit_1_1Scanner_1_1Plugins_1_1ScannerPyPlugin">Gambit::Scanner::Plugins::ScannerPyPlugin</innernamespace>
       <sectiondef kind="var">
       <memberdef kind="variable" id="plugin__loader_8hpp_1af4c80001cbb89e6ca052032307e1f0c1" prot="public" static="no" mutable="no">
         <type>EXPORT_SYMBOLS <ref refid="classGambit_1_1Scanner_1_1Plugins_1_1pluginInfo" kindref="compound">pluginInfo</ref></type>
@@ -36,7 +39,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ScannerBit/src/plugin_loader.cpp" line="706" column="24" bodyfile="ScannerBit/src/plugin_loader.cpp" bodystart="706" bodyend="-1" declfile="ScannerBit/include/gambit/ScannerBit/plugin_loader.hpp" declline="257" declcolumn="46"/>
+        <location file="ScannerBit/src/plugin_loader.cpp" line="1026" column="24" bodyfile="ScannerBit/src/plugin_loader.cpp" bodystart="1026" bodyend="-1" declfile="ScannerBit/include/gambit/ScannerBit/plugin_loader.hpp" declline="309" declcolumn="46"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -83,7 +86,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ScannerBit/src/plugin_details.cpp" line="465" column="18" bodyfile="ScannerBit/src/plugin_details.cpp" bodystart="465" bodyend="494" declfile="ScannerBit/include/gambit/ScannerBit/plugin_details.hpp" declline="152" declcolumn="18"/>
+        <location file="ScannerBit/src/plugin_details.cpp" line="471" column="18" bodyfile="ScannerBit/src/plugin_details.cpp" bodystart="471" bodyend="500" declfile="ScannerBit/include/gambit/ScannerBit/plugin_details.hpp" declline="152" declcolumn="18"/>
       </memberdef>
       <memberdef kind="function" id="plugin__interface_8hpp_1a589ea82ec32e764656c4858fa47e9a42" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>const std::map&lt; <ref refid="structGambit_1_1type__index" kindref="compound">type_index</ref>, void * &gt; &amp;</type>
@@ -115,7 +118,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ScannerBit/src/plugin_loader.cpp" line="52" column="32" bodyfile="ScannerBit/src/plugin_loader.cpp" bodystart="52" bodyend="73"/>
+        <location file="ScannerBit/src/plugin_loader.cpp" line="320" column="32" bodyfile="ScannerBit/src/plugin_loader.cpp" bodystart="320" bodyend="343"/>
       </memberdef>
       <memberdef kind="function" id="plugin__loader_8cpp_1a341c55e99e1cc3ce921758cf6d2996bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -138,7 +141,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ScannerBit/src/plugin_loader.cpp" line="104" column="18" bodyfile="ScannerBit/src/plugin_loader.cpp" bodystart="104" bodyend="115"/>
+        <location file="ScannerBit/src/plugin_loader.cpp" line="375" column="18" bodyfile="ScannerBit/src/plugin_loader.cpp" bodystart="375" bodyend="386"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

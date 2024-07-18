@@ -22,7 +22,7 @@ description: "[No description available]"
 ### function operator()
 
 ```
-inline bool operator()(
+bool operator()(
     const unsigned char & c1,
     const unsigned char & c2
 ) const
@@ -31,4 +31,4 @@ inline bool operator()(
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:05 +0000
+Updated on 2024-07-18 at 13:53:32 +0000

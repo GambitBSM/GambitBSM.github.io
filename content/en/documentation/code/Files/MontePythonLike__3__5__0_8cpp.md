@@ -157,10 +157,9 @@ Authors (add name and date if you modify):
       if ( (pyMajorVersion == 3) && python3_incomp.count(likelihood))
       {
         std::ostringstream err;
-        err << "You requested the MontePython likelihood '" << likelihood << "', ";
-        err << "but you are using Python 3. In MontePython" << STRINGIFY(VERSION);
-        err << "this likelihood only works with Python 2.\n";
-        err << "Please reconfigure GAMBIT with Python 2, if you want to use this likelihood.";
+        err << "The MontePython likelihood '" << likelihood << "' is not available.\n";
+        err << "In MontePython" << STRINGIFY(VERSION) << " this likelihood only works\n";
+        err << "with Python 2, while GAMBIT requires Python 3.";
         backend_error().raise(LOCAL_INFO, err.str());
       }
 
@@ -348,4 +347,4 @@ END_BE_INI_FUNCTION
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:08 +0000
+Updated on 2024-07-18 at 13:53:36 +0000

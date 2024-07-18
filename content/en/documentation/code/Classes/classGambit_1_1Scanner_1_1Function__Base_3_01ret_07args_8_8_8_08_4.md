@@ -13,7 +13,7 @@ Base function for the object that is upputed by "set_purpose".  [More...](#detai
 
 `#include <factory_defs.hpp>`
 
-Inherits from boost::enable_shared_from_this< Function_Base< ret(args...)> >
+Inherits from std::enable_shared_from_this< Function_Base< ret(args...)> >
 
 Inherited by [Gambit::Scanner::Multi_Scanner_Plugin_Function< ret(args...)>](/documentation/code/classes/classgambit_1_1scanner_1_1multi__scanner__plugin__function_3_01ret_07args_8_8_8_08_4/), [Gambit::Scanner::Scanner_Plugin_Function< ret(args...)>](/documentation/code/classes/classgambit_1_1scanner_1_1scanner__plugin__function_3_01ret_07args_8_8_8_08_4/)
 
@@ -26,6 +26,7 @@ Inherited by [Gambit::Scanner::Multi_Scanner_Plugin_Function< ret(args...)>](/do
 | virtual ret | **[main](/documentation/code/classes/classgambit_1_1scanner_1_1function__base_3_01ret_07args_8_8_8_08_4/#function-main)**(const args & ...) =0 |
 | virtual | **[~Function_Base](/documentation/code/classes/classgambit_1_1scanner_1_1function__base_3_01ret_07args_8_8_8_08_4/#function-function-base)**() |
 | ret | **[operator()](/documentation/code/classes/classgambit_1_1scanner_1_1function__base_3_01ret_07args_8_8_8_08_4/#function-operator)**(const args &... params) |
+| std::unordered_map< std::string, double > & | **[getMap](/documentation/code/classes/classgambit_1_1scanner_1_1function__base_3_01ret_07args_8_8_8_08_4/#function-getmap)**() |
 | void | **[setPurpose](/documentation/code/classes/classgambit_1_1scanner_1_1function__base_3_01ret_07args_8_8_8_08_4/#function-setpurpose)**(const std::string p) |
 | void | **[setPrinter](/documentation/code/classes/classgambit_1_1scanner_1_1function__base_3_01ret_07args_8_8_8_08_4/#function-setprinter)**([printer](/documentation/code/namespaces/namespacegambit_1_1scanner/#typedef-printer) * p) |
 | void | **[setPrior](/documentation/code/classes/classgambit_1_1scanner_1_1function__base_3_01ret_07args_8_8_8_08_4/#function-setprior)**([Priors::BasePrior](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/) * p) |
@@ -42,6 +43,9 @@ Inherited by [Gambit::Scanner::Multi_Scanner_Plugin_Function< ret(args...)>](/do
 | unsigned long long int | **[getPtID](/documentation/code/classes/classgambit_1_1scanner_1_1function__base_3_01ret_07args_8_8_8_08_4/#function-getptid)**() const |
 | void | **[setPtID](/documentation/code/classes/classgambit_1_1scanner_1_1function__base_3_01ret_07args_8_8_8_08_4/#function-setptid)**(unsigned long long int pID) |
 | unsigned long long int | **[getNextPtID](/documentation/code/classes/classgambit_1_1scanner_1_1function__base_3_01ret_07args_8_8_8_08_4/#function-getnextptid)**() const |
+| std::unordered_map< std::string, double > | **[transform](/documentation/code/classes/classgambit_1_1scanner_1_1function__base_3_01ret_07args_8_8_8_08_4/#function-transform)**(const std::vector< double > & vec) |
+| std::vector< std::string > | **[get_names](/documentation/code/classes/classgambit_1_1scanner_1_1function__base_3_01ret_07args_8_8_8_08_4/#function-get-names)**() const |
+| std::vector< double > | **[inverse_transform](/documentation/code/classes/classgambit_1_1scanner_1_1function__base_3_01ret_07args_8_8_8_08_4/#function-inverse-transform)**(const std::unordered_map< std::string, double > & physical) |
 | void | **[tell_scanner_early_shutdown_in_progress](/documentation/code/classes/classgambit_1_1scanner_1_1function__base_3_01ret_07args_8_8_8_08_4/#function-tell-scanner-early-shutdown-in-progress)**()<br>Tell ScannerBit that we are aborting the scan and it should tell the scanner plugin to stop, and return control to the calling code.  |
 | void | **[disable_external_shutdown](/documentation/code/classes/classgambit_1_1scanner_1_1function__base_3_01ret_07args_8_8_8_08_4/#function-disable-external-shutdown)**() |
 | bool | **[scanner_can_quit](/documentation/code/classes/classgambit_1_1scanner_1_1function__base_3_01ret_07args_8_8_8_08_4/#function-scanner-can-quit)**()<br>Check whether likelihood container is supposed to control early shutdown of scan.  |
@@ -106,6 +110,13 @@ inline virtual ~Function_Base()
 inline ret operator()(
     const args &... params
 )
+```
+
+
+### function getMap
+
+```
+inline std::unordered_map< std::string, double > & getMap()
 ```
 
 
@@ -233,6 +244,31 @@ inline unsigned long long int getNextPtID() const
 ```
 
 
+### function transform
+
+```
+inline std::unordered_map< std::string, double > transform(
+    const std::vector< double > & vec
+)
+```
+
+
+### function get_names
+
+```
+inline std::vector< std::string > get_names() const
+```
+
+
+### function inverse_transform
+
+```
+inline std::vector< double > inverse_transform(
+    const std::unordered_map< std::string, double > & physical
+)
+```
+
+
 ### function tell_scanner_early_shutdown_in_progress
 
 ```
@@ -299,4 +335,4 @@ friend class scan_ptr< ret(args...)>(
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:04 +0000
+Updated on 2024-07-18 at 13:53:32 +0000

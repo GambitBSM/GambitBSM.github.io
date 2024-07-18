@@ -9,14 +9,18 @@
         <label>gambit/Logs/log_tags.hpp</label>
         <link refid="log__tags_8hpp"/>
       </node>
-      <node id="61">
+      <node id="63">
         <label>gambit/ScannerBit/base_prior.hpp</label>
         <link refid="base__prior_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
         <childnode refid="4" relation="include">
         </childnode>
         <childnode refid="44" relation="include">
         </childnode>
         <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
         </childnode>
       </node>
       <node id="3">
@@ -30,7 +34,7 @@
         </childnode>
         <childnode refid="55" relation="include">
         </childnode>
-        <childnode refid="61" relation="include">
+        <childnode refid="63" relation="include">
         </childnode>
       </node>
       <node id="1">
@@ -39,6 +43,12 @@
         <childnode refid="2" relation="include">
         </childnode>
         <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>gambit/ScannerBit/scanner_util_types.hpp</label>
+        <link refid="scanner__util__types_8hpp"/>
+        <childnode refid="62" relation="include">
         </childnode>
       </node>
       <node id="55">
@@ -73,6 +83,8 @@
         <childnode refid="39" relation="include">
         </childnode>
         <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
         </childnode>
       </node>
       <node id="17">
@@ -280,6 +292,9 @@
         </childnode>
         <childnode refid="51" relation="include">
         </childnode>
+      </node>
+      <node id="62">
+        <label>Eigen/Dense</label>
       </node>
       <node id="2">
         <label>algorithm</label>
@@ -500,7 +515,7 @@
 <codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::string&gt;<sp/>getShownParameters()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::vector&lt;std::string&gt;();}</highlight></codeline>
 <codeline lineno="79"><highlight class="normal"></highlight></codeline>
-<codeline lineno="80" refid="classGambit_1_1Priors_1_1FixedPrior_1a3dbf627a3ac53d937863e4b5fa0bc74e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Priors_1_1FixedPrior_1a3dbf627a3ac53d937863e4b5fa0bc74e" kindref="member">transform</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;double&gt;<sp/>&amp;,<sp/>std::unordered_map&lt;std::string,<sp/>double&gt;<sp/>&amp;outputMap)</highlight><highlight class="keyword"><sp/>const<sp/>override</highlight></codeline>
+<codeline lineno="80" refid="classGambit_1_1Priors_1_1FixedPrior_1aeca49ed55d6e30d28696c99910934aa8" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Priors_1_1FixedPrior_1aeca49ed55d6e30d28696c99910934aa8" kindref="member">transform</ref>(hyper_cube_ref&lt;double&gt;,<sp/>std::unordered_map&lt;std::string,<sp/>double&gt;<sp/>&amp;outputMap)</highlight><highlight class="keyword"><sp/>const<sp/>override</highlight></codeline>
 <codeline lineno="81"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>it<sp/>=<sp/>param_names.begin(),<sp/>end<sp/>=<sp/>param_names.end();<sp/>it<sp/>!=<sp/>end;<sp/>it++)</highlight></codeline>
 <codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
@@ -510,7 +525,7 @@
 <codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>iter<sp/>=<sp/>(iter<sp/>+<sp/>1)%value.size();</highlight></codeline>
 <codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="89"><highlight class="normal"></highlight></codeline>
-<codeline lineno="90" refid="classGambit_1_1Priors_1_1FixedPrior_1adef251b900e96ee76668d056b5ecee9c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/><ref refid="classGambit_1_1Priors_1_1FixedPrior_1adef251b900e96ee76668d056b5ecee9c" kindref="member">inverse_transform</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::unordered_map&lt;std::string,<sp/>double&gt;<sp/>&amp;physical)</highlight><highlight class="keyword"><sp/>const<sp/>override</highlight></codeline>
+<codeline lineno="90" refid="classGambit_1_1Priors_1_1FixedPrior_1a4b2f3909534222b236cd219b45d2dffd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Priors_1_1FixedPrior_1a4b2f3909534222b236cd219b45d2dffd" kindref="member">inverse_transform</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::unordered_map&lt;std::string,<sp/>double&gt;<sp/>&amp;physical,<sp/>hyper_cube_ref&lt;double&gt;)</highlight><highlight class="keyword"><sp/>const<sp/>override</highlight></codeline>
 <codeline lineno="91"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>rtol<sp/>=<sp/>1e-4;</highlight></codeline>
 <codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0,<sp/>n<sp/>=<sp/>this-&gt;size();<sp/>i<sp/>&lt;<sp/>n;<sp/>i++)</highlight></codeline>
@@ -523,109 +538,136 @@
 <codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>std::runtime_error(</highlight><highlight class="stringliteral">&quot;no<sp/>inverse<sp/>as<sp/>physical<sp/>does<sp/>not<sp/>match<sp/>fixed<sp/>value&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>arbitrary<sp/>as<sp/>every<sp/>value<sp/>of<sp/>unit<sp/>hypercube<sp/>maps<sp/>to<sp/>the<sp/>same<sp/>fixed<sp/>parameter</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/>u(this-&gt;size(),<sp/>0.5);</highlight></codeline>
-<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>u;</highlight></codeline>
-<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="108"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="109"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/**<sp/>@brief<sp/>A<sp/>parameter<sp/>that<sp/>is<sp/>fixed<sp/>to<sp/>a<sp/>different<sp/>parameter<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="110" refid="classGambit_1_1Priors_1_1MultiPriors" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classGambit_1_1Priors_1_1MultiPriors" kindref="compound">MultiPriors</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Priors_1_1BasePrior" kindref="compound">BasePrior</ref></highlight></codeline>
-<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>name;</highlight></codeline>
-<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/>scale,<sp/>shift;</highlight></codeline>
-<codeline lineno="115"><highlight class="normal"></highlight></codeline>
-<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1Priors_1_1MultiPriors" kindref="compound">MultiPriors</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;std::string&gt;&amp;<sp/>param,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Options" kindref="compound">Options</ref>&amp;<sp/>options)<sp/>:</highlight></codeline>
-<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1Priors_1_1BasePrior" kindref="compound">BasePrior</ref>(param),<sp/>scale(param.size(),<sp/>1.0),<sp/>shift(param.size(),<sp/>0.0)</highlight></codeline>
-<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(options.<ref refid="classGambit_1_1Options_1a2a05334b7abcabecbf1f6c59daa02471" kindref="member">hasKey</ref>(</highlight><highlight class="stringliteral">&quot;same_as&quot;</highlight><highlight class="normal">))</highlight></codeline>
-<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>name<sp/>=<sp/>options.getValue&lt;std::string&gt;(</highlight><highlight class="stringliteral">&quot;same_as&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::stringstream<sp/>err;</highlight></codeline>
-<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="scanner__utils_8hpp_1a78c5cbcc517889fd5a4b79468ae2f721" kindref="member">scan_err</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Did<sp/>not<sp/>give<sp/>same_as<sp/>parameters<sp/>for<sp/>parameter<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>name<sp/>&lt;&lt;<sp/>scan_end;</highlight></codeline>
-<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="129"><highlight class="normal"></highlight></codeline>
-<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(options.<ref refid="classGambit_1_1Options_1a2a05334b7abcabecbf1f6c59daa02471" kindref="member">hasKey</ref>(</highlight><highlight class="stringliteral">&quot;scale&quot;</highlight><highlight class="normal">))</highlight></codeline>
-<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>scale<sp/>=<sp/>options.getValue&lt;std::vector&lt;double&gt;&gt;(</highlight><highlight class="stringliteral">&quot;scale&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="134"><highlight class="normal"></highlight></codeline>
-<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(options.<ref refid="classGambit_1_1Options_1a2a05334b7abcabecbf1f6c59daa02471" kindref="member">hasKey</ref>(</highlight><highlight class="stringliteral">&quot;shift&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105" refid="classGambit_1_1Priors_1_1FixedPrior_1a8167614adbd0023317dab4bbb346d665" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Priors_1_1FixedPrior_1a8167614adbd0023317dab4bbb346d665" kindref="member">log_prior_density</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::unordered_map&lt;std::string,<sp/>double&gt;<sp/>&amp;physical)</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight></codeline>
+<codeline lineno="106"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>rtol<sp/>=<sp/>1e-4;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>log_zero<sp/>=<sp/>-1e10;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>log_delta_zero<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0,<sp/>n<sp/>=<sp/>this-&gt;size();<sp/>i<sp/>&lt;<sp/>n;<sp/>i++)</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>a<sp/>=<sp/>physical.at(param_names[i]);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>b<sp/>=<sp/>value[i];</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>rdiff<sp/>=<sp/>std::abs(a<sp/>-<sp/>b)<sp/>/<sp/>std::max(std::abs(a),<sp/>std::abs(b));</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(rdiff<sp/>&gt;<sp/>rtol)</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>log_zero;</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>log_delta_zero;</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="124"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/**<sp/>@brief<sp/>A<sp/>parameter<sp/>that<sp/>is<sp/>fixed<sp/>to<sp/>a<sp/>different<sp/>parameter<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125" refid="classGambit_1_1Priors_1_1MultiPriors" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classGambit_1_1Priors_1_1MultiPriors" kindref="compound">MultiPriors</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Priors_1_1BasePrior" kindref="compound">BasePrior</ref></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>name;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/>scale,<sp/>shift;</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1Priors_1_1MultiPriors" kindref="compound">MultiPriors</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;std::string&gt;&amp;<sp/>param,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Options" kindref="compound">Options</ref>&amp;<sp/>options)<sp/>:</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1Priors_1_1BasePrior" kindref="compound">BasePrior</ref>(param),<sp/>scale(param.size(),<sp/>1.0),<sp/>shift(param.size(),<sp/>0.0)</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(options.<ref refid="classGambit_1_1Options_1a2a05334b7abcabecbf1f6c59daa02471" kindref="member">hasKey</ref>(</highlight><highlight class="stringliteral">&quot;same_as&quot;</highlight><highlight class="normal">))</highlight></codeline>
 <codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>shift<sp/>=<sp/>options.getValue&lt;std::vector&lt;double&gt;&gt;(</highlight><highlight class="stringliteral">&quot;shift&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>name<sp/>=<sp/>options.getValue&lt;std::string&gt;(</highlight><highlight class="stringliteral">&quot;same_as&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="140"><highlight class="normal"></highlight></codeline>
-<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1Priors_1_1MultiPriors" kindref="compound">MultiPriors</ref>(std::string<sp/>name_in,<sp/>std::unordered_map&lt;std::string,<sp/>std::pair&lt;double,<sp/>double&gt;<sp/>&gt;<sp/>&amp;map_in)</highlight></codeline>
-<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string::size_type<sp/>pos_old<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string::size_type<sp/>pos<sp/>=<sp/>name_in.find(</highlight><highlight class="stringliteral">&quot;+&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(pos<sp/>!=<sp/>std::string::npos)</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::stringstream<sp/>err;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="scanner__utils_8hpp_1a78c5cbcc517889fd5a4b79468ae2f721" kindref="member">scan_err</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Did<sp/>not<sp/>give<sp/>same_as<sp/>parameters<sp/>for<sp/>parameter<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>name<sp/>&lt;&lt;<sp/>scan_end;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(options.<ref refid="classGambit_1_1Options_1a2a05334b7abcabecbf1f6c59daa02471" kindref="member">hasKey</ref>(</highlight><highlight class="stringliteral">&quot;scale&quot;</highlight><highlight class="normal">))</highlight></codeline>
 <codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>p_name<sp/>=<sp/>name_in.substr(pos_old,<sp/>(pos-pos_old));</highlight></codeline>
-<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>param_names.push_back(p_name);</highlight></codeline>
-<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(map_in.find(p_name)<sp/>==<sp/>map_in.end())</highlight></codeline>
-<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>scale.push_back(1.0);</highlight></codeline>
-<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>shift.push_back(0.0);</highlight></codeline>
-<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>scale.push_back(map_in[p_name].first);</highlight></codeline>
-<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>shift.push_back(map_in[p_name].second);</highlight></codeline>
-<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pos_old<sp/>=<sp/>pos<sp/>+<sp/>1;</highlight></codeline>
-<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pos<sp/>=<sp/>name_in.find(</highlight><highlight class="stringliteral">&quot;+&quot;</highlight><highlight class="normal">,<sp/>pos_old);</highlight></codeline>
-<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="162"><highlight class="normal"></highlight></codeline>
-<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>name<sp/>=<sp/>name_in.substr(pos_old);</highlight></codeline>
-<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>param_names.push_back(name_in);</highlight></codeline>
-<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::string&gt;<sp/>getShownParameters()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::vector&lt;std::string&gt;();}</highlight></codeline>
-<codeline lineno="168"><highlight class="normal"></highlight></codeline>
-<codeline lineno="169" refid="classGambit_1_1Priors_1_1MultiPriors_1ac61f7b43b139175a56e6e26c76ff8c2f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Priors_1_1MultiPriors_1ac61f7b43b139175a56e6e26c76ff8c2f" kindref="member">transform</ref><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;double&gt;<sp/>&amp;,<sp/>std::unordered_map&lt;std::string,<sp/>double&gt;<sp/>&amp;outputMap)</highlight><highlight class="keyword"><sp/>const<sp/>override</highlight></codeline>
-<codeline lineno="170"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
-<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>value<sp/>=<sp/>outputMap[name];</highlight></codeline>
-<codeline lineno="172"><highlight class="normal"></highlight></codeline>
-<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>it1<sp/>=<sp/>scale.begin(),<sp/>it2<sp/>=<sp/>shift.begin();</highlight></codeline>
-<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>it<sp/>=<sp/>param_names.begin(),<sp/>end<sp/>=<sp/>param_names.end();<sp/>it<sp/>!=<sp/>end;<sp/>++it,<sp/>++it1,<sp/>++it2)</highlight></codeline>
-<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>outputMap[*it]<sp/>=<sp/>(*it1)*value<sp/>+<sp/>*it2;</highlight></codeline>
-<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="179"><highlight class="normal"></highlight></codeline>
-<codeline lineno="180" refid="classGambit_1_1Priors_1_1MultiPriors_1a29b3ab7e38c3e5130b7cafbe1f56b837" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/><ref refid="classGambit_1_1Priors_1_1MultiPriors_1a29b3ab7e38c3e5130b7cafbe1f56b837" kindref="member">inverse_transform</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::unordered_map&lt;std::string,<sp/>double&gt;<sp/>&amp;physical)</highlight><highlight class="keyword"><sp/>const<sp/>override</highlight></codeline>
-<codeline lineno="181"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
-<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>rtol<sp/>=<sp/>1e-4;</highlight></codeline>
-<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0,<sp/>n<sp/>=<sp/>this-&gt;size();<sp/>i<sp/>&lt;<sp/>n;<sp/>i++)</highlight></codeline>
-<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>a<sp/>=<sp/>physical.at(param_names[i]);</highlight></codeline>
-<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>b<sp/>=<sp/>scale[i]<sp/>*<sp/>physical.at(name)<sp/>+<sp/>shift[i];</highlight></codeline>
-<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>rdiff<sp/>=<sp/>std::abs(a<sp/>-<sp/>b)<sp/>/<sp/>std::max(std::abs(a),<sp/>std::abs(b));</highlight></codeline>
-<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(rdiff<sp/>&gt;<sp/>rtol)</highlight></codeline>
-<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">throw</highlight><highlight class="normal"><sp/>std::runtime_error(</highlight><highlight class="stringliteral">&quot;no<sp/>inverse<sp/>as<sp/>physical<sp/>does<sp/>not<sp/>match<sp/>same<sp/>as<sp/>value&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>scale<sp/>=<sp/>options.getValue&lt;std::vector&lt;double&gt;&gt;(</highlight><highlight class="stringliteral">&quot;scale&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(options.<ref refid="classGambit_1_1Options_1a2a05334b7abcabecbf1f6c59daa02471" kindref="member">hasKey</ref>(</highlight><highlight class="stringliteral">&quot;shift&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>shift<sp/>=<sp/>options.getValue&lt;std::vector&lt;double&gt;&gt;(</highlight><highlight class="stringliteral">&quot;shift&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1Priors_1_1MultiPriors" kindref="compound">MultiPriors</ref>(std::string<sp/>name_in,<sp/>std::unordered_map&lt;std::string,<sp/>std::pair&lt;double,<sp/>double&gt;<sp/>&gt;<sp/>&amp;map_in)</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string::size_type<sp/>pos_old<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string::size_type<sp/>pos<sp/>=<sp/>name_in.find(</highlight><highlight class="stringliteral">&quot;+&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal"><sp/>(pos<sp/>!=<sp/>std::string::npos)</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>p_name<sp/>=<sp/>name_in.substr(pos_old,<sp/>(pos-pos_old));</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>param_names.push_back(p_name);</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(map_in.find(p_name)<sp/>==<sp/>map_in.end())</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>scale.push_back(1.0);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>shift.push_back(0.0);</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>scale.push_back(map_in[p_name].first);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>shift.push_back(map_in[p_name].second);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pos_old<sp/>=<sp/>pos<sp/>+<sp/>1;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pos<sp/>=<sp/>name_in.find(</highlight><highlight class="stringliteral">&quot;+&quot;</highlight><highlight class="normal">,<sp/>pos_old);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>name<sp/>=<sp/>name_in.substr(pos_old);</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>param_names.push_back(name_in);</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::string&gt;<sp/>getShownParameters()</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::vector&lt;std::string&gt;();}</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"></highlight></codeline>
+<codeline lineno="184" refid="classGambit_1_1Priors_1_1MultiPriors_1a26247874fe30282b828f7fa934debb7f" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Priors_1_1MultiPriors_1a26247874fe30282b828f7fa934debb7f" kindref="member">transform</ref>(hyper_cube_ref&lt;double&gt;,<sp/>std::unordered_map&lt;std::string,<sp/>double&gt;<sp/>&amp;outputMap)</highlight><highlight class="keyword"><sp/>const<sp/>override</highlight></codeline>
+<codeline lineno="185"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>value<sp/>=<sp/>outputMap[name];</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>it1<sp/>=<sp/>scale.begin(),<sp/>it2<sp/>=<sp/>shift.begin();</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>it<sp/>=<sp/>param_names.begin(),<sp/>end<sp/>=<sp/>param_names.end();<sp/>it<sp/>!=<sp/>end;<sp/>++it,<sp/>++it1,<sp/>++it2)</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>outputMap[*it]<sp/>=<sp/>(*it1)*value<sp/>+<sp/>*it2;</highlight></codeline>
 <codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>arbitrary<sp/>as<sp/>every<sp/>value<sp/>of<sp/>unit<sp/>hypercube<sp/>maps<sp/>to<sp/>the<sp/>same<sp/>fixed<sp/>parameter</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/>u(this-&gt;size(),<sp/>0.5);</highlight></codeline>
-<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>u;</highlight></codeline>
-<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="197"><highlight class="normal"></highlight></codeline>
-<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195" refid="classGambit_1_1Priors_1_1MultiPriors_1aab155dbbdd24a10769ad2f39de7b9d68" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Priors_1_1MultiPriors_1aab155dbbdd24a10769ad2f39de7b9d68" kindref="member">inverse_transform</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::unordered_map&lt;std::string,<sp/>double&gt;<sp/>&amp;physical,<sp/>hyper_cube_ref&lt;double&gt;)</highlight><highlight class="keyword"><sp/>const<sp/>override</highlight></codeline>
+<codeline lineno="196"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;outputMap<sp/>=<sp/></highlight><highlight class="keyword">const_cast&lt;</highlight><highlight class="normal">std::unordered_map&lt;std::string,<sp/>double&gt;<sp/>&amp;</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(physical);</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>value<sp/>=<sp/>outputMap[name];</highlight></codeline>
 <codeline lineno="199"><highlight class="normal"></highlight></codeline>
-<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LOAD_PRIOR(fixed_value,<sp/>FixedPrior)</highlight></codeline>
-<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LOAD_PRIOR(same_as,<sp/>MultiPriors)</highlight></codeline>
-<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="203"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="204"><highlight class="normal"></highlight></codeline>
-<codeline lineno="205"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>it1<sp/>=<sp/>scale.begin(),<sp/>it2<sp/>=<sp/>shift.begin();</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>it<sp/>=<sp/>param_names.begin(),<sp/>end<sp/>=<sp/>param_names.end();<sp/>it<sp/>!=<sp/>end;<sp/>++it,<sp/>++it1,<sp/>++it2)</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>outputMap[*it]<sp/>=<sp/>(*it1)*value<sp/>+<sp/>*it2;</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight></codeline>
+<codeline lineno="207" refid="classGambit_1_1Priors_1_1MultiPriors_1a84591ab058908be96a5f33c669a766aa" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Priors_1_1MultiPriors_1a84591ab058908be96a5f33c669a766aa" kindref="member">log_prior_density</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::unordered_map&lt;std::string,<sp/>double&gt;<sp/>&amp;physical)</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight></codeline>
+<codeline lineno="208"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>rtol<sp/>=<sp/>1e-4;</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>log_zero<sp/>=<sp/>-1e10;</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>log_delta_zero<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0,<sp/>n<sp/>=<sp/>this-&gt;size();<sp/>i<sp/>&lt;<sp/>n;<sp/>i++)</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>a<sp/>=<sp/>physical.at(param_names[i]);</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>b<sp/>=<sp/>scale[i]<sp/>*<sp/>physical.at(name)<sp/>+<sp/>shift[i];;</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>rdiff<sp/>=<sp/>std::abs(a<sp/>-<sp/>b)<sp/>/<sp/>std::max(std::abs(a),<sp/>std::abs(b));</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(rdiff<sp/>&gt;<sp/>rtol)</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>log_zero;</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>log_delta_zero;</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LOAD_PRIOR(fixed_value,<sp/>FixedPrior)</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LOAD_PRIOR(same_as,<sp/>MultiPriors)</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="230"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
     <location file="ScannerBit/include/gambit/ScannerBit/priors/fixed_same_as.hpp"/>
   </compounddef>

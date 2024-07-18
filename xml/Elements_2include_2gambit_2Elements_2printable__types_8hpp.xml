@@ -780,7 +780,7 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="26">
+      <node id="27">
         <label>backend_macros.hpp</label>
         <link refid="backend__macros_8hpp"/>
       </node>
@@ -850,12 +850,32 @@
         <label>modelgraph.cpp</label>
         <link refid="modelgraph_8cpp"/>
       </node>
-      <node id="25">
+      <node id="50">
+        <label>DarkBit_standalone_MSSM.cpp</label>
+        <link refid="DarkBit__standalone__MSSM_8cpp"/>
+      </node>
+      <node id="51">
+        <label>DarkBit_standalone_ScalarSingletDM_Z2.cpp</label>
+        <link refid="DarkBit__standalone__ScalarSingletDM__Z2_8cpp"/>
+      </node>
+      <node id="52">
+        <label>DarkBit_standalone_WIMP.cpp</label>
+        <link refid="DarkBit__standalone__WIMP_8cpp"/>
+      </node>
+      <node id="40">
+        <label>RelicDensity.cpp</label>
+        <link refid="RelicDensity_8cpp"/>
+      </node>
+      <node id="49">
+        <label>3bithit.cpp</label>
+        <link refid="3bithit_8cpp"/>
+      </node>
+      <node id="26">
         <label>functor_definitions.hpp</label>
         <link refid="functor__definitions_8hpp"/>
-        <childnode refid="26" relation="include">
-        </childnode>
         <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
         </childnode>
       </node>
       <node id="1">
@@ -864,9 +884,27 @@
         <childnode refid="2" relation="include">
         </childnode>
       </node>
-      <node id="27">
+      <node id="48">
+        <label>standalone_module.hpp</label>
+        <link refid="standalone__module_8hpp"/>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
         <label>functors.cpp</label>
         <link refid="Elements_2src_2functors_8cpp"/>
+      </node>
+      <node id="53">
+        <label>ExampleBit_A_standalone_example.cpp</label>
+        <link refid="ExampleBit__A__standalone__example_8cpp"/>
       </node>
       <node id="2">
         <label>baseprinter.hpp</label>
@@ -885,21 +923,33 @@
         </childnode>
         <childnode refid="25" relation="include">
         </childnode>
-        <childnode refid="28" relation="include">
+        <childnode refid="26" relation="include">
         </childnode>
-        <childnode refid="33" relation="include">
+        <childnode refid="29" relation="include">
         </childnode>
-        <childnode refid="36" relation="include">
-        </childnode>
-        <childnode refid="16" relation="include">
+        <childnode refid="34" relation="include">
         </childnode>
         <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
         </childnode>
         <childnode refid="38" relation="include">
         </childnode>
         <childnode refid="39" relation="include">
         </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
         <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>printer_utils.hpp</label>
+        <link refid="printer__utils_8hpp"/>
+        <childnode refid="40" relation="include">
         </childnode>
       </node>
       <node id="4">
@@ -926,59 +976,59 @@
         <childnode refid="13" relation="include">
         </childnode>
       </node>
-      <node id="28">
+      <node id="29">
         <label>hdf5printer.hpp</label>
         <link refid="hdf5printer_8hpp"/>
-        <childnode refid="29" relation="include">
-        </childnode>
         <childnode refid="30" relation="include">
         </childnode>
         <childnode refid="31" relation="include">
         </childnode>
         <childnode refid="32" relation="include">
         </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
       </node>
-      <node id="33">
+      <node id="34">
         <label>hdf5printer_v2.hpp</label>
         <link refid="hdf5printer__v2_8hpp"/>
-        <childnode refid="34" relation="include">
-        </childnode>
         <childnode refid="35" relation="include">
         </childnode>
-      </node>
-      <node id="36">
-        <label>hdf5reader.hpp</label>
-        <link refid="hdf5reader_8hpp"/>
-        <childnode refid="30" relation="include">
-        </childnode>
-        <childnode refid="32" relation="include">
+        <childnode refid="36" relation="include">
         </childnode>
       </node>
       <node id="37">
+        <label>hdf5reader.hpp</label>
+        <link refid="hdf5reader_8hpp"/>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
         <label>noneprinter.hpp</label>
         <link refid="noneprinter_8hpp"/>
       </node>
-      <node id="39">
+      <node id="42">
         <label>sqliteprinter.hpp</label>
         <link refid="sqliteprinter_8hpp"/>
-        <childnode refid="40" relation="include">
-        </childnode>
-        <childnode refid="41" relation="include">
-        </childnode>
-      </node>
-      <node id="42">
-        <label>sqlitereader.hpp</label>
-        <link refid="sqlitereader_8hpp"/>
         <childnode refid="43" relation="include">
         </childnode>
         <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>sqlitereader.hpp</label>
+        <link refid="sqlitereader_8hpp"/>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
         </childnode>
       </node>
       <node id="10">
         <label>baseprinter.cpp</label>
         <link refid="baseprinter_8cpp"/>
       </node>
-      <node id="38">
+      <node id="41">
         <label>printermanager.cpp</label>
         <link refid="printermanager_8cpp"/>
       </node>
@@ -1006,49 +1056,53 @@
         <label>print_overloads.cpp</label>
         <link refid="coutprinter_2print__overloads_8cpp"/>
       </node>
-      <node id="29">
+      <node id="30">
         <label>hdf5printer.cpp</label>
         <link refid="hdf5printer_8cpp"/>
       </node>
-      <node id="30">
+      <node id="31">
         <label>hdf5reader.cpp</label>
         <link refid="hdf5reader_8cpp"/>
       </node>
-      <node id="31">
+      <node id="32">
         <label>print_overloads.cpp</label>
         <link refid="hdf5printer_2print__overloads_8cpp"/>
       </node>
-      <node id="32">
+      <node id="33">
         <label>retrieve_overloads.cpp</label>
         <link refid="hdf5printer_2retrieve__overloads_8cpp"/>
       </node>
-      <node id="34">
+      <node id="35">
         <label>hdf5printer_v2.cpp</label>
         <link refid="hdf5printer__v2_8cpp"/>
       </node>
-      <node id="35">
+      <node id="36">
         <label>print_overloads.cpp</label>
         <link refid="hdf5printer__v2_2print__overloads_8cpp"/>
       </node>
-      <node id="40">
+      <node id="43">
         <label>print_overloads.cpp</label>
         <link refid="sqliteprinter_2print__overloads_8cpp"/>
       </node>
-      <node id="43">
+      <node id="46">
         <label>retrieve_overloads.cpp</label>
         <link refid="sqliteprinter_2retrieve__overloads_8cpp"/>
       </node>
-      <node id="41">
+      <node id="44">
         <label>sqliteprinter.cpp</label>
         <link refid="sqliteprinter_8cpp"/>
       </node>
-      <node id="44">
+      <node id="47">
         <label>sqlitereader.cpp</label>
         <link refid="sqlitereader_8cpp"/>
       </node>
       <node id="3">
         <label>SpecBit_MSSM.cpp</label>
         <link refid="SpecBit__MSSM_8cpp"/>
+      </node>
+      <node id="25">
+        <label>exceptions.cpp</label>
+        <link refid="exceptions_8cpp"/>
       </node>
     </invincdepgraph>
       <sectiondef kind="define">

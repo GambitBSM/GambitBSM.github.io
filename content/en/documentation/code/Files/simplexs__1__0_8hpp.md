@@ -17,6 +17,7 @@ description: "[No description available]"
 |  | **[BACKENDLANG](/documentation/code/files/simplexs__1__0_8hpp/#define-backendlang)**  |
 |  | **[VERSION](/documentation/code/files/simplexs__1__0_8hpp/#define-version)**  |
 |  | **[SAFE_VERSION](/documentation/code/files/simplexs__1__0_8hpp/#define-safe-version)**  |
+|  | **[REFERENCE](/documentation/code/files/simplexs__1__0_8hpp/#define-reference)**  |
 
 ## Detailed Description
 
@@ -70,6 +71,13 @@ Authors (add name and date if you modify):
 ```
 
 
+### define REFERENCE
+
+```
+#define REFERENCE Bozzi:2007qr,Fuks:2013vua,Fuks:2013lya,Fiaschi:2019zgh,Debove:2010kf,Fuks:2012qx,Fiaschi:2018hgm,Beenakker:2016lwe
+```
+
+
 ## Source code
 
 ```
@@ -94,6 +102,7 @@ Authors (add name and date if you modify):
 #define BACKENDLANG Python
 #define VERSION 1.0
 #define SAFE_VERSION 1_0
+#define REFERENCE Bozzi:2007qr,Fuks:2013vua,Fuks:2013lya,Fiaschi:2019zgh,Debove:2010kf,Fuks:2012qx,Fiaschi:2018hgm,Beenakker:2016lwe
 
 
 LOAD_LIBRARY
@@ -111,4 +120,4 @@ LOAD_LIBRARY
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:08 +0000
+Updated on 2024-07-18 at 13:53:35 +0000

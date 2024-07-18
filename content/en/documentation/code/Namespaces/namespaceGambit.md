@@ -22,7 +22,7 @@ TODO: see if we can use this one:  [More...](#detailed-description)
 | **[Gambit::Diver_1_0_0](/documentation/code/namespaces/namespacegambit_1_1diver__1__0__0/)**  |
 | **[Gambit::Diver_1_0_2](/documentation/code/namespaces/namespacegambit_1_1diver__1__0__2/)**  |
 | **[Gambit::Diver_1_0_4](/documentation/code/namespaces/namespacegambit_1_1diver__1__0__4/)**  |
-| **[Gambit::DRes](/documentation/code/namespaces/namespacegambit_1_1dres/)**  |
+| **[Gambit::DRes](/documentation/code/namespaces/namespacegambit_1_1dres/)** <br>Forward declaration of [Rule]() and Observables classes for saving pointers to ignored and matched examples.  |
 | **[Gambit::ExampleBit_A](/documentation/code/namespaces/namespacegambit_1_1examplebit__a/)**  |
 | **[Gambit::ExampleBit_B](/documentation/code/namespaces/namespacegambit_1_1examplebit__b/)**  |
 | **[Gambit::FlavBit](/documentation/code/namespaces/namespacegambit_1_1flavbit/)**  |
@@ -121,6 +121,8 @@ TODO: see if we can use this one:  [More...](#detailed-description)
 | struct | **[Gambit::DS5_SMCUSEFUL](/documentation/code/classes/structgambit_1_1ds5__smcuseful/)**  |
 | struct | **[Gambit::DS5_SMRUSEFUL](/documentation/code/classes/structgambit_1_1ds5__smruseful/)**  |
 | struct | **[Gambit::DS5_WIDTHS](/documentation/code/classes/structgambit_1_1ds5__widths/)**  |
+| struct | **[Gambit::DS_ADM_COM](/documentation/code/classes/structgambit_1_1ds__adm__com/)**  |
+| struct | **[Gambit::DS_an_how](/documentation/code/classes/structgambit_1_1ds__an__how/)**  |
 | struct | **[Gambit::DS_COUPLINGCONSTANTS](/documentation/code/classes/structgambit_1_1ds__couplingconstants/)**  |
 | struct | **[Gambit::DS_COUPLINGCONSTANTS61](/documentation/code/classes/structgambit_1_1ds__couplingconstants61/)**  |
 | struct | **[Gambit::DS_DDCOMLEGACY](/documentation/code/classes/structgambit_1_1ds__ddcomlegacy/)**  |
@@ -145,8 +147,10 @@ TODO: see if we can use this one:  [More...](#detailed-description)
 | struct | **[Gambit::DS_PACODES_MSSM61](/documentation/code/classes/structgambit_1_1ds__pacodes__mssm61/)**  |
 | struct | **[Gambit::DS_PMASSES](/documentation/code/classes/structgambit_1_1ds__pmasses/)**  |
 | struct | **[Gambit::DS_PWIDTHS](/documentation/code/classes/structgambit_1_1ds__pwidths/)**  |
+| struct | **[Gambit::DS_RD20OPT](/documentation/code/classes/structgambit_1_1ds__rd20opt/)**  |
 | struct | **[Gambit::DS_RDDOF](/documentation/code/classes/structgambit_1_1ds__rddof/)**  |
 | struct | **[Gambit::DS_RDERRORS](/documentation/code/classes/structgambit_1_1ds__rderrors/)**  |
+| struct | **[Gambit::DS_RDLIMS](/documentation/code/classes/structgambit_1_1ds__rdlims/)**  |
 | struct | **[Gambit::DS_RDLUN](/documentation/code/classes/structgambit_1_1ds__rdlun/)**  |
 | struct | **[Gambit::DS_RDPADD](/documentation/code/classes/structgambit_1_1ds__rdpadd/)**  |
 | struct | **[Gambit::DS_RDPARS](/documentation/code/classes/structgambit_1_1ds__rdpars/)**  |
@@ -348,6 +352,7 @@ TODO: see if we can use this one:  [More...](#detailed-description)
 | struct | **[Gambit::SpecTraits< Models::MajoranaSingletDM_Z2SimpleSpec >](/documentation/code/classes/structgambit_1_1spectraits_3_01models_1_1majoranasingletdm__z2simplespec_01_4/)** <br>Specialisation of traits class needed to inform base spectrum class of the Model and Input types.  |
 | struct | **[Gambit::SpecTraits< Models::ScalarSingletDM_Z2SimpleSpec >](/documentation/code/classes/structgambit_1_1spectraits_3_01models_1_1scalarsingletdm__z2simplespec_01_4/)** <br>Specialisation of traits class needed to inform base spectrum class of the Model and Input types.  |
 | struct | **[Gambit::SpecTraits< Models::ScalarSingletDM_Z3SimpleSpec >](/documentation/code/classes/structgambit_1_1spectraits_3_01models_1_1scalarsingletdm__z3simplespec_01_4/)** <br>Specialisation of traits class needed to inform base spectrum class of the Model and Input types.  |
+| struct | **[Gambit::SpecTraits< Models::SubGeVDMSimpleSpec >](/documentation/code/classes/structgambit_1_1spectraits_3_01models_1_1subgevdmsimplespec_01_4/)** <br>Specialisation of traits class needed to inform base spectrum class of the Model and Input types.  |
 | struct | **[Gambit::SpecTraits< Models::VectorSingletDM_Z2SimpleSpec >](/documentation/code/classes/structgambit_1_1spectraits_3_01models_1_1vectorsingletdm__z2simplespec_01_4/)** <br>Specialisation of traits class needed to inform base spectrum class of the Model and Input types.  |
 | struct | **[Gambit::SpecTraits< MSSMSimpleSpec >](/documentation/code/classes/structgambit_1_1spectraits_3_01mssmsimplespec_01_4/)** <br>Specialisation of traits class needed to inform base spectrum class of the Model and Input types.  |
 | struct | **[Gambit::SpecTraits< SMSimpleSpec >](/documentation/code/classes/structgambit_1_1spectraits_3_01smsimplespec_01_4/)** <br>Specialisation of traits class needed to inform base spectrum class of the Model and Input types.  |
@@ -361,6 +366,7 @@ TODO: see if we can use this one:  [More...](#detailed-description)
 | class | **[Gambit::SpectrumParameter](/documentation/code/classes/classgambit_1_1spectrumparameter/)** <br>Simple class to contain information defining how some parameter in a [SubSpectrum]() object can be accessed.  |
 | class | **[Gambit::SubSpectrum](/documentation/code/classes/classgambit_1_1subspectrum/)** <br>Virtual base class for interacting with spectrum generator output.  |
 | class | **[Gambit::SubSpectrumContents](/documentation/code/classes/classgambit_1_1subspectrumcontents/)** <br>Base class for defining the required contents of a [SubSpectrum](/documentation/code/classes/classgambit_1_1subspectrum/) object.  |
+| class | **[Gambit::Suspicious_point_exception](/documentation/code/classes/classgambit_1_1suspicious__point__exception/)** <br>[Gambit](/documentation/code/namespaces/namespacegambit/) suspicious point exception class.  |
 | struct | **[Gambit::susyhitin_type](/documentation/code/classes/structgambit_1_1susyhitin__type/)**  |
 | class | **[Gambit::table_formatter](/documentation/code/classes/classgambit_1_1table__formatter/)**  |
 | struct | **[Gambit::triplet](/documentation/code/classes/structgambit_1_1triplet/)**  |
@@ -383,6 +389,7 @@ TODO: see if we can use this one:  [More...](#detailed-description)
 
 |                | Name           |
 | -------------- | -------------- |
+| enum| **[FunctorStatus](/documentation/code/namespaces/namespacegambit/#enum-functorstatus)** { Pybind_missing = -6, Mathematica_missing = -5, Backend_missing = -4, Classes_missing = -3, Function_missing = -2, Origin_missing = -1, Model_incompatible = 0, Available = 1, Active = 2} |
 | typedef std::string | **[str](/documentation/code/namespaces/namespacegambit/#typedef-str)** <br>Shorthand for a standard string.  |
 | typedef double | **[REAL](/documentation/code/namespaces/namespacegambit/#typedef-real)**  |
 | typedef Fdouble | **[fh_real](/documentation/code/namespaces/namespacegambit/#typedef-fh-real)**  |
@@ -558,6 +565,7 @@ TODO: see if we can use this one:  [More...](#detailed-description)
 | bool | **[operator==](/documentation/code/namespaces/namespacegambit/#function-operator)**(const [SpecOverrideOptions](/documentation/code/classes/classgambit_1_1specoverrideoptions/) & lhs, const [SpecOverrideOptions](/documentation/code/classes/classgambit_1_1specoverrideoptions/) & rhs) |
 | void | **[terminator](/documentation/code/namespaces/namespacegambit/#function-terminator)**() |
 | double | **[virtual_SMHiggs_widths](/documentation/code/namespaces/namespacegambit/#function-virtual-smhiggs-widths)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) channel, double mh)<br>Higgs branching ratios and total width Gamma [GeV], as function of mass [GeV] (90 - 300 GeV)  |
+| double | **[hadronic_cross_section_ratio](/documentation/code/namespaces/namespacegambit/#function-hadronic-cross-section-ratio)**(double sqrts, bool smooth)<br>Hadronic cross section ratio as function of centre-of-mass energy [GeV] (0.3 - 188 GeV)  |
 | void | **[get_calculator_info](/documentation/code/namespaces/namespacegambit/#function-get-calculator-info)**(const [SLHAstruct](/documentation/code/namespaces/namespacegambit/#typedef-slhastruct) & slha, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) & calculator, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) & calculator_version) |
 | void | **[SLHAea_add_QNumbers_from_subspec](/documentation/code/namespaces/namespacegambit/#function-slhaea-add-qnumbers-from-subspec)**([SLHAstruct](/documentation/code/namespaces/namespacegambit/#typedef-slhastruct) & slha, const [SubSpectrum](/documentation/code/classes/classgambit_1_1subspectrum/) & subspec, const std::pair< int, int > pdg_pair)<br>Adds QNUMBERS entry for a particle, SLHA index given by the PDG code.  |
 | bool | **[is_abs](/documentation/code/namespaces/namespacegambit/#function-is-abs)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) & s)<br>Helper function for checking if a particle or ratio has been requested as an absolute value.  |
@@ -569,6 +577,7 @@ TODO: see if we can use this one:  [More...](#detailed-description)
 | void | **[MSSM30atX_to_MSSM63atX](/documentation/code/namespaces/namespacegambit/#function-mssm30atx-to-mssm63atx)**(const [ModelParameters](/documentation/code/classes/classgambit_1_1modelparameters/) & myP, [ModelParameters](/documentation/code/classes/classgambit_1_1modelparameters/) & targetP)<br>Translation functions for 30-parameter models to 63-parameter.  |
 | void | **[MSSM_mA_mG_to_MSSM_mhud](/documentation/code/namespaces/namespacegambit/#function-mssm-ma-mg-to-mssm-mhud)**(const [ModelParameters](/documentation/code/classes/classgambit_1_1modelparameters/) & myP, [ModelParameters](/documentation/code/classes/classgambit_1_1modelparameters/) & targetP, const [SubSpectrum](/documentation/code/classes/classgambit_1_1subspectrum/) & HE) |
 | bool | **[orderer](/documentation/code/namespaces/namespacegambit/#function-orderer)**(std::pair< int, double > a, std::pair< int, double > b)<br>Helper function for sorting int, double pairs according to the double.  |
+| template <typename T \> <br>bool | **[pp_reader_retrieve](/documentation/code/namespaces/namespacegambit/#function-pp-reader-retrieve)**(T & result, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) dataset)<br>Postprocessor reader retrieve function.  |
 | [Printers::BaseReader](/documentation/code/classes/classgambit_1_1printers_1_1basereader/) & | **[get_pp_reader](/documentation/code/namespaces/namespacegambit/#function-get-pp-reader)**() |
 | void | **[set_global_printer_manager](/documentation/code/namespaces/namespacegambit/#function-set-global-printer-manager)**([Printers::PrinterManager](/documentation/code/classes/classgambit_1_1printers_1_1printermanager/) * pm) |
 | [Printers::PrinterManager](/documentation/code/classes/classgambit_1_1printers_1_1printermanager/) * | **[get_global_printer_manager](/documentation/code/namespaces/namespacegambit/#function-get-global-printer-manager)**() |
@@ -603,13 +612,14 @@ TODO: see if we can use this one:  [More...](#detailed-description)
 | [warning](/documentation/code/classes/classgambit_1_1warning/) & | **[model_warning](/documentation/code/namespaces/namespacegambit/#function-model-warning)**()<br>Model warnings.  |
 | [invalid_point_exception](/documentation/code/classes/classgambit_1_1invalid__point__exception/) & | **[invalid_point](/documentation/code/namespaces/namespacegambit/#function-invalid-point)**()<br>Invalid point exceptions.  |
 | void | **[initialise_standalone_logs](/documentation/code/namespaces/namespacegambit/#function-initialise-standalone-logs)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) prefix)<br>Logger setup standalone utility function.  |
+| YAML::Node | **[get_standalone_printer](/documentation/code/namespaces/namespacegambit/#function-get-standalone-printer)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) printer, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) prefix, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) filename)<br>Initialise the printers (required for suspicious point raises)  |
 | std::string | **[spacing](/documentation/code/namespaces/namespacegambit/#function-spacing)**(int len, int maxlen)<br>Spacing utility for stream overloads.  |
 | template <class Type1 ,class Type2 \> <br>std::ostream & | **[operator<<](/documentation/code/namespaces/namespacegambit/#function-operator)**(std::ostream & os, const std::pair< Type1, Type2 > & p)<br>Stream overload for pairs of any type that already has << defined.  |
 | template <class Type \> <br>std::ostream & | **[operator<<](/documentation/code/namespaces/namespacegambit/#function-operator)**(std::ostream & os, const std::set< Type > & set)<br>Stream overload for sets of any type that already has << defined.  |
 | template <class Type \> <br>std::ostream & | **[operator<<](/documentation/code/namespaces/namespacegambit/#function-operator)**(std::ostream & os, const std::vector< Type > & v)<br>Stream overload for vectors of any type that already has << defined.  |
 | template <class Type \> <br>std::ostream & | **[operator<<](/documentation/code/namespaces/namespacegambit/#function-operator)**(std::ostream & os, const std::map< std::string, Type > & map)<br>Stream overload for map from string to any type that already has << defined.  |
 | template <typename T \> <br>T | **[byVal](/documentation/code/namespaces/namespacegambit/#function-byval)**(T t) |
-| template <typename T \> <br>int | **[sgn](/documentation/code/namespaces/namespacegambit/#function-sgn)**(T val) |
+| template <typename T \> <br>int | **[sgn](/documentation/code/namespaces/namespacegambit/#function-sgn)**(T val)<br>Get the sign of a (hopefully numeric) type.  |
 | template <typename T \> <br>uintptr_t | **[memaddress_to_uint](/documentation/code/namespaces/namespacegambit/#function-memaddress-to-uint)**(T * ptr) |
 | template <typename T \> <br>std::vector< T > | **[initVector](/documentation/code/namespaces/namespacegambit/#function-initvector)**(std::vector< T > vector) |
 | template <typename T ,typename... Args\> <br>std::vector< T > | **[initVector](/documentation/code/namespaces/namespacegambit/#function-initvector)**(std::vector< T > vector, T value, Args... args) |
@@ -659,6 +669,7 @@ TODO: see if we can use this one:  [More...](#detailed-description)
 | const double | **[eV2g](/documentation/code/namespaces/namespacegambit/#variable-ev2g)**  |
 | const double | **[gev2cm](/documentation/code/namespaces/namespacegambit/#variable-gev2cm)**  |
 | const double | **[gev2cm2](/documentation/code/namespaces/namespacegambit/#variable-gev2cm2)**  |
+| const double | **[gev3cm3](/documentation/code/namespaces/namespacegambit/#variable-gev3cm3)**  |
 | const double | **[gev2pb](/documentation/code/namespaces/namespacegambit/#variable-gev2pb)**  |
 | const double | **[gev2tocm3s1](/documentation/code/namespaces/namespacegambit/#variable-gev2tocm3s1)**  |
 | const double | **[s2cm](/documentation/code/namespaces/namespacegambit/#variable-s2cm)**  |
@@ -672,7 +683,10 @@ TODO: see if we can use this one:  [More...](#detailed-description)
 | const double | **[m_deuteron](/documentation/code/namespaces/namespacegambit/#variable-m-deuteron)**  |
 | const double | **[m_electron](/documentation/code/namespaces/namespacegambit/#variable-m-electron)**  |
 | const double | **[alpha_EM](/documentation/code/namespaces/namespacegambit/#variable-alpha-em)**  |
+| const double | **[TCMB](/documentation/code/namespaces/namespacegambit/#variable-tcmb)**  |
+| const double | **[g0_entr](/documentation/code/namespaces/namespacegambit/#variable-g0-entr)**  |
 | const double | **[c_SI](/documentation/code/namespaces/namespacegambit/#variable-c-si)** <br>Values from Particle Data Group 2018 ([http://pdg.lbl.gov/2018/reviews/rpp2018-rev-phys-constants.pdf](http://pdg.lbl.gov/2018/reviews/rpp2018-rev-phys-constants.pdf))  |
+| const double | **[c_km](/documentation/code/namespaces/namespacegambit/#variable-c-km)**  |
 | const double | **[eV_to_J](/documentation/code/namespaces/namespacegambit/#variable-ev-to-j)**  |
 | const double | **[Mpc_SI](/documentation/code/namespaces/namespacegambit/#variable-mpc-si)**  |
 | const double | **[GN_cgs](/documentation/code/namespaces/namespacegambit/#variable-gn-cgs)**  |
@@ -1386,6 +1400,29 @@ Jan 2016
 POSIX filesystem libraries [Gambit](/documentation/code/namespaces/namespacegambit/) Boost 
 
 ## Types Documentation
+
+### enum FunctorStatus
+
+| Enumerator | Value | Description |
+| ---------- | ----- | ----------- |
+| Pybind_missing | -6|   |
+| Mathematica_missing | -5|   |
+| Backend_missing | -4|   |
+| Classes_missing | -3|   |
+| Function_missing | -2|   |
+| Origin_missing | -1|   |
+| Model_incompatible | 0|   |
+| Available | 1|   |
+| Active | 2|   |
+
+
+
+
+Enumeration for the status of a given functor. Note that the discriminant has custom values:
+
+* A negative value signals that the functor is disabled. Possible values are: -6 = required external tool absent (pybind11) -5 = required external tool absent (Mathematica) -4 = required backend absent (backend ini functions) -3 = required classes absent -2 = function absent -1 = origin absent
+* A positive value signals that the functor can be used (as long as the functor is allowed the for the models in the scan) Possible values are 0 = model incompatibility (default) 1 = available 2 = active 
+
 
 ### typedef str
 
@@ -2955,6 +2992,17 @@ double virtual_SMHiggs_widths(
 
 Higgs branching ratios and total width Gamma [GeV], as function of mass [GeV] (90 - 300 GeV) 
 
+### function hadronic_cross_section_ratio
+
+```
+double hadronic_cross_section_ratio(
+    double sqrts,
+    bool smooth
+)
+```
+
+Hadronic cross section ratio as function of centre-of-mass energy [GeV] (0.3 - 188 GeV) 
+
 ### function get_calculator_info
 
 ```
@@ -3074,6 +3122,18 @@ bool orderer(
 ```
 
 Helper function for sorting int, double pairs according to the double. 
+
+### function pp_reader_retrieve
+
+```
+template <typename T >
+bool pp_reader_retrieve(
+    T & result,
+    str dataset
+)
+```
+
+Postprocessor reader retrieve function. 
 
 ### function get_pp_reader
 
@@ -3426,6 +3486,18 @@ void initialise_standalone_logs(
 
 Logger setup standalone utility function. 
 
+### function get_standalone_printer
+
+```
+YAML::Node get_standalone_printer(
+    str printer,
+    str prefix,
+    str filename
+)
+```
+
+Initialise the printers (required for suspicious point raises) 
+
 ### function spacing
 
 ```
@@ -3508,6 +3580,7 @@ int sgn(
 )
 ```
 
+Get the sign of a (hopefully numeric) type. 
 
 ### function memaddress_to_uint
 
@@ -3935,6 +4008,13 @@ const double gev2cm2 = pow(197.327053e-16, 2.0);
 ```
 
 
+### variable gev3cm3
+
+```
+const double gev3cm3 = pow(197.327053e-16, 3.0);
+```
+
+
 ### variable gev2pb
 
 ```
@@ -4026,6 +4106,20 @@ const double alpha_EM = 7.2973525664e-3;
 ```
 
 
+### variable TCMB
+
+```
+const double TCMB = 2.725;
+```
+
+
+### variable g0_entr
+
+```
+const double g0_entr = 3.91757;
+```
+
+
 ### variable c_SI
 
 ```
@@ -4033,6 +4127,13 @@ const double c_SI = s2cm/100;
 ```
 
 Values from Particle Data Group 2018 ([http://pdg.lbl.gov/2018/reviews/rpp2018-rev-phys-constants.pdf](http://pdg.lbl.gov/2018/reviews/rpp2018-rev-phys-constants.pdf)) 
+
+### variable c_km
+
+```
+const double c_km = s2cm/1e5;
+```
+
 
 ### variable eV_to_J
 
@@ -4194,4 +4295,4 @@ const int gambit_version_int =  10000*gambit_version_major + 100*gambit_version_
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:02 +0000
+Updated on 2024-07-18 at 13:53:30 +0000

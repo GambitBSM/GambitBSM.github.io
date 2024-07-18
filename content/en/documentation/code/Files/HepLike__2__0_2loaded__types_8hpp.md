@@ -23,12 +23,12 @@ description: "[No description available]"
 ### define HepLike_2_0_all_data
 
 ```
-#define HepLike_2_0_all_data   (( /*class*/(HL_Gaussian),    /*constructors*/(("Factory_HL_Gaussian_0__BOSS_1",())) (("Factory_HL_Gaussian_1__BOSS_2",(std::string))) )) \
-  (( /*class*/(HL_BifurGaussian),    /*constructors*/(("Factory_HL_BifurGaussian_0__BOSS_3",())) (("Factory_HL_BifurGaussian_1__BOSS_4",(std::string))) )) \
-  (( /*class*/(HL_ProfLikelihood),    /*constructors*/(("Factory_HL_ProfLikelihood_0__BOSS_5",())) (("Factory_HL_ProfLikelihood_1__BOSS_6",(std::string))) )) \
-  (( /*class*/(HL_nDimBifurGaussian),    /*constructors*/(("Factory_HL_nDimBifurGaussian_0__BOSS_7",())) (("Factory_HL_nDimBifurGaussian_1__BOSS_8",(std::string))) )) \
-  (( /*class*/(HL_nDimGaussian),    /*constructors*/(("Factory_HL_nDimGaussian_0__BOSS_9",())) (("Factory_HL_nDimGaussian_1__BOSS_10",(std::string))) )) \
-  (( /*class*/(HL_nDimLikelihood),    /*constructors*/(("Factory_HL_nDimLikelihood_0__BOSS_11",())) (("Factory_HL_nDimLikelihood_1__BOSS_12",(std::string))) )) \
+#define HepLike_2_0_all_data   (( /*class*/(HL_Gaussian),    /*constructors*/((("Factory_HL_Gaussian_0__BOSS_1","_Factory_HL_Gaussian_0__BOSS_1"),())) ((("Factory_HL_Gaussian_1__BOSS_2","_Factory_HL_Gaussian_1__BOSS_2"),(std::string))) )) \
+  (( /*class*/(HL_BifurGaussian),    /*constructors*/((("Factory_HL_BifurGaussian_0__BOSS_3","_Factory_HL_BifurGaussian_0__BOSS_3"),())) ((("Factory_HL_BifurGaussian_1__BOSS_4","_Factory_HL_BifurGaussian_1__BOSS_4"),(std::string))) )) \
+  (( /*class*/(HL_ProfLikelihood),    /*constructors*/((("Factory_HL_ProfLikelihood_0__BOSS_5","_Factory_HL_ProfLikelihood_0__BOSS_5"),())) ((("Factory_HL_ProfLikelihood_1__BOSS_6","_Factory_HL_ProfLikelihood_1__BOSS_6"),(std::string))) )) \
+  (( /*class*/(HL_nDimBifurGaussian),    /*constructors*/((("Factory_HL_nDimBifurGaussian_0__BOSS_7","_Factory_HL_nDimBifurGaussian_0__BOSS_7"),())) ((("Factory_HL_nDimBifurGaussian_1__BOSS_8","_Factory_HL_nDimBifurGaussian_1__BOSS_8"),(std::string))) )) \
+  (( /*class*/(HL_nDimGaussian),    /*constructors*/((("Factory_HL_nDimGaussian_0__BOSS_9","_Factory_HL_nDimGaussian_0__BOSS_9"),())) ((("Factory_HL_nDimGaussian_1__BOSS_10","_Factory_HL_nDimGaussian_1__BOSS_10"),(std::string))) )) \
+  (( /*class*/(HL_nDimLikelihood),    /*constructors*/((("Factory_HL_nDimLikelihood_0__BOSS_11","_Factory_HL_nDimLikelihood_0__BOSS_11"),())) ((("Factory_HL_nDimLikelihood_1__BOSS_12","_Factory_HL_nDimLikelihood_1__BOSS_12"),(std::string))) )) \
 ```
 
 
@@ -51,12 +51,12 @@ description: "[No description available]"
 
 // Indicate which types are provided by this backend, and what the symbols of their factories are.
 #define HepLike_2_0_all_data \
-  (( /*class*/(HL_Gaussian),    /*constructors*/(("Factory_HL_Gaussian_0__BOSS_1",())) (("Factory_HL_Gaussian_1__BOSS_2",(std::string))) )) \
-  (( /*class*/(HL_BifurGaussian),    /*constructors*/(("Factory_HL_BifurGaussian_0__BOSS_3",())) (("Factory_HL_BifurGaussian_1__BOSS_4",(std::string))) )) \
-  (( /*class*/(HL_ProfLikelihood),    /*constructors*/(("Factory_HL_ProfLikelihood_0__BOSS_5",())) (("Factory_HL_ProfLikelihood_1__BOSS_6",(std::string))) )) \
-  (( /*class*/(HL_nDimBifurGaussian),    /*constructors*/(("Factory_HL_nDimBifurGaussian_0__BOSS_7",())) (("Factory_HL_nDimBifurGaussian_1__BOSS_8",(std::string))) )) \
-  (( /*class*/(HL_nDimGaussian),    /*constructors*/(("Factory_HL_nDimGaussian_0__BOSS_9",())) (("Factory_HL_nDimGaussian_1__BOSS_10",(std::string))) )) \
-  (( /*class*/(HL_nDimLikelihood),    /*constructors*/(("Factory_HL_nDimLikelihood_0__BOSS_11",())) (("Factory_HL_nDimLikelihood_1__BOSS_12",(std::string))) )) \
+  (( /*class*/(HL_Gaussian),    /*constructors*/((("Factory_HL_Gaussian_0__BOSS_1","_Factory_HL_Gaussian_0__BOSS_1"),())) ((("Factory_HL_Gaussian_1__BOSS_2","_Factory_HL_Gaussian_1__BOSS_2"),(std::string))) )) \
+  (( /*class*/(HL_BifurGaussian),    /*constructors*/((("Factory_HL_BifurGaussian_0__BOSS_3","_Factory_HL_BifurGaussian_0__BOSS_3"),())) ((("Factory_HL_BifurGaussian_1__BOSS_4","_Factory_HL_BifurGaussian_1__BOSS_4"),(std::string))) )) \
+  (( /*class*/(HL_ProfLikelihood),    /*constructors*/((("Factory_HL_ProfLikelihood_0__BOSS_5","_Factory_HL_ProfLikelihood_0__BOSS_5"),())) ((("Factory_HL_ProfLikelihood_1__BOSS_6","_Factory_HL_ProfLikelihood_1__BOSS_6"),(std::string))) )) \
+  (( /*class*/(HL_nDimBifurGaussian),    /*constructors*/((("Factory_HL_nDimBifurGaussian_0__BOSS_7","_Factory_HL_nDimBifurGaussian_0__BOSS_7"),())) ((("Factory_HL_nDimBifurGaussian_1__BOSS_8","_Factory_HL_nDimBifurGaussian_1__BOSS_8"),(std::string))) )) \
+  (( /*class*/(HL_nDimGaussian),    /*constructors*/((("Factory_HL_nDimGaussian_0__BOSS_9","_Factory_HL_nDimGaussian_0__BOSS_9"),())) ((("Factory_HL_nDimGaussian_1__BOSS_10","_Factory_HL_nDimGaussian_1__BOSS_10"),(std::string))) )) \
+  (( /*class*/(HL_nDimLikelihood),    /*constructors*/((("Factory_HL_nDimLikelihood_0__BOSS_11","_Factory_HL_nDimLikelihood_0__BOSS_11"),())) ((("Factory_HL_nDimLikelihood_1__BOSS_12","_Factory_HL_nDimLikelihood_1__BOSS_12"),(std::string))) )) \
 
 // If the default version has been loaded, set it as default.
 #if ALREADY_LOADED(CAT_3(BACKENDNAME,_,CAT(Default_,BACKENDNAME)))
@@ -72,4 +72,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:08 +0000
+Updated on 2024-07-18 at 13:53:35 +0000

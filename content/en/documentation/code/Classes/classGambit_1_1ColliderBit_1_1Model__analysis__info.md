@@ -21,9 +21,13 @@ description: "[No description available]"
 | void | **[add_interp4d](/documentation/code/classes/classgambit_1_1colliderbit_1_1model__analysis__info/#function-add-interp4d)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) name, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) filename, std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > colnames, bool allow_missing_points) |
 | void | **[add_interp5d](/documentation/code/classes/classgambit_1_1colliderbit_1_1model__analysis__info/#function-add-interp5d)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) name, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) filename, std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > colnames, bool allow_missing_points) |
 | void | **[add_interpNd](/documentation/code/classes/classgambit_1_1colliderbit_1_1model__analysis__info/#function-add-interpnd)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) name, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) filename, std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > colnames, int N, bool allow_missing_points) |
+| bool | **[has_interp1d](/documentation/code/classes/classgambit_1_1colliderbit_1_1model__analysis__info/#function-has-interp1d)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) name) const |
 | const [Utils::interp1d_gsl_collection](/documentation/code/classes/classgambit_1_1utils_1_1interp1d__gsl__collection/) & | **[get_interp1d](/documentation/code/classes/classgambit_1_1colliderbit_1_1model__analysis__info/#function-get-interp1d)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) name) const |
+| bool | **[has_interp2d](/documentation/code/classes/classgambit_1_1colliderbit_1_1model__analysis__info/#function-has-interp2d)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) name) const |
 | const [Utils::interp2d_gsl_collection](/documentation/code/classes/classgambit_1_1utils_1_1interp2d__gsl__collection/) & | **[get_interp2d](/documentation/code/classes/classgambit_1_1colliderbit_1_1model__analysis__info/#function-get-interp2d)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) name) const |
+| bool | **[has_interp4d](/documentation/code/classes/classgambit_1_1colliderbit_1_1model__analysis__info/#function-has-interp4d)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) name) const |
 | [Utils::interp4d_collection](/documentation/code/classes/classgambit_1_1utils_1_1interp4d__collection/) & | **[get_interp4d](/documentation/code/classes/classgambit_1_1colliderbit_1_1model__analysis__info/#function-get-interp4d)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) name) const |
+| bool | **[has_interp5d](/documentation/code/classes/classgambit_1_1colliderbit_1_1model__analysis__info/#function-has-interp5d)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) name) const |
 | [Utils::interp5d_collection](/documentation/code/classes/classgambit_1_1utils_1_1interp5d__collection/) & | **[get_interp5d](/documentation/code/classes/classgambit_1_1colliderbit_1_1model__analysis__info/#function-get-interp5d)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) name) const |
 
 ## Public Attributes
@@ -122,10 +126,28 @@ inline void add_interpNd(
 ```
 
 
+### function has_interp1d
+
+```
+inline bool has_interp1d(
+    str name
+) const
+```
+
+
 ### function get_interp1d
 
 ```
 inline const Utils::interp1d_gsl_collection & get_interp1d(
+    str name
+) const
+```
+
+
+### function has_interp2d
+
+```
+inline bool has_interp2d(
     str name
 ) const
 ```
@@ -140,10 +162,28 @@ inline const Utils::interp2d_gsl_collection & get_interp2d(
 ```
 
 
+### function has_interp4d
+
+```
+inline bool has_interp4d(
+    str name
+) const
+```
+
+
 ### function get_interp4d
 
 ```
 inline Utils::interp4d_collection & get_interp4d(
+    str name
+) const
+```
+
+
+### function has_interp5d
+
+```
+inline bool has_interp5d(
     str name
 ) const
 ```
@@ -246,4 +286,4 @@ std::map< str, std::unique_ptr< Utils::interp5d_collection > > interp5d;
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:04 +0000
+Updated on 2024-07-18 at 13:53:31 +0000

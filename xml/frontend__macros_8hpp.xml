@@ -20,6 +20,7 @@
     <includedby refid="DDCalc__2__2__0_8cpp" local="yes">DDCalc_2_2_0.cpp</includedby>
     <includedby refid="DDCalc__2__3__0_8cpp" local="yes">DDCalc_2_3_0.cpp</includedby>
     <includedby refid="DarkAges__1__2__0_8cpp" local="yes">DarkAges_1_2_0.cpp</includedby>
+    <includedby refid="DarkCast__1__1_8cpp" local="yes">DarkCast_1_1.cpp</includedby>
     <includedby refid="DarkSUSY__5__1__3_8cpp" local="yes">DarkSUSY_5_1_3.cpp</includedby>
     <includedby refid="DarkSUSY__MSSM__6__1__1_8cpp" local="yes">DarkSUSY_MSSM_6_1_1.cpp</includedby>
     <includedby refid="DarkSUSY__MSSM__6__2__2_8cpp" local="yes">DarkSUSY_MSSM_6_2_2.cpp</includedby>
@@ -39,7 +40,6 @@
     <includedby refid="LibMathematicaTest_8cpp" local="yes">LibMathematicaTest.cpp</includedby>
     <includedby refid="LibSecond__1__1_8cpp" local="yes">LibSecond_1_1.cpp</includedby>
     <includedby refid="LibSecond__1__2_8cpp" local="yes">LibSecond_1_2.cpp</includedby>
-    <includedby refid="LibThird__1__0_8cpp" local="yes">LibThird_1_0.cpp</includedby>
     <includedby refid="LibThird__1__1_8cpp" local="yes">LibThird_1_1.cpp</includedby>
     <includedby refid="LibThird__1__2_8cpp" local="yes">LibThird_1_2.cpp</includedby>
     <includedby refid="MicrOmegas__DMsimpVectorMedVectorDM__3__6__9__2_8cpp" local="yes">MicrOmegas_DMsimpVectorMedVectorDM_3_6_9_2.cpp</includedby>
@@ -56,8 +56,8 @@
     <includedby refid="Rivet__3__1__5_8cpp" local="yes">Rivet_3_1_5.cpp</includedby>
     <includedby refid="SPheno__3__3__8_8cpp" local="yes">SPheno_3_3_8.cpp</includedby>
     <includedby refid="SPheno__4__0__3_8cpp" local="yes">SPheno_4_0_3.cpp</includedby>
-    <includedby refid="SUSY-HIT__1__5_8cpp" local="yes">SUSY-HIT_1_5.cpp</includedby>
     <includedby refid="SUSYHD__1__0__2_8cpp" local="yes">SUSYHD_1_0_2.cpp</includedby>
+    <includedby refid="SUSY__HIT__1__5_8cpp" local="yes">SUSY_HIT_1_5.cpp</includedby>
     <includedby refid="SuperIso__4__1_8cpp" local="yes">SuperIso_4_1.cpp</includedby>
     <includedby refid="classy__2__6__3_8cpp" local="yes">classy_2_6_3.cpp</includedby>
     <includedby refid="classy__2__9__3_8cpp" local="yes">classy_2_9_3.cpp</includedby>
@@ -78,7 +78,7 @@
     <includedby refid="simple__xs__1__0_8cpp" local="yes">simple_xs_1_0.cpp</includedby>
     <includedby refid="xsecBE__1__0__2_8cpp" local="yes">xsecBE_1_0_2.cpp</includedby>
     <incdepgraph>
-      <node id="112">
+      <node id="111">
         <label>gambit/Backends/backend_info.hpp</label>
         <link refid="backend__info_8hpp"/>
         <childnode refid="8" relation="include">
@@ -90,24 +90,24 @@
         <childnode refid="61" relation="include">
         </childnode>
       </node>
-      <node id="111">
+      <node id="110">
         <label>gambit/Backends/backend_singleton.hpp</label>
         <link refid="backend__singleton_8hpp"/>
-        <childnode refid="112" relation="include">
+        <childnode refid="111" relation="include">
         </childnode>
       </node>
-      <node id="78">
+      <node id="77">
         <label>gambit/Backends/common_macros.hpp</label>
         <link refid="common__macros_8hpp"/>
         <childnode refid="19" relation="include">
         </childnode>
-        <childnode refid="79" relation="include">
+        <childnode refid="78" relation="include">
         </childnode>
         <childnode refid="71" relation="include">
         </childnode>
-        <childnode refid="119" relation="include">
+        <childnode refid="118" relation="include">
         </childnode>
-        <childnode refid="120" relation="include">
+        <childnode refid="119" relation="include">
         </childnode>
         <childnode refid="73" relation="include">
         </childnode>
@@ -116,7 +116,7 @@
         <childnode refid="74" relation="include">
         </childnode>
       </node>
-      <node id="108">
+      <node id="107">
         <label>gambit/Backends/default_bossed_versions.hpp</label>
         <link refid="default__bossed__versions_8hpp"/>
       </node>
@@ -125,106 +125,106 @@
         <link refid="frontend__macros_8hpp"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="78" relation="include">
+        <childnode refid="77" relation="include">
         </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+      </node>
+      <node id="120">
+        <label>gambit/Backends/interoperability.hpp</label>
+        <link refid="interoperability_8hpp"/>
         <childnode refid="121" relation="include">
         </childnode>
-        <childnode refid="111" relation="include">
+        <childnode refid="122" relation="include">
+        </childnode>
+        <childnode refid="124" relation="include">
         </childnode>
       </node>
       <node id="121">
-        <label>gambit/Backends/interoperability.hpp</label>
-        <link refid="interoperability_8hpp"/>
-        <childnode refid="122" relation="include">
-        </childnode>
-        <childnode refid="123" relation="include">
-        </childnode>
-        <childnode refid="125" relation="include">
-        </childnode>
-      </node>
-      <node id="122">
         <label>gambit/Backends/interoperability_macros.hpp</label>
         <link refid="interoperability__macros_8hpp"/>
       </node>
-      <node id="124">
+      <node id="123">
         <label>gambit/Backends/mathematica_function.hpp</label>
         <link refid="mathematica__function_8hpp"/>
-        <childnode refid="110" relation="include">
+        <childnode refid="109" relation="include">
         </childnode>
         <childnode refid="53" relation="include">
         </childnode>
-        <childnode refid="111" relation="include">
+        <childnode refid="110" relation="include">
         </childnode>
         <childnode refid="55" relation="include">
         </childnode>
-        <childnode refid="113" relation="include">
+        <childnode refid="112" relation="include">
         </childnode>
       </node>
-      <node id="123">
+      <node id="122">
         <label>gambit/Backends/mathematica_macros.hpp</label>
         <link refid="mathematica__macros_8hpp"/>
         <childnode refid="55" relation="include">
         </childnode>
         <childnode refid="20" relation="include">
         </childnode>
-        <childnode refid="124" relation="include">
+        <childnode refid="123" relation="include">
         </childnode>
-        <childnode refid="109" relation="include">
+        <childnode refid="108" relation="include">
         </childnode>
       </node>
-      <node id="109">
+      <node id="108">
         <label>gambit/Backends/mathematica_variable.hpp</label>
         <link refid="mathematica__variable_8hpp"/>
-        <childnode refid="110" relation="include">
+        <childnode refid="109" relation="include">
         </childnode>
-        <childnode refid="111" relation="include">
+        <childnode refid="110" relation="include">
         </childnode>
         <childnode refid="55" relation="include">
         </childnode>
-        <childnode refid="113" relation="include">
+        <childnode refid="112" relation="include">
         </childnode>
       </node>
-      <node id="126">
+      <node id="125">
         <label>gambit/Backends/python_function.hpp</label>
         <link refid="python__function_8hpp"/>
         <childnode refid="55" relation="include">
         </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
         <childnode refid="110" relation="include">
         </childnode>
-        <childnode refid="115" relation="include">
-        </childnode>
-        <childnode refid="111" relation="include">
-        </childnode>
       </node>
-      <node id="115">
+      <node id="114">
         <label>gambit/Backends/python_helpers.hpp</label>
         <link refid="python__helpers_8hpp"/>
       </node>
-      <node id="125">
+      <node id="124">
         <label>gambit/Backends/python_macros.hpp</label>
         <link refid="python__macros_8hpp"/>
         <childnode refid="55" relation="include">
         </childnode>
         <childnode refid="20" relation="include">
         </childnode>
-        <childnode refid="126" relation="include">
+        <childnode refid="125" relation="include">
         </childnode>
-        <childnode refid="114" relation="include">
+        <childnode refid="113" relation="include">
         </childnode>
       </node>
-      <node id="114">
+      <node id="113">
         <label>gambit/Backends/python_variable.hpp</label>
         <link refid="python__variable_8hpp"/>
         <childnode refid="55" relation="include">
         </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
         <childnode refid="110" relation="include">
         </childnode>
-        <childnode refid="115" relation="include">
-        </childnode>
-        <childnode refid="111" relation="include">
-        </childnode>
       </node>
-      <node id="100">
+      <node id="99">
         <label>gambit/Elements/daFunk.hpp</label>
         <link refid="daFunk_8hpp_source"/>
         <childnode refid="5" relation="include">
@@ -239,7 +239,9 @@
         </childnode>
         <childnode refid="54" relation="include">
         </childnode>
-        <childnode refid="77" relation="include">
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="100" relation="include">
         </childnode>
         <childnode refid="101" relation="include">
         </childnode>
@@ -249,10 +251,8 @@
         </childnode>
         <childnode refid="104" relation="include">
         </childnode>
-        <childnode refid="105" relation="include">
-        </childnode>
       </node>
-      <node id="94">
+      <node id="93">
         <label>gambit/Elements/decay_table.hpp</label>
         <link refid="decay__table_8hpp"/>
         <childnode refid="8" relation="include">
@@ -263,18 +263,18 @@
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
-        <childnode refid="90" relation="include">
+        <childnode refid="89" relation="include">
         </childnode>
-        <childnode refid="95" relation="include">
+        <childnode refid="94" relation="include">
         </childnode>
         <childnode refid="14" relation="include">
         </childnode>
         <childnode refid="19" relation="include">
         </childnode>
-        <childnode refid="93" relation="include">
+        <childnode refid="92" relation="include">
         </childnode>
       </node>
-      <node id="107">
+      <node id="106">
         <label>gambit/Elements/flav_prediction.hpp</label>
         <link refid="flav__prediction_8hpp"/>
         <childnode refid="15" relation="include">
@@ -312,7 +312,7 @@
         <childnode refid="68" relation="include">
         </childnode>
       </node>
-      <node id="99">
+      <node id="98">
         <label>gambit/Elements/halo_types.hpp</label>
         <link refid="halo__types_8hpp"/>
         <childnode refid="8" relation="include">
@@ -323,20 +323,20 @@
         </childnode>
         <childnode refid="55" relation="include">
         </childnode>
-        <childnode refid="100" relation="include">
+        <childnode refid="99" relation="include">
         </childnode>
         <childnode refid="14" relation="include">
         </childnode>
       </node>
-      <node id="98">
+      <node id="97">
         <label>gambit/Elements/higgs_couplings_table.hpp</label>
         <link refid="higgs__couplings__table_8hpp"/>
         <childnode refid="14" relation="include">
         </childnode>
-        <childnode refid="94" relation="include">
+        <childnode refid="93" relation="include">
         </childnode>
       </node>
-      <node id="110">
+      <node id="109">
         <label>gambit/Elements/ini_catch.hpp</label>
         <link refid="ini__catch_8hpp"/>
         <childnode refid="40" relation="include">
@@ -375,16 +375,14 @@
         </childnode>
         <childnode refid="39" relation="include">
         </childnode>
-        <childnode refid="75" relation="include">
-        </childnode>
         <childnode refid="20" relation="include">
         </childnode>
-        <childnode refid="76" relation="include">
+        <childnode refid="75" relation="include">
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
       </node>
-      <node id="95">
+      <node id="94">
         <label>gambit/Elements/mssm_slhahelp.hpp</label>
         <link refid="mssm__slhahelp_8hpp"/>
         <childnode refid="5" relation="include">
@@ -397,15 +395,15 @@
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
-        <childnode refid="96" relation="include">
+        <childnode refid="95" relation="include">
         </childnode>
-        <childnode refid="97" relation="include">
+        <childnode refid="96" relation="include">
         </childnode>
         <childnode refid="9" relation="include">
         </childnode>
-        <childnode refid="87" relation="include">
-        </childnode>
         <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
         </childnode>
         <childnode refid="14" relation="include">
         </childnode>
@@ -424,69 +422,69 @@
         <childnode refid="19" relation="include">
         </childnode>
       </node>
-      <node id="80">
+      <node id="79">
         <label>gambit/Elements/shared_types.hpp</label>
         <link refid="shared__types_8hpp"/>
         <childnode refid="14" relation="include">
         </childnode>
         <childnode refid="64" relation="include">
         </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
         <childnode refid="81" relation="include">
         </childnode>
-        <childnode refid="82" relation="include">
+        <childnode refid="85" relation="include">
         </childnode>
-        <childnode refid="86" relation="include">
+        <childnode refid="93" relation="include">
         </childnode>
-        <childnode refid="94" relation="include">
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
         </childnode>
         <childnode refid="98" relation="include">
         </childnode>
-        <childnode refid="90" relation="include">
-        </childnode>
-        <childnode refid="99" relation="include">
+        <childnode refid="105" relation="include">
         </childnode>
         <childnode refid="106" relation="include">
         </childnode>
-        <childnode refid="107" relation="include">
+        <childnode refid="91" relation="include">
         </childnode>
-        <childnode refid="92" relation="include">
+        <childnode refid="107" relation="include">
         </childnode>
         <childnode refid="108" relation="include">
         </childnode>
-        <childnode refid="109" relation="include">
+        <childnode refid="113" relation="include">
         </childnode>
-        <childnode refid="114" relation="include">
-        </childnode>
-        <childnode refid="116" relation="include">
+        <childnode refid="115" relation="include">
         </childnode>
       </node>
-      <node id="90">
+      <node id="89">
         <label>gambit/Elements/slhaea_spec_helpers.hpp</label>
         <link refid="slhaea__spec__helpers_8hpp"/>
         <childnode refid="19" relation="include">
         </childnode>
         <childnode refid="14" relation="include">
         </childnode>
-        <childnode refid="83" relation="include">
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
         </childnode>
         <childnode refid="91" relation="include">
         </childnode>
-        <childnode refid="92" relation="include">
+        <childnode refid="83" relation="include">
         </childnode>
         <childnode refid="84" relation="include">
         </childnode>
-        <childnode refid="85" relation="include">
-        </childnode>
       </node>
-      <node id="82">
+      <node id="81">
         <label>gambit/Elements/sminputs.hpp</label>
         <link refid="sminputs_8hpp"/>
-        <childnode refid="83" relation="include">
+        <childnode refid="82" relation="include">
         </childnode>
-        <childnode refid="81" relation="include">
+        <childnode refid="80" relation="include">
         </childnode>
       </node>
-      <node id="86">
+      <node id="85">
         <label>gambit/Elements/spectrum.hpp</label>
         <link refid="spectrum_8hpp"/>
         <childnode refid="17" relation="include">
@@ -495,18 +493,18 @@
         </childnode>
         <childnode refid="59" relation="include">
         </childnode>
-        <childnode refid="82" relation="include">
+        <childnode refid="81" relation="include">
         </childnode>
-        <childnode refid="87" relation="include">
+        <childnode refid="86" relation="include">
         </childnode>
-        <childnode refid="90" relation="include">
+        <childnode refid="89" relation="include">
         </childnode>
-        <childnode refid="93" relation="include">
+        <childnode refid="92" relation="include">
         </childnode>
-        <childnode refid="76" relation="include">
+        <childnode refid="75" relation="include">
         </childnode>
       </node>
-      <node id="91">
+      <node id="90">
         <label>gambit/Elements/spectrum_helpers.hpp</label>
         <link refid="spectrum__helpers_8hpp"/>
         <childnode refid="15" relation="include">
@@ -518,43 +516,43 @@
         <childnode refid="8" relation="include">
         </childnode>
       </node>
-      <node id="87">
+      <node id="86">
         <label>gambit/Elements/subspectrum.hpp</label>
         <link refid="subspectrum_8hpp"/>
         <childnode refid="8" relation="include">
         </childnode>
         <childnode refid="9" relation="include">
         </childnode>
-        <childnode refid="88" relation="include">
+        <childnode refid="87" relation="include">
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
         <childnode refid="27" relation="include">
         </childnode>
-        <childnode refid="89" relation="include">
+        <childnode refid="88" relation="include">
         </childnode>
         <childnode refid="19" relation="include">
         </childnode>
         <childnode refid="53" relation="include">
         </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
         <childnode refid="90" relation="include">
         </childnode>
-        <childnode refid="91" relation="include">
-        </childnode>
-        <childnode refid="93" relation="include">
+        <childnode refid="92" relation="include">
         </childnode>
       </node>
-      <node id="79">
+      <node id="78">
         <label>gambit/Elements/types_rollcall.hpp</label>
         <link refid="types__rollcall_8hpp"/>
-        <childnode refid="80" relation="include">
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
         </childnode>
         <childnode refid="117" relation="include">
         </childnode>
-        <childnode refid="118" relation="include">
-        </childnode>
       </node>
-      <node id="106">
+      <node id="105">
         <label>gambit/Elements/wimp_types.hpp</label>
         <link refid="wimp__types_8hpp"/>
         <childnode refid="15" relation="include">
@@ -608,15 +606,15 @@
         <childnode refid="42" relation="include">
         </childnode>
       </node>
-      <node id="92">
+      <node id="91">
         <label>gambit/Models/SpectrumContents/subspectrum_contents.hpp</label>
         <link refid="subspectrum__contents_8hpp"/>
-        <childnode refid="91" relation="include">
+        <childnode refid="90" relation="include">
         </childnode>
         <childnode refid="43" relation="include">
         </childnode>
       </node>
-      <node id="93">
+      <node id="92">
         <label>gambit/Models/partmap.hpp</label>
         <link refid="partmap_8hpp"/>
         <childnode refid="8" relation="include">
@@ -624,7 +622,7 @@
         <childnode refid="14" relation="include">
         </childnode>
       </node>
-      <node id="76">
+      <node id="75">
         <label>gambit/Models/safe_param_map.hpp</label>
         <link refid="safe__param__map_8hpp"/>
         <childnode refid="19" relation="include">
@@ -633,7 +631,7 @@
         </childnode>
         <childnode refid="15" relation="include">
         </childnode>
-        <childnode refid="77" relation="include">
+        <childnode refid="76" relation="include">
         </childnode>
       </node>
       <node id="22">
@@ -698,26 +696,26 @@
         <childnode refid="31" relation="include">
         </childnode>
       </node>
-      <node id="81">
+      <node id="80">
         <label>gambit/Utils/numerical_constants.hpp</label>
         <link refid="numerical__constants_8hpp"/>
         <childnode refid="54" relation="include">
         </childnode>
       </node>
-      <node id="89">
+      <node id="88">
         <label>gambit/Utils/safebool.hpp</label>
         <link refid="safebool_8hpp"/>
       </node>
-      <node id="83">
+      <node id="82">
         <label>gambit/Utils/slhaea_helpers.hpp</label>
         <link refid="slhaea__helpers_8hpp"/>
         <childnode refid="19" relation="include">
         </childnode>
         <childnode refid="14" relation="include">
         </childnode>
-        <childnode refid="84" relation="include">
+        <childnode refid="83" relation="include">
         </childnode>
-        <childnode refid="85" relation="include">
+        <childnode refid="84" relation="include">
         </childnode>
       </node>
       <node id="19">
@@ -894,7 +892,7 @@
         <childnode refid="61" relation="include">
         </childnode>
       </node>
-      <node id="84">
+      <node id="83">
         <label>SLHAea/slhaea.h</label>
       </node>
       <node id="13">
@@ -903,13 +901,13 @@
       <node id="52">
         <label>array</label>
       </node>
-      <node id="101">
+      <node id="100">
         <label>assert.h</label>
       </node>
       <node id="57">
         <label>boost/algorithm/string/classification.hpp</label>
       </node>
-      <node id="113">
+      <node id="112">
         <label>boost/algorithm/string/replace.hpp</label>
       </node>
       <node id="56">
@@ -921,7 +919,7 @@
       <node id="25">
         <label>boost/detail/workaround.hpp</label>
       </node>
-      <node id="103">
+      <node id="102">
         <label>boost/enable_shared_from_this.hpp</label>
       </node>
       <node id="36">
@@ -954,7 +952,7 @@
       <node id="72">
         <label>boost/preprocessor/repetition/enum.hpp</label>
       </node>
-      <node id="120">
+      <node id="119">
         <label>boost/preprocessor/seq/for_each.hpp</label>
       </node>
       <node id="73">
@@ -963,7 +961,7 @@
       <node id="32">
         <label>boost/preprocessor/seq/size.hpp</label>
       </node>
-      <node id="119">
+      <node id="118">
         <label>boost/preprocessor/seq/transform.hpp</label>
       </node>
       <node id="33">
@@ -972,10 +970,10 @@
       <node id="74">
         <label>boost/preprocessor/tuple/to_seq.hpp</label>
       </node>
-      <node id="85">
+      <node id="84">
         <label>boost/serialization/strong_typedef.hpp</label>
       </node>
-      <node id="102">
+      <node id="101">
         <label>boost/shared_ptr.hpp</label>
       </node>
       <node id="23">
@@ -984,7 +982,7 @@
       <node id="46">
         <label>cassert</label>
       </node>
-      <node id="88">
+      <node id="87">
         <label>cfloat</label>
       </node>
       <node id="11">
@@ -1011,25 +1009,22 @@
       <node id="44">
         <label>fstream</label>
       </node>
-      <node id="116">
+      <node id="115">
         <label>gambit/Backends/backend_types_rollcall.hpp</label>
       </node>
-      <node id="75">
-        <label>gambit/Elements/elements_extras.hpp</label>
-      </node>
-      <node id="117">
+      <node id="116">
         <label>gambit/Elements/module_types_rollcall.hpp</label>
       </node>
-      <node id="118">
+      <node id="117">
         <label>gambit/Models/model_types_rollcall.hpp</label>
       </node>
       <node id="55">
         <label>gambit/cmake/cmake_variables.hpp</label>
       </node>
-      <node id="105">
+      <node id="104">
         <label>gsl/gsl_errno.h</label>
       </node>
-      <node id="104">
+      <node id="103">
         <label>gsl/gsl_integration.h</label>
       </node>
       <node id="5">
@@ -1062,13 +1057,13 @@
       <node id="12">
         <label>sstream</label>
       </node>
-      <node id="77">
+      <node id="76">
         <label>stdexcept</label>
       </node>
-      <node id="96">
+      <node id="95">
         <label>stdio.h</label>
       </node>
-      <node id="97">
+      <node id="96">
         <label>stdlib.h</label>
       </node>
       <node id="15">
@@ -1286,60 +1281,60 @@
         <link refid="DarkAges__1__2__0_8cpp"/>
       </node>
       <node id="16">
+        <label>DarkCast_1_1.cpp</label>
+        <link refid="DarkCast__1__1_8cpp"/>
+      </node>
+      <node id="17">
         <label>DarkSUSY_5_1_3.cpp</label>
         <link refid="DarkSUSY__5__1__3_8cpp"/>
       </node>
-      <node id="17">
+      <node id="18">
         <label>DarkSUSY_MSSM_6_1_1.cpp</label>
         <link refid="DarkSUSY__MSSM__6__1__1_8cpp"/>
       </node>
-      <node id="18">
+      <node id="19">
         <label>DarkSUSY_MSSM_6_2_2.cpp</label>
         <link refid="DarkSUSY__MSSM__6__2__2_8cpp"/>
       </node>
-      <node id="19">
+      <node id="20">
         <label>DarkSUSY_MSSM_6_2_5.cpp</label>
         <link refid="DarkSUSY__MSSM__6__2__5_8cpp"/>
       </node>
-      <node id="20">
+      <node id="21">
         <label>DarkSUSY_MSSM_6_4_0.cpp</label>
         <link refid="DarkSUSY__MSSM__6__4__0_8cpp"/>
       </node>
-      <node id="21">
+      <node id="22">
         <label>DarkSUSY_generic_wimp_6_1_1.cpp</label>
         <link refid="DarkSUSY__generic__wimp__6__1__1_8cpp"/>
       </node>
-      <node id="22">
+      <node id="23">
         <label>DarkSUSY_generic_wimp_6_2_2.cpp</label>
         <link refid="DarkSUSY__generic__wimp__6__2__2_8cpp"/>
       </node>
-      <node id="23">
+      <node id="24">
         <label>DarkSUSY_generic_wimp_6_2_5.cpp</label>
         <link refid="DarkSUSY__generic__wimp__6__2__5_8cpp"/>
       </node>
-      <node id="24">
+      <node id="25">
         <label>DarkSUSY_generic_wimp_6_4_0.cpp</label>
         <link refid="DarkSUSY__generic__wimp__6__4__0_8cpp"/>
       </node>
-      <node id="25">
+      <node id="26">
         <label>DirectDM_2_2_0.cpp</label>
         <link refid="DirectDM__2__2__0_8cpp"/>
       </node>
-      <node id="26">
+      <node id="27">
         <label>LibMathematicaTest.cpp</label>
         <link refid="LibMathematicaTest_8cpp"/>
       </node>
-      <node id="27">
+      <node id="28">
         <label>LibSecond_1_1.cpp</label>
         <link refid="LibSecond__1__1_8cpp"/>
       </node>
-      <node id="28">
+      <node id="29">
         <label>LibSecond_1_2.cpp</label>
         <link refid="LibSecond__1__2_8cpp"/>
-      </node>
-      <node id="29">
-        <label>LibThird_1_0.cpp</label>
-        <link refid="LibThird__1__0_8cpp"/>
       </node>
       <node id="30">
         <label>LibThird_1_1.cpp</label>
@@ -1406,12 +1401,12 @@
         <link refid="SPheno__4__0__3_8cpp"/>
       </node>
       <node id="46">
-        <label>SUSY-HIT_1_5.cpp</label>
-        <link refid="SUSY-HIT__1__5_8cpp"/>
-      </node>
-      <node id="47">
         <label>SUSYHD_1_0_2.cpp</label>
         <link refid="SUSYHD__1__0__2_8cpp"/>
+      </node>
+      <node id="47">
+        <label>SUSY_HIT_1_5.cpp</label>
+        <link refid="SUSY__HIT__1__5_8cpp"/>
       </node>
       <node id="48">
         <label>SuperIso_4_1.cpp</label>

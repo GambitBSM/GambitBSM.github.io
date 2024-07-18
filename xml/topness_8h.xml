@@ -755,21 +755,21 @@
 <codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>x[i]=xstart[i];</highlight></codeline>
 <codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="236"><highlight class="normal"></highlight></codeline>
-<codeline lineno="237"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;d+1;<sp/>i++)</highlight></codeline>
-<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>xi[d];</highlight></codeline>
-<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::copy(x+d*i,x+d*i+d,xi);<sp/><sp/></highlight><highlight class="comment">//<sp/>get<sp/>coordinates<sp/>of<sp/>i&apos;th<sp/>point<sp/>and<sp/>copy<sp/>into<sp/>xi</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>y[i]=(*f)(xi,d);</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/>std::vector&lt;double&gt;<sp/>xi(d);</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;d+1;<sp/>i++)</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::copy(x+d*i,x+d*i+d,&amp;xi[0]);<sp/><sp/></highlight><highlight class="comment">//<sp/>get<sp/>coordinates<sp/>of<sp/>i&apos;th<sp/>point<sp/>and<sp/>copy<sp/>into<sp/>xi</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>y[i]=(*f)(&amp;xi[0],d);</highlight></codeline>
 <codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="243"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="244"><highlight class="normal"></highlight></codeline>
 <codeline lineno="245"><highlight class="normal"></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>my_simplex::set_y()</highlight></codeline>
 <codeline lineno="246"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="247"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;d+1;<sp/>i++)</highlight></codeline>
-<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>xi[d];</highlight></codeline>
-<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::copy(x+d*i,x+d*i+d,xi);<sp/><sp/></highlight><highlight class="comment">//<sp/>get<sp/>coordinates<sp/>of<sp/>i&apos;th<sp/>point<sp/>and<sp/>copy<sp/>into<sp/>xi</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>y[i]=(*f)(xi,d);</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/>std::vector&lt;double&gt;<sp/>xi(d);</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;d+1;<sp/>i++)</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::copy(x+d*i,x+d*i+d,&amp;xi[0]);<sp/><sp/></highlight><highlight class="comment">//<sp/>get<sp/>coordinates<sp/>of<sp/>i&apos;th<sp/>point<sp/>and<sp/>copy<sp/>into<sp/>xi</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>y[i]=(*f)(&amp;xi[0],d);</highlight></codeline>
 <codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="253"><highlight class="normal">}</highlight></codeline>
 <codeline lineno="254"><highlight class="normal"></highlight></codeline>

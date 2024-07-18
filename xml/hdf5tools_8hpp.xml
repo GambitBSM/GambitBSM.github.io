@@ -550,7 +550,7 @@
 <codeline lineno="113"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Check<sp/>if<sp/>a<sp/>dataset<sp/>exists<sp/>and<sp/>can<sp/>be<sp/>read<sp/>from<sp/>fully</highlight></codeline>
 <codeline lineno="114"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>(Reads<sp/>through<sp/>entire<sp/>dataset<sp/>to<sp/>make<sp/>sure!<sp/>May<sp/>take<sp/>some<sp/>time)</highlight></codeline>
 <codeline lineno="115"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::pair&lt;bool,std::size_t&gt;<sp/>checkDatasetReadable(hid_t<sp/>location,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>dsetname);</highlight></codeline>
-<codeline lineno="116"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="117"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Create<sp/>hdf5<sp/>file<sp/>(always<sp/>overwrite<sp/>existing<sp/>files)</highlight></codeline>
 <codeline lineno="118"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hid_t<sp/>createFile(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>fname);</highlight></codeline>
 <codeline lineno="119"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
@@ -576,7 +576,7 @@
 <codeline lineno="139"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>does<sp/>not<sp/>yet<sp/>exist.</highlight></codeline>
 <codeline lineno="140"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight></codeline>
 <codeline lineno="141"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hid_t<sp/>openGroup(hid_t<sp/>file_id,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>name,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>nocreate=</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hid_t<sp/>openGroup(hid_t<sp/>file_id,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>name,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>nocreate=</highlight><highlight class="keyword">false</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>fatal=</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="143"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="144"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Close<sp/>group</highlight></codeline>
 <codeline lineno="145" refid="hdf5tools_8hpp_1ab1874c1d1489ed4d2865669f0d7a2648" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hid_t<sp/><ref refid="hdf5tools_8hpp_1ab1874c1d1489ed4d2865669f0d7a2648" kindref="member">closeGroup</ref>(hid_t<sp/>group);</highlight></codeline>
@@ -614,7 +614,7 @@
 <codeline lineno="177"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="178"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Select<sp/>a<sp/>simple<sp/>hyperslab<sp/>in<sp/>a<sp/>1D<sp/>dataset</highlight></codeline>
 <codeline lineno="179"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::pair&lt;hid_t,hid_t&gt;<sp/><ref refid="hdf5tools_8hpp_1aa183487983cd8a7e15d681cc0f22f92e" kindref="member">selectChunk</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>hid_t<sp/>dset_id,<sp/>std::size_t<sp/>offset,<sp/>std::size_t<sp/>length);</highlight></codeline>
-<codeline lineno="180"><highlight class="normal"><sp/></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="181"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Check<sp/>if<sp/>an<sp/>object<sp/>in<sp/>a<sp/>group<sp/>is<sp/>a<sp/>dataset</highlight></codeline>
 <codeline lineno="182"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="hdf5tools_8hpp_1a1ae11ab53d31f2bee387b2182be3f329" kindref="member">isDataSet</ref>(hid_t<sp/>group_id,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>name);</highlight></codeline>
 <codeline lineno="183"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
@@ -625,7 +625,7 @@
 <codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Buffer<sp/>to<sp/>receive<sp/>data<sp/>(and<sp/>return<sp/>from<sp/>function)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;T&gt;<sp/>chunkdata(length);</highlight></codeline>
-<codeline lineno="191"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight></codeline>
 <codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Select<sp/>hyperslab</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::pair&lt;hid_t,hid_t&gt;<sp/>selection_ids<sp/>=<sp/><ref refid="hdf5tools_8hpp_1aa183487983cd8a7e15d681cc0f22f92e" kindref="member">selectChunk</ref>(dset_id,offset,length);</highlight></codeline>
 <codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>hid_t<sp/>memspace_id<sp/>=<sp/>selection_ids.first;</highlight></codeline>
@@ -648,7 +648,7 @@
 <codeline lineno="211"><highlight class="normal"></highlight></codeline>
 <codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>H5Sclose(dspace_id);</highlight></codeline>
 <codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>H5Sclose(memspace_id);</highlight></codeline>
-<codeline lineno="214"><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight></codeline>
 <codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>chunkdata;</highlight></codeline>
 <codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="217"><highlight class="normal"></highlight></codeline>
@@ -658,7 +658,7 @@
 <codeline lineno="221"><highlight class="normal"></highlight></codeline>
 <codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Match<sp/>fixed<sp/>integers<sp/>to<sp/>HDF5<sp/>types</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>inttype_from_h5type(hid_t<sp/>h5type);</highlight></codeline>
-<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight></codeline>
 <codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Query<sp/>whether<sp/>type<sp/>integer<sp/>indicates<sp/>general<sp/>&apos;float&apos;<sp/>or<sp/>&apos;int&apos;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>is_float_type(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>inttype);</highlight></codeline>
 <codeline lineno="227"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>

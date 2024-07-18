@@ -209,7 +209,7 @@ namespace Gambit {
 
         // Get baseline jets
         /// @todo Drop b-tag if |eta| > 2.5?
-        for (const Jet* jet : event->jets()) 
+        for (const Jet* jet : event->jets("antikt_R04")) 
         {
           if (jet->pT() > 20. && jet->abseta() < 2.8) 
           {
@@ -489,4 +489,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:07 +0000
+Updated on 2024-07-18 at 13:53:34 +0000

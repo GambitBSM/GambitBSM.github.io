@@ -23,7 +23,7 @@ Main dependency resolver.
 | void | **[printFunctorEvalOrder](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/#function-printfunctorevalorder)**(bool toterminal =false)<br>Pretty print function evaluation order.  |
 | void | **[printRequiredBackends](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/#function-printrequiredbackends)**()<br>Print the list of required backends.  |
 | void | **[getCitationKeys](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/#function-getcitationkeys)**()<br>Collect the citation keys for backends, modules, etc.  |
-| void | **[printCitationKeys](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/#function-printcitationkeys)**() |
+| void | **[printCitationKeys](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/#function-printcitationkeys)**()<br>Print citation keys.  |
 | std::vector< VertexID > | **[getObsLikeOrder](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/#function-getobslikeorder)**()<br>Retrieve the order in which target vertices are to be evaluated.  |
 | void | **[calcObsLike](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/#function-calcobslike)**(VertexID vertex)<br>Calculate a single target vertex.  |
 | void | **[printObsLike](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/#function-printobslike)**(VertexID vertex, const int pointID)<br>Print a single target vertex.  |
@@ -31,10 +31,10 @@ Main dependency resolver.
 | [functor](/documentation/code/classes/classgambit_1_1functor/) * | **[get_functor](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/#function-get-functor)**(VertexID id)<br>Get the functor corresponding to a single VertexID.  |
 | [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[checkTypeMatch](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/#function-checktypematch)**(VertexID vertex, const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) & purpose, const std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > & types)<br>Ensure that the type of a given vertex is equivalent to at least one of a provided list, and return the matching list entry.  |
 | template <typename TYPE \> <br>TYPE | **[getObsLike](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/#function-getobslike)**(VertexID vertex)<br>Return the result of a functor.  |
-| const [IniParser::ObservableType](/documentation/code/classes/structgambit_1_1iniparser_1_1types_1_1observable/) * | **[getIniEntry](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/#function-getinientry)**(VertexID v) |
-| void | **[invalidatePointAt](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/#function-invalidatepointat)**(VertexID vertex, bool isnan) |
-| void | **[resetAll](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/#function-resetall)**() |
-| void | **[checkForUnusedRules](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/#function-checkforunusedrules)**(int mpi_rank)<br>Check for unused rules and options.  |
+| const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) & | **[getPurpose](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/#function-getpurpose)**(VertexID v)<br>Return the purpose associated with a given functor.  |
+| void | **[invalidatePointAt](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/#function-invalidatepointat)**(VertexID vertex, bool isnan)<br>Tell functor that it invalidated the current point in model space (due to a large or NaN contribution to lnL)  |
+| void | **[resetAll](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/#function-resetall)**()<br>Reset all active functors and delete existing results.  |
+| void | **[checkForUnusedRules](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/#function-checkforunusedrules)**()<br>Check for unused rules and options.  |
 | void | **[set_scanID](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/#function-set-scanid)**()<br>Set the Scan ID.  |
 | [map_str_str](/documentation/code/namespaces/namespacegambit/#typedef-map-str-str) | **[getMetadata](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/#function-getmetadata)**()<br>Construct metadata information from used observables, rules and options.  |
 | [MasterGraphType](/documentation/code/namespaces/namespacegambit_1_1dres/#typedef-mastergraphtype) | **[cullInactiveFunctors](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/#function-cullinactivefunctors)**([MasterGraphType](/documentation/code/namespaces/namespacegambit_1_1dres/#typedef-mastergraphtype) & )<br>Helper function that returns a new graph with all inactive vertices removed.  |
@@ -61,6 +61,9 @@ DependencyResolver(
 
 Constructor, provide module and backend functor lists. 
 
+Constructor. 
+
+
 ### function doResolution
 
 ```
@@ -68,6 +71,9 @@ void doResolution()
 ```
 
 The dependency resolution. 
+
+Main dependency resolution. 
+
 
 ### function printFunctorList
 
@@ -112,6 +118,10 @@ Collect the citation keys for backends, modules, etc.
 void printCitationKeys()
 ```
 
+Print citation keys. 
+
+Print the [BibTeX](/documentation/code/classes/classgambit_1_1bibtex/) citation keys. 
+
 
 ### function getObsLikeOrder
 
@@ -120,6 +130,9 @@ std::vector< VertexID > getObsLikeOrder()
 ```
 
 Retrieve the order in which target vertices are to be evaluated. 
+
+Returns list of ObsLike vertices in order of runtime. 
+
 
 ### function calcObsLike
 
@@ -131,6 +144,9 @@ void calcObsLike(
 
 Calculate a single target vertex. 
 
+Evaluates ObsLike vertex, and everything it depends on, and prints results. 
+
+
 ### function printObsLike
 
 ```
@@ -141,6 +157,9 @@ void printObsLike(
 ```
 
 Print a single target vertex. 
+
+Prints the results of an ObsLike vertex. 
+
 
 ### function printTiming
 
@@ -172,6 +191,9 @@ str checkTypeMatch(
 
 Ensure that the type of a given vertex is equivalent to at least one of a provided list, and return the matching list entry. 
 
+Ensure that the type of a given vertex is equivalent to at least one of a provided list, and return the match. 
+
+
 ### function getObsLike
 
 ```
@@ -183,13 +205,20 @@ inline TYPE getObsLike(
 
 Return the result of a functor. 
 
-### function getIniEntry
+### function getPurpose
 
 ```
-const IniParser::ObservableType * getIniEntry(
+const str & getPurpose(
     VertexID v
 )
 ```
+
+Return the purpose associated with a given functor. 
+
+Returns the purpose associated with a given functor. Non-null only if the functor corresponds to an ObsLike entry in the ini file. 
+
+
+'__no_purpose' if the functor does not correspond to an ObsLike entry in the ini file.
 
 
 ### function invalidatePointAt
@@ -201,6 +230,7 @@ void invalidatePointAt(
 )
 ```
 
+Tell functor that it invalidated the current point in model space (due to a large or NaN contribution to lnL) 
 
 ### function resetAll
 
@@ -208,13 +238,12 @@ void invalidatePointAt(
 void resetAll()
 ```
 
+Reset all active functors and delete existing results. 
 
 ### function checkForUnusedRules
 
 ```
-void checkForUnusedRules(
-    int mpi_rank
-)
+void checkForUnusedRules()
 ```
 
 Check for unused rules and options. 
@@ -259,4 +288,4 @@ int scanID;
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:04 +0000
+Updated on 2024-07-18 at 13:53:31 +0000

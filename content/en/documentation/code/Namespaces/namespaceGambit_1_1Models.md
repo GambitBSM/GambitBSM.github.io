@@ -39,6 +39,8 @@ Forward declaration of [Models::ModelFunctorClaw]() class for use in constructor
 | class | **[Gambit::Models::ScalarSingletDM_Z2SimpleSpec](/documentation/code/classes/classgambit_1_1models_1_1scalarsingletdm__z2simplespec/)**  |
 | struct | **[Gambit::Models::ScalarSingletDM_Z3Model](/documentation/code/classes/structgambit_1_1models_1_1scalarsingletdm__z3model/)**  |
 | class | **[Gambit::Models::ScalarSingletDM_Z3SimpleSpec](/documentation/code/classes/classgambit_1_1models_1_1scalarsingletdm__z3simplespec/)**  |
+| struct | **[Gambit::Models::SubGeVDMModel](/documentation/code/classes/structgambit_1_1models_1_1subgevdmmodel/)**  |
+| class | **[Gambit::Models::SubGeVDMSimpleSpec](/documentation/code/classes/classgambit_1_1models_1_1subgevdmsimplespec/)**  |
 | struct | **[Gambit::Models::VectorSingletDM_Z2Model](/documentation/code/classes/structgambit_1_1models_1_1vectorsingletdm__z2model/)**  |
 | class | **[Gambit::Models::VectorSingletDM_Z2SimpleSpec](/documentation/code/classes/classgambit_1_1models_1_1vectorsingletdm__z2simplespec/)**  |
 
@@ -136,4 +138,4 @@ Declare redirected constructor.
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:04 +0000
+Updated on 2024-07-18 at 13:53:31 +0000

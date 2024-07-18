@@ -13,13 +13,13 @@ Objective functor made up of multiple plugins.  [More...](#detailed-description)
 
 `#include <plugin_factory.hpp>`
 
-Inherits from [Gambit::Scanner::Function_Base< ret(args...)>](/documentation/code/classes/classgambit_1_1scanner_1_1function__base_3_01ret_07args_8_8_8_08_4/), boost::enable_shared_from_this< Function_Base< ret(args...)> >
+Inherits from [Gambit::Scanner::Function_Base< ret(args...)>](/documentation/code/classes/classgambit_1_1scanner_1_1function__base_3_01ret_07args_8_8_8_08_4/), std::enable_shared_from_this< Function_Base< ret(args...)> >
 
 ## Public Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Multi_Scanner_Plugin_Function](/documentation/code/classes/classgambit_1_1scanner_1_1multi__scanner__plugin__function_3_01ret_07args_8_8_8_08_4/#function-multi-scanner-plugin-function)**(const std::map< std::string, std::vector< std::string > > & params, const std::vector< std::pair< std::string, std::string > > & names) |
+| | **[Multi_Scanner_Plugin_Function](/documentation/code/classes/classgambit_1_1scanner_1_1multi__scanner__plugin__function_3_01ret_07args_8_8_8_08_4/#function-multi-scanner-plugin-function)**(const std::map< std::string, std::vector< std::string > > & params, const std::vector< std::pair< std::string, std::string > > & names, const [Factory_Base](/documentation/code/classes/classgambit_1_1scanner_1_1factory__base/) & fac) |
 | ret | **[main](/documentation/code/classes/classgambit_1_1scanner_1_1multi__scanner__plugin__function_3_01ret_07args_8_8_8_08_4/#function-main)**(const args &... in) |
 
 ## Additional inherited members
@@ -32,6 +32,7 @@ Inherits from [Gambit::Scanner::Function_Base< ret(args...)>](/documentation/cod
 | virtual double | **[purposeModifier](/documentation/code/classes/classgambit_1_1scanner_1_1function__base_3_01ret_07args_8_8_8_08_4/#function-purposemodifier)**(double ret_val) |
 | virtual | **[~Function_Base](/documentation/code/classes/classgambit_1_1scanner_1_1function__base_3_01ret_07args_8_8_8_08_4/#function-function-base)**() |
 | ret | **[operator()](/documentation/code/classes/classgambit_1_1scanner_1_1function__base_3_01ret_07args_8_8_8_08_4/#function-operator)**(const args &... params) |
+| std::unordered_map< std::string, double > & | **[getMap](/documentation/code/classes/classgambit_1_1scanner_1_1function__base_3_01ret_07args_8_8_8_08_4/#function-getmap)**() |
 | void | **[setPurpose](/documentation/code/classes/classgambit_1_1scanner_1_1function__base_3_01ret_07args_8_8_8_08_4/#function-setpurpose)**(const std::string p) |
 | void | **[setPrinter](/documentation/code/classes/classgambit_1_1scanner_1_1function__base_3_01ret_07args_8_8_8_08_4/#function-setprinter)**([printer](/documentation/code/namespaces/namespacegambit_1_1scanner/#typedef-printer) * p) |
 | void | **[setPrior](/documentation/code/classes/classgambit_1_1scanner_1_1function__base_3_01ret_07args_8_8_8_08_4/#function-setprior)**([Priors::BasePrior](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/) * p) |
@@ -48,6 +49,9 @@ Inherits from [Gambit::Scanner::Function_Base< ret(args...)>](/documentation/cod
 | unsigned long long int | **[getPtID](/documentation/code/classes/classgambit_1_1scanner_1_1function__base_3_01ret_07args_8_8_8_08_4/#function-getptid)**() const |
 | void | **[setPtID](/documentation/code/classes/classgambit_1_1scanner_1_1function__base_3_01ret_07args_8_8_8_08_4/#function-setptid)**(unsigned long long int pID) |
 | unsigned long long int | **[getNextPtID](/documentation/code/classes/classgambit_1_1scanner_1_1function__base_3_01ret_07args_8_8_8_08_4/#function-getnextptid)**() const |
+| std::unordered_map< std::string, double > | **[transform](/documentation/code/classes/classgambit_1_1scanner_1_1function__base_3_01ret_07args_8_8_8_08_4/#function-transform)**(const std::vector< double > & vec) |
+| std::vector< std::string > | **[get_names](/documentation/code/classes/classgambit_1_1scanner_1_1function__base_3_01ret_07args_8_8_8_08_4/#function-get-names)**() const |
+| std::vector< double > | **[inverse_transform](/documentation/code/classes/classgambit_1_1scanner_1_1function__base_3_01ret_07args_8_8_8_08_4/#function-inverse-transform)**(const std::unordered_map< std::string, double > & physical) |
 | void | **[tell_scanner_early_shutdown_in_progress](/documentation/code/classes/classgambit_1_1scanner_1_1function__base_3_01ret_07args_8_8_8_08_4/#function-tell-scanner-early-shutdown-in-progress)**()<br>Tell ScannerBit that we are aborting the scan and it should tell the scanner plugin to stop, and return control to the calling code.  |
 | void | **[disable_external_shutdown](/documentation/code/classes/classgambit_1_1scanner_1_1function__base_3_01ret_07args_8_8_8_08_4/#function-disable-external-shutdown)**() |
 | bool | **[scanner_can_quit](/documentation/code/classes/classgambit_1_1scanner_1_1function__base_3_01ret_07args_8_8_8_08_4/#function-scanner-can-quit)**()<br>Check whether likelihood container is supposed to control early shutdown of scan.  |
@@ -78,7 +82,8 @@ Objective functor made up of multiple plugins.
 ```
 inline Multi_Scanner_Plugin_Function(
     const std::map< std::string, std::vector< std::string > > & params,
-    const std::vector< std::pair< std::string, std::string > > & names
+    const std::vector< std::pair< std::string, std::string > > & names,
+    const Factory_Base & fac
 )
 ```
 
@@ -94,4 +99,4 @@ inline ret main(
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:04 +0000
+Updated on 2024-07-18 at 13:53:32 +0000

@@ -166,9 +166,9 @@ BE_FUNCTION(dsanwx, double, (double&), "dsanwx_", "dsanwx")
 BE_FUNCTION(dsrdcom, void, (), "dsrdcom_", "dsrdcom")
 BE_FUNCTION(dsrdstart, void, (int&, double(&)[1000], double(&)[1000], int&, double(&)[1000], double(&)[1000], int&, double(&)[1000]), "dsrdstart_", "dsrdstart")
 BE_FUNCTION(dsrdens, void, (double(*)(double&),double&,double&,int&,int&,int&), "dsrdens_", "dsrdens")
-
-// Functions used in IndirectDetectionYields.cpp
 BE_FUNCTION(dsanyield_sim, double, (double&,double&,int&,char*,int&,int&,int&), "dsanyield_sim_", "dsanyield_sim")
+BE_FUNCTION(dsanyield_set, void, (Fstring<20>&,Fstring<20>&), "dsanyield_set_", "dsanyield_set")
+BE_VARIABLE(an_how, DS_an_how, "an_how_", "an_how")
 
 // Functions used in SunNeutrinos.cpp
 BE_FUNCTION(dssenu_capsuntab, double, (const double&, const double&, const double&, const double&), "dssenu_capsuntab_", "cap_Sun_v0q0_isoscalar")
@@ -196,4 +196,4 @@ BE_CONV_FUNCTION(dsgenericwimp_nusetup, void, (const double(&)[29], const double
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:08 +0000
+Updated on 2024-07-18 at 13:53:35 +0000

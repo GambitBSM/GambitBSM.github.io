@@ -7,6 +7,9 @@
     <includedby refid="core_8cpp" local="yes">core.cpp</includedby>
     <includedby refid="depresolver_8hpp" local="yes">depresolver.hpp</includedby>
     <includedby refid="error__handlers_8cpp" local="yes">error_handlers.cpp</includedby>
+    <includedby refid="resolution__utilities_8cpp" local="yes">resolution_utilities.cpp</includedby>
+    <includedby refid="rule_8cpp" local="yes">rule.cpp</includedby>
+    <includedby refid="yaml__parser_8cpp" local="yes">yaml_parser.cpp</includedby>
     <incdepgraph>
       <node id="1">
         <label>error_handlers.hpp</label>
@@ -198,6 +201,12 @@
         </childnode>
         <childnode refid="14" relation="include">
         </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
       </node>
       <node id="7">
         <label>gambit.hpp</label>
@@ -255,6 +264,18 @@
         <label>modelgraph.cpp</label>
         <link refid="modelgraph_8cpp"/>
       </node>
+      <node id="15">
+        <label>resolution_utilities.cpp</label>
+        <link refid="resolution__utilities_8cpp"/>
+      </node>
+      <node id="16">
+        <label>rule.cpp</label>
+        <link refid="rule_8cpp"/>
+      </node>
+      <node id="17">
+        <label>yaml_parser.cpp</label>
+        <link refid="yaml__parser_8cpp"/>
+      </node>
     </invincdepgraph>
     <innernamespace refid="namespaceGambit">Gambit</innernamespace>
     <innernamespace refid="namespaceGambit_1_1DRes">Gambit::DRes</innernamespace>
@@ -306,9 +327,9 @@
 <codeline lineno="31"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">DRes</highlight></codeline>
 <codeline lineno="32"><highlight class="normal"><sp/><sp/>{</highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="33"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Dependency<sp/>resolver<sp/>errors</highlight></codeline>
-<codeline lineno="34"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>error&amp;<sp/><ref refid="error__handlers_8hpp_1abda0801bcf720c49927e2b62e0678648" kindref="member">dependency_resolver_error</ref>();</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="34"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>error&amp;<sp/><ref refid="namespaceGambit_1_1DRes_1abda0801bcf720c49927e2b62e0678648" kindref="member">dependency_resolver_error</ref>();</highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="35"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Dependency<sp/>resolver<sp/>warnings</highlight></codeline>
-<codeline lineno="36"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>warning&amp;<sp/><ref refid="error__handlers_8hpp_1aef6f186a60427ce462d26acb91a8c9d2" kindref="member">dependency_resolver_warning</ref>();</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>warning&amp;<sp/><ref refid="namespaceGambit_1_1DRes_1aef6f186a60427ce462d26acb91a8c9d2" kindref="member">dependency_resolver_warning</ref>();</highlight></codeline>
 <codeline lineno="37"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
 <codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="39"><highlight class="normal">}</highlight></codeline>

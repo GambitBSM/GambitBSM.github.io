@@ -19,7 +19,7 @@ Inherits from [Gambit::Scanner::Factory_Base](/documentation/code/classes/classg
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Plugin_Function_Factory](/documentation/code/classes/classgambit_1_1scanner_1_1plugin__function__factory/#function-plugin-function-factory)**(const std::vector< std::string > & keys, std::map< std::string, std::vector< std::pair< std::string, std::string > > > & names) |
+| | **[Plugin_Function_Factory](/documentation/code/classes/classgambit_1_1scanner_1_1plugin__function__factory/#function-plugin-function-factory)**(const std::vector< std::string > & keys, std::map< std::string, std::vector< std::pair< std::string, std::string > > > & names, const [Factory_Base](/documentation/code/classes/classgambit_1_1scanner_1_1factory__base/) * fac =0) |
 | virtual void * | **[operator()](/documentation/code/classes/classgambit_1_1scanner_1_1plugin__function__factory/#function-operator)**(const std::string & purpose) const |
 | | **[~Plugin_Function_Factory](/documentation/code/classes/classgambit_1_1scanner_1_1plugin__function__factory/#function-plugin-function-factory)**() |
 
@@ -39,7 +39,8 @@ Inherits from [Gambit::Scanner::Factory_Base](/documentation/code/classes/classg
 ```
 inline Plugin_Function_Factory(
     const std::vector< std::string > & keys,
-    std::map< std::string, std::vector< std::pair< std::string, std::string > > > & names
+    std::map< std::string, std::vector< std::pair< std::string, std::string > > > & names,
+    const Factory_Base * fac =0
 )
 ```
 
@@ -65,4 +66,4 @@ inline ~Plugin_Function_Factory()
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:04 +0000
+Updated on 2024-07-18 at 13:53:32 +0000

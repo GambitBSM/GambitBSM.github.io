@@ -187,7 +187,7 @@ namespace Gambit {
         const std::vector<double>  b = {0,10000.};
         const std::vector<double> c = {0.7};
         HEPUtils::BinnedFn2D<double> _eff2d(a,b,c);
-        for (const HEPUtils::Jet* jet : event->jets()) {
+        for (const HEPUtils::Jet* jet : event->jets("antikt_R04")) {
           if (jet->pT() > 20. && fabs(jet->eta()) < 4.5) baselineJets.push_back(jet);
           bool hasTag=has_tag(_eff2d, fabs(jet->eta()), jet->pT());
           if (jet->pT() > 20. && fabs(jet->eta()) < 4.5) {
@@ -745,4 +745,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:07 +0000
+Updated on 2024-07-18 at 13:53:34 +0000

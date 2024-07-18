@@ -49,6 +49,7 @@ description: "[No description available]"
 | **[Elements/type_equivalency.hpp](/documentation/code/files/type__equivalency_8hpp/#file-elements-type-equivalency-hpp)**  |
 | **[Elements/types_rollcall.hpp](/documentation/code/files/types__rollcall_8hpp/#file-elements-types-rollcall-hpp)**  |
 | **[Elements/virtual_higgs.hpp](/documentation/code/files/virtual__higgs_8hpp/#file-elements-virtual-higgs-hpp)**  |
+| **[Elements/virtual_photon.hpp](/documentation/code/files/virtual__photon_8hpp/#file-elements-virtual-photon-hpp)**  |
 | **[Elements/wimp_types.hpp](/documentation/code/files/wimp__types_8hpp/#file-elements-wimp-types-hpp)**  |
 
 
@@ -58,4 +59,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:06 +0000
+Updated on 2024-07-18 at 13:53:33 +0000

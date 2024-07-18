@@ -341,6 +341,11 @@ int main(int argc, char* argv[])
     logger().set_log_debug_messages(debug);
     initialise_standalone_logs("CBS_logs/");
     logger()<<"Running CBS"<<LogTags::info<<EOM;
+    
+    // Initialise settings for printer (required)
+    YAML::Node printerNode = get_standalone_printer("cout", "CBS_logs/", "");
+    Printers::PrinterManager printerManager(printerNode, false);
+    set_global_printer_manager(&printerManager);
 
     // Initialise the random number generator, using a hardware seed if no seed is given in the input file.
     int seed = settings.getValueOrDef<int>(-1, "seed");
@@ -584,4 +589,4 @@ int main(int argc, char* argv[])
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:07 +0000
+Updated on 2024-07-18 at 13:53:34 +0000

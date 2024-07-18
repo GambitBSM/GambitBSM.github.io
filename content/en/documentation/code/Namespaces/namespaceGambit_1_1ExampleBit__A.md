@@ -33,6 +33,11 @@ description: "[No description available]"
 | void | **[marg_poisson_test](/documentation/code/namespaces/namespacegambit_1_1examplebit__a/#function-marg-poisson-test)**(double & result)<br>Test inline marginalisation of a Poisson likelihood over a log-normally or Gaussianly-distributed nuisance parameter.  |
 | void | **[Backend_array_test](/documentation/code/namespaces/namespacegambit_1_1examplebit__a/#function-backend-array-test)**(double & result)<br>Tester for C/C++ backend array interfaces.  |
 | void | **[flat_likelihood](/documentation/code/namespaces/namespacegambit_1_1examplebit__a/#function-flat-likelihood)**(double & result)<br>Flat test likelihood for checking prior distributions.  |
+| void | **[const_one](/documentation/code/namespaces/namespacegambit_1_1examplebit__a/#function-const-one)**(int & result)<br>A function that just returns 1.  |
+| void | **[recursive_add_1](/documentation/code/namespaces/namespacegambit_1_1examplebit__a/#function-recursive-add-1)**(int & result)<br>Chained addition function that adds 1.  |
+| void | **[recursive_add_2](/documentation/code/namespaces/namespacegambit_1_1examplebit__a/#function-recursive-add-2)**(int & result)<br>Chained addition function that adds 2.  |
+| void | **[recursive_add_3](/documentation/code/namespaces/namespacegambit_1_1examplebit__a/#function-recursive-add-3)**(int & result)<br>Chained addition function that adds 3.  |
+| void | **[recursive_add_4](/documentation/code/namespaces/namespacegambit_1_1examplebit__a/#function-recursive-add-4)**(int & result)<br>Chained addition function that adds 4.  |
 
 ## Attributes
 
@@ -239,6 +244,56 @@ void flat_likelihood(
 
 Flat test likelihood for checking prior distributions. 
 
+### function const_one
+
+```
+void const_one(
+    int & result
+)
+```
+
+A function that just returns 1. 
+
+### function recursive_add_1
+
+```
+void recursive_add_1(
+    int & result
+)
+```
+
+Chained addition function that adds 1. 
+
+### function recursive_add_2
+
+```
+void recursive_add_2(
+    int & result
+)
+```
+
+Chained addition function that adds 2. 
+
+### function recursive_add_3
+
+```
+void recursive_add_3(
+    int & result
+)
+```
+
+Chained addition function that adds 3. 
+
+### function recursive_add_4
+
+```
+void recursive_add_4(
+    int & result
+)
+```
+
+Chained addition function that adds 4. 
+
 
 ## Attributes Documentation
 
@@ -255,4 +310,4 @@ Pointer to some function.
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:04 +0000
+Updated on 2024-07-18 at 13:53:31 +0000

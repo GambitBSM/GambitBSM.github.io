@@ -1,6 +1,6 @@
 ---
 title: "struct Gambit::DRes::QueueEntry"
-description: "Information in parameter queue. "
+description: "Information in resolution queue. "
 
 ---
 
@@ -8,7 +8,7 @@ description: "Information in parameter queue. "
 
 
 
-Information in parameter queue. 
+Information in resolution queue. 
 
 
 `#include <depresolver.hpp>`
@@ -17,59 +17,62 @@ Information in parameter queue.
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[QueueEntry](/documentation/code/classes/structgambit_1_1dres_1_1queueentry/#function-queueentry)**() |
-| | **[QueueEntry](/documentation/code/classes/structgambit_1_1dres_1_1queueentry/#function-queueentry)**([sspair](/documentation/code/namespaces/namespacegambit/#typedef-sspair) a, DRes::VertexID b, int c, bool d) |
+| | **[QueueEntry](/documentation/code/classes/structgambit_1_1dres_1_1queueentry/#function-queueentry)**()<br>Default constructor for [QueueEntry](/documentation/code/classes/structgambit_1_1dres_1_1queueentry/).  |
+| | **[QueueEntry](/documentation/code/classes/structgambit_1_1dres_1_1queueentry/#function-queueentry)**([sspair](/documentation/code/namespaces/namespacegambit/#typedef-sspair) a, VertexID b, int c, bool d)<br>Alternative constructor for [QueueEntry](/documentation/code/classes/structgambit_1_1dres_1_1queueentry/).  |
 
 ## Public Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| [sspair](/documentation/code/namespaces/namespacegambit/#typedef-sspair) | **[first](/documentation/code/classes/structgambit_1_1dres_1_1queueentry/#variable-first)**  |
-| DRes::VertexID | **[second](/documentation/code/classes/structgambit_1_1dres_1_1queueentry/#variable-second)**  |
-| int | **[third](/documentation/code/classes/structgambit_1_1dres_1_1queueentry/#variable-third)**  |
+| [sspair](/documentation/code/namespaces/namespacegambit/#typedef-sspair) | **[quantity](/documentation/code/classes/structgambit_1_1dres_1_1queueentry/#variable-quantity)**  |
+| VertexID | **[toVertex](/documentation/code/classes/structgambit_1_1dres_1_1queueentry/#variable-tovertex)**  |
+| int | **[dependency_type](/documentation/code/classes/structgambit_1_1dres_1_1queueentry/#variable-dependency-type)**  |
 | bool | **[printme](/documentation/code/classes/structgambit_1_1dres_1_1queueentry/#variable-printme)**  |
+| const [Observable](/documentation/code/classes/structgambit_1_1dres_1_1observable/) * | **[obslike](/documentation/code/classes/structgambit_1_1dres_1_1queueentry/#variable-obslike)**  |
 
 ## Public Functions Documentation
 
 ### function QueueEntry
 
 ```
-inline QueueEntry()
+QueueEntry()
 ```
 
+Default constructor for [QueueEntry](/documentation/code/classes/structgambit_1_1dres_1_1queueentry/). 
 
 ### function QueueEntry
 
 ```
-inline QueueEntry(
+QueueEntry(
     sspair a,
-    DRes::VertexID b,
+    VertexID b,
     int c,
     bool d
 )
 ```
 
+Alternative constructor for [QueueEntry](/documentation/code/classes/structgambit_1_1dres_1_1queueentry/). 
 
 ## Public Attributes Documentation
 
-### variable first
+### variable quantity
 
 ```
-sspair first;
-```
-
-
-### variable second
-
-```
-DRes::VertexID second;
+sspair quantity;
 ```
 
 
-### variable third
+### variable toVertex
 
 ```
-int third;
+VertexID toVertex;
+```
+
+
+### variable dependency_type
+
+```
+int dependency_type;
 ```
 
 
@@ -80,6 +83,13 @@ bool printme;
 ```
 
 
+### variable obslike
+
+```
+const Observable * obslike;
+```
+
+
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:04 +0000
+Updated on 2024-07-18 at 13:53:31 +0000

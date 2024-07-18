@@ -142,8 +142,8 @@ namespace Gambit
             inline bool operator == (const Plugin_Details &plug1, const Plugin_Details &plug2)
             {
                 if ((plug1.major_version != plug2.major_version) ||
-                    (plug1.major_version != plug2.major_version) ||
                     (plug1.minor_version != plug2.minor_version) ||
+                    (plug1.patch_version != plug2.patch_version) ||
                     (plug1.release_version == "" && plug2.release_version != "") ||
                     (plug1.release_version != "" && plug2.release_version == ""))
                 {
@@ -206,4 +206,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:05 +0000
+Updated on 2024-07-18 at 13:53:33 +0000

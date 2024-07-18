@@ -1,24 +1,26 @@
 ---
 title: "namespace Gambit::DRes"
-
-description: "[No description available]"
+description: "Forward declaration of [Rule]() and Observables classes for saving pointers to ignored and matched examples. "
 
 ---
 
 # namespace Gambit::DRes
 
-[No description available]
+Forward declaration of [Rule]() and Observables classes for saving pointers to ignored and matched examples. 
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
+| struct | **[Gambit::DRes::BackendRule](/documentation/code/classes/structgambit_1_1dres_1_1backendrule/)** <br>Derived class rule for resolution of backend requirements.  |
 | class | **[Gambit::DRes::DependencyResolver](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/)** <br>Main dependency resolver.  |
-| class | **[Gambit::DRes::edgeWriter](/documentation/code/classes/classgambit_1_1dres_1_1edgewriter/)**  |
-| class | **[Gambit::DRes::labelWriter](/documentation/code/classes/classgambit_1_1dres_1_1labelwriter/)**  |
-| struct | **[Gambit::DRes::OutputVertexInfo](/documentation/code/classes/structgambit_1_1dres_1_1outputvertexinfo/)** <br>Minimal info about outputVertices.  |
-| struct | **[Gambit::DRes::QueueEntry](/documentation/code/classes/structgambit_1_1dres_1_1queueentry/)** <br>Information in parameter queue.  |
-| struct | **[Gambit::DRes::Rule](/documentation/code/classes/structgambit_1_1dres_1_1rule/)**  |
+| class | **[Gambit::DRes::edgeWriter](/documentation/code/classes/classgambit_1_1dres_1_1edgewriter/)** <br>Graphviz output for edges/dependencies.  |
+| class | **[Gambit::DRes::labelWriter](/documentation/code/classes/classgambit_1_1dres_1_1labelwriter/)** <br>Graphviz output for individual vertices/nodes/module functions.  |
+| struct | **[Gambit::DRes::ModuleRule](/documentation/code/classes/structgambit_1_1dres_1_1modulerule/)** <br>Derived class rule for resolution of dependencies.  |
+| struct | **[Gambit::DRes::Observable](/documentation/code/classes/structgambit_1_1dres_1_1observable/)**  |
+| struct | **[Gambit::DRes::OutputVertex](/documentation/code/classes/structgambit_1_1dres_1_1outputvertex/)** <br>Bind purpose to output vertex.  |
+| struct | **[Gambit::DRes::QueueEntry](/documentation/code/classes/structgambit_1_1dres_1_1queueentry/)** <br>Information in resolution queue.  |
+| struct | **[Gambit::DRes::Rule](/documentation/code/classes/structgambit_1_1dres_1_1rule/)** <br>Base rule for resolution of dependencies and backend requirements.  |
 
 ## Types
 
@@ -35,26 +37,17 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| bool | **[stringComp](/documentation/code/namespaces/namespacegambit_1_1dres/#function-stringcomp)**(const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) & s1, const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) & s2, bool with_regex =true)<br>Check whether s1 (wildcard + regex allowed) matches s2.  |
-| bool | **[typeComp](/documentation/code/namespaces/namespacegambit_1_1dres/#function-typecomp)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) s1, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) s2, const [Utils::type_equivalency](/documentation/code/classes/structgambit_1_1utils_1_1type__equivalency/) & eq, bool with_regex =true)<br>Type comparison taking into account equivalence classes.  |
 | [error](/documentation/code/classes/classgambit_1_1error/) & | **[dependency_resolver_error](/documentation/code/namespaces/namespacegambit_1_1dres/#function-dependency-resolver-error)**()<br>Dependency resolver errors.  |
 | [warning](/documentation/code/classes/classgambit_1_1warning/) & | **[dependency_resolver_warning](/documentation/code/namespaces/namespacegambit_1_1dres/#function-dependency-resolver-warning)**()<br>Dependency resolver warnings.  |
-| void | **[getParentVertices](/documentation/code/namespaces/namespacegambit_1_1dres/#function-getparentvertices)**(const VertexID & vertex, const [DRes::MasterGraphType](/documentation/code/namespaces/namespacegambit_1_1dres/#typedef-mastergraphtype) & graph, std::set< VertexID > & myVertexList) |
-| std::vector< VertexID > | **[sortVertices](/documentation/code/namespaces/namespacegambit_1_1dres/#function-sortvertices)**(const std::set< VertexID > & set, const std::list< VertexID > & topoOrder) |
-| std::vector< VertexID > | **[getSortedParentVertices](/documentation/code/namespaces/namespacegambit_1_1dres/#function-getsortedparentvertices)**(const VertexID & vertex, const [DRes::MasterGraphType](/documentation/code/namespaces/namespacegambit_1_1dres/#typedef-mastergraphtype) & graph, const std::list< VertexID > & topoOrder) |
-| bool | **[quantityMatchesIniEntry](/documentation/code/namespaces/namespacegambit_1_1dres/#function-quantitymatchesinientry)**(const [sspair](/documentation/code/namespaces/namespacegambit/#typedef-sspair) & quantity, const [IniParser::ObservableType](/documentation/code/classes/structgambit_1_1iniparser_1_1types_1_1observable/) & observable, const [Utils::type_equivalency](/documentation/code/classes/structgambit_1_1utils_1_1type__equivalency/) & eq) |
-| bool | **[capabilityMatchesIniEntry](/documentation/code/namespaces/namespacegambit_1_1dres/#function-capabilitymatchesinientry)**(const [sspair](/documentation/code/namespaces/namespacegambit/#typedef-sspair) & quantity, const [IniParser::ObservableType](/documentation/code/classes/structgambit_1_1iniparser_1_1types_1_1observable/) & observable) |
-| bool | **[moduleFuncMatchesIniEntry](/documentation/code/namespaces/namespacegambit_1_1dres/#function-modulefuncmatchesinientry)**([functor](/documentation/code/classes/classgambit_1_1functor/) * f, const [IniParser::ObservableType](/documentation/code/classes/structgambit_1_1iniparser_1_1types_1_1observable/) & e, const [Utils::type_equivalency](/documentation/code/classes/structgambit_1_1utils_1_1type__equivalency/) & eq) |
-| bool | **[backendFuncMatchesIniEntry](/documentation/code/namespaces/namespacegambit_1_1dres/#function-backendfuncmatchesinientry)**([functor](/documentation/code/classes/classgambit_1_1functor/) * f, const [IniParser::ObservableType](/documentation/code/classes/structgambit_1_1iniparser_1_1types_1_1observable/) & e, const [Utils::type_equivalency](/documentation/code/classes/structgambit_1_1utils_1_1type__equivalency/) & eq) |
-| int | **[getEntryLevelForOptions](/documentation/code/namespaces/namespacegambit_1_1dres/#function-getentrylevelforoptions)**(const [IniParser::ObservableType](/documentation/code/classes/structgambit_1_1iniparser_1_1types_1_1observable/) & e) |
-| bool | **[matchesRules](/documentation/code/namespaces/namespacegambit_1_1dres/#function-matchesrules)**([functor](/documentation/code/classes/classgambit_1_1functor/) * f, const [Rule](/documentation/code/classes/structgambit_1_1dres_1_1rule/) & rule) |
-| double | **[getTimeEstimate](/documentation/code/namespaces/namespacegambit_1_1dres/#function-gettimeestimate)**(const std::set< VertexID > & vertexList, const [DRes::MasterGraphType](/documentation/code/namespaces/namespacegambit_1_1dres/#typedef-mastergraphtype) & graph) |
-
-## Attributes
-
-|                | Name           |
-| -------------- | -------------- |
-| bool | **[use_regex](/documentation/code/namespaces/namespacegambit_1_1dres/#variable-use-regex)** <br>Global flag for regex use.  |
+| bool | **[stringComp](/documentation/code/namespaces/namespacegambit_1_1dres/#function-stringcomp)**(const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) & s1, const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) & s2)<br>Check whether s1 (wildcard + regex allowed) matches s2.  |
+| bool | **[typeComp](/documentation/code/namespaces/namespacegambit_1_1dres/#function-typecomp)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) s1, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) s2, const [Utils::type_equivalency](/documentation/code/classes/structgambit_1_1utils_1_1type__equivalency/) & eq)<br>Check whether type 1 (wildcard + regex allowed) matches type 2, taking into account equivalence classes.  |
+| void | **[getParentVertices](/documentation/code/namespaces/namespacegambit_1_1dres/#function-getparentvertices)**(const VertexID & vertex, const [MasterGraphType](/documentation/code/namespaces/namespacegambit_1_1dres/#typedef-mastergraphtype) & graph, std::set< VertexID > & myVertexList)<br>Collect parent vertices recursively (excluding root vertex)  |
+| std::vector< VertexID > | **[sortVertices](/documentation/code/namespaces/namespacegambit_1_1dres/#function-sortvertices)**(const std::set< VertexID > & set, const std::list< VertexID > & topoOrder)<br>Sort given list of vertices (according to topological sort result)  |
+| std::vector< VertexID > | **[getSortedParentVertices](/documentation/code/namespaces/namespacegambit_1_1dres/#function-getsortedparentvertices)**(const VertexID & vertex, const [MasterGraphType](/documentation/code/namespaces/namespacegambit_1_1dres/#typedef-mastergraphtype) & graph, const std::list< VertexID > & topoOrder)<br>Get sorted list of parent vertices.  |
+| double | **[getTimeEstimate](/documentation/code/namespaces/namespacegambit_1_1dres/#function-gettimeestimate)**(const std::set< VertexID > & vertexList, const [MasterGraphType](/documentation/code/namespaces/namespacegambit_1_1dres/#typedef-mastergraphtype) & graph)<br>Return runtime estimate for a set of nodes.  |
+| template <typename RuleT \> <br>std::set< const RuleT * > | **[getUsedOrUnusedRules](/documentation/code/namespaces/namespacegambit_1_1dres/#function-getusedorunusedrules)**(bool find_used, const std::vector< RuleT > & rules, const [MasterGraphType](/documentation/code/namespaces/namespacegambit_1_1dres/#typedef-mastergraphtype) & masterGraph)<br>Retrieve used or unused rules.  |
+| template <typename RuleT \> <br>std::set< const RuleT * > | **[getUsedRules](/documentation/code/namespaces/namespacegambit_1_1dres/#function-getusedrules)**(const std::vector< RuleT > & rules, const [MasterGraphType](/documentation/code/namespaces/namespacegambit_1_1dres/#typedef-mastergraphtype) & masterGraph) |
+| template <typename RuleT \> <br>std::set< const RuleT * > | **[getUnusedRules](/documentation/code/namespaces/namespacegambit_1_1dres/#function-getunusedrules)**(const std::vector< RuleT > & rules, const [MasterGraphType](/documentation/code/namespaces/namespacegambit_1_1dres/#typedef-mastergraphtype) & masterGraph) |
 
 ## Types Documentation
 
@@ -109,31 +102,6 @@ typedef std::map<std::string, std::vector<functor*> > Gambit::DRes::outputMapTyp
 
 ## Functions Documentation
 
-### function stringComp
-
-```
-bool stringComp(
-    const str & s1,
-    const str & s2,
-    bool with_regex =true
-)
-```
-
-Check whether s1 (wildcard + regex allowed) matches s2. 
-
-### function typeComp
-
-```
-bool typeComp(
-    str s1,
-    str s2,
-    const Utils::type_equivalency & eq,
-    bool with_regex =true
-)
-```
-
-Type comparison taking into account equivalence classes. 
-
 ### function dependency_resolver_error
 
 ```
@@ -150,16 +118,40 @@ warning & dependency_resolver_warning()
 
 Dependency resolver warnings. 
 
+### function stringComp
+
+```
+bool stringComp(
+    const str & s1,
+    const str & s2
+)
+```
+
+Check whether s1 (wildcard + regex allowed) matches s2. 
+
+### function typeComp
+
+```
+bool typeComp(
+    str s1,
+    str s2,
+    const Utils::type_equivalency & eq
+)
+```
+
+Check whether type 1 (wildcard + regex allowed) matches type 2, taking into account equivalence classes. 
+
 ### function getParentVertices
 
 ```
 void getParentVertices(
     const VertexID & vertex,
-    const DRes::MasterGraphType & graph,
+    const MasterGraphType & graph,
     std::set< VertexID > & myVertexList
 )
 ```
 
+Collect parent vertices recursively (excluding root vertex) 
 
 ### function sortVertices
 
@@ -170,104 +162,70 @@ std::vector< VertexID > sortVertices(
 )
 ```
 
+Sort given list of vertices (according to topological sort result) 
 
 ### function getSortedParentVertices
 
 ```
 std::vector< VertexID > getSortedParentVertices(
     const VertexID & vertex,
-    const DRes::MasterGraphType & graph,
+    const MasterGraphType & graph,
     const std::list< VertexID > & topoOrder
 )
 ```
 
-
-### function quantityMatchesIniEntry
-
-```
-bool quantityMatchesIniEntry(
-    const sspair & quantity,
-    const IniParser::ObservableType & observable,
-    const Utils::type_equivalency & eq
-)
-```
-
-
-### function capabilityMatchesIniEntry
-
-```
-bool capabilityMatchesIniEntry(
-    const sspair & quantity,
-    const IniParser::ObservableType & observable
-)
-```
-
-
-### function moduleFuncMatchesIniEntry
-
-```
-bool moduleFuncMatchesIniEntry(
-    functor * f,
-    const IniParser::ObservableType & e,
-    const Utils::type_equivalency & eq
-)
-```
-
-
-### function backendFuncMatchesIniEntry
-
-```
-bool backendFuncMatchesIniEntry(
-    functor * f,
-    const IniParser::ObservableType & e,
-    const Utils::type_equivalency & eq
-)
-```
-
-
-### function getEntryLevelForOptions
-
-```
-int getEntryLevelForOptions(
-    const IniParser::ObservableType & e
-)
-```
-
-
-### function matchesRules
-
-```
-bool matchesRules(
-    functor * f,
-    const Rule & rule
-)
-```
-
+Get sorted list of parent vertices. 
 
 ### function getTimeEstimate
 
 ```
 double getTimeEstimate(
     const std::set< VertexID > & vertexList,
-    const DRes::MasterGraphType & graph
+    const MasterGraphType & graph
+)
+```
+
+Return runtime estimate for a set of nodes. 
+
+### function getUsedOrUnusedRules
+
+```
+template <typename RuleT >
+std::set< const RuleT * > getUsedOrUnusedRules(
+    bool find_used,
+    const std::vector< RuleT > & rules,
+    const MasterGraphType & masterGraph
+)
+```
+
+Retrieve used or unused rules. 
+
+### function getUsedRules
+
+```
+template <typename RuleT >
+std::set< const RuleT * > getUsedRules(
+    const std::vector< RuleT > & rules,
+    const MasterGraphType & masterGraph
 )
 ```
 
 
-
-## Attributes Documentation
-
-### variable use_regex
+### function getUnusedRules
 
 ```
-bool use_regex;
+template <typename RuleT >
+std::set< const RuleT * > getUnusedRules(
+    const std::vector< RuleT > & rules,
+    const MasterGraphType & masterGraph
+)
 ```
 
-Global flag for regex use. 
+
 
 
 
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:04 +0000
+Updated on 2024-07-18 at 13:53:31 +0000

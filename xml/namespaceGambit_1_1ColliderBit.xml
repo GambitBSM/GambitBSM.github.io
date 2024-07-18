@@ -111,6 +111,7 @@
     <innerclass refid="structGambit_1_1ColliderBit_1_1AnalysisData" prot="public">Gambit::ColliderBit::AnalysisData</innerclass>
     <innerclass refid="structGambit_1_1ColliderBit_1_1AnalysisLogLikes" prot="public">Gambit::ColliderBit::AnalysisLogLikes</innerclass>
     <innerclass refid="classGambit_1_1ColliderBit_1_1AnalysisUtil" prot="public">Gambit::ColliderBit::AnalysisUtil</innerclass>
+    <innerclass refid="classGambit_1_1ColliderBit_1_1BaBar__single__photon__analysis__info" prot="public">Gambit::ColliderBit::BaBar_single_photon_analysis_info</innerclass>
     <innerclass refid="classGambit_1_1ColliderBit_1_1BaseCollider" prot="public">Gambit::ColliderBit::BaseCollider</innerclass>
     <innerclass refid="classGambit_1_1ColliderBit_1_1BaseDetector" prot="public">Gambit::ColliderBit::BaseDetector</innerclass>
     <innerclass refid="classGambit_1_1ColliderBit_1_1BaseLimitContainer" prot="public">Gambit::ColliderBit::BaseLimitContainer</innerclass>
@@ -121,6 +122,7 @@
     <innerclass refid="classGambit_1_1ColliderBit_1_1Dijet__analysis__info" prot="public">Gambit::ColliderBit::Dijet_analysis_info</innerclass>
     <innerclass refid="classGambit_1_1ColliderBit_1_1EventCounter" prot="public">Gambit::ColliderBit::EventCounter</innerclass>
     <innerclass refid="classGambit_1_1ColliderBit_1_1ImageLimit" prot="public">Gambit::ColliderBit::ImageLimit</innerclass>
+    <innerclass refid="structGambit_1_1ColliderBit_1_1jet__collection__settings" prot="public">Gambit::ColliderBit::jet_collection_settings</innerclass>
     <innerclass refid="classGambit_1_1ColliderBit_1_1L3ChargedGauginoSmallDeltaMAnySneutrinoLimitAt188pt6GeV" prot="public">Gambit::ColliderBit::L3ChargedGauginoSmallDeltaMAnySneutrinoLimitAt188pt6GeV</innerclass>
     <innerclass refid="classGambit_1_1ColliderBit_1_1L3ChargedGauginoSmallDeltaMWithHeavySneutrinoLimitAt188pt6GeV" prot="public">Gambit::ColliderBit::L3ChargedGauginoSmallDeltaMWithHeavySneutrinoLimitAt188pt6GeV</innerclass>
     <innerclass refid="classGambit_1_1ColliderBit_1_1L3ChargedHiggsinoSmallDeltaMLimitAt188pt6GeV" prot="public">Gambit::ColliderBit::L3ChargedHiggsinoSmallDeltaMLimitAt188pt6GeV</innerclass>
@@ -229,11 +231,11 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="todo_1_todo000038"><xreftitle>Todo</xreftitle><xrefdescription><para>Rewrite using the Pythia &gt; 8.176 particle-based methods </para>
+<para><xrefsect id="todo_1_todo000036"><xreftitle>Todo</xreftitle><xrefdescription><para>Rewrite using the Pythia &gt; 8.176 particle-based methods </para>
 </xrefdescription></xrefsect></para>
         </detaileddescription>
         <inbodydescription>
-<para><xrefsect id="todo_1_todo000039"><xreftitle>Todo</xreftitle><xrefdescription><para>What about partonic decays? </para>
+<para><xrefsect id="todo_1_todo000037"><xreftitle>Todo</xreftitle><xrefdescription><para>What about partonic decays? </para>
 </xrefdescription></xrefsect></para>
         </inbodydescription>
         <location file="ColliderBit/include/gambit/ColliderBit/colliders/Pythia8/Py8Utils.hpp" line="61" column="17" bodyfile="ColliderBit/include/gambit/ColliderBit/colliders/Pythia8/Py8Utils.hpp" bodystart="61" bodyend="73"/>
@@ -260,7 +262,7 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="todo_1_todo000040"><xreftitle>Todo</xreftitle><xrefdescription><para>Rewrite using the Pythia &gt; 8.176 particle-based methods </para>
+<para><xrefsect id="todo_1_todo000038"><xreftitle>Todo</xreftitle><xrefdescription><para>Rewrite using the Pythia &gt; 8.176 particle-based methods </para>
 </xrefdescription></xrefsect></para>
         </detaileddescription>
         <inbodydescription>
@@ -289,7 +291,7 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="todo_1_todo000041"><xreftitle>Todo</xreftitle><xrefdescription><para>Rewrite using the Pythia &gt; 8.176 particle-based methods </para>
+<para><xrefsect id="todo_1_todo000039"><xreftitle>Todo</xreftitle><xrefdescription><para>Rewrite using the Pythia &gt; 8.176 particle-based methods </para>
 </xrefdescription></xrefsect></para>
         </detaileddescription>
         <inbodydescription>
@@ -1204,7 +1206,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="78" column="17" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="78" bodyend="78"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="92" column="17" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="92" bodyend="92"/>
       </memberdef>
       <memberdef kind="function" id="Utils_8hpp_1a66c6e7dce6ad591eb1569ae6c2c066f5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -1223,7 +1225,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="81" column="17" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="81" bodyend="81"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="95" column="17" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="95" bodyend="95"/>
       </memberdef>
       <memberdef kind="function" id="Utils_8hpp_1a459902a1bc1cb1b8b92a0f9196a0e79f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -1242,7 +1244,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="84" column="17" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="84" bodyend="84"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="98" column="17" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="98" bodyend="98"/>
       </memberdef>
       <memberdef kind="function" id="Utils_8hpp_1acef57926d6067a635ebf410f5a9e7303" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -1261,7 +1263,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="87" column="17" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="87" bodyend="87"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="101" column="17" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="101" bodyend="101"/>
       </memberdef>
       <memberdef kind="function" id="Utils_8hpp_1a2abda85c7722d06b9e049f50de7a4672" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -1280,7 +1282,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="90" column="17" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="90" bodyend="90"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="104" column="17" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="104" bodyend="104"/>
       </memberdef>
       <memberdef kind="function" id="Utils_8hpp_1acc3e90389311d546ba9c592e04dbb8ab" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -1299,7 +1301,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="93" column="17" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="93" bodyend="93"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="107" column="17" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="107" bodyend="107"/>
       </memberdef>
       <memberdef kind="function" id="Utils_8hpp_1a84ddc17a6174d5f6e1394fe805d2729e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -1318,7 +1320,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="96" column="17" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="96" bodyend="96"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="110" column="17" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="110" bodyend="110"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -1352,7 +1354,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="105" column="17" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="105" bodyend="108"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="119" column="17" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="119" bodyend="122"/>
       </memberdef>
       <memberdef kind="function" id="Utils_8hpp_1a1684b50776a7a5c8ee5dc9184abf81d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -1380,7 +1382,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="111" column="17" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="111" bodyend="118"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="125" column="17" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="125" bodyend="132"/>
       </memberdef>
       <memberdef kind="function" id="Utils_8hpp_1a20aacf254f32c16e5347ffbb6fedae41" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -1408,7 +1410,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="121" column="17" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="121" bodyend="124"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="135" column="17" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="135" bodyend="138"/>
       </memberdef>
       <memberdef kind="function" id="Utils_8hpp_1a1a018b09cbd8d1f85e2af56b717a5f6e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="Utils_8hpp_1afc91bf707d036dcd1ddc79abcce7081c" kindref="member">ParticlePtrs</ref></type>
@@ -1432,12 +1434,12 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Filter a supplied particle vector by rejecting those which fail a supplied cut <xrefsect id="todo_1_todo000044"><xreftitle>Todo</xreftitle><xrefdescription><para>Optimise by only copying those which are selected (filter_select is canonical) </para>
+<para>Filter a supplied particle vector by rejecting those which fail a supplied cut <xrefsect id="todo_1_todo000042"><xreftitle>Todo</xreftitle><xrefdescription><para>Optimise by only copying those which are selected (filter_select is canonical) </para>
 </xrefdescription></xrefsect></para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="129" column="25" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="129" bodyend="134"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="143" column="25" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="143" bodyend="148"/>
       </memberdef>
       <memberdef kind="function" id="Utils_8hpp_1a2019408d78d453c480024a58ed872a12" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="Utils_8hpp_1afc91bf707d036dcd1ddc79abcce7081c" kindref="member">ParticlePtrs</ref></type>
@@ -1465,7 +1467,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="137" column="25" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="137" bodyend="140"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="151" column="25" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="151" bodyend="154"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -1496,7 +1498,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="150" column="17" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="150" bodyend="157"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="164" column="17" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="164" bodyend="171"/>
       </memberdef>
       <memberdef kind="function" id="Utils_8hpp_1a69713e830f67280d1f6578c2df49674b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -1524,7 +1526,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="160" column="17" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="160" bodyend="163"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="174" column="17" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="174" bodyend="177"/>
       </memberdef>
       <memberdef kind="function" id="Utils_8hpp_1a2413a535901135a74d4d20f101c78abd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="Utils_8hpp_1a806fd1423cb4a2e7e676c6fb4df31e80" kindref="member">JetPtrs</ref></type>
@@ -1548,12 +1550,12 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Filter a supplied particle vector by rejecting those which fail a supplied cut <xrefsect id="todo_1_todo000045"><xreftitle>Todo</xreftitle><xrefdescription><para>Optimise by only copying those which are selected (filter_select is canonical) </para>
+<para>Filter a supplied particle vector by rejecting those which fail a supplied cut <xrefsect id="todo_1_todo000043"><xreftitle>Todo</xreftitle><xrefdescription><para>Optimise by only copying those which are selected (filter_select is canonical) </para>
 </xrefdescription></xrefsect></para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="168" column="20" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="168" bodyend="173"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="182" column="20" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="182" bodyend="187"/>
       </memberdef>
       <memberdef kind="function" id="Utils_8hpp_1ad3ed8df8faa85dbfa9e27feac8555b08" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="Utils_8hpp_1a806fd1423cb4a2e7e676c6fb4df31e80" kindref="member">JetPtrs</ref></type>
@@ -1581,12 +1583,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="176" column="20" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="176" bodyend="179"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="190" column="20" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="190" bodyend="193"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
       <header>Random booleans sampled from efficiency maps</header>
-      <description><para><xrefsect id="todo_1_todo000046"><xreftitle>Todo</xreftitle><xrefdescription><para>Provide random selection functors from const, 1D map, 2D map, and eff functor </para>
+      <description><para><xrefsect id="todo_1_todo000044"><xreftitle>Todo</xreftitle><xrefdescription><para>Provide random selection functors from const, 1D map, 2D map, and eff functor </para>
 </xrefdescription></xrefsect></para>
 </description>
       <memberdef kind="function" id="Utils_8hpp_1a3b59353a7ec6cb32c170baddc17ee4ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
@@ -1605,12 +1607,12 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-<para><xrefsect id="todo_1_todo000100"><xreftitle>Todo</xreftitle><xrefdescription><para>Handle out-of-range eff values </para>
+<para><xrefsect id="todo_1_todo000098"><xreftitle>Todo</xreftitle><xrefdescription><para>Handle out-of-range eff values </para>
 </xrefdescription></xrefsect></para>
-<para><xrefsect id="todo_1_todo000100"><xreftitle>Todo</xreftitle><xrefdescription><para>Handle out-of-range eff values </para>
+<para><xrefsect id="todo_1_todo000098"><xreftitle>Todo</xreftitle><xrefdescription><para>Handle out-of-range eff values </para>
 </xrefdescription></xrefsect></para>
         </inbodydescription>
-        <location file="ColliderBit/src/Utils.cpp" line="44" column="10" bodyfile="ColliderBit/src/Utils.cpp" bodystart="44" bodyend="48" declfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" declline="193" declcolumn="10"/>
+        <location file="ColliderBit/src/Utils.cpp" line="86" column="10" bodyfile="ColliderBit/src/Utils.cpp" bodystart="86" bodyend="90" declfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" declline="207" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="Utils_8hpp_1a78d8549dacfbff00a5d2f0f09667d756" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -1633,7 +1635,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="196" column="17" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="196" bodyend="198"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="210" column="17" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="210" bodyend="212"/>
       </memberdef>
       <memberdef kind="function" id="Utils_8hpp_1ad9b71ef4722c30ca0b0bef6a44516d4c" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -1660,7 +1662,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="201" column="17" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="201" bodyend="203"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="215" column="17" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="215" bodyend="217"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -1691,7 +1693,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/src/Utils.cpp" line="51" column="10" bodyfile="ColliderBit/src/Utils.cpp" bodystart="51" bodyend="61" declfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" declline="212" declcolumn="10"/>
+        <location file="ColliderBit/src/Utils.cpp" line="93" column="10" bodyfile="ColliderBit/src/Utils.cpp" bodystart="93" bodyend="103" declfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" declline="226" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="Utils_8hpp_1a6cc580ac44bf5513d5206959d8ae4514" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1720,7 +1722,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/src/Utils.cpp" line="65" column="10" bodyfile="ColliderBit/src/Utils.cpp" bodystart="65" bodyend="77" declfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" declline="215" declcolumn="10"/>
+        <location file="ColliderBit/src/Utils.cpp" line="107" column="10" bodyfile="ColliderBit/src/Utils.cpp" bodystart="107" bodyend="119" declfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" declline="229" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="Utils_8hpp_1acacdc93daa0787f1cf7a436380390a7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1748,7 +1750,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/src/Utils.cpp" line="81" column="10" bodyfile="ColliderBit/src/Utils.cpp" bodystart="81" bodyend="92" declfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" declline="218" declcolumn="10"/>
+        <location file="ColliderBit/src/Utils.cpp" line="123" column="10" bodyfile="ColliderBit/src/Utils.cpp" bodystart="123" bodyend="134" declfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" declline="232" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="Utils_8hpp_1a198880b5e00a4a2c6a6e7a3ee801ad1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1776,7 +1778,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/src/Utils.cpp" line="96" column="10" bodyfile="ColliderBit/src/Utils.cpp" bodystart="96" bodyend="107" declfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" declline="221" declcolumn="10"/>
+        <location file="ColliderBit/src/Utils.cpp" line="138" column="10" bodyfile="ColliderBit/src/Utils.cpp" bodystart="138" bodyend="149" declfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" declline="235" declcolumn="10"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -1802,12 +1804,12 @@
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Randomly get a tag result (can be anything) from a 2D |eta|-pT efficiency map <xrefsect id="todo_1_todo000047"><xreftitle>Todo</xreftitle><xrefdescription><para>Also need 1D? Sampling in what variable? </para>
+<para>Randomly get a tag result (can be anything) from a 2D |eta|-pT efficiency map <xrefsect id="todo_1_todo000045"><xreftitle>Todo</xreftitle><xrefdescription><para>Also need 1D? Sampling in what variable? </para>
 </xrefdescription></xrefsect></para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="231" column="17" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="231" bodyend="237"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="245" column="17" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="245" bodyend="251"/>
       </memberdef>
       <memberdef kind="function" id="Utils_8hpp_1a64260a7a70d3e3322f61f256095e76e5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>std::map&lt; const HEPUtils::Jet *, bool &gt;</type>
@@ -1848,7 +1850,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="240" column="21" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="240" bodyend="266"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="254" column="21" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="254" bodyend="280"/>
       </memberdef>
       <memberdef kind="function" id="Utils_8hpp_1a4fd48029976976354f74213f6b8d264d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -1885,7 +1887,7 @@
 <para>&lt; Below/out of histo range</para>
 <para>&lt; Above/out of histo range</para>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="270" column="19" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="270" bodyend="274"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="284" column="19" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="284" bodyend="288"/>
       </memberdef>
       <memberdef kind="function" id="Utils_8hpp_1a2956d3a3095ed165a60046dd3918a330" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>std::vector&lt; double &gt;</type>
@@ -1904,7 +1906,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="278" column="24" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="278" bodyend="284"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="292" column="24" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="292" bodyend="298"/>
       </memberdef>
       <memberdef kind="function" id="Utils_8hpp_1a815f2f22867c52a165aad8f6de2aec24" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>std::vector&lt; double &gt;</type>
@@ -1923,7 +1925,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="286" column="24" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="286" bodyend="288"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="300" column="24" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="300" bodyend="302"/>
       </memberdef>
       <memberdef kind="function" id="Utils_8hpp_1a6b637ed5c7c6e6fe222b389f3a912b44" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -1961,17 +1963,21 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="293" column="24" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="293" bodyend="304"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="307" column="24" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="307" bodyend="318"/>
       </memberdef>
-      <memberdef kind="function" id="Utils_8hpp_1af8cafeb2ad8fb99727709a15d7398c8d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="Utils_8hpp_1a42db35fd293b897c4ca11bf21b2ebb94" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
         <definition>bool Gambit::ColliderBit::object_in_cone</definition>
-        <argsstring>(const HEPUtils::Event &amp;e, const HEPUtils::P4 &amp;p4, double ptmin, double rmax, double rmin=0.05)</argsstring>
+        <argsstring>(const HEPUtils::Event &amp;e, std::string jetcollection, const HEPUtils::P4 &amp;p4, double ptmin, double rmax, double rmin=0.05)</argsstring>
         <name>object_in_cone</name>
         <qualifiedname>Gambit::ColliderBit::object_in_cone</qualifiedname>
         <param>
           <type>const HEPUtils::Event &amp;</type>
           <declname>e</declname>
+        </param>
+        <param>
+          <type>std::string</type>
+          <declname>jetcollection</declname>
         </param>
         <param>
           <type>const HEPUtils::P4 &amp;</type>
@@ -1997,7 +2003,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="308" column="17" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="308" bodyend="314"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="322" column="17" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="322" bodyend="328"/>
       </memberdef>
       <memberdef kind="function" id="Utils_8hpp_1ab09d9a78a703b128a28b63a6c52396a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -2052,7 +2058,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="323" column="10" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="323" bodyend="333"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="337" column="10" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="337" bodyend="347"/>
       </memberdef>
       <memberdef kind="function" id="Utils_8hpp_1a07c3f4250cc6df0bbca9875949bade5e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -2107,7 +2113,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="342" column="10" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="342" bodyend="352"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="356" column="10" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="356" bodyend="366"/>
       </memberdef>
       <memberdef kind="function" id="Utils_8hpp_1a41b04372dc4483504b6027e23a27542e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -2153,7 +2159,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="359" column="10" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="359" bodyend="369"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="373" column="10" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="373" bodyend="383"/>
       </memberdef>
       <memberdef kind="function" id="Utils_8hpp_1aab1fa0df2dee362f7039e4b9fe0bed4b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -2184,7 +2190,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="374" column="17" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="374" bodyend="376"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="388" column="17" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="388" bodyend="390"/>
       </memberdef>
       <memberdef kind="function" id="Utils_8hpp_1a9ec34ac47693aabf0ff2ea6112e9c6a7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -2215,7 +2221,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="380" column="17" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="380" bodyend="382"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="394" column="17" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="394" bodyend="396"/>
       </memberdef>
       <memberdef kind="function" id="Utils_8hpp_1accb9a97df0082909089686ad0d1bbcd7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -2246,7 +2252,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="386" column="17" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="386" bodyend="388"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="400" column="17" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="400" bodyend="402"/>
       </memberdef>
       <memberdef kind="function" id="Utils_8hpp_1a4b8fca22bab46eebe47ed3908eca1725" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; std::vector&lt; const HEPUtils::Particle * &gt; &gt;</type>
@@ -2265,7 +2271,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/src/Utils.cpp" line="111" column="17" bodyfile="ColliderBit/src/Utils.cpp" bodystart="111" bodyend="128" declfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" declline="392" declcolumn="17"/>
+        <location file="ColliderBit/src/Utils.cpp" line="153" column="17" bodyfile="ColliderBit/src/Utils.cpp" bodystart="153" bodyend="170" declfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" declline="406" declcolumn="17"/>
       </memberdef>
       <memberdef kind="function" id="Utils_8hpp_1a4ade2e59fe5795e1cd55cc1516f6a6f3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; std::vector&lt; const HEPUtils::Particle * &gt; &gt;</type>
@@ -2284,7 +2290,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/src/Utils.cpp" line="132" column="17" bodyfile="ColliderBit/src/Utils.cpp" bodystart="132" bodyend="149" declfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" declline="395" declcolumn="17"/>
+        <location file="ColliderBit/src/Utils.cpp" line="174" column="17" bodyfile="ColliderBit/src/Utils.cpp" bodystart="174" bodyend="191" declfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" declline="409" declcolumn="17"/>
       </memberdef>
       <memberdef kind="function" id="Utils_8hpp_1ab2dfeadec5c25359a418f22b14cf1da6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; std::vector&lt; const HEPUtils::Particle * &gt; &gt;</type>
@@ -2303,7 +2309,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/src/Utils.cpp" line="153" column="17" bodyfile="ColliderBit/src/Utils.cpp" bodystart="153" bodyend="170" declfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" declline="398" declcolumn="17"/>
+        <location file="ColliderBit/src/Utils.cpp" line="195" column="17" bodyfile="ColliderBit/src/Utils.cpp" bodystart="195" bodyend="212" declfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" declline="412" declcolumn="17"/>
       </memberdef>
       <memberdef kind="function" id="Utils_8hpp_1a0045f719bf4f0224bd502f71fbd49b34" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; std::vector&lt; const HEPUtils::Jet * &gt; &gt;</type>
@@ -2322,7 +2328,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/src/Utils.cpp" line="173" column="17" bodyfile="ColliderBit/src/Utils.cpp" bodystart="173" bodyend="187" declfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" declline="401" declcolumn="17"/>
+        <location file="ColliderBit/src/Utils.cpp" line="215" column="17" bodyfile="ColliderBit/src/Utils.cpp" bodystart="215" bodyend="229" declfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" declline="415" declcolumn="17"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -2348,7 +2354,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="408" column="17" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="408" bodyend="410"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="422" column="17" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="422" bodyend="424"/>
       </memberdef>
       <memberdef kind="function" id="Utils_8hpp_1ab4abea9a2b524471f92960a8e57ca597" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -2371,7 +2377,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="413" column="17" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="413" bodyend="413"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="427" column="17" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="427" bodyend="427"/>
       </memberdef>
       <memberdef kind="function" id="Utils_8hpp_1ad01601d1de019bb97736b84ac32f8737" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -2389,7 +2395,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="416" column="17" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="416" bodyend="416"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="430" column="17" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="430" bodyend="430"/>
       </memberdef>
       <memberdef kind="function" id="Utils_8hpp_1a50a2de59bc5a7ddf9b409867d64890fd" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -2412,7 +2418,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="420" column="17" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="420" bodyend="422"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="434" column="17" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="434" bodyend="436"/>
       </memberdef>
       <memberdef kind="function" id="Utils_8hpp_1a4fdf4a31732240b6ec1f4f92cb130a19" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -2435,7 +2441,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="425" column="17" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="425" bodyend="425"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="439" column="17" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="439" bodyend="439"/>
       </memberdef>
       <memberdef kind="function" id="Utils_8hpp_1aaab2bad58ea291398350c2e2016fb6ca" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -2453,7 +2459,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="428" column="17" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="428" bodyend="428"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="442" column="17" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="442" bodyend="442"/>
       </memberdef>
       <memberdef kind="function" id="Utils_8hpp_1aad8763b3bfebd9b43a28ccf59629d227" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -2475,7 +2481,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="431" column="17" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="431" bodyend="438"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="445" column="17" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="445" bodyend="452"/>
       </memberdef>
       <memberdef kind="function" id="Utils_8hpp_1a6ca7506c3c71aa4799eeeb1d1bd1b219" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -2494,7 +2500,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="444" column="17" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="444" bodyend="460"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="458" column="17" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="458" bodyend="474"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -2520,7 +2526,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="467" column="16" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="467" bodyend="475"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="481" column="16" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="481" bodyend="489"/>
       </memberdef>
       <memberdef kind="function" id="Utils_8hpp_1a858795fe02f1780e07b8c98625727488" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -2543,7 +2549,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="478" column="16" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="478" bodyend="486"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="492" column="16" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="492" bodyend="500"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -2570,7 +2576,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="495" column="19" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="495" bodyend="503"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="509" column="19" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="509" bodyend="517"/>
       </memberdef>
       <memberdef kind="function" id="Utils_8hpp_1a2c1002cf9d1ec8b4c5a49ee5f45e0d38" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>double</type>
@@ -2594,7 +2600,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="506" column="19" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="506" bodyend="514"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="520" column="19" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="520" bodyend="528"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -2628,7 +2634,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="522" column="19" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="522" bodyend="536"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="536" column="19" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="536" bodyend="550"/>
       </memberdef>
       <memberdef kind="function" id="Utils_8hpp_1a8ea57467de8ed3a7b95854e84cc4f214" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>double</type>
@@ -2659,7 +2665,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="539" column="19" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="539" bodyend="553"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="553" column="19" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="553" bodyend="567"/>
       </memberdef>
       <memberdef kind="function" id="Utils_8hpp_1a30ee637658d3f21fc557b0455e9d7f01" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>double</type>
@@ -2681,7 +2687,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="556" column="19" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="556" bodyend="559"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="570" column="19" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="570" bodyend="573"/>
       </memberdef>
       <memberdef kind="function" id="Utils_8hpp_1a116740e68c97b9298185ff34b1244ece" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>double</type>
@@ -2703,7 +2709,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="562" column="19" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="562" bodyend="565"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="576" column="19" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="576" bodyend="579"/>
       </memberdef>
       <memberdef kind="function" id="Utils_8hpp_1ad58de00a8c9dbe2c2bc635e1284faf01" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>double</type>
@@ -2729,7 +2735,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="568" column="19" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="568" bodyend="572"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="582" column="19" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="582" bodyend="586"/>
       </memberdef>
       <memberdef kind="function" id="Utils_8hpp_1a5a16234a10d569900b86a3468f5680f2" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>double</type>
@@ -2759,7 +2765,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="575" column="19" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="575" bodyend="579"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="589" column="19" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="589" bodyend="593"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -2785,7 +2791,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="587" column="17" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="587" bodyend="590"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="601" column="17" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="601" bodyend="604"/>
       </memberdef>
       <memberdef kind="function" id="Utils_8hpp_1ad12aa3f8a462fb9d6731d862ab67c0c3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>bool</type>
@@ -2808,7 +2814,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="593" column="17" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="593" bodyend="596"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="607" column="17" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="607" bodyend="610"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="user-defined">
@@ -5710,7 +5716,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="69" column="25" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="69" bodyend="-1"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="83" column="25" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="83" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="Utils_8hpp_1a806fd1423cb4a2e7e676c6fb4df31e80" prot="public" static="no">
         <type>std::vector&lt; const HEPUtils::Jet * &gt;</type>
@@ -5725,7 +5731,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="72" column="25" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="72" bodyend="-1"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="86" column="25" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="86" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="var">
@@ -5804,6 +5810,21 @@
         </inbodydescription>
         <location file="ColliderBit/include/gambit/ColliderBit/Utils.hpp" line="53" column="35" bodyfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" bodystart="53" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="ColliderBit__Bfactories_8cpp_1ac8c15544de3c47e7947d53fea5c6ec59" prot="public" static="no" mutable="no">
+        <type>std::map&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>, <ref refid="classGambit_1_1ColliderBit_1_1BaBar__single__photon__analysis__info" kindref="compound">BaBar_single_photon_analysis_info</ref> &gt;</type>
+        <definition>std::map&lt;str,BaBar_single_photon_analysis_info&gt; Gambit::ColliderBit::SubGeVDM_BaBar_single_photon_analysis_info</definition>
+        <argsstring></argsstring>
+        <name>SubGeVDM_BaBar_single_photon_analysis_info</name>
+        <qualifiedname>Gambit::ColliderBit::SubGeVDM_BaBar_single_photon_analysis_info</qualifiedname>
+        <briefdescription>
+<para>A Map between search name and the analysis info needed. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/src/ColliderBit_Bfactories.cpp" line="72" column="14" bodyfile="ColliderBit/src/ColliderBit_Bfactories.cpp" bodystart="72" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="variable" id="ColliderBit__InterpolatedYields_8cpp_1af1339ef34f63df4a4626fc333507ffb8" prot="public" static="no" mutable="no">
         <type>std::map&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>, <ref refid="classGambit_1_1ColliderBit_1_1Model__analysis__info" kindref="compound">Model_analysis_info</ref> &gt;</type>
         <definition>std::map&lt;str,Model_analysis_info&gt; Gambit::ColliderBit::analysis_info_map</definition>
@@ -5817,7 +5838,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="199" column="14" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="199" bodyend="-1"/>
+        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="234" column="14" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="234" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="ColliderBit__InterpolatedYields_8cpp_1a14fe3aac3688bdd760291853eaa98f9a" prot="public" static="no" mutable="no">
         <type>std::map&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>, <ref refid="classGambit_1_1ColliderBit_1_1Dijet__analysis__info" kindref="compound">Dijet_analysis_info</ref> &gt;</type>
@@ -5832,7 +5853,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="1788" column="14" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="1788" bodyend="-1"/>
+        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="1914" column="14" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="1914" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="ColliderBit__InterpolatedYields_8cpp_1a907444c7d40faedc95b51de2f6559b20" prot="public" static="no" mutable="no">
         <type>std::vector&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &gt;</type>
@@ -5854,7 +5875,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="1791" column="17" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="1791" bodyend="-1"/>
+        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="1917" column="17" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="1917" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -5947,7 +5968,7 @@
         </inbodydescription>
         <location file="ColliderBit/include/gambit/ColliderBit/analyses/Cutflow.hpp" line="364" column="12" bodyfile="ColliderBit/include/gambit/ColliderBit/analyses/Cutflow.hpp" bodystart="364" bodyend="367"/>
       </memberdef>
-      <memberdef kind="function" id="Py8EventConversions_8hpp_1ab50b344a3140f50cdc0b43f1437274de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="Py8EventConversions_8hpp_1a2b9cce4a882770abb43677d71385276f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
           <param>
             <type>typename EventT</type>
@@ -5955,7 +5976,7 @@
         </templateparamlist>
         <type>void</type>
         <definition>void Gambit::ColliderBit::convertParticleEvent</definition>
-        <argsstring>(const EventT &amp;pevt, HEPUtils::Event &amp;result, double antiktR, double jet_pt_min)</argsstring>
+        <argsstring>(const EventT &amp;pevt, HEPUtils::Event &amp;result, std::vector&lt; jet_collection_settings &gt; all_jet_collection_settings, str jetcollection_taus, double jet_pt_min)</argsstring>
         <name>convertParticleEvent</name>
         <qualifiedname>Gambit::ColliderBit::convertParticleEvent</qualifiedname>
         <param>
@@ -5967,8 +5988,12 @@
           <declname>result</declname>
         </param>
         <param>
-          <type>double</type>
-          <declname>antiktR</declname>
+          <type>std::vector&lt; <ref refid="structGambit_1_1ColliderBit_1_1jet__collection__settings" kindref="compound">jet_collection_settings</ref> &gt;</type>
+          <declname>all_jet_collection_settings</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+          <declname>jetcollection_taus</declname>
         </param>
         <param>
           <type>double</type>
@@ -5989,30 +6014,31 @@
 </xrefdescription></xrefsect></para>
 <para><xrefsect id="todo_1_todo000022"><xreftitle>Todo</xreftitle><xrefdescription><para>Move out-of-acceptance MET contribution to <ref refid="classGambit_1_1ColliderBit_1_1BuckFast" kindref="compound">BuckFast</ref> </para>
 </xrefdescription></xrefsect></para>
-<para>Jet finding <xrefsect id="todo_1_todo000023"><xreftitle>Todo</xreftitle><xrefdescription><para>Choose jet algorithm via detector _settings? Run several algs? </para>
-</xrefdescription></xrefsect></para>
-<para>Do jet b-tagging, etc. and add to the Event <xrefsect id="todo_1_todo000024"><xreftitle>Todo</xreftitle><xrefdescription><para>Use ghost tagging? </para>
+<para>Jet finding</para>
+<para>Create and run a new cluster sequence for the given jet collection. The HEPUtils::Event instance (&apos;result&apos;) takes ownership of the cluster sequence and a shared_ptr is returned here.</para>
+<para>Get the resulting pseudojets</para>
+<para>Do jet b-tagging, etc. and add to the Event <xrefsect id="todo_1_todo000023"><xreftitle>Todo</xreftitle><xrefdescription><para>Use ghost tagging? </para>
 </xrefdescription></xrefsect><simplesect kind="note"><para>We need to <emphasis>remove</emphasis> this b-tag in the detector sim if outside the tracker acceptance!</para>
 </simplesect>
-<xrefsect id="todo_1_todo000025"><xreftitle>Todo</xreftitle><xrefdescription><para>Replace with HEPUtils::any(bhadrons, [&amp;](const auto&amp; pb){ pj.delta_R(pb) &lt; 0.4 }) </para>
+<xrefsect id="todo_1_todo000024"><xreftitle>Todo</xreftitle><xrefdescription><para>Replace with HEPUtils::any(bhadrons, [&amp;](const auto&amp; pb){ pj.delta_R(pb) &lt; 0.4 }) </para>
+</xrefdescription></xrefsect></para>
+<para>&lt; <xrefsect id="todo_1_todo000025"><xreftitle>Todo</xreftitle><xrefdescription><para>Hard-coded radius!!! </para>
 </xrefdescription></xrefsect></para>
 <para>&lt; <xrefsect id="todo_1_todo000026"><xreftitle>Todo</xreftitle><xrefdescription><para>Hard-coded radius!!! </para>
 </xrefdescription></xrefsect></para>
 <para>&lt; <xrefsect id="todo_1_todo000027"><xreftitle>Todo</xreftitle><xrefdescription><para>Hard-coded radius!!! </para>
 </xrefdescription></xrefsect></para>
-<para>&lt; <xrefsect id="todo_1_todo000028"><xreftitle>Todo</xreftitle><xrefdescription><para>Hard-coded radius!!! </para>
+<para>&lt; <xrefsect id="todo_1_todo000028"><xreftitle>Todo</xreftitle><xrefdescription><para>Hard-coded radius from ATLAS-CONF-2021-022, make selectable? </para>
 </xrefdescription></xrefsect></para>
 <para>&lt; <xrefsect id="todo_1_todo000029"><xreftitle>Todo</xreftitle><xrefdescription><para>Hard-coded radius from ATLAS-CONF-2021-022, make selectable? </para>
 </xrefdescription></xrefsect></para>
 <para>&lt; <xrefsect id="todo_1_todo000030"><xreftitle>Todo</xreftitle><xrefdescription><para>Hard-coded radius from ATLAS-CONF-2021-022, make selectable? </para>
 </xrefdescription></xrefsect></para>
-<para>&lt; <xrefsect id="todo_1_todo000031"><xreftitle>Todo</xreftitle><xrefdescription><para>Hard-coded radius from ATLAS-CONF-2021-022, make selectable? </para>
-</xrefdescription></xrefsect></para>
 <para>Calculate missing momentum</para>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/colliders/Pythia8/Py8EventConversions.hpp" line="38" column="10" bodyfile="ColliderBit/include/gambit/ColliderBit/colliders/Pythia8/Py8EventConversions.hpp" bodystart="38" bodyend="310"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/colliders/Pythia8/Py8EventConversions.hpp" line="40" column="10" bodyfile="ColliderBit/include/gambit/ColliderBit/colliders/Pythia8/Py8EventConversions.hpp" bodystart="40" bodyend="330"/>
       </memberdef>
-      <memberdef kind="function" id="Py8EventConversions_8hpp_1a42e166b5bdf2ffb8544b4a65edc89976" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="Py8EventConversions_8hpp_1a88ae83927a9e3330acc38da802b06a09" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
           <param>
             <type>typename EventT</type>
@@ -6020,7 +6046,7 @@
         </templateparamlist>
         <type>void</type>
         <definition>void Gambit::ColliderBit::convertPartonEvent</definition>
-        <argsstring>(const EventT &amp;pevt, HEPUtils::Event &amp;result, double antiktR, double jet_pt_min)</argsstring>
+        <argsstring>(const EventT &amp;pevt, HEPUtils::Event &amp;result, std::vector&lt; jet_collection_settings &gt; all_jet_collection_settings, str jetcollection_taus, double jet_pt_min)</argsstring>
         <name>convertPartonEvent</name>
         <qualifiedname>Gambit::ColliderBit::convertPartonEvent</qualifiedname>
         <param>
@@ -6032,8 +6058,12 @@
           <declname>result</declname>
         </param>
         <param>
-          <type>double</type>
-          <declname>antiktR</declname>
+          <type>std::vector&lt; <ref refid="structGambit_1_1ColliderBit_1_1jet__collection__settings" kindref="compound">jet_collection_settings</ref> &gt;</type>
+          <declname>all_jet_collection_settings</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
+          <declname>jetcollection_taus</declname>
         </param>
         <param>
           <type>double</type>
@@ -6045,20 +6075,19 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-<para><xrefsect id="todo_1_todo000032"><xreftitle>Todo</xreftitle><xrefdescription><para>We should leave this for the detector sim / analysis to deal with </para>
+<para><xrefsect id="todo_1_todo000031"><xreftitle>Todo</xreftitle><xrefdescription><para>We should leave this for the detector sim / analysis to deal with </para>
 </xrefdescription></xrefsect></para>
-<para><xrefsect id="todo_1_todo000033"><xreftitle>Todo</xreftitle><xrefdescription><para><emphasis>Some</emphasis> photons should be included in jets!!! Ignore for now since no FSR </para>
-</xrefdescription></xrefsect><xrefsect id="todo_1_todo000034"><xreftitle>Todo</xreftitle><xrefdescription></xrefdescription></xrefsect><xrefsect id="todo_1_todo000035"><xreftitle>Todo</xreftitle><xrefdescription><para>Lepton dressing </para>
+<para><xrefsect id="todo_1_todo000032"><xreftitle>Todo</xreftitle><xrefdescription><para><emphasis>Some</emphasis> photons should be included in jets!!! Ignore for now since no FSR </para>
+</xrefdescription></xrefsect><xrefsect id="todo_1_todo000033"><xreftitle>Todo</xreftitle><xrefdescription></xrefdescription></xrefsect><xrefsect id="todo_1_todo000034"><xreftitle>Todo</xreftitle><xrefdescription><para>Lepton dressing </para>
 </xrefdescription></xrefsect></para>
-<para><xrefsect id="todo_1_todo000036"><xreftitle>Todo</xreftitle><xrefdescription><para>Only include hadronic tau fraction? </para>
+<para><xrefsect id="todo_1_todo000035"><xreftitle>Todo</xreftitle><xrefdescription><para>Only include hadronic tau fraction? </para>
 </xrefdescription></xrefsect></para>
-<para>Jet finding <xrefsect id="todo_1_todo000037"><xreftitle>Todo</xreftitle><xrefdescription><para>choose jet algorithm via _settings? </para>
-</xrefdescription></xrefsect></para>
+<para>Jet finding</para>
 <para><simplesect kind="note"><para>This b-tag is removed in the detector sim if outside the tracker acceptance!</para>
 </simplesect>
 Calculate missing momentum</para>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/colliders/Pythia8/Py8EventConversions.hpp" line="315" column="10" bodyfile="ColliderBit/include/gambit/ColliderBit/colliders/Pythia8/Py8EventConversions.hpp" bodystart="315" bodyend="445"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/colliders/Pythia8/Py8EventConversions.hpp" line="335" column="10" bodyfile="ColliderBit/include/gambit/ColliderBit/colliders/Pythia8/Py8EventConversions.hpp" bodystart="335" bodyend="471"/>
       </memberdef>
       <memberdef kind="function" id="complete__process__PID__pair__multimaps_8hpp_1aa00f9200838426661631c91a4990186d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>const multimap_PID_pair_int &amp;</type>
@@ -6307,7 +6336,34 @@ Calculate missing momentum</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/getPy8Collider.hpp" line="52" column="10" bodyfile="ColliderBit/include/gambit/ColliderBit/getPy8Collider.hpp" bodystart="52" bodyend="261"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/getPy8Collider.hpp" line="52" column="10" bodyfile="ColliderBit/include/gambit/ColliderBit/getPy8Collider.hpp" bodystart="52" bodyend="291"/>
+      </memberdef>
+      <memberdef kind="function" id="lhef2heputils_8hpp_1a7807afab57fcae64794374798e5745fa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::ColliderBit::get_HEPUtils_event</definition>
+        <argsstring>(const LHEF::Reader &amp;, HEPUtils::Event &amp;, double, std::vector&lt; Gambit::ColliderBit::jet_collection_settings &gt;)</argsstring>
+        <name>get_HEPUtils_event</name>
+        <qualifiedname>Gambit::ColliderBit::get_HEPUtils_event</qualifiedname>
+        <param>
+          <type>const LHEF::Reader &amp;</type>
+        </param>
+        <param>
+          <type>HEPUtils::Event &amp;</type>
+        </param>
+        <param>
+          <type>double</type>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="structGambit_1_1ColliderBit_1_1jet__collection__settings" kindref="compound">Gambit::ColliderBit::jet_collection_settings</ref> &gt;</type>
+        </param>
+        <briefdescription>
+<para>Extract an LHE event as a HEPUtils::Event. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/lhef2heputils.hpp" line="43" column="10" declfile="ColliderBit/include/gambit/ColliderBit/lhef2heputils.hpp" declline="43" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="BaseLimitContainer_8hpp_1a79cb77533c3ff48b0ba2b1624436ed09" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classGambit_1_1ColliderBit_1_1LineSegment" kindref="compound">LineSegment</ref></type>
@@ -6350,12 +6406,67 @@ Calculate missing momentum</para>
 <para>Add two numbers in quadrature. </para>
         </briefdescription>
         <detaileddescription>
-<para><xrefsect id="todo_1_todo000042"><xreftitle>Todo</xreftitle><xrefdescription><para>Use HEPUtils add_quad </para>
+<para><xrefsect id="todo_1_todo000040"><xreftitle>Todo</xreftitle><xrefdescription><para>Use HEPUtils add_quad </para>
 </xrefdescription></xrefsect></para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
         <location file="ColliderBit/include/gambit/ColliderBit/limits/PointsAndLines.hpp" line="13" column="19" bodyfile="ColliderBit/include/gambit/ColliderBit/limits/PointsAndLines.hpp" bodystart="13" bodyend="13"/>
+      </memberdef>
+      <memberdef kind="function" id="Utils_8hpp_1aae924570454bbbe9d25dcd4eb8af5c96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FJNS::JetAlgorithm</type>
+        <definition>FJNS::JetAlgorithm Gambit::ColliderBit::FJalgorithm_map</definition>
+        <argsstring>(std::string)</argsstring>
+        <name>FJalgorithm_map</name>
+        <qualifiedname>Gambit::ColliderBit::FJalgorithm_map</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <defname>algorithm</defname>
+        </param>
+        <briefdescription>
+<para>Storage of different FastJet methods. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/src/Utils.cpp" line="46" column="24" bodyfile="ColliderBit/src/Utils.cpp" bodystart="46" bodyend="59" declfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" declline="66" declcolumn="24"/>
+      </memberdef>
+      <memberdef kind="function" id="Utils_8hpp_1a2516bf16d7225074ec3fbe83f53916a7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FJNS::Strategy</type>
+        <definition>FJNS::Strategy Gambit::ColliderBit::FJstrategy_map</definition>
+        <argsstring>(std::string)</argsstring>
+        <name>FJstrategy_map</name>
+        <qualifiedname>Gambit::ColliderBit::FJstrategy_map</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <defname>strategy</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/src/Utils.cpp" line="61" column="20" bodyfile="ColliderBit/src/Utils.cpp" bodystart="61" bodyend="71" declfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" declline="67" declcolumn="20"/>
+      </memberdef>
+      <memberdef kind="function" id="Utils_8hpp_1a4f891e01d0d5931ac7488320dc6f38fe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FJNS::RecombinationScheme</type>
+        <definition>FJNS::RecombinationScheme Gambit::ColliderBit::FJRecomScheme_map</definition>
+        <argsstring>(std::string)</argsstring>
+        <name>FJRecomScheme_map</name>
+        <qualifiedname>Gambit::ColliderBit::FJRecomScheme_map</qualifiedname>
+        <param>
+          <type>std::string</type>
+          <defname>reco_scheme</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/src/Utils.cpp" line="73" column="31" bodyfile="ColliderBit/src/Utils.cpp" bodystart="73" bodyend="84" declfile="ColliderBit/include/gambit/ColliderBit/Utils.hpp" declline="68" declcolumn="31"/>
       </memberdef>
       <memberdef kind="function" id="Analysis__ATLAS__13TeV__0LEPStop__36invfb_8cpp_1ab6962246026e42a7ef55cad5ac535a61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -6753,23 +6864,6 @@ Calculate missing momentum</para>
         </inbodydescription>
         <location file="ColliderBit/src/analyses/Analysis_ATLAS_13TeV_RJ3L_lowmass_36invfb.cpp" line="50" column="10" bodyfile="ColliderBit/src/analyses/Analysis_ATLAS_13TeV_RJ3L_lowmass_36invfb.cpp" bodystart="50" bodyend="53"/>
       </memberdef>
-      <memberdef kind="function" id="Analysis__ATLAS__13TeV__ZGammaGrav__CONFNOTE__80invfb_8cpp_1a7c337fa29f65840eb62658bdf2ae6ab8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
-        <type></type>
-        <definition>Gambit::ColliderBit::DEFINE_ANALYSIS_FACTORY</definition>
-        <argsstring>(ATLAS_13TeV_ZGammaGrav_CONFNOTE_80invfb)</argsstring>
-        <name>DEFINE_ANALYSIS_FACTORY</name>
-        <qualifiedname>Gambit::ColliderBit::DEFINE_ANALYSIS_FACTORY</qualifiedname>
-        <param>
-          <type>ATLAS_13TeV_ZGammaGrav_CONFNOTE_80invfb</type>
-        </param>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="ColliderBit/src/analyses/Analysis_ATLAS_13TeV_ZGammaGrav_CONFNOTE_80invfb.cpp" line="192" column="5" declfile="ColliderBit/src/analyses/Analysis_ATLAS_13TeV_ZGammaGrav_CONFNOTE_80invfb.cpp" declline="192" declcolumn="5"/>
-      </memberdef>
       <memberdef kind="function" id="Analysis__ATLAS__8TeV__0LEPStop__20invfb_8cpp_1a4c62548771b0fafe5b3b03c2ebfedd52" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
         <definition>bool Gambit::ColliderBit::sortByPT</definition>
@@ -6940,6 +7034,65 @@ Calculate missing momentum</para>
         <inbodydescription>
         </inbodydescription>
         <location file="ColliderBit/src/collider_event_weights.cpp" line="126" column="10" bodyfile="ColliderBit/src/collider_event_weights.cpp" bodystart="126" bodyend="139"/>
+      </memberdef>
+      <memberdef kind="function" id="ColliderBit__Bfactories_8cpp_1a4fa41c1c9b9085073e66c33a0daa319c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::ColliderBit::fill_BaBar_single_photon</definition>
+        <argsstring>()</argsstring>
+        <name>fill_BaBar_single_photon</name>
+        <qualifiedname>Gambit::ColliderBit::fill_BaBar_single_photon</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/src/ColliderBit_Bfactories.cpp" line="74" column="10" bodyfile="ColliderBit/src/ColliderBit_Bfactories.cpp" bodystart="74" bodyend="99"/>
+      </memberdef>
+      <memberdef kind="function" id="ColliderBit__Bfactories_8cpp_1ad22fdb53d8475b0f9b83f7cedc853aee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::ColliderBit::BaBar_single_photon_LogLike</definition>
+        <argsstring>(double kappa, double mAp, double BRinv)</argsstring>
+        <name>BaBar_single_photon_LogLike</name>
+        <qualifiedname>Gambit::ColliderBit::BaBar_single_photon_LogLike</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>kappa</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>mAp</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>BRinv</declname>
+        </param>
+        <briefdescription>
+<para>Perform the actual likelihood evaluation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/src/ColliderBit_Bfactories.cpp" line="102" column="12" bodyfile="ColliderBit/src/ColliderBit_Bfactories.cpp" bodystart="102" bodyend="124"/>
+      </memberdef>
+      <memberdef kind="function" id="ColliderBit__Bfactories_8cpp_1a29e9da28573e63de719d6272a22a06f2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::ColliderBit::BaBar_single_photon_LogLike_SubGeVDM</definition>
+        <argsstring>(double &amp;result)</argsstring>
+        <name>BaBar_single_photon_LogLike_SubGeVDM</name>
+        <qualifiedname>Gambit::ColliderBit::BaBar_single_photon_LogLike_SubGeVDM</qualifiedname>
+        <param>
+          <type>double &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/src/ColliderBit_Bfactories.cpp" line="126" column="10" bodyfile="ColliderBit/src/ColliderBit_Bfactories.cpp" bodystart="126" bodyend="152"/>
       </memberdef>
       <memberdef kind="function" id="ColliderBit__dummy_8cpp_1a890744b1f1f61371a7f03d5bcff3d6ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -7220,32 +7373,32 @@ Calculate missing momentum</para>
 <para>Helper function called by calc_LHC_LogLikes to compute the loglike(s) for a given analysis. </para>
         </detaileddescription>
         <inbodydescription>
-<para><xrefsect id="todo_1_todo000088"><xreftitle>Todo</xreftitle><xrefdescription><para>Unify this for both cov and no-cov, feeding in one-element Eigen blocks as Ref&lt;&gt;s for the latter? </para>
+<para><xrefsect id="todo_1_todo000086"><xreftitle>Todo</xreftitle><xrefdescription><para>Unify this for both cov and no-cov, feeding in one-element Eigen blocks as Ref&lt;&gt;s for the latter? </para>
 </xrefdescription></xrefsect></para>
-<para><xrefsect id="todo_1_todo000089"><xreftitle>Todo</xreftitle><xrefdescription><para>Compute the background-only covariance decomposition and likelihood only once </para>
+<para><xrefsect id="todo_1_todo000087"><xreftitle>Todo</xreftitle><xrefdescription><para>Compute the background-only covariance decomposition and likelihood only once </para>
 </xrefdescription></xrefsect></para>
-<para><xrefsect id="todo_1_todo000090"><xreftitle>Todo</xreftitle><xrefdescription><para>Only compute this once per run </para>
+<para><xrefsect id="todo_1_todo000088"><xreftitle>Todo</xreftitle><xrefdescription><para>Only compute this once per run </para>
 </xrefdescription></xrefsect></para>
-<para><xrefsect id="todo_1_todo000091"><xreftitle>Todo</xreftitle><xrefdescription><para>Use newer (?) one-step Eigen constructors for (const) single-element arrays </para>
-</xrefdescription></xrefsect></para>
-<para><xrefsect id="todo_1_todo000092"><xreftitle>Todo</xreftitle><xrefdescription><para>Only compute this once per run </para>
-</xrefdescription></xrefsect></para>
-<para><xrefsect id="todo_1_todo000093"><xreftitle>Todo</xreftitle><xrefdescription><para>Only compute this once per run </para>
-</xrefdescription></xrefsect></para>
-<para><xrefsect id="todo_1_todo000088"><xreftitle>Todo</xreftitle><xrefdescription><para>Unify this for both cov and no-cov, feeding in one-element Eigen blocks as Ref&lt;&gt;s for the latter? </para>
-</xrefdescription></xrefsect></para>
-<para><xrefsect id="todo_1_todo000089"><xreftitle>Todo</xreftitle><xrefdescription><para>Compute the background-only covariance decomposition and likelihood only once </para>
+<para><xrefsect id="todo_1_todo000089"><xreftitle>Todo</xreftitle><xrefdescription><para>Use newer (?) one-step Eigen constructors for (const) single-element arrays </para>
 </xrefdescription></xrefsect></para>
 <para><xrefsect id="todo_1_todo000090"><xreftitle>Todo</xreftitle><xrefdescription><para>Only compute this once per run </para>
 </xrefdescription></xrefsect></para>
-<para><xrefsect id="todo_1_todo000091"><xreftitle>Todo</xreftitle><xrefdescription><para>Use newer (?) one-step Eigen constructors for (const) single-element arrays </para>
+<para><xrefsect id="todo_1_todo000091"><xreftitle>Todo</xreftitle><xrefdescription><para>Only compute this once per run </para>
 </xrefdescription></xrefsect></para>
-<para><xrefsect id="todo_1_todo000092"><xreftitle>Todo</xreftitle><xrefdescription><para>Only compute this once per run </para>
+<para><xrefsect id="todo_1_todo000086"><xreftitle>Todo</xreftitle><xrefdescription><para>Unify this for both cov and no-cov, feeding in one-element Eigen blocks as Ref&lt;&gt;s for the latter? </para>
 </xrefdescription></xrefsect></para>
-<para><xrefsect id="todo_1_todo000093"><xreftitle>Todo</xreftitle><xrefdescription><para>Only compute this once per run </para>
+<para><xrefsect id="todo_1_todo000087"><xreftitle>Todo</xreftitle><xrefdescription><para>Compute the background-only covariance decomposition and likelihood only once </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="todo_1_todo000088"><xreftitle>Todo</xreftitle><xrefdescription><para>Only compute this once per run </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="todo_1_todo000089"><xreftitle>Todo</xreftitle><xrefdescription><para>Use newer (?) one-step Eigen constructors for (const) single-element arrays </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="todo_1_todo000090"><xreftitle>Todo</xreftitle><xrefdescription><para>Only compute this once per run </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="todo_1_todo000091"><xreftitle>Todo</xreftitle><xrefdescription><para>Only compute this once per run </para>
 </xrefdescription></xrefsect></para>
         </inbodydescription>
-        <location file="ColliderBit/src/LHC_likelihoods.cpp" line="515" column="10" bodyfile="ColliderBit/src/LHC_likelihoods.cpp" bodystart="515" bodyend="849" declfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" declline="206" declcolumn="10"/>
+        <location file="ColliderBit/src/LHC_likelihoods.cpp" line="515" column="10" bodyfile="ColliderBit/src/LHC_likelihoods.cpp" bodystart="515" bodyend="849" declfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" declline="241" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="ColliderBit__InterpolatedYields_8cpp_1a853509d823b41f89af8b013c3a9abdf5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -7261,7 +7414,7 @@ Calculate missing momentum</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="436" column="10" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="436" bodyend="531" declfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" declline="209" declcolumn="10"/>
+        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="562" column="10" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="562" bodyend="657" declfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" declline="244" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="ColliderBit__InterpolatedYields_8cpp_1a731f215720ca0854a7173c65ecfd04c8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -7288,7 +7441,30 @@ Calculate missing momentum</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="1283" column="10" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="1283" bodyend="1355" declfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" declline="210" declcolumn="10"/>
+        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="1409" column="10" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="1409" bodyend="1481" declfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" declline="245" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="ColliderBit__InterpolatedYields_8cpp_1a190a4a9ab4afa8bc98e76f6741546e87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::ColliderBit::SubGeVDM_fill_analysis_info_map</definition>
+        <argsstring>(std::map&lt; str, str &gt; Analysis_data_path, std::map&lt; str, std::vector&lt; str &gt; &gt; Interpolation_columns)</argsstring>
+        <name>SubGeVDM_fill_analysis_info_map</name>
+        <qualifiedname>Gambit::ColliderBit::SubGeVDM_fill_analysis_info_map</qualifiedname>
+        <param>
+          <type>std::map&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>, <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &gt;</type>
+          <defname>Analysis_data_path</defname>
+        </param>
+        <param>
+          <type>std::map&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>, std::vector&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &gt; &gt;</type>
+          <defname>Interpolation_columns</defname>
+        </param>
+        <briefdescription>
+<para>A function for filling the analysis_info_map for the SubGeVDM_fermion and SubGeVDM_scalar models. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="2093" column="10" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="2093" bodyend="2181" declfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" declline="246" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="ColliderBit__InterpolatedYields_8cpp_1ac3973f4ef16dc84eb1ec3873f15c61b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -7307,7 +7483,7 @@ Calculate missing momentum</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="534" column="10" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="534" bodyend="624" declfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" declline="212" declcolumn="10"/>
+        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="660" column="10" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="660" bodyend="750" declfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" declline="248" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="ColliderBit__InterpolatedYields_8cpp_1acfb2fa465de3e5f18ea2cd157765ca03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -7326,7 +7502,7 @@ Calculate missing momentum</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="880" column="10" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="880" bodyend="903" declfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" declline="213" declcolumn="10"/>
+        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="1006" column="10" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="1006" bodyend="1029" declfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" declline="249" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="ColliderBit__InterpolatedYields_8cpp_1ad34ef94007d90c2c983ed20f99120386" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -7345,7 +7521,77 @@ Calculate missing momentum</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="907" column="10" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="907" bodyend="927" declfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" declline="214" declcolumn="10"/>
+        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="1033" column="10" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="1033" bodyend="1053" declfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" declline="250" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="ColliderBit__InterpolatedYields_8cpp_1a9176e94c3df1c2879821fe32d3fb5a59" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::ColliderBit::DMsimpVectorMedScalarDM_monojet_results</definition>
+        <argsstring>(AnalysisDataPointers &amp;)</argsstring>
+        <name>DMsimpVectorMedScalarDM_monojet_results</name>
+        <qualifiedname>Gambit::ColliderBit::DMsimpVectorMedScalarDM_monojet_results</qualifiedname>
+        <param>
+          <type><ref refid="ColliderBit__types_8hpp_1a03c2e9b2a191cef3d43ee07d33ff7034" kindref="member">AnalysisDataPointers</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="251" column="10" declfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" declline="251" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="ColliderBit__InterpolatedYields_8cpp_1a7219667ce5198896feb3e0e7030c5d1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::ColliderBit::DMsimpVectorMedMajoranaDM_monojet_results</definition>
+        <argsstring>(AnalysisDataPointers &amp;)</argsstring>
+        <name>DMsimpVectorMedMajoranaDM_monojet_results</name>
+        <qualifiedname>Gambit::ColliderBit::DMsimpVectorMedMajoranaDM_monojet_results</qualifiedname>
+        <param>
+          <type><ref refid="ColliderBit__types_8hpp_1a03c2e9b2a191cef3d43ee07d33ff7034" kindref="member">AnalysisDataPointers</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="252" column="10" declfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" declline="252" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="ColliderBit__InterpolatedYields_8cpp_1ae76cd2111910a42cdd68412365fde526" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::ColliderBit::DMsimpVectorMedDiracDM_monojet_results</definition>
+        <argsstring>(AnalysisDataPointers &amp;)</argsstring>
+        <name>DMsimpVectorMedDiracDM_monojet_results</name>
+        <qualifiedname>Gambit::ColliderBit::DMsimpVectorMedDiracDM_monojet_results</qualifiedname>
+        <param>
+          <type><ref refid="ColliderBit__types_8hpp_1a03c2e9b2a191cef3d43ee07d33ff7034" kindref="member">AnalysisDataPointers</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="253" column="10" declfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" declline="253" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="ColliderBit__InterpolatedYields_8cpp_1aec8c82c8a11ea215f1fb2a0c4e3e8768" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::ColliderBit::SubGeVDM_results</definition>
+        <argsstring>(AnalysisDataPointers &amp;result)</argsstring>
+        <name>SubGeVDM_results</name>
+        <qualifiedname>Gambit::ColliderBit::SubGeVDM_results</qualifiedname>
+        <param>
+          <type><ref refid="ColliderBit__types_8hpp_1a03c2e9b2a191cef3d43ee07d33ff7034" kindref="member">AnalysisDataPointers</ref> &amp;</type>
+          <defname>result</defname>
+        </param>
+        <briefdescription>
+<para>Results for the SubGeVDM_fermion and SubGeVDM_scalar model. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="2184" column="10" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="2184" bodyend="2255" declfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" declline="254" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="ColliderBit__InterpolatedYields_8cpp_1ab27867f53b2f1eae0d736235280e1764" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -7389,7 +7635,7 @@ Calculate missing momentum</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="683" column="10" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="683" bodyend="794" declfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" declline="216" declcolumn="10"/>
+        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="809" column="10" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="809" bodyend="920" declfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" declline="256" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="ColliderBit__InterpolatedYields_8cpp_1a7852dbef2467aa507f3ab2b6525c59c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -7429,7 +7675,7 @@ Calculate missing momentum</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="798" column="10" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="798" bodyend="876" declfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" declline="217" declcolumn="10"/>
+        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="924" column="10" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="924" bodyend="1002" declfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" declline="257" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="ColliderBit__InterpolatedYields_8cpp_1a4a4a3e13cf408a3fca5edeb19f54c888" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -7468,7 +7714,7 @@ Calculate missing momentum</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="1635" column="10" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="1635" bodyend="1671" declfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" declline="218" declcolumn="10"/>
+        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="1761" column="10" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="1761" bodyend="1797" declfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" declline="258" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="ColliderBit__InterpolatedYields_8cpp_1a1616c03346d8d8e117510f1cecc7bf2b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -7507,7 +7753,7 @@ Calculate missing momentum</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="1712" column="10" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="1712" bodyend="1747" declfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" declline="219" declcolumn="10"/>
+        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="1838" column="10" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="1838" bodyend="1873" declfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" declline="259" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="ColliderBit__InterpolatedYields_8cpp_1a6bd2bdadbcefc8a8ecf9729ef5d8555a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -7550,7 +7796,84 @@ Calculate missing momentum</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="1674" column="10" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="1674" bodyend="1709" declfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" declline="220" declcolumn="10"/>
+        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="1800" column="10" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="1800" bodyend="1835" declfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" declline="260" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="ColliderBit__InterpolatedYields_8cpp_1aae56398bf53a6332b08f3d60611bddbb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::ColliderBit::get_SubGeVDM_scalar_signal_yields</definition>
+        <argsstring>(std::vector&lt; double &gt; &amp;, const Model_analysis_info &amp;, double, double, double, double)</argsstring>
+        <name>get_SubGeVDM_scalar_signal_yields</name>
+        <qualifiedname>Gambit::ColliderBit::get_SubGeVDM_scalar_signal_yields</qualifiedname>
+        <param>
+          <type>std::vector&lt; double &gt; &amp;</type>
+          <defname>signal_yields</defname>
+        </param>
+        <param>
+          <type>const <ref refid="classGambit_1_1ColliderBit_1_1Model__analysis__info" kindref="compound">Model_analysis_info</ref> &amp;</type>
+          <defname>analysis_info</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <defname>mDM</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <defname>mAp</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <defname>kappa</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <defname>gDM</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Fill the input vector with the signal prediction for the SubGeVBeamDump_MB model TODO: If you apply some scaling based on couplings, then this is where you would want to do this </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="2300" column="10" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="2300" bodyend="2371" declfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" declline="261" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="ColliderBit__InterpolatedYields_8cpp_1af8dfa29b3f51737ad9d646788290dc26" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::ColliderBit::get_SubGeVDM_fermion_signal_yields</definition>
+        <argsstring>(std::vector&lt; double &gt; &amp;, const Model_analysis_info &amp;, double, double, double, double)</argsstring>
+        <name>get_SubGeVDM_fermion_signal_yields</name>
+        <qualifiedname>Gambit::ColliderBit::get_SubGeVDM_fermion_signal_yields</qualifiedname>
+        <param>
+          <type>std::vector&lt; double &gt; &amp;</type>
+          <defname>signal_yields</defname>
+        </param>
+        <param>
+          <type>const <ref refid="classGambit_1_1ColliderBit_1_1Model__analysis__info" kindref="compound">Model_analysis_info</ref> &amp;</type>
+          <defname>analysis_info</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <defname>mDM</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <defname>mAp</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <defname>kappa</defname>
+        </param>
+        <param>
+          <type>double</type>
+          <defname>gDM</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="2373" column="10" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="2373" bodyend="2445" declfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" declline="262" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="ColliderBit__InterpolatedYields_8cpp_1a914eb9e928268a793525c2cdc68812df" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -7589,7 +7912,7 @@ Calculate missing momentum</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="1750" column="10" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="1750" bodyend="1785" declfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" declline="221" declcolumn="10"/>
+        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="1876" column="10" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="1876" bodyend="1911" declfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" declline="269" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="ColliderBit__InterpolatedYields_8cpp_1a13eb5a2b3214b88a8e592b52e0fb6647" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -7616,7 +7939,7 @@ Calculate missing momentum</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="628" column="10" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="628" bodyend="679" declfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" declline="223" declcolumn="10"/>
+        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="754" column="10" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="754" bodyend="805" declfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" declline="271" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="ColliderBit__InterpolatedYields_8cpp_1a31fedc6bfc792839bc2b8ad537964506" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -7647,7 +7970,38 @@ Calculate missing momentum</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="1585" column="10" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="1585" bodyend="1631" declfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" declline="224" declcolumn="10"/>
+        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="1711" column="10" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="1711" bodyend="1757" declfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" declline="272" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="ColliderBit__InterpolatedYields_8cpp_1aa68783c5e165340f7b2fb173a11da2d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::ColliderBit::get_all_SubGeVDM_signal_yields</definition>
+        <argsstring>(std::vector&lt; double &gt; &amp;sr_nums, const Model_analysis_info &amp;analysis_info, const Spectrum &amp;spec, str &amp;modelname)</argsstring>
+        <name>get_all_SubGeVDM_signal_yields</name>
+        <qualifiedname>Gambit::ColliderBit::get_all_SubGeVDM_signal_yields</qualifiedname>
+        <param>
+          <type>std::vector&lt; double &gt; &amp;</type>
+          <defname>sr_nums</defname>
+        </param>
+        <param>
+          <type>const <ref refid="classGambit_1_1ColliderBit_1_1Model__analysis__info" kindref="compound">Model_analysis_info</ref> &amp;</type>
+          <defname>analysis_info</defname>
+        </param>
+        <param>
+          <type>const <ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref> &amp;</type>
+          <defname>spec</defname>
+        </param>
+        <param>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &amp;</type>
+          <defname>modelname</defname>
+        </param>
+        <briefdescription>
+<para>Fill the input vector with the total SubGeV signal prediction for each SR in the given analysis. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="2258" column="10" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="2258" bodyend="2296" declfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" declline="273" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="ColliderBit__InterpolatedYields_8cpp_1a88c08c0921b8a5f711a41b82ac7d2a98" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -7674,7 +8028,7 @@ Calculate missing momentum</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="933" column="10" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="933" bodyend="962" declfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" declline="226" declcolumn="10"/>
+        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="1059" column="10" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="1059" bodyend="1088" declfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" declline="276" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="ColliderBit__InterpolatedYields_8cpp_1a8ecd6e8e0f57cfccadc7368d383dca43" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -7697,7 +8051,7 @@ Calculate missing momentum</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="967" column="10" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="967" bodyend="991" declfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" declline="227" declcolumn="10"/>
+        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="1093" column="10" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="1093" bodyend="1117" declfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" declline="277" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="ColliderBit__InterpolatedYields_8cpp_1a2e4a667539a208c93c3eac8dc4e53d17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -7728,7 +8082,7 @@ Calculate missing momentum</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="995" column="10" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="995" bodyend="1036" declfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" declline="229" declcolumn="10"/>
+        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="1121" column="10" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="1121" bodyend="1162" declfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" declline="279" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="ColliderBit__InterpolatedYields_8cpp_1aeab93ba70b53d1ca4ede58fc669e7666" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -7746,7 +8100,7 @@ Calculate missing momentum</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="1042" column="10" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="1042" bodyend="1235" declfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" declline="231" declcolumn="10"/>
+        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="1168" column="10" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="1168" bodyend="1361" declfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" declline="281" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="ColliderBit__InterpolatedYields_8cpp_1a8f54236771955821c2aefcb85cd36b8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -7765,7 +8119,7 @@ Calculate missing momentum</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="1240" column="10" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="1240" bodyend="1244" declfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" declline="233" declcolumn="10"/>
+        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="1366" column="10" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="1366" bodyend="1370" declfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" declline="283" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="ColliderBit__InterpolatedYields_8cpp_1afdea00c74a46d7c9769cdd8eda94a614" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -7787,8 +8141,9 @@ Calculate missing momentum</para>
 <para>A function to fill the analysis_info_map given an analysis This is where all the analysis-specific numbers and file names go. </para>
         </detaileddescription>
         <inbodydescription>
+<para>NEW BEAM DUMP content added by Taylor</para>
         </inbodydescription>
-        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="239" column="10" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="239" bodyend="433"/>
+        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="290" column="10" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="290" bodyend="559"/>
       </memberdef>
       <memberdef kind="function" id="ColliderBit__InterpolatedYields_8cpp_1a8901fe658f5fe73c150a7544debd24d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -7823,7 +8178,7 @@ Calculate missing momentum</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="1358" column="10" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="1358" bodyend="1416"/>
+        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="1484" column="10" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="1484" bodyend="1542"/>
       </memberdef>
       <memberdef kind="function" id="ColliderBit__InterpolatedYields_8cpp_1a0614838f71b5db43543878b8fa8e7572" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -7842,7 +8197,7 @@ Calculate missing momentum</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="1419" column="10" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="1419" bodyend="1581"/>
+        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="1545" column="10" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="1545" bodyend="1707"/>
       </memberdef>
       <memberdef kind="function" id="ColliderBit__InterpolatedYields_8cpp_1ae8a7527c74d141bd787b802ad88a8300" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -7857,7 +8212,7 @@ Calculate missing momentum</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="1801" column="10" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="1801" bodyend="1830"/>
+        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="1927" column="10" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="1927" bodyend="1956"/>
       </memberdef>
       <memberdef kind="function" id="ColliderBit__InterpolatedYields_8cpp_1a40a40aabea11d13cd52e05b9828536a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -7888,7 +8243,7 @@ Calculate missing momentum</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="1833" column="12" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="1833" bodyend="1850"/>
+        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="1959" column="12" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="1959" bodyend="1976"/>
       </memberdef>
       <memberdef kind="function" id="ColliderBit__InterpolatedYields_8cpp_1a2ff9c85923b0ad67445a336630987d8b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -7915,7 +8270,7 @@ Calculate missing momentum</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="1853" column="12" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="1853" bodyend="1872"/>
+        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="1979" column="12" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="1979" bodyend="1998"/>
       </memberdef>
       <memberdef kind="function" id="ColliderBit__InterpolatedYields_8cpp_1a73b874a035694e5905bdc825cdd78dcd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -7934,7 +8289,7 @@ Calculate missing momentum</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="1877" column="10" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="1877" bodyend="1957"/>
+        <location file="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" line="2003" column="10" bodyfile="ColliderBit/src/ColliderBit_InterpolatedYields.cpp" bodystart="2003" bodyend="2088"/>
       </memberdef>
       <memberdef kind="function" id="ColliderBit__LEP_8cpp_1a4c979b0bfffe0258094b147cd85c7548" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structGambit_1_1ColliderBit_1_1LSP" kindref="compound">LSP</ref></type>
@@ -8270,6 +8625,33 @@ Calculate missing momentum</para>
         </inbodydescription>
         <location file="ColliderBit/src/getHepMCEvent.cpp" line="181" column="10" bodyfile="ColliderBit/src/getHepMCEvent.cpp" bodystart="181" bodyend="191"/>
       </memberdef>
+      <memberdef kind="function" id="getHepMCEvent_8cpp_1a0e22bc0e2cbc14bf0c0c2d9891e19f7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::ColliderBit::read_jet_collections_settings</definition>
+        <argsstring>(const Options &amp;runOptions, std::vector&lt; jet_collection_settings &gt; &amp;all_jet_collection_settings, str &amp;jetcollection_taus)</argsstring>
+        <name>read_jet_collections_settings</name>
+        <qualifiedname>Gambit::ColliderBit::read_jet_collections_settings</qualifiedname>
+        <param>
+          <type>const <ref refid="classGambit_1_1Options" kindref="compound">Options</ref> &amp;</type>
+          <declname>runOptions</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="structGambit_1_1ColliderBit_1_1jet__collection__settings" kindref="compound">jet_collection_settings</ref> &gt; &amp;</type>
+          <declname>all_jet_collection_settings</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &amp;</type>
+          <declname>jetcollection_taus</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>A helper function for collecting the jet_collections yaml settings. Used by functions getHepMCEvent_HEPUtils and convertHepMCEvent_HEPUtils. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/src/getHepMCEvent.cpp" line="196" column="10" bodyfile="ColliderBit/src/getHepMCEvent.cpp" bodystart="196" bodyend="228"/>
+      </memberdef>
       <memberdef kind="function" id="getHepMCEvent_8cpp_1a95b05317617fc07a0a574061b6873b1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void Gambit::ColliderBit::getHepMCEvent_HEPUtils</definition>
@@ -8287,7 +8669,7 @@ Calculate missing momentum</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/src/getHepMCEvent.cpp" line="194" column="10" bodyfile="ColliderBit/src/getHepMCEvent.cpp" bodystart="194" bodyend="217"/>
+        <location file="ColliderBit/src/getHepMCEvent.cpp" line="232" column="10" bodyfile="ColliderBit/src/getHepMCEvent.cpp" bodystart="232" bodyend="257"/>
       </memberdef>
       <memberdef kind="function" id="getHepMCEvent_8cpp_1ac144f06eb2fc2fc09e80a99383ea3714" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -8305,7 +8687,7 @@ Calculate missing momentum</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/src/getHepMCEvent.cpp" line="219" column="10" bodyfile="ColliderBit/src/getHepMCEvent.cpp" bodystart="219" bodyend="238"/>
+        <location file="ColliderBit/src/getHepMCEvent.cpp" line="259" column="10" bodyfile="ColliderBit/src/getHepMCEvent.cpp" bodystart="259" bodyend="280"/>
       </memberdef>
       <memberdef kind="function" id="getLHEvent_8cpp_1a1b69613367dadeccc5d299e508bc3998" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -8324,7 +8706,7 @@ Calculate missing momentum</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/src/getLHEvent.cpp" line="41" column="10" bodyfile="ColliderBit/src/getLHEvent.cpp" bodystart="41" bodyend="75"/>
+        <location file="ColliderBit/src/getLHEvent.cpp" line="41" column="10" bodyfile="ColliderBit/src/getLHEvent.cpp" bodystart="41" bodyend="123"/>
       </memberdef>
       <memberdef kind="function" id="getxsec_8cpp_1a69ce6278c8c967a8570e2fbec84f09c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::pair&lt; double, double &gt;</type>
@@ -8824,7 +9206,7 @@ Calculate missing momentum</para>
         <detaileddescription>
 <para>Return the best log likelihood <simplesect kind="note"><para>Return value is missing the log(n_obs!) terms (n_SR of them) which cancel in LLR calculation </para>
 </simplesect>
-<xrefsect id="todo_1_todo000086"><xreftitle>Todo</xreftitle><xrefdescription><para>Pass in the cov, and compute the fixed evals, evecs, and corr matrix as fixed params in here? Via a helper function to reduce duplication </para>
+<xrefsect id="todo_1_todo000084"><xreftitle>Todo</xreftitle><xrefdescription><para>Pass in the cov, and compute the fixed evals, evecs, and corr matrix as fixed params in here? Via a helper function to reduce duplication </para>
 </xrefdescription></xrefsect></para>
         </detaileddescription>
         <inbodydescription>
@@ -8884,7 +9266,7 @@ Calculate missing momentum</para>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-<para><xrefsect id="todo_1_todo000087"><xreftitle>Todo</xreftitle><xrefdescription><para>Should also implement a check of relative difference </para>
+<para><xrefsect id="todo_1_todo000085"><xreftitle>Todo</xreftitle><xrefdescription><para>Should also implement a check of relative difference </para>
 </xrefdescription></xrefsect></para>
 <para><simplesect kind="note"><para>How to correct negative rates? Discard (scales badly), set to epsilon (= discontinuous &amp; unphysical pdf), transform to log-space (distorts the pdf quite badly), or something else (skew term)? We&apos;re using the &quot;set to epsilon&quot; version for now. Ben: I would vote for &apos;discard&apos;. It can&apos;t be that inefficient, surely? Andy: For a lot of signal regions, the probability of none having a negative sample is Prod_SR p(non-negative)_SR... which <emphasis>can</emphasis> get bad.</para>
 </simplesect>
@@ -8995,7 +9377,7 @@ Calculate missing momentum</para>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-<para><xrefsect id="todo_1_todo000094"><xreftitle>Todo</xreftitle><xrefdescription><para>Needs more sophistication once we add analyses that don&apos;t use event generation. </para>
+<para><xrefsect id="todo_1_todo000092"><xreftitle>Todo</xreftitle><xrefdescription><para>Needs more sophistication once we add analyses that don&apos;t use event generation. </para>
 </xrefdescription></xrefsect></para>
         </inbodydescription>
         <location file="ColliderBit/src/LHC_likelihoods.cpp" line="1043" column="10" bodyfile="ColliderBit/src/LHC_likelihoods.cpp" bodystart="1043" bodyend="1066"/>
@@ -9016,7 +9398,7 @@ Calculate missing momentum</para>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-<para><xrefsect id="todo_1_todo000095"><xreftitle>Todo</xreftitle><xrefdescription><para>Needs more sophistication once we add analyses that don&apos;t use event generation. </para>
+<para><xrefsect id="todo_1_todo000093"><xreftitle>Todo</xreftitle><xrefdescription><para>Needs more sophistication once we add analyses that don&apos;t use event generation. </para>
 </xrefdescription></xrefsect></para>
         </inbodydescription>
         <location file="ColliderBit/src/LHC_likelihoods.cpp" line="1069" column="10" bodyfile="ColliderBit/src/LHC_likelihoods.cpp" bodystart="1069" bodyend="1087"/>
@@ -9091,7 +9473,7 @@ Calculate missing momentum</para>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
-<para>Extract the indices for the SRs used in the analysis loglikes <xrefsect id="todo_1_todo000096"><xreftitle>Todo</xreftitle><xrefdescription><para>Switch result type to map_str_int once we have implemented a printer for this type </para>
+<para>Extract the indices for the SRs used in the analysis loglikes <xrefsect id="todo_1_todo000094"><xreftitle>Todo</xreftitle><xrefdescription><para>Switch result type to map_str_int once we have implemented a printer for this type </para>
 </xrefdescription></xrefsect></para>
         </detaileddescription>
         <inbodydescription>
@@ -9136,6 +9518,41 @@ Calculate missing momentum</para>
         </inbodydescription>
         <location file="ColliderBit/src/LHC_likelihoods.cpp" line="1340" column="10" bodyfile="ColliderBit/src/LHC_likelihoods.cpp" bodystart="1340" bodyend="1362"/>
       </memberdef>
+      <memberdef kind="function" id="lhef2heputils_8cpp_1ad469e09a9dbb6a575579e255b9fb345b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::ColliderBit::get_HEPUtils_event</definition>
+        <argsstring>(const LHEF::Reader &amp;lhe, Event &amp;evt, double jet_pt_min, std::vector&lt; jet_collection_settings &gt; all_jet_collection_settings)</argsstring>
+        <name>get_HEPUtils_event</name>
+        <qualifiedname>Gambit::ColliderBit::get_HEPUtils_event</qualifiedname>
+        <param>
+          <type>const LHEF::Reader &amp;</type>
+          <declname>lhe</declname>
+        </param>
+        <param>
+          <type>Event &amp;</type>
+          <declname>evt</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>jet_pt_min</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; <ref refid="structGambit_1_1ColliderBit_1_1jet__collection__settings" kindref="compound">jet_collection_settings</ref> &gt;</type>
+          <declname>all_jet_collection_settings</declname>
+        </param>
+        <briefdescription>
+<para>Extract an LHE event as a HEPUtils::Event. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para><xrefsect id="todo_1_todo000095"><xreftitle>Todo</xreftitle><xrefdescription><para>Dress leptons? </para>
+</xrefdescription></xrefsect></para>
+<para><xrefsect id="todo_1_todo000096"><xreftitle>Todo</xreftitle><xrefdescription><para>Bug in HEPUtils::get_jets means that constituent info is lost for now... </para>
+</xrefdescription></xrefsect></para>
+        </inbodydescription>
+        <location file="ColliderBit/src/lhef2heputils.cpp" line="54" column="10" bodyfile="ColliderBit/src/lhef2heputils.cpp" bodystart="54" bodyend="138"/>
+      </memberdef>
       <memberdef kind="function" id="SUSY__extras_8cpp_1a8654da78a22a57c4d358d28fd60b76c1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void Gambit::ColliderBit::getNextSLHAFileNameAndContent</definition>
@@ -9169,7 +9586,7 @@ Calculate missing momentum</para>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-<para><xrefsect id="todo_1_todo000099"><xreftitle>Todo</xreftitle><xrefdescription><para>Add option to save the new SLHA content to file </para>
+<para><xrefsect id="todo_1_todo000097"><xreftitle>Todo</xreftitle><xrefdescription><para>Add option to save the new SLHA content to file </para>
 </xrefdescription></xrefsect></para>
         </inbodydescription>
         <location file="ColliderBit/src/models/SUSY_extras.cpp" line="62" column="10" bodyfile="ColliderBit/src/models/SUSY_extras.cpp" bodystart="62" bodyend="123"/>

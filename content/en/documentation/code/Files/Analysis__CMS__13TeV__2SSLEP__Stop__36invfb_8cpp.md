@@ -323,10 +323,10 @@ namespace Gambit {
                     muons.push_back(muon);
             }
 
-            double HT = 0.;
             // Jets
+            double HT = 0.;
             vector<const HEPUtils::Jet*> candJets;
-            for (const HEPUtils::Jet* jet : event->jets()) {
+            for (const HEPUtils::Jet* jet : event->jets("antikt_R04")) {
                 if (jet->pT() > 25. && fabs(jet->eta()) < 2.4){
                     HT += jet->pT();
                     candJets.push_back(jet);
@@ -875,4 +875,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:07 +0000
+Updated on 2024-07-18 at 13:53:35 +0000

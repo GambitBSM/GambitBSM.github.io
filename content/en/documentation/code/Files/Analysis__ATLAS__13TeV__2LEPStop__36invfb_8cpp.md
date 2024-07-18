@@ -205,7 +205,7 @@ namespace Gambit {
             // Jets
             vector<const HEPUtils::Jet*> blJets;          // Used for SR-2body and SR-3body
             vector<const HEPUtils::Jet*> baselineJets;    // Used for SR-4body
-            for (const HEPUtils::Jet* jet : event->jets()) {
+            for (const HEPUtils::Jet* jet : event->jets("antikt_R04")) {
                 if (jet->pT() > 20. && fabs(jet->eta()) < 2.8) blJets.push_back(jet);
                 if (jet->pT() > 20. && fabs(jet->eta()) < 2.8) baselineJets.push_back(jet);
             }
@@ -679,4 +679,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:07 +0000
+Updated on 2024-07-18 at 13:53:34 +0000

@@ -137,7 +137,7 @@ namespace Gambit
   {
     public:
       /// Constructor
-      BBN_container() : abund_map{{"H2",3}, {"D",3}, {"H3",4}, {"He3",5}, {"He4",6}, {"Yp",6}, {"Li6",7}, {"Li7",8}, {"Be7",9}, {"Li8",10}}
+      BBN_container() : abund_map{{"Neff",0}, {"H2",3}, {"D",3}, {"H3",4}, {"He3",5}, {"He4",6}, {"Yp",6}, {"Li6",7}, {"Li7",8}, {"Be7",9}, {"Li8",10}}
       {}
 
       /// Initialize sizes of vectors (get NNUC, number of computed element abundances, from AlterBBN)
@@ -317,4 +317,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:08 +0000
+Updated on 2024-07-18 at 13:53:35 +0000

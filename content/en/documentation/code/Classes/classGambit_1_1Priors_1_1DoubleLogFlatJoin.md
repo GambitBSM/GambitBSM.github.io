@@ -21,9 +21,9 @@ Inherits from [Gambit::Priors::BasePrior](/documentation/code/classes/classgambi
 |                | Name           |
 | -------------- | -------------- |
 | | **[DoubleLogFlatJoin](/documentation/code/classes/classgambit_1_1priors_1_1doublelogflatjoin/#function-doublelogflatjoin)**(const std::vector< std::string > & param, const [Options](/documentation/code/classes/classgambit_1_1options/) & options)<br>Constructor defined in [doublelogflatjoin.cpp]().  |
-| virtual void | **[transform](/documentation/code/classes/classgambit_1_1priors_1_1doublelogflatjoin/#function-transform)**(const std::vector< double > & unitpars, std::unordered_map< std::string, double > & output) const override<br>Transformation from unit interval to the double log + flat join (inverse prior transform)  |
-| virtual std::vector< double > | **[inverse_transform](/documentation/code/classes/classgambit_1_1priors_1_1doublelogflatjoin/#function-inverse-transform)**(const std::unordered_map< std::string, double > & ) const override<br>Transform from parameter back to unit hypercube.  |
-| virtual double | **[operator()](/documentation/code/classes/classgambit_1_1priors_1_1doublelogflatjoin/#function-operator)**(const std::vector< double > & vec) const override<br>Probability density function.  |
+| virtual void | **[transform](/documentation/code/classes/classgambit_1_1priors_1_1doublelogflatjoin/#function-transform)**(hyper_cube_ref< double > unitpars, std::unordered_map< std::string, double > & output) const override<br>Transformation from unit interval to the double log + flat join (inverse prior transform)  |
+| virtual void | **[inverse_transform](/documentation/code/classes/classgambit_1_1priors_1_1doublelogflatjoin/#function-inverse-transform)**(const std::unordered_map< std::string, double > & physical, hyper_cube_ref< double > unit) const override<br>Transform from physical parameter to unit hypercube.  |
+| virtual double | **[log_prior_density](/documentation/code/classes/classgambit_1_1priors_1_1doublelogflatjoin/#function-log-prior-density)**(const std::unordered_map< std::string, double > & physical) const override<br>Probability density function.  |
 
 ## Additional inherited members
 
@@ -78,7 +78,7 @@ Constructor.
 
 ```
 virtual void transform(
-    const std::vector< double > & unitpars,
+    hyper_cube_ref< double > unitpars,
     std::unordered_map< std::string, double > & output
 ) const override
 ```
@@ -94,29 +94,30 @@ Transformation from unit interval to the double log + flat join.
 ### function inverse_transform
 
 ```
-virtual std::vector< double > inverse_transform(
-    const std::unordered_map< std::string, double > & 
+virtual void inverse_transform(
+    const std::unordered_map< std::string, double > & physical,
+    hyper_cube_ref< double > unit
 ) const override
 ```
 
-Transform from parameter back to unit hypercube. 
+Transform from physical parameter to unit hypercube. 
 
 **Reimplements**: [Gambit::Priors::BasePrior::inverse_transform](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/#function-inverse-transform)
 
 
-### function operator()
+### function log_prior_density
 
 ```
-virtual double operator()(
-    const std::vector< double > & vec
+virtual double log_prior_density(
+    const std::unordered_map< std::string, double > & physical
 ) const override
 ```
 
 Probability density function. 
 
-**Reimplements**: [Gambit::Priors::BasePrior::operator()](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/#function-operator)
+**Reimplements**: [Gambit::Priors::BasePrior::log_prior_density](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/#function-log-prior-density)
 
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:04 +0000
+Updated on 2024-07-18 at 13:53:32 +0000

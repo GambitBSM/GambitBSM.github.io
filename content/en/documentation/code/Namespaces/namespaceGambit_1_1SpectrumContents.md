@@ -27,6 +27,7 @@ description: "[No description available]"
 | struct | **[Gambit::SpectrumContents::SM](/documentation/code/classes/structgambit_1_1spectrumcontents_1_1sm/)**  |
 | struct | **[Gambit::SpectrumContents::SM_slha](/documentation/code/classes/structgambit_1_1spectrumcontents_1_1sm__slha/)**  |
 | struct | **[Gambit::SpectrumContents::SMHiggs](/documentation/code/classes/structgambit_1_1spectrumcontents_1_1smhiggs/)**  |
+| struct | **[Gambit::SpectrumContents::SubGeVDM](/documentation/code/classes/structgambit_1_1spectrumcontents_1_1subgevdm/)**  |
 | struct | **[Gambit::SpectrumContents::VectorSingletDM_Z2](/documentation/code/classes/structgambit_1_1spectrumcontents_1_1vectorsingletdm__z2/)**  |
 
 
@@ -36,4 +37,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:05 +0000
+Updated on 2024-07-18 at 13:53:32 +0000

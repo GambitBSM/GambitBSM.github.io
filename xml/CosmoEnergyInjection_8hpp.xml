@@ -5,6 +5,7 @@
     <includedby refid="Axions_8hpp" local="yes">Axions.hpp</includedby>
     <includedby refid="CosmoEnergyInjection_8cpp" local="yes">CosmoEnergyInjection.cpp</includedby>
     <includedby refid="DMEFT_8hpp" local="yes">DMEFT.hpp</includedby>
+    <includedby refid="SubGeVDM_8hpp" local="yes">SubGeVDM.hpp</includedby>
     <invincdepgraph>
       <node id="2">
         <label>Axions.hpp</label>
@@ -19,10 +20,16 @@
         </childnode>
         <childnode refid="4" relation="include">
         </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
       </node>
       <node id="4">
         <label>DMEFT.hpp</label>
         <link refid="DMEFT_8hpp"/>
+      </node>
+      <node id="5">
+        <label>SubGeVDM.hpp</label>
+        <link refid="SubGeVDM_8hpp"/>
       </node>
       <node id="3">
         <label>Axions.cpp</label>

@@ -79,7 +79,7 @@ namespace Gambit
         // get the jets and leptons filtered by their pt and eta requirements
         electrons = AnalysisUtil::filterPtEta(electrons, 10, 2.47);
         muons = AnalysisUtil::filterPtEta(muons, 10, 2.4);
-        std::vector<const Jet*> jets = AnalysisUtil::filterPtEta(event->jets(), 20, 4.5);
+        std::vector<const Jet*> jets = AnalysisUtil::filterPtEta(event->jets("antikt_R04"), 20, 4.5);
 
         // check if any of the triggers were triggered
         bool eeTrigger = AnalysisUtil::isMultipleParticleTriggered(electrons, {17, 17});
@@ -215,4 +215,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:07 +0000
+Updated on 2024-07-18 at 13:53:34 +0000

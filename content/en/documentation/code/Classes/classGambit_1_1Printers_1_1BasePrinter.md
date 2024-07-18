@@ -28,6 +28,8 @@ Inherited by [Gambit::Printers::HDF5Printer](/documentation/code/classes/classga
 | virtual void | **[flush](/documentation/code/classes/classgambit_1_1printers_1_1baseprinter/#function-flush)**() =0 |
 | virtual [Options](/documentation/code/classes/classgambit_1_1options/) | **[resume_reader_options](/documentation/code/classes/classgambit_1_1printers_1_1baseprinter/#function-resume-reader-options)**() =0 |
 | void | **[set_as_aux](/documentation/code/classes/classgambit_1_1printers_1_1baseprinter/#function-set-as-aux)**()<br>Set this as an auxilliary printer.  |
+| void | **[set_output_metadata](/documentation/code/classes/classgambit_1_1printers_1_1baseprinter/#function-set-output-metadata)**(bool use_metadata)<br>Set/Get whether to print the metadata.  |
+| bool | **[get_output_metadata](/documentation/code/classes/classgambit_1_1printers_1_1baseprinter/#function-get-output-metadata)**() |
 | virtual void | **[auxilliary_init](/documentation/code/classes/classgambit_1_1printers_1_1baseprinter/#function-auxilliary-init)**() |
 | [BasePrinter](/documentation/code/classes/classgambit_1_1printers_1_1baseprinter/) * | **[get_primary_printer](/documentation/code/classes/classgambit_1_1printers_1_1baseprinter/#function-get-primary-printer)**() |
 | bool | **[is_auxilliary_printer](/documentation/code/classes/classgambit_1_1printers_1_1baseprinter/#function-is-auxilliary-printer)**() |
@@ -155,6 +157,23 @@ inline void set_as_aux()
 
 Set this as an auxilliary printer. 
 
+### function set_output_metadata
+
+```
+inline void set_output_metadata(
+    bool use_metadata
+)
+```
+
+Set/Get whether to print the metadata. 
+
+### function get_output_metadata
+
+```
+inline bool get_output_metadata()
+```
+
+
 ### function auxilliary_init
 
 ```
@@ -241,4 +260,4 @@ Same for overloaded function.
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:04 +0000
+Updated on 2024-07-18 at 13:53:32 +0000

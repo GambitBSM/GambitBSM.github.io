@@ -56,6 +56,8 @@ weight: 20
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1backends_1_1instance__helper/>instance_helper<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1backends_1_1instance__helper_3_01void_01_4/>instance_helper< void ><a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1backends_1_1mathematica__function/>mathematica_function<a></b><br>Holds the info about a Mathematica backend function, and defines conversion functions. <br>
+<details><summary><b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1backends_1_1obscura__1__1__0/>obscura_1_1_0<a></b></summary>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1backends_1_1obscura__1__1__0_1_1obscura/>obscura<a></b><br></details>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1backends_1_1python__function/>python_function<a></b><br>Holds the info about a python backend function, and defines conversion functions. <br>
 <details><summary><b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1backends_1_1vevacious__1__0/>vevacious_1_0<a></b></summary>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1backends_1_1vevacious__1__0_1_1vevaciousplusplus/>VevaciousPlusPlus<a></b><br></details>
@@ -101,8 +103,7 @@ weight: 20
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2oslep__chargino__inclusive__139invfb/>Analysis_ATLAS_13TeV_2OSLEP_chargino_inclusive_139invfb<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2oslep__chargino__inclusive__80invfb/>Analysis_ATLAS_13TeV_2OSLEP_chargino_inclusive_80invfb<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2bmet__36invfb/>Analysis_ATLAS_13TeV_2bMET_36invfb<a></b><br>
-<details><summary><b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__3lep__139invfb/>Analysis_ATLAS_13TeV_3LEP_139invfb<a></b></summary>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__3lep__139invfb_1_1ptcomparison/>ptComparison<a></b><br></details>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__3lep__139invfb/>Analysis_ATLAS_13TeV_3LEP_139invfb<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__3b__24invfb/>Analysis_ATLAS_13TeV_3b_24invfb<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__3b__36invfb/>Analysis_ATLAS_13TeV_3b_36invfb<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__3b__discoverysr__24invfb/>Analysis_ATLAS_13TeV_3b_discoverySR_24invfb<a></b><br>
@@ -207,6 +208,7 @@ weight: 20
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__8tev__multilep__4lep__20invfb/>Analysis_CMS_8TeV_MultiLEP_4Lep_20invfb<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__covariance/>Analysis_Covariance<a></b><br>Dummy analysis code with a hard-coded return including a SR covariance matrix. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__minimum/>Analysis_Minimum<a></b><br>Basic analysis code for copying. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1babar__single__photon__analysis__info/>BaBar_single_photon_analysis_info<a></b><br>A class to hold analysis information for the BaBar single photon search (specific to dark photon models) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1basecollider/>BaseCollider<a></b><br>An abstract base class for collider simulators within ColliderBit. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1basedetector/>BaseDetector<a></b><br>An abstract base class for detector simulators within ColliderBit. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1baselimitcontainer/>BaseLimitContainer<a></b><br>Base class for experimental limit curve interpolation. <br>
@@ -252,6 +254,7 @@ weight: 20
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1colliderbit_1_1signalregiondata/>SignalRegionData<a></b><br>A simple container for the result of one signal region from one analysis. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1colliderbit_1_1__gsl__target__func__params/>_gsl_target_func_params<a></b><br>A struct to contain parameters for the GSL optimiser target function. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1colliderbit_1_1convergence__settings/>convergence_settings<a></b><br>Type for holding Monte Carlo convergence settings. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1colliderbit_1_1jet__collection__settings/>jet_collection_settings<a></b><br>Struct of different jet collection settings. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1process__xsec__container/>process_xsec_container<a></b><br>A class for holding the cross-section of a single Pythia process (identified by the Pythia process code) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/>xsec_container<a></b><br>A base class for holding cross-section info within ColliderBit. <br></details>
 <details><summary><b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1cosmobit/>CosmoBit<a></b></summary>
@@ -261,13 +264,16 @@ weight: 20
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1cosmobit_1_1sm__time__evo/>SM_time_evo<a></b><br></details>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1dd__coupling__container/>DD_coupling_container<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1dm__nucleon__couplings/>DM_nucleon_couplings<a></b><br>
-<details><summary><b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1dres/>DRes<a></b></summary>
+<details><summary><b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1dres/>DRes<a></b><br>Forward declaration of [Rule]() and Observables classes for saving pointers to ignored and matched examples. </summary>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1dres_1_1backendrule/>BackendRule<a></b><br>Derived class rule for resolution of backend requirements. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/>DependencyResolver<a></b><br>Main dependency resolver. <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1dres_1_1outputvertexinfo/>OutputVertexInfo<a></b><br>Minimal info about outputVertices. <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1dres_1_1queueentry/>QueueEntry<a></b><br>Information in parameter queue. <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1dres_1_1rule/>Rule<a></b><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1dres_1_1edgewriter/>edgeWriter<a></b><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1dres_1_1labelwriter/>labelWriter<a></b><br></details>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1dres_1_1modulerule/>ModuleRule<a></b><br>Derived class rule for resolution of dependencies. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1dres_1_1observable/>Observable<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1dres_1_1outputvertex/>OutputVertex<a></b><br>Bind purpose to output vertex. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1dres_1_1queueentry/>QueueEntry<a></b><br>Information in resolution queue. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1dres_1_1rule/>Rule<a></b><br>Base rule for resolution of dependencies and backend requirements. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1dres_1_1edgewriter/>edgeWriter<a></b><br>Graphviz output for edges/dependencies. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1dres_1_1labelwriter/>labelWriter<a></b><br>Graphviz output for individual vertices/nodes/module functions. <br></details>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1ds5__couplingconstants/>DS5_COUPLINGCONSTANTS<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1ds5__ddcom/>DS5_DDCOM<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1ds5__hmcom/>DS5_HMCOM<a></b><br>
@@ -279,6 +285,7 @@ weight: 20
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1ds5__smcuseful/>DS5_SMCUSEFUL<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1ds5__smruseful/>DS5_SMRUSEFUL<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1ds5__widths/>DS5_WIDTHS<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1ds__adm__com/>DS_ADM_COM<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1ds__couplingconstants/>DS_COUPLINGCONSTANTS<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1ds__couplingconstants61/>DS_COUPLINGCONSTANTS61<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1ds__ddcomlegacy/>DS_DDCOMLEGACY<a></b><br>
@@ -302,8 +309,10 @@ weight: 20
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1ds__pacodes__mssm61/>DS_PACODES_MSSM61<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1ds__pmasses/>DS_PMASSES<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1ds__pwidths/>DS_PWIDTHS<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1ds__rd20opt/>DS_RD20OPT<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1ds__rddof/>DS_RDDOF<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1ds__rderrors/>DS_RDERRORS<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1ds__rdlims/>DS_RDLIMS<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1ds__rdlun/>DS_RDLUN<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1ds__rdpadd/>DS_RDPADD<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1ds__rdpars/>DS_RDPARS<a></b><br>
@@ -317,6 +326,7 @@ weight: 20
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1ds__smcoupling61/>DS_SMCOUPLING61<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1ds__smquarkmasses/>DS_SMQUARKMASSES<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1ds__vrtxs/>DS_VRTXS<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1ds__an__how/>DS_an_how<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1ds__gg/>DS_gg<a></b><br>
 <details><summary><b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1darkages/>DarkAges<a></b></summary>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1darkages_1_1energy__injection__efficiency__table/>Energy_injection_efficiency_table<a></b><br>
@@ -356,6 +366,8 @@ weight: 20
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1darkbit_1_1solarmodel__params2/>SolarModel_params2<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1darkbit_1_1solarmodel__params3/>SolarModel_params3<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1darkbit_1_1solarmodel__params4/>SolarModel_params4<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1darkbit_1_1subgevdm__fermion/>SubGeVDM_fermion<a></b><br>Helper function (width rescaled for RD calculations) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1darkbit_1_1subgevdm__scalar/>SubGeVDM_scalar<a></b><br>Helper function (width rescaled for RD calculations) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1darkbit_1_1th__channel/>TH_Channel<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1darkbit_1_1th__particleproperty/>TH_ParticleProperty<a></b><br>A container for the mass and spin of a particle. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1darkbit_1_1th__process/>TH_Process<a></b><br>
@@ -366,9 +378,11 @@ weight: 20
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1darkbit_1_1wdinterpolator/>WDInterpolator<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1darkbit_1_1wimp__eft__dm/>WIMP_EFT_DM<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1darkbit_1_1wstruct/>Wstruct<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1darkbit_1_1bullet__cluster__lnl/>bullet_cluster_lnL<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1darkbit_1_1drde__params/>dRdE_params<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1darkbit_1_1nudata/>nudata<a></b><br>Neutrino telescope data container. <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1darkbit_1_1nuyield__info/>nuyield_info<a></b><br>Neutrino telescope yield info container. <br></details>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1darkbit_1_1nuyield__info/>nuyield_info<a></b><br>Neutrino telescope yield info container. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1darkbit_1_1subgev__self__interactions/>subgev_self_interactions<a></b><br></details>
 <details><summary><b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1decaybit/>DecayBit<a></b></summary>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1decaybit_1_1mssm__h/>MSSM_H<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1decaybit_1_1mssm__z/>MSSM_Z<a></b><br>
@@ -418,9 +432,7 @@ weight: 20
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1higgscouplingstable/>HiggsCouplingsTable<a></b><br>GAMBIT native higgs coupling table class. <br>
 <details><summary><b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1iniparser/>IniParser<a></b></summary>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1iniparser_1_1inifile/>IniFile<a></b><br>Main inifile class. <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1iniparser_1_1parser/>Parser<a></b><br>Inifile parser base class. <br>
-<details><summary><b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1iniparser_1_1types/>Types<a></b></summary>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1iniparser_1_1types_1_1observable/>Observable<a></b><br></details></details>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1iniparser_1_1parser/>Parser<a></b><br>Inifile parser base class. <br></details>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1likelihood__container/>Likelihood_Container<a></b><br>Class for collecting pointers to all the likelihood components, then running and combining them. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1likelihood__container__factory/>Likelihood_Container_Factory<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1localmaxwellianhalo/>LocalMaxwellianHalo<a></b><br>
@@ -474,6 +486,8 @@ weight: 20
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1models_1_1scalarsingletdm__z2simplespec/>ScalarSingletDM_Z2SimpleSpec<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1models_1_1scalarsingletdm__z3model/>ScalarSingletDM_Z3Model<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1models_1_1scalarsingletdm__z3simplespec/>ScalarSingletDM_Z3SimpleSpec<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1models_1_1subgevdmmodel/>SubGeVDMModel<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1models_1_1subgevdmsimplespec/>SubGeVDMSimpleSpec<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1models_1_1vectorsingletdm__z2model/>VectorSingletDM_Z2Model<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1models_1_1vectorsingletdm__z2simplespec/>VectorSingletDM_Z2SimpleSpec<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1models_1_1partmap/>partmap<a></b><br>
@@ -607,6 +621,7 @@ weight: 20
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1scanner_1_1multi__scanner__plugin__function_3_01ret_07args_8_8_8_08_4/>Multi_Scanner_Plugin_Function< ret(args...)><a></b><br>Objective functor made up of multiple plugins. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1scanner_1_1plugin__function__factory/>Plugin_Function_Factory<a></b><br>Factory class to make objectives using objective plugins. <br>
 <details><summary><b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1scanner_1_1plugins/>Plugins<a></b></summary>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1scanner_1_1plugins_1_1objpyplugin/>ObjPyPlugin<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1scanner_1_1plugins_1_1plugin__details/>Plugin_Details<a></b><br>container info for a specific plugin <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugin__details__ref/>Plugin_Details_Ref<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugin__interface/>Plugin_Interface<a></b><br>
@@ -617,6 +632,13 @@ weight: 20
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugin__main__interface__base/>Plugin_Main_Interface_Base<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugin__main__interface__base_3_01ret_07args_8_8_8_08_4/>Plugin_Main_Interface_Base< ret(args...)><a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1scanner_1_1plugins_1_1proto__plugin__details/>Proto_Plugin_Details<a></b><br>Plugin info from inifile. <br>
+<details><summary><b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1scanner_1_1plugins_1_1scannerpyplugin/>ScannerPyPlugin<a></b></summary>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1scanner_1_1plugins_1_1scannerpyplugin_1_1like__hypercube/>like_hypercube<a></b><br>A derived class of [like_ptr_base]() for managing [Function_Base](/documentation/code/classes/classgambit_1_1scanner_1_1function__base/) objects related to hypercubes. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1scanner_1_1plugins_1_1scannerpyplugin_1_1like__physical/>like_physical<a></b><br>A derived class of [like_ptr_base]() for managing [Function_Base](/documentation/code/classes/classgambit_1_1scanner_1_1function__base/) objects related to physical properties. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1scanner_1_1plugins_1_1scannerpyplugin_1_1like__prior__physical/>like_prior_physical<a></b><br>A derived class of [like_ptr_base]() for managing [Function_Base](/documentation/code/classes/classgambit_1_1scanner_1_1function__base/) objects related to physical priors. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1scannerpyplugin_1_1like__ptr__base/>like_ptr_base<a></b><br>A class that wraps a shared pointer to a [Function_Base](/documentation/code/classes/classgambit_1_1scanner_1_1function__base/) object. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1scanner_1_1plugins_1_1scannerpyplugin_1_1prior__physical/>prior_physical<a></b><br>A derived class of [like_ptr_base](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1scannerpyplugin_1_1like__ptr__base/) for managing [Function_Base](/documentation/code/classes/classgambit_1_1scanner_1_1function__base/) objects related to physical priors. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1scannerpyplugin_1_1scanner__base/>scanner_base<a></b><br>A base class for scanner functionality. <br></details>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1versioncompare/>VersionCompare<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1versioncomparebase/>VersionCompareBase<a></b><br>Base class for comparing scanner plugins. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1versioncomparebottom/>VersionCompareBottom<a></b><br>
@@ -626,7 +648,8 @@ weight: 20
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1factorybase/>factoryBase<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1funcfactory/>funcFactory<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1scanner_1_1plugins_1_1plugindata/>pluginData<a></b><br>Structure that holds all the data provided by plugins about themselves. <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugininfo/>pluginInfo<a></b><br>Container for all the plugin info from the inifile and Scannerbit. <br></details>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugininfo/>pluginInfo<a></b><br>Container for all the plugin info from the inifile and Scannerbit. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1scanner_1_1plugins_1_1pyplugin__info/>pyplugin_info<a></b><br></details>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1scanner_1_1rannumgen/>RanNumGen<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1scanner_1_1scan__manager/>Scan_Manager<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1scanner_1_1scanner__plugin__function/>Scanner_Plugin_Function<a></b><br>
@@ -664,7 +687,7 @@ weight: 20
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1scanner_1_1is__args__convertible/>is_args_convertible<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1scanner_1_1is__args__convertible_3_01ret1_07_08_00_01ret2_07_08_4/>is_args_convertible< ret1(), ret2()><a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1scanner_1_1is__args__convertible_3_01ret1_07arg1_00_01args1_8_8_8_08_00_01ret2_07arg2_00_01args2_8_8_8_08_4/>is_args_convertible< ret1(arg1, args1...), ret2(arg2, args2...)><a></b><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1scanner_1_1like__ptr/>like_ptr<a></b><br>likelihood container for scanner plugins. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1scanner_1_1like__ptr/>like_ptr<a></b><br>likelihood pointer holder for scanner plugins. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1scanner_1_1point__info/>point_info<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1scanner_1_1remove__all__func/>remove_all_func<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1scanner_1_1remove__all__func_3_01ret_07args_8_8_8_08_4/>remove_all_func< ret(args...)><a></b><br>
@@ -702,6 +725,7 @@ weight: 20
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1spectraits_3_01models_1_1majoranasingletdm__z2simplespec_01_4/>SpecTraits< Models::MajoranaSingletDM_Z2SimpleSpec ><a></b><br>Specialisation of traits class needed to inform base spectrum class of the Model and Input types. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1spectraits_3_01models_1_1scalarsingletdm__z2simplespec_01_4/>SpecTraits< Models::ScalarSingletDM_Z2SimpleSpec ><a></b><br>Specialisation of traits class needed to inform base spectrum class of the Model and Input types. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1spectraits_3_01models_1_1scalarsingletdm__z3simplespec_01_4/>SpecTraits< Models::ScalarSingletDM_Z3SimpleSpec ><a></b><br>Specialisation of traits class needed to inform base spectrum class of the Model and Input types. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1spectraits_3_01models_1_1subgevdmsimplespec_01_4/>SpecTraits< Models::SubGeVDMSimpleSpec ><a></b><br>Specialisation of traits class needed to inform base spectrum class of the Model and Input types. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1spectraits_3_01models_1_1vectorsingletdm__z2simplespec_01_4/>SpecTraits< Models::VectorSingletDM_Z2SimpleSpec ><a></b><br>Specialisation of traits class needed to inform base spectrum class of the Model and Input types. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1spectraits_3_01smsimplespec_01_4/>SpecTraits< SMSimpleSpec ><a></b><br>Specialisation of traits class needed to inform base spectrum class of the Model and Input types. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1spectraits_3_01specbit_1_1mdmspec_3_01mi_01_4_01_4/>SpecTraits< SpecBit::MDMSpec< MI > ><a></b><br>
@@ -726,15 +750,17 @@ weight: 20
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1spectrumcontents_1_1sm__slha/>SM_slha<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1spectrumcontents_1_1scalarsingletdm__z2/>ScalarSingletDM_Z2<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1spectrumcontents_1_1scalarsingletdm__z3/>ScalarSingletDM_Z3<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1spectrumcontents_1_1subgevdm/>SubGeVDM<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1spectrumcontents_1_1vectorsingletdm__z2/>VectorSingletDM_Z2<a></b><br></details>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1spectrumparameter/>SpectrumParameter<a></b><br>Simple class to contain information defining how some parameter in a [SubSpectrum]() object can be accessed. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1stats/>Stats<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1subspectrum/>SubSpectrum<a></b><br>Virtual base class for interacting with spectrum generator output. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1subspectrumcontents/>SubSpectrumContents<a></b><br>Base class for defining the required contents of a [SubSpectrum](/documentation/code/classes/classgambit_1_1subspectrum/) object. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1suspicious__point__exception/>Suspicious_point_exception<a></b><br>[Gambit](/documentation/code/namespaces/namespacegambit/) suspicious point exception class. <br>
 <details><summary><b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1utils/>Utils<a></b></summary>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1utils_1_1filelock/>FileLock<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1utils_1_1processlock/>ProcessLock<a></b><br>Class to manage a process lock, using a file. <br>
-<details><summary><b>struct <a href=/documentation/code/classes/structgambit_1_1utils_1_1ci__less/>ci_less<a></b></summary>
+<details><summary><b>struct <a href=/documentation/code/classes/structgambit_1_1utils_1_1ci__less/>ci_less<a></b><br>Comparator for case-insensitive comparison in STL assos. containers */. </summary>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1utils_1_1ci__less_1_1nocase__compare/>nocase_compare<a></b><br></details>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1utils_1_1interp1d__collection/>interp1d_collection<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1utils_1_1interp1d__gsl__collection/>interp1d_gsl_collection<a></b><br>
@@ -742,6 +768,7 @@ weight: 20
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1utils_1_1interp2d__gsl__collection/>interp2d_gsl_collection<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1utils_1_1interp4d__collection/>interp4d_collection<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1utils_1_1interp5d__collection/>interp5d_collection<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1utils_1_1python__interpreter__guard/>python_interpreter_guard<a></b><br>Dummy guard class for python interpreters when python support is turned off. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1utils_1_1specialised__threadsafe__rng/>specialised_threadsafe_rng<a></b><br>Derived thread-safe random number generator class, templated on the RNG engine type. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1utils_1_1threadsafe__rng/>threadsafe_rng<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1utils_1_1translator/>translator<a></b><br>
@@ -927,10 +954,10 @@ weight: 20
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1widthhl__hdec__type/>widthhl_hdec_type<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1wisfer__hdec__type/>wisfer_hdec_type<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1wisusy__hdec__type/>wisusy_hdec_type<a></b><br></details>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1cosmobit_1_1_0d671/>@671<a></b><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1cosmobit_1_1_0d676/>@676<a></b><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1cosmobit_1_1_0d683/>@683<a></b><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1darkbit_1_1_0d698/>@698<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1cosmobit_1_1_0d722/>@722<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1cosmobit_1_1_0d727/>@727<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1cosmobit_1_1_0d734/>@734<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1darkbit_1_1_0d749/>@749<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespaceheputils/>HEPUtils<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacelhef/>LHEF<a></b><br>Forward declaration to cut down on includes. <br>
 <details><summary><b>namespace <a href=/documentation/code/namespaces/namespacelester/>Lester<a></b></summary>
@@ -950,7 +977,9 @@ weight: 20
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classtransformrandombasis/>TransformRandomBasis<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classwrapperbase/>WrapperBase<a></b><br>
 <details><summary><b>namespace <a href=/documentation/code/namespaces/namespaceyaml/>YAML<a></b><br>[YAML]() overloads for mass cut and mass cut ratio constituents. </summary>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structyaml_1_1convert_3_01gambit_1_1iniparser_1_1types_1_1observable_01_4/>convert< Gambit::IniParser::Types::Observable ><a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structyaml_1_1convert_3_01gambit_1_1dres_1_1backendrule_01_4/>convert< Gambit::DRes::BackendRule ><a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structyaml_1_1convert_3_01gambit_1_1dres_1_1modulerule_01_4/>convert< Gambit::DRes::ModuleRule ><a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structyaml_1_1convert_3_01gambit_1_1dres_1_1observable_01_4/>convert< Gambit::DRes::Observable ><a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structyaml_1_1convert_3_01gambit_1_1nuiscorr_01_4/>convert< Gambit::nuiscorr ><a></b><br>[YAML](/documentation/code/namespaces/namespaceyaml/) conversion structure for SuperIso SM nuisance data. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structyaml_1_1convert_3_01sdd_01_4/>convert< sdd ><a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structyaml_1_1convert_3_01ssdd_01_4/>convert< ssdd ><a></b><br></details>
@@ -999,4 +1028,4 @@ weight: 20
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:08 +0000
+Updated on 2024-07-18 at 13:53:36 +0000

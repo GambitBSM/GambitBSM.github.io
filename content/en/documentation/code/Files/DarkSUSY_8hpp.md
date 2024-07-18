@@ -19,6 +19,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
+| struct | **[Gambit::DS_an_how](/documentation/code/classes/structgambit_1_1ds__an__how/)**  |
 | struct | **[Gambit::DS_IBINTVARS](/documentation/code/classes/structgambit_1_1ds__ibintvars/)**  |
 | struct | **[Gambit::DS5_MSPCTM](/documentation/code/classes/structgambit_1_1ds5__mspctm/)**  |
 | struct | **[Gambit::DS_SMQUARKMASSES](/documentation/code/classes/structgambit_1_1ds__smquarkmasses/)**  |
@@ -50,6 +51,9 @@ description: "[No description available]"
 | struct | **[Gambit::DS_MSSMMIXING](/documentation/code/classes/structgambit_1_1ds__mssmmixing/)**  |
 | struct | **[Gambit::DS5_RDMGEV](/documentation/code/classes/structgambit_1_1ds5__rdmgev/)**  |
 | struct | **[Gambit::DS_DSANCOANN](/documentation/code/classes/structgambit_1_1ds__dsancoann/)**  |
+| struct | **[Gambit::DS_RDLIMS](/documentation/code/classes/structgambit_1_1ds__rdlims/)**  |
+| struct | **[Gambit::DS_ADM_COM](/documentation/code/classes/structgambit_1_1ds__adm__com/)**  |
+| struct | **[Gambit::DS_RD20OPT](/documentation/code/classes/structgambit_1_1ds__rd20opt/)**  |
 | struct | **[Gambit::DS_RDPTH](/documentation/code/classes/structgambit_1_1ds__rdpth/)**  |
 | struct | **[Gambit::DS_RDSWITCH](/documentation/code/classes/structgambit_1_1ds__rdswitch/)**  |
 | struct | **[Gambit::DS_RDLUN](/documentation/code/classes/structgambit_1_1ds__rdlun/)**  |
@@ -85,7 +89,7 @@ description: "[No description available]"
 **Date**: 
 
   * 2012 Mar
-  * 2013 Jun, 2014 Mar, 2015 Apr, 2018 Sep, 2019 May
+  * 2013 Jun, 2014 Mar, 2015 Apr, 2018 Sep, 2019 May, 2023
   * 2013 Oct
   * 2014 Oct
   * 2015 May, 2018 Sep
@@ -126,7 +130,7 @@ Authors (add name and date if you modify):
 ///
 ///  \author Torsten Bringmann
 ///          (torsten.bringmann@fys.uio.no)
-///  \date 2013 Jun, 2014 Mar, 2015 Apr, 2018 Sep, 2019 May
+///  \date 2013 Jun, 2014 Mar, 2015 Apr, 2018 Sep, 2019 May, 2023
 ///
 ///  \author Pat Scott
 ///          (patscott@physics.mcgill.ca)
@@ -150,6 +154,10 @@ Authors (add name and date if you modify):
 namespace Gambit
 {
  
+  struct DS_an_how
+  {
+      Fstring<10> anyieldhow, defaulthow, fallback;
+  };
   struct DS_IBINTVARS
   {
       Fdouble ibcom_x, ibcom_z, ibcom_mx, ibcom_mp1, ibcom_mp2;
@@ -437,6 +445,29 @@ namespace Gambit
       Finteger nco;
   };
 
+  // only in DarkSUSY >= 6.4
+  struct DS_RDLIMS
+  {
+      Fdouble pmaxT;
+      Farray<Fdouble,1,2000> plow,phigh;
+      Finteger nlim;
+      Flogical rd_excl_th_int;
+  };
+
+  // only in DarkSUSY >= 6.4
+  struct DS_ADM_COM
+  {
+      Fdouble adm_eta;
+  };
+
+  // only in DarkSUSY >= 6.4
+  struct DS_RD20OPT
+  {
+      Fdouble rdquaderr,rdlinerr,wresratio,wdev,ngammamax;
+      Fdouble ngastart, almin,almax,ngafac;
+  };
+
+
   struct DS_RDPTH
   {
       Farray<Fdouble,0,1001> pth;
@@ -598,4 +629,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:08 +0000
+Updated on 2024-07-18 at 13:53:35 +0000

@@ -1,0 +1,307 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="py__module__obj_8hpp" kind="file" language="C++">
+    <compoundname>py_module_obj.hpp</compoundname>
+    <innernamespace refid="namespaceGambit">Gambit</innernamespace>
+    <innernamespace refid="namespaceGambit_1_1Scanner">Gambit::Scanner</innernamespace>
+    <innernamespace refid="namespaceGambit_1_1Scanner_1_1Plugins">Gambit::Scanner::Plugins</innernamespace>
+    <innernamespace refid="namespaceGambit_1_1Scanner_1_1Plugins_1_1ObjPyPlugin">Gambit::Scanner::Plugins::ObjPyPlugin</innernamespace>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="py__module__obj_8hpp_1a462d79853602b5ee71899d29a73812ff" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>PYBIND11_EMBEDDED_MODULE</definition>
+        <argsstring>(objective_plugin, m)</argsstring>
+        <name>PYBIND11_EMBEDDED_MODULE</name>
+        <param>
+          <type>objective_plugin</type>
+        </param>
+        <param>
+          <type>m</type>
+        </param>
+        <briefdescription>
+<para>A pybind11 module named &quot;objective_plugin&quot;. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>This module is used to bind Python and C++ code using the pybind11 library. It imports the &quot;scannerbit&quot; module and defines some functions and attributes for the module.</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>m</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>The pybind11 module to which the bindings are added. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/py_module_obj.hpp" line="219" column="1" bodyfile="ScannerBit/include/gambit/ScannerBit/py_module_obj.hpp" bodystart="219" bodyend="247"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Defines the python objective_plugin module to be used in the python plugins.</para>
+<para><hruler/>
+</para>
+<para>Authors:</para>
+<para><simplesect kind="author"><para>Gregory Martinez (<ulink url="mailto:gregory.david.martinez@gmail.com">gregory.david.martinez@gmail.com</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2023 Dec</para>
+</simplesect>
+<hruler/>
+ </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/><sp/><sp/>GAMBIT:<sp/>Global<sp/>and<sp/>Modular<sp/>BSM<sp/>Inference<sp/>Tool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>*********************************************</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">///<sp/><sp/>\file</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">///<sp/><sp/>Defines<sp/>the<sp/>python<sp/>objective_plugin<sp/>module<sp/>to<sp/></highlight></codeline>
+<codeline lineno="6"><highlight class="comment">///<sp/><sp/>be<sp/>used<sp/>in<sp/>the<sp/>python<sp/>plugins.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">///<sp/><sp/>Authors:</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">///<sp/><sp/>\author<sp/>Gregory<sp/>Martinez</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">///<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(gregory.david.martinez@gmail.com)</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">///<sp/><sp/>\date<sp/>2023<sp/>Dec</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceGambit" kindref="compound">Gambit</ref></highlight></codeline>
+<codeline lineno="19"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Scanner<sp/></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Plugins</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">ObjPyPlugin</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/**</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>@brief<sp/>A<sp/>function<sp/>to<sp/>export<sp/>Python<sp/>plugin<sp/>data.</highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/></highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>This<sp/>function<sp/>is<sp/>used<sp/>to<sp/>export<sp/>data<sp/>related<sp/>to<sp/>the<sp/>Python<sp/>plugin.<sp/>It<sp/>returns<sp/>a<sp/>reference<sp/>to<sp/>a<sp/>pointer<sp/>to<sp/>the<sp/>pluginData<sp/>object.</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/></highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>@return<sp/>Returns<sp/>a<sp/>reference<sp/>to<sp/>a<sp/>pointer<sp/>to<sp/>the<sp/>pluginData<sp/>object.</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37" refid="py__module__obj_8hpp_1a885a8a42d6249005481c55803aa11e39" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EXPORT_SYMBOLS<sp/><ref refid="structGambit_1_1Scanner_1_1Plugins_1_1pluginData" kindref="compound">pluginData</ref>*&amp;<sp/><ref refid="py__module__obj_8hpp_1a885a8a42d6249005481c55803aa11e39" kindref="member">pythonPluginData</ref>()</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1Scanner_1_1Plugins_1_1pluginData" kindref="compound">pluginData</ref><sp/>*data<sp/>=<sp/></highlight><highlight class="keyword">nullptr</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>data;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="44"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/**</highlight></codeline>
+<codeline lineno="45"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>@brief<sp/>A<sp/>function<sp/>to<sp/>execute<sp/>a<sp/>Python<sp/>function<sp/>with<sp/>a<sp/>map<sp/>of<sp/>doubles<sp/>as<sp/>an<sp/>argument.</highlight></codeline>
+<codeline lineno="46"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/></highlight></codeline>
+<codeline lineno="47"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>This<sp/>function<sp/>is<sp/>used<sp/>to<sp/>execute<sp/>a<sp/>Python<sp/>function<sp/>that<sp/>is<sp/>passed<sp/>as<sp/>an<sp/>argument.<sp/>The<sp/>function<sp/>is<sp/>executed<sp/>with<sp/>a<sp/>map<sp/>of<sp/>doubles<sp/>as<sp/>its<sp/>argument.</highlight></codeline>
+<codeline lineno="48"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/></highlight></codeline>
+<codeline lineno="49"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>@param<sp/>func<sp/>The<sp/>Python<sp/>function<sp/>to<sp/>be<sp/>executed.</highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>@param<sp/>map<sp/>The<sp/>map<sp/>of<sp/>doubles<sp/>to<sp/>be<sp/>passed<sp/>as<sp/>an<sp/>argument<sp/>to<sp/>the<sp/>Python<sp/>function.</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>@return<sp/>Returns<sp/>the<sp/>result<sp/>of<sp/>the<sp/>Python<sp/>function<sp/>execution<sp/>as<sp/>a<sp/>double.</highlight></codeline>
+<codeline lineno="52"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="py__module__obj_8hpp_1abcbfd082c9356c6593c5cf62356af057" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>EXPORT_SYMBOLS<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="py__module__obj_8hpp_1abcbfd082c9356c6593c5cf62356af057" kindref="member">run</ref>(py::object<sp/>&amp;func,<sp/>map_doub_type_<sp/>&amp;map)</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>func(&amp;map).template<sp/>cast&lt;double&gt;();</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="58"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/**</highlight></codeline>
+<codeline lineno="59"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>@brief<sp/>A<sp/>function<sp/>to<sp/>retrieve<sp/>a<sp/>value<sp/>from<sp/>the<sp/>ini<sp/>file.</highlight></codeline>
+<codeline lineno="60"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/></highlight></codeline>
+<codeline lineno="61"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>This<sp/>function<sp/>is<sp/>used<sp/>to<sp/>retrieve<sp/>a<sp/>value<sp/>of<sp/>a<sp/>specified<sp/>type<sp/>from<sp/>the<sp/>ini<sp/>file.<sp/>The<sp/>key<sp/>for<sp/>the<sp/>value<sp/>is<sp/>passed<sp/>as<sp/>a<sp/>parameter<sp/>to<sp/>the<sp/>function.</highlight></codeline>
+<codeline lineno="62"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/></highlight></codeline>
+<codeline lineno="63"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>@tparam<sp/>T<sp/>The<sp/>type<sp/>of<sp/>the<sp/>value<sp/>to<sp/>be<sp/>retrieved.</highlight></codeline>
+<codeline lineno="64"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>@param<sp/>in<sp/>The<sp/>key<sp/>for<sp/>the<sp/>value<sp/>to<sp/>be<sp/>retrieved.</highlight></codeline>
+<codeline lineno="65"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>@return<sp/>Returns<sp/>the<sp/>value<sp/>from<sp/>the<sp/>ini<sp/>file<sp/>associated<sp/>with<sp/>the<sp/>given<sp/>key.<sp/>If<sp/>the<sp/>key<sp/>does<sp/>not<sp/>exist,<sp/>an<sp/>error<sp/>message<sp/>is<sp/>printed<sp/>and<sp/>a<sp/>default-constructed<sp/>object<sp/>of<sp/>type<sp/>T<sp/>is<sp/>returned.</highlight></codeline>
+<codeline lineno="66"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="68" refid="py__module__obj_8hpp_1ab02286c82ba91429637c06e58675bddb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>T<sp/><ref refid="py__module__obj_8hpp_1ab02286c82ba91429637c06e58675bddb" kindref="member">get_inifile_value</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;in)</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="py__module__obj_8hpp_1a885a8a42d6249005481c55803aa11e39" kindref="member">pythonPluginData</ref>()-&gt;node[in])</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="scanner__utils_8hpp_1a78c5cbcc517889fd5a4b79468ae2f721" kindref="member">scan_err</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Missing<sp/>iniFile<sp/>entry<sp/>\&quot;&quot;</highlight><highlight class="normal">&lt;&lt;<sp/>in<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\&quot;<sp/>needed<sp/>by<sp/>a<sp/>gambit<sp/>plugin:<sp/><sp/>\n&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/><ref refid="py__module__obj_8hpp_1a885a8a42d6249005481c55803aa11e39" kindref="member">pythonPluginData</ref>()-&gt;print()<sp/>&lt;&lt;<sp/>scan_end;</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>T();</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="py__module__obj_8hpp_1a885a8a42d6249005481c55803aa11e39" kindref="member">pythonPluginData</ref>()-&gt;node[in].template<sp/>as&lt;T&gt;();</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="80"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/**</highlight></codeline>
+<codeline lineno="81"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>@brief<sp/>A<sp/>function<sp/>to<sp/>retrieve<sp/>a<sp/>value<sp/>from<sp/>the<sp/>ini<sp/>file<sp/>with<sp/>a<sp/>default<sp/>value.</highlight></codeline>
+<codeline lineno="82"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/></highlight></codeline>
+<codeline lineno="83"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>This<sp/>function<sp/>is<sp/>used<sp/>to<sp/>retrieve<sp/>a<sp/>value<sp/>of<sp/>a<sp/>specified<sp/>type<sp/>from<sp/>the<sp/>ini<sp/>file.<sp/>The<sp/>key<sp/>for<sp/>the<sp/>value<sp/>is<sp/>passed<sp/>as<sp/>a<sp/>parameter<sp/>to<sp/>the<sp/>function.<sp/>If<sp/>the<sp/>key<sp/>does<sp/>not<sp/>exist<sp/>in<sp/>the<sp/>ini<sp/>file,<sp/>a<sp/>default<sp/>value<sp/>is<sp/>returned.</highlight></codeline>
+<codeline lineno="84"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/></highlight></codeline>
+<codeline lineno="85"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>@tparam<sp/>T<sp/>The<sp/>type<sp/>of<sp/>the<sp/>value<sp/>to<sp/>be<sp/>retrieved.</highlight></codeline>
+<codeline lineno="86"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>@param<sp/>in<sp/>The<sp/>key<sp/>for<sp/>the<sp/>value<sp/>to<sp/>be<sp/>retrieved.</highlight></codeline>
+<codeline lineno="87"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>@param<sp/>defaults<sp/>The<sp/>default<sp/>value<sp/>to<sp/>be<sp/>returned<sp/>if<sp/>the<sp/>key<sp/>does<sp/>not<sp/>exist<sp/>in<sp/>the<sp/>ini<sp/>file.</highlight></codeline>
+<codeline lineno="88"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>@return<sp/>Returns<sp/>the<sp/>value<sp/>from<sp/>the<sp/>ini<sp/>file<sp/>associated<sp/>with<sp/>the<sp/>given<sp/>key.<sp/>If<sp/>the<sp/>key<sp/>does<sp/>not<sp/>exist,<sp/>the<sp/>default<sp/>value<sp/>is<sp/>returned.</highlight></codeline>
+<codeline lineno="89"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="91" refid="py__module__obj_8hpp_1ab61f06c24e8b8f2ec38e72f640208ecb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T<sp/><ref refid="py__module__obj_8hpp_1ab02286c82ba91429637c06e58675bddb" kindref="member">get_inifile_value</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;in,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>T<sp/>&amp;defaults)</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!<ref refid="py__module__obj_8hpp_1a885a8a42d6249005481c55803aa11e39" kindref="member">pythonPluginData</ref>()-&gt;node[in])</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>defaults;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="py__module__obj_8hpp_1a885a8a42d6249005481c55803aa11e39" kindref="member">pythonPluginData</ref>()-&gt;node[in].template<sp/>as&lt;T&gt;();</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="101"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/**</highlight></codeline>
+<codeline lineno="102"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>@brief<sp/>A<sp/>function<sp/>to<sp/>retrieve<sp/>a<sp/>node<sp/>from<sp/>the<sp/>ini<sp/>file.</highlight></codeline>
+<codeline lineno="103"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/></highlight></codeline>
+<codeline lineno="104"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>This<sp/>function<sp/>is<sp/>used<sp/>to<sp/>retrieve<sp/>a<sp/>node<sp/>from<sp/>the<sp/>ini<sp/>file.<sp/>The<sp/>key<sp/>for<sp/>the<sp/>node<sp/>is<sp/>passed<sp/>as<sp/>a<sp/>parameter<sp/>to<sp/>the<sp/>function.</highlight></codeline>
+<codeline lineno="105"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/></highlight></codeline>
+<codeline lineno="106"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>@param<sp/>in<sp/>The<sp/>key<sp/>for<sp/>the<sp/>node<sp/>to<sp/>be<sp/>retrieved.</highlight></codeline>
+<codeline lineno="107"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>@return<sp/>Returns<sp/>the<sp/>node<sp/>from<sp/>the<sp/>ini<sp/>file<sp/>associated<sp/>with<sp/>the<sp/>given<sp/>key.</highlight></codeline>
+<codeline lineno="108"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109" refid="py__module__obj_8hpp_1acc25148ca837509576dfc5d0ea4283c7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>YAML::Node<sp/><ref refid="py__module__obj_8hpp_1acc25148ca837509576dfc5d0ea4283c7" kindref="member">get_inifile_node</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;in)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="py__module__obj_8hpp_1a885a8a42d6249005481c55803aa11e39" kindref="member">pythonPluginData</ref>()-&gt;node[in];</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="114"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/**</highlight></codeline>
+<codeline lineno="115"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>@brief<sp/>A<sp/>function<sp/>to<sp/>retrieve<sp/>the<sp/>root<sp/>node<sp/>from<sp/>the<sp/>ini<sp/>file.</highlight></codeline>
+<codeline lineno="116"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/></highlight></codeline>
+<codeline lineno="117"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>This<sp/>function<sp/>is<sp/>used<sp/>to<sp/>retrieve<sp/>the<sp/>root<sp/>node<sp/>from<sp/>the<sp/>ini<sp/>file.<sp/>No<sp/>parameters<sp/>are<sp/>required<sp/>as<sp/>it<sp/>always<sp/>returns<sp/>the<sp/>root<sp/>node.</highlight></codeline>
+<codeline lineno="118"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/></highlight></codeline>
+<codeline lineno="119"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>@return<sp/>Returns<sp/>the<sp/>root<sp/>node<sp/>from<sp/>the<sp/>ini<sp/>file.</highlight></codeline>
+<codeline lineno="120"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121" refid="py__module__obj_8hpp_1a83bd5df7c6813c032f7cc0cda3dab3af" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>YAML::Node<sp/><ref refid="py__module__obj_8hpp_1acc25148ca837509576dfc5d0ea4283c7" kindref="member">get_inifile_node</ref>()<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="py__module__obj_8hpp_1a885a8a42d6249005481c55803aa11e39" kindref="member">pythonPluginData</ref>()-&gt;node;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="126"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/**</highlight></codeline>
+<codeline lineno="127"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>@brief<sp/>A<sp/>function<sp/>to<sp/>retrieve<sp/>an<sp/>input<sp/>value<sp/>of<sp/>a<sp/>specified<sp/>type.</highlight></codeline>
+<codeline lineno="128"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/></highlight></codeline>
+<codeline lineno="129"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>This<sp/>function<sp/>is<sp/>used<sp/>to<sp/>retrieve<sp/>an<sp/>input<sp/>value<sp/>of<sp/>a<sp/>specified<sp/>type<sp/>from<sp/>the<sp/>input<sp/>data.<sp/>The<sp/>index<sp/>of<sp/>the<sp/>input<sp/>value<sp/>is<sp/>passed<sp/>as<sp/>a<sp/>parameter<sp/>to<sp/>the<sp/>function.</highlight></codeline>
+<codeline lineno="130"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/></highlight></codeline>
+<codeline lineno="131"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>@tparam<sp/>T<sp/>The<sp/>type<sp/>of<sp/>the<sp/>input<sp/>value<sp/>to<sp/>be<sp/>retrieved.</highlight></codeline>
+<codeline lineno="132"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>@param<sp/>i<sp/>The<sp/>index<sp/>of<sp/>the<sp/>input<sp/>value<sp/>to<sp/>be<sp/>retrieved.</highlight></codeline>
+<codeline lineno="133"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>@return<sp/>Returns<sp/>a<sp/>reference<sp/>to<sp/>the<sp/>input<sp/>value<sp/>at<sp/>the<sp/>given<sp/>index.</highlight></codeline>
+<codeline lineno="134"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="136" refid="py__module__obj_8hpp_1a2210c228d59112cff506c78ed4afaa30" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>T<sp/>&amp;<ref refid="py__module__obj_8hpp_1a2210c228d59112cff506c78ed4afaa30" kindref="member">get_input_value</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i)</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="normal">T*</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(<ref refid="py__module__obj_8hpp_1a885a8a42d6249005481c55803aa11e39" kindref="member">pythonPluginData</ref>()-&gt;inputData[i]);</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="141"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/**</highlight></codeline>
+<codeline lineno="142"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>@brief<sp/>A<sp/>function<sp/>to<sp/>retrieve<sp/>the<sp/>printer<sp/>interface.</highlight></codeline>
+<codeline lineno="143"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/></highlight></codeline>
+<codeline lineno="144"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>This<sp/>function<sp/>is<sp/>used<sp/>to<sp/>retrieve<sp/>the<sp/>printer<sp/>interface<sp/>from<sp/>the<sp/>plugin<sp/>data.<sp/>No<sp/>parameters<sp/>are<sp/>required<sp/>as<sp/>it<sp/>always<sp/>returns<sp/>the<sp/>printer<sp/>interface.</highlight></codeline>
+<codeline lineno="145"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/></highlight></codeline>
+<codeline lineno="146"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>@return<sp/>Returns<sp/>a<sp/>reference<sp/>to<sp/>the<sp/>printer<sp/>interface.</highlight></codeline>
+<codeline lineno="147"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148" refid="py__module__obj_8hpp_1a4db5be61616f2b963ec1e5e404e96c30" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Printers_1_1BasePrinterManager" kindref="compound">Gambit::Scanner::printer_interface</ref><sp/>&amp;<ref refid="py__module__obj_8hpp_1a4db5be61616f2b963ec1e5e404e96c30" kindref="member">get_printer</ref>()</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*<ref refid="py__module__obj_8hpp_1a885a8a42d6249005481c55803aa11e39" kindref="member">pythonPluginData</ref>()-&gt;printer;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="153"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/**</highlight></codeline>
+<codeline lineno="154"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>@brief<sp/>A<sp/>function<sp/>to<sp/>retrieve<sp/>the<sp/>prior<sp/>interface.</highlight></codeline>
+<codeline lineno="155"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/></highlight></codeline>
+<codeline lineno="156"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>This<sp/>function<sp/>is<sp/>used<sp/>to<sp/>retrieve<sp/>the<sp/>prior<sp/>interface<sp/>from<sp/>the<sp/>plugin<sp/>data.<sp/>No<sp/>parameters<sp/>are<sp/>required<sp/>as<sp/>it<sp/>always<sp/>returns<sp/>the<sp/>prior<sp/>interface.</highlight></codeline>
+<codeline lineno="157"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/></highlight></codeline>
+<codeline lineno="158"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>@return<sp/>Returns<sp/>a<sp/>reference<sp/>to<sp/>the<sp/>prior<sp/>interface.</highlight></codeline>
+<codeline lineno="159"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160" refid="py__module__obj_8hpp_1a3dc4034aa72e01457658f9bbb686492e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Priors_1_1BasePrior" kindref="compound">Gambit::Scanner::prior_interface</ref><sp/>&amp;<ref refid="py__module__obj_8hpp_1a3dc4034aa72e01457658f9bbb686492e" kindref="member">get_prior</ref>()</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*<ref refid="py__module__obj_8hpp_1a885a8a42d6249005481c55803aa11e39" kindref="member">pythonPluginData</ref>()-&gt;prior;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespaceGambit_1_1Printers_1a88e476c2035c63ea9635977764db3c2c" kindref="member">Gambit::Printers::get_point_id</ref>;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="167"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/**</highlight></codeline>
+<codeline lineno="168"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>@brief<sp/>A<sp/>function<sp/>to<sp/>retrieve<sp/>the<sp/>keys.</highlight></codeline>
+<codeline lineno="169"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/></highlight></codeline>
+<codeline lineno="170"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>This<sp/>function<sp/>is<sp/>used<sp/>to<sp/>retrieve<sp/>the<sp/>keys<sp/>from<sp/>the<sp/>input<sp/>data.<sp/>No<sp/>parameters<sp/>are<sp/>required<sp/>as<sp/>it<sp/>always<sp/>returns<sp/>the<sp/>keys.</highlight></codeline>
+<codeline lineno="171"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/></highlight></codeline>
+<codeline lineno="172"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>@return<sp/>Returns<sp/>a<sp/>reference<sp/>to<sp/>the<sp/>vector<sp/>of<sp/>keys.</highlight></codeline>
+<codeline lineno="173"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174" refid="py__module__obj_8hpp_1a941466c2e0e7c2a212ccda2e510f7bd1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::string&gt;<sp/>&amp;<ref refid="py__module__obj_8hpp_1a941466c2e0e7c2a212ccda2e510f7bd1" kindref="member">get_keys</ref>()<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>get_input_value&lt;std::vector&lt;std::string&gt;&gt;(0);}<sp/></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="176"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/**</highlight></codeline>
+<codeline lineno="177"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>@brief<sp/>A<sp/>function<sp/>to<sp/>set<sp/>the<sp/>dimension.</highlight></codeline>
+<codeline lineno="178"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/></highlight></codeline>
+<codeline lineno="179"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>This<sp/>function<sp/>is<sp/>used<sp/>to<sp/>set<sp/>the<sp/>dimension<sp/>in<sp/>the<sp/>input<sp/>data.<sp/>The<sp/>dimension<sp/>value<sp/>is<sp/>passed<sp/>as<sp/>a<sp/>parameter<sp/>to<sp/>the<sp/>function.</highlight></codeline>
+<codeline lineno="180"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/></highlight></codeline>
+<codeline lineno="181"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>@param<sp/>val<sp/>The<sp/>value<sp/>to<sp/>be<sp/>set<sp/>as<sp/>the<sp/>dimension.</highlight></codeline>
+<codeline lineno="182"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183" refid="py__module__obj_8hpp_1aeb0e8a727bd7a5684e540e4c6eddb79e" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="py__module__obj_8hpp_1aeb0e8a727bd7a5684e540e4c6eddb79e" kindref="member">set_dimension</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>val)<sp/>{get_input_value&lt;unsigned<sp/>int&gt;(1)<sp/>=<sp/>val;}</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="185"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/**</highlight></codeline>
+<codeline lineno="186"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>@brief<sp/>A<sp/>function<sp/>to<sp/>print<sp/>parameters.</highlight></codeline>
+<codeline lineno="187"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/></highlight></codeline>
+<codeline lineno="188"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>This<sp/>function<sp/>is<sp/>used<sp/>to<sp/>print<sp/>parameters<sp/>from<sp/>the<sp/>input<sp/>data.<sp/>The<sp/>parameters<sp/>are<sp/>passed<sp/>as<sp/>a<sp/>map<sp/>where<sp/>the<sp/>key<sp/>is<sp/>the<sp/>parameter<sp/>name<sp/>and<sp/>the<sp/>value<sp/>is<sp/>the<sp/>parameter<sp/>value.</highlight></codeline>
+<codeline lineno="189"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/></highlight></codeline>
+<codeline lineno="190"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>@param<sp/>key_map<sp/>The<sp/>map<sp/>of<sp/>parameters<sp/>to<sp/>be<sp/>printed.</highlight></codeline>
+<codeline lineno="191"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192" refid="py__module__obj_8hpp_1a066284f1d1ed340b0e1d1d85185313bc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="py__module__obj_8hpp_1a066284f1d1ed340b0e1d1d85185313bc" kindref="member">print_parameters</ref>(std::unordered_map&lt;std::string,<sp/>double&gt;<sp/>&amp;key_map)</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="namespaceGambit_1_1Printers_1ac86b6f80a02d42cef6f8f287755300f1" kindref="member">Gambit::Printers::get_main_param_id</ref>;</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1Printers_1_1BaseBasePrinter" kindref="compound">Gambit::Scanner::printer</ref><sp/>*<ref refid="classGambit_1_1Printers_1_1BaseBasePrinter" kindref="compound">printer</ref><sp/>=<sp/><ref refid="py__module__obj_8hpp_1a4db5be61616f2b963ec1e5e404e96c30" kindref="member">get_printer</ref>().<ref refid="classGambit_1_1Printers_1_1BasePrinterManager_1ab4eb9bb6ce046a6319a211c9698f2e34" kindref="member">get_stream</ref>();</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>it<sp/>=<sp/><ref refid="py__module__obj_8hpp_1a941466c2e0e7c2a212ccda2e510f7bd1" kindref="member">get_keys</ref>().begin(),<sp/>end<sp/>=<sp/><ref refid="py__module__obj_8hpp_1a941466c2e0e7c2a212ccda2e510f7bd1" kindref="member">get_keys</ref>().end();<sp/>it<sp/>!=<sp/>end;<sp/>++it)</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>temp<sp/>=<sp/><ref refid="namespaceGambit_1_1Printers_1ac86b6f80a02d42cef6f8f287755300f1" kindref="member">get_main_param_id</ref>(*it);</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1Printers_1_1BaseBasePrinter" kindref="compound">printer</ref>-&gt;print(key_map[*it],<sp/>*it,<sp/>temp,<sp/><ref refid="classGambit_1_1Printers_1_1BaseBasePrinter" kindref="compound">printer</ref>-&gt;<ref refid="classGambit_1_1Printers_1_1BaseBasePrinter_1a8f7e69489c1a83b4208c3ca0237bf823" kindref="member">getRank</ref>(),<sp/><ref refid="namespaceGambit_1_1Printers_1a88e476c2035c63ea9635977764db3c2c" kindref="member">get_point_id</ref>());</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="210"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="212"><highlight class="comment">/**</highlight></codeline>
+<codeline lineno="213"><highlight class="comment"><sp/>*<sp/>@brief<sp/>A<sp/>pybind11<sp/>module<sp/>named<sp/>&quot;objective_plugin&quot;.</highlight></codeline>
+<codeline lineno="214"><highlight class="comment"><sp/>*<sp/></highlight></codeline>
+<codeline lineno="215"><highlight class="comment"><sp/>*<sp/>This<sp/>module<sp/>is<sp/>used<sp/>to<sp/>bind<sp/>Python<sp/>and<sp/>C++<sp/>code<sp/>using<sp/>the<sp/>pybind11<sp/>library.<sp/>It<sp/>imports<sp/>the<sp/>&quot;scannerbit&quot;<sp/>module<sp/>and<sp/>defines<sp/>some<sp/>functions<sp/>and<sp/>attributes<sp/>for<sp/>the<sp/>module.</highlight></codeline>
+<codeline lineno="216"><highlight class="comment"><sp/>*<sp/></highlight></codeline>
+<codeline lineno="217"><highlight class="comment"><sp/>*<sp/>@param<sp/>m<sp/>The<sp/>pybind11<sp/>module<sp/>to<sp/>which<sp/>the<sp/>bindings<sp/>are<sp/>added.</highlight></codeline>
+<codeline lineno="218"><highlight class="comment"><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="219" refid="py__module__obj_8hpp_1a462d79853602b5ee71899d29a73812ff" refkind="member"><highlight class="normal"><ref refid="py__module__obj_8hpp_1a462d79853602b5ee71899d29a73812ff" kindref="member">PYBIND11_EMBEDDED_MODULE</ref>(objective_plugin,<sp/>m)<sp/></highlight></codeline>
+<codeline lineno="220"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">::Gambit::Scanner::Plugins::ObjPyPlugin;</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Import<sp/>the<sp/>&quot;scannerbit&quot;<sp/>module</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/>m.attr(</highlight><highlight class="stringliteral">&quot;scannerbit&quot;</highlight><highlight class="normal">)<sp/>=<sp/>m.import(</highlight><highlight class="stringliteral">&quot;scannerbit&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Define<sp/>the<sp/>&quot;get_inifile_node&quot;<sp/>function<sp/>for<sp/>the<sp/>module</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/>m.def(</highlight><highlight class="stringliteral">&quot;get_inifile_node&quot;</highlight><highlight class="normal">,<sp/>[](py::args<sp/>args)<sp/>-&gt;<sp/>py::object</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>py::object<sp/>ret<sp/>=<sp/>Gambit::Scanner::yaml_to_dict(get_inifile_node());</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;&amp;arg<sp/>:<sp/>args)</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ret<sp/>=<sp/>py::dict(ret)[py::cast(arg.template<sp/>cast&lt;std::string&gt;())];</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ret;</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/>});</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Define<sp/>the<sp/>&quot;get_inifile_value&quot;<sp/>function<sp/>for<sp/>the<sp/>module</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/>m.def(</highlight><highlight class="stringliteral">&quot;get_inifile_value&quot;</highlight><highlight class="normal">,<sp/><ref refid="py__module__scanbit_8hpp_1a3480e658ce3e12d5d1410c606c65ce43" kindref="member">SCAN_PLUGIN_GET_INIFILE_VALUE_FUNC</ref>);</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Define<sp/>the<sp/>&quot;get_keys&quot;<sp/>function<sp/>for<sp/>the<sp/>module</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/>m.def(</highlight><highlight class="stringliteral">&quot;get_keys&quot;</highlight><highlight class="normal">,<sp/>get_keys);</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Define<sp/>the<sp/>&quot;set_dimension&quot;<sp/>function<sp/>for<sp/>the<sp/>module</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/>m.def(</highlight><highlight class="stringliteral">&quot;set_dimension&quot;</highlight><highlight class="normal">,<sp/>set_dimension);</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Define<sp/>the<sp/>&quot;print_parameters&quot;<sp/>function<sp/>for<sp/>the<sp/>module</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/>m.def(</highlight><highlight class="stringliteral">&quot;print_parameters&quot;</highlight><highlight class="normal">,<sp/>print_parameters);</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="247"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="ScannerBit/include/gambit/ScannerBit/py_module_obj.hpp"/>
+  </compounddef>
+</doxygen>

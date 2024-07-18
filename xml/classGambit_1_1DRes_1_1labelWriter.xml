@@ -3,9 +3,9 @@
   <compounddef id="classGambit_1_1DRes_1_1labelWriter" kind="class" language="C++" prot="public">
     <compoundname>Gambit::DRes::labelWriter</compoundname>
       <sectiondef kind="private-attrib">
-      <memberdef kind="variable" id="classGambit_1_1DRes_1_1labelWriter_1a5b937794ef7003531fc60f5f8824e62b" prot="private" static="no" mutable="no">
-        <type>const <ref refid="depresolver_8hpp_1ab3908c48a2c52ebf5d116d230ac62499" kindref="member">DRes::MasterGraphType</ref> *</type>
-        <definition>const DRes::MasterGraphType* Gambit::DRes::labelWriter::myGraph</definition>
+      <memberdef kind="variable" id="classGambit_1_1DRes_1_1labelWriter_1af826b87d475ec19fc07e91471ec1bccb" prot="private" static="no" mutable="no">
+        <type>const <ref refid="namespaceGambit_1_1DRes_1ab3908c48a2c52ebf5d116d230ac62499" kindref="member">MasterGraphType</ref> *</type>
+        <definition>const MasterGraphType* Gambit::DRes::labelWriter::myGraph</definition>
         <argsstring></argsstring>
         <name>myGraph</name>
         <qualifiedname>Gambit::DRes::labelWriter::myGraph</qualifiedname>
@@ -15,18 +15,18 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/src/depresolver.cpp" line="229" column="38" bodyfile="Core/src/depresolver.cpp" bodystart="229" bodyend="-1"/>
+        <location file="Core/src/depresolver.cpp" line="171" column="32" bodyfile="Core/src/depresolver.cpp" bodystart="171" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="classGambit_1_1DRes_1_1labelWriter_1a1bbfcc2669a09dc41f0981e3fc980499" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classGambit_1_1DRes_1_1labelWriter_1a0783e15d89483935b8e6465aff936f05" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
         <definition>Gambit::DRes::labelWriter::labelWriter</definition>
-        <argsstring>(const DRes::MasterGraphType *masterGraph)</argsstring>
+        <argsstring>(const MasterGraphType *masterGraph)</argsstring>
         <name>labelWriter</name>
         <qualifiedname>Gambit::DRes::labelWriter::labelWriter</qualifiedname>
         <param>
-          <type>const <ref refid="depresolver_8hpp_1ab3908c48a2c52ebf5d116d230ac62499" kindref="member">DRes::MasterGraphType</ref> *</type>
+          <type>const <ref refid="namespaceGambit_1_1DRes_1ab3908c48a2c52ebf5d116d230ac62499" kindref="member">MasterGraphType</ref> *</type>
           <declname>masterGraph</declname>
         </param>
         <briefdescription>
@@ -35,7 +35,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/src/depresolver.cpp" line="231" column="9" bodyfile="Core/src/depresolver.cpp" bodystart="231" bodyend="231"/>
+        <location file="Core/src/depresolver.cpp" line="173" column="9" bodyfile="Core/src/depresolver.cpp" bodystart="173" bodyend="173"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1DRes_1_1labelWriter_1acbea850682bd5139e68c36929a90fbce" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -57,17 +57,18 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/src/depresolver.cpp" line="232" column="14" bodyfile="Core/src/depresolver.cpp" bodystart="232" bodyend="245"/>
+        <location file="Core/src/depresolver.cpp" line="174" column="14" bodyfile="Core/src/depresolver.cpp" bodystart="174" bodyend="187"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
+<para>Graphviz output for individual vertices/nodes/module functions. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Core/src/depresolver.cpp" line="226" column="5" bodyfile="Core/src/depresolver.cpp" bodystart="227" bodyend="246"/>
+    <location file="Core/src/depresolver.cpp" line="168" column="5" bodyfile="Core/src/depresolver.cpp" bodystart="169" bodyend="188"/>
     <listofallmembers>
-      <member refid="classGambit_1_1DRes_1_1labelWriter_1a1bbfcc2669a09dc41f0981e3fc980499" prot="public" virt="non-virtual"><scope>Gambit::DRes::labelWriter</scope><name>labelWriter</name></member>
-      <member refid="classGambit_1_1DRes_1_1labelWriter_1a5b937794ef7003531fc60f5f8824e62b" prot="private" virt="non-virtual"><scope>Gambit::DRes::labelWriter</scope><name>myGraph</name></member>
+      <member refid="classGambit_1_1DRes_1_1labelWriter_1a0783e15d89483935b8e6465aff936f05" prot="public" virt="non-virtual"><scope>Gambit::DRes::labelWriter</scope><name>labelWriter</name></member>
+      <member refid="classGambit_1_1DRes_1_1labelWriter_1af826b87d475ec19fc07e91471ec1bccb" prot="private" virt="non-virtual"><scope>Gambit::DRes::labelWriter</scope><name>myGraph</name></member>
       <member refid="classGambit_1_1DRes_1_1labelWriter_1acbea850682bd5139e68c36929a90fbce" prot="public" virt="non-virtual"><scope>Gambit::DRes::labelWriter</scope><name>operator()</name></member>
     </listofallmembers>
   </compounddef>

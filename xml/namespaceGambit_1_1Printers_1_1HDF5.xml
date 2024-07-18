@@ -261,7 +261,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/src/printers/hdf5printer/hdf5tools.cpp" line="671" column="12" bodyfile="Printers/src/printers/hdf5printer/hdf5tools.cpp" bodystart="671" bodyend="678" declfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" declline="125" declcolumn="15"/>
+        <location file="Printers/src/printers/hdf5printer/hdf5tools.cpp" line="685" column="12" bodyfile="Printers/src/printers/hdf5printer/hdf5tools.cpp" bodystart="685" bodyend="692" declfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" declline="125" declcolumn="15"/>
       </memberdef>
       <memberdef kind="function" id="hdf5tools_8hpp_1a00b8a9a9b35a8b374362834b39cbc28d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -276,12 +276,12 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/src/printers/hdf5printer/hdf5tools.cpp" line="681" column="12" bodyfile="Printers/src/printers/hdf5printer/hdf5tools.cpp" bodystart="681" bodyend="685" declfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" declline="128" declcolumn="15"/>
+        <location file="Printers/src/printers/hdf5printer/hdf5tools.cpp" line="695" column="12" bodyfile="Printers/src/printers/hdf5printer/hdf5tools.cpp" bodystart="695" bodyend="699" declfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" declline="128" declcolumn="15"/>
       </memberdef>
-      <memberdef kind="function" id="hdf5tools_8hpp_1a4a28a77b6dbe3e3d0d1a9da49f8504dd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="hdf5tools_8hpp_1a2e5ec84793ea7391c6a474decaddc9b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>hid_t</type>
         <definition>hid_t Gambit::Printers::HDF5::openGroup</definition>
-        <argsstring>(hid_t file_id, const std::string &amp;name, bool nocreate=false)</argsstring>
+        <argsstring>(hid_t file_id, const std::string &amp;name, bool nocreate=false, bool fatal=true)</argsstring>
         <name>openGroup</name>
         <qualifiedname>Gambit::Printers::HDF5::openGroup</qualifiedname>
         <param>
@@ -297,13 +297,18 @@
           <declname>nocreate</declname>
           <defval>false</defval>
         </param>
+        <param>
+          <type>bool</type>
+          <declname>fatal</declname>
+          <defval>true</defval>
+        </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/src/printers/hdf5printer/hdf5tools.cpp" line="512" column="13" bodyfile="Printers/src/printers/hdf5printer/hdf5tools.cpp" bodystart="512" bodyend="575" declfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" declline="142" declcolumn="16"/>
+        <location file="Printers/src/printers/hdf5printer/hdf5tools.cpp" line="512" column="13" bodyfile="Printers/src/printers/hdf5printer/hdf5tools.cpp" bodystart="512" bodyend="589" declfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" declline="142" declcolumn="16"/>
       </memberdef>
       <memberdef kind="function" id="hdf5tools_8hpp_1ab1874c1d1489ed4d2865669f0d7a2648" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>hid_t</type>
@@ -341,7 +346,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/src/printers/hdf5printer/hdf5tools.cpp" line="593" column="19" bodyfile="Printers/src/printers/hdf5printer/hdf5tools.cpp" bodystart="593" bodyend="613" declfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" declline="148" declcolumn="22"/>
+        <location file="Printers/src/printers/hdf5printer/hdf5tools.cpp" line="607" column="19" bodyfile="Printers/src/printers/hdf5printer/hdf5tools.cpp" bodystart="607" bodyend="627" declfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" declline="148" declcolumn="22"/>
       </memberdef>
       <memberdef kind="function" id="hdf5tools_8hpp_1aece2076b406c21490c641952824fa800" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>hid_t</type>
@@ -365,7 +370,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/src/printers/hdf5printer/hdf5tools.cpp" line="631" column="13" bodyfile="Printers/src/printers/hdf5printer/hdf5tools.cpp" bodystart="631" bodyend="649" declfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" declline="151" declcolumn="16"/>
+        <location file="Printers/src/printers/hdf5printer/hdf5tools.cpp" line="645" column="13" bodyfile="Printers/src/printers/hdf5printer/hdf5tools.cpp" bodystart="645" bodyend="663" declfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" declline="151" declcolumn="16"/>
       </memberdef>
       <memberdef kind="function" id="hdf5tools_8hpp_1a44da0cf5bcf2392967fa9675033d57ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>hid_t</type>
@@ -417,7 +422,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/src/printers/hdf5printer/hdf5tools.cpp" line="691" column="13" bodyfile="Printers/src/printers/hdf5printer/hdf5tools.cpp" bodystart="691" bodyend="710" declfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" declline="161" declcolumn="16"/>
+        <location file="Printers/src/printers/hdf5printer/hdf5tools.cpp" line="705" column="13" bodyfile="Printers/src/printers/hdf5printer/hdf5tools.cpp" bodystart="705" bodyend="724" declfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" declline="161" declcolumn="16"/>
       </memberdef>
       <memberdef kind="function" id="hdf5tools_8hpp_1a2e95f5e32712addd7db876d87b239b7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>hid_t</type>
@@ -514,7 +519,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/src/printers/hdf5printer/hdf5tools.cpp" line="723" column="19" bodyfile="Printers/src/printers/hdf5printer/hdf5tools.cpp" bodystart="723" bodyend="730" declfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" declline="176" declcolumn="22"/>
+        <location file="Printers/src/printers/hdf5printer/hdf5tools.cpp" line="737" column="19" bodyfile="Printers/src/printers/hdf5printer/hdf5tools.cpp" bodystart="737" bodyend="744" declfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" declline="176" declcolumn="22"/>
       </memberdef>
       <memberdef kind="function" id="hdf5tools_8hpp_1aa183487983cd8a7e15d681cc0f22f92e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::pair&lt; hid_t, hid_t &gt;</type>
@@ -541,7 +546,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/src/printers/hdf5printer/hdf5tools.cpp" line="733" column="17" bodyfile="Printers/src/printers/hdf5printer/hdf5tools.cpp" bodystart="733" bodyend="778" declfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" declline="179" declcolumn="20"/>
+        <location file="Printers/src/printers/hdf5printer/hdf5tools.cpp" line="747" column="17" bodyfile="Printers/src/printers/hdf5printer/hdf5tools.cpp" bodystart="747" bodyend="792" declfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" declline="179" declcolumn="20"/>
       </memberdef>
       <memberdef kind="function" id="hdf5tools_8hpp_1a1ae11ab53d31f2bee387b2182be3f329" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -565,7 +570,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/src/printers/hdf5printer/hdf5tools.cpp" line="616" column="12" bodyfile="Printers/src/printers/hdf5printer/hdf5tools.cpp" bodystart="616" bodyend="627" declfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" declline="182" declcolumn="15"/>
+        <location file="Printers/src/printers/hdf5printer/hdf5tools.cpp" line="630" column="12" bodyfile="Printers/src/printers/hdf5printer/hdf5tools.cpp" bodystart="630" bodyend="641" declfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" declline="182" declcolumn="15"/>
       </memberdef>
       <memberdef kind="function" id="hdf5tools_8hpp_1aa54ecc5c2dddc703833c91b6ab2a06c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -643,7 +648,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/src/printers/hdf5printer/hdf5tools.cpp" line="783" column="11" bodyfile="Printers/src/printers/hdf5printer/hdf5tools.cpp" bodystart="783" bodyend="807" declfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" declline="223" declcolumn="14"/>
+        <location file="Printers/src/printers/hdf5printer/hdf5tools.cpp" line="797" column="11" bodyfile="Printers/src/printers/hdf5printer/hdf5tools.cpp" bodystart="797" bodyend="821" declfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" declline="223" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="hdf5tools_8hpp_1a5f08dfbe02bdd0d77206b1df86217e7e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -661,7 +666,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/src/printers/hdf5printer/hdf5tools.cpp" line="810" column="12" bodyfile="Printers/src/printers/hdf5printer/hdf5tools.cpp" bodystart="810" bodyend="829" declfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" declline="226" declcolumn="15"/>
+        <location file="Printers/src/printers/hdf5printer/hdf5tools.cpp" line="824" column="12" bodyfile="Printers/src/printers/hdf5printer/hdf5tools.cpp" bodystart="824" bodyend="843" declfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5tools.hpp" declline="226" declcolumn="15"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="var">
@@ -679,7 +684,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/src/printers/hdf5printer/hdf5tools.cpp" line="658" column="19" bodyfile="Printers/src/printers/hdf5printer/hdf5tools.cpp" bodystart="658" bodyend="-1"/>
+        <location file="Printers/src/printers/hdf5printer/hdf5tools.cpp" line="672" column="19" bodyfile="Printers/src/printers/hdf5printer/hdf5tools.cpp" bodystart="672" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="hdf5tools_8cpp_1aa31189747322062039ed6ba4ffc51a50" prot="public" static="no" mutable="no">
         <type>void *</type>
@@ -693,7 +698,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/src/printers/hdf5printer/hdf5tools.cpp" line="659" column="12" bodyfile="Printers/src/printers/hdf5printer/hdf5tools.cpp" bodystart="659" bodyend="-1"/>
+        <location file="Printers/src/printers/hdf5printer/hdf5tools.cpp" line="673" column="12" bodyfile="Printers/src/printers/hdf5printer/hdf5tools.cpp" bodystart="673" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -820,7 +825,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/src/printers/hdf5printer/hdf5_combine_tools.cpp" line="1357" column="32" bodyfile="Printers/src/printers/hdf5printer/hdf5_combine_tools.cpp" bodystart="1357" bodyend="1495" declfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5_combine_tools.hpp" declline="489" declcolumn="32"/>
+        <location file="Printers/src/printers/hdf5printer/hdf5_combine_tools.cpp" line="1360" column="32" bodyfile="Printers/src/printers/hdf5printer/hdf5_combine_tools.cpp" bodystart="1360" bodyend="1498" declfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5_combine_tools.hpp" declline="489" declcolumn="32"/>
       </memberdef>
       <memberdef kind="function" id="hdf5__combine__tools_8hpp_1af5d90bb4e4d4ea7baea508017eb719c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::pair&lt; std::vector&lt; std::string &gt;, std::vector&lt; size_t &gt; &gt;</type>
@@ -839,7 +844,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/src/printers/hdf5printer/hdf5_combine_tools.cpp" line="1497" column="23" bodyfile="Printers/src/printers/hdf5printer/hdf5_combine_tools.cpp" bodystart="1497" bodyend="1501" declfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5_combine_tools.hpp" declline="492" declcolumn="23"/>
+        <location file="Printers/src/printers/hdf5printer/hdf5_combine_tools.cpp" line="1500" column="23" bodyfile="Printers/src/printers/hdf5printer/hdf5_combine_tools.cpp" bodystart="1500" bodyend="1504" declfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5_combine_tools.hpp" declline="492" declcolumn="23"/>
       </memberdef>
       <memberdef kind="function" id="hdf5__combine__tools_8hpp_1aec6cb1004f0ef05c46dd4701a819f5d5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::pair&lt; std::vector&lt; std::string &gt;, std::vector&lt; size_t &gt; &gt;</type>
@@ -862,7 +867,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/src/printers/hdf5printer/hdf5_combine_tools.cpp" line="1504" column="23" bodyfile="Printers/src/printers/hdf5printer/hdf5_combine_tools.cpp" bodystart="1504" bodyend="1546" declfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5_combine_tools.hpp" declline="493" declcolumn="23"/>
+        <location file="Printers/src/printers/hdf5printer/hdf5_combine_tools.cpp" line="1507" column="23" bodyfile="Printers/src/printers/hdf5printer/hdf5_combine_tools.cpp" bodystart="1507" bodyend="1549" declfile="Printers/include/gambit/Printers/printers/hdf5printer/hdf5_combine_tools.hpp" declline="493" declcolumn="23"/>
       </memberdef>
       <memberdef kind="function" id="hdf5__combine__tools_8cpp_1a81497d424d265b92cd822a373860bec8" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>hsize_t</type>
@@ -1173,7 +1178,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/src/printers/hdf5printer/hdf5tools.cpp" line="578" column="14" bodyfile="Printers/src/printers/hdf5printer/hdf5tools.cpp" bodystart="578" bodyend="590"/>
+        <location file="Printers/src/printers/hdf5printer/hdf5tools.cpp" line="592" column="14" bodyfile="Printers/src/printers/hdf5printer/hdf5tools.cpp" bodystart="592" bodyend="604"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

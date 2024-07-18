@@ -210,7 +210,7 @@ namespace Gambit
 
 
         vector<const Jet*> baselineJets;
-        for (const HEPUtils::Jet* jet : event->jets())
+        for (const HEPUtils::Jet* jet : event->jets("antikt_R04"))
         {
           if (jet->pT() > 20.0 && jet->abseta() < 4.5)
           {
@@ -495,4 +495,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:07 +0000
+Updated on 2024-07-18 at 13:53:34 +0000

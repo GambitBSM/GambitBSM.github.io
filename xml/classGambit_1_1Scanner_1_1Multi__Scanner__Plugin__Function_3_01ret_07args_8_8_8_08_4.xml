@@ -31,10 +31,10 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="classGambit_1_1Scanner_1_1Multi__Scanner__Plugin__Function_3_01ret_07args_8_8_8_08_4_1a59c6a23b63d7717cc2558eb097236666" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classGambit_1_1Scanner_1_1Multi__Scanner__Plugin__Function_3_01ret_07args_8_8_8_08_4_1a76c0a0091127854738852a39302568b7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
         <definition>Gambit::Scanner::Multi_Scanner_Plugin_Function&lt; ret(args...)&gt;::Multi_Scanner_Plugin_Function</definition>
-        <argsstring>(const std::map&lt; std::string, std::vector&lt; std::string &gt; &gt; &amp;params, const std::vector&lt; std::pair&lt; std::string, std::string &gt; &gt; &amp;names)</argsstring>
+        <argsstring>(const std::map&lt; std::string, std::vector&lt; std::string &gt; &gt; &amp;params, const std::vector&lt; std::pair&lt; std::string, std::string &gt; &gt; &amp;names, const Factory_Base &amp;fac)</argsstring>
         <name>Multi_Scanner_Plugin_Function</name>
         <qualifiedname>Gambit::Scanner::Multi_Scanner_Plugin_Function&lt; ret(args...)&gt;::Multi_Scanner_Plugin_Function</qualifiedname>
         <param>
@@ -44,6 +44,10 @@
         <param>
           <type>const std::vector&lt; std::pair&lt; std::string, std::string &gt; &gt; &amp;</type>
           <declname>names</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classGambit_1_1Scanner_1_1Factory__Base" kindref="compound">Factory_Base</ref> &amp;</type>
+          <declname>fac</declname>
         </param>
         <briefdescription>
         </briefdescription>
@@ -91,7 +95,7 @@
         </childnode>
       </node>
       <node id="3">
-        <label>enable_shared_from_this&lt; Function_Base&lt; ret(args...)&gt; &gt;</label>
+        <label>std::enable_shared_from_this&lt; Function_Base&lt; ret(args...)&gt; &gt;</label>
       </node>
     </inheritancegraph>
     <collaborationgraph>
@@ -108,7 +112,7 @@
         </childnode>
       </node>
       <node id="3">
-        <label>enable_shared_from_this&lt; Function_Base&lt; ret(args...)&gt; &gt;</label>
+        <label>std::enable_shared_from_this&lt; Function_Base&lt; ret(args...)&gt; &gt;</label>
       </node>
     </collaborationgraph>
     <location file="ScannerBit/include/gambit/ScannerBit/plugin_factory.hpp" line="98" column="9" bodyfile="ScannerBit/include/gambit/ScannerBit/plugin_factory.hpp" bodystart="99" bodyend="134"/>
@@ -117,6 +121,8 @@
       <member refid="classGambit_1_1Scanner_1_1Function__Base_3_01ret_07args_8_8_8_08_4_1a76a74db811f914c8e5b3a62ac3dff85c" prot="public" virt="non-virtual"><scope>Gambit::Scanner::Multi_Scanner_Plugin_Function&lt; ret(args...)&gt;</scope><name>disable_external_shutdown</name></member>
       <member refid="classGambit_1_1Scanner_1_1Function__Base_3_01ret_07args_8_8_8_08_4_1a0451b367b650170b82d2fe60613ccbe9" prot="public" virt="non-virtual"><scope>Gambit::Scanner::Multi_Scanner_Plugin_Function&lt; ret(args...)&gt;</scope><name>Function_Base</name></member>
       <member refid="classGambit_1_1Scanner_1_1Multi__Scanner__Plugin__Function_3_01ret_07args_8_8_8_08_4_1aa902532e167cdb00ca54431d52884c17" prot="private" virt="non-virtual"><scope>Gambit::Scanner::Multi_Scanner_Plugin_Function&lt; ret(args...)&gt;</scope><name>functions</name></member>
+      <member refid="classGambit_1_1Scanner_1_1Function__Base_3_01ret_07args_8_8_8_08_4_1abb47d806d26ae6cfc45f355e48cc38c6" prot="public" virt="non-virtual"><scope>Gambit::Scanner::Multi_Scanner_Plugin_Function&lt; ret(args...)&gt;</scope><name>get_names</name></member>
+      <member refid="classGambit_1_1Scanner_1_1Function__Base_3_01ret_07args_8_8_8_08_4_1a8b12211615a915974224ebfc49c95c51" prot="public" virt="non-virtual"><scope>Gambit::Scanner::Multi_Scanner_Plugin_Function&lt; ret(args...)&gt;</scope><name>getMap</name></member>
       <member refid="classGambit_1_1Scanner_1_1Function__Base_3_01ret_07args_8_8_8_08_4_1adb41ed248f208c77277f7480eb4a87db" prot="public" virt="non-virtual"><scope>Gambit::Scanner::Multi_Scanner_Plugin_Function&lt; ret(args...)&gt;</scope><name>getNextPtID</name></member>
       <member refid="classGambit_1_1Scanner_1_1Function__Base_3_01ret_07args_8_8_8_08_4_1ae6e143b0f18b9a78ec7db9afd6643e02" prot="public" virt="non-virtual"><scope>Gambit::Scanner::Multi_Scanner_Plugin_Function&lt; ret(args...)&gt;</scope><name>getParameters</name></member>
       <member refid="classGambit_1_1Scanner_1_1Function__Base_3_01ret_07args_8_8_8_08_4_1a9455c376b84c04f332803e91fb5344d7" prot="public" virt="non-virtual"><scope>Gambit::Scanner::Multi_Scanner_Plugin_Function&lt; ret(args...)&gt;</scope><name>getPrinter</name></member>
@@ -127,9 +133,10 @@
       <member refid="classGambit_1_1Scanner_1_1Function__Base_3_01ret_07args_8_8_8_08_4_1ae09f09eb9bbaa224292103b10e4324ba" prot="public" virt="non-virtual"><scope>Gambit::Scanner::Multi_Scanner_Plugin_Function&lt; ret(args...)&gt;</scope><name>getPurposeOffset</name></member>
       <member refid="classGambit_1_1Scanner_1_1Function__Base_3_01ret_07args_8_8_8_08_4_1aab8d271023563259a7abcb916a5c3969" prot="public" virt="non-virtual"><scope>Gambit::Scanner::Multi_Scanner_Plugin_Function&lt; ret(args...)&gt;</scope><name>getRank</name></member>
       <member refid="classGambit_1_1Scanner_1_1Function__Base_3_01ret_07args_8_8_8_08_4_1a20560ef10eb9a06428aae021dfcd7c50" prot="public" virt="non-virtual"><scope>Gambit::Scanner::Multi_Scanner_Plugin_Function&lt; ret(args...)&gt;</scope><name>getShownParameters</name></member>
+      <member refid="classGambit_1_1Scanner_1_1Function__Base_3_01ret_07args_8_8_8_08_4_1a6c84fbc1d3f1e1f50fe2f9ea3c080812" prot="public" virt="non-virtual"><scope>Gambit::Scanner::Multi_Scanner_Plugin_Function&lt; ret(args...)&gt;</scope><name>inverse_transform</name></member>
       <member refid="classGambit_1_1Scanner_1_1Multi__Scanner__Plugin__Function_3_01ret_07args_8_8_8_08_4_1a5e56577d996526b228d3d6f649e39e1c" prot="public" virt="non-virtual"><scope>Gambit::Scanner::Multi_Scanner_Plugin_Function&lt; ret(args...)&gt;</scope><name>main</name></member>
       <member refid="classGambit_1_1Scanner_1_1Function__Base_3_01ret_07args_8_8_8_08_4_1a56c3f1e2f1b870402ee819bf7938c434" prot="public" virt="pure-virtual" ambiguityscope="Gambit::Scanner::Function_Base&lt; ret(args...)&gt;::"><scope>Gambit::Scanner::Multi_Scanner_Plugin_Function&lt; ret(args...)&gt;</scope><name>main</name></member>
-      <member refid="classGambit_1_1Scanner_1_1Multi__Scanner__Plugin__Function_3_01ret_07args_8_8_8_08_4_1a59c6a23b63d7717cc2558eb097236666" prot="public" virt="non-virtual"><scope>Gambit::Scanner::Multi_Scanner_Plugin_Function&lt; ret(args...)&gt;</scope><name>Multi_Scanner_Plugin_Function</name></member>
+      <member refid="classGambit_1_1Scanner_1_1Multi__Scanner__Plugin__Function_3_01ret_07args_8_8_8_08_4_1a76c0a0091127854738852a39302568b7" prot="public" virt="non-virtual"><scope>Gambit::Scanner::Multi_Scanner_Plugin_Function&lt; ret(args...)&gt;</scope><name>Multi_Scanner_Plugin_Function</name></member>
       <member refid="classGambit_1_1Scanner_1_1Function__Base_3_01ret_07args_8_8_8_08_4_1af423bbd3c2d0c3f9d91d3d505a3fbe86" prot="public" virt="non-virtual"><scope>Gambit::Scanner::Multi_Scanner_Plugin_Function&lt; ret(args...)&gt;</scope><name>operator()</name></member>
       <member refid="classGambit_1_1Scanner_1_1Function__Base_3_01ret_07args_8_8_8_08_4_1ae10a510c1aa9a8423834352919a20c51" prot="public" virt="virtual"><scope>Gambit::Scanner::Multi_Scanner_Plugin_Function&lt; ret(args...)&gt;</scope><name>purposeModifier</name></member>
       <member refid="classGambit_1_1Scanner_1_1Function__Base_3_01ret_07args_8_8_8_08_4_1a6201c84b1d7988aa388a19b3ee004b61" prot="public" virt="non-virtual"><scope>Gambit::Scanner::Multi_Scanner_Plugin_Function&lt; ret(args...)&gt;</scope><name>scanner_can_quit</name></member>
@@ -141,6 +148,7 @@
       <member refid="classGambit_1_1Scanner_1_1Function__Base_3_01ret_07args_8_8_8_08_4_1ac6f05eecd136de51907cb4e87faad26d" prot="public" virt="non-virtual"><scope>Gambit::Scanner::Multi_Scanner_Plugin_Function&lt; ret(args...)&gt;</scope><name>setRank</name></member>
       <member refid="classGambit_1_1Scanner_1_1Function__Base_3_01ret_07args_8_8_8_08_4_1a8b90fd44f69a43a60af64b582827fea3" prot="public" virt="non-virtual"><scope>Gambit::Scanner::Multi_Scanner_Plugin_Function&lt; ret(args...)&gt;</scope><name>switch_to_alternate_min_LogL</name></member>
       <member refid="classGambit_1_1Scanner_1_1Function__Base_3_01ret_07args_8_8_8_08_4_1ae1546e867cfee6d0b4c822f8bd67fc06" prot="public" virt="non-virtual"><scope>Gambit::Scanner::Multi_Scanner_Plugin_Function&lt; ret(args...)&gt;</scope><name>tell_scanner_early_shutdown_in_progress</name></member>
+      <member refid="classGambit_1_1Scanner_1_1Function__Base_3_01ret_07args_8_8_8_08_4_1a9e9a96c515dc85279ccc446b2b2a43ec" prot="public" virt="non-virtual"><scope>Gambit::Scanner::Multi_Scanner_Plugin_Function&lt; ret(args...)&gt;</scope><name>transform</name></member>
       <member refid="classGambit_1_1Scanner_1_1Function__Base_3_01ret_07args_8_8_8_08_4_1a9cdec7ebbcdc2d800e3c02609a1764da" prot="public" virt="virtual"><scope>Gambit::Scanner::Multi_Scanner_Plugin_Function&lt; ret(args...)&gt;</scope><name>~Function_Base</name></member>
     </listofallmembers>
   </compounddef>

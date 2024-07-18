@@ -11,6 +11,7 @@
     <includes refid="nulike_8hpp" local="yes">gambit/Backends/backend_types/nulike.hpp</includes>
     <includedby refid="DarkBit__rollcall_8hpp" local="yes">DarkBit_rollcall.hpp</includedby>
     <includedby refid="DarkBit__types_8cpp" local="yes">DarkBit_types.cpp</includedby>
+    <includedby refid="Xray_8cpp" local="yes">Xray.cpp</includedby>
     <incdepgraph>
       <node id="68">
         <label>gambit/Backends/backend_types/nulike.hpp</label>
@@ -535,13 +536,23 @@
         </childnode>
         <childnode refid="31" relation="include">
         </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
       </node>
       <node id="1">
         <label>DarkBit_types.hpp</label>
         <link refid="DarkBit__types_8hpp"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="32" relation="include">
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
         </childnode>
       </node>
       <node id="3">
@@ -580,7 +591,7 @@
         <label>DarkBit.cpp</label>
         <link refid="DarkBit_8cpp"/>
       </node>
-      <node id="32">
+      <node id="36">
         <label>DarkBit_types.cpp</label>
         <link refid="DarkBit__types_8cpp"/>
       </node>
@@ -637,18 +648,34 @@
         <link refid="SimpleLikelihoods_8cpp"/>
       </node>
       <node id="28">
+        <label>SubGeVDM_SelfInteractions.cpp</label>
+        <link refid="SubGeVDM__SelfInteractions_8cpp"/>
+      </node>
+      <node id="29">
+        <label>SubGeVDM_fermion.cpp</label>
+        <link refid="SubGeVDM__fermion_8cpp"/>
+      </node>
+      <node id="30">
+        <label>SubGeVDM_scalar.cpp</label>
+        <link refid="SubGeVDM__scalar_8cpp"/>
+      </node>
+      <node id="31">
         <label>SunNeutrinos.cpp</label>
         <link refid="SunNeutrinos_8cpp"/>
       </node>
-      <node id="29">
+      <node id="32">
         <label>VectorSingletDM.cpp</label>
         <link refid="DarkBit_2src_2VectorSingletDM_8cpp"/>
       </node>
-      <node id="30">
+      <node id="33">
         <label>WIMP_EFT.cpp</label>
         <link refid="WIMP__EFT_8cpp"/>
       </node>
-      <node id="31">
+      <node id="34">
+        <label>Xray.cpp</label>
+        <link refid="Xray_8cpp"/>
+      </node>
+      <node id="35">
         <label>decay_chain.cpp</label>
         <link refid="decay__chain_8cpp"/>
       </node>
@@ -677,7 +704,7 @@
 </simplesect>
 <simplesect kind="author"><para>Torsten Bringmann (<ulink url="mailto:torsten.bringmann@fys.uio.no">torsten.bringmann@fys.uio.no</ulink>) </para>
 </simplesect>
-<simplesect kind="date"><para>2013 Jun</para>
+<simplesect kind="date"><para>2013 Jun, 2023</para>
 </simplesect>
 <simplesect kind="author"><para>Pat Scott (<ulink url="mailto:pat.scott@uq.edu.au">pat.scott@uq.edu.au</ulink>) </para>
 </simplesect>
@@ -744,7 +771,7 @@
 <codeline lineno="23"><highlight class="comment">///</highlight></codeline>
 <codeline lineno="24"><highlight class="comment">///<sp/><sp/>\author<sp/>Torsten<sp/>Bringmann</highlight></codeline>
 <codeline lineno="25"><highlight class="comment">///<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(torsten.bringmann@fys.uio.no)</highlight></codeline>
-<codeline lineno="26"><highlight class="comment">///<sp/><sp/>\date<sp/>2013<sp/>Jun</highlight></codeline>
+<codeline lineno="26"><highlight class="comment">///<sp/><sp/>\date<sp/>2013<sp/>Jun,<sp/>2023</highlight></codeline>
 <codeline lineno="27"><highlight class="comment">///</highlight></codeline>
 <codeline lineno="28"><highlight class="comment">///<sp/><sp/>\author<sp/>Pat<sp/>Scott</highlight></codeline>
 <codeline lineno="29"><highlight class="comment">///<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(pat.scott@uq.edu.au)</highlight></codeline>
@@ -841,89 +868,90 @@
 <codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;TH_Resonance&gt;<sp/>resonances;</highlight></codeline>
 <codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/>threshold_energy;</highlight></codeline>
 <codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>particle_index_type;</highlight></codeline>
-<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isSelfConj;</highlight></codeline>
-<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="125"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="126"><highlight class="comment"><sp/><sp/><sp/><sp/>//////////////////////////////////////////////</highlight></codeline>
-<codeline lineno="127"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Neutrino<sp/>telescope<sp/>data<sp/>structures</highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="128"><highlight class="comment"><sp/><sp/><sp/><sp/>//////////////////////////////////////////////</highlight></codeline>
-<codeline lineno="129"><highlight class="comment"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="130"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Neutrino<sp/>telescope<sp/>yield<sp/>info<sp/>container</highlight></codeline>
-<codeline lineno="131" refid="structGambit_1_1DarkBit_1_1nuyield__info" refkind="compound"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structGambit_1_1DarkBit_1_1nuyield__info" kindref="compound">nuyield_info</ref></highlight></codeline>
-<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>threadsafe;</highlight></codeline>
-<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nuyield_function_pointer<sp/>pointer;</highlight></codeline>
-<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="137"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="138"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Neutrino<sp/>telescope<sp/>data<sp/>container</highlight></codeline>
-<codeline lineno="139" refid="structGambit_1_1DarkBit_1_1nudata" refkind="compound"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structGambit_1_1DarkBit_1_1nudata" kindref="compound">nudata</ref></highlight></codeline>
-<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nobs;</highlight></codeline>
-<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>signal;</highlight></codeline>
-<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>bg;</highlight></codeline>
-<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>loglike;</highlight></codeline>
-<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>bgloglike;</highlight></codeline>
-<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>pvalue;</highlight></codeline>
-<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="149"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="150"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Annihilation/decay<sp/>channel</highlight></codeline>
-<codeline lineno="151" refid="structGambit_1_1DarkBit_1_1SimYieldChannel" refkind="compound"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structGambit_1_1DarkBit_1_1SimYieldChannel" kindref="compound">SimYieldChannel</ref></highlight></codeline>
-<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structGambit_1_1DarkBit_1_1SimYieldChannel_1abc5dd5c089716dff0f806fd5189452c7" kindref="member">SimYieldChannel</ref>(daFunk::Funk<sp/>dNdE,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>p1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>p2,</highlight></codeline>
-<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>finalState,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Ecm_min,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Ecm_max,<sp/><ref refid="classGambit_1_1safe__ptr" kindref="compound">safe_ptr&lt;Options&gt;</ref><sp/>runOptions);</highlight></codeline>
-<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>daFunk::Funk<sp/>dNdE;</highlight></codeline>
-<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>daFunk::BoundFunk<sp/>dNdE_bound;<sp/><sp/></highlight><highlight class="comment">//<sp/>Pre-bound<sp/>version<sp/>for<sp/>use<sp/>in<sp/>e.g.<sp/>cascade<sp/>decays</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>p1;</highlight></codeline>
-<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>p2;</highlight></codeline>
-<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>finalState;</highlight></codeline>
-<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>finalStateMass;</highlight></codeline>
-<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Ecm_min;</highlight></codeline>
-<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Ecm_max;</highlight></codeline>
-<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="164"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="165"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Result<sp/>of<sp/>SimYieldTable::checkChannel</highlight></codeline>
-<codeline lineno="166" refid="DarkBit__types_8hpp_1ae515a362ebed7788d58aabd4b9a6f944" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="DarkBit__types_8hpp_1ae515a362ebed7788d58aabd4b9a6f944" kindref="member">SimYieldChannelCheck</ref></highlight></codeline>
-<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>success,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>check<sp/>succeeded.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>duplication,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>channel<sp/>is<sp/>already<sp/>in<sp/>the<sp/>SimYieldTable</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>monochromatic_line<sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>channel<sp/>is<sp/>a<sp/>monochromatic<sp/>line<sp/>(pi==finalState)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="172"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="173"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>\brief<sp/>Channel<sp/>container</highlight></codeline>
-<codeline lineno="174"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Object<sp/>containing<sp/>tabularized<sp/>yields<sp/>for<sp/>particle<sp/>decay<sp/>and<sp/>two-body<sp/>final<sp/>states.</highlight></codeline>
-<codeline lineno="175" refid="classGambit_1_1DarkBit_1_1SimYieldTable" refkind="compound"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classGambit_1_1DarkBit_1_1SimYieldTable" kindref="compound">SimYieldTable</ref></highlight></codeline>
-<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1DarkBit_1_1SimYieldTable_1aac8814e27bf17c5c2d2a07364f7163a9" kindref="member">SimYieldTable</ref>();</highlight></codeline>
-<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>addChannel(daFunk::Funk<sp/>dNdE,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>p1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>p2,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>finalState,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Ecm_min,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Ecm_max,<sp/><ref refid="classGambit_1_1safe__ptr" kindref="compound">safe_ptr&lt;Options&gt;</ref><sp/>runOptions);</highlight></codeline>
-<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>addChannel(daFunk::Funk<sp/>dNdE,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>p1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>finalState,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Ecm_min,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Ecm_max,<sp/><ref refid="classGambit_1_1safe__ptr" kindref="compound">safe_ptr&lt;Options&gt;</ref><sp/>runOptions);</highlight></codeline>
-<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>addChannel(<ref refid="structGambit_1_1DarkBit_1_1SimYieldChannel" kindref="compound">SimYieldChannel</ref><sp/>channel);</highlight></codeline>
-<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>replaceFinalState(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>oldFinalState,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>newFinalState);</highlight></codeline>
-<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>donateChannels(<ref refid="classGambit_1_1DarkBit_1_1SimYieldTable" kindref="compound">SimYieldTable</ref>&amp;<sp/>receiver)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>hasChannel(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>p1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>p2,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>finalState)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>hasChannel(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>p1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>finalState)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>hasAnyChannel(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>p1)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>hasAnyChannel(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>p1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>p2)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1DarkBit_1_1SimYieldChannel" kindref="compound">SimYieldChannel</ref>&amp;<sp/>getChannel(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>p1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>p2,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>finalState)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>daFunk::Funk<sp/><ref refid="classGambit_1_1DarkBit_1_1SimYieldTable_1a90f877f3b15ce1d155286aea6f7bcef4" kindref="member">operator()</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>p1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>p2,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>finalState,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Ecm)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>daFunk::Funk<sp/><ref refid="classGambit_1_1DarkBit_1_1SimYieldTable_1a90f877f3b15ce1d155286aea6f7bcef4" kindref="member">operator()</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>p1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>finalState,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Ecm)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>daFunk::Funk<sp/><ref refid="classGambit_1_1DarkBit_1_1SimYieldTable_1a90f877f3b15ce1d155286aea6f7bcef4" kindref="member">operator()</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>p1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>p2,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>finalState)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>daFunk::Funk<sp/><ref refid="classGambit_1_1DarkBit_1_1SimYieldTable_1a90f877f3b15ce1d155286aea6f7bcef4" kindref="member">operator()</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>p1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>finalState)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="193"><highlight class="normal"></highlight></codeline>
-<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structGambit_1_1DarkBit_1_1SimYieldChannel" kindref="compound">SimYieldChannel</ref><sp/>dummy_channel;</highlight></codeline>
-<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;SimYieldChannel&gt;<sp/>channel_list;</highlight></codeline>
-<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>findChannel(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>p1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>p2,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>finalState)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="DarkBit__types_8hpp_1ae515a362ebed7788d58aabd4b9a6f944" kindref="member">SimYieldChannelCheck</ref><sp/>checkChannel(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>p1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>p2,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>finalState)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>etaDM;<sp/></highlight><highlight class="comment">//<sp/>primordial<sp/>asymmetry</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isSelfConj;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="127"><highlight class="comment"><sp/><sp/><sp/><sp/>//////////////////////////////////////////////</highlight></codeline>
+<codeline lineno="128"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Neutrino<sp/>telescope<sp/>data<sp/>structures</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="129"><highlight class="comment"><sp/><sp/><sp/><sp/>//////////////////////////////////////////////</highlight></codeline>
+<codeline lineno="130"><highlight class="comment"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="131"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Neutrino<sp/>telescope<sp/>yield<sp/>info<sp/>container</highlight></codeline>
+<codeline lineno="132" refid="structGambit_1_1DarkBit_1_1nuyield__info" refkind="compound"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structGambit_1_1DarkBit_1_1nuyield__info" kindref="compound">nuyield_info</ref></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>threadsafe;</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nuyield_function_pointer<sp/>pointer;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="139"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Neutrino<sp/>telescope<sp/>data<sp/>container</highlight></codeline>
+<codeline lineno="140" refid="structGambit_1_1DarkBit_1_1nudata" refkind="compound"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structGambit_1_1DarkBit_1_1nudata" kindref="compound">nudata</ref></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nobs;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>signal;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>bg;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>loglike;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>bgloglike;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>pvalue;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="151"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Annihilation/decay<sp/>channel</highlight></codeline>
+<codeline lineno="152" refid="structGambit_1_1DarkBit_1_1SimYieldChannel" refkind="compound"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structGambit_1_1DarkBit_1_1SimYieldChannel" kindref="compound">SimYieldChannel</ref></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structGambit_1_1DarkBit_1_1SimYieldChannel_1abc5dd5c089716dff0f806fd5189452c7" kindref="member">SimYieldChannel</ref>(daFunk::Funk<sp/>dNdE,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>p1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>p2,</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>finalState,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Ecm_min,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Ecm_max,<sp/><ref refid="classGambit_1_1safe__ptr" kindref="compound">safe_ptr&lt;Options&gt;</ref><sp/>runOptions);</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>daFunk::Funk<sp/>dNdE;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>daFunk::BoundFunk<sp/>dNdE_bound;<sp/><sp/></highlight><highlight class="comment">//<sp/>Pre-bound<sp/>version<sp/>for<sp/>use<sp/>in<sp/>e.g.<sp/>cascade<sp/>decays</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>p1;</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>p2;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>finalState;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>finalStateMass;</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Ecm_min;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Ecm_max;</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="166"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Result<sp/>of<sp/>SimYieldTable::checkChannel</highlight></codeline>
+<codeline lineno="167" refid="DarkBit__types_8hpp_1ae515a362ebed7788d58aabd4b9a6f944" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="DarkBit__types_8hpp_1ae515a362ebed7788d58aabd4b9a6f944" kindref="member">SimYieldChannelCheck</ref></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>success,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>check<sp/>succeeded.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>duplication,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>channel<sp/>is<sp/>already<sp/>in<sp/>the<sp/>SimYieldTable</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>monochromatic_line<sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>channel<sp/>is<sp/>a<sp/>monochromatic<sp/>line<sp/>(pi==finalState)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="174"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>\brief<sp/>Channel<sp/>container</highlight></codeline>
+<codeline lineno="175"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Object<sp/>containing<sp/>tabularized<sp/>yields<sp/>for<sp/>particle<sp/>decay<sp/>and<sp/>two-body<sp/>final<sp/>states.</highlight></codeline>
+<codeline lineno="176" refid="classGambit_1_1DarkBit_1_1SimYieldTable" refkind="compound"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classGambit_1_1DarkBit_1_1SimYieldTable" kindref="compound">SimYieldTable</ref></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1DarkBit_1_1SimYieldTable_1aac8814e27bf17c5c2d2a07364f7163a9" kindref="member">SimYieldTable</ref>();</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>addChannel(daFunk::Funk<sp/>dNdE,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>p1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>p2,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>finalState,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Ecm_min,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Ecm_max,<sp/><ref refid="classGambit_1_1safe__ptr" kindref="compound">safe_ptr&lt;Options&gt;</ref><sp/>runOptions);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>addChannel(daFunk::Funk<sp/>dNdE,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>p1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>finalState,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Ecm_min,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Ecm_max,<sp/><ref refid="classGambit_1_1safe__ptr" kindref="compound">safe_ptr&lt;Options&gt;</ref><sp/>runOptions);</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>addChannel(<ref refid="structGambit_1_1DarkBit_1_1SimYieldChannel" kindref="compound">SimYieldChannel</ref><sp/>channel);</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>replaceFinalState(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>oldFinalState,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>newFinalState);</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>donateChannels(<ref refid="classGambit_1_1DarkBit_1_1SimYieldTable" kindref="compound">SimYieldTable</ref>&amp;<sp/>receiver)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>hasChannel(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>p1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>p2,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>finalState)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>hasChannel(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>p1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>finalState)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>hasAnyChannel(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>p1)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>hasAnyChannel(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>p1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>p2)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1DarkBit_1_1SimYieldChannel" kindref="compound">SimYieldChannel</ref>&amp;<sp/>getChannel(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>p1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>p2,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>finalState)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>daFunk::Funk<sp/><ref refid="classGambit_1_1DarkBit_1_1SimYieldTable_1a90f877f3b15ce1d155286aea6f7bcef4" kindref="member">operator()</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>p1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>p2,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>finalState,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Ecm)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>daFunk::Funk<sp/><ref refid="classGambit_1_1DarkBit_1_1SimYieldTable_1a90f877f3b15ce1d155286aea6f7bcef4" kindref="member">operator()</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>p1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>finalState,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Ecm)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>daFunk::Funk<sp/><ref refid="classGambit_1_1DarkBit_1_1SimYieldTable_1a90f877f3b15ce1d155286aea6f7bcef4" kindref="member">operator()</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>p1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>p2,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>finalState)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>daFunk::Funk<sp/><ref refid="classGambit_1_1DarkBit_1_1SimYieldTable_1a90f877f3b15ce1d155286aea6f7bcef4" kindref="member">operator()</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>p1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>finalState)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structGambit_1_1DarkBit_1_1SimYieldChannel" kindref="compound">SimYieldChannel</ref><sp/>dummy_channel;</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;SimYieldChannel&gt;<sp/>channel_list;</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>findChannel(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>p1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>p2,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>finalState)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="DarkBit__types_8hpp_1ae515a362ebed7788d58aabd4b9a6f944" kindref="member">SimYieldChannelCheck</ref><sp/>checkChannel(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>p1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>p2,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>finalState)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
 <codeline lineno="201"><highlight class="normal"></highlight></codeline>
-<codeline lineno="202"><highlight class="normal"><sp/>}</highlight></codeline>
-<codeline lineno="203"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="204"><highlight class="normal"></highlight></codeline>
-<codeline lineno="205"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>defined<sp/>__DarkBit_types_hpp__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"></highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/>}</highlight></codeline>
+<codeline lineno="204"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>defined<sp/>__DarkBit_types_hpp__</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="DarkBit/include/gambit/DarkBit/DarkBit_types.hpp"/>
   </compounddef>

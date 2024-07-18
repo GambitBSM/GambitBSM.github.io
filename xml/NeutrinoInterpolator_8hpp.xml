@@ -125,7 +125,7 @@
 <codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>npoints<sp/>=<sp/>array.size();</highlight></codeline>
 <codeline lineno="63"><highlight class="normal"></highlight></codeline>
 <codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Fill<sp/>axes</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x[npoints],<sp/>y[npoints];</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/>x(npoints),<sp/>y(npoints);</highlight></codeline>
 <codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;npoints;<sp/>i++)</highlight></codeline>
 <codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>x[i]<sp/>=<sp/>array[i].first;</highlight></codeline>
@@ -135,7 +135,7 @@
 <codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Create<sp/>and<sp/>initialize<sp/>spline</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>acc<sp/>=<sp/>gsl_interp_accel_alloc();</highlight></codeline>
 <codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>spline<sp/>=<sp/>gsl_spline_alloc(gsl_interp_cspline,<sp/>npoints);</highlight></codeline>
-<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gsl_spline_init(spline,<sp/>x,<sp/>y,<sp/>npoints);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gsl_spline_init(spline,<sp/>&amp;x[0],<sp/>&amp;y[0],<sp/>npoints);</highlight></codeline>
 <codeline lineno="76"><highlight class="normal"></highlight></codeline>
 <codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="78"><highlight class="normal"></highlight></codeline>
@@ -213,7 +213,7 @@
 <codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>ysize<sp/>=<sp/>yvals.size();</highlight></codeline>
 <codeline lineno="151"><highlight class="normal"></highlight></codeline>
 <codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Fill<sp/>axes</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x[xsize],<sp/>y[ysize],<sp/>z[xsize*ysize];</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/>x(xsize),<sp/>y(ysize),<sp/>z(xsize*ysize);</highlight></codeline>
 <codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>j=0;<sp/>j&lt;ysize;<sp/>j++)</highlight></codeline>
 <codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>y[j]<sp/>=<sp/>yvals[j];</highlight></codeline>
@@ -232,7 +232,7 @@
 <codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>xacc<sp/>=<sp/>gsl_interp_accel_alloc();</highlight></codeline>
 <codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>yacc<sp/>=<sp/>gsl_interp_accel_alloc();</highlight></codeline>
 <codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>spline2d<sp/>=<sp/>gsl_spline2d_alloc(gsl_interp2d_bicubic,<sp/>xsize,<sp/>ysize);</highlight></codeline>
-<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gsl_spline2d_init(spline2d,<sp/>x,<sp/>y,<sp/>z,<sp/>xsize,<sp/>ysize);</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gsl_spline2d_init(spline2d,<sp/>&amp;x[0],<sp/>&amp;y[0],<sp/>&amp;z[0],<sp/>xsize,<sp/>ysize);</highlight></codeline>
 <codeline lineno="173"><highlight class="normal"></highlight></codeline>
 <codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="175"><highlight class="normal"></highlight></codeline>

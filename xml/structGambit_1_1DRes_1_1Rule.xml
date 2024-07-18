@@ -2,8 +2,55 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
   <compounddef id="structGambit_1_1DRes_1_1Rule" kind="struct" language="C++" prot="public">
     <compoundname>Gambit::DRes::Rule</compoundname>
-    <includes refid="depresolver_8hpp" local="no">depresolver.hpp</includes>
+    <derivedcompoundref refid="structGambit_1_1DRes_1_1BackendRule" prot="public" virt="non-virtual">Gambit::DRes::BackendRule</derivedcompoundref>
+    <derivedcompoundref refid="structGambit_1_1DRes_1_1ModuleRule" prot="public" virt="non-virtual">Gambit::DRes::ModuleRule</derivedcompoundref>
+    <includes refid="rule_8hpp" local="no">rule.hpp</includes>
       <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structGambit_1_1DRes_1_1Rule_1a79f355e8510046bb422ba03cc8917088" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Gambit::DRes::Rule::has_if</definition>
+        <argsstring></argsstring>
+        <name>has_if</name>
+        <qualifiedname>Gambit::DRes::Rule::has_if</qualifiedname>
+        <briefdescription>
+<para><ref refid="structGambit_1_1DRes_1_1Rule" kindref="compound">Rule</ref> has an antecedent (&apos;if&apos; clause) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/include/gambit/Core/rule.hpp" line="39" column="12" bodyfile="Core/include/gambit/Core/rule.hpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structGambit_1_1DRes_1_1Rule_1a84d238260560a5705dfa6601589e130b" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Gambit::DRes::Rule::has_then</definition>
+        <argsstring></argsstring>
+        <name>has_then</name>
+        <qualifiedname>Gambit::DRes::Rule::has_then</qualifiedname>
+        <briefdescription>
+<para><ref refid="structGambit_1_1DRes_1_1Rule" kindref="compound">Rule</ref> has a consequent (&apos;then&apos; clause) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/include/gambit/Core/rule.hpp" line="41" column="12" bodyfile="Core/include/gambit/Core/rule.hpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structGambit_1_1DRes_1_1Rule_1a2e8921e04523c203789068c480b3d8f8" prot="public" static="no" mutable="no">
+        <type>YAML::Node</type>
+        <definition>YAML::Node Gambit::DRes::Rule::yaml</definition>
+        <argsstring></argsstring>
+        <name>yaml</name>
+        <qualifiedname>Gambit::DRes::Rule::yaml</qualifiedname>
+        <briefdescription>
+<para>The original <ref refid="namespaceYAML" kindref="compound">YAML</ref> (if any) from which this rule was derived. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/include/gambit/Core/rule.hpp" line="44" column="18" bodyfile="Core/include/gambit/Core/rule.hpp" bodystart="44" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="variable" id="structGambit_1_1DRes_1_1Rule_1aa4644d0b22f3c6f46104661642f30eb8" prot="public" static="no" mutable="no">
         <type>std::string</type>
         <definition>std::string Gambit::DRes::Rule::capability</definition>
@@ -11,12 +58,43 @@
         <name>capability</name>
         <qualifiedname>Gambit::DRes::Rule::capability</qualifiedname>
         <briefdescription>
+<para>Capability field targeted by the rule. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/include/gambit/Core/depresolver.hpp" line="96" column="19" bodyfile="Core/include/gambit/Core/depresolver.hpp" bodystart="96" bodyend="-1"/>
+        <location file="Core/include/gambit/Core/rule.hpp" line="47" column="19" bodyfile="Core/include/gambit/Core/rule.hpp" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structGambit_1_1DRes_1_1Rule_1a7e7ca0cb7fbf4dc75cfc23dba706d369" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Gambit::DRes::Rule::if_capability</definition>
+        <argsstring></argsstring>
+        <name>if_capability</name>
+        <qualifiedname>Gambit::DRes::Rule::if_capability</qualifiedname>
+        <briefdescription>
+<para>Capability field appears in &apos;if&apos; clause. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/include/gambit/Core/rule.hpp" line="49" column="12" bodyfile="Core/include/gambit/Core/rule.hpp" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structGambit_1_1DRes_1_1Rule_1a07754e26554a8594db6b96b9501dc6cf" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Gambit::DRes::Rule::then_capability</definition>
+        <argsstring></argsstring>
+        <name>then_capability</name>
+        <qualifiedname>Gambit::DRes::Rule::then_capability</qualifiedname>
+        <briefdescription>
+<para>Capability field appears in &apos;then&apos; clause. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/include/gambit/Core/rule.hpp" line="51" column="12" bodyfile="Core/include/gambit/Core/rule.hpp" bodystart="51" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1DRes_1_1Rule_1a111c16c35b0ab2a4e064de91dc8d6938" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -25,12 +103,43 @@
         <name>type</name>
         <qualifiedname>Gambit::DRes::Rule::type</qualifiedname>
         <briefdescription>
+<para>Type field targeted by the rule. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/include/gambit/Core/depresolver.hpp" line="97" column="19" bodyfile="Core/include/gambit/Core/depresolver.hpp" bodystart="97" bodyend="-1"/>
+        <location file="Core/include/gambit/Core/rule.hpp" line="54" column="19" bodyfile="Core/include/gambit/Core/rule.hpp" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structGambit_1_1DRes_1_1Rule_1af9c5df4e4857eaa4bcdfe2b11793db24" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Gambit::DRes::Rule::if_type</definition>
+        <argsstring></argsstring>
+        <name>if_type</name>
+        <qualifiedname>Gambit::DRes::Rule::if_type</qualifiedname>
+        <briefdescription>
+<para>Type field appears in &apos;if&apos; clause. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/include/gambit/Core/rule.hpp" line="56" column="12" bodyfile="Core/include/gambit/Core/rule.hpp" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structGambit_1_1DRes_1_1Rule_1a14ae28482623485c663bc10d9b7556b2" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Gambit::DRes::Rule::then_type</definition>
+        <argsstring></argsstring>
+        <name>then_type</name>
+        <qualifiedname>Gambit::DRes::Rule::then_type</qualifiedname>
+        <briefdescription>
+<para>Type field appears in &apos;then&apos; clause. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/include/gambit/Core/rule.hpp" line="58" column="12" bodyfile="Core/include/gambit/Core/rule.hpp" bodystart="58" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1DRes_1_1Rule_1a9a917156b3e4081a8eb8b6e9f0fe00ca" prot="public" static="no" mutable="no">
         <type>std::string</type>
@@ -39,152 +148,196 @@
         <name>function</name>
         <qualifiedname>Gambit::DRes::Rule::function</qualifiedname>
         <briefdescription>
+<para>Function field targeted by the rule. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/include/gambit/Core/depresolver.hpp" line="98" column="19" bodyfile="Core/include/gambit/Core/depresolver.hpp" bodystart="98" bodyend="-1"/>
+        <location file="Core/include/gambit/Core/rule.hpp" line="61" column="19" bodyfile="Core/include/gambit/Core/rule.hpp" bodystart="61" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="structGambit_1_1DRes_1_1Rule_1ab0cf659621533cbb109f1a73000f23e6" prot="public" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string Gambit::DRes::Rule::module</definition>
+      <memberdef kind="variable" id="structGambit_1_1DRes_1_1Rule_1a7d7e39b02fb0595e16522dc3dbe6bacb" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Gambit::DRes::Rule::if_function</definition>
         <argsstring></argsstring>
-        <name>module</name>
-        <qualifiedname>Gambit::DRes::Rule::module</qualifiedname>
+        <name>if_function</name>
+        <qualifiedname>Gambit::DRes::Rule::if_function</qualifiedname>
         <briefdescription>
+<para>Function field appears in &apos;if&apos; clause. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/include/gambit/Core/depresolver.hpp" line="99" column="19" bodyfile="Core/include/gambit/Core/depresolver.hpp" bodystart="99" bodyend="-1"/>
+        <location file="Core/include/gambit/Core/rule.hpp" line="63" column="12" bodyfile="Core/include/gambit/Core/rule.hpp" bodystart="63" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="structGambit_1_1DRes_1_1Rule_1ac38501b498b63ce2b4fc46d621750918" prot="public" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string Gambit::DRes::Rule::backend</definition>
+      <memberdef kind="variable" id="structGambit_1_1DRes_1_1Rule_1ac7d7706ebd72295b1f950fc52db5cf7a" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Gambit::DRes::Rule::then_function</definition>
         <argsstring></argsstring>
-        <name>backend</name>
-        <qualifiedname>Gambit::DRes::Rule::backend</qualifiedname>
+        <name>then_function</name>
+        <qualifiedname>Gambit::DRes::Rule::then_function</qualifiedname>
         <briefdescription>
+<para>Function field appears in &apos;then&apos; clause. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/include/gambit/Core/depresolver.hpp" line="100" column="19" bodyfile="Core/include/gambit/Core/depresolver.hpp" bodystart="100" bodyend="-1"/>
+        <location file="Core/include/gambit/Core/rule.hpp" line="65" column="12" bodyfile="Core/include/gambit/Core/rule.hpp" bodystart="65" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="structGambit_1_1DRes_1_1Rule_1a64c165e7bcf421db21438f62a72c91e9" prot="public" static="no" mutable="no">
-        <type>std::string</type>
-        <definition>std::string Gambit::DRes::Rule::version</definition>
+      <memberdef kind="variable" id="structGambit_1_1DRes_1_1Rule_1a5c0ccfecbf63233ec3998a4b61f954fc" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Gambit::DRes::Rule::weakrule</definition>
         <argsstring></argsstring>
-        <name>version</name>
-        <qualifiedname>Gambit::DRes::Rule::version</qualifiedname>
+        <name>weakrule</name>
+        <qualifiedname>Gambit::DRes::Rule::weakrule</qualifiedname>
         <briefdescription>
+<para>Indicates that rule can be broken. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/include/gambit/Core/depresolver.hpp" line="101" column="19" bodyfile="Core/include/gambit/Core/depresolver.hpp" bodystart="101" bodyend="-1"/>
+        <location file="Core/include/gambit/Core/rule.hpp" line="68" column="12" bodyfile="Core/include/gambit/Core/rule.hpp" bodystart="68" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="structGambit_1_1DRes_1_1Rule_1a467255f1ef71a434b83896ddb7110680" prot="public" static="no" mutable="no">
-        <type><ref refid="classGambit_1_1Options" kindref="compound">Options</ref></type>
-        <definition>Options Gambit::DRes::Rule::options</definition>
+      <memberdef kind="variable" id="structGambit_1_1DRes_1_1Rule_1afda2bf7cb57ccaaac571540135f247b1" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Gambit::DRes::Rule::log_matches</definition>
         <argsstring></argsstring>
-        <name>options</name>
-        <qualifiedname>Gambit::DRes::Rule::options</qualifiedname>
+        <name>log_matches</name>
+        <qualifiedname>Gambit::DRes::Rule::log_matches</qualifiedname>
         <briefdescription>
+<para>Whether or not to log matches to the rule with functors. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/include/gambit/Core/depresolver.hpp" line="102" column="15" bodyfile="Core/include/gambit/Core/depresolver.hpp" bodystart="102" bodyend="-1"/>
+        <location file="Core/include/gambit/Core/rule.hpp" line="71" column="12" bodyfile="Core/include/gambit/Core/rule.hpp" bodystart="71" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="structGambit_1_1DRes_1_1Rule_1a372502a2f4430c4b70f545404b1d54af" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type></type>
-        <definition>Gambit::DRes::Rule::Rule</definition>
-        <argsstring>(std::string function, std::string module)</argsstring>
-        <name>Rule</name>
-        <qualifiedname>Gambit::DRes::Rule::Rule</qualifiedname>
+      <memberdef kind="function" id="structGambit_1_1DRes_1_1Rule_1a1dcfee83f84288b64809ac36e5bb74e0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::DRes::Rule::base_antecedent_matches</definition>
+        <argsstring>(functor *, const Utils::type_equivalency &amp;) const</argsstring>
+        <name>base_antecedent_matches</name>
+        <qualifiedname>Gambit::DRes::Rule::base_antecedent_matches</qualifiedname>
         <param>
-          <type>std::string</type>
-          <declname>function</declname>
+          <type><ref refid="classGambit_1_1functor" kindref="compound">functor</ref> *</type>
+          <defname>f</defname>
         </param>
         <param>
-          <type>std::string</type>
-          <declname>module</declname>
+          <type>const <ref refid="structGambit_1_1Utils_1_1type__equivalency" kindref="compound">Utils::type_equivalency</ref> &amp;</type>
+          <defname>te</defname>
         </param>
         <briefdescription>
+<para>True if and only if the passed functor matches the &apos;if&apos; part of a rule. </para>
         </briefdescription>
         <detaileddescription>
+<para>True if and only if the passed functor matches the base part of an &apos;if&apos; part of a rule. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/include/gambit/Core/depresolver.hpp" line="85" column="7" bodyfile="Core/include/gambit/Core/depresolver.hpp" bodystart="85" bodyend="85"/>
+        <location file="Core/include/gambit/Core/rule.hpp" line="74" column="12" bodyfile="Core/src/rule.cpp" bodystart="29" bodyend="36"/>
       </memberdef>
-      <memberdef kind="function" id="structGambit_1_1DRes_1_1Rule_1a67755703a1d8086b21ac0feab2eb1af1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
-        <type></type>
-        <definition>Gambit::DRes::Rule::Rule</definition>
-        <argsstring>(IniParser::ObservableType t)</argsstring>
-        <name>Rule</name>
-        <qualifiedname>Gambit::DRes::Rule::Rule</qualifiedname>
+      <memberdef kind="function" id="structGambit_1_1DRes_1_1Rule_1afc73a482519ed65671e232000d753869" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::DRes::Rule::base_consequent_matches</definition>
+        <argsstring>(functor *, const Utils::type_equivalency &amp;) const</argsstring>
+        <name>base_consequent_matches</name>
+        <qualifiedname>Gambit::DRes::Rule::base_consequent_matches</qualifiedname>
         <param>
-          <type><ref refid="structGambit_1_1IniParser_1_1Types_1_1Observable" kindref="compound">IniParser::ObservableType</ref></type>
-          <declname>t</declname>
+          <type><ref refid="classGambit_1_1functor" kindref="compound">functor</ref> *</type>
+          <defname>f</defname>
+        </param>
+        <param>
+          <type>const <ref refid="structGambit_1_1Utils_1_1type__equivalency" kindref="compound">Utils::type_equivalency</ref> &amp;</type>
+          <defname>te</defname>
         </param>
         <briefdescription>
+<para>True if and only if the passed functor matches the &apos;then&apos; part of a rule. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>True if and only if the passed functor matches the base part of a &apos;then&apos; part of a rule. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/include/gambit/Core/rule.hpp" line="77" column="12" bodyfile="Core/src/rule.cpp" bodystart="39" bodyend="46"/>
+      </memberdef>
+      <memberdef kind="function" id="structGambit_1_1DRes_1_1Rule_1a144af7d7bc63a3b298ab7fffdedd77a4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::DRes::Rule::Rule</definition>
+        <argsstring>()</argsstring>
+        <name>Rule</name>
+        <qualifiedname>Gambit::DRes::Rule::Rule</qualifiedname>
+        <briefdescription>
+<para>Default constructor. Sets all fields empty. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/include/gambit/Core/depresolver.hpp" line="86" column="7" bodyfile="Core/include/gambit/Core/depresolver.hpp" bodystart="86" bodyend="95"/>
+        <location file="Core/include/gambit/Core/rule.hpp" line="80" column="7" bodyfile="Core/include/gambit/Core/rule.hpp" bodystart="80" bodyend="94"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
+<para>Base rule for resolution of dependencies and backend requirements. </para>
     </briefdescription>
     <detaileddescription>
-<para>A simple rule for dependency resolution (aka constraints on module and function name). </para>
     </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>Gambit::DRes::BackendRule</label>
+        <link refid="structGambit_1_1DRes_1_1BackendRule"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Gambit::DRes::ModuleRule</label>
+        <link refid="structGambit_1_1DRes_1_1ModuleRule"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Gambit::DRes::Rule</label>
+        <link refid="structGambit_1_1DRes_1_1Rule"/>
+      </node>
+    </inheritancegraph>
     <collaborationgraph>
       <node id="1">
         <label>Gambit::DRes::Rule</label>
         <link refid="structGambit_1_1DRes_1_1Rule"/>
         <childnode refid="2" relation="usage">
-          <edgelabel>backend</edgelabel>
           <edgelabel>capability</edgelabel>
           <edgelabel>function</edgelabel>
-          <edgelabel>module</edgelabel>
           <edgelabel>type</edgelabel>
-          <edgelabel>version</edgelabel>
         </childnode>
-        <childnode refid="3" relation="usage">
-          <edgelabel>options</edgelabel>
-        </childnode>
-      </node>
-      <node id="3">
-        <label>Gambit::Options</label>
-        <link refid="classGambit_1_1Options"/>
       </node>
       <node id="2">
         <label>string</label>
       </node>
     </collaborationgraph>
-    <location file="Core/include/gambit/Core/depresolver.hpp" line="83" column="5" bodyfile="Core/include/gambit/Core/depresolver.hpp" bodystart="84" bodyend="103"/>
+    <location file="Core/include/gambit/Core/rule.hpp" line="35" column="5" bodyfile="Core/include/gambit/Core/rule.hpp" bodystart="36" bodyend="96"/>
     <listofallmembers>
-      <member refid="structGambit_1_1DRes_1_1Rule_1ac38501b498b63ce2b4fc46d621750918" prot="public" virt="non-virtual"><scope>Gambit::DRes::Rule</scope><name>backend</name></member>
+      <member refid="structGambit_1_1DRes_1_1Rule_1a1dcfee83f84288b64809ac36e5bb74e0" prot="public" virt="non-virtual"><scope>Gambit::DRes::Rule</scope><name>base_antecedent_matches</name></member>
+      <member refid="structGambit_1_1DRes_1_1Rule_1afc73a482519ed65671e232000d753869" prot="public" virt="non-virtual"><scope>Gambit::DRes::Rule</scope><name>base_consequent_matches</name></member>
       <member refid="structGambit_1_1DRes_1_1Rule_1aa4644d0b22f3c6f46104661642f30eb8" prot="public" virt="non-virtual"><scope>Gambit::DRes::Rule</scope><name>capability</name></member>
       <member refid="structGambit_1_1DRes_1_1Rule_1a9a917156b3e4081a8eb8b6e9f0fe00ca" prot="public" virt="non-virtual"><scope>Gambit::DRes::Rule</scope><name>function</name></member>
-      <member refid="structGambit_1_1DRes_1_1Rule_1ab0cf659621533cbb109f1a73000f23e6" prot="public" virt="non-virtual"><scope>Gambit::DRes::Rule</scope><name>module</name></member>
-      <member refid="structGambit_1_1DRes_1_1Rule_1a467255f1ef71a434b83896ddb7110680" prot="public" virt="non-virtual"><scope>Gambit::DRes::Rule</scope><name>options</name></member>
-      <member refid="structGambit_1_1DRes_1_1Rule_1a372502a2f4430c4b70f545404b1d54af" prot="public" virt="non-virtual"><scope>Gambit::DRes::Rule</scope><name>Rule</name></member>
-      <member refid="structGambit_1_1DRes_1_1Rule_1a67755703a1d8086b21ac0feab2eb1af1" prot="public" virt="non-virtual"><scope>Gambit::DRes::Rule</scope><name>Rule</name></member>
+      <member refid="structGambit_1_1DRes_1_1Rule_1a79f355e8510046bb422ba03cc8917088" prot="public" virt="non-virtual"><scope>Gambit::DRes::Rule</scope><name>has_if</name></member>
+      <member refid="structGambit_1_1DRes_1_1Rule_1a84d238260560a5705dfa6601589e130b" prot="public" virt="non-virtual"><scope>Gambit::DRes::Rule</scope><name>has_then</name></member>
+      <member refid="structGambit_1_1DRes_1_1Rule_1a7e7ca0cb7fbf4dc75cfc23dba706d369" prot="public" virt="non-virtual"><scope>Gambit::DRes::Rule</scope><name>if_capability</name></member>
+      <member refid="structGambit_1_1DRes_1_1Rule_1a7d7e39b02fb0595e16522dc3dbe6bacb" prot="public" virt="non-virtual"><scope>Gambit::DRes::Rule</scope><name>if_function</name></member>
+      <member refid="structGambit_1_1DRes_1_1Rule_1af9c5df4e4857eaa4bcdfe2b11793db24" prot="public" virt="non-virtual"><scope>Gambit::DRes::Rule</scope><name>if_type</name></member>
+      <member refid="structGambit_1_1DRes_1_1Rule_1afda2bf7cb57ccaaac571540135f247b1" prot="public" virt="non-virtual"><scope>Gambit::DRes::Rule</scope><name>log_matches</name></member>
+      <member refid="structGambit_1_1DRes_1_1Rule_1a144af7d7bc63a3b298ab7fffdedd77a4" prot="public" virt="non-virtual"><scope>Gambit::DRes::Rule</scope><name>Rule</name></member>
+      <member refid="structGambit_1_1DRes_1_1Rule_1a07754e26554a8594db6b96b9501dc6cf" prot="public" virt="non-virtual"><scope>Gambit::DRes::Rule</scope><name>then_capability</name></member>
+      <member refid="structGambit_1_1DRes_1_1Rule_1ac7d7706ebd72295b1f950fc52db5cf7a" prot="public" virt="non-virtual"><scope>Gambit::DRes::Rule</scope><name>then_function</name></member>
+      <member refid="structGambit_1_1DRes_1_1Rule_1a14ae28482623485c663bc10d9b7556b2" prot="public" virt="non-virtual"><scope>Gambit::DRes::Rule</scope><name>then_type</name></member>
       <member refid="structGambit_1_1DRes_1_1Rule_1a111c16c35b0ab2a4e064de91dc8d6938" prot="public" virt="non-virtual"><scope>Gambit::DRes::Rule</scope><name>type</name></member>
-      <member refid="structGambit_1_1DRes_1_1Rule_1a64c165e7bcf421db21438f62a72c91e9" prot="public" virt="non-virtual"><scope>Gambit::DRes::Rule</scope><name>version</name></member>
+      <member refid="structGambit_1_1DRes_1_1Rule_1a5c0ccfecbf63233ec3998a4b61f954fc" prot="public" virt="non-virtual"><scope>Gambit::DRes::Rule</scope><name>weakrule</name></member>
+      <member refid="structGambit_1_1DRes_1_1Rule_1a2e8921e04523c203789068c480b3d8f8" prot="public" virt="non-virtual"><scope>Gambit::DRes::Rule</scope><name>yaml</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

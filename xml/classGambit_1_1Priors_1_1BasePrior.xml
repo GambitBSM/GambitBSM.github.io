@@ -27,7 +27,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ScannerBit/include/gambit/ScannerBit/base_prior.hpp" line="43" column="20" bodyfile="ScannerBit/include/gambit/ScannerBit/base_prior.hpp" bodystart="43" bodyend="-1"/>
+        <location file="ScannerBit/include/gambit/ScannerBit/base_prior.hpp" line="48" column="26" bodyfile="ScannerBit/include/gambit/ScannerBit/base_prior.hpp" bodystart="48" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-attrib">
@@ -43,7 +43,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ScannerBit/include/gambit/ScannerBit/base_prior.hpp" line="46" column="19" bodyfile="ScannerBit/include/gambit/ScannerBit/base_prior.hpp" bodystart="46" bodyend="-1"/>
+        <location file="ScannerBit/include/gambit/ScannerBit/base_prior.hpp" line="51" column="25" bodyfile="ScannerBit/include/gambit/ScannerBit/base_prior.hpp" bodystart="51" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -59,7 +59,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ScannerBit/include/gambit/ScannerBit/base_prior.hpp" line="49" column="15"/>
+        <location file="ScannerBit/include/gambit/ScannerBit/base_prior.hpp" line="54" column="21"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1Priors_1_1BasePrior_1a839ff7a9704898c967f03add67950b05" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -73,7 +73,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ScannerBit/include/gambit/ScannerBit/base_prior.hpp" line="51" column="7" bodyfile="ScannerBit/include/gambit/ScannerBit/base_prior.hpp" bodystart="51" bodyend="51"/>
+        <location file="ScannerBit/include/gambit/ScannerBit/base_prior.hpp" line="56" column="13" bodyfile="ScannerBit/include/gambit/ScannerBit/base_prior.hpp" bodystart="56" bodyend="56"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1Priors_1_1BasePrior_1aefa66cd74f99ecf7d29dcb9c608ed202" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
         <type></type>
@@ -91,7 +91,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ScannerBit/include/gambit/ScannerBit/base_prior.hpp" line="53" column="16" bodyfile="ScannerBit/include/gambit/ScannerBit/base_prior.hpp" bodystart="53" bodyend="54"/>
+        <location file="ScannerBit/include/gambit/ScannerBit/base_prior.hpp" line="58" column="22" bodyfile="ScannerBit/include/gambit/ScannerBit/base_prior.hpp" bodystart="58" bodyend="58"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1Priors_1_1BasePrior_1a55ba5474027bb858c3561600aeb39dbb" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
         <type></type>
@@ -114,7 +114,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ScannerBit/include/gambit/ScannerBit/base_prior.hpp" line="56" column="16" bodyfile="ScannerBit/include/gambit/ScannerBit/base_prior.hpp" bodystart="56" bodyend="57"/>
+        <location file="ScannerBit/include/gambit/ScannerBit/base_prior.hpp" line="60" column="22" bodyfile="ScannerBit/include/gambit/ScannerBit/base_prior.hpp" bodystart="60" bodyend="61"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1Priors_1_1BasePrior_1a421fbf213a5d7b1734ff5190cc27ff6a" prot="public" static="no" const="no" explicit="yes" inline="yes" virt="non-virtual">
         <type></type>
@@ -137,92 +137,184 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ScannerBit/include/gambit/ScannerBit/base_prior.hpp" line="59" column="16" bodyfile="ScannerBit/include/gambit/ScannerBit/base_prior.hpp" bodystart="59" bodyend="60"/>
+        <location file="ScannerBit/include/gambit/ScannerBit/base_prior.hpp" line="63" column="22" bodyfile="ScannerBit/include/gambit/ScannerBit/base_prior.hpp" bodystart="63" bodyend="64"/>
       </memberdef>
-      <memberdef kind="function" id="classGambit_1_1Priors_1_1BasePrior_1adaf214a4f7aa4e9c4c3fa7daebc32903" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+      <memberdef kind="function" id="classGambit_1_1Priors_1_1BasePrior_1a19946205afb8ea2469569f699bc464c6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
         <type>void</type>
         <definition>virtual void Gambit::Priors::BasePrior::transform</definition>
-        <argsstring>(const std::vector&lt; double &gt; &amp;, std::unordered_map&lt; std::string, double &gt; &amp;) const =0</argsstring>
+        <argsstring>(hyper_cube_ref&lt; double &gt; unit, std::unordered_map&lt; std::string, double &gt; &amp;physical) const =0</argsstring>
         <name>transform</name>
         <qualifiedname>Gambit::Priors::BasePrior::transform</qualifiedname>
-        <reimplementedby refid="classGambit_1_1Priors_1_1None_1a891e558a6272bddbd35b9de9c66e2d88">transform</reimplementedby>
-        <reimplementedby refid="classGambit_1_1Priors_1_1FixedPrior_1a3dbf627a3ac53d937863e4b5fa0bc74e">transform</reimplementedby>
-        <reimplementedby refid="classGambit_1_1Priors_1_1MultiPriors_1ac61f7b43b139175a56e6e26c76ff8c2f">transform</reimplementedby>
-        <reimplementedby refid="classGambit_1_1Priors_1_1DoubleLogFlatJoin_1abd99d4d54844f9f30c2fdbb62028d85e">transform</reimplementedby>
-        <reimplementedby refid="classGambit_1_1Priors_1_1RangePrior1D_1aff4c53ab319d72b7a4b82768aeeae7ee">transform</reimplementedby>
-        <reimplementedby refid="classGambit_1_1Priors_1_1Cauchy_1a4b2a3519c38536de901cfa78385d4a7e">transform</reimplementedby>
-        <reimplementedby refid="classGambit_1_1Priors_1_1CompositePrior_1afead5e0542bcef9cd58203783a7660ea">transform</reimplementedby>
-        <reimplementedby refid="classGambit_1_1Priors_1_1Dummy_1a31a00e08ae9b3382872a873b87a70331">transform</reimplementedby>
-        <reimplementedby refid="classGambit_1_1Priors_1_1Gaussian_1a2d48f21dfaa76fcc5ce7ffc9b341abbf">transform</reimplementedby>
-        <reimplementedby refid="classGambit_1_1Priors_1_1LogNormal_1aeb2cefb923592d9d0234431b67dab9bb">transform</reimplementedby>
-        <reimplementedby refid="classGambit_1_1Priors_1_1Plugin_1ad1b5e2c85a3d5c374f4318fb17184638">transform</reimplementedby>
+        <reimplementedby refid="classGambit_1_1Priors_1_1DoubleLogFlatJoin_1ab93cf57c1f4c8c3f36f57af1a739e2f1">transform</reimplementedby>
+        <reimplementedby refid="classGambit_1_1Priors_1_1RangePrior1D_1a98255d65fadf841dbfb441ac1139a2cd">transform</reimplementedby>
+        <reimplementedby refid="classGambit_1_1Priors_1_1Cauchy_1adb784e956a8c502707983d6d2f854d85">transform</reimplementedby>
+        <reimplementedby refid="classGambit_1_1Priors_1_1CompositePrior_1aaf53e90249c33ca2983142162323183c">transform</reimplementedby>
+        <reimplementedby refid="classGambit_1_1Priors_1_1Dummy_1ad14e2f8ac76fe4f6dd33ec1f392bbfea">transform</reimplementedby>
+        <reimplementedby refid="classGambit_1_1Priors_1_1Gaussian_1a741cef69e35a9d6a3abc208e9d549823">transform</reimplementedby>
+        <reimplementedby refid="classGambit_1_1Priors_1_1LogNormal_1ac252f5dce38bc0a3b9189051f23fb01a">transform</reimplementedby>
+        <reimplementedby refid="classGambit_1_1Priors_1_1Plugin_1a1c4f5b4e8920332e9f09c6a0b0300fee">transform</reimplementedby>
+        <reimplementedby refid="classGambit_1_1Priors_1_1None_1a9dcf916afde9215088ef2ed7f9afc7bf">transform</reimplementedby>
+        <reimplementedby refid="classGambit_1_1Priors_1_1FixedPrior_1aeca49ed55d6e30d28696c99910934aa8">transform</reimplementedby>
+        <reimplementedby refid="classGambit_1_1Priors_1_1MultiPriors_1a26247874fe30282b828f7fa934debb7f">transform</reimplementedby>
         <param>
-          <type>const std::vector&lt; double &gt; &amp;</type>
+          <type>hyper_cube_ref&lt; double &gt;</type>
+          <declname>unit</declname>
         </param>
         <param>
           <type>std::unordered_map&lt; std::string, double &gt; &amp;</type>
+          <declname>physical</declname>
         </param>
         <briefdescription>
-<para>Transform from unit hypercube to parameter. </para>
+<para>Transform from unit hypercube to physical parameter. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ScannerBit/include/gambit/ScannerBit/base_prior.hpp" line="63" column="20"/>
+        <location file="ScannerBit/include/gambit/ScannerBit/base_prior.hpp" line="67" column="26"/>
       </memberdef>
-      <memberdef kind="function" id="classGambit_1_1Priors_1_1BasePrior_1a5ae0c15c2fb6c0ad555ff3b230b26352" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
-        <type>std::vector&lt; double &gt;</type>
-        <definition>virtual std::vector&lt; double &gt; Gambit::Priors::BasePrior::inverse_transform</definition>
-        <argsstring>(const std::unordered_map&lt; std::string, double &gt; &amp;) const =0</argsstring>
+      <memberdef kind="function" id="classGambit_1_1Priors_1_1BasePrior_1afd7a341a9684c682c9b048543833ffc8" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Priors::BasePrior::transform</definition>
+        <argsstring>(const std::vector&lt; double &gt; &amp;unit, std::unordered_map&lt; std::string, double &gt; &amp;physical) const</argsstring>
+        <name>transform</name>
+        <qualifiedname>Gambit::Priors::BasePrior::transform</qualifiedname>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <param>
+          <type>std::unordered_map&lt; std::string, double &gt; &amp;</type>
+          <declname>physical</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/base_prior.hpp" line="70" column="18" bodyfile="ScannerBit/include/gambit/ScannerBit/base_prior.hpp" bodystart="70" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Priors_1_1BasePrior_1ab1be385fc36bd1fb1b562ec04b0e8440" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::unordered_map&lt; std::string, double &gt;</type>
+        <definition>std::unordered_map&lt; std::string, double &gt; Gambit::Priors::BasePrior::transform</definition>
+        <argsstring>(const std::vector&lt; double &gt; &amp;unit) const</argsstring>
+        <name>transform</name>
+        <qualifiedname>Gambit::Priors::BasePrior::transform</qualifiedname>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/base_prior.hpp" line="76" column="32" bodyfile="ScannerBit/include/gambit/ScannerBit/base_prior.hpp" bodystart="76" bodyend="81"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Priors_1_1BasePrior_1a5f40e71b111fc0069d702545c4518cfb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void Gambit::Priors::BasePrior::inverse_transform</definition>
+        <argsstring>(const std::unordered_map&lt; std::string, double &gt; &amp;physical, hyper_cube_ref&lt; double &gt; unit) const =0</argsstring>
         <name>inverse_transform</name>
         <qualifiedname>Gambit::Priors::BasePrior::inverse_transform</qualifiedname>
-        <reimplementedby refid="classGambit_1_1Priors_1_1DoubleLogFlatJoin_1adef085e75b90cda7ffdaf093b7960c8d">inverse_transform</reimplementedby>
-        <reimplementedby refid="classGambit_1_1Priors_1_1None_1a8d32d675075a9e03baf74ad22f454c08">inverse_transform</reimplementedby>
-        <reimplementedby refid="classGambit_1_1Priors_1_1Plugin_1ae9c1188db01b34c70104cf9e902175d3">inverse_transform</reimplementedby>
-        <reimplementedby refid="classGambit_1_1Priors_1_1Cauchy_1aea5fc8fc53625a44d75c7fdb690ddb83">inverse_transform</reimplementedby>
-        <reimplementedby refid="classGambit_1_1Priors_1_1CompositePrior_1a07a0b875989e2ded406e13749fb378d1">inverse_transform</reimplementedby>
-        <reimplementedby refid="classGambit_1_1Priors_1_1Dummy_1ab4c4eba859288071773c4f9df0ebddf6">inverse_transform</reimplementedby>
-        <reimplementedby refid="classGambit_1_1Priors_1_1FixedPrior_1adef251b900e96ee76668d056b5ecee9c">inverse_transform</reimplementedby>
-        <reimplementedby refid="classGambit_1_1Priors_1_1MultiPriors_1a29b3ab7e38c3e5130b7cafbe1f56b837">inverse_transform</reimplementedby>
-        <reimplementedby refid="classGambit_1_1Priors_1_1RangePrior1D_1a575d46d465dc7a32a37a967b1bfc05bd">inverse_transform</reimplementedby>
-        <reimplementedby refid="classGambit_1_1Priors_1_1Gaussian_1ab91f955a1223a2da39d5476cb1091a78">inverse_transform</reimplementedby>
-        <reimplementedby refid="classGambit_1_1Priors_1_1LogNormal_1a4d1c5c55a9160199b8534e18ca4e41fa">inverse_transform</reimplementedby>
+        <reimplementedby refid="classGambit_1_1Priors_1_1DoubleLogFlatJoin_1a958c87430841b365db231c15ce8f9ba5">inverse_transform</reimplementedby>
+        <reimplementedby refid="classGambit_1_1Priors_1_1None_1ac6cf5e7261ed1d2c1419611d1b156686">inverse_transform</reimplementedby>
+        <reimplementedby refid="classGambit_1_1Priors_1_1Plugin_1a2be238125241f9d7acf6233925789c4c">inverse_transform</reimplementedby>
+        <reimplementedby refid="classGambit_1_1Priors_1_1Cauchy_1a5cb05c5810ba7808a7c4c6cf36b50f06">inverse_transform</reimplementedby>
+        <reimplementedby refid="classGambit_1_1Priors_1_1CompositePrior_1ab38d28528465ce652fb2413396abda61">inverse_transform</reimplementedby>
+        <reimplementedby refid="classGambit_1_1Priors_1_1Dummy_1a5a08fd4babc11ad93de48f682ae21b74">inverse_transform</reimplementedby>
+        <reimplementedby refid="classGambit_1_1Priors_1_1RangePrior1D_1a9384c25d944f11ce2584e51ea6249078">inverse_transform</reimplementedby>
+        <reimplementedby refid="classGambit_1_1Priors_1_1Gaussian_1a7ac16282172fdf3db8cc3c0980f3c542">inverse_transform</reimplementedby>
+        <reimplementedby refid="classGambit_1_1Priors_1_1LogNormal_1afea6dcac97f83f2afd9e2b22f0bbad52">inverse_transform</reimplementedby>
+        <reimplementedby refid="classGambit_1_1Priors_1_1FixedPrior_1a4b2f3909534222b236cd219b45d2dffd">inverse_transform</reimplementedby>
+        <reimplementedby refid="classGambit_1_1Priors_1_1MultiPriors_1aab155dbbdd24a10769ad2f39de7b9d68">inverse_transform</reimplementedby>
+        <param>
+          <type>const std::unordered_map&lt; std::string, double &gt; &amp;</type>
+          <declname>physical</declname>
+        </param>
+        <param>
+          <type>hyper_cube_ref&lt; double &gt;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+<para>Transform from physical parameter to unit hypercube. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/base_prior.hpp" line="84" column="26"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Priors_1_1BasePrior_1ae97a234e263931674a3d2887aae871bb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Priors::BasePrior::inverse_transform</definition>
+        <argsstring>(const std::unordered_map&lt; std::string, double &gt; &amp;physical, std::vector&lt; double &gt; &amp;unit) const</argsstring>
+        <name>inverse_transform</name>
+        <qualifiedname>Gambit::Priors::BasePrior::inverse_transform</qualifiedname>
+        <param>
+          <type>const std::unordered_map&lt; std::string, double &gt; &amp;</type>
+          <declname>physical</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; double &gt; &amp;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/base_prior.hpp" line="87" column="18" bodyfile="ScannerBit/include/gambit/ScannerBit/base_prior.hpp" bodystart="87" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Priors_1_1BasePrior_1aeb70ac565a8715a9a9dd223a1318ba6b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt; double &gt; Gambit::Priors::BasePrior::inverse_transform</definition>
+        <argsstring>(const std::unordered_map&lt; std::string, double &gt; &amp;physical) const</argsstring>
+        <name>inverse_transform</name>
+        <qualifiedname>Gambit::Priors::BasePrior::inverse_transform</qualifiedname>
+        <param>
+          <type>const std::unordered_map&lt; std::string, double &gt; &amp;</type>
+          <declname>physical</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/base_prior.hpp" line="93" column="25" bodyfile="ScannerBit/include/gambit/ScannerBit/base_prior.hpp" bodystart="93" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Priors_1_1BasePrior_1a77005c4519940bf6457e4d3a3aa9c1a0" prot="public" static="no" const="yes" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double Gambit::Priors::BasePrior::log_prior_density</definition>
+        <argsstring>(const std::unordered_map&lt; std::string, double &gt; &amp;) const =0</argsstring>
+        <name>log_prior_density</name>
+        <qualifiedname>Gambit::Priors::BasePrior::log_prior_density</qualifiedname>
+        <reimplementedby refid="classGambit_1_1Priors_1_1DoubleLogFlatJoin_1a025e379521aa128c11d88fbce15e38f4">log_prior_density</reimplementedby>
+        <reimplementedby refid="classGambit_1_1Priors_1_1Dummy_1a3c9283d9811bdd41eb0eccfd77bcb43d">log_prior_density</reimplementedby>
+        <reimplementedby refid="classGambit_1_1Priors_1_1None_1a7fb97efb59f1ef4f18615ed8044137af">log_prior_density</reimplementedby>
+        <reimplementedby refid="classGambit_1_1Priors_1_1Gaussian_1a8b555f6056ec5f9f61a7a2e63cf25b8b">log_prior_density</reimplementedby>
+        <reimplementedby refid="classGambit_1_1Priors_1_1LogNormal_1a8750894cb906a89d40292095f6156a6c">log_prior_density</reimplementedby>
+        <reimplementedby refid="classGambit_1_1Priors_1_1Cauchy_1a899ef3ef3093a7e819c9bcb0dfdbea25">log_prior_density</reimplementedby>
+        <reimplementedby refid="classGambit_1_1Priors_1_1CompositePrior_1ac30ddb1661308bf6f08c71c22da7d757">log_prior_density</reimplementedby>
+        <reimplementedby refid="classGambit_1_1Priors_1_1FixedPrior_1a8167614adbd0023317dab4bbb346d665">log_prior_density</reimplementedby>
+        <reimplementedby refid="classGambit_1_1Priors_1_1MultiPriors_1a84591ab058908be96a5f33c669a766aa">log_prior_density</reimplementedby>
+        <reimplementedby refid="classGambit_1_1Priors_1_1RangePrior1D_1af00c9b4f3fd7fecd908b6a74b230c6de">log_prior_density</reimplementedby>
+        <reimplementedby refid="classGambit_1_1Priors_1_1Plugin_1a595e654bfe069a1ab0e3371842270439">log_prior_density</reimplementedby>
         <param>
           <type>const std::unordered_map&lt; std::string, double &gt; &amp;</type>
         </param>
         <briefdescription>
-<para>Transform from parameter back to unit hypercube. </para>
+<para>Log of prior density. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ScannerBit/include/gambit/ScannerBit/base_prior.hpp" line="66" column="27"/>
-      </memberdef>
-      <memberdef kind="function" id="classGambit_1_1Priors_1_1BasePrior_1a6b502e586d6c964a9dfe2935b630a2d3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
-        <type>double</type>
-        <definition>virtual double Gambit::Priors::BasePrior::operator()</definition>
-        <argsstring>(const std::vector&lt; double &gt; &amp;) const</argsstring>
-        <name>operator()</name>
-        <qualifiedname>Gambit::Priors::BasePrior::operator()</qualifiedname>
-        <reimplementedby refid="classGambit_1_1Priors_1_1Cauchy_1aed77f6e26c21985480ad6b9aa8afdc9e">operator()</reimplementedby>
-        <reimplementedby refid="classGambit_1_1Priors_1_1DoubleLogFlatJoin_1aec998fb8ef2bf5b07e654a5b369346dc">operator()</reimplementedby>
-        <reimplementedby refid="classGambit_1_1Priors_1_1RangePrior1D_1a03d09c89c5d33507d969a5e26f3b76d3">operator()</reimplementedby>
-        <reimplementedby refid="classGambit_1_1Priors_1_1Gaussian_1a226ea5cb481e4c662d722232924e038e">operator()</reimplementedby>
-        <reimplementedby refid="classGambit_1_1Priors_1_1LogNormal_1a52764b5e8ba402d151c4a09bf9a48d29">operator()</reimplementedby>
-        <reimplementedby refid="classGambit_1_1Priors_1_1Plugin_1a80252b54f2f6090ca3c0ef1accd64c74">operator()</reimplementedby>
-        <param>
-          <type>const std::vector&lt; double &gt; &amp;</type>
-        </param>
-        <briefdescription>
-<para>Log of PDF density. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="ScannerBit/include/gambit/ScannerBit/base_prior.hpp" line="69" column="22" bodyfile="ScannerBit/include/gambit/ScannerBit/base_prior.hpp" bodystart="69" bodyend="73"/>
+        <location file="ScannerBit/include/gambit/ScannerBit/base_prior.hpp" line="101" column="28"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1Priors_1_1BasePrior_1a6e59882ac88444b03d95ecd3607ec986" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
         <type>std::vector&lt; std::string &gt;</type>
@@ -239,7 +331,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ScannerBit/include/gambit/ScannerBit/base_prior.hpp" line="75" column="27" bodyfile="ScannerBit/include/gambit/ScannerBit/base_prior.hpp" bodystart="75" bodyend="75"/>
+        <location file="ScannerBit/include/gambit/ScannerBit/base_prior.hpp" line="103" column="33" bodyfile="ScannerBit/include/gambit/ScannerBit/base_prior.hpp" bodystart="103" bodyend="103"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1Priors_1_1BasePrior_1a9c476b07daa0abd7259573e5825c3d48" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>unsigned int</type>
@@ -253,7 +345,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ScannerBit/include/gambit/ScannerBit/base_prior.hpp" line="77" column="27" bodyfile="ScannerBit/include/gambit/ScannerBit/base_prior.hpp" bodystart="77" bodyend="77"/>
+        <location file="ScannerBit/include/gambit/ScannerBit/base_prior.hpp" line="105" column="33" bodyfile="ScannerBit/include/gambit/ScannerBit/base_prior.hpp" bodystart="105" bodyend="105"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1Priors_1_1BasePrior_1ab79d2df1f9c6350ed69a76e5d123de39" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -271,7 +363,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ScannerBit/include/gambit/ScannerBit/base_prior.hpp" line="79" column="19" bodyfile="ScannerBit/include/gambit/ScannerBit/base_prior.hpp" bodystart="79" bodyend="79"/>
+        <location file="ScannerBit/include/gambit/ScannerBit/base_prior.hpp" line="107" column="25" bodyfile="ScannerBit/include/gambit/ScannerBit/base_prior.hpp" bodystart="107" bodyend="107"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1Priors_1_1BasePrior_1a58e160ebd0cc101bf53e65cf4e6eb94a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>unsigned int &amp;</type>
@@ -285,7 +377,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ScannerBit/include/gambit/ScannerBit/base_prior.hpp" line="81" column="28" bodyfile="ScannerBit/include/gambit/ScannerBit/base_prior.hpp" bodystart="81" bodyend="81"/>
+        <location file="ScannerBit/include/gambit/ScannerBit/base_prior.hpp" line="109" column="34" bodyfile="ScannerBit/include/gambit/ScannerBit/base_prior.hpp" bodystart="109" bodyend="109"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1Priors_1_1BasePrior_1aaf6a0098f19105d7e11b5e7a8b74a873" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
         <type>std::vector&lt; std::string &gt;</type>
@@ -299,7 +391,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ScannerBit/include/gambit/ScannerBit/base_prior.hpp" line="83" column="26" bodyfile="ScannerBit/include/gambit/ScannerBit/base_prior.hpp" bodystart="83" bodyend="83"/>
+        <location file="ScannerBit/include/gambit/ScannerBit/base_prior.hpp" line="111" column="32" bodyfile="ScannerBit/include/gambit/ScannerBit/base_prior.hpp" bodystart="111" bodyend="111"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -379,7 +471,7 @@
         </childnode>
       </node>
     </inheritancegraph>
-    <location file="ScannerBit/include/gambit/ScannerBit/base_prior.hpp" line="40" column="5" bodyfile="ScannerBit/include/gambit/ScannerBit/base_prior.hpp" bodystart="41" bodyend="84"/>
+    <location file="ScannerBit/include/gambit/ScannerBit/base_prior.hpp" line="45" column="9" bodyfile="ScannerBit/include/gambit/ScannerBit/base_prior.hpp" bodystart="46" bodyend="112"/>
     <listofallmembers>
       <member refid="classGambit_1_1Priors_1_1BasePrior_1a839ff7a9704898c967f03add67950b05" prot="public" virt="non-virtual"><scope>Gambit::Priors::BasePrior</scope><name>BasePrior</name></member>
       <member refid="classGambit_1_1Priors_1_1BasePrior_1aefa66cd74f99ecf7d29dcb9c608ed202" prot="public" virt="non-virtual"><scope>Gambit::Priors::BasePrior</scope><name>BasePrior</name></member>
@@ -387,14 +479,18 @@
       <member refid="classGambit_1_1Priors_1_1BasePrior_1a421fbf213a5d7b1734ff5190cc27ff6a" prot="public" virt="non-virtual"><scope>Gambit::Priors::BasePrior</scope><name>BasePrior</name></member>
       <member refid="classGambit_1_1Priors_1_1BasePrior_1aaf6a0098f19105d7e11b5e7a8b74a873" prot="public" virt="non-virtual"><scope>Gambit::Priors::BasePrior</scope><name>getParameters</name></member>
       <member refid="classGambit_1_1Priors_1_1BasePrior_1a6e59882ac88444b03d95ecd3607ec986" prot="public" virt="virtual"><scope>Gambit::Priors::BasePrior</scope><name>getShownParameters</name></member>
-      <member refid="classGambit_1_1Priors_1_1BasePrior_1a5ae0c15c2fb6c0ad555ff3b230b26352" prot="public" virt="pure-virtual"><scope>Gambit::Priors::BasePrior</scope><name>inverse_transform</name></member>
-      <member refid="classGambit_1_1Priors_1_1BasePrior_1a6b502e586d6c964a9dfe2935b630a2d3" prot="public" virt="virtual"><scope>Gambit::Priors::BasePrior</scope><name>operator()</name></member>
+      <member refid="classGambit_1_1Priors_1_1BasePrior_1a5f40e71b111fc0069d702545c4518cfb" prot="public" virt="pure-virtual"><scope>Gambit::Priors::BasePrior</scope><name>inverse_transform</name></member>
+      <member refid="classGambit_1_1Priors_1_1BasePrior_1ae97a234e263931674a3d2887aae871bb" prot="public" virt="non-virtual"><scope>Gambit::Priors::BasePrior</scope><name>inverse_transform</name></member>
+      <member refid="classGambit_1_1Priors_1_1BasePrior_1aeb70ac565a8715a9a9dd223a1318ba6b" prot="public" virt="non-virtual"><scope>Gambit::Priors::BasePrior</scope><name>inverse_transform</name></member>
+      <member refid="classGambit_1_1Priors_1_1BasePrior_1a77005c4519940bf6457e4d3a3aa9c1a0" prot="public" virt="pure-virtual"><scope>Gambit::Priors::BasePrior</scope><name>log_prior_density</name></member>
       <member refid="classGambit_1_1Priors_1_1BasePrior_1ab54eef4c7b0188cc43c60e10f77fac3d" prot="protected" virt="non-virtual"><scope>Gambit::Priors::BasePrior</scope><name>param_names</name></member>
       <member refid="classGambit_1_1Priors_1_1BasePrior_1afc544e1c4aef32e2d4c4a0fcbb1e2339" prot="private" virt="non-virtual"><scope>Gambit::Priors::BasePrior</scope><name>param_size</name></member>
       <member refid="classGambit_1_1Priors_1_1BasePrior_1ab79d2df1f9c6350ed69a76e5d123de39" prot="public" virt="non-virtual"><scope>Gambit::Priors::BasePrior</scope><name>setSize</name></member>
       <member refid="classGambit_1_1Priors_1_1BasePrior_1a9c476b07daa0abd7259573e5825c3d48" prot="public" virt="non-virtual"><scope>Gambit::Priors::BasePrior</scope><name>size</name></member>
       <member refid="classGambit_1_1Priors_1_1BasePrior_1a58e160ebd0cc101bf53e65cf4e6eb94a" prot="public" virt="non-virtual"><scope>Gambit::Priors::BasePrior</scope><name>sizeRef</name></member>
-      <member refid="classGambit_1_1Priors_1_1BasePrior_1adaf214a4f7aa4e9c4c3fa7daebc32903" prot="public" virt="pure-virtual"><scope>Gambit::Priors::BasePrior</scope><name>transform</name></member>
+      <member refid="classGambit_1_1Priors_1_1BasePrior_1a19946205afb8ea2469569f699bc464c6" prot="public" virt="pure-virtual"><scope>Gambit::Priors::BasePrior</scope><name>transform</name></member>
+      <member refid="classGambit_1_1Priors_1_1BasePrior_1afd7a341a9684c682c9b048543833ffc8" prot="public" virt="non-virtual"><scope>Gambit::Priors::BasePrior</scope><name>transform</name></member>
+      <member refid="classGambit_1_1Priors_1_1BasePrior_1ab1be385fc36bd1fb1b562ec04b0e8440" prot="public" virt="non-virtual"><scope>Gambit::Priors::BasePrior</scope><name>transform</name></member>
       <member refid="classGambit_1_1Priors_1_1BasePrior_1af23c343daddeab5deb668909eff4d918" prot="public" virt="virtual"><scope>Gambit::Priors::BasePrior</scope><name>~BasePrior</name></member>
     </listofallmembers>
   </compounddef>

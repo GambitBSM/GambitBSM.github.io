@@ -1037,7 +1037,7 @@ namespace Gambit
         obs_theory.push_back(prediction.central_values.at(observables[i]));
       }
       return obs_theory;
-    };
+    }
 
     /// Extract covariance matrix of the given observables from the covariance map.
     boost::numeric::ublas::matrix<double> get_obs_covariance(const flav_prediction& prediction, const std::vector<std::string>& observables)
@@ -1051,7 +1051,7 @@ namespace Gambit
         }
       }
       return obs_covariance;
-    };
+    }
 
     /// Helper function to avoid code duplication.
     void SuperIso_prediction_helper(const std::vector<std::string>& FB_obslist, const std::vector<std::string>& SI_obslist, flav_prediction& result,
@@ -1074,10 +1074,12 @@ namespace Gambit
       int nObservables = SI_obslist.size();
       if (flav_debug) std::cout<<"Observables: "<<std::endl;
 
-      char obsnames[nObservables][50];
+      std::vector<std::vector<char>> obsnames(nObservables, std::vector<char>(50));
+      std::vector<char *> obsnames_ptr(nObservables);
       for(int iObservable = 0; iObservable < nObservables; iObservable++)
       {
-        strcpy(obsnames[iObservable], SI_obslist[iObservable].c_str());
+        obsnames_ptr[iObservable] = &obsnames[iObservable][0];
+        strcpy(&obsnames[iObservable][0], SI_obslist[iObservable].c_str());
         if( flav_debug) std::cout<<SI_obslist[iObservable].c_str()<<std::endl;
       }
 
@@ -1088,7 +1090,7 @@ namespace Gambit
       result_central = (double *) calloc(nObservables, sizeof(double));
 
       // Needed for SuperIso backend
-      get_predictions_nuisance((char**)obsnames, &nObservables, &result_central, &param, &nuislist);
+      get_predictions_nuisance((char**)&obsnames_ptr[0], &nObservables, &result_central, &param, &nuislist);
 
       // Compute the central values
       for(int iObservable = 0; iObservable < nObservables; ++iObservable)
@@ -1104,7 +1106,7 @@ namespace Gambit
       {
         for(int iObservable = 0; iObservable < nObservables; ++iObservable)
         {
-          printf("%s=%.4e\n", obsnames[iObservable], result.central_values[FB_obslist[iObservable]]);
+          printf("%s=%.4e\n", &obsnames[iObservable][0], result.central_values[FB_obslist[iObservable]]);
         }
       }
 
@@ -1155,12 +1157,12 @@ namespace Gambit
             param_SM.deltaCQp[ie]=0.;
           }
           // Use the SM values of the parameters to calculate the SM theory covariance.
-          get_th_covariance_nuisance(&result_covariance, (char**)obsnames, &nObservables, &param_SM, &nuislist, (double **)corr);
+          get_th_covariance_nuisance(&result_covariance, (char**)&obsnames_ptr[0], &nObservables, &param_SM, &nuislist, (double **)corr);
         }
         else
         {
           // Calculate covariance at the new physics point.
-          get_th_covariance_nuisance(&result_covariance, (char**)obsnames, &nObservables, &param, &nuislist, (double **)corr);
+          get_th_covariance_nuisance(&result_covariance, (char**)&obsnames_ptr[0], &nObservables, &param, &nuislist, (double **)corr);
         }
 
         // Fill the covariance matrix in the result structure
@@ -1191,7 +1193,7 @@ namespace Gambit
           for(int jObservable = iObservable; jObservable < nObservables; ++jObservable)
           {
             printf("Covariance %s - %s: %.4e\n",
-              obsnames[iObservable], obsnames[jObservable], result.covariance[FB_obslist[iObservable]][FB_obslist[jObservable]]);
+              &obsnames[iObservable][0], &obsnames[jObservable][0], result.covariance[FB_obslist[iObservable]][FB_obslist[jObservable]]);
            }
         }
         std::cout << "Changing convention. After:"<< std::endl;
@@ -3336,4 +3338,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:06 +0000
+Updated on 2024-07-18 at 13:53:33 +0000

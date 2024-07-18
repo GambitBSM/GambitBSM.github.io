@@ -19,15 +19,18 @@
     <includedby refid="baseprinter_8cpp" local="yes">baseprinter.cpp</includedby>
     <includedby refid="coutprinter_8hpp" local="yes">coutprinter.hpp</includedby>
     <includedby refid="depresolver_8hpp" local="yes">depresolver.hpp</includedby>
+    <includedby refid="exceptions_8cpp" local="yes">exceptions.cpp</includedby>
     <includedby refid="functor__definitions_8hpp" local="yes">functor_definitions.hpp</includedby>
     <includedby refid="hdf5printer_8hpp" local="yes">hdf5printer.hpp</includedby>
     <includedby refid="hdf5printer__v2_8hpp" local="yes">hdf5printer_v2.hpp</includedby>
     <includedby refid="hdf5reader_8hpp" local="yes">hdf5reader.hpp</includedby>
     <includedby refid="likelihood__container_8hpp" local="yes">likelihood_container.hpp</includedby>
     <includedby refid="noneprinter_8hpp" local="yes">noneprinter.hpp</includedby>
+    <includedby refid="printer__utils_8hpp" local="yes">printer_utils.hpp</includedby>
     <includedby refid="printermanager_8cpp" local="yes">printermanager.cpp</includedby>
     <includedby refid="sqliteprinter_8hpp" local="yes">sqliteprinter.hpp</includedby>
     <includedby refid="sqlitereader_8hpp" local="yes">sqlitereader.hpp</includedby>
+    <includedby refid="standalone__module_8hpp" local="yes">standalone_module.hpp</includedby>
     <incdepgraph>
       <node id="110">
         <label>gambit/Backends/backend_info.hpp</label>
@@ -968,7 +971,7 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="25">
+      <node id="26">
         <label>backend_macros.hpp</label>
         <link refid="backend__macros_8hpp"/>
       </node>
@@ -1038,17 +1041,55 @@
         <label>modelgraph.cpp</label>
         <link refid="modelgraph_8cpp"/>
       </node>
-      <node id="24">
+      <node id="49">
+        <label>DarkBit_standalone_MSSM.cpp</label>
+        <link refid="DarkBit__standalone__MSSM_8cpp"/>
+      </node>
+      <node id="50">
+        <label>DarkBit_standalone_ScalarSingletDM_Z2.cpp</label>
+        <link refid="DarkBit__standalone__ScalarSingletDM__Z2_8cpp"/>
+      </node>
+      <node id="51">
+        <label>DarkBit_standalone_WIMP.cpp</label>
+        <link refid="DarkBit__standalone__WIMP_8cpp"/>
+      </node>
+      <node id="39">
+        <label>RelicDensity.cpp</label>
+        <link refid="RelicDensity_8cpp"/>
+      </node>
+      <node id="48">
+        <label>3bithit.cpp</label>
+        <link refid="3bithit_8cpp"/>
+      </node>
+      <node id="25">
         <label>functor_definitions.hpp</label>
         <link refid="functor__definitions_8hpp"/>
-        <childnode refid="25" relation="include">
-        </childnode>
         <childnode refid="26" relation="include">
         </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
       </node>
-      <node id="26">
+      <node id="47">
+        <label>standalone_module.hpp</label>
+        <link refid="standalone__module_8hpp"/>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
         <label>functors.cpp</label>
         <link refid="Elements_2src_2functors_8cpp"/>
+      </node>
+      <node id="52">
+        <label>ExampleBit_A_standalone_example.cpp</label>
+        <link refid="ExampleBit__A__standalone__example_8cpp"/>
       </node>
       <node id="1">
         <label>baseprinter.hpp</label>
@@ -1067,21 +1108,33 @@
         </childnode>
         <childnode refid="24" relation="include">
         </childnode>
-        <childnode refid="27" relation="include">
+        <childnode refid="25" relation="include">
         </childnode>
-        <childnode refid="32" relation="include">
+        <childnode refid="28" relation="include">
         </childnode>
-        <childnode refid="35" relation="include">
-        </childnode>
-        <childnode refid="15" relation="include">
+        <childnode refid="33" relation="include">
         </childnode>
         <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
         </childnode>
         <childnode refid="37" relation="include">
         </childnode>
         <childnode refid="38" relation="include">
         </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
         <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>printer_utils.hpp</label>
+        <link refid="printer__utils_8hpp"/>
+        <childnode refid="39" relation="include">
         </childnode>
       </node>
       <node id="3">
@@ -1108,59 +1161,59 @@
         <childnode refid="12" relation="include">
         </childnode>
       </node>
-      <node id="27">
+      <node id="28">
         <label>hdf5printer.hpp</label>
         <link refid="hdf5printer_8hpp"/>
-        <childnode refid="28" relation="include">
-        </childnode>
         <childnode refid="29" relation="include">
         </childnode>
         <childnode refid="30" relation="include">
         </childnode>
         <childnode refid="31" relation="include">
         </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
       </node>
-      <node id="32">
+      <node id="33">
         <label>hdf5printer_v2.hpp</label>
         <link refid="hdf5printer__v2_8hpp"/>
-        <childnode refid="33" relation="include">
-        </childnode>
         <childnode refid="34" relation="include">
         </childnode>
-      </node>
-      <node id="35">
-        <label>hdf5reader.hpp</label>
-        <link refid="hdf5reader_8hpp"/>
-        <childnode refid="29" relation="include">
-        </childnode>
-        <childnode refid="31" relation="include">
+        <childnode refid="35" relation="include">
         </childnode>
       </node>
       <node id="36">
+        <label>hdf5reader.hpp</label>
+        <link refid="hdf5reader_8hpp"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
         <label>noneprinter.hpp</label>
         <link refid="noneprinter_8hpp"/>
       </node>
-      <node id="38">
+      <node id="41">
         <label>sqliteprinter.hpp</label>
         <link refid="sqliteprinter_8hpp"/>
-        <childnode refid="39" relation="include">
-        </childnode>
-        <childnode refid="40" relation="include">
-        </childnode>
-      </node>
-      <node id="41">
-        <label>sqlitereader.hpp</label>
-        <link refid="sqlitereader_8hpp"/>
         <childnode refid="42" relation="include">
         </childnode>
         <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>sqlitereader.hpp</label>
+        <link refid="sqlitereader_8hpp"/>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
         </childnode>
       </node>
       <node id="9">
         <label>baseprinter.cpp</label>
         <link refid="baseprinter_8cpp"/>
       </node>
-      <node id="37">
+      <node id="40">
         <label>printermanager.cpp</label>
         <link refid="printermanager_8cpp"/>
       </node>
@@ -1188,49 +1241,53 @@
         <label>print_overloads.cpp</label>
         <link refid="coutprinter_2print__overloads_8cpp"/>
       </node>
-      <node id="28">
+      <node id="29">
         <label>hdf5printer.cpp</label>
         <link refid="hdf5printer_8cpp"/>
       </node>
-      <node id="29">
+      <node id="30">
         <label>hdf5reader.cpp</label>
         <link refid="hdf5reader_8cpp"/>
       </node>
-      <node id="30">
+      <node id="31">
         <label>print_overloads.cpp</label>
         <link refid="hdf5printer_2print__overloads_8cpp"/>
       </node>
-      <node id="31">
+      <node id="32">
         <label>retrieve_overloads.cpp</label>
         <link refid="hdf5printer_2retrieve__overloads_8cpp"/>
       </node>
-      <node id="33">
+      <node id="34">
         <label>hdf5printer_v2.cpp</label>
         <link refid="hdf5printer__v2_8cpp"/>
       </node>
-      <node id="34">
+      <node id="35">
         <label>print_overloads.cpp</label>
         <link refid="hdf5printer__v2_2print__overloads_8cpp"/>
       </node>
-      <node id="39">
+      <node id="42">
         <label>print_overloads.cpp</label>
         <link refid="sqliteprinter_2print__overloads_8cpp"/>
       </node>
-      <node id="42">
+      <node id="45">
         <label>retrieve_overloads.cpp</label>
         <link refid="sqliteprinter_2retrieve__overloads_8cpp"/>
       </node>
-      <node id="40">
+      <node id="43">
         <label>sqliteprinter.cpp</label>
         <link refid="sqliteprinter_8cpp"/>
       </node>
-      <node id="43">
+      <node id="46">
         <label>sqlitereader.cpp</label>
         <link refid="sqlitereader_8cpp"/>
       </node>
       <node id="2">
         <label>SpecBit_MSSM.cpp</label>
         <link refid="SpecBit__MSSM_8cpp"/>
+      </node>
+      <node id="24">
+        <label>exceptions.cpp</label>
+        <link refid="exceptions_8cpp"/>
       </node>
     </invincdepgraph>
     <innerclass refid="classGambit_1_1Printers_1_1BasePrinter" prot="public">Gambit::Printers::BasePrinter</innerclass>
@@ -1393,161 +1450,166 @@
 <codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
 <codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1Printers_1_1BasePrinter" kindref="compound">BasePrinter</ref>*<sp/>primary_printer;</highlight></codeline>
 <codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>is_aux;</highlight></codeline>
-<codeline lineno="91"><highlight class="normal"></highlight></codeline>
-<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1Printers_1_1BasePrinter" kindref="compound">BasePrinter</ref>()</highlight></codeline>
-<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>primary_printer(NULL)</highlight></codeline>
-<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>is_aux(</highlight><highlight class="keyword">false</highlight><highlight class="normal">)</highlight></codeline>
-<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{}</highlight></codeline>
-<codeline lineno="97"><highlight class="normal"></highlight></codeline>
-<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1Printers_1_1BasePrinter" kindref="compound">BasePrinter</ref>(<ref refid="classGambit_1_1Printers_1_1BasePrinter" kindref="compound">BasePrinter</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>primary,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>is_aux_IN)</highlight></codeline>
-<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>primary_printer(primary)</highlight></codeline>
-<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>is_aux(is_aux_IN)</highlight></codeline>
-<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{}</highlight></codeline>
-<codeline lineno="102"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="103"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Destructor</highlight></codeline>
-<codeline lineno="104" refid="classGambit_1_1Printers_1_1BasePrinter_1a4d7f0232eec2f4a884e22b82a8111f51" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Printers_1_1BasePrinter_1a4d7f0232eec2f4a884e22b82a8111f51" kindref="member">~BasePrinter</ref>()<sp/>{}</highlight></codeline>
-<codeline lineno="105"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="106"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Initialisation<sp/>function</highlight></codeline>
-<codeline lineno="107"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Run<sp/>by<sp/>dependency<sp/>resolver,<sp/>which<sp/>supplies<sp/>the<sp/>functors<sp/>with<sp/>a<sp/>vector<sp/>of<sp/>VertexIDs<sp/>whose<sp/>requiresPrinting<sp/>flags<sp/>are<sp/>set<sp/>to<sp/>true.<sp/>(TODO:<sp/>probably<sp/>extend<sp/>this<sp/>to<sp/>be<sp/>a<sp/>list<sp/>of<sp/>functors<sp/>THIS<sp/>printer<sp/>is<sp/>supposed<sp/>to<sp/>print,<sp/>since<sp/>we<sp/>may<sp/>want<sp/>several<sp/>printers<sp/>handling<sp/>different<sp/>functors,<sp/>for<sp/>SLHA<sp/>output<sp/>or<sp/>some<sp/>such<sp/>perhaps).</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="108" refid="classGambit_1_1Printers_1_1BasePrinter_1afb115e9770b0b87a65e727554c7d899c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Printers_1_1BasePrinter_1afb115e9770b0b87a65e727554c7d899c" kindref="member">initialise</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;int&gt;&amp;)<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="109"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="110"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Signal<sp/>printer<sp/>to<sp/>flush<sp/>data<sp/>in<sp/>buffers<sp/>to<sp/>disk</highlight></codeline>
-<codeline lineno="111"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Printers<sp/>should<sp/>do<sp/>this<sp/>automatically<sp/>as<sp/>needed,<sp/>but<sp/>this<sp/>is<sp/>useful<sp/>if<sp/>a<sp/>scanner<sp/>is<sp/>printing</highlight></codeline>
-<codeline lineno="112"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>a<sp/>bunch<sp/>of<sp/>data<sp/>as<sp/>a<sp/>batch,<sp/>to<sp/>make<sp/>sure<sp/>it<sp/>is<sp/>all<sp/>on<sp/>disk<sp/>after<sp/>the<sp/>batch<sp/>is<sp/>done.</highlight></codeline>
-<codeline lineno="113" refid="classGambit_1_1Printers_1_1BasePrinter_1aeb68299b8d3c7c2c796751884d7241ba" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Printers_1_1BasePrinter_1aeb68299b8d3c7c2c796751884d7241ba" kindref="member">flush</ref>()<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="114"><highlight class="normal"></highlight></codeline>
-<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Get<sp/>options<sp/>required<sp/>to<sp/>construct<sp/>a<sp/>reader<sp/>object<sp/>that<sp/>can<sp/>read</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>previous<sp/>output<sp/>of<sp/>this<sp/>printer.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Options" kindref="compound">Options</ref><sp/>resume_reader_options()<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="118"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="119"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Set<sp/>this<sp/>as<sp/>an<sp/>auxilliary<sp/>printer</highlight></codeline>
-<codeline lineno="120" refid="classGambit_1_1Printers_1_1BasePrinter_1afee2494a6631283d92afbb05df5f6eb8" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Printers_1_1BasePrinter_1afee2494a6631283d92afbb05df5f6eb8" kindref="member">set_as_aux</ref>()<sp/>{<sp/>is_aux<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
-<codeline lineno="121"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="122"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Helper<sp/>initialisation<sp/>for<sp/>auxilliary<sp/>printers</highlight></codeline>
-<codeline lineno="123"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Will<sp/>be<sp/>run<sp/>when<sp/>the<sp/>auxilliary<sp/>printer<sp/>is</highlight></codeline>
-<codeline lineno="124"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>created<sp/>by<sp/>a<sp/>PrinterManager.</highlight></codeline>
-<codeline lineno="125"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Define<sp/>override<sp/>of<sp/>this<sp/>if<sp/>two-stage<sp/>initialisation<sp/>is<sp/>needed</highlight></codeline>
-<codeline lineno="126" refid="classGambit_1_1Printers_1_1BasePrinter_1abbb4a0a52992af14c237ab78f5542eff" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Printers_1_1BasePrinter_1abbb4a0a52992af14c237ab78f5542eff" kindref="member">auxilliary_init</ref>()<sp/>{};</highlight></codeline>
-<codeline lineno="127"><highlight class="normal"></highlight></codeline>
-<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1Printers_1_1BasePrinter" kindref="compound">BasePrinter</ref>*<sp/>get_primary_printer()</highlight></codeline>
-<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(not<sp/>is_aux)</highlight></codeline>
-<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::ostringstream<sp/>err;</highlight></codeline>
-<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Error!<sp/>Tried<sp/>to<sp/>retrieve<sp/>pointer<sp/>to<sp/>primary<sp/>printer<sp/>from<sp/>a<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;printer<sp/>object<sp/>not<sp/>flagged<sp/>as<sp/>auxilliary!&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1_1Printers_1aea6c68cb3e134435f26742b0eff32b1a" kindref="member">printer_error</ref>().<ref refid="classGambit_1_1exception_1ab12c6189c744fdc119c6377d288ae961" kindref="member">raise</ref>(LOCAL_INFO,err.str());</highlight></codeline>
-<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(primary_printer==NULL)</highlight></codeline>
-<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::ostringstream<sp/>err;</highlight></codeline>
-<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Error!<sp/>Tried<sp/>to<sp/>retrieve<sp/>pointer<sp/>to<sp/>primary<sp/>printer,<sp/>but<sp/>it<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;is<sp/>NULL!<sp/>Something<sp/>has<sp/>gone<sp/>wrong<sp/>in<sp/>the<sp/>initialisation<sp/>of<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;the<sp/>printer<sp/>system.&quot;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1_1Printers_1aea6c68cb3e134435f26742b0eff32b1a" kindref="member">printer_error</ref>().<ref refid="classGambit_1_1exception_1ab12c6189c744fdc119c6377d288ae961" kindref="member">raise</ref>(LOCAL_INFO,err.str());</highlight></codeline>
-<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>primary_printer;</highlight></codeline>
-<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>is_auxilliary_printer()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>is_aux;<sp/>}</highlight></codeline>
-<codeline lineno="148"><highlight class="normal"></highlight></codeline>
-<codeline lineno="149"><highlight class="normal"></highlight></codeline>
-<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Printer<sp/>dispatch<sp/>function.<sp/>This<sp/>is<sp/>defined<sp/>already</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>in<sp/>the<sp/>BaseBasePrinter<sp/>class,<sp/>but<sp/>I<sp/>think<sp/>I<sp/>need<sp/>it</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>here<sp/>as<sp/>well<sp/>so<sp/>that<sp/>that<sp/>BasePrinter<sp/>version<sp/>can</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>detect<sp/>the<sp/>new<sp/>virtual<sp/>function<sp/>overloads<sp/>which<sp/>exist</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>in<sp/>this<sp/>class.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
-<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>print(T<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>in,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>label,</highlight></codeline>
-<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>vertexID,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint<sp/>rank,</highlight></codeline>
-<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ulong<sp/>pointID)</highlight></codeline>
-<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classGambit_1_1Printers_1_1BaseBasePrinter_1a38cea919f04f4c6b544b4a71aeca79db" kindref="member">printer_enabled</ref>)<sp/><ref refid="classGambit_1_1Printers_1_1BasePrinter_1acec290abd094f645c538be69aa1928cd" kindref="member">_print</ref>(in,<sp/>label,<sp/>vertexID,<sp/>rank,<sp/>pointID);</highlight></codeline>
-<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="162"><highlight class="normal"></highlight></codeline>
-<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Overload<sp/>which<sp/>automatically<sp/>determines<sp/>a<sp/>unique<sp/>ID<sp/>code</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>based<sp/>on<sp/>the<sp/>label.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
-<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>print(T<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>in,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>label,</highlight></codeline>
-<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint<sp/>rank,</highlight></codeline>
-<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ulong<sp/>pointID)</highlight></codeline>
-<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(in,<sp/>label,<sp/><ref refid="namespaceGambit_1_1Printers_1a8b38ae862204caf75682d04fabdaf2cb" kindref="member">get_param_id</ref>(label),<sp/>rank,<sp/>pointID);</highlight></codeline>
-<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="172"><highlight class="normal"></highlight></codeline>
-<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Unhide<sp/>the<sp/>default<sp/>function<sp/>in<sp/>the<sp/>base<sp/>class</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="classGambit_1_1Printers_1_1BaseBasePrinter_1acec290abd094f645c538be69aa1928cd" kindref="member">BaseBasePrinter::_print</ref>;</highlight></codeline>
-<codeline lineno="176"><highlight class="normal"></highlight></codeline>
-<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>We<sp/>need<sp/>to<sp/>have<sp/>a<sp/>virtual<sp/>print<sp/>method<sp/>for<sp/>every<sp/>type<sp/>that<sp/>we<sp/>want<sp/>to</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>be<sp/>able<sp/>to<sp/>print.<sp/>The<sp/>list<sp/>of<sp/>these<sp/>types<sp/>is<sp/>maintained<sp/>in</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>&quot;gambit/Elements/printable_types.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Run<sp/>the<sp/>macro;<sp/>add<sp/>all<sp/>the<sp/>print<sp/>functions</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ADD_VIRTUAL_PRINTS(PRINTABLE_TYPES)</highlight></codeline>
-<codeline lineno="182"><highlight class="normal"></highlight></codeline>
-<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="184"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="185"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>BASE<sp/>READER<sp/>CLASS</highlight></codeline>
-<codeline lineno="186" refid="classGambit_1_1Printers_1_1BaseReader" refkind="compound"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classGambit_1_1Printers_1_1BaseReader" kindref="compound">BaseReader</ref>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Printers_1_1BaseBaseReader" kindref="compound">BaseBaseReader</ref></highlight></codeline>
-<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1Printers_1_1BaseReader" kindref="compound">BaseReader</ref>()<sp/>{}</highlight></codeline>
-<codeline lineno="190"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="191"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Destructor</highlight></codeline>
-<codeline lineno="192" refid="classGambit_1_1Printers_1_1BaseReader_1a4b63d842be17a11c793abf31af7e2ca8" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Printers_1_1BaseReader_1a4b63d842be17a11c793abf31af7e2ca8" kindref="member">~BaseReader</ref>()<sp/>{}</highlight></codeline>
-<codeline lineno="193"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="194"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Reimplement<sp/>overload<sp/>for<sp/>&apos;retrieve&apos;<sp/>that<sp/>uses<sp/>the<sp/>current<sp/>point<sp/>as<sp/>the<sp/>input<sp/>for<sp/>rank/pointID</highlight></codeline>
-<codeline lineno="195"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Need<sp/>to<sp/>do<sp/>this<sp/>because<sp/>otherwise<sp/>we<sp/>end<sp/>up<sp/>using<sp/>the<sp/>scanner-only<sp/>templates<sp/>for<sp/>the<sp/>retrieves,</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>rather<sp/>than<sp/>the<sp/>full<sp/>set<sp/>available<sp/>here.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
-<codeline lineno="198" refid="classGambit_1_1Printers_1_1BaseReader_1aa8384e492baaf6db96559508f7991adc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Printers_1_1BaseReader_1aa8384e492baaf6db96559508f7991adc" kindref="member">retrieve</ref>(T&amp;<sp/>out,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>label)</highlight></codeline>
-<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structGambit_1_1Printers_1_1PPIDpair" kindref="compound">PPIDpair</ref><sp/>pt<sp/>=<sp/>get_current_point();</highlight></codeline>
-<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Printers_1_1BaseReader_1aa8384e492baaf6db96559508f7991adc" kindref="member">retrieve</ref>(out,<sp/>label,<sp/>pt.rank,<sp/>pt.pointID);</highlight></codeline>
-<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="203"><highlight class="normal"></highlight></codeline>
-<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>retrieve<sp/>function<sp/>dispatch</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
-<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Printers_1_1BaseReader_1aa8384e492baaf6db96559508f7991adc" kindref="member">retrieve</ref>(T&amp;<sp/>out,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>label,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint<sp/>rank,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ulong<sp/>pointID)</highlight></codeline>
-<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Printers_1_1BaseReader_1a080c5bf796d9bb764c3abe7037957570" kindref="member">_retrieve</ref>(out,<sp/>label,<sp/>rank,<sp/>pointID);</highlight></codeline>
-<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="210"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="211"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Retrieve<sp/>and<sp/>directly<sp/>print<sp/>data<sp/>to<sp/>new<sp/>output</highlight></codeline>
-<codeline lineno="212"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Printers_1_1BaseReader_1a2add1d451993e11b176088c05e7a9fce" kindref="member">retrieve_and_print</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>in_label,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>out_label,<sp/>BaseBasePrinter&amp;<sp/>printer,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint<sp/>rank,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ulong<sp/>pointID);</highlight></codeline>
-<codeline lineno="213"><highlight class="normal"></highlight></codeline>
-<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="classGambit_1_1Printers_1_1BaseBaseReader_1a080c5bf796d9bb764c3abe7037957570" kindref="member">BaseBaseReader::_retrieve</ref>;<sp/></highlight><highlight class="comment">//unhide<sp/>the<sp/>default<sp/>function<sp/>in<sp/>the<sp/>base<sp/>class</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="216"><highlight class="normal"></highlight></codeline>
-<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>We<sp/>need<sp/>to<sp/>have<sp/>a<sp/>virtual<sp/>&apos;retrieve&apos;<sp/>method<sp/>for<sp/>every<sp/>type<sp/>that<sp/>we<sp/>want<sp/>to</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>be<sp/>able<sp/>to<sp/>retrieve.<sp/>The<sp/>list<sp/>of<sp/>these<sp/>types<sp/>is<sp/>maintained<sp/>in</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>&quot;gambit/Elements/printable_types.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Run<sp/>the<sp/>macro;<sp/>add<sp/>all<sp/>the<sp/>print<sp/>functions</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ADD_VIRTUAL_RETRIEVALS(RETRIEVABLE_TYPES)</highlight></codeline>
-<codeline lineno="222"><highlight class="normal"></highlight></codeline>
-<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="224"><highlight class="normal"></highlight></codeline>
-<codeline lineno="225"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="226"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Maps<sp/>in<sp/>which<sp/>to<sp/>keep<sp/>factory<sp/>functions<sp/>for<sp/>the<sp/>printers<sp/>(printer_creators)</highlight></codeline>
-<codeline lineno="227"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>and<sp/>readers<sp/>(reader_creators)</highlight></codeline>
-<codeline lineno="228"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(uses<sp/>the<sp/>same<sp/>machinery<sp/>as<sp/>in<sp/>priors.hpp)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Note:<sp/>Arguments<sp/>to<sp/>e.g<sp/>printer_creators<sp/>need<sp/>to<sp/>match<sp/>constructor<sp/>for<sp/>printer<sp/>object</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>e.g.<sp/>printer_creators.at(tag)(args...)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(this<sp/>is<sp/>set<sp/>up<sp/>by<sp/>the<sp/>typedef)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="232" refid="namespaceGambit_1_1Printers_1ad5e1c8f33e593669d8bdc363453d976d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1_1Printers_1ad5e1c8f33e593669d8bdc363453d976d" kindref="member">gambit_registry</ref></highlight></codeline>
-<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Printers_1_1BasePrinter" kindref="compound">BasePrinter</ref>*<sp/>create_printer_function(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Options" kindref="compound">Options</ref>&amp;,<sp/><ref refid="classGambit_1_1Printers_1_1BasePrinter" kindref="compound">BasePrinter</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;);</highlight></codeline>
-<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1reg__elem" kindref="compound">reg_elem &lt;create_printer_function&gt;</ref><sp/>printer_creators;</highlight></codeline>
-<codeline lineno="236"><highlight class="normal"></highlight></codeline>
-<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Printers_1_1BaseReader" kindref="compound">BaseReader</ref>*<sp/>create_reader_function(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Options" kindref="compound">Options</ref>&amp;);</highlight></codeline>
-<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1reg__elem" kindref="compound">reg_elem &lt;create_reader_function&gt;</ref><sp/>reader_creators;</highlight></codeline>
-<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="240"><highlight class="normal"></highlight></codeline>
-<codeline lineno="241"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="comment">//end<sp/>namespace<sp/>Printers</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="242"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>namespace<sp/>Gambit</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="243"><highlight class="normal"></highlight></codeline>
-<codeline lineno="244"><highlight class="normal"></highlight></codeline>
-<codeline lineno="245"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//ifndef<sp/>__base_printer_hpp__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>output_metadata;</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1Printers_1_1BasePrinter" kindref="compound">BasePrinter</ref>()</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>primary_printer(NULL)</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>is_aux(</highlight><highlight class="keyword">false</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1Printers_1_1BasePrinter" kindref="compound">BasePrinter</ref>(<ref refid="classGambit_1_1Printers_1_1BasePrinter" kindref="compound">BasePrinter</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>primary,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>is_aux_IN)</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>primary_printer(primary)</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>,<sp/>is_aux(is_aux_IN)</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="104"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Destructor</highlight></codeline>
+<codeline lineno="105" refid="classGambit_1_1Printers_1_1BasePrinter_1a4d7f0232eec2f4a884e22b82a8111f51" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Printers_1_1BasePrinter_1a4d7f0232eec2f4a884e22b82a8111f51" kindref="member">~BasePrinter</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="107"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Initialisation<sp/>function</highlight></codeline>
+<codeline lineno="108"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Run<sp/>by<sp/>dependency<sp/>resolver,<sp/>which<sp/>supplies<sp/>the<sp/>functors<sp/>with<sp/>a<sp/>vector<sp/>of<sp/>VertexIDs<sp/>whose<sp/>requiresPrinting<sp/>flags<sp/>are<sp/>set<sp/>to<sp/>true.<sp/>(TODO:<sp/>probably<sp/>extend<sp/>this<sp/>to<sp/>be<sp/>a<sp/>list<sp/>of<sp/>functors<sp/>THIS<sp/>printer<sp/>is<sp/>supposed<sp/>to<sp/>print,<sp/>since<sp/>we<sp/>may<sp/>want<sp/>several<sp/>printers<sp/>handling<sp/>different<sp/>functors,<sp/>for<sp/>SLHA<sp/>output<sp/>or<sp/>some<sp/>such<sp/>perhaps).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="109" refid="classGambit_1_1Printers_1_1BasePrinter_1afb115e9770b0b87a65e727554c7d899c" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Printers_1_1BasePrinter_1afb115e9770b0b87a65e727554c7d899c" kindref="member">initialise</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;int&gt;&amp;)<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="111"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Signal<sp/>printer<sp/>to<sp/>flush<sp/>data<sp/>in<sp/>buffers<sp/>to<sp/>disk</highlight></codeline>
+<codeline lineno="112"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Printers<sp/>should<sp/>do<sp/>this<sp/>automatically<sp/>as<sp/>needed,<sp/>but<sp/>this<sp/>is<sp/>useful<sp/>if<sp/>a<sp/>scanner<sp/>is<sp/>printing</highlight></codeline>
+<codeline lineno="113"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>a<sp/>bunch<sp/>of<sp/>data<sp/>as<sp/>a<sp/>batch,<sp/>to<sp/>make<sp/>sure<sp/>it<sp/>is<sp/>all<sp/>on<sp/>disk<sp/>after<sp/>the<sp/>batch<sp/>is<sp/>done.</highlight></codeline>
+<codeline lineno="114" refid="classGambit_1_1Printers_1_1BasePrinter_1aeb68299b8d3c7c2c796751884d7241ba" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Printers_1_1BasePrinter_1aeb68299b8d3c7c2c796751884d7241ba" kindref="member">flush</ref>()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Get<sp/>options<sp/>required<sp/>to<sp/>construct<sp/>a<sp/>reader<sp/>object<sp/>that<sp/>can<sp/>read</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>previous<sp/>output<sp/>of<sp/>this<sp/>printer.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Options" kindref="compound">Options</ref><sp/>resume_reader_options()<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="120"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Set<sp/>this<sp/>as<sp/>an<sp/>auxilliary<sp/>printer</highlight></codeline>
+<codeline lineno="121" refid="classGambit_1_1Printers_1_1BasePrinter_1afee2494a6631283d92afbb05df5f6eb8" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Printers_1_1BasePrinter_1afee2494a6631283d92afbb05df5f6eb8" kindref="member">set_as_aux</ref>()<sp/>{<sp/>is_aux<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="123"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Set/Get<sp/>whether<sp/>to<sp/>print<sp/>the<sp/>metadata</highlight></codeline>
+<codeline lineno="124" refid="classGambit_1_1Printers_1_1BasePrinter_1a30a8805c3773bf19d1dc8544fcbc845d" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Printers_1_1BasePrinter_1a30a8805c3773bf19d1dc8544fcbc845d" kindref="member">set_output_metadata</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>use_metadata)<sp/>{output_metadata<sp/>=<sp/>use_metadata;}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>get_output_metadata()<sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>output_metadata;}</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="127"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Helper<sp/>initialisation<sp/>for<sp/>auxilliary<sp/>printers</highlight></codeline>
+<codeline lineno="128"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Will<sp/>be<sp/>run<sp/>when<sp/>the<sp/>auxilliary<sp/>printer<sp/>is</highlight></codeline>
+<codeline lineno="129"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>created<sp/>by<sp/>a<sp/>PrinterManager.</highlight></codeline>
+<codeline lineno="130"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Define<sp/>override<sp/>of<sp/>this<sp/>if<sp/>two-stage<sp/>initialisation<sp/>is<sp/>needed</highlight></codeline>
+<codeline lineno="131" refid="classGambit_1_1Printers_1_1BasePrinter_1abbb4a0a52992af14c237ab78f5542eff" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Printers_1_1BasePrinter_1abbb4a0a52992af14c237ab78f5542eff" kindref="member">auxilliary_init</ref>()<sp/>{};</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1Printers_1_1BasePrinter" kindref="compound">BasePrinter</ref>*<sp/>get_primary_printer()</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(not<sp/>is_aux)</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::ostringstream<sp/>err;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Error!<sp/>Tried<sp/>to<sp/>retrieve<sp/>pointer<sp/>to<sp/>primary<sp/>printer<sp/>from<sp/>a<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;printer<sp/>object<sp/>not<sp/>flagged<sp/>as<sp/>auxilliary!&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1_1Printers_1aea6c68cb3e134435f26742b0eff32b1a" kindref="member">printer_error</ref>().<ref refid="classGambit_1_1exception_1ab12c6189c744fdc119c6377d288ae961" kindref="member">raise</ref>(LOCAL_INFO,err.str());</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(primary_printer==NULL)</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::ostringstream<sp/>err;</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>err<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Error!<sp/>Tried<sp/>to<sp/>retrieve<sp/>pointer<sp/>to<sp/>primary<sp/>printer,<sp/>but<sp/>it<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;is<sp/>NULL!<sp/>Something<sp/>has<sp/>gone<sp/>wrong<sp/>in<sp/>the<sp/>initialisation<sp/>of<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;the<sp/>printer<sp/>system.&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1_1Printers_1aea6c68cb3e134435f26742b0eff32b1a" kindref="member">printer_error</ref>().<ref refid="classGambit_1_1exception_1ab12c6189c744fdc119c6377d288ae961" kindref="member">raise</ref>(LOCAL_INFO,err.str());</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>primary_printer;</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>is_auxilliary_printer()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>is_aux;<sp/>}</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Printer<sp/>dispatch<sp/>function.<sp/>This<sp/>is<sp/>defined<sp/>already</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>in<sp/>the<sp/>BaseBasePrinter<sp/>class,<sp/>but<sp/>I<sp/>think<sp/>I<sp/>need<sp/>it</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>here<sp/>as<sp/>well<sp/>so<sp/>that<sp/>that<sp/>BasePrinter<sp/>version<sp/>can</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>detect<sp/>the<sp/>new<sp/>virtual<sp/>function<sp/>overloads<sp/>which<sp/>exist</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>in<sp/>this<sp/>class.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>print(T<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>in,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>label,</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>vertexID,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint<sp/>rank,</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ulong<sp/>pointID)</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="classGambit_1_1Printers_1_1BaseBasePrinter_1a38cea919f04f4c6b544b4a71aeca79db" kindref="member">printer_enabled</ref>)<sp/><ref refid="classGambit_1_1Printers_1_1BasePrinter_1acec290abd094f645c538be69aa1928cd" kindref="member">_print</ref>(in,<sp/>label,<sp/>vertexID,<sp/>rank,<sp/>pointID);</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Overload<sp/>which<sp/>automatically<sp/>determines<sp/>a<sp/>unique<sp/>ID<sp/>code</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>based<sp/>on<sp/>the<sp/>label.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>print(T<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;<sp/>in,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>label,</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint<sp/>rank,</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ulong<sp/>pointID)</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>print(in,<sp/>label,<sp/><ref refid="namespaceGambit_1_1Printers_1a8b38ae862204caf75682d04fabdaf2cb" kindref="member">get_param_id</ref>(label),<sp/>rank,<sp/>pointID);</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Unhide<sp/>the<sp/>default<sp/>function<sp/>in<sp/>the<sp/>base<sp/>class</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="classGambit_1_1Printers_1_1BaseBasePrinter_1acec290abd094f645c538be69aa1928cd" kindref="member">BaseBasePrinter::_print</ref>;</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>We<sp/>need<sp/>to<sp/>have<sp/>a<sp/>virtual<sp/>print<sp/>method<sp/>for<sp/>every<sp/>type<sp/>that<sp/>we<sp/>want<sp/>to</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>be<sp/>able<sp/>to<sp/>print.<sp/>The<sp/>list<sp/>of<sp/>these<sp/>types<sp/>is<sp/>maintained<sp/>in</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>&quot;gambit/Elements/printable_types.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Run<sp/>the<sp/>macro;<sp/>add<sp/>all<sp/>the<sp/>print<sp/>functions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ADD_VIRTUAL_PRINTS(PRINTABLE_TYPES)</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="190"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>BASE<sp/>READER<sp/>CLASS</highlight></codeline>
+<codeline lineno="191" refid="classGambit_1_1Printers_1_1BaseReader" refkind="compound"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classGambit_1_1Printers_1_1BaseReader" kindref="compound">BaseReader</ref>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Printers_1_1BaseBaseReader" kindref="compound">BaseBaseReader</ref></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1Printers_1_1BaseReader" kindref="compound">BaseReader</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="196"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Destructor</highlight></codeline>
+<codeline lineno="197" refid="classGambit_1_1Printers_1_1BaseReader_1a4b63d842be17a11c793abf31af7e2ca8" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Printers_1_1BaseReader_1a4b63d842be17a11c793abf31af7e2ca8" kindref="member">~BaseReader</ref>()<sp/>{}</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="199"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Reimplement<sp/>overload<sp/>for<sp/>&apos;retrieve&apos;<sp/>that<sp/>uses<sp/>the<sp/>current<sp/>point<sp/>as<sp/>the<sp/>input<sp/>for<sp/>rank/pointID</highlight></codeline>
+<codeline lineno="200"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Need<sp/>to<sp/>do<sp/>this<sp/>because<sp/>otherwise<sp/>we<sp/>end<sp/>up<sp/>using<sp/>the<sp/>scanner-only<sp/>templates<sp/>for<sp/>the<sp/>retrieves,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>rather<sp/>than<sp/>the<sp/>full<sp/>set<sp/>available<sp/>here.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="203" refid="classGambit_1_1Printers_1_1BaseReader_1aa8384e492baaf6db96559508f7991adc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Printers_1_1BaseReader_1aa8384e492baaf6db96559508f7991adc" kindref="member">retrieve</ref>(T&amp;<sp/>out,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>label)</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structGambit_1_1Printers_1_1PPIDpair" kindref="compound">PPIDpair</ref><sp/>pt<sp/>=<sp/>get_current_point();</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Printers_1_1BaseReader_1aa8384e492baaf6db96559508f7991adc" kindref="member">retrieve</ref>(out,<sp/>label,<sp/>pt.rank,<sp/>pt.pointID);</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>retrieve<sp/>function<sp/>dispatch</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Printers_1_1BaseReader_1aa8384e492baaf6db96559508f7991adc" kindref="member">retrieve</ref>(T&amp;<sp/>out,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>label,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint<sp/>rank,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ulong<sp/>pointID)</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Printers_1_1BaseReader_1a080c5bf796d9bb764c3abe7037957570" kindref="member">_retrieve</ref>(out,<sp/>label,<sp/>rank,<sp/>pointID);</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="216"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Retrieve<sp/>and<sp/>directly<sp/>print<sp/>data<sp/>to<sp/>new<sp/>output</highlight></codeline>
+<codeline lineno="217"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Printers_1_1BaseReader_1a2add1d451993e11b176088c05e7a9fce" kindref="member">retrieve_and_print</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>in_label,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>out_label,<sp/>BaseBasePrinter&amp;<sp/>printer,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>uint<sp/>rank,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>ulong<sp/>pointID);</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="classGambit_1_1Printers_1_1BaseBaseReader_1a080c5bf796d9bb764c3abe7037957570" kindref="member">BaseBaseReader::_retrieve</ref>;<sp/></highlight><highlight class="comment">//unhide<sp/>the<sp/>default<sp/>function<sp/>in<sp/>the<sp/>base<sp/>class</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>We<sp/>need<sp/>to<sp/>have<sp/>a<sp/>virtual<sp/>&apos;retrieve&apos;<sp/>method<sp/>for<sp/>every<sp/>type<sp/>that<sp/>we<sp/>want<sp/>to</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>be<sp/>able<sp/>to<sp/>retrieve.<sp/>The<sp/>list<sp/>of<sp/>these<sp/>types<sp/>is<sp/>maintained<sp/>in</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>&quot;gambit/Elements/printable_types.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Run<sp/>the<sp/>macro;<sp/>add<sp/>all<sp/>the<sp/>print<sp/>functions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ADD_VIRTUAL_RETRIEVALS(RETRIEVABLE_TYPES)</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="231"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Maps<sp/>in<sp/>which<sp/>to<sp/>keep<sp/>factory<sp/>functions<sp/>for<sp/>the<sp/>printers<sp/>(printer_creators)</highlight></codeline>
+<codeline lineno="232"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>and<sp/>readers<sp/>(reader_creators)</highlight></codeline>
+<codeline lineno="233"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(uses<sp/>the<sp/>same<sp/>machinery<sp/>as<sp/>in<sp/>priors.hpp)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Note:<sp/>Arguments<sp/>to<sp/>e.g<sp/>printer_creators<sp/>need<sp/>to<sp/>match<sp/>constructor<sp/>for<sp/>printer<sp/>object</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>e.g.<sp/>printer_creators.at(tag)(args...)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(this<sp/>is<sp/>set<sp/>up<sp/>by<sp/>the<sp/>typedef)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="237" refid="namespaceGambit_1_1Printers_1ad5e1c8f33e593669d8bdc363453d976d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1_1Printers_1ad5e1c8f33e593669d8bdc363453d976d" kindref="member">gambit_registry</ref></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Printers_1_1BasePrinter" kindref="compound">BasePrinter</ref>*<sp/>create_printer_function(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Options" kindref="compound">Options</ref>&amp;,<sp/><ref refid="classGambit_1_1Printers_1_1BasePrinter" kindref="compound">BasePrinter</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">&amp;);</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1reg__elem" kindref="compound">reg_elem &lt;create_printer_function&gt;</ref><sp/>printer_creators;</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Printers_1_1BaseReader" kindref="compound">BaseReader</ref>*<sp/>create_reader_function(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Options" kindref="compound">Options</ref>&amp;);</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1reg__elem" kindref="compound">reg_elem &lt;create_reader_function&gt;</ref><sp/>reader_creators;</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="comment">//end<sp/>namespace<sp/>Printers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>namespace<sp/>Gambit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//ifndef<sp/>__base_printer_hpp__</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="Printers/include/gambit/Printers/baseprinter.hpp"/>
   </compounddef>

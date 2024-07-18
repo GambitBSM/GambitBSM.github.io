@@ -14,7 +14,7 @@ description: "[No description available]"
 | Name           |
 | -------------- |
 | **[Gambit](/documentation/code/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
-| **[Gambit::DRes](/documentation/code/namespaces/namespacegambit_1_1dres/)**  |
+| **[Gambit::DRes](/documentation/code/namespaces/namespacegambit_1_1dres/)** <br>Forward declaration of [Rule]() and Observables classes for saving pointers to ignored and matched examples.  |
 
 ## Detailed Description
 
@@ -103,4 +103,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:07 +0000
+Updated on 2024-07-18 at 13:53:34 +0000

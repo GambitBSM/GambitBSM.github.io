@@ -131,6 +131,7 @@ Authors (add name and date if you modify):
 #include "gambit/CosmoBit/CosmoBit_rollcall.hpp"
 #include "gambit/CosmoBit/CosmoBit_types.hpp"
 #include "gambit/Utils/numerical_constants.hpp"
+#include "gambit/Utils/statistics.hpp"
 
 namespace Gambit
 {
@@ -237,6 +238,25 @@ namespace Gambit
         result = pow(rCMB,4)*(result) + dNurCMB;
       }
       logger() << "N_ur calculated to be " << result << EOM;
+    }
+
+    // Returns the effective number of ultrarelativistic species today
+    void get_N_ur_from_BBN(double& result)
+    {
+      using namespace Pipes::get_N_ur_from_BBN;
+
+      result = *Dep::Neff_after_BBN;
+      logger() << "N_ur calculated to be " << result << EOM;
+    }
+
+    // Neff likelihood from Planck TT,TE,EE+lowE+lensing+BAO (arXiv:1807.06209)
+    void compute_N_eff_likelihood_Planck_BAO(double& result)
+    {
+      using namespace Pipes::compute_N_eff_likelihood_Planck_BAO;
+      
+      double Neff = *Dep::Neff_after_BBN;
+      
+      result = Stats::gaussian_loglikelihood(Neff, 2.99, 0.0, 0.17, false);
     }
 
     /// Temperature of non-CDM in the (cosmological) SM.
@@ -469,4 +489,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:07 +0000
+Updated on 2024-07-18 at 13:53:34 +0000

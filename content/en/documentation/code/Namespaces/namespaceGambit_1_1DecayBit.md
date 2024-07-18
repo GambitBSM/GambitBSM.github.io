@@ -142,7 +142,10 @@ description: "[No description available]"
 | void | **[VectorSingletDM_Higgs_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-vectorsingletdm-higgs-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>Add the decay of Higgs to vectors for the VectorSingletDM models (see arXiv:1512.06458v4)  |
 | void | **[MajoranaSingletDM_Higgs_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-majoranasingletdm-higgs-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>Add the decay of Higgs to Majorana fermions for the MajoranaSingletDM models (see arXiv:1512.06458v4)  |
 | void | **[DiracSingletDM_Higgs_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-diracsingletdm-higgs-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>Add the decay of Higgs to Dirac fermions for the DiracSingletDM models (see arXiv:1512.06458v4)  |
-| void | **[CH_DMsimpVectorMedDiracDM_Y1_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-ch-dmsimpvectormeddiracdm-y1-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
+| void | **[SubGeVDM_dark_photon_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-subgevdm-dark-photon-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
+| void | **[get_dark_photon_visible_branching](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-get-dark-photon-visible-branching)**(double & result) |
+| void | **[get_dark_photon_decay_length](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-get-dark-photon-decay-length)**(double & result) |
+| void | **[CH_DMsimpVectorMedDiracDM_Y1_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-ch-dmsimpvectormeddiracdm-y1-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result)<br>Add the decay of Higgs to vectors for the VectorSingletDM models (see arXiv:1512.06458v4) ///////// Dirac DM Simplified Model /////////////////////.  |
 | void | **[CH_DMsimpVectorMedMajoranaDM_Y1_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-ch-dmsimpvectormedmajoranadm-y1-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
 | void | **[CH_DMsimpVectorMedScalarDM_Y1_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-ch-dmsimpvectormedscalardm-y1-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
 | void | **[CH_DMsimpVectorMedVectorDM_Y1_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-ch-dmsimpvectormedvectordm-y1-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
@@ -1441,6 +1444,33 @@ void DiracSingletDM_Higgs_decays(
 
 Add the decay of Higgs to Dirac fermions for the DiracSingletDM models (see arXiv:1512.06458v4) 
 
+### function SubGeVDM_dark_photon_decays
+
+```
+void SubGeVDM_dark_photon_decays(
+    DecayTable::Entry & result
+)
+```
+
+
+### function get_dark_photon_visible_branching
+
+```
+void get_dark_photon_visible_branching(
+    double & result
+)
+```
+
+
+### function get_dark_photon_decay_length
+
+```
+void get_dark_photon_decay_length(
+    double & result
+)
+```
+
+
 ### function CH_DMsimpVectorMedDiracDM_Y1_decays
 
 ```
@@ -1449,6 +1479,7 @@ void CH_DMsimpVectorMedDiracDM_Y1_decays(
 )
 ```
 
+Add the decay of Higgs to vectors for the VectorSingletDM models (see arXiv:1512.06458v4) ///////// Dirac DM Simplified Model /////////////////////. 
 
 ### function CH_DMsimpVectorMedMajoranaDM_Y1_decays
 
@@ -1718,4 +1749,4 @@ void lnL_W_decays_chi2(
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:04 +0000
+Updated on 2024-07-18 at 13:53:31 +0000

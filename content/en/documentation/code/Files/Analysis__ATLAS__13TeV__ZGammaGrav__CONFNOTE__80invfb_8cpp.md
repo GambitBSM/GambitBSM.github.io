@@ -97,7 +97,7 @@ namespace Gambit {
 
         // Jets
         JetPtrs jets;
-        for (const Jet* j : event->jets())
+        for (const Jet* j : event->jets("antikt_R04"))
           if (j->pT() > 20. && j->absrap() < 4.4)
             jets.push_back(j);
 
@@ -219,7 +219,7 @@ namespace Gambit {
 
 
 
-    DEFINE_ANALYSIS_FACTORY(ATLAS_13TeV_ZGammaGrav_CONFNOTE_80invfb);
+    DEFINE_ANALYSIS_FACTORY(ATLAS_13TeV_ZGammaGrav_CONFNOTE_80invfb)
 
 
   }
@@ -229,4 +229,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:07 +0000
+Updated on 2024-07-18 at 13:53:34 +0000

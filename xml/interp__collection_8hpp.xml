@@ -7,8 +7,11 @@
     <includes local="no">gsl/gsl_spline.h</includes>
     <includes local="no">gsl/gsl_interp2d.h</includes>
     <includes local="no">gsl/gsl_spline2d.h</includes>
+    <includedby refid="ColliderBit__Bfactories_8cpp" local="yes">ColliderBit_Bfactories.cpp</includedby>
     <includedby refid="ColliderBit__InterpolatedYields_8cpp" local="yes">ColliderBit_InterpolatedYields.cpp</includedby>
     <includedby refid="CosmoALPs_8cpp" local="yes">CosmoALPs.cpp</includedby>
+    <includedby refid="RelicDensity_8cpp" local="yes">RelicDensity.cpp</includedby>
+    <includedby refid="Xray_8cpp" local="yes">Xray.cpp</includedby>
     <includedby refid="interp__collection_8cpp" local="yes">interp_collection.cpp</includedby>
     <incdepgraph>
       <node id="1">
@@ -43,12 +46,24 @@
     </incdepgraph>
     <invincdepgraph>
       <node id="2">
+        <label>ColliderBit_Bfactories.cpp</label>
+        <link refid="ColliderBit__Bfactories_8cpp"/>
+      </node>
+      <node id="3">
         <label>ColliderBit_InterpolatedYields.cpp</label>
         <link refid="ColliderBit__InterpolatedYields_8cpp"/>
       </node>
-      <node id="3">
+      <node id="4">
         <label>CosmoALPs.cpp</label>
         <link refid="CosmoALPs_8cpp"/>
+      </node>
+      <node id="5">
+        <label>RelicDensity.cpp</label>
+        <link refid="RelicDensity_8cpp"/>
+      </node>
+      <node id="6">
+        <label>Xray.cpp</label>
+        <link refid="Xray_8cpp"/>
       </node>
       <node id="1">
         <label>interp_collection.hpp</label>
@@ -59,8 +74,14 @@
         </childnode>
         <childnode refid="4" relation="include">
         </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
       </node>
-      <node id="4">
+      <node id="7">
         <label>interp_collection.cpp</label>
         <link refid="interp__collection_8cpp"/>
       </node>

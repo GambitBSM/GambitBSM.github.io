@@ -1,7 +1,6 @@
 ---
 title: "class Gambit::DRes::edgeWriter"
-
-description: "[No description available]"
+description: "Graphviz output for edges/dependencies. "
 
 ---
 
@@ -9,13 +8,13 @@ description: "[No description available]"
 
 
 
-[No description available]
+Graphviz output for edges/dependencies. 
 
 ## Public Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[edgeWriter](/documentation/code/classes/classgambit_1_1dres_1_1edgewriter/#function-edgewriter)**(const [DRes::MasterGraphType](/documentation/code/namespaces/namespacegambit_1_1dres/#typedef-mastergraphtype) * ) |
+| | **[edgeWriter](/documentation/code/classes/classgambit_1_1dres_1_1edgewriter/#function-edgewriter)**(const [MasterGraphType](/documentation/code/namespaces/namespacegambit_1_1dres/#typedef-mastergraphtype) * ) |
 | void | **[operator()](/documentation/code/classes/classgambit_1_1dres_1_1edgewriter/#function-operator)**(std::ostream & , const EdgeID & ) const |
 
 ## Public Functions Documentation
@@ -24,7 +23,7 @@ description: "[No description available]"
 
 ```
 inline edgeWriter(
-    const DRes::MasterGraphType * 
+    const MasterGraphType * 
 )
 ```
 
@@ -41,4 +40,4 @@ inline void operator()(
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:04 +0000
+Updated on 2024-07-18 at 13:53:31 +0000

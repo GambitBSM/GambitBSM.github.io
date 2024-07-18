@@ -1,0 +1,374 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="structGambit_1_1DRes_1_1Observable" kind="struct" language="C++" prot="public">
+    <compoundname>Gambit::DRes::Observable</compoundname>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structGambit_1_1DRes_1_1Observable_1a7f8d9df6de480b694b5c8b7fdd78a804" prot="public" static="no" mutable="no">
+        <type>YAML::Node</type>
+        <definition>YAML::Node Gambit::DRes::Observable::yaml</definition>
+        <argsstring></argsstring>
+        <name>yaml</name>
+        <qualifiedname>Gambit::DRes::Observable::yaml</qualifiedname>
+        <briefdescription>
+<para>The original <ref refid="namespaceYAML" kindref="compound">YAML</ref> (if any) from which this observable was derived. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/include/gambit/Core/observable.hpp" line="36" column="18" bodyfile="Core/include/gambit/Core/observable.hpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structGambit_1_1DRes_1_1Observable_1a767c56e6f3560637b84eb76322fb1030" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Gambit::DRes::Observable::purpose</definition>
+        <argsstring></argsstring>
+        <name>purpose</name>
+        <qualifiedname>Gambit::DRes::Observable::purpose</qualifiedname>
+        <briefdescription>
+<para>Designated purpose of the observable (LogLike, etc). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/include/gambit/Core/observable.hpp" line="39" column="19" bodyfile="Core/include/gambit/Core/observable.hpp" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structGambit_1_1DRes_1_1Observable_1aa69434bf3b2705472d03e78e5c793ec1" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Gambit::DRes::Observable::capability</definition>
+        <argsstring></argsstring>
+        <name>capability</name>
+        <qualifiedname>Gambit::DRes::Observable::capability</qualifiedname>
+        <briefdescription>
+<para>Capability field targeted by the ObsLike entry. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/include/gambit/Core/observable.hpp" line="42" column="19" bodyfile="Core/include/gambit/Core/observable.hpp" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structGambit_1_1DRes_1_1Observable_1afa3765b76984e255090c99a2d6c6a726" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Gambit::DRes::Observable::type</definition>
+        <argsstring></argsstring>
+        <name>type</name>
+        <qualifiedname>Gambit::DRes::Observable::type</qualifiedname>
+        <briefdescription>
+<para>Type field targeted by the ObsLike entry. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/include/gambit/Core/observable.hpp" line="45" column="19" bodyfile="Core/include/gambit/Core/observable.hpp" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structGambit_1_1DRes_1_1Observable_1afb3895cc6d1ded6bfc2c7b280de0c694" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Gambit::DRes::Observable::function</definition>
+        <argsstring></argsstring>
+        <name>function</name>
+        <qualifiedname>Gambit::DRes::Observable::function</qualifiedname>
+        <briefdescription>
+<para>Function field targeted by the ObsLike entry. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/include/gambit/Core/observable.hpp" line="48" column="19" bodyfile="Core/include/gambit/Core/observable.hpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structGambit_1_1DRes_1_1Observable_1a47d9c7261cd40c8546b4a607ecb24ca0" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Gambit::DRes::Observable::module</definition>
+        <argsstring></argsstring>
+        <name>module</name>
+        <qualifiedname>Gambit::DRes::Observable::module</qualifiedname>
+        <briefdescription>
+<para>Module targeted by the ObsLike entry. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/include/gambit/Core/observable.hpp" line="51" column="19" bodyfile="Core/include/gambit/Core/observable.hpp" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structGambit_1_1DRes_1_1Observable_1aab446bef964cc637aa0df818f27f8038" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structGambit_1_1DRes_1_1ModuleRule" kindref="compound">ModuleRule</ref> &gt;</type>
+        <definition>std::vector&lt;ModuleRule&gt; Gambit::DRes::Observable::dependencies</definition>
+        <argsstring></argsstring>
+        <name>dependencies</name>
+        <qualifiedname>Gambit::DRes::Observable::dependencies</qualifiedname>
+        <briefdescription>
+<para>Subjugate dependency rules to be assigned to the observable. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/include/gambit/Core/observable.hpp" line="54" column="19" bodyfile="Core/include/gambit/Core/observable.hpp" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structGambit_1_1DRes_1_1Observable_1a956d822d9ea4a2fa76278c056b83776d" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="structGambit_1_1DRes_1_1BackendRule" kindref="compound">BackendRule</ref> &gt;</type>
+        <definition>std::vector&lt;BackendRule&gt; Gambit::DRes::Observable::backends</definition>
+        <argsstring></argsstring>
+        <name>backends</name>
+        <qualifiedname>Gambit::DRes::Observable::backends</qualifiedname>
+        <briefdescription>
+<para>Subjugate backend rules to be assigned to the observable. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/include/gambit/Core/observable.hpp" line="57" column="19" bodyfile="Core/include/gambit/Core/observable.hpp" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structGambit_1_1DRes_1_1Observable_1a9c1a967b8529c2e9808e4f663730783c" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; Gambit::DRes::Observable::functionChain</definition>
+        <argsstring></argsstring>
+        <name>functionChain</name>
+        <qualifiedname>Gambit::DRes::Observable::functionChain</qualifiedname>
+        <briefdescription>
+<para>Function chain to be assigned to the observable. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/include/gambit/Core/observable.hpp" line="60" column="19" bodyfile="Core/include/gambit/Core/observable.hpp" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structGambit_1_1DRes_1_1Observable_1a4ac458a408fb33ff0cb3fdcda9c83998" prot="public" static="no" mutable="no">
+        <type>YAML::Node</type>
+        <definition>YAML::Node Gambit::DRes::Observable::subcaps</definition>
+        <argsstring></argsstring>
+        <name>subcaps</name>
+        <qualifiedname>Gambit::DRes::Observable::subcaps</qualifiedname>
+        <briefdescription>
+<para>Sub-capabilities to be assigned to the observable. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/include/gambit/Core/observable.hpp" line="63" column="18" bodyfile="Core/include/gambit/Core/observable.hpp" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structGambit_1_1DRes_1_1Observable_1a8061fb2df447fde3d5a478ba04ccafb4" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Gambit::DRes::Observable::printme</definition>
+        <argsstring></argsstring>
+        <name>printme</name>
+        <qualifiedname>Gambit::DRes::Observable::printme</qualifiedname>
+        <briefdescription>
+<para>Instruction to printer as to whether to write result to disk. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/include/gambit/Core/observable.hpp" line="66" column="12" bodyfile="Core/include/gambit/Core/observable.hpp" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structGambit_1_1DRes_1_1Observable_1ae3918ceb671356bcd984a7db3e79e9d8" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Gambit::DRes::Observable::log_matches</definition>
+        <argsstring></argsstring>
+        <name>log_matches</name>
+        <qualifiedname>Gambit::DRes::Observable::log_matches</qualifiedname>
+        <briefdescription>
+<para>Whether or not to log matches to the observable with functors. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/include/gambit/Core/observable.hpp" line="69" column="12" bodyfile="Core/include/gambit/Core/observable.hpp" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structGambit_1_1DRes_1_1Observable_1a0786ff60312f0aa251f085e2eff317c2" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Gambit::DRes::Observable::include_all</definition>
+        <argsstring></argsstring>
+        <name>include_all</name>
+        <qualifiedname>Gambit::DRes::Observable::include_all</qualifiedname>
+        <briefdescription>
+<para>Whether to return multiple functor matches. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/include/gambit/Core/observable.hpp" line="72" column="12" bodyfile="Core/include/gambit/Core/observable.hpp" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="structGambit_1_1DRes_1_1Observable_1acbb50813900928ea8db8adca2b48267d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::DRes::Observable::matches</definition>
+        <argsstring>(functor *, const Utils::type_equivalency &amp;) const</argsstring>
+        <name>matches</name>
+        <qualifiedname>Gambit::DRes::Observable::matches</qualifiedname>
+        <param>
+          <type><ref refid="classGambit_1_1functor" kindref="compound">functor</ref> *</type>
+          <defname>f</defname>
+        </param>
+        <param>
+          <type>const <ref refid="structGambit_1_1Utils_1_1type__equivalency" kindref="compound">Utils::type_equivalency</ref> &amp;</type>
+          <defname>te</defname>
+        </param>
+        <briefdescription>
+<para>True if and only if the passed functor matches all matchable non-empty fields of the observable (i.e. everything except purpose, dependencies, backend_reqs, functionChain and subcaps). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/include/gambit/Core/observable.hpp" line="75" column="12" bodyfile="Core/src/observable.cpp" bodystart="29" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="structGambit_1_1DRes_1_1Observable_1a949905d9e8f502703179b902e06eb747" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::DRes::Observable::dependencies_allow</definition>
+        <argsstring>(functor *, const Utils::type_equivalency &amp;, bool ignore_if_weak=true) const</argsstring>
+        <name>dependencies_allow</name>
+        <qualifiedname>Gambit::DRes::Observable::dependencies_allow</qualifiedname>
+        <param>
+          <type><ref refid="classGambit_1_1functor" kindref="compound">functor</ref> *</type>
+          <defname>f</defname>
+        </param>
+        <param>
+          <type>const <ref refid="structGambit_1_1Utils_1_1type__equivalency" kindref="compound">Utils::type_equivalency</ref> &amp;</type>
+          <defname>te</defname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>ignore_if_weak</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Whether the set of dependency rules subjugate to this observable allow a given module functor or not. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Whether the set of dependency rules subjugate to this observable allow a given module functor or not. Must be true for the passed module functor to be used to resolve a dependency of the module functor that provides this observable (the dependee). Does not test if the dependee actually matches the observable, so should typically only be used after confirming this first. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/include/gambit/Core/observable.hpp" line="80" column="12" bodyfile="Core/src/observable.cpp" bodystart="40" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="structGambit_1_1DRes_1_1Observable_1a415b234bca68b281625755170ff3232d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::DRes::Observable::function_chain_allows</definition>
+        <argsstring>(functor *, functor *, const Utils::type_equivalency &amp;) const</argsstring>
+        <name>function_chain_allows</name>
+        <qualifiedname>Gambit::DRes::Observable::function_chain_allows</qualifiedname>
+        <param>
+          <type><ref refid="classGambit_1_1functor" kindref="compound">functor</ref> *</type>
+          <defname>candidate</defname>
+        </param>
+        <param>
+          <type><ref refid="classGambit_1_1functor" kindref="compound">functor</ref> *</type>
+          <defname>dependee</defname>
+        </param>
+        <param>
+          <type>const <ref refid="structGambit_1_1Utils_1_1type__equivalency" kindref="compound">Utils::type_equivalency</ref> &amp;</type>
+          <defname>te</defname>
+        </param>
+        <briefdescription>
+<para>Whether the functionChain of this observable allows a given module functor to be used to resolve the dependency of another. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Whether the functionChain of this observable allows a given module functor to be used to resolve the dependency of another. Does not test if the dependent functor actually matches the observable, so should typically only be used after confirming this first. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/include/gambit/Core/observable.hpp" line="84" column="12" bodyfile="Core/src/observable.cpp" bodystart="48" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="structGambit_1_1DRes_1_1Observable_1a66800c2b730ee60d892216b75cee6885" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::DRes::Observable::backend_reqs_allow</definition>
+        <argsstring>(functor *, const Utils::type_equivalency &amp;, const str &amp;, bool ignore_if_weak=true) const</argsstring>
+        <name>backend_reqs_allow</name>
+        <qualifiedname>Gambit::DRes::Observable::backend_reqs_allow</qualifiedname>
+        <param>
+          <type><ref refid="classGambit_1_1functor" kindref="compound">functor</ref> *</type>
+          <defname>f</defname>
+        </param>
+        <param>
+          <type>const <ref refid="structGambit_1_1Utils_1_1type__equivalency" kindref="compound">Utils::type_equivalency</ref> &amp;</type>
+          <defname>te</defname>
+        </param>
+        <param>
+          <type>const <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &amp;</type>
+          <defname>group_being_resolved</defname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>ignore_if_weak</declname>
+          <defval>true</defval>
+        </param>
+        <briefdescription>
+<para>Whether the set of backend rules subjugate to this observable allow a given backend functor or not. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Whether the set of backend rules subjugate to this observable allow a given backend functor or not. Must be true for the passed backend functor to be used to resolve a backend requirement of the module functor that matches this observable (the requiree). Does not test if the requiree actually matches the observable, so should typically only be used after confirming this first. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/include/gambit/Core/observable.hpp" line="89" column="12" bodyfile="Core/src/observable.cpp" bodystart="67" bodyend="72"/>
+      </memberdef>
+      <memberdef kind="function" id="structGambit_1_1DRes_1_1Observable_1a0456652e2ce320ea2548a4e4f7f02bd5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::DRes::Observable::Observable</definition>
+        <argsstring>()</argsstring>
+        <name>Observable</name>
+        <qualifiedname>Gambit::DRes::Observable::Observable</qualifiedname>
+        <briefdescription>
+<para>Default constructor. Sets all fields empty. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/include/gambit/Core/observable.hpp" line="92" column="7" bodyfile="Core/include/gambit/Core/observable.hpp" bodystart="92" bodyend="105"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="1">
+        <label>Gambit::DRes::Observable</label>
+        <link refid="structGambit_1_1DRes_1_1Observable"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>capability</edgelabel>
+          <edgelabel>function</edgelabel>
+          <edgelabel>module</edgelabel>
+          <edgelabel>purpose</edgelabel>
+          <edgelabel>type</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>string</label>
+      </node>
+    </collaborationgraph>
+    <location file="Core/include/gambit/Core/observable.hpp" line="33" column="5" bodyfile="Core/include/gambit/Core/observable.hpp" bodystart="34" bodyend="106"/>
+    <listofallmembers>
+      <member refid="structGambit_1_1DRes_1_1Observable_1a66800c2b730ee60d892216b75cee6885" prot="public" virt="non-virtual"><scope>Gambit::DRes::Observable</scope><name>backend_reqs_allow</name></member>
+      <member refid="structGambit_1_1DRes_1_1Observable_1a956d822d9ea4a2fa76278c056b83776d" prot="public" virt="non-virtual"><scope>Gambit::DRes::Observable</scope><name>backends</name></member>
+      <member refid="structGambit_1_1DRes_1_1Observable_1aa69434bf3b2705472d03e78e5c793ec1" prot="public" virt="non-virtual"><scope>Gambit::DRes::Observable</scope><name>capability</name></member>
+      <member refid="structGambit_1_1DRes_1_1Observable_1aab446bef964cc637aa0df818f27f8038" prot="public" virt="non-virtual"><scope>Gambit::DRes::Observable</scope><name>dependencies</name></member>
+      <member refid="structGambit_1_1DRes_1_1Observable_1a949905d9e8f502703179b902e06eb747" prot="public" virt="non-virtual"><scope>Gambit::DRes::Observable</scope><name>dependencies_allow</name></member>
+      <member refid="structGambit_1_1DRes_1_1Observable_1afb3895cc6d1ded6bfc2c7b280de0c694" prot="public" virt="non-virtual"><scope>Gambit::DRes::Observable</scope><name>function</name></member>
+      <member refid="structGambit_1_1DRes_1_1Observable_1a415b234bca68b281625755170ff3232d" prot="public" virt="non-virtual"><scope>Gambit::DRes::Observable</scope><name>function_chain_allows</name></member>
+      <member refid="structGambit_1_1DRes_1_1Observable_1a9c1a967b8529c2e9808e4f663730783c" prot="public" virt="non-virtual"><scope>Gambit::DRes::Observable</scope><name>functionChain</name></member>
+      <member refid="structGambit_1_1DRes_1_1Observable_1a0786ff60312f0aa251f085e2eff317c2" prot="public" virt="non-virtual"><scope>Gambit::DRes::Observable</scope><name>include_all</name></member>
+      <member refid="structGambit_1_1DRes_1_1Observable_1ae3918ceb671356bcd984a7db3e79e9d8" prot="public" virt="non-virtual"><scope>Gambit::DRes::Observable</scope><name>log_matches</name></member>
+      <member refid="structGambit_1_1DRes_1_1Observable_1acbb50813900928ea8db8adca2b48267d" prot="public" virt="non-virtual"><scope>Gambit::DRes::Observable</scope><name>matches</name></member>
+      <member refid="structGambit_1_1DRes_1_1Observable_1a47d9c7261cd40c8546b4a607ecb24ca0" prot="public" virt="non-virtual"><scope>Gambit::DRes::Observable</scope><name>module</name></member>
+      <member refid="structGambit_1_1DRes_1_1Observable_1a0456652e2ce320ea2548a4e4f7f02bd5" prot="public" virt="non-virtual"><scope>Gambit::DRes::Observable</scope><name>Observable</name></member>
+      <member refid="structGambit_1_1DRes_1_1Observable_1a8061fb2df447fde3d5a478ba04ccafb4" prot="public" virt="non-virtual"><scope>Gambit::DRes::Observable</scope><name>printme</name></member>
+      <member refid="structGambit_1_1DRes_1_1Observable_1a767c56e6f3560637b84eb76322fb1030" prot="public" virt="non-virtual"><scope>Gambit::DRes::Observable</scope><name>purpose</name></member>
+      <member refid="structGambit_1_1DRes_1_1Observable_1a4ac458a408fb33ff0cb3fdcda9c83998" prot="public" virt="non-virtual"><scope>Gambit::DRes::Observable</scope><name>subcaps</name></member>
+      <member refid="structGambit_1_1DRes_1_1Observable_1afa3765b76984e255090c99a2d6c6a726" prot="public" virt="non-virtual"><scope>Gambit::DRes::Observable</scope><name>type</name></member>
+      <member refid="structGambit_1_1DRes_1_1Observable_1a7f8d9df6de480b694b5c8b7fdd78a804" prot="public" virt="non-virtual"><scope>Gambit::DRes::Observable</scope><name>yaml</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

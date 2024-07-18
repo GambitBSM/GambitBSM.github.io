@@ -201,7 +201,13 @@ namespace Gambit
                     
                     param_names.push_back(mod + std::string("::") + par_name);
                     
-                    if (model_options.getNode(mod, *par_it).IsSequence() || model_options.getNode(mod, *par_it).IsScalar())
+                    if ((model_options.getNode(mod, *par_it).IsScalar() && (model_options.getValue<std::string>(mod, *par_it) == "in_priors")) || model_options.getNode(mod, *par_it).IsNull())
+                    {
+                        std::string joined_parname = mod + std::string("::") + par_name;
+                        shown_param_names.push_back(joined_parname);
+                        needSet.insert(joined_parname);
+                    }
+                    else if (model_options.getNode(mod, *par_it).IsSequence() || model_options.getNode(mod, *par_it).IsScalar())
                     {
                         phantomPriors.push_back(new FixedPrior(mod + std::string("::") + par_name, model_options.getNode(mod, *par_it)));
                     }
@@ -680,4 +686,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:05 +0000
+Updated on 2024-07-18 at 13:53:33 +0000

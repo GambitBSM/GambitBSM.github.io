@@ -13,7 +13,7 @@ Container class that hold the output of the "get_purpose" function.  [More...](#
 
 `#include <factory_defs.hpp>`
 
-Inherits from boost::shared_ptr< Function_Base< ret(args...)> >
+Inherits from std::shared_ptr< Function_Base< ret(args...)> >
 
 ## Public Functions
 
@@ -111,4 +111,4 @@ inline ret operator()(
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:04 +0000
+Updated on 2024-07-18 at 13:53:32 +0000

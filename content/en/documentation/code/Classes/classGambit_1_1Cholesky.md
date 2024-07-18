@@ -20,7 +20,7 @@ description: "[No description available]"
 | bool | **[EnterMat](/documentation/code/classes/classgambit_1_1cholesky/#function-entermat)**(std::vector< std::vector< double > > & a) |
 | void | **[ElMult](/documentation/code/classes/classgambit_1_1cholesky/#function-elmult)**(std::vector< double > & y) const |
 | std::vector< double > | **[invElMult](/documentation/code/classes/classgambit_1_1cholesky/#function-invelmult)**(const std::vector< double > & y) const<br>x = L^-1 y where L is the lower-diagonal [Cholesky](/documentation/code/classes/classgambit_1_1cholesky/) matrix  |
-| double | **[Square](/documentation/code/classes/classgambit_1_1cholesky/#function-square)**(const std::vector< double > & y, const std::vector< double > & y0) |
+| template <typename VEC1 ,typename VEC2 \> <br>double | **[Square](/documentation/code/classes/classgambit_1_1cholesky/#function-square)**(VEC1 && y, VEC2 && y0) |
 | double | **[DetSqrt](/documentation/code/classes/classgambit_1_1cholesky/#function-detsqrt)**() |
 
 ## Public Functions Documentation
@@ -75,9 +75,11 @@ Found by forward substituion since L is lower-diagonal.
 ### function Square
 
 ```
+template <typename VEC1 ,
+typename VEC2 >
 inline double Square(
-    const std::vector< double > & y,
-    const std::vector< double > & y0
+    VEC1 && y,
+    VEC2 && y0
 )
 ```
 
@@ -91,4 +93,4 @@ inline double DetSqrt()
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:02 +0000
+Updated on 2024-07-18 at 13:53:30 +0000

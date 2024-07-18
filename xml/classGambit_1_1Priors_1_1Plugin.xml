@@ -4,9 +4,9 @@
     <compoundname>Gambit::Priors::Plugin</compoundname>
     <basecompoundref refid="classGambit_1_1Priors_1_1BasePrior" prot="public" virt="non-virtual">Gambit::Priors::BasePrior</basecompoundref>
       <sectiondef kind="private-type">
-      <memberdef kind="typedef" id="classGambit_1_1Priors_1_1Plugin_1ac289b65aeac5f68d46441ccc25a7ce90" prot="private" static="no">
-        <type><ref refid="classGambit_1_1Scanner_1_1Plugins_1_1Plugin__Interface" kindref="compound">Scanner::Plugins::Plugin_Interface</ref>&lt; double(const std::vector&lt; double &gt; &amp;), void(const std::vector&lt; double &gt; &amp;, std::unordered_map&lt; std::string, double &gt; &amp;)&gt;</type>
-        <definition>typedef Scanner::Plugins::Plugin_Interface&lt;double (const std::vector&lt;double&gt; &amp;), void (const std::vector&lt;double&gt; &amp;, std::unordered_map&lt;std::string,double&gt; &amp;)&gt; Gambit::Priors::Plugin::plugin_type</definition>
+      <memberdef kind="typedef" id="classGambit_1_1Priors_1_1Plugin_1a4ffb2da3ed3b3ea39ff000e379a597d0" prot="private" static="no">
+        <type><ref refid="classGambit_1_1Scanner_1_1Plugins_1_1Plugin__Interface" kindref="compound">Scanner::Plugins::Plugin_Interface</ref>&lt; double(const std::unordered_map&lt; std::string, double &gt; &amp;), void(hyper_cube_ref&lt; double &gt;, std::unordered_map&lt; std::string, double &gt; &amp;)&gt;</type>
+        <definition>typedef Scanner::Plugins::Plugin_Interface&lt;double (const std::unordered_map&lt;std::string, double&gt; &amp;), void (hyper_cube_ref&lt;double&gt;, std::unordered_map&lt;std::string,double&gt; &amp;)&gt; Gambit::Priors::Plugin::plugin_type</definition>
         <argsstring></argsstring>
         <name>plugin_type</name>
         <qualifiedname>Gambit::Priors::Plugin::plugin_type</qualifiedname>
@@ -58,21 +58,23 @@
         </inbodydescription>
         <location file="ScannerBit/include/gambit/ScannerBit/priors/plugin.hpp" line="34" column="13" bodyfile="ScannerBit/include/gambit/ScannerBit/priors/plugin.hpp" bodystart="34" bodyend="47"/>
       </memberdef>
-      <memberdef kind="function" id="classGambit_1_1Priors_1_1Plugin_1ad1b5e2c85a3d5c374f4318fb17184638" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+      <memberdef kind="function" id="classGambit_1_1Priors_1_1Plugin_1a1c4f5b4e8920332e9f09c6a0b0300fee" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
         <type>void</type>
         <definition>void Gambit::Priors::Plugin::transform</definition>
-        <argsstring>(const std::vector&lt; double &gt; &amp;unitpars, std::unordered_map&lt; std::string, double &gt; &amp;outputMap) const override</argsstring>
+        <argsstring>(hyper_cube_ref&lt; double &gt; unitpars, std::unordered_map&lt; std::string, double &gt; &amp;outputMap) const override</argsstring>
         <name>transform</name>
         <qualifiedname>Gambit::Priors::Plugin::transform</qualifiedname>
-        <reimplements refid="classGambit_1_1Priors_1_1BasePrior_1adaf214a4f7aa4e9c4c3fa7daebc32903">transform</reimplements>
+        <reimplements refid="classGambit_1_1Priors_1_1BasePrior_1a19946205afb8ea2469569f699bc464c6">transform</reimplements>
         <param>
-          <type>const std::vector&lt; double &gt; &amp;</type>
+          <type>hyper_cube_ref&lt; double &gt;</type>
+          <declname>unit</declname>
         </param>
         <param>
           <type>std::unordered_map&lt; std::string, double &gt; &amp;</type>
+          <declname>physical</declname>
         </param>
         <briefdescription>
-<para>Transform from unit hypercube to parameter. </para>
+<para>Transform from unit hypercube to physical parameter. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -80,43 +82,48 @@
         </inbodydescription>
         <location file="ScannerBit/include/gambit/ScannerBit/priors/plugin.hpp" line="49" column="18" bodyfile="ScannerBit/include/gambit/ScannerBit/priors/plugin.hpp" bodystart="49" bodyend="52"/>
       </memberdef>
-      <memberdef kind="function" id="classGambit_1_1Priors_1_1Plugin_1ae9c1188db01b34c70104cf9e902175d3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
-        <type>std::vector&lt; double &gt;</type>
-        <definition>std::vector&lt; double &gt; Gambit::Priors::Plugin::inverse_transform</definition>
-        <argsstring>(const std::unordered_map&lt; std::string, double &gt; &amp;) const override</argsstring>
+      <memberdef kind="function" id="classGambit_1_1Priors_1_1Plugin_1a2be238125241f9d7acf6233925789c4c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>void</type>
+        <definition>void Gambit::Priors::Plugin::inverse_transform</definition>
+        <argsstring>(const std::unordered_map&lt; std::string, double &gt; &amp;, hyper_cube_ref&lt; double &gt;) const override</argsstring>
         <name>inverse_transform</name>
         <qualifiedname>Gambit::Priors::Plugin::inverse_transform</qualifiedname>
-        <reimplements refid="classGambit_1_1Priors_1_1BasePrior_1a5ae0c15c2fb6c0ad555ff3b230b26352">inverse_transform</reimplements>
+        <reimplements refid="classGambit_1_1Priors_1_1BasePrior_1a5f40e71b111fc0069d702545c4518cfb">inverse_transform</reimplements>
+        <param>
+          <type>const std::unordered_map&lt; std::string, double &gt; &amp;</type>
+          <declname>physical</declname>
+        </param>
+        <param>
+          <type>hyper_cube_ref&lt; double &gt;</type>
+          <declname>unit</declname>
+        </param>
+        <briefdescription>
+<para>Transform from physical parameter to unit hypercube. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/priors/plugin.hpp" line="54" column="18" bodyfile="ScannerBit/include/gambit/ScannerBit/priors/plugin.hpp" bodystart="54" bodyend="57"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Priors_1_1Plugin_1a595e654bfe069a1ab0e3371842270439" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+        <type>double</type>
+        <definition>double Gambit::Priors::Plugin::log_prior_density</definition>
+        <argsstring>(const std::unordered_map&lt; std::string, double &gt; &amp;physical) const override</argsstring>
+        <name>log_prior_density</name>
+        <qualifiedname>Gambit::Priors::Plugin::log_prior_density</qualifiedname>
+        <reimplements refid="classGambit_1_1Priors_1_1BasePrior_1a77005c4519940bf6457e4d3a3aa9c1a0">log_prior_density</reimplements>
         <param>
           <type>const std::unordered_map&lt; std::string, double &gt; &amp;</type>
         </param>
         <briefdescription>
-<para>Transform from parameter back to unit hypercube. </para>
+<para>Log of prior density. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ScannerBit/include/gambit/ScannerBit/priors/plugin.hpp" line="54" column="25" bodyfile="ScannerBit/include/gambit/ScannerBit/priors/plugin.hpp" bodystart="54" bodyend="58"/>
-      </memberdef>
-      <memberdef kind="function" id="classGambit_1_1Priors_1_1Plugin_1a80252b54f2f6090ca3c0ef1accd64c74" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
-        <type>double</type>
-        <definition>double Gambit::Priors::Plugin::operator()</definition>
-        <argsstring>(const std::vector&lt; double &gt; &amp;vec) const override</argsstring>
-        <name>operator()</name>
-        <qualifiedname>Gambit::Priors::Plugin::operator()</qualifiedname>
-        <reimplements refid="classGambit_1_1Priors_1_1BasePrior_1a6b502e586d6c964a9dfe2935b630a2d3">operator()</reimplements>
-        <param>
-          <type>const std::vector&lt; double &gt; &amp;</type>
-        </param>
-        <briefdescription>
-<para>Log of PDF density. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="ScannerBit/include/gambit/ScannerBit/priors/plugin.hpp" line="60" column="20" bodyfile="ScannerBit/include/gambit/ScannerBit/priors/plugin.hpp" bodystart="60" bodyend="63"/>
+        <location file="ScannerBit/include/gambit/ScannerBit/priors/plugin.hpp" line="59" column="20" bodyfile="ScannerBit/include/gambit/ScannerBit/priors/plugin.hpp" bodystart="59" bodyend="62"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1Priors_1_1Plugin_1a72c580c9ce0e87ea16905620739179eb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -130,7 +137,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ScannerBit/include/gambit/ScannerBit/priors/plugin.hpp" line="65" column="13" bodyfile="ScannerBit/include/gambit/ScannerBit/priors/plugin.hpp" bodystart="65" bodyend="68"/>
+        <location file="ScannerBit/include/gambit/ScannerBit/priors/plugin.hpp" line="64" column="13" bodyfile="ScannerBit/include/gambit/ScannerBit/priors/plugin.hpp" bodystart="64" bodyend="67"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -161,7 +168,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="ScannerBit/include/gambit/ScannerBit/priors/plugin.hpp" line="27" column="9" bodyfile="ScannerBit/include/gambit/ScannerBit/priors/plugin.hpp" bodystart="28" bodyend="69"/>
+    <location file="ScannerBit/include/gambit/ScannerBit/priors/plugin.hpp" line="27" column="9" bodyfile="ScannerBit/include/gambit/ScannerBit/priors/plugin.hpp" bodystart="28" bodyend="68"/>
     <listofallmembers>
       <member refid="classGambit_1_1Priors_1_1BasePrior_1a839ff7a9704898c967f03add67950b05" prot="public" virt="non-virtual"><scope>Gambit::Priors::Plugin</scope><name>BasePrior</name></member>
       <member refid="classGambit_1_1Priors_1_1BasePrior_1aefa66cd74f99ecf7d29dcb9c608ed202" prot="public" virt="non-virtual"><scope>Gambit::Priors::Plugin</scope><name>BasePrior</name></member>
@@ -169,16 +176,20 @@
       <member refid="classGambit_1_1Priors_1_1BasePrior_1a421fbf213a5d7b1734ff5190cc27ff6a" prot="public" virt="non-virtual"><scope>Gambit::Priors::Plugin</scope><name>BasePrior</name></member>
       <member refid="classGambit_1_1Priors_1_1BasePrior_1aaf6a0098f19105d7e11b5e7a8b74a873" prot="public" virt="non-virtual"><scope>Gambit::Priors::Plugin</scope><name>getParameters</name></member>
       <member refid="classGambit_1_1Priors_1_1BasePrior_1a6e59882ac88444b03d95ecd3607ec986" prot="public" virt="virtual"><scope>Gambit::Priors::Plugin</scope><name>getShownParameters</name></member>
-      <member refid="classGambit_1_1Priors_1_1Plugin_1ae9c1188db01b34c70104cf9e902175d3" prot="public" virt="virtual"><scope>Gambit::Priors::Plugin</scope><name>inverse_transform</name></member>
-      <member refid="classGambit_1_1Priors_1_1Plugin_1a80252b54f2f6090ca3c0ef1accd64c74" prot="public" virt="virtual"><scope>Gambit::Priors::Plugin</scope><name>operator()</name></member>
+      <member refid="classGambit_1_1Priors_1_1Plugin_1a2be238125241f9d7acf6233925789c4c" prot="public" virt="virtual"><scope>Gambit::Priors::Plugin</scope><name>inverse_transform</name></member>
+      <member refid="classGambit_1_1Priors_1_1BasePrior_1ae97a234e263931674a3d2887aae871bb" prot="public" virt="non-virtual" ambiguityscope="Gambit::Priors::BasePrior::"><scope>Gambit::Priors::Plugin</scope><name>inverse_transform</name></member>
+      <member refid="classGambit_1_1Priors_1_1BasePrior_1aeb70ac565a8715a9a9dd223a1318ba6b" prot="public" virt="non-virtual" ambiguityscope="Gambit::Priors::BasePrior::"><scope>Gambit::Priors::Plugin</scope><name>inverse_transform</name></member>
+      <member refid="classGambit_1_1Priors_1_1Plugin_1a595e654bfe069a1ab0e3371842270439" prot="public" virt="virtual"><scope>Gambit::Priors::Plugin</scope><name>log_prior_density</name></member>
       <member refid="classGambit_1_1Priors_1_1BasePrior_1ab54eef4c7b0188cc43c60e10f77fac3d" prot="protected" virt="non-virtual"><scope>Gambit::Priors::Plugin</scope><name>param_names</name></member>
       <member refid="classGambit_1_1Priors_1_1Plugin_1ad6f354b82992c3413b22ef10fbb438ef" prot="private" virt="non-virtual"><scope>Gambit::Priors::Plugin</scope><name>plugin</name></member>
       <member refid="classGambit_1_1Priors_1_1Plugin_1ae028c4412e748f72207261e2b4900a16" prot="public" virt="non-virtual"><scope>Gambit::Priors::Plugin</scope><name>Plugin</name></member>
-      <member refid="classGambit_1_1Priors_1_1Plugin_1ac289b65aeac5f68d46441ccc25a7ce90" prot="private" virt="non-virtual"><scope>Gambit::Priors::Plugin</scope><name>plugin_type</name></member>
+      <member refid="classGambit_1_1Priors_1_1Plugin_1a4ffb2da3ed3b3ea39ff000e379a597d0" prot="private" virt="non-virtual"><scope>Gambit::Priors::Plugin</scope><name>plugin_type</name></member>
       <member refid="classGambit_1_1Priors_1_1BasePrior_1ab79d2df1f9c6350ed69a76e5d123de39" prot="public" virt="non-virtual"><scope>Gambit::Priors::Plugin</scope><name>setSize</name></member>
       <member refid="classGambit_1_1Priors_1_1BasePrior_1a9c476b07daa0abd7259573e5825c3d48" prot="public" virt="non-virtual"><scope>Gambit::Priors::Plugin</scope><name>size</name></member>
       <member refid="classGambit_1_1Priors_1_1BasePrior_1a58e160ebd0cc101bf53e65cf4e6eb94a" prot="public" virt="non-virtual"><scope>Gambit::Priors::Plugin</scope><name>sizeRef</name></member>
-      <member refid="classGambit_1_1Priors_1_1Plugin_1ad1b5e2c85a3d5c374f4318fb17184638" prot="public" virt="virtual"><scope>Gambit::Priors::Plugin</scope><name>transform</name></member>
+      <member refid="classGambit_1_1Priors_1_1Plugin_1a1c4f5b4e8920332e9f09c6a0b0300fee" prot="public" virt="virtual"><scope>Gambit::Priors::Plugin</scope><name>transform</name></member>
+      <member refid="classGambit_1_1Priors_1_1BasePrior_1afd7a341a9684c682c9b048543833ffc8" prot="public" virt="non-virtual" ambiguityscope="Gambit::Priors::BasePrior::"><scope>Gambit::Priors::Plugin</scope><name>transform</name></member>
+      <member refid="classGambit_1_1Priors_1_1BasePrior_1ab1be385fc36bd1fb1b562ec04b0e8440" prot="public" virt="non-virtual" ambiguityscope="Gambit::Priors::BasePrior::"><scope>Gambit::Priors::Plugin</scope><name>transform</name></member>
       <member refid="classGambit_1_1Priors_1_1BasePrior_1af23c343daddeab5deb668909eff4d918" prot="public" virt="virtual"><scope>Gambit::Priors::Plugin</scope><name>~BasePrior</name></member>
       <member refid="classGambit_1_1Priors_1_1Plugin_1a72c580c9ce0e87ea16905620739179eb" prot="public" virt="non-virtual"><scope>Gambit::Priors::Plugin</scope><name>~Plugin</name></member>
     </listofallmembers>

@@ -18,6 +18,7 @@ description: "[No description available]"
 |  | **[Default_HepLike](/documentation/code/files/default__bossed__versions_8hpp/#define-default-heplike)**  |
 |  | **[Default_vevacious](/documentation/code/files/default__bossed__versions_8hpp/#define-default-vevacious)**  |
 |  | **[Default_Rivet](/documentation/code/files/default__bossed__versions_8hpp/#define-default-rivet)**  |
+|  | **[Default_obscura](/documentation/code/files/default__bossed__versions_8hpp/#define-default-obscura)**  |
 
 ## Detailed Description
 
@@ -25,13 +26,13 @@ description: "[No description available]"
 **Author**: 
 
   * Pat Scott ([patscott@physics.mcgill.ca](mailto:patscott@physics.mcgill.ca)) 
-  * Tomas Gonzalo ([tomas.gonzalo@monash.edu](mailto:tomas.gonzalo@monash.edu)) 
+  * Tomas Gonzalo ([tomas.gonzalo@kit.edu](mailto:tomas.gonzalo@kit.edu)) 
 
 
 **Date**: 
 
   * 2014 Nov
-  * 2019 Sep
+  * 2019 Sep, 2024 Apr
 
 
 Choices about the default versions of backends to use for loading types (specific versions of types can always be used by employing the qualified type BACKENDNAME_SAFEVERSION::TYPE)
@@ -86,6 +87,13 @@ Authors (add name and date if you modify):
 ```
 
 
+### define Default_obscura
+
+```
+#define Default_obscura 1_1_0
+```
+
+
 ## Source code
 
 ```
@@ -108,8 +116,8 @@ Authors (add name and date if you modify):
 ///  \date 2014 Nov
 ///
 ///  \author Tomas Gonzalo
-///          (tomas.gonzalo@monash.edu)
-///  \date 2019 Sep
+///          (tomas.gonzalo@kit.edu)
+///  \date 2019 Sep, 2024 Apr
 ///
 ///  *********************************************
 
@@ -122,6 +130,7 @@ Authors (add name and date if you modify):
 #define  Default_HepLike 2_0
 #define  Default_vevacious 1_0
 #define  Default_Rivet 3_1_5
+#define  Default_obscura 1_1_0
 
 // Defaults added by GUM (do not remove this comment).
 ```
@@ -129,4 +138,4 @@ Authors (add name and date if you modify):
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:08 +0000
+Updated on 2024-07-18 at 13:53:35 +0000

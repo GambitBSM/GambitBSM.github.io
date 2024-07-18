@@ -52,7 +52,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Elements/include/gambit/Elements/functors.hpp" line="969" column="7"/>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="1060" column="7"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1backend__functor_3_01typename_01variadic__ptr_3_01void_00_01ARGS_8_8_8_01_4_1_1tyf70fe5b8dacf530fb4e50c81f52a10d6_1a3b79dbe663ddd8724fd6925e7699f589" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type></type>
@@ -67,7 +67,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Elements/include/gambit/Elements/functors.hpp" line="972" column="15" bodyfile="Elements/include/gambit/Elements/functors.hpp" bodystart="972" bodyend="972"/>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="1063" column="15" bodyfile="Elements/include/gambit/Elements/functors.hpp" bodystart="1063" bodyend="1063"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1backend__functor_3_01typename_01variadic__ptr_3_01void_00_01ARGS_8_8_8_01_4_1_1tyf70fe5b8dacf530fb4e50c81f52a10d6_1a6e73c877f5bda39a3ee8359e27fa3972" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <templateparamlist>
@@ -93,7 +93,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Elements/include/gambit/Elements/functors.hpp" line="976" column="12" bodyfile="Elements/include/gambit/Elements/functors.hpp" bodystart="976" bodyend="981"/>
+        <location file="Elements/include/gambit/Elements/functors.hpp" line="1067" column="12" bodyfile="Elements/include/gambit/Elements/functors.hpp" bodystart="1067" bodyend="1072"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -144,7 +144,6 @@
           <edgelabel>myOrigin</edgelabel>
           <edgelabel>myPurpose</edgelabel>
           <edgelabel>myType</edgelabel>
-          <edgelabel>myVersion</edgelabel>
         </childnode>
         <childnode refid="5" relation="usage">
           <edgelabel>myClaw</edgelabel>
@@ -164,6 +163,7 @@
         </childnode>
         <childnode refid="4" relation="usage">
           <edgelabel>mySafeVersion</edgelabel>
+          <edgelabel>myVersion</edgelabel>
         </childnode>
       </node>
       <node id="4">
@@ -174,8 +174,11 @@
         <link refid="structGambit_1_1variadic__ptr"/>
       </node>
     </collaborationgraph>
-    <location file="Elements/include/gambit/Elements/functors.hpp" line="962" column="3" bodyfile="Elements/include/gambit/Elements/functors.hpp" bodystart="964" bodyend="983"/>
+    <location file="Elements/include/gambit/Elements/functors.hpp" line="1053" column="3" bodyfile="Elements/include/gambit/Elements/functors.hpp" bodystart="1055" bodyend="1074"/>
     <listofallmembers>
+      <member refid="classGambit_1_1functor_1afc32933871ee7c0853905a723af8aa64" prot="public" virt="non-virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>addMatchedBackendRule</name></member>
+      <member refid="classGambit_1_1functor_1a90bebd6de9f21c23975b45bb992a6f4e" prot="public" virt="non-virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>addMatchedModuleRule</name></member>
+      <member refid="classGambit_1_1functor_1ae5a94c0f623a43c1d365410007f8733f" prot="public" virt="non-virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>addMatchedObservable</name></member>
       <member refid="classGambit_1_1functor_1a5f45ff02d2e4209dfb81bcb9ace3fb74" prot="public" virt="non-virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>allModelsAllowed</name></member>
       <member refid="classGambit_1_1functor_1a782b9e5700d5cb8035abd400447c656c" prot="protected" virt="non-virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>allowed_parent_or_friend_exists</name></member>
       <member refid="classGambit_1_1functor_1a4f73fb1475364081fa23944b7c95c7b3" prot="protected" virt="non-virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>allowedGroupCombos</name></member>
@@ -196,6 +199,7 @@
       <member refid="classGambit_1_1functor_1ac271e5cc6323f96fbd9aeb3ba8ba3bab" prot="public" virt="virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>canBeLoopManager</name></member>
       <member refid="classGambit_1_1functor_1abbad0238d51adf088d97fe4376586890" prot="public" virt="non-virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>capability</name></member>
       <member refid="classGambit_1_1functor_1ad1763580d476b082690ddebfd877e98b" prot="public" virt="non-virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>citationKey</name></member>
+      <member refid="classGambit_1_1functor_1ad3d0ad0ba4d4baadf3e96c0a812a79ea" prot="protected" virt="non-virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>conditionalModels</name></member>
       <member refid="classGambit_1_1functor_1a86a00771d51c2f47765de71a8eb47de9" prot="protected" virt="non-virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>contains_anything_interpretable_as_member_of</name></member>
       <member refid="classGambit_1_1functor_1ac518c00bed9dd3d570e0026439b2dfc2" prot="public" virt="virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>dependencies</name></member>
       <member refid="classGambit_1_1functor_1a399d73c9f799c78274ad8715eec84d7b" prot="protected" virt="non-virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>failBigTime</name></member>
@@ -203,8 +207,16 @@
       <member refid="classGambit_1_1functor_1a9b780439992b245c1942c01151052942" prot="public" virt="virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>forcematchingbackend</name></member>
       <member refid="classGambit_1_1backend__functor__common_1a52178f0fbb305166abc62807f2ec31fe" prot="protected" virt="non-virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>funcPtrType</name></member>
       <member refid="classGambit_1_1functor_1a970d23b026a50dd8b029795a004b4183" prot="public" virt="non-virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>functor</name></member>
+      <member refid="classGambit_1_1functor_1a65bedbb37de28490aa88b0e837fe3fa5" prot="public" virt="non-virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>getAllowedModels</name></member>
+      <member refid="classGambit_1_1functor_1aa6f835bd61b27bd69c5e40b6d8dcf16a" prot="public" virt="non-virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>getConditionalModels</name></member>
       <member refid="classGambit_1_1functor_1aee7a9c98be2845c50e6953fdaf1195ff" prot="public" virt="non-virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>getDependees</name></member>
       <member refid="classGambit_1_1functor_1a16e487c93d71375ad93223f836493dd3" prot="public" virt="virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>getInvalidationRate</name></member>
+      <member refid="classGambit_1_1functor_1a32ca3a4e47fdd80ebd3d5d699e5afa38" prot="public" virt="non-virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>getMatchedBackendRules</name></member>
+      <member refid="classGambit_1_1functor_1a8bca83a0f6178d7f00c77093da993267" prot="public" virt="non-virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>getMatchedModuleRules</name></member>
+      <member refid="classGambit_1_1functor_1ab82a6bde952c53691a6d47db5b87c19d" prot="public" virt="non-virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>getMatchedObservables</name></member>
+      <member refid="classGambit_1_1functor_1a377c89c0f5f82b21fa592e4df17dac8e" prot="public" virt="non-virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>getMatchedRules</name></member>
+      <member refid="classGambit_1_1functor_1a50742ee28f41e22344e18ac862f6a1b0" prot="public" virt="non-virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>getMatchedRules</name></member>
+      <member refid="classGambit_1_1functor_1a72928a3e500a24e805d9e8f1a0eaedf5" prot="public" virt="non-virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>getModelGroups</name></member>
       <member refid="classGambit_1_1functor_1aec86679016ed6a9a1ad2f20c1e3383e9" prot="public" virt="non-virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>getOptions</name></member>
       <member refid="classGambit_1_1functor_1ac79cd5e35a61931feee5c00e5eafec3b" prot="public" virt="virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>getRuntimeAverage</name></member>
       <member refid="classGambit_1_1functor_1a6842998c58e68c84b6dcc54fb5094c5c" prot="public" virt="non-virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>getSubCaps</name></member>
@@ -213,13 +225,22 @@
       <member refid="classGambit_1_1functor_1a1f13657a8b3235a6645f9f5f65096972" prot="protected" virt="non-virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>in_allowed_combo</name></member>
       <member refid="classGambit_1_1backend__functor__common_1ae2cba749c08911cf8bbeceee7c79125b" prot="protected" virt="non-virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>inUse</name></member>
       <member refid="classGambit_1_1backend__functor__common_1a4b8bbe62177404dc63d8fb640ddd4ec8" prot="public" virt="non-virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>inUsePtr</name></member>
+      <member refid="classGambit_1_1functor_1a49e6347e8fce613ffbe7b5d4f001d0f9" prot="public" virt="non-virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>isActive</name></member>
+      <member refid="classGambit_1_1functor_1a5a07534cd7461b7d72155fa4e6ab606a" prot="public" virt="non-virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>isAvailable</name></member>
+      <member refid="classGambit_1_1functor_1a4b1251d4f9b754cf751ba869d3d53b98" prot="public" virt="non-virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>isDisabled</name></member>
+      <member refid="classGambit_1_1functor_1a97d906410138eaff615b937785c0a144" prot="public" virt="non-virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>isEnabled</name></member>
       <member refid="classGambit_1_1functor_1ad058829b78226cf3b0dcb310a4668256" prot="public" virt="non-virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>label</name></member>
       <member refid="classGambit_1_1functor_1a8605c698d5d7e55b8a2bd47af9c466cb" prot="public" virt="virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>loopManagerCapability</name></member>
       <member refid="classGambit_1_1functor_1a259892482655c006e7f278bbdcb837a1" prot="public" virt="virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>loopManagerName</name></member>
       <member refid="classGambit_1_1functor_1a3cc77fbfc1442a29d6453da3add9acf3" prot="public" virt="virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>loopManagerOrigin</name></member>
       <member refid="classGambit_1_1functor_1ac9ce89a8ae79c6307e29596549d8ee41" prot="public" virt="virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>loopManagerType</name></member>
-      <member refid="classGambit_1_1functor_1a54676e855d38746e897ac7bfcf713310" prot="public" virt="virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>model_conditional_backend_reqs</name></member>
-      <member refid="classGambit_1_1functor_1aca3ff18371ef2f272aa011207a2015a0" prot="public" virt="virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>model_conditional_dependencies</name></member>
+      <member refid="classGambit_1_1functor_1a4da4a96f26fdbf9ec93047af1f34fd5a" prot="protected" virt="non-virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>matched_backend_rules</name></member>
+      <member refid="classGambit_1_1functor_1a1340c893774365853abd274928f2761c" prot="protected" virt="non-virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>matched_module_rules</name></member>
+      <member refid="classGambit_1_1functor_1a86dda52996a4f9ecab49e8a6b0e82749" prot="protected" virt="non-virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>matched_observables</name></member>
+      <member refid="classGambit_1_1functor_1a9c5eaf7737cc297e843338349862f414" prot="public" virt="virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>model_conditional_backend_reqs</name></member>
+      <member refid="classGambit_1_1functor_1a8e228bf6c86903c1faf7c37287dd15eb" prot="public" virt="virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>model_conditional_backend_reqs_exact</name></member>
+      <member refid="classGambit_1_1functor_1a3475119ea4e13a5c8475dce378386c09" prot="public" virt="virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>model_conditional_dependencies</name></member>
+      <member refid="classGambit_1_1functor_1a847a010db8deb7c14526877a6a3b338b" prot="public" virt="virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>model_conditional_dependencies_exact</name></member>
       <member refid="classGambit_1_1functor_1a961f601d1b7072be456f16a74a973a59" prot="public" virt="non-virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>modelAllowed</name></member>
       <member refid="classGambit_1_1functor_1acfa856966c8346437fb99a746970336e" prot="public" virt="non-virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>modelComboAllowed</name></member>
       <member refid="classGambit_1_1functor_1a828031c874c79018d35b710379cd32d2" prot="public" virt="non-virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>modelComboExplicitlyAllowed</name></member>
@@ -237,14 +258,15 @@
       <member refid="classGambit_1_1functor_1a0a323ed83c7025b6d789e7fac64addc7" prot="protected" virt="non-virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>myOrigin</name></member>
       <member refid="classGambit_1_1functor_1ac061cc96139bf564778406ecc67cc0a9" prot="protected" virt="non-virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>myPurpose</name></member>
       <member refid="classGambit_1_1backend__functor__common_1a205268bb599cd3fd2328d6a222160993" prot="protected" virt="non-virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>mySafeVersion</name></member>
-      <member refid="classGambit_1_1functor_1a41bf64d7ddcd9ee48ef849344a803b55" prot="protected" virt="non-virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>myStatus</name></member>
+      <member refid="classGambit_1_1functor_1ad85d09306cafaf0853f27d0e92698102" prot="protected" virt="non-virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>myStatus</name></member>
       <member refid="classGambit_1_1functor_1a91801bf8dad62e88dcd1c0d677543d03" prot="protected" virt="non-virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>mySubCaps</name></member>
       <member refid="classGambit_1_1functor_1a8ce50c7d7fcf5afa751b258895dd6dad" prot="protected" virt="non-virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>myTimingLabel</name></member>
       <member refid="classGambit_1_1functor_1a9501f612101222191ac4eb41c5ef91af" prot="protected" virt="non-virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>myTimingVertexID</name></member>
       <member refid="classGambit_1_1functor_1a799a78be10d270a75bf1c3881178daab" prot="protected" virt="non-virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>myType</name></member>
-      <member refid="classGambit_1_1functor_1a4de522a9d806a77959580b9a21c922d4" prot="protected" virt="non-virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>myVersion</name></member>
+      <member refid="classGambit_1_1backend__functor__common_1abb4eae828a1503e4f21be3090117cb44" prot="protected" virt="non-virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>myVersion</name></member>
       <member refid="classGambit_1_1functor_1a004751aadc8af70cdb28fa25ba661f76" prot="protected" virt="non-virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>myVertexID</name></member>
       <member refid="classGambit_1_1functor_1aaea7be169ef23d9221b4f85bc52eacb4" prot="public" virt="non-virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>name</name></member>
+      <member refid="classGambit_1_1functor_1af2c05fc8dff6a83763b05c27de3ce204" prot="public" virt="virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>needsLoopManager</name></member>
       <member refid="classGambit_1_1functor_1a55331421e9520337170079c18eaa88c7" prot="public" virt="virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>notifyOfBackends</name></member>
       <member refid="classGambit_1_1functor_1ae93379f2a736243cff0cdf79d0c2cb8c" prot="public" virt="virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>notifyOfDependee</name></member>
       <member refid="classGambit_1_1functor_1a52331ed1165075f4f5c8060cf4d95f03" prot="public" virt="non-virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>notifyOfIniOptions</name></member>
@@ -278,18 +300,18 @@
       <member refid="classGambit_1_1functor_1ab42c0faae1334f0e4aec38fa6dc2c3b2" prot="public" virt="non-virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>setOption</name></member>
       <member refid="classGambit_1_1functor_1ae47ce614bb3ebb36fb24a60a115de3d2" prot="public" virt="virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>setPrintRequirement</name></member>
       <member refid="classGambit_1_1functor_1a505e1eec8cb10fab9a310cd07ddaa7b2" prot="public" virt="non-virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>setPurpose</name></member>
-      <member refid="classGambit_1_1functor_1aa5b8e133948384570684245abcd0a137" prot="public" virt="non-virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>setStatus</name></member>
+      <member refid="classGambit_1_1functor_1ad0a844f4f798a0bcd3dfc1486d600a22" prot="public" virt="non-virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>setStatus</name></member>
       <member refid="classGambit_1_1functor_1a0372aeee11961e5b97ff9d0370375826" prot="public" virt="non-virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>setSubCap</name></member>
       <member refid="classGambit_1_1functor_1ade7117c926fd3e16594a8a38aa41479f" prot="public" virt="virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>setTimingPrintRequirement</name></member>
       <member refid="classGambit_1_1functor_1aa3672cd13d12ba53572d7b40bb74121e" prot="public" virt="non-virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>setTimingVertexID</name></member>
       <member refid="classGambit_1_1functor_1a662c46ed6b31a1525a983c9cf7ebdf2b" prot="public" virt="non-virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>setVertexID</name></member>
-      <member refid="classGambit_1_1functor_1a2ba190773faaf6e644d74ab24c709d2a" prot="public" virt="non-virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>status</name></member>
+      <member refid="classGambit_1_1functor_1a49fc91e71781ad1decd9aafab90ad5e9" prot="public" virt="non-virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>status</name></member>
       <member refid="classGambit_1_1functor_1afec52bd9d7b3fb3a83cece403d48626b" prot="public" virt="non-virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>timingLabel</name></member>
       <member refid="classGambit_1_1functor_1ad33185ce2c0ff77e0e14e4606d8efa1a" prot="public" virt="non-virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>timingVertexID</name></member>
       <member refid="classGambit_1_1functor_1a913d44680b347e3e9261601b3bdb6f80" prot="public" virt="non-virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>type</name></member>
       <member refid="classGambit_1_1backend__functor__common_1a1b7376bd99a159aebd4e6473f22d966d" prot="public" virt="non-virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>updatePointer</name></member>
       <member refid="classGambit_1_1functor_1a3d9cf03cce51e7e134bbe1d7dcf37541" prot="protected" virt="non-virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>verbose</name></member>
-      <member refid="classGambit_1_1functor_1a876de7e3fb4b6611e0a90a24ec889aed" prot="public" virt="non-virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>version</name></member>
+      <member refid="classGambit_1_1backend__functor__common_1a37ab7d16a3437db0e91b3c4806c73852" prot="public" virt="virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>version</name></member>
       <member refid="classGambit_1_1functor_1a94892ac8fa2e37f15cab798bbd189bcb" prot="public" virt="non-virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>vertexID</name></member>
       <member refid="classGambit_1_1backend__functor_3_01typename_01variadic__ptr_3_01void_00_01ARGS_8_8_8_01_4_1_1tyf70fe5b8dacf530fb4e50c81f52a10d6_1a3b79dbe663ddd8724fd6925e7699f589" prot="public" virt="virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>~backend_functor</name></member>
       <member refid="classGambit_1_1backend__functor__common_1ace63cb38f70050d21506e0572129bdb2" prot="public" virt="virtual"><scope>Gambit::backend_functor&lt; typename variadic_ptr&lt; void, ARGS... &gt;::type, void, ARGS... &gt;</scope><name>~backend_functor_common</name></member>

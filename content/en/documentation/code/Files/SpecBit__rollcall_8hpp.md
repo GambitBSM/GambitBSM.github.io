@@ -82,7 +82,7 @@ START_CAPABILITY QUICK_FUNCTION(
 
 Module function declarations for [SpecBit_SM.cpp](). 
 
-Module function declarations for [SpecBit_MSSM.cpp](/documentation/code/files/specbit__mssm_8cpp/#file-src-specbit-mssm-cpp) Module function declarations for [SpecBit_ScalarSingletDM.cpp](/documentation/code/files/specbit__scalarsingletdm_8cpp/#file-src-specbit-scalarsingletdm-cpp) Module function declarations for SpecBit_VectorSingletDM_Z2.cpp Module function declarations for SpecBit_MajoranaSingletDM_Z2.cpp Module function declarations for SpecBit_DiracSingletDM_Z2.cpp Module function declarations for [SpecBit_MDM.cpp](/documentation/code/files/specbit__mdm_8cpp/#file-src-specbit-mdm-cpp) Module function declarations for SpecBit_tests.cpp (new tests) Module function declarations for [SpecBit_DMsimpVectorMedVectorDM.cpp](/documentation/code/files/specbit__dmsimpvectormedvectordm_8cpp/#file-src-specbit-dmsimpvectormedvectordm-cpp) Module function declarations for [SpecBit_DMsimpVectorMedScalarDM.cpp](/documentation/code/files/specbit__dmsimpvectormedscalardm_8cpp/#file-src-specbit-dmsimpvectormedscalardm-cpp) Module function declarations for [SpecBit_DMsimpVectorMedMajoranaDM.cpp](/documentation/code/files/specbit__dmsimpvectormedmajoranadm_8cpp/#file-src-specbit-dmsimpvectormedmajoranadm-cpp) Module function declarations for [SpecBit_DMsimpVectorMedDiracDM.cpp](/documentation/code/files/specbit__dmsimpvectormeddiracdm_8cpp/#file-src-specbit-dmsimpvectormeddiracdm-cpp) Module function declarations for [SpecBit_DMEFT.cpp](/documentation/code/files/specbit__dmeft_8cpp/#file-src-specbit-dmeft-cpp) For SpecBit testing only Functions to change the capability associated with a Spectrum object to "SM_spectrum" 
+Module function declarations for [SpecBit_MSSM.cpp](/documentation/code/files/specbit__mssm_8cpp/#file-src-specbit-mssm-cpp) Module function declarations for [SpecBit_ScalarSingletDM.cpp](/documentation/code/files/specbit__scalarsingletdm_8cpp/#file-src-specbit-scalarsingletdm-cpp) Module function declarations for SpecBit_VectorSingletDM_Z2.cpp Module function declarations for SpecBit_MajoranaSingletDM_Z2.cpp Module function declarations for SpecBit_DiracSingletDM_Z2.cpp Module function declarations for [SpecBit_MDM.cpp](/documentation/code/files/specbit__mdm_8cpp/#file-src-specbit-mdm-cpp) Module function declarations for SpecBit_tests.cpp (new tests) Module function declarations for [SpecBit_DMsimpVectorMedVectorDM.cpp](/documentation/code/files/specbit__dmsimpvectormedvectordm_8cpp/#file-src-specbit-dmsimpvectormedvectordm-cpp) Module function declarations for [SpecBit_DMsimpVectorMedScalarDM.cpp](/documentation/code/files/specbit__dmsimpvectormedscalardm_8cpp/#file-src-specbit-dmsimpvectormedscalardm-cpp) Module function declarations for [SpecBit_DMsimpVectorMedMajoranaDM.cpp](/documentation/code/files/specbit__dmsimpvectormedmajoranadm_8cpp/#file-src-specbit-dmsimpvectormedmajoranadm-cpp) Module function declarations for [SpecBit_DMsimpVectorMedDiracDM.cpp](/documentation/code/files/specbit__dmsimpvectormeddiracdm_8cpp/#file-src-specbit-dmsimpvectormeddiracdm-cpp) Module function declarations for [SpecBit_DMEFT.cpp](/documentation/code/files/specbit__dmeft_8cpp/#file-src-specbit-dmeft-cpp) Module function declarations for [SpecBit_SubGeVDM.cpp](/documentation/code/files/specbit__subgevdm_8cpp/#file-src-specbit-subgevdm-cpp) For SpecBit testing only Functions to change the capability associated with a Spectrum object to "SM_spectrum" 
 
 
 
@@ -244,6 +244,10 @@ START_MODULE
   /// Module function declarations for SpecBit_SuperRenormHP.cpp
   #include "gambit/SpecBit/SpecBit_SuperRenormHP_rollcall.hpp"
 */
+
+  /// Module function declarations for SpecBit_SubGeVDM.cpp
+  #include "gambit/SpecBit/SpecBit_SubGeVDM_rollcall.hpp"
+
   /// For SpecBit testing only
   //#include "gambit/SpecBit/SpecBit_sandbox_rollcall.hpp"
 
@@ -276,4 +280,4 @@ START_MODULE
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:05 +0000
+Updated on 2024-07-18 at 13:53:32 +0000

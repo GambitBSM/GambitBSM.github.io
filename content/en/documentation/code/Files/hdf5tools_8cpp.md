@@ -230,7 +230,7 @@ namespace Gambit {
             errmsg << "Failed to close HDF5 file with ID "<<id<<"! The supplied id does not point to a successfully opened file.";
             printer_error().raise(LOCAL_INFO, errmsg.str());
          }
-  
+
          // Check for any open objects! These should all be closed before the file is closed for maximum safety
          ssize_t count = H5Fget_obj_count(id, H5F_OBJ_ALL);
          if(count > 1)
@@ -270,7 +270,7 @@ namespace Gambit {
       {
           // Buffer to receive data (and return from function)
           std::vector<uint8_t> chunkdata(length);
- 
+
           // Select hyperslab
           std::pair<hid_t,hid_t> selection_ids = selectChunk(dset_id,offset,length);
           hid_t memspace_id = selection_ids.first;
@@ -293,7 +293,7 @@ namespace Gambit {
 
           H5Sclose(dspace_id);
           H5Sclose(memspace_id);
- 
+
           std::vector<bool> chunkdata_bool;
           for(auto it=chunkdata.begin(); it!=chunkdata.end(); ++it)
           {
@@ -302,7 +302,7 @@ namespace Gambit {
 
           return chunkdata_bool;
       }
- 
+
       /// Create or open hdf5 file (ignoring feedback regarding whether file already existed)
       hid_t openFile(const std::string& fname, bool overwrite, const char access_type)
       {
@@ -500,7 +500,7 @@ namespace Gambit {
                   std::size_t offset(0);
                   std::size_t length(0);
                   errorsOff();
-                  for(std::size_t i=0; i<Nchunks; i++)  
+                  for(std::size_t i=0; i<Nchunks; i++)
                   {
                       offset = i * CHUNK;
                       length = CHUNK;
@@ -559,7 +559,7 @@ namespace Gambit {
           }
           return std::make_pair(fully_readable,largest_readable_index);
       }
- 
+
       /// Check if a dataset exists and can be read from fully
       /// (Reads through entire dataset to make sure! May take some time)
       std::pair<bool,std::size_t> checkDatasetReadable(hid_t location, const std::string& dsetname)
@@ -578,7 +578,7 @@ namespace Gambit {
                   //msg += "Failed to obtain type of dataset";
               }
               else
-              { 
+              {
                   // Need buffers of various types depending of type of dataset.
                   // Can achieve this with some macros and a templated helper function
                   #define RUN_TYPE_DEPENDENT_CHECK(r,data,elem) \
@@ -642,7 +642,7 @@ namespace Gambit {
        * does not yet exist.
        *
        */
-      hid_t openGroup(hid_t file_id, const std::string& name, bool nocreate) //, int accessmode)
+      hid_t openGroup(hid_t file_id, const std::string& name, bool nocreate, bool fatal) //, int accessmode)
       {
          hid_t group_id;
 
@@ -656,12 +656,18 @@ namespace Gambit {
          // User does not want to create group
          if(nocreate) //accessmode & H5Utils::DONOTCREATE)
          {
+            if(not fatal) errorsOff();
             group_id = H5Gopen2(file_id, name.c_str(), H5P_DEFAULT);
-            if(group_id<0)
+            if(not fatal) errorsOn();
+            if(group_id<0 and fatal)
             {
               std::ostringstream errmsg;
               errmsg << "Error opening HDF5 group '"<<name<<"'. Group (probably) does not exist, and 'nocreate' flag is set to 'true', so we will not attempt to create one";
               printer_error().raise(LOCAL_INFO, errmsg.str());
+            }
+            else
+            {
+              return group_id;
             }
          }
          else
@@ -680,11 +686,15 @@ namespace Gambit {
                {
                   /* doesn't exist; try to create it */
                   group_id = H5Gcreate2(file_id, path.str().c_str(), H5P_DEFAULT, H5P_DEFAULT, H5P_DEFAULT);
-                  if(group_id<0)
+                  if(group_id<0 and fatal)
                   {
                     std::ostringstream errmsg;
                     errmsg << "Error while recursively creating/opening group '"<<name<<"'. Failed to create group '"<<path.str()<<"'";
                     printer_error().raise(LOCAL_INFO, errmsg.str());
+                  }
+                  else
+                  {
+                    return group_id;
                   }
                }
                herr_t err = H5Gclose(group_id);
@@ -697,11 +707,15 @@ namespace Gambit {
             }
             // Should exist now; open the group and return the handle
             group_id = H5Gopen2(file_id, name.c_str(), H5P_DEFAULT);
-            if(group_id<0)
+            if(group_id<0 and fatal)
             {
               std::ostringstream errmsg;
               errmsg << "Error opening HDF5 group '"<<name<<"' after recursive creation supposedly succeeded! There must be a bug in this routine, please fix.";
               printer_error().raise(LOCAL_INFO, errmsg.str());
+            }
+            else
+            {
+              return group_id;
             }
         }
         return group_id;
@@ -754,7 +768,7 @@ namespace Gambit {
           {
               std::ostringstream errmsg;
               errmsg << "Attempt to check if object named '"<<name<<"' is a dataset failed! See HDF5 error for more details (stderr).";
-              printer_error().raise(LOCAL_INFO, errmsg.str()); 
+              printer_error().raise(LOCAL_INFO, errmsg.str());
           }
           return object_info.type == H5O_TYPE_DATASET;
       }
@@ -856,9 +870,9 @@ namespace Gambit {
       std::string getName(hid_t dset_id)
       {
           size_t len = H5Iget_name(dset_id,NULL,0);
-          char buffer[len];
-          H5Iget_name(dset_id,buffer,len+1);
-          std::string n = buffer;
+          std::vector<char> buffer(len+1);
+          H5Iget_name(dset_id,&buffer[0],len+1);
+          std::string n = &buffer[0];
           return n;
       }
 
@@ -911,7 +925,7 @@ namespace Gambit {
       }
 
       /// @}
- 
+
       // Match fixed integers to HDF5 types
       int inttype_from_h5type(hid_t h5type)
       {
@@ -926,7 +940,7 @@ namespace Gambit {
           {
               std::ostringstream errmsg;
               errmsg<<"No fixed ID assigned for this type! (h5type = "<<h5type<<")!";
-              printer_error().raise(LOCAL_INFO, errmsg.str());        
+              printer_error().raise(LOCAL_INFO, errmsg.str());
           }
           BOOST_PP_SEQ_FOR_EACH(ELSEIF, _, H5_OUTPUT_TYPES)
           #undef ELSEIF
@@ -934,7 +948,7 @@ namespace Gambit {
           {
               std::ostringstream errmsg;
               errmsg<<"Unrecognised HDF5 type (h5type = "<<h5type<<")!";
-              printer_error().raise(LOCAL_INFO, errmsg.str());       
+              printer_error().raise(LOCAL_INFO, errmsg.str());
           }
           return out;
       }
@@ -980,4 +994,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:06 +0000
+Updated on 2024-07-18 at 13:53:33 +0000

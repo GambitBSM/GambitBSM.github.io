@@ -9,8 +9,10 @@
     <includedby refid="depresolver_8hpp" local="yes">depresolver.hpp</includedby>
     <includedby refid="equivalency__singleton_8hpp" local="yes">equivalency_singleton.hpp</includedby>
     <includedby refid="Elements_2src_2functors_8cpp" local="yes">functors.cpp</includedby>
+    <includedby refid="observable_8cpp" local="yes">observable.cpp</includedby>
+    <includedby refid="resolution__utilities_8hpp" local="yes">resolution_utilities.hpp</includedby>
+    <includedby refid="rule_8hpp" local="yes">rule.hpp</includedby>
     <includedby refid="type__equivalency_8cpp" local="yes">type_equivalency.cpp</includedby>
-    <includedby refid="yaml__parser_8hpp" local="yes">yaml_parser.hpp</includedby>
     <incdepgraph>
       <node id="1">
         <label>type_equivalency.hpp</label>
@@ -320,14 +322,48 @@
         <childnode refid="12" relation="include">
         </childnode>
       </node>
+      <node id="22">
+        <label>observable.hpp</label>
+        <link refid="observable_8hpp"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
       <node id="18">
+        <label>resolution_utilities.hpp</label>
+        <link refid="resolution__utilities_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>rule.hpp</label>
+        <link refid="rule_8hpp"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
         <label>yaml_parser.hpp</label>
         <link refid="yaml__parser_8hpp"/>
         <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="19" relation="include">
+        <childnode refid="24" relation="include">
         </childnode>
       </node>
       <node id="2">
@@ -354,7 +390,19 @@
         <label>modelgraph.cpp</label>
         <link refid="modelgraph_8cpp"/>
       </node>
+      <node id="17">
+        <label>observable.cpp</label>
+        <link refid="observable_8cpp"/>
+      </node>
       <node id="19">
+        <label>resolution_utilities.cpp</label>
+        <link refid="resolution__utilities_8cpp"/>
+      </node>
+      <node id="20">
+        <label>rule.cpp</label>
+        <link refid="rule_8cpp"/>
+      </node>
+      <node id="24">
         <label>yaml_parser.cpp</label>
         <link refid="yaml__parser_8cpp"/>
       </node>
@@ -383,6 +431,10 @@
         </childnode>
         <childnode refid="18" relation="include">
         </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
       </node>
       <node id="14">
         <label>equivalency_singleton.cpp</label>
@@ -396,7 +448,7 @@
         <label>ini_functions.cpp</label>
         <link refid="Elements_2src_2ini__functions_8cpp"/>
       </node>
-      <node id="17">
+      <node id="25">
         <label>type_equivalency.cpp</label>
         <link refid="type__equivalency_8cpp"/>
       </node>

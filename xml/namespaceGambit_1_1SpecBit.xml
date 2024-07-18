@@ -4459,6 +4459,69 @@ enough&quot; to MSbar masses at MZ. The object does the same with its default va
         </inbodydescription>
         <location file="SpecBit/src/SpecBit_SM.cpp" line="113" column="10" bodyfile="SpecBit/src/SpecBit_SM.cpp" bodystart="113" bodyend="125"/>
       </memberdef>
+      <memberdef kind="function" id="SpecBit__SubGeVDM_8cpp_1a9f0eae1817dc19abd192deb8f34e8840" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::SpecBit::get_SubGeVDM_spectrum</definition>
+        <argsstring>(Spectrum &amp;result)</argsstring>
+        <name>get_SubGeVDM_spectrum</name>
+        <qualifiedname>Gambit::SpecBit::get_SubGeVDM_spectrum</qualifiedname>
+        <param>
+          <type><ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref> &amp;</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+<para>Get a (simple) <ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref> object wrapper for the SubGeVDM model. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SpecBit/src/SpecBit_SubGeVDM.cpp" line="46" column="10" bodyfile="SpecBit/src/SpecBit_SubGeVDM.cpp" bodystart="46" bodyend="107"/>
+      </memberdef>
+      <memberdef kind="function" id="SpecBit__SubGeVDM_8cpp_1ab85e44173260ffe10466b8374dc738d6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::SpecBit::fill_map_from_SubGeVDM_spectrum</definition>
+        <argsstring>(std::map&lt; std::string, double &gt; &amp;, const Spectrum &amp;)</argsstring>
+        <name>fill_map_from_SubGeVDM_spectrum</name>
+        <qualifiedname>Gambit::SpecBit::fill_map_from_SubGeVDM_spectrum</qualifiedname>
+        <param>
+          <type>std::map&lt; std::string, double &gt; &amp;</type>
+          <defname>specmap</defname>
+        </param>
+        <param>
+          <type>const <ref refid="classGambit_1_1Spectrum" kindref="compound">Spectrum</ref> &amp;</type>
+          <defname>SubGeVdmspec</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Add everything... use spectrum contents routines to automate task</para>
+<para>Verification routine should have taken care of invalid shapes etc, so won&apos;t check for that here.</para>
+<para>Add everything... use spectrum contents routines to automate task</para>
+<para>Verification routine should have taken care of invalid shapes etc, so won&apos;t check for that here.</para>
+        </inbodydescription>
+        <location file="SpecBit/src/SpecBit_SubGeVDM.cpp" line="119" column="10" bodyfile="SpecBit/src/SpecBit_SubGeVDM.cpp" bodystart="119" bodyend="172" declfile="SpecBit/src/SpecBit_SubGeVDM.cpp" declline="110" declcolumn="10"/>
+      </memberdef>
+      <memberdef kind="function" id="SpecBit__SubGeVDM_8cpp_1a41fbabfd8406b34aaab9994424bde770" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::SpecBit::get_SubGeVDM_spectrum_as_map</definition>
+        <argsstring>(std::map&lt; std::string, double &gt; &amp;specmap)</argsstring>
+        <name>get_SubGeVDM_spectrum_as_map</name>
+        <qualifiedname>Gambit::SpecBit::get_SubGeVDM_spectrum_as_map</qualifiedname>
+        <param>
+          <type>std::map&lt; std::string, double &gt; &amp;</type>
+          <declname>specmap</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="SpecBit/src/SpecBit_SubGeVDM.cpp" line="112" column="10" bodyfile="SpecBit/src/SpecBit_SubGeVDM.cpp" bodystart="112" bodyend="117"/>
+      </memberdef>
       <memberdef kind="function" id="src_2SpecBit__tests_8cpp_1abe3ea3bcf1f3a3a7cb7a60942394903a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void Gambit::SpecBit::Math_test</definition>

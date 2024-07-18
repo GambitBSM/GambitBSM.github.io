@@ -9,6 +9,13 @@ description: "[No description available]"
 
 [No description available]
 
+## Namespaces
+
+| Name           |
+| -------------- |
+| **[Gambit::Scanner::Plugins::ObjPyPlugin](/documentation/code/namespaces/namespacegambit_1_1scanner_1_1plugins_1_1objpyplugin/)**  |
+| **[Gambit::Scanner::Plugins::ScannerPyPlugin](/documentation/code/namespaces/namespacegambit_1_1scanner_1_1plugins_1_1scannerpyplugin/)**  |
+
 ## Classes
 
 |                | Name           |
@@ -30,6 +37,7 @@ description: "[No description available]"
 | struct | **[Gambit::Scanner::Plugins::pluginData](/documentation/code/classes/structgambit_1_1scanner_1_1plugins_1_1plugindata/)** <br>Structure that holds all the data provided by plugins about themselves.  |
 | class | **[Gambit::Scanner::Plugins::pluginInfo](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugininfo/)** <br>Container for all the plugin info from the inifile and Scannerbit.  |
 | struct | **[Gambit::Scanner::Plugins::Proto_Plugin_Details](/documentation/code/classes/structgambit_1_1scanner_1_1plugins_1_1proto__plugin__details/)** <br>Plugin info from inifile.  |
+| struct | **[Gambit::Scanner::Plugins::pyplugin_info](/documentation/code/classes/structgambit_1_1scanner_1_1plugins_1_1pyplugin__info/)**  |
 | class | **[Gambit::Scanner::Plugins::VersionCompare](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1versioncompare/)**  |
 | class | **[Gambit::Scanner::Plugins::VersionCompareBase](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1versioncomparebase/)** <br>Base class for comparing scanner plugins.  |
 | class | **[Gambit::Scanner::Plugins::VersionCompareBottom](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1versioncomparebottom/)**  |
@@ -119,4 +127,4 @@ Access Functor for plugin info. This will manage all the plugins including store
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:04 +0000
+Updated on 2024-07-18 at 13:53:32 +0000

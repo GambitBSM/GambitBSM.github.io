@@ -14,16 +14,19 @@ description: "[No description available]"
 |                | Name           |
 | -------------- | -------------- |
 | [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) | **[BE_VARIABLE](/documentation/code/files/darksusy__mssm__6__4__0_8hpp/#function-be-variable)**(rdpars , DS_RDPARS , "rdpars_" , "rdpars" ) |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) nu_common_block | **[BE_VARIABLE](/documentation/code/files/darksusy__mssm__6__4__0_8hpp/#function-be-variable)**(ddmssmcom , DS_DDMSSMCOM , "ddmssmcom_" , "ddmssmcom" ) |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) rdlims | **[BE_VARIABLE](/documentation/code/files/darksusy__mssm__6__4__0_8hpp/#function-be-variable)**(rd20opt , DS_RD20OPT , "rd20opt_" , "rd20opt" ) |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) rdlims adm_com | **[BE_VARIABLE](/documentation/code/files/darksusy__mssm__6__4__0_8hpp/#function-be-variable)**(anbranch , DS_NUCOM , "anbranch_" , "nu_common_block" ) |
 
 ## Attributes
 
 |                | Name           |
 | -------------- | -------------- |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) | **[DS_NUCOM](/documentation/code/files/darksusy__mssm__6__4__0_8hpp/#variable-ds-nucom)**  |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) | **[anbranch_](/documentation/code/files/darksusy__mssm__6__4__0_8hpp/#variable-anbranch)**  |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) nu_common_block | **[DS_DSANCOANN](/documentation/code/files/darksusy__mssm__6__4__0_8hpp/#variable-ds-dsancoann)**  |
-| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) nu_common_block | **[dsancoann_](/documentation/code/files/darksusy__mssm__6__4__0_8hpp/#variable-dsancoann)**  |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) | **[DS_RDLIMS](/documentation/code/files/darksusy__mssm__6__4__0_8hpp/#variable-ds-rdlims)**  |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) | **[rdlims_](/documentation/code/files/darksusy__mssm__6__4__0_8hpp/#variable-rdlims)**  |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) rdlims | **[DS_ADM_COM](/documentation/code/files/darksusy__mssm__6__4__0_8hpp/#variable-ds-adm-com)**  |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) rdlims | **[adm_com_](/documentation/code/files/darksusy__mssm__6__4__0_8hpp/#variable-adm-com)**  |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) rdlims adm_com | **[DS_DDMSSMCOM](/documentation/code/files/darksusy__mssm__6__4__0_8hpp/#variable-ds-ddmssmcom)**  |
+| [LOAD_LIBRARY](/documentation/code/files/frontend__macros_8hpp/#define-load-library) rdlims adm_com | **[ddmssmcom_](/documentation/code/files/darksusy__mssm__6__4__0_8hpp/#variable-ddmssmcom)**  |
 
 ## Defines
 
@@ -74,11 +77,23 @@ LOAD_LIBRARY BE_VARIABLE(
 ### function BE_VARIABLE
 
 ```
-LOAD_LIBRARY nu_common_block BE_VARIABLE(
-    ddmssmcom ,
-    DS_DDMSSMCOM ,
-    "ddmssmcom_" ,
-    "ddmssmcom" 
+LOAD_LIBRARY rdlims BE_VARIABLE(
+    rd20opt ,
+    DS_RD20OPT ,
+    "rd20opt_" ,
+    "rd20opt" 
+)
+```
+
+
+### function BE_VARIABLE
+
+```
+LOAD_LIBRARY rdlims adm_com BE_VARIABLE(
+    anbranch ,
+    DS_NUCOM ,
+    "anbranch_" ,
+    "nu_common_block" 
 )
 ```
 
@@ -86,31 +101,45 @@ LOAD_LIBRARY nu_common_block BE_VARIABLE(
 
 ## Attributes Documentation
 
-### variable DS_NUCOM
+### variable DS_RDLIMS
 
 ```
-LOAD_LIBRARY DS_NUCOM;
-```
-
-
-### variable anbranch_
-
-```
-LOAD_LIBRARY anbranch_;
+LOAD_LIBRARY DS_RDLIMS;
 ```
 
 
-### variable DS_DSANCOANN
+### variable rdlims_
 
 ```
-LOAD_LIBRARY nu_common_block DS_DSANCOANN;
+LOAD_LIBRARY rdlims_;
 ```
 
 
-### variable dsancoann_
+### variable DS_ADM_COM
 
 ```
-LOAD_LIBRARY nu_common_block dsancoann_;
+LOAD_LIBRARY rdlims DS_ADM_COM;
+```
+
+
+### variable adm_com_
+
+```
+LOAD_LIBRARY rdlims adm_com_;
+```
+
+
+### variable DS_DDMSSMCOM
+
+```
+LOAD_LIBRARY rdlims adm_com DS_DDMSSMCOM;
+```
+
+
+### variable ddmssmcom_
+
+```
+LOAD_LIBRARY rdlims adm_com ddmssmcom_;
 ```
 
 
@@ -223,6 +252,9 @@ BE_FUNCTION(dsddgpgn, void, (Farray<Fcomplex16,1,27,1,2>&, int&), "dsddgpgn_", "
 
 // Common blocks in the DarkSUSY core library that are not identical for all DS6 versions
 BE_VARIABLE(rdpars, DS_RDPARS,     "rdpars_",    "rdpars")    // gRD Parameters
+BE_VARIABLE(rdlims, DS_RDLIMS,     "rdlims_",    "rdlims")    // new Boltzmann routines
+BE_VARIABLE(rd20opt, DS_RD20OPT,     "rd20opt_",    "rd20opt")  // new Boltzmann routines
+BE_VARIABLE(adm_com, DS_ADM_COM,     "adm_com_",    "adm_com")  // asymmetric DM
 // Common blocks in the MSSM module library
 BE_VARIABLE(smquarkmasses, DS_SMQUARKMASSES, "smquarkmasses_", "smquarkmasses")
 BE_VARIABLE(smcoupling, DS_SMCOUPLING, "smcoupling_", "smcoupling")
@@ -258,4 +290,4 @@ BE_INI_CONDITIONAL_DEPENDENCY(decay_rates, DecayTable, MSSM63atQ, CMSSM)
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:08 +0000
+Updated on 2024-07-18 at 13:53:35 +0000

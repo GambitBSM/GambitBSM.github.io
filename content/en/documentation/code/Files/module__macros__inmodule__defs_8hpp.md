@@ -414,7 +414,6 @@ Redirection of BACKEND_REQ(GROUP, REQUIREMENT, (TAGS), TYPE, [(ARGS)]) for decla
 #include "gambit/Elements/safety_bucket.hpp"
 #include "gambit/Elements/module_macros_common.hpp"
 #include "gambit/Utils/exceptions.hpp"
-#include "gambit/Elements/elements_extras.hpp"
 #include "gambit/Utils/util_macros.hpp"
 #include "gambit/Models/safe_param_map.hpp"
 
@@ -694,4 +693,4 @@ Redirection of BACKEND_REQ(GROUP, REQUIREMENT, (TAGS), TYPE, [(ARGS)]) for decla
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:06 +0000
+Updated on 2024-07-18 at 13:53:33 +0000

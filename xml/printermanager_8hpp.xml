@@ -9,8 +9,11 @@
     <includes refid="mpiwrapper_8hpp" local="yes">gambit/Utils/mpiwrapper.hpp</includes>
     <includedby refid="ScannerBit__standalone_8cpp" local="yes">ScannerBit_standalone.cpp</includedby>
     <includedby refid="SpecBit__MSSM_8cpp" local="yes">SpecBit_MSSM.cpp</includedby>
+    <includedby refid="exceptions_8cpp" local="yes">exceptions.cpp</includedby>
     <includedby refid="gambit_8hpp" local="yes">gambit.hpp</includedby>
+    <includedby refid="printer__utils_8hpp" local="yes">printer_utils.hpp</includedby>
     <includedby refid="printermanager_8cpp" local="yes">printermanager.cpp</includedby>
+    <includedby refid="standalone__module_8hpp" local="yes">standalone_module.hpp</includedby>
     <incdepgraph>
       <node id="38">
         <label>gambit/Logs/log_tags.hpp</label>
@@ -347,15 +350,59 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="4">
+      <node id="5">
         <label>gambit.hpp</label>
         <link refid="gambit_8hpp"/>
-        <childnode refid="5" relation="include">
+        <childnode refid="6" relation="include">
         </childnode>
       </node>
-      <node id="5">
+      <node id="6">
         <label>gambit.cpp</label>
         <link refid="gambit_8cpp"/>
+      </node>
+      <node id="12">
+        <label>DarkBit_standalone_MSSM.cpp</label>
+        <link refid="DarkBit__standalone__MSSM_8cpp"/>
+      </node>
+      <node id="13">
+        <label>DarkBit_standalone_ScalarSingletDM_Z2.cpp</label>
+        <link refid="DarkBit__standalone__ScalarSingletDM__Z2_8cpp"/>
+      </node>
+      <node id="14">
+        <label>DarkBit_standalone_WIMP.cpp</label>
+        <link refid="DarkBit__standalone__WIMP_8cpp"/>
+      </node>
+      <node id="8">
+        <label>RelicDensity.cpp</label>
+        <link refid="RelicDensity_8cpp"/>
+      </node>
+      <node id="11">
+        <label>3bithit.cpp</label>
+        <link refid="3bithit_8cpp"/>
+      </node>
+      <node id="10">
+        <label>standalone_module.hpp</label>
+        <link refid="standalone__module_8hpp"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>ExampleBit_A_standalone_example.cpp</label>
+        <link refid="ExampleBit__A__standalone__example_8cpp"/>
+      </node>
+      <node id="7">
+        <label>printer_utils.hpp</label>
+        <link refid="printer__utils_8hpp"/>
+        <childnode refid="8" relation="include">
+        </childnode>
       </node>
       <node id="1">
         <label>printermanager.hpp</label>
@@ -366,10 +413,16 @@
         </childnode>
         <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="6" relation="include">
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
         </childnode>
       </node>
-      <node id="6">
+      <node id="9">
         <label>printermanager.cpp</label>
         <link refid="printermanager_8cpp"/>
       </node>
@@ -380,6 +433,10 @@
       <node id="3">
         <label>SpecBit_MSSM.cpp</label>
         <link refid="SpecBit__MSSM_8cpp"/>
+      </node>
+      <node id="4">
+        <label>exceptions.cpp</label>
+        <link refid="exceptions_8cpp"/>
       </node>
     </invincdepgraph>
     <innerclass refid="classGambit_1_1Printers_1_1PrinterManager" prot="public">Gambit::Printers::PrinterManager</innerclass>
@@ -505,9 +562,10 @@
 <codeline lineno="103"><highlight class="normal"></highlight></codeline>
 <codeline lineno="104"><highlight class="normal"></highlight></codeline>
 <codeline lineno="105"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
-<codeline lineno="106"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="107"><highlight class="normal"></highlight></codeline>
-<codeline lineno="108"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//__printermanager_hpp__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//__printermanager_hpp__</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="Printers/include/gambit/Printers/printermanager.hpp"/>
   </compounddef>

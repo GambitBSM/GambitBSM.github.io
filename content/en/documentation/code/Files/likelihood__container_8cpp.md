@@ -147,15 +147,15 @@ namespace Gambit
     }
     // Set the list of valid return types of functions that can be used for 'purpose' by this container class.
     const std::vector<str> allowed_types_for_purpose = initVector<str>("double", "std::vector<double>", "float", "std::vector<float>");
-    
+
     // Set the ScanID
     set_scanID();
-    
+
     // Find subset of vertices that match requested purpose
     auto all_vertices = dependencyResolver.getObsLikeOrder();
     for (auto it = all_vertices.begin(); it != all_vertices.end(); ++it)
     {
-      if (dependencyResolver.getIniEntry(*it)->purpose == purpose)
+      if (dependencyResolver.getPurpose(*it) == purpose)
       {
         return_types[*it] = dependencyResolver.checkTypeMatch(*it, purpose, allowed_types_for_purpose);
         target_vertices.push_back(std::move(*it));
@@ -469,4 +469,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:07 +0000
+Updated on 2024-07-18 at 13:53:34 +0000

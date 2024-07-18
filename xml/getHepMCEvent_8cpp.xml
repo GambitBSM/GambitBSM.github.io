@@ -11,7 +11,7 @@
     <includes local="yes">HepMC3/GenParticle.h</includes>
     <includes local="yes">HepMC3/ReaderAscii.h</includes>
     <incdepgraph>
-      <node id="112">
+      <node id="111">
         <label>gambit/Backends/backend_info.hpp</label>
         <link refid="backend__info_8hpp"/>
         <childnode refid="11" relation="include">
@@ -23,53 +23,53 @@
         <childnode refid="63" relation="include">
         </childnode>
       </node>
-      <node id="111">
+      <node id="110">
         <label>gambit/Backends/backend_singleton.hpp</label>
         <link refid="backend__singleton_8hpp"/>
-        <childnode refid="112" relation="include">
+        <childnode refid="111" relation="include">
         </childnode>
       </node>
-      <node id="108">
+      <node id="107">
         <label>gambit/Backends/default_bossed_versions.hpp</label>
         <link refid="default__bossed__versions_8hpp"/>
       </node>
-      <node id="109">
+      <node id="108">
         <label>gambit/Backends/mathematica_variable.hpp</label>
         <link refid="mathematica__variable_8hpp"/>
-        <childnode refid="110" relation="include">
+        <childnode refid="109" relation="include">
         </childnode>
-        <childnode refid="111" relation="include">
+        <childnode refid="110" relation="include">
         </childnode>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="113" relation="include">
+        <childnode refid="112" relation="include">
         </childnode>
       </node>
-      <node id="115">
+      <node id="114">
         <label>gambit/Backends/python_helpers.hpp</label>
         <link refid="python__helpers_8hpp"/>
       </node>
-      <node id="114">
+      <node id="113">
         <label>gambit/Backends/python_variable.hpp</label>
         <link refid="python__variable_8hpp"/>
         <childnode refid="2" relation="include">
         </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
         <childnode refid="110" relation="include">
         </childnode>
-        <childnode refid="115" relation="include">
-        </childnode>
-        <childnode refid="111" relation="include">
-        </childnode>
       </node>
-      <node id="151">
+      <node id="156">
         <label>gambit/ColliderBit/ColliderBit_Higgs_rollcall.hpp</label>
         <link refid="ColliderBit__Higgs__rollcall_8hpp"/>
       </node>
-      <node id="152">
+      <node id="157">
         <label>gambit/ColliderBit/ColliderBit_LEP_rollcall.hpp</label>
         <link refid="ColliderBit__LEP__rollcall_8hpp"/>
       </node>
-      <node id="153">
+      <node id="158">
         <label>gambit/ColliderBit/ColliderBit_MC_rollcall.hpp</label>
         <link refid="ColliderBit__MC__rollcall_8hpp"/>
         <childnode refid="17" relation="include">
@@ -80,12 +80,12 @@
         <link refid="ColliderBit__eventloop_8hpp"/>
         <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="119" relation="include">
+        <childnode refid="118" relation="include">
         </childnode>
-        <childnode refid="156" relation="include">
+        <childnode refid="161" relation="include">
         </childnode>
       </node>
-      <node id="156">
+      <node id="161">
         <label>gambit/ColliderBit/ColliderBit_eventloop_utils.hpp</label>
         <link refid="ColliderBit__eventloop__utils_8hpp"/>
         <childnode refid="18" relation="include">
@@ -93,34 +93,36 @@
         <childnode refid="8" relation="include">
         </childnode>
       </node>
-      <node id="155">
+      <node id="160">
         <label>gambit/ColliderBit/ColliderBit_measurements_rollcall.hpp</label>
         <link refid="ColliderBit__measurements__rollcall_8hpp"/>
       </node>
-      <node id="119">
+      <node id="118">
         <label>gambit/ColliderBit/ColliderBit_rollcall.hpp</label>
         <link refid="ColliderBit__rollcall_8hpp"/>
-        <childnode refid="80" relation="include">
+        <childnode refid="79" relation="include">
         </childnode>
-        <childnode refid="120" relation="include">
+        <childnode refid="119" relation="include">
         </childnode>
-        <childnode refid="151" relation="include">
+        <childnode refid="156" relation="include">
         </childnode>
-        <childnode refid="152" relation="include">
+        <childnode refid="157" relation="include">
         </childnode>
-        <childnode refid="153" relation="include">
+        <childnode refid="158" relation="include">
         </childnode>
-        <childnode refid="154" relation="include">
+        <childnode refid="159" relation="include">
         </childnode>
-        <childnode refid="155" relation="include">
+        <childnode refid="160" relation="include">
         </childnode>
       </node>
-      <node id="120">
+      <node id="119">
         <label>gambit/ColliderBit/ColliderBit_types.hpp</label>
         <link refid="ColliderBit__types_8hpp"/>
         <childnode refid="13" relation="include">
         </childnode>
         <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="120" relation="include">
         </childnode>
         <childnode refid="121" relation="include">
         </childnode>
@@ -130,69 +132,87 @@
         </childnode>
         <childnode refid="124" relation="include">
         </childnode>
-        <childnode refid="125" relation="include">
-        </childnode>
-        <childnode refid="128" relation="include">
-        </childnode>
-        <childnode refid="129" relation="include">
-        </childnode>
         <childnode refid="134" relation="include">
         </childnode>
         <childnode refid="135" relation="include">
         </childnode>
-        <childnode refid="142" relation="include">
+        <childnode refid="139" relation="include">
         </childnode>
-        <childnode refid="143" relation="include">
+        <childnode refid="140" relation="include">
         </childnode>
         <childnode refid="147" relation="include">
         </childnode>
         <childnode refid="148" relation="include">
         </childnode>
-        <childnode refid="149" relation="include">
+        <childnode refid="152" relation="include">
         </childnode>
-        <childnode refid="150" relation="include">
+        <childnode refid="153" relation="include">
         </childnode>
-        <childnode refid="131" relation="include">
+        <childnode refid="154" relation="include">
+        </childnode>
+        <childnode refid="155" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
         </childnode>
       </node>
-      <node id="122">
+      <node id="121">
         <label>gambit/ColliderBit/MCLoopInfo.hpp</label>
         <link refid="MCLoopInfo_8hpp"/>
         <childnode refid="13" relation="include">
         </childnode>
         <childnode refid="17" relation="include">
         </childnode>
-        <childnode refid="123" relation="include">
+        <childnode refid="122" relation="include">
         </childnode>
       </node>
-      <node id="123">
+      <node id="122">
         <label>gambit/ColliderBit/MC_convergence.hpp</label>
         <link refid="MC__convergence_8hpp"/>
         <childnode refid="17" relation="include">
         </childnode>
       </node>
-      <node id="134">
+      <node id="126">
+        <label>gambit/ColliderBit/Utils.hpp</label>
+        <link refid="Utils_8hpp"/>
+        <childnode refid="127" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="128" relation="include">
+        </childnode>
+        <childnode refid="129" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
+        </childnode>
+        <childnode refid="131" relation="include">
+        </childnode>
+        <childnode refid="132" relation="include">
+        </childnode>
+      </node>
+      <node id="139">
         <label>gambit/ColliderBit/analyses/AnalysisContainer.hpp</label>
         <link refid="AnalysisContainer_8hpp"/>
         <childnode refid="18" relation="include">
         </childnode>
-        <childnode refid="79" relation="include">
+        <childnode refid="78" relation="include">
         </childnode>
         <childnode refid="13" relation="include">
         </childnode>
         <childnode refid="11" relation="include">
         </childnode>
-        <childnode refid="131" relation="include">
+        <childnode refid="130" relation="include">
         </childnode>
       </node>
-      <node id="135">
+      <node id="140">
         <label>gambit/ColliderBit/analyses/AnalysisData.hpp</label>
         <link refid="AnalysisData_8hpp"/>
-        <childnode refid="136" relation="include">
+        <childnode refid="141" relation="include">
         </childnode>
-        <childnode refid="137" relation="include">
+        <childnode refid="142" relation="include">
         </childnode>
-        <childnode refid="138" relation="include">
+        <childnode refid="143" relation="include">
         </childnode>
         <childnode refid="18" relation="include">
         </childnode>
@@ -206,20 +226,20 @@
         </childnode>
         <childnode refid="57" relation="include">
         </childnode>
-        <childnode refid="88" relation="include">
+        <childnode refid="87" relation="include">
         </childnode>
         <childnode refid="65" relation="include">
         </childnode>
         <childnode refid="21" relation="include">
         </childnode>
-        <childnode refid="139" relation="include">
+        <childnode refid="144" relation="include">
         </childnode>
         <childnode refid="16" relation="include">
         </childnode>
-        <childnode refid="140" relation="include">
+        <childnode refid="145" relation="include">
         </childnode>
       </node>
-      <node id="142">
+      <node id="147">
         <label>gambit/ColliderBit/analyses/AnalysisLogLikes.hpp</label>
         <link refid="AnalysisLogLikes_8hpp"/>
         <childnode refid="18" relation="include">
@@ -229,22 +249,22 @@
         <childnode refid="11" relation="include">
         </childnode>
       </node>
-      <node id="141">
+      <node id="146">
         <label>gambit/ColliderBit/analyses/EventCounter.hpp</label>
         <link refid="EventCounter_8hpp"/>
         <childnode refid="18" relation="include">
         </childnode>
-        <childnode refid="131" relation="include">
+        <childnode refid="130" relation="include">
         </childnode>
       </node>
-      <node id="140">
+      <node id="145">
         <label>gambit/ColliderBit/analyses/SignalRegionData.hpp</label>
         <link refid="SignalRegionData_8hpp"/>
-        <childnode refid="136" relation="include">
+        <childnode refid="141" relation="include">
         </childnode>
-        <childnode refid="137" relation="include">
+        <childnode refid="142" relation="include">
         </childnode>
-        <childnode refid="138" relation="include">
+        <childnode refid="143" relation="include">
         </childnode>
         <childnode refid="18" relation="include">
         </childnode>
@@ -258,96 +278,100 @@
         </childnode>
         <childnode refid="57" relation="include">
         </childnode>
-        <childnode refid="88" relation="include">
+        <childnode refid="87" relation="include">
         </childnode>
         <childnode refid="65" relation="include">
         </childnode>
         <childnode refid="21" relation="include">
         </childnode>
-        <childnode refid="139" relation="include">
+        <childnode refid="144" relation="include">
         </childnode>
         <childnode refid="16" relation="include">
         </childnode>
-        <childnode refid="141" relation="include">
+        <childnode refid="146" relation="include">
         </childnode>
       </node>
-      <node id="126">
+      <node id="125">
         <label>gambit/ColliderBit/colliders/BaseCollider.hpp</label>
         <link refid="BaseCollider_8hpp"/>
         <childnode refid="18" relation="include">
         </childnode>
         <childnode refid="13" relation="include">
         </childnode>
+        <childnode refid="126" relation="include">
+        </childnode>
       </node>
-      <node id="159">
+      <node id="164">
         <label>gambit/ColliderBit/colliders/EventConversionUtils.hpp</label>
         <link refid="EventConversionUtils_8hpp"/>
-        <childnode refid="160" relation="include">
+        <childnode refid="165" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
+        </childnode>
+        <childnode refid="137" relation="include">
         </childnode>
         <childnode refid="131" relation="include">
         </childnode>
-        <childnode refid="132" relation="include">
+        <childnode refid="167" relation="include">
         </childnode>
-        <childnode refid="162" relation="include">
+        <childnode refid="168" relation="include">
         </childnode>
-        <childnode refid="163" relation="include">
+        <childnode refid="169" relation="include">
         </childnode>
-        <childnode refid="164" relation="include">
-        </childnode>
-        <childnode refid="165" relation="include">
-        </childnode>
-        <childnode refid="166" relation="include">
+        <childnode refid="170" relation="include">
         </childnode>
       </node>
-      <node id="125">
+      <node id="124">
         <label>gambit/ColliderBit/colliders/Pythia8/Py8Collider.hpp</label>
         <link refid="Py8Collider_8hpp"/>
         <childnode refid="69" relation="include">
         </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
         <childnode refid="79" relation="include">
         </childnode>
-        <childnode refid="80" relation="include">
+        <childnode refid="125" relation="include">
         </childnode>
-        <childnode refid="126" relation="include">
+        <childnode refid="133" relation="include">
         </childnode>
-        <childnode refid="127" relation="include">
-        </childnode>
-        <childnode refid="84" relation="include">
+        <childnode refid="83" relation="include">
         </childnode>
       </node>
-      <node id="158">
+      <node id="163">
         <label>gambit/ColliderBit/colliders/Pythia8/Py8EventConversions.hpp</label>
         <link refid="Py8EventConversions_8hpp"/>
-        <childnode refid="159" relation="include">
+        <childnode refid="164" relation="include">
+        </childnode>
+        <childnode refid="125" relation="include">
         </childnode>
       </node>
-      <node id="160">
+      <node id="165">
         <label>gambit/ColliderBit/colliders/Pythia8/Py8Utils.hpp</label>
         <link refid="Py8Utils_8hpp"/>
+        <childnode refid="130" relation="include">
+        </childnode>
+        <childnode refid="166" relation="include">
+        </childnode>
         <childnode refid="131" relation="include">
         </childnode>
-        <childnode refid="161" relation="include">
-        </childnode>
-        <childnode refid="162" relation="include">
-        </childnode>
-        <childnode refid="163" relation="include">
+        <childnode refid="167" relation="include">
         </childnode>
       </node>
-      <node id="127">
+      <node id="133">
         <label>gambit/ColliderBit/colliders/Pythia8/SetHooksClass.hpp</label>
         <link refid="SetHooksClass_8hpp"/>
         <childnode refid="69" relation="include">
         </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
         <childnode refid="79" relation="include">
         </childnode>
-        <childnode refid="80" relation="include">
+        <childnode refid="125" relation="include">
         </childnode>
-        <childnode refid="126" relation="include">
-        </childnode>
-        <childnode refid="84" relation="include">
+        <childnode refid="83" relation="include">
         </childnode>
       </node>
-      <node id="130">
+      <node id="136">
         <label>gambit/ColliderBit/detectors/BaseDetector.hpp</label>
         <link refid="BaseDetector_8hpp"/>
         <childnode refid="18" relation="include">
@@ -358,37 +382,37 @@
         </childnode>
         <childnode refid="21" relation="include">
         </childnode>
-        <childnode refid="131" relation="include">
-        </childnode>
-        <childnode refid="80" relation="include">
-        </childnode>
-      </node>
-      <node id="129">
-        <label>gambit/ColliderBit/detectors/BuckFast.hpp</label>
-        <link refid="BuckFast_8hpp"/>
         <childnode refid="130" relation="include">
         </childnode>
-        <childnode refid="131" relation="include">
-        </childnode>
-        <childnode refid="132" relation="include">
-        </childnode>
-        <childnode refid="133" relation="include">
+        <childnode refid="79" relation="include">
         </childnode>
       </node>
-      <node id="143">
+      <node id="135">
+        <label>gambit/ColliderBit/detectors/BuckFast.hpp</label>
+        <link refid="BuckFast_8hpp"/>
+        <childnode refid="136" relation="include">
+        </childnode>
+        <childnode refid="130" relation="include">
+        </childnode>
+        <childnode refid="137" relation="include">
+        </childnode>
+        <childnode refid="138" relation="include">
+        </childnode>
+      </node>
+      <node id="148">
         <label>gambit/ColliderBit/limits/ALEPHSleptonLimits.hpp</label>
         <link refid="ALEPHSleptonLimits_8hpp_source"/>
-        <childnode refid="144" relation="include">
+        <childnode refid="149" relation="include">
         </childnode>
       </node>
-      <node id="144">
+      <node id="149">
         <label>gambit/ColliderBit/limits/BaseLimitContainer.hpp</label>
         <link refid="BaseLimitContainer_8hpp"/>
         <childnode refid="16" relation="include">
         </childnode>
         <childnode refid="57" relation="include">
         </childnode>
-        <childnode refid="145" relation="include">
+        <childnode refid="150" relation="include">
         </childnode>
         <childnode refid="47" relation="include">
         </childnode>
@@ -404,36 +428,36 @@
         </childnode>
         <childnode refid="13" relation="include">
         </childnode>
-        <childnode refid="80" relation="include">
+        <childnode refid="79" relation="include">
         </childnode>
-        <childnode refid="146" relation="include">
+        <childnode refid="151" relation="include">
         </childnode>
       </node>
-      <node id="147">
+      <node id="152">
         <label>gambit/ColliderBit/limits/L3GauginoLimits.hpp</label>
         <link refid="L3GauginoLimits_8hpp_source"/>
-        <childnode refid="144" relation="include">
+        <childnode refid="149" relation="include">
         </childnode>
       </node>
-      <node id="148">
+      <node id="153">
         <label>gambit/ColliderBit/limits/L3SleptonLimits.hpp</label>
         <link refid="L3SleptonLimits_8hpp_source"/>
-        <childnode refid="144" relation="include">
+        <childnode refid="149" relation="include">
         </childnode>
       </node>
-      <node id="150">
+      <node id="155">
         <label>gambit/ColliderBit/limits/OPALDegenerateCharginoLimits.hpp</label>
         <link refid="OPALDegenerateCharginoLimits_8hpp_source"/>
-        <childnode refid="144" relation="include">
+        <childnode refid="149" relation="include">
         </childnode>
       </node>
-      <node id="149">
+      <node id="154">
         <label>gambit/ColliderBit/limits/OPALGauginoLimits.hpp</label>
         <link refid="OPALGauginoLimits_8hpp_source"/>
-        <childnode refid="144" relation="include">
+        <childnode refid="149" relation="include">
         </childnode>
       </node>
-      <node id="146">
+      <node id="151">
         <label>gambit/ColliderBit/limits/PointsAndLines.hpp</label>
         <link refid="PointsAndLines_8hpp_source"/>
         <childnode refid="57" relation="include">
@@ -445,7 +469,11 @@
         <childnode refid="65" relation="include">
         </childnode>
       </node>
-      <node id="124">
+      <node id="132">
+        <label>gambit/ColliderBit/mt2_bisect.h</label>
+        <link refid="mt2__bisect_8h_source"/>
+      </node>
+      <node id="123">
         <label>gambit/ColliderBit/xsec.hpp</label>
         <link refid="xsec_8hpp"/>
         <childnode refid="13" relation="include">
@@ -454,7 +482,7 @@
         </childnode>
         <childnode refid="18" relation="include">
         </childnode>
-        <childnode refid="121" relation="include">
+        <childnode refid="120" relation="include">
         </childnode>
       </node>
       <node id="1">
@@ -466,18 +494,18 @@
         </childnode>
         <childnode refid="56" relation="include">
         </childnode>
-        <childnode refid="157" relation="include">
+        <childnode refid="162" relation="include">
         </childnode>
-        <childnode refid="158" relation="include">
+        <childnode refid="163" relation="include">
         </childnode>
-        <childnode refid="164" relation="include">
+        <childnode refid="168" relation="include">
         </childnode>
-        <childnode refid="165" relation="include">
+        <childnode refid="169" relation="include">
         </childnode>
-        <childnode refid="167" relation="include">
+        <childnode refid="171" relation="include">
         </childnode>
       </node>
-      <node id="100">
+      <node id="99">
         <label>gambit/Elements/daFunk.hpp</label>
         <link refid="daFunk_8hpp_source"/>
         <childnode refid="8" relation="include">
@@ -492,7 +520,9 @@
         </childnode>
         <childnode refid="57" relation="include">
         </childnode>
-        <childnode refid="79" relation="include">
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="100" relation="include">
         </childnode>
         <childnode refid="101" relation="include">
         </childnode>
@@ -502,10 +532,8 @@
         </childnode>
         <childnode refid="104" relation="include">
         </childnode>
-        <childnode refid="105" relation="include">
-        </childnode>
       </node>
-      <node id="94">
+      <node id="93">
         <label>gambit/Elements/decay_table.hpp</label>
         <link refid="decay__table_8hpp"/>
         <childnode refid="11" relation="include">
@@ -516,18 +544,18 @@
         </childnode>
         <childnode refid="15" relation="include">
         </childnode>
-        <childnode refid="90" relation="include">
+        <childnode refid="89" relation="include">
         </childnode>
-        <childnode refid="95" relation="include">
+        <childnode refid="94" relation="include">
         </childnode>
         <childnode refid="17" relation="include">
         </childnode>
         <childnode refid="22" relation="include">
         </childnode>
-        <childnode refid="93" relation="include">
+        <childnode refid="92" relation="include">
         </childnode>
       </node>
-      <node id="107">
+      <node id="106">
         <label>gambit/Elements/flav_prediction.hpp</label>
         <link refid="flav__prediction_8hpp"/>
         <childnode refid="18" relation="include">
@@ -570,20 +598,20 @@
         <link refid="gambit__module__headers_8hpp"/>
         <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="80" relation="include">
+        <childnode refid="79" relation="include">
         </childnode>
         <childnode refid="17" relation="include">
         </childnode>
         <childnode refid="56" relation="include">
         </childnode>
-        <childnode refid="117" relation="include">
+        <childnode refid="116" relation="include">
         </childnode>
         <childnode refid="67" relation="include">
         </childnode>
-        <childnode refid="111" relation="include">
+        <childnode refid="110" relation="include">
         </childnode>
       </node>
-      <node id="99">
+      <node id="98">
         <label>gambit/Elements/halo_types.hpp</label>
         <link refid="halo__types_8hpp"/>
         <childnode refid="11" relation="include">
@@ -594,20 +622,20 @@
         </childnode>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="100" relation="include">
+        <childnode refid="99" relation="include">
         </childnode>
         <childnode refid="17" relation="include">
         </childnode>
       </node>
-      <node id="98">
+      <node id="97">
         <label>gambit/Elements/higgs_couplings_table.hpp</label>
         <link refid="higgs__couplings__table_8hpp"/>
         <childnode refid="17" relation="include">
         </childnode>
-        <childnode refid="94" relation="include">
+        <childnode refid="93" relation="include">
         </childnode>
       </node>
-      <node id="110">
+      <node id="109">
         <label>gambit/Elements/ini_catch.hpp</label>
         <link refid="ini__catch_8hpp"/>
         <childnode refid="43" relation="include">
@@ -646,16 +674,14 @@
         </childnode>
         <childnode refid="42" relation="include">
         </childnode>
-        <childnode refid="77" relation="include">
-        </childnode>
         <childnode refid="23" relation="include">
         </childnode>
-        <childnode refid="78" relation="include">
+        <childnode refid="77" relation="include">
         </childnode>
         <childnode refid="13" relation="include">
         </childnode>
       </node>
-      <node id="95">
+      <node id="94">
         <label>gambit/Elements/mssm_slhahelp.hpp</label>
         <link refid="mssm__slhahelp_8hpp"/>
         <childnode refid="8" relation="include">
@@ -668,15 +694,15 @@
         </childnode>
         <childnode refid="13" relation="include">
         </childnode>
-        <childnode refid="96" relation="include">
+        <childnode refid="95" relation="include">
         </childnode>
-        <childnode refid="97" relation="include">
+        <childnode refid="96" relation="include">
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
-        <childnode refid="87" relation="include">
-        </childnode>
         <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
         </childnode>
         <childnode refid="17" relation="include">
         </childnode>
@@ -695,69 +721,69 @@
         <childnode refid="22" relation="include">
         </childnode>
       </node>
-      <node id="80">
+      <node id="79">
         <label>gambit/Elements/shared_types.hpp</label>
         <link refid="shared__types_8hpp"/>
         <childnode refid="17" relation="include">
         </childnode>
         <childnode refid="66" relation="include">
         </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
         <childnode refid="81" relation="include">
         </childnode>
-        <childnode refid="82" relation="include">
+        <childnode refid="85" relation="include">
         </childnode>
-        <childnode refid="86" relation="include">
+        <childnode refid="93" relation="include">
         </childnode>
-        <childnode refid="94" relation="include">
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
         </childnode>
         <childnode refid="98" relation="include">
         </childnode>
-        <childnode refid="90" relation="include">
-        </childnode>
-        <childnode refid="99" relation="include">
+        <childnode refid="105" relation="include">
         </childnode>
         <childnode refid="106" relation="include">
         </childnode>
-        <childnode refid="107" relation="include">
+        <childnode refid="91" relation="include">
         </childnode>
-        <childnode refid="92" relation="include">
+        <childnode refid="107" relation="include">
         </childnode>
         <childnode refid="108" relation="include">
         </childnode>
-        <childnode refid="109" relation="include">
+        <childnode refid="113" relation="include">
         </childnode>
-        <childnode refid="114" relation="include">
-        </childnode>
-        <childnode refid="116" relation="include">
+        <childnode refid="115" relation="include">
         </childnode>
       </node>
-      <node id="90">
+      <node id="89">
         <label>gambit/Elements/slhaea_spec_helpers.hpp</label>
         <link refid="slhaea__spec__helpers_8hpp"/>
         <childnode refid="22" relation="include">
         </childnode>
         <childnode refid="17" relation="include">
         </childnode>
-        <childnode refid="83" relation="include">
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
         </childnode>
         <childnode refid="91" relation="include">
         </childnode>
-        <childnode refid="92" relation="include">
+        <childnode refid="83" relation="include">
         </childnode>
         <childnode refid="84" relation="include">
         </childnode>
-        <childnode refid="85" relation="include">
-        </childnode>
       </node>
-      <node id="82">
+      <node id="81">
         <label>gambit/Elements/sminputs.hpp</label>
         <link refid="sminputs_8hpp"/>
-        <childnode refid="83" relation="include">
+        <childnode refid="82" relation="include">
         </childnode>
-        <childnode refid="81" relation="include">
+        <childnode refid="80" relation="include">
         </childnode>
       </node>
-      <node id="86">
+      <node id="85">
         <label>gambit/Elements/spectrum.hpp</label>
         <link refid="spectrum_8hpp"/>
         <childnode refid="20" relation="include">
@@ -766,18 +792,18 @@
         </childnode>
         <childnode refid="61" relation="include">
         </childnode>
-        <childnode refid="82" relation="include">
+        <childnode refid="81" relation="include">
         </childnode>
-        <childnode refid="87" relation="include">
+        <childnode refid="86" relation="include">
         </childnode>
-        <childnode refid="90" relation="include">
+        <childnode refid="89" relation="include">
         </childnode>
-        <childnode refid="93" relation="include">
+        <childnode refid="92" relation="include">
         </childnode>
-        <childnode refid="78" relation="include">
+        <childnode refid="77" relation="include">
         </childnode>
       </node>
-      <node id="91">
+      <node id="90">
         <label>gambit/Elements/spectrum_helpers.hpp</label>
         <link refid="spectrum__helpers_8hpp"/>
         <childnode refid="18" relation="include">
@@ -789,33 +815,33 @@
         <childnode refid="11" relation="include">
         </childnode>
       </node>
-      <node id="87">
+      <node id="86">
         <label>gambit/Elements/subspectrum.hpp</label>
         <link refid="subspectrum_8hpp"/>
         <childnode refid="11" relation="include">
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
-        <childnode refid="88" relation="include">
+        <childnode refid="87" relation="include">
         </childnode>
         <childnode refid="15" relation="include">
         </childnode>
         <childnode refid="30" relation="include">
         </childnode>
-        <childnode refid="89" relation="include">
+        <childnode refid="88" relation="include">
         </childnode>
         <childnode refid="22" relation="include">
         </childnode>
         <childnode refid="56" relation="include">
         </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
         <childnode refid="90" relation="include">
         </childnode>
-        <childnode refid="91" relation="include">
-        </childnode>
-        <childnode refid="93" relation="include">
+        <childnode refid="92" relation="include">
         </childnode>
       </node>
-      <node id="106">
+      <node id="105">
         <label>gambit/Elements/wimp_types.hpp</label>
         <link refid="wimp__types_8hpp"/>
         <childnode refid="18" relation="include">
@@ -869,15 +895,15 @@
         <childnode refid="45" relation="include">
         </childnode>
       </node>
-      <node id="92">
+      <node id="91">
         <label>gambit/Models/SpectrumContents/subspectrum_contents.hpp</label>
         <link refid="subspectrum__contents_8hpp"/>
-        <childnode refid="91" relation="include">
+        <childnode refid="90" relation="include">
         </childnode>
         <childnode refid="46" relation="include">
         </childnode>
       </node>
-      <node id="93">
+      <node id="92">
         <label>gambit/Models/partmap.hpp</label>
         <link refid="partmap_8hpp"/>
         <childnode refid="11" relation="include">
@@ -885,7 +911,7 @@
         <childnode refid="17" relation="include">
         </childnode>
       </node>
-      <node id="78">
+      <node id="77">
         <label>gambit/Models/safe_param_map.hpp</label>
         <link refid="safe__param__map_8hpp"/>
         <childnode refid="22" relation="include">
@@ -894,10 +920,10 @@
         </childnode>
         <childnode refid="18" relation="include">
         </childnode>
-        <childnode refid="79" relation="include">
+        <childnode refid="78" relation="include">
         </childnode>
       </node>
-      <node id="121">
+      <node id="120">
         <label>gambit/Utils/PID_pair.hpp</label>
         <link refid="PID__pair_8hpp"/>
         <childnode refid="44" relation="include">
@@ -905,7 +931,7 @@
         <childnode refid="18" relation="include">
         </childnode>
       </node>
-      <node id="136">
+      <node id="141">
         <label>gambit/Utils/begin_ignore_warnings_eigen.hpp</label>
         <link refid="begin__ignore__warnings__eigen_8hpp"/>
         <childnode refid="2" relation="include">
@@ -927,7 +953,7 @@
         <label>gambit/Utils/cats.hpp</label>
         <link refid="Utils_2include_2gambit_2Utils_2cats_8hpp"/>
       </node>
-      <node id="138">
+      <node id="143">
         <label>gambit/Utils/end_ignore_warnings.hpp</label>
         <link refid="end__ignore__warnings_8hpp"/>
       </node>
@@ -977,26 +1003,26 @@
         <childnode refid="34" relation="include">
         </childnode>
       </node>
-      <node id="81">
+      <node id="80">
         <label>gambit/Utils/numerical_constants.hpp</label>
         <link refid="numerical__constants_8hpp"/>
         <childnode refid="57" relation="include">
         </childnode>
       </node>
-      <node id="89">
+      <node id="88">
         <label>gambit/Utils/safebool.hpp</label>
         <link refid="safebool_8hpp"/>
       </node>
-      <node id="83">
+      <node id="82">
         <label>gambit/Utils/slhaea_helpers.hpp</label>
         <link refid="slhaea__helpers_8hpp"/>
         <childnode refid="22" relation="include">
         </childnode>
         <childnode refid="17" relation="include">
         </childnode>
-        <childnode refid="84" relation="include">
+        <childnode refid="83" relation="include">
         </childnode>
-        <childnode refid="85" relation="include">
+        <childnode refid="84" relation="include">
         </childnode>
       </node>
       <node id="22">
@@ -1025,10 +1051,10 @@
         <label>gambit/Utils/stringify.hpp</label>
         <link refid="stringify_8hpp"/>
       </node>
-      <node id="117">
+      <node id="116">
         <label>gambit/Utils/threadsafe_rng.hpp</label>
         <link refid="threadsafe__rng_8hpp"/>
-        <childnode refid="118" relation="include">
+        <childnode refid="117" relation="include">
         </childnode>
         <childnode refid="23" relation="include">
         </childnode>
@@ -1183,43 +1209,49 @@
         <childnode refid="63" relation="include">
         </childnode>
       </node>
-      <node id="137">
+      <node id="142">
         <label>Eigen/Core</label>
       </node>
-      <node id="131">
+      <node id="129">
+        <label>HEPUtils/BinnedFn.h</label>
+      </node>
+      <node id="130">
         <label>HEPUtils/Event.h</label>
       </node>
-      <node id="162">
+      <node id="131">
         <label>HEPUtils/FastJet.h</label>
       </node>
-      <node id="133">
+      <node id="138">
         <label>HEPUtils/Jet.h</label>
       </node>
-      <node id="132">
+      <node id="128">
+        <label>HEPUtils/MathUtils.h</label>
+      </node>
+      <node id="137">
         <label>HEPUtils/Particle.h</label>
       </node>
-      <node id="161">
+      <node id="166">
         <label>HEPUtils/Vectors.h</label>
       </node>
-      <node id="164">
+      <node id="168">
         <label>HepMC3/GenEvent.h</label>
       </node>
-      <node id="165">
+      <node id="169">
         <label>HepMC3/GenParticle.h</label>
       </node>
-      <node id="167">
+      <node id="171">
         <label>HepMC3/ReaderAscii.h</label>
       </node>
-      <node id="157">
+      <node id="162">
         <label>HepMC3/ReaderAsciiHepMC2.h</label>
       </node>
-      <node id="166">
+      <node id="170">
         <label>MCUtils/HepMCVectors.h</label>
       </node>
-      <node id="163">
+      <node id="167">
         <label>MCUtils/PIDUtils.h</label>
       </node>
-      <node id="84">
+      <node id="83">
         <label>SLHAea/slhaea.h</label>
       </node>
       <node id="16">
@@ -1228,13 +1260,13 @@
       <node id="55">
         <label>array</label>
       </node>
-      <node id="101">
+      <node id="100">
         <label>assert.h</label>
       </node>
       <node id="59">
         <label>boost/algorithm/string/classification.hpp</label>
       </node>
-      <node id="113">
+      <node id="112">
         <label>boost/algorithm/string/replace.hpp</label>
       </node>
       <node id="58">
@@ -1246,7 +1278,7 @@
       <node id="28">
         <label>boost/detail/workaround.hpp</label>
       </node>
-      <node id="103">
+      <node id="102">
         <label>boost/enable_shared_from_this.hpp</label>
       </node>
       <node id="39">
@@ -1291,10 +1323,10 @@
       <node id="76">
         <label>boost/preprocessor/tuple/to_seq.hpp</label>
       </node>
-      <node id="85">
+      <node id="84">
         <label>boost/serialization/strong_typedef.hpp</label>
       </node>
-      <node id="102">
+      <node id="101">
         <label>boost/shared_ptr.hpp</label>
       </node>
       <node id="26">
@@ -1303,7 +1335,7 @@
       <node id="49">
         <label>cassert</label>
       </node>
-      <node id="88">
+      <node id="87">
         <label>cfloat</label>
       </node>
       <node id="14">
@@ -1315,7 +1347,7 @@
       <node id="20">
         <label>complex</label>
       </node>
-      <node id="145">
+      <node id="150">
         <label>cstdlib</label>
       </node>
       <node id="19">
@@ -1333,28 +1365,28 @@
       <node id="47">
         <label>fstream</label>
       </node>
-      <node id="116">
+      <node id="127">
+        <label>functional</label>
+      </node>
+      <node id="115">
         <label>gambit/Backends/backend_types_rollcall.hpp</label>
       </node>
-      <node id="154">
+      <node id="159">
         <label>gambit/ColliderBit/ColliderBit_models_rollcall.hpp</label>
       </node>
-      <node id="128">
+      <node id="134">
         <label>gambit/ColliderBit/colliders/Pythia8/Py8Collider_typedefs.hpp</label>
-      </node>
-      <node id="77">
-        <label>gambit/Elements/elements_extras.hpp</label>
       </node>
       <node id="2">
         <label>gambit/cmake/cmake_variables.hpp</label>
       </node>
-      <node id="105">
+      <node id="104">
         <label>gsl/gsl_errno.h</label>
       </node>
-      <node id="104">
+      <node id="103">
         <label>gsl/gsl_integration.h</label>
       </node>
-      <node id="139">
+      <node id="144">
         <label>iomanip</label>
       </node>
       <node id="8">
@@ -1381,7 +1413,7 @@
       <node id="69">
         <label>ostream</label>
       </node>
-      <node id="118">
+      <node id="117">
         <label>random</label>
       </node>
       <node id="12">
@@ -1390,13 +1422,13 @@
       <node id="15">
         <label>sstream</label>
       </node>
-      <node id="79">
+      <node id="78">
         <label>stdexcept</label>
       </node>
-      <node id="96">
+      <node id="95">
         <label>stdio.h</label>
       </node>
-      <node id="97">
+      <node id="96">
         <label>stdlib.h</label>
       </node>
       <node id="18">
@@ -1669,58 +1701,100 @@
 <codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="getHepMCEvent_8cpp_1af379e422bb40e5cdaddfd91c6f22f4b7" kindref="member">readHepMCEvent</ref>(result,<sp/>HepMC_filename,<sp/>*Dep::RunMC,<sp/>*Loop::iteration,<sp/>Loop::halt);</highlight></codeline>
 <codeline lineno="190"><highlight class="normal"></highlight></codeline>
 <codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="192"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="193"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>A<sp/>nested<sp/>function<sp/>that<sp/>reads<sp/>in<sp/>HepMC<sp/>event<sp/>files<sp/>and<sp/>converts<sp/>them<sp/>to<sp/>HEPUtils::Event<sp/>format</highlight></codeline>
-<codeline lineno="194"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="getHepMCEvent_8cpp_1a95b05317617fc07a0a574061b6873b1d" kindref="member">getHepMCEvent_HEPUtils</ref>(HEPUtils::Event<sp/>&amp;result)</highlight></codeline>
-<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">Pipes::getHepMCEvent_HEPUtils;</highlight></codeline>
-<codeline lineno="197"><highlight class="normal"></highlight></codeline>
-<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Get<sp/>yaml<sp/>options</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>HepMC_filename<sp/>=<sp/>runOptions-&gt;getValueOrDef&lt;<ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&gt;(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;hepmc_filename&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>antiktR<sp/>=<sp/>runOptions-&gt;getValueOrDef&lt;</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&gt;(0.4,<sp/></highlight><highlight class="stringliteral">&quot;antiktR&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>jet_pt_min<sp/>=<sp/>runOptions-&gt;getValueOrDef&lt;</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&gt;(10.0,<sp/></highlight><highlight class="stringliteral">&quot;jet_pt_min&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="202"><highlight class="normal"></highlight></codeline>
-<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Get<sp/>the<sp/>HepMC<sp/>event</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//HepMC3::GenEvent<sp/>ge<sp/>=<sp/>*Dep::HardScatteringEvent;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>HepMC3::GenEvent<sp/>ge;</highlight></codeline>
-<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="getHepMCEvent_8cpp_1af379e422bb40e5cdaddfd91c6f22f4b7" kindref="member">readHepMCEvent</ref>(ge,<sp/>HepMC_filename,<sp/>*Dep::RunMC,<sp/>*Loop::iteration,<sp/>Loop::halt);</highlight></codeline>
-<codeline lineno="207"><highlight class="normal"></highlight></codeline>
-<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//We<sp/>need<sp/>to<sp/>not<sp/>do<sp/>anything<sp/>else<sp/>on<sp/>special<sp/>iterations,<sp/>where<sp/>an<sp/>event<sp/>has<sp/>not<sp/>actually<sp/>been<sp/>extracted:</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(*Loop::iteration<sp/>&lt;<sp/>0)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="210"><highlight class="normal"></highlight></codeline>
-<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Set<sp/>the<sp/>weight</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result.set_weight(ge.weight());</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="194"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>A<sp/>helper<sp/>function<sp/>for<sp/>collecting<sp/>the<sp/>jet_collections<sp/>yaml<sp/>settings.<sp/></highlight></codeline>
+<codeline lineno="195"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Used<sp/>by<sp/>functions<sp/>getHepMCEvent_HEPUtils<sp/>and<sp/>convertHepMCEvent_HEPUtils.</highlight></codeline>
+<codeline lineno="196"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="getHepMCEvent_8cpp_1a0e22bc0e2cbc14bf0c0c2d9891e19f7d" kindref="member">read_jet_collections_settings</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Options&amp;<sp/>runOptions,<sp/>std::vector&lt;jet_collection_settings&gt;&amp;<sp/>all_jet_collection_settings,<sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;<sp/>jetcollection_taus)</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(runOptions.hasKey(</highlight><highlight class="stringliteral">&quot;jet_collections&quot;</highlight><highlight class="normal">))</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>YAML::Node<sp/>all_jetcollections_node<sp/>=<sp/>runOptions.getValue&lt;YAML::Node&gt;(</highlight><highlight class="stringliteral">&quot;jet_collections&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Options<sp/>all_jetcollection_options(all_jetcollections_node);</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;str&gt;<sp/>jetcollection_names<sp/>=<sp/>all_jetcollection_options.getNames();</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>key<sp/>:<sp/>jetcollection_names)</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>YAML::Node<sp/>current_jc_node<sp/>=<sp/>all_jetcollection_options.getValue&lt;YAML::Node&gt;(key);</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Options<sp/>current_jc_options(current_jc_node);</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"></highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>algorithm<sp/>=<sp/>current_jc_options.getValue&lt;<ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&gt;(</highlight><highlight class="stringliteral">&quot;algorithm&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>R<sp/>=<sp/>current_jc_options.getValue&lt;</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&gt;(</highlight><highlight class="stringliteral">&quot;R&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>recombination_scheme<sp/>=<sp/>current_jc_options.getValue&lt;<ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&gt;(</highlight><highlight class="stringliteral">&quot;recombination_scheme&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>strategy<sp/>=<sp/>current_jc_options.getValue&lt;<ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&gt;(</highlight><highlight class="stringliteral">&quot;strategy&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="213"><highlight class="normal"></highlight></codeline>
-<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Translate<sp/>to<sp/>HEPUtils<sp/>event<sp/>by<sp/>calling<sp/>the<sp/>unified<sp/>HEPMC/Pythia<sp/>event<sp/>converter:</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="Py8EventConversions_8hpp_1ab50b344a3140f50cdc0b43f1437274de" kindref="member">Gambit::ColliderBit::convertParticleEvent</ref>(ge.particles(),<sp/>result,<sp/>antiktR,<sp/>jet_pt_min);</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>all_jet_collection_settings.push_back({key,<sp/>algorithm,<sp/>R,<sp/>recombination_scheme,<sp/>strategy});</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="216"><highlight class="normal"></highlight></codeline>
-<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="218"><highlight class="normal"></highlight></codeline>
-<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>convertHepMCEvent_HEPUtils(HEPUtils::Event<sp/>&amp;result)</highlight></codeline>
-<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">Pipes::convertHepMCEvent_HEPUtils;</highlight></codeline>
-<codeline lineno="222"><highlight class="normal"></highlight></codeline>
-<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Don&apos;t<sp/>do<sp/>anything<sp/>on<sp/>special<sp/>iterations:<sp/>you&apos;ll<sp/>just<sp/>end<sp/>up<sp/>dereferencing<sp/>a<sp/>nullptr</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(*Loop::iteration<sp/>&lt;<sp/>0)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="225"><highlight class="normal"></highlight></codeline>
-<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//HepMC<sp/>Event<sp/>should<sp/>just<sp/>be<sp/>sitting<sp/>waiting<sp/>for<sp/>us.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>HepMC3::GenEvent<sp/>ge<sp/>=<sp/>*Dep::HardScatteringEvent;</highlight></codeline>
-<codeline lineno="228"><highlight class="normal"></highlight></codeline>
-<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Get<sp/>yaml<sp/>options<sp/>required<sp/>for<sp/>conversion</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>antiktR<sp/>=<sp/>runOptions-&gt;getValueOrDef&lt;</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&gt;(0.4,<sp/></highlight><highlight class="stringliteral">&quot;antiktR&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>jet_pt_min<sp/>=<sp/>runOptions-&gt;getValueOrDef&lt;</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&gt;(10.0,<sp/></highlight><highlight class="stringliteral">&quot;jet_pt_min&quot;</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="232"><highlight class="normal"></highlight></codeline>
-<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Set<sp/>the<sp/>weight</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result.set_weight(ge.weight());</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>jetcollection_taus<sp/>=<sp/>runOptions.getValue&lt;<ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&gt;(</highlight><highlight class="stringliteral">&quot;jet_collection_taus&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Throw<sp/>an<sp/>error<sp/>if<sp/>the<sp/>&quot;jet_collection_taus&quot;<sp/>setting<sp/>does<sp/>not<sp/>match<sp/>an<sp/>entry<sp/>in<sp/>&quot;jet_collections&quot;.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(std::find(jetcollection_names.begin(),<sp/>jetcollection_names.end(),<sp/>jetcollection_taus)<sp/>==<sp/>jetcollection_names.end())</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ColliderBit_error().raise(LOCAL_INFO,</highlight><highlight class="stringliteral">&quot;Please<sp/>provide<sp/>the<sp/>jet_collection_taus<sp/>setting<sp/>for<sp/>jet<sp/>collections.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ColliderBit_error().raise(LOCAL_INFO,</highlight><highlight class="stringliteral">&quot;Could<sp/>not<sp/>find<sp/>jet_collections<sp/>options.<sp/>Please<sp/>provide<sp/>this<sp/>in<sp/>the<sp/>YAML<sp/>file.&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="231"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>A<sp/>nested<sp/>function<sp/>that<sp/>reads<sp/>in<sp/>HepMC<sp/>event<sp/>files<sp/>and<sp/>converts<sp/>them<sp/>to<sp/>HEPUtils::Event<sp/>format</highlight></codeline>
+<codeline lineno="232"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="getHepMCEvent_8cpp_1a95b05317617fc07a0a574061b6873b1d" kindref="member">getHepMCEvent_HEPUtils</ref>(HEPUtils::Event<sp/>&amp;result)</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">Pipes::getHepMCEvent_HEPUtils;</highlight></codeline>
 <codeline lineno="235"><highlight class="normal"></highlight></codeline>
-<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Translate<sp/>to<sp/>HEPUtils<sp/>event<sp/>by<sp/>calling<sp/>the<sp/>unified<sp/>HEPMC/Pythia<sp/>event<sp/>converter:</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="Py8EventConversions_8hpp_1ab50b344a3140f50cdc0b43f1437274de" kindref="member">Gambit::ColliderBit::convertParticleEvent</ref>(ge.particles(),<sp/>result,<sp/>antiktR,<sp/>jet_pt_min);</highlight></codeline>
-<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="239"><highlight class="normal"></highlight></codeline>
-<codeline lineno="240"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
-<codeline lineno="241"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Get<sp/>yaml<sp/>options</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>HepMC_filename<sp/>=<sp/>runOptions-&gt;getValueOrDef&lt;<ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&gt;(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;hepmc_filename&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>jet_pt_min<sp/>=<sp/>runOptions-&gt;getValueOrDef&lt;</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&gt;(10.0,<sp/></highlight><highlight class="stringliteral">&quot;jet_pt_min&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;jet_collection_settings&gt;<sp/>all_jet_collection_settings<sp/>=<sp/>{};</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>jetcollection_taus;</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="getHepMCEvent_8cpp_1a0e22bc0e2cbc14bf0c0c2d9891e19f7d" kindref="member">read_jet_collections_settings</ref>(*runOptions,<sp/>all_jet_collection_settings,<sp/>jetcollection_taus);</highlight></codeline>
 <codeline lineno="242"><highlight class="normal"></highlight></codeline>
-<codeline lineno="243"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Get<sp/>the<sp/>HepMC<sp/>event</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//HepMC3::GenEvent<sp/>ge<sp/>=<sp/>*Dep::HardScatteringEvent;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>HepMC3::GenEvent<sp/>ge;</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="getHepMCEvent_8cpp_1af379e422bb40e5cdaddfd91c6f22f4b7" kindref="member">readHepMCEvent</ref>(ge,<sp/>HepMC_filename,<sp/>*Dep::RunMC,<sp/>*Loop::iteration,<sp/>Loop::halt);</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//We<sp/>need<sp/>to<sp/>not<sp/>do<sp/>anything<sp/>else<sp/>on<sp/>special<sp/>iterations,<sp/>where<sp/>an<sp/>event<sp/>has<sp/>not<sp/>actually<sp/>been<sp/>extracted:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(*Loop::iteration<sp/>&lt;<sp/>0)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Set<sp/>the<sp/>weight</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result.set_weight(ge.weight());</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Translate<sp/>to<sp/>HEPUtils<sp/>event<sp/>by<sp/>calling<sp/>the<sp/>unified<sp/>HEPMC/Pythia<sp/>event<sp/>converter:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="Py8EventConversions_8hpp_1a2b9cce4a882770abb43677d71385276f" kindref="member">Gambit::ColliderBit::convertParticleEvent</ref>(ge.particles(),<sp/>result,<sp/>all_jet_collection_settings,<sp/>jetcollection_taus,<sp/>jet_pt_min);</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>convertHepMCEvent_HEPUtils(HEPUtils::Event<sp/>&amp;result)</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">Pipes::convertHepMCEvent_HEPUtils;</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Don&apos;t<sp/>do<sp/>anything<sp/>on<sp/>special<sp/>iterations:<sp/>you&apos;ll<sp/>just<sp/>end<sp/>up<sp/>dereferencing<sp/>a<sp/>nullptr</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(*Loop::iteration<sp/>&lt;<sp/>0)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"></highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//HepMC<sp/>Event<sp/>should<sp/>just<sp/>be<sp/>sitting<sp/>waiting<sp/>for<sp/>us.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>HepMC3::GenEvent<sp/>ge<sp/>=<sp/>*Dep::HardScatteringEvent;</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Get<sp/>yaml<sp/>options<sp/>required<sp/>for<sp/>conversion</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>jet_pt_min<sp/>=<sp/>runOptions-&gt;getValueOrDef&lt;</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&gt;(10.0,<sp/></highlight><highlight class="stringliteral">&quot;jet_pt_min&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;jet_collection_settings&gt;<sp/>all_jet_collection_settings<sp/>=<sp/>{};</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>jetcollection_taus;</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="getHepMCEvent_8cpp_1a0e22bc0e2cbc14bf0c0c2d9891e19f7d" kindref="member">read_jet_collections_settings</ref>(*runOptions,<sp/>all_jet_collection_settings,<sp/>jetcollection_taus);</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"></highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Set<sp/>the<sp/>weight</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result.set_weight(ge.weight());</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Translate<sp/>to<sp/>HEPUtils<sp/>event<sp/>by<sp/>calling<sp/>the<sp/>unified<sp/>HEPMC/Pythia<sp/>event<sp/>converter:</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="Py8EventConversions_8hpp_1a2b9cce4a882770abb43677d71385276f" kindref="member">Gambit::ColliderBit::convertParticleEvent</ref>(ge.particles(),<sp/>result,<sp/>all_jet_collection_settings,<sp/>jetcollection_taus,<sp/>jet_pt_min);</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="283"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"></highlight></codeline>
+<codeline lineno="285"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
     <location file="ColliderBit/src/getHepMCEvent.cpp"/>
   </compounddef>

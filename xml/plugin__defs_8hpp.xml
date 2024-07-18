@@ -64,14 +64,18 @@
         <childnode refid="2" relation="include">
         </childnode>
       </node>
-      <node id="80">
+      <node id="82">
         <label>gambit/ScannerBit/base_prior.hpp</label>
         <link refid="base__prior_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
         <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="47" relation="include">
         </childnode>
         <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
         </childnode>
       </node>
       <node id="1">
@@ -97,7 +101,7 @@
         </childnode>
         <childnode refid="67" relation="include">
         </childnode>
-        <childnode refid="80" relation="include">
+        <childnode refid="82" relation="include">
         </childnode>
       </node>
       <node id="68">
@@ -131,9 +135,9 @@
         </childnode>
         <childnode refid="70" relation="include">
         </childnode>
-        <childnode refid="75" relation="include">
+        <childnode refid="77" relation="include">
         </childnode>
-        <childnode refid="80" relation="include">
+        <childnode refid="82" relation="include">
         </childnode>
       </node>
       <node id="60">
@@ -158,6 +162,12 @@
         <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="75">
+        <label>gambit/ScannerBit/scanner_util_types.hpp</label>
+        <link refid="scanner__util__types_8hpp"/>
+        <childnode refid="76" relation="include">
         </childnode>
       </node>
       <node id="70">
@@ -192,6 +202,8 @@
         <childnode refid="42" relation="include">
         </childnode>
         <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
         </childnode>
       </node>
       <node id="21">
@@ -308,12 +320,12 @@
         <childnode refid="3" relation="include">
         </childnode>
       </node>
-      <node id="75">
+      <node id="77">
         <label>gambit/Utils/util_functions.hpp</label>
         <link refid="util__functions_8hpp"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="76" relation="include">
+        <childnode refid="78" relation="include">
         </childnode>
         <childnode refid="57" relation="include">
         </childnode>
@@ -321,11 +333,11 @@
         </childnode>
         <childnode refid="69" relation="include">
         </childnode>
-        <childnode refid="77" relation="include">
-        </childnode>
-        <childnode refid="78" relation="include">
-        </childnode>
         <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
         </childnode>
       </node>
       <node id="20">
@@ -456,16 +468,19 @@
         <childnode refid="54" relation="include">
         </childnode>
       </node>
+      <node id="76">
+        <label>Eigen/Dense</label>
+      </node>
       <node id="6">
         <label>algorithm</label>
       </node>
       <node id="52">
         <label>array</label>
       </node>
-      <node id="78">
+      <node id="80">
         <label>boost/algorithm/string/classification.hpp</label>
       </node>
-      <node id="77">
+      <node id="79">
         <label>boost/algorithm/string/split.hpp</label>
       </node>
       <node id="29">
@@ -519,7 +534,7 @@
       <node id="71">
         <label>cctype</label>
       </node>
-      <node id="76">
+      <node id="78">
         <label>chrono</label>
       </node>
       <node id="57">
@@ -564,7 +579,7 @@
       <node id="18">
         <label>memory</label>
       </node>
-      <node id="79">
+      <node id="81">
         <label>mkpath/mkpath.h</label>
       </node>
       <node id="15">
@@ -858,6 +873,7 @@
     <innerclass refid="classGambit_1_1Scanner_1_1Plugins_1_1funcFactory" prot="public">Gambit::Scanner::Plugins::funcFactory</innerclass>
     <innerclass refid="classGambit_1_1Scanner_1_1Plugins_1_1classFactory" prot="public">Gambit::Scanner::Plugins::classFactory</innerclass>
     <innerclass refid="structGambit_1_1Scanner_1_1Plugins_1_1pluginData" prot="public">Gambit::Scanner::Plugins::pluginData</innerclass>
+    <innerclass refid="structGambit_1_1Scanner_1_1Plugins_1_1pyplugin__info" prot="public">Gambit::Scanner::Plugins::pyplugin_info</innerclass>
     <innernamespace refid="namespaceGambit">Gambit</innernamespace>
     <innernamespace refid="namespaceGambit_1_1Scanner">Gambit::Scanner</innernamespace>
     <innernamespace refid="namespaceGambit_1_1Scanner_1_1Plugins">Gambit::Scanner::Plugins</innernamespace>
@@ -1095,13 +1111,37 @@
 <codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};<sp/><sp/></highlight></codeline>
 <codeline lineno="214"><highlight class="normal"></highlight></codeline>
-<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="216"><highlight class="normal"></highlight></codeline>
-<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="218"><highlight class="normal"></highlight></codeline>
-<codeline lineno="219"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="220"><highlight class="normal"></highlight></codeline>
-<codeline lineno="221"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="215" refid="structGambit_1_1Scanner_1_1Plugins_1_1pyplugin__info" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structGambit_1_1Scanner_1_1Plugins_1_1pyplugin__info" kindref="compound">pyplugin_info</ref></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>major_version;</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>minor_version;</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>patch_version;</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>release_version;</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>discription;</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structGambit_1_1Scanner_1_1Plugins_1_1pyplugin__info" kindref="compound">pyplugin_info</ref>()<sp/>:<sp/>major_version(1),<sp/>minor_version(0),<sp/>patch_version(0),<sp/>release_version(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)<sp/>{}</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/>version()</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::stringstream<sp/>ss;</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ss<sp/>&lt;&lt;<sp/>major_version<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>minor_version<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>patch_version;</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(release_version<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>ss<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;-&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>release_version;</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>ss.str();</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
     <location file="ScannerBit/include/gambit/ScannerBit/plugin_defs.hpp"/>
   </compounddef>

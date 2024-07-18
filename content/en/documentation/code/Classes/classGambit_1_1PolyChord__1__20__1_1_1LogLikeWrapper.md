@@ -26,6 +26,7 @@ Class to connect PolyChord log-likelihood function and ScannerBit likelihood fun
 |                | Name           |
 | -------------- | -------------- |
 | std::unordered_map< std::string, int > | **[index_map](/documentation/code/classes/classgambit_1_1polychord__1__20__1_1_1loglikewrapper/#variable-index-map)**  |
+| std::unordered_map< std::string, int > | **[derived_index_map](/documentation/code/classes/classgambit_1_1polychord__1__20__1_1_1loglikewrapper/#variable-derived-index-map)**  |
 | [Settings](/documentation/code/classes/structsettings/) | **[boundSettings](/documentation/code/classes/classgambit_1_1polychord__1__20__1_1_1loglikewrapper/#variable-boundsettings)** <br>copy of the settings in use.  |
 | int | **[printer_speed_threshold](/documentation/code/classes/classgambit_1_1polychord__1__20__1_1_1loglikewrapper/#variable-printer-speed-threshold)**  |
 
@@ -98,6 +99,13 @@ std::unordered_map< std::string, int > index_map;
 ```
 
 
+### variable derived_index_map
+
+```
+std::unordered_map< std::string, int > derived_index_map;
+```
+
+
 ### variable boundSettings
 
 ```
@@ -118,4 +126,4 @@ Disable printing for speeds greater and equal than Speeds start at 0 A value of 
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:04 +0000
+Updated on 2024-07-18 at 13:53:31 +0000

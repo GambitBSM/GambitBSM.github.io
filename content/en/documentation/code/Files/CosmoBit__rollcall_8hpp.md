@@ -88,7 +88,6 @@ description: "[No description available]"
 |  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
 |  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
 |  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
 |  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
 |  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
 |  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
@@ -118,6 +117,10 @@ description: "[No description available]"
 |  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
 |  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
 |  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
 |  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
 |  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
 |  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
@@ -185,6 +188,8 @@ description: "[No description available]"
 |  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
 |  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
 |  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
 |  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
 |  | **[CAPABILITY](/documentation/code/files/cosmobit__rollcall_8hpp/#define-capability)** <br>total abundance of axion-like particles, produced either by misalignment or freeze-in  |
 |  | **[FUNCTION](/documentation/code/files/cosmobit__rollcall_8hpp/#define-function)**  |
@@ -604,75 +609,7 @@ void;
 
 total abundance of axion-like particles, produced either by misalignment or freeze-in 
 
-compute primordial helium abundance
-
-collect all input options for AlterBBN in form of a string to double map
-
-get the value of Neff in the early Universe from CLASS backend
-
-energy density of non-cold DM components today
-
-energy density in radiation today
-
-energy density of CDM component today
-
-energy density in baryons today
-
-Get time since big bang at z in s.
-
-temperature of non-cold DM components
-
-Gaussian priors on the nuisance parameters of the Planck likelihoods.
-
-get lensed CMB lensing spectrum (Cell_phiphi)
-
-get lensed CMB B mode spectrum
-
-get lensed CMB E mode spectrum
-
-get lensed CMB Temperature-E mode cross-correlation spectrum
-
-get lensed CMB TT spectrum
-
-use MultiModeCode to compute a parameterised primordial power spectrum
-
-get the energy injection efficiency tables
-
-minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
-
-lifetime of the decaying dark matter component (in s)
-
-fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
-
-the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
-
-compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
-
-priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
-
-extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
-
-compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
-
-Compute the primordial abundances today These contain effects from photodisintegration if relevant
-
-compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
-
-
-### define FUNCTION
-
-```
-#define FUNCTION DM_fraction_ALP
-```
-
-
-### define CAPABILITY
-
-```
-#define CAPABILITY DM_fraction
-```
-
-total abundance of axion-like particles, produced either by misalignment or freeze-in 
+compute Neff after BBN
 
 compute primordial helium abundance
 
@@ -744,152 +681,7 @@ compute BBN likelihood for chosen isotopes depending on yaml file settings, theo
 
 total abundance of axion-like particles, produced either by misalignment or freeze-in 
 
-compute primordial helium abundance
-
-collect all input options for AlterBBN in form of a string to double map
-
-get the value of Neff in the early Universe from CLASS backend
-
-energy density of non-cold DM components today
-
-energy density in radiation today
-
-energy density of CDM component today
-
-energy density in baryons today
-
-Get time since big bang at z in s.
-
-temperature of non-cold DM components
-
-Gaussian priors on the nuisance parameters of the Planck likelihoods.
-
-get lensed CMB lensing spectrum (Cell_phiphi)
-
-get lensed CMB B mode spectrum
-
-get lensed CMB E mode spectrum
-
-get lensed CMB Temperature-E mode cross-correlation spectrum
-
-get lensed CMB TT spectrum
-
-use MultiModeCode to compute a parameterised primordial power spectrum
-
-get the energy injection efficiency tables
-
-minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
-
-lifetime of the decaying dark matter component (in s)
-
-fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
-
-the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
-
-compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
-
-priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
-
-extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
-
-compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
-
-Compute the primordial abundances today These contain effects from photodisintegration if relevant
-
-compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
-
-
-### define FUNCTION
-
-```
-#define FUNCTION DM_fraction_ALP
-```
-
-
-### define CAPABILITY
-
-```
-#define CAPABILITY DM_fraction
-```
-
-total abundance of axion-like particles, produced either by misalignment or freeze-in 
-
-compute primordial helium abundance
-
-collect all input options for AlterBBN in form of a string to double map
-
-get the value of Neff in the early Universe from CLASS backend
-
-energy density of non-cold DM components today
-
-energy density in radiation today
-
-energy density of CDM component today
-
-energy density in baryons today
-
-Get time since big bang at z in s.
-
-temperature of non-cold DM components
-
-Gaussian priors on the nuisance parameters of the Planck likelihoods.
-
-get lensed CMB lensing spectrum (Cell_phiphi)
-
-get lensed CMB B mode spectrum
-
-get lensed CMB E mode spectrum
-
-get lensed CMB Temperature-E mode cross-correlation spectrum
-
-get lensed CMB TT spectrum
-
-use MultiModeCode to compute a parameterised primordial power spectrum
-
-get the energy injection efficiency tables
-
-minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
-
-lifetime of the decaying dark matter component (in s)
-
-fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
-
-the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
-
-compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
-
-priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
-
-extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
-
-compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
-
-Compute the primordial abundances today These contain effects from photodisintegration if relevant
-
-compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
-
-
-### define FUNCTION
-
-```
-#define FUNCTION DM_fraction_ALP
-```
-
-
-### define FUNCTION
-
-```
-#define FUNCTION DM_fraction_ALP
-```
-
-
-### define CAPABILITY
-
-```
-#define CAPABILITY DM_fraction
-```
-
-total abundance of axion-like particles, produced either by misalignment or freeze-in 
+compute Neff after BBN
 
 compute primordial helium abundance
 
@@ -961,75 +753,7 @@ compute BBN likelihood for chosen isotopes depending on yaml file settings, theo
 
 total abundance of axion-like particles, produced either by misalignment or freeze-in 
 
-compute primordial helium abundance
-
-collect all input options for AlterBBN in form of a string to double map
-
-get the value of Neff in the early Universe from CLASS backend
-
-energy density of non-cold DM components today
-
-energy density in radiation today
-
-energy density of CDM component today
-
-energy density in baryons today
-
-Get time since big bang at z in s.
-
-temperature of non-cold DM components
-
-Gaussian priors on the nuisance parameters of the Planck likelihoods.
-
-get lensed CMB lensing spectrum (Cell_phiphi)
-
-get lensed CMB B mode spectrum
-
-get lensed CMB E mode spectrum
-
-get lensed CMB Temperature-E mode cross-correlation spectrum
-
-get lensed CMB TT spectrum
-
-use MultiModeCode to compute a parameterised primordial power spectrum
-
-get the energy injection efficiency tables
-
-minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
-
-lifetime of the decaying dark matter component (in s)
-
-fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
-
-the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
-
-compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
-
-priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
-
-extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
-
-compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
-
-Compute the primordial abundances today These contain effects from photodisintegration if relevant
-
-compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
-
-
-### define FUNCTION
-
-```
-#define FUNCTION DM_fraction_ALP
-```
-
-
-### define CAPABILITY
-
-```
-#define CAPABILITY DM_fraction
-```
-
-total abundance of axion-like particles, produced either by misalignment or freeze-in 
+compute Neff after BBN
 
 compute primordial helium abundance
 
@@ -1101,145 +825,7 @@ compute BBN likelihood for chosen isotopes depending on yaml file settings, theo
 
 total abundance of axion-like particles, produced either by misalignment or freeze-in 
 
-compute primordial helium abundance
-
-collect all input options for AlterBBN in form of a string to double map
-
-get the value of Neff in the early Universe from CLASS backend
-
-energy density of non-cold DM components today
-
-energy density in radiation today
-
-energy density of CDM component today
-
-energy density in baryons today
-
-Get time since big bang at z in s.
-
-temperature of non-cold DM components
-
-Gaussian priors on the nuisance parameters of the Planck likelihoods.
-
-get lensed CMB lensing spectrum (Cell_phiphi)
-
-get lensed CMB B mode spectrum
-
-get lensed CMB E mode spectrum
-
-get lensed CMB Temperature-E mode cross-correlation spectrum
-
-get lensed CMB TT spectrum
-
-use MultiModeCode to compute a parameterised primordial power spectrum
-
-get the energy injection efficiency tables
-
-minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
-
-lifetime of the decaying dark matter component (in s)
-
-fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
-
-the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
-
-compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
-
-priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
-
-extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
-
-compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
-
-Compute the primordial abundances today These contain effects from photodisintegration if relevant
-
-compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
-
-
-### define FUNCTION
-
-```
-#define FUNCTION DM_fraction_ALP
-```
-
-
-### define CAPABILITY
-
-```
-#define CAPABILITY DM_fraction
-```
-
-total abundance of axion-like particles, produced either by misalignment or freeze-in 
-
-compute primordial helium abundance
-
-collect all input options for AlterBBN in form of a string to double map
-
-get the value of Neff in the early Universe from CLASS backend
-
-energy density of non-cold DM components today
-
-energy density in radiation today
-
-energy density of CDM component today
-
-energy density in baryons today
-
-Get time since big bang at z in s.
-
-temperature of non-cold DM components
-
-Gaussian priors on the nuisance parameters of the Planck likelihoods.
-
-get lensed CMB lensing spectrum (Cell_phiphi)
-
-get lensed CMB B mode spectrum
-
-get lensed CMB E mode spectrum
-
-get lensed CMB Temperature-E mode cross-correlation spectrum
-
-get lensed CMB TT spectrum
-
-use MultiModeCode to compute a parameterised primordial power spectrum
-
-get the energy injection efficiency tables
-
-minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
-
-lifetime of the decaying dark matter component (in s)
-
-fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
-
-the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
-
-compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
-
-priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
-
-extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
-
-compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
-
-Compute the primordial abundances today These contain effects from photodisintegration if relevant
-
-compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
-
-
-### define FUNCTION
-
-```
-#define FUNCTION DM_fraction_ALP
-```
-
-
-### define CAPABILITY
-
-```
-#define CAPABILITY DM_fraction
-```
-
-total abundance of axion-like particles, produced either by misalignment or freeze-in 
+compute Neff after BBN
 
 compute primordial helium abundance
 
@@ -1318,89 +904,7 @@ compute BBN likelihood for chosen isotopes depending on yaml file settings, theo
 
 total abundance of axion-like particles, produced either by misalignment or freeze-in 
 
-compute primordial helium abundance
-
-collect all input options for AlterBBN in form of a string to double map
-
-get the value of Neff in the early Universe from CLASS backend
-
-energy density of non-cold DM components today
-
-energy density in radiation today
-
-energy density of CDM component today
-
-energy density in baryons today
-
-Get time since big bang at z in s.
-
-temperature of non-cold DM components
-
-Gaussian priors on the nuisance parameters of the Planck likelihoods.
-
-get lensed CMB lensing spectrum (Cell_phiphi)
-
-get lensed CMB B mode spectrum
-
-get lensed CMB E mode spectrum
-
-get lensed CMB Temperature-E mode cross-correlation spectrum
-
-get lensed CMB TT spectrum
-
-use MultiModeCode to compute a parameterised primordial power spectrum
-
-get the energy injection efficiency tables
-
-minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
-
-lifetime of the decaying dark matter component (in s)
-
-fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
-
-the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
-
-compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
-
-priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
-
-extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
-
-compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
-
-Compute the primordial abundances today These contain effects from photodisintegration if relevant
-
-compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
-
-
-### define FUNCTION
-
-```
-#define FUNCTION DM_fraction_ALP
-```
-
-
-### define FUNCTION
-
-```
-#define FUNCTION DM_fraction_ALP
-```
-
-
-### define FUNCTION
-
-```
-#define FUNCTION DM_fraction_ALP
-```
-
-
-### define CAPABILITY
-
-```
-#define CAPABILITY DM_fraction
-```
-
-total abundance of axion-like particles, produced either by misalignment or freeze-in 
+compute Neff after BBN
 
 compute primordial helium abundance
 
@@ -1472,75 +976,7 @@ compute BBN likelihood for chosen isotopes depending on yaml file settings, theo
 
 total abundance of axion-like particles, produced either by misalignment or freeze-in 
 
-compute primordial helium abundance
-
-collect all input options for AlterBBN in form of a string to double map
-
-get the value of Neff in the early Universe from CLASS backend
-
-energy density of non-cold DM components today
-
-energy density in radiation today
-
-energy density of CDM component today
-
-energy density in baryons today
-
-Get time since big bang at z in s.
-
-temperature of non-cold DM components
-
-Gaussian priors on the nuisance parameters of the Planck likelihoods.
-
-get lensed CMB lensing spectrum (Cell_phiphi)
-
-get lensed CMB B mode spectrum
-
-get lensed CMB E mode spectrum
-
-get lensed CMB Temperature-E mode cross-correlation spectrum
-
-get lensed CMB TT spectrum
-
-use MultiModeCode to compute a parameterised primordial power spectrum
-
-get the energy injection efficiency tables
-
-minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
-
-lifetime of the decaying dark matter component (in s)
-
-fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
-
-the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
-
-compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
-
-priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
-
-extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
-
-compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
-
-Compute the primordial abundances today These contain effects from photodisintegration if relevant
-
-compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
-
-
-### define FUNCTION
-
-```
-#define FUNCTION DM_fraction_ALP
-```
-
-
-### define CAPABILITY
-
-```
-#define CAPABILITY DM_fraction
-```
-
-total abundance of axion-like particles, produced either by misalignment or freeze-in 
+compute Neff after BBN
 
 compute primordial helium abundance
 
@@ -1612,75 +1048,7 @@ compute BBN likelihood for chosen isotopes depending on yaml file settings, theo
 
 total abundance of axion-like particles, produced either by misalignment or freeze-in 
 
-compute primordial helium abundance
-
-collect all input options for AlterBBN in form of a string to double map
-
-get the value of Neff in the early Universe from CLASS backend
-
-energy density of non-cold DM components today
-
-energy density in radiation today
-
-energy density of CDM component today
-
-energy density in baryons today
-
-Get time since big bang at z in s.
-
-temperature of non-cold DM components
-
-Gaussian priors on the nuisance parameters of the Planck likelihoods.
-
-get lensed CMB lensing spectrum (Cell_phiphi)
-
-get lensed CMB B mode spectrum
-
-get lensed CMB E mode spectrum
-
-get lensed CMB Temperature-E mode cross-correlation spectrum
-
-get lensed CMB TT spectrum
-
-use MultiModeCode to compute a parameterised primordial power spectrum
-
-get the energy injection efficiency tables
-
-minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
-
-lifetime of the decaying dark matter component (in s)
-
-fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
-
-the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
-
-compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
-
-priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
-
-extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
-
-compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
-
-Compute the primordial abundances today These contain effects from photodisintegration if relevant
-
-compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
-
-
-### define FUNCTION
-
-```
-#define FUNCTION DM_fraction_ALP
-```
-
-
-### define CAPABILITY
-
-```
-#define CAPABILITY DM_fraction
-```
-
-total abundance of axion-like particles, produced either by misalignment or freeze-in 
+compute Neff after BBN
 
 compute primordial helium abundance
 
@@ -1752,75 +1120,7 @@ compute BBN likelihood for chosen isotopes depending on yaml file settings, theo
 
 total abundance of axion-like particles, produced either by misalignment or freeze-in 
 
-compute primordial helium abundance
-
-collect all input options for AlterBBN in form of a string to double map
-
-get the value of Neff in the early Universe from CLASS backend
-
-energy density of non-cold DM components today
-
-energy density in radiation today
-
-energy density of CDM component today
-
-energy density in baryons today
-
-Get time since big bang at z in s.
-
-temperature of non-cold DM components
-
-Gaussian priors on the nuisance parameters of the Planck likelihoods.
-
-get lensed CMB lensing spectrum (Cell_phiphi)
-
-get lensed CMB B mode spectrum
-
-get lensed CMB E mode spectrum
-
-get lensed CMB Temperature-E mode cross-correlation spectrum
-
-get lensed CMB TT spectrum
-
-use MultiModeCode to compute a parameterised primordial power spectrum
-
-get the energy injection efficiency tables
-
-minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
-
-lifetime of the decaying dark matter component (in s)
-
-fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
-
-the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
-
-compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
-
-priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
-
-extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
-
-compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
-
-Compute the primordial abundances today These contain effects from photodisintegration if relevant
-
-compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
-
-
-### define FUNCTION
-
-```
-#define FUNCTION DM_fraction_ALP
-```
-
-
-### define CAPABILITY
-
-```
-#define CAPABILITY DM_fraction
-```
-
-total abundance of axion-like particles, produced either by misalignment or freeze-in 
+compute Neff after BBN
 
 compute primordial helium abundance
 
@@ -1892,75 +1192,7 @@ compute BBN likelihood for chosen isotopes depending on yaml file settings, theo
 
 total abundance of axion-like particles, produced either by misalignment or freeze-in 
 
-compute primordial helium abundance
-
-collect all input options for AlterBBN in form of a string to double map
-
-get the value of Neff in the early Universe from CLASS backend
-
-energy density of non-cold DM components today
-
-energy density in radiation today
-
-energy density of CDM component today
-
-energy density in baryons today
-
-Get time since big bang at z in s.
-
-temperature of non-cold DM components
-
-Gaussian priors on the nuisance parameters of the Planck likelihoods.
-
-get lensed CMB lensing spectrum (Cell_phiphi)
-
-get lensed CMB B mode spectrum
-
-get lensed CMB E mode spectrum
-
-get lensed CMB Temperature-E mode cross-correlation spectrum
-
-get lensed CMB TT spectrum
-
-use MultiModeCode to compute a parameterised primordial power spectrum
-
-get the energy injection efficiency tables
-
-minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
-
-lifetime of the decaying dark matter component (in s)
-
-fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
-
-the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
-
-compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
-
-priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
-
-extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
-
-compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
-
-Compute the primordial abundances today These contain effects from photodisintegration if relevant
-
-compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
-
-
-### define FUNCTION
-
-```
-#define FUNCTION DM_fraction_ALP
-```
-
-
-### define CAPABILITY
-
-```
-#define CAPABILITY DM_fraction
-```
-
-total abundance of axion-like particles, produced either by misalignment or freeze-in 
+compute Neff after BBN
 
 compute primordial helium abundance
 
@@ -2032,75 +1264,7 @@ compute BBN likelihood for chosen isotopes depending on yaml file settings, theo
 
 total abundance of axion-like particles, produced either by misalignment or freeze-in 
 
-compute primordial helium abundance
-
-collect all input options for AlterBBN in form of a string to double map
-
-get the value of Neff in the early Universe from CLASS backend
-
-energy density of non-cold DM components today
-
-energy density in radiation today
-
-energy density of CDM component today
-
-energy density in baryons today
-
-Get time since big bang at z in s.
-
-temperature of non-cold DM components
-
-Gaussian priors on the nuisance parameters of the Planck likelihoods.
-
-get lensed CMB lensing spectrum (Cell_phiphi)
-
-get lensed CMB B mode spectrum
-
-get lensed CMB E mode spectrum
-
-get lensed CMB Temperature-E mode cross-correlation spectrum
-
-get lensed CMB TT spectrum
-
-use MultiModeCode to compute a parameterised primordial power spectrum
-
-get the energy injection efficiency tables
-
-minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
-
-lifetime of the decaying dark matter component (in s)
-
-fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
-
-the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
-
-compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
-
-priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
-
-extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
-
-compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
-
-Compute the primordial abundances today These contain effects from photodisintegration if relevant
-
-compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
-
-
-### define FUNCTION
-
-```
-#define FUNCTION DM_fraction_ALP
-```
-
-
-### define CAPABILITY
-
-```
-#define CAPABILITY DM_fraction
-```
-
-total abundance of axion-like particles, produced either by misalignment or freeze-in 
+compute Neff after BBN
 
 compute primordial helium abundance
 
@@ -2164,69 +1328,6 @@ compute BBN likelihood for chosen isotopes depending on yaml file settings, theo
 ```
 
 
-### define CAPABILITY
-
-```
-#define CAPABILITY DM_fraction
-```
-
-total abundance of axion-like particles, produced either by misalignment or freeze-in 
-
-compute primordial helium abundance
-
-collect all input options for AlterBBN in form of a string to double map
-
-get the value of Neff in the early Universe from CLASS backend
-
-energy density of non-cold DM components today
-
-energy density in radiation today
-
-energy density of CDM component today
-
-energy density in baryons today
-
-Get time since big bang at z in s.
-
-temperature of non-cold DM components
-
-Gaussian priors on the nuisance parameters of the Planck likelihoods.
-
-get lensed CMB lensing spectrum (Cell_phiphi)
-
-get lensed CMB B mode spectrum
-
-get lensed CMB E mode spectrum
-
-get lensed CMB Temperature-E mode cross-correlation spectrum
-
-get lensed CMB TT spectrum
-
-use MultiModeCode to compute a parameterised primordial power spectrum
-
-get the energy injection efficiency tables
-
-minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
-
-lifetime of the decaying dark matter component (in s)
-
-fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
-
-the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
-
-compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
-
-priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
-
-extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
-
-compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
-
-Compute the primordial abundances today These contain effects from photodisintegration if relevant
-
-compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
-
-
 ### define FUNCTION
 
 ```
@@ -2242,712 +1343,7 @@ compute BBN likelihood for chosen isotopes depending on yaml file settings, theo
 
 total abundance of axion-like particles, produced either by misalignment or freeze-in 
 
-compute primordial helium abundance
-
-collect all input options for AlterBBN in form of a string to double map
-
-get the value of Neff in the early Universe from CLASS backend
-
-energy density of non-cold DM components today
-
-energy density in radiation today
-
-energy density of CDM component today
-
-energy density in baryons today
-
-Get time since big bang at z in s.
-
-temperature of non-cold DM components
-
-Gaussian priors on the nuisance parameters of the Planck likelihoods.
-
-get lensed CMB lensing spectrum (Cell_phiphi)
-
-get lensed CMB B mode spectrum
-
-get lensed CMB E mode spectrum
-
-get lensed CMB Temperature-E mode cross-correlation spectrum
-
-get lensed CMB TT spectrum
-
-use MultiModeCode to compute a parameterised primordial power spectrum
-
-get the energy injection efficiency tables
-
-minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
-
-lifetime of the decaying dark matter component (in s)
-
-fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
-
-the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
-
-compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
-
-priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
-
-extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
-
-compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
-
-Compute the primordial abundances today These contain effects from photodisintegration if relevant
-
-compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
-
-
-### define FUNCTION
-
-```
-#define FUNCTION DM_fraction_ALP
-```
-
-
-### define CAPABILITY
-
-```
-#define CAPABILITY DM_fraction
-```
-
-total abundance of axion-like particles, produced either by misalignment or freeze-in 
-
-compute primordial helium abundance
-
-collect all input options for AlterBBN in form of a string to double map
-
-get the value of Neff in the early Universe from CLASS backend
-
-energy density of non-cold DM components today
-
-energy density in radiation today
-
-energy density of CDM component today
-
-energy density in baryons today
-
-Get time since big bang at z in s.
-
-temperature of non-cold DM components
-
-Gaussian priors on the nuisance parameters of the Planck likelihoods.
-
-get lensed CMB lensing spectrum (Cell_phiphi)
-
-get lensed CMB B mode spectrum
-
-get lensed CMB E mode spectrum
-
-get lensed CMB Temperature-E mode cross-correlation spectrum
-
-get lensed CMB TT spectrum
-
-use MultiModeCode to compute a parameterised primordial power spectrum
-
-get the energy injection efficiency tables
-
-minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
-
-lifetime of the decaying dark matter component (in s)
-
-fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
-
-the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
-
-compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
-
-priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
-
-extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
-
-compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
-
-Compute the primordial abundances today These contain effects from photodisintegration if relevant
-
-compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
-
-
-### define FUNCTION
-
-```
-#define FUNCTION DM_fraction_ALP
-```
-
-
-### define CAPABILITY
-
-```
-#define CAPABILITY DM_fraction
-```
-
-total abundance of axion-like particles, produced either by misalignment or freeze-in 
-
-compute primordial helium abundance
-
-collect all input options for AlterBBN in form of a string to double map
-
-get the value of Neff in the early Universe from CLASS backend
-
-energy density of non-cold DM components today
-
-energy density in radiation today
-
-energy density of CDM component today
-
-energy density in baryons today
-
-Get time since big bang at z in s.
-
-temperature of non-cold DM components
-
-Gaussian priors on the nuisance parameters of the Planck likelihoods.
-
-get lensed CMB lensing spectrum (Cell_phiphi)
-
-get lensed CMB B mode spectrum
-
-get lensed CMB E mode spectrum
-
-get lensed CMB Temperature-E mode cross-correlation spectrum
-
-get lensed CMB TT spectrum
-
-use MultiModeCode to compute a parameterised primordial power spectrum
-
-get the energy injection efficiency tables
-
-minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
-
-lifetime of the decaying dark matter component (in s)
-
-fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
-
-the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
-
-compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
-
-priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
-
-extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
-
-compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
-
-Compute the primordial abundances today These contain effects from photodisintegration if relevant
-
-compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
-
-
-### define FUNCTION
-
-```
-#define FUNCTION DM_fraction_ALP
-```
-
-
-### define CAPABILITY
-
-```
-#define CAPABILITY DM_fraction
-```
-
-total abundance of axion-like particles, produced either by misalignment or freeze-in 
-
-compute primordial helium abundance
-
-collect all input options for AlterBBN in form of a string to double map
-
-get the value of Neff in the early Universe from CLASS backend
-
-energy density of non-cold DM components today
-
-energy density in radiation today
-
-energy density of CDM component today
-
-energy density in baryons today
-
-Get time since big bang at z in s.
-
-temperature of non-cold DM components
-
-Gaussian priors on the nuisance parameters of the Planck likelihoods.
-
-get lensed CMB lensing spectrum (Cell_phiphi)
-
-get lensed CMB B mode spectrum
-
-get lensed CMB E mode spectrum
-
-get lensed CMB Temperature-E mode cross-correlation spectrum
-
-get lensed CMB TT spectrum
-
-use MultiModeCode to compute a parameterised primordial power spectrum
-
-get the energy injection efficiency tables
-
-minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
-
-lifetime of the decaying dark matter component (in s)
-
-fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
-
-the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
-
-compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
-
-priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
-
-extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
-
-compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
-
-Compute the primordial abundances today These contain effects from photodisintegration if relevant
-
-compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
-
-
-### define FUNCTION
-
-```
-#define FUNCTION DM_fraction_ALP
-```
-
-
-### define CAPABILITY
-
-```
-#define CAPABILITY DM_fraction
-```
-
-total abundance of axion-like particles, produced either by misalignment or freeze-in 
-
-compute primordial helium abundance
-
-collect all input options for AlterBBN in form of a string to double map
-
-get the value of Neff in the early Universe from CLASS backend
-
-energy density of non-cold DM components today
-
-energy density in radiation today
-
-energy density of CDM component today
-
-energy density in baryons today
-
-Get time since big bang at z in s.
-
-temperature of non-cold DM components
-
-Gaussian priors on the nuisance parameters of the Planck likelihoods.
-
-get lensed CMB lensing spectrum (Cell_phiphi)
-
-get lensed CMB B mode spectrum
-
-get lensed CMB E mode spectrum
-
-get lensed CMB Temperature-E mode cross-correlation spectrum
-
-get lensed CMB TT spectrum
-
-use MultiModeCode to compute a parameterised primordial power spectrum
-
-get the energy injection efficiency tables
-
-minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
-
-lifetime of the decaying dark matter component (in s)
-
-fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
-
-the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
-
-compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
-
-priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
-
-extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
-
-compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
-
-Compute the primordial abundances today These contain effects from photodisintegration if relevant
-
-compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
-
-
-### define FUNCTION
-
-```
-#define FUNCTION DM_fraction_ALP
-```
-
-
-### define CAPABILITY
-
-```
-#define CAPABILITY DM_fraction
-```
-
-total abundance of axion-like particles, produced either by misalignment or freeze-in 
-
-compute primordial helium abundance
-
-collect all input options for AlterBBN in form of a string to double map
-
-get the value of Neff in the early Universe from CLASS backend
-
-energy density of non-cold DM components today
-
-energy density in radiation today
-
-energy density of CDM component today
-
-energy density in baryons today
-
-Get time since big bang at z in s.
-
-temperature of non-cold DM components
-
-Gaussian priors on the nuisance parameters of the Planck likelihoods.
-
-get lensed CMB lensing spectrum (Cell_phiphi)
-
-get lensed CMB B mode spectrum
-
-get lensed CMB E mode spectrum
-
-get lensed CMB Temperature-E mode cross-correlation spectrum
-
-get lensed CMB TT spectrum
-
-use MultiModeCode to compute a parameterised primordial power spectrum
-
-get the energy injection efficiency tables
-
-minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
-
-lifetime of the decaying dark matter component (in s)
-
-fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
-
-the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
-
-compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
-
-priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
-
-extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
-
-compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
-
-Compute the primordial abundances today These contain effects from photodisintegration if relevant
-
-compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
-
-
-### define FUNCTION
-
-```
-#define FUNCTION DM_fraction_ALP
-```
-
-
-### define CAPABILITY
-
-```
-#define CAPABILITY DM_fraction
-```
-
-total abundance of axion-like particles, produced either by misalignment or freeze-in 
-
-compute primordial helium abundance
-
-collect all input options for AlterBBN in form of a string to double map
-
-get the value of Neff in the early Universe from CLASS backend
-
-energy density of non-cold DM components today
-
-energy density in radiation today
-
-energy density of CDM component today
-
-energy density in baryons today
-
-Get time since big bang at z in s.
-
-temperature of non-cold DM components
-
-Gaussian priors on the nuisance parameters of the Planck likelihoods.
-
-get lensed CMB lensing spectrum (Cell_phiphi)
-
-get lensed CMB B mode spectrum
-
-get lensed CMB E mode spectrum
-
-get lensed CMB Temperature-E mode cross-correlation spectrum
-
-get lensed CMB TT spectrum
-
-use MultiModeCode to compute a parameterised primordial power spectrum
-
-get the energy injection efficiency tables
-
-minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
-
-lifetime of the decaying dark matter component (in s)
-
-fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
-
-the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
-
-compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
-
-priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
-
-extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
-
-compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
-
-Compute the primordial abundances today These contain effects from photodisintegration if relevant
-
-compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
-
-
-### define FUNCTION
-
-```
-#define FUNCTION DM_fraction_ALP
-```
-
-
-### define CAPABILITY
-
-```
-#define CAPABILITY DM_fraction
-```
-
-total abundance of axion-like particles, produced either by misalignment or freeze-in 
-
-compute primordial helium abundance
-
-collect all input options for AlterBBN in form of a string to double map
-
-get the value of Neff in the early Universe from CLASS backend
-
-energy density of non-cold DM components today
-
-energy density in radiation today
-
-energy density of CDM component today
-
-energy density in baryons today
-
-Get time since big bang at z in s.
-
-temperature of non-cold DM components
-
-Gaussian priors on the nuisance parameters of the Planck likelihoods.
-
-get lensed CMB lensing spectrum (Cell_phiphi)
-
-get lensed CMB B mode spectrum
-
-get lensed CMB E mode spectrum
-
-get lensed CMB Temperature-E mode cross-correlation spectrum
-
-get lensed CMB TT spectrum
-
-use MultiModeCode to compute a parameterised primordial power spectrum
-
-get the energy injection efficiency tables
-
-minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
-
-lifetime of the decaying dark matter component (in s)
-
-fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
-
-the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
-
-compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
-
-priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
-
-extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
-
-compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
-
-Compute the primordial abundances today These contain effects from photodisintegration if relevant
-
-compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
-
-
-### define FUNCTION
-
-```
-#define FUNCTION DM_fraction_ALP
-```
-
-
-### define FUNCTION
-
-```
-#define FUNCTION DM_fraction_ALP
-```
-
-
-### define FUNCTION
-
-```
-#define FUNCTION DM_fraction_ALP
-```
-
-
-### define FUNCTION
-
-```
-#define FUNCTION DM_fraction_ALP
-```
-
-
-### define FUNCTION
-
-```
-#define FUNCTION DM_fraction_ALP
-```
-
-
-### define CAPABILITY
-
-```
-#define CAPABILITY DM_fraction
-```
-
-total abundance of axion-like particles, produced either by misalignment or freeze-in 
-
-compute primordial helium abundance
-
-collect all input options for AlterBBN in form of a string to double map
-
-get the value of Neff in the early Universe from CLASS backend
-
-energy density of non-cold DM components today
-
-energy density in radiation today
-
-energy density of CDM component today
-
-energy density in baryons today
-
-Get time since big bang at z in s.
-
-temperature of non-cold DM components
-
-Gaussian priors on the nuisance parameters of the Planck likelihoods.
-
-get lensed CMB lensing spectrum (Cell_phiphi)
-
-get lensed CMB B mode spectrum
-
-get lensed CMB E mode spectrum
-
-get lensed CMB Temperature-E mode cross-correlation spectrum
-
-get lensed CMB TT spectrum
-
-use MultiModeCode to compute a parameterised primordial power spectrum
-
-get the energy injection efficiency tables
-
-minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
-
-lifetime of the decaying dark matter component (in s)
-
-fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
-
-the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
-
-compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
-
-priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
-
-extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
-
-compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
-
-Compute the primordial abundances today These contain effects from photodisintegration if relevant
-
-compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
-
-
-### define FUNCTION
-
-```
-#define FUNCTION DM_fraction_ALP
-```
-
-
-### define FUNCTION
-
-```
-#define FUNCTION DM_fraction_ALP
-```
-
-
-### define FUNCTION
-
-```
-#define FUNCTION DM_fraction_ALP
-```
-
-
-### define FUNCTION
-
-```
-#define FUNCTION DM_fraction_ALP
-```
-
-
-### define FUNCTION
-
-```
-#define FUNCTION DM_fraction_ALP
-```
-
-
-### define FUNCTION
-
-```
-#define FUNCTION DM_fraction_ALP
-```
-
-
-### define FUNCTION
-
-```
-#define FUNCTION DM_fraction_ALP
-```
-
-
-### define FUNCTION
-
-```
-#define FUNCTION DM_fraction_ALP
-```
-
-
-### define CAPABILITY
-
-```
-#define CAPABILITY DM_fraction
-```
-
-total abundance of axion-like particles, produced either by misalignment or freeze-in 
+compute Neff after BBN
 
 compute primordial helium abundance
 
@@ -3033,75 +1429,7 @@ compute BBN likelihood for chosen isotopes depending on yaml file settings, theo
 
 total abundance of axion-like particles, produced either by misalignment or freeze-in 
 
-compute primordial helium abundance
-
-collect all input options for AlterBBN in form of a string to double map
-
-get the value of Neff in the early Universe from CLASS backend
-
-energy density of non-cold DM components today
-
-energy density in radiation today
-
-energy density of CDM component today
-
-energy density in baryons today
-
-Get time since big bang at z in s.
-
-temperature of non-cold DM components
-
-Gaussian priors on the nuisance parameters of the Planck likelihoods.
-
-get lensed CMB lensing spectrum (Cell_phiphi)
-
-get lensed CMB B mode spectrum
-
-get lensed CMB E mode spectrum
-
-get lensed CMB Temperature-E mode cross-correlation spectrum
-
-get lensed CMB TT spectrum
-
-use MultiModeCode to compute a parameterised primordial power spectrum
-
-get the energy injection efficiency tables
-
-minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
-
-lifetime of the decaying dark matter component (in s)
-
-fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
-
-the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
-
-compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
-
-priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
-
-extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
-
-compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
-
-Compute the primordial abundances today These contain effects from photodisintegration if relevant
-
-compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
-
-
-### define FUNCTION
-
-```
-#define FUNCTION DM_fraction_ALP
-```
-
-
-### define CAPABILITY
-
-```
-#define CAPABILITY DM_fraction
-```
-
-total abundance of axion-like particles, produced either by misalignment or freeze-in 
+compute Neff after BBN
 
 compute primordial helium abundance
 
@@ -3173,82 +1501,7 @@ compute BBN likelihood for chosen isotopes depending on yaml file settings, theo
 
 total abundance of axion-like particles, produced either by misalignment or freeze-in 
 
-compute primordial helium abundance
-
-collect all input options for AlterBBN in form of a string to double map
-
-get the value of Neff in the early Universe from CLASS backend
-
-energy density of non-cold DM components today
-
-energy density in radiation today
-
-energy density of CDM component today
-
-energy density in baryons today
-
-Get time since big bang at z in s.
-
-temperature of non-cold DM components
-
-Gaussian priors on the nuisance parameters of the Planck likelihoods.
-
-get lensed CMB lensing spectrum (Cell_phiphi)
-
-get lensed CMB B mode spectrum
-
-get lensed CMB E mode spectrum
-
-get lensed CMB Temperature-E mode cross-correlation spectrum
-
-get lensed CMB TT spectrum
-
-use MultiModeCode to compute a parameterised primordial power spectrum
-
-get the energy injection efficiency tables
-
-minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
-
-lifetime of the decaying dark matter component (in s)
-
-fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
-
-the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
-
-compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
-
-priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
-
-extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
-
-compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
-
-Compute the primordial abundances today These contain effects from photodisintegration if relevant
-
-compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
-
-
-### define FUNCTION
-
-```
-#define FUNCTION DM_fraction_ALP
-```
-
-
-### define FUNCTION
-
-```
-#define FUNCTION DM_fraction_ALP
-```
-
-
-### define CAPABILITY
-
-```
-#define CAPABILITY DM_fraction
-```
-
-total abundance of axion-like particles, produced either by misalignment or freeze-in 
+compute Neff after BBN
 
 compute primordial helium abundance
 
@@ -3320,75 +1573,7 @@ compute BBN likelihood for chosen isotopes depending on yaml file settings, theo
 
 total abundance of axion-like particles, produced either by misalignment or freeze-in 
 
-compute primordial helium abundance
-
-collect all input options for AlterBBN in form of a string to double map
-
-get the value of Neff in the early Universe from CLASS backend
-
-energy density of non-cold DM components today
-
-energy density in radiation today
-
-energy density of CDM component today
-
-energy density in baryons today
-
-Get time since big bang at z in s.
-
-temperature of non-cold DM components
-
-Gaussian priors on the nuisance parameters of the Planck likelihoods.
-
-get lensed CMB lensing spectrum (Cell_phiphi)
-
-get lensed CMB B mode spectrum
-
-get lensed CMB E mode spectrum
-
-get lensed CMB Temperature-E mode cross-correlation spectrum
-
-get lensed CMB TT spectrum
-
-use MultiModeCode to compute a parameterised primordial power spectrum
-
-get the energy injection efficiency tables
-
-minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
-
-lifetime of the decaying dark matter component (in s)
-
-fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
-
-the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
-
-compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
-
-priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
-
-extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
-
-compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
-
-Compute the primordial abundances today These contain effects from photodisintegration if relevant
-
-compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
-
-
-### define FUNCTION
-
-```
-#define FUNCTION DM_fraction_ALP
-```
-
-
-### define CAPABILITY
-
-```
-#define CAPABILITY DM_fraction
-```
-
-total abundance of axion-like particles, produced either by misalignment or freeze-in 
+compute Neff after BBN
 
 compute primordial helium abundance
 
@@ -3460,75 +1645,7 @@ compute BBN likelihood for chosen isotopes depending on yaml file settings, theo
 
 total abundance of axion-like particles, produced either by misalignment or freeze-in 
 
-compute primordial helium abundance
-
-collect all input options for AlterBBN in form of a string to double map
-
-get the value of Neff in the early Universe from CLASS backend
-
-energy density of non-cold DM components today
-
-energy density in radiation today
-
-energy density of CDM component today
-
-energy density in baryons today
-
-Get time since big bang at z in s.
-
-temperature of non-cold DM components
-
-Gaussian priors on the nuisance parameters of the Planck likelihoods.
-
-get lensed CMB lensing spectrum (Cell_phiphi)
-
-get lensed CMB B mode spectrum
-
-get lensed CMB E mode spectrum
-
-get lensed CMB Temperature-E mode cross-correlation spectrum
-
-get lensed CMB TT spectrum
-
-use MultiModeCode to compute a parameterised primordial power spectrum
-
-get the energy injection efficiency tables
-
-minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
-
-lifetime of the decaying dark matter component (in s)
-
-fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
-
-the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
-
-compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
-
-priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
-
-extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
-
-compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
-
-Compute the primordial abundances today These contain effects from photodisintegration if relevant
-
-compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
-
-
-### define FUNCTION
-
-```
-#define FUNCTION DM_fraction_ALP
-```
-
-
-### define CAPABILITY
-
-```
-#define CAPABILITY DM_fraction
-```
-
-total abundance of axion-like particles, produced either by misalignment or freeze-in 
+compute Neff after BBN
 
 compute primordial helium abundance
 
@@ -3600,355 +1717,7 @@ compute BBN likelihood for chosen isotopes depending on yaml file settings, theo
 
 total abundance of axion-like particles, produced either by misalignment or freeze-in 
 
-compute primordial helium abundance
-
-collect all input options for AlterBBN in form of a string to double map
-
-get the value of Neff in the early Universe from CLASS backend
-
-energy density of non-cold DM components today
-
-energy density in radiation today
-
-energy density of CDM component today
-
-energy density in baryons today
-
-Get time since big bang at z in s.
-
-temperature of non-cold DM components
-
-Gaussian priors on the nuisance parameters of the Planck likelihoods.
-
-get lensed CMB lensing spectrum (Cell_phiphi)
-
-get lensed CMB B mode spectrum
-
-get lensed CMB E mode spectrum
-
-get lensed CMB Temperature-E mode cross-correlation spectrum
-
-get lensed CMB TT spectrum
-
-use MultiModeCode to compute a parameterised primordial power spectrum
-
-get the energy injection efficiency tables
-
-minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
-
-lifetime of the decaying dark matter component (in s)
-
-fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
-
-the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
-
-compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
-
-priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
-
-extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
-
-compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
-
-Compute the primordial abundances today These contain effects from photodisintegration if relevant
-
-compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
-
-
-### define FUNCTION
-
-```
-#define FUNCTION DM_fraction_ALP
-```
-
-
-### define CAPABILITY
-
-```
-#define CAPABILITY DM_fraction
-```
-
-total abundance of axion-like particles, produced either by misalignment or freeze-in 
-
-compute primordial helium abundance
-
-collect all input options for AlterBBN in form of a string to double map
-
-get the value of Neff in the early Universe from CLASS backend
-
-energy density of non-cold DM components today
-
-energy density in radiation today
-
-energy density of CDM component today
-
-energy density in baryons today
-
-Get time since big bang at z in s.
-
-temperature of non-cold DM components
-
-Gaussian priors on the nuisance parameters of the Planck likelihoods.
-
-get lensed CMB lensing spectrum (Cell_phiphi)
-
-get lensed CMB B mode spectrum
-
-get lensed CMB E mode spectrum
-
-get lensed CMB Temperature-E mode cross-correlation spectrum
-
-get lensed CMB TT spectrum
-
-use MultiModeCode to compute a parameterised primordial power spectrum
-
-get the energy injection efficiency tables
-
-minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
-
-lifetime of the decaying dark matter component (in s)
-
-fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
-
-the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
-
-compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
-
-priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
-
-extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
-
-compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
-
-Compute the primordial abundances today These contain effects from photodisintegration if relevant
-
-compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
-
-
-### define FUNCTION
-
-```
-#define FUNCTION DM_fraction_ALP
-```
-
-
-### define CAPABILITY
-
-```
-#define CAPABILITY DM_fraction
-```
-
-total abundance of axion-like particles, produced either by misalignment or freeze-in 
-
-compute primordial helium abundance
-
-collect all input options for AlterBBN in form of a string to double map
-
-get the value of Neff in the early Universe from CLASS backend
-
-energy density of non-cold DM components today
-
-energy density in radiation today
-
-energy density of CDM component today
-
-energy density in baryons today
-
-Get time since big bang at z in s.
-
-temperature of non-cold DM components
-
-Gaussian priors on the nuisance parameters of the Planck likelihoods.
-
-get lensed CMB lensing spectrum (Cell_phiphi)
-
-get lensed CMB B mode spectrum
-
-get lensed CMB E mode spectrum
-
-get lensed CMB Temperature-E mode cross-correlation spectrum
-
-get lensed CMB TT spectrum
-
-use MultiModeCode to compute a parameterised primordial power spectrum
-
-get the energy injection efficiency tables
-
-minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
-
-lifetime of the decaying dark matter component (in s)
-
-fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
-
-the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
-
-compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
-
-priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
-
-extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
-
-compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
-
-Compute the primordial abundances today These contain effects from photodisintegration if relevant
-
-compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
-
-
-### define FUNCTION
-
-```
-#define FUNCTION DM_fraction_ALP
-```
-
-
-### define CAPABILITY
-
-```
-#define CAPABILITY DM_fraction
-```
-
-total abundance of axion-like particles, produced either by misalignment or freeze-in 
-
-compute primordial helium abundance
-
-collect all input options for AlterBBN in form of a string to double map
-
-get the value of Neff in the early Universe from CLASS backend
-
-energy density of non-cold DM components today
-
-energy density in radiation today
-
-energy density of CDM component today
-
-energy density in baryons today
-
-Get time since big bang at z in s.
-
-temperature of non-cold DM components
-
-Gaussian priors on the nuisance parameters of the Planck likelihoods.
-
-get lensed CMB lensing spectrum (Cell_phiphi)
-
-get lensed CMB B mode spectrum
-
-get lensed CMB E mode spectrum
-
-get lensed CMB Temperature-E mode cross-correlation spectrum
-
-get lensed CMB TT spectrum
-
-use MultiModeCode to compute a parameterised primordial power spectrum
-
-get the energy injection efficiency tables
-
-minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
-
-lifetime of the decaying dark matter component (in s)
-
-fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
-
-the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
-
-compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
-
-priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
-
-extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
-
-compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
-
-Compute the primordial abundances today These contain effects from photodisintegration if relevant
-
-compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
-
-
-### define FUNCTION
-
-```
-#define FUNCTION DM_fraction_ALP
-```
-
-
-### define CAPABILITY
-
-```
-#define CAPABILITY DM_fraction
-```
-
-total abundance of axion-like particles, produced either by misalignment or freeze-in 
-
-compute primordial helium abundance
-
-collect all input options for AlterBBN in form of a string to double map
-
-get the value of Neff in the early Universe from CLASS backend
-
-energy density of non-cold DM components today
-
-energy density in radiation today
-
-energy density of CDM component today
-
-energy density in baryons today
-
-Get time since big bang at z in s.
-
-temperature of non-cold DM components
-
-Gaussian priors on the nuisance parameters of the Planck likelihoods.
-
-get lensed CMB lensing spectrum (Cell_phiphi)
-
-get lensed CMB B mode spectrum
-
-get lensed CMB E mode spectrum
-
-get lensed CMB Temperature-E mode cross-correlation spectrum
-
-get lensed CMB TT spectrum
-
-use MultiModeCode to compute a parameterised primordial power spectrum
-
-get the energy injection efficiency tables
-
-minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
-
-lifetime of the decaying dark matter component (in s)
-
-fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
-
-the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
-
-compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
-
-priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
-
-extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
-
-compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
-
-Compute the primordial abundances today These contain effects from photodisintegration if relevant
-
-compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
-
-
-### define FUNCTION
-
-```
-#define FUNCTION DM_fraction_ALP
-```
-
-
-### define CAPABILITY
-
-```
-#define CAPABILITY DM_fraction
-```
-
-total abundance of axion-like particles, produced either by misalignment or freeze-in 
+compute Neff after BBN
 
 compute primordial helium abundance
 
@@ -4027,75 +1796,7 @@ compute BBN likelihood for chosen isotopes depending on yaml file settings, theo
 
 total abundance of axion-like particles, produced either by misalignment or freeze-in 
 
-compute primordial helium abundance
-
-collect all input options for AlterBBN in form of a string to double map
-
-get the value of Neff in the early Universe from CLASS backend
-
-energy density of non-cold DM components today
-
-energy density in radiation today
-
-energy density of CDM component today
-
-energy density in baryons today
-
-Get time since big bang at z in s.
-
-temperature of non-cold DM components
-
-Gaussian priors on the nuisance parameters of the Planck likelihoods.
-
-get lensed CMB lensing spectrum (Cell_phiphi)
-
-get lensed CMB B mode spectrum
-
-get lensed CMB E mode spectrum
-
-get lensed CMB Temperature-E mode cross-correlation spectrum
-
-get lensed CMB TT spectrum
-
-use MultiModeCode to compute a parameterised primordial power spectrum
-
-get the energy injection efficiency tables
-
-minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
-
-lifetime of the decaying dark matter component (in s)
-
-fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
-
-the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
-
-compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
-
-priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
-
-extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
-
-compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
-
-Compute the primordial abundances today These contain effects from photodisintegration if relevant
-
-compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
-
-
-### define FUNCTION
-
-```
-#define FUNCTION DM_fraction_ALP
-```
-
-
-### define CAPABILITY
-
-```
-#define CAPABILITY DM_fraction
-```
-
-total abundance of axion-like particles, produced either by misalignment or freeze-in 
+compute Neff after BBN
 
 compute primordial helium abundance
 
@@ -4167,75 +1868,7 @@ compute BBN likelihood for chosen isotopes depending on yaml file settings, theo
 
 total abundance of axion-like particles, produced either by misalignment or freeze-in 
 
-compute primordial helium abundance
-
-collect all input options for AlterBBN in form of a string to double map
-
-get the value of Neff in the early Universe from CLASS backend
-
-energy density of non-cold DM components today
-
-energy density in radiation today
-
-energy density of CDM component today
-
-energy density in baryons today
-
-Get time since big bang at z in s.
-
-temperature of non-cold DM components
-
-Gaussian priors on the nuisance parameters of the Planck likelihoods.
-
-get lensed CMB lensing spectrum (Cell_phiphi)
-
-get lensed CMB B mode spectrum
-
-get lensed CMB E mode spectrum
-
-get lensed CMB Temperature-E mode cross-correlation spectrum
-
-get lensed CMB TT spectrum
-
-use MultiModeCode to compute a parameterised primordial power spectrum
-
-get the energy injection efficiency tables
-
-minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
-
-lifetime of the decaying dark matter component (in s)
-
-fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
-
-the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
-
-compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
-
-priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
-
-extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
-
-compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
-
-Compute the primordial abundances today These contain effects from photodisintegration if relevant
-
-compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
-
-
-### define FUNCTION
-
-```
-#define FUNCTION DM_fraction_ALP
-```
-
-
-### define CAPABILITY
-
-```
-#define CAPABILITY DM_fraction
-```
-
-total abundance of axion-like particles, produced either by misalignment or freeze-in 
+compute Neff after BBN
 
 compute primordial helium abundance
 
@@ -4307,75 +1940,7 @@ compute BBN likelihood for chosen isotopes depending on yaml file settings, theo
 
 total abundance of axion-like particles, produced either by misalignment or freeze-in 
 
-compute primordial helium abundance
-
-collect all input options for AlterBBN in form of a string to double map
-
-get the value of Neff in the early Universe from CLASS backend
-
-energy density of non-cold DM components today
-
-energy density in radiation today
-
-energy density of CDM component today
-
-energy density in baryons today
-
-Get time since big bang at z in s.
-
-temperature of non-cold DM components
-
-Gaussian priors on the nuisance parameters of the Planck likelihoods.
-
-get lensed CMB lensing spectrum (Cell_phiphi)
-
-get lensed CMB B mode spectrum
-
-get lensed CMB E mode spectrum
-
-get lensed CMB Temperature-E mode cross-correlation spectrum
-
-get lensed CMB TT spectrum
-
-use MultiModeCode to compute a parameterised primordial power spectrum
-
-get the energy injection efficiency tables
-
-minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
-
-lifetime of the decaying dark matter component (in s)
-
-fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
-
-the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
-
-compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
-
-priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
-
-extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
-
-compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
-
-Compute the primordial abundances today These contain effects from photodisintegration if relevant
-
-compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
-
-
-### define FUNCTION
-
-```
-#define FUNCTION DM_fraction_ALP
-```
-
-
-### define CAPABILITY
-
-```
-#define CAPABILITY DM_fraction
-```
-
-total abundance of axion-like particles, produced either by misalignment or freeze-in 
+compute Neff after BBN
 
 compute primordial helium abundance
 
@@ -4447,75 +2012,7 @@ compute BBN likelihood for chosen isotopes depending on yaml file settings, theo
 
 total abundance of axion-like particles, produced either by misalignment or freeze-in 
 
-compute primordial helium abundance
-
-collect all input options for AlterBBN in form of a string to double map
-
-get the value of Neff in the early Universe from CLASS backend
-
-energy density of non-cold DM components today
-
-energy density in radiation today
-
-energy density of CDM component today
-
-energy density in baryons today
-
-Get time since big bang at z in s.
-
-temperature of non-cold DM components
-
-Gaussian priors on the nuisance parameters of the Planck likelihoods.
-
-get lensed CMB lensing spectrum (Cell_phiphi)
-
-get lensed CMB B mode spectrum
-
-get lensed CMB E mode spectrum
-
-get lensed CMB Temperature-E mode cross-correlation spectrum
-
-get lensed CMB TT spectrum
-
-use MultiModeCode to compute a parameterised primordial power spectrum
-
-get the energy injection efficiency tables
-
-minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
-
-lifetime of the decaying dark matter component (in s)
-
-fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
-
-the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
-
-compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
-
-priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
-
-extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
-
-compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
-
-Compute the primordial abundances today These contain effects from photodisintegration if relevant
-
-compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
-
-
-### define FUNCTION
-
-```
-#define FUNCTION DM_fraction_ALP
-```
-
-
-### define CAPABILITY
-
-```
-#define CAPABILITY DM_fraction
-```
-
-total abundance of axion-like particles, produced either by misalignment or freeze-in 
+compute Neff after BBN
 
 compute primordial helium abundance
 
@@ -4587,6 +2084,8 @@ compute BBN likelihood for chosen isotopes depending on yaml file settings, theo
 
 total abundance of axion-like particles, produced either by misalignment or freeze-in 
 
+compute Neff after BBN
+
 compute primordial helium abundance
 
 collect all input options for AlterBBN in form of a string to double map
@@ -4657,6 +2156,1179 @@ compute BBN likelihood for chosen isotopes depending on yaml file settings, theo
 
 total abundance of axion-like particles, produced either by misalignment or freeze-in 
 
+compute Neff after BBN
+
+compute primordial helium abundance
+
+collect all input options for AlterBBN in form of a string to double map
+
+get the value of Neff in the early Universe from CLASS backend
+
+energy density of non-cold DM components today
+
+energy density in radiation today
+
+energy density of CDM component today
+
+energy density in baryons today
+
+Get time since big bang at z in s.
+
+temperature of non-cold DM components
+
+Gaussian priors on the nuisance parameters of the Planck likelihoods.
+
+get lensed CMB lensing spectrum (Cell_phiphi)
+
+get lensed CMB B mode spectrum
+
+get lensed CMB E mode spectrum
+
+get lensed CMB Temperature-E mode cross-correlation spectrum
+
+get lensed CMB TT spectrum
+
+use MultiModeCode to compute a parameterised primordial power spectrum
+
+get the energy injection efficiency tables
+
+minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
+
+lifetime of the decaying dark matter component (in s)
+
+fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
+
+the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
+
+compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
+
+priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
+
+extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
+
+compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
+
+Compute the primordial abundances today These contain effects from photodisintegration if relevant
+
+compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
+
+
+### define FUNCTION
+
+```
+#define FUNCTION DM_fraction_ALP
+```
+
+
+### define CAPABILITY
+
+```
+#define CAPABILITY DM_fraction
+```
+
+total abundance of axion-like particles, produced either by misalignment or freeze-in 
+
+compute Neff after BBN
+
+compute primordial helium abundance
+
+collect all input options for AlterBBN in form of a string to double map
+
+get the value of Neff in the early Universe from CLASS backend
+
+energy density of non-cold DM components today
+
+energy density in radiation today
+
+energy density of CDM component today
+
+energy density in baryons today
+
+Get time since big bang at z in s.
+
+temperature of non-cold DM components
+
+Gaussian priors on the nuisance parameters of the Planck likelihoods.
+
+get lensed CMB lensing spectrum (Cell_phiphi)
+
+get lensed CMB B mode spectrum
+
+get lensed CMB E mode spectrum
+
+get lensed CMB Temperature-E mode cross-correlation spectrum
+
+get lensed CMB TT spectrum
+
+use MultiModeCode to compute a parameterised primordial power spectrum
+
+get the energy injection efficiency tables
+
+minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
+
+lifetime of the decaying dark matter component (in s)
+
+fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
+
+the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
+
+compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
+
+priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
+
+extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
+
+compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
+
+Compute the primordial abundances today These contain effects from photodisintegration if relevant
+
+compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
+
+
+### define FUNCTION
+
+```
+#define FUNCTION DM_fraction_ALP
+```
+
+
+### define CAPABILITY
+
+```
+#define CAPABILITY DM_fraction
+```
+
+total abundance of axion-like particles, produced either by misalignment or freeze-in 
+
+compute Neff after BBN
+
+compute primordial helium abundance
+
+collect all input options for AlterBBN in form of a string to double map
+
+get the value of Neff in the early Universe from CLASS backend
+
+energy density of non-cold DM components today
+
+energy density in radiation today
+
+energy density of CDM component today
+
+energy density in baryons today
+
+Get time since big bang at z in s.
+
+temperature of non-cold DM components
+
+Gaussian priors on the nuisance parameters of the Planck likelihoods.
+
+get lensed CMB lensing spectrum (Cell_phiphi)
+
+get lensed CMB B mode spectrum
+
+get lensed CMB E mode spectrum
+
+get lensed CMB Temperature-E mode cross-correlation spectrum
+
+get lensed CMB TT spectrum
+
+use MultiModeCode to compute a parameterised primordial power spectrum
+
+get the energy injection efficiency tables
+
+minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
+
+lifetime of the decaying dark matter component (in s)
+
+fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
+
+the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
+
+compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
+
+priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
+
+extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
+
+compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
+
+Compute the primordial abundances today These contain effects from photodisintegration if relevant
+
+compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
+
+
+### define FUNCTION
+
+```
+#define FUNCTION DM_fraction_ALP
+```
+
+
+### define CAPABILITY
+
+```
+#define CAPABILITY DM_fraction
+```
+
+total abundance of axion-like particles, produced either by misalignment or freeze-in 
+
+compute Neff after BBN
+
+compute primordial helium abundance
+
+collect all input options for AlterBBN in form of a string to double map
+
+get the value of Neff in the early Universe from CLASS backend
+
+energy density of non-cold DM components today
+
+energy density in radiation today
+
+energy density of CDM component today
+
+energy density in baryons today
+
+Get time since big bang at z in s.
+
+temperature of non-cold DM components
+
+Gaussian priors on the nuisance parameters of the Planck likelihoods.
+
+get lensed CMB lensing spectrum (Cell_phiphi)
+
+get lensed CMB B mode spectrum
+
+get lensed CMB E mode spectrum
+
+get lensed CMB Temperature-E mode cross-correlation spectrum
+
+get lensed CMB TT spectrum
+
+use MultiModeCode to compute a parameterised primordial power spectrum
+
+get the energy injection efficiency tables
+
+minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
+
+lifetime of the decaying dark matter component (in s)
+
+fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
+
+the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
+
+compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
+
+priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
+
+extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
+
+compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
+
+Compute the primordial abundances today These contain effects from photodisintegration if relevant
+
+compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
+
+
+### define FUNCTION
+
+```
+#define FUNCTION DM_fraction_ALP
+```
+
+
+### define CAPABILITY
+
+```
+#define CAPABILITY DM_fraction
+```
+
+total abundance of axion-like particles, produced either by misalignment or freeze-in 
+
+compute Neff after BBN
+
+compute primordial helium abundance
+
+collect all input options for AlterBBN in form of a string to double map
+
+get the value of Neff in the early Universe from CLASS backend
+
+energy density of non-cold DM components today
+
+energy density in radiation today
+
+energy density of CDM component today
+
+energy density in baryons today
+
+Get time since big bang at z in s.
+
+temperature of non-cold DM components
+
+Gaussian priors on the nuisance parameters of the Planck likelihoods.
+
+get lensed CMB lensing spectrum (Cell_phiphi)
+
+get lensed CMB B mode spectrum
+
+get lensed CMB E mode spectrum
+
+get lensed CMB Temperature-E mode cross-correlation spectrum
+
+get lensed CMB TT spectrum
+
+use MultiModeCode to compute a parameterised primordial power spectrum
+
+get the energy injection efficiency tables
+
+minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
+
+lifetime of the decaying dark matter component (in s)
+
+fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
+
+the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
+
+compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
+
+priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
+
+extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
+
+compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
+
+Compute the primordial abundances today These contain effects from photodisintegration if relevant
+
+compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
+
+
+### define FUNCTION
+
+```
+#define FUNCTION DM_fraction_ALP
+```
+
+
+### define CAPABILITY
+
+```
+#define CAPABILITY DM_fraction
+```
+
+total abundance of axion-like particles, produced either by misalignment or freeze-in 
+
+compute Neff after BBN
+
+compute primordial helium abundance
+
+collect all input options for AlterBBN in form of a string to double map
+
+get the value of Neff in the early Universe from CLASS backend
+
+energy density of non-cold DM components today
+
+energy density in radiation today
+
+energy density of CDM component today
+
+energy density in baryons today
+
+Get time since big bang at z in s.
+
+temperature of non-cold DM components
+
+Gaussian priors on the nuisance parameters of the Planck likelihoods.
+
+get lensed CMB lensing spectrum (Cell_phiphi)
+
+get lensed CMB B mode spectrum
+
+get lensed CMB E mode spectrum
+
+get lensed CMB Temperature-E mode cross-correlation spectrum
+
+get lensed CMB TT spectrum
+
+use MultiModeCode to compute a parameterised primordial power spectrum
+
+get the energy injection efficiency tables
+
+minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
+
+lifetime of the decaying dark matter component (in s)
+
+fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
+
+the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
+
+compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
+
+priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
+
+extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
+
+compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
+
+Compute the primordial abundances today These contain effects from photodisintegration if relevant
+
+compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
+
+
+### define FUNCTION
+
+```
+#define FUNCTION DM_fraction_ALP
+```
+
+
+### define CAPABILITY
+
+```
+#define CAPABILITY DM_fraction
+```
+
+total abundance of axion-like particles, produced either by misalignment or freeze-in 
+
+compute Neff after BBN
+
+compute primordial helium abundance
+
+collect all input options for AlterBBN in form of a string to double map
+
+get the value of Neff in the early Universe from CLASS backend
+
+energy density of non-cold DM components today
+
+energy density in radiation today
+
+energy density of CDM component today
+
+energy density in baryons today
+
+Get time since big bang at z in s.
+
+temperature of non-cold DM components
+
+Gaussian priors on the nuisance parameters of the Planck likelihoods.
+
+get lensed CMB lensing spectrum (Cell_phiphi)
+
+get lensed CMB B mode spectrum
+
+get lensed CMB E mode spectrum
+
+get lensed CMB Temperature-E mode cross-correlation spectrum
+
+get lensed CMB TT spectrum
+
+use MultiModeCode to compute a parameterised primordial power spectrum
+
+get the energy injection efficiency tables
+
+minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
+
+lifetime of the decaying dark matter component (in s)
+
+fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
+
+the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
+
+compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
+
+priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
+
+extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
+
+compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
+
+Compute the primordial abundances today These contain effects from photodisintegration if relevant
+
+compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
+
+
+### define FUNCTION
+
+```
+#define FUNCTION DM_fraction_ALP
+```
+
+
+### define CAPABILITY
+
+```
+#define CAPABILITY DM_fraction
+```
+
+total abundance of axion-like particles, produced either by misalignment or freeze-in 
+
+compute Neff after BBN
+
+compute primordial helium abundance
+
+collect all input options for AlterBBN in form of a string to double map
+
+get the value of Neff in the early Universe from CLASS backend
+
+energy density of non-cold DM components today
+
+energy density in radiation today
+
+energy density of CDM component today
+
+energy density in baryons today
+
+Get time since big bang at z in s.
+
+temperature of non-cold DM components
+
+Gaussian priors on the nuisance parameters of the Planck likelihoods.
+
+get lensed CMB lensing spectrum (Cell_phiphi)
+
+get lensed CMB B mode spectrum
+
+get lensed CMB E mode spectrum
+
+get lensed CMB Temperature-E mode cross-correlation spectrum
+
+get lensed CMB TT spectrum
+
+use MultiModeCode to compute a parameterised primordial power spectrum
+
+get the energy injection efficiency tables
+
+minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
+
+lifetime of the decaying dark matter component (in s)
+
+fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
+
+the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
+
+compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
+
+priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
+
+extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
+
+compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
+
+Compute the primordial abundances today These contain effects from photodisintegration if relevant
+
+compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
+
+
+### define FUNCTION
+
+```
+#define FUNCTION DM_fraction_ALP
+```
+
+
+### define CAPABILITY
+
+```
+#define CAPABILITY DM_fraction
+```
+
+total abundance of axion-like particles, produced either by misalignment or freeze-in 
+
+compute Neff after BBN
+
+compute primordial helium abundance
+
+collect all input options for AlterBBN in form of a string to double map
+
+get the value of Neff in the early Universe from CLASS backend
+
+energy density of non-cold DM components today
+
+energy density in radiation today
+
+energy density of CDM component today
+
+energy density in baryons today
+
+Get time since big bang at z in s.
+
+temperature of non-cold DM components
+
+Gaussian priors on the nuisance parameters of the Planck likelihoods.
+
+get lensed CMB lensing spectrum (Cell_phiphi)
+
+get lensed CMB B mode spectrum
+
+get lensed CMB E mode spectrum
+
+get lensed CMB Temperature-E mode cross-correlation spectrum
+
+get lensed CMB TT spectrum
+
+use MultiModeCode to compute a parameterised primordial power spectrum
+
+get the energy injection efficiency tables
+
+minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
+
+lifetime of the decaying dark matter component (in s)
+
+fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
+
+the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
+
+compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
+
+priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
+
+extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
+
+compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
+
+Compute the primordial abundances today These contain effects from photodisintegration if relevant
+
+compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
+
+
+### define FUNCTION
+
+```
+#define FUNCTION DM_fraction_ALP
+```
+
+
+### define CAPABILITY
+
+```
+#define CAPABILITY DM_fraction
+```
+
+total abundance of axion-like particles, produced either by misalignment or freeze-in 
+
+compute Neff after BBN
+
+compute primordial helium abundance
+
+collect all input options for AlterBBN in form of a string to double map
+
+get the value of Neff in the early Universe from CLASS backend
+
+energy density of non-cold DM components today
+
+energy density in radiation today
+
+energy density of CDM component today
+
+energy density in baryons today
+
+Get time since big bang at z in s.
+
+temperature of non-cold DM components
+
+Gaussian priors on the nuisance parameters of the Planck likelihoods.
+
+get lensed CMB lensing spectrum (Cell_phiphi)
+
+get lensed CMB B mode spectrum
+
+get lensed CMB E mode spectrum
+
+get lensed CMB Temperature-E mode cross-correlation spectrum
+
+get lensed CMB TT spectrum
+
+use MultiModeCode to compute a parameterised primordial power spectrum
+
+get the energy injection efficiency tables
+
+minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
+
+lifetime of the decaying dark matter component (in s)
+
+fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
+
+the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
+
+compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
+
+priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
+
+extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
+
+compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
+
+Compute the primordial abundances today These contain effects from photodisintegration if relevant
+
+compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
+
+
+### define FUNCTION
+
+```
+#define FUNCTION DM_fraction_ALP
+```
+
+
+### define CAPABILITY
+
+```
+#define CAPABILITY DM_fraction
+```
+
+total abundance of axion-like particles, produced either by misalignment or freeze-in 
+
+compute Neff after BBN
+
+compute primordial helium abundance
+
+collect all input options for AlterBBN in form of a string to double map
+
+get the value of Neff in the early Universe from CLASS backend
+
+energy density of non-cold DM components today
+
+energy density in radiation today
+
+energy density of CDM component today
+
+energy density in baryons today
+
+Get time since big bang at z in s.
+
+temperature of non-cold DM components
+
+Gaussian priors on the nuisance parameters of the Planck likelihoods.
+
+get lensed CMB lensing spectrum (Cell_phiphi)
+
+get lensed CMB B mode spectrum
+
+get lensed CMB E mode spectrum
+
+get lensed CMB Temperature-E mode cross-correlation spectrum
+
+get lensed CMB TT spectrum
+
+use MultiModeCode to compute a parameterised primordial power spectrum
+
+get the energy injection efficiency tables
+
+minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
+
+lifetime of the decaying dark matter component (in s)
+
+fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
+
+the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
+
+compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
+
+priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
+
+extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
+
+compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
+
+Compute the primordial abundances today These contain effects from photodisintegration if relevant
+
+compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
+
+
+### define FUNCTION
+
+```
+#define FUNCTION DM_fraction_ALP
+```
+
+
+### define FUNCTION
+
+```
+#define FUNCTION DM_fraction_ALP
+```
+
+
+### define FUNCTION
+
+```
+#define FUNCTION DM_fraction_ALP
+```
+
+
+### define FUNCTION
+
+```
+#define FUNCTION DM_fraction_ALP
+```
+
+
+### define FUNCTION
+
+```
+#define FUNCTION DM_fraction_ALP
+```
+
+
+### define CAPABILITY
+
+```
+#define CAPABILITY DM_fraction
+```
+
+total abundance of axion-like particles, produced either by misalignment or freeze-in 
+
+compute Neff after BBN
+
+compute primordial helium abundance
+
+collect all input options for AlterBBN in form of a string to double map
+
+get the value of Neff in the early Universe from CLASS backend
+
+energy density of non-cold DM components today
+
+energy density in radiation today
+
+energy density of CDM component today
+
+energy density in baryons today
+
+Get time since big bang at z in s.
+
+temperature of non-cold DM components
+
+Gaussian priors on the nuisance parameters of the Planck likelihoods.
+
+get lensed CMB lensing spectrum (Cell_phiphi)
+
+get lensed CMB B mode spectrum
+
+get lensed CMB E mode spectrum
+
+get lensed CMB Temperature-E mode cross-correlation spectrum
+
+get lensed CMB TT spectrum
+
+use MultiModeCode to compute a parameterised primordial power spectrum
+
+get the energy injection efficiency tables
+
+minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
+
+lifetime of the decaying dark matter component (in s)
+
+fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
+
+the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
+
+compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
+
+priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
+
+extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
+
+compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
+
+Compute the primordial abundances today These contain effects from photodisintegration if relevant
+
+compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
+
+
+### define FUNCTION
+
+```
+#define FUNCTION DM_fraction_ALP
+```
+
+
+### define FUNCTION
+
+```
+#define FUNCTION DM_fraction_ALP
+```
+
+
+### define FUNCTION
+
+```
+#define FUNCTION DM_fraction_ALP
+```
+
+
+### define FUNCTION
+
+```
+#define FUNCTION DM_fraction_ALP
+```
+
+
+### define FUNCTION
+
+```
+#define FUNCTION DM_fraction_ALP
+```
+
+
+### define FUNCTION
+
+```
+#define FUNCTION DM_fraction_ALP
+```
+
+
+### define FUNCTION
+
+```
+#define FUNCTION DM_fraction_ALP
+```
+
+
+### define FUNCTION
+
+```
+#define FUNCTION DM_fraction_ALP
+```
+
+
+### define CAPABILITY
+
+```
+#define CAPABILITY DM_fraction
+```
+
+total abundance of axion-like particles, produced either by misalignment or freeze-in 
+
+compute Neff after BBN
+
+compute primordial helium abundance
+
+collect all input options for AlterBBN in form of a string to double map
+
+get the value of Neff in the early Universe from CLASS backend
+
+energy density of non-cold DM components today
+
+energy density in radiation today
+
+energy density of CDM component today
+
+energy density in baryons today
+
+Get time since big bang at z in s.
+
+temperature of non-cold DM components
+
+Gaussian priors on the nuisance parameters of the Planck likelihoods.
+
+get lensed CMB lensing spectrum (Cell_phiphi)
+
+get lensed CMB B mode spectrum
+
+get lensed CMB E mode spectrum
+
+get lensed CMB Temperature-E mode cross-correlation spectrum
+
+get lensed CMB TT spectrum
+
+use MultiModeCode to compute a parameterised primordial power spectrum
+
+get the energy injection efficiency tables
+
+minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
+
+lifetime of the decaying dark matter component (in s)
+
+fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
+
+the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
+
+compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
+
+priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
+
+extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
+
+compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
+
+Compute the primordial abundances today These contain effects from photodisintegration if relevant
+
+compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
+
+
+### define FUNCTION
+
+```
+#define FUNCTION DM_fraction_ALP
+```
+
+
+### define FUNCTION
+
+```
+#define FUNCTION DM_fraction_ALP
+```
+
+
+### define FUNCTION
+
+```
+#define FUNCTION DM_fraction_ALP
+```
+
+
+### define CAPABILITY
+
+```
+#define CAPABILITY DM_fraction
+```
+
+total abundance of axion-like particles, produced either by misalignment or freeze-in 
+
+compute Neff after BBN
+
+compute primordial helium abundance
+
+collect all input options for AlterBBN in form of a string to double map
+
+get the value of Neff in the early Universe from CLASS backend
+
+energy density of non-cold DM components today
+
+energy density in radiation today
+
+energy density of CDM component today
+
+energy density in baryons today
+
+Get time since big bang at z in s.
+
+temperature of non-cold DM components
+
+Gaussian priors on the nuisance parameters of the Planck likelihoods.
+
+get lensed CMB lensing spectrum (Cell_phiphi)
+
+get lensed CMB B mode spectrum
+
+get lensed CMB E mode spectrum
+
+get lensed CMB Temperature-E mode cross-correlation spectrum
+
+get lensed CMB TT spectrum
+
+use MultiModeCode to compute a parameterised primordial power spectrum
+
+get the energy injection efficiency tables
+
+minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
+
+lifetime of the decaying dark matter component (in s)
+
+fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
+
+the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
+
+compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
+
+priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
+
+extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
+
+compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
+
+Compute the primordial abundances today These contain effects from photodisintegration if relevant
+
+compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
+
+
+### define FUNCTION
+
+```
+#define FUNCTION DM_fraction_ALP
+```
+
+
+### define CAPABILITY
+
+```
+#define CAPABILITY DM_fraction
+```
+
+total abundance of axion-like particles, produced either by misalignment or freeze-in 
+
+compute Neff after BBN
+
+compute primordial helium abundance
+
+collect all input options for AlterBBN in form of a string to double map
+
+get the value of Neff in the early Universe from CLASS backend
+
+energy density of non-cold DM components today
+
+energy density in radiation today
+
+energy density of CDM component today
+
+energy density in baryons today
+
+Get time since big bang at z in s.
+
+temperature of non-cold DM components
+
+Gaussian priors on the nuisance parameters of the Planck likelihoods.
+
+get lensed CMB lensing spectrum (Cell_phiphi)
+
+get lensed CMB B mode spectrum
+
+get lensed CMB E mode spectrum
+
+get lensed CMB Temperature-E mode cross-correlation spectrum
+
+get lensed CMB TT spectrum
+
+use MultiModeCode to compute a parameterised primordial power spectrum
+
+get the energy injection efficiency tables
+
+minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
+
+lifetime of the decaying dark matter component (in s)
+
+fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
+
+the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
+
+compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
+
+priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
+
+extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
+
+compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
+
+Compute the primordial abundances today These contain effects from photodisintegration if relevant
+
+compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
+
+
+### define FUNCTION
+
+```
+#define FUNCTION DM_fraction_ALP
+```
+
+
+### define CAPABILITY
+
+```
+#define CAPABILITY DM_fraction
+```
+
+total abundance of axion-like particles, produced either by misalignment or freeze-in 
+
+compute Neff after BBN
+
 compute primordial helium abundance
 
 collect all input options for AlterBBN in form of a string to double map
@@ -4734,6 +3406,8 @@ compute BBN likelihood for chosen isotopes depending on yaml file settings, theo
 
 total abundance of axion-like particles, produced either by misalignment or freeze-in 
 
+compute Neff after BBN
+
 compute primordial helium abundance
 
 collect all input options for AlterBBN in form of a string to double map
@@ -4803,6 +3477,1606 @@ compute BBN likelihood for chosen isotopes depending on yaml file settings, theo
 ```
 
 total abundance of axion-like particles, produced either by misalignment or freeze-in 
+
+compute Neff after BBN
+
+compute primordial helium abundance
+
+collect all input options for AlterBBN in form of a string to double map
+
+get the value of Neff in the early Universe from CLASS backend
+
+energy density of non-cold DM components today
+
+energy density in radiation today
+
+energy density of CDM component today
+
+energy density in baryons today
+
+Get time since big bang at z in s.
+
+temperature of non-cold DM components
+
+Gaussian priors on the nuisance parameters of the Planck likelihoods.
+
+get lensed CMB lensing spectrum (Cell_phiphi)
+
+get lensed CMB B mode spectrum
+
+get lensed CMB E mode spectrum
+
+get lensed CMB Temperature-E mode cross-correlation spectrum
+
+get lensed CMB TT spectrum
+
+use MultiModeCode to compute a parameterised primordial power spectrum
+
+get the energy injection efficiency tables
+
+minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
+
+lifetime of the decaying dark matter component (in s)
+
+fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
+
+the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
+
+compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
+
+priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
+
+extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
+
+compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
+
+Compute the primordial abundances today These contain effects from photodisintegration if relevant
+
+compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
+
+
+### define FUNCTION
+
+```
+#define FUNCTION DM_fraction_ALP
+```
+
+
+### define CAPABILITY
+
+```
+#define CAPABILITY DM_fraction
+```
+
+total abundance of axion-like particles, produced either by misalignment or freeze-in 
+
+compute Neff after BBN
+
+compute primordial helium abundance
+
+collect all input options for AlterBBN in form of a string to double map
+
+get the value of Neff in the early Universe from CLASS backend
+
+energy density of non-cold DM components today
+
+energy density in radiation today
+
+energy density of CDM component today
+
+energy density in baryons today
+
+Get time since big bang at z in s.
+
+temperature of non-cold DM components
+
+Gaussian priors on the nuisance parameters of the Planck likelihoods.
+
+get lensed CMB lensing spectrum (Cell_phiphi)
+
+get lensed CMB B mode spectrum
+
+get lensed CMB E mode spectrum
+
+get lensed CMB Temperature-E mode cross-correlation spectrum
+
+get lensed CMB TT spectrum
+
+use MultiModeCode to compute a parameterised primordial power spectrum
+
+get the energy injection efficiency tables
+
+minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
+
+lifetime of the decaying dark matter component (in s)
+
+fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
+
+the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
+
+compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
+
+priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
+
+extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
+
+compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
+
+Compute the primordial abundances today These contain effects from photodisintegration if relevant
+
+compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
+
+
+### define FUNCTION
+
+```
+#define FUNCTION DM_fraction_ALP
+```
+
+
+### define CAPABILITY
+
+```
+#define CAPABILITY DM_fraction
+```
+
+total abundance of axion-like particles, produced either by misalignment or freeze-in 
+
+compute Neff after BBN
+
+compute primordial helium abundance
+
+collect all input options for AlterBBN in form of a string to double map
+
+get the value of Neff in the early Universe from CLASS backend
+
+energy density of non-cold DM components today
+
+energy density in radiation today
+
+energy density of CDM component today
+
+energy density in baryons today
+
+Get time since big bang at z in s.
+
+temperature of non-cold DM components
+
+Gaussian priors on the nuisance parameters of the Planck likelihoods.
+
+get lensed CMB lensing spectrum (Cell_phiphi)
+
+get lensed CMB B mode spectrum
+
+get lensed CMB E mode spectrum
+
+get lensed CMB Temperature-E mode cross-correlation spectrum
+
+get lensed CMB TT spectrum
+
+use MultiModeCode to compute a parameterised primordial power spectrum
+
+get the energy injection efficiency tables
+
+minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
+
+lifetime of the decaying dark matter component (in s)
+
+fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
+
+the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
+
+compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
+
+priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
+
+extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
+
+compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
+
+Compute the primordial abundances today These contain effects from photodisintegration if relevant
+
+compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
+
+
+### define FUNCTION
+
+```
+#define FUNCTION DM_fraction_ALP
+```
+
+
+### define CAPABILITY
+
+```
+#define CAPABILITY DM_fraction
+```
+
+total abundance of axion-like particles, produced either by misalignment or freeze-in 
+
+compute Neff after BBN
+
+compute primordial helium abundance
+
+collect all input options for AlterBBN in form of a string to double map
+
+get the value of Neff in the early Universe from CLASS backend
+
+energy density of non-cold DM components today
+
+energy density in radiation today
+
+energy density of CDM component today
+
+energy density in baryons today
+
+Get time since big bang at z in s.
+
+temperature of non-cold DM components
+
+Gaussian priors on the nuisance parameters of the Planck likelihoods.
+
+get lensed CMB lensing spectrum (Cell_phiphi)
+
+get lensed CMB B mode spectrum
+
+get lensed CMB E mode spectrum
+
+get lensed CMB Temperature-E mode cross-correlation spectrum
+
+get lensed CMB TT spectrum
+
+use MultiModeCode to compute a parameterised primordial power spectrum
+
+get the energy injection efficiency tables
+
+minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
+
+lifetime of the decaying dark matter component (in s)
+
+fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
+
+the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
+
+compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
+
+priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
+
+extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
+
+compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
+
+Compute the primordial abundances today These contain effects from photodisintegration if relevant
+
+compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
+
+
+### define FUNCTION
+
+```
+#define FUNCTION DM_fraction_ALP
+```
+
+
+### define CAPABILITY
+
+```
+#define CAPABILITY DM_fraction
+```
+
+total abundance of axion-like particles, produced either by misalignment or freeze-in 
+
+compute Neff after BBN
+
+compute primordial helium abundance
+
+collect all input options for AlterBBN in form of a string to double map
+
+get the value of Neff in the early Universe from CLASS backend
+
+energy density of non-cold DM components today
+
+energy density in radiation today
+
+energy density of CDM component today
+
+energy density in baryons today
+
+Get time since big bang at z in s.
+
+temperature of non-cold DM components
+
+Gaussian priors on the nuisance parameters of the Planck likelihoods.
+
+get lensed CMB lensing spectrum (Cell_phiphi)
+
+get lensed CMB B mode spectrum
+
+get lensed CMB E mode spectrum
+
+get lensed CMB Temperature-E mode cross-correlation spectrum
+
+get lensed CMB TT spectrum
+
+use MultiModeCode to compute a parameterised primordial power spectrum
+
+get the energy injection efficiency tables
+
+minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
+
+lifetime of the decaying dark matter component (in s)
+
+fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
+
+the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
+
+compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
+
+priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
+
+extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
+
+compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
+
+Compute the primordial abundances today These contain effects from photodisintegration if relevant
+
+compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
+
+
+### define FUNCTION
+
+```
+#define FUNCTION DM_fraction_ALP
+```
+
+
+### define CAPABILITY
+
+```
+#define CAPABILITY DM_fraction
+```
+
+total abundance of axion-like particles, produced either by misalignment or freeze-in 
+
+compute Neff after BBN
+
+compute primordial helium abundance
+
+collect all input options for AlterBBN in form of a string to double map
+
+get the value of Neff in the early Universe from CLASS backend
+
+energy density of non-cold DM components today
+
+energy density in radiation today
+
+energy density of CDM component today
+
+energy density in baryons today
+
+Get time since big bang at z in s.
+
+temperature of non-cold DM components
+
+Gaussian priors on the nuisance parameters of the Planck likelihoods.
+
+get lensed CMB lensing spectrum (Cell_phiphi)
+
+get lensed CMB B mode spectrum
+
+get lensed CMB E mode spectrum
+
+get lensed CMB Temperature-E mode cross-correlation spectrum
+
+get lensed CMB TT spectrum
+
+use MultiModeCode to compute a parameterised primordial power spectrum
+
+get the energy injection efficiency tables
+
+minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
+
+lifetime of the decaying dark matter component (in s)
+
+fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
+
+the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
+
+compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
+
+priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
+
+extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
+
+compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
+
+Compute the primordial abundances today These contain effects from photodisintegration if relevant
+
+compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
+
+
+### define FUNCTION
+
+```
+#define FUNCTION DM_fraction_ALP
+```
+
+
+### define CAPABILITY
+
+```
+#define CAPABILITY DM_fraction
+```
+
+total abundance of axion-like particles, produced either by misalignment or freeze-in 
+
+compute Neff after BBN
+
+compute primordial helium abundance
+
+collect all input options for AlterBBN in form of a string to double map
+
+get the value of Neff in the early Universe from CLASS backend
+
+energy density of non-cold DM components today
+
+energy density in radiation today
+
+energy density of CDM component today
+
+energy density in baryons today
+
+Get time since big bang at z in s.
+
+temperature of non-cold DM components
+
+Gaussian priors on the nuisance parameters of the Planck likelihoods.
+
+get lensed CMB lensing spectrum (Cell_phiphi)
+
+get lensed CMB B mode spectrum
+
+get lensed CMB E mode spectrum
+
+get lensed CMB Temperature-E mode cross-correlation spectrum
+
+get lensed CMB TT spectrum
+
+use MultiModeCode to compute a parameterised primordial power spectrum
+
+get the energy injection efficiency tables
+
+minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
+
+lifetime of the decaying dark matter component (in s)
+
+fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
+
+the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
+
+compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
+
+priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
+
+extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
+
+compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
+
+Compute the primordial abundances today These contain effects from photodisintegration if relevant
+
+compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
+
+
+### define FUNCTION
+
+```
+#define FUNCTION DM_fraction_ALP
+```
+
+
+### define CAPABILITY
+
+```
+#define CAPABILITY DM_fraction
+```
+
+total abundance of axion-like particles, produced either by misalignment or freeze-in 
+
+compute Neff after BBN
+
+compute primordial helium abundance
+
+collect all input options for AlterBBN in form of a string to double map
+
+get the value of Neff in the early Universe from CLASS backend
+
+energy density of non-cold DM components today
+
+energy density in radiation today
+
+energy density of CDM component today
+
+energy density in baryons today
+
+Get time since big bang at z in s.
+
+temperature of non-cold DM components
+
+Gaussian priors on the nuisance parameters of the Planck likelihoods.
+
+get lensed CMB lensing spectrum (Cell_phiphi)
+
+get lensed CMB B mode spectrum
+
+get lensed CMB E mode spectrum
+
+get lensed CMB Temperature-E mode cross-correlation spectrum
+
+get lensed CMB TT spectrum
+
+use MultiModeCode to compute a parameterised primordial power spectrum
+
+get the energy injection efficiency tables
+
+minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
+
+lifetime of the decaying dark matter component (in s)
+
+fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
+
+the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
+
+compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
+
+priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
+
+extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
+
+compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
+
+Compute the primordial abundances today These contain effects from photodisintegration if relevant
+
+compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
+
+
+### define FUNCTION
+
+```
+#define FUNCTION DM_fraction_ALP
+```
+
+
+### define CAPABILITY
+
+```
+#define CAPABILITY DM_fraction
+```
+
+total abundance of axion-like particles, produced either by misalignment or freeze-in 
+
+compute Neff after BBN
+
+compute primordial helium abundance
+
+collect all input options for AlterBBN in form of a string to double map
+
+get the value of Neff in the early Universe from CLASS backend
+
+energy density of non-cold DM components today
+
+energy density in radiation today
+
+energy density of CDM component today
+
+energy density in baryons today
+
+Get time since big bang at z in s.
+
+temperature of non-cold DM components
+
+Gaussian priors on the nuisance parameters of the Planck likelihoods.
+
+get lensed CMB lensing spectrum (Cell_phiphi)
+
+get lensed CMB B mode spectrum
+
+get lensed CMB E mode spectrum
+
+get lensed CMB Temperature-E mode cross-correlation spectrum
+
+get lensed CMB TT spectrum
+
+use MultiModeCode to compute a parameterised primordial power spectrum
+
+get the energy injection efficiency tables
+
+minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
+
+lifetime of the decaying dark matter component (in s)
+
+fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
+
+the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
+
+compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
+
+priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
+
+extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
+
+compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
+
+Compute the primordial abundances today These contain effects from photodisintegration if relevant
+
+compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
+
+
+### define FUNCTION
+
+```
+#define FUNCTION DM_fraction_ALP
+```
+
+
+### define CAPABILITY
+
+```
+#define CAPABILITY DM_fraction
+```
+
+total abundance of axion-like particles, produced either by misalignment or freeze-in 
+
+compute Neff after BBN
+
+compute primordial helium abundance
+
+collect all input options for AlterBBN in form of a string to double map
+
+get the value of Neff in the early Universe from CLASS backend
+
+energy density of non-cold DM components today
+
+energy density in radiation today
+
+energy density of CDM component today
+
+energy density in baryons today
+
+Get time since big bang at z in s.
+
+temperature of non-cold DM components
+
+Gaussian priors on the nuisance parameters of the Planck likelihoods.
+
+get lensed CMB lensing spectrum (Cell_phiphi)
+
+get lensed CMB B mode spectrum
+
+get lensed CMB E mode spectrum
+
+get lensed CMB Temperature-E mode cross-correlation spectrum
+
+get lensed CMB TT spectrum
+
+use MultiModeCode to compute a parameterised primordial power spectrum
+
+get the energy injection efficiency tables
+
+minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
+
+lifetime of the decaying dark matter component (in s)
+
+fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
+
+the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
+
+compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
+
+priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
+
+extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
+
+compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
+
+Compute the primordial abundances today These contain effects from photodisintegration if relevant
+
+compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
+
+
+### define FUNCTION
+
+```
+#define FUNCTION DM_fraction_ALP
+```
+
+
+### define FUNCTION
+
+```
+#define FUNCTION DM_fraction_ALP
+```
+
+
+### define CAPABILITY
+
+```
+#define CAPABILITY DM_fraction
+```
+
+total abundance of axion-like particles, produced either by misalignment or freeze-in 
+
+compute Neff after BBN
+
+compute primordial helium abundance
+
+collect all input options for AlterBBN in form of a string to double map
+
+get the value of Neff in the early Universe from CLASS backend
+
+energy density of non-cold DM components today
+
+energy density in radiation today
+
+energy density of CDM component today
+
+energy density in baryons today
+
+Get time since big bang at z in s.
+
+temperature of non-cold DM components
+
+Gaussian priors on the nuisance parameters of the Planck likelihoods.
+
+get lensed CMB lensing spectrum (Cell_phiphi)
+
+get lensed CMB B mode spectrum
+
+get lensed CMB E mode spectrum
+
+get lensed CMB Temperature-E mode cross-correlation spectrum
+
+get lensed CMB TT spectrum
+
+use MultiModeCode to compute a parameterised primordial power spectrum
+
+get the energy injection efficiency tables
+
+minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
+
+lifetime of the decaying dark matter component (in s)
+
+fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
+
+the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
+
+compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
+
+priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
+
+extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
+
+compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
+
+Compute the primordial abundances today These contain effects from photodisintegration if relevant
+
+compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
+
+
+### define FUNCTION
+
+```
+#define FUNCTION DM_fraction_ALP
+```
+
+
+### define CAPABILITY
+
+```
+#define CAPABILITY DM_fraction
+```
+
+total abundance of axion-like particles, produced either by misalignment or freeze-in 
+
+compute Neff after BBN
+
+compute primordial helium abundance
+
+collect all input options for AlterBBN in form of a string to double map
+
+get the value of Neff in the early Universe from CLASS backend
+
+energy density of non-cold DM components today
+
+energy density in radiation today
+
+energy density of CDM component today
+
+energy density in baryons today
+
+Get time since big bang at z in s.
+
+temperature of non-cold DM components
+
+Gaussian priors on the nuisance parameters of the Planck likelihoods.
+
+get lensed CMB lensing spectrum (Cell_phiphi)
+
+get lensed CMB B mode spectrum
+
+get lensed CMB E mode spectrum
+
+get lensed CMB Temperature-E mode cross-correlation spectrum
+
+get lensed CMB TT spectrum
+
+use MultiModeCode to compute a parameterised primordial power spectrum
+
+get the energy injection efficiency tables
+
+minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
+
+lifetime of the decaying dark matter component (in s)
+
+fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
+
+the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
+
+compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
+
+priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
+
+extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
+
+compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
+
+Compute the primordial abundances today These contain effects from photodisintegration if relevant
+
+compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
+
+
+### define FUNCTION
+
+```
+#define FUNCTION DM_fraction_ALP
+```
+
+
+### define CAPABILITY
+
+```
+#define CAPABILITY DM_fraction
+```
+
+total abundance of axion-like particles, produced either by misalignment or freeze-in 
+
+compute Neff after BBN
+
+compute primordial helium abundance
+
+collect all input options for AlterBBN in form of a string to double map
+
+get the value of Neff in the early Universe from CLASS backend
+
+energy density of non-cold DM components today
+
+energy density in radiation today
+
+energy density of CDM component today
+
+energy density in baryons today
+
+Get time since big bang at z in s.
+
+temperature of non-cold DM components
+
+Gaussian priors on the nuisance parameters of the Planck likelihoods.
+
+get lensed CMB lensing spectrum (Cell_phiphi)
+
+get lensed CMB B mode spectrum
+
+get lensed CMB E mode spectrum
+
+get lensed CMB Temperature-E mode cross-correlation spectrum
+
+get lensed CMB TT spectrum
+
+use MultiModeCode to compute a parameterised primordial power spectrum
+
+get the energy injection efficiency tables
+
+minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
+
+lifetime of the decaying dark matter component (in s)
+
+fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
+
+the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
+
+compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
+
+priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
+
+extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
+
+compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
+
+Compute the primordial abundances today These contain effects from photodisintegration if relevant
+
+compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
+
+
+### define FUNCTION
+
+```
+#define FUNCTION DM_fraction_ALP
+```
+
+
+### define CAPABILITY
+
+```
+#define CAPABILITY DM_fraction
+```
+
+total abundance of axion-like particles, produced either by misalignment or freeze-in 
+
+compute Neff after BBN
+
+compute primordial helium abundance
+
+collect all input options for AlterBBN in form of a string to double map
+
+get the value of Neff in the early Universe from CLASS backend
+
+energy density of non-cold DM components today
+
+energy density in radiation today
+
+energy density of CDM component today
+
+energy density in baryons today
+
+Get time since big bang at z in s.
+
+temperature of non-cold DM components
+
+Gaussian priors on the nuisance parameters of the Planck likelihoods.
+
+get lensed CMB lensing spectrum (Cell_phiphi)
+
+get lensed CMB B mode spectrum
+
+get lensed CMB E mode spectrum
+
+get lensed CMB Temperature-E mode cross-correlation spectrum
+
+get lensed CMB TT spectrum
+
+use MultiModeCode to compute a parameterised primordial power spectrum
+
+get the energy injection efficiency tables
+
+minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
+
+lifetime of the decaying dark matter component (in s)
+
+fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
+
+the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
+
+compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
+
+priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
+
+extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
+
+compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
+
+Compute the primordial abundances today These contain effects from photodisintegration if relevant
+
+compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
+
+
+### define FUNCTION
+
+```
+#define FUNCTION DM_fraction_ALP
+```
+
+
+### define CAPABILITY
+
+```
+#define CAPABILITY DM_fraction
+```
+
+total abundance of axion-like particles, produced either by misalignment or freeze-in 
+
+compute Neff after BBN
+
+compute primordial helium abundance
+
+collect all input options for AlterBBN in form of a string to double map
+
+get the value of Neff in the early Universe from CLASS backend
+
+energy density of non-cold DM components today
+
+energy density in radiation today
+
+energy density of CDM component today
+
+energy density in baryons today
+
+Get time since big bang at z in s.
+
+temperature of non-cold DM components
+
+Gaussian priors on the nuisance parameters of the Planck likelihoods.
+
+get lensed CMB lensing spectrum (Cell_phiphi)
+
+get lensed CMB B mode spectrum
+
+get lensed CMB E mode spectrum
+
+get lensed CMB Temperature-E mode cross-correlation spectrum
+
+get lensed CMB TT spectrum
+
+use MultiModeCode to compute a parameterised primordial power spectrum
+
+get the energy injection efficiency tables
+
+minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
+
+lifetime of the decaying dark matter component (in s)
+
+fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
+
+the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
+
+compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
+
+priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
+
+extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
+
+compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
+
+Compute the primordial abundances today These contain effects from photodisintegration if relevant
+
+compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
+
+
+### define FUNCTION
+
+```
+#define FUNCTION DM_fraction_ALP
+```
+
+
+### define CAPABILITY
+
+```
+#define CAPABILITY DM_fraction
+```
+
+total abundance of axion-like particles, produced either by misalignment or freeze-in 
+
+compute Neff after BBN
+
+compute primordial helium abundance
+
+collect all input options for AlterBBN in form of a string to double map
+
+get the value of Neff in the early Universe from CLASS backend
+
+energy density of non-cold DM components today
+
+energy density in radiation today
+
+energy density of CDM component today
+
+energy density in baryons today
+
+Get time since big bang at z in s.
+
+temperature of non-cold DM components
+
+Gaussian priors on the nuisance parameters of the Planck likelihoods.
+
+get lensed CMB lensing spectrum (Cell_phiphi)
+
+get lensed CMB B mode spectrum
+
+get lensed CMB E mode spectrum
+
+get lensed CMB Temperature-E mode cross-correlation spectrum
+
+get lensed CMB TT spectrum
+
+use MultiModeCode to compute a parameterised primordial power spectrum
+
+get the energy injection efficiency tables
+
+minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
+
+lifetime of the decaying dark matter component (in s)
+
+fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
+
+the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
+
+compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
+
+priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
+
+extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
+
+compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
+
+Compute the primordial abundances today These contain effects from photodisintegration if relevant
+
+compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
+
+
+### define FUNCTION
+
+```
+#define FUNCTION DM_fraction_ALP
+```
+
+
+### define CAPABILITY
+
+```
+#define CAPABILITY DM_fraction
+```
+
+total abundance of axion-like particles, produced either by misalignment or freeze-in 
+
+compute Neff after BBN
+
+compute primordial helium abundance
+
+collect all input options for AlterBBN in form of a string to double map
+
+get the value of Neff in the early Universe from CLASS backend
+
+energy density of non-cold DM components today
+
+energy density in radiation today
+
+energy density of CDM component today
+
+energy density in baryons today
+
+Get time since big bang at z in s.
+
+temperature of non-cold DM components
+
+Gaussian priors on the nuisance parameters of the Planck likelihoods.
+
+get lensed CMB lensing spectrum (Cell_phiphi)
+
+get lensed CMB B mode spectrum
+
+get lensed CMB E mode spectrum
+
+get lensed CMB Temperature-E mode cross-correlation spectrum
+
+get lensed CMB TT spectrum
+
+use MultiModeCode to compute a parameterised primordial power spectrum
+
+get the energy injection efficiency tables
+
+minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
+
+lifetime of the decaying dark matter component (in s)
+
+fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
+
+the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
+
+compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
+
+priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
+
+extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
+
+compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
+
+Compute the primordial abundances today These contain effects from photodisintegration if relevant
+
+compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
+
+
+### define FUNCTION
+
+```
+#define FUNCTION DM_fraction_ALP
+```
+
+
+### define CAPABILITY
+
+```
+#define CAPABILITY DM_fraction
+```
+
+total abundance of axion-like particles, produced either by misalignment or freeze-in 
+
+compute Neff after BBN
+
+compute primordial helium abundance
+
+collect all input options for AlterBBN in form of a string to double map
+
+get the value of Neff in the early Universe from CLASS backend
+
+energy density of non-cold DM components today
+
+energy density in radiation today
+
+energy density of CDM component today
+
+energy density in baryons today
+
+Get time since big bang at z in s.
+
+temperature of non-cold DM components
+
+Gaussian priors on the nuisance parameters of the Planck likelihoods.
+
+get lensed CMB lensing spectrum (Cell_phiphi)
+
+get lensed CMB B mode spectrum
+
+get lensed CMB E mode spectrum
+
+get lensed CMB Temperature-E mode cross-correlation spectrum
+
+get lensed CMB TT spectrum
+
+use MultiModeCode to compute a parameterised primordial power spectrum
+
+get the energy injection efficiency tables
+
+minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
+
+lifetime of the decaying dark matter component (in s)
+
+fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
+
+the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
+
+compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
+
+priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
+
+extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
+
+compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
+
+Compute the primordial abundances today These contain effects from photodisintegration if relevant
+
+compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
+
+
+### define FUNCTION
+
+```
+#define FUNCTION DM_fraction_ALP
+```
+
+
+### define CAPABILITY
+
+```
+#define CAPABILITY DM_fraction
+```
+
+total abundance of axion-like particles, produced either by misalignment or freeze-in 
+
+compute Neff after BBN
+
+compute primordial helium abundance
+
+collect all input options for AlterBBN in form of a string to double map
+
+get the value of Neff in the early Universe from CLASS backend
+
+energy density of non-cold DM components today
+
+energy density in radiation today
+
+energy density of CDM component today
+
+energy density in baryons today
+
+Get time since big bang at z in s.
+
+temperature of non-cold DM components
+
+Gaussian priors on the nuisance parameters of the Planck likelihoods.
+
+get lensed CMB lensing spectrum (Cell_phiphi)
+
+get lensed CMB B mode spectrum
+
+get lensed CMB E mode spectrum
+
+get lensed CMB Temperature-E mode cross-correlation spectrum
+
+get lensed CMB TT spectrum
+
+use MultiModeCode to compute a parameterised primordial power spectrum
+
+get the energy injection efficiency tables
+
+minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
+
+lifetime of the decaying dark matter component (in s)
+
+fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
+
+the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
+
+compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
+
+priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
+
+extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
+
+compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
+
+Compute the primordial abundances today These contain effects from photodisintegration if relevant
+
+compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
+
+
+### define FUNCTION
+
+```
+#define FUNCTION DM_fraction_ALP
+```
+
+
+### define CAPABILITY
+
+```
+#define CAPABILITY DM_fraction
+```
+
+total abundance of axion-like particles, produced either by misalignment or freeze-in 
+
+compute Neff after BBN
+
+compute primordial helium abundance
+
+collect all input options for AlterBBN in form of a string to double map
+
+get the value of Neff in the early Universe from CLASS backend
+
+energy density of non-cold DM components today
+
+energy density in radiation today
+
+energy density of CDM component today
+
+energy density in baryons today
+
+Get time since big bang at z in s.
+
+temperature of non-cold DM components
+
+Gaussian priors on the nuisance parameters of the Planck likelihoods.
+
+get lensed CMB lensing spectrum (Cell_phiphi)
+
+get lensed CMB B mode spectrum
+
+get lensed CMB E mode spectrum
+
+get lensed CMB Temperature-E mode cross-correlation spectrum
+
+get lensed CMB TT spectrum
+
+use MultiModeCode to compute a parameterised primordial power spectrum
+
+get the energy injection efficiency tables
+
+minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
+
+lifetime of the decaying dark matter component (in s)
+
+fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
+
+the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
+
+compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
+
+priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
+
+extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
+
+compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
+
+Compute the primordial abundances today These contain effects from photodisintegration if relevant
+
+compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
+
+
+### define FUNCTION
+
+```
+#define FUNCTION DM_fraction_ALP
+```
+
+
+### define FUNCTION
+
+```
+#define FUNCTION DM_fraction_ALP
+```
+
+
+### define CAPABILITY
+
+```
+#define CAPABILITY DM_fraction
+```
+
+total abundance of axion-like particles, produced either by misalignment or freeze-in 
+
+compute Neff after BBN
+
+compute primordial helium abundance
+
+collect all input options for AlterBBN in form of a string to double map
+
+get the value of Neff in the early Universe from CLASS backend
+
+energy density of non-cold DM components today
+
+energy density in radiation today
+
+energy density of CDM component today
+
+energy density in baryons today
+
+Get time since big bang at z in s.
+
+temperature of non-cold DM components
+
+Gaussian priors on the nuisance parameters of the Planck likelihoods.
+
+get lensed CMB lensing spectrum (Cell_phiphi)
+
+get lensed CMB B mode spectrum
+
+get lensed CMB E mode spectrum
+
+get lensed CMB Temperature-E mode cross-correlation spectrum
+
+get lensed CMB TT spectrum
+
+use MultiModeCode to compute a parameterised primordial power spectrum
+
+get the energy injection efficiency tables
+
+minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
+
+lifetime of the decaying dark matter component (in s)
+
+fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
+
+the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
+
+compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
+
+priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
+
+extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
+
+compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
+
+Compute the primordial abundances today These contain effects from photodisintegration if relevant
+
+compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
+
+
+### define FUNCTION
+
+```
+#define FUNCTION DM_fraction_ALP
+```
+
+
+### define CAPABILITY
+
+```
+#define CAPABILITY DM_fraction
+```
+
+total abundance of axion-like particles, produced either by misalignment or freeze-in 
+
+compute Neff after BBN
+
+compute primordial helium abundance
+
+collect all input options for AlterBBN in form of a string to double map
+
+get the value of Neff in the early Universe from CLASS backend
+
+energy density of non-cold DM components today
+
+energy density in radiation today
+
+energy density of CDM component today
+
+energy density in baryons today
+
+Get time since big bang at z in s.
+
+temperature of non-cold DM components
+
+Gaussian priors on the nuisance parameters of the Planck likelihoods.
+
+get lensed CMB lensing spectrum (Cell_phiphi)
+
+get lensed CMB B mode spectrum
+
+get lensed CMB E mode spectrum
+
+get lensed CMB Temperature-E mode cross-correlation spectrum
+
+get lensed CMB TT spectrum
+
+use MultiModeCode to compute a parameterised primordial power spectrum
+
+get the energy injection efficiency tables
+
+minimal Freeze-in abundance of axion-like particles, produced via Primakoff processes
+
+lifetime of the decaying dark matter component (in s)
+
+fraction of the abundance of the dark matter candidate in question (mostly a decaying component) contributing to the total DM abundance.
+
+the fraction of the minimal freeze-in abundance of axion-like particles, produced via Primakoff processes, to the total abundance of dark matter
+
+compute the values for etaBBN_rBBN_rCMB_dNurBBN_dNurCMB for non standard models (e.g. GeneralCosmoALP)
+
+priors on the tSZ and kSZ amplitudes based on based on SPT and ACT data cf. Eq. (32) of Aghanim et al. 2015 (arXiv 1507.02704)
+
+extract H0 from a classy run if it is not a fundamental parameter (i.e. for LCDM_theta), as it now becomes derived
+
+compute primordial element abundances (and theoretical errors & covariances if requested) as predicted from BBN
+
+Compute the primordial abundances today These contain effects from photodisintegration if relevant
+
+compute BBN likelihood for chosen isotopes depending on yaml file settings, theoretical errors and cross-correlations are included 
+
+
+### define FUNCTION
+
+```
+#define FUNCTION DM_fraction_ALP
+```
+
+
+### define CAPABILITY
+
+```
+#define CAPABILITY DM_fraction
+```
+
+total abundance of axion-like particles, produced either by misalignment or freeze-in 
+
+compute Neff after BBN
 
 compute primordial helium abundance
 
@@ -5134,7 +5408,27 @@ START_MODULE
     ALLOW_MODEL_COMBINATION(group1, group2)
     DEPENDENCY(Neff_SM, double)
     #undef FUNCTION
+
+    #define FUNCTION get_N_ur_from_BBN
+    START_FUNCTION(double)
+    ALLOW_MODEL(StandardModel_SLHA2,SubGeVDM_fermion,SubGeVDM_scalar)
+    MODEL_GROUP(group1, StandardModel_SLHA2)
+    MODEL_GROUP(group2,(SubGeVDM_fermion,SubGeVDM_scalar))
+    ALLOW_MODEL_COMBINATION(group1, group2)
+    DEPENDENCY(Neff_SM, double)
+    DEPENDENCY(Neff_after_BBN, double)
+    #undef FUNCTION
+
   #undef CAPABILITY
+
+  #define CAPABILITY N_eff_likelihood_Planck_BAO
+  START_CAPABILITY
+    #define FUNCTION compute_N_eff_likelihood_Planck_BAO
+    START_FUNCTION(double)
+    DEPENDENCY(Neff_after_BBN, double)
+    #undef FUNCTION
+  #undef CAPABILITY
+
 
   // ------------------------
 
@@ -5777,9 +6071,9 @@ START_MODULE
   START_CAPABILITY
     #define FUNCTION AlterBBN_Input
     START_FUNCTION(map_str_dbl)
-    ALLOW_MODELS(LCDM, LCDM_theta, LCDM_zreio, etaBBN_rBBN_rCMB_dNurBBN_dNurCMB)
+    ALLOW_MODELS(LCDM, LCDM_theta, LCDM_zreio, etaBBN_rBBN_rCMB_dNurBBN_dNurCMB,SubGeVDM_fermion,SubGeVDM_scalar)
     ALLOW_MODEL_DEPENDENCE(nuclear_params_neutron_lifetime)
-    MODEL_GROUP(cosmo,(LCDM, LCDM_theta, LCDM_zreio, etaBBN_rBBN_rCMB_dNurBBN_dNurCMB))
+    MODEL_GROUP(cosmo,(LCDM, LCDM_theta, LCDM_zreio, etaBBN_rBBN_rCMB_dNurBBN_dNurCMB,SubGeVDM_fermion,SubGeVDM_scalar))
     MODEL_GROUP(neutron,(nuclear_params_neutron_lifetime))
     ALLOW_MODEL_COMBINATION(cosmo,neutron)
     DEPENDENCY(Neff_SM, double)
@@ -5829,6 +6123,15 @@ START_MODULE
   #define CAPABILITY helium_abundance
   START_CAPABILITY
     #define FUNCTION extract_helium_abundance
+    START_FUNCTION(double)
+    DEPENDENCY(primordial_abundances, BBN_container)
+    #undef FUNCTION
+  #undef CAPABILITY
+
+  /// compute Neff after BBN
+  #define CAPABILITY Neff_after_BBN
+  START_CAPABILITY
+    #define FUNCTION extract_Neff_after_BBN
     START_FUNCTION(double)
     DEPENDENCY(primordial_abundances, BBN_container)
     #undef FUNCTION
@@ -6008,4 +6311,4 @@ START_MODULE
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:07 +0000
+Updated on 2024-07-18 at 13:53:34 +0000

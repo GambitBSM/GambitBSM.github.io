@@ -26,6 +26,7 @@ description: "[No description available]"
 | class | **[Gambit::Scanner::Plugins::funcFactory](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1funcfactory/)**  |
 | class | **[Gambit::Scanner::Plugins::classFactory](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1classfactory/)**  |
 | struct | **[Gambit::Scanner::Plugins::pluginData](/documentation/code/classes/structgambit_1_1scanner_1_1plugins_1_1plugindata/)** <br>Structure that holds all the data provided by plugins about themselves.  |
+| struct | **[Gambit::Scanner::Plugins::pyplugin_info](/documentation/code/classes/structgambit_1_1scanner_1_1plugins_1_1pyplugin__info/)**  |
 
 ## Detailed Description
 
@@ -274,6 +275,30 @@ namespace Gambit
                 }
             };  
 
+            struct pyplugin_info
+            {
+                int major_version;
+                int minor_version;
+                int patch_version;
+                std::string release_version;
+                std::string discription;
+                
+                pyplugin_info() : major_version(1), minor_version(0), patch_version(0), release_version("") {}
+                
+                std::string version()
+                {
+                    std::stringstream ss;
+                    
+                    ss << major_version << "." << minor_version << "." << patch_version;
+                    if (release_version == "")
+                    {
+                        ss << "-" << release_version;
+                    }
+                    
+                    return ss.str();
+                }
+            };
+                
         }
 
     }
@@ -286,4 +311,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:05 +0000
+Updated on 2024-07-18 at 13:53:33 +0000

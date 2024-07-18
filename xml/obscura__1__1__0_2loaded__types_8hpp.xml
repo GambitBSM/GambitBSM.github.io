@@ -1,0 +1,857 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="obscura__1__1__0_2loaded__types_8hpp" kind="file" language="C++">
+    <compoundname>obscura_1_1_0/loaded_types.hpp</compoundname>
+    <includes refid="wrapper__DM__Distribution_8hpp" local="yes">wrapper_DM_Distribution.hpp</includes>
+    <includes refid="wrapper__Standard__Halo__Model_8hpp" local="yes">wrapper_Standard_Halo_Model.hpp</includes>
+    <includes refid="wrapper__DM__Particle__Standard_8hpp" local="yes">wrapper_DM_Particle_Standard.hpp</includes>
+    <includes refid="wrapper__DM__Particle__SI_8hpp" local="yes">wrapper_DM_Particle_SI.hpp</includes>
+    <includes refid="wrapper__DM__Particle_8hpp" local="yes">wrapper_DM_Particle.hpp</includes>
+    <includes refid="wrapper__DM__Detector_8hpp" local="yes">wrapper_DM_Detector.hpp</includes>
+    <includes refid="wrapper__DM__Detector__Crystal_8hpp" local="yes">wrapper_DM_Detector_Crystal.hpp</includes>
+    <includes refid="wrapper__DM__Detector__Ionization__ER_8hpp" local="yes">wrapper_DM_Detector_Ionization_ER.hpp</includes>
+    <includes refid="wrapper__DM__Detector__Ionization_8hpp" local="yes">wrapper_DM_Detector_Ionization.hpp</includes>
+    <includes refid="wrapper__DM__Detector__Ionization__Migdal_8hpp" local="yes">wrapper_DM_Detector_Ionization_Migdal.hpp</includes>
+    <includes refid="include_2gambit_2Backends_2backend__types_2obscura__1__1__0_2identification_8hpp" local="yes">identification.hpp</includes>
+    <includes refid="include_2gambit_2Backends_2backend__undefs_8hpp" local="yes">gambit/Backends/backend_undefs.hpp</includes>
+    <incdepgraph>
+      <node id="14">
+        <label>gambit/Backends/abstractbase.hpp</label>
+        <link refid="include_2gambit_2Backends_2abstractbase_8hpp_source"/>
+      </node>
+      <node id="36">
+        <label>abstract_DM_Detector.hpp</label>
+        <link refid="abstract__DM__Detector_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>abstract_DM_Detector_Crystal.hpp</label>
+        <link refid="abstract__DM__Detector__Crystal_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>abstract_DM_Detector_Ionization.hpp</label>
+        <link refid="abstract__DM__Detector__Ionization_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>abstract_DM_Detector_Ionization_ER.hpp</label>
+        <link refid="abstract__DM__Detector__Ionization__ER_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>abstract_DM_Detector_Ionization_Migdal.hpp</label>
+        <link refid="abstract__DM__Detector__Ionization__Migdal_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>abstract_DM_Distribution.hpp</label>
+        <link refid="abstract__DM__Distribution_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="26">
+        <label>abstract_DM_Particle.hpp</label>
+        <link refid="abstract__DM__Particle_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>abstract_DM_Particle_SI.hpp</label>
+        <link refid="abstract__DM__Particle__SI_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>abstract_DM_Particle_Standard.hpp</label>
+        <link refid="abstract__DM__Particle__Standard_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>abstract_Standard_Halo_Model.hpp</label>
+        <link refid="abstract__Standard__Halo__Model_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>forward_decls_abstract_classes.hpp</label>
+        <link refid="obscura__1__1__0_2forward__decls__abstract__classes_8hpp_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>forward_decls_wrapper_classes.hpp</label>
+        <link refid="obscura__1__1__0_2forward__decls__wrapper__classes_8hpp_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>identification.hpp</label>
+        <link refid="include_2gambit_2Backends_2backend__types_2obscura__1__1__0_2identification_8hpp_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>loaded_types.hpp</label>
+        <link refid="obscura__1__1__0_2loaded__types_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>wrapper_DM_Detector.hpp</label>
+        <link refid="wrapper__DM__Detector_8hpp_source"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+      </node>
+      <node id="38">
+        <label>wrapper_DM_Detector_Crystal.hpp</label>
+        <link refid="wrapper__DM__Detector__Crystal_8hpp_source"/>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>wrapper_DM_Detector_Crystal_decl.hpp</label>
+        <link refid="wrapper__DM__Detector__Crystal__decl_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>wrapper_DM_Detector_Crystal_def.hpp</label>
+        <link refid="wrapper__DM__Detector__Crystal__def_8hpp_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>wrapper_DM_Detector_Ionization.hpp</label>
+        <link refid="wrapper__DM__Detector__Ionization_8hpp_source"/>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>wrapper_DM_Detector_Ionization_ER.hpp</label>
+        <link refid="wrapper__DM__Detector__Ionization__ER_8hpp_source"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>wrapper_DM_Detector_Ionization_ER_decl.hpp</label>
+        <link refid="wrapper__DM__Detector__Ionization__ER__decl_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>wrapper_DM_Detector_Ionization_ER_def.hpp</label>
+        <link refid="wrapper__DM__Detector__Ionization__ER__def_8hpp_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>wrapper_DM_Detector_Ionization_Migdal.hpp</label>
+        <link refid="wrapper__DM__Detector__Ionization__Migdal_8hpp_source"/>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>wrapper_DM_Detector_Ionization_Migdal_decl.hpp</label>
+        <link refid="wrapper__DM__Detector__Ionization__Migdal__decl_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
+        <label>wrapper_DM_Detector_Ionization_Migdal_def.hpp</label>
+        <link refid="wrapper__DM__Detector__Ionization__Migdal__def_8hpp_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>wrapper_DM_Detector_Ionization_decl.hpp</label>
+        <link refid="wrapper__DM__Detector__Ionization__decl_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>wrapper_DM_Detector_Ionization_def.hpp</label>
+        <link refid="wrapper__DM__Detector__Ionization__def_8hpp_source"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="35">
+        <label>wrapper_DM_Detector_decl.hpp</label>
+        <link refid="wrapper__DM__Detector__decl_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>wrapper_DM_Detector_def.hpp</label>
+        <link refid="wrapper__DM__Detector__def_8hpp_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>wrapper_DM_Distribution.hpp</label>
+        <link refid="wrapper__DM__Distribution_8hpp_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>wrapper_DM_Distribution_decl.hpp</label>
+        <link refid="wrapper__DM__Distribution__decl_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>wrapper_DM_Distribution_def.hpp</label>
+        <link refid="wrapper__DM__Distribution__def_8hpp_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>wrapper_DM_Particle.hpp</label>
+        <link refid="wrapper__DM__Particle_8hpp_source"/>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="28">
+        <label>wrapper_DM_Particle_SI.hpp</label>
+        <link refid="wrapper__DM__Particle__SI_8hpp_source"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>wrapper_DM_Particle_SI_decl.hpp</label>
+        <link refid="wrapper__DM__Particle__SI__decl_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>wrapper_DM_Particle_SI_def.hpp</label>
+        <link refid="wrapper__DM__Particle__SI__def_8hpp_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>wrapper_DM_Particle_Standard.hpp</label>
+        <link refid="wrapper__DM__Particle__Standard_8hpp_source"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>wrapper_DM_Particle_Standard_decl.hpp</label>
+        <link refid="wrapper__DM__Particle__Standard__decl_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>wrapper_DM_Particle_Standard_def.hpp</label>
+        <link refid="wrapper__DM__Particle__Standard__def_8hpp_source"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>wrapper_DM_Particle_decl.hpp</label>
+        <link refid="wrapper__DM__Particle__decl_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>wrapper_DM_Particle_def.hpp</label>
+        <link refid="wrapper__DM__Particle__def_8hpp_source"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>wrapper_Standard_Halo_Model.hpp</label>
+        <link refid="wrapper__Standard__Halo__Model_8hpp_source"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>wrapper_Standard_Halo_Model_decl.hpp</label>
+        <link refid="wrapper__Standard__Halo__Model__decl_8hpp_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>wrapper_Standard_Halo_Model_def.hpp</label>
+        <link refid="wrapper__Standard__Halo__Model__def_8hpp_source"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>gambit/Backends/backend_undefs.hpp</label>
+        <link refid="include_2gambit_2Backends_2backend__undefs_8hpp"/>
+      </node>
+      <node id="11">
+        <label>gambit/Backends/wrapperbase.hpp</label>
+        <link refid="include_2gambit_2Backends_2wrapperbase_8hpp_source"/>
+      </node>
+      <node id="9">
+        <label>gambit/Utils/cats.hpp</label>
+        <link refid="Utils_2include_2gambit_2Utils_2cats_8hpp"/>
+      </node>
+      <node id="4">
+        <label>cstddef</label>
+      </node>
+      <node id="13">
+        <label>iostream</label>
+      </node>
+      <node id="25">
+        <label>random</label>
+      </node>
+      <node id="5">
+        <label>string</label>
+      </node>
+      <node id="6">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="obscura__1__1__0_2loaded__types_8hpp_1aa46a3bbe11585defcf14036d27f115cf" prot="public" static="no">
+        <name>obscura_1_1_0_all_data</name>
+        <initializer>  (( /*class*/(obscura)(DM_Distribution),    /*constructors*/(((&quot;Factory_DM_Distribution_0__BOSS_1&quot;,&quot;_Factory_DM_Distribution_0__BOSS_1&quot;),())) (((&quot;Factory_DM_Distribution_1__BOSS_2&quot;,&quot;_Factory_DM_Distribution_1__BOSS_2&quot;),(std::string, double, double, double))) )) \
+  (( /*class*/(obscura)(Standard_Halo_Model),    /*constructors*/(((&quot;Factory_Standard_Halo_Model_0__BOSS_3&quot;,&quot;_Factory_Standard_Halo_Model_0__BOSS_3&quot;),())) (((&quot;Factory_Standard_Halo_Model_1__BOSS_4&quot;,&quot;_Factory_Standard_Halo_Model_1__BOSS_4&quot;),(double, double, double, double))) (((&quot;Factory_Standard_Halo_Model_2__BOSS_5&quot;,&quot;_Factory_Standard_Halo_Model_2__BOSS_5&quot;),(double, double, double))) )) \
+  (( /*class*/(obscura)(DM_Particle_Standard),    /*constructors*/(((&quot;Factory_DM_Particle_Standard_0__BOSS_6&quot;,&quot;_Factory_DM_Particle_Standard_0__BOSS_6&quot;),())) (((&quot;Factory_DM_Particle_Standard_1__BOSS_7&quot;,&quot;_Factory_DM_Particle_Standard_1__BOSS_7&quot;),(double, double))) )) \
+  (( /*class*/(obscura)(DM_Particle_SI),    /*constructors*/(((&quot;Factory_DM_Particle_SI_0__BOSS_8&quot;,&quot;_Factory_DM_Particle_SI_0__BOSS_8&quot;),())) (((&quot;Factory_DM_Particle_SI_1__BOSS_9&quot;,&quot;_Factory_DM_Particle_SI_1__BOSS_9&quot;),(double))) (((&quot;Factory_DM_Particle_SI_2__BOSS_10&quot;,&quot;_Factory_DM_Particle_SI_2__BOSS_10&quot;),(double, double))) )) \
+  (( /*class*/(obscura)(DM_Particle),    /*constructors*/(((&quot;Factory_DM_Particle_0__BOSS_11&quot;,&quot;_Factory_DM_Particle_0__BOSS_11&quot;),())) (((&quot;Factory_DM_Particle_1__BOSS_12&quot;,&quot;_Factory_DM_Particle_1__BOSS_12&quot;),(double, double))) (((&quot;Factory_DM_Particle_2__BOSS_13&quot;,&quot;_Factory_DM_Particle_2__BOSS_13&quot;),(double))) )) \
+  (( /*class*/(obscura)(DM_Detector),    /*constructors*/(((&quot;Factory_DM_Detector_0__BOSS_14&quot;,&quot;_Factory_DM_Detector_0__BOSS_14&quot;),())) (((&quot;Factory_DM_Detector_1__BOSS_15&quot;,&quot;_Factory_DM_Detector_1__BOSS_15&quot;),(std::string, double, std::string))) )) \
+  (( /*class*/(obscura)(DM_Detector_Crystal),    /*constructors*/(((&quot;Factory_DM_Detector_Crystal_0__BOSS_16&quot;,&quot;_Factory_DM_Detector_Crystal_0__BOSS_16&quot;),())) (((&quot;Factory_DM_Detector_Crystal_1__BOSS_17&quot;,&quot;_Factory_DM_Detector_Crystal_1__BOSS_17&quot;),(std::string, double, std::string))) )) \
+  (( /*class*/(obscura)(DM_Detector_Ionization_ER),    /*constructors*/(((&quot;Factory_DM_Detector_Ionization_ER_0__BOSS_18&quot;,&quot;_Factory_DM_Detector_Ionization_ER_0__BOSS_18&quot;),())) (((&quot;Factory_DM_Detector_Ionization_ER_1__BOSS_19&quot;,&quot;_Factory_DM_Detector_Ionization_ER_1__BOSS_19&quot;),(std::string, double, std::string))) (((&quot;Factory_DM_Detector_Ionization_ER_2__BOSS_20&quot;,&quot;_Factory_DM_Detector_Ionization_ER_2__BOSS_20&quot;),(std::string, double, std::vector&lt;std::string&gt;, std::vector&lt;double&gt;))) (((&quot;Factory_DM_Detector_Ionization_ER_3__BOSS_21&quot;,&quot;_Factory_DM_Detector_Ionization_ER_3__BOSS_21&quot;),(std::string, double, std::vector&lt;std::string&gt;))) )) \
+  (( /*class*/(obscura)(DM_Detector_Ionization),    /*constructors*/(((&quot;Factory_DM_Detector_Ionization_0__BOSS_22&quot;,&quot;_Factory_DM_Detector_Ionization_0__BOSS_22&quot;),(std::string, double, std::string, std::string))) (((&quot;Factory_DM_Detector_Ionization_1__BOSS_23&quot;,&quot;_Factory_DM_Detector_Ionization_1__BOSS_23&quot;),(std::string, double, std::string, std::vector&lt;std::string&gt;, std::vector&lt;double&gt;))) (((&quot;Factory_DM_Detector_Ionization_2__BOSS_24&quot;,&quot;_Factory_DM_Detector_Ionization_2__BOSS_24&quot;),(std::string, double, std::string, std::vector&lt;std::string&gt;))) )) \
+  (( /*class*/(obscura)(DM_Detector_Ionization_Migdal),    /*constructors*/(((&quot;Factory_DM_Detector_Ionization_Migdal_0__BOSS_25&quot;,&quot;_Factory_DM_Detector_Ionization_Migdal_0__BOSS_25&quot;),())) (((&quot;Factory_DM_Detector_Ionization_Migdal_1__BOSS_26&quot;,&quot;_Factory_DM_Detector_Ionization_Migdal_1__BOSS_26&quot;),(std::string, double, std::string))) (((&quot;Factory_DM_Detector_Ionization_Migdal_2__BOSS_27&quot;,&quot;_Factory_DM_Detector_Ionization_Migdal_2__BOSS_27&quot;),(std::string, double, std::vector&lt;std::string&gt;, std::vector&lt;double&gt;))) (((&quot;Factory_DM_Detector_Ionization_Migdal_3__BOSS_28&quot;,&quot;_Factory_DM_Detector_Ionization_Migdal_3__BOSS_28&quot;),(std::string, double, std::vector&lt;std::string&gt;))) )) \</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Backends/include/gambit/Backends/backend_types/obscura_1_1_0/loaded_types.hpp" line="17" column="9" bodyfile="Backends/include/gambit/Backends/backend_types/obscura_1_1_0/loaded_types.hpp" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>__loaded_types_obscura_1_1_0_hpp__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__loaded_types_obscura_1_1_0_hpp__<sp/>1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wrapper_DM_Distribution.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wrapper_Standard_Halo_Model.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wrapper_DM_Particle_Standard.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wrapper_DM_Particle_SI.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wrapper_DM_Particle.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wrapper_DM_Detector.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wrapper_DM_Detector_Crystal.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wrapper_DM_Detector_Ionization_ER.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wrapper_DM_Detector_Ionization.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wrapper_DM_Detector_Ionization_Migdal.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;identification.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Indicate<sp/>which<sp/>types<sp/>are<sp/>provided<sp/>by<sp/>this<sp/>backend,<sp/>and<sp/>what<sp/>the<sp/>symbols<sp/>of<sp/>their<sp/>factories<sp/>are.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>obscura_1_1_0_all_data<sp/>\</highlight></codeline>
+<codeline lineno="18"><highlight class="preprocessor"><sp/><sp/>((<sp/></highlight><highlight class="comment">/*class*/</highlight><highlight class="preprocessor">(obscura)(DM_Distribution),<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*constructors*/</highlight><highlight class="preprocessor">(((&quot;Factory_DM_Distribution_0__BOSS_1&quot;</highlight><highlight class="normal">,&quot;_Factory_DM_Distribution_0__BOSS_1&quot;),()))<sp/>(((&quot;Factory_DM_Distribution_1__BOSS_2&quot;,&quot;_Factory_DM_Distribution_1__BOSS_2&quot;),(std::string,<sp/>double,<sp/>double,<sp/>double)))<sp/>))<sp/>\</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/>((<sp/></highlight><highlight class="comment">/*class*/</highlight><highlight class="preprocessor">(obscura)(Standard_Halo_Model),<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*constructors*/</highlight><highlight class="preprocessor">(((&quot;Factory_Standard_Halo_Model_0__BOSS_3&quot;</highlight><highlight class="normal">,&quot;_Factory_Standard_Halo_Model_0__BOSS_3&quot;),()))<sp/>(((&quot;Factory_Standard_Halo_Model_1__BOSS_4&quot;,&quot;_Factory_Standard_Halo_Model_1__BOSS_4&quot;),(double,<sp/>double,<sp/>double,<sp/>double)))<sp/>(((&quot;Factory_Standard_Halo_Model_2__BOSS_5&quot;,&quot;_Factory_Standard_Halo_Model_2__BOSS_5&quot;),(double,<sp/>double,<sp/>double)))<sp/>))<sp/>\</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/>((<sp/></highlight><highlight class="comment">/*class*/</highlight><highlight class="preprocessor">(obscura)(DM_Particle_Standard),<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*constructors*/</highlight><highlight class="preprocessor">(((&quot;Factory_DM_Particle_Standard_0__BOSS_6&quot;</highlight><highlight class="normal">,&quot;_Factory_DM_Particle_Standard_0__BOSS_6&quot;),()))<sp/>(((&quot;Factory_DM_Particle_Standard_1__BOSS_7&quot;,&quot;_Factory_DM_Particle_Standard_1__BOSS_7&quot;),(double,<sp/>double)))<sp/>))<sp/>\</highlight></codeline>
+<codeline lineno="21"><highlight class="normal"><sp/><sp/>((<sp/></highlight><highlight class="comment">/*class*/</highlight><highlight class="preprocessor">(obscura)(DM_Particle_SI),<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*constructors*/</highlight><highlight class="preprocessor">(((&quot;Factory_DM_Particle_SI_0__BOSS_8&quot;</highlight><highlight class="normal">,&quot;_Factory_DM_Particle_SI_0__BOSS_8&quot;),()))<sp/>(((&quot;Factory_DM_Particle_SI_1__BOSS_9&quot;,&quot;_Factory_DM_Particle_SI_1__BOSS_9&quot;),(double)))<sp/>(((&quot;Factory_DM_Particle_SI_2__BOSS_10&quot;,&quot;_Factory_DM_Particle_SI_2__BOSS_10&quot;),(double,<sp/>double)))<sp/>))<sp/>\</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/>((<sp/></highlight><highlight class="comment">/*class*/</highlight><highlight class="preprocessor">(obscura)(DM_Particle),<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*constructors*/</highlight><highlight class="preprocessor">(((&quot;Factory_DM_Particle_0__BOSS_11&quot;</highlight><highlight class="normal">,&quot;_Factory_DM_Particle_0__BOSS_11&quot;),()))<sp/>(((&quot;Factory_DM_Particle_1__BOSS_12&quot;,&quot;_Factory_DM_Particle_1__BOSS_12&quot;),(double,<sp/>double)))<sp/>(((&quot;Factory_DM_Particle_2__BOSS_13&quot;,&quot;_Factory_DM_Particle_2__BOSS_13&quot;),(double)))<sp/>))<sp/>\</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"><sp/><sp/>((<sp/></highlight><highlight class="comment">/*class*/</highlight><highlight class="preprocessor">(obscura)(DM_Detector),<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*constructors*/</highlight><highlight class="preprocessor">(((&quot;Factory_DM_Detector_0__BOSS_14&quot;</highlight><highlight class="normal">,&quot;_Factory_DM_Detector_0__BOSS_14&quot;),()))<sp/>(((&quot;Factory_DM_Detector_1__BOSS_15&quot;,&quot;_Factory_DM_Detector_1__BOSS_15&quot;),(std::string,<sp/>double,<sp/>std::string)))<sp/>))<sp/>\</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/>((<sp/></highlight><highlight class="comment">/*class*/</highlight><highlight class="preprocessor">(obscura)(DM_Detector_Crystal),<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*constructors*/</highlight><highlight class="preprocessor">(((&quot;Factory_DM_Detector_Crystal_0__BOSS_16&quot;</highlight><highlight class="normal">,&quot;_Factory_DM_Detector_Crystal_0__BOSS_16&quot;),()))<sp/>(((&quot;Factory_DM_Detector_Crystal_1__BOSS_17&quot;,&quot;_Factory_DM_Detector_Crystal_1__BOSS_17&quot;),(std::string,<sp/>double,<sp/>std::string)))<sp/>))<sp/>\</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/>((<sp/></highlight><highlight class="comment">/*class*/</highlight><highlight class="preprocessor">(obscura)(DM_Detector_Ionization_ER),<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*constructors*/</highlight><highlight class="preprocessor">(((&quot;Factory_DM_Detector_Ionization_ER_0__BOSS_18&quot;</highlight><highlight class="normal">,&quot;_Factory_DM_Detector_Ionization_ER_0__BOSS_18&quot;),()))<sp/>(((&quot;Factory_DM_Detector_Ionization_ER_1__BOSS_19&quot;,&quot;_Factory_DM_Detector_Ionization_ER_1__BOSS_19&quot;),(std::string,<sp/>double,<sp/>std::string)))<sp/>(((&quot;Factory_DM_Detector_Ionization_ER_2__BOSS_20&quot;,&quot;_Factory_DM_Detector_Ionization_ER_2__BOSS_20&quot;),(std::string,<sp/>double,<sp/>std::vector&lt;std::string&gt;,<sp/>std::vector&lt;double&gt;)))<sp/>(((&quot;Factory_DM_Detector_Ionization_ER_3__BOSS_21&quot;,&quot;_Factory_DM_Detector_Ionization_ER_3__BOSS_21&quot;),(std::string,<sp/>double,<sp/>std::vector&lt;std::string&gt;)))<sp/>))<sp/>\</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/>((<sp/></highlight><highlight class="comment">/*class*/</highlight><highlight class="preprocessor">(obscura)(DM_Detector_Ionization),<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*constructors*/</highlight><highlight class="preprocessor">(((&quot;Factory_DM_Detector_Ionization_0__BOSS_22&quot;</highlight><highlight class="normal">,&quot;_Factory_DM_Detector_Ionization_0__BOSS_22&quot;),(std::string,<sp/>double,<sp/>std::string,<sp/>std::string)))<sp/>(((&quot;Factory_DM_Detector_Ionization_1__BOSS_23&quot;,&quot;_Factory_DM_Detector_Ionization_1__BOSS_23&quot;),(std::string,<sp/>double,<sp/>std::string,<sp/>std::vector&lt;std::string&gt;,<sp/>std::vector&lt;double&gt;)))<sp/>(((&quot;Factory_DM_Detector_Ionization_2__BOSS_24&quot;,&quot;_Factory_DM_Detector_Ionization_2__BOSS_24&quot;),(std::string,<sp/>double,<sp/>std::string,<sp/>std::vector&lt;std::string&gt;)))<sp/>))<sp/>\</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/>((<sp/></highlight><highlight class="comment">/*class*/</highlight><highlight class="preprocessor">(obscura)(DM_Detector_Ionization_Migdal),<sp/><sp/><sp/><sp/></highlight><highlight class="comment">/*constructors*/</highlight><highlight class="preprocessor">(((&quot;Factory_DM_Detector_Ionization_Migdal_0__BOSS_25&quot;</highlight><highlight class="normal">,&quot;_Factory_DM_Detector_Ionization_Migdal_0__BOSS_25&quot;),()))<sp/>(((&quot;Factory_DM_Detector_Ionization_Migdal_1__BOSS_26&quot;,&quot;_Factory_DM_Detector_Ionization_Migdal_1__BOSS_26&quot;),(std::string,<sp/>double,<sp/>std::string)))<sp/>(((&quot;Factory_DM_Detector_Ionization_Migdal_2__BOSS_27&quot;,&quot;_Factory_DM_Detector_Ionization_Migdal_2__BOSS_27&quot;),(std::string,<sp/>double,<sp/>std::vector&lt;std::string&gt;,<sp/>std::vector&lt;double&gt;)))<sp/>(((&quot;Factory_DM_Detector_Ionization_Migdal_3__BOSS_28&quot;,&quot;_Factory_DM_Detector_Ionization_Migdal_3__BOSS_28&quot;),(std::string,<sp/>double,<sp/>std::vector&lt;std::string&gt;)))<sp/>))<sp/>\</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment">//<sp/>If<sp/>the<sp/>default<sp/>version<sp/>has<sp/>been<sp/>loaded,<sp/>set<sp/>it<sp/>as<sp/>default.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>ALREADY_LOADED(CAT_3(BACKENDNAME,_,CAT(Default_,BACKENDNAME)))</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><ref refid="type__macros_8hpp_1adbecbe8c70fc556044b57ae1503952c4" kindref="member">SET_DEFAULT_VERSION_FOR_LOADING_TYPES</ref>(BACKENDNAME,SAFE_VERSION,<ref refid="Backends_2scripts_2BOSS_2common__headers_2cats_8hpp_1aa7c74d1cd12eae89a2d03f84ea2b8598" kindref="member">CAT</ref>(Default_,BACKENDNAME))</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Undefine<sp/>macros<sp/>to<sp/>avoid<sp/>conflict<sp/>with<sp/>other<sp/>backends.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="include_2gambit_2Backends_2backend__undefs_8hpp" kindref="compound">gambit/Backends/backend_undefs.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>__loaded_types_obscura_1_1_0_hpp__<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="Backends/include/gambit/Backends/backend_types/obscura_1_1_0/loaded_types.hpp"/>
+  </compounddef>
+</doxygen>

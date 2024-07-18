@@ -25,10 +25,10 @@ Inherited by [Gambit::backend_functor_common< TYPE(*)(ARGS...), TYPE, ARGS... >]
 | virtual void | **[notifyOfInvalidation](/documentation/code/classes/classgambit_1_1functor/#function-notifyofinvalidation)**(const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) & ) |
 | virtual void | **[reset](/documentation/code/classes/classgambit_1_1functor/#function-reset)**() |
 | | **[functor](/documentation/code/classes/classgambit_1_1functor/#function-functor)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) func_name, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) func_capability, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) result_type, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) origin_name, [Models::ModelFunctorClaw](/documentation/code/classes/classgambit_1_1models_1_1modelfunctorclaw/) & claw)<br>Constructor.  |
-| virtual | **[~functor](/documentation/code/classes/classgambit_1_1functor/#function-functor)**() |
+| virtual | **[~functor](/documentation/code/classes/classgambit_1_1functor/#function-functor)**()<br>Destructor.  |
 | virtual void | **[calculate](/documentation/code/classes/classgambit_1_1functor/#function-calculate)**()<br>Virtual [calculate()](); needs to be redefined in daughters.  |
 | virtual void | **[reset_and_calculate](/documentation/code/classes/classgambit_1_1functor/#function-reset-and-calculate)**()<br>Reset-then-recalculate method.  |
-| void | **[setStatus](/documentation/code/classes/classgambit_1_1functor/#function-setstatus)**(int stat) |
+| void | **[setStatus](/documentation/code/classes/classgambit_1_1functor/#function-setstatus)**([FunctorStatus](/documentation/code/namespaces/namespacegambit/#enum-functorstatus) stat)<br>Setter for status.  |
 | virtual void | **[setInUse](/documentation/code/classes/classgambit_1_1functor/#function-setinuse)**(bool )<br>Set the inUse flag (must be overridden in derived class to have any effect).  |
 | void | **[setPurpose](/documentation/code/classes/classgambit_1_1functor/#function-setpurpose)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) purpose)<br>Setter for purpose (relevant only for next-to-output functors)  |
 | void | **[setVertexID](/documentation/code/classes/classgambit_1_1functor/#function-setvertexid)**(int ID)<br>Setter for vertex ID (used in printer system)  |
@@ -37,9 +37,13 @@ Inherited by [Gambit::backend_functor_common< TYPE(*)(ARGS...), TYPE, ARGS... >]
 | [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[capability](/documentation/code/classes/classgambit_1_1functor/#function-capability)**() const<br>Getter for the wrapped function's reported capability.  |
 | [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[type](/documentation/code/classes/classgambit_1_1functor/#function-type)**() const<br>Getter for the wrapped function's reported return type.  |
 | [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[origin](/documentation/code/classes/classgambit_1_1functor/#function-origin)**() const<br>Getter for the wrapped function's origin (module or backend name)  |
-| [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[version](/documentation/code/classes/classgambit_1_1functor/#function-version)**() const<br>Getter for the version of the wrapped function's origin (module or backend)  |
+| virtual [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[version](/documentation/code/classes/classgambit_1_1functor/#function-version)**() const<br>Getter for the version of the wrapped function's origin (module or backend)  |
 | virtual [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[safe_version](/documentation/code/classes/classgambit_1_1functor/#function-safe-version)**() const<br>Getter for the 'safe' incarnation of the version of the wrapped function's origin (module or backend)  |
-| int | **[status](/documentation/code/classes/classgambit_1_1functor/#function-status)**() const |
+| [FunctorStatus](/documentation/code/namespaces/namespacegambit/#enum-functorstatus) | **[status](/documentation/code/classes/classgambit_1_1functor/#function-status)**() const<br>Getter for the functors current status.  |
+| bool | **[isAvailable](/documentation/code/classes/classgambit_1_1functor/#function-isavailable)**() const<br>Checks whether the functor is available (or even already activated)  |
+| bool | **[isActive](/documentation/code/classes/classgambit_1_1functor/#function-isactive)**() const<br>Checks whether the functor is active.  |
+| bool | **[isDisabled](/documentation/code/classes/classgambit_1_1functor/#function-isdisabled)**() const<br>Checks whether the functor is disabled (discriminant is negative)  |
+| bool | **[isEnabled](/documentation/code/classes/classgambit_1_1functor/#function-isenabled)**() const<br>Checks whether the functor is enabled (discriminant is non negative)  |
 | [sspair](/documentation/code/namespaces/namespacegambit/#typedef-sspair) | **[quantity](/documentation/code/classes/classgambit_1_1functor/#function-quantity)**() const<br>Getter for the overall quantity provided by the wrapped function (capability-type pair)  |
 | [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[purpose](/documentation/code/classes/classgambit_1_1functor/#function-purpose)**() const<br>Getter for purpose (relevant for output nodes, aka helper structures for the dep. resolution)  |
 | [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[citationKey](/documentation/code/classes/classgambit_1_1functor/#function-citationkey)**() const<br>Getter for the citation key.  |
@@ -54,6 +58,7 @@ Inherited by [Gambit::backend_functor_common< TYPE(*)(ARGS...), TYPE, ARGS... >]
 | virtual void | **[setNestedList](/documentation/code/classes/classgambit_1_1functor/#function-setnestedlist)**(std::vector< [functor](/documentation/code/classes/classgambit_1_1functor/) * > & )<br>Set the ordered list of pointers to other functors that should run nested in a loop managed by this one.  |
 | virtual void | **[setIteration](/documentation/code/classes/classgambit_1_1functor/#function-setiteration)**(long long )<br>Set the iteration number in a loop in which this functor runs.  |
 | virtual bool | **[canBeLoopManager](/documentation/code/classes/classgambit_1_1functor/#function-canbeloopmanager)**()<br>Getter for revealing whether this is permitted to be a manager functor.  |
+| virtual bool | **[needsLoopManager](/documentation/code/classes/classgambit_1_1functor/#function-needsloopmanager)**()<br>Getter for revealing whether this functor needs a loop manager.  |
 | virtual [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[loopManagerCapability](/documentation/code/classes/classgambit_1_1functor/#function-loopmanagercapability)**()<br>Getter for revealing the required capability of the wrapped function's loop manager.  |
 | virtual [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[loopManagerType](/documentation/code/classes/classgambit_1_1functor/#function-loopmanagertype)**()<br>Getter for revealing the required type of the wrapped function's loop manager.  |
 | virtual [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[loopManagerName](/documentation/code/classes/classgambit_1_1functor/#function-loopmanagername)**()<br>Getter for revealing the name of the wrapped function's assigned loop manager.  |
@@ -70,8 +75,10 @@ Inherited by [Gambit::backend_functor_common< TYPE(*)(ARGS...), TYPE, ARGS... >]
 | virtual std::set< [sspair](/documentation/code/namespaces/namespacegambit/#typedef-sspair) > | **[backend_conditional_dependencies](/documentation/code/classes/classgambit_1_1functor/#function-backend-conditional-dependencies)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) , [str](/documentation/code/namespaces/namespacegambit/#typedef-str) , [str](/documentation/code/namespaces/namespacegambit/#typedef-str) , [str](/documentation/code/namespaces/namespacegambit/#typedef-str) )<br>Getter for listing backend-specific conditional dependencies (4-string version)  |
 | virtual std::set< [sspair](/documentation/code/namespaces/namespacegambit/#typedef-sspair) > | **[backend_conditional_dependencies](/documentation/code/classes/classgambit_1_1functor/#function-backend-conditional-dependencies)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) req, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) type, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) be)<br>Getter for backend-specific conditional dependencies (3-string version)  |
 | virtual std::set< [sspair](/documentation/code/namespaces/namespacegambit/#typedef-sspair) > | **[backend_conditional_dependencies](/documentation/code/classes/classgambit_1_1functor/#function-backend-conditional-dependencies)**([functor](/documentation/code/classes/classgambit_1_1functor/) * be_functor)<br>Getter for backend-specific conditional dependencies (backend functor pointer version)  |
-| virtual std::set< [sspair](/documentation/code/namespaces/namespacegambit/#typedef-sspair) > | **[model_conditional_dependencies](/documentation/code/classes/classgambit_1_1functor/#function-model-conditional-dependencies)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) )<br>Getter for listing model-specific conditional dependencies.  |
-| virtual std::set< [sspair](/documentation/code/namespaces/namespacegambit/#typedef-sspair) > | **[model_conditional_backend_reqs](/documentation/code/classes/classgambit_1_1functor/#function-model-conditional-backend-reqs)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) )<br>Getter for listing model-specific conditional backend requirements.  |
+| virtual std::set< [sspair](/documentation/code/namespaces/namespacegambit/#typedef-sspair) > | **[model_conditional_dependencies](/documentation/code/classes/classgambit_1_1functor/#function-model-conditional-dependencies)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) model)<br>Getter for listing model-specific conditional dependencies (matches also on parents and friends)  |
+| virtual std::set< [sspair](/documentation/code/namespaces/namespacegambit/#typedef-sspair) > | **[model_conditional_dependencies_exact](/documentation/code/classes/classgambit_1_1functor/#function-model-conditional-dependencies-exact)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) model)<br>Getter for listing model-specific conditional dependencies (matches on the exact model)  |
+| virtual std::set< [sspair](/documentation/code/namespaces/namespacegambit/#typedef-sspair) > | **[model_conditional_backend_reqs](/documentation/code/classes/classgambit_1_1functor/#function-model-conditional-backend-reqs)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) model)<br>Getter for listing model-specific conditional backend requirements (matches also on parents and friends)  |
+| virtual std::set< [sspair](/documentation/code/namespaces/namespacegambit/#typedef-sspair) > | **[model_conditional_backend_reqs_exact](/documentation/code/classes/classgambit_1_1functor/#function-model-conditional-backend-reqs-exact)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) model)<br>Getter for listing model-specific conditional backend requirements (matches on the exact model)  |
 | virtual void | **[resolveDependency](/documentation/code/classes/classgambit_1_1functor/#function-resolvedependency)**([functor](/documentation/code/classes/classgambit_1_1functor/) * )<br>Resolve a dependency using a pointer to another functor object.  |
 | virtual void | **[resolveLoopManager](/documentation/code/classes/classgambit_1_1functor/#function-resolveloopmanager)**([functor](/documentation/code/classes/classgambit_1_1functor/) * )<br>Set this functor's loop manager (if it has one)  |
 | virtual void | **[resolveBackendReq](/documentation/code/classes/classgambit_1_1functor/#function-resolvebackendreq)**([functor](/documentation/code/classes/classgambit_1_1functor/) * )<br>Resolve a backend requirement using a pointer to another functor object.  |
@@ -89,6 +96,9 @@ Inherited by [Gambit::backend_functor_common< TYPE(*)(ARGS...), TYPE, ARGS... >]
 | template <typename TYPE \> <br>void | **[setSubCap](/documentation/code/classes/classgambit_1_1functor/#function-setsubcap)**(const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) & key, const TYPE val)<br>Set a sub-capability (subcap)for the functor directly (for use in standalone executables).  |
 | [safe_ptr](/documentation/code/classes/classgambit_1_1safe__ptr/)< [Options](/documentation/code/classes/classgambit_1_1options/) > | **[getSubCaps](/documentation/code/classes/classgambit_1_1functor/#function-getsubcaps)**()<br>Return a safe pointer to the subcaps that this functor realises it is supposed to facilitate downstream calculation of.  |
 | [safe_ptr](/documentation/code/classes/classgambit_1_1safe__ptr/)< std::set< [sspair](/documentation/code/namespaces/namespacegambit/#typedef-sspair) > > | **[getDependees](/documentation/code/classes/classgambit_1_1functor/#function-getdependees)**()<br>Return a safe pointer to the vector of all capability,type pairs of functors arranged downstream of this one in the dependency tree.  |
+| const std::set< [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > & | **[getAllowedModels](/documentation/code/classes/classgambit_1_1functor/#function-getallowedmodels)**()<br>Getter for listing allowed models.  |
+| const std::set< [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > & | **[getConditionalModels](/documentation/code/classes/classgambit_1_1functor/#function-getconditionalmodels)**()<br>Getter for listing conditional models.  |
+| const std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), std::set< [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > > & | **[getModelGroups](/documentation/code/classes/classgambit_1_1functor/#function-getmodelgroups)**()<br>Getter for map of model groups and the set of models in each group.  |
 | bool | **[allModelsAllowed](/documentation/code/classes/classgambit_1_1functor/#function-allmodelsallowed)**()<br>Test whether the functor is allowed to be used with all models.  |
 | bool | **[modelAllowed](/documentation/code/classes/classgambit_1_1functor/#function-modelallowed)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) model)<br>Test whether the functor is always allowed (either explicitly or implicitly) to be used with a given model.  |
 | bool | **[modelExplicitlyAllowed](/documentation/code/classes/classgambit_1_1functor/#function-modelexplicitlyallowed)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) model)<br>Test whether the functor is explictly always allowed to be used with a given model.  |
@@ -97,6 +107,14 @@ Inherited by [Gambit::backend_functor_common< TYPE(*)(ARGS...), TYPE, ARGS... >]
 | bool | **[modelComboExplicitlyAllowed](/documentation/code/classes/classgambit_1_1functor/#function-modelcomboexplicitlyallowed)**(std::set< [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > combo)<br>Test whether the functor has been explictly allowed to be used with a given combination of models.  |
 | void | **[setModelGroup](/documentation/code/classes/classgambit_1_1functor/#function-setmodelgroup)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) group, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) contents)<br>Add a model group definition to the internal list of model groups.  |
 | void | **[setAllowedModelGroupCombo](/documentation/code/classes/classgambit_1_1functor/#function-setallowedmodelgroupcombo)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) groups)<br>Add a combination of model groups to the internal list of combinations for which this functor is allowed to be used.  |
+| void | **[addMatchedObservable](/documentation/code/classes/classgambit_1_1functor/#function-addmatchedobservable)**(const [DRes::Observable](/documentation/code/classes/structgambit_1_1dres_1_1observable/) * obs)<br>Add an observable to the set of those that this functor matches.  |
+| const std::set< const [DRes::Observable](/documentation/code/classes/structgambit_1_1dres_1_1observable/) * > & | **[getMatchedObservables](/documentation/code/classes/classgambit_1_1functor/#function-getmatchedobservables)**()<br>Retrieve the set of observables that this functor matches.  |
+| void | **[addMatchedModuleRule](/documentation/code/classes/classgambit_1_1functor/#function-addmatchedmodulerule)**(const [DRes::ModuleRule](/documentation/code/classes/structgambit_1_1dres_1_1modulerule/) * r)<br>Add a module rule to the set of those against which this functor has been tested and found to match.  |
+| void | **[addMatchedBackendRule](/documentation/code/classes/classgambit_1_1functor/#function-addmatchedbackendrule)**(const [DRes::BackendRule](/documentation/code/classes/structgambit_1_1dres_1_1backendrule/) * r)<br>Add a backend rule to the set of those against which this functor has been tested and found to match.  |
+| const std::set< const [DRes::ModuleRule](/documentation/code/classes/structgambit_1_1dres_1_1modulerule/) * > & | **[getMatchedModuleRules](/documentation/code/classes/classgambit_1_1functor/#function-getmatchedmodulerules)**()<br>Retrieve the set of module rules against which this functor has been tested and found to match.  |
+| const std::set< const [DRes::BackendRule](/documentation/code/classes/structgambit_1_1dres_1_1backendrule/) * > & | **[getMatchedBackendRules](/documentation/code/classes/classgambit_1_1functor/#function-getmatchedbackendrules)**()<br>Retrieve the set of backend rules against which this functor has been tested and found to match.  |
+| template <class RuleT \> <br>const std::set< RuleT * > & | **[getMatchedRules](/documentation/code/classes/classgambit_1_1functor/#function-getmatchedrules)**()<br>Retrieve matched rules by type.  |
+| const std::set< const [DRes::ModuleRule](/documentation/code/classes/structgambit_1_1dres_1_1modulerule/) * > & | **[getMatchedRules](/documentation/code/classes/classgambit_1_1functor/#function-getmatchedrules)**() |
 
 ## Protected Functions
 
@@ -118,13 +136,12 @@ Inherited by [Gambit::backend_functor_common< TYPE(*)(ARGS...), TYPE, ARGS... >]
 | [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[myCapability](/documentation/code/classes/classgambit_1_1functor/#variable-mycapability)** <br>Internal storage of exactly what the function calculates.  |
 | [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[myType](/documentation/code/classes/classgambit_1_1functor/#variable-mytype)** <br>Internal storage of the type of what the function calculates.  |
 | [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[myOrigin](/documentation/code/classes/classgambit_1_1functor/#variable-myorigin)** <br>Internal storage of the name of the module or backend to which the function belongs.  |
-| [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[myVersion](/documentation/code/classes/classgambit_1_1functor/#variable-myversion)** <br>Internal storage of the version of the module or backend to which the function belongs.  |
 | [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[myPurpose](/documentation/code/classes/classgambit_1_1functor/#variable-mypurpose)** <br>Purpose of the function (relevant for output and next-to-output functors)  |
 | [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[myCitationKey](/documentation/code/classes/classgambit_1_1functor/#variable-mycitationkey)** <br>Citation key: BibTex key of the reference.  |
 | const [Models::ModelFunctorClaw](/documentation/code/classes/classgambit_1_1models_1_1modelfunctorclaw/) * | **[myClaw](/documentation/code/classes/classgambit_1_1functor/#variable-myclaw)** <br>Bound model functor claw, for checking relationships between models.  |
 | const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[myLabel](/documentation/code/classes/classgambit_1_1functor/#variable-mylabel)** <br>String label, used to label functor results for printer system.  |
 | const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[myTimingLabel](/documentation/code/classes/classgambit_1_1functor/#variable-mytiminglabel)** <br>String label, used to label functor timing data for printer system.  |
-| int | **[myStatus](/documentation/code/classes/classgambit_1_1functor/#variable-mystatus)**  |
+| [FunctorStatus](/documentation/code/namespaces/namespacegambit/#enum-functorstatus) | **[myStatus](/documentation/code/classes/classgambit_1_1functor/#variable-mystatus)** <br>Status:  |
 | int | **[myVertexID](/documentation/code/classes/classgambit_1_1functor/#variable-myvertexid)** <br>Internal storage of the vertex ID number used by the printer system to identify functors.  |
 | int | **[myTimingVertexID](/documentation/code/classes/classgambit_1_1functor/#variable-mytimingvertexid)** <br>ID assigned by printers to the timing data output stream.  |
 | bool | **[verbose](/documentation/code/classes/classgambit_1_1functor/#variable-verbose)** <br>Debug flag.  |
@@ -132,8 +149,12 @@ Inherited by [Gambit::backend_functor_common< TYPE(*)(ARGS...), TYPE, ARGS... >]
 | [Options](/documentation/code/classes/classgambit_1_1options/) | **[mySubCaps](/documentation/code/classes/classgambit_1_1functor/#variable-mysubcaps)** <br>Internal storage of function sub-capabilities, as a [YAML](/documentation/code/namespaces/namespaceyaml/) node.  |
 | std::set< [sspair](/documentation/code/namespaces/namespacegambit/#typedef-sspair) > | **[myDependees](/documentation/code/classes/classgambit_1_1functor/#variable-mydependees)** <br>List of all capability,type pairs of functors downstream of this one in the dependency tree.  |
 | std::set< [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > | **[allowedModels](/documentation/code/classes/classgambit_1_1functor/#variable-allowedmodels)** <br>List of allowed models.  |
+| std::set< [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > | **[conditionalModels](/documentation/code/classes/classgambit_1_1functor/#variable-conditionalmodels)** <br>List of conditional models.  |
 | std::set< std::set< [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > > | **[allowedGroupCombos](/documentation/code/classes/classgambit_1_1functor/#variable-allowedgroupcombos)** <br>List of allowed model group combinations.  |
 | std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), std::set< [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > > | **[modelGroups](/documentation/code/classes/classgambit_1_1functor/#variable-modelgroups)** <br>Map from model group names to group contents.  |
+| std::set< const [DRes::Observable](/documentation/code/classes/structgambit_1_1dres_1_1observable/) * > | **[matched_observables](/documentation/code/classes/classgambit_1_1functor/#variable-matched-observables)** <br>The set of observables that this functor matches.  |
+| std::set< const [DRes::ModuleRule](/documentation/code/classes/structgambit_1_1dres_1_1modulerule/) * > | **[matched_module_rules](/documentation/code/classes/classgambit_1_1functor/#variable-matched-module-rules)** <br>Set of module rules against which this functor has been tested and found to match.  |
+| std::set< const [DRes::BackendRule](/documentation/code/classes/structgambit_1_1dres_1_1backendrule/) * > | **[matched_backend_rules](/documentation/code/classes/classgambit_1_1functor/#variable-matched-backend-rules)** <br>Set of backend rules against which this functor has been tested and found to match.  |
 
 ## Public Functions Documentation
 
@@ -214,6 +235,7 @@ Constructor.
 inline virtual ~functor()
 ```
 
+Destructor. 
 
 ### function calculate
 
@@ -238,15 +260,11 @@ Reset-then-recalculate method.
 
 ```
 void setStatus(
-    int stat
+    FunctorStatus stat
 )
 ```
 
-
-Setter for status: -6 = required external tool absent (pybind11) -5 = required external tool absent (Mathematica) -4 = required backend absent (backend ini functions) -3 = required classes absent -2 = function absent -1 = origin absent 0 = model incompatibility (default) 1 = available 2 = active
-
-Setter for status: -4 = required backend absent (backend ini functions) -3 = required classes absent -2 = function absent -1 = origin absent 0 = model incompatibility (default) 1 = available 2 = active 
-
+Setter for status. 
 
 ### function setInUse
 
@@ -329,10 +347,13 @@ Getter for the wrapped function's origin (module or backend name)
 ### function version
 
 ```
-str version() const
+virtual str version() const
 ```
 
 Getter for the version of the wrapped function's origin (module or backend) 
+
+**Reimplemented by**: [Gambit::backend_functor_common::version](/documentation/code/classes/classgambit_1_1backend__functor__common/#function-version), [Gambit::backend_functor_common::version](/documentation/code/classes/classgambit_1_1backend__functor__common/#function-version), [Gambit::backend_functor_common::version](/documentation/code/classes/classgambit_1_1backend__functor__common/#function-version), [Gambit::backend_functor_common::version](/documentation/code/classes/classgambit_1_1backend__functor__common/#function-version), [Gambit::backend_functor_common::version](/documentation/code/classes/classgambit_1_1backend__functor__common/#function-version)
+
 
 ### function safe_version
 
@@ -348,12 +369,48 @@ Getter for the 'safe' incarnation of the version of the wrapped function's origi
 ### function status
 
 ```
-int status() const
+FunctorStatus status() const
 ```
 
+Getter for the functors current status. 
 
-Getter for the wrapped function current status: -4 = required backend absent (backend ini functions) -3 = required classes absent -2 = function absent -1 = origin absent 0 = model incompatibility (default) 1 = available 2 = active 
+### function isAvailable
 
+```
+bool isAvailable() const
+```
+
+Checks whether the functor is available (or even already activated) 
+
+Checks whether the functor is available (or even already activate) 
+
+
+### function isActive
+
+```
+bool isActive() const
+```
+
+Checks whether the functor is active. 
+
+Checks whether the functor is active (or even hyperactive) 
+
+
+### function isDisabled
+
+```
+bool isDisabled() const
+```
+
+Checks whether the functor is disabled (discriminant is negative) 
+
+### function isEnabled
+
+```
+bool isEnabled() const
+```
+
+Checks whether the functor is enabled (discriminant is non negative) 
 
 ### function quantity
 
@@ -503,6 +560,17 @@ virtual bool canBeLoopManager()
 Getter for revealing whether this is permitted to be a manager functor. 
 
 **Reimplemented by**: [Gambit::module_functor_common::canBeLoopManager](/documentation/code/classes/classgambit_1_1module__functor__common/#function-canbeloopmanager)
+
+
+### function needsLoopManager
+
+```
+virtual bool needsLoopManager()
+```
+
+Getter for revealing whether this functor needs a loop manager. 
+
+**Reimplemented by**: [Gambit::module_functor_common::needsLoopManager](/documentation/code/classes/classgambit_1_1module__functor__common/#function-needsloopmanager)
 
 
 ### function loopManagerCapability
@@ -704,26 +772,52 @@ Getter for backend-specific conditional dependencies (backend functor pointer ve
 
 ```
 virtual std::set< sspair > model_conditional_dependencies(
-    str 
+    str model
 )
 ```
 
-Getter for listing model-specific conditional dependencies. 
+Getter for listing model-specific conditional dependencies (matches also on parents and friends) 
 
 **Reimplemented by**: [Gambit::module_functor_common::model_conditional_dependencies](/documentation/code/classes/classgambit_1_1module__functor__common/#function-model-conditional-dependencies)
+
+
+### function model_conditional_dependencies_exact
+
+```
+virtual std::set< sspair > model_conditional_dependencies_exact(
+    str model
+)
+```
+
+Getter for listing model-specific conditional dependencies (matches on the exact model) 
+
+**Reimplemented by**: [Gambit::module_functor_common::model_conditional_dependencies_exact](/documentation/code/classes/classgambit_1_1module__functor__common/#function-model-conditional-dependencies-exact)
 
 
 ### function model_conditional_backend_reqs
 
 ```
 virtual std::set< sspair > model_conditional_backend_reqs(
-    str 
+    str model
 )
 ```
 
-Getter for listing model-specific conditional backend requirements. 
+Getter for listing model-specific conditional backend requirements (matches also on parents and friends) 
 
 **Reimplemented by**: [Gambit::module_functor_common::model_conditional_backend_reqs](/documentation/code/classes/classgambit_1_1module__functor__common/#function-model-conditional-backend-reqs)
+
+
+### function model_conditional_backend_reqs_exact
+
+```
+virtual std::set< sspair > model_conditional_backend_reqs_exact(
+    str model
+)
+```
+
+Getter for listing model-specific conditional backend requirements (matches on the exact model) 
+
+**Reimplemented by**: [Gambit::module_functor_common::model_conditional_backend_reqs_exact](/documentation/code/classes/classgambit_1_1module__functor__common/#function-model-conditional-backend-reqs-exact)
 
 
 ### function resolveDependency
@@ -930,6 +1024,30 @@ safe_ptr< std::set< sspair > > getDependees()
 
 Return a safe pointer to the vector of all capability,type pairs of functors arranged downstream of this one in the dependency tree. 
 
+### function getAllowedModels
+
+```
+const std::set< str > & getAllowedModels()
+```
+
+Getter for listing allowed models. 
+
+### function getConditionalModels
+
+```
+const std::set< str > & getConditionalModels()
+```
+
+Getter for listing conditional models. 
+
+### function getModelGroups
+
+```
+const std::map< str, std::set< str > > & getModelGroups()
+```
+
+Getter for map of model groups and the set of models in each group. 
+
 ### function allModelsAllowed
 
 ```
@@ -1016,6 +1134,76 @@ void setAllowedModelGroupCombo(
 Add a combination of model groups to the internal list of combinations for which this functor is allowed to be used. 
 
 Add a model group combination to the internal list of combinations for which this functor is allowed to be used. 
+
+
+### function addMatchedObservable
+
+```
+void addMatchedObservable(
+    const DRes::Observable * obs
+)
+```
+
+Add an observable to the set of those that this functor matches. 
+
+### function getMatchedObservables
+
+```
+const std::set< const DRes::Observable * > & getMatchedObservables()
+```
+
+Retrieve the set of observables that this functor matches. 
+
+### function addMatchedModuleRule
+
+```
+void addMatchedModuleRule(
+    const DRes::ModuleRule * r
+)
+```
+
+Add a module rule to the set of those against which this functor has been tested and found to match. 
+
+### function addMatchedBackendRule
+
+```
+void addMatchedBackendRule(
+    const DRes::BackendRule * r
+)
+```
+
+Add a backend rule to the set of those against which this functor has been tested and found to match. 
+
+### function getMatchedModuleRules
+
+```
+const std::set< const DRes::ModuleRule * > & getMatchedModuleRules()
+```
+
+Retrieve the set of module rules against which this functor has been tested and found to match. 
+
+### function getMatchedBackendRules
+
+```
+const std::set< const DRes::BackendRule * > & getMatchedBackendRules()
+```
+
+Retrieve the set of backend rules against which this functor has been tested and found to match. 
+
+### function getMatchedRules
+
+```
+template <class RuleT >
+const std::set< RuleT * > & getMatchedRules()
+```
+
+Retrieve matched rules by type. 
+
+### function getMatchedRules
+
+```
+const std::set< const DRes::ModuleRule * > & getMatchedRules()
+```
 
 
 ## Protected Functions Documentation
@@ -1133,14 +1321,6 @@ str myOrigin;
 
 Internal storage of the name of the module or backend to which the function belongs. 
 
-### variable myVersion
-
-```
-str myVersion;
-```
-
-Internal storage of the version of the module or backend to which the function belongs. 
-
 ### variable myPurpose
 
 ```
@@ -1184,12 +1364,10 @@ String label, used to label functor timing data for printer system.
 ### variable myStatus
 
 ```
-int myStatus;
+FunctorStatus myStatus;
 ```
 
-
-Status: -4 = required backend absent (backend ini functions) -3 = required classes absent -2 = function absent -1 = origin absent 0 = model incompatibility (default) 1 = available 2 = active 
-
+Status: 
 
 ### variable myVertexID
 
@@ -1247,6 +1425,14 @@ std::set< str > allowedModels;
 
 List of allowed models. 
 
+### variable conditionalModels
+
+```
+std::set< str > conditionalModels;
+```
+
+List of conditional models. 
+
 ### variable allowedGroupCombos
 
 ```
@@ -1263,6 +1449,30 @@ std::map< str, std::set< str > > modelGroups;
 
 Map from model group names to group contents. 
 
+### variable matched_observables
+
+```
+std::set< const DRes::Observable * > matched_observables;
+```
+
+The set of observables that this functor matches. 
+
+### variable matched_module_rules
+
+```
+std::set< const DRes::ModuleRule * > matched_module_rules;
+```
+
+Set of module rules against which this functor has been tested and found to match. 
+
+### variable matched_backend_rules
+
+```
+std::set< const DRes::BackendRule * > matched_backend_rules;
+```
+
+Set of backend rules against which this functor has been tested and found to match. 
+
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:03 +0000
+Updated on 2024-07-18 at 13:53:30 +0000

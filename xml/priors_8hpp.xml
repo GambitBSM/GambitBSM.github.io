@@ -21,14 +21,18 @@
         <label>gambit/Logs/log_tags.hpp</label>
         <link refid="log__tags_8hpp"/>
       </node>
-      <node id="60">
+      <node id="62">
         <label>gambit/ScannerBit/base_prior.hpp</label>
         <link refid="base__prior_8hpp"/>
+        <childnode refid="55" relation="include">
+        </childnode>
         <childnode refid="2" relation="include">
         </childnode>
         <childnode refid="42" relation="include">
         </childnode>
         <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
         </childnode>
       </node>
       <node id="1">
@@ -42,7 +46,13 @@
         </childnode>
         <childnode refid="53" relation="include">
         </childnode>
-        <childnode refid="60" relation="include">
+        <childnode refid="62" relation="include">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>gambit/ScannerBit/scanner_util_types.hpp</label>
+        <link refid="scanner__util__types_8hpp"/>
+        <childnode refid="61" relation="include">
         </childnode>
       </node>
       <node id="53">
@@ -77,6 +87,8 @@
         <childnode refid="37" relation="include">
         </childnode>
         <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
         </childnode>
       </node>
       <node id="15">
@@ -284,6 +296,9 @@
         </childnode>
         <childnode refid="49" relation="include">
         </childnode>
+      </node>
+      <node id="61">
+        <label>Eigen/Dense</label>
       </node>
       <node id="55">
         <label>algorithm</label>

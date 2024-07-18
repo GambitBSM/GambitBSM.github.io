@@ -31,7 +31,7 @@ container class for the actual plugins detected by ScannerBit
 | int | **[print_plugin_to_screen](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugin__loader/#function-print-plugin-to-screen)**(const std::string & name) const |
 | int | **[print_plugin_to_screen](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugin__loader/#function-print-plugin-to-screen)**(const std::string & type, const std::string & name) const |
 | int | **[print_plugin_to_screen](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugin__loader/#function-print-plugin-to-screen)**(const std::vector< std::string > & names) const |
-| [Plugin_Details](/documentation/code/classes/structgambit_1_1scanner_1_1plugins_1_1plugin__details/) & | **[find](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugin__loader/#function-find)**(const std::string & type, const std::string & plugin, const std::string & version, const std::string & lib) const |
+| [Plugin_Details](/documentation/code/classes/structgambit_1_1scanner_1_1plugins_1_1plugin__details/) & | **[find](/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugin__loader/#function-find)**(const std::string & type, std::string plugin, const std::string & version, const std::string & lib) const |
 
 ## Public Functions Documentation
 
@@ -161,7 +161,7 @@ int print_plugin_to_screen(
 ```
 Plugin_Details & find(
     const std::string & type,
-    const std::string & plugin,
+    std::string plugin,
     const std::string & version,
     const std::string & lib
 ) const
@@ -170,4 +170,4 @@ Plugin_Details & find(
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:04 +0000
+Updated on 2024-07-18 at 13:53:32 +0000

@@ -193,7 +193,7 @@ namespace Gambit {
         ATLAS::applyMuonEff(muons);
 
         vector<const HEPUtils::Jet*> candJets;
-        for (const HEPUtils::Jet* jet : event->jets()) {
+        for (const HEPUtils::Jet* jet : event->jets("antikt_R04")) {
           if (jet->pT() > 20. && fabs(jet->eta()) < 2.8)
             candJets.push_back(jet);
         }
@@ -533,4 +533,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:07 +0000
+Updated on 2024-07-18 at 13:53:34 +0000

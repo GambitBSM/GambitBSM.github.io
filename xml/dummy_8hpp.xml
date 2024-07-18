@@ -9,14 +9,18 @@
         <label>gambit/Logs/log_tags.hpp</label>
         <link refid="log__tags_8hpp"/>
       </node>
-      <node id="61">
+      <node id="63">
         <label>gambit/ScannerBit/base_prior.hpp</label>
         <link refid="base__prior_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
         <childnode refid="4" relation="include">
         </childnode>
         <childnode refid="44" relation="include">
         </childnode>
         <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
         </childnode>
       </node>
       <node id="3">
@@ -30,7 +34,7 @@
         </childnode>
         <childnode refid="55" relation="include">
         </childnode>
-        <childnode refid="61" relation="include">
+        <childnode refid="63" relation="include">
         </childnode>
       </node>
       <node id="1">
@@ -39,6 +43,12 @@
         <childnode refid="2" relation="include">
         </childnode>
         <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>gambit/ScannerBit/scanner_util_types.hpp</label>
+        <link refid="scanner__util__types_8hpp"/>
+        <childnode refid="62" relation="include">
         </childnode>
       </node>
       <node id="55">
@@ -73,6 +83,8 @@
         <childnode refid="39" relation="include">
         </childnode>
         <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
         </childnode>
       </node>
       <node id="17">
@@ -281,6 +293,9 @@
         <childnode refid="51" relation="include">
         </childnode>
       </node>
+      <node id="62">
+        <label>Eigen/Dense</label>
+      </node>
       <node id="2">
         <label>algorithm</label>
       </node>
@@ -458,65 +473,67 @@
 <codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1Priors_1_1Dummy" kindref="compound">Dummy</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;std::string&gt;&amp;<sp/>param,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Options" kindref="compound">Options</ref>&amp;)<sp/>:<sp/><ref refid="classGambit_1_1Priors_1_1BasePrior" kindref="compound">BasePrior</ref>(param,<sp/>param.size())</highlight></codeline>
 <codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="38"><highlight class="normal"></highlight></codeline>
-<codeline lineno="39" refid="classGambit_1_1Priors_1_1Dummy_1a31a00e08ae9b3382872a873b87a70331" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Priors_1_1Dummy_1a31a00e08ae9b3382872a873b87a70331" kindref="member">transform</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;double&gt;<sp/>&amp;unitpars,<sp/>std::unordered_map&lt;std::string,<sp/>double&gt;<sp/>&amp;outputMap)</highlight><highlight class="keyword"><sp/>const<sp/>override</highlight></codeline>
-<codeline lineno="40"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
-<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>it_vec<sp/>=<sp/>unitpars.begin();</highlight></codeline>
-<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>it<sp/>=<sp/>param_names.begin(),<sp/>end<sp/>=<sp/>param_names.end();<sp/>it<sp/>!=<sp/>end;<sp/>it++)</highlight></codeline>
-<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>outputMap[*it]<sp/>=<sp/>*(it_vec++);</highlight></codeline>
-<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="47"><highlight class="normal"></highlight></codeline>
-<codeline lineno="48" refid="classGambit_1_1Priors_1_1Dummy_1ab4c4eba859288071773c4f9df0ebddf6" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/><ref refid="classGambit_1_1Priors_1_1Dummy_1ab4c4eba859288071773c4f9df0ebddf6" kindref="member">inverse_transform</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::unordered_map&lt;std::string,<sp/>double&gt;<sp/>&amp;physical)</highlight><highlight class="keyword"><sp/>const<sp/>override</highlight></codeline>
-<codeline lineno="49"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
-<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/>u;</highlight></codeline>
-<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal">&amp;<sp/>n<sp/>:<sp/>param_names)</highlight></codeline>
-<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>u.push_back(physical.at(n));</highlight></codeline>
-<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>u;</highlight></codeline>
-<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="57"><highlight class="normal"></highlight></codeline>
-<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="59"><highlight class="normal"></highlight></codeline>
-<codeline lineno="60" refid="classGambit_1_1Priors_1_1None" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classGambit_1_1Priors_1_1None" kindref="compound">None</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Priors_1_1BasePrior" kindref="compound">BasePrior</ref></highlight></codeline>
-<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="63"><highlight class="normal"></highlight></codeline>
-<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1Priors_1_1None" kindref="compound">None</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;std::string&gt;&amp;<sp/>param,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Options" kindref="compound">Options</ref>&amp;)<sp/>:<sp/><ref refid="classGambit_1_1Priors_1_1BasePrior" kindref="compound">BasePrior</ref>(param)</highlight></codeline>
-<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="68"><highlight class="normal"></highlight></codeline>
-<codeline lineno="69" refid="classGambit_1_1Priors_1_1None_1a891e558a6272bddbd35b9de9c66e2d88" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Priors_1_1None_1a891e558a6272bddbd35b9de9c66e2d88" kindref="member">transform</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;double&gt;<sp/>&amp;,<sp/>std::unordered_map&lt;std::string,<sp/>double&gt;<sp/>&amp;outputMap)</highlight><highlight class="keyword"><sp/>const<sp/>override</highlight></codeline>
-<codeline lineno="70"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
-<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>it<sp/>=<sp/>param_names.begin(),<sp/>end<sp/>=<sp/>param_names.end();<sp/>it<sp/>!=<sp/>end;<sp/>it++)</highlight></codeline>
-<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(outputMap.find(*it)<sp/>==<sp/>outputMap.end())</highlight></codeline>
-<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="scanner__utils_8hpp_1a78c5cbcc517889fd5a4b79468ae2f721" kindref="member">scan_err</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Parameter<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>*it<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>prior<sp/>is<sp/>specified<sp/>as<sp/>&apos;none&apos;&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>and<sp/>the<sp/>scanner<sp/>has<sp/>not<sp/>inputed<sp/>a<sp/>value<sp/>for<sp/>it.&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>scan_end;</highlight></codeline>
-<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="81"><highlight class="normal"></highlight></codeline>
-<codeline lineno="82" refid="classGambit_1_1Priors_1_1None_1a8d32d675075a9e03baf74ad22f454c08" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/><ref refid="classGambit_1_1Priors_1_1None_1a8d32d675075a9e03baf74ad22f454c08" kindref="member">inverse_transform</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::unordered_map&lt;std::string,<sp/>double&gt;<sp/>&amp;)</highlight><highlight class="keyword"><sp/>const<sp/>override</highlight></codeline>
-<codeline lineno="83"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
-<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="scanner__utils_8hpp_1a78c5cbcc517889fd5a4b79468ae2f721" kindref="member">scan_err</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;&apos;None&apos;<sp/>prior<sp/>has<sp/>no<sp/>inverse<sp/>transform&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>scan_end;</highlight></codeline>
-<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{};</highlight></codeline>
-<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="87"><highlight class="normal"></highlight></codeline>
-<codeline lineno="88"><highlight class="normal"></highlight></codeline>
-<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="39" refid="classGambit_1_1Priors_1_1Dummy_1a3c9283d9811bdd41eb0eccfd77bcb43d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Priors_1_1Dummy_1a3c9283d9811bdd41eb0eccfd77bcb43d" kindref="member">log_prior_density</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::unordered_map&lt;std::string,<sp/>double&gt;<sp/>&amp;)</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1.;<sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41" refid="classGambit_1_1Priors_1_1Dummy_1ad14e2f8ac76fe4f6dd33ec1f392bbfea" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Priors_1_1Dummy_1ad14e2f8ac76fe4f6dd33ec1f392bbfea" kindref="member">transform</ref>(hyper_cube_ref&lt;double&gt;<sp/>unitpars,<sp/>std::unordered_map&lt;std::string,<sp/>double&gt;<sp/>&amp;outputMap)</highlight><highlight class="keyword"><sp/>const<sp/>override</highlight></codeline>
+<codeline lineno="42"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0,<sp/>end<sp/>=<sp/>unitpars.size();<sp/>i<sp/>&lt;<sp/>end;<sp/>++i)</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>outputMap[param_names[i]]<sp/>=<sp/>unitpars[i];</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight></codeline>
+<codeline lineno="47" refid="classGambit_1_1Priors_1_1Dummy_1a5a08fd4babc11ad93de48f682ae21b74" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Priors_1_1Dummy_1a5a08fd4babc11ad93de48f682ae21b74" kindref="member">inverse_transform</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::unordered_map&lt;std::string,<sp/>double&gt;<sp/>&amp;physical,<sp/>hyper_cube_ref&lt;double&gt;<sp/>unit)</highlight><highlight class="keyword"><sp/>const<sp/>override</highlight></codeline>
+<codeline lineno="48"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0,<sp/>end<sp/>=<sp/>this-&gt;size();<sp/>i<sp/>&lt;<sp/>end;<sp/>++i)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>unit[i]<sp/>=<sp/>physical.at(param_names[i]);</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight></codeline>
+<codeline lineno="57" refid="classGambit_1_1Priors_1_1None" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classGambit_1_1Priors_1_1None" kindref="compound">None</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Priors_1_1BasePrior" kindref="compound">BasePrior</ref></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1Priors_1_1None" kindref="compound">None</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;std::string&gt;&amp;<sp/>param,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Options" kindref="compound">Options</ref>&amp;)<sp/>:<sp/><ref refid="classGambit_1_1Priors_1_1BasePrior" kindref="compound">BasePrior</ref>(param)</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="66" refid="classGambit_1_1Priors_1_1None_1a7fb97efb59f1ef4f18615ed8044137af" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Priors_1_1None_1a7fb97efb59f1ef4f18615ed8044137af" kindref="member">log_prior_density</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::unordered_map&lt;std::string,<sp/>double&gt;<sp/>&amp;)</highlight><highlight class="keyword"><sp/>const<sp/>override</highlight></codeline>
+<codeline lineno="67"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="scanner__utils_8hpp_1a78c5cbcc517889fd5a4b79468ae2f721" kindref="member">scan_err</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;&apos;None&apos;<sp/>prior<sp/>has<sp/>no<sp/>density&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>scan_end;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0.0;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight></codeline>
+<codeline lineno="72" refid="classGambit_1_1Priors_1_1None_1a9dcf916afde9215088ef2ed7f9afc7bf" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Priors_1_1None_1a9dcf916afde9215088ef2ed7f9afc7bf" kindref="member">transform</ref>(hyper_cube_ref&lt;double&gt;,<sp/>std::unordered_map&lt;std::string,<sp/>double&gt;<sp/>&amp;outputMap)</highlight><highlight class="keyword"><sp/>const<sp/>override</highlight></codeline>
+<codeline lineno="73"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>it<sp/>=<sp/>param_names.begin(),<sp/>end<sp/>=<sp/>param_names.end();<sp/>it<sp/>!=<sp/>end;<sp/>it++)</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(outputMap.find(*it)<sp/>==<sp/>outputMap.end())</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="scanner__utils_8hpp_1a78c5cbcc517889fd5a4b79468ae2f721" kindref="member">scan_err</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Parameter<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>*it<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>prior<sp/>is<sp/>specified<sp/>as<sp/>&apos;none&apos;&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>and<sp/>the<sp/>scanner<sp/>has<sp/>not<sp/>inputed<sp/>a<sp/>value<sp/>for<sp/>it.&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>scan_end;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85" refid="classGambit_1_1Priors_1_1None_1ac6cf5e7261ed1d2c1419611d1b156686" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Priors_1_1None_1ac6cf5e7261ed1d2c1419611d1b156686" kindref="member">inverse_transform</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::unordered_map&lt;std::string,<sp/>double&gt;<sp/>&amp;,<sp/>hyper_cube_ref&lt;double&gt;)</highlight><highlight class="keyword"><sp/>const<sp/>override</highlight></codeline>
+<codeline lineno="86"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="scanner__utils_8hpp_1a78c5cbcc517889fd5a4b79468ae2f721" kindref="member">scan_err</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;&apos;None&apos;<sp/>prior<sp/>has<sp/>no<sp/>inverse<sp/>transform&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>scan_end;</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"></highlight></codeline>
 <codeline lineno="90"><highlight class="normal"></highlight></codeline>
-<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LOAD_PRIOR(dummy,<sp/>Dummy)</highlight></codeline>
-<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LOAD_PRIOR(none,<sp/>None)</highlight></codeline>
-<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="94"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="95"><highlight class="normal"></highlight></codeline>
-<codeline lineno="96"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LOAD_PRIOR(dummy,<sp/>Dummy)</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LOAD_PRIOR(none,<sp/>None)</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="96"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
     <location file="ScannerBit/include/gambit/ScannerBit/priors/dummy.hpp"/>
   </compounddef>

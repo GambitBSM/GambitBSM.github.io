@@ -23,6 +23,7 @@ description: "[No description available]"
 | struct | **[Gambit::DarkBit::AxionEDT_params](/documentation/code/classes/structgambit_1_1darkbit_1_1axionedt__params/)**  |
 | class | **[Gambit::DarkBit::AxionInterpolator](/documentation/code/classes/classgambit_1_1darkbit_1_1axioninterpolator/)**  |
 | class | **[Gambit::DarkBit::AxionInterpolator2D](/documentation/code/classes/classgambit_1_1darkbit_1_1axioninterpolator2d/)**  |
+| class | **[Gambit::DarkBit::bullet_cluster_lnL](/documentation/code/classes/classgambit_1_1darkbit_1_1bullet__cluster__lnl/)**  |
 | class | **[Gambit::DarkBit::CAST_SolarModel_Interpolator](/documentation/code/classes/classgambit_1_1darkbit_1_1cast__solarmodel__interpolator/)**  |
 | class | **[Gambit::DarkBit::DiracSingletDM](/documentation/code/classes/classgambit_1_1darkbit_1_1diracsingletdm/)**  |
 | class | **[Gambit::DarkBit::DMEFT](/documentation/code/classes/classgambit_1_1darkbit_1_1dmeft/)**  |
@@ -48,6 +49,9 @@ description: "[No description available]"
 | struct | **[Gambit::DarkBit::SolarModel_params2](/documentation/code/classes/structgambit_1_1darkbit_1_1solarmodel__params2/)**  |
 | struct | **[Gambit::DarkBit::SolarModel_params3](/documentation/code/classes/structgambit_1_1darkbit_1_1solarmodel__params3/)**  |
 | struct | **[Gambit::DarkBit::SolarModel_params4](/documentation/code/classes/structgambit_1_1darkbit_1_1solarmodel__params4/)**  |
+| class | **[Gambit::DarkBit::subgev_self_interactions](/documentation/code/classes/classgambit_1_1darkbit_1_1subgev__self__interactions/)**  |
+| class | **[Gambit::DarkBit::SubGeVDM_fermion](/documentation/code/classes/classgambit_1_1darkbit_1_1subgevdm__fermion/)** <br>Helper function (width rescaled for RD calculations)  |
+| class | **[Gambit::DarkBit::SubGeVDM_scalar](/documentation/code/classes/classgambit_1_1darkbit_1_1subgevdm__scalar/)** <br>Helper function (width rescaled for RD calculations)  |
 | struct | **[Gambit::DarkBit::TH_Channel](/documentation/code/classes/structgambit_1_1darkbit_1_1th__channel/)**  |
 | struct | **[Gambit::DarkBit::TH_ParticleProperty](/documentation/code/classes/structgambit_1_1darkbit_1_1th__particleproperty/)** <br>A container for the mass and spin of a particle.  |
 | struct | **[Gambit::DarkBit::TH_Process](/documentation/code/classes/structgambit_1_1darkbit_1_1th__process/)**  |
@@ -194,6 +198,7 @@ description: "[No description available]"
 | void | **[GalacticHalo_gNFW](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-galactichalo-gnfw)**([GalacticHaloProperties](/documentation/code/classes/structgambit_1_1galactichaloproperties/) & result)<br>Module function to generate [GalacticHaloProperties](/documentation/code/classes/structgambit_1_1galactichaloproperties/) for gNFW profile.  |
 | void | **[GalacticHalo_Einasto](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-galactichalo-einasto)**([GalacticHaloProperties](/documentation/code/classes/structgambit_1_1galactichaloproperties/) & result)<br>Module function to generate [GalacticHaloProperties](/documentation/code/classes/structgambit_1_1galactichaloproperties/) for Einasto profile.  |
 | void | **[ExtractLocalMaxwellianHalo](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-extractlocalmaxwellianhalo)**([LocalMaxwellianHalo](/documentation/code/classes/structgambit_1_1localmaxwellianhalo/) & result)<br>Module function providing local density and velocity dispersion parameters.  |
+| void | **[ExtractLocalMaxwellianHalo_GeV](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-extractlocalmaxwellianhalo-gev)**([LocalMaxwellianHalo](/documentation/code/classes/structgambit_1_1localmaxwellianhalo/) & result)<br>Module function providing local density and velocity dispersion parameters, in powers of GeV.  |
 | void | **[UnitTest_DarkBit](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-unittest-darkbit)**(int & result)<br>Central unit test routine.  |
 | double | **[get_finalState_mass](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-get-finalstate-mass)**(const std::string & finalState)<br>Helper function to get the mass of a given final state particle.  |
 | void | **[DarkMatter_ID_DiracSingletDM](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-darkmatter-id-diracsingletdm)**(std::string & result) |
@@ -212,6 +217,17 @@ description: "[No description available]"
 | void | **[sigma_SD_vnqn_FermionicHiggsPortal](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-sigma-sd-vnqn-fermionichiggsportal)**([map_intpair_dbl](/documentation/code/namespaces/namespacegambit/#typedef-map-intpair-dbl) & result) |
 | void | **[DDCalc_Couplings_WIMP_nucleon](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-ddcalc-couplings-wimp-nucleon)**([DD_coupling_container](/documentation/code/classes/structgambit_1_1dd__coupling__container/) & result)<br>DDCalc initialisation.  |
 | void | **[DDCalc_Couplings_NR_WCs](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-ddcalc-couplings-nr-wcs)**([DD_coupling_container](/documentation/code/classes/structgambit_1_1dd__coupling__container/) & result) |
+| | **[DD_EX](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-dd-ex)**(XENON100_2012 ) |
+| void | **[calc_DarkSide50_ER_LogLikelihood](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-calc-darkside50-er-loglikelihood)**(double & result) |
+| void | **[calc_DarkSide50_ER_2023_LogLikelihood](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-calc-darkside50-er-2023-loglikelihood)**(double & result) |
+| void | **[calc_PandaX_4T_ER_LogLikelihood](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-calc-pandax-4t-er-loglikelihood)**(double & result) |
+| void | **[calc_SENSEI_at_MINOS_LogLikelihood](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-calc-sensei-at-minos-loglikelihood)**(double & result) |
+| void | **[calc_CDMS_HVeV_2020_LogLikelihood](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-calc-cdms-hvev-2020-loglikelihood)**(double & result) |
+| void | **[calc_DAMIC_M_2023_LogLikelihood](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-calc-damic-m-2023-loglikelihood)**(double & result) |
+| void | **[calc_XENON1T_Migdal_LogLikelihood](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-calc-xenon1t-migdal-loglikelihood)**(double & result) |
+| void | **[calc_DarkSide50_Migdal_LogLikelihood](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-calc-darkside50-migdal-loglikelihood)**(double & result) |
+| void | **[calc_DarkSide50_Migdal_2023_LogLikelihood](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-calc-darkside50-migdal-2023-loglikelihood)**(double & result) |
+| void | **[calc_PandaX_4T_Migdal_LogLikelihood](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-calc-pandax-4t-migdal-loglikelihood)**(double & result) |
 | void | **[TH_ProcessCatalog_DMEFT](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-th-processcatalog-dmeft)**([DarkBit::TH_ProcessCatalog](/documentation/code/classes/structgambit_1_1darkbit_1_1th__processcatalog/) & result) |
 | void | **[DarkMatter_ID_DMEFT](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-darkmatter-id-dmeft)**(std::string & result) |
 | void | **[DarkMatterConj_ID_DMEFT](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-darkmatterconj-id-dmeft)**(std::string & result) |
@@ -297,6 +313,8 @@ description: "[No description available]"
 | void | **[RD_eff_annrate_from_ProcessCatalog](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-rd-eff-annrate-from-processcatalog)**(double(*&)(double &) result)<br>Infer Weff from process catalog.  |
 | void | **[RD_oh2_DS6pre4_ini_func](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-rd-oh2-ds6pre4-ini-func)**(int & result)<br>Some helper function to prepare evaluation of RD_oh2_DS_general from DarkSUSY 6., up to version 6.2.5.  |
 | void | **[RD_oh2_DS6_ini_func](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-rd-oh2-ds6-ini-func)**(int & result)<br>Some helper function to prepare evaluation of RD_oh2_DS_general from DarkSUSY 6., starting from version 6.4.0.  |
+| void | **[RD_oh2_DS_general_aDM](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-rd-oh2-ds-general-adm)**([ddpair](/documentation/code/namespaces/namespacegambit/#typedef-ddpair) & result)<br>General routine for calculation of relic density, using DarkSUSY 6+ Boltzmann solver. Updated settings + support also for asymmetric DM, will eventually completely replace RD_oh2_DS_general.  |
+| void | **[RD_oh2_from_oh2_aDM](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-rd-oh2-from-oh2-adm)**(double & result)<br>extract relic density oh2 from capability oh2=(oh2,r)  |
 | void | **[RD_oh2_DS_general](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-rd-oh2-ds-general)**(double & result)<br>General routine for calculation of relic density, using DarkSUSY 6+ Boltzmann solver.  |
 | void | **[RD_oh2_DS5_general](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-rd-oh2-ds5-general)**(double & result)<br>General routine for calculation of relic density, using DarkSUSY 5 Boltzmann solver.  |
 | void | **[RD_oh2_Xf_MicrOmegas](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-rd-oh2-xf-micromegas)**([ddpair](/documentation/code/namespaces/namespacegambit/#typedef-ddpair) & result)<br>Relic density directly from a call of initialized MicrOmegas.  |
@@ -307,10 +325,13 @@ description: "[No description available]"
 | void | **[print_channel_contributions_MicrOmegas](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-print-channel-contributions-micromegas)**(double & result) |
 | void | **[get_semi_ann_MicrOmegas](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-get-semi-ann-micromegas)**(double & result) |
 | void | **[vSigma_freezeout_MicrOmegas](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-vsigma-freezeout-micromegas)**(double & result)<br>Return the thermally averaged cross-section at T_freezeout.  |
+| void | **[RD_oh2_underprediction_SubGeVDM](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-rd-oh2-underprediction-subgevdm)**(double & result) |
 | void | **[RD_fraction_one](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-rd-fraction-one)**(double & result) |
 | void | **[RD_fraction_leq_one](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-rd-fraction-leq-one)**(double & result) |
 | void | **[RD_fraction_rescaled](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-rd-fraction-rescaled)**(double & result) |
 | void | **[RD_fraction_rescaled_LCDM](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-rd-fraction-rescaled-lcdm)**(double & result) |
+| void | **[ID_suppression_symDM](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-id-suppression-symdm)**(double & result) |
+| void | **[ID_suppression_aDM](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-id-suppression-adm)**(double & result) |
 | void | **[DarkMatter_ID_ScalarSingletDM](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-darkmatter-id-scalarsingletdm)**(std::string & result) |
 | void | **[DarkMatterConj_ID_ScalarSingletDM](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-darkmatterconj-id-scalarsingletdm)**(std::string & result) |
 | void | **[get_ScalarSingletDM_DD_couplings](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-get-scalarsingletdm-dd-couplings)**(const [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) & spec, [DM_nucleon_couplings](/documentation/code/classes/structgambit_1_1dm__nucleon__couplings/) & result, [Models::safe_param_map](/documentation/code/classes/classgambit_1_1models_1_1safe__param__map/)< [safe_ptr](/documentation/code/classes/classgambit_1_1safe__ptr/)< const double > > & Param)<br>Common code for different scalar singlet direct detection coupling routines.  |
@@ -331,6 +352,19 @@ description: "[No description available]"
 | void | **[lnL_vrot_gaussian](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-lnl-vrot-gaussian)**(double & result) |
 | void | **[lnL_v0_gaussian](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-lnl-v0-gaussian)**(double & result) |
 | void | **[lnL_vesc_gaussian](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-lnl-vesc-gaussian)**(double & result) |
+| double | **[Gamma_reg](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-gamma-reg)**(double Gamma, double mass)<br>Helper function (width rescaled for RD calculations)  |
+| void | **[DarkMatter_ID_SubGeVDM_fermion](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-darkmatter-id-subgevdm-fermion)**(std::string & result) |
+| void | **[DarkMatterConj_ID_SubGeVDM_fermion](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-darkmatterconj-id-subgevdm-fermion)**(std::string & result) |
+| void | **[TH_ProcessCatalog_SubGeVDM_fermion](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-th-processcatalog-subgevdm-fermion)**([TH_ProcessCatalog](/documentation/code/classes/structgambit_1_1darkbit_1_1th__processcatalog/) & result) |
+| void | **[DD_couplings_SubGeVDM_fermion](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-dd-couplings-subgevdm-fermion)**([DM_nucleon_couplings](/documentation/code/classes/structgambit_1_1dm__nucleon__couplings/) & result)<br>Direct detection couplings.  |
+| void | **[sigma_e_SubGeVDM_fermion](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-sigma-e-subgevdm-fermion)**(double & result) |
+| void | **[DarkMatter_ID_SubGeVDM_scalar](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-darkmatter-id-subgevdm-scalar)**(std::string & result) |
+| void | **[DarkMatterConj_ID_SubGeVDM_scalar](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-darkmatterconj-id-subgevdm-scalar)**(std::string & result) |
+| void | **[TH_ProcessCatalog_SubGeVDM_scalar](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-th-processcatalog-subgevdm-scalar)**([TH_ProcessCatalog](/documentation/code/classes/structgambit_1_1darkbit_1_1th__processcatalog/) & result) |
+| void | **[DD_couplings_SubGeVDM_scalar](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-dd-couplings-subgevdm-scalar)**([DM_nucleon_couplings](/documentation/code/classes/structgambit_1_1dm__nucleon__couplings/) & result)<br>Direct detection couplings.  |
+| void | **[sigma_e_SubGeVDM_scalar](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-sigma-e-subgevdm-scalar)**(double & result) |
+| void | **[calc_bullet_cluster_DMmassLoss](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-calc-bullet-cluster-dmmassloss)**(double & result) |
+| void | **[calc_bullet_cluster_lnL](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-calc-bullet-cluster-lnl)**(double & result) |
 | void | **[capture_rate_Sun_const_xsec_DS5](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-capture-rate-sun-const-xsec-ds5)**(double & result)<br>Capture rate of regular dark matter in the Sun (no v-dependent or q-dependent cross-sections) (s^-1). DarkSUSY 5 version.  |
 | void | **[capture_rate_Sun_const_xsec](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-capture-rate-sun-const-xsec)**(double & result)<br>Capture rate of regular dark matter in the Sun (no v-dependent or q-dependent cross-sections) (s^-1). DarkSUSY 6 version.  |
 | void | **[capture_rate_Sun_const_xsec_capgen](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-capture-rate-sun-const-xsec-capgen)**(double & result)<br>Alternative to the darkSusy fct, using captn_specific from capgen instead.  |
@@ -354,6 +388,7 @@ description: "[No description available]"
 | void | **[DD_nonrel_WCs_flavscheme](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-dd-nonrel-wcs-flavscheme)**([NREO_DM_nucleon_couplings](/documentation/code/classes/structgambit_1_1nreo__dm__nucleon__couplings/) & result) |
 | void | **[ExtractDirectDMNuisanceParameters](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-extractdirectdmnuisanceparameters)**([map_str_dbl](/documentation/code/namespaces/namespacegambit/#typedef-map-str-dbl) & result) |
 | void | **[TH_ProcessCatalog_WIMP_EFT](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-th-processcatalog-wimp-eft)**([DarkBit::TH_ProcessCatalog](/documentation/code/classes/structgambit_1_1darkbit_1_1th__processcatalog/) & result)<br>Set up process catalog for a generic parameterisation of (two body) WIMP dark matter decays and annihilations.  |
+| void | **[Xray_loglikes_Cirelli](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-xray-loglikes-cirelli)**(double & result)<br>Xray loglikelihood from Cirelli et al (MISSINGREF)  |
 
 ## Attributes
 
@@ -1706,6 +1741,16 @@ void ExtractLocalMaxwellianHalo(
 
 Module function providing local density and velocity dispersion parameters. 
 
+### function ExtractLocalMaxwellianHalo_GeV
+
+```
+void ExtractLocalMaxwellianHalo_GeV(
+    LocalMaxwellianHalo & result
+)
+```
+
+Module function providing local density and velocity dispersion parameters, in powers of GeV. 
+
 ### function UnitTest_DarkBit
 
 ```
@@ -1906,6 +1951,105 @@ DDCalc initialisation.
 ```
 void DDCalc_Couplings_NR_WCs(
     DD_coupling_container & result
+)
+```
+
+
+### function DD_EX
+
+```
+DD_EX(
+    XENON100_2012 
+)
+```
+
+
+### function calc_DarkSide50_ER_LogLikelihood
+
+```
+void calc_DarkSide50_ER_LogLikelihood(
+    double & result
+)
+```
+
+
+### function calc_DarkSide50_ER_2023_LogLikelihood
+
+```
+void calc_DarkSide50_ER_2023_LogLikelihood(
+    double & result
+)
+```
+
+
+### function calc_PandaX_4T_ER_LogLikelihood
+
+```
+void calc_PandaX_4T_ER_LogLikelihood(
+    double & result
+)
+```
+
+
+### function calc_SENSEI_at_MINOS_LogLikelihood
+
+```
+void calc_SENSEI_at_MINOS_LogLikelihood(
+    double & result
+)
+```
+
+
+### function calc_CDMS_HVeV_2020_LogLikelihood
+
+```
+void calc_CDMS_HVeV_2020_LogLikelihood(
+    double & result
+)
+```
+
+
+### function calc_DAMIC_M_2023_LogLikelihood
+
+```
+void calc_DAMIC_M_2023_LogLikelihood(
+    double & result
+)
+```
+
+
+### function calc_XENON1T_Migdal_LogLikelihood
+
+```
+void calc_XENON1T_Migdal_LogLikelihood(
+    double & result
+)
+```
+
+
+### function calc_DarkSide50_Migdal_LogLikelihood
+
+```
+void calc_DarkSide50_Migdal_LogLikelihood(
+    double & result
+)
+```
+
+
+### function calc_DarkSide50_Migdal_2023_LogLikelihood
+
+```
+void calc_DarkSide50_Migdal_2023_LogLikelihood(
+    double & result
+)
+```
+
+
+### function calc_PandaX_4T_Migdal_LogLikelihood
+
+```
+void calc_PandaX_4T_Migdal_LogLikelihood(
+    double & result
 )
 ```
 
@@ -2852,7 +2996,41 @@ Some helper function to prepare evaluation of RD_oh2_DS_general from DarkSUSY 6.
 
 Option timeout<double>: Maximum core time to allow for relic density calculation, in seconds (default: 600s)
 
-Option fast<int>: Numerical performance of Boltzmann solver in DS (default: 1) [NB: accurate is fast = 0 !]
+Option fast<int>: Numerical performance of Boltzmann solver in DS (default: 1) [NB: "quick but maybe inaccurate" is fast=1; old "accurate" is fast = 0, new DS defulat is 20 ]
+
+
+### function RD_oh2_DS_general_aDM
+
+```
+void RD_oh2_DS_general_aDM(
+    ddpair & result
+)
+```
+
+General routine for calculation of relic density, using DarkSUSY 6+ Boltzmann solver. Updated settings + support also for asymmetric DM, will eventually completely replace RD_oh2_DS_general. 
+
+Requires:
+
+* RD_thresholds_resonances from RD_spectrum_ordered
+* RD_eff_annrate (Weff) Output:
+    * 1 = oh2sym + oh2adm
+    * 2 = r = oh2sym / (oh2sym + oh2adm) 
+
+
+### function RD_oh2_from_oh2_aDM
+
+```
+void RD_oh2_from_oh2_aDM(
+    double & result
+)
+```
+
+extract relic density oh2 from capability oh2=(oh2,r) 
+
+Requires:
+
+* RD_oh2_aDM Output:
+    * oh2 
 
 
 ### function RD_oh2_DS_general
@@ -2974,6 +3152,15 @@ void vSigma_freezeout_MicrOmegas(
 
 Return the thermally averaged cross-section at T_freezeout. 
 
+### function RD_oh2_underprediction_SubGeVDM
+
+```
+void RD_oh2_underprediction_SubGeVDM(
+    double & result
+)
+```
+
+
 ### function RD_fraction_one
 
 ```
@@ -3011,6 +3198,24 @@ Option oh2_obs<double>: Set reference dark matter density (Oh2) for this module 
 
 ```
 void RD_fraction_rescaled_LCDM(
+    double & result
+)
+```
+
+
+### function ID_suppression_symDM
+
+```
+void ID_suppression_symDM(
+    double & result
+)
+```
+
+
+### function ID_suppression_aDM
+
+```
+void ID_suppression_aDM(
     double & result
 )
 ```
@@ -3332,6 +3537,127 @@ Option vesc_obserr<double>: 1 sigma error on escape velocity (default 35)
 Option profile_systematics<bool>: Use likelihood version that has been profiled over systematic errors (default false)
 
 
+### function Gamma_reg
+
+```
+double Gamma_reg(
+    double Gamma,
+    double mass
+)
+```
+
+Helper function (width rescaled for RD calculations) 
+
+### function DarkMatter_ID_SubGeVDM_fermion
+
+```
+void DarkMatter_ID_SubGeVDM_fermion(
+    std::string & result
+)
+```
+
+
+### function DarkMatterConj_ID_SubGeVDM_fermion
+
+```
+void DarkMatterConj_ID_SubGeVDM_fermion(
+    std::string & result
+)
+```
+
+
+### function TH_ProcessCatalog_SubGeVDM_fermion
+
+```
+void TH_ProcessCatalog_SubGeVDM_fermion(
+    TH_ProcessCatalog & result
+)
+```
+
+
+### function DD_couplings_SubGeVDM_fermion
+
+```
+void DD_couplings_SubGeVDM_fermion(
+    DM_nucleon_couplings & result
+)
+```
+
+Direct detection couplings. 
+
+### function sigma_e_SubGeVDM_fermion
+
+```
+void sigma_e_SubGeVDM_fermion(
+    double & result
+)
+```
+
+
+### function DarkMatter_ID_SubGeVDM_scalar
+
+```
+void DarkMatter_ID_SubGeVDM_scalar(
+    std::string & result
+)
+```
+
+
+### function DarkMatterConj_ID_SubGeVDM_scalar
+
+```
+void DarkMatterConj_ID_SubGeVDM_scalar(
+    std::string & result
+)
+```
+
+
+### function TH_ProcessCatalog_SubGeVDM_scalar
+
+```
+void TH_ProcessCatalog_SubGeVDM_scalar(
+    TH_ProcessCatalog & result
+)
+```
+
+
+### function DD_couplings_SubGeVDM_scalar
+
+```
+void DD_couplings_SubGeVDM_scalar(
+    DM_nucleon_couplings & result
+)
+```
+
+Direct detection couplings. 
+
+### function sigma_e_SubGeVDM_scalar
+
+```
+void sigma_e_SubGeVDM_scalar(
+    double & result
+)
+```
+
+
+### function calc_bullet_cluster_DMmassLoss
+
+```
+void calc_bullet_cluster_DMmassLoss(
+    double & result
+)
+```
+
+
+### function calc_bullet_cluster_lnL
+
+```
+void calc_bullet_cluster_lnL(
+    double & result
+)
+```
+
+
 ### function capture_rate_Sun_const_xsec_DS5
 
 ```
@@ -3572,6 +3898,16 @@ Set up process catalog for a generic parameterisation of (two body) WIMP dark ma
 Generic parameterisation of WIMP self-annihilation cross-section to various SM two-body final states
 
 
+### function Xray_loglikes_Cirelli
+
+```
+void Xray_loglikes_Cirelli(
+    double & result
+)
+```
+
+Xray loglikelihood from Cirelli et al (MISSINGREF) 
+
 
 ## Attributes Documentation
 
@@ -3656,4 +3992,4 @@ static std::vector< std::string > channels {"e", "mu", "tau",
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:04 +0000
+Updated on 2024-07-18 at 13:53:31 +0000

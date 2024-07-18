@@ -19,9 +19,10 @@ Inherits from [Gambit::IniParser::Parser](/documentation/code/classes/classgambi
 
 |                | Name           |
 | -------------- | -------------- |
-| const ObservablesType & | **[getObservables](/documentation/code/classes/classgambit_1_1iniparser_1_1inifile/#function-getobservables)**() const |
-| const ObservablesType & | **[getRules](/documentation/code/classes/classgambit_1_1iniparser_1_1inifile/#function-getrules)**() const |
-| const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[filename](/documentation/code/classes/classgambit_1_1iniparser_1_1inifile/#function-filename)**() const |
+| const std::vector< [DRes::Observable](/documentation/code/classes/structgambit_1_1dres_1_1observable/) > & | **[getObservables](/documentation/code/classes/classgambit_1_1iniparser_1_1inifile/#function-getobservables)**() const |
+| const std::vector< [DRes::ModuleRule](/documentation/code/classes/structgambit_1_1dres_1_1modulerule/) > & | **[getModuleRules](/documentation/code/classes/classgambit_1_1iniparser_1_1inifile/#function-getmodulerules)**() const |
+| const std::vector< [DRes::BackendRule](/documentation/code/classes/structgambit_1_1dres_1_1backendrule/) > & | **[getBackendRules](/documentation/code/classes/classgambit_1_1iniparser_1_1inifile/#function-getbackendrules)**() const |
+| const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[filename](/documentation/code/classes/classgambit_1_1iniparser_1_1inifile/#function-filename)**() const<br>Return the filename.  |
 | virtual void | **[readFile](/documentation/code/classes/classgambit_1_1iniparser_1_1inifile/#function-readfile)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) name)<br>Read in the [YAML](/documentation/code/namespaces/namespaceyaml/) file.  |
 
 ## Additional inherited members
@@ -60,17 +61,24 @@ Inherits from [Gambit::IniParser::Parser](/documentation/code/classes/classgambi
 ### function getObservables
 
 ```
-const ObservablesType & getObservables() const
+const std::vector< DRes::Observable > & getObservables() const
 ```
 
 
 Getters for private observable and rules entries 
 
 
-### function getRules
+### function getModuleRules
 
 ```
-const ObservablesType & getRules() const
+const std::vector< DRes::ModuleRule > & getModuleRules() const
+```
+
+
+### function getBackendRules
+
+```
+const std::vector< DRes::BackendRule > & getBackendRules() const
 ```
 
 
@@ -80,6 +88,7 @@ const ObservablesType & getRules() const
 const str filename() const
 ```
 
+Return the filename. 
 
 ### function readFile
 
@@ -96,4 +105,4 @@ Read in the [YAML](/documentation/code/namespaces/namespaceyaml/) file.
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:04 +0000
+Updated on 2024-07-18 at 13:53:31 +0000

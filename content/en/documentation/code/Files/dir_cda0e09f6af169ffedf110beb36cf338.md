@@ -44,6 +44,7 @@ description: "[No description available]"
 | **[models/Models/src/models/ScalarSingletDM.cpp](/documentation/code/files/models_2src_2models_2scalarsingletdm_8cpp/#file-models-models-src-models-scalarsingletdm-cpp)**  |
 | **[models/StandardModel_Higgs.cpp](/documentation/code/files/standardmodel__higgs_8cpp/#file-models-standardmodel-higgs-cpp)**  |
 | **[models/StandardModel_mNudiff.cpp](/documentation/code/files/standardmodel__mnudiff_8cpp/#file-models-standardmodel-mnudiff-cpp)**  |
+| **[models/models/SubGeVDM.cpp](/documentation/code/files/models_2subgevdm_8cpp/#file-models-models-subgevdm-cpp)**  |
 | **[models/Models/src/models/SuperRenormHP.cpp](/documentation/code/files/models_2src_2models_2superrenormhp_8cpp/#file-models-models-src-models-superrenormhp-cpp)**  |
 | **[models/WC.cpp](/documentation/code/files/wc_8cpp/#file-models-wc-cpp)**  |
 
@@ -54,4 +55,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:06 +0000
+Updated on 2024-07-18 at 13:53:33 +0000

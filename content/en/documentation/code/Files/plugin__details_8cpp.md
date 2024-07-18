@@ -329,17 +329,20 @@ namespace Gambit
                 {
                     char path_buffer[1024];
                     int p_n;
+                    std::stringstream p_ss;
+                    
                     while ((p_n = fread(path_buffer, 1, sizeof path_buffer, p_f)) > 0)
                     {
-                        std::stringstream p_ss(std::string(path_buffer, p_n));
-                        while (p_ss >> p_str)
+                        p_ss << std::string(path_buffer, p_n);
+                    }
+                    
+                    while (p_ss >> p_str)
+                    {
+                        YAML::Node node = YAML::LoadFile(path + p_str);
+                        if (node[plugin])
                         {
-                            YAML::Node node = YAML::LoadFile(path + p_str);
-                            if (node[plugin])
-                            {
-                                description = node[plugin].as<std::string>();
-                                break;
-                            }
+                            description = node[plugin].as<std::string>();
+                            break;
                         }
                     }
 
@@ -479,17 +482,20 @@ namespace Gambit
                 {
                     char path_buffer[1024];
                     int p_n;
+                    std::stringstream p_ss;
+                    
                     while ((p_n = fread(path_buffer, 1, sizeof path_buffer, p_f)) > 0)
                     {
-                        std::stringstream p_ss(std::string(path_buffer, p_n));
-                        while (p_ss >> p_str)
+                        p_ss << std::string(path_buffer, p_n);
+                    }
+                    
+                    while (p_ss >> p_str)
+                    {
+                        YAML::Node node = YAML::LoadFile(path + p_str);
+                        if (node[plugins[0]->plugin])
                         {
-                            YAML::Node node = YAML::LoadFile(path + p_str);
-                            if (node[plugins[0]->plugin])
-                            {
-                                description = node[plugins[0]->plugin].as<std::string>();
-                                break;
-                            }
+                            description = node[plugins[0]->plugin].as<std::string>();
+                            break;
                         }
                     }
 
@@ -539,4 +545,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:05 +0000
+Updated on 2024-07-18 at 13:53:33 +0000

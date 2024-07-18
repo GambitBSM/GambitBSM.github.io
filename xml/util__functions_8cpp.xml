@@ -849,11 +849,38 @@
 <codeline lineno="430"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="431"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="432"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="433"><highlight class="normal"></highlight></codeline>
-<codeline lineno="434"><highlight class="normal"></highlight></codeline>
-<codeline lineno="435"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
-<codeline lineno="436"><highlight class="normal"></highlight></codeline>
-<codeline lineno="437"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="433"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="434"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Enclose<sp/>a<sp/>string<sp/>in<sp/>quotation<sp/>marks<sp/>if<sp/>it<sp/>contains<sp/>commas</highlight></codeline>
+<codeline lineno="435"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="util__functions_8hpp_1a4b5593288f0fd37b9a5eaf17cdb34253" kindref="member">quote_if_contains_commas</ref>(<ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>in)</highlight></codeline>
+<codeline lineno="436"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="437"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(in.find(</highlight><highlight class="charliteral">&apos;,&apos;</highlight><highlight class="normal">)<sp/>==<sp/>std::string::npos)</highlight></codeline>
+<codeline lineno="438"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="439"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>in;</highlight></codeline>
+<codeline lineno="440"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="441"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="442"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="443"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="stringliteral">&quot;\&quot;&quot;</highlight><highlight class="normal">+in+</highlight><highlight class="stringliteral">&quot;\&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="444"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="445"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="446"><highlight class="normal"></highlight></codeline>
+<codeline lineno="447"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>case-independent<sp/>(ci)<sp/>compare_less<sp/>binary<sp/>function</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="448"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ci_less::operator()<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;<sp/>s1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;<sp/>s2)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="449"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="450"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::lexicographical_compare</highlight></codeline>
+<codeline lineno="451"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(s1.begin<sp/>(),<sp/>s1.end<sp/>(),<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>source<sp/>range</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="452"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>s2.begin<sp/>(),<sp/>s2.end<sp/>(),<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>dest<sp/>range</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="453"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>nocase_compare<sp/>());<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>comparison</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="454"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="455"><highlight class="normal"></highlight></codeline>
+<codeline lineno="456"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>case-independent<sp/>(ci)<sp/>compare_less<sp/>binary<sp/>function</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="457"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ci_less::nocase_compare::operator()<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">&amp;<sp/>c1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">&amp;<sp/>c2)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="458"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="459"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>tolower<sp/>(c1)<sp/>&lt;<sp/>tolower<sp/>(c2);</highlight></codeline>
+<codeline lineno="460"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="461"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="462"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="463"><highlight class="normal"></highlight></codeline>
+<codeline lineno="464"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="Utils/src/util_functions.cpp"/>
   </compounddef>

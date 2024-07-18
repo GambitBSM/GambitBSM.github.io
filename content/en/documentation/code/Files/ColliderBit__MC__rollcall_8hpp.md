@@ -75,16 +75,6 @@ description: "[No description available]"
 |  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-function)** <br>Example function for interfacing alternative cross-section calculators.  |
 |  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-function)** <br>Example function for interfacing alternative cross-section calculators.  |
 |  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-function)** <br>Example function for interfacing alternative cross-section calculators.  |
-|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
-|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-function)** <br>Example function for interfacing alternative cross-section calculators.  |
-|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
-|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-function)** <br>Example function for interfacing alternative cross-section calculators.  |
-|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
-|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-function)** <br>Example function for interfacing alternative cross-section calculators.  |
-|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
-|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-function)** <br>Example function for interfacing alternative cross-section calculators.  |
-|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
-|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-function)** <br>Example function for interfacing alternative cross-section calculators.  |
 |  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-function)** <br>Example function for interfacing alternative cross-section calculators.  |
 |  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
 |  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-function)** <br>Example function for interfacing alternative cross-section calculators.  |
@@ -96,7 +86,6 @@ description: "[No description available]"
 |  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-function)** <br>Example function for interfacing alternative cross-section calculators.  |
 |  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
 |  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-function)** <br>Example function for interfacing alternative cross-section calculators.  |
-|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
 |  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-function)** <br>Example function for interfacing alternative cross-section calculators.  |
 |  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
 |  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-function)** <br>Example function for interfacing alternative cross-section calculators.  |
@@ -116,6 +105,18 @@ description: "[No description available]"
 |  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-function)** <br>Example function for interfacing alternative cross-section calculators.  |
 |  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
 |  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-function)** <br>Example function for interfacing alternative cross-section calculators.  |
+|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
+|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-function)** <br>Example function for interfacing alternative cross-section calculators.  |
+|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
+|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-function)** <br>Example function for interfacing alternative cross-section calculators.  |
+|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
+|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-function)** <br>Example function for interfacing alternative cross-section calculators.  |
+|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
+|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-function)** <br>Example function for interfacing alternative cross-section calculators.  |
+|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
+|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-function)** <br>Example function for interfacing alternative cross-section calculators.  |
+|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
+|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-function)** <br>Example function for interfacing alternative cross-section calculators.  |
 |  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-function)** <br>Example function for interfacing alternative cross-section calculators.  |
 |  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
 |  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
@@ -123,6 +124,8 @@ description: "[No description available]"
 |  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-function)** <br>Example function for interfacing alternative cross-section calculators.  |
 |  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-function)** <br>Example function for interfacing alternative cross-section calculators.  |
 |  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-function)** <br>Example function for interfacing alternative cross-section calculators.  |
+|  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-function)** <br>Example function for interfacing alternative cross-section calculators.  |
+|  | **[CAPABILITY](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-capability)** <br>Get a list of all the PID pairs related to active process codes.  |
 |  | **[FUNCTION](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-function)** <br>Example function for interfacing alternative cross-section calculators.  |
 |  | **[MODULE](/documentation/code/files/colliderbit__mc__rollcall_8hpp/#define-module)**  |
 
@@ -138,6 +141,7 @@ description: "[No description available]"
   * Andy Buckley ([andy.buckley@cern.ch](mailto:andy.buckley@cern.ch)) 
   * Anders Kvellestad ([a.kvellestad@imperial.ac.uk](mailto:a.kvellestad@imperial.ac.uk)) 
   * Tomasz Procter ([t.procter.1@research.gla.ac.uk](mailto:t.procter.1@research.gla.ac.uk)) 
+  * Taylor R. Gray ([gray@chalmers.se](mailto:gray@chalmers.se)) 
 
 
 **Date**: 
@@ -149,6 +153,7 @@ description: "[No description available]"
   * 2017 Jun
   * 2019 Sep
   * 2021 November
+  * 2023 Oct
 
 
 Rollcall header for ColliderBit module.
@@ -1460,306 +1465,6 @@ A function that assigns a total cross-sections to a given SLHA input file (for m
 A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model 
 
 
-### define CAPABILITY
-
-```
-#define CAPABILITY RunMC
-```
-
-Get a list of all the PID pairs related to active process codes. 
-
-Calculate the log likelihood for each SR in each analysis using the analysis numbers.
-
-Extract the signal predictions and uncertainties for all analyses.
-
-Di-jet likelihoods.
-
-Collect all the analysis numbers in one place.
-
-A map between PID pairs and cross-sections.
-
-Execute the main Monte Carlo event loop. Note: "Non-loop" capabilities that some in-loop capabilities depend on can be added as dependencies here to ensure that they are calculated before the loop starts.
-
-Total cross-section
-
-Output info on TotalCrossSection as a str-double map, for easy printing
-
-Process codes and PID pairs
-
-Get list of Pythia process codes for all active processes
-
-Translate a list of Pythia process codes to list of (PID,PID) pairs for the two final state particles of the hard process.
-
-Process-level cross-sections
-
-A map between Pythia process codes and cross-sections
-
-Output PID pair cross-sections as a str-dbl map, for easy printing
-
-A consistency check that ensures that if each event is weighted by a process-level cross-section from an external calculator, then the total cross-section is taken from the event generator
-
-Lists of analyses to run
-
-Run all analyses and fill vector of analysis results. 
-
-
-### define FUNCTION
-
-```
-#define FUNCTION operateLHCLoop
-```
-
-Example function for interfacing alternative cross-section calculators. 
-
-Convert the TotalEvGenCrossSection (type MC_xsec_container) into a regular TotalCrossSection (type xsec_container)
-
-A function that reads the total cross-section from the input file, but builds up the number of events from the event loop
-
-A function that assigns a total cross-sections to a given SLHA input file (for model ColliderBit_SLHA_file_model)
-
-A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model 
-
-
-### define CAPABILITY
-
-```
-#define CAPABILITY RunMC
-```
-
-Get a list of all the PID pairs related to active process codes. 
-
-Calculate the log likelihood for each SR in each analysis using the analysis numbers.
-
-Extract the signal predictions and uncertainties for all analyses.
-
-Di-jet likelihoods.
-
-Collect all the analysis numbers in one place.
-
-A map between PID pairs and cross-sections.
-
-Execute the main Monte Carlo event loop. Note: "Non-loop" capabilities that some in-loop capabilities depend on can be added as dependencies here to ensure that they are calculated before the loop starts.
-
-Total cross-section
-
-Output info on TotalCrossSection as a str-double map, for easy printing
-
-Process codes and PID pairs
-
-Get list of Pythia process codes for all active processes
-
-Translate a list of Pythia process codes to list of (PID,PID) pairs for the two final state particles of the hard process.
-
-Process-level cross-sections
-
-A map between Pythia process codes and cross-sections
-
-Output PID pair cross-sections as a str-dbl map, for easy printing
-
-A consistency check that ensures that if each event is weighted by a process-level cross-section from an external calculator, then the total cross-section is taken from the event generator
-
-Lists of analyses to run
-
-Run all analyses and fill vector of analysis results. 
-
-
-### define FUNCTION
-
-```
-#define FUNCTION operateLHCLoop
-```
-
-Example function for interfacing alternative cross-section calculators. 
-
-Convert the TotalEvGenCrossSection (type MC_xsec_container) into a regular TotalCrossSection (type xsec_container)
-
-A function that reads the total cross-section from the input file, but builds up the number of events from the event loop
-
-A function that assigns a total cross-sections to a given SLHA input file (for model ColliderBit_SLHA_file_model)
-
-A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model 
-
-
-### define CAPABILITY
-
-```
-#define CAPABILITY RunMC
-```
-
-Get a list of all the PID pairs related to active process codes. 
-
-Calculate the log likelihood for each SR in each analysis using the analysis numbers.
-
-Extract the signal predictions and uncertainties for all analyses.
-
-Di-jet likelihoods.
-
-Collect all the analysis numbers in one place.
-
-A map between PID pairs and cross-sections.
-
-Execute the main Monte Carlo event loop. Note: "Non-loop" capabilities that some in-loop capabilities depend on can be added as dependencies here to ensure that they are calculated before the loop starts.
-
-Total cross-section
-
-Output info on TotalCrossSection as a str-double map, for easy printing
-
-Process codes and PID pairs
-
-Get list of Pythia process codes for all active processes
-
-Translate a list of Pythia process codes to list of (PID,PID) pairs for the two final state particles of the hard process.
-
-Process-level cross-sections
-
-A map between Pythia process codes and cross-sections
-
-Output PID pair cross-sections as a str-dbl map, for easy printing
-
-A consistency check that ensures that if each event is weighted by a process-level cross-section from an external calculator, then the total cross-section is taken from the event generator
-
-Lists of analyses to run
-
-Run all analyses and fill vector of analysis results. 
-
-
-### define FUNCTION
-
-```
-#define FUNCTION operateLHCLoop
-```
-
-Example function for interfacing alternative cross-section calculators. 
-
-Convert the TotalEvGenCrossSection (type MC_xsec_container) into a regular TotalCrossSection (type xsec_container)
-
-A function that reads the total cross-section from the input file, but builds up the number of events from the event loop
-
-A function that assigns a total cross-sections to a given SLHA input file (for model ColliderBit_SLHA_file_model)
-
-A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model 
-
-
-### define CAPABILITY
-
-```
-#define CAPABILITY RunMC
-```
-
-Get a list of all the PID pairs related to active process codes. 
-
-Calculate the log likelihood for each SR in each analysis using the analysis numbers.
-
-Extract the signal predictions and uncertainties for all analyses.
-
-Di-jet likelihoods.
-
-Collect all the analysis numbers in one place.
-
-A map between PID pairs and cross-sections.
-
-Execute the main Monte Carlo event loop. Note: "Non-loop" capabilities that some in-loop capabilities depend on can be added as dependencies here to ensure that they are calculated before the loop starts.
-
-Total cross-section
-
-Output info on TotalCrossSection as a str-double map, for easy printing
-
-Process codes and PID pairs
-
-Get list of Pythia process codes for all active processes
-
-Translate a list of Pythia process codes to list of (PID,PID) pairs for the two final state particles of the hard process.
-
-Process-level cross-sections
-
-A map between Pythia process codes and cross-sections
-
-Output PID pair cross-sections as a str-dbl map, for easy printing
-
-A consistency check that ensures that if each event is weighted by a process-level cross-section from an external calculator, then the total cross-section is taken from the event generator
-
-Lists of analyses to run
-
-Run all analyses and fill vector of analysis results. 
-
-
-### define FUNCTION
-
-```
-#define FUNCTION operateLHCLoop
-```
-
-Example function for interfacing alternative cross-section calculators. 
-
-Convert the TotalEvGenCrossSection (type MC_xsec_container) into a regular TotalCrossSection (type xsec_container)
-
-A function that reads the total cross-section from the input file, but builds up the number of events from the event loop
-
-A function that assigns a total cross-sections to a given SLHA input file (for model ColliderBit_SLHA_file_model)
-
-A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model 
-
-
-### define CAPABILITY
-
-```
-#define CAPABILITY RunMC
-```
-
-Get a list of all the PID pairs related to active process codes. 
-
-Calculate the log likelihood for each SR in each analysis using the analysis numbers.
-
-Extract the signal predictions and uncertainties for all analyses.
-
-Di-jet likelihoods.
-
-Collect all the analysis numbers in one place.
-
-A map between PID pairs and cross-sections.
-
-Execute the main Monte Carlo event loop. Note: "Non-loop" capabilities that some in-loop capabilities depend on can be added as dependencies here to ensure that they are calculated before the loop starts.
-
-Total cross-section
-
-Output info on TotalCrossSection as a str-double map, for easy printing
-
-Process codes and PID pairs
-
-Get list of Pythia process codes for all active processes
-
-Translate a list of Pythia process codes to list of (PID,PID) pairs for the two final state particles of the hard process.
-
-Process-level cross-sections
-
-A map between Pythia process codes and cross-sections
-
-Output PID pair cross-sections as a str-dbl map, for easy printing
-
-A consistency check that ensures that if each event is weighted by a process-level cross-section from an external calculator, then the total cross-section is taken from the event generator
-
-Lists of analyses to run
-
-Run all analyses and fill vector of analysis results. 
-
-
-### define FUNCTION
-
-```
-#define FUNCTION operateLHCLoop
-```
-
-Example function for interfacing alternative cross-section calculators. 
-
-Convert the TotalEvGenCrossSection (type MC_xsec_container) into a regular TotalCrossSection (type xsec_container)
-
-A function that reads the total cross-section from the input file, but builds up the number of events from the event loop
-
-A function that assigns a total cross-sections to a given SLHA input file (for model ColliderBit_SLHA_file_model)
-
-A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model 
-
-
 ### define FUNCTION
 
 ```
@@ -2075,49 +1780,6 @@ A function that reads the total cross-section from the input file, but builds up
 A function that assigns a total cross-sections to a given SLHA input file (for model ColliderBit_SLHA_file_model)
 
 A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model 
-
-
-### define CAPABILITY
-
-```
-#define CAPABILITY RunMC
-```
-
-Get a list of all the PID pairs related to active process codes. 
-
-Calculate the log likelihood for each SR in each analysis using the analysis numbers.
-
-Extract the signal predictions and uncertainties for all analyses.
-
-Di-jet likelihoods.
-
-Collect all the analysis numbers in one place.
-
-A map between PID pairs and cross-sections.
-
-Execute the main Monte Carlo event loop. Note: "Non-loop" capabilities that some in-loop capabilities depend on can be added as dependencies here to ensure that they are calculated before the loop starts.
-
-Total cross-section
-
-Output info on TotalCrossSection as a str-double map, for easy printing
-
-Process codes and PID pairs
-
-Get list of Pythia process codes for all active processes
-
-Translate a list of Pythia process codes to list of (PID,PID) pairs for the two final state particles of the hard process.
-
-Process-level cross-sections
-
-A map between Pythia process codes and cross-sections
-
-Output PID pair cross-sections as a str-dbl map, for easy printing
-
-A consistency check that ensures that if each event is weighted by a process-level cross-section from an external calculator, then the total cross-section is taken from the event generator
-
-Lists of analyses to run
-
-Run all analyses and fill vector of analysis results. 
 
 
 ### define FUNCTION
@@ -2677,6 +2339,366 @@ A function that assigns a total cross-sections to a given SLHA input file (for m
 A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model 
 
 
+### define CAPABILITY
+
+```
+#define CAPABILITY RunMC
+```
+
+Get a list of all the PID pairs related to active process codes. 
+
+Calculate the log likelihood for each SR in each analysis using the analysis numbers.
+
+Extract the signal predictions and uncertainties for all analyses.
+
+Di-jet likelihoods.
+
+Collect all the analysis numbers in one place.
+
+A map between PID pairs and cross-sections.
+
+Execute the main Monte Carlo event loop. Note: "Non-loop" capabilities that some in-loop capabilities depend on can be added as dependencies here to ensure that they are calculated before the loop starts.
+
+Total cross-section
+
+Output info on TotalCrossSection as a str-double map, for easy printing
+
+Process codes and PID pairs
+
+Get list of Pythia process codes for all active processes
+
+Translate a list of Pythia process codes to list of (PID,PID) pairs for the two final state particles of the hard process.
+
+Process-level cross-sections
+
+A map between Pythia process codes and cross-sections
+
+Output PID pair cross-sections as a str-dbl map, for easy printing
+
+A consistency check that ensures that if each event is weighted by a process-level cross-section from an external calculator, then the total cross-section is taken from the event generator
+
+Lists of analyses to run
+
+Run all analyses and fill vector of analysis results. 
+
+
+### define FUNCTION
+
+```
+#define FUNCTION operateLHCLoop
+```
+
+Example function for interfacing alternative cross-section calculators. 
+
+Convert the TotalEvGenCrossSection (type MC_xsec_container) into a regular TotalCrossSection (type xsec_container)
+
+A function that reads the total cross-section from the input file, but builds up the number of events from the event loop
+
+A function that assigns a total cross-sections to a given SLHA input file (for model ColliderBit_SLHA_file_model)
+
+A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model 
+
+
+### define CAPABILITY
+
+```
+#define CAPABILITY RunMC
+```
+
+Get a list of all the PID pairs related to active process codes. 
+
+Calculate the log likelihood for each SR in each analysis using the analysis numbers.
+
+Extract the signal predictions and uncertainties for all analyses.
+
+Di-jet likelihoods.
+
+Collect all the analysis numbers in one place.
+
+A map between PID pairs and cross-sections.
+
+Execute the main Monte Carlo event loop. Note: "Non-loop" capabilities that some in-loop capabilities depend on can be added as dependencies here to ensure that they are calculated before the loop starts.
+
+Total cross-section
+
+Output info on TotalCrossSection as a str-double map, for easy printing
+
+Process codes and PID pairs
+
+Get list of Pythia process codes for all active processes
+
+Translate a list of Pythia process codes to list of (PID,PID) pairs for the two final state particles of the hard process.
+
+Process-level cross-sections
+
+A map between Pythia process codes and cross-sections
+
+Output PID pair cross-sections as a str-dbl map, for easy printing
+
+A consistency check that ensures that if each event is weighted by a process-level cross-section from an external calculator, then the total cross-section is taken from the event generator
+
+Lists of analyses to run
+
+Run all analyses and fill vector of analysis results. 
+
+
+### define FUNCTION
+
+```
+#define FUNCTION operateLHCLoop
+```
+
+Example function for interfacing alternative cross-section calculators. 
+
+Convert the TotalEvGenCrossSection (type MC_xsec_container) into a regular TotalCrossSection (type xsec_container)
+
+A function that reads the total cross-section from the input file, but builds up the number of events from the event loop
+
+A function that assigns a total cross-sections to a given SLHA input file (for model ColliderBit_SLHA_file_model)
+
+A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model 
+
+
+### define CAPABILITY
+
+```
+#define CAPABILITY RunMC
+```
+
+Get a list of all the PID pairs related to active process codes. 
+
+Calculate the log likelihood for each SR in each analysis using the analysis numbers.
+
+Extract the signal predictions and uncertainties for all analyses.
+
+Di-jet likelihoods.
+
+Collect all the analysis numbers in one place.
+
+A map between PID pairs and cross-sections.
+
+Execute the main Monte Carlo event loop. Note: "Non-loop" capabilities that some in-loop capabilities depend on can be added as dependencies here to ensure that they are calculated before the loop starts.
+
+Total cross-section
+
+Output info on TotalCrossSection as a str-double map, for easy printing
+
+Process codes and PID pairs
+
+Get list of Pythia process codes for all active processes
+
+Translate a list of Pythia process codes to list of (PID,PID) pairs for the two final state particles of the hard process.
+
+Process-level cross-sections
+
+A map between Pythia process codes and cross-sections
+
+Output PID pair cross-sections as a str-dbl map, for easy printing
+
+A consistency check that ensures that if each event is weighted by a process-level cross-section from an external calculator, then the total cross-section is taken from the event generator
+
+Lists of analyses to run
+
+Run all analyses and fill vector of analysis results. 
+
+
+### define FUNCTION
+
+```
+#define FUNCTION operateLHCLoop
+```
+
+Example function for interfacing alternative cross-section calculators. 
+
+Convert the TotalEvGenCrossSection (type MC_xsec_container) into a regular TotalCrossSection (type xsec_container)
+
+A function that reads the total cross-section from the input file, but builds up the number of events from the event loop
+
+A function that assigns a total cross-sections to a given SLHA input file (for model ColliderBit_SLHA_file_model)
+
+A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model 
+
+
+### define CAPABILITY
+
+```
+#define CAPABILITY RunMC
+```
+
+Get a list of all the PID pairs related to active process codes. 
+
+Calculate the log likelihood for each SR in each analysis using the analysis numbers.
+
+Extract the signal predictions and uncertainties for all analyses.
+
+Di-jet likelihoods.
+
+Collect all the analysis numbers in one place.
+
+A map between PID pairs and cross-sections.
+
+Execute the main Monte Carlo event loop. Note: "Non-loop" capabilities that some in-loop capabilities depend on can be added as dependencies here to ensure that they are calculated before the loop starts.
+
+Total cross-section
+
+Output info on TotalCrossSection as a str-double map, for easy printing
+
+Process codes and PID pairs
+
+Get list of Pythia process codes for all active processes
+
+Translate a list of Pythia process codes to list of (PID,PID) pairs for the two final state particles of the hard process.
+
+Process-level cross-sections
+
+A map between Pythia process codes and cross-sections
+
+Output PID pair cross-sections as a str-dbl map, for easy printing
+
+A consistency check that ensures that if each event is weighted by a process-level cross-section from an external calculator, then the total cross-section is taken from the event generator
+
+Lists of analyses to run
+
+Run all analyses and fill vector of analysis results. 
+
+
+### define FUNCTION
+
+```
+#define FUNCTION operateLHCLoop
+```
+
+Example function for interfacing alternative cross-section calculators. 
+
+Convert the TotalEvGenCrossSection (type MC_xsec_container) into a regular TotalCrossSection (type xsec_container)
+
+A function that reads the total cross-section from the input file, but builds up the number of events from the event loop
+
+A function that assigns a total cross-sections to a given SLHA input file (for model ColliderBit_SLHA_file_model)
+
+A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model 
+
+
+### define CAPABILITY
+
+```
+#define CAPABILITY RunMC
+```
+
+Get a list of all the PID pairs related to active process codes. 
+
+Calculate the log likelihood for each SR in each analysis using the analysis numbers.
+
+Extract the signal predictions and uncertainties for all analyses.
+
+Di-jet likelihoods.
+
+Collect all the analysis numbers in one place.
+
+A map between PID pairs and cross-sections.
+
+Execute the main Monte Carlo event loop. Note: "Non-loop" capabilities that some in-loop capabilities depend on can be added as dependencies here to ensure that they are calculated before the loop starts.
+
+Total cross-section
+
+Output info on TotalCrossSection as a str-double map, for easy printing
+
+Process codes and PID pairs
+
+Get list of Pythia process codes for all active processes
+
+Translate a list of Pythia process codes to list of (PID,PID) pairs for the two final state particles of the hard process.
+
+Process-level cross-sections
+
+A map between Pythia process codes and cross-sections
+
+Output PID pair cross-sections as a str-dbl map, for easy printing
+
+A consistency check that ensures that if each event is weighted by a process-level cross-section from an external calculator, then the total cross-section is taken from the event generator
+
+Lists of analyses to run
+
+Run all analyses and fill vector of analysis results. 
+
+
+### define FUNCTION
+
+```
+#define FUNCTION operateLHCLoop
+```
+
+Example function for interfacing alternative cross-section calculators. 
+
+Convert the TotalEvGenCrossSection (type MC_xsec_container) into a regular TotalCrossSection (type xsec_container)
+
+A function that reads the total cross-section from the input file, but builds up the number of events from the event loop
+
+A function that assigns a total cross-sections to a given SLHA input file (for model ColliderBit_SLHA_file_model)
+
+A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model 
+
+
+### define CAPABILITY
+
+```
+#define CAPABILITY RunMC
+```
+
+Get a list of all the PID pairs related to active process codes. 
+
+Calculate the log likelihood for each SR in each analysis using the analysis numbers.
+
+Extract the signal predictions and uncertainties for all analyses.
+
+Di-jet likelihoods.
+
+Collect all the analysis numbers in one place.
+
+A map between PID pairs and cross-sections.
+
+Execute the main Monte Carlo event loop. Note: "Non-loop" capabilities that some in-loop capabilities depend on can be added as dependencies here to ensure that they are calculated before the loop starts.
+
+Total cross-section
+
+Output info on TotalCrossSection as a str-double map, for easy printing
+
+Process codes and PID pairs
+
+Get list of Pythia process codes for all active processes
+
+Translate a list of Pythia process codes to list of (PID,PID) pairs for the two final state particles of the hard process.
+
+Process-level cross-sections
+
+A map between Pythia process codes and cross-sections
+
+Output PID pair cross-sections as a str-dbl map, for easy printing
+
+A consistency check that ensures that if each event is weighted by a process-level cross-section from an external calculator, then the total cross-section is taken from the event generator
+
+Lists of analyses to run
+
+Run all analyses and fill vector of analysis results. 
+
+
+### define FUNCTION
+
+```
+#define FUNCTION operateLHCLoop
+```
+
+Example function for interfacing alternative cross-section calculators. 
+
+Convert the TotalEvGenCrossSection (type MC_xsec_container) into a regular TotalCrossSection (type xsec_container)
+
+A function that reads the total cross-section from the input file, but builds up the number of events from the event loop
+
+A function that assigns a total cross-sections to a given SLHA input file (for model ColliderBit_SLHA_file_model)
+
+A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model 
+
+
 ### define FUNCTION
 
 ```
@@ -2872,6 +2894,66 @@ A function that reads the total cross-section from the input file, but builds up
 A function that assigns a total cross-sections to a given SLHA input file (for model ColliderBit_SLHA_file_model)
 
 A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model 
+
+
+### define FUNCTION
+
+```
+#define FUNCTION operateLHCLoop
+```
+
+Example function for interfacing alternative cross-section calculators. 
+
+Convert the TotalEvGenCrossSection (type MC_xsec_container) into a regular TotalCrossSection (type xsec_container)
+
+A function that reads the total cross-section from the input file, but builds up the number of events from the event loop
+
+A function that assigns a total cross-sections to a given SLHA input file (for model ColliderBit_SLHA_file_model)
+
+A function that assigns a total cross-sections directly from the scan parameters for model ColliderBit_SLHA_scan_model 
+
+
+### define CAPABILITY
+
+```
+#define CAPABILITY RunMC
+```
+
+Get a list of all the PID pairs related to active process codes. 
+
+Calculate the log likelihood for each SR in each analysis using the analysis numbers.
+
+Extract the signal predictions and uncertainties for all analyses.
+
+Di-jet likelihoods.
+
+Collect all the analysis numbers in one place.
+
+A map between PID pairs and cross-sections.
+
+Execute the main Monte Carlo event loop. Note: "Non-loop" capabilities that some in-loop capabilities depend on can be added as dependencies here to ensure that they are calculated before the loop starts.
+
+Total cross-section
+
+Output info on TotalCrossSection as a str-double map, for easy printing
+
+Process codes and PID pairs
+
+Get list of Pythia process codes for all active processes
+
+Translate a list of Pythia process codes to list of (PID,PID) pairs for the two final state particles of the hard process.
+
+Process-level cross-sections
+
+A map between Pythia process codes and cross-sections
+
+Output PID pair cross-sections as a str-dbl map, for easy printing
+
+A consistency check that ensures that if each event is weighted by a process-level cross-section from an external calculator, then the total cross-section is taken from the event generator
+
+Lists of analyses to run
+
+Run all analyses and fill vector of analysis results. 
 
 
 ### define FUNCTION
@@ -2938,6 +3020,10 @@ A function that assigns a total cross-sections directly from the scan parameters
 ///          (t.procter.1@research.gla.ac.uk)
 /// \date 2021 November
 ///
+///  \author Taylor R. Gray
+///          (gray@chalmers.se)
+///  \date 2023 Oct
+///
 ///  *********************************************
 
 #pragma once
@@ -2947,7 +3033,7 @@ A function that assigns a total cross-sections directly from the scan parameters
 #define MODULE ColliderBit
 
   /// Execute the main Monte Carlo event loop.
-  /// Note: 
+  /// Note:
   ///   "Non-loop" capabilities that some in-loop capabilities depend on
   ///   can be added as dependencies here to ensure that they are calculated
   ///   before the loop starts.
@@ -2980,7 +3066,7 @@ A function that assigns a total cross-sections directly from the scan parameters
 
   #define CAPABILITY TotalCrossSection
   START_CAPABILITY
-    /// Convert the TotalEvGenCrossSection (type MC_xsec_container) into 
+    /// Convert the TotalEvGenCrossSection (type MC_xsec_container) into
     /// a regular TotalCrossSection (type xsec_container)
     #define FUNCTION getEvGenCrossSection_as_base
     START_FUNCTION(xsec_container)
@@ -3019,7 +3105,7 @@ A function that assigns a total cross-sections directly from the scan parameters
     #undef FUNCTION
   #undef CAPABILITY
 
-  /// Output info on TotalCrossSection as 
+  /// Output info on TotalCrossSection as
   /// a str-double map, for easy printing
   #define CAPABILITY TotalCrossSectionAsMap
   START_CAPABILITY
@@ -3042,7 +3128,7 @@ A function that assigns a total cross-sections directly from the scan parameters
     NEEDS_MANAGER(RunMC, MCLoopInfo)
     DEPENDENCY(HardScatteringSim, const BaseCollider*)
     #undef FUNCTION
-  #undef CAPABILITY 
+  #undef CAPABILITY
 
   /// Get a list of all the PID pairs related to active process codes
   #define CAPABILITY ActivePIDPairs
@@ -3052,7 +3138,7 @@ A function that assigns a total cross-sections directly from the scan parameters
     NEEDS_MANAGER(RunMC, MCLoopInfo)
     DEPENDENCY(ActiveProcessCodeToPIDPairsMap, multimap_int_PID_pair)
     #undef FUNCTION
-  #undef CAPABILITY 
+  #undef CAPABILITY
 
   /// Translate a list of Pythia process codes to list of (PID,PID) pairs
   /// for the two final state particles of the hard process.
@@ -3063,7 +3149,7 @@ A function that assigns a total cross-sections directly from the scan parameters
     NEEDS_MANAGER(RunMC, MCLoopInfo)
     DEPENDENCY(ActiveProcessCodes, std::vector<int>)
     #undef FUNCTION
-  #undef CAPABILITY 
+  #undef CAPABILITY
   /// @}
 
 
@@ -3078,7 +3164,7 @@ A function that assigns a total cross-sections directly from the scan parameters
     NEEDS_MANAGER(RunMC, MCLoopInfo)
     DEPENDENCY(ActiveProcessCodes, std::vector<int>)
     DEPENDENCY(ActiveProcessCodeToPIDPairsMap, multimap_int_PID_pair)
-    DEPENDENCY(PIDPairCrossSectionsMap, map_PID_pair_PID_pair_xsec) 
+    DEPENDENCY(PIDPairCrossSectionsMap, map_PID_pair_PID_pair_xsec)
     #undef FUNCTION
   #undef CAPABILITY
 
@@ -3092,7 +3178,7 @@ A function that assigns a total cross-sections directly from the scan parameters
     #undef FUNCTION
   #undef CAPABILITY
 
-  /// Output PID pair cross-sections as a 
+  /// Output PID pair cross-sections as a
   /// str-dbl map, for easy printing
   #define CAPABILITY PIDPairCrossSectionsInfo
   START_CAPABILITY
@@ -3217,6 +3303,13 @@ A function that assigns a total cross-sections directly from the scan parameters
     MODEL_CONDITIONAL_DEPENDENCY(Unitarity_Bound_DMsimpVectorMedDiracDM, double, DMsimpVectorMedDiracDM)
     ALLOW_MODELS(DMsimpVectorMedScalarDM, DMsimpVectorMedMajoranaDM, DMsimpVectorMedDiracDM, DMsimpVectorMedVectorDM)
     #undef FUNCTION
+
+    #define FUNCTION SubGeVDM_results
+    START_FUNCTION(AnalysisDataPointers)
+    DEPENDENCY(SubGeVDM_spectrum, Spectrum)
+    ALLOW_MODELS(SubGeVDM_fermion, SubGeVDM_scalar)
+    #undef FUNCTION
+
   #undef CAPABILITY
 
   #define CAPABILITY AllAnalysisNumbersUnmodified
@@ -3261,7 +3354,7 @@ A function that assigns a total cross-sections directly from the scan parameters
   /// Calculate the log likelihood for each SR in each analysis using the analysis numbers
   #define CAPABILITY LHC_LogLikes
   START_CAPABILITY
-  
+
     #define FUNCTION calc_LHC_LogLikes_full
     START_FUNCTION(map_str_AnalysisLogLikes)
     DEPENDENCY(AllAnalysisNumbers, AnalysisDataPointers)
@@ -3273,7 +3366,7 @@ A function that assigns a total cross-sections directly from the scan parameters
     BACKEND_REQ(FullLikes_ReadIn, (ATLAS_FullLikes), int, (const str&,const str&))
     BACKEND_REQ(FullLikes_FileExists, (ATLAS_FullLikes), bool, (const str&))
     #undef FUNCTION
-  
+
     #define FUNCTION calc_LHC_LogLikes
     START_FUNCTION(map_str_AnalysisLogLikes)
     DEPENDENCY(AllAnalysisNumbers, AnalysisDataPointers)
@@ -3283,7 +3376,7 @@ A function that assigns a total cross-sections directly from the scan parameters
     BACKEND_GROUP(lnlike_marg_poisson)
     #undef FUNCTION
   #undef CAPABILITY
-  
+
   /// Extract the log likelihood for each SR to a simple map_str_dbl
   #define CAPABILITY LHC_LogLike_per_SR
   START_CAPABILITY
@@ -3428,13 +3521,13 @@ A function that assigns a total cross-sections directly from the scan parameters
   #define CAPABILITY EventWeighterFunction
   START_CAPABILITY
 
-    /// This function is intended as a fallback option 
+    /// This function is intended as a fallback option
     /// that simply assigns a unit weight to all events
     #define FUNCTION setEventWeight_unity
     START_FUNCTION(EventWeighterFunctionType)
     #undef FUNCTION
 
-    /// Weight events according to process cross-section 
+    /// Weight events according to process cross-section
     #define FUNCTION setEventWeight_fromCrossSection
     START_FUNCTION(EventWeighterFunctionType)
     NEEDS_MANAGER(RunMC, MCLoopInfo)
@@ -3497,10 +3590,21 @@ A function that assigns a total cross-sections directly from the scan parameters
 
   #undef CAPABILITY
 
+  /// BaBar single photon likelihood
+  #define CAPABILITY BaBar_single_photon_LogLike
+    #define FUNCTION BaBar_single_photon_LogLike_SubGeVDM
+    START_FUNCTION(double)
+    DEPENDENCY(dark_photon_decay_rates,DecayTable::Entry)
+    ALLOW_MODELS(SubGeVDM_fermion)
+    ALLOW_MODELS(SubGeVDM_scalar)
+    #undef FUNCTION
+  #undef CAPABILITY
+
+
 #undef MODULE
 ```
 
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:07 +0000
+Updated on 2024-07-18 at 13:53:34 +0000

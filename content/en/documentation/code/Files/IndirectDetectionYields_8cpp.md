@@ -26,6 +26,7 @@ description: "[No description available]"
   * Sanjay Bloor ([sanjay.bloor12@imperial.ac.uk](mailto:sanjay.bloor12@imperial.ac.uk)) 
   * Pat Scott ([pat.scott@uq.edu.au](mailto:pat.scott@uq.edu.au)) 
   * Patrick Stoecker ([stoecker@physik.rwth-aachen.de](mailto:stoecker@physik.rwth-aachen.de)) 
+  * Torsten Bringmann ([torsten.bringmann@fys.uio.no](mailto:torsten.bringmann@fys.uio.no)) 
 
 
 **Date**: 
@@ -35,6 +36,9 @@ description: "[No description available]"
   * 2018 Aug
   * 2020 Nov, Dec
   * 2021 Mar
+  * 2023 June 
+
+------------------
 
 
 Routines for the calculation of particle yields from dark matter annihilation / decay.
@@ -44,10 +48,6 @@ Routines for the calculation of particle yields from dark matter annihilation / 
 ------------------
 
 Authors (add name and date if you modify):
-
-
-
-------------------
 
 
 
@@ -86,6 +86,9 @@ Authors (add name and date if you modify):
 ///          (stoecker@physik.rwth-aachen.de)
 ///  \date 2021 Mar
 ///
+///  \author Torsten  Bringmann
+///          (torsten.bringmann@fys.uio.no)
+///  \date 2023 June
 ///  *********************************************
 
 #include "gambit/Elements/gambit_module_headers.hpp"
@@ -161,6 +164,11 @@ namespace Gambit
         // Here only take care of two-body final states
         if (it->nFinalStates != 2) continue;
 
+        // this would switch off the photon yield:
+        //if (yield == "gamma") continue;
+        // this would switch off e+e- channel:
+        //if (it->finalStateIDs[0] == "e+_1") continue;
+
         // Get final state masses
         double m0 = catalog.getParticleProperty(it->finalStateIDs[0]).mass;
         double m1 = catalog.getParticleProperty(it->finalStateIDs[1]).mass;
@@ -171,16 +179,27 @@ namespace Gambit
         // Ignore channels with 0 BR in v=0 limit (if "v" is a variable of genRate, i.e. not a decay).
         if (it->genRate->hasArg("v") && it->genRate->bind("v")->eval(0.) <= 0.0) continue;
         else if ( !(it->genRate->hasArgs()) && it->genRate->bind()->eval() <=0.0) continue;
-
+     
         double E0 = 0.5*(Ecm*Ecm+m0*m0-m1*m1)/Ecm;
         double E1 = Ecm-E0;
 
+        // Sometimes we use "pions" to denote the cumulative yield from hadronic states
+        // In DarkSUSY, the "gluon" channel is used for this purpose -- so we map
+        // to the "gluon" case for the purpose of retrieving the spectra
+        std::string ID0 = it->finalStateIDs[0];
+        std::string ID1 = it->finalStateIDs[1];
+        if (ID0 == "pi+" && ID1 == "pi-" )
+        {
+          ID0 = "g";
+          ID1 = "g";
+        }
+
         // Check whether two-body hard process final state is in SimYield table
-        if ( table.hasChannel(it->finalStateIDs[0], it->finalStateIDs[1], yield) )
+        if ( table.hasChannel(ID0, ID1, yield) )
         {
           Yield = Yield +
             it->genRate*(table)(
-                it->finalStateIDs[0], it->finalStateIDs[1], yield, Ecm);
+                ID0, ID1, yield, Ecm);
           added = true;
         }
         // Deal with composite final states
@@ -1278,4 +1297,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:07 +0000
+Updated on 2024-07-18 at 13:53:34 +0000

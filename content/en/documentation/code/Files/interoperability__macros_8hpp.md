@@ -22,8 +22,6 @@ description: "[No description available]"
 |  | **[Mathematica_LANG](/documentation/code/files/interoperability__macros_8hpp/#define-mathematica-lang)**  |
 |  | **[PYTHON_LANG](/documentation/code/files/interoperability__macros_8hpp/#define-python-lang)**  |
 |  | **[Python_LANG](/documentation/code/files/interoperability__macros_8hpp/#define-python-lang)**  |
-|  | **[PYTHON2_LANG](/documentation/code/files/interoperability__macros_8hpp/#define-python2-lang)**  |
-|  | **[Python2_LANG](/documentation/code/files/interoperability__macros_8hpp/#define-python2-lang)**  |
 |  | **[PYTHON3_LANG](/documentation/code/files/interoperability__macros_8hpp/#define-python3-lang)**  |
 |  | **[Python3_LANG](/documentation/code/files/interoperability__macros_8hpp/#define-python3-lang)**  |
 |  | **[DATA_LANG](/documentation/code/files/interoperability__macros_8hpp/#define-data-lang)**  |
@@ -130,20 +128,6 @@ If not defined already, define the backend languages.
 
 ```
 #define Python_LANG 5
-```
-
-
-### define PYTHON2_LANG
-
-```
-#define PYTHON2_LANG 5
-```
-
-
-### define Python2_LANG
-
-```
-#define Python2_LANG 5
 ```
 
 
@@ -305,12 +289,6 @@ Macro that determines whether the the backend is purely data.
 #ifndef Python_LANG
   #define Python_LANG 5
 #endif
-#ifndef PYTHON2_LANG
-  #define PYTHON2_LANG 5
-#endif
-#ifndef Python2_LANG
-  #define Python2_LANG 5
-#endif
 #ifndef PYTHON3_LANG
   #define PYTHON3_LANG 5
 #endif
@@ -365,4 +343,4 @@ Macro that determines whether the the backend is purely data.
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:08 +0000
+Updated on 2024-07-18 at 13:53:35 +0000

@@ -40,7 +40,8 @@ Inherited by [Gambit::ColliderBit::Py8Collider< PythiaT, EventT, hepmc_writerT >
 |                | Name           |
 | -------------- | -------------- |
 | bool | **[partonOnly](/documentation/code/classes/classgambit_1_1colliderbit_1_1basecollider/#variable-partononly)** <br>Flag indicating if events from this collider should be processed as parton-only or full events.  |
-| double | **[antiktR](/documentation/code/classes/classgambit_1_1colliderbit_1_1basecollider/#variable-antiktr)** <br>The jet radius used for the anti-kt jet clustering.  |
+| std::vector< [jet_collection_settings](/documentation/code/classes/structgambit_1_1colliderbit_1_1jet__collection__settings/) > | **[all_jet_collection_settings](/documentation/code/classes/classgambit_1_1colliderbit_1_1basecollider/#variable-all-jet-collection-settings)** <br>Vector of different jet collection settings.  |
+| std::string | **[jetcollection_taus](/documentation/code/classes/classgambit_1_1colliderbit_1_1basecollider/#variable-jetcollection-taus)** <br>Key for jet collection used in adding taus.  |
 
 ## Public Functions Documentation
 
@@ -215,14 +216,22 @@ bool partonOnly;
 
 Flag indicating if events from this collider should be processed as parton-only or full events. 
 
-### variable antiktR
+### variable all_jet_collection_settings
 
 ```
-double antiktR;
+std::vector< jet_collection_settings > all_jet_collection_settings;
 ```
 
-The jet radius used for the anti-kt jet clustering. 
+Vector of different jet collection settings. 
+
+### variable jetcollection_taus
+
+```
+std::string jetcollection_taus;
+```
+
+Key for jet collection used in adding taus. 
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:04 +0000
+Updated on 2024-07-18 at 13:53:31 +0000

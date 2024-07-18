@@ -1,0 +1,218 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="python__interpreter_8cpp" kind="file" language="C++">
+    <compoundname>python_interpreter.cpp</compoundname>
+    <includes refid="python__interpreter_8hpp" local="yes">gambit/Utils/python_interpreter.hpp</includes>
+    <incdepgraph>
+      <node id="6">
+        <label>gambit/Utils/boost_fallbacks.hpp</label>
+        <link refid="boost__fallbacks_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>gambit/Utils/cats.hpp</label>
+        <link refid="Utils_2include_2gambit_2Utils_2cats_8hpp"/>
+      </node>
+      <node id="16">
+        <label>gambit/Utils/export_symbols.hpp</label>
+        <link refid="export__symbols_8hpp"/>
+      </node>
+      <node id="13">
+        <label>gambit/Utils/local_info.hpp</label>
+        <link refid="local__info_8hpp"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>gambit/Utils/python_interpreter.hpp</label>
+        <link refid="python__interpreter_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>gambit/Utils/stringify.hpp</label>
+        <link refid="stringify_8hpp"/>
+      </node>
+      <node id="4">
+        <label>gambit/Utils/util_macros.hpp</label>
+        <link refid="util__macros_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>python_interpreter.cpp</label>
+        <link refid="python__interpreter_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>boost/current_function.hpp</label>
+      </node>
+      <node id="9">
+        <label>boost/detail/workaround.hpp</label>
+      </node>
+      <node id="21">
+        <label>boost/preprocessor/arithmetic/sub.hpp</label>
+      </node>
+      <node id="10">
+        <label>boost/preprocessor/cat.hpp</label>
+      </node>
+      <node id="20">
+        <label>boost/preprocessor/comparison/equal.hpp</label>
+      </node>
+      <node id="8">
+        <label>boost/preprocessor/config/config.hpp</label>
+      </node>
+      <node id="19">
+        <label>boost/preprocessor/control/if.hpp</label>
+      </node>
+      <node id="22">
+        <label>boost/preprocessor/punctuation/comma.hpp</label>
+      </node>
+      <node id="23">
+        <label>boost/preprocessor/punctuation/paren.hpp</label>
+      </node>
+      <node id="17">
+        <label>boost/preprocessor/seq/size.hpp</label>
+      </node>
+      <node id="18">
+        <label>boost/preprocessor/tuple/elem.hpp</label>
+      </node>
+      <node id="7">
+        <label>boost/version.hpp</label>
+      </node>
+      <node id="3">
+        <label>gambit/cmake/cmake_variables.hpp</label>
+      </node>
+      <node id="14">
+        <label>string</label>
+      </node>
+      <node id="5">
+        <label>unistd.h</label>
+      </node>
+    </incdepgraph>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Implementations of python_interpreter class.</para>
+<para><hruler/>
+</para>
+<para>Authors (add name and date if you modify):</para>
+<para><simplesect kind="author"><para>Pat Scott (<ulink url="mailto:patrickcolinscott@gmail.com">patrickcolinscott@gmail.com</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2023 Jun</para>
+</simplesect>
+<hruler/>
+ </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/><sp/><sp/>GAMBIT:<sp/>Global<sp/>and<sp/>Modular<sp/>BSM<sp/>Inference<sp/>Tool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>*********************************************</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">///<sp/><sp/>\file</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">///<sp/><sp/>Implementations<sp/>of<sp/>python_interpreter<sp/>class.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">///<sp/><sp/>Authors<sp/>(add<sp/>name<sp/>and<sp/>date<sp/>if<sp/>you<sp/>modify):</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">///<sp/><sp/>\author<sp/>Pat<sp/>Scott</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">///<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(patrickcolinscott@gmail.com)</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">///<sp/><sp/>\date<sp/>2023<sp/>Jun</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="python__interpreter_8hpp" kindref="compound">gambit/Utils/python_interpreter.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#ifdef<sp/>HAVE_PYBIND11</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#include<sp/>&quot;<ref refid="begin__ignore__warnings__pybind11_8hpp" kindref="compound">gambit/Utils/begin_ignore_warnings_pybind11.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#include<sp/>&lt;pybind11/embed.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#include<sp/>&quot;<ref refid="end__ignore__warnings_8hpp" kindref="compound">gambit/Utils/end_ignore_warnings.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/>#include<sp/>&quot;<ref refid="logger_8hpp" kindref="compound">gambit/Logs/logger.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceGambit" kindref="compound">Gambit</ref></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Utils</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Singleton<sp/>accessor<sp/>function<sp/></highlight></codeline>
+<codeline lineno="34"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>python_interpreter&amp;<sp/>python_interpreter::get()</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>This<sp/>is<sp/>guaranteed<sp/>to<sp/>be<sp/>threadsafe<sp/>by<sp/>C++11</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>python_interpreter<sp/>s;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>s;</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Regular<sp/>constructor.<sp/>No<sp/>access<sp/>as<sp/>it<sp/>is<sp/>private.</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>python_interpreter::python_interpreter()</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Start<sp/>the<sp/>interpreter</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>iptr<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>pybind11::scoped_interpreter;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Import<sp/>the<sp/>sys<sp/>module,<sp/>and<sp/>save<sp/>a<sp/>wrapper<sp/>to<sp/>it<sp/>for<sp/>later.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>pybind11::module<sp/>local_sys<sp/>=<sp/>pybind11::module::import(</highlight><highlight class="stringliteral">&quot;sys&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sys<sp/>=<sp/>&amp;local_sys;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Import<sp/>the<sp/>os<sp/>module,<sp/>and<sp/>save<sp/>a<sp/>wrapper<sp/>to<sp/>it<sp/>for<sp/>later.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>pybind11::module<sp/>local_os<sp/>=<sp/>pybind11::module::import(</highlight><highlight class="stringliteral">&quot;os&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>os<sp/>=<sp/>&amp;local_os;<sp/></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1adc186dd8542984ac7c777296f545f7f5" kindref="member">logger</ref>()<sp/>&lt;&lt;<sp/>LogTags::utils<sp/>&lt;&lt;<sp/>LogTags::debug<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Python<sp/>interpreter<sp/>successfully<sp/>started.&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/><ref refid="namespaceGambit_1aed4726aee167bc7cf497e993d6318514" kindref="member">EOM</ref>;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="55"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Regular<sp/>destructor.<sp/>No<sp/>access<sp/>as<sp/>it<sp/>is<sp/>private.</highlight></codeline>
+<codeline lineno="56"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>python_interpreter::~python_interpreter()</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>This<sp/>still<sp/>causes<sp/>a<sp/>segfault<sp/>:(</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>delete<sp/>iptr;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="62"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Interpreter<sp/>guard<sp/>constructor</highlight></codeline>
+<codeline lineno="63"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>python_interpreter_guard::python_interpreter_guard()<sp/>{<sp/>python_interpreter::get();<sp/>}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="Utils/src/python_interpreter.cpp"/>
+  </compounddef>
+</doxygen>

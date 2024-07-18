@@ -999,7 +999,7 @@ namespace __gambit_plugin_ ## plug_name ## __t__ ## plug_type ## __v__ ## plug_v
                                                                                                             \
         extern "C" void *                                                                                   \
             __gambit_plugin_getMember_ ## plug_name ## __t__ ## plug_type ## __v__ ## plug_version ## __    \
-                                                                                            (std::string in)\
+                                                                                    (const std::string &in) \
         {                                                                                                   \
             if (myData.outputFuncs.find(in) != myData.outputFuncs.end())                                    \
             {                                                                                               \
@@ -1021,7 +1021,7 @@ namespace __gambit_plugin_ ## plug_name ## __t__ ## plug_type ## __v__ ## plug_v
     }                                                                                                       \
                                                                                                             \
     template <typename T>                                                                                   \
-    inline T get_inifile_value(std::string in)                                                              \
+    inline T get_inifile_value(const std::string &in)                                                       \
     {                                                                                                       \
         if (!__gambit_plugin_namespace__::myData.node[in])                                                  \
         {                                                                                                   \
@@ -1033,7 +1033,7 @@ namespace __gambit_plugin_ ## plug_name ## __t__ ## plug_type ## __v__ ## plug_v
         return __gambit_plugin_namespace__::myData.node[in].as<T>();                                        \
     }                                                                                                       \
                                                                                                             \
-    inline YAML::Node get_inifile_node(std::string in)                                                      \
+    inline YAML::Node get_inifile_node(const std::string &in)                                               \
     {                                                                                                       \
         return __gambit_plugin_namespace__::myData.node[in];                                                \
     }                                                                                                       \
@@ -1044,7 +1044,7 @@ namespace __gambit_plugin_ ## plug_name ## __t__ ## plug_type ## __v__ ## plug_v
     }                                                                                                       \
                                                                                                             \
     template <typename T>                                                                                   \
-    inline T get_inifile_value(std::string in, T defaults)                                                  \
+    inline T get_inifile_value(const std::string &in, const T &defaults)                                    \
     {                                                                                                       \
         if (!__gambit_plugin_namespace__::myData.node[in])                                                  \
         {                                                                                                   \
@@ -1055,7 +1055,7 @@ namespace __gambit_plugin_ ## plug_name ## __t__ ## plug_type ## __v__ ## plug_v
     }                                                                                                       \
                                                                                                             \
     template <>                                                                                             \
-    inline YAML::Node get_inifile_value<YAML::Node>(std::string in)                                         \
+    inline YAML::Node get_inifile_value<YAML::Node>(const std::string &in)                                  \
     {                                                                                                       \
         if (!__gambit_plugin_namespace__::myData.node[in])                                                  \
         {                                                                                                   \
@@ -1068,7 +1068,7 @@ namespace __gambit_plugin_ ## plug_name ## __t__ ## plug_type ## __v__ ## plug_v
     }                                                                                                       \
                                                                                                             \
     template <>                                                                                             \
-    inline YAML::Node get_inifile_value<YAML::Node>(std::string in, YAML::Node defaults)                    \
+    inline YAML::Node get_inifile_value<YAML::Node>(const std::string &in, const YAML::Node &defaults)      \
     {                                                                                                       \
         if (!__gambit_plugin_namespace__::myData.node[in])                                                  \
         {                                                                                                   \
@@ -1137,4 +1137,4 @@ __GAMBIT_PLUGIN_NAMESPACE__(__VA_ARGS__)                                        
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:05 +0000
+Updated on 2024-07-18 at 13:53:33 +0000

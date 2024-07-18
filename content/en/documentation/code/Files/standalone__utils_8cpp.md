@@ -18,11 +18,19 @@ description: "[No description available]"
 ## Detailed Description
 
 
-**Author**: Pat Scott 
+**Author**: 
+
+  * Pat Scott 
 
  ([patscott@physics.mcgill.ca](mailto:patscott@physics.mcgill.ca)) 
+  * Chris Chang 
 
-**Date**: 2016 Jun
+
+**Date**: 
+
+  * 2016 Jun
+  * 2023 Dec
+
 
 Includes implementations needed to use a GAMBIT module as a standalone analysis code.
 
@@ -57,6 +65,9 @@ Authors (add name and date if you modify):
 ///          (patscott@physics.mcgill.ca)
 ///  \date 2016 Jun
 ///
+///  \author Chris Chang
+///  \date 2023 Dec
+///
 ///  *********************************************
 
 #include "gambit/Utils/standalone_utils.hpp"
@@ -85,10 +96,21 @@ namespace Gambit
     logger().initialise(loggerinfo);
   }
 
+  /// Initialise the printers (required for suspicious point raises)
+  YAML::Node get_standalone_printer(str printer, str prefix, str filename)
+  {
+    // Set the minimum required settings by the printer
+    YAML::Node printerNode;
+    printerNode["printer"] = printer;
+    printerNode["options"]["default_output_path"] = Utils::ensure_path_exists(prefix);
+    printerNode["options"]["output_file"] = filename;
+    return printerNode;
+  }
+
 }
 ```
 
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:05 +0000
+Updated on 2024-07-18 at 13:53:32 +0000

@@ -795,7 +795,7 @@
 <codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/>incrementCut(Total_events);</highlight></codeline>
 <codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;const<sp/>Particle*&gt;<sp/>electrons<sp/>=<sp/></highlight><highlight class="keyword">event</highlight><highlight class="normal">-&gt;electrons();</highlight></codeline>
 <codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;const<sp/>Particle*&gt;<sp/>muons<sp/>=<sp/></highlight><highlight class="keyword">event</highlight><highlight class="normal">-&gt;muons();</highlight></codeline>
-<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;const<sp/>Jet*&gt;<sp/>jets<sp/>=<sp/></highlight><highlight class="keyword">event</highlight><highlight class="normal">-&gt;jets();</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;const<sp/>Jet*&gt;<sp/>jets<sp/>=<sp/></highlight><highlight class="keyword">event</highlight><highlight class="normal">-&gt;jets(</highlight><highlight class="stringliteral">&quot;antikt_R04&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="215"><highlight class="normal"></highlight></codeline>
 <codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/>electrons<sp/>=<sp/>AnalysisUtil::filterPtEta(electrons,<sp/>20,<sp/>2.47);</highlight></codeline>
 <codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/>muons<sp/>=<sp/>AnalysisUtil::filterPtEta(muons,<sp/>10,<sp/>2.4);</highlight></codeline>

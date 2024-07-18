@@ -20,9 +20,9 @@ Inherits from [Gambit::Priors::BasePrior](/documentation/code/classes/classgambi
 |                | Name           |
 | -------------- | -------------- |
 | | **[Cauchy](/documentation/code/classes/classgambit_1_1priors_1_1cauchy/#function-cauchy)**(const std::vector< std::string > & param, const [Options](/documentation/code/classes/classgambit_1_1options/) & options) |
-| virtual void | **[transform](/documentation/code/classes/classgambit_1_1priors_1_1cauchy/#function-transform)**(const std::vector< double > & unitpars, std::unordered_map< std::string, double > & outputMap) const override<br>Transformation from unit interval to the [Cauchy](/documentation/code/classes/classgambit_1_1priors_1_1cauchy/).  |
-| virtual std::vector< double > | **[inverse_transform](/documentation/code/classes/classgambit_1_1priors_1_1cauchy/#function-inverse-transform)**(const std::unordered_map< std::string, double > & ) const override<br>Transform from parameter back to unit hypercube.  |
-| virtual double | **[operator()](/documentation/code/classes/classgambit_1_1priors_1_1cauchy/#function-operator)**(const std::vector< double > & ) const override<br>Log of PDF density.  |
+| virtual void | **[transform](/documentation/code/classes/classgambit_1_1priors_1_1cauchy/#function-transform)**(hyper_cube_ref< double > unitpars, std::unordered_map< std::string, double > & outputMap) const<br>Transformation from unit interval to the [Cauchy](/documentation/code/classes/classgambit_1_1priors_1_1cauchy/).  |
+| virtual void | **[inverse_transform](/documentation/code/classes/classgambit_1_1priors_1_1cauchy/#function-inverse-transform)**(const std::unordered_map< std::string, double > & physical, hyper_cube_ref< double > unit) const override<br>Transform from physical parameter to unit hypercube.  |
+| virtual double | **[log_prior_density](/documentation/code/classes/classgambit_1_1priors_1_1cauchy/#function-log-prior-density)**(const std::unordered_map< std::string, double > & ) const override<br>Log of prior density.  |
 
 ## Additional inherited members
 
@@ -78,9 +78,9 @@ Cauchy(
 
 ```
 inline virtual void transform(
-    const std::vector< double > & unitpars,
+    hyper_cube_ref< double > unitpars,
     std::unordered_map< std::string, double > & outputMap
-) const override
+) const
 ```
 
 Transformation from unit interval to the [Cauchy](/documentation/code/classes/classgambit_1_1priors_1_1cauchy/). 
@@ -91,29 +91,30 @@ Transformation from unit interval to the [Cauchy](/documentation/code/classes/cl
 ### function inverse_transform
 
 ```
-inline virtual std::vector< double > inverse_transform(
-    const std::unordered_map< std::string, double > & 
+inline virtual void inverse_transform(
+    const std::unordered_map< std::string, double > & physical,
+    hyper_cube_ref< double > unit
 ) const override
 ```
 
-Transform from parameter back to unit hypercube. 
+Transform from physical parameter to unit hypercube. 
 
 **Reimplements**: [Gambit::Priors::BasePrior::inverse_transform](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/#function-inverse-transform)
 
 
-### function operator()
+### function log_prior_density
 
 ```
-inline virtual double operator()(
-    const std::vector< double > & 
+inline virtual double log_prior_density(
+    const std::unordered_map< std::string, double > & 
 ) const override
 ```
 
-Log of PDF density. 
+Log of prior density. 
 
-**Reimplements**: [Gambit::Priors::BasePrior::operator()](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/#function-operator)
+**Reimplements**: [Gambit::Priors::BasePrior::log_prior_density](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/#function-log-prior-density)
 
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:04 +0000
+Updated on 2024-07-18 at 13:53:32 +0000

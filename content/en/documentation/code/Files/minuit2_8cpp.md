@@ -168,7 +168,7 @@ scanner_plugin(minuit2, version(6, 23, 01))
     Gambit::Scanner::like_ptr model = get_purpose(get_inifile_value<std::string>("like"));
     const double offset = get_inifile_value<double>("likelihood: lnlike_offset", 0.);
     model->setPurposeOffset(offset);
-    const auto names = model.get_names();
+    const auto names = model->get_names();
 
     // minuit2 algorithm options
     const std::string algorithm{get_inifile_value<std::string>("algorithm", "combined")};
@@ -199,12 +199,12 @@ scanner_plugin(minuit2, version(6, 23, 01))
 
     if (physical_start_node)
     {
-      physical_start_map = model.transform(hypercube_start);
+      physical_start_map = model->transform(hypercube_start);
       for (auto &s : physical_start_map)
       {
         s.second = get_node_value(physical_start_node, s.first, s.second);
       }
-      hypercube_start = model.inverse_transform(physical_start_map);
+      hypercube_start = model->inverse_transform(physical_start_map);
     }
     else
     {
@@ -212,7 +212,7 @@ scanner_plugin(minuit2, version(6, 23, 01))
       {
         hypercube_start[i] = get_node_value(hypercube_start_node, names[i], hypercube_start[i]);
       }
-      physical_start_map = model.transform(hypercube_start);
+      physical_start_map = model->transform(hypercube_start);
     }
 
     // get hypercube step (optional). It can be written in hypercube or physical
@@ -234,7 +234,7 @@ scanner_plugin(minuit2, version(6, 23, 01))
 
     if (physical_step_node)
     {
-      const auto center = model.transform(hypercube_start);
+      const auto center = model->transform(hypercube_start);
 
       for (int i = 0; i < dim; i++)
       {
@@ -250,8 +250,8 @@ scanner_plugin(minuit2, version(6, 23, 01))
           auto backward = center;
           backward.at(names[i]) -= physical_step;
 
-          const auto hypercube_forward = model.inverse_transform(forward);
-          const auto hypercube_backward = model.inverse_transform(backward);
+          const auto hypercube_forward = model->inverse_transform(forward);
+          const auto hypercube_backward = model->inverse_transform(backward);
           const double mean_step = 0.5 * (hypercube_forward[i] - hypercube_backward[i]);
           hypercube_step.push_back(mean_step);
         }
@@ -354,7 +354,8 @@ scanner_plugin(minuit2, version(6, 23, 01))
     {
       v.push_back(best_fit_hypercube[i]);
     }
-    for (auto par : model.transform(v))
+
+    for (auto &&par : model->transform(v))
     {
       std::cout << "best-fit physical " << par.first << " = " << par.second << std::endl;
     }
@@ -395,4 +396,4 @@ scanner_plugin(minuit2, version(6, 23, 01))
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:05 +0000
+Updated on 2024-07-18 at 13:53:33 +0000

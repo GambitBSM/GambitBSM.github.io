@@ -22,44 +22,44 @@ Member [Gambit::ColliderBit::Analysis::add](/documentation/code/classes/classgam
 
 Member [Gambit::ColliderBit::Analysis_ATLAS_13TeV_0LEP_139invfb::run](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__0lep__139invfb/#function-run)  (const Event *event)
 
-* Compute from hard objects instead? 
-Drop b-tag if pT < 50 GeV or |eta| > 2.5? 
+* Drop b-tag if pT < 50 GeV or |eta| > 2.5? 
 Apply a random 9% loss / 0.91 reweight for jet quality criteria? 
 And tight ID for high purity... used where? 
 And tight ID for high purity... used where? 
-Use weighting instead  
+Use weighting instead 
+Compute from hard objects instead?  
 
 Member [Gambit::ColliderBit::Analysis_ATLAS_13TeV_0LEP_13invfb::run](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__0lep__13invfb/#function-run)  (const Event *event)
-
-* Drop b-tag if pT < 50 GeV or |eta| > 2.5? 
-Actually only within 0.2&ndash;0.4... 
-Actually only within 0.2&ndash;0.4... 
-Unless b-tagged (and pT > 50 && abseta < 2.5)  
-
-Member [Gambit::ColliderBit::Analysis_ATLAS_13TeV_0LEP_36invfb::run](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__0lep__36invfb/#function-run)  (const Event *event)
 
 * Drop b-tag if pT < 50 GeV or |eta| > 2.5? 
 Unless b-tagged (and pT > 50 && abseta < 2.5) 
 Actually only within 0.2&ndash;0.4... 
 Actually only within 0.2&ndash;0.4...  
 
+Member [Gambit::ColliderBit::Analysis_ATLAS_13TeV_0LEP_36invfb::run](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__0lep__36invfb/#function-run)  (const Event *event)
+
+* Actually only within 0.2&ndash;0.4... 
+Actually only within 0.2&ndash;0.4... 
+Unless b-tagged (and pT > 50 && abseta < 2.5) 
+Drop b-tag if pT < 50 GeV or |eta| > 2.5?  
+
 Member [Gambit::ColliderBit::Analysis_ATLAS_13TeV_MultiLEP_strong_139invfb::run](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__multilep__strong__139invfb/#function-run)  (const Event *event)
 
-* Compute from hard objects instead? 
-Drop b-tag if |eta| > 2.5? 
-Use applyElectronIsolationEfficiency2019 or something similar?  
+* Drop b-tag if |eta| > 2.5? 
+Use applyElectronIsolationEfficiency2019 or something similar? 
+Compute from hard objects instead?  
 
 Member [Gambit::ColliderBit::Analysis_CMS_13TeV_0LEP_137invfb::run](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__0lep__137invfb/#function-run)  (const Event *event)
 
-* Sum should actually be over all calo particles 
-Sum should actually be over all non-e/mu calo particles 
+* Sum should actually be over all non-e/mu calo particles 
+Sum should actually be over all calo particles 
 Sum should actually be over all non-e/mu calo particles  
 
 Member [Gambit::ColliderBit::Analysis_CMS_13TeV_0LEP_13invfb::run](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__0lep__13invfb/#function-run)  (const Event *event)
 
-* Need access to charged hadrons to do this isolation 
+* Sum should actually be over all non-e/mu calo particles 
 Sum should actually be over all non-e/mu calo particles 
-Sum should actually be over all non-e/mu calo particles  
+Need access to charged hadrons to do this isolation  
 
 Member [Gambit::ColliderBit::Analysis_CMS_13TeV_0LEP_36invfb::run](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__0lep__36invfb/#function-run)  (const Event *event)
 
@@ -145,33 +145,31 @@ This is the [ATLAS](/documentation/code/namespaces/namespacegambit_1_1colliderbi
 
 Member [Gambit::ColliderBit::CMS::smearTaus](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/#function-smeartaus)  (std::vector< HEPUtils::Particle * > &taus)
 
-* Update cf. Matthias study for [ATLAS](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1atlas/)
-Is this the best way to smear? Should we preserve the mean jet energy, or pT, or direction?  
+* Is this the best way to smear? Should we preserve the mean jet energy, or pT, or direction? 
+Update cf. Matthias study for [ATLAS](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1atlas/)
 
-Member [Gambit::ColliderBit::convertParticleEvent](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-convertparticleevent)  (const EventT &pevt, HEPUtils::Event &result, double antiktR, double jet_pt_min)
+Member [Gambit::ColliderBit::convertParticleEvent](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-convertparticleevent)  (const EventT &pevt, HEPUtils::Event &result, std::vector< jet_collection_settings > all_jet_collection_settings, str jetcollection_taus, double jet_pt_min)
 
-* Move out-of-acceptance MET contribution to [BuckFast](/documentation/code/classes/classgambit_1_1colliderbit_1_1buckfast/)
-Overlap between jets and prompt containers: need some isolation in MET calculation 
-Temporarily using quark-based tagging instead &ndash; fix 
-Temporarily using quark-based tagging instead &ndash; fix 
-What's wrong with having a W daughter? Doesn't that just mark a final tau? 
-Choose jet algorithm via detector _settings? Run several algs? 
-Hard-coded radius from ATLAS-CONF-2021-022, make selectable? 
-Hard-coded radius from ATLAS-CONF-2021-022, make selectable? 
-Hard-coded radius from ATLAS-CONF-2021-022, make selectable? 
-Hard-coded radius!!! 
-Hard-coded radius!!! 
-Hard-coded radius!!! 
+* Hard-coded radius!!! 
 Replace with HEPUtils::any(bhadrons, [&](const auto& pb){ pj.delta_R(pb) < 0.4 }) 
-Use ghost tagging?  
+Use ghost tagging? 
+Move out-of-acceptance MET contribution to [BuckFast](/documentation/code/classes/classgambit_1_1colliderbit_1_1buckfast/)
+What's wrong with having a W daughter? Doesn't that just mark a final tau? 
+Temporarily using quark-based tagging instead &ndash; fix 
+Temporarily using quark-based tagging instead &ndash; fix 
+Overlap between jets and prompt containers: need some isolation in MET calculation 
+Hard-coded radius!!! 
+Hard-coded radius from ATLAS-CONF-2021-022, make selectable? 
+Hard-coded radius from ATLAS-CONF-2021-022, make selectable? 
+Hard-coded radius from ATLAS-CONF-2021-022, make selectable? 
+Hard-coded radius!!!  
 
-Member [Gambit::ColliderBit::convertPartonEvent](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-convertpartonevent)  (const EventT &pevt, HEPUtils::Event &result, double antiktR, double jet_pt_min)
+Member [Gambit::ColliderBit::convertPartonEvent](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-convertpartonevent)  (const EventT &pevt, HEPUtils::Event &result, std::vector< jet_collection_settings > all_jet_collection_settings, str jetcollection_taus, double jet_pt_min)
 
-* We should leave this for the detector sim / analysis to deal with 
-_Some_ photons should be included in jets!!! Ignore for now since no FSR 
-Lepton dressing 
+* Lepton dressing 
 Only include hadronic tau fraction? 
-choose jet algorithm via _settings?  
+We should leave this for the detector sim / analysis to deal with 
+_Some_ photons should be included in jets!!! Ignore for now since no FSR  
 
 Member [Gambit::ColliderBit::Cutflows::normalize](/documentation/code/classes/structgambit_1_1colliderbit_1_1cutflows/#function-normalize)  (double norm, size_t icut=0)
 
@@ -179,12 +177,12 @@ Member [Gambit::ColliderBit::Cutflows::normalize](/documentation/code/classes/st
 
 Member [Gambit::ColliderBit::fill_analysis_loglikes](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-fill-analysis-loglikes)  (const [AnalysisData](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/) &, [AnalysisLogLikes](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisloglikes/) &, bool, bool, bool, bool, bool(*FullLikes_FileExists)(const str &), int(*FullLikes_ReadIn)(const str &, const str &), double(*FullLikes_Evaluate)(std::map< str, double > &, const str &), const std::string)
 
-* Unify this for both cov and no-cov, feeding in one-element Eigen blocks as Ref<>s for the latter? 
-Compute the background-only covariance decomposition and likelihood only once 
-Only compute this once per run 
+* Only compute this once per run 
 Only compute this once per run 
 Use newer (?) one-step Eigen constructors for (const) single-element arrays 
-Only compute this once per run  
+Only compute this once per run 
+Compute the background-only covariance decomposition and likelihood only once 
+Unify this for both cov and no-cov, feeding in one-element Eigen blocks as Ref<>s for the latter?  
 
 Member [Gambit::ColliderBit::filter_reject](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-filter-reject)  (const JetPtrs &jets, std::function< bool(const Jet *)> rejfn, bool do_delete=true)
 
@@ -196,8 +194,8 @@ Member [Gambit::ColliderBit::filter_reject](/documentation/code/namespaces/names
 
 Member [Gambit::ColliderBit::fromBottom](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-frombottom)  (int n, const EventT &evt)
 
-* Rewrite using the Pythia > 8.176 particle-based methods 
-What about partonic decays?  
+* What about partonic decays? 
+Rewrite using the Pythia > 8.176 particle-based methods  
 
 Member [Gambit::ColliderBit::fromHadron](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-fromhadron)  (int n, const EventT &evt)
 
@@ -241,4 +239,4 @@ Member [Gambit::ColliderBit::SignalRegionData::check](/documentation/code/classe
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:08 +0000
+Updated on 2024-07-18 at 13:53:36 +0000

@@ -44,6 +44,10 @@ Pat Scott ([patscott@physics.mcgill.ca](mailto:patscott@physics.mcgill.ca))
 
 2014 Mar
 
+Patrick Stoecker ([stoecker@physik.rwth-aachen.de](mailto:stoecker@physik.rwth-aachen.de)) 
+
+2023 Nov
+
 
 
 ------------------
@@ -81,6 +85,10 @@ Pat Scott ([patscott@physics.mcgill.ca](mailto:patscott@physics.mcgill.ca))
 ///          (patscott@physics.mcgill.ca)
 ///  \date 2013 Aug, Sep
 ///  \date 2014 Mar
+///
+///  \author Patrick Stoecker
+///          (stoecker@physik.rwth-aachen.de)
+///  \date 2023 Nov
 ///
 ///  *********************************************
 
@@ -122,8 +130,8 @@ namespace Gambit
         el = std::find(selectedmodels.begin(), selectedmodels.end(), (*it)->origin());
         if(el != selectedmodels.end())
         {
-          // If yes, activate this functor.  Default is inactivated.
-          (*it)->setStatus(1);               // 1 means "available".
+          // If yes, flag this functor as available for activation.
+          (*it)->setStatus(FunctorStatus::Available);
           (*it)->setPrintRequirement(true);  // Tell printer to output this functor
           // Initialise ModelParameters object it contains
           (*it)->calculate();
@@ -203,7 +211,7 @@ namespace Gambit
         modelname  = it->first;
         functorPtr = it->second;
 
-        if ( functorPtr->status()!=2 )
+        if ( !functorPtr->isActive() )
         {
           unusedmodels.push_back( modelname );
         }
@@ -388,4 +396,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:06 +0000
+Updated on 2024-07-18 at 13:53:33 +0000

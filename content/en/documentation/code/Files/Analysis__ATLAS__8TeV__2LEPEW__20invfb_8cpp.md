@@ -317,7 +317,7 @@ namespace Gambit
           ATLAS::applyMuonEff(signalMuons);
 
           vector<const HEPUtils::Jet*> signalJets;
-          for (const HEPUtils::Jet* jet : event->jets())
+          for (const HEPUtils::Jet* jet : event->jets("antikt_R04"))
           {
             if (jet->pT() > 20. && fabs(jet->eta()) < 4.5) signalJets.push_back(jet);
             //if(jet->btag() && fabs(jet->eta()) < 2.5 && jet->pT() > 20.) bJets.push_back(jet);
@@ -1078,4 +1078,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:07 +0000
+Updated on 2024-07-18 at 13:53:34 +0000

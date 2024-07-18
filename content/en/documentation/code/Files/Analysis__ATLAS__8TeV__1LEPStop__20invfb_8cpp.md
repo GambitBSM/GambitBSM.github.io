@@ -237,6 +237,8 @@ namespace Gambit {
 
       void run(const HEPUtils::Event* event) {
 
+        static const std::string jet_collection_name = "antikt_R04";
+
         // Missing energy
         HEPUtils::P4 ptot = event->missingmom();
         double met = event->met();
@@ -245,7 +247,7 @@ namespace Gambit {
         vector<const HEPUtils::Particle*> baselineElectrons;
         for (const HEPUtils::Particle* electron : event->electrons()) {
           if (electron->pT() > 10. && electron->abseta() < 2.47 &&
-              !object_in_cone(*event, *electron, 0.1*electron->pT(), 0.2)) baselineElectrons.push_back(electron);
+              !object_in_cone(*event, jet_collection_name, *electron, 0.1*electron->pT(), 0.2)) baselineElectrons.push_back(electron);
         }
 
         // Apply electron efficiency
@@ -255,7 +257,7 @@ namespace Gambit {
         vector<const HEPUtils::Particle*> baselineMuons;
         for (const HEPUtils::Particle* muon : event->muons()) {
           if (muon->pT() > 10. && muon->abseta() < 2.4 &&
-              !object_in_cone(*event, *muon, 1.8, 0.2)) baselineMuons.push_back(muon);
+              !object_in_cone(*event, jet_collection_name, *muon, 1.8, 0.2)) baselineMuons.push_back(muon);
         }
 
         // Apply muon efficiency
@@ -263,7 +265,7 @@ namespace Gambit {
 
         // Get b jets with efficiency and mistag (fake) rates
         vector<const HEPUtils::Jet*> baselineJets, bJets; // trueBJets; //for debugging
-        for (const HEPUtils::Jet* jet : event->jets()) {
+        for (const HEPUtils::Jet* jet : event->jets(jet_collection_name)) {
           if (jet->pT() > 20. && jet->abseta() < 10.0) baselineJets.push_back(jet);
           if (jet->abseta() < 2.5 && jet->pT() > 25.) {
             if ((jet->btag() && Random::draw() < 0.75) || (!jet->btag() && Random::draw() < 0.02)) bJets.push_back(jet);
@@ -833,4 +835,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:07 +0000
+Updated on 2024-07-18 at 13:53:34 +0000

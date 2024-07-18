@@ -2,7 +2,7 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
   <compounddef id="classGambit_1_1Scanner_1_1scan__ptr_3_01ret_07args_8_8_8_08_4" kind="class" language="C++" prot="public">
     <compoundname>Gambit::Scanner::scan_ptr&lt; ret(args...)&gt;</compoundname>
-    <basecompoundref prot="public" virt="non-virtual">boost::shared_ptr&lt; Function_Base&lt; ret(args...)&gt; &gt;</basecompoundref>
+    <basecompoundref prot="public" virt="non-virtual">std::shared_ptr&lt; Function_Base&lt; ret(args...)&gt; &gt;</basecompoundref>
     <includes refid="factory__defs_8hpp" local="no">factory_defs.hpp</includes>
     <templateparamlist>
       <param>
@@ -15,9 +15,9 @@
       </param>
     </templateparamlist>
       <sectiondef kind="private-type">
-      <memberdef kind="typedef" id="classGambit_1_1Scanner_1_1scan__ptr_3_01ret_07args_8_8_8_08_4_1ae61d6732aace5e9e5616f86928f6eee0" prot="private" static="no">
-        <type>shared_ptr&lt; <ref refid="classGambit_1_1Scanner_1_1Function__Base" kindref="compound">Function_Base</ref>&lt; ret(args...) &gt; &gt;</type>
-        <definition>typedef shared_ptr&lt; Function_Base&lt; ret (args...) &gt; &gt; Gambit::Scanner::scan_ptr&lt; ret(args...)&gt;::s_ptr</definition>
+      <memberdef kind="typedef" id="classGambit_1_1Scanner_1_1scan__ptr_3_01ret_07args_8_8_8_08_4_1a9a8ef050d8687d3ea67b73d27717aea3" prot="private" static="no">
+        <type>std::shared_ptr&lt; <ref refid="classGambit_1_1Scanner_1_1Function__Base" kindref="compound">Function_Base</ref>&lt; ret(args...) &gt; &gt;</type>
+        <definition>typedef std::shared_ptr&lt; Function_Base&lt; ret (args...) &gt; &gt; Gambit::Scanner::scan_ptr&lt; ret(args...)&gt;::s_ptr</definition>
         <argsstring></argsstring>
         <name>s_ptr</name>
         <qualifiedname>Gambit::Scanner::scan_ptr&lt; ret(args...)&gt;::s_ptr</qualifiedname>
@@ -27,7 +27,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ScannerBit/include/gambit/ScannerBit/factory_defs.hpp" line="249" column="32" bodyfile="ScannerBit/include/gambit/ScannerBit/factory_defs.hpp" bodystart="249" bodyend="-1"/>
+        <location file="ScannerBit/include/gambit/ScannerBit/factory_defs.hpp" line="255" column="37" bodyfile="ScannerBit/include/gambit/ScannerBit/factory_defs.hpp" bodystart="255" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -43,7 +43,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ScannerBit/include/gambit/ScannerBit/factory_defs.hpp" line="252" column="13" bodyfile="ScannerBit/include/gambit/ScannerBit/factory_defs.hpp" bodystart="252" bodyend="252"/>
+        <location file="ScannerBit/include/gambit/ScannerBit/factory_defs.hpp" line="259" column="13" bodyfile="ScannerBit/include/gambit/ScannerBit/factory_defs.hpp" bodystart="259" bodyend="259"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1Scanner_1_1scan__ptr_3_01ret_07args_8_8_8_08_4_1a12bbc11f8d0b92d5f679516e3cab2f62" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -61,7 +61,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ScannerBit/include/gambit/ScannerBit/factory_defs.hpp" line="253" column="13" bodyfile="ScannerBit/include/gambit/ScannerBit/factory_defs.hpp" bodystart="253" bodyend="253"/>
+        <location file="ScannerBit/include/gambit/ScannerBit/factory_defs.hpp" line="260" column="13" bodyfile="ScannerBit/include/gambit/ScannerBit/factory_defs.hpp" bodystart="260" bodyend="260"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1Scanner_1_1scan__ptr_3_01ret_07args_8_8_8_08_4_1ab03b61dfc24f09afae776c7c9c6f2c8f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -79,7 +79,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ScannerBit/include/gambit/ScannerBit/factory_defs.hpp" line="254" column="13" bodyfile="ScannerBit/include/gambit/ScannerBit/factory_defs.hpp" bodystart="254" bodyend="254"/>
+        <location file="ScannerBit/include/gambit/ScannerBit/factory_defs.hpp" line="261" column="13" bodyfile="ScannerBit/include/gambit/ScannerBit/factory_defs.hpp" bodystart="261" bodyend="261"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1Scanner_1_1scan__ptr_3_01ret_07args_8_8_8_08_4_1a95369959d3445943b4745587c0339837" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -97,7 +97,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ScannerBit/include/gambit/ScannerBit/factory_defs.hpp" line="255" column="13" bodyfile="ScannerBit/include/gambit/ScannerBit/factory_defs.hpp" bodystart="255" bodyend="265"/>
+        <location file="ScannerBit/include/gambit/ScannerBit/factory_defs.hpp" line="262" column="13" bodyfile="ScannerBit/include/gambit/ScannerBit/factory_defs.hpp" bodystart="262" bodyend="272"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1Scanner_1_1scan__ptr_3_01ret_07args_8_8_8_08_4_1a5ee744138543ba6c9e5dbcdcd2f852ec" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classGambit_1_1Scanner_1_1scan__ptr" kindref="compound">scan_ptr</ref>&lt; ret(args...)&gt; &amp;</type>
@@ -115,7 +115,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ScannerBit/include/gambit/ScannerBit/factory_defs.hpp" line="267" column="22" bodyfile="ScannerBit/include/gambit/ScannerBit/factory_defs.hpp" bodystart="267" bodyend="284"/>
+        <location file="ScannerBit/include/gambit/ScannerBit/factory_defs.hpp" line="274" column="22" bodyfile="ScannerBit/include/gambit/ScannerBit/factory_defs.hpp" bodystart="274" bodyend="291"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1Scanner_1_1scan__ptr_3_01ret_07args_8_8_8_08_4_1a582fdde73954c7fd01a1e03d582cc22d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classGambit_1_1Scanner_1_1scan__ptr" kindref="compound">scan_ptr</ref>&lt; ret(args...)&gt; &amp;</type>
@@ -133,7 +133,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ScannerBit/include/gambit/ScannerBit/factory_defs.hpp" line="286" column="22" bodyfile="ScannerBit/include/gambit/ScannerBit/factory_defs.hpp" bodystart="286" bodyend="291"/>
+        <location file="ScannerBit/include/gambit/ScannerBit/factory_defs.hpp" line="293" column="22" bodyfile="ScannerBit/include/gambit/ScannerBit/factory_defs.hpp" bodystart="293" bodyend="298"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1Scanner_1_1scan__ptr_3_01ret_07args_8_8_8_08_4_1a91da7b32c93b833eb6b5ecb2411f99da" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type><ref refid="classGambit_1_1Scanner_1_1scan__ptr" kindref="compound">scan_ptr</ref>&lt; ret(args...)&gt; &amp;</type>
@@ -151,7 +151,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ScannerBit/include/gambit/ScannerBit/factory_defs.hpp" line="293" column="22" bodyfile="ScannerBit/include/gambit/ScannerBit/factory_defs.hpp" bodystart="293" bodyend="298"/>
+        <location file="ScannerBit/include/gambit/ScannerBit/factory_defs.hpp" line="300" column="22" bodyfile="ScannerBit/include/gambit/ScannerBit/factory_defs.hpp" bodystart="300" bodyend="305"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1Scanner_1_1scan__ptr_3_01ret_07args_8_8_8_08_4_1aee6b24e8dc3a37449ec63a203277542f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>ret</type>
@@ -169,7 +169,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ScannerBit/include/gambit/ScannerBit/factory_defs.hpp" line="300" column="17" bodyfile="ScannerBit/include/gambit/ScannerBit/factory_defs.hpp" bodystart="300" bodyend="303"/>
+        <location file="ScannerBit/include/gambit/ScannerBit/factory_defs.hpp" line="307" column="17" bodyfile="ScannerBit/include/gambit/ScannerBit/factory_defs.hpp" bodystart="307" bodyend="310"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -185,7 +185,7 @@
         </childnode>
       </node>
       <node id="2">
-        <label>shared_ptr&lt; Function_Base&lt; ret(args...)&gt; &gt;</label>
+        <label>std::shared_ptr&lt; Function_Base&lt; ret(args...)&gt; &gt;</label>
       </node>
     </inheritancegraph>
     <collaborationgraph>
@@ -196,16 +196,16 @@
         </childnode>
       </node>
       <node id="2">
-        <label>shared_ptr&lt; Function_Base&lt; ret(args...)&gt; &gt;</label>
+        <label>std::shared_ptr&lt; Function_Base&lt; ret(args...)&gt; &gt;</label>
       </node>
     </collaborationgraph>
-    <location file="ScannerBit/include/gambit/ScannerBit/factory_defs.hpp" line="246" column="9" bodyfile="ScannerBit/include/gambit/ScannerBit/factory_defs.hpp" bodystart="247" bodyend="304"/>
+    <location file="ScannerBit/include/gambit/ScannerBit/factory_defs.hpp" line="252" column="9" bodyfile="ScannerBit/include/gambit/ScannerBit/factory_defs.hpp" bodystart="253" bodyend="311"/>
     <listofallmembers>
       <member refid="classGambit_1_1Scanner_1_1scan__ptr_3_01ret_07args_8_8_8_08_4_1aee6b24e8dc3a37449ec63a203277542f" prot="public" virt="non-virtual"><scope>Gambit::Scanner::scan_ptr&lt; ret(args...)&gt;</scope><name>operator()</name></member>
       <member refid="classGambit_1_1Scanner_1_1scan__ptr_3_01ret_07args_8_8_8_08_4_1a5ee744138543ba6c9e5dbcdcd2f852ec" prot="public" virt="non-virtual"><scope>Gambit::Scanner::scan_ptr&lt; ret(args...)&gt;</scope><name>operator=</name></member>
       <member refid="classGambit_1_1Scanner_1_1scan__ptr_3_01ret_07args_8_8_8_08_4_1a582fdde73954c7fd01a1e03d582cc22d" prot="public" virt="non-virtual"><scope>Gambit::Scanner::scan_ptr&lt; ret(args...)&gt;</scope><name>operator=</name></member>
       <member refid="classGambit_1_1Scanner_1_1scan__ptr_3_01ret_07args_8_8_8_08_4_1a91da7b32c93b833eb6b5ecb2411f99da" prot="public" virt="non-virtual"><scope>Gambit::Scanner::scan_ptr&lt; ret(args...)&gt;</scope><name>operator=</name></member>
-      <member refid="classGambit_1_1Scanner_1_1scan__ptr_3_01ret_07args_8_8_8_08_4_1ae61d6732aace5e9e5616f86928f6eee0" prot="private" virt="non-virtual"><scope>Gambit::Scanner::scan_ptr&lt; ret(args...)&gt;</scope><name>s_ptr</name></member>
+      <member refid="classGambit_1_1Scanner_1_1scan__ptr_3_01ret_07args_8_8_8_08_4_1a9a8ef050d8687d3ea67b73d27717aea3" prot="private" virt="non-virtual"><scope>Gambit::Scanner::scan_ptr&lt; ret(args...)&gt;</scope><name>s_ptr</name></member>
       <member refid="classGambit_1_1Scanner_1_1scan__ptr_3_01ret_07args_8_8_8_08_4_1abd74e655f109055737127bcd76e5ee0c" prot="public" virt="non-virtual"><scope>Gambit::Scanner::scan_ptr&lt; ret(args...)&gt;</scope><name>scan_ptr</name></member>
       <member refid="classGambit_1_1Scanner_1_1scan__ptr_3_01ret_07args_8_8_8_08_4_1a12bbc11f8d0b92d5f679516e3cab2f62" prot="public" virt="non-virtual"><scope>Gambit::Scanner::scan_ptr&lt; ret(args...)&gt;</scope><name>scan_ptr</name></member>
       <member refid="classGambit_1_1Scanner_1_1scan__ptr_3_01ret_07args_8_8_8_08_4_1ab03b61dfc24f09afae776c7c9c6f2c8f" prot="public" virt="non-virtual"><scope>Gambit::Scanner::scan_ptr&lt; ret(args...)&gt;</scope><name>scan_ptr</name></member>

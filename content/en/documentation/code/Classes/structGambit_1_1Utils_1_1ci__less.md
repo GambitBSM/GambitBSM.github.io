@@ -1,7 +1,6 @@
 ---
 title: "struct Gambit::Utils::ci_less"
-
-description: "[No description available]"
+description: "Comparator for case-insensitive comparison in STL assos. containers */. "
 
 ---
 
@@ -9,7 +8,10 @@ description: "[No description available]"
 
 
 
-[No description available]
+Comparator for case-insensitive comparison in STL assos. containers */. 
+
+
+`#include <util_functions.hpp>`
 
 ## Public Classes
 
@@ -28,7 +30,7 @@ description: "[No description available]"
 ### function operator()
 
 ```
-inline bool operator()(
+bool operator()(
     const std::string & s1,
     const std::string & s2
 ) const
@@ -37,4 +39,4 @@ inline bool operator()(
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:05 +0000
+Updated on 2024-07-18 at 13:53:32 +0000

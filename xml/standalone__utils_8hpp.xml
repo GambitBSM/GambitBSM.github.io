@@ -3,6 +3,7 @@
   <compounddef id="standalone__utils_8hpp" kind="file" language="C++">
     <compoundname>standalone_utils.hpp</compoundname>
     <includes refid="util__functions_8hpp" local="yes">gambit/Utils/util_functions.hpp</includes>
+    <includes refid="yaml__node__utility_8hpp" local="yes">gambit/Utils/yaml_node_utility.hpp</includes>
     <includedby refid="standalone__module_8hpp" local="yes">standalone_module.hpp</includedby>
     <includedby refid="standalone__utils_8cpp" local="yes">standalone_utils.cpp</includedby>
     <incdepgraph>
@@ -72,6 +73,8 @@
         <label>standalone_utils.hpp</label>
         <link refid="standalone__utils_8hpp"/>
         <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
         </childnode>
       </node>
       <node id="23">
@@ -184,6 +187,24 @@
         <childnode refid="49" relation="include">
         </childnode>
       </node>
+      <node id="54">
+        <label>gambit/Utils/yaml_node_utility.hpp</label>
+        <link refid="yaml__node__utility_8hpp"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
       <node id="49">
         <label>array</label>
       </node>
@@ -262,6 +283,9 @@
       <node id="40">
         <label>iostream</label>
       </node>
+      <node id="55">
+        <label>limits</label>
+      </node>
       <node id="46">
         <label>list</label>
       </node>
@@ -303,6 +327,9 @@
       </node>
       <node id="3">
         <label>vector</label>
+      </node>
+      <node id="56">
+        <label>yaml-cpp/yaml.h</label>
       </node>
     </incdepgraph>
     <invincdepgraph>
@@ -366,6 +393,10 @@
 </simplesect>
 <simplesect kind="date"><para>2014 Feb</para>
 </simplesect>
+<simplesect kind="author"><para>Chris Chang </para>
+</simplesect>
+<simplesect kind="date"><para>2023 Dec</para>
+</simplesect>
 <hruler/>
  </para>
     </detaileddescription>
@@ -385,24 +416,31 @@
 <codeline lineno="13"><highlight class="comment">///<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(patscott@physics.mcgill.ca)</highlight></codeline>
 <codeline lineno="14"><highlight class="comment">///<sp/><sp/>\date<sp/>2014<sp/>Feb</highlight></codeline>
 <codeline lineno="15"><highlight class="comment">///</highlight></codeline>
-<codeline lineno="16"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
-<codeline lineno="17"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__standalone_utils_hpp__</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__standalone_utils_hpp__</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="20"><highlight class="normal"></highlight></codeline>
-<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="util__functions_8hpp" kindref="compound">gambit/Utils/util_functions.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="22"><highlight class="normal"></highlight></codeline>
-<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceGambit" kindref="compound">Gambit</ref></highlight></codeline>
-<codeline lineno="24"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="25"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="26"><highlight class="comment"><sp/><sp/>///<sp/>Logger<sp/>setup<sp/>standalone<sp/>utility<sp/>function</highlight></codeline>
-<codeline lineno="27"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1a6afc90c5723abe5408be8b03d495bf4c" kindref="member">initialise_standalone_logs</ref>(<ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>);</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"></highlight></codeline>
-<codeline lineno="29"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="30"><highlight class="normal"></highlight></codeline>
-<codeline lineno="31"><highlight class="normal"></highlight></codeline>
-<codeline lineno="32"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//__standalone_utils_hpp__</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="comment">///<sp/><sp/>\author<sp/>Chris<sp/>Chang</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">///<sp/><sp/>\date<sp/>2023<sp/>Dec</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="19"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
+<codeline lineno="20"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__standalone_utils_hpp__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__standalone_utils_hpp__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="util__functions_8hpp" kindref="compound">gambit/Utils/util_functions.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="yaml__node__utility_8hpp" kindref="compound">gambit/Utils/yaml_node_utility.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceGambit" kindref="compound">Gambit</ref></highlight></codeline>
+<codeline lineno="28"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/><sp/>///<sp/>Logger<sp/>setup<sp/>standalone<sp/>utility<sp/>function</highlight></codeline>
+<codeline lineno="31"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1a6afc90c5723abe5408be8b03d495bf4c" kindref="member">initialise_standalone_logs</ref>(<ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>);</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/><sp/>///<sp/>Initialise<sp/>the<sp/>printers<sp/>(required<sp/>for<sp/>suspicious<sp/>point<sp/>raises)</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>YAML::Node<sp/><ref refid="namespaceGambit_1a4a65372713112184126dc38a1ad3f548" kindref="member">get_standalone_printer</ref>(<ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>,<sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>,<sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>);</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//__standalone_utils_hpp__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="Utils/include/gambit/Utils/standalone_utils.hpp"/>
   </compounddef>

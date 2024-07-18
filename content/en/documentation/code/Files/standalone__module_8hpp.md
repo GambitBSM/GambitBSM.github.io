@@ -9,12 +9,6 @@ description: "[No description available]"
 
 [No description available] [More...](#detailed-description)
 
-## Functions
-
-|                | Name           |
-| -------------- | -------------- |
-| void | **[Suspicious](/documentation/code/files/standalone__module_8hpp/#function-suspicious)**()<br>This function fixes an issue for linking to suspicious points. It is not intented to be called anywhere.  |
-
 ## Defines
 
 |                | Name           |
@@ -40,16 +34,6 @@ Authors (add name and date if you modify):
 
 ------------------
 
-
-## Functions Documentation
-
-### function Suspicious
-
-```
-void Suspicious()
-```
-
-This function fixes an issue for linking to suspicious points. It is not intented to be called anywhere. 
 
 
 
@@ -94,13 +78,12 @@ This function fixes an issue for linking to suspicious points. It is not intente
 #include "gambit/Utils/static_members.hpp"
 #include "gambit/Utils/stream_overloads.hpp"
 #include "gambit/Elements/module_macros_incore.hpp"
+#include "gambit/Printers/baseprinter.hpp"
+#include "gambit/Printers/printermanager.hpp"
 
 using namespace Gambit;
 using std::cout;
 using std::endl;
-
-/// This function fixes an issue for linking to suspicious points. It is not intented to be called anywhere.
-void Suspicious() {Suspicious_point_exception().raise(".");}
 
 #endif //__standalone_hpp__
 ```
@@ -108,4 +91,4 @@ void Suspicious() {Suspicious_point_exception().raise(".");}
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:06 +0000
+Updated on 2024-07-18 at 13:53:34 +0000

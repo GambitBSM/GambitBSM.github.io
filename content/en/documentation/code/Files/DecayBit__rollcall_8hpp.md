@@ -15,6 +15,7 @@ description: "[No description available]"
 | -------------- | -------------- |
 | | **[BACKEND_OPTION](/documentation/code/files/decaybit__rollcall_8hpp/#function-backend-option)**((SUSY_HIT) , (sh_reqd) ) |
 | | **[BACKEND_REQ](/documentation/code/files/decaybit__rollcall_8hpp/#function-backend-req)**(CH_Decay_Width , () , double , (str &, str &, std::vector< str > &) ) |
+| | **[BACKEND_REQ](/documentation/code/files/decaybit__rollcall_8hpp/#function-backend-req)**(dark_photon_decay_width , () , double , (double &, std::string, double &) ) |
 | | **[QUICK_FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#function-quick-function)**(DecayBit , W_minus_decay_rates , NEW_CAPABILITY , W_minus_decays , DecayTable::Entry , () , (W_plus_decay_rates, DecayTable::Entry) ) |
 | DecayTable::Entry | **[QUICK_FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#function-quick-function)**(DecayBit , mu_minus_decay_rates , NEW_CAPABILITY , mu_minus_decays , DecayTable::Entry , () , (mu_plus_decay_rates, DecayTable::Entry) ) |
 | DecayTable::Entry DecayTable::Entry | **[QUICK_FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#function-quick-function)**(DecayBit , pi_minus_decay_rates , NEW_CAPABILITY , pi_minus_decays , DecayTable::Entry , () , (pi_plus_decay_rates, DecayTable::Entry) ) |
@@ -171,6 +172,12 @@ description: "[No description available]"
 |  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
 |  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/#define-capability)**  |
 |  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/#define-capability)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/#define-capability)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/#define-capability)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
 |  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
 |  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/#define-capability)**  |
 |  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
@@ -262,6 +269,18 @@ BACKEND_REQ(
     () ,
     double ,
     (str &, str &, std::vector< str > &) 
+)
+```
+
+
+### function BACKEND_REQ
+
+```
+BACKEND_REQ(
+    dark_photon_decay_width ,
+    () ,
+    double ,
+    (double &, std::string, double &) 
 )
 ```
 
@@ -1294,6 +1313,48 @@ DecayTable::Entry DecayTable::Entry rho_plus_decay_rates;
 
 ```
 #define FUNCTION t_decays
+```
+
+
+### define FUNCTION
+
+```
+#define FUNCTION t_decays
+```
+
+
+### define CAPABILITY
+
+```
+#define CAPABILITY t_decay_rates
+```
+
+
+### define FUNCTION
+
+```
+#define FUNCTION t_decays
+```
+
+
+### define CAPABILITY
+
+```
+#define CAPABILITY t_decay_rates
+```
+
+
+### define FUNCTION
+
+```
+#define FUNCTION t_decays
+```
+
+
+### define CAPABILITY
+
+```
+#define CAPABILITY t_decay_rates
 ```
 
 
@@ -2421,9 +2482,38 @@ START_MODULE
     BACKEND_REQ(CH_Decay_Width, (), double, (str&, str&, std::vector<str>&))
     ALLOW_MODELS(DMsimpVectorMedVectorDM)
     #undef FUNCTION
+
   #undef CAPABILITY
 
+  #define CAPABILITY dark_photon_decay_rates
+  START_CAPABILITY
 
+    #define FUNCTION SubGeVDM_dark_photon_decays
+    START_FUNCTION(DecayTable::Entry)
+    DEPENDENCY(SubGeVDM_spectrum, Spectrum)
+    BACKEND_REQ(dark_photon_decay_width, (), double, (double&, std::string, double&))
+    BACKEND_REQ(dark_photon_branching_fraction, (), double, (std::string, double&))
+    ALLOW_MODELS(SubGeVDM_scalar, SubGeVDM_fermion)
+    #undef FUNCTION
+
+  #undef CAPABILITY
+
+  #define CAPABILITY dark_photon_decay_length
+  START_CAPABILITY
+    #define FUNCTION get_dark_photon_decay_length
+    START_FUNCTION(double)
+    DEPENDENCY(dark_photon_decay_rates, DecayTable::Entry)
+    #undef FUNCTION
+  #undef CAPABILITY  
+
+  #define CAPABILITY dark_photon_visible_branching
+  START_CAPABILITY
+    #define FUNCTION get_dark_photon_visible_branching
+    START_FUNCTION(double)
+    DEPENDENCY(dark_photon_decay_rates, DecayTable::Entry)
+    #undef FUNCTION
+  #undef CAPABILITY  
+  
   #define CAPABILITY decay_rates
   START_CAPABILITY
 
@@ -2510,6 +2600,7 @@ START_MODULE
     MODEL_CONDITIONAL_DEPENDENCY(neutralino_2_decay_rates, DecayTable::Entry, MSSM63atQ, MSSM63atMGUT, MSSM63atQ_mG, MSSM63atMGUT_mG)
     MODEL_CONDITIONAL_DEPENDENCY(neutralino_3_decay_rates, DecayTable::Entry, MSSM63atQ, MSSM63atMGUT, MSSM63atQ_mG, MSSM63atMGUT_mG)
     MODEL_CONDITIONAL_DEPENDENCY(neutralino_4_decay_rates, DecayTable::Entry, MSSM63atQ, MSSM63atMGUT, MSSM63atQ_mG, MSSM63atMGUT_mG)
+    MODEL_CONDITIONAL_DEPENDENCY(dark_photon_decay_rates, DecayTable::Entry, SubGeVDM_scalar, SubGeVDM_fermion)
     #undef FUNCTION
 
   #undef CAPABILITY
@@ -2687,4 +2778,4 @@ QUICK_FUNCTION(DecayBit, chargino_minus_2_decay_rates, NEW_CAPABILITY, chargino_
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:06 +0000
+Updated on 2024-07-18 at 13:53:34 +0000

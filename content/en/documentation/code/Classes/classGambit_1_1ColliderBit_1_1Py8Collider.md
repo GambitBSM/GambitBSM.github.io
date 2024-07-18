@@ -73,7 +73,8 @@ Inherits from [Gambit::ColliderBit::BaseCollider](/documentation/code/classes/cl
 |                | Name           |
 | -------------- | -------------- |
 | bool | **[partonOnly](/documentation/code/classes/classgambit_1_1colliderbit_1_1basecollider/#variable-partononly)** <br>Flag indicating if events from this collider should be processed as parton-only or full events.  |
-| double | **[antiktR](/documentation/code/classes/classgambit_1_1colliderbit_1_1basecollider/#variable-antiktr)** <br>The jet radius used for the anti-kt jet clustering.  |
+| std::vector< [jet_collection_settings](/documentation/code/classes/structgambit_1_1colliderbit_1_1jet__collection__settings/) > | **[all_jet_collection_settings](/documentation/code/classes/classgambit_1_1colliderbit_1_1basecollider/#variable-all-jet-collection-settings)** <br>Vector of different jet collection settings.  |
+| std::string | **[jetcollection_taus](/documentation/code/classes/classgambit_1_1colliderbit_1_1basecollider/#variable-jetcollection-taus)** <br>Key for jet collection used in adding taus.  |
 
 
 ## Detailed Description
@@ -383,4 +384,4 @@ std::vector< std::string > _pythiaSettings;
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:04 +0000
+Updated on 2024-07-18 at 13:53:31 +0000

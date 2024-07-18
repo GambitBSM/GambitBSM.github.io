@@ -95,7 +95,7 @@ namespace Gambit
 
           // Get jets
           vector<const Jet*> jets24, jets50;
-          for (const Jet* jet : event->jets())
+          for (const Jet* jet : event->jets("antikt_R04"))
           {
             if (jet->pT() < 30) continue;
             if (jet->abseta() < 2.4) jets24.push_back(jet);
@@ -296,4 +296,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:07 +0000
+Updated on 2024-07-18 at 13:53:34 +0000

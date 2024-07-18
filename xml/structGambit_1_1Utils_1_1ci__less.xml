@@ -2,9 +2,10 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
   <compounddef id="structGambit_1_1Utils_1_1ci__less" kind="struct" language="C++" prot="public">
     <compoundname>Gambit::Utils::ci_less</compoundname>
+    <includes refid="util__functions_8hpp" local="no">util_functions.hpp</includes>
     <innerclass refid="structGambit_1_1Utils_1_1ci__less_1_1nocase__compare" prot="public">Gambit::Utils::ci_less::nocase_compare</innerclass>
       <sectiondef kind="public-func">
-      <memberdef kind="function" id="structGambit_1_1Utils_1_1ci__less_1a5cae336fdea78244abb85edb7410d0d7" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="structGambit_1_1Utils_1_1ci__less_1a5cae336fdea78244abb85edb7410d0d7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
         <definition>bool Gambit::Utils::ci_less::operator()</definition>
         <argsstring>(const std::string &amp;s1, const std::string &amp;s2) const</argsstring>
@@ -24,14 +25,15 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/util_functions.hpp" line="143" column="12" bodyfile="Utils/include/gambit/Utils/util_functions.hpp" bodystart="143" bodyend="148"/>
+        <location file="Utils/include/gambit/Utils/util_functions.hpp" line="139" column="12" bodyfile="Utils/src/util_functions.cpp" bodystart="448" bodyend="454"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
+<para>Comparator for case-insensitive comparison in STL assos. containers *<zwj/>/. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Utils/include/gambit/Utils/util_functions.hpp" line="134" column="5" bodyfile="Utils/include/gambit/Utils/util_functions.hpp" bodystart="135" bodyend="149"/>
+    <location file="Utils/include/gambit/Utils/util_functions.hpp" line="136" column="5" bodyfile="Utils/include/gambit/Utils/util_functions.hpp" bodystart="137" bodyend="144"/>
     <listofallmembers>
       <member refid="structGambit_1_1Utils_1_1ci__less_1a5cae336fdea78244abb85edb7410d0d7" prot="public" virt="non-virtual"><scope>Gambit::Utils::ci_less</scope><name>operator()</name></member>
     </listofallmembers>

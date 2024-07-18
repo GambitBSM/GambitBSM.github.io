@@ -26,6 +26,7 @@ description: "[No description available]"
   * Ben Farmer ([benjamin.farmer@monash.edu.au](mailto:benjamin.farmer@monash.edu.au)) 
   * Lars A. Dal ([l.a.dal@fys.uio.no](mailto:l.a.dal@fys.uio.no)) 
   * Tomas Gonzalo ([gonzalo@physik.rwth-aachen.de](mailto:gonzalo@physik.rwth-aachen.de)) 
+  * Patrick Stoecker ([stoecker@physik.rwth-aachen.de](mailto:stoecker@physik.rwth-aachen.de)) 
 
 
 **Date**: 
@@ -39,6 +40,7 @@ description: "[No description available]"
   * 2014 Jan
   * 2015 Jan
   * 2021 Sep
+  * 2023 Nov
 
 
 Functor template class definitions.
@@ -97,6 +99,10 @@ Authors (add name and date if you modify):
 ///          (gonzalo@physik.rwth-aachen.de)
 ///  \date 2021 Sep
 ///
+///  \author Patrick Stoecker
+///          (stoecker@physik.rwth-aachen.de)
+///  \date 2023 Nov
+///
 ///  *********************************************
 
 #ifndef __functor_definitions_hpp__
@@ -154,7 +160,7 @@ namespace Gambit
     template <typename TYPE>
     void module_functor<TYPE>::calculate()
     {
-      if (myStatus == -3)                          // Do an explicit status check to hold standalone writers' hands
+      if (myStatus == FunctorStatus::Classes_missing) // Do an explicit status check to hold standalone writers' hands
       {
         std::ostringstream ss;
         ss << "Sorry, the function " << origin() << "::" << name()
@@ -309,7 +315,11 @@ namespace Gambit
       return myFunction;
     }
 
-    /// Getter for the 'safe' incarnation of the wrapped function's origin's version (module or backend)
+    /// Getter for the version of the wrapped function's backend.
+    template <typename PTR_TYPE, typename TYPE, typename... ARGS>
+    str backend_functor_common<PTR_TYPE, TYPE, ARGS...>::version() const { return myVersion; }
+
+    /// Getter for the 'safe' incarnation of the version of the wrapped function's backend.
     template <typename PTR_TYPE, typename TYPE, typename... ARGS>
     str backend_functor_common<PTR_TYPE, TYPE, ARGS...>::safe_version() const { return mySafeVersion; }
 
@@ -405,4 +415,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:06 +0000
+Updated on 2024-07-18 at 13:53:33 +0000

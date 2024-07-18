@@ -217,6 +217,9 @@ description: "[No description available]"
 | void | **[get_QedQcd_spectrum](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-qedqcd-spectrum)**(const [SubSpectrum](/documentation/code/classes/classgambit_1_1subspectrum/) *& result)<br>Construct a [SubSpectrum](/documentation/code/classes/classgambit_1_1subspectrum/) object from [SMInputs](/documentation/code/classes/structgambit_1_1sminputs/) using [QedQcdWrapper]().  |
 | void | **[get_SM_spectrum](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-sm-spectrum)**([Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) & result)<br>Get a [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) object wrapper for Standard-Model-only information.  |
 | void | **[SM_higgs_couplings](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-sm-higgs-couplings)**([HiggsCouplingsTable](/documentation/code/classes/classgambit_1_1higgscouplingstable/) & result)<br>Put together the SM Higgs couplings.  |
+| void | **[get_SubGeVDM_spectrum](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-subgevdm-spectrum)**([Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) & result)<br>Get a (simple) [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) object wrapper for the SubGeVDM model.  |
+| void | **[fill_map_from_SubGeVDM_spectrum](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-fill-map-from-subgevdm-spectrum)**(std::map< std::string, double > & specmap, const [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) & SubGeVdmspec) |
+| void | **[get_SubGeVDM_spectrum_as_map](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-get-subgevdm-spectrum-as-map)**(std::map< std::string, double > & specmap) |
 | void | **[Math_test](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-math-test)**(bool & result) |
 | void | **[SUSYHD_test](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-susyhd-test)**(bool & result) |
 | void | **[SPheno_MSSM_test](/documentation/code/namespaces/namespacegambit_1_1specbit/#function-spheno-mssm-test)**(bool & result) |
@@ -2327,6 +2330,44 @@ void SM_higgs_couplings(
 
 Put together the SM Higgs couplings. 
 
+### function get_SubGeVDM_spectrum
+
+```
+void get_SubGeVDM_spectrum(
+    Spectrum & result
+)
+```
+
+Get a (simple) [Spectrum](/documentation/code/classes/classgambit_1_1spectrum/) object wrapper for the SubGeVDM model. 
+
+### function fill_map_from_SubGeVDM_spectrum
+
+```
+void fill_map_from_SubGeVDM_spectrum(
+    std::map< std::string, double > & specmap,
+    const Spectrum & SubGeVdmspec
+)
+```
+
+
+Add everything... use spectrum contents routines to automate task
+
+Verification routine should have taken care of invalid shapes etc, so won't check for that here.
+
+Add everything... use spectrum contents routines to automate task
+
+Verification routine should have taken care of invalid shapes etc, so won't check for that here.
+
+
+### function get_SubGeVDM_spectrum_as_map
+
+```
+void get_SubGeVDM_spectrum_as_map(
+    std::map< std::string, double > & specmap
+)
+```
+
+
 ### function Math_test
 
 ```
@@ -2718,4 +2759,4 @@ This function adds all entries of the spectrum object (as SLHAea) that need to b
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:05 +0000
+Updated on 2024-07-18 at 13:53:32 +0000

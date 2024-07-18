@@ -801,7 +801,7 @@
 <codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="313"><highlight class="normal"></highlight></codeline>
 <codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;const<sp/>HEPUtils::Jet*&gt;<sp/>baselineJets;</highlight></codeline>
-<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>HEPUtils::Jet*<sp/>jet<sp/>:<sp/>event-&gt;jets())<sp/>{</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>HEPUtils::Jet*<sp/>jet<sp/>:<sp/>event-&gt;jets(</highlight><highlight class="stringliteral">&quot;antikt_R04&quot;</highlight><highlight class="normal">))<sp/>{</highlight></codeline>
 <codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(jet-&gt;pT()&gt;25.<sp/>&amp;&amp;fabs(jet-&gt;eta())&lt;2.4)baselineJets.push_back(jet);</highlight></codeline>
 <codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="318"><highlight class="normal"></highlight></codeline>

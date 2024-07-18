@@ -114,11 +114,11 @@ namespace Gambit
          DoubleLogFlatJoin(const std::vector<std::string>& param, const Options&); 
 
          /// Transformation from unit interval to the double log + flat join (inverse prior transform)
-         void transform(const std::vector <double> &unitpars, std::unordered_map <std::string, double> &output) const override;
-         std::vector<double> inverse_transform(const std::unordered_map<std::string, double> &) const override;
+         void transform(hyper_cube_ref<double> unitpars, std::unordered_map <std::string, double> &output) const override;
+         void inverse_transform(const std::unordered_map<std::string, double> &, hyper_cube_ref<double>) const override;
 
          /// Probability density function
-         double operator()(const std::vector<double> &vec) const override;
+         double log_prior_density(const std::unordered_map<std::string, double> &) const override;
       };
   
       LOAD_PRIOR(double_log_flat_join, DoubleLogFlatJoin)
@@ -131,4 +131,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:05 +0000
+Updated on 2024-07-18 at 13:53:32 +0000

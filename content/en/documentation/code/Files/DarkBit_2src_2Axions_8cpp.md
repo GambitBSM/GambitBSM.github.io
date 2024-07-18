@@ -891,8 +891,8 @@ namespace Gambit
         if (data_set=="CAST2007") { bin_lo = 0.8; bin_delta = 0.3; rs = 0.231738; n_bins = 20; }
 
         // Arrays to store the results in.
-        double gagg_counts [n_bins*n_mass_bins];
-        double gaee_counts [n_bins*n_mass_bins];
+        std::vector<double> gagg_counts (n_bins*n_mass_bins);
+        std::vector<double> gaee_counts (n_bins*n_mass_bins);
 
         // Load the solar model.
         // Solar radius R_Sol and D_Sol (= 1 a.u.) in 10^10 cm.
@@ -2423,4 +2423,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:07 +0000
+Updated on 2024-07-18 at 13:53:34 +0000

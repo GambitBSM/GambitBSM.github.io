@@ -14,27 +14,9 @@ description: "[No description available]"
 | Name           |
 | -------------- |
 | **[LHEF](/documentation/code/namespaces/namespacelhef/)** <br>Forward declaration to cut down on includes.  |
+| **[Gambit](/documentation/code/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
+| **[Gambit::ColliderBit](/documentation/code/namespaces/namespacegambit_1_1colliderbit/)**  |
 
-## Functions
-
-|                | Name           |
-| -------------- | -------------- |
-| void | **[get_HEPUtils_event](/documentation/code/files/lhef2heputils_8hpp/#function-get-heputils-event)**(const LHEF::Reader & , HEPUtils::Event & , double )<br>Extract an LHE event as a HEPUtils::Event.  |
-
-
-## Functions Documentation
-
-### function get_HEPUtils_event
-
-```
-void get_HEPUtils_event(
-    const LHEF::Reader & ,
-    HEPUtils::Event & ,
-    double 
-)
-```
-
-Extract an LHE event as a HEPUtils::Event. 
 
 
 
@@ -67,6 +49,7 @@ Extract an LHE event as a HEPUtils::Event.
 ///  *********************************************
 
 #include "gambit/cmake/cmake_variables.hpp"
+#include "gambit/ColliderBit/Utils.hpp"
 
 #ifndef EXCLUDE_HEPMC
 
@@ -75,8 +58,18 @@ Extract an LHE event as a HEPUtils::Event.
 /// Forward declaration to cut down on includes
 namespace LHEF { class Reader; }
 
-/// Extract an LHE event as a HEPUtils::Event
-void get_HEPUtils_event(const LHEF::Reader&, HEPUtils::Event&, double);
+namespace Gambit
+{
+
+  namespace ColliderBit
+  {
+
+    /// Extract an LHE event as a HEPUtils::Event
+    void get_HEPUtils_event(const LHEF::Reader&, HEPUtils::Event&, double, std::vector<Gambit::ColliderBit::jet_collection_settings>);
+
+  }
+
+}
 
 #endif
 ```
@@ -84,4 +77,4 @@ void get_HEPUtils_event(const LHEF::Reader&, HEPUtils::Event&, double);
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:07 +0000
+Updated on 2024-07-18 at 13:53:34 +0000

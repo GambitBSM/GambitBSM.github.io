@@ -370,21 +370,21 @@ void my_simplex::my_SetUp(double xin[DMAX*(DMAX+1)])
       x[i]=xstart[i];
     }
 
+  std::vector<double> xi(d);
   for (int i=0; i<d+1; i++)
     {
-      double xi[d];
-      std::copy(x+d*i,x+d*i+d,xi);  // get coordinates of i'th point and copy into xi
-           y[i]=(*f)(xi,d);
+      std::copy(x+d*i,x+d*i+d,&xi[0]);  // get coordinates of i'th point and copy into xi
+      y[i]=(*f)(&xi[0],d);
     }
 }
 
 void my_simplex::set_y()
 {
+  std::vector<double> xi(d);
   for (int i=0; i<d+1; i++)
     {
-      double xi[d];
-      std::copy(x+d*i,x+d*i+d,xi);  // get coordinates of i'th point and copy into xi
-      y[i]=(*f)(xi,d);
+      std::copy(x+d*i,x+d*i+d,&xi[0]);  // get coordinates of i'th point and copy into xi
+      y[i]=(*f)(&xi[0],d);
     }
 }
 
@@ -986,4 +986,4 @@ double topnesscompute(double pb1[4], double pl[4], double MET[4], double sigmat,
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:07 +0000
+Updated on 2024-07-18 at 13:53:34 +0000

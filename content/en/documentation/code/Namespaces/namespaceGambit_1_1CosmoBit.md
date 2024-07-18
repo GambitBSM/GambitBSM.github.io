@@ -35,6 +35,7 @@ description: "[No description available]"
 | void | **[primordial_abundances](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-primordial-abundances)**([BBN_container](/documentation/code/classes/classgambit_1_1bbn__container/) & result) |
 | void | **[primordial_abundances_decayingDM](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-primordial-abundances-decayingdm)**([BBN_container](/documentation/code/classes/classgambit_1_1bbn__container/) & result) |
 | void | **[extract_helium_abundance](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-extract-helium-abundance)**(double & result)<br>Extract helium-4 abundance from BBN abundance container.  |
+| void | **[extract_Neff_after_BBN](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-extract-neff-after-bbn)**(double & result)<br>Extract Neff from BBN abundance container.  |
 | void | **[compute_BBN_LogLike](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-compute-bbn-loglike)**(double & result)<br>Compute the overall log-likelihood from BBN.  |
 | void | **[class_get_unlensed_Cl_TT](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-class-get-unlensed-cl-tt)**(std::vector< double > & result)<br>Getter functions for CL spectra from classy.  |
 | void | **[class_get_unlensed_Cl_TE](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-class-get-unlensed-cl-te)**(std::vector< double > & result)<br>Temperature & E-mode cross-correlation.  |
@@ -67,6 +68,8 @@ description: "[No description available]"
 | void | **[get_Neff_SM](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-get-neff-sm)**(double & result) |
 | void | **[get_mNu_tot](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-get-mnu-tot)**(double & result) |
 | void | **[get_N_ur](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-get-n-ur)**(double & result) |
+| void | **[get_N_ur_from_BBN](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-get-n-ur-from-bbn)**(double & result) |
+| void | **[compute_N_eff_likelihood_Planck_BAO](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-compute-n-eff-likelihood-planck-bao)**(double & result) |
 | void | **[T_ncdm_SM](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-t-ncdm-sm)**(double & result)<br>Temperature of non-CDM in the (cosmological) SM.  |
 | void | **[T_ncdm](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-t-ncdm)**(double & result)<br>Temperature of non-CDM in non-standard theories.  |
 | void | **[eta0_LCDM](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-eta0-lcdm)**(double & result)<br>Baryon-to-photon ratio (today) in LCDM.  |
@@ -191,6 +194,16 @@ void extract_helium_abundance(
 ```
 
 Extract helium-4 abundance from BBN abundance container. 
+
+### function extract_Neff_after_BBN
+
+```
+void extract_Neff_after_BBN(
+    double & result
+)
+```
+
+Extract Neff from BBN abundance container. 
 
 ### function compute_BBN_LogLike
 
@@ -520,6 +533,24 @@ void get_mNu_tot(
 
 ```
 void get_N_ur(
+    double & result
+)
+```
+
+
+### function get_N_ur_from_BBN
+
+```
+void get_N_ur_from_BBN(
+    double & result
+)
+```
+
+
+### function compute_N_eff_likelihood_Planck_BAO
+
+```
+void compute_N_eff_likelihood_Planck_BAO(
     double & result
 )
 ```
@@ -987,4 +1018,4 @@ Lensing likelihood (PR2 - 2015)
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:04 +0000
+Updated on 2024-07-18 at 13:53:31 +0000

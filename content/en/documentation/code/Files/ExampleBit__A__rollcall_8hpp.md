@@ -55,6 +55,13 @@ description: "[No description available]"
 |  | **[FUNCTION](/documentation/code/files/examplebit__a__rollcall_8hpp/#define-function)**  |
 |  | **[CAPABILITY](/documentation/code/files/examplebit__a__rollcall_8hpp/#define-capability)**  |
 |  | **[FUNCTION](/documentation/code/files/examplebit__a__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/examplebit__a__rollcall_8hpp/#define-capability)**  |
+|  | **[FUNCTION](/documentation/code/files/examplebit__a__rollcall_8hpp/#define-function)**  |
+|  | **[FUNCTION](/documentation/code/files/examplebit__a__rollcall_8hpp/#define-function)**  |
+|  | **[FUNCTION](/documentation/code/files/examplebit__a__rollcall_8hpp/#define-function)**  |
+|  | **[FUNCTION](/documentation/code/files/examplebit__a__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/examplebit__a__rollcall_8hpp/#define-capability)**  |
+|  | **[FUNCTION](/documentation/code/files/examplebit__a__rollcall_8hpp/#define-function)**  |
 
 ## Detailed Description
 
@@ -358,6 +365,55 @@ double DEPENDENCY(
 ```
 
 
+### define CAPABILITY
+
+```
+#define CAPABILITY nevents
+```
+
+
+### define FUNCTION
+
+```
+#define FUNCTION nevents_pred
+```
+
+
+### define FUNCTION
+
+```
+#define FUNCTION nevents_pred
+```
+
+
+### define FUNCTION
+
+```
+#define FUNCTION nevents_pred
+```
+
+
+### define FUNCTION
+
+```
+#define FUNCTION nevents_pred
+```
+
+
+### define CAPABILITY
+
+```
+#define CAPABILITY nevents
+```
+
+
+### define FUNCTION
+
+```
+#define FUNCTION nevents_pred
+```
+
+
 ## Source code
 
 ```
@@ -604,6 +660,41 @@ START_MODULE
     ALLOW_MODELS(TestModel1D)
     #undef FUNCTION
   #undef CAPABILITY
+  
+  // Testers for functionChain field in ObsLikes. Sum numbers recursively
+  #define CAPABILITY recursive_sum
+  START_CAPABILITY
+
+    #define FUNCTION recursive_add_1
+    START_FUNCTION(int)
+    DEPENDENCY(starting_value, int)
+    #undef FUNCTION
+
+    #define FUNCTION recursive_add_2
+    START_FUNCTION(int)
+    DEPENDENCY(recursive_sum, int)
+    #undef FUNCTION
+
+    #define FUNCTION recursive_add_3
+    START_FUNCTION(int)
+    DEPENDENCY(recursive_sum, int)
+    #undef FUNCTION
+
+    #define FUNCTION recursive_add_4
+    START_FUNCTION(int)
+    DEPENDENCY(recursive_sum, int)
+    #undef FUNCTION
+
+  #undef CAPABILITY
+    
+  // Starting point for the recursive sum
+  #define CAPABILITY starting_value
+  START_CAPABILITY
+    #define FUNCTION const_one
+    START_FUNCTION(int)
+    #undef FUNCTION
+  #undef CAPABILITY
+
 
 #undef MODULE
 
@@ -614,4 +705,4 @@ START_MODULE
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:06 +0000
+Updated on 2024-07-18 at 13:53:33 +0000

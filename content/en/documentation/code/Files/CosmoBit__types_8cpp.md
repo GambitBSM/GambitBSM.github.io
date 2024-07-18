@@ -285,7 +285,7 @@ namespace Gambit
       result["N_pivot"] = N_pivot;
 
       return result;
-    };
+    }
 
     void Primordial_ps::fill_k(double *k_array, int len)
     {
@@ -318,4 +318,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:07 +0000
+Updated on 2024-07-18 at 13:53:34 +0000

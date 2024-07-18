@@ -14,6 +14,7 @@
     <includedby refid="SpecBit__MajoranaSingletDM_8cpp" local="yes">SpecBit_MajoranaSingletDM.cpp</includedby>
     <includedby refid="SpecBit__SM_8cpp" local="yes">SpecBit_SM.cpp</includedby>
     <includedby refid="SpecBit__ScalarSingletDM_8cpp" local="yes">SpecBit_ScalarSingletDM.cpp</includedby>
+    <includedby refid="SpecBit__SubGeVDM_8cpp" local="yes">SpecBit_SubGeVDM.cpp</includedby>
     <includedby refid="SpecBit__VectorSingletDM_8cpp" local="yes">SpecBit_VectorSingletDM.cpp</includedby>
     <incdepgraph>
       <node id="59">
@@ -474,6 +475,8 @@
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
       </node>
       <node id="2">
         <label>SpecBit_DMEFT.cpp</label>
@@ -516,6 +519,10 @@
         <link refid="SpecBit__ScalarSingletDM_8cpp"/>
       </node>
       <node id="12">
+        <label>SpecBit_SubGeVDM.cpp</label>
+        <link refid="SpecBit__SubGeVDM_8cpp"/>
+      </node>
+      <node id="13">
         <label>SpecBit_VectorSingletDM.cpp</label>
         <link refid="SpecBit__VectorSingletDM_8cpp"/>
       </node>

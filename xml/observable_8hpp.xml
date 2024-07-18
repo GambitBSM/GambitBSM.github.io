@@ -1,0 +1,572 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="observable_8hpp" kind="file" language="C++">
+    <compoundname>observable.hpp</compoundname>
+    <includes refid="rule_8hpp" local="yes">gambit/Core/rule.hpp</includes>
+    <includes local="yes">yaml-cpp/yaml.h</includes>
+    <includedby refid="depresolver_8cpp" local="yes">depresolver.cpp</includedby>
+    <includedby refid="observable_8cpp" local="yes">observable.cpp</includedby>
+    <includedby refid="yaml__parser_8hpp" local="yes">yaml_parser.hpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>observable.hpp</label>
+        <link refid="observable_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>gambit/Core/rule.hpp</label>
+        <link refid="rule_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>gambit/Elements/type_equivalency.hpp</label>
+        <link refid="type__equivalency_8hpp"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>gambit/Logs/log_tags.hpp</label>
+        <link refid="log__tags_8hpp"/>
+      </node>
+      <node id="14">
+        <label>gambit/Utils/boost_fallbacks.hpp</label>
+        <link refid="boost__fallbacks_8hpp"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>gambit/Utils/cats.hpp</label>
+        <link refid="Utils_2include_2gambit_2Utils_2cats_8hpp"/>
+      </node>
+      <node id="31">
+        <label>gambit/Utils/exceptions.hpp</label>
+        <link refid="exceptions_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>gambit/Utils/export_symbols.hpp</label>
+        <link refid="export__symbols_8hpp"/>
+      </node>
+      <node id="21">
+        <label>gambit/Utils/local_info.hpp</label>
+        <link refid="local__info_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>gambit/Utils/standalone_error_handlers.hpp</label>
+        <link refid="standalone__error__handlers_8hpp"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>gambit/Utils/stringify.hpp</label>
+        <link refid="stringify_8hpp"/>
+      </node>
+      <node id="12">
+        <label>gambit/Utils/util_macros.hpp</label>
+        <link refid="util__macros_8hpp"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>gambit/Utils/util_types.hpp</label>
+        <link refid="util__types_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>gambit/Utils/variadic_functions.hpp</label>
+        <link refid="variadic__functions_8hpp"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>gambit/Utils/yaml_node_utility.hpp</label>
+        <link refid="yaml__node__utility_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>gambit/Utils/yaml_options.hpp</label>
+        <link refid="yaml__options_8hpp"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>gambit/Utils/yaml_variadic_functions.hpp</label>
+        <link refid="yaml__variadic__functions_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="47">
+        <label>array</label>
+      </node>
+      <node id="22">
+        <label>boost/current_function.hpp</label>
+      </node>
+      <node id="17">
+        <label>boost/detail/workaround.hpp</label>
+      </node>
+      <node id="28">
+        <label>boost/preprocessor/arithmetic/sub.hpp</label>
+      </node>
+      <node id="18">
+        <label>boost/preprocessor/cat.hpp</label>
+      </node>
+      <node id="27">
+        <label>boost/preprocessor/comparison/equal.hpp</label>
+      </node>
+      <node id="16">
+        <label>boost/preprocessor/config/config.hpp</label>
+      </node>
+      <node id="26">
+        <label>boost/preprocessor/control/if.hpp</label>
+      </node>
+      <node id="29">
+        <label>boost/preprocessor/punctuation/comma.hpp</label>
+      </node>
+      <node id="30">
+        <label>boost/preprocessor/punctuation/paren.hpp</label>
+      </node>
+      <node id="24">
+        <label>boost/preprocessor/seq/size.hpp</label>
+      </node>
+      <node id="25">
+        <label>boost/preprocessor/tuple/elem.hpp</label>
+      </node>
+      <node id="15">
+        <label>boost/version.hpp</label>
+      </node>
+      <node id="41">
+        <label>cassert</label>
+      </node>
+      <node id="53">
+        <label>cmath</label>
+      </node>
+      <node id="9">
+        <label>complex</label>
+      </node>
+      <node id="8">
+        <label>cstring</label>
+      </node>
+      <node id="46">
+        <label>deque</label>
+      </node>
+      <node id="33">
+        <label>exception</label>
+      </node>
+      <node id="45">
+        <label>forward_list</label>
+      </node>
+      <node id="39">
+        <label>fstream</label>
+      </node>
+      <node id="38">
+        <label>iostream</label>
+      </node>
+      <node id="52">
+        <label>limits</label>
+      </node>
+      <node id="44">
+        <label>list</label>
+      </node>
+      <node id="4">
+        <label>map</label>
+      </node>
+      <node id="10">
+        <label>memory</label>
+      </node>
+      <node id="7">
+        <label>omp.h</label>
+      </node>
+      <node id="32">
+        <label>set</label>
+      </node>
+      <node id="6">
+        <label>sstream</label>
+      </node>
+      <node id="5">
+        <label>string</label>
+      </node>
+      <node id="40">
+        <label>type_traits</label>
+      </node>
+      <node id="13">
+        <label>unistd.h</label>
+      </node>
+      <node id="42">
+        <label>unordered_map</label>
+      </node>
+      <node id="43">
+        <label>unordered_set</label>
+      </node>
+      <node id="35">
+        <label>utility</label>
+      </node>
+      <node id="34">
+        <label>vector</label>
+      </node>
+      <node id="50">
+        <label>yaml-cpp/yaml.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="6">
+        <label>container_factory.hpp</label>
+        <link refid="container__factory_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>depresolver.hpp</label>
+        <link refid="depresolver_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>gambit.hpp</label>
+        <link refid="gambit_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>likelihood_container.hpp</label>
+        <link refid="likelihood__container_8hpp"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>modelgraph.hpp</label>
+        <link refid="modelgraph_8hpp"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>observable.hpp</label>
+        <link refid="observable_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>yaml_parser.hpp</label>
+        <link refid="yaml__parser_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>container_factory.cpp</label>
+        <link refid="container__factory_8cpp"/>
+      </node>
+      <node id="2">
+        <label>depresolver.cpp</label>
+        <link refid="depresolver_8cpp"/>
+      </node>
+      <node id="13">
+        <label>diagnostics.cpp</label>
+        <link refid="diagnostics_8cpp"/>
+      </node>
+      <node id="10">
+        <label>gambit.cpp</label>
+        <link refid="gambit_8cpp"/>
+      </node>
+      <node id="11">
+        <label>likelihood_container.cpp</label>
+        <link refid="likelihood__container_8cpp"/>
+      </node>
+      <node id="14">
+        <label>modelgraph.cpp</label>
+        <link refid="modelgraph_8cpp"/>
+      </node>
+      <node id="3">
+        <label>observable.cpp</label>
+        <link refid="observable_8cpp"/>
+      </node>
+      <node id="15">
+        <label>yaml_parser.cpp</label>
+        <link refid="yaml__parser_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structGambit_1_1DRes_1_1Observable" prot="public">Gambit::DRes::Observable</innerclass>
+    <innernamespace refid="namespaceGambit">Gambit</innernamespace>
+    <innernamespace refid="namespaceGambit_1_1DRes">Gambit::DRes</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Observable class for holding ObsLike entries.</para>
+<para><hruler/>
+</para>
+<para>Authors (add name and date if you modify):</para>
+<para><simplesect kind="author"><para>Pat Scott (<ulink url="mailto:patrickcolinscott@gmail.com">patrickcolinscott@gmail.com</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2022 Nov</para>
+</simplesect>
+<hruler/>
+ </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/><sp/><sp/>GAMBIT:<sp/>Global<sp/>and<sp/>Modular<sp/>BSM<sp/>Inference<sp/>Tool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>*********************************************</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">///<sp/><sp/>\file</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">///<sp/><sp/>Observable<sp/>class<sp/>for<sp/>holding<sp/>ObsLike<sp/>entries.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">///<sp/><sp/>Authors<sp/>(add<sp/>name<sp/>and<sp/>date<sp/>if<sp/>you<sp/>modify):</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">///<sp/><sp/>\author<sp/>Pat<sp/>Scott</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">///<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(patrickcolinscott@gmail.com)</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">///<sp/><sp/>\date<sp/>2022<sp/>Nov</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="rule_8hpp" kindref="compound">gambit/Core/rule.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;yaml-cpp/yaml.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceGambit" kindref="compound">Gambit</ref></highlight></codeline>
+<codeline lineno="25"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="27"><highlight class="comment"><sp/><sp/>///<sp/>Forward<sp/>declaration<sp/>of<sp/>functor<sp/>class</highlight></codeline>
+<codeline lineno="28"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">functor;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">DRes</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="structGambit_1_1DRes_1_1Observable" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structGambit_1_1DRes_1_1Observable" kindref="compound">Observable</ref></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>The<sp/>original<sp/>YAML<sp/>(if<sp/>any)<sp/>from<sp/>which<sp/>this<sp/>observable<sp/>was<sp/>derived.</highlight></codeline>
+<codeline lineno="36" refid="structGambit_1_1DRes_1_1Observable_1a7f8d9df6de480b694b5c8b7fdd78a804" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>YAML::Node<sp/><ref refid="structGambit_1_1DRes_1_1Observable_1a7f8d9df6de480b694b5c8b7fdd78a804" kindref="member">yaml</ref>;</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Designated<sp/>purpose<sp/>of<sp/>the<sp/>observable<sp/>(LogLike,<sp/>etc).</highlight></codeline>
+<codeline lineno="39" refid="structGambit_1_1DRes_1_1Observable_1a767c56e6f3560637b84eb76322fb1030" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="structGambit_1_1DRes_1_1Observable_1a767c56e6f3560637b84eb76322fb1030" kindref="member">purpose</ref>;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Capability<sp/>field<sp/>targeted<sp/>by<sp/>the<sp/>ObsLike<sp/>entry.</highlight></codeline>
+<codeline lineno="42" refid="structGambit_1_1DRes_1_1Observable_1aa69434bf3b2705472d03e78e5c793ec1" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="structGambit_1_1DRes_1_1Observable_1aa69434bf3b2705472d03e78e5c793ec1" kindref="member">capability</ref>;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="44"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Type<sp/>field<sp/>targeted<sp/>by<sp/>the<sp/>ObsLike<sp/>entry.</highlight></codeline>
+<codeline lineno="45" refid="structGambit_1_1DRes_1_1Observable_1afa3765b76984e255090c99a2d6c6a726" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="structGambit_1_1DRes_1_1Observable_1afa3765b76984e255090c99a2d6c6a726" kindref="member">type</ref>;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="47"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Function<sp/>field<sp/>targeted<sp/>by<sp/>the<sp/>ObsLike<sp/>entry.</highlight></codeline>
+<codeline lineno="48" refid="structGambit_1_1DRes_1_1Observable_1afb3895cc6d1ded6bfc2c7b280de0c694" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="structGambit_1_1DRes_1_1Observable_1afb3895cc6d1ded6bfc2c7b280de0c694" kindref="member">function</ref>;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Module<sp/>targeted<sp/>by<sp/>the<sp/>ObsLike<sp/>entry.</highlight></codeline>
+<codeline lineno="51" refid="structGambit_1_1DRes_1_1Observable_1a47d9c7261cd40c8546b4a607ecb24ca0" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="structGambit_1_1DRes_1_1Observable_1a47d9c7261cd40c8546b4a607ecb24ca0" kindref="member">module</ref>;</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="53"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Subjugate<sp/>dependency<sp/>rules<sp/>to<sp/>be<sp/>assigned<sp/>to<sp/>the<sp/>observable.</highlight></codeline>
+<codeline lineno="54" refid="structGambit_1_1DRes_1_1Observable_1aab446bef964cc637aa0df818f27f8038" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;ModuleRule&gt;<sp/><ref refid="structGambit_1_1DRes_1_1Observable_1aab446bef964cc637aa0df818f27f8038" kindref="member">dependencies</ref>;</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="56"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Subjugate<sp/>backend<sp/>rules<sp/>to<sp/>be<sp/>assigned<sp/>to<sp/>the<sp/>observable.</highlight></codeline>
+<codeline lineno="57" refid="structGambit_1_1DRes_1_1Observable_1a956d822d9ea4a2fa76278c056b83776d" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;BackendRule&gt;<sp/><ref refid="structGambit_1_1DRes_1_1Observable_1a956d822d9ea4a2fa76278c056b83776d" kindref="member">backends</ref>;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="59"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Function<sp/>chain<sp/>to<sp/>be<sp/>assigned<sp/>to<sp/>the<sp/>observable.</highlight></codeline>
+<codeline lineno="60" refid="structGambit_1_1DRes_1_1Observable_1a9c1a967b8529c2e9808e4f663730783c" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;std::string&gt;<sp/><ref refid="structGambit_1_1DRes_1_1Observable_1a9c1a967b8529c2e9808e4f663730783c" kindref="member">functionChain</ref>;</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="62"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Sub-capabilities<sp/>to<sp/>be<sp/>assigned<sp/>to<sp/>the<sp/>observable.</highlight></codeline>
+<codeline lineno="63" refid="structGambit_1_1DRes_1_1Observable_1a4ac458a408fb33ff0cb3fdcda9c83998" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>YAML::Node<sp/><ref refid="structGambit_1_1DRes_1_1Observable_1a4ac458a408fb33ff0cb3fdcda9c83998" kindref="member">subcaps</ref>;</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="65"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Instruction<sp/>to<sp/>printer<sp/>as<sp/>to<sp/>whether<sp/>to<sp/>write<sp/>result<sp/>to<sp/>disk.</highlight></codeline>
+<codeline lineno="66" refid="structGambit_1_1DRes_1_1Observable_1a8061fb2df447fde3d5a478ba04ccafb4" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1DRes_1_1Observable_1a8061fb2df447fde3d5a478ba04ccafb4" kindref="member">printme</ref>;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="68"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Whether<sp/>or<sp/>not<sp/>to<sp/>log<sp/>matches<sp/>to<sp/>the<sp/>observable<sp/>with<sp/>functors.</highlight></codeline>
+<codeline lineno="69" refid="structGambit_1_1DRes_1_1Observable_1ae3918ceb671356bcd984a7db3e79e9d8" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1DRes_1_1Observable_1ae3918ceb671356bcd984a7db3e79e9d8" kindref="member">log_matches</ref>;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="71"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Whether<sp/>to<sp/>return<sp/>multiple<sp/>functor<sp/>matches.</highlight></codeline>
+<codeline lineno="72" refid="structGambit_1_1DRes_1_1Observable_1a0786ff60312f0aa251f085e2eff317c2" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1DRes_1_1Observable_1a0786ff60312f0aa251f085e2eff317c2" kindref="member">include_all</ref>;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="74"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>True<sp/>if<sp/>and<sp/>only<sp/>if<sp/>the<sp/>passed<sp/>functor<sp/>matches<sp/>all<sp/>matchable<sp/>non-empty<sp/>fields<sp/>of<sp/>the<sp/>observable<sp/>(i.e.<sp/>everything<sp/>except<sp/>purpose,<sp/>dependencies,<sp/>backend_reqs,<sp/>functionChain<sp/>and<sp/>subcaps).</highlight></codeline>
+<codeline lineno="75"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1DRes_1_1Observable_1acbb50813900928ea8db8adca2b48267d" kindref="member">matches</ref>(<ref refid="classGambit_1_1functor" kindref="compound">functor</ref>*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1Utils_1_1type__equivalency" kindref="compound">Utils::type_equivalency</ref>&amp;)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="77"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Whether<sp/>the<sp/>set<sp/>of<sp/>dependency<sp/>rules<sp/>subjugate<sp/>to<sp/>this<sp/>observable<sp/>allow<sp/>a<sp/>given<sp/>module<sp/>functor<sp/>or<sp/>not.<sp/></highlight></codeline>
+<codeline lineno="78"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Must<sp/>be<sp/>true<sp/>for<sp/>the<sp/>passed<sp/>module<sp/>functor<sp/>to<sp/>be<sp/>used<sp/>to<sp/>resolve<sp/>a<sp/>dependency<sp/>of<sp/>the<sp/>module<sp/>functor<sp/>that<sp/>provides<sp/>this<sp/>observable<sp/>(the<sp/>dependee).</highlight></codeline>
+<codeline lineno="79"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Does<sp/>not<sp/>test<sp/>if<sp/>the<sp/>dependee<sp/>actually<sp/>matches<sp/>the<sp/>observable,<sp/>so<sp/>should<sp/>typically<sp/>only<sp/>be<sp/>used<sp/>after<sp/>confirming<sp/>this<sp/>first.</highlight></codeline>
+<codeline lineno="80"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1DRes_1_1Observable_1a949905d9e8f502703179b902e06eb747" kindref="member">dependencies_allow</ref>(<ref refid="classGambit_1_1functor" kindref="compound">functor</ref>*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1Utils_1_1type__equivalency" kindref="compound">Utils::type_equivalency</ref>&amp;,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ignore_if_weak<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="82"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Whether<sp/>the<sp/>functionChain<sp/>of<sp/>this<sp/>observable<sp/>allows<sp/>a<sp/>given<sp/>module<sp/>functor<sp/>to<sp/>be<sp/>used<sp/>to<sp/>resolve<sp/>the<sp/>dependency<sp/>of<sp/>another.<sp/></highlight></codeline>
+<codeline lineno="83"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Does<sp/>not<sp/>test<sp/>if<sp/>the<sp/>dependent<sp/>functor<sp/>actually<sp/>matches<sp/>the<sp/>observable,<sp/>so<sp/>should<sp/>typically<sp/>only<sp/>be<sp/>used<sp/>after<sp/>confirming<sp/>this<sp/>first.</highlight></codeline>
+<codeline lineno="84"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1DRes_1_1Observable_1a415b234bca68b281625755170ff3232d" kindref="member">function_chain_allows</ref>(<ref refid="classGambit_1_1functor" kindref="compound">functor</ref>*,<sp/><ref refid="classGambit_1_1functor" kindref="compound">functor</ref>*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1Utils_1_1type__equivalency" kindref="compound">Utils::type_equivalency</ref>&amp;)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="86"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Whether<sp/>the<sp/>set<sp/>of<sp/>backend<sp/>rules<sp/>subjugate<sp/>to<sp/>this<sp/>observable<sp/>allow<sp/>a<sp/>given<sp/>backend<sp/>functor<sp/>or<sp/>not.<sp/></highlight></codeline>
+<codeline lineno="87"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Must<sp/>be<sp/>true<sp/>for<sp/>the<sp/>passed<sp/>backend<sp/>functor<sp/>to<sp/>be<sp/>used<sp/>to<sp/>resolve<sp/>a<sp/>backend<sp/>requirement<sp/>of<sp/>the<sp/>module<sp/>functor<sp/>that<sp/>matches<sp/>this<sp/>observable<sp/>(the<sp/>requiree).</highlight></codeline>
+<codeline lineno="88"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Does<sp/>not<sp/>test<sp/>if<sp/>the<sp/>requiree<sp/>actually<sp/>matches<sp/>the<sp/>observable,<sp/>so<sp/>should<sp/>typically<sp/>only<sp/>be<sp/>used<sp/>after<sp/>confirming<sp/>this<sp/>first.</highlight></codeline>
+<codeline lineno="89"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1DRes_1_1Observable_1a66800c2b730ee60d892216b75cee6885" kindref="member">backend_reqs_allow</ref>(<ref refid="classGambit_1_1functor" kindref="compound">functor</ref>*,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1Utils_1_1type__equivalency" kindref="compound">Utils::type_equivalency</ref>&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ignore_if_weak<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="91"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///Default<sp/>constructor.<sp/>Sets<sp/>all<sp/>fields<sp/>empty.</highlight></codeline>
+<codeline lineno="92" refid="structGambit_1_1DRes_1_1Observable_1a0456652e2ce320ea2548a4e4f7f02bd5" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structGambit_1_1DRes_1_1Observable_1a0456652e2ce320ea2548a4e4f7f02bd5" kindref="member">Observable</ref>():</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structGambit_1_1DRes_1_1Observable_1a767c56e6f3560637b84eb76322fb1030" kindref="member">purpose</ref>(),</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structGambit_1_1DRes_1_1Observable_1aa69434bf3b2705472d03e78e5c793ec1" kindref="member">capability</ref>(),</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structGambit_1_1DRes_1_1Observable_1afa3765b76984e255090c99a2d6c6a726" kindref="member">type</ref>(),</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structGambit_1_1DRes_1_1Observable_1afb3895cc6d1ded6bfc2c7b280de0c694" kindref="member">function</ref>(),</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structGambit_1_1DRes_1_1Observable_1a47d9c7261cd40c8546b4a607ecb24ca0" kindref="member">module</ref>(),</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structGambit_1_1DRes_1_1Observable_1aab446bef964cc637aa0df818f27f8038" kindref="member">dependencies</ref>(),</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structGambit_1_1DRes_1_1Observable_1a956d822d9ea4a2fa76278c056b83776d" kindref="member">backends</ref>(),</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structGambit_1_1DRes_1_1Observable_1a9c1a967b8529c2e9808e4f663730783c" kindref="member">functionChain</ref>(),</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structGambit_1_1DRes_1_1Observable_1a4ac458a408fb33ff0cb3fdcda9c83998" kindref="member">subcaps</ref>(),</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structGambit_1_1DRes_1_1Observable_1a8061fb2df447fde3d5a478ba04ccafb4" kindref="member">printme</ref>(true),</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structGambit_1_1DRes_1_1Observable_1ae3918ceb671356bcd984a7db3e79e9d8" kindref="member">log_matches</ref>(true),</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structGambit_1_1DRes_1_1Observable_1a0786ff60312f0aa251f085e2eff317c2" kindref="member">include_all</ref>(false)</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{}</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Core/include/gambit/Core/observable.hpp"/>
+  </compounddef>
+</doxygen>

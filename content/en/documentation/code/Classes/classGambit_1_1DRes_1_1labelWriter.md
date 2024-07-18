@@ -1,7 +1,6 @@
 ---
 title: "class Gambit::DRes::labelWriter"
-
-description: "[No description available]"
+description: "Graphviz output for individual vertices/nodes/module functions. "
 
 ---
 
@@ -9,13 +8,13 @@ description: "[No description available]"
 
 
 
-[No description available]
+Graphviz output for individual vertices/nodes/module functions. 
 
 ## Public Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[labelWriter](/documentation/code/classes/classgambit_1_1dres_1_1labelwriter/#function-labelwriter)**(const [DRes::MasterGraphType](/documentation/code/namespaces/namespacegambit_1_1dres/#typedef-mastergraphtype) * masterGraph) |
+| | **[labelWriter](/documentation/code/classes/classgambit_1_1dres_1_1labelwriter/#function-labelwriter)**(const [MasterGraphType](/documentation/code/namespaces/namespacegambit_1_1dres/#typedef-mastergraphtype) * masterGraph) |
 | void | **[operator()](/documentation/code/classes/classgambit_1_1dres_1_1labelwriter/#function-operator)**(std::ostream & out, const VertexID & v) const |
 
 ## Public Functions Documentation
@@ -24,7 +23,7 @@ description: "[No description available]"
 
 ```
 inline labelWriter(
-    const DRes::MasterGraphType * masterGraph
+    const MasterGraphType * masterGraph
 )
 ```
 
@@ -41,4 +40,4 @@ inline void operator()(
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:04 +0000
+Updated on 2024-07-18 at 13:53:31 +0000

@@ -37,6 +37,9 @@ description: "[No description available]"
 | **[src/DarkBit/src/ScalarSingletDM.cpp](/documentation/code/files/darkbit_2src_2scalarsingletdm_8cpp/#file-src-darkbit-src-scalarsingletdm-cpp)**  |
 | **[src/SimpleHist.cpp](/documentation/code/files/simplehist_8cpp/#file-src-simplehist-cpp)**  |
 | **[src/SimpleLikelihoods.cpp](/documentation/code/files/simplelikelihoods_8cpp/#file-src-simplelikelihoods-cpp)**  |
+| **[src/SubGeVDM_fermion.cpp](/documentation/code/files/subgevdm__fermion_8cpp/#file-src-subgevdm-fermion-cpp)**  |
+| **[src/SubGeVDM_scalar.cpp](/documentation/code/files/subgevdm__scalar_8cpp/#file-src-subgevdm-scalar-cpp)**  |
+| **[src/SubGeVDM_SelfInteractions.cpp](/documentation/code/files/subgevdm__selfinteractions_8cpp/#file-src-subgevdm-selfinteractions-cpp)**  |
 | **[src/SunNeutrinos.cpp](/documentation/code/files/sunneutrinos_8cpp/#file-src-sunneutrinos-cpp)**  |
 | **[src/DarkBit/src/SuperRenormHP.cpp](/documentation/code/files/darkbit_2src_2superrenormhp_8cpp/#file-src-darkbit-src-superrenormhp-cpp)**  |
 | **[src/DarkBit/src/VectorSingletDM.cpp](/documentation/code/files/darkbit_2src_2vectorsingletdm_8cpp/#file-src-darkbit-src-vectorsingletdm-cpp)**  |
@@ -50,4 +53,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:06 +0000
+Updated on 2024-07-18 at 13:53:34 +0000

@@ -93,6 +93,7 @@ namespace Gambit
         /// Extra argument returns true if new ID was assigned
         EXPORT_SYMBOLS int get_aux_param_id(const std::string &, bool& is_new);
     }
+
 }
 
 #endif
@@ -101,4 +102,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:06 +0000
+Updated on 2024-07-18 at 13:53:33 +0000

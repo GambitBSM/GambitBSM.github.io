@@ -26,9 +26,17 @@ description: "[No description available]"
 ## Detailed Description
 
 
-**Author**: Patrick Stoecker ([stoecker@physik.rwth-aachen.de](mailto:stoecker@physik.rwth-aachen.de)) 
+**Author**: 
 
-**Date**: 2021 Mar
+  * Patrick Stoecker ([stoecker@physik.rwth-aachen.de](mailto:stoecker@physik.rwth-aachen.de)) 
+  * Torsten Bringmann ([torsten.bringmann@fys.uio.no](mailto:torsten.bringmann@fys.uio.no)) 
+
+
+**Date**: 
+
+  * 2021 Mar
+  * 2023 Oct
+
 
 Implementation of energy injection routines.
 
@@ -87,6 +95,10 @@ Authors (add name and date if you modify):
 ///  \author Patrick Stoecker
 ///          (stoecker@physik.rwth-aachen.de)
 ///  \date 2021 Mar
+///
+///  \author Torsten Bringmann
+///          (torsten.bringmann@fys.uio.no)
+///  \date 2023 Oct
 ///
 ///  *********************************************
 
@@ -181,6 +193,7 @@ namespace Gambit
 
         positronElectronYield = positronElectronYield / totalRate;
         gammaYield = gammaYield / totalRate;
+        
       }
 
       // Define the underlying energy axes (kinetic energies)
@@ -366,4 +379,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:07 +0000
+Updated on 2024-07-18 at 13:53:34 +0000

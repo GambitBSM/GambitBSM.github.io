@@ -42,6 +42,10 @@ Pat Scott ([patscott@physics.mcgill.ca](mailto:patscott@physics.mcgill.ca))
 
 2014 Mar
 
+Patrick Stoecker ([stoecker@physik.rwth-aachen.de](mailto:stoecker@physik.rwth-aachen.de)) 
+
+2023 Nov
+
 
 
 ------------------
@@ -78,6 +82,10 @@ Pat Scott ([patscott@physics.mcgill.ca](mailto:patscott@physics.mcgill.ca))
 ///          (patscott@physics.mcgill.ca)
 ///  \date 2013 Aug, Sep
 ///  \date 2014 Mar
+///
+///  \author Patrick Stoecker
+///          (stoecker@physik.rwth-aachen.de)
+///  \date 2023 Nov
 ///
 ///  *********************************************
 
@@ -211,7 +219,7 @@ namespace Gambit
 
     void ModelHierarchy::labelWriter::operator()(std::ostream& out, const ModelVertexID& v) const
     {
-      if ( (*myGraph)[v]->status() == 2 )
+      if ( (*myGraph)[v]->isActive() )
       {
         out << "[fillcolor=\"red\", style=\"rounded,filled\", shape=box,";
         out << "label=< ";
@@ -235,4 +243,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:07 +0000
+Updated on 2024-07-18 at 13:53:34 +0000

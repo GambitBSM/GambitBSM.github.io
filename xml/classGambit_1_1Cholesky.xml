@@ -107,18 +107,26 @@
         </inbodydescription>
         <location file="ScannerBit/include/gambit/ScannerBit/cholesky.hpp" line="91" column="21" bodyfile="ScannerBit/include/gambit/ScannerBit/cholesky.hpp" bodystart="91" bodyend="104"/>
       </memberdef>
-      <memberdef kind="function" id="classGambit_1_1Cholesky_1acde706f3570e5f8b4e9d35b1011530be" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classGambit_1_1Cholesky_1a29cc6c974b60052cdcce862ce5c61ce4" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename VEC1</type>
+          </param>
+          <param>
+            <type>typename VEC2</type>
+          </param>
+        </templateparamlist>
         <type>double</type>
         <definition>double Gambit::Cholesky::Square</definition>
-        <argsstring>(const std::vector&lt; double &gt; &amp;y, const std::vector&lt; double &gt; &amp;y0)</argsstring>
+        <argsstring>(VEC1 &amp;&amp;y, VEC2 &amp;&amp;y0)</argsstring>
         <name>Square</name>
         <qualifiedname>Gambit::Cholesky::Square</qualifiedname>
         <param>
-          <type>const std::vector&lt; double &gt; &amp;</type>
+          <type>VEC1 &amp;&amp;</type>
           <declname>y</declname>
         </param>
         <param>
-          <type>const std::vector&lt; double &gt; &amp;</type>
+          <type>VEC2 &amp;&amp;</type>
           <declname>y0</declname>
         </param>
         <briefdescription>
@@ -127,7 +135,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ScannerBit/include/gambit/ScannerBit/cholesky.hpp" line="106" column="16" bodyfile="ScannerBit/include/gambit/ScannerBit/cholesky.hpp" bodystart="106" bodyend="125"/>
+        <location file="ScannerBit/include/gambit/ScannerBit/cholesky.hpp" line="107" column="16" bodyfile="ScannerBit/include/gambit/ScannerBit/cholesky.hpp" bodystart="107" bodyend="126"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1Cholesky_1a52eeafdf0a553e1769dcf68bf917eff3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>double</type>
@@ -141,14 +149,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ScannerBit/include/gambit/ScannerBit/cholesky.hpp" line="127" column="16" bodyfile="ScannerBit/include/gambit/ScannerBit/cholesky.hpp" bodystart="127" bodyend="134"/>
+        <location file="ScannerBit/include/gambit/ScannerBit/cholesky.hpp" line="128" column="16" bodyfile="ScannerBit/include/gambit/ScannerBit/cholesky.hpp" bodystart="128" bodyend="135"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="ScannerBit/include/gambit/ScannerBit/cholesky.hpp" line="26" column="5" bodyfile="ScannerBit/include/gambit/ScannerBit/cholesky.hpp" bodystart="27" bodyend="135"/>
+    <location file="ScannerBit/include/gambit/ScannerBit/cholesky.hpp" line="26" column="5" bodyfile="ScannerBit/include/gambit/ScannerBit/cholesky.hpp" bodystart="27" bodyend="136"/>
     <listofallmembers>
       <member refid="classGambit_1_1Cholesky_1a714f86a09c193a6ff69a85752efdadab" prot="public" virt="non-virtual"><scope>Gambit::Cholesky</scope><name>Cholesky</name></member>
       <member refid="classGambit_1_1Cholesky_1af8138eeffd87cbd3e649ddd2600e92ed" prot="public" virt="non-virtual"><scope>Gambit::Cholesky</scope><name>Cholesky</name></member>
@@ -157,7 +165,7 @@
       <member refid="classGambit_1_1Cholesky_1ac342423ea3a6b40bc0c7f0502636ca47" prot="public" virt="non-virtual"><scope>Gambit::Cholesky</scope><name>ElMult</name></member>
       <member refid="classGambit_1_1Cholesky_1a34ee14dafc2e7747db9d29858cd3f8ad" prot="public" virt="non-virtual"><scope>Gambit::Cholesky</scope><name>EnterMat</name></member>
       <member refid="classGambit_1_1Cholesky_1a7a80ad1086ce8feb0e794b41e4a741fa" prot="public" virt="non-virtual"><scope>Gambit::Cholesky</scope><name>invElMult</name></member>
-      <member refid="classGambit_1_1Cholesky_1acde706f3570e5f8b4e9d35b1011530be" prot="public" virt="non-virtual"><scope>Gambit::Cholesky</scope><name>Square</name></member>
+      <member refid="classGambit_1_1Cholesky_1a29cc6c974b60052cdcce862ce5c61ce4" prot="public" virt="non-virtual"><scope>Gambit::Cholesky</scope><name>Square</name></member>
     </listofallmembers>
   </compounddef>
 </doxygen>

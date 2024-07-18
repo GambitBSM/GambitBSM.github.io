@@ -555,12 +555,18 @@
       <node id="2">
         <label>Gambit::ColliderBit::BaseCollider</label>
         <link refid="classGambit_1_1ColliderBit_1_1BaseCollider"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>jetcollection_taus</edgelabel>
+        </childnode>
       </node>
       <node id="1">
         <label>Gambit::ColliderBit::Py8Collider&lt; PythiaT, EventT, hepmc_writerT &gt;</label>
         <link refid="classGambit_1_1ColliderBit_1_1Py8Collider"/>
         <childnode refid="2" relation="public-inheritance">
         </childnode>
+      </node>
+      <node id="3">
+        <label>string</label>
       </node>
     </collaborationgraph>
     <location file="ColliderBit/include/gambit/ColliderBit/colliders/Pythia8/Py8Collider.hpp" line="36" column="5" bodyfile="ColliderBit/include/gambit/ColliderBit/colliders/Pythia8/Py8Collider.hpp" bodystart="37" bodyend="241"/>
@@ -570,7 +576,7 @@
       <member refid="classGambit_1_1ColliderBit_1_1Py8Collider_1aca77d2bc2d4f26856eb618807018f5bc" prot="protected" virt="non-virtual"><scope>Gambit::ColliderBit::Py8Collider</scope><name>_pythiaSettings</name></member>
       <member refid="classGambit_1_1ColliderBit_1_1Py8Collider_1a6ff3d6eda58c8236d818e0336802414b" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Py8Collider</scope><name>addToSettings</name></member>
       <member refid="classGambit_1_1ColliderBit_1_1Py8Collider_1aff94f87efa8800793a1bb3fc11834801" prot="public" virt="virtual"><scope>Gambit::ColliderBit::Py8Collider</scope><name>all_active_process_codes</name></member>
-      <member refid="classGambit_1_1ColliderBit_1_1BaseCollider_1a5081cf86ba1a4fd8ddd9a02b07e6c66c" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Py8Collider</scope><name>antiktR</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1BaseCollider_1af0aa7801b87ff42e59aa309bf099cd18" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Py8Collider</scope><name>all_jet_collection_settings</name></member>
       <member refid="classGambit_1_1ColliderBit_1_1Py8Collider_1a89df5232d4b46999a0899e7cdfb231e4" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Py8Collider</scope><name>banner</name></member>
       <member refid="classGambit_1_1ColliderBit_1_1BaseCollider_1a343ec91eb872b66b16f1dd92ae56a270" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Py8Collider</scope><name>BaseCollider</name></member>
       <member refid="classGambit_1_1ColliderBit_1_1Py8Collider_1ac02bb06d51ba26df044bd535e6429e2b" prot="public" virt="virtual"><scope>Gambit::ColliderBit::Py8Collider</scope><name>clear</name></member>
@@ -580,6 +586,7 @@
       <member refid="classGambit_1_1ColliderBit_1_1Py8Collider_1add0ca6d3cdbf992ef680c55746fa6f5d" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Py8Collider</scope><name>init</name></member>
       <member refid="classGambit_1_1ColliderBit_1_1Py8Collider_1a7a85a588fc16aaee649d6feaf584b329" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Py8Collider</scope><name>init_user_model</name></member>
       <member refid="classGambit_1_1ColliderBit_1_1Py8Collider_1a5a528c25a241352ad3cc5a56ce9ebdf7" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Py8Collider</scope><name>init_user_model</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1BaseCollider_1a6da1ad83575ca1c1217b24f0e1f08e55" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Py8Collider</scope><name>jetcollection_taus</name></member>
       <member refid="classGambit_1_1ColliderBit_1_1Py8Collider_1a6526db446fe9d9211b171377da856d40" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Py8Collider</scope><name>nextEvent</name></member>
       <member refid="classGambit_1_1ColliderBit_1_1BaseCollider_1a9425492cd832b3ffcbcf03aeaf1b6755" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Py8Collider</scope><name>partonOnly</name></member>
       <member refid="classGambit_1_1ColliderBit_1_1Py8Collider_1af0a0e267ea5fced895a34e729609c8ef" prot="public" virt="virtual"><scope>Gambit::ColliderBit::Py8Collider</scope><name>process_code</name></member>

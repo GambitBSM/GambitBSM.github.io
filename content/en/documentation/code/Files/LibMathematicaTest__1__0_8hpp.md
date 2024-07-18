@@ -46,7 +46,7 @@ Authors (add name and sate if you modify):
 ### define BACKENDNAME
 
 ```
-#define BACKENDNAME libMathematicaTest
+#define BACKENDNAME LibMathematicaTest
 ```
 
 
@@ -96,7 +96,7 @@ Authors (add name and sate if you modify):
 ///
 ///  *********************************************
 
-#define BACKENDNAME libMathematicaTest
+#define BACKENDNAME LibMathematicaTest
 #define BACKENDLANG MATHEMATICA
 #define VERSION 1.0
 #define SAFE_VERSION 1_0
@@ -131,4 +131,4 @@ BE_CONV_FUNCTION(run_Mathematica_Test, double, (const int&, const int&), "MathTe
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:08 +0000
+Updated on 2024-07-18 at 13:53:35 +0000

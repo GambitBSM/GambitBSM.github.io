@@ -57,7 +57,7 @@ Authors (add name and date if you modify):
 #ifdef SUPPRESS_LIBRARY_WARNINGS
 
   // GCC:
-  // clang also depfines __GNUC__ so make sure it is only GCC
+  // clang also defines __GNUC__ so make sure it is only GCC
   #if defined(__GNUC__) && !defined(__clang__)
     // Save diagnostic state
     #pragma GCC diagnostic push 
@@ -65,6 +65,7 @@ Authors (add name and date if you modify):
     #pragma GCC diagnostic ignored "-Wpragmas"
     // Turn off some warnings
     #pragma GCC diagnostic ignored "-Wdeprecated-copy"
+    #pragma GCC diagnostic ignored "-Wunused-parameter"
   #endif
 
   // Clang:
@@ -76,6 +77,7 @@ Authors (add name and date if you modify):
     #pragma clang diagnostic ignored "-Wpragmas"
     // Turn off some warnings
     #pragma clang diagnostic ignored "-Wdeprecated-copy"
+    #pragma clang diagnostic ignored "-Wunused-parameter"
   #endif
 
 #endif
@@ -84,4 +86,4 @@ Authors (add name and date if you modify):
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:05 +0000
+Updated on 2024-07-18 at 13:53:32 +0000

@@ -88,6 +88,7 @@ Authors (add name and date if you modify):
 ///  *********************************************
 
 #include "gambit/ColliderBit/Utils.hpp"
+#include "gambit/ColliderBit/ColliderBit_eventloop.hpp"
 #include "gambit/Utils/threadsafe_rng.hpp"
 #include <iostream>
 using namespace std;
@@ -97,6 +98,47 @@ namespace Gambit
   namespace ColliderBit
   {
 
+
+    /// Storage of different FastJet methods
+    FJNS::JetAlgorithm FJalgorithm_map(str algorithm)
+    {
+      FJNS::JetAlgorithm result;
+      if (algorithm == "antikt") {result = FJNS::antikt_algorithm;}
+      else if (algorithm == "cambridge") {result = FJNS::cambridge_algorithm;}
+      else if (algorithm == "kt") {result = FJNS::kt_algorithm;}
+      else if (algorithm == "genkt") {result = FJNS::genkt_algorithm;}
+      else if (algorithm == "cambridge_for_passive") {result = FJNS::cambridge_for_passive_algorithm;}
+      else
+      {
+        ColliderBit_error().raise(LOCAL_INFO, "Could not find jet algorithm in list available. Please add the missing option to the FJalgorithm_map function in ColliderBit/src/Utils.cpp.");
+      }
+      return result;
+    }
+
+    FJNS::Strategy FJstrategy_map(str strategy)
+    {
+      FJNS::Strategy result;
+      if (strategy == "Best") {result = FJNS::Best;}
+      else if (strategy == "NlnN") {result = FJNS::NlnN;}
+      else
+      {
+        ColliderBit_error().raise(LOCAL_INFO, "Could not find jet strategy in list available. Please add the missing option to the FJstrategy_map function in ColliderBit/src/Utils.cpp.");
+      }
+      return result;
+    }
+
+    FJNS::RecombinationScheme FJRecomScheme_map(str reco_scheme)
+    {
+      FJNS::RecombinationScheme result;
+      if (reco_scheme == "E_scheme") {result = FJNS::E_scheme;}
+      else if (reco_scheme == "pt_scheme") {result = FJNS::pt_scheme;}
+      else if (reco_scheme == "pt2_scheme") {result = FJNS::pt2_scheme;}
+      else
+      {
+        ColliderBit_error().raise(LOCAL_INFO, "Could not find jet recombination scheme in list available. Please add the missing option to the FJRecomScheme_map function in ColliderBit/src/Utils.cpp.");
+      }
+      return result;
+    }
 
     bool random_bool(double eff)
     {
@@ -250,4 +292,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:08 +0000
+Updated on 2024-07-18 at 13:53:35 +0000

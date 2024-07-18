@@ -13,6 +13,7 @@
     <includedby refid="CosmoEnergyInjection_8cpp" local="yes">CosmoEnergyInjection.cpp</includedby>
     <includedby refid="CosmoModels_8cpp" local="yes">CosmoModels.cpp</includedby>
     <includedby refid="DarkAges__1__2__0_8cpp" local="yes">DarkAges_1_2_0.cpp</includedby>
+    <includedby refid="DarkBit_8cpp" local="yes">DarkBit.cpp</includedby>
     <includedby refid="DarkBit__types_8cpp" local="yes">DarkBit_types.cpp</includedby>
     <includedby refid="DecayBit_8cpp" local="yes">DecayBit.cpp</includedby>
     <includedby refid="MSSMatMGUT__mA_8cpp" local="yes">MSSMatMGUT_mA.cpp</includedby>
@@ -24,7 +25,9 @@
     <includedby refid="MSSMatQ__mA__mG_8cpp" local="yes">MSSMatQ_mA_mG.cpp</includedby>
     <includedby refid="MSSMatQ__mG_8cpp" local="yes">MSSMatQ_mG.cpp</includedby>
     <includedby refid="RightHandedNeutrinos_8cpp" local="yes">RightHandedNeutrinos.cpp</includedby>
+    <includedby refid="models_2SubGeVDM_8cpp" local="yes">SubGeVDM.cpp</includedby>
     <includedby refid="WIMP__EFT_8cpp" local="yes">WIMP_EFT.cpp</includedby>
+    <includedby refid="Xray_8cpp" local="yes">Xray.cpp</includedby>
     <includedby refid="lnlike__modifiers_8cpp" local="yes">lnlike_modifiers.cpp</includedby>
     <includedby refid="nuclear__params_8cpp" local="yes">nuclear_params.cpp</includedby>
     <includedby refid="shared__types_8hpp" local="yes">shared_types.hpp</includedby>
@@ -42,38 +45,24 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="113">
+      <node id="120">
         <label>backend_macros.hpp</label>
         <link refid="backend__macros_8hpp"/>
       </node>
-      <node id="112">
+      <node id="119">
         <label>common_macros.hpp</label>
         <link refid="common__macros_8hpp"/>
-        <childnode refid="113" relation="include">
-        </childnode>
-        <childnode refid="114" relation="include">
-        </childnode>
-      </node>
-      <node id="114">
-        <label>frontend_macros.hpp</label>
-        <link refid="frontend__macros_8hpp"/>
-        <childnode refid="115" relation="include">
-        </childnode>
-        <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="116" relation="include">
-        </childnode>
-        <childnode refid="117" relation="include">
-        </childnode>
-        <childnode refid="118" relation="include">
-        </childnode>
-        <childnode refid="119" relation="include">
-        </childnode>
         <childnode refid="120" relation="include">
         </childnode>
         <childnode refid="121" relation="include">
         </childnode>
+      </node>
+      <node id="121">
+        <label>frontend_macros.hpp</label>
+        <link refid="frontend__macros_8hpp"/>
         <childnode refid="122" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
         </childnode>
         <childnode refid="123" relation="include">
         </childnode>
@@ -82,8 +71,6 @@
         <childnode refid="125" relation="include">
         </childnode>
         <childnode refid="126" relation="include">
-        </childnode>
-        <childnode refid="17" relation="include">
         </childnode>
         <childnode refid="127" relation="include">
         </childnode>
@@ -98,6 +85,8 @@
         <childnode refid="132" relation="include">
         </childnode>
         <childnode refid="133" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
         </childnode>
         <childnode refid="134" relation="include">
         </childnode>
@@ -185,8 +174,22 @@
         </childnode>
         <childnode refid="176" relation="include">
         </childnode>
+        <childnode refid="177" relation="include">
+        </childnode>
+        <childnode refid="178" relation="include">
+        </childnode>
+        <childnode refid="179" relation="include">
+        </childnode>
+        <childnode refid="180" relation="include">
+        </childnode>
+        <childnode refid="181" relation="include">
+        </childnode>
+        <childnode refid="182" relation="include">
+        </childnode>
+        <childnode refid="183" relation="include">
+        </childnode>
       </node>
-      <node id="115">
+      <node id="122">
         <label>ATLAS_FullLikes_1_0.cpp</label>
         <link refid="ATLAS__FullLikes__1__0_8cpp"/>
       </node>
@@ -194,47 +197,47 @@
         <label>Acropolis_1_2_1.cpp</label>
         <link refid="Acropolis__1__2__1_8cpp"/>
       </node>
-      <node id="116">
+      <node id="123">
         <label>AlterBBN_2_2.cpp</label>
         <link refid="AlterBBN__2__2_8cpp"/>
       </node>
-      <node id="117">
+      <node id="124">
         <label>CalcHEP_3_6_27.cpp</label>
         <link refid="CalcHEP__3__6__27_8cpp"/>
       </node>
-      <node id="118">
+      <node id="125">
         <label>CaptnGeneral_2_1.cpp</label>
         <link refid="CaptnGeneral__2__1_8cpp"/>
       </node>
-      <node id="119">
+      <node id="126">
         <label>Contur_2_1_1.cpp</label>
         <link refid="Contur__2__1__1_8cpp"/>
       </node>
-      <node id="120">
+      <node id="127">
         <label>DDCalc_1_0_0.cpp</label>
         <link refid="DDCalc__1__0__0_8cpp"/>
       </node>
-      <node id="121">
+      <node id="128">
         <label>DDCalc_1_1_0.cpp</label>
         <link refid="DDCalc__1__1__0_8cpp"/>
       </node>
-      <node id="122">
+      <node id="129">
         <label>DDCalc_1_2_0.cpp</label>
         <link refid="DDCalc__1__2__0_8cpp"/>
       </node>
-      <node id="123">
+      <node id="130">
         <label>DDCalc_2_0_0.cpp</label>
         <link refid="DDCalc__2__0__0_8cpp"/>
       </node>
-      <node id="124">
+      <node id="131">
         <label>DDCalc_2_1_0.cpp</label>
         <link refid="DDCalc__2__1__0_8cpp"/>
       </node>
-      <node id="125">
+      <node id="132">
         <label>DDCalc_2_2_0.cpp</label>
         <link refid="DDCalc__2__2__0_8cpp"/>
       </node>
-      <node id="126">
+      <node id="133">
         <label>DDCalc_2_3_0.cpp</label>
         <link refid="DDCalc__2__3__0_8cpp"/>
       </node>
@@ -242,224 +245,218 @@
         <label>DarkAges_1_2_0.cpp</label>
         <link refid="DarkAges__1__2__0_8cpp"/>
       </node>
-      <node id="127">
+      <node id="134">
+        <label>DarkCast_1_1.cpp</label>
+        <link refid="DarkCast__1__1_8cpp"/>
+      </node>
+      <node id="135">
         <label>DarkSUSY_5_1_3.cpp</label>
         <link refid="DarkSUSY__5__1__3_8cpp"/>
       </node>
-      <node id="128">
+      <node id="136">
         <label>DarkSUSY_MSSM_6_1_1.cpp</label>
         <link refid="DarkSUSY__MSSM__6__1__1_8cpp"/>
       </node>
-      <node id="129">
+      <node id="137">
         <label>DarkSUSY_MSSM_6_2_2.cpp</label>
         <link refid="DarkSUSY__MSSM__6__2__2_8cpp"/>
       </node>
-      <node id="130">
+      <node id="138">
         <label>DarkSUSY_MSSM_6_2_5.cpp</label>
         <link refid="DarkSUSY__MSSM__6__2__5_8cpp"/>
       </node>
-      <node id="131">
+      <node id="139">
         <label>DarkSUSY_MSSM_6_4_0.cpp</label>
         <link refid="DarkSUSY__MSSM__6__4__0_8cpp"/>
       </node>
-      <node id="132">
+      <node id="140">
         <label>DarkSUSY_generic_wimp_6_1_1.cpp</label>
         <link refid="DarkSUSY__generic__wimp__6__1__1_8cpp"/>
       </node>
-      <node id="133">
+      <node id="141">
         <label>DarkSUSY_generic_wimp_6_2_2.cpp</label>
         <link refid="DarkSUSY__generic__wimp__6__2__2_8cpp"/>
       </node>
-      <node id="134">
+      <node id="142">
         <label>DarkSUSY_generic_wimp_6_2_5.cpp</label>
         <link refid="DarkSUSY__generic__wimp__6__2__5_8cpp"/>
       </node>
-      <node id="135">
+      <node id="143">
         <label>DarkSUSY_generic_wimp_6_4_0.cpp</label>
         <link refid="DarkSUSY__generic__wimp__6__4__0_8cpp"/>
       </node>
-      <node id="136">
+      <node id="144">
         <label>DirectDM_2_2_0.cpp</label>
         <link refid="DirectDM__2__2__0_8cpp"/>
       </node>
-      <node id="137">
+      <node id="145">
         <label>LibMathematicaTest.cpp</label>
         <link refid="LibMathematicaTest_8cpp"/>
       </node>
-      <node id="138">
+      <node id="146">
         <label>LibSecond_1_1.cpp</label>
         <link refid="LibSecond__1__1_8cpp"/>
       </node>
-      <node id="139">
+      <node id="147">
         <label>LibSecond_1_2.cpp</label>
         <link refid="LibSecond__1__2_8cpp"/>
       </node>
-      <node id="140">
-        <label>LibThird_1_0.cpp</label>
-        <link refid="LibThird__1__0_8cpp"/>
-      </node>
-      <node id="141">
+      <node id="148">
         <label>LibThird_1_1.cpp</label>
         <link refid="LibThird__1__1_8cpp"/>
       </node>
-      <node id="142">
+      <node id="149">
         <label>LibThird_1_2.cpp</label>
         <link refid="LibThird__1__2_8cpp"/>
       </node>
-      <node id="143">
+      <node id="150">
         <label>MicrOmegas_DMsimpVectorMedVectorDM_3_6_9_2.cpp</label>
         <link refid="MicrOmegas__DMsimpVectorMedVectorDM__3__6__9__2_8cpp"/>
       </node>
-      <node id="144">
+      <node id="151">
         <label>MicrOmegas_DiracSingletDM_Z2_3_6_9_2.cpp</label>
         <link refid="MicrOmegas__DiracSingletDM__Z2__3__6__9__2_8cpp"/>
       </node>
-      <node id="145">
+      <node id="152">
         <label>MicrOmegas_MSSM_3_6_9_2.cpp</label>
         <link refid="MicrOmegas__MSSM__3__6__9__2_8cpp"/>
       </node>
-      <node id="146">
+      <node id="153">
         <label>MicrOmegas_MajoranaSingletDM_Z2_3_6_9_2.cpp</label>
         <link refid="MicrOmegas__MajoranaSingletDM__Z2__3__6__9__2_8cpp"/>
       </node>
-      <node id="147">
+      <node id="154">
         <label>MicrOmegas_ScalarSingletDM_Z2_3_6_9_2.cpp</label>
         <link refid="MicrOmegas__ScalarSingletDM__Z2__3__6__9__2_8cpp"/>
       </node>
-      <node id="148">
+      <node id="155">
         <label>MicrOmegas_ScalarSingletDM_Z3_3_6_9_2.cpp</label>
         <link refid="MicrOmegas__ScalarSingletDM__Z3__3__6__9__2_8cpp"/>
       </node>
-      <node id="149">
+      <node id="156">
         <label>MicrOmegas_VectorSingletDM_Z2_3_6_9_2.cpp</label>
         <link refid="MicrOmegas__VectorSingletDM__Z2__3__6__9__2_8cpp"/>
       </node>
-      <node id="150">
+      <node id="157">
         <label>MontePythonLike_3_3_0.cpp</label>
         <link refid="MontePythonLike__3__3__0_8cpp"/>
       </node>
-      <node id="151">
+      <node id="158">
         <label>MontePythonLike_3_5_0.cpp</label>
         <link refid="MontePythonLike__3__5__0_8cpp"/>
       </node>
-      <node id="152">
+      <node id="159">
         <label>MultiModeCode_2_0_0.cpp</label>
         <link refid="MultiModeCode__2__0__0_8cpp"/>
       </node>
-      <node id="153">
+      <node id="160">
         <label>Prospino_2_1.cpp</label>
         <link refid="Prospino__2__1_8cpp"/>
       </node>
-      <node id="154">
+      <node id="161">
         <label>Rivet_3_1_5.cpp</label>
         <link refid="Rivet__3__1__5_8cpp"/>
       </node>
-      <node id="155">
+      <node id="162">
         <label>SPheno_3_3_8.cpp</label>
         <link refid="SPheno__3__3__8_8cpp"/>
       </node>
-      <node id="156">
+      <node id="163">
         <label>SPheno_4_0_3.cpp</label>
         <link refid="SPheno__4__0__3_8cpp"/>
       </node>
-      <node id="157">
-        <label>SUSY-HIT_1_5.cpp</label>
-        <link refid="SUSY-HIT__1__5_8cpp"/>
-      </node>
-      <node id="158">
+      <node id="164">
         <label>SUSYHD_1_0_2.cpp</label>
         <link refid="SUSYHD__1__0__2_8cpp"/>
       </node>
-      <node id="159">
+      <node id="165">
+        <label>SUSY_HIT_1_5.cpp</label>
+        <link refid="SUSY__HIT__1__5_8cpp"/>
+      </node>
+      <node id="166">
         <label>SuperIso_4_1.cpp</label>
         <link refid="SuperIso__4__1_8cpp"/>
       </node>
-      <node id="160">
+      <node id="167">
         <label>classy_2_6_3.cpp</label>
         <link refid="classy__2__6__3_8cpp"/>
       </node>
-      <node id="161">
+      <node id="168">
         <label>classy_2_9_3.cpp</label>
         <link refid="classy__2__9__3_8cpp"/>
       </node>
-      <node id="162">
+      <node id="169">
         <label>classy_2_9_4.cpp</label>
         <link refid="classy__2__9__4_8cpp"/>
       </node>
-      <node id="163">
+      <node id="170">
         <label>classy_3_1_0.cpp</label>
         <link refid="classy__3__1__0_8cpp"/>
       </node>
-      <node id="164">
+      <node id="171">
         <label>classy_exo_2_7_2.cpp</label>
         <link refid="classy__exo__2__7__2_8cpp"/>
       </node>
-      <node id="165">
+      <node id="172">
         <label>gamLike_1_0_0.cpp</label>
         <link refid="gamLike__1__0__0_8cpp"/>
       </node>
-      <node id="166">
+      <node id="173">
         <label>gamLike_1_0_1.cpp</label>
         <link refid="gamLike__1__0__1_8cpp"/>
       </node>
-      <node id="167">
+      <node id="174">
         <label>nulike_1_0_4.cpp</label>
         <link refid="nulike__1__0__4_8cpp"/>
       </node>
-      <node id="168">
+      <node id="175">
         <label>nulike_1_0_5.cpp</label>
         <link refid="nulike__1__0__5_8cpp"/>
       </node>
-      <node id="169">
+      <node id="176">
         <label>nulike_1_0_6.cpp</label>
         <link refid="nulike__1__0__6_8cpp"/>
       </node>
-      <node id="170">
+      <node id="177">
         <label>nulike_1_0_7.cpp</label>
         <link refid="nulike__1__0__7_8cpp"/>
       </node>
-      <node id="171">
+      <node id="178">
         <label>nulike_1_0_8.cpp</label>
         <link refid="nulike__1__0__8_8cpp"/>
       </node>
-      <node id="172">
+      <node id="179">
         <label>nulike_1_0_9.cpp</label>
         <link refid="nulike__1__0__9_8cpp"/>
       </node>
-      <node id="173">
+      <node id="180">
         <label>plc_3_0.cpp</label>
         <link refid="plc__3__0_8cpp"/>
       </node>
-      <node id="174">
+      <node id="181">
         <label>salami_0_1_0.cpp</label>
         <link refid="salami__0__1__0_8cpp"/>
       </node>
-      <node id="175">
+      <node id="182">
         <label>simple_xs_1_0.cpp</label>
         <link refid="simple__xs__1__0_8cpp"/>
       </node>
-      <node id="176">
+      <node id="183">
         <label>xsecBE_1_0_2.cpp</label>
         <link refid="xsecBE__1__0__2_8cpp"/>
       </node>
-      <node id="33">
+      <node id="36">
         <label>ColliderBit_eventloop.hpp</label>
         <link refid="ColliderBit__eventloop_8hpp"/>
-        <childnode refid="34" relation="include">
-        </childnode>
-        <childnode refid="35" relation="include">
-        </childnode>
-        <childnode refid="36" relation="include">
-        </childnode>
         <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
         </childnode>
         <childnode refid="40" relation="include">
         </childnode>
         <childnode refid="41" relation="include">
-        </childnode>
-        <childnode refid="42" relation="include">
-        </childnode>
-        <childnode refid="43" relation="include">
         </childnode>
         <childnode refid="44" relation="include">
         </childnode>
@@ -473,296 +470,314 @@
         </childnode>
         <childnode refid="49" relation="include">
         </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
       </node>
-      <node id="28">
+      <node id="30">
         <label>ColliderBit_rollcall.hpp</label>
         <link refid="ColliderBit__rollcall_8hpp"/>
-        <childnode refid="29" relation="include">
-        </childnode>
-        <childnode refid="30" relation="include">
-        </childnode>
         <childnode refid="31" relation="include">
         </childnode>
         <childnode refid="32" relation="include">
         </childnode>
         <childnode refid="33" relation="include">
         </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
         <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>ColliderBit_types.hpp</label>
+        <link refid="ColliderBit__types_8hpp"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="66">
+        <label>Py8Collider.hpp</label>
+        <link refid="Py8Collider_8hpp"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="67">
+        <label>SetHooksClass.hpp</label>
+        <link refid="SetHooksClass_8hpp"/>
+        <childnode refid="66" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>complete_process_PID_pair_multimaps.hpp</label>
+        <link refid="complete__process__PID__pair__multimaps_8hpp"/>
+        <childnode refid="57" relation="include">
         </childnode>
         <childnode refid="50" relation="include">
         </childnode>
         <childnode refid="51" relation="include">
         </childnode>
       </node>
-      <node id="27">
-        <label>ColliderBit_types.hpp</label>
-        <link refid="ColliderBit__types_8hpp"/>
-        <childnode refid="28" relation="include">
-        </childnode>
-        <childnode refid="52" relation="include">
-        </childnode>
-      </node>
-      <node id="62">
-        <label>Py8Collider.hpp</label>
-        <link refid="Py8Collider_8hpp"/>
+      <node id="26">
+        <label>BaseDetector.hpp</label>
+        <link refid="BaseDetector_8hpp"/>
         <childnode refid="27" relation="include">
         </childnode>
       </node>
-      <node id="63">
-        <label>SetHooksClass.hpp</label>
-        <link refid="SetHooksClass_8hpp"/>
-        <childnode refid="62" relation="include">
+      <node id="27">
+        <label>BuckFast.hpp</label>
+        <link refid="BuckFast_8hpp"/>
+        <childnode refid="28" relation="include">
         </childnode>
-      </node>
-      <node id="52">
-        <label>complete_process_PID_pair_multimaps.hpp</label>
-        <link refid="complete__process__PID__pair__multimaps_8hpp"/>
-        <childnode refid="53" relation="include">
+        <childnode refid="29" relation="include">
         </childnode>
         <childnode refid="46" relation="include">
         </childnode>
-        <childnode refid="47" relation="include">
-        </childnode>
       </node>
-      <node id="24">
-        <label>BaseDetector.hpp</label>
-        <link refid="BaseDetector_8hpp"/>
-        <childnode refid="25" relation="include">
-        </childnode>
-      </node>
-      <node id="25">
-        <label>BuckFast.hpp</label>
-        <link refid="BuckFast_8hpp"/>
-        <childnode refid="26" relation="include">
-        </childnode>
-        <childnode refid="27" relation="include">
-        </childnode>
-        <childnode refid="42" relation="include">
-        </childnode>
-      </node>
-      <node id="37">
+      <node id="41">
         <label>generateEventPy8Collider.hpp</label>
         <link refid="generateEventPy8Collider_8hpp"/>
-        <childnode refid="38" relation="include">
+        <childnode refid="42" relation="include">
         </childnode>
-        <childnode refid="39" relation="include">
+        <childnode refid="43" relation="include">
         </childnode>
       </node>
-      <node id="45">
+      <node id="49">
         <label>getPy8Collider.hpp</label>
         <link refid="getPy8Collider_8hpp"/>
-        <childnode refid="38" relation="include">
+        <childnode refid="42" relation="include">
         </childnode>
-        <childnode refid="39" relation="include">
+        <childnode refid="43" relation="include">
         </childnode>
       </node>
-      <node id="55">
+      <node id="59">
         <label>ALEPHSleptonLimits.hpp</label>
         <link refid="ALEPHSleptonLimits_8hpp_source"/>
-        <childnode refid="27" relation="include">
+        <childnode refid="29" relation="include">
         </childnode>
       </node>
-      <node id="54">
+      <node id="58">
         <label>BaseLimitContainer.hpp</label>
         <link refid="BaseLimitContainer_8hpp"/>
-        <childnode refid="55" relation="include">
-        </childnode>
-        <childnode refid="56" relation="include">
-        </childnode>
-        <childnode refid="57" relation="include">
-        </childnode>
-        <childnode refid="58" relation="include">
-        </childnode>
         <childnode refid="59" relation="include">
         </childnode>
         <childnode refid="60" relation="include">
         </childnode>
         <childnode refid="61" relation="include">
         </childnode>
-      </node>
-      <node id="57">
-        <label>L3GauginoLimits.hpp</label>
-        <link refid="L3GauginoLimits_8hpp_source"/>
-        <childnode refid="27" relation="include">
+        <childnode refid="62" relation="include">
         </childnode>
-      </node>
-      <node id="58">
-        <label>L3SleptonLimits.hpp</label>
-        <link refid="L3SleptonLimits_8hpp_source"/>
-        <childnode refid="27" relation="include">
+        <childnode refid="63" relation="include">
         </childnode>
-      </node>
-      <node id="59">
-        <label>L3SmallDeltaMGauginoLimits.hpp</label>
-        <link refid="L3SmallDeltaMGauginoLimits_8hpp_source"/>
-      </node>
-      <node id="60">
-        <label>OPALDegenerateCharginoLimits.hpp</label>
-        <link refid="OPALDegenerateCharginoLimits_8hpp_source"/>
-        <childnode refid="27" relation="include">
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
         </childnode>
       </node>
       <node id="61">
-        <label>OPALGauginoLimits.hpp</label>
-        <link refid="OPALGauginoLimits_8hpp_source"/>
-        <childnode refid="27" relation="include">
+        <label>L3GauginoLimits.hpp</label>
+        <link refid="L3GauginoLimits_8hpp_source"/>
+        <childnode refid="29" relation="include">
         </childnode>
       </node>
-      <node id="29">
+      <node id="62">
+        <label>L3SleptonLimits.hpp</label>
+        <link refid="L3SleptonLimits_8hpp_source"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="63">
+        <label>L3SmallDeltaMGauginoLimits.hpp</label>
+        <link refid="L3SmallDeltaMGauginoLimits_8hpp_source"/>
+      </node>
+      <node id="64">
+        <label>OPALDegenerateCharginoLimits.hpp</label>
+        <link refid="OPALDegenerateCharginoLimits_8hpp_source"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="65">
+        <label>OPALGauginoLimits.hpp</label>
+        <link refid="OPALGauginoLimits_8hpp_source"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>ColliderBit_Bfactories.cpp</label>
+        <link refid="ColliderBit__Bfactories_8cpp"/>
+      </node>
+      <node id="32">
         <label>ColliderBit_Higgs.cpp</label>
         <link refid="ColliderBit__Higgs_8cpp"/>
       </node>
-      <node id="30">
+      <node id="33">
         <label>ColliderBit_InterpolatedYields.cpp</label>
         <link refid="ColliderBit__InterpolatedYields_8cpp"/>
       </node>
-      <node id="31">
+      <node id="34">
         <label>ColliderBit_LEP.cpp</label>
         <link refid="ColliderBit__LEP_8cpp"/>
       </node>
-      <node id="32">
+      <node id="35">
         <label>ColliderBit_dummy.cpp</label>
         <link refid="ColliderBit__dummy_8cpp"/>
       </node>
-      <node id="34">
+      <node id="37">
         <label>ColliderBit_eventloop.cpp</label>
         <link refid="ColliderBit__eventloop_8cpp"/>
       </node>
-      <node id="35">
+      <node id="38">
         <label>ColliderBit_measurements.cpp</label>
         <link refid="ColliderBit__measurements_8cpp"/>
       </node>
-      <node id="50">
+      <node id="54">
         <label>LHC_likelihoods.cpp</label>
         <link refid="LHC__likelihoods_8cpp"/>
       </node>
-      <node id="36">
+      <node id="39">
+        <label>Utils.cpp</label>
+        <link refid="Utils_8cpp"/>
+      </node>
+      <node id="40">
         <label>collider_event_weights.cpp</label>
         <link refid="collider__event__weights_8cpp"/>
       </node>
-      <node id="53">
+      <node id="57">
         <label>complete_process_PID_pair_multimaps.cpp</label>
         <link refid="complete__process__PID__pair__multimaps_8cpp"/>
       </node>
-      <node id="26">
+      <node id="28">
         <label>BuckFast.cpp</label>
         <link refid="BuckFast_8cpp"/>
       </node>
-      <node id="40">
+      <node id="44">
         <label>getActiveProcessCodes.cpp</label>
         <link refid="getActiveProcessCodes_8cpp"/>
       </node>
-      <node id="41">
+      <node id="45">
         <label>getAnalysisContainer.cpp</label>
         <link refid="getAnalysisContainer_8cpp"/>
       </node>
-      <node id="42">
+      <node id="46">
         <label>getBuckFast.cpp</label>
         <link refid="getBuckFast_8cpp"/>
       </node>
-      <node id="43">
+      <node id="47">
         <label>getHepMCEvent.cpp</label>
         <link refid="getHepMCEvent_8cpp"/>
       </node>
-      <node id="44">
+      <node id="48">
         <label>getLHEvent.cpp</label>
         <link refid="getLHEvent_8cpp"/>
       </node>
-      <node id="46">
+      <node id="50">
         <label>getxsec.cpp</label>
         <link refid="getxsec_8cpp"/>
       </node>
-      <node id="51">
+      <node id="55">
         <label>lep_mssm_xsecs.cpp</label>
         <link refid="lep__mssm__xsecs_8cpp"/>
       </node>
-      <node id="56">
+      <node id="60">
         <label>BaseLimitContainer.cpp</label>
         <link refid="BaseLimitContainer_8cpp"/>
       </node>
-      <node id="38">
+      <node id="42">
         <label>SUSY.cpp</label>
         <link refid="SUSY_8cpp"/>
       </node>
-      <node id="39">
+      <node id="43">
         <label>SUSY_extras.cpp</label>
         <link refid="SUSY__extras_8cpp"/>
       </node>
-      <node id="47">
+      <node id="51">
         <label>process_code_PID_pair_mapping.cpp</label>
         <link refid="process__code__PID__pair__mapping_8cpp"/>
       </node>
-      <node id="48">
+      <node id="52">
         <label>runAnalyses.cpp</label>
         <link refid="runAnalyses_8cpp"/>
       </node>
-      <node id="49">
+      <node id="53">
         <label>smearEvent.cpp</label>
         <link refid="smearEvent_8cpp"/>
       </node>
-      <node id="198">
+      <node id="205">
         <label>container_factory.hpp</label>
         <link refid="container__factory_8hpp"/>
-        <childnode refid="199" relation="include">
-        </childnode>
-      </node>
-      <node id="197">
-        <label>depresolver.hpp</label>
-        <link refid="depresolver_8hpp"/>
-        <childnode refid="198" relation="include">
-        </childnode>
-        <childnode refid="204" relation="include">
-        </childnode>
-        <childnode refid="201" relation="include">
-        </childnode>
-        <childnode refid="205" relation="include">
-        </childnode>
-      </node>
-      <node id="201">
-        <label>gambit.hpp</label>
-        <link refid="gambit_8hpp"/>
-        <childnode refid="202" relation="include">
-        </childnode>
-      </node>
-      <node id="199">
-        <label>likelihood_container.hpp</label>
-        <link refid="likelihood__container_8hpp"/>
-        <childnode refid="200" relation="include">
-        </childnode>
-        <childnode refid="201" relation="include">
-        </childnode>
-        <childnode refid="203" relation="include">
-        </childnode>
-      </node>
-      <node id="205">
-        <label>modelgraph.hpp</label>
-        <link refid="modelgraph_8hpp"/>
         <childnode refid="206" relation="include">
         </childnode>
-        <childnode refid="207" relation="include">
+      </node>
+      <node id="204">
+        <label>depresolver.hpp</label>
+        <link refid="depresolver_8hpp"/>
+        <childnode refid="205" relation="include">
+        </childnode>
+        <childnode refid="211" relation="include">
+        </childnode>
+        <childnode refid="208" relation="include">
+        </childnode>
+        <childnode refid="212" relation="include">
         </childnode>
       </node>
-      <node id="200">
+      <node id="208">
+        <label>gambit.hpp</label>
+        <link refid="gambit_8hpp"/>
+        <childnode refid="209" relation="include">
+        </childnode>
+      </node>
+      <node id="206">
+        <label>likelihood_container.hpp</label>
+        <link refid="likelihood__container_8hpp"/>
+        <childnode refid="207" relation="include">
+        </childnode>
+        <childnode refid="208" relation="include">
+        </childnode>
+        <childnode refid="210" relation="include">
+        </childnode>
+      </node>
+      <node id="212">
+        <label>modelgraph.hpp</label>
+        <link refid="modelgraph_8hpp"/>
+        <childnode refid="213" relation="include">
+        </childnode>
+        <childnode refid="214" relation="include">
+        </childnode>
+      </node>
+      <node id="207">
         <label>container_factory.cpp</label>
         <link refid="container__factory_8cpp"/>
       </node>
-      <node id="204">
+      <node id="211">
         <label>depresolver.cpp</label>
         <link refid="depresolver_8cpp"/>
       </node>
-      <node id="206">
+      <node id="213">
         <label>diagnostics.cpp</label>
         <link refid="diagnostics_8cpp"/>
       </node>
-      <node id="202">
+      <node id="209">
         <label>gambit.cpp</label>
         <link refid="gambit_8cpp"/>
       </node>
-      <node id="203">
+      <node id="210">
         <label>likelihood_container.cpp</label>
         <link refid="likelihood__container_8cpp"/>
       </node>
-      <node id="207">
+      <node id="214">
         <label>modelgraph.cpp</label>
         <link refid="modelgraph_8cpp"/>
       </node>
@@ -848,19 +863,19 @@
         <label>Planck.cpp</label>
         <link refid="Planck_8cpp"/>
       </node>
-      <node id="181">
+      <node id="188">
         <label>DarkBit_standalone_MSSM.cpp</label>
         <link refid="DarkBit__standalone__MSSM_8cpp"/>
       </node>
-      <node id="182">
+      <node id="189">
         <label>DarkBit_standalone_ScalarSingletDM_Z2.cpp</label>
         <link refid="DarkBit__standalone__ScalarSingletDM__Z2_8cpp"/>
       </node>
-      <node id="183">
+      <node id="190">
         <label>DarkBit_standalone_WIMP.cpp</label>
         <link refid="DarkBit__standalone__WIMP_8cpp"/>
       </node>
-      <node id="65">
+      <node id="69">
         <label>AntiprotonLikelihoods.cpp</label>
         <link refid="AntiprotonLikelihoods_8cpp"/>
       </node>
@@ -868,152 +883,168 @@
         <label>Axions.cpp</label>
         <link refid="DarkBit_2src_2Axions_8cpp"/>
       </node>
-      <node id="66">
+      <node id="70">
         <label>Cascades.cpp</label>
         <link refid="Cascades_8cpp"/>
       </node>
-      <node id="67">
+      <node id="71">
         <label>DMEFT.cpp</label>
         <link refid="DarkBit_2src_2DMEFT_8cpp"/>
       </node>
-      <node id="68">
+      <node id="72">
         <label>DMsimpVectorMedDiracDM.cpp</label>
         <link refid="DarkBit_2src_2DMsimpVectorMedDiracDM_8cpp"/>
       </node>
-      <node id="69">
+      <node id="73">
         <label>DMsimpVectorMedMajoranaDM.cpp</label>
         <link refid="DarkBit_2src_2DMsimpVectorMedMajoranaDM_8cpp"/>
       </node>
-      <node id="70">
+      <node id="74">
         <label>DMsimpVectorMedScalarDM.cpp</label>
         <link refid="DarkBit_2src_2DMsimpVectorMedScalarDM_8cpp"/>
       </node>
-      <node id="71">
+      <node id="75">
         <label>DMsimpVectorMedVectorDM.cpp</label>
         <link refid="DarkBit_2src_2DMsimpVectorMedVectorDM_8cpp"/>
       </node>
-      <node id="72">
+      <node id="18">
         <label>DarkBit.cpp</label>
         <link refid="DarkBit_8cpp"/>
       </node>
-      <node id="18">
+      <node id="19">
         <label>DarkBit_types.cpp</label>
         <link refid="DarkBit__types_8cpp"/>
       </node>
-      <node id="73">
+      <node id="76">
         <label>DarkBit_utils.cpp</label>
         <link refid="DarkBit__utils_8cpp"/>
       </node>
-      <node id="74">
+      <node id="77">
         <label>DiracSingletDM.cpp</label>
         <link refid="DarkBit_2src_2DiracSingletDM_8cpp"/>
       </node>
-      <node id="75">
+      <node id="78">
         <label>DirectDetection.cpp</label>
         <link refid="DirectDetection_8cpp"/>
       </node>
-      <node id="76">
+      <node id="79">
         <label>EnergyInjection.cpp</label>
         <link refid="EnergyInjection_8cpp"/>
       </node>
-      <node id="81">
+      <node id="84">
         <label>IndirectDetectionYields.cpp</label>
         <link refid="IndirectDetectionYields_8cpp"/>
       </node>
-      <node id="82">
+      <node id="85">
         <label>MSSM.cpp</label>
         <link refid="DarkBit_2src_2MSSM_8cpp"/>
       </node>
-      <node id="83">
+      <node id="86">
         <label>MajoranaSingletDM.cpp</label>
         <link refid="DarkBit_2src_2MajoranaSingletDM_8cpp"/>
       </node>
-      <node id="86">
+      <node id="89">
         <label>PPPC.cpp</label>
         <link refid="PPPC_8cpp"/>
       </node>
-      <node id="88">
+      <node id="91">
         <label>ProcessCatalog.cpp</label>
         <link refid="ProcessCatalog_8cpp"/>
       </node>
-      <node id="89">
+      <node id="92">
         <label>RelicDensity.cpp</label>
         <link refid="RelicDensity_8cpp"/>
       </node>
-      <node id="90">
+      <node id="93">
         <label>ScalarSingletDM.cpp</label>
         <link refid="DarkBit_2src_2ScalarSingletDM_8cpp"/>
       </node>
-      <node id="91">
+      <node id="94">
         <label>SimpleHist.cpp</label>
         <link refid="SimpleHist_8cpp"/>
       </node>
-      <node id="92">
+      <node id="95">
         <label>SimpleLikelihoods.cpp</label>
         <link refid="SimpleLikelihoods_8cpp"/>
       </node>
-      <node id="108">
+      <node id="112">
+        <label>SubGeVDM_SelfInteractions.cpp</label>
+        <link refid="SubGeVDM__SelfInteractions_8cpp"/>
+      </node>
+      <node id="113">
+        <label>SubGeVDM_fermion.cpp</label>
+        <link refid="SubGeVDM__fermion_8cpp"/>
+      </node>
+      <node id="114">
+        <label>SubGeVDM_scalar.cpp</label>
+        <link refid="SubGeVDM__scalar_8cpp"/>
+      </node>
+      <node id="115">
         <label>SunNeutrinos.cpp</label>
         <link refid="SunNeutrinos_8cpp"/>
       </node>
-      <node id="109">
+      <node id="116">
         <label>VectorSingletDM.cpp</label>
         <link refid="DarkBit_2src_2VectorSingletDM_8cpp"/>
       </node>
-      <node id="21">
+      <node id="22">
         <label>WIMP_EFT.cpp</label>
         <link refid="WIMP__EFT_8cpp"/>
       </node>
-      <node id="110">
+      <node id="23">
+        <label>Xray.cpp</label>
+        <link refid="Xray_8cpp"/>
+      </node>
+      <node id="117">
         <label>decay_chain.cpp</label>
         <link refid="decay__chain_8cpp"/>
       </node>
-      <node id="180">
+      <node id="187">
         <label>3bithit.cpp</label>
         <link refid="3bithit_8cpp"/>
       </node>
-      <node id="246">
+      <node id="255">
         <label>decay_utils.hpp</label>
         <link refid="decay__utils_8hpp"/>
-        <childnode refid="19" relation="include">
+        <childnode refid="20" relation="include">
         </childnode>
-        <childnode refid="247" relation="include">
+        <childnode refid="256" relation="include">
         </childnode>
       </node>
-      <node id="19">
+      <node id="20">
         <label>DecayBit.cpp</label>
         <link refid="DecayBit_8cpp"/>
       </node>
-      <node id="247">
+      <node id="256">
         <label>decay_utils.cpp</label>
         <link refid="decay__utils_8cpp"/>
       </node>
-      <node id="245">
+      <node id="254">
         <label>decay_table.hpp</label>
         <link refid="decay__table_8hpp"/>
-        <childnode refid="117" relation="include">
+        <childnode refid="124" relation="include">
         </childnode>
-        <childnode refid="244" relation="include">
+        <childnode refid="253" relation="include">
         </childnode>
-        <childnode refid="246" relation="include">
+        <childnode refid="255" relation="include">
         </childnode>
-        <childnode refid="248" relation="include">
+        <childnode refid="257" relation="include">
         </childnode>
-        <childnode refid="23" relation="include">
+        <childnode refid="25" relation="include">
         </childnode>
       </node>
-      <node id="208">
+      <node id="216">
         <label>functor_definitions.hpp</label>
         <link refid="functor__definitions_8hpp"/>
-        <childnode refid="113" relation="include">
+        <childnode refid="120" relation="include">
         </childnode>
-        <childnode refid="209" relation="include">
+        <childnode refid="217" relation="include">
         </childnode>
       </node>
-      <node id="64">
+      <node id="68">
         <label>gambit_module_headers.hpp</label>
         <link refid="gambit__module__headers_8hpp"/>
-        <childnode refid="65" relation="include">
+        <childnode refid="69" relation="include">
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
@@ -1023,33 +1054,27 @@
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
-        <childnode refid="66" relation="include">
-        </childnode>
-        <childnode refid="29" relation="include">
-        </childnode>
-        <childnode refid="30" relation="include">
+        <childnode refid="70" relation="include">
         </childnode>
         <childnode refid="31" relation="include">
         </childnode>
         <childnode refid="32" relation="include">
         </childnode>
-        <childnode refid="34" relation="include">
-        </childnode>
         <childnode refid="33" relation="include">
         </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
         <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
         <childnode refid="6" relation="include">
-        </childnode>
-        <childnode refid="67" relation="include">
-        </childnode>
-        <childnode refid="68" relation="include">
-        </childnode>
-        <childnode refid="69" relation="include">
-        </childnode>
-        <childnode refid="70" relation="include">
         </childnode>
         <childnode refid="71" relation="include">
         </childnode>
@@ -1057,13 +1082,15 @@
         </childnode>
         <childnode refid="73" relation="include">
         </childnode>
-        <childnode refid="19" relation="include">
-        </childnode>
         <childnode refid="74" relation="include">
         </childnode>
         <childnode refid="75" relation="include">
         </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
         <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
         </childnode>
         <childnode refid="77" relation="include">
         </childnode>
@@ -1075,23 +1102,21 @@
         </childnode>
         <childnode refid="81" relation="include">
         </childnode>
-        <childnode refid="12" relation="include">
-        </childnode>
-        <childnode refid="50" relation="include">
-        </childnode>
         <childnode refid="82" relation="include">
         </childnode>
         <childnode refid="83" relation="include">
         </childnode>
-        <childnode refid="13" relation="include">
-        </childnode>
         <childnode refid="84" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
         </childnode>
         <childnode refid="85" relation="include">
         </childnode>
         <childnode refid="86" relation="include">
         </childnode>
-        <childnode refid="14" relation="include">
+        <childnode refid="13" relation="include">
         </childnode>
         <childnode refid="87" relation="include">
         </childnode>
@@ -1099,13 +1124,15 @@
         </childnode>
         <childnode refid="89" relation="include">
         </childnode>
-        <childnode refid="20" relation="include">
+        <childnode refid="14" relation="include">
         </childnode>
         <childnode refid="90" relation="include">
         </childnode>
         <childnode refid="91" relation="include">
         </childnode>
         <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
         </childnode>
         <childnode refid="93" relation="include">
         </childnode>
@@ -1141,125 +1168,135 @@
         </childnode>
         <childnode refid="109" relation="include">
         </childnode>
-        <childnode refid="21" relation="include">
-        </childnode>
         <childnode refid="110" relation="include">
         </childnode>
-        <childnode refid="51" relation="include">
+        <childnode refid="111" relation="include">
         </childnode>
-      </node>
-      <node id="248">
-        <label>higgs_couplings_table.hpp</label>
-        <link refid="higgs__couplings__table_8hpp"/>
-        <childnode refid="249" relation="include">
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
         </childnode>
         <childnode refid="23" relation="include">
         </childnode>
+        <childnode refid="117" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
       </node>
-      <node id="178">
+      <node id="257">
+        <label>higgs_couplings_table.hpp</label>
+        <link refid="higgs__couplings__table_8hpp"/>
+        <childnode refid="258" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+      </node>
+      <node id="185">
         <label>module_macros_incore.hpp</label>
         <link refid="module__macros__incore_8hpp"/>
-        <childnode refid="113" relation="include">
+        <childnode refid="120" relation="include">
         </childnode>
-        <childnode refid="179" relation="include">
+        <childnode refid="186" relation="include">
         </childnode>
       </node>
-      <node id="177">
+      <node id="184">
         <label>module_macros_incore_defs.hpp</label>
         <link refid="module__macros__incore__defs_8hpp"/>
-        <childnode refid="178" relation="include">
+        <childnode refid="185" relation="include">
         </childnode>
       </node>
-      <node id="238">
+      <node id="247">
         <label>mssm_slhahelp.hpp</label>
         <link refid="mssm__slhahelp_8hpp"/>
-        <childnode refid="31" relation="include">
+        <childnode refid="34" relation="include">
         </childnode>
-        <childnode refid="181" relation="include">
+        <childnode refid="188" relation="include">
         </childnode>
-        <childnode refid="182" relation="include">
+        <childnode refid="189" relation="include">
         </childnode>
-        <childnode refid="19" relation="include">
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="248" relation="include">
+        </childnode>
+        <childnode refid="249" relation="include">
+        </childnode>
+        <childnode refid="152" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="160" relation="include">
+        </childnode>
+        <childnode refid="165" relation="include">
+        </childnode>
+        <childnode refid="253" relation="include">
+        </childnode>
+        <childnode refid="254" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="259" relation="include">
+        </childnode>
+        <childnode refid="244" relation="include">
+        </childnode>
+        <childnode refid="260" relation="include">
+        </childnode>
+      </node>
+      <node id="192">
+        <label>printable_types.hpp</label>
+        <link refid="Elements_2include_2gambit_2Elements_2printable__types_8hpp"/>
+        <childnode refid="193" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>shared_types.hpp</label>
+        <link refid="shared__types_8hpp"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="118" relation="include">
+        </childnode>
+      </node>
+      <node id="236">
+        <label>sminputs.hpp</label>
+        <link refid="sminputs_8hpp"/>
+        <childnode refid="237" relation="include">
+        </childnode>
+        <childnode refid="238" relation="include">
         </childnode>
         <childnode refid="239" relation="include">
         </childnode>
-        <childnode refid="240" relation="include">
+        <childnode refid="243" relation="include">
         </childnode>
-        <childnode refid="145" relation="include">
-        </childnode>
-        <childnode refid="87" relation="include">
-        </childnode>
-        <childnode refid="153" relation="include">
-        </childnode>
-        <childnode refid="157" relation="include">
+        <childnode refid="25" relation="include">
         </childnode>
         <childnode refid="244" relation="include">
         </childnode>
         <childnode refid="245" relation="include">
         </childnode>
-        <childnode refid="51" relation="include">
-        </childnode>
-        <childnode refid="250" relation="include">
-        </childnode>
-        <childnode refid="235" relation="include">
-        </childnode>
-        <childnode refid="251" relation="include">
+        <childnode refid="242" relation="include">
         </childnode>
       </node>
-      <node id="185">
-        <label>printable_types.hpp</label>
-        <link refid="Elements_2include_2gambit_2Elements_2printable__types_8hpp"/>
-        <childnode refid="186" relation="include">
-        </childnode>
-      </node>
-      <node id="23">
-        <label>shared_types.hpp</label>
-        <link refid="shared__types_8hpp"/>
-        <childnode refid="24" relation="include">
-        </childnode>
-        <childnode refid="54" relation="include">
-        </childnode>
-        <childnode refid="28" relation="include">
-        </childnode>
-        <childnode refid="62" relation="include">
-        </childnode>
-        <childnode refid="63" relation="include">
-        </childnode>
-        <childnode refid="64" relation="include">
-        </childnode>
-        <childnode refid="111" relation="include">
-        </childnode>
-      </node>
-      <node id="227">
-        <label>sminputs.hpp</label>
-        <link refid="sminputs_8hpp"/>
-        <childnode refid="228" relation="include">
-        </childnode>
-        <childnode refid="229" relation="include">
-        </childnode>
-        <childnode refid="230" relation="include">
-        </childnode>
-        <childnode refid="234" relation="include">
-        </childnode>
-        <childnode refid="23" relation="include">
-        </childnode>
-        <childnode refid="235" relation="include">
-        </childnode>
-        <childnode refid="236" relation="include">
-        </childnode>
-        <childnode refid="233" relation="include">
-        </childnode>
-      </node>
-      <node id="236">
+      <node id="245">
         <label>spectrum.hpp</label>
         <link refid="spectrum_8hpp"/>
-        <childnode refid="228" relation="include">
-        </childnode>
-        <childnode refid="94" relation="include">
-        </childnode>
-        <childnode refid="95" relation="include">
-        </childnode>
-        <childnode refid="96" relation="include">
+        <childnode refid="237" relation="include">
         </childnode>
         <childnode refid="97" relation="include">
         </childnode>
@@ -1269,140 +1306,148 @@
         </childnode>
         <childnode refid="100" relation="include">
         </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
         <childnode refid="102" relation="include">
         </childnode>
         <childnode refid="103" relation="include">
-        </childnode>
-        <childnode refid="104" relation="include">
         </childnode>
         <childnode refid="105" relation="include">
         </childnode>
         <childnode refid="106" relation="include">
         </childnode>
-        <childnode refid="237" relation="include">
-        </childnode>
         <childnode refid="107" relation="include">
         </childnode>
-        <childnode refid="238" relation="include">
+        <childnode refid="108" relation="include">
         </childnode>
-        <childnode refid="23" relation="include">
+        <childnode refid="109" relation="include">
         </childnode>
-        <childnode refid="232" relation="include">
+        <childnode refid="110" relation="include">
         </childnode>
-        <childnode refid="233" relation="include">
+        <childnode refid="246" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
+        <childnode refid="247" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="241" relation="include">
+        </childnode>
+        <childnode refid="242" relation="include">
         </childnode>
       </node>
-      <node id="233">
+      <node id="242">
         <label>spectrum_factories.hpp</label>
         <link refid="spectrum__factories_8hpp"/>
-        <childnode refid="181" relation="include">
+        <childnode refid="188" relation="include">
         </childnode>
-        <childnode refid="182" relation="include">
+        <childnode refid="189" relation="include">
         </childnode>
-        <childnode refid="183" relation="include">
+        <childnode refid="190" relation="include">
         </childnode>
-        <childnode refid="155" relation="include">
+        <childnode refid="162" relation="include">
         </childnode>
-        <childnode refid="156" relation="include">
-        </childnode>
-        <childnode refid="95" relation="include">
-        </childnode>
-        <childnode refid="96" relation="include">
-        </childnode>
-        <childnode refid="97" relation="include">
+        <childnode refid="163" relation="include">
         </childnode>
         <childnode refid="98" relation="include">
         </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="100" relation="include">
+        </childnode>
         <childnode refid="101" relation="include">
         </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
       </node>
-      <node id="179">
+      <node id="186">
         <label>standalone_module.hpp</label>
         <link refid="standalone__module_8hpp"/>
-        <childnode refid="180" relation="include">
+        <childnode refid="187" relation="include">
         </childnode>
-        <childnode refid="181" relation="include">
+        <childnode refid="188" relation="include">
         </childnode>
-        <childnode refid="182" relation="include">
+        <childnode refid="189" relation="include">
         </childnode>
-        <childnode refid="183" relation="include">
+        <childnode refid="190" relation="include">
+        </childnode>
+        <childnode refid="191" relation="include">
+        </childnode>
+      </node>
+      <node id="118">
+        <label>types_rollcall.hpp</label>
+        <link refid="types__rollcall_8hpp"/>
+        <childnode refid="119" relation="include">
         </childnode>
         <childnode refid="184" relation="include">
         </childnode>
-      </node>
-      <node id="111">
-        <label>types_rollcall.hpp</label>
-        <link refid="types__rollcall_8hpp"/>
-        <childnode refid="112" relation="include">
-        </childnode>
-        <childnode refid="177" relation="include">
-        </childnode>
-        <childnode refid="185" relation="include">
+        <childnode refid="192" relation="include">
         </childnode>
       </node>
-      <node id="244">
+      <node id="253">
         <label>decay_table.cpp</label>
         <link refid="decay__table_8cpp"/>
       </node>
-      <node id="209">
+      <node id="217">
         <label>functors.cpp</label>
         <link refid="Elements_2src_2functors_8cpp"/>
       </node>
-      <node id="249">
+      <node id="258">
         <label>higgs_couplings_table.cpp</label>
         <link refid="higgs__couplings__table_8cpp"/>
       </node>
-      <node id="250">
+      <node id="259">
         <label>mssm_slhahelp.cpp</label>
         <link refid="mssm__slhahelp_8cpp"/>
       </node>
-      <node id="235">
+      <node id="244">
         <label>sminputs.cpp</label>
         <link refid="sminputs_8cpp"/>
       </node>
-      <node id="232">
+      <node id="241">
         <label>spectrum.cpp</label>
         <link refid="spectrum_8cpp"/>
       </node>
-      <node id="251">
+      <node id="260">
         <label>subspectrum.cpp</label>
         <link refid="subspectrum_8cpp"/>
       </node>
-      <node id="184">
+      <node id="191">
         <label>ExampleBit_A_standalone_example.cpp</label>
         <link refid="ExampleBit__A__standalone__example_8cpp"/>
       </node>
-      <node id="77">
+      <node id="80">
         <label>ExampleBit_A.cpp</label>
         <link refid="ExampleBit__A_8cpp"/>
       </node>
-      <node id="78">
+      <node id="81">
         <label>ExampleBit_B.cpp</label>
         <link refid="ExampleBit__B_8cpp"/>
       </node>
-      <node id="79">
+      <node id="82">
         <label>FlavBit.cpp</label>
         <link refid="FlavBit_8cpp"/>
       </node>
-      <node id="80">
+      <node id="83">
         <label>Flav_reader.cpp</label>
         <link refid="Flav__reader_8cpp"/>
       </node>
-      <node id="230">
+      <node id="239">
         <label>SMSimpleSpec.hpp</label>
         <link refid="SMSimpleSpec_8hpp"/>
-        <childnode refid="231" relation="include">
+        <childnode refid="240" relation="include">
         </childnode>
-        <childnode refid="232" relation="include">
+        <childnode refid="241" relation="include">
         </childnode>
-        <childnode refid="233" relation="include">
+        <childnode refid="242" relation="include">
         </childnode>
       </node>
-      <node id="239">
+      <node id="248">
         <label>MSSMSimpleSpec.cpp</label>
         <link refid="MSSMSimpleSpec_8cpp"/>
       </node>
-      <node id="231">
+      <node id="240">
         <label>SMSimpleSpec.cpp</label>
         <link refid="SMSimpleSpec_8cpp"/>
       </node>
@@ -1410,230 +1455,236 @@
         <label>Axions.cpp</label>
         <link refid="Models_2src_2models_2Axions_8cpp"/>
       </node>
-      <node id="84">
+      <node id="87">
         <label>NeutrinoBit.cpp</label>
         <link refid="NeutrinoBit_8cpp"/>
       </node>
-      <node id="20">
+      <node id="21">
         <label>RightHandedNeutrinos.cpp</label>
         <link refid="RightHandedNeutrinos_8cpp"/>
       </node>
-      <node id="85">
+      <node id="88">
         <label>ObjectivesBit.cpp</label>
         <link refid="ObjectivesBit_8cpp"/>
       </node>
-      <node id="87">
+      <node id="90">
         <label>PrecisionBit.cpp</label>
         <link refid="PrecisionBit_8cpp"/>
       </node>
-      <node id="186">
+      <node id="193">
         <label>baseprinter.hpp</label>
         <link refid="baseprinter_8hpp"/>
-        <childnode refid="101" relation="include">
-        </childnode>
-        <childnode refid="187" relation="include">
-        </childnode>
-        <childnode refid="190" relation="include">
-        </childnode>
-        <childnode refid="193" relation="include">
+        <childnode refid="104" relation="include">
         </childnode>
         <childnode refid="194" relation="include">
         </childnode>
         <childnode refid="197" relation="include">
         </childnode>
-        <childnode refid="208" relation="include">
+        <childnode refid="200" relation="include">
         </childnode>
-        <childnode refid="210" relation="include">
+        <childnode refid="201" relation="include">
+        </childnode>
+        <childnode refid="204" relation="include">
         </childnode>
         <childnode refid="215" relation="include">
         </childnode>
+        <childnode refid="216" relation="include">
+        </childnode>
         <childnode refid="218" relation="include">
+        </childnode>
+        <childnode refid="223" relation="include">
+        </childnode>
+        <childnode refid="226" relation="include">
+        </childnode>
+        <childnode refid="206" relation="include">
+        </childnode>
+        <childnode refid="227" relation="include">
+        </childnode>
+        <childnode refid="228" relation="include">
+        </childnode>
+        <childnode refid="229" relation="include">
+        </childnode>
+        <childnode refid="230" relation="include">
+        </childnode>
+        <childnode refid="233" relation="include">
+        </childnode>
+        <childnode refid="186" relation="include">
+        </childnode>
+      </node>
+      <node id="228">
+        <label>printer_utils.hpp</label>
+        <link refid="printer__utils_8hpp"/>
+        <childnode refid="92" relation="include">
+        </childnode>
+      </node>
+      <node id="194">
+        <label>asciiprinter.hpp</label>
+        <link refid="asciiprinter_8hpp"/>
+        <childnode refid="195" relation="include">
+        </childnode>
+        <childnode refid="196" relation="include">
+        </childnode>
+      </node>
+      <node id="197">
+        <label>asciireader.hpp</label>
+        <link refid="asciireader_8hpp"/>
+        <childnode refid="198" relation="include">
         </childnode>
         <childnode refid="199" relation="include">
         </childnode>
+      </node>
+      <node id="201">
+        <label>coutprinter.hpp</label>
+        <link refid="coutprinter_8hpp"/>
+        <childnode refid="202" relation="include">
+        </childnode>
+        <childnode refid="203" relation="include">
+        </childnode>
+      </node>
+      <node id="218">
+        <label>hdf5printer.hpp</label>
+        <link refid="hdf5printer_8hpp"/>
         <childnode refid="219" relation="include">
         </childnode>
         <childnode refid="220" relation="include">
         </childnode>
         <childnode refid="221" relation="include">
         </childnode>
-        <childnode refid="224" relation="include">
+        <childnode refid="222" relation="include">
         </childnode>
       </node>
-      <node id="187">
-        <label>asciiprinter.hpp</label>
-        <link refid="asciiprinter_8hpp"/>
-        <childnode refid="188" relation="include">
-        </childnode>
-        <childnode refid="189" relation="include">
-        </childnode>
-      </node>
-      <node id="190">
-        <label>asciireader.hpp</label>
-        <link refid="asciireader_8hpp"/>
-        <childnode refid="191" relation="include">
-        </childnode>
-        <childnode refid="192" relation="include">
-        </childnode>
-      </node>
-      <node id="194">
-        <label>coutprinter.hpp</label>
-        <link refid="coutprinter_8hpp"/>
-        <childnode refid="195" relation="include">
-        </childnode>
-        <childnode refid="196" relation="include">
-        </childnode>
-      </node>
-      <node id="210">
-        <label>hdf5printer.hpp</label>
-        <link refid="hdf5printer_8hpp"/>
-        <childnode refid="211" relation="include">
-        </childnode>
-        <childnode refid="212" relation="include">
-        </childnode>
-        <childnode refid="213" relation="include">
-        </childnode>
-        <childnode refid="214" relation="include">
-        </childnode>
-      </node>
-      <node id="215">
+      <node id="223">
         <label>hdf5printer_v2.hpp</label>
         <link refid="hdf5printer__v2_8hpp"/>
-        <childnode refid="216" relation="include">
+        <childnode refid="224" relation="include">
         </childnode>
-        <childnode refid="217" relation="include">
+        <childnode refid="225" relation="include">
         </childnode>
       </node>
-      <node id="218">
+      <node id="226">
         <label>hdf5reader.hpp</label>
         <link refid="hdf5reader_8hpp"/>
-        <childnode refid="212" relation="include">
+        <childnode refid="220" relation="include">
         </childnode>
-        <childnode refid="214" relation="include">
+        <childnode refid="222" relation="include">
         </childnode>
       </node>
-      <node id="219">
+      <node id="227">
         <label>noneprinter.hpp</label>
         <link refid="noneprinter_8hpp"/>
       </node>
-      <node id="221">
+      <node id="230">
         <label>sqliteprinter.hpp</label>
         <link refid="sqliteprinter_8hpp"/>
-        <childnode refid="222" relation="include">
+        <childnode refid="231" relation="include">
         </childnode>
-        <childnode refid="223" relation="include">
+        <childnode refid="232" relation="include">
         </childnode>
       </node>
-      <node id="224">
+      <node id="233">
         <label>sqlitereader.hpp</label>
         <link refid="sqlitereader_8hpp"/>
-        <childnode refid="225" relation="include">
+        <childnode refid="234" relation="include">
         </childnode>
-        <childnode refid="226" relation="include">
+        <childnode refid="235" relation="include">
         </childnode>
       </node>
-      <node id="193">
+      <node id="200">
         <label>baseprinter.cpp</label>
         <link refid="baseprinter_8cpp"/>
       </node>
-      <node id="220">
+      <node id="229">
         <label>printermanager.cpp</label>
         <link refid="printermanager_8cpp"/>
       </node>
-      <node id="188">
+      <node id="195">
         <label>asciiprinter.cpp</label>
         <link refid="asciiprinter_8cpp"/>
       </node>
-      <node id="191">
+      <node id="198">
         <label>asciireader.cpp</label>
         <link refid="asciireader_8cpp"/>
       </node>
-      <node id="189">
+      <node id="196">
         <label>print_overloads.cpp</label>
         <link refid="asciiprinter_2print__overloads_8cpp"/>
       </node>
-      <node id="192">
+      <node id="199">
         <label>retrieve_overloads.cpp</label>
         <link refid="asciiprinter_2retrieve__overloads_8cpp"/>
       </node>
-      <node id="195">
+      <node id="202">
         <label>coutprinter.cpp</label>
         <link refid="coutprinter_8cpp"/>
       </node>
-      <node id="196">
+      <node id="203">
         <label>print_overloads.cpp</label>
         <link refid="coutprinter_2print__overloads_8cpp"/>
       </node>
-      <node id="211">
+      <node id="219">
         <label>hdf5printer.cpp</label>
         <link refid="hdf5printer_8cpp"/>
       </node>
-      <node id="212">
+      <node id="220">
         <label>hdf5reader.cpp</label>
         <link refid="hdf5reader_8cpp"/>
       </node>
-      <node id="213">
+      <node id="221">
         <label>print_overloads.cpp</label>
         <link refid="hdf5printer_2print__overloads_8cpp"/>
       </node>
-      <node id="214">
+      <node id="222">
         <label>retrieve_overloads.cpp</label>
         <link refid="hdf5printer_2retrieve__overloads_8cpp"/>
       </node>
-      <node id="216">
+      <node id="224">
         <label>hdf5printer_v2.cpp</label>
         <link refid="hdf5printer__v2_8cpp"/>
       </node>
-      <node id="217">
+      <node id="225">
         <label>print_overloads.cpp</label>
         <link refid="hdf5printer__v2_2print__overloads_8cpp"/>
       </node>
-      <node id="222">
+      <node id="231">
         <label>print_overloads.cpp</label>
         <link refid="sqliteprinter_2print__overloads_8cpp"/>
       </node>
-      <node id="225">
+      <node id="234">
         <label>retrieve_overloads.cpp</label>
         <link refid="sqliteprinter_2retrieve__overloads_8cpp"/>
       </node>
-      <node id="223">
+      <node id="232">
         <label>sqliteprinter.cpp</label>
         <link refid="sqliteprinter_8cpp"/>
       </node>
-      <node id="226">
+      <node id="235">
         <label>sqlitereader.cpp</label>
         <link refid="sqlitereader_8cpp"/>
       </node>
-      <node id="237">
+      <node id="246">
         <label>SpecBit_examples.cpp</label>
         <link refid="SpecBit__examples_8cpp"/>
       </node>
-      <node id="242">
+      <node id="251">
         <label>SpecBit_tests.cpp</label>
         <link refid="examples_2SpecBit__tests_8cpp"/>
       </node>
-      <node id="240">
+      <node id="249">
         <label>MSSMSpec.hpp</label>
         <link refid="MSSMSpec_8hpp"/>
-        <childnode refid="101" relation="include">
+        <childnode refid="104" relation="include">
         </childnode>
-        <childnode refid="241" relation="include">
+        <childnode refid="250" relation="include">
         </childnode>
-        <childnode refid="242" relation="include">
+        <childnode refid="251" relation="include">
         </childnode>
-        <childnode refid="243" relation="include">
+        <childnode refid="252" relation="include">
         </childnode>
       </node>
-      <node id="229">
+      <node id="238">
         <label>QedQcdWrapper.hpp</label>
         <link refid="QedQcdWrapper_8hpp"/>
-        <childnode refid="228" relation="include">
-        </childnode>
-        <childnode refid="94" relation="include">
-        </childnode>
-        <childnode refid="95" relation="include">
-        </childnode>
-        <childnode refid="96" relation="include">
+        <childnode refid="237" relation="include">
         </childnode>
         <childnode refid="97" relation="include">
         </childnode>
@@ -1655,110 +1706,124 @@
         </childnode>
         <childnode refid="106" relation="include">
         </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
       </node>
-      <node id="241">
+      <node id="250">
         <label>SpecBit_externaltests.hpp</label>
         <link refid="SpecBit__externaltests_8hpp"/>
-        <childnode refid="242" relation="include">
-        </childnode>
-      </node>
-      <node id="234">
-        <label>SpecBit_helpers.hpp</label>
-        <link refid="SpecBit__helpers_8hpp"/>
-        <childnode refid="94" relation="include">
-        </childnode>
-        <childnode refid="95" relation="include">
-        </childnode>
-        <childnode refid="96" relation="include">
-        </childnode>
-        <childnode refid="97" relation="include">
-        </childnode>
-        <childnode refid="98" relation="include">
-        </childnode>
-        <childnode refid="99" relation="include">
-        </childnode>
-        <childnode refid="100" relation="include">
-        </childnode>
-        <childnode refid="101" relation="include">
-        </childnode>
-        <childnode refid="102" relation="include">
-        </childnode>
-        <childnode refid="103" relation="include">
-        </childnode>
-        <childnode refid="104" relation="include">
-        </childnode>
-        <childnode refid="105" relation="include">
-        </childnode>
-        <childnode refid="106" relation="include">
+        <childnode refid="251" relation="include">
         </childnode>
       </node>
       <node id="243">
-        <label>external_examples.hpp</label>
-        <link refid="external__examples_8hpp_source"/>
-        <childnode refid="242" relation="include">
+        <label>SpecBit_helpers.hpp</label>
+        <link refid="SpecBit__helpers_8hpp"/>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="100" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="106" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
         </childnode>
       </node>
-      <node id="228">
+      <node id="252">
+        <label>external_examples.hpp</label>
+        <link refid="external__examples_8hpp_source"/>
+        <childnode refid="251" relation="include">
+        </childnode>
+      </node>
+      <node id="237">
         <label>QedQcdWrapper.cpp</label>
         <link refid="QedQcdWrapper_8cpp"/>
       </node>
-      <node id="93">
+      <node id="96">
         <label>SpecBit.cpp</label>
         <link refid="SpecBit_8cpp"/>
       </node>
-      <node id="94">
+      <node id="97">
         <label>SpecBit_DMEFT.cpp</label>
         <link refid="SpecBit__DMEFT_8cpp"/>
       </node>
-      <node id="95">
+      <node id="98">
         <label>SpecBit_DMsimpVectorMedDiracDM.cpp</label>
         <link refid="SpecBit__DMsimpVectorMedDiracDM_8cpp"/>
       </node>
-      <node id="96">
+      <node id="99">
         <label>SpecBit_DMsimpVectorMedMajoranaDM.cpp</label>
         <link refid="SpecBit__DMsimpVectorMedMajoranaDM_8cpp"/>
       </node>
-      <node id="97">
+      <node id="100">
         <label>SpecBit_DMsimpVectorMedScalarDM.cpp</label>
         <link refid="SpecBit__DMsimpVectorMedScalarDM_8cpp"/>
       </node>
-      <node id="98">
+      <node id="101">
         <label>SpecBit_DMsimpVectorMedVectorDM.cpp</label>
         <link refid="SpecBit__DMsimpVectorMedVectorDM_8cpp"/>
       </node>
-      <node id="99">
+      <node id="102">
         <label>SpecBit_DiracSingletDM.cpp</label>
         <link refid="SpecBit__DiracSingletDM_8cpp"/>
       </node>
-      <node id="100">
+      <node id="103">
         <label>SpecBit_MDM.cpp</label>
         <link refid="SpecBit__MDM_8cpp"/>
       </node>
-      <node id="101">
+      <node id="104">
         <label>SpecBit_MSSM.cpp</label>
         <link refid="SpecBit__MSSM_8cpp"/>
       </node>
-      <node id="102">
+      <node id="105">
         <label>SpecBit_MajoranaSingletDM.cpp</label>
         <link refid="SpecBit__MajoranaSingletDM_8cpp"/>
       </node>
-      <node id="103">
+      <node id="106">
         <label>SpecBit_SM.cpp</label>
         <link refid="SpecBit__SM_8cpp"/>
       </node>
-      <node id="104">
+      <node id="107">
         <label>SpecBit_ScalarSingletDM.cpp</label>
         <link refid="SpecBit__ScalarSingletDM_8cpp"/>
       </node>
-      <node id="105">
+      <node id="108">
+        <label>SpecBit_SubGeVDM.cpp</label>
+        <link refid="SpecBit__SubGeVDM_8cpp"/>
+      </node>
+      <node id="109">
         <label>SpecBit_VS.cpp</label>
         <link refid="SpecBit__VS_8cpp"/>
       </node>
-      <node id="106">
+      <node id="110">
         <label>SpecBit_VectorSingletDM.cpp</label>
         <link refid="SpecBit__VectorSingletDM_8cpp"/>
       </node>
-      <node id="107">
+      <node id="111">
         <label>SpecBit_tests.cpp</label>
         <link refid="src_2SpecBit__tests_8cpp"/>
       </node>
@@ -1793,16 +1858,24 @@
         </childnode>
         <childnode refid="23" relation="include">
         </childnode>
-        <childnode refid="227" relation="include">
+        <childnode refid="24" relation="include">
         </childnode>
-        <childnode refid="252" relation="include">
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="236" relation="include">
+        </childnode>
+        <childnode refid="261" relation="include">
         </childnode>
       </node>
-      <node id="22">
+      <node id="215">
+        <label>exceptions.cpp</label>
+        <link refid="exceptions_8cpp"/>
+      </node>
+      <node id="24">
         <label>lnlike_modifiers.cpp</label>
         <link refid="lnlike__modifiers_8cpp"/>
       </node>
-      <node id="252">
+      <node id="261">
         <label>statistics.cpp</label>
         <link refid="statistics_8cpp"/>
       </node>
@@ -1835,9 +1908,15 @@
 </simplesect>
 <simplesect kind="date"><para>2019 Mar</para>
 </simplesect>
-<simplesect kind="author"><para>Tomas Gonzalo (<ulink url="mailto:tomas.gonzalo@monash.edu">tomas.gonzalo@monash.edu</ulink>) </para>
+<simplesect kind="author"><para>Tomas Gonzalo (<ulink url="mailto:tomas.gonzalo@kit.edu">tomas.gonzalo@kit.edu</ulink>) </para>
 </simplesect>
 <simplesect kind="date"><para>2020 Jan </para>
+</simplesect>
+<simplesect kind="date"><para>2023 June</para>
+</simplesect>
+<simplesect kind="author"><para>Torsten Bringmann (<ulink url="mailto:torsten.bringmann@fys.uio.no">torsten.bringmann@fys.uio.no</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2023 Nov </para>
 </simplesect>
 </para>
     </detaileddescription>
@@ -1871,165 +1950,174 @@
 <codeline lineno="27"><highlight class="comment">///<sp/><sp/>\date<sp/><sp/><sp/>2019<sp/>Mar</highlight></codeline>
 <codeline lineno="28"><highlight class="comment">///</highlight></codeline>
 <codeline lineno="29"><highlight class="comment">///<sp/><sp/>\author<sp/>Tomas<sp/>Gonzalo</highlight></codeline>
-<codeline lineno="30"><highlight class="comment">///<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(tomas.gonzalo@monash.edu)</highlight></codeline>
+<codeline lineno="30"><highlight class="comment">///<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(tomas.gonzalo@kit.edu)</highlight></codeline>
 <codeline lineno="31"><highlight class="comment">///<sp/><sp/>\date<sp/>2020<sp/>Jan</highlight></codeline>
-<codeline lineno="32"><highlight class="comment"></highlight><highlight class="comment">//</highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="33"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
-<codeline lineno="34"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="35"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__numerical_constants_hpp__</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="36"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__numerical_constants_hpp__</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="37"><highlight class="normal"></highlight></codeline>
-<codeline lineno="38"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="39"><highlight class="normal"></highlight></codeline>
-<codeline lineno="40"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceGambit" kindref="compound">Gambit</ref></highlight></codeline>
-<codeline lineno="41"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="32"><highlight class="comment">///<sp/><sp/>\date<sp/>2023<sp/>June</highlight></codeline>
+<codeline lineno="33"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="34"><highlight class="comment">///<sp/><sp/>\author<sp/>Torsten<sp/>Bringmann</highlight></codeline>
+<codeline lineno="35"><highlight class="comment">///<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(torsten.bringmann@fys.uio.no)</highlight></codeline>
+<codeline lineno="36"><highlight class="comment">///<sp/><sp/>\date<sp/>2023<sp/>Nov</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"></highlight><highlight class="comment">//</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="38"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__numerical_constants_hpp__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__numerical_constants_hpp__</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="42"><highlight class="normal"></highlight></codeline>
-<codeline lineno="43"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>pi<sp/>=<sp/>3.141592653589793238462643383279502884197;</highlight></codeline>
-<codeline lineno="44"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>root2<sp/>=<sp/>sqrt(2.0);</highlight></codeline>
-<codeline lineno="45"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>zeta3<sp/>=<sp/>1.2020569031595942855;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Riemann<sp/>zeta<sp/>function<sp/>of<sp/>3</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="46"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>hbar<sp/>=<sp/>6.582119514e-25;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>GeV<sp/>s<sp/><sp/>(http://pdg.lbl.gov/2017/reviews/rpp2017-rev-phys-constants.pdf)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>K2eV<sp/>=<sp/>8.6173303e-5;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>eV<sp/>per<sp/>K</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="48"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>eV2g<sp/>=<sp/>1.782661907e-33;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>eV<sp/>per<sp/>g</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="49"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>gev2cm<sp/>=<sp/>197.327053e-16;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>cm<sp/>per<sp/>GeV^-1</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="50"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>gev2cm2<sp/>=<sp/><ref refid="scanner__utils_8hpp_1a40cbcd2cdb26318cca622e0584a8d67f" kindref="member">pow</ref>(197.327053e-16,<sp/>2.0);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>cm^2<sp/>per<sp/>GeV^-2</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="51"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>gev2pb<sp/>=<sp/>gev2cm2*1e36;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>pb<sp/>per<sp/>GeV^-2</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="52"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>gev2tocm3s1<sp/>=<sp/>1.16733e-17;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>cm^3<sp/>s^-1<sp/>per<sp/>GeV^-2</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="53"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>s2cm<sp/>=<sp/>2.99792458e10;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>cm<sp/>per<sp/>s</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="54"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_planck<sp/>=<sp/>1.220910e19;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Planck<sp/>mass<sp/>(GeV)<sp/></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_planck_red<sp/>=<sp/>m_planck/sqrt(8.0*pi);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>reduced<sp/>Planck<sp/>mass<sp/>(GeV)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="56"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>atomic_mass_unit<sp/>=<sp/>0.931494028;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>atomic<sp/>mass<sp/>unit<sp/>(GeV/c^2)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="57"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_proton_amu<sp/>=<sp/>1.00727646688;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>proton<sp/>mass<sp/>(amu)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_neutron_amu<sp/>=<sp/>1.0086649156;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>neutron<sp/>mass<sp/>(amu)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="59"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_proton<sp/>=<sp/>m_proton_amu<sp/>*<sp/>atomic_mass_unit;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>proton<sp/>mass<sp/>(GeV/c^2)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="60"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_neutron<sp/>=<sp/>m_neutron_amu<sp/>*<sp/>atomic_mass_unit;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>neutron<sp/>mass<sp/>(GeV/c^2)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="61"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_deuteron<sp/>=<sp/>1.87561294257;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>deuteron<sp/>mass<sp/>(GeV/c^2)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="62"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_electron<sp/>=<sp/>0.5109989461e-3;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>electron<sp/>mass<sp/>(GeV/c^2)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="63"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>alpha_EM<sp/>=<sp/>7.2973525664e-3;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>fine<sp/>structure<sp/>constant</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="64"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="65"><highlight class="comment"><sp/><sp/>///<sp/>Values<sp/>from<sp/>Particle<sp/>Data<sp/>Group<sp/>2018<sp/>(http://pdg.lbl.gov/2018/reviews/rpp2018-rev-phys-constants.pdf)</highlight></codeline>
-<codeline lineno="66" refid="namespaceGambit_1a67e7ab108aa8fea8cdb4946da9fc9a9d" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1a67e7ab108aa8fea8cdb4946da9fc9a9d" kindref="member">c_SI</ref><sp/>=<sp/>s2cm/100;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>speed<sp/>of<sp/>light<sp/>in<sp/>m/s</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="67"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>eV_to_J<sp/>=<sp/>1.6021766208e-19;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>electron<sp/>charge<sp/>in<sp/>C</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="68"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Mpc_SI<sp/>=<sp/>969394202136*pow(10,11)/pi;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Mpc<sp/>in<sp/>m</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="69"><highlight class="normal"></highlight></codeline>
-<codeline lineno="70"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>GN_cgs<sp/>=<sp/>6.67408e-8;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Newton&apos;s<sp/>constant<sp/>in<sp/>cm^3.g^-1.s^-2</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="71"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>GN_SI<sp/>=<sp/>GN_cgs/1e3;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Newton&apos;s<sp/>constant<sp/>in<sp/>m^3.kg^-1.s^-2</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="72"><highlight class="normal"></highlight></codeline>
-<codeline lineno="73"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>kB_SI<sp/>=<sp/>1.38064852e-23;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Boltzmann<sp/>constant<sp/>in<sp/><sp/>Kg/K^4/s^3</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="74"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>kB_eV_over_K<sp/>=<sp/>kB_SI/eV_to_J;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Boltzmann<sp/>constant<sp/>in<sp/>eV/K</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="75"><highlight class="normal"></highlight></codeline>
-<codeline lineno="76"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>hP_SI<sp/>=<sp/>6.626070040e-34;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Planck<sp/>const.<sp/>in<sp/>Js</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="77"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>hP_eVs<sp/>=<sp/>hP_SI/eV_to_J;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Planck<sp/>const.<sp/>in<sp/>eVs</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="78"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>hc_eVcm<sp/>=hP_eVs*s2cm;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Planck<sp/>const.<sp/>x<sp/>speed<sp/>of<sp/>light<sp/>in<sp/>eV<sp/>cm</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="79"><highlight class="normal"></highlight></codeline>
-<codeline lineno="80"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sigmaB_SI<sp/>=<sp/>2*pow(pi,5)*pow(kB_SI,4)/(15*pow(hP_SI,3)*<ref refid="namespaceGambit_1a67e7ab108aa8fea8cdb4946da9fc9a9d" kindref="member">c_SI</ref>*<ref refid="namespaceGambit_1a67e7ab108aa8fea8cdb4946da9fc9a9d" kindref="member">c_SI</ref>);<sp/></highlight><highlight class="comment">//<sp/>Stefan-Boltzman<sp/>constant<sp/>in<sp/>W/m^2/K^4<sp/>=<sp/>Kg/K^4/s^3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceGambit" kindref="compound">Gambit</ref></highlight></codeline>
+<codeline lineno="46"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>pi<sp/>=<sp/>3.141592653589793238462643383279502884197;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>root2<sp/>=<sp/>sqrt(2.0);</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>zeta3<sp/>=<sp/>1.2020569031595942855;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Riemann<sp/>zeta<sp/>function<sp/>of<sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>hbar<sp/>=<sp/>6.582119514e-25;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>GeV<sp/>s<sp/><sp/>(http://pdg.lbl.gov/2017/reviews/rpp2017-rev-phys-constants.pdf)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>K2eV<sp/>=<sp/>8.6173303e-5;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>eV<sp/>per<sp/>K</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>eV2g<sp/>=<sp/>1.782661907e-33;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>eV<sp/>per<sp/>g</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>gev2cm<sp/>=<sp/>197.327053e-16;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>cm<sp/>per<sp/>GeV^-1</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>gev2cm2<sp/>=<sp/><ref refid="scanner__utils_8hpp_1a40cbcd2cdb26318cca622e0584a8d67f" kindref="member">pow</ref>(197.327053e-16,<sp/>2.0);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>cm^2<sp/>per<sp/>GeV^-2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>gev3cm3<sp/>=<sp/><ref refid="scanner__utils_8hpp_1a40cbcd2cdb26318cca622e0584a8d67f" kindref="member">pow</ref>(197.327053e-16,<sp/>3.0);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>cm^3<sp/>per<sp/>GeV^-3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>gev2pb<sp/>=<sp/>gev2cm2*1e36;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>pb<sp/>per<sp/>GeV^-2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>gev2tocm3s1<sp/>=<sp/>1.16733e-17;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>cm^3<sp/>s^-1<sp/>per<sp/>GeV^-2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>s2cm<sp/>=<sp/>2.99792458e10;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>cm<sp/>per<sp/>s</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_planck<sp/>=<sp/>1.220910e19;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Planck<sp/>mass<sp/>(GeV)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_planck_red<sp/>=<sp/>m_planck/sqrt(8.0*pi);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>reduced<sp/>Planck<sp/>mass<sp/>(GeV)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>atomic_mass_unit<sp/>=<sp/>0.931494028;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>atomic<sp/>mass<sp/>unit<sp/>(GeV/c^2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_proton_amu<sp/>=<sp/>1.00727646688;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>proton<sp/>mass<sp/>(amu)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_neutron_amu<sp/>=<sp/>1.0086649156;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>neutron<sp/>mass<sp/>(amu)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_proton<sp/>=<sp/>m_proton_amu<sp/>*<sp/>atomic_mass_unit;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>proton<sp/>mass<sp/>(GeV/c^2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_neutron<sp/>=<sp/>m_neutron_amu<sp/>*<sp/>atomic_mass_unit;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>neutron<sp/>mass<sp/>(GeV/c^2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_deuteron<sp/>=<sp/>1.87561294257;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>deuteron<sp/>mass<sp/>(GeV/c^2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m_electron<sp/>=<sp/>0.5109989461e-3;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>electron<sp/>mass<sp/>(GeV/c^2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>alpha_EM<sp/>=<sp/>7.2973525664e-3;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>fine<sp/>structure<sp/>constant</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>TCMB<sp/>=<sp/>2.725;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Photon<sp/>temperature<sp/>today<sp/>(K)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>g0_entr<sp/>=<sp/>3.91757;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>entropy<sp/>degrees<sp/>of<sp/>freedom<sp/>today</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="73"><highlight class="comment"><sp/><sp/>///<sp/>Values<sp/>from<sp/>Particle<sp/>Data<sp/>Group<sp/>2018<sp/>(http://pdg.lbl.gov/2018/reviews/rpp2018-rev-phys-constants.pdf)</highlight></codeline>
+<codeline lineno="74" refid="namespaceGambit_1a67e7ab108aa8fea8cdb4946da9fc9a9d" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1a67e7ab108aa8fea8cdb4946da9fc9a9d" kindref="member">c_SI</ref><sp/>=<sp/>s2cm/100;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>speed<sp/>of<sp/>light<sp/>in<sp/>m/s</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>c_km<sp/>=<sp/>s2cm/1e5;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>spped<sp/>of<sp/>light<sp/>in<sp/>km/s</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>eV_to_J<sp/>=<sp/>1.6021766208e-19;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>electron<sp/>charge<sp/>in<sp/>C</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Mpc_SI<sp/>=<sp/>969394202136*pow(10,11)/pi;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Mpc<sp/>in<sp/>m</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>GN_cgs<sp/>=<sp/>6.67408e-8;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Newton&apos;s<sp/>constant<sp/>in<sp/>cm^3.g^-1.s^-2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>GN_SI<sp/>=<sp/>GN_cgs/1e3;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Newton&apos;s<sp/>constant<sp/>in<sp/>m^3.kg^-1.s^-2</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="81"><highlight class="normal"></highlight></codeline>
-<codeline lineno="82"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Neff_SM<sp/>=<sp/>3.045;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>effective<sp/>number<sp/>of<sp/>relativistic<sp/>dof<sp/>in<sp/>the<sp/>early<sp/>Universe</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="83"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>value<sp/>of<sp/>3.045<sp/>holds<sp/>for<sp/>3<sp/>SM<sp/>neutrinos<sp/>in<sp/>the<sp/>absence<sp/>of<sp/>any<sp/>non-standard<sp/>particles</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="84"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>or<sp/>components.<sp/>Value<sp/>from<sp/>de<sp/>Salas,<sp/>Pastor<sp/>&apos;16,<sp/>arXiv:1606.06986</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="85"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="86"><highlight class="comment"><sp/><sp/>/**</highlight></codeline>
-<codeline lineno="87"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>@brief<sp/>Thomson<sp/>limit<sp/>of<sp/>\f$\alpha_e\f$<sp/>in<sp/>OS<sp/>scheme<sp/>from</highlight></codeline>
-<codeline lineno="88"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>&lt;a<sp/>href=&quot;http://pdg.lbl.gov/2017/reviews/rpp2017-rev-phys-constants.pdf&quot;&gt;PDG<sp/>2017&lt;/a&gt;</highlight></codeline>
-<codeline lineno="89"><highlight class="comment"><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="90" refid="namespaceGambit_1aacba88d84337f85102bda83082ae2c4c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aacba88d84337f85102bda83082ae2c4c" kindref="member">alpha_e_OS_thomson_limit</ref><sp/>=<sp/>0.0072973525664;</highlight></codeline>
-<codeline lineno="91"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="92"><highlight class="comment"><sp/><sp/>/**</highlight></codeline>
-<codeline lineno="93"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>@brief<sp/>\f$\alpha_e(M_Z)\f$<sp/>in<sp/>OS<sp/>scheme<sp/>from</highlight></codeline>
-<codeline lineno="94"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>&lt;a<sp/>href=&quot;https://arxiv.org/pdf/1105.3149.pdf&quot;&gt;1105.3149&lt;/a&gt;</highlight></codeline>
-<codeline lineno="95"><highlight class="comment"><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="96" refid="namespaceGambit_1aebc3ed21de9d109dc2d6d37ce5a2d321" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aebc3ed21de9d109dc2d6d37ce5a2d321" kindref="member">alpha_e_OS_MZ</ref><sp/>=<sp/>1.<sp/>/<sp/>128.944;</highlight></codeline>
-<codeline lineno="97"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="98"><highlight class="comment"><sp/><sp/>/**</highlight></codeline>
-<codeline lineno="99"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>@brief<sp/>\f$\Delta\alpha\f$<sp/>in<sp/>OS<sp/>scheme.</highlight></codeline>
-<codeline lineno="100"><highlight class="comment"></highlight></codeline>
-<codeline lineno="101"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>Defined<sp/>by</highlight></codeline>
-<codeline lineno="102"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>\f[</highlight></codeline>
-<codeline lineno="103"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>\alpha(M_Z)<sp/>=<sp/>\frac{\alpha(0)}{1<sp/>-<sp/>\Delta\alpha}</highlight></codeline>
-<codeline lineno="104"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>\f]</highlight></codeline>
-<codeline lineno="105"><highlight class="comment"><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="106" refid="namespaceGambit_1abaae45327e7fd7cd617d88df7d91fde7" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1abaae45327e7fd7cd617d88df7d91fde7" kindref="member">delta_alpha_OS</ref><sp/>=<sp/>1.<sp/>-<sp/><ref refid="namespaceGambit_1aacba88d84337f85102bda83082ae2c4c" kindref="member">alpha_e_OS_thomson_limit</ref><sp/>/<sp/><ref refid="namespaceGambit_1aebc3ed21de9d109dc2d6d37ce5a2d321" kindref="member">alpha_e_OS_MZ</ref>;</highlight></codeline>
-<codeline lineno="107"><highlight class="normal"></highlight></codeline>
-<codeline lineno="108"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">Mesons_masses</highlight></codeline>
-<codeline lineno="109"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
-<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>pi0<sp/>=<sp/>0.135;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>neutral<sp/>pion<sp/>mass<sp/>(GeV/c^2)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>pi_plus<sp/>=<sp/>0.1396;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>charged<sp/>pion<sp/>mass<sp/>(GeV/c^2)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>pi_minus<sp/>=<sp/>0.1396;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>charged<sp/>pion<sp/>mass<sp/>(GeV/c^2)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>eta<sp/>=<sp/>0.547;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>eta<sp/>mass<sp/>(GeV/c^2)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>rho0<sp/>=<sp/>0.775;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>neutral<sp/>rho<sp/>meson<sp/>mass<sp/>(GeV/c^2)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>rho_plus<sp/>=<sp/>0.775;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>charged<sp/>rho<sp/>meson<sp/>mass<sp/>(GeV/c^2)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>rho_minus<sp/>=<sp/>0.775;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>charged<sp/>rho<sp/>meson<sp/>mass<sp/>(GeV/c^2)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>omega<sp/>=<sp/>0.7827;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>omega<sp/>meson<sp/>mass<sp/>(GeV/c^2)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>kaon_plus<sp/>=<sp/>0.4937;<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>charged<sp/>kaon<sp/>meson<sp/>mass<sp/>(GeV/c^2)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>kaon_minus<sp/>=<sp/>0.4937;<sp/><sp/></highlight><highlight class="comment">//<sp/>charged<sp/>kaon<sp/>meson<sp/>mass<sp/>(GeV/c^2)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>kaon0<sp/>=<sp/>0.4976;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>neutral<sp/>kaon<sp/>meson<sp/>mass<sp/>(GeV/c^2)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>rho1450<sp/>=<sp/>1.465;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>rho(1450)<sp/>mass<sp/>(GeV/c^2)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>D_plus<sp/>=<sp/>1.86962;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>charged<sp/>D<sp/>meson<sp/>mass<sp/>(GeV/c^2)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>D_s<sp/>=<sp/>1.96847;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>D_s<sp/>meson<sp/>mass<sp/>(GeV/c^2)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>B_plus<sp/>=<sp/>5.27929;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>charged<sp/>B<sp/>meson<sp/>mass<sp/>(GeV/c^2)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>B_s<sp/>=<sp/>5.36679;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>B_s<sp/>meson<sp/>mass<sp/>(GeV/c^2)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>B_c<sp/>=<sp/>6.2751;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>B_c<sp/>meson<sp/>mass<sp/>(GeV/c^2)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>eta_prime<sp/>=<sp/>0.95778;<sp/><sp/></highlight><highlight class="comment">//<sp/>eta<sp/>prime<sp/>meson<sp/>mass<sp/>(GeV/c^2)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>eta_c<sp/>=<sp/>2.9839;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>eta_c<sp/>meson<sp/>mass<sp/>(GeV/c^2)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Dstar_plus<sp/>=<sp/>2.01026;<sp/></highlight><highlight class="comment">//<sp/>charged<sp/>D*<sp/>meson<sp/>mass<sp/>(GeV/c^2)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Dstar_s<sp/>=<sp/>2.1122;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>D*_s<sp/>meson<sp/>mass<sp/>(GeV/c^2)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>phi<sp/>=<sp/>1.019461;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>phi<sp/>meson<sp/>mass<sp/>(GeV/c^2)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Jpsi<sp/>=<sp/>3.0969;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Jpsi<sp/>meson<sp/>mass<sp/>(GeV/c^2)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="133"><highlight class="normal"><sp/><sp/>}<sp/>meson_masses;</highlight></codeline>
-<codeline lineno="134"><highlight class="normal"></highlight></codeline>
-<codeline lineno="135"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">Mesons_decay_constants</highlight></codeline>
-<codeline lineno="136"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
-<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>PDG<sp/>2018</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>pi_plus<sp/>=<sp/>0.1302;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(GeV)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>pi0<sp/>=<sp/>0.1302;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(GeV)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>K_plus<sp/>=<sp/>0.1557;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(GeV)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>D_plus<sp/>=<sp/>0.2126;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(GeV)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>D_s<sp/>=<sp/>0.2499;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(GeV)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>B_plus<sp/>=<sp/>0.190;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(GeV)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="144"><highlight class="normal"></highlight></codeline>
-<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>From<sp/>1503.05762</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>B_c<sp/>=<sp/>0.434;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(GeV)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="147"><highlight class="normal"></highlight></codeline>
-<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>From<sp/>1805.08567</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>eta<sp/>=<sp/>0.0817;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(GeV)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>eta_prime<sp/>=<sp/>-0.0947;<sp/></highlight><highlight class="comment">//<sp/>(GeV)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>eta_c<sp/>=<sp/>0.237;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(GeV)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="152"><highlight class="normal"></highlight></codeline>
-<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>From<sp/>0602110,<sp/>using<sp/>tau<sp/>decays<sp/>for<sp/>rho</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>rho_plus<sp/>=<sp/>0.209;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(GeV)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>rho0<sp/>=<sp/>0.209;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(GeV)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>phi<sp/>=<sp/>0.229;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(GeV)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="157"><highlight class="normal"></highlight></codeline>
-<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>From<sp/>1708.07274,<sp/>average<sp/>of<sp/>theoretical<sp/>computations</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Dstar_plus<sp/>=<sp/>0.24675;</highlight><highlight class="comment">//<sp/>(GeV)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Dstar_s<sp/>=<sp/>0.284;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(GeV)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>kB_SI<sp/>=<sp/>1.38064852e-23;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Boltzmann<sp/>constant<sp/>in<sp/><sp/>Kg/K^4/s^3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>kB_eV_over_K<sp/>=<sp/>kB_SI/eV_to_J;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Boltzmann<sp/>constant<sp/>in<sp/>eV/K</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>hP_SI<sp/>=<sp/>6.626070040e-34;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Planck<sp/>const.<sp/>in<sp/>Js</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>hP_eVs<sp/>=<sp/>hP_SI/eV_to_J;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Planck<sp/>const.<sp/>in<sp/>eVs</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>hc_eVcm<sp/>=hP_eVs*s2cm;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Planck<sp/>const.<sp/>x<sp/>speed<sp/>of<sp/>light<sp/>in<sp/>eV<sp/>cm</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sigmaB_SI<sp/>=<sp/>2*pow(pi,5)*pow(kB_SI,4)/(15*pow(hP_SI,3)*<ref refid="namespaceGambit_1a67e7ab108aa8fea8cdb4946da9fc9a9d" kindref="member">c_SI</ref>*<ref refid="namespaceGambit_1a67e7ab108aa8fea8cdb4946da9fc9a9d" kindref="member">c_SI</ref>);<sp/></highlight><highlight class="comment">//<sp/>Stefan-Boltzman<sp/>constant<sp/>in<sp/>W/m^2/K^4<sp/>=<sp/>Kg/K^4/s^3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Neff_SM<sp/>=<sp/>3.045;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>effective<sp/>number<sp/>of<sp/>relativistic<sp/>dof<sp/>in<sp/>the<sp/>early<sp/>Universe</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>value<sp/>of<sp/>3.045<sp/>holds<sp/>for<sp/>3<sp/>SM<sp/>neutrinos<sp/>in<sp/>the<sp/>absence<sp/>of<sp/>any<sp/>non-standard<sp/>particles</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/></highlight><highlight class="comment">//<sp/>or<sp/>components.<sp/>Value<sp/>from<sp/>de<sp/>Salas,<sp/>Pastor<sp/>&apos;16,<sp/>arXiv:1606.06986</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="95"><highlight class="comment"><sp/><sp/>/**</highlight></codeline>
+<codeline lineno="96"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>@brief<sp/>Thomson<sp/>limit<sp/>of<sp/>\f$\alpha_e\f$<sp/>in<sp/>OS<sp/>scheme<sp/>from</highlight></codeline>
+<codeline lineno="97"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>&lt;a<sp/>href=&quot;http://pdg.lbl.gov/2017/reviews/rpp2017-rev-phys-constants.pdf&quot;&gt;PDG<sp/>2017&lt;/a&gt;</highlight></codeline>
+<codeline lineno="98"><highlight class="comment"><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99" refid="namespaceGambit_1aacba88d84337f85102bda83082ae2c4c" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aacba88d84337f85102bda83082ae2c4c" kindref="member">alpha_e_OS_thomson_limit</ref><sp/>=<sp/>0.0072973525664;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="101"><highlight class="comment"><sp/><sp/>/**</highlight></codeline>
+<codeline lineno="102"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>@brief<sp/>\f$\alpha_e(M_Z)\f$<sp/>in<sp/>OS<sp/>scheme<sp/>from</highlight></codeline>
+<codeline lineno="103"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>&lt;a<sp/>href=&quot;https://arxiv.org/pdf/1105.3149.pdf&quot;&gt;1105.3149&lt;/a&gt;</highlight></codeline>
+<codeline lineno="104"><highlight class="comment"><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105" refid="namespaceGambit_1aebc3ed21de9d109dc2d6d37ce5a2d321" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aebc3ed21de9d109dc2d6d37ce5a2d321" kindref="member">alpha_e_OS_MZ</ref><sp/>=<sp/>1.<sp/>/<sp/>128.944;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="107"><highlight class="comment"><sp/><sp/>/**</highlight></codeline>
+<codeline lineno="108"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>@brief<sp/>\f$\Delta\alpha\f$<sp/>in<sp/>OS<sp/>scheme.</highlight></codeline>
+<codeline lineno="109"><highlight class="comment"></highlight></codeline>
+<codeline lineno="110"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>Defined<sp/>by</highlight></codeline>
+<codeline lineno="111"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>\f[</highlight></codeline>
+<codeline lineno="112"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>\alpha(M_Z)<sp/>=<sp/>\frac{\alpha(0)}{1<sp/>-<sp/>\Delta\alpha}</highlight></codeline>
+<codeline lineno="113"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>\f]</highlight></codeline>
+<codeline lineno="114"><highlight class="comment"><sp/><sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115" refid="namespaceGambit_1abaae45327e7fd7cd617d88df7d91fde7" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1abaae45327e7fd7cd617d88df7d91fde7" kindref="member">delta_alpha_OS</ref><sp/>=<sp/>1.<sp/>-<sp/><ref refid="namespaceGambit_1aacba88d84337f85102bda83082ae2c4c" kindref="member">alpha_e_OS_thomson_limit</ref><sp/>/<sp/><ref refid="namespaceGambit_1aebc3ed21de9d109dc2d6d37ce5a2d321" kindref="member">alpha_e_OS_MZ</ref>;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">Mesons_masses</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>pi0<sp/>=<sp/>0.135;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>neutral<sp/>pion<sp/>mass<sp/>(GeV/c^2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>pi_plus<sp/>=<sp/>0.1396;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>charged<sp/>pion<sp/>mass<sp/>(GeV/c^2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>pi_minus<sp/>=<sp/>0.1396;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>charged<sp/>pion<sp/>mass<sp/>(GeV/c^2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>eta<sp/>=<sp/>0.547;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>eta<sp/>mass<sp/>(GeV/c^2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>rho0<sp/>=<sp/>0.775;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>neutral<sp/>rho<sp/>meson<sp/>mass<sp/>(GeV/c^2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>rho_plus<sp/>=<sp/>0.775;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>charged<sp/>rho<sp/>meson<sp/>mass<sp/>(GeV/c^2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>rho_minus<sp/>=<sp/>0.775;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>charged<sp/>rho<sp/>meson<sp/>mass<sp/>(GeV/c^2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>omega<sp/>=<sp/>0.7827;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>omega<sp/>meson<sp/>mass<sp/>(GeV/c^2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>kaon_plus<sp/>=<sp/>0.4937;<sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>charged<sp/>kaon<sp/>meson<sp/>mass<sp/>(GeV/c^2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>kaon_minus<sp/>=<sp/>0.4937;<sp/><sp/></highlight><highlight class="comment">//<sp/>charged<sp/>kaon<sp/>meson<sp/>mass<sp/>(GeV/c^2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>kaon0<sp/>=<sp/>0.4976;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>neutral<sp/>kaon<sp/>meson<sp/>mass<sp/>(GeV/c^2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>rho1450<sp/>=<sp/>1.465;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>rho(1450)<sp/>mass<sp/>(GeV/c^2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>D_plus<sp/>=<sp/>1.86962;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>charged<sp/>D<sp/>meson<sp/>mass<sp/>(GeV/c^2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>D_s<sp/>=<sp/>1.96847;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>D_s<sp/>meson<sp/>mass<sp/>(GeV/c^2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>B_plus<sp/>=<sp/>5.27929;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>charged<sp/>B<sp/>meson<sp/>mass<sp/>(GeV/c^2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>B_s<sp/>=<sp/>5.36679;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>B_s<sp/>meson<sp/>mass<sp/>(GeV/c^2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>B_c<sp/>=<sp/>6.2751;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>B_c<sp/>meson<sp/>mass<sp/>(GeV/c^2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>eta_prime<sp/>=<sp/>0.95778;<sp/><sp/></highlight><highlight class="comment">//<sp/>eta<sp/>prime<sp/>meson<sp/>mass<sp/>(GeV/c^2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>eta_c<sp/>=<sp/>2.9839;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>eta_c<sp/>meson<sp/>mass<sp/>(GeV/c^2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Dstar_plus<sp/>=<sp/>2.01026;<sp/></highlight><highlight class="comment">//<sp/>charged<sp/>D*<sp/>meson<sp/>mass<sp/>(GeV/c^2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Dstar_s<sp/>=<sp/>2.1122;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>D*_s<sp/>meson<sp/>mass<sp/>(GeV/c^2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>phi<sp/>=<sp/>1.019461;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>phi<sp/>meson<sp/>mass<sp/>(GeV/c^2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Jpsi<sp/>=<sp/>3.0969;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Jpsi<sp/>meson<sp/>mass<sp/>(GeV/c^2)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/>}<sp/>meson_masses;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">Mesons_decay_constants</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>PDG<sp/>2018</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>pi_plus<sp/>=<sp/>0.1302;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(GeV)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>pi0<sp/>=<sp/>0.1302;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(GeV)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>K_plus<sp/>=<sp/>0.1557;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(GeV)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>D_plus<sp/>=<sp/>0.2126;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(GeV)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>D_s<sp/>=<sp/>0.2499;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(GeV)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>B_plus<sp/>=<sp/>0.190;<sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(GeV)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>From<sp/>1503.05762</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>B_c<sp/>=<sp/>0.434;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(GeV)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>From<sp/>1805.08567</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>eta<sp/>=<sp/>0.0817;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(GeV)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>eta_prime<sp/>=<sp/>-0.0947;<sp/></highlight><highlight class="comment">//<sp/>(GeV)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>eta_c<sp/>=<sp/>0.237;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(GeV)</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="161"><highlight class="normal"></highlight></codeline>
-<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>From<sp/>0901.3589,<sp/>thought<sp/>not<sp/>sure<sp/>where<sp/>they<sp/>got<sp/>it<sp/>from</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>omega<sp/>=<sp/>0.195;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(GeV)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="164"><highlight class="normal"></highlight></codeline>
-<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>From<sp/>1312.2858</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Jpsi<sp/>=<sp/>0.418;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(GeV)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="167"><highlight class="normal"></highlight></codeline>
-<codeline lineno="168"><highlight class="normal"><sp/><sp/>}<sp/>meson_decay_constants;</highlight></codeline>
-<codeline lineno="169"><highlight class="normal"></highlight></codeline>
-<codeline lineno="170"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="171"><highlight class="comment"><sp/><sp/>///<sp/>M_W<sp/>(Breit-Wigner<sp/>mass<sp/>parameter<sp/>~<sp/>pole)<sp/>=<sp/>80.385<sp/>+/-<sp/>0.015<sp/><sp/>GeV<sp/>(1<sp/>sigma),<sp/>Gaussian.</highlight></codeline>
-<codeline lineno="172"><highlight class="comment"><sp/><sp/>///<sp/>Reference<sp/>http://pdg.lbl.gov/2014/listings/rpp2014-list-w-boson.pdf<sp/>=<sp/>K.A.<sp/>Olive<sp/>et<sp/>al.<sp/>(Particle<sp/>Data<sp/>Group),<sp/>Chin.<sp/>Phys.<sp/>C38,<sp/>090001<sp/>(2014)</highlight></codeline>
-<codeline lineno="173"><highlight class="comment"><sp/><sp/>///<sp/>@{</highlight></codeline>
-<codeline lineno="174" refid="namespaceGambit_1a905d504ecbc60fe4e6f52b477432a44c" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1a905d504ecbc60fe4e6f52b477432a44c" kindref="member">mw_central_observed</ref><sp/>=<sp/>80.385;</highlight></codeline>
-<codeline lineno="175"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>mw_err_observed<sp/>=<sp/>0.015;</highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="176"><highlight class="comment"><sp/><sp/>///<sp/>@}</highlight></codeline>
-<codeline lineno="177"><highlight class="comment"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="178"><highlight class="comment"><sp/><sp/>///<sp/>M_Z<sp/>(Breit-Wigner<sp/>mass<sp/>parameter<sp/>~<sp/>pole)<sp/>=<sp/>91.1876<sp/>+/-<sp/>0.0021<sp/><sp/>GeV<sp/>(1<sp/>sigma),<sp/>Gaussian.</highlight></codeline>
-<codeline lineno="179"><highlight class="comment"><sp/><sp/>///<sp/>Reference<sp/>https://pdg.lbl.gov/2022/listings/rpp2022-list-z-boson.pdf<sp/>=<sp/>R.L.<sp/>Workmanet<sp/>al.<sp/>(Particle<sp/>Data<sp/>Group),<sp/>Prog.<sp/>Theor.<sp/>Exp.<sp/>Phys.<sp/>2022,<sp/>083C01<sp/>(2022)</highlight></codeline>
-<codeline lineno="180"><highlight class="comment"><sp/><sp/>///<sp/>@{</highlight></codeline>
-<codeline lineno="181" refid="namespaceGambit_1afaada04d60cd1805b4bd39facb4431f1" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1afaada04d60cd1805b4bd39facb4431f1" kindref="member">mz_central_observed</ref><sp/>=<sp/>91.1876;</highlight></codeline>
-<codeline lineno="182"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>mz_err_observed<sp/>=<sp/>0.0021;</highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="183"><highlight class="comment"><sp/><sp/>///<sp/>@}</highlight></codeline>
-<codeline lineno="184"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="185"><highlight class="normal"></highlight></codeline>
-<codeline lineno="186"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="187"><highlight class="normal"></highlight></codeline>
-<codeline lineno="188"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//#defined<sp/>__numerical_constants_hpp__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>From<sp/>0602110,<sp/>using<sp/>tau<sp/>decays<sp/>for<sp/>rho</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>rho_plus<sp/>=<sp/>0.209;<sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(GeV)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>rho0<sp/>=<sp/>0.209;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(GeV)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>phi<sp/>=<sp/>0.229;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(GeV)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="166"><highlight class="normal"></highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>From<sp/>1708.07274,<sp/>average<sp/>of<sp/>theoretical<sp/>computations</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Dstar_plus<sp/>=<sp/>0.24675;</highlight><highlight class="comment">//<sp/>(GeV)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Dstar_s<sp/>=<sp/>0.284;<sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(GeV)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>From<sp/>0901.3589,<sp/>thought<sp/>not<sp/>sure<sp/>where<sp/>they<sp/>got<sp/>it<sp/>from</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>omega<sp/>=<sp/>0.195;<sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(GeV)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>From<sp/>1312.2858</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Jpsi<sp/>=<sp/>0.418;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(GeV)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/>}<sp/>meson_decay_constants;</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="180"><highlight class="comment"><sp/><sp/>///<sp/>M_W<sp/>(Breit-Wigner<sp/>mass<sp/>parameter<sp/>~<sp/>pole)<sp/>=<sp/>80.385<sp/>+/-<sp/>0.015<sp/><sp/>GeV<sp/>(1<sp/>sigma),<sp/>Gaussian.</highlight></codeline>
+<codeline lineno="181"><highlight class="comment"><sp/><sp/>///<sp/>Reference<sp/>http://pdg.lbl.gov/2014/listings/rpp2014-list-w-boson.pdf<sp/>=<sp/>K.A.<sp/>Olive<sp/>et<sp/>al.<sp/>(Particle<sp/>Data<sp/>Group),<sp/>Chin.<sp/>Phys.<sp/>C38,<sp/>090001<sp/>(2014)</highlight></codeline>
+<codeline lineno="182"><highlight class="comment"><sp/><sp/>///<sp/>@{</highlight></codeline>
+<codeline lineno="183" refid="namespaceGambit_1a905d504ecbc60fe4e6f52b477432a44c" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1a905d504ecbc60fe4e6f52b477432a44c" kindref="member">mw_central_observed</ref><sp/>=<sp/>80.385;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>mw_err_observed<sp/>=<sp/>0.015;</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="185"><highlight class="comment"><sp/><sp/>///<sp/>@}</highlight></codeline>
+<codeline lineno="186"><highlight class="comment"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="187"><highlight class="comment"><sp/><sp/>///<sp/>M_Z<sp/>(Breit-Wigner<sp/>mass<sp/>parameter<sp/>~<sp/>pole)<sp/>=<sp/>91.1876<sp/>+/-<sp/>0.0021<sp/><sp/>GeV<sp/>(1<sp/>sigma),<sp/>Gaussian.</highlight></codeline>
+<codeline lineno="188"><highlight class="comment"><sp/><sp/>///<sp/>Reference<sp/>https://pdg.lbl.gov/2022/listings/rpp2022-list-z-boson.pdf<sp/>=<sp/>R.L.<sp/>Workmanet<sp/>al.<sp/>(Particle<sp/>Data<sp/>Group),<sp/>Prog.<sp/>Theor.<sp/>Exp.<sp/>Phys.<sp/>2022,<sp/>083C01<sp/>(2022)</highlight></codeline>
+<codeline lineno="189"><highlight class="comment"><sp/><sp/>///<sp/>@{</highlight></codeline>
+<codeline lineno="190" refid="namespaceGambit_1afaada04d60cd1805b4bd39facb4431f1" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1afaada04d60cd1805b4bd39facb4431f1" kindref="member">mz_central_observed</ref><sp/>=<sp/>91.1876;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>mz_err_observed<sp/>=<sp/>0.0021;</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="192"><highlight class="comment"><sp/><sp/>///<sp/>@}</highlight></codeline>
+<codeline lineno="193"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="196"><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//#defined<sp/>__numerical_constants_hpp__</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="Utils/include/gambit/Utils/numerical_constants.hpp"/>
   </compounddef>

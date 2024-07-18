@@ -309,7 +309,7 @@ namespace Gambit {
         const std::vector<double>  b = {0,10000.};
         const std::vector<double> c = {0.77}; // set b-tag efficiency to 77%
         HEPUtils::BinnedFn2D<double> _eff2d(a,b,c);
-        for (const HEPUtils::Jet* jet : event->jets())
+        for (const HEPUtils::Jet* jet : event->jets("antikt_R04"))
         {
           bool hasTag=has_tag(_eff2d, fabs(jet->eta()), jet->pT());
           if (jet->pT() > 20. && fabs(jet->eta()) < 2.8)
@@ -1261,4 +1261,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:07 +0000
+Updated on 2024-07-18 at 13:53:34 +0000

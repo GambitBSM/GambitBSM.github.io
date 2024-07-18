@@ -53,6 +53,8 @@ Inherits from [Gambit::Printers::BasePrinter](/documentation/code/classes/classg
 | | **[BasePrinter](/documentation/code/classes/classgambit_1_1printers_1_1baseprinter/#function-baseprinter)**([BasePrinter](/documentation/code/classes/classgambit_1_1printers_1_1baseprinter/) *const primary, bool is_aux_IN) |
 | virtual | **[~BasePrinter](/documentation/code/classes/classgambit_1_1printers_1_1baseprinter/#function-baseprinter)**()<br>Destructor.  |
 | void | **[set_as_aux](/documentation/code/classes/classgambit_1_1printers_1_1baseprinter/#function-set-as-aux)**()<br>Set this as an auxilliary printer.  |
+| void | **[set_output_metadata](/documentation/code/classes/classgambit_1_1printers_1_1baseprinter/#function-set-output-metadata)**(bool use_metadata)<br>Set/Get whether to print the metadata.  |
+| bool | **[get_output_metadata](/documentation/code/classes/classgambit_1_1printers_1_1baseprinter/#function-get-output-metadata)**() |
 | virtual void | **[auxilliary_init](/documentation/code/classes/classgambit_1_1printers_1_1baseprinter/#function-auxilliary-init)**() |
 | [BasePrinter](/documentation/code/classes/classgambit_1_1printers_1_1baseprinter/) * | **[get_primary_printer](/documentation/code/classes/classgambit_1_1printers_1_1baseprinter/#function-get-primary-printer)**() |
 | bool | **[is_auxilliary_printer](/documentation/code/classes/classgambit_1_1printers_1_1baseprinter/#function-is-auxilliary-printer)**() |
@@ -315,4 +317,4 @@ Map containing pointers to all VertexBuffers, across all printers
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:04 +0000
+Updated on 2024-07-18 at 13:53:32 +0000

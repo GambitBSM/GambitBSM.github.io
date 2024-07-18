@@ -47,7 +47,7 @@ description: "[No description available]"
 **Date**: 
 
   * 2012 Mar, 2014 Jan
-  * 2013 Jun
+  * 2013 Jun, 2023
   * 2013 Oct 
   * 2014 Jan, Apr 
   * 2015 Mar 
@@ -108,7 +108,7 @@ Authors (add name and date if you modify):
 ///
 ///  \author Torsten Bringmann
 ///          (torsten.bringmann@fys.uio.no)
-///  \date 2013 Jun
+///  \date 2013 Jun, 2023
 ///
 ///  \author Pat Scott
 ///          (pat.scott@uq.edu.au)
@@ -205,6 +205,7 @@ namespace Gambit
       std::vector<TH_Resonance> resonances;
       std::vector<double> threshold_energy;
       std::string particle_index_type;
+      double etaDM; // primordial asymmetry
       bool isSelfConj;
     };
 
@@ -293,4 +294,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:06 +0000
+Updated on 2024-07-18 at 13:53:34 +0000

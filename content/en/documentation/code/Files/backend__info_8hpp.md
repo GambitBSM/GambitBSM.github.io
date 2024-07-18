@@ -110,10 +110,6 @@ Authors (add name and date if you modify):
   #endif
 #endif
 #ifdef HAVE_PYBIND11
-  namespace pybind11
-  {
-    class scoped_interpreter;
-  }
   #include "gambit/Utils/begin_ignore_warnings_pybind11.hpp"
   #include <pybind11/pybind11.h>
   #include "gambit/Utils/end_ignore_warnings.hpp"
@@ -272,21 +268,6 @@ namespace Gambit
         #ifdef HAVE_PYBIND11
           /// Load a Python backend module
           void loadLibrary_Python(const str&, const str&, const str&, const str&);
-
-          /// Python sys modudle
-          pybind11::module* sys;
-
-          /// Python os modudle
-          pybind11::module* os;
-
-          /// Pointer to the Python interpreter
-          pybind11::scoped_interpreter* python_interpreter;
-
-          /// Indicate whether Python has been started or not
-          bool python_started;
-
-          /// Fire up the Python interpreter
-          void start_python();
         #endif
 
     };
@@ -302,4 +283,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:08 +0000
+Updated on 2024-07-18 at 13:53:35 +0000

@@ -23,10 +23,15 @@
     <includedby refid="DarkBit_2src_2MajoranaSingletDM_8cpp" local="yes">MajoranaSingletDM.cpp</includedby>
     <includedby refid="PPPC_8hpp" local="yes">PPPC.hpp</includedby>
     <includedby refid="DarkBit_2src_2ScalarSingletDM_8cpp" local="yes">ScalarSingletDM.cpp</includedby>
+    <includedby refid="SubGeVDM__SelfInteractions_8cpp" local="yes">SubGeVDM_SelfInteractions.cpp</includedby>
+    <includedby refid="SubGeVDM__fermion_8cpp" local="yes">SubGeVDM_fermion.cpp</includedby>
+    <includedby refid="SubGeVDM__scalar_8cpp" local="yes">SubGeVDM_scalar.cpp</includedby>
     <includedby refid="DarkBit_2src_2VectorSingletDM_8cpp" local="yes">VectorSingletDM.cpp</includedby>
+    <includedby refid="Xray_8cpp" local="yes">Xray.cpp</includedby>
     <includedby refid="ascii__table__reader_8cpp" local="yes">ascii_table_reader.cpp</includedby>
     <includedby refid="interp__collection_8cpp" local="yes">interp_collection.cpp</includedby>
     <includedby refid="virtual__higgs_8cpp" local="yes">virtual_higgs.cpp</includedby>
+    <includedby refid="virtual__photon_8cpp" local="yes">virtual_photon.cpp</includedby>
     <incdepgraph>
       <node id="33">
         <label>gambit/Logs/log_tags.hpp</label>
@@ -270,16 +275,36 @@
         <link refid="DarkBit_2src_2ScalarSingletDM_8cpp"/>
       </node>
       <node id="16">
+        <label>SubGeVDM_SelfInteractions.cpp</label>
+        <link refid="SubGeVDM__SelfInteractions_8cpp"/>
+      </node>
+      <node id="17">
+        <label>SubGeVDM_fermion.cpp</label>
+        <link refid="SubGeVDM__fermion_8cpp"/>
+      </node>
+      <node id="18">
+        <label>SubGeVDM_scalar.cpp</label>
+        <link refid="SubGeVDM__scalar_8cpp"/>
+      </node>
+      <node id="19">
         <label>VectorSingletDM.cpp</label>
         <link refid="DarkBit_2src_2VectorSingletDM_8cpp"/>
+      </node>
+      <node id="20">
+        <label>Xray.cpp</label>
+        <link refid="Xray_8cpp"/>
       </node>
       <node id="9">
         <label>DecayBit.cpp</label>
         <link refid="DecayBit_8cpp"/>
       </node>
-      <node id="19">
+      <node id="23">
         <label>virtual_higgs.cpp</label>
         <link refid="virtual__higgs_8cpp"/>
+      </node>
+      <node id="24">
+        <label>virtual_photon.cpp</label>
+        <link refid="virtual__photon_8cpp"/>
       </node>
       <node id="1">
         <label>ascii_table_reader.hpp</label>
@@ -318,12 +343,22 @@
         </childnode>
         <childnode refid="19" relation="include">
         </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
       </node>
-      <node id="17">
+      <node id="21">
         <label>ascii_table_reader.cpp</label>
         <link refid="ascii__table__reader_8cpp"/>
       </node>
-      <node id="18">
+      <node id="22">
         <label>interp_collection.cpp</label>
         <link refid="interp__collection_8cpp"/>
       </node>

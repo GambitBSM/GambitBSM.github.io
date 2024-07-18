@@ -15,16 +15,16 @@ description: "[No description available]"
 | -------------- |
 | **[Gambit](/documentation/code/namespaces/namespacegambit/)** <br>TODO: see if we can use this one:  |
 | **[Gambit::IniParser](/documentation/code/namespaces/namespacegambit_1_1iniparser/)**  |
-| **[Gambit::IniParser::Types](/documentation/code/namespaces/namespacegambit_1_1iniparser_1_1types/)**  |
 | **[YAML](/documentation/code/namespaces/namespaceyaml/)** <br>[YAML]() overloads for mass cut and mass cut ratio constituents.  |
 
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[Gambit::IniParser::Types::Observable](/documentation/code/classes/structgambit_1_1iniparser_1_1types_1_1observable/)**  |
 | class | **[Gambit::IniParser::IniFile](/documentation/code/classes/classgambit_1_1iniparser_1_1inifile/)** <br>Main inifile class.  |
-| struct | **[YAML::convert< Gambit::IniParser::Types::Observable >](/documentation/code/classes/structyaml_1_1convert_3_01gambit_1_1iniparser_1_1types_1_1observable_01_4/)**  |
+| struct | **[YAML::convert< Gambit::DRes::Observable >](/documentation/code/classes/structyaml_1_1convert_3_01gambit_1_1dres_1_1observable_01_4/)**  |
+| struct | **[YAML::convert< Gambit::DRes::ModuleRule >](/documentation/code/classes/structyaml_1_1convert_3_01gambit_1_1dres_1_1modulerule_01_4/)**  |
+| struct | **[YAML::convert< Gambit::DRes::BackendRule >](/documentation/code/classes/structyaml_1_1convert_3_01gambit_1_1dres_1_1backendrule_01_4/)**  |
 
 ## Detailed Description
 
@@ -42,7 +42,8 @@ description: "[No description available]"
   * 2014 Feb
   * 2014 Mar 
   * 2015 Mar 
-  * 2020 Apr
+  * 2020 Apr 
+  * 2022 Nov
 
 
 Ini-file parser based on yaml-cpp
@@ -86,15 +87,16 @@ Authors (add name and date if you modify):
 ///  \date 2014 Mar
 ///  \date 2015 Mar
 ///  \date 2020 Apr
+///  \date 2022 Nov
 ///
 ///  *********************************************
 
-#ifndef __yaml_parser_hpp__
-#define __yaml_parser_hpp__
+#pragma once
 
+#include "gambit/Core/observable.hpp"
+#include "gambit/Core/rule.hpp"
 #include "gambit/Utils/yaml_parser_base.hpp"
 #include "gambit/Utils/util_functions.hpp"
-#include "gambit/Elements/type_equivalency.hpp"
 
 #include "yaml-cpp/yaml.h"
 
@@ -105,58 +107,13 @@ namespace Gambit
   namespace IniParser
   {
 
-    namespace Types
-    {
-
-      // Dependency and Observable have the same type (and purpose entry is
-      // irrelevant for dependencies)
-      struct Observable
-      {
-        std::string purpose;
-        std::string capability;
-        std::string type;
-        std::string function;
-        std::string module;
-        std::string backend;
-        std::string version;
-        bool printme; // Instruction to printer as to whether to write result to disk
-        bool weakrule;  // Indicates that rule can be broken
-        Options options;
-        YAML::Node subcaps;
-        std::vector<Observable> dependencies;
-        std::vector<Observable> backends;
-        std::vector<std::string> functionChain;
-
-        ///Default constructor, to ensure the default values are not gibberish
-        Observable():
-          purpose(),
-          capability(),
-          type(),
-          function(),
-          module(),
-          backend(),
-          version(),
-          printme(true),
-          options(),
-          subcaps(),
-          dependencies(),
-          backends(),
-          functionChain()
-        {}
-      };
-
-    }
-
-    typedef Types::Observable ObservableType;
-    typedef std::vector<ObservableType> ObservablesType;
-
     /// Main inifile class
     class IniFile : public Parser
     {
 
       public:
 
-        // Return the filename
+        /// Return the filename
         const str filename() const;
 
         /// Read in the YAML file
@@ -164,40 +121,55 @@ namespace Gambit
 
         /// Getters for private observable and rules entries
         /// @{
-        const ObservablesType & getObservables() const;
-        const ObservablesType & getRules() const;
+        const std::vector<DRes::Observable>& getObservables() const;
+        const std::vector<DRes::ModuleRule>& getModuleRules() const;
+        const std::vector<DRes::BackendRule>& getBackendRules() const;
         /// @}
 
       private:
 
         str _filename;
-
-        ObservablesType observables;
-        ObservablesType rules;
+        std::vector<DRes::Observable> observables;
+        std::vector<DRes::ModuleRule> module_rules;
+        std::vector<DRes::BackendRule> backend_rules;
 
     };
-
 
   }
 
 }
 
 
-// Rules for inifile --> Observable mapping
 namespace YAML
 {
+
+  /// Rules for inifile --> observable/rule mapping
+  /// @{
+
   template<>
-  struct convert<Gambit::IniParser::Types::Observable>
+  struct convert<Gambit::DRes::Observable>
   {
-    static bool decode(const Node&, Gambit::IniParser::Types::Observable&);
+    static bool decode(const Node&, Gambit::DRes::Observable&);
   };
+
+  template<>
+  struct convert<Gambit::DRes::ModuleRule>
+  {
+    static bool decode(const Node&, Gambit::DRes::ModuleRule&);
+  };
+
+  template<>
+  struct convert<Gambit::DRes::BackendRule>
+  {
+    static bool decode(const Node&, Gambit::DRes::BackendRule&);
+  };
+
+  /// @}
+
 }
-
-
-#endif /* defined(__yaml_parser_hpp__) */
 ```
 
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:07 +0000
+Updated on 2024-07-18 at 13:53:34 +0000

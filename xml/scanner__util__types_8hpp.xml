@@ -1,0 +1,632 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="scanner__util__types_8hpp" kind="file" language="C++">
+    <compoundname>scanner_util_types.hpp</compoundname>
+    <includes local="no">Eigen/Dense</includes>
+    <includedby refid="scanner__utils_8hpp" local="yes">scanner_utils.hpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>scanner_util_types.hpp</label>
+        <link refid="scanner__util__types_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Eigen/Dense</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="49">
+        <label>container_factory.hpp</label>
+        <link refid="container__factory_8hpp"/>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>gambit.hpp</label>
+        <link refid="gambit_8hpp"/>
+        <childnode refid="53" relation="include">
+        </childnode>
+      </node>
+      <node id="50">
+        <label>likelihood_container.hpp</label>
+        <link refid="likelihood__container_8hpp"/>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>container_factory.cpp</label>
+        <link refid="container__factory_8cpp"/>
+      </node>
+      <node id="43">
+        <label>core.cpp</label>
+        <link refid="core_8cpp"/>
+      </node>
+      <node id="44">
+        <label>diagnostics.cpp</label>
+        <link refid="diagnostics_8cpp"/>
+      </node>
+      <node id="53">
+        <label>gambit.cpp</label>
+        <link refid="gambit_8cpp"/>
+      </node>
+      <node id="54">
+        <label>likelihood_container.cpp</label>
+        <link refid="likelihood__container_8cpp"/>
+      </node>
+      <node id="3">
+        <label>ScannerBit_standalone.cpp</label>
+        <link refid="ScannerBit__standalone_8cpp"/>
+      </node>
+      <node id="4">
+        <label>base_prior.hpp</label>
+        <link refid="base__prior_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>factory_defs.hpp</label>
+        <link refid="factory__defs_8hpp"/>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>objective_plugin.hpp</label>
+        <link refid="objective__plugin_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>plugin_defs.hpp</label>
+        <link refid="plugin__defs_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>plugin_factory.hpp</label>
+        <link refid="plugin__factory_8hpp"/>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>plugin_interface.hpp</label>
+        <link refid="plugin__interface_8hpp"/>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="42">
+        <label>plugin_loader.hpp</label>
+        <link refid="plugin__loader_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>priors.hpp</label>
+        <link refid="priors_8hpp"/>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="60">
+        <label>cauchy.hpp</label>
+        <link refid="cauchy_8hpp"/>
+        <childnode refid="61" relation="include">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>composite.hpp</label>
+        <link refid="composite_8hpp"/>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="63">
+        <label>doublelogflatjoin.hpp</label>
+        <link refid="doublelogflatjoin_8hpp"/>
+        <childnode refid="64" relation="include">
+        </childnode>
+      </node>
+      <node id="65">
+        <label>dummy.hpp</label>
+        <link refid="dummy_8hpp"/>
+      </node>
+      <node id="66">
+        <label>fixed_same_as.hpp</label>
+        <link refid="fixed__same__as_8hpp"/>
+      </node>
+      <node id="67">
+        <label>flat_log.hpp</label>
+        <link refid="flat__log_8hpp"/>
+      </node>
+      <node id="68">
+        <label>gaussian.hpp</label>
+        <link refid="gaussian_8hpp"/>
+        <childnode refid="69" relation="include">
+        </childnode>
+      </node>
+      <node id="70">
+        <label>lognormal.hpp</label>
+        <link refid="lognormal_8hpp"/>
+        <childnode refid="71" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>plugin.hpp</label>
+        <link refid="plugin_8hpp"/>
+      </node>
+      <node id="48">
+        <label>scan.hpp</label>
+        <link refid="scan_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>scanner_plugin.hpp</label>
+        <link refid="scanner__plugin_8hpp"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>scanner_util_types.hpp</label>
+        <link refid="scanner__util__types_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>scanner_utils.hpp</label>
+        <link refid="scanner__utils_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>scannerbit.hpp</label>
+        <link refid="scannerbit_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+      </node>
+      <node id="15">
+        <label>diver.hpp</label>
+        <link refid="1_80_80_2diver_8hpp"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>diver.hpp</label>
+        <link refid="1_80_82_2diver_8hpp"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="13">
+        <label>diver.hpp</label>
+        <link refid="1_80_84_2diver_8hpp"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
+        <label>great.hpp</label>
+        <link refid="great_8hpp"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>minuit2.hpp</label>
+        <link refid="minuit2_8hpp"/>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="25">
+        <label>multinest.hpp</label>
+        <link refid="multinest_8hpp"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>polychord.hpp</label>
+        <link refid="1_817_81_2polychord_8hpp"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>polychord.hpp</label>
+        <link refid="1_818_82_2polychord_8hpp"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>polychord.hpp</label>
+        <link refid="1_820_81_2polychord_8hpp"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="34">
+        <label>postprocessor.hpp</label>
+        <link refid="postprocessor__1_80_80_2postprocessor_8hpp"/>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>postprocessor.hpp</label>
+        <link refid="postprocessor__2_80_80_2postprocessor_8hpp"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>twalk.hpp</label>
+        <link refid="twalk_8hpp"/>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>examples.cpp</label>
+        <link refid="examples_8cpp"/>
+      </node>
+      <node id="73">
+        <label>plugin_comparators.cpp</label>
+        <link refid="plugin__comparators_8cpp"/>
+      </node>
+      <node id="74">
+        <label>plugin_details.cpp</label>
+        <link refid="plugin__details_8cpp"/>
+      </node>
+      <node id="58">
+        <label>plugin_loader.cpp</label>
+        <link refid="plugin__loader_8cpp"/>
+      </node>
+      <node id="61">
+        <label>cauchy.cpp</label>
+        <link refid="cauchy_8cpp"/>
+      </node>
+      <node id="72">
+        <label>composite.cpp</label>
+        <link refid="composite_8cpp"/>
+      </node>
+      <node id="64">
+        <label>doublelogflatjoin.cpp</label>
+        <link refid="doublelogflatjoin_8cpp"/>
+      </node>
+      <node id="69">
+        <label>gaussian.cpp</label>
+        <link refid="gaussian_8cpp"/>
+      </node>
+      <node id="71">
+        <label>lognormal.cpp</label>
+        <link refid="lognormal_8cpp"/>
+      </node>
+      <node id="47">
+        <label>scan.cpp</label>
+        <link refid="scan_8cpp"/>
+      </node>
+      <node id="75">
+        <label>scanner_utils.cpp</label>
+        <link refid="scanner__utils_8cpp"/>
+      </node>
+      <node id="16">
+        <label>diver.cpp</label>
+        <link refid="diver__1_80_80_2diver_8cpp"/>
+      </node>
+      <node id="12">
+        <label>diver.cpp</label>
+        <link refid="diver__1_80_82_2diver_8cpp"/>
+      </node>
+      <node id="14">
+        <label>diver.cpp</label>
+        <link refid="diver__1_80_84_2diver_8cpp"/>
+      </node>
+      <node id="18">
+        <label>great.cpp</label>
+        <link refid="great_8cpp"/>
+      </node>
+      <node id="20">
+        <label>minuit2.cpp</label>
+        <link refid="minuit2_8cpp"/>
+      </node>
+      <node id="22">
+        <label>multinest.cpp</label>
+        <link refid="multinest__3_810_2multinest_8cpp"/>
+      </node>
+      <node id="24">
+        <label>multinest.cpp</label>
+        <link refid="multinest__3_811_2multinest_8cpp"/>
+      </node>
+      <node id="23">
+        <label>multinest.cpp</label>
+        <link refid="multinest__3_812_2multinest_8cpp"/>
+      </node>
+      <node id="26">
+        <label>polychord.cpp</label>
+        <link refid="polychord__1_817_81_2polychord_8cpp"/>
+      </node>
+      <node id="27">
+        <label>polychord.cpp</label>
+        <link refid="polychord__1_818_82_2polychord_8cpp"/>
+      </node>
+      <node id="28">
+        <label>polychord.cpp</label>
+        <link refid="polychord__1_820_81_2polychord_8cpp"/>
+      </node>
+      <node id="8">
+        <label>postprocessor.cpp</label>
+        <link refid="postprocessor__1_80_80_2postprocessor_8cpp"/>
+      </node>
+      <node id="35">
+        <label>postprocessor_object.cpp</label>
+        <link refid="postprocessor__1_80_80_2postprocessor__object_8cpp"/>
+      </node>
+      <node id="9">
+        <label>postprocessor.cpp</label>
+        <link refid="postprocessor__2_80_80_2postprocessor_8cpp"/>
+      </node>
+      <node id="33">
+        <label>postprocessor_object.cpp</label>
+        <link refid="postprocessor__2_80_80_2postprocessor__object_8cpp"/>
+      </node>
+      <node id="19">
+        <label>grid.cpp</label>
+        <link refid="grid_8cpp"/>
+      </node>
+      <node id="36">
+        <label>random.cpp</label>
+        <link refid="random_8cpp"/>
+      </node>
+      <node id="37">
+        <label>raster.cpp</label>
+        <link refid="raster_8cpp"/>
+      </node>
+      <node id="38">
+        <label>square_grid.cpp</label>
+        <link refid="square__grid_8cpp"/>
+      </node>
+      <node id="39">
+        <label>toy_mcmc.cpp</label>
+        <link refid="toy__mcmc_8cpp"/>
+      </node>
+      <node id="40">
+        <label>twalk.cpp</label>
+        <link refid="twalk_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innernamespace refid="namespaceGambit">Gambit</innernamespace>
+    <innernamespace refid="namespaceGambit_1_1Scanner">Gambit::Scanner</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Utility Functions for the <ref refid="namespaceGambit" kindref="compound">Gambit</ref> Scanner</para>
+<para><hruler/>
+</para>
+<sect1 id="scanner__util__types_8hpp_1autotoc_md9">
+<title>Authors</title>
+<para>(add name and date if you modify)</para>
+<para><simplesect kind="author"><para>Gregory Martinez (<ulink url="mailto:gregory.david.martinez@gmail.com">gregory.david.martinez@gmail.com</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2023 Jan</para>
+</simplesect>
+<hruler/>
+ </para>
+</sect1>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/><sp/>GAMBIT:<sp/>Global<sp/>and<sp/>Modular<sp/>BSM<sp/>Inference<sp/>Tool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/>*********************************************</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">///<sp/>\file</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">///<sp/><sp/>Utility<sp/>Functions<sp/>for<sp/>the<sp/>Gambit<sp/>Scanner</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">///<sp/><sp/>Authors</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">///<sp/><sp/>=======</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">///<sp/><sp/>(add<sp/>name<sp/>and<sp/>date<sp/>if<sp/>you<sp/>modify)</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">///<sp/><sp/>\author<sp/>Gregory<sp/>Martinez</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">///<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(gregory.david.martinez@gmail.com)</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">///<sp/><sp/>\date<sp/>2023<sp/>Jan</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
+<codeline lineno="18"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__scanner_util_types_hpp__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__scanner_util_types_hpp__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;Eigen/Dense&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceGambit" kindref="compound">Gambit</ref></highlight></codeline>
+<codeline lineno="25"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Scanner</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/****************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/*********<sp/>Eigen3<sp/>definitions<sp/>***********/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>/****************************************/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>\brief<sp/>A<sp/>vector.</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="37" refid="scanner__util__types_8hpp_1a21f3a40dce114045091bd14ab88e44dc" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="scanner__util__types_8hpp_1a21f3a40dce114045091bd14ab88e44dc" kindref="member">vector</ref><sp/>=<sp/>Eigen::Matrix&lt;T,<sp/>Eigen::Dynamic,<sp/>1&gt;;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>\brief<sp/>A<sp/>row<sp/>vector.</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="42" refid="scanner__util__types_8hpp_1a425d81d6be3889110bfc42a691ef47b2" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="scanner__util__types_8hpp_1a425d81d6be3889110bfc42a691ef47b2" kindref="member">row_vector</ref><sp/>=<sp/>Eigen::Matrix&lt;T,<sp/>1,<sp/>Eigen::Dynamic&gt;;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="44"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>\brief<sp/>A<sp/>matrix.</highlight></codeline>
+<codeline lineno="45"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///</highlight></codeline>
+<codeline lineno="46"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="47" refid="scanner__util__types_8hpp_1a5f7dcba4f7cdf685fbc79fa975e721b0" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="scanner__util__types_8hpp_1a5f7dcba4f7cdf685fbc79fa975e721b0" kindref="member">matrix</ref><sp/>=<sp/>Eigen::Matrix&lt;T,<sp/>Eigen::Dynamic,<sp/>Eigen::Dynamic&gt;;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="49"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>\brief<sp/>Represents<sp/>the<sp/>unit<sp/>hypercube.</highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="52" refid="scanner__util__types_8hpp_1aa2109d688760bfc20fb806f80ee45146" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="scanner__util__types_8hpp_1aa2109d688760bfc20fb806f80ee45146" kindref="member">hyper_cube_ref</ref><sp/>=<sp/>Eigen::Ref&lt;vector&lt;T&gt;,<sp/>0,<sp/>Eigen::Stride&lt;Eigen::Dynamic,<sp/>Eigen::Dynamic&gt;&gt;;</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="54"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>\brief<sp/>Vector<sp/>using<sp/>raw<sp/>data.</highlight></codeline>
+<codeline lineno="55"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///</highlight></codeline>
+<codeline lineno="56"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="57" refid="scanner__util__types_8hpp_1a04c1433039c9394a835257d8e7ff31a1" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="scanner__util__types_8hpp_1a04c1433039c9394a835257d8e7ff31a1" kindref="member">map_vector</ref><sp/>=<sp/>Eigen::Map&lt;vector&lt;T&gt;,<sp/>Eigen::Unaligned,<sp/>Eigen::Stride&lt;1,<sp/>1&gt;&gt;;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="61"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight></codeline>
+<codeline lineno="63"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="ScannerBit/include/gambit/ScannerBit/scanner_util_types.hpp"/>
+  </compounddef>
+</doxygen>

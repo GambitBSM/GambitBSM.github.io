@@ -9,14 +9,18 @@
         <label>gambit/Logs/log_tags.hpp</label>
         <link refid="log__tags_8hpp"/>
       </node>
-      <node id="62">
+      <node id="64">
         <label>gambit/ScannerBit/base_prior.hpp</label>
         <link refid="base__prior_8hpp"/>
+        <childnode refid="57" relation="include">
+        </childnode>
         <childnode refid="4" relation="include">
         </childnode>
         <childnode refid="44" relation="include">
         </childnode>
         <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
         </childnode>
       </node>
       <node id="3">
@@ -30,7 +34,7 @@
         </childnode>
         <childnode refid="55" relation="include">
         </childnode>
-        <childnode refid="62" relation="include">
+        <childnode refid="64" relation="include">
         </childnode>
       </node>
       <node id="2">
@@ -41,6 +45,12 @@
         <childnode refid="6" relation="include">
         </childnode>
         <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>gambit/ScannerBit/scanner_util_types.hpp</label>
+        <link refid="scanner__util__types_8hpp"/>
+        <childnode refid="63" relation="include">
         </childnode>
       </node>
       <node id="55">
@@ -75,6 +85,8 @@
         <childnode refid="39" relation="include">
         </childnode>
         <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
         </childnode>
       </node>
       <node id="1">
@@ -290,6 +302,9 @@
         </childnode>
         <childnode refid="51" relation="include">
         </childnode>
+      </node>
+      <node id="63">
+        <label>Eigen/Dense</label>
       </node>
       <node id="57">
         <label>algorithm</label>
@@ -605,7 +620,7 @@
 <codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="165"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="166"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Transformation<sp/>from<sp/>unit<sp/>interval<sp/>to<sp/>the<sp/>double<sp/>log<sp/>+<sp/>flat<sp/>join</highlight></codeline>
-<codeline lineno="167"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>DoubleLogFlatJoin::transform(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector<sp/>&lt;double&gt;<sp/>&amp;unitpars,<sp/>std::unordered_map<sp/>&lt;std::string,<sp/>double&gt;<sp/>&amp;output)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="167"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>DoubleLogFlatJoin::transform(hyper_cube_ref&lt;double&gt;<sp/>unitpars,<sp/>std::unordered_map<sp/>&lt;std::string,<sp/>double&gt;<sp/>&amp;output)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="168"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Only<sp/>valid<sp/>for<sp/>1D<sp/>parameter<sp/>transformation</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(unitpars.size()!=1)</highlight></codeline>
@@ -643,7 +658,7 @@
 <codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>output[myparameter]<sp/>=<sp/>x;</highlight></codeline>
 <codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="204"><highlight class="normal"></highlight></codeline>
-<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/>DoubleLogFlatJoin::inverse_transform(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::unordered_map&lt;std::string,<sp/>double&gt;<sp/>&amp;physical)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>DoubleLogFlatJoin::inverse_transform(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::unordered_map&lt;std::string,<sp/>double&gt;<sp/>&amp;physical,<sp/>hyper_cube_ref&lt;double&gt;<sp/>unit)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
 <codeline lineno="206"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>p<sp/>=<sp/>physical.at(myparameter);</highlight></codeline>
 <codeline lineno="208"><highlight class="normal"></highlight></codeline>
@@ -651,66 +666,65 @@
 <codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>log<sp/>prior<sp/>from<sp/>lower<sp/>to<sp/>flat_start</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>u01<sp/>=<sp/>std::log(p<sp/>/<sp/>lower)<sp/>/<sp/>std::log(flat_start<sp/>/<sp/>lower);</highlight></codeline>
-<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{u01<sp/>*<sp/>P01};</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>unit[0]<sp/>=<sp/>u01<sp/>*<sp/>P01;</highlight></codeline>
 <codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(p<sp/>&gt;=<sp/>flat_start<sp/>&amp;&amp;<sp/>p<sp/>&lt;<sp/>flat_end)</highlight></codeline>
 <codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>flat<sp/>prior<sp/>from<sp/>flat_start<sp/>to<sp/>flat_end</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>u01<sp/>=<sp/>(p<sp/>-<sp/>flat_start)<sp/>/<sp/>(flat_end<sp/>-<sp/>flat_start);</highlight></codeline>
-<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{P01<sp/>+<sp/>u01<sp/>*<sp/>P12};</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>unit[0]<sp/>=<sp/>P01<sp/>+<sp/>u01<sp/>*<sp/>P12;</highlight></codeline>
 <codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(p&gt;=<sp/>flat_end<sp/>&amp;&amp;<sp/>p<sp/>&lt;<sp/>upper)</highlight></codeline>
 <codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>log<sp/>prior<sp/>from<sp/>flat_end<sp/>to<sp/>upper</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>u01<sp/>=<sp/>std::log(p<sp/>/<sp/>flat_end)<sp/>/<sp/>std::log(upper<sp/>/<sp/>flat_end);</highlight></codeline>
-<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{P01<sp/>+<sp/>P12<sp/>+<sp/>u01<sp/>*<sp/>P23};</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>unit[0]<sp/>=<sp/>P01<sp/>+<sp/>P12<sp/>+<sp/>u01<sp/>*<sp/>P23;</highlight></codeline>
 <codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="scanner__utils_8hpp_1a78c5cbcc517889fd5a4b79468ae2f721" kindref="member">scan_err</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;no<sp/>inverse<sp/>transformation<sp/>for<sp/>double_log_flat_join<sp/>-<sp/>outside<sp/>range&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>scan_end;</highlight></codeline>
-<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{};<sp/><sp/></highlight><highlight class="comment">//<sp/>silence<sp/>compiler<sp/>warning<sp/>(reaches<sp/>end<sp/>non-void<sp/>function)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>DoubleLogFlatJoin::operator()(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;double&gt;<sp/>&amp;vec)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
-<codeline lineno="236"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
-<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>r<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x<sp/>=<sp/>vec[0];<sp/></highlight></codeline>
-<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x0<sp/>=<sp/>lower;</highlight></codeline>
-<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x1<sp/>=<sp/>flat_start;</highlight></codeline>
-<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x2<sp/>=<sp/>flat_end;</highlight></codeline>
-<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x3<sp/>=<sp/>upper;</highlight></codeline>
-<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>x<sp/>&lt;=<sp/>x0<sp/>)</highlight></codeline>
-<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>r<sp/>=<sp/>0.;</highlight></codeline>
-<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>(x<sp/>&gt;<sp/>x0)<sp/>and<sp/>(x<sp/>&lt;=<sp/>x1)<sp/>)</highlight></codeline>
-<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>r<sp/>=<sp/><sp/>1./x<sp/>*<sp/>x1<sp/>*<sp/>C;</highlight></codeline>
-<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>(x<sp/>&gt;<sp/>x1)<sp/>and<sp/>(x<sp/>&lt;=<sp/>x2)<sp/>)</highlight></codeline>
-<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>r<sp/>=<sp/><sp/>C;</highlight></codeline>
-<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>(x<sp/>&gt;<sp/>x2)<sp/>and<sp/>(x<sp/>&lt;=<sp/>x3)<sp/>)</highlight></codeline>
-<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>r<sp/>=<sp/><sp/>1./x<sp/>*<sp/>x2<sp/>*<sp/>C;</highlight></codeline>
-<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(x<sp/>&gt;<sp/>x3)</highlight></codeline>
-<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>r<sp/>=<sp/>0;</highlight></codeline>
-<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight></codeline>
-<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="scanner__utils_8hpp_1a78c5cbcc517889fd5a4b79468ae2f721" kindref="member">scan_err</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Problem<sp/>computing<sp/>prior<sp/>density<sp/>for<sp/>DoubleLogFlatJoin<sp/>(received<sp/>x=&quot;</highlight><highlight class="normal">&lt;&lt;x&lt;&lt;</highlight><highlight class="stringliteral">&quot;)!&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>scan_end;</highlight></codeline>
-<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="267"><highlight class="normal"></highlight></codeline>
-<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>r;</highlight></codeline>
-<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="270"><highlight class="normal"></highlight></codeline>
-<codeline lineno="271"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
-<codeline lineno="272"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>DoubleLogFlatJoin::log_prior_density(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::unordered_map&lt;std::string,<sp/>double&gt;<sp/>&amp;physical)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="235"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>r<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x<sp/>=<sp/>physical.at(param_names[0]);<sp/></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x0<sp/>=<sp/>lower;</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x1<sp/>=<sp/>flat_start;</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x2<sp/>=<sp/>flat_end;</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x3<sp/>=<sp/>upper;</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>x<sp/>&lt;=<sp/>x0<sp/>)</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>r<sp/>=<sp/>0.;</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>(x<sp/>&gt;<sp/>x0)<sp/>and<sp/>(x<sp/>&lt;=<sp/>x1)<sp/>)</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>r<sp/>=<sp/><sp/>1./x<sp/>*<sp/>x1<sp/>*<sp/>C;</highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>(x<sp/>&gt;<sp/>x1)<sp/>and<sp/>(x<sp/>&lt;=<sp/>x2)<sp/>)</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>r<sp/>=<sp/><sp/>C;</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>(x<sp/>&gt;<sp/>x2)<sp/>and<sp/>(x<sp/>&lt;=<sp/>x3)<sp/>)</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>r<sp/>=<sp/><sp/>1./x<sp/>*<sp/>x2<sp/>*<sp/>C;</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(x<sp/>&gt;<sp/>x3)</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>r<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="scanner__utils_8hpp_1a78c5cbcc517889fd5a4b79468ae2f721" kindref="member">scan_err</ref><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;Problem<sp/>computing<sp/>prior<sp/>density<sp/>for<sp/>DoubleLogFlatJoin<sp/>(received<sp/>x=&quot;</highlight><highlight class="normal">&lt;&lt;x&lt;&lt;</highlight><highlight class="stringliteral">&quot;)!&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>scan_end;</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"></highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>r;</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="271"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="ScannerBit/src/priors/doublelogflatjoin.cpp"/>
   </compounddef>

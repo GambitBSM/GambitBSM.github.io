@@ -1,0 +1,1456 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="SubGeVDM__fermion_8cpp" kind="file" language="C++">
+    <compoundname>SubGeVDM_fermion.cpp</compoundname>
+    <includes local="yes">boost/make_shared.hpp</includes>
+    <includes refid="gambit__module__headers_8hpp" local="yes">gambit/Elements/gambit_module_headers.hpp</includes>
+    <includes refid="virtual__photon_8hpp" local="yes">gambit/Elements/virtual_photon.hpp</includes>
+    <includes refid="ascii__table__reader_8hpp" local="yes">gambit/Utils/ascii_table_reader.hpp</includes>
+    <includes refid="DarkBit__rollcall_8hpp" local="yes">gambit/DarkBit/DarkBit_rollcall.hpp</includes>
+    <includes refid="DarkBit__utils_8hpp" local="yes">gambit/DarkBit/DarkBit_utils.hpp</includes>
+    <incdepgraph>
+      <node id="111">
+        <label>gambit/Backends/backend_info.hpp</label>
+        <link refid="backend__info_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+      </node>
+      <node id="110">
+        <label>gambit/Backends/backend_singleton.hpp</label>
+        <link refid="backend__singleton_8hpp"/>
+        <childnode refid="111" relation="include">
+        </childnode>
+      </node>
+      <node id="126">
+        <label>gambit/Backends/backend_types/nulike.hpp</label>
+        <link refid="nulike_8hpp"/>
+      </node>
+      <node id="107">
+        <label>gambit/Backends/default_bossed_versions.hpp</label>
+        <link refid="default__bossed__versions_8hpp"/>
+      </node>
+      <node id="108">
+        <label>gambit/Backends/mathematica_variable.hpp</label>
+        <link refid="mathematica__variable_8hpp"/>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="112" relation="include">
+        </childnode>
+      </node>
+      <node id="114">
+        <label>gambit/Backends/python_helpers.hpp</label>
+        <link refid="python__helpers_8hpp"/>
+      </node>
+      <node id="113">
+        <label>gambit/Backends/python_variable.hpp</label>
+        <link refid="python__variable_8hpp"/>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="114" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+      </node>
+      <node id="121">
+        <label>gambit/DarkBit/DarkBit_rollcall.hpp</label>
+        <link refid="DarkBit__rollcall_8hpp"/>
+        <childnode refid="122" relation="include">
+        </childnode>
+      </node>
+      <node id="122">
+        <label>gambit/DarkBit/DarkBit_types.hpp</label>
+        <link refid="DarkBit__types_8hpp"/>
+        <childnode refid="123" relation="include">
+        </childnode>
+        <childnode refid="124" relation="include">
+        </childnode>
+        <childnode refid="125" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="126" relation="include">
+        </childnode>
+      </node>
+      <node id="127">
+        <label>gambit/DarkBit/DarkBit_utils.hpp</label>
+        <link refid="DarkBit__utils_8hpp"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+      </node>
+      <node id="125">
+        <label>gambit/DarkBit/ProcessCatalog.hpp</label>
+        <link refid="ProcessCatalog_8hpp"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+      </node>
+      <node id="124">
+        <label>gambit/DarkBit/SimpleHist.hpp</label>
+        <link refid="SimpleHist_8hpp"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+      </node>
+      <node id="123">
+        <label>gambit/DarkBit/decay_chain.hpp</label>
+        <link refid="decay__chain_8hpp"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>SubGeVDM_fermion.cpp</label>
+        <link refid="SubGeVDM__fermion_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="118" relation="include">
+        </childnode>
+        <childnode refid="119" relation="include">
+        </childnode>
+        <childnode refid="121" relation="include">
+        </childnode>
+        <childnode refid="127" relation="include">
+        </childnode>
+      </node>
+      <node id="99">
+        <label>gambit/Elements/daFunk.hpp</label>
+        <link refid="daFunk_8hpp_source"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="100" relation="include">
+        </childnode>
+        <childnode refid="101" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
+        </childnode>
+        <childnode refid="103" relation="include">
+        </childnode>
+        <childnode refid="104" relation="include">
+        </childnode>
+      </node>
+      <node id="93">
+        <label>gambit/Elements/decay_table.hpp</label>
+        <link refid="decay__table_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+      </node>
+      <node id="106">
+        <label>gambit/Elements/flav_prediction.hpp</label>
+        <link refid="flav__prediction_8hpp"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="9">
+        <label>gambit/Elements/functors.hpp</label>
+        <link refid="functors_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>gambit/Elements/gambit_module_headers.hpp</label>
+        <link refid="gambit__module__headers_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="79" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
+      </node>
+      <node id="98">
+        <label>gambit/Elements/halo_types.hpp</label>
+        <link refid="halo__types_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="97">
+        <label>gambit/Elements/higgs_couplings_table.hpp</label>
+        <link refid="higgs__couplings__table_8hpp"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+      </node>
+      <node id="109">
+        <label>gambit/Elements/ini_catch.hpp</label>
+        <link refid="ini__catch_8hpp"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="71">
+        <label>gambit/Elements/module_macros_common.hpp</label>
+        <link refid="module__macros__common_8hpp"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="72" relation="include">
+        </childnode>
+        <childnode refid="73" relation="include">
+        </childnode>
+        <childnode refid="74" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>gambit/Elements/module_macros_inmodule.hpp</label>
+        <link refid="module__macros__inmodule_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>gambit/Elements/module_macros_inmodule_defs.hpp</label>
+        <link refid="module__macros__inmodule__defs_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="94">
+        <label>gambit/Elements/mssm_slhahelp.hpp</label>
+        <link refid="mssm__slhahelp_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="95" relation="include">
+        </childnode>
+        <childnode refid="96" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>gambit/Elements/safety_bucket.hpp</label>
+        <link refid="safety__bucket_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="79">
+        <label>gambit/Elements/shared_types.hpp</label>
+        <link refid="shared__types_8hpp"/>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="98" relation="include">
+        </childnode>
+        <childnode refid="105" relation="include">
+        </childnode>
+        <childnode refid="106" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="107" relation="include">
+        </childnode>
+        <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="113" relation="include">
+        </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+      </node>
+      <node id="89">
+        <label>gambit/Elements/slhaea_spec_helpers.hpp</label>
+        <link refid="slhaea__spec__helpers_8hpp"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+      </node>
+      <node id="81">
+        <label>gambit/Elements/sminputs.hpp</label>
+        <link refid="sminputs_8hpp"/>
+        <childnode refid="82" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
+        </childnode>
+      </node>
+      <node id="85">
+        <label>gambit/Elements/spectrum.hpp</label>
+        <link refid="spectrum_8hpp"/>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="81" relation="include">
+        </childnode>
+        <childnode refid="86" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
+      </node>
+      <node id="90">
+        <label>gambit/Elements/spectrum_helpers.hpp</label>
+        <link refid="spectrum__helpers_8hpp"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="86">
+        <label>gambit/Elements/subspectrum.hpp</label>
+        <link refid="subspectrum_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="87" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="88" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="89" relation="include">
+        </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+      </node>
+      <node id="118">
+        <label>gambit/Elements/virtual_photon.hpp</label>
+        <link refid="virtual__photon_8hpp"/>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="99" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="105">
+        <label>gambit/Elements/wimp_types.hpp</label>
+        <link refid="wimp__types_8hpp"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>gambit/Logs/log_tags.hpp</label>
+        <link refid="log__tags_8hpp"/>
+      </node>
+      <node id="67">
+        <label>gambit/Logs/logger.hpp</label>
+        <link refid="logger_8hpp"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="70">
+        <label>gambit/Logs/logmaster.hpp</label>
+        <link refid="logmaster_8hpp"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="91">
+        <label>gambit/Models/SpectrumContents/subspectrum_contents.hpp</label>
+        <link refid="subspectrum__contents_8hpp"/>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+      <node id="92">
+        <label>gambit/Models/partmap.hpp</label>
+        <link refid="partmap_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="77">
+        <label>gambit/Models/safe_param_map.hpp</label>
+        <link refid="safe__param__map_8hpp"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="78" relation="include">
+        </childnode>
+      </node>
+      <node id="119">
+        <label>gambit/Utils/ascii_table_reader.hpp</label>
+        <link refid="ascii__table__reader_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="24">
+        <label>gambit/Utils/boost_fallbacks.hpp</label>
+        <link refid="boost__fallbacks_8hpp"/>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>gambit/Utils/cats.hpp</label>
+        <link refid="Utils_2include_2gambit_2Utils_2cats_8hpp"/>
+      </node>
+      <node id="41">
+        <label>gambit/Utils/exceptions.hpp</label>
+        <link refid="exceptions_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
+        <label>gambit/Utils/export_symbols.hpp</label>
+        <link refid="export__symbols_8hpp"/>
+      </node>
+      <node id="31">
+        <label>gambit/Utils/local_info.hpp</label>
+        <link refid="local__info_8hpp"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="66">
+        <label>gambit/Utils/model_parameters.hpp</label>
+        <link refid="model__parameters_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+      </node>
+      <node id="80">
+        <label>gambit/Utils/numerical_constants.hpp</label>
+        <link refid="numerical__constants_8hpp"/>
+        <childnode refid="56" relation="include">
+        </childnode>
+      </node>
+      <node id="88">
+        <label>gambit/Utils/safebool.hpp</label>
+        <link refid="safebool_8hpp"/>
+      </node>
+      <node id="82">
+        <label>gambit/Utils/slhaea_helpers.hpp</label>
+        <link refid="slhaea__helpers_8hpp"/>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="83" relation="include">
+        </childnode>
+        <childnode refid="84" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>gambit/Utils/standalone_error_handlers.hpp</label>
+        <link refid="standalone__error__handlers_8hpp"/>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="68">
+        <label>gambit/Utils/stream_overloads.hpp</label>
+        <link refid="stream__overloads_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>gambit/Utils/stringify.hpp</label>
+        <link refid="stringify_8hpp"/>
+      </node>
+      <node id="116">
+        <label>gambit/Utils/threadsafe_rng.hpp</label>
+        <link refid="threadsafe__rng_8hpp"/>
+        <childnode refid="117" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>gambit/Utils/util_functions.hpp</label>
+        <link refid="util__functions_8hpp"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>gambit/Utils/util_macros.hpp</label>
+        <link refid="util__macros_8hpp"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="16">
+        <label>gambit/Utils/util_types.hpp</label>
+        <link refid="util__types_8hpp"/>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="45">
+        <label>gambit/Utils/variadic_functions.hpp</label>
+        <link refid="variadic__functions_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="64">
+        <label>gambit/Utils/yaml_node_utility.hpp</label>
+        <link refid="yaml__node__utility_8hpp"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>gambit/Utils/yaml_options.hpp</label>
+        <link refid="yaml__options_8hpp"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+      </node>
+      <node id="62">
+        <label>gambit/Utils/yaml_variadic_functions.hpp</label>
+        <link refid="yaml__variadic__functions_8hpp"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+      </node>
+      <node id="83">
+        <label>SLHAea/slhaea.h</label>
+      </node>
+      <node id="15">
+        <label>algorithm</label>
+      </node>
+      <node id="54">
+        <label>array</label>
+      </node>
+      <node id="100">
+        <label>assert.h</label>
+      </node>
+      <node id="59">
+        <label>boost/algorithm/string/classification.hpp</label>
+      </node>
+      <node id="112">
+        <label>boost/algorithm/string/replace.hpp</label>
+      </node>
+      <node id="58">
+        <label>boost/algorithm/string/split.hpp</label>
+      </node>
+      <node id="32">
+        <label>boost/current_function.hpp</label>
+      </node>
+      <node id="27">
+        <label>boost/detail/workaround.hpp</label>
+      </node>
+      <node id="102">
+        <label>boost/enable_shared_from_this.hpp</label>
+      </node>
+      <node id="2">
+        <label>boost/make_shared.hpp</label>
+      </node>
+      <node id="38">
+        <label>boost/preprocessor/arithmetic/sub.hpp</label>
+      </node>
+      <node id="28">
+        <label>boost/preprocessor/cat.hpp</label>
+      </node>
+      <node id="37">
+        <label>boost/preprocessor/comparison/equal.hpp</label>
+      </node>
+      <node id="72">
+        <label>boost/preprocessor/comparison/greater.hpp</label>
+      </node>
+      <node id="26">
+        <label>boost/preprocessor/config/config.hpp</label>
+      </node>
+      <node id="36">
+        <label>boost/preprocessor/control/if.hpp</label>
+      </node>
+      <node id="73">
+        <label>boost/preprocessor/control/iif.hpp</label>
+      </node>
+      <node id="39">
+        <label>boost/preprocessor/punctuation/comma.hpp</label>
+      </node>
+      <node id="40">
+        <label>boost/preprocessor/punctuation/paren.hpp</label>
+      </node>
+      <node id="74">
+        <label>boost/preprocessor/repetition/enum.hpp</label>
+      </node>
+      <node id="75">
+        <label>boost/preprocessor/seq/for_each_i.hpp</label>
+      </node>
+      <node id="34">
+        <label>boost/preprocessor/seq/size.hpp</label>
+      </node>
+      <node id="35">
+        <label>boost/preprocessor/tuple/elem.hpp</label>
+      </node>
+      <node id="76">
+        <label>boost/preprocessor/tuple/to_seq.hpp</label>
+      </node>
+      <node id="84">
+        <label>boost/serialization/strong_typedef.hpp</label>
+      </node>
+      <node id="101">
+        <label>boost/shared_ptr.hpp</label>
+      </node>
+      <node id="25">
+        <label>boost/version.hpp</label>
+      </node>
+      <node id="48">
+        <label>cassert</label>
+      </node>
+      <node id="87">
+        <label>cfloat</label>
+      </node>
+      <node id="13">
+        <label>chrono</label>
+      </node>
+      <node id="56">
+        <label>cmath</label>
+      </node>
+      <node id="19">
+        <label>complex</label>
+      </node>
+      <node id="120">
+        <label>cstdlib</label>
+      </node>
+      <node id="18">
+        <label>cstring</label>
+      </node>
+      <node id="53">
+        <label>deque</label>
+      </node>
+      <node id="42">
+        <label>exception</label>
+      </node>
+      <node id="52">
+        <label>forward_list</label>
+      </node>
+      <node id="46">
+        <label>fstream</label>
+      </node>
+      <node id="115">
+        <label>gambit/Backends/backend_types_rollcall.hpp</label>
+      </node>
+      <node id="57">
+        <label>gambit/cmake/cmake_variables.hpp</label>
+      </node>
+      <node id="104">
+        <label>gsl/gsl_errno.h</label>
+      </node>
+      <node id="103">
+        <label>gsl/gsl_integration.h</label>
+      </node>
+      <node id="7">
+        <label>iostream</label>
+      </node>
+      <node id="65">
+        <label>limits</label>
+      </node>
+      <node id="51">
+        <label>list</label>
+      </node>
+      <node id="10">
+        <label>map</label>
+      </node>
+      <node id="20">
+        <label>memory</label>
+      </node>
+      <node id="60">
+        <label>mkpath/mkpath.h</label>
+      </node>
+      <node id="8">
+        <label>omp.h</label>
+      </node>
+      <node id="69">
+        <label>ostream</label>
+      </node>
+      <node id="117">
+        <label>random</label>
+      </node>
+      <node id="11">
+        <label>set</label>
+      </node>
+      <node id="14">
+        <label>sstream</label>
+      </node>
+      <node id="78">
+        <label>stdexcept</label>
+      </node>
+      <node id="95">
+        <label>stdio.h</label>
+      </node>
+      <node id="96">
+        <label>stdlib.h</label>
+      </node>
+      <node id="17">
+        <label>string</label>
+      </node>
+      <node id="47">
+        <label>type_traits</label>
+      </node>
+      <node id="23">
+        <label>unistd.h</label>
+      </node>
+      <node id="49">
+        <label>unordered_map</label>
+      </node>
+      <node id="50">
+        <label>unordered_set</label>
+      </node>
+      <node id="43">
+        <label>utility</label>
+      </node>
+      <node id="12">
+        <label>vector</label>
+      </node>
+      <node id="63">
+        <label>yaml-cpp/yaml.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classGambit_1_1DarkBit_1_1SubGeVDM__fermion" prot="public">Gambit::DarkBit::SubGeVDM_fermion</innerclass>
+    <innernamespace refid="namespaceGambit">Gambit</innernamespace>
+    <innernamespace refid="namespaceGambit_1_1DarkBit">Gambit::DarkBit</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="SubGeVDM__fermion_8cpp_1a302187f8cea1d9db96ad663af098f41e" prot="public" static="no">
+        <name>getSMmass</name>
+        <param><defname>Name</defname></param>
+        <param><defname>spinX2</defname></param>
+        <initializer>catalog.particleProperties.insert(std::pair&lt;string, TH_ParticleProperty&gt; (Name, TH_ParticleProperty(SM.get(Par::Pole_Mass,Name), spinX2)));</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="DarkBit/src/SubGeVDM_fermion.cpp" line="151" column="15"/>
+      </memberdef>
+      <memberdef kind="define" id="SubGeVDM__fermion_8cpp_1a5cfd88c7fb3e3b8b9d35eb54806de6da" prot="public" static="no">
+        <name>addParticle</name>
+        <param><defname>Name</defname></param>
+        <param><defname>Mass</defname></param>
+        <param><defname>spinX2</defname></param>
+        <initializer>catalog.particleProperties.insert(std::pair&lt;string, TH_ParticleProperty&gt; (Name, TH_ParticleProperty(Mass, spinX2)));</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="DarkBit/src/SubGeVDM_fermion.cpp" line="152" column="15"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Implementation of SubGeVDM_fermion DarkBit routines.</para>
+<para>Authors (add name and date if you modify):</para>
+<para><simplesect kind="author"><para>Felix Kahlhoefer (<ulink url="mailto:kahlhoefer@kit.edu">kahlhoefer@kit.edu</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>May 2022</para>
+</simplesect>
+<simplesect kind="author"><para>Torsten Bringmann (<ulink url="mailto:torsten.bringmann@fys.uio.no">torsten.bringmann@fys.uio.no</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>Oct, Nov 2023</para>
+</simplesect>
+<hruler/>
+ </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/><sp/><sp/>GAMBIT:<sp/>Global<sp/>and<sp/>Modular<sp/>BSM<sp/>Inference<sp/>Tool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>*********************************************</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">///<sp/><sp/>\file</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">///<sp/><sp/>Implementation<sp/>of<sp/>SubGeVDM_fermion</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">///<sp/><sp/>DarkBit<sp/>routines.</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">///<sp/><sp/>Authors<sp/>(add<sp/>name<sp/>and<sp/>date<sp/>if<sp/>you<sp/>modify):</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">///<sp/><sp/>\author<sp/>Felix<sp/>Kahlhoefer</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">///<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(kahlhoefer@kit.edu)</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">///<sp/><sp/>\date<sp/>May<sp/>2022</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">///<sp/><sp/>\author<sp/>Torsten<sp/>Bringmann</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">///<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(torsten.bringmann@fys.uio.no)</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">///<sp/><sp/>\date<sp/>Oct,<sp/>Nov<sp/>2023</highlight></codeline>
+<codeline lineno="17"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="18"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
+<codeline lineno="19"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;boost/make_shared.hpp&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="gambit__module__headers_8hpp" kindref="compound">gambit/Elements/gambit_module_headers.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="virtual__photon_8hpp" kindref="compound">gambit/Elements/virtual_photon.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="ascii__table__reader_8hpp" kindref="compound">gambit/Utils/ascii_table_reader.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="DarkBit__rollcall_8hpp" kindref="compound">gambit/DarkBit/DarkBit_rollcall.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="DarkBit__utils_8hpp" kindref="compound">gambit/DarkBit/DarkBit_utils.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceGambit" kindref="compound">Gambit</ref></highlight></codeline>
+<codeline lineno="29"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">DarkBit</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="SubGeVDM__fermion_8cpp_1a2cafbe5bd865440dd501d98e4f0cbcd7" kindref="member">Gamma_reg</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Gamma,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>mass);<sp/></highlight><highlight class="comment">///<sp/>Helper<sp/>function<sp/>(width<sp/>rescaled<sp/>for<sp/>RD<sp/>calculations)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"></highlight></codeline>
+<codeline lineno="36" refid="classGambit_1_1DarkBit_1_1SubGeVDM__fermion" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classGambit_1_1DarkBit_1_1SubGeVDM__fermion" kindref="compound">SubGeVDM_fermion</ref></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Initialize<sp/>SubGeVDM_fermion<sp/>object<sp/>(branching<sp/>ratios<sp/>etc)</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1DarkBit_1_1SubGeVDM__fermion_1a8019713ac3687f0a460520969b4c8b01" kindref="member">SubGeVDM_fermion</ref>(<ref refid="structGambit_1_1DarkBit_1_1TH__ProcessCatalog" kindref="compound">TH_ProcessCatalog</ref>*<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>catalog,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>gammaAp)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>:<sp/>Gamma_Ap(gammaAp)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mAp<sp/><sp/><sp/>=<sp/>catalog-&gt;<ref refid="structGambit_1_1DarkBit_1_1TH__ProcessCatalog_1a681f0593cd152e9b894f975fde28332c" kindref="member">getParticleProperty</ref>(</highlight><highlight class="stringliteral">&quot;Ap&quot;</highlight><highlight class="normal">).<ref refid="structGambit_1_1DarkBit_1_1TH__ParticleProperty_1a4ef18f5f6563ce01addefb10eea03275" kindref="member">mass</ref>;</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mb<sp/><sp/><sp/>=<sp/>catalog-&gt;<ref refid="structGambit_1_1DarkBit_1_1TH__ProcessCatalog_1a681f0593cd152e9b894f975fde28332c" kindref="member">getParticleProperty</ref>(</highlight><highlight class="stringliteral">&quot;d_3&quot;</highlight><highlight class="normal">).<ref refid="structGambit_1_1DarkBit_1_1TH__ParticleProperty_1a4ef18f5f6563ce01addefb10eea03275" kindref="member">mass</ref>;</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mtau<sp/>=<sp/>catalog-&gt;<ref refid="structGambit_1_1DarkBit_1_1TH__ProcessCatalog_1a681f0593cd152e9b894f975fde28332c" kindref="member">getParticleProperty</ref>(</highlight><highlight class="stringliteral">&quot;e-_3&quot;</highlight><highlight class="normal">).<ref refid="structGambit_1_1DarkBit_1_1TH__ParticleProperty_1a4ef18f5f6563ce01addefb10eea03275" kindref="member">mass</ref>;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mmu<sp/>=<sp/>catalog-&gt;<ref refid="structGambit_1_1DarkBit_1_1TH__ProcessCatalog_1a681f0593cd152e9b894f975fde28332c" kindref="member">getParticleProperty</ref>(</highlight><highlight class="stringliteral">&quot;e-_2&quot;</highlight><highlight class="normal">).<ref refid="structGambit_1_1DarkBit_1_1TH__ParticleProperty_1a4ef18f5f6563ce01addefb10eea03275" kindref="member">mass</ref>;</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>me<sp/>=<sp/>catalog-&gt;<ref refid="structGambit_1_1DarkBit_1_1TH__ProcessCatalog_1a681f0593cd152e9b894f975fde28332c" kindref="member">getParticleProperty</ref>(</highlight><highlight class="stringliteral">&quot;e-_1&quot;</highlight><highlight class="normal">).<ref refid="structGambit_1_1DarkBit_1_1TH__ParticleProperty_1a4ef18f5f6563ce01addefb10eea03275" kindref="member">mass</ref>;</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>mpi<sp/><sp/><sp/>=<sp/>catalog-&gt;<ref refid="structGambit_1_1DarkBit_1_1TH__ProcessCatalog_1a681f0593cd152e9b894f975fde28332c" kindref="member">getParticleProperty</ref>(</highlight><highlight class="stringliteral">&quot;pi+&quot;</highlight><highlight class="normal">).<ref refid="structGambit_1_1DarkBit_1_1TH__ParticleProperty_1a4ef18f5f6563ce01addefb10eea03275" kindref="member">mass</ref>;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"></highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1DarkBit_1_1SubGeVDM__fermion" kindref="compound">~SubGeVDM_fermion</ref>()<sp/>{};</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="53"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Helper<sp/>function<sp/>(Breit-Wigner,<sp/>rescaled<sp/>close<sp/>to<sp/>resonance)</highlight></codeline>
+<codeline lineno="54"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1DarkBit_1_1SubGeVDM__fermion_1a880a2eb0b2ea3fa1f4c155888345558c" kindref="member">DAp2</ref><sp/>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>s)</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Gamma_eff=<ref refid="SubGeVDM__fermion_8cpp_1a2cafbe5bd865440dd501d98e4f0cbcd7" kindref="member">Gamma_reg</ref>(Gamma_Ap,<sp/>mAp);</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>smaxres=(mAp+4*Gamma_eff)*(mAp+4*Gamma_eff);</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sminres=(mAp-4*Gamma_eff)*(mAp-4*Gamma_eff);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(s&lt;sminres<sp/>||<sp/>s&gt;smaxres)<sp/></highlight><highlight class="comment">//<sp/>well<sp/>outside<sp/>resonance</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1/((s-mAp*mAp)*(s-mAp*mAp)+mAp*mAp*Gamma_Ap*Gamma_Ap);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="comment">//<sp/>very<sp/>close<sp/>to<sp/>resonance</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>1/((s-mAp*mAp)*(s-mAp*mAp)+mAp*mAp*Gamma_eff*Gamma_eff)</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*<sp/>Gamma_eff/Gamma_Ap;<sp/></highlight><highlight class="comment">//<sp/>rescaling<sp/>exact<sp/>in<sp/>NWA<sp/>limit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sv(std::string<sp/>channel,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>gDM,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>gSM,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>mass,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>v,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>smooth)</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>s<sp/>=<sp/>4*mass*mass/(1-v*v/4);</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sqrt_s<sp/>=<sp/>sqrt(s);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>channel<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;bb&quot;</highlight><highlight class="normal"><sp/>and<sp/>sqrt_s<sp/>&lt;<sp/>mb*2<sp/>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>channel<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;ee&quot;</highlight><highlight class="normal"><sp/>and<sp/>sqrt_s<sp/>&lt;<sp/>me*2<sp/><sp/>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>channel<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;mumu&quot;</highlight><highlight class="normal"><sp/>and<sp/>sqrt_s<sp/>&lt;<sp/>mmu*2<sp/><sp/>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>channel<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;tautau&quot;</highlight><highlight class="normal"><sp/>and<sp/>sqrt_s<sp/>&lt;<sp/>mtau*2<sp/>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>channel<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;pipi&quot;</highlight><highlight class="normal"><sp/>and<sp/>sqrt_s<sp/>&lt;<sp/>mpi*2<sp/>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>channel<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;ApAp&quot;</highlight><highlight class="normal"><sp/>and<sp/>sqrt_s<sp/>&lt;<sp/>mAp*2)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>channel<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;bb&quot;</highlight><highlight class="normal"><sp/>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sv_ff(gDM,<sp/>gSM,<sp/>mass,<sp/>v,<sp/>mb,<sp/>-1/3.,<sp/>3);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>channel<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;ee&quot;</highlight><highlight class="normal"><sp/>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sv_ff(gDM,<sp/>gSM,<sp/>mass,<sp/>v,<sp/>me,<sp/>-1.,<sp/>1);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>channel<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;mumu&quot;</highlight><highlight class="normal"><sp/>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sv_ff(gDM,<sp/>gSM,<sp/>mass,<sp/>v,<sp/>mmu,<sp/>-1.,<sp/>1);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>channel<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;tautau&quot;</highlight><highlight class="normal"><sp/>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>sv_ff(gDM,<sp/>gSM,<sp/>mass,<sp/>v,<sp/>mtau,<sp/>-1.,<sp/>1);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>channel<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;pipi&quot;</highlight><highlight class="normal"><sp/>)</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(sqrt_s<sp/>&lt;<sp/>mb*2<sp/>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1a52a1885d9f7e2f6436277b2c07883fa4" kindref="member">hadronic_cross_section_ratio</ref>(sqrt_s,<sp/>smooth)<sp/>*<sp/>sv_ff(gDM,<sp/>gSM,<sp/>mass,<sp/>v,<sp/>mmu,<sp/>-1.,<sp/>1);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1a52a1885d9f7e2f6436277b2c07883fa4" kindref="member">hadronic_cross_section_ratio</ref>(sqrt_s,<sp/>smooth)<sp/>*<sp/>sv_ff(gDM,<sp/>gSM,<sp/>mass,<sp/>v,<sp/>mmu,<sp/>-1.,<sp/>1)<sp/>-<sp/>sv_ff(gDM,<sp/>gSM,<sp/>mass,<sp/>v,<sp/>mb,<sp/>-1/3.,<sp/>3);<sp/></highlight><highlight class="comment">//Avoid<sp/>double-counting<sp/>of<sp/>bb<sp/>final<sp/>state</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>channel<sp/>==<sp/></highlight><highlight class="stringliteral">&quot;ApAp&quot;</highlight><highlight class="normal"><sp/>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1DarkBit_1_1SubGeVDM__fermion_1a7115e5ab45d5e9687e65a5de1c94b0af" kindref="member">sv_ApAp</ref>(gDM,<sp/>mass,<sp/>v);</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Annihilation<sp/>into<sp/>fermions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sv_ff(</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>gDM,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>gSM,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>mass,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>v,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>mf,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>charge,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>colour)</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>s<sp/>=<sp/>4*mass*mass/(1-v*v/4);</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>vf<sp/>=<sp/>sqrt(1-4*pow(mf,2)/s);</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>y<sp/>=<sp/>s/pow(mass,<sp/>2);</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>GeV2tocm3s1<sp/>=<sp/>gev2cm2*s2cm;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>colour*pow(gDM*gSM*charge,2)*vf*(2*mf*mf<sp/>+<sp/>s)*(y<sp/>+<sp/>2)/(y<sp/>-<sp/>2)/12/M_PI*<ref refid="classGambit_1_1DarkBit_1_1SubGeVDM__fermion_1a880a2eb0b2ea3fa1f4c155888345558c" kindref="member">DAp2</ref>(s)*GeV2tocm3s1;<sp/></highlight><highlight class="comment">//<sp/>See<sp/>eq.<sp/>(31)<sp/>of<sp/>arXiv:1707.03835<sp/>in<sp/>the<sp/>limit<sp/>Delta<sp/>-&gt;<sp/>0.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="109"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Annihilation<sp/>into<sp/>ApAp</highlight></codeline>
+<codeline lineno="110"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1DarkBit_1_1SubGeVDM__fermion_1a7115e5ab45d5e9687e65a5de1c94b0af" kindref="member">sv_ApAp</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>gDM,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>mass,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>v)</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>GeV2tocm3s1<sp/>=<sp/>gev2cm2*s2cm;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>s<sp/>=<sp/>4*mass*mass/(1-v*v/4);<sp/><sp/></highlight><highlight class="comment">//<sp/>v<sp/>is<sp/>relative<sp/>velocity</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>pow(gDM,4)<sp/>/<sp/>(4<sp/>*<sp/>M_PI<sp/>*<sp/>s)<sp/>*<sp/>sqrt(1<sp/>-<sp/>pow(2<sp/>*<sp/>mAp,<sp/>2)<sp/>/<sp/>s)<sp/>*<sp/>GeV2tocm3s1;<sp/></highlight><highlight class="comment">//<sp/>See<sp/>eq.<sp/>(6)<sp/>of<sp/>arXiv:0810.1502.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Gamma_Ap,<sp/>mb,<sp/>me,<sp/>mmu,<sp/>mtau,<sp/>mAp,<sp/>mpi;</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="122"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Helper<sp/>function<sp/>(width<sp/>rescaled<sp/>for<sp/>RD<sp/>calculations)</highlight></codeline>
+<codeline lineno="123"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="SubGeVDM__fermion_8cpp_1a2cafbe5bd865440dd501d98e4f0cbcd7" kindref="member">Gamma_reg</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Gamma,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>mass)</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>Gamma<sp/>+<sp/>1e-5*mass;<sp/></highlight><highlight class="comment">//<sp/>RD<sp/>results<sp/>should<sp/>not<sp/>depend<sp/>on<sp/>numerical<sp/>value,</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>as<sp/>long<sp/>as<sp/>it<sp/>is<sp/>small<sp/>enough.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>darksusy<sp/>Boltzmann<sp/>solver<sp/>*can*<sp/>have<sp/>troubles</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>for<sp/>&lt;~1e-5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"></highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>DarkMatter_ID_SubGeVDM_fermion(std::string<sp/>&amp;<sp/>result)<sp/>{<sp/>result<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;DM&quot;</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>DarkMatterConj_ID_SubGeVDM_fermion(std::string<sp/>&amp;<sp/>result)<sp/>{<sp/>result<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;DM~&quot;</highlight><highlight class="normal">;<sp/>}</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>TH_ProcessCatalog_SubGeVDM_fermion(TH_ProcessCatalog<sp/>&amp;result)</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">Pipes::TH_ProcessCatalog_SubGeVDM_fermion;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">std::vector;</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">std::string;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Initialize<sp/>empty<sp/>catalog,<sp/>main<sp/>annihilation<sp/>process</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>TH_ProcessCatalog<sp/>catalog;</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>TH_Process<sp/>process_ann(</highlight><highlight class="stringliteral">&quot;DM&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;DM~&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Explicitly<sp/>state<sp/>that<sp/>Dirac<sp/>DM<sp/>is<sp/>not<sp/>self-conjugate<sp/>to<sp/>add<sp/>extra</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>factors<sp/>of<sp/>1/2<sp/>where<sp/>necessary</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>process_ann.isSelfConj<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Import<sp/>particle<sp/>masses</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Convenience<sp/>macros</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>getSMmass(Name,<sp/>spinX2)<sp/>catalog.particleProperties.insert(std::pair&lt;string,<sp/>TH_ParticleProperty&gt;<sp/>(Name,<sp/>TH_ParticleProperty(SM.get(Par::Pole_Mass,Name),<sp/>spinX2)));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/>#define<sp/>addParticle(Name,<sp/>Mass,<sp/>spinX2)<sp/>catalog.particleProperties.insert(std::pair&lt;string,<sp/>TH_ParticleProperty&gt;<sp/>(Name,<sp/>TH_ParticleProperty(Mass,<sp/>spinX2)));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Import<sp/>Spectrum<sp/>objects</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Spectrum&amp;<sp/>spec<sp/>=<sp/>*Dep::SubGeVDM_spectrum;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>SubSpectrum&amp;<sp/>he<sp/>=<sp/>spec.get_HE();</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>SubSpectrum&amp;<sp/>SM<sp/>=<sp/>spec.get_LE();</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>SMInputs&amp;<sp/>SMI<sp/><sp/><sp/>=<sp/>spec.get_SMInputs();</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Import<sp/>couplings</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>gDM<sp/>=<sp/>he.get(Par::dimensionless,</highlight><highlight class="stringliteral">&quot;gDM&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>kappa<sp/>=<sp/>he.get(Par::dimensionless,</highlight><highlight class="stringliteral">&quot;kappa&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//double<sp/>v<sp/>=<sp/>he.get(Par::mass1,&quot;vev&quot;);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>alpha_em<sp/>=<sp/>1.0<sp/>/<sp/>SMI.alphainv;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>e<sp/>=<sp/><ref refid="scanner__utils_8hpp_1a40cbcd2cdb26318cca622e0584a8d67f" kindref="member">pow</ref>(<sp/>4*pi*(<sp/>alpha_em<sp/>),0.5)<sp/>;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"></highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Get<sp/>SM<sp/>pole<sp/>masses</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>getSMmass(</highlight><highlight class="stringliteral">&quot;e-_1&quot;</highlight><highlight class="normal">,<sp/><sp/><sp/><sp/><sp/>1)</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>getSMmass(&quot;e+_1&quot;,<sp/><sp/><sp/><sp/><sp/>1)</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>getSMmass(&quot;e-_2&quot;,<sp/><sp/><sp/><sp/><sp/>1)</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>getSMmass(&quot;e+_2&quot;,<sp/><sp/><sp/><sp/><sp/>1)</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>getSMmass(&quot;e-_3&quot;,<sp/><sp/><sp/><sp/><sp/>1)</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>getSMmass(&quot;e+_3&quot;,<sp/><sp/><sp/><sp/><sp/>1)</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>getSMmass(&quot;Z0&quot;,<sp/><sp/><sp/><sp/><sp/><sp/><sp/>2)</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>getSMmass(&quot;W+&quot;,<sp/><sp/><sp/><sp/><sp/><sp/><sp/>2)</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>getSMmass(&quot;W-&quot;,<sp/><sp/><sp/><sp/><sp/><sp/><sp/>2)</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>getSMmass(&quot;g&quot;,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>2)</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>getSMmass(&quot;gamma&quot;,<sp/><sp/><sp/><sp/>2)</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>getSMmass(&quot;u_3&quot;,<sp/><sp/><sp/><sp/><sp/><sp/>1)</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>getSMmass(&quot;ubar_3&quot;,<sp/><sp/><sp/>1)</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>getSMmass(&quot;d_3&quot;,<sp/><sp/><sp/><sp/><sp/><sp/>1)</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>getSMmass(&quot;dbar_3&quot;,<sp/><sp/><sp/>1)</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"></highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Pole<sp/>masses<sp/>not<sp/>available<sp/>for<sp/>the<sp/>light<sp/>quarks.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>addParticle(&quot;u_1&quot;<sp/><sp/><sp/>,<sp/>SMI.mU,<sp/><sp/>1)<sp/></highlight><highlight class="comment">//<sp/>mu(2<sp/>GeV)^MS-bar</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>addParticle(&quot;ubar_1&quot;,<sp/>SMI.mU,<sp/><sp/>1)<sp/></highlight><highlight class="comment">//<sp/>mu(2<sp/>GeV)^MS-bar</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>addParticle(&quot;d_1&quot;<sp/><sp/><sp/>,<sp/>SMI.mD,<sp/><sp/>1)<sp/></highlight><highlight class="comment">//<sp/>md(2<sp/>GeV)^MS-bar</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>addParticle(&quot;dbar_1&quot;,<sp/>SMI.mD,<sp/><sp/>1)<sp/></highlight><highlight class="comment">//<sp/>md(2<sp/>GeV)^MS-bar</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>addParticle(&quot;u_2&quot;<sp/><sp/><sp/>,<sp/>SMI.mCmC,1)<sp/></highlight><highlight class="comment">//<sp/>mc(mc)^MS-bar</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>addParticle(&quot;ubar_2&quot;,<sp/>SMI.mCmC,1)<sp/></highlight><highlight class="comment">//<sp/>mc(mc)^MS-bar</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>addParticle(&quot;d_2&quot;<sp/><sp/><sp/>,<sp/>SMI.mS,<sp/><sp/>1)<sp/></highlight><highlight class="comment">//<sp/>ms(2<sp/>GeV)^MS-bar</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>addParticle(&quot;dbar_2&quot;,<sp/>SMI.mS,<sp/><sp/>1)<sp/></highlight><highlight class="comment">//<sp/>ms(2<sp/>GeV)^MS-bar</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Masses<sp/>for<sp/>neutrino<sp/>flavour<sp/>eigenstates.<sp/>Set<sp/>to<sp/>zero.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(presently<sp/>not<sp/>required)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>addParticle(&quot;nu_e&quot;,<sp/><sp/><sp/><sp/><sp/>0.0,<sp/>1)</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>addParticle(&quot;nubar_e&quot;,<sp/><sp/>0.0,<sp/>1)</highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>addParticle(&quot;nu_mu&quot;,<sp/><sp/><sp/><sp/>0.0,<sp/>1)</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>addParticle(&quot;nubar_mu&quot;,<sp/>0.0,<sp/>1)</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>addParticle(&quot;nu_tau&quot;,<sp/><sp/><sp/>0.0,<sp/>1)</highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>addParticle(&quot;nubar_tau&quot;,0.0,<sp/>1)</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Meson<sp/>masses</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>addParticle(&quot;pi0&quot;,<sp/><sp/><sp/>meson_masses.pi0,<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0)</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>addParticle(&quot;pi+&quot;,<sp/><sp/><sp/>meson_masses.pi_plus,<sp/><sp/><sp/>0)</highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>addParticle(&quot;pi-&quot;,<sp/><sp/><sp/>meson_masses.pi_minus,<sp/><sp/>0)</highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>addParticle(&quot;eta&quot;,<sp/><sp/><sp/>meson_masses.eta,<sp/><sp/><sp/><sp/><sp/><sp/><sp/>0)</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>addParticle(&quot;rho0&quot;,<sp/><sp/>meson_masses.rho0,<sp/><sp/><sp/><sp/><sp/><sp/>1)</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>addParticle(&quot;rho+&quot;,<sp/><sp/>meson_masses.rho_plus,<sp/><sp/>1)</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>addParticle(&quot;rho-&quot;,<sp/><sp/>meson_masses.rho_minus,<sp/>1)</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>addParticle(&quot;omega&quot;,<sp/>meson_masses.omega,<sp/><sp/><sp/><sp/><sp/>1)</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>addParticle(&quot;K0&quot;,<sp/><sp/><sp/><sp/>meson_masses.kaon0,<sp/><sp/><sp/><sp/><sp/>1)</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>SubGeVDM-specific<sp/>masses</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>mDM<sp/>=<sp/>spec.get(Par::<ref refid="namespaceGambit_1_1Par_1ac8185e571d2b5febfc74c2ce6b8f27d4a32659f80534c7cfd1734a08c89541edc" kindref="member">Pole_Mass</ref>,<sp/>&quot;DM&quot;);</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>addParticle(&quot;DM&quot;,<sp/>mDM,<sp/>1);</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>addParticle(&quot;DM~&quot;,<sp/>mDM,<sp/>1);</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>addParticle(&quot;Ap&quot;,<sp/>spec.get(Par::<ref refid="namespaceGambit_1_1Par_1ac8185e571d2b5febfc74c2ce6b8f27d4a32659f80534c7cfd1734a08c89541edc" kindref="member">Pole_Mass</ref>,<sp/>&quot;Ap&quot;),<sp/>2);</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Get<sp/>rid<sp/>of<sp/>convenience<sp/>macros</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="preprocessor">#undef<sp/>getSMmass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/>#undef<sp/>addParticle</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Import<sp/>decay<sp/>table<sp/>from<sp/>DecayBit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>DecayTable*<sp/>tbl<sp/>=<sp/>&amp;(*Dep::decay_rates);</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Save<sp/>dark<sp/>photon<sp/>width<sp/>for<sp/>later</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>gammaAp<sp/>=<sp/>tbl-&gt;at(</highlight><highlight class="stringliteral">&quot;Ap&quot;</highlight><highlight class="normal">).width_in_GeV;</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Set<sp/>of<sp/>imported<sp/>decays</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::set&lt;string&gt;<sp/>importedDecays;</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Minimum<sp/>branching<sp/>ratio<sp/>to<sp/>include</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>minBranching<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Import<sp/>relevant<sp/>decays</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">DarkBit_utils::ImportDecays;</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>excludeDecays<sp/>=<sp/>daFunk::vec&lt;std::string&gt;(</highlight><highlight class="stringliteral">&quot;Z0&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;W+&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;W-&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;u_3&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;ubar_3&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;e+_2&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;e-_2&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;e+_3&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;e-_3&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;pi0&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;pi+&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;pi-&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;eta&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;rho0&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;rho+&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;rho-&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;omega&quot;</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;K0&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"></highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>ImportDecays(</highlight><highlight class="stringliteral">&quot;Ap&quot;</highlight><highlight class="normal">,<sp/>catalog,<sp/>importedDecays,<sp/>tbl,<sp/>minBranching,<sp/>excludeDecays);</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"></highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Instantiate<sp/>new<sp/>SubGeVDM<sp/>object.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>pc<sp/>=<sp/>boost::make_shared&lt;SubGeVDM_fermion&gt;(&amp;catalog,<sp/>gammaAp);</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight></codeline>
+<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Populate<sp/>annihilation<sp/>channel<sp/>list<sp/>and<sp/>add<sp/>thresholds<sp/>to<sp/>threshold<sp/>list.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>process_ann.resonances_thresholds.threshold_energy.push_back(2*mDM);</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>channels<sp/>=</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>daFunk::vec&lt;string&gt;(</highlight><highlight class="stringliteral">&quot;tautau&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;mumu&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;ee&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;pipi&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;bb&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;ApAp&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>p1<sp/>=</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>daFunk::vec&lt;string&gt;(</highlight><highlight class="stringliteral">&quot;e+_3&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;e+_2&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;e+_1&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;pi+&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;dbar_3&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Ap&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>p2<sp/>=</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>daFunk::vec&lt;string&gt;(</highlight><highlight class="stringliteral">&quot;e-_3&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;e-_2&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;e-_1&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;pi-&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;d_3&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Ap&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>channels.size();<sp/>++i)</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>eff<sp/>=<sp/>e*kappa;</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>mtot_final<sp/>=</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>catalog.getParticleProperty(p1[i]).mass<sp/>+</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>catalog.getParticleProperty(p2[i]).mass;</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(mDM*2<sp/>&gt;<sp/>mtot_final)<sp/></highlight><highlight class="comment">//<sp/>TB<sp/>bugfix<sp/>--<sp/>removed<sp/>*0.5<sp/>on<sp/>r.h.s.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>daFunk::Funk<sp/>kinematicFunction<sp/>=<sp/>daFunk::funcM(pc,<sp/>&amp;SubGeVDM_fermion::sv,<sp/>channels[i],</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>gDM,<sp/>eff,<sp/>mDM,<sp/>daFunk::var(</highlight><highlight class="stringliteral">&quot;v&quot;</highlight><highlight class="normal">),<sp/>runOptions-&gt;getValueOrDef&lt;</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">&gt;(</highlight><highlight class="keyword">true</highlight><highlight class="normal">,</highlight><highlight class="stringliteral">&quot;smooth&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>TH_Channel<sp/>new_channel(daFunk::vec&lt;string&gt;(p1[i],<sp/>p2[i]),<sp/>kinematicFunction);</highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>process_ann.channelList.push_back(new_channel);</highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(mDM*2<sp/>&lt;=<sp/>mtot_final)</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>process_ann.resonances_thresholds.threshold_energy.push_back(mtot_final);</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"></highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Tell<sp/>DarkSUSY<sp/>about<sp/>dark<sp/>photon<sp/>resonance.<sp/>NB:<sp/>must<sp/>use<sp/>rescaled<sp/>width<sp/>here!</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Add<sp/>threshold<sp/>because<sp/>of<sp/>hard<sp/>transition<sp/>outside<sp/>rescales<sp/>width<sp/>region</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>Gamma_eff=<ref refid="SubGeVDM__fermion_8cpp_1a2cafbe5bd865440dd501d98e4f0cbcd7" kindref="member">Gamma_reg</ref>(tbl-&gt;at(</highlight><highlight class="stringliteral">&quot;Ap&quot;</highlight><highlight class="normal">).width_in_GeV,<sp/>spec.get(<ref refid="namespaceGambit_1_1Par_1ac8185e571d2b5febfc74c2ce6b8f27d4a32659f80534c7cfd1734a08c89541edc" kindref="member">Par::Pole_Mass</ref>,<sp/></highlight><highlight class="stringliteral">&quot;Ap&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(spec.get(<ref refid="namespaceGambit_1_1Par_1ac8185e571d2b5febfc74c2ce6b8f27d4a32659f80534c7cfd1734a08c89541edc" kindref="member">Par::Pole_Mass</ref>,<sp/></highlight><highlight class="stringliteral">&quot;Ap&quot;</highlight><highlight class="normal">)<sp/>&gt;=<sp/>2*mDM)<sp/>process_ann.resonances_thresholds.resonances.push_back(TH_Resonance(spec.get(<ref refid="namespaceGambit_1_1Par_1ac8185e571d2b5febfc74c2ce6b8f27d4a32659f80534c7cfd1734a08c89541edc" kindref="member">Par::Pole_Mass</ref>,<sp/></highlight><highlight class="stringliteral">&quot;Ap&quot;</highlight><highlight class="normal">),Gamma_eff));</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>process_ann.resonances_thresholds.threshold_energy.push_back(spec.get(<ref refid="namespaceGambit_1_1Par_1ac8185e571d2b5febfc74c2ce6b8f27d4a32659f80534c7cfd1734a08c89541edc" kindref="member">Par::Pole_Mass</ref>,<sp/></highlight><highlight class="stringliteral">&quot;Ap&quot;</highlight><highlight class="normal">)-4*Gamma_eff);</highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>process_ann.resonances_thresholds.threshold_energy.push_back(spec.get(<ref refid="namespaceGambit_1_1Par_1ac8185e571d2b5febfc74c2ce6b8f27d4a32659f80534c7cfd1734a08c89541edc" kindref="member">Par::Pole_Mass</ref>,<sp/></highlight><highlight class="stringliteral">&quot;Ap&quot;</highlight><highlight class="normal">)+4*Gamma_eff);</highlight></codeline>
+<codeline lineno="282"><highlight class="normal"></highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Tell<sp/>DarkSUSY<sp/>about<sp/>Phi<sp/>resonance</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>mPhi<sp/>=<sp/>1.02;</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>GammaPhi<sp/>=<sp/>4.25e-3;</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"></highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(mPhi<sp/>&gt;=<sp/>2*mDM)<sp/>process_ann.resonances_thresholds.resonances.push_back(TH_Resonance(mPhi,<sp/>GammaPhi));</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"></highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>catalog.processList.push_back(process_ann);</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"></highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Validate</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>catalog.validate();</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"></highlight></codeline>
+<codeline lineno="294"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result<sp/>=<sp/>catalog;</highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="comment">//<sp/>function<sp/>TH_ProcessCatalog</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="296"><highlight class="normal"></highlight></codeline>
+<codeline lineno="297"><highlight class="normal"></highlight></codeline>
+<codeline lineno="298"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="299"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Direct<sp/>detection<sp/>couplings</highlight></codeline>
+<codeline lineno="300"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="SubGeVDM__fermion_8cpp_1aee0fe03703e56d78654693f58eb63328" kindref="member">DD_couplings_SubGeVDM_fermion</ref>(DM_nucleon_couplings<sp/>&amp;result)</highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">Pipes::DD_couplings_SubGeVDM_fermion;</highlight></codeline>
+<codeline lineno="303"><highlight class="normal"></highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>mAp<sp/>=<sp/>*Param[</highlight><highlight class="stringliteral">&quot;mAp&quot;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>effective_coupling<sp/>=<sp/>sqrt(4*pi*alpha_EM)*(*Param[</highlight><highlight class="stringliteral">&quot;gDM&quot;</highlight><highlight class="normal">])*(*Param[</highlight><highlight class="stringliteral">&quot;kappa&quot;</highlight><highlight class="normal">]);</highlight></codeline>
+<codeline lineno="306"><highlight class="normal"></highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result.gps<sp/>=<sp/>effective_coupling/<ref refid="scanner__utils_8hpp_1a40cbcd2cdb26318cca622e0584a8d67f" kindref="member">pow</ref>(mAp,2);</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result.gns<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result.gpa<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result.gna<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="312"><highlight class="normal"></highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>sigma_e_SubGeVDM_fermion(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>&amp;result)</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">Pipes::sigma_e_SubGeVDM_fermion;</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"></highlight></codeline>
+<codeline lineno="317"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>mAp<sp/>=<sp/>*Param[</highlight><highlight class="stringliteral">&quot;mAp&quot;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>mDM<sp/>=<sp/>*Param[</highlight><highlight class="stringliteral">&quot;mDM&quot;</highlight><highlight class="normal">];</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>effective_coupling<sp/>=<sp/>sqrt(4*pi*alpha_EM)*(*Param[</highlight><highlight class="stringliteral">&quot;gDM&quot;</highlight><highlight class="normal">])*(*Param[</highlight><highlight class="stringliteral">&quot;kappa&quot;</highlight><highlight class="normal">]);</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"></highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>reduced_mass<sp/>=<sp/>mDM<sp/>*<sp/>m_electron<sp/>/<sp/>(mDM<sp/>+<sp/>m_electron);</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result<sp/>=<sp/>gev2cm2*<ref refid="scanner__utils_8hpp_1a40cbcd2cdb26318cca622e0584a8d67f" kindref="member">pow</ref>(effective_coupling*reduced_mass,2)/pi/<ref refid="scanner__utils_8hpp_1a40cbcd2cdb26318cca622e0584a8d67f" kindref="member">pow</ref>(<ref refid="scanner__utils_8hpp_1a40cbcd2cdb26318cca622e0584a8d67f" kindref="member">pow</ref>(mAp,2)+<ref refid="scanner__utils_8hpp_1a40cbcd2cdb26318cca622e0584a8d67f" kindref="member">pow</ref>(alpha_EM*m_electron,2),2);</highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"></highlight></codeline>
+<codeline lineno="325"><highlight class="normal"></highlight></codeline>
+<codeline lineno="326"><highlight class="normal"></highlight></codeline>
+<codeline lineno="327"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="328"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="DarkBit/src/SubGeVDM_fermion.cpp"/>
+  </compounddef>
+</doxygen>

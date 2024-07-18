@@ -9,25 +9,12 @@ description: "[No description available]"
 
 [No description available]
 
-## Namespaces
-
-| Name           |
-| -------------- |
-| **[Gambit::IniParser::Types](/documentation/code/namespaces/namespacegambit_1_1iniparser_1_1types/)**  |
-
 ## Classes
 
 |                | Name           |
 | -------------- | -------------- |
 | class | **[Gambit::IniParser::IniFile](/documentation/code/classes/classgambit_1_1iniparser_1_1inifile/)** <br>Main inifile class.  |
 | class | **[Gambit::IniParser::Parser](/documentation/code/classes/classgambit_1_1iniparser_1_1parser/)** <br>Inifile parser base class.  |
-
-## Types
-
-|                | Name           |
-| -------------- | -------------- |
-| typedef [Types::Observable](/documentation/code/classes/structgambit_1_1iniparser_1_1types_1_1observable/) | **[ObservableType](/documentation/code/namespaces/namespacegambit_1_1iniparser/#typedef-observabletype)**  |
-| typedef std::vector< [ObservableType](/documentation/code/classes/structgambit_1_1iniparser_1_1types_1_1observable/) > | **[ObservablesType](/documentation/code/namespaces/namespacegambit_1_1iniparser/#typedef-observablestype)**  |
 
 ## Functions
 
@@ -37,22 +24,6 @@ description: "[No description available]"
 | [warning](/documentation/code/classes/classgambit_1_1warning/) & | **[inifile_warning](/documentation/code/namespaces/namespacegambit_1_1iniparser/#function-inifile-warning)**()<br>[IniFile]() warnings.  |
 | int | **[importRound](/documentation/code/namespaces/namespacegambit_1_1iniparser/#function-importround)**(YAML::Node node, const std::string & filename)<br>Recursive import.  |
 | void | **[recursiveImport](/documentation/code/namespaces/namespacegambit_1_1iniparser/#function-recursiveimport)**(const YAML::Node & node, const std::string & filename) |
-
-## Types Documentation
-
-### typedef ObservableType
-
-```
-typedef Types::Observable Gambit::IniParser::ObservableType;
-```
-
-
-### typedef ObservablesType
-
-```
-typedef std::vector<ObservableType> Gambit::IniParser::ObservablesType;
-```
-
 
 
 ## Functions Documentation
@@ -100,4 +71,4 @@ void recursiveImport(
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:04 +0000
+Updated on 2024-07-18 at 13:53:31 +0000

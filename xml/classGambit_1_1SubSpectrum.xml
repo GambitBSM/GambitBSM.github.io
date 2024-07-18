@@ -12,6 +12,7 @@
     <derivedcompoundref refid="classGambit_1_1Spec" prot="public" virt="non-virtual">Gambit::Spec&lt; MajoranaSingletDM_Z2SimpleSpec &gt;</derivedcompoundref>
     <derivedcompoundref refid="classGambit_1_1Spec" prot="public" virt="non-virtual">Gambit::Spec&lt; ScalarSingletDM_Z2SimpleSpec &gt;</derivedcompoundref>
     <derivedcompoundref refid="classGambit_1_1Spec" prot="public" virt="non-virtual">Gambit::Spec&lt; ScalarSingletDM_Z3SimpleSpec &gt;</derivedcompoundref>
+    <derivedcompoundref refid="classGambit_1_1Spec" prot="public" virt="non-virtual">Gambit::Spec&lt; SubGeVDMSimpleSpec &gt;</derivedcompoundref>
     <derivedcompoundref refid="classGambit_1_1Spec" prot="public" virt="non-virtual">Gambit::Spec&lt; VectorSingletDM_Z2SimpleSpec &gt;</derivedcompoundref>
     <derivedcompoundref refid="classGambit_1_1Spec" prot="public" virt="non-virtual">Gambit::Spec&lt; Derived &gt;</derivedcompoundref>
     <derivedcompoundref refid="classGambit_1_1Spec" prot="public" virt="non-virtual">Gambit::Spec&lt; SMSimpleSpec &gt;</derivedcompoundref>
@@ -81,6 +82,7 @@
         <reimplementedby refid="classGambit_1_1Spec_1ac2f5dcb72ade4248d48a08316cb2a5ce">getName</reimplementedby>
         <reimplementedby refid="classGambit_1_1Spec_1ac2f5dcb72ade4248d48a08316cb2a5ce">getName</reimplementedby>
         <reimplementedby refid="classGambit_1_1Spec_1ac2f5dcb72ade4248d48a08316cb2a5ce">getName</reimplementedby>
+        <reimplementedby refid="classGambit_1_1Spec_1ac2f5dcb72ade4248d48a08316cb2a5ce">getName</reimplementedby>
         <briefdescription>
 <para>Main public interface functions. </para>
         </briefdescription>
@@ -97,6 +99,7 @@
         <argsstring>() const =0</argsstring>
         <name>clone</name>
         <qualifiedname>Gambit::SubSpectrum::clone</qualifiedname>
+        <reimplementedby refid="classGambit_1_1Spec_1a55f346d5bd5a3246a47a5db8404949fb">clone</reimplementedby>
         <reimplementedby refid="classGambit_1_1Spec_1a55f346d5bd5a3246a47a5db8404949fb">clone</reimplementedby>
         <reimplementedby refid="classGambit_1_1Spec_1a55f346d5bd5a3246a47a5db8404949fb">clone</reimplementedby>
         <reimplementedby refid="classGambit_1_1Spec_1a55f346d5bd5a3246a47a5db8404949fb">clone</reimplementedby>
@@ -1280,6 +1283,7 @@
         <reimplementedby refid="classGambit_1_1Spec_1a1a03962018f5cf85f34261eeca2106a6">has</reimplementedby>
         <reimplementedby refid="classGambit_1_1Spec_1a1a03962018f5cf85f34261eeca2106a6">has</reimplementedby>
         <reimplementedby refid="classGambit_1_1Spec_1a1a03962018f5cf85f34261eeca2106a6">has</reimplementedby>
+        <reimplementedby refid="classGambit_1_1Spec_1a1a03962018f5cf85f34261eeca2106a6">has</reimplementedby>
         <param>
           <type>const <ref refid="namespaceGambit_1_1Par_1ac8185e571d2b5febfc74c2ce6b8f27d4" kindref="member">Par::Tags</ref></type>
         </param>
@@ -1331,6 +1335,7 @@
         <reimplementedby refid="classGambit_1_1Spec_1a32039cdccf1c944121203d2eec5e6294">get</reimplementedby>
         <reimplementedby refid="classGambit_1_1Spec_1a32039cdccf1c944121203d2eec5e6294">get</reimplementedby>
         <reimplementedby refid="classGambit_1_1Spec_1a32039cdccf1c944121203d2eec5e6294">get</reimplementedby>
+        <reimplementedby refid="classGambit_1_1Spec_1a32039cdccf1c944121203d2eec5e6294">get</reimplementedby>
         <param>
           <type>const <ref refid="namespaceGambit_1_1Par_1ac8185e571d2b5febfc74c2ce6b8f27d4" kindref="member">Par::Tags</ref></type>
         </param>
@@ -1361,6 +1366,7 @@
         <argsstring>(const Par::Tags, const str &amp;, const int, const SpecOverrideOptions=use_overrides, const SafeBool check_antiparticle=SafeBool(true)) const =0</argsstring>
         <name>has</name>
         <qualifiedname>Gambit::SubSpectrum::has</qualifiedname>
+        <reimplementedby refid="classGambit_1_1Spec_1aad9ca06fbc280f69a1f7be1bd49c571b">has</reimplementedby>
         <reimplementedby refid="classGambit_1_1Spec_1aad9ca06fbc280f69a1f7be1bd49c571b">has</reimplementedby>
         <reimplementedby refid="classGambit_1_1Spec_1aad9ca06fbc280f69a1f7be1bd49c571b">has</reimplementedby>
         <reimplementedby refid="classGambit_1_1Spec_1aad9ca06fbc280f69a1f7be1bd49c571b">has</reimplementedby>
@@ -1434,6 +1440,7 @@
         <reimplementedby refid="classGambit_1_1Spec_1a48c24aae484150638d00063f4f3784ef">get</reimplementedby>
         <reimplementedby refid="classGambit_1_1Spec_1a48c24aae484150638d00063f4f3784ef">get</reimplementedby>
         <reimplementedby refid="classGambit_1_1Spec_1a48c24aae484150638d00063f4f3784ef">get</reimplementedby>
+        <reimplementedby refid="classGambit_1_1Spec_1a48c24aae484150638d00063f4f3784ef">get</reimplementedby>
         <param>
           <type>const <ref refid="namespaceGambit_1_1Par_1ac8185e571d2b5febfc74c2ce6b8f27d4" kindref="member">Par::Tags</ref></type>
         </param>
@@ -1467,6 +1474,7 @@
         <argsstring>(const Par::Tags, const str &amp;, const int, const int, const SpecOverrideOptions=use_overrides) const =0</argsstring>
         <name>has</name>
         <qualifiedname>Gambit::SubSpectrum::has</qualifiedname>
+        <reimplementedby refid="classGambit_1_1Spec_1a848841a535a7e421544bfaae913c96b9">has</reimplementedby>
         <reimplementedby refid="classGambit_1_1Spec_1a848841a535a7e421544bfaae913c96b9">has</reimplementedby>
         <reimplementedby refid="classGambit_1_1Spec_1a848841a535a7e421544bfaae913c96b9">has</reimplementedby>
         <reimplementedby refid="classGambit_1_1Spec_1a848841a535a7e421544bfaae913c96b9">has</reimplementedby>
@@ -1538,6 +1546,7 @@
         <reimplementedby refid="classGambit_1_1Spec_1a45d36489185d33a2d32ac94a95e61e04">get</reimplementedby>
         <reimplementedby refid="classGambit_1_1Spec_1a45d36489185d33a2d32ac94a95e61e04">get</reimplementedby>
         <reimplementedby refid="classGambit_1_1Spec_1a45d36489185d33a2d32ac94a95e61e04">get</reimplementedby>
+        <reimplementedby refid="classGambit_1_1Spec_1a45d36489185d33a2d32ac94a95e61e04">get</reimplementedby>
         <param>
           <type>const <ref refid="namespaceGambit_1_1Par_1ac8185e571d2b5febfc74c2ce6b8f27d4" kindref="member">Par::Tags</ref></type>
         </param>
@@ -1569,6 +1578,7 @@
         <argsstring>(const Par::Tags, const double, const str &amp;, const SafeBool check_antiparticle=SafeBool(true))=0</argsstring>
         <name>set</name>
         <qualifiedname>Gambit::SubSpectrum::set</qualifiedname>
+        <reimplementedby refid="classGambit_1_1Spec_1a3c8274c5d829777b70f0b76a2288fd60">set</reimplementedby>
         <reimplementedby refid="classGambit_1_1Spec_1a3c8274c5d829777b70f0b76a2288fd60">set</reimplementedby>
         <reimplementedby refid="classGambit_1_1Spec_1a3c8274c5d829777b70f0b76a2288fd60">set</reimplementedby>
         <reimplementedby refid="classGambit_1_1Spec_1a3c8274c5d829777b70f0b76a2288fd60">set</reimplementedby>
@@ -1637,6 +1647,7 @@
         <reimplementedby refid="classGambit_1_1Spec_1a24d8166cfb2158151a17af9aa692100e">set</reimplementedby>
         <reimplementedby refid="classGambit_1_1Spec_1a24d8166cfb2158151a17af9aa692100e">set</reimplementedby>
         <reimplementedby refid="classGambit_1_1Spec_1a24d8166cfb2158151a17af9aa692100e">set</reimplementedby>
+        <reimplementedby refid="classGambit_1_1Spec_1a24d8166cfb2158151a17af9aa692100e">set</reimplementedby>
         <param>
           <type>const <ref refid="namespaceGambit_1_1Par_1ac8185e571d2b5febfc74c2ce6b8f27d4" kindref="member">Par::Tags</ref></type>
         </param>
@@ -1668,6 +1679,7 @@
         <argsstring>(const Par::Tags, const double, const str &amp;, const int, const int)=0</argsstring>
         <name>set</name>
         <qualifiedname>Gambit::SubSpectrum::set</qualifiedname>
+        <reimplementedby refid="classGambit_1_1Spec_1a16af53e2c8878cf0432b99cf63e3161b">set</reimplementedby>
         <reimplementedby refid="classGambit_1_1Spec_1a16af53e2c8878cf0432b99cf63e3161b">set</reimplementedby>
         <reimplementedby refid="classGambit_1_1Spec_1a16af53e2c8878cf0432b99cf63e3161b">set</reimplementedby>
         <reimplementedby refid="classGambit_1_1Spec_1a16af53e2c8878cf0432b99cf63e3161b">set</reimplementedby>
@@ -1796,63 +1808,69 @@
         </childnode>
       </node>
       <node id="28">
-        <label>Gambit::Models::VectorSingletDM_Z2SimpleSpec</label>
-        <link refid="classGambit_1_1Models_1_1VectorSingletDM__Z2SimpleSpec"/>
+        <label>Gambit::Models::SubGeVDMSimpleSpec</label>
+        <link refid="classGambit_1_1Models_1_1SubGeVDMSimpleSpec"/>
         <childnode refid="27" relation="public-inheritance">
         </childnode>
       </node>
       <node id="30">
-        <label>Gambit::SLHASimpleSpec&lt; Derived &gt;</label>
-        <link refid="classGambit_1_1SLHASimpleSpec"/>
+        <label>Gambit::Models::VectorSingletDM_Z2SimpleSpec</label>
+        <link refid="classGambit_1_1Models_1_1VectorSingletDM__Z2SimpleSpec"/>
         <childnode refid="29" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="33">
-        <label>Gambit::SMSimpleSpec</label>
-        <link refid="classGambit_1_1SMSimpleSpec"/>
-        <childnode refid="32" relation="public-inheritance">
+      <node id="32">
+        <label>Gambit::SLHASimpleSpec&lt; Derived &gt;</label>
+        <link refid="classGambit_1_1SLHASimpleSpec"/>
+        <childnode refid="31" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="46">
+      <node id="35">
+        <label>Gambit::SMSimpleSpec</label>
+        <link refid="classGambit_1_1SMSimpleSpec"/>
+        <childnode refid="34" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="48">
         <label>Gambit::Spec&lt; DerivedSpec &gt;</label>
         <link refid="classGambit_1_1Spec"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="35">
+      <node id="37">
         <label>Gambit::SpecBit::MDMSpec&lt; MI &gt;</label>
         <link refid="classGambit_1_1SpecBit_1_1MDMSpec"/>
-        <childnode refid="34" relation="public-inheritance">
-        </childnode>
-      </node>
-      <node id="37">
-        <label>Gambit::SpecBit::MSSMSpec&lt; MI &gt;</label>
-        <link refid="classGambit_1_1SpecBit_1_1MSSMSpec"/>
         <childnode refid="36" relation="public-inheritance">
         </childnode>
       </node>
       <node id="39">
-        <label>Gambit::SpecBit::QedQcdWrapper</label>
-        <link refid="classGambit_1_1SpecBit_1_1QedQcdWrapper"/>
+        <label>Gambit::SpecBit::MSSMSpec&lt; MI &gt;</label>
+        <link refid="classGambit_1_1SpecBit_1_1MSSMSpec"/>
         <childnode refid="38" relation="public-inheritance">
         </childnode>
       </node>
       <node id="41">
-        <label>Gambit::SpecBit::SMHiggsSimpleSpec</label>
-        <link refid="classGambit_1_1SpecBit_1_1SMHiggsSimpleSpec"/>
+        <label>Gambit::SpecBit::QedQcdWrapper</label>
+        <link refid="classGambit_1_1SpecBit_1_1QedQcdWrapper"/>
         <childnode refid="40" relation="public-inheritance">
         </childnode>
       </node>
       <node id="43">
-        <label>Gambit::SpecBit::ScalarSingletDM_Z2Spec&lt; MI &gt;</label>
-        <link refid="classGambit_1_1SpecBit_1_1ScalarSingletDM__Z2Spec"/>
+        <label>Gambit::SpecBit::SMHiggsSimpleSpec</label>
+        <link refid="classGambit_1_1SpecBit_1_1SMHiggsSimpleSpec"/>
         <childnode refid="42" relation="public-inheritance">
         </childnode>
       </node>
       <node id="45">
+        <label>Gambit::SpecBit::ScalarSingletDM_Z2Spec&lt; MI &gt;</label>
+        <link refid="classGambit_1_1SpecBit_1_1ScalarSingletDM__Z2Spec"/>
+        <childnode refid="44" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="47">
         <label>Gambit::SpecBit::ScalarSingletDM_Z3Spec&lt; MI &gt;</label>
         <link refid="classGambit_1_1SpecBit_1_1ScalarSingletDM__Z3Spec"/>
-        <childnode refid="44" relation="public-inheritance">
+        <childnode refid="46" relation="public-inheritance">
         </childnode>
       </node>
       <node id="1">
@@ -1889,10 +1907,10 @@
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="32">
+      <node id="34">
         <label>Gambit::SLHASimpleSpec&lt; SMSimpleSpec &gt;</label>
         <link refid="classGambit_1_1SLHASimpleSpec"/>
-        <childnode refid="31" relation="public-inheritance">
+        <childnode refid="33" relation="public-inheritance">
         </childnode>
       </node>
       <node id="5">
@@ -1925,7 +1943,7 @@
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="29">
+      <node id="31">
         <label>Gambit::Spec&lt; Derived &gt;</label>
         <link refid="classGambit_1_1Spec"/>
         <childnode refid="1" relation="public-inheritance">
@@ -1937,7 +1955,7 @@
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="34">
+      <node id="36">
         <label>Gambit::Spec&lt; MDMSpec&lt; MI &gt; &gt;</label>
         <link refid="classGambit_1_1Spec"/>
         <childnode refid="1" relation="public-inheritance">
@@ -1949,7 +1967,7 @@
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="36">
+      <node id="38">
         <label>Gambit::Spec&lt; MSSMSpec&lt; MI &gt; &gt;</label>
         <link refid="classGambit_1_1Spec"/>
         <childnode refid="1" relation="public-inheritance">
@@ -1961,19 +1979,19 @@
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="38">
+      <node id="40">
         <label>Gambit::Spec&lt; QedQcdWrapper &gt;</label>
         <link refid="classGambit_1_1Spec"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="40">
+      <node id="42">
         <label>Gambit::Spec&lt; SMHiggsSimpleSpec &gt;</label>
         <link refid="classGambit_1_1Spec"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="31">
+      <node id="33">
         <label>Gambit::Spec&lt; SMSimpleSpec &gt;</label>
         <link refid="classGambit_1_1Spec"/>
         <childnode refid="1" relation="public-inheritance">
@@ -1985,7 +2003,7 @@
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="42">
+      <node id="44">
         <label>Gambit::Spec&lt; ScalarSingletDM_Z2Spec&lt; MI &gt; &gt;</label>
         <link refid="classGambit_1_1Spec"/>
         <childnode refid="1" relation="public-inheritance">
@@ -1997,13 +2015,19 @@
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="44">
+      <node id="46">
         <label>Gambit::Spec&lt; ScalarSingletDM_Z3Spec&lt; MI &gt; &gt;</label>
         <link refid="classGambit_1_1Spec"/>
         <childnode refid="1" relation="public-inheritance">
         </childnode>
       </node>
       <node id="27">
+        <label>Gambit::Spec&lt; SubGeVDMSimpleSpec &gt;</label>
+        <link refid="classGambit_1_1Spec"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="29">
         <label>Gambit::Spec&lt; VectorSingletDM_Z2SimpleSpec &gt;</label>
         <link refid="classGambit_1_1Spec"/>
         <childnode refid="1" relation="public-inheritance">

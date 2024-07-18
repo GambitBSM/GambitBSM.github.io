@@ -11,14 +11,18 @@
         <label>gambit/Logs/log_tags.hpp</label>
         <link refid="log__tags_8hpp"/>
       </node>
-      <node id="61">
+      <node id="63">
         <label>gambit/ScannerBit/base_prior.hpp</label>
         <link refid="base__prior_8hpp"/>
+        <childnode refid="56" relation="include">
+        </childnode>
         <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="43" relation="include">
         </childnode>
         <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
         </childnode>
       </node>
       <node id="2">
@@ -32,7 +36,7 @@
         </childnode>
         <childnode refid="54" relation="include">
         </childnode>
-        <childnode refid="61" relation="include">
+        <childnode refid="63" relation="include">
         </childnode>
       </node>
       <node id="1">
@@ -43,6 +47,12 @@
         <childnode refid="5" relation="include">
         </childnode>
         <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>gambit/ScannerBit/scanner_util_types.hpp</label>
+        <link refid="scanner__util__types_8hpp"/>
+        <childnode refid="62" relation="include">
         </childnode>
       </node>
       <node id="54">
@@ -77,6 +87,8 @@
         <childnode refid="38" relation="include">
         </childnode>
         <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
         </childnode>
       </node>
       <node id="16">
@@ -284,6 +296,9 @@
         </childnode>
         <childnode refid="50" relation="include">
         </childnode>
+      </node>
+      <node id="62">
+        <label>Eigen/Dense</label>
       </node>
       <node id="56">
         <label>algorithm</label>
@@ -509,11 +524,11 @@
 <codeline lineno="65"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1Priors_1_1DoubleLogFlatJoin_1a85fdbb60f24e63a3043426ba1cdbfddb" kindref="member">DoubleLogFlatJoin</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;std::string&gt;&amp;<sp/>param,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Options" kindref="compound">Options</ref>&amp;);<sp/></highlight></codeline>
 <codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="67"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Transformation<sp/>from<sp/>unit<sp/>interval<sp/>to<sp/>the<sp/>double<sp/>log<sp/>+<sp/>flat<sp/>join<sp/>(inverse<sp/>prior<sp/>transform)</highlight></codeline>
-<codeline lineno="68"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Priors_1_1DoubleLogFlatJoin_1abd99d4d54844f9f30c2fdbb62028d85e" kindref="member">transform</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector<sp/>&lt;double&gt;<sp/>&amp;unitpars,<sp/>std::unordered_map<sp/>&lt;std::string,<sp/>double&gt;<sp/>&amp;output)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/><ref refid="classGambit_1_1Priors_1_1DoubleLogFlatJoin_1adef085e75b90cda7ffdaf093b7960c8d" kindref="member">inverse_transform</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::unordered_map&lt;std::string,<sp/>double&gt;<sp/>&amp;)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="68"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Priors_1_1DoubleLogFlatJoin_1ab93cf57c1f4c8c3f36f57af1a739e2f1" kindref="member">transform</ref>(hyper_cube_ref&lt;double&gt;<sp/>unitpars,<sp/>std::unordered_map<sp/>&lt;std::string,<sp/>double&gt;<sp/>&amp;output)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Priors_1_1DoubleLogFlatJoin_1a958c87430841b365db231c15ce8f9ba5" kindref="member">inverse_transform</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::unordered_map&lt;std::string,<sp/>double&gt;<sp/>&amp;,<sp/>hyper_cube_ref&lt;double&gt;)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="70"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="71"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Probability<sp/>density<sp/>function</highlight></codeline>
-<codeline lineno="72"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Priors_1_1DoubleLogFlatJoin_1aec998fb8ef2bf5b07e654a5b369346dc" kindref="member">operator()</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;double&gt;<sp/>&amp;vec)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="72"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Priors_1_1DoubleLogFlatJoin_1a025e379521aa128c11d88fbce15e38f4" kindref="member">log_prior_density</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::unordered_map&lt;std::string,<sp/>double&gt;<sp/>&amp;)<sp/></highlight><highlight class="keyword">const<sp/>override</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
 <codeline lineno="74"><highlight class="normal"><sp/><sp/></highlight></codeline>
 <codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>LOAD_PRIOR(double_log_flat_join,<sp/><ref refid="classGambit_1_1Priors_1_1DoubleLogFlatJoin" kindref="compound">DoubleLogFlatJoin</ref>)</highlight></codeline>

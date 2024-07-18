@@ -9,14 +9,18 @@
         <label>gambit/Logs/log_tags.hpp</label>
         <link refid="log__tags_8hpp"/>
       </node>
-      <node id="61">
+      <node id="63">
         <label>gambit/ScannerBit/base_prior.hpp</label>
         <link refid="base__prior_8hpp"/>
+        <childnode refid="56" relation="include">
+        </childnode>
         <childnode refid="4" relation="include">
         </childnode>
         <childnode refid="44" relation="include">
         </childnode>
         <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
         </childnode>
       </node>
       <node id="3">
@@ -30,7 +34,7 @@
         </childnode>
         <childnode refid="54" relation="include">
         </childnode>
-        <childnode refid="61" relation="include">
+        <childnode refid="63" relation="include">
         </childnode>
       </node>
       <node id="1">
@@ -39,6 +43,12 @@
         <childnode refid="2" relation="include">
         </childnode>
         <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="61">
+        <label>gambit/ScannerBit/scanner_util_types.hpp</label>
+        <link refid="scanner__util__types_8hpp"/>
+        <childnode refid="62" relation="include">
         </childnode>
       </node>
       <node id="54">
@@ -73,6 +83,8 @@
         <childnode refid="39" relation="include">
         </childnode>
         <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
         </childnode>
       </node>
       <node id="17">
@@ -280,6 +292,9 @@
         </childnode>
         <childnode refid="51" relation="include">
         </childnode>
+      </node>
+      <node id="62">
+        <label>Eigen/Dense</label>
       </node>
       <node id="56">
         <label>algorithm</label>
@@ -653,33 +668,37 @@
 <codeline lineno="214"><highlight class="normal"></highlight></codeline>
 <codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Transformation<sp/>from<sp/>unit<sp/>interval<sp/>to<sp/>specified<sp/>range</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(need<sp/>to<sp/>use<sp/>vectors<sp/>to<sp/>be<sp/>compatible<sp/>with<sp/>BasePrior<sp/>virtual<sp/>function)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="217" refid="classGambit_1_1Priors_1_1RangePrior1D_1aff4c53ab319d72b7a4b82768aeeae7ee" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Priors_1_1RangePrior1D_1aff4c53ab319d72b7a4b82768aeeae7ee" kindref="member">transform</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;double&gt;<sp/>&amp;unitpars,<sp/>std::unordered_map&lt;std::string,double&gt;<sp/>&amp;output)</highlight><highlight class="keyword"><sp/>const<sp/>override</highlight></codeline>
+<codeline lineno="217" refid="classGambit_1_1Priors_1_1RangePrior1D_1a98255d65fadf841dbfb441ac1139a2cd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Priors_1_1RangePrior1D_1a98255d65fadf841dbfb441ac1139a2cd" kindref="member">transform</ref>(hyper_cube_ref&lt;double&gt;<sp/>unitpars,<sp/>std::unordered_map&lt;std::string,double&gt;<sp/>&amp;output)</highlight><highlight class="keyword"><sp/>const<sp/>override</highlight></codeline>
 <codeline lineno="218"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>output[myparameter]<sp/>=<sp/>(T::inv(unitpars[0]*(upper-lower)<sp/>+<sp/>lower)-shift_out)/scale_out;</highlight></codeline>
 <codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="221"><highlight class="normal"></highlight></codeline>
-<codeline lineno="222" refid="classGambit_1_1Priors_1_1RangePrior1D_1a575d46d465dc7a32a37a967b1bfc05bd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;double&gt;<sp/><ref refid="classGambit_1_1Priors_1_1RangePrior1D_1a575d46d465dc7a32a37a967b1bfc05bd" kindref="member">inverse_transform</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::unordered_map&lt;std::string,<sp/>double&gt;<sp/>&amp;physical)</highlight><highlight class="keyword"><sp/>const<sp/>override</highlight></codeline>
+<codeline lineno="222" refid="classGambit_1_1Priors_1_1RangePrior1D_1a9384c25d944f11ce2584e51ea6249078" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Priors_1_1RangePrior1D_1a9384c25d944f11ce2584e51ea6249078" kindref="member">inverse_transform</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::unordered_map&lt;std::string,<sp/>double&gt;<sp/>&amp;physical,<sp/>hyper_cube_ref&lt;double&gt;<sp/>unit)</highlight><highlight class="keyword"><sp/>const<sp/>override</highlight></codeline>
 <codeline lineno="223"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
 <codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>p<sp/>=<sp/>physical.at(myparameter);</highlight></codeline>
 <codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>x<sp/>=<sp/>T::limits(scale_out<sp/>*<sp/>p<sp/>+<sp/>shift_out);</highlight></codeline>
 <codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>u<sp/>=<sp/>(x<sp/>-<sp/>lower)<sp/>/<sp/>(upper<sp/>-<sp/>lower);</highlight></codeline>
-<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>{u};</highlight></codeline>
-<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="229"><highlight class="normal"></highlight></codeline>
-<codeline lineno="230" refid="classGambit_1_1Priors_1_1RangePrior1D_1a03d09c89c5d33507d969a5e26f3b76d3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Priors_1_1RangePrior1D_1a03d09c89c5d33507d969a5e26f3b76d3" kindref="member">operator()</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;double&gt;<sp/>&amp;vec)</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight><highlight class="normal">{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>T::prior(vec[0]*scale+shift)*scale;}</highlight></codeline>
-<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="232"><highlight class="normal"></highlight></codeline>
-<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LOAD_PRIOR(log,<sp/>RangePrior1D&lt;logprior&gt;)</highlight></codeline>
-<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LOAD_PRIOR(flat,<sp/>RangePrior1D&lt;flatprior&gt;)</highlight></codeline>
-<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LOAD_PRIOR(cos,<sp/>RangePrior1D&lt;cosprior&gt;)</highlight></codeline>
-<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LOAD_PRIOR(sin,<sp/>RangePrior1D&lt;sinprior&gt;)</highlight></codeline>
-<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LOAD_PRIOR(tan,<sp/>RangePrior1D&lt;tanprior&gt;)</highlight></codeline>
-<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LOAD_PRIOR(cot,<sp/>RangePrior1D&lt;cotprior&gt;)</highlight></codeline>
-<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LOAD_PRIOR(arccos,<sp/>RangePrior1D&lt;arccosprior&gt;)<sp/></highlight></codeline>
-<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="241"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="242"><highlight class="normal"></highlight></codeline>
-<codeline lineno="243"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>unit[0]<sp/>=<sp/>u;</highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight></codeline>
+<codeline lineno="231" refid="classGambit_1_1Priors_1_1RangePrior1D_1af00c9b4f3fd7fecd908b6a74b230c6de" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Priors_1_1RangePrior1D_1af00c9b4f3fd7fecd908b6a74b230c6de" kindref="member">log_prior_density</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::unordered_map&lt;std::string,<sp/>double&gt;<sp/>&amp;physical)</highlight><highlight class="keyword"><sp/>const<sp/>override<sp/></highlight></codeline>
+<codeline lineno="232"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>T::prior(physical.at(param_names[0])*scale+shift)*scale;</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="236"><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LOAD_PRIOR(log,<sp/>RangePrior1D&lt;logprior&gt;)</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LOAD_PRIOR(flat,<sp/>RangePrior1D&lt;flatprior&gt;)</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LOAD_PRIOR(cos,<sp/>RangePrior1D&lt;cosprior&gt;)</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LOAD_PRIOR(sin,<sp/>RangePrior1D&lt;sinprior&gt;)</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LOAD_PRIOR(tan,<sp/>RangePrior1D&lt;tanprior&gt;)</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LOAD_PRIOR(cot,<sp/>RangePrior1D&lt;cotprior&gt;)</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>LOAD_PRIOR(arccos,<sp/>RangePrior1D&lt;arccosprior&gt;)<sp/></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="245"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"></highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
     <location file="ScannerBit/include/gambit/ScannerBit/priors/flat_log.hpp"/>
   </compounddef>

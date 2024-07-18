@@ -34,7 +34,7 @@ description: "[No description available]"
 | hid_t | **[createGroup](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-creategroup)**(hid_t location, const std::string & name)<br>Create a group inside the specified location.  |
 | void | **[errorsOff](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-errorsoff)**()<br>Silence error report (e.g. while probing for file existence)  |
 | void | **[errorsOn](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-errorson)**()<br>Restore error report.  |
-| hid_t | **[openGroup](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-opengroup)**(hid_t file_id, const std::string & name, bool nocreate =false) |
+| hid_t | **[openGroup](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-opengroup)**(hid_t file_id, const std::string & name, bool nocreate =false, bool fatal =true) |
 | hid_t | **[closeGroup](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-closegroup)**(hid_t group)<br>Close group.  |
 | std::vector< std::string > | **[lsGroup](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-lsgroup)**(hid_t group_id)<br>List object names in a group.  |
 | hid_t | **[getH5DatasetType](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-geth5datasettype)**(hid_t group_id, const std::string & dset_name)<br>Get type of an object in a group.  |
@@ -227,7 +227,8 @@ Restore error report.
 hid_t openGroup(
     hid_t file_id,
     const std::string & name,
-    bool nocreate =false
+    bool nocreate =false,
+    bool fatal =true
 )
 ```
 
@@ -652,4 +653,4 @@ void * old_client_data;
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:04 +0000
+Updated on 2024-07-18 at 13:53:32 +0000

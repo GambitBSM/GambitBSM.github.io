@@ -13,7 +13,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| struct | **[Gambit::Utils::ci_less](/documentation/code/classes/structgambit_1_1utils_1_1ci__less/)**  |
+| struct | **[Gambit::Utils::ci_less](/documentation/code/classes/structgambit_1_1utils_1_1ci__less/)** <br>Comparator for case-insensitive comparison in STL assos. containers */.  |
 | class | **[Gambit::Utils::FileLock](/documentation/code/classes/classgambit_1_1utils_1_1filelock/)**  |
 | class | **[Gambit::Utils::interp1d_collection](/documentation/code/classes/classgambit_1_1utils_1_1interp1d__collection/)**  |
 | class | **[Gambit::Utils::interp1d_gsl_collection](/documentation/code/classes/classgambit_1_1utils_1_1interp1d__gsl__collection/)**  |
@@ -22,6 +22,7 @@ description: "[No description available]"
 | class | **[Gambit::Utils::interp4d_collection](/documentation/code/classes/classgambit_1_1utils_1_1interp4d__collection/)**  |
 | class | **[Gambit::Utils::interp5d_collection](/documentation/code/classes/classgambit_1_1utils_1_1interp5d__collection/)**  |
 | class | **[Gambit::Utils::ProcessLock](/documentation/code/classes/classgambit_1_1utils_1_1processlock/)** <br>Class to manage a process lock, using a file.  |
+| class | **[Gambit::Utils::python_interpreter_guard](/documentation/code/classes/classgambit_1_1utils_1_1python__interpreter__guard/)** <br>Dummy guard class for python interpreters when python support is turned off.  |
 | class | **[Gambit::Utils::specialised_threadsafe_rng](/documentation/code/classes/classgambit_1_1utils_1_1specialised__threadsafe__rng/)** <br>Derived thread-safe random number generator class, templated on the RNG engine type.  |
 | class | **[Gambit::Utils::threadsafe_rng](/documentation/code/classes/classgambit_1_1utils_1_1threadsafe__rng/)**  |
 | class | **[Gambit::Utils::translator](/documentation/code/classes/classgambit_1_1utils_1_1translator/)**  |
@@ -64,6 +65,7 @@ description: "[No description available]"
 | EXPORT_SYMBOLS bool | **[iequals](/documentation/code/namespaces/namespacegambit_1_1utils/#function-iequals)**(const std::string & a, const std::string & b, bool case_sensitive =false)<br>Perform a (possibly) case-insensitive string comparison.  |
 | EXPORT_SYMBOLS std::vector< std::string > | **[split](/documentation/code/namespaces/namespacegambit_1_1utils/#function-split)**(const std::string & input, const std::string & delimiter)<br>Split string into vector of strings, using a delimiter string.  |
 | EXPORT_SYMBOLS std::string | **[strtolower](/documentation/code/namespaces/namespacegambit_1_1utils/#function-strtolower)**(const std::string & a)<br>Convert a whole string to lowercase.  |
+| EXPORT_SYMBOLS std::string | **[quote_if_contains_commas](/documentation/code/namespaces/namespacegambit_1_1utils/#function-quote-if-contains-commas)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) in)<br>Enclose a string in quotation marks if it contains commas.  |
 | template <typename T ,size_t N\> <br>T * | **[beginA](/documentation/code/namespaces/namespacegambit_1_1utils/#function-begina)**(T(&) arr[N])<br>Get pointers to beginning and end of array.  |
 | template <typename T ,size_t N\> <br>T * | **[endA](/documentation/code/namespaces/namespacegambit_1_1utils/#function-enda)**(T(&) arr[N]) |
 | template <class Set1 ,class Set2 \> <br>bool | **[is_disjoint](/documentation/code/namespaces/namespacegambit_1_1utils/#function-is-disjoint)**(const Set1 & set1, const Set2 & set2)<br>Test if two sets are disjoint (works on any sorted std container I think)  |
@@ -79,10 +81,10 @@ description: "[No description available]"
 | bool | **[check2](/documentation/code/namespaces/namespacegambit_1_1utils/#function-check2)**(const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) & s1, const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) & s2)<br>true if s1 can be obtained from s2 by changing no more than X characters (X=2 for now)  |
 | EXPORT_SYMBOLS double | **[sqr](/documentation/code/namespaces/namespacegambit_1_1utils/#function-sqr)**(double a)<br>returns square of double - saves tedious repetition  |
 | EXPORT_SYMBOLS bool | **[isInteger](/documentation/code/namespaces/namespacegambit_1_1utils/#function-isinteger)**(const std::string & s) |
-| template <typename T \> <br>int | **[sgn](/documentation/code/namespaces/namespacegambit_1_1utils/#function-sgn)**(T val)<br>Get the sign of a (hopefully numeric type)  |
 | template <typename... T\> <br>void | **[dummy_function](/documentation/code/namespaces/namespacegambit_1_1utils/#function-dummy-function)**() |
 | template <typename T \> <br>void | **[dummy_function](/documentation/code/namespaces/namespacegambit_1_1utils/#function-dummy-function)**(T one) |
 | template <typename T1 ,typename... T\> <br>void | **[dummy_function](/documentation/code/namespaces/namespacegambit_1_1utils/#function-dummy-function)**(T1 first, T... args) |
+| template <template< class, class > class Container,class T \> <br>void | **[masked_erase](/documentation/code/namespaces/namespacegambit_1_1utils/#function-masked-erase)**(Container< std::pair< T, bool >, std::allocator< std::pair< T, bool > > > & c) |
 | void | **[InterpIter](/documentation/code/namespaces/namespacegambit_1_1utils/#function-interpiter)**(int Ntemp, double xi_1, double xi_2, std::vector< double > & fi, double test) |
 | double | **[linearinterp1D](/documentation/code/namespaces/namespacegambit_1_1utils/#function-linearinterp1d)**(double x1, double x2, double y1, double y2, double xtest) |
 | bool | **[sspairset_contains](/documentation/code/namespaces/namespacegambit_1_1utils/#function-sspairset-contains)**(const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) & el, const std::set< std::pair< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > > & set)<br>Test if a set of str,str pairs contains any entry with first element matching a given string.  |
@@ -425,6 +427,16 @@ EXPORT_SYMBOLS std::string strtolower(
 
 Convert a whole string to lowercase. 
 
+### function quote_if_contains_commas
+
+```
+EXPORT_SYMBOLS std::string quote_if_contains_commas(
+    str in
+)
+```
+
+Enclose a string in quotation marks if it contains commas. 
+
 ### function beginA
 
 ```
@@ -601,17 +613,6 @@ EXPORT_SYMBOLS bool isInteger(
 Check if a string represents an integer From: [http://stackoverflow.com/a/2845275/1447953](http://stackoverflow.com/a/2845275/1447953)
 
 
-### function sgn
-
-```
-template <typename T >
-int sgn(
-    T val
-)
-```
-
-Get the sign of a (hopefully numeric type) 
-
 ### function dummy_function
 
 ```
@@ -640,6 +641,20 @@ void dummy_function(
     T... args
 )
 ```
+
+
+### function masked_erase
+
+```
+template <template< class, class > class Container,
+class T >
+void masked_erase(
+    Container< std::pair< T, bool >, std::allocator< std::pair< T, bool > > > & c
+)
+```
+
+
+Expunge entries in a container of std::pairs for which the second (boolean) value of the pair is false. Useful for allowing evaluation of a removal criterion over the whole container in parallel. 
 
 
 ### function InterpIter
@@ -714,4 +729,4 @@ const char *[] whitespaces = {" ", "\t", "\n", "\f", "\r"};
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:05 +0000
+Updated on 2024-07-18 at 13:53:32 +0000

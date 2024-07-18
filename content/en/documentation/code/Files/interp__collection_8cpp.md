@@ -53,7 +53,7 @@ Authors (add name and date if you modify):
 //   *********************************************
 ///  \file
 ///
-///  Utils classes for holding a 
+///  Utils classes for holding a
 ///  collection of 1D/2D gsl interpolators and
 ///  1D/2D/4D/5D linear interpolators.
 ///
@@ -90,9 +90,9 @@ namespace Gambit
   namespace Utils
   {
 
-    // 
+    //
     // interp1d_gsl_collection class methods
-    // 
+    //
 
     // Constructor
     interp1d_gsl_collection::interp1d_gsl_collection(const std::string collection_name_in, const std::string file_name_in, const std::vector<std::string> colnames_in)
@@ -130,9 +130,9 @@ namespace Gambit
       // Number of interpolators
       n_interpolators = interpolator_names.size();
 
-      // 
+      //
       // Create one GSL spline for each interpolator
-      // 
+      //
       std::vector<double> x_data = tab[x_name];
       int nx = x_data.size();
 
@@ -194,9 +194,9 @@ namespace Gambit
     }
 
 
-    // 
+    //
     // interp1d_collection class methods
-    // 
+    //
 
     // Constructor
     interp1d_collection::interp1d_collection(const std::string collection_name_in, const std::string file_name_in, const std::vector<std::string> colnames_in)
@@ -296,12 +296,12 @@ namespace Gambit
       bool test_u[] = {false};
       bool test_l[] = {false};
 
-      //Loop over all interp_data, and match value to coresponding value. 
+      //Loop over all interp_data, and match value to coresponding value.
       for (size_t k=0;k<fi_values.size();k++)
       {
         // Reset Values
-        test_u[0] = false; test_u[1] = false;
-        test_l[0] = false; test_l[1] = false;
+        test_u[0] = false;
+        test_l[0] = false;
 
         // Check whether the values correspond to any of the upper/lower values. skip calculation if not...
         if (x1_vec_unsorted[k]==xi_upper[0]) { test_u[0]=true;}
@@ -332,9 +332,9 @@ namespace Gambit
     }
 
 
-    // 
+    //
     // interp2d_gsl_collection class methods
-    // 
+    //
 
     // Constructor
     interp2d_gsl_collection::interp2d_gsl_collection(const std::string collection_name_in, const std::string file_name_in, const std::vector<std::string> colnames_in)
@@ -373,9 +373,9 @@ namespace Gambit
       // Number of interpolators
       n_interpolators = interpolator_names.size();
 
-      // 
+      //
       // Create one GSL spline for each interpolator
-      // 
+      //
 
       // Get unique entries of "x" and "y" for the grid and grid size.
       std::vector<double> x_vec = tab[x_name];
@@ -430,6 +430,12 @@ namespace Gambit
     // Evaluate a given interpolation
     double interp2d_gsl_collection::eval(double x, double y, size_t interp_index) const
     {
+      if(not is_inside_range(x,y))
+      {
+        std::stringstream ss;
+        ss << "ERROR! Value (" << x << ", " << y << ") outside of range";
+        utils_error().raise(LOCAL_INFO, ss.str());
+      }
       return gsl_spline2d_eval(splines[interp_index], x, y, x_accels[interp_index], y_accels[interp_index]);
     }
 
@@ -450,9 +456,9 @@ namespace Gambit
     }
 
 
-    // 
+    //
     // interp2d_collection class methods
-    // 
+    //
 
     // Constructor
     interp2d_collection::interp2d_collection(const std::string collection_name_in, const std::string file_name_in, const std::vector<std::string> colnames_in)
@@ -572,7 +578,7 @@ namespace Gambit
           xi_lower[1] = x2_vec[i];
           xi_upper[1] = x2_vec[i+1];
         }
-        
+
         if (x2 < x2_vec[i]) break;
       }
 
@@ -581,7 +587,7 @@ namespace Gambit
       bool test_u[] = {false,false};
       bool test_l[] = {false,false};
 
-      //Loop over all interp_data, and match value to coresponding value. 
+      //Loop over all interp_data, and match value to coresponding value.
       for (size_t k=0;k<fi_values.size();k++)
       {
         // Reset Values
@@ -638,9 +644,9 @@ namespace Gambit
     }
 
 
-    // 
+    //
     // interp4d_collection class methods
-    // 
+    //
 
     // Constructor
     interp4d_collection::interp4d_collection(const std::string collection_name_in, const std::string file_name_in, const std::vector<std::string> colnames_in, bool allow_missing_points, double missing_pts_val)
@@ -820,7 +826,7 @@ namespace Gambit
       bool test_u[] = {false,false,false,false};
       bool test_l[] = {false,false,false,false};
 
-      //Loop over all interp_data, and match value to coresponding value. 
+      //Loop over all interp_data, and match value to coresponding value.
       for (size_t k=0;k<fi_values.size();k++)
       {
         // Reset Values
@@ -903,9 +909,9 @@ namespace Gambit
     }
 
 
-    // 
+    //
     // interp5d_collection class methods
-    // 
+    //
 
     // Constructor
     interp5d_collection::interp5d_collection(const std::string collection_name_in, const std::string file_name_in, const std::vector<std::string> colnames_in, bool allow_missing_points, double missing_pts_val)
@@ -1011,7 +1017,7 @@ namespace Gambit
     // Destructor
     interp5d_collection::~interp5d_collection() {}
 
-    // Just some forward declarations... 
+    // Just some forward declarations...
     void InterpIter(int Ntemp,double xi_1,double xi_2,std::vector<double>& fi,double test);
 
     // Evaluate a given interpolation
@@ -1106,7 +1112,7 @@ namespace Gambit
 
       // Find the corresponding function values
       // Using a default value of -1 as this is assumed not a valid result.
-      // Note: This will cause a problem if your interpolation is using -1. 
+      // Note: This will cause a problem if your interpolation is using -1.
       //       However, this should not be the case in any scenarios I can envision.
       std::vector<double> fi = {-1.0,-1.0,-1.0,-1.0,-1.0,-1.0,-1.0,-1.0,-1.0,-1.0,-1.0,-1.0,-1.0,-1.0,
                                 -1.0,-1.0,-1.0,-1.0,-1.0,-1.0,-1.0,-1.0,-1.0,-1.0,-1.0,-1.0,-1.0,-1.0,
@@ -1114,7 +1120,7 @@ namespace Gambit
       bool test_u[] = {false,false,false,false,false};
       bool test_l[] = {false,false,false,false,false};
 
-      //Loop over all interp_data, and match value to coresponding value. 
+      //Loop over all interp_data, and match value to coresponding value.
       for (size_t k=0;k<fi_values.size();k++)
       {
         // Reset Values
@@ -1254,4 +1260,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:05 +0000
+Updated on 2024-07-18 at 13:53:32 +0000

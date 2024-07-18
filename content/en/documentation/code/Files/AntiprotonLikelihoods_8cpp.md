@@ -19,9 +19,17 @@ description: "[No description available]"
 ## Detailed Description
 
 
-**Author**: Sowmiya Balan ([sowmiya.balan@kit.edu](mailto:sowmiya.balan@kit.edu)) 
+**Author**: 
 
-**Date**: 2022 June
+  * Sowmiya Balan ([sowmiya.balan@kit.edu](mailto:sowmiya.balan@kit.edu)) 
+  * Torsten Bringmann ([torsten.bringmann@fys.uio.no](mailto:torsten.bringmann@fys.uio.no)) 
+
+
+**Date**: 
+
+  * 2022 June
+  * Oct 2023
+
 
 Likelihood for 7-year antiproton data from AMS-02
 
@@ -55,6 +63,9 @@ Authors (add name and date if you modify):
 ///          (sowmiya.balan@kit.edu)
 ///  \date 2022 June
 ///
+///  \author Torsten Bringmann
+///         (torsten.bringmann@fys.uio.no)
+///  \date Oct 2023
 ///
 ///  *********************************************
 
@@ -74,8 +85,8 @@ namespace Gambit
     {
       using namespace Pipes::lnL_pbarAMS02;
       LocalMaxwellianHalo LocalHaloParameters = *Dep::LocalHalo;
-      double rho0 = LocalHaloParameters.rho0;
-      double rho0_eff = (*Dep::RD_fraction)*rho0/0.43;
+      double rho0_resc = LocalHaloParameters.rho0/0.43;
+      double suppression = *Dep::ID_suppression;
       std::string DM_ID = Dep::WIMP_properties->name;
       std::string DMbar_ID = Dep::WIMP_properties->conjugate;
       double DM_mass = Dep::WIMP_properties->mass;
@@ -90,7 +101,7 @@ namespace Gambit
         fs = it->finalStateIDs;
         finalStates = fs[0] + " " + fs[1];
         rate = it->genRate->bind("v")->eval(0.);
-        rate = rate * rho0_eff * rho0_eff;
+        rate = rate * suppression * rho0_resc * rho0_resc;
         input.insert({finalStates, rate});
         sv += rate;
       }
@@ -117,4 +128,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:06 +0000
+Updated on 2024-07-18 at 13:53:34 +0000

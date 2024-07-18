@@ -35,6 +35,7 @@ description: "[No description available]"
 | struct | **[Gambit::SpectrumContents::DMsimpVectorMedMajoranaDM](/documentation/code/classes/structgambit_1_1spectrumcontents_1_1dmsimpvectormedmajoranadm/)**  |
 | struct | **[Gambit::SpectrumContents::DMsimpVectorMedScalarDM](/documentation/code/classes/structgambit_1_1spectrumcontents_1_1dmsimpvectormedscalardm/)**  |
 | struct | **[Gambit::SpectrumContents::DMsimpVectorMedVectorDM](/documentation/code/classes/structgambit_1_1spectrumcontents_1_1dmsimpvectormedvectordm/)**  |
+| struct | **[Gambit::SpectrumContents::SubGeVDM](/documentation/code/classes/structgambit_1_1spectrumcontents_1_1subgevdm/)**  |
 
 ## Detailed Description
 
@@ -121,7 +122,8 @@ namespace Gambit
     struct DMsimpVectorMedDiracDM   : SubSpectrumContents { DMsimpVectorMedDiracDM(); };
     struct DMsimpVectorMedMajoranaDM: SubSpectrumContents { DMsimpVectorMedMajoranaDM(); };
     struct DMsimpVectorMedScalarDM  : SubSpectrumContents { DMsimpVectorMedScalarDM(); };
-    struct DMsimpVectorMedVectorDM: SubSpectrumContents { DMsimpVectorMedVectorDM(); };
+    struct DMsimpVectorMedVectorDM  : SubSpectrumContents { DMsimpVectorMedVectorDM(); };
+    struct SubGeVDM                 : SubSpectrumContents { SubGeVDM(); };
 
     // TODO: Temporarily disabled until project is ready
     // struct SuperRenormHP        : SubSpectrumContents { SuperRenormHP(); };
@@ -134,4 +136,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:06 +0000
+Updated on 2024-07-18 at 13:53:33 +0000

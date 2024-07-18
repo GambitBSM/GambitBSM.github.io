@@ -23,7 +23,7 @@ description: "[No description available]"
 ### define Rivet_3_1_5_all_data
 
 ```
-#define Rivet_3_1_5_all_data   (( /*class*/(Rivet)(AnalysisHandler),    /*constructors*/(("Factory_AnalysisHandler_0__BOSS_1",(const std::string&))) (("Factory_AnalysisHandler_1__BOSS_2",())) )) \
+#define Rivet_3_1_5_all_data   (( /*class*/(Rivet)(AnalysisHandler),    /*constructors*/((("Factory_AnalysisHandler_0__BOSS_1","_Factory_AnalysisHandler_0__BOSS_1"),(const std::string&))) ((("Factory_AnalysisHandler_1__BOSS_2","_Factory_AnalysisHandler_1__BOSS_2"),())) )) \
 ```
 
 
@@ -43,7 +43,7 @@ description: "[No description available]"
 
 // Indicate which types are provided by this backend, and what the symbols of their factories are.
 #define Rivet_3_1_5_all_data \
-  (( /*class*/(Rivet)(AnalysisHandler),    /*constructors*/(("Factory_AnalysisHandler_0__BOSS_1",(const std::string&))) (("Factory_AnalysisHandler_1__BOSS_2",())) )) \
+  (( /*class*/(Rivet)(AnalysisHandler),    /*constructors*/((("Factory_AnalysisHandler_0__BOSS_1","_Factory_AnalysisHandler_0__BOSS_1"),(const std::string&))) ((("Factory_AnalysisHandler_1__BOSS_2","_Factory_AnalysisHandler_1__BOSS_2"),())) )) \
 
 // If the default version has been loaded, set it as default.
 #if ALREADY_LOADED(CAT_3(BACKENDNAME,_,CAT(Default_,BACKENDNAME)))
@@ -62,4 +62,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:08 +0000
+Updated on 2024-07-18 at 13:53:35 +0000

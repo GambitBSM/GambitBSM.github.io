@@ -3,6 +3,7 @@
   <compounddef id="begin__ignore__warnings__pybind11_8hpp" kind="file" language="C++">
     <compoundname>begin_ignore_warnings_pybind11.hpp</compoundname>
     <includes local="yes">gambit/cmake/cmake_variables.hpp</includes>
+    <includedby refid="python__utils_8hpp" local="yes">python_utils.hpp</includedby>
     <incdepgraph>
       <node id="1">
         <label>begin_ignore_warnings_pybind11.hpp</label>
@@ -14,6 +15,18 @@
         <label>gambit/cmake/cmake_variables.hpp</label>
       </node>
     </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>python_utils.hpp</label>
+        <link refid="python__utils_8hpp_source"/>
+      </node>
+      <node id="1">
+        <label>begin_ignore_warnings_pybind11.hpp</label>
+        <link refid="begin__ignore__warnings__pybind11_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
     <briefdescription>
     </briefdescription>
     <detaileddescription>

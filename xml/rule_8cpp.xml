@@ -1,0 +1,713 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="rule_8cpp" kind="file" language="C++">
+    <compoundname>rule.cpp</compoundname>
+    <includes refid="rule_8hpp" local="yes">gambit/Core/rule.hpp</includes>
+    <includes refid="error__handlers_8hpp" local="yes">gambit/Core/error_handlers.hpp</includes>
+    <includes refid="resolution__utilities_8hpp" local="yes">gambit/Core/resolution_utilities.hpp</includes>
+    <includes refid="functors_8hpp" local="yes">gambit/Elements/functors.hpp</includes>
+    <incdepgraph>
+      <node id="55">
+        <label>gambit/Core/error_handlers.hpp</label>
+        <link refid="error__handlers_8hpp"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>gambit/Core/resolution_utilities.hpp</label>
+        <link refid="resolution__utilities_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>gambit/Core/rule.hpp</label>
+        <link refid="rule_8hpp"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>rule.cpp</label>
+        <link refid="rule_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="57">
+        <label>gambit/Elements/functors.hpp</label>
+        <link refid="functors_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+      </node>
+      <node id="54">
+        <label>gambit/Elements/type_equivalency.hpp</label>
+        <link refid="type__equivalency_8hpp"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="36">
+        <label>gambit/Logs/log_tags.hpp</label>
+        <link refid="log__tags_8hpp"/>
+      </node>
+      <node id="66">
+        <label>gambit/Logs/logger.hpp</label>
+        <link refid="logger_8hpp"/>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="69">
+        <label>gambit/Logs/logmaster.hpp</label>
+        <link refid="logmaster_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="14">
+        <label>gambit/Utils/boost_fallbacks.hpp</label>
+        <link refid="boost__fallbacks_8hpp"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>gambit/Utils/cats.hpp</label>
+        <link refid="Utils_2include_2gambit_2Utils_2cats_8hpp"/>
+      </node>
+      <node id="31">
+        <label>gambit/Utils/exceptions.hpp</label>
+        <link refid="exceptions_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+      </node>
+      <node id="23">
+        <label>gambit/Utils/export_symbols.hpp</label>
+        <link refid="export__symbols_8hpp"/>
+      </node>
+      <node id="21">
+        <label>gambit/Utils/local_info.hpp</label>
+        <link refid="local__info_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="65">
+        <label>gambit/Utils/model_parameters.hpp</label>
+        <link refid="model__parameters_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>gambit/Utils/standalone_error_handlers.hpp</label>
+        <link refid="standalone__error__handlers_8hpp"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+      </node>
+      <node id="67">
+        <label>gambit/Utils/stream_overloads.hpp</label>
+        <link refid="stream__overloads_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="68" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>gambit/Utils/stringify.hpp</label>
+        <link refid="stringify_8hpp"/>
+      </node>
+      <node id="60">
+        <label>gambit/Utils/util_functions.hpp</label>
+        <link refid="util__functions_8hpp"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>gambit/Utils/util_macros.hpp</label>
+        <link refid="util__macros_8hpp"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>gambit/Utils/util_types.hpp</label>
+        <link refid="util__types_8hpp"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>gambit/Utils/variadic_functions.hpp</label>
+        <link refid="variadic__functions_8hpp"/>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="51">
+        <label>gambit/Utils/yaml_node_utility.hpp</label>
+        <link refid="yaml__node__utility_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="48">
+        <label>gambit/Utils/yaml_options.hpp</label>
+        <link refid="yaml__options_8hpp"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
+        <label>gambit/Utils/yaml_variadic_functions.hpp</label>
+        <link refid="yaml__variadic__functions_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="59">
+        <label>algorithm</label>
+      </node>
+      <node id="47">
+        <label>array</label>
+      </node>
+      <node id="63">
+        <label>boost/algorithm/string/classification.hpp</label>
+      </node>
+      <node id="62">
+        <label>boost/algorithm/string/split.hpp</label>
+      </node>
+      <node id="22">
+        <label>boost/current_function.hpp</label>
+      </node>
+      <node id="17">
+        <label>boost/detail/workaround.hpp</label>
+      </node>
+      <node id="28">
+        <label>boost/preprocessor/arithmetic/sub.hpp</label>
+      </node>
+      <node id="18">
+        <label>boost/preprocessor/cat.hpp</label>
+      </node>
+      <node id="27">
+        <label>boost/preprocessor/comparison/equal.hpp</label>
+      </node>
+      <node id="16">
+        <label>boost/preprocessor/config/config.hpp</label>
+      </node>
+      <node id="26">
+        <label>boost/preprocessor/control/if.hpp</label>
+      </node>
+      <node id="29">
+        <label>boost/preprocessor/punctuation/comma.hpp</label>
+      </node>
+      <node id="30">
+        <label>boost/preprocessor/punctuation/paren.hpp</label>
+      </node>
+      <node id="24">
+        <label>boost/preprocessor/seq/size.hpp</label>
+      </node>
+      <node id="25">
+        <label>boost/preprocessor/tuple/elem.hpp</label>
+      </node>
+      <node id="15">
+        <label>boost/version.hpp</label>
+      </node>
+      <node id="41">
+        <label>cassert</label>
+      </node>
+      <node id="58">
+        <label>chrono</label>
+      </node>
+      <node id="53">
+        <label>cmath</label>
+      </node>
+      <node id="9">
+        <label>complex</label>
+      </node>
+      <node id="8">
+        <label>cstring</label>
+      </node>
+      <node id="46">
+        <label>deque</label>
+      </node>
+      <node id="33">
+        <label>exception</label>
+      </node>
+      <node id="45">
+        <label>forward_list</label>
+      </node>
+      <node id="39">
+        <label>fstream</label>
+      </node>
+      <node id="61">
+        <label>gambit/cmake/cmake_variables.hpp</label>
+      </node>
+      <node id="38">
+        <label>iostream</label>
+      </node>
+      <node id="52">
+        <label>limits</label>
+      </node>
+      <node id="44">
+        <label>list</label>
+      </node>
+      <node id="4">
+        <label>map</label>
+      </node>
+      <node id="10">
+        <label>memory</label>
+      </node>
+      <node id="64">
+        <label>mkpath/mkpath.h</label>
+      </node>
+      <node id="7">
+        <label>omp.h</label>
+      </node>
+      <node id="68">
+        <label>ostream</label>
+      </node>
+      <node id="32">
+        <label>set</label>
+      </node>
+      <node id="6">
+        <label>sstream</label>
+      </node>
+      <node id="5">
+        <label>string</label>
+      </node>
+      <node id="40">
+        <label>type_traits</label>
+      </node>
+      <node id="13">
+        <label>unistd.h</label>
+      </node>
+      <node id="42">
+        <label>unordered_map</label>
+      </node>
+      <node id="43">
+        <label>unordered_set</label>
+      </node>
+      <node id="35">
+        <label>utility</label>
+      </node>
+      <node id="34">
+        <label>vector</label>
+      </node>
+      <node id="50">
+        <label>yaml-cpp/yaml.h</label>
+      </node>
+    </incdepgraph>
+    <innernamespace refid="namespaceGambit">Gambit</innernamespace>
+    <innernamespace refid="namespaceGambit_1_1DRes">Gambit::DRes</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Function implementations for rule classes.</para>
+<para><hruler/>
+</para>
+<para>Authors (add name and date if you modify):</para>
+<para><simplesect kind="author"><para>Pat Scott (<ulink url="mailto:patrickcolinscott@gmail.com">patrickcolinscott@gmail.com</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2022 Nov</para>
+</simplesect>
+<hruler/>
+ </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/><sp/><sp/>GAMBIT:<sp/>Global<sp/>and<sp/>Modular<sp/>BSM<sp/>Inference<sp/>Tool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>*********************************************</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="3"><highlight class="comment">///<sp/><sp/>\file</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">///<sp/><sp/>Function<sp/>implementations<sp/>for<sp/>rule<sp/>classes.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">///<sp/><sp/>Authors<sp/>(add<sp/>name<sp/>and<sp/>date<sp/>if<sp/>you<sp/>modify):</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">///<sp/><sp/>\author<sp/>Pat<sp/>Scott</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">///<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(patrickcolinscott@gmail.com)</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">///<sp/><sp/>\date<sp/>2022<sp/>Nov</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
+<codeline lineno="16"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="rule_8hpp" kindref="compound">gambit/Core/rule.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="error__handlers_8hpp" kindref="compound">gambit/Core/error_handlers.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="resolution__utilities_8hpp" kindref="compound">gambit/Core/resolution_utilities.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="functors_8hpp" kindref="compound">gambit/Elements/functors.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceGambit" kindref="compound">Gambit</ref></highlight></codeline>
+<codeline lineno="23"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">DRes</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="28"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>True<sp/>if<sp/>and<sp/>only<sp/>if<sp/>the<sp/>passed<sp/>functor<sp/>matches<sp/>the<sp/>base<sp/>part<sp/>of<sp/>an<sp/>&apos;if&apos;<sp/>part<sp/>of<sp/>a<sp/>rule<sp/></highlight></codeline>
+<codeline lineno="29"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1DRes_1_1Rule_1a1dcfee83f84288b64809ac36e5bb74e0" kindref="member">Rule::base_antecedent_matches</ref>(functor*<sp/>f,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Utils::type_equivalency&amp;<sp/>te)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="30"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>match<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(match<sp/>and<sp/><ref refid="structGambit_1_1DRes_1_1Rule_1a7e7ca0cb7fbf4dc75cfc23dba706d369" kindref="member">if_capability</ref>)<sp/>match<sp/>=<sp/><ref refid="namespaceGambit_1_1DRes_1a6ca4116f647e0c01b07ef3bffea7f773" kindref="member">stringComp</ref>(<ref refid="structGambit_1_1DRes_1_1Rule_1aa4644d0b22f3c6f46104661642f30eb8" kindref="member">capability</ref>,<sp/>f-&gt;capability()<sp/><sp/><sp/>);<sp/></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(match<sp/>and<sp/><ref refid="structGambit_1_1DRes_1_1Rule_1af9c5df4e4857eaa4bcdfe2b11793db24" kindref="member">if_type</ref>)<sp/><sp/><sp/><sp/><sp/><sp/><sp/>match<sp/>=<sp/><ref refid="namespaceGambit_1_1DRes_1a667cf5e40a389d728c0f2da553e085de" kindref="member">typeComp</ref><sp/><sp/>(<ref refid="structGambit_1_1DRes_1_1Rule_1a111c16c35b0ab2a4e064de91dc8d6938" kindref="member">type</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/>f-&gt;type(),<sp/><sp/><sp/><sp/><sp/><sp/>te);<sp/></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(match<sp/>and<sp/><ref refid="structGambit_1_1DRes_1_1Rule_1a7d7e39b02fb0595e16522dc3dbe6bacb" kindref="member">if_function</ref>)<sp/><sp/><sp/>match<sp/>=<sp/><ref refid="namespaceGambit_1_1DRes_1a6ca4116f647e0c01b07ef3bffea7f773" kindref="member">stringComp</ref>(<ref refid="structGambit_1_1DRes_1_1Rule_1a9a917156b3e4081a8eb8b6e9f0fe00ca" kindref="member">function</ref>,<sp/><sp/><sp/>f-&gt;name()<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>);<sp/></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>match;</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>True<sp/>if<sp/>and<sp/>only<sp/>if<sp/>the<sp/>passed<sp/>functor<sp/>matches<sp/>the<sp/>base<sp/>part<sp/>of<sp/>a<sp/>&apos;then&apos;<sp/>part<sp/>of<sp/>a<sp/>rule<sp/></highlight></codeline>
+<codeline lineno="39"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1DRes_1_1Rule_1afc73a482519ed65671e232000d753869" kindref="member">Rule::base_consequent_matches</ref>(functor*<sp/>f,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Utils::type_equivalency&amp;<sp/>te)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="40"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>match<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(match<sp/>and<sp/><ref refid="structGambit_1_1DRes_1_1Rule_1a07754e26554a8594db6b96b9501dc6cf" kindref="member">then_capability</ref>)<sp/>match<sp/>=<sp/><ref refid="namespaceGambit_1_1DRes_1a6ca4116f647e0c01b07ef3bffea7f773" kindref="member">stringComp</ref>(<ref refid="structGambit_1_1DRes_1_1Rule_1aa4644d0b22f3c6f46104661642f30eb8" kindref="member">capability</ref>,<sp/>f-&gt;capability()<sp/><sp/><sp/>);<sp/></highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(match<sp/>and<sp/><ref refid="structGambit_1_1DRes_1_1Rule_1a14ae28482623485c663bc10d9b7556b2" kindref="member">then_type</ref>)<sp/><sp/><sp/><sp/><sp/><sp/><sp/>match<sp/>=<sp/><ref refid="namespaceGambit_1_1DRes_1a667cf5e40a389d728c0f2da553e085de" kindref="member">typeComp</ref><sp/><sp/>(<ref refid="structGambit_1_1DRes_1_1Rule_1a111c16c35b0ab2a4e064de91dc8d6938" kindref="member">type</ref>,<sp/><sp/><sp/><sp/><sp/><sp/><sp/>f-&gt;type(),<sp/><sp/><sp/><sp/><sp/><sp/>te);<sp/></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(match<sp/>and<sp/><ref refid="structGambit_1_1DRes_1_1Rule_1ac7d7706ebd72295b1f950fc52db5cf7a" kindref="member">then_function</ref>)<sp/><sp/><sp/>match<sp/>=<sp/><ref refid="namespaceGambit_1_1DRes_1a6ca4116f647e0c01b07ef3bffea7f773" kindref="member">stringComp</ref>(<ref refid="structGambit_1_1DRes_1_1Rule_1a9a917156b3e4081a8eb8b6e9f0fe00ca" kindref="member">function</ref>,<sp/><sp/><sp/>f-&gt;name()<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>);<sp/></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>match;</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="48"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Check<sp/>if<sp/>a<sp/>given<sp/>string<sp/>is<sp/>a<sp/>permitted<sp/>field<sp/>of<sp/>the<sp/>BackendRule<sp/>class</highlight></codeline>
+<codeline lineno="49"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1DRes_1_1BackendRule_1a0488ac05b35c5cb3fefc6d079ad16702" kindref="member">BackendRule::permits_field</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;<sp/>field)</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::set&lt;str&gt;<sp/>fields<sp/>=</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;version&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;backend&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;group&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(fields.find(field)<sp/>!=<sp/>fields.end());</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="60"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>True<sp/>if<sp/>and<sp/>only<sp/>if<sp/>the<sp/>passed<sp/>backend<sp/>functor<sp/>matches<sp/>the<sp/>&apos;if&apos;<sp/>part<sp/>of<sp/>a<sp/>rule</highlight></codeline>
+<codeline lineno="61"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1DRes_1_1BackendRule_1a9d0c2b3d70d8a5b13810483f0b836113" kindref="member">BackendRule::antecedent_matches</ref>(functor*<sp/>f,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Utils::type_equivalency&amp;<sp/>te,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;<sp/>group_being_resolved)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="62"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Allow<sp/>matching<sp/>only<sp/>if<sp/>the<sp/>antecedent<sp/>has<sp/>been<sp/>properly<sp/>specified.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>match<sp/>=<sp/><ref refid="structGambit_1_1DRes_1_1Rule_1a7e7ca0cb7fbf4dc75cfc23dba706d369" kindref="member">if_capability</ref><sp/>or<sp/><ref refid="structGambit_1_1DRes_1_1Rule_1af9c5df4e4857eaa4bcdfe2b11793db24" kindref="member">if_type</ref><sp/>or<sp/><ref refid="structGambit_1_1DRes_1_1Rule_1a7d7e39b02fb0595e16522dc3dbe6bacb" kindref="member">if_function</ref><sp/>or<sp/><ref refid="structGambit_1_1DRes_1_1BackendRule_1a6770a7ac8ae285c011ad3e2f835551fa" kindref="member">if_version</ref><sp/>or<sp/><ref refid="structGambit_1_1DRes_1_1BackendRule_1ac30ee6d80f15f5ea7ba803a372c064db" kindref="member">if_backend</ref><sp/>or<sp/><ref refid="structGambit_1_1DRes_1_1BackendRule_1a9802b5f3ab0b7d5104b29b4a94b5a7bb" kindref="member">if_group</ref>;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Check<sp/>if<sp/>the<sp/>base<sp/>class<sp/>part<sp/>of<sp/>the<sp/>antecedent<sp/>was<sp/>matched.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>match<sp/>=<sp/>match<sp/>and<sp/><ref refid="structGambit_1_1DRes_1_1Rule_1a1dcfee83f84288b64809ac36e5bb74e0" kindref="member">base_antecedent_matches</ref>(f,<sp/>te);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Check<sp/>if<sp/>the<sp/>derived<sp/>class<sp/>part<sp/>of<sp/>the<sp/>antecedent<sp/>was<sp/>matched.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(match<sp/>and<sp/><ref refid="structGambit_1_1DRes_1_1BackendRule_1a6770a7ac8ae285c011ad3e2f835551fa" kindref="member">if_version</ref>)<sp/>match<sp/>=<sp/><ref refid="namespaceGambit_1_1DRes_1a6ca4116f647e0c01b07ef3bffea7f773" kindref="member">stringComp</ref>(<ref refid="structGambit_1_1DRes_1_1BackendRule_1a1623a8bac717975d543e12fa44f4e749" kindref="member">version</ref>,<sp/>f-&gt;version());<sp/></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(match<sp/>and<sp/><ref refid="structGambit_1_1DRes_1_1BackendRule_1ac30ee6d80f15f5ea7ba803a372c064db" kindref="member">if_backend</ref>)<sp/>match<sp/>=<sp/><ref refid="namespaceGambit_1_1DRes_1a6ca4116f647e0c01b07ef3bffea7f773" kindref="member">stringComp</ref>(<ref refid="structGambit_1_1DRes_1_1BackendRule_1a939743933b639580ed1d7adf353bc3e9" kindref="member">backend</ref>,<sp/>f-&gt;origin());<sp/></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(match<sp/>and<sp/><ref refid="structGambit_1_1DRes_1_1BackendRule_1a9802b5f3ab0b7d5104b29b4a94b5a7bb" kindref="member">if_group</ref>)<sp/><sp/><sp/>match<sp/>=<sp/><ref refid="namespaceGambit_1_1DRes_1a6ca4116f647e0c01b07ef3bffea7f773" kindref="member">stringComp</ref>(<ref refid="structGambit_1_1DRes_1_1BackendRule_1a221c28c43c5b7fb6a4ce9e97fdb8ce9d" kindref="member">group</ref>,<sp/>group_being_resolved);<sp/></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>match;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="74"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>True<sp/>if<sp/>and<sp/>only<sp/>if<sp/>the<sp/>passed<sp/>backend<sp/>functor<sp/>matches<sp/>the<sp/>&apos;then&apos;<sp/>part<sp/>of<sp/>a<sp/>rule</highlight></codeline>
+<codeline lineno="75"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1DRes_1_1BackendRule_1a23095550c1e6f0a5c5ad52b1fa3233a7" kindref="member">BackendRule::consequent_matches</ref>(functor*<sp/>f,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Utils::type_equivalency&amp;<sp/>te)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="76"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Allow<sp/>matching<sp/>only<sp/>if<sp/>the<sp/>consequent<sp/>has<sp/>been<sp/>properly<sp/>specified.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>match<sp/>=<sp/><ref refid="structGambit_1_1DRes_1_1Rule_1a07754e26554a8594db6b96b9501dc6cf" kindref="member">then_capability</ref><sp/>or<sp/><ref refid="structGambit_1_1DRes_1_1Rule_1a14ae28482623485c663bc10d9b7556b2" kindref="member">then_type</ref><sp/>or<sp/><ref refid="structGambit_1_1DRes_1_1Rule_1ac7d7706ebd72295b1f950fc52db5cf7a" kindref="member">then_function</ref><sp/>or<sp/><ref refid="structGambit_1_1DRes_1_1BackendRule_1afa7ce1c93a46e28ab3d23ed0e3b45009" kindref="member">then_version</ref><sp/>or<sp/><ref refid="structGambit_1_1DRes_1_1BackendRule_1a0c20b5b369484cc73de41ebf1fab31b7" kindref="member">then_backend</ref>;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Check<sp/>if<sp/>the<sp/>base<sp/>class<sp/>part<sp/>of<sp/>the<sp/>consequent<sp/>was<sp/>matched.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>match<sp/>=<sp/>match<sp/>and<sp/><ref refid="structGambit_1_1DRes_1_1Rule_1afc73a482519ed65671e232000d753869" kindref="member">base_consequent_matches</ref>(f,<sp/>te);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Check<sp/>if<sp/>the<sp/>derived<sp/>class<sp/>part<sp/>of<sp/>the<sp/>consequent<sp/>was<sp/>matched.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(match<sp/>and<sp/><ref refid="structGambit_1_1DRes_1_1BackendRule_1afa7ce1c93a46e28ab3d23ed0e3b45009" kindref="member">then_version</ref>)<sp/>match<sp/>=<sp/><ref refid="namespaceGambit_1_1DRes_1a6ca4116f647e0c01b07ef3bffea7f773" kindref="member">stringComp</ref>(<ref refid="structGambit_1_1DRes_1_1BackendRule_1a1623a8bac717975d543e12fa44f4e749" kindref="member">version</ref>,<sp/>f-&gt;version());<sp/></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(match<sp/>and<sp/><ref refid="structGambit_1_1DRes_1_1BackendRule_1a0c20b5b369484cc73de41ebf1fab31b7" kindref="member">then_backend</ref>)<sp/>match<sp/>=<sp/><ref refid="namespaceGambit_1_1DRes_1a6ca4116f647e0c01b07ef3bffea7f773" kindref="member">stringComp</ref>(<ref refid="structGambit_1_1DRes_1_1BackendRule_1a939743933b639580ed1d7adf353bc3e9" kindref="member">backend</ref>,<sp/>f-&gt;origin());<sp/></highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Log<sp/>match</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(match<sp/>and<sp/><ref refid="structGambit_1_1DRes_1_1Rule_1afda2bf7cb57ccaaac571540135f247b1" kindref="member">log_matches</ref>)<sp/>f-&gt;addMatchedBackendRule(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>match;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="89"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Whether<sp/>a<sp/>backend<sp/>rule<sp/>allows<sp/>a<sp/>given<sp/>backend<sp/>functor<sp/>or<sp/>not.<sp/><sp/></highlight></codeline>
+<codeline lineno="90"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Must<sp/>be<sp/>true<sp/>for<sp/>a<sp/>backend<sp/>functor<sp/>to<sp/>be<sp/>used<sp/>to<sp/>resolve<sp/>a<sp/>backend<sp/>requirement.<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="91"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>True<sp/>unless<sp/>the<sp/>functor<sp/>passes<sp/>the<sp/>antecedent<sp/>(&apos;if&apos;<sp/>part<sp/>of<sp/>the<sp/>rule)<sp/>but<sp/>fails<sp/>the<sp/>consequent<sp/>(&apos;then&apos;<sp/>part<sp/>of<sp/>the<sp/>rule).<sp/></highlight></codeline>
+<codeline lineno="92"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1DRes_1_1BackendRule_1a2d367018b157a1457b84e1d9a5805d5c" kindref="member">BackendRule::allows</ref>(functor*<sp/>f,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Utils::type_equivalency&amp;<sp/>te,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;<sp/>group_being_resolved,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ignore_if_weak)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="93"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ignore_if_weak<sp/>and<sp/><ref refid="structGambit_1_1DRes_1_1Rule_1a5c0ccfecbf63233ec3998a4b61f954fc" kindref="member">weakrule</ref>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(not<sp/><ref refid="structGambit_1_1DRes_1_1BackendRule_1a9d0c2b3d70d8a5b13810483f0b836113" kindref="member">antecedent_matches</ref>(f,<sp/>te,<sp/>group_being_resolved))<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>result<sp/>=<sp/><ref refid="structGambit_1_1DRes_1_1BackendRule_1a23095550c1e6f0a5c5ad52b1fa3233a7" kindref="member">consequent_matches</ref>(f,<sp/>te);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result;</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="100"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Check<sp/>if<sp/>a<sp/>given<sp/>string<sp/>is<sp/>a<sp/>permitted<sp/>field<sp/>of<sp/>the<sp/>ModuleRule<sp/>class</highlight></codeline>
+<codeline lineno="101"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1DRes_1_1ModuleRule_1a549fc02c088400792720664ac848ac49" kindref="member">ModuleRule::permits_field</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;<sp/>field)</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::set&lt;str&gt;<sp/>fields<sp/>=</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;module&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;options&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;dependencies&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;backends&quot;</highlight><highlight class="normal">,</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;functionChain&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(fields.find(field)<sp/>!=<sp/>fields.end());</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="114"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>True<sp/>if<sp/>and<sp/>only<sp/>if<sp/>the<sp/>passed<sp/>module<sp/>functor<sp/>matches<sp/>the<sp/>&apos;if&apos;<sp/>part<sp/>of<sp/>a<sp/>rule</highlight></codeline>
+<codeline lineno="115"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1DRes_1_1ModuleRule_1aaea07bb7805d40a408656f88242796e1" kindref="member">ModuleRule::antecedent_matches</ref>(functor*<sp/>f,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Utils::type_equivalency&amp;<sp/>te)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="116"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Allow<sp/>matching<sp/>only<sp/>if<sp/>the<sp/>antecedent<sp/>has<sp/>been<sp/>properly<sp/>specified.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>match<sp/>=<sp/><ref refid="structGambit_1_1DRes_1_1Rule_1a7e7ca0cb7fbf4dc75cfc23dba706d369" kindref="member">if_capability</ref><sp/>or<sp/><ref refid="structGambit_1_1DRes_1_1Rule_1af9c5df4e4857eaa4bcdfe2b11793db24" kindref="member">if_type</ref><sp/>or<sp/><ref refid="structGambit_1_1DRes_1_1Rule_1a7d7e39b02fb0595e16522dc3dbe6bacb" kindref="member">if_function</ref><sp/>or<sp/><ref refid="structGambit_1_1DRes_1_1ModuleRule_1a1406795cd4d4763f9e1e26e9b1570d72" kindref="member">if_module</ref>;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Check<sp/>if<sp/>the<sp/>base<sp/>class<sp/>part<sp/>of<sp/>the<sp/>antecedent<sp/>was<sp/>matched.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>match<sp/>=<sp/>match<sp/>and<sp/><ref refid="structGambit_1_1DRes_1_1Rule_1a1dcfee83f84288b64809ac36e5bb74e0" kindref="member">base_antecedent_matches</ref>(f,<sp/>te);</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Check<sp/>if<sp/>the<sp/>derived<sp/>class<sp/>part<sp/>of<sp/>the<sp/>antecedent<sp/>was<sp/>matched.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(match<sp/>and<sp/><ref refid="structGambit_1_1DRes_1_1ModuleRule_1a1406795cd4d4763f9e1e26e9b1570d72" kindref="member">if_module</ref>)<sp/>match<sp/>=<sp/><ref refid="namespaceGambit_1_1DRes_1a6ca4116f647e0c01b07ef3bffea7f773" kindref="member">stringComp</ref>(<ref refid="structGambit_1_1DRes_1_1ModuleRule_1accec32476fd6efe16f3bb3774ede76a9" kindref="member">module</ref>,<sp/>f-&gt;origin());<sp/></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>match;</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="126"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>True<sp/>if<sp/>and<sp/>only<sp/>if<sp/>the<sp/>passed<sp/>module<sp/>functor<sp/>matches<sp/>the<sp/>&apos;then&apos;<sp/>part<sp/>of<sp/>a<sp/>rule</highlight></codeline>
+<codeline lineno="127"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1DRes_1_1ModuleRule_1a5cb0b6e36deadb83d7e6b43355150ca6" kindref="member">ModuleRule::consequent_matches</ref>(functor*<sp/>f,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Utils::type_equivalency&amp;<sp/>te)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="128"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Allow<sp/>matching<sp/>only<sp/>if<sp/>the<sp/>consequent<sp/>has<sp/>been<sp/>properly<sp/>specified.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>match<sp/>=<sp/><ref refid="structGambit_1_1DRes_1_1Rule_1a07754e26554a8594db6b96b9501dc6cf" kindref="member">then_capability</ref><sp/>or<sp/><ref refid="structGambit_1_1DRes_1_1Rule_1a14ae28482623485c663bc10d9b7556b2" kindref="member">then_type</ref><sp/>or<sp/><ref refid="structGambit_1_1DRes_1_1Rule_1ac7d7706ebd72295b1f950fc52db5cf7a" kindref="member">then_function</ref><sp/>or<sp/><ref refid="structGambit_1_1DRes_1_1ModuleRule_1a5e0bed4517ff09e1b67861cf03c69fb2" kindref="member">then_module</ref><sp/>or</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structGambit_1_1DRes_1_1ModuleRule_1a349200560bdc52da4e6d67c9137518a0" kindref="member">then_options</ref><sp/>or<sp/><ref refid="structGambit_1_1DRes_1_1ModuleRule_1a52546f2024eb75be45eeba318d0becbc" kindref="member">then_dependencies</ref><sp/>or<sp/><ref refid="structGambit_1_1DRes_1_1ModuleRule_1abd7eb9a5f6534a743d87bc123f5e95ac" kindref="member">then_backends</ref><sp/>or<sp/><ref refid="structGambit_1_1DRes_1_1ModuleRule_1a83a7fb44758b4828e690cf9d6a32cdf5" kindref="member">then_functionChain</ref>;</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Check<sp/>if<sp/>the<sp/>base<sp/>class<sp/>part<sp/>of<sp/>the<sp/>consequent<sp/>was<sp/>matched.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>match<sp/>=<sp/>match<sp/>and<sp/><ref refid="structGambit_1_1DRes_1_1Rule_1afc73a482519ed65671e232000d753869" kindref="member">base_consequent_matches</ref>(f,<sp/>te);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Check<sp/>if<sp/>the<sp/>derived<sp/>class<sp/>part<sp/>of<sp/>the<sp/>consequent<sp/>was<sp/>matched.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(match<sp/>and<sp/><ref refid="structGambit_1_1DRes_1_1ModuleRule_1a5e0bed4517ff09e1b67861cf03c69fb2" kindref="member">then_module</ref>)<sp/>match<sp/>=<sp/><ref refid="namespaceGambit_1_1DRes_1a6ca4116f647e0c01b07ef3bffea7f773" kindref="member">stringComp</ref>(<ref refid="structGambit_1_1DRes_1_1ModuleRule_1accec32476fd6efe16f3bb3774ede76a9" kindref="member">module</ref>,<sp/>f-&gt;origin());<sp/></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Log<sp/>match</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(match<sp/>and<sp/><ref refid="structGambit_1_1DRes_1_1Rule_1afda2bf7cb57ccaaac571540135f247b1" kindref="member">log_matches</ref>)<sp/>f-&gt;addMatchedModuleRule(</highlight><highlight class="keyword">this</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>match;</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="140"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="141"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Whether<sp/>a<sp/>module<sp/>rule<sp/>allows<sp/>a<sp/>given<sp/>module<sp/>functor<sp/>or<sp/>not.<sp/><sp/></highlight></codeline>
+<codeline lineno="142"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Must<sp/>be<sp/>true<sp/>for<sp/>a<sp/>module<sp/>functor<sp/>to<sp/>be<sp/>used<sp/>to<sp/>resolve<sp/>a<sp/>dependency.<sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="143"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>True<sp/>unless<sp/>the<sp/>functor<sp/>passes<sp/>the<sp/>antecedent<sp/>(&apos;if&apos;<sp/>part<sp/>of<sp/>the<sp/>rule)<sp/>but<sp/>fails<sp/>the<sp/>consequent<sp/>(&apos;then&apos;<sp/>part<sp/>of<sp/>the<sp/>rule).<sp/></highlight></codeline>
+<codeline lineno="144"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1DRes_1_1ModuleRule_1af49fe7c2580a2be4e5ae0e25931b126c" kindref="member">ModuleRule::allows</ref>(functor*<sp/>f,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Utils::type_equivalency&amp;<sp/>te,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ignore_if_weak)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="145"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ignore_if_weak<sp/>and<sp/><ref refid="structGambit_1_1DRes_1_1Rule_1a5c0ccfecbf63233ec3998a4b61f954fc" kindref="member">weakrule</ref>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(not<sp/><ref refid="structGambit_1_1DRes_1_1ModuleRule_1aaea07bb7805d40a408656f88242796e1" kindref="member">antecedent_matches</ref>(f,<sp/>te))<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>result<sp/>=<sp/><ref refid="structGambit_1_1DRes_1_1ModuleRule_1a5cb0b6e36deadb83d7e6b43355150ca6" kindref="member">consequent_matches</ref>(f,<sp/>te);</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result;</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="152"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Whether<sp/>the<sp/>set<sp/>of<sp/>dependency<sp/>rules<sp/>subjugate<sp/>to<sp/>this<sp/>rule<sp/>allow<sp/>a<sp/>given<sp/>module<sp/>functor<sp/>or<sp/>not.<sp/></highlight></codeline>
+<codeline lineno="153"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1DRes_1_1ModuleRule_1a9486884e5db032739a9ca2a70490f55c" kindref="member">ModuleRule::dependencies_allow</ref>(functor*<sp/>f,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Utils::type_equivalency&amp;<sp/>te,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ignore_if_weak)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="154"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ignore_if_weak<sp/>and<sp/><ref refid="structGambit_1_1DRes_1_1Rule_1a5c0ccfecbf63233ec3998a4b61f954fc" kindref="member">weakrule</ref>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>allow<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1DRes_1_1ModuleRule_1a4a2cdc6fa012f37c9f243b4cc0ef8b8d" kindref="member">ModuleRule</ref>&amp;<sp/>rule<sp/>:<sp/><ref refid="structGambit_1_1DRes_1_1ModuleRule_1af8f173e2f3d71874174186888d8015b2" kindref="member">dependencies</ref>)<sp/>allow<sp/>=<sp/>allow<sp/>and<sp/>rule.allows(f,<sp/>te,<sp/>ignore_if_weak);</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>allow;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="161"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Whether<sp/>the<sp/>functionChain<sp/>of<sp/>this<sp/>rule<sp/>allows<sp/>a<sp/>given<sp/>module<sp/>functor<sp/>to<sp/>be<sp/>used<sp/>to<sp/>resolve<sp/>the<sp/>dependency<sp/>of<sp/>another.<sp/></highlight></codeline>
+<codeline lineno="162"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1DRes_1_1ModuleRule_1ac911d5596c9aba2261f575db98b0532d" kindref="member">ModuleRule::function_chain_allows</ref>(functor*<sp/>candidate,<sp/>functor*<sp/>dependee,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Utils::type_equivalency&amp;<sp/>te,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ignore_if_weak)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="163"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Scenarios<sp/>in<sp/>which<sp/>the<sp/>functionChain<sp/>is<sp/>irrelevent.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ignore_if_weak<sp/>and<sp/><ref refid="structGambit_1_1DRes_1_1Rule_1a5c0ccfecbf63233ec3998a4b61f954fc" kindref="member">weakrule</ref>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(not<sp/><ref refid="structGambit_1_1DRes_1_1ModuleRule_1a83a7fb44758b4828e690cf9d6a32cdf5" kindref="member">then_functionChain</ref>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(not<sp/><ref refid="namespaceGambit_1_1DRes_1a6ca4116f647e0c01b07ef3bffea7f773" kindref="member">stringComp</ref>(<ref refid="structGambit_1_1DRes_1_1Rule_1aa4644d0b22f3c6f46104661642f30eb8" kindref="member">capability</ref>,<sp/>candidate-&gt;capability())<sp/>and<sp/>not<sp/><ref refid="namespaceGambit_1_1DRes_1a667cf5e40a389d728c0f2da553e085de" kindref="member">typeComp</ref>(<ref refid="structGambit_1_1DRes_1_1Rule_1a111c16c35b0ab2a4e064de91dc8d6938" kindref="member">type</ref>,<sp/>candidate-&gt;type(),<sp/>te))<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>If<sp/>the<sp/>dependee<sp/>matches<sp/>the<sp/>rule,<sp/>then<sp/>the<sp/>candidate<sp/>is<sp/>allowed<sp/>only<sp/>if<sp/>it<sp/>appears<sp/>at<sp/>the<sp/>start<sp/>of<sp/>the<sp/>function<sp/>chain.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="structGambit_1_1DRes_1_1ModuleRule_1aaea07bb7805d40a408656f88242796e1" kindref="member">antecedent_matches</ref>(dependee,<sp/>te)<sp/>and<sp/><ref refid="structGambit_1_1DRes_1_1ModuleRule_1a5cb0b6e36deadb83d7e6b43355150ca6" kindref="member">consequent_matches</ref>(dependee,<sp/>te))<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(*<ref refid="structGambit_1_1DRes_1_1ModuleRule_1a030e20bd81a0be13cc7ec44154d42c1b" kindref="member">functionChain</ref>.begin()<sp/>==<sp/>candidate-&gt;name());</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Iterate<sp/>over<sp/>the<sp/>entries<sp/>in<sp/>the<sp/>functionChain</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>it<sp/>=<sp/><ref refid="structGambit_1_1DRes_1_1ModuleRule_1a030e20bd81a0be13cc7ec44154d42c1b" kindref="member">functionChain</ref>.begin();<sp/>it<sp/>!=<sp/><ref refid="structGambit_1_1DRes_1_1ModuleRule_1a030e20bd81a0be13cc7ec44154d42c1b" kindref="member">functionChain</ref>.end()<sp/>-<sp/>1;<sp/>++it)</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Function<sp/>is<sp/>allowed<sp/>if<sp/>somewhere<sp/>in<sp/>the<sp/>chain<sp/>it<sp/>is<sp/>directly<sp/>preceeded<sp/>by<sp/>the<sp/>dependent<sp/>function.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>((*it)<sp/>==<sp/>dependee-&gt;name())<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(*(it+1)<sp/>==<sp/>candidate-&gt;name());</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="179"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Whether<sp/>the<sp/>set<sp/>of<sp/>backend<sp/>rules<sp/>subjugate<sp/>to<sp/>this<sp/>rule<sp/>allow<sp/>a<sp/>given<sp/>backend<sp/>functor<sp/>or<sp/>not.<sp/></highlight></codeline>
+<codeline lineno="180"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1DRes_1_1ModuleRule_1ae89448cc127adddc14233199b87ede89" kindref="member">ModuleRule::backend_reqs_allow</ref>(functor*<sp/>f,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Utils::type_equivalency&amp;<sp/>te,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;<sp/>group_being_resolved,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ignore_if_weak)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="181"><highlight class="keyword"><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ignore_if_weak<sp/>and<sp/><ref refid="structGambit_1_1DRes_1_1Rule_1a5c0ccfecbf63233ec3998a4b61f954fc" kindref="member">weakrule</ref>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>allow<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>BackendRule&amp;<sp/>rule<sp/>:<sp/><ref refid="structGambit_1_1DRes_1_1ModuleRule_1ae9633b915e1b0f182a2a2d5d29ebd61a" kindref="member">backends</ref>)<sp/>allow<sp/>=<sp/>allow<sp/>and<sp/>rule.allows(f,<sp/>te,<sp/>group_being_resolved,<sp/>ignore_if_weak);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>allow;<sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"></highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Core/src/rule.cpp"/>
+  </compounddef>
+</doxygen>

@@ -312,10 +312,10 @@ namespace daFunk
         double dx = 0;
         if (n > 1)
             dx = (x1-x0)/(n-1);
-            for (unsigned int i = 0; i<n; i++)
-            {
-                ret.push_back(x0 + i * dx);
-            }
+        for (unsigned int i = 0; i<n; i++)
+        {
+            ret.push_back(x0 + i * dx);
+        }
         return ret;
     }
 
@@ -326,10 +326,10 @@ namespace daFunk
         double dx = 0;
         if (n > 1)
             dx = (x1-x0)/(n-1);
-            for (unsigned int i = 0; i<n; i++)
-            {
-                ret.push_back(pow(10, x0 + i * dx));
-            }
+        for (unsigned int i = 0; i<n; i++)
+        {
+            ret.push_back(pow(10, x0 + i * dx));
+        }
         return ret;
     }
 
@@ -1065,7 +1065,7 @@ namespace daFunk
     {
         singularities[arg].push_back(std::pair<Funk, Funk>(pos, width));
         return shared_from_this();
-    };
+    }
     inline Funk FunkBase::set_singularity(std::string arg, double pos, Funk width)
     { return shared_from_this()->set_singularity(arg, cnst(pos), width); }
     inline Funk FunkBase::set_singularity(std::string arg, double pos, double width)
@@ -1601,7 +1601,7 @@ namespace daFunk
     };
     //inline Funk print(std::string msg) { return Funk(new Bottle(msg)); }
     inline Funk FunkBase::print(std::string msg)
-    { return Funk(new Bottle(shared_from_this(), msg)); };
+    { return Funk(new Bottle(shared_from_this(), msg)); }
 
 
     //
@@ -1895,4 +1895,4 @@ namespace daFunk
 
 -------------------------------
 
-Updated on 2024-05-31 at 15:12:06 +0000
+Updated on 2024-07-18 at 13:53:33 +0000
