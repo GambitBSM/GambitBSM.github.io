@@ -20,6 +20,11 @@ ToDo:
 
 ## Usage instructions
 
+#### Structure
+The website is built using the 0.5 beta version of the Hugo documentation theme Doks:
+https://getdoks.org/
+
+
 #### Editing the website
 
 The user-generated pages are found in `/content/en`, and are stored as markdown files in a tree structure. These files can be easily added/edited/deleted, but make sure to follow the correct structure and add the right options to the frontmatter if you want a page to show up in a menu. To add a page you need to use the command `hugo new /content/en/path/to/new/page/new_page.md`. Images are stored in `/static/images`.
@@ -41,7 +46,7 @@ If you need to remove the `package-lock.json` and the generated `node_modules` f
 ```
 npm run clean:install
 ```
-before re-installing npm.
+before re-installing packages with npm.
 
 When the site has been built locally, you can then access the website via a web browser at `localhost:1313`. When pushing to the repo, make sure to only edit the `master` branch; the `gh-pages` is only used for deploying the website.
 
