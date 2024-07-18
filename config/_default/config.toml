@@ -9,7 +9,7 @@ disableHugoGeneratorInject = true
 enableEmoji = true
 enableGitInfo = false
 enableRobotsTXT = true
-languageCode = "en-US"
+languageCode = "en-UK"
 paginate = 7
 rssLimit = 10
 
@@ -77,23 +77,23 @@ rel  = "sitemap"
 [module]
   [module.hugoVersion]
     extended = true
-    min = "0.80.0"
+    min = "0.90.0"
     max = ""
+  [[module.mounts]]
+    source = "node_modules/flexsearch/dist"
+    target = "assets/js/vendor"
+#  [[module.mounts]]
+#    source = "node_modules/katex"
+#    target = "assets/js/vendor/katex"
+#  [[module.mounts]]
+#    source = "node_modules/mermaid"
+#    target = "assets/js/vendor/mermaid"
   [[module.mounts]]
     source = "assets"
     target = "assets"
   [[module.mounts]]
     source = "static"
     target = "static"
-  [[module.mounts]]
-    source = "node_modules/flexsearch"
-    target = "assets/js/vendor/flexsearch"
-  [[module.mounts]]
-    source = "node_modules/katex"
-    target = "assets/js/vendor/katex"
-  [[module.mounts]]
-    source = "node_modules/mermaid"
-    target = "assets/js/vendor/mermaid"
 
 [security]
   enableInlineShortcodes = false
