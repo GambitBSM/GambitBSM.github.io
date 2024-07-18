@@ -37,7 +37,13 @@ npm install
 npm run start
 ```
 
-You can then access the website via a web browser at `localhost:1313`. When pushing to the repo, make sure to only edit the `master` branch; the `gh-pages` is only used for deploying the website.
+If you need to remove the `package-lock.json` and the generated `node_modules` folder run 
+```
+npm run clean:install
+```
+before re-installing npm.
+
+When the site has been built locally, you can then access the website via a web browser at `localhost:1313`. When pushing to the repo, make sure to only edit the `master` branch; the `gh-pages` is only used for deploying the website.
 
 **Note that for some reason the generated documentation in `Documentation > Code Reference` does not work properly when running the website locally.**
 
