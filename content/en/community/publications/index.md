@@ -20,6 +20,9 @@ weight: 10
 ### Physics Analyses
 
 <ul>
+  <li>Global fit to the 2HDM with generic sources of flavour violation using GAMBIT, <a href="https://arxiv.org/abs/2410.10493">arXiv:2410.10493</a>.<br></li>
+  <li>Resonant or asymmetric: The status of sub-GeV dark matter, <a href="https://arxiv.org/abs/2405.17548">arXiv:2405.17548</a>.<br>
+  Supplementary data, including samples: <a href="https://doi.org/10.5281/zenodo.11232712"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.11232712.svg" alt="DOI"></a></li>
   <li>Collider constraints on electroweakinos in the presence of a light gravitino, Eur. Phys. J. C 83 (2023) 6, 493, <a href="https://arxiv.org/abs/2303.09082">arXiv:2303.09082</a>.<br>
   Supplementary data, including samples: <a href="https://doi.org/10.5281/zenodo.7704832"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.7704832.svg" alt="DOI"></a></li>
   <li>Global fits of simplified models for dark matter with GAMBIT II. Vector dark matter with an s-channel vector mediator, Eur.Phys.J.C 83 (2023) 8, 692, <a href="https://arxiv.org/abs/2303.08351">arXiv:2303.08351</a>.<br>
