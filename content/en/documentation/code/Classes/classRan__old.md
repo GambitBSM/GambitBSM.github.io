@@ -23,6 +23,10 @@ description: "[No description available]"
 | unsigned long long int | **[int64](/documentation/code/classes/classran__old/#function-int64)**() |
 | double | **[Doub](/documentation/code/classes/classran__old/#function-doub)**() |
 | unsigned int | **[int32](/documentation/code/classes/classran__old/#function-int32)**() |
+| | **[Ran_old](/documentation/code/classes/classran__old/#function-ran-old)**(unsigned long long int j) |
+| unsigned long long int | **[int64](/documentation/code/classes/classran__old/#function-int64)**() |
+| double | **[Doub](/documentation/code/classes/classran__old/#function-doub)**() |
+| unsigned int | **[int32](/documentation/code/classes/classran__old/#function-int32)**() |
 
 ## Public Functions Documentation
 
@@ -86,6 +90,36 @@ inline unsigned int int32()
 ```
 
 
+### function Ran_old
+
+```
+inline Ran_old(
+    unsigned long long int j
+)
+```
+
+
+### function int64
+
+```
+inline unsigned long long int int64()
+```
+
+
+### function Doub
+
+```
+inline double Doub()
+```
+
+
+### function int32
+
+```
+inline unsigned int int32()
+```
+
+
 -------------------------------
 
-Updated on 2024-07-18 at 13:53:30 +0000
+Updated on 2025-02-12 at 15:36:37 +0000

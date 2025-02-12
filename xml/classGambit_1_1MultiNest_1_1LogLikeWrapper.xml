@@ -2,10 +2,10 @@
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
   <compounddef id="classGambit_1_1MultiNest_1_1LogLikeWrapper" kind="class" language="C++" prot="public">
     <compoundname>Gambit::MultiNest::LogLikeWrapper</compoundname>
-    <includes refid="multinest_8hpp" local="no">multinest.hpp</includes>
+    <includes refid="multinest_2multinest_8hpp" local="no">multinest.hpp</includes>
       <sectiondef kind="private-attrib">
       <memberdef kind="variable" id="classGambit_1_1MultiNest_1_1LogLikeWrapper_1ab61dbee6e8f241a093222880934e14cb" prot="private" static="no" mutable="no">
-        <type><ref refid="multinest_8hpp_1a3bd627ea10ee343b45a29ba96ef183b9" kindref="member">scanPtr</ref></type>
+        <type><ref refid="multinest_2multinest_8hpp_1a3bd627ea10ee343b45a29ba96ef183b9" kindref="member">scanPtr</ref></type>
         <definition>scanPtr Gambit::MultiNest::LogLikeWrapper::boundLogLike</definition>
         <argsstring></argsstring>
         <name>boundLogLike</name>
@@ -19,9 +19,9 @@
         </inbodydescription>
         <location file="ScannerBit/include/gambit/ScannerBit/scanners/multinest/multinest.hpp" line="61" column="21" bodyfile="ScannerBit/include/gambit/ScannerBit/scanners/multinest/multinest.hpp" bodystart="61" bodyend="-1"/>
       </memberdef>
-      <memberdef kind="variable" id="classGambit_1_1MultiNest_1_1LogLikeWrapper_1abf62f42dc7e8e1376cabdf7475dcf09e" prot="private" static="no" mutable="no">
+      <memberdef kind="variable" id="classGambit_1_1MultiNest_1_1LogLikeWrapper_1aed72ca494896deafdf72672468c3e38d" prot="private" static="no" mutable="no">
         <type>printer_interface &amp;</type>
-        <definition>printer_interface&amp; Gambit::MultiNest::LogLikeWrapper::boundPrinter</definition>
+        <definition>printer_interface &amp; Gambit::MultiNest::LogLikeWrapper::boundPrinter</definition>
         <argsstring></argsstring>
         <name>boundPrinter</name>
         <qualifiedname>Gambit::MultiNest::LogLikeWrapper::boundPrinter</qualifiedname>
@@ -58,7 +58,7 @@
         <name>LogLikeWrapper</name>
         <qualifiedname>Gambit::MultiNest::LogLikeWrapper::LogLikeWrapper</qualifiedname>
         <param>
-          <type><ref refid="multinest_8hpp_1a3bd627ea10ee343b45a29ba96ef183b9" kindref="member">scanPtr</ref></type>
+          <type><ref refid="multinest_2multinest_8hpp_1a3bd627ea10ee343b45a29ba96ef183b9" kindref="member">scanPtr</ref></type>
           <defname>loglike</defname>
         </param>
         <param>
@@ -155,6 +155,180 @@
         </inbodydescription>
         <location file="ScannerBit/include/gambit/ScannerBit/scanners/multinest/multinest.hpp" line="77" column="18" bodyfile="ScannerBit/src/scanners/multinest_3.10/multinest.cpp" bodystart="273" bodyend="361"/>
       </memberdef>
+      <memberdef kind="function" id="classGambit_1_1MultiNest_1_1LogLikeWrapper_1a849365fb4aa3de55daa39e7a3feafc15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::MultiNest::LogLikeWrapper::LogLikeWrapper</definition>
+        <argsstring>(scanPtr, printer_interface &amp;)</argsstring>
+        <name>LogLikeWrapper</name>
+        <qualifiedname>Gambit::MultiNest::LogLikeWrapper::LogLikeWrapper</qualifiedname>
+        <param>
+          <type><ref refid="multinest_2multinest_8hpp_1a3bd627ea10ee343b45a29ba96ef183b9" kindref="member">scanPtr</ref></type>
+        </param>
+        <param>
+          <type>printer_interface &amp;</type>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/multinest_3.10/multinest.hpp" line="71" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1MultiNest_1_1LogLikeWrapper_1aa028a57d12da27737a177f7739925135" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::MultiNest::LogLikeWrapper::LogLike</definition>
+        <argsstring>(double *, int, int)</argsstring>
+        <name>LogLike</name>
+        <qualifiedname>Gambit::MultiNest::LogLikeWrapper::LogLike</qualifiedname>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+<para>Main interface function from MultiNest to ScannerBit-supplied loglikelihood function. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/multinest_3.10/multinest.hpp" line="74" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1MultiNest_1_1LogLikeWrapper_1a968815716208bbc83bf2494032f49476" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::MultiNest::LogLikeWrapper::dumper</definition>
+        <argsstring>(int, int, int, double *, double *, double *, double, double, double)</argsstring>
+        <name>dumper</name>
+        <qualifiedname>Gambit::MultiNest::LogLikeWrapper::dumper</qualifiedname>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>double</type>
+        </param>
+        <param>
+          <type>double</type>
+        </param>
+        <param>
+          <type>double</type>
+        </param>
+        <briefdescription>
+<para>Main interface to MultiNest dumper routine. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/multinest_3.10/multinest.hpp" line="77" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1MultiNest_1_1LogLikeWrapper_1a849365fb4aa3de55daa39e7a3feafc15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::MultiNest::LogLikeWrapper::LogLikeWrapper</definition>
+        <argsstring>(scanPtr, printer_interface &amp;)</argsstring>
+        <name>LogLikeWrapper</name>
+        <qualifiedname>Gambit::MultiNest::LogLikeWrapper::LogLikeWrapper</qualifiedname>
+        <param>
+          <type><ref refid="multinest_2multinest_8hpp_1a3bd627ea10ee343b45a29ba96ef183b9" kindref="member">scanPtr</ref></type>
+        </param>
+        <param>
+          <type>printer_interface &amp;</type>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/multinest_3.11/multinest.hpp" line="71" column="13"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1MultiNest_1_1LogLikeWrapper_1aa028a57d12da27737a177f7739925135" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::MultiNest::LogLikeWrapper::LogLike</definition>
+        <argsstring>(double *, int, int)</argsstring>
+        <name>LogLike</name>
+        <qualifiedname>Gambit::MultiNest::LogLikeWrapper::LogLike</qualifiedname>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+<para>Main interface function from MultiNest to ScannerBit-supplied loglikelihood function. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/multinest_3.11/multinest.hpp" line="74" column="20"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1MultiNest_1_1LogLikeWrapper_1a968815716208bbc83bf2494032f49476" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::MultiNest::LogLikeWrapper::dumper</definition>
+        <argsstring>(int, int, int, double *, double *, double *, double, double, double)</argsstring>
+        <name>dumper</name>
+        <qualifiedname>Gambit::MultiNest::LogLikeWrapper::dumper</qualifiedname>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>double *</type>
+        </param>
+        <param>
+          <type>double</type>
+        </param>
+        <param>
+          <type>double</type>
+        </param>
+        <param>
+          <type>double</type>
+        </param>
+        <briefdescription>
+<para>Main interface to MultiNest dumper routine. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/multinest_3.11/multinest.hpp" line="77" column="18"/>
+      </memberdef>
       </sectiondef>
     <briefdescription>
 <para>Class to connect multinest log-likelihood function and ScannerBit likelihood function. </para>
@@ -164,10 +338,16 @@
     <location file="ScannerBit/include/gambit/ScannerBit/scanners/multinest/multinest.hpp" line="57" column="7" bodyfile="ScannerBit/include/gambit/ScannerBit/scanners/multinest/multinest.hpp" bodystart="58" bodyend="78"/>
     <listofallmembers>
       <member refid="classGambit_1_1MultiNest_1_1LogLikeWrapper_1ab61dbee6e8f241a093222880934e14cb" prot="private" virt="non-virtual"><scope>Gambit::MultiNest::LogLikeWrapper</scope><name>boundLogLike</name></member>
-      <member refid="classGambit_1_1MultiNest_1_1LogLikeWrapper_1abf62f42dc7e8e1376cabdf7475dcf09e" prot="private" virt="non-virtual"><scope>Gambit::MultiNest::LogLikeWrapper</scope><name>boundPrinter</name></member>
+      <member refid="classGambit_1_1MultiNest_1_1LogLikeWrapper_1aed72ca494896deafdf72672468c3e38d" prot="private" virt="non-virtual"><scope>Gambit::MultiNest::LogLikeWrapper</scope><name>boundPrinter</name></member>
+      <member refid="classGambit_1_1MultiNest_1_1LogLikeWrapper_1a968815716208bbc83bf2494032f49476" prot="public" virt="non-virtual"><scope>Gambit::MultiNest::LogLikeWrapper</scope><name>dumper</name></member>
+      <member refid="classGambit_1_1MultiNest_1_1LogLikeWrapper_1a968815716208bbc83bf2494032f49476" prot="public" virt="non-virtual"><scope>Gambit::MultiNest::LogLikeWrapper</scope><name>dumper</name></member>
       <member refid="classGambit_1_1MultiNest_1_1LogLikeWrapper_1a968815716208bbc83bf2494032f49476" prot="public" virt="non-virtual"><scope>Gambit::MultiNest::LogLikeWrapper</scope><name>dumper</name></member>
       <member refid="classGambit_1_1MultiNest_1_1LogLikeWrapper_1a1520a5ebab8ada5e2c36526fccf77e0b" prot="private" virt="non-virtual"><scope>Gambit::MultiNest::LogLikeWrapper</scope><name>dumper_runonce</name></member>
       <member refid="classGambit_1_1MultiNest_1_1LogLikeWrapper_1aa028a57d12da27737a177f7739925135" prot="public" virt="non-virtual"><scope>Gambit::MultiNest::LogLikeWrapper</scope><name>LogLike</name></member>
+      <member refid="classGambit_1_1MultiNest_1_1LogLikeWrapper_1aa028a57d12da27737a177f7739925135" prot="public" virt="non-virtual"><scope>Gambit::MultiNest::LogLikeWrapper</scope><name>LogLike</name></member>
+      <member refid="classGambit_1_1MultiNest_1_1LogLikeWrapper_1aa028a57d12da27737a177f7739925135" prot="public" virt="non-virtual"><scope>Gambit::MultiNest::LogLikeWrapper</scope><name>LogLike</name></member>
+      <member refid="classGambit_1_1MultiNest_1_1LogLikeWrapper_1a849365fb4aa3de55daa39e7a3feafc15" prot="public" virt="non-virtual"><scope>Gambit::MultiNest::LogLikeWrapper</scope><name>LogLikeWrapper</name></member>
+      <member refid="classGambit_1_1MultiNest_1_1LogLikeWrapper_1a849365fb4aa3de55daa39e7a3feafc15" prot="public" virt="non-virtual"><scope>Gambit::MultiNest::LogLikeWrapper</scope><name>LogLikeWrapper</name></member>
       <member refid="classGambit_1_1MultiNest_1_1LogLikeWrapper_1a849365fb4aa3de55daa39e7a3feafc15" prot="public" virt="non-virtual"><scope>Gambit::MultiNest::LogLikeWrapper</scope><name>LogLikeWrapper</name></member>
     </listofallmembers>
   </compounddef>

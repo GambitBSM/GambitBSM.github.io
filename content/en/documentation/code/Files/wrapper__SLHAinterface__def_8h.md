@@ -1,11 +1,11 @@
 ---
-title: "file Pythia_8_212/wrapper_SLHAinterface_def.h"
+title: "file Pythia_8_312/wrapper_SLHAinterface_def.h"
 
 description: "[No description available]"
 
 ---
 
-# file Pythia_8_212/wrapper_SLHAinterface_def.h
+# file Pythia_8_312/wrapper_SLHAinterface_def.h
 
 [No description available]
 
@@ -34,16 +34,17 @@ namespace CAT_3(
 ## Source code
 
 ```
-#ifndef __wrapper_SLHAinterface_def_Pythia_8_212_h__
-#define __wrapper_SLHAinterface_def_Pythia_8_212_h__
+#ifndef __wrapper_SLHAinterface_def_Pythia_8_312_h__
+#define __wrapper_SLHAinterface_def_Pythia_8_312_h__
 
 #include <sstream>
 #include "wrapper_Info_decl.h"
-#include "wrapper_Settings_decl.h"
-#include "wrapper_Rndm_decl.h"
-#include "wrapper_Couplings_decl.h"
-#include "wrapper_ParticleData_decl.h"
 #include "wrapper_SusyLesHouches_decl.h"
+#include "wrapper_Settings_decl.h"
+#include "wrapper_ParticleData_decl.h"
+#include "wrapper_Rndm_decl.h"
+#include "wrapper_Logger_decl.h"
+#include "wrapper_CoupSM_decl.h"
 #include "wrapper_CoupSUSY_decl.h"
 
 #include "identification.hpp"
@@ -60,19 +61,19 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             get_BEptr()->setPtr__BOSS((*infoPtrIn).get_BEptr());
         }
         
-        inline void SLHAinterface::init(Pythia8::Settings& settings, Pythia8::Rndm* rndmPtr, Pythia8::Couplings* couplingsPtrIn, Pythia8::ParticleData* particleDataPtr, bool& useSHLAcouplings, std::stringstream& ParticleDataBuffer)
+        inline void SLHAinterface::init(bool& useSHLAcouplings, std::stringstream& ParticleDataBuffer)
         {
-            get_BEptr()->init__BOSS(*settings.get_BEptr(), (*rndmPtr).get_BEptr(), (*couplingsPtrIn).get_BEptr(), (*particleDataPtr).get_BEptr(), useSHLAcouplings, ParticleDataBuffer);
+            get_BEptr()->init(useSHLAcouplings, ParticleDataBuffer);
         }
         
-        inline bool SLHAinterface::initSLHA(Pythia8::Settings& settings, Pythia8::ParticleData* particleDataPtr)
+        inline bool SLHAinterface::initSLHA()
         {
-            return get_BEptr()->initSLHA__BOSS(*settings.get_BEptr(), (*particleDataPtr).get_BEptr());
+            return get_BEptr()->initSLHA();
         }
         
-        inline void SLHAinterface::pythia2slha(Pythia8::ParticleData* particleDataPtr)
+        inline void SLHAinterface::pythia2slha()
         {
-            get_BEptr()->pythia2slha__BOSS((*particleDataPtr).get_BEptr());
+            get_BEptr()->pythia2slha();
         }
         
         
@@ -80,7 +81,6 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         inline SLHAinterface::SLHAinterface() :
             WrapperBase(__factory0()),
             slha( get_BEptr()->slha_ref__BOSS().get_init_wref()),
-            coupSUSY( get_BEptr()->coupSUSY_ref__BOSS().get_init_wref()),
             meMode( get_BEptr()->meMode_ref__BOSS())
         {
             get_BEptr()->set_wptr(this);
@@ -91,7 +91,6 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         inline SLHAinterface::SLHAinterface(Abstract_SLHAinterface* in) :
             WrapperBase(in),
             slha( get_BEptr()->slha_ref__BOSS().get_init_wref()),
-            coupSUSY( get_BEptr()->coupSUSY_ref__BOSS().get_init_wref()),
             meMode( get_BEptr()->meMode_ref__BOSS())
         {
             get_BEptr()->set_wptr(this);
@@ -102,7 +101,6 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         inline SLHAinterface::SLHAinterface(const SLHAinterface& in) :
             WrapperBase(in.get_BEptr()->pointer_copy__BOSS()),
             slha( get_BEptr()->slha_ref__BOSS().get_init_wref()),
-            coupSUSY( get_BEptr()->coupSUSY_ref__BOSS().get_init_wref()),
             meMode( get_BEptr()->meMode_ref__BOSS())
         {
             get_BEptr()->set_wptr(this);
@@ -147,10 +145,10 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 #include "gambit/Backends/backend_undefs.hpp"
 
-#endif /* __wrapper_SLHAinterface_def_Pythia_8_212_h__ */
+#endif /* __wrapper_SLHAinterface_def_Pythia_8_312_h__ */
 ```
 
 
 -------------------------------
 
-Updated on 2024-07-18 at 13:53:35 +0000
+Updated on 2025-02-12 at 15:36:43 +0000

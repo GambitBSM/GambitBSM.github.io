@@ -1,11 +1,11 @@
 ---
-title: "file Pythia_8_212/wrapper_Particle_def.h"
+title: "file Pythia_8_312/wrapper_Particle_def.h"
 
 description: "[No description available]"
 
 ---
 
-# file Pythia_8_212/wrapper_Particle_def.h
+# file Pythia_8_312/wrapper_Particle_def.h
 
 [No description available]
 
@@ -34,8 +34,8 @@ namespace CAT_3(
 ## Source code
 
 ```
-#ifndef __wrapper_Particle_def_Pythia_8_212_h__
-#define __wrapper_Particle_def_Pythia_8_212_h__
+#ifndef __wrapper_Particle_def_Pythia_8_312_h__
+#define __wrapper_Particle_def_Pythia_8_312_h__
 
 #include <vector>
 #include <string>
@@ -55,16 +55,6 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         inline void Particle::setEvtPtr(Pythia8::Event* evtPtrIn)
         {
             get_BEptr()->setEvtPtr__BOSS((*evtPtrIn).get_BEptr());
-        }
-        
-        inline void Particle::setPDEPtr(Pythia8::ParticleDataEntry* pdePtrIn)
-        {
-            get_BEptr()->setPDEPtr__BOSS((*pdePtrIn).get_BEptr());
-        }
-        
-        inline void Particle::setPDEPtr()
-        {
-            get_BEptr()->setPDEPtr__BOSS();
         }
         
         inline void Particle::id(int idIn)
@@ -242,6 +232,11 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             get_BEptr()->tProd(tProdIn);
         }
         
+        inline void Particle::vProdAdd(Pythia8::Vec4 vProdIn)
+        {
+            get_BEptr()->vProdAdd__BOSS(*vProdIn.get_BEptr());
+        }
+        
         inline void Particle::tau(double tauIn)
         {
             get_BEptr()->tau(tauIn);
@@ -377,6 +372,11 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             return get_BEptr()->isFinal();
         }
         
+        inline int Particle::intPol() const
+        {
+            return get_BEptr()->intPol();
+        }
+        
         inline bool Particle::isRescatteredIncoming() const
         {
             return get_BEptr()->isRescatteredIncoming();
@@ -477,6 +477,11 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             return get_BEptr()->eta();
         }
         
+        inline double Particle::y(double mCut) const
+        {
+            return get_BEptr()->y(mCut);
+        }
+        
         inline Pythia8::Vec4 Particle::vDec() const
         {
             return Pythia8::Vec4( const_cast<const Abstract_Particle*>(get_BEptr())->vDec__BOSS() );
@@ -547,6 +552,11 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             return get_BEptr()->daughterList();
         }
         
+        inline ::std::vector<int> Particle::daughterListRecursive() const
+        {
+            return get_BEptr()->daughterListRecursive();
+        }
+        
         inline ::std::vector<int> Particle::sisterList(bool traceTopBot) const
         {
             return get_BEptr()->sisterList(traceTopBot);
@@ -575,6 +585,31 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         inline bool Particle::undoDecay()
         {
             return get_BEptr()->undoDecay();
+        }
+        
+        inline int Particle::colHV() const
+        {
+            return get_BEptr()->colHV();
+        }
+        
+        inline int Particle::acolHV() const
+        {
+            return get_BEptr()->acolHV();
+        }
+        
+        inline void Particle::colHV(int colHVin)
+        {
+            get_BEptr()->colHV(colHVin);
+        }
+        
+        inline void Particle::acolHV(int acolHVin)
+        {
+            get_BEptr()->acolHV(acolHVin);
+        }
+        
+        inline void Particle::colsHV(int colHVin, int acolHVin)
+        {
+            get_BEptr()->colsHV(colHVin, acolHVin);
         }
         
         inline ::std::string Particle::name() const
@@ -710,6 +745,11 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         inline bool Particle::isHadron() const
         {
             return get_BEptr()->isHadron();
+        }
+        
+        inline bool Particle::isExotic() const
+        {
+            return get_BEptr()->isExotic();
         }
         
         inline Pythia8::ParticleDataEntry& Particle::particleDataEntry() const
@@ -973,10 +1013,10 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 #include "gambit/Backends/backend_undefs.hpp"
 
-#endif /* __wrapper_Particle_def_Pythia_8_212_h__ */
+#endif /* __wrapper_Particle_def_Pythia_8_312_h__ */
 ```
 
 
 -------------------------------
 
-Updated on 2024-07-18 at 13:53:35 +0000
+Updated on 2025-02-12 at 15:36:43 +0000

@@ -12,7 +12,7 @@ description: "[No description available]"
 ## Detailed Description
 
 
-**Author**: Chris Chang ([christopher.chang@uqconnect.edu.au](mailto:christopher.chang@uqconnect.edu.au)) 
+**Author**: Chris Chang ([c.j.chang@fys.uio.no](mailto:c.j.chang@fys.uio.no)) 
 
 **Date**: 2021
 
@@ -46,7 +46,7 @@ Authors (add name and date if you modify):
 ///  Authors (add name and date if you modify):
 ///
 ///  \author Chris Chang
-///          (christopher.chang@uqconnect.edu.au)
+///          (c.j.chang@fys.uio.no)
 ///  \date 2021
 ///
 ///  *********************************************
@@ -66,17 +66,29 @@ BE_NAMESPACE
   {
     // Convert the std::map to a PyDict
     pybind11::dict n_sig_scaled;
-    
+
     for (auto mydict : SRsignal)
     {
       pybind11::str SRName = mydict.first;
       n_sig_scaled[SRName] = mydict.second;
     }
-    
+
     // Pull the delta LogLike from the backend
-    double dll = FullLikes_Evaluate_pydict(n_sig_scaled,ana_name);
-    
-    return dll;
+    try
+    {
+      return FullLikes_Evaluate_pydict(n_sig_scaled,ana_name);
+    }
+    catch (const std::exception& e)
+    {
+        invalid_point().raise(e.what());
+    }
+    catch (...)
+    {
+      invalid_point().raise("ATLAS FullLikes has failed on this point (perhaps in the scipy optimise).");
+    }
+
+    // Squash a warning about no return
+    return 0.0;
   }
 #else
   double FullLikes_Evaluate(std::map<str,double>& SRsignal, const str& ana_name)
@@ -93,4 +105,4 @@ END_BE_NAMESPACE
 
 -------------------------------
 
-Updated on 2024-07-18 at 13:53:35 +0000
+Updated on 2025-02-12 at 15:36:43 +0000

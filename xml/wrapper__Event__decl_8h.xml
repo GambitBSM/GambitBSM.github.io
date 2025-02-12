@@ -6,13 +6,13 @@
     <includes local="no">string</includes>
     <includes local="no">ostream</includes>
     <includes local="no">vector</includes>
-    <includes refid="Pythia__8__212_2forward__decls__wrapper__classes_8h" local="yes">forward_decls_wrapper_classes.h</includes>
+    <includes refid="Pythia__8__312_2forward__decls__wrapper__classes_8h" local="yes">forward_decls_wrapper_classes.h</includes>
     <includes refid="include_2gambit_2Backends_2wrapperbase_8hpp" local="yes">gambit/Backends/wrapperbase.hpp</includes>
     <includes refid="abstract__Event_8h" local="yes">abstract_Event.h</includes>
     <includes refid="wrapper__ParticleData__decl_8h" local="yes">wrapper_ParticleData_decl.h</includes>
     <includes refid="wrapper__Particle__decl_8h" local="yes">wrapper_Particle_decl.h</includes>
     <includes refid="wrapper__Vec4__decl_8h" local="yes">wrapper_Vec4_decl.h</includes>
-    <includes refid="include_2gambit_2Backends_2backend__types_2Pythia__8__212_2identification_8hpp" local="yes">identification.hpp</includes>
+    <includes refid="include_2gambit_2Backends_2backend__types_2Pythia__8__312_2identification_8hpp" local="yes">identification.hpp</includes>
     <includes refid="include_2gambit_2Backends_2backend__undefs_8hpp" local="yes">gambit/Backends/backend_undefs.hpp</includes>
     <includedby refid="abstract__BeamParticle_8h" local="yes">abstract_BeamParticle.h</includedby>
     <includedby refid="abstract__Particle_8h" local="yes">abstract_Particle.h</includedby>
@@ -46,7 +46,7 @@
         <label>gambit/Backends/abstractbase.hpp</label>
         <link refid="include_2gambit_2Backends_2abstractbase_8hpp_source"/>
       </node>
-      <node id="32">
+      <node id="36">
         <label>abstract_AlphaEM.h</label>
         <link refid="abstract__AlphaEM_8h_source"/>
         <childnode refid="2" relation="include">
@@ -59,14 +59,14 @@
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="20" relation="include">
+        <childnode refid="21" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
         </childnode>
         <childnode refid="9" relation="include">
         </childnode>
       </node>
-      <node id="30">
+      <node id="34">
         <label>abstract_AlphaStrong.h</label>
         <link refid="abstract__AlphaStrong_8h_source"/>
         <childnode refid="2" relation="include">
@@ -84,7 +84,7 @@
         <childnode refid="9" relation="include">
         </childnode>
       </node>
-      <node id="28">
+      <node id="32">
         <label>abstract_CoupSM.h</label>
         <link refid="abstract__CoupSM_8h_source"/>
         <childnode refid="2" relation="include">
@@ -97,11 +97,43 @@
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="20" relation="include">
+        <childnode refid="21" relation="include">
         </childnode>
-        <childnode refid="22" relation="include">
+        <childnode refid="28" relation="include">
         </childnode>
-        <childnode refid="29" relation="include">
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>abstract_CoupSUSY.h</label>
+        <link refid="abstract__CoupSUSY_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
         </childnode>
         <childnode refid="31" relation="include">
         </childnode>
@@ -110,27 +142,7 @@
         <childnode refid="9" relation="include">
         </childnode>
       </node>
-      <node id="26">
-        <label>abstract_Couplings.h</label>
-        <link refid="abstract__Couplings_8h_source"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="12" relation="include">
-        </childnode>
-        <childnode refid="13" relation="include">
-        </childnode>
-        <childnode refid="14" relation="include">
-        </childnode>
-        <childnode refid="6" relation="include">
-        </childnode>
-        <childnode refid="27" relation="include">
-        </childnode>
-        <childnode refid="7" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
-      </node>
-      <node id="38">
+      <node id="52">
         <label>abstract_DecayChannel.h</label>
         <link refid="abstract__DecayChannel_8h_source"/>
         <childnode refid="2" relation="include">
@@ -169,29 +181,27 @@
         </childnode>
         <childnode refid="15" relation="include">
         </childnode>
-        <childnode refid="39" relation="include">
+        <childnode refid="45" relation="include">
         </childnode>
-        <childnode refid="41" relation="include">
+        <childnode refid="47" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
         </childnode>
         <childnode refid="9" relation="include">
         </childnode>
       </node>
-      <node id="19">
+      <node id="20">
         <label>abstract_Info.h</label>
         <link refid="abstract__Info_8h_source"/>
         <childnode refid="2" relation="include">
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
-        <childnode refid="4" relation="include">
-        </childnode>
         <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="18" relation="include">
+        <childnode refid="17" relation="include">
         </childnode>
         <childnode refid="13" relation="include">
         </childnode>
@@ -199,12 +209,54 @@
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
         <childnode refid="7" relation="include">
         </childnode>
         <childnode refid="9" relation="include">
         </childnode>
       </node>
-      <node id="40">
+      <node id="26">
+        <label>abstract_Logger.h</label>
+        <link refid="abstract__Logger_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
         <label>abstract_Particle.h</label>
         <link refid="abstract__Particle_8h_source"/>
         <childnode refid="2" relation="include">
@@ -221,18 +273,18 @@
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="41" relation="include">
+        <childnode refid="47" relation="include">
         </childnode>
         <childnode refid="1" relation="include">
         </childnode>
-        <childnode refid="35" relation="include">
+        <childnode refid="49" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
         </childnode>
         <childnode refid="9" relation="include">
         </childnode>
       </node>
-      <node id="16">
+      <node id="18">
         <label>abstract_ParticleData.h</label>
         <link refid="abstract__ParticleData_8h_source"/>
         <childnode refid="2" relation="include">
@@ -241,9 +293,13 @@
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
         <childnode refid="4" relation="include">
         </childnode>
         <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
         </childnode>
         <childnode refid="13" relation="include">
         </childnode>
@@ -251,24 +307,22 @@
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="17" relation="include">
+        <childnode refid="19" relation="include">
         </childnode>
-        <childnode refid="20" relation="include">
+        <childnode refid="21" relation="include">
         </childnode>
-        <childnode refid="22" relation="include">
+        <childnode refid="24" relation="include">
         </childnode>
-        <childnode refid="25" relation="include">
+        <childnode refid="28" relation="include">
         </childnode>
-        <childnode refid="33" relation="include">
-        </childnode>
-        <childnode refid="35" relation="include">
+        <childnode refid="31" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
         </childnode>
         <childnode refid="9" relation="include">
         </childnode>
       </node>
-      <node id="36">
+      <node id="50">
         <label>abstract_ParticleDataEntry.h</label>
         <link refid="abstract__ParticleDataEntry_8h_source"/>
         <childnode refid="2" relation="include">
@@ -285,57 +339,23 @@
         </childnode>
         <childnode refid="15" relation="include">
         </childnode>
-        <childnode refid="37" relation="include">
+        <childnode refid="51" relation="include">
         </childnode>
-        <childnode refid="33" relation="include">
-        </childnode>
-        <childnode refid="17" relation="include">
-        </childnode>
-        <childnode refid="20" relation="include">
-        </childnode>
-        <childnode refid="25" relation="include">
+        <childnode refid="19" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
         </childnode>
         <childnode refid="9" relation="include">
         </childnode>
       </node>
-      <node id="34">
-        <label>abstract_ResonanceWidths.h</label>
-        <link refid="abstract__ResonanceWidths_8h_source"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="12" relation="include">
-        </childnode>
-        <childnode refid="13" relation="include">
-        </childnode>
-        <childnode refid="14" relation="include">
-        </childnode>
-        <childnode refid="6" relation="include">
-        </childnode>
-        <childnode refid="17" relation="include">
-        </childnode>
-        <childnode refid="20" relation="include">
-        </childnode>
-        <childnode refid="15" relation="include">
-        </childnode>
-        <childnode refid="25" relation="include">
-        </childnode>
-        <childnode refid="35" relation="include">
-        </childnode>
-        <childnode refid="7" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
-      </node>
-      <node id="24">
+      <node id="30">
         <label>abstract_Rndm.h</label>
         <link refid="abstract__Rndm_8h_source"/>
         <childnode refid="2" relation="include">
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
-        <childnode refid="23" relation="include">
+        <childnode refid="29" relation="include">
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
@@ -352,7 +372,7 @@
         <childnode refid="9" relation="include">
         </childnode>
       </node>
-      <node id="21">
+      <node id="23">
         <label>abstract_Settings.h</label>
         <link refid="abstract__Settings_8h_source"/>
         <childnode refid="2" relation="include">
@@ -361,7 +381,61 @@
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
         <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="44">
+        <label>abstract_SigmaTotal.h</label>
+        <link refid="abstract__SigmaTotal_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="41">
+        <label>abstract_SusyLesHouches.h</label>
+        <link refid="abstract__SusyLesHouches_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
@@ -371,14 +445,14 @@
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="17" relation="include">
+        <childnode refid="42" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
         </childnode>
         <childnode refid="9" relation="include">
         </childnode>
       </node>
-      <node id="42">
+      <node id="48">
         <label>abstract_Vec4.h</label>
         <link refid="abstract__Vec4_8h_source"/>
         <childnode refid="2" relation="include">
@@ -398,7 +472,7 @@
       </node>
       <node id="14">
         <label>forward_decls_abstract_classes.h</label>
-        <link refid="Pythia__8__212_2forward__decls__abstract__classes_8h_source"/>
+        <link refid="Pythia__8__312_2forward__decls__abstract__classes_8h_source"/>
         <childnode refid="7" relation="include">
         </childnode>
         <childnode refid="9" relation="include">
@@ -406,7 +480,7 @@
       </node>
       <node id="6">
         <label>forward_decls_wrapper_classes.h</label>
-        <link refid="Pythia__8__212_2forward__decls__wrapper__classes_8h_source"/>
+        <link refid="Pythia__8__312_2forward__decls__wrapper__classes_8h_source"/>
         <childnode refid="7" relation="include">
         </childnode>
         <childnode refid="9" relation="include">
@@ -414,11 +488,11 @@
       </node>
       <node id="7">
         <label>identification.hpp</label>
-        <link refid="include_2gambit_2Backends_2backend__types_2Pythia__8__212_2identification_8hpp_source"/>
+        <link refid="include_2gambit_2Backends_2backend__types_2Pythia__8__312_2identification_8hpp_source"/>
         <childnode refid="8" relation="include">
         </childnode>
       </node>
-      <node id="31">
+      <node id="35">
         <label>wrapper_AlphaEM_decl.h</label>
         <link refid="wrapper__AlphaEM__decl_8h_source"/>
         <childnode refid="2" relation="include">
@@ -427,16 +501,16 @@
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
-        <childnode refid="32" relation="include">
+        <childnode refid="36" relation="include">
         </childnode>
-        <childnode refid="20" relation="include">
+        <childnode refid="21" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
         </childnode>
         <childnode refid="9" relation="include">
         </childnode>
       </node>
-      <node id="29">
+      <node id="33">
         <label>wrapper_AlphaStrong_decl.h</label>
         <link refid="wrapper__AlphaStrong__decl_8h_source"/>
         <childnode refid="2" relation="include">
@@ -445,14 +519,14 @@
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
-        <childnode refid="30" relation="include">
+        <childnode refid="34" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
         </childnode>
         <childnode refid="9" relation="include">
         </childnode>
       </node>
-      <node id="27">
+      <node id="31">
         <label>wrapper_CoupSM_decl.h</label>
         <link refid="wrapper__CoupSM__decl_8h_source"/>
         <childnode refid="2" relation="include">
@@ -461,13 +535,41 @@
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
         <childnode refid="28" relation="include">
         </childnode>
-        <childnode refid="20" relation="include">
+        <childnode refid="33" relation="include">
         </childnode>
-        <childnode refid="22" relation="include">
+        <childnode refid="35" relation="include">
         </childnode>
-        <childnode refid="29" relation="include">
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>wrapper_CoupSUSY_decl.h</label>
+        <link refid="wrapper__CoupSUSY__decl_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
         </childnode>
         <childnode refid="31" relation="include">
         </childnode>
@@ -476,25 +578,7 @@
         <childnode refid="9" relation="include">
         </childnode>
       </node>
-      <node id="25">
-        <label>wrapper_Couplings_decl.h</label>
-        <link refid="wrapper__Couplings__decl_8h_source"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="6" relation="include">
-        </childnode>
-        <childnode refid="10" relation="include">
-        </childnode>
-        <childnode refid="26" relation="include">
-        </childnode>
-        <childnode refid="27" relation="include">
-        </childnode>
-        <childnode refid="7" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
-      </node>
-      <node id="37">
+      <node id="51">
         <label>wrapper_DecayChannel_decl.h</label>
         <link refid="wrapper__DecayChannel__decl_8h_source"/>
         <childnode refid="2" relation="include">
@@ -503,7 +587,7 @@
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
-        <childnode refid="38" relation="include">
+        <childnode refid="52" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
         </childnode>
@@ -529,40 +613,64 @@
         </childnode>
         <childnode refid="15" relation="include">
         </childnode>
-        <childnode refid="39" relation="include">
+        <childnode refid="45" relation="include">
         </childnode>
-        <childnode refid="41" relation="include">
+        <childnode refid="47" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
         </childnode>
         <childnode refid="9" relation="include">
         </childnode>
       </node>
-      <node id="17">
+      <node id="19">
         <label>wrapper_Info_decl.h</label>
         <link refid="wrapper__Info__decl_8h_source"/>
         <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="4" relation="include">
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="18" relation="include">
+        <childnode refid="17" relation="include">
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
-        <childnode refid="19" relation="include">
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
         </childnode>
         <childnode refid="9" relation="include">
         </childnode>
       </node>
-      <node id="35">
+      <node id="24">
+        <label>wrapper_Logger_decl.h</label>
+        <link refid="wrapper__Logger__decl_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="49">
         <label>wrapper_ParticleDataEntry_decl.h</label>
         <link refid="wrapper__ParticleDataEntry__decl_8h_source"/>
         <childnode refid="2" relation="include">
@@ -573,15 +681,11 @@
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
-        <childnode refid="36" relation="include">
+        <childnode refid="50" relation="include">
         </childnode>
-        <childnode refid="37" relation="include">
+        <childnode refid="51" relation="include">
         </childnode>
-        <childnode refid="17" relation="include">
-        </childnode>
-        <childnode refid="20" relation="include">
-        </childnode>
-        <childnode refid="25" relation="include">
+        <childnode refid="19" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
         </childnode>
@@ -595,32 +699,36 @@
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
         <childnode refid="4" relation="include">
         </childnode>
         <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
-        <childnode refid="16" relation="include">
+        <childnode refid="18" relation="include">
         </childnode>
-        <childnode refid="17" relation="include">
+        <childnode refid="19" relation="include">
         </childnode>
-        <childnode refid="20" relation="include">
+        <childnode refid="21" relation="include">
         </childnode>
-        <childnode refid="22" relation="include">
+        <childnode refid="24" relation="include">
         </childnode>
-        <childnode refid="25" relation="include">
+        <childnode refid="28" relation="include">
         </childnode>
-        <childnode refid="35" relation="include">
+        <childnode refid="31" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
         </childnode>
         <childnode refid="9" relation="include">
         </childnode>
       </node>
-      <node id="39">
+      <node id="45">
         <label>wrapper_Particle_decl.h</label>
         <link refid="wrapper__Particle__decl_8h_source"/>
         <childnode refid="2" relation="include">
@@ -633,45 +741,23 @@
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
-        <childnode refid="40" relation="include">
+        <childnode refid="46" relation="include">
         </childnode>
-        <childnode refid="41" relation="include">
+        <childnode refid="47" relation="include">
         </childnode>
-        <childnode refid="35" relation="include">
-        </childnode>
-        <childnode refid="7" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
-      </node>
-      <node id="33">
-        <label>wrapper_ResonanceWidths_decl.h</label>
-        <link refid="wrapper__ResonanceWidths__decl_8h_source"/>
-        <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="6" relation="include">
-        </childnode>
-        <childnode refid="10" relation="include">
-        </childnode>
-        <childnode refid="34" relation="include">
-        </childnode>
-        <childnode refid="17" relation="include">
-        </childnode>
-        <childnode refid="20" relation="include">
-        </childnode>
-        <childnode refid="25" relation="include">
+        <childnode refid="49" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
         </childnode>
         <childnode refid="9" relation="include">
         </childnode>
       </node>
-      <node id="22">
+      <node id="28">
         <label>wrapper_Rndm_decl.h</label>
         <link refid="wrapper__Rndm__decl_8h_source"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="23" relation="include">
+        <childnode refid="29" relation="include">
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
@@ -680,6 +766,36 @@
         <childnode refid="6" relation="include">
         </childnode>
         <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>wrapper_Settings_decl.h</label>
+        <link refid="wrapper__Settings__decl_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
         </childnode>
         <childnode refid="24" relation="include">
         </childnode>
@@ -688,14 +804,34 @@
         <childnode refid="9" relation="include">
         </childnode>
       </node>
-      <node id="20">
-        <label>wrapper_Settings_decl.h</label>
-        <link refid="wrapper__Settings__decl_8h_source"/>
+      <node id="43">
+        <label>wrapper_SigmaTotal_decl.h</label>
+        <link refid="wrapper__SigmaTotal__decl_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>wrapper_SusyLesHouches_decl.h</label>
+        <link refid="wrapper__SusyLesHouches__decl_8h_source"/>
         <childnode refid="2" relation="include">
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="4" relation="include">
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
@@ -703,16 +839,16 @@
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
-        <childnode refid="21" relation="include">
+        <childnode refid="41" relation="include">
         </childnode>
-        <childnode refid="17" relation="include">
+        <childnode refid="42" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
         </childnode>
         <childnode refid="9" relation="include">
         </childnode>
       </node>
-      <node id="41">
+      <node id="47">
         <label>wrapper_Vec4_decl.h</label>
         <link refid="wrapper__Vec4__decl_8h_source"/>
         <childnode refid="2" relation="include">
@@ -721,7 +857,7 @@
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
-        <childnode refid="42" relation="include">
+        <childnode refid="48" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
         </childnode>
@@ -740,22 +876,40 @@
         <label>gambit/Utils/cats.hpp</label>
         <link refid="Utils_2include_2gambit_2Utils_2cats_8hpp"/>
       </node>
+      <node id="42">
+        <label>SLHAea/slhaea.h</label>
+      </node>
+      <node id="38">
+        <label>complex</label>
+      </node>
       <node id="2">
         <label>cstddef</label>
       </node>
       <node id="12">
         <label>iostream</label>
       </node>
-      <node id="18">
+      <node id="16">
+        <label>istream</label>
+      </node>
+      <node id="17">
         <label>map</label>
+      </node>
+      <node id="25">
+        <label>mutex</label>
       </node>
       <node id="4">
         <label>ostream</label>
       </node>
+      <node id="22">
+        <label>set</label>
+      </node>
+      <node id="27">
+        <label>streambuf</label>
+      </node>
       <node id="3">
         <label>string</label>
       </node>
-      <node id="23">
+      <node id="29">
         <label>utility</label>
       </node>
       <node id="5">
@@ -831,9 +985,9 @@
       </node>
       <node id="11">
         <label>loaded_types.hpp</label>
-        <link refid="Pythia__8__212_2loaded__types_8hpp_source"/>
+        <link refid="Pythia__8__312_2loaded__types_8hpp_source"/>
       </node>
-      <node id="24">
+      <node id="23">
         <label>wrapper_BeamParticle.h</label>
         <link refid="wrapper__BeamParticle_8h_source"/>
         <childnode refid="11" relation="include">
@@ -848,13 +1002,11 @@
         </childnode>
         <childnode refid="16" relation="include">
         </childnode>
-        <childnode refid="18" relation="include">
-        </childnode>
-        <childnode refid="24" relation="include">
+        <childnode refid="23" relation="include">
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="20" relation="include">
+        <childnode refid="24" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
         </childnode>
@@ -864,15 +1016,11 @@
         </childnode>
         <childnode refid="25" relation="include">
         </childnode>
-        <childnode refid="19" relation="include">
-        </childnode>
-        <childnode refid="23" relation="include">
-        </childnode>
       </node>
       <node id="42">
         <label>wrapper_BeamParticle_def.h</label>
         <link refid="wrapper__BeamParticle__def_8h_source"/>
-        <childnode refid="24" relation="include">
+        <childnode refid="23" relation="include">
         </childnode>
       </node>
       <node id="33">
@@ -916,7 +1064,7 @@
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="20" relation="include">
+        <childnode refid="24" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
         </childnode>
@@ -936,7 +1084,7 @@
         </childnode>
         <childnode refid="19" relation="include">
         </childnode>
-        <childnode refid="23" relation="include">
+        <childnode refid="22" relation="include">
         </childnode>
       </node>
       <node id="32">
@@ -1014,7 +1162,7 @@
         </childnode>
         <childnode refid="19" relation="include">
         </childnode>
-        <childnode refid="23" relation="include">
+        <childnode refid="22" relation="include">
         </childnode>
       </node>
       <node id="43">
@@ -1041,7 +1189,7 @@
         <childnode refid="15" relation="include">
         </childnode>
       </node>
-      <node id="20">
+      <node id="24">
         <label>wrapper_PartonLevel_def.h</label>
         <link refid="wrapper__PartonLevel__def_8h_source"/>
         <childnode refid="14" relation="include">
@@ -1084,7 +1232,7 @@
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="20" relation="include">
+        <childnode refid="24" relation="include">
         </childnode>
         <childnode refid="38" relation="include">
         </childnode>
@@ -1095,7 +1243,7 @@
         <childnode refid="38" relation="include">
         </childnode>
       </node>
-      <node id="22">
+      <node id="21">
         <label>wrapper_SigmaProcess.h</label>
         <link refid="wrapper__SigmaProcess_8h_source"/>
         <childnode refid="11" relation="include">
@@ -1104,25 +1252,19 @@
       <node id="17">
         <label>wrapper_SigmaProcess_decl.h</label>
         <link refid="wrapper__SigmaProcess__decl_8h_source"/>
-        <childnode refid="6" relation="include">
-        </childnode>
         <childnode refid="18" relation="include">
         </childnode>
-        <childnode refid="7" relation="include">
-        </childnode>
-        <childnode refid="15" relation="include">
-        </childnode>
-        <childnode refid="22" relation="include">
+        <childnode refid="21" relation="include">
         </childnode>
         <childnode refid="19" relation="include">
         </childnode>
-        <childnode refid="23" relation="include">
+        <childnode refid="22" relation="include">
         </childnode>
       </node>
       <node id="25">
         <label>wrapper_SigmaProcess_def.h</label>
         <link refid="wrapper__SigmaProcess__def_8h_source"/>
-        <childnode refid="22" relation="include">
+        <childnode refid="21" relation="include">
         </childnode>
       </node>
       <node id="41">
@@ -1143,7 +1285,7 @@
         <childnode refid="41" relation="include">
         </childnode>
       </node>
-      <node id="21">
+      <node id="20">
         <label>wrapper_UserHooks.h</label>
         <link refid="wrapper__UserHooks_8h_source"/>
         <childnode refid="11" relation="include">
@@ -1152,25 +1294,13 @@
       <node id="19">
         <label>wrapper_UserHooks_decl.h</label>
         <link refid="wrapper__UserHooks__decl_8h_source"/>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="6" relation="include">
-        </childnode>
-        <childnode refid="5" relation="include">
-        </childnode>
         <childnode refid="20" relation="include">
         </childnode>
-        <childnode refid="7" relation="include">
-        </childnode>
-        <childnode refid="15" relation="include">
-        </childnode>
-        <childnode refid="21" relation="include">
-        </childnode>
       </node>
-      <node id="23">
+      <node id="22">
         <label>wrapper_UserHooks_def.h</label>
         <link refid="wrapper__UserHooks__def_8h_source"/>
-        <childnode refid="21" relation="include">
+        <childnode refid="20" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
@@ -1195,7 +1325,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Backends/include/gambit/Backends/backend_types/Pythia_8_212/wrapper_Event_decl.h" line="1" column="0" bodyfile="Backends/include/gambit/Backends/backend_types/Pythia_8_212/wrapper_Event_decl.h" bodystart="17" bodyend="221"/>
+        <location file="Backends/include/gambit/Backends/backend_types/Pythia_8_312/wrapper_Event_decl.h" line="1" column="0" bodyfile="Backends/include/gambit/Backends/backend_types/Pythia_8_312/wrapper_Event_decl.h" bodystart="17" bodyend="247"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -1203,8 +1333,8 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>__wrapper_Event_decl_Pythia_8_212_h__</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__wrapper_Event_decl_Pythia_8_212_h__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>__wrapper_Event_decl_Pythia_8_312_h__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__wrapper_Event_decl_Pythia_8_312_h__</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstddef&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
@@ -1247,189 +1377,215 @@
 <codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>clear();</highlight></codeline>
 <codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>reset();</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>free();</highlight></codeline>
 <codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Pythia8::Particle&amp;<sp/>operator[](</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>reset();</highlight></codeline>
 <codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Pythia8::Particle&amp;<sp/>operator[](</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Pythia8::Particle&amp;<sp/>operator[](</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i);</highlight></codeline>
 <codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Pythia8::Particle&amp;<sp/>front();</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Pythia8::Particle&amp;<sp/>operator[](</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Pythia8::Particle&amp;<sp/>at(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i);</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Pythia8::Particle&amp;<sp/>front();</highlight></codeline>
 <codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Pythia8::Particle&amp;<sp/>back();</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Pythia8::Particle&amp;<sp/>at(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i);</highlight></codeline>
 <codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Pythia8::Particle&amp;<sp/>back();</highlight></codeline>
 <codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>append(Pythia8::Particle<sp/>entryIn);</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Pythia8::Particle&amp;<sp/>front()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>append(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>status,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mother1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mother2,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>daughter1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>daughter2,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>acol,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>px,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>py,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>pz,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>e,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>scaleIn,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>polIn);</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Pythia8::Particle&amp;<sp/>at(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>append(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>status,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mother1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mother2,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>daughter1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>daughter2,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>acol,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>px,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>py,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>pz,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>e,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>scaleIn);</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Pythia8::Particle&amp;<sp/>back()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>append(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>status,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mother1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mother2,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>daughter1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>daughter2,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>acol,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>px,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>py,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>pz,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>e,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m);</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>size()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>append(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>status,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mother1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mother2,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>daughter1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>daughter2,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>acol,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>px,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>py,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>pz,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>e);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>append(Pythia8::Particle<sp/>entryIn);</highlight></codeline>
 <codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>append(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>status,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mother1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mother2,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>daughter1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>daughter2,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>acol,<sp/>Pythia8::Vec4<sp/>p,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>scaleIn,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>polIn);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>append(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>status,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mother1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mother2,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>daughter1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>daughter2,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>acol,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>px,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>py,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>pz,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>e,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>scaleIn,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>polIn);</highlight></codeline>
 <codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>append(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>status,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mother1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mother2,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>daughter1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>daughter2,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>acol,<sp/>Pythia8::Vec4<sp/>p,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>scaleIn);</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>append(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>status,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mother1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mother2,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>daughter1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>daughter2,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>acol,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>px,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>py,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>pz,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>e,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>scaleIn);</highlight></codeline>
 <codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>append(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>status,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mother1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mother2,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>daughter1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>daughter2,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>acol,<sp/>Pythia8::Vec4<sp/>p,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m);</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>append(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>status,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mother1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mother2,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>daughter1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>daughter2,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>acol,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>px,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>py,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>pz,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>e,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m);</highlight></codeline>
 <codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>append(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>status,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mother1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mother2,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>daughter1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>daughter2,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>acol,<sp/>Pythia8::Vec4<sp/>p);</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>append(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>status,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mother1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mother2,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>daughter1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>daughter2,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>acol,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>px,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>py,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>pz,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>e);</highlight></codeline>
 <codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>append(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>status,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>acol,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>px,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>py,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>pz,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>e,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>scaleIn,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>polIn);</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>append(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>status,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mother1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mother2,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>daughter1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>daughter2,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>acol,<sp/>Pythia8::Vec4<sp/>p,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>scaleIn,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>polIn);</highlight></codeline>
 <codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>append(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>status,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>acol,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>px,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>py,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>pz,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>e,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>scaleIn);</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>append(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>status,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mother1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mother2,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>daughter1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>daughter2,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>acol,<sp/>Pythia8::Vec4<sp/>p,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>scaleIn);</highlight></codeline>
 <codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>append(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>status,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>acol,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>px,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>py,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>pz,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>e,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>append(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>status,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mother1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mother2,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>daughter1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>daughter2,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>acol,<sp/>Pythia8::Vec4<sp/>p,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m);</highlight></codeline>
 <codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>append(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>status,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>acol,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>px,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>py,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>pz,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>e);</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>append(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>status,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mother1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>mother2,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>daughter1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>daughter2,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>acol,<sp/>Pythia8::Vec4<sp/>p);</highlight></codeline>
 <codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>append(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>status,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>acol,<sp/>Pythia8::Vec4<sp/>p,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>scaleIn,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>polIn);</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>append(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>status,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>acol,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>px,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>py,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>pz,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>e,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>scaleIn,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>polIn);</highlight></codeline>
 <codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>append(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>status,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>acol,<sp/>Pythia8::Vec4<sp/>p,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>scaleIn);</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>append(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>status,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>acol,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>px,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>py,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>pz,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>e,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>scaleIn);</highlight></codeline>
 <codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>append(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>status,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>acol,<sp/>Pythia8::Vec4<sp/>p,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m);</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>append(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>status,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>acol,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>px,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>py,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>pz,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>e,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m);</highlight></codeline>
 <codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>append(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>status,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>acol,<sp/>Pythia8::Vec4<sp/>p);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>append(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>status,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>acol,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>px,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>py,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>pz,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>e);</highlight></codeline>
 <codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setEvtPtr(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iSet);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>append(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>status,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>acol,<sp/>Pythia8::Vec4<sp/>p,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>scaleIn,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>polIn);</highlight></codeline>
 <codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setEvtPtr();</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>append(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>status,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>acol,<sp/>Pythia8::Vec4<sp/>p,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>scaleIn);</highlight></codeline>
 <codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>copy(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iCopy,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>newStatus);</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>append(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>status,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>acol,<sp/>Pythia8::Vec4<sp/>p,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>m);</highlight></codeline>
 <codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>copy(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iCopy);</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>append(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">id</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>status,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>acol,<sp/>Pythia8::Vec4<sp/>p);</highlight></codeline>
 <codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>list(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>precision)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setEvtPtr(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iSet);</highlight></codeline>
 <codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>list()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setEvtPtr();</highlight></codeline>
 <codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>list(std::ostream&amp;<sp/>os,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>precision)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>copy(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iCopy,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>newStatus);</highlight></codeline>
 <codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>list(std::ostream&amp;<sp/>os)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>copy(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iCopy);</highlight></codeline>
 <codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>list(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>showScaleAndVertex,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>showMothersAndDaughters,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>precision)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>list(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>showScaleAndVertex,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>showMothersAndDaughters,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>precision,<sp/>std::ostream&amp;<sp/>os)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>list(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>showScaleAndVertex,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>showMothersAndDaughters)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>list(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>showScaleAndVertex,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>showMothersAndDaughters,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>precision)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>list(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>showScaleAndVertex)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>list(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>showScaleAndVertex,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>showMothersAndDaughters)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>list(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>showScaleAndVertex,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>showMothersAndDaughters,<sp/>std::ostream&amp;<sp/>os,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>precision)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>list(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>showScaleAndVertex)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>list(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>showScaleAndVertex,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>showMothersAndDaughters,<sp/>std::ostream&amp;<sp/>os)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>list()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>popBack(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nRemove);</highlight></codeline>
 <codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
 <codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>popBack();</highlight></codeline>
 <codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>remove(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iFirst,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iLast);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>remove(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iFirst,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iLast,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>shiftHistory);</highlight></codeline>
 <codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>restorePtrs();</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>remove(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iFirst,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>iLast);</highlight></codeline>
 <codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>saveSize();</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>restorePtrs();</highlight></codeline>
 <codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>restoreSize();</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>saveSize();</highlight></codeline>
 <codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>savedSizeValue();</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>restoreSize();</highlight></codeline>
 <codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>initColTag(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>colTag);</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>savedSizeValue();</highlight></codeline>
 <codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>initColTag();</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>initColTag(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>colTag);</highlight></codeline>
 <codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>lastColTag()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>initColTag();</highlight></codeline>
 <codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nextColTag();</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>lastColTag()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>scale(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>scaleIn);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nextColTag();</highlight></codeline>
 <codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>scale()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>scale(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>scaleIn);</highlight></codeline>
 <codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>scaleSecond(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>scaleSecondIn);</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>scale()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>scaleSecond()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>scaleSecond(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>scaleSecondIn);</highlight></codeline>
 <codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>::std::vector&lt;int&gt;<sp/>daughterList(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>scaleSecond()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rot(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>theta,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>phi);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>::std::vector&lt;int&gt;<sp/>daughterList(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>bst(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>betaX,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>betaY,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>betaZ);</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nFinal(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>chargedOnly)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>bst(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>betaX,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>betaY,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>betaZ,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>gamma);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nFinal()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>bst(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Pythia8::Vec4&amp;<sp/>vec);</highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dyAbs(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i2)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>clearJunctions();</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>detaAbs(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i2)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>appendJunction(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>kind,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col0,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col2);</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>dphiAbs(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i2)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sizeJunction()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>RRapPhi(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i2)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>remainsJunction(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>REtaPhi(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i2)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>remainsJunction(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>remainsIn);</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>rot(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>theta,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>phi);</highlight></codeline>
 <codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>kindJunction(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>bst(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>betaX,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>betaY,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>betaZ);</highlight></codeline>
 <codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>colJunction(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>bst(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>betaX,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>betaY,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>betaZ,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>gamma);</highlight></codeline>
 <codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>colJunction(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>colIn);</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>bst(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Pythia8::Vec4&amp;<sp/>vec);</highlight></codeline>
 <codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>endColJunction(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>clearJunctions();</highlight></codeline>
 <codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>endColJunction(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>endColIn);</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>appendJunction(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>kind,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col0,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col1,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>col2);</highlight></codeline>
 <codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>statusJunction(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>sizeJunction()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>statusJunction(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>statusIn);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>remainsJunction(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>eraseJunction(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i);</highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>remainsJunction(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>remainsIn);</highlight></codeline>
 <codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>saveJunctionSize();</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>kindJunction(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>restoreJunctionSize();</highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>colJunction(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>listJunctions(std::ostream&amp;<sp/>os)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>colJunction(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>colIn);</highlight></codeline>
 <codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>listJunctions()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>endColJunction(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>savePartonLevelSize();</highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>endColJunction(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>endColIn);</highlight></codeline>
 <codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Pythia8::Event&amp;<sp/>operator+=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Pythia8::Event&amp;<sp/>addEvent);</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>statusJunction(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Wrappers<sp/>for<sp/>original<sp/>constructors:<sp/></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Event(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>capacity);</highlight></codeline>
-<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Event();</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>statusJunction(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>j,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>statusIn);</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>eraseJunction(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i);</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>saveJunctionSize();</highlight></codeline>
 <codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Special<sp/>pointer-based<sp/>constructor:<sp/></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Event(Abstract_Event*<sp/>in);</highlight></codeline>
-<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Copy<sp/>constructor:<sp/></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Event(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Event&amp;<sp/>in);</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>restoreJunctionSize();</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>listJunctions()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>hasHVcols()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Assignment<sp/>operator:<sp/></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Event&amp;<sp/>operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Event&amp;<sp/>in);</highlight></codeline>
-<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Destructor:<sp/></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>~Event();</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>listHVcols()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>maxHVcols()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>saveHVcolsSize();</highlight></codeline>
 <codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Returns<sp/>correctly<sp/>casted<sp/>pointer<sp/>to<sp/>Abstract<sp/>class:<sp/></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Abstract_Event*<sp/>get_BEptr()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="221"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="222"><highlight class="normal"></highlight></codeline>
-<codeline lineno="223"><highlight class="normal"></highlight></codeline>
-<codeline lineno="224"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="include_2gambit_2Backends_2backend__undefs_8hpp" kindref="compound">gambit/Backends/backend_undefs.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="225"><highlight class="normal"></highlight></codeline>
-<codeline lineno="226"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>__wrapper_Event_decl_Pythia_8_212_h__<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>restoreHVcolsSize();</highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>savePartonLevelSize();</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="219"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>clearStringBreaks();</highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Pythia8::Event&amp;<sp/>operator+=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Pythia8::Event&amp;<sp/>addEvent);</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Wrappers<sp/>for<sp/>original<sp/>constructors:<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="225"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Event(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>capacity);</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Event();</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Special<sp/>pointer-based<sp/>constructor:<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Event(Abstract_Event*<sp/>in);</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Copy<sp/>constructor:<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Event(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Event&amp;<sp/>in);</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Assignment<sp/>operator:<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Event&amp;<sp/>operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Event&amp;<sp/>in);</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Destructor:<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>~Event();</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Returns<sp/>correctly<sp/>casted<sp/>pointer<sp/>to<sp/>Abstract<sp/>class:<sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Abstract_Event*<sp/>get_BEptr()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="247"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"></highlight></codeline>
+<codeline lineno="250"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="include_2gambit_2Backends_2backend__undefs_8hpp" kindref="compound">gambit/Backends/backend_undefs.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="251"><highlight class="normal"></highlight></codeline>
+<codeline lineno="252"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>__wrapper_Event_decl_Pythia_8_312_h__<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
     </programlisting>
-    <location file="Backends/include/gambit/Backends/backend_types/Pythia_8_212/wrapper_Event_decl.h"/>
+    <location file="Backends/include/gambit/Backends/backend_types/Pythia_8_312/wrapper_Event_decl.h"/>
   </compounddef>
 </doxygen>

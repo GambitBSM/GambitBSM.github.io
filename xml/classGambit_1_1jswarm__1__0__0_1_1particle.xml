@@ -1,0 +1,256 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classGambit_1_1jswarm__1__0__0_1_1particle" kind="class" language="C++" prot="public">
+    <compoundname>Gambit::jswarm_1_0_0::particle</compoundname>
+    <includes refid="jswarm_8hpp" local="no">jswarm.hpp</includes>
+      <sectiondef kind="user-defined">
+      <memberdef kind="variable" id="classGambit_1_1jswarm__1__0__0_1_1particle_1a43676f893fd2daeff8ce8e32254d98dd" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; double &gt; *</type>
+        <definition>std::vector&lt;double&gt;* Gambit::jswarm_1_0_0::particle::lowerbounds</definition>
+        <argsstring></argsstring>
+        <name>lowerbounds</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle::lowerbounds</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parameter space boundaries </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="43" column="21" bodyfile="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1jswarm__1__0__0_1_1particle_1a6234b700917fc6bf87a6506c57cfc535" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; double &gt; *</type>
+        <definition>std::vector&lt;double&gt;* Gambit::jswarm_1_0_0::particle::upperbounds</definition>
+        <argsstring></argsstring>
+        <name>upperbounds</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle::upperbounds</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="44" column="21" bodyfile="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classGambit_1_1jswarm__1__0__0_1_1particle_1af40d5a400a5921e49e7933fc99604da9" prot="private" static="no" mutable="no">
+        <type><ref refid="jswarm_8hpp_1a3c849197180a4f82ef9efd00551ba33a" kindref="member">rng_type</ref> *</type>
+        <definition>rng_type* Gambit::jswarm_1_0_0::particle::rng</definition>
+        <argsstring></argsstring>
+        <name>rng</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle::rng</qualifiedname>
+        <briefdescription>
+<para>pointer to random number generator engine to use </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="48" column="18" bodyfile="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classGambit_1_1jswarm__1__0__0_1_1particle_1a06384789733c97fca4e215da8ed7783b" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; Gambit::jswarm_1_0_0::particle::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle::x</qualifiedname>
+        <briefdescription>
+<para>Particle position vector. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="53" column="21" bodyfile="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1jswarm__1__0__0_1_1particle_1a2e7e2c8d7b2cfcb7e12d436bb486efb7" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; Gambit::jswarm_1_0_0::particle::v</definition>
+        <argsstring></argsstring>
+        <name>v</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle::v</qualifiedname>
+        <briefdescription>
+<para>Particle velocity vector. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="56" column="21" bodyfile="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1jswarm__1__0__0_1_1particle_1a7b5d1e1e7d2883c319d5789553aa5639" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Gambit::jswarm_1_0_0::particle::lnlike</definition>
+        <argsstring></argsstring>
+        <name>lnlike</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle::lnlike</qualifiedname>
+        <briefdescription>
+<para>Current objective value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="59" column="16" bodyfile="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1jswarm__1__0__0_1_1particle_1aba52e2b0aa1a4f2b77b080b52036422c" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Gambit::jswarm_1_0_0::particle::personal_best_value</definition>
+        <argsstring></argsstring>
+        <name>personal_best_value</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle::personal_best_value</qualifiedname>
+        <briefdescription>
+<para>Current personal best fit. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="62" column="16" bodyfile="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1jswarm__1__0__0_1_1particle_1a83ec67f78e839514caf5901ea8ca4c6f" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; Gambit::jswarm_1_0_0::particle::personal_best_x</definition>
+        <argsstring></argsstring>
+        <name>personal_best_x</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle::personal_best_x</qualifiedname>
+        <briefdescription>
+<para>Current personal best-fit vector. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="65" column="21" bodyfile="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGambit_1_1jswarm__1__0__0_1_1particle_1a327072ecadedca1e0c0b8b0dd76a3a2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::jswarm_1_0_0::particle::particle</definition>
+        <argsstring>(int, std::vector&lt; double &gt; &amp;, std::vector&lt; double &gt; &amp;, rng_type &amp;)</argsstring>
+        <name>particle</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle::particle</qualifiedname>
+        <param>
+          <type>int</type>
+          <defname>nPar</defname>
+        </param>
+        <param>
+          <type>std::vector&lt; double &gt; &amp;</type>
+          <defname>lb</defname>
+        </param>
+        <param>
+          <type>std::vector&lt; double &gt; &amp;</type>
+          <defname>ub</defname>
+        </param>
+        <param>
+          <type><ref refid="jswarm_8hpp_1a3c849197180a4f82ef9efd00551ba33a" kindref="member">rng_type</ref> &amp;</type>
+          <defname>generator</defname>
+        </param>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="68" column="9" bodyfile="ScannerBit/src/scanners/jswarm/particle.cpp" bodystart="30" bodyend="40"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1jswarm__1__0__0_1_1particle_1a2b10c613a0912ae034f5244aee93e3d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::jswarm_1_0_0::particle::init</definition>
+        <argsstring>(bool zero_vel)</argsstring>
+        <name>init</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle::init</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>zero_vel</declname>
+        </param>
+        <briefdescription>
+<para>Initialise a particle with a random position and zero/random velocity. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="71" column="14" bodyfile="ScannerBit/src/scanners/jswarm/particle.cpp" bodystart="43" bodyend="53"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1jswarm__1__0__0_1_1particle_1af674642d9747e91038b3edea8892cb2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::jswarm_1_0_0::particle::update_personal_best</definition>
+        <argsstring>()</argsstring>
+        <name>update_personal_best</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle::update_personal_best</qualifiedname>
+        <briefdescription>
+<para>Update the particle&apos;s personal best-seen fit so far. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Update the particle&apos;s personal best fit seen so far. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="74" column="14" bodyfile="ScannerBit/src/scanners/jswarm/particle.cpp" bodystart="56" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1jswarm__1__0__0_1_1particle_1a888f5a5a35036735ac760616edc741ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::jswarm_1_0_0::particle::reflect</definition>
+        <argsstring>()</argsstring>
+        <name>reflect</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle::reflect</qualifiedname>
+        <briefdescription>
+<para>Reflect a particle&apos;s position and velocity about the walls of the prior box. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Reflect a particle&apos;s position and velocity off the walls of the prior box. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="77" column="14" bodyfile="ScannerBit/src/scanners/jswarm/particle.cpp" bodystart="66" bodyend="102"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1jswarm__1__0__0_1_1particle_1a3140ac5640b5f11d828c45809ca9f723" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt; double &gt; Gambit::jswarm_1_0_0::particle::discretised_x</definition>
+        <argsstring>(const std::vector&lt; int &gt; &amp;)</argsstring>
+        <name>discretised_x</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle::discretised_x</qualifiedname>
+        <param>
+          <type>const std::vector&lt; int &gt; &amp;</type>
+          <defname>indices</defname>
+        </param>
+        <briefdescription>
+<para>Return a particle&apos;s position vector, discretised at some specified indices. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="80" column="21" bodyfile="ScannerBit/src/scanners/jswarm/particle.cpp" bodystart="105" bodyend="110"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>An individual particle in a swarm. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="36" column="5" bodyfile="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" bodystart="37" bodyend="82"/>
+    <listofallmembers>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle_1a3140ac5640b5f11d828c45809ca9f723" prot="public" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle</scope><name>discretised_x</name></member>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle_1a2b10c613a0912ae034f5244aee93e3d4" prot="public" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle</scope><name>init</name></member>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle_1a7b5d1e1e7d2883c319d5789553aa5639" prot="public" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle</scope><name>lnlike</name></member>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle_1a43676f893fd2daeff8ce8e32254d98dd" prot="private" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle</scope><name>lowerbounds</name></member>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle_1a327072ecadedca1e0c0b8b0dd76a3a2f" prot="public" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle</scope><name>particle</name></member>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle_1aba52e2b0aa1a4f2b77b080b52036422c" prot="public" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle</scope><name>personal_best_value</name></member>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle_1a83ec67f78e839514caf5901ea8ca4c6f" prot="public" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle</scope><name>personal_best_x</name></member>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle_1a888f5a5a35036735ac760616edc741ee" prot="public" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle</scope><name>reflect</name></member>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle_1af40d5a400a5921e49e7933fc99604da9" prot="private" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle</scope><name>rng</name></member>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle_1af674642d9747e91038b3edea8892cb2a" prot="public" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle</scope><name>update_personal_best</name></member>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle_1a6234b700917fc6bf87a6506c57cfc535" prot="private" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle</scope><name>upperbounds</name></member>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle_1a2e7e2c8d7b2cfcb7e12d436bb486efb7" prot="public" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle</scope><name>v</name></member>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle_1a06384789733c97fca4e215da8ed7783b" prot="public" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle</scope><name>x</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

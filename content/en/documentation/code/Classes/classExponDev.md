@@ -11,12 +11,14 @@ description: "[No description available]"
 
 [No description available]
 
-Inherits from [Ran](/documentation/code/classes/classran/), [Ran](/documentation/code/classes/classran/)
+Inherits from [Ran](/documentation/code/classes/classran/), [Ran](/documentation/code/classes/classran/), [Ran](/documentation/code/classes/classran/)
 
 ## Public Functions
 
 |                | Name           |
 | -------------- | -------------- |
+| | **[ExponDev](/documentation/code/classes/classexpondev/#function-expondev)**(double din, unsigned long long ii) |
+| double | **[Dev](/documentation/code/classes/classexpondev/#function-dev)**() |
 | | **[ExponDev](/documentation/code/classes/classexpondev/#function-expondev)**(double din, unsigned long long ii) |
 | double | **[Dev](/documentation/code/classes/classexpondev/#function-dev)**() |
 | | **[ExponDev](/documentation/code/classes/classexpondev/#function-expondev)**(double din, unsigned long long ii) |
@@ -32,11 +34,26 @@ Inherits from [Ran](/documentation/code/classes/classran/), [Ran](/documentation
 | double | **[Doub](/documentation/code/classes/classran/#function-doub)**() |
 | | **[Ran](/documentation/code/classes/classran/#function-ran)**(unsigned long long int ) |
 | double | **[Doub](/documentation/code/classes/classran/#function-doub)**() |
+| | **[Ran](/documentation/code/classes/classran/#function-ran)**(unsigned long long int ) |
+| double | **[Doub](/documentation/code/classes/classran/#function-doub)**() |
 
 **Public Functions inherited from [Ran](/documentation/code/classes/classran/)**
 
 |                | Name           |
 | -------------- | -------------- |
+| | **[Ran](/documentation/code/classes/classran/#function-ran)**(unsigned long long int ) |
+| double | **[Doub](/documentation/code/classes/classran/#function-doub)**() |
+| | **[Ran](/documentation/code/classes/classran/#function-ran)**(unsigned long long int ) |
+| double | **[Doub](/documentation/code/classes/classran/#function-doub)**() |
+| | **[Ran](/documentation/code/classes/classran/#function-ran)**(unsigned long long int ) |
+| double | **[Doub](/documentation/code/classes/classran/#function-doub)**() |
+
+**Public Functions inherited from [Ran](/documentation/code/classes/classran/)**
+
+|                | Name           |
+| -------------- | -------------- |
+| | **[Ran](/documentation/code/classes/classran/#function-ran)**(unsigned long long int ) |
+| double | **[Doub](/documentation/code/classes/classran/#function-doub)**() |
 | | **[Ran](/documentation/code/classes/classran/#function-ran)**(unsigned long long int ) |
 | double | **[Doub](/documentation/code/classes/classran/#function-doub)**() |
 | | **[Ran](/documentation/code/classes/classran/#function-ran)**(unsigned long long int ) |
@@ -79,6 +96,23 @@ inline double Dev()
 ```
 
 
+### function ExponDev
+
+```
+inline ExponDev(
+    double din,
+    unsigned long long ii
+)
+```
+
+
+### function Dev
+
+```
+inline double Dev()
+```
+
+
 -------------------------------
 
-Updated on 2024-07-18 at 13:53:30 +0000
+Updated on 2025-02-12 at 15:36:37 +0000

@@ -1215,7 +1215,7 @@
       </node>
       <node id="99">
         <label>diagnostics.cpp</label>
-        <link refid="diagnostics_8cpp"/>
+        <link refid="Core_2src_2diagnostics_8cpp"/>
       </node>
       <node id="95">
         <label>gambit.cpp</label>
@@ -1516,23 +1516,23 @@
 </programlisting> that from wherever you plan to use it, as per standard programming practice. You should only have to bother with the instructions below if GAMBIT or its other modules/backends/models need to be aware of this new type. That would typically be the case when your new type is to be used in more than one module/backend/model, or if it is to be used for passing things back and forth between modules, <linebreak/>
  backends and/or models, e.g. if it is the result or argument type of a backend function, module function or module dependency.</para>
 <para>Explicit instructions for adding new types:</para>
-<sect2 id="types__rollcall_8hpp_1autotoc_md33">
+<sect2 id="types__rollcall_8hpp_1autotoc_md35">
 <title>MODELS</title>
 <para>To add a new type that will be used exclusively to communicate with some model X, declare it in a header Models/include/gambit/Models/model_types/X_types.hpp, and include that file from Models/include/gambit/Models/models/X.hpp. X_types will be automatically included in Models/include/gambit/Models/model_types_rollcall.hpp by the GAMBIT model harvester.</para>
 </sect2>
-<sect2 id="types__rollcall_8hpp_1autotoc_md34">
+<sect2 id="types__rollcall_8hpp_1autotoc_md36">
 <title>MODULES</title>
 <para>To add a new type that will be used exclusively to communicate with some module Y, declare it in a header Y/include/gambit/Y/Y_types.hpp, and include that file from Y/include/gambit/Y/Y_rollcall.hpp. Y_types will be automatically included in Elements/include/gambit/Elements/module_types_rollcall.hpp by the GAMBIT module harvester.</para>
 </sect2>
-<sect2 id="types__rollcall_8hpp_1autotoc_md35">
+<sect2 id="types__rollcall_8hpp_1autotoc_md37">
 <title>BACKENDS</title>
 <para>To add a new type that will be used to communicate with a backend Z, declare it in a header Backends/include/gambit/Backends/backend_types/Z_types.hpp Z_types will be automatically included in Backends/include/gambit/Backends/backend_types_rollcall.hpp by the GAMBIT backend harvester.</para>
 </sect2>
-<sect2 id="types__rollcall_8hpp_1autotoc_md36">
+<sect2 id="types__rollcall_8hpp_1autotoc_md38">
 <title>MIXED-USE TYPES</title>
 <para>If the type will be used by multiple modules, multiple models or multiple backends, or any mixture thereof, make some header Elements/include/gambit/Elements/__your_header_name__.hpp that declares the type, and include that header by hand from <ref refid="shared__types_8hpp" kindref="compound">Elements/include/gambit/Elements/shared_types.hpp</ref>.</para>
 </sect2>
-<sect2 id="types__rollcall_8hpp_1autotoc_md37">
+<sect2 id="types__rollcall_8hpp_1autotoc_md39">
 <title>PRINTING</title>
 <para>Remember also that if you want to be able to spit instances of your new type out to a file or other output medium, you will need to add specialisations for it in the various printers included in Utils/include/gambit/Utils/printers_rollcall.hpp.</para>
 <para><hruler/>

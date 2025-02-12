@@ -1,0 +1,194 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classGambit_1_1Scanner_1_1Python_1_1scan__interface" kind="class" language="C++" prot="public">
+    <compoundname>Gambit::Scanner::Python::scan_interface</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classGambit_1_1Scanner_1_1Python_1_1scan__interface_1ab36a42597dc631b66caf58cefc924b70" prot="private" static="no" mutable="no">
+        <type><ref refid="classGambit_1_1Printers_1_1PrinterManager" kindref="compound">Printers::PrinterManager</ref> *</type>
+        <definition>Printers::PrinterManager* Gambit::Scanner::Python::scan_interface::global_printer</definition>
+        <argsstring></argsstring>
+        <name>global_printer</name>
+        <qualifiedname>Gambit::Scanner::Python::scan_interface::global_printer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/python/include/interface.hpp" line="54" column="42" bodyfile="ScannerBit/python/include/interface.hpp" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGambit_1_1Scanner_1_1Python_1_1scan__interface_1af48b9f648437c8a3899ee63da217ce42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::Scanner::Python::scan_interface::scan_interface</definition>
+        <argsstring>(bool)</argsstring>
+        <name>scan_interface</name>
+        <qualifiedname>Gambit::Scanner::Python::scan_interface::scan_interface</qualifiedname>
+        <param>
+          <type>bool</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/python/include/interface.hpp" line="59" column="17" bodyfile="ScannerBit/python/src/interface.cpp" bodystart="69" bodyend="85"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Scanner_1_1Python_1_1scan__interface_1a640c433f20af74803a1e300f1e9d008d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type><ref refid="classGambit_1_1Printers_1_1PrinterManager" kindref="compound">Printers::PrinterManager</ref> &amp;</type>
+        <definition>Printers::PrinterManager &amp; Gambit::Scanner::Python::scan_interface::get_printer_manager</definition>
+        <argsstring>() const</argsstring>
+        <name>get_printer_manager</name>
+        <qualifiedname>Gambit::Scanner::Python::scan_interface::get_printer_manager</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/python/include/interface.hpp" line="60" column="42" bodyfile="ScannerBit/python/include/interface.hpp" bodystart="60" bodyend="63"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Scanner_1_1Python_1_1scan__interface_1a1752f7f3da6a362f53135b58c1c56360" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::shared_ptr&lt; <ref refid="classGambit_1_1Scanner_1_1Python_1_1printer__wrapper" kindref="compound">printer_wrapper</ref> &gt;</type>
+        <definition>std::shared_ptr&lt; printer_wrapper &gt; Gambit::Scanner::Python::scan_interface::get_printer</definition>
+        <argsstring>()</argsstring>
+        <name>get_printer</name>
+        <qualifiedname>Gambit::Scanner::Python::scan_interface::get_printer</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/python/include/interface.hpp" line="64" column="33" bodyfile="ScannerBit/python/src/interface.cpp" bodystart="87" bodyend="90"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Scanner_1_1Python_1_1scan__interface_1aefdcc2f13e94fbebdfde4455ab46ebad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Gambit::Scanner::Python::scan_interface::run_scan</definition>
+        <argsstring>(Gambit::IniParser::Parser &amp;, const Gambit::Scanner::Factory_Base *, Gambit::Priors::BasePrior *, bool)</argsstring>
+        <name>run_scan</name>
+        <qualifiedname>Gambit::Scanner::Python::scan_interface::run_scan</qualifiedname>
+        <param>
+          <type><ref refid="classGambit_1_1IniParser_1_1Parser" kindref="compound">Gambit::IniParser::Parser</ref> &amp;</type>
+          <defname>iniFile</defname>
+        </param>
+        <param>
+          <type>const <ref refid="classGambit_1_1Scanner_1_1Factory__Base" kindref="compound">Gambit::Scanner::Factory_Base</ref> *</type>
+          <defname>factory</defname>
+        </param>
+        <param>
+          <type><ref refid="classGambit_1_1Priors_1_1BasePrior" kindref="compound">Gambit::Priors::BasePrior</ref> *</type>
+          <defname>user_prior</defname>
+        </param>
+        <param>
+          <type>bool</type>
+          <defname>resume</defname>
+        </param>
+        <briefdescription>
+<para>Main scan execution program. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Idea by Tom Fogal, for optionally preventing execution of code until debugger allows it Source: <ulink url="http://www.sci.utah.edu/~tfogal/academic/Fogal-ParallelDebugging.pdf">http://www.sci.utah.edu/~tfogal/academic/Fogal-ParallelDebugging.pdf</ulink></para>
+<para>Special catch block for silent shutdown This exception is designed to be thrown during diagnostic mode</para>
+<para>Special catch block for controlled shutdown This exception should only be thrown if it is safe to call MPI_Finalise, as this will occur once we leave the catch block.</para>
+<para>Special catch block for hard shutdown No MPI_Finalise called, nor MPI_Abort. Should only be triggered when all processes are supposed to be trying to shut themselves down quickly, for example if synchronising for soft shutdown fails.</para>
+<para>Shut down due receipt of MPI emergency shutdown message</para>
+        </inbodydescription>
+        <location file="ScannerBit/python/include/interface.hpp" line="65" column="21" bodyfile="ScannerBit/python/src/interface.cpp" bodystart="93" bodyend="384"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Scanner_1_1Python_1_1scan__interface_1a734981a57ce6c489130761e04e027f64" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Gambit::Scanner::Python::scan_interface::run_scan_node</definition>
+        <argsstring>(YAML::Node *, const Gambit::Scanner::Factory_Base *, Gambit::Priors::BasePrior *, bool)</argsstring>
+        <name>run_scan_node</name>
+        <qualifiedname>Gambit::Scanner::Python::scan_interface::run_scan_node</qualifiedname>
+        <param>
+          <type>YAML::Node *</type>
+          <defname>node</defname>
+        </param>
+        <param>
+          <type>const <ref refid="classGambit_1_1Scanner_1_1Factory__Base" kindref="compound">Gambit::Scanner::Factory_Base</ref> *</type>
+          <defname>factory</defname>
+        </param>
+        <param>
+          <type><ref refid="classGambit_1_1Priors_1_1BasePrior" kindref="compound">Gambit::Priors::BasePrior</ref> *</type>
+          <defname>user_prior</defname>
+        </param>
+        <param>
+          <type>bool</type>
+          <defname>resume</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/python/include/interface.hpp" line="66" column="21" bodyfile="ScannerBit/python/src/interface.cpp" bodystart="386" bodyend="392"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Scanner_1_1Python_1_1scan__interface_1a0c44ab15dd26a040c47d6bcac4aeb26d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Gambit::Scanner::Python::scan_interface::run_scan_str</definition>
+        <argsstring>(std::string *, const Gambit::Scanner::Factory_Base *, Gambit::Priors::BasePrior *, bool)</argsstring>
+        <name>run_scan_str</name>
+        <qualifiedname>Gambit::Scanner::Python::scan_interface::run_scan_str</qualifiedname>
+        <param>
+          <type>std::string *</type>
+          <defname>filename</defname>
+        </param>
+        <param>
+          <type>const <ref refid="classGambit_1_1Scanner_1_1Factory__Base" kindref="compound">Gambit::Scanner::Factory_Base</ref> *</type>
+          <defname>factory</defname>
+        </param>
+        <param>
+          <type><ref refid="classGambit_1_1Priors_1_1BasePrior" kindref="compound">Gambit::Priors::BasePrior</ref> *</type>
+          <defname>user_prior</defname>
+        </param>
+        <param>
+          <type>bool</type>
+          <defname>resume</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/python/include/interface.hpp" line="67" column="21" bodyfile="ScannerBit/python/src/interface.cpp" bodystart="395" bodyend="401"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Scanner_1_1Python_1_1scan__interface_1a7a137673c3b903fccb2e2405b8424ada" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::Scanner::Python::scan_interface::~scan_interface</definition>
+        <argsstring>()</argsstring>
+        <name>~scan_interface</name>
+        <qualifiedname>Gambit::Scanner::Python::scan_interface::~scan_interface</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/python/include/interface.hpp" line="68" column="17" bodyfile="ScannerBit/python/include/interface.hpp" bodystart="68" bodyend="68"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ScannerBit/python/include/interface.hpp" line="51" column="13" bodyfile="ScannerBit/python/include/interface.hpp" bodystart="52" bodyend="69"/>
+    <listofallmembers>
+      <member refid="classGambit_1_1Scanner_1_1Python_1_1scan__interface_1a1752f7f3da6a362f53135b58c1c56360" prot="public" virt="non-virtual"><scope>Gambit::Scanner::Python::scan_interface</scope><name>get_printer</name></member>
+      <member refid="classGambit_1_1Scanner_1_1Python_1_1scan__interface_1a640c433f20af74803a1e300f1e9d008d" prot="public" virt="non-virtual"><scope>Gambit::Scanner::Python::scan_interface</scope><name>get_printer_manager</name></member>
+      <member refid="classGambit_1_1Scanner_1_1Python_1_1scan__interface_1ab36a42597dc631b66caf58cefc924b70" prot="private" virt="non-virtual"><scope>Gambit::Scanner::Python::scan_interface</scope><name>global_printer</name></member>
+      <member refid="classGambit_1_1Scanner_1_1Python_1_1scan__interface_1aefdcc2f13e94fbebdfde4455ab46ebad" prot="public" virt="non-virtual"><scope>Gambit::Scanner::Python::scan_interface</scope><name>run_scan</name></member>
+      <member refid="classGambit_1_1Scanner_1_1Python_1_1scan__interface_1a734981a57ce6c489130761e04e027f64" prot="public" virt="non-virtual"><scope>Gambit::Scanner::Python::scan_interface</scope><name>run_scan_node</name></member>
+      <member refid="classGambit_1_1Scanner_1_1Python_1_1scan__interface_1a0c44ab15dd26a040c47d6bcac4aeb26d" prot="public" virt="non-virtual"><scope>Gambit::Scanner::Python::scan_interface</scope><name>run_scan_str</name></member>
+      <member refid="classGambit_1_1Scanner_1_1Python_1_1scan__interface_1af48b9f648437c8a3899ee63da217ce42" prot="public" virt="non-virtual"><scope>Gambit::Scanner::Python::scan_interface</scope><name>scan_interface</name></member>
+      <member refid="classGambit_1_1Scanner_1_1Python_1_1scan__interface_1a7a137673c3b903fccb2e2405b8424ada" prot="public" virt="non-virtual"><scope>Gambit::Scanner::Python::scan_interface</scope><name>~scan_interface</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

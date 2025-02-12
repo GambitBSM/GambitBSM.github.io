@@ -1,11 +1,11 @@
 ---
-title: "file Pythia_8_212/abstract_Vec4.h"
+title: "file Pythia_8_312/abstract_Vec4.h"
 
 description: "[No description available]"
 
 ---
 
-# file Pythia_8_212/abstract_Vec4.h
+# file Pythia_8_312/abstract_Vec4.h
 
 [No description available]
 
@@ -34,8 +34,8 @@ namespace CAT_3(
 ## Source code
 
 ```
-#ifndef __abstract_Vec4_Pythia_8_212_h__
-#define __abstract_Vec4_Pythia_8_212_h__
+#ifndef __abstract_Vec4_Pythia_8_312_h__
+#define __abstract_Vec4_Pythia_8_312_h__
 
 #include <cstddef>
 #include <iostream>
@@ -139,7 +139,9 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
     
                 virtual void bstback__BOSS(const Pythia8::Abstract_Vec4&, double) =0;
     
-                virtual Pythia8::Abstract_Vec4* operator_minus__BOSS() =0;
+                virtual double eInFrame__BOSS(const Pythia8::Abstract_Vec4&) const =0;
+    
+                virtual Pythia8::Abstract_Vec4* operator_minus__BOSS() const =0;
     
                 virtual Pythia8::Abstract_Vec4& operator_plus_equal__BOSS(const Pythia8::Abstract_Vec4&) =0;
     
@@ -148,6 +150,16 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
                 virtual Pythia8::Abstract_Vec4& operator_asterix_equal__BOSS(double) =0;
     
                 virtual Pythia8::Abstract_Vec4& operator_slash_equal__BOSS(double) =0;
+    
+                virtual Pythia8::Abstract_Vec4* operator_plus__BOSS(const Pythia8::Abstract_Vec4&) const =0;
+    
+                virtual Pythia8::Abstract_Vec4* operator_minus__BOSS(const Pythia8::Abstract_Vec4&) const =0;
+    
+                virtual Pythia8::Abstract_Vec4* operator_asterix__BOSS(double) const =0;
+    
+                virtual Pythia8::Abstract_Vec4* operator_slash__BOSS(double) const =0;
+    
+                virtual double operator_asterix__BOSS(const Pythia8::Abstract_Vec4&) const =0;
     
             public:
                 virtual void pointer_assign__BOSS(Abstract_Vec4*) =0;
@@ -201,10 +213,10 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 #include "gambit/Backends/backend_undefs.hpp"
 
 
-#endif /* __abstract_Vec4_Pythia_8_212_h__ */
+#endif /* __abstract_Vec4_Pythia_8_312_h__ */
 ```
 
 
 -------------------------------
 
-Updated on 2024-07-18 at 13:53:35 +0000
+Updated on 2025-02-12 at 15:36:43 +0000

@@ -13,7 +13,7 @@ Inifile parser base class.
 
 `#include <yaml_parser_base.hpp>`
 
-Inherited by [Gambit::IniParser::IniFile](/documentation/code/classes/classgambit_1_1iniparser_1_1inifile/)
+Inherited by [Gambit::IniParser::IniFile](/documentation/code/classes/classgambit_1_1iniparser_1_1inifile/), [Gambit::Scanner::Python::IniFileParser](/documentation/code/classes/classgambit_1_1scanner_1_1python_1_1inifileparser/)
 
 ## Public Functions
 
@@ -244,4 +244,4 @@ Print a yaml node to file.
 
 -------------------------------
 
-Updated on 2024-07-18 at 13:53:31 +0000
+Updated on 2025-02-12 at 15:36:39 +0000

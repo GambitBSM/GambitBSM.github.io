@@ -1,11 +1,11 @@
 ---
-title: "file Pythia_8_212/wrapper_Rndm_def.h"
+title: "file Pythia_8_312/wrapper_Rndm_def.h"
 
 description: "[No description available]"
 
 ---
 
-# file Pythia_8_212/wrapper_Rndm_def.h
+# file Pythia_8_312/wrapper_Rndm_def.h
 
 [No description available]
 
@@ -34,8 +34,8 @@ namespace CAT_3(
 ## Source code
 
 ```
-#ifndef __wrapper_Rndm_def_Pythia_8_212_h__
-#define __wrapper_Rndm_def_Pythia_8_212_h__
+#ifndef __wrapper_Rndm_def_Pythia_8_312_h__
+#define __wrapper_Rndm_def_Pythia_8_312_h__
 
 #include <utility>
 #include <vector>
@@ -85,6 +85,11 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             return get_BEptr()->gauss2();
         }
         
+        inline double Rndm::gamma(double k0, double r0)
+        {
+            return get_BEptr()->gamma(k0, r0);
+        }
+        
         inline int Rndm::pick(const std::vector<double>& prob)
         {
             return get_BEptr()->pick(prob);
@@ -103,14 +108,16 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         
         // Wrappers for original constructors: 
         inline Rndm::Rndm() :
-            WrapperBase(__factory0())
+            WrapperBase(__factory0()),
+            DEFAULTSEED( get_BEptr()->DEFAULTSEED_ref__BOSS())
         {
             get_BEptr()->set_wptr(this);
             get_BEptr()->set_delete_wrapper(false);
         }
         
         inline Rndm::Rndm(int seedIn) :
-            WrapperBase(__factory1(seedIn))
+            WrapperBase(__factory1(seedIn)),
+            DEFAULTSEED( get_BEptr()->DEFAULTSEED_ref__BOSS())
         {
             get_BEptr()->set_wptr(this);
             get_BEptr()->set_delete_wrapper(false);
@@ -118,7 +125,8 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         
         // Special pointer-based constructor: 
         inline Rndm::Rndm(Abstract_Rndm* in) :
-            WrapperBase(in)
+            WrapperBase(in),
+            DEFAULTSEED( get_BEptr()->DEFAULTSEED_ref__BOSS())
         {
             get_BEptr()->set_wptr(this);
             get_BEptr()->set_delete_wrapper(false);
@@ -126,7 +134,8 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         
         // Copy constructor: 
         inline Rndm::Rndm(const Rndm& in) :
-            WrapperBase(in.get_BEptr()->pointer_copy__BOSS())
+            WrapperBase(in.get_BEptr()->pointer_copy__BOSS()),
+            DEFAULTSEED( get_BEptr()->DEFAULTSEED_ref__BOSS())
         {
             get_BEptr()->set_wptr(this);
             get_BEptr()->set_delete_wrapper(false);
@@ -170,10 +179,10 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 #include "gambit/Backends/backend_undefs.hpp"
 
-#endif /* __wrapper_Rndm_def_Pythia_8_212_h__ */
+#endif /* __wrapper_Rndm_def_Pythia_8_312_h__ */
 ```
 
 
 -------------------------------
 
-Updated on 2024-07-18 at 13:53:35 +0000
+Updated on 2025-02-12 at 15:36:43 +0000

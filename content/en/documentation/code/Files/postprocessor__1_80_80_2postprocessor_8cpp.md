@@ -266,6 +266,7 @@ scanner_plugin(postprocessor, version(1, 0, 0))
     settings.all_params.insert("unitCubeParameters"); // It would be better to keep the originals here, but currently cannot turn off the printing from within like_ptr.
     settings.all_params.insert("MPIrank"); // These should be re-printed the same as they were anyway
     settings.all_params.insert("pointID");
+    settings.all_params.insert("scanID");
     settings.all_params.insert(settings.logl_purpose_name); // If there is a name clash and the run was not aborted, we are to discard the old data under this name.
     settings.all_params.insert("Modified" + settings.logl_purpose_name);
     settings.all_params.insert(settings.reweighted_loglike_name); //   "  "
@@ -433,4 +434,4 @@ scanner_plugin(postprocessor, version(1, 0, 0))
 
 -------------------------------
 
-Updated on 2024-07-18 at 13:53:33 +0000
+Updated on 2025-02-12 at 15:36:40 +0000

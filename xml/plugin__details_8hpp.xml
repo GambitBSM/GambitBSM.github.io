@@ -26,29 +26,29 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="14">
+      <node id="15">
         <label>container_factory.hpp</label>
         <link refid="container__factory_8hpp"/>
-        <childnode refid="15" relation="include">
-        </childnode>
-      </node>
-      <node id="17">
-        <label>gambit.hpp</label>
-        <link refid="gambit_8hpp"/>
-        <childnode refid="18" relation="include">
-        </childnode>
-      </node>
-      <node id="15">
-        <label>likelihood_container.hpp</label>
-        <link refid="likelihood__container_8hpp"/>
         <childnode refid="16" relation="include">
         </childnode>
-        <childnode refid="17" relation="include">
-        </childnode>
+      </node>
+      <node id="18">
+        <label>gambit.hpp</label>
+        <link refid="gambit_8hpp"/>
         <childnode refid="19" relation="include">
         </childnode>
       </node>
       <node id="16">
+        <label>likelihood_container.hpp</label>
+        <link refid="likelihood__container_8hpp"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="17">
         <label>container_factory.cpp</label>
         <link refid="container__factory_8cpp"/>
       </node>
@@ -58,13 +58,13 @@
       </node>
       <node id="9">
         <label>diagnostics.cpp</label>
-        <link refid="diagnostics_8cpp"/>
+        <link refid="Core_2src_2diagnostics_8cpp"/>
       </node>
-      <node id="18">
+      <node id="19">
         <label>gambit.cpp</label>
         <link refid="gambit_8cpp"/>
       </node>
-      <node id="19">
+      <node id="20">
         <label>likelihood_container.cpp</label>
         <link refid="likelihood__container_8cpp"/>
       </node>
@@ -79,17 +79,19 @@
         </childnode>
         <childnode refid="13" relation="include">
         </childnode>
-        <childnode refid="21" relation="include">
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
         </childnode>
       </node>
-      <node id="56">
+      <node id="67">
         <label>objective_plugin.hpp</label>
         <link refid="objective__plugin_8hpp"/>
-        <childnode refid="57" relation="include">
+        <childnode refid="68" relation="include">
         </childnode>
-        <childnode refid="43" relation="include">
+        <childnode refid="54" relation="include">
         </childnode>
-        <childnode refid="44" relation="include">
+        <childnode refid="55" relation="include">
         </childnode>
       </node>
       <node id="3">
@@ -100,12 +102,12 @@
         <childnode refid="5" relation="include">
         </childnode>
       </node>
-      <node id="55">
+      <node id="66">
         <label>plugin_defs.hpp</label>
         <link refid="plugin__defs_8hpp"/>
-        <childnode refid="56" relation="include">
+        <childnode refid="67" relation="include">
         </childnode>
-        <childnode refid="21" relation="include">
+        <childnode refid="22" relation="include">
         </childnode>
       </node>
       <node id="1">
@@ -119,7 +121,7 @@
         </childnode>
         <childnode refid="7" relation="include">
         </childnode>
-        <childnode refid="60" relation="include">
+        <childnode refid="71" relation="include">
         </childnode>
       </node>
       <node id="11">
@@ -128,16 +130,18 @@
         <childnode refid="12" relation="include">
         </childnode>
       </node>
-      <node id="58">
+      <node id="69">
         <label>plugin_interface.hpp</label>
         <link refid="plugin__interface_8hpp"/>
-        <childnode refid="59" relation="include">
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
         </childnode>
         <childnode refid="11" relation="include">
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
-        <childnode refid="53" relation="include">
+        <childnode refid="64" relation="include">
         </childnode>
       </node>
       <node id="7">
@@ -151,71 +155,61 @@
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
-        <childnode refid="55" relation="include">
+        <childnode refid="66" relation="include">
         </childnode>
-        <childnode refid="58" relation="include">
+        <childnode refid="69" relation="include">
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="21" relation="include">
+        <childnode refid="22" relation="include">
         </childnode>
       </node>
-      <node id="60">
+      <node id="71">
         <label>plugin_macros.hpp</label>
         <link refid="plugin__macros_8hpp"/>
-        <childnode refid="56" relation="include">
+        <childnode refid="67" relation="include">
         </childnode>
-        <childnode refid="21" relation="include">
+        <childnode refid="22" relation="include">
         </childnode>
       </node>
-      <node id="59">
+      <node id="70">
         <label>plugin.hpp</label>
         <link refid="plugin_8hpp"/>
       </node>
-      <node id="13">
+      <node id="14">
         <label>scan.hpp</label>
         <link refid="scan_8hpp"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="14" relation="include">
+        <childnode refid="15" relation="include">
         </childnode>
         <childnode refid="11" relation="include">
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
-        <childnode refid="20" relation="include">
+        <childnode refid="21" relation="include">
         </childnode>
       </node>
-      <node id="21">
+      <node id="22">
         <label>scanner_plugin.hpp</label>
         <link refid="scanner__plugin_8hpp"/>
-        <childnode refid="22" relation="include">
+        <childnode refid="23" relation="include">
         </childnode>
         <childnode refid="24" relation="include">
         </childnode>
-        <childnode refid="26" relation="include">
+        <childnode refid="25" relation="include">
         </childnode>
-        <childnode refid="28" relation="include">
+        <childnode refid="27" relation="include">
         </childnode>
-        <childnode refid="30" relation="include">
+        <childnode refid="29" relation="include">
         </childnode>
         <childnode refid="31" relation="include">
         </childnode>
-        <childnode refid="32" relation="include">
-        </childnode>
         <childnode refid="33" relation="include">
-        </childnode>
-        <childnode refid="34" relation="include">
         </childnode>
         <childnode refid="35" relation="include">
         </childnode>
         <childnode refid="36" relation="include">
-        </childnode>
-        <childnode refid="37" relation="include">
-        </childnode>
-        <childnode refid="38" relation="include">
-        </childnode>
-        <childnode refid="39" relation="include">
         </childnode>
         <childnode refid="40" relation="include">
         </childnode>
@@ -229,7 +223,11 @@
         </childnode>
         <childnode refid="45" relation="include">
         </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
         <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
         </childnode>
         <childnode refid="49" relation="include">
         </childnode>
@@ -243,96 +241,148 @@
         </childnode>
         <childnode refid="54" relation="include">
         </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
       </node>
-      <node id="20">
+      <node id="21">
         <label>scannerbit.hpp</label>
         <link refid="scannerbit_8hpp"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="17" relation="include">
-        </childnode>
-      </node>
-      <node id="26">
-        <label>diver.hpp</label>
-        <link refid="1_80_80_2diver_8hpp"/>
-        <childnode refid="27" relation="include">
-        </childnode>
-      </node>
-      <node id="22">
-        <label>diver.hpp</label>
-        <link refid="1_80_82_2diver_8hpp"/>
-        <childnode refid="23" relation="include">
+        <childnode refid="18" relation="include">
         </childnode>
       </node>
       <node id="24">
-        <label>diver.hpp</label>
-        <link refid="1_80_84_2diver_8hpp"/>
-        <childnode refid="25" relation="include">
+        <label>ais.hpp</label>
+        <link refid="ais_8hpp"/>
+        <childnode refid="23" relation="include">
         </childnode>
       </node>
-      <node id="28">
+      <node id="25">
+        <label>diver.hpp</label>
+        <link refid="diver__1_80_80_2diver_8hpp"/>
+        <childnode refid="26" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>diver.hpp</label>
+        <link refid="diver__1_80_82_2diver_8hpp"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+      </node>
+      <node id="29">
+        <label>diver.hpp</label>
+        <link refid="diver__1_80_84_2diver_8hpp"/>
+        <childnode refid="30" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>diver.hpp</label>
+        <link refid="diver__1_80_85_2diver_8hpp"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="33">
         <label>great.hpp</label>
         <link refid="great_8hpp"/>
-        <childnode refid="29" relation="include">
-        </childnode>
-      </node>
-      <node id="32">
-        <label>minuit2.hpp</label>
-        <link refid="minuit2_8hpp"/>
-        <childnode refid="31" relation="include">
-        </childnode>
-      </node>
-      <node id="36">
-        <label>multinest.hpp</label>
-        <link refid="multinest_8hpp"/>
-        <childnode refid="33" relation="include">
-        </childnode>
-        <childnode refid="35" relation="include">
-        </childnode>
         <childnode refid="34" relation="include">
         </childnode>
       </node>
-      <node id="42">
-        <label>polychord.hpp</label>
-        <link refid="1_817_81_2polychord_8hpp"/>
+      <node id="36">
+        <label>jswarm.hpp</label>
+        <link refid="jswarm_8hpp"/>
         <childnode refid="37" relation="include">
         </childnode>
-      </node>
-      <node id="41">
-        <label>polychord.hpp</label>
-        <link refid="1_818_82_2polychord_8hpp"/>
         <childnode refid="38" relation="include">
         </childnode>
-      </node>
-      <node id="40">
-        <label>polychord.hpp</label>
-        <link refid="1_820_81_2polychord_8hpp"/>
         <childnode refid="39" relation="include">
         </childnode>
       </node>
-      <node id="47">
-        <label>postprocessor.hpp</label>
-        <link refid="postprocessor__1_80_80_2postprocessor_8hpp"/>
-        <childnode refid="43" relation="include">
+      <node id="41">
+        <label>minuit2.hpp</label>
+        <link refid="minuit2_8hpp"/>
+        <childnode refid="40" relation="include">
         </childnode>
-        <childnode refid="48" relation="include">
+      </node>
+      <node id="47">
+        <label>multinest.hpp</label>
+        <link refid="multinest_2multinest_8hpp"/>
+        <childnode refid="42" relation="include">
+        </childnode>
+      </node>
+      <node id="46">
+        <label>multinest.hpp</label>
+        <link refid="multinest__3_810_2multinest_8hpp"/>
+        <childnode refid="43" relation="include">
         </childnode>
       </node>
       <node id="45">
-        <label>postprocessor.hpp</label>
-        <link refid="postprocessor__2_80_80_2postprocessor_8hpp"/>
+        <label>multinest.hpp</label>
+        <link refid="multinest__3_811_2multinest_8hpp"/>
         <childnode refid="44" relation="include">
         </childnode>
-        <childnode refid="46" relation="include">
+      </node>
+      <node id="51">
+        <label>polychord.hpp</label>
+        <link refid="1_817_81_2polychord_8hpp"/>
+        <childnode refid="50" relation="include">
         </childnode>
       </node>
-      <node id="54">
+      <node id="53">
+        <label>polychord.hpp</label>
+        <link refid="1_818_82_2polychord_8hpp"/>
+        <childnode refid="49" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
+        <label>polychord.hpp</label>
+        <link refid="1_820_81_2polychord_8hpp"/>
+        <childnode refid="48" relation="include">
+        </childnode>
+      </node>
+      <node id="58">
+        <label>postprocessor.hpp</label>
+        <link refid="postprocessor__1_80_80_2postprocessor_8hpp"/>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>postprocessor.hpp</label>
+        <link refid="postprocessor__2_80_80_2postprocessor_8hpp"/>
+        <childnode refid="55" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+      </node>
+      <node id="65">
         <label>twalk.hpp</label>
         <link refid="twalk_8hpp"/>
-        <childnode refid="53" relation="include">
+        <childnode refid="64" relation="include">
         </childnode>
       </node>
-      <node id="57">
+      <node id="13">
+        <label>python.hpp</label>
+        <link refid="python_8hpp_source"/>
+      </node>
+      <node id="68">
         <label>examples.cpp</label>
         <link refid="examples_8cpp"/>
       </node>
@@ -352,87 +402,107 @@
         <label>scan.cpp</label>
         <link refid="scan_8cpp"/>
       </node>
-      <node id="27">
+      <node id="23">
+        <label>ais.cpp</label>
+        <link refid="ais_8cpp"/>
+      </node>
+      <node id="26">
         <label>diver.cpp</label>
         <link refid="diver__1_80_80_2diver_8cpp"/>
       </node>
-      <node id="23">
+      <node id="32">
         <label>diver.cpp</label>
         <link refid="diver__1_80_82_2diver_8cpp"/>
       </node>
-      <node id="25">
+      <node id="30">
         <label>diver.cpp</label>
         <link refid="diver__1_80_84_2diver_8cpp"/>
       </node>
-      <node id="29">
+      <node id="28">
+        <label>diver.cpp</label>
+        <link refid="diver__1_80_85_2diver_8cpp"/>
+      </node>
+      <node id="34">
         <label>great.cpp</label>
         <link refid="great_8cpp"/>
       </node>
-      <node id="31">
+      <node id="37">
+        <label>jswarm.cpp</label>
+        <link refid="jswarm_8cpp"/>
+      </node>
+      <node id="38">
+        <label>particle.cpp</label>
+        <link refid="particle_8cpp"/>
+      </node>
+      <node id="39">
+        <label>particle_swarm.cpp</label>
+        <link refid="particle__swarm_8cpp"/>
+      </node>
+      <node id="40">
         <label>minuit2.cpp</label>
         <link refid="minuit2_8cpp"/>
       </node>
-      <node id="33">
+      <node id="43">
         <label>multinest.cpp</label>
         <link refid="multinest__3_810_2multinest_8cpp"/>
       </node>
-      <node id="35">
+      <node id="44">
         <label>multinest.cpp</label>
         <link refid="multinest__3_811_2multinest_8cpp"/>
       </node>
-      <node id="34">
+      <node id="42">
         <label>multinest.cpp</label>
         <link refid="multinest__3_812_2multinest_8cpp"/>
       </node>
-      <node id="37">
+      <node id="50">
         <label>polychord.cpp</label>
         <link refid="polychord__1_817_81_2polychord_8cpp"/>
       </node>
-      <node id="38">
+      <node id="49">
         <label>polychord.cpp</label>
         <link refid="polychord__1_818_82_2polychord_8cpp"/>
       </node>
-      <node id="39">
+      <node id="48">
         <label>polychord.cpp</label>
         <link refid="polychord__1_820_81_2polychord_8cpp"/>
       </node>
-      <node id="43">
+      <node id="54">
         <label>postprocessor.cpp</label>
         <link refid="postprocessor__1_80_80_2postprocessor_8cpp"/>
       </node>
-      <node id="48">
+      <node id="59">
         <label>postprocessor_object.cpp</label>
         <link refid="postprocessor__1_80_80_2postprocessor__object_8cpp"/>
       </node>
-      <node id="44">
+      <node id="55">
         <label>postprocessor.cpp</label>
         <link refid="postprocessor__2_80_80_2postprocessor_8cpp"/>
       </node>
-      <node id="46">
+      <node id="57">
         <label>postprocessor_object.cpp</label>
         <link refid="postprocessor__2_80_80_2postprocessor__object_8cpp"/>
       </node>
-      <node id="30">
+      <node id="35">
         <label>grid.cpp</label>
         <link refid="grid_8cpp"/>
       </node>
-      <node id="49">
+      <node id="60">
         <label>random.cpp</label>
         <link refid="random_8cpp"/>
       </node>
-      <node id="50">
+      <node id="61">
         <label>raster.cpp</label>
         <link refid="raster_8cpp"/>
       </node>
-      <node id="51">
+      <node id="62">
         <label>square_grid.cpp</label>
         <link refid="square__grid_8cpp"/>
       </node>
-      <node id="52">
+      <node id="63">
         <label>toy_mcmc.cpp</label>
         <link refid="toy__mcmc_8cpp"/>
       </node>
-      <node id="53">
+      <node id="64">
         <label>twalk.cpp</label>
         <link refid="twalk_8cpp"/>
       </node>
@@ -573,44 +643,32 @@
 <codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1Scanner_1_1Plugins_1_1Plugin__Details__Ref" kindref="compound">Plugin_Details_Ref</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1Scanner_1_1Plugins_1_1Plugin__Details" kindref="compound">Plugin_Details</ref><sp/>&amp;details)<sp/>:<sp/>details(&amp;details)<sp/>{}</highlight></codeline>
 <codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1Scanner_1_1Plugins_1_1Plugin__Details__Ref" kindref="compound">Plugin_Details_Ref</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Scanner_1_1Plugins_1_1Plugin__Details__Ref" kindref="compound">Plugin_Details_Ref</ref><sp/>&amp;details)<sp/>:<sp/>details(details.details)<sp/>{}</highlight></codeline>
 <codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//const<sp/>Plugin_Details_Ref<sp/>&amp;operator<sp/>=<sp/>(const<sp/>Plugin_Details<sp/>&amp;details_in)<sp/>const</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//{</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>details<sp/>=<sp/>&amp;details_in;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>return<sp/>*this;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Scanner_1_1Plugins_1_1Plugin__Details__Ref" kindref="compound">Plugin_Details_Ref</ref><sp/>&amp;operator<sp/>=<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Scanner_1_1Plugins_1_1Plugin__Details__Ref" kindref="compound">Plugin_Details_Ref</ref><sp/>&amp;details_in)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
+<codeline lineno="124"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>details<sp/>=<sp/>details_in.details;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Scanner_1_1Plugins_1_1Plugin__Details__Ref" kindref="compound">Plugin_Details_Ref</ref><sp/>&amp;operator<sp/>=<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Scanner_1_1Plugins_1_1Plugin__Details__Ref" kindref="compound">Plugin_Details_Ref</ref><sp/>&amp;details_in)</highlight><highlight class="keyword"><sp/>const</highlight></codeline>
-<codeline lineno="130"><highlight class="keyword"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1Scanner_1_1Plugins_1_1Plugin__Details__Ref" kindref="compound">Plugin_Details_Ref</ref><sp/>&amp;operator<sp/>=<sp/>(<ref refid="classGambit_1_1Scanner_1_1Plugins_1_1Plugin__Details__Ref" kindref="compound">Plugin_Details_Ref</ref><sp/>&amp;details_in)</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>details<sp/>=<sp/>details_in.details;</highlight></codeline>
 <codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Plugin_Details_Ref<sp/>&amp;operator<sp/>=<sp/>(Plugin_Details<sp/>&amp;details_in)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//{</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>details<sp/>=<sp/>&amp;details_in;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/>return<sp/>*this;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//}</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1Scanner_1_1Plugins_1_1Plugin__Details__Ref" kindref="compound">Plugin_Details_Ref</ref><sp/>&amp;operator<sp/>=<sp/>(<ref refid="classGambit_1_1Scanner_1_1Plugins_1_1Plugin__Details__Ref" kindref="compound">Plugin_Details_Ref</ref><sp/>&amp;details_in)</highlight></codeline>
-<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>details<sp/>=<sp/>details_in.details;</highlight></codeline>
-<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">operator</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1Scanner_1_1Plugins_1_1Plugin__Details" kindref="compound">Plugin_Details</ref><sp/>&amp;(){</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*(<ref refid="structGambit_1_1Scanner_1_1Plugins_1_1Plugin__Details" kindref="compound">Plugin_Details</ref><sp/>*)details;}</highlight></codeline>
-<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">operator</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1Scanner_1_1Plugins_1_1Plugin__Details" kindref="compound">Plugin_Details</ref><sp/>&amp;()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*details;}</highlight></codeline>
-<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="151"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///compares<sp/>the<sp/>user<sp/>defined<sp/>plugin<sp/>version<sp/>to<sp/>the<sp/>actual<sp/>plugin<sp/>version.</highlight></codeline>
-<codeline lineno="152"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="plugin__details_8hpp_1ae82b372a4d43bc016476b5af384e57d0" kindref="member">Plugin_Version_Supersedes</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1Scanner_1_1Plugins_1_1Plugin__Details" kindref="compound">Plugin_Details</ref><sp/>&amp;plug1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1Scanner_1_1Plugins_1_1Plugin__Details" kindref="compound">Plugin_Details</ref><sp/>&amp;plug2);</highlight></codeline>
-<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="158"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="159"><highlight class="normal"></highlight></codeline>
-<codeline lineno="160"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">operator</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1Scanner_1_1Plugins_1_1Plugin__Details" kindref="compound">Plugin_Details</ref><sp/>&amp;(){</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*(<ref refid="structGambit_1_1Scanner_1_1Plugins_1_1Plugin__Details" kindref="compound">Plugin_Details</ref><sp/>*)details;}</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">operator</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1Scanner_1_1Plugins_1_1Plugin__Details" kindref="compound">Plugin_Details</ref><sp/>&amp;()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>{</highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>*details;}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="139"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///compares<sp/>the<sp/>user<sp/>defined<sp/>plugin<sp/>version<sp/>to<sp/>the<sp/>actual<sp/>plugin<sp/>version.</highlight></codeline>
+<codeline lineno="140"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="plugin__details_8hpp_1ae82b372a4d43bc016476b5af384e57d0" kindref="member">Plugin_Version_Supersedes</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1Scanner_1_1Plugins_1_1Plugin__Details" kindref="compound">Plugin_Details</ref><sp/>&amp;plug1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1Scanner_1_1Plugins_1_1Plugin__Details" kindref="compound">Plugin_Details</ref><sp/>&amp;plug2);</highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="146"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
     <location file="ScannerBit/include/gambit/ScannerBit/plugin_details.hpp"/>
   </compounddef>

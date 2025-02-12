@@ -1,11 +1,11 @@
 ---
-title: "file Pythia_8_212/wrapper_CoupSUSY.h"
+title: "file Pythia_8_312/wrapper_CoupSUSY.h"
 
 description: "[No description available]"
 
 ---
 
-# file Pythia_8_212/wrapper_CoupSUSY.h
+# file Pythia_8_312/wrapper_CoupSUSY.h
 
 [No description available]
 
@@ -15,18 +15,18 @@ description: "[No description available]"
 ## Source code
 
 ```
-#ifndef __wrapper_CoupSUSY_Pythia_8_212_h__
-#define __wrapper_CoupSUSY_Pythia_8_212_h__
+#ifndef __wrapper_CoupSUSY_Pythia_8_312_h__
+#define __wrapper_CoupSUSY_Pythia_8_312_h__
 
 
 #include "wrapper_CoupSUSY_decl.h"
 #include "wrapper_CoupSUSY_def.h"
 
 
-#endif /* __wrapper_CoupSUSY_Pythia_8_212_h__ */
+#endif /* __wrapper_CoupSUSY_Pythia_8_312_h__ */
 ```
 
 
 -------------------------------
 
-Updated on 2024-07-18 at 13:53:35 +0000
+Updated on 2025-02-12 at 15:36:43 +0000

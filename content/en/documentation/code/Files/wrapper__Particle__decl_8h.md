@@ -1,11 +1,11 @@
 ---
-title: "file Pythia_8_212/wrapper_Particle_decl.h"
+title: "file Pythia_8_312/wrapper_Particle_decl.h"
 
 description: "[No description available]"
 
 ---
 
-# file Pythia_8_212/wrapper_Particle_decl.h
+# file Pythia_8_312/wrapper_Particle_decl.h
 
 [No description available]
 
@@ -34,8 +34,8 @@ namespace CAT_3(
 ## Source code
 
 ```
-#ifndef __wrapper_Particle_decl_Pythia_8_212_h__
-#define __wrapper_Particle_decl_Pythia_8_212_h__
+#ifndef __wrapper_Particle_decl_Pythia_8_312_h__
+#define __wrapper_Particle_decl_Pythia_8_312_h__
 
 #include <cstddef>
 #include <vector>
@@ -85,10 +85,6 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
                 // Member functions: 
             public:
                 void setEvtPtr(Pythia8::Event* evtPtrIn);
-        
-                void setPDEPtr(Pythia8::ParticleDataEntry* pdePtrIn);
-        
-                void setPDEPtr();
         
                 void id(int idIn);
         
@@ -160,6 +156,8 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         
                 void tProd(double tProdIn);
         
+                void vProdAdd(Pythia8::Vec4 vProdIn);
+        
                 void tau(double tauIn);
         
                 int id() const;
@@ -214,6 +212,8 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         
                 bool isFinal() const;
         
+                int intPol() const;
+        
                 bool isRescatteredIncoming() const;
         
                 double m2() const;
@@ -254,6 +254,8 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         
                 double eta() const;
         
+                double y(double mCut) const;
+        
                 Pythia8::Vec4 vDec() const;
         
                 double xDec() const;
@@ -282,6 +284,8 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         
                 ::std::vector<int> daughterList() const;
         
+                ::std::vector<int> daughterListRecursive() const;
+        
                 ::std::vector<int> sisterList(bool traceTopBot) const;
         
                 ::std::vector<int> sisterList() const;
@@ -293,6 +297,16 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
                 bool isFinalPartonLevel() const;
         
                 bool undoDecay();
+        
+                int colHV() const;
+        
+                int acolHV() const;
+        
+                void colHV(int colHVin);
+        
+                void acolHV(int acolHVin);
+        
+                void colsHV(int colHVin, int acolHVin);
         
                 ::std::string name() const;
         
@@ -347,6 +361,8 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
                 bool isParton() const;
         
                 bool isHadron() const;
+        
+                bool isExotic() const;
         
                 Pythia8::ParticleDataEntry& particleDataEntry() const;
         
@@ -421,10 +437,10 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 #include "gambit/Backends/backend_undefs.hpp"
 
-#endif /* __wrapper_Particle_decl_Pythia_8_212_h__ */
+#endif /* __wrapper_Particle_decl_Pythia_8_312_h__ */
 ```
 
 
 -------------------------------
 
-Updated on 2024-07-18 at 13:53:35 +0000
+Updated on 2025-02-12 at 15:36:43 +0000

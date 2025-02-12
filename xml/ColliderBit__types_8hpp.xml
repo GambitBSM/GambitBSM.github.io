@@ -1200,19 +1200,21 @@
         </childnode>
         <childnode refid="27" relation="include">
         </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
       </node>
       <node id="1">
         <label>ColliderBit_types.hpp</label>
         <link refid="ColliderBit__types_8hpp"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="28" relation="include">
+        <childnode refid="29" relation="include">
         </childnode>
       </node>
-      <node id="28">
+      <node id="29">
         <label>complete_process_PID_pair_multimaps.hpp</label>
         <link refid="complete__process__PID__pair__multimaps_8hpp"/>
-        <childnode refid="29" relation="include">
+        <childnode refid="30" relation="include">
         </childnode>
         <childnode refid="22" relation="include">
         </childnode>
@@ -1267,6 +1269,10 @@
         <label>LHC_likelihoods.cpp</label>
         <link refid="LHC__likelihoods_8cpp"/>
       </node>
+      <node id="27">
+        <label>PoissonCalculators.cpp</label>
+        <link refid="PoissonCalculators_8cpp"/>
+      </node>
       <node id="11">
         <label>Utils.cpp</label>
         <link refid="Utils_8cpp"/>
@@ -1275,7 +1281,7 @@
         <label>collider_event_weights.cpp</label>
         <link refid="collider__event__weights_8cpp"/>
       </node>
-      <node id="29">
+      <node id="30">
         <label>complete_process_PID_pair_multimaps.cpp</label>
         <link refid="complete__process__PID__pair__multimaps_8cpp"/>
       </node>
@@ -1303,7 +1309,7 @@
         <label>getxsec.cpp</label>
         <link refid="getxsec_8cpp"/>
       </node>
-      <node id="27">
+      <node id="28">
         <label>lep_mssm_xsecs.cpp</label>
         <link refid="lep__mssm__xsecs_8cpp"/>
       </node>
@@ -1463,19 +1469,22 @@
 <codeline lineno="102"><highlight class="normal"></highlight></codeline>
 <codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::map&lt;int,xsec_container&gt;<sp/>map_int_xsec;</highlight></codeline>
 <codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::map&lt;int,process_xsec_container&gt;<sp/>map_int_process_xsec;</highlight></codeline>
-<codeline lineno="105"><highlight class="normal"></highlight></codeline>
-<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::map&lt;std::pair&lt;int,int&gt;,<ref refid="classGambit_1_1ColliderBit_1_1PID__pair__xsec__container" kindref="compound">PID_pair_xsec_container</ref>&gt;<sp/>map_iipair_PID_pair_xsec;</highlight></codeline>
-<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::map&lt;PID_pair,PID_pair_xsec_container&gt;<sp/>map_PID_pair_PID_pair_xsec;</highlight></codeline>
-<codeline lineno="108"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="109"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>@brief<sp/>Typedef<sp/>for<sp/>a<sp/>std::function<sp/>that<sp/>sets<sp/>the<sp/>weight<sp/>for<sp/>the<sp/>input<sp/>HEPUtils::Event</highlight></codeline>
-<codeline lineno="110" refid="ColliderBit__types_8hpp_1a22df7e72f7ba90d0967c644528b0e54c" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>HEPUtils::Event<sp/><ref refid="ColliderBit__types_8hpp_1a22df7e72f7ba90d0967c644528b0e54c" kindref="member">HEPUtils_Event</ref>;<sp/><sp/></highlight><highlight class="comment">//<sp/>Extra<sp/>typedef<sp/>to<sp/>avoid<sp/>macro<sp/>problem<sp/>with<sp/>namespaces</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::function&lt;void(<ref refid="ColliderBit__types_8hpp_1a22df7e72f7ba90d0967c644528b0e54c" kindref="member">HEPUtils_Event</ref>&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1ColliderBit_1_1BaseCollider" kindref="compound">BaseCollider</ref>*)&gt;<sp/>EventWeighterFunctionType;</highlight></codeline>
-<codeline lineno="112"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
-<codeline lineno="113"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="114"><highlight class="normal"></highlight></codeline>
-<codeline lineno="115"><highlight class="normal"></highlight></codeline>
-<codeline lineno="116"><highlight class="normal"></highlight></codeline>
-<codeline lineno="117"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>defined<sp/>__ColliderBit_types_hpp__<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::map&lt;std::string,<sp/>xsec_container&gt;<sp/>map_str_xsec_container;</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::map&lt;std::string,<sp/>map_int_process_xsec&gt;<sp/>map_str_map_int_process_xsec;</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::pair&lt;map_str_xsec_container,<sp/>map_str_map_int_process_xsec&gt;<sp/>initialxsec_container;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::map&lt;std::pair&lt;int,int&gt;,<ref refid="classGambit_1_1ColliderBit_1_1PID__pair__xsec__container" kindref="compound">PID_pair_xsec_container</ref>&gt;<sp/>map_iipair_PID_pair_xsec;</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::map&lt;PID_pair,PID_pair_xsec_container&gt;<sp/>map_PID_pair_PID_pair_xsec;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="112"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>@brief<sp/>Typedef<sp/>for<sp/>a<sp/>std::function<sp/>that<sp/>sets<sp/>the<sp/>weight<sp/>for<sp/>the<sp/>input<sp/>HEPUtils::Event</highlight></codeline>
+<codeline lineno="113" refid="ColliderBit__types_8hpp_1a22df7e72f7ba90d0967c644528b0e54c" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>HEPUtils::Event<sp/><ref refid="ColliderBit__types_8hpp_1a22df7e72f7ba90d0967c644528b0e54c" kindref="member">HEPUtils_Event</ref>;<sp/><sp/></highlight><highlight class="comment">//<sp/>Extra<sp/>typedef<sp/>to<sp/>avoid<sp/>macro<sp/>problem<sp/>with<sp/>namespaces</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::function&lt;void(<ref refid="ColliderBit__types_8hpp_1a22df7e72f7ba90d0967c644528b0e54c" kindref="member">HEPUtils_Event</ref>&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1ColliderBit_1_1BaseCollider" kindref="compound">BaseCollider</ref>*)&gt;<sp/>EventWeighterFunctionType;</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="116"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="118"><highlight class="normal"></highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>defined<sp/>__ColliderBit_types_hpp__<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
     </programlisting>
     <location file="ColliderBit/include/gambit/ColliderBit/ColliderBit_types.hpp"/>
   </compounddef>

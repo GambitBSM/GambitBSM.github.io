@@ -1,11 +1,11 @@
 ---
-title: "file Pythia_8_212/wrapper_ParticleDataEntry_decl.h"
+title: "file Pythia_8_312/wrapper_ParticleDataEntry_decl.h"
 
 description: "[No description available]"
 
 ---
 
-# file Pythia_8_212/wrapper_ParticleDataEntry_decl.h
+# file Pythia_8_312/wrapper_ParticleDataEntry_decl.h
 
 [No description available]
 
@@ -34,8 +34,8 @@ namespace CAT_3(
 ## Source code
 
 ```
-#ifndef __wrapper_ParticleDataEntry_decl_Pythia_8_212_h__
-#define __wrapper_ParticleDataEntry_decl_Pythia_8_212_h__
+#ifndef __wrapper_ParticleDataEntry_decl_Pythia_8_312_h__
+#define __wrapper_ParticleDataEntry_decl_Pythia_8_312_h__
 
 #include <cstddef>
 #include <string>
@@ -44,8 +44,6 @@ namespace CAT_3(
 #include "abstract_ParticleDataEntry.h"
 #include "wrapper_DecayChannel_decl.h"
 #include "wrapper_Info_decl.h"
-#include "wrapper_Settings_decl.h"
-#include "wrapper_Couplings_decl.h"
 
 #include "identification.hpp"
 
@@ -60,26 +58,28 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
                 // Member variables: 
             public:
                 // -- Static factory pointers: 
-                static Abstract_ParticleDataEntry* (*__factory0)(int, std::string, int, int, int, double, double, double, double, double);
-                static Abstract_ParticleDataEntry* (*__factory1)(int, std::string, int, int, int, double, double, double, double);
-                static Abstract_ParticleDataEntry* (*__factory2)(int, std::string, int, int, int, double, double, double);
-                static Abstract_ParticleDataEntry* (*__factory3)(int, std::string, int, int, int, double, double);
-                static Abstract_ParticleDataEntry* (*__factory4)(int, std::string, int, int, int, double);
-                static Abstract_ParticleDataEntry* (*__factory5)(int, std::string, int, int, int);
-                static Abstract_ParticleDataEntry* (*__factory6)(int, std::string, int, int);
-                static Abstract_ParticleDataEntry* (*__factory7)(int, std::string, int);
-                static Abstract_ParticleDataEntry* (*__factory8)(int, std::string);
-                static Abstract_ParticleDataEntry* (*__factory9)(int);
-                static Abstract_ParticleDataEntry* (*__factory10)();
-                static Abstract_ParticleDataEntry* (*__factory11)(int, std::string, std::string, int, int, int, double, double, double, double, double);
-                static Abstract_ParticleDataEntry* (*__factory12)(int, std::string, std::string, int, int, int, double, double, double, double);
-                static Abstract_ParticleDataEntry* (*__factory13)(int, std::string, std::string, int, int, int, double, double, double);
-                static Abstract_ParticleDataEntry* (*__factory14)(int, std::string, std::string, int, int, int, double, double);
-                static Abstract_ParticleDataEntry* (*__factory15)(int, std::string, std::string, int, int, int, double);
-                static Abstract_ParticleDataEntry* (*__factory16)(int, std::string, std::string, int, int, int);
-                static Abstract_ParticleDataEntry* (*__factory17)(int, std::string, std::string, int, int);
-                static Abstract_ParticleDataEntry* (*__factory18)(int, std::string, std::string, int);
-                static Abstract_ParticleDataEntry* (*__factory19)(int, std::string, std::string);
+                static Abstract_ParticleDataEntry* (*__factory0)(int, std::string, int, int, int, double, double, double, double, double, bool);
+                static Abstract_ParticleDataEntry* (*__factory1)(int, std::string, int, int, int, double, double, double, double, double);
+                static Abstract_ParticleDataEntry* (*__factory2)(int, std::string, int, int, int, double, double, double, double);
+                static Abstract_ParticleDataEntry* (*__factory3)(int, std::string, int, int, int, double, double, double);
+                static Abstract_ParticleDataEntry* (*__factory4)(int, std::string, int, int, int, double, double);
+                static Abstract_ParticleDataEntry* (*__factory5)(int, std::string, int, int, int, double);
+                static Abstract_ParticleDataEntry* (*__factory6)(int, std::string, int, int, int);
+                static Abstract_ParticleDataEntry* (*__factory7)(int, std::string, int, int);
+                static Abstract_ParticleDataEntry* (*__factory8)(int, std::string, int);
+                static Abstract_ParticleDataEntry* (*__factory9)(int, std::string);
+                static Abstract_ParticleDataEntry* (*__factory10)(int);
+                static Abstract_ParticleDataEntry* (*__factory11)();
+                static Abstract_ParticleDataEntry* (*__factory12)(int, std::string, std::string, int, int, int, double, double, double, double, double, bool);
+                static Abstract_ParticleDataEntry* (*__factory13)(int, std::string, std::string, int, int, int, double, double, double, double, double);
+                static Abstract_ParticleDataEntry* (*__factory14)(int, std::string, std::string, int, int, int, double, double, double, double);
+                static Abstract_ParticleDataEntry* (*__factory15)(int, std::string, std::string, int, int, int, double, double, double);
+                static Abstract_ParticleDataEntry* (*__factory16)(int, std::string, std::string, int, int, int, double, double);
+                static Abstract_ParticleDataEntry* (*__factory17)(int, std::string, std::string, int, int, int, double);
+                static Abstract_ParticleDataEntry* (*__factory18)(int, std::string, std::string, int, int, int);
+                static Abstract_ParticleDataEntry* (*__factory19)(int, std::string, std::string, int, int);
+                static Abstract_ParticleDataEntry* (*__factory20)(int, std::string, std::string, int);
+                static Abstract_ParticleDataEntry* (*__factory21)(int, std::string, std::string);
         
                 // -- Other member variables: 
         
@@ -88,6 +88,8 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
                 void setDefaults();
         
                 void initPtr(Pythia8::ParticleData* particleDataPtrIn);
+        
+                void setAll(std::string nameIn, std::string antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn, double mMaxIn, double tau0In, bool varWidthIn);
         
                 void setAll(std::string nameIn, std::string antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn, double mMaxIn, double tau0In);
         
@@ -133,13 +135,21 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         
                 void setMMaxNoChange(double mMaxIn);
         
+                void setTau0(double tau0In, bool countAsChanged);
+        
                 void setTau0(double tau0In);
+        
+                void setVarWidth(bool varWidthIn);
         
                 void setIsResonance(bool isResonanceIn);
         
                 void setMayDecay(bool mayDecayIn, bool countAsChanged);
         
                 void setMayDecay(bool mayDecayIn);
+        
+                void setTauCalc(bool tauCalcIn, bool countAsChanged);
+        
+                void setTauCalc(bool tauCalcIn);
         
                 void setDoExternalDecay(bool doExternalDecayIn);
         
@@ -150,6 +160,8 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
                 void setHasChanged(bool hasChangedIn);
         
                 int id() const;
+        
+                int antiId() const;
         
                 bool hasAnti() const;
         
@@ -187,7 +199,11 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         
                 bool isResonance() const;
         
+                bool varWidth() const;
+        
                 bool mayDecay() const;
+        
+                bool tauCalc() const;
         
                 bool doExternalDecay() const;
         
@@ -197,13 +213,17 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         
                 bool hasChanged() const;
         
+                bool hasChangedMMin() const;
+        
+                bool hasChangedMMax() const;
+        
                 void initBWmass();
         
                 double constituentMass() const;
         
-                double mSel();
+                double mSel() const;
         
-                double mRun(double mH);
+                double mRun(double mH) const;
         
                 bool useBreitWigner() const;
         
@@ -225,6 +245,10 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         
                 bool isBaryon() const;
         
+                bool isOnium() const;
+        
+                bool isExotic() const;
+        
                 bool isOctetHadron() const;
         
                 int heaviestQuark(int idIn) const;
@@ -234,6 +258,8 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
                 int baryonNumberType(int idIn) const;
         
                 int baryonNumberType() const;
+        
+                int nQuarksInCode(int idQIn) const;
         
                 void clearChannels();
         
@@ -279,11 +305,7 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         
                 Pythia8::DecayChannel& pickChannel();
         
-                void setResonancePtr(Pythia8::ResonanceWidths* resonancePtrIn);
-        
-                Pythia8::ResonanceWidths* getResonancePtr();
-        
-                void resInit(Pythia8::Info* infoPtrIn, Pythia8::Settings* settingsPtrIn, Pythia8::ParticleData* particleDataPtrIn, Pythia8::Couplings* couplingsPtrIn);
+                void resInit(Pythia8::Info* infoPtrIn);
         
                 double resWidth(int idSgn, double mHat, int idIn, bool openOnly, bool setBR);
         
@@ -314,6 +336,7 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         
                 // Wrappers for original constructors: 
             public:
+                ParticleDataEntry(int idIn, std::string nameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn, double mMaxIn, double tau0In, bool varWidthIn);
                 ParticleDataEntry(int idIn, std::string nameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn, double mMaxIn, double tau0In);
                 ParticleDataEntry(int idIn, std::string nameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn, double mMaxIn);
                 ParticleDataEntry(int idIn, std::string nameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn);
@@ -325,6 +348,7 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
                 ParticleDataEntry(int idIn, std::string nameIn);
                 ParticleDataEntry(int idIn);
                 ParticleDataEntry();
+                ParticleDataEntry(int idIn, std::string nameIn, std::string antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn, double mMaxIn, double tau0In, bool varWidthIn);
                 ParticleDataEntry(int idIn, std::string nameIn, std::string antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn, double mMaxIn, double tau0In);
                 ParticleDataEntry(int idIn, std::string nameIn, std::string antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn, double mMaxIn);
                 ParticleDataEntry(int idIn, std::string nameIn, std::string antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn);
@@ -358,10 +382,10 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 #include "gambit/Backends/backend_undefs.hpp"
 
-#endif /* __wrapper_ParticleDataEntry_decl_Pythia_8_212_h__ */
+#endif /* __wrapper_ParticleDataEntry_decl_Pythia_8_312_h__ */
 ```
 
 
 -------------------------------
 
-Updated on 2024-07-18 at 13:53:35 +0000
+Updated on 2025-02-12 at 15:36:43 +0000

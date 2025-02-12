@@ -33,10 +33,10 @@ Inherits from [Gambit::ColliderBit::BaseCollider](/documentation/code/classes/cl
 | void | **[banner](/documentation/code/classes/classgambit_1_1colliderbit_1_1py8collider/#function-banner)**(const std::string pythiaDocPath)<br>Create a useless Pythia instance just to print the banner.  |
 | virtual void | **[init](/documentation/code/classes/classgambit_1_1colliderbit_1_1py8collider/#function-init)**()<br>Initialize with no settings (error): override version.  |
 | virtual void | **[init](/documentation/code/classes/classgambit_1_1colliderbit_1_1py8collider/#function-init)**(const std::vector< std::string > & externalSettings) |
-| void | **[init](/documentation/code/classes/classgambit_1_1colliderbit_1_1py8collider/#function-init)**(const std::string pythiaDocPath, const std::vector< std::string > & externalSettings, const SLHAea::Coll * slhaea =nullptr, std::ostream & os =std::cout) |
-| void | **[init_user_model](/documentation/code/classes/classgambit_1_1colliderbit_1_1py8collider/#function-init-user-model)**(const std::string pythiaDocPath, const std::vector< std::string > & externalSettings, const SLHAea::Coll * slhaea =nullptr, std::ostream & os =std::cout) |
-| void | **[init](/documentation/code/classes/classgambit_1_1colliderbit_1_1py8collider/#function-init)**(const std::string pythiaDocPath, const std::vector< std::string > & externalSettings, std::ostream & os)<br>Initialize from some external settings, assuming no given SLHAea instance.  |
-| void | **[init_user_model](/documentation/code/classes/classgambit_1_1colliderbit_1_1py8collider/#function-init-user-model)**(const std::string pythiaDocPath, const std::vector< std::string > & externalSettings, std::ostream & os)<br>Initialize from some external settings, assuming no given SLHAea instance.  |
+| void | **[init](/documentation/code/classes/classgambit_1_1colliderbit_1_1py8collider/#function-init)**(const std::string pythiaDocPath, const std::vector< std::string > & externalSettings, const SLHAea::Coll * slhaea) |
+| void | **[init_user_model](/documentation/code/classes/classgambit_1_1colliderbit_1_1py8collider/#function-init-user-model)**(const std::string pythiaDocPath, const std::vector< std::string > & externalSettings, const SLHAea::Coll * slhaea =nullptr) |
+| void | **[init](/documentation/code/classes/classgambit_1_1colliderbit_1_1py8collider/#function-init)**(const std::string pythiaDocPath, const std::vector< std::string > & externalSettings)<br>Initialize from some external settings, assuming no given SLHAea instance.  |
+| void | **[init_user_model](/documentation/code/classes/classgambit_1_1colliderbit_1_1py8collider/#function-init-user-model)**(const std::string pythiaDocPath, const std::vector< std::string > & externalSettings)<br>Initialize from some external settings, assuming no given SLHAea instance.  |
 | void | **[nextEvent](/documentation/code/classes/classgambit_1_1colliderbit_1_1py8collider/#function-nextevent)**(EventT & event) const<br>Event generation for any Pythia interface to [Gambit](/documentation/code/namespaces/namespacegambit/).  |
 | virtual double | **[xsec_fb](/documentation/code/classes/classgambit_1_1colliderbit_1_1py8collider/#function-xsec-fb)**() const<br>Report the total or process-specific cross section (in fb or pb).  |
 | virtual double | **[xsec_fb](/documentation/code/classes/classgambit_1_1colliderbit_1_1py8collider/#function-xsec-fb)**(int process_code) const |
@@ -48,6 +48,8 @@ Inherits from [Gambit::ColliderBit::BaseCollider](/documentation/code/classes/cl
 | virtual double | **[xsecErr_pb](/documentation/code/classes/classgambit_1_1colliderbit_1_1py8collider/#function-xsecerr-pb)**(int process_code) const |
 | virtual int | **[process_code](/documentation/code/classes/classgambit_1_1colliderbit_1_1py8collider/#function-process-code)**() const<br>Report an integer process code for the last generated event.  |
 | virtual std::vector< int > | **[all_active_process_codes](/documentation/code/classes/classgambit_1_1colliderbit_1_1py8collider/#function-all-active-process-codes)**() const<br>Report the list of all active process codes.  |
+| double | **[max_xsec_fb](/documentation/code/classes/classgambit_1_1colliderbit_1_1py8collider/#function-max-xsec-fb)**() const<br>Get the estimated max cross-section.  |
+| double | **[max_xsec_pb](/documentation/code/classes/classgambit_1_1colliderbit_1_1py8collider/#function-max-xsec-pb)**() const |
 | const PythiaT * | **[pythia](/documentation/code/classes/classgambit_1_1colliderbit_1_1py8collider/#function-pythia)**() const<br>Get the Pythia instance.  |
 | bool | **[SetupMatchingUserHook](/documentation/code/classes/classgambit_1_1colliderbit_1_1py8collider/#function-setupmatchinguserhook)**() |
 
@@ -172,8 +174,7 @@ Initialize from some external settings: override version.
 inline void init(
     const std::string pythiaDocPath,
     const std::vector< std::string > & externalSettings,
-    const SLHAea::Coll * slhaea =nullptr,
-    std::ostream & os =std::cout
+    const SLHAea::Coll * slhaea
 )
 ```
 
@@ -189,8 +190,7 @@ Initialize from some external settings.
 inline void init_user_model(
     const std::string pythiaDocPath,
     const std::vector< std::string > & externalSettings,
-    const SLHAea::Coll * slhaea =nullptr,
-    std::ostream & os =std::cout
+    const SLHAea::Coll * slhaea =nullptr
 )
 ```
 
@@ -203,8 +203,7 @@ Initialize from some external settings. Special version of the init function for
 ```
 inline void init(
     const std::string pythiaDocPath,
-    const std::vector< std::string > & externalSettings,
-    std::ostream & os
+    const std::vector< std::string > & externalSettings
 )
 ```
 
@@ -215,8 +214,7 @@ Initialize from some external settings, assuming no given SLHAea instance.
 ```
 inline void init_user_model(
     const std::string pythiaDocPath,
-    const std::vector< std::string > & externalSettings,
-    std::ostream & os
+    const std::vector< std::string > & externalSettings
 )
 ```
 
@@ -344,6 +342,21 @@ Report the list of all active process codes.
 **Reimplements**: [Gambit::ColliderBit::BaseCollider::all_active_process_codes](/documentation/code/classes/classgambit_1_1colliderbit_1_1basecollider/#function-all-active-process-codes)
 
 
+### function max_xsec_fb
+
+```
+inline double max_xsec_fb() const
+```
+
+Get the estimated max cross-section. 
+
+### function max_xsec_pb
+
+```
+inline double max_xsec_pb() const
+```
+
+
 ### function pythia
 
 ```
@@ -384,4 +397,4 @@ std::vector< std::string > _pythiaSettings;
 
 -------------------------------
 
-Updated on 2024-07-18 at 13:53:31 +0000
+Updated on 2025-02-12 at 15:36:39 +0000

@@ -9,12 +9,14 @@
     <includedby refid="Analysis__ATLAS__13TeV__1LEPStop__36invfb_8cpp" local="yes">Analysis_ATLAS_13TeV_1LEPStop_36invfb.cpp</includedby>
     <includedby refid="CMSEfficiencies_8hpp" local="yes">CMSEfficiencies.hpp</includedby>
     <includedby refid="MicrOmegas__MSSM__3__6__9__2_8cpp" local="yes">MicrOmegas_MSSM_3_6_9_2.cpp</includedby>
+    <includedby refid="PoissonCalculators_8hpp" local="yes">PoissonCalculators.hpp</includedby>
     <includedby refid="Utils_8cpp" local="yes">Utils.cpp</includedby>
     <includedby refid="decay__chain_8hpp" local="yes">decay_chain.hpp</includedby>
     <includedby refid="gambit__module__headers_8hpp" local="yes">gambit_module_headers.hpp</includedby>
     <includedby refid="random_8cpp" local="yes">random.cpp</includedby>
-    <includedby refid="simple_2random__tools_8hpp" local="yes">random_tools.hpp</includedby>
+    <includedby refid="ais_2random__tools_8hpp" local="yes">random_tools.hpp</includedby>
     <includedby refid="twalk_2random__tools_8hpp" local="yes">random_tools.hpp</includedby>
+    <includedby refid="simple_2random__tools_8hpp" local="yes">random_tools.hpp</includedby>
     <includedby refid="raster_8cpp" local="yes">raster.cpp</includedby>
     <includedby refid="static__members_8hpp" local="yes">static_members.hpp</includedby>
     <includedby refid="threadsafe__rng_8cpp" local="yes">threadsafe_rng.cpp</includedby>
@@ -290,7 +292,7 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="113">
+      <node id="118">
         <label>backend_macros.hpp</label>
         <link refid="backend__macros_8hpp"/>
       </node>
@@ -310,30 +312,24 @@
         <childnode refid="3" relation="include">
         </childnode>
       </node>
-      <node id="54">
+      <node id="57">
         <label>ColliderBit_eventloop.hpp</label>
         <link refid="ColliderBit__eventloop_8hpp"/>
-        <childnode refid="53" relation="include">
+        <childnode refid="7" relation="include">
         </childnode>
-        <childnode refid="55" relation="include">
+        <childnode refid="58" relation="include">
         </childnode>
-        <childnode refid="6" relation="include">
+        <childnode refid="10" relation="include">
         </childnode>
-        <childnode refid="56" relation="include">
-        </childnode>
-        <childnode refid="57" relation="include">
+        <childnode refid="59" relation="include">
         </childnode>
         <childnode refid="60" relation="include">
-        </childnode>
-        <childnode refid="61" relation="include">
-        </childnode>
-        <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="62" relation="include">
         </childnode>
         <childnode refid="63" relation="include">
         </childnode>
         <childnode refid="64" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="65" relation="include">
         </childnode>
@@ -343,72 +339,92 @@
         </childnode>
         <childnode refid="68" relation="include">
         </childnode>
+        <childnode refid="69" relation="include">
+        </childnode>
+        <childnode refid="70" relation="include">
+        </childnode>
+        <childnode refid="71" relation="include">
+        </childnode>
       </node>
-      <node id="57">
+      <node id="6">
+        <label>PoissonCalculators.hpp</label>
+        <link refid="PoissonCalculators_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="60">
         <label>generateEventPy8Collider.hpp</label>
         <link refid="generateEventPy8Collider_8hpp"/>
-        <childnode refid="58" relation="include">
+        <childnode refid="61" relation="include">
         </childnode>
-        <childnode refid="59" relation="include">
+        <childnode refid="62" relation="include">
         </childnode>
       </node>
-      <node id="64">
+      <node id="67">
         <label>getPy8Collider.hpp</label>
         <link refid="getPy8Collider_8hpp"/>
-        <childnode refid="58" relation="include">
+        <childnode refid="61" relation="include">
         </childnode>
-        <childnode refid="59" relation="include">
+        <childnode refid="62" relation="include">
         </childnode>
       </node>
-      <node id="120">
+      <node id="125">
         <label>topness.h</label>
         <link refid="topness_8h_source"/>
       </node>
-      <node id="48">
+      <node id="52">
         <label>ColliderBit_Bfactories.cpp</label>
         <link refid="ColliderBit__Bfactories_8cpp"/>
       </node>
-      <node id="49">
+      <node id="53">
         <label>ColliderBit_Higgs.cpp</label>
         <link refid="ColliderBit__Higgs_8cpp"/>
       </node>
-      <node id="50">
+      <node id="54">
         <label>ColliderBit_InterpolatedYields.cpp</label>
         <link refid="ColliderBit__InterpolatedYields_8cpp"/>
       </node>
-      <node id="51">
+      <node id="55">
         <label>ColliderBit_LEP.cpp</label>
         <link refid="ColliderBit__LEP_8cpp"/>
       </node>
-      <node id="52">
+      <node id="56">
         <label>ColliderBit_dummy.cpp</label>
         <link refid="ColliderBit__dummy_8cpp"/>
       </node>
-      <node id="53">
+      <node id="7">
         <label>ColliderBit_eventloop.cpp</label>
         <link refid="ColliderBit__eventloop_8cpp"/>
       </node>
-      <node id="55">
+      <node id="58">
         <label>ColliderBit_measurements.cpp</label>
         <link refid="ColliderBit__measurements_8cpp"/>
       </node>
-      <node id="77">
+      <node id="8">
         <label>LHC_likelihoods.cpp</label>
         <link refid="LHC__likelihoods_8cpp"/>
       </node>
-      <node id="6">
+      <node id="9">
+        <label>PoissonCalculators.cpp</label>
+        <link refid="PoissonCalculators_8cpp"/>
+      </node>
+      <node id="10">
         <label>Utils.cpp</label>
         <link refid="Utils_8cpp"/>
       </node>
-      <node id="56">
+      <node id="59">
         <label>collider_event_weights.cpp</label>
         <link refid="collider__event__weights_8cpp"/>
       </node>
-      <node id="60">
+      <node id="63">
         <label>getActiveProcessCodes.cpp</label>
         <link refid="getActiveProcessCodes_8cpp"/>
       </node>
-      <node id="61">
+      <node id="64">
         <label>getAnalysisContainer.cpp</label>
         <link refid="getAnalysisContainer_8cpp"/>
       </node>
@@ -416,107 +432,99 @@
         <label>getBuckFast.cpp</label>
         <link refid="getBuckFast_8cpp"/>
       </node>
-      <node id="62">
+      <node id="65">
         <label>getHepMCEvent.cpp</label>
         <link refid="getHepMCEvent_8cpp"/>
       </node>
-      <node id="63">
+      <node id="66">
         <label>getLHEvent.cpp</label>
         <link refid="getLHEvent_8cpp"/>
       </node>
-      <node id="65">
+      <node id="68">
         <label>getxsec.cpp</label>
         <link refid="getxsec_8cpp"/>
       </node>
-      <node id="100">
+      <node id="102">
         <label>lep_mssm_xsecs.cpp</label>
         <link refid="lep__mssm__xsecs_8cpp"/>
       </node>
-      <node id="58">
+      <node id="61">
         <label>SUSY.cpp</label>
         <link refid="SUSY_8cpp"/>
       </node>
-      <node id="59">
+      <node id="62">
         <label>SUSY_extras.cpp</label>
         <link refid="SUSY__extras_8cpp"/>
       </node>
-      <node id="66">
+      <node id="69">
         <label>process_code_PID_pair_mapping.cpp</label>
         <link refid="process__code__PID__pair__mapping_8cpp"/>
       </node>
-      <node id="67">
+      <node id="70">
         <label>runAnalyses.cpp</label>
         <link refid="runAnalyses_8cpp"/>
       </node>
-      <node id="68">
+      <node id="71">
         <label>smearEvent.cpp</label>
         <link refid="smearEvent_8cpp"/>
       </node>
-      <node id="108">
+      <node id="113">
         <label>gambit.hpp</label>
         <link refid="gambit_8hpp"/>
-        <childnode refid="109" relation="include">
+        <childnode refid="114" relation="include">
         </childnode>
       </node>
-      <node id="109">
+      <node id="114">
         <label>gambit.cpp</label>
         <link refid="gambit_8cpp"/>
       </node>
-      <node id="45">
+      <node id="49">
         <label>BBN.cpp</label>
         <link refid="BBN_8cpp"/>
       </node>
-      <node id="46">
+      <node id="50">
         <label>Boltzmann.cpp</label>
         <link refid="Boltzmann_8cpp"/>
       </node>
-      <node id="47">
+      <node id="51">
         <label>CMB.cpp</label>
         <link refid="CMB_8cpp"/>
       </node>
-      <node id="69">
+      <node id="72">
         <label>CosmoALPs.cpp</label>
         <link refid="CosmoALPs_8cpp"/>
       </node>
-      <node id="70">
+      <node id="73">
         <label>CosmoBit.cpp</label>
         <link refid="CosmoBit_8cpp"/>
       </node>
-      <node id="76">
+      <node id="79">
         <label>Inflation.cpp</label>
         <link refid="Inflation_8cpp"/>
       </node>
-      <node id="78">
+      <node id="80">
         <label>MontePython.cpp</label>
         <link refid="MontePython_8cpp"/>
       </node>
-      <node id="81">
+      <node id="83">
         <label>Planck.cpp</label>
         <link refid="Planck_8cpp"/>
       </node>
-      <node id="19">
+      <node id="23">
         <label>DarkBit_standalone_MSSM.cpp</label>
         <link refid="DarkBit__standalone__MSSM_8cpp"/>
       </node>
-      <node id="20">
+      <node id="24">
         <label>DarkBit_standalone_ScalarSingletDM_Z2.cpp</label>
         <link refid="DarkBit__standalone__ScalarSingletDM__Z2_8cpp"/>
       </node>
-      <node id="21">
+      <node id="25">
         <label>DarkBit_standalone_WIMP.cpp</label>
         <link refid="DarkBit__standalone__WIMP_8cpp"/>
       </node>
-      <node id="9">
+      <node id="13">
         <label>DarkBit_rollcall.hpp</label>
         <link refid="DarkBit__rollcall_8hpp"/>
-        <childnode refid="10" relation="include">
-        </childnode>
-        <childnode refid="11" relation="include">
-        </childnode>
-        <childnode refid="12" relation="include">
-        </childnode>
-        <childnode refid="13" relation="include">
-        </childnode>
         <childnode refid="14" relation="include">
         </childnode>
         <childnode refid="15" relation="include">
@@ -575,177 +583,177 @@
         </childnode>
         <childnode refid="42" relation="include">
         </childnode>
-      </node>
-      <node id="8">
-        <label>DarkBit_types.hpp</label>
-        <link refid="DarkBit__types_8hpp"/>
-        <childnode refid="9" relation="include">
-        </childnode>
         <childnode refid="43" relation="include">
         </childnode>
-        <childnode refid="41" relation="include">
-        </childnode>
-      </node>
-      <node id="7">
-        <label>decay_chain.hpp</label>
-        <link refid="decay__chain_8hpp"/>
-        <childnode refid="8" relation="include">
-        </childnode>
-      </node>
-      <node id="10">
-        <label>AntiprotonLikelihoods.cpp</label>
-        <link refid="AntiprotonLikelihoods_8cpp"/>
-      </node>
-      <node id="11">
-        <label>Axions.cpp</label>
-        <link refid="DarkBit_2src_2Axions_8cpp"/>
-      </node>
-      <node id="12">
-        <label>Cascades.cpp</label>
-        <link refid="Cascades_8cpp"/>
-      </node>
-      <node id="13">
-        <label>DMEFT.cpp</label>
-        <link refid="DarkBit_2src_2DMEFT_8cpp"/>
-      </node>
-      <node id="14">
-        <label>DMsimpVectorMedDiracDM.cpp</label>
-        <link refid="DarkBit_2src_2DMsimpVectorMedDiracDM_8cpp"/>
-      </node>
-      <node id="15">
-        <label>DMsimpVectorMedMajoranaDM.cpp</label>
-        <link refid="DarkBit_2src_2DMsimpVectorMedMajoranaDM_8cpp"/>
-      </node>
-      <node id="16">
-        <label>DMsimpVectorMedScalarDM.cpp</label>
-        <link refid="DarkBit_2src_2DMsimpVectorMedScalarDM_8cpp"/>
-      </node>
-      <node id="17">
-        <label>DMsimpVectorMedVectorDM.cpp</label>
-        <link refid="DarkBit_2src_2DMsimpVectorMedVectorDM_8cpp"/>
-      </node>
-      <node id="18">
-        <label>DarkBit.cpp</label>
-        <link refid="DarkBit_8cpp"/>
-      </node>
-      <node id="43">
-        <label>DarkBit_types.cpp</label>
-        <link refid="DarkBit__types_8cpp"/>
-      </node>
-      <node id="22">
-        <label>DarkBit_utils.cpp</label>
-        <link refid="DarkBit__utils_8cpp"/>
-      </node>
-      <node id="23">
-        <label>DiracSingletDM.cpp</label>
-        <link refid="DarkBit_2src_2DiracSingletDM_8cpp"/>
-      </node>
-      <node id="24">
-        <label>DirectDetection.cpp</label>
-        <link refid="DirectDetection_8cpp"/>
-      </node>
-      <node id="25">
-        <label>EnergyInjection.cpp</label>
-        <link refid="EnergyInjection_8cpp"/>
-      </node>
-      <node id="26">
-        <label>IndirectDetectionYields.cpp</label>
-        <link refid="IndirectDetectionYields_8cpp"/>
-      </node>
-      <node id="27">
-        <label>MSSM.cpp</label>
-        <link refid="DarkBit_2src_2MSSM_8cpp"/>
-      </node>
-      <node id="28">
-        <label>MajoranaSingletDM.cpp</label>
-        <link refid="DarkBit_2src_2MajoranaSingletDM_8cpp"/>
-      </node>
-      <node id="29">
-        <label>PPPC.cpp</label>
-        <link refid="PPPC_8cpp"/>
-      </node>
-      <node id="30">
-        <label>ProcessCatalog.cpp</label>
-        <link refid="ProcessCatalog_8cpp"/>
-      </node>
-      <node id="31">
-        <label>RelicDensity.cpp</label>
-        <link refid="RelicDensity_8cpp"/>
-      </node>
-      <node id="32">
-        <label>ScalarSingletDM.cpp</label>
-        <link refid="DarkBit_2src_2ScalarSingletDM_8cpp"/>
-      </node>
-      <node id="33">
-        <label>SimpleHist.cpp</label>
-        <link refid="SimpleHist_8cpp"/>
-      </node>
-      <node id="34">
-        <label>SimpleLikelihoods.cpp</label>
-        <link refid="SimpleLikelihoods_8cpp"/>
-      </node>
-      <node id="35">
-        <label>SubGeVDM_SelfInteractions.cpp</label>
-        <link refid="SubGeVDM__SelfInteractions_8cpp"/>
-      </node>
-      <node id="36">
-        <label>SubGeVDM_fermion.cpp</label>
-        <link refid="SubGeVDM__fermion_8cpp"/>
-      </node>
-      <node id="37">
-        <label>SubGeVDM_scalar.cpp</label>
-        <link refid="SubGeVDM__scalar_8cpp"/>
-      </node>
-      <node id="38">
-        <label>SunNeutrinos.cpp</label>
-        <link refid="SunNeutrinos_8cpp"/>
-      </node>
-      <node id="39">
-        <label>VectorSingletDM.cpp</label>
-        <link refid="DarkBit_2src_2VectorSingletDM_8cpp"/>
-      </node>
-      <node id="40">
-        <label>WIMP_EFT.cpp</label>
-        <link refid="WIMP__EFT_8cpp"/>
-      </node>
-      <node id="41">
-        <label>Xray.cpp</label>
-        <link refid="Xray_8cpp"/>
-      </node>
-      <node id="42">
-        <label>decay_chain.cpp</label>
-        <link refid="decay__chain_8cpp"/>
-      </node>
-      <node id="115">
-        <label>3bithit.cpp</label>
-        <link refid="3bithit_8cpp"/>
-      </node>
-      <node id="71">
-        <label>DecayBit.cpp</label>
-        <link refid="DecayBit_8cpp"/>
-      </node>
-      <node id="44">
-        <label>gambit_module_headers.hpp</label>
-        <link refid="gambit__module__headers_8hpp"/>
-        <childnode refid="10" relation="include">
-        </childnode>
-        <childnode refid="11" relation="include">
+        <childnode refid="44" relation="include">
         </childnode>
         <childnode refid="45" relation="include">
         </childnode>
         <childnode refid="46" relation="include">
         </childnode>
+      </node>
+      <node id="12">
+        <label>DarkBit_types.hpp</label>
+        <link refid="DarkBit__types_8hpp"/>
+        <childnode refid="13" relation="include">
+        </childnode>
         <childnode refid="47" relation="include">
         </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>decay_chain.hpp</label>
+        <link refid="decay__chain_8hpp"/>
         <childnode refid="12" relation="include">
         </childnode>
-        <childnode refid="48" relation="include">
+      </node>
+      <node id="14">
+        <label>AntiprotonLikelihoods.cpp</label>
+        <link refid="AntiprotonLikelihoods_8cpp"/>
+      </node>
+      <node id="15">
+        <label>Axions.cpp</label>
+        <link refid="DarkBit_2src_2Axions_8cpp"/>
+      </node>
+      <node id="16">
+        <label>Cascades.cpp</label>
+        <link refid="Cascades_8cpp"/>
+      </node>
+      <node id="17">
+        <label>DMEFT.cpp</label>
+        <link refid="DarkBit_2src_2DMEFT_8cpp"/>
+      </node>
+      <node id="18">
+        <label>DMsimpVectorMedDiracDM.cpp</label>
+        <link refid="DarkBit_2src_2DMsimpVectorMedDiracDM_8cpp"/>
+      </node>
+      <node id="19">
+        <label>DMsimpVectorMedMajoranaDM.cpp</label>
+        <link refid="DarkBit_2src_2DMsimpVectorMedMajoranaDM_8cpp"/>
+      </node>
+      <node id="20">
+        <label>DMsimpVectorMedScalarDM.cpp</label>
+        <link refid="DarkBit_2src_2DMsimpVectorMedScalarDM_8cpp"/>
+      </node>
+      <node id="21">
+        <label>DMsimpVectorMedVectorDM.cpp</label>
+        <link refid="DarkBit_2src_2DMsimpVectorMedVectorDM_8cpp"/>
+      </node>
+      <node id="22">
+        <label>DarkBit.cpp</label>
+        <link refid="DarkBit_8cpp"/>
+      </node>
+      <node id="47">
+        <label>DarkBit_types.cpp</label>
+        <link refid="DarkBit__types_8cpp"/>
+      </node>
+      <node id="26">
+        <label>DarkBit_utils.cpp</label>
+        <link refid="DarkBit__utils_8cpp"/>
+      </node>
+      <node id="27">
+        <label>DiracSingletDM.cpp</label>
+        <link refid="DarkBit_2src_2DiracSingletDM_8cpp"/>
+      </node>
+      <node id="28">
+        <label>DirectDetection.cpp</label>
+        <link refid="DirectDetection_8cpp"/>
+      </node>
+      <node id="29">
+        <label>EnergyInjection.cpp</label>
+        <link refid="EnergyInjection_8cpp"/>
+      </node>
+      <node id="30">
+        <label>IndirectDetectionYields.cpp</label>
+        <link refid="IndirectDetectionYields_8cpp"/>
+      </node>
+      <node id="31">
+        <label>MSSM.cpp</label>
+        <link refid="DarkBit_2src_2MSSM_8cpp"/>
+      </node>
+      <node id="32">
+        <label>MajoranaSingletDM.cpp</label>
+        <link refid="DarkBit_2src_2MajoranaSingletDM_8cpp"/>
+      </node>
+      <node id="33">
+        <label>PPPC.cpp</label>
+        <link refid="PPPC_8cpp"/>
+      </node>
+      <node id="34">
+        <label>ProcessCatalog.cpp</label>
+        <link refid="ProcessCatalog_8cpp"/>
+      </node>
+      <node id="35">
+        <label>RelicDensity.cpp</label>
+        <link refid="RelicDensity_8cpp"/>
+      </node>
+      <node id="36">
+        <label>ScalarSingletDM.cpp</label>
+        <link refid="DarkBit_2src_2ScalarSingletDM_8cpp"/>
+      </node>
+      <node id="37">
+        <label>SimpleHist.cpp</label>
+        <link refid="SimpleHist_8cpp"/>
+      </node>
+      <node id="38">
+        <label>SimpleLikelihoods.cpp</label>
+        <link refid="SimpleLikelihoods_8cpp"/>
+      </node>
+      <node id="39">
+        <label>SubGeVDM_SelfInteractions.cpp</label>
+        <link refid="SubGeVDM__SelfInteractions_8cpp"/>
+      </node>
+      <node id="40">
+        <label>SubGeVDM_fermion.cpp</label>
+        <link refid="SubGeVDM__fermion_8cpp"/>
+      </node>
+      <node id="41">
+        <label>SubGeVDM_scalar.cpp</label>
+        <link refid="SubGeVDM__scalar_8cpp"/>
+      </node>
+      <node id="42">
+        <label>SunNeutrinos.cpp</label>
+        <link refid="SunNeutrinos_8cpp"/>
+      </node>
+      <node id="43">
+        <label>VectorSingletDM.cpp</label>
+        <link refid="DarkBit_2src_2VectorSingletDM_8cpp"/>
+      </node>
+      <node id="44">
+        <label>WIMP_EFT.cpp</label>
+        <link refid="WIMP__EFT_8cpp"/>
+      </node>
+      <node id="45">
+        <label>Xray.cpp</label>
+        <link refid="Xray_8cpp"/>
+      </node>
+      <node id="46">
+        <label>decay_chain.cpp</label>
+        <link refid="decay__chain_8cpp"/>
+      </node>
+      <node id="120">
+        <label>3bithit.cpp</label>
+        <link refid="3bithit_8cpp"/>
+      </node>
+      <node id="74">
+        <label>DecayBit.cpp</label>
+        <link refid="DecayBit_8cpp"/>
+      </node>
+      <node id="48">
+        <label>gambit_module_headers.hpp</label>
+        <link refid="gambit__module__headers_8hpp"/>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
         </childnode>
         <childnode refid="49" relation="include">
         </childnode>
         <childnode refid="50" relation="include">
         </childnode>
         <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
         </childnode>
         <childnode refid="52" relation="include">
         </childnode>
@@ -755,77 +763,83 @@
         </childnode>
         <childnode refid="55" relation="include">
         </childnode>
-        <childnode refid="69" relation="include">
+        <childnode refid="56" relation="include">
         </childnode>
-        <childnode refid="70" relation="include">
+        <childnode refid="7" relation="include">
         </childnode>
-        <childnode refid="13" relation="include">
+        <childnode refid="57" relation="include">
         </childnode>
-        <childnode refid="14" relation="include">
-        </childnode>
-        <childnode refid="15" relation="include">
-        </childnode>
-        <childnode refid="16" relation="include">
-        </childnode>
-        <childnode refid="17" relation="include">
-        </childnode>
-        <childnode refid="18" relation="include">
-        </childnode>
-        <childnode refid="22" relation="include">
-        </childnode>
-        <childnode refid="71" relation="include">
-        </childnode>
-        <childnode refid="23" relation="include">
-        </childnode>
-        <childnode refid="24" relation="include">
-        </childnode>
-        <childnode refid="25" relation="include">
+        <childnode refid="58" relation="include">
         </childnode>
         <childnode refid="72" relation="include">
         </childnode>
         <childnode refid="73" relation="include">
         </childnode>
-        <childnode refid="74" relation="include">
+        <childnode refid="17" relation="include">
         </childnode>
-        <childnode refid="75" relation="include">
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
         </childnode>
         <childnode refid="26" relation="include">
         </childnode>
-        <childnode refid="76" relation="include">
-        </childnode>
-        <childnode refid="77" relation="include">
+        <childnode refid="74" relation="include">
         </childnode>
         <childnode refid="27" relation="include">
         </childnode>
         <childnode refid="28" relation="include">
         </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="75" relation="include">
+        </childnode>
+        <childnode refid="76" relation="include">
+        </childnode>
+        <childnode refid="77" relation="include">
+        </childnode>
         <childnode refid="78" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
         </childnode>
         <childnode refid="79" relation="include">
         </childnode>
-        <childnode refid="80" relation="include">
+        <childnode refid="8" relation="include">
         </childnode>
-        <childnode refid="29" relation="include">
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="80" relation="include">
         </childnode>
         <childnode refid="81" relation="include">
         </childnode>
         <childnode refid="82" relation="include">
         </childnode>
-        <childnode refid="30" relation="include">
-        </childnode>
-        <childnode refid="31" relation="include">
+        <childnode refid="33" relation="include">
         </childnode>
         <childnode refid="83" relation="include">
         </childnode>
-        <childnode refid="32" relation="include">
-        </childnode>
-        <childnode refid="33" relation="include">
-        </childnode>
-        <childnode refid="34" relation="include">
+        <childnode refid="9" relation="include">
         </childnode>
         <childnode refid="84" relation="include">
         </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
         <childnode refid="85" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
         </childnode>
         <childnode refid="86" relation="include">
         </childnode>
@@ -855,13 +869,9 @@
         </childnode>
         <childnode refid="99" relation="include">
         </childnode>
-        <childnode refid="35" relation="include">
+        <childnode refid="100" relation="include">
         </childnode>
-        <childnode refid="36" relation="include">
-        </childnode>
-        <childnode refid="37" relation="include">
-        </childnode>
-        <childnode refid="38" relation="include">
+        <childnode refid="101" relation="include">
         </childnode>
         <childnode refid="39" relation="include">
         </childnode>
@@ -871,197 +881,221 @@
         </childnode>
         <childnode refid="42" relation="include">
         </childnode>
-        <childnode refid="100" relation="include">
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="102" relation="include">
         </childnode>
       </node>
-      <node id="112">
+      <node id="117">
         <label>module_macros_incore.hpp</label>
         <link refid="module__macros__incore_8hpp"/>
-        <childnode refid="113" relation="include">
+        <childnode refid="118" relation="include">
         </childnode>
-        <childnode refid="114" relation="include">
-        </childnode>
-      </node>
-      <node id="111">
-        <label>module_macros_incore_defs.hpp</label>
-        <link refid="module__macros__incore__defs_8hpp"/>
-        <childnode refid="112" relation="include">
-        </childnode>
-      </node>
-      <node id="114">
-        <label>standalone_module.hpp</label>
-        <link refid="standalone__module_8hpp"/>
-        <childnode refid="115" relation="include">
-        </childnode>
-        <childnode refid="19" relation="include">
-        </childnode>
-        <childnode refid="20" relation="include">
-        </childnode>
-        <childnode refid="21" relation="include">
-        </childnode>
-        <childnode refid="116" relation="include">
+        <childnode refid="119" relation="include">
         </childnode>
       </node>
       <node id="116">
+        <label>module_macros_incore_defs.hpp</label>
+        <link refid="module__macros__incore__defs_8hpp"/>
+        <childnode refid="117" relation="include">
+        </childnode>
+      </node>
+      <node id="119">
+        <label>standalone_module.hpp</label>
+        <link refid="standalone__module_8hpp"/>
+        <childnode refid="120" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="121" relation="include">
+        </childnode>
+      </node>
+      <node id="121">
         <label>ExampleBit_A_standalone_example.cpp</label>
         <link refid="ExampleBit__A__standalone__example_8cpp"/>
       </node>
-      <node id="72">
+      <node id="75">
         <label>ExampleBit_A.cpp</label>
         <link refid="ExampleBit__A_8cpp"/>
       </node>
-      <node id="73">
+      <node id="76">
         <label>ExampleBit_B.cpp</label>
         <link refid="ExampleBit__B_8cpp"/>
       </node>
-      <node id="74">
+      <node id="77">
         <label>FlavBit.cpp</label>
         <link refid="FlavBit_8cpp"/>
       </node>
-      <node id="75">
+      <node id="78">
         <label>Flav_reader.cpp</label>
         <link refid="Flav__reader_8cpp"/>
       </node>
-      <node id="79">
+      <node id="81">
         <label>NeutrinoBit.cpp</label>
         <link refid="NeutrinoBit_8cpp"/>
       </node>
-      <node id="83">
+      <node id="85">
         <label>RightHandedNeutrinos.cpp</label>
         <link refid="RightHandedNeutrinos_8cpp"/>
       </node>
-      <node id="80">
+      <node id="82">
         <label>ObjectivesBit.cpp</label>
         <link refid="ObjectivesBit_8cpp"/>
       </node>
-      <node id="82">
+      <node id="84">
         <label>PrecisionBit.cpp</label>
         <link refid="PrecisionBit_8cpp"/>
       </node>
-      <node id="110">
+      <node id="115">
         <label>manual_hdf5_combine.cpp</label>
         <link refid="manual__hdf5__combine_8cpp"/>
       </node>
-      <node id="118">
+      <node id="123">
         <label>ScannerBit_standalone.cpp</label>
         <link refid="ScannerBit__standalone_8cpp"/>
       </node>
-      <node id="117">
+      <node id="122">
         <label>scannerbit.hpp</label>
         <link refid="scannerbit_8hpp"/>
-        <childnode refid="118" relation="include">
+        <childnode refid="123" relation="include">
         </childnode>
-        <childnode refid="108" relation="include">
+        <childnode refid="113" relation="include">
         </childnode>
       </node>
-      <node id="102">
-        <label>random_tools.hpp</label>
-        <link refid="simple_2random__tools_8hpp_source"/>
-      </node>
-      <node id="103">
-        <label>random_tools.hpp</label>
-        <link refid="twalk_2random__tools_8hpp_source"/>
-        <childnode refid="104" relation="include">
+      <node id="105">
+        <label>ais.hpp</label>
+        <link refid="ais_8hpp"/>
+        <childnode refid="106" relation="include">
         </childnode>
       </node>
       <node id="104">
-        <label>twalk.hpp</label>
-        <link refid="twalk_8hpp"/>
+        <label>random_tools.hpp</label>
+        <link refid="ais_2random__tools_8hpp_source"/>
         <childnode refid="105" relation="include">
         </childnode>
       </node>
-      <node id="101">
+      <node id="110">
+        <label>random_tools.hpp</label>
+        <link refid="simple_2random__tools_8hpp_source"/>
+      </node>
+      <node id="107">
+        <label>random_tools.hpp</label>
+        <link refid="twalk_2random__tools_8hpp_source"/>
+        <childnode refid="108" relation="include">
+        </childnode>
+      </node>
+      <node id="108">
+        <label>twalk.hpp</label>
+        <link refid="twalk_8hpp"/>
+        <childnode refid="109" relation="include">
+        </childnode>
+      </node>
+      <node id="106">
+        <label>ais.cpp</label>
+        <link refid="ais_8cpp"/>
+      </node>
+      <node id="103">
         <label>random.cpp</label>
         <link refid="random_8cpp"/>
       </node>
-      <node id="106">
+      <node id="111">
         <label>raster.cpp</label>
         <link refid="raster_8cpp"/>
       </node>
-      <node id="121">
+      <node id="126">
         <label>toy_mcmc.cpp</label>
         <link refid="toy__mcmc_8cpp"/>
       </node>
-      <node id="105">
+      <node id="109">
         <label>twalk.cpp</label>
         <link refid="twalk_8cpp"/>
       </node>
-      <node id="84">
+      <node id="86">
         <label>SpecBit.cpp</label>
         <link refid="SpecBit_8cpp"/>
       </node>
-      <node id="85">
+      <node id="87">
         <label>SpecBit_DMEFT.cpp</label>
         <link refid="SpecBit__DMEFT_8cpp"/>
       </node>
-      <node id="86">
+      <node id="88">
         <label>SpecBit_DMsimpVectorMedDiracDM.cpp</label>
         <link refid="SpecBit__DMsimpVectorMedDiracDM_8cpp"/>
       </node>
-      <node id="87">
+      <node id="89">
         <label>SpecBit_DMsimpVectorMedMajoranaDM.cpp</label>
         <link refid="SpecBit__DMsimpVectorMedMajoranaDM_8cpp"/>
       </node>
-      <node id="88">
+      <node id="90">
         <label>SpecBit_DMsimpVectorMedScalarDM.cpp</label>
         <link refid="SpecBit__DMsimpVectorMedScalarDM_8cpp"/>
       </node>
-      <node id="89">
+      <node id="91">
         <label>SpecBit_DMsimpVectorMedVectorDM.cpp</label>
         <link refid="SpecBit__DMsimpVectorMedVectorDM_8cpp"/>
       </node>
-      <node id="90">
+      <node id="92">
         <label>SpecBit_DiracSingletDM.cpp</label>
         <link refid="SpecBit__DiracSingletDM_8cpp"/>
       </node>
-      <node id="91">
+      <node id="93">
         <label>SpecBit_MDM.cpp</label>
         <link refid="SpecBit__MDM_8cpp"/>
       </node>
-      <node id="92">
+      <node id="94">
         <label>SpecBit_MSSM.cpp</label>
         <link refid="SpecBit__MSSM_8cpp"/>
       </node>
-      <node id="93">
+      <node id="95">
         <label>SpecBit_MajoranaSingletDM.cpp</label>
         <link refid="SpecBit__MajoranaSingletDM_8cpp"/>
       </node>
-      <node id="94">
+      <node id="96">
         <label>SpecBit_SM.cpp</label>
         <link refid="SpecBit__SM_8cpp"/>
       </node>
-      <node id="95">
+      <node id="97">
         <label>SpecBit_ScalarSingletDM.cpp</label>
         <link refid="SpecBit__ScalarSingletDM_8cpp"/>
       </node>
-      <node id="96">
+      <node id="98">
         <label>SpecBit_SubGeVDM.cpp</label>
         <link refid="SpecBit__SubGeVDM_8cpp"/>
       </node>
-      <node id="97">
+      <node id="99">
         <label>SpecBit_VS.cpp</label>
         <link refid="SpecBit__VS_8cpp"/>
       </node>
-      <node id="98">
+      <node id="100">
         <label>SpecBit_VectorSingletDM.cpp</label>
         <link refid="SpecBit__VectorSingletDM_8cpp"/>
       </node>
-      <node id="99">
+      <node id="101">
         <label>SpecBit_tests.cpp</label>
         <link refid="src_2SpecBit__tests_8cpp"/>
       </node>
-      <node id="107">
+      <node id="112">
         <label>static_members.hpp</label>
         <link refid="static__members_8hpp"/>
-        <childnode refid="108" relation="include">
+        <childnode refid="113" relation="include">
         </childnode>
-        <childnode refid="110" relation="include">
+        <childnode refid="115" relation="include">
         </childnode>
-        <childnode refid="111" relation="include">
+        <childnode refid="116" relation="include">
         </childnode>
-        <childnode refid="117" relation="include">
+        <childnode refid="122" relation="include">
         </childnode>
-        <childnode refid="114" relation="include">
+        <childnode refid="119" relation="include">
         </childnode>
       </node>
       <node id="1">
@@ -1075,28 +1109,32 @@
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="7" relation="include">
+        <childnode refid="10" relation="include">
         </childnode>
-        <childnode refid="44" relation="include">
+        <childnode refid="11" relation="include">
         </childnode>
-        <childnode refid="101" relation="include">
-        </childnode>
-        <childnode refid="102" relation="include">
+        <childnode refid="48" relation="include">
         </childnode>
         <childnode refid="103" relation="include">
         </childnode>
-        <childnode refid="106" relation="include">
+        <childnode refid="104" relation="include">
         </childnode>
         <childnode refid="107" relation="include">
         </childnode>
-        <childnode refid="119" relation="include">
+        <childnode refid="110" relation="include">
         </childnode>
-        <childnode refid="120" relation="include">
+        <childnode refid="111" relation="include">
         </childnode>
-        <childnode refid="121" relation="include">
+        <childnode refid="112" relation="include">
+        </childnode>
+        <childnode refid="124" relation="include">
+        </childnode>
+        <childnode refid="125" relation="include">
+        </childnode>
+        <childnode refid="126" relation="include">
         </childnode>
       </node>
-      <node id="119">
+      <node id="124">
         <label>threadsafe_rng.cpp</label>
         <link refid="threadsafe__rng_8cpp"/>
       </node>

@@ -1,0 +1,280 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="namespaceGambit_1_1Scanner_1_1Python" kind="namespace" language="C++">
+    <compoundname>Gambit::Scanner::Python</compoundname>
+    <innerclass refid="classGambit_1_1Scanner_1_1Python_1_1diagnostics" prot="public">Gambit::Scanner::Python::diagnostics</innerclass>
+    <innerclass refid="classGambit_1_1Scanner_1_1Python_1_1fake__vector" prot="public">Gambit::Scanner::Python::fake_vector</innerclass>
+    <innerclass refid="classGambit_1_1Scanner_1_1Python_1_1IniFileParser" prot="public">Gambit::Scanner::Python::IniFileParser</innerclass>
+    <innerclass refid="classGambit_1_1Scanner_1_1Python_1_1printer__wrapper" prot="public">Gambit::Scanner::Python::printer_wrapper</innerclass>
+    <innerclass refid="classGambit_1_1Scanner_1_1Python_1_1scan" prot="public">Gambit::Scanner::Python::scan</innerclass>
+    <innerclass refid="classGambit_1_1Scanner_1_1Python_1_1scan__interface" prot="public">Gambit::Scanner::Python::scan_interface</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="python_2src_2python_8cpp_1a35ed426e73a5671ca5d53564c643db6d" prot="public" static="no" mutable="no">
+        <type>std::shared_ptr&lt; <ref refid="classGambit_1_1Scanner_1_1Python_1_1printer__wrapper" kindref="compound">printer_wrapper</ref> &gt;</type>
+        <definition>std::shared_ptr&lt;printer_wrapper&gt; Gambit::Scanner::Python::printer_manager</definition>
+        <argsstring></argsstring>
+        <name>printer_manager</name>
+        <qualifiedname>Gambit::Scanner::Python::printer_manager</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/python/src/python.cpp" line="36" column="29" bodyfile="ScannerBit/python/src/python.cpp" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="python_2include_2python__utils_8hpp_1a302d9e10cbc7a036fe7eddf6b60198d5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Gambit::Scanner::Python::pytype</definition>
+        <argsstring>(py::handle o)</argsstring>
+        <name>pytype</name>
+        <qualifiedname>Gambit::Scanner::Python::pytype</qualifiedname>
+        <param>
+          <type>py::handle</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/python/include/python_utils.hpp" line="19" column="32" bodyfile="ScannerBit/python/include/python_utils.hpp" bodystart="19" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="python_2include_2python__utils_8hpp_1a73d828e22c382ef0686ef2f3d2711bfa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>T</type>
+        <definition>T Gambit::Scanner::Python::pyconvert</definition>
+        <argsstring>(py::handle o)</argsstring>
+        <name>pyconvert</name>
+        <qualifiedname>Gambit::Scanner::Python::pyconvert</qualifiedname>
+        <param>
+          <type>py::handle</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/python/include/python_utils.hpp" line="25" column="15" bodyfile="ScannerBit/python/include/python_utils.hpp" bodystart="25" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="function" id="python_2include_2python__utils_8hpp_1aef27faeef29a433f775466f195e05104" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>YAML::Node</type>
+        <definition>YAML::Node Gambit::Scanner::Python::pyyamlconvert</definition>
+        <argsstring>(py::handle o)</argsstring>
+        <name>pyyamlconvert</name>
+        <qualifiedname>Gambit::Scanner::Python::pyyamlconvert</qualifiedname>
+        <param>
+          <type>py::handle</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/python/include/python_utils.hpp" line="30" column="31" bodyfile="ScannerBit/python/include/python_utils.hpp" bodystart="30" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="ScannerBit_2python_2src_2diagnostics_8cpp_1abe1aa1b00be2f4d674da283cc4a0405a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Scanner::Python::scanner_diagnostic</definition>
+        <argsstring>()</argsstring>
+        <name>scanner_diagnostic</name>
+        <qualifiedname>Gambit::Scanner::Python::scanner_diagnostic</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/python/src/diagnostics.cpp" line="19" column="25" bodyfile="ScannerBit/python/src/diagnostics.cpp" bodystart="19" bodyend="24"/>
+      </memberdef>
+      <memberdef kind="function" id="ScannerBit_2python_2src_2diagnostics_8cpp_1a1d651030bc2d5f9177351642b635a0f5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Scanner::Python::test_function_diagnostic</definition>
+        <argsstring>()</argsstring>
+        <name>test_function_diagnostic</name>
+        <qualifiedname>Gambit::Scanner::Python::test_function_diagnostic</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/python/src/diagnostics.cpp" line="26" column="25" bodyfile="ScannerBit/python/src/diagnostics.cpp" bodystart="26" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="ScannerBit_2python_2src_2diagnostics_8cpp_1a27f4694164a3aefa04fa5584fa4adddb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Scanner::Python::prior_diagnostic</definition>
+        <argsstring>()</argsstring>
+        <name>prior_diagnostic</name>
+        <qualifiedname>Gambit::Scanner::Python::prior_diagnostic</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/python/src/diagnostics.cpp" line="33" column="25" bodyfile="ScannerBit/python/src/diagnostics.cpp" bodystart="33" bodyend="38"/>
+      </memberdef>
+      <memberdef kind="function" id="ScannerBit_2python_2src_2diagnostics_8cpp_1ab780f379c3281ebf1b560bc4f8b4ff05" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Scanner::Python::ff_prior_diagnostic</definition>
+        <argsstring>(const std::string &amp;command)</argsstring>
+        <name>ff_prior_diagnostic</name>
+        <qualifiedname>Gambit::Scanner::Python::ff_prior_diagnostic</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>command</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/python/src/diagnostics.cpp" line="40" column="25" bodyfile="ScannerBit/python/src/diagnostics.cpp" bodystart="40" bodyend="48"/>
+      </memberdef>
+      <memberdef kind="function" id="ScannerBit_2python_2src_2diagnostics_8cpp_1a987fdd896fec17c37dd9dcd8171b8eaf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Scanner::Python::ff_scanner_diagnostic</definition>
+        <argsstring>(const std::string &amp;command)</argsstring>
+        <name>ff_scanner_diagnostic</name>
+        <qualifiedname>Gambit::Scanner::Python::ff_scanner_diagnostic</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>command</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/python/src/diagnostics.cpp" line="50" column="25" bodyfile="ScannerBit/python/src/diagnostics.cpp" bodystart="50" bodyend="55"/>
+      </memberdef>
+      <memberdef kind="function" id="ScannerBit_2python_2src_2diagnostics_8cpp_1ae0192d3a4b033b894602326eed3ecba9" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Scanner::Python::ff_test_function_diagnostic</definition>
+        <argsstring>(const std::string &amp;command)</argsstring>
+        <name>ff_test_function_diagnostic</name>
+        <qualifiedname>Gambit::Scanner::Python::ff_test_function_diagnostic</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>command</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/python/src/diagnostics.cpp" line="57" column="25" bodyfile="ScannerBit/python/src/diagnostics.cpp" bodystart="57" bodyend="62"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_8cpp_1a0507fbc4537d932058997689abb1e5cc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Scanner::Python::do_cleanup</definition>
+        <argsstring>()</argsstring>
+        <name>do_cleanup</name>
+        <qualifiedname>Gambit::Scanner::Python::do_cleanup</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/python/src/interface.cpp" line="42" column="18" bodyfile="ScannerBit/python/src/interface.cpp" bodystart="42" bodyend="45"/>
+      </memberdef>
+      <memberdef kind="function" id="interface_8cpp_1a8f0e50870730cdb523730de16ef35843" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>static void Gambit::Scanner::Python::terminator</definition>
+        <argsstring>()</argsstring>
+        <name>terminator</name>
+        <qualifiedname>Gambit::Scanner::Python::terminator</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/python/src/interface.cpp" line="47" column="25" bodyfile="ScannerBit/python/src/interface.cpp" bodystart="47" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="python_2src_2python_8cpp_1a0a6b0946068c2cabc7e9753cbe2c8533" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Scanner::Python::ensure_size_fake</definition>
+        <argsstring>(scanpy::fake_vector &amp;vec, size_t i)</argsstring>
+        <name>ensure_size_fake</name>
+        <qualifiedname>Gambit::Scanner::Python::ensure_size_fake</qualifiedname>
+        <param>
+          <type><ref refid="classGambit_1_1Scanner_1_1Python_1_1fake__vector" kindref="compound">scanpy::fake_vector</ref> &amp;</type>
+          <declname>vec</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>i</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/python/src/python.cpp" line="143" column="18" bodyfile="ScannerBit/python/src/python.cpp" bodystart="143" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="python_2src_2python_8cpp_1adb43dedd1156f3c0eee687b05c946454" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Scanner::Python::ensure_size_vec</definition>
+        <argsstring>(std::vector&lt; double &gt; &amp;, size_t)</argsstring>
+        <name>ensure_size_vec</name>
+        <qualifiedname>Gambit::Scanner::Python::ensure_size_vec</qualifiedname>
+        <param>
+          <type>std::vector&lt; double &gt; &amp;</type>
+        </param>
+        <param>
+          <type>size_t</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/python/src/python.cpp" line="155" column="18" bodyfile="ScannerBit/python/src/python.cpp" bodystart="155" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="python_2src_2python_8cpp_1ab07b90c93f41d5e42cf09f0a9461a475" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Scanner::Python::ensure_size_evec</definition>
+        <argsstring>(hyper_cube_ref&lt; double &gt;, size_t)</argsstring>
+        <name>ensure_size_evec</name>
+        <qualifiedname>Gambit::Scanner::Python::ensure_size_evec</qualifiedname>
+        <param>
+          <type><ref refid="scanner__util__types_8hpp_1aa2109d688760bfc20fb806f80ee45146" kindref="member">hyper_cube_ref</ref>&lt; double &gt;</type>
+        </param>
+        <param>
+          <type>size_t</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/python/src/python.cpp" line="159" column="18" bodyfile="ScannerBit/python/src/python.cpp" bodystart="159" bodyend="161"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ScannerBit/python/include/interface.hpp" line="21" column="9"/>
+  </compounddef>
+</doxygen>

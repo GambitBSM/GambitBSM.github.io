@@ -16,6 +16,7 @@ description: "[No description available]"
 | **[Gambit::ColliderBit::ATLAS](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1atlas/)** <br>ATLAS-specific efficiency and smearing functions for super fast detector simulation.  |
 | **[Gambit::ColliderBit::CMS](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/)** <br>CMS-specific efficiency and smearing functions for super fast detector simulation.  |
 | **[Gambit::ColliderBit::EventConversion](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1eventconversion/)**  |
+| **[Gambit::ColliderBit::PoissonCalculators](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1poissoncalculators/)**  |
 
 ## Classes
 
@@ -195,6 +196,9 @@ description: "[No description available]"
 | typedef std::multimap< [PID_pair](/documentation/code/classes/classgambit_1_1pid__pair/), int > | **[multimap_PID_pair_int](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#typedef-multimap-pid-pair-int)**  |
 | typedef std::map< int, [xsec_container](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/) > | **[map_int_xsec](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#typedef-map-int-xsec)**  |
 | typedef std::map< int, [process_xsec_container](/documentation/code/classes/classgambit_1_1colliderbit_1_1process__xsec__container/) > | **[map_int_process_xsec](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#typedef-map-int-process-xsec)**  |
+| typedef std::map< std::string, [xsec_container](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/) > | **[map_str_xsec_container](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#typedef-map-str-xsec-container)**  |
+| typedef std::map< std::string, map_int_process_xsec > | **[map_str_map_int_process_xsec](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#typedef-map-str-map-int-process-xsec)**  |
+| typedef std::pair< map_str_xsec_container, map_str_map_int_process_xsec > | **[initialxsec_container](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#typedef-initialxsec-container)**  |
 | typedef std::map< std::pair< int, int >, [PID_pair_xsec_container](/documentation/code/classes/classgambit_1_1colliderbit_1_1pid__pair__xsec__container/) > | **[map_iipair_PID_pair_xsec](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#typedef-map-iipair-pid-pair-xsec)**  |
 | typedef std::map< [PID_pair](/documentation/code/classes/classgambit_1_1pid__pair/), [PID_pair_xsec_container](/documentation/code/classes/classgambit_1_1colliderbit_1_1pid__pair__xsec__container/) > | **[map_PID_pair_PID_pair_xsec](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#typedef-map-pid-pair-pid-pair-xsec)**  |
 | typedef HEPUtils::Event | **[HEPUtils_Event](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#typedef-heputils-event)** <br>Typedef for a std::function that sets the weight for the input HEPUtils::Event.  |
@@ -441,6 +445,7 @@ description: "[No description available]"
 | template <typename EventT \> <br>void | **[convertParticleEvent](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-convertparticleevent)**(const EventT & pevt, HEPUtils::Event & result, std::vector< [jet_collection_settings](/documentation/code/classes/structgambit_1_1colliderbit_1_1jet__collection__settings/) > all_jet_collection_settings, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) jetcollection_taus, double jet_pt_min) |
 | template <typename EventT \> <br>void | **[convertPartonEvent](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-convertpartonevent)**(const EventT & pevt, HEPUtils::Event & result, std::vector< [jet_collection_settings](/documentation/code/classes/structgambit_1_1colliderbit_1_1jet__collection__settings/) > all_jet_collection_settings, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) jetcollection_taus, double jet_pt_min)<br>Convert a partonic (no hadrons) EventT into an unsmeared HEPUtils::Event.  |
 | const multimap_PID_pair_int & | **[all_PID_pairs_to_process_codes](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-all-pid-pairs-to-process-codes)**() |
+| template <typename PythiaT ,typename EventT \> <br>void | **[PerformInitialCrossSection_Pythia](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-performinitialcrosssection-pythia)**(initialxsec_container & result, [SLHAstruct](/documentation/code/namespaces/namespacegambit/#typedef-slhastruct) & slha, const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) model_suffix, const [Options](/documentation/code/classes/classgambit_1_1options/) & runOptions) |
 | template <typename PythiaT ,typename hepmc_writerT \> <br>void | **[dropHepMCEventPy8Collider](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-drophepmceventpy8collider)**(const PythiaT * Pythia, const [safe_ptr](/documentation/code/classes/classgambit_1_1safe__ptr/)< [Options](/documentation/code/classes/classgambit_1_1options/) > & runOptions)<br>Drop a HepMC file for the event.  |
 | template <typename PythiaT ,typename EventT ,typename hepmc_writerT \> <br>void | **[generateEventPy8Collider](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-generateeventpy8collider)**(EventT & pythia_event, const [MCLoopInfo](/documentation/code/classes/structgambit_1_1colliderbit_1_1mcloopinfo/) & RunMC, const [Py8Collider](/documentation/code/classes/classgambit_1_1colliderbit_1_1py8collider/)< PythiaT, EventT, hepmc_writerT > & HardScatteringSim, const int iteration, void(*)() wrapup, const [safe_ptr](/documentation/code/classes/classgambit_1_1safe__ptr/)< [Options](/documentation/code/classes/classgambit_1_1options/) > & runOptions)<br>Generate a hard scattering event with Pythia.  |
 | template <typename PythiaT ,typename EventT ,typename hepmc_writerT \> <br>void | **[convertEventToHEPUtilsPy8Collider](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-converteventtoheputilspy8collider)**(HEPUtils::Event & event, const EventT & pythia_event, const [Py8Collider](/documentation/code/classes/classgambit_1_1colliderbit_1_1py8collider/)< PythiaT, EventT, hepmc_writerT > & HardScatteringSim, const EventWeighterFunctionType & EventWeighterFunction, const int iteration, void(*)() wrapup, const [safe_ptr](/documentation/code/classes/classgambit_1_1safe__ptr/)< [Options](/documentation/code/classes/classgambit_1_1options/) > & runOptions)<br>Generate a hard scattering event with Pythia and convert it to HEPUtils::Event.  |
@@ -482,6 +487,8 @@ description: "[No description available]"
 | double | **[BaBar_single_photon_LogLike](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-babar-single-photon-loglike)**(double kappa, double mAp, double BRinv)<br>Perform the actual likelihood evaluation.  |
 | void | **[BaBar_single_photon_LogLike_SubGeVDM](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-babar-single-photon-loglike-subgevdm)**(double & result) |
 | void | **[getDummyColliderObservable](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-getdummycolliderobservable)**(double & result)<br>Dummy observable that creates a dependency on TestModel1D.  |
+| int | **[calc_N_MC](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-calc-n-mc)**(std::string method, double n_mc_mean) |
+| double | **[GetMaxLumi](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-getmaxlumi)**(const std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > & analyses)<br>Get the maximum luminosity required for any analysis in a given collider.  |
 | void | **[operateLHCLoop](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-operatelhcloop)**([MCLoopInfo](/documentation/code/classes/structgambit_1_1colliderbit_1_1mcloopinfo/) & result)<br>LHC Loop Manager.  |
 | void | **[getLHCEventLoopInfo](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-getlhceventloopinfo)**([map_str_dbl](/documentation/code/namespaces/namespacegambit/#typedef-map-str-dbl) & result)<br>Store some information about the event generation.  |
 | void | **[CollectAnalyses](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-collectanalyses)**([AnalysisDataPointers](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#typedef-analysisdatapointers) & result)<br>Loop over all analyses and collect them in one place.  |
@@ -492,10 +499,10 @@ description: "[No description available]"
 | void | **[calc_HB_LEP_LogLike](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-calc-hb-lep-loglike)**(double & result)<br>Get a LEP chisq from HiggsBounds.  |
 | void | **[calc_HS_LHC_LogLike](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-calc-hs-lhc-loglike)**(double & result)<br>Get an LHC chisq from HiggsSignals.  |
 | void | **[FeynHiggs_HiggsProd](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-feynhiggs-higgsprod)**([fh_HiggsProd_container](/documentation/code/classes/structgambit_1_1fh__higgsprod__container/) & result)<br>Higgs production cross-sections from FeynHiggs.  |
-| void | **[fill_analysis_loglikes](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-fill-analysis-loglikes)**(const [AnalysisData](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/) & ana_data, [AnalysisLogLikes](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisloglikes/) & ana_loglikes, bool use_marg, bool has_and_use_covar, bool combine_nocovar_SRs, bool has_and_use_fulllikes, bool(*)(const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) &) FullLikes_FileExists, int(*)(const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) &, const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) &) FullLikes_ReadIn, double(*)(std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), double > &, const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) &) FullLikes_Evaluate, const std::string alt_loglike_key)<br>Forward declaration of funtion in LHC_likelihoods.  |
+| void | **[fill_analysis_loglikes](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-fill-analysis-loglikes)**(const [AnalysisData](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/) & ana_data, [AnalysisLogLikes](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisloglikes/) & ana_loglikes, bool use_marg, double(*)(const int &, const double &, const double &, const double &) marginaliser, bool has_and_use_covar, bool combine_nocovar_SRs, const [Options](/documentation/code/classes/classgambit_1_1options/) & runOptions, bool use_fulllikes, bool(*)(const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) &) FullLikes_FileExists, int(*)(const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) &, const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) &) FullLikes_ReadIn, double(*)(std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), double > &, const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) &) FullLikes_Evaluate, double xsec, int n_mc, const std::string alt_loglike_key)<br>Forward declaration of function in LHC_likelihoods.  |
 | void | **[DMEFT_fill_analysis_info_map](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-dmeft-fill-analysis-info-map)**()<br>Forward declarations of functions in this file.  |
-| void | **[DMsimp_fill_analysis_info_map](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-dmsimp-fill-analysis-info-map)**(std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > Analysis_data_path, std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > > Interpolation_columns, int Ndim)<br>A function for filling the analysis_info_map for the DMsimp models.  |
-| void | **[SubGeVDM_fill_analysis_info_map](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-subgevdm-fill-analysis-info-map)**(std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > Analysis_data_path, std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > > Interpolation_columns)<br>A function for filling the analysis_info_map for the SubGeVDM_fermion and SubGeVDM_scalar models.  |
+| void | **[DMsimp_fill_analysis_info_map](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-dmsimp-fill-analysis-info-map)**(std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > Analysis_data_path, std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > > Interpolation_columns, int Ndim, std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > skip_analyses)<br>A function for filling the analysis_info_map for the DMsimp models.  |
+| void | **[SubGeVDM_fill_analysis_info_map](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-subgevdm-fill-analysis-info-map)**(std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > Analysis_data_path, std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > > Interpolation_columns, std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > skip_analyses)<br>A function for filling the analysis_info_map for the SubGeVDM_fermion and SubGeVDM_scalar models.  |
 | void | **[DMEFT_results](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-dmeft-results)**([AnalysisDataPointers](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#typedef-analysisdatapointers) & result)<br>Results from DMEFT analyses before any modification of the MET spectrum.  |
 | void | **[DMEFT_results_profiled](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-dmeft-results-profiled)**([AnalysisDataPointers](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#typedef-analysisdatapointers) & result)<br>Results from DMEFT analyses after profiling over the 'a' parameter in the smooth cut-off of the MET spectrum.  |
 | void | **[DMEFT_results_cutoff](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-dmeft-results-cutoff)**([AnalysisDataPointers](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#typedef-analysisdatapointers) & result)<br>Results from DMEFT analyses after imposing a hard cut-off of the MET spectrum.  |
@@ -559,16 +566,19 @@ description: "[No description available]"
 | void | **[getTotalCrossSectionAsMap](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-gettotalcrosssectionasmap)**([map_str_dbl](/documentation/code/namespaces/namespacegambit/#typedef-map-str-dbl) & result)<br>Get cross-section info as map_str_dbl (for simple printing)  |
 | void | **[getPIDPairCrossSectionsInfo](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-getpidpaircrosssectionsinfo)**([map_str_dbl](/documentation/code/namespaces/namespacegambit/#typedef-map-str-dbl) & result)<br>Output PID pair cross-sections as a str-dbl map, for easy printing.  |
 | void | **[doCrossSectionConsistencyCheck](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-docrosssectionconsistencycheck)**(bool & result) |
+| void | **[InitialTotalCrossSection_Pythia](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-initialtotalcrosssection-pythia)**(map_str_xsec_container & result)<br>Helper function for cross-section maps.  |
+| void | **[InitialProcessCrossSections_Pythia](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-initialprocesscrosssections-pythia)**(map_str_map_int_process_xsec & result)<br>Helper function for cross-section maps.  |
 | void | **[calc_LHC_signals](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-calc-lhc-signals)**([map_str_dbl](/documentation/code/namespaces/namespacegambit/#typedef-map-str-dbl) & result)<br>Loop over all analyses and fill a map of predicted counts.  |
-| void | **[_gsl_calc_Analysis_MinusLogLike](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-gsl-calc-analysis-minusloglike)**(const size_t n, const double * unit_nuisances_dbl, void * fixedparamspack, double * fval) |
+| double | **[calc_poisson_loglike](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-calc-poisson-loglike)**(std::string estimator, double s, double b, int s_unscaled, int o, int n_mc, double n_exp) |
+| void | **[_gsl_calc_Analysis_MinusLogLike](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-gsl-calc-analysis-minusloglike)**(const size_t n, const double * unit_nuisances_dbl, void * fixedparamspack, double * fval)<br>Loglike objective-function wrapper to provide the signature for GSL multimin.  |
 | void | **[_gsl_calc_Analysis_MinusLogLikeGrad](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-gsl-calc-analysis-minusloglikegrad)**(const size_t n, const double * unit_nuisances_dbl, void * fixedparamspack, double * fgrad)<br>Loglike gradient-function wrapper to provide the signature for GSL multimin.  |
 | void | **[_gsl_calc_Analysis_MinusLogLikeAndGrad](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-gsl-calc-analysis-minusloglikeandgrad)**(const size_t n, const double * unit_nuisances_dbl, void * fixedparamspack, double * fval, double * fgrad) |
 | std::vector< double > | **[_gsl_mkpackedarray](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-gsl-mkpackedarray)**(const Eigen::ArrayXd & n_preds, const Eigen::ArrayXd & n_obss, const Eigen::ArrayXd & sqrtevals, const Eigen::MatrixXd & evecs) |
-| double | **[profile_loglike_cov](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-profile-loglike-cov)**(const Eigen::ArrayXd & n_preds, const Eigen::ArrayXd & n_obss, const Eigen::ArrayXd & sqrtevals, const Eigen::MatrixXd & evecs) |
-| double | **[marg_loglike_nulike1sr](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-marg-loglike-nulike1sr)**(const Eigen::ArrayXd & n_preds, const Eigen::ArrayXd & n_obss, const Eigen::ArrayXd & sqrtevals) |
-| double | **[marg_loglike_cov](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-marg-loglike-cov)**(const Eigen::ArrayXd & n_preds, const Eigen::ArrayXd & n_obss, const Eigen::ArrayXd & sqrtevals, const Eigen::MatrixXd & evecs) |
+| double | **[profile_loglike_cov](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-profile-loglike-cov)**(const [Options](/documentation/code/classes/classgambit_1_1options/) & runOptions, const Eigen::ArrayXd & n_preds, const Eigen::ArrayXd & , const Eigen::ArrayXd & , const Eigen::ArrayXd & n_obss, const Eigen::ArrayXd & sqrtevals, const Eigen::ArrayXd & , const Eigen::MatrixXd & evecs, const Eigen::MatrixXd & , double(*)(const int &, const double &, const double &, const double &) , int , double ) |
+| double | **[marg_loglike_nulike1sr](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-marg-loglike-nulike1sr)**(const Eigen::ArrayXd & n_preds, const Eigen::ArrayXd & n_obss, const Eigen::ArrayXd & sqrtevals, double(*)(const int &, const double &, const double &, const double &) marginaliser) |
+| double | **[marg_loglike_cov](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-marg-loglike-cov)**(const [Options](/documentation/code/classes/classgambit_1_1options/) & runOptions, const Eigen::ArrayXd & n_preds, const Eigen::ArrayXd & n_bkg, const Eigen::ArrayXd & n_preds_unscaled, const Eigen::ArrayXd & n_obss, const Eigen::ArrayXd & sqrtevals, const Eigen::ArrayXd & sqrtevals_bkg, const Eigen::MatrixXd & evecs, const Eigen::MatrixXd & evecs_bkg, double(*)(const int &, const double &, const double &, const double &) marginaliser, int n_mc, double n_mc_expected) |
 | void | **[fill_analysis_loglikes_full](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-fill-analysis-loglikes-full)**(const [AnalysisData](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/) & ana_data, [AnalysisLogLikes](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisloglikes/) & ana_loglikes, bool(*)(const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) &) FullLikes_FileExists, int(*)(const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) &, const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) &) FullLikes_ReadIn, double(*)(std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), double > &, const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) &) FullLikes_Evaluate, const std::string alt_loglike_key ="") |
-| void | **[calc_LHC_LogLikes_common](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-calc-lhc-loglikes-common)**([map_str_AnalysisLogLikes](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#typedef-map-str-analysisloglikes) & result, bool use_fulllikes, [AnalysisDataPointers](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#typedef-analysisdatapointers) & ana, const [Options](/documentation/code/classes/classgambit_1_1options/) & runOptions, bool skip_calc, bool(*)(const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) &) FullLikes_FileExists, int(*)(const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) &, const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) &) FullLikes_ReadIn, double(*)(std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), double > &, const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) &) FullLikes_Evaluate)<br>Loop over all analyses and fill a map of [AnalysisLogLikes]() objects.  |
+| void | **[calc_LHC_LogLikes_common](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-calc-lhc-loglikes-common)**([map_str_AnalysisLogLikes](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#typedef-map-str-analysisloglikes) & result, bool use_fulllikes, [AnalysisDataPointers](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#typedef-analysisdatapointers) & ana, const [Options](/documentation/code/classes/classgambit_1_1options/) & runOptions, double(*)(const int &, const double &, const double &, const double &) marginaliser, bool skip_calc, bool(*)(const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) &) FullLikes_FileExists, int(*)(const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) &, const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) &) FullLikes_ReadIn, double(*)(std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), double > &, const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) &) FullLikes_Evaluate, double xsec, int n_mc)<br>Loop over all analyses and fill a map of [AnalysisLogLikes]() objects.  |
 | void | **[calc_LHC_LogLikes_full](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-calc-lhc-loglikes-full)**([map_str_AnalysisLogLikes](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#typedef-map-str-analysisloglikes) & result)<br>Loop over all analyses and fill a map of [AnalysisLogLikes]() objects.  |
 | void | **[calc_LHC_LogLikes](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-calc-lhc-loglikes)**([map_str_AnalysisLogLikes](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#typedef-map-str-analysisloglikes) & result)<br>Loop over all analyses and fill a map of [AnalysisLogLikes]() objectss.  |
 | void | **[get_LHC_LogLike_per_analysis](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-get-lhc-loglike-per-analysis)**([map_str_dbl](/documentation/code/namespaces/namespacegambit/#typedef-map-str-dbl) & result)<br>Extract the combined log likelihood for each analysis.  |
@@ -732,6 +742,27 @@ typedef std::map<int,xsec_container> Gambit::ColliderBit::map_int_xsec;
 
 ```
 typedef std::map<int,process_xsec_container> Gambit::ColliderBit::map_int_process_xsec;
+```
+
+
+### typedef map_str_xsec_container
+
+```
+typedef std::map<std::string, xsec_container> Gambit::ColliderBit::map_str_xsec_container;
+```
+
+
+### typedef map_str_map_int_process_xsec
+
+```
+typedef std::map<std::string, map_int_process_xsec> Gambit::ColliderBit::map_str_map_int_process_xsec;
+```
+
+
+### typedef initialxsec_container
+
+```
+typedef std::pair<map_str_xsec_container, map_str_map_int_process_xsec> Gambit::ColliderBit::initialxsec_container;
 ```
 
 
@@ -3378,6 +3409,20 @@ const multimap_PID_pair_int & all_PID_pairs_to_process_codes()
 ```
 
 
+### function PerformInitialCrossSection_Pythia
+
+```
+template <typename PythiaT ,
+typename EventT >
+void PerformInitialCrossSection_Pythia(
+    initialxsec_container & result,
+    SLHAstruct & slha,
+    const str model_suffix,
+    const Options & runOptions
+)
+```
+
+
 ### function dropHepMCEventPy8Collider
 
 ```
@@ -3836,6 +3881,29 @@ Dummy observable that creates a dependency on TestModel1D.
 This is used to satisfy the normal GAMBIT model requrements in a minimal way. This is useful in the case where we just want to run ColliderBit on a single point with a custom Pythia version, using Pythia's SLHA interface. 
 
 
+### function calc_N_MC
+
+```
+int calc_N_MC(
+    std::string method,
+    double n_mc_mean
+)
+```
+
+
+Calculate the required number of MC events Currently can pick between fixed, or provide the mean and pull from a Poisson 
+
+
+### function GetMaxLumi
+
+```
+double GetMaxLumi(
+    const std::vector< str > & analyses
+)
+```
+
+Get the maximum luminosity required for any analysis in a given collider. 
+
 ### function operateLHCLoop
 
 ```
@@ -3947,17 +4015,21 @@ void fill_analysis_loglikes(
     const AnalysisData & ana_data,
     AnalysisLogLikes & ana_loglikes,
     bool use_marg,
+    double(*)(const int &, const double &, const double &, const double &) marginaliser,
     bool has_and_use_covar,
     bool combine_nocovar_SRs,
-    bool has_and_use_fulllikes,
+    const Options & runOptions,
+    bool use_fulllikes,
     bool(*)(const str &) FullLikes_FileExists,
     int(*)(const str &, const str &) FullLikes_ReadIn,
     double(*)(std::map< str, double > &, const str &) FullLikes_Evaluate,
+    double xsec,
+    int n_mc,
     const std::string alt_loglike_key
 )
 ```
 
-Forward declaration of funtion in LHC_likelihoods. 
+Forward declaration of function in LHC_likelihoods. 
 
 Helper function called by calc_LHC_LogLikes to compute the loglike(s) for a given analysis. 
 
@@ -4004,7 +4076,8 @@ A function for filling the analysis_info_map for the DMEFT model.
 void DMsimp_fill_analysis_info_map(
     std::map< str, str > Analysis_data_path,
     std::map< str, std::vector< str > > Interpolation_columns,
-    int Ndim
+    int Ndim,
+    std::vector< str > skip_analyses
 )
 ```
 
@@ -4015,7 +4088,8 @@ A function for filling the analysis_info_map for the DMsimp models.
 ```
 void SubGeVDM_fill_analysis_info_map(
     std::map< str, str > Analysis_data_path,
-    std::map< str, std::vector< str > > Interpolation_columns
+    std::map< str, std::vector< str > > Interpolation_columns,
+    std::vector< str > skip_analyses
 )
 ```
 
@@ -4767,6 +4841,26 @@ void doCrossSectionConsistencyCheck(
 A consistency check that ensures that if each event is weighted by a process-level cross-section from an external calculator, then the total cross-section is taken from the event generator 
 
 
+### function InitialTotalCrossSection_Pythia
+
+```
+void InitialTotalCrossSection_Pythia(
+    map_str_xsec_container & result
+)
+```
+
+Helper function for cross-section maps. 
+
+### function InitialProcessCrossSections_Pythia
+
+```
+void InitialProcessCrossSections_Pythia(
+    map_str_map_int_process_xsec & result
+)
+```
+
+Helper function for cross-section maps. 
+
 ### function calc_LHC_signals
 
 ```
@@ -4776,6 +4870,21 @@ void calc_LHC_signals(
 ```
 
 Loop over all analyses and fill a map of predicted counts. 
+
+### function calc_poisson_loglike
+
+```
+double calc_poisson_loglike(
+    std::string estimator,
+    double s,
+    double b,
+    int s_unscaled,
+    int o,
+    int n_mc,
+    double n_exp
+)
+```
+
 
 ### function _gsl_calc_Analysis_MinusLogLike
 
@@ -4788,14 +4897,7 @@ void _gsl_calc_Analysis_MinusLogLike(
 )
 ```
 
-
-**Note**: Doesn't return a full log-like: the factorial term is missing since it's expensive, fixed and cancels in DLLs 
-
-Loglike objective-function wrapper to provide the signature for GSL multimin
-
-
-We've dropped the log(n_obs!) terms, since they're expensive and cancel in computing DLL
-
+Loglike objective-function wrapper to provide the signature for GSL multimin. 
 
 ### function _gsl_calc_Analysis_MinusLogLikeGrad
 
@@ -4839,15 +4941,23 @@ std::vector< double > _gsl_mkpackedarray(
 
 ```
 double profile_loglike_cov(
+    const Options & runOptions,
     const Eigen::ArrayXd & n_preds,
+    const Eigen::ArrayXd & ,
+    const Eigen::ArrayXd & ,
     const Eigen::ArrayXd & n_obss,
     const Eigen::ArrayXd & sqrtevals,
-    const Eigen::MatrixXd & evecs
+    const Eigen::ArrayXd & ,
+    const Eigen::MatrixXd & evecs,
+    const Eigen::MatrixXd & ,
+    double(*)(const int &, const double &, const double &, const double &) ,
+    int ,
+    double 
 )
 ```
 
 
-**Note**: Return value is missing the log(n_obs!) terms (n_SR of them) which cancel in LLR calculation 
+**Note**: : marginaliser not used, but added to match function signature with marg_loglike_cov 
 
 **Todo**: Pass in the cov, and compute the fixed evals, evecs, and corr matrix as fixed params in here? Via a helper function to reduce duplication 
 
@@ -4860,7 +4970,8 @@ Return the best log likelihood
 double marg_loglike_nulike1sr(
     const Eigen::ArrayXd & n_preds,
     const Eigen::ArrayXd & n_obss,
-    const Eigen::ArrayXd & sqrtevals
+    const Eigen::ArrayXd & sqrtevals,
+    double(*)(const int &, const double &, const double &, const double &) marginaliser
 )
 ```
 
@@ -4869,10 +4980,18 @@ double marg_loglike_nulike1sr(
 
 ```
 double marg_loglike_cov(
+    const Options & runOptions,
     const Eigen::ArrayXd & n_preds,
+    const Eigen::ArrayXd & n_bkg,
+    const Eigen::ArrayXd & n_preds_unscaled,
     const Eigen::ArrayXd & n_obss,
     const Eigen::ArrayXd & sqrtevals,
-    const Eigen::MatrixXd & evecs
+    const Eigen::ArrayXd & sqrtevals_bkg,
+    const Eigen::MatrixXd & evecs,
+    const Eigen::MatrixXd & evecs_bkg,
+    double(*)(const int &, const double &, const double &, const double &) marginaliser,
+    int n_mc,
+    double n_mc_expected
 )
 ```
 
@@ -4907,10 +5026,13 @@ void calc_LHC_LogLikes_common(
     bool use_fulllikes,
     AnalysisDataPointers & ana,
     const Options & runOptions,
+    double(*)(const int &, const double &, const double &, const double &) marginaliser,
     bool skip_calc,
     bool(*)(const str &) FullLikes_FileExists,
     int(*)(const str &, const str &) FullLikes_ReadIn,
-    double(*)(std::map< str, double > &, const str &) FullLikes_Evaluate
+    double(*)(std::map< str, double > &, const str &) FullLikes_Evaluate,
+    double xsec,
+    int n_mc
 )
 ```
 
@@ -5229,4 +5351,4 @@ The di_jet searches that are to be used.
 
 -------------------------------
 
-Updated on 2024-07-18 at 13:53:30 +0000
+Updated on 2025-02-12 at 15:36:38 +0000

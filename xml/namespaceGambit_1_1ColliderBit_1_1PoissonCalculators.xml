@@ -1,0 +1,200 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="namespaceGambit_1_1ColliderBit_1_1PoissonCalculators" kind="namespace" language="C++">
+    <compoundname>Gambit::ColliderBit::PoissonCalculators</compoundname>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="PoissonCalculators_8hpp_1a796212ce5ba88fd01463b3d510a7670a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::ColliderBit::PoissonCalculators::log_factorial</definition>
+        <argsstring>(double k)</argsstring>
+        <name>log_factorial</name>
+        <qualifiedname>Gambit::ColliderBit::PoissonCalculators::log_factorial</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/src/PoissonCalculators.cpp" line="32" column="14" bodyfile="ColliderBit/src/PoissonCalculators.cpp" bodystart="32" bodyend="35" declfile="ColliderBit/include/gambit/ColliderBit/PoissonCalculators.hpp" declline="40" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="PoissonCalculators_8hpp_1a7818fb71a776ebafe7aa98de624a0a29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::ColliderBit::PoissonCalculators::beta</definition>
+        <argsstring>(double x, double y)</argsstring>
+        <name>beta</name>
+        <qualifiedname>Gambit::ColliderBit::PoissonCalculators::beta</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/src/PoissonCalculators.cpp" line="37" column="14" bodyfile="ColliderBit/src/PoissonCalculators.cpp" bodystart="37" bodyend="40" declfile="ColliderBit/include/gambit/ColliderBit/PoissonCalculators.hpp" declline="41" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="PoissonCalculators_8hpp_1aa2f8694c27c0d2955fb260bbfff13717" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::ColliderBit::PoissonCalculators::binom</definition>
+        <argsstring>(double n, double k)</argsstring>
+        <name>binom</name>
+        <qualifiedname>Gambit::ColliderBit::PoissonCalculators::binom</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>n</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>k</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/src/PoissonCalculators.cpp" line="42" column="14" bodyfile="ColliderBit/src/PoissonCalculators.cpp" bodystart="42" bodyend="46" declfile="ColliderBit/include/gambit/ColliderBit/PoissonCalculators.hpp" declline="42" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="PoissonCalculators_8hpp_1abf488cc0f3fffc33853df74736478ff9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename engine_type</type>
+          </param>
+        </templateparamlist>
+        <type>int</type>
+        <definition>int Gambit::ColliderBit::PoissonCalculators::umvue_draw_n_mc</definition>
+        <argsstring>(double n_mc, engine_type engine)</argsstring>
+        <name>umvue_draw_n_mc</name>
+        <qualifiedname>Gambit::ColliderBit::PoissonCalculators::umvue_draw_n_mc</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>n_mc</declname>
+        </param>
+        <param>
+          <type>engine_type</type>
+          <declname>engine</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Unbiased likelihood estimator </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/src/PoissonCalculators.cpp" line="53" column="11" bodyfile="ColliderBit/src/PoissonCalculators.cpp" bodystart="53" bodyend="57" declfile="ColliderBit/include/gambit/ColliderBit/PoissonCalculators.hpp" declline="45" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="PoissonCalculators_8hpp_1a1fbe92fe2281fe272070d6e9ed225c28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Gambit::ColliderBit::PoissonCalculators::umvue_draw_n_mc</definition>
+        <argsstring>(double n_mc)</argsstring>
+        <name>umvue_draw_n_mc</name>
+        <qualifiedname>Gambit::ColliderBit::PoissonCalculators::umvue_draw_n_mc</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>n_mc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/src/PoissonCalculators.cpp" line="59" column="11" bodyfile="ColliderBit/src/PoissonCalculators.cpp" bodystart="59" bodyend="64" declfile="ColliderBit/include/gambit/ColliderBit/PoissonCalculators.hpp" declline="47" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="PoissonCalculators_8hpp_1a154281fc82996f455b1c965a1546e3eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Gambit::ColliderBit::PoissonCalculators::umvue_draw_n_mc_threadsafe</definition>
+        <argsstring>(double n_mc)</argsstring>
+        <name>umvue_draw_n_mc_threadsafe</name>
+        <qualifiedname>Gambit::ColliderBit::PoissonCalculators::umvue_draw_n_mc_threadsafe</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>n_mc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/src/PoissonCalculators.cpp" line="66" column="11" bodyfile="ColliderBit/src/PoissonCalculators.cpp" bodystart="66" bodyend="70" declfile="ColliderBit/include/gambit/ColliderBit/PoissonCalculators.hpp" declline="49" declcolumn="11"/>
+      </memberdef>
+      <memberdef kind="function" id="PoissonCalculators_8hpp_1a0b46556153b3cab2df8a61fd49b837bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::ColliderBit::PoissonCalculators::umvue_poisson_like</definition>
+        <argsstring>(int k, double b, int o, int n_mc, double n_exp)</argsstring>
+        <name>umvue_poisson_like</name>
+        <qualifiedname>Gambit::ColliderBit::PoissonCalculators::umvue_poisson_like</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>k</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>o</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>n_mc</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>n_exp</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/src/PoissonCalculators.cpp" line="72" column="14" bodyfile="ColliderBit/src/PoissonCalculators.cpp" bodystart="72" bodyend="118" declfile="ColliderBit/include/gambit/ColliderBit/PoissonCalculators.hpp" declline="51" declcolumn="14"/>
+      </memberdef>
+      <memberdef kind="function" id="PoissonCalculators_8hpp_1a85f997d1d4e7ba7b999ee5cecdb8a37c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Gambit::ColliderBit::PoissonCalculators::mle_poisson_loglike</definition>
+        <argsstring>(double s, double b, int o)</argsstring>
+        <name>mle_poisson_loglike</name>
+        <qualifiedname>Gambit::ColliderBit::PoissonCalculators::mle_poisson_loglike</qualifiedname>
+        <param>
+          <type>double</type>
+          <declname>s</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>o</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Regular likelihood estimator </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/src/PoissonCalculators.cpp" line="123" column="14" bodyfile="ColliderBit/src/PoissonCalculators.cpp" bodystart="123" bodyend="127" declfile="ColliderBit/include/gambit/ColliderBit/PoissonCalculators.hpp" declline="53" declcolumn="14"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ColliderBit/include/gambit/ColliderBit/PoissonCalculators.hpp" line="37" column="5"/>
+  </compounddef>
+</doxygen>

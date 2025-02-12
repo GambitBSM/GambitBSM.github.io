@@ -1,11 +1,11 @@
 ---
-title: "file Pythia_8_212/wrapper_SLHAinterface_decl.h"
+title: "file Pythia_8_312/wrapper_SLHAinterface_decl.h"
 
 description: "[No description available]"
 
 ---
 
-# file Pythia_8_212/wrapper_SLHAinterface_decl.h
+# file Pythia_8_312/wrapper_SLHAinterface_decl.h
 
 [No description available]
 
@@ -34,8 +34,8 @@ namespace CAT_3(
 ## Source code
 
 ```
-#ifndef __wrapper_SLHAinterface_decl_Pythia_8_212_h__
-#define __wrapper_SLHAinterface_decl_Pythia_8_212_h__
+#ifndef __wrapper_SLHAinterface_decl_Pythia_8_312_h__
+#define __wrapper_SLHAinterface_decl_Pythia_8_312_h__
 
 #include <cstddef>
 #include <sstream>
@@ -43,11 +43,12 @@ namespace CAT_3(
 #include "gambit/Backends/wrapperbase.hpp"
 #include "abstract_SLHAinterface.h"
 #include "wrapper_Info_decl.h"
-#include "wrapper_Settings_decl.h"
-#include "wrapper_Rndm_decl.h"
-#include "wrapper_Couplings_decl.h"
-#include "wrapper_ParticleData_decl.h"
 #include "wrapper_SusyLesHouches_decl.h"
+#include "wrapper_Settings_decl.h"
+#include "wrapper_ParticleData_decl.h"
+#include "wrapper_Rndm_decl.h"
+#include "wrapper_Logger_decl.h"
+#include "wrapper_CoupSM_decl.h"
 #include "wrapper_CoupSUSY_decl.h"
 
 #include "identification.hpp"
@@ -68,18 +69,17 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
                 // -- Other member variables: 
             public:
                 Pythia8::SusyLesHouches& slha;
-                Pythia8::CoupSUSY& coupSUSY;
                 int& meMode;
         
                 // Member functions: 
             public:
                 void setPtr(Pythia8::Info* infoPtrIn);
         
-                void init(Pythia8::Settings& settings, Pythia8::Rndm* rndmPtr, Pythia8::Couplings* couplingsPtrIn, Pythia8::ParticleData* particleDataPtr, bool& useSHLAcouplings, std::stringstream& ParticleDataBuffer);
+                void init(bool& useSHLAcouplings, std::stringstream& ParticleDataBuffer);
         
-                bool initSLHA(Pythia8::Settings& settings, Pythia8::ParticleData* particleDataPtr);
+                bool initSLHA();
         
-                void pythia2slha(Pythia8::ParticleData* particleDataPtr);
+                void pythia2slha();
         
         
                 // Wrappers for original constructors: 
@@ -109,10 +109,10 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 #include "gambit/Backends/backend_undefs.hpp"
 
-#endif /* __wrapper_SLHAinterface_decl_Pythia_8_212_h__ */
+#endif /* __wrapper_SLHAinterface_decl_Pythia_8_312_h__ */
 ```
 
 
 -------------------------------
 
-Updated on 2024-07-18 at 13:53:35 +0000
+Updated on 2025-02-12 at 15:36:43 +0000

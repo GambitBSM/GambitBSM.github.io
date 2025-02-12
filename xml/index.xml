@@ -162,6 +162,11 @@
     <member refid="structGambit_1_1ColliderBit_1_1__gsl__target__func__params_1a6dcd0e1179519bcc97f38d7f0b547787" kind="variable"><name>use_marg</name></member>
     <member refid="structGambit_1_1ColliderBit_1_1__gsl__target__func__params_1a2b349842b5c91e3b5ce69963d3003e39" kind="variable"><name>combine_nocovar_SRs</name></member>
     <member refid="structGambit_1_1ColliderBit_1_1__gsl__target__func__params_1ab9fa8956cf630d8b156819357c2d4f7c" kind="variable"><name>use_fulllikes</name></member>
+    <member refid="structGambit_1_1ColliderBit_1_1__gsl__target__func__params_1a76da9895d3974b120ce2a7500e1c92a6" kind="variable"><name>runOptions</name></member>
+    <member refid="structGambit_1_1ColliderBit_1_1__gsl__target__func__params_1ab0111a1122228694d04fd13caad13f27" kind="variable"><name>FullLikes_FileExists</name></member>
+    <member refid="structGambit_1_1ColliderBit_1_1__gsl__target__func__params_1aae4274858c8f2044ead764105ba3ab25" kind="variable"><name>FullLikes_ReadIn</name></member>
+    <member refid="structGambit_1_1ColliderBit_1_1__gsl__target__func__params_1a4214c50d588ff4ebc768c22d339e0455" kind="variable"><name>FullLikes_Evaluate</name></member>
+    <member refid="structGambit_1_1ColliderBit_1_1__gsl__target__func__params_1ab521137c2c01eaf9090cd08c93fa960a" kind="variable"><name>marginaliser</name></member>
   </compound>
   <compound refid="classAbstractBase" kind="class"><name>AbstractBase</name>
     <member refid="classAbstractBase_1a3fa972236e5028e6fc3bb9546dc082c7" kind="function"><name>~AbstractBase</name></member>
@@ -173,6 +178,14 @@
   </compound>
   <compound refid="classAdvanceDevs" kind="class"><name>AdvanceDevs</name>
     <member refid="classAdvanceDevs_1a7c9524dd2fc6f22e36a182e774da7679" kind="variable"><name>fac</name></member>
+    <member refid="classAdvanceDevs_1a5ac966bdb44e6143e7cef2f3951ec5b8" kind="function"><name>AdvanceDevs</name></member>
+    <member refid="classAdvanceDevs_1ada96d2c7bf2962629ce7dda5f44f5bbb" kind="function"><name>AdvanceDevs</name></member>
+    <member refid="classAdvanceDevs_1aaebb68e8fce8c9adba9b8fe3fb726613" kind="function"><name>MultiDevDist</name></member>
+    <member refid="classAdvanceDevs_1ad793b642bc2fa4483ae31994983d087c" kind="function"><name>MultiDevPDF</name></member>
+    <member refid="classAdvanceDevs_1acd4ad782cc903882456da7b359047ea0" kind="function"><name>MultiDev</name></member>
+    <member refid="classAdvanceDevs_1a4c9a06e56f9fd0f245b05721b05f1c83" kind="function"><name>MultiDev</name></member>
+    <member refid="classAdvanceDevs_1acdf24a0bcb33f559e4db5f1ca06f8455" kind="function"><name>EllipseDev</name></member>
+    <member refid="classAdvanceDevs_1afa9d18e160720406c74352fc161f79b7" kind="function"><name>EllipseDev</name></member>
     <member refid="classAdvanceDevs_1a5ac966bdb44e6143e7cef2f3951ec5b8" kind="function"><name>AdvanceDevs</name></member>
     <member refid="classAdvanceDevs_1ada96d2c7bf2962629ce7dda5f44f5bbb" kind="function"><name>AdvanceDevs</name></member>
     <member refid="classAdvanceDevs_1acd4ad782cc903882456da7b359047ea0" kind="function"><name>MultiDev</name></member>
@@ -1473,6 +1486,7 @@
     <member refid="structGambit_1_1ColliderBit_1_1AnalysisData_1a7244bf5e6045b822707f5964eebe9daf" kind="variable"><name>srdata_identifiers</name></member>
     <member refid="structGambit_1_1ColliderBit_1_1AnalysisData_1af98c120f3696d51946ecba30e946116a" kind="variable"><name>srcov</name></member>
     <member refid="structGambit_1_1ColliderBit_1_1AnalysisData_1a17422654eb281ba7b97513c5ec5967a4" kind="variable"><name>bkgjson_path</name></member>
+    <member refid="structGambit_1_1ColliderBit_1_1AnalysisData_1afd4d966c3fc24310fd98859a66b0f77d" kind="variable"><name>luminosity</name></member>
     <member refid="structGambit_1_1ColliderBit_1_1AnalysisData_1a2cd6d85738443c2a5c10d8667785c8c5" kind="function"><name>AnalysisData</name></member>
     <member refid="structGambit_1_1ColliderBit_1_1AnalysisData_1a5d40c727faaf2b8b23bc2331c3a0c109" kind="function"><name>AnalysisData</name></member>
     <member refid="structGambit_1_1ColliderBit_1_1AnalysisData_1aa920b5966e2bde6fd67bbe4a2c6118f5" kind="function"><name>AnalysisData</name></member>
@@ -1945,6 +1959,9 @@
     <member refid="classBasicDevs_1a1423bd8041d0566f6334d1fe8eafbcf7" kind="function"><name>BasicDevs</name></member>
     <member refid="classBasicDevs_1a1ecaa14bb5bb7e51f3d778d08450b804" kind="function"><name>Dev</name></member>
     <member refid="classBasicDevs_1a816f330135a42ddbd94fc44fb0f1825b" kind="function"><name>ExpDev</name></member>
+    <member refid="classBasicDevs_1a1423bd8041d0566f6334d1fe8eafbcf7" kind="function"><name>BasicDevs</name></member>
+    <member refid="classBasicDevs_1a1ecaa14bb5bb7e51f3d778d08450b804" kind="function"><name>Dev</name></member>
+    <member refid="classBasicDevs_1a816f330135a42ddbd94fc44fb0f1825b" kind="function"><name>ExpDev</name></member>
   </compound>
   <compound refid="classGambit_1_1BBN__container" kind="class"><name>Gambit::BBN_container</name>
     <member refid="classGambit_1_1BBN__container_1a81006b820dc77b55f3f65dde520fa50e" kind="variable"><name>NNUC</name></member>
@@ -2205,6 +2222,20 @@
   <compound refid="classCholesky" kind="class"><name>Cholesky</name>
     <member refid="classCholesky_1a3cde949f1ca60c9a8869d3230eaba35b" kind="variable"><name>el</name></member>
     <member refid="classCholesky_1ad0e16025a459f3e376a21be7c4012b44" kind="variable"><name>num</name></member>
+    <member refid="classCholesky_1a57ac6362cf5f9c52ba2dcdfca0e19ba5" kind="function"><name>Cholesky</name></member>
+    <member refid="classCholesky_1afe4f4b37871cd6dfd5b51308c3de96d8" kind="function"><name>Cholesky</name></member>
+    <member refid="classCholesky_1a10cdf822402d373f88696a10b84cd7ed" kind="function"><name>EnterMatM</name></member>
+    <member refid="classCholesky_1a98ba38a4ab7891dd24f91c4983034cad" kind="function"><name>EnterMat</name></member>
+    <member refid="classCholesky_1af1d21fe3e749d21c139e71a4fdafa2e8" kind="function"><name>EnterMat</name></member>
+    <member refid="classCholesky_1ab4968f8c5d1b9f049cb192fd3871193a" kind="function"><name>EnterMat</name></member>
+    <member refid="classCholesky_1abc182576c7cd82fa6566efef5ed173de" kind="function"><name>ElMult</name></member>
+    <member refid="classCholesky_1a55f427e5cca38879191ce7291a835366" kind="function"><name>ElMult</name></member>
+    <member refid="classCholesky_1aeccc578cf37e684d76473e77946520b6" kind="function"><name>Solve</name></member>
+    <member refid="classCholesky_1ad392e8211dccd589e764898698859b75" kind="function"><name>Square</name></member>
+    <member refid="classCholesky_1aa7628d7b1bb68969dbfde05277770b74" kind="function"><name>Square</name></member>
+    <member refid="classCholesky_1a152a90e646e2a656b8e9630075c41375" kind="function"><name>Inverse</name></member>
+    <member refid="classCholesky_1a678474da08112fa7bfe6924ea49b8f39" kind="function"><name>DetSqrt</name></member>
+    <member refid="classCholesky_1aed950ac074bea0a0df52749af3944d6a" kind="function"><name>~Cholesky</name></member>
     <member refid="classCholesky_1a57ac6362cf5f9c52ba2dcdfca0e19ba5" kind="function"><name>Cholesky</name></member>
     <member refid="classCholesky_1afe4f4b37871cd6dfd5b51308c3de96d8" kind="function"><name>Cholesky</name></member>
     <member refid="classCholesky_1a10cdf822402d373f88696a10b84cd7ed" kind="function"><name>EnterMatM</name></member>
@@ -2656,6 +2687,13 @@
     <member refid="classGambit_1_1DescriptionDatabase_1a51a0a94a0c98681c3d0e4a121fee481b" kind="function"><name>check_for_duplicates</name></member>
     <member refid="classGambit_1_1DescriptionDatabase_1a051f98b640720789cd28db0cc8dea25c" kind="function"><name>get_all_values</name></member>
   </compound>
+  <compound refid="classGambit_1_1Scanner_1_1Python_1_1diagnostics" kind="class"><name>Gambit::Scanner::Python::diagnostics</name>
+    <member refid="classGambit_1_1Scanner_1_1Python_1_1diagnostics_1ae3b553e5c67e7b178295d98724f4803c" kind="variable"><name>valid_commands</name></member>
+    <member refid="classGambit_1_1Scanner_1_1Python_1_1diagnostics_1aa806623f443b342acf582190b60fdfd9" kind="function"><name>diagnostics</name></member>
+    <member refid="classGambit_1_1Scanner_1_1Python_1_1diagnostics_1a08eae4c02df973e404f243b0d2561f0c" kind="function"><name>operator()</name></member>
+    <member refid="classGambit_1_1Scanner_1_1Python_1_1diagnostics_1aadc9072bc622820f2adf6382524190dc" kind="function"><name>operator()</name></member>
+    <member refid="classGambit_1_1Scanner_1_1Python_1_1diagnostics_1af737774ec257a40ff8bb9cac59cd5cf7" kind="function"><name>~diagnostics</name></member>
+  </compound>
   <compound refid="classGambit_1_1ColliderBit_1_1Dijet__analysis__info" kind="class"><name>Gambit::ColliderBit::Dijet_analysis_info</name>
     <member refid="classGambit_1_1ColliderBit_1_1Dijet__analysis__info_1a01fcdcaa3e7d236fd97447273b0b4c69" kind="variable"><name>name</name></member>
     <member refid="classGambit_1_1ColliderBit_1_1Dijet__analysis__info_1acc503beceded4b52eb829b61c89452a3" kind="variable"><name>interp1d</name></member>
@@ -2757,6 +2795,10 @@
   <compound refid="structGambit_1_1Diver__1__0__4_1_1diverScanData" kind="struct"><name>Gambit::Diver_1_0_4::diverScanData</name>
     <member refid="structGambit_1_1Diver__1__0__4_1_1diverScanData_1a6d2cbe54c049d7fe9e5cd39df87cdd39" kind="variable"><name>likelihood_function</name></member>
     <member refid="structGambit_1_1Diver__1__0__4_1_1diverScanData_1a5878b423d6e24f8ec9e07d2267e9f716" kind="variable"><name>printer</name></member>
+  </compound>
+  <compound refid="structGambit_1_1Diver__1__0__5_1_1diverScanData" kind="struct"><name>Gambit::Diver_1_0_5::diverScanData</name>
+    <member refid="structGambit_1_1Diver__1__0__5_1_1diverScanData_1aff617157a8b831329edde91b894c3227" kind="variable"><name>likelihood_function</name></member>
+    <member refid="structGambit_1_1Diver__1__0__5_1_1diverScanData_1ac69ee29daa964dfccb2ad80ae353dc17" kind="variable"><name>printer</name></member>
   </compound>
   <compound refid="structGambit_1_1DM__nucleon__couplings" kind="struct"><name>Gambit::DM_nucleon_couplings</name>
     <member refid="structGambit_1_1DM__nucleon__couplings_1aaced575836b7f26cbeb84854a820bcb8" kind="variable"><name>gps</name></member>
@@ -3698,6 +3740,8 @@
     <member refid="classExponDev_1aafde04249918102924821f55e5e9589d" kind="function"><name>Dev</name></member>
     <member refid="classExponDev_1a06d9df006b8824575167d8f9369f62ee" kind="function"><name>ExponDev</name></member>
     <member refid="classExponDev_1aafde04249918102924821f55e5e9589d" kind="function"><name>Dev</name></member>
+    <member refid="classExponDev_1a06d9df006b8824575167d8f9369f62ee" kind="function"><name>ExponDev</name></member>
+    <member refid="classExponDev_1aafde04249918102924821f55e5e9589d" kind="function"><name>Dev</name></member>
   </compound>
   <compound refid="classGambit_1_1Scanner_1_1Factory__Base" kind="class"><name>Gambit::Scanner::Factory_Base</name>
     <member refid="classGambit_1_1Scanner_1_1Factory__Base_1ae98201a869e733076999bbdd16d6fece" kind="function"><name>operator()</name></member>
@@ -3706,6 +3750,9 @@
   <compound refid="classGambit_1_1Scanner_1_1Plugins_1_1factoryBase" kind="class"><name>Gambit::Scanner::Plugins::factoryBase</name>
     <member refid="classGambit_1_1Scanner_1_1Plugins_1_1factoryBase_1a0f6faa1118b155b8b423ec0f432f2a17" kind="function"><name>operator()</name></member>
     <member refid="classGambit_1_1Scanner_1_1Plugins_1_1factoryBase_1aa31c14a7b194db5ae5e7b02de656d1e0" kind="function"><name>~factoryBase</name></member>
+  </compound>
+  <compound refid="classGambit_1_1Scanner_1_1Python_1_1fake__vector" kind="class"><name>Gambit::Scanner::Python::fake_vector</name>
+    <member refid="classGambit_1_1Scanner_1_1Python_1_1fake__vector_1a04fea35346d4ebd53994a80e87007b2d" kind="typedef"><name>vec_type</name></member>
   </compound>
   <compound refid="classGambit_1_1Farray" kind="class"><name>Gambit::Farray</name>
     <member refid="classGambit_1_1Farray_1a46d9df4eb54d188790013fecc938ac3f" kind="typedef"><name>allowed_types</name></member>
@@ -4110,6 +4157,7 @@
     <member refid="classGambit_1_1Scanner_1_1Function__Base_3_01ret_07args_8_8_8_08_4_1a08aa5fdba6c115eb76bc68606b5082d7" kind="function"><name>deleter</name></member>
     <member refid="classGambit_1_1Scanner_1_1Function__Base_3_01ret_07args_8_8_8_08_4_1aaff35a098ecd55385f9760d4f7e354d0" kind="function"><name>type</name></member>
     <member refid="classGambit_1_1Scanner_1_1Function__Base_3_01ret_07args_8_8_8_08_4_1a0451b367b650170b82d2fe60613ccbe9" kind="function"><name>Function_Base</name></member>
+    <member refid="classGambit_1_1Scanner_1_1Function__Base_3_01ret_07args_8_8_8_08_4_1aed5026ff9b8e3f53647d91036d5666d2" kind="function"><name>init</name></member>
     <member refid="classGambit_1_1Scanner_1_1Function__Base_3_01ret_07args_8_8_8_08_4_1ae10a510c1aa9a8423834352919a20c51" kind="function"><name>purposeModifier</name></member>
     <member refid="classGambit_1_1Scanner_1_1Function__Base_3_01ret_07args_8_8_8_08_4_1a56c3f1e2f1b870402ee819bf7938c434" kind="function"><name>main</name></member>
     <member refid="classGambit_1_1Scanner_1_1Function__Base_3_01ret_07args_8_8_8_08_4_1a9cdec7ebbcdc2d800e3c02609a1764da" kind="function"><name>~Function_Base</name></member>
@@ -5036,6 +5084,7 @@
     <member refid="classGambit_1_1Printers_1_1HDF5Printer2_1a7b21ddd72dbd75819140a0f9cb211c5f" kind="variable"><name>myRank</name></member>
     <member refid="classGambit_1_1Printers_1_1HDF5Printer2_1a0eea1e4cd03d2bd70f4bd50097fe2297" kind="variable"><name>mpiSize</name></member>
     <member refid="classGambit_1_1Printers_1_1HDF5Printer2_1a04a750f501e406d52cb3ee412f927305" kind="variable"><name>lastPointID</name></member>
+    <member refid="classGambit_1_1Printers_1_1HDF5Printer2_1a8ddb12ff73158c8e9edf60e195254474" kind="variable"><name>use_metadata</name></member>
     <member refid="classGambit_1_1Printers_1_1HDF5Printer2_1ae4a7b8ffdea7c4e3b2271a436d64654a" kind="variable"><name>buffermaster</name></member>
     <member refid="classGambit_1_1Printers_1_1HDF5Printer2_1a2d4f7826a2ea9012f5b49bca38a9ec0a" kind="variable"><name>aux_buffers</name></member>
   </compound>
@@ -5160,6 +5209,9 @@
     <member refid="classGambit_1_1IniParser_1_1IniFile_1ad46530318c26f19a344c792d8f2a4e47" kind="variable"><name>backend_rules</name></member>
     <member refid="classGambit_1_1IniParser_1_1IniFile_1a0eb359cee3a4b5ca2e8ea03f8e203a50" kind="function"><name>filename</name></member>
     <member refid="classGambit_1_1IniParser_1_1IniFile_1a84f7b652e87357cfa3362511398d4753" kind="function"><name>readFile</name></member>
+  </compound>
+  <compound refid="classGambit_1_1Scanner_1_1Python_1_1IniFileParser" kind="class"><name>Gambit::Scanner::Python::IniFileParser</name>
+    <member refid="classGambit_1_1Scanner_1_1Python_1_1IniFileParser_1a8497f7761b63856ca7eca2112a8bcc32" kind="function"><name>inputNode</name></member>
   </compound>
   <compound refid="classGambit_1_1ColliderBit_1_1Py8Collider_1_1InitializationError" kind="class"><name>Gambit::ColliderBit::Py8Collider::InitializationError</name>
     <member refid="classGambit_1_1ColliderBit_1_1Py8Collider_1_1InitializationError_1a198a8c3efe5ac0e8da9f105411767d53" kind="function"><name>what</name></member>
@@ -5637,8 +5689,14 @@
   </compound>
   <compound refid="classGambit_1_1MultiNest_1_1LogLikeWrapper" kind="class"><name>Gambit::MultiNest::LogLikeWrapper</name>
     <member refid="classGambit_1_1MultiNest_1_1LogLikeWrapper_1ab61dbee6e8f241a093222880934e14cb" kind="variable"><name>boundLogLike</name></member>
-    <member refid="classGambit_1_1MultiNest_1_1LogLikeWrapper_1abf62f42dc7e8e1376cabdf7475dcf09e" kind="variable"><name>boundPrinter</name></member>
+    <member refid="classGambit_1_1MultiNest_1_1LogLikeWrapper_1aed72ca494896deafdf72672468c3e38d" kind="variable"><name>boundPrinter</name></member>
     <member refid="classGambit_1_1MultiNest_1_1LogLikeWrapper_1a1520a5ebab8ada5e2c36526fccf77e0b" kind="variable"><name>dumper_runonce</name></member>
+    <member refid="classGambit_1_1MultiNest_1_1LogLikeWrapper_1a849365fb4aa3de55daa39e7a3feafc15" kind="function"><name>LogLikeWrapper</name></member>
+    <member refid="classGambit_1_1MultiNest_1_1LogLikeWrapper_1aa028a57d12da27737a177f7739925135" kind="function"><name>LogLike</name></member>
+    <member refid="classGambit_1_1MultiNest_1_1LogLikeWrapper_1a968815716208bbc83bf2494032f49476" kind="function"><name>dumper</name></member>
+    <member refid="classGambit_1_1MultiNest_1_1LogLikeWrapper_1a849365fb4aa3de55daa39e7a3feafc15" kind="function"><name>LogLikeWrapper</name></member>
+    <member refid="classGambit_1_1MultiNest_1_1LogLikeWrapper_1aa028a57d12da27737a177f7739925135" kind="function"><name>LogLike</name></member>
+    <member refid="classGambit_1_1MultiNest_1_1LogLikeWrapper_1a968815716208bbc83bf2494032f49476" kind="function"><name>dumper</name></member>
     <member refid="classGambit_1_1MultiNest_1_1LogLikeWrapper_1a849365fb4aa3de55daa39e7a3feafc15" kind="function"><name>LogLikeWrapper</name></member>
     <member refid="classGambit_1_1MultiNest_1_1LogLikeWrapper_1aa028a57d12da27737a177f7739925135" kind="function"><name>LogLike</name></member>
     <member refid="classGambit_1_1MultiNest_1_1LogLikeWrapper_1a968815716208bbc83bf2494032f49476" kind="function"><name>dumper</name></member>
@@ -6035,6 +6093,10 @@
     <member refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1abab9f14e9f7d2c39ec9c4a00cb52f788" kind="variable"><name>invalidate_failed_points</name></member>
     <member refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a84e89c7e58fe734446499a0fb1cd325f" kind="variable"><name>event_count</name></member>
     <member refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a818bc16a50d3653d7e586bb867258a31" kind="variable"><name>convergence_options</name></member>
+    <member refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1aae9f9da55a9ac8d94941fd5490363d20" kind="variable"><name>estimator</name></member>
+    <member refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a078f0e4e946800888e3c65bbe8ee053b" kind="variable"><name>ratio_MC_expected</name></member>
+    <member refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a62aba7a76840caa0da18b0103b9cdafc" kind="variable"><name>mean_nEvents</name></member>
+    <member refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a717218d8470a04a6cc16095c57320545" kind="variable"><name>desired_nEvents</name></member>
     <member refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a6f024bfb1181bc749de04ff62a20ab70" kind="variable"><name>analyses</name></member>
     <member refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1aa841fe1447d50d56f5b8e49a67f23309" kind="variable"><name>detector_analyses</name></member>
     <member refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1ada1951bcaa97cae6828d39a3862b442f" kind="variable"><name>_current_collider</name></member>
@@ -6155,6 +6217,7 @@
     <member refid="structGambit_1_1Mesons__masses_1a00e6737a6defa9c9a21ba8905b0c406a" kind="variable"><name>Dstar_s</name></member>
     <member refid="structGambit_1_1Mesons__masses_1a0959d9a8f849e513495f3b341c0b04b9" kind="variable"><name>phi</name></member>
     <member refid="structGambit_1_1Mesons__masses_1af4a4ab9eca47dd5544bddc4e4869199e" kind="variable"><name>Jpsi</name></member>
+    <member refid="structGambit_1_1Mesons__masses_1a4ae6262fdc08e226b0040961b048c5a2" kind="function"><name>Mesons_masses</name></member>
   </compound>
   <compound refid="structGambit_1_1Logging_1_1Message" kind="struct"><name>Gambit::Logging::Message</name>
     <member refid="structGambit_1_1Logging_1_1Message_1a2d4558019534041c40cd35dce070a13c" kind="variable"><name>message</name></member>
@@ -6452,6 +6515,14 @@
     <member refid="structGambit_1_1DRes_1_1ModuleRule_1ae89448cc127adddc14233199b87ede89" kind="function"><name>backend_reqs_allow</name></member>
     <member refid="structGambit_1_1DRes_1_1ModuleRule_1a4a2cdc6fa012f37c9f243b4cc0ef8b8d" kind="function"><name>ModuleRule</name></member>
     <member refid="structGambit_1_1DRes_1_1ModuleRule_1a549fc02c088400792720664ac848ac49" kind="function"><name>permits_field</name></member>
+  </compound>
+  <compound refid="structGambit_1_1Scanner_1_1mpi__dist__internal_1_1mpi__dist" kind="struct"><name>Gambit::Scanner::mpi_dist_internal::mpi_dist</name>
+    <member refid="structGambit_1_1Scanner_1_1mpi__dist__internal_1_1mpi__dist_1a2cde79c486ea4dd745da63aa68d98479" kind="variable"><name>N</name></member>
+    <member refid="structGambit_1_1Scanner_1_1mpi__dist__internal_1_1mpi__dist_1acc339092823295d7deb11899daa276ee" kind="variable"><name>rank</name></member>
+    <member refid="structGambit_1_1Scanner_1_1mpi__dist__internal_1_1mpi__dist_1ae74f59370fd01b0361eeef0ba7bd92e0" kind="variable"><name>numtasks</name></member>
+    <member refid="structGambit_1_1Scanner_1_1mpi__dist__internal_1_1mpi__dist_1a9b62d672018d40dc8535bb42e05b1ce9" kind="function"><name>mpi_dist</name></member>
+    <member refid="structGambit_1_1Scanner_1_1mpi__dist__internal_1_1mpi__dist_1ac64a75dee88ceed6a25949c39aedae1f" kind="function"><name>mpi_dist</name></member>
+    <member refid="structGambit_1_1Scanner_1_1mpi__dist__internal_1_1mpi__dist_1a8acea02d73ad39415cba5386d89bf336" kind="function"><name>operator=</name></member>
   </compound>
   <compound refid="classGambit_1_1MPIShutdownException" kind="class"><name>Gambit::MPIShutdownException</name>
     <member refid="classGambit_1_1MPIShutdownException_1a657c12d0ed703c6c935d2f72e9501f60" kind="function"><name>MPIShutdownException</name></member>
@@ -6803,10 +6874,21 @@
     <member refid="classMultiNormalDev_1a7bae11d59be6a5210c1cf6b8ee6686a6" kind="function"><name>Dev</name></member>
     <member refid="classMultiNormalDev_1a83b9c66c6fa4ac6c4c5a1ef8971e6d12" kind="function"><name>Dev</name></member>
     <member refid="classMultiNormalDev_1a501fdd01bda5c2c96973496d232197fb" kind="function"><name>~MultiNormalDev</name></member>
+    <member refid="classMultiNormalDev_1a22622034b19de6f1b70eb8e23d996662" kind="function"><name>MultiNormalDev</name></member>
+    <member refid="classMultiNormalDev_1a7bae11d59be6a5210c1cf6b8ee6686a6" kind="function"><name>Dev</name></member>
+    <member refid="classMultiNormalDev_1a83b9c66c6fa4ac6c4c5a1ef8971e6d12" kind="function"><name>Dev</name></member>
+    <member refid="classMultiNormalDev_1a501fdd01bda5c2c96973496d232197fb" kind="function"><name>~MultiNormalDev</name></member>
   </compound>
   <compound refid="classMultiNormDev" kind="class"><name>MultiNormDev</name>
     <member refid="classMultiNormDev_1add62bc99d9455632c06e6b7456ac2447" kind="variable"><name>fac</name></member>
     <member refid="classMultiNormDev_1a3d9d30172e8ed53cf73efee4143fb04a" kind="variable"><name>num</name></member>
+    <member refid="classMultiNormDev_1a15b17fa25092d8b4c5b88a96e7e8600e" kind="function"><name>MultiNormDev</name></member>
+    <member refid="classMultiNormDev_1ad0fe9e6e53454bf48af99a82827f388c" kind="function"><name>MultiNormDev</name></member>
+    <member refid="classMultiNormDev_1a35b334c47741805ea84ec58d87270bde" kind="function"><name>MultiDev</name></member>
+    <member refid="classMultiNormDev_1aa2889a891874351dd6916ada96cbab63" kind="function"><name>MultiDev</name></member>
+    <member refid="classMultiNormDev_1a3f722af2a06492463e6495e379242f5b" kind="function"><name>MultiDevGauss</name></member>
+    <member refid="classMultiNormDev_1ad168403529980053ffcb13c446538537" kind="function"><name>EllipseDev</name></member>
+    <member refid="classMultiNormDev_1ac767a09eeb8d892e35a62c4fe92af74e" kind="function"><name>EllipseDev</name></member>
     <member refid="classMultiNormDev_1a15b17fa25092d8b4c5b88a96e7e8600e" kind="function"><name>MultiNormDev</name></member>
     <member refid="classMultiNormDev_1ad0fe9e6e53454bf48af99a82827f388c" kind="function"><name>MultiNormDev</name></member>
     <member refid="classMultiNormDev_1a35b334c47741805ea84ec58d87270bde" kind="function"><name>MultiDev</name></member>
@@ -6945,6 +7027,8 @@
   <compound refid="classNormalDev" kind="class"><name>NormalDev</name>
     <member refid="classNormalDev_1a6813d04ff8bda201705514dba59042fe" kind="variable"><name>mu</name></member>
     <member refid="classNormalDev_1ae42ef6e36cb1f95e99f5f8f8ed79fd2a" kind="variable"><name>sig</name></member>
+    <member refid="classNormalDev_1a4ae9d7828ad1d9e035688debed8ec05b" kind="function"><name>NormalDev</name></member>
+    <member refid="classNormalDev_1a2be7bc54cc672adcff4e8aaa7ad609b8" kind="function"><name>Dev</name></member>
     <member refid="classNormalDev_1a4ae9d7828ad1d9e035688debed8ec05b" kind="function"><name>NormalDev</name></member>
     <member refid="classNormalDev_1a2be7bc54cc672adcff4e8aaa7ad609b8" kind="function"><name>Dev</name></member>
     <member refid="classNormalDev_1a4ae9d7828ad1d9e035688debed8ec05b" kind="function"><name>NormalDev</name></member>
@@ -8542,6 +8626,21 @@
     <member refid="classGambit_1_1IniParser_1_1Parser_1a7b39009da65e598cf8088b9df7d796af" kind="function"><name>basicParse</name></member>
     <member refid="classGambit_1_1IniParser_1_1Parser_1a17552f60dcbe039c20b99dce765ffae1" kind="function"><name>printNode</name></member>
   </compound>
+  <compound refid="classGambit_1_1jswarm__1__0__0_1_1particle" kind="class"><name>Gambit::jswarm_1_0_0::particle</name>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle_1a43676f893fd2daeff8ce8e32254d98dd" kind="variable"><name>lowerbounds</name></member>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle_1a6234b700917fc6bf87a6506c57cfc535" kind="variable"><name>upperbounds</name></member>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle_1af40d5a400a5921e49e7933fc99604da9" kind="variable"><name>rng</name></member>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle_1a06384789733c97fca4e215da8ed7783b" kind="variable"><name>x</name></member>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle_1a2e7e2c8d7b2cfcb7e12d436bb486efb7" kind="variable"><name>v</name></member>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle_1a7b5d1e1e7d2883c319d5789553aa5639" kind="variable"><name>lnlike</name></member>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle_1aba52e2b0aa1a4f2b77b080b52036422c" kind="variable"><name>personal_best_value</name></member>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle_1a83ec67f78e839514caf5901ea8ca4c6f" kind="variable"><name>personal_best_x</name></member>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle_1a327072ecadedca1e0c0b8b0dd76a3a2f" kind="function"><name>particle</name></member>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle_1a2b10c613a0912ae034f5244aee93e3d4" kind="function"><name>init</name></member>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle_1af674642d9747e91038b3edea8892cb2a" kind="function"><name>update_personal_best</name></member>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle_1a888f5a5a35036735ac760616edc741ee" kind="function"><name>reflect</name></member>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle_1a3140ac5640b5f11d828c45809ca9f723" kind="function"><name>discretised_x</name></member>
+  </compound>
   <compound refid="structGambit_1_1particle2" kind="struct"><name>Gambit::particle2</name>
     <member refid="structGambit_1_1particle2_1a308560349f19ae65cec5636e0717064f" kind="variable"><name>m</name></member>
     <member refid="structGambit_1_1particle2_1a595d243270013752c1d1696222a82ffc" kind="variable"><name>m2</name></member>
@@ -8562,6 +8661,67 @@
     <member refid="structGambit_1_1particle23_1af41317506f32076942391f97936f80f7" kind="variable"><name>gi3</name></member>
     <member refid="structGambit_1_1particle23_1a50dcec3b6f7e573ea0ce9b5abf427b2e" kind="variable"><name>bi2</name></member>
     <member refid="structGambit_1_1particle23_1a5c2dee9e9f344dac26ca1eff61e07232" kind="variable"><name>bi3</name></member>
+  </compound>
+  <compound refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm" kind="class"><name>Gambit::jswarm_1_0_0::particle_swarm</name>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a0d05cf134a1b30539b4cbf28367c5b54" kind="variable"><name>global_best_value</name></member>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a5a2caf6d70376c94fcfd7b2ed44b5e3d" kind="variable"><name>global_best_x</name></member>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a6820909de300d39d592160c02727902a" kind="variable"><name>phi1_index</name></member>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a4dc8e283671bb87c8cbf0a22d35edb8f" kind="variable"><name>phi2_index</name></member>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1ac880b55d8526bc29033405a7fc689182" kind="variable"><name>omega_index</name></member>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1ac834fe49e4cd8495b3327dbf68488fb1" kind="variable"><name>upperbounds</name></member>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1aaa262ea5325c71b52850f99c6bd1bad6" kind="variable"><name>lowerbounds</name></member>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a5a46c977c745297286f7c2345d3812b3" kind="variable"><name>rank</name></member>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a8e0dccd6f1a1f63e3350f76d877339af" kind="variable"><name>nprocs</name></member>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1abce1688c56ce0b579f772ad8d21fc368" kind="variable"><name>NP_per_rank</name></member>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a7b3d8436030147b696e72d9270bb88ed" kind="variable"><name>particles</name></member>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a6de4e04b4d2b0fd0cc42f27ce669dfb7" kind="variable"><name>particles_global</name></member>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a3e912e8274e5e6452366a792d46418f6" kind="variable"><name>mean_lnlike</name></member>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1ad90475e77b6373ded32900cd85f95078" kind="variable"><name>sfim</name></member>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1aa8f043d1e24a473272421e35f1a06267" kind="variable"><name>conv_progress</name></member>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1abb0b725ec271d7b689827afaefd2efb0" kind="variable"><name>nPar_total</name></member>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1ac599816928274bba8ba8c04c845ac3b0" kind="variable"><name>input_seed</name></member>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1acc8c9ecae9ebeb1cee82737b1752008a" kind="variable"><name>rng</name></member>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1acc5b679c66b7206256bf145cf6447b48" kind="variable"><name>likelihood_function</name></member>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a99a46596d1e1754fe21d95fee60217ee" kind="variable"><name>printer</name></member>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1aaba48f4da1c8e83e634a3434ac6cd7bb" kind="variable"><name>path</name></member>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1aefccb6eb1dc3fe1daf9b82ba25205d49" kind="variable"><name>nPar</name></member>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1ad5db2524959d803912ee9dfaa5e4f9ba" kind="variable"><name>nDerived</name></member>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a2998721cb42446f4c5ef815b2a8b62a7" kind="variable"><name>nDiscrete</name></member>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a19603e71ccbd360f0c8071ca58e384e8" kind="variable"><name>maxgen</name></member>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a8d6fa63fb3fd1aa6e8c7de75d4ee029e" kind="variable"><name>NP</name></member>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a287d1e3b250a5862ee57f7136f31a43f" kind="variable"><name>bndry</name></member>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1acda37e8f11678ba74a8f4f288d605b42" kind="variable"><name>convsteps</name></member>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a2ec65ab69ab0129e7862733482d4d984" kind="variable"><name>savecount</name></member>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1ac71129d9d94d8026a2accf67f7d6f032" kind="variable"><name>init_pop_strategy</name></member>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1aab9cfead1c206d1d8772f1acd14474aa" kind="variable"><name>max_ini_attempts</name></member>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a1b273a298d805f9b4de548d400628963" kind="variable"><name>verbose</name></member>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1acf47987d841d4c7c5029844615928ef4" kind="variable"><name>seed</name></member>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1ae6ddd93f42db2a320fe14f6b8657d1ce" kind="variable"><name>fcall</name></member>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a05017ca6779a639a4acd6a46156a6d28" kind="variable"><name>fcall_global</name></member>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a268939522e122929c487c65a8c26f258" kind="variable"><name>omega</name></member>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a3cb5b8a41d76210d52b4fb060ee5e4f2" kind="variable"><name>phi1</name></member>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a35fa8aa163445ad9d8a67aad4f149263" kind="variable"><name>phi2</name></member>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a72c44f2ebda3d672bb8e45166694d4ff" kind="variable"><name>convthresh</name></member>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1ab071d6326a87c3bf71a219260bc6af62" kind="variable"><name>min_acceptable_value</name></member>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a1a2a88be7c2c8ec9bf98452699aecd62" kind="variable"><name>adapt_phi</name></member>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1aa66cf9176c2096de2916e3e20953043e" kind="variable"><name>adapt_omega</name></member>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a7538299024744af1e37b8797d1eed058" kind="variable"><name>init_stationary</name></member>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a1666abaca7c08bc88c6536268e889870" kind="variable"><name>resume</name></member>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1ad34cf4a1394f4fa375405cfd500c07e0" kind="variable"><name>allow_new_settings</name></member>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1ae07b325fab1014800ebc184d75ffbeb2" kind="variable"><name>save_particles_natively</name></member>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a6490b9d6c9eaee65fba71c924f5fe4ef" kind="variable"><name>discrete</name></member>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a05ed7dddd24e0f1e18cc344f5ef358e8" kind="function"><name>update_particle</name></member>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a398ca76c09890733305d2f30a0625923" kind="function"><name>update_best_fits</name></member>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1aac7dbb03fc06d15a338a26a4790f733e" kind="function"><name>implement_boundary_policy</name></member>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1aa0d7cb64477ee77364bedb675975255b" kind="function"><name>save_settings</name></member>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a5c2d328bbc9bb73f511426e0e73d3af6" kind="function"><name>read_settings</name></member>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a8b54a63b559ea1edf3de245bdf22ed90" kind="function"><name>save_generation</name></member>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a7ae8debfcf1b2032d0d490b482c63bea" kind="function"><name>read_generation</name></member>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a37ebfb7282794f186e543a1329b84aa0" kind="function"><name>converged</name></member>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a886f5026f2f49f16a514e2610565ec9e" kind="function"><name>collect_data</name></member>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a474297ad1c4788b10d9ae4c94535f84b" kind="function"><name>particle_swarm</name></member>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a90e2ad0eb3c4a145558f65e48f5584ba" kind="function"><name>init</name></member>
+    <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a685ca1bcb13abfc67e70127f3dd36a2d" kind="function"><name>run</name></member>
   </compound>
   <compound refid="structGambit_1_1ColliderBit_1_1Analysis__ATLAS__8TeV__1LEPbb__20invfb_1_1particleComparison" kind="struct"><name>Gambit::ColliderBit::Analysis_ATLAS_8TeV_1LEPbb_20invfb::particleComparison</name>
     <member refid="structGambit_1_1ColliderBit_1_1Analysis__ATLAS__8TeV__1LEPbb__20invfb_1_1particleComparison_1a2d0bb71a0d00cc368f961b7469fcbf85" kind="function"><name>operator()</name></member>
@@ -9044,6 +9204,14 @@
     <member refid="classGambit_1_1CosmoBit_1_1Primordial__ps_1a6450c276bde00e0d69de1ca8247042dd" kind="function"><name>get_P_s_iso</name></member>
     <member refid="classGambit_1_1CosmoBit_1_1Primordial__ps_1ac1ea0d8d237024522424b762f893a6d2" kind="function"><name>get_vec_size</name></member>
   </compound>
+  <compound refid="classGambit_1_1Scanner_1_1Python_1_1printer__wrapper" kind="class"><name>Gambit::Scanner::Python::printer_wrapper</name>
+    <member refid="classGambit_1_1Scanner_1_1Python_1_1printer__wrapper_1a31e0f7f37a009b2aa6340f9bb442dd90" kind="variable"><name>scanner</name></member>
+    <member refid="classGambit_1_1Scanner_1_1Python_1_1printer__wrapper_1afcc2c08f05e8657d06bcf3a3e84ba122" kind="function"><name>printer_wrapper</name></member>
+    <member refid="classGambit_1_1Scanner_1_1Python_1_1printer__wrapper_1aa2ce89608cbec6b78941d403369294f5" kind="function"><name>main_printer</name></member>
+    <member refid="classGambit_1_1Scanner_1_1Python_1_1printer__wrapper_1ae29bf90cc565c5138f6c967313d4909a" kind="function"><name>main_printer</name></member>
+    <member refid="classGambit_1_1Scanner_1_1Python_1_1printer__wrapper_1ac75e1960e114937313e9ee5dc08e0d28" kind="function"><name>aux_printer</name></member>
+    <member refid="classGambit_1_1Scanner_1_1Python_1_1printer__wrapper_1a121b7e8e128977597299de37c5c49ff5" kind="function"><name>~printer_wrapper</name></member>
+  </compound>
   <compound refid="classGambit_1_1Printers_1_1PrinterManager" kind="class"><name>Gambit::Printers::PrinterManager</name>
     <member refid="classGambit_1_1Printers_1_1PrinterManager_1a0f43406445f61449421c4542fa5394c5" kind="variable"><name>auxprinters</name></member>
     <member refid="classGambit_1_1Printers_1_1PrinterManager_1a0f556d18cfb1761b11473962f3f45544" kind="variable"><name>readers</name></member>
@@ -9201,10 +9369,10 @@
     <member refid="classGambit_1_1ColliderBit_1_1Py8Collider_1a89df5232d4b46999a0899e7cdfb231e4" kind="function"><name>banner</name></member>
     <member refid="classGambit_1_1ColliderBit_1_1Py8Collider_1aeae80e144f0889e0d5fb42e44c43ffdd" kind="function"><name>init</name></member>
     <member refid="classGambit_1_1ColliderBit_1_1Py8Collider_1aa0e506de7f07e74bef7594c3eedfd1a1" kind="function"><name>init</name></member>
-    <member refid="classGambit_1_1ColliderBit_1_1Py8Collider_1a3c51b0f7ca87a71cc5c2f7f386b4e868" kind="function"><name>init</name></member>
-    <member refid="classGambit_1_1ColliderBit_1_1Py8Collider_1a7a85a588fc16aaee649d6feaf584b329" kind="function"><name>init_user_model</name></member>
-    <member refid="classGambit_1_1ColliderBit_1_1Py8Collider_1add0ca6d3cdbf992ef680c55746fa6f5d" kind="function"><name>init</name></member>
-    <member refid="classGambit_1_1ColliderBit_1_1Py8Collider_1a5a528c25a241352ad3cc5a56ce9ebdf7" kind="function"><name>init_user_model</name></member>
+    <member refid="classGambit_1_1ColliderBit_1_1Py8Collider_1af1c3b5f9cfc1036a21158ba602c6a67a" kind="function"><name>init</name></member>
+    <member refid="classGambit_1_1ColliderBit_1_1Py8Collider_1a850faabc47476fc408eee40a3a7f51ad" kind="function"><name>init_user_model</name></member>
+    <member refid="classGambit_1_1ColliderBit_1_1Py8Collider_1a4610700bc29279b25360f83d868dd324" kind="function"><name>init</name></member>
+    <member refid="classGambit_1_1ColliderBit_1_1Py8Collider_1a4da314faabaae9439e66e4ce95db4e0d" kind="function"><name>init_user_model</name></member>
     <member refid="classGambit_1_1ColliderBit_1_1Py8Collider_1a6526db446fe9d9211b171377da856d40" kind="function"><name>nextEvent</name></member>
     <member refid="classGambit_1_1ColliderBit_1_1Py8Collider_1a140a68f9f9181c4af6abdaf6b2728dd6" kind="function"><name>xsec_fb</name></member>
     <member refid="classGambit_1_1ColliderBit_1_1Py8Collider_1a9d5000a64828612ddee0fb1733c8bde7" kind="function"><name>xsec_fb</name></member>
@@ -9216,6 +9384,8 @@
     <member refid="classGambit_1_1ColliderBit_1_1Py8Collider_1afb12aeee546b015dcf120fe55ae75ffb" kind="function"><name>xsecErr_pb</name></member>
     <member refid="classGambit_1_1ColliderBit_1_1Py8Collider_1af0a0e267ea5fced895a34e729609c8ef" kind="function"><name>process_code</name></member>
     <member refid="classGambit_1_1ColliderBit_1_1Py8Collider_1aff94f87efa8800793a1bb3fc11834801" kind="function"><name>all_active_process_codes</name></member>
+    <member refid="classGambit_1_1ColliderBit_1_1Py8Collider_1ab4909114dcad7c550f2f066bea81ca00" kind="function"><name>max_xsec_fb</name></member>
+    <member refid="classGambit_1_1ColliderBit_1_1Py8Collider_1a6c6818f19dff52495a9cbbb7b776bbcd" kind="function"><name>max_xsec_pb</name></member>
     <member refid="classGambit_1_1ColliderBit_1_1Py8Collider_1af41412e3402ddda9dac423336a3d1e22" kind="variable"><name>_pythiaInstance</name></member>
     <member refid="classGambit_1_1ColliderBit_1_1Py8Collider_1a29ed0f06f0b9e87255106e1fda9f4830" kind="variable"><name>_pythiaBase</name></member>
     <member refid="classGambit_1_1ColliderBit_1_1Py8Collider_1aca77d2bc2d4f26856eb618807018f5bc" kind="variable"><name>_pythiaSettings</name></member>
@@ -9285,11 +9455,17 @@
     <member refid="classRan_1a789897ad8b5b38a2e9fe8657ca809f8b" kind="function"><name>Doub</name></member>
     <member refid="classRan_1a721d7b18b913e1ec15f766ef3e61ee7f" kind="function"><name>Ran</name></member>
     <member refid="classRan_1a789897ad8b5b38a2e9fe8657ca809f8b" kind="function"><name>Doub</name></member>
+    <member refid="classRan_1a721d7b18b913e1ec15f766ef3e61ee7f" kind="function"><name>Ran</name></member>
+    <member refid="classRan_1a789897ad8b5b38a2e9fe8657ca809f8b" kind="function"><name>Doub</name></member>
   </compound>
   <compound refid="classRan__old" kind="class"><name>Ran_old</name>
     <member refid="classRan__old_1a37dbc9baa60da01e9bb5030c0b5fd625" kind="variable"><name>u</name></member>
     <member refid="classRan__old_1a3e2a58bedc0120dd92b6b8897293d6a2" kind="variable"><name>v</name></member>
     <member refid="classRan__old_1ab71ffd7e9ea1f93fa771c14150a36c85" kind="variable"><name>w</name></member>
+    <member refid="classRan__old_1ad468655c1411b538e87f64cf3aba0b6c" kind="function"><name>Ran_old</name></member>
+    <member refid="classRan__old_1a450d72b4b52d7c634731ca1f052cbdfb" kind="function"><name>int64</name></member>
+    <member refid="classRan__old_1a34f27c257bfd7fa165946082e93af6f0" kind="function"><name>Doub</name></member>
+    <member refid="classRan__old_1a3754946db9bbccfdf78eb830d52dce75" kind="function"><name>int32</name></member>
     <member refid="classRan__old_1ad468655c1411b538e87f64cf3aba0b6c" kind="function"><name>Ran_old</name></member>
     <member refid="classRan__old_1a450d72b4b52d7c634731ca1f052cbdfb" kind="function"><name>int64</name></member>
     <member refid="classRan__old_1a34f27c257bfd7fa165946082e93af6f0" kind="function"><name>Doub</name></member>
@@ -9331,6 +9507,16 @@
     <member refid="classRandomBasis_1ab4d3094d5a8bcdf3e7b415a63e4f4fc2" kind="function"><name>Adjust</name></member>
     <member refid="classRandomBasis_1a8405df65e14c5acbed0fc40e2558dd6f" kind="function"><name>operator++</name></member>
     <member refid="classRandomBasis_1ad0c80b09ef69d99c776dad7a1f612618" kind="function"><name>~RandomBasis</name></member>
+    <member refid="classRandomBasis_1a4efc3804dd99f33c0ae59b2c662c9d5f" kind="function"><name>RandomBasis</name></member>
+    <member refid="classRandomBasis_1ad74ea15c5f8c80708e7d88f61ae68d9c" kind="function"><name>ChangeDim</name></member>
+    <member refid="classRandomBasis_1ab1fd63af0deadd6d8f425e821d953006" kind="function"><name>RandRot</name></member>
+    <member refid="classRandomBasis_1a61db105084460c96b9db34b4e4c2187c" kind="function"><name>RanMult</name></member>
+    <member refid="classRandomBasis_1a19f3c763828e1019b40b67622dbb31c0" kind="function"><name>RanMult</name></member>
+    <member refid="classRandomBasis_1acfdef19433906c35b1c38faf43031e34" kind="function"><name>RanMult</name></member>
+    <member refid="classRandomBasis_1adb944baefc0c297821f4659ce0fbfb6e" kind="function"><name>Mag</name></member>
+    <member refid="classRandomBasis_1ab4d3094d5a8bcdf3e7b415a63e4f4fc2" kind="function"><name>Adjust</name></member>
+    <member refid="classRandomBasis_1a8405df65e14c5acbed0fc40e2558dd6f" kind="function"><name>operator++</name></member>
+    <member refid="classRandomBasis_1ad0c80b09ef69d99c776dad7a1f612618" kind="function"><name>~RandomBasis</name></member>
   </compound>
   <compound refid="classRandomPlane" kind="class"><name>RandomPlane</name>
     <member refid="classRandomPlane_1a303bb23ea6817498813421cc9ca558a8" kind="variable"><name>rotVec</name></member>
@@ -9346,6 +9532,20 @@
     <member refid="classRandomPlane_1afb3e44697ae4fde129a99b3c32bf74dc" kind="variable"><name>powAlim</name></member>
     <member refid="classRandomPlane_1ab229f36f5bcae0e597b7036ac283a3ca" kind="variable"><name>ratioAlim</name></member>
     <member refid="classRandomPlane_1a92c3e3967596db40cd277639bcd0edff" kind="variable"><name>ratioAlimt</name></member>
+    <member refid="classRandomPlane_1af40dace66bb5627f63c9b952d3763cb4" kind="function"><name>RandomPlane</name></member>
+    <member refid="classRandomPlane_1a03cb83605f817eb4693dd2e8e100aa9f" kind="function"><name>WalkDev</name></member>
+    <member refid="classRandomPlane_1a0846b5e1a2978a31d6e53b3871a66871" kind="function"><name>TransDev</name></member>
+    <member refid="classRandomPlane_1ab6b4ec8a08535c60ba64d7eeb4422b90" kind="function"><name>KWalkDev</name></member>
+    <member refid="classRandomPlane_1a70ddc6cadf214e5ddf2234ad19c16522" kind="function"><name>KWalkDev</name></member>
+    <member refid="classRandomPlane_1a6fc6e8dad7819c0cd1a3360a812f009e" kind="function"><name>WalkDev</name></member>
+    <member refid="classRandomPlane_1ac55eee3e015c470bafb185b7cc69fee6" kind="function"><name>TransDev</name></member>
+    <member refid="classRandomPlane_1a151d6c1ce6d10c4948f14b12a4fc0732" kind="function"><name>Mult2</name></member>
+    <member refid="classRandomPlane_1a6ff428bb9cfabe953e546f2a7d18048a" kind="function"><name>Mult</name></member>
+    <member refid="classRandomPlane_1a1b54094841f82b06ba3d361d7e70ebbf" kind="function"><name>HopBlow</name></member>
+    <member refid="classRandomPlane_1a17f9ea51a8eb34f2a75c3d715c2a3cbf" kind="function"><name>RandRot</name></member>
+    <member refid="classRandomPlane_1a058a8fed51c516658d6d34772eb1a74a" kind="function"><name>RandRot</name></member>
+    <member refid="classRandomPlane_1a08a4d8d10b0610f6e4554932e1949e02" kind="function"><name>Dim</name></member>
+    <member refid="classRandomPlane_1a6e87b0a1fc38a184f722d0c4957613dd" kind="function"><name>~RandomPlane</name></member>
     <member refid="classRandomPlane_1af40dace66bb5627f63c9b952d3763cb4" kind="function"><name>RandomPlane</name></member>
     <member refid="classRandomPlane_1a03cb83605f817eb4693dd2e8e100aa9f" kind="function"><name>WalkDev</name></member>
     <member refid="classRandomPlane_1a0846b5e1a2978a31d6e53b3871a66871" kind="function"><name>TransDev</name></member>
@@ -9400,6 +9600,15 @@
     <member refid="classGambit_1_1Scanner_1_1RanNumGen_1a826492a3e83898c41378c6fc3426f088" kind="function"><name>ExpDev</name></member>
     <member refid="classGambit_1_1Scanner_1_1RanNumGen_1a0891c5b3bf13cd8a01ae2d68108f5cfc" kind="function"><name>Dev</name></member>
     <member refid="classGambit_1_1Scanner_1_1RanNumGen_1aee11e2cb5597a98efceec6038362d674" kind="function"><name>~RanNumGen</name></member>
+  </compound>
+  <compound refid="classRanNumGen" kind="class"><name>RanNumGen</name>
+    <member refid="classRanNumGen_1aa01cc1cdaa159feabf272a653a5b5da2" kind="variable"><name>gDev</name></member>
+    <member refid="classRanNumGen_1a80fe909fd6f872dfd6eaf7f0cec2ef73" kind="variable"><name>div</name></member>
+    <member refid="classRanNumGen_1a7a342886cf96a6db2abf6de27a77eed3" kind="function"><name>RanNumGen</name></member>
+    <member refid="classRanNumGen_1a3b7a733052690d0195f143c7a35452f6" kind="function"><name>Doub</name></member>
+    <member refid="classRanNumGen_1a2d6ce556413f6c11269ea143b3b691de" kind="function"><name>ExpDev</name></member>
+    <member refid="classRanNumGen_1ad33b36f29b203f1dc9eaf2257cb0eb16" kind="function"><name>Dev</name></member>
+    <member refid="classRanNumGen_1adaa3ca5294e39e1d036b69367a3099fb" kind="function"><name>~RanNumGen</name></member>
   </compound>
   <compound refid="structGambit_1_1DarkBit_1_1RD__coannihilating__particle" kind="struct"><name>Gambit::DarkBit::RD_coannihilating_particle</name>
     <member refid="structGambit_1_1DarkBit_1_1RD__coannihilating__particle_1a5e83437d06b039845c3dde7985bb657e" kind="variable"><name>index</name></member>
@@ -9796,13 +10005,34 @@
     <member refid="classGambit_1_1SpecBit_1_1ScalarSingletDM__Z3Spec_1a76981d21c5ed47e093b3953dc54c9113" kind="function"><name>get_lowe_data_from</name></member>
     <member refid="classGambit_1_1SpecBit_1_1ScalarSingletDM__Z3Spec_1ae39885fe2f0bd8f5a279568c6b2ef065" kind="function"><name>get_external_spectrum</name></member>
   </compound>
+  <compound refid="classGambit_1_1Scanner_1_1Python_1_1scan" kind="class"><name>Gambit::Scanner::Python::scan</name>
+    <member refid="classGambit_1_1Scanner_1_1Python_1_1scan_1aea7c2cd0f9a56835ea1b7a5c52bfeba4" kind="variable"><name>gambit_scan</name></member>
+    <member refid="classGambit_1_1Scanner_1_1Python_1_1scan_1a1a7ebc01e4a42f90bb8fea5d63359138" kind="variable"><name>diag</name></member>
+    <member refid="classGambit_1_1Scanner_1_1Python_1_1scan_1a1ef3e9e61642a2bf69f1c7d1c93d290b" kind="variable"><name>printer</name></member>
+    <member refid="classGambit_1_1Scanner_1_1Python_1_1scan_1a6a79a2d8ce3ad2b7088123da3725946f" kind="function"><name>scan</name></member>
+    <member refid="classGambit_1_1Scanner_1_1Python_1_1scan_1ad3ffeb68c698e592b87d99a1e55f2640" kind="function"><name>get_printer</name></member>
+    <member refid="classGambit_1_1Scanner_1_1Python_1_1scan_1a2ea748384dbc69bfb1e57fd4aeead9bc" kind="function"><name>dianostic</name></member>
+    <member refid="classGambit_1_1Scanner_1_1Python_1_1scan_1af9ab476a4ae7c23ef35d3d5936753998" kind="function"><name>run</name></member>
+    <member refid="classGambit_1_1Scanner_1_1Python_1_1scan_1a1687ce8546539e5723e3149ec9aad635" kind="function"><name>~scan</name></member>
+    <member refid="classGambit_1_1Scanner_1_1Python_1_1scan_1a4a7a65daf6a5acaedc75f40c6ca27c3b" kind="function"><name>print</name></member>
+  </compound>
+  <compound refid="classGambit_1_1Scanner_1_1Python_1_1scan__interface" kind="class"><name>Gambit::Scanner::Python::scan_interface</name>
+    <member refid="classGambit_1_1Scanner_1_1Python_1_1scan__interface_1ab36a42597dc631b66caf58cefc924b70" kind="variable"><name>global_printer</name></member>
+    <member refid="classGambit_1_1Scanner_1_1Python_1_1scan__interface_1af48b9f648437c8a3899ee63da217ce42" kind="function"><name>scan_interface</name></member>
+    <member refid="classGambit_1_1Scanner_1_1Python_1_1scan__interface_1a640c433f20af74803a1e300f1e9d008d" kind="function"><name>get_printer_manager</name></member>
+    <member refid="classGambit_1_1Scanner_1_1Python_1_1scan__interface_1a1752f7f3da6a362f53135b58c1c56360" kind="function"><name>get_printer</name></member>
+    <member refid="classGambit_1_1Scanner_1_1Python_1_1scan__interface_1aefdcc2f13e94fbebdfde4455ab46ebad" kind="function"><name>run_scan</name></member>
+    <member refid="classGambit_1_1Scanner_1_1Python_1_1scan__interface_1a734981a57ce6c489130761e04e027f64" kind="function"><name>run_scan_node</name></member>
+    <member refid="classGambit_1_1Scanner_1_1Python_1_1scan__interface_1a0c44ab15dd26a040c47d6bcac4aeb26d" kind="function"><name>run_scan_str</name></member>
+    <member refid="classGambit_1_1Scanner_1_1Python_1_1scan__interface_1a7a137673c3b903fccb2e2405b8424ada" kind="function"><name>~scan_interface</name></member>
+  </compound>
   <compound refid="classGambit_1_1Scanner_1_1Scan__Manager" kind="class"><name>Gambit::Scanner::Scan_Manager</name>
     <member refid="classGambit_1_1Scanner_1_1Scan__Manager_1a727cfcb6a10fc9ef1b49647500499d90" kind="variable"><name>factory</name></member>
     <member refid="classGambit_1_1Scanner_1_1Scan__Manager_1a0df08925c283d86f5238e937228b97eb" kind="variable"><name>options</name></member>
-    <member refid="classGambit_1_1Scanner_1_1Scan__Manager_1acc2fbc35f650c496f2395f3745ee1487" kind="variable"><name>prior</name></member>
+    <member refid="classGambit_1_1Scanner_1_1Scan__Manager_1a75d8b9907be0ae8c7209086b1915fe64" kind="variable"><name>prior</name></member>
     <member refid="classGambit_1_1Scanner_1_1Scan__Manager_1af01bba748fe28e6f1ef0c7f0958f2c2a" kind="variable"><name>printerInterface</name></member>
     <member refid="classGambit_1_1Scanner_1_1Scan__Manager_1afa71edb48c0cb1367a5cd7f1371faa00" kind="variable"><name>has_local_factory</name></member>
-    <member refid="classGambit_1_1Scanner_1_1Scan__Manager_1a8292ec052fb7dd51c990ab27503a6497" kind="function"><name>Scan_Manager</name></member>
+    <member refid="classGambit_1_1Scanner_1_1Scan__Manager_1ab0f1944a0d4d3c1e2ee2d3065d2352f1" kind="function"><name>Scan_Manager</name></member>
     <member refid="classGambit_1_1Scanner_1_1Scan__Manager_1a35b39d8564a4981d22003158fcd32c44" kind="function"><name>~Scan_Manager</name></member>
     <member refid="classGambit_1_1Scanner_1_1Scan__Manager_1a8348320e90ee92bed5d69e2f30f85dd9" kind="function"><name>Run</name></member>
   </compound>
@@ -11321,6 +11551,8 @@
     <member refid="classTransformRandomBasis_1ac640e45ecee04a3e9305275d89930b5d" kind="function"><name>operator++</name></member>
     <member refid="classTransformRandomBasis_1ad87c3a48227c06e3c0e590306b81064e" kind="function"><name>TransformRandomBasis</name></member>
     <member refid="classTransformRandomBasis_1ac640e45ecee04a3e9305275d89930b5d" kind="function"><name>operator++</name></member>
+    <member refid="classTransformRandomBasis_1ad87c3a48227c06e3c0e590306b81064e" kind="function"><name>TransformRandomBasis</name></member>
+    <member refid="classTransformRandomBasis_1ac640e45ecee04a3e9305275d89930b5d" kind="function"><name>operator++</name></member>
   </compound>
   <compound refid="classGambit_1_1Utils_1_1translator" kind="class"><name>Gambit::Utils::translator</name>
     <member refid="classGambit_1_1Utils_1_1translator_1acf21d0c0dd8f494c96142e6cee8ebadb" kind="function"><name>operator()</name></member>
@@ -12411,41 +12643,41 @@
     <member refid="obscura__1__1__0_8hpp_1a3ea5b3751be3e6c2858a96391a7f6f73" kind="typedef"><name>DM_Detector_Ionization</name></member>
     <member refid="obscura__1__1__0_8hpp_1a423b132a0da8ff68aa84f177f5e9ba98" kind="typedef"><name>DM_Detector_Ionization_Migdal</name></member>
   </compound>
-  <compound refid="namespaceGambit_1_1Backends_1_1Pythia__8__212" kind="namespace"><name>Gambit::Backends::Pythia_8_212</name>
+  <compound refid="namespaceGambit_1_1Backends_1_1Pythia__8__312" kind="namespace"><name>Gambit::Backends::Pythia_8_312</name>
   </compound>
-  <compound refid="namespaceGambit_1_1Backends_1_1Pythia__8__212_1_1Pythia8" kind="namespace"><name>Gambit::Backends::Pythia_8_212::Pythia8</name>
-    <member refid="Pythia__8__212_8hpp_1a16472f706856970cf39cf0795c0c1631" kind="typedef"><name>GAMBIT_hepmc_writer</name></member>
-    <member refid="Pythia__8__212_8hpp_1a903217782b2be9d08c47f5c3fcfdb95f" kind="typedef"><name>Pythia</name></member>
-    <member refid="Pythia__8__212_8hpp_1ab219e8a31a12fc2278201a970ee546d5" kind="typedef"><name>UserHooks</name></member>
-    <member refid="Pythia__8__212_8hpp_1aa18f1fd97c30f75a7869cfbbdb60ae1c" kind="typedef"><name>PartonLevel</name></member>
-    <member refid="Pythia__8__212_8hpp_1a0714c3f248d4f5fd9f8ffe57c4a43eb7" kind="typedef"><name>ResonanceDecays</name></member>
-    <member refid="Pythia__8__212_8hpp_1a036baaaa871cba6dc7d5fa28159112cf" kind="typedef"><name>ParticleDecays</name></member>
-    <member refid="Pythia__8__212_8hpp_1a5e55d39a608eeda7578d0c674e04fac7" kind="typedef"><name>SigmaProcess</name></member>
-    <member refid="Pythia__8__212_8hpp_1a77dc31f9910e32cdde4d54ed58ac5400" kind="typedef"><name>SLHAinterface</name></member>
-    <member refid="Pythia__8__212_8hpp_1adeaf1440de0f696afcf1db306e31800a" kind="typedef"><name>ParticleData</name></member>
-    <member refid="Pythia__8__212_8hpp_1a5cb290b99ea24869d48e54d51260fb68" kind="typedef"><name>CoupSUSY</name></member>
-    <member refid="Pythia__8__212_8hpp_1a0776b47bc91c7fe90d6ec0e1d7778659" kind="typedef"><name>LHdecayChannel</name></member>
-    <member refid="Pythia__8__212_8hpp_1a40698d5f686040e079886a7204e8060d" kind="typedef"><name>LHdecayTable</name></member>
-    <member refid="Pythia__8__212_8hpp_1aedb40d9503f0e437c5e908e0b5400abb" kind="typedef"><name>SusyLesHouches</name></member>
-    <member refid="Pythia__8__212_8hpp_1aa5c2740bc82b6de76a1b90b4c975c5be" kind="typedef"><name>SigmaTotal</name></member>
-    <member refid="Pythia__8__212_8hpp_1a510ab907584509f7a005571c886985b4" kind="typedef"><name>DecayChannel</name></member>
-    <member refid="Pythia__8__212_8hpp_1a9e74d95a7abdcd01713eaa8f34575ea5" kind="typedef"><name>ParticleDataEntry</name></member>
-    <member refid="Pythia__8__212_8hpp_1a285c69daed1a42ffdde993e11d7a4dd4" kind="typedef"><name>Couplings</name></member>
-    <member refid="Pythia__8__212_8hpp_1a88b7a863ed4d660dde1d82b13223911e" kind="typedef"><name>ResonanceWidths</name></member>
-    <member refid="Pythia__8__212_8hpp_1a603a8b69f22f4519ed6a8cdfc3ff5004" kind="typedef"><name>ResonanceGmZ</name></member>
-    <member refid="Pythia__8__212_8hpp_1a562a30360f0a48056a3cad4811fa1b97" kind="typedef"><name>BeamParticle</name></member>
-    <member refid="Pythia__8__212_8hpp_1a004eb033aa09937c749bf7742d0a8a7f" kind="typedef"><name>SlowJet</name></member>
-    <member refid="Pythia__8__212_8hpp_1a00a63191c268e66fe4cc8274be3e36a1" kind="typedef"><name>Event</name></member>
-    <member refid="Pythia__8__212_8hpp_1a77830d1d70610b83d6d1e7fd0ae5d4bb" kind="typedef"><name>Particle</name></member>
-    <member refid="Pythia__8__212_8hpp_1a650b60a3131183a9cadb54f6a31e30ff" kind="typedef"><name>AlphaStrong</name></member>
-    <member refid="Pythia__8__212_8hpp_1a360bd3e73d4a3122231865460a5ae7a4" kind="typedef"><name>AlphaEM</name></member>
-    <member refid="Pythia__8__212_8hpp_1a6355fd18c5ea90f534282d962b79d525" kind="typedef"><name>CoupSM</name></member>
-    <member refid="Pythia__8__212_8hpp_1a6946a351aa710d45f50937e465bcbb52" kind="typedef"><name>Parm</name></member>
-    <member refid="Pythia__8__212_8hpp_1a5341eb778a5637f3c0fda2ee7242de1d" kind="typedef"><name>Settings</name></member>
-    <member refid="Pythia__8__212_8hpp_1a03f3e904cfd2413cde61d622aaf14ba5" kind="typedef"><name>Info</name></member>
-    <member refid="Pythia__8__212_8hpp_1a04eebf457c192f7e18ed7e2dac5bc0b9" kind="typedef"><name>Rndm</name></member>
-    <member refid="Pythia__8__212_8hpp_1aefd046b77426ddfe722c5f3bf2939695" kind="typedef"><name>Vec4</name></member>
-    <member refid="Pythia__8__212_8hpp_1aa7aa3321159b548bc3550328155f09fc" kind="typedef"><name>Hist</name></member>
+  <compound refid="namespaceGambit_1_1Backends_1_1Pythia__8__312_1_1Pythia8" kind="namespace"><name>Gambit::Backends::Pythia_8_312::Pythia8</name>
+    <member refid="Pythia__8__312_8hpp_1ab73a269a0a5f6973703e0c740f4d68b5" kind="typedef"><name>GAMBIT_hepmc_writer</name></member>
+    <member refid="Pythia__8__312_8hpp_1a8bf56c236a053bdb7db10fbb278e0113" kind="typedef"><name>Pythia</name></member>
+    <member refid="Pythia__8__312_8hpp_1aa887f0b3acd5aa8d72dcc2a9c58e9355" kind="typedef"><name>UserHooks</name></member>
+    <member refid="Pythia__8__312_8hpp_1acee486547b084e2ed8b975164d33dd77" kind="typedef"><name>PartonLevel</name></member>
+    <member refid="Pythia__8__312_8hpp_1a1f736727026de2c2316c9220e1dc5ef3" kind="typedef"><name>ResonanceDecays</name></member>
+    <member refid="Pythia__8__312_8hpp_1a858872b462d9284c697421435013a568" kind="typedef"><name>ParticleDecays</name></member>
+    <member refid="Pythia__8__312_8hpp_1ae82fa7af3d65004e4eb070d286225d3d" kind="typedef"><name>SigmaProcess</name></member>
+    <member refid="Pythia__8__312_8hpp_1a0acb3f8c4ab06fc127cce331adcedc82" kind="typedef"><name>SLHAinterface</name></member>
+    <member refid="Pythia__8__312_8hpp_1a42ab371704b5237fff3c2739e6ba06a6" kind="typedef"><name>ParticleData</name></member>
+    <member refid="Pythia__8__312_8hpp_1a39e1010901600d2d7b92302945e953fa" kind="typedef"><name>CoupSUSY</name></member>
+    <member refid="Pythia__8__312_8hpp_1a9656145b5412e73c0d93337348f58445" kind="typedef"><name>LHdecayChannel</name></member>
+    <member refid="Pythia__8__312_8hpp_1aada31b73768f624d5ece9f150471f005" kind="typedef"><name>LHdecayTable</name></member>
+    <member refid="Pythia__8__312_8hpp_1a0574f5275ce339a44b17be26c0de51b3" kind="typedef"><name>SusyLesHouches</name></member>
+    <member refid="Pythia__8__312_8hpp_1aece2ae17fa2b2a9cd032f72f4aae5855" kind="typedef"><name>DecayChannel</name></member>
+    <member refid="Pythia__8__312_8hpp_1a66ea3914c50246bf8bdd9531e9c1cfcd" kind="typedef"><name>ParticleDataEntry</name></member>
+    <member refid="Pythia__8__312_8hpp_1ae897987aee298187aa2782ecdfaadf60" kind="typedef"><name>CoupSM</name></member>
+    <member refid="Pythia__8__312_8hpp_1afe8d04bef88f2ec4b9ec1d8174b19143" kind="typedef"><name>ResonanceWidths</name></member>
+    <member refid="Pythia__8__312_8hpp_1a4b44c5d8137ac0d79c627a5f377e33b1" kind="typedef"><name>ResonanceGmZ</name></member>
+    <member refid="Pythia__8__312_8hpp_1a2651477234ddb4e8c874052350f9db79" kind="typedef"><name>SigmaTotal</name></member>
+    <member refid="Pythia__8__312_8hpp_1a7491651efcf9bd964f70afd28e50ea02" kind="typedef"><name>BeamParticle</name></member>
+    <member refid="Pythia__8__312_8hpp_1a91fe87cf2df2490bf94541c532bfe504" kind="typedef"><name>SlowJet</name></member>
+    <member refid="Pythia__8__312_8hpp_1a183a7df03e67bddd906db78f57176ced" kind="typedef"><name>Event</name></member>
+    <member refid="Pythia__8__312_8hpp_1a26842b25486c8e91d1fd344a61b2970d" kind="typedef"><name>Particle</name></member>
+    <member refid="Pythia__8__312_8hpp_1a79ffabe08ad000fea59abad23b30cff1" kind="typedef"><name>AlphaStrong</name></member>
+    <member refid="Pythia__8__312_8hpp_1a9b7a9f6af205fe6bedbf89b8fd1e53ac" kind="typedef"><name>AlphaEM</name></member>
+    <member refid="Pythia__8__312_8hpp_1abfd250d1fb6e3c3fdd28d887a986a99b" kind="typedef"><name>Parm</name></member>
+    <member refid="Pythia__8__312_8hpp_1a77a83382aaad20a947ab6a25c6aa35b9" kind="typedef"><name>Settings</name></member>
+    <member refid="Pythia__8__312_8hpp_1a9636f23c994456360a246f0d7f11ac7a" kind="typedef"><name>Rndm</name></member>
+    <member refid="Pythia__8__312_8hpp_1ace8e835c1cb1211ae456243be8e0fa36" kind="typedef"><name>Info</name></member>
+    <member refid="Pythia__8__312_8hpp_1a3d1ff0cedb7fc8ddc953e35d8094dd14" kind="typedef"><name>Logger</name></member>
+    <member refid="Pythia__8__312_8hpp_1a2db514eeb345514c849dfacee4579694" kind="typedef"><name>Vec4</name></member>
+    <member refid="Pythia__8__312_8hpp_1acbef0637ee817ce84861377b23b762cf" kind="typedef"><name>Hist</name></member>
   </compound>
   <compound refid="namespaceGambit_1_1Backends_1_1Rivet__3__1__5" kind="namespace"><name>Gambit::Backends::Rivet_3_1_5</name>
   </compound>
@@ -12710,6 +12942,9 @@
     <member refid="ColliderBit__types_8hpp_1ae6bc7c80897e1af1ed6dad6daced868e" kind="typedef"><name>multimap_PID_pair_int</name></member>
     <member refid="ColliderBit__types_8hpp_1a50acb9ab74e383c6925d7f101a80915d" kind="typedef"><name>map_int_xsec</name></member>
     <member refid="ColliderBit__types_8hpp_1a3ed0a98d57d1b013f4958b69c9af5304" kind="typedef"><name>map_int_process_xsec</name></member>
+    <member refid="ColliderBit__types_8hpp_1ad14fbee238418db2313286c5232d4840" kind="typedef"><name>map_str_xsec_container</name></member>
+    <member refid="ColliderBit__types_8hpp_1a476d0c86bec0a2acdb321cc4047da6c7" kind="typedef"><name>map_str_map_int_process_xsec</name></member>
+    <member refid="ColliderBit__types_8hpp_1a7c60ddc89c0798e7cf368acf3081b616" kind="typedef"><name>initialxsec_container</name></member>
     <member refid="ColliderBit__types_8hpp_1a478a5bef541b3ecc347ac00b67e58b9e" kind="typedef"><name>map_iipair_PID_pair_xsec</name></member>
     <member refid="ColliderBit__types_8hpp_1a41d6b0f56233d3b60ca542e1ad8c485e" kind="typedef"><name>map_PID_pair_PID_pair_xsec</name></member>
     <member refid="ColliderBit__types_8hpp_1a22df7e72f7ba90d0967c644528b0e54c" kind="typedef"><name>HEPUtils_Event</name></member>
@@ -12734,6 +12969,7 @@
     <member refid="Py8EventConversions_8hpp_1a2b9cce4a882770abb43677d71385276f" kind="function"><name>convertParticleEvent</name></member>
     <member refid="Py8EventConversions_8hpp_1a88ae83927a9e3330acc38da802b06a09" kind="function"><name>convertPartonEvent</name></member>
     <member refid="complete__process__PID__pair__multimaps_8hpp_1aa00f9200838426661631c91a4990186d" kind="function"><name>all_PID_pairs_to_process_codes</name></member>
+    <member refid="generateEventPy8Collider_8hpp_1a5b312bb68eab54b8b4d83d8238f10388" kind="function"><name>PerformInitialCrossSection_Pythia</name></member>
     <member refid="generateEventPy8Collider_8hpp_1a9cbda0b8772ada2f012c84c66cd84921" kind="function"><name>dropHepMCEventPy8Collider</name></member>
     <member refid="generateEventPy8Collider_8hpp_1a533dc3abe595234c45828e4882812f6c" kind="function"><name>generateEventPy8Collider</name></member>
     <member refid="generateEventPy8Collider_8hpp_1a2d1c3650384e1ebb6a8ca0c3f952e650" kind="function"><name>convertEventToHEPUtilsPy8Collider</name></member>
@@ -12775,6 +13011,8 @@
     <member refid="ColliderBit__Bfactories_8cpp_1ad22fdb53d8475b0f9b83f7cedc853aee" kind="function"><name>BaBar_single_photon_LogLike</name></member>
     <member refid="ColliderBit__Bfactories_8cpp_1a29e9da28573e63de719d6272a22a06f2" kind="function"><name>BaBar_single_photon_LogLike_SubGeVDM</name></member>
     <member refid="ColliderBit__dummy_8cpp_1a890744b1f1f61371a7f03d5bcff3d6ed" kind="function"><name>getDummyColliderObservable</name></member>
+    <member refid="ColliderBit__eventloop_8cpp_1ae8cfb04ba05695ea725542784f1f1299" kind="function"><name>calc_N_MC</name></member>
+    <member refid="ColliderBit__eventloop_8cpp_1af548672be3bb5d8a2e8893826dc2cfa1" kind="function"><name>GetMaxLumi</name></member>
     <member refid="ColliderBit__eventloop_8cpp_1ac3e5caa6762666779fa7980190de2207" kind="function"><name>operateLHCLoop</name></member>
     <member refid="ColliderBit__eventloop_8cpp_1a132440e55b40d46ed297b3d8de3e72df" kind="function"><name>getLHCEventLoopInfo</name></member>
     <member refid="ColliderBit__eventloop_8cpp_1af5bd300bc1e749fb377602573b391d34" kind="function"><name>CollectAnalyses</name></member>
@@ -12785,10 +13023,10 @@
     <member refid="ColliderBit__Higgs_8cpp_1ad52378a77e73a6c354e8dbff99e2f956" kind="function"><name>calc_HB_LEP_LogLike</name></member>
     <member refid="ColliderBit__Higgs_8cpp_1adb2876394b3b4ad3f580a9dc81448432" kind="function"><name>calc_HS_LHC_LogLike</name></member>
     <member refid="ColliderBit__Higgs_8cpp_1a4ad9928c29decfa7cad12b2dcc337ab5" kind="function"><name>FeynHiggs_HiggsProd</name></member>
-    <member refid="ColliderBit__InterpolatedYields_8cpp_1a238cb02ddf2545c2236dc51071506552" kind="function"><name>fill_analysis_loglikes</name></member>
+    <member refid="ColliderBit__InterpolatedYields_8cpp_1aaa2547a75ec24de73c108058751d141b" kind="function"><name>fill_analysis_loglikes</name></member>
     <member refid="ColliderBit__InterpolatedYields_8cpp_1a853509d823b41f89af8b013c3a9abdf5" kind="function"><name>DMEFT_fill_analysis_info_map</name></member>
-    <member refid="ColliderBit__InterpolatedYields_8cpp_1a731f215720ca0854a7173c65ecfd04c8" kind="function"><name>DMsimp_fill_analysis_info_map</name></member>
-    <member refid="ColliderBit__InterpolatedYields_8cpp_1a190a4a9ab4afa8bc98e76f6741546e87" kind="function"><name>SubGeVDM_fill_analysis_info_map</name></member>
+    <member refid="ColliderBit__InterpolatedYields_8cpp_1af9839051cb8a516af1395372e17fae76" kind="function"><name>DMsimp_fill_analysis_info_map</name></member>
+    <member refid="ColliderBit__InterpolatedYields_8cpp_1a49dbd9a3f883864b2b5d1449d6a4e32c" kind="function"><name>SubGeVDM_fill_analysis_info_map</name></member>
     <member refid="ColliderBit__InterpolatedYields_8cpp_1ac3973f4ef16dc84eb1ec3873f15c61b0" kind="function"><name>DMEFT_results</name></member>
     <member refid="ColliderBit__InterpolatedYields_8cpp_1acfb2fa465de3e5f18ea2cd157765ca03" kind="function"><name>DMEFT_results_profiled</name></member>
     <member refid="ColliderBit__InterpolatedYields_8cpp_1ad34ef94007d90c2c983ed20f99120386" kind="function"><name>DMEFT_results_cutoff</name></member>
@@ -12852,16 +13090,19 @@
     <member refid="getxsec_8cpp_1a487dc7186bae6e4108c24fe9065b30a9" kind="function"><name>getTotalCrossSectionAsMap</name></member>
     <member refid="getxsec_8cpp_1aad4e3ff084fbc1311ee20d8dcd3d495c" kind="function"><name>getPIDPairCrossSectionsInfo</name></member>
     <member refid="getxsec_8cpp_1ad018861cfbdd85115f8d16dba9106dfc" kind="function"><name>doCrossSectionConsistencyCheck</name></member>
+    <member refid="getxsec_8cpp_1a463114d62acd12954935612bfaa65a47" kind="function"><name>InitialTotalCrossSection_Pythia</name></member>
+    <member refid="getxsec_8cpp_1a9f8cb70f95ab415ff0dd3f3757fc2a50" kind="function"><name>InitialProcessCrossSections_Pythia</name></member>
     <member refid="LHC__likelihoods_8cpp_1a109db19d5c1790c312adbdf90c2b6d38" kind="function"><name>calc_LHC_signals</name></member>
+    <member refid="LHC__likelihoods_8cpp_1a8c21de2d9cd617db113f8c89ac96810e" kind="function"><name>calc_poisson_loglike</name></member>
     <member refid="LHC__likelihoods_8cpp_1ad707bc1f9fe1547981dcc745d710e98a" kind="function"><name>_gsl_calc_Analysis_MinusLogLike</name></member>
     <member refid="LHC__likelihoods_8cpp_1ae6f741ebfb51bd2aea978a9cb139fcce" kind="function"><name>_gsl_calc_Analysis_MinusLogLikeGrad</name></member>
     <member refid="LHC__likelihoods_8cpp_1ad79f21cd8930fae9925e7b6cb0402cc6" kind="function"><name>_gsl_calc_Analysis_MinusLogLikeAndGrad</name></member>
     <member refid="LHC__likelihoods_8cpp_1a8e2062e390e437a265be72d22b0535fb" kind="function"><name>_gsl_mkpackedarray</name></member>
-    <member refid="LHC__likelihoods_8cpp_1ac5fbc3cb77924f2552408b92e1e6435e" kind="function"><name>profile_loglike_cov</name></member>
-    <member refid="LHC__likelihoods_8cpp_1a9e94402fd90aa9ba884624dc7674bf0b" kind="function"><name>marg_loglike_nulike1sr</name></member>
-    <member refid="LHC__likelihoods_8cpp_1ac6ca5a53404e7386a30f556ff9894ca7" kind="function"><name>marg_loglike_cov</name></member>
+    <member refid="LHC__likelihoods_8cpp_1a9fb2c58342d89f9648666a3eada49c4a" kind="function"><name>profile_loglike_cov</name></member>
+    <member refid="LHC__likelihoods_8cpp_1a106a1dd09caeb5c4d0108c95d2b2c001" kind="function"><name>marg_loglike_nulike1sr</name></member>
+    <member refid="LHC__likelihoods_8cpp_1a5704dc89e2f1e8e8bc317f82ee8d5b7e" kind="function"><name>marg_loglike_cov</name></member>
     <member refid="LHC__likelihoods_8cpp_1acfb417fbab8e47b1bca02a309d590ec4" kind="function"><name>fill_analysis_loglikes_full</name></member>
-    <member refid="LHC__likelihoods_8cpp_1a2dfdaa32bcf56f24bf408cde88669925" kind="function"><name>calc_LHC_LogLikes_common</name></member>
+    <member refid="LHC__likelihoods_8cpp_1a883f8b9a027163596496dbcd1e72280f" kind="function"><name>calc_LHC_LogLikes_common</name></member>
     <member refid="LHC__likelihoods_8cpp_1a7b9ac13e428b4a93854d22ebd9ea7470" kind="function"><name>calc_LHC_LogLikes_full</name></member>
     <member refid="LHC__likelihoods_8cpp_1afe222480b8cb9ef3bf37262d5d6a75a5" kind="function"><name>calc_LHC_LogLikes</name></member>
     <member refid="LHC__likelihoods_8cpp_1aae752d88dc8febc660c69c3b7497bb37" kind="function"><name>get_LHC_LogLike_per_analysis</name></member>
@@ -12971,6 +13212,16 @@
     <member refid="EventConversionUtils_8hpp_1a770e75c5700bcba64f3f274010403168" kind="function"><name>get_unified_mother2_pid</name></member>
     <member refid="EventConversionUtils_8hpp_1af921a7edeca1d7d217e277440c9cb8e9" kind="function"><name>get_unified_child_ids</name></member>
   </compound>
+  <compound refid="namespaceGambit_1_1ColliderBit_1_1PoissonCalculators" kind="namespace"><name>Gambit::ColliderBit::PoissonCalculators</name>
+    <member refid="PoissonCalculators_8hpp_1a796212ce5ba88fd01463b3d510a7670a" kind="function"><name>log_factorial</name></member>
+    <member refid="PoissonCalculators_8hpp_1a7818fb71a776ebafe7aa98de624a0a29" kind="function"><name>beta</name></member>
+    <member refid="PoissonCalculators_8hpp_1aa2f8694c27c0d2955fb260bbfff13717" kind="function"><name>binom</name></member>
+    <member refid="PoissonCalculators_8hpp_1abf488cc0f3fffc33853df74736478ff9" kind="function"><name>umvue_draw_n_mc</name></member>
+    <member refid="PoissonCalculators_8hpp_1a1fbe92fe2281fe272070d6e9ed225c28" kind="function"><name>umvue_draw_n_mc</name></member>
+    <member refid="PoissonCalculators_8hpp_1a154281fc82996f455b1c965a1546e3eb" kind="function"><name>umvue_draw_n_mc_threadsafe</name></member>
+    <member refid="PoissonCalculators_8hpp_1a0b46556153b3cab2df8a61fd49b837bb" kind="function"><name>umvue_poisson_like</name></member>
+    <member refid="PoissonCalculators_8hpp_1a85f997d1d4e7ba7b999ee5cecdb8a37c" kind="function"><name>mle_poisson_loglike</name></member>
+  </compound>
   <compound refid="namespaceGambit_1_1CosmoBit" kind="namespace"><name>Gambit::CosmoBit</name>
     <member refid="CosmoBit__types_8hpp_1a2af98ce9a357489cc8afbef0f10dc435" kind="function"><name>CosmoBit_error</name></member>
     <member refid="CosmoBit__types_8hpp_1a087a176fd5e519f64ea30545a3717597" kind="function"><name>CosmoBit_warning</name></member>
@@ -13059,12 +13310,12 @@
     <member refid="Planck_8cpp_1a7bdada8272e97fe1d0d52d1cbc5b5ba7" kind="function"><name>function_Planck_highl_TTTEEE_lite_2015_loglike</name></member>
     <member refid="Planck_8cpp_1a40235ca6e28e5f160397ace93232227a" kind="function"><name>function_Planck_lensing_2015_loglike</name></member>
   </compound>
-  <compound refid="namespaceGambit_1_1CosmoBit_1_1_0d722" kind="namespace"><name>Gambit::CosmoBit::@722</name>
-    <member refid="namespaceGambit_1_1CosmoBit_1_1_0d722_1ad4bc203a3971746debcba399a76e6d7f" kind="enum"><name>interpolation_bound</name></member>
+  <compound refid="namespaceGambit_1_1CosmoBit_1_1_0d724" kind="namespace"><name>Gambit::CosmoBit::@724</name>
+    <member refid="namespaceGambit_1_1CosmoBit_1_1_0d724_1a7832cdbb25855ac31f5e78e2973dbc7c" kind="enum"><name>interpolation_bound</name></member>
   </compound>
-  <compound refid="namespaceGambit_1_1CosmoBit_1_1_0d727" kind="namespace"><name>Gambit::CosmoBit::@727</name>
+  <compound refid="namespaceGambit_1_1CosmoBit_1_1_0d729" kind="namespace"><name>Gambit::CosmoBit::@729</name>
   </compound>
-  <compound refid="namespaceGambit_1_1CosmoBit_1_1_0d734" kind="namespace"><name>Gambit::CosmoBit::@734</name>
+  <compound refid="namespaceGambit_1_1CosmoBit_1_1_0d736" kind="namespace"><name>Gambit::CosmoBit::@736</name>
   </compound>
   <compound refid="namespaceGambit_1_1CosmoBit_1_1CosmoBit__utils" kind="namespace"><name>Gambit::CosmoBit::CosmoBit_utils</name>
     <member refid="CosmoBit__utils_8hpp_1ab492fde4aa3d3c40ef541beb878d9f91" kind="function"><name>entropy_density_SM</name></member>
@@ -13413,7 +13664,7 @@
     <member refid="WIMP__EFT_8cpp_1a4cf00e60a1ecde29a2b51792c526b4a2" kind="function"><name>TH_ProcessCatalog_WIMP_EFT</name></member>
     <member refid="Xray_8cpp_1a622b6e59f9a44c88581ba692bd8fd42d" kind="function"><name>Xray_loglikes_Cirelli</name></member>
   </compound>
-  <compound refid="namespaceGambit_1_1DarkBit_1_1_0d749" kind="namespace"><name>Gambit::DarkBit::@749</name>
+  <compound refid="namespaceGambit_1_1DarkBit_1_1_0d751" kind="namespace"><name>Gambit::DarkBit::@751</name>
   </compound>
   <compound refid="namespaceGambit_1_1DarkBit_1_1DarkBit__utils" kind="namespace"><name>Gambit::DarkBit::DarkBit_utils</name>
     <member refid="DarkBit__utils_8hpp_1ad8ca208a4a0f314a4f77f72c240e79d8" kind="function"><name>str_flav_to_mass</name></member>
@@ -13627,13 +13878,16 @@
     <member refid="SM__Z_8hpp_1a73b6b6792b5502eeac267f7687b44955" kind="variable"><name>table_6</name></member>
   </compound>
   <compound refid="namespaceGambit_1_1Diver__1__0__0" kind="namespace"><name>Gambit::Diver_1_0_0</name>
-    <member refid="1_80_80_2diver_8hpp_1a54f976ca561ae67afec206e6eb36a21f" kind="function"><name>objective</name></member>
+    <member refid="diver__1_80_80_2diver_8hpp_1a54f976ca561ae67afec206e6eb36a21f" kind="function"><name>objective</name></member>
   </compound>
   <compound refid="namespaceGambit_1_1Diver__1__0__2" kind="namespace"><name>Gambit::Diver_1_0_2</name>
-    <member refid="1_80_82_2diver_8hpp_1a9d8c02605c4253bfa6477e744ef61bd2" kind="function"><name>objective</name></member>
+    <member refid="diver__1_80_82_2diver_8hpp_1a9d8c02605c4253bfa6477e744ef61bd2" kind="function"><name>objective</name></member>
   </compound>
   <compound refid="namespaceGambit_1_1Diver__1__0__4" kind="namespace"><name>Gambit::Diver_1_0_4</name>
-    <member refid="1_80_84_2diver_8hpp_1a9d8289b154860a87aa639e0b6cfdec1c" kind="function"><name>objective</name></member>
+    <member refid="diver__1_80_84_2diver_8hpp_1a9d8289b154860a87aa639e0b6cfdec1c" kind="function"><name>objective</name></member>
+  </compound>
+  <compound refid="namespaceGambit_1_1Diver__1__0__5" kind="namespace"><name>Gambit::Diver_1_0_5</name>
+    <member refid="diver__1_80_85_2diver_8hpp_1a29ec6009dd3276becbbddf1fa174714c" kind="function"><name>objective</name></member>
   </compound>
   <compound refid="namespaceGambit_1_1DRes" kind="namespace"><name>Gambit::DRes</name>
     <member refid="namespaceGambit_1_1DRes_1ab3908c48a2c52ebf5d116d230ac62499" kind="typedef"><name>MasterGraphType</name></member>
@@ -13919,6 +14173,9 @@
     <member refid="yaml__parser__base_8cpp_1afa7ee32d6cb7c2af953e8245807d0bdb" kind="function"><name>importRound</name></member>
     <member refid="yaml__parser__base_8cpp_1ab8b06f0ad21b895eb47543972756665b" kind="function"><name>recursiveImport</name></member>
   </compound>
+  <compound refid="namespaceGambit_1_1jswarm__1__0__0" kind="namespace"><name>Gambit::jswarm_1_0_0</name>
+    <member refid="jswarm_8hpp_1a3c849197180a4f82ef9efd00551ba33a" kind="typedef"><name>rng_type</name></member>
+  </compound>
   <compound refid="namespaceGambit_1_1Logging" kind="namespace"><name>Gambit::Logging</name>
     <member refid="namespaceGambit_1_1Logging_1a632defe67238e42eb8d3be8e5e05e2a9" kind="function"><name>operator&lt;&lt;</name></member>
     <member refid="namespaceGambit_1_1Logging_1a885bea9753a8f669026766a7dd1af021" kind="function"><name>operator&lt;&lt;</name></member>
@@ -13981,9 +14238,9 @@
     <member refid="orphan_8hpp_1aeffffc3548e4c6d8454afa914353b33d" kind="variable"><name>lineage</name></member>
   </compound>
   <compound refid="namespaceGambit_1_1MultiNest" kind="namespace"><name>Gambit::MultiNest</name>
-    <member refid="multinest_8hpp_1ae7a3504ac9fceadfd20258d6b599c4b7" kind="function"><name>callback_loglike</name></member>
-    <member refid="multinest_8hpp_1ae8d34f92dbb66779774bb2e55b8773c6" kind="function"><name>callback_dumper</name></member>
-    <member refid="multinest_8hpp_1a3bd627ea10ee343b45a29ba96ef183b9" kind="typedef"><name>scanPtr</name></member>
+    <member refid="multinest_2multinest_8hpp_1ae7a3504ac9fceadfd20258d6b599c4b7" kind="function"><name>callback_loglike</name></member>
+    <member refid="multinest_2multinest_8hpp_1ae8d34f92dbb66779774bb2e55b8773c6" kind="function"><name>callback_dumper</name></member>
+    <member refid="multinest_2multinest_8hpp_1a3bd627ea10ee343b45a29ba96ef183b9" kind="typedef"><name>scanPtr</name></member>
     <member refid="multinest__3_810_2multinest_8cpp_1ac3e9df05fc07eb548efedb7cf50673d8" kind="variable"><name>global_loglike_object</name></member>
   </compound>
   <compound refid="namespaceGambit_1_1NeutrinoBit" kind="namespace"><name>Gambit::NeutrinoBit</name>
@@ -14455,10 +14712,10 @@
     <member refid="scannerbit_8hpp_1a659b628c3ad1d66d9a08f40fb9e1264e" kind="variable"><name>ScannerBit_handlers</name></member>
     <member refid="printer__interface_8hpp_1ac6fba822e0f5ca89b2efbb3fd8813590" kind="function"><name>assign_aux_numbers</name></member>
     <member refid="printer__interface_8hpp_1af87ac4f169f6a9b5c1b120f686467bd4" kind="function"><name>assign_aux_numbers</name></member>
-    <member refid="python__utils_8hpp_1acbc1b123ab591238092ed877b59ce82a" kind="function"><name>pytype</name></member>
-    <member refid="python__utils_8hpp_1aacc7482724c5cf08e36c1c37fc51d4ee" kind="function"><name>is_pytype</name></member>
-    <member refid="python__utils_8hpp_1a8cb318442463a685dca0674a6d25af3a" kind="function"><name>yaml_to_dict</name></member>
-    <member refid="python__utils_8hpp_1ab8d81aceb69f0a9f0f4fa0f16760be5a" kind="function"><name>dict_to_yaml</name></member>
+    <member refid="include_2gambit_2ScannerBit_2python__utils_8hpp_1acbc1b123ab591238092ed877b59ce82a" kind="function"><name>pytype</name></member>
+    <member refid="include_2gambit_2ScannerBit_2python__utils_8hpp_1aacc7482724c5cf08e36c1c37fc51d4ee" kind="function"><name>is_pytype</name></member>
+    <member refid="include_2gambit_2ScannerBit_2python__utils_8hpp_1a8cb318442463a685dca0674a6d25af3a" kind="function"><name>yaml_to_dict</name></member>
+    <member refid="include_2gambit_2ScannerBit_2python__utils_8hpp_1ab8d81aceb69f0a9f0f4fa0f16760be5a" kind="function"><name>dict_to_yaml</name></member>
     <member refid="scanner__utils_8hpp_1a160719ba0cc1b31c4e65eaeb50285745" kind="function"><name>scan_error</name></member>
     <member refid="scanner__utils_8hpp_1abbfed36d504a6f5b297acc30bde615b8" kind="function"><name>scan_warning</name></member>
     <member refid="scanner__utils_8hpp_1a36e2f6bacee4af7e50fe763e5bb7f3c3" kind="function"><name>zip</name></member>
@@ -14481,11 +14738,14 @@
     <member refid="scanner__utils_8hpp_1aab1753f4d486aa77f5bf0ce3b7c0ad06" kind="function"><name>_warn_</name></member>
     <member refid="scanner__utils_8hpp_1a27a155ccc4bec6a04dc7f92819e886a4" kind="function"><name>_bool_</name></member>
   </compound>
+  <compound refid="namespaceGambit_1_1Scanner_1_1mpi__dist__internal" kind="namespace"><name>Gambit::Scanner::mpi_dist_internal</name>
+  </compound>
   <compound refid="namespaceGambit_1_1Scanner_1_1Plugins" kind="namespace"><name>Gambit::Scanner::Plugins</name>
     <member refid="plugin__loader_8hpp_1af4c80001cbb89e6ca052032307e1f0c1" kind="variable"><name>plugin_info</name></member>
     <member refid="plugin__details_8hpp_1a98ee3d04e652bb49c264563feadeab16" kind="function"><name>operator==</name></member>
     <member refid="plugin__details_8hpp_1ae82b372a4d43bc016476b5af384e57d0" kind="function"><name>Plugin_Version_Supersedes</name></member>
     <member refid="plugin__interface_8hpp_1a589ea82ec32e764656c4858fa47e9a42" kind="function"><name>error_map_return</name></member>
+    <member refid="plugin__loader_8cpp_1a831a8aa28bcf1ec5efe0bbe79970b9e5" kind="function"><name>root_path</name></member>
     <member refid="plugin__loader_8cpp_1a5b902005e6cd78c8ad58de3c0ef236e7" kind="function"><name>print_plugins</name></member>
     <member refid="plugin__loader_8cpp_1a341c55e99e1cc3ce921758cf6d2996bb" kind="function"><name>is_new_plugin</name></member>
   </compound>
@@ -14514,6 +14774,23 @@
     <member refid="py__module__scan_8hpp_1a6662dc6db7029a25de499af618fa251c" kind="function"><name>get_prior</name></member>
     <member refid="py__module__scan_8hpp_1a77a5ace4f7203e5822c626918993a14e" kind="function"><name>get_dimension</name></member>
     <member refid="py__module__scan_8hpp_1a71272e867e38e328024ae75d8c84eaa0" kind="function"><name>get_purpose</name></member>
+  </compound>
+  <compound refid="namespaceGambit_1_1Scanner_1_1Python" kind="namespace"><name>Gambit::Scanner::Python</name>
+    <member refid="python_2src_2python_8cpp_1a35ed426e73a5671ca5d53564c643db6d" kind="variable"><name>printer_manager</name></member>
+    <member refid="python_2include_2python__utils_8hpp_1a302d9e10cbc7a036fe7eddf6b60198d5" kind="function"><name>pytype</name></member>
+    <member refid="python_2include_2python__utils_8hpp_1a73d828e22c382ef0686ef2f3d2711bfa" kind="function"><name>pyconvert</name></member>
+    <member refid="python_2include_2python__utils_8hpp_1aef27faeef29a433f775466f195e05104" kind="function"><name>pyyamlconvert</name></member>
+    <member refid="ScannerBit_2python_2src_2diagnostics_8cpp_1abe1aa1b00be2f4d674da283cc4a0405a" kind="function"><name>scanner_diagnostic</name></member>
+    <member refid="ScannerBit_2python_2src_2diagnostics_8cpp_1a1d651030bc2d5f9177351642b635a0f5" kind="function"><name>test_function_diagnostic</name></member>
+    <member refid="ScannerBit_2python_2src_2diagnostics_8cpp_1a27f4694164a3aefa04fa5584fa4adddb" kind="function"><name>prior_diagnostic</name></member>
+    <member refid="ScannerBit_2python_2src_2diagnostics_8cpp_1ab780f379c3281ebf1b560bc4f8b4ff05" kind="function"><name>ff_prior_diagnostic</name></member>
+    <member refid="ScannerBit_2python_2src_2diagnostics_8cpp_1a987fdd896fec17c37dd9dcd8171b8eaf" kind="function"><name>ff_scanner_diagnostic</name></member>
+    <member refid="ScannerBit_2python_2src_2diagnostics_8cpp_1ae0192d3a4b033b894602326eed3ecba9" kind="function"><name>ff_test_function_diagnostic</name></member>
+    <member refid="interface_8cpp_1a0507fbc4537d932058997689abb1e5cc" kind="function"><name>do_cleanup</name></member>
+    <member refid="interface_8cpp_1a8f0e50870730cdb523730de16ef35843" kind="function"><name>terminator</name></member>
+    <member refid="python_2src_2python_8cpp_1a0a6b0946068c2cabc7e9753cbe2c8533" kind="function"><name>ensure_size_fake</name></member>
+    <member refid="python_2src_2python_8cpp_1adb43dedd1156f3c0eee687b05c946454" kind="function"><name>ensure_size_vec</name></member>
+    <member refid="python_2src_2python_8cpp_1ab07b90c93f41d5e42cf09f0a9461a475" kind="function"><name>ensure_size_evec</name></member>
   </compound>
   <compound refid="namespaceGambit_1_1slhahelp" kind="namespace"><name>Gambit::slhahelp</name>
     <member refid="mssm__slhahelp_8cpp_1a86ab3dbb17ba1708557160c92cb4b0c4" kind="variable"><name>gauge_label_to_index_type</name></member>
@@ -14804,7 +15081,6 @@
   <compound refid="namespaceGambit_1_1Utils" kind="namespace"><name>Gambit::Utils</name>
     <member refid="file__lock_8cpp_1aafa32bd914b83dd204b4998553babb3e" kind="function"><name>hardmsg</name></member>
     <member refid="logging_8hpp_1a0090c36d35ead9dbd7c64a403181e408" kind="typedef"><name>time_point</name></member>
-    <member refid="util__functions_8hpp_1a8fc8086e36b78153f25a3b9c80a70cfd" kind="variable"><name>buildtime_scratch</name></member>
     <member refid="util__functions_8cpp_1aa605af61c83961ba12b53d33e6479557" kind="variable"><name>whitespaces</name></member>
     <member refid="equivalency__singleton_8hpp_1ac5eba5f568f18b2a4b8e7d9267513796" kind="function"><name>typeEquivalencies</name></member>
     <member refid="type__equivalency_8hpp_1a14daf65e2f1738a79c1daa8987f46f0f" kind="function"><name>fix_type</name></member>
@@ -14814,6 +15090,9 @@
     <member refid="lnlike__modifiers_8hpp_1ad5971acfc36842594fa9042f1a40591d" kind="function"><name>run_lnlike_modifier</name></member>
     <member refid="lnlike__modifiers_8hpp_1acd56d412935165b3fb1e0db8fadeee76" kind="function"><name>lnlike_modifier_gaussian</name></member>
     <member refid="lnlike__modifiers_8hpp_1a5447f06e4345d1a7bfb50b6aab2fb19b" kind="function"><name>lnlike_modifier_gaussian_plateau</name></member>
+    <member refid="util__functions_8hpp_1ab02e2e94681c709e8721aafebec74434" kind="function"><name>getEnvVar</name></member>
+    <member refid="util__functions_8hpp_1a8b628aa14dad032d1159036ce9751a63" kind="function"><name>GAMBIT_root_dir</name></member>
+    <member refid="util__functions_8hpp_1a35fd8cff51a050f15a9e681edc7ef614" kind="function"><name>buildtime_scratch</name></member>
     <member refid="util__functions_8hpp_1a7ecde801fc354fe3610534cff73c8a4e" kind="function"><name>runtime_scratch</name></member>
     <member refid="util__functions_8hpp_1a5d5dfd398d407f0e92eda2da6c74cd63" kind="function"><name>p2dot</name></member>
     <member refid="util__functions_8hpp_1a6ced4589258c148ad42a923ae94d938c" kind="function"><name>construct_runtime_scratch</name></member>
@@ -14854,6 +15133,7 @@
     <member refid="util__functions_8hpp_1a2a4727984a24b69b1a5109284f6f475d" kind="function"><name>masked_erase</name></member>
     <member refid="interp__collection_8cpp_1a1bb585fd41764ea4f4aa66bab949dd7b" kind="function"><name>InterpIter</name></member>
     <member refid="interp__collection_8cpp_1aedda42f2abec8d12400f5808f6d8188f" kind="function"><name>linearinterp1D</name></member>
+    <member refid="util__functions_8cpp_1a60bcfc853314eb33049f680913bab51b" kind="function"><name>get_GAMBIT_root_dir</name></member>
     <member refid="util__functions_8cpp_1a57798e61c9ebb61c62cb557bb45946ae" kind="function"><name>sspairset_contains</name></member>
     <member refid="util__functions_8cpp_1af1c80a9d9e42468d243c920200f6220f" kind="function"><name>sspairset_contains</name></member>
   </compound>
@@ -15132,6 +15412,30 @@
   </compound>
   <compound refid="gm2calc__1__3__0_2abstract__MSSMNoFV__onshell__susy__parameters_8hpp" kind="file"><name>gm2calc_1_3_0/abstract_MSSMNoFV_onshell_susy_parameters.hpp</name>
     <member refid="gm2calc__1__3__0_2abstract__MSSMNoFV__onshell__susy__parameters_8hpp_1aec4e4dcf01a3187078ec15e0685ec386" kind="function"><name>CAT_3</name></member>
+  </compound>
+  <compound refid="gm2calc__1__2__0_2forward__decls__abstract__classes_8hpp" kind="file"><name>gm2calc_1_2_0/forward_decls_abstract_classes.hpp</name>
+    <member refid="gm2calc__1__2__0_2forward__decls__abstract__classes_8hpp_1aec4e4dcf01a3187078ec15e0685ec386" kind="function"><name>CAT_3</name></member>
+  </compound>
+  <compound refid="gm2calc__1__3__0_2forward__decls__abstract__classes_8hpp" kind="file"><name>gm2calc_1_3_0/forward_decls_abstract_classes.hpp</name>
+    <member refid="gm2calc__1__3__0_2forward__decls__abstract__classes_8hpp_1aec4e4dcf01a3187078ec15e0685ec386" kind="function"><name>CAT_3</name></member>
+  </compound>
+  <compound refid="obscura__1__1__0_2forward__decls__abstract__classes_8hpp" kind="file"><name>obscura_1_1_0/forward_decls_abstract_classes.hpp</name>
+    <member refid="obscura__1__1__0_2forward__decls__abstract__classes_8hpp_1aec4e4dcf01a3187078ec15e0685ec386" kind="function"><name>CAT_3</name></member>
+  </compound>
+  <compound refid="vevacious__1__0_2forward__decls__abstract__classes_8hpp" kind="file"><name>vevacious_1_0/forward_decls_abstract_classes.hpp</name>
+    <member refid="vevacious__1__0_2forward__decls__abstract__classes_8hpp_1aec4e4dcf01a3187078ec15e0685ec386" kind="function"><name>CAT_3</name></member>
+  </compound>
+  <compound refid="gm2calc__1__2__0_2forward__decls__wrapper__classes_8hpp" kind="file"><name>gm2calc_1_2_0/forward_decls_wrapper_classes.hpp</name>
+    <member refid="gm2calc__1__2__0_2forward__decls__wrapper__classes_8hpp_1aec4e4dcf01a3187078ec15e0685ec386" kind="function"><name>CAT_3</name></member>
+  </compound>
+  <compound refid="gm2calc__1__3__0_2forward__decls__wrapper__classes_8hpp" kind="file"><name>gm2calc_1_3_0/forward_decls_wrapper_classes.hpp</name>
+    <member refid="gm2calc__1__3__0_2forward__decls__wrapper__classes_8hpp_1aec4e4dcf01a3187078ec15e0685ec386" kind="function"><name>CAT_3</name></member>
+  </compound>
+  <compound refid="obscura__1__1__0_2forward__decls__wrapper__classes_8hpp" kind="file"><name>obscura_1_1_0/forward_decls_wrapper_classes.hpp</name>
+    <member refid="obscura__1__1__0_2forward__decls__wrapper__classes_8hpp_1aec4e4dcf01a3187078ec15e0685ec386" kind="function"><name>CAT_3</name></member>
+  </compound>
+  <compound refid="vevacious__1__0_2forward__decls__wrapper__classes_8hpp" kind="file"><name>vevacious_1_0/forward_decls_wrapper_classes.hpp</name>
+    <member refid="vevacious__1__0_2forward__decls__wrapper__classes_8hpp_1aec4e4dcf01a3187078ec15e0685ec386" kind="function"><name>CAT_3</name></member>
   </compound>
   <compound refid="gm2calc__1__2__0_2wrapper__EInvalidInput_8hpp" kind="file"><name>gm2calc_1_2_0/wrapper_EInvalidInput.hpp</name>
   </compound>
@@ -15512,9 +15816,6 @@
   <compound refid="abstract__BeamParticle_8h" kind="file"><name>abstract_BeamParticle.h</name>
     <member refid="abstract__BeamParticle_8h_1aec4e4dcf01a3187078ec15e0685ec386" kind="function"><name>CAT_3</name></member>
   </compound>
-  <compound refid="abstract__Couplings_8h" kind="file"><name>abstract_Couplings.h</name>
-    <member refid="abstract__Couplings_8h_1aec4e4dcf01a3187078ec15e0685ec386" kind="function"><name>CAT_3</name></member>
-  </compound>
   <compound refid="abstract__CoupSM_8h" kind="file"><name>abstract_CoupSM.h</name>
     <member refid="abstract__CoupSM_8h_1aec4e4dcf01a3187078ec15e0685ec386" kind="function"><name>CAT_3</name></member>
   </compound>
@@ -15541,6 +15842,9 @@
   </compound>
   <compound refid="abstract__LHdecayTable_8h" kind="file"><name>abstract_LHdecayTable.h</name>
     <member refid="abstract__LHdecayTable_8h_1aec4e4dcf01a3187078ec15e0685ec386" kind="function"><name>CAT_3</name></member>
+  </compound>
+  <compound refid="abstract__Logger_8h" kind="file"><name>abstract_Logger.h</name>
+    <member refid="abstract__Logger_8h_1aec4e4dcf01a3187078ec15e0685ec386" kind="function"><name>CAT_3</name></member>
   </compound>
   <compound refid="abstract__Parm_8h" kind="file"><name>abstract_Parm.h</name>
     <member refid="abstract__Parm_8h_1aec4e4dcf01a3187078ec15e0685ec386" kind="function"><name>CAT_3</name></member>
@@ -15602,14 +15906,35 @@
   <compound refid="HepLike__2__0_2forward__decls__abstract__classes_8h" kind="file"><name>HepLike_2_0/forward_decls_abstract_classes.h</name>
     <member refid="HepLike__2__0_2forward__decls__abstract__classes_8h_1aec4e4dcf01a3187078ec15e0685ec386" kind="function"><name>CAT_3</name></member>
   </compound>
-  <compound refid="Pythia__8__212_2forward__decls__abstract__classes_8h" kind="file"><name>Pythia_8_212/forward_decls_abstract_classes.h</name>
-    <member refid="Pythia__8__212_2forward__decls__abstract__classes_8h_1aec4e4dcf01a3187078ec15e0685ec386" kind="function"><name>CAT_3</name></member>
+  <compound refid="Pythia__8__312_2forward__decls__abstract__classes_8h" kind="file"><name>Pythia_8_312/forward_decls_abstract_classes.h</name>
+    <member refid="Pythia__8__312_2forward__decls__abstract__classes_8h_1aec4e4dcf01a3187078ec15e0685ec386" kind="function"><name>CAT_3</name></member>
   </compound>
   <compound refid="HepLike__2__0_2forward__decls__wrapper__classes_8h" kind="file"><name>HepLike_2_0/forward_decls_wrapper_classes.h</name>
     <member refid="HepLike__2__0_2forward__decls__wrapper__classes_8h_1aec4e4dcf01a3187078ec15e0685ec386" kind="function"><name>CAT_3</name></member>
   </compound>
-  <compound refid="Pythia__8__212_2forward__decls__wrapper__classes_8h" kind="file"><name>Pythia_8_212/forward_decls_wrapper_classes.h</name>
-    <member refid="Pythia__8__212_2forward__decls__wrapper__classes_8h_1aec4e4dcf01a3187078ec15e0685ec386" kind="function"><name>CAT_3</name></member>
+  <compound refid="Pythia__8__312_2forward__decls__wrapper__classes_8h" kind="file"><name>Pythia_8_312/forward_decls_wrapper_classes.h</name>
+    <member refid="Pythia__8__312_2forward__decls__wrapper__classes_8h_1aec4e4dcf01a3187078ec15e0685ec386" kind="function"><name>CAT_3</name></member>
+  </compound>
+  <compound refid="gm2calc__1__2__0_2loaded__types_8hpp" kind="file"><name>gm2calc_1_2_0/loaded_types.hpp</name>
+    <member refid="gm2calc__1__2__0_2loaded__types_8hpp_1afec3d929fe914e43994d48577b656737" kind="define"><name>gm2calc_1_2_0_all_data</name></member>
+  </compound>
+  <compound refid="gm2calc__1__3__0_2loaded__types_8hpp" kind="file"><name>gm2calc_1_3_0/loaded_types.hpp</name>
+    <member refid="gm2calc__1__3__0_2loaded__types_8hpp_1a7f28762c8525049e01abbe3232d0fa36" kind="define"><name>gm2calc_1_3_0_all_data</name></member>
+  </compound>
+  <compound refid="HepLike__2__0_2loaded__types_8hpp" kind="file"><name>HepLike_2_0/loaded_types.hpp</name>
+    <member refid="HepLike__2__0_2loaded__types_8hpp_1a85f55dda969e349843f9edbdb60b6985" kind="define"><name>HepLike_2_0_all_data</name></member>
+  </compound>
+  <compound refid="obscura__1__1__0_2loaded__types_8hpp" kind="file"><name>obscura_1_1_0/loaded_types.hpp</name>
+    <member refid="obscura__1__1__0_2loaded__types_8hpp_1aa46a3bbe11585defcf14036d27f115cf" kind="define"><name>obscura_1_1_0_all_data</name></member>
+  </compound>
+  <compound refid="Pythia__8__312_2loaded__types_8hpp" kind="file"><name>Pythia_8_312/loaded_types.hpp</name>
+    <member refid="Pythia__8__312_2loaded__types_8hpp_1a33fef497bcbc40345cddd41a07ffebfd" kind="define"><name>Pythia_8_312_all_data</name></member>
+  </compound>
+  <compound refid="Rivet__3__1__5_2loaded__types_8hpp" kind="file"><name>Rivet_3_1_5/loaded_types.hpp</name>
+    <member refid="Rivet__3__1__5_2loaded__types_8hpp_1a174df709237b67054833fb85e17b8070" kind="define"><name>Rivet_3_1_5_all_data</name></member>
+  </compound>
+  <compound refid="vevacious__1__0_2loaded__types_8hpp" kind="file"><name>vevacious_1_0/loaded_types.hpp</name>
+    <member refid="vevacious__1__0_2loaded__types_8hpp_1a58421680e425c29aed25a8f51ba41b5b" kind="define"><name>vevacious_1_0_all_data</name></member>
   </compound>
   <compound refid="wrapper__AlphaEM_8h" kind="file"><name>wrapper_AlphaEM.h</name>
   </compound>
@@ -15634,14 +15959,6 @@
   </compound>
   <compound refid="wrapper__BeamParticle__def_8h" kind="file"><name>wrapper_BeamParticle_def.h</name>
     <member refid="wrapper__BeamParticle__def_8h_1aec4e4dcf01a3187078ec15e0685ec386" kind="function"><name>CAT_3</name></member>
-  </compound>
-  <compound refid="wrapper__Couplings_8h" kind="file"><name>wrapper_Couplings.h</name>
-  </compound>
-  <compound refid="wrapper__Couplings__decl_8h" kind="file"><name>wrapper_Couplings_decl.h</name>
-    <member refid="wrapper__Couplings__decl_8h_1aec4e4dcf01a3187078ec15e0685ec386" kind="function"><name>CAT_3</name></member>
-  </compound>
-  <compound refid="wrapper__Couplings__def_8h" kind="file"><name>wrapper_Couplings_def.h</name>
-    <member refid="wrapper__Couplings__def_8h_1aec4e4dcf01a3187078ec15e0685ec386" kind="function"><name>CAT_3</name></member>
   </compound>
   <compound refid="wrapper__CoupSM_8h" kind="file"><name>wrapper_CoupSM.h</name>
   </compound>
@@ -15714,6 +16031,14 @@
   </compound>
   <compound refid="wrapper__LHdecayTable__def_8h" kind="file"><name>wrapper_LHdecayTable_def.h</name>
     <member refid="wrapper__LHdecayTable__def_8h_1aec4e4dcf01a3187078ec15e0685ec386" kind="function"><name>CAT_3</name></member>
+  </compound>
+  <compound refid="wrapper__Logger_8h" kind="file"><name>wrapper_Logger.h</name>
+  </compound>
+  <compound refid="wrapper__Logger__decl_8h" kind="file"><name>wrapper_Logger_decl.h</name>
+    <member refid="wrapper__Logger__decl_8h_1aec4e4dcf01a3187078ec15e0685ec386" kind="function"><name>CAT_3</name></member>
+  </compound>
+  <compound refid="wrapper__Logger__def_8h" kind="file"><name>wrapper_Logger_def.h</name>
+    <member refid="wrapper__Logger__def_8h_1aec4e4dcf01a3187078ec15e0685ec386" kind="function"><name>CAT_3</name></member>
   </compound>
   <compound refid="wrapper__Parm_8h" kind="file"><name>wrapper_Parm.h</name>
   </compound>
@@ -15876,27 +16201,6 @@
   <compound refid="forward__decls__wrapper__classes_8hh" kind="file"><name>forward_decls_wrapper_classes.hh</name>
     <member refid="forward__decls__wrapper__classes_8hh_1aec4e4dcf01a3187078ec15e0685ec386" kind="function"><name>CAT_3</name></member>
   </compound>
-  <compound refid="gm2calc__1__2__0_2loaded__types_8hpp" kind="file"><name>gm2calc_1_2_0/loaded_types.hpp</name>
-    <member refid="gm2calc__1__2__0_2loaded__types_8hpp_1afec3d929fe914e43994d48577b656737" kind="define"><name>gm2calc_1_2_0_all_data</name></member>
-  </compound>
-  <compound refid="gm2calc__1__3__0_2loaded__types_8hpp" kind="file"><name>gm2calc_1_3_0/loaded_types.hpp</name>
-    <member refid="gm2calc__1__3__0_2loaded__types_8hpp_1a7f28762c8525049e01abbe3232d0fa36" kind="define"><name>gm2calc_1_3_0_all_data</name></member>
-  </compound>
-  <compound refid="HepLike__2__0_2loaded__types_8hpp" kind="file"><name>HepLike_2_0/loaded_types.hpp</name>
-    <member refid="HepLike__2__0_2loaded__types_8hpp_1a85f55dda969e349843f9edbdb60b6985" kind="define"><name>HepLike_2_0_all_data</name></member>
-  </compound>
-  <compound refid="obscura__1__1__0_2loaded__types_8hpp" kind="file"><name>obscura_1_1_0/loaded_types.hpp</name>
-    <member refid="obscura__1__1__0_2loaded__types_8hpp_1aa46a3bbe11585defcf14036d27f115cf" kind="define"><name>obscura_1_1_0_all_data</name></member>
-  </compound>
-  <compound refid="Pythia__8__212_2loaded__types_8hpp" kind="file"><name>Pythia_8_212/loaded_types.hpp</name>
-    <member refid="Pythia__8__212_2loaded__types_8hpp_1a57a9146f359abac7c90c6c1e456e9f6f" kind="define"><name>Pythia_8_212_all_data</name></member>
-  </compound>
-  <compound refid="Rivet__3__1__5_2loaded__types_8hpp" kind="file"><name>Rivet_3_1_5/loaded_types.hpp</name>
-    <member refid="Rivet__3__1__5_2loaded__types_8hpp_1a174df709237b67054833fb85e17b8070" kind="define"><name>Rivet_3_1_5_all_data</name></member>
-  </compound>
-  <compound refid="vevacious__1__0_2loaded__types_8hpp" kind="file"><name>vevacious_1_0/loaded_types.hpp</name>
-    <member refid="vevacious__1__0_2loaded__types_8hpp_1a58421680e425c29aed25a8f51ba41b5b" kind="define"><name>vevacious_1_0_all_data</name></member>
-  </compound>
   <compound refid="wrapper__AnalysisHandler_8hh" kind="file"><name>wrapper_AnalysisHandler.hh</name>
   </compound>
   <compound refid="wrapper__AnalysisHandler__decl_8hh" kind="file"><name>wrapper_AnalysisHandler_decl.hh</name>
@@ -15913,30 +16217,6 @@
   </compound>
   <compound refid="abstract__VevaciousPlusPlus_8hpp" kind="file"><name>abstract_VevaciousPlusPlus.hpp</name>
     <member refid="abstract__VevaciousPlusPlus_8hpp_1aec4e4dcf01a3187078ec15e0685ec386" kind="function"><name>CAT_3</name></member>
-  </compound>
-  <compound refid="gm2calc__1__2__0_2forward__decls__abstract__classes_8hpp" kind="file"><name>gm2calc_1_2_0/forward_decls_abstract_classes.hpp</name>
-    <member refid="gm2calc__1__2__0_2forward__decls__abstract__classes_8hpp_1aec4e4dcf01a3187078ec15e0685ec386" kind="function"><name>CAT_3</name></member>
-  </compound>
-  <compound refid="gm2calc__1__3__0_2forward__decls__abstract__classes_8hpp" kind="file"><name>gm2calc_1_3_0/forward_decls_abstract_classes.hpp</name>
-    <member refid="gm2calc__1__3__0_2forward__decls__abstract__classes_8hpp_1aec4e4dcf01a3187078ec15e0685ec386" kind="function"><name>CAT_3</name></member>
-  </compound>
-  <compound refid="obscura__1__1__0_2forward__decls__abstract__classes_8hpp" kind="file"><name>obscura_1_1_0/forward_decls_abstract_classes.hpp</name>
-    <member refid="obscura__1__1__0_2forward__decls__abstract__classes_8hpp_1aec4e4dcf01a3187078ec15e0685ec386" kind="function"><name>CAT_3</name></member>
-  </compound>
-  <compound refid="vevacious__1__0_2forward__decls__abstract__classes_8hpp" kind="file"><name>vevacious_1_0/forward_decls_abstract_classes.hpp</name>
-    <member refid="vevacious__1__0_2forward__decls__abstract__classes_8hpp_1aec4e4dcf01a3187078ec15e0685ec386" kind="function"><name>CAT_3</name></member>
-  </compound>
-  <compound refid="gm2calc__1__2__0_2forward__decls__wrapper__classes_8hpp" kind="file"><name>gm2calc_1_2_0/forward_decls_wrapper_classes.hpp</name>
-    <member refid="gm2calc__1__2__0_2forward__decls__wrapper__classes_8hpp_1aec4e4dcf01a3187078ec15e0685ec386" kind="function"><name>CAT_3</name></member>
-  </compound>
-  <compound refid="gm2calc__1__3__0_2forward__decls__wrapper__classes_8hpp" kind="file"><name>gm2calc_1_3_0/forward_decls_wrapper_classes.hpp</name>
-    <member refid="gm2calc__1__3__0_2forward__decls__wrapper__classes_8hpp_1aec4e4dcf01a3187078ec15e0685ec386" kind="function"><name>CAT_3</name></member>
-  </compound>
-  <compound refid="obscura__1__1__0_2forward__decls__wrapper__classes_8hpp" kind="file"><name>obscura_1_1_0/forward_decls_wrapper_classes.hpp</name>
-    <member refid="obscura__1__1__0_2forward__decls__wrapper__classes_8hpp_1aec4e4dcf01a3187078ec15e0685ec386" kind="function"><name>CAT_3</name></member>
-  </compound>
-  <compound refid="vevacious__1__0_2forward__decls__wrapper__classes_8hpp" kind="file"><name>vevacious_1_0/forward_decls_wrapper_classes.hpp</name>
-    <member refid="vevacious__1__0_2forward__decls__wrapper__classes_8hpp_1aec4e4dcf01a3187078ec15e0685ec386" kind="function"><name>CAT_3</name></member>
   </compound>
   <compound refid="wrapper__VevaciousPlusPlus_8hpp" kind="file"><name>wrapper_VevaciousPlusPlus.hpp</name>
   </compound>
@@ -16638,7 +16918,7 @@
     <member refid="Prospino__2__1_8hpp_1a8d5a383ba38225163529bfcb55b74444" kind="define"><name>SAFE_VERSION</name></member>
     <member refid="Prospino__2__1_8hpp_1a62a0f8a0b822f31ff84bc8252b33e7c8" kind="define"><name>REFERENCE</name></member>
   </compound>
-  <compound refid="Pythia__8__212_8hpp" kind="file"><name>Pythia_8_212.hpp</name>
+  <compound refid="Pythia__8__312_8hpp" kind="file"><name>Pythia_8_312.hpp</name>
   </compound>
   <compound refid="Rivet__3__1__5_8hpp" kind="file"><name>Rivet_3_1_5.hpp</name>
   </compound>
@@ -16931,13 +17211,13 @@
     <member refid="include_2gambit_2Backends_2backend__types_2obscura__1__1__0_2identification_8hpp_1a62a0f8a0b822f31ff84bc8252b33e7c8" kind="define"><name>REFERENCE</name></member>
     <member refid="include_2gambit_2Backends_2backend__types_2obscura__1__1__0_2identification_8hpp_1a900e11efb7801ca7e60f040bde5915e8" kind="define"><name>DO_CLASSLOADING</name></member>
   </compound>
-  <compound refid="include_2gambit_2Backends_2backend__types_2Pythia__8__212_2identification_8hpp" kind="file"><name>include/gambit/Backends/backend_types/Pythia_8_212/identification.hpp</name>
-    <member refid="include_2gambit_2Backends_2backend__types_2Pythia__8__212_2identification_8hpp_1a7f7848301604c58c8962207acd75ff6e" kind="define"><name>BACKENDNAME</name></member>
-    <member refid="include_2gambit_2Backends_2backend__types_2Pythia__8__212_2identification_8hpp_1a339bf682af9659de270251e5d18011be" kind="define"><name>BACKENDLANG</name></member>
-    <member refid="include_2gambit_2Backends_2backend__types_2Pythia__8__212_2identification_8hpp_1a1c6d5de492ac61ad29aec7aa9a436bbf" kind="define"><name>VERSION</name></member>
-    <member refid="include_2gambit_2Backends_2backend__types_2Pythia__8__212_2identification_8hpp_1a8d5a383ba38225163529bfcb55b74444" kind="define"><name>SAFE_VERSION</name></member>
-    <member refid="include_2gambit_2Backends_2backend__types_2Pythia__8__212_2identification_8hpp_1a62a0f8a0b822f31ff84bc8252b33e7c8" kind="define"><name>REFERENCE</name></member>
-    <member refid="include_2gambit_2Backends_2backend__types_2Pythia__8__212_2identification_8hpp_1a900e11efb7801ca7e60f040bde5915e8" kind="define"><name>DO_CLASSLOADING</name></member>
+  <compound refid="include_2gambit_2Backends_2backend__types_2Pythia__8__312_2identification_8hpp" kind="file"><name>include/gambit/Backends/backend_types/Pythia_8_312/identification.hpp</name>
+    <member refid="include_2gambit_2Backends_2backend__types_2Pythia__8__312_2identification_8hpp_1a7f7848301604c58c8962207acd75ff6e" kind="define"><name>BACKENDNAME</name></member>
+    <member refid="include_2gambit_2Backends_2backend__types_2Pythia__8__312_2identification_8hpp_1a339bf682af9659de270251e5d18011be" kind="define"><name>BACKENDLANG</name></member>
+    <member refid="include_2gambit_2Backends_2backend__types_2Pythia__8__312_2identification_8hpp_1a1c6d5de492ac61ad29aec7aa9a436bbf" kind="define"><name>VERSION</name></member>
+    <member refid="include_2gambit_2Backends_2backend__types_2Pythia__8__312_2identification_8hpp_1a8d5a383ba38225163529bfcb55b74444" kind="define"><name>SAFE_VERSION</name></member>
+    <member refid="include_2gambit_2Backends_2backend__types_2Pythia__8__312_2identification_8hpp_1a62a0f8a0b822f31ff84bc8252b33e7c8" kind="define"><name>REFERENCE</name></member>
+    <member refid="include_2gambit_2Backends_2backend__types_2Pythia__8__312_2identification_8hpp_1a900e11efb7801ca7e60f040bde5915e8" kind="define"><name>DO_CLASSLOADING</name></member>
   </compound>
   <compound refid="include_2gambit_2Backends_2backend__types_2Rivet__3__1__5_2identification_8hpp" kind="file"><name>include/gambit/Backends/backend_types/Rivet_3_1_5/identification.hpp</name>
     <member refid="include_2gambit_2Backends_2backend__types_2Rivet__3__1__5_2identification_8hpp_1a7f7848301604c58c8962207acd75ff6e" kind="define"><name>BACKENDNAME</name></member>
@@ -17910,6 +18190,11 @@
   </compound>
   <compound refid="ColliderBit__MC__rollcall_8hpp" kind="file"><name>ColliderBit_MC_rollcall.hpp</name>
     <member refid="ColliderBit__MC__rollcall_8hpp_1a99414bf65bb722f6204c37c7a507b92f" kind="define"><name>CAPABILITY</name></member>
+    <member refid="ColliderBit__MC__rollcall_8hpp_1a99414bf65bb722f6204c37c7a507b92f" kind="define"><name>CAPABILITY</name></member>
+    <member refid="ColliderBit__MC__rollcall_8hpp_1aee0cf83ee6d754df700e396da8987f1f" kind="define"><name>FUNCTION</name></member>
+    <member refid="ColliderBit__MC__rollcall_8hpp_1a99414bf65bb722f6204c37c7a507b92f" kind="define"><name>CAPABILITY</name></member>
+    <member refid="ColliderBit__MC__rollcall_8hpp_1aee0cf83ee6d754df700e396da8987f1f" kind="define"><name>FUNCTION</name></member>
+    <member refid="ColliderBit__MC__rollcall_8hpp_1a99414bf65bb722f6204c37c7a507b92f" kind="define"><name>CAPABILITY</name></member>
     <member refid="ColliderBit__MC__rollcall_8hpp_1aee0cf83ee6d754df700e396da8987f1f" kind="define"><name>FUNCTION</name></member>
     <member refid="ColliderBit__MC__rollcall_8hpp_1aee0cf83ee6d754df700e396da8987f1f" kind="define"><name>FUNCTION</name></member>
     <member refid="ColliderBit__MC__rollcall_8hpp_1a99414bf65bb722f6204c37c7a507b92f" kind="define"><name>CAPABILITY</name></member>
@@ -18046,6 +18331,8 @@
   </compound>
   <compound refid="generateEventPy8Collider_8hpp" kind="file"><name>generateEventPy8Collider.hpp</name>
     <member refid="generateEventPy8Collider_8hpp_1a1c9d15f8ccd4a52a7f0bf4f24db139bd" kind="define"><name>DEBUG_PREFIX</name></member>
+    <member refid="generateEventPy8Collider_8hpp_1ad5c22350ff1c0a0c5a85a18f0c2f4c57" kind="define"><name>GET_INITIAL_XSEC_PYTHIA</name></member>
+    <member refid="generateEventPy8Collider_8hpp_1ae56a633fe181047f227487ffd5f764fb" kind="define"><name>GET_SPECIFIC_INITIAL_XSEC_PYTHIA</name></member>
     <member refid="generateEventPy8Collider_8hpp_1af080aa2acbddc1df95a9b5b7b09d0a82" kind="define"><name>GET_PYTHIA_EVENT</name></member>
   </compound>
   <compound refid="getPy8Collider_8hpp" kind="file"><name>getPy8Collider.hpp</name>
@@ -18091,6 +18378,8 @@
   </compound>
   <compound refid="SUSY_8hpp" kind="file"><name>SUSY.hpp</name>
     <member refid="SUSY_8hpp_1a2c63ae95fe7c6106ae1ec9c283afa486" kind="define"><name>MODULE</name></member>
+    <member refid="SUSY_8hpp_1a99414bf65bb722f6204c37c7a507b92f" kind="define"><name>CAPABILITY</name></member>
+    <member refid="SUSY_8hpp_1aee0cf83ee6d754df700e396da8987f1f" kind="define"><name>FUNCTION</name></member>
     <member refid="SUSY_8hpp_1a99414bf65bb722f6204c37c7a507b92f" kind="define"><name>CAPABILITY</name></member>
     <member refid="SUSY_8hpp_1aee0cf83ee6d754df700e396da8987f1f" kind="define"><name>FUNCTION</name></member>
     <member refid="SUSY_8hpp_1a99414bf65bb722f6204c37c7a507b92f" kind="define"><name>CAPABILITY</name></member>
@@ -18141,6 +18430,8 @@
     <member refid="mt2w__bisect_8h_1a30a155674f82d88a66a9ff85d50181e1" kind="define"><name>MIN_MASS</name></member>
     <member refid="mt2w__bisect_8h_1a3dacdf62281eb2686f0c6ea523365d56" kind="define"><name>ZERO_MASS</name></member>
     <member refid="mt2w__bisect_8h_1a1a50e4da730328e9c6d78af5e0b18b03" kind="define"><name>SCANSTEP</name></member>
+  </compound>
+  <compound refid="PoissonCalculators_8hpp" kind="file"><name>PoissonCalculators.hpp</name>
   </compound>
   <compound refid="topness_8h" kind="file"><name>topness.h</name>
     <member refid="topness_8h_1ae7377a8d10ffb9029c9ef6ec0142a6c4" kind="variable"><name>mt</name></member>
@@ -18382,6 +18673,8 @@
   </compound>
   <compound refid="mt2w__bisect_8cpp" kind="file"><name>mt2w_bisect.cpp</name>
   </compound>
+  <compound refid="PoissonCalculators_8cpp" kind="file"><name>PoissonCalculators.cpp</name>
+  </compound>
   <compound refid="process__code__PID__pair__mapping_8cpp" kind="file"><name>process_code_PID_pair_mapping.cpp</name>
     <member refid="process__code__PID__pair__mapping_8cpp_1a1c9d15f8ccd4a52a7f0bf4f24db139bd" kind="define"><name>DEBUG_PREFIX</name></member>
   </compound>
@@ -18435,7 +18728,9 @@
     <member refid="depresolver_8cpp_1ac382531b7ae73ddd196d5af474bb3af2" kind="define"><name>NORMAL_DEPENDENCY</name></member>
     <member refid="depresolver_8cpp_1a440dafd6276e1cc9f2618b064a4259c8" kind="define"><name>LOOP_MANAGER_DEPENDENCY</name></member>
   </compound>
-  <compound refid="diagnostics_8cpp" kind="file"><name>diagnostics.cpp</name>
+  <compound refid="Core_2src_2diagnostics_8cpp" kind="file"><name>Core/src/diagnostics.cpp</name>
+  </compound>
+  <compound refid="ScannerBit_2python_2src_2diagnostics_8cpp" kind="file"><name>ScannerBit/python/src/diagnostics.cpp</name>
   </compound>
   <compound refid="error__handlers_8cpp" kind="file"><name>error_handlers.cpp</name>
   </compound>
@@ -22247,6 +22542,27 @@
   </compound>
   <compound refid="coutprinter_8cpp" kind="file"><name>coutprinter.cpp</name>
   </compound>
+  <compound refid="hdf5__combine__tools_8cpp" kind="file"><name>hdf5_combine_tools.cpp</name>
+  </compound>
+  <compound refid="hdf5printer_8cpp" kind="file"><name>hdf5printer.cpp</name>
+    <member refid="hdf5printer_8cpp_1adae9a3acc3a48efb0b8038e5650041d8" kind="define"><name>DBUG</name></member>
+    <member refid="hdf5printer_8cpp_1af0c6813df71ddb1db9441cc8553bc045" kind="define"><name>FINAL_CHECK_SYNC</name></member>
+    <member refid="hdf5printer_8cpp_1a0f6f6d4aa5c5a53a6ddb89d7a99673f5" kind="define"><name>FINAL_DEBUG_MODE</name></member>
+    <member refid="hdf5printer_8cpp_1a7a18f09d3bb5a5f03a55546e38f8efd8" kind="define"><name>ERR_MSG</name></member>
+  </compound>
+  <compound refid="hdf5reader_8cpp" kind="file"><name>hdf5reader.cpp</name>
+    <member refid="hdf5reader_8cpp_1a6687b5b3317855f563fe6aae9f70a378" kind="define"><name>externGETTYPEID</name></member>
+    <member refid="hdf5reader_8cpp_1a60ddaf41ffe270f220162254a39cdb22" kind="define"><name>GET_TYPE_CASES</name></member>
+  </compound>
+  <compound refid="hdf5tools_8cpp" kind="file"><name>hdf5tools.cpp</name>
+    <member refid="hdf5tools_8cpp_1a299a4a1ac64a945297d7bff977760d82" kind="define"><name>SIMPLE_CALL</name></member>
+    <member refid="hdf5tools_8cpp_1a7528b3777bdca4fe53e1ecbd2f06d4db" kind="define"><name>RUN_TYPE_DEPENDENT_CHECK</name></member>
+    <member refid="hdf5tools_8cpp_1a934f2981a5d397f5f434cddef08e6294" kind="define"><name>ELSEIF</name></member>
+    <member refid="hdf5tools_8cpp_1a275a850523a322556212384962543938" kind="define"><name>PRINTTYPEID</name></member>
+  </compound>
+  <compound refid="hdf5printer__v2_8cpp" kind="file"><name>hdf5printer_v2.cpp</name>
+    <member refid="hdf5printer__v2_8cpp_1a729f5ac3cb82291a1f6d3945f618298a" kind="define"><name>DEFINE_GET_BUFFER</name></member>
+  </compound>
   <compound refid="asciiprinter_2print__overloads_8cpp" kind="file"><name>asciiprinter/print_overloads.cpp</name>
     <member refid="asciiprinter_2print__overloads_8cpp_1abde1d50fed247413e4280289b37013cf" kind="define"><name>ASIMPLEPRINT</name></member>
     <member refid="asciiprinter_2print__overloads_8cpp_1a6726e8579c53e57c1700e0bb21377027" kind="define"><name>ASIMPLEPRINT_VEC</name></member>
@@ -22267,24 +22583,6 @@
   <compound refid="sqliteprinter_2print__overloads_8cpp" kind="file"><name>sqliteprinter/print_overloads.cpp</name>
     <member refid="sqliteprinter_2print__overloads_8cpp_1a06d8bfab851a5e4b3d3e02db8afc8d8e" kind="define"><name>PRINT</name></member>
   </compound>
-  <compound refid="hdf5__combine__tools_8cpp" kind="file"><name>hdf5_combine_tools.cpp</name>
-  </compound>
-  <compound refid="hdf5printer_8cpp" kind="file"><name>hdf5printer.cpp</name>
-    <member refid="hdf5printer_8cpp_1adae9a3acc3a48efb0b8038e5650041d8" kind="define"><name>DBUG</name></member>
-    <member refid="hdf5printer_8cpp_1af0c6813df71ddb1db9441cc8553bc045" kind="define"><name>FINAL_CHECK_SYNC</name></member>
-    <member refid="hdf5printer_8cpp_1a0f6f6d4aa5c5a53a6ddb89d7a99673f5" kind="define"><name>FINAL_DEBUG_MODE</name></member>
-    <member refid="hdf5printer_8cpp_1a7a18f09d3bb5a5f03a55546e38f8efd8" kind="define"><name>ERR_MSG</name></member>
-  </compound>
-  <compound refid="hdf5reader_8cpp" kind="file"><name>hdf5reader.cpp</name>
-    <member refid="hdf5reader_8cpp_1a6687b5b3317855f563fe6aae9f70a378" kind="define"><name>externGETTYPEID</name></member>
-    <member refid="hdf5reader_8cpp_1a60ddaf41ffe270f220162254a39cdb22" kind="define"><name>GET_TYPE_CASES</name></member>
-  </compound>
-  <compound refid="hdf5tools_8cpp" kind="file"><name>hdf5tools.cpp</name>
-    <member refid="hdf5tools_8cpp_1a299a4a1ac64a945297d7bff977760d82" kind="define"><name>SIMPLE_CALL</name></member>
-    <member refid="hdf5tools_8cpp_1a7528b3777bdca4fe53e1ecbd2f06d4db" kind="define"><name>RUN_TYPE_DEPENDENT_CHECK</name></member>
-    <member refid="hdf5tools_8cpp_1a934f2981a5d397f5f434cddef08e6294" kind="define"><name>ELSEIF</name></member>
-    <member refid="hdf5tools_8cpp_1a275a850523a322556212384962543938" kind="define"><name>PRINTTYPEID</name></member>
-  </compound>
   <compound refid="asciiprinter_2retrieve__overloads_8cpp" kind="file"><name>asciiprinter/retrieve_overloads.cpp</name>
   </compound>
   <compound refid="hdf5printer_2retrieve__overloads_8cpp" kind="file"><name>hdf5printer/retrieve_overloads.cpp</name>
@@ -22297,9 +22595,6 @@
   <compound refid="sqliteprinter_2retrieve__overloads_8cpp" kind="file"><name>sqliteprinter/retrieve_overloads.cpp</name>
     <member refid="sqliteprinter_2retrieve__overloads_8cpp_1ad9186c228e10f08d3ad0b4e9048df26e" kind="define"><name>RETRIEVE_INT</name></member>
     <member refid="sqliteprinter_2retrieve__overloads_8cpp_1a78071b7b3d4f92395e9bafe68856a615" kind="define"><name>RETRIEVE_REAL</name></member>
-  </compound>
-  <compound refid="hdf5printer__v2_8cpp" kind="file"><name>hdf5printer_v2.cpp</name>
-    <member refid="hdf5printer__v2_8cpp_1a729f5ac3cb82291a1f6d3945f618298a" kind="define"><name>DEFINE_GET_BUFFER</name></member>
   </compound>
   <compound refid="sqlitebase_8cpp" kind="file"><name>sqlitebase.cpp</name>
     <member refid="sqlitebase_8cpp_1a4a7cb55423ec746a80dd3f584030b491" kind="define"><name>SQL_DEBUG</name></member>
@@ -22455,8 +22750,6 @@
     <member refid="py__module__scanbit_8hpp_1a9bbf706078b48278b64e7bde1f8cfbf7" kind="typedef"><name>vec_str_type_</name></member>
     <member refid="py__module__scanbit_8hpp_1a931a6a11d5c8f2b75c1c9796b46a347d" kind="function"><name>PYBIND11_EMBEDDED_MODULE</name></member>
   </compound>
-  <compound refid="python__utils_8hpp" kind="file"><name>python_utils.hpp</name>
-  </compound>
   <compound refid="scan_8hpp" kind="file"><name>scan.hpp</name>
   </compound>
   <compound refid="scanner__plugin_8hpp" kind="file"><name>scanner_plugin.hpp</name>
@@ -22479,42 +22772,28 @@
   </compound>
   <compound refid="scannerbit_8hpp" kind="file"><name>scannerbit.hpp</name>
   </compound>
-  <compound refid="1_80_80_2diver_8hpp" kind="file"><name>1.0.0/diver.hpp</name>
-    <member refid="1_80_80_2diver_8hpp_1a80cfe3e7dc1b3fdd510920c14a878f0a" kind="function"><name>cdiver</name></member>
+  <compound refid="ais_8hpp" kind="file"><name>ais.hpp</name>
+    <member refid="ais_8hpp_1a6ec6d6bbc07c326517029d13d4d6928b" kind="function"><name>notUnit</name></member>
+    <member refid="ais_8hpp_1a551dc1b658eb16855c21252c918066b3" kind="function"><name>c_ptr</name></member>
+    <member refid="ais_8hpp_1a110711baffd4353eaf9e6dff99b66c25" kind="function"><name>calcCov</name></member>
+    <member refid="ais_8hpp_1a49a9028cd343f957132b9ba25c6dca4d" kind="function"><name>calcIndent</name></member>
+    <member refid="ais_8hpp_1a458e6e1814de9cc129d1c15290fbbf81" kind="function"><name>AIS</name></member>
   </compound>
-  <compound refid="1_80_82_2diver_8hpp" kind="file"><name>1.0.2/diver.hpp</name>
-    <member refid="1_80_82_2diver_8hpp_1a80cfe3e7dc1b3fdd510920c14a878f0a" kind="function"><name>cdiver</name></member>
-  </compound>
-  <compound refid="1_80_84_2diver_8hpp" kind="file"><name>1.0.4/diver.hpp</name>
-    <member refid="1_80_84_2diver_8hpp_1a9bca685e4a3ef45a99f2240ff99adc6b" kind="function"><name>cdiver</name></member>
-  </compound>
-  <compound refid="great_8hpp" kind="file"><name>great.hpp</name>
-  </compound>
-  <compound refid="minuit2_8hpp" kind="file"><name>minuit2.hpp</name>
-    <member refid="minuit2_8hpp_1ad28184dcc5e6ccd64ae8731aba9adf4c" kind="define"><name>ROOT_Math_VecTypes</name></member>
-    <member refid="minuit2_8hpp_1ac6ef0ed09603459f45d562dda9870b02" kind="define"><name>MATHCORE_STANDALONE</name></member>
-  </compound>
-  <compound refid="multinest_8hpp" kind="file"><name>multinest.hpp</name>
-    <member refid="multinest_8hpp_1a7044374b3f87f3372e6ce3ec27535209" kind="function"><name>run</name></member>
-  </compound>
-  <compound refid="1_817_81_2polychord_8hpp" kind="file"><name>1.17.1/polychord.hpp</name>
-    <member refid="1_817_81_2polychord_8hpp_1a52ba4fbe50b52c434f8badd72819e9e8" kind="function"><name>run_polychord</name></member>
-  </compound>
-  <compound refid="1_818_82_2polychord_8hpp" kind="file"><name>1.18.2/polychord.hpp</name>
-    <member refid="1_818_82_2polychord_8hpp_1a52ba4fbe50b52c434f8badd72819e9e8" kind="function"><name>run_polychord</name></member>
-  </compound>
-  <compound refid="1_820_81_2polychord_8hpp" kind="file"><name>1.20.1/polychord.hpp</name>
-    <member refid="1_820_81_2polychord_8hpp_1a52ba4fbe50b52c434f8badd72819e9e8" kind="function"><name>run_polychord</name></member>
-  </compound>
-  <compound refid="postprocessor__1_80_80_2chunks_8hpp" kind="file"><name>postprocessor_1.0.0/chunks.hpp</name>
-    <member refid="postprocessor__1_80_80_2chunks_8hpp_1aa49b57d8da389bf523e301540f0a5593" kind="typedef"><name>ChunkSet</name></member>
-  </compound>
-  <compound refid="postprocessor__2_80_80_2chunks_8hpp" kind="file"><name>postprocessor_2.0.0/chunks.hpp</name>
-    <member refid="postprocessor__2_80_80_2chunks_8hpp_1aa49b57d8da389bf523e301540f0a5593" kind="typedef"><name>ChunkSet</name></member>
-  </compound>
-  <compound refid="postprocessor__1_80_80_2postprocessor_8hpp" kind="file"><name>postprocessor_1.0.0/postprocessor.hpp</name>
-  </compound>
-  <compound refid="postprocessor__2_80_80_2postprocessor_8hpp" kind="file"><name>postprocessor_2.0.0/postprocessor.hpp</name>
+  <compound refid="ais_2random__tools_8hpp" kind="file"><name>ais/random_tools.hpp</name>
+    <member refid="ais_2random__tools_8hpp_1a1afc8063a2671a322a3058215ea38443" kind="function"><name>matrix</name></member>
+    <member refid="ais_2random__tools_8hpp_1acd111f349ac7eb06393b3ae0b51666d4" kind="function"><name>matrix</name></member>
+    <member refid="ais_2random__tools_8hpp_1a164f596d92ec879c76f80a5f30ae8bd2" kind="function"><name>matrix</name></member>
+    <member refid="ais_2random__tools_8hpp_1a32fea9b9b302a8300ce0c341d633f218" kind="function"><name>matrix</name></member>
+    <member refid="ais_2random__tools_8hpp_1a661848657d3b2d126cc6089929c1f9ae" kind="function"><name>matrix</name></member>
+    <member refid="ais_2random__tools_8hpp_1a05a6088d0b9bf3c1e989c9495e8047d0" kind="function"><name>matrix</name></member>
+    <member refid="ais_2random__tools_8hpp_1a9d613c0191e6c79ac42260569ccdfbbd" kind="function"><name>matrix</name></member>
+    <member refid="ais_2random__tools_8hpp_1a104b708b85faafcdd23ef651267bff04" kind="function"><name>matrix</name></member>
+    <member refid="ais_2random__tools_8hpp_1af315933242394f0392f0df12b1b8b07e" kind="function"><name>matrix</name></member>
+    <member refid="ais_2random__tools_8hpp_1a16d1f62c640f539798ef38b0af23fef4" kind="function"><name>del</name></member>
+    <member refid="ais_2random__tools_8hpp_1aeafd2598cb4e9d17d2a320359015f5ae" kind="function"><name>del</name></member>
+    <member refid="ais_2random__tools_8hpp_1a0568aaad4bb9850a8be67c367dc1a9d8" kind="function"><name>del</name></member>
+    <member refid="ais_2random__tools_8hpp_1aca1fcaedb390cf776b953011e16aa48b" kind="function"><name>SQ</name></member>
+    <member refid="ais_2random__tools_8hpp_1a60717f8f0dfdff9d5979e19985a1be7a" kind="function"><name>SQR</name></member>
   </compound>
   <compound refid="simple_2random__tools_8hpp" kind="file"><name>simple/random_tools.hpp</name>
     <member refid="simple_2random__tools_8hpp_1a1afc8063a2671a322a3058215ea38443" kind="function"><name>matrix</name></member>
@@ -22548,11 +22827,80 @@
     <member refid="twalk_2random__tools_8hpp_1aca1fcaedb390cf776b953011e16aa48b" kind="function"><name>SQ</name></member>
     <member refid="twalk_2random__tools_8hpp_1a60717f8f0dfdff9d5979e19985a1be7a" kind="function"><name>SQR</name></member>
   </compound>
+  <compound refid="diver__1_80_80_2diver_8hpp" kind="file"><name>diver_1.0.0/diver.hpp</name>
+    <member refid="diver__1_80_80_2diver_8hpp_1a80cfe3e7dc1b3fdd510920c14a878f0a" kind="function"><name>cdiver</name></member>
+  </compound>
+  <compound refid="diver__1_80_82_2diver_8hpp" kind="file"><name>diver_1.0.2/diver.hpp</name>
+    <member refid="diver__1_80_82_2diver_8hpp_1a80cfe3e7dc1b3fdd510920c14a878f0a" kind="function"><name>cdiver</name></member>
+  </compound>
+  <compound refid="diver__1_80_84_2diver_8hpp" kind="file"><name>diver_1.0.4/diver.hpp</name>
+    <member refid="diver__1_80_84_2diver_8hpp_1a9bca685e4a3ef45a99f2240ff99adc6b" kind="function"><name>cdiver</name></member>
+  </compound>
+  <compound refid="diver__1_80_85_2diver_8hpp" kind="file"><name>diver_1.0.5/diver.hpp</name>
+    <member refid="diver__1_80_85_2diver_8hpp_1a90920266e642f6ecd9af6b30eac9f684" kind="function"><name>cdiver</name></member>
+  </compound>
+  <compound refid="great_8hpp" kind="file"><name>great.hpp</name>
+  </compound>
+  <compound refid="jswarm_8hpp" kind="file"><name>jswarm.hpp</name>
+  </compound>
+  <compound refid="minuit2_8hpp" kind="file"><name>minuit2.hpp</name>
+    <member refid="minuit2_8hpp_1ad28184dcc5e6ccd64ae8731aba9adf4c" kind="define"><name>ROOT_Math_VecTypes</name></member>
+    <member refid="minuit2_8hpp_1ac6ef0ed09603459f45d562dda9870b02" kind="define"><name>MATHCORE_STANDALONE</name></member>
+  </compound>
+  <compound refid="multinest_2multinest_8hpp" kind="file"><name>multinest/multinest.hpp</name>
+    <member refid="multinest_2multinest_8hpp_1a7044374b3f87f3372e6ce3ec27535209" kind="function"><name>run</name></member>
+  </compound>
+  <compound refid="multinest__3_810_2multinest_8hpp" kind="file"><name>multinest_3.10/multinest.hpp</name>
+    <member refid="multinest__3_810_2multinest_8hpp_1a7044374b3f87f3372e6ce3ec27535209" kind="function"><name>run</name></member>
+  </compound>
+  <compound refid="multinest__3_811_2multinest_8hpp" kind="file"><name>multinest_3.11/multinest.hpp</name>
+    <member refid="multinest__3_811_2multinest_8hpp_1a7044374b3f87f3372e6ce3ec27535209" kind="function"><name>run</name></member>
+  </compound>
+  <compound refid="1_817_81_2polychord_8hpp" kind="file"><name>1.17.1/polychord.hpp</name>
+    <member refid="1_817_81_2polychord_8hpp_1a52ba4fbe50b52c434f8badd72819e9e8" kind="function"><name>run_polychord</name></member>
+  </compound>
+  <compound refid="1_818_82_2polychord_8hpp" kind="file"><name>1.18.2/polychord.hpp</name>
+    <member refid="1_818_82_2polychord_8hpp_1a52ba4fbe50b52c434f8badd72819e9e8" kind="function"><name>run_polychord</name></member>
+  </compound>
+  <compound refid="1_820_81_2polychord_8hpp" kind="file"><name>1.20.1/polychord.hpp</name>
+    <member refid="1_820_81_2polychord_8hpp_1a52ba4fbe50b52c434f8badd72819e9e8" kind="function"><name>run_polychord</name></member>
+  </compound>
+  <compound refid="postprocessor__1_80_80_2chunks_8hpp" kind="file"><name>postprocessor_1.0.0/chunks.hpp</name>
+    <member refid="postprocessor__1_80_80_2chunks_8hpp_1aa49b57d8da389bf523e301540f0a5593" kind="typedef"><name>ChunkSet</name></member>
+  </compound>
+  <compound refid="postprocessor__2_80_80_2chunks_8hpp" kind="file"><name>postprocessor_2.0.0/chunks.hpp</name>
+    <member refid="postprocessor__2_80_80_2chunks_8hpp_1aa49b57d8da389bf523e301540f0a5593" kind="typedef"><name>ChunkSet</name></member>
+  </compound>
+  <compound refid="postprocessor__1_80_80_2postprocessor_8hpp" kind="file"><name>postprocessor_1.0.0/postprocessor.hpp</name>
+  </compound>
+  <compound refid="postprocessor__2_80_80_2postprocessor_8hpp" kind="file"><name>postprocessor_2.0.0/postprocessor.hpp</name>
+  </compound>
+  <compound refid="mpi__distribute_8hpp" kind="file"><name>mpi_distribute.hpp</name>
+    <member refid="mpi__distribute_8hpp_1ae04d263ec899fd61bcd9ccd6269f0889" kind="define"><name>mpi_distribute</name></member>
+  </compound>
   <compound refid="twalk_8hpp" kind="file"><name>twalk.hpp</name>
   </compound>
-  <compound refid="objectives_2python_2python_8cpp" kind="file"><name>objectives/python/python.cpp</name>
+  <compound refid="interface_8hpp" kind="file"><name>interface.hpp</name>
   </compound>
-  <compound refid="scanners_2python_2python_8cpp" kind="file"><name>scanners/python/python.cpp</name>
+  <compound refid="python_8hpp" kind="file"><name>python.hpp</name>
+  </compound>
+  <compound refid="include_2gambit_2ScannerBit_2python__utils_8hpp" kind="file"><name>include/gambit/ScannerBit/python_utils.hpp</name>
+  </compound>
+  <compound refid="python_2include_2python__utils_8hpp" kind="file"><name>python/include/python_utils.hpp</name>
+  </compound>
+  <compound refid="interface_8cpp" kind="file"><name>interface.cpp</name>
+  </compound>
+  <compound refid="python_2src_2python_8cpp" kind="file"><name>python/src/python.cpp</name>
+    <member refid="python_2src_2python_8cpp_1a3657169c39587f0ee50fd20922ec2ec9" kind="typedef"><name>map_type</name></member>
+    <member refid="python_2src_2python_8cpp_1a6904ebf922c25f8c76c07fc2a67b03c1" kind="typedef"><name>vec_type</name></member>
+    <member refid="python_2src_2python_8cpp_1ac6896cee91b281f710f04ce6b3f37678" kind="function"><name>PYBIND11_MAKE_OPAQUE</name></member>
+    <member refid="python_2src_2python_8cpp_1af819dfadec3e7baf908b06c775911d76" kind="function"><name>PYBIND11_MAKE_OPAQUE</name></member>
+    <member refid="python_2src_2python_8cpp_1a111591b00250795bc2d98defeff224b8" kind="function"><name>PYBIND11_MAKE_OPAQUE</name></member>
+    <member refid="python_2src_2python_8cpp_1a25eb7ba4a4e7498239050a6e6c9f9c10" kind="function"><name>PYBIND11_MODULE</name></member>
+  </compound>
+  <compound refid="src_2objectives_2python_2python_8cpp" kind="file"><name>src/objectives/python/python.cpp</name>
+  </compound>
+  <compound refid="src_2scanners_2python_2python_8cpp" kind="file"><name>src/scanners/python/python.cpp</name>
   </compound>
   <compound refid="examples_8cpp" kind="file"><name>examples.cpp</name>
     <member refid="examples_8cpp_1a1e28d2caa693076d78a73d8b0411603c" kind="function"><name>objective_plugin</name></member>
@@ -22584,6 +22932,10 @@
   </compound>
   <compound refid="scanner__utils_8cpp" kind="file"><name>scanner_utils.cpp</name>
   </compound>
+  <compound refid="ais_8cpp" kind="file"><name>ais.cpp</name>
+    <member refid="ais_8cpp_1a581a1c3dfcfb06acc1ea10983775a33e" kind="function"><name>scanner_plugin</name></member>
+    <member refid="ais_8cpp_1a458e6e1814de9cc129d1c15290fbbf81" kind="function"><name>AIS</name></member>
+  </compound>
   <compound refid="diver__1_80_80_2diver_8cpp" kind="file"><name>diver_1.0.0/diver.cpp</name>
     <member refid="diver__1_80_80_2diver_8cpp_1ad701f4f6d8ce384da6bd5d6f4516bbb6" kind="function"><name>scanner_plugin</name></member>
   </compound>
@@ -22593,8 +22945,18 @@
   <compound refid="diver__1_80_84_2diver_8cpp" kind="file"><name>diver_1.0.4/diver.cpp</name>
     <member refid="diver__1_80_84_2diver_8cpp_1ac8355c7340f020bd8d316b6d834b64c1" kind="function"><name>scanner_plugin</name></member>
   </compound>
+  <compound refid="diver__1_80_85_2diver_8cpp" kind="file"><name>diver_1.0.5/diver.cpp</name>
+    <member refid="diver__1_80_85_2diver_8cpp_1a0f0276559bb96e43c5265a2809110378" kind="function"><name>scanner_plugin</name></member>
+  </compound>
   <compound refid="great_8cpp" kind="file"><name>great.cpp</name>
     <member refid="great_8cpp_1a346fcf248f225194f64c60f09dbe2cce" kind="function"><name>scanner_plugin</name></member>
+  </compound>
+  <compound refid="jswarm_8cpp" kind="file"><name>jswarm.cpp</name>
+    <member refid="jswarm_8cpp_1a45bd835d61e8ca6f1969929ed8c976e5" kind="function"><name>scanner_plugin</name></member>
+  </compound>
+  <compound refid="particle_8cpp" kind="file"><name>particle.cpp</name>
+  </compound>
+  <compound refid="particle__swarm_8cpp" kind="file"><name>particle_swarm.cpp</name>
   </compound>
   <compound refid="minuit2_8cpp" kind="file"><name>minuit2.cpp</name>
     <member refid="minuit2_8cpp_1ada50b40e2990cfb13573b2d32c1d452a" kind="function"><name>check_node_keys</name></member>
@@ -22671,6 +23033,21 @@
     <member refid="SpecBit__examples_8cpp_1a29d5b2cd20833268bf61142e518af4bd" kind="define"><name>GET_M1_MATRIX</name></member>
     <member refid="SpecBit__examples_8cpp_1aac0912f21186bb4074a6fa43dc773a26" kind="define"><name>GET_M2_MATRIX_EL</name></member>
     <member refid="SpecBit__examples_8cpp_1ab2383afa22bf7f542081a8cc2ed0854e" kind="define"><name>GET_M2_MATRIX</name></member>
+  </compound>
+  <compound refid="examples_2SpecBit__tests_8cpp" kind="file"><name>examples/SpecBit_tests.cpp</name>
+    <member refid="examples_2SpecBit__tests_8cpp_1aba64ecd72702508fd085f1dbd3bec098" kind="define"><name>IN_SPECBIT</name></member>
+    <member refid="examples_2SpecBit__tests_8cpp_1a34241dc28efe320813ed068fa88e849c" kind="define"><name>QUERYMODELS</name></member>
+  </compound>
+  <compound refid="src_2SpecBit__tests_8cpp" kind="file"><name>src/SpecBit_tests.cpp</name>
+    <member refid="src_2SpecBit__tests_8cpp_1aca80a3ada17b93bb6747d1de0897fadb" kind="define"><name>ECHO</name></member>
+    <member refid="src_2SpecBit__tests_8cpp_1a3d52cc74367f74ab95607082207f1d59" kind="define"><name>GET_MIX_MATRIX_EL</name></member>
+    <member refid="src_2SpecBit__tests_8cpp_1a18745a046c0fc365b74c957e8568ff25" kind="define"><name>GET_MIX_MATRIX</name></member>
+    <member refid="src_2SpecBit__tests_8cpp_1afa617d69d263127dea2198d489c1e377" kind="define"><name>GET_MATRIX_EL</name></member>
+    <member refid="src_2SpecBit__tests_8cpp_1a76ddc4fa60861448b0b5686f684d7ac6" kind="define"><name>GET_MATRIX</name></member>
+    <member refid="src_2SpecBit__tests_8cpp_1ab4a07fc431b019ef1d56c91cfd33a7d0" kind="define"><name>GET_M1_MATRIX_EL</name></member>
+    <member refid="src_2SpecBit__tests_8cpp_1a29d5b2cd20833268bf61142e518af4bd" kind="define"><name>GET_M1_MATRIX</name></member>
+    <member refid="src_2SpecBit__tests_8cpp_1aac0912f21186bb4074a6fa43dc773a26" kind="define"><name>GET_M2_MATRIX_EL</name></member>
+    <member refid="src_2SpecBit__tests_8cpp_1ab2383afa22bf7f542081a8cc2ed0854e" kind="define"><name>GET_M2_MATRIX</name></member>
   </compound>
   <compound refid="external__examples_8hpp" kind="file"><name>external_examples.hpp</name>
     <member refid="external__examples_8hpp_1a0760af00db5bda628dd93faaf552f6f2" kind="define"><name>PRINTOUT</name></member>
@@ -22958,21 +23335,6 @@
   <compound refid="SpecBit__SubGeVDM_8cpp" kind="file"><name>SpecBit_SubGeVDM.cpp</name>
   </compound>
   <compound refid="SpecBit__SuperRenormHP_8cpp" kind="file"><name>SpecBit_SuperRenormHP.cpp</name>
-  </compound>
-  <compound refid="examples_2SpecBit__tests_8cpp" kind="file"><name>examples/SpecBit_tests.cpp</name>
-    <member refid="examples_2SpecBit__tests_8cpp_1aba64ecd72702508fd085f1dbd3bec098" kind="define"><name>IN_SPECBIT</name></member>
-    <member refid="examples_2SpecBit__tests_8cpp_1a34241dc28efe320813ed068fa88e849c" kind="define"><name>QUERYMODELS</name></member>
-  </compound>
-  <compound refid="src_2SpecBit__tests_8cpp" kind="file"><name>src/SpecBit_tests.cpp</name>
-    <member refid="src_2SpecBit__tests_8cpp_1aca80a3ada17b93bb6747d1de0897fadb" kind="define"><name>ECHO</name></member>
-    <member refid="src_2SpecBit__tests_8cpp_1a3d52cc74367f74ab95607082207f1d59" kind="define"><name>GET_MIX_MATRIX_EL</name></member>
-    <member refid="src_2SpecBit__tests_8cpp_1a18745a046c0fc365b74c957e8568ff25" kind="define"><name>GET_MIX_MATRIX</name></member>
-    <member refid="src_2SpecBit__tests_8cpp_1afa617d69d263127dea2198d489c1e377" kind="define"><name>GET_MATRIX_EL</name></member>
-    <member refid="src_2SpecBit__tests_8cpp_1a76ddc4fa60861448b0b5686f684d7ac6" kind="define"><name>GET_MATRIX</name></member>
-    <member refid="src_2SpecBit__tests_8cpp_1ab4a07fc431b019ef1d56c91cfd33a7d0" kind="define"><name>GET_M1_MATRIX_EL</name></member>
-    <member refid="src_2SpecBit__tests_8cpp_1a29d5b2cd20833268bf61142e518af4bd" kind="define"><name>GET_M1_MATRIX</name></member>
-    <member refid="src_2SpecBit__tests_8cpp_1aac0912f21186bb4074a6fa43dc773a26" kind="define"><name>GET_M2_MATRIX_EL</name></member>
-    <member refid="src_2SpecBit__tests_8cpp_1ab2383afa22bf7f542081a8cc2ed0854e" kind="define"><name>GET_M2_MATRIX</name></member>
   </compound>
   <compound refid="SpecBit__types_8cpp" kind="file"><name>SpecBit_types.cpp</name>
   </compound>
@@ -23579,12 +23941,6 @@
   </compound>
   <compound refid="deprecated" kind="page"><name>deprecated</name>
   </compound>
-  <compound refid="dir_6c04a1e179ff3f90d749306cdd76978f" kind="dir"><name>1.0.0</name>
-  </compound>
-  <compound refid="dir_8377966446dd4e09f5d090c6a2b8fcf0" kind="dir"><name>1.0.2</name>
-  </compound>
-  <compound refid="dir_298c204ec23185c23e79e52b448534b2" kind="dir"><name>1.0.4</name>
-  </compound>
   <compound refid="dir_7f63617121156b64dc906bee52c06e1e" kind="dir"><name>1.17.1</name>
   </compound>
   <compound refid="dir_1be749cb9cddbb8deefe38ef8297a21a" kind="dir"><name>1.18.2</name>
@@ -23592,6 +23948,10 @@
   <compound refid="dir_f4594c1bc7e5099f29f411d30112926c" kind="dir"><name>1.20.1</name>
   </compound>
   <compound refid="dir_167299c9074d93a87804e76c39b58f81" kind="dir"><name>3.6.27</name>
+  </compound>
+  <compound refid="dir_ae36a1c94021dfabe077f563e71cc2f6" kind="dir"><name>ais</name>
+  </compound>
+  <compound refid="dir_6f054e267a7cdd83788c52ba8dc0898e" kind="dir"><name>ais</name>
   </compound>
   <compound refid="dir_262b43c519d43214d405683c7e3a8f39" kind="dir"><name>analyses</name>
   </compound>
@@ -23645,13 +24005,21 @@
   </compound>
   <compound refid="dir_ec0001d0a47d8f5e87814a0c290a00e6" kind="dir"><name>detectors</name>
   </compound>
-  <compound refid="dir_8a784228ca6219402d8e768ef3d07ed4" kind="dir"><name>diver</name>
+  <compound refid="dir_e50ce165e548ec3f760109692aed766d" kind="dir"><name>diver_1.0.0</name>
   </compound>
   <compound refid="dir_9bd3aed32ec8bd367861725b20010384" kind="dir"><name>diver_1.0.0</name>
   </compound>
+  <compound refid="dir_5c4514b193605f4db4a260050c88e9b7" kind="dir"><name>diver_1.0.2</name>
+  </compound>
   <compound refid="dir_fe5cdeed6f25b5e8a069027a5edb5ecb" kind="dir"><name>diver_1.0.2</name>
   </compound>
+  <compound refid="dir_4c18449af4d2aae8509587e080f867fc" kind="dir"><name>diver_1.0.4</name>
+  </compound>
   <compound refid="dir_cd56b820a3fd9ed55409611c7168824f" kind="dir"><name>diver_1.0.4</name>
+  </compound>
+  <compound refid="dir_6bedcae33d5b01b7e56fa4e6ca6a4707" kind="dir"><name>diver_1.0.5</name>
+  </compound>
+  <compound refid="dir_ecb2b0144e00fab0e9cc7b4330665b40" kind="dir"><name>diver_1.0.5</name>
   </compound>
   <compound refid="dir_d291bc6448e2f77ce5a8179174f94860" kind="dir"><name>Elements</name>
   </compound>
@@ -23783,9 +24151,15 @@
   </compound>
   <compound refid="dir_05fbb9f424d9ed4288dc7709debd0ffd" kind="dir"><name>include</name>
   </compound>
+  <compound refid="dir_393023951ade64284f339adadd6973d4" kind="dir"><name>include</name>
+  </compound>
   <compound refid="dir_3e780b8b8b0b785a128ffd7efbd03579" kind="dir"><name>include</name>
   </compound>
   <compound refid="dir_99c54269c495811876a04d63073a2500" kind="dir"><name>include</name>
+  </compound>
+  <compound refid="dir_fc88f50721b89259c918566258d8283d" kind="dir"><name>jswarm</name>
+  </compound>
+  <compound refid="dir_a5abbb0f88ad1325ecdf27330b4e5040" kind="dir"><name>jswarm</name>
   </compound>
   <compound refid="dir_2fff4dab633ec20c000165c1106151f7" kind="dir"><name>limits</name>
   </compound>
@@ -23813,7 +24187,11 @@
   </compound>
   <compound refid="dir_d6f2c634641de666ec4770394adf0d44" kind="dir"><name>multinest</name>
   </compound>
+  <compound refid="dir_68d67eb8fd2600cbd9d28957b59373d6" kind="dir"><name>multinest_3.10</name>
+  </compound>
   <compound refid="dir_5586646e495602c2f03a5336e5e192fd" kind="dir"><name>multinest_3.10</name>
+  </compound>
+  <compound refid="dir_d8b606c22eebd9895a4852f4cd46e9c2" kind="dir"><name>multinest_3.11</name>
   </compound>
   <compound refid="dir_306d653ce190cf44278777a89d3651fa" kind="dir"><name>multinest_3.11</name>
   </compound>
@@ -23867,7 +24245,9 @@
   </compound>
   <compound refid="dir_1f7cbebc080ad51a0fd4bd5825e55e9f" kind="dir"><name>Pythia8</name>
   </compound>
-  <compound refid="dir_f6265655d4928eb9f90e439e34e335a8" kind="dir"><name>Pythia_8_212</name>
+  <compound refid="dir_ad1fd1870dde655326a9d8b4ecc9f58b" kind="dir"><name>Pythia_8_312</name>
+  </compound>
+  <compound refid="dir_506a2e9532edcf7ae131b4f5d328d0f1" kind="dir"><name>python</name>
   </compound>
   <compound refid="dir_ad0521b326460f0174b8906ff1985a58" kind="dir"><name>python</name>
   </compound>
@@ -23938,6 +24318,8 @@
   <compound refid="dir_5fdf15011a61f9efccacc93cad5f337e" kind="dir"><name>src</name>
   </compound>
   <compound refid="dir_5eddcbaa329b846c52710353c79a6d75" kind="dir"><name>src</name>
+  </compound>
+  <compound refid="dir_6ec10fe68e5ca63b6ca87ac3c958cdb1" kind="dir"><name>src</name>
   </compound>
   <compound refid="dir_7e7214566a1bf7120f8297a8773531b2" kind="dir"><name>src</name>
   </compound>

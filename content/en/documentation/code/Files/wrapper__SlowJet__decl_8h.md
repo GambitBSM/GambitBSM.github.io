@@ -1,11 +1,11 @@
 ---
-title: "file Pythia_8_212/wrapper_SlowJet_decl.h"
+title: "file Pythia_8_312/wrapper_SlowJet_decl.h"
 
 description: "[No description available]"
 
 ---
 
-# file Pythia_8_212/wrapper_SlowJet_decl.h
+# file Pythia_8_312/wrapper_SlowJet_decl.h
 
 [No description available]
 
@@ -34,11 +34,10 @@ namespace CAT_3(
 ## Source code
 
 ```
-#ifndef __wrapper_SlowJet_decl_Pythia_8_212_h__
-#define __wrapper_SlowJet_decl_Pythia_8_212_h__
+#ifndef __wrapper_SlowJet_decl_Pythia_8_312_h__
+#define __wrapper_SlowJet_decl_Pythia_8_312_h__
 
 #include <cstddef>
-#include <ostream>
 #include <vector>
 #include "forward_decls_wrapper_classes.h"
 #include "gambit/Backends/wrapperbase.hpp"
@@ -103,8 +102,6 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         
                 double dNext() const;
         
-                void list(bool listAll, std::ostream& os) const;
-        
                 void list(bool listAll) const;
         
                 void list() const;
@@ -149,10 +146,10 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 #include "gambit/Backends/backend_undefs.hpp"
 
-#endif /* __wrapper_SlowJet_decl_Pythia_8_212_h__ */
+#endif /* __wrapper_SlowJet_decl_Pythia_8_312_h__ */
 ```
 
 
 -------------------------------
 
-Updated on 2024-07-18 at 13:53:35 +0000
+Updated on 2025-02-12 at 15:36:43 +0000

@@ -53,22 +53,6 @@
       </memberdef>
       </sectiondef>
       <sectiondef kind="var">
-      <memberdef kind="variable" id="util__functions_8hpp_1a8fc8086e36b78153f25a3b9c80a70cfd" prot="public" static="no" mutable="no">
-        <type>const <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
-        <definition>const str Gambit::Utils::buildtime_scratch</definition>
-        <argsstring></argsstring>
-        <name>buildtime_scratch</name>
-        <qualifiedname>Gambit::Utils::buildtime_scratch</qualifiedname>
-        <initializer>= GAMBIT_DIR &quot;/scratch/build_time/&quot;</initializer>
-        <briefdescription>
-<para>Return the path to the build-time scratch directory. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="Utils/include/gambit/Utils/util_functions.hpp" line="72" column="15" bodyfile="Utils/include/gambit/Utils/util_functions.hpp" bodystart="72" bodyend="-1"/>
-      </memberdef>
       <memberdef kind="variable" id="util__functions_8cpp_1aa605af61c83961ba12b53d33e6479557" prot="public" static="no" mutable="no">
         <type>const char *</type>
         <definition>const char* Gambit::Utils::whitespaces[]</definition>
@@ -82,7 +66,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/src/util_functions.cpp" line="55" column="16" bodyfile="Utils/src/util_functions.cpp" bodystart="55" bodyend="-1"/>
+        <location file="Utils/src/util_functions.cpp" line="56" column="16" bodyfile="Utils/src/util_functions.cpp" bodystart="56" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -135,7 +119,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/src/util_functions.cpp" line="335" column="16" bodyfile="Utils/src/util_functions.cpp" bodystart="335" bodyend="338" declfile="Logs/include/gambit/Logs/logging.hpp" declline="48" declcolumn="16"/>
+        <location file="Utils/src/util_functions.cpp" line="383" column="16" bodyfile="Utils/src/util_functions.cpp" bodystart="383" bodyend="386" declfile="Logs/include/gambit/Logs/logging.hpp" declline="48" declcolumn="16"/>
       </memberdef>
       <memberdef kind="function" id="integration_8hpp_1ad31caac2ecac37cd6f6632a6ebca120a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>double</type>
@@ -268,6 +252,59 @@
         </inbodydescription>
         <location file="Utils/src/lnlike_modifiers.cpp" line="105" column="12" bodyfile="Utils/src/lnlike_modifiers.cpp" bodystart="105" bodyend="137" declfile="Utils/include/gambit/Utils/lnlike_modifiers.hpp" declline="35" declcolumn="12"/>
       </memberdef>
+      <memberdef kind="function" id="util__functions_8hpp_1ab02e2e94681c709e8721aafebec74434" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Gambit::Utils::getEnvVar</definition>
+        <argsstring>(std::string const &amp;key)</argsstring>
+        <name>getEnvVar</name>
+        <qualifiedname>Gambit::Utils::getEnvVar</qualifiedname>
+        <param>
+          <type>std::string const &amp;</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+<para>Get an environment variable, or &quot;&quot; if the variable is not set. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/src/util_functions.cpp" line="59" column="17" bodyfile="Utils/src/util_functions.cpp" bodystart="59" bodyend="63" declfile="Utils/include/gambit/Utils/util_functions.hpp" declline="71" declcolumn="17"/>
+      </memberdef>
+      <memberdef kind="function" id="util__functions_8hpp_1a8b628aa14dad032d1159036ce9751a63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>EXPORT_SYMBOLS const std::string &amp;</type>
+        <definition>const std::string &amp; Gambit::Utils::GAMBIT_root_dir</definition>
+        <argsstring>()</argsstring>
+        <name>GAMBIT_root_dir</name>
+        <qualifiedname>Gambit::Utils::GAMBIT_root_dir</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the root directory of GAMBIT. Useful for locating configuration files and other such things in a robust manner at runtime <linebreak/>
+</para>
+<para>Return the root directory of GAMBIT. Useful for locating configuration files and other such things in a robust manner <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/src/util_functions.cpp" line="92" column="23" bodyfile="Utils/src/util_functions.cpp" bodystart="92" bodyend="96" declfile="Utils/include/gambit/Utils/util_functions.hpp" declline="76" declcolumn="38"/>
+      </memberdef>
+      <memberdef kind="function" id="util__functions_8hpp_1a35fd8cff51a050f15a9e681edc7ef614" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>EXPORT_SYMBOLS const std::string &amp;</type>
+        <definition>const str &amp; Gambit::Utils::buildtime_scratch</definition>
+        <argsstring>()</argsstring>
+        <name>buildtime_scratch</name>
+        <qualifiedname>Gambit::Utils::buildtime_scratch</qualifiedname>
+        <briefdescription>
+<para>Return the path to the build-time scratch directory. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the path to the build-time scratch directory bjf&gt; There is stuff using this variable that is needed by ScannerBit at run time, not just build time, therefore it needs to be located using the function above </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/src/util_functions.cpp" line="99" column="15" bodyfile="Utils/src/util_functions.cpp" bodystart="99" bodyend="103" declfile="Utils/include/gambit/Utils/util_functions.hpp" declline="82" declcolumn="38"/>
+      </memberdef>
       <memberdef kind="function" id="util__functions_8hpp_1a7ecde801fc354fe3610534cff73c8a4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>EXPORT_SYMBOLS const <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &amp;</type>
         <definition>const str &amp; Gambit::Utils::runtime_scratch</definition>
@@ -281,7 +318,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/src/util_functions.cpp" line="59" column="15" bodyfile="Utils/src/util_functions.cpp" bodystart="59" bodyend="63" declfile="Utils/include/gambit/Utils/util_functions.hpp" declline="76" declcolumn="30"/>
+        <location file="Utils/src/util_functions.cpp" line="107" column="15" bodyfile="Utils/src/util_functions.cpp" bodystart="107" bodyend="111" declfile="Utils/include/gambit/Utils/util_functions.hpp" declline="86" declcolumn="30"/>
       </memberdef>
       <memberdef kind="function" id="util__functions_8hpp_1a5d5dfd398d407f0e92eda2da6c74cd63" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>EXPORT_SYMBOLS <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
@@ -300,7 +337,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/src/util_functions.cpp" line="92" column="9" bodyfile="Utils/src/util_functions.cpp" bodystart="92" bodyend="96" declfile="Utils/include/gambit/Utils/util_functions.hpp" declline="79" declcolumn="24"/>
+        <location file="Utils/src/util_functions.cpp" line="140" column="9" bodyfile="Utils/src/util_functions.cpp" bodystart="140" bodyend="144" declfile="Utils/include/gambit/Utils/util_functions.hpp" declline="89" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="util__functions_8hpp_1a6ced4589258c148ad42a923ae94d938c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>EXPORT_SYMBOLS <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
@@ -320,7 +357,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/src/util_functions.cpp" line="67" column="9" bodyfile="Utils/src/util_functions.cpp" bodystart="67" bodyend="89" declfile="Utils/include/gambit/Utils/util_functions.hpp" declline="83" declcolumn="24"/>
+        <location file="Utils/src/util_functions.cpp" line="115" column="9" bodyfile="Utils/src/util_functions.cpp" bodystart="115" bodyend="137" declfile="Utils/include/gambit/Utils/util_functions.hpp" declline="93" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="util__functions_8hpp_1a95d3a257b50c49a4dff5668096047578" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>EXPORT_SYMBOLS std::vector&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &gt;</type>
@@ -344,7 +381,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/src/util_functions.cpp" line="100" column="17" bodyfile="Utils/src/util_functions.cpp" bodystart="100" bodyend="111" declfile="Utils/include/gambit/Utils/util_functions.hpp" declline="87" declcolumn="32"/>
+        <location file="Utils/src/util_functions.cpp" line="148" column="17" bodyfile="Utils/src/util_functions.cpp" bodystart="148" bodyend="159" declfile="Utils/include/gambit/Utils/util_functions.hpp" declline="97" declcolumn="32"/>
       </memberdef>
       <memberdef kind="function" id="util__functions_8hpp_1a8ea1c9f6c53b5cd699de2f43af5da1d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>EXPORT_SYMBOLS <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
@@ -367,7 +404,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/src/util_functions.cpp" line="114" column="9" bodyfile="Utils/src/util_functions.cpp" bodystart="114" bodyend="119" declfile="Utils/include/gambit/Utils/util_functions.hpp" declline="90" declcolumn="24"/>
+        <location file="Utils/src/util_functions.cpp" line="162" column="9" bodyfile="Utils/src/util_functions.cpp" bodystart="162" bodyend="167" declfile="Utils/include/gambit/Utils/util_functions.hpp" declline="100" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="util__functions_8hpp_1a99454425e1159573fedd4bf58cafbf56" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>EXPORT_SYMBOLS <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
@@ -394,7 +431,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/src/util_functions.cpp" line="122" column="9" bodyfile="Utils/src/util_functions.cpp" bodystart="122" bodyend="127" declfile="Utils/include/gambit/Utils/util_functions.hpp" declline="93" declcolumn="24"/>
+        <location file="Utils/src/util_functions.cpp" line="170" column="9" bodyfile="Utils/src/util_functions.cpp" bodystart="170" bodyend="175" declfile="Utils/include/gambit/Utils/util_functions.hpp" declline="103" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="util__functions_8hpp_1a9938cd104b35638bcc519ce69bd1cf2c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>EXPORT_SYMBOLS void</type>
@@ -414,7 +451,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/src/util_functions.cpp" line="130" column="10" bodyfile="Utils/src/util_functions.cpp" bodystart="130" bodyend="137" declfile="Utils/include/gambit/Utils/util_functions.hpp" declline="97" declcolumn="25"/>
+        <location file="Utils/src/util_functions.cpp" line="178" column="10" bodyfile="Utils/src/util_functions.cpp" bodystart="178" bodyend="185" declfile="Utils/include/gambit/Utils/util_functions.hpp" declline="107" declcolumn="25"/>
       </memberdef>
       <memberdef kind="function" id="util__functions_8hpp_1a44ee858c911e80f385fed9eb014e825f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>EXPORT_SYMBOLS void</type>
@@ -433,7 +470,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/src/util_functions.cpp" line="140" column="10" bodyfile="Utils/src/util_functions.cpp" bodystart="140" bodyend="144" declfile="Utils/include/gambit/Utils/util_functions.hpp" declline="100" declcolumn="25"/>
+        <location file="Utils/src/util_functions.cpp" line="188" column="10" bodyfile="Utils/src/util_functions.cpp" bodystart="188" bodyend="192" declfile="Utils/include/gambit/Utils/util_functions.hpp" declline="110" declcolumn="25"/>
       </memberdef>
       <memberdef kind="function" id="util__functions_8hpp_1a64438b777797a1638f6de2a02d545fe5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>EXPORT_SYMBOLS bool</type>
@@ -454,7 +491,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/util_functions.hpp" line="103" column="25" declfile="Utils/include/gambit/Utils/util_functions.hpp" declline="103" declcolumn="25"/>
+        <location file="Utils/include/gambit/Utils/util_functions.hpp" line="113" column="25" declfile="Utils/include/gambit/Utils/util_functions.hpp" declline="113" declcolumn="25"/>
       </memberdef>
       <memberdef kind="function" id="util__functions_8hpp_1a6db6b5fb867378b82e395256b19272ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>EXPORT_SYMBOLS bool</type>
@@ -478,7 +515,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/util_functions.hpp" line="106" column="25" declfile="Utils/include/gambit/Utils/util_functions.hpp" declline="106" declcolumn="25"/>
+        <location file="Utils/include/gambit/Utils/util_functions.hpp" line="116" column="25" declfile="Utils/include/gambit/Utils/util_functions.hpp" declline="116" declcolumn="25"/>
       </memberdef>
       <memberdef kind="function" id="util__functions_8hpp_1a4b07a1668e28da0bd942eb8987d63316" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>EXPORT_SYMBOLS bool</type>
@@ -501,7 +538,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/src/util_functions.cpp" line="160" column="10" bodyfile="Utils/src/util_functions.cpp" bodystart="160" bodyend="163" declfile="Utils/include/gambit/Utils/util_functions.hpp" declline="109" declcolumn="25"/>
+        <location file="Utils/src/util_functions.cpp" line="208" column="10" bodyfile="Utils/src/util_functions.cpp" bodystart="208" bodyend="211" declfile="Utils/include/gambit/Utils/util_functions.hpp" declline="119" declcolumn="25"/>
       </memberdef>
       <memberdef kind="function" id="util__functions_8hpp_1ae7e4e20d80d69acddb5999a53ed85e8c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>EXPORT_SYMBOLS <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
@@ -525,7 +562,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/src/util_functions.cpp" line="166" column="9" bodyfile="Utils/src/util_functions.cpp" bodystart="166" bodyend="178" declfile="Utils/include/gambit/Utils/util_functions.hpp" declline="112" declcolumn="24"/>
+        <location file="Utils/src/util_functions.cpp" line="214" column="9" bodyfile="Utils/src/util_functions.cpp" bodystart="214" bodyend="226" declfile="Utils/include/gambit/Utils/util_functions.hpp" declline="122" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="util__functions_8hpp_1a32de3b774e1ac67c95387f53eaa4d7de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>EXPORT_SYMBOLS void</type>
@@ -553,7 +590,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/src/util_functions.cpp" line="193" column="10" bodyfile="Utils/src/util_functions.cpp" bodystart="193" bodyend="198" declfile="Utils/include/gambit/Utils/util_functions.hpp" declline="115" declcolumn="25"/>
+        <location file="Utils/src/util_functions.cpp" line="241" column="10" bodyfile="Utils/src/util_functions.cpp" bodystart="241" bodyend="246" declfile="Utils/include/gambit/Utils/util_functions.hpp" declline="125" declcolumn="25"/>
       </memberdef>
       <memberdef kind="function" id="util__functions_8hpp_1ab50f1b4aef2cd4ab820abd9bcf416bc8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>EXPORT_SYMBOLS bool</type>
@@ -576,7 +613,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/src/util_functions.cpp" line="405" column="10" bodyfile="Utils/src/util_functions.cpp" bodystart="405" bodyend="414" declfile="Utils/include/gambit/Utils/util_functions.hpp" declline="118" declcolumn="25"/>
+        <location file="Utils/src/util_functions.cpp" line="453" column="10" bodyfile="Utils/src/util_functions.cpp" bodystart="453" bodyend="462" declfile="Utils/include/gambit/Utils/util_functions.hpp" declline="128" declcolumn="25"/>
       </memberdef>
       <memberdef kind="function" id="util__functions_8hpp_1a3ce78eb95b663a09a03cddc63946f135" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>EXPORT_SYMBOLS bool</type>
@@ -604,7 +641,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/src/util_functions.cpp" line="417" column="10" bodyfile="Utils/src/util_functions.cpp" bodystart="417" bodyend="432" declfile="Utils/include/gambit/Utils/util_functions.hpp" declline="121" declcolumn="25"/>
+        <location file="Utils/src/util_functions.cpp" line="465" column="10" bodyfile="Utils/src/util_functions.cpp" bodystart="465" bodyend="480" declfile="Utils/include/gambit/Utils/util_functions.hpp" declline="131" declcolumn="25"/>
       </memberdef>
       <memberdef kind="function" id="util__functions_8hpp_1a332b3e7f51f8a89f8188552daa349187" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>EXPORT_SYMBOLS bool</type>
@@ -633,7 +670,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/src/util_functions.cpp" line="202" column="10" bodyfile="Utils/src/util_functions.cpp" bodystart="202" bodyend="213" declfile="Utils/include/gambit/Utils/util_functions.hpp" declline="124" declcolumn="25"/>
+        <location file="Utils/src/util_functions.cpp" line="250" column="10" bodyfile="Utils/src/util_functions.cpp" bodystart="250" bodyend="261" declfile="Utils/include/gambit/Utils/util_functions.hpp" declline="134" declcolumn="25"/>
       </memberdef>
       <memberdef kind="function" id="util__functions_8hpp_1ac7fb9c625cf6ec2fefc4365a3243921e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>EXPORT_SYMBOLS std::vector&lt; std::string &gt;</type>
@@ -656,7 +693,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/src/util_functions.cpp" line="216" column="17" bodyfile="Utils/src/util_functions.cpp" bodystart="216" bodyend="221" declfile="Utils/include/gambit/Utils/util_functions.hpp" declline="127" declcolumn="32"/>
+        <location file="Utils/src/util_functions.cpp" line="264" column="17" bodyfile="Utils/src/util_functions.cpp" bodystart="264" bodyend="269" declfile="Utils/include/gambit/Utils/util_functions.hpp" declline="137" declcolumn="32"/>
       </memberdef>
       <memberdef kind="function" id="util__functions_8hpp_1a26794789f5b08061d4a17c575999802a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>EXPORT_SYMBOLS std::string</type>
@@ -675,7 +712,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/src/util_functions.cpp" line="224" column="17" bodyfile="Utils/src/util_functions.cpp" bodystart="224" bodyend="231" declfile="Utils/include/gambit/Utils/util_functions.hpp" declline="130" declcolumn="32"/>
+        <location file="Utils/src/util_functions.cpp" line="272" column="17" bodyfile="Utils/src/util_functions.cpp" bodystart="272" bodyend="279" declfile="Utils/include/gambit/Utils/util_functions.hpp" declline="140" declcolumn="32"/>
       </memberdef>
       <memberdef kind="function" id="util__functions_8hpp_1a4b5593288f0fd37b9a5eaf17cdb34253" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>EXPORT_SYMBOLS std::string</type>
@@ -694,7 +731,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/src/util_functions.cpp" line="435" column="17" bodyfile="Utils/src/util_functions.cpp" bodystart="435" bodyend="445" declfile="Utils/include/gambit/Utils/util_functions.hpp" declline="133" declcolumn="32"/>
+        <location file="Utils/src/util_functions.cpp" line="483" column="17" bodyfile="Utils/src/util_functions.cpp" bodystart="483" bodyend="493" declfile="Utils/include/gambit/Utils/util_functions.hpp" declline="143" declcolumn="32"/>
       </memberdef>
       <memberdef kind="function" id="util__functions_8hpp_1aa220fd5aed1070ecf2636aacdfd87b71" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -724,7 +761,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/util_functions.hpp" line="153" column="7" bodyfile="Utils/include/gambit/Utils/util_functions.hpp" bodystart="153" bodyend="153"/>
+        <location file="Utils/include/gambit/Utils/util_functions.hpp" line="163" column="7" bodyfile="Utils/include/gambit/Utils/util_functions.hpp" bodystart="163" bodyend="163"/>
       </memberdef>
       <memberdef kind="function" id="util__functions_8hpp_1a09e20dc39fa49bd759c9642de56deebd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -753,7 +790,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/util_functions.hpp" line="155" column="7" bodyfile="Utils/include/gambit/Utils/util_functions.hpp" bodystart="155" bodyend="155"/>
+        <location file="Utils/include/gambit/Utils/util_functions.hpp" line="165" column="7" bodyfile="Utils/include/gambit/Utils/util_functions.hpp" bodystart="165" bodyend="165"/>
       </memberdef>
       <memberdef kind="function" id="util__functions_8hpp_1aec08e51e0cbe7ff1bffca6d9f6915990" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -784,7 +821,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/util_functions.hpp" line="160" column="10" bodyfile="Utils/include/gambit/Utils/util_functions.hpp" bodystart="160" bodyend="181"/>
+        <location file="Utils/include/gambit/Utils/util_functions.hpp" line="170" column="10" bodyfile="Utils/include/gambit/Utils/util_functions.hpp" bodystart="170" bodyend="191"/>
       </memberdef>
       <memberdef kind="function" id="util__functions_8hpp_1affb535fe86b05245b1e137af76905a91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>EXPORT_SYMBOLS const <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &amp;</type>
@@ -803,7 +840,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/src/util_functions.cpp" line="234" column="23" bodyfile="Utils/src/util_functions.cpp" bodystart="234" bodyend="245" declfile="Utils/include/gambit/Utils/util_functions.hpp" declline="184" declcolumn="30"/>
+        <location file="Utils/src/util_functions.cpp" line="282" column="23" bodyfile="Utils/src/util_functions.cpp" bodystart="282" bodyend="293" declfile="Utils/include/gambit/Utils/util_functions.hpp" declline="194" declcolumn="30"/>
       </memberdef>
       <memberdef kind="function" id="util__functions_8hpp_1a06db2efbb6a1f3dcd729015fe8ca9ce7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>EXPORT_SYMBOLS bool</type>
@@ -822,7 +859,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/src/util_functions.cpp" line="248" column="10" bodyfile="Utils/src/util_functions.cpp" bodystart="248" bodyend="254" declfile="Utils/include/gambit/Utils/util_functions.hpp" declline="187" declcolumn="25"/>
+        <location file="Utils/src/util_functions.cpp" line="296" column="10" bodyfile="Utils/src/util_functions.cpp" bodystart="296" bodyend="302" declfile="Utils/include/gambit/Utils/util_functions.hpp" declline="197" declcolumn="25"/>
       </memberdef>
       <memberdef kind="function" id="util__functions_8hpp_1a6feb516a1b35c3dcbe98e9097f4b56b0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>EXPORT_SYMBOLS std::vector&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &gt;</type>
@@ -842,7 +879,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/src/util_functions.cpp" line="258" column="17" bodyfile="Utils/src/util_functions.cpp" bodystart="258" bodyend="280" declfile="Utils/include/gambit/Utils/util_functions.hpp" declline="190" declcolumn="32"/>
+        <location file="Utils/src/util_functions.cpp" line="306" column="17" bodyfile="Utils/src/util_functions.cpp" bodystart="306" bodyend="328" declfile="Utils/include/gambit/Utils/util_functions.hpp" declline="200" declcolumn="32"/>
       </memberdef>
       <memberdef kind="function" id="util__functions_8hpp_1a31467c5d69da824094c1c501fb577aa2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>EXPORT_SYMBOLS <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
@@ -861,7 +898,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/src/util_functions.cpp" line="283" column="17" bodyfile="Utils/src/util_functions.cpp" bodystart="283" bodyend="290" declfile="Utils/include/gambit/Utils/util_functions.hpp" declline="193" declcolumn="24"/>
+        <location file="Utils/src/util_functions.cpp" line="331" column="17" bodyfile="Utils/src/util_functions.cpp" bodystart="331" bodyend="338" declfile="Utils/include/gambit/Utils/util_functions.hpp" declline="203" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="util__functions_8hpp_1ab41966eb6148741a7553951bd360c875" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>EXPORT_SYMBOLS <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
@@ -880,7 +917,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/src/util_functions.cpp" line="293" column="17" bodyfile="Utils/src/util_functions.cpp" bodystart="293" bodyend="300" declfile="Utils/include/gambit/Utils/util_functions.hpp" declline="196" declcolumn="24"/>
+        <location file="Utils/src/util_functions.cpp" line="341" column="17" bodyfile="Utils/src/util_functions.cpp" bodystart="341" bodyend="348" declfile="Utils/include/gambit/Utils/util_functions.hpp" declline="206" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="util__functions_8hpp_1a32de1511f8fc1f997c6808ee0a75143b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>EXPORT_SYMBOLS int</type>
@@ -904,7 +941,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/src/util_functions.cpp" line="303" column="9" bodyfile="Utils/src/util_functions.cpp" bodystart="303" bodyend="332" declfile="Utils/include/gambit/Utils/util_functions.hpp" declline="199" declcolumn="24"/>
+        <location file="Utils/src/util_functions.cpp" line="351" column="9" bodyfile="Utils/src/util_functions.cpp" bodystart="351" bodyend="380" declfile="Utils/include/gambit/Utils/util_functions.hpp" declline="209" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="util__functions_8hpp_1a007a388ac6b5fe2de7b8e42a3f5e11be" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>EXPORT_SYMBOLS <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
@@ -924,7 +961,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/src/util_functions.cpp" line="341" column="17" bodyfile="Utils/src/util_functions.cpp" bodystart="341" bodyend="348" declfile="Utils/include/gambit/Utils/util_functions.hpp" declline="208" declcolumn="24"/>
+        <location file="Utils/src/util_functions.cpp" line="389" column="17" bodyfile="Utils/src/util_functions.cpp" bodystart="389" bodyend="396" declfile="Utils/include/gambit/Utils/util_functions.hpp" declline="218" declcolumn="24"/>
       </memberdef>
       <memberdef kind="function" id="util__functions_8hpp_1a4eb57caa47920b97661c31a2a6d36db8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>EXPORT_SYMBOLS bool</type>
@@ -947,7 +984,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/src/util_functions.cpp" line="352" column="10" bodyfile="Utils/src/util_functions.cpp" bodystart="352" bodyend="358" declfile="Utils/include/gambit/Utils/util_functions.hpp" declline="212" declcolumn="25"/>
+        <location file="Utils/src/util_functions.cpp" line="400" column="10" bodyfile="Utils/src/util_functions.cpp" bodystart="400" bodyend="406" declfile="Utils/include/gambit/Utils/util_functions.hpp" declline="222" declcolumn="25"/>
       </memberdef>
       <memberdef kind="function" id="util__functions_8hpp_1aa8eeb84d029f52c34da8cf359643e2ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -971,7 +1008,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/src/util_functions.cpp" line="361" column="10" bodyfile="Utils/src/util_functions.cpp" bodystart="361" bodyend="375" declfile="Utils/include/gambit/Utils/util_functions.hpp" declline="216" declcolumn="10"/>
+        <location file="Utils/src/util_functions.cpp" line="409" column="10" bodyfile="Utils/src/util_functions.cpp" bodystart="409" bodyend="423" declfile="Utils/include/gambit/Utils/util_functions.hpp" declline="226" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="util__functions_8hpp_1a5ab20c20fb620d82e9005b2a7a518c87" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -995,7 +1032,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/src/util_functions.cpp" line="378" column="10" bodyfile="Utils/src/util_functions.cpp" bodystart="378" bodyend="395" declfile="Utils/include/gambit/Utils/util_functions.hpp" declline="220" declcolumn="10"/>
+        <location file="Utils/src/util_functions.cpp" line="426" column="10" bodyfile="Utils/src/util_functions.cpp" bodystart="426" bodyend="443" declfile="Utils/include/gambit/Utils/util_functions.hpp" declline="230" declcolumn="10"/>
       </memberdef>
       <memberdef kind="function" id="util__functions_8hpp_1ad4bad72f7ba7f1304b1aff783d3debea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>EXPORT_SYMBOLS double</type>
@@ -1014,7 +1051,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/src/util_functions.cpp" line="398" column="12" bodyfile="Utils/src/util_functions.cpp" bodystart="398" bodyend="401" declfile="Utils/include/gambit/Utils/util_functions.hpp" declline="223" declcolumn="27"/>
+        <location file="Utils/src/util_functions.cpp" line="446" column="12" bodyfile="Utils/src/util_functions.cpp" bodystart="446" bodyend="449" declfile="Utils/include/gambit/Utils/util_functions.hpp" declline="233" declcolumn="27"/>
       </memberdef>
       <memberdef kind="function" id="util__functions_8hpp_1aa1b37757040609429ce8eaabf9737567" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>EXPORT_SYMBOLS bool</type>
@@ -1033,7 +1070,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/src/util_functions.cpp" line="182" column="10" bodyfile="Utils/src/util_functions.cpp" bodystart="182" bodyend="190" declfile="Utils/include/gambit/Utils/util_functions.hpp" declline="233" declcolumn="25"/>
+        <location file="Utils/src/util_functions.cpp" line="230" column="10" bodyfile="Utils/src/util_functions.cpp" bodystart="230" bodyend="238" declfile="Utils/include/gambit/Utils/util_functions.hpp" declline="243" declcolumn="25"/>
       </memberdef>
       <memberdef kind="function" id="util__functions_8hpp_1a2e33ae38f2ef6b0c92754cdd2a7ca834" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -1054,7 +1091,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/util_functions.hpp" line="236" column="21" bodyfile="Utils/include/gambit/Utils/util_functions.hpp" bodystart="236" bodyend="236"/>
+        <location file="Utils/include/gambit/Utils/util_functions.hpp" line="246" column="21" bodyfile="Utils/include/gambit/Utils/util_functions.hpp" bodystart="246" bodyend="246"/>
       </memberdef>
       <memberdef kind="function" id="util__functions_8hpp_1ad31ddd95449e34dfa7fc775265aa2f99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -1077,7 +1114,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/util_functions.hpp" line="237" column="21" bodyfile="Utils/include/gambit/Utils/util_functions.hpp" bodystart="237" bodyend="240"/>
+        <location file="Utils/include/gambit/Utils/util_functions.hpp" line="247" column="21" bodyfile="Utils/include/gambit/Utils/util_functions.hpp" bodystart="247" bodyend="250"/>
       </memberdef>
       <memberdef kind="function" id="util__functions_8hpp_1aa97d5187478a565300ce621b979e5f1e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -1109,7 +1146,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/util_functions.hpp" line="242" column="23" bodyfile="Utils/include/gambit/Utils/util_functions.hpp" bodystart="242" bodyend="246"/>
+        <location file="Utils/include/gambit/Utils/util_functions.hpp" line="252" column="23" bodyfile="Utils/include/gambit/Utils/util_functions.hpp" bodystart="252" bodyend="256"/>
       </memberdef>
       <memberdef kind="function" id="util__functions_8hpp_1a2a4727984a24b69b1a5109284f6f475d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -1138,7 +1175,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/include/gambit/Utils/util_functions.hpp" line="251" column="10" bodyfile="Utils/include/gambit/Utils/util_functions.hpp" bodystart="251" bodyend="255"/>
+        <location file="Utils/include/gambit/Utils/util_functions.hpp" line="261" column="10" bodyfile="Utils/include/gambit/Utils/util_functions.hpp" bodystart="261" bodyend="265"/>
       </memberdef>
       <memberdef kind="function" id="interp__collection_8cpp_1a1bb585fd41764ea4f4aa66bab949dd7b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -1208,6 +1245,21 @@
         </inbodydescription>
         <location file="Utils/src/interp_collection.cpp" line="1169" column="12" bodyfile="Utils/src/interp_collection.cpp" bodystart="1169" bodyend="1174"/>
       </memberdef>
+      <memberdef kind="function" id="util__functions_8cpp_1a60bcfc853314eb33049f680913bab51b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::string</type>
+        <definition>std::string Gambit::Utils::get_GAMBIT_root_dir</definition>
+        <argsstring>()</argsstring>
+        <name>get_GAMBIT_root_dir</name>
+        <qualifiedname>Gambit::Utils::get_GAMBIT_root_dir</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>The initial assumption is that this is provided by CMake via the GAMBIT_RUN_DIR variable However, in situations where GAMBIT is built in some temporary directory and then moved (as occurs in the pip installation of pyScannerBit), then we need to locate the root directory via an environment variable at runtime instead. If this environment variable is set then it will override the value set at build time.</para>
+        </inbodydescription>
+        <location file="Utils/src/util_functions.cpp" line="65" column="17" bodyfile="Utils/src/util_functions.cpp" bodystart="65" bodyend="87"/>
+      </memberdef>
       <memberdef kind="function" id="util__functions_8cpp_1a57798e61c9ebb61c62cb557bb45946ae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
         <definition>bool Gambit::Utils::sspairset_contains</definition>
@@ -1229,7 +1281,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/src/util_functions.cpp" line="147" column="10" bodyfile="Utils/src/util_functions.cpp" bodystart="147" bodyend="151"/>
+        <location file="Utils/src/util_functions.cpp" line="195" column="10" bodyfile="Utils/src/util_functions.cpp" bodystart="195" bodyend="199"/>
       </memberdef>
       <memberdef kind="function" id="util__functions_8cpp_1af1c80a9d9e42468d243c920200f6220f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -1256,7 +1308,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Utils/src/util_functions.cpp" line="154" column="10" bodyfile="Utils/src/util_functions.cpp" bodystart="154" bodyend="157"/>
+        <location file="Utils/src/util_functions.cpp" line="202" column="10" bodyfile="Utils/src/util_functions.cpp" bodystart="202" bodyend="205"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

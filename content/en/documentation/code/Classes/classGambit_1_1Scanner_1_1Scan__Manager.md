@@ -15,7 +15,7 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Scan_Manager](/documentation/code/classes/classgambit_1_1scanner_1_1scan__manager/#function-scan-manager)**(const YAML::Node & node, [printer_interface](/documentation/code/namespaces/namespacegambit_1_1scanner/#typedef-printer-interface) * printerInterface, const [Factory_Base](/documentation/code/classes/classgambit_1_1scanner_1_1factory__base/) * factory =0) |
+| | **[Scan_Manager](/documentation/code/classes/classgambit_1_1scanner_1_1scan__manager/#function-scan-manager)**(const YAML::Node & node, [printer_interface](/documentation/code/namespaces/namespacegambit_1_1scanner/#typedef-printer-interface) * printerInterface, const [Factory_Base](/documentation/code/classes/classgambit_1_1scanner_1_1factory__base/) * factory =0, [Priors::BasePrior](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/) * user_prior =0) |
 | | **[~Scan_Manager](/documentation/code/classes/classgambit_1_1scanner_1_1scan__manager/#function-scan-manager)**() |
 | int | **[Run](/documentation/code/classes/classgambit_1_1scanner_1_1scan__manager/#function-run)**() |
 
@@ -27,7 +27,8 @@ description: "[No description available]"
 Scan_Manager(
     const YAML::Node & node,
     printer_interface * printerInterface,
-    const Factory_Base * factory =0
+    const Factory_Base * factory =0,
+    Priors::BasePrior * user_prior =0
 )
 ```
 
@@ -48,4 +49,4 @@ int Run()
 
 -------------------------------
 
-Updated on 2024-07-18 at 13:53:32 +0000
+Updated on 2025-02-12 at 15:36:39 +0000

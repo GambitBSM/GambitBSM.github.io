@@ -1,11 +1,11 @@
 ---
-title: "file Pythia_8_212/wrapper_SigmaProcess_decl.h"
+title: "file Pythia_8_312/wrapper_SigmaProcess_decl.h"
 
 description: "[No description available]"
 
 ---
 
-# file Pythia_8_212/wrapper_SigmaProcess_decl.h
+# file Pythia_8_312/wrapper_SigmaProcess_decl.h
 
 [No description available]
 
@@ -34,21 +34,15 @@ namespace CAT_3(
 ## Source code
 
 ```
-#ifndef __wrapper_SigmaProcess_decl_Pythia_8_212_h__
-#define __wrapper_SigmaProcess_decl_Pythia_8_212_h__
+#ifndef __wrapper_SigmaProcess_decl_Pythia_8_312_h__
+#define __wrapper_SigmaProcess_decl_Pythia_8_312_h__
 
 #include <cstddef>
 #include <string>
 #include "forward_decls_wrapper_classes.h"
 #include "gambit/Backends/wrapperbase.hpp"
 #include "abstract_SigmaProcess.h"
-#include "wrapper_Info_decl.h"
-#include "wrapper_Settings_decl.h"
-#include "wrapper_ParticleData_decl.h"
-#include "wrapper_Rndm_decl.h"
 #include "wrapper_BeamParticle_decl.h"
-#include "wrapper_Couplings_decl.h"
-#include "wrapper_SigmaTotal_decl.h"
 #include "wrapper_SLHAinterface_decl.h"
 #include "wrapper_Vec4_decl.h"
 #include "wrapper_Event_decl.h"
@@ -74,11 +68,11 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         
                 // Member functions: 
             public:
-                void init(Pythia8::Info* infoPtrIn, Pythia8::Settings* settingsPtrIn, Pythia8::ParticleData* particleDataPtrIn, Pythia8::Rndm* rndmPtrIn, Pythia8::BeamParticle* beamAPtrIn, Pythia8::BeamParticle* beamBPtrIn, Pythia8::Couplings* couplings, Pythia8::SigmaTotal* sigmaTotPtrIn, Pythia8::SLHAinterface* slhaInterfacePtrIn);
+                void init(Pythia8::BeamParticle* beamAPtrIn, Pythia8::BeamParticle* beamBPtrIn, Pythia8::SLHAinterface* slhaInterfacePtrIn);
         
-                void init(Pythia8::Info* infoPtrIn, Pythia8::Settings* settingsPtrIn, Pythia8::ParticleData* particleDataPtrIn, Pythia8::Rndm* rndmPtrIn, Pythia8::BeamParticle* beamAPtrIn, Pythia8::BeamParticle* beamBPtrIn, Pythia8::Couplings* couplings, Pythia8::SigmaTotal* sigmaTotPtrIn);
+                void init(Pythia8::BeamParticle* beamAPtrIn, Pythia8::BeamParticle* beamBPtrIn);
         
-                void init(Pythia8::Info* infoPtrIn, Pythia8::Settings* settingsPtrIn, Pythia8::ParticleData* particleDataPtrIn, Pythia8::Rndm* rndmPtrIn, Pythia8::BeamParticle* beamAPtrIn, Pythia8::BeamParticle* beamBPtrIn, Pythia8::Couplings* couplings);
+                void updateBeamIDs();
         
                 void initProc();
         
@@ -101,6 +95,16 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
                 double sigmaHatWrap(int id1in);
         
                 double sigmaHatWrap();
+        
+                double sigmaPDF(bool initPS, bool samexGamma, bool useNewXvalues, double x1New, double x2New);
+        
+                double sigmaPDF(bool initPS, bool samexGamma, bool useNewXvalues, double x1New);
+        
+                double sigmaPDF(bool initPS, bool samexGamma, bool useNewXvalues);
+        
+                double sigmaPDF(bool initPS, bool samexGamma);
+        
+                double sigmaPDF(bool initPS);
         
                 double sigmaPDF();
         
@@ -228,6 +232,8 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         
                 void swapKin();
         
+                void setIdInDiff(int arg_1, int arg_2);
+        
         
                 // Wrappers for original constructors: 
             public:
@@ -253,10 +259,10 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 #include "gambit/Backends/backend_undefs.hpp"
 
-#endif /* __wrapper_SigmaProcess_decl_Pythia_8_212_h__ */
+#endif /* __wrapper_SigmaProcess_decl_Pythia_8_312_h__ */
 ```
 
 
 -------------------------------
 
-Updated on 2024-07-18 at 13:53:35 +0000
+Updated on 2025-02-12 at 15:36:43 +0000

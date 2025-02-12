@@ -1,11 +1,11 @@
 ---
-title: "file Pythia_8_212/wrapper_CoupSUSY_def.h"
+title: "file Pythia_8_312/wrapper_CoupSUSY_def.h"
 
 description: "[No description available]"
 
 ---
 
-# file Pythia_8_212/wrapper_CoupSUSY_def.h
+# file Pythia_8_312/wrapper_CoupSUSY_def.h
 
 [No description available]
 
@@ -34,14 +34,16 @@ namespace CAT_3(
 ## Source code
 
 ```
-#ifndef __wrapper_CoupSUSY_def_Pythia_8_212_h__
-#define __wrapper_CoupSUSY_def_Pythia_8_212_h__
+#ifndef __wrapper_CoupSUSY_def_Pythia_8_312_h__
+#define __wrapper_CoupSUSY_def_Pythia_8_312_h__
 
 #include <complex>
 #include "wrapper_SusyLesHouches_decl.h"
 #include "wrapper_Info_decl.h"
-#include "wrapper_ParticleData_decl.h"
+#include "wrapper_Logger_decl.h"
 #include "wrapper_Settings_decl.h"
+#include "wrapper_ParticleData_decl.h"
+#include "wrapper_CoupSM_decl.h"
 
 #include "identification.hpp"
 
@@ -52,9 +54,9 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
     {
         
         // Member functions: 
-        inline void CoupSUSY::initSUSY(Pythia8::SusyLesHouches* slhaPtrIn, Pythia8::Info* infoPtrIn, Pythia8::ParticleData* particleDataPtrIn, Pythia8::Settings* settingsPtrIn)
+        inline void CoupSUSY::initSUSY(Pythia8::SusyLesHouches* slhaPtrIn, Pythia8::Info* infoPtrIn)
         {
-            get_BEptr()->initSUSY__BOSS((*slhaPtrIn).get_BEptr(), (*infoPtrIn).get_BEptr(), (*particleDataPtrIn).get_BEptr(), (*settingsPtrIn).get_BEptr());
+            get_BEptr()->initSUSY__BOSS((*slhaPtrIn).get_BEptr(), (*infoPtrIn).get_BEptr());
         }
         
         inline ::std::complex<double> CoupSUSY::getLsqqG(int iGenSq, int idQ)
@@ -125,9 +127,13 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         
         // Wrappers for original constructors: 
         inline CoupSUSY::CoupSUSY() :
-            Couplings(__factory0()),
+            WrapperBase(__factory0()),
             isInit( get_BEptr()->isInit_ref__BOSS()),
+            isSUSY( get_BEptr()->isSUSY_ref__BOSS()),
             isNMSSM( get_BEptr()->isNMSSM_ref__BOSS()),
+            isLLE( get_BEptr()->isLLE_ref__BOSS()),
+            isLQD( get_BEptr()->isLQD_ref__BOSS()),
+            isUDD( get_BEptr()->isUDD_ref__BOSS()),
             mWpole( get_BEptr()->mWpole_ref__BOSS()),
             wWpole( get_BEptr()->wWpole_ref__BOSS()),
             mZpole( get_BEptr()->mZpole_ref__BOSS()),
@@ -192,9 +198,6 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             rvLLE( get_BEptr()->rvLLE_ref__BOSS()),
             rvLQD( get_BEptr()->rvLQD_ref__BOSS()),
             rvUDD( get_BEptr()->rvUDD_ref__BOSS()),
-            isLLE( get_BEptr()->isLLE_ref__BOSS()),
-            isLQD( get_BEptr()->isLQD_ref__BOSS()),
-            isUDD( get_BEptr()->isUDD_ref__BOSS()),
             Rusq( get_BEptr()->Rusq_ref__BOSS()),
             Rdsq( get_BEptr()->Rdsq_ref__BOSS()),
             Rsl( get_BEptr()->Rsl_ref__BOSS()),
@@ -206,9 +209,13 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         
         // Special pointer-based constructor: 
         inline CoupSUSY::CoupSUSY(Abstract_CoupSUSY* in) :
-            Couplings(in),
+            WrapperBase(in),
             isInit( get_BEptr()->isInit_ref__BOSS()),
+            isSUSY( get_BEptr()->isSUSY_ref__BOSS()),
             isNMSSM( get_BEptr()->isNMSSM_ref__BOSS()),
+            isLLE( get_BEptr()->isLLE_ref__BOSS()),
+            isLQD( get_BEptr()->isLQD_ref__BOSS()),
+            isUDD( get_BEptr()->isUDD_ref__BOSS()),
             mWpole( get_BEptr()->mWpole_ref__BOSS()),
             wWpole( get_BEptr()->wWpole_ref__BOSS()),
             mZpole( get_BEptr()->mZpole_ref__BOSS()),
@@ -273,9 +280,6 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             rvLLE( get_BEptr()->rvLLE_ref__BOSS()),
             rvLQD( get_BEptr()->rvLQD_ref__BOSS()),
             rvUDD( get_BEptr()->rvUDD_ref__BOSS()),
-            isLLE( get_BEptr()->isLLE_ref__BOSS()),
-            isLQD( get_BEptr()->isLQD_ref__BOSS()),
-            isUDD( get_BEptr()->isUDD_ref__BOSS()),
             Rusq( get_BEptr()->Rusq_ref__BOSS()),
             Rdsq( get_BEptr()->Rdsq_ref__BOSS()),
             Rsl( get_BEptr()->Rsl_ref__BOSS()),
@@ -287,9 +291,13 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         
         // Copy constructor: 
         inline CoupSUSY::CoupSUSY(const CoupSUSY& in) :
-            Couplings(in.get_BEptr()->pointer_copy__BOSS()),
+            WrapperBase(in.get_BEptr()->pointer_copy__BOSS()),
             isInit( get_BEptr()->isInit_ref__BOSS()),
+            isSUSY( get_BEptr()->isSUSY_ref__BOSS()),
             isNMSSM( get_BEptr()->isNMSSM_ref__BOSS()),
+            isLLE( get_BEptr()->isLLE_ref__BOSS()),
+            isLQD( get_BEptr()->isLQD_ref__BOSS()),
+            isUDD( get_BEptr()->isUDD_ref__BOSS()),
             mWpole( get_BEptr()->mWpole_ref__BOSS()),
             wWpole( get_BEptr()->wWpole_ref__BOSS()),
             mZpole( get_BEptr()->mZpole_ref__BOSS()),
@@ -354,9 +362,6 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             rvLLE( get_BEptr()->rvLLE_ref__BOSS()),
             rvLQD( get_BEptr()->rvLQD_ref__BOSS()),
             rvUDD( get_BEptr()->rvUDD_ref__BOSS()),
-            isLLE( get_BEptr()->isLLE_ref__BOSS()),
-            isLQD( get_BEptr()->isLQD_ref__BOSS()),
-            isUDD( get_BEptr()->isUDD_ref__BOSS()),
             Rusq( get_BEptr()->Rusq_ref__BOSS()),
             Rdsq( get_BEptr()->Rdsq_ref__BOSS()),
             Rsl( get_BEptr()->Rsl_ref__BOSS()),
@@ -404,10 +409,10 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 #include "gambit/Backends/backend_undefs.hpp"
 
-#endif /* __wrapper_CoupSUSY_def_Pythia_8_212_h__ */
+#endif /* __wrapper_CoupSUSY_def_Pythia_8_312_h__ */
 ```
 
 
 -------------------------------
 
-Updated on 2024-07-18 at 13:53:35 +0000
+Updated on 2025-02-12 at 15:36:43 +0000

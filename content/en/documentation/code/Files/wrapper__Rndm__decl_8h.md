@@ -1,11 +1,11 @@
 ---
-title: "file Pythia_8_212/wrapper_Rndm_decl.h"
+title: "file Pythia_8_312/wrapper_Rndm_decl.h"
 
 description: "[No description available]"
 
 ---
 
-# file Pythia_8_212/wrapper_Rndm_decl.h
+# file Pythia_8_312/wrapper_Rndm_decl.h
 
 [No description available]
 
@@ -34,8 +34,8 @@ namespace CAT_3(
 ## Source code
 
 ```
-#ifndef __wrapper_Rndm_decl_Pythia_8_212_h__
-#define __wrapper_Rndm_decl_Pythia_8_212_h__
+#ifndef __wrapper_Rndm_decl_Pythia_8_312_h__
+#define __wrapper_Rndm_decl_Pythia_8_312_h__
 
 #include <cstddef>
 #include <utility>
@@ -62,6 +62,8 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
                 static Abstract_Rndm* (*__factory1)(int);
         
                 // -- Other member variables: 
+            public:
+                const int& DEFAULTSEED;
         
                 // Member functions: 
             public:
@@ -78,6 +80,8 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
                 double gauss();
         
                 ::std::pair<double, double> gauss2();
+        
+                double gamma(double k0, double r0);
         
                 int pick(const std::vector<double>& prob);
         
@@ -114,10 +118,10 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 #include "gambit/Backends/backend_undefs.hpp"
 
-#endif /* __wrapper_Rndm_decl_Pythia_8_212_h__ */
+#endif /* __wrapper_Rndm_decl_Pythia_8_312_h__ */
 ```
 
 
 -------------------------------
 
-Updated on 2024-07-18 at 13:53:35 +0000
+Updated on 2025-02-12 at 15:36:43 +0000

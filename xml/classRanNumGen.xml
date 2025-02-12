@@ -1,0 +1,167 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classRanNumGen" kind="class" language="C++" prot="public">
+    <compoundname>RanNumGen</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classRanNumGen_1aa01cc1cdaa159feabf272a653a5b5da2" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classRandomPlane" kindref="compound">RandomPlane</ref> * &gt;</type>
+        <definition>std::vector&lt;RandomPlane *&gt; RanNumGen::gDev</definition>
+        <argsstring></argsstring>
+        <name>gDev</name>
+        <qualifiedname>RanNumGen::gDev</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/ais/ais.hpp" line="110" column="17" bodyfile="ScannerBit/include/gambit/ScannerBit/scanners/ais/ais.hpp" bodystart="110" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classRanNumGen_1a80fe909fd6f872dfd6eaf7f0cec2ef73" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double RanNumGen::div</definition>
+        <argsstring></argsstring>
+        <name>div</name>
+        <qualifiedname>RanNumGen::div</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/ais/ais.hpp" line="111" column="12" bodyfile="ScannerBit/include/gambit/ScannerBit/scanners/ais/ais.hpp" bodystart="111" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classRanNumGen_1a7a342886cf96a6db2abf6de27a77eed3" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>RanNumGen::RanNumGen</definition>
+        <argsstring>(int proj, int ma, double din, double alim, double alimt, double div, unsigned long seed=0)</argsstring>
+        <name>RanNumGen</name>
+        <qualifiedname>RanNumGen::RanNumGen</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>proj</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ma</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>din</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>alim</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>alimt</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>div</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>seed</declname>
+          <defval>0</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/ais/ais.hpp" line="114" column="5" bodyfile="ScannerBit/include/gambit/ScannerBit/scanners/ais/ais.hpp" bodystart="114" bodyend="117"/>
+      </memberdef>
+      <memberdef kind="function" id="classRanNumGen_1a3b7a733052690d0195f143c7a35452f6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double RanNumGen::Doub</definition>
+        <argsstring>()</argsstring>
+        <name>Doub</name>
+        <qualifiedname>RanNumGen::Doub</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/ais/ais.hpp" line="119" column="12" bodyfile="ScannerBit/include/gambit/ScannerBit/scanners/ais/ais.hpp" bodystart="119" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classRanNumGen_1a2d6ce556413f6c11269ea143b3b691de" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double RanNumGen::ExpDev</definition>
+        <argsstring>()</argsstring>
+        <name>ExpDev</name>
+        <qualifiedname>RanNumGen::ExpDev</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/ais/ais.hpp" line="121" column="12" bodyfile="ScannerBit/include/gambit/ScannerBit/scanners/ais/ais.hpp" bodystart="121" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classRanNumGen_1ad33b36f29b203f1dc9eaf2257cb0eb16" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>double</type>
+        <definition>double RanNumGen::Dev</definition>
+        <argsstring>(std::vector&lt; double &gt; &amp;aNext, std::vector&lt; std::vector&lt; double &gt; &gt; &amp;a0, int t, int tt)</argsstring>
+        <name>Dev</name>
+        <qualifiedname>RanNumGen::Dev</qualifiedname>
+        <param>
+          <type>std::vector&lt; double &gt; &amp;</type>
+          <declname>aNext</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::vector&lt; double &gt; &gt; &amp;</type>
+          <declname>a0</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>t</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>tt</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/ais/ais.hpp" line="126" column="12" bodyfile="ScannerBit/include/gambit/ScannerBit/scanners/ais/ais.hpp" bodystart="126" bodyend="245"/>
+      </memberdef>
+      <memberdef kind="function" id="classRanNumGen_1adaa3ca5294e39e1d036b69367a3099fb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>RanNumGen::~RanNumGen</definition>
+        <argsstring>()</argsstring>
+        <name>~RanNumGen</name>
+        <qualifiedname>RanNumGen::~RanNumGen</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/ais/ais.hpp" line="247" column="5" bodyfile="ScannerBit/include/gambit/ScannerBit/scanners/ais/ais.hpp" bodystart="247" bodyend="253"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ScannerBit/include/gambit/ScannerBit/scanners/ais/ais.hpp" line="107" column="1" bodyfile="ScannerBit/include/gambit/ScannerBit/scanners/ais/ais.hpp" bodystart="108" bodyend="254"/>
+    <listofallmembers>
+      <member refid="classRanNumGen_1ad33b36f29b203f1dc9eaf2257cb0eb16" prot="public" virt="non-virtual"><scope>RanNumGen</scope><name>Dev</name></member>
+      <member refid="classRanNumGen_1a80fe909fd6f872dfd6eaf7f0cec2ef73" prot="private" virt="non-virtual"><scope>RanNumGen</scope><name>div</name></member>
+      <member refid="classRanNumGen_1a3b7a733052690d0195f143c7a35452f6" prot="public" virt="non-virtual"><scope>RanNumGen</scope><name>Doub</name></member>
+      <member refid="classRanNumGen_1a2d6ce556413f6c11269ea143b3b691de" prot="public" virt="non-virtual"><scope>RanNumGen</scope><name>ExpDev</name></member>
+      <member refid="classRanNumGen_1aa01cc1cdaa159feabf272a653a5b5da2" prot="private" virt="non-virtual"><scope>RanNumGen</scope><name>gDev</name></member>
+      <member refid="classRanNumGen_1a7a342886cf96a6db2abf6de27a77eed3" prot="public" virt="non-virtual"><scope>RanNumGen</scope><name>RanNumGen</name></member>
+      <member refid="classRanNumGen_1adaa3ca5294e39e1d036b69367a3099fb" prot="public" virt="non-virtual"><scope>RanNumGen</scope><name>~RanNumGen</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

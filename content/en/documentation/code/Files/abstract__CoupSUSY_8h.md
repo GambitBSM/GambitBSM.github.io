@@ -1,11 +1,11 @@
 ---
-title: "file Pythia_8_212/abstract_CoupSUSY.h"
+title: "file Pythia_8_312/abstract_CoupSUSY.h"
 
 description: "[No description available]"
 
 ---
 
-# file Pythia_8_212/abstract_CoupSUSY.h
+# file Pythia_8_312/abstract_CoupSUSY.h
 
 [No description available]
 
@@ -34,8 +34,8 @@ namespace CAT_3(
 ## Source code
 
 ```
-#ifndef __abstract_CoupSUSY_Pythia_8_212_h__
-#define __abstract_CoupSUSY_Pythia_8_212_h__
+#ifndef __abstract_CoupSUSY_Pythia_8_312_h__
+#define __abstract_CoupSUSY_Pythia_8_312_h__
 
 #include <cstddef>
 #include <iostream>
@@ -45,9 +45,10 @@ namespace CAT_3(
 #include "forward_decls_wrapper_classes.h"
 #include "wrapper_SusyLesHouches_decl.h"
 #include "wrapper_Info_decl.h"
-#include "wrapper_ParticleData_decl.h"
+#include "wrapper_Logger_decl.h"
 #include "wrapper_Settings_decl.h"
-#include "wrapper_Couplings_decl.h"
+#include "wrapper_ParticleData_decl.h"
+#include "wrapper_CoupSM_decl.h"
 
 #include "identification.hpp"
 
@@ -57,15 +58,23 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
     
     namespace Pythia8
     {
-        class Abstract_CoupSUSY : virtual public Pythia8::Abstract_Couplings
+        class Abstract_CoupSUSY : public virtual AbstractBase
         {
             public:
     
-                virtual void initSUSY__BOSS(Pythia8::Abstract_SusyLesHouches*, Pythia8::Abstract_Info*, Pythia8::Abstract_ParticleData*, Pythia8::Abstract_Settings*) =0;
+                virtual void initSUSY__BOSS(Pythia8::Abstract_SusyLesHouches*, Pythia8::Abstract_Info*) =0;
     
                 virtual bool& isInit_ref__BOSS() =0;
     
+                virtual bool& isSUSY_ref__BOSS() =0;
+    
                 virtual bool& isNMSSM_ref__BOSS() =0;
+    
+                virtual bool& isLLE_ref__BOSS() =0;
+    
+                virtual bool& isLQD_ref__BOSS() =0;
+    
+                virtual bool& isUDD_ref__BOSS() =0;
     
                 virtual double& mWpole_ref__BOSS() =0;
     
@@ -207,12 +216,6 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
     
                 virtual double (&rvUDD_ref__BOSS())[4][4][4] =0;
     
-                virtual bool& isLLE_ref__BOSS() =0;
-    
-                virtual bool& isLQD_ref__BOSS() =0;
-    
-                virtual bool& isUDD_ref__BOSS() =0;
-    
                 virtual std::complex<double> (&Rusq_ref__BOSS())[7][7] =0;
     
                 virtual std::complex<double> (&Rdsq_ref__BOSS())[7][7] =0;
@@ -236,7 +239,6 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
                 virtual int typeChar(int) =0;
     
             public:
-                using Pythia8::Abstract_Couplings::pointer_assign__BOSS;
                 virtual void pointer_assign__BOSS(Abstract_CoupSUSY*) =0;
                 virtual Abstract_CoupSUSY* pointer_copy__BOSS() =0;
     
@@ -256,8 +258,7 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
                     delete_wrapper = false;
                 }
     
-                Abstract_CoupSUSY(const Abstract_CoupSUSY& in) : 
-                    Pythia8::Abstract_CoupSM(in), Pythia8::Abstract_Couplings(in)
+                Abstract_CoupSUSY(const Abstract_CoupSUSY&)
                 {
                     wptr = 0;
                     delete_wrapper = false;
@@ -289,10 +290,10 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 #include "gambit/Backends/backend_undefs.hpp"
 
 
-#endif /* __abstract_CoupSUSY_Pythia_8_212_h__ */
+#endif /* __abstract_CoupSUSY_Pythia_8_312_h__ */
 ```
 
 
 -------------------------------
 
-Updated on 2024-07-18 at 13:53:35 +0000
+Updated on 2025-02-12 at 15:36:43 +0000

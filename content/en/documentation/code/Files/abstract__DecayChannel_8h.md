@@ -1,11 +1,11 @@
 ---
-title: "file Pythia_8_212/abstract_DecayChannel.h"
+title: "file Pythia_8_312/abstract_DecayChannel.h"
 
 description: "[No description available]"
 
 ---
 
-# file Pythia_8_212/abstract_DecayChannel.h
+# file Pythia_8_312/abstract_DecayChannel.h
 
 [No description available]
 
@@ -34,8 +34,8 @@ namespace CAT_3(
 ## Source code
 
 ```
-#ifndef __abstract_DecayChannel_Pythia_8_212_h__
-#define __abstract_DecayChannel_Pythia_8_212_h__
+#ifndef __abstract_DecayChannel_Pythia_8_312_h__
+#define __abstract_DecayChannel_Pythia_8_312_h__
 
 #include <cstddef>
 #include <iostream>
@@ -54,6 +54,8 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         class Abstract_DecayChannel : public virtual AbstractBase
         {
             public:
+    
+                virtual Pythia8::Abstract_DecayChannel& operator_equal__BOSS(const Pythia8::Abstract_DecayChannel&) =0;
     
                 virtual void onMode(int) =0;
     
@@ -155,10 +157,10 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 #include "gambit/Backends/backend_undefs.hpp"
 
 
-#endif /* __abstract_DecayChannel_Pythia_8_212_h__ */
+#endif /* __abstract_DecayChannel_Pythia_8_312_h__ */
 ```
 
 
 -------------------------------
 
-Updated on 2024-07-18 at 13:53:35 +0000
+Updated on 2025-02-12 at 15:36:43 +0000

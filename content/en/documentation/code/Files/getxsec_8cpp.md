@@ -1808,6 +1808,21 @@ namespace Gambit
     }
 
 
+    /// Helper function for cross-section maps
+    void InitialTotalCrossSection_Pythia(map_str_xsec_container& result)
+    {
+      using namespace Pipes::InitialTotalCrossSection_Pythia;
+      result = Dep::PerformInitialCrossSection->first;
+    }
+    
+    /// Helper function for cross-section maps
+    void InitialProcessCrossSections_Pythia(map_str_map_int_process_xsec& result)
+    {
+      using namespace Pipes::InitialProcessCrossSections_Pythia;
+      result = Dep::PerformInitialCrossSection->second;
+    }
+
+
   }
 }
 ```
@@ -1815,4 +1830,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2024-07-18 at 13:53:35 +0000
+Updated on 2025-02-12 at 15:36:43 +0000

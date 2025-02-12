@@ -1,11 +1,11 @@
 ---
-title: "file Pythia_8_212/wrapper_UserHooks_decl.h"
+title: "file Pythia_8_312/wrapper_UserHooks_decl.h"
 
 description: "[No description available]"
 
 ---
 
-# file Pythia_8_212/wrapper_UserHooks_decl.h
+# file Pythia_8_312/wrapper_UserHooks_decl.h
 
 [No description available]
 
@@ -34,22 +34,14 @@ namespace CAT_3(
 ## Source code
 
 ```
-#ifndef __wrapper_UserHooks_decl_Pythia_8_212_h__
-#define __wrapper_UserHooks_decl_Pythia_8_212_h__
+#ifndef __wrapper_UserHooks_decl_Pythia_8_312_h__
+#define __wrapper_UserHooks_decl_Pythia_8_312_h__
 
 #include <cstddef>
-#include <string>
 #include <vector>
 #include "forward_decls_wrapper_classes.h"
 #include "gambit/Backends/wrapperbase.hpp"
 #include "abstract_UserHooks.h"
-#include "wrapper_Info_decl.h"
-#include "wrapper_Settings_decl.h"
-#include "wrapper_ParticleData_decl.h"
-#include "wrapper_Rndm_decl.h"
-#include "wrapper_BeamParticle_decl.h"
-#include "wrapper_CoupSM_decl.h"
-#include "wrapper_SigmaTotal_decl.h"
 #include "wrapper_SigmaProcess_decl.h"
 #include "wrapper_Event_decl.h"
 #include "wrapper_Particle_decl.h"
@@ -84,6 +76,10 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
                 bool canVetoProcessLevel();
         
                 bool doVetoProcessLevel(Pythia8::Event& arg_1);
+        
+                bool canSetLowEnergySigma(int arg_1, int arg_2) const;
+        
+                double doSetLowEnergySigma(int arg_1, int arg_2, double arg_3, double arg_4, double arg_5) const;
         
                 bool canVetoResonanceDecays();
         
@@ -139,27 +135,15 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         
                 bool doReconnectResonanceSystems(int arg_1, Pythia8::Event& arg_2);
         
-                bool canEnhanceEmission();
-        
-                double enhanceFactor(std::string arg_1);
-        
-                double vetoProbability(std::string arg_1);
-        
-                void setEnhancedEventWeight(double wt);
-        
-                double getEnhancedEventWeight();
-        
-                bool canEnhanceTrial();
-        
-                void setEnhancedTrial(double pTIn, double wtIn);
-        
-                double getEnhancedTrialPT();
-        
-                double getEnhancedTrialWeight();
-        
                 bool canChangeFragPar();
         
-                bool doVetoFragmentation(Pythia8::Particle arg_1);
+                bool canVetoAfterHadronization();
+        
+                bool doVetoAfterHadronization(const Pythia8::Event& arg_1);
+        
+                bool canSetImpactParameter() const;
+        
+                double doSetImpactParameter();
         
         
                 // Wrappers for original constructors: 
@@ -186,10 +170,10 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 #include "gambit/Backends/backend_undefs.hpp"
 
-#endif /* __wrapper_UserHooks_decl_Pythia_8_212_h__ */
+#endif /* __wrapper_UserHooks_decl_Pythia_8_312_h__ */
 ```
 
 
 -------------------------------
 
-Updated on 2024-07-18 at 13:53:35 +0000
+Updated on 2025-02-12 at 15:36:43 +0000

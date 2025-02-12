@@ -85,7 +85,7 @@ scanner_plugin(
 #include <limits>
 #include <fstream>
 
-#include "gambit/ScannerBit/scanners/diver/1.0.2/diver.hpp"
+#include "gambit/ScannerBit/scanners/diver_1.0.2/diver.hpp"
 #include "gambit/Utils/yaml_options.hpp"
 #include "gambit/Utils/util_types.hpp"
 #include "gambit/Utils/util_functions.hpp"
@@ -267,4 +267,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2024-07-18 at 13:53:33 +0000
+Updated on 2025-02-12 at 15:36:40 +0000

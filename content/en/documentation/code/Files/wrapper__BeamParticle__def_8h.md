@@ -1,11 +1,11 @@
 ---
-title: "file Pythia_8_212/wrapper_BeamParticle_def.h"
+title: "file Pythia_8_312/wrapper_BeamParticle_def.h"
 
 description: "[No description available]"
 
 ---
 
-# file Pythia_8_212/wrapper_BeamParticle_def.h
+# file Pythia_8_312/wrapper_BeamParticle_def.h
 
 [No description available]
 
@@ -34,16 +34,11 @@ namespace CAT_3(
 ## Source code
 
 ```
-#ifndef __wrapper_BeamParticle_def_Pythia_8_212_h__
-#define __wrapper_BeamParticle_def_Pythia_8_212_h__
+#ifndef __wrapper_BeamParticle_def_Pythia_8_312_h__
+#define __wrapper_BeamParticle_def_Pythia_8_312_h__
 
-#include <ostream>
-#include <vector>
 #include <utility>
-#include "wrapper_Info_decl.h"
-#include "wrapper_Settings_decl.h"
-#include "wrapper_ParticleData_decl.h"
-#include "wrapper_Rndm_decl.h"
+#include <vector>
 #include "wrapper_Vec4_decl.h"
 #include "wrapper_Event_decl.h"
 
@@ -56,9 +51,39 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
     {
         
         // Member functions: 
+        inline void BeamParticle::initID(int idIn)
+        {
+            get_BEptr()->initID(idIn);
+        }
+        
         inline void BeamParticle::newValenceContent()
         {
             get_BEptr()->newValenceContent();
+        }
+        
+        inline void BeamParticle::setValenceContent(int idq1, int idq2, int idq3)
+        {
+            get_BEptr()->setValenceContent(idq1, idq2, idq3);
+        }
+        
+        inline void BeamParticle::setValenceContent(int idq1, int idq2)
+        {
+            get_BEptr()->setValenceContent__BOSS(idq1, idq2);
+        }
+        
+        inline void BeamParticle::setValenceContent(int idq1)
+        {
+            get_BEptr()->setValenceContent__BOSS(idq1);
+        }
+        
+        inline void BeamParticle::setBeamID(int idIn, int iPDFin)
+        {
+            get_BEptr()->setBeamID(idIn, iPDFin);
+        }
+        
+        inline void BeamParticle::setBeamID(int idIn)
+        {
+            get_BEptr()->setBeamID__BOSS(idIn);
         }
         
         inline void BeamParticle::newPzE(double pzIn, double eIn)
@@ -66,9 +91,19 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             get_BEptr()->newPzE(pzIn, eIn);
         }
         
+        inline void BeamParticle::newM(double mIn)
+        {
+            get_BEptr()->newM(mIn);
+        }
+        
         inline int BeamParticle::id() const
         {
             return get_BEptr()->id();
+        }
+        
+        inline int BeamParticle::idVMD() const
+        {
+            return get_BEptr()->idVMD();
         }
         
         inline Pythia8::Vec4 BeamParticle::p() const
@@ -101,6 +136,16 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             return get_BEptr()->m();
         }
         
+        inline double BeamParticle::mVMD() const
+        {
+            return get_BEptr()->mVMD();
+        }
+        
+        inline double BeamParticle::scaleVMD() const
+        {
+            return get_BEptr()->scaleVMD();
+        }
+        
         inline bool BeamParticle::isLepton() const
         {
             return get_BEptr()->isLepton();
@@ -126,6 +171,21 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             return get_BEptr()->isBaryon();
         }
         
+        inline bool BeamParticle::isGamma() const
+        {
+            return get_BEptr()->isGamma();
+        }
+        
+        inline bool BeamParticle::hasResGamma() const
+        {
+            return get_BEptr()->hasResGamma();
+        }
+        
+        inline bool BeamParticle::hasVMDstate() const
+        {
+            return get_BEptr()->hasVMDstate();
+        }
+        
         inline double BeamParticle::xMax(int iSkip)
         {
             return get_BEptr()->xMax(iSkip);
@@ -139,6 +199,31 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         inline double BeamParticle::xfHard(int idIn, double x, double Q2)
         {
             return get_BEptr()->xfHard(idIn, x, Q2);
+        }
+        
+        inline double BeamParticle::xfMax(int idIn, double x, double Q2)
+        {
+            return get_BEptr()->xfMax(idIn, x, Q2);
+        }
+        
+        inline double BeamParticle::xfFlux(int idIn, double x, double Q2)
+        {
+            return get_BEptr()->xfFlux(idIn, x, Q2);
+        }
+        
+        inline double BeamParticle::xfApprox(int idIn, double x, double Q2)
+        {
+            return get_BEptr()->xfApprox(idIn, x, Q2);
+        }
+        
+        inline double BeamParticle::xfGamma(int idIn, double x, double Q2)
+        {
+            return get_BEptr()->xfGamma(idIn, x, Q2);
+        }
+        
+        inline double BeamParticle::xfSame(int idIn, double x, double Q2)
+        {
+            return get_BEptr()->xfSame(idIn, x, Q2);
         }
         
         inline double BeamParticle::xf(int idIn, double x, double Q2)
@@ -181,6 +266,21 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             return get_BEptr()->mQuarkPDF(idIn);
         }
         
+        inline int BeamParticle::nMembers()
+        {
+            return get_BEptr()->nMembers();
+        }
+        
+        inline void BeamParticle::calcPDFEnvelope(int idNow, double xNow, double Q2Now, int valSea)
+        {
+            get_BEptr()->calcPDFEnvelope(idNow, xNow, Q2Now, valSea);
+        }
+        
+        inline void BeamParticle::calcPDFEnvelope(std::pair<int, int> idNows, std::pair<double, double> xNows, double Q2Now, int valSea)
+        {
+            get_BEptr()->calcPDFEnvelope(idNows, xNows, Q2Now, valSea);
+        }
+        
         inline int BeamParticle::pickValSeaComp()
         {
             return get_BEptr()->pickValSeaComp();
@@ -206,6 +306,16 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             get_BEptr()->clear();
         }
         
+        inline void BeamParticle::resetGamma()
+        {
+            get_BEptr()->resetGamma();
+        }
+        
+        inline void BeamParticle::resetGammaInLepton()
+        {
+            get_BEptr()->resetGammaInLepton();
+        }
+        
         inline int BeamParticle::append(int iPos, int idIn, double x, int companion)
         {
             return get_BEptr()->append(iPos, idIn, x, companion);
@@ -216,14 +326,14 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             return get_BEptr()->append__BOSS(iPos, idIn, x);
         }
         
-        inline void BeamParticle::list(std::ostream& os) const
+        inline void BeamParticle::popBack()
         {
-            get_BEptr()->list(os);
+            get_BEptr()->popBack();
         }
         
         inline void BeamParticle::list() const
         {
-            get_BEptr()->list__BOSS();
+            get_BEptr()->list();
         }
         
         inline int BeamParticle::nValenceKinds() const
@@ -331,6 +441,231 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             return get_BEptr()->getColUpdates();
         }
         
+        inline bool BeamParticle::gammaInitiatorIsVal(int iResolved, int id, double x, double Q2)
+        {
+            return get_BEptr()->gammaInitiatorIsVal(iResolved, id, x, Q2);
+        }
+        
+        inline bool BeamParticle::gammaInitiatorIsVal(int iResolved, double Q2)
+        {
+            return get_BEptr()->gammaInitiatorIsVal(iResolved, Q2);
+        }
+        
+        inline int BeamParticle::getGammaValFlavour()
+        {
+            return get_BEptr()->getGammaValFlavour();
+        }
+        
+        inline int BeamParticle::gammaValSeaComp(int iResolved)
+        {
+            return get_BEptr()->gammaValSeaComp(iResolved);
+        }
+        
+        inline void BeamParticle::posVal(int iPosValIn)
+        {
+            get_BEptr()->posVal(iPosValIn);
+        }
+        
+        inline void BeamParticle::gamVal(int iGamValIn)
+        {
+            get_BEptr()->gamVal(iGamValIn);
+        }
+        
+        inline int BeamParticle::gamVal()
+        {
+            return get_BEptr()->gamVal();
+        }
+        
+        inline void BeamParticle::resolvedGamma(bool isResolved)
+        {
+            get_BEptr()->resolvedGamma(isResolved);
+        }
+        
+        inline bool BeamParticle::resolvedGamma() const
+        {
+            return get_BEptr()->resolvedGamma();
+        }
+        
+        inline void BeamParticle::setGammaMode(int gammaModeIn)
+        {
+            get_BEptr()->setGammaMode(gammaModeIn);
+        }
+        
+        inline int BeamParticle::getGammaMode() const
+        {
+            return get_BEptr()->getGammaMode();
+        }
+        
+        inline bool BeamParticle::isResolvedUnresolved() const
+        {
+            return get_BEptr()->isResolvedUnresolved();
+        }
+        
+        inline void BeamParticle::initGammaInBeam()
+        {
+            get_BEptr()->initGammaInBeam();
+        }
+        
+        inline bool BeamParticle::gammaInBeam() const
+        {
+            return get_BEptr()->gammaInBeam();
+        }
+        
+        inline void BeamParticle::setVMDstate(bool isVMDIn, int idIn, double mIn, double scaleIn, bool reassignState)
+        {
+            get_BEptr()->setVMDstate(isVMDIn, idIn, mIn, scaleIn, reassignState);
+        }
+        
+        inline void BeamParticle::setVMDstate(bool isVMDIn, int idIn, double mIn, double scaleIn)
+        {
+            get_BEptr()->setVMDstate__BOSS(isVMDIn, idIn, mIn, scaleIn);
+        }
+        
+        inline void BeamParticle::pT2gamma2qqbar(double pT2in)
+        {
+            get_BEptr()->pT2gamma2qqbar(pT2in);
+        }
+        
+        inline double BeamParticle::pT2gamma2qqbar()
+        {
+            return get_BEptr()->pT2gamma2qqbar();
+        }
+        
+        inline void BeamParticle::pTMPI(double pTminMPIin)
+        {
+            get_BEptr()->pTMPI(pTminMPIin);
+        }
+        
+        inline bool BeamParticle::roomFor1Remnant(double eCM)
+        {
+            return get_BEptr()->roomFor1Remnant(eCM);
+        }
+        
+        inline bool BeamParticle::roomFor1Remnant(int id1, double x1, double eCM)
+        {
+            return get_BEptr()->roomFor1Remnant(id1, x1, eCM);
+        }
+        
+        inline bool BeamParticle::roomFor2Remnants(int id1, double x1, double eCM)
+        {
+            return get_BEptr()->roomFor2Remnants(id1, x1, eCM);
+        }
+        
+        inline bool BeamParticle::roomForRemnants(Pythia8::BeamParticle beamOther)
+        {
+            return get_BEptr()->roomForRemnants__BOSS(*beamOther.get_BEptr());
+        }
+        
+        inline double BeamParticle::remnantMass(int idIn)
+        {
+            return get_BEptr()->remnantMass(idIn);
+        }
+        
+        inline double BeamParticle::gammaPDFxDependence(int flavour, double x)
+        {
+            return get_BEptr()->gammaPDFxDependence(flavour, x);
+        }
+        
+        inline double BeamParticle::gammaPDFRefScale(int flavour)
+        {
+            return get_BEptr()->gammaPDFRefScale(flavour);
+        }
+        
+        inline double BeamParticle::xIntegratedPDFs(double Q2)
+        {
+            return get_BEptr()->xIntegratedPDFs(Q2);
+        }
+        
+        inline void BeamParticle::xGammaPDF()
+        {
+            get_BEptr()->xGammaPDF();
+        }
+        
+        inline void BeamParticle::xGamma(double xGmIn)
+        {
+            get_BEptr()->xGamma(xGmIn);
+        }
+        
+        inline void BeamParticle::Q2Gamma(double Q2GmIn)
+        {
+            get_BEptr()->Q2Gamma(Q2GmIn);
+        }
+        
+        inline void BeamParticle::newGammaKTPhi(double kTIn, double phiIn)
+        {
+            get_BEptr()->newGammaKTPhi(kTIn, phiIn);
+        }
+        
+        inline double BeamParticle::xGammaMin()
+        {
+            return get_BEptr()->xGammaMin();
+        }
+        
+        inline double BeamParticle::xGammaHadr()
+        {
+            return get_BEptr()->xGammaHadr();
+        }
+        
+        inline double BeamParticle::gammaFluxIntApprox()
+        {
+            return get_BEptr()->gammaFluxIntApprox();
+        }
+        
+        inline bool BeamParticle::hasApproxGammaFlux()
+        {
+            return get_BEptr()->hasApproxGammaFlux();
+        }
+        
+        inline double BeamParticle::xGamma() const
+        {
+            return get_BEptr()->xGamma();
+        }
+        
+        inline double BeamParticle::Q2Gamma() const
+        {
+            return get_BEptr()->Q2Gamma();
+        }
+        
+        inline double BeamParticle::gammaKTx() const
+        {
+            return get_BEptr()->gammaKTx();
+        }
+        
+        inline double BeamParticle::gammaKTy() const
+        {
+            return get_BEptr()->gammaKTy();
+        }
+        
+        inline double BeamParticle::gammaKT() const
+        {
+            return get_BEptr()->gammaKT();
+        }
+        
+        inline double BeamParticle::gammaPhi() const
+        {
+            return get_BEptr()->gammaPhi();
+        }
+        
+        inline void BeamParticle::xPom(double xpom)
+        {
+            get_BEptr()->xPom(xpom);
+        }
+        
+        inline void BeamParticle::xPom()
+        {
+            get_BEptr()->xPom__BOSS();
+        }
+        
+        inline double BeamParticle::sampleXgamma(double xMinIn)
+        {
+            return get_BEptr()->sampleXgamma(xMinIn);
+        }
+        
+        inline double BeamParticle::sampleQ2gamma(double Q2min)
+        {
+            return get_BEptr()->sampleQ2gamma(Q2min);
+        }
+        
         
         // Wrappers for original constructors: 
         inline BeamParticle::BeamParticle() :
@@ -394,10 +729,10 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 #include "gambit/Backends/backend_undefs.hpp"
 
-#endif /* __wrapper_BeamParticle_def_Pythia_8_212_h__ */
+#endif /* __wrapper_BeamParticle_def_Pythia_8_312_h__ */
 ```
 
 
 -------------------------------
 
-Updated on 2024-07-18 at 13:53:35 +0000
+Updated on 2025-02-12 at 15:36:43 +0000

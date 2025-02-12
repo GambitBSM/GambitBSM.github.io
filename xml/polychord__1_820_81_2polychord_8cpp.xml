@@ -769,7 +769,7 @@
         </briefdescription>
         <detaileddescription>
 <para>================================================= </para>
-<sect1 id="polychord__1_820_81_2polychord_8cpp_1autotoc_md29">
+<sect1 id="polychord__1_820_81_2polychord_8cpp_1autotoc_md31">
 <title>Interface to ScannerBit</title>
 </sect1>
         </detaileddescription>
@@ -1065,7 +1065,7 @@
 <codeline lineno="270"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///@{<sp/>Plain-vanilla<sp/>functions<sp/>to<sp/>pass<sp/>to<sp/>PolyChord<sp/>for<sp/>the<sp/>callback</highlight></codeline>
 <codeline lineno="271"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Note:<sp/>we<sp/>are<sp/>using<sp/>the<sp/>c<sp/>interface<sp/>from<sp/>cwrapper.f90,<sp/>so<sp/>the<sp/>function</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>signature<sp/>is<sp/>a<sp/>little<sp/>different<sp/>than<sp/>in<sp/>the<sp/>polychord<sp/>examples.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="multinest_8hpp_1ae7a3504ac9fceadfd20258d6b599c4b7" kindref="member">callback_loglike</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*Cube,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ndim,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/>phi,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nderived)</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="multinest_2multinest_8hpp_1ae7a3504ac9fceadfd20258d6b599c4b7" kindref="member">callback_loglike</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>*Cube,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ndim,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal">*<sp/>phi,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nderived)</highlight></codeline>
 <codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Call<sp/>global<sp/>interface<sp/>to<sp/>ScannerBit<sp/>loglikelihood<sp/>function</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Could<sp/>also<sp/>pass<sp/>this<sp/>object<sp/>in<sp/>via<sp/>context<sp/>pointer,<sp/>but<sp/>that</highlight><highlight class="normal"></highlight></codeline>
@@ -1197,7 +1197,7 @@
 <codeline lineno="402"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(first)</highlight></codeline>
 <codeline lineno="403"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="404"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ndim<sp/>=<sp/>boundSettings.nDims;</highlight></codeline>
-<codeline lineno="405"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nderived<sp/>=<sp/>boundSettings.nDerived;</highlight></codeline>
+<codeline lineno="405"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>int<sp/>nderived<sp/>=<sp/>boundSettings.nDerived;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="406"><highlight class="normal"></highlight></codeline>
 <codeline lineno="407"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Construct<sp/>the<sp/>inversed<sp/>index<sp/>map</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="408"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>map[polychord_hypercube]<sp/>=<sp/>{name,<sp/>gambit_hypercube}</highlight><highlight class="normal"></highlight></codeline>

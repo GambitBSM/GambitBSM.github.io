@@ -1,11 +1,11 @@
 ---
-title: "file Pythia_8_212/wrapper_PartonLevel_def.h"
+title: "file Pythia_8_312/wrapper_PartonLevel_def.h"
 
 description: "[No description available]"
 
 ---
 
-# file Pythia_8_212/wrapper_PartonLevel_def.h
+# file Pythia_8_312/wrapper_PartonLevel_def.h
 
 [No description available]
 
@@ -34,19 +34,12 @@ namespace CAT_3(
 ## Source code
 
 ```
-#ifndef __wrapper_PartonLevel_def_Pythia_8_212_h__
-#define __wrapper_PartonLevel_def_Pythia_8_212_h__
+#ifndef __wrapper_PartonLevel_def_Pythia_8_312_h__
+#define __wrapper_PartonLevel_def_Pythia_8_312_h__
 
 #include <vector>
-#include "wrapper_Info_decl.h"
-#include "wrapper_Settings_decl.h"
-#include "wrapper_ParticleData_decl.h"
-#include "wrapper_Rndm_decl.h"
-#include "wrapper_BeamParticle_decl.h"
-#include "wrapper_Couplings_decl.h"
-#include "wrapper_SigmaTotal_decl.h"
-#include "wrapper_UserHooks_decl.h"
 #include "wrapper_Event_decl.h"
+#include "wrapper_BeamParticle_decl.h"
 #include "wrapper_ResonanceDecays_decl.h"
 
 #include "identification.hpp"
@@ -58,6 +51,21 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
     {
         
         // Member functions: 
+        inline void PartonLevel::initSwitchID(const std::vector<int>& idAList)
+        {
+            get_BEptr()->initSwitchID(idAList);
+        }
+        
+        inline void PartonLevel::setBeamID(int iPDFA)
+        {
+            get_BEptr()->setBeamID(iPDFA);
+        }
+        
+        inline void PartonLevel::setBeamID()
+        {
+            get_BEptr()->setBeamID__BOSS();
+        }
+        
         inline bool PartonLevel::next(Pythia8::Event& process, Pythia8::Event& event)
         {
             return get_BEptr()->next__BOSS(*process.get_BEptr(), *event.get_BEptr());
@@ -86,6 +94,11 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         inline bool PartonLevel::hasVetoedDiff() const
         {
             return get_BEptr()->hasVetoedDiff();
+        }
+        
+        inline bool PartonLevel::hasVetoedMerging() const
+        {
+            return get_BEptr()->hasVetoedMerging();
         }
         
         inline void PartonLevel::accumulate()
@@ -121,6 +134,21 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         inline int PartonLevel::typeLastInShower()
         {
             return get_BEptr()->typeLastInShower();
+        }
+        
+        inline bool PartonLevel::canEnhanceTrial()
+        {
+            return get_BEptr()->canEnhanceTrial();
+        }
+        
+        inline double PartonLevel::getEnhancedTrialPT()
+        {
+            return get_BEptr()->getEnhancedTrialPT();
+        }
+        
+        inline double PartonLevel::getEnhancedTrialWeight()
+        {
+            return get_BEptr()->getEnhancedTrialWeight();
         }
         
         
@@ -186,10 +214,10 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 #include "gambit/Backends/backend_undefs.hpp"
 
-#endif /* __wrapper_PartonLevel_def_Pythia_8_212_h__ */
+#endif /* __wrapper_PartonLevel_def_Pythia_8_312_h__ */
 ```
 
 
 -------------------------------
 
-Updated on 2024-07-18 at 13:53:35 +0000
+Updated on 2025-02-12 at 15:36:43 +0000

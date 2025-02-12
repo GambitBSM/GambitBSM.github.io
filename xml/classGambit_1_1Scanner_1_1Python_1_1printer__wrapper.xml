@@ -1,0 +1,131 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classGambit_1_1Scanner_1_1Python_1_1printer__wrapper" kind="class" language="C++" prot="public">
+    <compoundname>Gambit::Scanner::Python::printer_wrapper</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classGambit_1_1Scanner_1_1Python_1_1printer__wrapper_1a31e0f7f37a009b2aa6340f9bb442dd90" prot="private" static="no" mutable="no">
+        <type><ref refid="classGambit_1_1Scanner_1_1Python_1_1scan__interface" kindref="compound">scan_interface</ref> *</type>
+        <definition>scan_interface* Gambit::Scanner::Python::printer_wrapper::scanner</definition>
+        <argsstring></argsstring>
+        <name>scanner</name>
+        <qualifiedname>Gambit::Scanner::Python::printer_wrapper::scanner</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/python/include/interface.hpp" line="41" column="32" bodyfile="ScannerBit/python/include/interface.hpp" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGambit_1_1Scanner_1_1Python_1_1printer__wrapper_1afcc2c08f05e8657d06bcf3a3e84ba122" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::Scanner::Python::printer_wrapper::printer_wrapper</definition>
+        <argsstring>(scan_interface *scanner)</argsstring>
+        <name>printer_wrapper</name>
+        <qualifiedname>Gambit::Scanner::Python::printer_wrapper::printer_wrapper</qualifiedname>
+        <param>
+          <type><ref refid="classGambit_1_1Scanner_1_1Python_1_1scan__interface" kindref="compound">scan_interface</ref> *</type>
+          <declname>scanner</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/python/include/interface.hpp" line="44" column="17" bodyfile="ScannerBit/python/include/interface.hpp" bodystart="44" bodyend="44"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Scanner_1_1Python_1_1printer__wrapper_1aa2ce89608cbec6b78941d403369294f5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Scanner::Python::printer_wrapper::main_printer</definition>
+        <argsstring>(std::unordered_map&lt; std::string, double &gt; &amp;)</argsstring>
+        <name>main_printer</name>
+        <qualifiedname>Gambit::Scanner::Python::printer_wrapper::main_printer</qualifiedname>
+        <param>
+          <type>std::unordered_map&lt; std::string, double &gt; &amp;</type>
+          <defname>key_map</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/python/include/interface.hpp" line="45" column="22" bodyfile="ScannerBit/python/src/interface.cpp" bodystart="417" bodyend="425"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Scanner_1_1Python_1_1printer__wrapper_1ae29bf90cc565c5138f6c967313d4909a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Scanner::Python::printer_wrapper::main_printer</definition>
+        <argsstring>(const std::string &amp;, const double &amp;)</argsstring>
+        <name>main_printer</name>
+        <qualifiedname>Gambit::Scanner::Python::printer_wrapper::main_printer</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <defname>key</defname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <defname>value</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/python/include/interface.hpp" line="46" column="22" bodyfile="ScannerBit/python/src/interface.cpp" bodystart="410" bodyend="415"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Scanner_1_1Python_1_1printer__wrapper_1ac75e1960e114937313e9ee5dc08e0d28" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::Scanner::Python::printer_wrapper::aux_printer</definition>
+        <argsstring>(const std::string &amp;, const double &amp;)</argsstring>
+        <name>aux_printer</name>
+        <qualifiedname>Gambit::Scanner::Python::printer_wrapper::aux_printer</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <defname>key</defname>
+        </param>
+        <param>
+          <type>const double &amp;</type>
+          <defname>value</defname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/python/include/interface.hpp" line="47" column="22" bodyfile="ScannerBit/python/src/interface.cpp" bodystart="403" bodyend="408"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1Scanner_1_1Python_1_1printer__wrapper_1a121b7e8e128977597299de37c5c49ff5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::Scanner::Python::printer_wrapper::~printer_wrapper</definition>
+        <argsstring>()</argsstring>
+        <name>~printer_wrapper</name>
+        <qualifiedname>Gambit::Scanner::Python::printer_wrapper::~printer_wrapper</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/python/include/interface.hpp" line="48" column="17" bodyfile="ScannerBit/python/include/interface.hpp" bodystart="48" bodyend="48"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ScannerBit/python/include/interface.hpp" line="38" column="13" bodyfile="ScannerBit/python/include/interface.hpp" bodystart="39" bodyend="49"/>
+    <listofallmembers>
+      <member refid="classGambit_1_1Scanner_1_1Python_1_1printer__wrapper_1ac75e1960e114937313e9ee5dc08e0d28" prot="public" virt="non-virtual"><scope>Gambit::Scanner::Python::printer_wrapper</scope><name>aux_printer</name></member>
+      <member refid="classGambit_1_1Scanner_1_1Python_1_1printer__wrapper_1aa2ce89608cbec6b78941d403369294f5" prot="public" virt="non-virtual"><scope>Gambit::Scanner::Python::printer_wrapper</scope><name>main_printer</name></member>
+      <member refid="classGambit_1_1Scanner_1_1Python_1_1printer__wrapper_1ae29bf90cc565c5138f6c967313d4909a" prot="public" virt="non-virtual"><scope>Gambit::Scanner::Python::printer_wrapper</scope><name>main_printer</name></member>
+      <member refid="classGambit_1_1Scanner_1_1Python_1_1printer__wrapper_1afcc2c08f05e8657d06bcf3a3e84ba122" prot="public" virt="non-virtual"><scope>Gambit::Scanner::Python::printer_wrapper</scope><name>printer_wrapper</name></member>
+      <member refid="classGambit_1_1Scanner_1_1Python_1_1printer__wrapper_1a31e0f7f37a009b2aa6340f9bb442dd90" prot="private" virt="non-virtual"><scope>Gambit::Scanner::Python::printer_wrapper</scope><name>scanner</name></member>
+      <member refid="classGambit_1_1Scanner_1_1Python_1_1printer__wrapper_1a121b7e8e128977597299de37c5c49ff5" prot="public" virt="non-virtual"><scope>Gambit::Scanner::Python::printer_wrapper</scope><name>~printer_wrapper</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

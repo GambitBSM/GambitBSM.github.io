@@ -1,11 +1,11 @@
 ---
-title: "file Pythia_8_212/abstract_Event.h"
+title: "file Pythia_8_312/abstract_Event.h"
 
 description: "[No description available]"
 
 ---
 
-# file Pythia_8_212/abstract_Event.h
+# file Pythia_8_312/abstract_Event.h
 
 [No description available]
 
@@ -34,8 +34,8 @@ namespace CAT_3(
 ## Source code
 
 ```
-#ifndef __abstract_Event_Pythia_8_212_h__
-#define __abstract_Event_Pythia_8_212_h__
+#ifndef __abstract_Event_Pythia_8_312_h__
+#define __abstract_Event_Pythia_8_312_h__
 
 #include <cstddef>
 #include <iostream>
@@ -73,6 +73,8 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
     
                 virtual void clear() =0;
     
+                virtual void free() =0;
+    
                 virtual void reset() =0;
     
                 virtual Pythia8::Abstract_Particle& operator_square_bracket_pair__BOSS(int) =0;
@@ -84,6 +86,12 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
                 virtual Pythia8::Abstract_Particle& at__BOSS(int) =0;
     
                 virtual Pythia8::Abstract_Particle& back__BOSS() =0;
+    
+                virtual const Pythia8::Abstract_Particle& front__BOSS() const =0;
+    
+                virtual const Pythia8::Abstract_Particle& at__BOSS(int) const =0;
+    
+                virtual const Pythia8::Abstract_Particle& back__BOSS() const =0;
     
                 virtual int size() const =0;
     
@@ -129,29 +137,23 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
     
                 virtual int copy__BOSS(int) =0;
     
-                virtual void list(int) const =0;
+                virtual void list(bool, bool, int, std::ostream&) const =0;
     
-                virtual void list__BOSS() const =0;
-    
-                virtual void list(std::ostream&, int) const =0;
-    
-                virtual void list__BOSS(std::ostream&) const =0;
-    
-                virtual void list(bool, bool, int) const =0;
+                virtual void list__BOSS(bool, bool, int) const =0;
     
                 virtual void list__BOSS(bool, bool) const =0;
     
                 virtual void list__BOSS(bool) const =0;
     
-                virtual void list(bool, bool, std::ostream&, int) const =0;
-    
-                virtual void list__BOSS(bool, bool, std::ostream&) const =0;
+                virtual void list__BOSS() const =0;
     
                 virtual void popBack(int) =0;
     
                 virtual void popBack__BOSS() =0;
     
-                virtual void remove(int, int) =0;
+                virtual void remove(int, int, bool) =0;
+    
+                virtual void remove__BOSS(int, int) =0;
     
                 virtual void restorePtrs() =0;
     
@@ -178,6 +180,20 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
                 virtual double scaleSecond() const =0;
     
                 virtual ::std::vector<int> daughterList(int) const =0;
+    
+                virtual int nFinal(bool) const =0;
+    
+                virtual int nFinal__BOSS() const =0;
+    
+                virtual double dyAbs(int, int) const =0;
+    
+                virtual double detaAbs(int, int) const =0;
+    
+                virtual double dphiAbs(int, int) const =0;
+    
+                virtual double RRapPhi(int, int) const =0;
+    
+                virtual double REtaPhi(int, int) const =0;
     
                 virtual void rot(double, double) =0;
     
@@ -217,11 +233,21 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
     
                 virtual void restoreJunctionSize() =0;
     
-                virtual void listJunctions(std::ostream&) const =0;
+                virtual void listJunctions() const =0;
     
-                virtual void listJunctions__BOSS() const =0;
+                virtual bool hasHVcols() const =0;
+    
+                virtual void listHVcols() const =0;
+    
+                virtual int maxHVcols() const =0;
+    
+                virtual void saveHVcolsSize() =0;
+    
+                virtual void restoreHVcolsSize() =0;
     
                 virtual void savePartonLevelSize() =0;
+    
+                virtual void clearStringBreaks() =0;
     
                 virtual Pythia8::Abstract_Event& operator_plus_equal__BOSS(const Pythia8::Abstract_Event&) =0;
     
@@ -277,10 +303,10 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 #include "gambit/Backends/backend_undefs.hpp"
 
 
-#endif /* __abstract_Event_Pythia_8_212_h__ */
+#endif /* __abstract_Event_Pythia_8_312_h__ */
 ```
 
 
 -------------------------------
 
-Updated on 2024-07-18 at 13:53:35 +0000
+Updated on 2025-02-12 at 15:36:43 +0000

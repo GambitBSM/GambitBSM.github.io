@@ -1,0 +1,1022 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classGambit_1_1jswarm__1__0__0_1_1particle__swarm" kind="class" language="C++" prot="public">
+    <compoundname>Gambit::jswarm_1_0_0::particle_swarm</compoundname>
+    <includes refid="jswarm_8hpp" local="no">jswarm.hpp</includes>
+      <sectiondef kind="user-defined">
+      <memberdef kind="variable" id="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a0d05cf134a1b30539b4cbf28367c5b54" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Gambit::jswarm_1_0_0::particle_swarm::global_best_value</definition>
+        <argsstring></argsstring>
+        <name>global_best_value</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle_swarm::global_best_value</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Current global best fit </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="108" column="16" bodyfile="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" bodystart="108" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a5a2caf6d70376c94fcfd7b2ed44b5e3d" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; Gambit::jswarm_1_0_0::particle_swarm::global_best_x</definition>
+        <argsstring></argsstring>
+        <name>global_best_x</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle_swarm::global_best_x</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="109" column="21" bodyfile="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" bodystart="109" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="variable" id="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a6820909de300d39d592160c02727902a" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Gambit::jswarm_1_0_0::particle_swarm::phi1_index</definition>
+        <argsstring></argsstring>
+        <name>phi1_index</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle_swarm::phi1_index</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Indices in parameter vector correpsonding to algorithm parameters when using meta-optimisation </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="126" column="13" bodyfile="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" bodystart="126" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a4dc8e283671bb87c8cbf0a22d35edb8f" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Gambit::jswarm_1_0_0::particle_swarm::phi2_index</definition>
+        <argsstring></argsstring>
+        <name>phi2_index</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle_swarm::phi2_index</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="127" column="13" bodyfile="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" bodystart="127" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1ac880b55d8526bc29033405a7fc689182" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Gambit::jswarm_1_0_0::particle_swarm::omega_index</definition>
+        <argsstring></argsstring>
+        <name>omega_index</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle_swarm::omega_index</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="128" column="13" bodyfile="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="user-defined">
+      <memberdef kind="variable" id="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1ac834fe49e4cd8495b3327dbf68488fb1" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; Gambit::jswarm_1_0_0::particle_swarm::upperbounds</definition>
+        <argsstring></argsstring>
+        <name>upperbounds</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle_swarm::upperbounds</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Parameter space boundaries </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="252" column="21" bodyfile="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" bodystart="252" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1aaa262ea5325c71b52850f99c6bd1bad6" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; Gambit::jswarm_1_0_0::particle_swarm::lowerbounds</definition>
+        <argsstring></argsstring>
+        <name>lowerbounds</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle_swarm::lowerbounds</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="253" column="21" bodyfile="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" bodystart="253" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a5a46c977c745297286f7c2345d3812b3" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Gambit::jswarm_1_0_0::particle_swarm::rank</definition>
+        <argsstring></argsstring>
+        <name>rank</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle_swarm::rank</qualifiedname>
+        <briefdescription>
+<para>MPI process rank. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="92" column="13" bodyfile="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a8e0dccd6f1a1f63e3350f76d877339af" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Gambit::jswarm_1_0_0::particle_swarm::nprocs</definition>
+        <argsstring></argsstring>
+        <name>nprocs</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle_swarm::nprocs</qualifiedname>
+        <briefdescription>
+<para>Number of MPI processes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="95" column="13" bodyfile="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1abce1688c56ce0b579f772ad8d21fc368" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Gambit::jswarm_1_0_0::particle_swarm::NP_per_rank</definition>
+        <argsstring></argsstring>
+        <name>NP_per_rank</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle_swarm::NP_per_rank</qualifiedname>
+        <briefdescription>
+<para>MPI process rank. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="98" column="13" bodyfile="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a7b3d8436030147b696e72d9270bb88ed" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classGambit_1_1jswarm__1__0__0_1_1particle" kindref="compound">particle</ref> &gt;</type>
+        <definition>std::vector&lt;particle&gt; Gambit::jswarm_1_0_0::particle_swarm::particles</definition>
+        <argsstring></argsstring>
+        <name>particles</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle_swarm::particles</qualifiedname>
+        <briefdescription>
+<para>Particles making up the swarm (rank-local selection) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="101" column="21" bodyfile="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a6de4e04b4d2b0fd0cc42f27ce669dfb7" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; <ref refid="classGambit_1_1jswarm__1__0__0_1_1particle" kindref="compound">particle</ref> &gt;</type>
+        <definition>std::vector&lt;particle&gt; Gambit::jswarm_1_0_0::particle_swarm::particles_global</definition>
+        <argsstring></argsstring>
+        <name>particles_global</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle_swarm::particles_global</qualifiedname>
+        <briefdescription>
+<para>Particles making up the swarm (total population) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="104" column="21" bodyfile="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a3e912e8274e5e6452366a792d46418f6" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Gambit::jswarm_1_0_0::particle_swarm::mean_lnlike</definition>
+        <argsstring></argsstring>
+        <name>mean_lnlike</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle_swarm::mean_lnlike</qualifiedname>
+        <briefdescription>
+<para>Mean personal best fit across the current generation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="113" column="16" bodyfile="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" bodystart="113" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1ad90475e77b6373ded32900cd85f95078" prot="private" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Gambit::jswarm_1_0_0::particle_swarm::sfim</definition>
+        <argsstring></argsstring>
+        <name>sfim</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle_swarm::sfim</qualifiedname>
+        <briefdescription>
+<para>Smoothed fractional improvement in the mean personal best fit across the most recent generations. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="116" column="16" bodyfile="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" bodystart="116" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1aa8f043d1e24a473272421e35f1a06267" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>std::vector&lt;double&gt; Gambit::jswarm_1_0_0::particle_swarm::conv_progress</definition>
+        <argsstring></argsstring>
+        <name>conv_progress</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle_swarm::conv_progress</qualifiedname>
+        <briefdescription>
+<para>Fractional improvements in the mean personal best lnlike in the most recent generations. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="119" column="21" bodyfile="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" bodystart="119" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1abb0b725ec271d7b689827afaefd2efb0" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Gambit::jswarm_1_0_0::particle_swarm::nPar_total</definition>
+        <argsstring></argsstring>
+        <name>nPar_total</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle_swarm::nPar_total</qualifiedname>
+        <briefdescription>
+<para>Dimensionality of the parameter space including any meta-optimisation parameters. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="122" column="13" bodyfile="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" bodystart="122" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1ac599816928274bba8ba8c04c845ac3b0" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Gambit::jswarm_1_0_0::particle_swarm::input_seed</definition>
+        <argsstring></argsstring>
+        <name>input_seed</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle_swarm::input_seed</qualifiedname>
+        <briefdescription>
+<para>Input base seed for random number generation; non-positive means seed from the system clock. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="132" column="13" bodyfile="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" bodystart="132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1acc8c9ecae9ebeb1cee82737b1752008a" prot="private" static="no" mutable="no">
+        <type><ref refid="jswarm_8hpp_1a3c849197180a4f82ef9efd00551ba33a" kindref="member">rng_type</ref></type>
+        <definition>rng_type Gambit::jswarm_1_0_0::particle_swarm::rng</definition>
+        <argsstring></argsstring>
+        <name>rng</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle_swarm::rng</qualifiedname>
+        <briefdescription>
+<para><ref refid="classGambit_1_1Random" kindref="compound">Random</ref> number generator engine. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="135" column="18" bodyfile="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" bodystart="135" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1acc5b679c66b7206256bf145cf6447b48" prot="public" static="no" mutable="no">
+        <type><ref refid="classGambit_1_1Scanner_1_1like__ptr" kindref="compound">Scanner::like_ptr</ref></type>
+        <definition>Scanner::like_ptr Gambit::jswarm_1_0_0::particle_swarm::likelihood_function</definition>
+        <argsstring></argsstring>
+        <name>likelihood_function</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle_swarm::likelihood_function</qualifiedname>
+        <briefdescription>
+<para>Pointer to objective function. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="167" column="27" bodyfile="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" bodystart="167" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a99a46596d1e1754fe21d95fee60217ee" prot="public" static="no" mutable="no">
+        <type><ref refid="printer__interface_8hpp_1ae767584d510b4dcaa3b82278ab1ecbd7" kindref="member">Scanner::printer_interface</ref> *</type>
+        <definition>Scanner::printer_interface* Gambit::jswarm_1_0_0::particle_swarm::printer</definition>
+        <argsstring></argsstring>
+        <name>printer</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle_swarm::printer</qualifiedname>
+        <briefdescription>
+<para>Pointer to GAMBIT printer. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="170" column="36" bodyfile="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" bodystart="170" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1aaba48f4da1c8e83e634a3434ac6cd7bb" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Gambit::jswarm_1_0_0::particle_swarm::path</definition>
+        <argsstring></argsstring>
+        <name>path</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle_swarm::path</qualifiedname>
+        <briefdescription>
+<para>Prefix for all j-Swarm save files. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="173" column="21" bodyfile="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" bodystart="173" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1aefccb6eb1dc3fe1daf9b82ba25205d49" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Gambit::jswarm_1_0_0::particle_swarm::nPar</definition>
+        <argsstring></argsstring>
+        <name>nPar</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle_swarm::nPar</qualifiedname>
+        <briefdescription>
+<para>Dimensionality of the parameter space. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="176" column="13" bodyfile="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" bodystart="176" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1ad5db2524959d803912ee9dfaa5e4f9ba" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Gambit::jswarm_1_0_0::particle_swarm::nDerived</definition>
+        <argsstring></argsstring>
+        <name>nDerived</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle_swarm::nDerived</qualifiedname>
+        <briefdescription>
+<para>Number of derived quantities to output (GAMBIT printers handle these). </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="179" column="13" bodyfile="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a2998721cb42446f4c5ef815b2a8b62a7" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Gambit::jswarm_1_0_0::particle_swarm::nDiscrete</definition>
+        <argsstring></argsstring>
+        <name>nDiscrete</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle_swarm::nDiscrete</qualifiedname>
+        <briefdescription>
+<para>Number of parameters that are to be treated as discrete. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="182" column="13" bodyfile="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" bodystart="182" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a19603e71ccbd360f0c8071ca58e384e8" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Gambit::jswarm_1_0_0::particle_swarm::maxgen</definition>
+        <argsstring></argsstring>
+        <name>maxgen</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle_swarm::maxgen</qualifiedname>
+        <briefdescription>
+<para>Maximum number of generations. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="185" column="13" bodyfile="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" bodystart="185" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a8d6fa63fb3fd1aa6e8c7de75d4ee029e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Gambit::jswarm_1_0_0::particle_swarm::NP</definition>
+        <argsstring></argsstring>
+        <name>NP</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle_swarm::NP</qualifiedname>
+        <briefdescription>
+<para>Population size (individuals per generation) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="188" column="13" bodyfile="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" bodystart="188" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a287d1e3b250a5862ee57f7136f31a43f" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Gambit::jswarm_1_0_0::particle_swarm::bndry</definition>
+        <argsstring></argsstring>
+        <name>bndry</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle_swarm::bndry</qualifiedname>
+        <briefdescription>
+<para>Boundary constraint: 1=brick wall, 2=random re-initialization, 3=reflection. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="191" column="13" bodyfile="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" bodystart="191" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1acda37e8f11678ba74a8f4f288d605b42" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Gambit::jswarm_1_0_0::particle_swarm::convsteps</definition>
+        <argsstring></argsstring>
+        <name>convsteps</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle_swarm::convsteps</qualifiedname>
+        <briefdescription>
+<para>Number of steps to smooth over when checking convergence. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="194" column="13" bodyfile="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" bodystart="194" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a2ec65ab69ab0129e7862733482d4d984" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Gambit::jswarm_1_0_0::particle_swarm::savecount</definition>
+        <argsstring></argsstring>
+        <name>savecount</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle_swarm::savecount</qualifiedname>
+        <briefdescription>
+<para>Save progress every savecount generations. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="197" column="13" bodyfile="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" bodystart="197" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1ac71129d9d94d8026a2accf67f7d6f032" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Gambit::jswarm_1_0_0::particle_swarm::init_pop_strategy</definition>
+        <argsstring></argsstring>
+        <name>init_pop_strategy</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle_swarm::init_pop_strategy</qualifiedname>
+        <briefdescription>
+<para>Initialisation strategy: 0=one shot, 1=n-shot, 2=n-shot with error if no valid vectors found. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="200" column="13" bodyfile="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" bodystart="200" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1aab9cfead1c206d1d8772f1acd14474aa" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Gambit::jswarm_1_0_0::particle_swarm::max_ini_attempts</definition>
+        <argsstring></argsstring>
+        <name>max_ini_attempts</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle_swarm::max_ini_attempts</qualifiedname>
+        <briefdescription>
+<para>Maximum number of times to try to find a valid vector for each slot in the initial population. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="203" column="13" bodyfile="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" bodystart="203" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a1b273a298d805f9b4de548d400628963" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Gambit::jswarm_1_0_0::particle_swarm::verbose</definition>
+        <argsstring></argsstring>
+        <name>verbose</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle_swarm::verbose</qualifiedname>
+        <briefdescription>
+<para>Output verbosity: 0=only error messages, 1=basic info, 2=civ-level info, 3+=population info. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="206" column="13" bodyfile="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" bodystart="206" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1acf47987d841d4c7c5029844615928ef4" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Gambit::jswarm_1_0_0::particle_swarm::seed</definition>
+        <argsstring></argsstring>
+        <name>seed</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle_swarm::seed</qualifiedname>
+        <briefdescription>
+<para>Base seed for random number generation; non-positive means seed from the system clock. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="209" column="13" bodyfile="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" bodystart="209" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1ae6ddd93f42db2a320fe14f6b8657d1ce" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Gambit::jswarm_1_0_0::particle_swarm::fcall</definition>
+        <argsstring></argsstring>
+        <name>fcall</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle_swarm::fcall</qualifiedname>
+        <briefdescription>
+<para>Number of calls to the objective function so far. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="212" column="13" bodyfile="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" bodystart="212" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a05017ca6779a639a4acd6a46156a6d28" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Gambit::jswarm_1_0_0::particle_swarm::fcall_global</definition>
+        <argsstring></argsstring>
+        <name>fcall_global</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle_swarm::fcall_global</qualifiedname>
+        <briefdescription>
+<para>Number of calls to the objective function so far across all processes. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="215" column="13" bodyfile="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" bodystart="215" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a268939522e122929c487c65a8c26f258" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Gambit::jswarm_1_0_0::particle_swarm::omega</definition>
+        <argsstring></argsstring>
+        <name>omega</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle_swarm::omega</qualifiedname>
+        <briefdescription>
+<para>Inertial weight. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="218" column="16" bodyfile="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" bodystart="218" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a3cb5b8a41d76210d52b4fb060ee5e4f2" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Gambit::jswarm_1_0_0::particle_swarm::phi1</definition>
+        <argsstring></argsstring>
+        <name>phi1</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle_swarm::phi1</qualifiedname>
+        <briefdescription>
+<para>Cognitive weight. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="221" column="16" bodyfile="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" bodystart="221" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a35fa8aa163445ad9d8a67aad4f149263" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Gambit::jswarm_1_0_0::particle_swarm::phi2</definition>
+        <argsstring></argsstring>
+        <name>phi2</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle_swarm::phi2</qualifiedname>
+        <briefdescription>
+<para>Social weight. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="224" column="16" bodyfile="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" bodystart="224" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a72c44f2ebda3d672bb8e45166694d4ff" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Gambit::jswarm_1_0_0::particle_swarm::convthresh</definition>
+        <argsstring></argsstring>
+        <name>convthresh</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle_swarm::convthresh</qualifiedname>
+        <briefdescription>
+<para>Threshold for gen-level convergence: smoothed fractional improvement in the mean personal best population value. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="227" column="16" bodyfile="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" bodystart="227" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1ab071d6326a87c3bf71a219260bc6af62" prot="public" static="no" mutable="no">
+        <type>double</type>
+        <definition>double Gambit::jswarm_1_0_0::particle_swarm::min_acceptable_value</definition>
+        <argsstring></argsstring>
+        <name>min_acceptable_value</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle_swarm::min_acceptable_value</qualifiedname>
+        <briefdescription>
+<para>Minimum function value to accept for the initial generation if init_population_strategy &gt; 0. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="230" column="16" bodyfile="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" bodystart="230" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a1a2a88be7c2c8ec9bf98452699aecd62" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Gambit::jswarm_1_0_0::particle_swarm::adapt_phi</definition>
+        <argsstring></argsstring>
+        <name>adapt_phi</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle_swarm::adapt_phi</qualifiedname>
+        <briefdescription>
+<para>Use self-optimising adaptive choices for phi1 and phi2. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="233" column="14" bodyfile="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" bodystart="233" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1aa66cf9176c2096de2916e3e20953043e" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Gambit::jswarm_1_0_0::particle_swarm::adapt_omega</definition>
+        <argsstring></argsstring>
+        <name>adapt_omega</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle_swarm::adapt_omega</qualifiedname>
+        <briefdescription>
+<para>Use self-optimising adaptive choices for omega. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="236" column="14" bodyfile="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a7538299024744af1e37b8797d1eed058" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Gambit::jswarm_1_0_0::particle_swarm::init_stationary</definition>
+        <argsstring></argsstring>
+        <name>init_stationary</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle_swarm::init_stationary</qualifiedname>
+        <briefdescription>
+<para>Initialise particle velocities to zero. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="239" column="14" bodyfile="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a1666abaca7c08bc88c6536268e889870" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Gambit::jswarm_1_0_0::particle_swarm::resume</definition>
+        <argsstring></argsstring>
+        <name>resume</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle_swarm::resume</qualifiedname>
+        <briefdescription>
+<para>Resume from previous run. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="242" column="14" bodyfile="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" bodystart="242" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1ad34cf4a1394f4fa375405cfd500c07e0" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Gambit::jswarm_1_0_0::particle_swarm::allow_new_settings</definition>
+        <argsstring></argsstring>
+        <name>allow_new_settings</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle_swarm::allow_new_settings</qualifiedname>
+        <briefdescription>
+<para>Allow settings to be overridden with new values when resuming. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="245" column="14" bodyfile="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" bodystart="245" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1ae07b325fab1014800ebc184d75ffbeb2" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Gambit::jswarm_1_0_0::particle_swarm::save_particles_natively</definition>
+        <argsstring></argsstring>
+        <name>save_particles_natively</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle_swarm::save_particles_natively</qualifiedname>
+        <briefdescription>
+<para>Save full particle data from every generation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="248" column="14" bodyfile="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" bodystart="248" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a6490b9d6c9eaee65fba71c924f5fe4ef" prot="public" static="no" mutable="no">
+        <type>std::vector&lt; int &gt;</type>
+        <definition>std::vector&lt;int&gt; Gambit::jswarm_1_0_0::particle_swarm::discrete</definition>
+        <argsstring></argsstring>
+        <name>discrete</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle_swarm::discrete</qualifiedname>
+        <briefdescription>
+<para>Indices of parameters to be treated as discrete. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="257" column="21" bodyfile="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" bodystart="257" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a05ed7dddd24e0f1e18cc344f5ef358e8" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::jswarm_1_0_0::particle_swarm::update_particle</definition>
+        <argsstring>(particle &amp;)</argsstring>
+        <name>update_particle</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle_swarm::update_particle</qualifiedname>
+        <param>
+          <type><ref refid="classGambit_1_1jswarm__1__0__0_1_1particle" kindref="compound">particle</ref> &amp;</type>
+          <defname>p</defname>
+        </param>
+        <briefdescription>
+<para>Update a particle&apos;s velocity and use that to update its position. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="138" column="14" bodyfile="ScannerBit/src/scanners/jswarm/particle_swarm.cpp" bodystart="377" bodyend="392"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a398ca76c09890733305d2f30a0625923" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::jswarm_1_0_0::particle_swarm::update_best_fits</definition>
+        <argsstring>(particle &amp;)</argsstring>
+        <name>update_best_fits</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle_swarm::update_best_fits</qualifiedname>
+        <param>
+          <type><ref refid="classGambit_1_1jswarm__1__0__0_1_1particle" kindref="compound">particle</ref> &amp;</type>
+          <defname>p</defname>
+        </param>
+        <briefdescription>
+<para>Update a particle&apos;s own best fit and the global best fit. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="141" column="14" bodyfile="ScannerBit/src/scanners/jswarm/particle_swarm.cpp" bodystart="395" bodyend="403"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1aac7dbb03fc06d15a338a26a4790f733e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::jswarm_1_0_0::particle_swarm::implement_boundary_policy</definition>
+        <argsstring>(particle &amp;)</argsstring>
+        <name>implement_boundary_policy</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle_swarm::implement_boundary_policy</qualifiedname>
+        <param>
+          <type><ref refid="classGambit_1_1jswarm__1__0__0_1_1particle" kindref="compound">particle</ref> &amp;</type>
+          <defname>p</defname>
+        </param>
+        <briefdescription>
+<para>Deal with vectors outside the prior box according to the value of bndry. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="144" column="14" bodyfile="ScannerBit/src/scanners/jswarm/particle_swarm.cpp" bodystart="406" bodyend="435"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1aa0d7cb64477ee77364bedb675975255b" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::jswarm_1_0_0::particle_swarm::save_settings</definition>
+        <argsstring>()</argsstring>
+        <name>save_settings</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle_swarm::save_settings</qualifiedname>
+        <briefdescription>
+<para>Save swarm settings. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="147" column="14" bodyfile="ScannerBit/src/scanners/jswarm/particle_swarm.cpp" bodystart="460" bodyend="511"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a5c2d328bbc9bb73f511426e0e73d3af6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::jswarm_1_0_0::particle_swarm::read_settings</definition>
+        <argsstring>(bool)</argsstring>
+        <name>read_settings</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle_swarm::read_settings</qualifiedname>
+        <param>
+          <type>bool</type>
+          <defname>init</defname>
+        </param>
+        <briefdescription>
+<para>Read swarm settings. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="150" column="14" bodyfile="ScannerBit/src/scanners/jswarm/particle_swarm.cpp" bodystart="514" bodyend="557"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a8b54a63b559ea1edf3de245bdf22ed90" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::jswarm_1_0_0::particle_swarm::save_generation</definition>
+        <argsstring>(int)</argsstring>
+        <name>save_generation</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle_swarm::save_generation</qualifiedname>
+        <param>
+          <type>int</type>
+          <defname>gen</defname>
+        </param>
+        <briefdescription>
+<para>Save data from the last generation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="153" column="14" bodyfile="ScannerBit/src/scanners/jswarm/particle_swarm.cpp" bodystart="560" bodyend="617"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a7ae8debfcf1b2032d0d490b482c63bea" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int Gambit::jswarm_1_0_0::particle_swarm::read_generation</definition>
+        <argsstring>()</argsstring>
+        <name>read_generation</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle_swarm::read_generation</qualifiedname>
+        <briefdescription>
+<para>Read data from the last generation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="156" column="13" bodyfile="ScannerBit/src/scanners/jswarm/particle_swarm.cpp" bodystart="620" bodyend="676"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a37ebfb7282794f186e543a1329b84aa0" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::jswarm_1_0_0::particle_swarm::converged</definition>
+        <argsstring>()</argsstring>
+        <name>converged</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle_swarm::converged</qualifiedname>
+        <briefdescription>
+<para>Check whether the swarm has converged. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>Check whether the swarm has converged; note that this will fail if the lnlike is ever &gt;= 0! </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="159" column="14" bodyfile="ScannerBit/src/scanners/jswarm/particle_swarm.cpp" bodystart="438" bodyend="457"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a886f5026f2f49f16a514e2610565ec9e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::jswarm_1_0_0::particle_swarm::collect_data</definition>
+        <argsstring>()</argsstring>
+        <name>collect_data</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle_swarm::collect_data</qualifiedname>
+        <briefdescription>
+<para>Collect all particles and related data to rank 0. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="162" column="14" bodyfile="ScannerBit/src/scanners/jswarm/particle_swarm.cpp" bodystart="313" bodyend="374"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a474297ad1c4788b10d9ae4c94535f84b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::jswarm_1_0_0::particle_swarm::particle_swarm</definition>
+        <argsstring>()</argsstring>
+        <name>particle_swarm</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle_swarm::particle_swarm</qualifiedname>
+        <briefdescription>
+<para>Constructor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="260" column="9" bodyfile="ScannerBit/src/scanners/jswarm/particle_swarm.cpp" bodystart="35" bodyend="69"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a90e2ad0eb3c4a145558f65e48f5584ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::jswarm_1_0_0::particle_swarm::init</definition>
+        <argsstring>()</argsstring>
+        <name>init</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle_swarm::init</qualifiedname>
+        <briefdescription>
+<para>Initialise the swarm. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="263" column="14" bodyfile="ScannerBit/src/scanners/jswarm/particle_swarm.cpp" bodystart="72" bodyend="159"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a685ca1bcb13abfc67e70127f3dd36a2d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::jswarm_1_0_0::particle_swarm::run</definition>
+        <argsstring>()</argsstring>
+        <name>run</name>
+        <qualifiedname>Gambit::jswarm_1_0_0::particle_swarm::run</qualifiedname>
+        <briefdescription>
+<para>Release the swarm. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="266" column="14" bodyfile="ScannerBit/src/scanners/jswarm/particle_swarm.cpp" bodystart="162" bodyend="310"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>A swarm of particles and methods to evolve them. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="4">
+        <label>Gambit::Printers::BasePrinterManager</label>
+        <link refid="classGambit_1_1Printers_1_1BasePrinterManager"/>
+      </node>
+      <node id="2">
+        <label>Gambit::Scanner::like_ptr</label>
+        <link refid="classGambit_1_1Scanner_1_1like__ptr"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>Gambit::jswarm_1_0_0::particle_swarm</label>
+        <link refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>likelihood_function</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>printer</edgelabel>
+        </childnode>
+        <childnode refid="5" relation="usage">
+          <edgelabel>path</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Gambit::Scanner::scan_ptr&lt; double(std::unordered_map&lt; std::string, double &gt; &amp;)&gt;</label>
+        <link refid="classGambit_1_1Scanner_1_1scan__ptr"/>
+      </node>
+      <node id="5">
+        <label>string</label>
+      </node>
+    </collaborationgraph>
+    <location file="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" line="86" column="5" bodyfile="ScannerBit/include/gambit/ScannerBit/scanners/jswarm/jswarm.hpp" bodystart="87" bodyend="268"/>
+    <listofallmembers>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1aa66cf9176c2096de2916e3e20953043e" prot="public" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle_swarm</scope><name>adapt_omega</name></member>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a1a2a88be7c2c8ec9bf98452699aecd62" prot="public" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle_swarm</scope><name>adapt_phi</name></member>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1ad34cf4a1394f4fa375405cfd500c07e0" prot="public" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle_swarm</scope><name>allow_new_settings</name></member>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a287d1e3b250a5862ee57f7136f31a43f" prot="public" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle_swarm</scope><name>bndry</name></member>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a886f5026f2f49f16a514e2610565ec9e" prot="private" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle_swarm</scope><name>collect_data</name></member>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1aa8f043d1e24a473272421e35f1a06267" prot="private" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle_swarm</scope><name>conv_progress</name></member>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a37ebfb7282794f186e543a1329b84aa0" prot="private" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle_swarm</scope><name>converged</name></member>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1acda37e8f11678ba74a8f4f288d605b42" prot="public" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle_swarm</scope><name>convsteps</name></member>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a72c44f2ebda3d672bb8e45166694d4ff" prot="public" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle_swarm</scope><name>convthresh</name></member>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a6490b9d6c9eaee65fba71c924f5fe4ef" prot="public" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle_swarm</scope><name>discrete</name></member>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1ae6ddd93f42db2a320fe14f6b8657d1ce" prot="public" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle_swarm</scope><name>fcall</name></member>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a05017ca6779a639a4acd6a46156a6d28" prot="public" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle_swarm</scope><name>fcall_global</name></member>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a0d05cf134a1b30539b4cbf28367c5b54" prot="private" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle_swarm</scope><name>global_best_value</name></member>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a5a2caf6d70376c94fcfd7b2ed44b5e3d" prot="private" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle_swarm</scope><name>global_best_x</name></member>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1aac7dbb03fc06d15a338a26a4790f733e" prot="private" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle_swarm</scope><name>implement_boundary_policy</name></member>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a90e2ad0eb3c4a145558f65e48f5584ba" prot="public" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle_swarm</scope><name>init</name></member>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1ac71129d9d94d8026a2accf67f7d6f032" prot="public" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle_swarm</scope><name>init_pop_strategy</name></member>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a7538299024744af1e37b8797d1eed058" prot="public" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle_swarm</scope><name>init_stationary</name></member>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1ac599816928274bba8ba8c04c845ac3b0" prot="private" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle_swarm</scope><name>input_seed</name></member>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1acc5b679c66b7206256bf145cf6447b48" prot="public" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle_swarm</scope><name>likelihood_function</name></member>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1aaa262ea5325c71b52850f99c6bd1bad6" prot="public" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle_swarm</scope><name>lowerbounds</name></member>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1aab9cfead1c206d1d8772f1acd14474aa" prot="public" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle_swarm</scope><name>max_ini_attempts</name></member>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a19603e71ccbd360f0c8071ca58e384e8" prot="public" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle_swarm</scope><name>maxgen</name></member>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a3e912e8274e5e6452366a792d46418f6" prot="private" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle_swarm</scope><name>mean_lnlike</name></member>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1ab071d6326a87c3bf71a219260bc6af62" prot="public" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle_swarm</scope><name>min_acceptable_value</name></member>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1ad5db2524959d803912ee9dfaa5e4f9ba" prot="public" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle_swarm</scope><name>nDerived</name></member>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a2998721cb42446f4c5ef815b2a8b62a7" prot="public" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle_swarm</scope><name>nDiscrete</name></member>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a8d6fa63fb3fd1aa6e8c7de75d4ee029e" prot="public" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle_swarm</scope><name>NP</name></member>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1abce1688c56ce0b579f772ad8d21fc368" prot="private" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle_swarm</scope><name>NP_per_rank</name></member>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1aefccb6eb1dc3fe1daf9b82ba25205d49" prot="public" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle_swarm</scope><name>nPar</name></member>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1abb0b725ec271d7b689827afaefd2efb0" prot="private" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle_swarm</scope><name>nPar_total</name></member>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a8e0dccd6f1a1f63e3350f76d877339af" prot="private" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle_swarm</scope><name>nprocs</name></member>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a268939522e122929c487c65a8c26f258" prot="public" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle_swarm</scope><name>omega</name></member>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1ac880b55d8526bc29033405a7fc689182" prot="private" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle_swarm</scope><name>omega_index</name></member>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a474297ad1c4788b10d9ae4c94535f84b" prot="public" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle_swarm</scope><name>particle_swarm</name></member>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a7b3d8436030147b696e72d9270bb88ed" prot="private" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle_swarm</scope><name>particles</name></member>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a6de4e04b4d2b0fd0cc42f27ce669dfb7" prot="private" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle_swarm</scope><name>particles_global</name></member>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1aaba48f4da1c8e83e634a3434ac6cd7bb" prot="public" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle_swarm</scope><name>path</name></member>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a3cb5b8a41d76210d52b4fb060ee5e4f2" prot="public" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle_swarm</scope><name>phi1</name></member>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a6820909de300d39d592160c02727902a" prot="private" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle_swarm</scope><name>phi1_index</name></member>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a35fa8aa163445ad9d8a67aad4f149263" prot="public" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle_swarm</scope><name>phi2</name></member>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a4dc8e283671bb87c8cbf0a22d35edb8f" prot="private" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle_swarm</scope><name>phi2_index</name></member>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a99a46596d1e1754fe21d95fee60217ee" prot="public" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle_swarm</scope><name>printer</name></member>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a5a46c977c745297286f7c2345d3812b3" prot="private" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle_swarm</scope><name>rank</name></member>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a7ae8debfcf1b2032d0d490b482c63bea" prot="private" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle_swarm</scope><name>read_generation</name></member>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a5c2d328bbc9bb73f511426e0e73d3af6" prot="private" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle_swarm</scope><name>read_settings</name></member>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a1666abaca7c08bc88c6536268e889870" prot="public" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle_swarm</scope><name>resume</name></member>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1acc8c9ecae9ebeb1cee82737b1752008a" prot="private" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle_swarm</scope><name>rng</name></member>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a685ca1bcb13abfc67e70127f3dd36a2d" prot="public" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle_swarm</scope><name>run</name></member>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a8b54a63b559ea1edf3de245bdf22ed90" prot="private" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle_swarm</scope><name>save_generation</name></member>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1ae07b325fab1014800ebc184d75ffbeb2" prot="public" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle_swarm</scope><name>save_particles_natively</name></member>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1aa0d7cb64477ee77364bedb675975255b" prot="private" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle_swarm</scope><name>save_settings</name></member>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a2ec65ab69ab0129e7862733482d4d984" prot="public" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle_swarm</scope><name>savecount</name></member>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1acf47987d841d4c7c5029844615928ef4" prot="public" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle_swarm</scope><name>seed</name></member>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1ad90475e77b6373ded32900cd85f95078" prot="private" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle_swarm</scope><name>sfim</name></member>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a398ca76c09890733305d2f30a0625923" prot="private" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle_swarm</scope><name>update_best_fits</name></member>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a05ed7dddd24e0f1e18cc344f5ef358e8" prot="private" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle_swarm</scope><name>update_particle</name></member>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1ac834fe49e4cd8495b3327dbf68488fb1" prot="public" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle_swarm</scope><name>upperbounds</name></member>
+      <member refid="classGambit_1_1jswarm__1__0__0_1_1particle__swarm_1a1b273a298d805f9b4de548d400628963" prot="public" virt="non-virtual"><scope>Gambit::jswarm_1_0_0::particle_swarm</scope><name>verbose</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

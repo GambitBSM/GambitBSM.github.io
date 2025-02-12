@@ -1,11 +1,11 @@
 ---
-title: "file Pythia_8_212/abstract_ResonanceWidths.h"
+title: "file Pythia_8_312/abstract_ResonanceWidths.h"
 
 description: "[No description available]"
 
 ---
 
-# file Pythia_8_212/abstract_ResonanceWidths.h
+# file Pythia_8_312/abstract_ResonanceWidths.h
 
 [No description available]
 
@@ -34,8 +34,8 @@ namespace CAT_3(
 ## Source code
 
 ```
-#ifndef __abstract_ResonanceWidths_Pythia_8_212_h__
-#define __abstract_ResonanceWidths_Pythia_8_212_h__
+#ifndef __abstract_ResonanceWidths_Pythia_8_312_h__
+#define __abstract_ResonanceWidths_Pythia_8_312_h__
 
 #include <cstddef>
 #include <iostream>
@@ -45,8 +45,9 @@ namespace CAT_3(
 #include "wrapper_Info_decl.h"
 #include "wrapper_Settings_decl.h"
 #include "wrapper_ParticleData_decl.h"
-#include "wrapper_Couplings_decl.h"
-#include "wrapper_ParticleDataEntry_decl.h"
+#include "wrapper_Logger_decl.h"
+#include "wrapper_CoupSM_decl.h"
+#include "wrapper_CoupSUSY_decl.h"
 
 #include "identification.hpp"
 
@@ -64,7 +65,7 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
     
                 virtual void initBasic__BOSS(int) =0;
     
-                virtual bool init__BOSS(Pythia8::Abstract_Info*, Pythia8::Abstract_Settings*, Pythia8::Abstract_ParticleData*, Pythia8::Abstract_Couplings*) =0;
+                virtual bool init__BOSS(Pythia8::Abstract_Info*) =0;
     
                 virtual int id() const =0;
     
@@ -145,10 +146,10 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 #include "gambit/Backends/backend_undefs.hpp"
 
 
-#endif /* __abstract_ResonanceWidths_Pythia_8_212_h__ */
+#endif /* __abstract_ResonanceWidths_Pythia_8_312_h__ */
 ```
 
 
 -------------------------------
 
-Updated on 2024-07-18 at 13:53:35 +0000
+Updated on 2025-02-12 at 15:36:43 +0000

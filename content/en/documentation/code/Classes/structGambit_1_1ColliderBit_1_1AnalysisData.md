@@ -46,6 +46,7 @@ description: "[No description available]"
 | std::map< std::string, int > | **[srdata_identifiers](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#variable-srdata-identifiers)** <br>Map of names and indices of all entries in srdata, for easy lookup.  |
 | Eigen::MatrixXd | **[srcov](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#variable-srcov)** <br>Optional covariance matrix between SRs (0x0 null matrix = no correlation info)  |
 | std::string | **[bkgjson_path](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#variable-bkgjson-path)** <br>FullLikes bkg json file path realtive to the GAMBIT directory.  |
+| double | **[luminosity](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#variable-luminosity)** <br>Store the analysis luminosity.  |
 
 ## Detailed Description
 
@@ -274,6 +275,14 @@ std::string bkgjson_path;
 
 FullLikes bkg json file path realtive to the GAMBIT directory. 
 
+### variable luminosity
+
+```
+double luminosity;
+```
+
+Store the analysis luminosity. 
+
 -------------------------------
 
-Updated on 2024-07-18 at 13:53:31 +0000
+Updated on 2025-02-12 at 15:36:39 +0000

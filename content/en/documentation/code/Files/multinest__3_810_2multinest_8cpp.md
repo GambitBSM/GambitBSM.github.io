@@ -115,7 +115,7 @@ The main routine to run for the MultiNest scanner.
 #include <iomanip>  // For debugging only
 
 #include "gambit/ScannerBit/scanner_plugin.hpp"
-#include "gambit/ScannerBit/scanners/multinest/multinest.hpp"
+#include "gambit/ScannerBit/scanners/multinest_3.10/multinest.hpp"
 #include "gambit/Utils/yaml_options.hpp"
 #include "gambit/Utils/util_functions.hpp"
 
@@ -459,4 +459,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2024-07-18 at 13:53:33 +0000
+Updated on 2025-02-12 at 15:36:40 +0000

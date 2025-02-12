@@ -7,23 +7,29 @@
     <includes refid="plugin__macros_8hpp" local="yes">gambit/ScannerBit/plugin_macros.hpp</includes>
     <includes refid="factory__defs_8hpp" local="yes">gambit/ScannerBit/factory_defs.hpp</includes>
     <includes refid="plugin__loader_8hpp" local="yes">gambit/ScannerBit/plugin_loader.hpp</includes>
-    <includedby refid="1_80_82_2diver_8hpp" local="yes">diver.hpp</includedby>
-    <includedby refid="1_80_84_2diver_8hpp" local="yes">diver.hpp</includedby>
-    <includedby refid="1_80_80_2diver_8hpp" local="yes">diver.hpp</includedby>
+    <includedby refid="ais_8cpp" local="yes">ais.cpp</includedby>
+    <includedby refid="ais_8hpp" local="yes">ais.hpp</includedby>
+    <includedby refid="diver__1_80_80_2diver_8hpp" local="yes">diver.hpp</includedby>
+    <includedby refid="diver__1_80_85_2diver_8hpp" local="yes">diver.hpp</includedby>
+    <includedby refid="diver__1_80_84_2diver_8hpp" local="yes">diver.hpp</includedby>
+    <includedby refid="diver__1_80_82_2diver_8hpp" local="yes">diver.hpp</includedby>
     <includedby refid="great_8hpp" local="yes">great.hpp</includedby>
     <includedby refid="grid_8cpp" local="yes">grid.cpp</includedby>
+    <includedby refid="jswarm_8hpp" local="yes">jswarm.hpp</includedby>
     <includedby refid="minuit2_8cpp" local="yes">minuit2.cpp</includedby>
     <includedby refid="minuit2_8hpp" local="yes">minuit2.hpp</includedby>
-    <includedby refid="multinest__3_810_2multinest_8cpp" local="yes">multinest.cpp</includedby>
     <includedby refid="multinest__3_812_2multinest_8cpp" local="yes">multinest.cpp</includedby>
+    <includedby refid="multinest__3_810_2multinest_8cpp" local="yes">multinest.cpp</includedby>
     <includedby refid="multinest__3_811_2multinest_8cpp" local="yes">multinest.cpp</includedby>
-    <includedby refid="multinest_8hpp" local="yes">multinest.hpp</includedby>
-    <includedby refid="polychord__1_817_81_2polychord_8cpp" local="yes">polychord.cpp</includedby>
-    <includedby refid="polychord__1_818_82_2polychord_8cpp" local="yes">polychord.cpp</includedby>
+    <includedby refid="multinest__3_811_2multinest_8hpp" local="yes">multinest.hpp</includedby>
+    <includedby refid="multinest__3_810_2multinest_8hpp" local="yes">multinest.hpp</includedby>
+    <includedby refid="multinest_2multinest_8hpp" local="yes">multinest.hpp</includedby>
     <includedby refid="polychord__1_820_81_2polychord_8cpp" local="yes">polychord.cpp</includedby>
+    <includedby refid="polychord__1_818_82_2polychord_8cpp" local="yes">polychord.cpp</includedby>
+    <includedby refid="polychord__1_817_81_2polychord_8cpp" local="yes">polychord.cpp</includedby>
+    <includedby refid="1_817_81_2polychord_8hpp" local="yes">polychord.hpp</includedby>
     <includedby refid="1_820_81_2polychord_8hpp" local="yes">polychord.hpp</includedby>
     <includedby refid="1_818_82_2polychord_8hpp" local="yes">polychord.hpp</includedby>
-    <includedby refid="1_817_81_2polychord_8hpp" local="yes">polychord.hpp</includedby>
     <includedby refid="postprocessor__1_80_80_2postprocessor_8cpp" local="yes">postprocessor.cpp</includedby>
     <includedby refid="postprocessor__2_80_80_2postprocessor_8cpp" local="yes">postprocessor.cpp</includedby>
     <includedby refid="postprocessor__2_80_80_2postprocessor_8hpp" local="yes">postprocessor.hpp</includedby>
@@ -715,6 +721,8 @@
         <link refid="scanner__plugin_8hpp"/>
         <childnode refid="2" relation="include">
         </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
         <childnode refid="4" relation="include">
         </childnode>
         <childnode refid="6" relation="include">
@@ -723,21 +731,11 @@
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
-        <childnode refid="11" relation="include">
-        </childnode>
         <childnode refid="12" relation="include">
-        </childnode>
-        <childnode refid="13" relation="include">
         </childnode>
         <childnode refid="14" relation="include">
         </childnode>
         <childnode refid="15" relation="include">
-        </childnode>
-        <childnode refid="16" relation="include">
-        </childnode>
-        <childnode refid="17" relation="include">
-        </childnode>
-        <childnode refid="18" relation="include">
         </childnode>
         <childnode refid="19" relation="include">
         </childnode>
@@ -753,7 +751,11 @@
         </childnode>
         <childnode refid="25" relation="include">
         </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
         <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
         </childnode>
         <childnode refid="29" relation="include">
         </childnode>
@@ -767,168 +769,234 @@
         </childnode>
         <childnode refid="34" relation="include">
         </childnode>
-      </node>
-      <node id="6">
-        <label>diver.hpp</label>
-        <link refid="1_80_80_2diver_8hpp"/>
-        <childnode refid="7" relation="include">
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
         </childnode>
       </node>
-      <node id="2">
-        <label>diver.hpp</label>
-        <link refid="1_80_82_2diver_8hpp"/>
-        <childnode refid="3" relation="include">
+      <node id="3">
+        <label>ais.hpp</label>
+        <link refid="ais_8hpp"/>
+        <childnode refid="2" relation="include">
         </childnode>
       </node>
       <node id="4">
         <label>diver.hpp</label>
-        <link refid="1_80_84_2diver_8hpp"/>
+        <link refid="diver__1_80_80_2diver_8hpp"/>
         <childnode refid="5" relation="include">
         </childnode>
       </node>
-      <node id="8">
-        <label>great.hpp</label>
-        <link refid="great_8hpp"/>
-        <childnode refid="9" relation="include">
-        </childnode>
-      </node>
-      <node id="12">
-        <label>minuit2.hpp</label>
-        <link refid="minuit2_8hpp"/>
+      <node id="10">
+        <label>diver.hpp</label>
+        <link refid="diver__1_80_82_2diver_8hpp"/>
         <childnode refid="11" relation="include">
         </childnode>
       </node>
-      <node id="16">
-        <label>multinest.hpp</label>
-        <link refid="multinest_8hpp"/>
+      <node id="8">
+        <label>diver.hpp</label>
+        <link refid="diver__1_80_84_2diver_8hpp"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+      </node>
+      <node id="6">
+        <label>diver.hpp</label>
+        <link refid="diver__1_80_85_2diver_8hpp"/>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>great.hpp</label>
+        <link refid="great_8hpp"/>
         <childnode refid="13" relation="include">
         </childnode>
-        <childnode refid="15" relation="include">
-        </childnode>
-        <childnode refid="14" relation="include">
-        </childnode>
       </node>
-      <node id="22">
-        <label>polychord.hpp</label>
-        <link refid="1_817_81_2polychord_8hpp"/>
+      <node id="15">
+        <label>jswarm.hpp</label>
+        <link refid="jswarm_8hpp"/>
+        <childnode refid="16" relation="include">
+        </childnode>
         <childnode refid="17" relation="include">
         </childnode>
-      </node>
-      <node id="21">
-        <label>polychord.hpp</label>
-        <link refid="1_818_82_2polychord_8hpp"/>
         <childnode refid="18" relation="include">
         </childnode>
       </node>
       <node id="20">
-        <label>polychord.hpp</label>
-        <link refid="1_820_81_2polychord_8hpp"/>
+        <label>minuit2.hpp</label>
+        <link refid="minuit2_8hpp"/>
         <childnode refid="19" relation="include">
         </childnode>
       </node>
-      <node id="27">
-        <label>postprocessor.hpp</label>
-        <link refid="postprocessor__1_80_80_2postprocessor_8hpp"/>
-        <childnode refid="23" relation="include">
-        </childnode>
-        <childnode refid="28" relation="include">
+      <node id="26">
+        <label>multinest.hpp</label>
+        <link refid="multinest_2multinest_8hpp"/>
+        <childnode refid="21" relation="include">
         </childnode>
       </node>
       <node id="25">
-        <label>postprocessor.hpp</label>
-        <link refid="postprocessor__2_80_80_2postprocessor_8hpp"/>
-        <childnode refid="24" relation="include">
-        </childnode>
-        <childnode refid="26" relation="include">
+        <label>multinest.hpp</label>
+        <link refid="multinest__3_810_2multinest_8hpp"/>
+        <childnode refid="22" relation="include">
         </childnode>
       </node>
-      <node id="34">
-        <label>twalk.hpp</label>
-        <link refid="twalk_8hpp"/>
+      <node id="24">
+        <label>multinest.hpp</label>
+        <link refid="multinest__3_811_2multinest_8hpp"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+      </node>
+      <node id="30">
+        <label>polychord.hpp</label>
+        <link refid="1_817_81_2polychord_8hpp"/>
+        <childnode refid="29" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>polychord.hpp</label>
+        <link refid="1_818_82_2polychord_8hpp"/>
+        <childnode refid="28" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>polychord.hpp</label>
+        <link refid="1_820_81_2polychord_8hpp"/>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="37">
+        <label>postprocessor.hpp</label>
+        <link refid="postprocessor__1_80_80_2postprocessor_8hpp"/>
         <childnode refid="33" relation="include">
         </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
       </node>
-      <node id="7">
-        <label>diver.cpp</label>
-        <link refid="diver__1_80_80_2diver_8cpp"/>
+      <node id="35">
+        <label>postprocessor.hpp</label>
+        <link refid="postprocessor__2_80_80_2postprocessor_8hpp"/>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
       </node>
-      <node id="3">
-        <label>diver.cpp</label>
-        <link refid="diver__1_80_82_2diver_8cpp"/>
+      <node id="44">
+        <label>twalk.hpp</label>
+        <link refid="twalk_8hpp"/>
+        <childnode refid="43" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>ais.cpp</label>
+        <link refid="ais_8cpp"/>
       </node>
       <node id="5">
         <label>diver.cpp</label>
-        <link refid="diver__1_80_84_2diver_8cpp"/>
+        <link refid="diver__1_80_80_2diver_8cpp"/>
+      </node>
+      <node id="11">
+        <label>diver.cpp</label>
+        <link refid="diver__1_80_82_2diver_8cpp"/>
       </node>
       <node id="9">
+        <label>diver.cpp</label>
+        <link refid="diver__1_80_84_2diver_8cpp"/>
+      </node>
+      <node id="7">
+        <label>diver.cpp</label>
+        <link refid="diver__1_80_85_2diver_8cpp"/>
+      </node>
+      <node id="13">
         <label>great.cpp</label>
         <link refid="great_8cpp"/>
       </node>
-      <node id="11">
+      <node id="16">
+        <label>jswarm.cpp</label>
+        <link refid="jswarm_8cpp"/>
+      </node>
+      <node id="17">
+        <label>particle.cpp</label>
+        <link refid="particle_8cpp"/>
+      </node>
+      <node id="18">
+        <label>particle_swarm.cpp</label>
+        <link refid="particle__swarm_8cpp"/>
+      </node>
+      <node id="19">
         <label>minuit2.cpp</label>
         <link refid="minuit2_8cpp"/>
       </node>
-      <node id="13">
+      <node id="22">
         <label>multinest.cpp</label>
         <link refid="multinest__3_810_2multinest_8cpp"/>
       </node>
-      <node id="15">
+      <node id="23">
         <label>multinest.cpp</label>
         <link refid="multinest__3_811_2multinest_8cpp"/>
       </node>
-      <node id="14">
+      <node id="21">
         <label>multinest.cpp</label>
         <link refid="multinest__3_812_2multinest_8cpp"/>
       </node>
-      <node id="17">
+      <node id="29">
         <label>polychord.cpp</label>
         <link refid="polychord__1_817_81_2polychord_8cpp"/>
       </node>
-      <node id="18">
+      <node id="28">
         <label>polychord.cpp</label>
         <link refid="polychord__1_818_82_2polychord_8cpp"/>
       </node>
-      <node id="19">
+      <node id="27">
         <label>polychord.cpp</label>
         <link refid="polychord__1_820_81_2polychord_8cpp"/>
       </node>
-      <node id="23">
+      <node id="33">
         <label>postprocessor.cpp</label>
         <link refid="postprocessor__1_80_80_2postprocessor_8cpp"/>
       </node>
-      <node id="28">
+      <node id="38">
         <label>postprocessor_object.cpp</label>
         <link refid="postprocessor__1_80_80_2postprocessor__object_8cpp"/>
       </node>
-      <node id="24">
+      <node id="34">
         <label>postprocessor.cpp</label>
         <link refid="postprocessor__2_80_80_2postprocessor_8cpp"/>
       </node>
-      <node id="26">
+      <node id="36">
         <label>postprocessor_object.cpp</label>
         <link refid="postprocessor__2_80_80_2postprocessor__object_8cpp"/>
       </node>
-      <node id="10">
+      <node id="14">
         <label>grid.cpp</label>
         <link refid="grid_8cpp"/>
       </node>
-      <node id="29">
+      <node id="39">
         <label>random.cpp</label>
         <link refid="random_8cpp"/>
       </node>
-      <node id="30">
+      <node id="40">
         <label>raster.cpp</label>
         <link refid="raster_8cpp"/>
       </node>
-      <node id="31">
+      <node id="41">
         <label>square_grid.cpp</label>
         <link refid="square__grid_8cpp"/>
       </node>
-      <node id="32">
+      <node id="42">
         <label>toy_mcmc.cpp</label>
         <link refid="toy__mcmc_8cpp"/>
       </node>
-      <node id="33">
+      <node id="43">
         <label>twalk.cpp</label>
         <link refid="twalk_8cpp"/>
       </node>
@@ -962,6 +1030,7 @@ void *get_purpose(const std::string &amp;purpose)                               
     static_cast &lt;Function_Base&lt;void(void)&gt;*&gt;(ptr)-&gt;setPurpose(purpose);                     \
     static_cast &lt;Function_Base&lt;void(void)&gt;*&gt;(ptr)-&gt;setPrinter(get_printer().get_stream());  \
     static_cast &lt;Function_Base&lt;void(void)&gt;*&gt;(ptr)-&gt;setPrior(&amp;get_prior());                  \
+    static_cast &lt;Function_Base&lt;void(void)&gt;*&gt;(ptr)-&gt;init();                                  \
     assign_aux_numbers(purpose, &quot;pointID&quot;, &quot;MPIrank&quot;);                                      \
                                                                                             \
     return ptr;                                                                             \
@@ -987,7 +1056,7 @@ inline unsigned int &amp;get_dimension() {return get_input_value&lt;unsigned int
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ScannerBit/include/gambit/ScannerBit/scanner_plugin.hpp" line="61" column="9" bodyfile="ScannerBit/include/gambit/ScannerBit/scanner_plugin.hpp" bodystart="61" bodyend="-1"/>
+        <location file="ScannerBit/include/gambit/ScannerBit/scanner_plugin.hpp" line="62" column="9" bodyfile="ScannerBit/include/gambit/ScannerBit/scanner_plugin.hpp" bodystart="62" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -1067,17 +1136,18 @@ inline unsigned int &amp;get_dimension() {return get_input_value&lt;unsigned int
 <codeline lineno="51"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>static_cast<sp/>&lt;Function_Base&lt;void(void)&gt;*&gt;(ptr)-&gt;setPurpose(purpose);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
 <codeline lineno="52"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>static_cast<sp/>&lt;Function_Base&lt;void(void)&gt;*&gt;(ptr)-&gt;setPrinter(get_printer().get_stream());<sp/><sp/>\</highlight></codeline>
 <codeline lineno="53"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>static_cast<sp/>&lt;Function_Base&lt;void(void)&gt;*&gt;(ptr)-&gt;setPrior(&amp;get_prior());<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
-<codeline lineno="54"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>assign_aux_numbers(purpose,<sp/>&quot;pointID&quot;</highlight><highlight class="normal">,<sp/>&quot;MPIrank&quot;);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
-<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
-<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/>return<sp/>ptr;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
-<codeline lineno="57"><highlight class="normal">}<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
-<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
-<codeline lineno="59"><highlight class="normal">inline<sp/>unsigned<sp/>int<sp/>&amp;get_dimension()<sp/>{return<sp/>get_input_value&lt;unsigned<sp/>int&gt;(0);}<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
-<codeline lineno="60"><highlight class="normal"></highlight></codeline>
-<codeline lineno="61"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SCANNER_PLUGIN(plug_name,<sp/>...)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
-<codeline lineno="62"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>GAMBIT_PLUGIN_INITIALIZE(__SCANNER_SETUP__,<sp/>plug_name,<sp/>scanner,<sp/>__VA_ARGS__)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
-<codeline lineno="63"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="64"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+<codeline lineno="54"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>static_cast<sp/>&lt;Function_Base&lt;void(void)&gt;*&gt;(ptr)-&gt;init();<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="55"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>assign_aux_numbers(purpose,<sp/>&quot;pointID&quot;</highlight><highlight class="normal">,<sp/>&quot;MPIrank&quot;);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/>return<sp/>ptr;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="58"><highlight class="normal">}<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="60"><highlight class="normal">inline<sp/>unsigned<sp/>int<sp/>&amp;get_dimension()<sp/>{return<sp/>get_input_value&lt;unsigned<sp/>int&gt;(0);}<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>SCANNER_PLUGIN(plug_name,<sp/>...)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="63"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>GAMBIT_PLUGIN_INITIALIZE(__SCANNER_SETUP__,<sp/>plug_name,<sp/>scanner,<sp/>__VA_ARGS__)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
+<codeline lineno="64"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="65"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
     </programlisting>
     <location file="ScannerBit/include/gambit/ScannerBit/scanner_plugin.hpp"/>
   </compounddef>

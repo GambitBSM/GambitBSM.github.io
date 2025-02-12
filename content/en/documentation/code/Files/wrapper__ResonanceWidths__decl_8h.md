@@ -1,11 +1,11 @@
 ---
-title: "file Pythia_8_212/wrapper_ResonanceWidths_decl.h"
+title: "file Pythia_8_312/wrapper_ResonanceWidths_decl.h"
 
 description: "[No description available]"
 
 ---
 
-# file Pythia_8_212/wrapper_ResonanceWidths_decl.h
+# file Pythia_8_312/wrapper_ResonanceWidths_decl.h
 
 [No description available]
 
@@ -34,8 +34,8 @@ namespace CAT_3(
 ## Source code
 
 ```
-#ifndef __wrapper_ResonanceWidths_decl_Pythia_8_212_h__
-#define __wrapper_ResonanceWidths_decl_Pythia_8_212_h__
+#ifndef __wrapper_ResonanceWidths_decl_Pythia_8_312_h__
+#define __wrapper_ResonanceWidths_decl_Pythia_8_312_h__
 
 #include <cstddef>
 #include "forward_decls_wrapper_classes.h"
@@ -43,7 +43,8 @@ namespace CAT_3(
 #include "abstract_ResonanceWidths.h"
 #include "wrapper_Info_decl.h"
 #include "wrapper_Settings_decl.h"
-#include "wrapper_Couplings_decl.h"
+#include "wrapper_Logger_decl.h"
+#include "wrapper_CoupSM_decl.h"
 
 #include "identification.hpp"
 
@@ -68,7 +69,7 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         
                 void initBasic(int idResIn);
         
-                bool init(Pythia8::Info* infoPtrIn, Pythia8::Settings* settingsPtrIn, Pythia8::ParticleData* particleDataPtrIn, Pythia8::Couplings* couplingsPtrIn);
+                bool init(Pythia8::Info* infoPtrIn);
         
                 int id() const;
         
@@ -123,10 +124,10 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 #include "gambit/Backends/backend_undefs.hpp"
 
-#endif /* __wrapper_ResonanceWidths_decl_Pythia_8_212_h__ */
+#endif /* __wrapper_ResonanceWidths_decl_Pythia_8_312_h__ */
 ```
 
 
 -------------------------------
 
-Updated on 2024-07-18 at 13:53:35 +0000
+Updated on 2025-02-12 at 15:36:43 +0000

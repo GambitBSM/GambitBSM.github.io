@@ -73,4 +73,4 @@ Constructs a [like_hypercube](/documentation/code/classes/structgambit_1_1scanne
 
 -------------------------------
 
-Updated on 2024-07-18 at 13:53:32 +0000
+Updated on 2025-02-12 at 15:36:39 +0000

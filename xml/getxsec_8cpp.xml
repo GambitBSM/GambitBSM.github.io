@@ -3160,9 +3160,24 @@
 <codeline lineno="1741"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="1742"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="1743"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1744"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1745"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
-<codeline lineno="1746"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="1744"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="1745"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Helper<sp/>function<sp/>for<sp/>cross-section<sp/>maps</highlight></codeline>
+<codeline lineno="1746"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="getxsec_8cpp_1a463114d62acd12954935612bfaa65a47" kindref="member">InitialTotalCrossSection_Pythia</ref>(map_str_xsec_container&amp;<sp/>result)</highlight></codeline>
+<codeline lineno="1747"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1748"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">Pipes::InitialTotalCrossSection_Pythia;</highlight></codeline>
+<codeline lineno="1749"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result<sp/>=<sp/>Dep::PerformInitialCrossSection-&gt;first;</highlight></codeline>
+<codeline lineno="1750"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1751"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="1752"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Helper<sp/>function<sp/>for<sp/>cross-section<sp/>maps</highlight></codeline>
+<codeline lineno="1753"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="getxsec_8cpp_1a9f8cb70f95ab415ff0dd3f3757fc2a50" kindref="member">InitialProcessCrossSections_Pythia</ref>(map_str_map_int_process_xsec&amp;<sp/>result)</highlight></codeline>
+<codeline lineno="1754"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="1755"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">Pipes::InitialProcessCrossSections_Pythia;</highlight></codeline>
+<codeline lineno="1756"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result<sp/>=<sp/>Dep::PerformInitialCrossSection-&gt;second;</highlight></codeline>
+<codeline lineno="1757"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1758"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1759"><highlight class="normal"></highlight></codeline>
+<codeline lineno="1760"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="1761"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="ColliderBit/src/getxsec.cpp"/>
   </compounddef>

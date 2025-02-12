@@ -71,6 +71,7 @@
     <includedby refid="Analysis__Minimum_8cpp" local="yes">Analysis_Minimum.cpp</includedby>
     <includedby refid="ColliderBit__Bfactories_8cpp" local="yes">ColliderBit_Bfactories.cpp</includedby>
     <includedby refid="ColliderBit__InterpolatedYields_8cpp" local="yes">ColliderBit_InterpolatedYields.cpp</includedby>
+    <includedby refid="ColliderBit__eventloop_8cpp" local="yes">ColliderBit_eventloop.cpp</includedby>
     <includedby refid="MC__convergence_8cpp" local="yes">MC_convergence.cpp</includedby>
     <includedby refid="runAnalyses_8cpp" local="yes">runAnalyses.cpp</includedby>
     <incdepgraph>
@@ -229,6 +230,8 @@
         </childnode>
         <childnode refid="7" relation="include">
         </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
       </node>
       <node id="4">
         <label>ColliderBit_Bfactories.cpp</label>
@@ -239,6 +242,10 @@
         <link refid="ColliderBit__InterpolatedYields_8cpp"/>
       </node>
       <node id="6">
+        <label>ColliderBit_eventloop.cpp</label>
+        <link refid="ColliderBit__eventloop_8cpp"/>
+      </node>
+      <node id="7">
         <label>MC_convergence.cpp</label>
         <link refid="MC__convergence_8cpp"/>
       </node>
@@ -250,7 +257,7 @@
         <label>AnalysisContainer.cpp</label>
         <link refid="AnalysisContainer_8cpp"/>
       </node>
-      <node id="7">
+      <node id="8">
         <label>runAnalyses.cpp</label>
         <link refid="runAnalyses_8cpp"/>
       </node>

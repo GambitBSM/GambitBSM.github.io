@@ -86,6 +86,8 @@ Authors (add name and date if you modify):
 
 #include "gambit/ScannerBit/printable_types.hpp"
 
+#ifndef SCANNER_STANDALONE
+
 #define ASCII_TYPES                         \
   SCANNER_PRINTABLE_TYPES                   \
   (std::string)                             \
@@ -95,10 +97,21 @@ Authors (add name and date if you modify):
   (map_const_str_map_const_str_dbl)         \
   (flav_prediction)                         \
 
-
 #define ASCII_BACKEND_TYPES                 \
   (DM_nucleon_couplings)                    \
   (BBN_container)                           \
+  
+#else
+
+#define ASCII_TYPES                         \
+  SCANNER_PRINTABLE_TYPES                   \
+  (std::string)                             \
+  (triplet<double>)                         \
+  (map_intpair_dbl)                         \
+  (map_const_str_dbl)                       \
+  (map_const_str_map_const_str_dbl)         \
+  
+#endif
 
 #endif
 ```
@@ -106,4 +119,4 @@ Authors (add name and date if you modify):
 
 -------------------------------
 
-Updated on 2024-07-18 at 13:53:33 +0000
+Updated on 2025-02-12 at 15:36:41 +0000

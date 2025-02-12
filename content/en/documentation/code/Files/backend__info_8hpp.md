@@ -115,7 +115,6 @@ Authors (add name and date if you modify):
   #include "gambit/Utils/end_ignore_warnings.hpp"
 #endif
 
-
 namespace Gambit
 {
 
@@ -283,4 +282,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2024-07-18 at 13:53:35 +0000
+Updated on 2025-02-12 at 15:36:43 +0000

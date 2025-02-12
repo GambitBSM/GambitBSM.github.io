@@ -106,6 +106,19 @@ namespace Gambit
 
       /// Convergence options for each collider
       std::map<str,convergence_settings> convergence_options;
+      
+      /// Likelihood estimator
+      std::string estimator;
+
+      /// Ratio of nMC to nExpected (see UMVUE estimator)
+      std::map<str, double> ratio_MC_expected;
+
+      /// Number of mean MC events to simulate for a given parameter point for each collider
+      /// This will not necessarily be the same as the number simulated
+      int mean_nEvents;
+
+      /// Number of MC events to simulate for a given parameter point for each collider
+      std::map<str, int> desired_nEvents;
 
       /// Analysis list for each collider
       std::map<str,std::vector<str>> analyses;
@@ -193,4 +206,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2024-07-18 at 13:53:34 +0000
+Updated on 2025-02-12 at 15:36:42 +0000

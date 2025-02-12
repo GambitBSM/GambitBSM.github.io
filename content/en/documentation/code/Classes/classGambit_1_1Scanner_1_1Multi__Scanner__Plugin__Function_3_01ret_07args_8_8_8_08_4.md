@@ -29,6 +29,7 @@ Inherits from [Gambit::Scanner::Function_Base< ret(args...)>](/documentation/cod
 |                | Name           |
 | -------------- | -------------- |
 | | **[Function_Base](/documentation/code/classes/classgambit_1_1scanner_1_1function__base_3_01ret_07args_8_8_8_08_4/#function-function-base)**(double offset =0.) |
+| void | **[init](/documentation/code/classes/classgambit_1_1scanner_1_1function__base_3_01ret_07args_8_8_8_08_4/#function-init)**() |
 | virtual double | **[purposeModifier](/documentation/code/classes/classgambit_1_1scanner_1_1function__base_3_01ret_07args_8_8_8_08_4/#function-purposemodifier)**(double ret_val) |
 | virtual | **[~Function_Base](/documentation/code/classes/classgambit_1_1scanner_1_1function__base_3_01ret_07args_8_8_8_08_4/#function-function-base)**() |
 | ret | **[operator()](/documentation/code/classes/classgambit_1_1scanner_1_1function__base_3_01ret_07args_8_8_8_08_4/#function-operator)**(const args &... params) |
@@ -99,4 +100,4 @@ inline ret main(
 
 -------------------------------
 
-Updated on 2024-07-18 at 13:53:32 +0000
+Updated on 2025-02-12 at 15:36:39 +0000

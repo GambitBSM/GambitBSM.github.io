@@ -175,7 +175,7 @@ Member [Gambit::ColliderBit::Cutflows::normalize](/documentation/code/classes/st
 
 * Provide a version that takes a vector of norms?  
 
-Member [Gambit::ColliderBit::fill_analysis_loglikes](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-fill-analysis-loglikes)  (const [AnalysisData](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/) &, [AnalysisLogLikes](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisloglikes/) &, bool, bool, bool, bool, bool(*FullLikes_FileExists)(const str &), int(*FullLikes_ReadIn)(const str &, const str &), double(*FullLikes_Evaluate)(std::map< str, double > &, const str &), const std::string)
+Member [Gambit::ColliderBit::fill_analysis_loglikes](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-fill-analysis-loglikes)  (const [AnalysisData](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/) &, [AnalysisLogLikes](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisloglikes/) &, bool, double(*)(const int &, const double &, const double &, const double &), bool, bool, const [Options](/documentation/code/classes/classgambit_1_1options/) &, bool, bool(*FullLikes_FileExists)(const str &), int(*FullLikes_ReadIn)(const str &, const str &), double(*FullLikes_Evaluate)(std::map< str, double > &, const str &), double, int, const std::string)
 
 * Only compute this once per run 
 Only compute this once per run 
@@ -217,7 +217,7 @@ Member [Gambit::ColliderBit::has_tag](/documentation/code/namespaces/namespacega
 
 * Also need 1D? Sampling in what variable?  
 
-Member [Gambit::ColliderBit::marg_loglike_cov](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-marg-loglike-cov)  (const Eigen::ArrayXd &n_preds, const Eigen::ArrayXd &n_obss, const Eigen::ArrayXd &sqrtevals, const Eigen::MatrixXd &evecs)
+Member [Gambit::ColliderBit::marg_loglike_cov](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-marg-loglike-cov)  (const [Options](/documentation/code/classes/classgambit_1_1options/) &runOptions, const Eigen::ArrayXd &n_preds, const Eigen::ArrayXd &n_bkg, const Eigen::ArrayXd &n_preds_unscaled, const Eigen::ArrayXd &n_obss, const Eigen::ArrayXd &sqrtevals, const Eigen::ArrayXd &sqrtevals_bkg, const Eigen::MatrixXd &evecs, const Eigen::MatrixXd &evecs_bkg, double(*marginaliser)(const int &, const double &, const double &, const double &), int n_mc, double n_mc_expected)
 
 * Should also implement a check of relative difference  
 
@@ -225,7 +225,7 @@ Member [Gambit::ColliderBit::mkAnalysis](/documentation/code/namespaces/namespac
 
 * Move to a separate file  
 
-Member [Gambit::ColliderBit::profile_loglike_cov](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-profile-loglike-cov)  (const Eigen::ArrayXd &n_preds, const Eigen::ArrayXd &n_obss, const Eigen::ArrayXd &sqrtevals, const Eigen::MatrixXd &evecs)
+Member [Gambit::ColliderBit::profile_loglike_cov](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-profile-loglike-cov)  (const [Options](/documentation/code/classes/classgambit_1_1options/) &runOptions, const Eigen::ArrayXd &n_preds, const Eigen::ArrayXd &, const Eigen::ArrayXd &, const Eigen::ArrayXd &n_obss, const Eigen::ArrayXd &sqrtevals, const Eigen::ArrayXd &, const Eigen::MatrixXd &evecs, const Eigen::MatrixXd &, double(*)(const int &, const double &, const double &, const double &), int, double)
 
 * Pass in the cov, and compute the fixed evals, evecs, and corr matrix as fixed params in here? Via a helper function to reduce duplication  
 
@@ -239,4 +239,4 @@ Member [Gambit::ColliderBit::SignalRegionData::check](/documentation/code/classe
 
 -------------------------------
 
-Updated on 2024-07-18 at 13:53:36 +0000
+Updated on 2025-02-12 at 15:36:44 +0000
