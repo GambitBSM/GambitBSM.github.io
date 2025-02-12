@@ -1,11 +1,11 @@
 ---
-title: "file Pythia_8_312/wrapper_Event_def.h"
+title: "file Pythia_8_212/wrapper_Event_def.h"
 
 description: "[No description available]"
 
 ---
 
-# file Pythia_8_312/wrapper_Event_def.h
+# file Pythia_8_212/wrapper_Event_def.h
 
 [No description available]
 
@@ -34,8 +34,8 @@ namespace CAT_3(
 ## Source code
 
 ```
-#ifndef __wrapper_Event_def_Pythia_8_312_h__
-#define __wrapper_Event_def_Pythia_8_312_h__
+#ifndef __wrapper_Event_def_Pythia_8_212_h__
+#define __wrapper_Event_def_Pythia_8_212_h__
 
 #include <string>
 #include <ostream>
@@ -78,11 +78,6 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             get_BEptr()->clear();
         }
         
-        inline void Event::free()
-        {
-            get_BEptr()->free();
-        }
-        
         inline void Event::reset()
         {
             get_BEptr()->reset();
@@ -111,21 +106,6 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         inline Pythia8::Particle& Event::back()
         {
             return get_BEptr()->back__BOSS().get_init_wref();
-        }
-        
-        inline const Pythia8::Particle& Event::front() const
-        {
-            return const_cast<Pythia8::Abstract_Particle&>(const_cast<const Abstract_Event*>(get_BEptr())->front__BOSS()).get_init_wref();
-        }
-        
-        inline const Pythia8::Particle& Event::at(int i) const
-        {
-            return const_cast<Pythia8::Abstract_Particle&>(const_cast<const Abstract_Event*>(get_BEptr())->at__BOSS(i)).get_init_wref();
-        }
-        
-        inline const Pythia8::Particle& Event::back() const
-        {
-            return const_cast<Pythia8::Abstract_Particle&>(const_cast<const Abstract_Event*>(get_BEptr())->back__BOSS()).get_init_wref();
         }
         
         inline int Event::size() const
@@ -238,14 +218,29 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             return get_BEptr()->copy__BOSS(iCopy);
         }
         
-        inline void Event::list(bool showScaleAndVertex, bool showMothersAndDaughters, int precision, std::ostream& os) const
+        inline void Event::list(int precision) const
         {
-            get_BEptr()->list(showScaleAndVertex, showMothersAndDaughters, precision, os);
+            get_BEptr()->list(precision);
+        }
+        
+        inline void Event::list() const
+        {
+            get_BEptr()->list__BOSS();
+        }
+        
+        inline void Event::list(std::ostream& os, int precision) const
+        {
+            get_BEptr()->list(os, precision);
+        }
+        
+        inline void Event::list(std::ostream& os) const
+        {
+            get_BEptr()->list__BOSS(os);
         }
         
         inline void Event::list(bool showScaleAndVertex, bool showMothersAndDaughters, int precision) const
         {
-            get_BEptr()->list__BOSS(showScaleAndVertex, showMothersAndDaughters, precision);
+            get_BEptr()->list(showScaleAndVertex, showMothersAndDaughters, precision);
         }
         
         inline void Event::list(bool showScaleAndVertex, bool showMothersAndDaughters) const
@@ -258,9 +253,14 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             get_BEptr()->list__BOSS(showScaleAndVertex);
         }
         
-        inline void Event::list() const
+        inline void Event::list(bool showScaleAndVertex, bool showMothersAndDaughters, std::ostream& os, int precision) const
         {
-            get_BEptr()->list__BOSS();
+            get_BEptr()->list(showScaleAndVertex, showMothersAndDaughters, os, precision);
+        }
+        
+        inline void Event::list(bool showScaleAndVertex, bool showMothersAndDaughters, std::ostream& os) const
+        {
+            get_BEptr()->list__BOSS(showScaleAndVertex, showMothersAndDaughters, os);
         }
         
         inline void Event::popBack(int nRemove)
@@ -273,14 +273,9 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             get_BEptr()->popBack__BOSS();
         }
         
-        inline void Event::remove(int iFirst, int iLast, bool shiftHistory)
-        {
-            get_BEptr()->remove(iFirst, iLast, shiftHistory);
-        }
-        
         inline void Event::remove(int iFirst, int iLast)
         {
-            get_BEptr()->remove__BOSS(iFirst, iLast);
+            get_BEptr()->remove(iFirst, iLast);
         }
         
         inline void Event::restorePtrs()
@@ -346,41 +341,6 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         inline ::std::vector<int> Event::daughterList(int i) const
         {
             return get_BEptr()->daughterList(i);
-        }
-        
-        inline int Event::nFinal(bool chargedOnly) const
-        {
-            return get_BEptr()->nFinal(chargedOnly);
-        }
-        
-        inline int Event::nFinal() const
-        {
-            return get_BEptr()->nFinal__BOSS();
-        }
-        
-        inline double Event::dyAbs(int i1, int i2) const
-        {
-            return get_BEptr()->dyAbs(i1, i2);
-        }
-        
-        inline double Event::detaAbs(int i1, int i2) const
-        {
-            return get_BEptr()->detaAbs(i1, i2);
-        }
-        
-        inline double Event::dphiAbs(int i1, int i2) const
-        {
-            return get_BEptr()->dphiAbs(i1, i2);
-        }
-        
-        inline double Event::RRapPhi(int i1, int i2) const
-        {
-            return get_BEptr()->RRapPhi(i1, i2);
-        }
-        
-        inline double Event::REtaPhi(int i1, int i2) const
-        {
-            return get_BEptr()->REtaPhi(i1, i2);
         }
         
         inline void Event::rot(double theta, double phi)
@@ -478,44 +438,19 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             get_BEptr()->restoreJunctionSize();
         }
         
+        inline void Event::listJunctions(std::ostream& os) const
+        {
+            get_BEptr()->listJunctions(os);
+        }
+        
         inline void Event::listJunctions() const
         {
-            get_BEptr()->listJunctions();
-        }
-        
-        inline bool Event::hasHVcols() const
-        {
-            return get_BEptr()->hasHVcols();
-        }
-        
-        inline void Event::listHVcols() const
-        {
-            get_BEptr()->listHVcols();
-        }
-        
-        inline int Event::maxHVcols() const
-        {
-            return get_BEptr()->maxHVcols();
-        }
-        
-        inline void Event::saveHVcolsSize()
-        {
-            get_BEptr()->saveHVcolsSize();
-        }
-        
-        inline void Event::restoreHVcolsSize()
-        {
-            get_BEptr()->restoreHVcolsSize();
+            get_BEptr()->listJunctions__BOSS();
         }
         
         inline void Event::savePartonLevelSize()
         {
             get_BEptr()->savePartonLevelSize();
-        }
-        
-        inline void Event::clearStringBreaks()
-        {
-            get_BEptr()->clearStringBreaks();
         }
         
         inline Pythia8::Event& Event::operator+=(const Pythia8::Event& addEvent)
@@ -593,10 +528,10 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 #include "gambit/Backends/backend_undefs.hpp"
 
-#endif /* __wrapper_Event_def_Pythia_8_312_h__ */
+#endif /* __wrapper_Event_def_Pythia_8_212_h__ */
 ```
 
 
 -------------------------------
 
-Updated on 2025-02-12 at 15:36:43 +0000
+Updated on 2025-02-12 at 16:10:36 +0000

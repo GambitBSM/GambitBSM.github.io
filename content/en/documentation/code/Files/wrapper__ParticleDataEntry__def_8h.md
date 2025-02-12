@@ -1,11 +1,11 @@
 ---
-title: "file Pythia_8_312/wrapper_ParticleDataEntry_def.h"
+title: "file Pythia_8_212/wrapper_ParticleDataEntry_def.h"
 
 description: "[No description available]"
 
 ---
 
-# file Pythia_8_312/wrapper_ParticleDataEntry_def.h
+# file Pythia_8_212/wrapper_ParticleDataEntry_def.h
 
 [No description available]
 
@@ -34,13 +34,16 @@ namespace CAT_3(
 ## Source code
 
 ```
-#ifndef __wrapper_ParticleDataEntry_def_Pythia_8_312_h__
-#define __wrapper_ParticleDataEntry_def_Pythia_8_312_h__
+#ifndef __wrapper_ParticleDataEntry_def_Pythia_8_212_h__
+#define __wrapper_ParticleDataEntry_def_Pythia_8_212_h__
 
 #include <string>
 #include "wrapper_ParticleData_decl.h"
 #include "wrapper_DecayChannel_decl.h"
+#include "wrapper_ResonanceWidths_decl.h"
 #include "wrapper_Info_decl.h"
+#include "wrapper_Settings_decl.h"
+#include "wrapper_Couplings_decl.h"
 
 #include "identification.hpp"
 
@@ -61,14 +64,9 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             get_BEptr()->initPtr__BOSS((*particleDataPtrIn).get_BEptr());
         }
         
-        inline void ParticleDataEntry::setAll(std::string nameIn, std::string antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn, double mMaxIn, double tau0In, bool varWidthIn)
-        {
-            get_BEptr()->setAll(nameIn, antiNameIn, spinTypeIn, chargeTypeIn, colTypeIn, m0In, mWidthIn, mMinIn, mMaxIn, tau0In, varWidthIn);
-        }
-        
         inline void ParticleDataEntry::setAll(std::string nameIn, std::string antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn, double mMaxIn, double tau0In)
         {
-            get_BEptr()->setAll__BOSS(nameIn, antiNameIn, spinTypeIn, chargeTypeIn, colTypeIn, m0In, mWidthIn, mMinIn, mMaxIn, tau0In);
+            get_BEptr()->setAll(nameIn, antiNameIn, spinTypeIn, chargeTypeIn, colTypeIn, m0In, mWidthIn, mMinIn, mMaxIn, tau0In);
         }
         
         inline void ParticleDataEntry::setAll(std::string nameIn, std::string antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn, double mMaxIn)
@@ -176,19 +174,9 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             get_BEptr()->setMMaxNoChange(mMaxIn);
         }
         
-        inline void ParticleDataEntry::setTau0(double tau0In, bool countAsChanged)
-        {
-            get_BEptr()->setTau0(tau0In, countAsChanged);
-        }
-        
         inline void ParticleDataEntry::setTau0(double tau0In)
         {
-            get_BEptr()->setTau0__BOSS(tau0In);
-        }
-        
-        inline void ParticleDataEntry::setVarWidth(bool varWidthIn)
-        {
-            get_BEptr()->setVarWidth(varWidthIn);
+            get_BEptr()->setTau0(tau0In);
         }
         
         inline void ParticleDataEntry::setIsResonance(bool isResonanceIn)
@@ -204,16 +192,6 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         inline void ParticleDataEntry::setMayDecay(bool mayDecayIn)
         {
             get_BEptr()->setMayDecay__BOSS(mayDecayIn);
-        }
-        
-        inline void ParticleDataEntry::setTauCalc(bool tauCalcIn, bool countAsChanged)
-        {
-            get_BEptr()->setTauCalc(tauCalcIn, countAsChanged);
-        }
-        
-        inline void ParticleDataEntry::setTauCalc(bool tauCalcIn)
-        {
-            get_BEptr()->setTauCalc__BOSS(tauCalcIn);
         }
         
         inline void ParticleDataEntry::setDoExternalDecay(bool doExternalDecayIn)
@@ -239,11 +217,6 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         inline int ParticleDataEntry::id() const
         {
             return get_BEptr()->id();
-        }
-        
-        inline int ParticleDataEntry::antiId() const
-        {
-            return get_BEptr()->antiId();
         }
         
         inline bool ParticleDataEntry::hasAnti() const
@@ -336,19 +309,9 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             return get_BEptr()->isResonance();
         }
         
-        inline bool ParticleDataEntry::varWidth() const
-        {
-            return get_BEptr()->varWidth();
-        }
-        
         inline bool ParticleDataEntry::mayDecay() const
         {
             return get_BEptr()->mayDecay();
-        }
-        
-        inline bool ParticleDataEntry::tauCalc() const
-        {
-            return get_BEptr()->tauCalc();
         }
         
         inline bool ParticleDataEntry::doExternalDecay() const
@@ -371,16 +334,6 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             return get_BEptr()->hasChanged();
         }
         
-        inline bool ParticleDataEntry::hasChangedMMin() const
-        {
-            return get_BEptr()->hasChangedMMin();
-        }
-        
-        inline bool ParticleDataEntry::hasChangedMMax() const
-        {
-            return get_BEptr()->hasChangedMMax();
-        }
-        
         inline void ParticleDataEntry::initBWmass()
         {
             get_BEptr()->initBWmass();
@@ -391,12 +344,12 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             return get_BEptr()->constituentMass();
         }
         
-        inline double ParticleDataEntry::mSel() const
+        inline double ParticleDataEntry::mSel()
         {
             return get_BEptr()->mSel();
         }
         
-        inline double ParticleDataEntry::mRun(double mH) const
+        inline double ParticleDataEntry::mRun(double mH)
         {
             return get_BEptr()->mRun(mH);
         }
@@ -451,16 +404,6 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             return get_BEptr()->isBaryon();
         }
         
-        inline bool ParticleDataEntry::isOnium() const
-        {
-            return get_BEptr()->isOnium();
-        }
-        
-        inline bool ParticleDataEntry::isExotic() const
-        {
-            return get_BEptr()->isExotic();
-        }
-        
         inline bool ParticleDataEntry::isOctetHadron() const
         {
             return get_BEptr()->isOctetHadron();
@@ -484,11 +427,6 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         inline int ParticleDataEntry::baryonNumberType() const
         {
             return get_BEptr()->baryonNumberType__BOSS();
-        }
-        
-        inline int ParticleDataEntry::nQuarksInCode(int idQIn) const
-        {
-            return get_BEptr()->nQuarksInCode(idQIn);
         }
         
         inline void ParticleDataEntry::clearChannels()
@@ -601,9 +539,19 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             return get_BEptr()->pickChannel__BOSS().get_init_wref();
         }
         
-        inline void ParticleDataEntry::resInit(Pythia8::Info* infoPtrIn)
+        inline void ParticleDataEntry::setResonancePtr(Pythia8::ResonanceWidths* resonancePtrIn)
         {
-            get_BEptr()->resInit__BOSS((*infoPtrIn).get_BEptr());
+            get_BEptr()->setResonancePtr__BOSS((*resonancePtrIn).get_BEptr());
+        }
+        
+        inline Pythia8::ResonanceWidths* ParticleDataEntry::getResonancePtr()
+        {
+            return get_BEptr()->getResonancePtr__BOSS()->get_init_wptr();
+        }
+        
+        inline void ParticleDataEntry::resInit(Pythia8::Info* infoPtrIn, Pythia8::Settings* settingsPtrIn, Pythia8::ParticleData* particleDataPtrIn, Pythia8::Couplings* couplingsPtrIn)
+        {
+            get_BEptr()->resInit__BOSS((*infoPtrIn).get_BEptr(), (*settingsPtrIn).get_BEptr(), (*particleDataPtrIn).get_BEptr(), (*couplingsPtrIn).get_BEptr());
         }
         
         inline double ParticleDataEntry::resWidth(int idSgn, double mHat, int idIn, bool openOnly, bool setBR)
@@ -673,155 +621,141 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         
         
         // Wrappers for original constructors: 
-        inline ParticleDataEntry::ParticleDataEntry(int idIn, std::string nameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn, double mMaxIn, double tau0In, bool varWidthIn) :
-            WrapperBase(__factory0(idIn, nameIn, spinTypeIn, chargeTypeIn, colTypeIn, m0In, mWidthIn, mMinIn, mMaxIn, tau0In, varWidthIn))
-        {
-            get_BEptr()->set_wptr(this);
-            get_BEptr()->set_delete_wrapper(false);
-        }
-        
         inline ParticleDataEntry::ParticleDataEntry(int idIn, std::string nameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn, double mMaxIn, double tau0In) :
-            WrapperBase(__factory1(idIn, nameIn, spinTypeIn, chargeTypeIn, colTypeIn, m0In, mWidthIn, mMinIn, mMaxIn, tau0In))
+            WrapperBase(__factory0(idIn, nameIn, spinTypeIn, chargeTypeIn, colTypeIn, m0In, mWidthIn, mMinIn, mMaxIn, tau0In))
         {
             get_BEptr()->set_wptr(this);
             get_BEptr()->set_delete_wrapper(false);
         }
         
         inline ParticleDataEntry::ParticleDataEntry(int idIn, std::string nameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn, double mMaxIn) :
-            WrapperBase(__factory2(idIn, nameIn, spinTypeIn, chargeTypeIn, colTypeIn, m0In, mWidthIn, mMinIn, mMaxIn))
+            WrapperBase(__factory1(idIn, nameIn, spinTypeIn, chargeTypeIn, colTypeIn, m0In, mWidthIn, mMinIn, mMaxIn))
         {
             get_BEptr()->set_wptr(this);
             get_BEptr()->set_delete_wrapper(false);
         }
         
         inline ParticleDataEntry::ParticleDataEntry(int idIn, std::string nameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn) :
-            WrapperBase(__factory3(idIn, nameIn, spinTypeIn, chargeTypeIn, colTypeIn, m0In, mWidthIn, mMinIn))
+            WrapperBase(__factory2(idIn, nameIn, spinTypeIn, chargeTypeIn, colTypeIn, m0In, mWidthIn, mMinIn))
         {
             get_BEptr()->set_wptr(this);
             get_BEptr()->set_delete_wrapper(false);
         }
         
         inline ParticleDataEntry::ParticleDataEntry(int idIn, std::string nameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn) :
-            WrapperBase(__factory4(idIn, nameIn, spinTypeIn, chargeTypeIn, colTypeIn, m0In, mWidthIn))
+            WrapperBase(__factory3(idIn, nameIn, spinTypeIn, chargeTypeIn, colTypeIn, m0In, mWidthIn))
         {
             get_BEptr()->set_wptr(this);
             get_BEptr()->set_delete_wrapper(false);
         }
         
         inline ParticleDataEntry::ParticleDataEntry(int idIn, std::string nameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In) :
-            WrapperBase(__factory5(idIn, nameIn, spinTypeIn, chargeTypeIn, colTypeIn, m0In))
+            WrapperBase(__factory4(idIn, nameIn, spinTypeIn, chargeTypeIn, colTypeIn, m0In))
         {
             get_BEptr()->set_wptr(this);
             get_BEptr()->set_delete_wrapper(false);
         }
         
         inline ParticleDataEntry::ParticleDataEntry(int idIn, std::string nameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn) :
-            WrapperBase(__factory6(idIn, nameIn, spinTypeIn, chargeTypeIn, colTypeIn))
+            WrapperBase(__factory5(idIn, nameIn, spinTypeIn, chargeTypeIn, colTypeIn))
         {
             get_BEptr()->set_wptr(this);
             get_BEptr()->set_delete_wrapper(false);
         }
         
         inline ParticleDataEntry::ParticleDataEntry(int idIn, std::string nameIn, int spinTypeIn, int chargeTypeIn) :
-            WrapperBase(__factory7(idIn, nameIn, spinTypeIn, chargeTypeIn))
+            WrapperBase(__factory6(idIn, nameIn, spinTypeIn, chargeTypeIn))
         {
             get_BEptr()->set_wptr(this);
             get_BEptr()->set_delete_wrapper(false);
         }
         
         inline ParticleDataEntry::ParticleDataEntry(int idIn, std::string nameIn, int spinTypeIn) :
-            WrapperBase(__factory8(idIn, nameIn, spinTypeIn))
+            WrapperBase(__factory7(idIn, nameIn, spinTypeIn))
         {
             get_BEptr()->set_wptr(this);
             get_BEptr()->set_delete_wrapper(false);
         }
         
         inline ParticleDataEntry::ParticleDataEntry(int idIn, std::string nameIn) :
-            WrapperBase(__factory9(idIn, nameIn))
+            WrapperBase(__factory8(idIn, nameIn))
         {
             get_BEptr()->set_wptr(this);
             get_BEptr()->set_delete_wrapper(false);
         }
         
         inline ParticleDataEntry::ParticleDataEntry(int idIn) :
-            WrapperBase(__factory10(idIn))
+            WrapperBase(__factory9(idIn))
         {
             get_BEptr()->set_wptr(this);
             get_BEptr()->set_delete_wrapper(false);
         }
         
         inline ParticleDataEntry::ParticleDataEntry() :
-            WrapperBase(__factory11())
-        {
-            get_BEptr()->set_wptr(this);
-            get_BEptr()->set_delete_wrapper(false);
-        }
-        
-        inline ParticleDataEntry::ParticleDataEntry(int idIn, std::string nameIn, std::string antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn, double mMaxIn, double tau0In, bool varWidthIn) :
-            WrapperBase(__factory12(idIn, nameIn, antiNameIn, spinTypeIn, chargeTypeIn, colTypeIn, m0In, mWidthIn, mMinIn, mMaxIn, tau0In, varWidthIn))
+            WrapperBase(__factory10())
         {
             get_BEptr()->set_wptr(this);
             get_BEptr()->set_delete_wrapper(false);
         }
         
         inline ParticleDataEntry::ParticleDataEntry(int idIn, std::string nameIn, std::string antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn, double mMaxIn, double tau0In) :
-            WrapperBase(__factory13(idIn, nameIn, antiNameIn, spinTypeIn, chargeTypeIn, colTypeIn, m0In, mWidthIn, mMinIn, mMaxIn, tau0In))
+            WrapperBase(__factory11(idIn, nameIn, antiNameIn, spinTypeIn, chargeTypeIn, colTypeIn, m0In, mWidthIn, mMinIn, mMaxIn, tau0In))
         {
             get_BEptr()->set_wptr(this);
             get_BEptr()->set_delete_wrapper(false);
         }
         
         inline ParticleDataEntry::ParticleDataEntry(int idIn, std::string nameIn, std::string antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn, double mMaxIn) :
-            WrapperBase(__factory14(idIn, nameIn, antiNameIn, spinTypeIn, chargeTypeIn, colTypeIn, m0In, mWidthIn, mMinIn, mMaxIn))
+            WrapperBase(__factory12(idIn, nameIn, antiNameIn, spinTypeIn, chargeTypeIn, colTypeIn, m0In, mWidthIn, mMinIn, mMaxIn))
         {
             get_BEptr()->set_wptr(this);
             get_BEptr()->set_delete_wrapper(false);
         }
         
         inline ParticleDataEntry::ParticleDataEntry(int idIn, std::string nameIn, std::string antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn) :
-            WrapperBase(__factory15(idIn, nameIn, antiNameIn, spinTypeIn, chargeTypeIn, colTypeIn, m0In, mWidthIn, mMinIn))
+            WrapperBase(__factory13(idIn, nameIn, antiNameIn, spinTypeIn, chargeTypeIn, colTypeIn, m0In, mWidthIn, mMinIn))
         {
             get_BEptr()->set_wptr(this);
             get_BEptr()->set_delete_wrapper(false);
         }
         
         inline ParticleDataEntry::ParticleDataEntry(int idIn, std::string nameIn, std::string antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn) :
-            WrapperBase(__factory16(idIn, nameIn, antiNameIn, spinTypeIn, chargeTypeIn, colTypeIn, m0In, mWidthIn))
+            WrapperBase(__factory14(idIn, nameIn, antiNameIn, spinTypeIn, chargeTypeIn, colTypeIn, m0In, mWidthIn))
         {
             get_BEptr()->set_wptr(this);
             get_BEptr()->set_delete_wrapper(false);
         }
         
         inline ParticleDataEntry::ParticleDataEntry(int idIn, std::string nameIn, std::string antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In) :
-            WrapperBase(__factory17(idIn, nameIn, antiNameIn, spinTypeIn, chargeTypeIn, colTypeIn, m0In))
+            WrapperBase(__factory15(idIn, nameIn, antiNameIn, spinTypeIn, chargeTypeIn, colTypeIn, m0In))
         {
             get_BEptr()->set_wptr(this);
             get_BEptr()->set_delete_wrapper(false);
         }
         
         inline ParticleDataEntry::ParticleDataEntry(int idIn, std::string nameIn, std::string antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn) :
-            WrapperBase(__factory18(idIn, nameIn, antiNameIn, spinTypeIn, chargeTypeIn, colTypeIn))
+            WrapperBase(__factory16(idIn, nameIn, antiNameIn, spinTypeIn, chargeTypeIn, colTypeIn))
         {
             get_BEptr()->set_wptr(this);
             get_BEptr()->set_delete_wrapper(false);
         }
         
         inline ParticleDataEntry::ParticleDataEntry(int idIn, std::string nameIn, std::string antiNameIn, int spinTypeIn, int chargeTypeIn) :
-            WrapperBase(__factory19(idIn, nameIn, antiNameIn, spinTypeIn, chargeTypeIn))
+            WrapperBase(__factory17(idIn, nameIn, antiNameIn, spinTypeIn, chargeTypeIn))
         {
             get_BEptr()->set_wptr(this);
             get_BEptr()->set_delete_wrapper(false);
         }
         
         inline ParticleDataEntry::ParticleDataEntry(int idIn, std::string nameIn, std::string antiNameIn, int spinTypeIn) :
-            WrapperBase(__factory20(idIn, nameIn, antiNameIn, spinTypeIn))
+            WrapperBase(__factory18(idIn, nameIn, antiNameIn, spinTypeIn))
         {
             get_BEptr()->set_wptr(this);
             get_BEptr()->set_delete_wrapper(false);
         }
         
         inline ParticleDataEntry::ParticleDataEntry(int idIn, std::string nameIn, std::string antiNameIn) :
-            WrapperBase(__factory21(idIn, nameIn, antiNameIn))
+            WrapperBase(__factory19(idIn, nameIn, antiNameIn))
         {
             get_BEptr()->set_wptr(this);
             get_BEptr()->set_delete_wrapper(false);
@@ -881,10 +815,10 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 #include "gambit/Backends/backend_undefs.hpp"
 
-#endif /* __wrapper_ParticleDataEntry_def_Pythia_8_312_h__ */
+#endif /* __wrapper_ParticleDataEntry_def_Pythia_8_212_h__ */
 ```
 
 
 -------------------------------
 
-Updated on 2025-02-12 at 15:36:43 +0000
+Updated on 2025-02-12 at 16:10:36 +0000

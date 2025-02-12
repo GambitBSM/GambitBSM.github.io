@@ -1,11 +1,11 @@
 ---
-title: "file Pythia_8_312/wrapper_Info_decl.h"
+title: "file Pythia_8_212/wrapper_Info_decl.h"
 
 description: "[No description available]"
 
 ---
 
-# file Pythia_8_312/wrapper_Info_decl.h
+# file Pythia_8_212/wrapper_Info_decl.h
 
 [No description available]
 
@@ -34,18 +34,17 @@ namespace CAT_3(
 ## Source code
 
 ```
-#ifndef __wrapper_Info_decl_Pythia_8_312_h__
-#define __wrapper_Info_decl_Pythia_8_312_h__
+#ifndef __wrapper_Info_decl_Pythia_8_212_h__
+#define __wrapper_Info_decl_Pythia_8_212_h__
 
 #include <cstddef>
+#include <ostream>
 #include <string>
 #include <vector>
 #include <map>
 #include "forward_decls_wrapper_classes.h"
 #include "gambit/Backends/wrapperbase.hpp"
 #include "abstract_Info.h"
-#include "wrapper_Logger_decl.h"
-#include "wrapper_Rndm_decl.h"
 
 #include "identification.hpp"
 
@@ -61,145 +60,19 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             public:
                 // -- Static factory pointers: 
                 static Abstract_Info* (*__factory0)();
-                static Abstract_Info* (*__factory1)(bool);
         
                 // -- Other member variables: 
             public:
                 int& LHEFversionSave;
                 std::vector<double>& sigmaLHEFSave;
-                bool& hasOwnEventAttributes;
                 std::map<std::string, std::string>*& eventAttributes;
                 std::map<std::string, double>*& weights_detailed;
                 std::vector<double>*& weights_compressed;
-                std::vector<double>& weights_detailed_vector;
-                double& eventWeightLHEF;
-                const double& CONVERTMB2PB;
-                int& idASave;
-                int& idBSave;
-                double& pzASave;
-                double& eASave;
-                double& mASave;
-                double& pzBSave;
-                double& eBSave;
-                double& mBSave;
-                double& eCMSave;
-                double& sSave;
-                bool& lowPTmin;
-                long int& nTry;
-                long int& nSel;
-                long int& nAcc;
-                double& sigGen;
-                double& sigErr;
-                double& wtAccSum;
-                std::map<int, std::basic_string<char>>& procNameM;
-                std::map<int, long>& nTryM;
-                std::map<int, long>& nSelM;
-                std::map<int, long>& nAccM;
-                std::map<int, double>& sigGenM;
-                std::map<int, double>& sigErrM;
-                int& lhaStrategySave;
-                double& a0MPISave;
-                bool& isRes;
-                bool& isDiffA;
-                bool& isDiffB;
-                bool& isDiffC;
-                bool& isND;
-                bool& isLH;
-                bool (&hasSubSave)[4];
-                bool& bIsSet;
-                bool& evolIsSet;
-                bool& atEOF;
-                bool& isVal1;
-                bool& isVal2;
-                bool& hasHistorySave;
-                bool& abortPartonLevel;
-                bool& isHardDiffA;
-                bool& isHardDiffB;
-                bool& hasUnresBeams;
-                bool& hasPomPsys;
-                int& codeSave;
-                int (&codeSubSave)[4];
-                int& nFinalSave;
-                int (&nFinalSubSave)[4];
-                int& nTotal;
-                int (&id1Save)[4];
-                int (&id2Save)[4];
-                int (&id1pdfSave)[4];
-                int (&id2pdfSave)[4];
-                int& nMPISave;
-                int& nISRSave;
-                int& nFSRinProcSave;
-                int& nFSRinResSave;
-                double (&x1Save)[4];
-                double (&x2Save)[4];
-                double (&x1pdfSave)[4];
-                double (&x2pdfSave)[4];
-                double (&pdf1Save)[4];
-                double (&pdf2Save)[4];
-                double (&Q2FacSave)[4];
-                double (&alphaEMSave)[4];
-                double (&alphaSSave)[4];
-                double (&Q2RenSave)[4];
-                double (&scalupSave)[4];
-                double (&sH)[4];
-                double (&tH)[4];
-                double (&uH)[4];
-                double (&pTH)[4];
-                double (&m3H)[4];
-                double (&m4H)[4];
-                double (&thetaH)[4];
-                double (&phiH)[4];
-                double& bMPISave;
-                double& enhanceMPISave;
-                double& enhanceMPIavgSave;
-                double& bMPIoldSave;
-                double& enhanceMPIoldSave;
-                double& enhanceMPIoldavgSave;
-                double& pTmaxMPISave;
-                double& pTmaxISRSave;
-                double& pTmaxFSRSave;
-                double& pTnowSave;
-                double& zNowISRSave;
-                double& pT2NowISRSave;
-                double& xPomA;
-                double& xPomB;
-                double& tPomA;
-                double& tPomB;
-                std::string& nameSave;
-                std::string (&nameSubSave)[4];
-                std::vector<int>& codeMPISave;
-                std::vector<int>& iAMPISave;
-                std::vector<int>& iBMPISave;
-                std::vector<double>& pTMPISave;
-                std::vector<double>& eMPISave;
-                bool& isVMDstateAEvent;
-                bool& isVMDstateBEvent;
-                int& gammaModeEvent;
-                int& idVMDASave;
-                int& idVMDBSave;
-                double& x1GammaSave;
-                double& x2GammaSave;
-                double& Q2Gamma1Save;
-                double& Q2Gamma2Save;
-                double& eCMsubSave;
-                double& thetaLepton1;
-                double& thetaLepton2;
-                double& sHatNewSave;
-                double& mVMDASave;
-                double& mVMDBSave;
-                double& scaleVMDASave;
-                double& scaleVMDBSave;
-                int (&counters)[50];
-                std::map<std::string, std::string>& headers;
-                std::string& headerBlock;
-                std::string& eventComments;
-                std::vector<int>& weakModes;
-                std::vector<int>& weak2to2lines;
-                std::vector<std::pair<int, int>>& weakDipoles;
-                bool& oniumShower;
         
                 // Member functions: 
             public:
+                void list(std::ostream& os) const;
+        
                 void list() const;
         
                 int idA() const;
@@ -239,8 +112,6 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
                 bool isDiffractiveC() const;
         
                 bool isNonDiffractive() const;
-        
-                bool isElastic() const;
         
                 bool isMinBias() const;
         
@@ -344,40 +215,6 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         
                 double scalup() const;
         
-                double xGammaA() const;
-        
-                double xGammaB() const;
-        
-                double Q2GammaA() const;
-        
-                double Q2GammaB() const;
-        
-                double eCMsub() const;
-        
-                double thetaScatLepA() const;
-        
-                double thetaScatLepB() const;
-        
-                double sHatNew() const;
-        
-                int photonMode() const;
-        
-                bool isVMDstateA() const;
-        
-                bool isVMDstateB() const;
-        
-                int idVMDA() const;
-        
-                int idVMDB() const;
-        
-                double mVMDA() const;
-        
-                double mVMDB() const;
-        
-                double scaleVMDA() const;
-        
-                double scaleVMDB() const;
-        
                 double mHat(int i) const;
         
                 double mHat() const;
@@ -418,23 +255,11 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         
                 double phiHat() const;
         
-                double weight(int i) const;
-        
                 double weight() const;
         
                 double weightSum() const;
         
                 double lhaStrategy() const;
-        
-                int nWeights() const;
-        
-                ::std::string weightLabel(int iWgt) const;
-        
-                int nWeightGroups() const;
-        
-                ::std::string getGroupName(int iGN) const;
-        
-                double getGroupWeight(int iGW) const;
         
                 int nISR() const;
         
@@ -456,15 +281,7 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         
                 double enhanceMPI() const;
         
-                double enhanceMPIavg() const;
-        
                 double eMPI(int i) const;
-        
-                double bMPIold() const;
-        
-                double enhanceMPIold() const;
-        
-                double enhanceMPIoldavg() const;
         
                 int nMPI() const;
         
@@ -476,31 +293,31 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         
                 int iBMPI(int i) const;
         
-                ::std::vector<int> codesHard() const;
+                ::std::vector<int> codesHard();
         
-                ::std::string nameProc(int i) const;
+                ::std::string nameProc(int i);
         
-                ::std::string nameProc() const;
+                ::std::string nameProc();
         
-                long int nTried(int i) const;
+                long int nTried(int i);
         
-                long int nTried() const;
+                long int nTried();
         
-                long int nSelected(int i) const;
+                long int nSelected(int i);
         
-                long int nSelected() const;
+                long int nSelected();
         
-                long int nAccepted(int i) const;
+                long int nAccepted(int i);
         
-                long int nAccepted() const;
+                long int nAccepted();
         
-                double sigmaGen(int i) const;
+                double sigmaGen(int i);
         
-                double sigmaGen() const;
+                double sigmaGen();
         
-                double sigmaErr(int i) const;
+                double sigmaErr(int i);
         
-                double sigmaErr() const;
+                double sigmaErr();
         
                 int getCounter(int i) const;
         
@@ -511,6 +328,22 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
                 void addCounter(int i, int value);
         
                 void addCounter(int i);
+        
+                void errorReset();
+        
+                void errorMsg(std::string messageIn, std::string extraIn, bool showAlways, std::ostream& os);
+        
+                void errorMsg(std::string messageIn, std::string extraIn, bool showAlways);
+        
+                void errorMsg(std::string messageIn, std::string extraIn);
+        
+                void errorMsg(std::string messageIn);
+        
+                int errorTotalNumber();
+        
+                void errorStatistics(std::ostream& os);
+        
+                void errorStatistics();
         
                 void setTooLowPTmin(bool lowPTminIn);
         
@@ -528,79 +361,75 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         
                 double pT2NowISR();
         
-                double mergingWeight(int i) const;
+                double getWeightCKKWL() const;
+        
+                void setWeightCKKWL(double weightIn);
         
                 double mergingWeight() const;
         
-                double mergingWeightNLO(int i) const;
-        
                 double mergingWeightNLO() const;
         
-                ::std::string header(const std::string& key) const;
+                double getWeightFIRST() const;
         
-                ::std::vector<std::string> headerKeys() const;
+                void setWeightFIRST(double weightIn);
         
-                int nProcessesLHEF() const;
+                ::std::string header(const std::string& key);
         
-                double sigmaLHEF(int iProcess) const;
+                ::std::vector<std::string> headerKeys();
+        
+                int nProcessesLHEF();
+        
+                double sigmaLHEF(int iProcess);
         
                 void setLHEF3InitInfo();
         
                 void setLHEF3EventInfo();
         
-                ::std::string getEventAttribute(std::string key, bool doRemoveWhitespace) const;
+                ::std::string getEventAttribute(std::string key, bool doRemoveWhitespace);
         
-                ::std::string getEventAttribute(std::string key) const;
+                ::std::string getEventAttribute(std::string key);
         
-                void setEventAttribute(std::string key, std::string value, bool doOverwrite);
+                int LHEFversion();
         
-                void setEventAttribute(std::string key, std::string value);
+                unsigned int getInitrwgtSize();
         
-                int LHEFversion() const;
+                unsigned int getGeneratorSize();
         
-                unsigned int getInitrwgtSize() const;
+                ::std::string getGeneratorValue(unsigned int n);
         
-                unsigned int getGeneratorSize() const;
+                ::std::string getGeneratorValue();
         
-                ::std::string getGeneratorValue(unsigned int n) const;
+                ::std::string getGeneratorAttribute(unsigned int n, std::string key, bool doRemoveWhitespace);
         
-                ::std::string getGeneratorValue() const;
+                ::std::string getGeneratorAttribute(unsigned int n, std::string key);
         
-                ::std::string getGeneratorAttribute(unsigned int n, std::string key, bool doRemoveWhitespace) const;
+                unsigned int getWeightsDetailedSize();
         
-                ::std::string getGeneratorAttribute(unsigned int n, std::string key) const;
+                double getWeightsDetailedValue(std::string n);
         
-                unsigned int getWeightsDetailedSize() const;
+                ::std::string getWeightsDetailedAttribute(std::string n, std::string key, bool doRemoveWhitespace);
         
-                double getWeightsDetailedValue(std::string n) const;
+                ::std::string getWeightsDetailedAttribute(std::string n, std::string key);
         
-                ::std::string getWeightsDetailedAttribute(std::string n, std::string key, bool doRemoveWhitespace) const;
+                unsigned int getWeightsCompressedSize();
         
-                ::std::string getWeightsDetailedAttribute(std::string n, std::string key) const;
+                double getWeightsCompressedValue(unsigned int n);
         
-                unsigned int getWeightsCompressedSize() const;
+                ::std::string getWeightsCompressedAttribute(std::string key, bool doRemoveWhitespace);
         
-                double getWeightsCompressedValue(unsigned int n) const;
+                ::std::string getWeightsCompressedAttribute(std::string key);
         
-                ::std::string getWeightsCompressedAttribute(std::string key, bool doRemoveWhitespace) const;
+                ::std::string getScalesValue(bool doRemoveWhitespace);
         
-                ::std::string getWeightsCompressedAttribute(std::string key) const;
+                ::std::string getScalesValue();
         
-                ::std::string getScalesValue(bool doRemoveWhitespace) const;
-        
-                ::std::string getScalesValue() const;
-        
-                double getScalesAttribute(std::string key) const;
-        
-                ::std::string getHeaderBlock() const;
-        
-                ::std::string getEventComments() const;
+                double getScalesAttribute(std::string key);
         
                 void setHeader(const std::string& key, const std::string& val);
         
                 void setAbortPartonLevel(bool abortIn);
         
-                bool getAbortPartonLevel() const;
+                bool getAbortPartonLevel();
         
                 bool hasUnresolvedBeams() const;
         
@@ -620,157 +449,10 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         
                 double tPomeronB() const;
         
-                ::std::vector<int> getWeakModes() const;
-        
-                ::std::vector<std::pair<int, int>> getWeakDipoles() const;
-        
-                ::std::vector<int> getWeak2to2lines() const;
-        
-                void setWeakModes(std::vector<int> weakModesIn);
-        
-                void setWeakDipoles(std::vector<std::pair<int, int>> weakDipolesIn);
-        
-                void setWeak2to2lines(std::vector<int> weak2to2linesIn);
-        
-                void setOniumShower(bool oniumShowerIn);
-        
-                bool getOniumShower() const;
-        
-                void setBeamIDs(int idAin, int idBin);
-        
-                void setBeamA(int idAin, double pzAin, double eAin, double mAin);
-        
-                void setBeamB(int idBin, double pzBin, double eBin, double mBin);
-        
-                void setECM(double eCMin);
-        
-                void setX1Gamma(double x1GammaIn);
-        
-                void setX2Gamma(double x2GammaIn);
-        
-                void setQ2Gamma1(double Q2gammaIn);
-        
-                void setQ2Gamma2(double Q2gammaIn);
-        
-                void setTheta1(double theta1In);
-        
-                void setTheta2(double theta2In);
-        
-                void setECMsub(double eCMsubIn);
-        
-                void setsHatNew(double sHatNewIn);
-        
-                void setGammaMode(double gammaModeIn);
-        
-                void setVMDstateA(bool isVMDAIn, int idAIn, double mAIn, double scaleAIn);
-        
-                void setVMDstateB(bool isVMDBIn, int idBIn, double mBIn, double scaleBIn);
-        
-                void clear();
-        
-                int sizeMPIarrays() const;
-        
-                void resizeMPIarrays(int newSize);
-        
-                void setType(std::string nameIn, int codeIn, int nFinalIn, bool isNonDiffIn, bool isResolvedIn, bool isDiffractiveAin, bool isDiffractiveBin, bool isDiffractiveCin, bool isLHAin);
-        
-                void setType(std::string nameIn, int codeIn, int nFinalIn, bool isNonDiffIn, bool isResolvedIn, bool isDiffractiveAin, bool isDiffractiveBin, bool isDiffractiveCin);
-        
-                void setType(std::string nameIn, int codeIn, int nFinalIn, bool isNonDiffIn, bool isResolvedIn, bool isDiffractiveAin, bool isDiffractiveBin);
-        
-                void setType(std::string nameIn, int codeIn, int nFinalIn, bool isNonDiffIn, bool isResolvedIn, bool isDiffractiveAin);
-        
-                void setType(std::string nameIn, int codeIn, int nFinalIn, bool isNonDiffIn, bool isResolvedIn);
-        
-                void setType(std::string nameIn, int codeIn, int nFinalIn, bool isNonDiffIn);
-        
-                void setType(std::string nameIn, int codeIn, int nFinalIn);
-        
-                void setSubType(int iDS, std::string nameSubIn, int codeSubIn, int nFinalSubIn);
-        
-                void setPDFalpha(int iDS, int id1pdfIn, int id2pdfIn, double x1pdfIn, double x2pdfIn, double pdf1In, double pdf2In, double Q2FacIn, double alphaEMIn, double alphaSIn, double Q2RenIn, double scalupIn);
-        
-                void setScalup(int iDS, double scalupIn);
-        
-                void setKin(int iDS, int id1In, int id2In, double x1In, double x2In, double sHatIn, double tHatIn, double uHatIn, double pTHatIn, double m3HatIn, double m4HatIn, double thetaHatIn, double phiHatIn);
-        
-                void setTypeMPI(int codeMPIIn, double pTMPIIn, int iAMPIIn, int iBMPIIn, double eMPIIn);
-        
-                void setTypeMPI(int codeMPIIn, double pTMPIIn, int iAMPIIn, int iBMPIIn);
-        
-                void setTypeMPI(int codeMPIIn, double pTMPIIn, int iAMPIIn);
-        
-                void setTypeMPI(int codeMPIIn, double pTMPIIn);
-        
-                void sigmaReset();
-        
-                void setSigma(int i, std::string procNameIn, long int nTryIn, long int nSelIn, long int nAccIn, double sigGenIn, double sigErrIn, double wtAccSumIn);
-        
-                void addSigma(int i, long int nTryIn, long int nSelIn, long int nAccIn, double sigGenIn, double sigErrIn);
-        
-                void setImpact(double bMPIIn, double enhanceMPIIn, double enhanceMPIavgIn, bool bIsSetIn, bool pushBack);
-        
-                void setImpact(double bMPIIn, double enhanceMPIIn, double enhanceMPIavgIn, bool bIsSetIn);
-        
-                void setImpact(double bMPIIn, double enhanceMPIIn, double enhanceMPIavgIn);
-        
-                void setPartEvolved(int nMPIIn, int nISRIn);
-        
-                void setEvolution(double pTmaxMPIIn, double pTmaxISRIn, double pTmaxFSRIn, int nMPIIn, int nISRIn, int nFSRinProcIn, int nFSRinResIn);
-        
-                void setPTnow(double pTnowIn);
-        
-                void seta0MPI(double a0MPIin);
-        
-                void setEndOfFile(bool atEOFin);
-        
-                void setWeight(double weightIn, int lhaStrategyIn);
-        
-                void setIsResolved(bool isResIn);
-        
-                void setHardDiff(bool hasUnresBeamsIn, bool hasPomPsysIn, bool isHardDiffAIn, bool isHardDiffBIn, double xPomAIn, double xPomBIn, double tPomAIn, double tPomBIn);
-        
-                void setHardDiff(bool hasUnresBeamsIn, bool hasPomPsysIn, bool isHardDiffAIn, bool isHardDiffBIn, double xPomAIn, double xPomBIn, double tPomAIn);
-        
-                void setHardDiff(bool hasUnresBeamsIn, bool hasPomPsysIn, bool isHardDiffAIn, bool isHardDiffBIn, double xPomAIn, double xPomBIn);
-        
-                void setHardDiff(bool hasUnresBeamsIn, bool hasPomPsysIn, bool isHardDiffAIn, bool isHardDiffBIn, double xPomAIn);
-        
-                void setHardDiff(bool hasUnresBeamsIn, bool hasPomPsysIn, bool isHardDiffAIn, bool isHardDiffBIn);
-        
-                void setHardDiff(bool hasUnresBeamsIn, bool hasPomPsysIn, bool isHardDiffAIn);
-        
-                void setHardDiff(bool hasUnresBeamsIn, bool hasPomPsysIn);
-        
-                void setHardDiff(bool hasUnresBeamsIn);
-        
-                void setHardDiff();
-        
-                void reassignDiffSystem(int iDSold, int iDSnew);
-        
-                void setHasUnresolvedBeams(bool hasUnresBeamsIn);
-        
-                void setHasPomPsystem(bool hasPomPsysIn);
-        
-                int numberOfWeights() const;
-        
-                double weightValueByIndex(int key) const;
-        
-                double weightValueByIndex() const;
-        
-                ::std::string weightNameByIndex(int key) const;
-        
-                ::std::string weightNameByIndex() const;
-        
-                ::std::vector<double> weightValueVector() const;
-        
-                ::std::vector<std::string> weightNameVector() const;
-        
         
                 // Wrappers for original constructors: 
             public:
                 Info();
-                Info(bool arg_1);
         
                 // Special pointer-based constructor: 
                 Info(Abstract_Info* in);
@@ -795,10 +477,10 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 #include "gambit/Backends/backend_undefs.hpp"
 
-#endif /* __wrapper_Info_decl_Pythia_8_312_h__ */
+#endif /* __wrapper_Info_decl_Pythia_8_212_h__ */
 ```
 
 
 -------------------------------
 
-Updated on 2025-02-12 at 15:36:43 +0000
+Updated on 2025-02-12 at 16:10:36 +0000

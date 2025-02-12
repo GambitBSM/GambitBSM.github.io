@@ -161,9 +161,6 @@ namespace Gambit
 
     typedef std::map<int,xsec_container> map_int_xsec;
     typedef std::map<int,process_xsec_container> map_int_process_xsec;
-    typedef std::map<std::string, xsec_container> map_str_xsec_container;
-    typedef std::map<std::string, map_int_process_xsec> map_str_map_int_process_xsec;
-    typedef std::pair<map_str_xsec_container, map_str_map_int_process_xsec> initialxsec_container;
 
     typedef std::map<std::pair<int,int>,PID_pair_xsec_container> map_iipair_PID_pair_xsec;
     typedef std::map<PID_pair,PID_pair_xsec_container> map_PID_pair_PID_pair_xsec;
@@ -182,4 +179,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2025-02-12 at 15:36:42 +0000
+Updated on 2025-02-12 at 16:10:35 +0000

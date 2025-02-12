@@ -144,10 +144,10 @@
         </inbodydescription>
         <location file="ColliderBit/include/gambit/ColliderBit/colliders/Pythia8/Py8Collider.hpp" line="120" column="14" bodyfile="ColliderBit/include/gambit/ColliderBit/colliders/Pythia8/Py8Collider.hpp" bodystart="120" bodyend="126"/>
       </memberdef>
-      <memberdef kind="function" id="classGambit_1_1ColliderBit_1_1Py8Collider_1af1c3b5f9cfc1036a21158ba602c6a67a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classGambit_1_1ColliderBit_1_1Py8Collider_1a3c51b0f7ca87a71cc5c2f7f386b4e868" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
         <definition>void Gambit::ColliderBit::Py8Collider&lt; PythiaT, EventT, hepmc_writerT &gt;::init</definition>
-        <argsstring>(const std::string pythiaDocPath, const std::vector&lt; std::string &gt; &amp;externalSettings, const SLHAea::Coll *slhaea)</argsstring>
+        <argsstring>(const std::string pythiaDocPath, const std::vector&lt; std::string &gt; &amp;externalSettings, const SLHAea::Coll *slhaea=nullptr, std::ostream &amp;os=std::cout)</argsstring>
         <name>init</name>
         <qualifiedname>Gambit::ColliderBit::Py8Collider::init</qualifiedname>
         <param>
@@ -161,6 +161,12 @@
         <param>
           <type>const SLHAea::Coll *</type>
           <declname>slhaea</declname>
+          <defval>nullptr</defval>
+        </param>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+          <defval>std::cout</defval>
         </param>
         <briefdescription>
         </briefdescription>
@@ -173,10 +179,10 @@
         </inbodydescription>
         <location file="ColliderBit/include/gambit/ColliderBit/colliders/Pythia8/Py8Collider.hpp" line="130" column="14" bodyfile="ColliderBit/include/gambit/ColliderBit/colliders/Pythia8/Py8Collider.hpp" bodystart="130" bodyend="159"/>
       </memberdef>
-      <memberdef kind="function" id="classGambit_1_1ColliderBit_1_1Py8Collider_1a850faabc47476fc408eee40a3a7f51ad" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classGambit_1_1ColliderBit_1_1Py8Collider_1a7a85a588fc16aaee649d6feaf584b329" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
         <definition>void Gambit::ColliderBit::Py8Collider&lt; PythiaT, EventT, hepmc_writerT &gt;::init_user_model</definition>
-        <argsstring>(const std::string pythiaDocPath, const std::vector&lt; std::string &gt; &amp;externalSettings, const SLHAea::Coll *slhaea=nullptr)</argsstring>
+        <argsstring>(const std::string pythiaDocPath, const std::vector&lt; std::string &gt; &amp;externalSettings, const SLHAea::Coll *slhaea=nullptr, std::ostream &amp;os=std::cout)</argsstring>
         <name>init_user_model</name>
         <qualifiedname>Gambit::ColliderBit::Py8Collider::init_user_model</qualifiedname>
         <param>
@@ -192,6 +198,11 @@
           <declname>slhaea</declname>
           <defval>nullptr</defval>
         </param>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+          <defval>std::cout</defval>
+        </param>
         <briefdescription>
         </briefdescription>
         <detaileddescription>
@@ -201,10 +212,10 @@
         </inbodydescription>
         <location file="ColliderBit/include/gambit/ColliderBit/colliders/Pythia8/Py8Collider.hpp" line="164" column="14" bodyfile="ColliderBit/include/gambit/ColliderBit/colliders/Pythia8/Py8Collider.hpp" bodystart="164" bodyend="187"/>
       </memberdef>
-      <memberdef kind="function" id="classGambit_1_1ColliderBit_1_1Py8Collider_1a4610700bc29279b25360f83d868dd324" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classGambit_1_1ColliderBit_1_1Py8Collider_1add0ca6d3cdbf992ef680c55746fa6f5d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
         <definition>void Gambit::ColliderBit::Py8Collider&lt; PythiaT, EventT, hepmc_writerT &gt;::init</definition>
-        <argsstring>(const std::string pythiaDocPath, const std::vector&lt; std::string &gt; &amp;externalSettings)</argsstring>
+        <argsstring>(const std::string pythiaDocPath, const std::vector&lt; std::string &gt; &amp;externalSettings, std::ostream &amp;os)</argsstring>
         <name>init</name>
         <qualifiedname>Gambit::ColliderBit::Py8Collider::init</qualifiedname>
         <param>
@@ -215,6 +226,10 @@
           <type>const std::vector&lt; std::string &gt; &amp;</type>
           <declname>externalSettings</declname>
         </param>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
         <briefdescription>
 <para>Initialize from some external settings, assuming no given SLHAea instance. </para>
         </briefdescription>
@@ -224,10 +239,10 @@
         </inbodydescription>
         <location file="ColliderBit/include/gambit/ColliderBit/colliders/Pythia8/Py8Collider.hpp" line="190" column="14" bodyfile="ColliderBit/include/gambit/ColliderBit/colliders/Pythia8/Py8Collider.hpp" bodystart="190" bodyend="194"/>
       </memberdef>
-      <memberdef kind="function" id="classGambit_1_1ColliderBit_1_1Py8Collider_1a4da314faabaae9439e66e4ce95db4e0d" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="classGambit_1_1ColliderBit_1_1Py8Collider_1a5a528c25a241352ad3cc5a56ce9ebdf7" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
         <definition>void Gambit::ColliderBit::Py8Collider&lt; PythiaT, EventT, hepmc_writerT &gt;::init_user_model</definition>
-        <argsstring>(const std::string pythiaDocPath, const std::vector&lt; std::string &gt; &amp;externalSettings)</argsstring>
+        <argsstring>(const std::string pythiaDocPath, const std::vector&lt; std::string &gt; &amp;externalSettings, std::ostream &amp;os)</argsstring>
         <name>init_user_model</name>
         <qualifiedname>Gambit::ColliderBit::Py8Collider::init_user_model</qualifiedname>
         <param>
@@ -237,6 +252,10 @@
         <param>
           <type>const std::vector&lt; std::string &gt; &amp;</type>
           <declname>externalSettings</declname>
+        </param>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
         </param>
         <briefdescription>
 <para>Initialize from some external settings, assuming no given SLHAea instance. </para>
@@ -439,35 +458,6 @@
         </inbodydescription>
         <location file="ColliderBit/include/gambit/ColliderBit/colliders/Pythia8/Py8Collider.hpp" line="237" column="21" bodyfile="ColliderBit/include/gambit/ColliderBit/colliders/Pythia8/Py8Collider.hpp" bodystart="237" bodyend="237"/>
       </memberdef>
-      <memberdef kind="function" id="classGambit_1_1ColliderBit_1_1Py8Collider_1ab4909114dcad7c550f2f066bea81ca00" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>double</type>
-        <definition>double Gambit::ColliderBit::Py8Collider&lt; PythiaT, EventT, hepmc_writerT &gt;::max_xsec_fb</definition>
-        <argsstring>() const</argsstring>
-        <name>max_xsec_fb</name>
-        <qualifiedname>Gambit::ColliderBit::Py8Collider::max_xsec_fb</qualifiedname>
-        <briefdescription>
-<para>Get the estimated max cross-section. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/colliders/Pythia8/Py8Collider.hpp" line="240" column="16" bodyfile="ColliderBit/include/gambit/ColliderBit/colliders/Pythia8/Py8Collider.hpp" bodystart="240" bodyend="240"/>
-      </memberdef>
-      <memberdef kind="function" id="classGambit_1_1ColliderBit_1_1Py8Collider_1a6c6818f19dff52495a9cbbb7b776bbcd" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
-        <type>double</type>
-        <definition>double Gambit::ColliderBit::Py8Collider&lt; PythiaT, EventT, hepmc_writerT &gt;::max_xsec_pb</definition>
-        <argsstring>() const</argsstring>
-        <name>max_xsec_pb</name>
-        <qualifiedname>Gambit::ColliderBit::Py8Collider::max_xsec_pb</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/colliders/Pythia8/Py8Collider.hpp" line="241" column="16" bodyfile="ColliderBit/include/gambit/ColliderBit/colliders/Pythia8/Py8Collider.hpp" bodystart="241" bodyend="241"/>
-      </memberdef>
       </sectiondef>
       <sectiondef kind="protected-attrib">
       <memberdef kind="variable" id="classGambit_1_1ColliderBit_1_1Py8Collider_1af41412e3402ddda9dac423336a3d1e22" prot="protected" static="no" mutable="no">
@@ -579,7 +569,7 @@
         <label>string</label>
       </node>
     </collaborationgraph>
-    <location file="ColliderBit/include/gambit/ColliderBit/colliders/Pythia8/Py8Collider.hpp" line="36" column="5" bodyfile="ColliderBit/include/gambit/ColliderBit/colliders/Pythia8/Py8Collider.hpp" bodystart="37" bodyend="245"/>
+    <location file="ColliderBit/include/gambit/ColliderBit/colliders/Pythia8/Py8Collider.hpp" line="36" column="5" bodyfile="ColliderBit/include/gambit/ColliderBit/colliders/Pythia8/Py8Collider.hpp" bodystart="37" bodyend="241"/>
     <listofallmembers>
       <member refid="classGambit_1_1ColliderBit_1_1Py8Collider_1a29ed0f06f0b9e87255106e1fda9f4830" prot="protected" virt="non-virtual"><scope>Gambit::ColliderBit::Py8Collider</scope><name>_pythiaBase</name></member>
       <member refid="classGambit_1_1ColliderBit_1_1Py8Collider_1af41412e3402ddda9dac423336a3d1e22" prot="protected" virt="non-virtual"><scope>Gambit::ColliderBit::Py8Collider</scope><name>_pythiaInstance</name></member>
@@ -592,13 +582,11 @@
       <member refid="classGambit_1_1ColliderBit_1_1Py8Collider_1ac02bb06d51ba26df044bd535e6429e2b" prot="public" virt="virtual"><scope>Gambit::ColliderBit::Py8Collider</scope><name>clear</name></member>
       <member refid="classGambit_1_1ColliderBit_1_1Py8Collider_1aeae80e144f0889e0d5fb42e44c43ffdd" prot="public" virt="virtual"><scope>Gambit::ColliderBit::Py8Collider</scope><name>init</name></member>
       <member refid="classGambit_1_1ColliderBit_1_1Py8Collider_1aa0e506de7f07e74bef7594c3eedfd1a1" prot="public" virt="virtual"><scope>Gambit::ColliderBit::Py8Collider</scope><name>init</name></member>
-      <member refid="classGambit_1_1ColliderBit_1_1Py8Collider_1af1c3b5f9cfc1036a21158ba602c6a67a" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Py8Collider</scope><name>init</name></member>
-      <member refid="classGambit_1_1ColliderBit_1_1Py8Collider_1a4610700bc29279b25360f83d868dd324" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Py8Collider</scope><name>init</name></member>
-      <member refid="classGambit_1_1ColliderBit_1_1Py8Collider_1a850faabc47476fc408eee40a3a7f51ad" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Py8Collider</scope><name>init_user_model</name></member>
-      <member refid="classGambit_1_1ColliderBit_1_1Py8Collider_1a4da314faabaae9439e66e4ce95db4e0d" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Py8Collider</scope><name>init_user_model</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1Py8Collider_1a3c51b0f7ca87a71cc5c2f7f386b4e868" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Py8Collider</scope><name>init</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1Py8Collider_1add0ca6d3cdbf992ef680c55746fa6f5d" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Py8Collider</scope><name>init</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1Py8Collider_1a7a85a588fc16aaee649d6feaf584b329" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Py8Collider</scope><name>init_user_model</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1Py8Collider_1a5a528c25a241352ad3cc5a56ce9ebdf7" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Py8Collider</scope><name>init_user_model</name></member>
       <member refid="classGambit_1_1ColliderBit_1_1BaseCollider_1a6da1ad83575ca1c1217b24f0e1f08e55" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Py8Collider</scope><name>jetcollection_taus</name></member>
-      <member refid="classGambit_1_1ColliderBit_1_1Py8Collider_1ab4909114dcad7c550f2f066bea81ca00" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Py8Collider</scope><name>max_xsec_fb</name></member>
-      <member refid="classGambit_1_1ColliderBit_1_1Py8Collider_1a6c6818f19dff52495a9cbbb7b776bbcd" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Py8Collider</scope><name>max_xsec_pb</name></member>
       <member refid="classGambit_1_1ColliderBit_1_1Py8Collider_1a6526db446fe9d9211b171377da856d40" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Py8Collider</scope><name>nextEvent</name></member>
       <member refid="classGambit_1_1ColliderBit_1_1BaseCollider_1a9425492cd832b3ffcbcf03aeaf1b6755" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Py8Collider</scope><name>partonOnly</name></member>
       <member refid="classGambit_1_1ColliderBit_1_1Py8Collider_1af0a0e267ea5fced895a34e729609c8ef" prot="public" virt="virtual"><scope>Gambit::ColliderBit::Py8Collider</scope><name>process_code</name></member>

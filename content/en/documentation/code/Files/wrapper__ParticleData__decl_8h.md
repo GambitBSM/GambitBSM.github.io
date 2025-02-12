@@ -1,11 +1,11 @@
 ---
-title: "file Pythia_8_312/wrapper_ParticleData_decl.h"
+title: "file Pythia_8_212/wrapper_ParticleData_decl.h"
 
 description: "[No description available]"
 
 ---
 
-# file Pythia_8_312/wrapper_ParticleData_decl.h
+# file Pythia_8_212/wrapper_ParticleData_decl.h
 
 [No description available]
 
@@ -34,23 +34,21 @@ namespace CAT_3(
 ## Source code
 
 ```
-#ifndef __wrapper_ParticleData_decl_Pythia_8_312_h__
-#define __wrapper_ParticleData_decl_Pythia_8_312_h__
+#ifndef __wrapper_ParticleData_decl_Pythia_8_212_h__
+#define __wrapper_ParticleData_decl_Pythia_8_212_h__
 
 #include <cstddef>
 #include <string>
-#include <istream>
 #include <ostream>
 #include <vector>
-#include <map>
 #include "forward_decls_wrapper_classes.h"
 #include "gambit/Backends/wrapperbase.hpp"
 #include "abstract_ParticleData.h"
 #include "wrapper_Info_decl.h"
 #include "wrapper_Settings_decl.h"
-#include "wrapper_Logger_decl.h"
 #include "wrapper_Rndm_decl.h"
-#include "wrapper_CoupSM_decl.h"
+#include "wrapper_Couplings_decl.h"
+#include "wrapper_ParticleDataEntry_decl.h"
 
 #include "identification.hpp"
 
@@ -71,15 +69,13 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         
                 // Member functions: 
             public:
-                void initPtrs(Pythia8::Info* infoPtrIn);
+                void initPtr(Pythia8::Info* infoPtrIn, Pythia8::Settings* settingsPtrIn, Pythia8::Rndm* rndmPtrIn, Pythia8::Couplings* couplingsPtrIn);
         
                 bool init(std::string startFile);
         
                 bool init();
         
                 bool init(const Pythia8::ParticleData& particleDataIn);
-        
-                bool init(std::istream& is);
         
                 bool reInit(std::string startFile, bool xmlFormat);
         
@@ -91,19 +87,11 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         
                 void listXML(std::string outFile);
         
-                bool readXML(std::istream& is, bool reset);
-        
-                bool readXML(std::istream& is);
-        
                 bool copyXML(const Pythia8::ParticleData& particleDataIn);
         
                 bool loadXML(std::string inFile, bool reset);
         
                 bool loadXML(std::string inFile);
-        
-                bool loadXML(std::istream& is, bool reset);
-        
-                bool loadXML(std::istream& is);
         
                 bool processXML(bool reset);
         
@@ -113,11 +101,9 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         
                 bool readFF(std::string inFile);
         
-                bool readFF(std::istream& is, bool reset);
-        
-                bool readFF(std::istream& is);
-        
                 void listFF(std::string outFile);
+        
+                bool readString(std::string lineIn, bool warn, std::ostream& os);
         
                 bool readString(std::string lineIn, bool warn);
         
@@ -125,19 +111,19 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         
                 bool readingFailed();
         
-                void listAll(std::ostream& stream);
+                void listAll(std::ostream& os);
         
                 void listAll();
         
-                void listChanged(bool changedRes);
+                void listChanged(std::ostream& os);
         
                 void listChanged();
         
-                void list(std::ostream& stream, bool chargedOnly, bool changedRes);
+                void listChanged(bool changedRes, std::ostream& os);
         
-                void list(std::ostream& stream, bool chargedOnly);
+                void listChanged(bool changedRes);
         
-                void list(std::ostream& stream);
+                void list(bool changedOnly, bool changedRes, std::ostream& os);
         
                 void list(bool changedOnly, bool changedRes);
         
@@ -145,19 +131,21 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         
                 void list();
         
+                void list(int idList, std::ostream& os);
+        
                 void list(int idList);
+        
+                void list(std::vector<int> idList, std::ostream& os);
         
                 void list(std::vector<int> idList);
         
-                ::std::vector<std::string> getReadHistory(int subrun);
-        
-                ::std::vector<std::string> getReadHistory();
-        
-                void checkTable(int verbosity);
+                void checkTable(std::ostream& os);
         
                 void checkTable();
         
-                void addParticle(int idIn, std::string nameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn, double mMaxIn, double tau0In, bool varWidthIn);
+                void checkTable(int verbosity, std::ostream& os);
+        
+                void checkTable(int verbosity);
         
                 void addParticle(int idIn, std::string nameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn, double mMaxIn, double tau0In);
         
@@ -179,8 +167,6 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         
                 void addParticle(int idIn);
         
-                void addParticle(int idIn, std::string nameIn, std::string antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn, double mMaxIn, double tau0In, bool varWidthIn);
-        
                 void addParticle(int idIn, std::string nameIn, std::string antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn, double mMaxIn, double tau0In);
         
                 void addParticle(int idIn, std::string nameIn, std::string antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn, double mMaxIn);
@@ -198,8 +184,6 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
                 void addParticle(int idIn, std::string nameIn, std::string antiNameIn, int spinTypeIn);
         
                 void addParticle(int idIn, std::string nameIn, std::string antiNameIn);
-        
-                void setAll(int idIn, std::string nameIn, std::string antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn, double mMaxIn, double tau0In, bool varWidthIn);
         
                 void setAll(int idIn, std::string nameIn, std::string antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn, double mMaxIn, double tau0In);
         
@@ -219,9 +203,9 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         
                 void setAll(int idIn, std::string nameIn, std::string antiNameIn);
         
-                bool isParticle(int idIn) const;
+                bool isParticle(int idIn);
         
-                int nextId(int idIn) const;
+                int nextId(int idIn);
         
                 void name(int idIn, std::string nameIn);
         
@@ -249,11 +233,7 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         
                 void mayDecay(int idIn, bool mayDecayIn);
         
-                void tauCalc(int idIn, bool tauCalcIn);
-        
                 void doExternalDecay(int idIn, bool doExternalDecayIn);
-        
-                void varWidth(int idIn, bool varWidthIn);
         
                 void isVisible(int idIn, bool isVisibleIn);
         
@@ -261,95 +241,81 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         
                 void hasChanged(int idIn, bool hasChangedIn);
         
-                bool hasAnti(int idIn) const;
+                bool hasAnti(int idIn);
         
-                int antiId(int idIn) const;
+                ::std::string name(int idIn);
         
-                ::std::string name(int idIn) const;
+                int spinType(int idIn);
         
-                int spinType(int idIn) const;
+                int chargeType(int idIn);
         
-                int chargeType(int idIn) const;
+                double charge(int idIn);
         
-                double charge(int idIn) const;
+                int colType(int idIn);
         
-                int colType(int idIn) const;
+                double m0(int idIn);
         
-                double m0(int idIn) const;
+                double mWidth(int idIn);
         
-                double mWidth(int idIn) const;
+                double mMin(int idIn);
         
-                double mMin(int idIn) const;
+                double m0Min(int idIn);
         
-                double m0Min(int idIn) const;
+                double mMax(int idIn);
         
-                double mMax(int idIn) const;
+                double m0Max(int idIn);
         
-                double m0Max(int idIn) const;
+                double tau0(int idIn);
         
-                double tau0(int idIn) const;
+                bool isResonance(int idIn);
         
-                bool isResonance(int idIn) const;
+                bool mayDecay(int idIn);
         
-                bool mayDecay(int idIn) const;
+                bool doExternalDecay(int idIn);
         
-                bool tauCalc(int idIn) const;
+                bool isVisible(int idIn);
         
-                bool doExternalDecay(int idIn) const;
+                bool doForceWidth(int idIn);
         
-                bool isVisible(int idIn) const;
+                bool hasChanged(int idIn);
         
-                bool doForceWidth(int idIn) const;
+                bool useBreitWigner(int idIn);
         
-                bool hasChanged(int idIn) const;
+                double constituentMass(int idIn);
         
-                bool hasChangedMMin(int idIn) const;
+                double mSel(int idIn);
         
-                bool hasChangedMMax(int idIn) const;
+                double mRun(int idIn, double mH);
         
-                bool useBreitWigner(int idIn) const;
+                bool canDecay(int idIn);
         
-                bool varWidth(int idIn) const;
+                bool isLepton(int idIn);
         
-                double constituentMass(int idIn) const;
+                bool isQuark(int idIn);
         
-                double mSel(int idIn) const;
+                bool isGluon(int idIn);
         
-                double mRun(int idIn, double mH) const;
+                bool isDiquark(int idIn);
         
-                bool canDecay(int idIn) const;
+                bool isParton(int idIn);
         
-                bool isLepton(int idIn) const;
+                bool isHadron(int idIn);
         
-                bool isQuark(int idIn) const;
+                bool isMeson(int idIn);
         
-                bool isGluon(int idIn) const;
+                bool isBaryon(int idIn);
         
-                bool isDiquark(int idIn) const;
+                bool isOctetHadron(int idIn);
         
-                bool isParton(int idIn) const;
+                int heaviestQuark(int idIn);
         
-                bool isHadron(int idIn) const;
-        
-                bool isMeson(int idIn) const;
-        
-                bool isBaryon(int idIn) const;
-        
-                bool isOnium(int idIn) const;
-        
-                bool isExotic(int idIn) const;
-        
-                bool isOctetHadron(int idIn) const;
-        
-                int heaviestQuark(int idIn) const;
-        
-                int baryonNumberType(int idIn) const;
-        
-                int nQuarksInCode(int idIn, int idQIn) const;
+                int baryonNumberType(int idIn);
         
                 void rescaleBR(int idIn, double newSumBR);
         
                 void rescaleBR(int idIn);
+        
+                void setResonancePtr(int idIn, Pythia8::ResonanceWidths* resonancePtrIn);
         
                 void resInit(int idIn);
         
@@ -383,6 +349,8 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         
                 double resWidthChan(int idIn, double mHat);
         
+                Pythia8::ParticleDataEntry* particleDataEntryPtr(int idIn);
+        
                 bool getIsInit();
         
         
@@ -413,10 +381,10 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 #include "gambit/Backends/backend_undefs.hpp"
 
-#endif /* __wrapper_ParticleData_decl_Pythia_8_312_h__ */
+#endif /* __wrapper_ParticleData_decl_Pythia_8_212_h__ */
 ```
 
 
 -------------------------------
 
-Updated on 2025-02-12 at 15:36:43 +0000
+Updated on 2025-02-12 at 16:10:36 +0000

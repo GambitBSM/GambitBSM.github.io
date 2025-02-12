@@ -1,11 +1,11 @@
 ---
-title: "file Pythia_8_312/wrapper_SigmaTotal_decl.h"
+title: "file Pythia_8_212/wrapper_SigmaTotal_decl.h"
 
 description: "[No description available]"
 
 ---
 
-# file Pythia_8_312/wrapper_SigmaTotal_decl.h
+# file Pythia_8_212/wrapper_SigmaTotal_decl.h
 
 [No description available]
 
@@ -34,14 +34,16 @@ namespace CAT_3(
 ## Source code
 
 ```
-#ifndef __wrapper_SigmaTotal_decl_Pythia_8_312_h__
-#define __wrapper_SigmaTotal_decl_Pythia_8_312_h__
+#ifndef __wrapper_SigmaTotal_decl_Pythia_8_212_h__
+#define __wrapper_SigmaTotal_decl_Pythia_8_212_h__
 
 #include <cstddef>
-#include <utility>
 #include "forward_decls_wrapper_classes.h"
 #include "gambit/Backends/wrapperbase.hpp"
 #include "abstract_SigmaTotal.h"
+#include "wrapper_Info_decl.h"
+#include "wrapper_Settings_decl.h"
+#include "wrapper_ParticleData_decl.h"
 
 #include "identification.hpp"
 
@@ -62,31 +64,15 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         
                 // Member functions: 
             public:
-                void init();
+                void init(Pythia8::Info* infoPtrIn, Pythia8::Settings& settings, Pythia8::ParticleData* particleDataPtrIn);
         
                 bool calc(int idA, int idB, double eCM);
         
-                bool hasSigmaTot();
+                bool hasSigmaTot() const;
         
-                double sigmaTot();
+                double sigmaTot() const;
         
-                double rho();
-        
-                double sigmaEl();
-        
-                bool bElIsExp();
-        
-                double bSlopeEl();
-        
-                bool hasCoulomb();
-        
-                bool calcTotEl(int idAin, int idBin, double sIn, double mAin, double mBin);
-        
-                double dsigmaEl(double t, bool useCoulomb, bool onlyPomerons);
-        
-                double dsigmaEl(double t, bool useCoulomb);
-        
-                double dsigmaEl(double t);
+                double sigmaEl() const;
         
                 double sigmaXB() const;
         
@@ -98,29 +84,41 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         
                 double sigmaND() const;
         
-                double dsigmaSD(double xi, double t, bool isXB, int step);
+                bool calcMBRxsecs(int idA, int idB, double eCM);
         
-                double dsigmaSD(double xi, double t, bool isXB);
+                double ddpMax() const;
         
-                double dsigmaSD(double xi, double t);
+                double sdpMax() const;
         
-                bool splitDiff();
+                double dpepMax() const;
         
-                double dsigmaDD(double xi1, double xi2, double t, int step);
+                double bSlopeEl() const;
         
-                double dsigmaDD(double xi1, double xi2, double t);
+                double bSlopeXB(double sX) const;
         
-                double dsigmaCD(double xi1, double xi2, double t1, double t2, int step);
+                double bSlopeAX(double sX) const;
         
-                double dsigmaCD(double xi1, double xi2, double t1, double t2);
+                double bSlopeXX(double sX1, double sX2) const;
         
-                double mMinCD();
+                double mMinXB() const;
         
-                void chooseVMDstates(int idA, int idB, double eCM, int processCode);
+                double mMinAX() const;
         
-                ::std::pair<double, double> tRange(double sIn, double s1In, double s2In, double s3In, double s4In);
+                double mMinAXB() const;
         
-                bool tInRange(double tIn, double sIn, double s1In, double s2In, double s3In, double s4In);
+                double cRes() const;
+        
+                double mResXB() const;
+        
+                double mResAX() const;
+        
+                double sProton() const;
+        
+                double bMinSlopeXB() const;
+        
+                double bMinSlopeAX() const;
+        
+                double bMinSlopeXX() const;
         
         
                 // Wrappers for original constructors: 
@@ -150,10 +148,10 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 #include "gambit/Backends/backend_undefs.hpp"
 
-#endif /* __wrapper_SigmaTotal_decl_Pythia_8_312_h__ */
+#endif /* __wrapper_SigmaTotal_decl_Pythia_8_212_h__ */
 ```
 
 
 -------------------------------
 
-Updated on 2025-02-12 at 15:36:43 +0000
+Updated on 2025-02-12 at 16:10:36 +0000

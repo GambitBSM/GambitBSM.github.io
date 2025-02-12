@@ -52,11 +52,10 @@
     <includedby refid="coutprinter_8cpp" local="yes">coutprinter.cpp</includedby>
     <includedby refid="decay__table_8cpp" local="yes">decay_table.cpp</includedby>
     <includedby refid="depresolver_8cpp" local="yes">depresolver.cpp</includedby>
-    <includedby refid="Core_2src_2diagnostics_8cpp" local="yes">diagnostics.cpp</includedby>
+    <includedby refid="diagnostics_8cpp" local="yes">diagnostics.cpp</includedby>
     <includedby refid="diver__1_80_82_2diver_8cpp" local="yes">diver.cpp</includedby>
-    <includedby refid="diver__1_80_85_2diver_8cpp" local="yes">diver.cpp</includedby>
-    <includedby refid="diver__1_80_84_2diver_8cpp" local="yes">diver.cpp</includedby>
     <includedby refid="diver__1_80_80_2diver_8cpp" local="yes">diver.cpp</includedby>
+    <includedby refid="diver__1_80_84_2diver_8cpp" local="yes">diver.cpp</includedby>
     <includedby refid="file__lock_8cpp" local="yes">file_lock.cpp</includedby>
     <includedby refid="functors_8hpp" local="yes">functors.hpp</includedby>
     <includedby refid="gambit__module__headers_8hpp" local="yes">gambit_module_headers.hpp</includedby>
@@ -90,7 +89,6 @@
     <includedby refid="postprocessor__1_80_80_2postprocessor__object_8cpp" local="yes">postprocessor_object.cpp</includedby>
     <includedby refid="postprocessor__2_80_80_2postprocessor__object_8cpp" local="yes">postprocessor_object.cpp</includedby>
     <includedby refid="resolution__utilities_8cpp" local="yes">resolution_utilities.cpp</includedby>
-    <includedby refid="hdf5printer_2retrieve__overloads_8cpp" local="yes">retrieve_overloads.cpp</includedby>
     <includedby refid="solo_8cpp" local="yes">solo.cpp</includedby>
     <includedby refid="spectrum_8hpp" local="yes">spectrum.hpp</includedby>
     <includedby refid="sqlitebase_8hpp" local="yes">sqlitebase.hpp</includedby>
@@ -401,7 +399,7 @@
         <label>backend_macros.hpp</label>
         <link refid="backend__macros_8hpp"/>
       </node>
-      <node id="328">
+      <node id="316">
         <label>common_macros.hpp</label>
         <link refid="common__macros_8hpp"/>
         <childnode refid="36" relation="include">
@@ -541,7 +539,7 @@
         <childnode refid="148" relation="include">
         </childnode>
       </node>
-      <node id="242">
+      <node id="241">
         <label>interoperability.hpp</label>
         <link refid="interoperability_8hpp"/>
         <childnode refid="36" relation="include">
@@ -549,16 +547,16 @@
         <childnode refid="87" relation="include">
         </childnode>
       </node>
-      <node id="240">
+      <node id="239">
         <label>mathematica_function.hpp</label>
         <link refid="mathematica__function_8hpp"/>
-        <childnode refid="241" relation="include">
+        <childnode refid="240" relation="include">
         </childnode>
       </node>
-      <node id="241">
+      <node id="240">
         <label>mathematica_macros.hpp</label>
         <link refid="mathematica__macros_8hpp"/>
-        <childnode refid="242" relation="include">
+        <childnode refid="241" relation="include">
         </childnode>
       </node>
       <node id="35">
@@ -863,7 +861,7 @@
         <childnode refid="176" relation="include">
         </childnode>
       </node>
-      <node id="314">
+      <node id="302">
         <label>ColliderBit_rollcall.hpp</label>
         <link refid="ColliderBit__rollcall_8hpp"/>
         <childnode refid="154" relation="include">
@@ -882,53 +880,51 @@
         </childnode>
         <childnode refid="196" relation="include">
         </childnode>
-        <childnode refid="204" relation="include">
+        <childnode refid="228" relation="include">
         </childnode>
-        <childnode refid="229" relation="include">
+      </node>
+      <node id="301">
+        <label>ColliderBit_types.hpp</label>
+        <link refid="ColliderBit__types_8hpp"/>
+        <childnode refid="302" relation="include">
+        </childnode>
+        <childnode refid="303" relation="include">
         </childnode>
       </node>
       <node id="313">
-        <label>ColliderBit_types.hpp</label>
-        <link refid="ColliderBit__types_8hpp"/>
-        <childnode refid="314" relation="include">
-        </childnode>
-        <childnode refid="315" relation="include">
-        </childnode>
-      </node>
-      <node id="325">
         <label>Py8Collider.hpp</label>
         <link refid="Py8Collider_8hpp"/>
+        <childnode refid="301" relation="include">
+        </childnode>
+      </node>
+      <node id="314">
+        <label>SetHooksClass.hpp</label>
+        <link refid="SetHooksClass_8hpp"/>
         <childnode refid="313" relation="include">
         </childnode>
       </node>
-      <node id="326">
-        <label>SetHooksClass.hpp</label>
-        <link refid="SetHooksClass_8hpp"/>
-        <childnode refid="325" relation="include">
-        </childnode>
-      </node>
-      <node id="315">
+      <node id="303">
         <label>complete_process_PID_pair_multimaps.hpp</label>
         <link refid="complete__process__PID__pair__multimaps_8hpp"/>
-        <childnode refid="316" relation="include">
+        <childnode refid="304" relation="include">
         </childnode>
         <childnode refid="173" relation="include">
         </childnode>
         <childnode refid="174" relation="include">
         </childnode>
       </node>
-      <node id="310">
+      <node id="298">
         <label>BaseDetector.hpp</label>
         <link refid="BaseDetector_8hpp"/>
-        <childnode refid="311" relation="include">
+        <childnode refid="299" relation="include">
         </childnode>
       </node>
-      <node id="311">
+      <node id="299">
         <label>BuckFast.hpp</label>
         <link refid="BuckFast_8hpp"/>
-        <childnode refid="312" relation="include">
+        <childnode refid="300" relation="include">
         </childnode>
-        <childnode refid="313" relation="include">
+        <childnode refid="301" relation="include">
         </childnode>
         <childnode refid="169" relation="include">
         </childnode>
@@ -949,56 +945,56 @@
         <childnode refid="166" relation="include">
         </childnode>
       </node>
-      <node id="318">
+      <node id="306">
         <label>ALEPHSleptonLimits.hpp</label>
         <link refid="ALEPHSleptonLimits_8hpp_source"/>
-        <childnode refid="313" relation="include">
+        <childnode refid="301" relation="include">
         </childnode>
       </node>
-      <node id="317">
+      <node id="305">
         <label>BaseLimitContainer.hpp</label>
         <link refid="BaseLimitContainer_8hpp"/>
-        <childnode refid="318" relation="include">
+        <childnode refid="306" relation="include">
         </childnode>
-        <childnode refid="319" relation="include">
+        <childnode refid="307" relation="include">
         </childnode>
-        <childnode refid="320" relation="include">
+        <childnode refid="308" relation="include">
         </childnode>
-        <childnode refid="321" relation="include">
+        <childnode refid="309" relation="include">
         </childnode>
-        <childnode refid="322" relation="include">
+        <childnode refid="310" relation="include">
         </childnode>
-        <childnode refid="323" relation="include">
+        <childnode refid="311" relation="include">
         </childnode>
-        <childnode refid="324" relation="include">
+        <childnode refid="312" relation="include">
         </childnode>
       </node>
-      <node id="320">
+      <node id="308">
         <label>L3GauginoLimits.hpp</label>
         <link refid="L3GauginoLimits_8hpp_source"/>
-        <childnode refid="313" relation="include">
+        <childnode refid="301" relation="include">
         </childnode>
       </node>
-      <node id="321">
+      <node id="309">
         <label>L3SleptonLimits.hpp</label>
         <link refid="L3SleptonLimits_8hpp_source"/>
-        <childnode refid="313" relation="include">
+        <childnode refid="301" relation="include">
         </childnode>
       </node>
-      <node id="322">
+      <node id="310">
         <label>L3SmallDeltaMGauginoLimits.hpp</label>
         <link refid="L3SmallDeltaMGauginoLimits_8hpp_source"/>
       </node>
-      <node id="323">
+      <node id="311">
         <label>OPALDegenerateCharginoLimits.hpp</label>
         <link refid="OPALDegenerateCharginoLimits_8hpp_source"/>
-        <childnode refid="313" relation="include">
+        <childnode refid="301" relation="include">
         </childnode>
       </node>
-      <node id="324">
+      <node id="312">
         <label>OPALGauginoLimits.hpp</label>
         <link refid="OPALGauginoLimits_8hpp_source"/>
-        <childnode refid="313" relation="include">
+        <childnode refid="301" relation="include">
         </childnode>
       </node>
       <node id="154">
@@ -1033,10 +1029,6 @@
         <label>LHC_likelihoods.cpp</label>
         <link refid="LHC__likelihoods_8cpp"/>
       </node>
-      <node id="204">
-        <label>PoissonCalculators.cpp</label>
-        <link refid="PoissonCalculators_8cpp"/>
-      </node>
       <node id="162">
         <label>Utils.cpp</label>
         <link refid="Utils_8cpp"/>
@@ -1045,11 +1037,11 @@
         <label>collider_event_weights.cpp</label>
         <link refid="collider__event__weights_8cpp"/>
       </node>
-      <node id="316">
+      <node id="304">
         <label>complete_process_PID_pair_multimaps.cpp</label>
         <link refid="complete__process__PID__pair__multimaps_8cpp"/>
       </node>
-      <node id="312">
+      <node id="300">
         <label>BuckFast.cpp</label>
         <link refid="BuckFast_8cpp"/>
       </node>
@@ -1077,11 +1069,11 @@
         <label>getxsec.cpp</label>
         <link refid="getxsec_8cpp"/>
       </node>
-      <node id="229">
+      <node id="228">
         <label>lep_mssm_xsecs.cpp</label>
         <link refid="lep__mssm__xsecs_8cpp"/>
       </node>
-      <node id="319">
+      <node id="307">
         <label>BaseLimitContainer.cpp</label>
         <link refid="BaseLimitContainer_8cpp"/>
       </node>
@@ -1105,30 +1097,32 @@
         <label>smearEvent.cpp</label>
         <link refid="smearEvent_8cpp"/>
       </node>
-      <node id="51">
+      <node id="50">
         <label>container_factory.hpp</label>
         <link refid="container__factory_8hpp"/>
-        <childnode refid="52" relation="include">
+        <childnode refid="51" relation="include">
         </childnode>
       </node>
-      <node id="57">
+      <node id="56">
         <label>core.hpp</label>
         <link refid="core_8hpp"/>
         <childnode refid="40" relation="include">
         </childnode>
-        <childnode refid="58" relation="include">
+        <childnode refid="57" relation="include">
         </childnode>
         <childnode refid="61" relation="include">
         </childnode>
         <childnode refid="44" relation="include">
         </childnode>
       </node>
-      <node id="58">
+      <node id="57">
         <label>core_singleton.hpp</label>
         <link refid="core__singleton_8hpp"/>
-        <childnode refid="59" relation="include">
+        <childnode refid="58" relation="include">
         </childnode>
-        <childnode refid="54" relation="include">
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
         </childnode>
         <childnode refid="60" relation="include">
         </childnode>
@@ -1136,29 +1130,29 @@
       <node id="61">
         <label>depresolver.hpp</label>
         <link refid="depresolver_8hpp"/>
-        <childnode refid="51" relation="include">
+        <childnode refid="50" relation="include">
         </childnode>
         <childnode refid="43" relation="include">
         </childnode>
-        <childnode refid="54" relation="include">
+        <childnode refid="53" relation="include">
         </childnode>
         <childnode refid="62" relation="include">
         </childnode>
       </node>
-      <node id="54">
+      <node id="53">
         <label>gambit.hpp</label>
         <link refid="gambit_8hpp"/>
-        <childnode refid="55" relation="include">
-        </childnode>
-      </node>
-      <node id="52">
-        <label>likelihood_container.hpp</label>
-        <link refid="likelihood__container_8hpp"/>
-        <childnode refid="53" relation="include">
-        </childnode>
         <childnode refid="54" relation="include">
         </childnode>
-        <childnode refid="56" relation="include">
+      </node>
+      <node id="51">
+        <label>likelihood_container.hpp</label>
+        <link refid="likelihood__container_8hpp"/>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
         </childnode>
       </node>
       <node id="62">
@@ -1169,17 +1163,17 @@
         <childnode refid="63" relation="include">
         </childnode>
       </node>
-      <node id="385">
+      <node id="374">
         <label>yaml_parser.hpp</label>
         <link refid="yaml__parser_8hpp"/>
         <childnode refid="61" relation="include">
         </childnode>
-        <childnode refid="54" relation="include">
+        <childnode refid="53" relation="include">
         </childnode>
-        <childnode refid="386" relation="include">
+        <childnode refid="375" relation="include">
         </childnode>
       </node>
-      <node id="53">
+      <node id="52">
         <label>container_factory.cpp</label>
         <link refid="container__factory_8cpp"/>
       </node>
@@ -1187,7 +1181,7 @@
         <label>core.cpp</label>
         <link refid="core_8cpp"/>
       </node>
-      <node id="59">
+      <node id="58">
         <label>core_singleton.cpp</label>
         <link refid="core__singleton_8cpp"/>
       </node>
@@ -1197,21 +1191,21 @@
       </node>
       <node id="44">
         <label>diagnostics.cpp</label>
-        <link refid="Core_2src_2diagnostics_8cpp"/>
+        <link refid="diagnostics_8cpp"/>
       </node>
       <node id="66">
         <label>functors_with_signals.cpp</label>
         <link refid="functors__with__signals_8cpp"/>
       </node>
-      <node id="55">
+      <node id="54">
         <label>gambit.cpp</label>
         <link refid="gambit_8cpp"/>
       </node>
-      <node id="60">
+      <node id="59">
         <label>ini_functions.cpp</label>
         <link refid="Core_2src_2ini__functions_8cpp"/>
       </node>
-      <node id="56">
+      <node id="55">
         <label>likelihood_container.cpp</label>
         <link refid="likelihood__container_8cpp"/>
       </node>
@@ -1223,7 +1217,7 @@
         <label>observable.cpp</label>
         <link refid="observable_8cpp"/>
       </node>
-      <node id="299">
+      <node id="288">
         <label>resolution_utilities.cpp</label>
         <link refid="resolution__utilities_8cpp"/>
       </node>
@@ -1231,7 +1225,7 @@
         <label>rule.cpp</label>
         <link refid="rule_8cpp"/>
       </node>
-      <node id="386">
+      <node id="375">
         <label>yaml_parser.cpp</label>
         <link refid="yaml__parser_8cpp"/>
       </node>
@@ -1347,7 +1341,7 @@
         <label>PPPC.cpp</label>
         <link refid="PPPC_8cpp"/>
       </node>
-      <node id="205">
+      <node id="204">
         <label>ProcessCatalog.cpp</label>
         <link refid="ProcessCatalog_8cpp"/>
       </node>
@@ -1355,15 +1349,15 @@
         <label>RelicDensity.cpp</label>
         <link refid="RelicDensity_8cpp"/>
       </node>
-      <node id="207">
+      <node id="206">
         <label>ScalarSingletDM.cpp</label>
         <link refid="DarkBit_2src_2ScalarSingletDM_8cpp"/>
       </node>
-      <node id="208">
+      <node id="207">
         <label>SimpleHist.cpp</label>
         <link refid="SimpleHist_8cpp"/>
       </node>
-      <node id="209">
+      <node id="208">
         <label>SimpleLikelihoods.cpp</label>
         <link refid="SimpleLikelihoods_8cpp"/>
       </node>
@@ -1371,23 +1365,23 @@
         <label>SubGeVDM_SelfInteractions.cpp</label>
         <link refid="SubGeVDM__SelfInteractions_8cpp"/>
       </node>
-      <node id="223">
+      <node id="222">
         <label>SubGeVDM_fermion.cpp</label>
         <link refid="SubGeVDM__fermion_8cpp"/>
       </node>
-      <node id="224">
+      <node id="223">
         <label>SubGeVDM_scalar.cpp</label>
         <link refid="SubGeVDM__scalar_8cpp"/>
       </node>
-      <node id="225">
+      <node id="224">
         <label>SunNeutrinos.cpp</label>
         <link refid="SunNeutrinos_8cpp"/>
       </node>
-      <node id="226">
+      <node id="225">
         <label>VectorSingletDM.cpp</label>
         <link refid="DarkBit_2src_2VectorSingletDM_8cpp"/>
       </node>
-      <node id="227">
+      <node id="226">
         <label>WIMP_EFT.cpp</label>
         <link refid="WIMP__EFT_8cpp"/>
       </node>
@@ -1395,7 +1389,7 @@
         <label>Xray.cpp</label>
         <link refid="Xray_8cpp"/>
       </node>
-      <node id="228">
+      <node id="227">
         <label>decay_chain.cpp</label>
         <link refid="decay__chain_8cpp"/>
       </node>
@@ -1403,34 +1397,34 @@
         <label>3bithit.cpp</label>
         <link refid="3bithit_8cpp"/>
       </node>
-      <node id="305">
+      <node id="293">
         <label>decay_utils.hpp</label>
         <link refid="decay__utils_8hpp"/>
         <childnode refid="186" relation="include">
         </childnode>
-        <childnode refid="306" relation="include">
+        <childnode refid="294" relation="include">
         </childnode>
       </node>
       <node id="186">
         <label>DecayBit.cpp</label>
         <link refid="DecayBit_8cpp"/>
       </node>
-      <node id="306">
+      <node id="294">
         <label>decay_utils.cpp</label>
         <link refid="decay__utils_8cpp"/>
       </node>
-      <node id="304">
+      <node id="292">
         <label>decay_table.hpp</label>
         <link refid="decay__table_8hpp"/>
         <childnode refid="91" relation="include">
         </childnode>
         <childnode refid="42" relation="include">
         </childnode>
-        <childnode refid="305" relation="include">
+        <childnode refid="293" relation="include">
         </childnode>
-        <childnode refid="307" relation="include">
+        <childnode refid="295" relation="include">
         </childnode>
-        <childnode refid="309" relation="include">
+        <childnode refid="297" relation="include">
         </childnode>
       </node>
       <node id="64">
@@ -1441,14 +1435,14 @@
         <childnode refid="65" relation="include">
         </childnode>
       </node>
-      <node id="50">
+      <node id="49">
         <label>functors.hpp</label>
         <link refid="functors_8hpp"/>
         <childnode refid="36" relation="include">
         </childnode>
-        <childnode refid="51" relation="include">
+        <childnode refid="50" relation="include">
         </childnode>
-        <childnode refid="57" relation="include">
+        <childnode refid="56" relation="include">
         </childnode>
         <childnode refid="61" relation="include">
         </childnode>
@@ -1461,6 +1455,8 @@
         <childnode refid="67" relation="include">
         </childnode>
         <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
         </childnode>
         <childnode refid="69" relation="include">
         </childnode>
@@ -1558,13 +1554,13 @@
         </childnode>
         <childnode refid="203" relation="include">
         </childnode>
-        <childnode refid="204" relation="include">
-        </childnode>
         <childnode refid="19" relation="include">
         </childnode>
-        <childnode refid="205" relation="include">
+        <childnode refid="204" relation="include">
         </childnode>
         <childnode refid="21" relation="include">
+        </childnode>
+        <childnode refid="205" relation="include">
         </childnode>
         <childnode refid="206" relation="include">
         </childnode>
@@ -1586,17 +1582,17 @@
         </childnode>
         <childnode refid="215" relation="include">
         </childnode>
-        <childnode refid="216" relation="include">
-        </childnode>
         <childnode refid="9" relation="include">
         </childnode>
         <childnode refid="13" relation="include">
         </childnode>
+        <childnode refid="216" relation="include">
+        </childnode>
         <childnode refid="217" relation="include">
         </childnode>
-        <childnode refid="218" relation="include">
-        </childnode>
         <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="218" relation="include">
         </childnode>
         <childnode refid="219" relation="include">
         </childnode>
@@ -1604,9 +1600,9 @@
         </childnode>
         <childnode refid="221" relation="include">
         </childnode>
-        <childnode refid="222" relation="include">
-        </childnode>
         <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="222" relation="include">
         </childnode>
         <childnode refid="223" relation="include">
         </childnode>
@@ -1616,21 +1612,19 @@
         </childnode>
         <childnode refid="226" relation="include">
         </childnode>
-        <childnode refid="227" relation="include">
-        </childnode>
         <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="227" relation="include">
         </childnode>
         <childnode refid="228" relation="include">
         </childnode>
-        <childnode refid="229" relation="include">
-        </childnode>
       </node>
-      <node id="307">
+      <node id="295">
         <label>higgs_couplings_table.hpp</label>
         <link refid="higgs__couplings__table_8hpp"/>
-        <childnode refid="308" relation="include">
+        <childnode refid="296" relation="include">
         </childnode>
-        <childnode refid="309" relation="include">
+        <childnode refid="297" relation="include">
         </childnode>
       </node>
       <node id="71">
@@ -1663,7 +1657,7 @@
         <childnode refid="86" relation="include">
         </childnode>
       </node>
-      <node id="303">
+      <node id="291">
         <label>mssm_slhahelp.hpp</label>
         <link refid="mssm__slhahelp_8hpp"/>
         <childnode refid="157" relation="include">
@@ -1688,21 +1682,21 @@
         </childnode>
         <childnode refid="42" relation="include">
         </childnode>
-        <childnode refid="304" relation="include">
+        <childnode refid="292" relation="include">
         </childnode>
-        <childnode refid="229" relation="include">
+        <childnode refid="228" relation="include">
         </childnode>
-        <childnode refid="244" relation="include">
+        <childnode refid="243" relation="include">
         </childnode>
-        <childnode refid="351" relation="include">
+        <childnode refid="340" relation="include">
         </childnode>
-        <childnode refid="352" relation="include">
+        <childnode refid="341" relation="include">
         </childnode>
       </node>
-      <node id="329">
+      <node id="317">
         <label>printable_types.hpp</label>
         <link refid="Elements_2include_2gambit_2Elements_2printable__types_8hpp"/>
-        <childnode refid="330" relation="include">
+        <childnode refid="318" relation="include">
         </childnode>
       </node>
       <node id="76">
@@ -1713,25 +1707,25 @@
         <childnode refid="77" relation="include">
         </childnode>
       </node>
-      <node id="309">
+      <node id="297">
         <label>shared_types.hpp</label>
         <link refid="shared__types_8hpp"/>
-        <childnode refid="310" relation="include">
+        <childnode refid="298" relation="include">
         </childnode>
-        <childnode refid="317" relation="include">
+        <childnode refid="305" relation="include">
+        </childnode>
+        <childnode refid="302" relation="include">
+        </childnode>
+        <childnode refid="313" relation="include">
         </childnode>
         <childnode refid="314" relation="include">
         </childnode>
-        <childnode refid="325" relation="include">
-        </childnode>
-        <childnode refid="326" relation="include">
-        </childnode>
         <childnode refid="149" relation="include">
         </childnode>
-        <childnode refid="327" relation="include">
+        <childnode refid="315" relation="include">
         </childnode>
       </node>
-      <node id="361">
+      <node id="350">
         <label>smlike_higgs.hpp</label>
         <link refid="smlike__higgs_8hpp"/>
         <childnode refid="186" relation="include">
@@ -1740,69 +1734,71 @@
         </childnode>
         <childnode refid="13" relation="include">
         </childnode>
-        <childnode refid="362" relation="include">
+        <childnode refid="351" relation="include">
         </childnode>
       </node>
-      <node id="364">
+      <node id="353">
         <label>spec.hpp</label>
         <link refid="spec_8hpp"/>
-        <childnode refid="365" relation="include">
+        <childnode refid="354" relation="include">
         </childnode>
-        <childnode refid="366" relation="include">
+        <childnode refid="355" relation="include">
         </childnode>
-        <childnode refid="367" relation="include">
+        <childnode refid="356" relation="include">
         </childnode>
-        <childnode refid="368" relation="include">
+        <childnode refid="357" relation="include">
         </childnode>
-        <childnode refid="369" relation="include">
+        <childnode refid="358" relation="include">
         </childnode>
-        <childnode refid="370" relation="include">
+        <childnode refid="359" relation="include">
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
-        <childnode refid="371" relation="include">
+        <childnode refid="360" relation="include">
         </childnode>
         <childnode refid="17" relation="include">
         </childnode>
-        <childnode refid="372" relation="include">
+        <childnode refid="361" relation="include">
         </childnode>
-        <childnode refid="373" relation="include">
+        <childnode refid="362" relation="include">
         </childnode>
-        <childnode refid="374" relation="include">
+        <childnode refid="363" relation="include">
         </childnode>
-        <childnode refid="377" relation="include">
+        <childnode refid="366" relation="include">
         </childnode>
-        <childnode refid="376" relation="include">
+        <childnode refid="365" relation="include">
         </childnode>
-        <childnode refid="378" relation="include">
+        <childnode refid="367" relation="include">
         </childnode>
         <childnode refid="28" relation="include">
         </childnode>
         <childnode refid="30" relation="include">
         </childnode>
-        <childnode refid="379" relation="include">
+        <childnode refid="368" relation="include">
         </childnode>
-        <childnode refid="380" relation="include">
+        <childnode refid="369" relation="include">
         </childnode>
       </node>
-      <node id="363">
+      <node id="352">
         <label>spec_fptrfinder.hpp</label>
         <link refid="spec__fptrfinder_8hpp"/>
-        <childnode refid="364" relation="include">
+        <childnode refid="353" relation="include">
         </childnode>
-        <childnode refid="352" relation="include">
+        <childnode refid="341" relation="include">
         </childnode>
       </node>
-      <node id="381">
+      <node id="370">
         <label>spec_head.hpp</label>
         <link refid="spec__head_8hpp"/>
-        <childnode refid="364" relation="include">
+        <childnode refid="353" relation="include">
         </childnode>
       </node>
-      <node id="301">
+      <node id="289">
         <label>spectrum.hpp</label>
         <link refid="spectrum_8hpp"/>
         <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="210" relation="include">
         </childnode>
         <childnode refid="211" relation="include">
         </childnode>
@@ -1814,36 +1810,34 @@
         </childnode>
         <childnode refid="215" relation="include">
         </childnode>
-        <childnode refid="216" relation="include">
-        </childnode>
         <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="216" relation="include">
         </childnode>
         <childnode refid="217" relation="include">
         </childnode>
-        <childnode refid="218" relation="include">
-        </childnode>
         <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="218" relation="include">
         </childnode>
         <childnode refid="219" relation="include">
         </childnode>
         <childnode refid="220" relation="include">
         </childnode>
+        <childnode refid="290" relation="include">
+        </childnode>
         <childnode refid="221" relation="include">
         </childnode>
-        <childnode refid="302" relation="include">
+        <childnode refid="291" relation="include">
         </childnode>
-        <childnode refid="222" relation="include">
+        <childnode refid="297" relation="include">
         </childnode>
-        <childnode refid="303" relation="include">
+        <childnode refid="342" relation="include">
         </childnode>
-        <childnode refid="309" relation="include">
-        </childnode>
-        <childnode refid="353" relation="include">
-        </childnode>
-        <childnode refid="354" relation="include">
+        <childnode refid="343" relation="include">
         </childnode>
       </node>
-      <node id="354">
+      <node id="343">
         <label>spectrum_factories.hpp</label>
         <link refid="spectrum__factories_8hpp"/>
         <childnode refid="4" relation="include">
@@ -1856,13 +1850,13 @@
         </childnode>
         <childnode refid="25" relation="include">
         </childnode>
+        <childnode refid="211" relation="include">
+        </childnode>
         <childnode refid="212" relation="include">
         </childnode>
         <childnode refid="213" relation="include">
         </childnode>
         <childnode refid="214" relation="include">
-        </childnode>
-        <childnode refid="215" relation="include">
         </childnode>
         <childnode refid="13" relation="include">
         </childnode>
@@ -1881,7 +1875,7 @@
         <childnode refid="7" relation="include">
         </childnode>
       </node>
-      <node id="359">
+      <node id="348">
         <label>subspectrum.hpp</label>
         <link refid="subspectrum_8hpp"/>
         <childnode refid="8" relation="include">
@@ -1890,31 +1884,31 @@
         </childnode>
         <childnode refid="29" relation="include">
         </childnode>
-        <childnode refid="303" relation="include">
+        <childnode refid="291" relation="include">
         </childnode>
-        <childnode refid="360" relation="include">
+        <childnode refid="349" relation="include">
         </childnode>
-        <childnode refid="361" relation="include">
-        </childnode>
-        <childnode refid="363" relation="include">
-        </childnode>
-        <childnode refid="381" relation="include">
-        </childnode>
-        <childnode refid="301" relation="include">
+        <childnode refid="350" relation="include">
         </childnode>
         <childnode refid="352" relation="include">
         </childnode>
-        <childnode refid="382" relation="include">
+        <childnode refid="370" relation="include">
+        </childnode>
+        <childnode refid="289" relation="include">
+        </childnode>
+        <childnode refid="341" relation="include">
+        </childnode>
+        <childnode refid="371" relation="include">
         </childnode>
       </node>
-      <node id="327">
+      <node id="315">
         <label>types_rollcall.hpp</label>
         <link refid="types__rollcall_8hpp"/>
-        <childnode refid="328" relation="include">
+        <childnode refid="316" relation="include">
         </childnode>
         <childnode refid="70" relation="include">
         </childnode>
-        <childnode refid="329" relation="include">
+        <childnode refid="317" relation="include">
         </childnode>
       </node>
       <node id="42">
@@ -1925,7 +1919,7 @@
         <label>functors.cpp</label>
         <link refid="Elements_2src_2functors_8cpp"/>
       </node>
-      <node id="308">
+      <node id="296">
         <label>higgs_couplings_table.cpp</label>
         <link refid="higgs__couplings__table_8cpp"/>
       </node>
@@ -1933,31 +1927,31 @@
         <label>ini_functions.cpp</label>
         <link refid="Elements_2src_2ini__functions_8cpp"/>
       </node>
-      <node id="244">
+      <node id="243">
         <label>mssm_slhahelp.cpp</label>
         <link refid="mssm__slhahelp_8cpp"/>
       </node>
-      <node id="360">
+      <node id="349">
         <label>slhaea_spec_helpers.cpp</label>
         <link refid="slhaea__spec__helpers_8cpp"/>
       </node>
-      <node id="351">
+      <node id="340">
         <label>sminputs.cpp</label>
         <link refid="sminputs_8cpp"/>
       </node>
-      <node id="362">
+      <node id="351">
         <label>smlike_higgs.cpp</label>
         <link refid="smlike__higgs_8cpp"/>
       </node>
-      <node id="353">
+      <node id="342">
         <label>spectrum.cpp</label>
         <link refid="spectrum_8cpp"/>
       </node>
-      <node id="352">
+      <node id="341">
         <label>subspectrum.cpp</label>
         <link refid="subspectrum_8cpp"/>
       </node>
-      <node id="383">
+      <node id="372">
         <label>type_equivalency.cpp</label>
         <link refid="type__equivalency_8cpp"/>
       </node>
@@ -1981,51 +1975,51 @@
         <label>Flav_reader.cpp</label>
         <link refid="Flav__reader_8cpp"/>
       </node>
-      <node id="237">
+      <node id="236">
         <label>logging.cpp</label>
         <link refid="logging_8cpp"/>
       </node>
-      <node id="238">
+      <node id="237">
         <label>logmaster.cpp</label>
         <link refid="logmaster_8cpp"/>
       </node>
-      <node id="365">
+      <node id="354">
         <label>DMEFTSimpleSpec.hpp</label>
         <link refid="DMEFTSimpleSpec_8hpp"/>
+        <childnode refid="210" relation="include">
+        </childnode>
+      </node>
+      <node id="355">
+        <label>DMsimpVectorMedDiracDMSimpleSpec.hpp</label>
+        <link refid="DMsimpVectorMedDiracDMSimpleSpec_8hpp"/>
         <childnode refid="211" relation="include">
         </childnode>
       </node>
-      <node id="366">
-        <label>DMsimpVectorMedDiracDMSimpleSpec.hpp</label>
-        <link refid="DMsimpVectorMedDiracDMSimpleSpec_8hpp"/>
+      <node id="356">
+        <label>DMsimpVectorMedMajoranaDMSimpleSpec.hpp</label>
+        <link refid="DMsimpVectorMedMajoranaDMSimpleSpec_8hpp"/>
         <childnode refid="212" relation="include">
         </childnode>
       </node>
-      <node id="367">
-        <label>DMsimpVectorMedMajoranaDMSimpleSpec.hpp</label>
-        <link refid="DMsimpVectorMedMajoranaDMSimpleSpec_8hpp"/>
+      <node id="357">
+        <label>DMsimpVectorMedScalarDMSimpleSpec.hpp</label>
+        <link refid="DMsimpVectorMedScalarDMSimpleSpec_8hpp"/>
         <childnode refid="213" relation="include">
         </childnode>
       </node>
-      <node id="368">
-        <label>DMsimpVectorMedScalarDMSimpleSpec.hpp</label>
-        <link refid="DMsimpVectorMedScalarDMSimpleSpec_8hpp"/>
+      <node id="358">
+        <label>DMsimpVectorMedVectorDMSimpleSpec.hpp</label>
+        <link refid="DMsimpVectorMedVectorDMSimpleSpec_8hpp"/>
         <childnode refid="214" relation="include">
         </childnode>
       </node>
-      <node id="369">
-        <label>DMsimpVectorMedVectorDMSimpleSpec.hpp</label>
-        <link refid="DMsimpVectorMedVectorDMSimpleSpec_8hpp"/>
+      <node id="359">
+        <label>DiracSingletDM_Z2SimpleSpec.hpp</label>
+        <link refid="DiracSingletDM__Z2SimpleSpec_8hpp"/>
         <childnode refid="215" relation="include">
         </childnode>
       </node>
-      <node id="370">
-        <label>DiracSingletDM_Z2SimpleSpec.hpp</label>
-        <link refid="DiracSingletDM__Z2SimpleSpec_8hpp"/>
-        <childnode refid="216" relation="include">
-        </childnode>
-      </node>
-      <node id="371">
+      <node id="360">
         <label>MSSMSimpleSpec.hpp</label>
         <link refid="MSSMSimpleSpec_8hpp"/>
         <childnode refid="4" relation="include">
@@ -2041,25 +2035,27 @@
         <childnode refid="13" relation="include">
         </childnode>
       </node>
-      <node id="372">
+      <node id="361">
         <label>MajoranaSingletDM_Z2SimpleSpec.hpp</label>
         <link refid="MajoranaSingletDM__Z2SimpleSpec_8hpp"/>
-        <childnode refid="217" relation="include">
+        <childnode refid="216" relation="include">
         </childnode>
       </node>
-      <node id="374">
+      <node id="363">
         <label>SLHASimpleSpec.hpp</label>
         <link refid="SLHASimpleSpec_8hpp"/>
-        <childnode refid="371" relation="include">
+        <childnode refid="360" relation="include">
         </childnode>
-        <childnode refid="375" relation="include">
+        <childnode refid="364" relation="include">
         </childnode>
-        <childnode refid="376" relation="include">
+        <childnode refid="365" relation="include">
         </childnode>
       </node>
-      <node id="377">
+      <node id="366">
         <label>SMHiggsSimpleSpec.hpp</label>
         <link refid="SMHiggsSimpleSpec_8hpp"/>
+        <childnode refid="210" relation="include">
+        </childnode>
         <childnode refid="211" relation="include">
         </childnode>
         <childnode refid="212" relation="include">
@@ -2070,49 +2066,47 @@
         </childnode>
         <childnode refid="215" relation="include">
         </childnode>
-        <childnode refid="216" relation="include">
-        </childnode>
         <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="216" relation="include">
         </childnode>
         <childnode refid="217" relation="include">
         </childnode>
-        <childnode refid="218" relation="include">
-        </childnode>
         <childnode refid="27" relation="include">
         </childnode>
-        <childnode refid="219" relation="include">
+        <childnode refid="218" relation="include">
         </childnode>
-        <childnode refid="221" relation="include">
+        <childnode refid="220" relation="include">
         </childnode>
       </node>
-      <node id="376">
+      <node id="365">
         <label>SMSimpleSpec.hpp</label>
         <link refid="SMSimpleSpec_8hpp"/>
         <childnode refid="23" relation="include">
         </childnode>
-        <childnode refid="353" relation="include">
+        <childnode refid="342" relation="include">
         </childnode>
-        <childnode refid="354" relation="include">
+        <childnode refid="343" relation="include">
         </childnode>
       </node>
-      <node id="378">
+      <node id="367">
         <label>ScalarSingletDMSimpleSpec.hpp</label>
         <link refid="ScalarSingletDMSimpleSpec_8hpp"/>
         <childnode refid="27" relation="include">
         </childnode>
-        <childnode refid="354" relation="include">
+        <childnode refid="343" relation="include">
         </childnode>
       </node>
-      <node id="379">
+      <node id="368">
         <label>SubGeVDMSimpleSpec.hpp</label>
         <link refid="SubGeVDMSimpleSpec_8hpp"/>
-        <childnode refid="219" relation="include">
+        <childnode refid="218" relation="include">
         </childnode>
       </node>
-      <node id="380">
+      <node id="369">
         <label>VectorSingletDM_Z2SimpleSpec.hpp</label>
         <link refid="VectorSingletDM__Z2SimpleSpec_8hpp"/>
-        <childnode refid="221" relation="include">
+        <childnode refid="220" relation="include">
         </childnode>
       </node>
       <node id="78">
@@ -2137,7 +2131,7 @@
         <label>MSSMSimpleSpec.cpp</label>
         <link refid="MSSMSimpleSpec_8cpp"/>
       </node>
-      <node id="375">
+      <node id="364">
         <label>SLHASimpleSpec.cpp</label>
         <link refid="SLHASimpleSpec_8cpp"/>
       </node>
@@ -2177,7 +2171,7 @@
         <label>mSUGRA.cpp</label>
         <link refid="mSUGRA_8cpp"/>
       </node>
-      <node id="382">
+      <node id="371">
         <label>subspectrum_contents.cpp</label>
         <link refid="subspectrum__contents_8cpp"/>
       </node>
@@ -2185,7 +2179,7 @@
         <label>NeutrinoBit.cpp</label>
         <link refid="NeutrinoBit_8cpp"/>
       </node>
-      <node id="206">
+      <node id="205">
         <label>RightHandedNeutrinos.cpp</label>
         <link refid="RightHandedNeutrinos_8cpp"/>
       </node>
@@ -2197,139 +2191,139 @@
         <label>PrecisionBit.cpp</label>
         <link refid="PrecisionBit_8cpp"/>
       </node>
-      <node id="330">
+      <node id="318">
         <label>baseprinter.hpp</label>
         <link refid="baseprinter_8hpp"/>
         <childnode refid="13" relation="include">
         </childnode>
-        <childnode refid="331" relation="include">
+        <childnode refid="319" relation="include">
         </childnode>
-        <childnode refid="333" relation="include">
+        <childnode refid="321" relation="include">
         </childnode>
         <childnode refid="37" relation="include">
         </childnode>
-        <childnode refid="335" relation="include">
+        <childnode refid="323" relation="include">
         </childnode>
         <childnode refid="61" relation="include">
         </childnode>
-        <childnode refid="337" relation="include">
+        <childnode refid="325" relation="include">
         </childnode>
         <childnode refid="64" relation="include">
         </childnode>
-        <childnode refid="338" relation="include">
+        <childnode refid="326" relation="include">
         </childnode>
-        <childnode refid="340" relation="include">
+        <childnode refid="329" relation="include">
         </childnode>
-        <childnode refid="342" relation="include">
+        <childnode refid="331" relation="include">
         </childnode>
-        <childnode refid="52" relation="include">
+        <childnode refid="51" relation="include">
         </childnode>
-        <childnode refid="248" relation="include">
+        <childnode refid="247" relation="include">
         </childnode>
-        <childnode refid="343" relation="include">
+        <childnode refid="332" relation="include">
         </childnode>
-        <childnode refid="344" relation="include">
+        <childnode refid="333" relation="include">
         </childnode>
-        <childnode refid="345" relation="include">
+        <childnode refid="334" relation="include">
         </childnode>
-        <childnode refid="348" relation="include">
+        <childnode refid="337" relation="include">
         </childnode>
         <childnode refid="72" relation="include">
         </childnode>
       </node>
-      <node id="343">
+      <node id="332">
         <label>printer_utils.hpp</label>
         <link refid="printer__utils_8hpp"/>
         <childnode refid="21" relation="include">
         </childnode>
       </node>
-      <node id="331">
+      <node id="319">
         <label>asciiprinter.hpp</label>
         <link refid="asciiprinter_8hpp"/>
         <childnode refid="33" relation="include">
         </childnode>
-        <childnode refid="332" relation="include">
+        <childnode refid="320" relation="include">
         </childnode>
       </node>
-      <node id="333">
+      <node id="321">
         <label>asciireader.hpp</label>
         <link refid="asciireader_8hpp"/>
         <childnode refid="34" relation="include">
         </childnode>
-        <childnode refid="334" relation="include">
+        <childnode refid="322" relation="include">
         </childnode>
       </node>
-      <node id="335">
+      <node id="323">
         <label>coutprinter.hpp</label>
         <link refid="coutprinter_8hpp"/>
         <childnode refid="41" relation="include">
         </childnode>
-        <childnode refid="336" relation="include">
+        <childnode refid="324" relation="include">
         </childnode>
       </node>
-      <node id="338">
+      <node id="326">
         <label>hdf5printer.hpp</label>
         <link refid="hdf5printer_8hpp"/>
-        <childnode refid="231" relation="include">
+        <childnode refid="230" relation="include">
         </childnode>
-        <childnode refid="233" relation="include">
-        </childnode>
-        <childnode refid="339" relation="include">
-        </childnode>
-        <childnode refid="300" relation="include">
-        </childnode>
-      </node>
-      <node id="340">
-        <label>hdf5printer_v2.hpp</label>
-        <link refid="hdf5printer__v2_8hpp"/>
         <childnode refid="232" relation="include">
         </childnode>
-        <childnode refid="341" relation="include">
+        <childnode refid="327" relation="include">
+        </childnode>
+        <childnode refid="328" relation="include">
         </childnode>
       </node>
-      <node id="342">
+      <node id="329">
+        <label>hdf5printer_v2.hpp</label>
+        <link refid="hdf5printer__v2_8hpp"/>
+        <childnode refid="231" relation="include">
+        </childnode>
+        <childnode refid="330" relation="include">
+        </childnode>
+      </node>
+      <node id="331">
         <label>hdf5reader.hpp</label>
         <link refid="hdf5reader_8hpp"/>
-        <childnode refid="233" relation="include">
+        <childnode refid="232" relation="include">
         </childnode>
-        <childnode refid="300" relation="include">
+        <childnode refid="328" relation="include">
         </childnode>
       </node>
-      <node id="248">
+      <node id="247">
         <label>noneprinter.hpp</label>
         <link refid="noneprinter_8hpp"/>
       </node>
-      <node id="355">
+      <node id="344">
         <label>sqlitebase.hpp</label>
         <link refid="sqlitebase_8hpp"/>
-        <childnode refid="356" relation="include">
-        </childnode>
         <childnode refid="345" relation="include">
         </childnode>
-        <childnode refid="348" relation="include">
+        <childnode refid="334" relation="include">
+        </childnode>
+        <childnode refid="337" relation="include">
         </childnode>
       </node>
-      <node id="345">
+      <node id="334">
         <label>sqliteprinter.hpp</label>
         <link refid="sqliteprinter_8hpp"/>
-        <childnode refid="346" relation="include">
+        <childnode refid="335" relation="include">
         </childnode>
-        <childnode refid="347" relation="include">
+        <childnode refid="336" relation="include">
         </childnode>
       </node>
-      <node id="348">
+      <node id="337">
         <label>sqlitereader.hpp</label>
         <link refid="sqlitereader_8hpp"/>
-        <childnode refid="349" relation="include">
+        <childnode refid="338" relation="include">
         </childnode>
-        <childnode refid="350" relation="include">
+        <childnode refid="339" relation="include">
         </childnode>
       </node>
       <node id="37">
         <label>baseprinter.cpp</label>
         <link refid="baseprinter_8cpp"/>
       </node>
-      <node id="344">
+      <node id="333">
         <label>printermanager.cpp</label>
         <link refid="printermanager_8cpp"/>
       </node>
@@ -2341,11 +2335,11 @@
         <label>asciireader.cpp</label>
         <link refid="asciireader_8cpp"/>
       </node>
-      <node id="332">
+      <node id="320">
         <label>print_overloads.cpp</label>
         <link refid="asciiprinter_2print__overloads_8cpp"/>
       </node>
-      <node id="334">
+      <node id="322">
         <label>retrieve_overloads.cpp</label>
         <link refid="asciiprinter_2retrieve__overloads_8cpp"/>
       </node>
@@ -2353,192 +2347,194 @@
         <label>coutprinter.cpp</label>
         <link refid="coutprinter_8cpp"/>
       </node>
-      <node id="336">
+      <node id="324">
         <label>print_overloads.cpp</label>
         <link refid="coutprinter_2print__overloads_8cpp"/>
       </node>
-      <node id="230">
+      <node id="229">
         <label>hdf5_combine_tools.cpp</label>
         <link refid="hdf5__combine__tools_8cpp"/>
       </node>
-      <node id="231">
+      <node id="230">
         <label>hdf5printer.cpp</label>
         <link refid="hdf5printer_8cpp"/>
       </node>
-      <node id="233">
+      <node id="232">
         <label>hdf5reader.cpp</label>
         <link refid="hdf5reader_8cpp"/>
       </node>
-      <node id="339">
+      <node id="327">
         <label>print_overloads.cpp</label>
         <link refid="hdf5printer_2print__overloads_8cpp"/>
       </node>
-      <node id="300">
+      <node id="328">
         <label>retrieve_overloads.cpp</label>
         <link refid="hdf5printer_2retrieve__overloads_8cpp"/>
       </node>
-      <node id="232">
+      <node id="231">
         <label>hdf5printer_v2.cpp</label>
         <link refid="hdf5printer__v2_8cpp"/>
       </node>
-      <node id="341">
+      <node id="330">
         <label>print_overloads.cpp</label>
         <link refid="hdf5printer__v2_2print__overloads_8cpp"/>
       </node>
-      <node id="346">
+      <node id="335">
         <label>print_overloads.cpp</label>
         <link refid="sqliteprinter_2print__overloads_8cpp"/>
       </node>
-      <node id="349">
+      <node id="338">
         <label>retrieve_overloads.cpp</label>
         <link refid="sqliteprinter_2retrieve__overloads_8cpp"/>
       </node>
-      <node id="356">
+      <node id="345">
         <label>sqlitebase.cpp</label>
         <link refid="sqlitebase_8cpp"/>
       </node>
-      <node id="347">
+      <node id="336">
         <label>sqliteprinter.cpp</label>
         <link refid="sqliteprinter_8cpp"/>
       </node>
-      <node id="350">
+      <node id="339">
         <label>sqlitereader.cpp</label>
         <link refid="sqlitereader_8cpp"/>
       </node>
-      <node id="239">
+      <node id="238">
         <label>manual_hdf5_combine.cpp</label>
         <link refid="manual__hdf5__combine_8cpp"/>
       </node>
-      <node id="251">
+      <node id="250">
         <label>ScannerBit_standalone.cpp</label>
         <link refid="ScannerBit__standalone_8cpp"/>
       </node>
-      <node id="252">
+      <node id="251">
         <label>factory_defs.hpp</label>
         <link refid="factory__defs_8hpp"/>
-        <childnode refid="253" relation="include">
+        <childnode refid="252" relation="include">
         </childnode>
-        <childnode refid="255" relation="include">
+        <childnode refid="254" relation="include">
         </childnode>
         <childnode refid="256" relation="include">
         </childnode>
-        <childnode refid="258" relation="include">
-        </childnode>
       </node>
-      <node id="295">
+      <node id="284">
         <label>objective_plugin.hpp</label>
         <link refid="objective__plugin_8hpp"/>
-        <childnode refid="296" relation="include">
+        <childnode refid="285" relation="include">
         </childnode>
-        <childnode refid="282" relation="include">
+        <childnode refid="271" relation="include">
         </childnode>
-        <childnode refid="283" relation="include">
+        <childnode refid="272" relation="include">
         </childnode>
       </node>
-      <node id="294">
+      <node id="283">
         <label>plugin_defs.hpp</label>
         <link refid="plugin__defs_8hpp"/>
-        <childnode refid="295" relation="include">
+        <childnode refid="284" relation="include">
         </childnode>
-        <childnode refid="258" relation="include">
+        <childnode refid="256" relation="include">
         </childnode>
       </node>
-      <node id="253">
+      <node id="252">
         <label>plugin_factory.hpp</label>
         <link refid="plugin__factory_8hpp"/>
-        <childnode refid="254" relation="include">
+        <childnode refid="253" relation="include">
         </childnode>
       </node>
-      <node id="297">
+      <node id="286">
         <label>plugin_interface.hpp</label>
         <link refid="plugin__interface_8hpp"/>
-        <childnode refid="259" relation="include">
+        <childnode refid="287" relation="include">
         </childnode>
-        <childnode refid="298" relation="include">
+        <childnode refid="252" relation="include">
         </childnode>
         <childnode refid="253" relation="include">
         </childnode>
-        <childnode refid="254" relation="include">
-        </childnode>
-        <childnode refid="292" relation="include">
+        <childnode refid="281" relation="include">
         </childnode>
       </node>
-      <node id="250">
+      <node id="249">
         <label>plugin_loader.hpp</label>
         <link refid="plugin__loader_8hpp"/>
-        <childnode refid="251" relation="include">
+        <childnode refid="250" relation="include">
         </childnode>
         <childnode refid="40" relation="include">
         </childnode>
         <childnode refid="44" relation="include">
         </childnode>
-        <childnode refid="252" relation="include">
+        <childnode refid="251" relation="include">
         </childnode>
-        <childnode refid="294" relation="include">
+        <childnode refid="283" relation="include">
         </childnode>
-        <childnode refid="297" relation="include">
+        <childnode refid="286" relation="include">
         </childnode>
-        <childnode refid="249" relation="include">
+        <childnode refid="248" relation="include">
         </childnode>
-        <childnode refid="258" relation="include">
+        <childnode refid="256" relation="include">
         </childnode>
       </node>
-      <node id="298">
+      <node id="287">
         <label>plugin.hpp</label>
         <link refid="plugin_8hpp"/>
       </node>
-      <node id="256">
+      <node id="254">
         <label>scan.hpp</label>
         <link refid="scan_8hpp"/>
-        <childnode refid="251" relation="include">
+        <childnode refid="250" relation="include">
         </childnode>
-        <childnode refid="51" relation="include">
+        <childnode refid="50" relation="include">
+        </childnode>
+        <childnode refid="252" relation="include">
         </childnode>
         <childnode refid="253" relation="include">
         </childnode>
-        <childnode refid="254" relation="include">
-        </childnode>
-        <childnode refid="257" relation="include">
+        <childnode refid="255" relation="include">
         </childnode>
       </node>
-      <node id="258">
+      <node id="256">
         <label>scanner_plugin.hpp</label>
         <link refid="scanner__plugin_8hpp"/>
+        <childnode refid="257" relation="include">
+        </childnode>
+        <childnode refid="258" relation="include">
+        </childnode>
         <childnode refid="259" relation="include">
         </childnode>
         <childnode refid="260" relation="include">
         </childnode>
-        <childnode refid="261" relation="include">
-        </childnode>
         <childnode refid="262" relation="include">
         </childnode>
+        <childnode refid="242" relation="include">
+        </childnode>
         <childnode refid="263" relation="include">
+        </childnode>
+        <childnode refid="246" relation="include">
+        </childnode>
+        <childnode refid="244" relation="include">
+        </childnode>
+        <childnode refid="245" relation="include">
         </childnode>
         <childnode refid="264" relation="include">
         </childnode>
         <childnode refid="265" relation="include">
         </childnode>
+        <childnode refid="266" relation="include">
+        </childnode>
         <childnode refid="267" relation="include">
         </childnode>
         <childnode refid="268" relation="include">
         </childnode>
-        <childnode refid="243" relation="include">
+        <childnode refid="269" relation="include">
+        </childnode>
+        <childnode refid="270" relation="include">
+        </childnode>
+        <childnode refid="271" relation="include">
         </childnode>
         <childnode refid="272" relation="include">
         </childnode>
-        <childnode refid="245" relation="include">
-        </childnode>
-        <childnode refid="247" relation="include">
-        </childnode>
-        <childnode refid="246" relation="include">
-        </childnode>
         <childnode refid="273" relation="include">
         </childnode>
-        <childnode refid="274" relation="include">
-        </childnode>
         <childnode refid="275" relation="include">
-        </childnode>
-        <childnode refid="276" relation="include">
         </childnode>
         <childnode refid="277" relation="include">
         </childnode>
@@ -2552,164 +2548,108 @@
         </childnode>
         <childnode refid="282" relation="include">
         </childnode>
-        <childnode refid="283" relation="include">
-        </childnode>
-        <childnode refid="284" relation="include">
-        </childnode>
-        <childnode refid="286" relation="include">
-        </childnode>
-        <childnode refid="288" relation="include">
-        </childnode>
-        <childnode refid="289" relation="include">
-        </childnode>
-        <childnode refid="290" relation="include">
-        </childnode>
-        <childnode refid="291" relation="include">
-        </childnode>
-        <childnode refid="292" relation="include">
-        </childnode>
-        <childnode refid="293" relation="include">
-        </childnode>
       </node>
-      <node id="257">
+      <node id="255">
         <label>scannerbit.hpp</label>
         <link refid="scannerbit_8hpp"/>
-        <childnode refid="251" relation="include">
+        <childnode refid="250" relation="include">
         </childnode>
-        <childnode refid="54" relation="include">
-        </childnode>
-      </node>
-      <node id="260">
-        <label>ais.hpp</label>
-        <link refid="ais_8hpp"/>
-        <childnode refid="259" relation="include">
+        <childnode refid="53" relation="include">
         </childnode>
       </node>
-      <node id="261">
+      <node id="259">
         <label>diver.hpp</label>
-        <link refid="diver__1_80_80_2diver_8hpp"/>
-        <childnode refid="48" relation="include">
-        </childnode>
-      </node>
-      <node id="264">
-        <label>diver.hpp</label>
-        <link refid="diver__1_80_82_2diver_8hpp"/>
-        <childnode refid="45" relation="include">
-        </childnode>
-      </node>
-      <node id="263">
-        <label>diver.hpp</label>
-        <link refid="diver__1_80_84_2diver_8hpp"/>
-        <childnode refid="47" relation="include">
-        </childnode>
-      </node>
-      <node id="262">
-        <label>diver.hpp</label>
-        <link refid="diver__1_80_85_2diver_8hpp"/>
+        <link refid="1_80_80_2diver_8hpp"/>
         <childnode refid="46" relation="include">
         </childnode>
       </node>
-      <node id="265">
+      <node id="257">
+        <label>diver.hpp</label>
+        <link refid="1_80_82_2diver_8hpp"/>
+        <childnode refid="45" relation="include">
+        </childnode>
+      </node>
+      <node id="258">
+        <label>diver.hpp</label>
+        <link refid="1_80_84_2diver_8hpp"/>
+        <childnode refid="47" relation="include">
+        </childnode>
+      </node>
+      <node id="260">
         <label>great.hpp</label>
         <link refid="great_8hpp"/>
+        <childnode refid="261" relation="include">
+        </childnode>
+      </node>
+      <node id="263">
+        <label>minuit2.hpp</label>
+        <link refid="minuit2_8hpp"/>
+        <childnode refid="242" relation="include">
+        </childnode>
+      </node>
+      <node id="264">
+        <label>multinest.hpp</label>
+        <link refid="multinest_8hpp"/>
+        <childnode refid="246" relation="include">
+        </childnode>
+        <childnode refid="245" relation="include">
+        </childnode>
+        <childnode refid="244" relation="include">
+        </childnode>
+      </node>
+      <node id="270">
+        <label>polychord.hpp</label>
+        <link refid="1_817_81_2polychord_8hpp"/>
+        <childnode refid="265" relation="include">
+        </childnode>
+      </node>
+      <node id="269">
+        <label>polychord.hpp</label>
+        <link refid="1_818_82_2polychord_8hpp"/>
         <childnode refid="266" relation="include">
         </childnode>
       </node>
       <node id="268">
-        <label>jswarm.hpp</label>
-        <link refid="jswarm_8hpp"/>
-        <childnode refid="269" relation="include">
-        </childnode>
-        <childnode refid="270" relation="include">
-        </childnode>
-        <childnode refid="271" relation="include">
-        </childnode>
-      </node>
-      <node id="272">
-        <label>minuit2.hpp</label>
-        <link refid="minuit2_8hpp"/>
-        <childnode refid="243" relation="include">
+        <label>polychord.hpp</label>
+        <link refid="1_820_81_2polychord_8hpp"/>
+        <childnode refid="267" relation="include">
         </childnode>
       </node>
       <node id="275">
-        <label>multinest.hpp</label>
-        <link refid="multinest_2multinest_8hpp"/>
-        <childnode refid="245" relation="include">
+        <label>postprocessor.hpp</label>
+        <link refid="postprocessor__1_80_80_2postprocessor_8hpp"/>
+        <childnode refid="271" relation="include">
         </childnode>
-      </node>
-      <node id="274">
-        <label>multinest.hpp</label>
-        <link refid="multinest__3_810_2multinest_8hpp"/>
-        <childnode refid="247" relation="include">
-        </childnode>
-      </node>
-      <node id="273">
-        <label>multinest.hpp</label>
-        <link refid="multinest__3_811_2multinest_8hpp"/>
-        <childnode refid="246" relation="include">
-        </childnode>
-      </node>
-      <node id="279">
-        <label>polychord.hpp</label>
-        <link refid="1_817_81_2polychord_8hpp"/>
-        <childnode refid="278" relation="include">
-        </childnode>
-      </node>
-      <node id="281">
-        <label>polychord.hpp</label>
-        <link refid="1_818_82_2polychord_8hpp"/>
-        <childnode refid="277" relation="include">
-        </childnode>
-      </node>
-      <node id="280">
-        <label>polychord.hpp</label>
-        <link refid="1_820_81_2polychord_8hpp"/>
         <childnode refid="276" relation="include">
         </childnode>
       </node>
-      <node id="286">
-        <label>postprocessor.hpp</label>
-        <link refid="postprocessor__1_80_80_2postprocessor_8hpp"/>
-        <childnode refid="282" relation="include">
-        </childnode>
-        <childnode refid="287" relation="include">
-        </childnode>
-      </node>
-      <node id="284">
+      <node id="273">
         <label>postprocessor.hpp</label>
         <link refid="postprocessor__2_80_80_2postprocessor_8hpp"/>
-        <childnode refid="283" relation="include">
+        <childnode refid="272" relation="include">
         </childnode>
-        <childnode refid="285" relation="include">
+        <childnode refid="274" relation="include">
         </childnode>
       </node>
-      <node id="293">
+      <node id="282">
         <label>twalk.hpp</label>
         <link refid="twalk_8hpp"/>
-        <childnode refid="292" relation="include">
+        <childnode refid="281" relation="include">
         </childnode>
       </node>
-      <node id="255">
-        <label>python.hpp</label>
-        <link refid="python_8hpp_source"/>
-      </node>
-      <node id="296">
+      <node id="285">
         <label>examples.cpp</label>
         <link refid="examples_8cpp"/>
       </node>
-      <node id="249">
+      <node id="248">
         <label>plugin_loader.cpp</label>
         <link refid="plugin__loader_8cpp"/>
       </node>
-      <node id="254">
+      <node id="253">
         <label>scan.cpp</label>
         <link refid="scan_8cpp"/>
       </node>
-      <node id="259">
-        <label>ais.cpp</label>
-        <link refid="ais_8cpp"/>
-      </node>
-      <node id="48">
+      <node id="46">
         <label>diver.cpp</label>
         <link refid="diver__1_80_80_2diver_8cpp"/>
       </node>
@@ -2721,95 +2661,79 @@
         <label>diver.cpp</label>
         <link refid="diver__1_80_84_2diver_8cpp"/>
       </node>
-      <node id="46">
-        <label>diver.cpp</label>
-        <link refid="diver__1_80_85_2diver_8cpp"/>
-      </node>
-      <node id="266">
+      <node id="261">
         <label>great.cpp</label>
         <link refid="great_8cpp"/>
       </node>
-      <node id="269">
-        <label>jswarm.cpp</label>
-        <link refid="jswarm_8cpp"/>
-      </node>
-      <node id="270">
-        <label>particle.cpp</label>
-        <link refid="particle_8cpp"/>
-      </node>
-      <node id="271">
-        <label>particle_swarm.cpp</label>
-        <link refid="particle__swarm_8cpp"/>
-      </node>
-      <node id="243">
+      <node id="242">
         <label>minuit2.cpp</label>
         <link refid="minuit2_8cpp"/>
       </node>
-      <node id="247">
+      <node id="246">
         <label>multinest.cpp</label>
         <link refid="multinest__3_810_2multinest_8cpp"/>
       </node>
-      <node id="246">
+      <node id="245">
         <label>multinest.cpp</label>
         <link refid="multinest__3_811_2multinest_8cpp"/>
       </node>
-      <node id="245">
+      <node id="244">
         <label>multinest.cpp</label>
         <link refid="multinest__3_812_2multinest_8cpp"/>
       </node>
-      <node id="278">
+      <node id="265">
         <label>polychord.cpp</label>
         <link refid="polychord__1_817_81_2polychord_8cpp"/>
       </node>
-      <node id="277">
+      <node id="266">
         <label>polychord.cpp</label>
         <link refid="polychord__1_818_82_2polychord_8cpp"/>
       </node>
-      <node id="276">
+      <node id="267">
         <label>polychord.cpp</label>
         <link refid="polychord__1_820_81_2polychord_8cpp"/>
       </node>
-      <node id="282">
+      <node id="271">
         <label>postprocessor.cpp</label>
         <link refid="postprocessor__1_80_80_2postprocessor_8cpp"/>
       </node>
-      <node id="287">
+      <node id="276">
         <label>postprocessor_object.cpp</label>
         <link refid="postprocessor__1_80_80_2postprocessor__object_8cpp"/>
       </node>
-      <node id="283">
+      <node id="272">
         <label>postprocessor.cpp</label>
         <link refid="postprocessor__2_80_80_2postprocessor_8cpp"/>
       </node>
-      <node id="285">
+      <node id="274">
         <label>postprocessor_object.cpp</label>
         <link refid="postprocessor__2_80_80_2postprocessor__object_8cpp"/>
       </node>
-      <node id="267">
+      <node id="262">
         <label>grid.cpp</label>
         <link refid="grid_8cpp"/>
       </node>
-      <node id="288">
+      <node id="277">
         <label>random.cpp</label>
         <link refid="random_8cpp"/>
       </node>
-      <node id="289">
+      <node id="278">
         <label>raster.cpp</label>
         <link refid="raster_8cpp"/>
       </node>
-      <node id="290">
+      <node id="279">
         <label>square_grid.cpp</label>
         <link refid="square__grid_8cpp"/>
       </node>
-      <node id="291">
+      <node id="280">
         <label>toy_mcmc.cpp</label>
         <link refid="toy__mcmc_8cpp"/>
       </node>
-      <node id="292">
+      <node id="281">
         <label>twalk.cpp</label>
         <link refid="twalk_8cpp"/>
       </node>
-      <node id="302">
+      <node id="290">
         <label>SpecBit_examples.cpp</label>
         <link refid="SpecBit__examples_8cpp"/>
       </node>
@@ -2849,10 +2773,12 @@
         <childnode refid="18" relation="include">
         </childnode>
       </node>
-      <node id="373">
+      <node id="362">
         <label>QedQcdWrapper.hpp</label>
         <link refid="QedQcdWrapper_8hpp"/>
         <childnode refid="20" relation="include">
+        </childnode>
+        <childnode refid="210" relation="include">
         </childnode>
         <childnode refid="211" relation="include">
         </childnode>
@@ -2864,23 +2790,21 @@
         </childnode>
         <childnode refid="215" relation="include">
         </childnode>
-        <childnode refid="216" relation="include">
-        </childnode>
         <childnode refid="9" relation="include">
         </childnode>
         <childnode refid="13" relation="include">
         </childnode>
+        <childnode refid="216" relation="include">
+        </childnode>
         <childnode refid="217" relation="include">
         </childnode>
-        <childnode refid="218" relation="include">
-        </childnode>
         <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="218" relation="include">
         </childnode>
         <childnode refid="219" relation="include">
         </childnode>
         <childnode refid="220" relation="include">
-        </childnode>
-        <childnode refid="221" relation="include">
         </childnode>
       </node>
       <node id="26">
@@ -2927,31 +2851,31 @@
         <label>QedQcdWrapper.cpp</label>
         <link refid="QedQcdWrapper_8cpp"/>
       </node>
-      <node id="210">
+      <node id="209">
         <label>SpecBit.cpp</label>
         <link refid="SpecBit_8cpp"/>
       </node>
-      <node id="211">
+      <node id="210">
         <label>SpecBit_DMEFT.cpp</label>
         <link refid="SpecBit__DMEFT_8cpp"/>
       </node>
-      <node id="212">
+      <node id="211">
         <label>SpecBit_DMsimpVectorMedDiracDM.cpp</label>
         <link refid="SpecBit__DMsimpVectorMedDiracDM_8cpp"/>
       </node>
-      <node id="213">
+      <node id="212">
         <label>SpecBit_DMsimpVectorMedMajoranaDM.cpp</label>
         <link refid="SpecBit__DMsimpVectorMedMajoranaDM_8cpp"/>
       </node>
-      <node id="214">
+      <node id="213">
         <label>SpecBit_DMsimpVectorMedScalarDM.cpp</label>
         <link refid="SpecBit__DMsimpVectorMedScalarDM_8cpp"/>
       </node>
-      <node id="215">
+      <node id="214">
         <label>SpecBit_DMsimpVectorMedVectorDM.cpp</label>
         <link refid="SpecBit__DMsimpVectorMedVectorDM_8cpp"/>
       </node>
-      <node id="216">
+      <node id="215">
         <label>SpecBit_DiracSingletDM.cpp</label>
         <link refid="SpecBit__DiracSingletDM_8cpp"/>
       </node>
@@ -2963,11 +2887,11 @@
         <label>SpecBit_MSSM.cpp</label>
         <link refid="SpecBit__MSSM_8cpp"/>
       </node>
-      <node id="217">
+      <node id="216">
         <label>SpecBit_MajoranaSingletDM.cpp</label>
         <link refid="SpecBit__MajoranaSingletDM_8cpp"/>
       </node>
-      <node id="218">
+      <node id="217">
         <label>SpecBit_SM.cpp</label>
         <link refid="SpecBit__SM_8cpp"/>
       </node>
@@ -2975,38 +2899,38 @@
         <label>SpecBit_ScalarSingletDM.cpp</label>
         <link refid="SpecBit__ScalarSingletDM_8cpp"/>
       </node>
-      <node id="219">
+      <node id="218">
         <label>SpecBit_SubGeVDM.cpp</label>
         <link refid="SpecBit__SubGeVDM_8cpp"/>
       </node>
-      <node id="220">
+      <node id="219">
         <label>SpecBit_VS.cpp</label>
         <link refid="SpecBit__VS_8cpp"/>
       </node>
-      <node id="221">
+      <node id="220">
         <label>SpecBit_VectorSingletDM.cpp</label>
         <link refid="SpecBit__VectorSingletDM_8cpp"/>
       </node>
-      <node id="222">
+      <node id="221">
         <label>SpecBit_tests.cpp</label>
         <link refid="src_2SpecBit__tests_8cpp"/>
       </node>
-      <node id="234">
+      <node id="233">
         <label>integration.hpp</label>
         <link refid="integration_8hpp"/>
         <childnode refid="186" relation="include">
         </childnode>
-        <childnode refid="206" relation="include">
+        <childnode refid="205" relation="include">
         </childnode>
-        <childnode refid="235" relation="include">
+        <childnode refid="234" relation="include">
         </childnode>
       </node>
-      <node id="357">
+      <node id="346">
         <label>standalone_utils.hpp</label>
         <link refid="standalone__utils_8hpp"/>
         <childnode refid="72" relation="include">
         </childnode>
-        <childnode refid="358" relation="include">
+        <childnode refid="347" relation="include">
         </childnode>
       </node>
       <node id="1">
@@ -3094,13 +3018,13 @@
         </childnode>
         <childnode refid="49" relation="include">
         </childnode>
-        <childnode refid="50" relation="include">
-        </childnode>
         <childnode refid="149" relation="include">
         </childnode>
         <childnode refid="170" relation="include">
         </childnode>
         <childnode refid="171" relation="include">
+        </childnode>
+        <childnode refid="229" relation="include">
         </childnode>
         <childnode refid="230" relation="include">
         </childnode>
@@ -3108,11 +3032,11 @@
         </childnode>
         <childnode refid="232" relation="include">
         </childnode>
-        <childnode refid="233" relation="include">
-        </childnode>
         <childnode refid="67" relation="include">
         </childnode>
-        <childnode refid="234" relation="include">
+        <childnode refid="233" relation="include">
+        </childnode>
+        <childnode refid="235" relation="include">
         </childnode>
         <childnode refid="236" relation="include">
         </childnode>
@@ -3122,7 +3046,7 @@
         </childnode>
         <childnode refid="239" relation="include">
         </childnode>
-        <childnode refid="240" relation="include">
+        <childnode refid="242" relation="include">
         </childnode>
         <childnode refid="243" relation="include">
         </childnode>
@@ -3134,82 +3058,82 @@
         </childnode>
         <childnode refid="247" relation="include">
         </childnode>
-        <childnode refid="248" relation="include">
-        </childnode>
         <childnode refid="145" relation="include">
+        </childnode>
+        <childnode refid="248" relation="include">
         </childnode>
         <childnode refid="249" relation="include">
         </childnode>
-        <childnode refid="250" relation="include">
+        <childnode refid="267" relation="include">
+        </childnode>
+        <childnode refid="265" relation="include">
+        </childnode>
+        <childnode refid="266" relation="include">
+        </childnode>
+        <childnode refid="272" relation="include">
+        </childnode>
+        <childnode refid="271" relation="include">
         </childnode>
         <childnode refid="276" relation="include">
         </childnode>
-        <childnode refid="278" relation="include">
+        <childnode refid="274" relation="include">
         </childnode>
-        <childnode refid="277" relation="include">
+        <childnode refid="288" relation="include">
         </childnode>
-        <childnode refid="283" relation="include">
+        <childnode refid="289" relation="include">
         </childnode>
-        <childnode refid="282" relation="include">
+        <childnode refid="344" relation="include">
         </childnode>
-        <childnode refid="287" relation="include">
+        <childnode refid="334" relation="include">
         </childnode>
-        <childnode refid="285" relation="include">
+        <childnode refid="339" relation="include">
         </childnode>
-        <childnode refid="299" relation="include">
+        <childnode refid="346" relation="include">
         </childnode>
-        <childnode refid="300" relation="include">
+        <childnode refid="348" relation="include">
         </childnode>
-        <childnode refid="301" relation="include">
+        <childnode refid="372" relation="include">
         </childnode>
-        <childnode refid="355" relation="include">
+        <childnode refid="373" relation="include">
         </childnode>
-        <childnode refid="345" relation="include">
+        <childnode refid="374" relation="include">
         </childnode>
-        <childnode refid="350" relation="include">
-        </childnode>
-        <childnode refid="357" relation="include">
-        </childnode>
-        <childnode refid="359" relation="include">
-        </childnode>
-        <childnode refid="383" relation="include">
-        </childnode>
-        <childnode refid="384" relation="include">
-        </childnode>
-        <childnode refid="385" relation="include">
-        </childnode>
-        <childnode refid="387" relation="include">
+        <childnode refid="376" relation="include">
         </childnode>
       </node>
       <node id="38">
         <label>bibtex_functions.cpp</label>
         <link refid="bibtex__functions_8cpp"/>
       </node>
-      <node id="337">
+      <node id="325">
         <label>exceptions.cpp</label>
         <link refid="exceptions_8cpp"/>
       </node>
-      <node id="49">
+      <node id="48">
         <label>file_lock.cpp</label>
         <link refid="file__lock_8cpp"/>
       </node>
-      <node id="235">
+      <node id="234">
         <label>integration.cpp</label>
         <link refid="integration_8cpp"/>
       </node>
-      <node id="236">
+      <node id="235">
         <label>interp_collection.cpp</label>
         <link refid="interp__collection_8cpp"/>
       </node>
-      <node id="358">
+      <node id="60">
+        <label>model_parameters.cpp</label>
+        <link refid="model__parameters_8cpp"/>
+      </node>
+      <node id="347">
         <label>standalone_utils.cpp</label>
         <link refid="standalone__utils_8cpp"/>
       </node>
-      <node id="384">
+      <node id="373">
         <label>util_functions.cpp</label>
         <link refid="util__functions_8cpp"/>
       </node>
-      <node id="387">
+      <node id="376">
         <label>yaml_parser_base.cpp</label>
         <link refid="yaml__parser__base_8cpp"/>
       </node>
@@ -3311,209 +3235,199 @@
 <codeline lineno="66"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
 <codeline lineno="67"><highlight class="normal"></highlight></codeline>
 <codeline lineno="68"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">Utils</highlight></codeline>
-<codeline lineno="69"><highlight class="normal"><sp/><sp/>{</highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="70"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Get<sp/>an<sp/>environment<sp/>variable,<sp/>or<sp/>&quot;&quot;<sp/>if<sp/>the<sp/>variable<sp/>is<sp/>not<sp/>set</highlight></codeline>
-<codeline lineno="71"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>std::string<sp/>getEnvVar(std::string<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;<sp/>key<sp/>);</highlight></codeline>
-<codeline lineno="72"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="73"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Return<sp/>the<sp/>root<sp/>directory<sp/>of<sp/>GAMBIT.</highlight></codeline>
-<codeline lineno="74"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Useful<sp/>for<sp/>locating<sp/>configuration<sp/>files<sp/>and<sp/>other<sp/>such<sp/>things</highlight></codeline>
-<codeline lineno="75"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>in<sp/>a<sp/>robust<sp/>manner<sp/>at<sp/>runtime<sp/></highlight></codeline>
-<codeline lineno="76"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>EXPORT_SYMBOLS<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>GAMBIT_root_dir();</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="71"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Return<sp/>the<sp/>path<sp/>to<sp/>the<sp/>build-time<sp/>scratch<sp/>directory</highlight></codeline>
+<codeline lineno="72" refid="util__functions_8hpp_1a8fc8086e36b78153f25a3b9c80a70cfd" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/><ref refid="util__functions_8hpp_1a8fc8086e36b78153f25a3b9c80a70cfd" kindref="member">buildtime_scratch</ref><sp/>=<sp/>GAMBIT_DIR<sp/></highlight><highlight class="stringliteral">&quot;/scratch/build_time/&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="74"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Return<sp/>the<sp/>path<sp/>to<sp/>the<sp/>run-specific<sp/>scratch<sp/>directory</highlight></codeline>
+<codeline lineno="75"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Don&apos;t<sp/>call<sp/>this<sp/>from<sp/>a<sp/>destructor,<sp/>as<sp/>the<sp/>internal<sp/>static<sp/>str<sp/>may<sp/>have<sp/>already<sp/>been<sp/>destroyed.</highlight></codeline>
+<codeline lineno="76"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>EXPORT_SYMBOLS<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;<sp/><ref refid="util__functions_8hpp_1a7ecde801fc354fe3610534cff73c8a4e" kindref="member">runtime_scratch</ref>();</highlight></codeline>
 <codeline lineno="77"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="78"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Return<sp/>the<sp/>path<sp/>to<sp/>the<sp/>build-time<sp/>scratch<sp/>directory</highlight></codeline>
-<codeline lineno="79"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>bjf&gt;<sp/>There<sp/>is<sp/>stuff<sp/>using<sp/>this<sp/>variable<sp/>that<sp/>is<sp/>needed<sp/>by<sp/>ScannerBit<sp/>at<sp/>run<sp/>time,</highlight></codeline>
-<codeline lineno="80"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>not<sp/>just<sp/>build<sp/>time,<sp/>therefore<sp/>it<sp/>needs<sp/>to<sp/>be<sp/>located<sp/>using<sp/>the<sp/>function<sp/>above</highlight></codeline>
-<codeline lineno="81"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//const<sp/>str<sp/>buildtime_scratch<sp/>=<sp/>GAMBIT_DIR<sp/>&quot;/scratch/build_time/&quot;;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/>EXPORT_SYMBOLS<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>buildtime_scratch();</highlight></codeline>
-<codeline lineno="83"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="84"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Return<sp/>the<sp/>path<sp/>to<sp/>the<sp/>run-specific<sp/>scratch<sp/>directory</highlight></codeline>
-<codeline lineno="85"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Don&apos;t<sp/>call<sp/>this<sp/>from<sp/>a<sp/>destructor,<sp/>as<sp/>the<sp/>internal<sp/>static<sp/>str<sp/>may<sp/>have<sp/>already<sp/>been<sp/>destroyed.</highlight></codeline>
-<codeline lineno="86"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>EXPORT_SYMBOLS<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;<sp/>runtime_scratch();</highlight></codeline>
-<codeline lineno="87"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="88"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Convert<sp/>all<sp/>instances<sp/>of<sp/>&quot;p&quot;<sp/>in<sp/>a<sp/>string<sp/>to<sp/>&quot;.&quot;</highlight></codeline>
-<codeline lineno="89"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>EXPORT_SYMBOLS<sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>p2dot(<ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>s);</highlight></codeline>
-<codeline lineno="90"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="91"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Construct<sp/>the<sp/>path<sp/>to<sp/>the<sp/>run-specific<sp/>scratch<sp/>directory</highlight></codeline>
-<codeline lineno="92"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>This<sp/>version<sp/>is<sp/>safe<sp/>to<sp/>call<sp/>from<sp/>a<sp/>destructor.</highlight></codeline>
-<codeline lineno="93"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>EXPORT_SYMBOLS<sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>construct_runtime_scratch(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>fail_on_mpi_uninitialised=</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="78"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Convert<sp/>all<sp/>instances<sp/>of<sp/>&quot;p&quot;<sp/>in<sp/>a<sp/>string<sp/>to<sp/>&quot;.&quot;</highlight></codeline>
+<codeline lineno="79"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>EXPORT_SYMBOLS<sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/><ref refid="util__functions_8hpp_1a5d5dfd398d407f0e92eda2da6c74cd63" kindref="member">p2dot</ref>(<ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>s);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="81"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Construct<sp/>the<sp/>path<sp/>to<sp/>the<sp/>run-specific<sp/>scratch<sp/>directory</highlight></codeline>
+<codeline lineno="82"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>This<sp/>version<sp/>is<sp/>safe<sp/>to<sp/>call<sp/>from<sp/>a<sp/>destructor.</highlight></codeline>
+<codeline lineno="83"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>EXPORT_SYMBOLS<sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/><ref refid="util__functions_8hpp_1a6ced4589258c148ad42a923ae94d938c" kindref="member">construct_runtime_scratch</ref>(</highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>fail_on_mpi_uninitialised=</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="85"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Split<sp/>a<sp/>string<sp/>into<sp/>a<sp/>vector<sp/>of<sp/>strings,<sp/>using<sp/>a<sp/>delimiter,</highlight></codeline>
+<codeline lineno="86"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>and<sp/>removing<sp/>any<sp/>whitespace<sp/>around<sp/>the<sp/>delimiter.</highlight></codeline>
+<codeline lineno="87"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>EXPORT_SYMBOLS<sp/>std::vector&lt;str&gt;<sp/><ref refid="util__functions_8hpp_1a95d3a257b50c49a4dff5668096047578" kindref="member">delimiterSplit</ref>(<ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>s,<sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>delim);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="89"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Strips<sp/>namespace<sp/>from<sp/>the<sp/>start<sp/>of<sp/>a<sp/>string,<sp/>or<sp/>after<sp/>&quot;const&quot;.</highlight></codeline>
+<codeline lineno="90"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>EXPORT_SYMBOLS<sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/><ref refid="util__functions_8hpp_1a8ea1c9f6c53b5cd699de2f43af5da1d4" kindref="member">strip_leading_namespace</ref>(<ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>s,<sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>ns);</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="92"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Replaces<sp/>a<sp/>namespace<sp/>at<sp/>the<sp/>start<sp/>of<sp/>a<sp/>string,<sp/>or<sp/>after<sp/>&quot;const&quot;.</highlight></codeline>
+<codeline lineno="93"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>EXPORT_SYMBOLS<sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/><ref refid="util__functions_8hpp_1a99454425e1159573fedd4bf58cafbf56" kindref="member">replace_leading_namespace</ref>(<ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>s,<sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>ns,<sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>ns_new);</highlight></codeline>
 <codeline lineno="94"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="95"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Split<sp/>a<sp/>string<sp/>into<sp/>a<sp/>vector<sp/>of<sp/>strings,<sp/>using<sp/>a<sp/>delimiter,</highlight></codeline>
-<codeline lineno="96"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>and<sp/>removing<sp/>any<sp/>whitespace<sp/>around<sp/>the<sp/>delimiter.</highlight></codeline>
-<codeline lineno="97"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>EXPORT_SYMBOLS<sp/>std::vector&lt;str&gt;<sp/>delimiterSplit(<ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>s,<sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>delim);</highlight></codeline>
+<codeline lineno="95"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Strip<sp/>all<sp/>whitespace<sp/>except<sp/>that<sp/>following<sp/>&quot;const&quot;,</highlight></codeline>
+<codeline lineno="96"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>in<sp/>which<sp/>case<sp/>the<sp/>whitespace<sp/>is<sp/>replaced<sp/>by<sp/>a<sp/>single<sp/>space.</highlight></codeline>
+<codeline lineno="97"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>EXPORT_SYMBOLS<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="util__functions_8hpp_1a9938cd104b35638bcc519ce69bd1cf2c" kindref="member">strip_whitespace_except_after_const</ref>(<ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;);</highlight></codeline>
 <codeline lineno="98"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="99"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Strips<sp/>namespace<sp/>from<sp/>the<sp/>start<sp/>of<sp/>a<sp/>string,<sp/>or<sp/>after<sp/>&quot;const&quot;.</highlight></codeline>
-<codeline lineno="100"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>EXPORT_SYMBOLS<sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>strip_leading_namespace(<ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>s,<sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>ns);</highlight></codeline>
+<codeline lineno="99"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Strips<sp/>leading<sp/>and/or<sp/>trailing<sp/>parentheses<sp/>from<sp/>a<sp/>string.</highlight></codeline>
+<codeline lineno="100"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>EXPORT_SYMBOLS<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="util__functions_8hpp_1a44ee858c911e80f385fed9eb014e825f" kindref="member">strip_parentheses</ref>(<ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;);</highlight></codeline>
 <codeline lineno="101"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="102"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Replaces<sp/>a<sp/>namespace<sp/>at<sp/>the<sp/>start<sp/>of<sp/>a<sp/>string,<sp/>or<sp/>after<sp/>&quot;const&quot;.</highlight></codeline>
-<codeline lineno="103"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>EXPORT_SYMBOLS<sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>replace_leading_namespace(<ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>s,<sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>ns,<sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>ns_new);</highlight></codeline>
+<codeline lineno="102"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Test<sp/>if<sp/>a<sp/>set<sp/>of<sp/>str,str<sp/>pairs<sp/>contains<sp/>any<sp/>entry<sp/>with<sp/>first<sp/>element<sp/>matching<sp/>a<sp/>given<sp/>string</highlight></codeline>
+<codeline lineno="103" refid="util__functions_8hpp_1a64438b777797a1638f6de2a02d545fe5" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>EXPORT_SYMBOLS<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="util__functions_8hpp_1a64438b777797a1638f6de2a02d545fe5" kindref="member">sspairset_contains</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::set&lt;sspair&gt;&amp;);</highlight></codeline>
 <codeline lineno="104"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="105"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Strip<sp/>all<sp/>whitespace<sp/>except<sp/>that<sp/>following<sp/>&quot;const&quot;,</highlight></codeline>
-<codeline lineno="106"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>in<sp/>which<sp/>case<sp/>the<sp/>whitespace<sp/>is<sp/>replaced<sp/>by<sp/>a<sp/>single<sp/>space.</highlight></codeline>
-<codeline lineno="107"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>EXPORT_SYMBOLS<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>strip_whitespace_except_after_const(<ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;);</highlight></codeline>
-<codeline lineno="108"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="109"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Strips<sp/>leading<sp/>and/or<sp/>trailing<sp/>parentheses<sp/>from<sp/>a<sp/>string.</highlight></codeline>
-<codeline lineno="110"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>EXPORT_SYMBOLS<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>strip_parentheses(<ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;);</highlight></codeline>
-<codeline lineno="111"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="112"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Test<sp/>if<sp/>a<sp/>set<sp/>of<sp/>str,str<sp/>pairs<sp/>contains<sp/>any<sp/>entry<sp/>with<sp/>first<sp/>element<sp/>matching<sp/>a<sp/>given<sp/>string</highlight></codeline>
-<codeline lineno="113" refid="util__functions_8hpp_1a64438b777797a1638f6de2a02d545fe5" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>EXPORT_SYMBOLS<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="util__functions_8hpp_1a64438b777797a1638f6de2a02d545fe5" kindref="member">sspairset_contains</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::set&lt;sspair&gt;&amp;);</highlight></codeline>
-<codeline lineno="114"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="115"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Tests<sp/>if<sp/>a<sp/>set<sp/>of<sp/>str,str<sp/>pairs<sp/>contains<sp/>an<sp/>entry<sp/>matching<sp/>two<sp/>given<sp/>strings</highlight></codeline>
-<codeline lineno="116" refid="util__functions_8hpp_1a6db6b5fb867378b82e395256b19272ed" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>EXPORT_SYMBOLS<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="util__functions_8hpp_1a64438b777797a1638f6de2a02d545fe5" kindref="member">sspairset_contains</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::set&lt;sspair&gt;&amp;);</highlight></codeline>
-<codeline lineno="117"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="118"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Tests<sp/>if<sp/>a<sp/>set<sp/>of<sp/>str,str<sp/>pairs<sp/>contains<sp/>an<sp/>entry<sp/>matching<sp/>a<sp/>given<sp/>pair</highlight></codeline>
-<codeline lineno="119"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>EXPORT_SYMBOLS<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="util__functions_8hpp_1a64438b777797a1638f6de2a02d545fe5" kindref="member">sspairset_contains</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1a02fb1a27cb798b8333a50eb29b32c0a7" kindref="member">sspair</ref>&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::set&lt;sspair&gt;&amp;);</highlight></codeline>
-<codeline lineno="120"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="121"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Created<sp/>a<sp/>str<sp/>of<sp/>a<sp/>specified<sp/>length.</highlight></codeline>
-<codeline lineno="122"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>EXPORT_SYMBOLS<sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/><ref refid="util__functions_8hpp_1ae7e4e20d80d69acddb5999a53ed85e8c" kindref="member">str_fixed_len</ref>(<ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="123"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="124"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Copy<sp/>a<sp/>str<sp/>to<sp/>a<sp/>character<sp/>array,<sp/>stripping<sp/>the<sp/>null<sp/>termination<sp/>character.</highlight></codeline>
-<codeline lineno="125"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>EXPORT_SYMBOLS<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="util__functions_8hpp_1a32de3b774e1ac67c95387f53eaa4d7de" kindref="member">strcpy2f</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>);</highlight></codeline>
-<codeline lineno="126"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="127"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Checks<sp/>whether<sp/>`str&apos;<sp/>ends<sp/>with<sp/>`suffix&apos;</highlight></codeline>
-<codeline lineno="128"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>EXPORT_SYMBOLS<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="util__functions_8hpp_1ab50f1b4aef2cd4ab820abd9bcf416bc8" kindref="member">endsWith</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>suffix);</highlight></codeline>
-<codeline lineno="129"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="130"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Checks<sp/>whether<sp/>`str&apos;<sp/>begins<sp/>with<sp/>`prefix&apos;</highlight></codeline>
-<codeline lineno="131"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>EXPORT_SYMBOLS<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="util__functions_8hpp_1a3ce78eb95b663a09a03cddc63946f135" kindref="member">startsWith</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>prefix,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>case_sensitive=</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="132"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="133"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Perform<sp/>a<sp/>(possibly)<sp/>case-insensitive<sp/>string<sp/>comparison</highlight></codeline>
-<codeline lineno="134"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>EXPORT_SYMBOLS<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="util__functions_8hpp_1a332b3e7f51f8a89f8188552daa349187" kindref="member">iequals</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>a,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>b,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>case_sensitive=</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="135"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="136"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Split<sp/>string<sp/>into<sp/>vector<sp/>of<sp/>strings,<sp/>using<sp/>a<sp/>delimiter<sp/>string</highlight></codeline>
-<codeline lineno="137"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>EXPORT_SYMBOLS<sp/>std::vector&lt;std::string&gt;<sp/><ref refid="util__functions_8hpp_1ac7fb9c625cf6ec2fefc4365a3243921e" kindref="member">split</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>input,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>delimiter);</highlight></codeline>
-<codeline lineno="138"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="139"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Convert<sp/>a<sp/>whole<sp/>string<sp/>to<sp/>lowercase</highlight></codeline>
-<codeline lineno="140"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>EXPORT_SYMBOLS<sp/>std::string<sp/><ref refid="util__functions_8hpp_1a26794789f5b08061d4a17c575999802a" kindref="member">strtolower</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>a);</highlight></codeline>
-<codeline lineno="141"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="142"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Enclose<sp/>a<sp/>string<sp/>in<sp/>quotation<sp/>marks<sp/>if<sp/>it<sp/>contains<sp/>commas</highlight></codeline>
-<codeline lineno="143"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>EXPORT_SYMBOLS<sp/>std::string<sp/><ref refid="util__functions_8hpp_1a4b5593288f0fd37b9a5eaf17cdb34253" kindref="member">quote_if_contains_commas</ref>(<ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>);</highlight></codeline>
-<codeline lineno="144"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="145"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Comparator<sp/>for<sp/>case-insensitive<sp/>comparison<sp/>in<sp/>STL<sp/>assos.<sp/>containers<sp/><sp/>*/</highlight></codeline>
-<codeline lineno="146" refid="structGambit_1_1Utils_1_1ci__less" refkind="compound"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">EXPORT_SYMBOLS<sp/><ref refid="structGambit_1_1Utils_1_1ci__less" kindref="compound">ci_less</ref></highlight></codeline>
-<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>case-independent<sp/>(ci)<sp/>compare_less<sp/>binary<sp/>function</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator()<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;<sp/>s1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;<sp/>s2)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="150" refid="structGambit_1_1Utils_1_1ci__less_1_1nocase__compare" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structGambit_1_1Utils_1_1ci__less_1_1nocase__compare" kindref="compound">nocase_compare</ref></highlight></codeline>
-<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator()<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">&amp;<sp/>c1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">&amp;<sp/>c2)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="155"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="156"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Get<sp/>pointers<sp/>to<sp/>beginning<sp/>and<sp/>end<sp/>of<sp/>array.</highlight></codeline>
-<codeline lineno="157"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Useful<sp/>for<sp/>initialising<sp/>vectors<sp/>with<sp/>arrays,<sp/>e.g.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/>int<sp/>vv[]<sp/>=<sp/>{<sp/>12,43<sp/>};</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/>std::vector&lt;int&gt;<sp/>v(beginA(vv),<sp/>endA(vv));</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Though<sp/>&apos;begin&apos;<sp/>is<sp/>unnecessary,<sp/>can<sp/>just<sp/>do</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/>std::vector&lt;int&gt;<sp/>v(vv,<sp/>endA(vv));</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>N&gt;</highlight></codeline>
-<codeline lineno="163" refid="util__functions_8hpp_1aa220fd5aed1070ecf2636aacdfd87b71" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>T*<sp/><ref refid="util__functions_8hpp_1aa220fd5aed1070ecf2636aacdfd87b71" kindref="member">beginA</ref>(T(&amp;arr)[N])<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;arr[0];<sp/>}</highlight></codeline>
-<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>N&gt;</highlight></codeline>
-<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/>T*<sp/>endA(T(&amp;arr)[N])<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;arr[0]+N;<sp/>}</highlight></codeline>
-<codeline lineno="166"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="167"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Test<sp/>if<sp/>two<sp/>sets<sp/>are<sp/>disjoint<sp/>(works<sp/>on<sp/>any<sp/>sorted<sp/>std<sp/>container<sp/>I<sp/>think)</highlight></codeline>
-<codeline lineno="168"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>From<sp/>http://stackoverflow.com/questions/1964150/c-test-if-2-sets-are-disjoint</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>Set1,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>Set2&gt;</highlight></codeline>
-<codeline lineno="170" refid="util__functions_8hpp_1aec08e51e0cbe7ff1bffca6d9f6915990" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="util__functions_8hpp_1aec08e51e0cbe7ff1bffca6d9f6915990" kindref="member">is_disjoint</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Set1<sp/>&amp;set1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Set2<sp/>&amp;set2)</highlight></codeline>
-<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(set1.empty()<sp/>||<sp/>set2.empty())<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="173"><highlight class="normal"></highlight></codeline>
-<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Set1::const_iterator</highlight></codeline>
-<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>it1<sp/>=<sp/>set1.begin(),</highlight></codeline>
-<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>it1End<sp/>=<sp/>set1.end();</highlight></codeline>
-<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Set2::const_iterator</highlight></codeline>
-<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>it2<sp/>=<sp/>set2.begin(),</highlight></codeline>
-<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>it2End<sp/>=<sp/>set2.end();</highlight></codeline>
-<codeline lineno="180"><highlight class="normal"></highlight></codeline>
-<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(*it1<sp/>&gt;<sp/>*set2.rbegin()<sp/>||<sp/>*it2<sp/>&gt;<sp/>*set1.rbegin())<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="182"><highlight class="normal"></highlight></codeline>
-<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(it1<sp/>!=<sp/>it1End<sp/>&amp;&amp;<sp/>it2<sp/>!=<sp/>it2End)</highlight></codeline>
-<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(*it1<sp/>==<sp/>*it2)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(*it1<sp/>&lt;<sp/>*it2)<sp/>{<sp/>it1++;<sp/>}</highlight></codeline>
-<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{<sp/>it2++;<sp/>}</highlight></codeline>
-<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="189"><highlight class="normal"></highlight></codeline>
-<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="192"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="193"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Ensure<sp/>that<sp/>a<sp/>path<sp/>exists<sp/>(and<sp/>then<sp/>return<sp/>the<sp/>path,<sp/>for<sp/>chaining<sp/>purposes)</highlight></codeline>
-<codeline lineno="194"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>EXPORT_SYMBOLS<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;<sp/>ensure_path_exists(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;);</highlight></codeline>
-<codeline lineno="195"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="196"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Check<sp/>if<sp/>a<sp/>file<sp/>exists</highlight></codeline>
-<codeline lineno="197"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>EXPORT_SYMBOLS<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>file_exists(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>filename);</highlight></codeline>
-<codeline lineno="198"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="199"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Return<sp/>a<sp/>vector<sp/>of<sp/>strings<sp/>listing<sp/>the<sp/>contents<sp/>of<sp/>a<sp/>directory<sp/>(POSIX)</highlight></codeline>
-<codeline lineno="200"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>EXPORT_SYMBOLS<sp/>std::vector&lt;str&gt;<sp/>ls_dir(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;<sp/>dir);</highlight></codeline>
-<codeline lineno="201"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="202"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Get<sp/>directory<sp/>name<sp/>from<sp/>full<sp/>path+filename<sp/>(POSIX)</highlight></codeline>
-<codeline lineno="203"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>EXPORT_SYMBOLS<sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>dir_name(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;<sp/>path);</highlight></codeline>
-<codeline lineno="204"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="205"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Get<sp/>file<sp/>name<sp/>from<sp/>full<sp/>path+filename<sp/>(POSIX)</highlight></codeline>
-<codeline lineno="206"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>EXPORT_SYMBOLS<sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>base_name(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;<sp/>path);</highlight></codeline>
-<codeline lineno="207"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="208"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Delete<sp/>all<sp/>files<sp/>in<sp/>a<sp/>directory<sp/>(does<sp/>not<sp/>act<sp/>recursively)</highlight></codeline>
-<codeline lineno="209"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>EXPORT_SYMBOLS<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>remove_all_files_in(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;<sp/>dirname,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>error_if_absent<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
-<codeline lineno="210"><highlight class="normal"></highlight></codeline>
-<codeline lineno="211"><highlight class="normal"></highlight></codeline>
-<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::chrono::time_point&lt;std::chrono::system_clock&gt;<sp/>time_point;</highlight></codeline>
+<codeline lineno="105"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Tests<sp/>if<sp/>a<sp/>set<sp/>of<sp/>str,str<sp/>pairs<sp/>contains<sp/>an<sp/>entry<sp/>matching<sp/>two<sp/>given<sp/>strings</highlight></codeline>
+<codeline lineno="106" refid="util__functions_8hpp_1a6db6b5fb867378b82e395256b19272ed" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>EXPORT_SYMBOLS<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="util__functions_8hpp_1a64438b777797a1638f6de2a02d545fe5" kindref="member">sspairset_contains</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::set&lt;sspair&gt;&amp;);</highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="108"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Tests<sp/>if<sp/>a<sp/>set<sp/>of<sp/>str,str<sp/>pairs<sp/>contains<sp/>an<sp/>entry<sp/>matching<sp/>a<sp/>given<sp/>pair</highlight></codeline>
+<codeline lineno="109"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>EXPORT_SYMBOLS<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="util__functions_8hpp_1a64438b777797a1638f6de2a02d545fe5" kindref="member">sspairset_contains</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1a02fb1a27cb798b8333a50eb29b32c0a7" kindref="member">sspair</ref>&amp;,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::set&lt;sspair&gt;&amp;);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="111"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Created<sp/>a<sp/>str<sp/>of<sp/>a<sp/>specified<sp/>length.</highlight></codeline>
+<codeline lineno="112"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>EXPORT_SYMBOLS<sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/><ref refid="util__functions_8hpp_1ae7e4e20d80d69acddb5999a53ed85e8c" kindref="member">str_fixed_len</ref>(<ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="114"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Copy<sp/>a<sp/>str<sp/>to<sp/>a<sp/>character<sp/>array,<sp/>stripping<sp/>the<sp/>null<sp/>termination<sp/>character.</highlight></codeline>
+<codeline lineno="115"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>EXPORT_SYMBOLS<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="util__functions_8hpp_1a32de3b774e1ac67c95387f53eaa4d7de" kindref="member">strcpy2f</ref>(</highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>);</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="117"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Checks<sp/>whether<sp/>`str&apos;<sp/>ends<sp/>with<sp/>`suffix&apos;</highlight></codeline>
+<codeline lineno="118"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>EXPORT_SYMBOLS<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="util__functions_8hpp_1ab50f1b4aef2cd4ab820abd9bcf416bc8" kindref="member">endsWith</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>suffix);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="120"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Checks<sp/>whether<sp/>`str&apos;<sp/>begins<sp/>with<sp/>`prefix&apos;</highlight></codeline>
+<codeline lineno="121"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>EXPORT_SYMBOLS<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="util__functions_8hpp_1a3ce78eb95b663a09a03cddc63946f135" kindref="member">startsWith</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>prefix,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>case_sensitive=</highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="123"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Perform<sp/>a<sp/>(possibly)<sp/>case-insensitive<sp/>string<sp/>comparison</highlight></codeline>
+<codeline lineno="124"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>EXPORT_SYMBOLS<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="util__functions_8hpp_1a332b3e7f51f8a89f8188552daa349187" kindref="member">iequals</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>a,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>b,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>case_sensitive=</highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="126"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Split<sp/>string<sp/>into<sp/>vector<sp/>of<sp/>strings,<sp/>using<sp/>a<sp/>delimiter<sp/>string</highlight></codeline>
+<codeline lineno="127"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>EXPORT_SYMBOLS<sp/>std::vector&lt;std::string&gt;<sp/><ref refid="util__functions_8hpp_1ac7fb9c625cf6ec2fefc4365a3243921e" kindref="member">split</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>input,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>delimiter);</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="129"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Convert<sp/>a<sp/>whole<sp/>string<sp/>to<sp/>lowercase</highlight></codeline>
+<codeline lineno="130"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>EXPORT_SYMBOLS<sp/>std::string<sp/><ref refid="util__functions_8hpp_1a26794789f5b08061d4a17c575999802a" kindref="member">strtolower</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>a);</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="132"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Enclose<sp/>a<sp/>string<sp/>in<sp/>quotation<sp/>marks<sp/>if<sp/>it<sp/>contains<sp/>commas</highlight></codeline>
+<codeline lineno="133"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>EXPORT_SYMBOLS<sp/>std::string<sp/><ref refid="util__functions_8hpp_1a4b5593288f0fd37b9a5eaf17cdb34253" kindref="member">quote_if_contains_commas</ref>(<ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="135"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Comparator<sp/>for<sp/>case-insensitive<sp/>comparison<sp/>in<sp/>STL<sp/>assos.<sp/>containers<sp/><sp/>*/</highlight></codeline>
+<codeline lineno="136" refid="structGambit_1_1Utils_1_1ci__less" refkind="compound"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">EXPORT_SYMBOLS<sp/><ref refid="structGambit_1_1Utils_1_1ci__less" kindref="compound">ci_less</ref></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>case-independent<sp/>(ci)<sp/>compare_less<sp/>binary<sp/>function</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="139"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator()<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;<sp/>s1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string<sp/>&amp;<sp/>s2)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="140" refid="structGambit_1_1Utils_1_1ci__less_1_1nocase__compare" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal"><ref refid="structGambit_1_1Utils_1_1ci__less_1_1nocase__compare" kindref="compound">nocase_compare</ref></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>operator()<sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">&amp;<sp/>c1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">&amp;<sp/>c2)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="146"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Get<sp/>pointers<sp/>to<sp/>beginning<sp/>and<sp/>end<sp/>of<sp/>array.</highlight></codeline>
+<codeline lineno="147"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Useful<sp/>for<sp/>initialising<sp/>vectors<sp/>with<sp/>arrays,<sp/>e.g.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/>int<sp/>vv[]<sp/>=<sp/>{<sp/>12,43<sp/>};</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/>std::vector&lt;int&gt;<sp/>v(beginA(vv),<sp/>endA(vv));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Though<sp/>&apos;begin&apos;<sp/>is<sp/>unnecessary,<sp/>can<sp/>just<sp/>do</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/>std::vector&lt;int&gt;<sp/>v(vv,<sp/>endA(vv));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>N&gt;</highlight></codeline>
+<codeline lineno="153" refid="util__functions_8hpp_1aa220fd5aed1070ecf2636aacdfd87b71" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>T*<sp/><ref refid="util__functions_8hpp_1aa220fd5aed1070ecf2636aacdfd87b71" kindref="member">beginA</ref>(T(&amp;arr)[N])<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;arr[0];<sp/>}</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T,<sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>N&gt;</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>T*<sp/>endA(T(&amp;arr)[N])<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>&amp;arr[0]+N;<sp/>}</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="157"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Test<sp/>if<sp/>two<sp/>sets<sp/>are<sp/>disjoint<sp/>(works<sp/>on<sp/>any<sp/>sorted<sp/>std<sp/>container<sp/>I<sp/>think)</highlight></codeline>
+<codeline lineno="158"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>From<sp/>http://stackoverflow.com/questions/1964150/c-test-if-2-sets-are-disjoint</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>Set1,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal"><sp/>Set2&gt;</highlight></codeline>
+<codeline lineno="160" refid="util__functions_8hpp_1aec08e51e0cbe7ff1bffca6d9f6915990" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="util__functions_8hpp_1aec08e51e0cbe7ff1bffca6d9f6915990" kindref="member">is_disjoint</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Set1<sp/>&amp;set1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Set2<sp/>&amp;set2)</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(set1.empty()<sp/>||<sp/>set2.empty())<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"></highlight></codeline>
+<codeline lineno="164"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Set1::const_iterator</highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>it1<sp/>=<sp/>set1.begin(),</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>it1End<sp/>=<sp/>set1.end();</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>Set2::const_iterator</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>it2<sp/>=<sp/>set2.begin(),</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>it2End<sp/>=<sp/>set2.end();</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"></highlight></codeline>
+<codeline lineno="171"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(*it1<sp/>&gt;<sp/>*set2.rbegin()<sp/>||<sp/>*it2<sp/>&gt;<sp/>*set1.rbegin())<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="172"><highlight class="normal"></highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">while</highlight><highlight class="normal">(it1<sp/>!=<sp/>it1End<sp/>&amp;&amp;<sp/>it2<sp/>!=<sp/>it2End)</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(*it1<sp/>==<sp/>*it2)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(*it1<sp/>&lt;<sp/>*it2)<sp/>{<sp/>it1++;<sp/>}</highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/>{<sp/>it2++;<sp/>}</highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"></highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="182"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="183"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Ensure<sp/>that<sp/>a<sp/>path<sp/>exists<sp/>(and<sp/>then<sp/>return<sp/>the<sp/>path,<sp/>for<sp/>chaining<sp/>purposes)</highlight></codeline>
+<codeline lineno="184"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>EXPORT_SYMBOLS<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;<sp/>ensure_path_exists(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;);</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="186"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Check<sp/>if<sp/>a<sp/>file<sp/>exists</highlight></codeline>
+<codeline lineno="187"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>EXPORT_SYMBOLS<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>file_exists(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>filename);</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="189"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Return<sp/>a<sp/>vector<sp/>of<sp/>strings<sp/>listing<sp/>the<sp/>contents<sp/>of<sp/>a<sp/>directory<sp/>(POSIX)</highlight></codeline>
+<codeline lineno="190"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>EXPORT_SYMBOLS<sp/>std::vector&lt;str&gt;<sp/>ls_dir(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;<sp/>dir);</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="192"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Get<sp/>directory<sp/>name<sp/>from<sp/>full<sp/>path+filename<sp/>(POSIX)</highlight></codeline>
+<codeline lineno="193"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>EXPORT_SYMBOLS<sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>dir_name(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;<sp/>path);</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="195"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Get<sp/>file<sp/>name<sp/>from<sp/>full<sp/>path+filename<sp/>(POSIX)</highlight></codeline>
+<codeline lineno="196"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>EXPORT_SYMBOLS<sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>base_name(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;<sp/>path);</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="198"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Delete<sp/>all<sp/>files<sp/>in<sp/>a<sp/>directory<sp/>(does<sp/>not<sp/>act<sp/>recursively)</highlight></codeline>
+<codeline lineno="199"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>EXPORT_SYMBOLS<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>remove_all_files_in(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;<sp/>dirname,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>error_if_absent<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"></highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::chrono::time_point&lt;std::chrono::system_clock&gt;<sp/>time_point;</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="204"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Get<sp/>clock<sp/>time</highlight></codeline>
+<codeline lineno="205"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>EXPORT_SYMBOLS<sp/>time_point<sp/>get_clock_now();</highlight></codeline>
+<codeline lineno="206"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="207"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Get<sp/>date<sp/>and<sp/>time</highlight></codeline>
+<codeline lineno="208"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>EXPORT_SYMBOLS<sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>return_time_and_date(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>time_point&amp;<sp/>in);</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="210"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Check<sp/>if<sp/>two<sp/>strings<sp/>are<sp/>a<sp/>&quot;close&quot;<sp/>match</highlight></codeline>
+<codeline lineno="211"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Used<sp/>for<sp/>&quot;did<sp/>you<sp/>mean?&quot;<sp/>type<sp/>checking<sp/>during<sp/>command<sp/>line<sp/>argument<sp/>processing</highlight></codeline>
+<codeline lineno="212"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>EXPORT_SYMBOLS<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>are_similar(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;<sp/>s1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;<sp/>s2);</highlight></codeline>
 <codeline lineno="213"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="214"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Get<sp/>clock<sp/>time</highlight></codeline>
-<codeline lineno="215"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>EXPORT_SYMBOLS<sp/>time_point<sp/>get_clock_now();</highlight></codeline>
-<codeline lineno="216"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="217"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Get<sp/>date<sp/>and<sp/>time</highlight></codeline>
-<codeline lineno="218"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>EXPORT_SYMBOLS<sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>return_time_and_date(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>time_point&amp;<sp/>in);</highlight></codeline>
-<codeline lineno="219"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="220"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Check<sp/>if<sp/>two<sp/>strings<sp/>are<sp/>a<sp/>&quot;close&quot;<sp/>match</highlight></codeline>
-<codeline lineno="221"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Used<sp/>for<sp/>&quot;did<sp/>you<sp/>mean?&quot;<sp/>type<sp/>checking<sp/>during<sp/>command<sp/>line<sp/>argument<sp/>processing</highlight></codeline>
-<codeline lineno="222"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>EXPORT_SYMBOLS<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>are_similar(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;<sp/>s1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;<sp/>s2);</highlight></codeline>
-<codeline lineno="223"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="224"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Sub-check<sp/>for<sp/>are_similar.</highlight></codeline>
-<codeline lineno="225"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>true<sp/>if<sp/>s1<sp/>can<sp/>be<sp/>obtained<sp/>by<sp/>deleting<sp/>one<sp/>character<sp/>from<sp/>s2</highlight></codeline>
-<codeline lineno="226"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>check1(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;<sp/>s1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;<sp/>s2);</highlight></codeline>
+<codeline lineno="214"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Sub-check<sp/>for<sp/>are_similar.</highlight></codeline>
+<codeline lineno="215"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>true<sp/>if<sp/>s1<sp/>can<sp/>be<sp/>obtained<sp/>by<sp/>deleting<sp/>one<sp/>character<sp/>from<sp/>s2</highlight></codeline>
+<codeline lineno="216"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>check1(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;<sp/>s1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;<sp/>s2);</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="218"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Sub-check<sp/>for<sp/>are_similar.</highlight></codeline>
+<codeline lineno="219"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>true<sp/>if<sp/>s1<sp/>can<sp/>be<sp/>obtained<sp/>from<sp/>s2<sp/>by<sp/>changing<sp/>no<sp/>more<sp/>than<sp/>X<sp/>characters<sp/>(X=2<sp/>for<sp/>now)</highlight></codeline>
+<codeline lineno="220"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>check2(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;<sp/>s1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;<sp/>s2);</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="222"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>returns<sp/>square<sp/>of<sp/>double<sp/>-<sp/>saves<sp/>tedious<sp/>repetition</highlight></codeline>
+<codeline lineno="223"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>EXPORT_SYMBOLS<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sqr(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>a);</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="225"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Local<sp/>GAMBIT<sp/>definition<sp/>of<sp/>isnan.<sp/><sp/>Could<sp/>be<sp/>redefined<sp/>at<sp/>a<sp/>later<sp/>point,<sp/>depending<sp/>on<sp/>compiler<sp/>support.</highlight></codeline>
+<codeline lineno="226"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">std::isnan;</highlight></codeline>
 <codeline lineno="227"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="228"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Sub-check<sp/>for<sp/>are_similar.</highlight></codeline>
-<codeline lineno="229"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>true<sp/>if<sp/>s1<sp/>can<sp/>be<sp/>obtained<sp/>from<sp/>s2<sp/>by<sp/>changing<sp/>no<sp/>more<sp/>than<sp/>X<sp/>characters<sp/>(X=2<sp/>for<sp/>now)</highlight></codeline>
-<codeline lineno="230"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>check2(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;<sp/>s1,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;<sp/>s2);</highlight></codeline>
-<codeline lineno="231"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="232"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>returns<sp/>square<sp/>of<sp/>double<sp/>-<sp/>saves<sp/>tedious<sp/>repetition</highlight></codeline>
-<codeline lineno="233"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>EXPORT_SYMBOLS<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>sqr(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>a);</highlight></codeline>
-<codeline lineno="234"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="235"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Local<sp/>GAMBIT<sp/>definition<sp/>of<sp/>isnan.<sp/><sp/>Could<sp/>be<sp/>redefined<sp/>at<sp/>a<sp/>later<sp/>point,<sp/>depending<sp/>on<sp/>compiler<sp/>support.</highlight></codeline>
-<codeline lineno="236"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">std::isnan;</highlight></codeline>
-<codeline lineno="237"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="238"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Local<sp/>GAMBIT<sp/>definition<sp/>of<sp/>isinf.<sp/><sp/>Could<sp/>be<sp/>redefined<sp/>at<sp/>a<sp/>later<sp/>point,<sp/>depending<sp/>on<sp/>compiler<sp/>support.</highlight></codeline>
-<codeline lineno="239"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">std::isinf;</highlight></codeline>
-<codeline lineno="240"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="241"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Check<sp/>if<sp/>a<sp/>string<sp/>represents<sp/>an<sp/>integer</highlight></codeline>
-<codeline lineno="242"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>From:<sp/>http://stackoverflow.com/a/2845275/1447953</highlight></codeline>
-<codeline lineno="243"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>EXPORT_SYMBOLS<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isInteger(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;);</highlight></codeline>
-<codeline lineno="244"><highlight class="normal"></highlight></codeline>
-<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Dummy<sp/>functions<sp/>for<sp/>variadic<sp/>variables<sp/>to<sp/>avoid<sp/>compiler<sp/>warnings</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal">...<sp/>T&gt;<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>dummy_function()<sp/>{}</highlight></codeline>
-<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>dummy_function(T<sp/>one)</highlight></codeline>
-<codeline lineno="248"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>(void)one;</highlight></codeline>
-<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="251"><highlight class="normal"></highlight></codeline>
-<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T1,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal">...<sp/>T&gt;<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>dummy_function(T1<sp/>first,<sp/>T...<sp/>args)</highlight></codeline>
-<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>(void)first;</highlight></codeline>
-<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>dummy_function(args...);</highlight></codeline>
-<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="257"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="258"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Expunge<sp/>entries<sp/>in<sp/>a<sp/>container<sp/>of<sp/>std::pairs<sp/>for<sp/>which<sp/>the<sp/>second<sp/>(boolean)<sp/>value<sp/>of<sp/>the<sp/>pair<sp/>is<sp/>false.</highlight></codeline>
-<codeline lineno="259"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Useful<sp/>for<sp/>allowing<sp/>evaluation<sp/>of<sp/>a<sp/>removal<sp/>criterion<sp/>over<sp/>the<sp/>whole<sp/>container<sp/>in<sp/>parallel.</highlight></codeline>
-<codeline lineno="260"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal">&gt;<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Container,<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">T<sp/>&gt;</highlight></codeline>
-<codeline lineno="261" refid="util__functions_8hpp_1a2a4727984a24b69b1a5109284f6f475d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="util__functions_8hpp_1a2a4727984a24b69b1a5109284f6f475d" kindref="member">masked_erase</ref>(Container&lt;std::pair&lt;T,bool&gt;,<sp/>std::allocator&lt;std::pair&lt;T,bool&gt;&gt;&gt;&amp;<sp/>c)</highlight></codeline>
-<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>it<sp/>=<sp/>std::remove_if(c.begin(),<sp/>c.end(),<sp/>[](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::pair&lt;T,bool&gt;&amp;<sp/>e)<sp/>{<sp/>return<sp/>not<sp/>e.second;<sp/>});</highlight></codeline>
-<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>c.erase(it,<sp/>c.end());</highlight></codeline>
-<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="266"><highlight class="normal"></highlight></codeline>
-<codeline lineno="267"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
-<codeline lineno="268"><highlight class="normal"></highlight></codeline>
-<codeline lineno="269"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="270"><highlight class="normal"></highlight></codeline>
-<codeline lineno="271"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//defined<sp/>__util_functions_hpp__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="228"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Local<sp/>GAMBIT<sp/>definition<sp/>of<sp/>isinf.<sp/><sp/>Could<sp/>be<sp/>redefined<sp/>at<sp/>a<sp/>later<sp/>point,<sp/>depending<sp/>on<sp/>compiler<sp/>support.</highlight></codeline>
+<codeline lineno="229"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">std::isinf;</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="231"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Check<sp/>if<sp/>a<sp/>string<sp/>represents<sp/>an<sp/>integer</highlight></codeline>
+<codeline lineno="232"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>From:<sp/>http://stackoverflow.com/a/2845275/1447953</highlight></codeline>
+<codeline lineno="233"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>EXPORT_SYMBOLS<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isInteger(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;);</highlight></codeline>
+<codeline lineno="234"><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Dummy<sp/>functions<sp/>for<sp/>variadic<sp/>variables<sp/>to<sp/>avoid<sp/>compiler<sp/>warnings</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal">...<sp/>T&gt;<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>dummy_function()<sp/>{}</highlight></codeline>
+<codeline lineno="237"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>dummy_function(T<sp/>one)</highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>(void)one;</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"></highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T1,<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal">...<sp/>T&gt;<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>dummy_function(T1<sp/>first,<sp/>T...<sp/>args)</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>(void)first;</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/>dummy_function(args...);</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="248"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Expunge<sp/>entries<sp/>in<sp/>a<sp/>container<sp/>of<sp/>std::pairs<sp/>for<sp/>which<sp/>the<sp/>second<sp/>(boolean)<sp/>value<sp/>of<sp/>the<sp/>pair<sp/>is<sp/>false.</highlight></codeline>
+<codeline lineno="249"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Useful<sp/>for<sp/>allowing<sp/>evaluation<sp/>of<sp/>a<sp/>removal<sp/>criterion<sp/>over<sp/>the<sp/>whole<sp/>container<sp/>in<sp/>parallel.</highlight></codeline>
+<codeline lineno="250"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">template</highlight><highlight class="normal">&lt;</highlight><highlight class="keyword">class</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">class</highlight><highlight class="normal">&gt;<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">Container,<sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">T<sp/>&gt;</highlight></codeline>
+<codeline lineno="251" refid="util__functions_8hpp_1a2a4727984a24b69b1a5109284f6f475d" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="util__functions_8hpp_1a2a4727984a24b69b1a5109284f6f475d" kindref="member">masked_erase</ref>(Container&lt;std::pair&lt;T,bool&gt;,<sp/>std::allocator&lt;std::pair&lt;T,bool&gt;&gt;&gt;&amp;<sp/>c)</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>it<sp/>=<sp/>std::remove_if(c.begin(),<sp/>c.end(),<sp/>[](</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::pair&lt;T,bool&gt;&amp;<sp/>e)<sp/>{<sp/>return<sp/>not<sp/>e.second;<sp/>});</highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>c.erase(it,<sp/>c.end());</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"></highlight></codeline>
+<codeline lineno="257"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"></highlight></codeline>
+<codeline lineno="261"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//defined<sp/>__util_functions_hpp__</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="Utils/include/gambit/Utils/util_functions.hpp"/>
   </compounddef>

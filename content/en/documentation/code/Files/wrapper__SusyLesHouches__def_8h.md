@@ -1,11 +1,11 @@
 ---
-title: "file Pythia_8_312/wrapper_SusyLesHouches_def.h"
+title: "file Pythia_8_212/wrapper_SusyLesHouches_def.h"
 
 description: "[No description available]"
 
 ---
 
-# file Pythia_8_312/wrapper_SusyLesHouches_def.h
+# file Pythia_8_212/wrapper_SusyLesHouches_def.h
 
 [No description available]
 
@@ -34,8 +34,8 @@ namespace CAT_3(
 ## Source code
 
 ```
-#ifndef __wrapper_SusyLesHouches_def_Pythia_8_312_h__
-#define __wrapper_SusyLesHouches_def_Pythia_8_312_h__
+#ifndef __wrapper_SusyLesHouches_def_Pythia_8_212_h__
+#define __wrapper_SusyLesHouches_def_Pythia_8_212_h__
 
 #include <string>
 #include <istream>
@@ -92,24 +92,24 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             get_BEptr()->setSLHAea(inputSLHAea);
         }
         
-        inline void SusyLesHouches::listHeader()
+        inline void SusyLesHouches::printHeader()
         {
-            get_BEptr()->listHeader();
+            get_BEptr()->printHeader();
         }
         
-        inline void SusyLesHouches::listFooter()
+        inline void SusyLesHouches::printFooter()
         {
-            get_BEptr()->listFooter();
+            get_BEptr()->printFooter();
         }
         
-        inline void SusyLesHouches::listSpectrum(int ifail)
+        inline void SusyLesHouches::printSpectrum(int ifail)
         {
-            get_BEptr()->listSpectrum(ifail);
+            get_BEptr()->printSpectrum(ifail);
         }
         
-        inline void SusyLesHouches::listSpectrum()
+        inline void SusyLesHouches::printSpectrum()
         {
-            get_BEptr()->listSpectrum__BOSS();
+            get_BEptr()->printSpectrum__BOSS();
         }
         
         inline int SusyLesHouches::checkSpectrum()
@@ -135,6 +135,11 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         inline void SusyLesHouches::message(int arg_1, std::string arg_2, std::string arg_3)
         {
             get_BEptr()->message__BOSS(arg_1, arg_2, arg_3);
+        }
+        
+        inline void SusyLesHouches::toLower(std::string& name)
+        {
+            get_BEptr()->toLower(name);
         }
         
         
@@ -245,10 +250,10 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 #include "gambit/Backends/backend_undefs.hpp"
 
-#endif /* __wrapper_SusyLesHouches_def_Pythia_8_312_h__ */
+#endif /* __wrapper_SusyLesHouches_def_Pythia_8_212_h__ */
 ```
 
 
 -------------------------------
 
-Updated on 2025-02-12 at 15:36:43 +0000
+Updated on 2025-02-12 at 16:10:36 +0000

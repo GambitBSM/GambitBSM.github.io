@@ -1,11 +1,11 @@
 ---
-title: "file Pythia_8_312/wrapper_ParticleData_def.h"
+title: "file Pythia_8_212/wrapper_ParticleData_def.h"
 
 description: "[No description available]"
 
 ---
 
-# file Pythia_8_312/wrapper_ParticleData_def.h
+# file Pythia_8_212/wrapper_ParticleData_def.h
 
 [No description available]
 
@@ -34,19 +34,18 @@ namespace CAT_3(
 ## Source code
 
 ```
-#ifndef __wrapper_ParticleData_def_Pythia_8_312_h__
-#define __wrapper_ParticleData_def_Pythia_8_312_h__
+#ifndef __wrapper_ParticleData_def_Pythia_8_212_h__
+#define __wrapper_ParticleData_def_Pythia_8_212_h__
 
 #include <string>
-#include <istream>
 #include <ostream>
 #include <vector>
-#include <map>
 #include "wrapper_Info_decl.h"
 #include "wrapper_Settings_decl.h"
-#include "wrapper_Logger_decl.h"
 #include "wrapper_Rndm_decl.h"
-#include "wrapper_CoupSM_decl.h"
+#include "wrapper_Couplings_decl.h"
+#include "wrapper_ResonanceWidths_decl.h"
+#include "wrapper_ParticleDataEntry_decl.h"
 
 #include "identification.hpp"
 
@@ -57,9 +56,9 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
     {
         
         // Member functions: 
-        inline void ParticleData::initPtrs(Pythia8::Info* infoPtrIn)
+        inline void ParticleData::initPtr(Pythia8::Info* infoPtrIn, Pythia8::Settings* settingsPtrIn, Pythia8::Rndm* rndmPtrIn, Pythia8::Couplings* couplingsPtrIn)
         {
-            get_BEptr()->initPtrs__BOSS((*infoPtrIn).get_BEptr());
+            get_BEptr()->initPtr__BOSS((*infoPtrIn).get_BEptr(), (*settingsPtrIn).get_BEptr(), (*rndmPtrIn).get_BEptr(), (*couplingsPtrIn).get_BEptr());
         }
         
         inline bool ParticleData::init(std::string startFile)
@@ -75,11 +74,6 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         inline bool ParticleData::init(const Pythia8::ParticleData& particleDataIn)
         {
             return get_BEptr()->init__BOSS(*particleDataIn.get_BEptr());
-        }
-        
-        inline bool ParticleData::init(std::istream& is)
-        {
-            return get_BEptr()->init(is);
         }
         
         inline bool ParticleData::reInit(std::string startFile, bool xmlFormat)
@@ -107,16 +101,6 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             get_BEptr()->listXML(outFile);
         }
         
-        inline bool ParticleData::readXML(std::istream& is, bool reset)
-        {
-            return get_BEptr()->readXML(is, reset);
-        }
-        
-        inline bool ParticleData::readXML(std::istream& is)
-        {
-            return get_BEptr()->readXML__BOSS(is);
-        }
-        
         inline bool ParticleData::copyXML(const Pythia8::ParticleData& particleDataIn)
         {
             return get_BEptr()->copyXML__BOSS(*particleDataIn.get_BEptr());
@@ -130,16 +114,6 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         inline bool ParticleData::loadXML(std::string inFile)
         {
             return get_BEptr()->loadXML__BOSS(inFile);
-        }
-        
-        inline bool ParticleData::loadXML(std::istream& is, bool reset)
-        {
-            return get_BEptr()->loadXML(is, reset);
-        }
-        
-        inline bool ParticleData::loadXML(std::istream& is)
-        {
-            return get_BEptr()->loadXML__BOSS(is);
         }
         
         inline bool ParticleData::processXML(bool reset)
@@ -162,24 +136,19 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             return get_BEptr()->readFF__BOSS(inFile);
         }
         
-        inline bool ParticleData::readFF(std::istream& is, bool reset)
-        {
-            return get_BEptr()->readFF(is, reset);
-        }
-        
-        inline bool ParticleData::readFF(std::istream& is)
-        {
-            return get_BEptr()->readFF__BOSS(is);
-        }
-        
         inline void ParticleData::listFF(std::string outFile)
         {
             get_BEptr()->listFF(outFile);
         }
         
+        inline bool ParticleData::readString(std::string lineIn, bool warn, std::ostream& os)
+        {
+            return get_BEptr()->readString(lineIn, warn, os);
+        }
+        
         inline bool ParticleData::readString(std::string lineIn, bool warn)
         {
-            return get_BEptr()->readString(lineIn, warn);
+            return get_BEptr()->readString__BOSS(lineIn, warn);
         }
         
         inline bool ParticleData::readString(std::string lineIn)
@@ -192,19 +161,19 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             return get_BEptr()->readingFailed();
         }
         
-        inline void ParticleData::listAll(std::ostream& stream)
+        inline void ParticleData::listAll(std::ostream& os)
         {
-            get_BEptr()->listAll(stream);
+            get_BEptr()->listAll(os);
         }
         
         inline void ParticleData::listAll()
         {
-            get_BEptr()->listAll();
+            get_BEptr()->listAll__BOSS();
         }
         
-        inline void ParticleData::listChanged(bool changedRes)
+        inline void ParticleData::listChanged(std::ostream& os)
         {
-            get_BEptr()->listChanged(changedRes);
+            get_BEptr()->listChanged(os);
         }
         
         inline void ParticleData::listChanged()
@@ -212,24 +181,24 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             get_BEptr()->listChanged__BOSS();
         }
         
-        inline void ParticleData::list(std::ostream& stream, bool chargedOnly, bool changedRes)
+        inline void ParticleData::listChanged(bool changedRes, std::ostream& os)
         {
-            get_BEptr()->list(stream, chargedOnly, changedRes);
+            get_BEptr()->listChanged(changedRes, os);
         }
         
-        inline void ParticleData::list(std::ostream& stream, bool chargedOnly)
+        inline void ParticleData::listChanged(bool changedRes)
         {
-            get_BEptr()->list__BOSS(stream, chargedOnly);
+            get_BEptr()->listChanged__BOSS(changedRes);
         }
         
-        inline void ParticleData::list(std::ostream& stream)
+        inline void ParticleData::list(bool changedOnly, bool changedRes, std::ostream& os)
         {
-            get_BEptr()->list__BOSS(stream);
+            get_BEptr()->list(changedOnly, changedRes, os);
         }
         
         inline void ParticleData::list(bool changedOnly, bool changedRes)
         {
-            get_BEptr()->list(changedOnly, changedRes);
+            get_BEptr()->list__BOSS(changedOnly, changedRes);
         }
         
         inline void ParticleData::list(bool changedOnly)
@@ -242,29 +211,29 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             get_BEptr()->list__BOSS();
         }
         
+        inline void ParticleData::list(int idList, std::ostream& os)
+        {
+            get_BEptr()->list(idList, os);
+        }
+        
         inline void ParticleData::list(int idList)
         {
-            get_BEptr()->list(idList);
+            get_BEptr()->list__BOSS(idList);
+        }
+        
+        inline void ParticleData::list(std::vector<int> idList, std::ostream& os)
+        {
+            get_BEptr()->list(idList, os);
         }
         
         inline void ParticleData::list(std::vector<int> idList)
         {
-            get_BEptr()->list(idList);
+            get_BEptr()->list__BOSS(idList);
         }
         
-        inline ::std::vector<std::string> ParticleData::getReadHistory(int subrun)
+        inline void ParticleData::checkTable(std::ostream& os)
         {
-            return get_BEptr()->getReadHistory(subrun);
-        }
-        
-        inline ::std::vector<std::string> ParticleData::getReadHistory()
-        {
-            return get_BEptr()->getReadHistory__BOSS();
-        }
-        
-        inline void ParticleData::checkTable(int verbosity)
-        {
-            get_BEptr()->checkTable(verbosity);
+            get_BEptr()->checkTable(os);
         }
         
         inline void ParticleData::checkTable()
@@ -272,14 +241,19 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             get_BEptr()->checkTable__BOSS();
         }
         
-        inline void ParticleData::addParticle(int idIn, std::string nameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn, double mMaxIn, double tau0In, bool varWidthIn)
+        inline void ParticleData::checkTable(int verbosity, std::ostream& os)
         {
-            get_BEptr()->addParticle(idIn, nameIn, spinTypeIn, chargeTypeIn, colTypeIn, m0In, mWidthIn, mMinIn, mMaxIn, tau0In, varWidthIn);
+            get_BEptr()->checkTable(verbosity, os);
+        }
+        
+        inline void ParticleData::checkTable(int verbosity)
+        {
+            get_BEptr()->checkTable__BOSS(verbosity);
         }
         
         inline void ParticleData::addParticle(int idIn, std::string nameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn, double mMaxIn, double tau0In)
         {
-            get_BEptr()->addParticle__BOSS(idIn, nameIn, spinTypeIn, chargeTypeIn, colTypeIn, m0In, mWidthIn, mMinIn, mMaxIn, tau0In);
+            get_BEptr()->addParticle(idIn, nameIn, spinTypeIn, chargeTypeIn, colTypeIn, m0In, mWidthIn, mMinIn, mMaxIn, tau0In);
         }
         
         inline void ParticleData::addParticle(int idIn, std::string nameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn, double mMaxIn)
@@ -327,14 +301,9 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             get_BEptr()->addParticle__BOSS(idIn);
         }
         
-        inline void ParticleData::addParticle(int idIn, std::string nameIn, std::string antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn, double mMaxIn, double tau0In, bool varWidthIn)
-        {
-            get_BEptr()->addParticle(idIn, nameIn, antiNameIn, spinTypeIn, chargeTypeIn, colTypeIn, m0In, mWidthIn, mMinIn, mMaxIn, tau0In, varWidthIn);
-        }
-        
         inline void ParticleData::addParticle(int idIn, std::string nameIn, std::string antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn, double mMaxIn, double tau0In)
         {
-            get_BEptr()->addParticle__BOSS(idIn, nameIn, antiNameIn, spinTypeIn, chargeTypeIn, colTypeIn, m0In, mWidthIn, mMinIn, mMaxIn, tau0In);
+            get_BEptr()->addParticle(idIn, nameIn, antiNameIn, spinTypeIn, chargeTypeIn, colTypeIn, m0In, mWidthIn, mMinIn, mMaxIn, tau0In);
         }
         
         inline void ParticleData::addParticle(int idIn, std::string nameIn, std::string antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn, double mMaxIn)
@@ -377,14 +346,9 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             get_BEptr()->addParticle__BOSS(idIn, nameIn, antiNameIn);
         }
         
-        inline void ParticleData::setAll(int idIn, std::string nameIn, std::string antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn, double mMaxIn, double tau0In, bool varWidthIn)
-        {
-            get_BEptr()->setAll(idIn, nameIn, antiNameIn, spinTypeIn, chargeTypeIn, colTypeIn, m0In, mWidthIn, mMinIn, mMaxIn, tau0In, varWidthIn);
-        }
-        
         inline void ParticleData::setAll(int idIn, std::string nameIn, std::string antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn, double mMaxIn, double tau0In)
         {
-            get_BEptr()->setAll__BOSS(idIn, nameIn, antiNameIn, spinTypeIn, chargeTypeIn, colTypeIn, m0In, mWidthIn, mMinIn, mMaxIn, tau0In);
+            get_BEptr()->setAll(idIn, nameIn, antiNameIn, spinTypeIn, chargeTypeIn, colTypeIn, m0In, mWidthIn, mMinIn, mMaxIn, tau0In);
         }
         
         inline void ParticleData::setAll(int idIn, std::string nameIn, std::string antiNameIn, int spinTypeIn, int chargeTypeIn, int colTypeIn, double m0In, double mWidthIn, double mMinIn, double mMaxIn)
@@ -427,12 +391,12 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             get_BEptr()->setAll__BOSS(idIn, nameIn, antiNameIn);
         }
         
-        inline bool ParticleData::isParticle(int idIn) const
+        inline bool ParticleData::isParticle(int idIn)
         {
             return get_BEptr()->isParticle(idIn);
         }
         
-        inline int ParticleData::nextId(int idIn) const
+        inline int ParticleData::nextId(int idIn)
         {
             return get_BEptr()->nextId(idIn);
         }
@@ -502,19 +466,9 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             get_BEptr()->mayDecay(idIn, mayDecayIn);
         }
         
-        inline void ParticleData::tauCalc(int idIn, bool tauCalcIn)
-        {
-            get_BEptr()->tauCalc(idIn, tauCalcIn);
-        }
-        
         inline void ParticleData::doExternalDecay(int idIn, bool doExternalDecayIn)
         {
             get_BEptr()->doExternalDecay(idIn, doExternalDecayIn);
-        }
-        
-        inline void ParticleData::varWidth(int idIn, bool varWidthIn)
-        {
-            get_BEptr()->varWidth(idIn, varWidthIn);
         }
         
         inline void ParticleData::isVisible(int idIn, bool isVisibleIn)
@@ -532,219 +486,179 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             get_BEptr()->hasChanged(idIn, hasChangedIn);
         }
         
-        inline bool ParticleData::hasAnti(int idIn) const
+        inline bool ParticleData::hasAnti(int idIn)
         {
             return get_BEptr()->hasAnti(idIn);
         }
         
-        inline int ParticleData::antiId(int idIn) const
-        {
-            return get_BEptr()->antiId(idIn);
-        }
-        
-        inline ::std::string ParticleData::name(int idIn) const
+        inline ::std::string ParticleData::name(int idIn)
         {
             return get_BEptr()->name(idIn);
         }
         
-        inline int ParticleData::spinType(int idIn) const
+        inline int ParticleData::spinType(int idIn)
         {
             return get_BEptr()->spinType(idIn);
         }
         
-        inline int ParticleData::chargeType(int idIn) const
+        inline int ParticleData::chargeType(int idIn)
         {
             return get_BEptr()->chargeType(idIn);
         }
         
-        inline double ParticleData::charge(int idIn) const
+        inline double ParticleData::charge(int idIn)
         {
             return get_BEptr()->charge(idIn);
         }
         
-        inline int ParticleData::colType(int idIn) const
+        inline int ParticleData::colType(int idIn)
         {
             return get_BEptr()->colType(idIn);
         }
         
-        inline double ParticleData::m0(int idIn) const
+        inline double ParticleData::m0(int idIn)
         {
             return get_BEptr()->m0(idIn);
         }
         
-        inline double ParticleData::mWidth(int idIn) const
+        inline double ParticleData::mWidth(int idIn)
         {
             return get_BEptr()->mWidth(idIn);
         }
         
-        inline double ParticleData::mMin(int idIn) const
+        inline double ParticleData::mMin(int idIn)
         {
             return get_BEptr()->mMin(idIn);
         }
         
-        inline double ParticleData::m0Min(int idIn) const
+        inline double ParticleData::m0Min(int idIn)
         {
             return get_BEptr()->m0Min(idIn);
         }
         
-        inline double ParticleData::mMax(int idIn) const
+        inline double ParticleData::mMax(int idIn)
         {
             return get_BEptr()->mMax(idIn);
         }
         
-        inline double ParticleData::m0Max(int idIn) const
+        inline double ParticleData::m0Max(int idIn)
         {
             return get_BEptr()->m0Max(idIn);
         }
         
-        inline double ParticleData::tau0(int idIn) const
+        inline double ParticleData::tau0(int idIn)
         {
             return get_BEptr()->tau0(idIn);
         }
         
-        inline bool ParticleData::isResonance(int idIn) const
+        inline bool ParticleData::isResonance(int idIn)
         {
             return get_BEptr()->isResonance(idIn);
         }
         
-        inline bool ParticleData::mayDecay(int idIn) const
+        inline bool ParticleData::mayDecay(int idIn)
         {
             return get_BEptr()->mayDecay(idIn);
         }
         
-        inline bool ParticleData::tauCalc(int idIn) const
-        {
-            return get_BEptr()->tauCalc(idIn);
-        }
-        
-        inline bool ParticleData::doExternalDecay(int idIn) const
+        inline bool ParticleData::doExternalDecay(int idIn)
         {
             return get_BEptr()->doExternalDecay(idIn);
         }
         
-        inline bool ParticleData::isVisible(int idIn) const
+        inline bool ParticleData::isVisible(int idIn)
         {
             return get_BEptr()->isVisible(idIn);
         }
         
-        inline bool ParticleData::doForceWidth(int idIn) const
+        inline bool ParticleData::doForceWidth(int idIn)
         {
             return get_BEptr()->doForceWidth(idIn);
         }
         
-        inline bool ParticleData::hasChanged(int idIn) const
+        inline bool ParticleData::hasChanged(int idIn)
         {
             return get_BEptr()->hasChanged(idIn);
         }
         
-        inline bool ParticleData::hasChangedMMin(int idIn) const
-        {
-            return get_BEptr()->hasChangedMMin(idIn);
-        }
-        
-        inline bool ParticleData::hasChangedMMax(int idIn) const
-        {
-            return get_BEptr()->hasChangedMMax(idIn);
-        }
-        
-        inline bool ParticleData::useBreitWigner(int idIn) const
+        inline bool ParticleData::useBreitWigner(int idIn)
         {
             return get_BEptr()->useBreitWigner(idIn);
         }
         
-        inline bool ParticleData::varWidth(int idIn) const
-        {
-            return get_BEptr()->varWidth(idIn);
-        }
-        
-        inline double ParticleData::constituentMass(int idIn) const
+        inline double ParticleData::constituentMass(int idIn)
         {
             return get_BEptr()->constituentMass(idIn);
         }
         
-        inline double ParticleData::mSel(int idIn) const
+        inline double ParticleData::mSel(int idIn)
         {
             return get_BEptr()->mSel(idIn);
         }
         
-        inline double ParticleData::mRun(int idIn, double mH) const
+        inline double ParticleData::mRun(int idIn, double mH)
         {
             return get_BEptr()->mRun(idIn, mH);
         }
         
-        inline bool ParticleData::canDecay(int idIn) const
+        inline bool ParticleData::canDecay(int idIn)
         {
             return get_BEptr()->canDecay(idIn);
         }
         
-        inline bool ParticleData::isLepton(int idIn) const
+        inline bool ParticleData::isLepton(int idIn)
         {
             return get_BEptr()->isLepton(idIn);
         }
         
-        inline bool ParticleData::isQuark(int idIn) const
+        inline bool ParticleData::isQuark(int idIn)
         {
             return get_BEptr()->isQuark(idIn);
         }
         
-        inline bool ParticleData::isGluon(int idIn) const
+        inline bool ParticleData::isGluon(int idIn)
         {
             return get_BEptr()->isGluon(idIn);
         }
         
-        inline bool ParticleData::isDiquark(int idIn) const
+        inline bool ParticleData::isDiquark(int idIn)
         {
             return get_BEptr()->isDiquark(idIn);
         }
         
-        inline bool ParticleData::isParton(int idIn) const
+        inline bool ParticleData::isParton(int idIn)
         {
             return get_BEptr()->isParton(idIn);
         }
         
-        inline bool ParticleData::isHadron(int idIn) const
+        inline bool ParticleData::isHadron(int idIn)
         {
             return get_BEptr()->isHadron(idIn);
         }
         
-        inline bool ParticleData::isMeson(int idIn) const
+        inline bool ParticleData::isMeson(int idIn)
         {
             return get_BEptr()->isMeson(idIn);
         }
         
-        inline bool ParticleData::isBaryon(int idIn) const
+        inline bool ParticleData::isBaryon(int idIn)
         {
             return get_BEptr()->isBaryon(idIn);
         }
         
-        inline bool ParticleData::isOnium(int idIn) const
-        {
-            return get_BEptr()->isOnium(idIn);
-        }
-        
-        inline bool ParticleData::isExotic(int idIn) const
-        {
-            return get_BEptr()->isExotic(idIn);
-        }
-        
-        inline bool ParticleData::isOctetHadron(int idIn) const
+        inline bool ParticleData::isOctetHadron(int idIn)
         {
             return get_BEptr()->isOctetHadron(idIn);
         }
         
-        inline int ParticleData::heaviestQuark(int idIn) const
+        inline int ParticleData::heaviestQuark(int idIn)
         {
             return get_BEptr()->heaviestQuark(idIn);
         }
         
-        inline int ParticleData::baryonNumberType(int idIn) const
+        inline int ParticleData::baryonNumberType(int idIn)
         {
             return get_BEptr()->baryonNumberType(idIn);
-        }
-        
-        inline int ParticleData::nQuarksInCode(int idIn, int idQIn) const
-        {
-            return get_BEptr()->nQuarksInCode(idIn, idQIn);
         }
         
         inline void ParticleData::rescaleBR(int idIn, double newSumBR)
@@ -755,6 +669,11 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         inline void ParticleData::rescaleBR(int idIn)
         {
             get_BEptr()->rescaleBR__BOSS(idIn);
+        }
+        
+        inline void ParticleData::setResonancePtr(int idIn, Pythia8::ResonanceWidths* resonancePtrIn)
+        {
+            get_BEptr()->setResonancePtr__BOSS(idIn, (*resonancePtrIn).get_BEptr());
         }
         
         inline void ParticleData::resInit(int idIn)
@@ -837,6 +756,11 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             return get_BEptr()->resWidthChan__BOSS(idIn, mHat);
         }
         
+        inline Pythia8::ParticleDataEntry* ParticleData::particleDataEntryPtr(int idIn)
+        {
+            return get_BEptr()->particleDataEntryPtr__BOSS(idIn)->get_init_wptr();
+        }
+        
         inline bool ParticleData::getIsInit()
         {
             return get_BEptr()->getIsInit();
@@ -905,10 +829,10 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 #include "gambit/Backends/backend_undefs.hpp"
 
-#endif /* __wrapper_ParticleData_def_Pythia_8_312_h__ */
+#endif /* __wrapper_ParticleData_def_Pythia_8_212_h__ */
 ```
 
 
 -------------------------------
 
-Updated on 2025-02-12 at 15:36:43 +0000
+Updated on 2025-02-12 at 16:10:36 +0000

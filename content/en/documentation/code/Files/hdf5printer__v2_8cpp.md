@@ -73,7 +73,6 @@ Specialisation declarations for 'get_buffer' function for each buffer type.
 ///
 ///  *********************************************
 //
-#include <chrono>
 #include <math.h>
 #include <limits>
 #include <iterator>
@@ -1476,7 +1475,6 @@ namespace Gambit
       , myRank(0)
       , mpiSize(1)
       , lastPointID(nullpoint)
-      , use_metadata(false)
 #ifdef WITH_MPI
       , myComm() // initially attaches to MPI_COMM_WORLD
 #endif
@@ -1995,13 +1993,12 @@ namespace Gambit
 
                 if (get_output_metadata())
                 {
-                    // Add last point ID to metadata
-                    std::stringstream ssPPID;
-                    ssPPID << lastPointID;
-                    map_str_str lastpoint;
-                    lastpoint["lastPointID"] = ssPPID.str();
-                    if (use_metadata)
-                        buffermaster.print_metadata(lastpoint, true);
+                  // Add last point ID to metadata
+                  std::stringstream ssPPID;
+                  ssPPID << lastPointID;
+                  map_str_str lastpoint;
+                  lastpoint["lastPointID"] = ssPPID.str();
+                  buffermaster.print_metadata(lastpoint, true);
                 }
 
             }
@@ -2249,7 +2246,6 @@ namespace Gambit
 
       if(!rank)
       {
-        use_metadata = true;
         // Forward the print information on to the master buffer manager object
         buffermaster.print_metadata(datasets);
       }
@@ -2840,4 +2836,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2025-02-12 at 15:36:41 +0000
+Updated on 2025-02-12 at 16:10:34 +0000

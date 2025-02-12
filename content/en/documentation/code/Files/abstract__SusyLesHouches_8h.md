@@ -1,11 +1,11 @@
 ---
-title: "file Pythia_8_312/abstract_SusyLesHouches.h"
+title: "file Pythia_8_212/abstract_SusyLesHouches.h"
 
 description: "[No description available]"
 
 ---
 
-# file Pythia_8_312/abstract_SusyLesHouches.h
+# file Pythia_8_212/abstract_SusyLesHouches.h
 
 [No description available]
 
@@ -34,8 +34,8 @@ namespace CAT_3(
 ## Source code
 
 ```
-#ifndef __abstract_SusyLesHouches_Pythia_8_312_h__
-#define __abstract_SusyLesHouches_Pythia_8_312_h__
+#ifndef __abstract_SusyLesHouches_Pythia_8_212_h__
+#define __abstract_SusyLesHouches_Pythia_8_212_h__
 
 #include <cstddef>
 #include <iostream>
@@ -76,13 +76,13 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
     
                 virtual void setSLHAea(const SLHAea::Coll*) =0;
     
-                virtual void listHeader() =0;
+                virtual void printHeader() =0;
     
-                virtual void listFooter() =0;
+                virtual void printFooter() =0;
     
-                virtual void listSpectrum(int) =0;
+                virtual void printSpectrum(int) =0;
     
-                virtual void listSpectrum__BOSS() =0;
+                virtual void printSpectrum__BOSS() =0;
     
                 virtual int checkSpectrum() =0;
     
@@ -101,6 +101,8 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
                 virtual void message(int, std::string, std::string, int) =0;
     
                 virtual void message__BOSS(int, std::string, std::string) =0;
+    
+                virtual void toLower(std::string&) =0;
     
             public:
                 virtual void pointer_assign__BOSS(Abstract_SusyLesHouches*) =0;
@@ -154,10 +156,10 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 #include "gambit/Backends/backend_undefs.hpp"
 
 
-#endif /* __abstract_SusyLesHouches_Pythia_8_312_h__ */
+#endif /* __abstract_SusyLesHouches_Pythia_8_212_h__ */
 ```
 
 
 -------------------------------
 
-Updated on 2025-02-12 at 15:36:43 +0000
+Updated on 2025-02-12 at 16:10:36 +0000

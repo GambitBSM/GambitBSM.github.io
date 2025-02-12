@@ -11,12 +11,6 @@ description: "[No description available]"
 
 [No description available]
 
-## Public Functions
-
-|                | Name           |
-| -------------- | -------------- |
-| | **[Mesons_masses](/documentation/code/classes/structgambit_1_1mesons__masses/#function-mesons-masses)**() |
-
 ## Public Attributes
 
 |                | Name           |
@@ -44,15 +38,6 @@ description: "[No description available]"
 | constexpr double | **[Dstar_s](/documentation/code/classes/structgambit_1_1mesons__masses/#variable-dstar-s)**  |
 | constexpr double | **[phi](/documentation/code/classes/structgambit_1_1mesons__masses/#variable-phi)**  |
 | constexpr double | **[Jpsi](/documentation/code/classes/structgambit_1_1mesons__masses/#variable-jpsi)**  |
-
-## Public Functions Documentation
-
-### function Mesons_masses
-
-```
-inline Mesons_masses()
-```
-
 
 ## Public Attributes Documentation
 
@@ -219,4 +204,4 @@ static constexpr double Jpsi = 3.0969;
 
 -------------------------------
 
-Updated on 2025-02-12 at 15:36:38 +0000
+Updated on 2025-02-12 at 16:10:31 +0000

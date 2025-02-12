@@ -18,8 +18,6 @@ description: "[No description available]"
 |  | **[FUNCTION](/documentation/code/files/susy_8hpp/#define-function)**  |
 |  | **[CAPABILITY](/documentation/code/files/susy_8hpp/#define-capability)**  |
 |  | **[FUNCTION](/documentation/code/files/susy_8hpp/#define-function)**  |
-|  | **[CAPABILITY](/documentation/code/files/susy_8hpp/#define-capability)**  |
-|  | **[FUNCTION](/documentation/code/files/susy_8hpp/#define-function)**  |
 |  | **[FUNCTION](/documentation/code/files/susy_8hpp/#define-function)**  |
 |  | **[CAPABILITY](/documentation/code/files/susy_8hpp/#define-capability)**  |
 |  | **[FUNCTION](/documentation/code/files/susy_8hpp/#define-function)**  |
@@ -78,77 +76,63 @@ Authors (add name and date if you modify):
 ### define CAPABILITY
 
 ```
-#define CAPABILITY PerformInitialCrossSection
+#define CAPABILITY SpectrumAndDecaysForPythia
 ```
 
 
 ### define FUNCTION
 
 ```
-#define FUNCTION PerformInitialCrossSection_Pythia
+#define FUNCTION getSpectrumAndDecaysForPythia
 ```
 
 
 ### define CAPABILITY
 
 ```
-#define CAPABILITY PerformInitialCrossSection
+#define CAPABILITY SpectrumAndDecaysForPythia
 ```
 
 
 ### define FUNCTION
 
 ```
-#define FUNCTION PerformInitialCrossSection_Pythia
+#define FUNCTION getSpectrumAndDecaysForPythia
+```
+
+
+### define FUNCTION
+
+```
+#define FUNCTION getSpectrumAndDecaysForPythia
 ```
 
 
 ### define CAPABILITY
 
 ```
-#define CAPABILITY PerformInitialCrossSection
+#define CAPABILITY SpectrumAndDecaysForPythia
 ```
 
 
 ### define FUNCTION
 
 ```
-#define FUNCTION PerformInitialCrossSection_Pythia
+#define FUNCTION getSpectrumAndDecaysForPythia
 ```
 
 
 ### define FUNCTION
 
 ```
-#define FUNCTION PerformInitialCrossSection_Pythia
-```
-
-
-### define CAPABILITY
-
-```
-#define CAPABILITY PerformInitialCrossSection
+#define FUNCTION getSpectrumAndDecaysForPythia
 ```
 
 
 ### define FUNCTION
 
 ```
-#define FUNCTION PerformInitialCrossSection_Pythia
-```
-
-
-### define FUNCTION
-
-```
-#define FUNCTION PerformInitialCrossSection_Pythia
-```
-
-
-### define FUNCTION
-
-```
-#define FUNCTION PerformInitialCrossSection_Pythia
+#define FUNCTION getSpectrumAndDecaysForPythia
 ```
 
 
@@ -201,15 +185,6 @@ Authors (add name and date if you modify):
 
 #define MODULE ColliderBit
 
-  // Perform Initial Pythia simulation to get a cross-section
-  #define CAPABILITY PerformInitialCrossSection
-
-    #define FUNCTION PerformInitialCrossSection_Pythia
-    START_FUNCTION(initialxsec_container)
-    DEPENDENCY(SpectrumAndDecaysForPythia, SLHAstruct)
-    #undef FUNCTION
-
-  #undef CAPABILITY
 
   // Construct an SLHAea object with spectrum and decays for Pythia
   #define CAPABILITY SpectrumAndDecaysForPythia
@@ -287,4 +262,4 @@ Authors (add name and date if you modify):
 
 -------------------------------
 
-Updated on 2025-02-12 at 15:36:42 +0000
+Updated on 2025-02-12 at 16:10:35 +0000

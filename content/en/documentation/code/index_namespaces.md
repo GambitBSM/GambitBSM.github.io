@@ -25,8 +25,8 @@ weight: 50
 <details><summary><b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1backends/>Backends<a></b></summary>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1backends_1_1alterbbn__2__2/>AlterBBN_2_2<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1backends_1_1heplike__2__0/>HepLike_2_0<a></b><br>
-<details><summary><b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1backends_1_1pythia__8__312/>Pythia_8_312<a></b></summary>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1backends_1_1pythia__8__312_1_1pythia8/>Pythia8<a></b><br></details>
+<details><summary><b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1backends_1_1pythia__8__212/>Pythia_8_212<a></b></summary>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1backends_1_1pythia__8__212_1_1pythia8/>Pythia8<a></b><br></details>
 <details><summary><b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1backends_1_1rivet__3__1__5/>Rivet_3_1_5<a></b></summary>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1backends_1_1rivet__3__1__5_1_1rivet/>Rivet<a></b><br></details>
 <details><summary><b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1backends_1_1gm2calc__1__2__0/>gm2calc_1_2_0<a></b></summary>
@@ -40,8 +40,7 @@ weight: 50
 <details><summary><b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1colliderbit/>ColliderBit<a></b></summary>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1atlas/>ATLAS<a></b><br>ATLAS-specific efficiency and smearing functions for super fast detector simulation. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/>CMS<a></b><br>CMS-specific efficiency and smearing functions for super fast detector simulation. <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1eventconversion/>EventConversion<a></b><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1poissoncalculators/>PoissonCalculators<a></b><br></details>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1eventconversion/>EventConversion<a></b><br></details>
 <details><summary><b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1cosmobit/>CosmoBit<a></b></summary>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1cosmobit_1_1cosmobit__utils/>CosmoBit_utils<a></b><br></details>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1dres/>DRes<a></b><br>Forward declaration of [Rule]() and Observables classes for saving pointers to ignored and matched examples. <br>
@@ -56,7 +55,6 @@ weight: 50
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1diver__1__0__0/>Diver_1_0_0<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1diver__1__0__2/>Diver_1_0_2<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1diver__1__0__4/>Diver_1_0_4<a></b><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1diver__1__0__5/>Diver_1_0_5<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1examplebit__a/>ExampleBit_A<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1examplebit__b/>ExampleBit_B<a></b><br>
 <details><summary><b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1flavbit/>FlavBit<a></b></summary>
@@ -91,19 +89,16 @@ weight: 50
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1scanner_1_1errors/>Errors<a></b><br>
 <details><summary><b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1scanner_1_1plugins/>Plugins<a></b></summary>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1scanner_1_1plugins_1_1objpyplugin/>ObjPyPlugin<a></b><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1scanner_1_1plugins_1_1scannerpyplugin/>ScannerPyPlugin<a></b><br></details>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1scanner_1_1python/>Python<a></b><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1scanner_1_1mpi__dist__internal/>mpi_dist_internal<a></b><br></details>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1scanner_1_1plugins_1_1scannerpyplugin/>ScannerPyPlugin<a></b><br></details></details>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1specbit/>SpecBit<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1spectrumcontents/>SpectrumContents<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1stats/>Stats<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1utils/>Utils<a></b><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1jswarm__1__0__0/>jswarm_1_0_0<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1slhahelp/>slhahelp<a></b><br></details>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1cosmobit_1_1_0d724/>@724<a></b><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1cosmobit_1_1_0d729/>@729<a></b><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1cosmobit_1_1_0d736/>@736<a></b><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1darkbit_1_1_0d751/>@751<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1cosmobit_1_1_0d722/>@722<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1cosmobit_1_1_0d727/>@727<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1cosmobit_1_1_0d734/>@734<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1darkbit_1_1_0d749/>@749<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespaceheputils/>HEPUtils<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacelhef/>LHEF<a></b><br>Forward declaration to cut down on includes. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacelester/>Lester<a></b><br>
@@ -128,4 +123,4 @@ weight: 50
 
 -------------------------------
 
-Updated on 2025-02-12 at 15:36:44 +0000
+Updated on 2025-02-12 at 16:10:37 +0000

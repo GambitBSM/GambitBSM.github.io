@@ -1,11 +1,11 @@
 ---
-title: "file Pythia_8_312/abstract_Particle.h"
+title: "file Pythia_8_212/abstract_Particle.h"
 
 description: "[No description available]"
 
 ---
 
-# file Pythia_8_312/abstract_Particle.h
+# file Pythia_8_212/abstract_Particle.h
 
 [No description available]
 
@@ -34,8 +34,8 @@ namespace CAT_3(
 ## Source code
 
 ```
-#ifndef __abstract_Particle_Pythia_8_312_h__
-#define __abstract_Particle_Pythia_8_312_h__
+#ifndef __abstract_Particle_Pythia_8_212_h__
+#define __abstract_Particle_Pythia_8_212_h__
 
 #include <cstddef>
 #include <iostream>
@@ -63,6 +63,10 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
                 virtual Pythia8::Abstract_Particle& operator_equal__BOSS(const Pythia8::Abstract_Particle&) =0;
     
                 virtual void setEvtPtr__BOSS(Pythia8::Abstract_Event*) =0;
+    
+                virtual void setPDEPtr__BOSS(Pythia8::Abstract_ParticleDataEntry*) =0;
+    
+                virtual void setPDEPtr__BOSS() =0;
     
                 virtual void id(int) =0;
     
@@ -134,8 +138,6 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
     
                 virtual void tProd(double) =0;
     
-                virtual void vProdAdd__BOSS(Pythia8::Abstract_Vec4&) =0;
-    
                 virtual void tau(double) =0;
     
                 virtual int id() const =0;
@@ -190,8 +192,6 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
     
                 virtual bool isFinal() const =0;
     
-                virtual int intPol() const =0;
-    
                 virtual bool isRescatteredIncoming() const =0;
     
                 virtual double m2() const =0;
@@ -232,8 +232,6 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
     
                 virtual double eta() const =0;
     
-                virtual double y(double) const =0;
-    
                 virtual Pythia8::Abstract_Vec4* vDec__BOSS() const =0;
     
                 virtual double xDec() const =0;
@@ -262,8 +260,6 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
     
                 virtual ::std::vector<int> daughterList() const =0;
     
-                virtual ::std::vector<int> daughterListRecursive() const =0;
-    
                 virtual ::std::vector<int> sisterList(bool) const =0;
     
                 virtual ::std::vector<int> sisterList__BOSS() const =0;
@@ -275,16 +271,6 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
                 virtual bool isFinalPartonLevel() const =0;
     
                 virtual bool undoDecay() =0;
-    
-                virtual int colHV() const =0;
-    
-                virtual int acolHV() const =0;
-    
-                virtual void colHV(int) =0;
-    
-                virtual void acolHV(int) =0;
-    
-                virtual void colsHV(int, int) =0;
     
                 virtual ::std::string name() const =0;
     
@@ -339,8 +325,6 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
                 virtual bool isParton() const =0;
     
                 virtual bool isHadron() const =0;
-    
-                virtual bool isExotic() const =0;
     
                 virtual Pythia8::Abstract_ParticleDataEntry& particleDataEntry__BOSS() const =0;
     
@@ -420,10 +404,10 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 #include "gambit/Backends/backend_undefs.hpp"
 
 
-#endif /* __abstract_Particle_Pythia_8_312_h__ */
+#endif /* __abstract_Particle_Pythia_8_212_h__ */
 ```
 
 
 -------------------------------
 
-Updated on 2025-02-12 at 15:36:43 +0000
+Updated on 2025-02-12 at 16:10:36 +0000

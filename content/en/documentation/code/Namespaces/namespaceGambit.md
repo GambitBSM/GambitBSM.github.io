@@ -22,7 +22,6 @@ TODO: see if we can use this one:  [More...](#detailed-description)
 | **[Gambit::Diver_1_0_0](/documentation/code/namespaces/namespacegambit_1_1diver__1__0__0/)**  |
 | **[Gambit::Diver_1_0_2](/documentation/code/namespaces/namespacegambit_1_1diver__1__0__2/)**  |
 | **[Gambit::Diver_1_0_4](/documentation/code/namespaces/namespacegambit_1_1diver__1__0__4/)**  |
-| **[Gambit::Diver_1_0_5](/documentation/code/namespaces/namespacegambit_1_1diver__1__0__5/)**  |
 | **[Gambit::DRes](/documentation/code/namespaces/namespacegambit_1_1dres/)** <br>Forward declaration of [Rule]() and Observables classes for saving pointers to ignored and matched examples.  |
 | **[Gambit::ExampleBit_A](/documentation/code/namespaces/namespacegambit_1_1examplebit__a/)**  |
 | **[Gambit::ExampleBit_B](/documentation/code/namespaces/namespacegambit_1_1examplebit__b/)**  |
@@ -31,7 +30,6 @@ TODO: see if we can use this one:  [More...](#detailed-description)
 | **[Gambit::GMPI](/documentation/code/namespaces/namespacegambit_1_1gmpi/)** <br>Forward declare MPI class.  |
 | **[Gambit::GreAT](/documentation/code/namespaces/namespacegambit_1_1great/)**  |
 | **[Gambit::IniParser](/documentation/code/namespaces/namespacegambit_1_1iniparser/)**  |
-| **[Gambit::jswarm_1_0_0](/documentation/code/namespaces/namespacegambit_1_1jswarm__1__0__0/)**  |
 | **[Gambit::Logging](/documentation/code/namespaces/namespacegambit_1_1logging/)** <br>Forward declare minimial logging components needed to use logger.  |
 | **[Gambit::LogTags](/documentation/code/namespaces/namespacegambit_1_1logtags/)**  |
 | **[Gambit::MicrOmegas](/documentation/code/namespaces/namespacegambit_1_1micromegas/)**  |
@@ -773,8 +771,6 @@ Simulation of "Search for photonic signatures of gauge-mediated supersymmetry in
 
 Simulation of "Search for new phenomena in final states with photons, jets and missing transverse momentum in pp collisions at sqrt(s)=13 TeV with the ATLAS detector".
 
-Unbiased likelihood estimator
-
 
 Based on:
 
@@ -814,11 +810,6 @@ Registry of priors Here we specify mappings from strings to prior objects. We ne
 
 
 ------------------
-
-================================================= 
-
-
-# Function definitions
 
 ================================================= 
 
@@ -4304,4 +4295,4 @@ const int gambit_version_int =  10000*gambit_version_major + 100*gambit_version_
 
 -------------------------------
 
-Updated on 2025-02-12 at 15:36:37 +0000
+Updated on 2025-02-12 at 16:10:30 +0000

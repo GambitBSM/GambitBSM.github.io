@@ -72,7 +72,6 @@ void *get_purpose(const std::string &purpose)                                   
     static_cast <Function_Base<void(void)>*>(ptr)->setPurpose(purpose);                     \
     static_cast <Function_Base<void(void)>*>(ptr)->setPrinter(get_printer().get_stream());  \
     static_cast <Function_Base<void(void)>*>(ptr)->setPrior(&get_prior());                  \
-    static_cast <Function_Base<void(void)>*>(ptr)->init();                                  \
     assign_aux_numbers(purpose, "pointID", "MPIrank");                                      \
                                                                                             \
     return ptr;                                                                             \
@@ -149,7 +148,6 @@ void *get_purpose(const std::string &purpose)                                   
     static_cast <Function_Base<void(void)>*>(ptr)->setPurpose(purpose);                     \
     static_cast <Function_Base<void(void)>*>(ptr)->setPrinter(get_printer().get_stream());  \
     static_cast <Function_Base<void(void)>*>(ptr)->setPrior(&get_prior());                  \
-    static_cast <Function_Base<void(void)>*>(ptr)->init();                                  \
     assign_aux_numbers(purpose, "pointID", "MPIrank");                                      \
                                                                                             \
     return ptr;                                                                             \
@@ -166,4 +164,4 @@ inline unsigned int &get_dimension() {return get_input_value<unsigned int>(0);} 
 
 -------------------------------
 
-Updated on 2025-02-12 at 15:36:40 +0000
+Updated on 2025-02-12 at 16:10:33 +0000

@@ -314,8 +314,8 @@ namespace Gambit
     USE_COMMON_PRINT_OVERLOAD(HDF5Printer, triplet<double>)
     USE_COMMON_PRINT_OVERLOAD(HDF5Printer, map_const_str_dbl)
     USE_COMMON_PRINT_OVERLOAD(HDF5Printer, map_const_str_map_const_str_dbl)
+    USE_COMMON_PRINT_OVERLOAD(HDF5Printer, flav_prediction)
     #ifndef SCANNER_STANDALONE
-      USE_COMMON_PRINT_OVERLOAD(HDF5Printer, flav_prediction)
       USE_COMMON_PRINT_OVERLOAD(HDF5Printer, DM_nucleon_couplings)
       USE_COMMON_PRINT_OVERLOAD(HDF5Printer, BBN_container)
     #endif
@@ -332,4 +332,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2025-02-12 at 15:36:41 +0000
+Updated on 2025-02-12 at 16:10:34 +0000

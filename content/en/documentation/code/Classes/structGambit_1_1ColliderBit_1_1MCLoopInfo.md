@@ -49,10 +49,6 @@ Container for event loop status data and settings.
 | std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), bool > | **[invalidate_failed_points](/documentation/code/classes/structgambit_1_1colliderbit_1_1mcloopinfo/#variable-invalidate-failed-points)** <br>Invalidate points where number of failed events > maxFailedEvents? One bool for each collider.  |
 | std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), int > | **[event_count](/documentation/code/classes/structgambit_1_1colliderbit_1_1mcloopinfo/#variable-event-count)** <br>Number of events generated for each collider.  |
 | std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), [convergence_settings](/documentation/code/classes/structgambit_1_1colliderbit_1_1convergence__settings/) > | **[convergence_options](/documentation/code/classes/structgambit_1_1colliderbit_1_1mcloopinfo/#variable-convergence-options)** <br>Convergence options for each collider.  |
-| std::string | **[estimator](/documentation/code/classes/structgambit_1_1colliderbit_1_1mcloopinfo/#variable-estimator)** <br>Likelihood estimator.  |
-| std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), double > | **[ratio_MC_expected](/documentation/code/classes/structgambit_1_1colliderbit_1_1mcloopinfo/#variable-ratio-mc-expected)** <br>Ratio of nMC to nExpected (see UMVUE estimator)  |
-| int | **[mean_nEvents](/documentation/code/classes/structgambit_1_1colliderbit_1_1mcloopinfo/#variable-mean-nevents)**  |
-| std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), int > | **[desired_nEvents](/documentation/code/classes/structgambit_1_1colliderbit_1_1mcloopinfo/#variable-desired-nevents)** <br>Number of MC events to simulate for a given parameter point for each collider.  |
 | std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > > | **[analyses](/documentation/code/classes/structgambit_1_1colliderbit_1_1mcloopinfo/#variable-analyses)** <br>[Analysis](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/) list for each collider.  |
 | std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > > > | **[detector_analyses](/documentation/code/classes/structgambit_1_1colliderbit_1_1mcloopinfo/#variable-detector-analyses)** <br>[Analysis](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/) list for each detector of each collider.  |
 
@@ -283,40 +279,6 @@ std::map< str, convergence_settings > convergence_options;
 
 Convergence options for each collider. 
 
-### variable estimator
-
-```
-std::string estimator;
-```
-
-Likelihood estimator. 
-
-### variable ratio_MC_expected
-
-```
-std::map< str, double > ratio_MC_expected;
-```
-
-Ratio of nMC to nExpected (see UMVUE estimator) 
-
-### variable mean_nEvents
-
-```
-int mean_nEvents;
-```
-
-
-Number of mean MC events to simulate for a given parameter point for each collider This will not necessarily be the same as the number simulated 
-
-
-### variable desired_nEvents
-
-```
-std::map< str, int > desired_nEvents;
-```
-
-Number of MC events to simulate for a given parameter point for each collider. 
-
 ### variable analyses
 
 ```
@@ -335,4 +297,4 @@ std::map< str, std::map< str, std::vector< str > > > detector_analyses;
 
 -------------------------------
 
-Updated on 2025-02-12 at 15:36:39 +0000
+Updated on 2025-02-12 at 16:10:32 +0000

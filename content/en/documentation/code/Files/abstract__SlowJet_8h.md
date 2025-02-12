@@ -1,11 +1,11 @@
 ---
-title: "file Pythia_8_312/abstract_SlowJet.h"
+title: "file Pythia_8_212/abstract_SlowJet.h"
 
 description: "[No description available]"
 
 ---
 
-# file Pythia_8_312/abstract_SlowJet.h
+# file Pythia_8_212/abstract_SlowJet.h
 
 [No description available]
 
@@ -34,11 +34,12 @@ namespace CAT_3(
 ## Source code
 
 ```
-#ifndef __abstract_SlowJet_Pythia_8_312_h__
-#define __abstract_SlowJet_Pythia_8_312_h__
+#ifndef __abstract_SlowJet_Pythia_8_212_h__
+#define __abstract_SlowJet_Pythia_8_212_h__
 
 #include <cstddef>
 #include <iostream>
+#include <ostream>
 #include <vector>
 #include "gambit/Backends/abstractbase.hpp"
 #include "forward_decls_abstract_classes.h"
@@ -92,7 +93,9 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
     
                 virtual double dNext() const =0;
     
-                virtual void list(bool) const =0;
+                virtual void list(bool, std::ostream&) const =0;
+    
+                virtual void list__BOSS(bool) const =0;
     
                 virtual void list__BOSS() const =0;
     
@@ -156,10 +159,10 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 #include "gambit/Backends/backend_undefs.hpp"
 
 
-#endif /* __abstract_SlowJet_Pythia_8_312_h__ */
+#endif /* __abstract_SlowJet_Pythia_8_212_h__ */
 ```
 
 
 -------------------------------
 
-Updated on 2025-02-12 at 15:36:43 +0000
+Updated on 2025-02-12 at 16:10:36 +0000

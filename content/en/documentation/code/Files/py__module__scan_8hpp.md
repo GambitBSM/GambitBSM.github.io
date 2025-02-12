@@ -741,11 +741,7 @@ PYBIND11_EMBEDDED_MODULE(scanner_plugin, m)
     
     // Bind the scanner base class to the module
     py::class_<scanner_base, std::shared_ptr<scanner_base>>(m, "scanner")
-    .def(py::init([](bool 
-        #ifdef WITH_MPI
-                     use_mpi
-        #endif 
-                    , bool use_resume)
+    .def(py::init([](bool use_mpi, bool use_resume)
         {
         #ifdef WITH_MPI
             if (!use_mpi)
@@ -975,4 +971,4 @@ PYBIND11_EMBEDDED_MODULE(scanner_plugin, m)
 
 -------------------------------
 
-Updated on 2025-02-12 at 15:36:40 +0000
+Updated on 2025-02-12 at 16:10:33 +0000

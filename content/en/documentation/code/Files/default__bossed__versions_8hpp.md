@@ -62,7 +62,7 @@ Authors (add name and date if you modify):
 ### define Default_Pythia
 
 ```
-#define Default_Pythia 8_312
+#define Default_Pythia 8_212
 ```
 
 
@@ -126,7 +126,7 @@ Authors (add name and date if you modify):
 // Choose default versions here, using underscores instead of periods
 
 #define  Default_gm2calc 1_3_0
-#define  Default_Pythia 8_312
+#define  Default_Pythia 8_212
 #define  Default_HepLike 2_0
 #define  Default_vevacious 1_0
 #define  Default_Rivet 3_1_5
@@ -138,4 +138,4 @@ Authors (add name and date if you modify):
 
 -------------------------------
 
-Updated on 2025-02-12 at 15:36:43 +0000
+Updated on 2025-02-12 at 16:10:36 +0000

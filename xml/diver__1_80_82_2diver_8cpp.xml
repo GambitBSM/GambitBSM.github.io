@@ -5,7 +5,7 @@
     <includes local="no">vector</includes>
     <includes local="no">limits</includes>
     <includes local="no">fstream</includes>
-    <includes refid="diver__1_80_82_2diver_8hpp" local="yes">gambit/ScannerBit/scanners/diver_1.0.2/diver.hpp</includes>
+    <includes refid="1_80_82_2diver_8hpp" local="yes">gambit/ScannerBit/scanners/diver/1.0.2/diver.hpp</includes>
     <includes refid="yaml__options_8hpp" local="yes">gambit/Utils/yaml_options.hpp</includes>
     <includes refid="util__types_8hpp" local="yes">gambit/Utils/util_types.hpp</includes>
     <includes refid="util__functions_8hpp" local="yes">gambit/Utils/util_functions.hpp</includes>
@@ -246,8 +246,8 @@
         </childnode>
       </node>
       <node id="5">
-        <label>gambit/ScannerBit/scanners/diver_1.0.2/diver.hpp</label>
-        <link refid="diver__1_80_82_2diver_8hpp"/>
+        <label>gambit/ScannerBit/scanners/diver/1.0.2/diver.hpp</label>
+        <link refid="1_80_82_2diver_8hpp"/>
         <childnode refid="6" relation="include">
         </childnode>
       </node>
@@ -773,7 +773,7 @@
 <codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;limits&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="20"><highlight class="normal"></highlight></codeline>
-<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="diver__1_80_82_2diver_8hpp" kindref="compound">gambit/ScannerBit/scanners/diver_1.0.2/diver.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="1_80_82_2diver_8hpp" kindref="compound">gambit/ScannerBit/scanners/diver/1.0.2/diver.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="yaml__options_8hpp" kindref="compound">gambit/Utils/yaml_options.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="util__types_8hpp" kindref="compound">gambit/Utils/util_types.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="24"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="util__functions_8hpp" kindref="compound">gambit/Utils/util_functions.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
@@ -925,7 +925,7 @@
 <codeline lineno="170"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
 <codeline lineno="171"><highlight class="normal"></highlight></codeline>
 <codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//Function<sp/>to<sp/>be<sp/>minimized.<sp/><sp/>Corresponds<sp/>to<sp/>-ln(Likelihood).<sp/><sp/>Redirects<sp/>to<sp/>the<sp/>target<sp/>of<sp/>context<sp/>pointer.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="diver__1_80_80_2diver_8hpp_1a54f976ca561ae67afec206e6eb36a21f" kindref="member">objective</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>params[],<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>param_dim,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;fcall,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>&amp;quit,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>validvector,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*&amp;<sp/>context)</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/><ref refid="1_80_80_2diver_8hpp_1a54f976ca561ae67afec206e6eb36a21f" kindref="member">objective</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>params[],<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>param_dim,<sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>&amp;fcall,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>&amp;quit,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>validvector,<sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal">*&amp;<sp/>context)</highlight></codeline>
 <codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Return<sp/>the<sp/>worst<sp/>possible<sp/>likelihood<sp/>if<sp/>the<sp/>point<sp/>is<sp/>outside<sp/>the<sp/>prior<sp/>box.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(not<sp/>validvector)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>std::numeric_limits&lt;double&gt;::max();</highlight></codeline>

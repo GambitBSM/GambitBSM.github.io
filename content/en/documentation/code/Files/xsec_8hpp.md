@@ -151,6 +151,7 @@ namespace Gambit
         int _trust_level;
     };
 
+
     /// A class for holding a total cross-section calculated via MC across multiple threads
     class MC_xsec_container : public xsec_container
     {
@@ -302,4 +303,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2025-02-12 at 15:36:42 +0000
+Updated on 2025-02-12 at 16:10:35 +0000

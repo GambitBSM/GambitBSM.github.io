@@ -1,11 +1,11 @@
 ---
-title: "file Pythia_8_312/wrapper_Vec4_def.h"
+title: "file Pythia_8_212/wrapper_Vec4_def.h"
 
 description: "[No description available]"
 
 ---
 
-# file Pythia_8_312/wrapper_Vec4_def.h
+# file Pythia_8_212/wrapper_Vec4_def.h
 
 [No description available]
 
@@ -34,8 +34,8 @@ namespace CAT_3(
 ## Source code
 
 ```
-#ifndef __wrapper_Vec4_def_Pythia_8_312_h__
-#define __wrapper_Vec4_def_Pythia_8_312_h__
+#ifndef __wrapper_Vec4_def_Pythia_8_212_h__
+#define __wrapper_Vec4_def_Pythia_8_212_h__
 
 
 
@@ -248,14 +248,9 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             get_BEptr()->bstback__BOSS(*pIn.get_BEptr(), mIn);
         }
         
-        inline double Vec4::eInFrame(const Pythia8::Vec4& pIn) const
+        inline Pythia8::Vec4 Vec4::operator-()
         {
-            return get_BEptr()->eInFrame__BOSS(*pIn.get_BEptr());
-        }
-        
-        inline Pythia8::Vec4 Vec4::operator-() const
-        {
-            return Pythia8::Vec4( const_cast<const Abstract_Vec4*>(get_BEptr())->operator_minus__BOSS() );
+            return Pythia8::Vec4( get_BEptr()->operator_minus__BOSS() );
         }
         
         inline Pythia8::Vec4& Vec4::operator+=(const Pythia8::Vec4& v)
@@ -276,31 +271,6 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         inline Pythia8::Vec4& Vec4::operator/=(double f)
         {
             return get_BEptr()->operator_slash_equal__BOSS(f).get_init_wref();
-        }
-        
-        inline Pythia8::Vec4 Vec4::operator+(const Pythia8::Vec4& v) const
-        {
-            return Pythia8::Vec4( const_cast<const Abstract_Vec4*>(get_BEptr())->operator_plus__BOSS(*v.get_BEptr()) );
-        }
-        
-        inline Pythia8::Vec4 Vec4::operator-(const Pythia8::Vec4& v) const
-        {
-            return Pythia8::Vec4( const_cast<const Abstract_Vec4*>(get_BEptr())->operator_minus__BOSS(*v.get_BEptr()) );
-        }
-        
-        inline Pythia8::Vec4 Vec4::operator*(double f) const
-        {
-            return Pythia8::Vec4( const_cast<const Abstract_Vec4*>(get_BEptr())->operator_asterix__BOSS(f) );
-        }
-        
-        inline Pythia8::Vec4 Vec4::operator/(double f) const
-        {
-            return Pythia8::Vec4( const_cast<const Abstract_Vec4*>(get_BEptr())->operator_slash__BOSS(f) );
-        }
-        
-        inline double Vec4::operator*(const Pythia8::Vec4& v) const
-        {
-            return get_BEptr()->operator_asterix__BOSS(*v.get_BEptr());
         }
         
         
@@ -394,10 +364,10 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 #include "gambit/Backends/backend_undefs.hpp"
 
-#endif /* __wrapper_Vec4_def_Pythia_8_312_h__ */
+#endif /* __wrapper_Vec4_def_Pythia_8_212_h__ */
 ```
 
 
 -------------------------------
 
-Updated on 2025-02-12 at 15:36:43 +0000
+Updated on 2025-02-12 at 16:10:36 +0000

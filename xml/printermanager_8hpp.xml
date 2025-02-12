@@ -11,8 +11,6 @@
     <includedby refid="SpecBit__MSSM_8cpp" local="yes">SpecBit_MSSM.cpp</includedby>
     <includedby refid="exceptions_8cpp" local="yes">exceptions.cpp</includedby>
     <includedby refid="gambit_8hpp" local="yes">gambit.hpp</includedby>
-    <includedby refid="interface_8cpp" local="yes">interface.cpp</includedby>
-    <includedby refid="interface_8hpp" local="yes">interface.hpp</includedby>
     <includedby refid="printer__utils_8hpp" local="yes">printer_utils.hpp</includedby>
     <includedby refid="printermanager_8cpp" local="yes">printermanager.cpp</includedby>
     <includedby refid="standalone__module_8hpp" local="yes">standalone_module.hpp</includedby>
@@ -362,48 +360,48 @@
         <label>gambit.cpp</label>
         <link refid="gambit_8cpp"/>
       </node>
-      <node id="14">
+      <node id="12">
         <label>DarkBit_standalone_MSSM.cpp</label>
         <link refid="DarkBit__standalone__MSSM_8cpp"/>
       </node>
-      <node id="15">
+      <node id="13">
         <label>DarkBit_standalone_ScalarSingletDM_Z2.cpp</label>
         <link refid="DarkBit__standalone__ScalarSingletDM__Z2_8cpp"/>
       </node>
-      <node id="16">
+      <node id="14">
         <label>DarkBit_standalone_WIMP.cpp</label>
         <link refid="DarkBit__standalone__WIMP_8cpp"/>
       </node>
-      <node id="10">
+      <node id="8">
         <label>RelicDensity.cpp</label>
         <link refid="RelicDensity_8cpp"/>
       </node>
-      <node id="13">
+      <node id="11">
         <label>3bithit.cpp</label>
         <link refid="3bithit_8cpp"/>
       </node>
-      <node id="12">
+      <node id="10">
         <label>standalone_module.hpp</label>
         <link refid="standalone__module_8hpp"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
         <childnode refid="13" relation="include">
         </childnode>
         <childnode refid="14" relation="include">
         </childnode>
         <childnode refid="15" relation="include">
         </childnode>
-        <childnode refid="16" relation="include">
-        </childnode>
-        <childnode refid="17" relation="include">
-        </childnode>
       </node>
-      <node id="17">
+      <node id="15">
         <label>ExampleBit_A_standalone_example.cpp</label>
         <link refid="ExampleBit__A__standalone__example_8cpp"/>
       </node>
-      <node id="9">
+      <node id="7">
         <label>printer_utils.hpp</label>
         <link refid="printer__utils_8hpp"/>
-        <childnode refid="10" relation="include">
+        <childnode refid="8" relation="include">
         </childnode>
       </node>
       <node id="1">
@@ -421,28 +419,16 @@
         </childnode>
         <childnode refid="9" relation="include">
         </childnode>
-        <childnode refid="11" relation="include">
-        </childnode>
-        <childnode refid="12" relation="include">
+        <childnode refid="10" relation="include">
         </childnode>
       </node>
-      <node id="11">
+      <node id="9">
         <label>printermanager.cpp</label>
         <link refid="printermanager_8cpp"/>
       </node>
       <node id="2">
         <label>ScannerBit_standalone.cpp</label>
         <link refid="ScannerBit__standalone_8cpp"/>
-      </node>
-      <node id="7">
-        <label>interface.hpp</label>
-        <link refid="interface_8hpp_source"/>
-        <childnode refid="8" relation="include">
-        </childnode>
-      </node>
-      <node id="8">
-        <label>python.hpp</label>
-        <link refid="python_8hpp_source"/>
       </node>
       <node id="3">
         <label>SpecBit_MSSM.cpp</label>

@@ -1,11 +1,11 @@
 ---
-title: "file Pythia_8_312/wrapper_ResonanceDecays_decl.h"
+title: "file Pythia_8_212/wrapper_ResonanceDecays_decl.h"
 
 description: "[No description available]"
 
 ---
 
-# file Pythia_8_312/wrapper_ResonanceDecays_decl.h
+# file Pythia_8_212/wrapper_ResonanceDecays_decl.h
 
 [No description available]
 
@@ -34,14 +34,17 @@ namespace CAT_3(
 ## Source code
 
 ```
-#ifndef __wrapper_ResonanceDecays_decl_Pythia_8_312_h__
-#define __wrapper_ResonanceDecays_decl_Pythia_8_312_h__
+#ifndef __wrapper_ResonanceDecays_decl_Pythia_8_212_h__
+#define __wrapper_ResonanceDecays_decl_Pythia_8_212_h__
 
 #include <cstddef>
 #include <vector>
 #include "forward_decls_wrapper_classes.h"
 #include "gambit/Backends/wrapperbase.hpp"
 #include "abstract_ResonanceDecays.h"
+#include "wrapper_Info_decl.h"
+#include "wrapper_ParticleData_decl.h"
+#include "wrapper_Rndm_decl.h"
 #include "wrapper_Event_decl.h"
 
 #include "identification.hpp"
@@ -63,7 +66,7 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         
                 // Member functions: 
             public:
-                void init();
+                void init(Pythia8::Info* infoPtrIn, Pythia8::ParticleData* particleDataPtrIn, Pythia8::Rndm* rndmPtrIn);
         
                 bool next(Pythia8::Event& process, int iDecNow);
         
@@ -97,10 +100,10 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 #include "gambit/Backends/backend_undefs.hpp"
 
-#endif /* __wrapper_ResonanceDecays_decl_Pythia_8_312_h__ */
+#endif /* __wrapper_ResonanceDecays_decl_Pythia_8_212_h__ */
 ```
 
 
 -------------------------------
 
-Updated on 2025-02-12 at 15:36:43 +0000
+Updated on 2025-02-12 at 16:10:36 +0000

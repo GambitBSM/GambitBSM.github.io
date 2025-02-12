@@ -117,4 +117,4 @@ BE_INI_DEPENDENCY(ScalarSingletDM_Z3_spectrum, Spectrum)
 
 -------------------------------
 
-Updated on 2025-02-12 at 15:36:43 +0000
+Updated on 2025-02-12 at 16:10:36 +0000

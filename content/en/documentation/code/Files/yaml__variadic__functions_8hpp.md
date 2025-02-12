@@ -87,17 +87,7 @@ namespace Gambit
         
         inline const YAML::Node getVariadicNode(const YAML::Node &node, std::string key) 
         {
-                try 
-                {
-                    return node[key];
-                } 
-                catch(const YAML::BadSubscript& e)
-                {
-                    std::stringstream msg;
-                    msg<<"Attempted to access a YAML node with key '"<<key<<"', but the node has no members accessible by keys! Error was: "<<e.what();
-                    throw std::runtime_error(msg.str()); //TODO: cannot seem to reconstruct a YAML error...
-                }
-                return node; // Shouldn't get here!
+                return node[key];
         }
 
         template <typename... args>
@@ -115,4 +105,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2025-02-12 at 15:36:40 +0000
+Updated on 2025-02-12 at 16:10:33 +0000

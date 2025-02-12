@@ -1,11 +1,11 @@
 ---
-title: "file Pythia_8_312/wrapper_ParticleDecays_def.h"
+title: "file Pythia_8_212/wrapper_ParticleDecays_def.h"
 
 description: "[No description available]"
 
 ---
 
-# file Pythia_8_312/wrapper_ParticleDecays_def.h
+# file Pythia_8_212/wrapper_ParticleDecays_def.h
 
 [No description available]
 
@@ -34,10 +34,15 @@ namespace CAT_3(
 ## Source code
 
 ```
-#ifndef __wrapper_ParticleDecays_def_Pythia_8_312_h__
-#define __wrapper_ParticleDecays_def_Pythia_8_312_h__
+#ifndef __wrapper_ParticleDecays_def_Pythia_8_212_h__
+#define __wrapper_ParticleDecays_def_Pythia_8_212_h__
 
 #include <vector>
+#include "wrapper_Info_decl.h"
+#include "wrapper_Settings_decl.h"
+#include "wrapper_ParticleData_decl.h"
+#include "wrapper_Rndm_decl.h"
+#include "wrapper_Couplings_decl.h"
 #include "wrapper_Event_decl.h"
 #include "wrapper_ParticleDataEntry_decl.h"
 #include "wrapper_Particle_decl.h"
@@ -54,16 +59,6 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         inline bool ParticleDecays::decay(int iDec, Pythia8::Event& event)
         {
             return get_BEptr()->decay__BOSS(iDec, *event.get_BEptr());
-        }
-        
-        inline bool ParticleDecays::decayAll(Pythia8::Event& event, double minWidth)
-        {
-            return get_BEptr()->decayAll__BOSS(*event.get_BEptr(), minWidth);
-        }
-        
-        inline bool ParticleDecays::decayAll(Pythia8::Event& event)
-        {
-            return get_BEptr()->decayAll__BOSS(*event.get_BEptr());
         }
         
         inline bool ParticleDecays::moreToDo() const
@@ -134,10 +129,10 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 #include "gambit/Backends/backend_undefs.hpp"
 
-#endif /* __wrapper_ParticleDecays_def_Pythia_8_312_h__ */
+#endif /* __wrapper_ParticleDecays_def_Pythia_8_212_h__ */
 ```
 
 
 -------------------------------
 
-Updated on 2025-02-12 at 15:36:43 +0000
+Updated on 2025-02-12 at 16:10:36 +0000

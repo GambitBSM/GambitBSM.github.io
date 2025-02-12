@@ -1,11 +1,11 @@
 ---
-title: "file Pythia_8_312/abstract_SigmaProcess.h"
+title: "file Pythia_8_212/abstract_SigmaProcess.h"
 
 description: "[No description available]"
 
 ---
 
-# file Pythia_8_312/abstract_SigmaProcess.h
+# file Pythia_8_212/abstract_SigmaProcess.h
 
 [No description available]
 
@@ -34,8 +34,8 @@ namespace CAT_3(
 ## Source code
 
 ```
-#ifndef __abstract_SigmaProcess_Pythia_8_312_h__
-#define __abstract_SigmaProcess_Pythia_8_312_h__
+#ifndef __abstract_SigmaProcess_Pythia_8_212_h__
+#define __abstract_SigmaProcess_Pythia_8_212_h__
 
 #include <cstddef>
 #include <iostream>
@@ -43,7 +43,13 @@ namespace CAT_3(
 #include "gambit/Backends/abstractbase.hpp"
 #include "forward_decls_abstract_classes.h"
 #include "forward_decls_wrapper_classes.h"
+#include "wrapper_Info_decl.h"
+#include "wrapper_Settings_decl.h"
+#include "wrapper_ParticleData_decl.h"
+#include "wrapper_Rndm_decl.h"
 #include "wrapper_BeamParticle_decl.h"
+#include "wrapper_Couplings_decl.h"
+#include "wrapper_SigmaTotal_decl.h"
 #include "wrapper_SLHAinterface_decl.h"
 #include "wrapper_Vec4_decl.h"
 #include "wrapper_Event_decl.h"
@@ -62,11 +68,11 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         {
             public:
     
-                virtual void init__BOSS(Pythia8::Abstract_BeamParticle*, Pythia8::Abstract_BeamParticle*, Pythia8::Abstract_SLHAinterface*) =0;
+                virtual void init__BOSS(Pythia8::Abstract_Info*, Pythia8::Abstract_Settings*, Pythia8::Abstract_ParticleData*, Pythia8::Abstract_Rndm*, Pythia8::Abstract_BeamParticle*, Pythia8::Abstract_BeamParticle*, Pythia8::Abstract_Couplings*, Pythia8::Abstract_SigmaTotal*, Pythia8::Abstract_SLHAinterface*) =0;
     
-                virtual void init__BOSS(Pythia8::Abstract_BeamParticle*, Pythia8::Abstract_BeamParticle*) =0;
+                virtual void init__BOSS(Pythia8::Abstract_Info*, Pythia8::Abstract_Settings*, Pythia8::Abstract_ParticleData*, Pythia8::Abstract_Rndm*, Pythia8::Abstract_BeamParticle*, Pythia8::Abstract_BeamParticle*, Pythia8::Abstract_Couplings*, Pythia8::Abstract_SigmaTotal*) =0;
     
-                virtual void updateBeamIDs() =0;
+                virtual void init__BOSS(Pythia8::Abstract_Info*, Pythia8::Abstract_Settings*, Pythia8::Abstract_ParticleData*, Pythia8::Abstract_Rndm*, Pythia8::Abstract_BeamParticle*, Pythia8::Abstract_BeamParticle*, Pythia8::Abstract_Couplings*) =0;
     
                 virtual void initProc() =0;
     
@@ -90,17 +96,7 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
     
                 virtual double sigmaHatWrap__BOSS() =0;
     
-                virtual double sigmaPDF(bool, bool, bool, double, double) =0;
-    
-                virtual double sigmaPDF__BOSS(bool, bool, bool, double) =0;
-    
-                virtual double sigmaPDF__BOSS(bool, bool, bool) =0;
-    
-                virtual double sigmaPDF__BOSS(bool, bool) =0;
-    
-                virtual double sigmaPDF__BOSS(bool) =0;
-    
-                virtual double sigmaPDF__BOSS() =0;
+                virtual double sigmaPDF() =0;
     
                 virtual void pickInState(int, int) =0;
     
@@ -226,8 +222,6 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
     
                 virtual void swapKin() =0;
     
-                virtual void setIdInDiff(int, int) =0;
-    
             public:
                 virtual void pointer_assign__BOSS(Abstract_SigmaProcess*) =0;
     
@@ -279,10 +273,10 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 #include "gambit/Backends/backend_undefs.hpp"
 
 
-#endif /* __abstract_SigmaProcess_Pythia_8_312_h__ */
+#endif /* __abstract_SigmaProcess_Pythia_8_212_h__ */
 ```
 
 
 -------------------------------
 
-Updated on 2025-02-12 at 15:36:43 +0000
+Updated on 2025-02-12 at 16:10:36 +0000

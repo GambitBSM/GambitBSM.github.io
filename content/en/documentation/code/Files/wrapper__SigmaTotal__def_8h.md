@@ -1,11 +1,11 @@
 ---
-title: "file Pythia_8_312/wrapper_SigmaTotal_def.h"
+title: "file Pythia_8_212/wrapper_SigmaTotal_def.h"
 
 description: "[No description available]"
 
 ---
 
-# file Pythia_8_312/wrapper_SigmaTotal_def.h
+# file Pythia_8_212/wrapper_SigmaTotal_def.h
 
 [No description available]
 
@@ -34,10 +34,12 @@ namespace CAT_3(
 ## Source code
 
 ```
-#ifndef __wrapper_SigmaTotal_def_Pythia_8_312_h__
-#define __wrapper_SigmaTotal_def_Pythia_8_312_h__
+#ifndef __wrapper_SigmaTotal_def_Pythia_8_212_h__
+#define __wrapper_SigmaTotal_def_Pythia_8_212_h__
 
-#include <utility>
+#include "wrapper_Info_decl.h"
+#include "wrapper_Settings_decl.h"
+#include "wrapper_ParticleData_decl.h"
 
 #include "identification.hpp"
 
@@ -48,9 +50,9 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
     {
         
         // Member functions: 
-        inline void SigmaTotal::init()
+        inline void SigmaTotal::init(Pythia8::Info* infoPtrIn, Pythia8::Settings& settings, Pythia8::ParticleData* particleDataPtrIn)
         {
-            get_BEptr()->init();
+            get_BEptr()->init__BOSS((*infoPtrIn).get_BEptr(), *settings.get_BEptr(), (*particleDataPtrIn).get_BEptr());
         }
         
         inline bool SigmaTotal::calc(int idA, int idB, double eCM)
@@ -58,59 +60,19 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             return get_BEptr()->calc(idA, idB, eCM);
         }
         
-        inline bool SigmaTotal::hasSigmaTot()
+        inline bool SigmaTotal::hasSigmaTot() const
         {
             return get_BEptr()->hasSigmaTot();
         }
         
-        inline double SigmaTotal::sigmaTot()
+        inline double SigmaTotal::sigmaTot() const
         {
             return get_BEptr()->sigmaTot();
         }
         
-        inline double SigmaTotal::rho()
-        {
-            return get_BEptr()->rho();
-        }
-        
-        inline double SigmaTotal::sigmaEl()
+        inline double SigmaTotal::sigmaEl() const
         {
             return get_BEptr()->sigmaEl();
-        }
-        
-        inline bool SigmaTotal::bElIsExp()
-        {
-            return get_BEptr()->bElIsExp();
-        }
-        
-        inline double SigmaTotal::bSlopeEl()
-        {
-            return get_BEptr()->bSlopeEl();
-        }
-        
-        inline bool SigmaTotal::hasCoulomb()
-        {
-            return get_BEptr()->hasCoulomb();
-        }
-        
-        inline bool SigmaTotal::calcTotEl(int idAin, int idBin, double sIn, double mAin, double mBin)
-        {
-            return get_BEptr()->calcTotEl(idAin, idBin, sIn, mAin, mBin);
-        }
-        
-        inline double SigmaTotal::dsigmaEl(double t, bool useCoulomb, bool onlyPomerons)
-        {
-            return get_BEptr()->dsigmaEl(t, useCoulomb, onlyPomerons);
-        }
-        
-        inline double SigmaTotal::dsigmaEl(double t, bool useCoulomb)
-        {
-            return get_BEptr()->dsigmaEl__BOSS(t, useCoulomb);
-        }
-        
-        inline double SigmaTotal::dsigmaEl(double t)
-        {
-            return get_BEptr()->dsigmaEl__BOSS(t);
         }
         
         inline double SigmaTotal::sigmaXB() const
@@ -138,64 +100,94 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             return get_BEptr()->sigmaND();
         }
         
-        inline double SigmaTotal::dsigmaSD(double xi, double t, bool isXB, int step)
+        inline bool SigmaTotal::calcMBRxsecs(int idA, int idB, double eCM)
         {
-            return get_BEptr()->dsigmaSD(xi, t, isXB, step);
+            return get_BEptr()->calcMBRxsecs(idA, idB, eCM);
         }
         
-        inline double SigmaTotal::dsigmaSD(double xi, double t, bool isXB)
+        inline double SigmaTotal::ddpMax() const
         {
-            return get_BEptr()->dsigmaSD__BOSS(xi, t, isXB);
+            return get_BEptr()->ddpMax();
         }
         
-        inline double SigmaTotal::dsigmaSD(double xi, double t)
+        inline double SigmaTotal::sdpMax() const
         {
-            return get_BEptr()->dsigmaSD__BOSS(xi, t);
+            return get_BEptr()->sdpMax();
         }
         
-        inline bool SigmaTotal::splitDiff()
+        inline double SigmaTotal::dpepMax() const
         {
-            return get_BEptr()->splitDiff();
+            return get_BEptr()->dpepMax();
         }
         
-        inline double SigmaTotal::dsigmaDD(double xi1, double xi2, double t, int step)
+        inline double SigmaTotal::bSlopeEl() const
         {
-            return get_BEptr()->dsigmaDD(xi1, xi2, t, step);
+            return get_BEptr()->bSlopeEl();
         }
         
-        inline double SigmaTotal::dsigmaDD(double xi1, double xi2, double t)
+        inline double SigmaTotal::bSlopeXB(double sX) const
         {
-            return get_BEptr()->dsigmaDD__BOSS(xi1, xi2, t);
+            return get_BEptr()->bSlopeXB(sX);
         }
         
-        inline double SigmaTotal::dsigmaCD(double xi1, double xi2, double t1, double t2, int step)
+        inline double SigmaTotal::bSlopeAX(double sX) const
         {
-            return get_BEptr()->dsigmaCD(xi1, xi2, t1, t2, step);
+            return get_BEptr()->bSlopeAX(sX);
         }
         
-        inline double SigmaTotal::dsigmaCD(double xi1, double xi2, double t1, double t2)
+        inline double SigmaTotal::bSlopeXX(double sX1, double sX2) const
         {
-            return get_BEptr()->dsigmaCD__BOSS(xi1, xi2, t1, t2);
+            return get_BEptr()->bSlopeXX(sX1, sX2);
         }
         
-        inline double SigmaTotal::mMinCD()
+        inline double SigmaTotal::mMinXB() const
         {
-            return get_BEptr()->mMinCD();
+            return get_BEptr()->mMinXB();
         }
         
-        inline void SigmaTotal::chooseVMDstates(int idA, int idB, double eCM, int processCode)
+        inline double SigmaTotal::mMinAX() const
         {
-            get_BEptr()->chooseVMDstates(idA, idB, eCM, processCode);
+            return get_BEptr()->mMinAX();
         }
         
-        inline ::std::pair<double, double> SigmaTotal::tRange(double sIn, double s1In, double s2In, double s3In, double s4In)
+        inline double SigmaTotal::mMinAXB() const
         {
-            return get_BEptr()->tRange(sIn, s1In, s2In, s3In, s4In);
+            return get_BEptr()->mMinAXB();
         }
         
-        inline bool SigmaTotal::tInRange(double tIn, double sIn, double s1In, double s2In, double s3In, double s4In)
+        inline double SigmaTotal::cRes() const
         {
-            return get_BEptr()->tInRange(tIn, sIn, s1In, s2In, s3In, s4In);
+            return get_BEptr()->cRes();
+        }
+        
+        inline double SigmaTotal::mResXB() const
+        {
+            return get_BEptr()->mResXB();
+        }
+        
+        inline double SigmaTotal::mResAX() const
+        {
+            return get_BEptr()->mResAX();
+        }
+        
+        inline double SigmaTotal::sProton() const
+        {
+            return get_BEptr()->sProton();
+        }
+        
+        inline double SigmaTotal::bMinSlopeXB() const
+        {
+            return get_BEptr()->bMinSlopeXB();
+        }
+        
+        inline double SigmaTotal::bMinSlopeAX() const
+        {
+            return get_BEptr()->bMinSlopeAX();
+        }
+        
+        inline double SigmaTotal::bMinSlopeXX() const
+        {
+            return get_BEptr()->bMinSlopeXX();
         }
         
         
@@ -261,10 +253,10 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 #include "gambit/Backends/backend_undefs.hpp"
 
-#endif /* __wrapper_SigmaTotal_def_Pythia_8_312_h__ */
+#endif /* __wrapper_SigmaTotal_def_Pythia_8_212_h__ */
 ```
 
 
 -------------------------------
 
-Updated on 2025-02-12 at 15:36:43 +0000
+Updated on 2025-02-12 at 16:10:36 +0000

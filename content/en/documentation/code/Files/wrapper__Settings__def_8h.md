@@ -1,11 +1,11 @@
 ---
-title: "file Pythia_8_312/wrapper_Settings_def.h"
+title: "file Pythia_8_212/wrapper_Settings_def.h"
 
 description: "[No description available]"
 
 ---
 
-# file Pythia_8_312/wrapper_Settings_def.h
+# file Pythia_8_212/wrapper_Settings_def.h
 
 [No description available]
 
@@ -34,16 +34,13 @@ namespace CAT_3(
 ## Source code
 
 ```
-#ifndef __wrapper_Settings_def_Pythia_8_312_h__
-#define __wrapper_Settings_def_Pythia_8_312_h__
+#ifndef __wrapper_Settings_def_Pythia_8_212_h__
+#define __wrapper_Settings_def_Pythia_8_212_h__
 
 #include <string>
-#include <istream>
 #include <ostream>
 #include <vector>
-#include <set>
-#include <map>
-#include "wrapper_Logger_decl.h"
+#include "wrapper_Info_decl.h"
 
 #include "identification.hpp"
 
@@ -54,14 +51,19 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
     {
         
         // Member functions: 
-        inline void Settings::initPtrs(Pythia8::Logger* loggerPtrIn)
+        inline void Settings::initPtr(Pythia8::Info* infoPtrIn)
         {
-            get_BEptr()->initPtrs__BOSS((*loggerPtrIn).get_BEptr());
+            get_BEptr()->initPtr__BOSS((*infoPtrIn).get_BEptr());
+        }
+        
+        inline bool Settings::init(std::string startFile, bool append, std::ostream& os)
+        {
+            return get_BEptr()->init(startFile, append, os);
         }
         
         inline bool Settings::init(std::string startFile, bool append)
         {
-            return get_BEptr()->init(startFile, append);
+            return get_BEptr()->init__BOSS(startFile, append);
         }
         
         inline bool Settings::init(std::string startFile)
@@ -74,19 +76,14 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             return get_BEptr()->init__BOSS();
         }
         
-        inline bool Settings::init(std::istream& is, bool append)
+        inline bool Settings::reInit(std::string startFile, std::ostream& os)
         {
-            return get_BEptr()->init(is, append);
-        }
-        
-        inline bool Settings::init(std::istream& is)
-        {
-            return get_BEptr()->init__BOSS(is);
+            return get_BEptr()->reInit(startFile, os);
         }
         
         inline bool Settings::reInit(std::string startFile)
         {
-            return get_BEptr()->reInit(startFile);
+            return get_BEptr()->reInit__BOSS(startFile);
         }
         
         inline bool Settings::reInit()
@@ -94,9 +91,14 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             return get_BEptr()->reInit__BOSS();
         }
         
+        inline bool Settings::readString(std::string line, bool warn, std::ostream& os)
+        {
+            return get_BEptr()->readString(line, warn, os);
+        }
+        
         inline bool Settings::readString(std::string line, bool warn)
         {
-            return get_BEptr()->readString(line, warn);
+            return get_BEptr()->readString__BOSS(line, warn);
         }
         
         inline bool Settings::readString(std::string line)
@@ -104,14 +106,9 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             return get_BEptr()->readString__BOSS(line);
         }
         
-        inline bool Settings::registerPluginLibrary(std::string libName, std::string startFile)
+        inline bool Settings::readingFailed()
         {
-            return get_BEptr()->registerPluginLibrary(libName, startFile);
-        }
-        
-        inline bool Settings::registerPluginLibrary(std::string libName)
-        {
-            return get_BEptr()->registerPluginLibrary__BOSS(libName);
+            return get_BEptr()->readingFailed();
         }
         
         inline bool Settings::writeFile(std::string toFile, bool writeAll)
@@ -139,29 +136,34 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             return get_BEptr()->writeFile__BOSS();
         }
         
-        inline bool Settings::writeFileXML(std::ostream& os)
+        inline void Settings::listAll(std::ostream& os)
         {
-            return get_BEptr()->writeFileXML(os);
-        }
-        
-        inline bool Settings::writeFileXML()
-        {
-            return get_BEptr()->writeFileXML__BOSS();
+            get_BEptr()->listAll(os);
         }
         
         inline void Settings::listAll()
         {
-            get_BEptr()->listAll();
+            get_BEptr()->listAll__BOSS();
+        }
+        
+        inline void Settings::listChanged(std::ostream& os)
+        {
+            get_BEptr()->listChanged(os);
         }
         
         inline void Settings::listChanged()
         {
-            get_BEptr()->listChanged();
+            get_BEptr()->listChanged__BOSS();
+        }
+        
+        inline void Settings::list(std::string match, std::ostream& os)
+        {
+            get_BEptr()->list(match, os);
         }
         
         inline void Settings::list(std::string match)
         {
-            get_BEptr()->list(match);
+            get_BEptr()->list__BOSS(match);
         }
         
         inline ::std::string Settings::output(std::string keyIn, bool fullLine)
@@ -172,16 +174,6 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         inline ::std::string Settings::output(std::string keyIn)
         {
             return get_BEptr()->output__BOSS(keyIn);
-        }
-        
-        inline ::std::vector<std::string> Settings::getReadHistory(int subrun)
-        {
-            return get_BEptr()->getReadHistory(subrun);
-        }
-        
-        inline ::std::vector<std::string> Settings::getReadHistory()
-        {
-            return get_BEptr()->getReadHistory__BOSS();
         }
         
         inline void Settings::resetAll()
@@ -224,11 +216,6 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             return get_BEptr()->isPVec(keyIn);
         }
         
-        inline bool Settings::isWVec(std::string keyIn)
-        {
-            return get_BEptr()->isWVec(keyIn);
-        }
-        
         inline void Settings::addFlag(std::string keyIn, bool defaultIn)
         {
             get_BEptr()->addFlag(keyIn, defaultIn);
@@ -269,11 +256,6 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             get_BEptr()->addPVec(keyIn, defaultIn, hasMinIn, hasMaxIn, minIn, maxIn);
         }
         
-        inline void Settings::addWVec(std::string keyIn, std::vector<std::string> defaultIn)
-        {
-            get_BEptr()->addWVec(keyIn, defaultIn);
-        }
-        
         inline bool Settings::flag(std::string keyIn)
         {
             return get_BEptr()->flag(keyIn);
@@ -307,11 +289,6 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         inline ::std::vector<double> Settings::pvec(std::string keyIn)
         {
             return get_BEptr()->pvec(keyIn);
-        }
-        
-        inline ::std::vector<std::string> Settings::wvec(std::string keyIn)
-        {
-            return get_BEptr()->wvec(keyIn);
         }
         
         inline bool Settings::flagDefault(std::string keyIn)
@@ -349,89 +326,39 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             return get_BEptr()->pvecDefault(keyIn);
         }
         
-        inline ::std::vector<std::string> Settings::wvecDefault(std::string keyIn)
-        {
-            return get_BEptr()->wvecDefault(keyIn);
-        }
-        
-        inline void Settings::flag(std::string keyIn, bool nowIn, bool force)
-        {
-            get_BEptr()->flag(keyIn, nowIn, force);
-        }
-        
         inline void Settings::flag(std::string keyIn, bool nowIn)
         {
-            get_BEptr()->flag__BOSS(keyIn, nowIn);
-        }
-        
-        inline bool Settings::mode(std::string keyIn, int nowIn, bool force)
-        {
-            return get_BEptr()->mode(keyIn, nowIn, force);
+            get_BEptr()->flag(keyIn, nowIn);
         }
         
         inline bool Settings::mode(std::string keyIn, int nowIn)
         {
-            return get_BEptr()->mode__BOSS(keyIn, nowIn);
+            return get_BEptr()->mode(keyIn, nowIn);
         }
         
-        inline bool Settings::parm(std::string keyIn, double nowIn, bool force)
+        inline void Settings::parm(std::string keyIn, double nowIn)
         {
-            return get_BEptr()->parm(keyIn, nowIn, force);
-        }
-        
-        inline bool Settings::parm(std::string keyIn, double nowIn)
-        {
-            return get_BEptr()->parm__BOSS(keyIn, nowIn);
-        }
-        
-        inline void Settings::word(std::string keyIn, std::string nowIn, bool force)
-        {
-            get_BEptr()->word(keyIn, nowIn, force);
+            get_BEptr()->parm(keyIn, nowIn);
         }
         
         inline void Settings::word(std::string keyIn, std::string nowIn)
         {
-            get_BEptr()->word__BOSS(keyIn, nowIn);
-        }
-        
-        inline void Settings::fvec(std::string keyIn, std::vector<bool> nowIn, bool force)
-        {
-            get_BEptr()->fvec(keyIn, nowIn, force);
+            get_BEptr()->word(keyIn, nowIn);
         }
         
         inline void Settings::fvec(std::string keyIn, std::vector<bool> nowIn)
         {
-            get_BEptr()->fvec__BOSS(keyIn, nowIn);
+            get_BEptr()->fvec(keyIn, nowIn);
         }
         
-        inline bool Settings::mvec(std::string keyIn, std::vector<int> nowIn, bool force)
+        inline void Settings::mvec(std::string keyIn, std::vector<int> nowIn)
         {
-            return get_BEptr()->mvec(keyIn, nowIn, force);
+            get_BEptr()->mvec(keyIn, nowIn);
         }
         
-        inline bool Settings::mvec(std::string keyIn, std::vector<int> nowIn)
+        inline void Settings::pvec(std::string keyIn, std::vector<double> nowIn)
         {
-            return get_BEptr()->mvec__BOSS(keyIn, nowIn);
-        }
-        
-        inline bool Settings::pvec(std::string keyIn, std::vector<double> nowIn, bool force)
-        {
-            return get_BEptr()->pvec(keyIn, nowIn, force);
-        }
-        
-        inline bool Settings::pvec(std::string keyIn, std::vector<double> nowIn)
-        {
-            return get_BEptr()->pvec__BOSS(keyIn, nowIn);
-        }
-        
-        inline void Settings::wvec(std::string keyIn, std::vector<std::string> nowIn, bool force)
-        {
-            get_BEptr()->wvec(keyIn, nowIn, force);
-        }
-        
-        inline void Settings::wvec(std::string keyIn, std::vector<std::string> nowIn)
-        {
-            get_BEptr()->wvec__BOSS(keyIn, nowIn);
+            get_BEptr()->pvec(keyIn, nowIn);
         }
         
         inline void Settings::forceMode(std::string keyIn, int nowIn)
@@ -489,29 +416,9 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             get_BEptr()->resetPVec(keyIn);
         }
         
-        inline void Settings::resetWVec(std::string keyIn)
-        {
-            get_BEptr()->resetWVec(keyIn);
-        }
-        
         inline bool Settings::getIsInit()
         {
             return get_BEptr()->getIsInit();
-        }
-        
-        inline bool Settings::readingFailed()
-        {
-            return get_BEptr()->readingFailed();
-        }
-        
-        inline bool Settings::unfinishedInput()
-        {
-            return get_BEptr()->unfinishedInput();
-        }
-        
-        inline bool Settings::hasHardProc()
-        {
-            return get_BEptr()->hasHardProc();
         }
         
         
@@ -577,10 +484,10 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 #include "gambit/Backends/backend_undefs.hpp"
 
-#endif /* __wrapper_Settings_def_Pythia_8_312_h__ */
+#endif /* __wrapper_Settings_def_Pythia_8_212_h__ */
 ```
 
 
 -------------------------------
 
-Updated on 2025-02-12 at 15:36:43 +0000
+Updated on 2025-02-12 at 16:10:36 +0000

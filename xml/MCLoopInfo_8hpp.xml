@@ -335,15 +335,13 @@
         </childnode>
         <childnode refid="28" relation="include">
         </childnode>
-        <childnode refid="29" relation="include">
-        </childnode>
       </node>
       <node id="2">
         <label>ColliderBit_types.hpp</label>
         <link refid="ColliderBit__types_8hpp"/>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="30" relation="include">
+        <childnode refid="29" relation="include">
         </childnode>
       </node>
       <node id="1">
@@ -351,13 +349,13 @@
         <link refid="MCLoopInfo_8hpp"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="32" relation="include">
+        <childnode refid="31" relation="include">
         </childnode>
       </node>
-      <node id="30">
+      <node id="29">
         <label>complete_process_PID_pair_multimaps.hpp</label>
         <link refid="complete__process__PID__pair__multimaps_8hpp"/>
-        <childnode refid="31" relation="include">
+        <childnode refid="30" relation="include">
         </childnode>
         <childnode refid="23" relation="include">
         </childnode>
@@ -412,13 +410,9 @@
         <label>LHC_likelihoods.cpp</label>
         <link refid="LHC__likelihoods_8cpp"/>
       </node>
-      <node id="32">
+      <node id="31">
         <label>MCLoopInfo.cpp</label>
         <link refid="MCLoopInfo_8cpp"/>
-      </node>
-      <node id="28">
-        <label>PoissonCalculators.cpp</label>
-        <link refid="PoissonCalculators_8cpp"/>
       </node>
       <node id="12">
         <label>Utils.cpp</label>
@@ -428,7 +422,7 @@
         <label>collider_event_weights.cpp</label>
         <link refid="collider__event__weights_8cpp"/>
       </node>
-      <node id="31">
+      <node id="30">
         <label>complete_process_PID_pair_multimaps.cpp</label>
         <link refid="complete__process__PID__pair__multimaps_8cpp"/>
       </node>
@@ -456,7 +450,7 @@
         <label>getxsec.cpp</label>
         <link refid="getxsec_8cpp"/>
       </node>
-      <node id="29">
+      <node id="28">
         <label>lep_mssm_xsecs.cpp</label>
         <link refid="lep__mssm__xsecs_8cpp"/>
       </node>
@@ -558,102 +552,89 @@
 <codeline lineno="57"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="58"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Convergence<sp/>options<sp/>for<sp/>each<sp/>collider</highlight></codeline>
 <codeline lineno="59" refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a818bc16a50d3653d7e586bb867258a31" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::map&lt;str,convergence_settings&gt;<sp/><ref refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a818bc16a50d3653d7e586bb867258a31" kindref="member">convergence_options</ref>;</highlight></codeline>
-<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="61"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Likelihood<sp/>estimator</highlight></codeline>
-<codeline lineno="62" refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1aae9f9da55a9ac8d94941fd5490363d20" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::string<sp/><ref refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1aae9f9da55a9ac8d94941fd5490363d20" kindref="member">estimator</ref>;</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="61"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Analysis<sp/>list<sp/>for<sp/>each<sp/>collider</highlight></codeline>
+<codeline lineno="62" refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a6f024bfb1181bc749de04ff62a20ab70" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::map&lt;str,std::vector&lt;str&gt;&gt;<sp/><ref refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a6f024bfb1181bc749de04ff62a20ab70" kindref="member">analyses</ref>;</highlight></codeline>
 <codeline lineno="63"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="64"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Ratio<sp/>of<sp/>nMC<sp/>to<sp/>nExpected<sp/>(see<sp/>UMVUE<sp/>estimator)</highlight></codeline>
-<codeline lineno="65" refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a078f0e4e946800888e3c65bbe8ee053b" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::map&lt;str,<sp/>double&gt;<sp/><ref refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a078f0e4e946800888e3c65bbe8ee053b" kindref="member">ratio_MC_expected</ref>;</highlight></codeline>
+<codeline lineno="64"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Analysis<sp/>list<sp/>for<sp/>each<sp/>detector<sp/>of<sp/>each<sp/>collider</highlight></codeline>
+<codeline lineno="65" refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1aa841fe1447d50d56f5b8e49a67f23309" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::map&lt;str,std::map&lt;str,std::vector&lt;str&gt;&gt;&gt;<sp/><ref refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1aa841fe1447d50d56f5b8e49a67f23309" kindref="member">detector_analyses</ref>;</highlight></codeline>
 <codeline lineno="66"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="67"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Number<sp/>of<sp/>mean<sp/>MC<sp/>events<sp/>to<sp/>simulate<sp/>for<sp/>a<sp/>given<sp/>parameter<sp/>point<sp/>for<sp/>each<sp/>collider</highlight></codeline>
-<codeline lineno="68"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>This<sp/>will<sp/>not<sp/>necessarily<sp/>be<sp/>the<sp/>same<sp/>as<sp/>the<sp/>number<sp/>simulated</highlight></codeline>
-<codeline lineno="69" refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a62aba7a76840caa0da18b0103b9cdafc" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a62aba7a76840caa0da18b0103b9cdafc" kindref="member">mean_nEvents</ref>;</highlight></codeline>
-<codeline lineno="70"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="71"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Number<sp/>of<sp/>MC<sp/>events<sp/>to<sp/>simulate<sp/>for<sp/>a<sp/>given<sp/>parameter<sp/>point<sp/>for<sp/>each<sp/>collider</highlight></codeline>
-<codeline lineno="72" refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a717218d8470a04a6cc16095c57320545" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::map&lt;str,<sp/>int&gt;<sp/><ref refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a717218d8470a04a6cc16095c57320545" kindref="member">desired_nEvents</ref>;</highlight></codeline>
-<codeline lineno="73"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="74"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Analysis<sp/>list<sp/>for<sp/>each<sp/>collider</highlight></codeline>
-<codeline lineno="75" refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a6f024bfb1181bc749de04ff62a20ab70" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::map&lt;str,std::vector&lt;str&gt;&gt;<sp/><ref refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a6f024bfb1181bc749de04ff62a20ab70" kindref="member">analyses</ref>;</highlight></codeline>
-<codeline lineno="76"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="77"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Analysis<sp/>list<sp/>for<sp/>each<sp/>detector<sp/>of<sp/>each<sp/>collider</highlight></codeline>
-<codeline lineno="78" refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1aa841fe1447d50d56f5b8e49a67f23309" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::map&lt;str,std::map&lt;str,std::vector&lt;str&gt;&gt;&gt;<sp/><ref refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1aa841fe1447d50d56f5b8e49a67f23309" kindref="member">detector_analyses</ref>;</highlight></codeline>
-<codeline lineno="79"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="80"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Set<sp/>the<sp/>current<sp/>collider</highlight></codeline>
-<codeline lineno="81"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a4c7159f6a7075bfafbe28d242e7cd5b4" kindref="member">set_current_collider</ref>(<ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;);</highlight></codeline>
+<codeline lineno="67"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Set<sp/>the<sp/>current<sp/>collider</highlight></codeline>
+<codeline lineno="68"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a4c7159f6a7075bfafbe28d242e7cd5b4" kindref="member">set_current_collider</ref>(<ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;);</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="70"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Get<sp/>the<sp/>current<sp/>collider</highlight></codeline>
+<codeline lineno="71"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;<sp/><ref refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a797872c3bb7c015c519866ab32e7b353" kindref="member">current_collider</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="73"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Get<sp/>maximum<sp/>allowable<sp/>number<sp/>of<sp/>failed<sp/>events<sp/>before<sp/>MC<sp/>loop<sp/>is<sp/>terminated<sp/>for<sp/>the<sp/>current<sp/>collider</highlight></codeline>
+<codeline lineno="74"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/><ref refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1aa702d4b00dafb9e5b660412c4604537e" kindref="member">current_maxFailedEvents</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="75"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Get/set<sp/>maximum<sp/>allowable<sp/>number<sp/>of<sp/>failed<sp/>events<sp/>before<sp/>MC<sp/>loop<sp/>is<sp/>terminated<sp/>for<sp/>the<sp/>current<sp/>collider</highlight></codeline>
+<codeline lineno="76"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/><ref refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1aa702d4b00dafb9e5b660412c4604537e" kindref="member">current_maxFailedEvents</ref>();</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="78"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Get<sp/>invalidate_failed_points<sp/>bool<sp/>for<sp/>the<sp/>current<sp/>collider</highlight></codeline>
+<codeline lineno="79"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">&amp;<sp/><ref refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a122ee7e96335784b94385881175b7570" kindref="member">current_invalidate_failed_points</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="80"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Get/set<sp/>invalidate_failed_points<sp/>for<sp/>the<sp/>current<sp/>collider</highlight></codeline>
+<codeline lineno="81"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">&amp;<sp/><ref refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a122ee7e96335784b94385881175b7570" kindref="member">current_invalidate_failed_points</ref>();</highlight></codeline>
 <codeline lineno="82"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="83"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Get<sp/>the<sp/>current<sp/>collider</highlight></codeline>
-<codeline lineno="84"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;<sp/><ref refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a797872c3bb7c015c519866ab32e7b353" kindref="member">current_collider</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="85"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="86"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Get<sp/>maximum<sp/>allowable<sp/>number<sp/>of<sp/>failed<sp/>events<sp/>before<sp/>MC<sp/>loop<sp/>is<sp/>terminated<sp/>for<sp/>the<sp/>current<sp/>collider</highlight></codeline>
-<codeline lineno="87"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/><ref refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1aa702d4b00dafb9e5b660412c4604537e" kindref="member">current_maxFailedEvents</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="88"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Get/set<sp/>maximum<sp/>allowable<sp/>number<sp/>of<sp/>failed<sp/>events<sp/>before<sp/>MC<sp/>loop<sp/>is<sp/>terminated<sp/>for<sp/>the<sp/>current<sp/>collider</highlight></codeline>
-<codeline lineno="89"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/><ref refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1aa702d4b00dafb9e5b660412c4604537e" kindref="member">current_maxFailedEvents</ref>();</highlight></codeline>
-<codeline lineno="90"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="91"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Get<sp/>invalidate_failed_points<sp/>bool<sp/>for<sp/>the<sp/>current<sp/>collider</highlight></codeline>
-<codeline lineno="92"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">&amp;<sp/><ref refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a122ee7e96335784b94385881175b7570" kindref="member">current_invalidate_failed_points</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="93"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Get/set<sp/>invalidate_failed_points<sp/>for<sp/>the<sp/>current<sp/>collider</highlight></codeline>
-<codeline lineno="94"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal">&amp;<sp/><ref refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a122ee7e96335784b94385881175b7570" kindref="member">current_invalidate_failed_points</ref>();</highlight></codeline>
-<codeline lineno="95"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="96"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Get<sp/>the<sp/>number<sp/>of<sp/>events<sp/>generated<sp/>for<sp/>the<sp/>current<sp/>collider</highlight></codeline>
-<codeline lineno="97"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/><ref refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a749b2423d0b565051be1b8b932d6e2b6" kindref="member">current_event_count</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="98"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Get/set<sp/>the<sp/>number<sp/>of<sp/>events<sp/>generated<sp/>for<sp/>the<sp/>current<sp/>collider</highlight></codeline>
-<codeline lineno="99"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/><ref refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a749b2423d0b565051be1b8b932d6e2b6" kindref="member">current_event_count</ref>();</highlight></codeline>
-<codeline lineno="100"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="101"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Get<sp/>the<sp/>set<sp/>of<sp/>convergence<sp/>options<sp/>for<sp/>the<sp/>current<sp/>collider</highlight></codeline>
-<codeline lineno="102"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1ColliderBit_1_1convergence__settings" kindref="compound">convergence_settings</ref>&amp;<sp/><ref refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a600f3a4a02d80609a70a30fbd89486b9" kindref="member">current_convergence_options</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="103"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Get/set<sp/>the<sp/>set<sp/>of<sp/>convergence<sp/>options<sp/>for<sp/>the<sp/>current<sp/>collider</highlight></codeline>
-<codeline lineno="104"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structGambit_1_1ColliderBit_1_1convergence__settings" kindref="compound">convergence_settings</ref>&amp;<sp/><ref refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a600f3a4a02d80609a70a30fbd89486b9" kindref="member">current_convergence_options</ref>();</highlight></codeline>
+<codeline lineno="83"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Get<sp/>the<sp/>number<sp/>of<sp/>events<sp/>generated<sp/>for<sp/>the<sp/>current<sp/>collider</highlight></codeline>
+<codeline lineno="84"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/><ref refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a749b2423d0b565051be1b8b932d6e2b6" kindref="member">current_event_count</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="85"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Get/set<sp/>the<sp/>number<sp/>of<sp/>events<sp/>generated<sp/>for<sp/>the<sp/>current<sp/>collider</highlight></codeline>
+<codeline lineno="86"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal">&amp;<sp/><ref refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a749b2423d0b565051be1b8b932d6e2b6" kindref="member">current_event_count</ref>();</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="88"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Get<sp/>the<sp/>set<sp/>of<sp/>convergence<sp/>options<sp/>for<sp/>the<sp/>current<sp/>collider</highlight></codeline>
+<codeline lineno="89"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1ColliderBit_1_1convergence__settings" kindref="compound">convergence_settings</ref>&amp;<sp/><ref refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a600f3a4a02d80609a70a30fbd89486b9" kindref="member">current_convergence_options</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="90"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Get/set<sp/>the<sp/>set<sp/>of<sp/>convergence<sp/>options<sp/>for<sp/>the<sp/>current<sp/>collider</highlight></codeline>
+<codeline lineno="91"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structGambit_1_1ColliderBit_1_1convergence__settings" kindref="compound">convergence_settings</ref>&amp;<sp/><ref refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a600f3a4a02d80609a70a30fbd89486b9" kindref="member">current_convergence_options</ref>();</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="93"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Get<sp/>the<sp/>set<sp/>of<sp/>analyses<sp/>for<sp/>the<sp/>current<sp/>collider</highlight></codeline>
+<codeline lineno="94"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;str&gt;&amp;<sp/><ref refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1ab829e691614a9b939ed9f92f44706e4f" kindref="member">current_analyses</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="95"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Get/set<sp/>the<sp/>set<sp/>of<sp/>analyses<sp/>for<sp/>the<sp/>current<sp/>collider</highlight></codeline>
+<codeline lineno="96"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;str&gt;&amp;<sp/><ref refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1ab829e691614a9b939ed9f92f44706e4f" kindref="member">current_analyses</ref>();</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="98"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Get<sp/>the<sp/>set<sp/>of<sp/>analyses<sp/>for<sp/>the<sp/>current<sp/>collider<sp/>and<sp/>a<sp/>given<sp/>detector</highlight></codeline>
+<codeline lineno="99"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;str&gt;&amp;<sp/><ref refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a6294f3efb133b279f66be4fd1c725b1d" kindref="member">current_analyses_for</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="100"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Get/set<sp/>the<sp/>set<sp/>of<sp/>analyses<sp/>for<sp/>the<sp/>current<sp/>collider<sp/>and<sp/>a<sp/>given<sp/>detector</highlight></codeline>
+<codeline lineno="101"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;str&gt;&amp;<sp/><ref refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a6294f3efb133b279f66be4fd1c725b1d" kindref="member">current_analyses_for</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="103"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Query<sp/>whether<sp/>any<sp/>analyses<sp/>exist<sp/>for<sp/>a<sp/>given<sp/>detector<sp/>for<sp/>the<sp/>current<sp/>collider</highlight></codeline>
+<codeline lineno="104"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a5e065555e9fb561a9105173e2f1a1ff6" kindref="member">current_analyses_exist_for</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="105"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="106"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Get<sp/>the<sp/>set<sp/>of<sp/>analyses<sp/>for<sp/>the<sp/>current<sp/>collider</highlight></codeline>
-<codeline lineno="107"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;str&gt;&amp;<sp/><ref refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1ab829e691614a9b939ed9f92f44706e4f" kindref="member">current_analyses</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="108"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Get/set<sp/>the<sp/>set<sp/>of<sp/>analyses<sp/>for<sp/>the<sp/>current<sp/>collider</highlight></codeline>
-<codeline lineno="109"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;str&gt;&amp;<sp/><ref refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1ab829e691614a9b939ed9f92f44706e4f" kindref="member">current_analyses</ref>();</highlight></codeline>
-<codeline lineno="110"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="111"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Get<sp/>the<sp/>set<sp/>of<sp/>analyses<sp/>for<sp/>the<sp/>current<sp/>collider<sp/>and<sp/>a<sp/>given<sp/>detector</highlight></codeline>
-<codeline lineno="112"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;str&gt;&amp;<sp/><ref refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a6294f3efb133b279f66be4fd1c725b1d" kindref="member">current_analyses_for</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="113"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Get/set<sp/>the<sp/>set<sp/>of<sp/>analyses<sp/>for<sp/>the<sp/>current<sp/>collider<sp/>and<sp/>a<sp/>given<sp/>detector</highlight></codeline>
-<codeline lineno="114"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;str&gt;&amp;<sp/><ref refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a6294f3efb133b279f66be4fd1c725b1d" kindref="member">current_analyses_for</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;);</highlight></codeline>
-<codeline lineno="115"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="116"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Query<sp/>whether<sp/>any<sp/>analyses<sp/>exist<sp/>for<sp/>a<sp/>given<sp/>detector<sp/>for<sp/>the<sp/>current<sp/>collider</highlight></codeline>
-<codeline lineno="117"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a5e065555e9fb561a9105173e2f1a1ff6" kindref="member">current_analyses_exist_for</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>&amp;)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="118"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="119"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Set<sp/>exceeded_maxFailedEvents<sp/>=<sp/>true<sp/>and<sp/>decrement<sp/>event<sp/>counter<sp/>by<sp/>1</highlight></codeline>
-<codeline lineno="120"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a4a3512bd3e45fcc26cba88ae8dfff3bd" kindref="member">report_exceeded_maxFailedEvents</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="121"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="122"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Set<sp/>end_of_event_file<sp/>=<sp/>true<sp/>and<sp/>decrement<sp/>event<sp/>counter<sp/>by<sp/>1</highlight></codeline>
-<codeline lineno="123"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1acfb0f61a817362efa512120bebd3f8a5" kindref="member">report_end_of_event_file</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="124"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="125"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Reset<sp/>flags</highlight></codeline>
-<codeline lineno="126"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a90f1dab2975fa2246c9e3cb2987da312" kindref="member">reset_flags</ref>();</highlight></codeline>
-<codeline lineno="127"><highlight class="normal"></highlight></codeline>
-<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
-<codeline lineno="129"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="130"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>The<sp/>name<sp/>of<sp/>the<sp/>current<sp/>collider</highlight></codeline>
-<codeline lineno="131"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>_current_collider;</highlight></codeline>
-<codeline lineno="132"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="133"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Iterator<sp/>to<sp/>the<sp/>current<sp/>maxFailedEvents</highlight></codeline>
-<codeline lineno="134"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::map&lt;str,int&gt;::iterator<sp/>_current_maxFailedEvents_it;</highlight></codeline>
-<codeline lineno="135"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="136"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Iterator<sp/>to<sp/>the<sp/>current<sp/>invalidate_failed_points</highlight></codeline>
-<codeline lineno="137"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::map&lt;str,bool&gt;::iterator<sp/>_current_invalidate_failed_points_it;</highlight></codeline>
-<codeline lineno="138"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="139"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Iterator<sp/>to<sp/>the<sp/>current<sp/>event<sp/>count</highlight></codeline>
-<codeline lineno="140"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::map&lt;str,int&gt;::iterator<sp/>_current_event_count_it;</highlight></codeline>
-<codeline lineno="141"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="142"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Iterator<sp/>to<sp/>the<sp/>current<sp/>set<sp/>of<sp/>convergence<sp/>options</highlight></codeline>
-<codeline lineno="143"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::map&lt;str,convergence_settings&gt;::iterator<sp/>_current_convergence_options_it;</highlight></codeline>
-<codeline lineno="144"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="145"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Iterator<sp/>to<sp/>the<sp/>current<sp/>set<sp/>of<sp/>analyses</highlight></codeline>
-<codeline lineno="146"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::map&lt;str,std::vector&lt;str&gt;&gt;::iterator<sp/>_current_analyses_it;</highlight></codeline>
-<codeline lineno="147"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="148"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Iterator<sp/>to<sp/>the<sp/>current<sp/>set<sp/>of<sp/>analyses<sp/>sorted<sp/>by<sp/>detector</highlight></codeline>
-<codeline lineno="149"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::map&lt;str,std::map&lt;str,std::vector&lt;str&gt;&gt;&gt;::iterator<sp/>_current_detector_analyses_it;</highlight></codeline>
-<codeline lineno="150"><highlight class="normal"></highlight></codeline>
-<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
-<codeline lineno="152"><highlight class="normal"></highlight></codeline>
-<codeline lineno="153"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
-<codeline lineno="154"><highlight class="normal">}</highlight></codeline>
-<codeline lineno="155"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Set<sp/>exceeded_maxFailedEvents<sp/>=<sp/>true<sp/>and<sp/>decrement<sp/>event<sp/>counter<sp/>by<sp/>1</highlight></codeline>
+<codeline lineno="107"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a4a3512bd3e45fcc26cba88ae8dfff3bd" kindref="member">report_exceeded_maxFailedEvents</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="109"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Set<sp/>end_of_event_file<sp/>=<sp/>true<sp/>and<sp/>decrement<sp/>event<sp/>counter<sp/>by<sp/>1</highlight></codeline>
+<codeline lineno="110"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1acfb0f61a817362efa512120bebd3f8a5" kindref="member">report_end_of_event_file</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="112"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Reset<sp/>flags</highlight></codeline>
+<codeline lineno="113"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a90f1dab2975fa2246c9e3cb2987da312" kindref="member">reset_flags</ref>();</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="117"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>The<sp/>name<sp/>of<sp/>the<sp/>current<sp/>collider</highlight></codeline>
+<codeline lineno="118"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>_current_collider;</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="120"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Iterator<sp/>to<sp/>the<sp/>current<sp/>maxFailedEvents</highlight></codeline>
+<codeline lineno="121"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::map&lt;str,int&gt;::iterator<sp/>_current_maxFailedEvents_it;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="123"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Iterator<sp/>to<sp/>the<sp/>current<sp/>invalidate_failed_points</highlight></codeline>
+<codeline lineno="124"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::map&lt;str,bool&gt;::iterator<sp/>_current_invalidate_failed_points_it;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="126"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Iterator<sp/>to<sp/>the<sp/>current<sp/>event<sp/>count</highlight></codeline>
+<codeline lineno="127"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::map&lt;str,int&gt;::iterator<sp/>_current_event_count_it;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="129"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Iterator<sp/>to<sp/>the<sp/>current<sp/>set<sp/>of<sp/>convergence<sp/>options</highlight></codeline>
+<codeline lineno="130"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::map&lt;str,convergence_settings&gt;::iterator<sp/>_current_convergence_options_it;</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="132"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Iterator<sp/>to<sp/>the<sp/>current<sp/>set<sp/>of<sp/>analyses</highlight></codeline>
+<codeline lineno="133"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::map&lt;str,std::vector&lt;str&gt;&gt;::iterator<sp/>_current_analyses_it;</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="135"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>///<sp/>Iterator<sp/>to<sp/>the<sp/>current<sp/>set<sp/>of<sp/>analyses<sp/>sorted<sp/>by<sp/>detector</highlight></codeline>
+<codeline lineno="136"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::map&lt;str,std::map&lt;str,std::vector&lt;str&gt;&gt;&gt;::iterator<sp/>_current_detector_analyses_it;</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="141"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp"/>
   </compounddef>

@@ -1,11 +1,11 @@
 ---
-title: "file Pythia_8_312/wrapper_Event_decl.h"
+title: "file Pythia_8_212/wrapper_Event_decl.h"
 
 description: "[No description available]"
 
 ---
 
-# file Pythia_8_312/wrapper_Event_decl.h
+# file Pythia_8_212/wrapper_Event_decl.h
 
 [No description available]
 
@@ -34,8 +34,8 @@ namespace CAT_3(
 ## Source code
 
 ```
-#ifndef __wrapper_Event_decl_Pythia_8_312_h__
-#define __wrapper_Event_decl_Pythia_8_312_h__
+#ifndef __wrapper_Event_decl_Pythia_8_212_h__
+#define __wrapper_Event_decl_Pythia_8_212_h__
 
 #include <cstddef>
 #include <string>
@@ -78,8 +78,6 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         
                 void clear();
         
-                void free();
-        
                 void reset();
         
                 Pythia8::Particle& operator[](int i);
@@ -91,12 +89,6 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
                 Pythia8::Particle& at(int i);
         
                 Pythia8::Particle& back();
-        
-                const Pythia8::Particle& front() const;
-        
-                const Pythia8::Particle& at(int i) const;
-        
-                const Pythia8::Particle& back() const;
         
                 int size() const;
         
@@ -142,7 +134,13 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         
                 int copy(int iCopy);
         
-                void list(bool showScaleAndVertex, bool showMothersAndDaughters, int precision, std::ostream& os) const;
+                void list(int precision) const;
+        
+                void list() const;
+        
+                void list(std::ostream& os, int precision) const;
+        
+                void list(std::ostream& os) const;
         
                 void list(bool showScaleAndVertex, bool showMothersAndDaughters, int precision) const;
         
@@ -150,13 +148,13 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         
                 void list(bool showScaleAndVertex) const;
         
-                void list() const;
+                void list(bool showScaleAndVertex, bool showMothersAndDaughters, std::ostream& os, int precision) const;
+        
+                void list(bool showScaleAndVertex, bool showMothersAndDaughters, std::ostream& os) const;
         
                 void popBack(int nRemove);
         
                 void popBack();
-        
-                void remove(int iFirst, int iLast, bool shiftHistory);
         
                 void remove(int iFirst, int iLast);
         
@@ -185,20 +183,6 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
                 double scaleSecond() const;
         
                 ::std::vector<int> daughterList(int i) const;
-        
-                int nFinal(bool chargedOnly) const;
-        
-                int nFinal() const;
-        
-                double dyAbs(int i1, int i2) const;
-        
-                double detaAbs(int i1, int i2) const;
-        
-                double dphiAbs(int i1, int i2) const;
-        
-                double RRapPhi(int i1, int i2) const;
-        
-                double REtaPhi(int i1, int i2) const;
         
                 void rot(double theta, double phi);
         
@@ -238,21 +222,11 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         
                 void restoreJunctionSize();
         
+                void listJunctions(std::ostream& os) const;
+        
                 void listJunctions() const;
         
-                bool hasHVcols() const;
-        
-                void listHVcols() const;
-        
-                int maxHVcols() const;
-        
-                void saveHVcolsSize();
-        
-                void restoreHVcolsSize();
-        
                 void savePartonLevelSize();
-        
-                void clearStringBreaks();
         
                 Pythia8::Event& operator+=(const Pythia8::Event& addEvent);
         
@@ -285,10 +259,10 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 #include "gambit/Backends/backend_undefs.hpp"
 
-#endif /* __wrapper_Event_decl_Pythia_8_312_h__ */
+#endif /* __wrapper_Event_decl_Pythia_8_212_h__ */
 ```
 
 
 -------------------------------
 
-Updated on 2025-02-12 at 15:36:43 +0000
+Updated on 2025-02-12 at 16:10:36 +0000

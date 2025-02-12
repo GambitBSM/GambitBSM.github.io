@@ -1,11 +1,11 @@
 ---
-title: "file Pythia_8_312/wrapper_UserHooks_def.h"
+title: "file Pythia_8_212/wrapper_UserHooks_def.h"
 
 description: "[No description available]"
 
 ---
 
-# file Pythia_8_312/wrapper_UserHooks_def.h
+# file Pythia_8_212/wrapper_UserHooks_def.h
 
 [No description available]
 
@@ -34,10 +34,18 @@ namespace CAT_3(
 ## Source code
 
 ```
-#ifndef __wrapper_UserHooks_def_Pythia_8_312_h__
-#define __wrapper_UserHooks_def_Pythia_8_312_h__
+#ifndef __wrapper_UserHooks_def_Pythia_8_212_h__
+#define __wrapper_UserHooks_def_Pythia_8_212_h__
 
+#include <string>
 #include <vector>
+#include "wrapper_Info_decl.h"
+#include "wrapper_Settings_decl.h"
+#include "wrapper_ParticleData_decl.h"
+#include "wrapper_Rndm_decl.h"
+#include "wrapper_BeamParticle_decl.h"
+#include "wrapper_CoupSM_decl.h"
+#include "wrapper_SigmaTotal_decl.h"
 #include "wrapper_SigmaProcess_decl.h"
 #include "wrapper_Event_decl.h"
 #include "wrapper_Particle_decl.h"
@@ -79,16 +87,6 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         inline bool UserHooks::doVetoProcessLevel(Pythia8::Event& arg_1)
         {
             return get_BEptr()->doVetoProcessLevel__BOSS(*arg_1.get_BEptr());
-        }
-        
-        inline bool UserHooks::canSetLowEnergySigma(int arg_1, int arg_2) const
-        {
-            return get_BEptr()->canSetLowEnergySigma(arg_1, arg_2);
-        }
-        
-        inline double UserHooks::doSetLowEnergySigma(int arg_1, int arg_2, double arg_3, double arg_4, double arg_5) const
-        {
-            return get_BEptr()->doSetLowEnergySigma(arg_1, arg_2, arg_3, arg_4, arg_5);
         }
         
         inline bool UserHooks::canVetoResonanceDecays()
@@ -226,29 +224,59 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             return get_BEptr()->doReconnectResonanceSystems__BOSS(arg_1, *arg_2.get_BEptr());
         }
         
+        inline bool UserHooks::canEnhanceEmission()
+        {
+            return get_BEptr()->canEnhanceEmission();
+        }
+        
+        inline double UserHooks::enhanceFactor(std::string arg_1)
+        {
+            return get_BEptr()->enhanceFactor(arg_1);
+        }
+        
+        inline double UserHooks::vetoProbability(std::string arg_1)
+        {
+            return get_BEptr()->vetoProbability(arg_1);
+        }
+        
+        inline void UserHooks::setEnhancedEventWeight(double wt)
+        {
+            get_BEptr()->setEnhancedEventWeight(wt);
+        }
+        
+        inline double UserHooks::getEnhancedEventWeight()
+        {
+            return get_BEptr()->getEnhancedEventWeight();
+        }
+        
+        inline bool UserHooks::canEnhanceTrial()
+        {
+            return get_BEptr()->canEnhanceTrial();
+        }
+        
+        inline void UserHooks::setEnhancedTrial(double pTIn, double wtIn)
+        {
+            get_BEptr()->setEnhancedTrial(pTIn, wtIn);
+        }
+        
+        inline double UserHooks::getEnhancedTrialPT()
+        {
+            return get_BEptr()->getEnhancedTrialPT();
+        }
+        
+        inline double UserHooks::getEnhancedTrialWeight()
+        {
+            return get_BEptr()->getEnhancedTrialWeight();
+        }
+        
         inline bool UserHooks::canChangeFragPar()
         {
             return get_BEptr()->canChangeFragPar();
         }
         
-        inline bool UserHooks::canVetoAfterHadronization()
+        inline bool UserHooks::doVetoFragmentation(Pythia8::Particle arg_1)
         {
-            return get_BEptr()->canVetoAfterHadronization();
-        }
-        
-        inline bool UserHooks::doVetoAfterHadronization(const Pythia8::Event& arg_1)
-        {
-            return get_BEptr()->doVetoAfterHadronization__BOSS(*arg_1.get_BEptr());
-        }
-        
-        inline bool UserHooks::canSetImpactParameter() const
-        {
-            return get_BEptr()->canSetImpactParameter();
-        }
-        
-        inline double UserHooks::doSetImpactParameter()
-        {
-            return get_BEptr()->doSetImpactParameter();
+            return get_BEptr()->doVetoFragmentation__BOSS(*arg_1.get_BEptr());
         }
         
         
@@ -306,10 +334,10 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 #include "gambit/Backends/backend_undefs.hpp"
 
-#endif /* __wrapper_UserHooks_def_Pythia_8_312_h__ */
+#endif /* __wrapper_UserHooks_def_Pythia_8_212_h__ */
 ```
 
 
 -------------------------------
 
-Updated on 2025-02-12 at 15:36:43 +0000
+Updated on 2025-02-12 at 16:10:36 +0000

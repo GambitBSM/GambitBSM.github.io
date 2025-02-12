@@ -1,11 +1,11 @@
 ---
-title: "file Pythia_8_312/wrapper_SigmaProcess_def.h"
+title: "file Pythia_8_212/wrapper_SigmaProcess_def.h"
 
 description: "[No description available]"
 
 ---
 
-# file Pythia_8_312/wrapper_SigmaProcess_def.h
+# file Pythia_8_212/wrapper_SigmaProcess_def.h
 
 [No description available]
 
@@ -34,11 +34,17 @@ namespace CAT_3(
 ## Source code
 
 ```
-#ifndef __wrapper_SigmaProcess_def_Pythia_8_312_h__
-#define __wrapper_SigmaProcess_def_Pythia_8_312_h__
+#ifndef __wrapper_SigmaProcess_def_Pythia_8_212_h__
+#define __wrapper_SigmaProcess_def_Pythia_8_212_h__
 
 #include <string>
+#include "wrapper_Info_decl.h"
+#include "wrapper_Settings_decl.h"
+#include "wrapper_ParticleData_decl.h"
+#include "wrapper_Rndm_decl.h"
 #include "wrapper_BeamParticle_decl.h"
+#include "wrapper_Couplings_decl.h"
+#include "wrapper_SigmaTotal_decl.h"
 #include "wrapper_SLHAinterface_decl.h"
 #include "wrapper_Vec4_decl.h"
 #include "wrapper_Event_decl.h"
@@ -54,19 +60,19 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
     {
         
         // Member functions: 
-        inline void SigmaProcess::init(Pythia8::BeamParticle* beamAPtrIn, Pythia8::BeamParticle* beamBPtrIn, Pythia8::SLHAinterface* slhaInterfacePtrIn)
+        inline void SigmaProcess::init(Pythia8::Info* infoPtrIn, Pythia8::Settings* settingsPtrIn, Pythia8::ParticleData* particleDataPtrIn, Pythia8::Rndm* rndmPtrIn, Pythia8::BeamParticle* beamAPtrIn, Pythia8::BeamParticle* beamBPtrIn, Pythia8::Couplings* couplings, Pythia8::SigmaTotal* sigmaTotPtrIn, Pythia8::SLHAinterface* slhaInterfacePtrIn)
         {
-            get_BEptr()->init__BOSS((*beamAPtrIn).get_BEptr(), (*beamBPtrIn).get_BEptr(), (*slhaInterfacePtrIn).get_BEptr());
+            get_BEptr()->init__BOSS((*infoPtrIn).get_BEptr(), (*settingsPtrIn).get_BEptr(), (*particleDataPtrIn).get_BEptr(), (*rndmPtrIn).get_BEptr(), (*beamAPtrIn).get_BEptr(), (*beamBPtrIn).get_BEptr(), (*couplings).get_BEptr(), (*sigmaTotPtrIn).get_BEptr(), (*slhaInterfacePtrIn).get_BEptr());
         }
         
-        inline void SigmaProcess::init(Pythia8::BeamParticle* beamAPtrIn, Pythia8::BeamParticle* beamBPtrIn)
+        inline void SigmaProcess::init(Pythia8::Info* infoPtrIn, Pythia8::Settings* settingsPtrIn, Pythia8::ParticleData* particleDataPtrIn, Pythia8::Rndm* rndmPtrIn, Pythia8::BeamParticle* beamAPtrIn, Pythia8::BeamParticle* beamBPtrIn, Pythia8::Couplings* couplings, Pythia8::SigmaTotal* sigmaTotPtrIn)
         {
-            get_BEptr()->init__BOSS((*beamAPtrIn).get_BEptr(), (*beamBPtrIn).get_BEptr());
+            get_BEptr()->init__BOSS((*infoPtrIn).get_BEptr(), (*settingsPtrIn).get_BEptr(), (*particleDataPtrIn).get_BEptr(), (*rndmPtrIn).get_BEptr(), (*beamAPtrIn).get_BEptr(), (*beamBPtrIn).get_BEptr(), (*couplings).get_BEptr(), (*sigmaTotPtrIn).get_BEptr());
         }
         
-        inline void SigmaProcess::updateBeamIDs()
+        inline void SigmaProcess::init(Pythia8::Info* infoPtrIn, Pythia8::Settings* settingsPtrIn, Pythia8::ParticleData* particleDataPtrIn, Pythia8::Rndm* rndmPtrIn, Pythia8::BeamParticle* beamAPtrIn, Pythia8::BeamParticle* beamBPtrIn, Pythia8::Couplings* couplings)
         {
-            get_BEptr()->updateBeamIDs();
+            get_BEptr()->init__BOSS((*infoPtrIn).get_BEptr(), (*settingsPtrIn).get_BEptr(), (*particleDataPtrIn).get_BEptr(), (*rndmPtrIn).get_BEptr(), (*beamAPtrIn).get_BEptr(), (*beamBPtrIn).get_BEptr(), (*couplings).get_BEptr());
         }
         
         inline void SigmaProcess::initProc()
@@ -124,34 +130,9 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             return get_BEptr()->sigmaHatWrap__BOSS();
         }
         
-        inline double SigmaProcess::sigmaPDF(bool initPS, bool samexGamma, bool useNewXvalues, double x1New, double x2New)
-        {
-            return get_BEptr()->sigmaPDF(initPS, samexGamma, useNewXvalues, x1New, x2New);
-        }
-        
-        inline double SigmaProcess::sigmaPDF(bool initPS, bool samexGamma, bool useNewXvalues, double x1New)
-        {
-            return get_BEptr()->sigmaPDF__BOSS(initPS, samexGamma, useNewXvalues, x1New);
-        }
-        
-        inline double SigmaProcess::sigmaPDF(bool initPS, bool samexGamma, bool useNewXvalues)
-        {
-            return get_BEptr()->sigmaPDF__BOSS(initPS, samexGamma, useNewXvalues);
-        }
-        
-        inline double SigmaProcess::sigmaPDF(bool initPS, bool samexGamma)
-        {
-            return get_BEptr()->sigmaPDF__BOSS(initPS, samexGamma);
-        }
-        
-        inline double SigmaProcess::sigmaPDF(bool initPS)
-        {
-            return get_BEptr()->sigmaPDF__BOSS(initPS);
-        }
-        
         inline double SigmaProcess::sigmaPDF()
         {
-            return get_BEptr()->sigmaPDF__BOSS();
+            return get_BEptr()->sigmaPDF();
         }
         
         inline void SigmaProcess::pickInState(int id1in, int id2in)
@@ -464,11 +445,6 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
             get_BEptr()->swapKin();
         }
         
-        inline void SigmaProcess::setIdInDiff(int arg_1, int arg_2)
-        {
-            get_BEptr()->setIdInDiff(arg_1, arg_2);
-        }
-        
         
         // Wrappers for original constructors: 
         inline SigmaProcess::SigmaProcess(const Pythia8::SigmaProcess& arg_1) :
@@ -524,10 +500,10 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 #include "gambit/Backends/backend_undefs.hpp"
 
-#endif /* __wrapper_SigmaProcess_def_Pythia_8_312_h__ */
+#endif /* __wrapper_SigmaProcess_def_Pythia_8_212_h__ */
 ```
 
 
 -------------------------------
 
-Updated on 2025-02-12 at 15:36:43 +0000
+Updated on 2025-02-12 at 16:10:36 +0000

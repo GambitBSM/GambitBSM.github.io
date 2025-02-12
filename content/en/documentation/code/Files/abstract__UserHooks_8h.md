@@ -1,11 +1,11 @@
 ---
-title: "file Pythia_8_312/abstract_UserHooks.h"
+title: "file Pythia_8_212/abstract_UserHooks.h"
 
 description: "[No description available]"
 
 ---
 
-# file Pythia_8_312/abstract_UserHooks.h
+# file Pythia_8_212/abstract_UserHooks.h
 
 [No description available]
 
@@ -34,15 +34,23 @@ namespace CAT_3(
 ## Source code
 
 ```
-#ifndef __abstract_UserHooks_Pythia_8_312_h__
-#define __abstract_UserHooks_Pythia_8_312_h__
+#ifndef __abstract_UserHooks_Pythia_8_212_h__
+#define __abstract_UserHooks_Pythia_8_212_h__
 
 #include <cstddef>
 #include <iostream>
+#include <string>
 #include <vector>
 #include "gambit/Backends/abstractbase.hpp"
 #include "forward_decls_abstract_classes.h"
 #include "forward_decls_wrapper_classes.h"
+#include "wrapper_Info_decl.h"
+#include "wrapper_Settings_decl.h"
+#include "wrapper_ParticleData_decl.h"
+#include "wrapper_Rndm_decl.h"
+#include "wrapper_BeamParticle_decl.h"
+#include "wrapper_CoupSM_decl.h"
+#include "wrapper_SigmaTotal_decl.h"
 #include "wrapper_SigmaProcess_decl.h"
 #include "wrapper_Event_decl.h"
 #include "wrapper_Particle_decl.h"
@@ -70,10 +78,6 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
                 virtual bool canVetoProcessLevel() =0;
     
                 virtual bool doVetoProcessLevel__BOSS(Pythia8::Abstract_Event&) =0;
-    
-                virtual bool canSetLowEnergySigma(int, int) const =0;
-    
-                virtual double doSetLowEnergySigma(int, int, double, double, double) const =0;
     
                 virtual bool canVetoResonanceDecays() =0;
     
@@ -129,15 +133,27 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
     
                 virtual bool doReconnectResonanceSystems__BOSS(int, Pythia8::Abstract_Event&) =0;
     
+                virtual bool canEnhanceEmission() =0;
+    
+                virtual double enhanceFactor(std::string) =0;
+    
+                virtual double vetoProbability(std::string) =0;
+    
+                virtual void setEnhancedEventWeight(double) =0;
+    
+                virtual double getEnhancedEventWeight() =0;
+    
+                virtual bool canEnhanceTrial() =0;
+    
+                virtual void setEnhancedTrial(double, double) =0;
+    
+                virtual double getEnhancedTrialPT() =0;
+    
+                virtual double getEnhancedTrialWeight() =0;
+    
                 virtual bool canChangeFragPar() =0;
     
-                virtual bool canVetoAfterHadronization() =0;
-    
-                virtual bool doVetoAfterHadronization__BOSS(const Pythia8::Abstract_Event&) =0;
-    
-                virtual bool canSetImpactParameter() const =0;
-    
-                virtual double doSetImpactParameter() =0;
+                virtual bool doVetoFragmentation__BOSS(Pythia8::Abstract_Particle&) =0;
     
             public:
                 virtual void pointer_assign__BOSS(Abstract_UserHooks*) =0;
@@ -190,10 +206,10 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 #include "gambit/Backends/backend_undefs.hpp"
 
 
-#endif /* __abstract_UserHooks_Pythia_8_312_h__ */
+#endif /* __abstract_UserHooks_Pythia_8_212_h__ */
 ```
 
 
 -------------------------------
 
-Updated on 2025-02-12 at 15:36:43 +0000
+Updated on 2025-02-12 at 16:10:36 +0000

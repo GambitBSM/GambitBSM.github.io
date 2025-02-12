@@ -1,11 +1,11 @@
 ---
-title: "file Pythia_8_312/wrapper_PartonLevel_decl.h"
+title: "file Pythia_8_212/wrapper_PartonLevel_decl.h"
 
 description: "[No description available]"
 
 ---
 
-# file Pythia_8_312/wrapper_PartonLevel_decl.h
+# file Pythia_8_212/wrapper_PartonLevel_decl.h
 
 [No description available]
 
@@ -34,16 +34,23 @@ namespace CAT_3(
 ## Source code
 
 ```
-#ifndef __wrapper_PartonLevel_decl_Pythia_8_312_h__
-#define __wrapper_PartonLevel_decl_Pythia_8_312_h__
+#ifndef __wrapper_PartonLevel_decl_Pythia_8_212_h__
+#define __wrapper_PartonLevel_decl_Pythia_8_212_h__
 
 #include <cstddef>
 #include <vector>
 #include "forward_decls_wrapper_classes.h"
 #include "gambit/Backends/wrapperbase.hpp"
 #include "abstract_PartonLevel.h"
-#include "wrapper_Event_decl.h"
+#include "wrapper_Info_decl.h"
+#include "wrapper_Settings_decl.h"
+#include "wrapper_ParticleData_decl.h"
+#include "wrapper_Rndm_decl.h"
 #include "wrapper_BeamParticle_decl.h"
+#include "wrapper_Couplings_decl.h"
+#include "wrapper_SigmaTotal_decl.h"
+#include "wrapper_UserHooks_decl.h"
+#include "wrapper_Event_decl.h"
 #include "wrapper_ResonanceDecays_decl.h"
 
 #include "identification.hpp"
@@ -65,12 +72,6 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         
                 // Member functions: 
             public:
-                void initSwitchID(const std::vector<int>& idAList);
-        
-                void setBeamID(int iPDFA);
-        
-                void setBeamID();
-        
                 bool next(Pythia8::Event& process, Pythia8::Event& event);
         
                 void setupShowerSys(Pythia8::Event& process, Pythia8::Event& event);
@@ -82,8 +83,6 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
                 bool hasVetoed() const;
         
                 bool hasVetoedDiff() const;
-        
-                bool hasVetoedMerging() const;
         
                 void accumulate();
         
@@ -98,12 +97,6 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
                 double pTLastInShower();
         
                 int typeLastInShower();
-        
-                bool canEnhanceTrial();
-        
-                double getEnhancedTrialPT();
-        
-                double getEnhancedTrialWeight();
         
         
                 // Wrappers for original constructors: 
@@ -133,10 +126,10 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 #include "gambit/Backends/backend_undefs.hpp"
 
-#endif /* __wrapper_PartonLevel_decl_Pythia_8_312_h__ */
+#endif /* __wrapper_PartonLevel_decl_Pythia_8_212_h__ */
 ```
 
 
 -------------------------------
 
-Updated on 2025-02-12 at 15:36:43 +0000
+Updated on 2025-02-12 at 16:10:36 +0000

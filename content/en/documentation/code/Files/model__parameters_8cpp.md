@@ -91,6 +91,9 @@ Authors (add name and date if you modify):
 #include "gambit/Utils/model_parameters.hpp"
 #include "gambit/Utils/standalone_error_handlers.hpp"
 #include "gambit/Utils/local_info.hpp"
+#include "gambit/Elements/functors.hpp"
+#include "gambit/Models/claw_singleton.hpp"
+#include "gambit/Core/core_singleton.hpp"
 
 namespace Gambit 
 {
@@ -264,4 +267,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2025-02-12 at 15:36:40 +0000
+Updated on 2025-02-12 at 16:10:33 +0000

@@ -57,9 +57,7 @@
     <innerclass refid="classGambit_1_1Scanner_1_1Scanner__Plugin__Function" prot="public">Gambit::Scanner::Scanner_Plugin_Function</innerclass>
     <innerclass refid="classGambit_1_1Scanner_1_1Scanner__Plugin__Function_3_01ret_07args_8_8_8_08_4" prot="public">Gambit::Scanner::Scanner_Plugin_Function&lt; ret(args...)&gt;</innerclass>
     <innernamespace refid="namespaceGambit_1_1Scanner_1_1Errors">Gambit::Scanner::Errors</innernamespace>
-    <innernamespace refid="namespaceGambit_1_1Scanner_1_1mpi__dist__internal">Gambit::Scanner::mpi_dist_internal</innernamespace>
     <innernamespace refid="namespaceGambit_1_1Scanner_1_1Plugins">Gambit::Scanner::Plugins</innernamespace>
-    <innernamespace refid="namespaceGambit_1_1Scanner_1_1Python">Gambit::Scanner::Python</innernamespace>
       <sectiondef kind="user-defined">
       <memberdef kind="function" id="scanner__utils_8hpp_1ab5d99bc0cd1c70bce78b70cf2b1b9f3f" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -904,7 +902,7 @@
         </inbodydescription>
         <location file="ScannerBit/include/gambit/ScannerBit/printer_interface.hpp" line="39" column="21" bodyfile="ScannerBit/include/gambit/ScannerBit/printer_interface.hpp" bodystart="39" bodyend="43"/>
       </memberdef>
-      <memberdef kind="function" id="include_2gambit_2ScannerBit_2python__utils_8hpp_1acbc1b123ab591238092ed877b59ce82a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="python__utils_8hpp_1acbc1b123ab591238092ed877b59ce82a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>std::string</type>
         <definition>std::string Gambit::Scanner::pytype</definition>
         <argsstring>(py::handle o)</argsstring>
@@ -936,7 +934,7 @@
         </inbodydescription>
         <location file="ScannerBit/include/gambit/ScannerBit/python_utils.hpp" line="28" column="28" bodyfile="ScannerBit/include/gambit/ScannerBit/python_utils.hpp" bodystart="28" bodyend="31"/>
       </memberdef>
-      <memberdef kind="function" id="include_2gambit_2ScannerBit_2python__utils_8hpp_1aacc7482724c5cf08e36c1c37fc51d4ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="python__utils_8hpp_1aacc7482724c5cf08e36c1c37fc51d4ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
           <param>
             <type>typename T</type>
@@ -1008,7 +1006,7 @@
         </inbodydescription>
         <location file="ScannerBit/include/gambit/ScannerBit/python_utils.hpp" line="45" column="14" bodyfile="ScannerBit/include/gambit/ScannerBit/python_utils.hpp" bodystart="45" bodyend="59"/>
       </memberdef>
-      <memberdef kind="function" id="include_2gambit_2ScannerBit_2python__utils_8hpp_1a8cb318442463a685dca0674a6d25af3a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="python__utils_8hpp_1a8cb318442463a685dca0674a6d25af3a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>py::object</type>
         <definition>py::object Gambit::Scanner::yaml_to_dict</definition>
         <argsstring>(const YAML::Node &amp;node)</argsstring>
@@ -1040,7 +1038,7 @@
         </inbodydescription>
         <location file="ScannerBit/include/gambit/ScannerBit/python_utils.hpp" line="69" column="27" bodyfile="ScannerBit/include/gambit/ScannerBit/python_utils.hpp" bodystart="69" bodyend="122"/>
       </memberdef>
-      <memberdef kind="function" id="include_2gambit_2ScannerBit_2python__utils_8hpp_1ab8d81aceb69f0a9f0f4fa0f16760be5a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="python__utils_8hpp_1ab8d81aceb69f0a9f0f4fa0f16760be5a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>YAML::Node</type>
         <definition>YAML::Node Gambit::Scanner::dict_to_yaml</definition>
         <argsstring>(py::handle o)</argsstring>
@@ -1410,7 +1408,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ScannerBit/src/scanners/twalk/twalk.cpp" line="91" column="14" bodyfile="ScannerBit/src/scanners/twalk/twalk.cpp" bodystart="91" bodyend="500" declfile="ScannerBit/include/gambit/ScannerBit/scanners/twalk/twalk.hpp" declline="280" declcolumn="14"/>
+        <location file="ScannerBit/src/scanners/twalk/twalk.cpp" line="90" column="14" bodyfile="ScannerBit/src/scanners/twalk/twalk.cpp" bodystart="90" bodyend="441" declfile="ScannerBit/include/gambit/ScannerBit/scanners/twalk/twalk.hpp" declline="280" declcolumn="14"/>
       </memberdef>
       <memberdef kind="function" id="scan_8cpp_1a162fa638f350a1b8fdc9bcb8e9815b67" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>YAML::Node</type>

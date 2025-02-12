@@ -1,11 +1,11 @@
 ---
-title: "file Pythia_8_312/wrapper_Vec4_decl.h"
+title: "file Pythia_8_212/wrapper_Vec4_decl.h"
 
 description: "[No description available]"
 
 ---
 
-# file Pythia_8_312/wrapper_Vec4_decl.h
+# file Pythia_8_212/wrapper_Vec4_decl.h
 
 [No description available]
 
@@ -34,8 +34,8 @@ namespace CAT_3(
 ## Source code
 
 ```
-#ifndef __wrapper_Vec4_decl_Pythia_8_312_h__
-#define __wrapper_Vec4_decl_Pythia_8_312_h__
+#ifndef __wrapper_Vec4_decl_Pythia_8_212_h__
+#define __wrapper_Vec4_decl_Pythia_8_212_h__
 
 #include <cstddef>
 #include "forward_decls_wrapper_classes.h"
@@ -145,9 +145,7 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         
                 void bstback(const Pythia8::Vec4& pIn, double mIn);
         
-                double eInFrame(const Pythia8::Vec4& pIn) const;
-        
-                Pythia8::Vec4 operator-() const;
+                Pythia8::Vec4 operator-();
         
                 Pythia8::Vec4& operator+=(const Pythia8::Vec4& v);
         
@@ -156,16 +154,6 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
                 Pythia8::Vec4& operator*=(double f);
         
                 Pythia8::Vec4& operator/=(double f);
-        
-                Pythia8::Vec4 operator+(const Pythia8::Vec4& v) const;
-        
-                Pythia8::Vec4 operator-(const Pythia8::Vec4& v) const;
-        
-                Pythia8::Vec4 operator*(double f) const;
-        
-                Pythia8::Vec4 operator/(double f) const;
-        
-                double operator*(const Pythia8::Vec4& v) const;
         
         
                 // Wrappers for original constructors: 
@@ -199,10 +187,10 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 #include "gambit/Backends/backend_undefs.hpp"
 
-#endif /* __wrapper_Vec4_decl_Pythia_8_312_h__ */
+#endif /* __wrapper_Vec4_decl_Pythia_8_212_h__ */
 ```
 
 
 -------------------------------
 
-Updated on 2025-02-12 at 15:36:43 +0000
+Updated on 2025-02-12 at 16:10:36 +0000

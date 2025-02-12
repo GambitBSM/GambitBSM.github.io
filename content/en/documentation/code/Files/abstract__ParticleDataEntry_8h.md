@@ -1,11 +1,11 @@
 ---
-title: "file Pythia_8_312/abstract_ParticleDataEntry.h"
+title: "file Pythia_8_212/abstract_ParticleDataEntry.h"
 
 description: "[No description available]"
 
 ---
 
-# file Pythia_8_312/abstract_ParticleDataEntry.h
+# file Pythia_8_212/abstract_ParticleDataEntry.h
 
 [No description available]
 
@@ -34,8 +34,8 @@ namespace CAT_3(
 ## Source code
 
 ```
-#ifndef __abstract_ParticleDataEntry_Pythia_8_312_h__
-#define __abstract_ParticleDataEntry_Pythia_8_312_h__
+#ifndef __abstract_ParticleDataEntry_Pythia_8_212_h__
+#define __abstract_ParticleDataEntry_Pythia_8_212_h__
 
 #include <cstddef>
 #include <iostream>
@@ -45,7 +45,10 @@ namespace CAT_3(
 #include "forward_decls_wrapper_classes.h"
 #include "wrapper_ParticleData_decl.h"
 #include "wrapper_DecayChannel_decl.h"
+#include "wrapper_ResonanceWidths_decl.h"
 #include "wrapper_Info_decl.h"
+#include "wrapper_Settings_decl.h"
+#include "wrapper_Couplings_decl.h"
 
 #include "identification.hpp"
 
@@ -59,15 +62,11 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         {
             public:
     
-                virtual Pythia8::Abstract_ParticleDataEntry& operator_equal__BOSS(const Pythia8::Abstract_ParticleDataEntry&) =0;
-    
                 virtual void setDefaults() =0;
     
                 virtual void initPtr__BOSS(Pythia8::Abstract_ParticleData*) =0;
     
-                virtual void setAll(std::string, std::string, int, int, int, double, double, double, double, double, bool) =0;
-    
-                virtual void setAll__BOSS(std::string, std::string, int, int, int, double, double, double, double, double) =0;
+                virtual void setAll(std::string, std::string, int, int, int, double, double, double, double, double) =0;
     
                 virtual void setAll__BOSS(std::string, std::string, int, int, int, double, double, double, double) =0;
     
@@ -111,21 +110,13 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
     
                 virtual void setMMaxNoChange(double) =0;
     
-                virtual void setTau0(double, bool) =0;
-    
-                virtual void setTau0__BOSS(double) =0;
-    
-                virtual void setVarWidth(bool) =0;
+                virtual void setTau0(double) =0;
     
                 virtual void setIsResonance(bool) =0;
     
                 virtual void setMayDecay(bool, bool) =0;
     
                 virtual void setMayDecay__BOSS(bool) =0;
-    
-                virtual void setTauCalc(bool, bool) =0;
-    
-                virtual void setTauCalc__BOSS(bool) =0;
     
                 virtual void setDoExternalDecay(bool) =0;
     
@@ -136,8 +127,6 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
                 virtual void setHasChanged(bool) =0;
     
                 virtual int id() const =0;
-    
-                virtual int antiId() const =0;
     
                 virtual bool hasAnti() const =0;
     
@@ -175,11 +164,7 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
     
                 virtual bool isResonance() const =0;
     
-                virtual bool varWidth() const =0;
-    
                 virtual bool mayDecay() const =0;
-    
-                virtual bool tauCalc() const =0;
     
                 virtual bool doExternalDecay() const =0;
     
@@ -189,17 +174,13 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
     
                 virtual bool hasChanged() const =0;
     
-                virtual bool hasChangedMMin() const =0;
-    
-                virtual bool hasChangedMMax() const =0;
-    
                 virtual void initBWmass() =0;
     
                 virtual double constituentMass() const =0;
     
-                virtual double mSel() const =0;
+                virtual double mSel() =0;
     
-                virtual double mRun(double) const =0;
+                virtual double mRun(double) =0;
     
                 virtual bool useBreitWigner() const =0;
     
@@ -221,10 +202,6 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
     
                 virtual bool isBaryon() const =0;
     
-                virtual bool isOnium() const =0;
-    
-                virtual bool isExotic() const =0;
-    
                 virtual bool isOctetHadron() const =0;
     
                 virtual int heaviestQuark(int) const =0;
@@ -234,8 +211,6 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
                 virtual int baryonNumberType(int) const =0;
     
                 virtual int baryonNumberType__BOSS() const =0;
-    
-                virtual int nQuarksInCode(int) const =0;
     
                 virtual void clearChannels() =0;
     
@@ -281,7 +256,11 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
     
                 virtual Pythia8::Abstract_DecayChannel& pickChannel__BOSS() =0;
     
-                virtual void resInit__BOSS(Pythia8::Abstract_Info*) =0;
+                virtual void setResonancePtr__BOSS(Pythia8::Abstract_ResonanceWidths*) =0;
+    
+                virtual Pythia8::Abstract_ResonanceWidths* getResonancePtr__BOSS() =0;
+    
+                virtual void resInit__BOSS(Pythia8::Abstract_Info*, Pythia8::Abstract_Settings*, Pythia8::Abstract_ParticleData*, Pythia8::Abstract_Couplings*) =0;
     
                 virtual double resWidth(int, double, int, bool, bool) =0;
     
@@ -361,10 +340,10 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 #include "gambit/Backends/backend_undefs.hpp"
 
 
-#endif /* __abstract_ParticleDataEntry_Pythia_8_312_h__ */
+#endif /* __abstract_ParticleDataEntry_Pythia_8_212_h__ */
 ```
 
 
 -------------------------------
 
-Updated on 2025-02-12 at 15:36:43 +0000
+Updated on 2025-02-12 at 16:10:36 +0000

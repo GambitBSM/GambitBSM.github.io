@@ -1,11 +1,11 @@
 ---
-title: "file Pythia_8_312/wrapper_ResonanceDecays_def.h"
+title: "file Pythia_8_212/wrapper_ResonanceDecays_def.h"
 
 description: "[No description available]"
 
 ---
 
-# file Pythia_8_312/wrapper_ResonanceDecays_def.h
+# file Pythia_8_212/wrapper_ResonanceDecays_def.h
 
 [No description available]
 
@@ -34,10 +34,13 @@ namespace CAT_3(
 ## Source code
 
 ```
-#ifndef __wrapper_ResonanceDecays_def_Pythia_8_312_h__
-#define __wrapper_ResonanceDecays_def_Pythia_8_312_h__
+#ifndef __wrapper_ResonanceDecays_def_Pythia_8_212_h__
+#define __wrapper_ResonanceDecays_def_Pythia_8_212_h__
 
 #include <vector>
+#include "wrapper_Info_decl.h"
+#include "wrapper_ParticleData_decl.h"
+#include "wrapper_Rndm_decl.h"
 #include "wrapper_Event_decl.h"
 
 #include "identification.hpp"
@@ -49,9 +52,9 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
     {
         
         // Member functions: 
-        inline void ResonanceDecays::init()
+        inline void ResonanceDecays::init(Pythia8::Info* infoPtrIn, Pythia8::ParticleData* particleDataPtrIn, Pythia8::Rndm* rndmPtrIn)
         {
-            get_BEptr()->init();
+            get_BEptr()->init__BOSS((*infoPtrIn).get_BEptr(), (*particleDataPtrIn).get_BEptr(), (*rndmPtrIn).get_BEptr());
         }
         
         inline bool ResonanceDecays::next(Pythia8::Event& process, int iDecNow)
@@ -127,10 +130,10 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 #include "gambit/Backends/backend_undefs.hpp"
 
-#endif /* __wrapper_ResonanceDecays_def_Pythia_8_312_h__ */
+#endif /* __wrapper_ResonanceDecays_def_Pythia_8_212_h__ */
 ```
 
 
 -------------------------------
 
-Updated on 2025-02-12 at 15:36:43 +0000
+Updated on 2025-02-12 at 16:10:36 +0000

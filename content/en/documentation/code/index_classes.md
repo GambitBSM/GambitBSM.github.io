@@ -44,8 +44,8 @@ weight: 20
 <details><summary><b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1backends/>Backends<a></b></summary>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1backends_1_1alterbbn__2__2/>AlterBBN_2_2<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1backends_1_1heplike__2__0/>HepLike_2_0<a></b><br>
-<details><summary><b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1backends_1_1pythia__8__312/>Pythia_8_312<a></b></summary>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1backends_1_1pythia__8__312_1_1pythia8/>Pythia8<a></b><br></details>
+<details><summary><b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1backends_1_1pythia__8__212/>Pythia_8_212<a></b></summary>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1backends_1_1pythia__8__212_1_1pythia8/>Pythia8<a></b><br></details>
 <details><summary><b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1backends_1_1rivet__3__1__5/>Rivet_3_1_5<a></b></summary>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1backends_1_1rivet__3__1__5_1_1rivet/>Rivet<a></b><br></details>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1backends_1_1backend__info/>backend_info<a></b><br>Structure providing some basic info on backend libraries. <br>
@@ -247,7 +247,6 @@ weight: 20
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/>P2<a></b><br>A simple container for a point on an xy plane. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1pid__pair__xsec__container/>PID_pair_xsec_container<a></b><br>A class for holding the production cross-section for final state identified by the pair of PID codes. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1perf__plot/>Perf_Plot<a></b><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1poissoncalculators/>PoissonCalculators<a></b><br>
 <details><summary><b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1py8collider/>Py8Collider<a></b><br>A specializable, recyclable class interfacing ColliderBit and Pythia. </summary>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1py8collider_1_1eventgenerationerror/>EventGenerationError<a></b><br>An exception for when Pythia fails to generate events. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1py8collider_1_1initializationerror/>InitializationError<a></b><br>An exception for when Pythia fails to initialize. <br></details>
@@ -399,8 +398,6 @@ weight: 20
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1diver__1__0__2_1_1diverscandata/>diverScanData<a></b><br>Structure for passing likelihood and printer data through Diver to the objective function. <br></details>
 <details><summary><b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1diver__1__0__4/>Diver_1_0_4<a></b></summary>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1diver__1__0__4_1_1diverscandata/>diverScanData<a></b><br>Structure for passing likelihood and printer data through Diver to the objective function. <br></details>
-<details><summary><b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1diver__1__0__5/>Diver_1_0_5<a></b></summary>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1diver__1__0__5_1_1diverscandata/>diverScanData<a></b><br>Structure for passing likelihood and printer data through Diver to the objective function. <br></details>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1dummyinput/>DummyInput<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1dummymodel/>DummyModel<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1examplebit__a/>ExampleBit_A<a></b><br>
@@ -653,13 +650,6 @@ weight: 20
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1scanner_1_1plugins_1_1plugindata/>pluginData<a></b><br>Structure that holds all the data provided by plugins about themselves. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugininfo/>pluginInfo<a></b><br>Container for all the plugin info from the inifile and Scannerbit. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1scanner_1_1plugins_1_1pyplugin__info/>pyplugin_info<a></b><br></details>
-<details><summary><b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1scanner_1_1python/>Python<a></b></summary>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1scanner_1_1python_1_1inifileparser/>IniFileParser<a></b><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1scanner_1_1python_1_1diagnostics/>diagnostics<a></b><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1scanner_1_1python_1_1fake__vector/>fake_vector<a></b><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1scanner_1_1python_1_1printer__wrapper/>printer_wrapper<a></b><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1scanner_1_1python_1_1scan/>scan<a></b><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1scanner_1_1python_1_1scan__interface/>scan_interface<a></b><br></details>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1scanner_1_1rannumgen/>RanNumGen<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1scanner_1_1scan__manager/>Scan_Manager<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1scanner_1_1scanner__plugin__function/>Scanner_Plugin_Function<a></b><br>
@@ -698,8 +688,6 @@ weight: 20
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1scanner_1_1is__args__convertible_3_01ret1_07_08_00_01ret2_07_08_4/>is_args_convertible< ret1(), ret2()><a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1scanner_1_1is__args__convertible_3_01ret1_07arg1_00_01args1_8_8_8_08_00_01ret2_07arg2_00_01args2_8_8_8_08_4/>is_args_convertible< ret1(arg1, args1...), ret2(arg2, args2...)><a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1scanner_1_1like__ptr/>like_ptr<a></b><br>likelihood pointer holder for scanner plugins. <br>
-<details><summary><b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1scanner_1_1mpi__dist__internal/>mpi_dist_internal<a></b></summary>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1scanner_1_1mpi__dist__internal_1_1mpi__dist/>mpi_dist<a></b><br></details>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1scanner_1_1point__info/>point_info<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1scanner_1_1remove__all__func/>remove_all_func<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1scanner_1_1remove__all__func_3_01ret_07args_8_8_8_08_4/>remove_all_func< ret(args...)><a></b><br>
@@ -882,9 +870,6 @@ weight: 20
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1is__same__type__internal_3_01void_07t_00_01args_8_8_8_08_00_01t_01_4/>is_same_type_internal< void(T, args...), T ><a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1is__same__type__internal_3_01void_07t_00_01args_8_8_8_08_00_01type_01_4/>is_same_type_internal< void(T, args...), type ><a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1is__vector/>is_vector<a></b><br>
-<details><summary><b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1jswarm__1__0__0/>jswarm_1_0_0<a></b></summary>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1jswarm__1__0__0_1_1particle/>particle<a></b><br>An individual particle in a swarm. <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1jswarm__1__0__0_1_1particle__swarm/>particle_swarm<a></b><br>A swarm of particles and methods to evolve them. <br></details>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1libfarraytest__cb2__type/>libFarrayTest_CB2_type<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1libfarraytest__cb3__type/>libFarrayTest_CB3_type<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1libfarraytest__cb__type/>libFarrayTest_CB_type<a></b><br>
@@ -969,10 +954,10 @@ weight: 20
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1widthhl__hdec__type/>widthhl_hdec_type<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1wisfer__hdec__type/>wisfer_hdec_type<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1wisusy__hdec__type/>wisusy_hdec_type<a></b><br></details>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1cosmobit_1_1_0d724/>@724<a></b><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1cosmobit_1_1_0d729/>@729<a></b><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1cosmobit_1_1_0d736/>@736<a></b><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1darkbit_1_1_0d751/>@751<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1cosmobit_1_1_0d722/>@722<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1cosmobit_1_1_0d727/>@727<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1cosmobit_1_1_0d734/>@734<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1darkbit_1_1_0d749/>@749<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespaceheputils/>HEPUtils<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacelhef/>LHEF<a></b><br>Forward declaration to cut down on includes. <br>
 <details><summary><b>namespace <a href=/documentation/code/namespaces/namespacelester/>Lester<a></b></summary>
@@ -983,7 +968,6 @@ weight: 20
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespaceprecisionbit_1_1functown/>Functown<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacepythia8/>Pythia8<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classran/>Ran<a></b><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classrannumgen/>RanNumGen<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classran__old/>Ran_old<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classrandombasis/>RandomBasis<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classrandomplane/>RandomPlane<a></b><br>
@@ -1044,4 +1028,4 @@ weight: 20
 
 -------------------------------
 
-Updated on 2025-02-12 at 15:36:44 +0000
+Updated on 2025-02-12 at 16:10:37 +0000

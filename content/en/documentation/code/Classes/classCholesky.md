@@ -11,26 +11,12 @@ description: "[No description available]"
 
 [No description available]
 
-Inherited by [AdvanceDevs](/documentation/code/classes/classadvancedevs/), [AdvanceDevs](/documentation/code/classes/classadvancedevs/), [AdvanceDevs](/documentation/code/classes/classadvancedevs/), [MultiNormDev](/documentation/code/classes/classmultinormdev/), [MultiNormDev](/documentation/code/classes/classmultinormdev/), [MultiNormDev](/documentation/code/classes/classmultinormdev/), [MultiNormalDev](/documentation/code/classes/classmultinormaldev/), [MultiNormalDev](/documentation/code/classes/classmultinormaldev/), [MultiNormalDev](/documentation/code/classes/classmultinormaldev/), [TransformRandomBasis](/documentation/code/classes/classtransformrandombasis/), [TransformRandomBasis](/documentation/code/classes/classtransformrandombasis/), [TransformRandomBasis](/documentation/code/classes/classtransformrandombasis/)
+Inherited by [AdvanceDevs](/documentation/code/classes/classadvancedevs/), [AdvanceDevs](/documentation/code/classes/classadvancedevs/), [MultiNormDev](/documentation/code/classes/classmultinormdev/), [MultiNormDev](/documentation/code/classes/classmultinormdev/), [MultiNormalDev](/documentation/code/classes/classmultinormaldev/), [MultiNormalDev](/documentation/code/classes/classmultinormaldev/), [TransformRandomBasis](/documentation/code/classes/classtransformrandombasis/), [TransformRandomBasis](/documentation/code/classes/classtransformrandombasis/)
 
 ## Public Functions
 
 |                | Name           |
 | -------------- | -------------- |
-| | **[Cholesky](/documentation/code/classes/classcholesky/#function-cholesky)**(const int nin) |
-| | **[Cholesky](/documentation/code/classes/classcholesky/#function-cholesky)**(double ** a, const int nin) |
-| bool | **[EnterMatM](/documentation/code/classes/classcholesky/#function-entermatm)**(double ** a, const int min) |
-| bool | **[EnterMat](/documentation/code/classes/classcholesky/#function-entermat)**(double ** a) |
-| bool | **[EnterMat](/documentation/code/classes/classcholesky/#function-entermat)**(const std::vector< std::vector< double > > & a) |
-| void | **[EnterMat](/documentation/code/classes/classcholesky/#function-entermat)**(double ** a, int nin) |
-| void | **[ElMult](/documentation/code/classes/classcholesky/#function-elmult)**(double * y, double * b) |
-| void | **[ElMult](/documentation/code/classes/classcholesky/#function-elmult)**(double * y) |
-| void | **[Solve](/documentation/code/classes/classcholesky/#function-solve)**(double * b, double * x) |
-| double | **[Square](/documentation/code/classes/classcholesky/#function-square)**(double * y, double * y0) |
-| double | **[Square](/documentation/code/classes/classcholesky/#function-square)**(double * y, double * y0, int * map) |
-| void | **[Inverse](/documentation/code/classes/classcholesky/#function-inverse)**(double ** ainv) |
-| double | **[DetSqrt](/documentation/code/classes/classcholesky/#function-detsqrt)**() |
-| | **[~Cholesky](/documentation/code/classes/classcholesky/#function-cholesky)**() |
 | | **[Cholesky](/documentation/code/classes/classcholesky/#function-cholesky)**(const int nin) |
 | | **[Cholesky](/documentation/code/classes/classcholesky/#function-cholesky)**(double ** a, const int nin) |
 | bool | **[EnterMatM](/documentation/code/classes/classcholesky/#function-entermatm)**(double ** a, const int min) |
@@ -66,136 +52,6 @@ Inherited by [AdvanceDevs](/documentation/code/classes/classadvancedevs/), [Adva
 | int | **[num](/documentation/code/classes/classcholesky/#variable-num)**  |
 
 ## Public Functions Documentation
-
-### function Cholesky
-
-```
-inline Cholesky(
-    const int nin
-)
-```
-
-
-### function Cholesky
-
-```
-inline Cholesky(
-    double ** a,
-    const int nin
-)
-```
-
-
-### function EnterMatM
-
-```
-inline bool EnterMatM(
-    double ** a,
-    const int min
-)
-```
-
-
-### function EnterMat
-
-```
-inline bool EnterMat(
-    double ** a
-)
-```
-
-
-### function EnterMat
-
-```
-inline bool EnterMat(
-    const std::vector< std::vector< double > > & a
-)
-```
-
-
-### function EnterMat
-
-```
-inline void EnterMat(
-    double ** a,
-    int nin
-)
-```
-
-
-### function ElMult
-
-```
-inline void ElMult(
-    double * y,
-    double * b
-)
-```
-
-
-### function ElMult
-
-```
-inline void ElMult(
-    double * y
-)
-```
-
-
-### function Solve
-
-```
-inline void Solve(
-    double * b,
-    double * x
-)
-```
-
-
-### function Square
-
-```
-inline double Square(
-    double * y,
-    double * y0
-)
-```
-
-
-### function Square
-
-```
-inline double Square(
-    double * y,
-    double * y0,
-    int * map
-)
-```
-
-
-### function Inverse
-
-```
-inline void Inverse(
-    double ** ainv
-)
-```
-
-
-### function DetSqrt
-
-```
-inline double DetSqrt()
-```
-
-
-### function ~Cholesky
-
-```
-inline ~Cholesky()
-```
-
 
 ### function Cholesky
 
@@ -459,4 +315,4 @@ int num;
 
 -------------------------------
 
-Updated on 2025-02-12 at 15:36:37 +0000
+Updated on 2025-02-12 at 16:10:30 +0000

@@ -188,7 +188,7 @@ namespace Gambit
         /// @note This override is most commonly used in ColliderBit.
         void init(const std::string pythiaDocPath,
                   const std::vector<std::string>& externalSettings,
-                  const SLHAea::Coll* slhaea)
+                  const SLHAea::Coll* slhaea=nullptr, std::ostream& os=std::cout)
         {
           // Settings acquired externally (ex from a gambit yaml file)
           for(const str& command : externalSettings) _pythiaSettings.push_back(command);
@@ -203,9 +203,9 @@ namespace Gambit
 
           // Create new _pythiaInstance from _pythiaBase
           if (_pythiaInstance) delete _pythiaInstance;
-          _pythiaInstance = new PythiaT(_pythiaBase->settings, _pythiaBase->particleData);
+          _pythiaInstance = new PythiaT(_pythiaBase->particleData, _pythiaBase->settings);
 
-          // Send along the SLHAea::Coll pointer, if it exists          
+          // Send along the SLHAea::Coll pointer, if it exists
           if (slhaea) _pythiaInstance->slhaInterface.slha.setSLHAea(slhaea);
 
           // Read command again to get SM decay table change from yaml file
@@ -214,7 +214,7 @@ namespace Gambit
             _pythiaInstance->readString(command);
           }
 
-          if (!_pythiaInstance->init()) throw InitializationError();
+          if (!_pythiaInstance->init(os)) throw InitializationError();
         }
 
         /// Initialize from some external settings.
@@ -222,7 +222,7 @@ namespace Gambit
         /// Needs to directly construct the new matrix elements (rather than use flags)
         void init_user_model(const std::string pythiaDocPath,
                              const std::vector<std::string>& externalSettings,
-                             const SLHAea::Coll* slhaea=nullptr)
+                             const SLHAea::Coll* slhaea=nullptr, std::ostream& os=std::cout)
         {
           // Settings acquired externally (for example, from a gambit yaml file)
           for(const str& command : externalSettings) _pythiaSettings.push_back(command);
@@ -237,26 +237,26 @@ namespace Gambit
 
           // Create new _pythiaInstance from _pythiaBase
           if (_pythiaInstance) delete _pythiaInstance;
-          _pythiaInstance = new PythiaT(_pythiaBase->settings, _pythiaBase->particleData);
+          _pythiaInstance = new PythiaT(_pythiaBase->particleData, _pythiaBase->settings);
 
           // Send along the SLHAea::Coll pointer, if it exists
           if (slhaea) _pythiaInstance->slhaInterface.slha.setSLHAea(slhaea);
 
-          if (!_pythiaInstance->init()) throw InitializationError();
+          if (!_pythiaInstance->init(os)) throw InitializationError();
         }
 
         /// Initialize from some external settings, assuming no given SLHAea instance.
         void init(const std::string pythiaDocPath,
-                  const std::vector<std::string>& externalSettings)
+                  const std::vector<std::string>& externalSettings, std::ostream& os)
         {
-          init(pythiaDocPath, externalSettings, nullptr);
+          init(pythiaDocPath, externalSettings, nullptr, os);
         }
 
         /// Initialize from some external settings, assuming no given SLHAea instance.
         void init_user_model(const std::string pythiaDocPath,
-                             const std::vector<std::string>& externalSettings)
+                             const std::vector<std::string>& externalSettings, std::ostream& os)
         {
-          init_user_model(pythiaDocPath, externalSettings, nullptr);
+          init_user_model(pythiaDocPath, externalSettings, nullptr, os);
         }
 
         ///@}
@@ -295,10 +295,6 @@ namespace Gambit
         /// Report the list of all active process codes
         std::vector<int> all_active_process_codes() const { return _pythiaInstance->info.codesHard(); }
 
-        /// Get the estimated max cross-section
-        double max_xsec_fb() const { return _pythiaInstance->getSigmaMaxSum() * 1e12; }
-        double max_xsec_pb() const { return _pythiaInstance->getSigmaMaxSum() * 1e9; }
-
         ///@}
 
      };
@@ -310,4 +306,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2025-02-12 at 15:36:42 +0000
+Updated on 2025-02-12 at 16:10:35 +0000

@@ -83,11 +83,8 @@ Authors (add name and date if you modify):
     void NAME(AnalysisContainer& result)                           \
     {                                                              \
       using namespace Pipes::NAME;                                 \
-                                                                    \
-      map_str_xsec_container Totalxsec = *Dep::InitialTotalCrossSection; \
-                                       \
       getAnalysisContainer(result, #EXPERIMENT, *Dep::RunMC,       \
-       Totalxsec[Dep::RunMC->current_collider()], *Loop::iteration);                 \
+       *Dep::TotalCrossSection, *Loop::iteration);                 \
     }
 ```
 
@@ -211,11 +208,8 @@ namespace Gambit
     void NAME(AnalysisContainer& result)                           \
     {                                                              \
       using namespace Pipes::NAME;                                 \
-                                                                    \
-      map_str_xsec_container Totalxsec = *Dep::InitialTotalCrossSection; \
-                                       \
       getAnalysisContainer(result, #EXPERIMENT, *Dep::RunMC,       \
-       Totalxsec[Dep::RunMC->current_collider()], *Loop::iteration);                 \
+       *Dep::TotalCrossSection, *Loop::iteration);                 \
     }
 
     GET_ANALYSIS_CONTAINER(getATLASAnalysisContainer, ATLAS)
@@ -230,4 +224,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2025-02-12 at 15:36:43 +0000
+Updated on 2025-02-12 at 16:10:36 +0000

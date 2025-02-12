@@ -102,7 +102,7 @@ namespace Gambit
             return outNode;
         }
         
-        Scan_Manager::Scan_Manager (const YAML::Node &main_node, printer_interface *printerInterface, const Factory_Base *factoryIn, Priors::BasePrior *user_prior) 
+        Scan_Manager::Scan_Manager (const YAML::Node &main_node, printer_interface *printerInterface, const Factory_Base *factoryIn) 
         : printerInterface(printerInterface), has_local_factory(false)
         {
             options = main_node["Scanner"];
@@ -165,30 +165,21 @@ namespace Gambit
                         paramNode = main_node["Parameters"];
                     }
 
-                    if (user_prior == 0)
-                        prior = new Gambit::Priors::CompositePrior(paramNode, main_node["Priors"]);
-                    else
-                        prior = user_prior;
+                    prior = new Gambit::Priors::CompositePrior(paramNode, main_node["Priors"]);
                     factory = new Plugin_Function_Factory(prior->getParameters(), names);
                     Plugins::plugin_info.printer_prior(*printerInterface, *prior);
                     has_local_factory = true;                        
                 }
                 else
                 {
-                    if (user_prior == 0)
-                        prior = new Gambit::Priors::CompositePrior(main_node["Parameters"], main_node["Priors"]);
-                    else
-                        prior = user_prior;
+                    prior = new Gambit::Priors::CompositePrior(main_node["Parameters"], main_node["Priors"]);
                     factory = factoryIn;
                     Plugins::plugin_info.printer_prior(*printerInterface, *prior);
                 }
             }
             else
             {
-                if (user_prior == 0)
-                    prior = new Gambit::Priors::CompositePrior(main_node["Parameters"], main_node["Priors"]);
-                else
-                    prior = user_prior;
+                prior = new Gambit::Priors::CompositePrior(main_node["Parameters"], main_node["Priors"]);
                 factory = factoryIn;
                 Plugins::plugin_info.printer_prior(*printerInterface, *prior);
             }
@@ -291,4 +282,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2025-02-12 at 15:36:41 +0000
+Updated on 2025-02-12 at 16:10:33 +0000

@@ -1,11 +1,11 @@
 ---
-title: "file Pythia_8_312/wrapper_CoupSUSY_decl.h"
+title: "file Pythia_8_212/wrapper_CoupSUSY_decl.h"
 
 description: "[No description available]"
 
 ---
 
-# file Pythia_8_312/wrapper_CoupSUSY_decl.h
+# file Pythia_8_212/wrapper_CoupSUSY_decl.h
 
 [No description available]
 
@@ -34,19 +34,18 @@ namespace CAT_3(
 ## Source code
 
 ```
-#ifndef __wrapper_CoupSUSY_decl_Pythia_8_312_h__
-#define __wrapper_CoupSUSY_decl_Pythia_8_312_h__
+#ifndef __wrapper_CoupSUSY_decl_Pythia_8_212_h__
+#define __wrapper_CoupSUSY_decl_Pythia_8_212_h__
 
 #include <cstddef>
 #include <complex>
 #include "forward_decls_wrapper_classes.h"
 #include "gambit/Backends/wrapperbase.hpp"
 #include "abstract_CoupSUSY.h"
+#include "wrapper_Couplings_decl.h"
 #include "wrapper_SusyLesHouches_decl.h"
 #include "wrapper_Info_decl.h"
-#include "wrapper_Logger_decl.h"
 #include "wrapper_Settings_decl.h"
-#include "wrapper_CoupSM_decl.h"
 
 #include "identification.hpp"
 
@@ -56,7 +55,7 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
     namespace Pythia8
     {
         
-        class CoupSUSY : public WrapperBase
+        class CoupSUSY : public Couplings
         {
                 // Member variables: 
             public:
@@ -66,11 +65,7 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
                 // -- Other member variables: 
             public:
                 bool& isInit;
-                bool& isSUSY;
                 bool& isNMSSM;
-                bool& isLLE;
-                bool& isLQD;
-                bool& isUDD;
                 double& mWpole;
                 double& wWpole;
                 double& mZpole;
@@ -135,6 +130,9 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
                 double (&rvLLE)[4][4][4];
                 double (&rvLQD)[4][4][4];
                 double (&rvUDD)[4][4][4];
+                bool& isLLE;
+                bool& isLQD;
+                bool& isUDD;
                 std::complex<double> (&Rusq)[7][7];
                 std::complex<double> (&Rdsq)[7][7];
                 std::complex<double> (&Rsl)[7][7];
@@ -142,7 +140,7 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         
                 // Member functions: 
             public:
-                void initSUSY(Pythia8::SusyLesHouches* slhaPtrIn, Pythia8::Info* infoPtrIn);
+                void initSUSY(Pythia8::SusyLesHouches* slhaPtrIn, Pythia8::Info* infoPtrIn, Pythia8::ParticleData* particleDataPtrIn, Pythia8::Settings* settingsPtrIn);
         
                 ::std::complex<double> getLsqqG(int iGenSq, int idQ);
         
@@ -198,10 +196,10 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 
 #include "gambit/Backends/backend_undefs.hpp"
 
-#endif /* __wrapper_CoupSUSY_decl_Pythia_8_312_h__ */
+#endif /* __wrapper_CoupSUSY_decl_Pythia_8_212_h__ */
 ```
 
 
 -------------------------------
 
-Updated on 2025-02-12 at 15:36:43 +0000
+Updated on 2025-02-12 at 16:10:36 +0000

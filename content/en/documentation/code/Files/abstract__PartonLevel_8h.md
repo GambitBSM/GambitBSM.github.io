@@ -1,11 +1,11 @@
 ---
-title: "file Pythia_8_312/abstract_PartonLevel.h"
+title: "file Pythia_8_212/abstract_PartonLevel.h"
 
 description: "[No description available]"
 
 ---
 
-# file Pythia_8_312/abstract_PartonLevel.h
+# file Pythia_8_212/abstract_PartonLevel.h
 
 [No description available]
 
@@ -34,8 +34,8 @@ namespace CAT_3(
 ## Source code
 
 ```
-#ifndef __abstract_PartonLevel_Pythia_8_312_h__
-#define __abstract_PartonLevel_Pythia_8_312_h__
+#ifndef __abstract_PartonLevel_Pythia_8_212_h__
+#define __abstract_PartonLevel_Pythia_8_212_h__
 
 #include <cstddef>
 #include <iostream>
@@ -43,8 +43,15 @@ namespace CAT_3(
 #include "gambit/Backends/abstractbase.hpp"
 #include "forward_decls_abstract_classes.h"
 #include "forward_decls_wrapper_classes.h"
-#include "wrapper_Event_decl.h"
+#include "wrapper_Info_decl.h"
+#include "wrapper_Settings_decl.h"
+#include "wrapper_ParticleData_decl.h"
+#include "wrapper_Rndm_decl.h"
 #include "wrapper_BeamParticle_decl.h"
+#include "wrapper_Couplings_decl.h"
+#include "wrapper_SigmaTotal_decl.h"
+#include "wrapper_UserHooks_decl.h"
+#include "wrapper_Event_decl.h"
 #include "wrapper_ResonanceDecays_decl.h"
 
 #include "identification.hpp"
@@ -59,12 +66,6 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
         {
             public:
     
-                virtual void initSwitchID(const std::vector<int>&) =0;
-    
-                virtual void setBeamID(int) =0;
-    
-                virtual void setBeamID__BOSS() =0;
-    
                 virtual bool next__BOSS(Pythia8::Abstract_Event&, Pythia8::Abstract_Event&) =0;
     
                 virtual void setupShowerSys__BOSS(Pythia8::Abstract_Event&, Pythia8::Abstract_Event&) =0;
@@ -76,8 +77,6 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
                 virtual bool hasVetoed() const =0;
     
                 virtual bool hasVetoedDiff() const =0;
-    
-                virtual bool hasVetoedMerging() const =0;
     
                 virtual void accumulate() =0;
     
@@ -92,12 +91,6 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
                 virtual double pTLastInShower() =0;
     
                 virtual int typeLastInShower() =0;
-    
-                virtual bool canEnhanceTrial() =0;
-    
-                virtual double getEnhancedTrialPT() =0;
-    
-                virtual double getEnhancedTrialWeight() =0;
     
             public:
                 virtual void pointer_assign__BOSS(Abstract_PartonLevel*) =0;
@@ -151,10 +144,10 @@ namespace CAT_3(BACKENDNAME,_,SAFE_VERSION)
 #include "gambit/Backends/backend_undefs.hpp"
 
 
-#endif /* __abstract_PartonLevel_Pythia_8_312_h__ */
+#endif /* __abstract_PartonLevel_Pythia_8_212_h__ */
 ```
 
 
 -------------------------------
 
-Updated on 2025-02-12 at 15:36:43 +0000
+Updated on 2025-02-12 at 16:10:36 +0000

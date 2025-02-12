@@ -1049,8 +1049,7 @@ public:
     {
         rotVec = matrix <double> (nin, nin);
         RandRot();
-        if (proj > num) proj = num;        
-        if (proj <= 0) Gambit::Scanner::scan_error().raise(LOCAL_INFO, "TWalk: cannot use projection dimension <= 0");
+        if (proj > num) proj = num;
         extra = num % proj;
         endVec = currentVec + num - extra;
         endEndVec = currentVec + num;
@@ -1620,4 +1619,4 @@ class MultiNormDev : public RandomBasis, public Cholesky
 
 -------------------------------
 
-Updated on 2025-02-12 at 15:36:40 +0000
+Updated on 2025-02-12 at 16:10:33 +0000
