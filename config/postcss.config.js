@@ -1,11 +1,8 @@
 const autoprefixer = require('autoprefixer');
-const purgecss = require('@fullhuman/postcss-purgecss');
 const whitelister = require('purgecss-whitelister');
-
-module.exports = {
-  plugins: [
-    autoprefixer(),
-    purgecss({
+const purgecssImport = require('@fullhuman/postcss-purgecss');
+const purgeCSSPlugin = purgecssImport.purgeCSSPlugin || purgecssImport.default || purgecssImport
+const purgecss = purgeCSSPlugin({
       content: [
         './layouts/**/*.html',
         './content/**/*.md',
@@ -35,6 +32,14 @@ module.exports = {
           './node_modules/katex/dist/katex.css',
         ]),
       ],
-    }),
+    })
+
+
+
+
+module.exports = {
+  plugins: [
+    autoprefixer(),
+    purgecss,
   ],
 }
