@@ -13,7 +13,7 @@ import json
 print("Generating list of ColliderBit analysis...")
 
 # Opening JSON file and returning dictionary
-json_file = open('scripts/analyses.json',)
+json_file = open('static/analyses.json',)
 data = json.load(json_file)
 
 # Find all analysis present by inspire id
@@ -40,7 +40,7 @@ weight: 5
 """
 
 for analysis in data['analyses']:
-    markdown += f"{analysis["implementations"]["name"]}\n"
+    markdown += f"## {analysis["implementations"]["name"]}\n"
 print(markdown)
 
 
