@@ -35,5 +35,5 @@ print(markdown)
 
 
 # Write markdown file
-markdown_file = open("../content/en/documentation/physics/analyses.md", 'w')
+markdown_file = open("content/en/documentation/physics/analyses.md", 'w')
 markdown_file.write(markdown)
