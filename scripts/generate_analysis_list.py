@@ -13,7 +13,7 @@ import json
 print("Generating list of ColliderBit analysis...")
 
 # Opening JSON file and returning dictionary
-json_file = open('analyses.json',)
+json_file = open('scripts/analyses.json',)
 data = json.load(json_file)
 
 # Find all analysis present by inspire id
