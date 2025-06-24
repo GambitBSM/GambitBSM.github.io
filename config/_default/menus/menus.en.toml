@@ -1,48 +1,3 @@
-#[[main]]
-#  name = "Tutorials"
-#  identifier = "tutorials"
-#  url = "/tutorials/help/introduction/"
-#  weight = 10
-
-#[[tutorials]]
-#  name = "Examples"
-#  identifier = "examples"
-#  url = "/tutorials/examples/colliderbit"
-#  weight = 30
-
-#[[main]]
-#  name = "Examples"
-#  identifier = "examples"
-#  url = "/tutorials/examples/colliderbit"
-#  parent = "tutorials"
-#  weight = 30
-
-#[[tutorials]]
-#  name = "Installation"
-#  identifier = "installation"
-#  url = "/tutorials/installation/introduction/"
-#  weight = 20
-
-#[[main]]
-#  name = "Installation"
-#  identifier = "installation"
-#  url = "/tutorials/installation/introduction/"
-#  parent = "tutorials"
-#  weight = 20
-
-#[[tutorials]]
-#  name = "Help"
-#  identifier = "help"
-#  url = "/tutorials/help/faqs/"
-#  weight = 40
-
-#[[main]]
-#  name = "Help"
-#  identifier = "help"
-#  url = "/tutorials/help/faqs/"
-#  parent = "tutorials"
-#  weight = 40
-
 [[main]]
   name = "Documentation"
   identifier = "documentation"
@@ -56,18 +11,6 @@
   parent = "documentation"
   weight = 40
 
-[[documentation]]
-  name = "Code Reference"
-  identifier = "code"
-  url = "/documentation/code/index_classes"
-  weight = 40
-
-[[documentation]]
-  name = "Tutorials"
-  identifier = "tutorials"
-  url = "/documentation/tutorials/the_gambit_interface"
-  weight = 20
-
 [[main]]
   name = "Tutorials"
   identifier = "tutorials"
@@ -80,19 +23,37 @@
   identifier = "installation"
   url = "/documentation/installation/introduction/"
   weight = 10
+  
+[[documentation]]
+  name = "Tutorials"
+  identifier = "tutorials"
+  url = "/documentation/tutorials/the_gambit_interface"
+  weight = 20
 
-[[main]]
-  name = "Installation"
-  identifier = "installation"
-  url = "/documentation/installation/introduction/"
-  parent = "documentation"
-  weight = 10
+[[documentation]]
+  name = "Physics"
+  identifier = "physics"
+  url = "/documentation/physics/analyses"
+  weight = 30
 
 [[documentation]]
   name = "Help"
   identifier = "help"
   url = "/documentation/help/common_problems_and_questions"
-  weight = 30
+  weight = 40
+
+[[documentation]]
+  name = "Code Reference"
+  identifier = "code"
+  url = "/documentation/code/index_classes"
+  weight = 50
+
+[[main]]
+  name = "Installation"
+  identifier = "installation"
+  url = "/documentation/installation/introduction/"
+  parent = "documentation"
+  weight = 10
 
 [[main]]
   name = "Help"
@@ -147,7 +108,6 @@
   name = "Releases"
   identifier = "releases"
   weight = 5
-
 
 [[main]]
   name = "GAMBIT 2-6 ⧉"
