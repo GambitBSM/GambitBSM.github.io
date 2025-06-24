@@ -1,4 +1,17 @@
 
+---
+title: "Getting Started"
+description: "General introduction to GAMBIT and guide for new users."
+date: 2022-07-01T22:31:46+01:00
+lastmod: 2022-07-01T22:31:46+01:00
+draft: false
+images: []
+menu:
+  documentation:
+    parent: "physics"
+weight: 5
+---
+
 ## List of ColliderBit analysis in GAMBIT 2.6.0
 
 ATLAS_13TeV_0LEP_139invfb
