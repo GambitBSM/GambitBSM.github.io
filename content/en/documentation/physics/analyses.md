@@ -9,65 +9,65 @@ menu:
 weight: 5
 ---
 
-# List of ColliderBit analysis in GAMBIT 2.6.0
+## List of ColliderBit analysis in GAMBIT 2.6.0
 
-ATLAS_13TeV_0LEP_139invfb
-CMS_13TeV_MONOJET_36invfb
-ATLAS_8TeV_2LEPStop_20invfb
-CMS_13TeV_2OSLEP_36invfb
-ATLAS_13TeV_2LEPStop_139invfb
-ATLAS_13TeV_2bMET_36invfb
-ATLAS_13TeV_4LEP_36invfb
-CMS_13TeV_MultiLEP_36invfb
-CMS_13TeV_2Photon_GMSB_36invfb
-ATLAS_8TeV_0LEP_20invfb
-ATLAS_13TeV_MultiLEP_strong_139invfb
-CMS_13TeV_2LEPStop_36invfb
-ATLAS_8TeV_2LEPEW_20invfb
-ATLAS_13TeV_MultiLEP_36invfb
-ATLAS_7TeV_1OR2LEPStop_4_7invfb
-CMS_13TeV_0LEP_36invfb
-CMS_13TeV_2OSLEP_chargino_stop_36invfb
-CMS_13TeV_2OSLEP_confnote_36invfb
-ATLAS_13TeV_0LEP_36invfb
-CMS_13TeV_2SSLEP_Stop_36invfb
-CMS_13TeV_0LEP_13invfb
-CMS_13TeV_1LEPbb_36invfb
-CMS_13TeV_1LEPStop_36invfb
-CMS_8TeV_MONOJET_20invfb
-ATLAS_13TeV_MONOJET_139infb
-ATLAS_13TeV_1Lep2b_139invfb
-CMS_8TeV_2LEPDMTOP_20invfb
-CMS_13TeV_2LEPsoft_36invfb
-CMS_13TeV_MultiLEP_137invfb
-CMS_13TeV_1Photon1Lepton_36invfb
-ATLAS_13TeV_2BoostedBosons_139invfb
-CMS_13TeV_MultiLEP_Full_36invfb
-ATLAS_13TeV_0LEP_13invfb
-ATLAS_13TeV_RJ3L_lowmass_36invfb
-ATLAS_13TeV_PhotonGGM_36invfb
-ATLAS_13TeV_3b_36invfb
-CMS_13TeV_0LEP_137invfb
-CMS_8TeV_1LEPDMTOP_20invfb
-CMS_13TeV_Photon_GMSB_36invfb
-ATLAS_8TeV_2bStop_20invfb
-ATLAS_13TeV_2OSLEP_chargino_80invfb
-ATLAS_13TeV_2OSLEP_Z_139invfb
-CMS_8TeV_MultiLEP_20invfb
-ATLAS_7TeV_2LEPStop_4_7invfb
-ATLAS_8TeV_1LEPbb_20invfb
-ATLAS_8TeV_0LEPStop_20invfb
-ATLAS_13TeV_ZGammaGrav_CONFNOTE_80invfb
-CMS_13TeV_2OSLEP_137invfb
-ATLAS_8TeV_3LEPEW_20invfb
-ATLAS_13TeV_2OSLEP_chargino_139invfb
-ATLAS_13TeV_4LEP_139invfb
-ATLAS_13TeV_PhotonGGM_1Photon_139invfb
-ATLAS_8TeV_1LEPStop_20invfb
-ATLAS_13TeV_0LEPStop_36invfb
-ATLAS_13TeV_2LEPStop_36invfb
-ATLAS_13TeV_MultiLEP_confnote_36invfb
-ATLAS_13TeV_1LEPStop_36invfb
-CMS_13TeV_2SSLEP_Stop_137invfb
-ATLAS_13TeV_3LEP_139invfb
-ATLAS_13TeV_3b_24invfb
+### ATLAS_13TeV_0LEP_139invfb
+### CMS_13TeV_MONOJET_36invfb
+### ATLAS_8TeV_2LEPStop_20invfb
+### CMS_13TeV_2OSLEP_36invfb
+### ATLAS_13TeV_2LEPStop_139invfb
+### ATLAS_13TeV_2bMET_36invfb
+### ATLAS_13TeV_4LEP_36invfb
+### CMS_13TeV_MultiLEP_36invfb
+### CMS_13TeV_2Photon_GMSB_36invfb
+### ATLAS_8TeV_0LEP_20invfb
+### ATLAS_13TeV_MultiLEP_strong_139invfb
+### CMS_13TeV_2LEPStop_36invfb
+### ATLAS_8TeV_2LEPEW_20invfb
+### ATLAS_13TeV_MultiLEP_36invfb
+### ATLAS_7TeV_1OR2LEPStop_4_7invfb
+### CMS_13TeV_0LEP_36invfb
+### CMS_13TeV_2OSLEP_chargino_stop_36invfb
+### CMS_13TeV_2OSLEP_confnote_36invfb
+### ATLAS_13TeV_0LEP_36invfb
+### CMS_13TeV_2SSLEP_Stop_36invfb
+### CMS_13TeV_0LEP_13invfb
+### CMS_13TeV_1LEPbb_36invfb
+### CMS_13TeV_1LEPStop_36invfb
+### CMS_8TeV_MONOJET_20invfb
+### ATLAS_13TeV_MONOJET_139infb
+### ATLAS_13TeV_1Lep2b_139invfb
+### CMS_8TeV_2LEPDMTOP_20invfb
+### CMS_13TeV_2LEPsoft_36invfb
+### CMS_13TeV_MultiLEP_137invfb
+### CMS_13TeV_1Photon1Lepton_36invfb
+### ATLAS_13TeV_2BoostedBosons_139invfb
+### CMS_13TeV_MultiLEP_Full_36invfb
+### ATLAS_13TeV_0LEP_13invfb
+### ATLAS_13TeV_RJ3L_lowmass_36invfb
+### ATLAS_13TeV_PhotonGGM_36invfb
+### ATLAS_13TeV_3b_36invfb
+### CMS_13TeV_0LEP_137invfb
+### CMS_8TeV_1LEPDMTOP_20invfb
+### CMS_13TeV_Photon_GMSB_36invfb
+### ATLAS_8TeV_2bStop_20invfb
+### ATLAS_13TeV_2OSLEP_chargino_80invfb
+### ATLAS_13TeV_2OSLEP_Z_139invfb
+### CMS_8TeV_MultiLEP_20invfb
+### ATLAS_7TeV_2LEPStop_4_7invfb
+### ATLAS_8TeV_1LEPbb_20invfb
+### ATLAS_8TeV_0LEPStop_20invfb
+### ATLAS_13TeV_ZGammaGrav_CONFNOTE_80invfb
+### CMS_13TeV_2OSLEP_137invfb
+### ATLAS_8TeV_3LEPEW_20invfb
+### ATLAS_13TeV_2OSLEP_chargino_139invfb
+### ATLAS_13TeV_4LEP_139invfb
+### ATLAS_13TeV_PhotonGGM_1Photon_139invfb
+### ATLAS_8TeV_1LEPStop_20invfb
+### ATLAS_13TeV_0LEPStop_36invfb
+### ATLAS_13TeV_2LEPStop_36invfb
+### ATLAS_13TeV_MultiLEP_confnote_36invfb
+### ATLAS_13TeV_1LEPStop_36invfb
+### CMS_13TeV_2SSLEP_Stop_137invfb
+### ATLAS_13TeV_3LEP_139invfb
+### ATLAS_13TeV_3b_24invfb

@@ -35,12 +35,12 @@ menu:
 weight: 5
 ---
 
-# List of ColliderBit analysis in GAMBIT {data['version']}
+## List of ColliderBit analysis in GAMBIT {data['version']}
 
 """
 
 for analysis in data['analyses']:
-    markdown += f"## {analysis["implementations"]["name"]}\n"
+    markdown += f"### {analysis["implementations"]["name"]}\n"
 print(markdown)
 
 
