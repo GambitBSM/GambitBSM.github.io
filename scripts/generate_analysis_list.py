@@ -1,10 +1,16 @@
 """
 
-This takes the JSON file analyses.json generated in a GAMBIT CI job that contains 
-information on the analysis included in ColliderBit and uses this to generate a 
-markdown page listing all the analysis.
+This takes the JSON file generated using the GAMBIT script
+  gambit/ColliderBit/src/analyses/mkjson.py
+that contains information on the analysis included in ColliderBit and uses this 
+to generate a markdown page listing all the analyses.
 
-TODO: Where to put the analyses.json file
+The JSON file can be found in this repo as
+  static/analyses.json
+and should be updated as a part of a GAMBIT release.
+
+The analyses.json file is exposed on the webpage as
+https://gambitbsm.org/analyses.json
 
 """
 
