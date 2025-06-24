@@ -25,8 +25,8 @@ for analysis in data['analyses']:
 # Make markdown
 ##################
 markdown = f"""---
-title: "Getting Started"
-description: "General introduction to GAMBIT and guide for new users."
+title: "ColliderBit analysis"
+description: "List of ColliderBit analysis"
 draft: false
 images: []
 menu:
@@ -35,7 +35,7 @@ menu:
 weight: 5
 ---
 
-## List of ColliderBit analysis in GAMBIT {data['version']}
+# List of ColliderBit analysis in GAMBIT {data['version']}
 
 """
 

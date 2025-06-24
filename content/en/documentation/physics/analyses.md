@@ -1,6 +1,6 @@
 ---
-title: "Getting Started"
-description: "General introduction to GAMBIT and guide for new users."
+title: "ColliderBit analysis"
+description: "List of ColliderBit analysis"
 draft: false
 images: []
 menu:
@@ -9,7 +9,7 @@ menu:
 weight: 5
 ---
 
-## List of ColliderBit analysis in GAMBIT 2.6.0
+# List of ColliderBit analysis in GAMBIT 2.6.0
 
 ATLAS_13TeV_0LEP_139invfb
 CMS_13TeV_MONOJET_36invfb
