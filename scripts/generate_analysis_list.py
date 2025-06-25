@@ -12,9 +12,12 @@ and should be updated as a part of a GAMBIT release.
 The analyses.json file is exposed on the webpage as
 https://gambitbsm.org/analyses.json
 
+To find information on each anlysis we quary inspire using their API
+
 """
 
 import json
+import urllib.request
 
 print("Generating list of ColliderBit analysis...")
 
@@ -22,10 +25,34 @@ print("Generating list of ColliderBit analysis...")
 json_file = open('static/analyses.json',)
 data = json.load(json_file)
 
-# Find all analysis present by inspire id
-for analysis in data['analyses']:
-  print(analysis['inspire_id'])
 
+################################################################
+# Find and extract info from all analysis present by inspire id
+################################################################
+# Inspire API allows 15 requests per 5 seconds but this seems fine
+inspire_url = 'https://inspirehep.net/api/literature/'
+titles = []
+report_numbers = []
+arXiv_links = []
+for analysis in data['analyses']:
+  recid = analysis['inspire_id']
+  # Query inspire (inspire_id = -1 does not have a record)
+  if recid > 0 :
+    print(inspire_url+str(recid))
+    inspire_entry = json.loads(urllib.request.urlopen(inspire_url+str(recid)).read())
+    title = inspire_entry['metadata']['titles'][0]['title']
+    titles.append(title)
+    report_number = inspire_entry['metadata']['report_numbers'][0]['value']
+    report_numbers.append(report_number)
+    try:
+      arXiv_link = inspire_entry['metadata']['arxiv_eprints'][0]['value']
+      arXiv_links.append(arXiv_link)
+    except KeyError:
+      arXiv_links.append("No arXiv entry found")
+  else:
+    titles.append("")
+    report_numbers.append(analysis["implementations"]["name"])
+    arXiv_links.append("")
 
 ##################
 # Make markdown
@@ -45,11 +72,18 @@ weight: 5
 
 """
 
-for analysis in data['analyses']:
-    markdown += f"### {analysis["implementations"]["name"]}\n"
+for index, analysis in enumerate(data['analyses']):
+    markdown += f"### {report_numbers[index]}\n"
+    markdown += f"Title: {titles[index]}\n"
+    markdown += f"arXiv: [{arXiv_links[index]}](https://arxiv.org/abs/{arXiv_links[index]})\n"
+    markdown += f"ColliderBit name: {analysis["implementations"]["name"]}\n"
 print(markdown)
 
 
 # Write markdown file
 markdown_file = open("content/en/documentation/physics/analyses.md", 'w')
 markdown_file.write(markdown)
+
+
+#get_inspire_info(inspire_entry):
+  
