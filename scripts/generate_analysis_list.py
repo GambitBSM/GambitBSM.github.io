@@ -1,18 +1,18 @@
+#! /usr/bin/env python3
+
 """
 
 This takes the JSON file generated using the GAMBIT script
-  gambit/ColliderBit/src/analyses/mkjson.py
+  gambit/ColliderBit/src/analyses/mk_webpage_json.py
 that contains information on the analysis included in ColliderBit and uses this 
 to generate a markdown page listing all the analyses.
 
 The JSON file can be found in this repo as
-  static/analyses.json
+  static/analyses_webpage.json
 and should be updated as a part of a GAMBIT release.
 
-The analyses.json file is exposed on the webpage as
-https://gambitbsm.org/analyses.json
-
 To find information on each anlysis we quary inspire using their API
+https://github.com/inspirehep/rest-api-doc
 
 """
 
@@ -22,7 +22,7 @@ import urllib.request
 print("Generating list of ColliderBit analysis...")
 
 # Opening JSON file and returning dictionary
-json_file = open('static/analyses.json',)
+json_file = open('static/analyses_webpage.json',)
 data = json.load(json_file)
 
 
@@ -31,10 +31,16 @@ data = json.load(json_file)
 ################################################################
 # Inspire API allows 15 requests per 5 seconds but this seems fine
 inspire_url = 'https://inspirehep.net/api/literature/'
+summaries = []
+lumis = []
 titles = []
+sqrtss = []
 report_numbers = []
 arXiv_links = []
 for analysis in data['analyses']:
+  summaries.append(analysis['summary'])
+  lumis.append(analysis['luminosity'])
+  sqrtss.append(analysis['ecm'])
   recid = analysis['inspire_id']
   # Query inspire (inspire_id = -1 does not have a record)
   if recid > 0 :
@@ -51,8 +57,9 @@ for analysis in data['analyses']:
       arXiv_links.append("No arXiv entry found")
   else:
     titles.append("")
-    report_numbers.append(analysis["implementations"]["name"])
+    report_numbers.append(analysis["name"])
     arXiv_links.append("")
+
 
 ##################
 # Make markdown
@@ -76,7 +83,10 @@ for index, analysis in enumerate(data['analyses']):
     markdown += f"### {report_numbers[index]}\n\n"
     markdown += f"**Title:** {titles[index]}\n\n"
     markdown += f"**arXiv:** [{arXiv_links[index]}](https://arxiv.org/abs/{arXiv_links[index]})\n\n"
-    markdown += f"**ColliderBit name:** {analysis["implementations"]["name"]}\n\n"
+    markdown += f"**ColliderBit name:** {analysis["name"]}\n\n"
+    markdown += f"**Energy:** {sqrtss[index]} TeV\n\n"
+    markdown += f"**Luminosity:** {lumis[index]} fb$^{-1}$\n\n"
+    markdown += f"**Summary:** {summaries[index]}\n\n"
 print(markdown)
 
 
