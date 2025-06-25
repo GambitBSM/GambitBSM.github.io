@@ -27,7 +27,12 @@ https://getdoks.org/
 
 #### Editing the website
 
-The user-generated pages are found in `/content/en`, and are stored as markdown files in a tree structure. These files can be easily added/edited/deleted, but make sure to follow the correct structure and add the right options to the frontmatter if you want a page to show up in a menu. To add a page you need to use the command `hugo new /content/en/path/to/new/page/new_page.md`. Images are stored in `/static/images`.
+The user-generated pages are found in `/content/en`, and are stored as markdown files in a tree structure. These files can be easily added/edited/deleted, but make sure to follow the correct structure and add the right options to the frontmatter if you want a page to show up in a menu. To add a page you need to use the command `hugo new /content/en/path/to/new/page/new_page.md`.
+
+Images and other files are stored in `/static/images`. Files used in the page build can be accessed directly at
+`https://gambitbsm.org/filename``.
+
+To change the menus you need to edit the file `config/_default/menus/menus.en.toml`.
 
 You can host the website locally to see the changed you make in real-time. Make sure you have `hugo` installed, and then in your cloned repo run:
 

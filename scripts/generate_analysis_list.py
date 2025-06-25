@@ -73,10 +73,10 @@ weight: 5
 """
 
 for index, analysis in enumerate(data['analyses']):
-    markdown += f"### {report_numbers[index]}\n"
-    markdown += f"Title: {titles[index]}\n"
-    markdown += f"arXiv: [{arXiv_links[index]}](https://arxiv.org/abs/{arXiv_links[index]})\n"
-    markdown += f"ColliderBit name: {analysis["implementations"]["name"]}\n"
+    markdown += f"### {report_numbers[index]}\n\n"
+    markdown += f"**Title:** {titles[index]}\n\n"
+    markdown += f"**arXiv:** [{arXiv_links[index]}](https://arxiv.org/abs/{arXiv_links[index]})\n\n"
+    markdown += f"**ColliderBit name:** {analysis["implementations"]["name"]}\n\n"
 print(markdown)
 
 
