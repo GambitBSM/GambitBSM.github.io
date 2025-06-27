@@ -31,18 +31,34 @@ data = json.load(json_file)
 ################################################################
 # Inspire API allows 15 requests per 5 seconds but this seems fine
 inspire_url = 'https://inspirehep.net/api/literature/'
+names = []
 summaries = []
 lumis = []
 titles = []
 sqrtss = []
 report_numbers = []
 arXiv_links = []
+notes = []
+exps = []
+runs = []
+signatures = []
+keywords = []
+notes = []
 for analysis in data['analyses']:
+  # Information taken directly from info files
+  names.append(analysis['name'])
   summaries.append(analysis['summary'])
   lumis.append(analysis['luminosity'])
   sqrtss.append(analysis['ecm'])
+  notes.append(analysis['note'])
+  exps.append(analysis['exp'])
+  runs.append(analysis['run'])
+  signatures.append(analysis['sign'])
+  keywords.append(analysis['keyword'])
+  notes.append(analysis['note'])
+  
+  # Query inspire (inspire_id = -1 does not have a record) for more info
   recid = analysis['inspire_id']
-  # Query inspire (inspire_id = -1 does not have a record)
   if recid > 0 :
     print(inspire_url+str(recid))
     inspire_entry = json.loads(urllib.request.urlopen(inspire_url+str(recid)).read())
@@ -82,12 +98,16 @@ weight: 5
 for index, analysis in enumerate(data['analyses']):
     markdown += f"### {report_numbers[index]}\n\n"
     markdown += f"**Title:** {titles[index]}\n\n"
+    markdown += f"**Experiment:** {exps[index]}\n\n"
+    markdown += f"**Run:** {runs[index]}\n\n"
     markdown += f"**arXiv:** [{arXiv_links[index]}](https://arxiv.org/abs/{arXiv_links[index]})\n\n"
-    markdown += f"**ColliderBit name:** {analysis["name"]}\n\n"
+    markdown += f"**ColliderBit name:** {names[index]}\n\n"
     markdown += f"**Energy:** {sqrtss[index]} TeV\n\n"
     markdown += f"**Luminosity:** {lumis[index]} fb$^{-1}$\n\n"
     markdown += f"**Summary:** {summaries[index]}\n\n"
-print(markdown)
+    markdown += f"**Signatures:** {signatures[index]}\n\n"
+    markdown += f"**Keywords:** {keywords[index]}\n\n"
+    markdown += f"**Note:** {notes[index]}\n\n"
 
 
 # Write markdown file

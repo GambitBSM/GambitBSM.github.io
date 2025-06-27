@@ -1,426 +1,919 @@
 {
     "version": "2.6.0",
-    "date_created": "2025-06-25T17:01:20.572512",
+    "date_created": "2025-06-27T16:35:52.221455",
     "analyses": [
         {
             "inspire_id": 1827025,
             "name": "ATLAS_13TeV_0LEP_139invfb",
-            "summary": "ATLAS Run 2 0-lepton jet+MET SUSY analysis, with 139/fb of data",
-            "luminosity": 0,
-            "ecm": 0
+            "exp": "ATLAS",
+            "run": "R2",
+            "summary": "0-lepton jet+MET SUSY analysis, with 139/fb of data",
+            "luminosity": 139.0,
+            "ecm": 13.0,
+            "sign": [
+                "0L + MET + >=2J + meff",
+                "0L + MET + >=4J + meff",
+                "0L + MET + >=5J + meff",
+                "0L + MET + >=6J + meff"
+            ],
+            "keyword": [
+                "0lepton",
+                "meff",
+                "bdt"
+            ],
+            "note": "Cut-based (2-4 jets), BDT (4-6 jets) and model-independent aggregate search regions."
         },
         {
             "inspire_id": 1750597,
             "name": "ATLAS_13TeV_2OSLEP_chargino_139invfb",
+            "exp": "ATLAS",
+            "run": "R2",
             "summary": "ATLAS 2-lepton + MET chargino and slepton search at 13 TeV with 139/fb",
             "luminosity": 139.0,
-            "ecm": 13.0
+            "ecm": 13.0,
+            "sign": [
+                "2L + 1OSSF + 0J + MET",
+                "2L + 1OSSF + 1J + 0B + MET",
+                "2L + 1OSDF + 0J + MET",
+                "2L + 1OSDF + 1J + 0B + MET"
+            ],
+            "keyword": [
+                "leptons",
+                "mT2"
+            ],
+            "note": ""
         },
         {
             "inspire_id": 1625745,
             "name": "CMS_13TeV_2OSLEP_36invfb",
+            "exp": "CMS",
+            "run": "R2",
             "summary": "CMS 2-lepton + jets + MET search at 13 TeV with 36/fb",
             "luminosity": 35.9,
-            "ecm": 13.0
+            "ecm": 13.0,
+            "sign": "",
+            "keyword": "",
+            "note": "Only the EW on-Z signal regions are included"
         },
         {
             "inspire_id": -1,
             "name": "ATLAS_13TeV_MultiLEP_confnote_36invfb",
+            "exp": "ATLAS",
+            "run": "R2",
             "summary": "ATLAS 2/3-lepton SUSY search at 13 TeV with 36/fb",
             "luminosity": 36.1,
-            "ecm": 13.0
+            "ecm": 13.0,
+            "sign": "",
+            "keyword": "",
+            "note": "superseded by Inspire 1658902"
         },
         {
             "inspire_id": -1,
             "name": "ATLAS_13TeV_2OSLEP_chargino_80invfb",
+            "exp": "ATLAS",
+            "run": "R2",
             "summary": "ATLAS 2-lepton + MET chargino pair-production search at 13 TeV with 80/fb",
             "luminosity": 80.5,
-            "ecm": 13.0
+            "ecm": 13.0,
+            "sign": "",
+            "keyword": "",
+            "note": "CONF note, superseded by 139/fb paper"
         },
         {
             "inspire_id": 1676551,
             "name": "ATLAS_13TeV_RJ3L_lowmass_36invfb",
+            "exp": "ATLAS",
+            "run": "R2",
             "summary": "ATLAS 2/3-lepton recursive-jigsaw search at 13 TeV with 36/fb",
             "luminosity": 36.1,
-            "ecm": 13.0
+            "ecm": 13.0,
+            "sign": [
+                "2L + >=2J + 0B",
+                "2L + >=3J + 0B"
+            ],
+            "keyword": [
+                "jigsaw",
+                "isr",
+                "leptons"
+            ],
+            "note": ""
         },
         {
             "inspire_id": 1677389,
             "name": "ATLAS_13TeV_3b_24invfb",
+            "exp": "ATLAS",
+            "run": "R2",
             "summary": "ATLAS >=3 b-jet low-mass higgsino pair-production search at 13 TeV with 24/fb",
             "luminosity": 24.3,
-            "ecm": 13.0
+            "ecm": 13.0,
+            "sign": [
+                "3B + >=4J + <=5J + 2H + MET",
+                ">=3B + >=4J + <=5J + 2H + MET",
+                ">=4B + >=4J + <=5J + 2H + MET",
+                ">=4B + >=4J + <=6J + 2H + MET"
+            ],
+            "keyword": [
+                "bjets",
+                "higgs"
+            ],
+            "note": "replaced by 139/fb record 1866951"
         },
         {
             "inspire_id": 1594909,
             "name": "CMS_13TeV_0LEP_36invfb",
+            "exp": "CMS",
+            "run": "R2",
             "summary": "CMS 0-lepton jet+MET SUSY analysis at 13 TeV with 36/fb",
             "luminosity": 35.9,
-            "ecm": 13.0
+            "ecm": 13.0,
+            "sign": "",
+            "keyword": "",
+            "note": ""
         },
         {
             "inspire_id": 1623207,
             "name": "ATLAS_13TeV_0LEPStop_36invfb",
+            "exp": "ATLAS",
+            "run": "R2",
             "summary": "ATLAS jets+MET top-squark search at 13 TeV with 36/fb",
             "luminosity": 36.0,
-            "ecm": 13.0
+            "ecm": 13.0,
+            "sign": [
+                "0L + 0TL + >=4J + >=1B + MET + 2T",
+                "0L + 0TL + >=4J + >=1B + MET + 1T + 1W",
+                "0L + 0TL + >=4J + >=1B + MET + 1T",
+                "0L + 0TL + >=5J + >=1B + MET"
+            ],
+            "keyword": [
+                "0lepton",
+                "top reco",
+                "ISR",
+                "hemispheres"
+            ],
+            "note": ""
         },
         {
             "inspire_id": 1639856,
             "name": "ATLAS_13TeV_1LEPStop_36invfb",
+            "exp": "ATLAS",
+            "run": "R2",
             "summary": "ATLAS 1-lepton + jets + MET top-squark pair search at 13 TeV using 36/fb",
             "luminosity": 36.0,
-            "ecm": 13.0
+            "ecm": 13.0,
+            "sign": [
+                "1L + >=4J + >=1B + MET",
+                "1L + >=4J + >=1B + MET",
+                "1L + >=5J + >=1B + MET",
+                "1L + >=2J + >=1B + MET",
+                "1L + >=4J + >=2B + MET",
+                "1L + >=2J + 0B + MET",
+                "1L + >=3J + >=3B + MET",
+                "1L + >=2J + >=2B + MET"
+            ],
+            "keyword": [
+                "bdt",
+                "soft lepton",
+                "mT2"
+            ],
+            "note": "3rd signal region uses >4/5 GeV leptons. Various BDTs and shape fits involved."
         },
         {
             "inspire_id": 1292446,
             "name": "CMS_8TeV_2LEPDMTOP_20invfb",
+            "exp": "CMS",
+            "run": "R1.5",
             "summary": "CMS 2-lepton + jets + MET (dileptonic top-pair) search at 8 TeV with 20/fb",
             "luminosity": 19.7,
-            "ecm": 8.0
+            "ecm": 8.0,
+            "sign": "",
+            "keyword": "",
+            "note": "This is a PAS note, so the paper implementation is probably more important"
         },
         {
             "inspire_id": 1620694,
             "name": "ATLAS_13TeV_2bMET_36invfb",
+            "exp": "ATLAS",
+            "run": "R2",
             "summary": "ATLAS SUSY search with b-tagged jets and MET at 13 TeV with 36.1/fb",
             "luminosity": 36.1,
-            "ecm": 13.0
+            "ecm": 13.0,
+            "sign": [
+                "0L + >=2J + <=4J + 2B + MET",
+                "0L + >=2J + <=5J + >=1B + MET + meff",
+                "1L + >=2J + 2B + MET + meff",
+                "1L + =2J + 2B + MET + meff"
+            ],
+            "keyword": [
+                "meff",
+                "mT2",
+                "mbb"
+            ],
+            "note": ""
         },
         {
             "inspire_id": 1641270,
             "name": "ATLAS_13TeV_0LEP_36invfb",
+            "exp": "ATLAS",
+            "run": "R2",
             "summary": "ATLAS 0-lepton jet+MET SUSY analysis, with 36/fb of data",
             "luminosity": 36.0,
-            "ecm": 13.0
+            "ecm": 13.0,
+            "sign": [
+                "0L + >=2J + MET + meff",
+                "0L + >=3J + MET + meff",
+                "0L + >=4J + MET + meff",
+                "0L + >=5J + MET + meff",
+                "0L + >=6J + MET + meff",
+                "0L + >=2J + 1V + MET + meff"
+            ],
+            "keyword": [
+                "0lepton",
+                "jigsaw",
+                "meff"
+            ],
+            "note": "Recursive jigsaw SRs have similar selection topologies to Meff-based SRs, but different cut variables."
         },
         {
             "inspire_id": 1615470,
             "name": "ATLAS_13TeV_2LEPStop_36invfb",
+            "exp": "ATLAS",
+            "run": "R2",
             "summary": "ATLAS 2-lepton top-squark pair search at 13 TeV with 36.1/fb",
             "luminosity": 36.1,
-            "ecm": 13.0
+            "ecm": 13.0,
+            "sign": [
+                "2L + 1OSSF + 0B + 0Z",
+                "2L + 1OSDF + 0B",
+                "2L + 1OSSF + >=2J + >=1B + 0Z",
+                "2L + 1OSDF + >=2J + >=1B",
+                "2L + 1OSSF + >=3J + >=1B + 0Z +MET",
+                "2L + 1OSDF + >=3J + >=1B + MET",
+                "3L + 1OSSF + 0B + 0Z",
+                "3L + 1OSDF + 0B",
+                "3L + 1OSSF + >=1B + 0Z",
+                "3L + 1OSDF + >=1B",
+                "4L + >=1OS + >=2J + 0B + MET"
+            ],
+            "keyword": [
+                "leptons",
+                "razor",
+                "mT2"
+            ],
+            "note": "b-jet veto in 4L region is only on jets 1 & 2."
         },
         {
             "inspire_id": 1677389,
             "name": "ATLAS_13TeV_3b_36invfb",
+            "exp": "ATLAS",
+            "run": "R2",
             "summary": "ATLAS >=3 b-jet high-mass higgsino pair-production search at 13 TeV with 24/fb",
             "luminosity": 36.1,
-            "ecm": 13.0
+            "ecm": 13.0,
+            "sign": [
+                "3B + >=4J + <=5J + 2H + MET",
+                ">=3B + >=4J + <=5J + 2H + MET",
+                ">=4B + >=4J + <=5J + 2H + MET",
+                ">=4B + >=4J + <=6J + 2H + MET"
+            ],
+            "keyword": [
+                "bjets",
+                "higgs"
+            ],
+            "note": ""
         },
         {
             "inspire_id": -1,
             "name": "ATLAS_13TeV_ZGammaGrav_CONFNOTE_80invfb",
+            "exp": "ATLAS",
+            "run": "R2",
             "summary": "ATLAS ZH->photon+gravitino search at 13 TeV with 80/fb",
             "luminosity": 79.8,
-            "ecm": 13.0
+            "ecm": 13.0,
+            "sign": "",
+            "keyword": "",
+            "note": "CONF note, can't find an eventual paper"
         },
         {
             "inspire_id": 1852821,
             "name": "ATLAS_13TeV_4LEP_139invfb",
+            "exp": "ATLAS",
+            "run": "R2",
             "summary": "ATLAS >4-lepton SUSY search at 13 TeV with 139/fb",
             "luminosity": 139.0,
-            "ecm": 13.0
+            "ecm": 13.0,
+            "sign": [
+                ">=4L + 0B + 2Z + MET",
+                ">=4L + 2Z + MET",
+                ">=4L + 0B + 0Z",
+                ">=4L + >=1B + 0Z",
+                "3L + >=1TL + 0B",
+                "3L + >=1TL + >=1B",
+                "2L + >=2TL + 0B + 0Z",
+                "2L + >=2TL + >=1B + 0Z",
+                ">=5L"
+            ],
+            "keyword": [
+                "leptons"
+            ],
+            "note": ""
         },
         {
             "inspire_id": 1906174,
             "name": "ATLAS_13TeV_2BoostedBosons_139invfb",
+            "exp": "ATLAS",
+            "run": "R2",
             "summary": "ATLAS search for charginos and neutralinos with two boosted hadronically decaying bosons and MET at 13 TeV with 139/fb",
             "luminosity": 139.0,
-            "ecm": 13.0
+            "ecm": 13.0,
+            "sign": [
+                "0L + 2W + 0Z + 0H + 0B",
+                "0L + 1W + 1Z + 0H + 0B",
+                "0L + 0W + 2Z + 0H + 0B",
+                "0L + 4J + 0H + 0B",
+                "0L + 1W + 1Z + 0H + 4J + 2B",
+                "0L + 2Z + 0H + 4J + 2B",
+                "0L + 1W + 1H + 4J + 2B",
+                "0L + 1Z + 1H + 4J + 2B",
+                "0L + 1Z + 0H + 4J + 2B",
+                "0L + 1H + 4J + 2B"
+            ],
+            "keyword": [
+                "0lepton",
+                "boost",
+                "bosons"
+            ],
+            "note": ""
         },
         {
             "inspire_id": 1624165,
             "name": "CMS_13TeV_MultiLEP_36invfb",
+            "exp": "CMS",
+            "run": "R2",
             "summary": "CMS 2-SS-lepton / >=3-lepton (<=2 hadronic tau) search at 13 TeV with 35.9/fb",
             "luminosity": 35.9,
-            "ecm": 13.0
+            "ecm": 13.0,
+            "sign": "",
+            "keyword": "",
+            "note": "superseding Inspire ID given"
         },
         {
             "inspire_id": 1625745,
             "name": "CMS_13TeV_2OSLEP_confnote_36invfb",
+            "exp": "CMS",
+            "run": "R2",
             "summary": "CMS 2-leptons + jets + MET search at 13 TeV with 36/fb",
             "luminosity": 35.9,
-            "ecm": 13.0
+            "ecm": 13.0,
+            "sign": "",
+            "keyword": "",
+            "note": "Inspire ID given for superseding paper"
         },
         {
             "inspire_id": 1624165,
             "name": "CMS_13TeV_MultiLEP_Full_36invfb",
+            "exp": "CMS",
+            "run": "R2",
             "summary": "CMS >=2-SS-lepton / >=3 lepton (incl <=2 hadronic tau) search at 13 TeV with 36/fb",
             "luminosity": 35.9,
-            "ecm": 13.0
+            "ecm": 13.0,
+            "sign": "",
+            "keyword": "",
+            "note": "also 3-lepton rebinning in 1647947"
         },
         {
             "inspire_id": 1298722,
             "name": "ATLAS_8TeV_0LEP_20invfb",
+            "exp": "ATLAS",
+            "run": "R1.5",
             "summary": "ATLAS jet+MET SUSY search at 8 TeV with 20/fb",
             "luminosity": 20.3,
-            "ecm": 8.0
+            "ecm": 8.0,
+            "sign": "",
+            "keyword": "",
+            "note": ""
         },
         {
             "inspire_id": 1247462,
             "name": "ATLAS_8TeV_2bStop_20invfb",
+            "exp": "ATLAS",
+            "run": "R1.5",
             "summary": "ATLAS MET + two b-jets at 8 TeV with 20/fb",
             "luminosity": 20.3,
-            "ecm": 8.0
+            "ecm": 8.0,
+            "sign": "",
+            "keyword": "",
+            "note": ""
         },
         {
             "inspire_id": 1708516,
             "name": "CMS_13TeV_1Photon1Lepton_36invfb",
+            "exp": "CMS",
+            "run": "R2",
             "summary": "CMS photon + lepton + MET SUSY search at 13 TeV with 36/fb",
             "luminosity": 35.9,
-            "ecm": 13.0
+            "ecm": 13.0,
+            "sign": "",
+            "keyword": "",
+            "note": ""
         },
         {
             "inspire_id": 1654357,
             "name": "ATLAS_13TeV_PhotonGGM_36invfb",
+            "exp": "ATLAS",
+            "run": "R2",
             "summary": "ATLAS photonic GMSB search at 13 TeV with 36/fb",
             "luminosity": 36.1,
-            "ecm": 13.0
+            "ecm": 13.0,
+            "sign": "",
+            "keyword": "",
+            "note": "may be superseded by the 139/fb, requires checking"
         },
         {
             "inspire_id": 1749379,
             "name": "CMS_13TeV_0LEP_137invfb",
+            "exp": "CMS",
+            "run": "R2",
             "summary": "CMS 0-lepton jet+MET SUSY analysis at 13 TeV with 137/fb",
             "luminosity": 137.0,
-            "ecm": 13.0
+            "ecm": 13.0,
+            "sign": "",
+            "keyword": "",
+            "note": ""
         },
         {
             "inspire_id": 2094882,
             "name": "ATLAS_13TeV_PhotonGGM_1Photon_139invfb",
+            "exp": "ATLAS",
+            "run": "R2",
             "summary": "ATLAS photons, jets + MET search at 13 TeV with 139/fb",
             "luminosity": 36.1,
-            "ecm": 13.0
+            "ecm": 13.0,
+            "sign": [
+                ">1P + 0L + >=5J",
+                ">1P + 0L + >=3J"
+            ],
+            "keyword": [
+                "photon",
+                "multijet",
+                "0lepton"
+            ],
+            "note": "check that this data from the CONF agrees with the paper"
         },
         {
             "inspire_id": 1872976,
             "name": "CMS_13TeV_MultiLEP_137invfb",
+            "exp": "CMS",
+            "run": "R2",
             "summary": "CMS 3/4-lepton (<=2 hadronic tau / 2-SS-lepton) search at 13 TeV with 137/fb",
             "luminosity": 137.0,
-            "ecm": 13.0
+            "ecm": 13.0,
+            "sign": "",
+            "keyword": "",
+            "note": ""
         },
         {
             "inspire_id": -1,
             "name": "ATLAS_13TeV_0LEP_13invfb",
+            "exp": "ATLAS",
+            "run": "R2",
             "summary": "ATLAS 0-lepton jet+MET recursive-jigsaw SUSY analysis, with 13/fb of data",
             "luminosity": 13.0,
-            "ecm": 13.0
+            "ecm": 13.0,
+            "sign": "",
+            "keyword": "",
+            "note": "InspireID=1641270 for eventual 36/fb paper"
         },
         {
             "inspire_id": 1777617,
             "name": "CMS_13TeV_2SSLEP_Stop_137invfb",
+            "exp": "CMS",
+            "run": "R2",
             "summary": "CMS 2-SS-lepton + jets or >=3-lepton + jets search at 13 TeV with 137/fb",
             "luminosity": 137.0,
-            "ecm": 13.0
+            "ecm": 13.0,
+            "sign": "",
+            "keyword": "",
+            "note": ""
         },
         {
             "inspire_id": 1128464,
             "name": "ATLAS_7TeV_2LEPStop_4_7invfb",
+            "exp": "ATLAS",
+            "run": "R1",
             "summary": "ATLAS 2-lepton SUSY search at 7 TeV with 4.7/fb",
             "luminosity": 4.7,
-            "ecm": 7.0
+            "ecm": 7.0,
+            "sign": "",
+            "keyword": "",
+            "note": ""
         },
         {
             "inspire_id": -1,
             "name": "ATLAS_8TeV_1LEPbb_20invfb",
+            "exp": "ATLAS",
+            "run": "R1.5",
             "summary": "ATLAS lepton + 2 b-jet search at 8 TeV with 20/fb",
             "luminosity": 20.3,
-            "ecm": 8.0
+            "ecm": 8.0,
+            "sign": "",
+            "keyword": "",
+            "note": "can't find any identification of the note or paper!"
         },
         {
             "inspire_id": 1836850,
             "name": "CMS_13TeV_2OSLEP_137invfb",
+            "exp": "CMS",
+            "run": "R2",
             "summary": "CMS 2-lepton + MET SUSY search at 13 TeV with 137/fb",
             "luminosity": 137.0,
-            "ecm": 13.0
+            "ecm": 13.0,
+            "sign": "",
+            "keyword": "",
+            "note": ""
         },
         {
             "inspire_id": 1282905,
             "name": "ATLAS_8TeV_3LEPEW_20invfb",
+            "exp": "ATLAS",
+            "run": "R1.5",
             "summary": "ATLAS 3-lepton EW search at 8TeV with 20/fb",
             "luminosity": 20.3,
-            "ecm": 8.0
+            "ecm": 8.0,
+            "sign": "",
+            "keyword": "",
+            "note": ""
         },
         {
             "inspire_id": 1260847,
             "name": "CMS_8TeV_MultiLEP_20invfb",
+            "exp": "CMS",
+            "run": "R1.5",
             "summary": "CMS multilepton (same-sign, many, off-Z) search at 8 TeV with 20/fb",
             "luminosity": 19.7,
-            "ecm": 8.0
+            "ecm": 8.0,
+            "sign": "",
+            "keyword": "",
+            "note": ""
         },
         {
             "inspire_id": 1299143,
             "name": "ATLAS_8TeV_0LEPStop_20invfb",
+            "exp": "ATLAS",
+            "run": "R1.5",
             "summary": "ATLAS all-hadronic top-squark search at 8 TeV with 20/fb",
             "luminosity": 20.3,
-            "ecm": 8.0
+            "ecm": 8.0,
+            "sign": "",
+            "keyword": "",
+            "note": ""
         },
         {
             "inspire_id": 1658902,
             "name": "ATLAS_13TeV_MultiLEP_36invfb",
+            "exp": "ATLAS",
+            "run": "R2",
             "summary": "ATLAS 2/3-lepton SUSY search at 13 TeV with 36/fb",
             "luminosity": 36.1,
-            "ecm": 13.0
+            "ecm": 13.0,
+            "sign": [
+                "2L + 0J",
+                "2L + >=2J + 0B + MET + 1Z + 1W",
+                "2L + >=2J + 0B + MET + 1Z",
+                "3L + MET",
+                "3L + 0J + MET",
+                "3L + >=1J + 0B + MET"
+            ],
+            "keyword": [
+                "leptons"
+            ],
+            "note": ""
         },
         {
             "inspire_id": 1304456,
             "name": "ATLAS_8TeV_1LEPStop_20invfb",
+            "exp": "ATLAS",
+            "run": "R1.5",
             "summary": "ATLAS 1-lepton top-squark analysis at 8 TeV with 20/fb",
             "luminosity": 20.3,
-            "ecm": 8.0
+            "ecm": 8.0,
+            "sign": "",
+            "keyword": "",
+            "note": "this ref for the paper; note says this is based on the CONF note with Inspire ID 1229945"
         },
         {
             "inspire_id": 1286444,
             "name": "ATLAS_8TeV_2LEPStop_20invfb",
+            "exp": "ATLAS",
+            "run": "R1.5",
             "summary": "ATLAS 2-lepton top-squark search at 8 TeV with 20/fb",
             "luminosity": 20.3,
-            "ecm": 8.0
+            "ecm": 8.0,
+            "sign": "",
+            "keyword": "",
+            "note": ""
         },
         {
             "inspire_id": 1286761,
             "name": "ATLAS_8TeV_2LEPEW_20invfb",
+            "exp": "ATLAS",
+            "run": "R1.5",
             "summary": "ATLAS 2-lepton + MET search at 8 TeV with 20/fb",
             "luminosity": 20.3,
-            "ecm": 8.0
+            "ecm": 8.0,
+            "sign": "",
+            "keyword": "",
+            "note": ""
         },
         {
             "inspire_id": 1847779,
             "name": "ATLAS_13TeV_MONOJET_139infb",
+            "exp": "ATLAS",
+            "run": "R2",
             "summary": "ATLAS monojet + MET search at 13 TeV with 139/fb",
             "luminosity": 139.0,
-            "ecm": 13.0
+            "ecm": 13.0,
+            "sign": [
+                ">=1J + MET + 0L + 0TL + 0P"
+            ],
+            "keyword": [
+                "0lepton",
+                "jetmet"
+            ],
+            "note": ""
         },
         {
             "inspire_id": 1479641,
             "name": "CMS_13TeV_0LEP_13invfb",
+            "exp": "CMS",
+            "run": "R2",
             "summary": "CMS 0-lepton jet+MET SUSY analysis at 13 TeV with 13/fb",
             "luminosity": 12.9,
-            "ecm": 13.0
+            "ecm": 13.0,
+            "sign": "",
+            "keyword": "",
+            "note": ""
         },
         {
             "inspire_id": 1518834,
             "name": "CMS_13TeV_2LEPsoft_36invfb",
+            "exp": "CMS",
+            "run": "R2",
             "summary": "CMS low-pT lepton + MET SUSY search at 13 TeV with 36/fb",
             "luminosity": 35.9,
-            "ecm": 13.0
+            "ecm": 13.0,
+            "sign": "",
+            "keyword": "",
+            "note": ""
         },
         {
             "inspire_id": 1667045,
             "name": "ATLAS_13TeV_4LEP_36invfb",
+            "exp": "ATLAS",
+            "run": "R2",
             "summary": "ATLAS >=4-lepton SUSY search at 13 TeV with 36/fb",
             "luminosity": 36.1,
-            "ecm": 13.0
+            "ecm": 13.0,
+            "sign": "",
+            "keyword": "",
+            "note": ""
         },
         {
             "inspire_id": 1608161,
             "name": "CMS_13TeV_1LEPbb_36invfb",
+            "exp": "CMS",
+            "run": "R2",
             "summary": "CMS 1-lepton + 2 b-jet + MET search for charginos and neutralinos in WH events at 13 TeV with 36/fb",
             "luminosity": 35.9,
-            "ecm": 13.0
+            "ecm": 13.0,
+            "sign": "",
+            "keyword": "",
+            "note": ""
         },
         {
             "inspire_id": 1605128,
             "name": "CMS_13TeV_1LEPStop_36invfb",
+            "exp": "CMS",
+            "run": "R2",
             "summary": "CMS 1-lepton + MET top-squark search at 13 TeV with 36/fb",
             "luminosity": 35.9,
-            "ecm": 13.0
+            "ecm": 13.0,
+            "sign": "",
+            "keyword": "",
+            "note": ""
         },
         {
             "inspire_id": 1594731,
             "name": "CMS_13TeV_2SSLEP_Stop_36invfb",
+            "exp": "CMS",
+            "run": "R2",
             "summary": "CMS 2-SS-lepton + jets + MET search at 13 TeV with 36/fb",
             "luminosity": 35.9,
-            "ecm": 13.0
+            "ecm": 13.0,
+            "sign": "",
+            "keyword": "",
+            "note": ""
         },
         {
             "inspire_id": 1184952,
             "name": "ATLAS_7TeV_1OR2LEPStop_4_7invfb",
+            "exp": "ATLAS",
+            "run": "R1",
             "summary": "ATLAS lepton + b-jet search at 7 TeV with 4.7/fb",
             "luminosity": 4.7,
-            "ecm": 7.0
+            "ecm": 7.0,
+            "sign": "",
+            "keyword": "",
+            "note": ""
         },
         {
             "inspire_id": 1844425,
             "name": "ATLAS_13TeV_2LEPStop_139invfb",
+            "exp": "ATLAS",
+            "run": "R2",
             "summary": "ATLAS search for two opposite-charge leptons, jets and MET at 13 TeV with 139/fb",
             "luminosity": 139.0,
-            "ecm": 13.0
+            "ecm": 13.0,
+            "sign": [
+                "2L + >=1B + MET + 1DF",
+                "2L + >=1B + MET + 1SF + 0Z",
+                "2L + 0B + MET + DF",
+                "2L + 0B + MET + 1SF + 0Z",
+                "2L + >=1B + MET + DF",
+                "2L + >=1B + MET + 1SF + 0Z",
+                "2L + 0B + MET"
+            ],
+            "keyword": [
+                "leptons",
+                "boost",
+                "mT2"
+            ],
+            "note": ""
         },
         {
             "inspire_id": 1359293,
             "name": "CMS_8TeV_1LEPDMTOP_20invfb",
+            "exp": "CMS",
+            "run": "R1.5",
             "summary": "CMS 1-lepton + jets + MET (top pair) search at 8 TeV with 20/fb",
             "luminosity": 19.7,
-            "ecm": 8.0
+            "ecm": 8.0,
+            "sign": "",
+            "keyword": "",
+            "note": ""
         },
         {
             "inspire_id": 1754675,
             "name": "ATLAS_13TeV_MultiLEP_strong_139invfb",
+            "exp": "ATLAS",
+            "run": "R2",
             "summary": "ATLAS same-sign lepton + jets squark/gluino search at 13 TeV with 139/fb",
             "luminosity": 139.0,
-            "ecm": 13.0
+            "ecm": 13.0,
+            "sign": [
+                ">=2SSL + >=6J",
+                ">=2SSL + 0B + >=6J + MET",
+                ">=2SSL + >=1B + >=6J",
+                ">=2SSL + >=2B + >=6J + MET",
+                ">=3SSL + >=1B + 0Z + MET"
+            ],
+            "keyword": [
+                "SSleptons",
+                "Rparity"
+            ],
+            "note": ""
         },
         {
             "inspire_id": 1866951,
             "name": "ATLAS_13TeV_3LEP_139invfb",
+            "exp": "ATLAS",
+            "run": "R2",
             "summary": "ATLAS 3-lepton + MET chargino-neutralino pair search at 13 TeV with 139/fb",
             "luminosity": 139.0,
-            "ecm": 13.0
+            "ecm": 13.0,
+            "sign": [
+                "3L + 0J + 0Z + MET",
+                "3L + >=1J + 0B + 0Z + MET",
+                "3L + >=1E + >=1M + 0J",
+                "3L + >=1E + >=1M + >=1J + <=2J"
+            ],
+            "keyword": [
+                "leptons",
+                "sfos",
+                "dfos"
+            ],
+            "note": ""
         },
         {
             "inspire_id": 1683312,
             "name": "CMS_13TeV_2OSLEP_chargino_stop_36invfb",
+            "exp": "CMS",
+            "run": "R2",
             "summary": "CMS 2-lepton + MET chargino/top-squark search at 13 TeV with 36/fb",
             "luminosity": 35.9,
-            "ecm": 13.0
+            "ecm": 13.0,
+            "sign": "",
+            "keyword": "",
+            "note": ""
         },
         {
             "inspire_id": 1725476,
             "name": "CMS_13TeV_2Photon_GMSB_36invfb",
+            "exp": "CMS",
+            "run": "R2",
             "summary": "CMS photon + MET SUSY search at 13 TeV with 36/fb",
             "luminosity": 35.9,
-            "ecm": 13.0
+            "ecm": 13.0,
+            "sign": "",
+            "keyword": "",
+            "note": ""
         },
         {
             "inspire_id": 1634253,
             "name": "CMS_13TeV_2LEPStop_36invfb",
+            "exp": "CMS",
+            "run": "R2",
             "summary": "CMS 2-lepton heavy top-squark search at 13 TeV with 36/fb",
             "luminosity": 35.9,
-            "ecm": 13.0
+            "ecm": 13.0,
+            "sign": "",
+            "keyword": "",
+            "note": ""
         },
         {
             "inspire_id": 1641762,
             "name": "CMS_13TeV_MONOJET_36invfb",
+            "exp": "CMS",
+            "run": "R2",
             "summary": "CMS W/Z-monojet + MET search at 13 TeV with 36/fb",
             "luminosity": 35.9,
-            "ecm": 13.0
+            "ecm": 13.0,
+            "sign": "",
+            "keyword": "",
+            "note": ""
         },
         {
             "inspire_id": 1800411,
             "name": "ATLAS_13TeV_2OSLEP_Z_139invfb",
-            "summary": "ATLAS top squark search in events with a Higgs or Z boson at 13 TeV with 139/fb",
+            "exp": "ATLAS",
+            "run": "R2",
+            "summary": "ATLAS top-squark search in events with a Higgs or Z boson at 13 TeV with 139/fb",
             "luminosity": 139.0,
-            "ecm": 13.0
+            "ecm": 13.0,
+            "sign": [
+                ">=3L + >=1OSSF + >=4J + >=1B + MET",
+                ">=3L + >=1OSSF + >=5J + >=1B + MET",
+                ">=3L + >=1OSSF + >=3J + MET",
+                ">=3L + >=1OSSF + >=3J + >=1B + MET",
+                "1L + >=1H + >=4J + >=4B",
+                "1L + >=1H + >=6J + >=4B"
+            ],
+            "keyword": [
+                "leptons",
+                "higgs",
+                "mT2"
+            ],
+            "note": ""
         },
         {
             "inspire_id": 1755298,
             "name": "ATLAS_13TeV_1Lep2b_139invfb",
+            "exp": "ATLAS",
+            "run": "R2",
             "summary": "ATLAS 1-lepton + MET + H->bb electroweakino search, at 13 TeV with 139/fb",
             "luminosity": 139,
-            "ecm": 13.0
+            "ecm": 13.0,
+            "sign": [
+                "1L + >=2J + <=3J + 2B + MET + 1H"
+            ],
+            "keyword": [
+                "Higgs",
+                "mCT"
+            ],
+            "note": ""
         },
         {
             "inspire_id": 1637580,
             "name": "CMS_13TeV_Photon_GMSB_36invfb",
+            "exp": "CMS",
+            "run": "R2",
             "summary": "CMS >=1 photon + MET GMSB search at 13 TeV with 36/fb",
             "luminosity": 35.9,
-            "ecm": 13.0
+            "ecm": 13.0,
+            "sign": "",
+            "keyword": "",
+            "note": ""
         },
         {
             "inspire_id": 1311223,
             "name": "CMS_8TeV_MONOJET_20invfb",
+            "exp": "CMS",
+            "run": "R1.5",
             "summary": "CMS monojet + MET search at 8 TeV with 20/fb",
             "luminosity": 19.7,
-            "ecm": 8.0
+            "ecm": 8.0,
+            "sign": "",
+            "keyword": "",
+            "note": ""
         }
     ]
 }
