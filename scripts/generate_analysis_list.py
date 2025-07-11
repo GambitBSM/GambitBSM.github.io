@@ -32,6 +32,7 @@ data = json.load(json_file)
 # Inspire API allows 15 requests per 5 seconds but this seems fine
 inspire_url = 'https://inspirehep.net/api/literature/'
 names = []
+authors = []
 summaries = []
 lumis = []
 titles = []
@@ -47,10 +48,10 @@ notes = []
 for analysis in data['analyses']:
   # Information taken directly from info files
   names.append(analysis['name'])
+  authors.append(analysis['authors'])
   summaries.append(analysis['summary'])
   lumis.append(analysis['luminosity'])
   sqrtss.append(analysis['ecm'])
-  notes.append(analysis['note'])
   exps.append(analysis['exp'])
   runs.append(analysis['run'])
   signatures.append(analysis['sign'])
@@ -107,7 +108,7 @@ for index, analysis in enumerate(data['analyses']):
     markdown += f"**Summary:** {summaries[index]}\n\n"
     markdown += f"**Signatures:** {signatures[index]}\n\n"
     markdown += f"**Keywords:** {keywords[index]}\n\n"
-    markdown += f"**Note:** {notes[index]}\n\n"
+    if notes[index] != "": markdown += f"**Note:** {notes[index]}\n\n"
 
 
 # Write markdown file
