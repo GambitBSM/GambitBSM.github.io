@@ -1,10 +1,11 @@
 {
     "version": "2.6.0",
-    "date_created": "2025-06-27T16:35:52.221455",
+    "date_created": "2025-06-28T22:45:06.315981",
     "analyses": [
         {
             "inspire_id": 1827025,
             "name": "ATLAS_13TeV_0LEP_139invfb",
+            "authors": "",
             "exp": "ATLAS",
             "run": "R2",
             "summary": "0-lepton jet+MET SUSY analysis, with 139/fb of data",
@@ -26,6 +27,10 @@
         {
             "inspire_id": 1750597,
             "name": "ATLAS_13TeV_2OSLEP_chargino_139invfb",
+            "authors": [
+                "Yang Zhang",
+                "Anders Kvellestad"
+            ],
             "exp": "ATLAS",
             "run": "R2",
             "summary": "ATLAS 2-lepton + MET chargino and slepton search at 13 TeV with 139/fb",
@@ -46,6 +51,7 @@
         {
             "inspire_id": 1625745,
             "name": "CMS_13TeV_2OSLEP_36invfb",
+            "authors": "",
             "exp": "CMS",
             "run": "R2",
             "summary": "CMS 2-lepton + jets + MET search at 13 TeV with 36/fb",
@@ -58,6 +64,9 @@
         {
             "inspire_id": -1,
             "name": "ATLAS_13TeV_MultiLEP_confnote_36invfb",
+            "authors": [
+                "Rose Kudzman-Blais"
+            ],
             "exp": "ATLAS",
             "run": "R2",
             "summary": "ATLAS 2/3-lepton SUSY search at 13 TeV with 36/fb",
@@ -70,6 +79,7 @@
         {
             "inspire_id": -1,
             "name": "ATLAS_13TeV_2OSLEP_chargino_80invfb",
+            "authors": "",
             "exp": "ATLAS",
             "run": "R2",
             "summary": "ATLAS 2-lepton + MET chargino pair-production search at 13 TeV with 80/fb",
@@ -77,11 +87,14 @@
             "ecm": 13.0,
             "sign": "",
             "keyword": "",
-            "note": "CONF note, superseded by 139/fb paper"
+            "note": "Based on CONF note, superseded by 139/fb paper"
         },
         {
             "inspire_id": 1676551,
             "name": "ATLAS_13TeV_RJ3L_lowmass_36invfb",
+            "authors": [
+                "Martin White"
+            ],
             "exp": "ATLAS",
             "run": "R2",
             "summary": "ATLAS 2/3-lepton recursive-jigsaw search at 13 TeV with 36/fb",
@@ -101,6 +114,9 @@
         {
             "inspire_id": 1677389,
             "name": "ATLAS_13TeV_3b_24invfb",
+            "authors": [
+                "Are Raklev"
+            ],
             "exp": "ATLAS",
             "run": "R2",
             "summary": "ATLAS >=3 b-jet low-mass higgsino pair-production search at 13 TeV with 24/fb",
@@ -116,11 +132,12 @@
                 "bjets",
                 "higgs"
             ],
-            "note": "replaced by 139/fb record 1866951"
+            "note": "Only low mass signal region implemented here. Replaced by 139/fb record 1866951. This analysis has overlapping exclusion and discovery signal regions. The discovery regions are separated into a derived class."
         },
         {
             "inspire_id": 1594909,
             "name": "CMS_13TeV_0LEP_36invfb",
+            "authors": "",
             "exp": "CMS",
             "run": "R2",
             "summary": "CMS 0-lepton jet+MET SUSY analysis at 13 TeV with 36/fb",
@@ -133,6 +150,9 @@
         {
             "inspire_id": 1623207,
             "name": "ATLAS_13TeV_0LEPStop_36invfb",
+            "authors": [
+                "Martin White"
+            ],
             "exp": "ATLAS",
             "run": "R2",
             "summary": "ATLAS jets+MET top-squark search at 13 TeV with 36/fb",
@@ -150,11 +170,12 @@
                 "ISR",
                 "hemispheres"
             ],
-            "note": ""
+            "note": "Signal regions based on recursive jigsaw are not used as validation fails."
         },
         {
             "inspire_id": 1639856,
             "name": "ATLAS_13TeV_1LEPStop_36invfb",
+            "authors": "",
             "exp": "ATLAS",
             "run": "R2",
             "summary": "ATLAS 1-lepton + jets + MET top-squark pair search at 13 TeV using 36/fb",
@@ -175,11 +196,12 @@
                 "soft lepton",
                 "mT2"
             ],
-            "note": "3rd signal region uses >4/5 GeV leptons. Various BDTs and shape fits involved."
+            "note": "3rd signal region uses >4/5 GeV leptons. Various BDTs and shape fits involved. Not used."
         },
         {
             "inspire_id": 1292446,
             "name": "CMS_8TeV_2LEPDMTOP_20invfb",
+            "authors": "",
             "exp": "CMS",
             "run": "R1.5",
             "summary": "CMS 2-lepton + jets + MET (dileptonic top-pair) search at 8 TeV with 20/fb",
@@ -192,6 +214,9 @@
         {
             "inspire_id": 1620694,
             "name": "ATLAS_13TeV_2bMET_36invfb",
+            "authors": [
+                "Martin White"
+            ],
             "exp": "ATLAS",
             "run": "R2",
             "summary": "ATLAS SUSY search with b-tagged jets and MET at 13 TeV with 36.1/fb",
@@ -213,6 +238,9 @@
         {
             "inspire_id": 1641270,
             "name": "ATLAS_13TeV_0LEP_36invfb",
+            "authors": [
+                "Yang Zhang"
+            ],
             "exp": "ATLAS",
             "run": "R2",
             "summary": "ATLAS 0-lepton jet+MET SUSY analysis, with 36/fb of data",
@@ -236,6 +264,7 @@
         {
             "inspire_id": 1615470,
             "name": "ATLAS_13TeV_2LEPStop_36invfb",
+            "authors": "Yang Zhang",
             "exp": "ATLAS",
             "run": "R2",
             "summary": "ATLAS 2-lepton top-squark pair search at 13 TeV with 36.1/fb",
@@ -264,6 +293,9 @@
         {
             "inspire_id": 1677389,
             "name": "ATLAS_13TeV_3b_36invfb",
+            "authors": [
+                "Are Raklev"
+            ],
             "exp": "ATLAS",
             "run": "R2",
             "summary": "ATLAS >=3 b-jet high-mass higgsino pair-production search at 13 TeV with 24/fb",
@@ -279,11 +311,14 @@
                 "bjets",
                 "higgs"
             ],
-            "note": ""
+            "note": "Only the high mass signal regions are implemented here. This analysis has overlapping exclusion and discovery signal regions. The discovery regions are separated into a derived class."
         },
         {
             "inspire_id": -1,
             "name": "ATLAS_13TeV_ZGammaGrav_CONFNOTE_80invfb",
+            "authors": [
+                "Andy Buckley"
+            ],
             "exp": "ATLAS",
             "run": "R2",
             "summary": "ATLAS ZH->photon+gravitino search at 13 TeV with 80/fb",
@@ -296,6 +331,10 @@
         {
             "inspire_id": 1852821,
             "name": "ATLAS_13TeV_4LEP_139invfb",
+            "authors": [
+                "Anders Kvellestad",
+                "Victor Ananyev"
+            ],
             "exp": "ATLAS",
             "run": "R2",
             "summary": "ATLAS >4-lepton SUSY search at 13 TeV with 139/fb",
@@ -320,6 +359,9 @@
         {
             "inspire_id": 1906174,
             "name": "ATLAS_13TeV_2BoostedBosons_139invfb",
+            "authors": [
+                "Are Raklev"
+            ],
             "exp": "ATLAS",
             "run": "R2",
             "summary": "ATLAS search for charginos and neutralinos with two boosted hadronically decaying bosons and MET at 13 TeV with 139/fb",
@@ -342,11 +384,12 @@
                 "boost",
                 "bosons"
             ],
-            "note": ""
+            "note": "Only uses the non-b-jet signal regions due to problems reproducing the b-tagging used based on small radius track jets."
         },
         {
             "inspire_id": 1624165,
             "name": "CMS_13TeV_MultiLEP_36invfb",
+            "authors": "",
             "exp": "CMS",
             "run": "R2",
             "summary": "CMS 2-SS-lepton / >=3-lepton (<=2 hadronic tau) search at 13 TeV with 35.9/fb",
@@ -359,6 +402,7 @@
         {
             "inspire_id": 1625745,
             "name": "CMS_13TeV_2OSLEP_confnote_36invfb",
+            "authors": "",
             "exp": "CMS",
             "run": "R2",
             "summary": "CMS 2-leptons + jets + MET search at 13 TeV with 36/fb",
@@ -371,6 +415,7 @@
         {
             "inspire_id": 1624165,
             "name": "CMS_13TeV_MultiLEP_Full_36invfb",
+            "authors": "",
             "exp": "CMS",
             "run": "R2",
             "summary": "CMS >=2-SS-lepton / >=3 lepton (incl <=2 hadronic tau) search at 13 TeV with 36/fb",
@@ -383,6 +428,7 @@
         {
             "inspire_id": 1298722,
             "name": "ATLAS_8TeV_0LEP_20invfb",
+            "authors": "",
             "exp": "ATLAS",
             "run": "R1.5",
             "summary": "ATLAS jet+MET SUSY search at 8 TeV with 20/fb",
@@ -395,6 +441,7 @@
         {
             "inspire_id": 1247462,
             "name": "ATLAS_8TeV_2bStop_20invfb",
+            "authors": "",
             "exp": "ATLAS",
             "run": "R1.5",
             "summary": "ATLAS MET + two b-jets at 8 TeV with 20/fb",
@@ -407,6 +454,7 @@
         {
             "inspire_id": 1708516,
             "name": "CMS_13TeV_1Photon1Lepton_36invfb",
+            "authors": "",
             "exp": "CMS",
             "run": "R2",
             "summary": "CMS photon + lepton + MET SUSY search at 13 TeV with 36/fb",
@@ -419,6 +467,9 @@
         {
             "inspire_id": 1654357,
             "name": "ATLAS_13TeV_PhotonGGM_36invfb",
+            "authors": [
+                "Martin White"
+            ],
             "exp": "ATLAS",
             "run": "R2",
             "summary": "ATLAS photonic GMSB search at 13 TeV with 36/fb",
@@ -431,6 +482,7 @@
         {
             "inspire_id": 1749379,
             "name": "CMS_13TeV_0LEP_137invfb",
+            "authors": "",
             "exp": "CMS",
             "run": "R2",
             "summary": "CMS 0-lepton jet+MET SUSY analysis at 13 TeV with 137/fb",
@@ -443,6 +495,9 @@
         {
             "inspire_id": 2094882,
             "name": "ATLAS_13TeV_PhotonGGM_1Photon_139invfb",
+            "authors": [
+                "Anders Kvellestad"
+            ],
             "exp": "ATLAS",
             "run": "R2",
             "summary": "ATLAS photons, jets + MET search at 13 TeV with 139/fb",
@@ -457,11 +512,14 @@
                 "multijet",
                 "0lepton"
             ],
-            "note": "check that this data from the CONF agrees with the paper"
+            "note": ""
         },
         {
             "inspire_id": 1872976,
             "name": "CMS_13TeV_MultiLEP_137invfb",
+            "authors": [
+                "Tomas Gonzalo"
+            ],
             "exp": "CMS",
             "run": "R2",
             "summary": "CMS 3/4-lepton (<=2 hadronic tau / 2-SS-lepton) search at 13 TeV with 137/fb",
@@ -474,6 +532,7 @@
         {
             "inspire_id": -1,
             "name": "ATLAS_13TeV_0LEP_13invfb",
+            "authors": "",
             "exp": "ATLAS",
             "run": "R2",
             "summary": "ATLAS 0-lepton jet+MET recursive-jigsaw SUSY analysis, with 13/fb of data",
@@ -481,11 +540,14 @@
             "ecm": 13.0,
             "sign": "",
             "keyword": "",
-            "note": "InspireID=1641270 for eventual 36/fb paper"
+            "note": "InspireID=1641270 for eventual 36/fb paper. Signal regions based on recursive jigsaw are not used as validation fails."
         },
         {
             "inspire_id": 1777617,
             "name": "CMS_13TeV_2SSLEP_Stop_137invfb",
+            "authors": [
+                "Yang Zhang"
+            ],
             "exp": "CMS",
             "run": "R2",
             "summary": "CMS 2-SS-lepton + jets or >=3-lepton + jets search at 13 TeV with 137/fb",
@@ -498,6 +560,7 @@
         {
             "inspire_id": 1128464,
             "name": "ATLAS_7TeV_2LEPStop_4_7invfb",
+            "authors": "",
             "exp": "ATLAS",
             "run": "R1",
             "summary": "ATLAS 2-lepton SUSY search at 7 TeV with 4.7/fb",
@@ -510,6 +573,7 @@
         {
             "inspire_id": -1,
             "name": "ATLAS_8TeV_1LEPbb_20invfb",
+            "authors": "",
             "exp": "ATLAS",
             "run": "R1.5",
             "summary": "ATLAS lepton + 2 b-jet search at 8 TeV with 20/fb",
@@ -522,6 +586,9 @@
         {
             "inspire_id": 1836850,
             "name": "CMS_13TeV_2OSLEP_137invfb",
+            "authors": [
+                "Yang Zhang"
+            ],
             "exp": "CMS",
             "run": "R2",
             "summary": "CMS 2-lepton + MET SUSY search at 13 TeV with 137/fb",
@@ -534,6 +601,7 @@
         {
             "inspire_id": 1282905,
             "name": "ATLAS_8TeV_3LEPEW_20invfb",
+            "authors": "",
             "exp": "ATLAS",
             "run": "R1.5",
             "summary": "ATLAS 3-lepton EW search at 8TeV with 20/fb",
@@ -546,6 +614,7 @@
         {
             "inspire_id": 1260847,
             "name": "CMS_8TeV_MultiLEP_20invfb",
+            "authors": "",
             "exp": "CMS",
             "run": "R1.5",
             "summary": "CMS multilepton (same-sign, many, off-Z) search at 8 TeV with 20/fb",
@@ -558,6 +627,7 @@
         {
             "inspire_id": 1299143,
             "name": "ATLAS_8TeV_0LEPStop_20invfb",
+            "authors": "",
             "exp": "ATLAS",
             "run": "R1.5",
             "summary": "ATLAS all-hadronic top-squark search at 8 TeV with 20/fb",
@@ -570,6 +640,10 @@
         {
             "inspire_id": 1658902,
             "name": "ATLAS_13TeV_MultiLEP_36invfb",
+            "authors": [
+                "Rose Kudzman-Blais",
+                "Anders Kvellestad"
+            ],
             "exp": "ATLAS",
             "run": "R2",
             "summary": "ATLAS 2/3-lepton SUSY search at 13 TeV with 36/fb",
@@ -591,6 +665,7 @@
         {
             "inspire_id": 1304456,
             "name": "ATLAS_8TeV_1LEPStop_20invfb",
+            "authors": "",
             "exp": "ATLAS",
             "run": "R1.5",
             "summary": "ATLAS 1-lepton top-squark analysis at 8 TeV with 20/fb",
@@ -603,6 +678,7 @@
         {
             "inspire_id": 1286444,
             "name": "ATLAS_8TeV_2LEPStop_20invfb",
+            "authors": "",
             "exp": "ATLAS",
             "run": "R1.5",
             "summary": "ATLAS 2-lepton top-squark search at 8 TeV with 20/fb",
@@ -615,6 +691,7 @@
         {
             "inspire_id": 1286761,
             "name": "ATLAS_8TeV_2LEPEW_20invfb",
+            "authors": "",
             "exp": "ATLAS",
             "run": "R1.5",
             "summary": "ATLAS 2-lepton + MET search at 8 TeV with 20/fb",
@@ -627,6 +704,7 @@
         {
             "inspire_id": 1847779,
             "name": "ATLAS_13TeV_MONOJET_139infb",
+            "authors": "",
             "exp": "ATLAS",
             "run": "R2",
             "summary": "ATLAS monojet + MET search at 13 TeV with 139/fb",
@@ -644,6 +722,7 @@
         {
             "inspire_id": 1479641,
             "name": "CMS_13TeV_0LEP_13invfb",
+            "authors": "",
             "exp": "CMS",
             "run": "R2",
             "summary": "CMS 0-lepton jet+MET SUSY analysis at 13 TeV with 13/fb",
@@ -656,6 +735,7 @@
         {
             "inspire_id": 1518834,
             "name": "CMS_13TeV_2LEPsoft_36invfb",
+            "authors": "",
             "exp": "CMS",
             "run": "R2",
             "summary": "CMS low-pT lepton + MET SUSY search at 13 TeV with 36/fb",
@@ -668,6 +748,9 @@
         {
             "inspire_id": 1667045,
             "name": "ATLAS_13TeV_4LEP_36invfb",
+            "authors": [
+                "Anders Kvellestad"
+            ],
             "exp": "ATLAS",
             "run": "R2",
             "summary": "ATLAS >=4-lepton SUSY search at 13 TeV with 36/fb",
@@ -680,6 +763,7 @@
         {
             "inspire_id": 1608161,
             "name": "CMS_13TeV_1LEPbb_36invfb",
+            "authors": "",
             "exp": "CMS",
             "run": "R2",
             "summary": "CMS 1-lepton + 2 b-jet + MET search for charginos and neutralinos in WH events at 13 TeV with 36/fb",
@@ -692,6 +776,7 @@
         {
             "inspire_id": 1605128,
             "name": "CMS_13TeV_1LEPStop_36invfb",
+            "authors": "",
             "exp": "CMS",
             "run": "R2",
             "summary": "CMS 1-lepton + MET top-squark search at 13 TeV with 36/fb",
@@ -704,6 +789,9 @@
         {
             "inspire_id": 1594731,
             "name": "CMS_13TeV_2SSLEP_Stop_36invfb",
+            "authors": [
+                "Yang Zhang"
+            ],
             "exp": "CMS",
             "run": "R2",
             "summary": "CMS 2-SS-lepton + jets + MET search at 13 TeV with 36/fb",
@@ -716,6 +804,7 @@
         {
             "inspire_id": 1184952,
             "name": "ATLAS_7TeV_1OR2LEPStop_4_7invfb",
+            "authors": "",
             "exp": "ATLAS",
             "run": "R1",
             "summary": "ATLAS lepton + b-jet search at 7 TeV with 4.7/fb",
@@ -728,6 +817,9 @@
         {
             "inspire_id": 1844425,
             "name": "ATLAS_13TeV_2LEPStop_139invfb",
+            "authors": [
+                "Anders Kvellestad"
+            ],
             "exp": "ATLAS",
             "run": "R2",
             "summary": "ATLAS search for two opposite-charge leptons, jets and MET at 13 TeV with 139/fb",
@@ -747,11 +839,12 @@
                 "boost",
                 "mT2"
             ],
-            "note": ""
+            "note": "The 3-body and 4-body SRs are not implemented yet."
         },
         {
             "inspire_id": 1359293,
             "name": "CMS_8TeV_1LEPDMTOP_20invfb",
+            "authors": "",
             "exp": "CMS",
             "run": "R1.5",
             "summary": "CMS 1-lepton + jets + MET (top pair) search at 8 TeV with 20/fb",
@@ -764,6 +857,9 @@
         {
             "inspire_id": 1754675,
             "name": "ATLAS_13TeV_MultiLEP_strong_139invfb",
+            "authors": [
+                "Anders Kvellestad"
+            ],
             "exp": "ATLAS",
             "run": "R2",
             "summary": "ATLAS same-sign lepton + jets squark/gluino search at 13 TeV with 139/fb",
@@ -785,6 +881,9 @@
         {
             "inspire_id": 1866951,
             "name": "ATLAS_13TeV_3LEP_139invfb",
+            "authors": [
+                "Are Raklev"
+            ],
             "exp": "ATLAS",
             "run": "R2",
             "summary": "ATLAS 3-lepton + MET chargino-neutralino pair search at 13 TeV with 139/fb",
@@ -801,11 +900,12 @@
                 "sfos",
                 "dfos"
             ],
-            "note": ""
+            "note": "The recursive jigsaw and the DFOS SRs for the Wh search are not included."
         },
         {
             "inspire_id": 1683312,
             "name": "CMS_13TeV_2OSLEP_chargino_stop_36invfb",
+            "authors": "",
             "exp": "CMS",
             "run": "R2",
             "summary": "CMS 2-lepton + MET chargino/top-squark search at 13 TeV with 36/fb",
@@ -818,6 +918,9 @@
         {
             "inspire_id": 1725476,
             "name": "CMS_13TeV_2Photon_GMSB_36invfb",
+            "authors": [
+                "Anders Kvellestad"
+            ],
             "exp": "CMS",
             "run": "R2",
             "summary": "CMS photon + MET SUSY search at 13 TeV with 36/fb",
@@ -830,6 +933,7 @@
         {
             "inspire_id": 1634253,
             "name": "CMS_13TeV_2LEPStop_36invfb",
+            "authors": "",
             "exp": "CMS",
             "run": "R2",
             "summary": "CMS 2-lepton heavy top-squark search at 13 TeV with 36/fb",
@@ -842,6 +946,7 @@
         {
             "inspire_id": 1641762,
             "name": "CMS_13TeV_MONOJET_36invfb",
+            "authors": "",
             "exp": "CMS",
             "run": "R2",
             "summary": "CMS W/Z-monojet + MET search at 13 TeV with 36/fb",
@@ -854,6 +959,10 @@
         {
             "inspire_id": 1800411,
             "name": "ATLAS_13TeV_2OSLEP_Z_139invfb",
+            "authors": [
+                "Tomas Gonzalo",
+                "Anders Kvellestad"
+            ],
             "exp": "ATLAS",
             "run": "R2",
             "summary": "ATLAS top-squark search in events with a Higgs or Z boson at 13 TeV with 139/fb",
@@ -877,6 +986,9 @@
         {
             "inspire_id": 1755298,
             "name": "ATLAS_13TeV_1Lep2b_139invfb",
+            "authors": [
+                "Christopher Chang"
+            ],
             "exp": "ATLAS",
             "run": "R2",
             "summary": "ATLAS 1-lepton + MET + H->bb electroweakino search, at 13 TeV with 139/fb",
@@ -894,6 +1006,9 @@
         {
             "inspire_id": 1637580,
             "name": "CMS_13TeV_Photon_GMSB_36invfb",
+            "authors": [
+                "Yang Zhang"
+            ],
             "exp": "CMS",
             "run": "R2",
             "summary": "CMS >=1 photon + MET GMSB search at 13 TeV with 36/fb",
@@ -906,6 +1021,7 @@
         {
             "inspire_id": 1311223,
             "name": "CMS_8TeV_MONOJET_20invfb",
+            "authors": "",
             "exp": "CMS",
             "run": "R1.5",
             "summary": "CMS monojet + MET search at 8 TeV with 20/fb",
