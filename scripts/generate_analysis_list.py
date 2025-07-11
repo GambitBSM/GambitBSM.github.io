@@ -45,6 +45,7 @@ runs = []
 signatures = []
 keywords = []
 notes = []
+statuses = []  # indicates the current validation status of the analysis
 for analysis in data['analyses']:
   # Information taken directly from info files
   names.append(analysis['name'])
@@ -57,6 +58,7 @@ for analysis in data['analyses']:
   signatures.append(analysis['sign'])
   keywords.append(analysis['keyword'])
   notes.append(analysis['note'])
+  statuses.append(analysis['validation'])
   
   # Query inspire (inspire_id = -1 does not have a record) for more info
   recid = analysis['inspire_id']
@@ -103,6 +105,8 @@ for index, analysis in enumerate(data['analyses']):
     markdown += f"**Run:** {runs[index]}\n\n"
     markdown += f"**arXiv:** [{arXiv_links[index]}](https://arxiv.org/abs/{arXiv_links[index]})\n\n"
     markdown += f"**ColliderBit name:** {names[index]}\n\n"
+    if authors[index] != "": markdown += f"**Coded by:** {authors[index]}\n\n"
+    if statuses[index] != "": markdown += f"**Validation status:** {statuses[index]}\n\n"
     markdown += f"**Energy:** {sqrtss[index]} TeV\n\n"
     markdown += f"**Luminosity:** {lumis[index]} fb$^{-1}$\n\n"
     markdown += f"**Summary:** {summaries[index]}\n\n"
