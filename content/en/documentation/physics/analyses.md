@@ -47,6 +47,8 @@ weight: 5
 
 **ColliderBit name:** ATLAS_13TeV_2OSLEP_chargino_139invfb
 
+**Coded by:** ['Yang Zhang', 'Anders Kvellestad']
+
 **Energy:** 13.0 TeV
 
 **Luminosity:** 139.0 fb$^-1$
@@ -92,6 +94,8 @@ weight: 5
 **arXiv:** [](https://arxiv.org/abs/)
 
 **ColliderBit name:** ATLAS_13TeV_MultiLEP_confnote_36invfb
+
+**Coded by:** ['Rose Kudzman-Blais']
 
 **Energy:** 13.0 TeV
 
@@ -141,6 +145,8 @@ weight: 5
 
 **ColliderBit name:** ATLAS_13TeV_RJ3L_lowmass_36invfb
 
+**Coded by:** ['Martin White']
+
 **Energy:** 13.0 TeV
 
 **Luminosity:** 36.1 fb$^-1$
@@ -162,6 +168,8 @@ weight: 5
 **arXiv:** [1806.04030](https://arxiv.org/abs/1806.04030)
 
 **ColliderBit name:** ATLAS_13TeV_3b_24invfb
+
+**Coded by:** ['Are Raklev']
 
 **Energy:** 13.0 TeV
 
@@ -208,6 +216,8 @@ weight: 5
 **arXiv:** [1709.04183](https://arxiv.org/abs/1709.04183)
 
 **ColliderBit name:** ATLAS_13TeV_0LEPStop_36invfb
+
+**Coded by:** ['Martin White']
 
 **Energy:** 13.0 TeV
 
@@ -281,6 +291,8 @@ weight: 5
 
 **ColliderBit name:** ATLAS_13TeV_2bMET_36invfb
 
+**Coded by:** ['Martin White']
+
 **Energy:** 13.0 TeV
 
 **Luminosity:** 36.1 fb$^-1$
@@ -302,6 +314,8 @@ weight: 5
 **arXiv:** [1712.02332](https://arxiv.org/abs/1712.02332)
 
 **ColliderBit name:** ATLAS_13TeV_0LEP_36invfb
+
+**Coded by:** ['Yang Zhang']
 
 **Energy:** 13.0 TeV
 
@@ -327,6 +341,8 @@ weight: 5
 
 **ColliderBit name:** ATLAS_13TeV_2LEPStop_36invfb
 
+**Coded by:** Yang Zhang
+
 **Energy:** 13.0 TeV
 
 **Luminosity:** 36.1 fb$^-1$
@@ -350,6 +366,8 @@ weight: 5
 **arXiv:** [1806.04030](https://arxiv.org/abs/1806.04030)
 
 **ColliderBit name:** ATLAS_13TeV_3b_36invfb
+
+**Coded by:** ['Are Raklev']
 
 **Energy:** 13.0 TeV
 
@@ -375,6 +393,8 @@ weight: 5
 
 **ColliderBit name:** ATLAS_13TeV_ZGammaGrav_CONFNOTE_80invfb
 
+**Coded by:** ['Andy Buckley']
+
 **Energy:** 13.0 TeV
 
 **Luminosity:** 79.8 fb$^-1$
@@ -399,6 +419,8 @@ weight: 5
 
 **ColliderBit name:** ATLAS_13TeV_4LEP_139invfb
 
+**Coded by:** ['Anders Kvellestad', 'Victor Ananyev']
+
 **Energy:** 13.0 TeV
 
 **Luminosity:** 139.0 fb$^-1$
@@ -420,6 +442,8 @@ weight: 5
 **arXiv:** [2108.07586](https://arxiv.org/abs/2108.07586)
 
 **ColliderBit name:** ATLAS_13TeV_2BoostedBosons_139invfb
+
+**Coded by:** ['Are Raklev']
 
 **Energy:** 13.0 TeV
 
@@ -583,6 +607,8 @@ weight: 5
 
 **ColliderBit name:** ATLAS_13TeV_PhotonGGM_36invfb
 
+**Coded by:** ['Martin White']
+
 **Energy:** 13.0 TeV
 
 **Luminosity:** 36.1 fb$^-1$
@@ -629,6 +655,8 @@ weight: 5
 
 **ColliderBit name:** ATLAS_13TeV_PhotonGGM_1Photon_139invfb
 
+**Coded by:** ['Anders Kvellestad']
+
 **Energy:** 13.0 TeV
 
 **Luminosity:** 36.1 fb$^-1$
@@ -650,6 +678,8 @@ weight: 5
 **arXiv:** [2106.14246](https://arxiv.org/abs/2106.14246)
 
 **ColliderBit name:** CMS_13TeV_MultiLEP_137invfb
+
+**Coded by:** ['Tomas Gonzalo']
 
 **Energy:** 13.0 TeV
 
@@ -696,6 +726,8 @@ weight: 5
 **arXiv:** [2001.10086](https://arxiv.org/abs/2001.10086)
 
 **ColliderBit name:** CMS_13TeV_2SSLEP_Stop_137invfb
+
+**Coded by:** ['Yang Zhang']
 
 **Energy:** 13.0 TeV
 
@@ -764,6 +796,8 @@ weight: 5
 **arXiv:** [2012.08600](https://arxiv.org/abs/2012.08600)
 
 **ColliderBit name:** CMS_13TeV_2OSLEP_137invfb
+
+**Coded by:** ['Yang Zhang']
 
 **Energy:** 13.0 TeV
 
@@ -852,6 +886,8 @@ weight: 5
 **arXiv:** [1803.02762](https://arxiv.org/abs/1803.02762)
 
 **ColliderBit name:** ATLAS_13TeV_MultiLEP_36invfb
+
+**Coded by:** ['Rose Kudzman-Blais', 'Anders Kvellestad']
 
 **Energy:** 13.0 TeV
 
@@ -1010,6 +1046,8 @@ in proton-proton collisions at 13 TeV
 
 **ColliderBit name:** ATLAS_13TeV_4LEP_36invfb
 
+**Coded by:** ['Anders Kvellestad']
+
 **Energy:** 13.0 TeV
 
 **Luminosity:** 36.1 fb$^-1$
@@ -1076,6 +1114,8 @@ in proton-proton collisions at 13 TeV
 
 **ColliderBit name:** CMS_13TeV_2SSLEP_Stop_36invfb
 
+**Coded by:** ['Yang Zhang']
+
 **Energy:** 13.0 TeV
 
 **Luminosity:** 35.9 fb$^-1$
@@ -1119,6 +1159,8 @@ in proton-proton collisions at 13 TeV
 **arXiv:** [2102.01444](https://arxiv.org/abs/2102.01444)
 
 **ColliderBit name:** ATLAS_13TeV_2LEPStop_139invfb
+
+**Coded by:** ['Anders Kvellestad']
 
 **Energy:** 13.0 TeV
 
@@ -1166,6 +1208,8 @@ in proton-proton collisions at 13 TeV
 
 **ColliderBit name:** ATLAS_13TeV_MultiLEP_strong_139invfb
 
+**Coded by:** ['Anders Kvellestad']
+
 **Energy:** 13.0 TeV
 
 **Luminosity:** 139.0 fb$^-1$
@@ -1187,6 +1231,8 @@ in proton-proton collisions at 13 TeV
 **arXiv:** [2106.01676](https://arxiv.org/abs/2106.01676)
 
 **ColliderBit name:** ATLAS_13TeV_3LEP_139invfb
+
+**Coded by:** ['Are Raklev']
 
 **Energy:** 13.0 TeV
 
@@ -1233,6 +1279,8 @@ in proton-proton collisions at 13 TeV
 **arXiv:** [1903.07070](https://arxiv.org/abs/1903.07070)
 
 **ColliderBit name:** CMS_13TeV_2Photon_GMSB_36invfb
+
+**Coded by:** ['Anders Kvellestad']
 
 **Energy:** 13.0 TeV
 
@@ -1300,6 +1348,8 @@ in proton-proton collisions at 13 TeV
 
 **ColliderBit name:** ATLAS_13TeV_2OSLEP_Z_139invfb
 
+**Coded by:** ['Tomas Gonzalo', 'Anders Kvellestad']
+
 **Energy:** 13.0 TeV
 
 **Luminosity:** 139.0 fb$^-1$
@@ -1322,6 +1372,8 @@ in proton-proton collisions at 13 TeV
 
 **ColliderBit name:** ATLAS_13TeV_1Lep2b_139invfb
 
+**Coded by:** ['Christopher Chang']
+
 **Energy:** 13.0 TeV
 
 **Luminosity:** 139 fb$^-1$
@@ -1343,6 +1395,8 @@ in proton-proton collisions at 13 TeV
 **arXiv:** [1711.08008](https://arxiv.org/abs/1711.08008)
 
 **ColliderBit name:** CMS_13TeV_Photon_GMSB_36invfb
+
+**Coded by:** ['Yang Zhang']
 
 **Energy:** 13.0 TeV
 
