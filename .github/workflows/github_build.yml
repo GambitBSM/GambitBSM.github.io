@@ -9,9 +9,13 @@ on:
         required: true
         default: false
       repo_to_document:
-        description: 'Latest GAMBIT release repo'
+        description: 'GAMBIT public main repo'
         required: true
-        default: 'https://github.com/GambitBSM/gambit/tree/release_2.7'
+        default: 'https://github.com/GambitBSM/gambit'
+      branch:
+        description: 'Latest release'
+        required: true
+        default: 'release_2.7'
 
 jobs:
   
@@ -30,7 +34,7 @@ jobs:
       #    && cmake -B ./build -G "Unix Makefiles" --debug-find -DCMAKE_PREFIX_PATH=/usr/local/share/vcpkg/packages/inja_x64-linux/ -DCMAKE_BUILD_TYPE=MinSizeRel -DCMAKE_TOOLCHAIN_FILE=/usr/local/share/vcpkg/scripts/buildsystems/vcpkg.cmake -DCMAKE_PREFIX_PATH=/usr/local/share/vcpkg/packages/inja_x64-linux/
       #    && cmake --build ./build --config MinSizeRel
       - name: Shallow clone repo
-        run: git clone --depth 1 ${{ inputs.repo_to_document }} gambit_source
+        run: git clone --depth 1 -b ${{ inputs.branch }} ${{ inputs.repo_to_document }} gambit_source
       - name: Generate doxygen xml
         uses: mattnotmitt/doxygen-action@v1.9.4
         with:
