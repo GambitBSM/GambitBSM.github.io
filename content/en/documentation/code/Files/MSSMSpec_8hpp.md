@@ -103,7 +103,7 @@ namespace Gambit
       // IMPLEMENTATION OF MSSMSpec MEMBER FUNCTIONS FOLLOWS
       //
       // MSSMSpec this is a template class, we need these definition in the header
-      // file. It is nice to keep them seperate from the class declaration though.
+      // file. It is nice to keep them separate from the class declaration though.
       //
 
       // Set index offset from interface class
@@ -850,4 +850,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:33 +0000
+Updated on 2026-11-03 at 14:50:45 +0000

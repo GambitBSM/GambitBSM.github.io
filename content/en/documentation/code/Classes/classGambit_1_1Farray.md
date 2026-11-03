@@ -39,7 +39,7 @@ description: "[No description available]"
 |                | Name           |
 | -------------- | -------------- |
 | | **[Farray](/documentation/code/classes/classgambit_1_1farray/#function-farray)**() |
-| | **[Farray](/documentation/code/classes/classgambit_1_1farray/#function-farray)**([Farray](/documentation/code/classes/classgambit_1_1farray/)< T, lims... > & in) |
+| | **[Farray](/documentation/code/classes/classgambit_1_1farray/#function-farray)**(const [Farray](/documentation/code/classes/classgambit_1_1farray/)< T, lims... > & in) |
 | template <typename ... Args\> <br>[enable_if_all_member](/documentation/code/classes/structgambit_1_1enable__if__all__member/)< [allowed_types](/documentation/code/classes/structgambit_1_1mult__types/), T &, Args... >::type::type | **[operator()](/documentation/code/classes/classgambit_1_1farray/#function-operator)**(Args ... a) |
 | template <typename ... Args\> <br>[enable_if_all_member](/documentation/code/classes/structgambit_1_1enable__if__all__member/)< [allowed_types](/documentation/code/classes/structgambit_1_1mult__types/), constT &, Args... >::type::type | **[operator()](/documentation/code/classes/classgambit_1_1farray/#function-operator)**(Args ... a) const |
 | [Farray](/documentation/code/classes/classgambit_1_1farray/)< T, lims... > & | **[operator=](/documentation/code/classes/classgambit_1_1farray/#function-operator)**(const [Farray](/documentation/code/classes/classgambit_1_1farray/)< T, lims... > & orig) |
@@ -94,7 +94,7 @@ inline Farray()
 
 ```
 inline Farray(
-    Farray< T, lims... > & in
+    const Farray< T, lims... > & in
 )
 ```
 
@@ -157,4 +157,4 @@ T[nElem::val] array;
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:31 +0000
+Updated on 2026-11-03 at 14:50:42 +0000

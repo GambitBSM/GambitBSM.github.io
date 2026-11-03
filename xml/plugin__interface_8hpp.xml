@@ -11,6 +11,7 @@
     <includes refid="plugin__loader_8hpp" local="yes">gambit/ScannerBit/plugin_loader.hpp</includes>
     <includes refid="printer__interface_8hpp" local="yes">gambit/ScannerBit/printer_interface.hpp</includes>
     <includes refid="type__index_8hpp" local="yes">gambit/Utils/type_index.hpp</includes>
+    <includedby refid="ais_8cpp" local="yes">ais.cpp</includedby>
     <includedby refid="plugin_8hpp" local="yes">plugin.hpp</includedby>
     <includedby refid="plugin__factory_8hpp" local="yes">plugin_factory.hpp</includedby>
     <includedby refid="scan_8cpp" local="yes">scan.cpp</includedby>
@@ -622,10 +623,10 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="3">
+      <node id="4">
         <label>plugin_factory.hpp</label>
         <link refid="plugin__factory_8hpp"/>
-        <childnode refid="4" relation="include">
+        <childnode refid="5" relation="include">
         </childnode>
       </node>
       <node id="1">
@@ -639,16 +640,22 @@
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
       </node>
-      <node id="2">
+      <node id="3">
         <label>plugin.hpp</label>
         <link refid="plugin_8hpp"/>
       </node>
-      <node id="4">
+      <node id="5">
         <label>scan.cpp</label>
         <link refid="scan_8cpp"/>
       </node>
-      <node id="5">
+      <node id="2">
+        <label>ais.cpp</label>
+        <link refid="ais_8cpp"/>
+      </node>
+      <node id="6">
         <label>twalk.cpp</label>
         <link refid="twalk_8cpp"/>
       </node>
@@ -847,7 +854,7 @@
 <codeline lineno="176"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal">...<sp/>args&gt;</highlight></codeline>
 <codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>operator()(args&amp;...<sp/>params)<sp/>-&gt;<sp/></highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1Scanner_1_1find__variadic__type" kindref="compound">find_variadic_type</ref><sp/>&lt;void<sp/>(args...),<sp/>T...&gt;::ret_type</highlight></codeline>
 <codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static_assert</highlight><highlight class="normal">(<ref refid="structGambit_1_1Scanner_1_1find__variadic__type" kindref="compound">find_variadic_type</ref><sp/>&lt;void<sp/>(args...),<sp/>T...&gt;::value,<sp/></highlight><highlight class="stringliteral">&quot;\n\033[00;31;1mPlugin<sp/>Interface:<sp/><sp/>Entered<sp/>argument<sp/>types<sp/>do<sp/>not<sp/>match<sp/>any<sp/>of<sp/>the<sp/>plugin<sp/>mains&apos;<sp/>argument<sp/>types.\033[00m\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static_assert</highlight><highlight class="normal">(<ref refid="structGambit_1_1Scanner_1_1find__variadic__type" kindref="compound">find_variadic_type</ref><sp/>&lt;void<sp/>(args...),<sp/>T...&gt;::value,<sp/></highlight><highlight class="stringliteral">&quot;\n\u001B[00;31;1mPlugin<sp/>Interface:<sp/><sp/>Entered<sp/>argument<sp/>types<sp/>do<sp/>not<sp/>match<sp/>any<sp/>of<sp/>the<sp/>plugin<sp/>mains&apos;<sp/>argument<sp/>types.\u001B[00m\n&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1Scanner_1_1Plugins_1_1Plugin__Main__Interface__Base" kindref="compound">Plugin_Main_Interface_Base</ref>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/><ref refid="structGambit_1_1Scanner_1_1find__variadic__type" kindref="compound">find_variadic_type</ref><sp/>&lt;void<sp/>(args...),<sp/>T...&gt;::func_type&gt;::operator()(params...);</highlight></codeline>
 <codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>

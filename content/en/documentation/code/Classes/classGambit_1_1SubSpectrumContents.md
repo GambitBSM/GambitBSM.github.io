@@ -20,7 +20,7 @@ Inherited by [Gambit::SpectrumContents::DMEFT](/documentation/code/classes/struc
 |                | Name           |
 | -------------- | -------------- |
 | std::string | **[getName](/documentation/code/classes/classgambit_1_1subspectrumcontents/#function-getname)**() const |
-| std::vector< [SpectrumParameter](/documentation/code/classes/classgambit_1_1spectrumparameter/) > | **[all_parameters](/documentation/code/classes/classgambit_1_1subspectrumcontents/#function-all-parameters)**() const<br>Function to retreive all parameters.  |
+| std::vector< [SpectrumParameter](/documentation/code/classes/classgambit_1_1spectrumparameter/) > | **[all_parameters](/documentation/code/classes/classgambit_1_1subspectrumcontents/#function-all-parameters)**() const<br>Function to retrieve all parameters.  |
 | std::vector< [SpectrumParameter](/documentation/code/classes/classgambit_1_1spectrumparameter/) > | **[all_parameters_with_tag](/documentation/code/classes/classgambit_1_1subspectrumcontents/#function-all-parameters-with-tag)**([Par::Tags](/documentation/code/namespaces/namespacegambit_1_1par/#enum-tags) tag) const<br>Function to retreive all parameters matching a certain tag.  |
 | std::vector< [SpectrumParameter](/documentation/code/classes/classgambit_1_1spectrumparameter/) > | **[all_parameters_with_tag_and_shape](/documentation/code/classes/classgambit_1_1subspectrumcontents/#function-all-parameters-with-tag-and-shape)**([Par::Tags](/documentation/code/namespaces/namespacegambit_1_1par/#enum-tags) tag, std::vector< int > & shape) const<br>Function to retrieve all parameters matching a certain tag and shape.  |
 | std::vector< [SpectrumParameter](/documentation/code/classes/classgambit_1_1spectrumparameter/) > | **[all_BSM_parameters](/documentation/code/classes/classgambit_1_1subspectrumcontents/#function-all-bsm-parameters)**() const<br>Function to retrieve all parameters whose blockName is not SMINPUTS, YUKAWA, CKMBLOCK, or empty.  |
@@ -48,7 +48,7 @@ inline std::string getName() const
 std::vector< SpectrumParameter > all_parameters() const
 ```
 
-Function to retreive all parameters. 
+Function to retrieve all parameters. 
 
 ### function all_parameters_with_tag
 
@@ -123,4 +123,4 @@ Set the name of this Contents object (i.e. the name of the model to which this s
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:31 +0000
+Updated on 2026-11-03 at 14:50:42 +0000

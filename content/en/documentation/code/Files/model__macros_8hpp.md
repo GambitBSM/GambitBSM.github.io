@@ -22,6 +22,7 @@ description: "[No description available]"
 |  | **[START_MODEL](/documentation/code/files/model__macros_8hpp/#define-start-model)**  |
 |  | **[DEFINEPARS](/documentation/code/files/model__macros_8hpp/#define-definepars)**(...)  |
 |  | **[MAP_TO_CAPABILITY](/documentation/code/files/model__macros_8hpp/#define-map-to-capability)**(PARAMETER, CAPABILITY)  |
+|  | **[MODEL_CONSISTENCY_CHECK](/documentation/code/files/model__macros_8hpp/#define-model-consistency-check)**(FUNC)  |
 |  | **[INTERPRET_AS_X_FUNCTION](/documentation/code/files/model__macros_8hpp/#define-interpret-as-x-function)**(MODEL_X, FUNC)  |
 |  | **[INTERPRET_AS_PARENT_FUNCTION](/documentation/code/files/model__macros_8hpp/#define-interpret-as-parent-function)**(FUNC)  |
 |  | **[INTERPRET_AS_X_DEPENDENCY](/documentation/code/files/model__macros_8hpp/#define-interpret-as-x-dependency)**(MODEL_X, DEP, TYPE)  |
@@ -50,11 +51,13 @@ description: "[No description available]"
 |  | **[CLASSLOAD_NEEDED](/documentation/code/files/model__macros_8hpp/#define-classload-needed)**(...)  |
 |  | **[ALLOW_MODELS](/documentation/code/files/model__macros_8hpp/#define-allow-models)**(...)  |
 |  | **[MAKE_PRIMARY_MODEL_FUNCTOR](/documentation/code/files/model__macros_8hpp/#define-make-primary-model-functor)**(FUNCTION, CAPABILITY, ORIGIN)  |
+|  | **[MODULE_MODEL_CONSISTENCY_CHECK](/documentation/code/files/model__macros_8hpp/#define-module-model-consistency-check)**(FUNC) <br>"In module" version of the MODEL_CONSISTENCY_CHECK macro  |
 |  | **[MODULE_INTERPRET_AS_X_FUNCTION](/documentation/code/files/model__macros_8hpp/#define-module-interpret-as-x-function)**(MODEL_X, FUNC) <br>"In module" version of the INTERPRET_AS_X_FUNCTION macro  |
 |  | **[MODULE_INTERPRET_AS_X_DEPENDENCY](/documentation/code/files/model__macros_8hpp/#define-module-interpret-as-x-dependency)**(MODEL_X, DEP, TYPE) <br>"In module" version of the INTERPRET_AS_X_DEPENDENCY macro  |
 |  | **[CORE_START_MODEL](/documentation/code/files/model__macros_8hpp/#define-core-start-model)**  |
 |  | **[CORE_MAP_TO_CAPABILITY](/documentation/code/files/model__macros_8hpp/#define-core-map-to-capability)**(PARAMETER, CAPABILITY)  |
 |  | **[DEFINEPAR](/documentation/code/files/model__macros_8hpp/#define-definepar)**(PARAMETER)  |
+|  | **[CORE_MODEL_CONSISTENCY_CHECK](/documentation/code/files/model__macros_8hpp/#define-core-model-consistency-check)**(MODEL, FUNC)  |
 |  | **[CORE_INTERPRET_AS_X_FUNCTION](/documentation/code/files/model__macros_8hpp/#define-core-interpret-as-x-function)**(MODEL_X, FUNC) <br>Real declaration macro for INTERPRET_AS_X functions.  |
 |  | **[INTERPRET_AS_X_FUNCTION_FULL](/documentation/code/files/model__macros_8hpp/#define-interpret-as-x-function-full)**(MODEL_X, FUNC, ADD_FRIEND) <br>Generic declaration macro for INTERPRET_AS_ functions.  |
 |  | **[CORE_INTERPRET_AS_X_DEPENDENCY](/documentation/code/files/model__macros_8hpp/#define-core-interpret-as-x-dependency)**(MODEL_X, DEP, TYPE) <br>Add a dependency to an interpret-as-X function.  |
@@ -68,6 +71,7 @@ description: "[No description available]"
 
   * Ben Farmer ([benjamin.farmer@monash.edu.au](mailto:benjamin.farmer@monash.edu.au)) 
   * Pat Scott ([patscott@physics.mcgill.ca](mailto:patscott@physics.mcgill.ca)) 
+  * Patrick Stoecker ([stoecker@physik.rwth-aachen.de](mailto:stoecker@physik.rwth-aachen.de)) 
 
 
 **Date**: 
@@ -76,6 +80,7 @@ description: "[No description available]"
   * 2013 July, Aug 
   * 2014 Jan, Nov 
   * 2015 Feb
+  * 2026 Oct
 
 
 Helper macros for model definitions.
@@ -205,6 +210,16 @@ Supplementary version of MAKE_FUNCTOR modded for primary_parameters functors.
     CAPABILITY
 )
 /* Do nothing */
+```
+
+
+### define MODEL_CONSISTENCY_CHECK
+
+```
+#define MODEL_CONSISTENCY_CHECK(
+    FUNC
+)
+MODULE_MODEL_CONSISTENCY_CHECK(FUNC)
 ```
 
 
@@ -529,6 +544,30 @@ MAKE_PRIMARY_MODEL_FUNCTOR_MAIN(FUNCTION,CAPABILITY,ORIGIN) \
 ```
 
 
+### define MODULE_MODEL_CONSISTENCY_CHECK
+
+```
+#define MODULE_MODEL_CONSISTENCY_CHECK(
+    FUNC
+)
+  namespace Gambit                                                             \
+  {                                                                            \
+    namespace Models                                                           \
+    {                                                                          \
+      namespace MODEL                                                          \
+      {                                                                        \
+        /* Declare the user-defined function as defined elsewhere */           \
+        extern bool FUNC (const ModelParameters&);                             \
+      }                                                                        \
+    }                                                                          \
+  }                                                                            \
+```
+
+"In module" version of the MODEL_CONSISTENCY_CHECK macro 
+
+"Rollcall" macros. These are lifted straight from [module_macros_incore.hpp](/documentation/code/files/module__macros__incore_8hpp/#file-elements-module-macros-incore-hpp) but are modified here and there to suit the role of models. 
+
+
 ### define MODULE_INTERPRET_AS_X_FUNCTION
 
 ```
@@ -567,9 +606,6 @@ MAKE_PRIMARY_MODEL_FUNCTOR_MAIN(FUNCTION,CAPABILITY,ORIGIN) \
 ```
 
 "In module" version of the INTERPRET_AS_X_FUNCTION macro 
-
-"Rollcall" macros. These are lifted straight from [module_macros_incore.hpp](/documentation/code/files/module__macros__incore_8hpp/#file-elements-module-macros-incore-hpp) but are modified here and there to suit the role of models. 
-
 
 ### define MODULE_INTERPRET_AS_X_DEPENDENCY
 
@@ -631,6 +667,32 @@ Tells the core that the current parameter corresponds to the specified CAPABILIT
 
 
 Macro to define parameter. Does not create a corresponding CAPABILITY; use MAP_TO_CAPABILITY to do this after calling [DEFINEPAR(S)](/documentation/code/files/model__macros_8hpp/#define-definepar). 
+
+
+### define CORE_MODEL_CONSISTENCY_CHECK
+
+```
+#define CORE_MODEL_CONSISTENCY_CHECK(
+    MODEL,
+    FUNC
+)
+  namespace Gambit                                                             \
+  {                                                                            \
+    namespace Models                                                           \
+    {                                                                          \
+      namespace MODEL                                                          \
+      {                                                                        \
+        /* Prototype the user-defined function */                              \
+        bool FUNC (const ModelParameters&);                                    \
+                                                                               \
+        int model_validation_registered = register_model_validation_function(  \
+          STRINGIFY(MODEL),                                                    \
+          FUNC                                                                 \
+        );                                                                     \
+      }                                                                        \
+    }                                                                          \
+  }                                                                            \
+```
 
 
 ### define CORE_INTERPRET_AS_X_FUNCTION
@@ -715,6 +777,10 @@ Macro to easily get the Pipes for an INTERPRET_AS_X function, for retrieving dep
 ///  \date 2014 Jan, Nov
 ///  \date 2015 Feb
 ///
+///  \author Patrick Stoecker
+///          (stoecker@physik.rwth-aachen.de)
+///  \date 2026 Oct
+///
 ///  *********************************************
 
 #ifndef __model_macros_hpp__
@@ -725,6 +791,7 @@ Macro to easily get the Pipes for an INTERPRET_AS_X function, for retrieving dep
 #include "gambit/Utils/util_macros.hpp"
 #include "gambit/Utils/boost_fallbacks.hpp"
 #include "gambit/Elements/ini_functions.hpp"
+#include "gambit/Utils/model_validation.hpp"
 
 #include <boost/preprocessor/seq/for_each.hpp>
 
@@ -735,6 +802,7 @@ Macro to easily get the Pipes for an INTERPRET_AS_X function, for retrieving dep
   #endif
   #define START_MODEL                                             CORE_START_MODEL
   #define DEFINEPARS(...)                                         CORE_DEFINEPARS(__VA_ARGS__)
+  #define MODEL_CONSISTENCY_CHECK(FUNC)                           CORE_MODEL_CONSISTENCY_CHECK(MODEL,FUNC)
   #define MAP_TO_CAPABILITY(PARAMETER,CAPABILITY)                 CORE_MAP_TO_CAPABILITY(PARAMETER,CAPABILITY)
   #define INTERPRET_AS_X_FUNCTION(MODEL_X,FUNC)                   CORE_INTERPRET_AS_X_FUNCTION(MODEL_X,FUNC)
   #define INTERPRET_AS_PARENT_FUNCTION(FUNC)                      CORE_INTERPRET_AS_PARENT_FUNCTION(FUNC)
@@ -776,6 +844,7 @@ Macro to easily get the Pipes for an INTERPRET_AS_X function, for retrieving dep
   #define START_MODEL                                       /* Do nothing */
   #define DEFINEPARS(...)                                   /* Do nothing */
   #define MAP_TO_CAPABILITY(PARAMETER,CAPABILITY)           /* Do nothing */
+  #define MODEL_CONSISTENCY_CHECK(FUNC)                     MODULE_MODEL_CONSISTENCY_CHECK(FUNC)
   #define INTERPRET_AS_X_FUNCTION(MODEL_X,FUNC)             MODULE_INTERPRET_AS_X_FUNCTION(MODEL_X,FUNC)
   #define INTERPRET_AS_PARENT_FUNCTION(FUNC)                MODULE_INTERPRET_AS_X_FUNCTION(PARENT,FUNC)
   #define INTERPRET_AS_X_DEPENDENCY(MODEL_X, DEP, TYPE)     MODULE_INTERPRET_AS_X_DEPENDENCY(MODEL_X, DEP, TYPE)
@@ -824,6 +893,20 @@ Macro to easily get the Pipes for an INTERPRET_AS_X function, for retrieving dep
 //  ****************************************************************************
 /// "Rollcall" macros. These are lifted straight from module_macros_incore.hpp
 /// but are modified here and there to suit the role of models.
+
+/// "In module" version of the MODEL_CONSISTENCY_CHECK macro
+#define MODULE_MODEL_CONSISTENCY_CHECK(FUNC)                                   \
+  namespace Gambit                                                             \
+  {                                                                            \
+    namespace Models                                                           \
+    {                                                                          \
+      namespace MODEL                                                          \
+      {                                                                        \
+        /* Declare the user-defined function as defined elsewhere */           \
+        extern bool FUNC (const ModelParameters&);                             \
+      }                                                                        \
+    }                                                                          \
+  }                                                                            \
 
 /// "In module" version of the INTERPRET_AS_X_FUNCTION macro
 #define MODULE_INTERPRET_AS_X_FUNCTION(MODEL_X,FUNC)                           \
@@ -883,8 +966,12 @@ Macro to easily get the Pipes for an INTERPRET_AS_X function, for retrieving dep
         /* Add the model to GAMBIT model database */                           \
         int model_rego = add_model(STRINGIFY(MODEL), STRINGIFY(PARENT));       \
                                                                                \
-        /* Functor's actual "calculate" function.  Doesn't do anything. */     \
-        void primary_parameters (ModelParameters&) {}                          \
+        /* Functor's actual "calculate" function. */                           \
+        void primary_parameters (ModelParameters& model_parameters)            \
+        {                                                                      \
+          const auto& mvh = ModelValidationHandler::getInstance();             \
+          mvh.runModelValidation(model_parameters);                            \
+        }                                                                      \
                                                                                \
         /* Wrap it up in a primary_model_functor */                            \
         MAKE_PRIMARY_MODEL_FUNCTOR(primary_parameters, CAT(MODEL,_parameters), \
@@ -1000,6 +1087,24 @@ Macro to easily get the Pipes for an INTERPRET_AS_X function, for retrieving dep
   BOOST_PP_SEQ_FOR_EACH(DO_LINK, _, BOOST_PP_TUPLE_TO_SEQ((__VA_ARGS__)))
 #define DO_LINK(r,data,elem) DEFINEPAR(elem)
 /// @}
+
+#define CORE_MODEL_CONSISTENCY_CHECK(MODEL,FUNC)                               \
+  namespace Gambit                                                             \
+  {                                                                            \
+    namespace Models                                                           \
+    {                                                                          \
+      namespace MODEL                                                          \
+      {                                                                        \
+        /* Prototype the user-defined function */                              \
+        bool FUNC (const ModelParameters&);                                    \
+                                                                               \
+        int model_validation_registered = register_model_validation_function(  \
+          STRINGIFY(MODEL),                                                    \
+          FUNC                                                                 \
+        );                                                                     \
+      }                                                                        \
+    }                                                                          \
+  }                                                                            \
 
 /// Real declaration macro for INTERPRET_AS_X functions.
 #define CORE_INTERPRET_AS_X_FUNCTION(MODEL_X,FUNC)                             \
@@ -1138,4 +1243,4 @@ Macro to easily get the Pipes for an INTERPRET_AS_X function, for retrieving dep
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:34 +0000
+Updated on 2026-11-03 at 14:50:46 +0000

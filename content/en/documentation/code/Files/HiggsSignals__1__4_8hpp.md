@@ -169,7 +169,7 @@ LOAD_LIBRARY
  * to the modules via the rollcall system */
 
 /* Syntax for BE_FUNCTION:
- * BE_FUNCTION([choose function name], [type], [arguement types], "[exact symbol name]", "[choose capability name]") */
+ * BE_FUNCTION([choose function name], [type], [argument types], "[exact symbol name]", "[choose capability name]") */
 
 BE_FUNCTION(initialize_HiggsSignals, void, (int&, int&, const char*), "initialize_higgssignals_", "initialize_HiggsSignals")
 BE_FUNCTION(initialize_HiggsSignals_latestresults, void, (int&, int&), "initialize_higgssignals_latestresults_", "initialize_HiggsSignals_latestresults")
@@ -199,4 +199,4 @@ BE_FUNCTION(HiggsBounds_charged_input_HS, void, (double*, double*, double*, doub
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:36 +0000
+Updated on 2026-11-03 at 14:50:48 +0000

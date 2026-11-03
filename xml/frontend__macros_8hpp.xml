@@ -11,7 +11,7 @@
     <includedby refid="AlterBBN__2__2_8cpp" local="yes">AlterBBN_2_2.cpp</includedby>
     <includedby refid="CalcHEP__3__6__27_8cpp" local="yes">CalcHEP_3_6_27.cpp</includedby>
     <includedby refid="CaptnGeneral__2__1_8cpp" local="yes">CaptnGeneral_2_1.cpp</includedby>
-    <includedby refid="Contur__2__1__1_8cpp" local="yes">Contur_2_1_1.cpp</includedby>
+    <includedby refid="Contur__3__0__0_8cpp" local="yes">Contur_3_0_0.cpp</includedby>
     <includedby refid="DDCalc__1__0__0_8cpp" local="yes">DDCalc_1_0_0.cpp</includedby>
     <includedby refid="DDCalc__1__1__0_8cpp" local="yes">DDCalc_1_1_0.cpp</includedby>
     <includedby refid="DDCalc__1__2__0_8cpp" local="yes">DDCalc_1_2_0.cpp</includedby>
@@ -53,7 +53,7 @@
     <includedby refid="MontePythonLike__3__5__0_8cpp" local="yes">MontePythonLike_3_5_0.cpp</includedby>
     <includedby refid="MultiModeCode__2__0__0_8cpp" local="yes">MultiModeCode_2_0_0.cpp</includedby>
     <includedby refid="Prospino__2__1_8cpp" local="yes">Prospino_2_1.cpp</includedby>
-    <includedby refid="Rivet__3__1__5_8cpp" local="yes">Rivet_3_1_5.cpp</includedby>
+    <includedby refid="Rivet__4__1__0_8cpp" local="yes">Rivet_4_1_0.cpp</includedby>
     <includedby refid="SPheno__3__3__8_8cpp" local="yes">SPheno_3_3_8.cpp</includedby>
     <includedby refid="SPheno__4__0__3_8cpp" local="yes">SPheno_4_0_3.cpp</includedby>
     <includedby refid="SUSYHD__1__0__2_8cpp" local="yes">SUSYHD_1_0_2.cpp</includedby>
@@ -78,7 +78,7 @@
     <includedby refid="simple__xs__1__0_8cpp" local="yes">simple_xs_1_0.cpp</includedby>
     <includedby refid="xsecBE__1__0__2_8cpp" local="yes">xsecBE_1_0_2.cpp</includedby>
     <incdepgraph>
-      <node id="111">
+      <node id="112">
         <label>gambit/Backends/backend_info.hpp</label>
         <link refid="backend__info_8hpp"/>
         <childnode refid="8" relation="include">
@@ -90,10 +90,10 @@
         <childnode refid="61" relation="include">
         </childnode>
       </node>
-      <node id="110">
+      <node id="111">
         <label>gambit/Backends/backend_singleton.hpp</label>
         <link refid="backend__singleton_8hpp"/>
-        <childnode refid="111" relation="include">
+        <childnode refid="112" relation="include">
         </childnode>
       </node>
       <node id="77">
@@ -105,9 +105,9 @@
         </childnode>
         <childnode refid="71" relation="include">
         </childnode>
-        <childnode refid="118" relation="include">
+        <childnode refid="116" relation="include">
         </childnode>
-        <childnode refid="119" relation="include">
+        <childnode refid="117" relation="include">
         </childnode>
         <childnode refid="73" relation="include">
         </childnode>
@@ -127,101 +127,87 @@
         </childnode>
         <childnode refid="77" relation="include">
         </childnode>
-        <childnode refid="120" relation="include">
+        <childnode refid="118" relation="include">
         </childnode>
-        <childnode refid="110" relation="include">
+        <childnode refid="111" relation="include">
         </childnode>
       </node>
-      <node id="120">
+      <node id="118">
         <label>gambit/Backends/interoperability.hpp</label>
         <link refid="interoperability_8hpp"/>
-        <childnode refid="121" relation="include">
+        <childnode refid="119" relation="include">
         </childnode>
-        <childnode refid="122" relation="include">
+        <childnode refid="120" relation="include">
         </childnode>
-        <childnode refid="124" relation="include">
+        <childnode refid="123" relation="include">
         </childnode>
       </node>
-      <node id="121">
+      <node id="119">
         <label>gambit/Backends/interoperability_macros.hpp</label>
         <link refid="interoperability__macros_8hpp"/>
       </node>
-      <node id="123">
+      <node id="121">
         <label>gambit/Backends/mathematica_function.hpp</label>
         <link refid="mathematica__function_8hpp"/>
         <childnode refid="109" relation="include">
         </childnode>
         <childnode refid="53" relation="include">
         </childnode>
-        <childnode refid="110" relation="include">
+        <childnode refid="111" relation="include">
         </childnode>
         <childnode refid="55" relation="include">
         </childnode>
-        <childnode refid="112" relation="include">
+        <childnode refid="122" relation="include">
         </childnode>
       </node>
-      <node id="122">
+      <node id="120">
         <label>gambit/Backends/mathematica_macros.hpp</label>
         <link refid="mathematica__macros_8hpp"/>
         <childnode refid="55" relation="include">
         </childnode>
         <childnode refid="20" relation="include">
         </childnode>
-        <childnode refid="123" relation="include">
-        </childnode>
-        <childnode refid="108" relation="include">
+        <childnode refid="121" relation="include">
         </childnode>
       </node>
-      <node id="108">
-        <label>gambit/Backends/mathematica_variable.hpp</label>
-        <link refid="mathematica__variable_8hpp"/>
-        <childnode refid="109" relation="include">
-        </childnode>
-        <childnode refid="110" relation="include">
-        </childnode>
-        <childnode refid="55" relation="include">
-        </childnode>
-        <childnode refid="112" relation="include">
-        </childnode>
-      </node>
-      <node id="125">
+      <node id="124">
         <label>gambit/Backends/python_function.hpp</label>
         <link refid="python__function_8hpp"/>
         <childnode refid="55" relation="include">
         </childnode>
         <childnode refid="109" relation="include">
         </childnode>
-        <childnode refid="114" relation="include">
-        </childnode>
         <childnode refid="110" relation="include">
         </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
       </node>
-      <node id="114">
+      <node id="110">
         <label>gambit/Backends/python_helpers.hpp</label>
         <link refid="python__helpers_8hpp"/>
       </node>
-      <node id="124">
+      <node id="123">
         <label>gambit/Backends/python_macros.hpp</label>
         <link refid="python__macros_8hpp"/>
         <childnode refid="55" relation="include">
         </childnode>
         <childnode refid="20" relation="include">
         </childnode>
-        <childnode refid="125" relation="include">
+        <childnode refid="124" relation="include">
         </childnode>
-        <childnode refid="113" relation="include">
+        <childnode refid="108" relation="include">
         </childnode>
       </node>
-      <node id="113">
+      <node id="108">
         <label>gambit/Backends/python_variable.hpp</label>
         <link refid="python__variable_8hpp"/>
         <childnode refid="55" relation="include">
         </childnode>
         <childnode refid="109" relation="include">
         </childnode>
-        <childnode refid="114" relation="include">
-        </childnode>
         <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
         </childnode>
       </node>
       <node id="99">
@@ -455,8 +441,6 @@
         </childnode>
         <childnode refid="113" relation="include">
         </childnode>
-        <childnode refid="115" relation="include">
-        </childnode>
       </node>
       <node id="89">
         <label>gambit/Elements/slhaea_spec_helpers.hpp</label>
@@ -547,9 +531,9 @@
         <link refid="types__rollcall_8hpp"/>
         <childnode refid="79" relation="include">
         </childnode>
-        <childnode refid="116" relation="include">
+        <childnode refid="114" relation="include">
         </childnode>
-        <childnode refid="117" relation="include">
+        <childnode refid="115" relation="include">
         </childnode>
       </node>
       <node id="105">
@@ -907,7 +891,7 @@
       <node id="57">
         <label>boost/algorithm/string/classification.hpp</label>
       </node>
-      <node id="112">
+      <node id="122">
         <label>boost/algorithm/string/replace.hpp</label>
       </node>
       <node id="56">
@@ -952,7 +936,7 @@
       <node id="72">
         <label>boost/preprocessor/repetition/enum.hpp</label>
       </node>
-      <node id="119">
+      <node id="117">
         <label>boost/preprocessor/seq/for_each.hpp</label>
       </node>
       <node id="73">
@@ -961,7 +945,7 @@
       <node id="32">
         <label>boost/preprocessor/seq/size.hpp</label>
       </node>
-      <node id="118">
+      <node id="116">
         <label>boost/preprocessor/seq/transform.hpp</label>
       </node>
       <node id="33">
@@ -1009,13 +993,13 @@
       <node id="44">
         <label>fstream</label>
       </node>
-      <node id="115">
+      <node id="113">
         <label>gambit/Backends/backend_types_rollcall.hpp</label>
       </node>
-      <node id="116">
+      <node id="114">
         <label>gambit/Elements/module_types_rollcall.hpp</label>
       </node>
-      <node id="117">
+      <node id="115">
         <label>gambit/Models/model_types_rollcall.hpp</label>
       </node>
       <node id="55">
@@ -1245,8 +1229,8 @@
         <link refid="CaptnGeneral__2__1_8cpp"/>
       </node>
       <node id="7">
-        <label>Contur_2_1_1.cpp</label>
-        <link refid="Contur__2__1__1_8cpp"/>
+        <label>Contur_3_0_0.cpp</label>
+        <link refid="Contur__3__0__0_8cpp"/>
       </node>
       <node id="8">
         <label>DDCalc_1_0_0.cpp</label>
@@ -1389,8 +1373,8 @@
         <link refid="Prospino__2__1_8cpp"/>
       </node>
       <node id="43">
-        <label>Rivet_3_1_5.cpp</label>
-        <link refid="Rivet__3__1__5_8cpp"/>
+        <label>Rivet_4_1_0.cpp</label>
+        <link refid="Rivet__4__1__0_8cpp"/>
       </node>
       <node id="44">
         <label>SPheno_3_3_8.cpp</label>
@@ -1624,7 +1608,7 @@
         <name>BACKEND_SPECIFIC_COMPILE_UNIT</name>
         <initializer>1</initializer>
         <briefdescription>
-<para>Indicate that this is all occuring in some compile unit other than the main executable. </para>
+<para>Indicate that this is all occurring in some compile unit other than the main executable. </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
@@ -1821,7 +1805,7 @@
 <codeline lineno="31"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="backend__singleton_8hpp" kindref="compound">gambit/Backends/backend_singleton.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="32"><highlight class="normal"></highlight></codeline>
 <codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="34"><highlight class="comment">///<sp/>Indicate<sp/>that<sp/>this<sp/>is<sp/>all<sp/>occuring<sp/>in<sp/>some<sp/>compile<sp/>unit<sp/>other<sp/>than<sp/>the<sp/>main<sp/>executable.</highlight></codeline>
+<codeline lineno="34"><highlight class="comment">///<sp/>Indicate<sp/>that<sp/>this<sp/>is<sp/>all<sp/>occurring<sp/>in<sp/>some<sp/>compile<sp/>unit<sp/>other<sp/>than<sp/>the<sp/>main<sp/>executable.</highlight></codeline>
 <codeline lineno="35" refid="frontend__macros_8hpp_1ae1c94bfe20de2b74718663ac1181f12c" refkind="member"><highlight class="comment"></highlight><highlight class="preprocessor">#define<sp/>BACKEND_SPECIFIC_COMPILE_UNIT<sp/>1</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="36"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="37"><highlight class="comment">///<sp/>Dependency<sp/>macro<sp/>for<sp/>point-level<sp/>backend<sp/>initialisation<sp/>functions<sp/>(in<sp/>BackendIniBit)</highlight></codeline>

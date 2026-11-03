@@ -256,7 +256,7 @@ BE_ALLOW_MODELS(MSSM63atQ, MSSM63atMGUT, MSSM63atMGUT_mG, MSSM63atQ_mG)
  * to the modules via the rollcall system */
 
 /* Syntax for BE_FUNCTION:
- * BE_FUNCTION([choose function name], [type], [arguement types], "[exact symbol name]", "[choose capability name]") */
+ * BE_FUNCTION([choose function name], [type], [argument types], "[exact symbol name]", "[choose capability name]") */
 
 
 BE_FUNCTION(FHSetFlags, void, (int&,int&,int&,int&,int&,int&,int&,int&,int&,int&), "fhsetflags_", "FHSetFlags")
@@ -322,4 +322,4 @@ BE_INI_DEPENDENCY(unimproved_MSSM_spectrum, Spectrum)   // Need MSSM spectrum in
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:36 +0000
+Updated on 2026-11-03 at 14:50:48 +0000

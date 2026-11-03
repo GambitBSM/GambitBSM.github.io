@@ -132,7 +132,7 @@ LOAD_LIBRARY
  * interface to the library functions/variables at module level. */
 
 /* Syntax for BE_FUNCTION:
- * BE_FUNCTION([choose function name], [type], [arguement types], "[exact symbol name]", "[choose capability name]")
+ * BE_FUNCTION([choose function name], [type], [argument types], "[exact symbol name]", "[choose capability name]")
  */
 
 BE_FUNCTION(initialize, void, (int), "_Z10initializei", "initialize_capability")
@@ -218,4 +218,4 @@ END_BE_INI_FUNCTION
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:36 +0000
+Updated on 2026-11-03 at 14:50:48 +0000

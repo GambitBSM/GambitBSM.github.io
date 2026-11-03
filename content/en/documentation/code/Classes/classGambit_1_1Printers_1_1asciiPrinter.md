@@ -24,7 +24,7 @@ Inherits from [Gambit::Printers::BasePrinter](/documentation/code/classes/classg
 | virtual [Options](/documentation/code/classes/classgambit_1_1options/) | **[resume_reader_options](/documentation/code/classes/classgambit_1_1printers_1_1asciiprinter/#function-resume-reader-options)**() |
 | virtual void | **[_print_metadata](/documentation/code/classes/classgambit_1_1printers_1_1asciiprinter/#function-print-metadata)**([map_str_str](/documentation/code/namespaces/namespacegambit/#typedef-map-str-str) metadata) |
 | template <typename T \> <br>void | **[_print](/documentation/code/classes/classgambit_1_1printers_1_1asciiprinter/#function-print)**(T const & , const std::string & label, const int vertexID, const uint, const ulong)<br>Print functions.  |
-| template <typename T \> <br>void | **[_print](/documentation/code/classes/classgambit_1_1printers_1_1asciiprinter/#function-print)**(T const & in, const std::string & label, const uint rank, const ulong pointID)<br>Print functions.  |
+| template <typename T \> <br>void | **[_print](/documentation/code/classes/classgambit_1_1printers_1_1asciiprinter/#function-print)**(T const & , const std::string & label, const uint rank, const ulong pointID)<br>Print functions.  |
 | template <class T \> <br>void | **[template_print](/documentation/code/classes/classgambit_1_1printers_1_1asciiprinter/#function-template-print)**(T const & value, const std::string & label, const int IDcode, const uint, const ulong)<br>Helper print functions.  |
 | template <class T \> <br>void | **[template_print_vec](/documentation/code/classes/classgambit_1_1printers_1_1asciiprinter/#function-template-print-vec)**(std::vector< T > const & value, const std::string & label, const int IDcode, const uint, const ulong)<br>Template for print functions of vectors of "simple" types.  |
 | | **[asciiPrinter](/documentation/code/classes/classgambit_1_1printers_1_1asciiprinter/#function-asciiprinter)**(const [Options](/documentation/code/classes/classgambit_1_1options/) & options, [BasePrinter](/documentation/code/classes/classgambit_1_1printers_1_1baseprinter/) *const primary =NULL)<br>TODO: proper gambit error.  |
@@ -35,6 +35,7 @@ Inherits from [Gambit::Printers::BasePrinter](/documentation/code/classes/classg
 | void | **[addtobuffer](/documentation/code/classes/classgambit_1_1printers_1_1asciiprinter/#function-addtobuffer)**(const std::vector< double > & functor_data, const std::vector< std::string > & functor_labels, const int vID, const int rank, const int pointID) |
 | void | **[dump_buffer](/documentation/code/classes/classgambit_1_1printers_1_1asciiprinter/#function-dump-buffer)**(bool force =false) |
 | std::string | **[get_output_filename](/documentation/code/classes/classgambit_1_1printers_1_1asciiprinter/#function-get-output-filename)**() |
+| std::string | **[get_base_output_filename](/documentation/code/classes/classgambit_1_1printers_1_1asciiprinter/#function-get-base-output-filename)**() |
 | int | **[get_bufferlength](/documentation/code/classes/classgambit_1_1printers_1_1asciiprinter/#function-get-bufferlength)**() |
 
 ## Additional inherited members
@@ -183,7 +184,7 @@ Print functions.
 ```
 template <typename T >
 inline void _print(
-    T const & in,
+    T const & ,
     const std::string & label,
     const uint rank,
     const ulong pointID
@@ -308,6 +309,13 @@ std::string get_output_filename()
 ```
 
 
+### function get_base_output_filename
+
+```
+std::string get_base_output_filename()
+```
+
+
 ### function get_bufferlength
 
 ```
@@ -317,4 +325,4 @@ int get_bufferlength()
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:32 +0000
+Updated on 2026-11-03 at 14:50:44 +0000

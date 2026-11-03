@@ -36,6 +36,7 @@ description: "[No description available]"
 | std::vector< std::string > | **[functionChain](/documentation/code/classes/structgambit_1_1dres_1_1observable/#variable-functionchain)** <br>Function chain to be assigned to the observable.  |
 | YAML::Node | **[subcaps](/documentation/code/classes/structgambit_1_1dres_1_1observable/#variable-subcaps)** <br>Sub-capabilities to be assigned to the observable.  |
 | bool | **[printme](/documentation/code/classes/structgambit_1_1dres_1_1observable/#variable-printme)** <br>Instruction to printer as to whether to write result to disk.  |
+| bool | **[critical](/documentation/code/classes/structgambit_1_1dres_1_1observable/#variable-critical)** <br>Allowed to invalidate a point.  |
 | bool | **[log_matches](/documentation/code/classes/structgambit_1_1dres_1_1observable/#variable-log-matches)** <br>Whether or not to log matches to the observable with functors.  |
 | bool | **[include_all](/documentation/code/classes/structgambit_1_1dres_1_1observable/#variable-include-all)** <br>Whether to return multiple functor matches.  |
 
@@ -196,6 +197,14 @@ bool printme;
 
 Instruction to printer as to whether to write result to disk. 
 
+### variable critical
+
+```
+bool critical;
+```
+
+Allowed to invalidate a point. 
+
 ### variable log_matches
 
 ```
@@ -214,4 +223,4 @@ Whether to return multiple functor matches.
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:32 +0000
+Updated on 2026-11-03 at 14:50:44 +0000

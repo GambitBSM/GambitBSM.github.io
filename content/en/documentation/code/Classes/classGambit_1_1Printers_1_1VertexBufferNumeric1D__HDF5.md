@@ -21,7 +21,7 @@ Inherits from [Gambit::Printers::VertexBufferNumeric1D< T, CHUNKLENGTH >](/docum
 | -------------- | -------------- |
 | | **[VertexBufferNumeric1D_HDF5](/documentation/code/classes/classgambit_1_1printers_1_1vertexbuffernumeric1d__hdf5/#function-vertexbuffernumeric1d-hdf5)**()<br>Constructors.  |
 | | **[VertexBufferNumeric1D_HDF5](/documentation/code/classes/classgambit_1_1printers_1_1vertexbuffernumeric1d__hdf5/#function-vertexbuffernumeric1d-hdf5)**(hid_t location_id, const std::string & name, const int vID, const unsigned int i, const bool sync, const bool silence, const bool resume, const char access) |
-| | **[~VertexBufferNumeric1D_HDF5](/documentation/code/classes/classgambit_1_1printers_1_1vertexbuffernumeric1d__hdf5/#function-vertexbuffernumeric1d-hdf5)**()<br>Destructor.  |
+| | **[~VertexBufferNumeric1D_HDF5](/documentation/code/classes/classgambit_1_1printers_1_1vertexbuffernumeric1d__hdf5/#function-vertexbuffernumeric1d-hdf5)**() |
 | virtual void | **[sync_report](/documentation/code/classes/classgambit_1_1printers_1_1vertexbuffernumeric1d__hdf5/#function-sync-report)**() |
 | virtual unsigned long | **[dset_head_pos](/documentation/code/classes/classgambit_1_1printers_1_1vertexbuffernumeric1d__hdf5/#function-dset-head-pos)**() |
 | virtual void | **[write_to_disk](/documentation/code/classes/classgambit_1_1printers_1_1vertexbuffernumeric1d__hdf5/#function-write-to-disk)**()<br>Write sync buffer to HDF5 dataset.  |
@@ -150,9 +150,12 @@ VertexBufferNumeric1D_HDF5(
 ~VertexBufferNumeric1D_HDF5()
 ```
 
-Destructor. 
 
-Destructor Make sure buffer contents are written to file when buffer object is destroyed 
+Destructor Make sure buffer contents are written to file when buffer object is destroyed
+
+Destructor. Deliberately does NOT flush the buffer to disk.
+
+Buffer objects of this type are stored by value (in the std::map<VBIDpair, BuffType> inside [H5P_LocalBufferManager](/documentation/code/classes/classgambit_1_1printers_1_1h5p__localbuffermanager/)) and are populated via the assign-from-temporary pattern at [H5P_LocalBufferManager::get_buffer](/documentation/code/classes/classgambit_1_1printers_1_1h5p__localbuffermanager/#function-get-buffer), so each buffer object's destructor runs at least once on a temporary that shares state (HDF5 dataset handles, sync counters) with the surviving container slot. Triggering [write_to_disk()](/documentation/code/classes/classgambit_1_1printers_1_1vertexbuffernumeric1d__hdf5/#function-write-to-disk) / [RA_write_to_disk()](/documentation/code/classes/classgambit_1_1printers_1_1vertexbuffernumeric1d__hdf5/#function-ra-write-to-disk) here would therefore either double-write or write through stale state, depending on which copy is being destroyed. End-of-scan flushing is handled deterministically by [HDF5Printer::flush()](/documentation/code/classes/classgambit_1_1printers_1_1hdf5printer/#function-flush) and [HDF5Printer::finalise()](/documentation/code/classes/classgambit_1_1printers_1_1hdf5printer/#function-finalise) instead, which iterate over the surviving buffers in the printer's all_buffers map. 
 
 
 ### function sync_report
@@ -327,4 +330,4 @@ virtual ulong get_dataset_length()
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:32 +0000
+Updated on 2026-11-03 at 14:50:44 +0000

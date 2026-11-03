@@ -348,7 +348,7 @@ description: "[No description available]"
 | void | **[lnL_sigmas_sigmal](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-lnl-sigmas-sigmal)**(double & result)<br>Likelihoods for spin independent nuclear parameters. Follows treatment of Cline, et. al. Phys. Rev. D. 88, 055025 (2013) Default data: sigma_s = 43 +/- 8 MeV arXiv:1112.2435v1 sigma_l = 58 +/- 9 MeV.  |
 | void | **[lnL_deltaq](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-lnl-deltaq)**(double & result)<br>Likelihoods for spin dependent nuclear parameters. Follows treatment of Akrami, et. al. JCAP04 (2011) 012. (Note that all deltaq are for proton.) Default data: a3 = deltau - deltad = 1.2723 +/- 0.0023 PDG 2015 lambda parameter from neutron beta decay a8 = deltau + deltad - 2*deltas = 0.585 +/- 0.025 [http://arxiv.org/abs/hep-ph/0001046](http://arxiv.org/abs/hep-ph/0001046) deltas = -0.09 +/- 0.03 COMPASS: [https://arxiv.org/abs/hep-ex/0609038](https://arxiv.org/abs/hep-ex/0609038).  |
 | void | **[lnL_sigmapiN_Deltas_gTs_rs2](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-lnl-sigmapin-deltas-gts-rs2)**(double & result)<br>Likelihoods for nuclear parameters (ChPT) as used in DirectDM v2.2.0 Default data: sigmapiN = 0.050 +/- 0.015 GeV Deltas = -0.035 +/- 0.009 gTs = -0.027 +/- 0.016 rs2 = -0.115 +/- 0.035 GeV^-2.  |
-| void | **[lnL_rho0_lognormal](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-lnl-rho0-lognormal)**(double & result)<br>Likelihoods for halo parameters. The likelihood for the local DM density follows a log normal distribution while for the velocities the distribution is Gaussian. For discussion of the default values for measured halo paramters and their errors, see JCAP04(2011)012.  |
+| void | **[lnL_rho0_lognormal](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-lnl-rho0-lognormal)**(double & result)<br>Likelihoods for halo parameters. The likelihood for the local DM density follows a log normal distribution while for the velocities the distribution is Gaussian. For discussion of the default values for measured halo parameters and their errors, see JCAP04(2011)012.  |
 | void | **[lnL_vrot_gaussian](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-lnl-vrot-gaussian)**(double & result) |
 | void | **[lnL_v0_gaussian](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-lnl-v0-gaussian)**(double & result) |
 | void | **[lnL_vesc_gaussian](/documentation/code/namespaces/namespacegambit_1_1darkbit/#function-lnl-vesc-gaussian)**(double & result) |
@@ -3480,7 +3480,7 @@ void lnL_rho0_lognormal(
 )
 ```
 
-Likelihoods for halo parameters. The likelihood for the local DM density follows a log normal distribution while for the velocities the distribution is Gaussian. For discussion of the default values for measured halo paramters and their errors, see JCAP04(2011)012. 
+Likelihoods for halo parameters. The likelihood for the local DM density follows a log normal distribution while for the velocities the distribution is Gaussian. For discussion of the default values for measured halo parameters and their errors, see JCAP04(2011)012. 
 
 Option rho0_obs<double>: Best fit value for local dark matter density (default .4)
 
@@ -3992,4 +3992,4 @@ static std::vector< std::string > channels {"e", "mu", "tau",
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:32 +0000
+Updated on 2026-11-03 at 14:50:43 +0000

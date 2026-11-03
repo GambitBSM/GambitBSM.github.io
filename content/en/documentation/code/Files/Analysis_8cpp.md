@@ -25,12 +25,14 @@ description: "[No description available]"
   * Andy Buckley ([mostlikelytobefound@facebook.com](mailto:mostlikelytobefound@facebook.com))
   * Anders Kvellestad ([anders.kvellestad@fys.uio.no](mailto:anders.kvellestad@fys.uio.no)) 
   * Pat Scott ([p.scott@imperial.ac.uk](mailto:p.scott@imperial.ac.uk)) 
+  * Tomas Gonzalo ([tomas.gonzalo@kit.edu](mailto:tomas.gonzalo@kit.edu)) 
 
 
 **Date**: 
 
   * often
   * 2019 Feb
+  * 2023 Aug
 
 
 Class for ColliderBit analyses.
@@ -75,6 +77,10 @@ Authors (add name and date if you modify):
 ///          (p.scott@imperial.ac.uk)
 ///  \date 2019 Feb
 ///
+///  \author Tomas Gonzalo
+///          (tomas.gonzalo@kit.edu)
+///  \date 2023 Aug
+///
 ///  *********************************************
 
 #include <vector>
@@ -90,7 +96,11 @@ namespace Gambit
                          , _luminosity_is_set(false)
                          , _is_scaled(false)
                          , _needs_collection(true)
-                         { }
+                         , _collider_name("")
+                         , _counters(_results._counters)
+    {
+      // _counters = _results._counters;
+    }
 
     /// Public method to reset this instance for reuse, avoiding the need for "new" or "delete".
     void Analysis::reset()
@@ -115,7 +125,12 @@ namespace Gambit
     double Analysis::luminosity() const { return _luminosity; }
 
     /// Set the integrated luminosity.
-    void Analysis::set_luminosity(double lumi) { _luminosity_is_set = true; _luminosity = lumi; }
+    void Analysis::set_luminosity(double lumi)
+    {
+      _luminosity_is_set = true;
+      _luminosity = lumi;
+      _results.luminosity = lumi;
+    }
 
     /// Set the analysis name
     void Analysis::set_analysis_name(str aname)
@@ -127,6 +142,26 @@ namespace Gambit
     /// Get the analysis name
     str Analysis::analysis_name() { return _analysis_name; }
 
+    /// Set the detector name
+    void Analysis::set_detector_name(str detname)
+    {
+      _detector_name = detname;
+      _results.detector_name = _detector_name;
+    }
+
+    /// Get the detector name
+    str Analysis::detector_name() { return _detector_name; }
+
+    /// Set the collider name
+    void Analysis::set_collider_name(str collname)
+    {
+      _collider_name = collname;
+      _results.collider_name = _collider_name;
+    }
+
+    /// Get the collider name
+    str Analysis::collider_name() { return _collider_name; }
+
     /// Get the collection of SignalRegionData for likelihood computation.
     const AnalysisData& Analysis::get_results()
     {
@@ -135,6 +170,32 @@ namespace Gambit
         collect_results();
         _needs_collection = false;
       }
+
+      // Collect the SR names for all SRs that have been added to _results
+      std::vector<std::string> SRs_in_results;
+      SRs_in_results.reserve(_results.srdata_identifiers.size());
+      for (auto const& kv : _results.srdata_identifiers)
+      {
+       SRs_in_results.push_back(kv.first);
+      }
+
+      // In _results, clear the EventCounter::_event_acceptance_record
+      // vector for each SR that has not been added to _result.
+      // (Reminder: _counters is a reference to _results._counters.)
+      for (auto& kv : _counters)
+      {
+        const str& SR_name = kv.first;
+        EventCounter& counter = kv.second;
+        if (counter.store_accepted_event_IDs())
+        {
+          // If SR_name not in SRs_in_results, clear the event acceptance record
+          if (std::find(SRs_in_results.begin(), SRs_in_results.end(), SR_name) == SRs_in_results.end())
+          {
+            counter.clear_event_acceptance_record();
+          }
+        }
+      }
+
       return _results;
     }
 
@@ -171,9 +232,21 @@ namespace Gambit
     /// Add the given result to the internal results list.
     void Analysis::add_result(const SignalRegionData& sr) { _results.add(sr); }
 
+    /// Get the cutflows
+    const Cutflows& Analysis::get_cutflows()
+    {
+      return _results.cutflows;
+    }
+
+    /// Add cutflows to the internal results list
+    void Analysis::add_cutflows(const Cutflows& cf)
+    {
+      _results.add_cutflows(cf);
+    }
+
     /// Set the path to the FullLikes BKG file
     void Analysis::set_bkgjson(const std::string& bkgpath)
-    { 
+    {
       _results.bkgjson_path = bkgpath;
     }
 
@@ -210,7 +283,12 @@ namespace Gambit
     void Analysis::add(Analysis* other)
     {
       if (_results.empty()) collect_results();
-      if (this == other) return;
+      if (this == other)
+      {
+        _cutflows.combine(other->get_cutflows());
+        _results.add_cutflows(_cutflows);
+        return;
+      }
       const AnalysisData otherResults = other->get_results();
       /// @todo Access by name, including merging disjoint region sets?
       assert(otherResults.size() == _results.size());
@@ -218,8 +296,30 @@ namespace Gambit
       {
         _results[i].combine_SR_MC_signal(otherResults[i]);
       }
-      combine(other);
+
+      for (auto& kv : _counters)
+      {
+        // kv.first (key) is the SR name
+        // kv.second (value) is the EventCounter instance
+        kv.second += other->_counters.at(kv.first);
+      }
+
+      _cutflows.combine(other->get_cutflows());
+      _results.add_cutflows(_cutflows);
+
     }
+
+    /// Set the store_accepted_event_IDs bool for the EventCounter instances in this analysis
+    void Analysis::set_store_accepted_event_IDs(bool setting)
+    {
+      for (auto& kv : _counters)
+      {
+        // kv.first (key) is the SR name
+        // kv.second (value) is the EventCounter instance
+        kv.second.set_store_accepted_event_IDs(setting);
+      }
+    }
+
 
   }
 }
@@ -228,4 +328,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:35 +0000
+Updated on 2026-11-03 at 14:50:47 +0000

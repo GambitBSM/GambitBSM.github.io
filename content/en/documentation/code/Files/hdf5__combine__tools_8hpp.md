@@ -294,7 +294,7 @@ namespace Gambit
                 template <typename U>
                 static void run (U, hid_t &dataset_out, hid_t &dataset2_out, std::vector<hid_t> &datasets, std::vector<hid_t> &datasets2, const unsigned long long size, const std::unordered_map<PPIDpair, unsigned long long, PPIDHash, PPIDEqual>& RA_write_hash, const std::vector<std::vector <unsigned long long> > &pointid, const std::vector<std::vector <unsigned long long> > &rank, const std::vector<unsigned long long> &aux_sizes, hid_t &/*old_dataset*/, hid_t &/*old_dataset2*/)
                 {
-                    std::vector<U> output(size, 0);
+                    std::vector<U> output(size);
                     std::vector<int> valids(size, 0);
 
                     // Should no longer need the old datasets, they should have already been copied during "copy_hdf5"
@@ -586,4 +586,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:34 +0000
+Updated on 2026-11-03 at 14:50:45 +0000

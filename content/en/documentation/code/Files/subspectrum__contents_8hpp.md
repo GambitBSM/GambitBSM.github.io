@@ -120,7 +120,7 @@ namespace Gambit {
       public:
         std::string getName() const {return my_name;}
 
-        /// Function to retreive all parameters
+        /// Function to retrieve all parameters
         std::vector<SpectrumParameter> all_parameters() const;
 
         /// Function to retreive all parameters matching a certain tag
@@ -144,4 +144,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:34 +0000
+Updated on 2026-11-03 at 14:50:46 +0000

@@ -27,6 +27,7 @@ description: "[No description available]"
 | bool | **[hasCorrs](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#function-hascorrs)**() const<br>Is there non-null correlation data?  |
 | bool | **[hasFullLikes](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#function-hasfulllikes)**() const<br>Is there non-null correlation data?  |
 | void | **[add](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#function-add)**(const [SignalRegionData](/documentation/code/classes/structgambit_1_1colliderbit_1_1signalregiondata/) & srd)<br>Add a [SignalRegionData]().  |
+| void | **[add_cutflows](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#function-add-cutflows)**(const [Cutflows](/documentation/code/classes/structgambit_1_1colliderbit_1_1cutflows/) & cf)<br>Add cutflows.  |
 | bool | **[check](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#function-check)**() const<br>Check that the SRData list and the covariance matrix are consistent.  |
 | void | **[pythonize_me](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#function-pythonize-me)**() const |
 | [SignalRegionData](/documentation/code/classes/structgambit_1_1colliderbit_1_1signalregiondata/) & | **[operator[]](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#function-operator)**(size_t i)<br>Access the i'th signal region's data.  |
@@ -42,10 +43,15 @@ description: "[No description available]"
 | -------------- | -------------- |
 | bool | **[event_gen_BYPASS](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#variable-event-gen-bypass)**  |
 | std::string | **[analysis_name](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#variable-analysis-name)** <br>[Analysis](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/) name.  |
+| std::string | **[detector_name](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#variable-detector-name)** <br>Detector name.  |
+| std::string | **[collider_name](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#variable-collider-name)** <br>Collider name.  |
 | std::vector< [SignalRegionData](/documentation/code/classes/structgambit_1_1colliderbit_1_1signalregiondata/) > | **[srdata](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#variable-srdata)** <br>List of signal regions' data summaries.  |
 | std::map< std::string, int > | **[srdata_identifiers](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#variable-srdata-identifiers)** <br>Map of names and indices of all entries in srdata, for easy lookup.  |
 | Eigen::MatrixXd | **[srcov](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#variable-srcov)** <br>Optional covariance matrix between SRs (0x0 null matrix = no correlation info)  |
 | std::string | **[bkgjson_path](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#variable-bkgjson-path)** <br>FullLikes bkg json file path realtive to the GAMBIT directory.  |
+| [Cutflows](/documentation/code/classes/structgambit_1_1colliderbit_1_1cutflows/) | **[cutflows](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#variable-cutflows)** <br>Collection of cutflows.  |
+| std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), [EventCounter](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/) > | **[_counters](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#variable-counters)**  |
+| double | **[luminosity](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/#variable-luminosity)** <br>Store the analysis luminosity.  |
 
 ## Detailed Description
 
@@ -153,6 +159,16 @@ Add a [SignalRegionData]().
 
 **Todo**: Allow naming the SRs? 
 
+### function add_cutflows
+
+```
+inline void add_cutflows(
+    const Cutflows & cf
+)
+```
+
+Add cutflows. 
+
 ### function check
 
 ```
@@ -242,6 +258,22 @@ std::string analysis_name;
 
 [Analysis](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/) name. 
 
+### variable detector_name
+
+```
+std::string detector_name;
+```
+
+Detector name. 
+
+### variable collider_name
+
+```
+std::string collider_name;
+```
+
+Collider name. 
+
 ### variable srdata
 
 ```
@@ -274,6 +306,29 @@ std::string bkgjson_path;
 
 FullLikes bkg json file path realtive to the GAMBIT directory. 
 
+### variable cutflows
+
+```
+Cutflows cutflows;
+```
+
+Collection of cutflows. 
+
+### variable _counters
+
+```
+std::map< str, EventCounter > _counters;
+```
+
+
+### variable luminosity
+
+```
+double luminosity;
+```
+
+Store the analysis luminosity. 
+
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:32 +0000
+Updated on 2026-11-03 at 14:50:43 +0000

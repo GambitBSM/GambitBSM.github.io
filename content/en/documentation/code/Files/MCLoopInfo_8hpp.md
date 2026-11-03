@@ -79,8 +79,8 @@ namespace Gambit
     /// @brief Container for event loop status data and settings
     struct MCLoopInfo
     {
-     
-      // Event genration has been bypassed: Default = false
+
+      // Event generation has been bypassed: Default = false
       bool event_gen_BYPASS = false;
 
       /// Event generation has started
@@ -106,6 +106,19 @@ namespace Gambit
 
       /// Convergence options for each collider
       std::map<str,convergence_settings> convergence_options;
+
+      /// Likelihood estimator
+      std::string estimator;
+
+      /// Ratio of nMC to nExpected (see UMVUE estimator)
+      std::map<str, double> ratio_MC_expected;
+
+      /// Number of mean MC events to simulate for a given parameter point for each collider
+      /// This will not necessarily be the same as the number simulated
+      int mean_nEvents;
+
+      /// Number of MC events to simulate for a given parameter point for each collider
+      std::map<str, int> desired_nEvents;
 
       /// Analysis list for each collider
       std::map<str,std::vector<str>> analyses;
@@ -193,4 +206,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:35 +0000
+Updated on 2026-11-03 at 14:50:47 +0000

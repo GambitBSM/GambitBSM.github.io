@@ -211,7 +211,7 @@ namespace Gambit
     {
       using namespace Pipes::function_Planck_lowl_TT_2018_loglike;
 
-      // Array containing the relevant Cl and nuisance paramters
+      // Array containing the relevant Cl and nuisance parameters
       // The order will be the following:
       // TT[0-29] - nuisance parameter
       // (c.f. https://wiki.cosmos.esa.int/planck-legacy-archive/index.php/CMB_spectrum_%26_Likelihood_Code)
@@ -268,7 +268,7 @@ namespace Gambit
     {
       using namespace Pipes::function_Planck_lowl_EE_2018_loglike;
 
-      // Array containing the relevant Cl and nuisance paramters
+      // Array containing the relevant Cl and nuisance parameters
       // The order will be the following:
       // EE[0-29] - Nuisance parameter
       // (c.f. https://wiki.cosmos.esa.int/planck-legacy-archive/index.php/CMB_spectrum_%26_Likelihood_Code)
@@ -320,14 +320,14 @@ namespace Gambit
 
     }
 
-    /// Combined low-l TT and and E-mode polarisation likelihood (PR3 - 2018)
+    /// Combined low-l TT and E-mode polarisation likelihood (PR3 - 2018)
     void function_Planck_lowl_TTEE_2018_loglike(double& result)
     {
       using namespace Pipes::function_Planck_lowl_TTEE_2018_loglike;
 
       // This function combines the lowl TT 2018 and the lowl EE 2018 likelihood
 
-      // Array containing the relevant Cl and nuisance paramters for the TT part
+      // Array containing the relevant Cl and nuisance parameters for the TT part
       // The order will be the following:
       // TT[0-29] - nuisance parameter
       // (c.f. https://wiki.cosmos.esa.int/planck-legacy-archive/index.php/CMB_spectrum_%26_Likelihood_Code)
@@ -412,7 +412,7 @@ namespace Gambit
     {
       using namespace Pipes::function_Planck_highl_TT_2018_loglike;
 
-      // Array containing the relevant Cl and nuisance paramters
+      // Array containing the relevant Cl and nuisance parameters
       // The order will be the following:
       // TT[0-2508] - nuisance parameters
       // (c.f. https://wiki.cosmos.esa.int/planck-legacy-archive/index.php/CMB_spectrum_%26_Likelihood_Code)
@@ -489,7 +489,7 @@ namespace Gambit
     {
       using namespace Pipes::function_Planck_highl_TT_lite_2018_loglike;
 
-      // Array containing the relevant Cl and nuisance paramters
+      // Array containing the relevant Cl and nuisance parameters
       // The order will be the following:
       // TT[0-2508] - nuisance parameter
       // (c.f. https://wiki.cosmos.esa.int/planck-legacy-archive/index.php/CMB_spectrum_%26_Likelihood_Code)
@@ -547,7 +547,7 @@ namespace Gambit
     {
       using namespace Pipes::function_Planck_highl_TTTEEE_2018_loglike;
 
-      // Array containing the relevant Cl and nuisance paramters
+      // Array containing the relevant Cl and nuisance parameters
       // The order will be the following:
       // TT[0-2508] - EE[0-2508] - TE[0-2508] - nuisance parameters
       // (c.f. https://wiki.cosmos.esa.int/planck-legacy-archive/index.php/CMB_spectrum_%26_Likelihood_Code)
@@ -649,7 +649,7 @@ namespace Gambit
     {
       using namespace Pipes::function_Planck_highl_TTTEEE_lite_2018_loglike;
 
-      // Array containing the relevant Cl and nuisance paramters
+      // Array containing the relevant Cl and nuisance parameters
       // The order will be the following:
       // TT[0-2508] - EE[0-2508] - TE[0-2508] - nuisance parameter
       // (c.f. https://wiki.cosmos.esa.int/planck-legacy-archive/index.php/CMB_spectrum_%26_Likelihood_Code)
@@ -717,7 +717,7 @@ namespace Gambit
     {
       using namespace Pipes::function_Planck_lensing_2018_loglike;
 
-      // Array containing the relevant Cl and nuisance paramters
+      // Array containing the relevant Cl and nuisance parameters
       // The order will be the following:
       // PhiPhi[0-2500] - TT[0-2500] - EE[0-2500] - TE[0-2500] - nuisance parameters
       // (c.f. https://wiki.cosmos.esa.int/planck-legacy-archive/index.php/CMB_spectrum_%26_Likelihood_Code)
@@ -789,7 +789,7 @@ namespace Gambit
     {
       using namespace Pipes::function_Planck_lensing_marged_2018_loglike;
 
-      // Array containing the relevant Cl and nuisance paramters
+      // Array containing the relevant Cl and nuisance parameters
       // The order will be the following:
       // PhiPhi[0-2500] - nuisance parameters
       // (c.f. https://wiki.cosmos.esa.int/planck-legacy-archive/index.php/CMB_spectrum_%26_Likelihood_Code)
@@ -844,7 +844,7 @@ namespace Gambit
     {
       using namespace Pipes::function_Planck_lowl_TT_2015_loglike;
 
-      // Array containing the relevant Cl and nuisance paramters
+      // Array containing the relevant Cl and nuisance parameters
       // The order will be the following:
       // TT[0-29] - nuisance parameter
       // (c.f. https://wiki.cosmos.esa.int/planck-legacy-archive/index.php/CMB_spectrum_%26_Likelihood_Code -> Previous releases -> 2015)
@@ -901,7 +901,7 @@ namespace Gambit
     {
       using namespace Pipes::function_Planck_lowl_TEB_2015_loglike;
 
-      // Array containing the relevant Cl and nuisance paramters
+      // Array containing the relevant Cl and nuisance parameters
       // The order will be the following:
       // TT[0-29] - EE[0-29] - BB[0-29] - TE[0-29] - nuisance parameter
       // (c.f. https://wiki.cosmos.esa.int/planck-legacy-archive/index.php/CMB_spectrum_%26_Likelihood_Code -> Previous releases -> 2015)
@@ -974,7 +974,7 @@ namespace Gambit
     {
       using namespace Pipes::function_Planck_highl_TT_2015_loglike;
 
-      // Array containing the relevant Cl and nuisance paramters
+      // Array containing the relevant Cl and nuisance parameters
       // The order will be the following:
       // TT[0-2508] - Nuisance parameters
       // (c.f. https://wiki.cosmos.esa.int/planck-legacy-archive/index.php/CMB_spectrum_%26_Likelihood_Code -> Previous releases -> 2015)
@@ -1049,7 +1049,7 @@ namespace Gambit
     {
       using namespace Pipes::function_Planck_highl_TT_lite_2015_loglike;
 
-      // Array containing the relevant Cl and nuisance paramters
+      // Array containing the relevant Cl and nuisance parameters
       // The order will be the following:
       // TT[0-2508] - nuisance parameter
       // (c.f. https://wiki.cosmos.esa.int/planck-legacy-archive/index.php/CMB_spectrum_%26_Likelihood_Code -> Previous releases -> 2015)
@@ -1107,7 +1107,7 @@ namespace Gambit
     {
       using namespace Pipes::function_Planck_highl_TTTEEE_2015_loglike;
 
-      // Array containing the relevant Cl and nuissance paramters
+      // Array containing the relevant Cl and nuissance parameters
       // The order will be the following:
       // TT[0-2508] - EE[0-2508] - TE[0-2508] - nuisance parameters
       // (c.f. https://wiki.cosmos.esa.int/planck-legacy-archive/index.php/CMB_spectrum_%26_Likelihood_Code -> Previous releases -> 2015)
@@ -1209,7 +1209,7 @@ namespace Gambit
     {
       using namespace Pipes::function_Planck_highl_TTTEEE_lite_2015_loglike;
 
-      // Array containing the relevant Cl and nuissance paramters
+      // Array containing the relevant Cl and nuissance parameters
       // The order will be the following:
       // TT[0-2508] - EE[0-2508] - TE[0-2508] - nuisance parameter
       // (c.f. https://wiki.cosmos.esa.int/planck-legacy-archive/index.php/CMB_spectrum_%26_Likelihood_Code -> Previous releases -> 2015)
@@ -1277,7 +1277,7 @@ namespace Gambit
     {
       using namespace Pipes::function_Planck_lensing_2015_loglike;
 
-      // Array containing the relevant Cl and nuisance paramters
+      // Array containing the relevant Cl and nuisance parameters
       // The order will be the following:
       // PhiPhi[0-2048] - TT[0-2048] - EE[0-2048] - TE[0-2048] - nuisance parameters
       // (c.f. https://wiki.cosmos.esa.int/planck-legacy-archive/index.php/CMB_spectrum_%26_Likelihood_Code -> Previous releases -> 2015)
@@ -1351,4 +1351,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:35 +0000
+Updated on 2026-11-03 at 14:50:47 +0000

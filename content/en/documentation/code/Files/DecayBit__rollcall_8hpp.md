@@ -199,6 +199,8 @@ description: "[No description available]"
 |  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
 |  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/#define-capability)**  |
 |  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
+|  | **[CAPABILITY](/documentation/code/files/decaybit__rollcall_8hpp/#define-capability)**  |
+|  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
 |  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
 |  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
 |  | **[FUNCTION](/documentation/code/files/decaybit__rollcall_8hpp/#define-function)**  |
@@ -1526,6 +1528,20 @@ DecayTable::Entry DecayTable::Entry rho_plus_decay_rates;
 ```
 
 
+### define CAPABILITY
+
+```
+#define CAPABILITY t_decay_rates
+```
+
+
+### define FUNCTION
+
+```
+#define FUNCTION t_decays
+```
+
+
 ### define FUNCTION
 
 ```
@@ -2605,9 +2621,17 @@ START_MODULE
 
   #undef CAPABILITY
 
-  #define CAPABILITY all_BFs
+  #define CAPABILITY particle_widths_as_map
   START_CAPABILITY
-    #define FUNCTION get_decaytable_as_map
+    #define FUNCTION get_particle_widths_as_map
+    START_FUNCTION(map_str_dbl)
+    DEPENDENCY(decay_rates, DecayTable)
+    #undef FUNCTION
+  #undef CAPABILITY
+
+  #define CAPABILITY branching_fractions_as_map
+  START_CAPABILITY
+    #define FUNCTION get_branching_fractions_as_map
     START_FUNCTION(map_str_dbl)
     DEPENDENCY(decay_rates, DecayTable)
     #undef FUNCTION
@@ -2778,4 +2802,4 @@ QUICK_FUNCTION(DecayBit, chargino_minus_2_decay_rates, NEW_CAPABILITY, chargino_
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:34 +0000
+Updated on 2026-11-03 at 14:50:46 +0000

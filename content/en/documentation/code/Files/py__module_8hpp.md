@@ -59,7 +59,6 @@ Authors:
 
 #include <unordered_map>
 #include "gambit/Utils/begin_ignore_warnings_pybind11.hpp"
-#include "gambit/Utils/begin_ignore_warnings_eigen.hpp"
 #include <pybind11/embed.h>
 #include <pybind11/eigen.h>
 #include <pybind11/stl.h>
@@ -83,4 +82,4 @@ namespace py = pybind11;
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:33 +0000
+Updated on 2026-11-03 at 14:50:45 +0000

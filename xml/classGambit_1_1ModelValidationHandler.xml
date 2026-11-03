@@ -1,0 +1,323 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classGambit_1_1ModelValidationHandler" kind="class" language="C++" prot="public">
+    <compoundname>Gambit::ModelValidationHandler</compoundname>
+    <includes refid="model__validation_8hpp" local="no">model_validation.hpp</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classGambit_1_1ModelValidationHandler_1adef3e902a0191a8446243f237962e26f" prot="private" static="no" mutable="no">
+        <type><ref refid="namespaceGambit_1a9b1fc08745280934be6bb49296700d03" kindref="member">ModelValidationHandling</ref></type>
+        <definition>ModelValidationHandling Gambit::ModelValidationHandler::_model_validation_handling</definition>
+        <argsstring></argsstring>
+        <name>_model_validation_handling</name>
+        <qualifiedname>Gambit::ModelValidationHandler::_model_validation_handling</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/model_validation.hpp" line="84" column="29" bodyfile="Utils/include/gambit/Utils/model_validation.hpp" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1ModelValidationHandler_1a47602ebe9d2014d381cb9fbdb324874c" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Gambit::ModelValidationHandler::_model_validation_active</definition>
+        <argsstring></argsstring>
+        <name>_model_validation_active</name>
+        <qualifiedname>Gambit::ModelValidationHandler::_model_validation_active</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/model_validation.hpp" line="85" column="10" bodyfile="Utils/include/gambit/Utils/model_validation.hpp" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1ModelValidationHandler_1a33f7bb5ecd551080cb793e17e12ec517" prot="private" static="no" mutable="no">
+        <type>std::map&lt; std::string, <ref refid="namespaceGambit_1a37b7595565e10251682d1d019f7affba" kindref="member">modelValidator</ref> &gt;</type>
+        <definition>std::map&lt;std::string, modelValidator&gt; Gambit::ModelValidationHandler::_model_validators</definition>
+        <argsstring></argsstring>
+        <name>_model_validators</name>
+        <qualifiedname>Gambit::ModelValidationHandler::_model_validators</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/model_validation.hpp" line="86" column="14" bodyfile="Utils/include/gambit/Utils/model_validation.hpp" bodystart="86" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classGambit_1_1ModelValidationHandler_1ac08dd1b99c464d3e490d4d898558b9c4" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classGambit_1_1ModelValidationHandler" kindref="compound">ModelValidationHandler</ref> &amp;</type>
+        <definition>ModelValidationHandler &amp; Gambit::ModelValidationHandler::getInstance</definition>
+        <argsstring>()</argsstring>
+        <name>getInstance</name>
+        <qualifiedname>Gambit::ModelValidationHandler::getInstance</qualifiedname>
+        <briefdescription>
+<para>Get the singleton instance of the handler. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/model_validation.hpp" line="51" column="35" bodyfile="Utils/src/model_validation.cpp" bodystart="28" bodyend="32"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGambit_1_1ModelValidationHandler_1a93611675f7c452a2f37fc16eafb5911b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::ModelValidationHandler::setModelValidationHandling</definition>
+        <argsstring>(const ModelValidationHandling &amp;h)</argsstring>
+        <name>setModelValidationHandling</name>
+        <qualifiedname>Gambit::ModelValidationHandler::setModelValidationHandling</qualifiedname>
+        <param>
+          <type>const <ref refid="namespaceGambit_1a9b1fc08745280934be6bb49296700d03" kindref="member">ModelValidationHandling</ref> &amp;</type>
+          <declname>h</declname>
+        </param>
+        <briefdescription>
+<para>Set the handling strategy for model validation (pass, warning, or error) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/model_validation.hpp" line="54" column="10" bodyfile="Utils/src/model_validation.cpp" bodystart="34" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1ModelValidationHandler_1a01f74e4e62635f13319e52e7dbc99462" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>const <ref refid="namespaceGambit_1a9b1fc08745280934be6bb49296700d03" kindref="member">ModelValidationHandling</ref> &amp;</type>
+        <definition>const ModelValidationHandling &amp; Gambit::ModelValidationHandler::getModelValidationHandling</definition>
+        <argsstring>() const</argsstring>
+        <name>getModelValidationHandling</name>
+        <qualifiedname>Gambit::ModelValidationHandler::getModelValidationHandling</qualifiedname>
+        <briefdescription>
+<para>Get the current handling strategy for model validation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/model_validation.hpp" line="57" column="36" bodyfile="Utils/src/model_validation.cpp" bodystart="39" bodyend="42"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1ModelValidationHandler_1a93cbe92eeab13a915ac6c09589029c3c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::ModelValidationHandler::activate</definition>
+        <argsstring>()</argsstring>
+        <name>activate</name>
+        <qualifiedname>Gambit::ModelValidationHandler::activate</qualifiedname>
+        <briefdescription>
+<para>Activate the model validation handler. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/model_validation.hpp" line="60" column="10" bodyfile="Utils/src/model_validation.cpp" bodystart="44" bodyend="47"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1ModelValidationHandler_1a8d824bd0ec0bd108a7d9f72eb00948c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::ModelValidationHandler::deactivate</definition>
+        <argsstring>()</argsstring>
+        <name>deactivate</name>
+        <qualifiedname>Gambit::ModelValidationHandler::deactivate</qualifiedname>
+        <briefdescription>
+<para>Deactivate the model validation handler. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/model_validation.hpp" line="63" column="10" bodyfile="Utils/src/model_validation.cpp" bodystart="49" bodyend="52"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1ModelValidationHandler_1a7d5572ca763c3ff9a431466ea98872fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::ModelValidationHandler::registerModelValidator</definition>
+        <argsstring>(const std::string &amp;model_name, modelValidator f)</argsstring>
+        <name>registerModelValidator</name>
+        <qualifiedname>Gambit::ModelValidationHandler::registerModelValidator</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>model_name</declname>
+        </param>
+        <param>
+          <type><ref refid="namespaceGambit_1a37b7595565e10251682d1d019f7affba" kindref="member">modelValidator</ref></type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+<para>Register a model validation function for a specific model. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/model_validation.hpp" line="66" column="10" bodyfile="Utils/src/model_validation.cpp" bodystart="54" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1ModelValidationHandler_1a310150ebcb2c17454aa583bad700199a" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::ModelValidationHandler::hasModelValidator</definition>
+        <argsstring>(const std::string &amp;model_name) const</argsstring>
+        <name>hasModelValidator</name>
+        <qualifiedname>Gambit::ModelValidationHandler::hasModelValidator</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>model_name</declname>
+        </param>
+        <briefdescription>
+<para>Check if a model validation function has been registered for a specific model. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/model_validation.hpp" line="69" column="11" bodyfile="Utils/src/model_validation.cpp" bodystart="63" bodyend="66"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1ModelValidationHandler_1af85fcd21b7a9d701d785ce8864c52da8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool Gambit::ModelValidationHandler::validateModel</definition>
+        <argsstring>(const ModelParameters &amp;model_parameters) const</argsstring>
+        <name>validateModel</name>
+        <qualifiedname>Gambit::ModelValidationHandler::validateModel</qualifiedname>
+        <param>
+          <type>const <ref refid="classGambit_1_1ModelParameters" kindref="compound">ModelParameters</ref> &amp;</type>
+          <declname>model_parameters</declname>
+        </param>
+        <briefdescription>
+<para>Validate the parameters of a model. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/model_validation.hpp" line="72" column="11" bodyfile="Utils/src/model_validation.cpp" bodystart="68" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1ModelValidationHandler_1a15dcab79572cfdae9e835f39c1fceea3" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::ModelValidationHandler::runModelValidation</definition>
+        <argsstring>(const ModelParameters &amp;model_parameters) const</argsstring>
+        <name>runModelValidation</name>
+        <qualifiedname>Gambit::ModelValidationHandler::runModelValidation</qualifiedname>
+        <param>
+          <type>const <ref refid="classGambit_1_1ModelParameters" kindref="compound">ModelParameters</ref> &amp;</type>
+          <declname>model_parameters</declname>
+        </param>
+        <briefdescription>
+<para>Run model validation. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/model_validation.hpp" line="75" column="10" bodyfile="Utils/src/model_validation.cpp" bodystart="78" bodyend="106"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1ModelValidationHandler_1abb1898969632a46ed64c4f4a4faebdc1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classGambit_1_1ModelValidationHandler" kindref="compound">ModelValidationHandler</ref> &amp;</type>
+        <definition>ModelValidationHandler &amp; Gambit::ModelValidationHandler::operator=</definition>
+        <argsstring>(const ModelValidationHandler &amp;)=delete</argsstring>
+        <name>operator=</name>
+        <qualifiedname>Gambit::ModelValidationHandler::operator=</qualifiedname>
+        <param>
+          <type>const <ref refid="classGambit_1_1ModelValidationHandler" kindref="compound">ModelValidationHandler</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/model_validation.hpp" line="78" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1ModelValidationHandler_1a5a64e7708b655c572362e12d3ed20aee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classGambit_1_1ModelValidationHandler" kindref="compound">ModelValidationHandler</ref> &amp;</type>
+        <definition>ModelValidationHandler &amp; Gambit::ModelValidationHandler::operator=</definition>
+        <argsstring>(ModelValidationHandler &amp;&amp;)=delete</argsstring>
+        <name>operator=</name>
+        <qualifiedname>Gambit::ModelValidationHandler::operator=</qualifiedname>
+        <param>
+          <type><ref refid="classGambit_1_1ModelValidationHandler" kindref="compound">ModelValidationHandler</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/model_validation.hpp" line="79" column="28"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1ModelValidationHandler_1aa8f34a84a2af8d0ca48f135bf801020b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::ModelValidationHandler::ModelValidationHandler</definition>
+        <argsstring>(const ModelValidationHandler &amp;)=delete</argsstring>
+        <name>ModelValidationHandler</name>
+        <qualifiedname>Gambit::ModelValidationHandler::ModelValidationHandler</qualifiedname>
+        <param>
+          <type>const <ref refid="classGambit_1_1ModelValidationHandler" kindref="compound">ModelValidationHandler</ref> &amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/model_validation.hpp" line="80" column="5"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1ModelValidationHandler_1a239284f17b5f31927dd8e9e40446514a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::ModelValidationHandler::ModelValidationHandler</definition>
+        <argsstring>(ModelValidationHandler &amp;&amp;)=delete</argsstring>
+        <name>ModelValidationHandler</name>
+        <qualifiedname>Gambit::ModelValidationHandler::ModelValidationHandler</qualifiedname>
+        <param>
+          <type><ref refid="classGambit_1_1ModelValidationHandler" kindref="compound">ModelValidationHandler</ref> &amp;&amp;</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/model_validation.hpp" line="81" column="5"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classGambit_1_1ModelValidationHandler_1ab4a10b4f06d8b8dd1af8aebed2686628" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::ModelValidationHandler::ModelValidationHandler</definition>
+        <argsstring>()</argsstring>
+        <name>ModelValidationHandler</name>
+        <qualifiedname>Gambit::ModelValidationHandler::ModelValidationHandler</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Utils/include/gambit/Utils/model_validation.hpp" line="88" column="5" bodyfile="Utils/include/gambit/Utils/model_validation.hpp" bodystart="88" bodyend="88"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Class for handling model validation logic. This is implemented as a singleton to ensure globally consistent model validation handling. </para>
+    </detaileddescription>
+    <location file="Utils/include/gambit/Utils/model_validation.hpp" line="47" column="3" bodyfile="Utils/include/gambit/Utils/model_validation.hpp" bodystart="48" bodyend="89"/>
+    <listofallmembers>
+      <member refid="classGambit_1_1ModelValidationHandler_1a47602ebe9d2014d381cb9fbdb324874c" prot="private" virt="non-virtual"><scope>Gambit::ModelValidationHandler</scope><name>_model_validation_active</name></member>
+      <member refid="classGambit_1_1ModelValidationHandler_1adef3e902a0191a8446243f237962e26f" prot="private" virt="non-virtual"><scope>Gambit::ModelValidationHandler</scope><name>_model_validation_handling</name></member>
+      <member refid="classGambit_1_1ModelValidationHandler_1a33f7bb5ecd551080cb793e17e12ec517" prot="private" virt="non-virtual"><scope>Gambit::ModelValidationHandler</scope><name>_model_validators</name></member>
+      <member refid="classGambit_1_1ModelValidationHandler_1a93cbe92eeab13a915ac6c09589029c3c" prot="public" virt="non-virtual"><scope>Gambit::ModelValidationHandler</scope><name>activate</name></member>
+      <member refid="classGambit_1_1ModelValidationHandler_1a8d824bd0ec0bd108a7d9f72eb00948c5" prot="public" virt="non-virtual"><scope>Gambit::ModelValidationHandler</scope><name>deactivate</name></member>
+      <member refid="classGambit_1_1ModelValidationHandler_1ac08dd1b99c464d3e490d4d898558b9c4" prot="public" virt="non-virtual"><scope>Gambit::ModelValidationHandler</scope><name>getInstance</name></member>
+      <member refid="classGambit_1_1ModelValidationHandler_1a01f74e4e62635f13319e52e7dbc99462" prot="public" virt="non-virtual"><scope>Gambit::ModelValidationHandler</scope><name>getModelValidationHandling</name></member>
+      <member refid="classGambit_1_1ModelValidationHandler_1a310150ebcb2c17454aa583bad700199a" prot="public" virt="non-virtual"><scope>Gambit::ModelValidationHandler</scope><name>hasModelValidator</name></member>
+      <member refid="classGambit_1_1ModelValidationHandler_1aa8f34a84a2af8d0ca48f135bf801020b" prot="public" virt="non-virtual"><scope>Gambit::ModelValidationHandler</scope><name>ModelValidationHandler</name></member>
+      <member refid="classGambit_1_1ModelValidationHandler_1a239284f17b5f31927dd8e9e40446514a" prot="public" virt="non-virtual"><scope>Gambit::ModelValidationHandler</scope><name>ModelValidationHandler</name></member>
+      <member refid="classGambit_1_1ModelValidationHandler_1ab4a10b4f06d8b8dd1af8aebed2686628" prot="private" virt="non-virtual"><scope>Gambit::ModelValidationHandler</scope><name>ModelValidationHandler</name></member>
+      <member refid="classGambit_1_1ModelValidationHandler_1abb1898969632a46ed64c4f4a4faebdc1" prot="public" virt="non-virtual"><scope>Gambit::ModelValidationHandler</scope><name>operator=</name></member>
+      <member refid="classGambit_1_1ModelValidationHandler_1a5a64e7708b655c572362e12d3ed20aee" prot="public" virt="non-virtual"><scope>Gambit::ModelValidationHandler</scope><name>operator=</name></member>
+      <member refid="classGambit_1_1ModelValidationHandler_1a7d5572ca763c3ff9a431466ea98872fb" prot="public" virt="non-virtual"><scope>Gambit::ModelValidationHandler</scope><name>registerModelValidator</name></member>
+      <member refid="classGambit_1_1ModelValidationHandler_1a15dcab79572cfdae9e835f39c1fceea3" prot="public" virt="non-virtual"><scope>Gambit::ModelValidationHandler</scope><name>runModelValidation</name></member>
+      <member refid="classGambit_1_1ModelValidationHandler_1a93611675f7c452a2f37fc16eafb5911b" prot="public" virt="non-virtual"><scope>Gambit::ModelValidationHandler</scope><name>setModelValidationHandling</name></member>
+      <member refid="classGambit_1_1ModelValidationHandler_1af85fcd21b7a9d701d785ce8864c52da8" prot="public" virt="non-virtual"><scope>Gambit::ModelValidationHandler</scope><name>validateModel</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

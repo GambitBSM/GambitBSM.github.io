@@ -143,7 +143,9 @@ Backend variable macro for Mathematica.
 #include "gambit/cmake/cmake_variables.hpp"
 #include "gambit/Utils/util_macros.hpp"
 #include "gambit/Backends/mathematica_function.hpp"
-#include "gambit/Backends/mathematica_variable.hpp"
+#ifdef HAVE_MATHEMATICA
+  #include "gambit/Backends/mathematica_variable.hpp"
+#endif
 
 /// Backend function macro for mathematica
 #define BE_FUNCTION_I_MATH(NAME, TYPE, ARGLIST, SYMBOLNAME, CAPABILITY, MODELS)               \
@@ -193,4 +195,4 @@ namespace Gambit                                                                
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:36 +0000
+Updated on 2026-11-03 at 14:50:49 +0000

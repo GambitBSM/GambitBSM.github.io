@@ -104,7 +104,7 @@ namespace Gambit
         combination_loglike(0.0)
         { }
 
-      // Get the number of SRs and the correponding SR labels from
+      // Get the number of SRs and the corresponding SR labels from
       // an AnalysisData instance. Use this to initialize.
       void initialize(const AnalysisData& adata_in, const std::vector<std::string>& alt_loglike_keys = {})
       {
@@ -162,4 +162,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:35 +0000
+Updated on 2026-11-03 at 14:50:47 +0000

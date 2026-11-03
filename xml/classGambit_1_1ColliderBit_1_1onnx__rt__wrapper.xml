@@ -1,0 +1,351 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classGambit_1_1ColliderBit_1_1onnx__rt__wrapper" kind="class" language="C++" prot="public">
+    <compoundname>Gambit::ColliderBit::onnx_rt_wrapper</compoundname>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classGambit_1_1ColliderBit_1_1onnx__rt__wrapper_1a094e27d45abb57d4624e8b8a796951c5" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; Ort::Env &gt;</type>
+        <definition>std::unique_ptr&lt;Ort::Env&gt; Gambit::ColliderBit::onnx_rt_wrapper::_env</definition>
+        <argsstring></argsstring>
+        <name>_env</name>
+        <qualifiedname>Gambit::ColliderBit::onnx_rt_wrapper::_env</qualifiedname>
+        <briefdescription>
+<para>ONNXrt environment for this session. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/onnx_rt_wrapper.hpp" line="63" column="23" bodyfile="ColliderBit/include/gambit/ColliderBit/onnx_rt_wrapper.hpp" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1ColliderBit_1_1onnx__rt__wrapper_1aa6a12a1300dd0affab4b89084d4c9d4d" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; Ort::Session &gt;</type>
+        <definition>std::unique_ptr&lt;Ort::Session&gt; Gambit::ColliderBit::onnx_rt_wrapper::_session</definition>
+        <argsstring></argsstring>
+        <name>_session</name>
+        <qualifiedname>Gambit::ColliderBit::onnx_rt_wrapper::_session</qualifiedname>
+        <briefdescription>
+<para>ONNXrt session holiding the network. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/onnx_rt_wrapper.hpp" line="66" column="23" bodyfile="ColliderBit/include/gambit/ColliderBit/onnx_rt_wrapper.hpp" bodystart="66" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1ColliderBit_1_1onnx__rt__wrapper_1a0193965b39b3f9f4e4b32658e86661aa" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; Ort::ModelMetadata &gt;</type>
+        <definition>std::unique_ptr&lt;Ort::ModelMetadata&gt; Gambit::ColliderBit::onnx_rt_wrapper::_metadata</definition>
+        <argsstring></argsstring>
+        <name>_metadata</name>
+        <qualifiedname>Gambit::ColliderBit::onnx_rt_wrapper::_metadata</qualifiedname>
+        <briefdescription>
+<para>Network metadata. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/onnx_rt_wrapper.hpp" line="69" column="23" bodyfile="ColliderBit/include/gambit/ColliderBit/onnx_rt_wrapper.hpp" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1ColliderBit_1_1onnx__rt__wrapper_1a0c361c7b51890ad0e622e8e1867fb82c" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; int64_t &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;int64_t&gt; &gt; Gambit::ColliderBit::onnx_rt_wrapper::_inDims</definition>
+        <argsstring></argsstring>
+        <name>_inDims</name>
+        <qualifiedname>Gambit::ColliderBit::onnx_rt_wrapper::_inDims</qualifiedname>
+        <briefdescription>
+<para>Input/output node dimensions - could be a multidimensional tensor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/onnx_rt_wrapper.hpp" line="72" column="19" bodyfile="ColliderBit/include/gambit/ColliderBit/onnx_rt_wrapper.hpp" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1ColliderBit_1_1onnx__rt__wrapper_1abc05191d6c10b4f0917f7267d2a8a3b5" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; std::vector&lt; int64_t &gt; &gt;</type>
+        <definition>std::vector&lt;std::vector&lt;int64_t&gt; &gt; Gambit::ColliderBit::onnx_rt_wrapper::_outDims</definition>
+        <argsstring></argsstring>
+        <name>_outDims</name>
+        <qualifiedname>Gambit::ColliderBit::onnx_rt_wrapper::_outDims</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/onnx_rt_wrapper.hpp" line="72" column="27" bodyfile="ColliderBit/include/gambit/ColliderBit/onnx_rt_wrapper.hpp" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1ColliderBit_1_1onnx__rt__wrapper_1aa2da4581ecf5ff67c2a93581e4326c5c" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; int64_t &gt;</type>
+        <definition>std::vector&lt;int64_t&gt; Gambit::ColliderBit::onnx_rt_wrapper::_inDimsFlat</definition>
+        <argsstring></argsstring>
+        <name>_inDimsFlat</name>
+        <qualifiedname>Gambit::ColliderBit::onnx_rt_wrapper::_inDimsFlat</qualifiedname>
+        <briefdescription>
+<para>Equivalent length for flattened input/ouput node structure. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/onnx_rt_wrapper.hpp" line="75" column="19" bodyfile="ColliderBit/include/gambit/ColliderBit/onnx_rt_wrapper.hpp" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1ColliderBit_1_1onnx__rt__wrapper_1a686be4e9fe647cedcd05b7fa625b13cd" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; int64_t &gt;</type>
+        <definition>std::vector&lt;int64_t&gt; Gambit::ColliderBit::onnx_rt_wrapper::_outDimsFlat</definition>
+        <argsstring></argsstring>
+        <name>_outDimsFlat</name>
+        <qualifiedname>Gambit::ColliderBit::onnx_rt_wrapper::_outDimsFlat</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/onnx_rt_wrapper.hpp" line="75" column="31" bodyfile="ColliderBit/include/gambit/ColliderBit/onnx_rt_wrapper.hpp" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1ColliderBit_1_1onnx__rt__wrapper_1a965dca56da348131581bcbac057447d9" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; ONNXTensorElementDataType &gt;</type>
+        <definition>std::vector&lt;ONNXTensorElementDataType&gt; Gambit::ColliderBit::onnx_rt_wrapper::_inTypes</definition>
+        <argsstring></argsstring>
+        <name>_inTypes</name>
+        <qualifiedname>Gambit::ColliderBit::onnx_rt_wrapper::_inTypes</qualifiedname>
+        <briefdescription>
+<para>Types of input/output nodes (as ONNX enums) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/onnx_rt_wrapper.hpp" line="78" column="19" bodyfile="ColliderBit/include/gambit/ColliderBit/onnx_rt_wrapper.hpp" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1ColliderBit_1_1onnx__rt__wrapper_1ae5120584f14db14c1b1cc7da600aef87" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; ONNXTensorElementDataType &gt;</type>
+        <definition>std::vector&lt;ONNXTensorElementDataType&gt; Gambit::ColliderBit::onnx_rt_wrapper::_outTypes</definition>
+        <argsstring></argsstring>
+        <name>_outTypes</name>
+        <qualifiedname>Gambit::ColliderBit::onnx_rt_wrapper::_outTypes</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/onnx_rt_wrapper.hpp" line="78" column="28" bodyfile="ColliderBit/include/gambit/ColliderBit/onnx_rt_wrapper.hpp" bodystart="78" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1ColliderBit_1_1onnx__rt__wrapper_1a88fc92d6401d155f1b173e517d26af10" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; Ort::AllocatedStringPtr &gt;</type>
+        <definition>std::vector&lt;Ort::AllocatedStringPtr&gt; Gambit::ColliderBit::onnx_rt_wrapper::_inNamesPtr</definition>
+        <argsstring></argsstring>
+        <name>_inNamesPtr</name>
+        <qualifiedname>Gambit::ColliderBit::onnx_rt_wrapper::_inNamesPtr</qualifiedname>
+        <briefdescription>
+<para>Pointers to the ONNXrt input/output node names. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/onnx_rt_wrapper.hpp" line="81" column="19" bodyfile="ColliderBit/include/gambit/ColliderBit/onnx_rt_wrapper.hpp" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1ColliderBit_1_1onnx__rt__wrapper_1a1f1e9f42c15cf5aee9f34400bc8da034" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; Ort::AllocatedStringPtr &gt;</type>
+        <definition>std::vector&lt;Ort::AllocatedStringPtr&gt; Gambit::ColliderBit::onnx_rt_wrapper::_outNamesPtr</definition>
+        <argsstring></argsstring>
+        <name>_outNamesPtr</name>
+        <qualifiedname>Gambit::ColliderBit::onnx_rt_wrapper::_outNamesPtr</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/onnx_rt_wrapper.hpp" line="81" column="31" bodyfile="ColliderBit/include/gambit/ColliderBit/onnx_rt_wrapper.hpp" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1ColliderBit_1_1onnx__rt__wrapper_1a64f3435e6c5e55a301248d8b1614ceec" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; const char * &gt;</type>
+        <definition>std::vector&lt;const char*&gt; Gambit::ColliderBit::onnx_rt_wrapper::_inNames</definition>
+        <argsstring></argsstring>
+        <name>_inNames</name>
+        <qualifiedname>Gambit::ColliderBit::onnx_rt_wrapper::_inNames</qualifiedname>
+        <briefdescription>
+<para>C-style arrays of the input/output node names. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/onnx_rt_wrapper.hpp" line="84" column="19" bodyfile="ColliderBit/include/gambit/ColliderBit/onnx_rt_wrapper.hpp" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classGambit_1_1ColliderBit_1_1onnx__rt__wrapper_1aabe2d55af9e75f3d74e3183e51627dd7" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; const char * &gt;</type>
+        <definition>std::vector&lt;const char*&gt; Gambit::ColliderBit::onnx_rt_wrapper::_outNames</definition>
+        <argsstring></argsstring>
+        <name>_outNames</name>
+        <qualifiedname>Gambit::ColliderBit::onnx_rt_wrapper::_outNames</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/onnx_rt_wrapper.hpp" line="84" column="28" bodyfile="ColliderBit/include/gambit/ColliderBit/onnx_rt_wrapper.hpp" bodystart="84" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classGambit_1_1ColliderBit_1_1onnx__rt__wrapper_1aeed51ade96205905c2f7026239f1c220" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::ColliderBit::onnx_rt_wrapper::onnx_rt_wrapper</definition>
+        <argsstring>(const std::string &amp;filename, const std::string &amp;runname=&quot;GambitONNXrt&quot;)</argsstring>
+        <name>onnx_rt_wrapper</name>
+        <qualifiedname>Gambit::ColliderBit::onnx_rt_wrapper::onnx_rt_wrapper</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>filename</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>runname</declname>
+          <defval>&quot;GambitONNXrt&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/onnx_rt_wrapper.hpp" line="41" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1ColliderBit_1_1onnx__rt__wrapper_1a54b83267d4df2f635c82df9ed7b5a608" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Gambit::ColliderBit::onnx_rt_wrapper::onnx_rt_wrapper</definition>
+        <argsstring>()=delete</argsstring>
+        <name>onnx_rt_wrapper</name>
+        <qualifiedname>Gambit::ColliderBit::onnx_rt_wrapper::onnx_rt_wrapper</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/onnx_rt_wrapper.hpp" line="43" column="7"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1ColliderBit_1_1onnx__rt__wrapper_1abede56c69b74daa6341dcb0c282d1d10" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::ColliderBit::onnx_rt_wrapper::compute</definition>
+        <argsstring>(std::vector&lt; std::vector&lt; float &gt; &gt; &amp;inputs, std::vector&lt; std::vector&lt; float &gt; &gt; &amp;outputs) const</argsstring>
+        <name>compute</name>
+        <qualifiedname>Gambit::ColliderBit::onnx_rt_wrapper::compute</qualifiedname>
+        <param>
+          <type>std::vector&lt; std::vector&lt; float &gt; &gt; &amp;</type>
+          <declname>inputs</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; std::vector&lt; float &gt; &gt; &amp;</type>
+          <declname>outputs</declname>
+        </param>
+        <briefdescription>
+<para>Given a multi-node input vector, populate and return the multi-node output vector. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+<para>Check that number of input nodes matches what the model expects</para>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/onnx_rt_wrapper.hpp" line="46" column="12" bodyfile="ColliderBit/src/onnx_rt_wrapper.cpp" bodystart="45" bodyend="86"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1ColliderBit_1_1onnx__rt__wrapper_1af12f0bb55f301f164e8e472a24671a36" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::ColliderBit::onnx_rt_wrapper::compute</definition>
+        <argsstring>(std::vector&lt; float &gt; &amp;inputs, std::vector&lt; float &gt; &amp;outputs)</argsstring>
+        <name>compute</name>
+        <qualifiedname>Gambit::ColliderBit::onnx_rt_wrapper::compute</qualifiedname>
+        <param>
+          <type>std::vector&lt; float &gt; &amp;</type>
+          <declname>inputs</declname>
+        </param>
+        <param>
+          <type>std::vector&lt; float &gt; &amp;</type>
+          <declname>outputs</declname>
+        </param>
+        <briefdescription>
+<para>Given a single-node input vector, populate and return the single-node output vector. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/onnx_rt_wrapper.hpp" line="49" column="12"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="friend">
+      <memberdef kind="friend" id="classGambit_1_1ColliderBit_1_1onnx__rt__wrapper_1af41b4a92749087b9e39b92955fbc814a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream &amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;os, const onnx_rt_wrapper &amp;rort)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <qualifiedname>Gambit::ColliderBit::onnx_rt_wrapper::operator&lt;&lt;</qualifiedname>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>os</declname>
+        </param>
+        <param>
+          <type>const <ref refid="classGambit_1_1ColliderBit_1_1onnx__rt__wrapper" kindref="compound">onnx_rt_wrapper</ref> &amp;</type>
+          <declname>rort</declname>
+        </param>
+        <briefdescription>
+<para>Printing function for debugging. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/onnx_rt_wrapper.hpp" line="52" column="14" bodyfile="ColliderBit/src/onnx_rt_wrapper.cpp" bodystart="104" bodyend="130"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classGambit_1_1ColliderBit_1_1onnx__rt__wrapper_1a28fe0192ac8efdac1abd4142a995b227" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::ColliderBit::onnx_rt_wrapper::getNetworkInfo</definition>
+        <argsstring>()</argsstring>
+        <name>getNetworkInfo</name>
+        <qualifiedname>Gambit::ColliderBit::onnx_rt_wrapper::getNetworkInfo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/onnx_rt_wrapper.hpp" line="57" column="12" bodyfile="ColliderBit/src/onnx_rt_wrapper.cpp" bodystart="134" bodyend="206"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ColliderBit/include/gambit/ColliderBit/onnx_rt_wrapper.hpp" line="36" column="5" bodyfile="ColliderBit/include/gambit/ColliderBit/onnx_rt_wrapper.hpp" bodystart="37" bodyend="86"/>
+    <listofallmembers>
+      <member refid="classGambit_1_1ColliderBit_1_1onnx__rt__wrapper_1a094e27d45abb57d4624e8b8a796951c5" prot="private" virt="non-virtual"><scope>Gambit::ColliderBit::onnx_rt_wrapper</scope><name>_env</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1onnx__rt__wrapper_1a0c361c7b51890ad0e622e8e1867fb82c" prot="private" virt="non-virtual"><scope>Gambit::ColliderBit::onnx_rt_wrapper</scope><name>_inDims</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1onnx__rt__wrapper_1aa2da4581ecf5ff67c2a93581e4326c5c" prot="private" virt="non-virtual"><scope>Gambit::ColliderBit::onnx_rt_wrapper</scope><name>_inDimsFlat</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1onnx__rt__wrapper_1a64f3435e6c5e55a301248d8b1614ceec" prot="private" virt="non-virtual"><scope>Gambit::ColliderBit::onnx_rt_wrapper</scope><name>_inNames</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1onnx__rt__wrapper_1a88fc92d6401d155f1b173e517d26af10" prot="private" virt="non-virtual"><scope>Gambit::ColliderBit::onnx_rt_wrapper</scope><name>_inNamesPtr</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1onnx__rt__wrapper_1a965dca56da348131581bcbac057447d9" prot="private" virt="non-virtual"><scope>Gambit::ColliderBit::onnx_rt_wrapper</scope><name>_inTypes</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1onnx__rt__wrapper_1a0193965b39b3f9f4e4b32658e86661aa" prot="private" virt="non-virtual"><scope>Gambit::ColliderBit::onnx_rt_wrapper</scope><name>_metadata</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1onnx__rt__wrapper_1abc05191d6c10b4f0917f7267d2a8a3b5" prot="private" virt="non-virtual"><scope>Gambit::ColliderBit::onnx_rt_wrapper</scope><name>_outDims</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1onnx__rt__wrapper_1a686be4e9fe647cedcd05b7fa625b13cd" prot="private" virt="non-virtual"><scope>Gambit::ColliderBit::onnx_rt_wrapper</scope><name>_outDimsFlat</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1onnx__rt__wrapper_1aabe2d55af9e75f3d74e3183e51627dd7" prot="private" virt="non-virtual"><scope>Gambit::ColliderBit::onnx_rt_wrapper</scope><name>_outNames</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1onnx__rt__wrapper_1a1f1e9f42c15cf5aee9f34400bc8da034" prot="private" virt="non-virtual"><scope>Gambit::ColliderBit::onnx_rt_wrapper</scope><name>_outNamesPtr</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1onnx__rt__wrapper_1ae5120584f14db14c1b1cc7da600aef87" prot="private" virt="non-virtual"><scope>Gambit::ColliderBit::onnx_rt_wrapper</scope><name>_outTypes</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1onnx__rt__wrapper_1aa6a12a1300dd0affab4b89084d4c9d4d" prot="private" virt="non-virtual"><scope>Gambit::ColliderBit::onnx_rt_wrapper</scope><name>_session</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1onnx__rt__wrapper_1abede56c69b74daa6341dcb0c282d1d10" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::onnx_rt_wrapper</scope><name>compute</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1onnx__rt__wrapper_1af12f0bb55f301f164e8e472a24671a36" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::onnx_rt_wrapper</scope><name>compute</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1onnx__rt__wrapper_1a28fe0192ac8efdac1abd4142a995b227" prot="private" virt="non-virtual"><scope>Gambit::ColliderBit::onnx_rt_wrapper</scope><name>getNetworkInfo</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1onnx__rt__wrapper_1aeed51ade96205905c2f7026239f1c220" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::onnx_rt_wrapper</scope><name>onnx_rt_wrapper</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1onnx__rt__wrapper_1a54b83267d4df2f635c82df9ed7b5a608" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::onnx_rt_wrapper</scope><name>onnx_rt_wrapper</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1onnx__rt__wrapper_1af41b4a92749087b9e39b92955fbc814a" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::onnx_rt_wrapper</scope><name>operator&lt;&lt;</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

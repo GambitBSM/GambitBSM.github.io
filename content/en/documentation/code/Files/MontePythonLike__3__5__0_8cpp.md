@@ -96,7 +96,12 @@ Authors (add name and date if you modify):
     std::vector<str> get_MP_available_likelihoods()
     {
       pybind11::list avail_likes = MontePythonLike.attr("get_available_likelihoods")(backendDir);
-      return avail_likes.cast<std::vector<str>>();
+      std::vector<str> avail_likes_output;
+      for (size_t i = 0 ; i < avail_likes.size();i++)
+      {
+        avail_likes_output.push_back(avail_likes[i].cast<str>());
+      }
+      return avail_likes_output;
     }
 
     /// convenience function to check compatibility of likelihoods and CLASS version in use
@@ -347,4 +352,4 @@ END_BE_INI_FUNCTION
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:36 +0000
+Updated on 2026-11-03 at 14:50:49 +0000

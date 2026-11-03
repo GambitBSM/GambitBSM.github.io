@@ -4,67 +4,55 @@
     <compoundname>modelgraph.hpp</compoundname>
     <includes refid="depresolver_8hpp" local="yes">gambit/Core/depresolver.hpp</includes>
     <includes refid="models_8hpp" local="yes">gambit/Models/models.hpp</includes>
-    <includedby refid="diagnostics_8cpp" local="yes">diagnostics.cpp</includedby>
+    <includedby refid="Core_2src_2diagnostics_8cpp" local="yes">diagnostics.cpp</includedby>
     <includedby refid="modelgraph_8cpp" local="yes">modelgraph.cpp</includedby>
     <incdepgraph>
-      <node id="9">
+      <node id="10">
         <label>gambit/Backends/backend_info.hpp</label>
         <link refid="backend__info_8hpp"/>
         <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="10" relation="include">
+        <childnode refid="11" relation="include">
         </childnode>
         <childnode refid="51" relation="include">
         </childnode>
         <childnode refid="52" relation="include">
         </childnode>
       </node>
-      <node id="124">
+      <node id="125">
         <label>gambit/Backends/backend_singleton.hpp</label>
         <link refid="backend__singleton_8hpp"/>
-        <childnode refid="9" relation="include">
+        <childnode refid="10" relation="include">
         </childnode>
       </node>
       <node id="121">
         <label>gambit/Backends/default_bossed_versions.hpp</label>
         <link refid="default__bossed__versions_8hpp"/>
       </node>
-      <node id="122">
-        <label>gambit/Backends/mathematica_variable.hpp</label>
-        <link refid="mathematica__variable_8hpp"/>
-        <childnode refid="123" relation="include">
-        </childnode>
-        <childnode refid="124" relation="include">
-        </childnode>
-        <childnode refid="51" relation="include">
-        </childnode>
-        <childnode refid="125" relation="include">
-        </childnode>
-      </node>
-      <node id="127">
+      <node id="124">
         <label>gambit/Backends/python_helpers.hpp</label>
         <link refid="python__helpers_8hpp"/>
       </node>
-      <node id="126">
+      <node id="122">
         <label>gambit/Backends/python_variable.hpp</label>
         <link refid="python__variable_8hpp"/>
         <childnode refid="51" relation="include">
         </childnode>
         <childnode refid="123" relation="include">
         </childnode>
-        <childnode refid="127" relation="include">
-        </childnode>
         <childnode refid="124" relation="include">
         </childnode>
+        <childnode refid="125" relation="include">
+        </childnode>
       </node>
-      <node id="8">
+      <node id="9">
         <label>gambit/Core/core.hpp</label>
         <link refid="core_8hpp"/>
         <childnode refid="6" relation="include">
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="9" relation="include">
+        <childnode refid="10" relation="include">
         </childnode>
         <childnode refid="53" relation="include">
         </childnode>
@@ -72,7 +60,7 @@
         </childnode>
         <childnode refid="71" relation="include">
         </childnode>
-        <childnode refid="10" relation="include">
+        <childnode refid="11" relation="include">
         </childnode>
         <childnode refid="52" relation="include">
         </childnode>
@@ -92,6 +80,8 @@
         </childnode>
         <childnode refid="8" relation="include">
         </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
         <childnode refid="72" relation="include">
         </childnode>
         <childnode refid="73" relation="include">
@@ -104,17 +94,17 @@
         </childnode>
         <childnode refid="74" relation="include">
         </childnode>
-        <childnode refid="131" relation="include">
+        <childnode refid="129" relation="include">
         </childnode>
-        <childnode refid="132" relation="include">
+        <childnode refid="130" relation="include">
         </childnode>
       </node>
       <node id="72">
         <label>gambit/Core/error_handlers.hpp</label>
         <link refid="error__handlers_8hpp"/>
-        <childnode refid="16" relation="include">
+        <childnode refid="17" relation="include">
         </childnode>
-        <childnode refid="26" relation="include">
+        <childnode refid="27" relation="include">
         </childnode>
       </node>
       <node id="1">
@@ -136,7 +126,7 @@
       <node id="73">
         <label>gambit/Core/resolution_utilities.hpp</label>
         <link refid="resolution__utilities_8hpp"/>
-        <childnode refid="10" relation="include">
+        <childnode refid="11" relation="include">
         </childnode>
         <childnode refid="74" relation="include">
         </childnode>
@@ -144,7 +134,7 @@
       <node id="77">
         <label>gambit/Core/rule.hpp</label>
         <link refid="rule_8hpp"/>
-        <childnode refid="10" relation="include">
+        <childnode refid="11" relation="include">
         </childnode>
         <childnode refid="63" relation="include">
         </childnode>
@@ -158,15 +148,15 @@
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
         <childnode refid="11" relation="include">
         </childnode>
-        <childnode refid="39" relation="include">
+        <childnode refid="17" relation="include">
         </childnode>
-        <childnode refid="10" relation="include">
-        </childnode>
-        <childnode refid="16" relation="include">
-        </childnode>
-        <childnode refid="41" relation="include">
+        <childnode refid="42" relation="include">
         </childnode>
         <childnode refid="54" relation="include">
         </childnode>
@@ -188,7 +178,7 @@
       <node id="113">
         <label>gambit/Elements/daFunk.hpp</label>
         <link refid="daFunk_8hpp_source"/>
-        <childnode refid="42" relation="include">
+        <childnode refid="43" relation="include">
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
@@ -196,7 +186,7 @@
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="37" relation="include">
+        <childnode refid="38" relation="include">
         </childnode>
         <childnode refid="59" relation="include">
         </childnode>
@@ -218,19 +208,19 @@
         <link refid="decay__table_8hpp"/>
         <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="37" relation="include">
+        <childnode refid="38" relation="include">
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="11" relation="include">
+        <childnode refid="12" relation="include">
         </childnode>
         <childnode refid="101" relation="include">
         </childnode>
         <childnode refid="108" relation="include">
         </childnode>
-        <childnode refid="10" relation="include">
+        <childnode refid="11" relation="include">
         </childnode>
-        <childnode refid="16" relation="include">
+        <childnode refid="17" relation="include">
         </childnode>
         <childnode refid="104" relation="include">
         </childnode>
@@ -248,19 +238,19 @@
         <link refid="functors_8hpp"/>
         <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="37" relation="include">
+        <childnode refid="38" relation="include">
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
         <childnode refid="56" relation="include">
         </childnode>
-        <childnode refid="11" relation="include">
+        <childnode refid="12" relation="include">
         </childnode>
         <childnode refid="57" relation="include">
         </childnode>
-        <childnode refid="12" relation="include">
+        <childnode refid="13" relation="include">
         </childnode>
-        <childnode refid="10" relation="include">
+        <childnode refid="11" relation="include">
         </childnode>
         <childnode refid="58" relation="include">
         </childnode>
@@ -278,21 +268,21 @@
         <link refid="halo__types_8hpp"/>
         <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="37" relation="include">
+        <childnode refid="38" relation="include">
         </childnode>
-        <childnode refid="16" relation="include">
+        <childnode refid="17" relation="include">
         </childnode>
         <childnode refid="51" relation="include">
         </childnode>
         <childnode refid="113" relation="include">
         </childnode>
-        <childnode refid="10" relation="include">
+        <childnode refid="11" relation="include">
         </childnode>
       </node>
       <node id="111">
         <label>gambit/Elements/higgs_couplings_table.hpp</label>
         <link refid="higgs__couplings__table_8hpp"/>
-        <childnode refid="10" relation="include">
+        <childnode refid="11" relation="include">
         </childnode>
         <childnode refid="107" relation="include">
         </childnode>
@@ -300,19 +290,19 @@
       <node id="123">
         <label>gambit/Elements/ini_catch.hpp</label>
         <link refid="ini__catch_8hpp"/>
-        <childnode refid="38" relation="include">
+        <childnode refid="39" relation="include">
         </childnode>
       </node>
       <node id="108">
         <label>gambit/Elements/mssm_slhahelp.hpp</label>
         <link refid="mssm__slhahelp_8hpp"/>
-        <childnode refid="42" relation="include">
+        <childnode refid="43" relation="include">
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="39" relation="include">
+        <childnode refid="40" relation="include">
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
@@ -320,13 +310,13 @@
         </childnode>
         <childnode refid="110" relation="include">
         </childnode>
-        <childnode refid="37" relation="include">
+        <childnode refid="38" relation="include">
         </childnode>
         <childnode refid="98" relation="include">
         </childnode>
         <childnode refid="97" relation="include">
         </childnode>
-        <childnode refid="10" relation="include">
+        <childnode refid="11" relation="include">
         </childnode>
       </node>
       <node id="89">
@@ -340,7 +330,7 @@
       <node id="91">
         <label>gambit/Elements/shared_types.hpp</label>
         <link refid="shared__types_8hpp"/>
-        <childnode refid="10" relation="include">
+        <childnode refid="11" relation="include">
         </childnode>
         <childnode refid="66" relation="include">
         </childnode>
@@ -370,15 +360,13 @@
         </childnode>
         <childnode refid="126" relation="include">
         </childnode>
-        <childnode refid="128" relation="include">
-        </childnode>
       </node>
       <node id="101">
         <label>gambit/Elements/slhaea_spec_helpers.hpp</label>
         <link refid="slhaea__spec__helpers_8hpp"/>
-        <childnode refid="16" relation="include">
+        <childnode refid="17" relation="include">
         </childnode>
-        <childnode refid="10" relation="include">
+        <childnode refid="11" relation="include">
         </childnode>
         <childnode refid="94" relation="include">
         </childnode>
@@ -402,7 +390,7 @@
       <node id="97">
         <label>gambit/Elements/spectrum.hpp</label>
         <link refid="spectrum_8hpp"/>
-        <childnode refid="14" relation="include">
+        <childnode refid="15" relation="include">
         </childnode>
         <childnode refid="58" relation="include">
         </childnode>
@@ -424,7 +412,7 @@
         <link refid="spectrum__helpers_8hpp"/>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="37" relation="include">
+        <childnode refid="38" relation="include">
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
@@ -436,17 +424,17 @@
         <link refid="subspectrum_8hpp"/>
         <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="37" relation="include">
+        <childnode refid="38" relation="include">
         </childnode>
         <childnode refid="99" relation="include">
         </childnode>
-        <childnode refid="11" relation="include">
+        <childnode refid="12" relation="include">
         </childnode>
-        <childnode refid="24" relation="include">
+        <childnode refid="25" relation="include">
         </childnode>
         <childnode refid="100" relation="include">
         </childnode>
-        <childnode refid="16" relation="include">
+        <childnode refid="17" relation="include">
         </childnode>
         <childnode refid="58" relation="include">
         </childnode>
@@ -460,11 +448,11 @@
       <node id="74">
         <label>gambit/Elements/type_equivalency.hpp</label>
         <link refid="type__equivalency_8hpp"/>
-        <childnode refid="37" relation="include">
+        <childnode refid="38" relation="include">
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="10" relation="include">
+        <childnode refid="11" relation="include">
         </childnode>
       </node>
       <node id="90">
@@ -472,9 +460,9 @@
         <link refid="types__rollcall_8hpp"/>
         <childnode refid="91" relation="include">
         </childnode>
-        <childnode refid="129" relation="include">
+        <childnode refid="127" relation="include">
         </childnode>
-        <childnode refid="130" relation="include">
+        <childnode refid="128" relation="include">
         </childnode>
       </node>
       <node id="119">
@@ -485,26 +473,26 @@
         <childnode refid="6" relation="include">
         </childnode>
       </node>
-      <node id="40">
+      <node id="41">
         <label>gambit/Logs/log_tags.hpp</label>
         <link refid="log__tags_8hpp"/>
       </node>
       <node id="67">
         <label>gambit/Logs/logger.hpp</label>
         <link refid="logger_8hpp"/>
-        <childnode refid="11" relation="include">
+        <childnode refid="12" relation="include">
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="37" relation="include">
+        <childnode refid="38" relation="include">
         </childnode>
-        <childnode refid="40" relation="include">
+        <childnode refid="41" relation="include">
         </childnode>
         <childnode refid="68" relation="include">
         </childnode>
-        <childnode refid="28" relation="include">
+        <childnode refid="29" relation="include">
         </childnode>
       </node>
       <node id="70">
@@ -512,7 +500,7 @@
         <link refid="logmaster_8hpp"/>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="37" relation="include">
+        <childnode refid="38" relation="include">
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
@@ -520,15 +508,15 @@
         </childnode>
         <childnode refid="49" relation="include">
         </childnode>
-        <childnode refid="43" relation="include">
+        <childnode refid="44" relation="include">
         </childnode>
         <childnode refid="56" relation="include">
         </childnode>
-        <childnode refid="12" relation="include">
+        <childnode refid="13" relation="include">
         </childnode>
         <childnode refid="67" relation="include">
         </childnode>
-        <childnode refid="40" relation="include">
+        <childnode refid="41" relation="include">
         </childnode>
       </node>
       <node id="103">
@@ -536,7 +524,7 @@
         <link refid="subspectrum__contents_8hpp"/>
         <childnode refid="102" relation="include">
         </childnode>
-        <childnode refid="41" relation="include">
+        <childnode refid="42" relation="include">
         </childnode>
       </node>
       <node id="71">
@@ -546,7 +534,7 @@
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="37" relation="include">
+        <childnode refid="38" relation="include">
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
@@ -556,13 +544,13 @@
         <link refid="partmap_8hpp"/>
         <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="10" relation="include">
+        <childnode refid="11" relation="include">
         </childnode>
       </node>
       <node id="105">
         <label>gambit/Models/safe_param_map.hpp</label>
         <link refid="safe__param__map_8hpp"/>
-        <childnode refid="16" relation="include">
+        <childnode refid="17" relation="include">
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
@@ -576,7 +564,7 @@
         <link refid="basebaseprinter_8hpp"/>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="11" relation="include">
+        <childnode refid="12" relation="include">
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
@@ -584,7 +572,7 @@
         </childnode>
         <childnode refid="82" relation="include">
         </childnode>
-        <childnode refid="16" relation="include">
+        <childnode refid="17" relation="include">
         </childnode>
         <childnode refid="83" relation="include">
         </childnode>
@@ -598,17 +586,17 @@
         </childnode>
         <childnode refid="80" relation="include">
         </childnode>
-        <childnode refid="16" relation="include">
+        <childnode refid="17" relation="include">
         </childnode>
         <childnode refid="63" relation="include">
         </childnode>
-        <childnode refid="19" relation="include">
+        <childnode refid="20" relation="include">
         </childnode>
         <childnode refid="87" relation="include">
         </childnode>
         <childnode refid="66" relation="include">
         </childnode>
-        <childnode refid="28" relation="include">
+        <childnode refid="29" relation="include">
         </childnode>
         <childnode refid="70" relation="include">
         </childnode>
@@ -630,7 +618,7 @@
       <node id="83">
         <label>gambit/Printers/printer_id_tools.hpp</label>
         <link refid="printer__id__tools_8hpp"/>
-        <childnode refid="17" relation="include">
+        <childnode refid="18" relation="include">
         </childnode>
         <childnode refid="84" relation="include">
         </childnode>
@@ -648,75 +636,75 @@
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="10" relation="include">
+        <childnode refid="11" relation="include">
         </childnode>
         <childnode refid="66" relation="include">
         </childnode>
       </node>
-      <node id="19">
+      <node id="20">
         <label>gambit/Utils/boost_fallbacks.hpp</label>
         <link refid="boost__fallbacks_8hpp"/>
-        <childnode refid="20" relation="include">
-        </childnode>
         <childnode refid="21" relation="include">
         </childnode>
         <childnode refid="22" relation="include">
         </childnode>
         <childnode refid="23" relation="include">
         </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
       </node>
-      <node id="24">
+      <node id="25">
         <label>gambit/Utils/cats.hpp</label>
         <link refid="Utils_2include_2gambit_2Utils_2cats_8hpp"/>
       </node>
-      <node id="36">
+      <node id="37">
         <label>gambit/Utils/exceptions.hpp</label>
         <link refid="exceptions_8hpp"/>
         <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="37" relation="include">
+        <childnode refid="38" relation="include">
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="38" relation="include">
+        <childnode refid="39" relation="include">
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="39" relation="include">
-        </childnode>
-        <childnode refid="17" relation="include">
-        </childnode>
         <childnode refid="40" relation="include">
         </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
       </node>
-      <node id="28">
+      <node id="29">
         <label>gambit/Utils/export_symbols.hpp</label>
         <link refid="export__symbols_8hpp"/>
       </node>
       <node id="87">
         <label>gambit/Utils/factory_registry.hpp</label>
         <link refid="factory__registry_8hpp"/>
-        <childnode refid="44" relation="include">
+        <childnode refid="45" relation="include">
         </childnode>
-        <childnode refid="39" relation="include">
+        <childnode refid="40" relation="include">
         </childnode>
         <childnode refid="69" relation="include">
         </childnode>
-        <childnode refid="11" relation="include">
+        <childnode refid="12" relation="include">
         </childnode>
-        <childnode refid="46" relation="include">
+        <childnode refid="8" relation="include">
         </childnode>
         <childnode refid="57" relation="include">
         </childnode>
       </node>
-      <node id="26">
+      <node id="27">
         <label>gambit/Utils/local_info.hpp</label>
         <link refid="local__info_8hpp"/>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="27" relation="include">
+        <childnode refid="28" relation="include">
         </childnode>
-        <childnode refid="25" relation="include">
+        <childnode refid="26" relation="include">
         </childnode>
       </node>
       <node id="66">
@@ -726,9 +714,9 @@
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="42" relation="include">
+        <childnode refid="43" relation="include">
         </childnode>
-        <childnode refid="28" relation="include">
+        <childnode refid="29" relation="include">
         </childnode>
       </node>
       <node id="85">
@@ -740,7 +728,7 @@
         <link refid="new__mpi__datatypes_8hpp"/>
         <childnode refid="85" relation="include">
         </childnode>
-        <childnode refid="28" relation="include">
+        <childnode refid="29" relation="include">
         </childnode>
         <childnode refid="69" relation="include">
         </childnode>
@@ -758,21 +746,21 @@
       <node id="94">
         <label>gambit/Utils/slhaea_helpers.hpp</label>
         <link refid="slhaea__helpers_8hpp"/>
-        <childnode refid="16" relation="include">
+        <childnode refid="17" relation="include">
         </childnode>
-        <childnode refid="10" relation="include">
+        <childnode refid="11" relation="include">
         </childnode>
         <childnode refid="95" relation="include">
         </childnode>
         <childnode refid="96" relation="include">
         </childnode>
       </node>
-      <node id="16">
+      <node id="17">
         <label>gambit/Utils/standalone_error_handlers.hpp</label>
         <link refid="standalone__error__handlers_8hpp"/>
-        <childnode refid="17" relation="include">
+        <childnode refid="18" relation="include">
         </childnode>
-        <childnode refid="36" relation="include">
+        <childnode refid="37" relation="include">
         </childnode>
       </node>
       <node id="68">
@@ -780,7 +768,7 @@
         <link refid="stream__overloads_8hpp"/>
         <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="37" relation="include">
+        <childnode refid="38" relation="include">
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
@@ -789,7 +777,7 @@
         <childnode refid="69" relation="include">
         </childnode>
       </node>
-      <node id="25">
+      <node id="26">
         <label>gambit/Utils/stringify.hpp</label>
         <link refid="stringify_8hpp"/>
       </node>
@@ -802,7 +790,7 @@
         </childnode>
         <childnode refid="59" relation="include">
         </childnode>
-        <childnode refid="10" relation="include">
+        <childnode refid="11" relation="include">
         </childnode>
         <childnode refid="51" relation="include">
         </childnode>
@@ -813,20 +801,18 @@
         <childnode refid="62" relation="include">
         </childnode>
       </node>
-      <node id="17">
+      <node id="18">
         <label>gambit/Utils/util_macros.hpp</label>
         <link refid="util__macros_8hpp"/>
-        <childnode refid="18" relation="include">
-        </childnode>
         <childnode refid="19" relation="include">
         </childnode>
-        <childnode refid="24" relation="include">
+        <childnode refid="20" relation="include">
         </childnode>
         <childnode refid="25" relation="include">
         </childnode>
         <childnode refid="26" relation="include">
         </childnode>
-        <childnode refid="28" relation="include">
+        <childnode refid="27" relation="include">
         </childnode>
         <childnode refid="29" relation="include">
         </childnode>
@@ -842,15 +828,15 @@
         </childnode>
         <childnode refid="35" relation="include">
         </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
       </node>
-      <node id="10">
+      <node id="11">
         <label>gambit/Utils/util_types.hpp</label>
         <link refid="util__types_8hpp"/>
         <childnode refid="6" relation="include">
         </childnode>
         <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="11" relation="include">
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
@@ -862,29 +848,31 @@
         </childnode>
         <childnode refid="16" relation="include">
         </childnode>
-        <childnode refid="41" relation="include">
+        <childnode refid="17" relation="include">
         </childnode>
-        <childnode refid="26" relation="include">
-        </childnode>
-      </node>
-      <node id="41">
-        <label>gambit/Utils/variadic_functions.hpp</label>
-        <link refid="variadic__functions_8hpp"/>
         <childnode refid="42" relation="include">
         </childnode>
-        <childnode refid="43" relation="include">
+        <childnode refid="27" relation="include">
         </childnode>
-        <childnode refid="3" relation="include">
+      </node>
+      <node id="42">
+        <label>gambit/Utils/variadic_functions.hpp</label>
+        <link refid="variadic__functions_8hpp"/>
+        <childnode refid="43" relation="include">
         </childnode>
         <childnode refid="44" relation="include">
         </childnode>
-        <childnode refid="45" relation="include">
+        <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="6" relation="include">
+        <childnode refid="45" relation="include">
         </childnode>
         <childnode refid="46" relation="include">
         </childnode>
-        <childnode refid="37" relation="include">
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
         </childnode>
         <childnode refid="47" relation="include">
         </childnode>
@@ -904,17 +892,17 @@
         <link refid="yaml__node__utility_8hpp"/>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="42" relation="include">
+        <childnode refid="43" relation="include">
         </childnode>
         <childnode refid="65" relation="include">
         </childnode>
         <childnode refid="59" relation="include">
         </childnode>
-        <childnode refid="13" relation="include">
+        <childnode refid="14" relation="include">
         </childnode>
         <childnode refid="52" relation="include">
         </childnode>
-        <childnode refid="16" relation="include">
+        <childnode refid="17" relation="include">
         </childnode>
       </node>
       <node id="63">
@@ -922,11 +910,11 @@
         <link refid="yaml__options_8hpp"/>
         <childnode refid="5" relation="include">
         </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
         <childnode refid="11" relation="include">
         </childnode>
-        <childnode refid="10" relation="include">
-        </childnode>
-        <childnode refid="16" relation="include">
+        <childnode refid="17" relation="include">
         </childnode>
         <childnode refid="54" relation="include">
         </childnode>
@@ -936,9 +924,9 @@
       <node id="78">
         <label>gambit/Utils/yaml_parser_base.hpp</label>
         <link refid="yaml__parser__base_8hpp"/>
-        <childnode refid="16" relation="include">
+        <childnode refid="17" relation="include">
         </childnode>
-        <childnode refid="10" relation="include">
+        <childnode refid="11" relation="include">
         </childnode>
         <childnode refid="63" relation="include">
         </childnode>
@@ -970,46 +958,43 @@
       <node id="61">
         <label>boost/algorithm/string/classification.hpp</label>
       </node>
-      <node id="125">
-        <label>boost/algorithm/string/replace.hpp</label>
-      </node>
       <node id="60">
         <label>boost/algorithm/string/split.hpp</label>
       </node>
-      <node id="27">
+      <node id="28">
         <label>boost/current_function.hpp</label>
       </node>
-      <node id="22">
+      <node id="23">
         <label>boost/detail/workaround.hpp</label>
       </node>
       <node id="116">
         <label>boost/enable_shared_from_this.hpp</label>
       </node>
-      <node id="131">
+      <node id="129">
         <label>boost/graph/adjacency_list.hpp</label>
       </node>
-      <node id="132">
+      <node id="130">
         <label>boost/graph/topological_sort.hpp</label>
       </node>
-      <node id="33">
+      <node id="34">
         <label>boost/preprocessor/arithmetic/sub.hpp</label>
       </node>
-      <node id="23">
+      <node id="24">
         <label>boost/preprocessor/cat.hpp</label>
       </node>
-      <node id="32">
+      <node id="33">
         <label>boost/preprocessor/comparison/equal.hpp</label>
       </node>
-      <node id="21">
+      <node id="22">
         <label>boost/preprocessor/config/config.hpp</label>
       </node>
-      <node id="31">
+      <node id="32">
         <label>boost/preprocessor/control/if.hpp</label>
       </node>
-      <node id="34">
+      <node id="35">
         <label>boost/preprocessor/punctuation/comma.hpp</label>
       </node>
-      <node id="35">
+      <node id="36">
         <label>boost/preprocessor/punctuation/paren.hpp</label>
       </node>
       <node id="81">
@@ -1018,10 +1003,10 @@
       <node id="88">
         <label>boost/preprocessor/seq/for_each_i.hpp</label>
       </node>
-      <node id="29">
+      <node id="30">
         <label>boost/preprocessor/seq/size.hpp</label>
       </node>
-      <node id="30">
+      <node id="31">
         <label>boost/preprocessor/tuple/elem.hpp</label>
       </node>
       <node id="96">
@@ -1030,10 +1015,10 @@
       <node id="115">
         <label>boost/shared_ptr.hpp</label>
       </node>
-      <node id="20">
+      <node id="21">
         <label>boost/version.hpp</label>
       </node>
-      <node id="45">
+      <node id="46">
         <label>cassert</label>
       </node>
       <node id="99">
@@ -1045,31 +1030,31 @@
       <node id="59">
         <label>cmath</label>
       </node>
-      <node id="14">
+      <node id="15">
         <label>complex</label>
       </node>
-      <node id="13">
+      <node id="14">
         <label>cstring</label>
       </node>
       <node id="49">
         <label>deque</label>
       </node>
-      <node id="38">
+      <node id="39">
         <label>exception</label>
       </node>
       <node id="48">
         <label>forward_list</label>
       </node>
-      <node id="43">
+      <node id="44">
         <label>fstream</label>
       </node>
-      <node id="128">
+      <node id="126">
         <label>gambit/Backends/backend_types_rollcall.hpp</label>
       </node>
-      <node id="129">
+      <node id="127">
         <label>gambit/Elements/module_types_rollcall.hpp</label>
       </node>
-      <node id="130">
+      <node id="128">
         <label>gambit/Models/model_types_rollcall.hpp</label>
       </node>
       <node id="51">
@@ -1081,7 +1066,7 @@
       <node id="117">
         <label>gsl/gsl_integration.h</label>
       </node>
-      <node id="42">
+      <node id="43">
         <label>iostream</label>
       </node>
       <node id="65">
@@ -1093,13 +1078,13 @@
       <node id="6">
         <label>map</label>
       </node>
-      <node id="15">
+      <node id="16">
         <label>memory</label>
       </node>
       <node id="62">
         <label>mkpath/mkpath.h</label>
       </node>
-      <node id="12">
+      <node id="13">
         <label>omp.h</label>
       </node>
       <node id="69">
@@ -1108,10 +1093,10 @@
       <node id="7">
         <label>queue</label>
       </node>
-      <node id="37">
+      <node id="38">
         <label>set</label>
       </node>
-      <node id="11">
+      <node id="12">
         <label>sstream</label>
       </node>
       <node id="106">
@@ -1126,19 +1111,19 @@
       <node id="3">
         <label>string</label>
       </node>
-      <node id="44">
+      <node id="45">
         <label>type_traits</label>
       </node>
-      <node id="18">
+      <node id="19">
         <label>unistd.h</label>
       </node>
-      <node id="46">
+      <node id="8">
         <label>unordered_map</label>
       </node>
       <node id="47">
         <label>unordered_set</label>
       </node>
-      <node id="39">
+      <node id="40">
         <label>utility</label>
       </node>
       <node id="5">
@@ -1159,7 +1144,7 @@
       </node>
       <node id="2">
         <label>diagnostics.cpp</label>
-        <link refid="diagnostics_8cpp"/>
+        <link refid="Core_2src_2diagnostics_8cpp"/>
       </node>
       <node id="3">
         <label>modelgraph.cpp</label>
@@ -1177,7 +1162,7 @@
 <para>Model graph declarations.</para>
 <para><hruler/>
 </para>
-<sect1 id="modelgraph_8hpp_1autotoc_md5">
+<sect1 id="modelgraph_8hpp_1autotoc_md9">
 <title>Authors</title>
 <para>(add name and date if you modify)</para>
 <para><simplesect kind="author"><para>Ben Farmer (<ulink url="mailto:benjamin.farmer@monash.edu.au">benjamin.farmer@monash.edu.au</ulink>) </para>

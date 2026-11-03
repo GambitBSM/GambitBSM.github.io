@@ -3040,7 +3040,7 @@ namespace Gambit {
     }
 
 
-    
+
     P2 ALEPHSmuonLimitAt208GeV::convertPt(double x, double y) const
     {
       return P2(50. + (x - 240.00) / (883.00 - 240.00) * (100. - 50.),
@@ -6206,12 +6206,12 @@ namespace Gambit {
       return P2(50. + (x - 232.00) / (875.00 - 232.00) * (100. - 50.),
                 100. + (y - 66.00) / (805.00 - 66.00) * (0. - 100.));
     }
-    
+
     bool ALEPHStauLimitAt208GeV::isWithinExclusionRegion(double x, double y, double mZ) const
     {
       return (y <= x and x <= 208. / 2. and x > mZ / 2.);
     }
-    
+
     ALEPHStauLimitAt208GeV::ALEPHStauLimitAt208GeV()
     {
       ///// Limit values /////
@@ -8025,4 +8025,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:35 +0000
+Updated on 2026-11-03 at 14:50:48 +0000

@@ -15,7 +15,6 @@ description: "[No description available]"
 | -------------- |
 | **[Utils/ascii_dict_reader.hpp](/documentation/code/files/ascii__dict__reader_8hpp/#file-utils-ascii-dict-reader-hpp)**  |
 | **[Utils/ascii_table_reader.hpp](/documentation/code/files/ascii__table__reader_8hpp/#file-utils-ascii-table-reader-hpp)**  |
-| **[Utils/begin_ignore_warnings_eigen.hpp](/documentation/code/files/begin__ignore__warnings__eigen_8hpp/#file-utils-begin-ignore-warnings-eigen-hpp)**  |
 | **[Utils/begin_ignore_warnings_hepmc.hpp](/documentation/code/files/begin__ignore__warnings__hepmc_8hpp/#file-utils-begin-ignore-warnings-hepmc-hpp)**  |
 | **[Utils/begin_ignore_warnings_mpi.hpp](/documentation/code/files/begin__ignore__warnings__mpi_8hpp/#file-utils-begin-ignore-warnings-mpi-hpp)**  |
 | **[Utils/begin_ignore_warnings_pybind11.hpp](/documentation/code/files/begin__ignore__warnings__pybind11_8hpp/#file-utils-begin-ignore-warnings-pybind11-hpp)**  |
@@ -35,6 +34,7 @@ description: "[No description available]"
 | **[Utils/lnlike_modifiers.hpp](/documentation/code/files/lnlike__modifiers_8hpp/#file-utils-lnlike-modifiers-hpp)**  |
 | **[Utils/local_info.hpp](/documentation/code/files/local__info_8hpp/#file-utils-local-info-hpp)**  |
 | **[Utils/model_parameters.hpp](/documentation/code/files/model__parameters_8hpp/#file-utils-model-parameters-hpp)**  |
+| **[Utils/model_validation.hpp](/documentation/code/files/model__validation_8hpp/#file-utils-model-validation-hpp)**  |
 | **[Utils/mpiwrapper.hpp](/documentation/code/files/mpiwrapper_8hpp/#file-utils-mpiwrapper-hpp)**  |
 | **[Utils/new_mpi_datatypes.hpp](/documentation/code/files/new__mpi__datatypes_8hpp/#file-utils-new-mpi-datatypes-hpp)**  |
 | **[Utils/numerical_constants.hpp](/documentation/code/files/numerical__constants_8hpp/#file-utils-numerical-constants-hpp)**  |
@@ -72,4 +72,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:33 +0000
+Updated on 2026-11-03 at 14:50:44 +0000

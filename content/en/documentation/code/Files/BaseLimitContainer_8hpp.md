@@ -135,7 +135,7 @@ namespace Gambit
         virtual ~BaseLimitContainer();
 
       //@}
-      
+
       /// @name Point interpolation, conversion, and region checks
       //@{
 
@@ -149,7 +149,7 @@ namespace Gambit
 
         /// @brief Return the limit value outside of the exclusion region
         virtual double specialLimit(double, double) const;
-        
+
         /// @brief Two-pi averaging interpolator to find limits between limit curves
         double limitAverage(double x, double y, double mZ) const;
 
@@ -170,4 +170,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:35 +0000
+Updated on 2026-11-03 at 14:50:47 +0000

@@ -213,7 +213,7 @@ namespace Gambit
       // Iterate over the entries in the functionChain
       for (auto it = functionChain.begin(); it != functionChain.end() - 1; ++it)
       {
-        // Function is allowed if somewhere in the chain it is directly preceeded by the dependent function.
+        // Function is allowed if somewhere in the chain it is directly preceded by the dependent function.
         if ((*it) == dependee->name()) return (*(it+1) == candidate->name());
       }
       return true;
@@ -236,4 +236,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:35 +0000
+Updated on 2026-11-03 at 14:50:47 +0000

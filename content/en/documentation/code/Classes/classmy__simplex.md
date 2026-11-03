@@ -18,7 +18,7 @@ description: "[No description available]"
 | | **[my_simplex](/documentation/code/classes/classmy__simplex/#function-my-simplex)**(int dd, double aalpha, double bbeta, double ggamma, [my_func](/documentation/code/classes/structmy__func/) * ff) |
 | void | **[find_min](/documentation/code/classes/classmy__simplex/#function-find-min)**() |
 | void | **[find_max](/documentation/code/classes/classmy__simplex/#function-find-max)**() |
-| void | **[my_SetUp](/documentation/code/classes/classmy__simplex/#function-my-setup)**(double xin[]) |
+| void | **[my_SetUp](/documentation/code/classes/classmy__simplex/#function-my-setup)**(double xin[DMAX *(DMAX+1)]) |
 | void | **[set_y](/documentation/code/classes/classmy__simplex/#function-set-y)**() |
 | void | **[my_Centroid](/documentation/code/classes/classmy__simplex/#function-my-centroid)**(int h) |
 | void | **[my_Reflection](/documentation/code/classes/classmy__simplex/#function-my-reflection)**() |
@@ -95,7 +95,7 @@ void find_max()
 
 ```
 void my_SetUp(
-    double xin[]
+    double xin[DMAX *(DMAX+1)]
 )
 ```
 
@@ -365,4 +365,4 @@ int inmax;
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:30 +0000
+Updated on 2026-11-03 at 14:50:41 +0000

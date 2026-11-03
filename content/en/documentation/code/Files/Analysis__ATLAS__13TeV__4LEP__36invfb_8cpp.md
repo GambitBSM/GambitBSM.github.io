@@ -63,14 +63,6 @@ namespace Gambit
 
     protected:
 
-      // Counters for the number of accepted events for each signal region
-      std::map<string, EventCounter> _counters = {
-        {"SR0A", EventCounter("SR0A")},
-        {"SR0B", EventCounter("SR0B")},
-        {"SR0C", EventCounter("SR0C")},
-        {"SR0D", EventCounter("SR0D")},
-      };
-
     private:
 
       #ifdef CHECK_CUTFLOW
@@ -183,7 +175,16 @@ namespace Gambit
       Analysis_ATLAS_13TeV_4LEP_36invfb()
       {
 
+        // Counters for the number of accepted events for each signal region
+        _counters["SR0A"] = EventCounter("SR0A");
+        _counters["SR0B"] = EventCounter("SR0B");
+        _counters["SR0C"] = EventCounter("SR0C");
+        _counters["SR0D"] = EventCounter("SR0D");
+
+
+
         set_analysis_name("ATLAS_13TeV_4LEP_36invfb");
+        set_detector_name(detector);
         set_luminosity(36.1);
 
         #ifdef CHECK_CUTFLOW
@@ -232,10 +233,10 @@ namespace Gambit
         }
 
         // Apply electron efficiency
-        ATLAS::applyElectronEff(baselineElectrons);
+        applyEfficiency(baselineElectrons, ATLAS::eff2DEl.at("Generic"));
 
         // Apply loose electron selection
-        ATLAS::applyLooseIDElectronSelectionR2(baselineElectrons);
+        applyEfficiency(baselineElectrons, ATLAS::eff2DEl.at("ATLAS_PHYS_PUB_2015_041_Loose"));
 
         for (const HEPUtils::Particle* muon : event->muons())
         {
@@ -243,7 +244,7 @@ namespace Gambit
         }
 
         // Apply muon efficiency
-        ATLAS::applyMuonEff(baselineMuons);
+        applyEfficiency(baselineMuons, ATLAS::eff2DMu.at("Generic"));
 
         // Missing: Apply "medium" muon ID criteria
 
@@ -252,7 +253,7 @@ namespace Gambit
           if (tau->pT()>20. && tau->abseta()<2.47) baselineTaus.push_back(tau);
         }
         // Since tau efficiencies are not applied as part of the BuckFast ATLAS sim we apply it here
-        ATLAS::applyTauEfficiencyR2(baselineTaus);
+        applyEfficiency(baselineTaus, ATLAS::eff1DTau.at("R2"));
 
         for (const HEPUtils::Jet* jet : event->jets("antikt_R04"))
         {
@@ -492,22 +493,6 @@ namespace Gambit
         #endif
       }
 
-      /// Combine the variables of another copy of this analysis (typically on another thread) into this one.
-      void combine(const Analysis* other)
-      {
-        const Analysis_ATLAS_13TeV_4LEP_36invfb* specificOther
-                = dynamic_cast<const Analysis_ATLAS_13TeV_4LEP_36invfb*>(other);
-
-        for (auto& pair : _counters) { pair.second += specificOther->_counters.at(pair.first); }
-
-        #ifdef CHECK_CUTFLOW
-          // if (NCUTS != specificOther->NCUTS) NCUTS = specificOther->NCUTS;
-          for (size_t j = 0; j < NCUTS; j++) {
-            cutFlowVector[j] += specificOther->cutFlowVector[j];
-            cutFlowVector_str[j] = specificOther->cutFlowVector_str[j];
-          }
-        #endif
-      }
 
       // This function can be overridden by the derived SR-specific classes
       virtual void collect_results() {
@@ -560,4 +545,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:35 +0000
+Updated on 2026-11-03 at 14:50:47 +0000

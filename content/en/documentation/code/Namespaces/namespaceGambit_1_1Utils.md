@@ -47,6 +47,9 @@ description: "[No description available]"
 | double | **[run_lnlike_modifier](/documentation/code/namespaces/namespacegambit_1_1utils/#function-run-lnlike-modifier)**(double lnlike, const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) & lnlike_modifier_name, const [Options](/documentation/code/classes/classgambit_1_1options/) & lnlike_modifier_options)<br>Interface function that calls the correct modifier function based on the name in lnlike_modifier_name.  |
 | double | **[lnlike_modifier_gaussian](/documentation/code/namespaces/namespacegambit_1_1utils/#function-lnlike-modifier-gaussian)**(double lnlike, const [Options](/documentation/code/classes/classgambit_1_1options/) & lnlike_modifier_options)<br>lnlike modifier: gaussian  |
 | double | **[lnlike_modifier_gaussian_plateau](/documentation/code/namespaces/namespacegambit_1_1utils/#function-lnlike-modifier-gaussian-plateau)**(double lnlike, const [Options](/documentation/code/classes/classgambit_1_1options/) & lnlike_modifier_options)<br>lnlike modifier: gaussian_plateau  |
+| std::string | **[getEnvVar](/documentation/code/namespaces/namespacegambit_1_1utils/#function-getenvvar)**(std::string const & key)<br>Get an environment variable, or "" if the variable is not set.  |
+| EXPORT_SYMBOLS const std::string & | **[GAMBIT_root_dir](/documentation/code/namespaces/namespacegambit_1_1utils/#function-gambit-root-dir)**() |
+| EXPORT_SYMBOLS const std::string & | **[buildtime_scratch](/documentation/code/namespaces/namespacegambit_1_1utils/#function-buildtime-scratch)**()<br>Return the path to the build-time scratch directory.  |
 | EXPORT_SYMBOLS const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) & | **[runtime_scratch](/documentation/code/namespaces/namespacegambit_1_1utils/#function-runtime-scratch)**() |
 | EXPORT_SYMBOLS [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[p2dot](/documentation/code/namespaces/namespacegambit_1_1utils/#function-p2dot)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) s)<br>Convert all instances of "p" in a string to ".".  |
 | EXPORT_SYMBOLS [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[construct_runtime_scratch](/documentation/code/namespaces/namespacegambit_1_1utils/#function-construct-runtime-scratch)**(bool fail_on_mpi_uninitialised =true) |
@@ -81,12 +84,17 @@ description: "[No description available]"
 | bool | **[check2](/documentation/code/namespaces/namespacegambit_1_1utils/#function-check2)**(const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) & s1, const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) & s2)<br>true if s1 can be obtained from s2 by changing no more than X characters (X=2 for now)  |
 | EXPORT_SYMBOLS double | **[sqr](/documentation/code/namespaces/namespacegambit_1_1utils/#function-sqr)**(double a)<br>returns square of double - saves tedious repetition  |
 | EXPORT_SYMBOLS bool | **[isInteger](/documentation/code/namespaces/namespacegambit_1_1utils/#function-isinteger)**(const std::string & s) |
+| EXPORT_SYMBOLS bool | **[all_of](/documentation/code/namespaces/namespacegambit_1_1utils/#function-all-of)**(const std::vector< bool > & vec)<br>Wrappers of all_of, any_of and none_of using vectors.  |
+| EXPORT_SYMBOLS bool | **[any_of](/documentation/code/namespaces/namespacegambit_1_1utils/#function-any-of)**(const std::vector< bool > & vec) |
+| EXPORT_SYMBOLS bool | **[none_of](/documentation/code/namespaces/namespacegambit_1_1utils/#function-none-of)**(const std::vector< bool > & vec) |
+| EXPORT_SYMBOLS std::vector< double > | **[outer_product](/documentation/code/namespaces/namespacegambit_1_1utils/#function-outer-product)**(const std::vector< double > & v1, const std::vector< double > & v2)<br>Perform outer product of two vectors.  |
 | template <typename... T\> <br>void | **[dummy_function](/documentation/code/namespaces/namespacegambit_1_1utils/#function-dummy-function)**() |
 | template <typename T \> <br>void | **[dummy_function](/documentation/code/namespaces/namespacegambit_1_1utils/#function-dummy-function)**(T one) |
 | template <typename T1 ,typename... T\> <br>void | **[dummy_function](/documentation/code/namespaces/namespacegambit_1_1utils/#function-dummy-function)**(T1 first, T... args) |
 | template <template< class, class > class Container,class T \> <br>void | **[masked_erase](/documentation/code/namespaces/namespacegambit_1_1utils/#function-masked-erase)**(Container< std::pair< T, bool >, std::allocator< std::pair< T, bool > > > & c) |
 | void | **[InterpIter](/documentation/code/namespaces/namespacegambit_1_1utils/#function-interpiter)**(int Ntemp, double xi_1, double xi_2, std::vector< double > & fi, double test) |
 | double | **[linearinterp1D](/documentation/code/namespaces/namespacegambit_1_1utils/#function-linearinterp1d)**(double x1, double x2, double y1, double y2, double xtest) |
+| std::string | **[get_GAMBIT_root_dir](/documentation/code/namespaces/namespacegambit_1_1utils/#function-get-gambit-root-dir)**() |
 | bool | **[sspairset_contains](/documentation/code/namespaces/namespacegambit_1_1utils/#function-sspairset-contains)**(const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) & el, const std::set< std::pair< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > > & set)<br>Test if a set of str,str pairs contains any entry with first element matching a given string.  |
 | bool | **[sspairset_contains](/documentation/code/namespaces/namespacegambit_1_1utils/#function-sspairset-contains)**(const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) & el1, const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) & el2, const std::set< std::pair< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > > & set)<br>Tests if a set of str,str pairs contains an entry matching two given strings.  |
 
@@ -94,7 +102,6 @@ description: "[No description available]"
 
 |                | Name           |
 | -------------- | -------------- |
-| const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[buildtime_scratch](/documentation/code/namespaces/namespacegambit_1_1utils/#variable-buildtime-scratch)** <br>Return the path to the build-time scratch directory.  |
 | const char *[] | **[whitespaces](/documentation/code/namespaces/namespacegambit_1_1utils/#variable-whitespaces)**  |
 
 ## Types Documentation
@@ -211,6 +218,38 @@ double lnlike_modifier_gaussian_plateau(
 ```
 
 lnlike modifier: gaussian_plateau 
+
+### function getEnvVar
+
+```
+std::string getEnvVar(
+    std::string const & key
+)
+```
+
+Get an environment variable, or "" if the variable is not set. 
+
+### function GAMBIT_root_dir
+
+```
+EXPORT_SYMBOLS const std::string & GAMBIT_root_dir()
+```
+
+
+Return the root directory of GAMBIT. Useful for locating configuration files and other such things in a robust manner at runtime 
+Return the root directory of GAMBIT. Useful for locating configuration files and other such things in a robust manner 
+
+
+### function buildtime_scratch
+
+```
+EXPORT_SYMBOLS const std::string & buildtime_scratch()
+```
+
+Return the path to the build-time scratch directory. 
+
+Return the path to the build-time scratch directory bjf> There is stuff using this variable that is needed by ScannerBit at run time, not just build time, therefore it needs to be located using the function above 
+
 
 ### function runtime_scratch
 
@@ -613,6 +652,45 @@ EXPORT_SYMBOLS bool isInteger(
 Check if a string represents an integer From: [http://stackoverflow.com/a/2845275/1447953](http://stackoverflow.com/a/2845275/1447953)
 
 
+### function all_of
+
+```
+EXPORT_SYMBOLS bool all_of(
+    const std::vector< bool > & vec
+)
+```
+
+Wrappers of all_of, any_of and none_of using vectors. 
+
+### function any_of
+
+```
+EXPORT_SYMBOLS bool any_of(
+    const std::vector< bool > & vec
+)
+```
+
+
+### function none_of
+
+```
+EXPORT_SYMBOLS bool none_of(
+    const std::vector< bool > & vec
+)
+```
+
+
+### function outer_product
+
+```
+EXPORT_SYMBOLS std::vector< double > outer_product(
+    const std::vector< double > & v1,
+    const std::vector< double > & v2
+)
+```
+
+Perform outer product of two vectors. 
+
 ### function dummy_function
 
 ```
@@ -683,6 +761,16 @@ double linearinterp1D(
 ```
 
 
+### function get_GAMBIT_root_dir
+
+```
+std::string get_GAMBIT_root_dir()
+```
+
+
+The initial assumption is that this is provided by CMake via the GAMBIT_RUN_DIR variable However, in situations where GAMBIT is built in some temporary directory and then moved (as occurs in the pip installation of pyScannerBit), then we need to locate the root directory via an environment variable at runtime instead. If this environment variable is set then it will override the value set at build time.
+
+
 ### function sspairset_contains
 
 ```
@@ -709,14 +797,6 @@ Tests if a set of str,str pairs contains an entry matching two given strings.
 
 ## Attributes Documentation
 
-### variable buildtime_scratch
-
-```
-const str buildtime_scratch = GAMBIT_DIR "/scratch/build_time/";
-```
-
-Return the path to the build-time scratch directory. 
-
 ### variable whitespaces
 
 ```
@@ -729,4 +809,4 @@ const char *[] whitespaces = {" ", "\t", "\n", "\f", "\r"};
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:33 +0000
+Updated on 2026-11-03 at 14:50:44 +0000

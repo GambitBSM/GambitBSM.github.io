@@ -32,6 +32,7 @@ Inherited by [Gambit::Priors::Cauchy](/documentation/code/classes/classgambit_1_
 | std::vector< double > | **[inverse_transform](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/#function-inverse-transform)**(const std::unordered_map< std::string, double > & physical) const |
 | virtual double | **[log_prior_density](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/#function-log-prior-density)**(const std::unordered_map< std::string, double > & ) const =0<br>Log of prior density.  |
 | virtual std::vector< std::string > | **[getShownParameters](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/#function-getshownparameters)**() const |
+| virtual std::vector< std::string > | **[getSetParameters](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/#function-getsetparameters)**() const |
 | unsigned int | **[size](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/#function-size)**() const |
 | void | **[setSize](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/#function-setsize)**(const unsigned int size) |
 | unsigned int & | **[sizeRef](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/#function-sizeref)**() |
@@ -164,7 +165,7 @@ virtual double log_prior_density(
 
 Log of prior density. 
 
-**Reimplemented by**: [Gambit::Priors::DoubleLogFlatJoin::log_prior_density](/documentation/code/classes/classgambit_1_1priors_1_1doublelogflatjoin/#function-log-prior-density), [Gambit::Priors::Dummy::log_prior_density](/documentation/code/classes/classgambit_1_1priors_1_1dummy/#function-log-prior-density), [Gambit::Priors::None::log_prior_density](/documentation/code/classes/classgambit_1_1priors_1_1none/#function-log-prior-density), [Gambit::Priors::Gaussian::log_prior_density](/documentation/code/classes/classgambit_1_1priors_1_1gaussian/#function-log-prior-density), [Gambit::Priors::LogNormal::log_prior_density](/documentation/code/classes/classgambit_1_1priors_1_1lognormal/#function-log-prior-density), [Gambit::Priors::Cauchy::log_prior_density](/documentation/code/classes/classgambit_1_1priors_1_1cauchy/#function-log-prior-density), [Gambit::Priors::CompositePrior::log_prior_density](/documentation/code/classes/classgambit_1_1priors_1_1compositeprior/#function-log-prior-density), [Gambit::Priors::FixedPrior::log_prior_density](/documentation/code/classes/classgambit_1_1priors_1_1fixedprior/#function-log-prior-density), [Gambit::Priors::MultiPriors::log_prior_density](/documentation/code/classes/classgambit_1_1priors_1_1multipriors/#function-log-prior-density), [Gambit::Priors::RangePrior1D::log_prior_density](/documentation/code/classes/classgambit_1_1priors_1_1rangeprior1d/#function-log-prior-density), [Gambit::Priors::Plugin::log_prior_density](/documentation/code/classes/classgambit_1_1priors_1_1plugin/#function-log-prior-density)
+**Reimplemented by**: [Gambit::Priors::DoubleLogFlatJoin::log_prior_density](/documentation/code/classes/classgambit_1_1priors_1_1doublelogflatjoin/#function-log-prior-density), [Gambit::Priors::Dummy::log_prior_density](/documentation/code/classes/classgambit_1_1priors_1_1dummy/#function-log-prior-density), [Gambit::Priors::None::log_prior_density](/documentation/code/classes/classgambit_1_1priors_1_1none/#function-log-prior-density), [Gambit::Priors::Cauchy::log_prior_density](/documentation/code/classes/classgambit_1_1priors_1_1cauchy/#function-log-prior-density), [Gambit::Priors::CompositePrior::log_prior_density](/documentation/code/classes/classgambit_1_1priors_1_1compositeprior/#function-log-prior-density), [Gambit::Priors::FixedPrior::log_prior_density](/documentation/code/classes/classgambit_1_1priors_1_1fixedprior/#function-log-prior-density), [Gambit::Priors::MultiPriors::log_prior_density](/documentation/code/classes/classgambit_1_1priors_1_1multipriors/#function-log-prior-density), [Gambit::Priors::RangePrior1D::log_prior_density](/documentation/code/classes/classgambit_1_1priors_1_1rangeprior1d/#function-log-prior-density), [Gambit::Priors::Gaussian::log_prior_density](/documentation/code/classes/classgambit_1_1priors_1_1gaussian/#function-log-prior-density), [Gambit::Priors::LogNormal::log_prior_density](/documentation/code/classes/classgambit_1_1priors_1_1lognormal/#function-log-prior-density), [Gambit::Priors::Plugin::log_prior_density](/documentation/code/classes/classgambit_1_1priors_1_1plugin/#function-log-prior-density)
 
 
 ### function getShownParameters
@@ -175,6 +176,16 @@ inline virtual std::vector< std::string > getShownParameters() const
 
 
 **Reimplemented by**: [Gambit::Priors::CompositePrior::getShownParameters](/documentation/code/classes/classgambit_1_1priors_1_1compositeprior/#function-getshownparameters), [Gambit::Priors::FixedPrior::getShownParameters](/documentation/code/classes/classgambit_1_1priors_1_1fixedprior/#function-getshownparameters), [Gambit::Priors::MultiPriors::getShownParameters](/documentation/code/classes/classgambit_1_1priors_1_1multipriors/#function-getshownparameters)
+
+
+### function getSetParameters
+
+```
+inline virtual std::vector< std::string > getSetParameters() const
+```
+
+
+**Reimplemented by**: [Gambit::Priors::CompositePrior::getSetParameters](/documentation/code/classes/classgambit_1_1priors_1_1compositeprior/#function-getsetparameters)
 
 
 ### function size
@@ -218,4 +229,4 @@ std::vector< std::string > param_names;
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:32 +0000
+Updated on 2026-11-03 at 14:50:44 +0000

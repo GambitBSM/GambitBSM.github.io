@@ -49,7 +49,7 @@ Inherits from [Gambit::Farray< char, 1, len, lims... >](/documentation/code/clas
 |                | Name           |
 | -------------- | -------------- |
 | | **[Farray](/documentation/code/classes/classgambit_1_1farray/#function-farray)**() |
-| | **[Farray](/documentation/code/classes/classgambit_1_1farray/#function-farray)**([Farray](/documentation/code/classes/classgambit_1_1farray/)< T, lims... > & in) |
+| | **[Farray](/documentation/code/classes/classgambit_1_1farray/#function-farray)**(const [Farray](/documentation/code/classes/classgambit_1_1farray/)< T, lims... > & in) |
 | [Farray](/documentation/code/classes/classgambit_1_1farray/)< T, lims... > & | **[operator=](/documentation/code/classes/classgambit_1_1farray/#function-operator)**(const [Farray](/documentation/code/classes/classgambit_1_1farray/)< T, lims... > & orig) |
 | | **[Farray](/documentation/code/classes/classgambit_1_1farray/#function-farray)**(const T val) |
 | [Farray](/documentation/code/classes/classgambit_1_1farray/)< T, lims... > & | **[operator=](/documentation/code/classes/classgambit_1_1farray/#function-operator)**(const T val) |
@@ -86,4 +86,4 @@ inline enable_if_all_member< typenameFarray< char, 1, len, lims... >::allowed_ty
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:31 +0000
+Updated on 2026-11-03 at 14:50:42 +0000

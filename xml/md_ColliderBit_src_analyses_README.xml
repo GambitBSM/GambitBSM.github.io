@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="md_ColliderBit_src_analyses_README" kind="page">
+    <compoundname>md_ColliderBit_src_analyses_README</compoundname>
+    <title>ColliderBit event analyses</title>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>This readme collects information on the ColliderBit event-loop analysis system and the analyses implemented in it.</para>
+<sect1 id="md_ColliderBit_src_analyses_README_1autotoc_md1">
+<title>Analysis writing and registration</title>
+<para>The analysis system is somewhat inspired by Rivet, but much simplified for speed and to reflect the less precise/sensitive nature of most reco-level search analyses as compared to unfolded precision-measurements.</para>
+<para>Analysis codes are all implemented in the <computeroutput>Gambit::ColliderBit</computeroutput> namespace, and inherit from the <computeroutput>Analysis</computeroutput> base class. They are implemented in single <computeroutput>.cpp</computeroutput> source files, with a uniform class and file naming, structured like <computeroutput>Analysis_&lt;EXPT&gt;_&lt;SQRTS&gt;TeV_&lt;SIG&gt;_&lt;INTLUMI&gt;invfb</computeroutput> where EXP, SQRTS, SIG, and INTLUMI are (fairly obviously) respectively the experiment name, the centre of mass energy of the corresponding run in TeV, a terse description of the targeted event signature, and the corresponding integrated luminosity in inverse femtobarns.</para>
+<para>Rather than a dynamic runtime loading system like Rivet, the ColliderBit analyses are compiled into ColliderBit. This is done by registering each analysis class in the <computeroutput><ref refid="AnalysisContainer_8cpp" kindref="compound">AnalysisContainer.cpp</ref></computeroutput> source file, using some preprocessor macros to reduce boilerplate code.</para>
+<para>The best approach to writing and registering analyses is to copy and extend an existing similar analysis.</para>
+</sect1>
+<sect1 id="md_ColliderBit_src_analyses_README_1autotoc_md2">
+<title>Analysis info syntax</title>
+<para>Each analysis code should also have a <computeroutput>.info</computeroutput> metadata file in <ref refid="namespaceYAML" kindref="compound">YAML</ref> format, with the same name stem as its C++ source file (and class name). This metadata contains more precise versions of the experiment and run names, the CoM energy, the integrated luminosity, etc.</para>
+<para>It also contains a structured mini-language for summarising the signal-region (and in future possibly control regions&apos;) final-state signatures, under the <computeroutput>Signatures</computeroutput> key. This metadata entry is a list of structured strings, each qualitatively describing an SR selection in the following scheme:</para>
+<para><itemizedlist>
+<listitem><para>Each string is separated by <computeroutput>+</computeroutput> symbols into a set of independent event-selection requirements, combined with logical AND. The ordering is unimportant.</para>
+</listitem><listitem><para>Each requirement consists of a quantity specifier and a type. Most requirement types are framed as counts of physics objects, but some are boolean event characteristics.</para>
+</listitem><listitem><para>Quantity specifiers are generally numeric inequalities, e.g. <computeroutput>3</computeroutput>, <computeroutput>=2</computeroutput>, <computeroutput>&lt;4</computeroutput>, or <computeroutput>&gt;=1</computeroutput>. A simple numeric count such as <computeroutput>2</computeroutput> means the same as the &quot;exactly equal&quot; requirement, <computeroutput>=2</computeroutput>. Absence of a quantity spec for a physics-object type is interpreted as <computeroutput>&gt;=1</computeroutput>. A special <computeroutput>!</computeroutput> quantity is a synonym for <computeroutput>0</computeroutput>, for more intuitive use with boolean requirements.</para>
+</listitem><listitem><para>Physics-object requirement types, in all cases implying a context-dependent &quot;significant energy&quot; threshold, are:<itemizedlist>
+<listitem><para><computeroutput>L|L2</computeroutput>, <computeroutput>L3</computeroutput>: charged leptons, by default meaning electrons and muons. <computeroutput>L3</computeroutput> variants specifically refer to all three generations, including taus; <computeroutput>L2</computeroutput> specifically limits to e+mu;</para>
+</listitem><listitem><para><computeroutput>E</computeroutput>, <computeroutput>M</computeroutput>: electrons and muons specifically;</para>
+</listitem><listitem><para><computeroutput>TH</computeroutput>: hadronic taus. Leptonic taus are treated as final-state electrons and muons;</para>
+</listitem><listitem><para><computeroutput>SSL|SSL2</computeroutput>, <computeroutput>OSL|OSL2</computeroutput>, + 3-flavour variants: same-sign and opposite-sign leptons. <computeroutput>2</computeroutput> and <computeroutput>3</computeroutput> suffixes can be attached again, defaulting to <computeroutput>2</computeroutput>. The count is the number of leptons, not number of groups;</para>
+</listitem><listitem><para><computeroutput>OSSF|OSSF2</computeroutput>, <computeroutput>SSSF|SSSF2</computeroutput>, <computeroutput>OSOF|OSOF2</computeroutput>, <computeroutput>SSOF|SSOF2</computeroutput>, + 3-flavour variants: pairs of opposite-sign, same-flavour etc. leptons. <computeroutput>2</computeroutput> and <computeroutput>3</computeroutput> suffixes can be attached again, though <computeroutput>3</computeroutput> will be uncommon. The count is the number of pairs, not number of leptons;</para>
+</listitem><listitem><para><computeroutput>DY</computeroutput>: reconstructed candidate photon/Z decay to same-flavour fermions, peaking around the Z or photon pole masses. Probably via leptons. Needed since OSSF doesn&apos;t focus on those mass ranges, which are often specifically excluded;</para>
+</listitem><listitem><para><computeroutput>P</computeroutput>, <computeroutput>J</computeroutput>, <computeroutput>JJ</computeroutput>, <computeroutput>JB|B</computeroutput>, <computeroutput>JC|C</computeroutput>, <computeroutput>JL</computeroutput>: photons, jets, large-R/reclustered jets, and b-, c-, and light-jets;</para>
+</listitem><listitem><para><computeroutput>W</computeroutput>, <computeroutput>Z</computeroutput>, <computeroutput>T</computeroutput>, <computeroutput>H</computeroutput>, <computeroutput>PP</computeroutput>: numbers of Standard Model EW resonances <ndash/> W, Z, top, Higgs, and photon-propagator <ndash/> reconstructed by implied &amp; context-dependent methods (which are not ambiguous and not final-state, so these are discouraged).</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para>Boolean event-characteristic requirement types, which can be negated to favour lower-scale events by using a <computeroutput>!</computeroutput> prefix, are:<itemizedlist>
+<listitem><para><computeroutput>MET|MPT|PTMISS</computeroutput>: synonyms for significantly large missing transverse momentum; no absolute number is implied, other than non-zero;</para>
+</listitem><listitem><para><computeroutput>MT</computeroutput>, <computeroutput>MT2</computeroutput>: high (s)transverse mass between the MET vector and a context-dependent visible physics object;</para>
+</listitem><listitem><para><computeroutput>MLL</computeroutput>, <computeroutput>MJJ</computeroutput>: presence of high-mass object pairs;</para>
+</listitem><listitem><para><computeroutput>HT</computeroutput>, <computeroutput>MEFF</computeroutput>: high general scale of scalar event energy.</para>
+</listitem></itemizedlist>
+</para>
+</listitem><listitem><para><emphasis>Reserved syntax for numeric-cuts:</emphasis> We reserve for expansion a syntax with brackets immediately following the requirement-type term, to permit more detailed specification of cut variables and values, e.g. <computeroutput>MET{100} + HT(&lt; 1000)</computeroutput>, or <computeroutput>3J[PT &gt; 100]</computeroutput>.</para>
+<para>Note that several types of bracket and several syntaxes for their content are illustrated here: this is just to indicate that this is not a currently fixed aspect of the format and users should avoid any ad hoc uses that could clash with it. If you are in that situation or need/want to specify numerical values within the signature syntax, please contact us to discuss the design!</para>
+</listitem></itemizedlist>
+</para>
+<sect2 id="md_ColliderBit_src_analyses_README_1autotoc_md3">
+<title>Examples</title>
+<para><itemizedlist>
+<listitem><para><computeroutput>=2L + OSSF + 1DY + &gt;=2J + MET + MT2</computeroutput>: exactly two leptons (e/mu) in an opposite-sign, same-flavour pair, consistent with Drell-Yan gamma or Z poles, at least two jets, and requiring large missing momentum and stransverse mass;</para>
+</listitem><listitem><para><computeroutput>2L + !DY + &gt;=2J + MET + !MJJ</computeroutput>: exactly two e/mu, not from Drell-Yan dilepton masses if same-flavour, at least two jets, significant missing momentum, small dijet mass;</para>
+</listitem><listitem><para><computeroutput>=1L + 2B + !TH + MET + MT + H</computeroutput>: exactly one e/mu, exactly two b-jets, no hadronic taus, significant MET and transverse mass, event compatible with a Higgs;</para>
+</listitem><listitem><para><computeroutput>&gt;=2SSL + &gt;=2B + &gt;=6J + MET</computeroutput>: at least two same-sign lepton pairs, at least two b-jets, at least 6 jets, and significant missing momentum. </para>
+</listitem></itemizedlist>
+</para>
+</sect2>
+</sect1>
+    </detaileddescription>
+    <location file="ColliderBit/src/analyses/README.md"/>
+  </compounddef>
+</doxygen>

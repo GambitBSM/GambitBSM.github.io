@@ -19,7 +19,7 @@ description: "[No description available]"
 |  | **[BE_FUNCTION](/documentation/code/files/frontend__macros_8hpp/#define-be-function)**(...)  |
 |  | **[BE_FUNCTION_I](/documentation/code/files/frontend__macros_8hpp/#define-be-function-i)**(NAME, TYPE, ARGLIST, SYMBOLNAME, CAPABILITY, MODELS, REF) <br>Main actual backend function macro.  |
 |  | **[BE_CONV_FUNCTION_FULL](/documentation/code/files/frontend__macros_8hpp/#define-be-conv-function-full)**(NAME, TYPE, ARGSLIST, CAPABILITY, MODELS, REF)  |
-|  | **[BACKEND_SPECIFIC_COMPILE_UNIT](/documentation/code/files/frontend__macros_8hpp/#define-backend-specific-compile-unit)** <br>Indicate that this is all occuring in some compile unit other than the main executable.  |
+|  | **[BACKEND_SPECIFIC_COMPILE_UNIT](/documentation/code/files/frontend__macros_8hpp/#define-backend-specific-compile-unit)** <br>Indicate that this is all occurring in some compile unit other than the main executable.  |
 |  | **[BE_INI_DEPENDENCY](/documentation/code/files/frontend__macros_8hpp/#define-be-ini-dependency)**(DEP, TYPE) <br>Dependency macro for point-level backend initialisation functions (in BackendIniBit)  |
 |  | **[BE_INI_CONDITIONAL_DEPENDENCY](/documentation/code/files/frontend__macros_8hpp/#define-be-ini-conditional-dependency)**(DEP, TYPE, ...) <br>Model-conditional dependency macro for point-level backend initialisation functions (in BackendIniBit)  |
 |  | **[BE_ALLOW_MODEL](/documentation/code/files/frontend__macros_8hpp/#define-be-allow-model)**(MODEL) <br>Macro for assigning a single allowed model to an entire backend.  |
@@ -181,7 +181,7 @@ namespace Gambit                                                                
 #define BACKEND_SPECIFIC_COMPILE_UNIT 1
 ```
 
-Indicate that this is all occuring in some compile unit other than the main executable. 
+Indicate that this is all occurring in some compile unit other than the main executable. 
 
 ### define BE_INI_DEPENDENCY
 
@@ -339,7 +339,7 @@ Main actual backend variable macro.
 #include "gambit/Backends/backend_singleton.hpp"
 
 
-/// Indicate that this is all occuring in some compile unit other than the main executable.
+/// Indicate that this is all occurring in some compile unit other than the main executable.
 #define BACKEND_SPECIFIC_COMPILE_UNIT 1
 
 /// Dependency macro for point-level backend initialisation functions (in BackendIniBit)
@@ -481,4 +481,4 @@ namespace Gambit                                                                
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:36 +0000
+Updated on 2026-11-03 at 14:50:49 +0000

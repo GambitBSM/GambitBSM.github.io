@@ -118,7 +118,7 @@ Authors (add name and date if you modify):
         // apply for CLASS input dictionaries
         // e.g. concatenate strings for 'output' option, take
         // more precise values for a given precision parameter (which 
-        // one the more precise one is is set in the string sets
+        // one the more precise one is set in the string sets
         // keep_larger_val and keep_smaller_val defined below)
         void merge_input_dicts(pybind11::dict);
 
@@ -134,7 +134,7 @@ Authors (add name and date if you modify):
         // string lists containing the input parameters for
         // CLASS that are more precise when they take
         // larger/smaller values.
-        // These are used to decide wether to keep the smaller/
+        // These are used to decide whether to keep the smaller/
         // larger value when merging two CLASS input dictionaries
         // containing the same parameter. Hard-coded -- add to these
         // lists if you want to use a parameter that is not implemented yet.
@@ -152,4 +152,4 @@ Authors (add name and date if you modify):
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:36 +0000
+Updated on 2026-11-03 at 14:50:48 +0000

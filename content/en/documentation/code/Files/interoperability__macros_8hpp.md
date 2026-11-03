@@ -33,7 +33,7 @@ description: "[No description available]"
 |  | **[USING_FORTRAN](/documentation/code/files/interoperability__macros_8hpp/#define-using-fortran)** <br>Macro that determines whether the language of the backend is Fortran.  |
 |  | **[USING_MATHEMATICA](/documentation/code/files/interoperability__macros_8hpp/#define-using-mathematica)** <br>Macro that determines whether the language of the backend is Mathematica.  |
 |  | **[USING_PYTHON](/documentation/code/files/interoperability__macros_8hpp/#define-using-python)** <br>Macro that determines whether the language of the backend is Python.  |
-|  | **[DATA_ONLY](/documentation/code/files/interoperability__macros_8hpp/#define-data-only)** <br>Macro that determines whether the the backend is purely data.  |
+|  | **[DATA_ONLY](/documentation/code/files/interoperability__macros_8hpp/#define-data-only)** <br>Macro that determines whether the backend is purely data.  |
 
 ## Detailed Description
 
@@ -232,7 +232,7 @@ Macro that determines whether the language of the backend is Python.
         BOOST_PP_EQUAL(CAT(BACKENDLANG,_LANG), DATA_LANG), 0)
 ```
 
-Macro that determines whether the the backend is purely data. 
+Macro that determines whether the backend is purely data. 
 
 ## Source code
 
@@ -333,7 +333,7 @@ Macro that determines whether the the backend is purely data.
 #define USING_PYTHON IF_ELSE_TOKEN_DEFINED(BACKENDLANG,                                         \
         BOOST_PP_EQUAL(CAT(BACKENDLANG,_LANG), PYTHON_LANG), 0)
 
-/// Macro that determines whether the the backend is purely data
+/// Macro that determines whether the backend is purely data
 #define DATA_ONLY IF_ELSE_TOKEN_DEFINED(BACKENDLANG,                                            \
         BOOST_PP_EQUAL(CAT(BACKENDLANG,_LANG), DATA_LANG), 0)
 
@@ -343,4 +343,4 @@ Macro that determines whether the the backend is purely data.
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:36 +0000
+Updated on 2026-11-03 at 14:50:49 +0000

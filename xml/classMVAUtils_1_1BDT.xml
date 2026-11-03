@@ -1,0 +1,537 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classMVAUtils_1_1BDT" kind="class" language="C++" prot="public">
+    <compoundname>MVAUtils::BDT</compoundname>
+    <includes refid="BDT_8h" local="no">BDT.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classMVAUtils_1_1BDT_1a6f1ff1b28c8b3242a0526917e8624433" prot="private" static="no" mutable="no">
+        <type>std::unique_ptr&lt; IForest &gt;</type>
+        <definition>std::unique_ptr&lt;IForest&gt; MVAUtils::BDT::m_forest</definition>
+        <argsstring></argsstring>
+        <name>m_forest</name>
+        <qualifiedname>MVAUtils::BDT::m_forest</qualifiedname>
+        <briefdescription>
+<para>the implementation of the forest, doing the hard work </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/BDT.h" line="103" column="21" bodyfile="ColliderBit/include/gambit/ColliderBit/BDT.h" bodystart="103" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMVAUtils_1_1BDT_1aa89af93148df1684b263493c3906fb54" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; float * &gt;</type>
+        <definition>std::vector&lt;float*&gt; MVAUtils::BDT::m_pointers</definition>
+        <argsstring></argsstring>
+        <name>m_pointers</name>
+        <qualifiedname>MVAUtils::BDT::m_pointers</qualifiedname>
+        <briefdescription>
+<para>where vars to cut on can be set (but can also be passed) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/BDT.h" line="104" column="17" bodyfile="ColliderBit/include/gambit/ColliderBit/BDT.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMVAUtils_1_1BDT_1a08c21fc6752c54cc01a01098c302e1d3" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>MVAUtils::BDT::BDT</definition>
+        <argsstring>(TTree *tree)</argsstring>
+        <name>BDT</name>
+        <qualifiedname>MVAUtils::BDT::BDT</qualifiedname>
+        <param>
+          <type>TTree *</type>
+          <declname>tree</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Constructor. The input tree must be created with convertLGBMToRootTree.py (for lgbm training) or with convertXGBoostToRootTree.py (for xgboost training) or with convertXmlToRootTree (for tmva training) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/BDT.h" line="53" column="14"/>
+      </memberdef>
+      <memberdef kind="function" id="classMVAUtils_1_1BDT_1ad2ec142aab6aef56624befbee605a35b" prot="public" static="no" const="no" explicit="yes" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BDT::BDT</definition>
+        <argsstring>(TMVA::MethodBDT *bdt, bool isRegression=true, bool useYesNoLeaf=false)</argsstring>
+        <name>BDT</name>
+        <qualifiedname>MVAUtils::BDT::BDT</qualifiedname>
+        <param>
+          <type>TMVA::MethodBDT *</type>
+          <declname>bdt</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>isRegression</declname>
+          <defval>true</defval>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>useYesNoLeaf</declname>
+          <defval>false</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>c-tor from TMVA::MethodBDT </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/BDT.h" line="54" column="14" bodyfile="ColliderBit/src/BDT.cpp" bodystart="127" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="classMVAUtils_1_1BDT_1a8c37473c0f9b4b749ae63f2eac63a81d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>BDT::~BDT</definition>
+        <argsstring>()</argsstring>
+        <name>~BDT</name>
+        <qualifiedname>MVAUtils::BDT::~BDT</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/BDT.h" line="55" column="5" bodyfile="ColliderBit/src/BDT.cpp" bodystart="119" bodyend="119"/>
+      </memberdef>
+      <memberdef kind="function" id="classMVAUtils_1_1BDT_1a620a9d3ac2d0d1c325f626b7eaaed4bb" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned int</type>
+        <definition>unsigned int BDT::GetNTrees</definition>
+        <argsstring>() const</argsstring>
+        <name>GetNTrees</name>
+        <qualifiedname>MVAUtils::BDT::GetNTrees</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of trees in the whole forest </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/BDT.h" line="58" column="18" bodyfile="ColliderBit/src/BDT.cpp" bodystart="121" bodyend="121"/>
+      </memberdef>
+      <memberdef kind="function" id="classMVAUtils_1_1BDT_1a47156e2e7e4c0797ed87bd62a3343351" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int BDT::GetNVars</definition>
+        <argsstring>() const</argsstring>
+        <name>GetNVars</name>
+        <qualifiedname>MVAUtils::BDT::GetNVars</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of variables expected in the inputs </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/BDT.h" line="60" column="9" bodyfile="ColliderBit/src/BDT.cpp" bodystart="122" bodyend="122"/>
+      </memberdef>
+      <memberdef kind="function" id="classMVAUtils_1_1BDT_1a5dcb82209fdd05bebf5b2fdccb73655d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float BDT::GetOffset</definition>
+        <argsstring>() const</argsstring>
+        <name>GetOffset</name>
+        <qualifiedname>MVAUtils::BDT::GetOffset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get the offset to the whole forest </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/BDT.h" line="62" column="11" bodyfile="ColliderBit/src/BDT.cpp" bodystart="123" bodyend="123"/>
+      </memberdef>
+      <memberdef kind="function" id="classMVAUtils_1_1BDT_1a0259f11acfdf41fcf9c9b9cdf1d72493" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float BDT::GetResponse</definition>
+        <argsstring>(const std::vector&lt; float &gt; &amp;values) const</argsstring>
+        <name>GetResponse</name>
+        <qualifiedname>MVAUtils::BDT::GetResponse</qualifiedname>
+        <param>
+          <type>const std::vector&lt; float &gt; &amp;</type>
+          <declname>values</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get response of the forest, for regression</para>
+<para>Return offset + the sum of the response of each tree <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/BDT.h" line="64" column="11" bodyfile="ColliderBit/src/BDT.cpp" bodystart="135" bodyend="138"/>
+      </memberdef>
+      <memberdef kind="function" id="classMVAUtils_1_1BDT_1a64e0a6d936206fb7c1117fe2b49fdf45" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float BDT::GetResponse</definition>
+        <argsstring>(const std::vector&lt; float * &gt; &amp;pointers) const</argsstring>
+        <name>GetResponse</name>
+        <qualifiedname>MVAUtils::BDT::GetResponse</qualifiedname>
+        <param>
+          <type>const std::vector&lt; float * &gt; &amp;</type>
+          <declname>pointers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return offset + the sum of the response of each tree <linebreak/>
+ </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/BDT.h" line="65" column="11" bodyfile="ColliderBit/src/BDT.cpp" bodystart="142" bodyend="145"/>
+      </memberdef>
+      <memberdef kind="function" id="classMVAUtils_1_1BDT_1aad5dd847919ffe3040294c39394c571e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float MVAUtils::BDT::GetResponse</definition>
+        <argsstring>() const</argsstring>
+        <name>GetResponse</name>
+        <qualifiedname>MVAUtils::BDT::GetResponse</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/BDT.h" line="66" column="11" bodyfile="ColliderBit/include/gambit/ColliderBit/BDT.h" bodystart="108" bodyend="110"/>
+      </memberdef>
+      <memberdef kind="function" id="classMVAUtils_1_1BDT_1ab13e529cbd135abf2741fcd951b6f8aa" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float BDT::GetClassification</definition>
+        <argsstring>(const std::vector&lt; float &gt; &amp;values) const</argsstring>
+        <name>GetClassification</name>
+        <qualifiedname>MVAUtils::BDT::GetClassification</qualifiedname>
+        <param>
+          <type>const std::vector&lt; float &gt; &amp;</type>
+          <declname>values</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get response of the forest, for classification </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/BDT.h" line="69" column="11" bodyfile="ColliderBit/src/BDT.cpp" bodystart="148" bodyend="151"/>
+      </memberdef>
+      <memberdef kind="function" id="classMVAUtils_1_1BDT_1a880f0124aa983b03ad2a02dc9d6f80ff" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float BDT::GetClassification</definition>
+        <argsstring>(const std::vector&lt; float * &gt; &amp;pointers) const</argsstring>
+        <name>GetClassification</name>
+        <qualifiedname>MVAUtils::BDT::GetClassification</qualifiedname>
+        <param>
+          <type>const std::vector&lt; float * &gt; &amp;</type>
+          <declname>pointers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/BDT.h" line="70" column="11" bodyfile="ColliderBit/src/BDT.cpp" bodystart="154" bodyend="157"/>
+      </memberdef>
+      <memberdef kind="function" id="classMVAUtils_1_1BDT_1acbe290165b97f6a84343fdd4cf8d6298" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>float</type>
+        <definition>float MVAUtils::BDT::GetClassification</definition>
+        <argsstring>() const</argsstring>
+        <name>GetClassification</name>
+        <qualifiedname>MVAUtils::BDT::GetClassification</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/BDT.h" line="71" column="11" bodyfile="ColliderBit/include/gambit/ColliderBit/BDT.h" bodystart="112" bodyend="114"/>
+      </memberdef>
+      <memberdef kind="function" id="classMVAUtils_1_1BDT_1a599aaf24a2d54ae321f56031cea90cfa" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float BDT::GetGradBoostMVA</definition>
+        <argsstring>(const std::vector&lt; float &gt; &amp;values) const</argsstring>
+        <name>GetGradBoostMVA</name>
+        <qualifiedname>MVAUtils::BDT::GetGradBoostMVA</qualifiedname>
+        <param>
+          <type>const std::vector&lt; float &gt; &amp;</type>
+          <declname>values</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/BDT.h" line="74" column="11" bodyfile="ColliderBit/src/BDT.cpp" bodystart="159" bodyend="163"/>
+      </memberdef>
+      <memberdef kind="function" id="classMVAUtils_1_1BDT_1a0cc2f8c117da4a05b5e1d7e1fc7352d5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float BDT::GetGradBoostMVA</definition>
+        <argsstring>(const std::vector&lt; float * &gt; &amp;pointers) const</argsstring>
+        <name>GetGradBoostMVA</name>
+        <qualifiedname>MVAUtils::BDT::GetGradBoostMVA</qualifiedname>
+        <param>
+          <type>const std::vector&lt; float * &gt; &amp;</type>
+          <declname>pointers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/BDT.h" line="75" column="11" bodyfile="ColliderBit/src/BDT.cpp" bodystart="165" bodyend="169"/>
+      </memberdef>
+      <memberdef kind="function" id="classMVAUtils_1_1BDT_1ac87f8aa8523174f72c6aea81c6e32da7" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; float &gt;</type>
+        <definition>std::vector&lt; float &gt; BDT::GetMultiResponse</definition>
+        <argsstring>(const std::vector&lt; float &gt; &amp;values, unsigned int numClasses) const</argsstring>
+        <name>GetMultiResponse</name>
+        <qualifiedname>MVAUtils::BDT::GetMultiResponse</qualifiedname>
+        <param>
+          <type>const std::vector&lt; float &gt; &amp;</type>
+          <declname>values</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>numClasses</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Get response of the forest, for multiclassification (e.g. b-tagging) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/BDT.h" line="78" column="17" bodyfile="ColliderBit/src/BDT.cpp" bodystart="172" bodyend="176"/>
+      </memberdef>
+      <memberdef kind="function" id="classMVAUtils_1_1BDT_1aff657c4a28d8fe7619f82b248a41ef55" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>std::vector&lt; float &gt;</type>
+        <definition>std::vector&lt; float &gt; BDT::GetMultiResponse</definition>
+        <argsstring>(const std::vector&lt; float * &gt; &amp;pointers, unsigned int numClasses) const</argsstring>
+        <name>GetMultiResponse</name>
+        <qualifiedname>MVAUtils::BDT::GetMultiResponse</qualifiedname>
+        <param>
+          <type>const std::vector&lt; float * &gt; &amp;</type>
+          <declname>pointers</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>numClasses</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/BDT.h" line="79" column="17" bodyfile="ColliderBit/src/BDT.cpp" bodystart="179" bodyend="183"/>
+      </memberdef>
+      <memberdef kind="function" id="classMVAUtils_1_1BDT_1ab3c009d8a27c6c58cf9c643a4261cad0" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; float &gt;</type>
+        <definition>std::vector&lt; float &gt; MVAUtils::BDT::GetMultiResponse</definition>
+        <argsstring>(unsigned int numClasses) const</argsstring>
+        <name>GetMultiResponse</name>
+        <qualifiedname>MVAUtils::BDT::GetMultiResponse</qualifiedname>
+        <param>
+          <type>unsigned int</type>
+          <declname>numClasses</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/BDT.h" line="80" column="17" bodyfile="ColliderBit/include/gambit/ColliderBit/BDT.h" bodystart="116" bodyend="118"/>
+      </memberdef>
+      <memberdef kind="function" id="classMVAUtils_1_1BDT_1a2930975f21cbf2df42a8ab9069788078" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>std::vector&lt; float &gt;</type>
+        <definition>std::vector&lt; float &gt; MVAUtils::BDT::GetValues</definition>
+        <argsstring>() const</argsstring>
+        <name>GetValues</name>
+        <qualifiedname>MVAUtils::BDT::GetValues</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return the values corresponding to m_pointers (or an empty vector) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/BDT.h" line="83" column="17" bodyfile="ColliderBit/include/gambit/ColliderBit/BDT.h" bodystart="120" bodyend="128"/>
+      </memberdef>
+      <memberdef kind="function" id="classMVAUtils_1_1BDT_1a28e432bc4fbf6381061acc87b1debc1b" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>const std::vector&lt; float * &gt; &amp;</type>
+        <definition>const std::vector&lt; float * &gt; &amp; MVAUtils::BDT::GetPointers</definition>
+        <argsstring>() const</argsstring>
+        <name>GetPointers</name>
+        <qualifiedname>MVAUtils::BDT::GetPointers</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return stored pointers (which are used by methods with no args) </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/BDT.h" line="85" column="23" bodyfile="ColliderBit/include/gambit/ColliderBit/BDT.h" bodystart="130" bodyend="130"/>
+      </memberdef>
+      <memberdef kind="function" id="classMVAUtils_1_1BDT_1a260e14b765651d8f16f200d4531dde7b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MVAUtils::BDT::SetPointers</definition>
+        <argsstring>(const std::vector&lt; float * &gt; &amp;pointers)</argsstring>
+        <name>SetPointers</name>
+        <qualifiedname>MVAUtils::BDT::SetPointers</qualifiedname>
+        <param>
+          <type>const std::vector&lt; float * &gt; &amp;</type>
+          <declname>pointers</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Set the stored pointers so that one can use methods with no args </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/BDT.h" line="87" column="10" bodyfile="ColliderBit/include/gambit/ColliderBit/BDT.h" bodystart="131" bodyend="131"/>
+      </memberdef>
+      <memberdef kind="function" id="classMVAUtils_1_1BDT_1a5c59619f8f67b6ef8273d1ad642b705e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>TTree *</type>
+        <definition>TTree * BDT::WriteTree</definition>
+        <argsstring>(TString name=&quot;BDT&quot;) const</argsstring>
+        <name>WriteTree</name>
+        <qualifiedname>MVAUtils::BDT::WriteTree</qualifiedname>
+        <param>
+          <type>TString</type>
+          <declname>name</declname>
+          <defval>&quot;BDT&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Return a TTree representing the <ref refid="classMVAUtils_1_1BDT" kindref="compound">BDT</ref>: each entry is a binary tree, each element of the vectors is a node </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/BDT.h" line="92" column="11" bodyfile="ColliderBit/src/BDT.cpp" bodystart="197" bodyend="197"/>
+      </memberdef>
+      <memberdef kind="function" id="classMVAUtils_1_1BDT_1abda487d74edce1581a044d7a73e7c540" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BDT::PrintForest</definition>
+        <argsstring>() const</argsstring>
+        <name>PrintForest</name>
+        <qualifiedname>MVAUtils::BDT::PrintForest</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>for debugging, print out tree or forest to stdout </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/BDT.h" line="95" column="10" bodyfile="ColliderBit/src/BDT.cpp" bodystart="199" bodyend="199"/>
+      </memberdef>
+      <memberdef kind="function" id="classMVAUtils_1_1BDT_1a711942b64a2ae59523cba623daddb285" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void BDT::PrintTree</definition>
+        <argsstring>(unsigned int itree) const</argsstring>
+        <name>PrintTree</name>
+        <qualifiedname>MVAUtils::BDT::PrintTree</qualifiedname>
+        <param>
+          <type>unsigned int</type>
+          <declname>itree</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/BDT.h" line="96" column="10" bodyfile="ColliderBit/src/BDT.cpp" bodystart="200" bodyend="200"/>
+      </memberdef>
+      <memberdef kind="function" id="classMVAUtils_1_1BDT_1abd8d630341eec58cc49cb2b40e9120b4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float BDT::GetTreeResponse</definition>
+        <argsstring>(const std::vector&lt; float &gt; &amp;values, MVAUtils::index_t index) const</argsstring>
+        <name>GetTreeResponse</name>
+        <qualifiedname>MVAUtils::BDT::GetTreeResponse</qualifiedname>
+        <param>
+          <type>const std::vector&lt; float &gt; &amp;</type>
+          <declname>values</declname>
+        </param>
+        <param>
+          <type>MVAUtils::index_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>for debugging, return the response of a sigle tree given the index of its top node </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/BDT.h" line="99" column="11" bodyfile="ColliderBit/src/BDT.cpp" bodystart="186" bodyend="189"/>
+      </memberdef>
+      <memberdef kind="function" id="classMVAUtils_1_1BDT_1a2e04544c2b453f009a246965b0d32f8f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>float</type>
+        <definition>float BDT::GetTreeResponse</definition>
+        <argsstring>(const std::vector&lt; float * &gt; &amp;pointers, MVAUtils::index_t index) const</argsstring>
+        <name>GetTreeResponse</name>
+        <qualifiedname>MVAUtils::BDT::GetTreeResponse</qualifiedname>
+        <param>
+          <type>const std::vector&lt; float * &gt; &amp;</type>
+          <declname>pointers</declname>
+        </param>
+        <param>
+          <type>MVAUtils::index_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/BDT.h" line="100" column="11" bodyfile="ColliderBit/src/BDT.cpp" bodystart="192" bodyend="195"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Simplified Boosted Regression Tree, support TMVA, lgbm, and xgboost. Holds a forest (vector of top nodes of each decision tree) and a constant offset or set of weights (not always used).</para>
+<para>Can be constructed from TMVA::MethodBDT or a TTree. Each entry of the TTree represents a binary tree and each element of the vectors stored in the TTree represent a node.</para>
+<para>The response can be evaluated from a vector of floats or a vector of pointers (to avoid creating vectors at each call) which can be stored internally (m_pointers) </para>
+    </detaileddescription>
+    <location file="ColliderBit/include/gambit/ColliderBit/BDT.h" line="45" column="3" bodyfile="ColliderBit/include/gambit/ColliderBit/BDT.h" bodystart="46" bodyend="105"/>
+    <listofallmembers>
+      <member refid="classMVAUtils_1_1BDT_1a08c21fc6752c54cc01a01098c302e1d3" prot="public" virt="non-virtual"><scope>MVAUtils::BDT</scope><name>BDT</name></member>
+      <member refid="classMVAUtils_1_1BDT_1ad2ec142aab6aef56624befbee605a35b" prot="public" virt="non-virtual"><scope>MVAUtils::BDT</scope><name>BDT</name></member>
+      <member refid="classMVAUtils_1_1BDT_1ab13e529cbd135abf2741fcd951b6f8aa" prot="public" virt="non-virtual"><scope>MVAUtils::BDT</scope><name>GetClassification</name></member>
+      <member refid="classMVAUtils_1_1BDT_1a880f0124aa983b03ad2a02dc9d6f80ff" prot="public" virt="non-virtual"><scope>MVAUtils::BDT</scope><name>GetClassification</name></member>
+      <member refid="classMVAUtils_1_1BDT_1acbe290165b97f6a84343fdd4cf8d6298" prot="public" virt="non-virtual"><scope>MVAUtils::BDT</scope><name>GetClassification</name></member>
+      <member refid="classMVAUtils_1_1BDT_1a599aaf24a2d54ae321f56031cea90cfa" prot="public" virt="non-virtual"><scope>MVAUtils::BDT</scope><name>GetGradBoostMVA</name></member>
+      <member refid="classMVAUtils_1_1BDT_1a0cc2f8c117da4a05b5e1d7e1fc7352d5" prot="public" virt="non-virtual"><scope>MVAUtils::BDT</scope><name>GetGradBoostMVA</name></member>
+      <member refid="classMVAUtils_1_1BDT_1ac87f8aa8523174f72c6aea81c6e32da7" prot="public" virt="non-virtual"><scope>MVAUtils::BDT</scope><name>GetMultiResponse</name></member>
+      <member refid="classMVAUtils_1_1BDT_1aff657c4a28d8fe7619f82b248a41ef55" prot="public" virt="non-virtual"><scope>MVAUtils::BDT</scope><name>GetMultiResponse</name></member>
+      <member refid="classMVAUtils_1_1BDT_1ab3c009d8a27c6c58cf9c643a4261cad0" prot="public" virt="non-virtual"><scope>MVAUtils::BDT</scope><name>GetMultiResponse</name></member>
+      <member refid="classMVAUtils_1_1BDT_1a620a9d3ac2d0d1c325f626b7eaaed4bb" prot="public" virt="non-virtual"><scope>MVAUtils::BDT</scope><name>GetNTrees</name></member>
+      <member refid="classMVAUtils_1_1BDT_1a47156e2e7e4c0797ed87bd62a3343351" prot="public" virt="non-virtual"><scope>MVAUtils::BDT</scope><name>GetNVars</name></member>
+      <member refid="classMVAUtils_1_1BDT_1a5dcb82209fdd05bebf5b2fdccb73655d" prot="public" virt="non-virtual"><scope>MVAUtils::BDT</scope><name>GetOffset</name></member>
+      <member refid="classMVAUtils_1_1BDT_1a28e432bc4fbf6381061acc87b1debc1b" prot="public" virt="non-virtual"><scope>MVAUtils::BDT</scope><name>GetPointers</name></member>
+      <member refid="classMVAUtils_1_1BDT_1a0259f11acfdf41fcf9c9b9cdf1d72493" prot="public" virt="non-virtual"><scope>MVAUtils::BDT</scope><name>GetResponse</name></member>
+      <member refid="classMVAUtils_1_1BDT_1a64e0a6d936206fb7c1117fe2b49fdf45" prot="public" virt="non-virtual"><scope>MVAUtils::BDT</scope><name>GetResponse</name></member>
+      <member refid="classMVAUtils_1_1BDT_1aad5dd847919ffe3040294c39394c571e" prot="public" virt="non-virtual"><scope>MVAUtils::BDT</scope><name>GetResponse</name></member>
+      <member refid="classMVAUtils_1_1BDT_1abd8d630341eec58cc49cb2b40e9120b4" prot="public" virt="non-virtual"><scope>MVAUtils::BDT</scope><name>GetTreeResponse</name></member>
+      <member refid="classMVAUtils_1_1BDT_1a2e04544c2b453f009a246965b0d32f8f" prot="public" virt="non-virtual"><scope>MVAUtils::BDT</scope><name>GetTreeResponse</name></member>
+      <member refid="classMVAUtils_1_1BDT_1a2930975f21cbf2df42a8ab9069788078" prot="public" virt="non-virtual"><scope>MVAUtils::BDT</scope><name>GetValues</name></member>
+      <member refid="classMVAUtils_1_1BDT_1a6f1ff1b28c8b3242a0526917e8624433" prot="private" virt="non-virtual"><scope>MVAUtils::BDT</scope><name>m_forest</name></member>
+      <member refid="classMVAUtils_1_1BDT_1aa89af93148df1684b263493c3906fb54" prot="private" virt="non-virtual"><scope>MVAUtils::BDT</scope><name>m_pointers</name></member>
+      <member refid="classMVAUtils_1_1BDT_1abda487d74edce1581a044d7a73e7c540" prot="public" virt="non-virtual"><scope>MVAUtils::BDT</scope><name>PrintForest</name></member>
+      <member refid="classMVAUtils_1_1BDT_1a711942b64a2ae59523cba623daddb285" prot="public" virt="non-virtual"><scope>MVAUtils::BDT</scope><name>PrintTree</name></member>
+      <member refid="classMVAUtils_1_1BDT_1a260e14b765651d8f16f200d4531dde7b" prot="public" virt="non-virtual"><scope>MVAUtils::BDT</scope><name>SetPointers</name></member>
+      <member refid="classMVAUtils_1_1BDT_1a5c59619f8f67b6ef8273d1ad642b705e" prot="public" virt="non-virtual"><scope>MVAUtils::BDT</scope><name>WriteTree</name></member>
+      <member refid="classMVAUtils_1_1BDT_1a8c37473c0f9b4b749ae63f2eac63a81d" prot="public" virt="non-virtual"><scope>MVAUtils::BDT</scope><name>~BDT</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

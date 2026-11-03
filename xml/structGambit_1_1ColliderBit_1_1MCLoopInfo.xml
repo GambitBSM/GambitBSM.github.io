@@ -139,6 +139,66 @@
         </inbodydescription>
         <location file="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" line="59" column="16" bodyfile="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" bodystart="59" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="structGambit_1_1ColliderBit_1_1MCLoopInfo_1aae9f9da55a9ac8d94941fd5490363d20" prot="public" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string Gambit::ColliderBit::MCLoopInfo::estimator</definition>
+        <argsstring></argsstring>
+        <name>estimator</name>
+        <qualifiedname>Gambit::ColliderBit::MCLoopInfo::estimator</qualifiedname>
+        <briefdescription>
+<para>Likelihood estimator. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" line="62" column="19" bodyfile="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a078f0e4e946800888e3c65bbe8ee053b" prot="public" static="no" mutable="no">
+        <type>std::map&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>, double &gt;</type>
+        <definition>std::map&lt;str, double&gt; Gambit::ColliderBit::MCLoopInfo::ratio_MC_expected</definition>
+        <argsstring></argsstring>
+        <name>ratio_MC_expected</name>
+        <qualifiedname>Gambit::ColliderBit::MCLoopInfo::ratio_MC_expected</qualifiedname>
+        <briefdescription>
+<para>Ratio of nMC to nExpected (see UMVUE estimator) </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" line="65" column="16" bodyfile="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a62aba7a76840caa0da18b0103b9cdafc" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Gambit::ColliderBit::MCLoopInfo::mean_nEvents</definition>
+        <argsstring></argsstring>
+        <name>mean_nEvents</name>
+        <qualifiedname>Gambit::ColliderBit::MCLoopInfo::mean_nEvents</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Number of mean MC events to simulate for a given parameter point for each collider This will not necessarily be the same as the number simulated </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" line="69" column="11" bodyfile="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a717218d8470a04a6cc16095c57320545" prot="public" static="no" mutable="no">
+        <type>std::map&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>, int &gt;</type>
+        <definition>std::map&lt;str, int&gt; Gambit::ColliderBit::MCLoopInfo::desired_nEvents</definition>
+        <argsstring></argsstring>
+        <name>desired_nEvents</name>
+        <qualifiedname>Gambit::ColliderBit::MCLoopInfo::desired_nEvents</qualifiedname>
+        <briefdescription>
+<para>Number of MC events to simulate for a given parameter point for each collider. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" line="72" column="16" bodyfile="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" bodystart="72" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="variable" id="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a6f024bfb1181bc749de04ff62a20ab70" prot="public" static="no" mutable="no">
         <type>std::map&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>, std::vector&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &gt; &gt;</type>
         <definition>std::map&lt;str,std::vector&lt;str&gt; &gt; Gambit::ColliderBit::MCLoopInfo::analyses</definition>
@@ -152,7 +212,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" line="62" column="16" bodyfile="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" bodystart="62" bodyend="-1"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" line="75" column="16" bodyfile="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" bodystart="75" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1ColliderBit_1_1MCLoopInfo_1aa841fe1447d50d56f5b8e49a67f23309" prot="public" static="no" mutable="no">
         <type>std::map&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>, std::map&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>, std::vector&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &gt; &gt; &gt;</type>
@@ -167,7 +227,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" line="65" column="16" bodyfile="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" bodystart="65" bodyend="-1"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" line="78" column="16" bodyfile="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" bodystart="78" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -184,7 +244,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" line="118" column="13" bodyfile="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" bodystart="118" bodyend="-1"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" line="131" column="13" bodyfile="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" bodystart="131" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1ColliderBit_1_1MCLoopInfo_1ae6adcc454cdb09436b0f1cfcdc56fc06" prot="private" static="no" mutable="no">
         <type>std::map&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>, int &gt;::iterator</type>
@@ -199,7 +259,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" line="121" column="29" bodyfile="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" bodystart="121" bodyend="-1"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" line="134" column="29" bodyfile="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" bodystart="134" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a2691f1353d7c969dc236a0fb8e61275d" prot="private" static="no" mutable="no">
         <type>std::map&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>, bool &gt;::iterator</type>
@@ -214,7 +274,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" line="124" column="29" bodyfile="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" bodystart="124" bodyend="-1"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" line="137" column="29" bodyfile="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" bodystart="137" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a8272d481da273b9984d5e199c70937a3" prot="private" static="no" mutable="no">
         <type>std::map&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>, int &gt;::iterator</type>
@@ -229,7 +289,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" line="127" column="29" bodyfile="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" bodystart="127" bodyend="-1"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" line="140" column="29" bodyfile="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" bodystart="140" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1ColliderBit_1_1MCLoopInfo_1aff8fec3e28039eb724b07ab421cedec9" prot="private" static="no" mutable="no">
         <type>std::map&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>, <ref refid="structGambit_1_1ColliderBit_1_1convergence__settings" kindref="compound">convergence_settings</ref> &gt;::iterator</type>
@@ -244,7 +304,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" line="130" column="29" bodyfile="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" bodystart="130" bodyend="-1"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" line="143" column="29" bodyfile="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" bodystart="143" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a0326c1f84e1fbf4cffa0de1490122590" prot="private" static="no" mutable="no">
         <type>std::map&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>, std::vector&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &gt; &gt;::iterator</type>
@@ -259,7 +319,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" line="133" column="29" bodyfile="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" bodystart="133" bodyend="-1"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" line="146" column="29" bodyfile="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" bodystart="146" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a42c991ea53ea8a6ccc7e4f3ee3f4e99c" prot="private" static="no" mutable="no">
         <type>std::map&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>, std::map&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>, std::vector&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &gt; &gt; &gt;::iterator</type>
@@ -274,7 +334,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" line="136" column="29" bodyfile="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" bodystart="136" bodyend="-1"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" line="149" column="29" bodyfile="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" bodystart="149" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -295,7 +355,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" line="68" column="12" bodyfile="ColliderBit/src/MCLoopInfo.cpp" bodystart="59" bodyend="118"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" line="81" column="12" bodyfile="ColliderBit/src/MCLoopInfo.cpp" bodystart="59" bodyend="118"/>
       </memberdef>
       <memberdef kind="function" id="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a797872c3bb7c015c519866ab32e7b353" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>const <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &amp;</type>
@@ -310,7 +370,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" line="71" column="17" bodyfile="ColliderBit/src/MCLoopInfo.cpp" bodystart="127" bodyend="127"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" line="84" column="17" bodyfile="ColliderBit/src/MCLoopInfo.cpp" bodystart="127" bodyend="127"/>
       </memberdef>
       <memberdef kind="function" id="structGambit_1_1ColliderBit_1_1MCLoopInfo_1aa702d4b00dafb9e5b660412c4604537e" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>const int &amp;</type>
@@ -325,7 +385,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" line="74" column="17" bodyfile="ColliderBit/src/MCLoopInfo.cpp" bodystart="129" bodyend="129"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" line="87" column="17" bodyfile="ColliderBit/src/MCLoopInfo.cpp" bodystart="129" bodyend="129"/>
       </memberdef>
       <memberdef kind="function" id="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a54a1a6bff47ea4c0d835a29d7d03f432" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int &amp;</type>
@@ -340,7 +400,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" line="76" column="11" bodyfile="ColliderBit/src/MCLoopInfo.cpp" bodystart="130" bodyend="130"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" line="89" column="11" bodyfile="ColliderBit/src/MCLoopInfo.cpp" bodystart="130" bodyend="130"/>
       </memberdef>
       <memberdef kind="function" id="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a122ee7e96335784b94385881175b7570" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>const bool &amp;</type>
@@ -355,7 +415,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" line="79" column="18" bodyfile="ColliderBit/src/MCLoopInfo.cpp" bodystart="132" bodyend="132"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" line="92" column="18" bodyfile="ColliderBit/src/MCLoopInfo.cpp" bodystart="132" bodyend="132"/>
       </memberdef>
       <memberdef kind="function" id="structGambit_1_1ColliderBit_1_1MCLoopInfo_1ab77ac8662ab4fe76e875afe48fc5b32d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>bool &amp;</type>
@@ -370,7 +430,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" line="81" column="12" bodyfile="ColliderBit/src/MCLoopInfo.cpp" bodystart="133" bodyend="133"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" line="94" column="12" bodyfile="ColliderBit/src/MCLoopInfo.cpp" bodystart="133" bodyend="133"/>
       </memberdef>
       <memberdef kind="function" id="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a749b2423d0b565051be1b8b932d6e2b6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>const int &amp;</type>
@@ -385,7 +445,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" line="84" column="17" bodyfile="ColliderBit/src/MCLoopInfo.cpp" bodystart="135" bodyend="135"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" line="97" column="17" bodyfile="ColliderBit/src/MCLoopInfo.cpp" bodystart="135" bodyend="135"/>
       </memberdef>
       <memberdef kind="function" id="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a10dad76156668449ed673e04971dd715" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int &amp;</type>
@@ -400,7 +460,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" line="86" column="11" bodyfile="ColliderBit/src/MCLoopInfo.cpp" bodystart="136" bodyend="136"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" line="99" column="11" bodyfile="ColliderBit/src/MCLoopInfo.cpp" bodystart="136" bodyend="136"/>
       </memberdef>
       <memberdef kind="function" id="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a600f3a4a02d80609a70a30fbd89486b9" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>const <ref refid="structGambit_1_1ColliderBit_1_1convergence__settings" kindref="compound">convergence_settings</ref> &amp;</type>
@@ -415,7 +475,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" line="89" column="34" bodyfile="ColliderBit/src/MCLoopInfo.cpp" bodystart="138" bodyend="138"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" line="102" column="34" bodyfile="ColliderBit/src/MCLoopInfo.cpp" bodystart="138" bodyend="138"/>
       </memberdef>
       <memberdef kind="function" id="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a21b303973639c25f598fe64d47fc961f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="structGambit_1_1ColliderBit_1_1convergence__settings" kindref="compound">convergence_settings</ref> &amp;</type>
@@ -430,7 +490,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" line="91" column="28" bodyfile="ColliderBit/src/MCLoopInfo.cpp" bodystart="139" bodyend="139"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" line="104" column="28" bodyfile="ColliderBit/src/MCLoopInfo.cpp" bodystart="139" bodyend="139"/>
       </memberdef>
       <memberdef kind="function" id="structGambit_1_1ColliderBit_1_1MCLoopInfo_1ab829e691614a9b939ed9f92f44706e4f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>const std::vector&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &gt; &amp;</type>
@@ -445,7 +505,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" line="94" column="25" bodyfile="ColliderBit/src/MCLoopInfo.cpp" bodystart="141" bodyend="141"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" line="107" column="25" bodyfile="ColliderBit/src/MCLoopInfo.cpp" bodystart="141" bodyend="141"/>
       </memberdef>
       <memberdef kind="function" id="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a08fb6207239d1c050f45af9a3ca47d20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &gt; &amp;</type>
@@ -460,7 +520,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" line="96" column="19" bodyfile="ColliderBit/src/MCLoopInfo.cpp" bodystart="142" bodyend="142"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" line="109" column="19" bodyfile="ColliderBit/src/MCLoopInfo.cpp" bodystart="142" bodyend="142"/>
       </memberdef>
       <memberdef kind="function" id="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a6294f3efb133b279f66be4fd1c725b1d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>const std::vector&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &gt; &amp;</type>
@@ -479,7 +539,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" line="99" column="25" bodyfile="ColliderBit/src/MCLoopInfo.cpp" bodystart="144" bodyend="148"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" line="112" column="25" bodyfile="ColliderBit/src/MCLoopInfo.cpp" bodystart="144" bodyend="148"/>
       </memberdef>
       <memberdef kind="function" id="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a1e7355494f72b4aefa394186419207d8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>std::vector&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref> &gt; &amp;</type>
@@ -498,7 +558,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" line="101" column="19" bodyfile="ColliderBit/src/MCLoopInfo.cpp" bodystart="149" bodyend="153"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" line="114" column="19" bodyfile="ColliderBit/src/MCLoopInfo.cpp" bodystart="149" bodyend="153"/>
       </memberdef>
       <memberdef kind="function" id="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a5e065555e9fb561a9105173e2f1a1ff6" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -517,7 +577,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" line="104" column="12" bodyfile="ColliderBit/src/MCLoopInfo.cpp" bodystart="120" bodyend="125"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" line="117" column="12" bodyfile="ColliderBit/src/MCLoopInfo.cpp" bodystart="120" bodyend="125"/>
       </memberdef>
       <memberdef kind="function" id="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a4a3512bd3e45fcc26cba88ae8dfff3bd" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -532,7 +592,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" line="107" column="12" bodyfile="ColliderBit/src/MCLoopInfo.cpp" bodystart="29" bodyend="37"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" line="120" column="12" bodyfile="ColliderBit/src/MCLoopInfo.cpp" bodystart="29" bodyend="37"/>
       </memberdef>
       <memberdef kind="function" id="structGambit_1_1ColliderBit_1_1MCLoopInfo_1acfb0f61a817362efa512120bebd3f8a5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -547,7 +607,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" line="110" column="12" bodyfile="ColliderBit/src/MCLoopInfo.cpp" bodystart="40" bodyend="48"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" line="123" column="12" bodyfile="ColliderBit/src/MCLoopInfo.cpp" bodystart="40" bodyend="48"/>
       </memberdef>
       <memberdef kind="function" id="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a90f1dab2975fa2246c9e3cb2987da312" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -562,7 +622,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" line="113" column="12" bodyfile="ColliderBit/src/MCLoopInfo.cpp" bodystart="51" bodyend="56"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" line="126" column="12" bodyfile="ColliderBit/src/MCLoopInfo.cpp" bodystart="51" bodyend="56"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -570,7 +630,19 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" line="31" column="5" bodyfile="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" bodystart="32" bodyend="138"/>
+    <collaborationgraph>
+      <node id="1">
+        <label>Gambit::ColliderBit::MCLoopInfo</label>
+        <link refid="structGambit_1_1ColliderBit_1_1MCLoopInfo"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>estimator</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>string</label>
+      </node>
+    </collaborationgraph>
+    <location file="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" line="31" column="5" bodyfile="ColliderBit/include/gambit/ColliderBit/MCLoopInfo.hpp" bodystart="32" bodyend="151"/>
     <listofallmembers>
       <member refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a0326c1f84e1fbf4cffa0de1490122590" prot="private" virt="non-virtual"><scope>Gambit::ColliderBit::MCLoopInfo</scope><name>_current_analyses_it</name></member>
       <member refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1ada1951bcaa97cae6828d39a3862b442f" prot="private" virt="non-virtual"><scope>Gambit::ColliderBit::MCLoopInfo</scope><name>_current_collider</name></member>
@@ -596,14 +668,18 @@
       <member refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1ab77ac8662ab4fe76e875afe48fc5b32d" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::MCLoopInfo</scope><name>current_invalidate_failed_points</name></member>
       <member refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1aa702d4b00dafb9e5b660412c4604537e" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::MCLoopInfo</scope><name>current_maxFailedEvents</name></member>
       <member refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a54a1a6bff47ea4c0d835a29d7d03f432" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::MCLoopInfo</scope><name>current_maxFailedEvents</name></member>
+      <member refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a717218d8470a04a6cc16095c57320545" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::MCLoopInfo</scope><name>desired_nEvents</name></member>
       <member refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1aa841fe1447d50d56f5b8e49a67f23309" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::MCLoopInfo</scope><name>detector_analyses</name></member>
       <member refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a13a2decfcc5cdfb73d22fb819ab757e9" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::MCLoopInfo</scope><name>end_of_event_file</name></member>
+      <member refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1aae9f9da55a9ac8d94941fd5490363d20" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::MCLoopInfo</scope><name>estimator</name></member>
       <member refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a84e89c7e58fe734446499a0fb1cd325f" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::MCLoopInfo</scope><name>event_count</name></member>
       <member refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a90b674a480b99305bde5ba21ab46f37b" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::MCLoopInfo</scope><name>event_gen_BYPASS</name></member>
       <member refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a86fc3523ef0ec22cfd17b21bc1c51c17" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::MCLoopInfo</scope><name>event_generation_began</name></member>
       <member refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1aef66091196ba1fa30f4392ed05db48b1" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::MCLoopInfo</scope><name>exceeded_maxFailedEvents</name></member>
       <member refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1abab9f14e9f7d2c39ec9c4a00cb52f788" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::MCLoopInfo</scope><name>invalidate_failed_points</name></member>
       <member refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a62e2a183470c96e9c6b0a651a8318c4a" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::MCLoopInfo</scope><name>maxFailedEvents</name></member>
+      <member refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a62aba7a76840caa0da18b0103b9cdafc" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::MCLoopInfo</scope><name>mean_nEvents</name></member>
+      <member refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a078f0e4e946800888e3c65bbe8ee053b" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::MCLoopInfo</scope><name>ratio_MC_expected</name></member>
       <member refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1acfb0f61a817362efa512120bebd3f8a5" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::MCLoopInfo</scope><name>report_end_of_event_file</name></member>
       <member refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a4a3512bd3e45fcc26cba88ae8dfff3bd" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::MCLoopInfo</scope><name>report_exceeded_maxFailedEvents</name></member>
       <member refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a90f1dab2975fa2246c9e3cb2987da312" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::MCLoopInfo</scope><name>reset_flags</name></member>

@@ -20,7 +20,7 @@ Keeps track of vertex buffers local to a print function.  [More...](#detailed-de
 | void | **[init](/documentation/code/classes/classgambit_1_1printers_1_1h5p__localbuffermanager/#function-init)**([HDF5Printer](/documentation/code/classes/classgambit_1_1printers_1_1hdf5printer/) * p, bool synchronised)<br>Initialise the buffer (attach it to a printer and set its behaviour)  |
 | BuffType & | **[get_buffer](/documentation/code/classes/classgambit_1_1printers_1_1h5p__localbuffermanager/#function-get-buffer)**(const int vID, const unsigned int i, const std::string & label)<br>Retrieve a buffer for an IDcode/auxilliary-index pair.  |
 | | **[H5P_LocalBufferManager](/documentation/code/classes/classgambit_1_1printers_1_1h5p__localbuffermanager/#function-h5p-localbuffermanager)**()<br>Constructor.  |
-| bool | **[ready](/documentation/code/classes/classgambit_1_1printers_1_1h5p__localbuffermanager/#function-ready)**()<br>Signal whether initialisation has occured.  |
+| bool | **[ready](/documentation/code/classes/classgambit_1_1printers_1_1h5p__localbuffermanager/#function-ready)**()<br>Signal whether initialisation has occurred.  |
 
 ## Detailed Description
 
@@ -72,8 +72,8 @@ Constructor.
 inline bool ready()
 ```
 
-Signal whether initialisation has occured. 
+Signal whether initialisation has occurred. 
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:32 +0000
+Updated on 2026-11-03 at 14:50:44 +0000

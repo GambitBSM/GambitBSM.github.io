@@ -19,9 +19,17 @@ description: "[No description available]"
 ## Detailed Description
 
 
-**Author**: The GAMBIT Collaboration 
+**Author**: 
 
-**Date**: 2012 Oct onwards
+  * The GAMBIT Collaboration 
+  * Patrick Stoecker ([stoecker@physik.rwth-aachen.de](mailto:stoecker@physik.rwth-aachen.de)) 
+
+
+**Date**: 
+
+  * 2012 Oct onwards
+  * 2026 Oct
+
 
 GAMBIT executable.
 
@@ -86,6 +94,10 @@ Shut down due receipt of MPI emergency shutdown message
 ///  \author The GAMBIT Collaboration
 ///  \date 2012 Oct onwards
 ///
+///  \author Patrick Stoecker
+///          (stoecker@physik.rwth-aachen.de)
+///  \date 2026 Oct
+///
 ///  *********************************************
 
 #include <csignal>
@@ -93,7 +105,7 @@ Shut down due receipt of MPI emergency shutdown message
 #include "gambit/Core/gambit.hpp"
 #include "gambit/Utils/mpiwrapper.hpp"
 #include "gambit/Utils/file_lock.hpp"
-
+#include "gambit/Utils/model_validation.hpp"
 
 using namespace Gambit;
 using namespace LogTags;
@@ -301,7 +313,9 @@ int main(int argc, char* argv[])
         //Do the scan!
         logger() << core << "Starting scan." << EOM;
         if (rank == 0) std::cerr << "Starting scan." << std::endl;
+        ModelValidationHandler::getInstance().activate(); // Activate model validation
         scan.Run(); // Note: the likelihood container will unblock signals when it is safe to receive them.
+        ModelValidationHandler::getInstance().deactivate(); // Deactivate it again
         logger().enable(); // Turn logs back on (in case they were disabled for speed)
         // Check why we have exited the scanner; scan may have been terminated early by a signal.
         // We assume here that because the scanner has exited that it has already down whatever
@@ -459,4 +473,4 @@ int main(int argc, char* argv[])
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:35 +0000
+Updated on 2026-11-03 at 14:50:47 +0000

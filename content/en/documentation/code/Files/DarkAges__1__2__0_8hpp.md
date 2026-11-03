@@ -114,7 +114,7 @@ LOAD_LIBRARY
 BE_ALLOW_MODELS(AnnihilatingDM_general, DecayingDM_general)
 
 /* Syntax for BE_FUNCTION (same as for any other backend):
- * BE_FUNCTION([choose function name], [type], [arguement types], "[exact symbol name]", "[choose capability name]")
+ * BE_FUNCTION([choose function name], [type], [argument types], "[exact symbol name]", "[choose capability name]")
  */
 
 /* --- NONE --- */
@@ -149,4 +149,4 @@ BE_ALLOW_MODELS(AnnihilatingDM_general, DecayingDM_general)
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:36 +0000
+Updated on 2026-11-03 at 14:50:48 +0000

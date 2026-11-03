@@ -93,9 +93,7 @@ Authors (add name and date if you modify):
 #include <fstream>
 #include <sstream>
 
-#include "gambit/Utils/begin_ignore_warnings_eigen.hpp"
 #include <unsupported/Eigen/MatrixFunctions>
-#include "gambit/Utils/end_ignore_warnings.hpp"
 
 #include "gambit/Elements/gambit_module_headers.hpp"
 #include "gambit/Utils/statistics.hpp"
@@ -1014,4 +1012,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:34 +0000
+Updated on 2026-11-03 at 14:50:46 +0000

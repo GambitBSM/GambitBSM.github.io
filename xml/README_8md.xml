@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="README_8md" kind="file" language="Markdown">
+    <compoundname>README.md</compoundname>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline><highlight class="normal">#<sp/>ColliderBit<sp/>event<sp/>analyses</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">This<sp/>readme<sp/>collects<sp/>information<sp/>on<sp/>the<sp/>ColliderBit<sp/>event-loop</highlight></codeline>
+<codeline><highlight class="normal">analysis<sp/>system<sp/>and<sp/>the<sp/>analyses<sp/>implemented<sp/>in<sp/>it.</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Analysis<sp/>writing<sp/>and<sp/>registration</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>analysis<sp/>system<sp/>is<sp/>somewhat<sp/>inspired<sp/>by<sp/>Rivet,<sp/>but<sp/>much<sp/>simplified</highlight></codeline>
+<codeline><highlight class="normal">for<sp/>speed<sp/>and<sp/>to<sp/>reflect<sp/>the<sp/>less<sp/>precise/sensitive<sp/>nature<sp/>of<sp/>most</highlight></codeline>
+<codeline><highlight class="normal">reco-level<sp/>search<sp/>analyses<sp/>as<sp/>compared<sp/>to<sp/>unfolded</highlight></codeline>
+<codeline><highlight class="normal">precision-measurements.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Analysis<sp/>codes<sp/>are<sp/>all<sp/>implemented<sp/>in<sp/>the<sp/>`Gambit::ColliderBit`</highlight></codeline>
+<codeline><highlight class="normal">namespace,<sp/>and<sp/>inherit<sp/>from<sp/>the<sp/>`Analysis`<sp/>base<sp/>class.<sp/>They<sp/>are</highlight></codeline>
+<codeline><highlight class="normal">implemented<sp/>in<sp/>single<sp/>`.cpp`<sp/>source<sp/>files,<sp/>with<sp/>a<sp/>uniform<sp/>class<sp/>and</highlight></codeline>
+<codeline><highlight class="normal">file<sp/>naming,<sp/>structured<sp/>like</highlight></codeline>
+<codeline><highlight class="normal">`Analysis_&lt;EXPT&gt;_&lt;SQRTS&gt;TeV_&lt;SIG&gt;_&lt;INTLUMI&gt;invfb`<sp/>where<sp/>EXP,<sp/>SQRTS,</highlight></codeline>
+<codeline><highlight class="normal">SIG,<sp/>and<sp/>INTLUMI<sp/>are<sp/>(fairly<sp/>obviously)<sp/>respectively<sp/>the<sp/>experiment</highlight></codeline>
+<codeline><highlight class="normal">name,<sp/>the<sp/>centre<sp/>of<sp/>mass<sp/>energy<sp/>of<sp/>the<sp/>corresponding<sp/>run<sp/>in<sp/>TeV,<sp/>a</highlight></codeline>
+<codeline><highlight class="normal">terse<sp/>description<sp/>of<sp/>the<sp/>targeted<sp/>event<sp/>signature,<sp/>and<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">corresponding<sp/>integrated<sp/>luminosity<sp/>in<sp/>inverse<sp/>femtobarns.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Rather<sp/>than<sp/>a<sp/>dynamic<sp/>runtime<sp/>loading<sp/>system<sp/>like<sp/>Rivet,<sp/>the<sp/>ColliderBit</highlight></codeline>
+<codeline><highlight class="normal">analyses<sp/>are<sp/>compiled<sp/>into<sp/>ColliderBit.<sp/>This<sp/>is<sp/>done<sp/>by<sp/>registering<sp/>each</highlight></codeline>
+<codeline><highlight class="normal">analysis<sp/>class<sp/>in<sp/>the<sp/>`AnalysisContainer.cpp`<sp/>source<sp/>file,<sp/>using<sp/>some</highlight></codeline>
+<codeline><highlight class="normal">preprocessor<sp/>macros<sp/>to<sp/>reduce<sp/>boilerplate<sp/>code.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">The<sp/>best<sp/>approach<sp/>to<sp/>writing<sp/>and<sp/>registering<sp/>analyses<sp/>is<sp/>to<sp/>copy<sp/>and</highlight></codeline>
+<codeline><highlight class="normal">extend<sp/>an<sp/>existing<sp/>similar<sp/>analysis.</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Analysis<sp/>info<sp/>syntax</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Each<sp/>analysis<sp/>code<sp/>should<sp/>also<sp/>have<sp/>a<sp/>`.info`<sp/>metadata<sp/>file<sp/>in<sp/>YAML</highlight></codeline>
+<codeline><highlight class="normal">format,<sp/>with<sp/>the<sp/>same<sp/>name<sp/>stem<sp/>as<sp/>its<sp/>C++<sp/>source<sp/>file<sp/>(and<sp/>class</highlight></codeline>
+<codeline><highlight class="normal">name).<sp/>This<sp/>metadata<sp/>contains<sp/>more<sp/>precise<sp/>versions<sp/>of<sp/>the<sp/>experiment</highlight></codeline>
+<codeline><highlight class="normal">and<sp/>run<sp/>names,<sp/>the<sp/>CoM<sp/>energy,<sp/>the<sp/>integrated<sp/>luminosity,<sp/>etc.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">It<sp/>also<sp/>contains<sp/>a<sp/>structured<sp/>mini-language<sp/>for<sp/>summarising<sp/>the</highlight></codeline>
+<codeline><highlight class="normal">signal-region<sp/>(and<sp/>in<sp/>future<sp/>possibly<sp/>control<sp/>regions&apos;)<sp/>final-state</highlight></codeline>
+<codeline><highlight class="normal">signatures,<sp/>under<sp/>the<sp/>`Signatures`<sp/>key.<sp/>This<sp/>metadata<sp/>entry<sp/>is<sp/>a<sp/>list</highlight></codeline>
+<codeline><highlight class="normal">of<sp/>structured<sp/>strings,<sp/>each<sp/>qualitatively<sp/>describing<sp/>an<sp/>SR<sp/>selection</highlight></codeline>
+<codeline><highlight class="normal">in<sp/>the<sp/>following<sp/>scheme:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>Each<sp/>string<sp/>is<sp/>separated<sp/>by<sp/>`+`<sp/>symbols<sp/>into<sp/>a<sp/>set<sp/>of<sp/>independent</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>event-selection<sp/>requirements,<sp/>combined<sp/>with<sp/>logical<sp/>AND.<sp/>The</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>ordering<sp/>is<sp/>unimportant.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>Each<sp/>requirement<sp/>consists<sp/>of<sp/>a<sp/>quantity<sp/>specifier<sp/>and<sp/>a<sp/>type.<sp/>Most</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>requirement<sp/>types<sp/>are<sp/>framed<sp/>as<sp/>counts<sp/>of<sp/>physics<sp/>objects,<sp/>but<sp/>some</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>are<sp/>boolean<sp/>event<sp/>characteristics.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>Quantity<sp/>specifiers<sp/>are<sp/>generally<sp/>numeric<sp/>inequalities,<sp/>e.g.<sp/>`3`,<sp/>`=2`,</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>`&lt;4`,<sp/>or<sp/>`&gt;=1`.<sp/>A<sp/>simple<sp/>numeric<sp/>count<sp/>such<sp/>as<sp/>`2`<sp/>means<sp/>the<sp/>same<sp/>as<sp/>the</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&quot;exactly<sp/>equal&quot;<sp/>requirement,<sp/>`=2`.<sp/>Absence<sp/>of<sp/>a<sp/>quantity<sp/>spec<sp/>for<sp/>a</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>physics-object<sp/>type<sp/>is<sp/>interpreted<sp/>as<sp/>`&gt;=1`.<sp/>A<sp/>special<sp/>`!`<sp/>quantity<sp/>is</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>a<sp/>synonym<sp/>for<sp/>`0`,<sp/>for<sp/>more<sp/>intuitive<sp/>use<sp/>with<sp/>boolean<sp/>requirements.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>Physics-object<sp/>requirement<sp/>types,<sp/>in<sp/>all<sp/>cases<sp/>implying<sp/>a<sp/>context-dependent</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>&quot;significant<sp/>energy&quot;<sp/>threshold,<sp/>are:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-<sp/>`L|L2`,<sp/>`L3`:<sp/>charged<sp/>leptons,<sp/>by<sp/>default<sp/>meaning<sp/>electrons<sp/>and<sp/>muons.<sp/>`L3`<sp/>variants<sp/>specifically<sp/>refer<sp/>to<sp/>all<sp/>three<sp/>generations,<sp/>including<sp/>taus;<sp/>`L2`<sp/>specifically<sp/>limits<sp/>to<sp/>e+mu;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-<sp/>`E`,<sp/>`M`:<sp/>electrons<sp/>and<sp/>muons<sp/>specifically;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-<sp/>`TH`:<sp/>hadronic<sp/>taus.<sp/>Leptonic<sp/>taus<sp/>are<sp/>treated<sp/>as<sp/>final-state<sp/>electrons<sp/>and<sp/>muons;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-<sp/>`SSL|SSL2`,<sp/>`OSL|OSL2`,<sp/>+<sp/>3-flavour<sp/>variants:<sp/>same-sign<sp/>and<sp/>opposite-sign<sp/>leptons.<sp/>`2`<sp/>and<sp/>`3`<sp/>suffixes<sp/>can<sp/>be<sp/>attached<sp/>again,<sp/>defaulting<sp/>to<sp/>`2`.<sp/>The<sp/>count<sp/>is<sp/>the<sp/>number<sp/>of<sp/>leptons,<sp/>not<sp/>number<sp/>of<sp/>groups;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-<sp/>`OSSF|OSSF2`,<sp/>`SSSF|SSSF2`,<sp/>`OSOF|OSOF2`,<sp/>`SSOF|SSOF2`,<sp/>+<sp/>3-flavour<sp/>variants:<sp/>pairs<sp/>of<sp/>opposite-sign,<sp/>same-flavour<sp/>etc.<sp/>leptons.<sp/>`2`<sp/>and<sp/>`3`<sp/>suffixes<sp/>can<sp/>be<sp/>attached<sp/>again,<sp/>though<sp/>`3`<sp/>will<sp/>be<sp/>uncommon.<sp/>The<sp/>count<sp/>is<sp/>the<sp/>number<sp/>of<sp/>pairs,<sp/>not<sp/>number<sp/>of<sp/>leptons;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-<sp/>`DY`:<sp/>reconstructed<sp/>candidate<sp/>photon/Z<sp/>decay<sp/>to<sp/>same-flavour<sp/>fermions,<sp/>peaking<sp/>around<sp/>the<sp/>Z<sp/>or<sp/>photon<sp/>pole<sp/>masses.<sp/>Probably<sp/>via<sp/>leptons.<sp/>Needed<sp/>since<sp/>OSSF<sp/>doesn&apos;t<sp/>focus<sp/>on<sp/>those<sp/>mass<sp/>ranges,<sp/>which<sp/>are<sp/>often<sp/>specifically<sp/>excluded;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-<sp/>`P`,<sp/>`J`,<sp/>`JJ`,<sp/>`JB|B`,<sp/>`JC|C`,<sp/>`JL`:<sp/>photons,<sp/>jets,<sp/>large-R/reclustered<sp/>jets,<sp/>and<sp/>b-,<sp/>c-,<sp/>and<sp/>light-jets;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-<sp/>`W`,<sp/>`Z`,<sp/>`T`,<sp/>`H`,<sp/>`PP`:<sp/>numbers<sp/>of<sp/>Standard<sp/>Model<sp/>EW<sp/>resonances<sp/>--<sp/>W,<sp/>Z,<sp/>top,<sp/>Higgs,<sp/>and<sp/>photon-propagator<sp/>--<sp/>reconstructed<sp/>by<sp/>implied<sp/>&amp;<sp/>context-dependent<sp/>methods<sp/>(which<sp/>are<sp/>not<sp/>ambiguous<sp/>and<sp/>not<sp/>final-state,<sp/>so<sp/>these<sp/>are<sp/>discouraged).</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>Boolean<sp/>event-characteristic<sp/>requirement<sp/>types,<sp/>which<sp/>can<sp/>be<sp/>negated</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>to<sp/>favour<sp/>lower-scale<sp/>events<sp/>by<sp/>using<sp/>a<sp/>`!`<sp/>prefix,<sp/>are:</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-<sp/>`MET|MPT|PTMISS`:<sp/>synonyms<sp/>for<sp/>significantly<sp/>large<sp/>missing<sp/>transverse<sp/>momentum;<sp/>no<sp/>absolute<sp/>number<sp/>is<sp/>implied,<sp/>other<sp/>than<sp/>non-zero;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-<sp/>`MT`,<sp/>`MT2`:<sp/>high<sp/>(s)transverse<sp/>mass<sp/>between<sp/>the<sp/>MET<sp/>vector<sp/>and<sp/>a<sp/>context-dependent<sp/>visible<sp/>physics<sp/>object;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-<sp/>`MLL`,<sp/>`MJJ`:<sp/>presence<sp/>of<sp/>high-mass<sp/>object<sp/>pairs;</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>-<sp/>`HT`,<sp/>`MEFF`:<sp/>high<sp/>general<sp/>scale<sp/>of<sp/>scalar<sp/>event<sp/>energy.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>*Reserved<sp/>syntax<sp/>for<sp/>numeric-cuts:*<sp/>We<sp/>reserve<sp/>for<sp/>expansion<sp/>a</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>syntax<sp/>with<sp/>brackets<sp/>immediately<sp/>following<sp/>the<sp/>requirement-type</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>term,<sp/>to<sp/>permit<sp/>more<sp/>detailed<sp/>specification<sp/>of<sp/>cut<sp/>variables<sp/>and</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>values,<sp/>e.g.<sp/>`MET{100}<sp/>+<sp/>HT(&lt;<sp/>1000)`,<sp/>or<sp/>`3J[PT<sp/>&gt;<sp/>100]`.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal"><sp/><sp/>Note<sp/>that<sp/>several<sp/>types<sp/>of<sp/>bracket<sp/>and<sp/>several<sp/>syntaxes<sp/>for<sp/>their</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>content<sp/>are<sp/>illustrated<sp/>here:<sp/>this<sp/>is<sp/>just<sp/>to<sp/>indicate<sp/>that<sp/>this<sp/>is</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>not<sp/>a<sp/>currently<sp/>fixed<sp/>aspect<sp/>of<sp/>the<sp/>format<sp/>and<sp/>users<sp/>should<sp/>avoid</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>any<sp/>ad<sp/>hoc<sp/>uses<sp/>that<sp/>could<sp/>clash<sp/>with<sp/>it.<sp/>If<sp/>you<sp/>are<sp/>in<sp/>that</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>situation<sp/>or<sp/>need/want<sp/>to<sp/>specify<sp/>numerical<sp/>values<sp/>within<sp/>the</highlight></codeline>
+<codeline><highlight class="normal"><sp/><sp/>signature<sp/>syntax,<sp/>please<sp/>contact<sp/>us<sp/>to<sp/>discuss<sp/>the<sp/>design!</highlight></codeline>
+<codeline></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Examples</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>`=2L<sp/>+<sp/>OSSF<sp/>+<sp/>1DY<sp/>+<sp/>&gt;=2J<sp/>+<sp/>MET<sp/>+<sp/>MT2`:<sp/>exactly<sp/>two<sp/>leptons<sp/>(e/mu)<sp/>in<sp/>an<sp/>opposite-sign,<sp/>same-flavour<sp/>pair,<sp/>consistent<sp/>with<sp/>Drell-Yan<sp/>gamma<sp/>or<sp/>Z<sp/>poles,<sp/>at<sp/>least<sp/>two<sp/>jets,<sp/>and<sp/>requiring<sp/>large<sp/>missing<sp/>momentum<sp/>and<sp/>stransverse<sp/>mass;</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`2L<sp/>+<sp/>!DY<sp/>+<sp/>&gt;=2J<sp/>+<sp/>MET<sp/>+<sp/>!MJJ`:<sp/>exactly<sp/>two<sp/>e/mu,<sp/>not<sp/>from<sp/>Drell-Yan<sp/>dilepton<sp/>masses<sp/>if<sp/>same-flavour,<sp/>at<sp/>least<sp/>two<sp/>jets,<sp/>significant<sp/>missing<sp/>momentum,<sp/>small<sp/>dijet<sp/>mass;</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`=1L<sp/>+<sp/>2B<sp/>+<sp/>!TH<sp/>+<sp/>MET<sp/>+<sp/>MT<sp/>+<sp/>H`:<sp/>exactly<sp/>one<sp/>e/mu,<sp/>exactly<sp/>two<sp/>b-jets,<sp/>no<sp/>hadronic<sp/>taus,<sp/>significant<sp/>MET<sp/>and<sp/>transverse<sp/>mass,<sp/>event<sp/>compatible<sp/>with<sp/>a<sp/>Higgs;</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>`&gt;=2SSL<sp/>+<sp/>&gt;=2B<sp/>+<sp/>&gt;=6J<sp/>+<sp/>MET`:<sp/>at<sp/>least<sp/>two<sp/>same-sign<sp/>lepton<sp/>pairs,<sp/>at<sp/>least<sp/>two<sp/>b-jets,<sp/>at<sp/>least<sp/>6<sp/>jets,<sp/>and<sp/>significant<sp/>missing<sp/>momentum.</highlight></codeline>
+    </programlisting>
+    <location file="ColliderBit/src/analyses/README.md"/>
+  </compounddef>
+</doxygen>

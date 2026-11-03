@@ -26,7 +26,7 @@ Inherits from [Gambit::Printers::BasePrinter](/documentation/code/classes/classg
 | virtual [Options](/documentation/code/classes/classgambit_1_1options/) | **[resume_reader_options](/documentation/code/classes/classgambit_1_1printers_1_1sqliteprinter/#function-resume-reader-options)**() |
 | virtual void | **[_print_metadata](/documentation/code/classes/classgambit_1_1printers_1_1sqliteprinter/#function-print-metadata)**([map_str_str](/documentation/code/namespaces/namespacegambit/#typedef-map-str-str) metadata) |
 | template <typename T \> <br>void | **[_print](/documentation/code/classes/classgambit_1_1printers_1_1sqliteprinter/#function-print)**(T const & , const std::string & label, const int vertexID, const uint, const ulong)<br>Print functions.  |
-| template <typename T \> <br>void | **[_print](/documentation/code/classes/classgambit_1_1printers_1_1sqliteprinter/#function-print)**(T const & in, const std::string & label, const uint rank, const ulong pointID)<br>Print functions.  |
+| template <typename T \> <br>void | **[_print](/documentation/code/classes/classgambit_1_1printers_1_1sqliteprinter/#function-print)**(T const & , const std::string & label, const uint rank, const ulong pointID)<br>Print functions.  |
 | | **[SQLitePrinter](/documentation/code/classes/classgambit_1_1printers_1_1sqliteprinter/#function-sqliteprinter)**(const [Options](/documentation/code/classes/classgambit_1_1options/) & options, [BasePrinter](/documentation/code/classes/classgambit_1_1printers_1_1baseprinter/) *const primary =NULL)<br>Constructor (for construction via inifile options)  |
 | | **[~SQLitePrinter](/documentation/code/classes/classgambit_1_1printers_1_1sqliteprinter/#function-sqliteprinter)**()<br>Destructor.  |
 | std::size_t | **[get_max_buffer_length](/documentation/code/classes/classgambit_1_1printers_1_1sqliteprinter/#function-get-max-buffer-length)**() |
@@ -206,7 +206,7 @@ Print functions.
 ```
 template <typename T >
 inline void _print(
-    T const & in,
+    T const & ,
     const std::string & label,
     const uint rank,
     const ulong pointID
@@ -259,4 +259,4 @@ Helper print functions.
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:32 +0000
+Updated on 2026-11-03 at 14:50:44 +0000

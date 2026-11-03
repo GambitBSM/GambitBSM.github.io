@@ -30,6 +30,7 @@ description: "[No description available]"
 
   * Pat Scott ([patscott@physics.mcgill.ca](mailto:patscott@physics.mcgill.ca)) 
   * Ben Farmer ([benjamin.farmer@monash.edu.au](mailto:benjamin.farmer@monash.edu.au)) 
+  * Tomas Gonzalo ([tomas.gonzalo@kit.edu](mailto:tomas.gonzalo@kit.edu)) 
 
 
 **Date**: 
@@ -39,6 +40,7 @@ description: "[No description available]"
   * 2015 Apr 
   * 2023 Jan
   * 2013 May, June, July
+  * 2024 Jan
 
 
 General small utility functions.
@@ -79,6 +81,10 @@ Authors (add name and date if you modify):
 ///  \author Ben Farmer
 ///          (benjamin.farmer@monash.edu.au)
 ///  \date 2013 May, June, July
+///
+///  \author Tomas Gonzalo
+///          (tomas.gonzalo@kit.edu)
+///  \date 2024 Jan
 ///
 ///  *********************************************
 
@@ -128,9 +134,19 @@ namespace Gambit
 
   namespace Utils
   {
+    /// Get an environment variable, or "" if the variable is not set
+    std::string getEnvVar(std::string const & key );
+
+    /// Return the root directory of GAMBIT.
+    /// Useful for locating configuration files and other such things
+    /// in a robust manner at runtime 
+    EXPORT_SYMBOLS const std::string& GAMBIT_root_dir();
 
     /// Return the path to the build-time scratch directory
-    const str buildtime_scratch = GAMBIT_DIR "/scratch/build_time/";
+    /// bjf> There is stuff using this variable that is needed by ScannerBit at run time,
+    /// not just build time, therefore it needs to be located using the function above
+    //const str buildtime_scratch = GAMBIT_DIR "/scratch/build_time/";
+    EXPORT_SYMBOLS const std::string& buildtime_scratch();
 
     /// Return the path to the run-specific scratch directory
     /// Don't call this from a destructor, as the internal static str may have already been destroyed.
@@ -293,6 +309,14 @@ namespace Gambit
     /// From: http://stackoverflow.com/a/2845275/1447953
     EXPORT_SYMBOLS bool isInteger(const std::string&);
 
+    /// Wrappers of all_of, any_of and none_of using vectors
+    EXPORT_SYMBOLS bool all_of(const std::vector<bool>&);
+    EXPORT_SYMBOLS bool any_of(const std::vector<bool>&);
+    EXPORT_SYMBOLS bool none_of(const std::vector<bool>&);
+
+    /// Perform outer product of two vectors
+    EXPORT_SYMBOLS std::vector<double> outer_product(const std::vector<double>&, const std::vector<double>&);
+
     // Dummy functions for variadic variables to avoid compiler warnings
     template<typename... T> void dummy_function() {}
     template<typename T> void dummy_function(T one)
@@ -325,4 +349,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:33 +0000
+Updated on 2026-11-03 at 14:50:45 +0000

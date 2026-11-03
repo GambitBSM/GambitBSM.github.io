@@ -319,7 +319,7 @@ class my_simplex{
   void find_min();
   void find_max();
   int imin,imax, inmax;
-  void my_SetUp(double xin[]);
+  void my_SetUp(double xin[DMAX*(DMAX+1)]);
   void set_y();
   void my_Centroid(int);
   void my_Reflection();
@@ -986,4 +986,4 @@ double topnesscompute(double pb1[4], double pl[4], double MET[4], double sigmat,
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:35 +0000
+Updated on 2026-11-03 at 14:50:47 +0000

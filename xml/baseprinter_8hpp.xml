@@ -32,7 +32,7 @@
     <includedby refid="sqlitereader_8hpp" local="yes">sqlitereader.hpp</includedby>
     <includedby refid="standalone__module_8hpp" local="yes">standalone_module.hpp</includedby>
     <incdepgraph>
-      <node id="110">
+      <node id="111">
         <label>gambit/Backends/backend_info.hpp</label>
         <link refid="backend__info_8hpp"/>
         <childnode refid="8" relation="include">
@@ -44,42 +44,30 @@
         <childnode refid="56" relation="include">
         </childnode>
       </node>
-      <node id="109">
+      <node id="110">
         <label>gambit/Backends/backend_singleton.hpp</label>
         <link refid="backend__singleton_8hpp"/>
-        <childnode refid="110" relation="include">
+        <childnode refid="111" relation="include">
         </childnode>
       </node>
       <node id="106">
         <label>gambit/Backends/default_bossed_versions.hpp</label>
         <link refid="default__bossed__versions_8hpp"/>
       </node>
-      <node id="107">
-        <label>gambit/Backends/mathematica_variable.hpp</label>
-        <link refid="mathematica__variable_8hpp"/>
-        <childnode refid="108" relation="include">
-        </childnode>
-        <childnode refid="109" relation="include">
-        </childnode>
-        <childnode refid="79" relation="include">
-        </childnode>
-        <childnode refid="111" relation="include">
-        </childnode>
-      </node>
-      <node id="113">
+      <node id="109">
         <label>gambit/Backends/python_helpers.hpp</label>
         <link refid="python__helpers_8hpp"/>
       </node>
-      <node id="112">
+      <node id="107">
         <label>gambit/Backends/python_variable.hpp</label>
         <link refid="python__variable_8hpp"/>
         <childnode refid="79" relation="include">
         </childnode>
         <childnode refid="108" relation="include">
         </childnode>
-        <childnode refid="113" relation="include">
-        </childnode>
         <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
         </childnode>
       </node>
       <node id="98">
@@ -237,8 +225,6 @@
         </childnode>
         <childnode refid="112" relation="include">
         </childnode>
-        <childnode refid="114" relation="include">
-        </childnode>
       </node>
       <node id="86">
         <label>gambit/Elements/slhaea_spec_helpers.hpp</label>
@@ -329,9 +315,9 @@
         <link refid="types__rollcall_8hpp"/>
         <childnode refid="71" relation="include">
         </childnode>
-        <childnode refid="115" relation="include">
+        <childnode refid="113" relation="include">
         </childnode>
-        <childnode refid="116" relation="include">
+        <childnode refid="114" relation="include">
         </childnode>
       </node>
       <node id="104">
@@ -801,9 +787,6 @@
       <node id="81">
         <label>boost/algorithm/string/classification.hpp</label>
       </node>
-      <node id="111">
-        <label>boost/algorithm/string/replace.hpp</label>
-      </node>
       <node id="80">
         <label>boost/algorithm/string/split.hpp</label>
       </node>
@@ -888,13 +871,13 @@
       <node id="41">
         <label>fstream</label>
       </node>
-      <node id="114">
+      <node id="112">
         <label>gambit/Backends/backend_types_rollcall.hpp</label>
       </node>
-      <node id="115">
+      <node id="113">
         <label>gambit/Elements/module_types_rollcall.hpp</label>
       </node>
-      <node id="116">
+      <node id="114">
         <label>gambit/Models/model_types_rollcall.hpp</label>
       </node>
       <node id="79">
@@ -1027,7 +1010,7 @@
       </node>
       <node id="22">
         <label>diagnostics.cpp</label>
-        <link refid="diagnostics_8cpp"/>
+        <link refid="Core_2src_2diagnostics_8cpp"/>
       </node>
       <node id="18">
         <label>gambit.cpp</label>
@@ -1082,6 +1065,10 @@
         </childnode>
         <childnode refid="52" relation="include">
         </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
       </node>
       <node id="27">
         <label>functors.cpp</label>
@@ -1090,6 +1077,14 @@
       <node id="52">
         <label>ExampleBit_A_standalone_example.cpp</label>
         <link refid="ExampleBit__A__standalone__example_8cpp"/>
+      </node>
+      <node id="53">
+        <label>NeutrinoBit_standalone.cpp</label>
+        <link refid="NeutrinoBit__standalone_8cpp"/>
+      </node>
+      <node id="54">
+        <label>NeutrinoBit_standalone_RHN.cpp</label>
+        <link refid="NeutrinoBit__standalone__RHN_8cpp"/>
       </node>
       <node id="1">
         <label>baseprinter.hpp</label>

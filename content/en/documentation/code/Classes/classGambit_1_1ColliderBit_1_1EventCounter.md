@@ -29,12 +29,17 @@ A simple class for counting events of type HEPUtils::Event.
 | double | **[weight_sum](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/#function-weight-sum)**() const |
 | void | **[set_weight_sum_err](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/#function-set-weight-sum-err)**(double weight_sum_err) |
 | double | **[weight_sum_err](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/#function-weight-sum-err)**() const |
-| void | **[add_event](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/#function-add-event)**(double w =1.0, double werr =0.0) |
+| void | **[add_event](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/#function-add-event)**(const HEPUtils::Event & event, double w, double werr =0.0) |
+| void | **[add_event](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/#function-add-event)**(const HEPUtils::Event * event_ptr, double w, double werr =0.0) |
 | void | **[add_event](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/#function-add-event)**(const HEPUtils::Event & event) |
 | void | **[add_event](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/#function-add-event)**(const HEPUtils::Event * event_ptr) |
 | [EventCounter](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/) & | **[operator+=](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/#function-operator)**(const HEPUtils::Event & event) |
 | [EventCounter](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/) & | **[operator+=](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/#function-operator)**(const [EventCounter](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/) & rhs) |
 | [EventCounter](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/) & | **[combine](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/#function-combine)**(const [EventCounter](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/) & other) |
+| void | **[set_store_accepted_event_IDs](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/#function-set-store-accepted-event-ids)**(bool setting) |
+| bool | **[store_accepted_event_IDs](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/#function-store-accepted-event-ids)**() |
+| std::vector< unsigned int > | **[get_event_acceptance_record](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/#function-get-event-acceptance-record)**() const |
+| void | **[clear_event_acceptance_record](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/#function-clear-event-acceptance-record)**() |
 
 ## Public Functions Documentation
 
@@ -138,7 +143,19 @@ inline double weight_sum_err() const
 
 ```
 inline void add_event(
-    double w =1.0,
+    const HEPUtils::Event & event,
+    double w,
+    double werr =0.0
+)
+```
+
+
+### function add_event
+
+```
+inline void add_event(
+    const HEPUtils::Event * event_ptr,
+    double w,
     double werr =0.0
 )
 ```
@@ -189,6 +206,36 @@ inline EventCounter & combine(
 ```
 
 
+### function set_store_accepted_event_IDs
+
+```
+inline void set_store_accepted_event_IDs(
+    bool setting
+)
+```
+
+
+### function store_accepted_event_IDs
+
+```
+inline bool store_accepted_event_IDs()
+```
+
+
+### function get_event_acceptance_record
+
+```
+inline std::vector< unsigned int > get_event_acceptance_record() const
+```
+
+
+### function clear_event_acceptance_record
+
+```
+inline void clear_event_acceptance_record()
+```
+
+
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:32 +0000
+Updated on 2026-11-03 at 14:50:43 +0000

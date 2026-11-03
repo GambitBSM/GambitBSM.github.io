@@ -34,7 +34,7 @@ description: "[No description available]"
 
 Test functions for Spectrum object
 
-These functions test various aspects of the Spectrum class and related classes. They are not dependent on any other parts of [Gambit](/documentation/code/namespaces/namespacegambit/), so that Spectrum object test code can be compiled and run seperately from [Gambit](/documentation/code/namespaces/namespacegambit/), but but also be run from inside [Gambit](/documentation/code/namespaces/namespacegambit/).
+These functions test various aspects of the Spectrum class and related classes. They are not dependent on any other parts of [Gambit](/documentation/code/namespaces/namespacegambit/), so that Spectrum object test code can be compiled and run separately from [Gambit](/documentation/code/namespaces/namespacegambit/), but but also be run from inside [Gambit](/documentation/code/namespaces/namespacegambit/).
 
 
 
@@ -92,7 +92,7 @@ Authors (add name and date if you modify):
 ///  Spectrum class and related classes. They are
 ///  not dependent on any other parts of Gambit,
 ///  so that Spectrum object test code can be
-///  compiled and run seperately from Gambit, but
+///  compiled and run separately from Gambit, but
 ///  but also be run from inside Gambit.
 ///
 ///  *********************************************
@@ -624,7 +624,7 @@ namespace Gambit
                               FSmssm.get_physical_slha().MCha(i-1), i);
           if(immediate_exit == true && pass == false) return pass;
        }
-       //In the the neutralino and chargino tests I compare against
+       // In the neutralino and chargino tests I compare against
        // value in physical_slha struct since the value in
        // physical may differ by a sign since it stores positive masses
        // and a complex mixing matrix.
@@ -691,7 +691,7 @@ namespace Gambit
                               FSmssm.get_physical_slha().MCha(i-1), i);
           if(immediate_exit == true && pass == false) return pass;
        }
-       //In the the neutralino and chargino tests I compare against
+       // In the neutralino and chargino tests I compare against
        // value in physical_slha struct since the value in
        // physical may differ by a sign since it stores positive masses
        // and a complex mixing matrix.
@@ -1421,4 +1421,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:33 +0000
+Updated on 2026-11-03 at 14:50:45 +0000

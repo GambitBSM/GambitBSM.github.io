@@ -98,6 +98,23 @@
         <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" line="79" column="25" bodyfile="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" bodystart="79" bodyend="-1"/>
       </memberdef>
       </sectiondef>
+      <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="classGambit_1_1ColliderBit_1_1AnalysisContainer_1aa0ec775548a83436bdbbbe85132452cd" prot="public" static="yes" mutable="no">
+        <type>std::map&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>, int &gt;</type>
+        <definition>std::map&lt;str,int&gt; Gambit::ColliderBit::AnalysisContainer::event_count</definition>
+        <argsstring></argsstring>
+        <name>event_count</name>
+        <qualifiedname>Gambit::ColliderBit::AnalysisContainer::event_count</qualifiedname>
+        <briefdescription>
+<para>Event counter for each thread, one for each collider. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" line="85" column="32" bodyfile="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
       <sectiondef kind="public-func">
       <memberdef kind="function" id="classGambit_1_1ColliderBit_1_1AnalysisContainer_1a9fc754ef3a8ea67d4be4a0b0c73bbf70" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -112,7 +129,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" line="85" column="9" bodyfile="ColliderBit/src/analyses/AnalysisContainer.cpp" bodystart="211" bodyend="219"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" line="88" column="9" bodyfile="ColliderBit/src/analyses/AnalysisContainer.cpp" bodystart="254" bodyend="262"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1ColliderBit_1_1AnalysisContainer_1a2e36fc70ff190b042e1674018842616f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -127,7 +144,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" line="88" column="9" bodyfile="ColliderBit/src/analyses/AnalysisContainer.cpp" bodystart="223" bodyend="226"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" line="91" column="9" bodyfile="ColliderBit/src/analyses/AnalysisContainer.cpp" bodystart="266" bodyend="269"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1ColliderBit_1_1AnalysisContainer_1a64e3cb761c1152ba366e86f253fed780" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -146,7 +163,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" line="91" column="14" bodyfile="ColliderBit/src/analyses/AnalysisContainer.cpp" bodystart="230" bodyend="260"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" line="94" column="14" bodyfile="ColliderBit/src/analyses/AnalysisContainer.cpp" bodystart="273" bodyend="303"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1ColliderBit_1_1AnalysisContainer_1a66122d3e492814070c73a1c13d4215b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -160,10 +177,10 @@
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
-<para><xrefsect id="todo_1_todo000081"><xreftitle>Todo</xreftitle><xrefdescription><para>Storing smart ptrs to <ref refid="classGambit_1_1ColliderBit_1_1Analysis" kindref="compound">Analysis</ref> would make this way easier </para>
+<para><xrefsect id="todo_1_todo000080"><xreftitle>Todo</xreftitle><xrefdescription><para>Storing smart ptrs to <ref refid="classGambit_1_1ColliderBit_1_1Analysis" kindref="compound">Analysis</ref> would make this way easier </para>
 </xrefdescription></xrefsect></para>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" line="94" column="14" bodyfile="ColliderBit/src/analyses/AnalysisContainer.cpp" bodystart="264" bodyend="279"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" line="97" column="14" bodyfile="ColliderBit/src/analyses/AnalysisContainer.cpp" bodystart="307" bodyend="322"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1ColliderBit_1_1AnalysisContainer_1aa3d1414339332ac85822809a7db0bc96" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -183,7 +200,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" line="97" column="14" bodyfile="ColliderBit/src/analyses/AnalysisContainer.cpp" bodystart="283" bodyend="286"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" line="100" column="14" bodyfile="ColliderBit/src/analyses/AnalysisContainer.cpp" bodystart="326" bodyend="330"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1ColliderBit_1_1AnalysisContainer_1a45dc9ed85147d9eb4d4e4cf0f1a31d27" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
@@ -199,7 +216,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" line="100" column="13" bodyfile="ColliderBit/src/analyses/AnalysisContainer.cpp" bodystart="290" bodyend="293"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" line="103" column="13" bodyfile="ColliderBit/src/analyses/AnalysisContainer.cpp" bodystart="334" bodyend="337"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1ColliderBit_1_1AnalysisContainer_1a68b5d813d330366bd99913165ab55643" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -218,7 +235,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" line="103" column="14" bodyfile="ColliderBit/src/analyses/AnalysisContainer.cpp" bodystart="297" bodyend="310"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" line="106" column="14" bodyfile="ColliderBit/src/analyses/AnalysisContainer.cpp" bodystart="341" bodyend="354"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1ColliderBit_1_1AnalysisContainer_1a18b81ab6ea6b5f01d91167c0fc5bfa05" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -233,7 +250,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" line="105" column="14" bodyfile="ColliderBit/src/analyses/AnalysisContainer.cpp" bodystart="313" bodyend="316"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" line="108" column="14" bodyfile="ColliderBit/src/analyses/AnalysisContainer.cpp" bodystart="357" bodyend="360"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1ColliderBit_1_1AnalysisContainer_1ade3a147b509a6e2ebbeac58c249b5191" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -256,7 +273,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" line="108" column="14" bodyfile="ColliderBit/src/analyses/AnalysisContainer.cpp" bodystart="320" bodyend="333"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" line="111" column="14" bodyfile="ColliderBit/src/analyses/AnalysisContainer.cpp" bodystart="364" bodyend="378"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1ColliderBit_1_1AnalysisContainer_1abf8efd7d9f83914e4dadb23409999d0a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -275,7 +292,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" line="110" column="14" bodyfile="ColliderBit/src/analyses/AnalysisContainer.cpp" bodystart="336" bodyend="339"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" line="113" column="14" bodyfile="ColliderBit/src/analyses/AnalysisContainer.cpp" bodystart="381" bodyend="384"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1ColliderBit_1_1AnalysisContainer_1ae7548b1144db82b163239e877b3a73ed" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -298,7 +315,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" line="113" column="14" bodyfile="ColliderBit/src/analyses/AnalysisContainer.cpp" bodystart="343" bodyend="346"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" line="116" column="14" bodyfile="ColliderBit/src/analyses/AnalysisContainer.cpp" bodystart="388" bodyend="391"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1ColliderBit_1_1AnalysisContainer_1aaccd27284090433610c770d948163261" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -317,7 +334,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" line="115" column="14" bodyfile="ColliderBit/src/analyses/AnalysisContainer.cpp" bodystart="349" bodyend="355"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" line="118" column="14" bodyfile="ColliderBit/src/analyses/AnalysisContainer.cpp" bodystart="394" bodyend="400"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1ColliderBit_1_1AnalysisContainer_1a170597f40a95f2edf8b69bd028f7a671" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -332,7 +349,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" line="117" column="14" bodyfile="ColliderBit/src/analyses/AnalysisContainer.cpp" bodystart="358" bodyend="361"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" line="120" column="14" bodyfile="ColliderBit/src/analyses/AnalysisContainer.cpp" bodystart="403" bodyend="406"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1ColliderBit_1_1AnalysisContainer_1a67043c7ca5fe266aa4d7476ed7e9452c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -347,7 +364,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" line="119" column="14" bodyfile="ColliderBit/src/analyses/AnalysisContainer.cpp" bodystart="364" bodyend="370"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" line="122" column="14" bodyfile="ColliderBit/src/analyses/AnalysisContainer.cpp" bodystart="409" bodyend="415"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1ColliderBit_1_1AnalysisContainer_1a0be3d366564e2520b8a25e9c8350fdf4" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>const <ref refid="classGambit_1_1ColliderBit_1_1Analysis" kindref="compound">Analysis</ref> *</type>
@@ -370,7 +387,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" line="122" column="24" bodyfile="ColliderBit/src/analyses/AnalysisContainer.cpp" bodystart="374" bodyend="377"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" line="125" column="24" bodyfile="ColliderBit/src/analyses/AnalysisContainer.cpp" bodystart="419" bodyend="422"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1ColliderBit_1_1AnalysisContainer_1a5c50e503e4640ce8eae408e167e53cb8" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>const std::map&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>, <ref refid="classGambit_1_1ColliderBit_1_1Analysis" kindref="compound">Analysis</ref> * &gt; &amp;</type>
@@ -389,7 +406,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" line="124" column="24" bodyfile="ColliderBit/src/analyses/AnalysisContainer.cpp" bodystart="380" bodyend="383"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" line="127" column="24" bodyfile="ColliderBit/src/analyses/AnalysisContainer.cpp" bodystart="425" bodyend="428"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1ColliderBit_1_1AnalysisContainer_1ae918282166ace09e2491f4f529962350" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>const std::map&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>, <ref refid="classGambit_1_1ColliderBit_1_1Analysis" kindref="compound">Analysis</ref> * &gt; &amp;</type>
@@ -404,7 +421,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" line="126" column="24" bodyfile="ColliderBit/src/analyses/AnalysisContainer.cpp" bodystart="386" bodyend="389"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" line="129" column="24" bodyfile="ColliderBit/src/analyses/AnalysisContainer.cpp" bodystart="431" bodyend="434"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1ColliderBit_1_1AnalysisContainer_1afc01bb6f68a4b87e59e0fbc0e082f0c5" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>const std::map&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>, std::map&lt; <ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>, <ref refid="classGambit_1_1ColliderBit_1_1Analysis" kindref="compound">Analysis</ref> * &gt; &gt; &amp;</type>
@@ -419,34 +436,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" line="128" column="24" bodyfile="ColliderBit/src/analyses/AnalysisContainer.cpp" bodystart="392" bodyend="395"/>
-      </memberdef>
-      <memberdef kind="function" id="classGambit_1_1ColliderBit_1_1AnalysisContainer_1a2e8f74ac791510f96dce737695a48911" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
-        <type>void</type>
-        <definition>void Gambit::ColliderBit::AnalysisContainer::analyze</definition>
-        <argsstring>(const HEPUtils::Event &amp;, str, str) const</argsstring>
-        <name>analyze</name>
-        <qualifiedname>Gambit::ColliderBit::AnalysisContainer::analyze</qualifiedname>
-        <param>
-          <type>const HEPUtils::Event &amp;</type>
-          <defname>event</defname>
-        </param>
-        <param>
-          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
-          <defname>collider_name</defname>
-        </param>
-        <param>
-          <type><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref></type>
-          <defname>analysis_name</defname>
-        </param>
-        <briefdescription>
-<para>Pass event through specific analysis. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" line="131" column="14" bodyfile="ColliderBit/src/analyses/AnalysisContainer.cpp" bodystart="398" bodyend="401"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" line="131" column="24" bodyfile="ColliderBit/src/analyses/AnalysisContainer.cpp" bodystart="437" bodyend="440"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1ColliderBit_1_1AnalysisContainer_1a67ece56885f549b8bffacdb9b899ff8f" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -470,7 +460,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" line="133" column="14" bodyfile="ColliderBit/src/analyses/AnalysisContainer.cpp" bodystart="404" bodyend="410"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" line="134" column="14" bodyfile="ColliderBit/src/analyses/AnalysisContainer.cpp" bodystart="443" bodyend="449"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1ColliderBit_1_1AnalysisContainer_1aa9d1b5be574977e35fda4e2e45cf1647" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -486,10 +476,11 @@
 <para>Pass event through all analysis for the current collider. </para>
         </briefdescription>
         <detaileddescription>
+<para>Pass event through all analyses for the current collider. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" line="135" column="14" bodyfile="ColliderBit/src/analyses/AnalysisContainer.cpp" bodystart="413" bodyend="416"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" line="136" column="14" bodyfile="ColliderBit/src/analyses/AnalysisContainer.cpp" bodystart="452" bodyend="455"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1ColliderBit_1_1AnalysisContainer_1a12723af95c2e31d77d0c17d36ebeb5af" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -513,7 +504,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" line="139" column="14" bodyfile="ColliderBit/src/analyses/AnalysisContainer.cpp" bodystart="420" bodyend="428"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" line="140" column="14" bodyfile="ColliderBit/src/analyses/AnalysisContainer.cpp" bodystart="460" bodyend="468"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1ColliderBit_1_1AnalysisContainer_1a8c91278b5f2d7acf39650961cce2bf6b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -532,7 +523,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" line="142" column="14" bodyfile="ColliderBit/src/analyses/AnalysisContainer.cpp" bodystart="432" bodyend="439"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" line="143" column="14" bodyfile="ColliderBit/src/analyses/AnalysisContainer.cpp" bodystart="472" bodyend="479"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1ColliderBit_1_1AnalysisContainer_1a557e59b4124c5065a8854ca485191283" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -547,7 +538,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" line="145" column="14" bodyfile="ColliderBit/src/analyses/AnalysisContainer.cpp" bodystart="443" bodyend="446"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" line="146" column="14" bodyfile="ColliderBit/src/analyses/AnalysisContainer.cpp" bodystart="483" bodyend="486"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1ColliderBit_1_1AnalysisContainer_1aa699218b22ed8ce58792130f64ff811d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -574,7 +565,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" line="148" column="14" bodyfile="ColliderBit/src/analyses/AnalysisContainer.cpp" bodystart="449" bodyend="452"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" line="149" column="14" bodyfile="ColliderBit/src/analyses/AnalysisContainer.cpp" bodystart="489" bodyend="492"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1ColliderBit_1_1AnalysisContainer_1aaaf060bce94f21acb1064b9d3c4888bc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -597,7 +588,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" line="150" column="14" bodyfile="ColliderBit/src/analyses/AnalysisContainer.cpp" bodystart="455" bodyend="462"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" line="151" column="14" bodyfile="ColliderBit/src/analyses/AnalysisContainer.cpp" bodystart="495" bodyend="502"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1ColliderBit_1_1AnalysisContainer_1a6b607e6b8815cce61ae958da12c2de91" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -616,7 +607,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" line="152" column="14" bodyfile="ColliderBit/src/analyses/AnalysisContainer.cpp" bodystart="465" bodyend="468"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" line="153" column="14" bodyfile="ColliderBit/src/analyses/AnalysisContainer.cpp" bodystart="505" bodyend="508"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1ColliderBit_1_1AnalysisContainer_1a2ed26e615f0245f4152105065b8249ec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -635,7 +626,26 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" line="154" column="14" bodyfile="ColliderBit/src/analyses/AnalysisContainer.cpp" bodystart="471" bodyend="478"/>
+        <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" line="155" column="14" bodyfile="ColliderBit/src/analyses/AnalysisContainer.cpp" bodystart="511" bodyend="518"/>
+      </memberdef>
+      <memberdef kind="function" id="classGambit_1_1ColliderBit_1_1AnalysisContainer_1a9e39c1b14e918201d3f8d7c06c98874e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Gambit::ColliderBit::AnalysisContainer::set_store_accepted_event_IDs</definition>
+        <argsstring>(bool setting)</argsstring>
+        <name>set_store_accepted_event_IDs</name>
+        <qualifiedname>Gambit::ColliderBit::AnalysisContainer::set_store_accepted_event_IDs</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>setting</declname>
+        </param>
+        <briefdescription>
+<para>Call the set_store_accepted_event_IDs method on all analyses. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" line="158" column="14" bodyfile="ColliderBit/src/analyses/AnalysisContainer.cpp" bodystart="521" bodyend="530"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -643,11 +653,10 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" line="56" column="5" bodyfile="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" bodystart="57" bodyend="156"/>
+    <location file="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" line="56" column="5" bodyfile="ColliderBit/include/gambit/ColliderBit/analyses/AnalysisContainer.hpp" bodystart="57" bodyend="160"/>
     <listofallmembers>
       <member refid="classGambit_1_1ColliderBit_1_1AnalysisContainer_1a004407c9e910847391ef49cb95f64b4d" prot="private" virt="non-virtual"><scope>Gambit::ColliderBit::AnalysisContainer</scope><name>analyses_map</name></member>
       <member refid="classGambit_1_1ColliderBit_1_1AnalysisContainer_1a9fc754ef3a8ea67d4be4a0b0c73bbf70" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::AnalysisContainer</scope><name>AnalysisContainer</name></member>
-      <member refid="classGambit_1_1ColliderBit_1_1AnalysisContainer_1a2e8f74ac791510f96dce737695a48911" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::AnalysisContainer</scope><name>analyze</name></member>
       <member refid="classGambit_1_1ColliderBit_1_1AnalysisContainer_1a67ece56885f549b8bffacdb9b899ff8f" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::AnalysisContainer</scope><name>analyze</name></member>
       <member refid="classGambit_1_1ColliderBit_1_1AnalysisContainer_1aa9d1b5be574977e35fda4e2e45cf1647" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::AnalysisContainer</scope><name>analyze</name></member>
       <member refid="classGambit_1_1ColliderBit_1_1AnalysisContainer_1a64dd9c7c9371ade021d9524717085af2" prot="private" virt="non-virtual"><scope>Gambit::ColliderBit::AnalysisContainer</scope><name>base_key</name></member>
@@ -656,6 +665,7 @@
       <member refid="classGambit_1_1ColliderBit_1_1AnalysisContainer_1a8c91278b5f2d7acf39650961cce2bf6b" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::AnalysisContainer</scope><name>collect_and_add_signal</name></member>
       <member refid="classGambit_1_1ColliderBit_1_1AnalysisContainer_1a557e59b4124c5065a8854ca485191283" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::AnalysisContainer</scope><name>collect_and_add_signal</name></member>
       <member refid="classGambit_1_1ColliderBit_1_1AnalysisContainer_1a560f5a91a1d9f076ca42ce499028ccbd" prot="private" virt="non-virtual"><scope>Gambit::ColliderBit::AnalysisContainer</scope><name>current_collider</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1AnalysisContainer_1aa0ec775548a83436bdbbbe85132452cd" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::AnalysisContainer</scope><name>event_count</name></member>
       <member refid="classGambit_1_1ColliderBit_1_1AnalysisContainer_1a0be3d366564e2520b8a25e9c8350fdf4" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::AnalysisContainer</scope><name>get_analysis_pointer</name></member>
       <member refid="classGambit_1_1ColliderBit_1_1AnalysisContainer_1a5c50e503e4640ce8eae408e167e53cb8" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::AnalysisContainer</scope><name>get_collider_analyses_map</name></member>
       <member refid="classGambit_1_1ColliderBit_1_1AnalysisContainer_1ae918282166ace09e2491f4f529962350" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::AnalysisContainer</scope><name>get_current_analyses_map</name></member>
@@ -678,6 +688,7 @@
       <member refid="classGambit_1_1ColliderBit_1_1AnalysisContainer_1a6b607e6b8815cce61ae958da12c2de91" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::AnalysisContainer</scope><name>scale</name></member>
       <member refid="classGambit_1_1ColliderBit_1_1AnalysisContainer_1a2ed26e615f0245f4152105065b8249ec" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::AnalysisContainer</scope><name>scale_all</name></member>
       <member refid="classGambit_1_1ColliderBit_1_1AnalysisContainer_1aa3d1414339332ac85822809a7db0bc96" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::AnalysisContainer</scope><name>set_current_collider</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1AnalysisContainer_1a9e39c1b14e918201d3f8d7c06c98874e" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::AnalysisContainer</scope><name>set_store_accepted_event_IDs</name></member>
       <member refid="classGambit_1_1ColliderBit_1_1AnalysisContainer_1a2e36fc70ff190b042e1674018842616f" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::AnalysisContainer</scope><name>~AnalysisContainer</name></member>
     </listofallmembers>
   </compounddef>

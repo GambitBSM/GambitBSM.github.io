@@ -35,7 +35,6 @@ A class for managing collections of [Analysis](/documentation/code/classes/class
 | const std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), [Analysis](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/) * > & | **[get_collider_analyses_map](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-get-collider-analyses-map)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) collider_name) const<br>Get analyses map for a specific collider.  |
 | const std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), [Analysis](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/) * > & | **[get_current_analyses_map](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-get-current-analyses-map)**() const<br>Get analyses map for the current collider.  |
 | const std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), [Analysis](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/) * > > & | **[get_full_analyses_map](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-get-full-analyses-map)**() const<br>Get the full analyses map.  |
-| void | **[analyze](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-analyze)**(const HEPUtils::Event & event, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) collider_name, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) analysis_name) const<br>Pass event through specific analysis.  |
 | void | **[analyze](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-analyze)**(const HEPUtils::Event & event, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) collider_name) const<br>Pass event through all analysis for a specific collider.  |
 | void | **[analyze](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-analyze)**(const HEPUtils::Event & event) const<br>Pass event through all analysis for the current collider.  |
 | void | **[collect_and_add_signal](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-collect-and-add-signal)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) collider_name, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) analysis_name) |
@@ -45,6 +44,13 @@ A class for managing collections of [Analysis](/documentation/code/classes/class
 | void | **[scale](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-scale)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) collider_name, double xsec_per_event)<br>Scale results for all analyses for given collider.  |
 | void | **[scale](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-scale)**(double xsec_per_event)<br>Scale results for all analyses for the current collider.  |
 | void | **[scale_all](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-scale-all)**(double xsec_per_event)<br>Scale results for all analyses across all colliders.  |
+| void | **[set_store_accepted_event_IDs](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#function-set-store-accepted-event-ids)**(bool setting)<br>Call the set_store_accepted_event_IDs method on all analyses.  |
+
+## Public Attributes
+
+|                | Name           |
+| -------------- | -------------- |
+| std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), int > | **[event_count](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysiscontainer/#variable-event-count)** <br>Event counter for each thread, one for each collider.  |
 
 ## Public Functions Documentation
 
@@ -227,18 +233,6 @@ Get the full analyses map.
 ```
 void analyze(
     const HEPUtils::Event & event,
-    str collider_name,
-    str analysis_name
-) const
-```
-
-Pass event through specific analysis. 
-
-### function analyze
-
-```
-void analyze(
-    const HEPUtils::Event & event,
     str collider_name
 ) const
 ```
@@ -257,6 +251,9 @@ void analyze(
 ```
 
 Pass event through all analysis for the current collider. 
+
+Pass event through all analyses for the current collider. 
+
 
 ### function collect_and_add_signal
 
@@ -338,6 +335,26 @@ void scale_all(
 
 Scale results for all analyses across all colliders. 
 
+### function set_store_accepted_event_IDs
+
+```
+void set_store_accepted_event_IDs(
+    bool setting
+)
+```
+
+Call the set_store_accepted_event_IDs method on all analyses. 
+
+## Public Attributes Documentation
+
+### variable event_count
+
+```
+static std::map< str, int > event_count;
+```
+
+Event counter for each thread, one for each collider. 
+
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:32 +0000
+Updated on 2026-11-03 at 14:50:43 +0000

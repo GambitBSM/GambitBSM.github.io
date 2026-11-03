@@ -19,6 +19,7 @@ A tracker of numbers & fractions of events passing sequential cuts.
 | -------------- | -------------- |
 | | **[Cutflow](/documentation/code/classes/structgambit_1_1colliderbit_1_1cutflow/#function-cutflow)**()<br>Default constructor.  |
 | | **[Cutflow](/documentation/code/classes/structgambit_1_1colliderbit_1_1cutflow/#function-cutflow)**(const string & cfname, const vector< string > & cutnames)<br>Proper constructor.  |
+| | **[Cutflow](/documentation/code/classes/structgambit_1_1colliderbit_1_1cutflow/#function-cutflow)**(const [Cutflow](/documentation/code/classes/structgambit_1_1colliderbit_1_1cutflow/) & cf)<br>Copy constructor.  |
 | void | **[fillinit](/documentation/code/classes/structgambit_1_1colliderbit_1_1cutflow/#function-fillinit)**(double weight =1.)<br>Fill the pre-cut counter.  |
 | bool | **[fill](/documentation/code/classes/structgambit_1_1colliderbit_1_1cutflow/#function-fill)**(size_t icut, bool cutresult =true, double weight =1.)<br>Fill the _{icut}'th_ post-cut counter, starting at icut=1 for first cut.  |
 | bool | **[fill](/documentation/code/classes/structgambit_1_1colliderbit_1_1cutflow/#function-fill)**(size_t icut, double weight)<br>Fill the _{icut}'th_ post-cut counter, starting at icut=1 for first cut (cutvalue=true overload)  |
@@ -30,6 +31,7 @@ A tracker of numbers & fractions of events passing sequential cuts.
 | bool | **[filltail](/documentation/code/classes/structgambit_1_1colliderbit_1_1cutflow/#function-filltail)**(const vector< bool > & cutresults, double weight =1.)<br>Fill the N trailing post-cut counters, when supplied with an N-element results vector.  |
 | void | **[scale](/documentation/code/classes/structgambit_1_1colliderbit_1_1cutflow/#function-scale)**(double factor)<br>Scale the cutflow weights by the given factor.  |
 | void | **[normalize](/documentation/code/classes/structgambit_1_1colliderbit_1_1cutflow/#function-normalize)**(double norm, size_t icut =0)<br>Scale the cutflow weights so that the weight count after cut _icut_ is _norm_.  |
+| void | **[combine](/documentation/code/classes/structgambit_1_1colliderbit_1_1cutflow/#function-combine)**(const [Cutflow](/documentation/code/classes/structgambit_1_1colliderbit_1_1cutflow/) & othercf)<br>Combine two cutflows.  |
 | string | **[str](/documentation/code/classes/structgambit_1_1colliderbit_1_1cutflow/#function-str)**() const<br>Create a string representation.  |
 | void | **[print](/documentation/code/classes/structgambit_1_1colliderbit_1_1cutflow/#function-print)**(std::ostream & os) const<br>Print string representation to a stream.  |
 
@@ -41,7 +43,7 @@ A tracker of numbers & fractions of events passing sequential cuts.
 | size_t | **[ncuts](/documentation/code/classes/structgambit_1_1colliderbit_1_1cutflow/#variable-ncuts)**  |
 | vector< string > | **[cuts](/documentation/code/classes/structgambit_1_1colliderbit_1_1cutflow/#variable-cuts)**  |
 | vector< double > | **[counts](/documentation/code/classes/structgambit_1_1colliderbit_1_1cutflow/#variable-counts)**  |
-| size_t | **[icurr](/documentation/code/classes/structgambit_1_1colliderbit_1_1cutflow/#variable-icurr)**  |
+| vector< size_t > | **[icurr](/documentation/code/classes/structgambit_1_1colliderbit_1_1cutflow/#variable-icurr)**  |
 
 ## Public Functions Documentation
 
@@ -66,6 +68,16 @@ inline Cutflow(
 ```
 
 Proper constructor. 
+
+### function Cutflow
+
+```
+inline Cutflow(
+    const Cutflow & cf
+)
+```
+
+Copy constructor. 
 
 ### function fillinit
 
@@ -211,6 +223,16 @@ inline void normalize(
 
 Scale the cutflow weights so that the weight count after cut _icut_ is _norm_. 
 
+### function combine
+
+```
+inline void combine(
+    const Cutflow & othercf
+)
+```
+
+Combine two cutflows. 
+
 ### function str
 
 ```
@@ -262,10 +284,10 @@ vector< double > counts;
 ### variable icurr
 
 ```
-size_t icurr;
+vector< size_t > icurr;
 ```
 
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:32 +0000
+Updated on 2026-11-03 at 14:50:43 +0000

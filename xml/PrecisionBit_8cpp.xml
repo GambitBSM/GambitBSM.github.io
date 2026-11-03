@@ -10,7 +10,7 @@
     <includes refid="mssm__slhahelp_8hpp" local="yes">gambit/Elements/mssm_slhahelp.hpp</includes>
     <includes refid="util__functions_8hpp" local="yes">gambit/Utils/util_functions.hpp</includes>
     <incdepgraph>
-      <node id="110">
+      <node id="111">
         <label>gambit/Backends/backend_info.hpp</label>
         <link refid="backend__info_8hpp"/>
         <childnode refid="10" relation="include">
@@ -22,42 +22,30 @@
         <childnode refid="62" relation="include">
         </childnode>
       </node>
-      <node id="109">
+      <node id="110">
         <label>gambit/Backends/backend_singleton.hpp</label>
         <link refid="backend__singleton_8hpp"/>
-        <childnode refid="110" relation="include">
+        <childnode refid="111" relation="include">
         </childnode>
       </node>
       <node id="106">
         <label>gambit/Backends/default_bossed_versions.hpp</label>
         <link refid="default__bossed__versions_8hpp"/>
       </node>
-      <node id="107">
-        <label>gambit/Backends/mathematica_variable.hpp</label>
-        <link refid="mathematica__variable_8hpp"/>
-        <childnode refid="108" relation="include">
-        </childnode>
-        <childnode refid="109" relation="include">
-        </childnode>
-        <childnode refid="56" relation="include">
-        </childnode>
-        <childnode refid="111" relation="include">
-        </childnode>
-      </node>
-      <node id="113">
+      <node id="109">
         <label>gambit/Backends/python_helpers.hpp</label>
         <link refid="python__helpers_8hpp"/>
       </node>
-      <node id="112">
+      <node id="107">
         <label>gambit/Backends/python_variable.hpp</label>
         <link refid="python__variable_8hpp"/>
         <childnode refid="56" relation="include">
         </childnode>
         <childnode refid="108" relation="include">
         </childnode>
-        <childnode refid="113" relation="include">
-        </childnode>
         <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
         </childnode>
       </node>
       <node id="98">
@@ -159,11 +147,11 @@
         </childnode>
         <childnode refid="54" relation="include">
         </childnode>
-        <childnode refid="115" relation="include">
+        <childnode refid="113" relation="include">
         </childnode>
         <childnode refid="66" relation="include">
         </childnode>
-        <childnode refid="109" relation="include">
+        <childnode refid="110" relation="include">
         </childnode>
       </node>
       <node id="97">
@@ -309,8 +297,6 @@
         </childnode>
         <childnode refid="112" relation="include">
         </childnode>
-        <childnode refid="114" relation="include">
-        </childnode>
       </node>
       <node id="88">
         <label>gambit/Elements/slhaea_spec_helpers.hpp</label>
@@ -338,7 +324,7 @@
         <childnode refid="79" relation="include">
         </childnode>
       </node>
-      <node id="117">
+      <node id="115">
         <label>gambit/Elements/smlike_higgs.hpp</label>
         <link refid="smlike__higgs_8hpp"/>
         <childnode refid="85" relation="include">
@@ -484,7 +470,7 @@
         <childnode refid="77" relation="include">
         </childnode>
       </node>
-      <node id="118">
+      <node id="116">
         <label>gambit/PrecisionBit/PrecisionBit_rollcall.hpp</label>
         <link refid="PrecisionBit__rollcall_8hpp"/>
       </node>
@@ -495,11 +481,11 @@
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
+        <childnode refid="115" relation="include">
+        </childnode>
+        <childnode refid="116" relation="include">
+        </childnode>
         <childnode refid="117" relation="include">
-        </childnode>
-        <childnode refid="118" relation="include">
-        </childnode>
-        <childnode refid="119" relation="include">
         </childnode>
         <childnode refid="93" relation="include">
         </childnode>
@@ -598,7 +584,7 @@
         <childnode refid="40" relation="include">
         </childnode>
       </node>
-      <node id="119">
+      <node id="117">
         <label>gambit/Utils/statistics.hpp</label>
         <link refid="statistics_8hpp"/>
         <childnode refid="15" relation="include">
@@ -622,10 +608,10 @@
         <label>gambit/Utils/stringify.hpp</label>
         <link refid="stringify_8hpp"/>
       </node>
-      <node id="115">
+      <node id="113">
         <label>gambit/Utils/threadsafe_rng.hpp</label>
         <link refid="threadsafe__rng_8hpp"/>
-        <childnode refid="116" relation="include">
+        <childnode refid="114" relation="include">
         </childnode>
         <childnode refid="21" relation="include">
         </childnode>
@@ -795,9 +781,6 @@
       <node id="58">
         <label>boost/algorithm/string/classification.hpp</label>
       </node>
-      <node id="111">
-        <label>boost/algorithm/string/replace.hpp</label>
-      </node>
       <node id="57">
         <label>boost/algorithm/string/split.hpp</label>
       </node>
@@ -891,7 +874,7 @@
       <node id="45">
         <label>fstream</label>
       </node>
-      <node id="114">
+      <node id="112">
         <label>gambit/Backends/backend_types_rollcall.hpp</label>
       </node>
       <node id="56">
@@ -927,7 +910,7 @@
       <node id="68">
         <label>ostream</label>
       </node>
-      <node id="116">
+      <node id="114">
         <label>random</label>
       </node>
       <node id="11">
@@ -1235,7 +1218,7 @@
 <codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(prec_mw.central<sp/>&lt;=<sp/>0.0<sp/>or<sp/>Utils::isnan(prec_mw.central))</highlight></codeline>
 <codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(allow_fallback)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1a4a90fbd9fb34f189fff41ab409eb3c07" kindref="member">invalid_point</ref>().<ref refid="classGambit_1_1invalid__point__exception_1ac2a68704b58ec72f7fb16fcbddd361fc" kindref="member">raise</ref>(</highlight><highlight class="stringliteral">&quot;Precison<sp/>W<sp/>mass<sp/>NaN<sp/>or<sp/>&lt;=<sp/>0.<sp/><sp/>To<sp/>allow<sp/>fallback<sp/>to<sp/>the<sp/>unimproved<sp/>value,<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="192"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1a4a90fbd9fb34f189fff41ab409eb3c07" kindref="member">invalid_point</ref>().<ref refid="classGambit_1_1invalid__point__exception_1ac2a68704b58ec72f7fb16fcbddd361fc" kindref="member">raise</ref>(</highlight><highlight class="stringliteral">&quot;Precision<sp/>W<sp/>mass<sp/>NaN<sp/>or<sp/>&lt;=<sp/>0.<sp/><sp/>To<sp/>allow<sp/>fallback<sp/>to<sp/>the<sp/>unimproved<sp/>value,<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;set<sp/>option<sp/>allow_fallback_to_unimproved_masses=true<sp/>in<sp/>your<sp/>YAML<sp/>file.&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="195"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>HE.set_override(<ref refid="namespaceGambit_1_1Par_1ac8185e571d2b5febfc74c2ce6b8f27d4a32659f80534c7cfd1734a08c89541edc" kindref="member">Par::Pole_Mass</ref>,<sp/>prec_mw.central,<sp/></highlight><highlight class="stringliteral">&quot;W+&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">);<sp/></highlight><highlight class="comment">//<sp/>&quot;true&quot;<sp/>flag<sp/>causes<sp/>overrides<sp/>to<sp/>be<sp/>written<sp/>even<sp/>if<sp/>no<sp/>native<sp/>quantity<sp/>exists<sp/>to<sp/>override.</highlight><highlight class="normal"></highlight></codeline>
@@ -1255,7 +1238,7 @@
 <codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(MH[i].central<sp/>&lt;=<sp/>0.0<sp/>or<sp/>Utils::isnan(MH[i].central))</highlight></codeline>
 <codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(allow_fallback)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1a4a90fbd9fb34f189fff41ab409eb3c07" kindref="member">invalid_point</ref>().<ref refid="classGambit_1_1invalid__point__exception_1ac2a68704b58ec72f7fb16fcbddd361fc" kindref="member">raise</ref>(</highlight><highlight class="stringliteral">&quot;Precison<sp/>&quot;</highlight><highlight class="normal">+higgses[i]+</highlight><highlight class="stringliteral">&quot;<sp/>mass<sp/>NaN<sp/>or<sp/>&lt;=<sp/>0.<sp/><sp/>To<sp/>allow<sp/>fallback<sp/>to<sp/>the<sp/>unimproved<sp/>value,<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1a4a90fbd9fb34f189fff41ab409eb3c07" kindref="member">invalid_point</ref>().<ref refid="classGambit_1_1invalid__point__exception_1ac2a68704b58ec72f7fb16fcbddd361fc" kindref="member">raise</ref>(</highlight><highlight class="stringliteral">&quot;Precision<sp/>&quot;</highlight><highlight class="normal">+higgses[i]+</highlight><highlight class="stringliteral">&quot;<sp/>mass<sp/>NaN<sp/>or<sp/>&lt;=<sp/>0.<sp/><sp/>To<sp/>allow<sp/>fallback<sp/>to<sp/>the<sp/>unimproved<sp/>value,<sp/>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="stringliteral">&quot;set<sp/>option<sp/>allow_fallback_to_unimproved_masses=true<sp/>in<sp/>your<sp/>YAML<sp/>file.&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="215"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>

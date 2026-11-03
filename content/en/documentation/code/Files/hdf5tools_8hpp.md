@@ -42,6 +42,10 @@ description: "[No description available]"
 |                | Name           |
 | -------------- | -------------- |
 |  | **[H5_OUTPUT_TYPES](/documentation/code/files/hdf5tools_8hpp/#define-h5-output-types)**  |
+|  | **[GAMBIT_H5L_INFO_T](/documentation/code/files/hdf5tools_8hpp/#define-gambit-h5l-info-t)**  |
+|  | **[GAMBIT_H5O_INFO_T](/documentation/code/files/hdf5tools_8hpp/#define-gambit-h5o-info-t)**  |
+|  | **[GAMBIT_H5OGET_INFO_BY_NAME](/documentation/code/files/hdf5tools_8hpp/#define-gambit-h5oget-info-by-name)**(loc_id, name, info_ptr, plist)  |
+|  | **[GAMBIT_H5LITERATE](/documentation/code/files/hdf5tools_8hpp/#define-gambit-h5literate)**  |
 |  | **[HDF5_STRING_MAX_LEN](/documentation/code/files/hdf5tools_8hpp/#define-hdf5-string-max-len)**  |
 |  | **[SPECIALISE_HDF5_DATA_TYPE_IF_NEEDED](/documentation/code/files/hdf5tools_8hpp/#define-specialise-hdf5-data-type-if-needed)**(TYPEDEFD_TYPE, RETURN_HDF5_TYPE) <br>Provide template specialisation of get_hdf5_data_type only if the requested type hasn't been used to define one already.  |
 
@@ -64,7 +68,7 @@ description: "[No description available]"
 
 A collection of tools for interacting with HDF5 databases.
 
-Currently I am using the C++ bindings for HDF5, however they are a bit crap and it may be better to just write our own.
+Currently I am using the C++ bindings for HDF5, however they not great and it may be better to just write our own.
 
 
 
@@ -99,6 +103,40 @@ Authors (add name and date if you modify):
         (long double) \
         (bool) \
         (std::string)
+```
+
+
+### define GAMBIT_H5L_INFO_T
+
+```
+#define GAMBIT_H5L_INFO_T H5L_info_t
+```
+
+
+### define GAMBIT_H5O_INFO_T
+
+```
+#define GAMBIT_H5O_INFO_T H5O_info_t
+```
+
+
+### define GAMBIT_H5OGET_INFO_BY_NAME
+
+```
+#define GAMBIT_H5OGET_INFO_BY_NAME(
+    loc_id,
+    name,
+    info_ptr,
+    plist
+)
+            H5Oget_info_by_name((loc_id), (name), (info_ptr), (plist))
+```
+
+
+### define GAMBIT_H5LITERATE
+
+```
+#define GAMBIT_H5LITERATE H5Literate
 ```
 
 
@@ -151,7 +189,7 @@ Provide template specialisation of get_hdf5_data_type only if the requested type
 ///  HDF5 databases.
 ///
 ///  Currently I am using the C++ bindings for
-///  HDF5, however they are a bit crap and it may
+///  HDF5, however they not great and it may
 ///  be better to just write our own.
 ///
 ///  *********************************************
@@ -188,6 +226,31 @@ Provide template specialisation of get_hdf5_data_type only if the requested type
 
 // HDF5
 #include <hdf5.h>
+
+// Compatibility shims for HDF5 API changes between 1.10 and 1.12+.
+// In 1.12 several functions gained an extra "fields" argument and the
+// link/object-info structs were renamed (H5L_info_t -> H5L_info2_t,
+// H5O_info_t -> H5O_info2_t). The unversioned names continue to work only
+// when -DH5_USE_110_API is set globally, but doing that affects every
+// translation unit that includes <hdf5.h> (including any backends or
+// contrib code), which is fragile. Instead we call the version-specific
+// symbols directly via the GAMBIT_H5_* aliases below.
+#if H5_VERSION_GE(1, 12, 0)
+  #define GAMBIT_H5L_INFO_T  H5L_info2_t
+  #define GAMBIT_H5O_INFO_T  H5O_info2_t
+  // H5Oget_info_by_name3 has an extra "fields" argument selecting which
+  // fields to populate; H5O_INFO_BASIC fills the .type field, which is all
+  // we need to distinguish groups from datasets.
+  #define GAMBIT_H5OGET_INFO_BY_NAME(loc_id, name, info_ptr, plist) \
+            H5Oget_info_by_name3((loc_id), (name), (info_ptr), H5O_INFO_BASIC, (plist))
+  #define GAMBIT_H5LITERATE H5Literate2
+#else
+  #define GAMBIT_H5L_INFO_T  H5L_info_t
+  #define GAMBIT_H5O_INFO_T  H5O_info_t
+  #define GAMBIT_H5OGET_INFO_BY_NAME(loc_id, name, info_ptr, plist) \
+            H5Oget_info_by_name((loc_id), (name), (info_ptr), (plist))
+  #define GAMBIT_H5LITERATE H5Literate
+#endif
 
 // Boost
 #include <boost/utility/enable_if.hpp>
@@ -454,4 +517,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:34 +0000
+Updated on 2026-11-03 at 14:50:45 +0000

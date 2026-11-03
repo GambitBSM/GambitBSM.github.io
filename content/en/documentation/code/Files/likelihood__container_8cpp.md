@@ -151,11 +151,11 @@ namespace Gambit
     // Set the ScanID
     set_scanID();
 
-    // Find subset of vertices that match requested purpose
+    // Find subset of vertices that match requested purpose, or are critical observables
     auto all_vertices = dependencyResolver.getObsLikeOrder();
     for (auto it = all_vertices.begin(); it != all_vertices.end(); ++it)
     {
-      if (dependencyResolver.getPurpose(*it) == purpose)
+      if (dependencyResolver.getPurpose(*it) == purpose || dependencyResolver.getCritical(*it) == true)
       {
         return_types[*it] = dependencyResolver.checkTypeMatch(*it, purpose, allowed_types_for_purpose);
         target_vertices.push_back(std::move(*it));
@@ -339,6 +339,11 @@ namespace Gambit
               lnlike += *jt;
             }
           }
+          else if (dependencyResolver.getCritical(*it) == true)
+          {
+            // Don't throw an error if the target vertex is a critical obslike,
+            // but don't add it to the total LogLike
+          }
           else core_error().raise(LOCAL_INFO, "Unexpected target functor type.");
 
           // Print debug info
@@ -469,4 +474,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:35 +0000
+Updated on 2026-11-03 at 14:50:47 +0000

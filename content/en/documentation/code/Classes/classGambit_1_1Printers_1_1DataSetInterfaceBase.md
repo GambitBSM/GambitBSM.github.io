@@ -19,7 +19,7 @@ Wrapper object to manage a single dataset.  [More...](#detailed-description)
 | -------------- | -------------- |
 | | **[DataSetInterfaceBase](/documentation/code/classes/classgambit_1_1printers_1_1datasetinterfacebase/#function-datasetinterfacebase)**()<br>Constructors.  |
 | | **[DataSetInterfaceBase](/documentation/code/classes/classgambit_1_1printers_1_1datasetinterfacebase/#function-datasetinterfacebase)**(hid_t location_id, const std::string & name, const std::size_t rdims[DSETRANK], const bool resume, const char access) |
-| virtual | **[~DataSetInterfaceBase](/documentation/code/classes/classgambit_1_1printers_1_1datasetinterfacebase/#function-datasetinterfacebase)**()<br>Do cleanup (close dataset)  |
+| virtual | **[~DataSetInterfaceBase](/documentation/code/classes/classgambit_1_1printers_1_1datasetinterfacebase/#function-datasetinterfacebase)**() |
 | hid_t | **[createDataSet](/documentation/code/classes/classgambit_1_1printers_1_1datasetinterfacebase/#function-createdataset)**(hid_t location_id, const std::string & name, const std::size_t rdims[DSETRANK])<br>Create a (chunked) dataset.  |
 | hid_t | **[openDataSet](/documentation/code/classes/classgambit_1_1printers_1_1datasetinterfacebase/#function-opendataset)**(hid_t location_id, const std::string & name, const std::size_t rdims[DSETRANK])<br>Open an existing dataset.  |
 | void | **[closeDataSet](/documentation/code/classes/classgambit_1_1printers_1_1datasetinterfacebase/#function-closedataset)**()<br>Close an open dataset.  |
@@ -90,7 +90,11 @@ DataSetInterfaceBase(
 virtual ~DataSetInterfaceBase()
 ```
 
-Do cleanup (close dataset) 
+
+Destructor. Deliberately does NOT close the underlying HDF5 dataset.
+
+[DataSetInterfaceBase](/documentation/code/classes/classgambit_1_1printers_1_1datasetinterfacebase/) (and its derived classes) are stored by value and assigned-from-temporary in several places. In such cases a temporary is constructed, then copy-/move-assigned into a member or container slot, then destroyed. Closing here in the destructor would invalidate the handle held by the surviving copy. The actual close therefore lives in the explicit [closeDataSet()](/documentation/code/classes/classgambit_1_1printers_1_1datasetinterfacebase/#function-closedataset) method below, used by VertexBufferNumeric1D_HDF5::finalise() during the printer's finalise() pass. 
+
 
 ### function createDataSet
 
@@ -259,4 +263,4 @@ unsigned long virtualwriteposition;
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:32 +0000
+Updated on 2026-11-03 at 14:50:44 +0000

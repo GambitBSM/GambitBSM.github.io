@@ -130,7 +130,7 @@ namespace Gambit
         slha.push_front("# This SLHA(ea) object was created from a GAMBIT "+object+" object.");
       }
 
-      /// Simple helper function for for adding missing SLHA1 2x2 family mixing matrices to an SLHAea object.
+      /// Simple helper function for adding missing SLHA1 2x2 family mixing matrices to an SLHAea object.
       void attempt_to_add_SLHA1_mixing(const str& block, SLHAstruct& slha, const str& type,
                                        const SubSpectrum& spec, double tol, str& s1, str& s2, bool pterror)
       {
@@ -1351,4 +1351,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:34 +0000
+Updated on 2026-11-03 at 14:50:46 +0000

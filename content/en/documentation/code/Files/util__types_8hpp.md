@@ -441,7 +441,7 @@ namespace Gambit
       typedef calc_nElem<lims... > nElem;
       T array[nElem::val];
       Farray(){}
-      Farray(Farray<T,lims... > &in){*this = in;}
+      Farray(const Farray<T,lims... > &in){*this = in;}
       template <typename ... Args>
       typename enable_if_all_member<allowed_types, T&, Args...>::type::type
       operator () (Args ... a)
@@ -762,4 +762,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:33 +0000
+Updated on 2026-11-03 at 14:50:45 +0000

@@ -151,7 +151,8 @@ description: "[No description available]"
 | void | **[CH_DMsimpVectorMedVectorDM_Y1_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-ch-dmsimpvectormedvectordm-y1-decays)**([DecayTable::Entry](/documentation/code/classes/classgambit_1_1decaytable_1_1entry/) & result) |
 | void | **[all_decays](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-all-decays)**([DecayTable](/documentation/code/classes/classgambit_1_1decaytable/) & decays)<br>Collect all the [DecayTable](/documentation/code/classes/classgambit_1_1decaytable/) entries into an actual [DecayTable](/documentation/code/classes/classgambit_1_1decaytable/).  |
 | void | **[all_decays_from_SLHA](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-all-decays-from-slha)**([DecayTable](/documentation/code/classes/classgambit_1_1decaytable/) & decays) |
-| void | **[get_decaytable_as_map](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-get-decaytable-as-map)**([map_str_dbl](/documentation/code/namespaces/namespacegambit/#typedef-map-str-dbl) & map)<br>Convert the [DecayTable](/documentation/code/classes/classgambit_1_1decaytable/) to a format where we can print each individual channel's BF.  |
+| void | **[get_particle_widths_as_map](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-get-particle-widths-as-map)**([map_str_dbl](/documentation/code/namespaces/namespacegambit/#typedef-map-str-dbl) & map)<br>Get particle widths from the [DecayTable](/documentation/code/classes/classgambit_1_1decaytable/) and output to a string-to-double map.  |
+| void | **[get_branching_fractions_as_map](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-get-branching-fractions-as-map)**([map_str_dbl](/documentation/code/namespaces/namespacegambit/#typedef-map-str-dbl) & map)<br>Get branching fractions from the [DecayTable](/documentation/code/classes/classgambit_1_1decaytable/) and output to a string-to-double map.  |
 | void | **[get_mass_es_pseudonyms](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-get-mass-es-pseudonyms)**([mass_es_pseudonyms](/documentation/code/classes/structgambit_1_1mass__es__pseudonyms/) & result)<br>Get MSSM mass eigenstate pseudonyms for the gauge eigenstates.  |
 | void | **[check_first_sec_gen_mixing](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-check-first-sec-gen-mixing)**(int & result) |
 | daFunk::Funk | **[get_Higgs_invWidth_chi2](/documentation/code/namespaces/namespacegambit_1_1decaybit/#function-get-higgs-invwidth-chi2)**(std::string filename) |
@@ -1539,15 +1540,25 @@ void all_decays_from_SLHA(
 Read an SLHA2 file in and use it to create a GAMBIT [DecayTable](/documentation/code/classes/classgambit_1_1decaytable/). Note that creating a [DecayTable](/documentation/code/classes/classgambit_1_1decaytable/) from an SLHA1 file is not possible at present. 
 
 
-### function get_decaytable_as_map
+### function get_particle_widths_as_map
 
 ```
-void get_decaytable_as_map(
+void get_particle_widths_as_map(
     map_str_dbl & map
 )
 ```
 
-Convert the [DecayTable](/documentation/code/classes/classgambit_1_1decaytable/) to a format where we can print each individual channel's BF. 
+Get particle widths from the [DecayTable](/documentation/code/classes/classgambit_1_1decaytable/) and output to a string-to-double map. 
+
+### function get_branching_fractions_as_map
+
+```
+void get_branching_fractions_as_map(
+    map_str_dbl & map
+)
+```
+
+Get branching fractions from the [DecayTable](/documentation/code/classes/classgambit_1_1decaytable/) and output to a string-to-double map. 
 
 Otherwise just print the specific, named channels
 
@@ -1749,4 +1760,4 @@ void lnL_W_decays_chi2(
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:32 +0000
+Updated on 2026-11-03 at 14:50:43 +0000

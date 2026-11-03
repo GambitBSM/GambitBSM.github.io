@@ -9,6 +9,7 @@ weight: 20
 
 # Classes
 
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespace_0d143/>@143<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classabstractbase/>AbstractBase<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classadvancedevs/>AdvanceDevs<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacebackendinibit_1_1functown/>Functown<a></b><br>
@@ -44,10 +45,10 @@ weight: 20
 <details><summary><b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1backends/>Backends<a></b></summary>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1backends_1_1alterbbn__2__2/>AlterBBN_2_2<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1backends_1_1heplike__2__0/>HepLike_2_0<a></b><br>
-<details><summary><b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1backends_1_1pythia__8__212/>Pythia_8_212<a></b></summary>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1backends_1_1pythia__8__212_1_1pythia8/>Pythia8<a></b><br></details>
-<details><summary><b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1backends_1_1rivet__3__1__5/>Rivet_3_1_5<a></b></summary>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1backends_1_1rivet__3__1__5_1_1rivet/>Rivet<a></b><br></details>
+<details><summary><b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1backends_1_1pythia__8__312/>Pythia_8_312<a></b></summary>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1backends_1_1pythia__8__312_1_1pythia8/>Pythia8<a></b><br></details>
+<details><summary><b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1backends_1_1rivet__4__1__0/>Rivet_4_1_0<a></b></summary>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1backends_1_1rivet__4__1__0_1_1rivet/>Rivet<a></b><br></details>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1backends_1_1backend__info/>backend_info<a></b><br>Structure providing some basic info on backend libraries. <br>
 <details><summary><b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1backends_1_1gm2calc__1__2__0/>gm2calc_1_2_0<a></b></summary>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1backends_1_1gm2calc__1__2__0_1_1gm2calc/>gm2calc<a></b><br></details>
@@ -78,6 +79,9 @@ weight: 20
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/>AnalysisData<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisloglikes/>AnalysisLogLikes<a></b><br>Container for loglike information for an analysis. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysisutil/>AnalysisUtil<a></b><br>
+<details><summary><b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__0lepstop__139invfb/>Analysis_ATLAS_13TeV_0LEPStop_139invfb<a></b></summary>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__0lepstop__139invfb_1_1ptcomparison/>ptComparison<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__0lepstop__139invfb_1_1ptjetcomparison/>ptJetComparison<a></b><br></details>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__0lepstop__36invfb/>Analysis_ATLAS_13TeV_0LEPStop_36invfb<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__0lep__139invfb/>Analysis_ATLAS_13TeV_0LEP_139invfb<a></b><br>[ATLAS]() Run 2 0-lepton jet+MET SUSY analysis, with 139/fb of data. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__0lep__13invfb/>Analysis_ATLAS_13TeV_0LEP_13invfb<a></b><br>[ATLAS]() Run 2 0-lepton jet+MET SUSY analysis, with 13/fb of data. <br>
@@ -86,11 +90,26 @@ weight: 20
 <details><summary><b>struct <a href=/documentation/code/classes/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__1lepstop__36invfb_1_1clusteringhistory/>ClusteringHistory<a></b></summary>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__1lepstop__36invfb_1_1clusteringhistory_1_1step/>Step<a></b><br></details></details>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__1lep2b__139invfb/>Analysis_ATLAS_13TeV_1Lep2b_139invfb<a></b><br>
+<details><summary><b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__1or3lep__stophz__139invfb/>Analysis_ATLAS_13TeV_1OR3LEP_StopHZ_139invfb<a></b></summary>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__1or3lep__stophz__139invfb_1_1ptcomparison/>ptComparison<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__1or3lep__stophz__139invfb_1_1ptjetcomparison/>ptJetComparison<a></b><br></details>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2boostedbosons__139invfb/>Analysis_ATLAS_13TeV_2BoostedBosons_139invfb<a></b><br>
+<details><summary><b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2lep0jet__ew__139invfb/>Analysis_ATLAS_13TeV_2LEP0JET_EW_139invfb<a></b></summary>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__2lep0jet__ew__139invfb_1_1pt__sort/>pt_sort<a></b><br></details>
+<details><summary><b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2lepjets__ew__139invfb/>Analysis_ATLAS_13TeV_2LEPJETS_EW_139invfb<a></b></summary>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__2lepjets__ew__139invfb_1_1ptcomparison/>ptComparison<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__2lepjets__ew__139invfb_1_1ptjetcomparison/>ptJetComparison<a></b><br></details>
+<details><summary><b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2lepjets__rjr__139invfb/>Analysis_ATLAS_13TeV_2LEPJETS_RJR_139invfb<a></b></summary>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__2lepjets__rjr__139invfb_1_1ptcomparison/>ptComparison<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__2lepjets__rjr__139invfb_1_1ptjetcomparison/>ptJetComparison<a></b><br></details>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2lepstop__139invfb/>Analysis_ATLAS_13TeV_2LEPStop_139invfb<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2lepstop__36invfb/>Analysis_ATLAS_13TeV_2LEPStop_36invfb<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2lepstop__exclusive__139invfb/>Analysis_ATLAS_13TeV_2LEPStop_exclusive_139invfb<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2lepstop__inclusive__139invfb/>Analysis_ATLAS_13TeV_2LEPStop_inclusive_139invfb<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2lepsoft__139invfb/>Analysis_ATLAS_13TeV_2LEPsoft_139invfb<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2lepsoft__combined__139invfb/>Analysis_ATLAS_13TeV_2LEPsoft_combined_139invfb<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2lepsoft__exclusive__139invfb/>Analysis_ATLAS_13TeV_2LEPsoft_exclusive_139invfb<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2or3lep__139invfb/>Analysis_ATLAS_13TeV_2OR3LEP_139invfb<a></b><br>
 <details><summary><b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2oslep__z__139invfb/>Analysis_ATLAS_13TeV_2OSLEP_Z_139invfb<a></b></summary>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__2oslep__z__139invfb_1_1ptcomparison/>ptComparison<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__2oslep__z__139invfb_1_1ptjetcomparison/>ptJetComparison<a></b><br></details>
@@ -104,8 +123,12 @@ weight: 20
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2oslep__chargino__inclusive__80invfb/>Analysis_ATLAS_13TeV_2OSLEP_chargino_inclusive_80invfb<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2bmet__36invfb/>Analysis_ATLAS_13TeV_2bMET_36invfb<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__3lep__139invfb/>Analysis_ATLAS_13TeV_3LEP_139invfb<a></b><br>
+<details><summary><b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__3lep__erjr__139invfb/>Analysis_ATLAS_13TeV_3LEP_eRJR_139invfb<a></b></summary>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__3lep__erjr__139invfb_1_1ptcomparison/>ptComparison<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__3lep__erjr__139invfb_1_1ptjetcomparison/>ptJetComparison<a></b><br></details>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__3b__24invfb/>Analysis_ATLAS_13TeV_3b_24invfb<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__3b__36invfb/>Analysis_ATLAS_13TeV_3b_36invfb<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__3b__nn__139invfb/>Analysis_ATLAS_13TeV_3b_NN_139invfb<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__3b__discoverysr__24invfb/>Analysis_ATLAS_13TeV_3b_discoverySR_24invfb<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__3b__discoverysr__36invfb/>Analysis_ATLAS_13TeV_3b_discoverySR_36invfb<a></b><br>
 <details><summary><b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__4lep__139invfb/>Analysis_ATLAS_13TeV_4LEP_139invfb<a></b></summary>
@@ -114,6 +137,10 @@ weight: 20
 <details><summary><b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__4lep__36invfb/>Analysis_ATLAS_13TeV_4LEP_36invfb<a></b></summary>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__4lep__36invfb_1_1ptcomparison/>ptComparison<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__4lep__36invfb_1_1ptjetcomparison/>ptJetComparison<a></b><br></details>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__4b__139invfb/>Analysis_ATLAS_13TeV_4b_139invfb<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__4b__allyears__139invfb/>Analysis_ATLAS_13TeV_4b_allyears_139invfb<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__4b__discoverysr__139invfb/>Analysis_ATLAS_13TeV_4b_discoverySR_139invfb<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__exot__tt__wbwb__36invfb/>Analysis_ATLAS_13TeV_EXOT_TT_WbWb_36invfb<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__monojet__139infb/>Analysis_ATLAS_13TeV_MONOJET_139infb<a></b><br>[ATLAS]() Monojet analysis, with 139/fb of data. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__multilep__2lep0jets__36invfb/>Analysis_ATLAS_13TeV_MultiLEP_2Lep0Jets_36invfb<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__multilep__2lepplusjets__36invfb/>Analysis_ATLAS_13TeV_MultiLEP_2LepPlusJets_36invfb<a></b><br>
@@ -133,6 +160,9 @@ weight: 20
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__rj3l__3lep__36invfb/>Analysis_ATLAS_13TeV_RJ3L_3Lep_36invfb<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__rj3l__lowmass__36invfb/>Analysis_ATLAS_13TeV_RJ3L_lowmass_36invfb<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__zgammagrav__confnote__80invfb/>Analysis_ATLAS_13TeV_ZGammaGrav_CONFNOTE_80invfb<a></b><br>[ATLAS]() ZH(->photon+gravitino) (79.8 fb^-1) <br>
+<details><summary><b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__btaus__stopstau__139invfb/>Analysis_ATLAS_13TeV_bTaus_StopStau_139invfb<a></b></summary>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__btaus__stopstau__139invfb_1_1ptcomparison/>ptComparison<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__btaus__stopstau__139invfb_1_1ptjetcomparison/>ptJetComparison<a></b><br></details>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__7tev__1or2lepstop__4__7invfb/>Analysis_ATLAS_7TeV_1OR2LEPStop_4_7invfb<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__7tev__2lepstop__4__7invfb/>Analysis_ATLAS_7TeV_2LEPStop_4_7invfb<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__8tev__0lepstop__20invfb/>Analysis_ATLAS_8TeV_0LEPStop_20invfb<a></b><br>
@@ -145,17 +175,28 @@ weight: 20
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__8tev__2lepstop__20invfb/>Analysis_ATLAS_8TeV_2LEPStop_20invfb<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__8tev__2bstop__20invfb/>Analysis_ATLAS_8TeV_2bStop_20invfb<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__8tev__3lepew__20invfb/>Analysis_ATLAS_8TeV_3LEPEW_20invfb<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__baselines/>Analysis_Baselines<a></b><br>
+<details><summary><b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__0lepstop__137invfb/>Analysis_CMS_13TeV_0LEPStop_137invfb<a></b></summary>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1colliderbit_1_1analysis__cms__13tev__0lepstop__137invfb_1_1ptcomparison/>ptComparison<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1colliderbit_1_1analysis__cms__13tev__0lepstop__137invfb_1_1ptjetcomparison/>ptJetComparison<a></b><br></details>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__0lep__137invfb/>Analysis_CMS_13TeV_0LEP_137invfb<a></b><br>[CMS]() Run 2 0-lepton jet+MET SUSY analysis, with 137/fb of data. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__0lep__13invfb/>Analysis_CMS_13TeV_0LEP_13invfb<a></b><br>[CMS]() Run 2 0-lepton jet+MET SUSY analysis, with 13/fb of data. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__0lep__36invfb/>Analysis_CMS_13TeV_0LEP_36invfb<a></b><br>[CMS]() Run 2 0-lepton jet+MET SUSY analysis, with 36/fb of data. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__0lep__chargino__vv__vh__137invfb/>Analysis_CMS_13TeV_0LEP_chargino_VV_VH_137invfb<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__1lepstop__36invfb/>Analysis_CMS_13TeV_1LEPStop_36invfb<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__1lepbb__137invfb/>Analysis_CMS_13TeV_1LEPbb_137invfb<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__1lepbb__36invfb/>Analysis_CMS_13TeV_1LEPbb_36invfb<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__1photon1lepton__36invfb/>Analysis_CMS_13TeV_1Photon1Lepton_36invfb<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__1photon1lepton__emu__combined__36invfb/>Analysis_CMS_13TeV_1Photon1Lepton_emu_combined_36invfb<a></b><br>
+<details><summary><b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2higgs__4b__neutralino__137invfb/>Analysis_CMS_13TeV_2Higgs_4b_neutralino_137invfb<a></b></summary>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1colliderbit_1_1analysis__cms__13tev__2higgs__4b__neutralino__137invfb_1_1ptcomparison/>ptComparison<a></b><br></details>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2lepstop__36invfb/>Analysis_CMS_13TeV_2LEPStop_36invfb<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2lepsoft__137invfb/>Analysis_CMS_13TeV_2LEPsoft_137invfb<a></b><br>
 <details><summary><b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2lepsoft__36invfb/>Analysis_CMS_13TeV_2LEPsoft_36invfb<a></b></summary>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1colliderbit_1_1analysis__cms__13tev__2lepsoft__36invfb_1_1ptcomparison/>ptComparison<a></b><br></details>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2lepsoft__36invfb__nocovar/>Analysis_CMS_13TeV_2LEPsoft_36invfb_nocovar<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2lepsoft__ewinos__137invfb/>Analysis_CMS_13TeV_2LEPsoft_ewinos_137invfb<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2lepsoft__stop__137invfb/>Analysis_CMS_13TeV_2LEPsoft_stop_137invfb<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2lepsoft__stop__36invfb/>Analysis_CMS_13TeV_2LEPsoft_stop_36invfb<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2lepsoft__stop__36invfb__nocovar/>Analysis_CMS_13TeV_2LEPsoft_stop_36invfb_nocovar<a></b><br>
 <details><summary><b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2oslep__137invfb/>Analysis_CMS_13TeV_2OSLEP_137invfb<a></b></summary>
@@ -165,6 +206,7 @@ weight: 20
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1colliderbit_1_1analysis__cms__13tev__2oslep__36invfb_1_1ptcomparison/>ptComparison<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1colliderbit_1_1analysis__cms__13tev__2oslep__36invfb_1_1ptjetcomparison/>ptJetComparison<a></b><br></details>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2oslep__36invfb__nocovar/>Analysis_CMS_13TeV_2OSLEP_36invfb_nocovar<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2oslep__ew__production__137invfb/>Analysis_CMS_13TeV_2OSLEP_EW_Production_137invfb<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2oslep__slepton__137invfb/>Analysis_CMS_13TeV_2OSLEP_Slepton_137invfb<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2oslep__strong__production__137invfb/>Analysis_CMS_13TeV_2OSLEP_Strong_Production_137invfb<a></b><br>
 <details><summary><b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2oslep__chargino__stop__36invfb/>Analysis_CMS_13TeV_2OSLEP_chargino_stop_36invfb<a></b></summary>
@@ -197,6 +239,7 @@ weight: 20
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1colliderbit_1_1analysis__cms__13tev__multilep__full__36invfb_1_1ptcomparison/>ptComparison<a></b><br></details>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__multilep__full__3lep__36invfb/>Analysis_CMS_13TeV_MultiLEP_Full_3Lep_36invfb<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__multilep__full__3lep__rebinned__36invfb/>Analysis_CMS_13TeV_MultiLEP_Full_3Lep_rebinned_36invfb<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__photon__gmsb__137invfb/>Analysis_CMS_13TeV_Photon_GMSB_137invfb<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__photon__gmsb__36invfb/>Analysis_CMS_13TeV_Photon_GMSB_36invfb<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__8tev__1lepdmtop__20invfb/>Analysis_CMS_8TeV_1LEPDMTOP_20invfb<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__8tev__2lepdmtop__20invfb/>Analysis_CMS_8TeV_2LEPDMTOP_20invfb<a></b><br>
@@ -207,6 +250,7 @@ weight: 20
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__8tev__multilep__3lep__20invfb/>Analysis_CMS_8TeV_MultiLEP_3Lep_20invfb<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__8tev__multilep__4lep__20invfb/>Analysis_CMS_8TeV_MultiLEP_4Lep_20invfb<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__covariance/>Analysis_Covariance<a></b><br>Dummy analysis code with a hard-coded return including a SR covariance matrix. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__dummy/>Analysis_Dummy<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__minimum/>Analysis_Minimum<a></b><br>Basic analysis code for copying. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1babar__single__photon__analysis__info/>BaBar_single_photon_analysis_info<a></b><br>A class to hold analysis information for the BaBar single photon search (specific to dark photon models) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1basecollider/>BaseCollider<a></b><br>An abstract base class for collider simulators within ColliderBit. <br>
@@ -217,6 +261,7 @@ weight: 20
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1colliderbit_1_1cutflow/>Cutflow<a></b><br>A tracker of numbers & fractions of events passing sequential cuts. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1colliderbit_1_1cutflows/>Cutflows<a></b><br>A container for several [Cutflow](/documentation/code/classes/structgambit_1_1colliderbit_1_1cutflow/) objects, with some convenient batch access. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1dijet__analysis__info/>Dijet_analysis_info<a></b><br>A class to hold analysis information for DiJets (specific to DMsimp models) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1colliderbit_1_1ellipseparams/>EllipseParams<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1eventconversion/>EventConversion<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/>EventCounter<a></b><br>A simple class for counting events of type HEPUtils::Event. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1imagelimit/>ImageLimit<a></b><br>
@@ -247,14 +292,18 @@ weight: 20
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1p2/>P2<a></b><br>A simple container for a point on an xy plane. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1pid__pair__xsec__container/>PID_pair_xsec_container<a></b><br>A class for holding the production cross-section for final state identified by the pair of PID codes. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1perf__plot/>Perf_Plot<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1poissoncalculators/>PoissonCalculators<a></b><br>
 <details><summary><b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1py8collider/>Py8Collider<a></b><br>A specializable, recyclable class interfacing ColliderBit and Pythia. </summary>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1py8collider_1_1eventgenerationerror/>EventGenerationError<a></b><br>An exception for when Pythia fails to generate events. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1py8collider_1_1initializationerror/>InitializationError<a></b><br>An exception for when Pythia fails to initialize. <br></details>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1sethooks/>SetHooks<a></b><br>A templated class specific for the UserHooks. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1colliderbit_1_1signalregiondata/>SignalRegionData<a></b><br>A simple container for the result of one signal region from one analysis. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1colliderbit_1_1__gsl__target__func__params/>_gsl_target_func_params<a></b><br>A struct to contain parameters for the GSL optimiser target function. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1asymm__mt2__lester__bisect/>asymm_mt2_lester_bisect<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1colliderbit_1_1convergence__settings/>convergence_settings<a></b><br>Type for holding Monte Carlo convergence settings. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1efficiency__map/>efficiency_map<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1colliderbit_1_1jet__collection__settings/>jet_collection_settings<a></b><br>Struct of different jet collection settings. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1onnx__rt__wrapper/>onnx_rt_wrapper<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1process__xsec__container/>process_xsec_container<a></b><br>A class for holding the cross-section of a single Pythia process (identified by the Pythia process code) <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/>xsec_container<a></b><br>A base class for holding cross-section info within ColliderBit. <br></details>
 <details><summary><b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1cosmobit/>CosmoBit<a></b></summary>
@@ -398,6 +447,10 @@ weight: 20
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1diver__1__0__2_1_1diverscandata/>diverScanData<a></b><br>Structure for passing likelihood and printer data through Diver to the objective function. <br></details>
 <details><summary><b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1diver__1__0__4/>Diver_1_0_4<a></b></summary>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1diver__1__0__4_1_1diverscandata/>diverScanData<a></b><br>Structure for passing likelihood and printer data through Diver to the objective function. <br></details>
+<details><summary><b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1diver__1__0__5/>Diver_1_0_5<a></b></summary>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1diver__1__0__5_1_1diverscandata/>diverScanData<a></b><br>Structure for passing likelihood and printer data through Diver to the objective function. <br></details>
+<details><summary><b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1diver__1__3__0/>Diver_1_3_0<a></b></summary>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1diver__1__3__0_1_1diverscandata/>diverScanData<a></b><br>Structure for passing likelihood and printer data through Diver to the objective function. <br></details>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1dummyinput/>DummyInput<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1dummymodel/>DummyModel<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1examplebit__a/>ExampleBit_A<a></b><br>
@@ -465,6 +518,7 @@ weight: 20
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1modelhierarchy_1_1edge__color__t/>edge_color_t<a></b><br>Property tag for adding color property to edges. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1modelhierarchy_1_1labelwriter/>labelWriter<a></b><br>Helper class for drawing the model hierarchy graph (labels) <br></details>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1modelparameters/>ModelParameters<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1modelvalidationhandler/>ModelValidationHandler<a></b><br>
 <details><summary><b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1models/>Models<a></b><br>Forward declaration of [Models::ModelFunctorClaw]() class for use in constructors. </summary>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1models_1_1dmeftmodel/>DMEFTModel<a></b><br>Simple DMEFT model object. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1models_1_1dmeftsimplespec/>DMEFTSimpleSpec<a></b><br>
@@ -650,6 +704,13 @@ weight: 20
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1scanner_1_1plugins_1_1plugindata/>pluginData<a></b><br>Structure that holds all the data provided by plugins about themselves. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1scanner_1_1plugins_1_1plugininfo/>pluginInfo<a></b><br>Container for all the plugin info from the inifile and Scannerbit. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1scanner_1_1plugins_1_1pyplugin__info/>pyplugin_info<a></b><br></details>
+<details><summary><b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1scanner_1_1python/>Python<a></b></summary>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1scanner_1_1python_1_1inifileparser/>IniFileParser<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1scanner_1_1python_1_1diagnostics/>diagnostics<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1scanner_1_1python_1_1fake__vector/>fake_vector<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1scanner_1_1python_1_1printer__wrapper/>printer_wrapper<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1scanner_1_1python_1_1scan/>scan<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1scanner_1_1python_1_1scan__interface/>scan_interface<a></b><br></details>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1scanner_1_1rannumgen/>RanNumGen<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1scanner_1_1scan__manager/>Scan_Manager<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1scanner_1_1scanner__plugin__function/>Scanner_Plugin_Function<a></b><br>
@@ -688,6 +749,8 @@ weight: 20
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1scanner_1_1is__args__convertible_3_01ret1_07_08_00_01ret2_07_08_4/>is_args_convertible< ret1(), ret2()><a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1scanner_1_1is__args__convertible_3_01ret1_07arg1_00_01args1_8_8_8_08_00_01ret2_07arg2_00_01args2_8_8_8_08_4/>is_args_convertible< ret1(arg1, args1...), ret2(arg2, args2...)><a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1scanner_1_1like__ptr/>like_ptr<a></b><br>likelihood pointer holder for scanner plugins. <br>
+<details><summary><b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1scanner_1_1mpi__dist__internal/>mpi_dist_internal<a></b></summary>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1scanner_1_1mpi__dist__internal_1_1mpi__dist/>mpi_dist<a></b><br></details>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1scanner_1_1point__info/>point_info<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1scanner_1_1remove__all__func/>remove_all_func<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1scanner_1_1remove__all__func_3_01ret_07args_8_8_8_08_4/>remove_all_func< ret(args...)><a></b><br>
@@ -870,6 +933,9 @@ weight: 20
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1is__same__type__internal_3_01void_07t_00_01args_8_8_8_08_00_01t_01_4/>is_same_type_internal< void(T, args...), T ><a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1is__same__type__internal_3_01void_07t_00_01args_8_8_8_08_00_01type_01_4/>is_same_type_internal< void(T, args...), type ><a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1is__vector/>is_vector<a></b><br>
+<details><summary><b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1jswarm__1__0__0/>jswarm_1_0_0<a></b></summary>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1jswarm__1__0__0_1_1particle/>particle<a></b><br>An individual particle in a swarm. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classgambit_1_1jswarm__1__0__0_1_1particle__swarm/>particle_swarm<a></b><br>A swarm of particles and methods to evolve them. <br></details>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1libfarraytest__cb2__type/>libFarrayTest_CB2_type<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1libfarraytest__cb3__type/>libFarrayTest_CB3_type<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1libfarraytest__cb__type/>libFarrayTest_CB_type<a></b><br>
@@ -954,26 +1020,35 @@ weight: 20
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1widthhl__hdec__type/>widthhl_hdec_type<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1wisfer__hdec__type/>wisfer_hdec_type<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structgambit_1_1wisusy__hdec__type/>wisusy_hdec_type<a></b><br></details>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1cosmobit_1_1_0d722/>@722<a></b><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1cosmobit_1_1_0d727/>@727<a></b><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1cosmobit_1_1_0d734/>@734<a></b><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1darkbit_1_1_0d749/>@749<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1cosmobit_1_1_0d752/>@752<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1cosmobit_1_1_0d757/>@757<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1cosmobit_1_1_0d764/>@764<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1darkbit_1_1_0d779/>@779<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5_1_1_0d1241/>@1241<a></b><br>Close hdf5 type ID. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespaceheputils/>HEPUtils<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacelhef/>LHEF<a></b><br>Forward declaration to cut down on includes. <br>
 <details><summary><b>namespace <a href=/documentation/code/namespaces/namespacelester/>Lester<a></b></summary>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structlester_1_1ellipseparams/>EllipseParams<a></b><br></details>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classmva/>MVA<a></b><br>
+<details><summary><b>namespace <a href=/documentation/code/namespaces/namespacemvautils/>MVAUtils<a></b></summary>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classmvautils_1_1bdt/>BDT<a></b><br></details>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classmvautilsreader/>MVAUtilsReader<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classmultinormdev/>MultiNormDev<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classmultinormaldev/>MultiNormalDev<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespaceneutrinobit_1_1functown/>Functown<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classnormaldev/>NormalDev<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespaceprecisionbit_1_1functown/>Functown<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacepythia8/>Pythia8<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classran/>Ran<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classrannumgen/>RanNumGen<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classran__old/>Ran_old<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classrandombasis/>RandomBasis<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classrandomplane/>RandomPlane<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespaceslhaea/>SLHAea<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>struct <a href=/documentation/code/classes/structsettings/>Settings<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacespecbit_1_1functown/>Functown<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>namespace <a href=/documentation/code/namespaces/namespacetmva/>TMVA<a></b><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classtmvareader/>TMVAReader<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classtransformrandombasis/>TransformRandomBasis<a></b><br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>class <a href=/documentation/code/classes/classwrapperbase/>WrapperBase<a></b><br>
 <details><summary><b>namespace <a href=/documentation/code/namespaces/namespaceyaml/>YAML<a></b><br>[YAML]() overloads for mass cut and mass cut ratio constituents. </summary>
@@ -1028,4 +1103,4 @@ weight: 20
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:37 +0000
+Updated on 2026-11-03 at 14:50:49 +0000

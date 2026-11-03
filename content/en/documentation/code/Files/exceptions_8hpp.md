@@ -128,13 +128,13 @@ namespace Gambit
       /// @}
 
       /// Destructor
-      virtual ~exception() throw() {}
+      virtual ~exception() noexcept {}
 
       /// Setter for the fatal flag.
       void set_fatal(bool);
 
       /// Retrieve the identity of the exception.
-      virtual const char* what() const throw();
+      virtual const char* what() const noexcept;
 
       /// Raise the exception.
       /// Log the exception and, if it is considered fatal, actually throw it.
@@ -144,7 +144,7 @@ namespace Gambit
       /// Force a throw of the exception.
       /// These should only be used inside a try block, i.e. if you plan to catch the exception.
       /// @{
-      /// Log the exception and throw it regardless of whether is is fatal or not.
+      /// Log the exception and throw it regardless of whether it is fatal or not.
       void forced_throw(const std::string&, const std::string&);
       /// As per forced_throw but without logging.
       void silent_forced_throw();
@@ -190,7 +190,7 @@ namespace Gambit
       /// Flag indicating if this exception should be considered fatal or not.
       bool isFatal;
 
-      /// Shared string indicating the current values of the paramters.
+      /// Shared string indicating the current values of the parameters.
       static std::string parameters;
 
   };
@@ -263,10 +263,10 @@ namespace Gambit
       special_exception(const char*);
 
       /// Destructor
-      virtual ~special_exception() throw() {}
+      virtual ~special_exception() noexcept {}
 
       /// Retrieve the identity of the exception.
-      virtual const char* what() const throw();
+      virtual const char* what() const noexcept;
 
       /// Retrieve the message that this exception was raised with.
       std::string message();
@@ -402,7 +402,7 @@ namespace Gambit
     public:
       SilentShutdownException();
       SilentShutdownException(const std::string& message);
-      virtual const char* what() const throw();
+      virtual const char* what() const noexcept;
     private:
       std::string myWhat;
   };
@@ -411,7 +411,7 @@ namespace Gambit
   {
     public:
       SoftShutdownException(const std::string& message);
-      virtual const char* what() const throw();
+      virtual const char* what() const noexcept;
     private:
       std::string myWhat;
   };
@@ -420,7 +420,7 @@ namespace Gambit
   {
     public:
       HardShutdownException(const std::string& message);
-      virtual const char* what() const throw();
+      virtual const char* what() const noexcept;
     private:
       std::string myWhat;
   };
@@ -429,7 +429,7 @@ namespace Gambit
   {
     public:
       MPIShutdownException(const std::string& message);
-      virtual const char* what() const throw();
+      virtual const char* what() const noexcept;
     private:
       std::string myWhat;
   };
@@ -466,4 +466,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:33 +0000
+Updated on 2026-11-03 at 14:50:45 +0000

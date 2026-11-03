@@ -35,7 +35,7 @@ description: "[No description available]"
 
 A collection of tools for interacting with HDF5 databases.
 
-Currently I am using the C++ bindings for HDF5, however they are a bit crap and it may be better to just write our own.
+Currently I am using the C++ bindings for HDF5, however they not great and it may be better to just write our own.
 
 
 
@@ -139,7 +139,7 @@ if( H5Tequal(datatype_id, get_hdf5_data_type<elem>::type()) )\
 ///  HDF5 databases.
 ///
 ///  Currently I am using the C++ bindings for
-///  HDF5, however they are a bit crap and it may
+///  HDF5, however they not great and it may
 ///  be better to just write our own.
 ///
 ///  *********************************************
@@ -722,17 +722,16 @@ namespace Gambit {
       }
 
       // Iterator function for listing datasets in a group
-      herr_t group_ls(hid_t g_id, const char *name, const H5L_info_t* /*info*/, void *op_data)
+      herr_t group_ls(hid_t g_id, const char *name, const GAMBIT_H5L_INFO_T* /*info*/, void *op_data)
       {
           #ifdef HDF5_DEBUG
             //std::cout<<"group_ls: "<<name<<std::endl;
-            //std::cout<<info->type<<" "<<H5G_DATASET<<std::endl;
           #endif
           std::vector<std::string>* out = static_cast<std::vector<std::string>*>(op_data);
           // Only add names that correspond to datasets
-          H5G_stat_t statbuf;
-          H5Gget_objinfo(g_id, name, false, &statbuf);
-          if(statbuf.type == H5G_DATASET) out->push_back(name);
+          GAMBIT_H5O_INFO_T object_info;
+          herr_t err = GAMBIT_H5OGET_INFO_BY_NAME(g_id, name, &object_info, H5P_DEFAULT);
+          if(err >= 0 and object_info.type == H5O_TYPE_DATASET) out->push_back(name);
           return 0;
       }
 
@@ -747,7 +746,7 @@ namespace Gambit {
          }
 
          std::vector<std::string> out;
-         herr_t err = H5Literate(group_id, H5_INDEX_NAME, H5_ITER_NATIVE, NULL, group_ls, &out);
+         herr_t err = GAMBIT_H5LITERATE(group_id, H5_INDEX_NAME, H5_ITER_NATIVE, NULL, group_ls, &out);
 
          if(err<0)
          {
@@ -762,8 +761,8 @@ namespace Gambit {
       /// Check if an object in a file or group is a dataset
       bool isDataSet(hid_t loc_id, const std::string& name)
       {
-          H5O_info_t object_info;
-          herr_t err = H5Oget_info_by_name(loc_id, name.c_str(), &object_info, H5P_DEFAULT);
+          GAMBIT_H5O_INFO_T object_info;
+          herr_t err = GAMBIT_H5OGET_INFO_BY_NAME(loc_id, name.c_str(), &object_info, H5P_DEFAULT);
           if(err<0)
           {
               std::ostringstream errmsg;
@@ -801,9 +800,15 @@ namespace Gambit {
       /// Close hdf5 group
       SIMPLE_CALL(hid_t, closeGroup,  hid_t, H5Gclose, "close", "group", "group")
 
-      /// global error variables (handler)
-      H5E_auto2_t old_func;
-      void *old_client_data;
+      /// State for errorsOff() / errorsOn(). The bool guard errors_are_off 
+      /// ensures that a redundant errorsOff() called while errors are already 
+      /// off does NOT overwrite the saved handler with the NULL handler.
+      namespace
+      {
+         bool errors_are_off = false;
+         H5E_auto2_t saved_func = nullptr;
+         void *saved_client_data = nullptr;
+      }
 
       // FIXME: This caused compile problems on LISA cluster (CW)
       /// Silence error report (e.g. while probing for file existence)
@@ -817,18 +822,21 @@ namespace Gambit {
       /// and let me know if it works :)
       void errorsOff()
       {
+         if (errors_are_off) return; // already off; don't clobber saved state
          /* Save old error handler */
-         H5Eget_auto2(H5E_DEFAULT, &old_func, &old_client_data);
-
+         H5Eget_auto2(H5E_DEFAULT, &saved_func, &saved_client_data);
          /* Turn off error handling */
          H5Eset_auto2(H5E_DEFAULT, NULL, NULL);
+         errors_are_off = true;
       }
 
       /// Restore error report
       void errorsOn()
       {
+         if (!errors_are_off) return; // unbalanced / already on; no-op
          /* Restore previous error handler */
-         H5Eset_auto2(H5E_DEFAULT, old_func, old_client_data);
+         H5Eset_auto2(H5E_DEFAULT, saved_func, saved_client_data);
+         errors_are_off = false;
       }
 
       /// @{ Dataset manipulations
@@ -994,4 +1002,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:34 +0000
+Updated on 2026-11-03 at 14:50:45 +0000

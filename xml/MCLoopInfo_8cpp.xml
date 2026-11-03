@@ -335,7 +335,7 @@
 <codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1aef66091196ba1fa30f4392ed05db48b1" kindref="member">exceeded_maxFailedEvents</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Decrement<sp/>event<sp/>counter</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_current_event_count_it-&gt;second--;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_current_event_count_it-&gt;second--;</highlight></codeline>
 <codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="38"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
@@ -346,7 +346,7 @@
 <codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a13a2decfcc5cdfb73d22fb819ab757e9" kindref="member">end_of_event_file</ref><sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Decrement<sp/>event<sp/>counter</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_current_event_count_it-&gt;second--;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_current_event_count_it-&gt;second--;</highlight></codeline>
 <codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="49"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
@@ -382,7 +382,7 @@
 <codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>_current_event_count_it<sp/>=<sp/>it;</highlight></codeline>
 <codeline lineno="81"><highlight class="normal"></highlight></codeline>
-<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Save<sp/>an<sp/>iterator<sp/>to<sp/>the<sp/>the<sp/>list<sp/>of<sp/>analyses<sp/>for<sp/>the<sp/>current<sp/>collider</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Save<sp/>an<sp/>iterator<sp/>to<sp/>the<sp/>list<sp/>of<sp/>analyses<sp/>for<sp/>the<sp/>current<sp/>collider</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>jt<sp/>=<sp/><ref refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a818bc16a50d3653d7e586bb867258a31" kindref="member">convergence_options</ref>.find(_current_collider);</highlight></codeline>
 <codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(jt<sp/>==<sp/><ref refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a818bc16a50d3653d7e586bb867258a31" kindref="member">convergence_options</ref>.end())</highlight></codeline>
 <codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
@@ -391,7 +391,7 @@
 <codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>_current_convergence_options_it<sp/>=<sp/>jt;</highlight></codeline>
 <codeline lineno="90"><highlight class="normal"></highlight></codeline>
-<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Save<sp/>an<sp/>iterator<sp/>to<sp/>the<sp/>the<sp/>list<sp/>of<sp/>analyses<sp/>for<sp/>the<sp/>current<sp/>collider</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Save<sp/>an<sp/>iterator<sp/>to<sp/>the<sp/>list<sp/>of<sp/>analyses<sp/>for<sp/>the<sp/>current<sp/>collider</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>kt<sp/>=<sp/><ref refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a6f024bfb1181bc749de04ff62a20ab70" kindref="member">analyses</ref>.find(_current_collider);</highlight></codeline>
 <codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(kt<sp/>==<sp/><ref refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1a6f024bfb1181bc749de04ff62a20ab70" kindref="member">analyses</ref>.end())</highlight></codeline>
 <codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
@@ -400,7 +400,7 @@
 <codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>_current_analyses_it<sp/>=<sp/>kt;</highlight></codeline>
 <codeline lineno="99"><highlight class="normal"></highlight></codeline>
-<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Save<sp/>an<sp/>iterator<sp/>to<sp/>the<sp/>the<sp/>list<sp/>of<sp/>analyses<sp/>for<sp/>the<sp/>current<sp/>collider,<sp/>sorted<sp/>by<sp/>detector</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Save<sp/>an<sp/>iterator<sp/>to<sp/>the<sp/>list<sp/>of<sp/>analyses<sp/>for<sp/>the<sp/>current<sp/>collider,<sp/>sorted<sp/>by<sp/>detector</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>lt<sp/>=<sp/><ref refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1aa841fe1447d50d56f5b8e49a67f23309" kindref="member">detector_analyses</ref>.find(_current_collider);</highlight></codeline>
 <codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(lt<sp/>==<sp/><ref refid="structGambit_1_1ColliderBit_1_1MCLoopInfo_1aa841fe1447d50d56f5b8e49a67f23309" kindref="member">detector_analyses</ref>.end())</highlight></codeline>
 <codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>

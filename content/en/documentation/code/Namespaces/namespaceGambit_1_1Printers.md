@@ -137,14 +137,6 @@ Forward declaration.  [More...](#detailed-description)
 | constexpr int | **[h5v2_type< unsigned long long >](/documentation/code/namespaces/namespacegambit_1_1printers/#function-h5v2-type-unsigned-long-long)**() |
 | constexpr int | **[h5v2_type< float >](/documentation/code/namespaces/namespacegambit_1_1printers/#function-h5v2-type-float)**() |
 | constexpr int | **[h5v2_type< double >](/documentation/code/namespaces/namespacegambit_1_1printers/#function-h5v2-type-double)**() |
-| const int | **[h5v2_bufname](/documentation/code/namespaces/namespacegambit_1_1printers/#function-h5v2-bufname)**(10 )<br>MPI tags for HDF5 printer v2.  |
-| const int | **[h5v2_bufdata_points](/documentation/code/namespaces/namespacegambit_1_1printers/#function-h5v2-bufdata-points)**(11 ) |
-| const int | **[h5v2_bufdata_ranks](/documentation/code/namespaces/namespacegambit_1_1printers/#function-h5v2-bufdata-ranks)**(12 ) |
-| const int | **[h5v2_bufdata_valid](/documentation/code/namespaces/namespacegambit_1_1printers/#function-h5v2-bufdata-valid)**(13 ) |
-| const int | **[h5v2_bufdata_type](/documentation/code/namespaces/namespacegambit_1_1printers/#function-h5v2-bufdata-type)**(14 ) |
-| const int | **[h5v2_bufdata_values](/documentation/code/namespaces/namespacegambit_1_1printers/#function-h5v2-bufdata-values)**(15 ) |
-| const int | **[h5v2_BLOCK](/documentation/code/namespaces/namespacegambit_1_1printers/#function-h5v2-block)**(30 ) |
-| const int | **[h5v2_BEGIN](/documentation/code/namespaces/namespacegambit_1_1printers/#function-h5v2-begin)**(31 ) |
 | template <class T \> <br>std::set< T > | **[set_diff](/documentation/code/namespaces/namespacegambit_1_1printers/#function-set-diff)**(const std::set< T > & set1, const std::set< T > & set2) |
 | std::size_t | **[pairfunc](/documentation/code/namespaces/namespacegambit_1_1printers/#function-pairfunc)**(const std::size_t i, const std::size_t j) |
 | int | **[col_name_callback](/documentation/code/namespaces/namespacegambit_1_1printers/#function-col-name-callback)**(void * colmap_in, int , char ** data, char ** ) |
@@ -791,79 +783,6 @@ constexpr int h5v2_type< double >()
 ```
 
 
-### function h5v2_bufname
-
-```
-const int h5v2_bufname(
-    10 
-)
-```
-
-MPI tags for HDF5 printer v2. 
-
-### function h5v2_bufdata_points
-
-```
-const int h5v2_bufdata_points(
-    11 
-)
-```
-
-
-### function h5v2_bufdata_ranks
-
-```
-const int h5v2_bufdata_ranks(
-    12 
-)
-```
-
-
-### function h5v2_bufdata_valid
-
-```
-const int h5v2_bufdata_valid(
-    13 
-)
-```
-
-
-### function h5v2_bufdata_type
-
-```
-const int h5v2_bufdata_type(
-    14 
-)
-```
-
-
-### function h5v2_bufdata_values
-
-```
-const int h5v2_bufdata_values(
-    15 
-)
-```
-
-
-### function h5v2_BLOCK
-
-```
-const int h5v2_BLOCK(
-    30 
-)
-```
-
-
-### function h5v2_BEGIN
-
-```
-const int h5v2_BEGIN(
-    31 
-)
-```
-
-
 ### function set_diff
 
 ```
@@ -1315,4 +1234,4 @@ Define 'nullpoint' const.
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:32 +0000
+Updated on 2026-11-03 at 14:50:44 +0000

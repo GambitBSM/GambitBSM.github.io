@@ -20,30 +20,6 @@
         <location file="ColliderBit/src/analyses/Analysis_CMS_13TeV_2Photon_GMSB_36invfb.cpp" line="70" column="35" bodyfile="ColliderBit/src/analyses/Analysis_CMS_13TeV_2Photon_GMSB_36invfb.cpp" bodystart="70" bodyend="-1"/>
       </memberdef>
       </sectiondef>
-      <sectiondef kind="public-attrib">
-      <memberdef kind="variable" id="classGambit_1_1ColliderBit_1_1Analysis__CMS__13TeV__2Photon__GMSB__36invfb_1a797c7111afbf8faf1fd00c2da115c093" prot="public" static="no" mutable="no">
-        <type>std::map&lt; string, <ref refid="classGambit_1_1ColliderBit_1_1EventCounter" kindref="compound">EventCounter</ref> &gt;</type>
-        <definition>std::map&lt;string, EventCounter&gt; Gambit::ColliderBit::Analysis_CMS_13TeV_2Photon_GMSB_36invfb::_counters</definition>
-        <argsstring></argsstring>
-        <name>_counters</name>
-        <qualifiedname>Gambit::ColliderBit::Analysis_CMS_13TeV_2Photon_GMSB_36invfb::_counters</qualifiedname>
-        <initializer>= {
-        {&quot;SR_MET_100-115&quot;, EventCounter(&quot;SR_MET_100-115&quot;)},
-        {&quot;SR_MET_115-130&quot;, EventCounter(&quot;SR_MET_115-130&quot;)},
-        {&quot;SR_MET_130-150&quot;, EventCounter(&quot;SR_MET_130-150&quot;)},
-        {&quot;SR_MET_150-185&quot;, EventCounter(&quot;SR_MET_150-185&quot;)},
-        {&quot;SR_MET_185-250&quot;, EventCounter(&quot;SR_MET_185-250&quot;)},
-        {&quot;SR_MET_&gt;250&quot;, EventCounter(&quot;SR_MET_&gt;250&quot;)},
-      }</initializer>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="ColliderBit/src/analyses/Analysis_CMS_13TeV_2Photon_GMSB_36invfb.cpp" line="73" column="16" bodyfile="ColliderBit/src/analyses/Analysis_CMS_13TeV_2Photon_GMSB_36invfb.cpp" bodystart="73" bodyend="-1"/>
-      </memberdef>
-      </sectiondef>
       <sectiondef kind="public-func">
       <memberdef kind="function" id="classGambit_1_1ColliderBit_1_1Analysis__CMS__13TeV__2Photon__GMSB__36invfb_1acf3722d8e86da625cdc4b40d3e9e9d24" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -57,7 +33,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/src/analyses/Analysis_CMS_13TeV_2Photon_GMSB_36invfb.cpp" line="86" column="7" bodyfile="ColliderBit/src/analyses/Analysis_CMS_13TeV_2Photon_GMSB_36invfb.cpp" bodystart="86" bodyend="90"/>
+        <location file="ColliderBit/src/analyses/Analysis_CMS_13TeV_2Photon_GMSB_36invfb.cpp" line="76" column="7" bodyfile="ColliderBit/src/analyses/Analysis_CMS_13TeV_2Photon_GMSB_36invfb.cpp" bodystart="76" bodyend="91"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1ColliderBit_1_1Analysis__CMS__13TeV__2Photon__GMSB__36invfb_1a57deed4b09db8389036f62456039f674" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>void</type>
@@ -76,27 +52,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/src/analyses/Analysis_CMS_13TeV_2Photon_GMSB_36invfb.cpp" line="93" column="12" bodyfile="ColliderBit/src/analyses/Analysis_CMS_13TeV_2Photon_GMSB_36invfb.cpp" bodystart="93" bodyend="287"/>
-      </memberdef>
-      <memberdef kind="function" id="classGambit_1_1ColliderBit_1_1Analysis__CMS__13TeV__2Photon__GMSB__36invfb_1acdaabda4bea0898c060451f38d293c6e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
-        <type>void</type>
-        <definition>void Gambit::ColliderBit::Analysis_CMS_13TeV_2Photon_GMSB_36invfb::combine</definition>
-        <argsstring>(const Analysis *other)</argsstring>
-        <name>combine</name>
-        <qualifiedname>Gambit::ColliderBit::Analysis_CMS_13TeV_2Photon_GMSB_36invfb::combine</qualifiedname>
-        <reimplements refid="classGambit_1_1ColliderBit_1_1Analysis_1a16ed2b84d494f63537bd87d145273258">combine</reimplements>
-        <param>
-          <type>const <ref refid="classGambit_1_1ColliderBit_1_1Analysis" kindref="compound">Analysis</ref> *</type>
-          <declname>other</declname>
-        </param>
-        <briefdescription>
-<para>Combine the variables of another copy of this analysis (typically on another thread) into this one. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="ColliderBit/src/analyses/Analysis_CMS_13TeV_2Photon_GMSB_36invfb.cpp" line="291" column="12" bodyfile="ColliderBit/src/analyses/Analysis_CMS_13TeV_2Photon_GMSB_36invfb.cpp" bodystart="291" bodyend="297"/>
+        <location file="ColliderBit/src/analyses/Analysis_CMS_13TeV_2Photon_GMSB_36invfb.cpp" line="94" column="12" bodyfile="ColliderBit/src/analyses/Analysis_CMS_13TeV_2Photon_GMSB_36invfb.cpp" bodystart="94" bodyend="288"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1ColliderBit_1_1Analysis__CMS__13TeV__2Photon__GMSB__36invfb_1a140c97bbe5b12269573194ac9f4e7083" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>void</type>
@@ -112,7 +68,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/src/analyses/Analysis_CMS_13TeV_2Photon_GMSB_36invfb.cpp" line="300" column="20" bodyfile="ColliderBit/src/analyses/Analysis_CMS_13TeV_2Photon_GMSB_36invfb.cpp" bodystart="300" bodyend="308"/>
+        <location file="ColliderBit/src/analyses/Analysis_CMS_13TeV_2Photon_GMSB_36invfb.cpp" line="291" column="20" bodyfile="ColliderBit/src/analyses/Analysis_CMS_13TeV_2Photon_GMSB_36invfb.cpp" bodystart="291" bodyend="299"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
@@ -130,7 +86,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/src/analyses/Analysis_CMS_13TeV_2Photon_GMSB_36invfb.cpp" line="312" column="12" bodyfile="ColliderBit/src/analyses/Analysis_CMS_13TeV_2Photon_GMSB_36invfb.cpp" bodystart="312" bodyend="314"/>
+        <location file="ColliderBit/src/analyses/Analysis_CMS_13TeV_2Photon_GMSB_36invfb.cpp" line="303" column="12" bodyfile="ColliderBit/src/analyses/Analysis_CMS_13TeV_2Photon_GMSB_36invfb.cpp" bodystart="303" bodyend="305"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -153,6 +109,9 @@
       <node id="2">
         <label>Gambit::ColliderBit::Analysis</label>
         <link refid="classGambit_1_1ColliderBit_1_1Analysis"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>_cutflows</edgelabel>
+        </childnode>
       </node>
       <node id="1">
         <label>Gambit::ColliderBit::Analysis_CMS_13TeV_2Photon_GMSB_36invfb</label>
@@ -160,12 +119,26 @@
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
+      <node id="3">
+        <label>Gambit::ColliderBit::Cutflows</label>
+        <link refid="structGambit_1_1ColliderBit_1_1Cutflows"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>cfs</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>vector&lt; Gambit::ColliderBit::Cutflow &gt;</label>
+      </node>
     </collaborationgraph>
-    <location file="ColliderBit/src/analyses/Analysis_CMS_13TeV_2Photon_GMSB_36invfb.cpp" line="67" column="5" bodyfile="ColliderBit/src/analyses/Analysis_CMS_13TeV_2Photon_GMSB_36invfb.cpp" bodystart="67" bodyend="316"/>
+    <location file="ColliderBit/src/analyses/Analysis_CMS_13TeV_2Photon_GMSB_36invfb.cpp" line="67" column="5" bodyfile="ColliderBit/src/analyses/Analysis_CMS_13TeV_2Photon_GMSB_36invfb.cpp" bodystart="67" bodyend="307"/>
     <listofallmembers>
-      <member refid="classGambit_1_1ColliderBit_1_1Analysis__CMS__13TeV__2Photon__GMSB__36invfb_1a797c7111afbf8faf1fd00c2da115c093" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_CMS_13TeV_2Photon_GMSB_36invfb</scope><name>_counters</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1Analysis_1aedc85bacb1d9911cacba5e90488b4c84" prot="protected" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_CMS_13TeV_2Photon_GMSB_36invfb</scope><name>_counters</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1Analysis_1a4f2bcbf95fb47076363e2b939ced794a" prot="protected" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_CMS_13TeV_2Photon_GMSB_36invfb</scope><name>_cutflows</name></member>
       <member refid="classGambit_1_1ColliderBit_1_1Analysis_1aaece33bab954d82337af28138e893bcf" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_CMS_13TeV_2Photon_GMSB_36invfb</scope><name>add</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1Analysis_1a5875e9ab953e08532a8663a1a759883b" prot="protected" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_CMS_13TeV_2Photon_GMSB_36invfb</scope><name>add_cutflows</name></member>
       <member refid="classGambit_1_1ColliderBit_1_1Analysis_1a129c783782dbf71bf5920676a6825f82" prot="protected" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_CMS_13TeV_2Photon_GMSB_36invfb</scope><name>add_result</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1Analysis_1a5edfd7541db9ed50a075a4d2fa18b6d0" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_CMS_13TeV_2Photon_GMSB_36invfb</scope><name>addCuts</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1Analysis_1abc701bdf4ed66cd923b605a0841858f3" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_CMS_13TeV_2Photon_GMSB_36invfb</scope><name>addCuts</name></member>
       <member refid="classGambit_1_1ColliderBit_1_1Analysis_1a3eeaadd4fec4b19602be715d1403607e" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_CMS_13TeV_2Photon_GMSB_36invfb</scope><name>Analysis</name></member>
       <member refid="classGambit_1_1ColliderBit_1_1Analysis__CMS__13TeV__2Photon__GMSB__36invfb_1acf3722d8e86da625cdc4b40d3e9e9d24" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_CMS_13TeV_2Photon_GMSB_36invfb</scope><name>Analysis_CMS_13TeV_2Photon_GMSB_36invfb</name></member>
       <member refid="classGambit_1_1ColliderBit_1_1Analysis_1af499cb63caf6576d6ad837424b0616ac" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_CMS_13TeV_2Photon_GMSB_36invfb</scope><name>analysis_name</name></member>
@@ -173,8 +146,12 @@
       <member refid="classGambit_1_1ColliderBit_1_1Analysis_1a3e58cdb4d72d7bb80cff7d3124aee2c1" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_CMS_13TeV_2Photon_GMSB_36invfb</scope><name>analyze</name></member>
       <member refid="classGambit_1_1ColliderBit_1_1Analysis_1a297020aa68d1f38fe53da210a0ba12df" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_CMS_13TeV_2Photon_GMSB_36invfb</scope><name>analyze</name></member>
       <member refid="classGambit_1_1ColliderBit_1_1Analysis__CMS__13TeV__2Photon__GMSB__36invfb_1a140c97bbe5b12269573194ac9f4e7083" prot="public" virt="virtual"><scope>Gambit::ColliderBit::Analysis_CMS_13TeV_2Photon_GMSB_36invfb</scope><name>collect_results</name></member>
-      <member refid="classGambit_1_1ColliderBit_1_1Analysis__CMS__13TeV__2Photon__GMSB__36invfb_1acdaabda4bea0898c060451f38d293c6e" prot="public" virt="virtual"><scope>Gambit::ColliderBit::Analysis_CMS_13TeV_2Photon_GMSB_36invfb</scope><name>combine</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1Analysis_1aee0662e33d971c3d55a8ab948aaa2a79" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_CMS_13TeV_2Photon_GMSB_36invfb</scope><name>collider_name</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1Analysis_1a4b6826170e6bef897ee1d95f12114e1a" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_CMS_13TeV_2Photon_GMSB_36invfb</scope><name>defineSignalRegion</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1Analysis_1a78b7ce3477849490539c6dd20d55f16f" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_CMS_13TeV_2Photon_GMSB_36invfb</scope><name>defineSignalRegions</name></member>
       <member refid="classGambit_1_1ColliderBit_1_1Analysis__CMS__13TeV__2Photon__GMSB__36invfb_1a69e61207dd094bf8d291791626f66ded" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_CMS_13TeV_2Photon_GMSB_36invfb</scope><name>detector</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1Analysis_1ae8c0dae9dc4e22da61ed8df618e7a663" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_CMS_13TeV_2Photon_GMSB_36invfb</scope><name>detector_name</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1Analysis_1a01326dfe05af5df98e8aee60c0b4dc1e" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_CMS_13TeV_2Photon_GMSB_36invfb</scope><name>get_cutflows</name></member>
       <member refid="classGambit_1_1ColliderBit_1_1Analysis_1a1ec44b31958a10cdaa92c618e77b5461" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_CMS_13TeV_2Photon_GMSB_36invfb</scope><name>get_results</name></member>
       <member refid="classGambit_1_1ColliderBit_1_1Analysis_1a3c258242277f9b6239f7d009b7efb896" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_CMS_13TeV_2Photon_GMSB_36invfb</scope><name>get_results</name></member>
       <member refid="classGambit_1_1ColliderBit_1_1Analysis_1a90730956c35e8ab0538f296612361fbf" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_CMS_13TeV_2Photon_GMSB_36invfb</scope><name>get_results_ptr</name></member>
@@ -185,9 +162,12 @@
       <member refid="classGambit_1_1ColliderBit_1_1Analysis_1a3c6f2c8b6f7069239d3407ba9456003c" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_CMS_13TeV_2Photon_GMSB_36invfb</scope><name>scale</name></member>
       <member refid="classGambit_1_1ColliderBit_1_1Analysis_1a4998785e3f5ebd96a148af8b4fbf575d" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_CMS_13TeV_2Photon_GMSB_36invfb</scope><name>set_analysis_name</name></member>
       <member refid="classGambit_1_1ColliderBit_1_1Analysis_1af5f66da284a6474f3c8f9e4368a68a48" prot="protected" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_CMS_13TeV_2Photon_GMSB_36invfb</scope><name>set_bkgjson</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1Analysis_1a64350b859f799d15f4d47ab558b0cc6c" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_CMS_13TeV_2Photon_GMSB_36invfb</scope><name>set_collider_name</name></member>
       <member refid="classGambit_1_1ColliderBit_1_1Analysis_1a85634b0ca3817f602fa53630071879ae" prot="protected" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_CMS_13TeV_2Photon_GMSB_36invfb</scope><name>set_covariance</name></member>
       <member refid="classGambit_1_1ColliderBit_1_1Analysis_1af72693e91a323d2a7604e029b748564f" prot="protected" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_CMS_13TeV_2Photon_GMSB_36invfb</scope><name>set_covariance</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1Analysis_1af220de4f7acdfda3e418f4096d5545c6" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_CMS_13TeV_2Photon_GMSB_36invfb</scope><name>set_detector_name</name></member>
       <member refid="classGambit_1_1ColliderBit_1_1Analysis_1affc00d6a3606fda2e214b99dba9598c6" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_CMS_13TeV_2Photon_GMSB_36invfb</scope><name>set_luminosity</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1Analysis_1a931b55a3758bf0db43fddcf1bf52b95f" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_CMS_13TeV_2Photon_GMSB_36invfb</scope><name>set_store_accepted_event_IDs</name></member>
       <member refid="classGambit_1_1ColliderBit_1_1Analysis_1ab3a56e82a29f91e87ad1d12b6b825b2c" prot="public" virt="virtual"><scope>Gambit::ColliderBit::Analysis_CMS_13TeV_2Photon_GMSB_36invfb</scope><name>~Analysis</name></member>
     </listofallmembers>
   </compounddef>

@@ -242,7 +242,7 @@ namespace Gambit
 /*
 
     /////////////////////////////////////////////////////////////////
-    //      Auxillary functions and classes for interpolation      //
+    //      Auxiliary functions and classes for interpolation      //
     /////////////////////////////////////////////////////////////////
 
     // \brief Generic one-dimensional integration container for linear interpolation and cubic splines.
@@ -1428,4 +1428,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:35 +0000
+Updated on 2026-11-03 at 14:50:47 +0000

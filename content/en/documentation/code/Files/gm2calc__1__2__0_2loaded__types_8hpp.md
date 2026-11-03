@@ -43,7 +43,6 @@ description: "[No description available]"
 #ifndef __loaded_types_gm2calc_1_2_0_hpp__
 #define __loaded_types_gm2calc_1_2_0_hpp__ 1
 
-#include "gambit/Utils/begin_ignore_warnings_eigen.hpp"
 #include "wrapper_MSSMNoFV_onshell_susy_parameters.hpp"
 #include "wrapper_MSSMNoFV_onshell.hpp"
 #include "wrapper_MSSMNoFV_onshell_mass_eigenstates.hpp"
@@ -56,7 +55,6 @@ description: "[No description available]"
 #include "wrapper_EPhysicalProblem.hpp"
 #include "wrapper_EReadError.hpp"
 #include "identification.hpp"
-#include "gambit/Utils/end_ignore_warnings.hpp"
 
 // Indicate which types are provided by this backend, and what the symbols of their factories are.
 #define gm2calc_1_2_0_all_data \
@@ -86,4 +84,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:36 +0000
+Updated on 2026-11-03 at 14:50:48 +0000

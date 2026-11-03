@@ -10,7 +10,7 @@
     <includedby refid="ColliderBit__types_8hpp" local="yes">ColliderBit_types.hpp</includedby>
     <includedby refid="getBuckFast_8cpp" local="yes">getBuckFast.cpp</includedby>
     <incdepgraph>
-      <node id="97">
+      <node id="98">
         <label>gambit/Backends/backend_info.hpp</label>
         <link refid="backend__info_8hpp"/>
         <childnode refid="10" relation="include">
@@ -22,42 +22,30 @@
         <childnode refid="66" relation="include">
         </childnode>
       </node>
-      <node id="96">
+      <node id="97">
         <label>gambit/Backends/backend_singleton.hpp</label>
         <link refid="backend__singleton_8hpp"/>
-        <childnode refid="97" relation="include">
+        <childnode refid="98" relation="include">
         </childnode>
       </node>
       <node id="93">
         <label>gambit/Backends/default_bossed_versions.hpp</label>
         <link refid="default__bossed__versions_8hpp"/>
       </node>
-      <node id="94">
-        <label>gambit/Backends/mathematica_variable.hpp</label>
-        <link refid="mathematica__variable_8hpp"/>
-        <childnode refid="95" relation="include">
-        </childnode>
-        <childnode refid="96" relation="include">
-        </childnode>
-        <childnode refid="60" relation="include">
-        </childnode>
-        <childnode refid="98" relation="include">
-        </childnode>
-      </node>
-      <node id="100">
+      <node id="96">
         <label>gambit/Backends/python_helpers.hpp</label>
         <link refid="python__helpers_8hpp"/>
       </node>
-      <node id="99">
+      <node id="94">
         <label>gambit/Backends/python_variable.hpp</label>
         <link refid="python__variable_8hpp"/>
         <childnode refid="60" relation="include">
         </childnode>
         <childnode refid="95" relation="include">
         </childnode>
-        <childnode refid="100" relation="include">
-        </childnode>
         <childnode refid="96" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
         </childnode>
       </node>
       <node id="2">
@@ -83,9 +71,9 @@
         </childnode>
         <childnode refid="7" relation="include">
         </childnode>
-        <childnode refid="102" relation="include">
+        <childnode refid="100" relation="include">
         </childnode>
-        <childnode refid="103" relation="include">
+        <childnode refid="101" relation="include">
         </childnode>
       </node>
       <node id="84">
@@ -234,8 +222,6 @@
         <childnode refid="94" relation="include">
         </childnode>
         <childnode refid="99" relation="include">
-        </childnode>
-        <childnode refid="101" relation="include">
         </childnode>
       </node>
       <node id="72">
@@ -609,10 +595,10 @@
       <node id="7">
         <label>HEPUtils/Event.h</label>
       </node>
-      <node id="103">
+      <node id="101">
         <label>HEPUtils/Jet.h</label>
       </node>
-      <node id="102">
+      <node id="100">
         <label>HEPUtils/Particle.h</label>
       </node>
       <node id="55">
@@ -629,9 +615,6 @@
       </node>
       <node id="62">
         <label>boost/algorithm/string/classification.hpp</label>
-      </node>
-      <node id="98">
-        <label>boost/algorithm/string/replace.hpp</label>
       </node>
       <node id="61">
         <label>boost/algorithm/string/split.hpp</label>
@@ -711,7 +694,7 @@
       <node id="41">
         <label>fstream</label>
       </node>
-      <node id="101">
+      <node id="99">
         <label>gambit/Backends/backend_types_rollcall.hpp</label>
       </node>
       <node id="60">
@@ -840,19 +823,21 @@
         </childnode>
         <childnode refid="29" relation="include">
         </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
       </node>
       <node id="3">
         <label>ColliderBit_types.hpp</label>
         <link refid="ColliderBit__types_8hpp"/>
         <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="30" relation="include">
+        <childnode refid="31" relation="include">
         </childnode>
       </node>
-      <node id="30">
+      <node id="31">
         <label>complete_process_PID_pair_multimaps.hpp</label>
         <link refid="complete__process__PID__pair__multimaps_8hpp"/>
-        <childnode refid="31" relation="include">
+        <childnode refid="32" relation="include">
         </childnode>
         <childnode refid="24" relation="include">
         </childnode>
@@ -917,6 +902,10 @@
         <label>LHC_likelihoods.cpp</label>
         <link refid="LHC__likelihoods_8cpp"/>
       </node>
+      <node id="29">
+        <label>PoissonCalculators.cpp</label>
+        <link refid="PoissonCalculators_8cpp"/>
+      </node>
       <node id="13">
         <label>Utils.cpp</label>
         <link refid="Utils_8cpp"/>
@@ -925,7 +914,7 @@
         <label>collider_event_weights.cpp</label>
         <link refid="collider__event__weights_8cpp"/>
       </node>
-      <node id="31">
+      <node id="32">
         <label>complete_process_PID_pair_multimaps.cpp</label>
         <link refid="complete__process__PID__pair__multimaps_8cpp"/>
       </node>
@@ -957,7 +946,7 @@
         <label>getxsec.cpp</label>
         <link refid="getxsec_8cpp"/>
       </node>
-      <node id="29">
+      <node id="30">
         <label>lep_mssm_xsecs.cpp</label>
         <link refid="lep__mssm__xsecs_8cpp"/>
       </node>

@@ -24,6 +24,7 @@ Inherits from [Gambit::Priors::BasePrior](/documentation/code/classes/classgambi
 | | **[CompositePrior](/documentation/code/classes/classgambit_1_1priors_1_1compositeprior/#function-compositeprior)**(const std::vector< std::string > & params, const [Options](/documentation/code/classes/classgambit_1_1options/) & options) |
 | virtual double | **[log_prior_density](/documentation/code/classes/classgambit_1_1priors_1_1compositeprior/#function-log-prior-density)**(const std::unordered_map< std::string, double > & ) const override<br>Log of prior density.  |
 | virtual std::vector< std::string > | **[getShownParameters](/documentation/code/classes/classgambit_1_1priors_1_1compositeprior/#function-getshownparameters)**() const override |
+| virtual std::vector< std::string > | **[getSetParameters](/documentation/code/classes/classgambit_1_1priors_1_1compositeprior/#function-getsetparameters)**() const override |
 | virtual void | **[transform](/documentation/code/classes/classgambit_1_1priors_1_1compositeprior/#function-transform)**(hyper_cube_ref< double > unit, std::unordered_map< std::string, double > & physical) const override<br>Transform from unit hypercube to physical parameter.  |
 | virtual void | **[inverse_transform](/documentation/code/classes/classgambit_1_1priors_1_1compositeprior/#function-inverse-transform)**(const std::unordered_map< std::string, double > & physical, hyper_cube_ref< double > unit) const override<br>Transform from physical parameter to unit hypercube.  |
 | | **[~CompositePrior](/documentation/code/classes/classgambit_1_1priors_1_1compositeprior/#function-compositeprior)**() |
@@ -106,6 +107,16 @@ inline virtual std::vector< std::string > getShownParameters() const override
 **Reimplements**: [Gambit::Priors::BasePrior::getShownParameters](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/#function-getshownparameters)
 
 
+### function getSetParameters
+
+```
+inline virtual std::vector< std::string > getSetParameters() const override
+```
+
+
+**Reimplements**: [Gambit::Priors::BasePrior::getSetParameters](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/#function-getsetparameters)
+
+
 ### function transform
 
 ```
@@ -143,4 +154,4 @@ inline ~CompositePrior()
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:32 +0000
+Updated on 2026-11-03 at 14:50:44 +0000

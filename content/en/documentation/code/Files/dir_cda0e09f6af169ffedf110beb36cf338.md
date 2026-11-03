@@ -18,6 +18,7 @@ description: "[No description available]"
 | **[models/CosmoEnergyInjection.cpp](/documentation/code/files/cosmoenergyinjection_8cpp/#file-models-cosmoenergyinjection-cpp)**  |
 | **[models/CosmoModels.cpp](/documentation/code/files/cosmomodels_8cpp/#file-models-cosmomodels-cpp)**  |
 | **[models/CosmoNuisanceModels.cpp](/documentation/code/files/cosmonuisancemodels_8cpp/#file-models-cosmonuisancemodels-cpp)**  |
+| **[models/demo.cpp](/documentation/code/files/demo_8cpp/#file-models-demo-cpp)**  |
 | **[models/Models/src/models/DiracSingletDM.cpp](/documentation/code/files/models_2src_2models_2diracsingletdm_8cpp/#file-models-models-src-models-diracsingletdm-cpp)**  |
 | **[models/Models/src/models/DMEFT.cpp](/documentation/code/files/models_2src_2models_2dmeft_8cpp/#file-models-models-src-models-dmeft-cpp)**  |
 | **[models/HaloModels_Einasto.cpp](/documentation/code/files/halomodels__einasto_8cpp/#file-models-halomodels-einasto-cpp)**  |
@@ -55,4 +56,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:34 +0000
+Updated on 2026-11-03 at 14:50:46 +0000

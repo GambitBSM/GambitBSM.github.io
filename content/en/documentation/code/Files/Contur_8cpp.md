@@ -20,7 +20,11 @@ description: "[No description available]"
 
 **Author**: Tomasz Procter ([t.procter.1@research.gla.ac.uk](mailto:t.procter.1@research.gla.ac.uk)) 
 
-**Date**: 2021 October
+**Date**: 
+
+  * 2021 October 
+  * 2023 May
+
 
 implementation of the Contur_output class (and helpers) that converts the python dictionary output from the contur API main into a simple class.
 
@@ -55,6 +59,7 @@ Authors (add name and date if you modify):
 ///  \author Tomasz Procter
 ///          (t.procter.1@research.gla.ac.uk)
 ///  \date 2021 October
+///  \date 2023 May
 ///
 ///  *********************************************
 
@@ -65,24 +70,33 @@ namespace Gambit
 
   #ifdef HAVE_PYBIND11
 
-    void Contur_output::print_Contur_output_debug(std::ostream&outstream) const
+    void Contur_subOutput::print_Contur_subOutput_debug(std::ostream&outstream) const
     {
-      outstream << "\nContur Output Object.\n\tLLR is: " <<
-        LLR << "\n\tPool LLR's:";
+      outstream << "\n\tContur subOutput Object.\n\t\tLLR is: " <<
+        LLR << "\n\t\tPool LLR's:";
 
       for (auto pool : pool_LLR)
       {
-        outstream << "\n\t\t" << pool.first << ": " << pool.second;
+        outstream << "\n\t\t\t" << pool.first << ": " << pool.second;
       }
-      outstream << "\n\tPool Histotags:";
+      outstream << "\n\t\tPool Histotags:";
       for (auto pool : pool_tags)
       {
-        outstream << "\n\t\t" << pool.first << ": " << pool.second;
+        outstream << "\n\t\t\t" << pool.first << ": " << pool.second;
       }
       outstream << std::endl;
     }
 
-    Contur_output merge_contur_outputs(const Contur_output& output1, const Contur_output& output2)
+    void Contur_output::print_Contur_output_debug(std::ostream&outstream) const
+    {
+      outstream << "\nContur Output Object.\n";
+      for (const str & bkg : _bkg_types){
+        outstream << "\t" << bkg << ":";
+        outputs.at(bkg).print_Contur_subOutput_debug(outstream);
+      }
+    }
+
+    Contur_subOutput merge_contur_subOutputs(const Contur_subOutput& output1, const Contur_subOutput& output2)
     {
       map_str_str new_pool_tags {};
       map_str_dbl new_pool_LLR {};
@@ -107,7 +121,15 @@ namespace Gambit
       }
 
       //Return the object
-      return Contur_output(output1.LLR + output2.LLR, new_pool_LLR, new_pool_tags);
+      return Contur_subOutput(output1.LLR + output2.LLR, new_pool_LLR, new_pool_tags);
+    }
+
+    Contur_output merge_contur_outputs(const Contur_output& output1, const Contur_output& output2){
+      Contur_output out;
+      for (const str & bkg : output1._bkg_types){
+        out.outputs[bkg] = merge_contur_subOutputs(output1.outputs.at(bkg), output2.outputs.at(bkg));
+      }
+      return out;
     }
 
     //This assumes that the same contur instances belong in each run. If this isn't the case, something very bad has gone wrong!
@@ -137,4 +159,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:36 +0000
+Updated on 2026-11-03 at 14:50:49 +0000

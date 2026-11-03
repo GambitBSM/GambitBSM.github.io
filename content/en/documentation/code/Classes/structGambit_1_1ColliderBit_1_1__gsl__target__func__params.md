@@ -19,8 +19,14 @@ A struct to contain parameters for the GSL optimiser target function.
 | std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > | **[skip_analyses](/documentation/code/classes/structgambit_1_1colliderbit_1_1__gsl__target__func__params/#variable-skip-analyses)**  |
 | bool | **[use_covar](/documentation/code/classes/structgambit_1_1colliderbit_1_1__gsl__target__func__params/#variable-use-covar)**  |
 | bool | **[use_marg](/documentation/code/classes/structgambit_1_1colliderbit_1_1__gsl__target__func__params/#variable-use-marg)**  |
+| bool | **[always_compute_all_SR_loglikes](/documentation/code/classes/structgambit_1_1colliderbit_1_1__gsl__target__func__params/#variable-always-compute-all-sr-loglikes)**  |
 | bool | **[combine_nocovar_SRs](/documentation/code/classes/structgambit_1_1colliderbit_1_1__gsl__target__func__params/#variable-combine-nocovar-srs)**  |
 | bool | **[use_fulllikes](/documentation/code/classes/structgambit_1_1colliderbit_1_1__gsl__target__func__params/#variable-use-fulllikes)**  |
+| [Options](/documentation/code/classes/classgambit_1_1options/) | **[runOptions](/documentation/code/classes/structgambit_1_1colliderbit_1_1__gsl__target__func__params/#variable-runoptions)**  |
+| bool(*)(const str &) | **[FullLikes_FileExists](/documentation/code/classes/structgambit_1_1colliderbit_1_1__gsl__target__func__params/#variable-fulllikes-fileexists)**  |
+| int(*)(const str &, const str &, const str &) | **[FullLikes_ReadIn](/documentation/code/classes/structgambit_1_1colliderbit_1_1__gsl__target__func__params/#variable-fulllikes-readin)**  |
+| double(*)(std::map< str, double > &, const str &) | **[FullLikes_Evaluate](/documentation/code/classes/structgambit_1_1colliderbit_1_1__gsl__target__func__params/#variable-fulllikes-evaluate)**  |
+| double(*)(const int &, const double &, const double &, const double &) | **[marginaliser](/documentation/code/classes/structgambit_1_1colliderbit_1_1__gsl__target__func__params/#variable-marginaliser)**  |
 
 ## Public Attributes Documentation
 
@@ -59,6 +65,13 @@ bool use_marg;
 ```
 
 
+### variable always_compute_all_SR_loglikes
+
+```
+bool always_compute_all_SR_loglikes;
+```
+
+
 ### variable combine_nocovar_SRs
 
 ```
@@ -73,6 +86,41 @@ bool use_fulllikes;
 ```
 
 
+### variable runOptions
+
+```
+Options runOptions;
+```
+
+
+### variable FullLikes_FileExists
+
+```
+bool(*)(const str &) FullLikes_FileExists;
+```
+
+
+### variable FullLikes_ReadIn
+
+```
+int(*)(const str &, const str &, const str &) FullLikes_ReadIn;
+```
+
+
+### variable FullLikes_Evaluate
+
+```
+double(*)(std::map< str, double > &, const str &) FullLikes_Evaluate;
+```
+
+
+### variable marginaliser
+
+```
+double(*)(const int &, const double &, const double &, const double &) marginaliser;
+```
+
+
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:31 +0000
+Updated on 2026-11-03 at 14:50:42 +0000

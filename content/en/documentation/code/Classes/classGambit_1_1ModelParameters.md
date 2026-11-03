@@ -38,6 +38,7 @@ description: "[No description available]"
 | std::string | **[getOutputName](/documentation/code/classes/classgambit_1_1modelparameters/#function-getoutputname)**() const |
 | void | **[setModelName](/documentation/code/classes/classgambit_1_1modelparameters/#function-setmodelname)**(const std::string & in) |
 | void | **[setOutputName](/documentation/code/classes/classgambit_1_1modelparameters/#function-setoutputname)**(const std::string & in) |
+| bool | **[isValid](/documentation/code/classes/classgambit_1_1modelparameters/#function-isvalid)**() const<br>Validity check of the model parameters.  |
 
 ## Protected Functions
 
@@ -268,6 +269,14 @@ void setOutputName(
 ```
 
 
+### function isValid
+
+```
+bool isValid() const
+```
+
+Validity check of the model parameters. 
+
 ## Protected Functions Documentation
 
 ### function assert_contains
@@ -301,4 +310,4 @@ Dump parameter names and values to stream (again for debugging only I think)
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:31 +0000
+Updated on 2026-11-03 at 14:50:42 +0000

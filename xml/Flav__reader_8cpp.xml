@@ -6,7 +6,7 @@
     <includes refid="FlavBit__rollcall_8hpp" local="yes">gambit/FlavBit/FlavBit_rollcall.hpp</includes>
     <includes refid="Flav__reader_8hpp" local="yes">gambit/FlavBit/Flav_reader.hpp</includes>
     <incdepgraph>
-      <node id="110">
+      <node id="111">
         <label>gambit/Backends/backend_info.hpp</label>
         <link refid="backend__info_8hpp"/>
         <childnode refid="9" relation="include">
@@ -18,42 +18,30 @@
         <childnode refid="62" relation="include">
         </childnode>
       </node>
-      <node id="109">
+      <node id="110">
         <label>gambit/Backends/backend_singleton.hpp</label>
         <link refid="backend__singleton_8hpp"/>
-        <childnode refid="110" relation="include">
+        <childnode refid="111" relation="include">
         </childnode>
       </node>
       <node id="106">
         <label>gambit/Backends/default_bossed_versions.hpp</label>
         <link refid="default__bossed__versions_8hpp"/>
       </node>
-      <node id="107">
-        <label>gambit/Backends/mathematica_variable.hpp</label>
-        <link refid="mathematica__variable_8hpp"/>
-        <childnode refid="108" relation="include">
-        </childnode>
-        <childnode refid="109" relation="include">
-        </childnode>
-        <childnode refid="56" relation="include">
-        </childnode>
-        <childnode refid="111" relation="include">
-        </childnode>
-      </node>
-      <node id="113">
+      <node id="109">
         <label>gambit/Backends/python_helpers.hpp</label>
         <link refid="python__helpers_8hpp"/>
       </node>
-      <node id="112">
+      <node id="107">
         <label>gambit/Backends/python_variable.hpp</label>
         <link refid="python__variable_8hpp"/>
         <childnode refid="56" relation="include">
         </childnode>
         <childnode refid="108" relation="include">
         </childnode>
-        <childnode refid="113" relation="include">
-        </childnode>
         <childnode refid="109" relation="include">
+        </childnode>
+        <childnode refid="110" relation="include">
         </childnode>
       </node>
       <node id="98">
@@ -155,11 +143,11 @@
         </childnode>
         <childnode refid="54" relation="include">
         </childnode>
-        <childnode refid="115" relation="include">
+        <childnode refid="113" relation="include">
         </childnode>
         <childnode refid="66" relation="include">
         </childnode>
-        <childnode refid="109" relation="include">
+        <childnode refid="110" relation="include">
         </childnode>
       </node>
       <node id="97">
@@ -305,8 +293,6 @@
         </childnode>
         <childnode refid="112" relation="include">
         </childnode>
-        <childnode refid="114" relation="include">
-        </childnode>
       </node>
       <node id="88">
         <label>gambit/Elements/slhaea_spec_helpers.hpp</label>
@@ -400,34 +386,34 @@
         <childnode refid="9" relation="include">
         </childnode>
       </node>
-      <node id="117">
+      <node id="115">
         <label>gambit/FlavBit/FlavBit_rollcall.hpp</label>
         <link refid="FlavBit__rollcall_8hpp"/>
-        <childnode refid="118" relation="include">
+        <childnode refid="116" relation="include">
         </childnode>
       </node>
-      <node id="118">
+      <node id="116">
         <label>gambit/FlavBit/FlavBit_types.hpp</label>
         <link refid="FlavBit__types_8hpp"/>
         <childnode refid="16" relation="include">
         </childnode>
         <childnode refid="11" relation="include">
         </childnode>
-        <childnode refid="119" relation="include">
+        <childnode refid="117" relation="include">
         </childnode>
       </node>
-      <node id="120">
+      <node id="118">
         <label>gambit/FlavBit/Flav_reader.hpp</label>
         <link refid="Flav__reader_8hpp"/>
         <childnode refid="62" relation="include">
         </childnode>
-        <childnode refid="118" relation="include">
+        <childnode refid="116" relation="include">
         </childnode>
         <childnode refid="15" relation="include">
         </childnode>
-        <childnode refid="121" relation="include">
-        </childnode>
         <childnode refid="119" relation="include">
+        </childnode>
+        <childnode refid="117" relation="include">
         </childnode>
       </node>
       <node id="1">
@@ -435,9 +421,9 @@
         <link refid="Flav__reader_8cpp"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="117" relation="include">
+        <childnode refid="115" relation="include">
         </childnode>
-        <childnode refid="120" relation="include">
+        <childnode refid="118" relation="include">
         </childnode>
       </node>
       <node id="43">
@@ -624,10 +610,10 @@
         <label>gambit/Utils/stringify.hpp</label>
         <link refid="stringify_8hpp"/>
       </node>
-      <node id="115">
+      <node id="113">
         <label>gambit/Utils/threadsafe_rng.hpp</label>
         <link refid="threadsafe__rng_8hpp"/>
-        <childnode refid="116" relation="include">
+        <childnode refid="114" relation="include">
         </childnode>
         <childnode refid="21" relation="include">
         </childnode>
@@ -797,9 +783,6 @@
       <node id="58">
         <label>boost/algorithm/string/classification.hpp</label>
       </node>
-      <node id="111">
-        <label>boost/algorithm/string/replace.hpp</label>
-      </node>
       <node id="57">
         <label>boost/algorithm/string/split.hpp</label>
       </node>
@@ -812,10 +795,10 @@
       <node id="101">
         <label>boost/enable_shared_from_this.hpp</label>
       </node>
-      <node id="121">
+      <node id="119">
         <label>boost/numeric/ublas/lu.hpp</label>
       </node>
-      <node id="119">
+      <node id="117">
         <label>boost/numeric/ublas/matrix.hpp</label>
       </node>
       <node id="37">
@@ -899,7 +882,7 @@
       <node id="45">
         <label>fstream</label>
       </node>
-      <node id="114">
+      <node id="112">
         <label>gambit/Backends/backend_types_rollcall.hpp</label>
       </node>
       <node id="56">
@@ -935,7 +918,7 @@
       <node id="68">
         <label>ostream</label>
       </node>
-      <node id="116">
+      <node id="114">
         <label>random</label>
       </node>
       <node id="10">
@@ -1141,7 +1124,7 @@
 <codeline lineno="132"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Print<sp/>a<sp/>measurement<sp/>previously<sp/>read<sp/>in<sp/>from<sp/>the<sp/>database</highlight></codeline>
 <codeline lineno="133"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>Flav_reader::print(Measurement<sp/>mes)</highlight></codeline>
 <codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;###################<sp/>Mesurement&quot;</highlight><highlight class="normal">&lt;&lt;endl;</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;###################<sp/>Measurement&quot;</highlight><highlight class="normal">&lt;&lt;endl;</highlight></codeline>
 <codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;Name:<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;mes.name&lt;&lt;endl;</highlight></codeline>
 <codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::cout&lt;&lt;(mes.is_limit<sp/>?<sp/></highlight><highlight class="stringliteral">&quot;Limit&quot;</highlight><highlight class="normal"><sp/>:<sp/></highlight><highlight class="stringliteral">&quot;Value&quot;</highlight><highlight class="normal">)&lt;&lt;</highlight><highlight class="stringliteral">&quot;:<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;mes.exp_value&lt;&lt;endl;</highlight></codeline>
 <codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>std::cout&lt;&lt;</highlight><highlight class="stringliteral">&quot;Stat/sys<sp/>errror:<sp/>&quot;</highlight><highlight class="normal">&lt;&lt;<sp/>mes.exp_stat_error&lt;&lt;</highlight><highlight class="stringliteral">&quot;/&quot;</highlight><highlight class="normal">&lt;&lt;mes.exp_sys_error&lt;&lt;endl;</highlight></codeline>
@@ -1189,7 +1172,7 @@
 <codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="181"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(debug)<sp/><ref refid="classGambit_1_1FlavBit_1_1Flav__reader_1af1ed9cb1611913c0612ac738da4a7383" kindref="member">print_matrix</ref>(M_cor_cov,</highlight><highlight class="stringliteral">&quot;Covariance<sp/>Matrix:&quot;</highlight><highlight class="normal">);</highlight></codeline>
 <codeline lineno="182"><highlight class="normal"></highlight></codeline>
-<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Construct<sp/>the<sp/>the<sp/>measurement<sp/>vector</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Construct<sp/>the<sp/>measurement<sp/>vector</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>M_measurements=<sp/>boost::numeric::ublas::matrix&lt;double&gt;<sp/>(number_measurements,1);</highlight></codeline>
 <codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i=0;<sp/>i&lt;number_measurements;++i)</highlight></codeline>
 <codeline lineno="186"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>

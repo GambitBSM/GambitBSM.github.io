@@ -342,7 +342,7 @@ namespace Gambit
 
         /// Same for overloaded function
         template<typename T>
-        void _print(T const& in, const std::string& label,
+        void _print(T const& /*in*/, const std::string& label,
                     const uint rank,
                     const ulong pointID)
         {
@@ -597,4 +597,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:34 +0000
+Updated on 2026-11-03 at 14:50:45 +0000

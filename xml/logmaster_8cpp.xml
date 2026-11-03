@@ -1016,171 +1016,172 @@
 <codeline lineno="532"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>In<sp/>the<sp/>end,<sp/>this<sp/>function<sp/>should<sp/>construct<sp/>all<sp/>the<sp/>Message<sp/>structs.</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="533"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LogMaster::send(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>message,<sp/>std::set&lt;int&gt;&amp;<sp/>tags)</highlight></codeline>
 <codeline lineno="534"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="535"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>LogMaster<sp/>keeps<sp/>an<sp/>internal<sp/>map<sp/>of<sp/>all<sp/>the<sp/>logging<sp/>objects,<sp/>where<sp/>the<sp/>keys<sp/>are<sp/>sets<sp/>of<sp/>&apos;LogTag&apos;s,<sp/>constructed<sp/>according<sp/>to<sp/>the<sp/>inifile.<sp/>So<sp/>to<sp/>figure<sp/>out<sp/>where<sp/>the<sp/>message<sp/>has<sp/>to<sp/>go,<sp/>we<sp/>just<sp/>compare<sp/>the<sp/>&quot;tags&quot;<sp/>to<sp/>these<sp/>keys;<sp/>if<sp/>any<sp/>of<sp/>these<sp/>keys<sp/>are<sp/>a<sp/>subset<sp/>of<sp/>our<sp/>tags,<sp/>then<sp/>we<sp/>send<sp/>the<sp/>message<sp/>to<sp/>that<sp/>LogHub.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="536"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Well<sp/>almost.<sp/>We<sp/>have<sp/>to<sp/>seperate<sp/>out<sp/>the<sp/>components<sp/>first,<sp/>because<sp/>we<sp/>can<sp/>&quot;send&quot;<sp/>a<sp/>message<sp/>to<sp/>multiple<sp/>components<sp/>at<sp/>once,<sp/>but<sp/>a<sp/>direction<sp/>command<sp/>will<sp/>never<sp/>include<sp/>two<sp/>component<sp/>tags<sp/>(it<sp/>is<sp/>an<sp/>error<sp/>if<sp/>it<sp/>does).</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="537"><highlight class="normal"></highlight></codeline>
-<codeline lineno="538"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Testing...</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="539"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//std::cout&lt;&lt;&quot;msg:<sp/>&quot;&lt;&lt;message&lt;&lt;std::endl;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="540"><highlight class="normal"></highlight></codeline>
-<codeline lineno="541"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Preliminary<sp/>stuff</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="542"><highlight class="normal"></highlight></codeline>
-<codeline lineno="543"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Get<sp/>thread<sp/>number</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="544"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>omp_get_thread_num();</highlight></codeline>
-<codeline lineno="545"><highlight class="normal"></highlight></codeline>
-<codeline lineno="546"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Automatically<sp/>add<sp/>the<sp/>&quot;def&quot;<sp/>(Default)<sp/>tag<sp/>so<sp/>that<sp/>the<sp/>message<sp/>definitely<sp/>tries<sp/>to<sp/>go<sp/>somewhere</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="547"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tags.insert(def);</highlight></codeline>
-<codeline lineno="548"><highlight class="normal"></highlight></codeline>
-<codeline lineno="549"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Automatically<sp/>add<sp/>the<sp/>tags<sp/>for<sp/>the<sp/>&quot;current&quot;<sp/>module<sp/>and<sp/>backend<sp/>to<sp/>the<sp/>tags<sp/>list</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="550"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(current_module[i]<sp/>!=<sp/>-1)</highlight></codeline>
-<codeline lineno="551"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="552"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//std::cout&lt;&lt;&quot;current_module=&quot;&lt;&lt;current_module&lt;&lt;&quot;;<sp/>adding<sp/>tag<sp/>&quot;&lt;&lt;tag2str()[current_module]&lt;&lt;std::endl;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="553"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tags.insert(current_module[i]);</highlight></codeline>
-<codeline lineno="554"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="555"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(current_backend[i]<sp/>!=<sp/>-1)</highlight></codeline>
-<codeline lineno="556"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="557"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//std::cout&lt;&lt;&quot;current_backend=&quot;&lt;&lt;current_backend&lt;&lt;&quot;;<sp/>adding<sp/>tag<sp/>&quot;&lt;&lt;tag2str()[current_backend]&lt;&lt;std::endl;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="558"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tags.insert(current_backend[i]);</highlight></codeline>
-<codeline lineno="559"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="560"><highlight class="normal"></highlight></codeline>
-<codeline lineno="561"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>If<sp/>the<sp/>loggers<sp/>have<sp/>not<sp/>yet<sp/>been<sp/>initialised,<sp/>buffer<sp/>the<sp/>message</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="562"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(omp_get_level()!=0<sp/>or<sp/>not<sp/>loggers_readyQ)</highlight></codeline>
-<codeline lineno="563"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="564"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>backlog[i].emplace_back(message,tags);<sp/></highlight><highlight class="comment">//time<sp/>stamp<sp/>automatically<sp/>added<sp/>NOW</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="565"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="566"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="567"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="568"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(omp_get_level()==0)<sp/>empty_backlog();</highlight></codeline>
-<codeline lineno="569"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>finalsend(Message(message,tags));<sp/></highlight><highlight class="comment">//time<sp/>stamp<sp/>automatically<sp/>added<sp/>NOW</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="570"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="571"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>LogHub::send</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="572"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="573"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Version<sp/>of<sp/>send<sp/>function<sp/>used<sp/>by<sp/>buffer<sp/>dump;<sp/>skips<sp/>all<sp/>the<sp/>tag<sp/>modification<sp/>stuff</highlight></codeline>
-<codeline lineno="574"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LogMaster::finalsend(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Message&amp;<sp/>mail)</highlight></codeline>
-<codeline lineno="575"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="576"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Check<sp/>the<sp/>&apos;ignore&apos;<sp/>set;<sp/>if<sp/>any<sp/>of<sp/>the<sp/>specified<sp/>tags<sp/>are<sp/>in<sp/>this<sp/>set,<sp/>then<sp/>do<sp/>nothing<sp/>more,<sp/>i.e.<sp/>ignore<sp/>the<sp/>message.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="577"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(need<sp/>to<sp/>add<sp/>extra<sp/>stuff<sp/>to<sp/>ignore<sp/>modules<sp/>and<sp/>backends,<sp/>since<sp/>these<sp/>cannot<sp/>be<sp/>normal<sp/>tags)</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="578"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Also<sp/>ignore<sp/>the<sp/>message<sp/>if<sp/>logs<sp/>have<sp/>been<sp/>&apos;silenced&apos;.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="579"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>silenced<sp/>or<sp/>not<sp/>Utils::is_disjoint(mail.tags,<sp/>ignore)<sp/>)</highlight></codeline>
-<codeline lineno="580"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="581"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//std::cout&lt;&lt;&quot;Ignoring<sp/>message...&quot;&lt;&lt;std::endl;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="582"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="583"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="584"><highlight class="normal"></highlight></codeline>
-<codeline lineno="585"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>If<sp/>the<sp/>&quot;cout&quot;<sp/>tag<sp/>is<sp/>seen,<sp/>repeat<sp/>the<sp/>message<sp/>to<sp/>stdout</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="586"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(mail.tags.find(repeat_to_cout)<sp/>!=<sp/>mail.tags.end())<sp/>std::cout<sp/>&lt;&lt;<sp/>mail.message<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
-<codeline lineno="587"><highlight class="normal"></highlight></codeline>
-<codeline lineno="588"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>If<sp/>the<sp/>&quot;cerr&quot;<sp/>tag<sp/>is<sp/>seen,<sp/>repeat<sp/>the<sp/>message<sp/>to<sp/>sterr</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="589"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(mail.tags.find(repeat_to_cerr)<sp/>!=<sp/>mail.tags.end())<sp/>std::cerr<sp/>&lt;&lt;<sp/>mail.message<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
-<codeline lineno="590"><highlight class="normal"></highlight></codeline>
-<codeline lineno="591"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Sort<sp/>the<sp/>tags</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="592"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>SortedMessage<sp/>sortedmsg(mail);</highlight></codeline>
-<codeline lineno="593"><highlight class="normal"></highlight></codeline>
-<codeline lineno="594"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Main<sp/>loop<sp/>for<sp/>message<sp/>distribution</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="595"><highlight class="normal"></highlight></codeline>
-<codeline lineno="596"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Loop<sp/>through<sp/>the<sp/>map<sp/>of<sp/>loggers<sp/>and<sp/>see<sp/>if<sp/>any<sp/>of<sp/>them<sp/>match<sp/>subsets<sp/>of<sp/>&apos;key&apos;.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="597"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(std::map&lt;std::set&lt;int&gt;,BaseLogger*&gt;::iterator<sp/>keyvalue<sp/>=<sp/>loggers.begin();<sp/>keyvalue<sp/>!=<sp/>loggers.end();<sp/>++keyvalue)</highlight></codeline>
-<codeline lineno="598"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="599"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>set1<sp/>includes<sp/>set2</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="600"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>std::includes(mail.tags.begin(),<sp/>mail.tags.end(),</highlight></codeline>
-<codeline lineno="601"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(keyvalue-&gt;first).begin(),<sp/>(keyvalue-&gt;first).end())<sp/>)</highlight></codeline>
-<codeline lineno="602"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="603"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Matching<sp/>logger<sp/>object<sp/>found!<sp/>Send<sp/>it<sp/>the<sp/>sorted<sp/>message<sp/>object</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="604"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(keyvalue-&gt;second)-&gt;write(sortedmsg);</highlight></codeline>
-<codeline lineno="605"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="606"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="comment">//end<sp/>loop<sp/>over<sp/>loggers</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="607"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>LogMaster::finalsend</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="608"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="609"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>stringstream<sp/>overloads...</highlight></codeline>
-<codeline lineno="610"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LogMaster::send(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::ostringstream&amp;<sp/>message,<sp/>std::set&lt;LogTag&gt;&amp;<sp/>tags)</highlight></codeline>
-<codeline lineno="611"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="612"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>send(message.str(),<sp/>tags);</highlight></codeline>
-<codeline lineno="613"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="614"><highlight class="normal"></highlight></codeline>
-<codeline lineno="615"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LogMaster::send(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::ostringstream&amp;<sp/>message,<sp/>std::set&lt;int&gt;&amp;<sp/>tags)</highlight></codeline>
-<codeline lineno="616"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="617"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>send(message.str(),<sp/>tags);</highlight></codeline>
-<codeline lineno="618"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="619"><highlight class="normal"></highlight></codeline>
-<codeline lineno="620"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LogMaster::entering_module(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i)</highlight></codeline>
-<codeline lineno="621"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="622"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>init_memory();</highlight></codeline>
-<codeline lineno="623"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>current_module[omp_get_thread_num()]<sp/>=<sp/>i;</highlight></codeline>
-<codeline lineno="624"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="625"><highlight class="normal"></highlight></codeline>
-<codeline lineno="626"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LogMaster::leaving_module()</highlight></codeline>
-<codeline lineno="627"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="628"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>init_memory();</highlight></codeline>
-<codeline lineno="629"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>current_module[omp_get_thread_num()]<sp/>=<sp/>-1;</highlight></codeline>
-<codeline lineno="630"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>leaving_backend();</highlight></codeline>
-<codeline lineno="631"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="632"><highlight class="normal"></highlight></codeline>
-<codeline lineno="633"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LogMaster::entering_backend(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i)</highlight></codeline>
-<codeline lineno="634"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="635"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>init_memory();</highlight></codeline>
-<codeline lineno="636"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>current_backend[omp_get_thread_num()]<sp/>=<sp/>i;</highlight></codeline>
-<codeline lineno="637"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">&lt;&lt;</highlight><highlight class="stringliteral">&quot;Setting<sp/>current_backend=&quot;</highlight><highlight class="normal">&lt;&lt;i;</highlight></codeline>
-<codeline lineno="638"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">&lt;&lt;logs&lt;&lt;debug&lt;&lt;<ref refid="namespaceGambit_1aed4726aee167bc7cf497e993d6318514" kindref="member">EOM</ref>;</highlight></codeline>
-<codeline lineno="639"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="640"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LogMaster::leaving_backend()</highlight></codeline>
-<codeline lineno="641"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="642"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>init_memory();</highlight></codeline>
-<codeline lineno="643"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cb_test;</highlight></codeline>
-<codeline lineno="644"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cb_test<sp/>=<sp/>current_backend[omp_get_thread_num()];</highlight></codeline>
-<codeline lineno="645"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(cb_test<sp/>==<sp/>-1)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="646"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>current_backend[omp_get_thread_num()]<sp/>=<sp/>-1;</highlight></codeline>
-<codeline lineno="647"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">&lt;&lt;</highlight><highlight class="stringliteral">&quot;Restoring<sp/>current_backend=&quot;</highlight><highlight class="normal">&lt;&lt;-1;</highlight></codeline>
-<codeline lineno="648"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">&lt;&lt;logs&lt;&lt;debug&lt;&lt;<ref refid="namespaceGambit_1aed4726aee167bc7cf497e993d6318514" kindref="member">EOM</ref>;</highlight></codeline>
-<codeline lineno="649"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="650"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="651"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Handle<sp/>LogTag<sp/>input</highlight></codeline>
-<codeline lineno="652"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LogMaster::input(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>LogTag&amp;<sp/>tag)</highlight></codeline>
-<codeline lineno="653"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="654"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>init_memory();</highlight></codeline>
-<codeline lineno="655"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>streamtags[omp_get_thread_num()].insert(tag);</highlight></codeline>
-<codeline lineno="656"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="657"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="658"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Handle<sp/>end<sp/>of<sp/>message<sp/>character</highlight></codeline>
-<codeline lineno="659"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LogMaster::input(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>endofmessage&amp;)</highlight></codeline>
-<codeline lineno="660"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="661"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>init_memory();</highlight></codeline>
-<codeline lineno="662"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>omp_get_thread_num();</highlight></codeline>
-<codeline lineno="663"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Collect<sp/>the<sp/>stream<sp/>and<sp/>tags,<sp/>then<sp/>send<sp/>the<sp/>message</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="664"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>send(stream[i].<ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>(),<sp/>streamtags[i]);</highlight></codeline>
-<codeline lineno="665"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Clear<sp/>stream<sp/>and<sp/>tags<sp/>for<sp/>next<sp/>message;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="666"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stream[i].str(std::string());<sp/></highlight><highlight class="comment">//TODO:<sp/>check<sp/>that<sp/>this<sp/>works<sp/>properly<sp/>on<sp/>all<sp/>compilers...</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="667"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>streamtags[i].clear();</highlight></codeline>
-<codeline lineno="668"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="669"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="670"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Handle<sp/>strings</highlight></codeline>
-<codeline lineno="671"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LogMaster::input(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>in)</highlight></codeline>
-<codeline lineno="672"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="673"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>init_memory();</highlight></codeline>
-<codeline lineno="674"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stream[omp_get_thread_num()]<sp/>&lt;&lt;<sp/>in;</highlight></codeline>
-<codeline lineno="675"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="676"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="677"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Handle<sp/>various<sp/>stream<sp/>manipulators</highlight></codeline>
-<codeline lineno="678"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LogMaster::input(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>manip1<sp/>fp)</highlight></codeline>
-<codeline lineno="679"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="680"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>init_memory();</highlight></codeline>
-<codeline lineno="681"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stream[omp_get_thread_num()]<sp/>&lt;&lt;<sp/>fp;</highlight></codeline>
-<codeline lineno="682"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="683"><highlight class="normal"></highlight></codeline>
-<codeline lineno="684"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LogMaster::input(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>manip2<sp/>fp)</highlight></codeline>
-<codeline lineno="685"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="686"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>init_memory();</highlight></codeline>
-<codeline lineno="687"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stream[omp_get_thread_num()]<sp/>&lt;&lt;<sp/>fp;</highlight></codeline>
-<codeline lineno="688"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="689"><highlight class="normal"></highlight></codeline>
-<codeline lineno="690"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LogMaster::input(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>manip3<sp/>fp)</highlight></codeline>
-<codeline lineno="691"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="692"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>init_memory();</highlight></codeline>
-<codeline lineno="693"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stream[omp_get_thread_num()]<sp/>&lt;&lt;<sp/>fp;</highlight></codeline>
-<codeline lineno="694"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="695"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="696"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>@}</highlight></codeline>
-<codeline lineno="697"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="698"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="comment">//end<sp/>namespace<sp/>Logging</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="699"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>namespace<sp/>Gambit</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="535"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>LogMaster<sp/>keeps<sp/>an<sp/>internal<sp/>map<sp/>of<sp/>all<sp/>the<sp/>logging<sp/>objects,<sp/>where<sp/>the<sp/>keys<sp/>are<sp/>sets<sp/>of<sp/>&apos;LogTag&apos;s,<sp/>constructed<sp/>according<sp/>to<sp/>the<sp/>inifile.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="536"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>So<sp/>to<sp/>figure<sp/>out<sp/>where<sp/>the<sp/>message<sp/>has<sp/>to<sp/>go,<sp/>we<sp/>just<sp/>compare<sp/>the<sp/>&quot;tags&quot;<sp/>to<sp/>these<sp/>keys;<sp/>if<sp/>any<sp/>of<sp/>these<sp/>keys<sp/>are<sp/>a<sp/>subset<sp/>of<sp/>our<sp/>tags,<sp/>then<sp/>we<sp/>send<sp/>the<sp/>message<sp/>to<sp/>that<sp/>LogHub.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="537"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Well<sp/>almost.<sp/>We<sp/>have<sp/>to<sp/>separate<sp/>out<sp/>the<sp/>components<sp/>first,<sp/>because<sp/>we<sp/>can<sp/>&quot;send&quot;<sp/>a<sp/>message<sp/>to<sp/>multiple<sp/>components<sp/>at<sp/>once,<sp/>but<sp/>a<sp/>direction<sp/>command<sp/>will<sp/>never<sp/>include<sp/>two<sp/>component<sp/>tags<sp/>(it<sp/>is<sp/>an<sp/>error<sp/>if<sp/>it<sp/>does).</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="538"><highlight class="normal"></highlight></codeline>
+<codeline lineno="539"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Testing...</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="540"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//std::cout&lt;&lt;&quot;msg:<sp/>&quot;&lt;&lt;message&lt;&lt;std::endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="541"><highlight class="normal"></highlight></codeline>
+<codeline lineno="542"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Preliminary<sp/>stuff</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="543"><highlight class="normal"></highlight></codeline>
+<codeline lineno="544"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Get<sp/>thread<sp/>number</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="545"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>omp_get_thread_num();</highlight></codeline>
+<codeline lineno="546"><highlight class="normal"></highlight></codeline>
+<codeline lineno="547"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Automatically<sp/>add<sp/>the<sp/>&quot;def&quot;<sp/>(Default)<sp/>tag<sp/>so<sp/>that<sp/>the<sp/>message<sp/>definitely<sp/>tries<sp/>to<sp/>go<sp/>somewhere</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="548"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tags.insert(def);</highlight></codeline>
+<codeline lineno="549"><highlight class="normal"></highlight></codeline>
+<codeline lineno="550"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Automatically<sp/>add<sp/>the<sp/>tags<sp/>for<sp/>the<sp/>&quot;current&quot;<sp/>module<sp/>and<sp/>backend<sp/>to<sp/>the<sp/>tags<sp/>list</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="551"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(current_module[i]<sp/>!=<sp/>-1)</highlight></codeline>
+<codeline lineno="552"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="553"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//std::cout&lt;&lt;&quot;current_module=&quot;&lt;&lt;current_module&lt;&lt;&quot;;<sp/>adding<sp/>tag<sp/>&quot;&lt;&lt;tag2str()[current_module]&lt;&lt;std::endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="554"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tags.insert(current_module[i]);</highlight></codeline>
+<codeline lineno="555"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="556"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(current_backend[i]<sp/>!=<sp/>-1)</highlight></codeline>
+<codeline lineno="557"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="558"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//std::cout&lt;&lt;&quot;current_backend=&quot;&lt;&lt;current_backend&lt;&lt;&quot;;<sp/>adding<sp/>tag<sp/>&quot;&lt;&lt;tag2str()[current_backend]&lt;&lt;std::endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="559"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>tags.insert(current_backend[i]);</highlight></codeline>
+<codeline lineno="560"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="561"><highlight class="normal"></highlight></codeline>
+<codeline lineno="562"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>If<sp/>the<sp/>loggers<sp/>have<sp/>not<sp/>yet<sp/>been<sp/>initialised,<sp/>buffer<sp/>the<sp/>message</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="563"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(omp_get_level()!=0<sp/>or<sp/>not<sp/>loggers_readyQ)</highlight></codeline>
+<codeline lineno="564"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="565"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>backlog[i].emplace_back(message,tags);<sp/></highlight><highlight class="comment">//time<sp/>stamp<sp/>automatically<sp/>added<sp/>NOW</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="566"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="567"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="568"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="569"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(omp_get_level()==0)<sp/>empty_backlog();</highlight></codeline>
+<codeline lineno="570"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>finalsend(Message(message,tags));<sp/></highlight><highlight class="comment">//time<sp/>stamp<sp/>automatically<sp/>added<sp/>NOW</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="571"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="572"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>LogHub::send</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="573"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="574"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Version<sp/>of<sp/>send<sp/>function<sp/>used<sp/>by<sp/>buffer<sp/>dump;<sp/>skips<sp/>all<sp/>the<sp/>tag<sp/>modification<sp/>stuff</highlight></codeline>
+<codeline lineno="575"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LogMaster::finalsend(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>Message&amp;<sp/>mail)</highlight></codeline>
+<codeline lineno="576"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="577"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Check<sp/>the<sp/>&apos;ignore&apos;<sp/>set;<sp/>if<sp/>any<sp/>of<sp/>the<sp/>specified<sp/>tags<sp/>are<sp/>in<sp/>this<sp/>set,<sp/>then<sp/>do<sp/>nothing<sp/>more,<sp/>i.e.<sp/>ignore<sp/>the<sp/>message.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="578"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(need<sp/>to<sp/>add<sp/>extra<sp/>stuff<sp/>to<sp/>ignore<sp/>modules<sp/>and<sp/>backends,<sp/>since<sp/>these<sp/>cannot<sp/>be<sp/>normal<sp/>tags)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="579"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Also<sp/>ignore<sp/>the<sp/>message<sp/>if<sp/>logs<sp/>have<sp/>been<sp/>&apos;silenced&apos;.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="580"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>silenced<sp/>or<sp/>not<sp/>Utils::is_disjoint(mail.tags,<sp/>ignore)<sp/>)</highlight></codeline>
+<codeline lineno="581"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="582"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//std::cout&lt;&lt;&quot;Ignoring<sp/>message...&quot;&lt;&lt;std::endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="583"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="584"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="585"><highlight class="normal"></highlight></codeline>
+<codeline lineno="586"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>If<sp/>the<sp/>&quot;cout&quot;<sp/>tag<sp/>is<sp/>seen,<sp/>repeat<sp/>the<sp/>message<sp/>to<sp/>stdout</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="587"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(mail.tags.find(repeat_to_cout)<sp/>!=<sp/>mail.tags.end())<sp/>std::cout<sp/>&lt;&lt;<sp/>mail.message<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="588"><highlight class="normal"></highlight></codeline>
+<codeline lineno="589"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>If<sp/>the<sp/>&quot;cerr&quot;<sp/>tag<sp/>is<sp/>seen,<sp/>repeat<sp/>the<sp/>message<sp/>to<sp/>sterr</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="590"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(mail.tags.find(repeat_to_cerr)<sp/>!=<sp/>mail.tags.end())<sp/>std::cerr<sp/>&lt;&lt;<sp/>mail.message<sp/>&lt;&lt;<sp/>std::endl;</highlight></codeline>
+<codeline lineno="591"><highlight class="normal"></highlight></codeline>
+<codeline lineno="592"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Sort<sp/>the<sp/>tags</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="593"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>SortedMessage<sp/>sortedmsg(mail);</highlight></codeline>
+<codeline lineno="594"><highlight class="normal"></highlight></codeline>
+<codeline lineno="595"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Main<sp/>loop<sp/>for<sp/>message<sp/>distribution</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="596"><highlight class="normal"></highlight></codeline>
+<codeline lineno="597"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Loop<sp/>through<sp/>the<sp/>map<sp/>of<sp/>loggers<sp/>and<sp/>see<sp/>if<sp/>any<sp/>of<sp/>them<sp/>match<sp/>subsets<sp/>of<sp/>&apos;key&apos;.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="598"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal">(std::map&lt;std::set&lt;int&gt;,BaseLogger*&gt;::iterator<sp/>keyvalue<sp/>=<sp/>loggers.begin();<sp/>keyvalue<sp/>!=<sp/>loggers.end();<sp/>++keyvalue)</highlight></codeline>
+<codeline lineno="599"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="600"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>set1<sp/>includes<sp/>set2</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="601"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal">(<sp/>std::includes(mail.tags.begin(),<sp/>mail.tags.end(),</highlight></codeline>
+<codeline lineno="602"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(keyvalue-&gt;first).begin(),<sp/>(keyvalue-&gt;first).end())<sp/>)</highlight></codeline>
+<codeline lineno="603"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="604"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Matching<sp/>logger<sp/>object<sp/>found!<sp/>Send<sp/>it<sp/>the<sp/>sorted<sp/>message<sp/>object</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="605"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(keyvalue-&gt;second)-&gt;write(sortedmsg);</highlight></codeline>
+<codeline lineno="606"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="607"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="comment">//end<sp/>loop<sp/>over<sp/>loggers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="608"><highlight class="normal"><sp/><sp/><sp/><sp/>}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>LogMaster::finalsend</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="609"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="610"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>stringstream<sp/>overloads...</highlight></codeline>
+<codeline lineno="611"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LogMaster::send(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::ostringstream&amp;<sp/>message,<sp/>std::set&lt;LogTag&gt;&amp;<sp/>tags)</highlight></codeline>
+<codeline lineno="612"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="613"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>send(message.str(),<sp/>tags);</highlight></codeline>
+<codeline lineno="614"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="615"><highlight class="normal"></highlight></codeline>
+<codeline lineno="616"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LogMaster::send(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::ostringstream&amp;<sp/>message,<sp/>std::set&lt;int&gt;&amp;<sp/>tags)</highlight></codeline>
+<codeline lineno="617"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="618"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>send(message.str(),<sp/>tags);</highlight></codeline>
+<codeline lineno="619"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="620"><highlight class="normal"></highlight></codeline>
+<codeline lineno="621"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LogMaster::entering_module(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i)</highlight></codeline>
+<codeline lineno="622"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="623"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>init_memory();</highlight></codeline>
+<codeline lineno="624"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>current_module[omp_get_thread_num()]<sp/>=<sp/>i;</highlight></codeline>
+<codeline lineno="625"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="626"><highlight class="normal"></highlight></codeline>
+<codeline lineno="627"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LogMaster::leaving_module()</highlight></codeline>
+<codeline lineno="628"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="629"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>init_memory();</highlight></codeline>
+<codeline lineno="630"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>current_module[omp_get_thread_num()]<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="631"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>leaving_backend();</highlight></codeline>
+<codeline lineno="632"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="633"><highlight class="normal"></highlight></codeline>
+<codeline lineno="634"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LogMaster::entering_backend(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i)</highlight></codeline>
+<codeline lineno="635"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="636"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>init_memory();</highlight></codeline>
+<codeline lineno="637"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>current_backend[omp_get_thread_num()]<sp/>=<sp/>i;</highlight></codeline>
+<codeline lineno="638"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">&lt;&lt;</highlight><highlight class="stringliteral">&quot;Setting<sp/>current_backend=&quot;</highlight><highlight class="normal">&lt;&lt;i;</highlight></codeline>
+<codeline lineno="639"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">&lt;&lt;logs&lt;&lt;debug&lt;&lt;<ref refid="namespaceGambit_1aed4726aee167bc7cf497e993d6318514" kindref="member">EOM</ref>;</highlight></codeline>
+<codeline lineno="640"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="641"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LogMaster::leaving_backend()</highlight></codeline>
+<codeline lineno="642"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="643"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>init_memory();</highlight></codeline>
+<codeline lineno="644"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>cb_test;</highlight></codeline>
+<codeline lineno="645"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cb_test<sp/>=<sp/>current_backend[omp_get_thread_num()];</highlight></codeline>
+<codeline lineno="646"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(cb_test<sp/>==<sp/>-1)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="647"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>current_backend[omp_get_thread_num()]<sp/>=<sp/>-1;</highlight></codeline>
+<codeline lineno="648"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">&lt;&lt;</highlight><highlight class="stringliteral">&quot;Restoring<sp/>current_backend=&quot;</highlight><highlight class="normal">&lt;&lt;-1;</highlight></codeline>
+<codeline lineno="649"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*</highlight><highlight class="keyword">this</highlight><highlight class="normal">&lt;&lt;logs&lt;&lt;debug&lt;&lt;<ref refid="namespaceGambit_1aed4726aee167bc7cf497e993d6318514" kindref="member">EOM</ref>;</highlight></codeline>
+<codeline lineno="650"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="651"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="652"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Handle<sp/>LogTag<sp/>input</highlight></codeline>
+<codeline lineno="653"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LogMaster::input(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>LogTag&amp;<sp/>tag)</highlight></codeline>
+<codeline lineno="654"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="655"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>init_memory();</highlight></codeline>
+<codeline lineno="656"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>streamtags[omp_get_thread_num()].insert(tag);</highlight></codeline>
+<codeline lineno="657"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="658"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="659"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Handle<sp/>end<sp/>of<sp/>message<sp/>character</highlight></codeline>
+<codeline lineno="660"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LogMaster::input(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>endofmessage&amp;)</highlight></codeline>
+<codeline lineno="661"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="662"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>init_memory();</highlight></codeline>
+<codeline lineno="663"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">size_t</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>omp_get_thread_num();</highlight></codeline>
+<codeline lineno="664"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Collect<sp/>the<sp/>stream<sp/>and<sp/>tags,<sp/>then<sp/>send<sp/>the<sp/>message</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="665"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>send(stream[i].<ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref>(),<sp/>streamtags[i]);</highlight></codeline>
+<codeline lineno="666"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Clear<sp/>stream<sp/>and<sp/>tags<sp/>for<sp/>next<sp/>message;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="667"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stream[i].str(std::string());<sp/></highlight><highlight class="comment">//TODO:<sp/>check<sp/>that<sp/>this<sp/>works<sp/>properly<sp/>on<sp/>all<sp/>compilers...</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="668"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>streamtags[i].clear();</highlight></codeline>
+<codeline lineno="669"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="670"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="671"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Handle<sp/>strings</highlight></codeline>
+<codeline lineno="672"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LogMaster::input(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>in)</highlight></codeline>
+<codeline lineno="673"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="674"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>init_memory();</highlight></codeline>
+<codeline lineno="675"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stream[omp_get_thread_num()]<sp/>&lt;&lt;<sp/>in;</highlight></codeline>
+<codeline lineno="676"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="677"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="678"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Handle<sp/>various<sp/>stream<sp/>manipulators</highlight></codeline>
+<codeline lineno="679"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LogMaster::input(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>manip1<sp/>fp)</highlight></codeline>
+<codeline lineno="680"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="681"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>init_memory();</highlight></codeline>
+<codeline lineno="682"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stream[omp_get_thread_num()]<sp/>&lt;&lt;<sp/>fp;</highlight></codeline>
+<codeline lineno="683"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="684"><highlight class="normal"></highlight></codeline>
+<codeline lineno="685"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LogMaster::input(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>manip2<sp/>fp)</highlight></codeline>
+<codeline lineno="686"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="687"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>init_memory();</highlight></codeline>
+<codeline lineno="688"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stream[omp_get_thread_num()]<sp/>&lt;&lt;<sp/>fp;</highlight></codeline>
+<codeline lineno="689"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="690"><highlight class="normal"></highlight></codeline>
+<codeline lineno="691"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>LogMaster::input(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>manip3<sp/>fp)</highlight></codeline>
+<codeline lineno="692"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="693"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>init_memory();</highlight></codeline>
+<codeline lineno="694"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>stream[omp_get_thread_num()]<sp/>&lt;&lt;<sp/>fp;</highlight></codeline>
+<codeline lineno="695"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="696"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="697"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>@}</highlight></codeline>
+<codeline lineno="698"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="699"><highlight class="normal"><sp/><sp/>}<sp/></highlight><highlight class="comment">//end<sp/>namespace<sp/>Logging</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="700"><highlight class="normal">}<sp/></highlight><highlight class="comment">//<sp/>end<sp/>namespace<sp/>Gambit</highlight><highlight class="normal"></highlight></codeline>
     </programlisting>
     <location file="Logs/src/logmaster.cpp"/>
   </compounddef>

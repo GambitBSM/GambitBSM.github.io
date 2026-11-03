@@ -19,6 +19,7 @@ Bind purpose to output vertex.
 | -------------- | -------------- |
 | VertexID | **[vertex](/documentation/code/classes/structgambit_1_1dres_1_1outputvertex/#variable-vertex)**  |
 | [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[purpose](/documentation/code/classes/structgambit_1_1dres_1_1outputvertex/#variable-purpose)**  |
+| bool | **[critical](/documentation/code/classes/structgambit_1_1dres_1_1outputvertex/#variable-critical)**  |
 
 ## Public Attributes Documentation
 
@@ -36,6 +37,13 @@ str purpose;
 ```
 
 
+### variable critical
+
+```
+bool critical;
+```
+
+
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:32 +0000
+Updated on 2026-11-03 at 14:50:44 +0000

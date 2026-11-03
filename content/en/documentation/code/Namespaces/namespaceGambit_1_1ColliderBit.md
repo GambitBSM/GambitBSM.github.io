@@ -16,6 +16,7 @@ description: "[No description available]"
 | **[Gambit::ColliderBit::ATLAS](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1atlas/)** <br>ATLAS-specific efficiency and smearing functions for super fast detector simulation.  |
 | **[Gambit::ColliderBit::CMS](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1cms/)** <br>CMS-specific efficiency and smearing functions for super fast detector simulation.  |
 | **[Gambit::ColliderBit::EventConversion](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1eventconversion/)**  |
+| **[Gambit::ColliderBit::PoissonCalculators](/documentation/code/namespaces/namespacegambit_1_1colliderbit_1_1poissoncalculators/)**  |
 
 ## Classes
 
@@ -29,15 +30,24 @@ description: "[No description available]"
 | class | **[Gambit::ColliderBit::Analysis_ATLAS_13TeV_0LEP_139invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__0lep__139invfb/)** <br>[ATLAS]() Run 2 0-lepton jet+MET SUSY analysis, with 139/fb of data.  |
 | class | **[Gambit::ColliderBit::Analysis_ATLAS_13TeV_0LEP_13invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__0lep__13invfb/)** <br>[ATLAS]() Run 2 0-lepton jet+MET SUSY analysis, with 13/fb of data.  |
 | class | **[Gambit::ColliderBit::Analysis_ATLAS_13TeV_0LEP_36invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__0lep__36invfb/)** <br>[ATLAS]() Run 2 0-lepton jet+MET SUSY analysis, with 36/fb of data.  |
+| class | **[Gambit::ColliderBit::Analysis_ATLAS_13TeV_0LEPStop_139invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__0lepstop__139invfb/)**  |
 | class | **[Gambit::ColliderBit::Analysis_ATLAS_13TeV_0LEPStop_36invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__0lepstop__36invfb/)**  |
 | class | **[Gambit::ColliderBit::Analysis_ATLAS_13TeV_1Lep2b_139invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__1lep2b__139invfb/)**  |
 | class | **[Gambit::ColliderBit::Analysis_ATLAS_13TeV_1LEPStop_36invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__1lepstop__36invfb/)**  |
+| class | **[Gambit::ColliderBit::Analysis_ATLAS_13TeV_1OR3LEP_StopHZ_139invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__1or3lep__stophz__139invfb/)**  |
 | class | **[Gambit::ColliderBit::Analysis_ATLAS_13TeV_2bMET_36invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2bmet__36invfb/)**  |
 | class | **[Gambit::ColliderBit::Analysis_ATLAS_13TeV_2BoostedBosons_139invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2boostedbosons__139invfb/)**  |
+| class | **[Gambit::ColliderBit::Analysis_ATLAS_13TeV_2LEP0JET_EW_139invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2lep0jet__ew__139invfb/)**  |
+| class | **[Gambit::ColliderBit::Analysis_ATLAS_13TeV_2LEPJETS_EW_139invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2lepjets__ew__139invfb/)**  |
+| class | **[Gambit::ColliderBit::Analysis_ATLAS_13TeV_2LEPJETS_RJR_139invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2lepjets__rjr__139invfb/)**  |
+| class | **[Gambit::ColliderBit::Analysis_ATLAS_13TeV_2LEPsoft_139invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2lepsoft__139invfb/)**  |
+| class | **[Gambit::ColliderBit::Analysis_ATLAS_13TeV_2LEPsoft_combined_139invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2lepsoft__combined__139invfb/)**  |
+| class | **[Gambit::ColliderBit::Analysis_ATLAS_13TeV_2LEPsoft_exclusive_139invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2lepsoft__exclusive__139invfb/)**  |
 | class | **[Gambit::ColliderBit::Analysis_ATLAS_13TeV_2LEPStop_139invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2lepstop__139invfb/)**  |
 | class | **[Gambit::ColliderBit::Analysis_ATLAS_13TeV_2LEPStop_36invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2lepstop__36invfb/)**  |
 | class | **[Gambit::ColliderBit::Analysis_ATLAS_13TeV_2LEPStop_exclusive_139invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2lepstop__exclusive__139invfb/)**  |
 | class | **[Gambit::ColliderBit::Analysis_ATLAS_13TeV_2LEPStop_inclusive_139invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2lepstop__inclusive__139invfb/)**  |
+| class | **[Gambit::ColliderBit::Analysis_ATLAS_13TeV_2OR3LEP_139invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2or3lep__139invfb/)**  |
 | class | **[Gambit::ColliderBit::Analysis_ATLAS_13TeV_2OSLEP_chargino_139invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2oslep__chargino__139invfb/)**  |
 | class | **[Gambit::ColliderBit::Analysis_ATLAS_13TeV_2OSLEP_chargino_80invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2oslep__chargino__80invfb/)**  |
 | class | **[Gambit::ColliderBit::Analysis_ATLAS_13TeV_2OSLEP_chargino_binned_139invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2oslep__chargino__binned__139invfb/)**  |
@@ -49,9 +59,16 @@ description: "[No description available]"
 | class | **[Gambit::ColliderBit::Analysis_ATLAS_13TeV_3b_36invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__3b__36invfb/)**  |
 | class | **[Gambit::ColliderBit::Analysis_ATLAS_13TeV_3b_discoverySR_24invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__3b__discoverysr__24invfb/)**  |
 | class | **[Gambit::ColliderBit::Analysis_ATLAS_13TeV_3b_discoverySR_36invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__3b__discoverysr__36invfb/)**  |
+| class | **[Gambit::ColliderBit::Analysis_ATLAS_13TeV_3b_NN_139invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__3b__nn__139invfb/)**  |
 | class | **[Gambit::ColliderBit::Analysis_ATLAS_13TeV_3LEP_139invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__3lep__139invfb/)**  |
+| class | **[Gambit::ColliderBit::Analysis_ATLAS_13TeV_3LEP_eRJR_139invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__3lep__erjr__139invfb/)**  |
+| class | **[Gambit::ColliderBit::Analysis_ATLAS_13TeV_4b_139invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__4b__139invfb/)**  |
+| class | **[Gambit::ColliderBit::Analysis_ATLAS_13TeV_4b_allyears_139invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__4b__allyears__139invfb/)**  |
+| class | **[Gambit::ColliderBit::Analysis_ATLAS_13TeV_4b_discoverySR_139invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__4b__discoverysr__139invfb/)**  |
 | class | **[Gambit::ColliderBit::Analysis_ATLAS_13TeV_4LEP_139invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__4lep__139invfb/)**  |
 | class | **[Gambit::ColliderBit::Analysis_ATLAS_13TeV_4LEP_36invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__4lep__36invfb/)**  |
+| class | **[Gambit::ColliderBit::Analysis_ATLAS_13TeV_bTaus_StopStau_139invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__btaus__stopstau__139invfb/)**  |
+| class | **[Gambit::ColliderBit::Analysis_ATLAS_13TeV_EXOT_TT_WbWb_36invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__exot__tt__wbwb__36invfb/)**  |
 | class | **[Gambit::ColliderBit::Analysis_ATLAS_13TeV_MONOJET_139infb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__monojet__139infb/)** <br>[ATLAS]() Monojet analysis, with 139/fb of data.  |
 | class | **[Gambit::ColliderBit::Analysis_ATLAS_13TeV_MultiLEP_2Lep0Jets_36invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__multilep__2lep0jets__36invfb/)**  |
 | class | **[Gambit::ColliderBit::Analysis_ATLAS_13TeV_MultiLEP_2LepPlusJets_36invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__multilep__2lepplusjets__36invfb/)**  |
@@ -77,15 +94,23 @@ description: "[No description available]"
 | class | **[Gambit::ColliderBit::Analysis_ATLAS_8TeV_2LEPEW_20invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__8tev__2lepew__20invfb/)**  |
 | class | **[Gambit::ColliderBit::Analysis_ATLAS_8TeV_2LEPStop_20invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__8tev__2lepstop__20invfb/)**  |
 | class | **[Gambit::ColliderBit::Analysis_ATLAS_8TeV_3LEPEW_20invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__8tev__3lepew__20invfb/)**  |
+| class | **[Gambit::ColliderBit::Analysis_Baselines](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__baselines/)**  |
 | class | **[Gambit::ColliderBit::Analysis_CMS_13TeV_0LEP_137invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__0lep__137invfb/)** <br>[CMS]() Run 2 0-lepton jet+MET SUSY analysis, with 137/fb of data.  |
 | class | **[Gambit::ColliderBit::Analysis_CMS_13TeV_0LEP_13invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__0lep__13invfb/)** <br>[CMS]() Run 2 0-lepton jet+MET SUSY analysis, with 13/fb of data.  |
 | class | **[Gambit::ColliderBit::Analysis_CMS_13TeV_0LEP_36invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__0lep__36invfb/)** <br>[CMS]() Run 2 0-lepton jet+MET SUSY analysis, with 36/fb of data.  |
+| class | **[Gambit::ColliderBit::Analysis_CMS_13TeV_0LEP_chargino_VV_VH_137invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__0lep__chargino__vv__vh__137invfb/)**  |
+| class | **[Gambit::ColliderBit::Analysis_CMS_13TeV_0LEPStop_137invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__0lepstop__137invfb/)**  |
+| class | **[Gambit::ColliderBit::Analysis_CMS_13TeV_1LEPbb_137invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__1lepbb__137invfb/)**  |
 | class | **[Gambit::ColliderBit::Analysis_CMS_13TeV_1LEPbb_36invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__1lepbb__36invfb/)**  |
 | class | **[Gambit::ColliderBit::Analysis_CMS_13TeV_1LEPStop_36invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__1lepstop__36invfb/)**  |
 | class | **[Gambit::ColliderBit::Analysis_CMS_13TeV_1Photon1Lepton_36invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__1photon1lepton__36invfb/)**  |
 | class | **[Gambit::ColliderBit::Analysis_CMS_13TeV_1Photon1Lepton_emu_combined_36invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__1photon1lepton__emu__combined__36invfb/)**  |
+| class | **[Gambit::ColliderBit::Analysis_CMS_13TeV_2Higgs_4b_neutralino_137invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2higgs__4b__neutralino__137invfb/)**  |
+| class | **[Gambit::ColliderBit::Analysis_CMS_13TeV_2LEPsoft_137invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2lepsoft__137invfb/)**  |
 | class | **[Gambit::ColliderBit::Analysis_CMS_13TeV_2LEPsoft_36invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2lepsoft__36invfb/)**  |
 | class | **[Gambit::ColliderBit::Analysis_CMS_13TeV_2LEPsoft_36invfb_nocovar](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2lepsoft__36invfb__nocovar/)**  |
+| class | **[Gambit::ColliderBit::Analysis_CMS_13TeV_2LEPsoft_ewinos_137invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2lepsoft__ewinos__137invfb/)**  |
+| class | **[Gambit::ColliderBit::Analysis_CMS_13TeV_2LEPsoft_stop_137invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2lepsoft__stop__137invfb/)**  |
 | class | **[Gambit::ColliderBit::Analysis_CMS_13TeV_2LEPsoft_stop_36invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2lepsoft__stop__36invfb/)**  |
 | class | **[Gambit::ColliderBit::Analysis_CMS_13TeV_2LEPsoft_stop_36invfb_nocovar](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2lepsoft__stop__36invfb__nocovar/)**  |
 | class | **[Gambit::ColliderBit::Analysis_CMS_13TeV_2LEPStop_36invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2lepstop__36invfb/)**  |
@@ -94,6 +119,7 @@ description: "[No description available]"
 | class | **[Gambit::ColliderBit::Analysis_CMS_13TeV_2OSLEP_36invfb_nocovar](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2oslep__36invfb__nocovar/)**  |
 | class | **[Gambit::ColliderBit::Analysis_CMS_13TeV_2OSLEP_chargino_stop_36invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2oslep__chargino__stop__36invfb/)**  |
 | class | **[Gambit::ColliderBit::Analysis_CMS_13TeV_2OSLEP_confnote_36invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2oslep__confnote__36invfb/)**  |
+| class | **[Gambit::ColliderBit::Analysis_CMS_13TeV_2OSLEP_EW_Production_137invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2oslep__ew__production__137invfb/)**  |
 | class | **[Gambit::ColliderBit::Analysis_CMS_13TeV_2OSLEP_for_chargino_36invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2oslep__for__chargino__36invfb/)**  |
 | class | **[Gambit::ColliderBit::Analysis_CMS_13TeV_2OSLEP_for_stop_36invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2oslep__for__stop__36invfb/)**  |
 | class | **[Gambit::ColliderBit::Analysis_CMS_13TeV_2OSLEP_Slepton_137invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__2oslep__slepton__137invfb/)**  |
@@ -117,6 +143,7 @@ description: "[No description available]"
 | class | **[Gambit::ColliderBit::Analysis_CMS_13TeV_MultiLEP_Full_36invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__multilep__full__36invfb/)**  |
 | class | **[Gambit::ColliderBit::Analysis_CMS_13TeV_MultiLEP_Full_3Lep_36invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__multilep__full__3lep__36invfb/)**  |
 | class | **[Gambit::ColliderBit::Analysis_CMS_13TeV_MultiLEP_Full_3Lep_rebinned_36invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__multilep__full__3lep__rebinned__36invfb/)**  |
+| class | **[Gambit::ColliderBit::Analysis_CMS_13TeV_Photon_GMSB_137invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__photon__gmsb__137invfb/)**  |
 | class | **[Gambit::ColliderBit::Analysis_CMS_13TeV_Photon_GMSB_36invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__13tev__photon__gmsb__36invfb/)**  |
 | class | **[Gambit::ColliderBit::Analysis_CMS_8TeV_1LEPDMTOP_20invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__8tev__1lepdmtop__20invfb/)**  |
 | class | **[Gambit::ColliderBit::Analysis_CMS_8TeV_2LEPDMTOP_20invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__8tev__2lepdmtop__20invfb/)**  |
@@ -125,11 +152,13 @@ description: "[No description available]"
 | class | **[Gambit::ColliderBit::Analysis_CMS_8TeV_MultiLEP_3Lep_20invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__8tev__multilep__3lep__20invfb/)**  |
 | class | **[Gambit::ColliderBit::Analysis_CMS_8TeV_MultiLEP_4Lep_20invfb](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__cms__8tev__multilep__4lep__20invfb/)**  |
 | class | **[Gambit::ColliderBit::Analysis_Covariance](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__covariance/)** <br>Dummy analysis code with a hard-coded return including a SR covariance matrix.  |
+| class | **[Gambit::ColliderBit::Analysis_Dummy](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__dummy/)**  |
 | class | **[Gambit::ColliderBit::Analysis_Minimum](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__minimum/)** <br>Basic analysis code for copying.  |
 | class | **[Gambit::ColliderBit::AnalysisContainer](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysiscontainer/)** <br>A class for managing collections of [Analysis](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis/) instances.  |
 | struct | **[Gambit::ColliderBit::AnalysisData](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/)**  |
 | struct | **[Gambit::ColliderBit::AnalysisLogLikes](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisloglikes/)** <br>Container for loglike information for an analysis.  |
 | class | **[Gambit::ColliderBit::AnalysisUtil](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysisutil/)**  |
+| class | **[Gambit::ColliderBit::asymm_mt2_lester_bisect](/documentation/code/classes/classgambit_1_1colliderbit_1_1asymm__mt2__lester__bisect/)**  |
 | class | **[Gambit::ColliderBit::BaBar_single_photon_analysis_info](/documentation/code/classes/classgambit_1_1colliderbit_1_1babar__single__photon__analysis__info/)** <br>A class to hold analysis information for the BaBar single photon search (specific to dark photon models)  |
 | class | **[Gambit::ColliderBit::BaseCollider](/documentation/code/classes/classgambit_1_1colliderbit_1_1basecollider/)** <br>An abstract base class for collider simulators within ColliderBit.  |
 | class | **[Gambit::ColliderBit::BaseDetector](/documentation/code/classes/classgambit_1_1colliderbit_1_1basedetector/)** <br>An abstract base class for detector simulators within ColliderBit.  |
@@ -139,6 +168,8 @@ description: "[No description available]"
 | struct | **[Gambit::ColliderBit::Cutflow](/documentation/code/classes/structgambit_1_1colliderbit_1_1cutflow/)** <br>A tracker of numbers & fractions of events passing sequential cuts.  |
 | struct | **[Gambit::ColliderBit::Cutflows](/documentation/code/classes/structgambit_1_1colliderbit_1_1cutflows/)** <br>A container for several [Cutflow](/documentation/code/classes/structgambit_1_1colliderbit_1_1cutflow/) objects, with some convenient batch access.  |
 | class | **[Gambit::ColliderBit::Dijet_analysis_info](/documentation/code/classes/classgambit_1_1colliderbit_1_1dijet__analysis__info/)** <br>A class to hold analysis information for DiJets (specific to DMsimp models)  |
+| class | **[Gambit::ColliderBit::efficiency_map](/documentation/code/classes/classgambit_1_1colliderbit_1_1efficiency__map/)**  |
+| struct | **[Gambit::ColliderBit::EllipseParams](/documentation/code/classes/structgambit_1_1colliderbit_1_1ellipseparams/)**  |
 | class | **[Gambit::ColliderBit::EventCounter](/documentation/code/classes/classgambit_1_1colliderbit_1_1eventcounter/)** <br>A simple class for counting events of type HEPUtils::Event.  |
 | class | **[Gambit::ColliderBit::ImageLimit](/documentation/code/classes/classgambit_1_1colliderbit_1_1imagelimit/)**  |
 | struct | **[Gambit::ColliderBit::jet_collection_settings](/documentation/code/classes/structgambit_1_1colliderbit_1_1jet__collection__settings/)** <br>Struct of different jet collection settings.  |
@@ -159,6 +190,7 @@ description: "[No description available]"
 | struct | **[Gambit::ColliderBit::MCLoopInfo](/documentation/code/classes/structgambit_1_1colliderbit_1_1mcloopinfo/)** <br>Container for event loop status data and settings.  |
 | class | **[Gambit::ColliderBit::Model_analysis_info](/documentation/code/classes/classgambit_1_1colliderbit_1_1model__analysis__info/)**  |
 | class | **[Gambit::ColliderBit::MT2](/documentation/code/classes/classgambit_1_1colliderbit_1_1mt2/)** <br>A useful [MT2]() class for this module.  |
+| class | **[Gambit::ColliderBit::onnx_rt_wrapper](/documentation/code/classes/classgambit_1_1colliderbit_1_1onnx__rt__wrapper/)**  |
 | class | **[Gambit::ColliderBit::OPALCharginoAllChannelsLimitAt208GeV](/documentation/code/classes/classgambit_1_1colliderbit_1_1opalcharginoallchannelslimitat208gev/)** <br>A class to contain the limit data from OPAL_EPJC35_2004_1, figure 8b.  |
 | class | **[Gambit::ColliderBit::OPALCharginoHadronicLimitAt208GeV](/documentation/code/classes/classgambit_1_1colliderbit_1_1opalcharginohadroniclimitat208gev/)** <br>A class to contain the limit data from OPAL_EPJC35_2004_1, figure 5b.  |
 | class | **[Gambit::ColliderBit::OPALCharginoLeptonicLimitAt208GeV](/documentation/code/classes/classgambit_1_1colliderbit_1_1opalcharginoleptoniclimitat208gev/)** <br>A class to contain the limit data from OPAL_EPJC35_2004_1, figure 7b.  |
@@ -195,6 +227,9 @@ description: "[No description available]"
 | typedef std::multimap< [PID_pair](/documentation/code/classes/classgambit_1_1pid__pair/), int > | **[multimap_PID_pair_int](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#typedef-multimap-pid-pair-int)**  |
 | typedef std::map< int, [xsec_container](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/) > | **[map_int_xsec](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#typedef-map-int-xsec)**  |
 | typedef std::map< int, [process_xsec_container](/documentation/code/classes/classgambit_1_1colliderbit_1_1process__xsec__container/) > | **[map_int_process_xsec](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#typedef-map-int-process-xsec)**  |
+| typedef std::map< std::string, [xsec_container](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/) > | **[map_str_xsec_container](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#typedef-map-str-xsec-container)**  |
+| typedef std::map< std::string, map_int_process_xsec > | **[map_str_map_int_process_xsec](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#typedef-map-str-map-int-process-xsec)**  |
+| typedef std::pair< map_str_xsec_container, map_str_map_int_process_xsec > | **[initialxsec_container](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#typedef-initialxsec-container)**  |
 | typedef std::map< std::pair< int, int >, [PID_pair_xsec_container](/documentation/code/classes/classgambit_1_1colliderbit_1_1pid__pair__xsec__container/) > | **[map_iipair_PID_pair_xsec](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#typedef-map-iipair-pid-pair-xsec)**  |
 | typedef std::map< [PID_pair](/documentation/code/classes/classgambit_1_1pid__pair/), [PID_pair_xsec_container](/documentation/code/classes/classgambit_1_1colliderbit_1_1pid__pair__xsec__container/) > | **[map_PID_pair_PID_pair_xsec](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#typedef-map-pid-pair-pid-pair-xsec)**  |
 | typedef HEPUtils::Event | **[HEPUtils_Event](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#typedef-heputils-event)** <br>Typedef for a std::function that sets the weight for the input HEPUtils::Event.  |
@@ -260,10 +295,13 @@ description: "[No description available]"
 | bool | **[random_bool](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-random-bool)**(double eff)<br>Return a random true/false at a success rate given by a number.  |
 | bool | **[random_bool](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-random-bool)**(const HEPUtils::BinnedFn1D< double > & effmap, double x)<br>Return a random true/false at a success rate given by a 1D efficiency map.  |
 | bool | **[random_bool](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-random-bool)**(const HEPUtils::BinnedFn2D< double > & effmap, double x, double y)<br>Return a random true/false at a success rate given by a 2D efficiency map.  |
-| void | **[filtereff](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-filtereff)**(std::vector< const HEPUtils::Particle * > & particles, double eff, bool do_delete =false)<br>Utility function for filtering a supplied particle vector by sampling wrt an efficiency scalar.  |
-| void | **[filtereff](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-filtereff)**(std::vector< const HEPUtils::Particle * > & particles, std::function< double(const HEPUtils::Particle *)> eff_fn, bool do_delete =false)<br>Utility function for filtering a supplied particle vector by sampling an efficiency returned by a provided function object.  |
-| void | **[filtereff_pt](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-filtereff-pt)**(std::vector< const HEPUtils::Particle * > & particles, const HEPUtils::BinnedFn1D< double > & eff_pt, bool do_delete =false)<br>Utility function for filtering a supplied particle vector by sampling wrt a binned 1D efficiency map in pT.  |
-| void | **[filtereff_etapt](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-filtereff-etapt)**(std::vector< const HEPUtils::Particle * > & particles, const HEPUtils::BinnedFn2D< double > & eff_etapt, bool do_delete =false)<br>Utility function for filtering a supplied particle vector by sampling wrt a binned 2D efficiency map in |eta| and pT.  |
+| template <class T \> <br>void | **[filtereff](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-filtereff)**(std::vector< T * > & particlesOrJetss, double eff, bool do_delete =false)<br>Utility function for filtering a supplied particle vector by sampling wrt an efficiency scalar.  |
+| template <class T \> <br>void | **[filtereff](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-filtereff)**(std::vector< T * > & particlesOrJetss, std::function< double(T *)> eff_fn, bool do_delete =false)<br>Utility function for filtering a supplied particle vector by sampling an efficiency returned by a provided function object.  |
+| template <class T \> <br>void | **[filtereff_pt](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-filtereff-pt)**(std::vector< T * > & particlesOrJetss, const HEPUtils::BinnedFn1D< double > & eff_pt, bool do_delete =false)<br>Utility function for filtering a supplied particle vector by sampling wrt a binned 1D efficiency map in pT.  |
+| template <class T \> <br>void | **[filtereff_eta](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-filtereff-eta)**(std::vector< T * > & particlesOrJetss, const HEPUtils::BinnedFn1D< double > & eff_eta, bool do_delete =false)<br>Utility function for filtering a supplied particle vector by sampling wrt a binned 1D efficiency map in eta.  |
+| template <class T \> <br>void | **[filtereff_etapt](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-filtereff-etapt)**(std::vector< T * > & particlesOrJetss, const HEPUtils::BinnedFn2D< double > & eff_etapt, bool do_delete =false)<br>Utility function for filtering a supplied particle vector by sampling wrt a binned 2D efficiency map in |eta| and pT.  |
+| bool | **[has_tag](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-has-tag)**(const double & eff)<br>Randomly get a tag result (can be anything) from a single number efficiency.  |
+| bool | **[has_tag](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-has-tag)**(const HEPUtils::BinnedFn1D< double > & effmap, double pt)<br>Randomly get a tag result (can be anything) from a 1D pT efficiency map.  |
 | bool | **[has_tag](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-has-tag)**(const HEPUtils::BinnedFn2D< double > & effmap, double eta, double pt) |
 | std::map< const HEPUtils::Jet *, bool > | **[generateBTagsMap](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-generatebtagsmap)**(const std::vector< const HEPUtils::Jet * > & jets, double bTagEff, double cMissTagEff, double otherMissTagEff, double pTmin =0., double absEtaMax =DBL_MAX)<br>Return a map<Jet*,bool> containing a generated b-tag for every jet in the input vector.  |
 | template <typename NUM1 ,typename NUM2 \> <br>size_t | **[binIndex](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-binindex)**(NUM1 val, const std::vector< NUM2 > & binedges, bool allow_overflow =false) |
@@ -277,10 +315,12 @@ description: "[No description available]"
 | template <typename CONTAINER ,typename FN \> <br>bool | **[all_of](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-all-of)**(const CONTAINER & c, const FN & f)<br>Non-iterator version of std::all_of.  |
 | template <typename CONTAINER ,typename FN \> <br>bool | **[any_of](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-any-of)**(const CONTAINER & c, const FN & f)<br>Non-iterator version of std::any_of.  |
 | template <typename CONTAINER ,typename FN \> <br>bool | **[none_of](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-none-of)**(const CONTAINER & c, const FN & f)<br>Non-iterator version of std::none_of.  |
-| std::vector< std::vector< const HEPUtils::Particle * > > | **[getSFOSpairs](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-getsfospairs)**(std::vector< const HEPUtils::Particle * > particles)<br>Utility function for returning a collection of same-flavour, oppsosite-sign particle pairs.  |
-| std::vector< std::vector< const HEPUtils::Particle * > > | **[getOSpairs](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-getospairs)**(std::vector< const HEPUtils::Particle * > particles)<br>Utility function for returning a collection of oppsosite-sign particle pairs.  |
-| std::vector< std::vector< const HEPUtils::Particle * > > | **[getSSpairs](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-getsspairs)**(std::vector< const HEPUtils::Particle * > particles)<br>Utility function for returning a collection of same-sign particle pairs.  |
-| std::vector< std::vector< const HEPUtils::Jet * > > | **[getBJetPairs](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-getbjetpairs)**(std::vector< const HEPUtils::Jet * > bjets)<br>Utility function for returning a collection of b-tagged jets.  |
+| std::vector< std::vector< const HEPUtils::Particle * > > | **[getOSSFpairs](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-getossfpairs)**(const std::vector< const HEPUtils::Particle * > & particles)<br>Utility function for returning a collection of same-flavour, oppsosite-sign particle pairs.  |
+| std::vector< std::vector< const HEPUtils::Particle * > > | **[getSFOSpairs](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-getsfospairs)**(const std::vector< const HEPUtils::Particle * > & particles) |
+| std::vector< std::vector< const HEPUtils::Particle * > > | **[getOSpairs](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-getospairs)**(const std::vector< const HEPUtils::Particle * > & particles)<br>Utility function for returning a collection of oppsosite-sign particle pairs.  |
+| std::vector< std::vector< const HEPUtils::Particle * > > | **[getSSpairs](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-getsspairs)**(const std::vector< const HEPUtils::Particle * > & particles)<br>Utility function for returning a collection of same-sign particle pairs.  |
+| std::vector< std::vector< const HEPUtils::Particle * > > | **[getSFpairs](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-getsfpairs)**(std::vector< const HEPUtils::Particle * > particles) |
+| std::vector< std::vector< const HEPUtils::Jet * > > | **[getBJetPairs](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-getbjetpairs)**(const std::vector< const HEPUtils::Jet * > & bjets)<br>Utility function for returning a collection of b-tagged jets.  |
 | void | **[sortBy](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-sortby)**([ParticlePtrs](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#typedef-particleptrs) & particles, std::function< bool(const Particle *, const Particle *)> cmpfn)<br>Particle-sorting function.  |
 | bool | **[cmpParticlesByPt](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-cmpparticlesbypt)**(const HEPUtils::Particle * lep1, const HEPUtils::Particle * lep2)<br>Comparison function to give a particles sorting order decreasing by pT.  |
 | void | **[sortByPt](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-sortbypt)**([ParticlePtrs](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#typedef-particleptrs) & particles) |
@@ -288,6 +328,7 @@ description: "[No description available]"
 | bool | **[cmpJetsByPt](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-cmpjetsbypt)**(const HEPUtils::Jet * jet1, const HEPUtils::Jet * jet2)<br>Comparison function to give a jets sorting order decreasing by pT.  |
 | void | **[sortByPt](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-sortbypt)**([JetPtrs](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#typedef-jetptrs) & jets) |
 | void | **[sortByParentMass](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-sortbyparentmass)**(std::vector< std::vector< const Particle * > > & pairs, double mP) |
+| void | **[sortByInvariantMass](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-sortbyinvariantmass)**(std::vector< std::vector< const Particle * > > & pairs) |
 | void | **[uniquePairs](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-uniquepairs)**(std::vector< std::vector< const Particle * > > & pairs)<br>Remove pairs with already used leptons, assumes some order.  |
 | int | **[countPt](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-countpt)**(const std::vector< const Particle * > & particles, double pTlim)<br>Count number of particles that have pT > pTlim.  |
 | int | **[countPt](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-countpt)**(const std::vector< const Jet * > & jets, double pTlim)<br>Count number of jets that have pT > pTlim.  |
@@ -301,6 +342,10 @@ description: "[No description available]"
 | double | **[get_mT](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-get-mt)**(const Particle * part1, const Particle * part2, const Particle * part3, P4 pTmiss) |
 | bool | **[sameSign](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-samesign)**(const Particle * P1, const Particle * P2)<br>Have two particles the same sign?  |
 | bool | **[oppositeSign](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-oppositesign)**(const Particle * P1, const Particle * P2)<br>Have two particles the opposite sign?  |
+| template <class T \> <br>void | **[applyEfficiency](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-applyefficiency)**(std::vector< T * > & particlesOrJets, const double eff)<br>Generic function to apply efficiencies on a list of particles or jets, provided as a scalar number.  |
+| template <class T \> <br>void | **[applyEfficiency](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-applyefficiency)**(std::vector< T * > & particlesOrJets, const HEPUtils::BinnedFn1D< double > & eff, bool pTBins =true)<br>Generic function to apply efficiencies on a list of particles or jets, provided as HEPUtils 1D binned efficiencies in pT or eta.  |
+| template <class T \> <br>void | **[applyEfficiency](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-applyefficiency)**(std::vector< T * > & particlesOrJets, const HEPUtils::BinnedFn2D< double > & eff)<br>Generic function to apply efficiencies on a list of particles or jets, provided as HEPUtils 2D binned efficiencies in eta and pT.  |
+| void | **[applyBtagMisId](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-applybtagmisid)**(std::vector< const HEPUtils::Jet * > & jets, std::vector< const HEPUtils::Jet * > & bjets, double mis_id_prob)<br>Apply user-specified b-tag misidentification rate (flat)  |
 | void | **[LEP208_SLHA1_convention_xsec_selselbar](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-lep208-slha1-convention-xsec-selselbar)**([triplet](/documentation/code/classes/structgambit_1_1triplet/)< double > & result) |
 | void | **[LEP208_SLHA1_convention_xsec_selserbar](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-lep208-slha1-convention-xsec-selserbar)**([triplet](/documentation/code/classes/structgambit_1_1triplet/)< double > & result) |
 | void | **[LEP208_SLHA1_convention_xsec_serserbar](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-lep208-slha1-convention-xsec-serserbar)**([triplet](/documentation/code/classes/structgambit_1_1triplet/)< double > & result) |
@@ -441,6 +486,7 @@ description: "[No description available]"
 | template <typename EventT \> <br>void | **[convertParticleEvent](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-convertparticleevent)**(const EventT & pevt, HEPUtils::Event & result, std::vector< [jet_collection_settings](/documentation/code/classes/structgambit_1_1colliderbit_1_1jet__collection__settings/) > all_jet_collection_settings, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) jetcollection_taus, double jet_pt_min) |
 | template <typename EventT \> <br>void | **[convertPartonEvent](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-convertpartonevent)**(const EventT & pevt, HEPUtils::Event & result, std::vector< [jet_collection_settings](/documentation/code/classes/structgambit_1_1colliderbit_1_1jet__collection__settings/) > all_jet_collection_settings, [str](/documentation/code/namespaces/namespacegambit/#typedef-str) jetcollection_taus, double jet_pt_min)<br>Convert a partonic (no hadrons) EventT into an unsmeared HEPUtils::Event.  |
 | const multimap_PID_pair_int & | **[all_PID_pairs_to_process_codes](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-all-pid-pairs-to-process-codes)**() |
+| template <typename PythiaT ,typename EventT \> <br>void | **[PerformInitialCrossSection_Pythia](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-performinitialcrosssection-pythia)**(initialxsec_container & result, [SLHAstruct](/documentation/code/namespaces/namespacegambit/#typedef-slhastruct) & slha, const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) model_suffix, const [Options](/documentation/code/classes/classgambit_1_1options/) & runOptions) |
 | template <typename PythiaT ,typename hepmc_writerT \> <br>void | **[dropHepMCEventPy8Collider](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-drophepmceventpy8collider)**(const PythiaT * Pythia, const [safe_ptr](/documentation/code/classes/classgambit_1_1safe__ptr/)< [Options](/documentation/code/classes/classgambit_1_1options/) > & runOptions)<br>Drop a HepMC file for the event.  |
 | template <typename PythiaT ,typename EventT ,typename hepmc_writerT \> <br>void | **[generateEventPy8Collider](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-generateeventpy8collider)**(EventT & pythia_event, const [MCLoopInfo](/documentation/code/classes/structgambit_1_1colliderbit_1_1mcloopinfo/) & RunMC, const [Py8Collider](/documentation/code/classes/classgambit_1_1colliderbit_1_1py8collider/)< PythiaT, EventT, hepmc_writerT > & HardScatteringSim, const int iteration, void(*)() wrapup, const [safe_ptr](/documentation/code/classes/classgambit_1_1safe__ptr/)< [Options](/documentation/code/classes/classgambit_1_1options/) > & runOptions)<br>Generate a hard scattering event with Pythia.  |
 | template <typename PythiaT ,typename EventT ,typename hepmc_writerT \> <br>void | **[convertEventToHEPUtilsPy8Collider](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-converteventtoheputilspy8collider)**(HEPUtils::Event & event, const EventT & pythia_event, const [Py8Collider](/documentation/code/classes/classgambit_1_1colliderbit_1_1py8collider/)< PythiaT, EventT, hepmc_writerT > & HardScatteringSim, const EventWeighterFunctionType & EventWeighterFunction, const int iteration, void(*)() wrapup, const [safe_ptr](/documentation/code/classes/classgambit_1_1safe__ptr/)< [Options](/documentation/code/classes/classgambit_1_1options/) > & runOptions)<br>Generate a hard scattering event with Pythia and convert it to HEPUtils::Event.  |
@@ -452,6 +498,8 @@ description: "[No description available]"
 | FJNS::JetAlgorithm | **[FJalgorithm_map](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-fjalgorithm-map)**(std::string algorithm)<br>Storage of different FastJet methods.  |
 | FJNS::Strategy | **[FJstrategy_map](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-fjstrategy-map)**(std::string strategy) |
 | FJNS::RecombinationScheme | **[FJRecomScheme_map](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-fjrecomscheme-map)**(std::string reco_scheme) |
+| bool | **[sortByPT0l](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-sortbypt0l)**(const HEPUtils::Jet * jet1, const HEPUtils::Jet * jet2) |
+| bool | **[sortByPT0l_sharedptr](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-sortbypt0l-sharedptr)**(std::shared_ptr< HEPUtils::Jet > jet1, std::shared_ptr< HEPUtils::Jet > jet2) |
 | bool | **[sortByPT13](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-sortbypt13)**(const HEPUtils::Jet * jet1, const HEPUtils::Jet * jet2) |
 | bool | **[sortByPT13_sharedptr](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-sortbypt13-sharedptr)**(std::shared_ptr< HEPUtils::Jet > jet1, std::shared_ptr< HEPUtils::Jet > jet2) |
 | bool | **[sortByMass](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-sortbymass)**(const HEPUtils::Jet * jet1, const HEPUtils::Jet * jet2) |
@@ -462,8 +510,19 @@ description: "[No description available]"
 | bool | **[sortByMass_1l](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-sortbymass-1l)**(const HEPUtils::Jet * jet1, const HEPUtils::Jet * jet2) |
 | bool | **[sortByMass_1l_sharedptr](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-sortbymass-1l-sharedptr)**(std::shared_ptr< HEPUtils::Jet > jet1, std::shared_ptr< HEPUtils::Jet > jet2) |
 | double | **[calcMT_1l](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-calcmt-1l)**(HEPUtils::P4 jetMom, HEPUtils::P4 metMom) |
+| bool | **[sortBypT_j](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-sortbypt-j)**(const Jet * jet1, const Jet * jet2) |
+| bool | **[sortBypT_l](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-sortbypt-l)**(const Particle * lep1, const Particle * lep2) |
+| void | **[rotateXY](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-rotatexy)**(TMatrix & mat, TMatrix & mat_new, double phi) |
+| bool | **[ellipsesAreDisjoint](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-ellipsesaredisjoint)**(const [EllipseParams](/documentation/code/classes/structgambit_1_1colliderbit_1_1ellipseparams/) & e1, const [EllipseParams](/documentation/code/classes/structgambit_1_1colliderbit_1_1ellipseparams/) & e2) |
+| bool | **[__private_ellipsesAreDisjoint](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-private-ellipsesaredisjoint)**(const double coeffLamPow3, const double coeffLamPow2, const double coeffLamPow1, const double coeffLamPow0) |
+| void | **[myversion](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-myversion)**() |
+| double | **[MT](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-mt)**(double px1, double px2, double py1, double py2, double m1, double m2) |
+| std::pair< double, double > | **[ben_findsols](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-ben-findsols)**(double MT2, double px, double py, double visM, double Ma, double pxb, double pyb, double metx, double mety, double visMb, double Mb) |
+| bool | **[SortLeptons2LJ](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-sortleptons2lj)**(const pair< TLorentzVector, int > lv1, const pair< TLorentzVector, int > lv2) |
+| bool | **[SortJets2LJ](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-sortjets2lj)**(const TLorentzVector jv1, const TLorentzVector jv2) |
 | bool | **[sortByPT_j](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-sortbypt-j)**(const HEPUtils::Jet * jet1, const HEPUtils::Jet * jet2) |
 | bool | **[sortByPT_l](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-sortbypt-l)**(const HEPUtils::Particle * lep1, const HEPUtils::Particle * lep2) |
+| bool | **[SSLeptons](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-ssleptons)**(vector< const HEPUtils::Particle * > leptons) |
 | bool | **[sortByPT_jet](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-sortbypt-jet)**(const HEPUtils::Jet * jet1, const HEPUtils::Jet * jet2) |
 | bool | **[sortByPT_lep](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-sortbypt-lep)**(const HEPUtils::Particle * lep1, const HEPUtils::Particle * lep2) |
 | bool | **[sortByPT_RJ3L](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-sortbypt-rj3l)**(const HEPUtils::Jet * jet1, const HEPUtils::Jet * jet2) |
@@ -473,6 +532,8 @@ description: "[No description available]"
 | bool | **[sortByPT](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-sortbypt)**(const HEPUtils::Jet * jet1, const HEPUtils::Jet * jet2) |
 | bool | **[sortByPT_2lep](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-sortbypt-2lep)**(const HEPUtils::Particle * lep1, const HEPUtils::Particle * lep2) |
 | double | **[Phi_mpi_pi](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-phi-mpi-pi)**(double x) |
+| bool | **[sortByPT14](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-sortbypt14)**(const HEPUtils::Jet * jet1, const HEPUtils::Jet * jet2) |
+| bool | **[sortByPT14_sharedptr](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-sortbypt14-sharedptr)**(std::shared_ptr< HEPUtils::Jet > jet1, std::shared_ptr< HEPUtils::Jet > jet2) |
 | double | **[_Phi_mpi_pi](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-phi-mpi-pi)**(double x) |
 | void | **[_setEventWeight_unity](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-seteventweight-unity)**(HEPUtils::Event & event, const [BaseCollider](/documentation/code/classes/classgambit_1_1colliderbit_1_1basecollider/) * )<br>A function that sets the event weight to unity, with zero uncertainty.  |
 | void | **[setEventWeight_unity](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-seteventweight-unity)**(EventWeighterFunctionType & result) |
@@ -482,6 +543,8 @@ description: "[No description available]"
 | double | **[BaBar_single_photon_LogLike](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-babar-single-photon-loglike)**(double kappa, double mAp, double BRinv)<br>Perform the actual likelihood evaluation.  |
 | void | **[BaBar_single_photon_LogLike_SubGeVDM](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-babar-single-photon-loglike-subgevdm)**(double & result) |
 | void | **[getDummyColliderObservable](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-getdummycolliderobservable)**(double & result)<br>Dummy observable that creates a dependency on TestModel1D.  |
+| int | **[calc_N_MC](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-calc-n-mc)**(std::string method, double n_mc_mean) |
+| double | **[GetMaxLumi](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-getmaxlumi)**(const std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > & analyses)<br>Get the maximum luminosity required for any analysis in a given collider.  |
 | void | **[operateLHCLoop](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-operatelhcloop)**([MCLoopInfo](/documentation/code/classes/structgambit_1_1colliderbit_1_1mcloopinfo/) & result)<br>LHC Loop Manager.  |
 | void | **[getLHCEventLoopInfo](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-getlhceventloopinfo)**([map_str_dbl](/documentation/code/namespaces/namespacegambit/#typedef-map-str-dbl) & result)<br>Store some information about the event generation.  |
 | void | **[CollectAnalyses](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-collectanalyses)**([AnalysisDataPointers](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#typedef-analysisdatapointers) & result)<br>Loop over all analyses and collect them in one place.  |
@@ -492,10 +555,10 @@ description: "[No description available]"
 | void | **[calc_HB_LEP_LogLike](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-calc-hb-lep-loglike)**(double & result)<br>Get a LEP chisq from HiggsBounds.  |
 | void | **[calc_HS_LHC_LogLike](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-calc-hs-lhc-loglike)**(double & result)<br>Get an LHC chisq from HiggsSignals.  |
 | void | **[FeynHiggs_HiggsProd](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-feynhiggs-higgsprod)**([fh_HiggsProd_container](/documentation/code/classes/structgambit_1_1fh__higgsprod__container/) & result)<br>Higgs production cross-sections from FeynHiggs.  |
-| void | **[fill_analysis_loglikes](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-fill-analysis-loglikes)**(const [AnalysisData](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/) & ana_data, [AnalysisLogLikes](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisloglikes/) & ana_loglikes, bool use_marg, bool has_and_use_covar, bool combine_nocovar_SRs, bool has_and_use_fulllikes, bool(*)(const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) &) FullLikes_FileExists, int(*)(const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) &, const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) &) FullLikes_ReadIn, double(*)(std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), double > &, const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) &) FullLikes_Evaluate, const std::string alt_loglike_key)<br>Forward declaration of funtion in LHC_likelihoods.  |
+| void | **[fill_analysis_loglikes](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-fill-analysis-loglikes)**(const [AnalysisData](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/) & ana_data, [AnalysisLogLikes](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisloglikes/) & ana_loglikes, bool use_marg, bool always_compute_all_SR_loglikes, double(*)(const int &, const double &, const double &, const double &) marginaliser, bool has_and_use_covar, bool combine_nocovar_SRs, const [Options](/documentation/code/classes/classgambit_1_1options/) & runOptions, bool has_and_use_fulllikes, bool(*)(const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) &) FullLikes_FileExists, int(*)(const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) &, const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) &, const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) &) FullLikes_ReadIn, double(*)(std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), double > &, const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) &) FullLikes_Evaluate, double xsec, int n_mc, const std::string alt_loglike_key)<br>Forward declaration of function in LHC_likelihoods.  |
 | void | **[DMEFT_fill_analysis_info_map](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-dmeft-fill-analysis-info-map)**()<br>Forward declarations of functions in this file.  |
-| void | **[DMsimp_fill_analysis_info_map](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-dmsimp-fill-analysis-info-map)**(std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > Analysis_data_path, std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > > Interpolation_columns, int Ndim)<br>A function for filling the analysis_info_map for the DMsimp models.  |
-| void | **[SubGeVDM_fill_analysis_info_map](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-subgevdm-fill-analysis-info-map)**(std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > Analysis_data_path, std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > > Interpolation_columns)<br>A function for filling the analysis_info_map for the SubGeVDM_fermion and SubGeVDM_scalar models.  |
+| void | **[DMsimp_fill_analysis_info_map](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-dmsimp-fill-analysis-info-map)**(std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > Analysis_data_path, std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > > Interpolation_columns, int Ndim, std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > skip_analyses)<br>A function for filling the analysis_info_map for the DMsimp models.  |
+| void | **[SubGeVDM_fill_analysis_info_map](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-subgevdm-fill-analysis-info-map)**(std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > Analysis_data_path, std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > > Interpolation_columns, std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > skip_analyses)<br>A function for filling the analysis_info_map for the SubGeVDM_fermion and SubGeVDM_scalar models.  |
 | void | **[DMEFT_results](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-dmeft-results)**([AnalysisDataPointers](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#typedef-analysisdatapointers) & result)<br>Results from DMEFT analyses before any modification of the MET spectrum.  |
 | void | **[DMEFT_results_profiled](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-dmeft-results-profiled)**([AnalysisDataPointers](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#typedef-analysisdatapointers) & result)<br>Results from DMEFT analyses after profiling over the 'a' parameter in the smooth cut-off of the MET spectrum.  |
 | void | **[DMEFT_results_cutoff](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-dmeft-results-cutoff)**([AnalysisDataPointers](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#typedef-analysisdatapointers) & result)<br>Results from DMEFT analyses after imposing a hard cut-off of the MET spectrum.  |
@@ -535,6 +598,9 @@ description: "[No description available]"
 | void | **[Rivet_measurements](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-rivet-measurements)**(std::shared_ptr< std::ostringstream > & result) |
 | void | **[getActiveProcessCodes](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-getactiveprocesscodes)**(std::vector< int > & result)<br>Get the list of active collider process codes.  |
 | void | **[getAnalysisContainer](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-getanalysiscontainer)**([AnalysisContainer](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysiscontainer/) & result, const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) & detname, const [MCLoopInfo](/documentation/code/classes/structgambit_1_1colliderbit_1_1mcloopinfo/) & RunMC, const [xsec_container](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/) & TotalCrossSection, int iteration)<br>Retrieve an analysis container for a specific detector.  |
+| void | **[getATLASAnalysisContainer](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-getatlasanalysiscontainer)**([AnalysisContainer](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysiscontainer/) & result)<br>Retrieve a container for analyses with a given experiment.  |
+| void | **[getCMSAnalysisContainer](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-getcmsanalysiscontainer)**([AnalysisContainer](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysiscontainer/) & result) |
+| void | **[getIdentityAnalysisContainer](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-getidentityanalysiscontainer)**([AnalysisContainer](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysiscontainer/) & result) |
 | void | **[getBuckFastATLAS](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-getbuckfastatlas)**([BaseDetector](/documentation/code/classes/classgambit_1_1colliderbit_1_1basedetector/) *& result)<br>Retrieve a [BuckFast]() sim of [ATLAS]().  |
 | void | **[getBuckFastCMS](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-getbuckfastcms)**([BaseDetector](/documentation/code/classes/classgambit_1_1colliderbit_1_1basedetector/) *& result)<br>Retrieve a [BuckFast]() sim of [CMS]().  |
 | void | **[getBuckFastIdentity](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-getbuckfastidentity)**([BaseDetector](/documentation/code/classes/classgambit_1_1colliderbit_1_1basedetector/) *& result)<br>Retrieve an Identity [BuckFast]() sim (no sim)  |
@@ -557,18 +623,28 @@ description: "[No description available]"
 | void | **[getYAMLCrossSection_SLHA](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-getyamlcrosssection-slha)**([xsec_container](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/) & result)<br>A function that reads a list of (SLHA file, total cross-section) pairs from the input [YAML](/documentation/code/namespaces/namespaceyaml/) file.  |
 | void | **[getYAMLCrossSection_param](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-getyamlcrosssection-param)**([xsec_container](/documentation/code/classes/classgambit_1_1colliderbit_1_1xsec__container/) & result) |
 | void | **[getTotalCrossSectionAsMap](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-gettotalcrosssectionasmap)**([map_str_dbl](/documentation/code/namespaces/namespacegambit/#typedef-map-str-dbl) & result)<br>Get cross-section info as map_str_dbl (for simple printing)  |
+| void | **[calc_TotalCrossSection_LogLike](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-calc-totalcrosssection-loglike)**(double & result) |
 | void | **[getPIDPairCrossSectionsInfo](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-getpidpaircrosssectionsinfo)**([map_str_dbl](/documentation/code/namespaces/namespacegambit/#typedef-map-str-dbl) & result)<br>Output PID pair cross-sections as a str-dbl map, for easy printing.  |
 | void | **[doCrossSectionConsistencyCheck](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-docrosssectionconsistencycheck)**(bool & result) |
+| void | **[InitialTotalCrossSection_Pythia](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-initialtotalcrosssection-pythia)**(map_str_xsec_container & result)<br>Helper function for cross-section maps.  |
+| void | **[InitialProcessCrossSections_Pythia](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-initialprocesscrosssections-pythia)**(map_str_map_int_process_xsec & result)<br>Helper function for cross-section maps.  |
+| void | **[InitialTotalCrossSection_YAMLCBS](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-initialtotalcrosssection-yamlcbs)**(map_str_xsec_container & result) |
+| void | **[InitialTotalCrossSection_YAMLparam](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-initialtotalcrosssection-yamlparam)**(map_str_xsec_container & result) |
+| void | **[InitialTotalCrossSection_YAMLSLHA](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-initialtotalcrosssection-yamlslha)**(map_str_xsec_container & result)<br>A function that reads a list of (SLHA file, total cross-section) pairs from the input [YAML](/documentation/code/namespaces/namespaceyaml/) file.  |
+| void | **[write_csv](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-write-csv)**(const std::string & filename, const std::vector< std::string > & headers, const std::vector< std::vector< unsigned int > > & columns, char sep =',') |
 | void | **[calc_LHC_signals](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-calc-lhc-signals)**([map_str_dbl](/documentation/code/namespaces/namespacegambit/#typedef-map-str-dbl) & result)<br>Loop over all analyses and fill a map of predicted counts.  |
-| void | **[_gsl_calc_Analysis_MinusLogLike](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-gsl-calc-analysis-minusloglike)**(const size_t n, const double * unit_nuisances_dbl, void * fixedparamspack, double * fval) |
+| void | **[calc_LHC_efficiencies_per_SR](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-calc-lhc-efficiencies-per-sr)**([map_str_dbl](/documentation/code/namespaces/namespacegambit/#typedef-map-str-dbl) & result) |
+| void | **[calc_LHC_efficiencies_per_analysis](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-calc-lhc-efficiencies-per-analysis)**([map_str_dbl](/documentation/code/namespaces/namespacegambit/#typedef-map-str-dbl) & result) |
+| double | **[calc_poisson_loglike](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-calc-poisson-loglike)**(std::string estimator, double s, double b, int s_unscaled, int o, int n_mc, double n_exp) |
+| void | **[_gsl_calc_Analysis_MinusLogLike](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-gsl-calc-analysis-minusloglike)**(const size_t n, const double * unit_nuisances_dbl, void * fixedparamspack, double * fval)<br>Loglike objective-function wrapper to provide the signature for GSL multimin.  |
 | void | **[_gsl_calc_Analysis_MinusLogLikeGrad](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-gsl-calc-analysis-minusloglikegrad)**(const size_t n, const double * unit_nuisances_dbl, void * fixedparamspack, double * fgrad)<br>Loglike gradient-function wrapper to provide the signature for GSL multimin.  |
 | void | **[_gsl_calc_Analysis_MinusLogLikeAndGrad](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-gsl-calc-analysis-minusloglikeandgrad)**(const size_t n, const double * unit_nuisances_dbl, void * fixedparamspack, double * fval, double * fgrad) |
 | std::vector< double > | **[_gsl_mkpackedarray](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-gsl-mkpackedarray)**(const Eigen::ArrayXd & n_preds, const Eigen::ArrayXd & n_obss, const Eigen::ArrayXd & sqrtevals, const Eigen::MatrixXd & evecs) |
-| double | **[profile_loglike_cov](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-profile-loglike-cov)**(const Eigen::ArrayXd & n_preds, const Eigen::ArrayXd & n_obss, const Eigen::ArrayXd & sqrtevals, const Eigen::MatrixXd & evecs) |
-| double | **[marg_loglike_nulike1sr](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-marg-loglike-nulike1sr)**(const Eigen::ArrayXd & n_preds, const Eigen::ArrayXd & n_obss, const Eigen::ArrayXd & sqrtevals) |
-| double | **[marg_loglike_cov](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-marg-loglike-cov)**(const Eigen::ArrayXd & n_preds, const Eigen::ArrayXd & n_obss, const Eigen::ArrayXd & sqrtevals, const Eigen::MatrixXd & evecs) |
-| void | **[fill_analysis_loglikes_full](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-fill-analysis-loglikes-full)**(const [AnalysisData](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/) & ana_data, [AnalysisLogLikes](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisloglikes/) & ana_loglikes, bool(*)(const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) &) FullLikes_FileExists, int(*)(const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) &, const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) &) FullLikes_ReadIn, double(*)(std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), double > &, const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) &) FullLikes_Evaluate, const std::string alt_loglike_key ="") |
-| void | **[calc_LHC_LogLikes_common](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-calc-lhc-loglikes-common)**([map_str_AnalysisLogLikes](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#typedef-map-str-analysisloglikes) & result, bool use_fulllikes, [AnalysisDataPointers](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#typedef-analysisdatapointers) & ana, const [Options](/documentation/code/classes/classgambit_1_1options/) & runOptions, bool skip_calc, bool(*)(const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) &) FullLikes_FileExists, int(*)(const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) &, const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) &) FullLikes_ReadIn, double(*)(std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), double > &, const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) &) FullLikes_Evaluate)<br>Loop over all analyses and fill a map of [AnalysisLogLikes]() objects.  |
+| double | **[profile_loglike_cov](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-profile-loglike-cov)**(const [Options](/documentation/code/classes/classgambit_1_1options/) & runOptions, const Eigen::ArrayXd & n_preds, const Eigen::ArrayXd & , const Eigen::ArrayXd & , const Eigen::ArrayXd & n_obss, const Eigen::ArrayXd & sqrtevals, const Eigen::ArrayXd & , const Eigen::MatrixXd & evecs, const Eigen::MatrixXd & , double(*)(const int &, const double &, const double &, const double &) , int , double ) |
+| double | **[marg_loglike_nulike1sr](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-marg-loglike-nulike1sr)**(const Eigen::ArrayXd & n_preds, const Eigen::ArrayXd & n_obss, const Eigen::ArrayXd & sqrtevals, double(*)(const int &, const double &, const double &, const double &) marginaliser) |
+| double | **[marg_loglike_cov](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-marg-loglike-cov)**(const [Options](/documentation/code/classes/classgambit_1_1options/) & runOptions, const Eigen::ArrayXd & n_preds, const Eigen::ArrayXd & n_bkg, const Eigen::ArrayXd & n_preds_unscaled, const Eigen::ArrayXd & n_obss, const Eigen::ArrayXd & sqrtevals, const Eigen::ArrayXd & sqrtevals_bkg, const Eigen::MatrixXd & evecs, const Eigen::MatrixXd & evecs_bkg, double(*)(const int &, const double &, const double &, const double &) marginaliser, int n_mc, double n_mc_expected) |
+| void | **[fill_analysis_loglikes_full](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-fill-analysis-loglikes-full)**(const [AnalysisData](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisdata/) & ana_data, [AnalysisLogLikes](/documentation/code/classes/structgambit_1_1colliderbit_1_1analysisloglikes/) & ana_loglikes, bool(*)(const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) &) FullLikes_FileExists, int(*)(const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) &, const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) &, const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) &) FullLikes_ReadIn, double(*)(std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), double > &, const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) &) FullLikes_Evaluate, const std::string alt_loglike_key ="") |
+| void | **[calc_LHC_LogLikes_common](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-calc-lhc-loglikes-common)**([map_str_AnalysisLogLikes](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#typedef-map-str-analysisloglikes) & result, bool use_fulllikes, [AnalysisDataPointers](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#typedef-analysisdatapointers) & ana, const [Options](/documentation/code/classes/classgambit_1_1options/) & runOptions, double(*)(const int &, const double &, const double &, const double &) marginaliser, bool skip_calc, bool(*)(const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) &) FullLikes_FileExists, int(*)(const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) &, const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) &, const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) &) FullLikes_ReadIn, double(*)(std::map< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), double > &, const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) &) FullLikes_Evaluate, double xsec, int n_mc)<br>Loop over all analyses and fill a map of [AnalysisLogLikes]() objects.  |
 | void | **[calc_LHC_LogLikes_full](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-calc-lhc-loglikes-full)**([map_str_AnalysisLogLikes](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#typedef-map-str-analysisloglikes) & result)<br>Loop over all analyses and fill a map of [AnalysisLogLikes]() objects.  |
 | void | **[calc_LHC_LogLikes](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-calc-lhc-loglikes)**([map_str_AnalysisLogLikes](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#typedef-map-str-analysisloglikes) & result)<br>Loop over all analyses and fill a map of [AnalysisLogLikes]() objectss.  |
 | void | **[get_LHC_LogLike_per_analysis](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-get-lhc-loglike-per-analysis)**([map_str_dbl](/documentation/code/namespaces/namespacegambit/#typedef-map-str-dbl) & result)<br>Extract the combined log likelihood for each analysis.  |
@@ -585,9 +661,13 @@ description: "[No description available]"
 | void | **[getSLHA2Spectrum](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-getslha2spectrum)**([SLHAstruct](/documentation/code/namespaces/namespacegambit/#typedef-slhastruct) & result) |
 | void | **[calc_susy_spectrum_scan_guide](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-calc-susy-spectrum-scan-guide)**(double & result) |
 | void | **[get_susy_spectrum_validation_loglike](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-get-susy-spectrum-validation-loglike)**(double & result) |
+| std::ostream & | **[operator<<](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-operator)**(std::ostream & os, const [onnx_rt_wrapper](/documentation/code/classes/classgambit_1_1colliderbit_1_1onnx__rt__wrapper/) & rort)<br>Printing function for debugging.  |
 | void | **[getActiveProcessCodeToPIDPairsMap](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-getactiveprocesscodetopidpairsmap)**(multimap_int_PID_pair & result) |
 | void | **[getActivePIDPairs](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-getactivepidpairs)**(vec_PID_pair & result)<br>Get a list of all the PID pairs related to active process codes.  |
 | void | **[runAnalyses](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-runanalyses)**([AnalysisDataPointers](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#typedef-analysisdatapointers) & result, const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) & , const [MCLoopInfo](/documentation/code/classes/structgambit_1_1colliderbit_1_1mcloopinfo/) & RunMC, const [AnalysisContainer](/documentation/code/classes/classgambit_1_1colliderbit_1_1analysiscontainer/) & Container, const HEPUtils::Event & SmearedEvent, int iteration, void(*)() wrapup)<br>Run all the analyses in a given container.  |
+| void | **[runATLASAnalyses](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-runatlasanalyses)**([AnalysisDataPointers](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#typedef-analysisdatapointers) & result)<br>Run all analyses for the given experiment.  |
+| void | **[runCMSAnalyses](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-runcmsanalyses)**([AnalysisDataPointers](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#typedef-analysisdatapointers) & result) |
+| void | **[runIdentityAnalyses](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-runidentityanalyses)**([AnalysisDataPointers](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#typedef-analysisdatapointers) & result) |
 | void | **[smearEvent](/documentation/code/namespaces/namespacegambit_1_1colliderbit/#function-smearevent)**(HEPUtils::Event & result, const HEPUtils::Event & HardScatteringEvent, const [BaseDetector](/documentation/code/classes/classgambit_1_1colliderbit_1_1basedetector/) & detector, const [MCLoopInfo](/documentation/code/classes/structgambit_1_1colliderbit_1_1mcloopinfo/) & RunMC, const int iteration, const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) & detname)<br>Smear an event.  |
 
 ## Attributes
@@ -732,6 +812,27 @@ typedef std::map<int,xsec_container> Gambit::ColliderBit::map_int_xsec;
 
 ```
 typedef std::map<int,process_xsec_container> Gambit::ColliderBit::map_int_process_xsec;
+```
+
+
+### typedef map_str_xsec_container
+
+```
+typedef std::map<std::string, xsec_container> Gambit::ColliderBit::map_str_xsec_container;
+```
+
+
+### typedef map_str_map_int_process_xsec
+
+```
+typedef std::map<std::string, map_int_process_xsec> Gambit::ColliderBit::map_str_map_int_process_xsec;
+```
+
+
+### typedef initialxsec_container
+
+```
+typedef std::pair<map_str_xsec_container, map_str_map_int_process_xsec> Gambit::ColliderBit::initialxsec_container;
 ```
 
 
@@ -1464,8 +1565,9 @@ Return a random true/false at a success rate given by a 2D efficiency map.
 ### function filtereff
 
 ```
+template <class T >
 void filtereff(
-    std::vector< const HEPUtils::Particle * > & particles,
+    std::vector< T * > & particlesOrJetss,
     double eff,
     bool do_delete =false
 )
@@ -1476,23 +1578,22 @@ Utility function for filtering a supplied particle vector by sampling wrt an eff
 ### function filtereff
 
 ```
+template <class T >
 void filtereff(
-    std::vector< const HEPUtils::Particle * > & particles,
-    std::function< double(const HEPUtils::Particle *)> eff_fn,
+    std::vector< T * > & particlesOrJetss,
+    std::function< double(T *)> eff_fn,
     bool do_delete =false
 )
 ```
 
 Utility function for filtering a supplied particle vector by sampling an efficiency returned by a provided function object. 
 
-Utility function for filtering a supplied particle vector by sampling wrt a binned 1D efficiency map in pT. 
-
-
 ### function filtereff_pt
 
 ```
+template <class T >
 void filtereff_pt(
-    std::vector< const HEPUtils::Particle * > & particles,
+    std::vector< T * > & particlesOrJetss,
     const HEPUtils::BinnedFn1D< double > & eff_pt,
     bool do_delete =false
 )
@@ -1500,17 +1601,52 @@ void filtereff_pt(
 
 Utility function for filtering a supplied particle vector by sampling wrt a binned 1D efficiency map in pT. 
 
+### function filtereff_eta
+
+```
+template <class T >
+void filtereff_eta(
+    std::vector< T * > & particlesOrJetss,
+    const HEPUtils::BinnedFn1D< double > & eff_eta,
+    bool do_delete =false
+)
+```
+
+Utility function for filtering a supplied particle vector by sampling wrt a binned 1D efficiency map in eta. 
+
 ### function filtereff_etapt
 
 ```
+template <class T >
 void filtereff_etapt(
-    std::vector< const HEPUtils::Particle * > & particles,
+    std::vector< T * > & particlesOrJetss,
     const HEPUtils::BinnedFn2D< double > & eff_etapt,
     bool do_delete =false
 )
 ```
 
 Utility function for filtering a supplied particle vector by sampling wrt a binned 2D efficiency map in |eta| and pT. 
+
+### function has_tag
+
+```
+inline bool has_tag(
+    const double & eff
+)
+```
+
+Randomly get a tag result (can be anything) from a single number efficiency. 
+
+### function has_tag
+
+```
+inline bool has_tag(
+    const HEPUtils::BinnedFn1D< double > & effmap,
+    double pt
+)
+```
+
+Randomly get a tag result (can be anything) from a 1D pT efficiency map. 
 
 ### function has_tag
 
@@ -1715,21 +1851,30 @@ inline bool none_of(
 
 Non-iterator version of std::none_of. 
 
-### function getSFOSpairs
+### function getOSSFpairs
 
 ```
-std::vector< std::vector< const HEPUtils::Particle * > > getSFOSpairs(
-    std::vector< const HEPUtils::Particle * > particles
+std::vector< std::vector< const HEPUtils::Particle * > > getOSSFpairs(
+    const std::vector< const HEPUtils::Particle * > & particles
 )
 ```
 
 Utility function for returning a collection of same-flavour, oppsosite-sign particle pairs. 
 
+### function getSFOSpairs
+
+```
+std::vector< std::vector< const HEPUtils::Particle * > > getSFOSpairs(
+    const std::vector< const HEPUtils::Particle * > & particles
+)
+```
+
+
 ### function getOSpairs
 
 ```
 std::vector< std::vector< const HEPUtils::Particle * > > getOSpairs(
-    std::vector< const HEPUtils::Particle * > particles
+    const std::vector< const HEPUtils::Particle * > & particles
 )
 ```
 
@@ -1739,17 +1884,26 @@ Utility function for returning a collection of oppsosite-sign particle pairs.
 
 ```
 std::vector< std::vector< const HEPUtils::Particle * > > getSSpairs(
-    std::vector< const HEPUtils::Particle * > particles
+    const std::vector< const HEPUtils::Particle * > & particles
 )
 ```
 
 Utility function for returning a collection of same-sign particle pairs. 
 
+### function getSFpairs
+
+```
+std::vector< std::vector< const HEPUtils::Particle * > > getSFpairs(
+    std::vector< const HEPUtils::Particle * > particles
+)
+```
+
+
 ### function getBJetPairs
 
 ```
 std::vector< std::vector< const HEPUtils::Jet * > > getBJetPairs(
-    std::vector< const HEPUtils::Jet * > bjets
+    const std::vector< const HEPUtils::Jet * > & bjets
 )
 ```
 
@@ -1823,6 +1977,15 @@ inline void sortByPt(
 inline void sortByParentMass(
     std::vector< std::vector< const Particle * > > & pairs,
     double mP
+)
+```
+
+
+### function sortByInvariantMass
+
+```
+inline void sortByInvariantMass(
+    std::vector< std::vector< const Particle * > > & pairs
 )
 ```
 
@@ -1971,6 +2134,55 @@ inline bool oppositeSign(
 ```
 
 Have two particles the opposite sign? 
+
+### function applyEfficiency
+
+```
+template <class T >
+void applyEfficiency(
+    std::vector< T * > & particlesOrJets,
+    const double eff
+)
+```
+
+Generic function to apply efficiencies on a list of particles or jets, provided as a scalar number. 
+
+### function applyEfficiency
+
+```
+template <class T >
+void applyEfficiency(
+    std::vector< T * > & particlesOrJets,
+    const HEPUtils::BinnedFn1D< double > & eff,
+    bool pTBins =true
+)
+```
+
+Generic function to apply efficiencies on a list of particles or jets, provided as HEPUtils 1D binned efficiencies in pT or eta. 
+
+### function applyEfficiency
+
+```
+template <class T >
+void applyEfficiency(
+    std::vector< T * > & particlesOrJets,
+    const HEPUtils::BinnedFn2D< double > & eff
+)
+```
+
+Generic function to apply efficiencies on a list of particles or jets, provided as HEPUtils 2D binned efficiencies in eta and pT. 
+
+### function applyBtagMisId
+
+```
+inline void applyBtagMisId(
+    std::vector< const HEPUtils::Jet * > & jets,
+    std::vector< const HEPUtils::Jet * > & bjets,
+    double mis_id_prob
+)
+```
+
+Apply user-specified b-tag misidentification rate (flat) 
 
 ### function LEP208_SLHA1_convention_xsec_selselbar
 
@@ -3378,6 +3590,20 @@ const multimap_PID_pair_int & all_PID_pairs_to_process_codes()
 ```
 
 
+### function PerformInitialCrossSection_Pythia
+
+```
+template <typename PythiaT ,
+typename EventT >
+void PerformInitialCrossSection_Pythia(
+    initialxsec_container & result,
+    SLHAstruct & slha,
+    const str model_suffix,
+    const Options & runOptions
+)
+```
+
+
 ### function dropHepMCEventPy8Collider
 
 ```
@@ -3529,6 +3755,26 @@ FJNS::RecombinationScheme FJRecomScheme_map(
 ```
 
 
+### function sortByPT0l
+
+```
+bool sortByPT0l(
+    const HEPUtils::Jet * jet1,
+    const HEPUtils::Jet * jet2
+)
+```
+
+
+### function sortByPT0l_sharedptr
+
+```
+bool sortByPT0l_sharedptr(
+    std::shared_ptr< HEPUtils::Jet > jet1,
+    std::shared_ptr< HEPUtils::Jet > jet2
+)
+```
+
+
 ### function sortByPT13
 
 ```
@@ -3629,6 +3875,119 @@ double calcMT_1l(
 ```
 
 
+### function sortBypT_j
+
+```
+bool sortBypT_j(
+    const Jet * jet1,
+    const Jet * jet2
+)
+```
+
+
+### function sortBypT_l
+
+```
+bool sortBypT_l(
+    const Particle * lep1,
+    const Particle * lep2
+)
+```
+
+
+### function rotateXY
+
+```
+static void rotateXY(
+    TMatrix & mat,
+    TMatrix & mat_new,
+    double phi
+)
+```
+
+
+### function ellipsesAreDisjoint
+
+```
+bool ellipsesAreDisjoint(
+    const EllipseParams & e1,
+    const EllipseParams & e2
+)
+```
+
+
+### function __private_ellipsesAreDisjoint
+
+```
+bool __private_ellipsesAreDisjoint(
+    const double coeffLamPow3,
+    const double coeffLamPow2,
+    const double coeffLamPow1,
+    const double coeffLamPow0
+)
+```
+
+
+### function myversion
+
+```
+void myversion()
+```
+
+
+### function MT
+
+```
+double MT(
+    double px1,
+    double px2,
+    double py1,
+    double py2,
+    double m1,
+    double m2
+)
+```
+
+
+### function ben_findsols
+
+```
+std::pair< double, double > ben_findsols(
+    double MT2,
+    double px,
+    double py,
+    double visM,
+    double Ma,
+    double pxb,
+    double pyb,
+    double metx,
+    double mety,
+    double visMb,
+    double Mb
+)
+```
+
+
+### function SortLeptons2LJ
+
+```
+bool SortLeptons2LJ(
+    const pair< TLorentzVector, int > lv1,
+    const pair< TLorentzVector, int > lv2
+)
+```
+
+
+### function SortJets2LJ
+
+```
+bool SortJets2LJ(
+    const TLorentzVector jv1,
+    const TLorentzVector jv2
+)
+```
+
+
 ### function sortByPT_j
 
 ```
@@ -3645,6 +4004,15 @@ bool sortByPT_j(
 bool sortByPT_l(
     const HEPUtils::Particle * lep1,
     const HEPUtils::Particle * lep2
+)
+```
+
+
+### function SSLeptons
+
+```
+static bool SSLeptons(
+    vector< const HEPUtils::Particle * > leptons
 )
 ```
 
@@ -3734,6 +4102,26 @@ bool sortByPT_2lep(
 ```
 double Phi_mpi_pi(
     double x
+)
+```
+
+
+### function sortByPT14
+
+```
+bool sortByPT14(
+    const HEPUtils::Jet * jet1,
+    const HEPUtils::Jet * jet2
+)
+```
+
+
+### function sortByPT14_sharedptr
+
+```
+bool sortByPT14_sharedptr(
+    std::shared_ptr< HEPUtils::Jet > jet1,
+    std::shared_ptr< HEPUtils::Jet > jet2
 )
 ```
 
@@ -3835,6 +4223,29 @@ Dummy observable that creates a dependency on TestModel1D.
 
 This is used to satisfy the normal GAMBIT model requrements in a minimal way. This is useful in the case where we just want to run ColliderBit on a single point with a custom Pythia version, using Pythia's SLHA interface. 
 
+
+### function calc_N_MC
+
+```
+int calc_N_MC(
+    std::string method,
+    double n_mc_mean
+)
+```
+
+
+Calculate the required number of MC events Currently can pick between fixed, or provide the mean and pull from a Poisson 
+
+
+### function GetMaxLumi
+
+```
+double GetMaxLumi(
+    const std::vector< str > & analyses
+)
+```
+
+Get the maximum luminosity required for any analysis in a given collider. 
 
 ### function operateLHCLoop
 
@@ -3947,17 +4358,22 @@ void fill_analysis_loglikes(
     const AnalysisData & ana_data,
     AnalysisLogLikes & ana_loglikes,
     bool use_marg,
+    bool always_compute_all_SR_loglikes,
+    double(*)(const int &, const double &, const double &, const double &) marginaliser,
     bool has_and_use_covar,
     bool combine_nocovar_SRs,
+    const Options & runOptions,
     bool has_and_use_fulllikes,
     bool(*)(const str &) FullLikes_FileExists,
-    int(*)(const str &, const str &) FullLikes_ReadIn,
+    int(*)(const str &, const str &, const str &) FullLikes_ReadIn,
     double(*)(std::map< str, double > &, const str &) FullLikes_Evaluate,
+    double xsec,
+    int n_mc,
     const std::string alt_loglike_key
 )
 ```
 
-Forward declaration of funtion in LHC_likelihoods. 
+Forward declaration of function in LHC_likelihoods. 
 
 Helper function called by calc_LHC_LogLikes to compute the loglike(s) for a given analysis. 
 
@@ -4004,7 +4420,8 @@ A function for filling the analysis_info_map for the DMEFT model.
 void DMsimp_fill_analysis_info_map(
     std::map< str, str > Analysis_data_path,
     std::map< str, std::vector< str > > Interpolation_columns,
-    int Ndim
+    int Ndim,
+    std::vector< str > skip_analyses
 )
 ```
 
@@ -4015,7 +4432,8 @@ A function for filling the analysis_info_map for the DMsimp models.
 ```
 void SubGeVDM_fill_analysis_info_map(
     std::map< str, str > Analysis_data_path,
-    std::map< str, std::vector< str > > Interpolation_columns
+    std::map< str, std::vector< str > > Interpolation_columns,
+    std::vector< str > skip_analyses
 )
 ```
 
@@ -4504,6 +4922,34 @@ void getAnalysisContainer(
 
 Retrieve an analysis container for a specific detector. 
 
+### function getATLASAnalysisContainer
+
+```
+void getATLASAnalysisContainer(
+    AnalysisContainer & result
+)
+```
+
+Retrieve a container for analyses with a given experiment. 
+
+### function getCMSAnalysisContainer
+
+```
+void getCMSAnalysisContainer(
+    AnalysisContainer & result
+)
+```
+
+
+### function getIdentityAnalysisContainer
+
+```
+void getIdentityAnalysisContainer(
+    AnalysisContainer & result
+)
+```
+
+
 ### function getBuckFastATLAS
 
 ```
@@ -4745,6 +5191,18 @@ void getTotalCrossSectionAsMap(
 
 Get cross-section info as map_str_dbl (for simple printing) 
 
+### function calc_TotalCrossSection_LogLike
+
+```
+void calc_TotalCrossSection_LogLike(
+    double & result
+)
+```
+
+
+A log-likelihood function based on the total collider cross-section. Can e.g. be used as a dummy likelihood to guide the scanner towards interesting parameter regions, avoid going to the decoupling limit, etc. 
+
+
 ### function getPIDPairCrossSectionsInfo
 
 ```
@@ -4767,6 +5225,72 @@ void doCrossSectionConsistencyCheck(
 A consistency check that ensures that if each event is weighted by a process-level cross-section from an external calculator, then the total cross-section is taken from the event generator 
 
 
+### function InitialTotalCrossSection_Pythia
+
+```
+void InitialTotalCrossSection_Pythia(
+    map_str_xsec_container & result
+)
+```
+
+Helper function for cross-section maps. 
+
+### function InitialProcessCrossSections_Pythia
+
+```
+void InitialProcessCrossSections_Pythia(
+    map_str_map_int_process_xsec & result
+)
+```
+
+Helper function for cross-section maps. 
+
+### function InitialTotalCrossSection_YAMLCBS
+
+```
+void InitialTotalCrossSection_YAMLCBS(
+    map_str_xsec_container & result
+)
+```
+
+
+A function that assigns an initial total cross-sections directly from the scan parameters (for model ColliderBit_SLHA_scan_model) 
+
+
+### function InitialTotalCrossSection_YAMLparam
+
+```
+void InitialTotalCrossSection_YAMLparam(
+    map_str_xsec_container & result
+)
+```
+
+
+A function that assigns an initial total cross-sections directly from the scan parameters (for model ColliderBit_SLHA_scan_model) 
+
+
+### function InitialTotalCrossSection_YAMLSLHA
+
+```
+void InitialTotalCrossSection_YAMLSLHA(
+    map_str_xsec_container & result
+)
+```
+
+A function that reads a list of (SLHA file, total cross-section) pairs from the input [YAML](/documentation/code/namespaces/namespaceyaml/) file. 
+
+### function write_csv
+
+```
+void write_csv(
+    const std::string & filename,
+    const std::vector< std::string > & headers,
+    const std::vector< std::vector< unsigned int > > & columns,
+    char sep =','
+)
+```
+
+
 ### function calc_LHC_signals
 
 ```
@@ -4776,6 +5300,39 @@ void calc_LHC_signals(
 ```
 
 Loop over all analyses and fill a map of predicted counts. 
+
+### function calc_LHC_efficiencies_per_SR
+
+```
+void calc_LHC_efficiencies_per_SR(
+    map_str_dbl & result
+)
+```
+
+
+### function calc_LHC_efficiencies_per_analysis
+
+```
+void calc_LHC_efficiencies_per_analysis(
+    map_str_dbl & result
+)
+```
+
+
+### function calc_poisson_loglike
+
+```
+double calc_poisson_loglike(
+    std::string estimator,
+    double s,
+    double b,
+    int s_unscaled,
+    int o,
+    int n_mc,
+    double n_exp
+)
+```
+
 
 ### function _gsl_calc_Analysis_MinusLogLike
 
@@ -4788,14 +5345,7 @@ void _gsl_calc_Analysis_MinusLogLike(
 )
 ```
 
-
-**Note**: Doesn't return a full log-like: the factorial term is missing since it's expensive, fixed and cancels in DLLs 
-
-Loglike objective-function wrapper to provide the signature for GSL multimin
-
-
-We've dropped the log(n_obs!) terms, since they're expensive and cancel in computing DLL
-
+Loglike objective-function wrapper to provide the signature for GSL multimin. 
 
 ### function _gsl_calc_Analysis_MinusLogLikeGrad
 
@@ -4839,15 +5389,23 @@ std::vector< double > _gsl_mkpackedarray(
 
 ```
 double profile_loglike_cov(
+    const Options & runOptions,
     const Eigen::ArrayXd & n_preds,
+    const Eigen::ArrayXd & ,
+    const Eigen::ArrayXd & ,
     const Eigen::ArrayXd & n_obss,
     const Eigen::ArrayXd & sqrtevals,
-    const Eigen::MatrixXd & evecs
+    const Eigen::ArrayXd & ,
+    const Eigen::MatrixXd & evecs,
+    const Eigen::MatrixXd & ,
+    double(*)(const int &, const double &, const double &, const double &) ,
+    int ,
+    double 
 )
 ```
 
 
-**Note**: Return value is missing the log(n_obs!) terms (n_SR of them) which cancel in LLR calculation 
+**Note**: : marginaliser not used, but added to match function signature with marg_loglike_cov 
 
 **Todo**: Pass in the cov, and compute the fixed evals, evecs, and corr matrix as fixed params in here? Via a helper function to reduce duplication 
 
@@ -4860,7 +5418,8 @@ Return the best log likelihood
 double marg_loglike_nulike1sr(
     const Eigen::ArrayXd & n_preds,
     const Eigen::ArrayXd & n_obss,
-    const Eigen::ArrayXd & sqrtevals
+    const Eigen::ArrayXd & sqrtevals,
+    double(*)(const int &, const double &, const double &, const double &) marginaliser
 )
 ```
 
@@ -4869,10 +5428,18 @@ double marg_loglike_nulike1sr(
 
 ```
 double marg_loglike_cov(
+    const Options & runOptions,
     const Eigen::ArrayXd & n_preds,
+    const Eigen::ArrayXd & n_bkg,
+    const Eigen::ArrayXd & n_preds_unscaled,
     const Eigen::ArrayXd & n_obss,
     const Eigen::ArrayXd & sqrtevals,
-    const Eigen::MatrixXd & evecs
+    const Eigen::ArrayXd & sqrtevals_bkg,
+    const Eigen::MatrixXd & evecs,
+    const Eigen::MatrixXd & evecs_bkg,
+    double(*)(const int &, const double &, const double &, const double &) marginaliser,
+    int n_mc,
+    double n_mc_expected
 )
 ```
 
@@ -4889,7 +5456,7 @@ void fill_analysis_loglikes_full(
     const AnalysisData & ana_data,
     AnalysisLogLikes & ana_loglikes,
     bool(*)(const str &) FullLikes_FileExists,
-    int(*)(const str &, const str &) FullLikes_ReadIn,
+    int(*)(const str &, const str &, const str &) FullLikes_ReadIn,
     double(*)(std::map< str, double > &, const str &) FullLikes_Evaluate,
     const std::string alt_loglike_key =""
 )
@@ -4907,10 +5474,13 @@ void calc_LHC_LogLikes_common(
     bool use_fulllikes,
     AnalysisDataPointers & ana,
     const Options & runOptions,
+    double(*)(const int &, const double &, const double &, const double &) marginaliser,
     bool skip_calc,
     bool(*)(const str &) FullLikes_FileExists,
-    int(*)(const str &, const str &) FullLikes_ReadIn,
-    double(*)(std::map< str, double > &, const str &) FullLikes_Evaluate
+    int(*)(const str &, const str &, const str &) FullLikes_ReadIn,
+    double(*)(std::map< str, double > &, const str &) FullLikes_Evaluate,
+    double xsec,
+    int n_mc
 )
 ```
 
@@ -5092,6 +5662,17 @@ void get_susy_spectrum_validation_loglike(
 ```
 
 
+### function operator<<
+
+```
+std::ostream & operator<<(
+    std::ostream & os,
+    const onnx_rt_wrapper & rort
+)
+```
+
+Printing function for debugging. 
+
 ### function getActiveProcessCodeToPIDPairsMap
 
 ```
@@ -5129,6 +5710,34 @@ void runAnalyses(
 ```
 
 Run all the analyses in a given container. 
+
+### function runATLASAnalyses
+
+```
+void runATLASAnalyses(
+    AnalysisDataPointers & result
+)
+```
+
+Run all analyses for the given experiment. 
+
+### function runCMSAnalyses
+
+```
+void runCMSAnalyses(
+    AnalysisDataPointers & result
+)
+```
+
+
+### function runIdentityAnalyses
+
+```
+void runIdentityAnalyses(
+    AnalysisDataPointers & result
+)
+```
+
 
 ### function smearEvent
 
@@ -5229,4 +5838,4 @@ The di_jet searches that are to be used.
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:31 +0000
+Updated on 2026-11-03 at 14:50:42 +0000

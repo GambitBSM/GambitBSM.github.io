@@ -84,8 +84,8 @@ namespace Gambit
     double WIMP_annihilation::B(const std::string& channel) const
     {
        double out;
-       auto it = a.find(channel);
-       if(it==a.end())
+       auto it = b.find(channel);
+       if(it==b.end())
        {
           out = 0;
        }
@@ -111,4 +111,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:34 +0000
+Updated on 2026-11-03 at 14:50:46 +0000

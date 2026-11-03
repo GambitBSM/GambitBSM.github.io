@@ -33,13 +33,13 @@ namespace Gambit {
       return P2(75. + (x - 179.00) / (753.00 - 179.00) * (100. - 75.),
                 100. + (y - 82.00) / (688.00 - 82.00) * (0. - 100.));
     }
-    
+
     bool OPALCharginoHadronicLimitAt208GeV::isWithinExclusionRegion(double x, double y, double) const
     {
       /// @note Plots only go down to 75 GeV
       return (y <= x and x <= 205. / 2. and x > 75.);
     }
-    
+
     OPALCharginoHadronicLimitAt208GeV::OPALCharginoHadronicLimitAt208GeV()
     {
       ///// Limit values /////
@@ -249,7 +249,7 @@ namespace Gambit {
       _limitContours.insert(LimitContourEntry(2, contoursPointer));
 
     }
-    
+
 
 
     P2 OPALCharginoSemiLeptonicLimitAt208GeV::convertPt(double x, double y) const
@@ -257,13 +257,13 @@ namespace Gambit {
       return P2(75. + (x - 179.00) / (753.00 - 179.00) * (100. - 75.),
                 100. + (y - 95.00) / (700.00 - 95.00) * (0. - 100.));
     }
-    
+
     bool OPALCharginoSemiLeptonicLimitAt208GeV::isWithinExclusionRegion(double x, double y, double) const
     {
       /// @note Plots only go down to 75 GeV
       return (y <= x and x <= 205. / 2. and x > 75.);
     }
-    
+
     OPALCharginoSemiLeptonicLimitAt208GeV::OPALCharginoSemiLeptonicLimitAt208GeV()
     {
       ///// Limit values /////
@@ -446,7 +446,7 @@ namespace Gambit {
       _limitContours.insert(LimitContourEntry(3, contoursPointer));
 
     }
-    
+
 
 
     P2 OPALCharginoLeptonicLimitAt208GeV::convertPt(double x, double y) const
@@ -454,13 +454,13 @@ namespace Gambit {
       return P2(75. + (x - 185.00) / (759.00 - 185.00) * (100. - 75.),
                 100. + (y - 83.00) / (689.00 - 83.00) * (0. - 100.));
     }
-    
+
     bool OPALCharginoLeptonicLimitAt208GeV::isWithinExclusionRegion(double x, double y, double) const
     {
       /// @note Plots only go down to 75 GeV
       return (y <= x and x <= 205. / 2. and x > 75.);
     }
-    
+
     OPALCharginoLeptonicLimitAt208GeV::OPALCharginoLeptonicLimitAt208GeV()
     {
       ///// Limit values /////
@@ -636,13 +636,13 @@ namespace Gambit {
       return P2(75. + (x - 176.00) / (749.00 - 176.00) * (100. - 75.),
                 100. + (y - 100.00) / (705.00 - 100.00) * (0. - 100.));
     }
-    
+
     bool OPALCharginoAllChannelsLimitAt208GeV::isWithinExclusionRegion(double x, double y, double) const
     {
       /// @note Plots only go down to 75 GeV
       return (y <= x and x <= 205. / 2. and x > 75.);
     }
-    
+
     OPALCharginoAllChannelsLimitAt208GeV::OPALCharginoAllChannelsLimitAt208GeV()
     {
       ///// Limit values /////
@@ -836,7 +836,7 @@ namespace Gambit {
       /// @note Plot caption explicitly mentions 100 GeV, rather than the Z mass
       return (y <= x and x + y <= 208. and x + y > 100.);
     }
-    
+
     OPALNeutralinoHadronicLimitAt208GeV::OPALNeutralinoHadronicLimitAt208GeV()
     {
       ///// Limit values /////
@@ -1517,7 +1517,7 @@ namespace Gambit {
       return P2(60. + (x - 236.00) / (835.00 - 236.00) * (200. - 60.),
                 100. + (y - 76.00) / (692.00 - 76.00) * (0. - 100.));
     }
-    
+
     bool OPALNeutralinoHadronicViaZLimitAt208GeV::isWithinExclusionRegion(double x, double y, double) const
     {
       /// @note Plot caption explicitly mentions 100 GeV, rather than the Z mass
@@ -1528,7 +1528,7 @@ namespace Gambit {
             and y > holeCorner2.gety() and y < holeCorner1.gety());
       return (y <= x and x + y <= 208. and x + y > 100. and !inHole);
     }
-    
+
     OPALNeutralinoHadronicViaZLimitAt208GeV::OPALNeutralinoHadronicViaZLimitAt208GeV()
     {
       ///// Limit values /////
@@ -2098,4 +2098,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:35 +0000
+Updated on 2026-11-03 at 14:50:48 +0000

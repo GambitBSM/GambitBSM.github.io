@@ -255,7 +255,7 @@ scanner_plugin(postprocessor, version(1, 0, 0))
     #ifdef WITH_MPI
     GMPI::Comm ppComm;
     ppComm.dup(MPI_COMM_WORLD,"PostprocessorComm"); // duplicates MPI_COMM_WORLD
-    // Message tag definitons in PPDriver class:
+    // Message tag definitions in PPDriver class:
     #endif
 
     /// Determine what data needs to be copied from the input file to the new output dataset
@@ -266,6 +266,7 @@ scanner_plugin(postprocessor, version(1, 0, 0))
     settings.all_params.insert("unitCubeParameters"); // It would be better to keep the originals here, but currently cannot turn off the printing from within like_ptr.
     settings.all_params.insert("MPIrank"); // These should be re-printed the same as they were anyway
     settings.all_params.insert("pointID");
+    settings.all_params.insert("scanID");
     settings.all_params.insert(settings.logl_purpose_name); // If there is a name clash and the run was not aborted, we are to discard the old data under this name.
     settings.all_params.insert("Modified" + settings.logl_purpose_name);
     settings.all_params.insert(settings.reweighted_loglike_name); //   "  "
@@ -367,7 +368,7 @@ scanner_plugin(postprocessor, version(1, 0, 0))
             int my_finished = (I_am_finished ? 1 : 0); // convert to int in a way that prevents unused-variable warnings
             std::vector<int> all_finished = allgather_int(my_finished, ppComm);
             bool everyone_finished = true;
-            int tmp_rank = 0;
+            // int tmp_rank = 0;
             for(auto it=all_finished.begin(); it!=all_finished.end(); ++it)
             {
                if(*it!=1)
@@ -375,7 +376,7 @@ scanner_plugin(postprocessor, version(1, 0, 0))
                   //std::cout << "Rank "<<rank<<": rank "<<tmp_rank<<" is not finished ("<<*it<<")"<<std::endl;
                   everyone_finished = false; // If anyone has not finished, we proceed with redistribution.
                }
-               tmp_rank++;
+               // tmp_rank++;
             }
             /// @}
 
@@ -433,4 +434,4 @@ scanner_plugin(postprocessor, version(1, 0, 0))
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:33 +0000
+Updated on 2026-11-03 at 14:50:45 +0000

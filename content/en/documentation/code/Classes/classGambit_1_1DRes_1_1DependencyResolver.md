@@ -32,6 +32,7 @@ Main dependency resolver.
 | [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[checkTypeMatch](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/#function-checktypematch)**(VertexID vertex, const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) & purpose, const std::vector< [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > & types)<br>Ensure that the type of a given vertex is equivalent to at least one of a provided list, and return the matching list entry.  |
 | template <typename TYPE \> <br>TYPE | **[getObsLike](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/#function-getobslike)**(VertexID vertex)<br>Return the result of a functor.  |
 | const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) & | **[getPurpose](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/#function-getpurpose)**(VertexID v)<br>Return the purpose associated with a given functor.  |
+| bool | **[getCritical](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/#function-getcritical)**(VertexID v)<br>Return whether a given functor is critical.  |
 | void | **[invalidatePointAt](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/#function-invalidatepointat)**(VertexID vertex, bool isnan)<br>Tell functor that it invalidated the current point in model space (due to a large or NaN contribution to lnL)  |
 | void | **[resetAll](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/#function-resetall)**()<br>Reset all active functors and delete existing results.  |
 | void | **[checkForUnusedRules](/documentation/code/classes/classgambit_1_1dres_1_1dependencyresolver/#function-checkforunusedrules)**()<br>Check for unused rules and options.  |
@@ -221,6 +222,22 @@ Returns the purpose associated with a given functor. Non-null only if the functo
 '__no_purpose' if the functor does not correspond to an ObsLike entry in the ini file.
 
 
+### function getCritical
+
+```
+bool getCritical(
+    VertexID v
+)
+```
+
+Return whether a given functor is critical. 
+
+Returns whether a given functor is critical True only if the functor corresponds to a critical ObsLike entry in the ini file. 
+
+
+critical can safely be false if the functor does not correspond to an ObsLike entry in the ini file.
+
+
 ### function invalidatePointAt
 
 ```
@@ -288,4 +305,4 @@ int scanID;
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:32 +0000
+Updated on 2026-11-03 at 14:50:44 +0000

@@ -22,6 +22,8 @@ TODO: see if we can use this one:  [More...](#detailed-description)
 | **[Gambit::Diver_1_0_0](/documentation/code/namespaces/namespacegambit_1_1diver__1__0__0/)**  |
 | **[Gambit::Diver_1_0_2](/documentation/code/namespaces/namespacegambit_1_1diver__1__0__2/)**  |
 | **[Gambit::Diver_1_0_4](/documentation/code/namespaces/namespacegambit_1_1diver__1__0__4/)**  |
+| **[Gambit::Diver_1_0_5](/documentation/code/namespaces/namespacegambit_1_1diver__1__0__5/)**  |
+| **[Gambit::Diver_1_3_0](/documentation/code/namespaces/namespacegambit_1_1diver__1__3__0/)**  |
 | **[Gambit::DRes](/documentation/code/namespaces/namespacegambit_1_1dres/)** <br>Forward declaration of [Rule]() and Observables classes for saving pointers to ignored and matched examples.  |
 | **[Gambit::ExampleBit_A](/documentation/code/namespaces/namespacegambit_1_1examplebit__a/)**  |
 | **[Gambit::ExampleBit_B](/documentation/code/namespaces/namespacegambit_1_1examplebit__b/)**  |
@@ -30,6 +32,7 @@ TODO: see if we can use this one:  [More...](#detailed-description)
 | **[Gambit::GMPI](/documentation/code/namespaces/namespacegambit_1_1gmpi/)** <br>Forward declare MPI class.  |
 | **[Gambit::GreAT](/documentation/code/namespaces/namespacegambit_1_1great/)**  |
 | **[Gambit::IniParser](/documentation/code/namespaces/namespacegambit_1_1iniparser/)**  |
+| **[Gambit::jswarm_1_0_0](/documentation/code/namespaces/namespacegambit_1_1jswarm__1__0__0/)**  |
 | **[Gambit::Logging](/documentation/code/namespaces/namespacegambit_1_1logging/)** <br>Forward declare minimial logging components needed to use logger.  |
 | **[Gambit::LogTags](/documentation/code/namespaces/namespacegambit_1_1logtags/)**  |
 | **[Gambit::MicrOmegas](/documentation/code/namespaces/namespacegambit_1_1micromegas/)**  |
@@ -257,6 +260,7 @@ TODO: see if we can use this one:  [More...](#detailed-description)
 | struct | **[Gambit::model_info](/documentation/code/classes/structgambit_1_1model__info/)** <br>Helper struct to carry around model information.  |
 | class | **[Gambit::ModelHierarchy](/documentation/code/classes/classgambit_1_1modelhierarchy/)** <br>Model hierarchy tree class.  |
 | class | **[Gambit::ModelParameters](/documentation/code/classes/classgambit_1_1modelparameters/)**  |
+| class | **[Gambit::ModelValidationHandler](/documentation/code/classes/classgambit_1_1modelvalidationhandler/)**  |
 | class | **[Gambit::module_functor](/documentation/code/classes/classgambit_1_1module__functor/)** <br>Actual module functor type for all but TYPE=void.  |
 | class | **[Gambit::module_functor< void >](/documentation/code/classes/classgambit_1_1module__functor_3_01void_01_4/)** <br>Actual module functor type for TYPE=void.  |
 | class | **[Gambit::module_functor_common](/documentation/code/classes/classgambit_1_1module__functor__common/)** <br>Functor derived class for module functions.  |
@@ -390,6 +394,7 @@ TODO: see if we can use this one:  [More...](#detailed-description)
 |                | Name           |
 | -------------- | -------------- |
 | enum| **[FunctorStatus](/documentation/code/namespaces/namespacegambit/#enum-functorstatus)** { Pybind_missing = -6, Mathematica_missing = -5, Backend_missing = -4, Classes_missing = -3, Function_missing = -2, Origin_missing = -1, Model_incompatible = 0, Available = 1, Active = 2} |
+| enum class| **[ModelValidationHandling](/documentation/code/namespaces/namespacegambit/#enum-modelvalidationhandling)** { pass, invalidate, raise} |
 | typedef std::string | **[str](/documentation/code/namespaces/namespacegambit/#typedef-str)** <br>Shorthand for a standard string.  |
 | typedef double | **[REAL](/documentation/code/namespaces/namespacegambit/#typedef-real)**  |
 | typedef Fdouble | **[fh_real](/documentation/code/namespaces/namespacegambit/#typedef-fh-real)**  |
@@ -450,7 +455,7 @@ TODO: see if we can use this one:  [More...](#detailed-description)
 | typedef LogTags::LogTag_declaration | **[LogTag](/documentation/code/namespaces/namespacegambit/#typedef-logtag)**  |
 | typedef std::map< std::string, double > | **[map_str_dbl](/documentation/code/namespaces/namespacegambit/#typedef-map-str-dbl)** <br>Shorthand for a string-to-double map.  |
 | typedef std::map< std::string, std::string > | **[map_str_str](/documentation/code/namespaces/namespacegambit/#typedef-map-str-str)** <br>Shorthand for a string-to-string map.  |
-| typedef std::map< std::string, double > | **[parameterMap](/documentation/code/namespaces/namespacegambit/#typedef-parametermap)**  |
+| typedef std::function< bool(const [ModelParameters](/documentation/code/classes/classgambit_1_1modelparameters/) &)> | **[modelValidator](/documentation/code/namespaces/namespacegambit/#typedef-modelvalidator)** <br>Model validation functor type.  |
 | typedef SLHAea::Coll | **[SLHAstruct](/documentation/code/namespaces/namespacegambit/#typedef-slhastruct)** <br>Less confusing name for SLHAea container class.  |
 | typedef std::pair< [str](/documentation/code/namespaces/namespacegambit/#typedef-str), [str](/documentation/code/namespaces/namespacegambit/#typedef-str) > | **[sspair](/documentation/code/namespaces/namespacegambit/#typedef-sspair)** <br>Shorthand for a pair of standard strings.  |
 | typedef std::pair< double, double > | **[ddpair](/documentation/code/namespaces/namespacegambit/#typedef-ddpair)** <br>Shorthand for a pair of doubles.  |
@@ -581,6 +586,7 @@ TODO: see if we can use this one:  [More...](#detailed-description)
 | [Printers::BaseReader](/documentation/code/classes/classgambit_1_1printers_1_1basereader/) & | **[get_pp_reader](/documentation/code/namespaces/namespacegambit/#function-get-pp-reader)**() |
 | void | **[set_global_printer_manager](/documentation/code/namespaces/namespacegambit/#function-set-global-printer-manager)**([Printers::PrinterManager](/documentation/code/classes/classgambit_1_1printers_1_1printermanager/) * pm) |
 | [Printers::PrinterManager](/documentation/code/classes/classgambit_1_1printers_1_1printermanager/) * | **[get_global_printer_manager](/documentation/code/namespaces/namespacegambit/#function-get-global-printer-manager)**() |
+| int | **[register_model_validation_function](/documentation/code/namespaces/namespacegambit/#function-register-model-validation-function)**(const std::string & model, [modelValidator](/documentation/code/namespaces/namespacegambit/#typedef-modelvalidator) f)<br>Helper function for registering a model validation function at static initialization.  |
 | std::string | **[format_for_screen](/documentation/code/namespaces/namespacegambit/#function-format-for-screen)**(const std::string & input_string) |
 | void | **[print_to_screen](/documentation/code/namespaces/namespacegambit/#function-print-to-screen)**(const std::string & file_in, const std::string & name) |
 | int | **[get_screen_cols](/documentation/code/namespaces/namespacegambit/#function-get-screen-cols)**() |
@@ -650,6 +656,7 @@ TODO: see if we can use this one:  [More...](#detailed-description)
 | const double | **[mw_err_observed](/documentation/code/namespaces/namespacegambit/#variable-mw-err-observed)**  |
 | const double | **[mz_central_observed](/documentation/code/namespaces/namespacegambit/#variable-mz-central-observed)**  |
 | const double | **[mz_err_observed](/documentation/code/namespaces/namespacegambit/#variable-mz-err-observed)**  |
+| constexpr const char * | **[cli_help_text](/documentation/code/namespaces/namespacegambit/#variable-cli-help-text)**  |
 | | **[gambit_registry](/documentation/code/namespaces/namespacegambit/#variable-gambit-registry)**  |
 | [reg_elem](/documentation/code/classes/classgambit_1_1reg__elem/)< factory_type > | **[__scanner_factories__](/documentation/code/namespaces/namespacegambit/#variable-scanner-factories)**  |
 | const [SpecOverrideOptions](/documentation/code/classes/classgambit_1_1specoverrideoptions/)(0) | **[use_overrides](/documentation/code/namespaces/namespacegambit/#variable-use-overrides)**  |
@@ -718,7 +725,9 @@ TODO: see if we can use this one:
   * Anders Kvellestad 
   * Anders Kvellestad
   * Martin White
+  * Anders Kvellestad ([anders.kvellestad@fys.uio.no](mailto:anders.kvellestad@fys.uio.no)) 
   * Tomas Gonzalo ([gonzalo@physik.rwth-aachen.de](mailto:gonzalo@physik.rwth-aachen.de)) 
+  * Tomas Gonzalo ([tomas.gonzalo@kit.edu](mailto:tomas.gonzalo@kit.edu)) 
   * Gregory Martinez ([gregory.david.martinez@gmail.com](mailto:gregory.david.martinez@gmail.com)) 
   * Gregory Martinez ([gregory.david.martinez@gmail.com](mailto:gregory.david.martinez@gmail.com)) 
   * Pat Scott ([p.scott@imperial.ac.uk](mailto:p.scott@imperial.ac.uk)) 
@@ -737,7 +746,13 @@ TODO: see if we can use this one:
   * 2020 June 
 
 ------------------
+  * 2023 December 
+
+------------------
   * 2021 July 
+
+------------------
+  * 2023 July 
 
 ------------------
   * Feb 2014
@@ -771,11 +786,15 @@ Simulation of "Search for photonic signatures of gauge-mediated supersymmetry in
 
 Simulation of "Search for new phenomena in final states with photons, jets and missing transverse momentum in pp collisions at sqrt(s)=13 TeV with the ATLAS detector".
 
+Unbiased likelihood estimator
+
 
 Based on:
 
 * [https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2021-028/](https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2021-028/)
 * code in Analysis_ATLAS_13TeV_PhotonGGM_36invfb.cpp by Martin White
+August 2023: Updated to the paper version by Martin White [https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-2018-11/](https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-2018-11/)
+
 
 Based on:
 
@@ -810,6 +829,16 @@ Registry of priors Here we specify mappings from strings to prior objects. We ne
 
 
 ------------------
+
+================================================= 
+
+
+# Function definitions
+
+================================================= 
+
+
+# Function definitions
 
 ================================================= 
 
@@ -1424,6 +1453,24 @@ Enumeration for the status of a given functor. Note that the discriminant has cu
 * A positive value signals that the functor can be used (as long as the functor is allowed the for the models in the scan) Possible values are 0 = model incompatibility (default) 1 = available 2 = active 
 
 
+### enum ModelValidationHandling
+
+| Enumerator | Value | Description |
+| ---------- | ----- | ----------- |
+| pass | |   |
+| invalidate | |   |
+| raise | |   |
+
+
+
+
+Enumeration for model validation handling strategies.
+
+* pass: No model validation is performed.
+* invalidate: The current parameter point will be deemed invalid
+* raise: A model validation error will be raised 
+
+
 ### typedef str
 
 ```
@@ -1852,12 +1899,13 @@ typedef std::map< std::string, std::string > Gambit::map_str_str;
 
 Shorthand for a string-to-string map. 
 
-### typedef parameterMap
+### typedef modelValidator
 
 ```
-typedef std::map<std::string, double> Gambit::parameterMap;
+typedef std::function<bool(const ModelParameters&)> Gambit::modelValidator;
 ```
 
+Model validation functor type. 
 
 ### typedef SLHAstruct
 
@@ -3158,6 +3206,17 @@ Printers::PrinterManager * get_global_printer_manager()
 ```
 
 
+### function register_model_validation_function
+
+```
+int register_model_validation_function(
+    const std::string & model,
+    modelValidator f
+)
+```
+
+Helper function for registering a model validation function at static initialization. 
+
 ### function format_for_screen
 
 ```
@@ -3849,6 +3908,13 @@ const double mz_err_observed = 0.0021;
 ```
 
 
+### variable cli_help_text
+
+```
+constexpr const char * cli_help_text;
+```
+
+
 ### variable gambit_registry
 
 ```
@@ -4295,4 +4361,4 @@ const int gambit_version_int =  10000*gambit_version_major + 100*gambit_version_
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:30 +0000
+Updated on 2026-11-03 at 14:50:42 +0000

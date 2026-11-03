@@ -35,6 +35,7 @@ A container for several [Cutflow](/documentation/code/classes/structgambit_1_1co
 | bool | **[fillnext](/documentation/code/classes/structgambit_1_1colliderbit_1_1cutflows/#function-fillnext)**(const vector< bool > & cutresults, double weight =1.)<br>Fill the next cut-state counters from an n-element results vector.  |
 | void | **[scale](/documentation/code/classes/structgambit_1_1colliderbit_1_1cutflows/#function-scale)**(double factor)<br>Scale the contained {[Cutflow](/documentation/code/classes/structgambit_1_1colliderbit_1_1cutflow/)}s by the given factor.  |
 | void | **[normalize](/documentation/code/classes/structgambit_1_1colliderbit_1_1cutflows/#function-normalize)**(double norm, size_t icut =0) |
+| void | **[combine](/documentation/code/classes/structgambit_1_1colliderbit_1_1cutflows/#function-combine)**(const [Cutflows](/documentation/code/classes/structgambit_1_1colliderbit_1_1cutflows/) & othercfs)<br>Combine two cutflows.  |
 | string | **[str](/documentation/code/classes/structgambit_1_1colliderbit_1_1cutflows/#function-str)**() const<br>Create a string representation.  |
 | void | **[print](/documentation/code/classes/structgambit_1_1colliderbit_1_1cutflows/#function-print)**(std::ostream & os) const<br>Print string representation to a stream.  |
 
@@ -251,6 +252,16 @@ inline void normalize(
 Scale the cutflow weights so that all the weight counts after cut _icut_ are _norm_
 
 
+### function combine
+
+```
+inline void combine(
+    const Cutflows & othercfs
+)
+```
+
+Combine two cutflows. 
+
 ### function str
 
 ```
@@ -280,4 +291,4 @@ vector< Cutflow > cfs;
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:32 +0000
+Updated on 2026-11-03 at 14:50:43 +0000

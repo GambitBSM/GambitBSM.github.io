@@ -21,7 +21,6 @@ description: "[No description available]"
 |                | Name           |
 | -------------- | -------------- |
 |  | **[DEBUG_PREFIX](/documentation/code/files/runanalyses_8cpp/#define-debug-prefix)**  |
-|  | **[RUN_ANALYSES](/documentation/code/files/runanalyses_8cpp/#define-run-analyses)**(NAME, EXPERIMENT, SMEARED_EVENT_DEP) <br>Run all analyses for EXPERIMENT.  |
 
 ## Detailed Description
 
@@ -72,25 +71,6 @@ Authors (add name and date if you modify):
 #define DEBUG_PREFIX "DEBUG: OMP thread " << omp_get_thread_num() << ":  "
 ```
 
-
-### define RUN_ANALYSES
-
-```
-#define RUN_ANALYSES(
-    NAME,
-    EXPERIMENT,
-    SMEARED_EVENT_DEP
-)
-    void NAME(AnalysisDataPointers& result)                                   \
-    {                                                                         \
-      using namespace Pipes::NAME;                                            \
-      runAnalyses(result, #EXPERIMENT, *Dep::RunMC,                           \
-       *Dep::CAT(EXPERIMENT,AnalysisContainer), *Dep::SMEARED_EVENT_DEP,      \
-       *Loop::iteration, Loop::wrapup);                                       \
-    }
-```
-
-Run all analyses for EXPERIMENT. 
 
 ## Source code
 
@@ -217,7 +197,7 @@ namespace Gambit
           cout << DEBUG_PREFIX << "run"+detname+"Analyses: 'result' contains " << result.size() << " results:" << endl;
           for (const AnalysisData* a: result)
           {
-            cout << DEBUG_PREFIX << "run"+detname+"Analyses: - " << a->analysis_name << endl;            
+            cout << DEBUG_PREFIX << "run"+detname+"Analyses: - " << a->analysis_name << endl;
           }
         #endif
         return;
@@ -225,24 +205,39 @@ namespace Gambit
 
       if (iteration <= BASE_INIT) return;
 
+      // Assign event ID. The event ID is only unique within
+      // the current collider and detector.
+      SmearedEvent.set_id(iteration);
+
       // Loop over contained analyses and run them.
       Container.analyze(SmearedEvent);
 
     }
 
-    /// Run all analyses for EXPERIMENT
-    #define RUN_ANALYSES(NAME, EXPERIMENT, SMEARED_EVENT_DEP)                 \
-    void NAME(AnalysisDataPointers& result)                                   \
-    {                                                                         \
-      using namespace Pipes::NAME;                                            \
-      runAnalyses(result, #EXPERIMENT, *Dep::RunMC,                           \
-       *Dep::CAT(EXPERIMENT,AnalysisContainer), *Dep::SMEARED_EVENT_DEP,      \
-       *Loop::iteration, Loop::wrapup);                                       \
+    /// Run all analyses for the given experiment
+    void runATLASAnalyses(AnalysisDataPointers& result)
+    {
+      using namespace Pipes::runATLASAnalyses;
+      runAnalyses(result, "ATLAS", *Dep::RunMC,
+       *Dep::ATLASAnalysisContainer, *Dep::ATLASSmearedEvent,
+       *Loop::iteration, Loop::wrapup);
     }
 
-    RUN_ANALYSES(runATLASAnalyses, ATLAS, ATLASSmearedEvent)
-    RUN_ANALYSES(runCMSAnalyses, CMS, CMSSmearedEvent)
-    RUN_ANALYSES(runIdentityAnalyses, Identity, CopiedEvent)
+    void runCMSAnalyses(AnalysisDataPointers& result)
+    {
+      using namespace Pipes::runCMSAnalyses;
+      runAnalyses(result, "CMS", *Dep::RunMC,
+       *Dep::CMSAnalysisContainer, *Dep::CMSSmearedEvent,
+       *Loop::iteration, Loop::wrapup);
+    }
+
+    void runIdentityAnalyses(AnalysisDataPointers& result)
+    {
+      using namespace Pipes::runIdentityAnalyses;
+      runAnalyses(result, "Identity", *Dep::RunMC,
+       *Dep::IdentityAnalysisContainer, *Dep::CopiedEvent,
+       *Loop::iteration, Loop::wrapup);
+    }
 
   }
 }
@@ -251,4 +246,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:36 +0000
+Updated on 2026-11-03 at 14:50:48 +0000

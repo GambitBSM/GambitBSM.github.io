@@ -70,7 +70,7 @@ Authors (add name and date if you modify):
 //   *********************************************
 ///  \file
 ///
-///  ColliderBit module functions for calculating 
+///  ColliderBit module functions for calculating
 ///  event weights
 ///
 ///  The weight functions in this file are
@@ -144,8 +144,8 @@ namespace Gambit
       // Determine what to do based on the trust_level of the externally provided cross-section:
       if (xs.trust_level() >= use_trust_level)
       {
-        // Add the generator cross-sections for other process codes which also 
-        // contribute to the externaly provided cross-section
+        // Add the generator cross-sections for other process codes which also
+        // contribute to the externally provided cross-section
         for (int other_process_code : xs.processes_sharing_xsec())
         {
           process_xsec_generator += HardScatteringSim_ptr->xsec_fb(other_process_code);
@@ -161,7 +161,7 @@ namespace Gambit
         if (process_xsec_generator > 0.0)
         {
           weight = xs.xsec() / process_xsec_generator;
-          weight_err = sqrt(  pow(xs.xsec_err() / process_xsec_generator, 2) 
+          weight_err = sqrt(  pow(xs.xsec_err() / process_xsec_generator, 2)
                             + pow(xs.xsec() * process_xsec_err_generator / pow(process_xsec_generator, 2), 2) );
         }
         else
@@ -196,22 +196,29 @@ namespace Gambit
       using namespace Pipes::setEventWeight_fromCrossSection;
 
       const static int use_trust_level = runOptions->getValueOrDef<int>(1, "use_cross_section_trust_level");
-      
+      const std::string estimator = Dep::RunMC->estimator;
+      if (estimator == "UMVUE")
+      {
+        std::stringstream errmsg_ss;
+        errmsg_ss << "Cannot currently use non-unity event weights with the UMVUE estimator. Please either choose another estimator, or swap to using setEventWeight_unity function.";
+        ColliderBit_error().raise(LOCAL_INFO, errmsg_ss.str());
+      }
+
       if(*Loop::iteration < 0) return;
 
       result = std::bind(_setEventWeight_fromCrossSection,
                          std::placeholders::_1,
                          std::placeholders::_2,
-                         *Dep::ProcessCrossSectionsMap, 
+                         *Dep::ProcessCrossSectionsMap,
                          use_trust_level);
     }
 
 
-  } 
-} 
+  }
+}
 ```
 
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:36 +0000
+Updated on 2026-11-03 at 14:50:48 +0000

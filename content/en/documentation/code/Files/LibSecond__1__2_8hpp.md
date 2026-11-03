@@ -119,7 +119,7 @@ LOAD_LIBRARY
  * interface to the library functions/variables at module level. */
 
 /* Syntax for BE_FUNCTION (same as for any other backend):
- * BE_FUNCTION([choose function name], [type], [arguement types], "[exact symbol name]", "[choose capability name]")
+ * BE_FUNCTION([choose function name], [type], [argument types], "[exact symbol name]", "[choose capability name]")
  */
 
 BE_FUNCTION(initialize, void, (int), "initialize", "initialize_capability")
@@ -177,4 +177,4 @@ BE_CONV_FUNCTION(awesomenessNotByAnders, double, (int), "awesomeness")
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:36 +0000
+Updated on 2026-11-03 at 14:50:49 +0000

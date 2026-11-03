@@ -221,7 +221,7 @@ namespace Gambit
                 template <typename... args>
                 auto operator()(args&... params) -> typename find_variadic_type <void (args...), T...>::ret_type
                 {
-                    static_assert(find_variadic_type <void (args...), T...>::value, "\n\033[00;31;1mPlugin Interface:  Entered argument types do not match any of the plugin mains' argument types.\033[00m\n");
+                    static_assert(find_variadic_type <void (args...), T...>::value, "\n\u001B[00;31;1mPlugin Interface:  Entered argument types do not match any of the plugin mains' argument types.\u001B[00m\n");
                     return Plugin_Main_Interface_Base<typename find_variadic_type <void (args...), T...>::func_type>::operator()(params...);
                 }
             };
@@ -256,4 +256,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:33 +0000
+Updated on 2026-11-03 at 14:50:45 +0000

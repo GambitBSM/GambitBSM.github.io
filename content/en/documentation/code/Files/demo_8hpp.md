@@ -39,6 +39,7 @@ description: "[No description available]"
 
   * Ben Farmer 
   * Pat Scott 
+  * Patrick Stoecker ([stoecker@physik.rwth-aachen.de](mailto:stoecker@physik.rwth-aachen.de)) 
 
 
 **Date**: 
@@ -47,6 +48,7 @@ description: "[No description available]"
   * 2014 Mar 
   * 2019 Jul
   * 2013 Sep
+  * 2026 Oct
 
 
 GAMBIT demonstration models.
@@ -183,6 +185,10 @@ DEPENDENCY(
 ///  \author Pat Scott
 ///  \date 2013 Sep
 ///
+///  \author Patrick Stoecker
+///          (stoecker@physik.rwth-aachen.de)
+///  \date 2026 Oct
+///
 ///  *********************************************
 
 
@@ -228,6 +234,7 @@ DEPENDENCY(
 #define MODEL NormalDist
   START_MODEL
   DEFINEPARS(mu,sigma)
+  MODEL_CONSISTENCY_CHECK(NormalDist_ensure_positive_sigma)
 #undef MODEL
 
 // A one-parameter model for testing simple prior transformations
@@ -450,7 +457,7 @@ DEPENDENCY(
   #undef CAPABILITY
 
   // The "module function" definition
-  void MODEL_NAMESPACE::get_a_cap(unsigned int& result)
+  inline void MODEL_NAMESPACE::get_a_cap(unsigned int& result)
   {
       using namespace Pipes::get_a_cap;
 
@@ -468,4 +475,4 @@ DEPENDENCY(
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:34 +0000
+Updated on 2026-11-03 at 14:50:46 +0000

@@ -29,7 +29,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer/VertexBufferNumeric1D_HDF5.hpp" line="57" column="35" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/VertexBufferNumeric1D_HDF5.hpp" bodystart="324" bodyend="335"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/VertexBufferNumeric1D_HDF5.hpp" line="57" column="35" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/VertexBufferNumeric1D_HDF5.hpp" bodystart="332" bodyend="343"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1Printers_1_1VertexBufferNumeric1D__HDF5_1afdde84874634f3c90fc0e1cb29dabafc" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type><ref refid="classGambit_1_1Printers_1_1DataSetInterfaceScalar" kindref="compound">DataSetInterfaceScalar</ref>&lt; T, CHUNKLENGTH &gt; &amp;</type>
@@ -43,7 +43,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer/VertexBufferNumeric1D_HDF5.hpp" line="58" column="38" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/VertexBufferNumeric1D_HDF5.hpp" bodystart="338" bodyend="349"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/VertexBufferNumeric1D_HDF5.hpp" line="58" column="38" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/VertexBufferNumeric1D_HDF5.hpp" bodystart="346" bodyend="357"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1Printers_1_1VertexBufferNumeric1D__HDF5_1ae4050a4696aadcf7e40cab748a04152f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -115,14 +115,15 @@
         <name>~VertexBufferNumeric1D_HDF5</name>
         <qualifiedname>Gambit::Printers::VertexBufferNumeric1D_HDF5::~VertexBufferNumeric1D_HDF5</qualifiedname>
         <briefdescription>
-<para>Destructor. </para>
         </briefdescription>
         <detaileddescription>
-<para>Destructor Make sure buffer contents are written to file when buffer object is destroyed </para>
+<para>Destructor Make sure buffer contents are written to file when buffer object is destroyed</para>
+<para>Destructor. Deliberately does NOT flush the buffer to disk.</para>
+<para>Buffer objects of this type are stored by value (in the std::map&lt;VBIDpair, BuffType&gt; inside <ref refid="classGambit_1_1Printers_1_1H5P__LocalBufferManager" kindref="compound">H5P_LocalBufferManager</ref>) and are populated via the assign-from-temporary pattern at <ref refid="classGambit_1_1Printers_1_1H5P__LocalBufferManager_1a06b9ff008567f63eee21c439f47a5e84" kindref="member">H5P_LocalBufferManager::get_buffer</ref>, so each buffer object&apos;s destructor runs at least once on a temporary that shares state (HDF5 dataset handles, sync counters) with the surviving container slot. Triggering <ref refid="classGambit_1_1Printers_1_1VertexBufferNumeric1D__HDF5_1a9a994758abc471400605cd0310de9782" kindref="member">write_to_disk()</ref> / <ref refid="classGambit_1_1Printers_1_1VertexBufferNumeric1D__HDF5_1a02748544b4e30532b2299c4b4df33367" kindref="member">RA_write_to_disk()</ref> here would therefore either double-write or write through stale state, depending on which copy is being destroyed. End-of-scan flushing is handled deterministically by <ref refid="classGambit_1_1Printers_1_1HDF5Printer_1af4e33f85ace326238c5137b75438a850" kindref="member">HDF5Printer::flush()</ref> and <ref refid="classGambit_1_1Printers_1_1HDF5Printer_1aa829f36d631d7f20e0499d633944f830" kindref="member">HDF5Printer::finalise()</ref> instead, which iterate over the surviving buffers in the printer&apos;s all_buffers map. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer/VertexBufferNumeric1D_HDF5.hpp" line="105" column="12" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/VertexBufferNumeric1D_HDF5.hpp" bodystart="295" bodyend="303"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/VertexBufferNumeric1D_HDF5.hpp" line="105" column="12" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/VertexBufferNumeric1D_HDF5.hpp" bodystart="309" bodyend="311"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1Printers_1_1VertexBufferNumeric1D__HDF5_1acc901c1ee4c7f460ed3fbff8c39d6846" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -137,7 +138,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer/VertexBufferNumeric1D_HDF5.hpp" line="112" column="25" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/VertexBufferNumeric1D_HDF5.hpp" bodystart="307" bodyend="320"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/VertexBufferNumeric1D_HDF5.hpp" line="112" column="25" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/VertexBufferNumeric1D_HDF5.hpp" bodystart="315" bodyend="328"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-attrib">
@@ -250,7 +251,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer/VertexBufferNumeric1D_HDF5.hpp" line="115" column="25" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/VertexBufferNumeric1D_HDF5.hpp" bodystart="354" bodyend="374"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/VertexBufferNumeric1D_HDF5.hpp" line="115" column="25" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/VertexBufferNumeric1D_HDF5.hpp" bodystart="362" bodyend="382"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1Printers_1_1VertexBufferNumeric1D__HDF5_1af549ce1aee5c25c2f70d8f8aa92ba9a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -276,7 +277,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer/VertexBufferNumeric1D_HDF5.hpp" line="118" column="25" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/VertexBufferNumeric1D_HDF5.hpp" bodystart="378" bodyend="386"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/VertexBufferNumeric1D_HDF5.hpp" line="118" column="25" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/VertexBufferNumeric1D_HDF5.hpp" bodystart="386" bodyend="394"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1Printers_1_1VertexBufferNumeric1D__HDF5_1a9e97f504488392f88a511eaccc745fc5" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -300,7 +301,7 @@
 <para>Empty the queue of postponed writes, because it would now be erased had we gotten around to writing it.</para>
 <para>Invalidate the contents of the linked datasets This can be done by simply resetting the all validity bools to &quot;false&quot;</para>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer/VertexBufferNumeric1D_HDF5.hpp" line="121" column="25" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/VertexBufferNumeric1D_HDF5.hpp" bodystart="390" bodyend="417"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/VertexBufferNumeric1D_HDF5.hpp" line="121" column="25" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/VertexBufferNumeric1D_HDF5.hpp" bodystart="398" bodyend="425"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1Printers_1_1VertexBufferNumeric1D__HDF5_1abcc1f3cc458f073f5daca06f9d1f7847" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -315,7 +316,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer/VertexBufferNumeric1D_HDF5.hpp" line="124" column="25" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/VertexBufferNumeric1D_HDF5.hpp" bodystart="679" bodyend="683"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/VertexBufferNumeric1D_HDF5.hpp" line="124" column="25" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/VertexBufferNumeric1D_HDF5.hpp" bodystart="687" bodyend="691"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1Printers_1_1VertexBufferNumeric1D__HDF5_1a02748544b4e30532b2299c4b4df33367" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>void</type>
@@ -336,7 +337,7 @@
         <inbodydescription>
 <para>Use the provided PPIDpair--&gt;dset_location map to locate the target parameter points in the output dataset. (Temp RA buffers for immediate writes)</para>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer/VertexBufferNumeric1D_HDF5.hpp" line="127" column="25" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/VertexBufferNumeric1D_HDF5.hpp" bodystart="492" bodyend="575"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/VertexBufferNumeric1D_HDF5.hpp" line="127" column="25" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/VertexBufferNumeric1D_HDF5.hpp" bodystart="500" bodyend="583"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1Printers_1_1VertexBufferNumeric1D__HDF5_1a5d7b951e79bbb7e705494e1e4edf041d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -359,7 +360,7 @@
 <para>Postponed entries which still cannot be written will be added here.</para>
 <para>Need to go through the postponed entries one CHUNKLENGTH at a time</para>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer/VertexBufferNumeric1D_HDF5.hpp" line="130" column="17" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/VertexBufferNumeric1D_HDF5.hpp" bodystart="421" bodyend="487"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/VertexBufferNumeric1D_HDF5.hpp" line="130" column="17" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/VertexBufferNumeric1D_HDF5.hpp" bodystart="429" bodyend="495"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1Printers_1_1VertexBufferNumeric1D__HDF5_1afa6d56811de60b1cd2dfbd59e4e6d509" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>void</type>
@@ -397,7 +398,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer/VertexBufferNumeric1D_HDF5.hpp" line="152" column="17" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/VertexBufferNumeric1D_HDF5.hpp" bodystart="585" bodyend="663"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/VertexBufferNumeric1D_HDF5.hpp" line="152" column="17" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/VertexBufferNumeric1D_HDF5.hpp" bodystart="593" bodyend="671"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1Printers_1_1VertexBufferNumeric1D__HDF5_1a8ed7fd2fa4ab92e0b04828bccbad7074" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>std::size_t</type>
@@ -428,7 +429,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer/VertexBufferNumeric1D_HDF5.hpp" line="159" column="18" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/VertexBufferNumeric1D_HDF5.hpp" bodystart="666" bodyend="675"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/VertexBufferNumeric1D_HDF5.hpp" line="159" column="18" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/VertexBufferNumeric1D_HDF5.hpp" bodystart="674" bodyend="683"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

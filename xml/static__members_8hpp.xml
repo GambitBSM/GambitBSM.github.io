@@ -5,7 +5,7 @@
     <includes refid="threadsafe__rng_8hpp" local="yes">gambit/Utils/threadsafe_rng.hpp</includes>
     <includes refid="exceptions_8hpp" local="yes">gambit/Utils/exceptions.hpp</includes>
     <includedby refid="gambit_8hpp" local="yes">gambit.hpp</includedby>
-    <includedby refid="manual__hdf5__combine_8cpp" local="yes">manual_hdf5_combine.cpp</includedby>
+    <includedby refid="interface_8cpp" local="yes">interface.cpp</includedby>
     <includedby refid="module__macros__incore__defs_8hpp" local="yes">module_macros_incore_defs.hpp</includedby>
     <includedby refid="scannerbit_8hpp" local="yes">scannerbit.hpp</includedby>
     <includedby refid="standalone__module_8hpp" local="yes">standalone_module.hpp</includedby>
@@ -287,7 +287,7 @@
       </node>
     </incdepgraph>
     <invincdepgraph>
-      <node id="7">
+      <node id="6">
         <label>backend_macros.hpp</label>
         <link refid="backend__macros_8hpp"/>
       </node>
@@ -301,39 +301,41 @@
         <label>gambit.cpp</label>
         <link refid="gambit_8cpp"/>
       </node>
-      <node id="10">
+      <node id="9">
         <label>DarkBit_standalone_MSSM.cpp</label>
         <link refid="DarkBit__standalone__MSSM_8cpp"/>
       </node>
-      <node id="11">
+      <node id="10">
         <label>DarkBit_standalone_ScalarSingletDM_Z2.cpp</label>
         <link refid="DarkBit__standalone__ScalarSingletDM__Z2_8cpp"/>
       </node>
-      <node id="12">
+      <node id="11">
         <label>DarkBit_standalone_WIMP.cpp</label>
         <link refid="DarkBit__standalone__WIMP_8cpp"/>
       </node>
-      <node id="9">
+      <node id="8">
         <label>3bithit.cpp</label>
         <link refid="3bithit_8cpp"/>
       </node>
-      <node id="6">
+      <node id="5">
         <label>module_macros_incore.hpp</label>
         <link refid="module__macros__incore_8hpp"/>
-        <childnode refid="7" relation="include">
-        </childnode>
-        <childnode refid="8" relation="include">
-        </childnode>
-      </node>
-      <node id="5">
-        <label>module_macros_incore_defs.hpp</label>
-        <link refid="module__macros__incore__defs_8hpp"/>
         <childnode refid="6" relation="include">
         </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
       </node>
-      <node id="8">
+      <node id="4">
+        <label>module_macros_incore_defs.hpp</label>
+        <link refid="module__macros__incore__defs_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
         <label>standalone_module.hpp</label>
         <link refid="standalone__module_8hpp"/>
+        <childnode refid="8" relation="include">
+        </childnode>
         <childnode refid="9" relation="include">
         </childnode>
         <childnode refid="10" relation="include">
@@ -344,23 +346,29 @@
         </childnode>
         <childnode refid="13" relation="include">
         </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
       </node>
-      <node id="13">
+      <node id="12">
         <label>ExampleBit_A_standalone_example.cpp</label>
         <link refid="ExampleBit__A__standalone__example_8cpp"/>
       </node>
-      <node id="4">
-        <label>manual_hdf5_combine.cpp</label>
-        <link refid="manual__hdf5__combine_8cpp"/>
+      <node id="13">
+        <label>NeutrinoBit_standalone.cpp</label>
+        <link refid="NeutrinoBit__standalone_8cpp"/>
       </node>
-      <node id="15">
+      <node id="14">
+        <label>NeutrinoBit_standalone_RHN.cpp</label>
+        <link refid="NeutrinoBit__standalone__RHN_8cpp"/>
+      </node>
+      <node id="16">
         <label>ScannerBit_standalone.cpp</label>
         <link refid="ScannerBit__standalone_8cpp"/>
       </node>
-      <node id="14">
+      <node id="15">
         <label>scannerbit.hpp</label>
         <link refid="scannerbit_8hpp"/>
-        <childnode refid="15" relation="include">
+        <childnode refid="16" relation="include">
         </childnode>
         <childnode refid="2" relation="include">
         </childnode>
@@ -372,11 +380,9 @@
         </childnode>
         <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="5" relation="include">
+        <childnode refid="15" relation="include">
         </childnode>
-        <childnode refid="14" relation="include">
-        </childnode>
-        <childnode refid="8" relation="include">
+        <childnode refid="7" relation="include">
         </childnode>
       </node>
     </invincdepgraph>
@@ -425,7 +431,7 @@
 <codeline lineno="27"><highlight class="comment"><sp/><sp/>///<sp/>Pointer<sp/>to<sp/>chosen<sp/>random<sp/>number<sp/>generation<sp/>engine</highlight></codeline>
 <codeline lineno="28"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/>Utils::threadsafe_rng*<sp/>Random::local_rng<sp/>=<sp/>NULL;</highlight></codeline>
 <codeline lineno="29"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="30"><highlight class="comment"><sp/><sp/>///<sp/>Shared<sp/>string<sp/>indicating<sp/>the<sp/>current<sp/>values<sp/>of<sp/>the<sp/>paramters.</highlight></codeline>
+<codeline lineno="30"><highlight class="comment"><sp/><sp/>///<sp/>Shared<sp/>string<sp/>indicating<sp/>the<sp/>current<sp/>values<sp/>of<sp/>the<sp/>parameters.</highlight></codeline>
 <codeline lineno="31"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><ref refid="namespaceGambit_1aff3f41b9e6112a6d471a03b2df1f2427" kindref="member">str</ref><sp/>exception::parameters<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="32"><highlight class="normal"></highlight></codeline>
 <codeline lineno="33"><highlight class="normal">}</highlight></codeline>

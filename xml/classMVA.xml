@@ -1,0 +1,207 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classMVA" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>MVA</compoundname>
+    <derivedcompoundref refid="classMVAUtilsReader" prot="public" virt="non-virtual">MVAUtilsReader</derivedcompoundref>
+    <derivedcompoundref refid="classTMVAReader" prot="public" virt="non-virtual">TMVAReader</derivedcompoundref>
+      <sectiondef kind="protected-attrib">
+      <memberdef kind="variable" id="classMVA_1afc39495667bcea28a71ddf3f2b37a2eb" prot="protected" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string MVA::m_name</definition>
+        <argsstring></argsstring>
+        <name>m_name</name>
+        <qualifiedname>MVA::m_name</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/MVA.h" line="44" column="15" bodyfile="ColliderBit/include/gambit/ColliderBit/MVA.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMVA_1ae260f84e040a2ac795f14254f3d3bd40" prot="protected" static="no" mutable="no">
+        <type>std::vector&lt; std::string &gt;</type>
+        <definition>std::vector&lt;std::string&gt; MVA::m_variableDefs</definition>
+        <argsstring></argsstring>
+        <name>m_variableDefs</name>
+        <qualifiedname>MVA::m_variableDefs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/MVA.h" line="45" column="15" bodyfile="ColliderBit/include/gambit/ColliderBit/MVA.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classMVA_1a59a784ffd85493ed743ea74072e320db" prot="protected" static="no" mutable="no">
+        <type>int</type>
+        <definition>int MVA::m_eventNumber</definition>
+        <argsstring></argsstring>
+        <name>m_eventNumber</name>
+        <qualifiedname>MVA::m_eventNumber</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/MVA.h" line="46" column="7" bodyfile="ColliderBit/include/gambit/ColliderBit/MVA.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classMVA_1ac2ff190150aec65cea0690b36f34c719" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>MVA::MVA</definition>
+        <argsstring>(const std::string &amp;name, const std::vector&lt; std::string &gt; variableDefs={})</argsstring>
+        <name>MVA</name>
+        <qualifiedname>MVA::MVA</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; std::string &gt;</type>
+          <declname>variableDefs</declname>
+          <defval>{}</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/MVA.h" line="26" column="3" bodyfile="ColliderBit/include/gambit/ColliderBit/MVA.h" bodystart="26" bodyend="29"/>
+      </memberdef>
+      <memberdef kind="function" id="classMVA_1adc0ecf353d0a92ab6154f7a159fc76bb" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void MVA::setEventNumber</definition>
+        <argsstring>(int eventNumber)</argsstring>
+        <name>setEventNumber</name>
+        <qualifiedname>MVA::setEventNumber</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>eventNumber</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/MVA.h" line="31" column="8" bodyfile="ColliderBit/include/gambit/ColliderBit/MVA.h" bodystart="31" bodyend="31"/>
+      </memberdef>
+      <memberdef kind="function" id="classMVA_1a573c4d18946989cb9bf0b3d3a6f0a868" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>double</type>
+        <definition>virtual double MVA::evaluate</definition>
+        <argsstring>(const std::vector&lt; double &gt; &amp;values, const std::string nodeName=&quot;&quot;)=0</argsstring>
+        <name>evaluate</name>
+        <qualifiedname>MVA::evaluate</qualifiedname>
+        <reimplementedby refid="classTMVAReader_1a459ede99d152cc062d0c2c28ecb1af84">evaluate</reimplementedby>
+        <reimplementedby refid="classMVAUtilsReader_1a87ef62f00a1eb4d838e1ac4f1af3f781">evaluate</reimplementedby>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>values</declname>
+        </param>
+        <param>
+          <type>const std::string</type>
+          <declname>nodeName</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/MVA.h" line="32" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classMVA_1a2a209343acf32d107d760aafa8a72be6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>std::vector&lt; double &gt;</type>
+        <definition>virtual std::vector&lt; double &gt; MVA::evaluateMulti</definition>
+        <argsstring>(const std::vector&lt; double &gt; &amp;, int)</argsstring>
+        <name>evaluateMulti</name>
+        <qualifiedname>MVA::evaluateMulti</qualifiedname>
+        <reimplementedby refid="classMVAUtilsReader_1a041a3775e5d94a872261df3bff0b272b">evaluateMulti</reimplementedby>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/MVA.h" line="35" column="3" bodyfile="ColliderBit/include/gambit/ColliderBit/MVA.h" bodystart="35" bodyend="37"/>
+      </memberdef>
+      <memberdef kind="function" id="classMVA_1a7a79265a79af523d6e71e53ce8c803ef" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
+        <type>std::vector&lt; float &gt;</type>
+        <definition>virtual std::vector&lt; float &gt; MVA::evaluateMulti</definition>
+        <argsstring>(const std::vector&lt; float &gt; &amp;, int)</argsstring>
+        <name>evaluateMulti</name>
+        <qualifiedname>MVA::evaluateMulti</qualifiedname>
+        <reimplementedby refid="classMVAUtilsReader_1a50f43a961fb221b128258f776309e32b">evaluateMulti</reimplementedby>
+        <param>
+          <type>const std::vector&lt; float &gt; &amp;</type>
+        </param>
+        <param>
+          <type>int</type>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/MVA.h" line="39" column="3" bodyfile="ColliderBit/include/gambit/ColliderBit/MVA.h" bodystart="39" bodyend="41"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>MVA</label>
+        <link refid="classMVA"/>
+      </node>
+      <node id="2">
+        <label>MVAUtilsReader</label>
+        <link refid="classMVAUtilsReader"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>TMVAReader</label>
+        <link refid="classTMVAReader"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>MVA</label>
+        <link refid="classMVA"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>m_name</edgelabel>
+        </childnode>
+      </node>
+      <node id="2">
+        <label>string</label>
+      </node>
+    </collaborationgraph>
+    <location file="ColliderBit/include/gambit/ColliderBit/MVA.h" line="24" column="1" bodyfile="ColliderBit/include/gambit/ColliderBit/MVA.h" bodystart="24" bodyend="47"/>
+    <listofallmembers>
+      <member refid="classMVA_1a573c4d18946989cb9bf0b3d3a6f0a868" prot="public" virt="pure-virtual"><scope>MVA</scope><name>evaluate</name></member>
+      <member refid="classMVA_1a2a209343acf32d107d760aafa8a72be6" prot="public" virt="virtual"><scope>MVA</scope><name>evaluateMulti</name></member>
+      <member refid="classMVA_1a7a79265a79af523d6e71e53ce8c803ef" prot="public" virt="virtual"><scope>MVA</scope><name>evaluateMulti</name></member>
+      <member refid="classMVA_1a59a784ffd85493ed743ea74072e320db" prot="protected" virt="non-virtual"><scope>MVA</scope><name>m_eventNumber</name></member>
+      <member refid="classMVA_1afc39495667bcea28a71ddf3f2b37a2eb" prot="protected" virt="non-virtual"><scope>MVA</scope><name>m_name</name></member>
+      <member refid="classMVA_1ae260f84e040a2ac795f14254f3d3bd40" prot="protected" virt="non-virtual"><scope>MVA</scope><name>m_variableDefs</name></member>
+      <member refid="classMVA_1ac2ff190150aec65cea0690b36f34c719" prot="public" virt="non-virtual"><scope>MVA</scope><name>MVA</name></member>
+      <member refid="classMVA_1adc0ecf353d0a92ab6154f7a159fc76bb" prot="public" virt="non-virtual"><scope>MVA</scope><name>setEventNumber</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -46,8 +46,8 @@ Authors (add name if you modify):
 ///  \file
 ///
 ///  Source file for the function
-///  all_PID_pairs_to_process_codes(), which 
-///  returns a "reversed" version of the 
+///  all_PID_pairs_to_process_codes(), which
+///  returns a "reversed" version of the
 ///  all_process_codes_to_PID_pairs multimap
 ///
 ///  *********************************************
@@ -97,4 +97,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:36 +0000
+Updated on 2026-11-03 at 14:50:48 +0000

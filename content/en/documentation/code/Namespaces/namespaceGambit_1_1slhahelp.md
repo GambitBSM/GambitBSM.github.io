@@ -598,9 +598,6 @@ void attempt_to_add_SLHA1_mixing(
 
 Simple helper function for adding missing SLHA1 2x2 family mixing matrices to an SLHAea object. 
 
-Simple helper function for for adding missing SLHA1 2x2 family mixing matrices to an SLHAea object. 
-
-
 ### function add_MSSM_spectrum_to_SLHAea
 
 ```
@@ -859,4 +856,4 @@ const std::map< str, std::vector< str > > type_to_vec_of_gauge_es = init_type_to
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:33 +0000
+Updated on 2026-11-03 at 14:50:44 +0000

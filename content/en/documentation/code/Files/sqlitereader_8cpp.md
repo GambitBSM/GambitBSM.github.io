@@ -379,7 +379,7 @@ namespace Gambit
 
          // Now match the SQL datatypes to Printer type IDs (via appropriate C++ types)
          // TODO might need more careful checking, not sure if e.g. INTEGER type name will
-         // always be retrieved as INTERGER (as opposed to say INT or something else)
+         // always be retrieved as INTEGER (as opposed to say INT or something else)
          std::size_t typeID=0;
          #define GET_SQL_TYPE_CASES(r,data,elem) \
          if( SQLite_equaltypes(coltype,cpp2sql<elem>()) )\
@@ -423,4 +423,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:34 +0000
+Updated on 2026-11-03 at 14:50:45 +0000

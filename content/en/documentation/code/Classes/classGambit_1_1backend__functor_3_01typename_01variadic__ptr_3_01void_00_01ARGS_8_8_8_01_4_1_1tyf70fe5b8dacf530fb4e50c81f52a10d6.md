@@ -75,6 +75,7 @@ Inherits from [Gambit::backend_functor_common< variadic_ptr< void, ARGS... >::ty
 | void | **[setStatus](/documentation/code/classes/classgambit_1_1functor/#function-setstatus)**([FunctorStatus](/documentation/code/namespaces/namespacegambit/#enum-functorstatus) stat)<br>Setter for status.  |
 | virtual void | **[setInUse](/documentation/code/classes/classgambit_1_1functor/#function-setinuse)**(bool )<br>Set the inUse flag (must be overridden in derived class to have any effect).  |
 | void | **[setPurpose](/documentation/code/classes/classgambit_1_1functor/#function-setpurpose)**([str](/documentation/code/namespaces/namespacegambit/#typedef-str) purpose)<br>Setter for purpose (relevant only for next-to-output functors)  |
+| void | **[setCritical](/documentation/code/classes/classgambit_1_1functor/#function-setcritical)**(bool critical)<br>Setter for critical (relevant only for next-to-output functors)  |
 | void | **[setVertexID](/documentation/code/classes/classgambit_1_1functor/#function-setvertexid)**(int ID)<br>Setter for vertex ID (used in printer system)  |
 | void | **[setTimingVertexID](/documentation/code/classes/classgambit_1_1functor/#function-settimingvertexid)**(int ID)<br>Set ID for timing 'vertex' (used in printer system)  |
 | [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[name](/documentation/code/classes/classgambit_1_1functor/#function-name)**() const<br>Getter for the wrapped function's name.  |
@@ -90,6 +91,7 @@ Inherits from [Gambit::backend_functor_common< variadic_ptr< void, ARGS... >::ty
 | bool | **[isEnabled](/documentation/code/classes/classgambit_1_1functor/#function-isenabled)**() const<br>Checks whether the functor is enabled (discriminant is non negative)  |
 | [sspair](/documentation/code/namespaces/namespacegambit/#typedef-sspair) | **[quantity](/documentation/code/classes/classgambit_1_1functor/#function-quantity)**() const<br>Getter for the overall quantity provided by the wrapped function (capability-type pair)  |
 | [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[purpose](/documentation/code/classes/classgambit_1_1functor/#function-purpose)**() const<br>Getter for purpose (relevant for output nodes, aka helper structures for the dep. resolution)  |
+| bool | **[critical](/documentation/code/classes/classgambit_1_1functor/#function-critical)**() const<br>Getter for critical (relevant for output nodes, aka helper structures for the dep. resolution)  |
 | [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[citationKey](/documentation/code/classes/classgambit_1_1functor/#function-citationkey)**() const<br>Getter for the citation key.  |
 | int | **[vertexID](/documentation/code/classes/classgambit_1_1functor/#function-vertexid)**() const<br>Getter for vertex ID.  |
 | int | **[timingVertexID](/documentation/code/classes/classgambit_1_1functor/#function-timingvertexid)**() const<br>Getter for timing vertex ID.  |
@@ -181,6 +183,7 @@ Inherits from [Gambit::backend_functor_common< variadic_ptr< void, ARGS... >::ty
 | [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[myType](/documentation/code/classes/classgambit_1_1functor/#variable-mytype)** <br>Internal storage of the type of what the function calculates.  |
 | [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[myOrigin](/documentation/code/classes/classgambit_1_1functor/#variable-myorigin)** <br>Internal storage of the name of the module or backend to which the function belongs.  |
 | [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[myPurpose](/documentation/code/classes/classgambit_1_1functor/#variable-mypurpose)** <br>Purpose of the function (relevant for output and next-to-output functors)  |
+| bool | **[myCritical](/documentation/code/classes/classgambit_1_1functor/#variable-mycritical)** <br>critical flag of the function (relevant for output and next-to-output functors)  |
 | [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[myCitationKey](/documentation/code/classes/classgambit_1_1functor/#variable-mycitationkey)** <br>Citation key: BibTex key of the reference.  |
 | const [Models::ModelFunctorClaw](/documentation/code/classes/classgambit_1_1models_1_1modelfunctorclaw/) * | **[myClaw](/documentation/code/classes/classgambit_1_1functor/#variable-myclaw)** <br>Bound model functor claw, for checking relationships between models.  |
 | const [str](/documentation/code/namespaces/namespacegambit/#typedef-str) | **[myLabel](/documentation/code/classes/classgambit_1_1functor/#variable-mylabel)** <br>String label, used to label functor results for printer system.  |
@@ -250,4 +253,4 @@ Operation (execute function)
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:30 +0000
+Updated on 2026-11-03 at 14:50:42 +0000

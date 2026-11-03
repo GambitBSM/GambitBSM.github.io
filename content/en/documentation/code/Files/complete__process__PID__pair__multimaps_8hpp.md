@@ -49,9 +49,9 @@ Authors (add name if you modify):
 ///
 ///  A big multimap connecting Pythia process codes
 ///  to the PID numbers for the two final state
-///  particles. 
-///  
-///  This is needed to use external cross-section 
+///  particles.
+///
+///  This is needed to use external cross-section
 ///  calculators for weighting Pythia events.
 ///
 ///  *********************************************
@@ -77,8 +77,8 @@ namespace Gambit
   namespace ColliderBit
   {
 
-    // Declare a function that returns the "reversed" version of the 
-    // all_process_codes_to_PID_pairs multimap below, i.e. a map 
+    // Declare a function that returns the "reversed" version of the
+    // all_process_codes_to_PID_pairs multimap below, i.e. a map
     // from PID_pair --> process_code
     const multimap_PID_pair_int& all_PID_pairs_to_process_codes();
 
@@ -111,7 +111,7 @@ namespace Gambit
       std::make_pair(1212, PID_pair(-2000004, 1000021)),
       std::make_pair(1213, PID_pair(2000005, 1000021)),
       std::make_pair(1213, PID_pair(-2000005, 1000021)),
-      //      
+      //
       // Squark--anti-squark production
       std::make_pair(1215, PID_pair(1000001, -1000001)),
       std::make_pair(1216, PID_pair(1000002, -1000002)),
@@ -531,7 +531,7 @@ namespace Gambit
       std::make_pair(1513, PID_pair(-1000037, -2000005)),
       std::make_pair(1514, PID_pair(-1000037, 2000006)),
       std::make_pair(1514, PID_pair(1000037, -2000006)),
-      
+
       // Neutralino & chargino production
       std::make_pair(1551, PID_pair(1000022, 1000022)),
       std::make_pair(1552, PID_pair(1000022, 1000023)),
@@ -594,7 +594,7 @@ namespace Gambit
       std::make_pair(1723, PID_pair(2000011, -2000011)),
       std::make_pair(1739, PID_pair(2000013, -2000013)),
       std::make_pair(1751, PID_pair(2000015, -2000015)),
-      // 
+      //
       // ==== Add more process here if needed ====
       //
     };
@@ -610,4 +610,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:35 +0000
+Updated on 2026-11-03 at 14:50:47 +0000

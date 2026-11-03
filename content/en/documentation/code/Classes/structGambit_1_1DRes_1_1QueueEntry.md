@@ -28,6 +28,7 @@ Information in resolution queue.
 | VertexID | **[toVertex](/documentation/code/classes/structgambit_1_1dres_1_1queueentry/#variable-tovertex)**  |
 | int | **[dependency_type](/documentation/code/classes/structgambit_1_1dres_1_1queueentry/#variable-dependency-type)**  |
 | bool | **[printme](/documentation/code/classes/structgambit_1_1dres_1_1queueentry/#variable-printme)**  |
+| bool | **[critical](/documentation/code/classes/structgambit_1_1dres_1_1queueentry/#variable-critical)**  |
 | const [Observable](/documentation/code/classes/structgambit_1_1dres_1_1observable/) * | **[obslike](/documentation/code/classes/structgambit_1_1dres_1_1queueentry/#variable-obslike)**  |
 
 ## Public Functions Documentation
@@ -83,6 +84,13 @@ bool printme;
 ```
 
 
+### variable critical
+
+```
+bool critical;
+```
+
+
 ### variable obslike
 
 ```
@@ -92,4 +100,4 @@ const Observable * obslike;
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:32 +0000
+Updated on 2026-11-03 at 14:50:44 +0000

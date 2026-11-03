@@ -3,22 +3,6 @@
   <compounddef id="classGambit_1_1ColliderBit_1_1Analysis__Minimum" kind="class" language="C++" prot="public">
     <compoundname>Gambit::ColliderBit::Analysis_Minimum</compoundname>
     <basecompoundref refid="classGambit_1_1ColliderBit_1_1Analysis" prot="public" virt="non-virtual">Gambit::ColliderBit::Analysis</basecompoundref>
-      <sectiondef kind="private-attrib">
-      <memberdef kind="variable" id="classGambit_1_1ColliderBit_1_1Analysis__Minimum_1af4f5c4d3f90ede95d5ba4704c87bad21" prot="private" static="no" mutable="no">
-        <type>double</type>
-        <definition>double Gambit::ColliderBit::Analysis_Minimum::_numSR</definition>
-        <argsstring></argsstring>
-        <name>_numSR</name>
-        <qualifiedname>Gambit::ColliderBit::Analysis_Minimum::_numSR</qualifiedname>
-        <briefdescription>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="ColliderBit/src/analyses/Analysis_Minimum.cpp" line="14" column="14" bodyfile="ColliderBit/src/analyses/Analysis_Minimum.cpp" bodystart="14" bodyend="-1"/>
-      </memberdef>
-      </sectiondef>
       <sectiondef kind="public-static-attrib">
       <memberdef kind="variable" id="classGambit_1_1ColliderBit_1_1Analysis__Minimum_1a16018f5a11a90ada4384abcb6ef04393" prot="public" static="yes" constexpr="yes" mutable="no">
         <type>constexpr const char *</type>
@@ -49,7 +33,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/src/analyses/Analysis_Minimum.cpp" line="21" column="7" bodyfile="ColliderBit/src/analyses/Analysis_Minimum.cpp" bodystart="21" bodyend="33"/>
+        <location file="ColliderBit/src/analyses/Analysis_Minimum.cpp" line="21" column="7" bodyfile="ColliderBit/src/analyses/Analysis_Minimum.cpp" bodystart="21" bodyend="34"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1ColliderBit_1_1Analysis__Minimum_1af13af2ab4b39440ae7f9fff959f64849" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>void</type>
@@ -68,27 +52,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/src/analyses/Analysis_Minimum.cpp" line="36" column="12" bodyfile="ColliderBit/src/analyses/Analysis_Minimum.cpp" bodystart="36" bodyend="80"/>
-      </memberdef>
-      <memberdef kind="function" id="classGambit_1_1ColliderBit_1_1Analysis__Minimum_1a635d823b538c3d36605e2fb29dc5b2d1" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
-        <type>void</type>
-        <definition>void Gambit::ColliderBit::Analysis_Minimum::combine</definition>
-        <argsstring>(const Analysis *other)</argsstring>
-        <name>combine</name>
-        <qualifiedname>Gambit::ColliderBit::Analysis_Minimum::combine</qualifiedname>
-        <reimplements refid="classGambit_1_1ColliderBit_1_1Analysis_1a16ed2b84d494f63537bd87d145273258">combine</reimplements>
-        <param>
-          <type>const <ref refid="classGambit_1_1ColliderBit_1_1Analysis" kindref="compound">Analysis</ref> *</type>
-          <declname>other</declname>
-        </param>
-        <briefdescription>
-<para>Combine the variables of another copy of this analysis (typically on another thread) into this one. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="ColliderBit/src/analyses/Analysis_Minimum.cpp" line="84" column="12" bodyfile="ColliderBit/src/analyses/Analysis_Minimum.cpp" bodystart="84" bodyend="88"/>
+        <location file="ColliderBit/src/analyses/Analysis_Minimum.cpp" line="37" column="12" bodyfile="ColliderBit/src/analyses/Analysis_Minimum.cpp" bodystart="37" bodyend="82"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1ColliderBit_1_1Analysis__Minimum_1a4eff91faf625fe4e8354b95a0c5ff49b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="virtual">
         <type>void</type>
@@ -104,7 +68,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/src/analyses/Analysis_Minimum.cpp" line="91" column="12" bodyfile="ColliderBit/src/analyses/Analysis_Minimum.cpp" bodystart="91" bodyend="99"/>
+        <location file="ColliderBit/src/analyses/Analysis_Minimum.cpp" line="85" column="12" bodyfile="ColliderBit/src/analyses/Analysis_Minimum.cpp" bodystart="85" bodyend="93"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="protected-func">
@@ -122,7 +86,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="ColliderBit/src/analyses/Analysis_Minimum.cpp" line="103" column="12" bodyfile="ColliderBit/src/analyses/Analysis_Minimum.cpp" bodystart="103" bodyend="105"/>
+        <location file="ColliderBit/src/analyses/Analysis_Minimum.cpp" line="97" column="12" bodyfile="ColliderBit/src/analyses/Analysis_Minimum.cpp" bodystart="97" bodyend="100"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -146,6 +110,9 @@
       <node id="2">
         <label>Gambit::ColliderBit::Analysis</label>
         <link refid="classGambit_1_1ColliderBit_1_1Analysis"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>_cutflows</edgelabel>
+        </childnode>
       </node>
       <node id="1">
         <label>Gambit::ColliderBit::Analysis_Minimum</label>
@@ -153,12 +120,26 @@
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
+      <node id="3">
+        <label>Gambit::ColliderBit::Cutflows</label>
+        <link refid="structGambit_1_1ColliderBit_1_1Cutflows"/>
+        <childnode refid="4" relation="usage">
+          <edgelabel>cfs</edgelabel>
+        </childnode>
+      </node>
+      <node id="4">
+        <label>vector&lt; Gambit::ColliderBit::Cutflow &gt;</label>
+      </node>
     </collaborationgraph>
-    <location file="ColliderBit/src/analyses/Analysis_Minimum.cpp" line="10" column="5" bodyfile="ColliderBit/src/analyses/Analysis_Minimum.cpp" bodystart="10" bodyend="109"/>
+    <location file="ColliderBit/src/analyses/Analysis_Minimum.cpp" line="12" column="5" bodyfile="ColliderBit/src/analyses/Analysis_Minimum.cpp" bodystart="13" bodyend="104"/>
     <listofallmembers>
-      <member refid="classGambit_1_1ColliderBit_1_1Analysis__Minimum_1af4f5c4d3f90ede95d5ba4704c87bad21" prot="private" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_Minimum</scope><name>_numSR</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1Analysis_1aedc85bacb1d9911cacba5e90488b4c84" prot="protected" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_Minimum</scope><name>_counters</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1Analysis_1a4f2bcbf95fb47076363e2b939ced794a" prot="protected" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_Minimum</scope><name>_cutflows</name></member>
       <member refid="classGambit_1_1ColliderBit_1_1Analysis_1aaece33bab954d82337af28138e893bcf" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_Minimum</scope><name>add</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1Analysis_1a5875e9ab953e08532a8663a1a759883b" prot="protected" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_Minimum</scope><name>add_cutflows</name></member>
       <member refid="classGambit_1_1ColliderBit_1_1Analysis_1a129c783782dbf71bf5920676a6825f82" prot="protected" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_Minimum</scope><name>add_result</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1Analysis_1a5edfd7541db9ed50a075a4d2fa18b6d0" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_Minimum</scope><name>addCuts</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1Analysis_1abc701bdf4ed66cd923b605a0841858f3" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_Minimum</scope><name>addCuts</name></member>
       <member refid="classGambit_1_1ColliderBit_1_1Analysis_1a3eeaadd4fec4b19602be715d1403607e" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_Minimum</scope><name>Analysis</name></member>
       <member refid="classGambit_1_1ColliderBit_1_1Analysis__Minimum_1a564a5fe0b1ecc8cefd3cb7454795fce5" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_Minimum</scope><name>Analysis_Minimum</name></member>
       <member refid="classGambit_1_1ColliderBit_1_1Analysis_1af499cb63caf6576d6ad837424b0616ac" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_Minimum</scope><name>analysis_name</name></member>
@@ -166,8 +147,12 @@
       <member refid="classGambit_1_1ColliderBit_1_1Analysis_1a3e58cdb4d72d7bb80cff7d3124aee2c1" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_Minimum</scope><name>analyze</name></member>
       <member refid="classGambit_1_1ColliderBit_1_1Analysis_1a297020aa68d1f38fe53da210a0ba12df" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_Minimum</scope><name>analyze</name></member>
       <member refid="classGambit_1_1ColliderBit_1_1Analysis__Minimum_1a4eff91faf625fe4e8354b95a0c5ff49b" prot="public" virt="virtual"><scope>Gambit::ColliderBit::Analysis_Minimum</scope><name>collect_results</name></member>
-      <member refid="classGambit_1_1ColliderBit_1_1Analysis__Minimum_1a635d823b538c3d36605e2fb29dc5b2d1" prot="public" virt="virtual"><scope>Gambit::ColliderBit::Analysis_Minimum</scope><name>combine</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1Analysis_1aee0662e33d971c3d55a8ab948aaa2a79" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_Minimum</scope><name>collider_name</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1Analysis_1a4b6826170e6bef897ee1d95f12114e1a" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_Minimum</scope><name>defineSignalRegion</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1Analysis_1a78b7ce3477849490539c6dd20d55f16f" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_Minimum</scope><name>defineSignalRegions</name></member>
       <member refid="classGambit_1_1ColliderBit_1_1Analysis__Minimum_1a16018f5a11a90ada4384abcb6ef04393" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_Minimum</scope><name>detector</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1Analysis_1ae8c0dae9dc4e22da61ed8df618e7a663" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_Minimum</scope><name>detector_name</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1Analysis_1a01326dfe05af5df98e8aee60c0b4dc1e" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_Minimum</scope><name>get_cutflows</name></member>
       <member refid="classGambit_1_1ColliderBit_1_1Analysis_1a1ec44b31958a10cdaa92c618e77b5461" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_Minimum</scope><name>get_results</name></member>
       <member refid="classGambit_1_1ColliderBit_1_1Analysis_1a3c258242277f9b6239f7d009b7efb896" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_Minimum</scope><name>get_results</name></member>
       <member refid="classGambit_1_1ColliderBit_1_1Analysis_1a90730956c35e8ab0538f296612361fbf" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_Minimum</scope><name>get_results_ptr</name></member>
@@ -178,9 +163,12 @@
       <member refid="classGambit_1_1ColliderBit_1_1Analysis_1a3c6f2c8b6f7069239d3407ba9456003c" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_Minimum</scope><name>scale</name></member>
       <member refid="classGambit_1_1ColliderBit_1_1Analysis_1a4998785e3f5ebd96a148af8b4fbf575d" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_Minimum</scope><name>set_analysis_name</name></member>
       <member refid="classGambit_1_1ColliderBit_1_1Analysis_1af5f66da284a6474f3c8f9e4368a68a48" prot="protected" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_Minimum</scope><name>set_bkgjson</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1Analysis_1a64350b859f799d15f4d47ab558b0cc6c" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_Minimum</scope><name>set_collider_name</name></member>
       <member refid="classGambit_1_1ColliderBit_1_1Analysis_1a85634b0ca3817f602fa53630071879ae" prot="protected" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_Minimum</scope><name>set_covariance</name></member>
       <member refid="classGambit_1_1ColliderBit_1_1Analysis_1af72693e91a323d2a7604e029b748564f" prot="protected" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_Minimum</scope><name>set_covariance</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1Analysis_1af220de4f7acdfda3e418f4096d5545c6" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_Minimum</scope><name>set_detector_name</name></member>
       <member refid="classGambit_1_1ColliderBit_1_1Analysis_1affc00d6a3606fda2e214b99dba9598c6" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_Minimum</scope><name>set_luminosity</name></member>
+      <member refid="classGambit_1_1ColliderBit_1_1Analysis_1a931b55a3758bf0db43fddcf1bf52b95f" prot="public" virt="non-virtual"><scope>Gambit::ColliderBit::Analysis_Minimum</scope><name>set_store_accepted_event_IDs</name></member>
       <member refid="classGambit_1_1ColliderBit_1_1Analysis_1ab3a56e82a29f91e87ad1d12b6b825b2c" prot="public" virt="virtual"><scope>Gambit::ColliderBit::Analysis_Minimum</scope><name>~Analysis</name></member>
     </listofallmembers>
   </compounddef>

@@ -92,13 +92,14 @@
         <name>~DataSetInterfaceBase</name>
         <qualifiedname>Gambit::Printers::DataSetInterfaceBase::~DataSetInterfaceBase</qualifiedname>
         <briefdescription>
-<para>Do cleanup (close dataset) </para>
         </briefdescription>
         <detaileddescription>
+<para>Destructor. Deliberately does NOT close the underlying HDF5 dataset.</para>
+<para><ref refid="classGambit_1_1Printers_1_1DataSetInterfaceBase" kindref="compound">DataSetInterfaceBase</ref> (and its derived classes) are stored by value and assigned-from-temporary in several places. In such cases a temporary is constructed, then copy-/move-assigned into a member or container slot, then destroyed. Closing here in the destructor would invalidate the handle held by the surviving copy. The actual close therefore lives in the explicit <ref refid="classGambit_1_1Printers_1_1DataSetInterfaceBase_1a7caaa9c292fb46cf698effa52098d9e4" kindref="member">closeDataSet()</ref> method below, used by VertexBufferNumeric1D_HDF5::finalise() during the printer&apos;s finalise() pass. </para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" line="124" column="18" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" bodystart="189" bodyend="204"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" line="124" column="18" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" bodystart="199" bodyend="214"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1Printers_1_1DataSetInterfaceBase_1a952eb22e0c483c5e47e69c2f67f40b99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>hid_t</type>
@@ -126,7 +127,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" line="127" column="16" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" bodystart="224" bodyend="292"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" line="127" column="16" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" bodystart="234" bodyend="302"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1Printers_1_1DataSetInterfaceBase_1a69c9b798cc85022d85a3993c18381560" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>hid_t</type>
@@ -155,7 +156,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" line="130" column="16" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" bodystart="297" bodyend="377"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" line="130" column="16" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" bodystart="307" bodyend="387"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1Printers_1_1DataSetInterfaceBase_1a7caaa9c292fb46cf698effa52098d9e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -171,7 +172,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" line="133" column="15" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" bodystart="208" bodyend="220"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" line="133" column="15" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" bodystart="218" bodyend="230"/>
       </memberdef>
       <memberdef kind="function" id="classGambit_1_1Printers_1_1DataSetInterfaceBase_1a5508ec19fbc11ff63e69489771c8d43e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -190,7 +191,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" line="136" column="15" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" bodystart="382" bodyend="408"/>
+        <location file="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" line="136" column="15" bodyfile="Printers/include/gambit/Printers/printers/hdf5printer/DataSetInterfaceBase.hpp" bodystart="392" bodyend="418"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="private-static-attrib">

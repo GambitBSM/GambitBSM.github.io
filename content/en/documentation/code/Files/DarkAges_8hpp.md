@@ -103,14 +103,14 @@ namespace Gambit
     struct Energy_injection_efficiency_table
     {
       // Flag whether DarkAges calculates f_c(z) per injection channel or an
-      // effective f(z) which is multiplied with repartition fucntions
+      // effective f(z) which is multiplied with repartition functions
       // chi_c(x_e,z) later on (in classy)
       bool f_eff_mode = false;
 
       // Redshift vector (filled in both modes)
       std::vector<double> redshift;
 
-      // f_c(z) seperated by injection channels
+      // f_c(z) separated by injection channels
       // (filled only if f_eff_mode is false)
       std::vector<double> f_heat;
       std::vector<double> f_lya;
@@ -152,4 +152,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:36 +0000
+Updated on 2026-11-03 at 14:50:48 +0000

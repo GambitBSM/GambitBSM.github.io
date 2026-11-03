@@ -34,7 +34,7 @@ Inherits from [Gambit::Printers::BasePrinter](/documentation/code/classes/classg
 | virtual [Options](/documentation/code/classes/classgambit_1_1options/) | **[resume_reader_options](/documentation/code/classes/classgambit_1_1printers_1_1hdf5printer2/#function-resume-reader-options)**() |
 | virtual void | **[_print_metadata](/documentation/code/classes/classgambit_1_1printers_1_1hdf5printer2/#function-print-metadata)**([map_str_str](/documentation/code/namespaces/namespacegambit/#typedef-map-str-str) datasets) |
 | template <typename T \> <br>void | **[_print](/documentation/code/classes/classgambit_1_1printers_1_1hdf5printer2/#function-print)**(T const & , const std::string & label, const int vertexID, const uint, const ulong)<br>Print functions.  |
-| template <typename T \> <br>void | **[_print](/documentation/code/classes/classgambit_1_1printers_1_1hdf5printer2/#function-print)**(T const & in, const std::string & label, const uint rank, const ulong pointID)<br>Print functions.  |
+| template <typename T \> <br>void | **[_print](/documentation/code/classes/classgambit_1_1printers_1_1hdf5printer2/#function-print)**(T const & , const std::string & label, const uint rank, const ulong pointID)<br>Print functions.  |
 
 ## Additional inherited members
 
@@ -269,7 +269,7 @@ Print functions.
 ```
 template <typename T >
 inline void _print(
-    T const & in,
+    T const & ,
     const std::string & label,
     const uint rank,
     const ulong pointID
@@ -280,4 +280,4 @@ Print functions.
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:32 +0000
+Updated on 2026-11-03 at 14:50:44 +0000

@@ -99,7 +99,7 @@ description: "[No description available]"
 | void | **[compute_Planck_sz_prior](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-compute-planck-sz-prior)**(double & result) |
 | void | **[function_Planck_lowl_TT_2018_loglike](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-function-planck-lowl-tt-2018-loglike)**(double & result)<br>Low-l TT likelihood (PR3 - 2018)  |
 | void | **[function_Planck_lowl_EE_2018_loglike](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-function-planck-lowl-ee-2018-loglike)**(double & result)<br>Low-l E-mode polarisation likelihood (PR3 - 2018)  |
-| void | **[function_Planck_lowl_TTEE_2018_loglike](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-function-planck-lowl-ttee-2018-loglike)**(double & result)<br>Combined low-l TT and and E-mode polarisation likelihood (PR3 - 2018)  |
+| void | **[function_Planck_lowl_TTEE_2018_loglike](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-function-planck-lowl-ttee-2018-loglike)**(double & result)<br>Combined low-l TT and E-mode polarisation likelihood (PR3 - 2018)  |
 | void | **[function_Planck_highl_TT_2018_loglike](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-function-planck-highl-tt-2018-loglike)**(double & result)<br>High-l TT likelihood (PR3 - 2018)  |
 | void | **[function_Planck_highl_TT_lite_2018_loglike](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-function-planck-highl-tt-lite-2018-loglike)**(double & result)<br>Marginalised version of the high-l TT likelihood (PR3 - 2018)  |
 | void | **[function_Planck_highl_TTTEEE_2018_loglike](/documentation/code/namespaces/namespacegambit_1_1cosmobit/#function-function-planck-highl-ttteee-2018-loglike)**(double & result)<br>High-l TT and polarisation likelihood (PR3 - 2018)  |
@@ -880,7 +880,7 @@ void function_Planck_lowl_TTEE_2018_loglike(
 )
 ```
 
-Combined low-l TT and and E-mode polarisation likelihood (PR3 - 2018) 
+Combined low-l TT and E-mode polarisation likelihood (PR3 - 2018) 
 
 ### function function_Planck_highl_TT_2018_loglike
 
@@ -1018,4 +1018,4 @@ Lensing likelihood (PR2 - 2015)
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:32 +0000
+Updated on 2026-11-03 at 14:50:43 +0000

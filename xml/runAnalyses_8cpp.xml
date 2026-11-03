@@ -5,7 +5,7 @@
     <includes refid="ColliderBit__eventloop_8hpp" local="yes">gambit/ColliderBit/ColliderBit_eventloop.hpp</includes>
     <includes refid="Analysis_8hpp" local="yes">gambit/ColliderBit/analyses/Analysis.hpp</includes>
     <incdepgraph>
-      <node id="111">
+      <node id="112">
         <label>gambit/Backends/backend_info.hpp</label>
         <link refid="backend__info_8hpp"/>
         <childnode refid="10" relation="include">
@@ -17,53 +17,41 @@
         <childnode refid="63" relation="include">
         </childnode>
       </node>
-      <node id="110">
+      <node id="111">
         <label>gambit/Backends/backend_singleton.hpp</label>
         <link refid="backend__singleton_8hpp"/>
-        <childnode refid="111" relation="include">
+        <childnode refid="112" relation="include">
         </childnode>
       </node>
       <node id="107">
         <label>gambit/Backends/default_bossed_versions.hpp</label>
         <link refid="default__bossed__versions_8hpp"/>
       </node>
-      <node id="108">
-        <label>gambit/Backends/mathematica_variable.hpp</label>
-        <link refid="mathematica__variable_8hpp"/>
-        <childnode refid="109" relation="include">
-        </childnode>
-        <childnode refid="110" relation="include">
-        </childnode>
-        <childnode refid="57" relation="include">
-        </childnode>
-        <childnode refid="112" relation="include">
-        </childnode>
-      </node>
-      <node id="114">
+      <node id="110">
         <label>gambit/Backends/python_helpers.hpp</label>
         <link refid="python__helpers_8hpp"/>
       </node>
-      <node id="113">
+      <node id="108">
         <label>gambit/Backends/python_variable.hpp</label>
         <link refid="python__variable_8hpp"/>
         <childnode refid="57" relation="include">
         </childnode>
         <childnode refid="109" relation="include">
         </childnode>
-        <childnode refid="114" relation="include">
-        </childnode>
         <childnode refid="110" relation="include">
         </childnode>
+        <childnode refid="111" relation="include">
+        </childnode>
       </node>
-      <node id="156">
+      <node id="153">
         <label>gambit/ColliderBit/ColliderBit_Higgs_rollcall.hpp</label>
         <link refid="ColliderBit__Higgs__rollcall_8hpp"/>
       </node>
-      <node id="157">
+      <node id="154">
         <label>gambit/ColliderBit/ColliderBit_LEP_rollcall.hpp</label>
         <link refid="ColliderBit__LEP__rollcall_8hpp"/>
       </node>
-      <node id="158">
+      <node id="155">
         <label>gambit/ColliderBit/ColliderBit_MC_rollcall.hpp</label>
         <link refid="ColliderBit__MC__rollcall_8hpp"/>
         <childnode refid="16" relation="include">
@@ -74,12 +62,12 @@
         <link refid="ColliderBit__eventloop_8hpp"/>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="118" relation="include">
+        <childnode refid="116" relation="include">
         </childnode>
-        <childnode refid="161" relation="include">
+        <childnode refid="158" relation="include">
         </childnode>
       </node>
-      <node id="161">
+      <node id="158">
         <label>gambit/ColliderBit/ColliderBit_eventloop_utils.hpp</label>
         <link refid="ColliderBit__eventloop__utils_8hpp"/>
         <childnode refid="17" relation="include">
@@ -87,58 +75,16 @@
         <childnode refid="7" relation="include">
         </childnode>
       </node>
-      <node id="160">
+      <node id="157">
         <label>gambit/ColliderBit/ColliderBit_measurements_rollcall.hpp</label>
         <link refid="ColliderBit__measurements__rollcall_8hpp"/>
       </node>
-      <node id="118">
+      <node id="116">
         <label>gambit/ColliderBit/ColliderBit_rollcall.hpp</label>
         <link refid="ColliderBit__rollcall_8hpp"/>
         <childnode refid="79" relation="include">
         </childnode>
-        <childnode refid="119" relation="include">
-        </childnode>
-        <childnode refid="156" relation="include">
-        </childnode>
-        <childnode refid="157" relation="include">
-        </childnode>
-        <childnode refid="158" relation="include">
-        </childnode>
-        <childnode refid="159" relation="include">
-        </childnode>
-        <childnode refid="160" relation="include">
-        </childnode>
-      </node>
-      <node id="119">
-        <label>gambit/ColliderBit/ColliderBit_types.hpp</label>
-        <link refid="ColliderBit__types_8hpp"/>
-        <childnode refid="12" relation="include">
-        </childnode>
-        <childnode refid="13" relation="include">
-        </childnode>
-        <childnode refid="120" relation="include">
-        </childnode>
-        <childnode refid="121" relation="include">
-        </childnode>
-        <childnode refid="122" relation="include">
-        </childnode>
-        <childnode refid="123" relation="include">
-        </childnode>
-        <childnode refid="124" relation="include">
-        </childnode>
-        <childnode refid="134" relation="include">
-        </childnode>
-        <childnode refid="135" relation="include">
-        </childnode>
-        <childnode refid="139" relation="include">
-        </childnode>
-        <childnode refid="140" relation="include">
-        </childnode>
-        <childnode refid="147" relation="include">
-        </childnode>
-        <childnode refid="148" relation="include">
-        </childnode>
-        <childnode refid="152" relation="include">
+        <childnode refid="117" relation="include">
         </childnode>
         <childnode refid="153" relation="include">
         </childnode>
@@ -146,56 +92,104 @@
         </childnode>
         <childnode refid="155" relation="include">
         </childnode>
-        <childnode refid="130" relation="include">
+        <childnode refid="156" relation="include">
+        </childnode>
+        <childnode refid="157" relation="include">
         </childnode>
       </node>
-      <node id="121">
+      <node id="117">
+        <label>gambit/ColliderBit/ColliderBit_types.hpp</label>
+        <link refid="ColliderBit__types_8hpp"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="118" relation="include">
+        </childnode>
+        <childnode refid="119" relation="include">
+        </childnode>
+        <childnode refid="120" relation="include">
+        </childnode>
+        <childnode refid="121" relation="include">
+        </childnode>
+        <childnode refid="122" relation="include">
+        </childnode>
+        <childnode refid="132" relation="include">
+        </childnode>
+        <childnode refid="133" relation="include">
+        </childnode>
+        <childnode refid="137" relation="include">
+        </childnode>
+        <childnode refid="138" relation="include">
+        </childnode>
+        <childnode refid="144" relation="include">
+        </childnode>
+        <childnode refid="145" relation="include">
+        </childnode>
+        <childnode refid="149" relation="include">
+        </childnode>
+        <childnode refid="150" relation="include">
+        </childnode>
+        <childnode refid="151" relation="include">
+        </childnode>
+        <childnode refid="152" relation="include">
+        </childnode>
+        <childnode refid="128" relation="include">
+        </childnode>
+      </node>
+      <node id="119">
         <label>gambit/ColliderBit/MCLoopInfo.hpp</label>
         <link refid="MCLoopInfo_8hpp"/>
         <childnode refid="12" relation="include">
         </childnode>
         <childnode refid="16" relation="include">
         </childnode>
-        <childnode refid="122" relation="include">
+        <childnode refid="120" relation="include">
         </childnode>
       </node>
-      <node id="122">
+      <node id="120">
         <label>gambit/ColliderBit/MC_convergence.hpp</label>
         <link refid="MC__convergence_8hpp"/>
         <childnode refid="16" relation="include">
         </childnode>
       </node>
-      <node id="126">
+      <node id="124">
         <label>gambit/ColliderBit/Utils.hpp</label>
         <link refid="Utils_8hpp"/>
-        <childnode refid="127" relation="include">
+        <childnode refid="125" relation="include">
         </childnode>
         <childnode refid="20" relation="include">
         </childnode>
         <childnode refid="87" relation="include">
         </childnode>
+        <childnode refid="126" relation="include">
+        </childnode>
+        <childnode refid="127" relation="include">
+        </childnode>
         <childnode refid="128" relation="include">
         </childnode>
         <childnode refid="129" relation="include">
         </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
         <childnode refid="130" relation="include">
         </childnode>
-        <childnode refid="131" relation="include">
-        </childnode>
-        <childnode refid="132" relation="include">
-        </childnode>
       </node>
-      <node id="162">
+      <node id="159">
         <label>gambit/ColliderBit/analyses/Analysis.hpp</label>
         <link refid="Analysis_8hpp"/>
         <childnode refid="17" relation="include">
         </childnode>
-        <childnode refid="130" relation="include">
+        <childnode refid="128" relation="include">
         </childnode>
-        <childnode refid="140" relation="include">
+        <childnode refid="138" relation="include">
+        </childnode>
+        <childnode refid="143" relation="include">
         </childnode>
       </node>
-      <node id="139">
+      <node id="137">
         <label>gambit/ColliderBit/analyses/AnalysisContainer.hpp</label>
         <link refid="AnalysisContainer_8hpp"/>
         <childnode refid="17" relation="include">
@@ -206,18 +200,12 @@
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
-        <childnode refid="130" relation="include">
+        <childnode refid="128" relation="include">
         </childnode>
       </node>
-      <node id="140">
+      <node id="138">
         <label>gambit/ColliderBit/analyses/AnalysisData.hpp</label>
         <link refid="AnalysisData_8hpp"/>
-        <childnode refid="141" relation="include">
-        </childnode>
-        <childnode refid="142" relation="include">
-        </childnode>
-        <childnode refid="143" relation="include">
-        </childnode>
         <childnode refid="17" relation="include">
         </childnode>
         <childnode refid="10" relation="include">
@@ -236,14 +224,18 @@
         </childnode>
         <childnode refid="20" relation="include">
         </childnode>
-        <childnode refid="144" relation="include">
+        <childnode refid="139" relation="include">
         </childnode>
         <childnode refid="15" relation="include">
         </childnode>
-        <childnode refid="145" relation="include">
+        <childnode refid="140" relation="include">
+        </childnode>
+        <childnode refid="141" relation="include">
+        </childnode>
+        <childnode refid="143" relation="include">
         </childnode>
       </node>
-      <node id="147">
+      <node id="144">
         <label>gambit/ColliderBit/analyses/AnalysisLogLikes.hpp</label>
         <link refid="AnalysisLogLikes_8hpp"/>
         <childnode refid="17" relation="include">
@@ -253,22 +245,34 @@
         <childnode refid="10" relation="include">
         </childnode>
       </node>
-      <node id="146">
+      <node id="143">
+        <label>gambit/ColliderBit/analyses/Cutflow.hpp</label>
+        <link refid="Cutflow_8hpp"/>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="139" relation="include">
+        </childnode>
+        <childnode refid="124" relation="include">
+        </childnode>
+      </node>
+      <node id="142">
         <label>gambit/ColliderBit/analyses/EventCounter.hpp</label>
         <link refid="EventCounter_8hpp"/>
         <childnode refid="17" relation="include">
         </childnode>
-        <childnode refid="130" relation="include">
+        <childnode refid="128" relation="include">
         </childnode>
       </node>
-      <node id="145">
+      <node id="141">
         <label>gambit/ColliderBit/analyses/SignalRegionData.hpp</label>
         <link refid="SignalRegionData_8hpp"/>
-        <childnode refid="141" relation="include">
-        </childnode>
-        <childnode refid="142" relation="include">
-        </childnode>
-        <childnode refid="143" relation="include">
+        <childnode refid="140" relation="include">
         </childnode>
         <childnode refid="17" relation="include">
         </childnode>
@@ -288,24 +292,24 @@
         </childnode>
         <childnode refid="20" relation="include">
         </childnode>
-        <childnode refid="144" relation="include">
+        <childnode refid="139" relation="include">
         </childnode>
         <childnode refid="15" relation="include">
         </childnode>
-        <childnode refid="146" relation="include">
+        <childnode refid="142" relation="include">
         </childnode>
       </node>
-      <node id="125">
+      <node id="123">
         <label>gambit/ColliderBit/colliders/BaseCollider.hpp</label>
         <link refid="BaseCollider_8hpp"/>
         <childnode refid="17" relation="include">
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
-        <childnode refid="126" relation="include">
+        <childnode refid="124" relation="include">
         </childnode>
       </node>
-      <node id="124">
+      <node id="122">
         <label>gambit/ColliderBit/colliders/Pythia8/Py8Collider.hpp</label>
         <link refid="Py8Collider_8hpp"/>
         <childnode refid="69" relation="include">
@@ -314,14 +318,14 @@
         </childnode>
         <childnode refid="79" relation="include">
         </childnode>
-        <childnode refid="125" relation="include">
+        <childnode refid="123" relation="include">
         </childnode>
-        <childnode refid="133" relation="include">
+        <childnode refid="131" relation="include">
         </childnode>
         <childnode refid="83" relation="include">
         </childnode>
       </node>
-      <node id="133">
+      <node id="131">
         <label>gambit/ColliderBit/colliders/Pythia8/SetHooksClass.hpp</label>
         <link refid="SetHooksClass_8hpp"/>
         <childnode refid="69" relation="include">
@@ -330,12 +334,12 @@
         </childnode>
         <childnode refid="79" relation="include">
         </childnode>
-        <childnode refid="125" relation="include">
+        <childnode refid="123" relation="include">
         </childnode>
         <childnode refid="83" relation="include">
         </childnode>
       </node>
-      <node id="136">
+      <node id="134">
         <label>gambit/ColliderBit/detectors/BaseDetector.hpp</label>
         <link refid="BaseDetector_8hpp"/>
         <childnode refid="17" relation="include">
@@ -346,37 +350,37 @@
         </childnode>
         <childnode refid="20" relation="include">
         </childnode>
-        <childnode refid="130" relation="include">
+        <childnode refid="128" relation="include">
         </childnode>
         <childnode refid="79" relation="include">
         </childnode>
       </node>
-      <node id="135">
+      <node id="133">
         <label>gambit/ColliderBit/detectors/BuckFast.hpp</label>
         <link refid="BuckFast_8hpp"/>
+        <childnode refid="134" relation="include">
+        </childnode>
+        <childnode refid="128" relation="include">
+        </childnode>
+        <childnode refid="135" relation="include">
+        </childnode>
         <childnode refid="136" relation="include">
         </childnode>
-        <childnode refid="130" relation="include">
-        </childnode>
-        <childnode refid="137" relation="include">
-        </childnode>
-        <childnode refid="138" relation="include">
-        </childnode>
       </node>
-      <node id="148">
+      <node id="145">
         <label>gambit/ColliderBit/limits/ALEPHSleptonLimits.hpp</label>
         <link refid="ALEPHSleptonLimits_8hpp_source"/>
-        <childnode refid="149" relation="include">
+        <childnode refid="146" relation="include">
         </childnode>
       </node>
-      <node id="149">
+      <node id="146">
         <label>gambit/ColliderBit/limits/BaseLimitContainer.hpp</label>
         <link refid="BaseLimitContainer_8hpp"/>
         <childnode refid="15" relation="include">
         </childnode>
         <childnode refid="56" relation="include">
         </childnode>
-        <childnode refid="150" relation="include">
+        <childnode refid="147" relation="include">
         </childnode>
         <childnode refid="46" relation="include">
         </childnode>
@@ -394,34 +398,34 @@
         </childnode>
         <childnode refid="79" relation="include">
         </childnode>
-        <childnode refid="151" relation="include">
+        <childnode refid="148" relation="include">
+        </childnode>
+      </node>
+      <node id="149">
+        <label>gambit/ColliderBit/limits/L3GauginoLimits.hpp</label>
+        <link refid="L3GauginoLimits_8hpp_source"/>
+        <childnode refid="146" relation="include">
+        </childnode>
+      </node>
+      <node id="150">
+        <label>gambit/ColliderBit/limits/L3SleptonLimits.hpp</label>
+        <link refid="L3SleptonLimits_8hpp_source"/>
+        <childnode refid="146" relation="include">
         </childnode>
       </node>
       <node id="152">
-        <label>gambit/ColliderBit/limits/L3GauginoLimits.hpp</label>
-        <link refid="L3GauginoLimits_8hpp_source"/>
-        <childnode refid="149" relation="include">
-        </childnode>
-      </node>
-      <node id="153">
-        <label>gambit/ColliderBit/limits/L3SleptonLimits.hpp</label>
-        <link refid="L3SleptonLimits_8hpp_source"/>
-        <childnode refid="149" relation="include">
-        </childnode>
-      </node>
-      <node id="155">
         <label>gambit/ColliderBit/limits/OPALDegenerateCharginoLimits.hpp</label>
         <link refid="OPALDegenerateCharginoLimits_8hpp_source"/>
-        <childnode refid="149" relation="include">
-        </childnode>
-      </node>
-      <node id="154">
-        <label>gambit/ColliderBit/limits/OPALGauginoLimits.hpp</label>
-        <link refid="OPALGauginoLimits_8hpp_source"/>
-        <childnode refid="149" relation="include">
+        <childnode refid="146" relation="include">
         </childnode>
       </node>
       <node id="151">
+        <label>gambit/ColliderBit/limits/OPALGauginoLimits.hpp</label>
+        <link refid="OPALGauginoLimits_8hpp_source"/>
+        <childnode refid="146" relation="include">
+        </childnode>
+      </node>
+      <node id="148">
         <label>gambit/ColliderBit/limits/PointsAndLines.hpp</label>
         <link refid="PointsAndLines_8hpp_source"/>
         <childnode refid="56" relation="include">
@@ -433,11 +437,11 @@
         <childnode refid="65" relation="include">
         </childnode>
       </node>
-      <node id="132">
+      <node id="130">
         <label>gambit/ColliderBit/mt2_bisect.h</label>
         <link refid="mt2__bisect_8h_source"/>
       </node>
-      <node id="123">
+      <node id="121">
         <label>gambit/ColliderBit/xsec.hpp</label>
         <link refid="xsec_8hpp"/>
         <childnode refid="12" relation="include">
@@ -446,7 +450,7 @@
         </childnode>
         <childnode refid="17" relation="include">
         </childnode>
-        <childnode refid="120" relation="include">
+        <childnode refid="118" relation="include">
         </childnode>
       </node>
       <node id="1">
@@ -454,7 +458,7 @@
         <link refid="runAnalyses_8cpp"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="162" relation="include">
+        <childnode refid="159" relation="include">
         </childnode>
       </node>
       <node id="99">
@@ -556,11 +560,11 @@
         </childnode>
         <childnode refid="55" relation="include">
         </childnode>
-        <childnode refid="116" relation="include">
+        <childnode refid="114" relation="include">
         </childnode>
         <childnode refid="67" relation="include">
         </childnode>
-        <childnode refid="110" relation="include">
+        <childnode refid="111" relation="include">
         </childnode>
       </node>
       <node id="98">
@@ -705,8 +709,6 @@
         <childnode refid="108" relation="include">
         </childnode>
         <childnode refid="113" relation="include">
-        </childnode>
-        <childnode refid="115" relation="include">
         </childnode>
       </node>
       <node id="89">
@@ -875,18 +877,12 @@
         <childnode refid="78" relation="include">
         </childnode>
       </node>
-      <node id="120">
+      <node id="118">
         <label>gambit/Utils/PID_pair.hpp</label>
         <link refid="PID__pair_8hpp"/>
         <childnode refid="43" relation="include">
         </childnode>
         <childnode refid="17" relation="include">
-        </childnode>
-      </node>
-      <node id="141">
-        <label>gambit/Utils/begin_ignore_warnings_eigen.hpp</label>
-        <link refid="begin__ignore__warnings__eigen_8hpp"/>
-        <childnode refid="57" relation="include">
         </childnode>
       </node>
       <node id="24">
@@ -904,10 +900,6 @@
       <node id="29">
         <label>gambit/Utils/cats.hpp</label>
         <link refid="Utils_2include_2gambit_2Utils_2cats_8hpp"/>
-      </node>
-      <node id="143">
-        <label>gambit/Utils/end_ignore_warnings.hpp</label>
-        <link refid="end__ignore__warnings_8hpp"/>
       </node>
       <node id="41">
         <label>gambit/Utils/exceptions.hpp</label>
@@ -1003,10 +995,10 @@
         <label>gambit/Utils/stringify.hpp</label>
         <link refid="stringify_8hpp"/>
       </node>
-      <node id="116">
+      <node id="114">
         <label>gambit/Utils/threadsafe_rng.hpp</label>
         <link refid="threadsafe__rng_8hpp"/>
-        <childnode refid="117" relation="include">
+        <childnode refid="115" relation="include">
         </childnode>
         <childnode refid="22" relation="include">
         </childnode>
@@ -1161,25 +1153,25 @@
         <childnode refid="63" relation="include">
         </childnode>
       </node>
-      <node id="142">
+      <node id="140">
         <label>Eigen/Core</label>
       </node>
-      <node id="129">
+      <node id="127">
         <label>HEPUtils/BinnedFn.h</label>
       </node>
-      <node id="130">
+      <node id="128">
         <label>HEPUtils/Event.h</label>
       </node>
-      <node id="131">
+      <node id="129">
         <label>HEPUtils/FastJet.h</label>
       </node>
-      <node id="138">
+      <node id="136">
         <label>HEPUtils/Jet.h</label>
       </node>
-      <node id="128">
+      <node id="126">
         <label>HEPUtils/MathUtils.h</label>
       </node>
-      <node id="137">
+      <node id="135">
         <label>HEPUtils/Particle.h</label>
       </node>
       <node id="83">
@@ -1196,9 +1188,6 @@
       </node>
       <node id="59">
         <label>boost/algorithm/string/classification.hpp</label>
-      </node>
-      <node id="112">
-        <label>boost/algorithm/string/replace.hpp</label>
       </node>
       <node id="58">
         <label>boost/algorithm/string/split.hpp</label>
@@ -1278,7 +1267,7 @@
       <node id="19">
         <label>complex</label>
       </node>
-      <node id="150">
+      <node id="147">
         <label>cstdlib</label>
       </node>
       <node id="18">
@@ -1296,16 +1285,16 @@
       <node id="46">
         <label>fstream</label>
       </node>
-      <node id="127">
+      <node id="125">
         <label>functional</label>
       </node>
-      <node id="115">
+      <node id="113">
         <label>gambit/Backends/backend_types_rollcall.hpp</label>
       </node>
-      <node id="159">
+      <node id="156">
         <label>gambit/ColliderBit/ColliderBit_models_rollcall.hpp</label>
       </node>
-      <node id="134">
+      <node id="132">
         <label>gambit/ColliderBit/colliders/Pythia8/Py8Collider_typedefs.hpp</label>
       </node>
       <node id="57">
@@ -1317,7 +1306,7 @@
       <node id="103">
         <label>gsl/gsl_integration.h</label>
       </node>
-      <node id="144">
+      <node id="139">
         <label>iomanip</label>
       </node>
       <node id="7">
@@ -1344,7 +1333,7 @@
       <node id="69">
         <label>ostream</label>
       </node>
-      <node id="117">
+      <node id="115">
         <label>random</label>
       </node>
       <node id="11">
@@ -1400,27 +1389,6 @@
         <inbodydescription>
         </inbodydescription>
         <location file="ColliderBit/src/runAnalyses.cpp" line="43" column="9" bodyfile="ColliderBit/src/runAnalyses.cpp" bodystart="43" bodyend="-1"/>
-      </memberdef>
-      <memberdef kind="define" id="runAnalyses_8cpp_1af2b541dd694c403a4af0aff08c3e1d34" prot="public" static="no">
-        <name>RUN_ANALYSES</name>
-        <param><defname>NAME</defname></param>
-        <param><defname>EXPERIMENT</defname></param>
-        <param><defname>SMEARED_EVENT_DEP</defname></param>
-        <initializer>    void NAME(AnalysisDataPointers&amp; result)                                   \
-    {                                                                         \
-      using namespace Pipes::NAME;                                            \
-      runAnalyses(result, #EXPERIMENT, *Dep::RunMC,                           \
-       *<ref refid="Utils_2include_2gambit_2Utils_2cats_8hpp_1aa7c74d1cd12eae89a2d03f84ea2b8598" kindref="member">Dep::CAT</ref>(EXPERIMENT,AnalysisContainer), *Dep::SMEARED_EVENT_DEP,      \
-       *Loop::iteration, Loop::wrapup);                                       \
-    }</initializer>
-        <briefdescription>
-<para>Run all analyses for EXPERIMENT. </para>
-        </briefdescription>
-        <detaileddescription>
-        </detaileddescription>
-        <inbodydescription>
-        </inbodydescription>
-        <location file="ColliderBit/src/runAnalyses.cpp" line="137" column="13" bodyfile="ColliderBit/src/runAnalyses.cpp" bodystart="137" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -1586,7 +1554,7 @@
 <codeline lineno="120"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>DEBUG_PREFIX<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;run&quot;</highlight><highlight class="normal">+detname+</highlight><highlight class="stringliteral">&quot;Analyses:<sp/>&apos;result&apos;<sp/>contains<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>result.size()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;<sp/>results:&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
 <codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>AnalysisData*<sp/>a:<sp/>result)</highlight></codeline>
 <codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>DEBUG_PREFIX<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;run&quot;</highlight><highlight class="normal">+detname+</highlight><highlight class="stringliteral">&quot;Analyses:<sp/>-<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>a-&gt;analysis_name<sp/>&lt;&lt;<sp/>endl;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>DEBUG_PREFIX<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;run&quot;</highlight><highlight class="normal">+detname+</highlight><highlight class="stringliteral">&quot;Analyses:<sp/>-<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>a-&gt;analysis_name<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
 <codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="125"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
@@ -1594,27 +1562,42 @@
 <codeline lineno="128"><highlight class="normal"></highlight></codeline>
 <codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(iteration<sp/>&lt;=<sp/>BASE_INIT)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
 <codeline lineno="130"><highlight class="normal"></highlight></codeline>
-<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Loop<sp/>over<sp/>contained<sp/>analyses<sp/>and<sp/>run<sp/>them.</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Container.analyze(SmearedEvent);</highlight></codeline>
-<codeline lineno="133"><highlight class="normal"></highlight></codeline>
-<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
-<codeline lineno="135"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="136"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Run<sp/>all<sp/>analyses<sp/>for<sp/>EXPERIMENT</highlight></codeline>
-<codeline lineno="137"><highlight class="comment"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/>#define<sp/>RUN_ANALYSES(NAME,<sp/>EXPERIMENT,<sp/>SMEARED_EVENT_DEP)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
-<codeline lineno="138"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>void<sp/>NAME(AnalysisDataPointers&amp;<sp/>result)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
-<codeline lineno="139"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>{<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
-<codeline lineno="140"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/>using<sp/>namespace<sp/>Pipes::NAME;<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
-<codeline lineno="141"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/>runAnalyses(result,<sp/>#EXPERIMENT,<sp/>*Dep::RunMC,<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
-<codeline lineno="142"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*Dep::CAT(EXPERIMENT,AnalysisContainer),<sp/>*Dep::SMEARED_EVENT_DEP,<sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
-<codeline lineno="143"><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*Loop::iteration,<sp/>Loop::wrapup);<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>\</highlight></codeline>
-<codeline lineno="144"><highlight class="preprocessor"><sp/><sp/><sp/><sp/>}</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="145"><highlight class="normal"></highlight></codeline>
-<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="runAnalyses_8cpp_1af2b541dd694c403a4af0aff08c3e1d34" kindref="member">RUN_ANALYSES</ref>(runATLASAnalyses,<sp/>ATLAS,<sp/>ATLASSmearedEvent)</highlight></codeline>
-<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="runAnalyses_8cpp_1af2b541dd694c403a4af0aff08c3e1d34" kindref="member">RUN_ANALYSES</ref>(runCMSAnalyses,<sp/>CMS,<sp/>CMSSmearedEvent)</highlight></codeline>
-<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="runAnalyses_8cpp_1af2b541dd694c403a4af0aff08c3e1d34" kindref="member">RUN_ANALYSES</ref>(runIdentityAnalyses,<sp/>Identity,<sp/>CopiedEvent)</highlight></codeline>
-<codeline lineno="149"><highlight class="normal"></highlight></codeline>
-<codeline lineno="150"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
-<codeline lineno="151"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Assign<sp/>event<sp/>ID.<sp/>The<sp/>event<sp/>ID<sp/>is<sp/>only<sp/>unique<sp/>within</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>the<sp/>current<sp/>collider<sp/>and<sp/>detector.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>SmearedEvent.set_id(iteration);</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Loop<sp/>over<sp/>contained<sp/>analyses<sp/>and<sp/>run<sp/>them.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>Container.analyze(SmearedEvent);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="140"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Run<sp/>all<sp/>analyses<sp/>for<sp/>the<sp/>given<sp/>experiment</highlight></codeline>
+<codeline lineno="141"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="runAnalyses_8cpp_1a58bf00219054442b985bd3ded454c2f5" kindref="member">runATLASAnalyses</ref>(AnalysisDataPointers&amp;<sp/>result)</highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">Pipes::runATLASAnalyses;</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="runAnalyses_8cpp_1a97fe1656985cf21a6baa16807a935d7b" kindref="member">runAnalyses</ref>(result,<sp/></highlight><highlight class="stringliteral">&quot;ATLAS&quot;</highlight><highlight class="normal">,<sp/>*Dep::RunMC,</highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*Dep::ATLASAnalysisContainer,<sp/>*Dep::ATLASSmearedEvent,</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*Loop::iteration,<sp/>Loop::wrapup);</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"></highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>runCMSAnalyses(AnalysisDataPointers&amp;<sp/>result)</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">Pipes::runCMSAnalyses;</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="runAnalyses_8cpp_1a97fe1656985cf21a6baa16807a935d7b" kindref="member">runAnalyses</ref>(result,<sp/></highlight><highlight class="stringliteral">&quot;CMS&quot;</highlight><highlight class="normal">,<sp/>*Dep::RunMC,</highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*Dep::CMSAnalysisContainer,<sp/>*Dep::CMSSmearedEvent,</highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*Loop::iteration,<sp/>Loop::wrapup);</highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="156"><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>runIdentityAnalyses(AnalysisDataPointers&amp;<sp/>result)</highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">Pipes::runIdentityAnalyses;</highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="runAnalyses_8cpp_1a97fe1656985cf21a6baa16807a935d7b" kindref="member">runAnalyses</ref>(result,<sp/></highlight><highlight class="stringliteral">&quot;Identity&quot;</highlight><highlight class="normal">,<sp/>*Dep::RunMC,</highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*Dep::IdentityAnalysisContainer,<sp/>*Dep::CopiedEvent,</highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/>*Loop::iteration,<sp/>Loop::wrapup);</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="166"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="ColliderBit/src/runAnalyses.cpp"/>
   </compounddef>

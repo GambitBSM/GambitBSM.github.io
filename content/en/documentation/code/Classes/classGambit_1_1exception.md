@@ -30,7 +30,7 @@ Inherited by [Gambit::error](/documentation/code/classes/classgambit_1_1error/),
 | | **[exception](/documentation/code/classes/classgambit_1_1exception/#function-exception)**(const char * kind, const char * what, const char * message, const char * inikey, bool fatal, LogTag t1, LogTag t2, LogTag t3, LogTag t4, LogTag t5, LogTag t6)<br>Constructor with 6 log tags.  |
 | | **[exception](/documentation/code/classes/classgambit_1_1exception/#function-exception)**(const char * kind, const char * what, const char * message, const char * inikey, bool fatal, LogTag t1, LogTag t2, LogTag t3, LogTag t4, LogTag t5, LogTag t6, LogTag t7)<br>Constructor with 7 log tags.  |
 | | **[exception](/documentation/code/classes/classgambit_1_1exception/#function-exception)**(const char * kind, const char * what, const char * message, const char * inikey, bool fatal, std::set< LogTag > tags)<br>Constructor with log tags as a set.  |
-| void | **[forced_throw](/documentation/code/classes/classgambit_1_1exception/#function-forced-throw)**(const std::string & origin, const std::string & specific_message)<br>Log the exception and throw it regardless of whether is is fatal or not.  |
+| void | **[forced_throw](/documentation/code/classes/classgambit_1_1exception/#function-forced-throw)**(const std::string & origin, const std::string & specific_message)<br>Log the exception and throw it regardless of whether it is fatal or not.  |
 | void | **[silent_forced_throw](/documentation/code/classes/classgambit_1_1exception/#function-silent-forced-throw)**()<br>As per forced_throw but without logging.  |
 | virtual | **[~exception](/documentation/code/classes/classgambit_1_1exception/#function-exception)**()<br>Destructor.  |
 | void | **[set_fatal](/documentation/code/classes/classgambit_1_1exception/#function-set-fatal)**(bool fatal)<br>Setter for the fatal flag.  |
@@ -216,11 +216,11 @@ void forced_throw(
 )
 ```
 
-Log the exception and throw it regardless of whether is is fatal or not. 
+Log the exception and throw it regardless of whether it is fatal or not. 
 
 Force a throw of the exception. These should only be used inside a try block, i.e. if you plan to catch the exception.
 
-Log the exception and throw it regardless of whether is is fatal or not. 
+Log the exception and throw it regardless of whether it is fatal or not. 
 
 
 ### function silent_forced_throw
@@ -302,4 +302,4 @@ The set of tags to be passed to the logger.
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:31 +0000
+Updated on 2026-11-03 at 14:50:42 +0000

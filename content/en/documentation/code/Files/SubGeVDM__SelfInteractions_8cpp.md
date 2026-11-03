@@ -156,7 +156,7 @@ namespace Gambit
           return (factor*(temp1 + temp2 + temp3))/denominator;
         }
 
-        double sigma_imd_att_s(double sigma0, double w, double m_Ap, double gamma_Ap)
+        double sigma_imd_att_s(double sigma0, double w, double /*m_Ap*/, double /*gamma_Ap*/)
         {
           double r = pow(w*beta_rel,2);
           double r2 = pow(r,2);
@@ -171,14 +171,14 @@ namespace Gambit
         double sigma_tc_rep_s(double sigma0, double w)
         {
           double r = pow(w*beta_rel,2);
-          double r2 = pow(r,2);
+          // double r2 = pow(r,2);
           double factor = 16*M_PI*sigma0;
           double temp1 = (log(1+r));
           double denominator = (r*(2+r));
           return (factor*temp1)/denominator;
         }
 
-        double sigma_tc_att_s(double sigma0, double w, double m_Ap, double gamma_Ap)
+        double sigma_tc_att_s(double sigma0, double w, double /*m_Ap*/, double /*gamma_Ap*/)
         {
           double r = pow(w*beta_rel,2);
           double r2 = pow(r,2);
@@ -302,7 +302,7 @@ namespace Gambit
           double total_mass_loss = dm_loss*(1-fg_mc) + fg_mc*(1-x);
           double error_total = error_tot(dm_loss);
           double margLike = 0;
-          for (int i = 0; i < mlr_sample.size(); i++) {
+          for (size_t i = 0; i < mlr_sample.size(); i++) {
           margLike += exp(-1/(2*pow((error_total),2))*pow((mlr_obs_i- mlr_sample[i]*(1-total_mass_loss)),2));
           }
           double margLike_c = std::max(1e-30, std::min(margLike, 1e30));
@@ -409,4 +409,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:35 +0000
+Updated on 2026-11-03 at 14:50:47 +0000

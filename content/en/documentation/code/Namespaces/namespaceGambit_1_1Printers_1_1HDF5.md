@@ -60,8 +60,8 @@ description: "[No description available]"
 | hsize_t | **[getGroupNum](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-getgroupnum)**(hid_t group_id) |
 | hid_t | **[getType](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-gettype)**(hid_t dataset) |
 | std::vector< std::string > | **[get_dset_names](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-get-dset-names)**(hid_t group_id) |
-| herr_t | **[op_func](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-op-func)**(hid_t loc_id, const char * name_in, const H5L_info_t * , void * operator_data) |
-| herr_t | **[op_func_aux](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-op-func-aux)**(hid_t loc_id, const char * name_in, const H5L_info_t * , void * operator_data) |
+| herr_t | **[op_func](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-op-func)**(hid_t loc_id, const char * name_in, const GAMBIT_H5L_INFO_T * , void * operator_data) |
+| herr_t | **[op_func_aux](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-op-func-aux)**(hid_t loc_id, const char * name_in, const GAMBIT_H5L_INFO_T * , void * operator_data) |
 | void | **[setup_hdf5_points](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-setup-hdf5-points)**(hid_t new_group, hid_t type, unsigned long long size_tot, const std::string & name) |
 | void | **[setup_hdf5_points](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-setup-hdf5-points)**(hid_t new_group, hid_t type, hid_t type2, unsigned long long size_tot, const std::string & name) |
 | std::vector< std::string > | **[getGroups](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-getgroups)**(std::string groups) |
@@ -69,14 +69,7 @@ description: "[No description available]"
 | const hid_t | **[H5P_GAMBIT](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-h5p-gambit)**(create_GAMBIT_fapl() )<br>Const global for the GAMBIT fapl.  |
 | std::vector< bool > | **[getChunk](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-getchunk)**(const hid_t dset_id, std::size_t offset, std::size_t length) |
 | template <class T \> <br>std::pair< bool, std::size_t > | **[_checkDatasetReadable_helper](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-checkdatasetreadable-helper)**(hid_t dset_id, const std::string dset_name) |
-| herr_t | **[group_ls](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-group-ls)**(hid_t g_id, const char * name, const H5L_info_t * , void * op_data) |
-
-## Attributes
-
-|                | Name           |
-| -------------- | -------------- |
-| H5E_auto2_t | **[old_func](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#variable-old-func)** <br>Close hdf5 type ID.  |
-| void * | **[old_client_data](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#variable-old-client-data)**  |
+| herr_t | **[group_ls](/documentation/code/namespaces/namespacegambit_1_1printers_1_1hdf5/#function-group-ls)**(hid_t g_id, const char * name, const GAMBIT_H5L_INFO_T * , void * op_data) |
 
 
 ## Functions Documentation
@@ -523,7 +516,7 @@ std::vector< std::string > get_dset_names(
 inline herr_t op_func(
     hid_t loc_id,
     const char * name_in,
-    const H5L_info_t * ,
+    const GAMBIT_H5L_INFO_T * ,
     void * operator_data
 )
 ```
@@ -535,7 +528,7 @@ inline herr_t op_func(
 inline herr_t op_func_aux(
     hid_t loc_id,
     const char * name_in,
-    const H5L_info_t * ,
+    const GAMBIT_H5L_INFO_T * ,
     void * operator_data
 )
 ```
@@ -621,31 +614,11 @@ std::pair< bool, std::size_t > _checkDatasetReadable_helper(
 herr_t group_ls(
     hid_t g_id,
     const char * name,
-    const H5L_info_t * ,
+    const GAMBIT_H5L_INFO_T * ,
     void * op_data
 )
 ```
 
-
-
-## Attributes Documentation
-
-### variable old_func
-
-```
-H5E_auto2_t old_func;
-```
-
-Close hdf5 type ID. 
-
-Close hdf5 group global error variables (handler) 
-
-
-### variable old_client_data
-
-```
-void * old_client_data;
-```
 
 
 
@@ -653,4 +626,4 @@ void * old_client_data;
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:32 +0000
+Updated on 2026-11-03 at 14:50:44 +0000

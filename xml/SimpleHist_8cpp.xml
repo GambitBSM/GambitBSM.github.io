@@ -6,7 +6,7 @@
     <includes refid="DarkBit__rollcall_8hpp" local="yes">gambit/DarkBit/DarkBit_rollcall.hpp</includes>
     <includes refid="SimpleHist_8hpp" local="yes">gambit/DarkBit/SimpleHist.hpp</includes>
     <incdepgraph>
-      <node id="110">
+      <node id="111">
         <label>gambit/Backends/backend_info.hpp</label>
         <link refid="backend__info_8hpp"/>
         <childnode refid="9" relation="include">
@@ -18,13 +18,13 @@
         <childnode refid="62" relation="include">
         </childnode>
       </node>
-      <node id="109">
+      <node id="110">
         <label>gambit/Backends/backend_singleton.hpp</label>
         <link refid="backend__singleton_8hpp"/>
-        <childnode refid="110" relation="include">
+        <childnode refid="111" relation="include">
         </childnode>
       </node>
-      <node id="122">
+      <node id="120">
         <label>gambit/Backends/backend_types/nulike.hpp</label>
         <link refid="nulike_8hpp"/>
       </node>
@@ -32,48 +32,36 @@
         <label>gambit/Backends/default_bossed_versions.hpp</label>
         <link refid="default__bossed__versions_8hpp"/>
       </node>
-      <node id="107">
-        <label>gambit/Backends/mathematica_variable.hpp</label>
-        <link refid="mathematica__variable_8hpp"/>
-        <childnode refid="108" relation="include">
-        </childnode>
-        <childnode refid="109" relation="include">
-        </childnode>
-        <childnode refid="56" relation="include">
-        </childnode>
-        <childnode refid="111" relation="include">
-        </childnode>
-      </node>
-      <node id="113">
+      <node id="109">
         <label>gambit/Backends/python_helpers.hpp</label>
         <link refid="python__helpers_8hpp"/>
       </node>
-      <node id="112">
+      <node id="107">
         <label>gambit/Backends/python_variable.hpp</label>
         <link refid="python__variable_8hpp"/>
         <childnode refid="56" relation="include">
         </childnode>
         <childnode refid="108" relation="include">
         </childnode>
-        <childnode refid="113" relation="include">
-        </childnode>
         <childnode refid="109" relation="include">
         </childnode>
+        <childnode refid="110" relation="include">
+        </childnode>
       </node>
-      <node id="117">
+      <node id="115">
         <label>gambit/DarkBit/DarkBit_rollcall.hpp</label>
         <link refid="DarkBit__rollcall_8hpp"/>
-        <childnode refid="118" relation="include">
+        <childnode refid="116" relation="include">
         </childnode>
       </node>
-      <node id="118">
+      <node id="116">
         <label>gambit/DarkBit/DarkBit_types.hpp</label>
         <link refid="DarkBit__types_8hpp"/>
+        <childnode refid="117" relation="include">
+        </childnode>
+        <childnode refid="118" relation="include">
+        </childnode>
         <childnode refid="119" relation="include">
-        </childnode>
-        <childnode refid="120" relation="include">
-        </childnode>
-        <childnode refid="121" relation="include">
         </childnode>
         <childnode refid="98" relation="include">
         </childnode>
@@ -81,10 +69,10 @@
         </childnode>
         <childnode refid="60" relation="include">
         </childnode>
-        <childnode refid="122" relation="include">
+        <childnode refid="120" relation="include">
         </childnode>
       </node>
-      <node id="121">
+      <node id="119">
         <label>gambit/DarkBit/ProcessCatalog.hpp</label>
         <link refid="ProcessCatalog_8hpp"/>
         <childnode refid="11" relation="include">
@@ -98,7 +86,7 @@
         <childnode refid="98" relation="include">
         </childnode>
       </node>
-      <node id="120">
+      <node id="118">
         <label>gambit/DarkBit/SimpleHist.hpp</label>
         <link refid="SimpleHist_8hpp"/>
         <childnode refid="11" relation="include">
@@ -112,7 +100,7 @@
         <childnode refid="98" relation="include">
         </childnode>
       </node>
-      <node id="119">
+      <node id="117">
         <label>gambit/DarkBit/decay_chain.hpp</label>
         <link refid="decay__chain_8hpp"/>
         <childnode refid="11" relation="include">
@@ -125,7 +113,7 @@
         </childnode>
         <childnode refid="100" relation="include">
         </childnode>
-        <childnode refid="115" relation="include">
+        <childnode refid="113" relation="include">
         </childnode>
       </node>
       <node id="1">
@@ -133,9 +121,9 @@
         <link refid="SimpleHist_8cpp"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="117" relation="include">
+        <childnode refid="115" relation="include">
         </childnode>
-        <childnode refid="120" relation="include">
+        <childnode refid="118" relation="include">
         </childnode>
       </node>
       <node id="98">
@@ -237,11 +225,11 @@
         </childnode>
         <childnode refid="54" relation="include">
         </childnode>
-        <childnode refid="115" relation="include">
+        <childnode refid="113" relation="include">
         </childnode>
         <childnode refid="66" relation="include">
         </childnode>
-        <childnode refid="109" relation="include">
+        <childnode refid="110" relation="include">
         </childnode>
       </node>
       <node id="97">
@@ -386,8 +374,6 @@
         <childnode refid="107" relation="include">
         </childnode>
         <childnode refid="112" relation="include">
-        </childnode>
-        <childnode refid="114" relation="include">
         </childnode>
       </node>
       <node id="88">
@@ -666,10 +652,10 @@
         <label>gambit/Utils/stringify.hpp</label>
         <link refid="stringify_8hpp"/>
       </node>
-      <node id="115">
+      <node id="113">
         <label>gambit/Utils/threadsafe_rng.hpp</label>
         <link refid="threadsafe__rng_8hpp"/>
-        <childnode refid="116" relation="include">
+        <childnode refid="114" relation="include">
         </childnode>
         <childnode refid="21" relation="include">
         </childnode>
@@ -839,9 +825,6 @@
       <node id="58">
         <label>boost/algorithm/string/classification.hpp</label>
       </node>
-      <node id="111">
-        <label>boost/algorithm/string/replace.hpp</label>
-      </node>
       <node id="57">
         <label>boost/algorithm/string/split.hpp</label>
       </node>
@@ -935,7 +918,7 @@
       <node id="45">
         <label>fstream</label>
       </node>
-      <node id="114">
+      <node id="112">
         <label>gambit/Backends/backend_types_rollcall.hpp</label>
       </node>
       <node id="56">
@@ -971,7 +954,7 @@
       <node id="68">
         <label>ostream</label>
       </node>
-      <node id="116">
+      <node id="114">
         <label>random</label>
       </node>
       <node id="10">

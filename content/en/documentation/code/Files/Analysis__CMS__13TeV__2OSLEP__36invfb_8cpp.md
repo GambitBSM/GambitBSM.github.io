@@ -65,17 +65,6 @@ namespace Gambit {
 
     protected:
 
-      // Counters for the number of accepted events for each signal region
-      std::map<string, EventCounter> _counters = {
-        {"SR1", EventCounter("SR1")},
-        {"SR2", EventCounter("SR2")},
-        {"SR3", EventCounter("SR3")},
-        {"SR4", EventCounter("SR4")},
-        {"SR5", EventCounter("SR5")},
-        {"SR6", EventCounter("SR6")},
-        {"SR7", EventCounter("SR7")},
-      };
-
     private:
 
       vector<int> cutFlowVector;
@@ -100,7 +89,17 @@ namespace Gambit {
 
       Analysis_CMS_13TeV_2OSLEP_36invfb()
       {
+        // Counters for the number of accepted events for each signal region
+        _counters["SR1"] = EventCounter("SR1");
+        _counters["SR2"] = EventCounter("SR2");
+        _counters["SR3"] = EventCounter("SR3");
+        _counters["SR4"] = EventCounter("SR4");
+        _counters["SR5"] = EventCounter("SR5");
+        _counters["SR6"] = EventCounter("SR6");
+        _counters["SR7"] = EventCounter("SR7");
+
         set_analysis_name("CMS_13TeV_2OSLEP_36invfb");
+        set_detector_name(detector);
         set_luminosity(35.9);
         // xsecCMS_550_200=30.2;
 
@@ -225,7 +224,8 @@ namespace Gambit {
             if (baselineJets.at(iJet)->btag())signalBJets.push_back(baselineJets.at(iJet));
           }
         }
-        CMS::applyCSVv2MediumBtagEffAndMisId(signalJets,signalBJets);
+        applyEfficiency(signalBJets, CMS::eff2DBJet.at("CSVv2Medium"));
+        applyBtagMisId(signalJets, signalBJets, CMS::misIDBJet.at("CSVv2Medium"));
 
         // Signal leptons = electrons + muons
         signalLeptons=signalElectrons;
@@ -359,22 +359,6 @@ namespace Gambit {
 
       }
 
-      /// Combine the variables of another copy of this analysis (typically on another thread) into this one.
-      void combine(const Analysis* other)
-      {
-        const Analysis_CMS_13TeV_2OSLEP_36invfb* specificOther
-                = dynamic_cast<const Analysis_CMS_13TeV_2OSLEP_36invfb*>(other);
-
-        for (auto& pair : _counters) { pair.second += specificOther->_counters.at(pair.first); }
-
-        if (NCUTS != specificOther->NCUTS) NCUTS = specificOther->NCUTS;
-        for (size_t j = 0; j < NCUTS; j++)
-        {
-          cutFlowVector[j] += specificOther->cutFlowVector[j];
-          cutFlowVector_str[j] = specificOther->cutFlowVector_str[j];
-        }
-
-      }
 
 
       virtual void collect_results()
@@ -505,4 +489,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:35 +0000
+Updated on 2026-11-03 at 14:50:47 +0000

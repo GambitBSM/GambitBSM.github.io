@@ -160,7 +160,7 @@ Spectrum(
 
 Construct new object, automatically creating an [SMSimpleSpec](/documentation/code/classes/classgambit_1_1smsimplespec/) as the LE subspectrum, and cloning the HE [SubSpectrum]() object supplied and taking possession of it. 
 
-Construct new object, automatically creating an [SMSimpleSpec](/documentation/code/classes/classgambit_1_1smsimplespec/) as the LE subspectrum, and cloning the HE [SubSpectrum](/documentation/code/classes/classgambit_1_1subspectrum/) object supplied and taking possession of it. (won't make a version of this taking a pointer, since this is an "advanced" task, let people use the full contructor to do it.) 
+Construct new object, automatically creating an [SMSimpleSpec](/documentation/code/classes/classgambit_1_1smsimplespec/) as the LE subspectrum, and cloning the HE [SubSpectrum](/documentation/code/classes/classgambit_1_1subspectrum/) object supplied and taking possession of it. (won't make a version of this taking a pointer, since this is an "advanced" task, let people use the full constructor to do it.) 
 
 
 ### function Spectrum
@@ -653,4 +653,4 @@ Swap resources of two [Spectrum](/documentation/code/classes/classgambit_1_1spec
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:31 +0000
+Updated on 2026-11-03 at 14:50:42 +0000

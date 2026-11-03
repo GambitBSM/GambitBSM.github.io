@@ -22,7 +22,7 @@ Inherits from [Gambit::Priors::BasePrior](/documentation/code/classes/classgambi
 | | **[Gaussian](/documentation/code/classes/classgambit_1_1priors_1_1gaussian/#function-gaussian)**(const std::vector< std::string > & param, const [Options](/documentation/code/classes/classgambit_1_1options/) & options) |
 | virtual void | **[transform](/documentation/code/classes/classgambit_1_1priors_1_1gaussian/#function-transform)**(hyper_cube_ref< double > unitpars, std::unordered_map< std::string, double > & outputMap) const override<br>Transformation from unit interval to the [Gaussian](/documentation/code/classes/classgambit_1_1priors_1_1gaussian/).  |
 | virtual void | **[inverse_transform](/documentation/code/classes/classgambit_1_1priors_1_1gaussian/#function-inverse-transform)**(const std::unordered_map< std::string, double > & physical, hyper_cube_ref< double > unit) const override<br>Transform from physical parameter to unit hypercube.  |
-| virtual double | **[log_prior_density](/documentation/code/classes/classgambit_1_1priors_1_1gaussian/#function-log-prior-density)**(const std::unordered_map< std::string, double > & ) const<br>Log of prior density.  |
+| virtual double | **[log_prior_density](/documentation/code/classes/classgambit_1_1priors_1_1gaussian/#function-log-prior-density)**(const std::unordered_map< std::string, double > & ) const override<br>Log of prior density.  |
 
 ## Additional inherited members
 
@@ -36,6 +36,7 @@ Inherits from [Gambit::Priors::BasePrior](/documentation/code/classes/classgambi
 | | **[BasePrior](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/#function-baseprior)**(const std::vector< std::string > & param_names, const int param_size =0) |
 | | **[BasePrior](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/#function-baseprior)**(const std::string & param_name, const int param_size =0) |
 | virtual std::vector< std::string > | **[getShownParameters](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/#function-getshownparameters)**() const |
+| virtual std::vector< std::string > | **[getSetParameters](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/#function-getsetparameters)**() const |
 | unsigned int | **[size](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/#function-size)**() const |
 | void | **[setSize](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/#function-setsize)**(const unsigned int size) |
 | unsigned int & | **[sizeRef](/documentation/code/classes/classgambit_1_1priors_1_1baseprior/#function-sizeref)**() |
@@ -105,7 +106,7 @@ Transform from physical parameter to unit hypercube.
 ```
 inline virtual double log_prior_density(
     const std::unordered_map< std::string, double > & 
-) const
+) const override
 ```
 
 Log of prior density. 
@@ -115,4 +116,4 @@ Log of prior density.
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:32 +0000
+Updated on 2026-11-03 at 14:50:44 +0000

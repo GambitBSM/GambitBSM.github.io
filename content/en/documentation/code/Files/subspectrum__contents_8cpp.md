@@ -77,7 +77,7 @@ namespace Gambit
      my_name = name;
    }
 
-   /// Function to retreive all parameters
+   /// Function to retrieve all parameters
    std::vector<SpectrumParameter> SubSpectrumContents::all_parameters() const 
    {
      return parameters; 
@@ -225,4 +225,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:34 +0000
+Updated on 2026-11-03 at 14:50:46 +0000

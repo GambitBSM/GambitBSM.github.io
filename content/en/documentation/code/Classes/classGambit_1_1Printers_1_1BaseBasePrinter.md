@@ -43,7 +43,7 @@ Inherited by [Gambit::Printers::BasePrinter](/documentation/code/classes/classga
 |                | Name           |
 | -------------- | -------------- |
 | template <typename T \> <br>void | **[_print](/documentation/code/classes/classgambit_1_1printers_1_1basebaseprinter/#function-print)**(T const & , const std::string & label, const int vertexID, const uint, const ulong) |
-| template <typename T \> <br>void | **[_print](/documentation/code/classes/classgambit_1_1printers_1_1basebaseprinter/#function-print)**(T const & in, const std::string & label, const uint rank, const ulong pointID)<br>Same for overloaded function.  |
+| template <typename T \> <br>void | **[_print](/documentation/code/classes/classgambit_1_1printers_1_1basebaseprinter/#function-print)**(T const & , const std::string & label, const uint rank, const ulong pointID)<br>Same for overloaded function.  |
 | virtual void | **[_print_metadata](/documentation/code/classes/classgambit_1_1printers_1_1basebaseprinter/#function-print-metadata)**([map_str_str](/documentation/code/namespaces/namespacegambit/#typedef-map-str-str) ) |
 
 ## Protected Attributes
@@ -280,7 +280,7 @@ Default _print function. Throws an error if no matching virtual function for the
 ```
 template <typename T >
 inline void _print(
-    T const & in,
+    T const & ,
     const std::string & label,
     const uint rank,
     const ulong pointID
@@ -321,4 +321,4 @@ Counter for printer cooldown. If non-zero printer can be disabled for a fixed nu
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:32 +0000
+Updated on 2026-11-03 at 14:50:44 +0000

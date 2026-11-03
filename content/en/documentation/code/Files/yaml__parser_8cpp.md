@@ -240,6 +240,7 @@ namespace YAML
       const std::string key = entry.first.as<std::string>(); 
       if      (key == "purpose")          rhs.purpose        = entry.second.as<std::string>();
       else if (key == "capability")       rhs.capability     = entry.second.as<std::string>();
+      else if (key == "critical")         rhs.critical       = entry.second.as<bool>();
       else if (key == "type")             rhs.type           = entry.second.as<std::string>();
       else if (key == "function")         rhs.function       = entry.second.as<std::string>();
       else if (key == "module")           rhs.module         = entry.second.as<std::string>();
@@ -650,4 +651,4 @@ namespace YAML
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:35 +0000
+Updated on 2026-11-03 at 14:50:47 +0000

@@ -14,7 +14,6 @@
     <includes refid="new__mpi__datatypes_8hpp" local="yes">gambit/Utils/new_mpi_datatypes.hpp</includes>
     <includedby refid="hdf5__combine__tools_8cpp" local="yes">hdf5_combine_tools.cpp</includedby>
     <includedby refid="hdf5printer_8cpp" local="yes">hdf5printer.cpp</includedby>
-    <includedby refid="manual__hdf5__combine_8cpp" local="yes">manual_hdf5_combine.cpp</includedby>
     <incdepgraph>
       <node id="38">
         <label>gambit/Logs/log_tags.hpp</label>
@@ -268,8 +267,6 @@
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="4" relation="include">
-        </childnode>
       </node>
       <node id="2">
         <label>hdf5_combine_tools.cpp</label>
@@ -278,10 +275,6 @@
       <node id="3">
         <label>hdf5printer.cpp</label>
         <link refid="hdf5printer_8cpp"/>
-      </node>
-      <node id="4">
-        <label>manual_hdf5_combine.cpp</label>
-        <link refid="manual__hdf5__combine_8cpp"/>
       </node>
     </invincdepgraph>
     <innerclass refid="structGambit_1_1Printers_1_1HDF5_1_1read__hdf5" prot="public">Gambit::Printers::HDF5::read_hdf5</innerclass>
@@ -541,7 +534,7 @@
 <codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>U&gt;</highlight></codeline>
 <codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>run<sp/>(U,<sp/>hid_t<sp/>&amp;dataset_out,<sp/>hid_t<sp/>&amp;dataset2_out,<sp/>std::vector&lt;hid_t&gt;<sp/>&amp;datasets,<sp/>std::vector&lt;hid_t&gt;<sp/>&amp;datasets2,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">long</highlight><highlight class="normal"><sp/>size,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::unordered_map&lt;PPIDpair,<sp/>unsigned<sp/>long<sp/>long,<sp/>PPIDHash,<sp/>PPIDEqual&gt;&amp;<sp/>RA_write_hash,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;std::vector<sp/>&lt;unsigned<sp/>long<sp/>long&gt;<sp/>&gt;<sp/>&amp;pointid,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;std::vector<sp/>&lt;unsigned<sp/>long<sp/>long&gt;<sp/>&gt;<sp/>&amp;rank,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;unsigned<sp/>long<sp/>long&gt;<sp/>&amp;aux_sizes,<sp/>hid_t<sp/>&amp;</highlight><highlight class="comment">/*old_dataset*/</highlight><highlight class="normal">,<sp/>hid_t<sp/>&amp;</highlight><highlight class="comment">/*old_dataset2*/</highlight><highlight class="normal">)</highlight></codeline>
 <codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
-<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;U&gt;<sp/>output(size,<sp/>0);</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;U&gt;<sp/>output(size);</highlight></codeline>
 <codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::vector&lt;int&gt;<sp/>valids(size,<sp/>0);</highlight></codeline>
 <codeline lineno="215"><highlight class="normal"></highlight></codeline>
 <codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Should<sp/>no<sp/>longer<sp/>need<sp/>the<sp/>old<sp/>datasets,<sp/>they<sp/>should<sp/>have<sp/>already<sp/>been<sp/>copied<sp/>during<sp/>&quot;copy_hdf5&quot;</highlight><highlight class="normal"></highlight></codeline>

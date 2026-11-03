@@ -168,6 +168,21 @@
         </inbodydescription>
         <location file="Core/include/gambit/Core/observable.hpp" line="66" column="12" bodyfile="Core/include/gambit/Core/observable.hpp" bodystart="66" bodyend="-1"/>
       </memberdef>
+      <memberdef kind="variable" id="structGambit_1_1DRes_1_1Observable_1ae1055315cdffa001aff7ca560a8aa9a6" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Gambit::DRes::Observable::critical</definition>
+        <argsstring></argsstring>
+        <name>critical</name>
+        <qualifiedname>Gambit::DRes::Observable::critical</qualifiedname>
+        <briefdescription>
+<para>Allowed to invalidate a point. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/include/gambit/Core/observable.hpp" line="69" column="12" bodyfile="Core/include/gambit/Core/observable.hpp" bodystart="69" bodyend="-1"/>
+      </memberdef>
       <memberdef kind="variable" id="structGambit_1_1DRes_1_1Observable_1ae3918ceb671356bcd984a7db3e79e9d8" prot="public" static="no" mutable="no">
         <type>bool</type>
         <definition>bool Gambit::DRes::Observable::log_matches</definition>
@@ -181,7 +196,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/include/gambit/Core/observable.hpp" line="69" column="12" bodyfile="Core/include/gambit/Core/observable.hpp" bodystart="69" bodyend="-1"/>
+        <location file="Core/include/gambit/Core/observable.hpp" line="72" column="12" bodyfile="Core/include/gambit/Core/observable.hpp" bodystart="72" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="structGambit_1_1DRes_1_1Observable_1a0786ff60312f0aa251f085e2eff317c2" prot="public" static="no" mutable="no">
         <type>bool</type>
@@ -196,7 +211,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/include/gambit/Core/observable.hpp" line="72" column="12" bodyfile="Core/include/gambit/Core/observable.hpp" bodystart="72" bodyend="-1"/>
+        <location file="Core/include/gambit/Core/observable.hpp" line="75" column="12" bodyfile="Core/include/gambit/Core/observable.hpp" bodystart="75" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="public-func">
@@ -221,7 +236,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/include/gambit/Core/observable.hpp" line="75" column="12" bodyfile="Core/src/observable.cpp" bodystart="29" bodyend="37"/>
+        <location file="Core/include/gambit/Core/observable.hpp" line="78" column="12" bodyfile="Core/src/observable.cpp" bodystart="29" bodyend="37"/>
       </memberdef>
       <memberdef kind="function" id="structGambit_1_1DRes_1_1Observable_1a949905d9e8f502703179b902e06eb747" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -250,7 +265,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/include/gambit/Core/observable.hpp" line="80" column="12" bodyfile="Core/src/observable.cpp" bodystart="40" bodyend="45"/>
+        <location file="Core/include/gambit/Core/observable.hpp" line="83" column="12" bodyfile="Core/src/observable.cpp" bodystart="40" bodyend="45"/>
       </memberdef>
       <memberdef kind="function" id="structGambit_1_1DRes_1_1Observable_1a415b234bca68b281625755170ff3232d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -278,7 +293,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/include/gambit/Core/observable.hpp" line="84" column="12" bodyfile="Core/src/observable.cpp" bodystart="48" bodyend="64"/>
+        <location file="Core/include/gambit/Core/observable.hpp" line="87" column="12" bodyfile="Core/src/observable.cpp" bodystart="48" bodyend="64"/>
       </memberdef>
       <memberdef kind="function" id="structGambit_1_1DRes_1_1Observable_1a66800c2b730ee60d892216b75cee6885" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
         <type>bool</type>
@@ -311,7 +326,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/include/gambit/Core/observable.hpp" line="89" column="12" bodyfile="Core/src/observable.cpp" bodystart="67" bodyend="72"/>
+        <location file="Core/include/gambit/Core/observable.hpp" line="92" column="12" bodyfile="Core/src/observable.cpp" bodystart="67" bodyend="72"/>
       </memberdef>
       <memberdef kind="function" id="structGambit_1_1DRes_1_1Observable_1a0456652e2ce320ea2548a4e4f7f02bd5" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -326,7 +341,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/include/gambit/Core/observable.hpp" line="92" column="7" bodyfile="Core/include/gambit/Core/observable.hpp" bodystart="92" bodyend="105"/>
+        <location file="Core/include/gambit/Core/observable.hpp" line="95" column="7" bodyfile="Core/include/gambit/Core/observable.hpp" bodystart="95" bodyend="109"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -349,11 +364,12 @@
         <label>string</label>
       </node>
     </collaborationgraph>
-    <location file="Core/include/gambit/Core/observable.hpp" line="33" column="5" bodyfile="Core/include/gambit/Core/observable.hpp" bodystart="34" bodyend="106"/>
+    <location file="Core/include/gambit/Core/observable.hpp" line="33" column="5" bodyfile="Core/include/gambit/Core/observable.hpp" bodystart="34" bodyend="110"/>
     <listofallmembers>
       <member refid="structGambit_1_1DRes_1_1Observable_1a66800c2b730ee60d892216b75cee6885" prot="public" virt="non-virtual"><scope>Gambit::DRes::Observable</scope><name>backend_reqs_allow</name></member>
       <member refid="structGambit_1_1DRes_1_1Observable_1a956d822d9ea4a2fa76278c056b83776d" prot="public" virt="non-virtual"><scope>Gambit::DRes::Observable</scope><name>backends</name></member>
       <member refid="structGambit_1_1DRes_1_1Observable_1aa69434bf3b2705472d03e78e5c793ec1" prot="public" virt="non-virtual"><scope>Gambit::DRes::Observable</scope><name>capability</name></member>
+      <member refid="structGambit_1_1DRes_1_1Observable_1ae1055315cdffa001aff7ca560a8aa9a6" prot="public" virt="non-virtual"><scope>Gambit::DRes::Observable</scope><name>critical</name></member>
       <member refid="structGambit_1_1DRes_1_1Observable_1aab446bef964cc637aa0df818f27f8038" prot="public" virt="non-virtual"><scope>Gambit::DRes::Observable</scope><name>dependencies</name></member>
       <member refid="structGambit_1_1DRes_1_1Observable_1a949905d9e8f502703179b902e06eb747" prot="public" virt="non-virtual"><scope>Gambit::DRes::Observable</scope><name>dependencies_allow</name></member>
       <member refid="structGambit_1_1DRes_1_1Observable_1afb3895cc6d1ded6bfc2c7b280de0c694" prot="public" virt="non-virtual"><scope>Gambit::DRes::Observable</scope><name>function</name></member>

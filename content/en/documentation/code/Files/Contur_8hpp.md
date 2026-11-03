@@ -67,9 +67,9 @@ Authors (add name and date if you modify):
   namespace Gambit
   {
     // Class that manages the input dictionary for Contur
-    class Contur_output
+    class Contur_subOutput
     {
-      friend Contur_output merge_contur_outputs(const Contur_output& output1, const Contur_output& output2);
+      friend Contur_subOutput merge_contur_suboutputs(const Contur_subOutput& output1, const Contur_subOutput& output2);
 
       public:
         //Three member objects:
@@ -78,15 +78,15 @@ Authors (add name and date if you modify):
         map_str_str pool_tags;
 
         //Default constructor - used if no events produced
-        Contur_output()
+        Contur_subOutput()
         {
-            LLR = 0.0;
-            pool_LLR = {};
-            pool_tags = {};
+          LLR = 0.0;
+          pool_LLR = {};
+          pool_tags = {};
         }
 
         //Constructor using the pybind11::dict we get from contur:
-        Contur_output(pybind11::dict input_dict)
+        Contur_subOutput(pybind11::dict input_dict)
         {
           //Eliminating the factor of -2 for the GAMBIT LLR definition
           LLR = -0.5*input_dict.attr("get")("LLR").cast<double>();
@@ -100,7 +100,7 @@ Authors (add name and date if you modify):
         }
 
         //Constructor with all parts supplied: for the friend merge function
-        Contur_output(const double newLLR, const map_str_dbl& newPool_LLR, const map_str_str& newPool_tags)
+        Contur_subOutput(const double newLLR, const map_str_dbl& newPool_LLR, const map_str_str& newPool_tags)
         {
           LLR = newLLR;
           pool_LLR = newPool_LLR;
@@ -110,8 +110,58 @@ Authors (add name and date if you modify):
         //Automatic destructor should be fine, no need to define
 
         //Print the object and all its data in an easy to read format.
+        void print_Contur_subOutput_debug(std::ostream&outstream = std::cout) const;
+      };
+
+      class Contur_output
+      {
+        friend Contur_output merge_contur_outputs(const Contur_output& output1, const Contur_output& output2);
+
+        public:
+        std::vector<std::string> _bkg_types = {"SMBG", "DATABG", "EXP"};
+        std::map<str,Contur_subOutput> outputs;
+        
+        //Default constructor - used if no events produced
+        Contur_output()
+        {
+          for (const str& bkg : _bkg_types){
+            outputs[bkg] = Contur_subOutput();
+          }
+        }
+
+        //Constructor using the pybind11::dict we get from contur:
+        Contur_output(pybind11::dict input_dict)
+        {
+          for (const str& bkg : _bkg_types){
+            outputs[bkg] = Contur_subOutput(input_dict.attr("get")(bkg));
+          }
+        }
+        //Automatic destructor should be fine, no need to define
+
+        //Print the object and all its data in an easy to read format.
         void print_Contur_output_debug(std::ostream&outstream = std::cout) const;
 
+        // TODO: returning a map is probably not super efficient but it fits the existing syntax.
+        map_str_dbl pool_LLR() const {
+          map_str_dbl return_map;
+          for (const str & bkg : _bkg_types){
+            for (const std::pair<str, double> LLRpair : outputs.at(bkg).pool_LLR){
+              return_map[LLRpair.first + "_" + bkg] = LLRpair.second;
+            }
+          }
+          return return_map;
+        }
+
+        // TODO: returning a map is probably not super efficient but it fits the existing syntax.
+        map_str_str pool_tags() const {
+          map_str_str return_map;
+          for (const str & bkg : _bkg_types){
+            for (const std::pair<str, str> LLRpair : outputs.at(bkg).pool_tags){
+              return_map[LLRpair.first + "_" + bkg] = LLRpair.second;
+            }
+          }
+          return return_map;
+        }
       };
 
       //For running Contur multiple times with different settings.
@@ -132,4 +182,4 @@ Authors (add name and date if you modify):
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:36 +0000
+Updated on 2026-11-03 at 14:50:48 +0000

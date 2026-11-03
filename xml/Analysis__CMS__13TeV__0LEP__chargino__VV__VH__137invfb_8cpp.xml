@@ -1,0 +1,1022 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="Analysis__CMS__13TeV__0LEP__chargino__VV__VH__137invfb_8cpp" kind="file" language="C++">
+    <compoundname>Analysis_CMS_13TeV_0LEP_chargino_VV_VH_137invfb.cpp</compoundname>
+    <includes local="no">vector</includes>
+    <includes local="no">cmath</includes>
+    <includes local="no">memory</includes>
+    <includes local="no">iomanip</includes>
+    <includes local="no">fstream</includes>
+    <includes local="yes">fastjet/contrib/SoftDrop.hh</includes>
+    <includes refid="Analysis_8hpp" local="yes">gambit/ColliderBit/analyses/Analysis.hpp</includes>
+    <includes refid="CMSEfficiencies_8hpp" local="yes">gambit/ColliderBit/CMSEfficiencies.hpp</includes>
+    <includes refid="Cutflow_8hpp" local="yes">gambit/ColliderBit/analyses/Cutflow.hpp</includes>
+    <incdepgraph>
+      <node id="66">
+        <label>gambit/ColliderBit/CMSEfficiencies.hpp</label>
+        <link refid="CMSEfficiencies_8hpp"/>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="67" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+      </node>
+      <node id="22">
+        <label>gambit/ColliderBit/Utils.hpp</label>
+        <link refid="Utils_8hpp"/>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="65" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>gambit/ColliderBit/analyses/Analysis.hpp</label>
+        <link refid="Analysis_8hpp"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>gambit/ColliderBit/analyses/AnalysisData.hpp</label>
+        <link refid="AnalysisData_8hpp"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="21">
+        <label>gambit/ColliderBit/analyses/Cutflow.hpp</label>
+        <link refid="Cutflow_8hpp"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+      </node>
+      <node id="20">
+        <label>gambit/ColliderBit/analyses/EventCounter.hpp</label>
+        <link refid="EventCounter_8hpp"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+      </node>
+      <node id="19">
+        <label>gambit/ColliderBit/analyses/SignalRegionData.hpp</label>
+        <link refid="SignalRegionData_8hpp"/>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
+      </node>
+      <node id="65">
+        <label>gambit/ColliderBit/mt2_bisect.h</label>
+        <link refid="mt2__bisect_8h_source"/>
+      </node>
+      <node id="1">
+        <label>Analysis_CMS_13TeV_0LEP_chargino_VV_VH_137invfb.cpp</label>
+        <link refid="Analysis__CMS__13TeV__0LEP__chargino__VV__VH__137invfb_8cpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="66" relation="include">
+        </childnode>
+        <childnode refid="21" relation="include">
+        </childnode>
+      </node>
+      <node id="55">
+        <label>gambit/Logs/log_tags.hpp</label>
+        <link refid="log__tags_8hpp"/>
+      </node>
+      <node id="34">
+        <label>gambit/Utils/boost_fallbacks.hpp</label>
+        <link refid="boost__fallbacks_8hpp"/>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="36" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
+        </childnode>
+        <childnode refid="38" relation="include">
+        </childnode>
+      </node>
+      <node id="39">
+        <label>gambit/Utils/cats.hpp</label>
+        <link refid="Utils_2include_2gambit_2Utils_2cats_8hpp"/>
+      </node>
+      <node id="51">
+        <label>gambit/Utils/exceptions.hpp</label>
+        <link refid="exceptions_8hpp"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="53" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="54" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="55" relation="include">
+        </childnode>
+      </node>
+      <node id="43">
+        <label>gambit/Utils/export_symbols.hpp</label>
+        <link refid="export__symbols_8hpp"/>
+      </node>
+      <node id="41">
+        <label>gambit/Utils/local_info.hpp</label>
+        <link refid="local__info_8hpp"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+      </node>
+      <node id="31">
+        <label>gambit/Utils/standalone_error_handlers.hpp</label>
+        <link refid="standalone__error__handlers_8hpp"/>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+      </node>
+      <node id="40">
+        <label>gambit/Utils/stringify.hpp</label>
+        <link refid="stringify_8hpp"/>
+      </node>
+      <node id="67">
+        <label>gambit/Utils/threadsafe_rng.hpp</label>
+        <link refid="threadsafe__rng_8hpp"/>
+        <childnode refid="68" relation="include">
+        </childnode>
+        <childnode refid="32" relation="include">
+        </childnode>
+        <childnode refid="27" relation="include">
+        </childnode>
+      </node>
+      <node id="32">
+        <label>gambit/Utils/util_macros.hpp</label>
+        <link refid="util__macros_8hpp"/>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="43" relation="include">
+        </childnode>
+        <childnode refid="44" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
+        <childnode refid="46" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
+        </childnode>
+        <childnode refid="48" relation="include">
+        </childnode>
+        <childnode refid="49" relation="include">
+        </childnode>
+        <childnode refid="50" relation="include">
+        </childnode>
+      </node>
+      <node id="27">
+        <label>gambit/Utils/util_types.hpp</label>
+        <link refid="util__types_8hpp"/>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="14" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
+        <childnode refid="56" relation="include">
+        </childnode>
+        <childnode refid="41" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
+        <label>gambit/Utils/variadic_functions.hpp</label>
+        <link refid="variadic__functions_8hpp"/>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="58" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="52" relation="include">
+        </childnode>
+        <childnode refid="60" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="62" relation="include">
+        </childnode>
+        <childnode refid="63" relation="include">
+        </childnode>
+        <childnode refid="64" relation="include">
+        </childnode>
+      </node>
+      <node id="18">
+        <label>Eigen/Core</label>
+      </node>
+      <node id="25">
+        <label>HEPUtils/BinnedFn.h</label>
+      </node>
+      <node id="10">
+        <label>HEPUtils/Event.h</label>
+      </node>
+      <node id="26">
+        <label>HEPUtils/FastJet.h</label>
+      </node>
+      <node id="24">
+        <label>HEPUtils/MathUtils.h</label>
+      </node>
+      <node id="17">
+        <label>algorithm</label>
+      </node>
+      <node id="64">
+        <label>array</label>
+      </node>
+      <node id="42">
+        <label>boost/current_function.hpp</label>
+      </node>
+      <node id="37">
+        <label>boost/detail/workaround.hpp</label>
+      </node>
+      <node id="48">
+        <label>boost/preprocessor/arithmetic/sub.hpp</label>
+      </node>
+      <node id="38">
+        <label>boost/preprocessor/cat.hpp</label>
+      </node>
+      <node id="47">
+        <label>boost/preprocessor/comparison/equal.hpp</label>
+      </node>
+      <node id="36">
+        <label>boost/preprocessor/config/config.hpp</label>
+      </node>
+      <node id="46">
+        <label>boost/preprocessor/control/if.hpp</label>
+      </node>
+      <node id="49">
+        <label>boost/preprocessor/punctuation/comma.hpp</label>
+      </node>
+      <node id="50">
+        <label>boost/preprocessor/punctuation/paren.hpp</label>
+      </node>
+      <node id="44">
+        <label>boost/preprocessor/seq/size.hpp</label>
+      </node>
+      <node id="45">
+        <label>boost/preprocessor/tuple/elem.hpp</label>
+      </node>
+      <node id="35">
+        <label>boost/version.hpp</label>
+      </node>
+      <node id="58">
+        <label>cassert</label>
+      </node>
+      <node id="15">
+        <label>cfloat</label>
+      </node>
+      <node id="3">
+        <label>cmath</label>
+      </node>
+      <node id="30">
+        <label>complex</label>
+      </node>
+      <node id="29">
+        <label>cstring</label>
+      </node>
+      <node id="63">
+        <label>deque</label>
+      </node>
+      <node id="53">
+        <label>exception</label>
+      </node>
+      <node id="7">
+        <label>fastjet/contrib/SoftDrop.hh</label>
+      </node>
+      <node id="62">
+        <label>forward_list</label>
+      </node>
+      <node id="6">
+        <label>fstream</label>
+      </node>
+      <node id="23">
+        <label>functional</label>
+      </node>
+      <node id="5">
+        <label>iomanip</label>
+      </node>
+      <node id="13">
+        <label>iostream</label>
+      </node>
+      <node id="16">
+        <label>limits</label>
+      </node>
+      <node id="61">
+        <label>list</label>
+      </node>
+      <node id="12">
+        <label>map</label>
+      </node>
+      <node id="4">
+        <label>memory</label>
+      </node>
+      <node id="28">
+        <label>omp.h</label>
+      </node>
+      <node id="68">
+        <label>random</label>
+      </node>
+      <node id="52">
+        <label>set</label>
+      </node>
+      <node id="14">
+        <label>sstream</label>
+      </node>
+      <node id="9">
+        <label>string</label>
+      </node>
+      <node id="57">
+        <label>type_traits</label>
+      </node>
+      <node id="33">
+        <label>unistd.h</label>
+      </node>
+      <node id="59">
+        <label>unordered_map</label>
+      </node>
+      <node id="60">
+        <label>unordered_set</label>
+      </node>
+      <node id="54">
+        <label>utility</label>
+      </node>
+      <node id="2">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classGambit_1_1ColliderBit_1_1Analysis__CMS__13TeV__0LEP__chargino__VV__VH__137invfb" prot="public">Gambit::ColliderBit::Analysis_CMS_13TeV_0LEP_chargino_VV_VH_137invfb</innerclass>
+    <innernamespace refid="namespaceGambit">Gambit</innernamespace>
+    <innernamespace refid="namespaceGambit_1_1ColliderBit">Gambit::ColliderBit</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">///</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="2"><highlight class="comment">///<sp/><sp/>\author<sp/>Adil<sp/>Jueid</highlight></codeline>
+<codeline lineno="3"><highlight class="comment">///<sp/><sp/>\date<sp/>2023<sp/>Sep</highlight></codeline>
+<codeline lineno="4"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">///<sp/><sp/>\author<sp/>Anders<sp/>Kvellestad</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">///<sp/><sp/>\date<sp/>2024<sp/>Mar</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
+<codeline lineno="10"><highlight class="comment"></highlight><highlight class="comment">//<sp/>Based<sp/>on<sp/>the<sp/>CMS<sp/>publication<sp/>https://cms-results.web.cern.ch/cms-results/public-results/publications/SUS-21-002/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="comment">//<sp/>Phys.<sp/>Lett.<sp/>B<sp/>842<sp/>(2023)<sp/>137460,<sp/>arXiv:2205.09597<sp/>[hep-ex],</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;iomanip&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;fstream&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;fastjet/contrib/SoftDrop.hh&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Analysis_8hpp" kindref="compound">gambit/ColliderBit/analyses/Analysis.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="CMSEfficiencies_8hpp" kindref="compound">gambit/ColliderBit/CMSEfficiencies.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="Cutflow_8hpp" kindref="compound">gambit/ColliderBit/analyses/Cutflow.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight><highlight class="comment">//<sp/>#define<sp/>CHECK_CUTFLOW</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">std;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceGambit" kindref="compound">Gambit</ref></highlight></codeline>
+<codeline lineno="29"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">ColliderBit</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="classGambit_1_1ColliderBit_1_1Analysis__CMS__13TeV__0LEP__chargino__VV__VH__137invfb" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classGambit_1_1ColliderBit_1_1Analysis__CMS__13TeV__0LEP__chargino__VV__VH__137invfb" kindref="compound">Analysis_CMS_13TeV_0LEP_chargino_VV_VH_137invfb</ref><sp/>:<sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1ColliderBit_1_1Analysis" kindref="compound">Analysis</ref></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Required<sp/>detector<sp/>sim</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">constexpr</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*detector<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;CMS&quot;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="structGambit_1_1ColliderBit_1_1Cutflow" kindref="compound">Cutflow</ref><sp/>_cutflow;</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"></highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1ColliderBit_1_1Analysis__CMS__13TeV__0LEP__chargino__VV__VH__137invfb" kindref="compound">Analysis_CMS_13TeV_0LEP_chargino_VV_VH_137invfb</ref>():</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>_cutflow(</highlight><highlight class="stringliteral">&quot;CMS<sp/>0<sp/>lepton<sp/>charginos<sp/>13<sp/>TeV<sp/>NEW&quot;</highlight><highlight class="normal">,<sp/>{</highlight><highlight class="stringliteral">&quot;Electron<sp/>veto&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Muon<sp/>veto&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;MET&gt;300<sp/>GeV&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;HT<sp/>&gt;<sp/>300<sp/>GeV&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Njets<sp/>&gt;<sp/>2&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Photon<sp/>veto&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;NAK8<sp/>&gt;<sp/>0&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;Delta<sp/>phi&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;NAK8<sp/>&gt;<sp/>1&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;b-veto&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;WH<sp/>SR&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;W<sp/>SR&quot;</highlight><highlight class="normal">,<sp/></highlight><highlight class="stringliteral">&quot;H<sp/>SR&quot;</highlight><highlight class="normal">})</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1ColliderBit_1_1Analysis_1a4998785e3f5ebd96a148af8b4fbf575d" kindref="member">set_analysis_name</ref>(</highlight><highlight class="stringliteral">&quot;CMS_13TeV_0LEP_chargino_VV_VH_137invfb&quot;</highlight><highlight class="normal">);</highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1ColliderBit_1_1Analysis_1af220de4f7acdfda3e418f4096d5545c6" kindref="member">set_detector_name</ref>(detector);</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1ColliderBit_1_1Analysis_1affc00d6a3606fda2e214b99dba9598c6" kindref="member">set_luminosity</ref>(137.0);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"></highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_counters<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="50"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;0b-MET-200-250&quot;</highlight><highlight class="normal">,<sp/><ref refid="classGambit_1_1ColliderBit_1_1EventCounter" kindref="compound">EventCounter</ref>(</highlight><highlight class="stringliteral">&quot;0b-MET-200-250&quot;</highlight><highlight class="normal">)},</highlight></codeline>
+<codeline lineno="51"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;0b-MET-250-300&quot;</highlight><highlight class="normal">,<sp/><ref refid="classGambit_1_1ColliderBit_1_1EventCounter" kindref="compound">EventCounter</ref>(</highlight><highlight class="stringliteral">&quot;0b-MET-250-300&quot;</highlight><highlight class="normal">)},</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;0b-MET-300-350&quot;</highlight><highlight class="normal">,<sp/><ref refid="classGambit_1_1ColliderBit_1_1EventCounter" kindref="compound">EventCounter</ref>(</highlight><highlight class="stringliteral">&quot;0b-MET-300-350&quot;</highlight><highlight class="normal">)},</highlight></codeline>
+<codeline lineno="53"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;0b-MET-350-400&quot;</highlight><highlight class="normal">,<sp/><ref refid="classGambit_1_1ColliderBit_1_1EventCounter" kindref="compound">EventCounter</ref>(</highlight><highlight class="stringliteral">&quot;0b-MET-350-400&quot;</highlight><highlight class="normal">)},</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;0b-MET-400-450&quot;</highlight><highlight class="normal">,<sp/><ref refid="classGambit_1_1ColliderBit_1_1EventCounter" kindref="compound">EventCounter</ref>(</highlight><highlight class="stringliteral">&quot;0b-MET-400-450&quot;</highlight><highlight class="normal">)},</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;0b-MET-450-500&quot;</highlight><highlight class="normal">,<sp/><ref refid="classGambit_1_1ColliderBit_1_1EventCounter" kindref="compound">EventCounter</ref>(</highlight><highlight class="stringliteral">&quot;0b-MET-450-500&quot;</highlight><highlight class="normal">)},</highlight></codeline>
+<codeline lineno="56"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;0b-MET-500-600&quot;</highlight><highlight class="normal">,<sp/><ref refid="classGambit_1_1ColliderBit_1_1EventCounter" kindref="compound">EventCounter</ref>(</highlight><highlight class="stringliteral">&quot;0b-MET-500-600&quot;</highlight><highlight class="normal">)},</highlight></codeline>
+<codeline lineno="57"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;0b-MET-600-800&quot;</highlight><highlight class="normal">,<sp/><ref refid="classGambit_1_1ColliderBit_1_1EventCounter" kindref="compound">EventCounter</ref>(</highlight><highlight class="stringliteral">&quot;0b-MET-600-800&quot;</highlight><highlight class="normal">)},</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;0b-MET-800-1200&quot;</highlight><highlight class="normal">,<sp/><ref refid="classGambit_1_1ColliderBit_1_1EventCounter" kindref="compound">EventCounter</ref>(</highlight><highlight class="stringliteral">&quot;0b-MET-800-1200&quot;</highlight><highlight class="normal">)},</highlight></codeline>
+<codeline lineno="59"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;WH-MET-200-250&quot;</highlight><highlight class="normal">,<sp/><ref refid="classGambit_1_1ColliderBit_1_1EventCounter" kindref="compound">EventCounter</ref>(</highlight><highlight class="stringliteral">&quot;WH-MET-200-250&quot;</highlight><highlight class="normal">)},</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;WH-MET-250-300&quot;</highlight><highlight class="normal">,<sp/><ref refid="classGambit_1_1ColliderBit_1_1EventCounter" kindref="compound">EventCounter</ref>(</highlight><highlight class="stringliteral">&quot;WH-MET-250-300&quot;</highlight><highlight class="normal">)},</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;WH-MET-300-350&quot;</highlight><highlight class="normal">,<sp/><ref refid="classGambit_1_1ColliderBit_1_1EventCounter" kindref="compound">EventCounter</ref>(</highlight><highlight class="stringliteral">&quot;WH-MET-300-350&quot;</highlight><highlight class="normal">)},</highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;WH-MET-350-400&quot;</highlight><highlight class="normal">,<sp/><ref refid="classGambit_1_1ColliderBit_1_1EventCounter" kindref="compound">EventCounter</ref>(</highlight><highlight class="stringliteral">&quot;WH-MET-350-400&quot;</highlight><highlight class="normal">)},</highlight></codeline>
+<codeline lineno="63"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;WH-MET-400-450&quot;</highlight><highlight class="normal">,<sp/><ref refid="classGambit_1_1ColliderBit_1_1EventCounter" kindref="compound">EventCounter</ref>(</highlight><highlight class="stringliteral">&quot;WH-MET-400-450&quot;</highlight><highlight class="normal">)},</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;WH-MET-450-500&quot;</highlight><highlight class="normal">,<sp/><ref refid="classGambit_1_1ColliderBit_1_1EventCounter" kindref="compound">EventCounter</ref>(</highlight><highlight class="stringliteral">&quot;WH-MET-450-500&quot;</highlight><highlight class="normal">)},</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;WH-MET-500-600&quot;</highlight><highlight class="normal">,<sp/><ref refid="classGambit_1_1ColliderBit_1_1EventCounter" kindref="compound">EventCounter</ref>(</highlight><highlight class="stringliteral">&quot;WH-MET-500-600&quot;</highlight><highlight class="normal">)},</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;WH-MET-600-900&quot;</highlight><highlight class="normal">,<sp/><ref refid="classGambit_1_1ColliderBit_1_1EventCounter" kindref="compound">EventCounter</ref>(</highlight><highlight class="stringliteral">&quot;WH-MET-600-900&quot;</highlight><highlight class="normal">)},</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;1W-MET-200-250&quot;</highlight><highlight class="normal">,<sp/><ref refid="classGambit_1_1ColliderBit_1_1EventCounter" kindref="compound">EventCounter</ref>(</highlight><highlight class="stringliteral">&quot;1W-MET-200-250&quot;</highlight><highlight class="normal">)},</highlight></codeline>
+<codeline lineno="68"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;1W-MET-250-300&quot;</highlight><highlight class="normal">,<sp/><ref refid="classGambit_1_1ColliderBit_1_1EventCounter" kindref="compound">EventCounter</ref>(</highlight><highlight class="stringliteral">&quot;1W-MET-250-300&quot;</highlight><highlight class="normal">)},</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;1W-MET-300-350&quot;</highlight><highlight class="normal">,<sp/><ref refid="classGambit_1_1ColliderBit_1_1EventCounter" kindref="compound">EventCounter</ref>(</highlight><highlight class="stringliteral">&quot;1W-MET-300-350&quot;</highlight><highlight class="normal">)},</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;1W-MET-350-400&quot;</highlight><highlight class="normal">,<sp/><ref refid="classGambit_1_1ColliderBit_1_1EventCounter" kindref="compound">EventCounter</ref>(</highlight><highlight class="stringliteral">&quot;1W-MET-350-400&quot;</highlight><highlight class="normal">)},</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;1W-MET-400-450&quot;</highlight><highlight class="normal">,<sp/><ref refid="classGambit_1_1ColliderBit_1_1EventCounter" kindref="compound">EventCounter</ref>(</highlight><highlight class="stringliteral">&quot;1W-MET-400-450&quot;</highlight><highlight class="normal">)},</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;1W-MET-450-500&quot;</highlight><highlight class="normal">,<sp/><ref refid="classGambit_1_1ColliderBit_1_1EventCounter" kindref="compound">EventCounter</ref>(</highlight><highlight class="stringliteral">&quot;1W-MET-450-500&quot;</highlight><highlight class="normal">)},</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;1W-MET-500-600&quot;</highlight><highlight class="normal">,<sp/><ref refid="classGambit_1_1ColliderBit_1_1EventCounter" kindref="compound">EventCounter</ref>(</highlight><highlight class="stringliteral">&quot;1W-MET-500-600&quot;</highlight><highlight class="normal">)},</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;1W-MET-600-800&quot;</highlight><highlight class="normal">,<sp/><ref refid="classGambit_1_1ColliderBit_1_1EventCounter" kindref="compound">EventCounter</ref>(</highlight><highlight class="stringliteral">&quot;1W-MET-600-800&quot;</highlight><highlight class="normal">)},</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;1W-MET-800-1200&quot;</highlight><highlight class="normal">,<sp/><ref refid="classGambit_1_1ColliderBit_1_1EventCounter" kindref="compound">EventCounter</ref>(</highlight><highlight class="stringliteral">&quot;1W-MET-800-1200&quot;</highlight><highlight class="normal">)},</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;1H-MET-200-250&quot;</highlight><highlight class="normal">,<sp/><ref refid="classGambit_1_1ColliderBit_1_1EventCounter" kindref="compound">EventCounter</ref>(</highlight><highlight class="stringliteral">&quot;1H-MET-200-250&quot;</highlight><highlight class="normal">)},</highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;1H-MET-250-300&quot;</highlight><highlight class="normal">,<sp/><ref refid="classGambit_1_1ColliderBit_1_1EventCounter" kindref="compound">EventCounter</ref>(</highlight><highlight class="stringliteral">&quot;1H-MET-250-300&quot;</highlight><highlight class="normal">)},</highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;1H-MET-300-350&quot;</highlight><highlight class="normal">,<sp/><ref refid="classGambit_1_1ColliderBit_1_1EventCounter" kindref="compound">EventCounter</ref>(</highlight><highlight class="stringliteral">&quot;1H-MET-300-350&quot;</highlight><highlight class="normal">)},</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;1H-MET-350-400&quot;</highlight><highlight class="normal">,<sp/><ref refid="classGambit_1_1ColliderBit_1_1EventCounter" kindref="compound">EventCounter</ref>(</highlight><highlight class="stringliteral">&quot;1H-MET-350-400&quot;</highlight><highlight class="normal">)},</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;1H-MET-400-450&quot;</highlight><highlight class="normal">,<sp/><ref refid="classGambit_1_1ColliderBit_1_1EventCounter" kindref="compound">EventCounter</ref>(</highlight><highlight class="stringliteral">&quot;1H-MET-400-450&quot;</highlight><highlight class="normal">)},</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;1H-MET-450-500&quot;</highlight><highlight class="normal">,<sp/><ref refid="classGambit_1_1ColliderBit_1_1EventCounter" kindref="compound">EventCounter</ref>(</highlight><highlight class="stringliteral">&quot;1H-MET-450-500&quot;</highlight><highlight class="normal">)},</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;1H-MET-500-600&quot;</highlight><highlight class="normal">,<sp/><ref refid="classGambit_1_1ColliderBit_1_1EventCounter" kindref="compound">EventCounter</ref>(</highlight><highlight class="stringliteral">&quot;1H-MET-500-600&quot;</highlight><highlight class="normal">)},</highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;1H-MET-600-800&quot;</highlight><highlight class="normal">,<sp/><ref refid="classGambit_1_1ColliderBit_1_1EventCounter" kindref="compound">EventCounter</ref>(</highlight><highlight class="stringliteral">&quot;1H-MET-600-800&quot;</highlight><highlight class="normal">)},</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight><highlight class="stringliteral">&quot;1H-MET-800-1200&quot;</highlight><highlight class="normal">,<sp/><ref refid="classGambit_1_1ColliderBit_1_1EventCounter" kindref="compound">EventCounter</ref>(</highlight><highlight class="stringliteral">&quot;1H-MET-800-1200&quot;</highlight><highlight class="normal">)},</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>run(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>HEPUtils::Event<sp/>*event)</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>met<sp/>=<sp/></highlight><highlight class="keyword">event</highlight><highlight class="normal">-&gt;met();</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Baseline<sp/>objects</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Another<sp/>requirement<sp/>on<sp/>electrons<sp/>and<sp/>muons<sp/>are<sp/>needed<sp/>to<sp/>be<sp/>implemented</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>In<sp/>other<sp/>words,<sp/>the<sp/>sum<sp/>of<sp/>pT<sp/>of<sp/>all<sp/>charged<sp/>tracks<sp/>within<sp/>some<sp/>R<sp/>(defined<sp/>in<sp/>eq.<sp/>1<sp/>of<sp/>https://arxiv.org/pdf/1605.04608.pdf)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>excluding<sp/>the<sp/>lepton<sp/>candidate<sp/>itself</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>needs<sp/>to<sp/>be<sp/>smaller<sp/>than<sp/>10%<sp/>and<sp/>20<sp/>%<sp/>of<sp/>the<sp/>electron<sp/>and<sp/>muon<sp/>pT<sp/>respectively.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="98"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;const<sp/>HEPUtils::Particle<sp/>*&gt;<sp/>vetoedElectrons;</highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>HEPUtils::Particle<sp/>*electron<sp/>:<sp/>event-&gt;electrons())</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>electron-&gt;pT()<sp/>&gt;<sp/>10.<sp/>&amp;&amp;<sp/>electron-&gt;abseta()<sp/>&lt;<sp/>2.5)<sp/>vetoedElectrons.push_back(electron);</highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="Utils_8hpp_1a466d287fc295863bd206113f0a2a2d3a" kindref="member">applyEfficiency</ref>(vetoedElectrons,<sp/>CMS::eff2DEl.at(</highlight><highlight class="stringliteral">&quot;Generic&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"></highlight></codeline>
+<codeline lineno="106"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Muons</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;const<sp/>HEPUtils::Particle<sp/>*&gt;<sp/>vetoedMuons;</highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>HEPUtils::Particle<sp/>*muon<sp/>:<sp/>event-&gt;muons())</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>muon-&gt;pT()<sp/>&gt;<sp/>10.<sp/>&amp;&amp;<sp/>muon-&gt;abseta()<sp/>&lt;<sp/>2.4<sp/>)<sp/>vetoedMuons.push_back(muon);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="Utils_8hpp_1a466d287fc295863bd206113f0a2a2d3a" kindref="member">applyEfficiency</ref>(vetoedMuons,<sp/>CMS::eff2DMu.at(</highlight><highlight class="stringliteral">&quot;Generic&quot;</highlight><highlight class="normal">));</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"></highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Photons</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="115"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;const<sp/>HEPUtils::Particle*&gt;<sp/>vetoedPhotons;</highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>HEPUtils::Particle*<sp/>photon<sp/>:<sp/>event-&gt;photons())</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>photon-&gt;pT()<sp/>&gt;<sp/>100.<sp/>&amp;&amp;<sp/>photon-&gt;abseta()<sp/>&lt;<sp/>2.4<sp/>)<sp/>vetoedPhotons.push_back(photon);</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="120"><highlight class="normal"></highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Need<sp/>other<sp/>selection<sp/>on<sp/>tracks<sp/>(to<sp/>recover<sp/>also<sp/>electrons<sp/>and<sp/>muons<sp/>coming<sp/>from<sp/>tau<sp/>decays)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="normal"></highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Signal<sp/>objects</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;const<sp/>HEPUtils::Jet<sp/>*&gt;<sp/>signalJets;</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;const<sp/>HEPUtils::Jet<sp/>*&gt;<sp/>signalBJets;</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>btag<sp/>=<sp/>0.68;</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>cmisstag<sp/>=<sp/>0.12;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>misstag<sp/>=<sp/>0.01;</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>HEPUtils::Jet<sp/>*<sp/>jet<sp/>:<sp/>event-&gt;jets(</highlight><highlight class="stringliteral">&quot;antikt_R04&quot;</highlight><highlight class="normal">)<sp/>)</highlight></codeline>
+<codeline lineno="130"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="131"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>jet-&gt;pT()<sp/>&gt;<sp/>30.<sp/>&amp;&amp;<sp/>fabs(<sp/>jet-&gt;eta()<sp/>)<sp/>&lt;<sp/>2.4<sp/>)<sp/><sp/>signalJets.push_back(jet);</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="133"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>HEPUtils::Jet*<sp/>jet<sp/>:<sp/>signalJets<sp/>)</highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>jet-&gt;btag()<sp/>&amp;&amp;<sp/><ref refid="Utils_8hpp_1a3b59353a7ec6cb32c170baddc17ee4ed" kindref="member">random_bool</ref>(btag)<sp/>)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>signalBJets.push_back(jet);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>jet-&gt;ctag()<sp/>&amp;&amp;<sp/><ref refid="Utils_8hpp_1a3b59353a7ec6cb32c170baddc17ee4ed" kindref="member">random_bool</ref>(cmisstag)<sp/>)<sp/><sp/><sp/><sp/><sp/>signalBJets.push_back(jet);</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">else</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/><ref refid="Utils_8hpp_1a3b59353a7ec6cb32c170baddc17ee4ed" kindref="member">random_bool</ref>(misstag)<sp/>)<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>signalBJets.push_back(jet);</highlight></codeline>
+<codeline lineno="138"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="139"><highlight class="normal"></highlight></codeline>
+<codeline lineno="140"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>CMS::applyCSVv2MediumBtagEff(signalBJets);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="141"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>applyEfficiency(signalBJets,<sp/>CMS::)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="142"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>applyEfficiency(signalBJets,<sp/>CMS::eff2DBJet.at(&quot;CSVv2Medium&quot;));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>applyBtagMisId(signalJets,<sp/>signalBJets,<sp/>CMS::misIDBJet.at(&quot;CSVv2Medium&quot;));</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;const<sp/>HEPUtils::Jet<sp/>*&gt;<sp/>baselineAK8Jets;</highlight></codeline>
+<codeline lineno="146"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>HEPUtils::Jet<sp/>*<sp/>jet<sp/>:<sp/>event-&gt;jets(</highlight><highlight class="stringliteral">&quot;antikt_R08&quot;</highlight><highlight class="normal">)<sp/>)</highlight></codeline>
+<codeline lineno="147"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="148"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(jet-&gt;pT()<sp/>&gt;<sp/>200.<sp/>&amp;&amp;<sp/>fabs(jet-&gt;eta())<sp/>&lt;<sp/>2.0)</highlight></codeline>
+<codeline lineno="149"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>baselineAK8Jets.push_back(jet);</highlight></codeline>
+<codeline lineno="151"><highlight class="normal"></highlight></codeline>
+<codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>double<sp/>beta<sp/>=<sp/>0.0;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>double<sp/>z_cut<sp/>=<sp/>0.1;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>double<sp/>RSD<sp/><sp/>=<sp/>0.8;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>FJNS::contrib::SoftDrop<sp/>sd(beta,<sp/>z_cut,<sp/>RSD);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>FJNS::PseudoJet<sp/>pj<sp/>=<sp/>jet-&gt;pseudojet();</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>FJNS::PseudoJet<sp/>groomed_jet<sp/>=<sp/>sd(pj);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="158"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>(groomed_jet.m()<sp/>&gt;<sp/>50.0)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="159"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="160"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/>baselineAK8Jets.push_back(jet);</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="161"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="162"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="163"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="164"><highlight class="normal"></highlight></codeline>
+<codeline lineno="165"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nElectrons<sp/>=<sp/>vetoedElectrons.size();</highlight></codeline>
+<codeline lineno="166"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nMuons<sp/><sp/><sp/><sp/><sp/>=<sp/>vetoedMuons.size();</highlight></codeline>
+<codeline lineno="167"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nPhotons<sp/><sp/><sp/>=<sp/>vetoedPhotons.size();</highlight></codeline>
+<codeline lineno="168"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nJets<sp/><sp/><sp/><sp/><sp/><sp/>=<sp/>signalJets.size();</highlight></codeline>
+<codeline lineno="169"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nBJets<sp/><sp/><sp/><sp/><sp/>=<sp/>signalBJets.size();</highlight></codeline>
+<codeline lineno="170"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nAK8Jets<sp/><sp/><sp/>=<sp/>baselineAK8Jets.size();</highlight></codeline>
+<codeline lineno="171"><highlight class="normal"></highlight></codeline>
+<codeline lineno="172"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>HT<sp/>=<sp/>0.;</highlight></codeline>
+<codeline lineno="173"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>ij=0;<sp/>ij<sp/>&lt;<sp/>signalJets.size();<sp/>ij++<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="174"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HT<sp/>+=<sp/>signalJets[ij]-&gt;pT();</highlight></codeline>
+<codeline lineno="175"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="176"><highlight class="normal"></highlight></codeline>
+<codeline lineno="177"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Sort<sp/>particles/jets<sp/>by<sp/>pT</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="178"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sortByPt(signalJets);</highlight></codeline>
+<codeline lineno="179"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sortByPt(signalBJets);</highlight></codeline>
+<codeline lineno="180"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>sortByPt(baselineAK8Jets);</highlight></codeline>
+<codeline lineno="181"><highlight class="normal"></highlight></codeline>
+<codeline lineno="182"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Initial<sp/>events</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_cutflow.<ref refid="structGambit_1_1ColliderBit_1_1Cutflow_1a24fd8ead47bad4975b81e07722777fe0" kindref="member">fillinit</ref>();</highlight></codeline>
+<codeline lineno="184"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>nElectrons<sp/>&gt;<sp/>0<sp/>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="185"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_cutflow.<ref refid="structGambit_1_1ColliderBit_1_1Cutflow_1a9afc93f37d3d029081d33a4251d0f6cf" kindref="member">fill</ref>(1);</highlight></codeline>
+<codeline lineno="186"><highlight class="normal"></highlight></codeline>
+<codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>nMuons<sp/>&gt;<sp/>0<sp/>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_cutflow.<ref refid="structGambit_1_1ColliderBit_1_1Cutflow_1a9afc93f37d3d029081d33a4251d0f6cf" kindref="member">fill</ref>(2);</highlight></codeline>
+<codeline lineno="189"><highlight class="normal"></highlight></codeline>
+<codeline lineno="190"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>met<sp/>&lt;=<sp/>200.<sp/>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="191"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_cutflow.<ref refid="structGambit_1_1ColliderBit_1_1Cutflow_1a9afc93f37d3d029081d33a4251d0f6cf" kindref="member">fill</ref>(3);</highlight></codeline>
+<codeline lineno="192"><highlight class="normal"></highlight></codeline>
+<codeline lineno="193"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>HT<sp/>&lt;=<sp/>300.<sp/>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="194"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_cutflow.<ref refid="structGambit_1_1ColliderBit_1_1Cutflow_1a9afc93f37d3d029081d33a4251d0f6cf" kindref="member">fill</ref>(4);</highlight></codeline>
+<codeline lineno="195"><highlight class="normal"></highlight></codeline>
+<codeline lineno="196"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>nJets<sp/>&lt;<sp/>2<sp/>||<sp/>nJets<sp/>&gt;<sp/>6<sp/>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="197"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_cutflow.<ref refid="structGambit_1_1ColliderBit_1_1Cutflow_1a9afc93f37d3d029081d33a4251d0f6cf" kindref="member">fill</ref>(5);</highlight></codeline>
+<codeline lineno="198"><highlight class="normal"></highlight></codeline>
+<codeline lineno="199"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>nPhotons<sp/>&gt;<sp/>0<sp/>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="200"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_cutflow.<ref refid="structGambit_1_1ColliderBit_1_1Cutflow_1a9afc93f37d3d029081d33a4251d0f6cf" kindref="member">fill</ref>(6);</highlight></codeline>
+<codeline lineno="201"><highlight class="normal"></highlight></codeline>
+<codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>nAK8Jets<sp/>==<sp/>0<sp/>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="203"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_cutflow.<ref refid="structGambit_1_1ColliderBit_1_1Cutflow_1a9afc93f37d3d029081d33a4251d0f6cf" kindref="member">fill</ref>(7);</highlight></codeline>
+<codeline lineno="204"><highlight class="normal"></highlight></codeline>
+<codeline lineno="205"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Now<sp/>deltaphi<sp/>cuts</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>CMS<sp/>require<sp/>deltaphi(pmiss,<sp/>j1)<sp/>&gt;<sp/>1.5,<sp/>deltaphi(pmiss,<sp/>j2)<sp/>&gt;<sp/>0.5,<sp/>deltaphi(pmiss,<sp/>j3,<sp/>j4)<sp/>&gt;<sp/>3</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="207"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>deltaphi(pmiss,<sp/>AK8)<sp/>&gt;<sp/>1.5<sp/>and<sp/>deltaphi(pmiss,<sp/>AK8_2)<sp/>&gt;<sp/>0.5</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HEPUtils::P4<sp/><sp/>pmiss<sp/>=<sp/></highlight><highlight class="keyword">event</highlight><highlight class="normal">-&gt;missingmom();</highlight></codeline>
+<codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>deltaPhi_j1=signalJets.at(0)-&gt;mom().deltaPhi(pmiss);</highlight></codeline>
+<codeline lineno="210"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>deltaPhi_j2=signalJets.at(1)-&gt;mom().deltaPhi(pmiss);</highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>deltaPhi_j3<sp/>=<sp/>M_PI;</highlight></codeline>
+<codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>deltaPhi_j4<sp/>=<sp/>M_PI;</highlight></codeline>
+<codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>nJets<sp/>&gt;<sp/>2<sp/>)<sp/>deltaPhi_j3=signalJets.at(2)-&gt;mom().deltaPhi(pmiss);</highlight></codeline>
+<codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>nJets<sp/>&gt;<sp/>3<sp/>)<sp/>deltaPhi_j4=signalJets.at(3)-&gt;mom().deltaPhi(pmiss);</highlight></codeline>
+<codeline lineno="215"><highlight class="normal"></highlight></codeline>
+<codeline lineno="216"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>deltaPhi_J1=baselineAK8Jets.at(0)-&gt;mom().deltaPhi(pmiss);</highlight></codeline>
+<codeline lineno="217"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>deltaPhi_J2<sp/>=<sp/>M_PI;</highlight></codeline>
+<codeline lineno="218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>nAK8Jets<sp/>&gt;<sp/>1<sp/>)<sp/><sp/>deltaPhi_J2=baselineAK8Jets.at(1)-&gt;mom().deltaPhi(pmiss);</highlight></codeline>
+<codeline lineno="219"><highlight class="normal"></highlight></codeline>
+<codeline lineno="220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>deltaphi_cuts<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(deltaPhi_j1<sp/>&gt;<sp/>1.5<sp/>&amp;&amp;<sp/>deltaPhi_j2<sp/>&gt;<sp/>0.5<sp/>&amp;&amp;<sp/>deltaPhi_j3<sp/>&gt;<sp/>0.3<sp/>&amp;&amp;<sp/>deltaPhi_j4<sp/>&gt;<sp/>0.3<sp/>&amp;&amp;<sp/>deltaPhi_J1<sp/>&gt;<sp/>1.5<sp/>&amp;&amp;<sp/>deltaPhi_J2<sp/>&gt;<sp/>0.5)</highlight></codeline>
+<codeline lineno="222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>deltaphi_cuts<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="224"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="225"><highlight class="normal"></highlight></codeline>
+<codeline lineno="226"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>!deltaphi_cuts<sp/>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_cutflow.<ref refid="structGambit_1_1ColliderBit_1_1Cutflow_1a9afc93f37d3d029081d33a4251d0f6cf" kindref="member">fill</ref>(8);</highlight></codeline>
+<codeline lineno="228"><highlight class="normal"></highlight></codeline>
+<codeline lineno="229"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>nAK8Jets<sp/>&lt;<sp/>2<sp/>)<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="230"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>_cutflow.<ref refid="structGambit_1_1ColliderBit_1_1Cutflow_1a9afc93f37d3d029081d33a4251d0f6cf" kindref="member">fill</ref>(9);</highlight></codeline>
+<codeline lineno="231"><highlight class="normal"></highlight></codeline>
+<codeline lineno="232"><highlight class="normal"></highlight></codeline>
+<codeline lineno="233"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Defining<sp/>the<sp/>signal<sp/>regions</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="234"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Tagger<sp/>efficiency<sp/>maps<sp/>from</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="235"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>-<sp/>https://www.hepdata.net/record/ins2085373?version=2&amp;table=Efficiency%20of%20W-%20and%20V-taggers</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="236"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>-<sp/>https://www.hepdata.net/record/ins2085373?version=2&amp;table=Efficiency%20of%20bb-tagger</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="237"><highlight class="normal"></highlight></codeline>
+<codeline lineno="238"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;double&gt;<sp/><sp/>pT_bin_edges_Wtagger<sp/>=<sp/>{0,<sp/>200.,<sp/>300.,<sp/>400.,<sp/>DBL_MAX};</highlight></codeline>
+<codeline lineno="239"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;double&gt;<sp/><sp/>Wqq_Wtagger_eff<sp/>=<sp/>{0.,<sp/>0.403,<sp/>0.439,<sp/>0.455};</highlight></codeline>
+<codeline lineno="240"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;double&gt;<sp/><sp/>Zqq_Wtagger_eff<sp/>=<sp/>{0.,<sp/>0.298,<sp/>0.331,<sp/>0.320};</highlight></codeline>
+<codeline lineno="241"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;double&gt;<sp/><sp/>Wqq_Vtagger_eff<sp/>=<sp/>{0.,<sp/>0.407,<sp/>0.488,<sp/>0.513};</highlight></codeline>
+<codeline lineno="242"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;double&gt;<sp/><sp/>Zqq_Vtagger_eff<sp/>=<sp/>{0.,<sp/>0.330,<sp/>0.424,<sp/>0.453};</highlight></codeline>
+<codeline lineno="243"><highlight class="normal"></highlight></codeline>
+<codeline lineno="244"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;double&gt;<sp/><sp/>pT_bin_edges_bbtagger<sp/>=<sp/>{0,<sp/>200.,<sp/>250.,<sp/>300.,<sp/>350.,<sp/>400.,<sp/>500.,<sp/>DBL_MAX};</highlight></codeline>
+<codeline lineno="245"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;double&gt;<sp/><sp/>Hbb_Htagger_eff<sp/>=<sp/>{0.,<sp/>0.135,<sp/>0.427,<sp/>0.662,<sp/>0.713,<sp/>0.739,<sp/>0.681};</highlight></codeline>
+<codeline lineno="246"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;double&gt;<sp/><sp/>Zbb_Htagger_eff<sp/>=<sp/>{0.,<sp/>0.362,<sp/>0.560,<sp/>0.687,<sp/>0.711,<sp/>0.744,<sp/>0.671};</highlight></codeline>
+<codeline lineno="247"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;double&gt;<sp/><sp/>Zcc_Htagger_eff<sp/>=<sp/>{0.,<sp/>0.164,<sp/>0.301,<sp/>0.331,<sp/>0.396,<sp/>0404.,<sp/>0.433};</highlight></codeline>
+<codeline lineno="248"><highlight class="normal"></highlight></codeline>
+<codeline lineno="249"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HEPUtils::BinnedFn1D&lt;double&gt;<sp/>_eff1d_Wqq_Wtagger(pT_bin_edges_Wtagger,<sp/>Wqq_Wtagger_eff);</highlight></codeline>
+<codeline lineno="250"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HEPUtils::BinnedFn1D&lt;double&gt;<sp/>_eff1d_Zqq_Wtagger(pT_bin_edges_Wtagger,<sp/>Zqq_Wtagger_eff);</highlight></codeline>
+<codeline lineno="251"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HEPUtils::BinnedFn1D&lt;double&gt;<sp/>_eff1d_Wqq_Vtagger(pT_bin_edges_Wtagger,<sp/>Wqq_Vtagger_eff);</highlight></codeline>
+<codeline lineno="252"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HEPUtils::BinnedFn1D&lt;double&gt;<sp/>_eff1d_Zqq_Vtagger(pT_bin_edges_Wtagger,<sp/>Zqq_Vtagger_eff);</highlight></codeline>
+<codeline lineno="253"><highlight class="normal"></highlight></codeline>
+<codeline lineno="254"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HEPUtils::BinnedFn1D&lt;double&gt;<sp/>_eff1d_Hbb_Htagger(pT_bin_edges_bbtagger,<sp/>Hbb_Htagger_eff);</highlight></codeline>
+<codeline lineno="255"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HEPUtils::BinnedFn1D&lt;double&gt;<sp/>_eff1d_Zbb_Htagger(pT_bin_edges_bbtagger,<sp/>Zbb_Htagger_eff);</highlight></codeline>
+<codeline lineno="256"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HEPUtils::BinnedFn1D&lt;double&gt;<sp/>_eff1d_Zcc_Htagger(pT_bin_edges_bbtagger,<sp/>Zcc_Htagger_eff);</highlight></codeline>
+<codeline lineno="257"><highlight class="normal"></highlight></codeline>
+<codeline lineno="258"><highlight class="normal"></highlight></codeline>
+<codeline lineno="259"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nWJets<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="260"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>nHJets<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;const<sp/>HEPUtils::Jet*&gt;<sp/>W_candidates;</highlight></codeline>
+<codeline lineno="262"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>vector&lt;const<sp/>HEPUtils::Jet*&gt;<sp/>H_candidates;</highlight></codeline>
+<codeline lineno="263"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>beta<sp/>=<sp/>0.0;</highlight></codeline>
+<codeline lineno="264"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>z_cut<sp/>=<sp/>0.1;</highlight></codeline>
+<codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>RSD<sp/><sp/>=<sp/>0.8;</highlight></codeline>
+<codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FJNS::contrib::SoftDrop<sp/>sd(beta,<sp/>z_cut,<sp/>RSD);</highlight></codeline>
+<codeline lineno="267"><highlight class="normal"></highlight></codeline>
+<codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>First<sp/>collect<sp/>candidates<sp/>for<sp/>boson<sp/>jets</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="269"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>HEPUtils::Jet*<sp/>jet<sp/>:<sp/>baselineAK8Jets)</highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Check<sp/>if<sp/>there<sp/>is<sp/>a<sp/>nearby<sp/>b<sp/>jet</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>contains_b_jet<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>HEPUtils::Jet*<sp/>bjet<sp/>:<sp/>signalBJets)</highlight></codeline>
+<codeline lineno="274"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="275"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(jet-&gt;mom().deltaR_eta(bjet-&gt;mom())<sp/>&lt;<sp/>0.8)</highlight></codeline>
+<codeline lineno="276"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="277"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>contains_b_jet<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="278"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="279"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="280"><highlight class="normal"></highlight></codeline>
+<codeline lineno="281"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Check<sp/>jet<sp/>mass</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="282"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>WZ_mass_window<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="283"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>HZ_mass_window<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="284"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FJNS::PseudoJet<sp/>pj<sp/>=<sp/>jet-&gt;pseudojet();</highlight></codeline>
+<codeline lineno="285"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>FJNS::PseudoJet<sp/>groomed_jet<sp/>=<sp/>sd(pj);</highlight></codeline>
+<codeline lineno="286"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>groomed_jet.m()<sp/>&gt;<sp/>65.0<sp/>&amp;&amp;<sp/>groomed_jet.m()<sp/>&lt;<sp/>105.0<sp/>)</highlight></codeline>
+<codeline lineno="287"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="288"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>WZ_mass_window<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="289"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="290"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>groomed_jet.m()<sp/>&gt;<sp/>75.0<sp/>&amp;&amp;<sp/>groomed_jet.m()<sp/>&lt;<sp/>140.0<sp/>)</highlight></codeline>
+<codeline lineno="291"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="292"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>HZ_mass_window<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="293"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="294"><highlight class="normal"></highlight></codeline>
+<codeline lineno="295"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(!contains_b_jet<sp/>&amp;&amp;<sp/>WZ_mass_window)<sp/>W_candidates.push_back(jet);</highlight></codeline>
+<codeline lineno="296"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(contains_b_jet<sp/>&amp;&amp;<sp/>HZ_mass_window)<sp/>H_candidates.push_back(jet);</highlight></codeline>
+<codeline lineno="297"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="298"><highlight class="normal"></highlight></codeline>
+<codeline lineno="299"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Now<sp/>apply<sp/>tagger<sp/>efficiencies.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="300"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Note:<sp/>Applying<sp/>the<sp/>efficiencies<sp/>in<sp/>the<sp/>way<sp/>we<sp/>do<sp/>below<sp/>(e.g.<sp/>without</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="301"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>checking<sp/>the<sp/>the<sp/>truth-level<sp/>tags,<sp/>not<sp/>using<sp/>both<sp/>the<sp/>Wtagger<sp/>and<sp/>Vtagger</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="302"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>for<sp/>Z&apos;s,<sp/>etc.)<sp/>was<sp/>found<sp/>to<sp/>give<sp/>the<sp/>overall<sp/>best<sp/>agreement<sp/>with<sp/>the</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="303"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>published<sp/>exclusion<sp/>limits<sp/>for<sp/>the<sp/>TChiWW,<sp/>TChiWZ<sp/>and<sp/>TChiWH</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="304"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>signal<sp/>models.<sp/>Also,<sp/>we<sp/>are<sp/>missing<sp/>detailed<sp/>efficiency<sp/>tables<sp/>for</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="305"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>misstags.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="306"><highlight class="normal"></highlight></codeline>
+<codeline lineno="307"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>HEPUtils::Jet*<sp/>jet<sp/>:<sp/>W_candidates)</highlight></codeline>
+<codeline lineno="308"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="309"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Wqq_Wtag<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="310"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Zqq_Wtag<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="311"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>(has_tag(_eff1d_Wqq_Wtagger,<sp/>jet-&gt;pT()))<sp/>Wqq_Wtag<sp/>=<sp/>true;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="312"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="Utils_8hpp_1abb2e0fd6a8a1516582a62e58290500e1" kindref="member">has_tag</ref>(_eff1d_Wqq_Wtagger,<sp/>jet-&gt;pT())<sp/>||<sp/><ref refid="Utils_8hpp_1abb2e0fd6a8a1516582a62e58290500e1" kindref="member">has_tag</ref>(_eff1d_Wqq_Vtagger,<sp/>jet-&gt;pT()))<sp/>Wqq_Wtag<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="313"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="Utils_8hpp_1abb2e0fd6a8a1516582a62e58290500e1" kindref="member">has_tag</ref>(_eff1d_Zqq_Wtagger,<sp/>jet-&gt;pT()))<sp/>Zqq_Wtag<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="314"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>(has_tag(_eff1d_Zqq_Wtagger,<sp/>jet-&gt;pT())<sp/>||<sp/>has_tag(_eff1d_Zqq_Vtagger,<sp/>jet-&gt;pT()))<sp/>Zqq_Wtag<sp/>=<sp/>true;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="315"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(Wqq_Wtag<sp/>||<sp/>Zqq_Wtag)<sp/>nWJets++;</highlight></codeline>
+<codeline lineno="316"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="317"><highlight class="normal"></highlight></codeline>
+<codeline lineno="318"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>HEPUtils::Jet*<sp/>jet<sp/>:<sp/>H_candidates)</highlight></codeline>
+<codeline lineno="319"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="320"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Zbb_Htag<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="321"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>Hbb_Htag<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="322"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>if<sp/>(has_tag(_eff1d_Zbb_Htagger,<sp/>jet-&gt;pT()))<sp/>Zbb_Htag<sp/>=<sp/>true;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="323"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="Utils_8hpp_1abb2e0fd6a8a1516582a62e58290500e1" kindref="member">has_tag</ref>(_eff1d_Zbb_Htagger,<sp/>jet-&gt;pT())<sp/>||<sp/><ref refid="Utils_8hpp_1abb2e0fd6a8a1516582a62e58290500e1" kindref="member">has_tag</ref>(_eff1d_Zcc_Htagger,<sp/>jet-&gt;pT()))<sp/>Zbb_Htag<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="324"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<ref refid="Utils_8hpp_1abb2e0fd6a8a1516582a62e58290500e1" kindref="member">has_tag</ref>(_eff1d_Hbb_Htagger,<sp/>jet-&gt;pT()))<sp/>Hbb_Htag<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="325"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(Zbb_Htag<sp/>||<sp/>Hbb_Htag)<sp/>nHJets++;</highlight></codeline>
+<codeline lineno="326"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="327"><highlight class="normal"></highlight></codeline>
+<codeline lineno="328"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>ZeroB_SR<sp/>=<sp/>(<sp/>nBJets<sp/>==<sp/>0<sp/>)<sp/>&amp;&amp;<sp/>(<sp/>nWJets<sp/>&gt;=<sp/>2<sp/>);</highlight></codeline>
+<codeline lineno="329"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>WH_SR<sp/><sp/><sp/><sp/>=<sp/>(<sp/>nBJets<sp/>&gt;<sp/>0<sp/>&amp;&amp;<sp/>nHJets<sp/>&gt;<sp/>0<sp/>&amp;&amp;<sp/>nWJets<sp/>&gt;<sp/>0<sp/>);</highlight></codeline>
+<codeline lineno="330"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>W_SR<sp/><sp/><sp/><sp/><sp/>=<sp/>(<sp/>nBJets<sp/>&gt;<sp/>0<sp/>&amp;&amp;<sp/>nHJets<sp/>==<sp/>0<sp/>&amp;&amp;<sp/>nWJets<sp/>&gt;<sp/>0<sp/>);</highlight></codeline>
+<codeline lineno="331"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>H_SR<sp/><sp/><sp/><sp/><sp/>=<sp/>(<sp/>nBJets<sp/>&gt;<sp/>0<sp/>&amp;&amp;<sp/>nHJets<sp/>&gt;<sp/>0<sp/>&amp;&amp;<sp/>nWJets<sp/>==<sp/>0<sp/>);</highlight></codeline>
+<codeline lineno="332"><highlight class="normal"></highlight></codeline>
+<codeline lineno="333"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>std::cerr<sp/>&lt;&lt;<sp/>std::endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="334"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>std::cerr<sp/>&lt;&lt;<sp/>&quot;DEBUG:&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="335"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>&quot;<sp/><sp/>nJets:<sp/>&quot;<sp/>&lt;&lt;<sp/>nJets</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="336"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>&quot;<sp/><sp/>nBJets:<sp/>&quot;<sp/>&lt;&lt;<sp/>nBJets</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="337"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>&quot;<sp/><sp/>nAK8Jets:<sp/>&quot;<sp/>&lt;&lt;<sp/>nAK8Jets</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="338"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>&quot;<sp/><sp/>n_true_W_AK8:<sp/>&quot;<sp/>&lt;&lt;<sp/>n_true_W_AK8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="339"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>&quot;<sp/><sp/>n_true_Z_AK8:<sp/>&quot;<sp/>&lt;&lt;<sp/>n_true_Z_AK8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="340"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>&quot;<sp/><sp/>n_true_H_AK8:<sp/>&quot;<sp/>&lt;&lt;<sp/>n_true_H_AK8</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="341"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>std::endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="342"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>std::cerr<sp/>&lt;&lt;<sp/>&quot;DEBUG:&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="343"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>&quot;<sp/><sp/>nWZcandidates:<sp/>&quot;<sp/>&lt;&lt;<sp/>W_candidates.size()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="344"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>&quot;<sp/><sp/>nHZcandidates:<sp/>&quot;<sp/>&lt;&lt;<sp/>H_candidates.size()</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="345"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>std::endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="346"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>std::cerr<sp/>&lt;&lt;<sp/>&quot;DEBUG:&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="347"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>&quot;<sp/><sp/>nBJets:<sp/>&quot;<sp/>&lt;&lt;<sp/>nBJets</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="348"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>&quot;<sp/><sp/>nWJets:<sp/>&quot;<sp/>&lt;&lt;<sp/>nWJets</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="349"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>&quot;<sp/><sp/>nHJets:<sp/>&quot;<sp/>&lt;&lt;<sp/>nHJets</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="350"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>std::endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="351"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>std::cerr<sp/>&lt;&lt;<sp/>&quot;DEBUG:&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>&quot;<sp/><sp/>ZeroB_SR:<sp/>&quot;<sp/>&lt;&lt;<sp/>ZeroB_SR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>&quot;<sp/><sp/>WH_SR:<sp/>&quot;<sp/>&lt;&lt;<sp/>WH_SR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="354"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>&quot;<sp/><sp/>W_SR:<sp/>&quot;<sp/>&lt;&lt;<sp/>W_SR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>&quot;<sp/><sp/>H_SR:<sp/>&quot;<sp/>&lt;&lt;<sp/>H_SR</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="356"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/>std::endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="357"><highlight class="normal"></highlight></codeline>
+<codeline lineno="358"><highlight class="normal"></highlight></codeline>
+<codeline lineno="359"><highlight class="normal"></highlight></codeline>
+<codeline lineno="360"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(ZeroB_SR)<sp/>_cutflow.<ref refid="structGambit_1_1ColliderBit_1_1Cutflow_1a9afc93f37d3d029081d33a4251d0f6cf" kindref="member">fill</ref>(10);</highlight></codeline>
+<codeline lineno="361"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(WH_SR)<sp/><sp/><sp/><sp/>_cutflow.<ref refid="structGambit_1_1ColliderBit_1_1Cutflow_1a9afc93f37d3d029081d33a4251d0f6cf" kindref="member">fill</ref>(11);</highlight></codeline>
+<codeline lineno="362"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(W_SR)<sp/><sp/><sp/><sp/><sp/>_cutflow.<ref refid="structGambit_1_1ColliderBit_1_1Cutflow_1a9afc93f37d3d029081d33a4251d0f6cf" kindref="member">fill</ref>(12);</highlight></codeline>
+<codeline lineno="363"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(H_SR)<sp/><sp/><sp/><sp/><sp/>_cutflow.<ref refid="structGambit_1_1ColliderBit_1_1Cutflow_1a9afc93f37d3d029081d33a4251d0f6cf" kindref="member">fill</ref>(13);</highlight></codeline>
+<codeline lineno="364"><highlight class="normal"></highlight></codeline>
+<codeline lineno="365"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>ZeroB_SR<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="366"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/><sp/>(<sp/>met<sp/>&gt;<sp/>200.<sp/>&amp;&amp;<sp/>met<sp/>&lt;=<sp/>250.<sp/>)<sp/><sp/><sp/>_counters.at(</highlight><highlight class="stringliteral">&quot;0b-MET-200-250&quot;</highlight><highlight class="normal">).add_event(event);</highlight></codeline>
+<codeline lineno="367"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/><sp/>(<sp/>met<sp/>&gt;<sp/>250.<sp/>&amp;&amp;<sp/>met<sp/>&lt;=<sp/>300.<sp/>)<sp/><sp/><sp/>_counters.at(</highlight><highlight class="stringliteral">&quot;0b-MET-250-300&quot;</highlight><highlight class="normal">).add_event(event);</highlight></codeline>
+<codeline lineno="368"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/><sp/>(<sp/>met<sp/>&gt;<sp/>300.<sp/>&amp;&amp;<sp/>met<sp/>&lt;=<sp/>350.<sp/>)<sp/><sp/><sp/>_counters.at(</highlight><highlight class="stringliteral">&quot;0b-MET-300-350&quot;</highlight><highlight class="normal">).add_event(event);</highlight></codeline>
+<codeline lineno="369"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/><sp/>(<sp/>met<sp/>&gt;<sp/>350.<sp/>&amp;&amp;<sp/>met<sp/>&lt;=<sp/>400.<sp/>)<sp/><sp/><sp/>_counters.at(</highlight><highlight class="stringliteral">&quot;0b-MET-350-400&quot;</highlight><highlight class="normal">).add_event(event);</highlight></codeline>
+<codeline lineno="370"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/><sp/>(<sp/>met<sp/>&gt;<sp/>400.<sp/>&amp;&amp;<sp/>met<sp/>&lt;=<sp/>450.<sp/>)<sp/><sp/><sp/>_counters.at(</highlight><highlight class="stringliteral">&quot;0b-MET-400-450&quot;</highlight><highlight class="normal">).add_event(event);</highlight></codeline>
+<codeline lineno="371"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/><sp/>(<sp/>met<sp/>&gt;<sp/>450.<sp/>&amp;&amp;<sp/>met<sp/>&lt;=<sp/>500.<sp/>)<sp/><sp/><sp/>_counters.at(</highlight><highlight class="stringliteral">&quot;0b-MET-450-500&quot;</highlight><highlight class="normal">).add_event(event);</highlight></codeline>
+<codeline lineno="372"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/><sp/>(<sp/>met<sp/>&gt;<sp/>500.<sp/>&amp;&amp;<sp/>met<sp/>&lt;=<sp/>600.<sp/>)<sp/><sp/><sp/>_counters.at(</highlight><highlight class="stringliteral">&quot;0b-MET-500-600&quot;</highlight><highlight class="normal">).add_event(event);</highlight></codeline>
+<codeline lineno="373"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/><sp/>(<sp/>met<sp/>&gt;<sp/>600.<sp/>&amp;&amp;<sp/>met<sp/>&lt;=<sp/>800.<sp/>)<sp/><sp/><sp/>_counters.at(</highlight><highlight class="stringliteral">&quot;0b-MET-600-800&quot;</highlight><highlight class="normal">).add_event(event);</highlight></codeline>
+<codeline lineno="374"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/><sp/>(<sp/>met<sp/>&gt;<sp/>800.<sp/>&amp;&amp;<sp/>met<sp/>&lt;=<sp/>1200.<sp/>)<sp/><sp/>_counters.at(</highlight><highlight class="stringliteral">&quot;0b-MET-800-1200&quot;</highlight><highlight class="normal">).add_event(event);</highlight></codeline>
+<codeline lineno="375"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="376"><highlight class="normal"></highlight></codeline>
+<codeline lineno="377"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>W_SR<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="378"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/><sp/>(<sp/>met<sp/>&gt;<sp/>200.<sp/>&amp;&amp;<sp/>met<sp/>&lt;=<sp/>250.<sp/>)<sp/><sp/><sp/>_counters.at(</highlight><highlight class="stringliteral">&quot;1W-MET-200-250&quot;</highlight><highlight class="normal">).add_event(event);</highlight></codeline>
+<codeline lineno="379"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/><sp/>(<sp/>met<sp/>&gt;<sp/>250.<sp/>&amp;&amp;<sp/>met<sp/>&lt;=<sp/>300.<sp/>)<sp/><sp/><sp/>_counters.at(</highlight><highlight class="stringliteral">&quot;1W-MET-250-300&quot;</highlight><highlight class="normal">).add_event(event);</highlight></codeline>
+<codeline lineno="380"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/><sp/>(<sp/>met<sp/>&gt;<sp/>300.<sp/>&amp;&amp;<sp/>met<sp/>&lt;=<sp/>350.<sp/>)<sp/><sp/><sp/>_counters.at(</highlight><highlight class="stringliteral">&quot;1W-MET-300-350&quot;</highlight><highlight class="normal">).add_event(event);</highlight></codeline>
+<codeline lineno="381"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/><sp/>(<sp/>met<sp/>&gt;<sp/>350.<sp/>&amp;&amp;<sp/>met<sp/>&lt;=<sp/>400.<sp/>)<sp/><sp/><sp/>_counters.at(</highlight><highlight class="stringliteral">&quot;1W-MET-350-400&quot;</highlight><highlight class="normal">).add_event(event);</highlight></codeline>
+<codeline lineno="382"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/><sp/>(<sp/>met<sp/>&gt;<sp/>400.<sp/>&amp;&amp;<sp/>met<sp/>&lt;=<sp/>450.<sp/>)<sp/><sp/><sp/>_counters.at(</highlight><highlight class="stringliteral">&quot;1W-MET-400-450&quot;</highlight><highlight class="normal">).add_event(event);</highlight></codeline>
+<codeline lineno="383"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/><sp/>(<sp/>met<sp/>&gt;<sp/>450.<sp/>&amp;&amp;<sp/>met<sp/>&lt;=<sp/>500.<sp/>)<sp/><sp/><sp/>_counters.at(</highlight><highlight class="stringliteral">&quot;1W-MET-450-500&quot;</highlight><highlight class="normal">).add_event(event);</highlight></codeline>
+<codeline lineno="384"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/><sp/>(<sp/>met<sp/>&gt;<sp/>500.<sp/>&amp;&amp;<sp/>met<sp/>&lt;=<sp/>600.<sp/>)<sp/><sp/><sp/>_counters.at(</highlight><highlight class="stringliteral">&quot;1W-MET-500-600&quot;</highlight><highlight class="normal">).add_event(event);</highlight></codeline>
+<codeline lineno="385"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/><sp/>(<sp/>met<sp/>&gt;<sp/>600.<sp/>&amp;&amp;<sp/>met<sp/>&lt;=<sp/>800.<sp/>)<sp/><sp/><sp/>_counters.at(</highlight><highlight class="stringliteral">&quot;1W-MET-600-800&quot;</highlight><highlight class="normal">).add_event(event);</highlight></codeline>
+<codeline lineno="386"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/><sp/>(<sp/>met<sp/>&gt;<sp/>800.<sp/>&amp;&amp;<sp/>met<sp/>&lt;=<sp/>1200.<sp/>)<sp/><sp/>_counters.at(</highlight><highlight class="stringliteral">&quot;1W-MET-800-1200&quot;</highlight><highlight class="normal">).add_event(event);</highlight></codeline>
+<codeline lineno="387"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="388"><highlight class="normal"></highlight></codeline>
+<codeline lineno="389"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>WH_SR<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="390"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/><sp/>(<sp/>met<sp/>&gt;<sp/>200.<sp/>&amp;&amp;<sp/>met<sp/>&lt;=<sp/>250.<sp/>)<sp/><sp/><sp/>_counters.at(</highlight><highlight class="stringliteral">&quot;WH-MET-200-250&quot;</highlight><highlight class="normal">).add_event(event);</highlight></codeline>
+<codeline lineno="391"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/><sp/>(<sp/>met<sp/>&gt;<sp/>250.<sp/>&amp;&amp;<sp/>met<sp/>&lt;=<sp/>300.<sp/>)<sp/><sp/><sp/>_counters.at(</highlight><highlight class="stringliteral">&quot;WH-MET-250-300&quot;</highlight><highlight class="normal">).add_event(event);</highlight></codeline>
+<codeline lineno="392"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/><sp/>(<sp/>met<sp/>&gt;<sp/>300.<sp/>&amp;&amp;<sp/>met<sp/>&lt;=<sp/>350.<sp/>)<sp/><sp/><sp/>_counters.at(</highlight><highlight class="stringliteral">&quot;WH-MET-300-350&quot;</highlight><highlight class="normal">).add_event(event);</highlight></codeline>
+<codeline lineno="393"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/><sp/>(<sp/>met<sp/>&gt;<sp/>350.<sp/>&amp;&amp;<sp/>met<sp/>&lt;=<sp/>400.<sp/>)<sp/><sp/><sp/>_counters.at(</highlight><highlight class="stringliteral">&quot;WH-MET-350-400&quot;</highlight><highlight class="normal">).add_event(event);</highlight></codeline>
+<codeline lineno="394"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/><sp/>(<sp/>met<sp/>&gt;<sp/>400.<sp/>&amp;&amp;<sp/>met<sp/>&lt;=<sp/>450.<sp/>)<sp/><sp/><sp/>_counters.at(</highlight><highlight class="stringliteral">&quot;WH-MET-400-450&quot;</highlight><highlight class="normal">).add_event(event);</highlight></codeline>
+<codeline lineno="395"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/><sp/>(<sp/>met<sp/>&gt;<sp/>450.<sp/>&amp;&amp;<sp/>met<sp/>&lt;=<sp/>500.<sp/>)<sp/><sp/><sp/>_counters.at(</highlight><highlight class="stringliteral">&quot;WH-MET-450-500&quot;</highlight><highlight class="normal">).add_event(event);</highlight></codeline>
+<codeline lineno="396"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/><sp/>(<sp/>met<sp/>&gt;<sp/>500.<sp/>&amp;&amp;<sp/>met<sp/>&lt;=<sp/>600.<sp/>)<sp/><sp/><sp/>_counters.at(</highlight><highlight class="stringliteral">&quot;WH-MET-500-600&quot;</highlight><highlight class="normal">).add_event(event);</highlight></codeline>
+<codeline lineno="397"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/><sp/>(<sp/>met<sp/>&gt;<sp/>600.<sp/>&amp;&amp;<sp/>met<sp/>&lt;=<sp/>900.<sp/>)<sp/><sp/><sp/>_counters.at(</highlight><highlight class="stringliteral">&quot;WH-MET-600-900&quot;</highlight><highlight class="normal">).add_event(event);</highlight></codeline>
+<codeline lineno="398"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="399"><highlight class="normal"></highlight></codeline>
+<codeline lineno="400"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(<sp/>H_SR<sp/>)<sp/>{</highlight></codeline>
+<codeline lineno="401"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/><sp/>(<sp/>met<sp/>&gt;<sp/>200.<sp/>&amp;&amp;<sp/>met<sp/>&lt;=<sp/>250.<sp/>)<sp/><sp/><sp/>_counters.at(</highlight><highlight class="stringliteral">&quot;1H-MET-200-250&quot;</highlight><highlight class="normal">).add_event(event);</highlight></codeline>
+<codeline lineno="402"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/><sp/>(<sp/>met<sp/>&gt;<sp/>250.<sp/>&amp;&amp;<sp/>met<sp/>&lt;=<sp/>300.<sp/>)<sp/><sp/><sp/>_counters.at(</highlight><highlight class="stringliteral">&quot;1H-MET-250-300&quot;</highlight><highlight class="normal">).add_event(event);</highlight></codeline>
+<codeline lineno="403"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/><sp/>(<sp/>met<sp/>&gt;<sp/>300.<sp/>&amp;&amp;<sp/>met<sp/>&lt;=<sp/>350.<sp/>)<sp/><sp/><sp/>_counters.at(</highlight><highlight class="stringliteral">&quot;1H-MET-300-350&quot;</highlight><highlight class="normal">).add_event(event);</highlight></codeline>
+<codeline lineno="404"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/><sp/>(<sp/>met<sp/>&gt;<sp/>350.<sp/>&amp;&amp;<sp/>met<sp/>&lt;=<sp/>400.<sp/>)<sp/><sp/><sp/>_counters.at(</highlight><highlight class="stringliteral">&quot;1H-MET-350-400&quot;</highlight><highlight class="normal">).add_event(event);</highlight></codeline>
+<codeline lineno="405"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/><sp/>(<sp/>met<sp/>&gt;<sp/>400.<sp/>&amp;&amp;<sp/>met<sp/>&lt;=<sp/>450.<sp/>)<sp/><sp/><sp/>_counters.at(</highlight><highlight class="stringliteral">&quot;1H-MET-400-450&quot;</highlight><highlight class="normal">).add_event(event);</highlight></codeline>
+<codeline lineno="406"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/><sp/>(<sp/>met<sp/>&gt;<sp/>450.<sp/>&amp;&amp;<sp/>met<sp/>&lt;=<sp/>500.<sp/>)<sp/><sp/><sp/>_counters.at(</highlight><highlight class="stringliteral">&quot;1H-MET-450-500&quot;</highlight><highlight class="normal">).add_event(event);</highlight></codeline>
+<codeline lineno="407"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/><sp/>(<sp/>met<sp/>&gt;<sp/>500.<sp/>&amp;&amp;<sp/>met<sp/>&lt;=<sp/>600.<sp/>)<sp/><sp/><sp/>_counters.at(</highlight><highlight class="stringliteral">&quot;1H-MET-500-600&quot;</highlight><highlight class="normal">).add_event(event);</highlight></codeline>
+<codeline lineno="408"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/><sp/>(<sp/>met<sp/>&gt;<sp/>600.<sp/>&amp;&amp;<sp/>met<sp/>&lt;=<sp/>800.<sp/>)<sp/><sp/><sp/>_counters.at(</highlight><highlight class="stringliteral">&quot;1H-MET-600-800&quot;</highlight><highlight class="normal">).add_event(event);</highlight></codeline>
+<codeline lineno="409"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/><sp/>(<sp/>met<sp/>&gt;<sp/>800.<sp/>&amp;&amp;<sp/>met<sp/>&lt;=<sp/>1200.<sp/>)<sp/><sp/>_counters.at(</highlight><highlight class="stringliteral">&quot;1H-MET-800-1200&quot;</highlight><highlight class="normal">).add_event(event);</highlight></codeline>
+<codeline lineno="410"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="411"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="412"><highlight class="normal"></highlight></codeline>
+<codeline lineno="413"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">virtual</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1ColliderBit_1_1Analysis__CMS__13TeV__0LEP__chargino__VV__VH__137invfb_1a6fb54f80c72e808387e6b61eea4f13a4" kindref="member">collect_results</ref>()</highlight></codeline>
+<codeline lineno="414"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="415"><highlight class="normal"></highlight></codeline>
+<codeline lineno="416"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#ifdef<sp/>CHECK_CUTFLOW</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="417"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>_cutflow<sp/>&lt;&lt;<sp/>endl;</highlight></codeline>
+<codeline lineno="418"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Note:<sp/>The<sp/>EventCount::sum()<sp/>call<sp/>below<sp/>gives<sp/>the<sp/>raw<sp/>MC<sp/>event<sp/>count.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="419"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/><sp/><sp/>Use<sp/>weight_sum()<sp/>to<sp/>get<sp/>the<sp/>sum<sp/>of<sp/>event<sp/>weights.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="420"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>for<sp/>(auto&amp;<sp/>pair<sp/>:<sp/>_counters)<sp/>{</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="421"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/><sp/><sp/><sp/><sp/>cout<sp/>&lt;&lt;<sp/>pair.first<sp/>&lt;&lt;<sp/>&quot;\t&quot;<sp/>&lt;&lt;<sp/>pair.second.sum()<sp/>&lt;&lt;<sp/>endl;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="422"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>}</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="423"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="424"><highlight class="normal"></highlight></codeline>
+<codeline lineno="425"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Note<sp/>that<sp/>order<sp/>in<sp/>which<sp/>the<sp/>SR<sp/>results<sp/>are<sp/>added<sp/>must<sp/>match<sp/>the<sp/>order<sp/>in<sp/>the<sp/>covariance<sp/>matrix<sp/>below.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="426"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1ColliderBit_1_1Analysis_1a129c783782dbf71bf5920676a6825f82" kindref="member">add_result</ref>(<ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData" kindref="compound">SignalRegionData</ref>(_counters.at(</highlight><highlight class="stringliteral">&quot;0b-MET-200-250&quot;</highlight><highlight class="normal">),<sp/><sp/>82.0,<sp/>{88.139,<sp/>9.2357}));</highlight></codeline>
+<codeline lineno="427"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1ColliderBit_1_1Analysis_1a129c783782dbf71bf5920676a6825f82" kindref="member">add_result</ref>(<ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData" kindref="compound">SignalRegionData</ref>(_counters.at(</highlight><highlight class="stringliteral">&quot;0b-MET-250-300&quot;</highlight><highlight class="normal">),<sp/><sp/>48.0,<sp/>{48.165,<sp/>6.7386}));</highlight></codeline>
+<codeline lineno="428"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1ColliderBit_1_1Analysis_1a129c783782dbf71bf5920676a6825f82" kindref="member">add_result</ref>(<ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData" kindref="compound">SignalRegionData</ref>(_counters.at(</highlight><highlight class="stringliteral">&quot;0b-MET-300-350&quot;</highlight><highlight class="normal">),<sp/><sp/>24.0,<sp/>{25.378,<sp/>4.4114}));</highlight></codeline>
+<codeline lineno="429"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1ColliderBit_1_1Analysis_1a129c783782dbf71bf5920676a6825f82" kindref="member">add_result</ref>(<ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData" kindref="compound">SignalRegionData</ref>(_counters.at(</highlight><highlight class="stringliteral">&quot;0b-MET-350-400&quot;</highlight><highlight class="normal">),<sp/><sp/>9.0,<sp/><sp/>{15.523,<sp/>3.7379}));</highlight></codeline>
+<codeline lineno="430"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1ColliderBit_1_1Analysis_1a129c783782dbf71bf5920676a6825f82" kindref="member">add_result</ref>(<ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData" kindref="compound">SignalRegionData</ref>(_counters.at(</highlight><highlight class="stringliteral">&quot;0b-MET-400-450&quot;</highlight><highlight class="normal">),<sp/><sp/>8.0,<sp/><sp/>{12.258,<sp/>3.1539}));</highlight></codeline>
+<codeline lineno="431"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1ColliderBit_1_1Analysis_1a129c783782dbf71bf5920676a6825f82" kindref="member">add_result</ref>(<ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData" kindref="compound">SignalRegionData</ref>(_counters.at(</highlight><highlight class="stringliteral">&quot;0b-MET-450-500&quot;</highlight><highlight class="normal">),<sp/><sp/>6.0,<sp/><sp/>{7.8949,<sp/>2.1316}));</highlight></codeline>
+<codeline lineno="432"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1ColliderBit_1_1Analysis_1a129c783782dbf71bf5920676a6825f82" kindref="member">add_result</ref>(<ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData" kindref="compound">SignalRegionData</ref>(_counters.at(</highlight><highlight class="stringliteral">&quot;0b-MET-500-600&quot;</highlight><highlight class="normal">),<sp/><sp/>9.0,<sp/><sp/>{9.5994,<sp/>2.7618}));</highlight></codeline>
+<codeline lineno="433"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1ColliderBit_1_1Analysis_1a129c783782dbf71bf5920676a6825f82" kindref="member">add_result</ref>(<ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData" kindref="compound">SignalRegionData</ref>(_counters.at(</highlight><highlight class="stringliteral">&quot;0b-MET-600-800&quot;</highlight><highlight class="normal">),<sp/><sp/>6.0,<sp/><sp/>{6.1672,<sp/>2.2207}));</highlight></codeline>
+<codeline lineno="434"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1ColliderBit_1_1Analysis_1a129c783782dbf71bf5920676a6825f82" kindref="member">add_result</ref>(<ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData" kindref="compound">SignalRegionData</ref>(_counters.at(</highlight><highlight class="stringliteral">&quot;0b-MET-800-1200&quot;</highlight><highlight class="normal">),<sp/>3.0,<sp/><sp/>{0.8677,<sp/>0.7351}));</highlight></codeline>
+<codeline lineno="435"><highlight class="normal"></highlight></codeline>
+<codeline lineno="436"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1ColliderBit_1_1Analysis_1a129c783782dbf71bf5920676a6825f82" kindref="member">add_result</ref>(<ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData" kindref="compound">SignalRegionData</ref>(_counters.at(</highlight><highlight class="stringliteral">&quot;WH-MET-200-250&quot;</highlight><highlight class="normal">),<sp/><sp/>32.0,<sp/>{34.897,<sp/>5.4092}));</highlight></codeline>
+<codeline lineno="437"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1ColliderBit_1_1Analysis_1a129c783782dbf71bf5920676a6825f82" kindref="member">add_result</ref>(<ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData" kindref="compound">SignalRegionData</ref>(_counters.at(</highlight><highlight class="stringliteral">&quot;WH-MET-250-300&quot;</highlight><highlight class="normal">),<sp/><sp/>13.0,<sp/>{16.169,<sp/>3.2782}));</highlight></codeline>
+<codeline lineno="438"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1ColliderBit_1_1Analysis_1a129c783782dbf71bf5920676a6825f82" kindref="member">add_result</ref>(<ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData" kindref="compound">SignalRegionData</ref>(_counters.at(</highlight><highlight class="stringliteral">&quot;WH-MET-300-350&quot;</highlight><highlight class="normal">),<sp/><sp/>8.0,<sp/><sp/>{5.1953,<sp/>1.2923}));</highlight></codeline>
+<codeline lineno="439"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1ColliderBit_1_1Analysis_1a129c783782dbf71bf5920676a6825f82" kindref="member">add_result</ref>(<ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData" kindref="compound">SignalRegionData</ref>(_counters.at(</highlight><highlight class="stringliteral">&quot;WH-MET-350-400&quot;</highlight><highlight class="normal">),<sp/><sp/>8.0,<sp/><sp/>{3.1096,<sp/>1.3459}));</highlight></codeline>
+<codeline lineno="440"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1ColliderBit_1_1Analysis_1a129c783782dbf71bf5920676a6825f82" kindref="member">add_result</ref>(<ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData" kindref="compound">SignalRegionData</ref>(_counters.at(</highlight><highlight class="stringliteral">&quot;WH-MET-400-450&quot;</highlight><highlight class="normal">),<sp/><sp/>4.0,<sp/><sp/>{2.9124,<sp/>1.1509}));</highlight></codeline>
+<codeline lineno="441"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1ColliderBit_1_1Analysis_1a129c783782dbf71bf5920676a6825f82" kindref="member">add_result</ref>(<ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData" kindref="compound">SignalRegionData</ref>(_counters.at(</highlight><highlight class="stringliteral">&quot;WH-MET-450-500&quot;</highlight><highlight class="normal">),<sp/><sp/>3.0,<sp/><sp/>{1.2895,<sp/>0.62421}));</highlight></codeline>
+<codeline lineno="442"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1ColliderBit_1_1Analysis_1a129c783782dbf71bf5920676a6825f82" kindref="member">add_result</ref>(<ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData" kindref="compound">SignalRegionData</ref>(_counters.at(</highlight><highlight class="stringliteral">&quot;WH-MET-500-600&quot;</highlight><highlight class="normal">),<sp/><sp/>1.0,<sp/><sp/>{1.1892,<sp/>1.12000}));</highlight></codeline>
+<codeline lineno="443"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1ColliderBit_1_1Analysis_1a129c783782dbf71bf5920676a6825f82" kindref="member">add_result</ref>(<ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData" kindref="compound">SignalRegionData</ref>(_counters.at(</highlight><highlight class="stringliteral">&quot;WH-MET-600-900&quot;</highlight><highlight class="normal">),<sp/><sp/>1.0,<sp/><sp/>{1.0161,<sp/>1.09000}));</highlight></codeline>
+<codeline lineno="444"><highlight class="normal"></highlight></codeline>
+<codeline lineno="445"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1ColliderBit_1_1Analysis_1a129c783782dbf71bf5920676a6825f82" kindref="member">add_result</ref>(<ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData" kindref="compound">SignalRegionData</ref>(_counters.at(</highlight><highlight class="stringliteral">&quot;1W-MET-200-250&quot;</highlight><highlight class="normal">),<sp/><sp/>680.0,<sp/>{749.41,<sp/>46.066}));</highlight></codeline>
+<codeline lineno="446"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1ColliderBit_1_1Analysis_1a129c783782dbf71bf5920676a6825f82" kindref="member">add_result</ref>(<ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData" kindref="compound">SignalRegionData</ref>(_counters.at(</highlight><highlight class="stringliteral">&quot;1W-MET-250-300&quot;</highlight><highlight class="normal">),<sp/><sp/>312.0,<sp/>{332.41,<sp/>32.533}));</highlight></codeline>
+<codeline lineno="447"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1ColliderBit_1_1Analysis_1a129c783782dbf71bf5920676a6825f82" kindref="member">add_result</ref>(<ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData" kindref="compound">SignalRegionData</ref>(_counters.at(</highlight><highlight class="stringliteral">&quot;1W-MET-300-350&quot;</highlight><highlight class="normal">),<sp/><sp/>175.0,<sp/>{176.44,<sp/>13.463}));</highlight></codeline>
+<codeline lineno="448"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1ColliderBit_1_1Analysis_1a129c783782dbf71bf5920676a6825f82" kindref="member">add_result</ref>(<ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData" kindref="compound">SignalRegionData</ref>(_counters.at(</highlight><highlight class="stringliteral">&quot;1W-MET-350-400&quot;</highlight><highlight class="normal">),<sp/><sp/>95.0,<sp/><sp/>{99.358,<sp/>9.8858}));</highlight></codeline>
+<codeline lineno="449"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1ColliderBit_1_1Analysis_1a129c783782dbf71bf5920676a6825f82" kindref="member">add_result</ref>(<ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData" kindref="compound">SignalRegionData</ref>(_counters.at(</highlight><highlight class="stringliteral">&quot;1W-MET-400-450&quot;</highlight><highlight class="normal">),<sp/><sp/>63.0,<sp/><sp/>{60.705,<sp/>6.9053}));</highlight></codeline>
+<codeline lineno="450"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1ColliderBit_1_1Analysis_1a129c783782dbf71bf5920676a6825f82" kindref="member">add_result</ref>(<ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData" kindref="compound">SignalRegionData</ref>(_counters.at(</highlight><highlight class="stringliteral">&quot;1W-MET-450-500&quot;</highlight><highlight class="normal">),<sp/><sp/>23.0,<sp/><sp/>{34.733,<sp/>4.6856}));</highlight></codeline>
+<codeline lineno="451"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1ColliderBit_1_1Analysis_1a129c783782dbf71bf5920676a6825f82" kindref="member">add_result</ref>(<ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData" kindref="compound">SignalRegionData</ref>(_counters.at(</highlight><highlight class="stringliteral">&quot;1W-MET-500-600&quot;</highlight><highlight class="normal">),<sp/><sp/>28.0,<sp/><sp/>{26.873,<sp/>3.6029}));</highlight></codeline>
+<codeline lineno="452"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1ColliderBit_1_1Analysis_1a129c783782dbf71bf5920676a6825f82" kindref="member">add_result</ref>(<ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData" kindref="compound">SignalRegionData</ref>(_counters.at(</highlight><highlight class="stringliteral">&quot;1W-MET-600-800&quot;</highlight><highlight class="normal">),<sp/><sp/>17.0,<sp/><sp/>{18.835,<sp/>3.2202}));</highlight></codeline>
+<codeline lineno="453"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1ColliderBit_1_1Analysis_1a129c783782dbf71bf5920676a6825f82" kindref="member">add_result</ref>(<ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData" kindref="compound">SignalRegionData</ref>(_counters.at(</highlight><highlight class="stringliteral">&quot;1W-MET-800-1200&quot;</highlight><highlight class="normal">),<sp/>4.0,<sp/><sp/><sp/>{3.5228,<sp/>1.7000}));</highlight></codeline>
+<codeline lineno="454"><highlight class="normal"></highlight></codeline>
+<codeline lineno="455"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1ColliderBit_1_1Analysis_1a129c783782dbf71bf5920676a6825f82" kindref="member">add_result</ref>(<ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData" kindref="compound">SignalRegionData</ref>(_counters.at(</highlight><highlight class="stringliteral">&quot;1H-MET-200-250&quot;</highlight><highlight class="normal">),<sp/><sp/>1212.0,<sp/>{1244.1,<sp/>61.086}));</highlight></codeline>
+<codeline lineno="456"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1ColliderBit_1_1Analysis_1a129c783782dbf71bf5920676a6825f82" kindref="member">add_result</ref>(<ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData" kindref="compound">SignalRegionData</ref>(_counters.at(</highlight><highlight class="stringliteral">&quot;1H-MET-250-300&quot;</highlight><highlight class="normal">),<sp/><sp/>563.0,<sp/>{555.26,<sp/>27.194}));</highlight></codeline>
+<codeline lineno="457"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1ColliderBit_1_1Analysis_1a129c783782dbf71bf5920676a6825f82" kindref="member">add_result</ref>(<ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData" kindref="compound">SignalRegionData</ref>(_counters.at(</highlight><highlight class="stringliteral">&quot;1H-MET-300-350&quot;</highlight><highlight class="normal">),<sp/><sp/>282.0,<sp/>{310.59,<sp/>19.810}));</highlight></codeline>
+<codeline lineno="458"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1ColliderBit_1_1Analysis_1a129c783782dbf71bf5920676a6825f82" kindref="member">add_result</ref>(<ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData" kindref="compound">SignalRegionData</ref>(_counters.at(</highlight><highlight class="stringliteral">&quot;1H-MET-350-400&quot;</highlight><highlight class="normal">),<sp/><sp/>160.0,<sp/><sp/>{156.06,<sp/>13.592}));</highlight></codeline>
+<codeline lineno="459"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1ColliderBit_1_1Analysis_1a129c783782dbf71bf5920676a6825f82" kindref="member">add_result</ref>(<ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData" kindref="compound">SignalRegionData</ref>(_counters.at(</highlight><highlight class="stringliteral">&quot;1H-MET-400-450&quot;</highlight><highlight class="normal">),<sp/><sp/>115.0,<sp/><sp/>{92.935,<sp/>10.050}));</highlight></codeline>
+<codeline lineno="460"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1ColliderBit_1_1Analysis_1a129c783782dbf71bf5920676a6825f82" kindref="member">add_result</ref>(<ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData" kindref="compound">SignalRegionData</ref>(_counters.at(</highlight><highlight class="stringliteral">&quot;1H-MET-450-500&quot;</highlight><highlight class="normal">),<sp/><sp/><sp/>60.0,<sp/><sp/>{77.114,<sp/>7.9706}));</highlight></codeline>
+<codeline lineno="461"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1ColliderBit_1_1Analysis_1a129c783782dbf71bf5920676a6825f82" kindref="member">add_result</ref>(<ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData" kindref="compound">SignalRegionData</ref>(_counters.at(</highlight><highlight class="stringliteral">&quot;1H-MET-500-600&quot;</highlight><highlight class="normal">),<sp/><sp/><sp/>65.0,<sp/><sp/>{55.800,<sp/>7.1271}));</highlight></codeline>
+<codeline lineno="462"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1ColliderBit_1_1Analysis_1a129c783782dbf71bf5920676a6825f82" kindref="member">add_result</ref>(<ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData" kindref="compound">SignalRegionData</ref>(_counters.at(</highlight><highlight class="stringliteral">&quot;1H-MET-600-800&quot;</highlight><highlight class="normal">),<sp/><sp/><sp/>39.0,<sp/><sp/>{30.174,<sp/>4.7484}));</highlight></codeline>
+<codeline lineno="463"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1ColliderBit_1_1Analysis_1a129c783782dbf71bf5920676a6825f82" kindref="member">add_result</ref>(<ref refid="structGambit_1_1ColliderBit_1_1SignalRegionData" kindref="compound">SignalRegionData</ref>(_counters.at(</highlight><highlight class="stringliteral">&quot;1H-MET-800-1200&quot;</highlight><highlight class="normal">),<sp/><sp/><sp/>8.0,<sp/><sp/>{7.5232,<sp/>2.4987}));</highlight></codeline>
+<codeline lineno="464"><highlight class="normal"></highlight></codeline>
+<codeline lineno="465"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Background<sp/>uncertainty<sp/>covariance<sp/>matrix<sp/>from<sp/>the<sp/>ROOT<sp/>file<sp/>available<sp/>at</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="466"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>https://cms-results.web.cern.ch/cms-results/public-results/publications/SUS-21-002/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="467"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>vector&lt;<sp/>vector&lt;double&gt;<sp/>&gt;<sp/>BKGCOV<sp/>=<sp/>{</highlight></codeline>
+<codeline lineno="468"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><sp/>9.833e+01,<sp/><sp/>3.216e+01,<sp/><sp/>1.837e+01,<sp/><sp/>1.123e+01,<sp/><sp/>1.047e+01,<sp/><sp/>6.944e+00,<sp/><sp/>1.011e+01,<sp/><sp/>7.588e+00,<sp/><sp/>1.657e+00,<sp/><sp/>6.130e-01,<sp/><sp/>1.880e+00,<sp/><sp/>3.344e-01,<sp/><sp/>4.448e-02,<sp/>-2.987e-01,<sp/><sp/>2.694e-01,<sp/><sp/>1.260e-01,<sp/><sp/>5.901e-02,<sp/><sp/>9.748e-01,<sp/><sp/>2.539e+00,<sp/><sp/>1.636e+00,<sp/><sp/>5.280e-01,<sp/><sp/>2.268e+00,<sp/><sp/>5.849e-01,<sp/><sp/>7.310e-01,<sp/><sp/>2.262e-01,<sp/>-4.796e-02,<sp/><sp/>2.988e+01,<sp/><sp/>1.016e+01,<sp/><sp/>3.569e+00,<sp/><sp/>3.200e+00,<sp/><sp/>2.509e+00,<sp/><sp/>2.515e-01,<sp/>-9.975e-01,<sp/>-6.538e-01,<sp/>-5.628e-02},</highlight></codeline>
+<codeline lineno="469"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><sp/>3.216e+01,<sp/><sp/>4.038e+01,<sp/><sp/>1.311e+01,<sp/><sp/>8.458e+00,<sp/><sp/>7.240e+00,<sp/><sp/>5.411e+00,<sp/><sp/>7.797e+00,<sp/><sp/>6.135e+00,<sp/><sp/>1.381e+00,<sp/><sp/>6.624e-02,<sp/><sp/>6.118e-01,<sp/>-4.265e-02,<sp/><sp/>1.349e-01,<sp/>-4.382e-02,<sp/><sp/>3.364e-02,<sp/>-3.717e-02,<sp/><sp/>1.387e-01,<sp/>-3.834e+00,<sp/>-6.039e-01,<sp/>-7.556e-02,<sp/><sp/>6.097e-01,<sp/>-1.106e+00,<sp/><sp/>1.309e+00,<sp/>-1.334e-01,<sp/>-1.463e-01,<sp/>-1.022e-01,<sp/><sp/>1.844e+01,<sp/><sp/>1.374e+00,<sp/>-2.235e+00,<sp/>-2.994e-01,<sp/>-1.966e+00,<sp/>-3.717e-01,<sp/>-9.804e-01,<sp/>-8.624e-01,<sp/>-2.096e-02},</highlight></codeline>
+<codeline lineno="470"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><sp/>1.837e+01,<sp/><sp/>1.311e+01,<sp/><sp/>1.640e+01,<sp/><sp/>5.690e+00,<sp/><sp/>5.051e+00,<sp/><sp/>4.057e+00,<sp/><sp/>5.685e+00,<sp/><sp/>4.743e+00,<sp/><sp/>9.502e-01,<sp/><sp/>4.510e-02,<sp/><sp/>2.570e-01,<sp/>-8.089e-02,<sp/>-6.037e-02,<sp/>-9.574e-02,<sp/><sp/>5.896e-02,<sp/><sp/>2.698e-02,<sp/>-3.851e-03,<sp/>-1.905e+00,<sp/><sp/>2.467e+00,<sp/>-1.072e+00,<sp/><sp/>4.551e-01,<sp/>-5.938e-01,<sp/><sp/>2.695e-01,<sp/><sp/>8.580e-02,<sp/>-1.648e-01,<sp/>-6.158e-02,<sp/><sp/>7.945e+00,<sp/><sp/>4.261e+00,<sp/>-1.647e+00,<sp/>-7.262e-01,<sp/><sp/>5.010e-01,<sp/>-4.873e-01,<sp/>-3.370e-01,<sp/>-1.812e-01,<sp/>-1.045e-01},</highlight></codeline>
+<codeline lineno="471"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><sp/>1.123e+01,<sp/><sp/>8.458e+00,<sp/><sp/>5.690e+00,<sp/><sp/>1.164e+01,<sp/><sp/>3.719e+00,<sp/><sp/>2.899e+00,<sp/><sp/>3.907e+00,<sp/><sp/>3.276e+00,<sp/><sp/>7.573e-01,<sp/><sp/>7.866e-01,<sp/><sp/>2.307e-01,<sp/>-6.225e-02,<sp/><sp/>6.965e-02,<sp/>-6.044e-02,<sp/><sp/>5.656e-02,<sp/><sp/>3.464e-02,<sp/><sp/>4.602e-02,<sp/><sp/>4.640e+00,<sp/><sp/>2.660e+00,<sp/><sp/>3.392e-01,<sp/><sp/>1.088e+00,<sp/><sp/>5.405e-02,<sp/><sp/>7.109e-01,<sp/>-1.490e-03,<sp/>-1.955e-01,<sp/>-9.825e-02,<sp/><sp/>4.690e+00,<sp/><sp/>6.216e-01,<sp/>-1.148e+00,<sp/>-8.757e-02,<sp/>-1.337e-01,<sp/><sp/>1.582e-01,<sp/>-8.644e-01,<sp/>-1.001e-01,<sp/>-3.278e-01},</highlight></codeline>
+<codeline lineno="472"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><sp/>1.047e+01,<sp/><sp/>7.240e+00,<sp/><sp/>5.051e+00,<sp/><sp/>3.719e+00,<sp/><sp/>8.706e+00,<sp/><sp/>2.804e+00,<sp/><sp/>3.636e+00,<sp/><sp/>3.093e+00,<sp/><sp/>7.173e-01,<sp/><sp/>4.841e-01,<sp/><sp/>2.984e-01,<sp/><sp/>1.013e-01,<sp/><sp/>6.718e-02,<sp/>-7.578e-02,<sp/><sp/>5.297e-02,<sp/><sp/>6.711e-03,<sp/><sp/>3.982e-02,<sp/>-2.558e+00,<sp/>-1.555e-01,<sp/><sp/>4.498e-01,<sp/><sp/>3.620e-01,<sp/>-4.894e-01,<sp/><sp/>5.691e-01,<sp/><sp/>1.269e-01,<sp/>-2.423e-01,<sp/>-1.769e-02,<sp/><sp/>6.649e+00,<sp/><sp/>8.477e-01,<sp/>-1.073e+00,<sp/><sp/>1.894e-01,<sp/><sp/>2.055e-01,<sp/>-2.433e-01,<sp/>-1.080e+00,<sp/><sp/>1.479e-01,<sp/>-6.933e-02},</highlight></codeline>
+<codeline lineno="473"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><sp/>6.944e+00,<sp/><sp/>5.411e+00,<sp/><sp/>4.057e+00,<sp/><sp/>2.899e+00,<sp/><sp/>2.804e+00,<sp/><sp/>4.528e+00,<sp/><sp/>2.959e+00,<sp/><sp/>2.433e+00,<sp/><sp/>5.517e-01,<sp/>-1.301e-01,<sp/><sp/>2.227e-02,<sp/>-9.328e-03,<sp/><sp/>1.868e-02,<sp/>-7.923e-03,<sp/><sp/>6.328e-02,<sp/>-1.397e-02,<sp/><sp/>2.530e-02,<sp/>-2.935e+00,<sp/>-5.991e-01,<sp/><sp/>2.816e-01,<sp/><sp/>3.168e-01,<sp/>-9.581e-02,<sp/><sp/>2.952e-01,<sp/>-7.864e-02,<sp/><sp/>1.292e-01,<sp/>-4.261e-02,<sp/><sp/>5.991e+00,<sp/><sp/>2.029e+00,<sp/>-2.288e-01,<sp/><sp/>1.814e-01,<sp/><sp/>4.744e-01,<sp/>-1.574e-02,<sp/>-7.158e-04,<sp/><sp/>1.049e-01,<sp/>-2.506e-01},</highlight></codeline>
+<codeline lineno="474"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><sp/>1.011e+01,<sp/><sp/>7.797e+00,<sp/><sp/>5.685e+00,<sp/><sp/>3.907e+00,<sp/><sp/>3.636e+00,<sp/><sp/>2.959e+00,<sp/><sp/>7.383e+00,<sp/><sp/>3.490e+00,<sp/><sp/>7.865e-01,<sp/><sp/>1.086e-01,<sp/><sp/>1.608e-01,<sp/>-7.429e-02,<sp/><sp/>7.812e-02,<sp/>-1.358e-01,<sp/><sp/>2.560e-02,<sp/>-6.686e-03,<sp/><sp/>5.997e-02,<sp/>-5.182e-01,<sp/><sp/>1.447e+00,<sp/>-1.386e-01,<sp/><sp/>6.158e-01,<sp/>-1.525e-01,<sp/><sp/>1.692e-01,<sp/>-2.401e-01,<sp/>-8.024e-02,<sp/><sp/>1.439e-02,<sp/><sp/>8.471e+00,<sp/><sp/>1.040e+00,<sp/>-8.238e-01,<sp/><sp/>5.709e-01,<sp/><sp/>6.653e-02,<sp/>-8.294e-01,<sp/>-5.594e-01,<sp/>-7.201e-02,<sp/>-2.554e-01},</highlight></codeline>
+<codeline lineno="475"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><sp/>7.588e+00,<sp/><sp/>6.135e+00,<sp/><sp/>4.743e+00,<sp/><sp/>3.276e+00,<sp/><sp/>3.093e+00,<sp/><sp/>2.433e+00,<sp/><sp/>3.490e+00,<sp/><sp/>4.744e+00,<sp/><sp/>6.724e-01,<sp/><sp/>2.596e-01,<sp/><sp/>1.621e-01,<sp/><sp/>6.022e-02,<sp/><sp/>4.793e-02,<sp/><sp/>1.545e-03,<sp/><sp/>5.461e-02,<sp/>-2.067e-03,<sp/><sp/>3.570e-02,<sp/><sp/>8.978e-01,<sp/><sp/>2.018e+00,<sp/><sp/>4.058e-01,<sp/><sp/>9.986e-01,<sp/>-2.130e-01,<sp/><sp/>1.522e-01,<sp/><sp/>4.763e-02,<sp/>-1.076e-01,<sp/><sp/>2.424e-02,<sp/><sp/>3.406e+00,<sp/><sp/>6.287e-01,<sp/>-1.064e+00,<sp/><sp/>8.259e-01,<sp/><sp/>5.400e-01,<sp/>-4.979e-01,<sp/>-4.912e-01,<sp/>-2.559e-01,<sp/>-1.470e-01},</highlight></codeline>
+<codeline lineno="476"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><sp/>1.657e+00,<sp/><sp/>1.381e+00,<sp/><sp/>9.502e-01,<sp/><sp/>7.573e-01,<sp/><sp/>7.173e-01,<sp/><sp/>5.517e-01,<sp/><sp/>7.865e-01,<sp/><sp/>6.724e-01,<sp/><sp/>3.645e-01,<sp/><sp/>6.398e-02,<sp/><sp/>1.307e-01,<sp/><sp/>9.032e-03,<sp/><sp/>3.610e-02,<sp/>-1.228e-02,<sp/><sp/>1.525e-02,<sp/>-9.855e-04,<sp/><sp/>1.887e-02,<sp/><sp/>4.529e-01,<sp/><sp/>5.710e-01,<sp/><sp/>3.177e-01,<sp/><sp/>2.693e-01,<sp/>-8.758e-02,<sp/>-2.391e-02,<sp/><sp/>3.330e-02,<sp/>-1.968e-03,<sp/><sp/>1.195e-02,<sp/><sp/>7.086e-01,<sp/><sp/>2.793e-02,<sp/><sp/>1.750e-01,<sp/>-2.323e-01,<sp/><sp/>1.188e-01,<sp/>-1.383e-01,<sp/>-1.740e-01,<sp/>-2.560e-02,<sp/>-3.138e-02},</highlight></codeline>
+<codeline lineno="477"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><sp/>6.130e-01,<sp/><sp/>6.624e-02,<sp/><sp/>4.510e-02,<sp/><sp/>7.866e-01,<sp/><sp/>4.841e-01,<sp/>-1.301e-01,<sp/><sp/>1.086e-01,<sp/><sp/>2.596e-01,<sp/><sp/>6.398e-02,<sp/><sp/>3.389e+01,<sp/><sp/>1.695e-01,<sp/><sp/>3.170e-01,<sp/>-9.295e-02,<sp/><sp/>1.799e-01,<sp/><sp/>9.769e-02,<sp/><sp/>1.268e-01,<sp/><sp/>1.382e-01,<sp/><sp/>3.069e+01,<sp/><sp/>1.109e+01,<sp/><sp/>5.443e+00,<sp/><sp/>3.550e+00,<sp/><sp/>2.419e+00,<sp/><sp/>1.081e+00,<sp/><sp/>2.283e+00,<sp/><sp/>1.550e+00,<sp/><sp/>1.925e-01,<sp/><sp/>1.964e+01,<sp/><sp/>7.697e+00,<sp/><sp/>2.251e+00,<sp/>-4.525e-02,<sp/><sp/>3.601e+00,<sp/><sp/>3.405e+00,<sp/><sp/>1.726e+00,<sp/><sp/>7.588e-01,<sp/><sp/>6.519e-01},</highlight></codeline>
+<codeline lineno="478"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><sp/>1.880e+00,<sp/><sp/>6.118e-01,<sp/><sp/>2.570e-01,<sp/><sp/>2.307e-01,<sp/><sp/>2.984e-01,<sp/><sp/>2.227e-02,<sp/><sp/>1.608e-01,<sp/><sp/>1.621e-01,<sp/><sp/>1.307e-01,<sp/><sp/>1.695e-01,<sp/><sp/>1.065e+01,<sp/><sp/>2.725e-01,<sp/>-6.522e-02,<sp/><sp/>1.548e-01,<sp/><sp/>1.478e-01,<sp/><sp/>9.862e-03,<sp/><sp/>9.553e-02,<sp/><sp/>7.679e+00,<sp/><sp/>4.021e+00,<sp/><sp/>2.433e+00,<sp/>-1.328e-01,<sp/><sp/>5.552e-01,<sp/><sp/>7.123e-02,<sp/><sp/>5.451e-01,<sp/>-3.091e-02,<sp/><sp/>2.459e-01,<sp/><sp/>7.697e+00,<sp/><sp/>3.225e+00,<sp/><sp/>3.034e+00,<sp/><sp/>5.422e-01,<sp/><sp/>4.536e-01,<sp/><sp/>5.774e-01,<sp/><sp/>6.473e-01,<sp/><sp/>3.936e-01,<sp/><sp/>2.929e-01},</highlight></codeline>
+<codeline lineno="479"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><sp/>3.344e-01,<sp/>-4.265e-02,<sp/>-8.089e-02,<sp/>-6.225e-02,<sp/><sp/>1.013e-01,<sp/>-9.328e-03,<sp/>-7.429e-02,<sp/><sp/>6.022e-02,<sp/><sp/>9.032e-03,<sp/><sp/>3.170e-01,<sp/><sp/>2.725e-01,<sp/><sp/>1.569e+00,<sp/><sp/>6.887e-02,<sp/><sp/>3.188e-02,<sp/><sp/>4.178e-02,<sp/><sp/>2.905e-02,<sp/><sp/>2.563e-02,<sp/><sp/>5.744e+00,<sp/><sp/>3.890e+00,<sp/><sp/>1.481e+00,<sp/><sp/>6.228e-01,<sp/><sp/>6.870e-01,<sp/><sp/>4.105e-01,<sp/><sp/>2.240e-01,<sp/><sp/>2.206e-01,<sp/><sp/>1.153e-01,<sp/><sp/>4.737e+00,<sp/><sp/>1.506e+00,<sp/><sp/>1.496e+00,<sp/><sp/>5.007e-01,<sp/><sp/>5.180e-01,<sp/><sp/>3.730e-01,<sp/><sp/>5.800e-02,<sp/>-1.421e-02,<sp/><sp/>3.510e-02},</highlight></codeline>
+<codeline lineno="480"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><sp/>4.448e-02,<sp/><sp/>1.349e-01,<sp/>-6.037e-02,<sp/><sp/>6.965e-02,<sp/><sp/>6.718e-02,<sp/><sp/>1.868e-02,<sp/><sp/>7.812e-02,<sp/><sp/>4.793e-02,<sp/><sp/>3.610e-02,<sp/>-9.295e-02,<sp/>-6.522e-02,<sp/><sp/>6.887e-02,<sp/><sp/>1.551e+00,<sp/>-2.580e-02,<sp/><sp/>1.736e-02,<sp/><sp/>1.262e-02,<sp/><sp/>5.626e-03,<sp/><sp/>3.126e+00,<sp/><sp/>1.117e+00,<sp/><sp/>8.714e-01,<sp/><sp/>4.985e-01,<sp/><sp/>3.110e-01,<sp/><sp/>3.572e-02,<sp/><sp/>1.403e-01,<sp/>-5.539e-02,<sp/><sp/>3.444e-02,<sp/><sp/>2.197e+00,<sp/><sp/>6.843e-01,<sp/><sp/>4.186e-01,<sp/><sp/>5.209e-02,<sp/><sp/>3.201e-01,<sp/>-1.950e-01,<sp/><sp/>1.234e-01,<sp/><sp/>1.434e-02,<sp/><sp/>4.487e-02},</highlight></codeline>
+<codeline lineno="481"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>-2.987e-01,<sp/>-4.382e-02,<sp/>-9.574e-02,<sp/>-6.044e-02,<sp/>-7.578e-02,<sp/>-7.923e-03,<sp/>-1.358e-01,<sp/><sp/>1.545e-03,<sp/>-1.228e-02,<sp/><sp/>1.799e-01,<sp/><sp/>1.548e-01,<sp/><sp/>3.188e-02,<sp/>-2.580e-02,<sp/><sp/>1.367e+00,<sp/><sp/>8.442e-02,<sp/><sp/>2.875e-02,<sp/><sp/>9.687e-05,<sp/><sp/>1.335e+00,<sp/><sp/>1.350e+00,<sp/><sp/>5.337e-01,<sp/><sp/>1.323e-02,<sp/>-4.483e-02,<sp/><sp/>8.300e-02,<sp/>-1.147e-02,<sp/>-5.401e-02,<sp/><sp/>2.307e-02,<sp/><sp/>1.808e+00,<sp/><sp/>8.043e-01,<sp/><sp/>7.381e-01,<sp/><sp/>2.077e-01,<sp/><sp/>3.349e-01,<sp/><sp/>2.752e-01,<sp/><sp/>1.078e-02,<sp/>-7.139e-02,<sp/><sp/>6.289e-02},</highlight></codeline>
+<codeline lineno="482"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><sp/>2.694e-01,<sp/><sp/>3.364e-02,<sp/><sp/>5.896e-02,<sp/><sp/>5.656e-02,<sp/><sp/>5.297e-02,<sp/><sp/>6.328e-02,<sp/><sp/>2.560e-02,<sp/><sp/>5.461e-02,<sp/><sp/>1.525e-02,<sp/><sp/>9.769e-02,<sp/><sp/>1.478e-01,<sp/><sp/>4.178e-02,<sp/><sp/>1.736e-02,<sp/><sp/>8.442e-02,<sp/><sp/>4.210e-01,<sp/><sp/>1.788e-02,<sp/><sp/>9.836e-03,<sp/><sp/>1.847e+00,<sp/><sp/>6.806e-01,<sp/><sp/>4.735e-01,<sp/><sp/>2.982e-01,<sp/><sp/>4.273e-02,<sp/><sp/>3.106e-02,<sp/><sp/>1.110e-01,<sp/><sp/>1.134e-01,<sp/><sp/>3.080e-02,<sp/>-1.615e-01,<sp/><sp/>3.396e-01,<sp/><sp/>5.884e-01,<sp/>-3.695e-01,<sp/><sp/>1.059e-01,<sp/><sp/>1.665e-01,<sp/><sp/>1.077e-01,<sp/>-1.459e-02,<sp/>-1.888e-02},</highlight></codeline>
+<codeline lineno="483"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><sp/>1.260e-01,<sp/>-3.717e-02,<sp/><sp/>2.698e-02,<sp/><sp/>3.464e-02,<sp/><sp/>6.711e-03,<sp/>-1.397e-02,<sp/>-6.686e-03,<sp/>-2.067e-03,<sp/>-9.855e-04,<sp/><sp/>1.268e-01,<sp/><sp/>9.862e-03,<sp/><sp/>2.905e-02,<sp/><sp/>1.262e-02,<sp/><sp/>2.875e-02,<sp/><sp/>1.788e-02,<sp/><sp/>1.963e-01,<sp/><sp/>7.539e-03,<sp/><sp/>2.338e+00,<sp/><sp/>8.413e-01,<sp/><sp/>3.462e-01,<sp/><sp/>1.953e-01,<sp/><sp/>1.892e-01,<sp/><sp/>1.745e-01,<sp/><sp/>1.325e-01,<sp/><sp/>7.361e-02,<sp/><sp/>2.034e-02,<sp/><sp/>8.974e-01,<sp/><sp/>4.166e-01,<sp/>-4.042e-02,<sp/><sp/>2.688e-01,<sp/><sp/>1.929e-01,<sp/><sp/>1.594e-01,<sp/>-9.120e-03,<sp/>-5.394e-03,<sp/>-3.052e-02},</highlight></codeline>
+<codeline lineno="484"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><sp/>5.901e-02,<sp/><sp/>1.387e-01,<sp/>-3.851e-03,<sp/><sp/>4.602e-02,<sp/><sp/>3.982e-02,<sp/><sp/>2.530e-02,<sp/><sp/>5.997e-02,<sp/><sp/>3.570e-02,<sp/><sp/>1.887e-02,<sp/><sp/>1.382e-01,<sp/><sp/>9.553e-02,<sp/><sp/>2.563e-02,<sp/><sp/>5.626e-03,<sp/><sp/>9.687e-05,<sp/><sp/>9.836e-03,<sp/><sp/>7.539e-03,<sp/><sp/>1.802e-01,<sp/><sp/>1.808e+00,<sp/><sp/>7.207e-01,<sp/><sp/>3.075e-01,<sp/><sp/>1.381e-01,<sp/><sp/>2.307e-01,<sp/><sp/>1.446e-01,<sp/><sp/>1.177e-01,<sp/><sp/>9.770e-02,<sp/><sp/>1.878e-02,<sp/><sp/>1.926e+00,<sp/><sp/>6.131e-01,<sp/><sp/>1.384e-01,<sp/><sp/>1.658e-01,<sp/><sp/>1.922e-01,<sp/><sp/>1.862e-01,<sp/><sp/>4.945e-02,<sp/><sp/>6.610e-02,<sp/><sp/>8.595e-04},</highlight></codeline>
+<codeline lineno="485"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><sp/>9.748e-01,<sp/>-3.834e+00,<sp/>-1.905e+00,<sp/><sp/>4.640e+00,<sp/>-2.558e+00,<sp/>-2.935e+00,<sp/>-5.182e-01,<sp/><sp/>8.978e-01,<sp/><sp/>4.529e-01,<sp/><sp/>3.069e+01,<sp/><sp/>7.679e+00,<sp/><sp/>5.744e+00,<sp/><sp/>3.126e+00,<sp/><sp/>1.335e+00,<sp/><sp/>1.847e+00,<sp/><sp/>2.338e+00,<sp/><sp/>1.808e+00,<sp/><sp/>2.824e+03,<sp/><sp/>3.024e+02,<sp/><sp/>1.459e+02,<sp/><sp/>9.754e+01,<sp/><sp/>4.589e+01,<sp/><sp/>4.353e+01,<sp/><sp/>3.050e+01,<sp/><sp/>1.937e+01,<sp/><sp/>7.697e+00,<sp/>-8.877e+01,<sp/>-6.070e+00,<sp/>-1.386e+01,<sp/>-1.259e+00,<sp/>-4.646e+00,<sp/><sp/>8.539e+00,<sp/><sp/>2.618e+00,<sp/><sp/>1.652e+00,<sp/>-1.745e+00},</highlight></codeline>
+<codeline lineno="486"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><sp/>2.539e+00,<sp/>-6.039e-01,<sp/><sp/>2.467e+00,<sp/><sp/>2.660e+00,<sp/>-1.555e-01,<sp/>-5.991e-01,<sp/><sp/>1.447e+00,<sp/><sp/>2.018e+00,<sp/><sp/>5.710e-01,<sp/><sp/>1.109e+01,<sp/><sp/>4.021e+00,<sp/><sp/>3.890e+00,<sp/><sp/>1.117e+00,<sp/><sp/>1.350e+00,<sp/><sp/>6.806e-01,<sp/><sp/>8.413e-01,<sp/><sp/>7.207e-01,<sp/><sp/>3.024e+02,<sp/><sp/>1.042e+03,<sp/><sp/>7.540e+01,<sp/><sp/>2.747e+01,<sp/><sp/>2.751e+01,<sp/><sp/>1.590e+01,<sp/><sp/>1.916e+01,<sp/><sp/>5.982e+00,<sp/><sp/>3.532e+00,<sp/><sp/>8.649e+00,<sp/><sp/>4.793e+01,<sp/>-1.678e+01,<sp/>-3.978e+00,<sp/><sp/>8.847e+00,<sp/>-1.657e+00,<sp/><sp/>3.425e-01,<sp/>-4.205e+00,<sp/>-2.627e+00},</highlight></codeline>
+<codeline lineno="487"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><sp/>1.636e+00,<sp/>-7.556e-02,<sp/>-1.072e+00,<sp/><sp/>3.392e-01,<sp/><sp/>4.498e-01,<sp/><sp/>2.816e-01,<sp/>-1.386e-01,<sp/><sp/>4.058e-01,<sp/><sp/>3.177e-01,<sp/><sp/>5.443e+00,<sp/><sp/>2.433e+00,<sp/><sp/>1.481e+00,<sp/><sp/>8.714e-01,<sp/><sp/>5.337e-01,<sp/><sp/>4.735e-01,<sp/><sp/>3.462e-01,<sp/><sp/>3.075e-01,<sp/><sp/>1.459e+02,<sp/><sp/>7.540e+01,<sp/><sp/>1.858e+02,<sp/><sp/>9.442e+00,<sp/><sp/>8.573e+00,<sp/><sp/>7.382e+00,<sp/><sp/>7.502e+00,<sp/><sp/>4.335e+00,<sp/><sp/>1.337e+00,<sp/><sp/>2.423e+01,<sp/><sp/>1.239e+01,<sp/><sp/>8.685e+00,<sp/>-4.708e-01,<sp/><sp/>5.850e-02,<sp/><sp/>4.224e+00,<sp/><sp/>4.170e+00,<sp/><sp/>1.368e+00,<sp/><sp/>8.123e-01},</highlight></codeline>
+<codeline lineno="488"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><sp/>5.280e-01,<sp/><sp/>6.097e-01,<sp/><sp/>4.551e-01,<sp/><sp/>1.088e+00,<sp/><sp/>3.620e-01,<sp/><sp/>3.168e-01,<sp/><sp/>6.158e-01,<sp/><sp/>9.986e-01,<sp/><sp/>2.693e-01,<sp/><sp/>3.550e+00,<sp/>-1.328e-01,<sp/><sp/>6.228e-01,<sp/><sp/>4.985e-01,<sp/><sp/>1.323e-02,<sp/><sp/>2.982e-01,<sp/><sp/>1.953e-01,<sp/><sp/>1.381e-01,<sp/><sp/>9.754e+01,<sp/><sp/>2.747e+01,<sp/><sp/>9.442e+00,<sp/><sp/>8.524e+01,<sp/><sp/>2.010e+00,<sp/><sp/>4.188e+00,<sp/><sp/>4.536e+00,<sp/><sp/>2.028e+00,<sp/><sp/>5.111e-01,<sp/><sp/>9.498e+00,<sp/><sp/>4.248e+00,<sp/><sp/>6.380e+00,<sp/>-1.649e+00,<sp/>-1.645e+00,<sp/>-8.373e-01,<sp/><sp/>3.996e-01,<sp/><sp/>5.892e-01,<sp/>-4.721e-01},</highlight></codeline>
+<codeline lineno="489"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><sp/>2.268e+00,<sp/>-1.106e+00,<sp/>-5.938e-01,<sp/><sp/>5.405e-02,<sp/>-4.894e-01,<sp/>-9.581e-02,<sp/>-1.525e-01,<sp/>-2.130e-01,<sp/>-8.758e-02,<sp/><sp/>2.419e+00,<sp/><sp/>5.552e-01,<sp/><sp/>6.870e-01,<sp/><sp/>3.110e-01,<sp/>-4.483e-02,<sp/><sp/>4.273e-02,<sp/><sp/>1.892e-01,<sp/><sp/>2.307e-01,<sp/><sp/>4.589e+01,<sp/><sp/>2.751e+01,<sp/><sp/>8.573e+00,<sp/><sp/>2.010e+00,<sp/><sp/>5.121e+01,<sp/><sp/>2.734e+00,<sp/><sp/>3.613e+00,<sp/><sp/>1.028e+00,<sp/><sp/>6.643e-01,<sp/><sp/>2.763e+01,<sp/><sp/>8.954e+00,<sp/><sp/>5.692e+00,<sp/><sp/>6.059e+00,<sp/><sp/>6.030e-01,<sp/><sp/>4.594e-01,<sp/><sp/>2.034e+00,<sp/><sp/>1.014e+00,<sp/>-9.588e-02},</highlight></codeline>
+<codeline lineno="490"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><sp/>5.849e-01,<sp/><sp/>1.309e+00,<sp/><sp/>2.695e-01,<sp/><sp/>7.109e-01,<sp/><sp/>5.691e-01,<sp/><sp/>2.952e-01,<sp/><sp/>1.692e-01,<sp/><sp/>1.522e-01,<sp/>-2.391e-02,<sp/><sp/>1.081e+00,<sp/><sp/>7.123e-02,<sp/><sp/>4.105e-01,<sp/><sp/>3.572e-02,<sp/><sp/>8.300e-02,<sp/><sp/>3.106e-02,<sp/><sp/>1.745e-01,<sp/><sp/>1.446e-01,<sp/><sp/>4.353e+01,<sp/><sp/>1.590e+01,<sp/><sp/>7.382e+00,<sp/><sp/>4.188e+00,<sp/><sp/>2.734e+00,<sp/><sp/>2.173e+01,<sp/><sp/>2.284e+00,<sp/><sp/>1.969e+00,<sp/><sp/>4.468e-01,<sp/>-4.314e+00,<sp/>-1.931e+00,<sp/>-1.364e+00,<sp/>-1.428e+00,<sp/>-1.213e+00,<sp/><sp/>1.769e-01,<sp/>-1.313e+00,<sp/>-8.547e-02,<sp/>-1.523e-01},</highlight></codeline>
+<codeline lineno="491"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><sp/>7.310e-01,<sp/>-1.334e-01,<sp/><sp/>8.580e-02,<sp/>-1.490e-03,<sp/><sp/>1.269e-01,<sp/>-7.864e-02,<sp/>-2.401e-01,<sp/><sp/>4.763e-02,<sp/><sp/>3.330e-02,<sp/><sp/>2.283e+00,<sp/><sp/>5.451e-01,<sp/><sp/>2.240e-01,<sp/><sp/>1.403e-01,<sp/>-1.147e-02,<sp/><sp/>1.110e-01,<sp/><sp/>1.325e-01,<sp/><sp/>1.177e-01,<sp/><sp/>3.050e+01,<sp/><sp/>1.916e+01,<sp/><sp/>7.502e+00,<sp/><sp/>4.536e+00,<sp/><sp/>3.613e+00,<sp/><sp/>2.284e+00,<sp/><sp/>1.423e+01,<sp/><sp/>1.342e+00,<sp/><sp/>4.415e-01,<sp/>-1.221e+01,<sp/>-1.069e+00,<sp/><sp/>5.499e-02,<sp/><sp/>6.887e-01,<sp/><sp/>1.233e+00,<sp/>-9.276e-01,<sp/>-1.258e-01,<sp/>-2.687e-01,<sp/>-3.582e-01},</highlight></codeline>
+<codeline lineno="492"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><sp/>2.262e-01,<sp/>-1.463e-01,<sp/>-1.648e-01,<sp/>-1.955e-01,<sp/>-2.423e-01,<sp/><sp/>1.292e-01,<sp/>-8.024e-02,<sp/>-1.076e-01,<sp/>-1.968e-03,<sp/><sp/>1.550e+00,<sp/>-3.091e-02,<sp/><sp/>2.206e-01,<sp/>-5.539e-02,<sp/>-5.401e-02,<sp/><sp/>1.134e-01,<sp/><sp/>7.361e-02,<sp/><sp/>9.770e-02,<sp/><sp/>1.937e+01,<sp/><sp/>5.982e+00,<sp/><sp/>4.335e+00,<sp/><sp/>2.028e+00,<sp/><sp/>1.028e+00,<sp/><sp/>1.969e+00,<sp/><sp/>1.342e+00,<sp/><sp/>1.092e+01,<sp/><sp/>2.084e-01,<sp/><sp/>7.471e+00,<sp/>-1.163e+00,<sp/><sp/>1.286e+00,<sp/>-7.159e-01,<sp/>-1.057e+00,<sp/>-6.688e-02,<sp/>-1.391e-01,<sp/><sp/>2.553e-01,<sp/><sp/>3.457e-02},</highlight></codeline>
+<codeline lineno="493"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>-4.796e-02,<sp/>-1.022e-01,<sp/>-6.158e-02,<sp/>-9.825e-02,<sp/>-1.769e-02,<sp/>-4.261e-02,<sp/><sp/>1.439e-02,<sp/><sp/>2.424e-02,<sp/><sp/>1.195e-02,<sp/><sp/>1.925e-01,<sp/><sp/>2.459e-01,<sp/><sp/>1.153e-01,<sp/><sp/>3.444e-02,<sp/><sp/>2.307e-02,<sp/><sp/>3.080e-02,<sp/><sp/>2.034e-02,<sp/><sp/>1.878e-02,<sp/><sp/>7.697e+00,<sp/><sp/>3.532e+00,<sp/><sp/>1.337e+00,<sp/><sp/>5.111e-01,<sp/><sp/>6.643e-01,<sp/><sp/>4.468e-01,<sp/><sp/>4.415e-01,<sp/><sp/>2.084e-01,<sp/><sp/>1.022e+00,<sp/>-3.246e-01,<sp/>-1.393e+00,<sp/>-3.462e-02,<sp/><sp/>6.254e-02,<sp/><sp/>3.782e-02,<sp/>-1.491e-01,<sp/>-2.556e-01,<sp/><sp/>9.459e-02,<sp/><sp/>1.139e-03},</highlight></codeline>
+<codeline lineno="494"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><sp/>2.988e+01,<sp/><sp/>1.844e+01,<sp/><sp/>7.945e+00,<sp/><sp/>4.690e+00,<sp/><sp/>6.649e+00,<sp/><sp/>5.991e+00,<sp/><sp/>8.471e+00,<sp/><sp/>3.406e+00,<sp/><sp/>7.086e-01,<sp/><sp/>1.964e+01,<sp/><sp/>7.697e+00,<sp/><sp/>4.737e+00,<sp/><sp/>2.197e+00,<sp/><sp/>1.808e+00,<sp/>-1.615e-01,<sp/><sp/>8.974e-01,<sp/><sp/>1.926e+00,<sp/>-8.877e+01,<sp/><sp/>8.649e+00,<sp/><sp/>2.423e+01,<sp/><sp/>9.498e+00,<sp/><sp/>2.763e+01,<sp/>-4.314e+00,<sp/>-1.221e+01,<sp/><sp/>7.471e+00,<sp/>-3.246e-01,<sp/><sp/>3.807e+03,<sp/><sp/>4.977e+02,<sp/><sp/>2.248e+02,<sp/><sp/>1.486e+02,<sp/><sp/>8.531e+01,<sp/><sp/>1.086e+02,<sp/><sp/>7.407e+01,<sp/><sp/>3.843e+01,<sp/><sp/>1.034e+01},</highlight></codeline>
+<codeline lineno="495"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><sp/>1.016e+01,<sp/><sp/>1.374e+00,<sp/><sp/>4.261e+00,<sp/><sp/>6.216e-01,<sp/><sp/>8.477e-01,<sp/><sp/>2.029e+00,<sp/><sp/>1.040e+00,<sp/><sp/>6.287e-01,<sp/><sp/>2.793e-02,<sp/><sp/>7.697e+00,<sp/><sp/>3.225e+00,<sp/><sp/>1.506e+00,<sp/><sp/>6.843e-01,<sp/><sp/>8.043e-01,<sp/><sp/>3.396e-01,<sp/><sp/>4.166e-01,<sp/><sp/>6.131e-01,<sp/>-6.070e+00,<sp/><sp/>4.793e+01,<sp/><sp/>1.239e+01,<sp/><sp/>4.248e+00,<sp/><sp/>8.954e+00,<sp/>-1.931e+00,<sp/>-1.069e+00,<sp/>-1.163e+00,<sp/>-1.393e+00,<sp/><sp/>4.977e+02,<sp/><sp/>8.367e+02,<sp/><sp/>1.077e+02,<sp/><sp/>4.491e+01,<sp/><sp/>3.743e+01,<sp/><sp/>4.234e+01,<sp/><sp/>2.289e+01,<sp/><sp/>1.565e+01,<sp/><sp/>1.150e+00},</highlight></codeline>
+<codeline lineno="496"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><sp/>3.569e+00,<sp/>-2.235e+00,<sp/>-1.647e+00,<sp/>-1.148e+00,<sp/>-1.073e+00,<sp/>-2.288e-01,<sp/>-8.238e-01,<sp/>-1.064e+00,<sp/><sp/>1.750e-01,<sp/><sp/>2.251e+00,<sp/><sp/>3.034e+00,<sp/><sp/>1.496e+00,<sp/><sp/>4.186e-01,<sp/><sp/>7.381e-01,<sp/><sp/>5.884e-01,<sp/>-4.042e-02,<sp/><sp/>1.384e-01,<sp/>-1.386e+01,<sp/>-1.678e+01,<sp/><sp/>8.685e+00,<sp/><sp/>6.380e+00,<sp/><sp/>5.692e+00,<sp/>-1.364e+00,<sp/><sp/>5.499e-02,<sp/><sp/>1.286e+00,<sp/>-3.462e-02,<sp/><sp/>2.248e+02,<sp/><sp/>1.077e+02,<sp/><sp/>3.615e+02,<sp/><sp/>3.131e+01,<sp/><sp/>2.019e+01,<sp/><sp/>2.378e+01,<sp/><sp/>1.686e+01,<sp/><sp/>7.598e+00,<sp/><sp/>2.951e+00},</highlight></codeline>
+<codeline lineno="497"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><sp/>3.200e+00,<sp/>-2.994e-01,<sp/>-7.262e-01,<sp/>-8.757e-02,<sp/><sp/>1.894e-01,<sp/><sp/>1.814e-01,<sp/><sp/>5.709e-01,<sp/><sp/>8.259e-01,<sp/>-2.323e-01,<sp/>-4.525e-02,<sp/><sp/>5.422e-01,<sp/><sp/>5.007e-01,<sp/><sp/>5.209e-02,<sp/><sp/>2.077e-01,<sp/>-3.695e-01,<sp/><sp/>2.688e-01,<sp/><sp/>1.658e-01,<sp/>-1.259e+00,<sp/>-3.978e+00,<sp/>-4.708e-01,<sp/>-1.649e+00,<sp/><sp/>6.059e+00,<sp/>-1.428e+00,<sp/><sp/>6.887e-01,<sp/>-7.159e-01,<sp/><sp/>6.254e-02,<sp/><sp/>1.486e+02,<sp/><sp/>4.491e+01,<sp/><sp/>3.131e+01,<sp/><sp/>1.707e+02,<sp/><sp/>1.046e+01,<sp/><sp/>1.102e+01,<sp/><sp/>1.036e+01,<sp/><sp/>4.656e+00,<sp/><sp/>1.221e+00},</highlight></codeline>
+<codeline lineno="498"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><sp/>2.509e+00,<sp/>-1.966e+00,<sp/><sp/>5.010e-01,<sp/>-1.337e-01,<sp/><sp/>2.055e-01,<sp/><sp/>4.744e-01,<sp/><sp/>6.653e-02,<sp/><sp/>5.400e-01,<sp/><sp/>1.188e-01,<sp/><sp/>3.601e+00,<sp/><sp/>4.536e-01,<sp/><sp/>5.180e-01,<sp/><sp/>3.201e-01,<sp/><sp/>3.349e-01,<sp/><sp/>1.059e-01,<sp/><sp/>1.929e-01,<sp/><sp/>1.922e-01,<sp/>-4.646e+00,<sp/><sp/>8.847e+00,<sp/><sp/>5.850e-02,<sp/>-1.645e+00,<sp/><sp/>6.030e-01,<sp/>-1.213e+00,<sp/><sp/>1.233e+00,<sp/>-1.057e+00,<sp/><sp/>3.782e-02,<sp/><sp/>8.531e+01,<sp/><sp/>3.743e+01,<sp/><sp/>2.019e+01,<sp/><sp/>1.046e+01,<sp/><sp/>8.966e+01,<sp/><sp/>8.082e+00,<sp/><sp/>5.534e+00,<sp/><sp/>2.890e+00,<sp/><sp/>3.719e-01},</highlight></codeline>
+<codeline lineno="499"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/><sp/>2.515e-01,<sp/>-3.717e-01,<sp/>-4.873e-01,<sp/><sp/>1.582e-01,<sp/>-2.433e-01,<sp/>-1.574e-02,<sp/>-8.294e-01,<sp/>-4.979e-01,<sp/>-1.383e-01,<sp/><sp/>3.405e+00,<sp/><sp/>5.774e-01,<sp/><sp/>3.730e-01,<sp/>-1.950e-01,<sp/><sp/>2.752e-01,<sp/><sp/>1.665e-01,<sp/><sp/>1.594e-01,<sp/><sp/>1.862e-01,<sp/><sp/>8.539e+00,<sp/>-1.657e+00,<sp/><sp/>4.224e+00,<sp/>-8.373e-01,<sp/><sp/>4.594e-01,<sp/><sp/>1.769e-01,<sp/>-9.276e-01,<sp/>-6.688e-02,<sp/>-1.491e-01,<sp/><sp/>1.086e+02,<sp/><sp/>4.234e+01,<sp/><sp/>2.378e+01,<sp/><sp/>1.102e+01,<sp/><sp/>8.082e+00,<sp/><sp/>6.689e+01,<sp/><sp/>4.741e+00,<sp/><sp/>3.107e+00,<sp/><sp/>6.005e-01},</highlight></codeline>
+<codeline lineno="500"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>-9.975e-01,<sp/>-9.804e-01,<sp/>-3.370e-01,<sp/>-8.644e-01,<sp/>-1.080e+00,<sp/>-7.158e-04,<sp/>-5.594e-01,<sp/>-4.912e-01,<sp/>-1.740e-01,<sp/><sp/>1.726e+00,<sp/><sp/>6.473e-01,<sp/><sp/>5.800e-02,<sp/><sp/>1.234e-01,<sp/><sp/>1.078e-02,<sp/><sp/>1.077e-01,<sp/>-9.120e-03,<sp/><sp/>4.945e-02,<sp/><sp/>2.618e+00,<sp/><sp/>3.425e-01,<sp/><sp/>4.170e+00,<sp/><sp/>3.996e-01,<sp/><sp/>2.034e+00,<sp/>-1.313e+00,<sp/>-1.258e-01,<sp/>-1.391e-01,<sp/>-2.556e-01,<sp/><sp/>7.407e+01,<sp/><sp/>2.289e+01,<sp/><sp/>1.686e+01,<sp/><sp/>1.036e+01,<sp/><sp/>5.534e+00,<sp/><sp/>4.741e+00,<sp/><sp/>4.394e+01,<sp/><sp/>3.774e+00,<sp/><sp/>7.295e-01},</highlight></codeline>
+<codeline lineno="501"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>-6.538e-01,<sp/>-8.624e-01,<sp/>-1.812e-01,<sp/>-1.001e-01,<sp/><sp/>1.479e-01,<sp/><sp/>1.049e-01,<sp/>-7.201e-02,<sp/>-2.559e-01,<sp/>-2.560e-02,<sp/><sp/>7.588e-01,<sp/><sp/>3.936e-01,<sp/>-1.421e-02,<sp/><sp/>1.434e-02,<sp/>-7.139e-02,<sp/>-1.459e-02,<sp/>-5.394e-03,<sp/><sp/>6.610e-02,<sp/><sp/>1.652e+00,<sp/>-4.205e+00,<sp/><sp/>1.368e+00,<sp/><sp/>5.892e-01,<sp/><sp/>1.014e+00,<sp/>-8.547e-02,<sp/>-2.687e-01,<sp/><sp/>2.553e-01,<sp/><sp/>9.459e-02,<sp/><sp/>3.843e+01,<sp/><sp/>1.565e+01,<sp/><sp/>7.598e+00,<sp/><sp/>4.656e+00,<sp/><sp/>2.890e+00,<sp/><sp/>3.107e+00,<sp/><sp/>3.774e+00,<sp/><sp/>2.198e+01,<sp/><sp/>1.053e-01},</highlight></codeline>
+<codeline lineno="502"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{<sp/>-5.628e-02,<sp/>-2.096e-02,<sp/>-1.045e-01,<sp/>-3.278e-01,<sp/>-6.933e-02,<sp/>-2.506e-01,<sp/>-2.554e-01,<sp/>-1.470e-01,<sp/>-3.138e-02,<sp/><sp/>6.519e-01,<sp/><sp/>2.929e-01,<sp/><sp/>3.510e-02,<sp/><sp/>4.487e-02,<sp/><sp/>6.289e-02,<sp/>-1.888e-02,<sp/>-3.052e-02,<sp/><sp/>8.595e-04,<sp/>-1.745e+00,<sp/>-2.627e+00,<sp/><sp/>8.123e-01,<sp/>-4.721e-01,<sp/>-9.588e-02,<sp/>-1.523e-01,<sp/>-3.582e-01,<sp/><sp/>3.457e-02,<sp/><sp/>1.139e-03,<sp/><sp/>1.034e+01,<sp/><sp/>1.150e+00,<sp/><sp/>2.951e+00,<sp/><sp/>1.221e+00,<sp/><sp/>3.719e-01,<sp/><sp/>6.005e-01,<sp/><sp/>7.295e-01,<sp/><sp/>1.053e-01,<sp/><sp/>5.661e+00},</highlight></codeline>
+<codeline lineno="503"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="504"><highlight class="normal"></highlight></codeline>
+<codeline lineno="505"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1ColliderBit_1_1Analysis_1a85634b0ca3817f602fa53630071879ae" kindref="member">set_covariance</ref>(BKGCOV);</highlight></codeline>
+<codeline lineno="506"><highlight class="normal"></highlight></codeline>
+<codeline lineno="507"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="508"><highlight class="normal"></highlight></codeline>
+<codeline lineno="509"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="510"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1ColliderBit_1_1Analysis__CMS__13TeV__0LEP__chargino__VV__VH__137invfb_1aecd47e87597276a1a4d20dcb076a6e94" kindref="member">analysis_specific_reset</ref>()</highlight></codeline>
+<codeline lineno="511"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="512"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/>&amp;pair<sp/>:<sp/>_counters)</highlight></codeline>
+<codeline lineno="513"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="514"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>pair.second.reset();</highlight></codeline>
+<codeline lineno="515"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="516"><highlight class="normal"></highlight></codeline>
+<codeline lineno="517"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="518"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="519"><highlight class="normal"></highlight></codeline>
+<codeline lineno="520"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Factory<sp/>fn</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="521"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="Analysis_8hpp_1a50d7854582501458d42e174bfe160f9d" kindref="member">DEFINE_ANALYSIS_FACTORY</ref>(CMS_13TeV_0LEP_chargino_VV_VH_137invfb)</highlight></codeline>
+<codeline lineno="522"><highlight class="normal"></highlight></codeline>
+<codeline lineno="523"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="524"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="ColliderBit/src/analyses/Analysis_CMS_13TeV_0LEP_chargino_VV_VH_137invfb.cpp"/>
+  </compounddef>
+</doxygen>

@@ -5,7 +5,7 @@
     <includes local="no">string</includes>
     <includes refid="wrapper__Pythia__decl_8h" local="yes">wrapper_Pythia_decl.h</includes>
     <includes local="yes">HepMC3/GenEvent.h</includes>
-    <includes refid="include_2gambit_2Backends_2backend__types_2Pythia__8__212_2identification_8hpp" local="yes">identification.hpp</includes>
+    <includes refid="include_2gambit_2Backends_2backend__types_2Pythia__8__312_2identification_8hpp" local="yes">identification.hpp</includes>
     <includes refid="include_2gambit_2Backends_2backend__undefs_8hpp" local="yes">gambit/Backends/backend_undefs.hpp</includes>
     <includedby refid="wrapper__GAMBIT__hepmc__writer_8h" local="yes">wrapper_GAMBIT_hepmc_writer.h</includedby>
     <incdepgraph>
@@ -13,7 +13,7 @@
         <label>gambit/Backends/abstractbase.hpp</label>
         <link refid="include_2gambit_2Backends_2abstractbase_8hpp_source"/>
       </node>
-      <node id="35">
+      <node id="38">
         <label>abstract_AlphaEM.h</label>
         <link refid="abstract__AlphaEM_8h_source"/>
         <childnode refid="4" relation="include">
@@ -26,14 +26,14 @@
         </childnode>
         <childnode refid="9" relation="include">
         </childnode>
-        <childnode refid="23" relation="include">
+        <childnode refid="18" relation="include">
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
       </node>
-      <node id="33">
+      <node id="36">
         <label>abstract_AlphaStrong.h</label>
         <link refid="abstract__AlphaStrong_8h_source"/>
         <childnode refid="4" relation="include">
@@ -51,18 +51,16 @@
         <childnode refid="12" relation="include">
         </childnode>
       </node>
-      <node id="45">
+      <node id="60">
         <label>abstract_BeamParticle.h</label>
         <link refid="abstract__BeamParticle_8h_source"/>
         <childnode refid="4" relation="include">
         </childnode>
         <childnode refid="15" relation="include">
         </childnode>
-        <childnode refid="7" relation="include">
+        <childnode refid="31" relation="include">
         </childnode>
         <childnode refid="6" relation="include">
-        </childnode>
-        <childnode refid="26" relation="include">
         </childnode>
         <childnode refid="16" relation="include">
         </childnode>
@@ -70,24 +68,16 @@
         </childnode>
         <childnode refid="9" relation="include">
         </childnode>
-        <childnode refid="20" relation="include">
+        <childnode refid="47" relation="include">
         </childnode>
-        <childnode refid="23" relation="include">
-        </childnode>
-        <childnode refid="18" relation="include">
-        </childnode>
-        <childnode refid="25" relation="include">
-        </childnode>
-        <childnode refid="46" relation="include">
-        </childnode>
-        <childnode refid="48" relation="include">
+        <childnode refid="49" relation="include">
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
       </node>
-      <node id="31">
+      <node id="34">
         <label>abstract_CoupSM.h</label>
         <link refid="abstract__CoupSM_8h_source"/>
         <childnode refid="4" relation="include">
@@ -100,63 +90,13 @@
         </childnode>
         <childnode refid="9" relation="include">
         </childnode>
-        <childnode refid="23" relation="include">
-        </childnode>
-        <childnode refid="25" relation="include">
-        </childnode>
-        <childnode refid="32" relation="include">
-        </childnode>
-        <childnode refid="34" relation="include">
-        </childnode>
-        <childnode refid="10" relation="include">
-        </childnode>
-        <childnode refid="12" relation="include">
-        </childnode>
-      </node>
-      <node id="63">
-        <label>abstract_CoupSUSY.h</label>
-        <link refid="abstract__CoupSUSY_8h_source"/>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="15" relation="include">
-        </childnode>
-        <childnode refid="62" relation="include">
-        </childnode>
-        <childnode refid="16" relation="include">
-        </childnode>
-        <childnode refid="17" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
-        <childnode refid="58" relation="include">
-        </childnode>
-        <childnode refid="20" relation="include">
-        </childnode>
         <childnode refid="18" relation="include">
         </childnode>
-        <childnode refid="23" relation="include">
-        </childnode>
-        <childnode refid="28" relation="include">
-        </childnode>
-        <childnode refid="10" relation="include">
-        </childnode>
-        <childnode refid="12" relation="include">
-        </childnode>
-      </node>
-      <node id="29">
-        <label>abstract_Couplings.h</label>
-        <link refid="abstract__Couplings_8h_source"/>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="15" relation="include">
-        </childnode>
-        <childnode refid="16" relation="include">
-        </childnode>
-        <childnode refid="17" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
         <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
@@ -164,6 +104,38 @@
         </childnode>
       </node>
       <node id="41">
+        <label>abstract_CoupSUSY.h</label>
+        <link refid="abstract__CoupSUSY_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="40" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
+        <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="56">
         <label>abstract_DecayChannel.h</label>
         <link refid="abstract__DecayChannel_8h_source"/>
         <childnode refid="4" relation="include">
@@ -181,7 +153,7 @@
         <childnode refid="12" relation="include">
         </childnode>
       </node>
-      <node id="49">
+      <node id="50">
         <label>abstract_Event.h</label>
         <link refid="abstract__Event_8h_source"/>
         <childnode refid="4" relation="include">
@@ -200,31 +172,29 @@
         </childnode>
         <childnode refid="9" relation="include">
         </childnode>
-        <childnode refid="18" relation="include">
+        <childnode refid="26" relation="include">
         </childnode>
-        <childnode refid="50" relation="include">
+        <childnode refid="51" relation="include">
         </childnode>
-        <childnode refid="46" relation="include">
+        <childnode refid="47" relation="include">
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
       </node>
-      <node id="22">
+      <node id="29">
         <label>abstract_Info.h</label>
         <link refid="abstract__Info_8h_source"/>
         <childnode refid="4" relation="include">
         </childnode>
         <childnode refid="15" relation="include">
         </childnode>
-        <childnode refid="7" relation="include">
-        </childnode>
         <childnode refid="2" relation="include">
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="21" relation="include">
+        <childnode refid="20" relation="include">
         </childnode>
         <childnode refid="16" relation="include">
         </childnode>
@@ -232,12 +202,54 @@
         </childnode>
         <childnode refid="9" relation="include">
         </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
+        </childnode>
         <childnode refid="10" relation="include">
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
       </node>
-      <node id="51">
+      <node id="24">
+        <label>abstract_Logger.h</label>
+        <link refid="abstract__Logger_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="15" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="25" relation="include">
+        </childnode>
+        <childnode refid="16" relation="include">
+        </childnode>
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="52">
         <label>abstract_Particle.h</label>
         <link refid="abstract__Particle_8h_source"/>
         <childnode refid="4" relation="include">
@@ -254,18 +266,18 @@
         </childnode>
         <childnode refid="9" relation="include">
         </childnode>
-        <childnode refid="46" relation="include">
+        <childnode refid="47" relation="include">
         </childnode>
-        <childnode refid="48" relation="include">
+        <childnode refid="49" relation="include">
         </childnode>
-        <childnode refid="38" relation="include">
+        <childnode refid="53" relation="include">
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
       </node>
-      <node id="19">
+      <node id="27">
         <label>abstract_ParticleData.h</label>
         <link refid="abstract__ParticleData_8h_source"/>
         <childnode refid="4" relation="include">
@@ -274,9 +286,13 @@
         </childnode>
         <childnode refid="2" relation="include">
         </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
         <childnode refid="7" relation="include">
         </childnode>
         <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
         </childnode>
         <childnode refid="16" relation="include">
         </childnode>
@@ -284,24 +300,22 @@
         </childnode>
         <childnode refid="9" relation="include">
         </childnode>
-        <childnode refid="20" relation="include">
-        </childnode>
-        <childnode refid="23" relation="include">
-        </childnode>
-        <childnode refid="25" relation="include">
-        </childnode>
         <childnode refid="28" relation="include">
         </childnode>
-        <childnode refid="36" relation="include">
+        <childnode refid="18" relation="include">
         </childnode>
-        <childnode refid="38" relation="include">
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
       </node>
-      <node id="39">
+      <node id="54">
         <label>abstract_ParticleDataEntry.h</label>
         <link refid="abstract__ParticleDataEntry_8h_source"/>
         <childnode refid="4" relation="include">
@@ -316,15 +330,9 @@
         </childnode>
         <childnode refid="9" relation="include">
         </childnode>
-        <childnode refid="18" relation="include">
+        <childnode refid="26" relation="include">
         </childnode>
-        <childnode refid="40" relation="include">
-        </childnode>
-        <childnode refid="36" relation="include">
-        </childnode>
-        <childnode refid="20" relation="include">
-        </childnode>
-        <childnode refid="23" relation="include">
+        <childnode refid="55" relation="include">
         </childnode>
         <childnode refid="28" relation="include">
         </childnode>
@@ -333,7 +341,7 @@
         <childnode refid="12" relation="include">
         </childnode>
       </node>
-      <node id="65">
+      <node id="62">
         <label>abstract_PartonLevel.h</label>
         <link refid="abstract__PartonLevel_8h_source"/>
         <childnode refid="4" relation="include">
@@ -348,25 +356,11 @@
         </childnode>
         <childnode refid="9" relation="include">
         </childnode>
-        <childnode refid="20" relation="include">
+        <childnode refid="49" relation="include">
         </childnode>
-        <childnode refid="23" relation="include">
+        <childnode refid="59" relation="include">
         </childnode>
-        <childnode refid="18" relation="include">
-        </childnode>
-        <childnode refid="25" relation="include">
-        </childnode>
-        <childnode refid="44" relation="include">
-        </childnode>
-        <childnode refid="28" relation="include">
-        </childnode>
-        <childnode refid="52" relation="include">
-        </childnode>
-        <childnode refid="42" relation="include">
-        </childnode>
-        <childnode refid="48" relation="include">
-        </childnode>
-        <childnode refid="66" relation="include">
+        <childnode refid="63" relation="include">
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
@@ -398,38 +392,36 @@
         </childnode>
         <childnode refid="18" relation="include">
         </childnode>
-        <childnode refid="23" relation="include">
+        <childnode refid="26" relation="include">
         </childnode>
-        <childnode refid="42" relation="include">
+        <childnode refid="47" relation="include">
         </childnode>
-        <childnode refid="54" relation="include">
-        </childnode>
-        <childnode refid="36" relation="include">
-        </childnode>
-        <childnode refid="48" relation="include">
-        </childnode>
-        <childnode refid="20" relation="include">
-        </childnode>
-        <childnode refid="25" relation="include">
+        <childnode refid="49" relation="include">
         </childnode>
         <childnode refid="28" relation="include">
         </childnode>
-        <childnode refid="56" relation="include">
+        <childnode refid="22" relation="include">
         </childnode>
-        <childnode refid="46" relation="include">
+        <childnode refid="30" relation="include">
         </childnode>
-        <childnode refid="44" relation="include">
+        <childnode refid="33" relation="include">
         </childnode>
-        <childnode refid="64" relation="include">
+        <childnode refid="39" relation="include">
         </childnode>
-        <childnode refid="52" relation="include">
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
       </node>
-      <node id="67">
+      <node id="64">
         <label>abstract_ResonanceDecays.h</label>
         <link refid="abstract__ResonanceDecays_8h_source"/>
         <childnode refid="4" relation="include">
@@ -444,55 +436,21 @@
         </childnode>
         <childnode refid="9" relation="include">
         </childnode>
-        <childnode refid="20" relation="include">
-        </childnode>
-        <childnode refid="18" relation="include">
-        </childnode>
-        <childnode refid="25" relation="include">
-        </childnode>
-        <childnode refid="48" relation="include">
+        <childnode refid="49" relation="include">
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
       </node>
-      <node id="37">
-        <label>abstract_ResonanceWidths.h</label>
-        <link refid="abstract__ResonanceWidths_8h_source"/>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="15" relation="include">
-        </childnode>
-        <childnode refid="16" relation="include">
-        </childnode>
-        <childnode refid="17" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
-        <childnode refid="20" relation="include">
-        </childnode>
-        <childnode refid="23" relation="include">
-        </childnode>
-        <childnode refid="18" relation="include">
-        </childnode>
-        <childnode refid="28" relation="include">
-        </childnode>
-        <childnode refid="38" relation="include">
-        </childnode>
-        <childnode refid="10" relation="include">
-        </childnode>
-        <childnode refid="12" relation="include">
-        </childnode>
-      </node>
-      <node id="27">
+      <node id="32">
         <label>abstract_Rndm.h</label>
         <link refid="abstract__Rndm_8h_source"/>
         <childnode refid="4" relation="include">
         </childnode>
         <childnode refid="15" relation="include">
         </childnode>
-        <childnode refid="26" relation="include">
+        <childnode refid="31" relation="include">
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
@@ -509,7 +467,7 @@
         <childnode refid="12" relation="include">
         </childnode>
       </node>
-      <node id="57">
+      <node id="58">
         <label>abstract_SLHAinterface.h</label>
         <link refid="abstract__SLHAinterface_8h_source"/>
         <childnode refid="4" relation="include">
@@ -524,26 +482,28 @@
         </childnode>
         <childnode refid="9" relation="include">
         </childnode>
-        <childnode refid="20" relation="include">
-        </childnode>
-        <childnode refid="23" relation="include">
-        </childnode>
-        <childnode refid="25" relation="include">
-        </childnode>
         <childnode refid="28" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
         </childnode>
         <childnode refid="18" relation="include">
         </childnode>
-        <childnode refid="58" relation="include">
+        <childnode refid="26" relation="include">
         </childnode>
-        <childnode refid="61" relation="include">
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
       </node>
-      <node id="24">
+      <node id="21">
         <label>abstract_Settings.h</label>
         <link refid="abstract__Settings_8h_source"/>
         <childnode refid="4" relation="include">
@@ -552,31 +512,15 @@
         </childnode>
         <childnode refid="2" relation="include">
         </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
         <childnode refid="7" relation="include">
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="16" relation="include">
-        </childnode>
-        <childnode refid="17" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
+        <childnode refid="19" relation="include">
         </childnode>
         <childnode refid="20" relation="include">
-        </childnode>
-        <childnode refid="10" relation="include">
-        </childnode>
-        <childnode refid="12" relation="include">
-        </childnode>
-      </node>
-      <node id="55">
-        <label>abstract_SigmaProcess.h</label>
-        <link refid="abstract__SigmaProcess_8h_source"/>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="15" relation="include">
-        </childnode>
-        <childnode refid="2" relation="include">
         </childnode>
         <childnode refid="16" relation="include">
         </childnode>
@@ -584,60 +528,34 @@
         </childnode>
         <childnode refid="9" relation="include">
         </childnode>
-        <childnode refid="20" relation="include">
-        </childnode>
-        <childnode refid="23" relation="include">
-        </childnode>
-        <childnode refid="18" relation="include">
-        </childnode>
-        <childnode refid="25" relation="include">
-        </childnode>
-        <childnode refid="44" relation="include">
-        </childnode>
-        <childnode refid="28" relation="include">
-        </childnode>
-        <childnode refid="52" relation="include">
-        </childnode>
-        <childnode refid="56" relation="include">
-        </childnode>
-        <childnode refid="46" relation="include">
-        </childnode>
-        <childnode refid="48" relation="include">
-        </childnode>
-        <childnode refid="50" relation="include">
-        </childnode>
-        <childnode refid="58" relation="include">
+        <childnode refid="22" relation="include">
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
       </node>
-      <node id="53">
+      <node id="46">
         <label>abstract_SigmaTotal.h</label>
         <link refid="abstract__SigmaTotal_8h_source"/>
         <childnode refid="4" relation="include">
         </childnode>
         <childnode refid="15" relation="include">
         </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
         <childnode refid="16" relation="include">
         </childnode>
         <childnode refid="17" relation="include">
         </childnode>
         <childnode refid="9" relation="include">
         </childnode>
-        <childnode refid="20" relation="include">
-        </childnode>
-        <childnode refid="23" relation="include">
-        </childnode>
-        <childnode refid="18" relation="include">
-        </childnode>
         <childnode refid="10" relation="include">
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
       </node>
-      <node id="59">
+      <node id="43">
         <label>abstract_SusyLesHouches.h</label>
         <link refid="abstract__SusyLesHouches_8h_source"/>
         <childnode refid="4" relation="include">
@@ -648,66 +566,24 @@
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="21" relation="include">
-        </childnode>
-        <childnode refid="6" relation="include">
-        </childnode>
-        <childnode refid="16" relation="include">
-        </childnode>
-        <childnode refid="17" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
-        <childnode refid="60" relation="include">
-        </childnode>
-        <childnode refid="10" relation="include">
-        </childnode>
-        <childnode refid="12" relation="include">
-        </childnode>
-      </node>
-      <node id="43">
-        <label>abstract_UserHooks.h</label>
-        <link refid="abstract__UserHooks_8h_source"/>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="15" relation="include">
-        </childnode>
-        <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="6" relation="include">
-        </childnode>
-        <childnode refid="16" relation="include">
-        </childnode>
-        <childnode refid="17" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
         <childnode refid="20" relation="include">
         </childnode>
-        <childnode refid="23" relation="include">
+        <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="18" relation="include">
+        <childnode refid="16" relation="include">
         </childnode>
-        <childnode refid="25" relation="include">
+        <childnode refid="17" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
         </childnode>
         <childnode refid="44" relation="include">
         </childnode>
-        <childnode refid="30" relation="include">
-        </childnode>
-        <childnode refid="52" relation="include">
-        </childnode>
-        <childnode refid="54" relation="include">
-        </childnode>
-        <childnode refid="48" relation="include">
-        </childnode>
-        <childnode refid="50" relation="include">
-        </childnode>
         <childnode refid="10" relation="include">
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
       </node>
-      <node id="47">
+      <node id="48">
         <label>abstract_Vec4.h</label>
         <link refid="abstract__Vec4_8h_source"/>
         <childnode refid="4" relation="include">
@@ -727,7 +603,7 @@
       </node>
       <node id="17">
         <label>forward_decls_abstract_classes.h</label>
-        <link refid="Pythia__8__212_2forward__decls__abstract__classes_8h_source"/>
+        <link refid="Pythia__8__312_2forward__decls__abstract__classes_8h_source"/>
         <childnode refid="10" relation="include">
         </childnode>
         <childnode refid="12" relation="include">
@@ -735,7 +611,7 @@
       </node>
       <node id="9">
         <label>forward_decls_wrapper_classes.h</label>
-        <link refid="Pythia__8__212_2forward__decls__wrapper__classes_8h_source"/>
+        <link refid="Pythia__8__312_2forward__decls__wrapper__classes_8h_source"/>
         <childnode refid="10" relation="include">
         </childnode>
         <childnode refid="12" relation="include">
@@ -743,11 +619,11 @@
       </node>
       <node id="10">
         <label>identification.hpp</label>
-        <link refid="include_2gambit_2Backends_2backend__types_2Pythia__8__212_2identification_8hpp_source"/>
+        <link refid="include_2gambit_2Backends_2backend__types_2Pythia__8__312_2identification_8hpp_source"/>
         <childnode refid="11" relation="include">
         </childnode>
       </node>
-      <node id="34">
+      <node id="37">
         <label>wrapper_AlphaEM_decl.h</label>
         <link refid="wrapper__AlphaEM__decl_8h_source"/>
         <childnode refid="4" relation="include">
@@ -756,16 +632,16 @@
         </childnode>
         <childnode refid="13" relation="include">
         </childnode>
-        <childnode refid="35" relation="include">
+        <childnode refid="38" relation="include">
         </childnode>
-        <childnode refid="23" relation="include">
+        <childnode refid="18" relation="include">
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
       </node>
-      <node id="32">
+      <node id="35">
         <label>wrapper_AlphaStrong_decl.h</label>
         <link refid="wrapper__AlphaStrong__decl_8h_source"/>
         <childnode refid="4" relation="include">
@@ -774,48 +650,38 @@
         </childnode>
         <childnode refid="13" relation="include">
         </childnode>
-        <childnode refid="33" relation="include">
+        <childnode refid="36" relation="include">
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
       </node>
-      <node id="44">
+      <node id="59">
         <label>wrapper_BeamParticle_decl.h</label>
         <link refid="wrapper__BeamParticle__decl_8h_source"/>
         <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="7" relation="include">
+        <childnode refid="31" relation="include">
         </childnode>
         <childnode refid="6" relation="include">
-        </childnode>
-        <childnode refid="26" relation="include">
         </childnode>
         <childnode refid="9" relation="include">
         </childnode>
         <childnode refid="13" relation="include">
         </childnode>
-        <childnode refid="45" relation="include">
+        <childnode refid="60" relation="include">
         </childnode>
-        <childnode refid="20" relation="include">
+        <childnode refid="47" relation="include">
         </childnode>
-        <childnode refid="23" relation="include">
-        </childnode>
-        <childnode refid="18" relation="include">
-        </childnode>
-        <childnode refid="25" relation="include">
-        </childnode>
-        <childnode refid="46" relation="include">
-        </childnode>
-        <childnode refid="48" relation="include">
+        <childnode refid="49" relation="include">
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
       </node>
-      <node id="30">
+      <node id="33">
         <label>wrapper_CoupSM_decl.h</label>
         <link refid="wrapper__CoupSM__decl_8h_source"/>
         <childnode refid="4" relation="include">
@@ -824,66 +690,50 @@
         </childnode>
         <childnode refid="13" relation="include">
         </childnode>
-        <childnode refid="31" relation="include">
-        </childnode>
-        <childnode refid="23" relation="include">
-        </childnode>
-        <childnode refid="25" relation="include">
-        </childnode>
-        <childnode refid="32" relation="include">
-        </childnode>
         <childnode refid="34" relation="include">
+        </childnode>
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="35" relation="include">
+        </childnode>
+        <childnode refid="37" relation="include">
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
       </node>
-      <node id="61">
+      <node id="39">
         <label>wrapper_CoupSUSY_decl.h</label>
         <link refid="wrapper__CoupSUSY__decl_8h_source"/>
         <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="62" relation="include">
+        <childnode refid="40" relation="include">
         </childnode>
         <childnode refid="9" relation="include">
         </childnode>
         <childnode refid="13" relation="include">
         </childnode>
-        <childnode refid="63" relation="include">
+        <childnode refid="41" relation="include">
+        </childnode>
+        <childnode refid="42" relation="include">
         </childnode>
         <childnode refid="28" relation="include">
         </childnode>
-        <childnode refid="58" relation="include">
+        <childnode refid="22" relation="include">
         </childnode>
-        <childnode refid="20" relation="include">
+        <childnode refid="18" relation="include">
         </childnode>
-        <childnode refid="23" relation="include">
-        </childnode>
-        <childnode refid="10" relation="include">
-        </childnode>
-        <childnode refid="12" relation="include">
-        </childnode>
-      </node>
-      <node id="28">
-        <label>wrapper_Couplings_decl.h</label>
-        <link refid="wrapper__Couplings__decl_8h_source"/>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
-        <childnode refid="13" relation="include">
-        </childnode>
-        <childnode refid="29" relation="include">
-        </childnode>
-        <childnode refid="30" relation="include">
+        <childnode refid="33" relation="include">
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
       </node>
-      <node id="40">
+      <node id="55">
         <label>wrapper_DecayChannel_decl.h</label>
         <link refid="wrapper__DecayChannel__decl_8h_source"/>
         <childnode refid="4" relation="include">
@@ -892,14 +742,14 @@
         </childnode>
         <childnode refid="13" relation="include">
         </childnode>
-        <childnode refid="41" relation="include">
+        <childnode refid="56" relation="include">
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
       </node>
-      <node id="48">
+      <node id="49">
         <label>wrapper_Event_decl.h</label>
         <link refid="wrapper__Event__decl_8h_source"/>
         <childnode refid="4" relation="include">
@@ -914,13 +764,13 @@
         </childnode>
         <childnode refid="13" relation="include">
         </childnode>
-        <childnode refid="49" relation="include">
-        </childnode>
-        <childnode refid="18" relation="include">
-        </childnode>
         <childnode refid="50" relation="include">
         </childnode>
-        <childnode refid="46" relation="include">
+        <childnode refid="26" relation="include">
+        </childnode>
+        <childnode refid="51" relation="include">
+        </childnode>
+        <childnode refid="47" relation="include">
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
@@ -934,38 +784,62 @@
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="68" relation="include">
+        <childnode refid="65" relation="include">
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
       </node>
-      <node id="20">
+      <node id="28">
         <label>wrapper_Info_decl.h</label>
         <link refid="wrapper__Info__decl_8h_source"/>
         <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="7" relation="include">
         </childnode>
         <childnode refid="2" relation="include">
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
-        <childnode refid="21" relation="include">
+        <childnode refid="20" relation="include">
         </childnode>
         <childnode refid="9" relation="include">
         </childnode>
         <childnode refid="13" relation="include">
         </childnode>
+        <childnode refid="29" relation="include">
+        </childnode>
         <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
       </node>
-      <node id="38">
+      <node id="22">
+        <label>wrapper_Logger_decl.h</label>
+        <link refid="wrapper__Logger__decl_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="23" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+        <childnode refid="24" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+      </node>
+      <node id="53">
         <label>wrapper_ParticleDataEntry_decl.h</label>
         <link refid="wrapper__ParticleDataEntry__decl_8h_source"/>
         <childnode refid="4" relation="include">
@@ -976,13 +850,9 @@
         </childnode>
         <childnode refid="13" relation="include">
         </childnode>
-        <childnode refid="39" relation="include">
+        <childnode refid="54" relation="include">
         </childnode>
-        <childnode refid="40" relation="include">
-        </childnode>
-        <childnode refid="20" relation="include">
-        </childnode>
-        <childnode refid="23" relation="include">
+        <childnode refid="55" relation="include">
         </childnode>
         <childnode refid="28" relation="include">
         </childnode>
@@ -991,39 +861,43 @@
         <childnode refid="12" relation="include">
         </childnode>
       </node>
-      <node id="18">
+      <node id="26">
         <label>wrapper_ParticleData_decl.h</label>
         <link refid="wrapper__ParticleData__decl_8h_source"/>
         <childnode refid="4" relation="include">
         </childnode>
         <childnode refid="2" relation="include">
         </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
         <childnode refid="7" relation="include">
         </childnode>
         <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
         </childnode>
         <childnode refid="9" relation="include">
         </childnode>
         <childnode refid="13" relation="include">
         </childnode>
-        <childnode refid="19" relation="include">
-        </childnode>
-        <childnode refid="20" relation="include">
-        </childnode>
-        <childnode refid="23" relation="include">
-        </childnode>
-        <childnode refid="25" relation="include">
+        <childnode refid="27" relation="include">
         </childnode>
         <childnode refid="28" relation="include">
         </childnode>
-        <childnode refid="38" relation="include">
+        <childnode refid="18" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
       </node>
-      <node id="50">
+      <node id="51">
         <label>wrapper_Particle_decl.h</label>
         <link refid="wrapper__Particle__decl_8h_source"/>
         <childnode refid="4" relation="include">
@@ -1036,18 +910,18 @@
         </childnode>
         <childnode refid="13" relation="include">
         </childnode>
-        <childnode refid="51" relation="include">
+        <childnode refid="52" relation="include">
         </childnode>
-        <childnode refid="46" relation="include">
+        <childnode refid="47" relation="include">
         </childnode>
-        <childnode refid="38" relation="include">
+        <childnode refid="53" relation="include">
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
       </node>
-      <node id="64">
+      <node id="61">
         <label>wrapper_PartonLevel_decl.h</label>
         <link refid="wrapper__PartonLevel__decl_8h_source"/>
         <childnode refid="4" relation="include">
@@ -1058,27 +932,13 @@
         </childnode>
         <childnode refid="13" relation="include">
         </childnode>
-        <childnode refid="65" relation="include">
+        <childnode refid="62" relation="include">
         </childnode>
-        <childnode refid="20" relation="include">
+        <childnode refid="49" relation="include">
         </childnode>
-        <childnode refid="23" relation="include">
+        <childnode refid="59" relation="include">
         </childnode>
-        <childnode refid="18" relation="include">
-        </childnode>
-        <childnode refid="25" relation="include">
-        </childnode>
-        <childnode refid="44" relation="include">
-        </childnode>
-        <childnode refid="28" relation="include">
-        </childnode>
-        <childnode refid="52" relation="include">
-        </childnode>
-        <childnode refid="42" relation="include">
-        </childnode>
-        <childnode refid="48" relation="include">
-        </childnode>
-        <childnode refid="66" relation="include">
+        <childnode refid="63" relation="include">
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
@@ -1108,38 +968,36 @@
         </childnode>
         <childnode refid="18" relation="include">
         </childnode>
-        <childnode refid="23" relation="include">
+        <childnode refid="26" relation="include">
         </childnode>
-        <childnode refid="42" relation="include">
+        <childnode refid="47" relation="include">
         </childnode>
-        <childnode refid="54" relation="include">
-        </childnode>
-        <childnode refid="36" relation="include">
-        </childnode>
-        <childnode refid="48" relation="include">
-        </childnode>
-        <childnode refid="20" relation="include">
-        </childnode>
-        <childnode refid="25" relation="include">
+        <childnode refid="49" relation="include">
         </childnode>
         <childnode refid="28" relation="include">
         </childnode>
-        <childnode refid="56" relation="include">
+        <childnode refid="22" relation="include">
         </childnode>
-        <childnode refid="46" relation="include">
+        <childnode refid="30" relation="include">
         </childnode>
-        <childnode refid="44" relation="include">
+        <childnode refid="33" relation="include">
         </childnode>
-        <childnode refid="64" relation="include">
+        <childnode refid="39" relation="include">
         </childnode>
-        <childnode refid="52" relation="include">
+        <childnode refid="57" relation="include">
+        </childnode>
+        <childnode refid="59" relation="include">
+        </childnode>
+        <childnode refid="61" relation="include">
+        </childnode>
+        <childnode refid="45" relation="include">
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
       </node>
-      <node id="66">
+      <node id="63">
         <label>wrapper_ResonanceDecays_decl.h</label>
         <link refid="wrapper__ResonanceDecays__decl_8h_source"/>
         <childnode refid="4" relation="include">
@@ -1150,49 +1008,21 @@
         </childnode>
         <childnode refid="13" relation="include">
         </childnode>
-        <childnode refid="67" relation="include">
+        <childnode refid="64" relation="include">
         </childnode>
-        <childnode refid="20" relation="include">
-        </childnode>
-        <childnode refid="18" relation="include">
-        </childnode>
-        <childnode refid="25" relation="include">
-        </childnode>
-        <childnode refid="48" relation="include">
+        <childnode refid="49" relation="include">
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
       </node>
-      <node id="36">
-        <label>wrapper_ResonanceWidths_decl.h</label>
-        <link refid="wrapper__ResonanceWidths__decl_8h_source"/>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
-        <childnode refid="13" relation="include">
-        </childnode>
-        <childnode refid="37" relation="include">
-        </childnode>
-        <childnode refid="20" relation="include">
-        </childnode>
-        <childnode refid="23" relation="include">
-        </childnode>
-        <childnode refid="28" relation="include">
-        </childnode>
-        <childnode refid="10" relation="include">
-        </childnode>
-        <childnode refid="12" relation="include">
-        </childnode>
-      </node>
-      <node id="25">
+      <node id="30">
         <label>wrapper_Rndm_decl.h</label>
         <link refid="wrapper__Rndm__decl_8h_source"/>
         <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="26" relation="include">
+        <childnode refid="31" relation="include">
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
@@ -1202,14 +1032,14 @@
         </childnode>
         <childnode refid="13" relation="include">
         </childnode>
-        <childnode refid="27" relation="include">
+        <childnode refid="32" relation="include">
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
       </node>
-      <node id="56">
+      <node id="57">
         <label>wrapper_SLHAinterface_decl.h</label>
         <link refid="wrapper__SLHAinterface__decl_8h_source"/>
         <childnode refid="4" relation="include">
@@ -1220,116 +1050,78 @@
         </childnode>
         <childnode refid="13" relation="include">
         </childnode>
-        <childnode refid="57" relation="include">
-        </childnode>
-        <childnode refid="20" relation="include">
-        </childnode>
-        <childnode refid="23" relation="include">
-        </childnode>
-        <childnode refid="25" relation="include">
+        <childnode refid="58" relation="include">
         </childnode>
         <childnode refid="28" relation="include">
         </childnode>
+        <childnode refid="42" relation="include">
+        </childnode>
         <childnode refid="18" relation="include">
         </childnode>
-        <childnode refid="58" relation="include">
+        <childnode refid="26" relation="include">
         </childnode>
-        <childnode refid="61" relation="include">
+        <childnode refid="30" relation="include">
+        </childnode>
+        <childnode refid="22" relation="include">
+        </childnode>
+        <childnode refid="33" relation="include">
+        </childnode>
+        <childnode refid="39" relation="include">
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
       </node>
-      <node id="23">
+      <node id="18">
         <label>wrapper_Settings_decl.h</label>
         <link refid="wrapper__Settings__decl_8h_source"/>
         <childnode refid="4" relation="include">
         </childnode>
         <childnode refid="2" relation="include">
         </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
         <childnode refid="7" relation="include">
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
+        <childnode refid="19" relation="include">
+        </childnode>
+        <childnode refid="20" relation="include">
+        </childnode>
         <childnode refid="9" relation="include">
         </childnode>
         <childnode refid="13" relation="include">
         </childnode>
-        <childnode refid="24" relation="include">
+        <childnode refid="21" relation="include">
         </childnode>
-        <childnode refid="20" relation="include">
+        <childnode refid="22" relation="include">
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
       </node>
-      <node id="54">
-        <label>wrapper_SigmaProcess_decl.h</label>
-        <link refid="wrapper__SigmaProcess__decl_8h_source"/>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="2" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
-        <childnode refid="13" relation="include">
-        </childnode>
-        <childnode refid="55" relation="include">
-        </childnode>
-        <childnode refid="20" relation="include">
-        </childnode>
-        <childnode refid="23" relation="include">
-        </childnode>
-        <childnode refid="18" relation="include">
-        </childnode>
-        <childnode refid="25" relation="include">
-        </childnode>
-        <childnode refid="44" relation="include">
-        </childnode>
-        <childnode refid="28" relation="include">
-        </childnode>
-        <childnode refid="52" relation="include">
-        </childnode>
-        <childnode refid="56" relation="include">
-        </childnode>
-        <childnode refid="46" relation="include">
-        </childnode>
-        <childnode refid="48" relation="include">
-        </childnode>
-        <childnode refid="50" relation="include">
-        </childnode>
-        <childnode refid="58" relation="include">
-        </childnode>
-        <childnode refid="10" relation="include">
-        </childnode>
-        <childnode refid="12" relation="include">
-        </childnode>
-      </node>
-      <node id="52">
+      <node id="45">
         <label>wrapper_SigmaTotal_decl.h</label>
         <link refid="wrapper__SigmaTotal__decl_8h_source"/>
         <childnode refid="4" relation="include">
         </childnode>
+        <childnode refid="31" relation="include">
+        </childnode>
         <childnode refid="9" relation="include">
         </childnode>
         <childnode refid="13" relation="include">
         </childnode>
-        <childnode refid="53" relation="include">
-        </childnode>
-        <childnode refid="20" relation="include">
-        </childnode>
-        <childnode refid="23" relation="include">
-        </childnode>
-        <childnode refid="18" relation="include">
+        <childnode refid="46" relation="include">
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
       </node>
-      <node id="58">
+      <node id="42">
         <label>wrapper_SusyLesHouches_decl.h</label>
         <link refid="wrapper__SusyLesHouches__decl_8h_source"/>
         <childnode refid="4" relation="include">
@@ -1338,29 +1130,7 @@
         </childnode>
         <childnode refid="5" relation="include">
         </childnode>
-        <childnode refid="21" relation="include">
-        </childnode>
-        <childnode refid="6" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
-        <childnode refid="13" relation="include">
-        </childnode>
-        <childnode refid="59" relation="include">
-        </childnode>
-        <childnode refid="60" relation="include">
-        </childnode>
-        <childnode refid="10" relation="include">
-        </childnode>
-        <childnode refid="12" relation="include">
-        </childnode>
-      </node>
-      <node id="42">
-        <label>wrapper_UserHooks_decl.h</label>
-        <link refid="wrapper__UserHooks__decl_8h_source"/>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="2" relation="include">
+        <childnode refid="20" relation="include">
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
@@ -1370,32 +1140,14 @@
         </childnode>
         <childnode refid="43" relation="include">
         </childnode>
-        <childnode refid="20" relation="include">
-        </childnode>
-        <childnode refid="23" relation="include">
-        </childnode>
-        <childnode refid="18" relation="include">
-        </childnode>
-        <childnode refid="25" relation="include">
-        </childnode>
         <childnode refid="44" relation="include">
-        </childnode>
-        <childnode refid="30" relation="include">
-        </childnode>
-        <childnode refid="52" relation="include">
-        </childnode>
-        <childnode refid="54" relation="include">
-        </childnode>
-        <childnode refid="48" relation="include">
-        </childnode>
-        <childnode refid="50" relation="include">
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
         <childnode refid="12" relation="include">
         </childnode>
       </node>
-      <node id="46">
+      <node id="47">
         <label>wrapper_Vec4_decl.h</label>
         <link refid="wrapper__Vec4__decl_8h_source"/>
         <childnode refid="4" relation="include">
@@ -1404,7 +1156,7 @@
         </childnode>
         <childnode refid="13" relation="include">
         </childnode>
-        <childnode refid="47" relation="include">
+        <childnode refid="48" relation="include">
         </childnode>
         <childnode refid="10" relation="include">
         </childnode>
@@ -1423,13 +1175,13 @@
         <label>gambit/Utils/cats.hpp</label>
         <link refid="Utils_2include_2gambit_2Utils_2cats_8hpp"/>
       </node>
-      <node id="68">
+      <node id="65">
         <label>HepMC3/GenEvent.h</label>
       </node>
-      <node id="60">
+      <node id="44">
         <label>SLHAea/slhaea.h</label>
       </node>
-      <node id="62">
+      <node id="40">
         <label>complex</label>
       </node>
       <node id="4">
@@ -1441,19 +1193,28 @@
       <node id="5">
         <label>istream</label>
       </node>
-      <node id="21">
+      <node id="20">
         <label>map</label>
+      </node>
+      <node id="23">
+        <label>mutex</label>
       </node>
       <node id="7">
         <label>ostream</label>
       </node>
+      <node id="19">
+        <label>set</label>
+      </node>
       <node id="8">
         <label>sstream</label>
+      </node>
+      <node id="25">
+        <label>streambuf</label>
       </node>
       <node id="2">
         <label>string</label>
       </node>
-      <node id="26">
+      <node id="31">
         <label>utility</label>
       </node>
       <node id="6">
@@ -1463,7 +1224,7 @@
     <invincdepgraph>
       <node id="3">
         <label>loaded_types.hpp</label>
-        <link refid="Pythia__8__212_2loaded__types_8hpp_source"/>
+        <link refid="Pythia__8__312_2loaded__types_8hpp_source"/>
       </node>
       <node id="2">
         <label>wrapper_GAMBIT_hepmc_writer.h</label>
@@ -1499,7 +1260,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Backends/include/gambit/Backends/backend_types/Pythia_8_212/wrapper_GAMBIT_hepmc_writer_def.h" line="1" column="0" bodyfile="Backends/include/gambit/Backends/backend_types/Pythia_8_212/wrapper_GAMBIT_hepmc_writer_def.h" bodystart="10" bodyend="95"/>
+        <location file="Backends/include/gambit/Backends/backend_types/Pythia_8_312/wrapper_GAMBIT_hepmc_writer_def.h" line="1" column="0" bodyfile="Backends/include/gambit/Backends/backend_types/Pythia_8_312/wrapper_GAMBIT_hepmc_writer_def.h" bodystart="10" bodyend="95"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -1507,8 +1268,8 @@
     <detaileddescription>
     </detaileddescription>
     <programlisting>
-<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>__wrapper_GAMBIT_hepmc_writer_def_Pythia_8_212_h__</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__wrapper_GAMBIT_hepmc_writer_def_Pythia_8_212_h__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1"><highlight class="preprocessor">#ifndef<sp/>__wrapper_GAMBIT_hepmc_writer_def_Pythia_8_312_h__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__wrapper_GAMBIT_hepmc_writer_def_Pythia_8_312_h__</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="3"><highlight class="normal"></highlight></codeline>
 <codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;wrapper_Pythia_decl.h&quot;</highlight><highlight class="normal"></highlight></codeline>
@@ -1606,8 +1367,8 @@
 <codeline lineno="97"><highlight class="normal"></highlight></codeline>
 <codeline lineno="98"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="include_2gambit_2Backends_2backend__undefs_8hpp" kindref="compound">gambit/Backends/backend_undefs.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="99"><highlight class="normal"></highlight></codeline>
-<codeline lineno="100"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>__wrapper_GAMBIT_hepmc_writer_def_Pythia_8_212_h__<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+<codeline lineno="100"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>__wrapper_GAMBIT_hepmc_writer_def_Pythia_8_312_h__<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
     </programlisting>
-    <location file="Backends/include/gambit/Backends/backend_types/Pythia_8_212/wrapper_GAMBIT_hepmc_writer_def.h"/>
+    <location file="Backends/include/gambit/Backends/backend_types/Pythia_8_312/wrapper_GAMBIT_hepmc_writer_def.h"/>
   </compounddef>
 </doxygen>

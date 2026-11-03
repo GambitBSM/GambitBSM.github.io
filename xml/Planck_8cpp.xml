@@ -10,7 +10,7 @@
     <includes refid="gambit__module__headers_8hpp" local="yes">gambit/Elements/gambit_module_headers.hpp</includes>
     <includes refid="CosmoBit__rollcall_8hpp" local="yes">gambit/CosmoBit/CosmoBit_rollcall.hpp</includes>
     <incdepgraph>
-      <node id="113">
+      <node id="114">
         <label>gambit/Backends/backend_info.hpp</label>
         <link refid="backend__info_8hpp"/>
         <childnode refid="7" relation="include">
@@ -22,62 +22,50 @@
         <childnode refid="65" relation="include">
         </childnode>
       </node>
-      <node id="112">
+      <node id="113">
         <label>gambit/Backends/backend_singleton.hpp</label>
         <link refid="backend__singleton_8hpp"/>
-        <childnode refid="113" relation="include">
+        <childnode refid="114" relation="include">
         </childnode>
       </node>
-      <node id="123">
+      <node id="121">
         <label>gambit/Backends/backend_types/MontePythonLike.hpp</label>
         <link refid="MontePythonLike_8hpp"/>
         <childnode refid="59" relation="include">
         </childnode>
-        <childnode refid="116" relation="include">
+        <childnode refid="112" relation="include">
         </childnode>
       </node>
       <node id="109">
         <label>gambit/Backends/default_bossed_versions.hpp</label>
         <link refid="default__bossed__versions_8hpp"/>
       </node>
-      <node id="110">
-        <label>gambit/Backends/mathematica_variable.hpp</label>
-        <link refid="mathematica__variable_8hpp"/>
-        <childnode refid="111" relation="include">
-        </childnode>
-        <childnode refid="112" relation="include">
-        </childnode>
-        <childnode refid="59" relation="include">
-        </childnode>
-        <childnode refid="114" relation="include">
-        </childnode>
-      </node>
-      <node id="116">
+      <node id="112">
         <label>gambit/Backends/python_helpers.hpp</label>
         <link refid="python__helpers_8hpp"/>
       </node>
-      <node id="115">
+      <node id="110">
         <label>gambit/Backends/python_variable.hpp</label>
         <link refid="python__variable_8hpp"/>
         <childnode refid="59" relation="include">
         </childnode>
         <childnode refid="111" relation="include">
         </childnode>
-        <childnode refid="116" relation="include">
-        </childnode>
         <childnode refid="112" relation="include">
         </childnode>
-      </node>
-      <node id="120">
-        <label>gambit/CosmoBit/CosmoBit_rollcall.hpp</label>
-        <link refid="CosmoBit__rollcall_8hpp"/>
-        <childnode refid="121" relation="include">
+        <childnode refid="113" relation="include">
         </childnode>
       </node>
-      <node id="121">
+      <node id="118">
+        <label>gambit/CosmoBit/CosmoBit_rollcall.hpp</label>
+        <link refid="CosmoBit__rollcall_8hpp"/>
+        <childnode refid="119" relation="include">
+        </childnode>
+      </node>
+      <node id="119">
         <label>gambit/CosmoBit/CosmoBit_types.hpp</label>
         <link refid="CosmoBit__types_8hpp"/>
-        <childnode refid="122" relation="include">
+        <childnode refid="120" relation="include">
         </childnode>
         <childnode refid="2" relation="include">
         </childnode>
@@ -91,9 +79,9 @@
         </childnode>
         <childnode refid="82" relation="include">
         </childnode>
-        <childnode refid="123" relation="include">
+        <childnode refid="121" relation="include">
         </childnode>
-        <childnode refid="124" relation="include">
+        <childnode refid="122" relation="include">
         </childnode>
       </node>
       <node id="1">
@@ -111,7 +99,7 @@
         </childnode>
         <childnode refid="52" relation="include">
         </childnode>
-        <childnode refid="120" relation="include">
+        <childnode refid="118" relation="include">
         </childnode>
       </node>
       <node id="101">
@@ -213,11 +201,11 @@
         </childnode>
         <childnode refid="58" relation="include">
         </childnode>
-        <childnode refid="118" relation="include">
+        <childnode refid="116" relation="include">
         </childnode>
         <childnode refid="69" relation="include">
         </childnode>
-        <childnode refid="112" relation="include">
+        <childnode refid="113" relation="include">
         </childnode>
       </node>
       <node id="100">
@@ -362,8 +350,6 @@
         <childnode refid="110" relation="include">
         </childnode>
         <childnode refid="115" relation="include">
-        </childnode>
-        <childnode refid="117" relation="include">
         </childnode>
       </node>
       <node id="91">
@@ -670,10 +656,10 @@
         <label>gambit/Utils/stringify.hpp</label>
         <link refid="stringify_8hpp"/>
       </node>
-      <node id="118">
+      <node id="116">
         <label>gambit/Utils/threadsafe_rng.hpp</label>
         <link refid="threadsafe__rng_8hpp"/>
-        <childnode refid="119" relation="include">
+        <childnode refid="117" relation="include">
         </childnode>
         <childnode refid="14" relation="include">
         </childnode>
@@ -843,9 +829,6 @@
       <node id="61">
         <label>boost/algorithm/string/classification.hpp</label>
       </node>
-      <node id="114">
-        <label>boost/algorithm/string/replace.hpp</label>
-      </node>
       <node id="60">
         <label>boost/algorithm/string/split.hpp</label>
       </node>
@@ -942,7 +925,7 @@
       <node id="40">
         <label>fstream</label>
       </node>
-      <node id="117">
+      <node id="115">
         <label>gambit/Backends/backend_types_rollcall.hpp</label>
       </node>
       <node id="59">
@@ -954,7 +937,7 @@
       <node id="105">
         <label>gsl/gsl_integration.h</label>
       </node>
-      <node id="124">
+      <node id="122">
         <label>gsl/gsl_spline.h</label>
       </node>
       <node id="3">
@@ -981,7 +964,7 @@
       <node id="71">
         <label>ostream</label>
       </node>
-      <node id="119">
+      <node id="117">
         <label>random</label>
       </node>
       <node id="34">
@@ -1002,7 +985,7 @@
       <node id="4">
         <label>string</label>
       </node>
-      <node id="122">
+      <node id="120">
         <label>tuple</label>
       </node>
       <node id="41">
@@ -1219,7 +1202,7 @@
 <codeline lineno="151"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">Pipes::function_Planck_lowl_TT_2018_loglike;</highlight></codeline>
 <codeline lineno="153"><highlight class="normal"></highlight></codeline>
-<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Array<sp/>containing<sp/>the<sp/>relevant<sp/>Cl<sp/>and<sp/>nuisance<sp/>paramters</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Array<sp/>containing<sp/>the<sp/>relevant<sp/>Cl<sp/>and<sp/>nuisance<sp/>parameters</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>order<sp/>will<sp/>be<sp/>the<sp/>following:</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="156"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TT[0-29]<sp/>-<sp/>nuisance<sp/>parameter</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="157"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(c.f.<sp/>https://wiki.cosmos.esa.int/planck-legacy-archive/index.php/CMB_spectrum_%26_Likelihood_Code)</highlight><highlight class="normal"></highlight></codeline>
@@ -1276,7 +1259,7 @@
 <codeline lineno="208"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="209"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">Pipes::function_Planck_lowl_EE_2018_loglike;</highlight></codeline>
 <codeline lineno="210"><highlight class="normal"></highlight></codeline>
-<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Array<sp/>containing<sp/>the<sp/>relevant<sp/>Cl<sp/>and<sp/>nuisance<sp/>paramters</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="211"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Array<sp/>containing<sp/>the<sp/>relevant<sp/>Cl<sp/>and<sp/>nuisance<sp/>parameters</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="212"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>order<sp/>will<sp/>be<sp/>the<sp/>following:</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="213"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>EE[0-29]<sp/>-<sp/>Nuisance<sp/>parameter</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="214"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(c.f.<sp/>https://wiki.cosmos.esa.int/planck-legacy-archive/index.php/CMB_spectrum_%26_Likelihood_Code)</highlight><highlight class="normal"></highlight></codeline>
@@ -1328,14 +1311,14 @@
 <codeline lineno="260"><highlight class="normal"></highlight></codeline>
 <codeline lineno="261"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="262"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="263"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Combined<sp/>low-l<sp/>TT<sp/>and<sp/>and<sp/>E-mode<sp/>polarisation<sp/>likelihood<sp/>(PR3<sp/>-<sp/>2018)</highlight></codeline>
+<codeline lineno="263"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Combined<sp/>low-l<sp/>TT<sp/>and<sp/>E-mode<sp/>polarisation<sp/>likelihood<sp/>(PR3<sp/>-<sp/>2018)</highlight></codeline>
 <codeline lineno="264"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="Planck_8cpp_1a3ecedea9b896e34954f04f13b27bc36e" kindref="member">function_Planck_lowl_TTEE_2018_loglike</ref>(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal">&amp;<sp/>result)</highlight></codeline>
 <codeline lineno="265"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="266"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">Pipes::function_Planck_lowl_TTEE_2018_loglike;</highlight></codeline>
 <codeline lineno="267"><highlight class="normal"></highlight></codeline>
 <codeline lineno="268"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>This<sp/>function<sp/>combines<sp/>the<sp/>lowl<sp/>TT<sp/>2018<sp/>and<sp/>the<sp/>lowl<sp/>EE<sp/>2018<sp/>likelihood</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="269"><highlight class="normal"></highlight></codeline>
-<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Array<sp/>containing<sp/>the<sp/>relevant<sp/>Cl<sp/>and<sp/>nuisance<sp/>paramters<sp/>for<sp/>the<sp/>TT<sp/>part</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="270"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Array<sp/>containing<sp/>the<sp/>relevant<sp/>Cl<sp/>and<sp/>nuisance<sp/>parameters<sp/>for<sp/>the<sp/>TT<sp/>part</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="271"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>order<sp/>will<sp/>be<sp/>the<sp/>following:</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="272"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TT[0-29]<sp/>-<sp/>nuisance<sp/>parameter</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="273"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(c.f.<sp/>https://wiki.cosmos.esa.int/planck-legacy-archive/index.php/CMB_spectrum_%26_Likelihood_Code)</highlight><highlight class="normal"></highlight></codeline>
@@ -1420,7 +1403,7 @@
 <codeline lineno="352"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="353"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">Pipes::function_Planck_highl_TT_2018_loglike;</highlight></codeline>
 <codeline lineno="354"><highlight class="normal"></highlight></codeline>
-<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Array<sp/>containing<sp/>the<sp/>relevant<sp/>Cl<sp/>and<sp/>nuisance<sp/>paramters</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="355"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Array<sp/>containing<sp/>the<sp/>relevant<sp/>Cl<sp/>and<sp/>nuisance<sp/>parameters</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="356"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>order<sp/>will<sp/>be<sp/>the<sp/>following:</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="357"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TT[0-2508]<sp/>-<sp/>nuisance<sp/>parameters</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="358"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(c.f.<sp/>https://wiki.cosmos.esa.int/planck-legacy-archive/index.php/CMB_spectrum_%26_Likelihood_Code)</highlight><highlight class="normal"></highlight></codeline>
@@ -1497,7 +1480,7 @@
 <codeline lineno="429"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="430"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">Pipes::function_Planck_highl_TT_lite_2018_loglike;</highlight></codeline>
 <codeline lineno="431"><highlight class="normal"></highlight></codeline>
-<codeline lineno="432"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Array<sp/>containing<sp/>the<sp/>relevant<sp/>Cl<sp/>and<sp/>nuisance<sp/>paramters</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="432"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Array<sp/>containing<sp/>the<sp/>relevant<sp/>Cl<sp/>and<sp/>nuisance<sp/>parameters</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="433"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>order<sp/>will<sp/>be<sp/>the<sp/>following:</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="434"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TT[0-2508]<sp/>-<sp/>nuisance<sp/>parameter</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="435"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(c.f.<sp/>https://wiki.cosmos.esa.int/planck-legacy-archive/index.php/CMB_spectrum_%26_Likelihood_Code)</highlight><highlight class="normal"></highlight></codeline>
@@ -1555,7 +1538,7 @@
 <codeline lineno="487"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="488"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">Pipes::function_Planck_highl_TTTEEE_2018_loglike;</highlight></codeline>
 <codeline lineno="489"><highlight class="normal"></highlight></codeline>
-<codeline lineno="490"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Array<sp/>containing<sp/>the<sp/>relevant<sp/>Cl<sp/>and<sp/>nuisance<sp/>paramters</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="490"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Array<sp/>containing<sp/>the<sp/>relevant<sp/>Cl<sp/>and<sp/>nuisance<sp/>parameters</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="491"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>order<sp/>will<sp/>be<sp/>the<sp/>following:</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="492"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TT[0-2508]<sp/>-<sp/>EE[0-2508]<sp/>-<sp/>TE[0-2508]<sp/>-<sp/>nuisance<sp/>parameters</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="493"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(c.f.<sp/>https://wiki.cosmos.esa.int/planck-legacy-archive/index.php/CMB_spectrum_%26_Likelihood_Code)</highlight><highlight class="normal"></highlight></codeline>
@@ -1657,7 +1640,7 @@
 <codeline lineno="589"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="590"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">Pipes::function_Planck_highl_TTTEEE_lite_2018_loglike;</highlight></codeline>
 <codeline lineno="591"><highlight class="normal"></highlight></codeline>
-<codeline lineno="592"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Array<sp/>containing<sp/>the<sp/>relevant<sp/>Cl<sp/>and<sp/>nuisance<sp/>paramters</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="592"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Array<sp/>containing<sp/>the<sp/>relevant<sp/>Cl<sp/>and<sp/>nuisance<sp/>parameters</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="593"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>order<sp/>will<sp/>be<sp/>the<sp/>following:</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="594"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TT[0-2508]<sp/>-<sp/>EE[0-2508]<sp/>-<sp/>TE[0-2508]<sp/>-<sp/>nuisance<sp/>parameter</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="595"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(c.f.<sp/>https://wiki.cosmos.esa.int/planck-legacy-archive/index.php/CMB_spectrum_%26_Likelihood_Code)</highlight><highlight class="normal"></highlight></codeline>
@@ -1725,7 +1708,7 @@
 <codeline lineno="657"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="658"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">Pipes::function_Planck_lensing_2018_loglike;</highlight></codeline>
 <codeline lineno="659"><highlight class="normal"></highlight></codeline>
-<codeline lineno="660"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Array<sp/>containing<sp/>the<sp/>relevant<sp/>Cl<sp/>and<sp/>nuisance<sp/>paramters</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="660"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Array<sp/>containing<sp/>the<sp/>relevant<sp/>Cl<sp/>and<sp/>nuisance<sp/>parameters</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="661"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>order<sp/>will<sp/>be<sp/>the<sp/>following:</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="662"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>PhiPhi[0-2500]<sp/>-<sp/>TT[0-2500]<sp/>-<sp/>EE[0-2500]<sp/>-<sp/>TE[0-2500]<sp/>-<sp/>nuisance<sp/>parameters</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="663"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(c.f.<sp/>https://wiki.cosmos.esa.int/planck-legacy-archive/index.php/CMB_spectrum_%26_Likelihood_Code)</highlight><highlight class="normal"></highlight></codeline>
@@ -1797,7 +1780,7 @@
 <codeline lineno="729"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="730"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">Pipes::function_Planck_lensing_marged_2018_loglike;</highlight></codeline>
 <codeline lineno="731"><highlight class="normal"></highlight></codeline>
-<codeline lineno="732"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Array<sp/>containing<sp/>the<sp/>relevant<sp/>Cl<sp/>and<sp/>nuisance<sp/>paramters</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="732"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Array<sp/>containing<sp/>the<sp/>relevant<sp/>Cl<sp/>and<sp/>nuisance<sp/>parameters</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="733"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>order<sp/>will<sp/>be<sp/>the<sp/>following:</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="734"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>PhiPhi[0-2500]<sp/>-<sp/>nuisance<sp/>parameters</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="735"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(c.f.<sp/>https://wiki.cosmos.esa.int/planck-legacy-archive/index.php/CMB_spectrum_%26_Likelihood_Code)</highlight><highlight class="normal"></highlight></codeline>
@@ -1852,7 +1835,7 @@
 <codeline lineno="784"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="785"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">Pipes::function_Planck_lowl_TT_2015_loglike;</highlight></codeline>
 <codeline lineno="786"><highlight class="normal"></highlight></codeline>
-<codeline lineno="787"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Array<sp/>containing<sp/>the<sp/>relevant<sp/>Cl<sp/>and<sp/>nuisance<sp/>paramters</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="787"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Array<sp/>containing<sp/>the<sp/>relevant<sp/>Cl<sp/>and<sp/>nuisance<sp/>parameters</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="788"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>order<sp/>will<sp/>be<sp/>the<sp/>following:</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="789"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TT[0-29]<sp/>-<sp/>nuisance<sp/>parameter</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="790"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(c.f.<sp/>https://wiki.cosmos.esa.int/planck-legacy-archive/index.php/CMB_spectrum_%26_Likelihood_Code<sp/>-&gt;<sp/>Previous<sp/>releases<sp/>-&gt;<sp/>2015)</highlight><highlight class="normal"></highlight></codeline>
@@ -1909,7 +1892,7 @@
 <codeline lineno="841"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="842"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">Pipes::function_Planck_lowl_TEB_2015_loglike;</highlight></codeline>
 <codeline lineno="843"><highlight class="normal"></highlight></codeline>
-<codeline lineno="844"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Array<sp/>containing<sp/>the<sp/>relevant<sp/>Cl<sp/>and<sp/>nuisance<sp/>paramters</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="844"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Array<sp/>containing<sp/>the<sp/>relevant<sp/>Cl<sp/>and<sp/>nuisance<sp/>parameters</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="845"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>order<sp/>will<sp/>be<sp/>the<sp/>following:</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="846"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TT[0-29]<sp/>-<sp/>EE[0-29]<sp/>-<sp/>BB[0-29]<sp/>-<sp/>TE[0-29]<sp/>-<sp/>nuisance<sp/>parameter</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="847"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(c.f.<sp/>https://wiki.cosmos.esa.int/planck-legacy-archive/index.php/CMB_spectrum_%26_Likelihood_Code<sp/>-&gt;<sp/>Previous<sp/>releases<sp/>-&gt;<sp/>2015)</highlight><highlight class="normal"></highlight></codeline>
@@ -1982,7 +1965,7 @@
 <codeline lineno="914"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="915"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">Pipes::function_Planck_highl_TT_2015_loglike;</highlight></codeline>
 <codeline lineno="916"><highlight class="normal"></highlight></codeline>
-<codeline lineno="917"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Array<sp/>containing<sp/>the<sp/>relevant<sp/>Cl<sp/>and<sp/>nuisance<sp/>paramters</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="917"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Array<sp/>containing<sp/>the<sp/>relevant<sp/>Cl<sp/>and<sp/>nuisance<sp/>parameters</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="918"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>order<sp/>will<sp/>be<sp/>the<sp/>following:</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="919"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TT[0-2508]<sp/>-<sp/>Nuisance<sp/>parameters</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="920"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(c.f.<sp/>https://wiki.cosmos.esa.int/planck-legacy-archive/index.php/CMB_spectrum_%26_Likelihood_Code<sp/>-&gt;<sp/>Previous<sp/>releases<sp/>-&gt;<sp/>2015)</highlight><highlight class="normal"></highlight></codeline>
@@ -2057,7 +2040,7 @@
 <codeline lineno="989"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="990"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">Pipes::function_Planck_highl_TT_lite_2015_loglike;</highlight></codeline>
 <codeline lineno="991"><highlight class="normal"></highlight></codeline>
-<codeline lineno="992"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Array<sp/>containing<sp/>the<sp/>relevant<sp/>Cl<sp/>and<sp/>nuisance<sp/>paramters</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="992"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Array<sp/>containing<sp/>the<sp/>relevant<sp/>Cl<sp/>and<sp/>nuisance<sp/>parameters</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="993"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>order<sp/>will<sp/>be<sp/>the<sp/>following:</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="994"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TT[0-2508]<sp/>-<sp/>nuisance<sp/>parameter</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="995"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(c.f.<sp/>https://wiki.cosmos.esa.int/planck-legacy-archive/index.php/CMB_spectrum_%26_Likelihood_Code<sp/>-&gt;<sp/>Previous<sp/>releases<sp/>-&gt;<sp/>2015)</highlight><highlight class="normal"></highlight></codeline>
@@ -2115,7 +2098,7 @@
 <codeline lineno="1047"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="1048"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">Pipes::function_Planck_highl_TTTEEE_2015_loglike;</highlight></codeline>
 <codeline lineno="1049"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1050"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Array<sp/>containing<sp/>the<sp/>relevant<sp/>Cl<sp/>and<sp/>nuissance<sp/>paramters</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1050"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Array<sp/>containing<sp/>the<sp/>relevant<sp/>Cl<sp/>and<sp/>nuissance<sp/>parameters</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1051"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>order<sp/>will<sp/>be<sp/>the<sp/>following:</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1052"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TT[0-2508]<sp/>-<sp/>EE[0-2508]<sp/>-<sp/>TE[0-2508]<sp/>-<sp/>nuisance<sp/>parameters</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1053"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(c.f.<sp/>https://wiki.cosmos.esa.int/planck-legacy-archive/index.php/CMB_spectrum_%26_Likelihood_Code<sp/>-&gt;<sp/>Previous<sp/>releases<sp/>-&gt;<sp/>2015)</highlight><highlight class="normal"></highlight></codeline>
@@ -2217,7 +2200,7 @@
 <codeline lineno="1149"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="1150"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">Pipes::function_Planck_highl_TTTEEE_lite_2015_loglike;</highlight></codeline>
 <codeline lineno="1151"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Array<sp/>containing<sp/>the<sp/>relevant<sp/>Cl<sp/>and<sp/>nuissance<sp/>paramters</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1152"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Array<sp/>containing<sp/>the<sp/>relevant<sp/>Cl<sp/>and<sp/>nuissance<sp/>parameters</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1153"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>order<sp/>will<sp/>be<sp/>the<sp/>following:</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1154"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TT[0-2508]<sp/>-<sp/>EE[0-2508]<sp/>-<sp/>TE[0-2508]<sp/>-<sp/>nuisance<sp/>parameter</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1155"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(c.f.<sp/>https://wiki.cosmos.esa.int/planck-legacy-archive/index.php/CMB_spectrum_%26_Likelihood_Code<sp/>-&gt;<sp/>Previous<sp/>releases<sp/>-&gt;<sp/>2015)</highlight><highlight class="normal"></highlight></codeline>
@@ -2285,7 +2268,7 @@
 <codeline lineno="1217"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="1218"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">using<sp/>namespace<sp/></highlight><highlight class="normal">Pipes::function_Planck_lensing_2015_loglike;</highlight></codeline>
 <codeline lineno="1219"><highlight class="normal"></highlight></codeline>
-<codeline lineno="1220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Array<sp/>containing<sp/>the<sp/>relevant<sp/>Cl<sp/>and<sp/>nuisance<sp/>paramters</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="1220"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Array<sp/>containing<sp/>the<sp/>relevant<sp/>Cl<sp/>and<sp/>nuisance<sp/>parameters</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1221"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>The<sp/>order<sp/>will<sp/>be<sp/>the<sp/>following:</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1222"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>PhiPhi[0-2048]<sp/>-<sp/>TT[0-2048]<sp/>-<sp/>EE[0-2048]<sp/>-<sp/>TE[0-2048]<sp/>-<sp/>nuisance<sp/>parameters</highlight><highlight class="normal"></highlight></codeline>
 <codeline lineno="1223"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>(c.f.<sp/>https://wiki.cosmos.esa.int/planck-legacy-archive/index.php/CMB_spectrum_%26_Likelihood_Code<sp/>-&gt;<sp/>Previous<sp/>releases<sp/>-&gt;<sp/>2015)</highlight><highlight class="normal"></highlight></codeline>

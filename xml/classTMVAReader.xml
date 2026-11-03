@@ -1,0 +1,172 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="classTMVAReader" kind="class" language="C++" prot="public">
+    <compoundname>TMVAReader</compoundname>
+    <basecompoundref refid="classMVA" prot="public" virt="non-virtual">MVA</basecompoundref>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classTMVAReader_1aabde18abdc928fd97604a58b40fdd0b1" prot="private" static="no" mutable="no">
+        <type>TMVA::Reader *</type>
+        <definition>TMVA::Reader* TMVAReader::m_bdt1</definition>
+        <argsstring></argsstring>
+        <name>m_bdt1</name>
+        <qualifiedname>TMVAReader::m_bdt1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/MVA.h" line="62" column="16" bodyfile="ColliderBit/include/gambit/ColliderBit/MVA.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTMVAReader_1a4e2923ae0f7351be8b7d8a277b6771cd" prot="private" static="no" mutable="no">
+        <type>TMVA::Reader *</type>
+        <definition>TMVA::Reader* TMVAReader::m_bdt2</definition>
+        <argsstring></argsstring>
+        <name>m_bdt2</name>
+        <qualifiedname>TMVAReader::m_bdt2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/MVA.h" line="63" column="16" bodyfile="ColliderBit/include/gambit/ColliderBit/MVA.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classTMVAReader_1aacd241c6a0c58c37048c8276aca8a4be" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; Float_t &gt;</type>
+        <definition>std::vector&lt;Float_t&gt; TMVAReader::m_variables</definition>
+        <argsstring></argsstring>
+        <name>m_variables</name>
+        <qualifiedname>TMVAReader::m_variables</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/MVA.h" line="64" column="15" bodyfile="ColliderBit/include/gambit/ColliderBit/MVA.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classTMVAReader_1a91842c1906d84ce7730130e23b9968ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>TMVAReader::TMVAReader</definition>
+        <argsstring>(const std::string &amp;name, const std::vector&lt; std::string &gt; &amp;variableDefs, const std::string fname1, const std::string fname2=&quot;&quot;)</argsstring>
+        <name>TMVAReader</name>
+        <qualifiedname>TMVAReader::TMVAReader</qualifiedname>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>name</declname>
+        </param>
+        <param>
+          <type>const std::vector&lt; std::string &gt; &amp;</type>
+          <declname>variableDefs</declname>
+        </param>
+        <param>
+          <type>const std::string</type>
+          <declname>fname1</declname>
+        </param>
+        <param>
+          <type>const std::string</type>
+          <declname>fname2</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/MVA.h" line="51" column="3" bodyfile="ColliderBit/src/MVA.cpp" bodystart="22" bodyend="51"/>
+      </memberdef>
+      <memberdef kind="function" id="classTMVAReader_1a459ede99d152cc062d0c2c28ecb1af84" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
+        <type>double</type>
+        <definition>double TMVAReader::evaluate</definition>
+        <argsstring>(const std::vector&lt; double &gt; &amp;values, const std::string nodeName=&quot;&quot;)</argsstring>
+        <name>evaluate</name>
+        <qualifiedname>TMVAReader::evaluate</qualifiedname>
+        <reimplements refid="classMVA_1a573c4d18946989cb9bf0b3d3a6f0a868">evaluate</reimplements>
+        <param>
+          <type>const std::vector&lt; double &gt; &amp;</type>
+          <declname>values</declname>
+        </param>
+        <param>
+          <type>const std::string</type>
+          <declname>nodeName</declname>
+          <defval>&quot;&quot;</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/MVA.h" line="54" column="18" bodyfile="ColliderBit/src/MVA.cpp" bodystart="53" bodyend="64"/>
+      </memberdef>
+      <memberdef kind="function" id="classTMVAReader_1acaaaf0d737c4066099998128f3371c08" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>TMVAReader::~TMVAReader</definition>
+        <argsstring>()</argsstring>
+        <name>~TMVAReader</name>
+        <qualifiedname>TMVAReader::~TMVAReader</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ColliderBit/include/gambit/ColliderBit/MVA.h" line="56" column="3" bodyfile="ColliderBit/include/gambit/ColliderBit/MVA.h" bodystart="56" bodyend="59"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>MVA</label>
+        <link refid="classMVA"/>
+      </node>
+      <node id="1">
+        <label>TMVAReader</label>
+        <link refid="classTMVAReader"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>MVA</label>
+        <link refid="classMVA"/>
+        <childnode refid="3" relation="usage">
+          <edgelabel>m_name</edgelabel>
+        </childnode>
+      </node>
+      <node id="1">
+        <label>TMVAReader</label>
+        <link refid="classTMVAReader"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>string</label>
+      </node>
+    </collaborationgraph>
+    <location file="ColliderBit/include/gambit/ColliderBit/MVA.h" line="49" column="1" bodyfile="ColliderBit/include/gambit/ColliderBit/MVA.h" bodystart="49" bodyend="65"/>
+    <listofallmembers>
+      <member refid="classTMVAReader_1a459ede99d152cc062d0c2c28ecb1af84" prot="public" virt="virtual"><scope>TMVAReader</scope><name>evaluate</name></member>
+      <member refid="classMVA_1a2a209343acf32d107d760aafa8a72be6" prot="public" virt="virtual"><scope>TMVAReader</scope><name>evaluateMulti</name></member>
+      <member refid="classMVA_1a7a79265a79af523d6e71e53ce8c803ef" prot="public" virt="virtual"><scope>TMVAReader</scope><name>evaluateMulti</name></member>
+      <member refid="classTMVAReader_1aabde18abdc928fd97604a58b40fdd0b1" prot="private" virt="non-virtual"><scope>TMVAReader</scope><name>m_bdt1</name></member>
+      <member refid="classTMVAReader_1a4e2923ae0f7351be8b7d8a277b6771cd" prot="private" virt="non-virtual"><scope>TMVAReader</scope><name>m_bdt2</name></member>
+      <member refid="classMVA_1a59a784ffd85493ed743ea74072e320db" prot="protected" virt="non-virtual"><scope>TMVAReader</scope><name>m_eventNumber</name></member>
+      <member refid="classMVA_1afc39495667bcea28a71ddf3f2b37a2eb" prot="protected" virt="non-virtual"><scope>TMVAReader</scope><name>m_name</name></member>
+      <member refid="classMVA_1ae260f84e040a2ac795f14254f3d3bd40" prot="protected" virt="non-virtual"><scope>TMVAReader</scope><name>m_variableDefs</name></member>
+      <member refid="classTMVAReader_1aacd241c6a0c58c37048c8276aca8a4be" prot="private" virt="non-virtual"><scope>TMVAReader</scope><name>m_variables</name></member>
+      <member refid="classMVA_1ac2ff190150aec65cea0690b36f34c719" prot="public" virt="non-virtual"><scope>TMVAReader</scope><name>MVA</name></member>
+      <member refid="classMVA_1adc0ecf353d0a92ab6154f7a159fc76bb" prot="public" virt="non-virtual"><scope>TMVAReader</scope><name>setEventNumber</name></member>
+      <member refid="classTMVAReader_1a91842c1906d84ce7730130e23b9968ce" prot="public" virt="non-virtual"><scope>TMVAReader</scope><name>TMVAReader</name></member>
+      <member refid="classTMVAReader_1acaaaf0d737c4066099998128f3371c08" prot="public" virt="non-virtual"><scope>TMVAReader</scope><name>~TMVAReader</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

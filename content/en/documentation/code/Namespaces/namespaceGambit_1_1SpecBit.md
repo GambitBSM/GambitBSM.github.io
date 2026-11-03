@@ -1609,7 +1609,7 @@ double get_a1(
 ```
 
 
-All 3 SM gauge couplings. The QedQcd documenation has the following to say about this calculations: { This will calculate the three gauge couplings of the Standard Model at the scale m2. It's a simple one-loop calculation only and no thresholds are assumed. Range of validity is electroweak to top scale. 
+All 3 SM gauge couplings. The QedQcd documentation has the following to say about this calculations: { This will calculate the three gauge couplings of the Standard Model at the scale m2. It's a simple one-loop calculation only and no thresholds are assumed. Range of validity is electroweak to top scale. 
 
 
 ### function get_Pole_mElectron
@@ -2759,4 +2759,4 @@ This function adds all entries of the spectrum object (as SLHAea) that need to b
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:33 +0000
+Updated on 2026-11-03 at 14:50:44 +0000

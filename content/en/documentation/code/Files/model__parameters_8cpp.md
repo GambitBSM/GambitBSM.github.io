@@ -25,6 +25,7 @@ description: "[No description available]"
   * Pat Scott 
 
  ([p.scott@imperial.ac.uk](mailto:p.scott@imperial.ac.uk)) 
+  * Patrick Stoecker ([stoecker@physik.rwth-aachen.de](mailto:stoecker@physik.rwth-aachen.de)) 
 
 
 **Date**: 
@@ -36,6 +37,7 @@ description: "[No description available]"
   * 2013 Oct 
   * 2014 Jan, Nov 
   * 2015 Sep
+  * 2026 Oct
 
 
 Definitions for ModelParameters class.
@@ -81,6 +83,10 @@ Authors (add name and date if you modify):
 ///  \date 2014 Jan, Nov
 ///  \date 2015 Sep
 ///
+///  \author Patrick Stoecker
+///          (stoecker@physik.rwth-aachen.de)
+///  \date 2026 Oct
+///
 ///  *********************************************
 
 
@@ -89,11 +95,9 @@ Authors (add name and date if you modify):
 #include <sstream>
 
 #include "gambit/Utils/model_parameters.hpp"
+#include "gambit/Utils/model_validation.hpp"
 #include "gambit/Utils/standalone_error_handlers.hpp"
 #include "gambit/Utils/local_info.hpp"
-#include "gambit/Elements/functors.hpp"
-#include "gambit/Models/claw_singleton.hpp"
-#include "gambit/Core/core_singleton.hpp"
 
 namespace Gambit 
 {
@@ -261,10 +265,13 @@ namespace Gambit
    void ModelParameters::setModelName (const std::string& in) { modelname = in; }
    void ModelParameters::setOutputName(const std::string& in) { outputname = in; }
 
+   /// Validity check of the model parameters
+   bool ModelParameters::isValid() const { return ModelValidationHandler::getInstance().validateModel(*this); }
+
 } //end Gambit namespace
 ```
 
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:33 +0000
+Updated on 2026-11-03 at 14:50:45 +0000

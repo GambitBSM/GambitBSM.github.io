@@ -1844,10 +1844,8 @@ Authors (add name and date if you modify):
 #ifndef __NeutrinoBit_rollcall_hpp__
 #define __NeutrinoBit_rollcall_hpp__
 
-#include "gambit/Utils/begin_ignore_warnings_eigen.hpp"
 #include <Eigen/Sparse>
 #include <Eigen/Dense>
-#include "gambit/Utils/end_ignore_warnings.hpp"
 
 #define MODULE NeutrinoBit
 #define REFERENCE Chrzaszcz:2019inj
@@ -2964,4 +2962,4 @@ START_MODULE
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:34 +0000
+Updated on 2026-11-03 at 14:50:46 +0000

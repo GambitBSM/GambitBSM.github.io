@@ -17,21 +17,33 @@ description: "[No description available]"
 | **[analyses/Analysis_ATLAS_13TeV_0LEP_139invfb.cpp](/documentation/code/files/analysis__atlas__13tev__0lep__139invfb_8cpp/#file-analyses-analysis-atlas-13tev-0lep-139invfb-cpp)**  |
 | **[analyses/Analysis_ATLAS_13TeV_0LEP_13invfb.cpp](/documentation/code/files/analysis__atlas__13tev__0lep__13invfb_8cpp/#file-analyses-analysis-atlas-13tev-0lep-13invfb-cpp)**  |
 | **[analyses/Analysis_ATLAS_13TeV_0LEP_36invfb.cpp](/documentation/code/files/analysis__atlas__13tev__0lep__36invfb_8cpp/#file-analyses-analysis-atlas-13tev-0lep-36invfb-cpp)**  |
+| **[analyses/Analysis_ATLAS_13TeV_0LEPStop_139invfb.cpp](/documentation/code/files/analysis__atlas__13tev__0lepstop__139invfb_8cpp/#file-analyses-analysis-atlas-13tev-0lepstop-139invfb-cpp)**  |
 | **[analyses/Analysis_ATLAS_13TeV_0LEPStop_36invfb.cpp](/documentation/code/files/analysis__atlas__13tev__0lepstop__36invfb_8cpp/#file-analyses-analysis-atlas-13tev-0lepstop-36invfb-cpp)**  |
 | **[analyses/Analysis_ATLAS_13TeV_1Lep2b_139invfb.cpp](/documentation/code/files/analysis__atlas__13tev__1lep2b__139invfb_8cpp/#file-analyses-analysis-atlas-13tev-1lep2b-139invfb-cpp)**  |
 | **[analyses/Analysis_ATLAS_13TeV_1LEPStop_36invfb.cpp](/documentation/code/files/analysis__atlas__13tev__1lepstop__36invfb_8cpp/#file-analyses-analysis-atlas-13tev-1lepstop-36invfb-cpp)**  |
+| **[analyses/Analysis_ATLAS_13TeV_1OR3LEP_StopHZ_139invfb.cpp](/documentation/code/files/analysis__atlas__13tev__1or3lep__stophz__139invfb_8cpp/#file-analyses-analysis-atlas-13tev-1or3lep-stophz-139invfb-cpp)**  |
 | **[analyses/Analysis_ATLAS_13TeV_2bMET_36invfb.cpp](/documentation/code/files/analysis__atlas__13tev__2bmet__36invfb_8cpp/#file-analyses-analysis-atlas-13tev-2bmet-36invfb-cpp)**  |
 | **[analyses/Analysis_ATLAS_13TeV_2BoostedBosons_139invfb.cpp](/documentation/code/files/analysis__atlas__13tev__2boostedbosons__139invfb_8cpp/#file-analyses-analysis-atlas-13tev-2boostedbosons-139invfb-cpp)**  |
+| **[analyses/Analysis_ATLAS_13TeV_2LEP0JET_EW_139invfb.cpp](/documentation/code/files/analysis__atlas__13tev__2lep0jet__ew__139invfb_8cpp/#file-analyses-analysis-atlas-13tev-2lep0jet-ew-139invfb-cpp)**  |
+| **[analyses/Analysis_ATLAS_13TeV_2LEPJETS_EW_139invfb.cpp](/documentation/code/files/analysis__atlas__13tev__2lepjets__ew__139invfb_8cpp/#file-analyses-analysis-atlas-13tev-2lepjets-ew-139invfb-cpp)**  |
+| **[analyses/Analysis_ATLAS_13TeV_2LEPJETS_RJR_139invfb.cpp](/documentation/code/files/analysis__atlas__13tev__2lepjets__rjr__139invfb_8cpp/#file-analyses-analysis-atlas-13tev-2lepjets-rjr-139invfb-cpp)**  |
+| **[analyses/Analysis_ATLAS_13TeV_2LEPsoft_139invfb.cpp](/documentation/code/files/analysis__atlas__13tev__2lepsoft__139invfb_8cpp/#file-analyses-analysis-atlas-13tev-2lepsoft-139invfb-cpp)**  |
 | **[analyses/Analysis_ATLAS_13TeV_2LEPStop_139invfb.cpp](/documentation/code/files/analysis__atlas__13tev__2lepstop__139invfb_8cpp/#file-analyses-analysis-atlas-13tev-2lepstop-139invfb-cpp)**  |
 | **[analyses/Analysis_ATLAS_13TeV_2LEPStop_36invfb.cpp](/documentation/code/files/analysis__atlas__13tev__2lepstop__36invfb_8cpp/#file-analyses-analysis-atlas-13tev-2lepstop-36invfb-cpp)**  |
+| **[analyses/Analysis_ATLAS_13TeV_2OR3LEP_139invfb.cpp](/documentation/code/files/analysis__atlas__13tev__2or3lep__139invfb_8cpp/#file-analyses-analysis-atlas-13tev-2or3lep-139invfb-cpp)**  |
 | **[analyses/Analysis_ATLAS_13TeV_2OSLEP_chargino_139invfb.cpp](/documentation/code/files/analysis__atlas__13tev__2oslep__chargino__139invfb_8cpp/#file-analyses-analysis-atlas-13tev-2oslep-chargino-139invfb-cpp)**  |
 | **[analyses/Analysis_ATLAS_13TeV_2OSLEP_chargino_80invfb.cpp](/documentation/code/files/analysis__atlas__13tev__2oslep__chargino__80invfb_8cpp/#file-analyses-analysis-atlas-13tev-2oslep-chargino-80invfb-cpp)**  |
 | **[analyses/Analysis_ATLAS_13TeV_2OSLEP_Z_139invfb.cpp](/documentation/code/files/analysis__atlas__13tev__2oslep__z__139invfb_8cpp/#file-analyses-analysis-atlas-13tev-2oslep-z-139invfb-cpp)**  |
 | **[analyses/Analysis_ATLAS_13TeV_3b_24invfb.cpp](/documentation/code/files/analysis__atlas__13tev__3b__24invfb_8cpp/#file-analyses-analysis-atlas-13tev-3b-24invfb-cpp)**  |
 | **[analyses/Analysis_ATLAS_13TeV_3b_36invfb.cpp](/documentation/code/files/analysis__atlas__13tev__3b__36invfb_8cpp/#file-analyses-analysis-atlas-13tev-3b-36invfb-cpp)**  |
+| **[analyses/Analysis_ATLAS_13TeV_3b_NN_139invfb.cpp](/documentation/code/files/analysis__atlas__13tev__3b__nn__139invfb_8cpp/#file-analyses-analysis-atlas-13tev-3b-nn-139invfb-cpp)**  |
 | **[analyses/Analysis_ATLAS_13TeV_3LEP_139invfb.cpp](/documentation/code/files/analysis__atlas__13tev__3lep__139invfb_8cpp/#file-analyses-analysis-atlas-13tev-3lep-139invfb-cpp)**  |
+| **[analyses/Analysis_ATLAS_13TeV_3LEP_eRJR_139invfb.cpp](/documentation/code/files/analysis__atlas__13tev__3lep__erjr__139invfb_8cpp/#file-analyses-analysis-atlas-13tev-3lep-erjr-139invfb-cpp)**  |
+| **[analyses/Analysis_ATLAS_13TeV_4b_139invfb.cpp](/documentation/code/files/analysis__atlas__13tev__4b__139invfb_8cpp/#file-analyses-analysis-atlas-13tev-4b-139invfb-cpp)**  |
 | **[analyses/Analysis_ATLAS_13TeV_4LEP_139invfb.cpp](/documentation/code/files/analysis__atlas__13tev__4lep__139invfb_8cpp/#file-analyses-analysis-atlas-13tev-4lep-139invfb-cpp)**  |
 | **[analyses/Analysis_ATLAS_13TeV_4LEP_36invfb.cpp](/documentation/code/files/analysis__atlas__13tev__4lep__36invfb_8cpp/#file-analyses-analysis-atlas-13tev-4lep-36invfb-cpp)**  |
+| **[analyses/Analysis_ATLAS_13TeV_bTaus_StopStau_139invfb.cpp](/documentation/code/files/analysis__atlas__13tev__btaus__stopstau__139invfb_8cpp/#file-analyses-analysis-atlas-13tev-btaus-stopstau-139invfb-cpp)**  |
+| **[analyses/Analysis_ATLAS_13TeV_EXOT_TT_WbWb_36invfb.cpp](/documentation/code/files/analysis__atlas__13tev__exot__tt__wbwb__36invfb_8cpp/#file-analyses-analysis-atlas-13tev-exot-tt-wbwb-36invfb-cpp)**  |
 | **[analyses/Analysis_ATLAS_13TeV_MONOJET_139infb.cpp](/documentation/code/files/analysis__atlas__13tev__monojet__139infb_8cpp/#file-analyses-analysis-atlas-13tev-monojet-139infb-cpp)**  |
 | **[analyses/Analysis_ATLAS_13TeV_MultiLEP_36invfb.cpp](/documentation/code/files/analysis__atlas__13tev__multilep__36invfb_8cpp/#file-analyses-analysis-atlas-13tev-multilep-36invfb-cpp)**  |
 | **[analyses/Analysis_ATLAS_13TeV_MultiLEP_confnote_36invfb.cpp](/documentation/code/files/analysis__atlas__13tev__multilep__confnote__36invfb_8cpp/#file-analyses-analysis-atlas-13tev-multilep-confnote-36invfb-cpp)**  |
@@ -50,12 +62,18 @@ description: "[No description available]"
 | **[analyses/Analysis_ATLAS_8TeV_2LEPEW_20invfb.cpp](/documentation/code/files/analysis__atlas__8tev__2lepew__20invfb_8cpp/#file-analyses-analysis-atlas-8tev-2lepew-20invfb-cpp)**  |
 | **[analyses/Analysis_ATLAS_8TeV_2LEPStop_20invfb.cpp](/documentation/code/files/analysis__atlas__8tev__2lepstop__20invfb_8cpp/#file-analyses-analysis-atlas-8tev-2lepstop-20invfb-cpp)**  |
 | **[analyses/Analysis_ATLAS_8TeV_3LEPEW_20invfb.cpp](/documentation/code/files/analysis__atlas__8tev__3lepew__20invfb_8cpp/#file-analyses-analysis-atlas-8tev-3lepew-20invfb-cpp)**  |
+| **[analyses/Analysis_Baselines.cpp](/documentation/code/files/analysis__baselines_8cpp/#file-analyses-analysis-baselines-cpp)**  |
 | **[analyses/Analysis_CMS_13TeV_0LEP_137invfb.cpp](/documentation/code/files/analysis__cms__13tev__0lep__137invfb_8cpp/#file-analyses-analysis-cms-13tev-0lep-137invfb-cpp)**  |
 | **[analyses/Analysis_CMS_13TeV_0LEP_13invfb.cpp](/documentation/code/files/analysis__cms__13tev__0lep__13invfb_8cpp/#file-analyses-analysis-cms-13tev-0lep-13invfb-cpp)**  |
 | **[analyses/Analysis_CMS_13TeV_0LEP_36invfb.cpp](/documentation/code/files/analysis__cms__13tev__0lep__36invfb_8cpp/#file-analyses-analysis-cms-13tev-0lep-36invfb-cpp)**  |
+| **[analyses/Analysis_CMS_13TeV_0LEP_chargino_VV_VH_137invfb.cpp](/documentation/code/files/analysis__cms__13tev__0lep__chargino__vv__vh__137invfb_8cpp/#file-analyses-analysis-cms-13tev-0lep-chargino-vv-vh-137invfb-cpp)**  |
+| **[analyses/Analysis_CMS_13TeV_0LEPStop_137invfb.cpp](/documentation/code/files/analysis__cms__13tev__0lepstop__137invfb_8cpp/#file-analyses-analysis-cms-13tev-0lepstop-137invfb-cpp)**  |
+| **[analyses/Analysis_CMS_13TeV_1LEPbb_137invfb.cpp](/documentation/code/files/analysis__cms__13tev__1lepbb__137invfb_8cpp/#file-analyses-analysis-cms-13tev-1lepbb-137invfb-cpp)**  |
 | **[analyses/Analysis_CMS_13TeV_1LEPbb_36invfb.cpp](/documentation/code/files/analysis__cms__13tev__1lepbb__36invfb_8cpp/#file-analyses-analysis-cms-13tev-1lepbb-36invfb-cpp)**  |
 | **[analyses/Analysis_CMS_13TeV_1LEPStop_36invfb.cpp](/documentation/code/files/analysis__cms__13tev__1lepstop__36invfb_8cpp/#file-analyses-analysis-cms-13tev-1lepstop-36invfb-cpp)**  |
 | **[analyses/Analysis_CMS_13TeV_1Photon1Lepton_36invfb.cpp](/documentation/code/files/analysis__cms__13tev__1photon1lepton__36invfb_8cpp/#file-analyses-analysis-cms-13tev-1photon1lepton-36invfb-cpp)**  |
+| **[analyses/Analysis_CMS_13TeV_2Higgs_4b_neutralino_137invfb.cpp](/documentation/code/files/analysis__cms__13tev__2higgs__4b__neutralino__137invfb_8cpp/#file-analyses-analysis-cms-13tev-2higgs-4b-neutralino-137invfb-cpp)**  |
+| **[analyses/Analysis_CMS_13TeV_2LEPsoft_137invfb.cpp](/documentation/code/files/analysis__cms__13tev__2lepsoft__137invfb_8cpp/#file-analyses-analysis-cms-13tev-2lepsoft-137invfb-cpp)**  |
 | **[analyses/Analysis_CMS_13TeV_2LEPsoft_36invfb.cpp](/documentation/code/files/analysis__cms__13tev__2lepsoft__36invfb_8cpp/#file-analyses-analysis-cms-13tev-2lepsoft-36invfb-cpp)**  |
 | **[analyses/Analysis_CMS_13TeV_2LEPStop_36invfb.cpp](/documentation/code/files/analysis__cms__13tev__2lepstop__36invfb_8cpp/#file-analyses-analysis-cms-13tev-2lepstop-36invfb-cpp)**  |
 | **[analyses/Analysis_CMS_13TeV_2OSLEP_137invfb.cpp](/documentation/code/files/analysis__cms__13tev__2oslep__137invfb_8cpp/#file-analyses-analysis-cms-13tev-2oslep-137invfb-cpp)**  |
@@ -69,12 +87,14 @@ description: "[No description available]"
 | **[analyses/Analysis_CMS_13TeV_MultiLEP_137invfb.cpp](/documentation/code/files/analysis__cms__13tev__multilep__137invfb_8cpp/#file-analyses-analysis-cms-13tev-multilep-137invfb-cpp)**  |
 | **[analyses/Analysis_CMS_13TeV_MultiLEP_36invfb.cpp](/documentation/code/files/analysis__cms__13tev__multilep__36invfb_8cpp/#file-analyses-analysis-cms-13tev-multilep-36invfb-cpp)**  |
 | **[analyses/Analysis_CMS_13TeV_MultiLEP_Full_36invfb.cpp](/documentation/code/files/analysis__cms__13tev__multilep__full__36invfb_8cpp/#file-analyses-analysis-cms-13tev-multilep-full-36invfb-cpp)**  |
+| **[analyses/Analysis_CMS_13TeV_Photon_GMSB_137invfb.cpp](/documentation/code/files/analysis__cms__13tev__photon__gmsb__137invfb_8cpp/#file-analyses-analysis-cms-13tev-photon-gmsb-137invfb-cpp)**  |
 | **[analyses/Analysis_CMS_13TeV_Photon_GMSB_36invfb.cpp](/documentation/code/files/analysis__cms__13tev__photon__gmsb__36invfb_8cpp/#file-analyses-analysis-cms-13tev-photon-gmsb-36invfb-cpp)**  |
 | **[analyses/Analysis_CMS_8TeV_1LEPDMTOP_20invfb.cpp](/documentation/code/files/analysis__cms__8tev__1lepdmtop__20invfb_8cpp/#file-analyses-analysis-cms-8tev-1lepdmtop-20invfb-cpp)**  |
 | **[analyses/Analysis_CMS_8TeV_2LEPDMTOP_20invfb.cpp](/documentation/code/files/analysis__cms__8tev__2lepdmtop__20invfb_8cpp/#file-analyses-analysis-cms-8tev-2lepdmtop-20invfb-cpp)**  |
 | **[analyses/Analysis_CMS_8TeV_MONOJET_20invfb.cpp](/documentation/code/files/analysis__cms__8tev__monojet__20invfb_8cpp/#file-analyses-analysis-cms-8tev-monojet-20invfb-cpp)**  |
 | **[analyses/Analysis_CMS_8TeV_MultiLEP_20invfb.cpp](/documentation/code/files/analysis__cms__8tev__multilep__20invfb_8cpp/#file-analyses-analysis-cms-8tev-multilep-20invfb-cpp)**  |
 | **[analyses/Analysis_Covariance.cpp](/documentation/code/files/analysis__covariance_8cpp/#file-analyses-analysis-covariance-cpp)**  |
+| **[analyses/Analysis_Dummy.cpp](/documentation/code/files/analysis__dummy_8cpp/#file-analyses-analysis-dummy-cpp)**  |
 | **[analyses/Analysis_Minimum.cpp](/documentation/code/files/analysis__minimum_8cpp/#file-analyses-analysis-minimum-cpp)**  |
 | **[analyses/AnalysisContainer.cpp](/documentation/code/files/analysiscontainer_8cpp/#file-analyses-analysiscontainer-cpp)**  |
 
@@ -85,4 +105,4 @@ description: "[No description available]"
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:35 +0000
+Updated on 2026-11-03 at 14:50:47 +0000

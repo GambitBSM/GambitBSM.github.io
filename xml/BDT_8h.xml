@@ -1,0 +1,197 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="BDT_8h" kind="file" language="C++">
+    <compoundname>BDT.h</compoundname>
+    <includes local="yes">TString.h</includes>
+    <includes local="no">vector</includes>
+    <includes local="no">map</includes>
+    <includes local="no">cassert</includes>
+    <includes local="no">memory</includes>
+    <includes local="no">cstdint</includes>
+    <includedby refid="BDT_8cpp" local="yes">BDT.cpp</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>BDT.h</label>
+        <link refid="BDT_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>TString.h</label>
+      </node>
+      <node id="5">
+        <label>cassert</label>
+      </node>
+      <node id="7">
+        <label>cstdint</label>
+      </node>
+      <node id="4">
+        <label>map</label>
+      </node>
+      <node id="6">
+        <label>memory</label>
+      </node>
+      <node id="3">
+        <label>vector</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="classMVAUtils_1_1BDT" prot="public">MVAUtils::BDT</innerclass>
+    <innernamespace refid="namespaceTMVA">TMVA</innernamespace>
+    <innernamespace refid="namespaceMVAUtils">MVAUtils</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">/*</highlight></codeline>
+<codeline lineno="2"><highlight class="comment"><sp/><sp/>Copyright<sp/>(C)<sp/>2002-2020<sp/>CERN<sp/>for<sp/>the<sp/>benefit<sp/>of<sp/>the<sp/>ATLAS<sp/>collaboration</highlight></codeline>
+<codeline lineno="3"><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment"><sp/><sp/>This<sp/>file<sp/>is<sp/>derived<sp/>from<sp/>MVAUtils/BDT.h<sp/>in<sp/>contrib/mvautils;<sp/>see</highlight></codeline>
+<codeline lineno="5"><highlight class="comment"><sp/><sp/>contrib/mvautils/include/mvautils/LICENSE.</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>BDT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BDT_H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;TString.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cassert&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cstdint&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">TMVA<sp/>{</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">DecisionTreeNode;</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">MethodBDT;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">TTree;</highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal">MVAUtils</highlight></codeline>
+<codeline lineno="24"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int32_t<sp/>index_t;<sp/></highlight><highlight class="comment">//!&lt;<sp/>The<sp/>index<sp/>type<sp/>of<sp/>the<sp/>node<sp/>in<sp/>the<sp/>vector</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>int8_t<sp/>var_t;<sp/></highlight><highlight class="comment">//!&lt;<sp/>The<sp/>variable<sp/>type<sp/>(i.e.,<sp/>the<sp/>index<sp/>of<sp/>the<sp/>variable<sp/>to<sp/>cut)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">IForest;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="32"><highlight class="comment"><sp/><sp/><sp/>/**<sp/>Simplified<sp/>Boosted<sp/>Regression<sp/>Tree,<sp/>support<sp/>TMVA,<sp/>lgbm,<sp/>and<sp/>xgboost.</highlight></codeline>
+<codeline lineno="33"><highlight class="comment"><sp/><sp/><sp/>*<sp/>Holds<sp/>a<sp/>forest<sp/>(vector<sp/>of<sp/>top<sp/>nodes<sp/>of<sp/>each<sp/>decision<sp/>tree)<sp/>and<sp/>a</highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/><sp/><sp/>*<sp/>constant<sp/>offset<sp/>or<sp/>set<sp/>of<sp/>weights<sp/>(not<sp/>always<sp/>used).</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/><sp/><sp/>*<sp/>Can<sp/>be<sp/>constructed<sp/>from<sp/>TMVA::MethodBDT<sp/>or<sp/>a<sp/>TTree.<sp/>Each<sp/>entry</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/><sp/><sp/>*<sp/>of<sp/>the<sp/>TTree<sp/>represents<sp/>a<sp/>binary<sp/>tree<sp/>and<sp/>each<sp/>element<sp/>of<sp/>the</highlight></codeline>
+<codeline lineno="38"><highlight class="comment"><sp/><sp/><sp/>*<sp/>vectors<sp/>stored<sp/>in<sp/>the<sp/>TTree<sp/>represent<sp/>a<sp/>node.</highlight></codeline>
+<codeline lineno="39"><highlight class="comment"><sp/><sp/><sp/>*</highlight></codeline>
+<codeline lineno="40"><highlight class="comment"><sp/><sp/><sp/>*<sp/>The<sp/>response<sp/>can<sp/>be<sp/>evaluated<sp/>from<sp/>a<sp/>vector<sp/>of<sp/>floats<sp/>or<sp/>a<sp/>vector</highlight></codeline>
+<codeline lineno="41"><highlight class="comment"><sp/><sp/><sp/>*<sp/>of<sp/>pointers<sp/>(to<sp/>avoid<sp/>creating<sp/>vectors<sp/>at<sp/>each<sp/>call)<sp/>which<sp/>can<sp/>be</highlight></codeline>
+<codeline lineno="42"><highlight class="comment"><sp/><sp/><sp/>*<sp/>stored<sp/>internally<sp/>(m_pointers)</highlight></codeline>
+<codeline lineno="43"><highlight class="comment"><sp/><sp/><sp/>**/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45" refid="classMVAUtils_1_1BDT" refkind="compound"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="classMVAUtils_1_1BDT" kindref="compound">BDT</ref></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="47"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="48"><highlight class="comment"><sp/><sp/><sp/><sp/>/**<sp/>Constructor.<sp/>The<sp/>input<sp/>tree<sp/>must<sp/>be<sp/>created<sp/>with</highlight></codeline>
+<codeline lineno="49"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/>convertLGBMToRootTree.py<sp/>(for<sp/>lgbm<sp/>training)<sp/>or<sp/>with</highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/>convertXGBoostToRootTree.py<sp/>(for<sp/>xgboost<sp/>training)<sp/>or<sp/>with</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>*<sp/><sp/>convertXmlToRootTree<sp/>(for<sp/>tmva<sp/>training)</highlight></codeline>
+<codeline lineno="52"><highlight class="comment"><sp/><sp/><sp/><sp/><sp/>**/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="53" refid="classMVAUtils_1_1BDT_1a08c21fc6752c54cc01a01098c302e1d3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classMVAUtils_1_1BDT_1a08c21fc6752c54cc01a01098c302e1d3" kindref="member">BDT</ref>(TTree<sp/>*tree);</highlight><highlight class="comment">//ctor<sp/>TTree</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">explicit</highlight><highlight class="normal"><sp/><ref refid="classMVAUtils_1_1BDT_1a08c21fc6752c54cc01a01098c302e1d3" kindref="member">BDT</ref>(TMVA::MethodBDT<sp/>*bdt,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>isRegression<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">,<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>useYesNoLeaf<sp/>=<sp/></highlight><highlight class="keyword">false</highlight><highlight class="normal">);</highlight><highlight class="comment">//TMVA...</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="55"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classMVAUtils_1_1BDT" kindref="compound">~BDT</ref>();<sp/></highlight><highlight class="comment">//dtor</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="56"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="57"><highlight class="comment"><sp/><sp/><sp/><sp/>/**<sp/>Number<sp/>of<sp/>trees<sp/>in<sp/>the<sp/>whole<sp/>forest<sp/>**/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="58"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classMVAUtils_1_1BDT_1a620a9d3ac2d0d1c325f626b7eaaed4bb" kindref="member">GetNTrees</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="59"><highlight class="comment"><sp/><sp/><sp/><sp/>/**<sp/>Number<sp/>of<sp/>variables<sp/>expected<sp/>in<sp/>the<sp/>inputs<sp/>**/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="classMVAUtils_1_1BDT_1a47156e2e7e4c0797ed87bd62a3343351" kindref="member">GetNVars</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="61"><highlight class="comment"><sp/><sp/><sp/><sp/>/**<sp/>Get<sp/>the<sp/>offset<sp/>to<sp/>the<sp/>whole<sp/>forest<sp/>**/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="62"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classMVAUtils_1_1BDT_1a5dcb82209fdd05bebf5b2fdccb73655d" kindref="member">GetOffset</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>;</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="63"><highlight class="comment"><sp/><sp/><sp/><sp/>/**<sp/>Get<sp/>response<sp/>of<sp/>the<sp/>forest,<sp/>for<sp/>regression<sp/>**/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="64"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classMVAUtils_1_1BDT_1a0259f11acfdf41fcf9c9b9cdf1d72493" kindref="member">GetResponse</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;float&gt;&amp;<sp/>values)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="65"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classMVAUtils_1_1BDT_1a0259f11acfdf41fcf9c9b9cdf1d72493" kindref="member">GetResponse</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;float*&gt;&amp;<sp/>pointers)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classMVAUtils_1_1BDT_1a0259f11acfdf41fcf9c9b9cdf1d72493" kindref="member">GetResponse</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="68"><highlight class="comment"><sp/><sp/><sp/><sp/>/**<sp/>Get<sp/>response<sp/>of<sp/>the<sp/>forest,<sp/>for<sp/>classification<sp/>**/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="69"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classMVAUtils_1_1BDT_1ab13e529cbd135abf2741fcd951b6f8aa" kindref="member">GetClassification</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;float&gt;&amp;<sp/>values)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classMVAUtils_1_1BDT_1ab13e529cbd135abf2741fcd951b6f8aa" kindref="member">GetClassification</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;float*&gt;&amp;<sp/>pointers)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="71"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classMVAUtils_1_1BDT_1ab13e529cbd135abf2741fcd951b6f8aa" kindref="member">GetClassification</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"></highlight></codeline>
+<codeline lineno="73"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>TMVA<sp/>specific:<sp/>return<sp/>2.0/(1.0+exp(-2.0*sum))-1,<sp/>with<sp/>no<sp/>offset.</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>GetGradBoostMVA(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;float&gt;&amp;<sp/>values)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>GetGradBoostMVA(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;float*&gt;&amp;<sp/>pointers)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="77"><highlight class="comment"><sp/><sp/><sp/><sp/>/**<sp/>Get<sp/>response<sp/>of<sp/>the<sp/>forest,<sp/>for<sp/>multiclassification<sp/>(e.g.<sp/>b-tagging)<sp/>**/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;float&gt;<sp/><ref refid="classMVAUtils_1_1BDT_1ac87f8aa8523174f72c6aea81c6e32da7" kindref="member">GetMultiResponse</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;float&gt;&amp;<sp/>values,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numClasses)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;float&gt;<sp/><ref refid="classMVAUtils_1_1BDT_1ac87f8aa8523174f72c6aea81c6e32da7" kindref="member">GetMultiResponse</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;float*&gt;&amp;<sp/>pointers,<sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numClasses)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;float&gt;<sp/><ref refid="classMVAUtils_1_1BDT_1ac87f8aa8523174f72c6aea81c6e32da7" kindref="member">GetMultiResponse</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numClasses)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="82"><highlight class="comment"><sp/><sp/><sp/><sp/>/**<sp/>Return<sp/>the<sp/>values<sp/>corresponding<sp/>to<sp/>m_pointers<sp/>(or<sp/>an<sp/>empty<sp/>vector)<sp/>**/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;float&gt;<sp/><ref refid="classMVAUtils_1_1BDT_1a2930975f21cbf2df42a8ab9069788078" kindref="member">GetValues</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="84"><highlight class="comment"><sp/><sp/><sp/><sp/>/**<sp/>Return<sp/>stored<sp/>pointers<sp/>(which<sp/>are<sp/>used<sp/>by<sp/>methods<sp/>with<sp/>no<sp/>args)<sp/>**/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;float*&gt;&amp;<sp/><ref refid="classMVAUtils_1_1BDT_1a28e432bc4fbf6381061acc87b1debc1b" kindref="member">GetPointers</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="86"><highlight class="comment"><sp/><sp/><sp/><sp/>/**<sp/>Set<sp/>the<sp/>stored<sp/>pointers<sp/>so<sp/>that<sp/>one<sp/>can<sp/>use<sp/>methods<sp/>with<sp/>no<sp/>args<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="87"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMVAUtils_1_1BDT_1a260e14b765651d8f16f200d4531dde7b" kindref="member">SetPointers</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;float*&gt;&amp;<sp/>pointers);</highlight></codeline>
+<codeline lineno="88"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="89"><highlight class="comment"><sp/><sp/><sp/><sp/>/**<sp/>Return<sp/>a<sp/>TTree<sp/>representing<sp/>the<sp/>BDT:</highlight></codeline>
+<codeline lineno="90"><highlight class="comment"><sp/><sp/><sp/><sp/>*<sp/>each<sp/>entry<sp/>is<sp/>a<sp/>binary<sp/>tree,<sp/>each<sp/>element<sp/>of<sp/>the<sp/>vectors<sp/>is<sp/>a<sp/>node</highlight></codeline>
+<codeline lineno="91"><highlight class="comment"><sp/><sp/><sp/><sp/>**/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="92"><highlight class="normal"><sp/><sp/><sp/><sp/>TTree*<sp/><ref refid="classMVAUtils_1_1BDT_1a5c59619f8f67b6ef8273d1ad642b705e" kindref="member">WriteTree</ref>(TString<sp/>name<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;BDT&quot;</highlight><highlight class="normal">)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="94"><highlight class="comment"><sp/><sp/><sp/><sp/>/**<sp/>for<sp/>debugging,<sp/>print<sp/>out<sp/>tree<sp/>or<sp/>forest<sp/>to<sp/>stdout<sp/>*/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="95"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMVAUtils_1_1BDT_1abda487d74edce1581a044d7a73e7c540" kindref="member">PrintForest</ref>()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>PrintTree(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>itree)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="98"><highlight class="comment"><sp/><sp/><sp/><sp/>/**<sp/>for<sp/>debugging,<sp/>return<sp/>the<sp/>response<sp/>of<sp/>a<sp/>sigle<sp/>tree<sp/>given<sp/>the<sp/>index<sp/>of<sp/>its<sp/>top<sp/>node<sp/>**/</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classMVAUtils_1_1BDT_1abd8d630341eec58cc49cb2b40e9120b4" kindref="member">GetTreeResponse</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;float&gt;&amp;<sp/>values,<sp/>MVAUtils::index_t<sp/>index)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="100"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/><ref refid="classMVAUtils_1_1BDT_1abd8d630341eec58cc49cb2b40e9120b4" kindref="member">GetTreeResponse</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;float*&gt;&amp;<sp/>pointers,<sp/>MVAUtils::index_t<sp/>index)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"><sp/><sp/><sp/><sp/>std::unique_ptr&lt;IForest&gt;<sp/>m_forest;<sp/><sp/></highlight><highlight class="comment">//!&lt;<sp/>the<sp/>implementation<sp/>of<sp/>the<sp/>forest,<sp/>doing<sp/>the<sp/>hard<sp/>work</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;float*&gt;<sp/>m_pointers;<sp/></highlight><highlight class="comment">//!&lt;<sp/>where<sp/>vars<sp/>to<sp/>cut<sp/>on<sp/>can<sp/>be<sp/>set<sp/>(but<sp/>can<sp/>also<sp/>be<sp/>passed)</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="105"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="106"><highlight class="normal"></highlight></codeline>
+<codeline lineno="107"><highlight class="normal"></highlight></codeline>
+<codeline lineno="108"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>BDT::GetResponse()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="109"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(m_pointers.size()<sp/>?<sp/>GetResponse(m_pointers)<sp/>:<sp/>-9999.);</highlight></codeline>
+<codeline lineno="110"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="112"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">float</highlight><highlight class="normal"><sp/>BDT::GetClassification()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="113"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(m_pointers.size()<sp/>?<sp/>GetClassification(m_pointers)<sp/>:<sp/>-9999.);</highlight></codeline>
+<codeline lineno="114"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="115"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>std::vector&lt;float&gt;<sp/><ref refid="classMVAUtils_1_1BDT_1ac87f8aa8523174f72c6aea81c6e32da7" kindref="member">BDT::GetMultiResponse</ref>(</highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>numClasses)</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>(m_pointers.size()<sp/>?<sp/><ref refid="classMVAUtils_1_1BDT_1ac87f8aa8523174f72c6aea81c6e32da7" kindref="member">GetMultiResponse</ref>(m_pointers,<sp/>numClasses)<sp/>:<sp/>std::vector&lt;float&gt;());</highlight></codeline>
+<codeline lineno="118"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="119"><highlight class="normal"></highlight></codeline>
+<codeline lineno="120" refid="classMVAUtils_1_1BDT_1a2930975f21cbf2df42a8ab9069788078" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/>std::vector&lt;float&gt;<sp/><ref refid="classMVAUtils_1_1BDT_1a2930975f21cbf2df42a8ab9069788078" kindref="member">BDT::GetValues</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="121"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;float&gt;<sp/>result;</highlight></codeline>
+<codeline lineno="122"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">float</highlight><highlight class="normal">*<sp/>ptr<sp/>:<sp/>m_pointers)</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="124"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>assert<sp/>(ptr);</highlight></codeline>
+<codeline lineno="125"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>result.push_back(*ptr);</highlight></codeline>
+<codeline lineno="126"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="127"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>result;</highlight></codeline>
+<codeline lineno="128"><highlight class="normal"><sp/><sp/>}</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="130" refid="classMVAUtils_1_1BDT_1a28e432bc4fbf6381061acc87b1debc1b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;float*&gt;&amp;<sp/><ref refid="classMVAUtils_1_1BDT_1a28e432bc4fbf6381061acc87b1debc1b" kindref="member">BDT::GetPointers</ref>()</highlight><highlight class="keyword"><sp/>const<sp/></highlight><highlight class="normal">{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>m_pointers;<sp/>}</highlight></codeline>
+<codeline lineno="131" refid="classMVAUtils_1_1BDT_1a260e14b765651d8f16f200d4531dde7b" refkind="member"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">inline</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="classMVAUtils_1_1BDT_1a260e14b765651d8f16f200d4531dde7b" kindref="member">BDT::SetPointers</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::vector&lt;float*&gt;&amp;<sp/>pointers)<sp/>{<sp/>m_pointers<sp/>=<sp/>pointers;<sp/>}</highlight></codeline>
+<codeline lineno="132"><highlight class="normal"></highlight></codeline>
+<codeline lineno="133"><highlight class="normal"></highlight></codeline>
+<codeline lineno="134"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="135"><highlight class="normal"><sp/><sp/></highlight></codeline>
+<codeline lineno="136"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="138"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight></codeline>
+    </programlisting>
+    <location file="ColliderBit/include/gambit/ColliderBit/BDT.h"/>
+  </compounddef>
+</doxygen>

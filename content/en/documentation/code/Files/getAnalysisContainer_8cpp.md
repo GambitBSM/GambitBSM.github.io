@@ -21,7 +21,6 @@ description: "[No description available]"
 |                | Name           |
 | -------------- | -------------- |
 |  | **[DEBUG_PREFIX](/documentation/code/files/getanalysiscontainer_8cpp/#define-debug-prefix)**  |
-|  | **[GET_ANALYSIS_CONTAINER](/documentation/code/files/getanalysiscontainer_8cpp/#define-get-analysis-container)**(NAME, EXPERIMENT) <br>Retrieve a container for analyses with EXPERIMENT.  |
 
 ## Detailed Description
 
@@ -72,23 +71,6 @@ Authors (add name and date if you modify):
 #define DEBUG_PREFIX "DEBUG: OMP thread " << omp_get_thread_num() << ":  " << __FILE__ << ":" << __LINE__ << ":  "
 ```
 
-
-### define GET_ANALYSIS_CONTAINER
-
-```
-#define GET_ANALYSIS_CONTAINER(
-    NAME,
-    EXPERIMENT
-)
-    void NAME(AnalysisContainer& result)                           \
-    {                                                              \
-      using namespace Pipes::NAME;                                 \
-      getAnalysisContainer(result, #EXPERIMENT, *Dep::RunMC,       \
-       *Dep::TotalCrossSection, *Loop::iteration);                 \
-    }
-```
-
-Retrieve a container for analyses with EXPERIMENT. 
 
 ## Source code
 
@@ -203,19 +185,51 @@ namespace Gambit
 
     }
 
-    /// Retrieve a container for analyses with EXPERIMENT
-    #define GET_ANALYSIS_CONTAINER(NAME, EXPERIMENT)               \
-    void NAME(AnalysisContainer& result)                           \
-    {                                                              \
-      using namespace Pipes::NAME;                                 \
-      getAnalysisContainer(result, #EXPERIMENT, *Dep::RunMC,       \
-       *Dep::TotalCrossSection, *Loop::iteration);                 \
+    /// Retrieve a container for analyses with a given experiment
+    void getATLASAnalysisContainer(AnalysisContainer& result)
+    {
+      using namespace Pipes::getATLASAnalysisContainer;
+
+      xsec_container Totalxsec = *Dep::TotalCrossSection;
+
+      getAnalysisContainer(result, "ATLAS", *Dep::RunMC, Totalxsec, *Loop::iteration);
+
+      if (*Loop::iteration == COLLIDER_INIT_OMP)
+      {
+        static bool drop_accepted_events_file = runOptions->getValueOrDef<bool>(false, "drop_accepted_events_file");
+        result.set_store_accepted_event_IDs(drop_accepted_events_file);
+      }
     }
 
-    GET_ANALYSIS_CONTAINER(getATLASAnalysisContainer, ATLAS)
-    GET_ANALYSIS_CONTAINER(getCMSAnalysisContainer, CMS)
-    GET_ANALYSIS_CONTAINER(getIdentityAnalysisContainer, Identity)
+    void getCMSAnalysisContainer(AnalysisContainer& result)
+    {
+      using namespace Pipes::getCMSAnalysisContainer;
 
+      xsec_container Totalxsec = *Dep::TotalCrossSection;
+
+      getAnalysisContainer(result, "CMS", *Dep::RunMC, Totalxsec, *Loop::iteration);
+
+      if (*Loop::iteration == COLLIDER_INIT_OMP)
+      {
+        static bool drop_accepted_events_file = runOptions->getValueOrDef<bool>(false, "drop_accepted_events_file");
+        result.set_store_accepted_event_IDs(drop_accepted_events_file);
+      }
+    }
+
+    void getIdentityAnalysisContainer(AnalysisContainer& result)
+    {
+      using namespace Pipes::getIdentityAnalysisContainer;
+
+      xsec_container Totalxsec = *Dep::TotalCrossSection;
+
+      getAnalysisContainer(result, "Identity", *Dep::RunMC, Totalxsec, *Loop::iteration);
+
+      if (*Loop::iteration == COLLIDER_INIT_OMP)
+      {
+        static bool drop_accepted_events_file = runOptions->getValueOrDef<bool>(false, "drop_accepted_events_file");
+        result.set_store_accepted_event_IDs(drop_accepted_events_file);
+      }
+    }
 
   }
 }
@@ -224,4 +238,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:36 +0000
+Updated on 2026-11-03 at 14:50:48 +0000

@@ -108,7 +108,7 @@ LOAD_LIBRARY
  * interface to the library functions/variables at module level. */
 
 /* Syntax for BE_FUNCTION (same as for any other backend):
- * BE_FUNCTION([choose function name], [type], [arguement types], "[exact symbol name]", "[choose capability name]")
+ * BE_FUNCTION([choose function name], [type], [argument types], "[exact symbol name]", "[choose capability name]")
  */
 
 BE_FUNCTION(import_slha_string, void, (std::string&), "import_slha_string", "salami_import_slha_string")
@@ -143,4 +143,4 @@ BE_FUNCTION(get_xsection, PyDict, (iipair&, double&, double&), "get_xsection", "
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:36 +0000
+Updated on 2026-11-03 at 14:50:49 +0000

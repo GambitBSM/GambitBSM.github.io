@@ -153,7 +153,7 @@ namespace Gambit
                     unit[i] = 0.5 * (boost::math::erf(rotated[i] / M_SQRT2) + 1.0);
             }
 
-            double log_prior_density(const std::unordered_map<std::string, double> &physical) const
+            double log_prior_density(const std::unordered_map<std::string, double> &physical) const override
             {
                 static double norm = 0.5 * std::log(2. * M_PI * std::pow(col.DetSqrt(), 2));
                 std::vector<double> vec(param_names.size());
@@ -177,4 +177,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:33 +0000
+Updated on 2026-11-03 at 14:50:45 +0000

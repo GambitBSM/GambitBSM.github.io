@@ -191,8 +191,11 @@ BE_INI_FUNCTION
      bool present = true;
 
      try {width = tbl->at("h0_1").width_in_GeV;}
-     catch (std::exception& e) {backend_error().raise(LOCAL_INFO, "Higgs width missing from"
-             "decay table.");}
+     catch (std::exception& e)
+     {
+        backend_error().raise(LOCAL_INFO, "Higgs width missing from decay table.");
+        return; // Just silence a warning
+     }
      error = assignVal((char*)"wh", width);
      if (error != 0) backend_error().raise(LOCAL_INFO, "Unable to set Higgs width in"
              " MicrOmegas. MicrOmegas error code: " + std::to_string(error));
@@ -259,4 +262,4 @@ END_BE_INI_FUNCTION
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:36 +0000
+Updated on 2026-11-03 at 14:50:49 +0000

@@ -14,7 +14,7 @@
     <includes refid="baseprinter_8hpp" local="yes">gambit/Printers/baseprinter.hpp</includes>
     <includes refid="printermanager_8hpp" local="yes">gambit/Printers/printermanager.hpp</includes>
     <incdepgraph>
-      <node id="111">
+      <node id="112">
         <label>gambit/Backends/backend_info.hpp</label>
         <link refid="backend__info_8hpp"/>
         <childnode refid="27" relation="include">
@@ -26,42 +26,30 @@
         <childnode refid="61" relation="include">
         </childnode>
       </node>
-      <node id="110">
+      <node id="111">
         <label>gambit/Backends/backend_singleton.hpp</label>
         <link refid="backend__singleton_8hpp"/>
-        <childnode refid="111" relation="include">
+        <childnode refid="112" relation="include">
         </childnode>
       </node>
       <node id="107">
         <label>gambit/Backends/default_bossed_versions.hpp</label>
         <link refid="default__bossed__versions_8hpp"/>
       </node>
-      <node id="108">
-        <label>gambit/Backends/mathematica_variable.hpp</label>
-        <link refid="mathematica__variable_8hpp"/>
-        <childnode refid="109" relation="include">
-        </childnode>
-        <childnode refid="110" relation="include">
-        </childnode>
-        <childnode refid="80" relation="include">
-        </childnode>
-        <childnode refid="112" relation="include">
-        </childnode>
-      </node>
-      <node id="114">
+      <node id="110">
         <label>gambit/Backends/python_helpers.hpp</label>
         <link refid="python__helpers_8hpp"/>
       </node>
-      <node id="113">
+      <node id="108">
         <label>gambit/Backends/python_variable.hpp</label>
         <link refid="python__variable_8hpp"/>
         <childnode refid="80" relation="include">
         </childnode>
         <childnode refid="109" relation="include">
         </childnode>
-        <childnode refid="114" relation="include">
-        </childnode>
         <childnode refid="110" relation="include">
+        </childnode>
+        <childnode refid="111" relation="include">
         </childnode>
       </node>
       <node id="99">
@@ -219,8 +207,6 @@
         </childnode>
         <childnode refid="113" relation="include">
         </childnode>
-        <childnode refid="115" relation="include">
-        </childnode>
       </node>
       <node id="87">
         <label>gambit/Elements/slhaea_spec_helpers.hpp</label>
@@ -311,9 +297,9 @@
         <link refid="types__rollcall_8hpp"/>
         <childnode refid="72" relation="include">
         </childnode>
-        <childnode refid="116" relation="include">
+        <childnode refid="114" relation="include">
         </childnode>
-        <childnode refid="117" relation="include">
+        <childnode refid="115" relation="include">
         </childnode>
       </node>
       <node id="105">
@@ -468,7 +454,7 @@
         <childnode refid="30" relation="include">
         </childnode>
       </node>
-      <node id="118">
+      <node id="116">
         <label>gambit/Printers/printermanager.hpp</label>
         <link refid="printermanager_8hpp"/>
         <childnode refid="2" relation="include">
@@ -805,7 +791,7 @@
         </childnode>
         <childnode refid="38" relation="include">
         </childnode>
-        <childnode refid="118" relation="include">
+        <childnode refid="116" relation="include">
         </childnode>
       </node>
       <node id="76">
@@ -822,9 +808,6 @@
       </node>
       <node id="82">
         <label>boost/algorithm/string/classification.hpp</label>
-      </node>
-      <node id="112">
-        <label>boost/algorithm/string/replace.hpp</label>
       </node>
       <node id="81">
         <label>boost/algorithm/string/split.hpp</label>
@@ -910,13 +893,13 @@
       <node id="47">
         <label>fstream</label>
       </node>
-      <node id="115">
+      <node id="113">
         <label>gambit/Backends/backend_types_rollcall.hpp</label>
       </node>
-      <node id="116">
+      <node id="114">
         <label>gambit/Elements/module_types_rollcall.hpp</label>
       </node>
-      <node id="117">
+      <node id="115">
         <label>gambit/Models/model_types_rollcall.hpp</label>
       </node>
       <node id="80">
@@ -1194,7 +1177,7 @@ Distantly inspired by SUFIT classes of the same name by Johan Lundberg, Aug 2011
 <codeline lineno="183"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="184"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="185"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Retrieve<sp/>the<sp/>identity<sp/>of<sp/>the<sp/>exception.</highlight></codeline>
-<codeline lineno="186"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>exception::what()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>throw()</highlight></codeline>
+<codeline lineno="186"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>exception::what()<sp/>const<sp/>noexcept</highlight></codeline>
 <codeline lineno="187"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="188"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>myWhat.c_str();</highlight></codeline>
 <codeline lineno="189"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
@@ -1212,7 +1195,7 @@ Distantly inspired by SUFIT classes of the same name by Johan Lundberg, Aug 2011
 <codeline lineno="201"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">if</highlight><highlight class="normal"><sp/>(isFatal)<sp/>throw_iff_outside_parallel();</highlight></codeline>
 <codeline lineno="202"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="203"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
-<codeline lineno="204"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Log<sp/>the<sp/>exception<sp/>and<sp/>throw<sp/>it<sp/>regardless<sp/>of<sp/>whether<sp/>is<sp/>is<sp/>fatal<sp/>or<sp/>not.</highlight></codeline>
+<codeline lineno="204"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Log<sp/>the<sp/>exception<sp/>and<sp/>throw<sp/>it<sp/>regardless<sp/>of<sp/>whether<sp/>it<sp/>is<sp/>fatal<sp/>or<sp/>not.</highlight></codeline>
 <codeline lineno="205"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>exception::forced_throw(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>origin,<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>specific_message)</highlight></codeline>
 <codeline lineno="206"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="207"><highlight class="normal"></highlight><highlight class="preprocessor"><sp/><sp/><sp/><sp/><sp/><sp/>#pragma<sp/>omp<sp/>critical<sp/>(GAMBIT_exception)</highlight><highlight class="normal"></highlight></codeline>
@@ -1376,7 +1359,7 @@ Distantly inspired by SUFIT classes of the same name by Johan Lundberg, Aug 2011
 <codeline lineno="365"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>special_exception::special_exception(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>what)<sp/>:<sp/>myWhat(what),<sp/>myMessage(</highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)<sp/>{}</highlight></codeline>
 <codeline lineno="366"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="367"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Retrieve<sp/>the<sp/>identity<sp/>of<sp/>the<sp/>exception.</highlight></codeline>
-<codeline lineno="368"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>special_exception::what()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>throw()</highlight></codeline>
+<codeline lineno="368"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>special_exception::what()<sp/>const<sp/>noexcept</highlight></codeline>
 <codeline lineno="369"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
 <codeline lineno="370"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>temp;</highlight></codeline>
 <codeline lineno="371"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/>temp<sp/>=<sp/>myWhat;</highlight></codeline>
@@ -1535,22 +1518,22 @@ Distantly inspired by SUFIT classes of the same name by Johan Lundberg, Aug 2011
 <codeline lineno="524"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>@{<sp/>SilentShutdownException<sp/>member<sp/>functions</highlight></codeline>
 <codeline lineno="525"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>SilentShutdownException::SilentShutdownException()<sp/>{}</highlight></codeline>
 <codeline lineno="526"><highlight class="normal"><sp/><sp/><sp/><sp/>SilentShutdownException::SilentShutdownException(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>message)<sp/>:<sp/>myWhat(message)<sp/>{}</highlight></codeline>
-<codeline lineno="527"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>SilentShutdownException::what()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>throw()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>myWhat.c_str();<sp/>}</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="527"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>SilentShutdownException::what()<sp/>const<sp/>noexcept<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>myWhat.c_str();<sp/>}</highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="528"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>@}</highlight></codeline>
 <codeline lineno="529"><highlight class="comment"></highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="530"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>@{<sp/>SoftShutdownException<sp/>member<sp/>functions</highlight></codeline>
 <codeline lineno="531"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>SoftShutdownException::SoftShutdownException(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>message)<sp/>:<sp/>myWhat(message)<sp/>{}</highlight></codeline>
-<codeline lineno="532"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>SoftShutdownException::what()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>throw()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>myWhat.c_str();<sp/>}</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="532"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>SoftShutdownException::what()<sp/>const<sp/>noexcept<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>myWhat.c_str();<sp/>}</highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="533"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>@}</highlight></codeline>
 <codeline lineno="534"><highlight class="comment"></highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="535"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>@{<sp/>HardShutdownException<sp/>member<sp/>functions</highlight></codeline>
 <codeline lineno="536"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>HardShutdownException::HardShutdownException(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>message)<sp/>:<sp/>myWhat(message)<sp/>{}</highlight></codeline>
-<codeline lineno="537"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>HardShutdownException::what()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>throw()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>myWhat.c_str();<sp/>}</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="537"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>HardShutdownException::what()<sp/>const<sp/>noexcept<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>myWhat.c_str();<sp/>}</highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="538"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>@}</highlight></codeline>
 <codeline lineno="539"><highlight class="comment"></highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="540"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>@{<sp/>MPIShutdownException<sp/>member<sp/>functions</highlight></codeline>
 <codeline lineno="541"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>MPIShutdownException::MPIShutdownException(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>message)<sp/>:<sp/>myWhat(message)<sp/>{}</highlight></codeline>
-<codeline lineno="542"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>MPIShutdownException::what()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>throw()<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>myWhat.c_str();<sp/>}</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="542"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal">*<sp/>MPIShutdownException::what()<sp/>const<sp/>noexcept<sp/>{<sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>myWhat.c_str();<sp/>}</highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="543"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>@}</highlight></codeline>
 <codeline lineno="544"><highlight class="comment"></highlight><highlight class="comment"></highlight></codeline>
 <codeline lineno="545"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Global<sp/>instance<sp/>of<sp/>piped<sp/>invalid<sp/>point<sp/>class.</highlight></codeline>

@@ -1,0 +1,235 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.4" xml:lang="en-US">
+  <compounddef id="model__validation_8hpp" kind="file" language="C++">
+    <compoundname>model_validation.hpp</compoundname>
+    <includes local="no">functional</includes>
+    <includes local="no">map</includes>
+    <includes local="no">string</includes>
+    <includes refid="export__symbols_8hpp" local="yes">gambit/Utils/export_symbols.hpp</includes>
+    <includedby refid="depresolver_8cpp" local="yes">depresolver.cpp</includedby>
+    <includedby refid="gambit_8cpp" local="yes">gambit.cpp</includedby>
+    <includedby refid="model__macros_8hpp" local="yes">model_macros.hpp</includedby>
+    <includedby refid="model__parameters_8cpp" local="yes">model_parameters.cpp</includedby>
+    <includedby refid="model__validation_8cpp" local="yes">model_validation.cpp</includedby>
+    <incdepgraph>
+      <node id="5">
+        <label>gambit/Utils/export_symbols.hpp</label>
+        <link refid="export__symbols_8hpp"/>
+      </node>
+      <node id="1">
+        <label>model_validation.hpp</label>
+        <link refid="model__validation_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>functional</label>
+      </node>
+      <node id="3">
+        <label>map</label>
+      </node>
+      <node id="4">
+        <label>string</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>depresolver.cpp</label>
+        <link refid="depresolver_8cpp"/>
+      </node>
+      <node id="3">
+        <label>gambit.cpp</label>
+        <link refid="gambit_8cpp"/>
+      </node>
+      <node id="4">
+        <label>model_macros.hpp</label>
+        <link refid="model__macros_8hpp"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="11" relation="include">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Axions.cpp</label>
+        <link refid="Models_2src_2models_2Axions_8cpp"/>
+      </node>
+      <node id="6">
+        <label>CMSSM.cpp</label>
+        <link refid="CMSSM_8cpp"/>
+      </node>
+      <node id="7">
+        <label>NUHM1.cpp</label>
+        <link refid="NUHM1_8cpp"/>
+      </node>
+      <node id="8">
+        <label>NUHM2.cpp</label>
+        <link refid="NUHM2_8cpp"/>
+      </node>
+      <node id="9">
+        <label>RightHandedNeutrinos_diff.cpp</label>
+        <link refid="RightHandedNeutrinos__diff_8cpp"/>
+      </node>
+      <node id="10">
+        <label>StandardModel_mNudiff.cpp</label>
+        <link refid="StandardModel__mNudiff_8cpp"/>
+      </node>
+      <node id="11">
+        <label>mSUGRA.cpp</label>
+        <link refid="mSUGRA_8cpp"/>
+      </node>
+      <node id="1">
+        <label>model_validation.hpp</label>
+        <link refid="model__validation_8hpp"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="12" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>model_parameters.cpp</label>
+        <link refid="model__parameters_8cpp"/>
+      </node>
+      <node id="13">
+        <label>model_validation.cpp</label>
+        <link refid="model__validation_8cpp"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classGambit_1_1ModelValidationHandler" prot="public">Gambit::ModelValidationHandler</innerclass>
+    <innernamespace refid="namespaceGambit">Gambit</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para>Classes and enum model validation handling</para>
+<para><hruler/>
+</para>
+<para>Authors (add name and date if you modify):</para>
+<para><simplesect kind="author"><para>Patrick Stoecker (<ulink url="mailto:stoecker@physik.rwth-aachen.de">stoecker@physik.rwth-aachen.de</ulink>) </para>
+</simplesect>
+<simplesect kind="date"><para>2026 Oct</para>
+</simplesect>
+<hruler/>
+ </para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="comment">//<sp/><sp/>*********************************************</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>GAMBIT:<sp/>Global<sp/>and<sp/>Modular<sp/>BSM<sp/>Inference<sp/>Tool</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="comment">//<sp/><sp/><sp/>*********************************************</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="4"><highlight class="comment">///<sp/><sp/>\file</highlight></codeline>
+<codeline lineno="5"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="6"><highlight class="comment">///<sp/><sp/>Classes<sp/>and<sp/>enum<sp/>model<sp/>validation<sp/>handling</highlight></codeline>
+<codeline lineno="7"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="8"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
+<codeline lineno="9"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="10"><highlight class="comment">///<sp/><sp/>Authors<sp/>(add<sp/>name<sp/>and<sp/>date<sp/>if<sp/>you<sp/>modify):</highlight></codeline>
+<codeline lineno="11"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="12"><highlight class="comment">///<sp/><sp/>\author<sp/>Patrick<sp/>Stoecker</highlight></codeline>
+<codeline lineno="13"><highlight class="comment">///<sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>(stoecker@physik.rwth-aachen.de)</highlight></codeline>
+<codeline lineno="14"><highlight class="comment">///<sp/><sp/>\date<sp/>2026<sp/>Oct</highlight></codeline>
+<codeline lineno="15"><highlight class="comment">///</highlight></codeline>
+<codeline lineno="16"><highlight class="comment">///<sp/><sp/>*********************************************</highlight></codeline>
+<codeline lineno="17"><highlight class="comment"></highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>__model_validation_hpp__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>__model_validation_hpp__</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="20"><highlight class="normal"></highlight></codeline>
+<codeline lineno="21"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;functional&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;map&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;string&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="25"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="export__symbols_8hpp" kindref="compound">gambit/Utils/export_symbols.hpp</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="26"><highlight class="normal"></highlight></codeline>
+<codeline lineno="27"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespaceGambit" kindref="compound">Gambit</ref><sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">ModelParameters;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="31"><highlight class="comment"><sp/><sp/>///<sp/>Model<sp/>validation<sp/>functor<sp/>type</highlight></codeline>
+<codeline lineno="32" refid="namespaceGambit_1a37b7595565e10251682d1d019f7affba" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/>std::function&lt;bool(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1ModelParameters" kindref="compound">ModelParameters</ref>&amp;)&gt;<sp/><ref refid="namespaceGambit_1a37b7595565e10251682d1d019f7affba" kindref="member">modelValidator</ref>;</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="34"><highlight class="comment"><sp/><sp/>///<sp/>Enumeration<sp/>for<sp/>model<sp/>validation<sp/>handling<sp/>strategies.</highlight></codeline>
+<codeline lineno="35"><highlight class="comment"><sp/><sp/>///<sp/>-<sp/>pass:<sp/>No<sp/>model<sp/>validation<sp/>is<sp/>performed.</highlight></codeline>
+<codeline lineno="36"><highlight class="comment"><sp/><sp/>///<sp/>-<sp/>invalidate:<sp/>The<sp/>current<sp/>parameter<sp/>point<sp/>will<sp/>be<sp/>deemed<sp/>invalid</highlight></codeline>
+<codeline lineno="37"><highlight class="comment"><sp/><sp/>///<sp/>-<sp/>raise:<sp/>A<sp/>model<sp/>validation<sp/>error<sp/>will<sp/>be<sp/>raised</highlight></codeline>
+<codeline lineno="38" refid="namespaceGambit_1a9b1fc08745280934be6bb49296700d03" refkind="member"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">enum<sp/>class</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1a9b1fc08745280934be6bb49296700d03" kindref="member">ModelValidationHandling</ref></highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/>pass,</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/>invalidate,</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/>raise</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="45"><highlight class="comment"><sp/><sp/>///<sp/>Class<sp/>for<sp/>handling<sp/>model<sp/>validation<sp/>logic.</highlight></codeline>
+<codeline lineno="46"><highlight class="comment"><sp/><sp/>///<sp/>This<sp/>is<sp/>implemented<sp/>as<sp/>a<sp/>singleton<sp/>to<sp/>ensure<sp/>globally<sp/>consistent<sp/>model<sp/>validation<sp/>handling.</highlight></codeline>
+<codeline lineno="47" refid="classGambit_1_1ModelValidationHandler" refkind="compound"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal">EXPORT_SYMBOLS<sp/><ref refid="classGambit_1_1ModelValidationHandler" kindref="compound">ModelValidationHandler</ref></highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/>{</highlight></codeline>
+<codeline lineno="49"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="50"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Get<sp/>the<sp/>singleton<sp/>instance<sp/>of<sp/>the<sp/>handler</highlight></codeline>
+<codeline lineno="51"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1ModelValidationHandler" kindref="compound">ModelValidationHandler</ref>&amp;<sp/>getInstance();</highlight></codeline>
+<codeline lineno="52"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="53"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Set<sp/>the<sp/>handling<sp/>strategy<sp/>for<sp/>model<sp/>validation<sp/>(pass,<sp/>warning,<sp/>or<sp/>error)</highlight></codeline>
+<codeline lineno="54"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>setModelValidationHandling(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1a9b1fc08745280934be6bb49296700d03" kindref="member">ModelValidationHandling</ref>&amp;<sp/>h);</highlight></codeline>
+<codeline lineno="55"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="56"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Get<sp/>the<sp/>current<sp/>handling<sp/>strategy<sp/>for<sp/>model<sp/>validation</highlight></codeline>
+<codeline lineno="57"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1a9b1fc08745280934be6bb49296700d03" kindref="member">ModelValidationHandling</ref>&amp;<sp/>getModelValidationHandling()<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="58"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="59"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Activate<sp/>the<sp/>model<sp/>validation<sp/>handler</highlight></codeline>
+<codeline lineno="60"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>activate();</highlight></codeline>
+<codeline lineno="61"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="62"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Deactivate<sp/>the<sp/>model<sp/>validation<sp/>handler</highlight></codeline>
+<codeline lineno="63"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>deactivate();</highlight></codeline>
+<codeline lineno="64"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="65"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Register<sp/>a<sp/>model<sp/>validation<sp/>function<sp/>for<sp/>a<sp/>specific<sp/>model</highlight></codeline>
+<codeline lineno="66"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>registerModelValidator(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>model_name,<sp/><ref refid="namespaceGambit_1a37b7595565e10251682d1d019f7affba" kindref="member">modelValidator</ref><sp/>f);</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="68"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Check<sp/>if<sp/>a<sp/>model<sp/>validation<sp/>function<sp/>has<sp/>been<sp/>registered<sp/>for<sp/>a<sp/>specific<sp/>model</highlight></codeline>
+<codeline lineno="69"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>hasModelValidator(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>model_name)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="71"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Validate<sp/>the<sp/>parameters<sp/>of<sp/>a<sp/>model</highlight></codeline>
+<codeline lineno="72"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/>[[nodiscard]]<sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>validateModel(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1ModelParameters" kindref="compound">ModelParameters</ref>&amp;<sp/>model_parameters)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="73"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="74"><highlight class="comment"><sp/><sp/><sp/><sp/>///<sp/>Run<sp/>model<sp/>validation</highlight></codeline>
+<codeline lineno="75"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/>runModelValidation(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1ModelParameters" kindref="compound">ModelParameters</ref>&amp;<sp/>model_parameters)<sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="comment">//<sp/>Delete<sp/>all<sp/>(copy<sp/>+<sp/>move)<sp/>constructors<sp/>and<sp/>assignment<sp/>operators</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="78"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1ModelValidationHandler" kindref="compound">ModelValidationHandler</ref>&amp;<sp/>operator=(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1ModelValidationHandler" kindref="compound">ModelValidationHandler</ref>&amp;)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1ModelValidationHandler" kindref="compound">ModelValidationHandler</ref>&amp;<sp/>operator=(<ref refid="classGambit_1_1ModelValidationHandler" kindref="compound">ModelValidationHandler</ref>&amp;&amp;)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1ModelValidationHandler" kindref="compound">ModelValidationHandler</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/><ref refid="classGambit_1_1ModelValidationHandler" kindref="compound">ModelValidationHandler</ref>&amp;)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1ModelValidationHandler" kindref="compound">ModelValidationHandler</ref>(<ref refid="classGambit_1_1ModelValidationHandler" kindref="compound">ModelValidationHandler</ref>&amp;&amp;)<sp/>=<sp/></highlight><highlight class="keyword">delete</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/></highlight><highlight class="keyword">private</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="84"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="namespaceGambit_1a9b1fc08745280934be6bb49296700d03" kindref="member">ModelValidationHandling</ref><sp/>_model_validation_handling;</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">bool</highlight><highlight class="normal"><sp/>_model_validation_active;</highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>std::map&lt;std::string,<sp/>modelValidator&gt;<sp/>_model_validators;</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="classGambit_1_1ModelValidationHandler" kindref="compound">ModelValidationHandler</ref>()<sp/>:<sp/>_model_validation_handling(ModelValidationHandling::pass),<sp/>_model_validation_active(</highlight><highlight class="keyword">false</highlight><highlight class="normal">)<sp/>{}</highlight></codeline>
+<codeline lineno="89"><highlight class="normal"><sp/><sp/>};</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"></highlight><highlight class="comment"></highlight></codeline>
+<codeline lineno="91"><highlight class="comment"><sp/><sp/>///<sp/>Helper<sp/>function<sp/>for<sp/>registering<sp/>a<sp/>model<sp/>validation<sp/>function<sp/>at<sp/>static<sp/>initialization</highlight></codeline>
+<codeline lineno="92"><highlight class="comment"></highlight><highlight class="normal"><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="namespaceGambit_1a3b7ffd2faac8d5d72588372d6a80fb59" kindref="member">register_model_validation_function</ref>(</highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>std::string&amp;<sp/>model,<sp/><ref refid="namespaceGambit_1a37b7595565e10251682d1d019f7affba" kindref="member">modelValidator</ref><sp/>f);</highlight></codeline>
+<codeline lineno="93"><highlight class="normal"></highlight></codeline>
+<codeline lineno="94"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="95"><highlight class="normal"></highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">//<sp/>__model_validation_hpp__</highlight><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="Utils/include/gambit/Utils/model_validation.hpp"/>
+  </compounddef>
+</doxygen>

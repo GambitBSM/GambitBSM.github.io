@@ -60,7 +60,7 @@ Authors (add name and date if you modify):
 //   *********************************************
 ///  \file
 ///
-///  ColliderBit module functions dealing with 
+///  ColliderBit module functions dealing with
 ///  the mapping between Pythia process codes
 ///  and PID codes for the final state particles
 ///
@@ -86,7 +86,7 @@ namespace Gambit
   namespace ColliderBit
   {
 
-    /// Get a multimap between the active Pythia process codes and the 
+    /// Get a multimap between the active Pythia process codes and the
     /// corresponding PID pair for the two final state particles
     void getActiveProcessCodeToPIDPairsMap(multimap_int_PID_pair& result)
     {
@@ -154,11 +154,11 @@ namespace Gambit
       }
     }
 
-  } 
-} 
+  }
+}
 ```
 
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:36 +0000
+Updated on 2026-11-03 at 14:50:48 +0000

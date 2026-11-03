@@ -277,7 +277,7 @@ namespace Gambit
       if (prec_mw.central <= 0.0 or Utils::isnan(prec_mw.central))
       {
         if (allow_fallback) return;
-        invalid_point().raise("Precison W mass NaN or <= 0.  To allow fallback to the unimproved value, "
+        invalid_point().raise("Precision W mass NaN or <= 0.  To allow fallback to the unimproved value, "
                               "set option allow_fallback_to_unimproved_masses=true in your YAML file.");
       }
       HE.set_override(Par::Pole_Mass, prec_mw.central, "W+", true); // "true" flag causes overrides to be written even if no native quantity exists to override.
@@ -297,7 +297,7 @@ namespace Gambit
         if (MH[i].central <= 0.0 or Utils::isnan(MH[i].central))
         {
           if (allow_fallback) return;
-          invalid_point().raise("Precison "+higgses[i]+" mass NaN or <= 0.  To allow fallback to the unimproved value, "
+          invalid_point().raise("Precision "+higgses[i]+" mass NaN or <= 0.  To allow fallback to the unimproved value, "
                                 "set option allow_fallback_to_unimproved_masses=true in your YAML file.");
         }
       }
@@ -1300,4 +1300,4 @@ namespace Gambit
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:34 +0000
+Updated on 2026-11-03 at 14:50:46 +0000

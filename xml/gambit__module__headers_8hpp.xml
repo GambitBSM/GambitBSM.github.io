@@ -50,6 +50,7 @@
     <includedby refid="ObjectivesBit_8cpp" local="yes">ObjectivesBit.cpp</includedby>
     <includedby refid="PPPC_8cpp" local="yes">PPPC.cpp</includedby>
     <includedby refid="Planck_8cpp" local="yes">Planck.cpp</includedby>
+    <includedby refid="PoissonCalculators_8cpp" local="yes">PoissonCalculators.cpp</includedby>
     <includedby refid="PrecisionBit_8cpp" local="yes">PrecisionBit.cpp</includedby>
     <includedby refid="ProcessCatalog_8cpp" local="yes">ProcessCatalog.cpp</includedby>
     <includedby refid="RelicDensity_8cpp" local="yes">RelicDensity.cpp</includedby>
@@ -83,7 +84,7 @@
     <includedby refid="decay__chain_8cpp" local="yes">decay_chain.cpp</includedby>
     <includedby refid="lep__mssm__xsecs_8cpp" local="yes">lep_mssm_xsecs.cpp</includedby>
     <incdepgraph>
-      <node id="109">
+      <node id="110">
         <label>gambit/Backends/backend_info.hpp</label>
         <link refid="backend__info_8hpp"/>
         <childnode refid="8" relation="include">
@@ -95,42 +96,30 @@
         <childnode refid="61" relation="include">
         </childnode>
       </node>
-      <node id="108">
+      <node id="109">
         <label>gambit/Backends/backend_singleton.hpp</label>
         <link refid="backend__singleton_8hpp"/>
-        <childnode refid="109" relation="include">
+        <childnode refid="110" relation="include">
         </childnode>
       </node>
       <node id="105">
         <label>gambit/Backends/default_bossed_versions.hpp</label>
         <link refid="default__bossed__versions_8hpp"/>
       </node>
-      <node id="106">
-        <label>gambit/Backends/mathematica_variable.hpp</label>
-        <link refid="mathematica__variable_8hpp"/>
-        <childnode refid="107" relation="include">
-        </childnode>
-        <childnode refid="108" relation="include">
-        </childnode>
-        <childnode refid="55" relation="include">
-        </childnode>
-        <childnode refid="110" relation="include">
-        </childnode>
-      </node>
-      <node id="112">
+      <node id="108">
         <label>gambit/Backends/python_helpers.hpp</label>
         <link refid="python__helpers_8hpp"/>
       </node>
-      <node id="111">
+      <node id="106">
         <label>gambit/Backends/python_variable.hpp</label>
         <link refid="python__variable_8hpp"/>
         <childnode refid="55" relation="include">
         </childnode>
         <childnode refid="107" relation="include">
         </childnode>
-        <childnode refid="112" relation="include">
-        </childnode>
         <childnode refid="108" relation="include">
+        </childnode>
+        <childnode refid="109" relation="include">
         </childnode>
       </node>
       <node id="97">
@@ -232,11 +221,11 @@
         </childnode>
         <childnode refid="53" relation="include">
         </childnode>
-        <childnode refid="114" relation="include">
+        <childnode refid="112" relation="include">
         </childnode>
         <childnode refid="65" relation="include">
         </childnode>
-        <childnode refid="108" relation="include">
+        <childnode refid="109" relation="include">
         </childnode>
       </node>
       <node id="96">
@@ -381,8 +370,6 @@
         <childnode refid="106" relation="include">
         </childnode>
         <childnode refid="111" relation="include">
-        </childnode>
-        <childnode refid="113" relation="include">
         </childnode>
       </node>
       <node id="87">
@@ -661,10 +648,10 @@
         <label>gambit/Utils/stringify.hpp</label>
         <link refid="stringify_8hpp"/>
       </node>
-      <node id="114">
+      <node id="112">
         <label>gambit/Utils/threadsafe_rng.hpp</label>
         <link refid="threadsafe__rng_8hpp"/>
-        <childnode refid="115" relation="include">
+        <childnode refid="113" relation="include">
         </childnode>
         <childnode refid="20" relation="include">
         </childnode>
@@ -834,9 +821,6 @@
       <node id="57">
         <label>boost/algorithm/string/classification.hpp</label>
       </node>
-      <node id="110">
-        <label>boost/algorithm/string/replace.hpp</label>
-      </node>
       <node id="56">
         <label>boost/algorithm/string/split.hpp</label>
       </node>
@@ -930,7 +914,7 @@
       <node id="44">
         <label>fstream</label>
       </node>
-      <node id="113">
+      <node id="111">
         <label>gambit/Backends/backend_types_rollcall.hpp</label>
       </node>
       <node id="55">
@@ -966,7 +950,7 @@
       <node id="67">
         <label>ostream</label>
       </node>
-      <node id="115">
+      <node id="113">
         <label>random</label>
       </node>
       <node id="9">
@@ -1092,6 +1076,10 @@
         <label>LHC_likelihoods.cpp</label>
         <link refid="LHC__likelihoods_8cpp"/>
       </node>
+      <node id="58">
+        <label>PoissonCalculators.cpp</label>
+        <link refid="PoissonCalculators_8cpp"/>
+      </node>
       <node id="16">
         <label>Utils.cpp</label>
         <link refid="Utils_8cpp"/>
@@ -1124,7 +1112,7 @@
         <label>getxsec.cpp</label>
         <link refid="getxsec_8cpp"/>
       </node>
-      <node id="89">
+      <node id="90">
         <label>lep_mssm_xsecs.cpp</label>
         <link refid="lep__mssm__xsecs_8cpp"/>
       </node>
@@ -1248,55 +1236,55 @@
         <label>PPPC.cpp</label>
         <link refid="PPPC_8cpp"/>
       </node>
-      <node id="59">
+      <node id="60">
         <label>ProcessCatalog.cpp</label>
         <link refid="ProcessCatalog_8cpp"/>
       </node>
-      <node id="60">
+      <node id="61">
         <label>RelicDensity.cpp</label>
         <link refid="RelicDensity_8cpp"/>
       </node>
-      <node id="62">
+      <node id="63">
         <label>ScalarSingletDM.cpp</label>
         <link refid="DarkBit_2src_2ScalarSingletDM_8cpp"/>
       </node>
-      <node id="63">
+      <node id="64">
         <label>SimpleHist.cpp</label>
         <link refid="SimpleHist_8cpp"/>
       </node>
-      <node id="64">
+      <node id="65">
         <label>SimpleLikelihoods.cpp</label>
         <link refid="SimpleLikelihoods_8cpp"/>
       </node>
-      <node id="81">
+      <node id="82">
         <label>SubGeVDM_SelfInteractions.cpp</label>
         <link refid="SubGeVDM__SelfInteractions_8cpp"/>
       </node>
-      <node id="82">
+      <node id="83">
         <label>SubGeVDM_fermion.cpp</label>
         <link refid="SubGeVDM__fermion_8cpp"/>
       </node>
-      <node id="83">
+      <node id="84">
         <label>SubGeVDM_scalar.cpp</label>
         <link refid="SubGeVDM__scalar_8cpp"/>
       </node>
-      <node id="84">
+      <node id="85">
         <label>SunNeutrinos.cpp</label>
         <link refid="SunNeutrinos_8cpp"/>
       </node>
-      <node id="85">
+      <node id="86">
         <label>VectorSingletDM.cpp</label>
         <link refid="DarkBit_2src_2VectorSingletDM_8cpp"/>
       </node>
-      <node id="86">
+      <node id="87">
         <label>WIMP_EFT.cpp</label>
         <link refid="WIMP__EFT_8cpp"/>
       </node>
-      <node id="87">
+      <node id="88">
         <label>Xray.cpp</label>
         <link refid="Xray_8cpp"/>
       </node>
-      <node id="88">
+      <node id="89">
         <label>decay_chain.cpp</label>
         <link refid="decay__chain_8cpp"/>
       </node>
@@ -1453,6 +1441,8 @@
         </childnode>
         <childnode refid="89" relation="include">
         </childnode>
+        <childnode refid="90" relation="include">
+        </childnode>
       </node>
       <node id="44">
         <label>ExampleBit_A.cpp</label>
@@ -1474,7 +1464,7 @@
         <label>NeutrinoBit.cpp</label>
         <link refid="NeutrinoBit_8cpp"/>
       </node>
-      <node id="61">
+      <node id="62">
         <label>RightHandedNeutrinos.cpp</label>
         <link refid="RightHandedNeutrinos_8cpp"/>
       </node>
@@ -1482,71 +1472,71 @@
         <label>ObjectivesBit.cpp</label>
         <link refid="ObjectivesBit_8cpp"/>
       </node>
-      <node id="58">
+      <node id="59">
         <label>PrecisionBit.cpp</label>
         <link refid="PrecisionBit_8cpp"/>
       </node>
-      <node id="65">
+      <node id="66">
         <label>SpecBit.cpp</label>
         <link refid="SpecBit_8cpp"/>
       </node>
-      <node id="66">
+      <node id="67">
         <label>SpecBit_DMEFT.cpp</label>
         <link refid="SpecBit__DMEFT_8cpp"/>
       </node>
-      <node id="67">
+      <node id="68">
         <label>SpecBit_DMsimpVectorMedDiracDM.cpp</label>
         <link refid="SpecBit__DMsimpVectorMedDiracDM_8cpp"/>
       </node>
-      <node id="68">
+      <node id="69">
         <label>SpecBit_DMsimpVectorMedMajoranaDM.cpp</label>
         <link refid="SpecBit__DMsimpVectorMedMajoranaDM_8cpp"/>
       </node>
-      <node id="69">
+      <node id="70">
         <label>SpecBit_DMsimpVectorMedScalarDM.cpp</label>
         <link refid="SpecBit__DMsimpVectorMedScalarDM_8cpp"/>
       </node>
-      <node id="70">
+      <node id="71">
         <label>SpecBit_DMsimpVectorMedVectorDM.cpp</label>
         <link refid="SpecBit__DMsimpVectorMedVectorDM_8cpp"/>
       </node>
-      <node id="71">
+      <node id="72">
         <label>SpecBit_DiracSingletDM.cpp</label>
         <link refid="SpecBit__DiracSingletDM_8cpp"/>
       </node>
-      <node id="72">
+      <node id="73">
         <label>SpecBit_MDM.cpp</label>
         <link refid="SpecBit__MDM_8cpp"/>
       </node>
-      <node id="73">
+      <node id="74">
         <label>SpecBit_MSSM.cpp</label>
         <link refid="SpecBit__MSSM_8cpp"/>
       </node>
-      <node id="74">
+      <node id="75">
         <label>SpecBit_MajoranaSingletDM.cpp</label>
         <link refid="SpecBit__MajoranaSingletDM_8cpp"/>
       </node>
-      <node id="75">
+      <node id="76">
         <label>SpecBit_SM.cpp</label>
         <link refid="SpecBit__SM_8cpp"/>
       </node>
-      <node id="76">
+      <node id="77">
         <label>SpecBit_ScalarSingletDM.cpp</label>
         <link refid="SpecBit__ScalarSingletDM_8cpp"/>
       </node>
-      <node id="77">
+      <node id="78">
         <label>SpecBit_SubGeVDM.cpp</label>
         <link refid="SpecBit__SubGeVDM_8cpp"/>
       </node>
-      <node id="78">
+      <node id="79">
         <label>SpecBit_VS.cpp</label>
         <link refid="SpecBit__VS_8cpp"/>
       </node>
-      <node id="79">
+      <node id="80">
         <label>SpecBit_VectorSingletDM.cpp</label>
         <link refid="SpecBit__VectorSingletDM_8cpp"/>
       </node>
-      <node id="80">
+      <node id="81">
         <label>SpecBit_tests.cpp</label>
         <link refid="src_2SpecBit__tests_8cpp"/>
       </node>

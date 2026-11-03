@@ -403,7 +403,7 @@ BE_NAMESPACE
     else
     {
       logger() << LogTags::debug << "Calling \"plc_loglike_" << name << "\""
-               << " was successfull. Got " << res << EOM;
+               << " was successful. Got " << res << EOM;
     }
     cleanupError(&plc_Error);
     return res;
@@ -505,4 +505,4 @@ END_BE_INI_FUNCTION
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:36 +0000
+Updated on 2026-11-03 at 14:50:49 +0000

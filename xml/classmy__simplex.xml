@@ -391,16 +391,16 @@
         </inbodydescription>
         <location file="ColliderBit/include/gambit/ColliderBit/topness.h" line="184" column="8" bodyfile="ColliderBit/include/gambit/ColliderBit/topness.h" bodystart="255" bodyend="282"/>
       </memberdef>
-      <memberdef kind="function" id="classmy__simplex_1a71cc487ee36000a0a29366a0a085e9ea" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="classmy__simplex_1a4e56723641868e79295fcab07eea80ee" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
         <definition>void my_simplex::my_SetUp</definition>
-        <argsstring>(double xin[])</argsstring>
+        <argsstring>(double xin[DMAX *(DMAX+1)])</argsstring>
         <name>my_SetUp</name>
         <qualifiedname>my_simplex::my_SetUp</qualifiedname>
         <param>
           <type>double</type>
           <declname>xin</declname>
-          <array>[]</array>
+          <array>[DMAX *(DMAX+1)]</array>
         </param>
         <briefdescription>
         </briefdescription>
@@ -702,7 +702,7 @@
       <member refid="classmy__simplex_1a527ec2f632a99329ad4867350f575967" prot="public" virt="non-virtual"><scope>my_simplex</scope><name>my_Contraction</name></member>
       <member refid="classmy__simplex_1a74d15668fe5d29070b65a4749eba94eb" prot="public" virt="non-virtual"><scope>my_simplex</scope><name>my_Expansion</name></member>
       <member refid="classmy__simplex_1a48628a00860da12764b5123c6248de05" prot="public" virt="non-virtual"><scope>my_simplex</scope><name>my_Reflection</name></member>
-      <member refid="classmy__simplex_1a71cc487ee36000a0a29366a0a085e9ea" prot="public" virt="non-virtual"><scope>my_simplex</scope><name>my_SetUp</name></member>
+      <member refid="classmy__simplex_1a4e56723641868e79295fcab07eea80ee" prot="public" virt="non-virtual"><scope>my_simplex</scope><name>my_SetUp</name></member>
       <member refid="classmy__simplex_1a672d295dab5fa96684fd19ff884c5a34" prot="public" virt="non-virtual"><scope>my_simplex</scope><name>my_simplex</name></member>
       <member refid="classmy__simplex_1a8c1c12e50dee5ce3ce7d3111efb0f41f" prot="public" virt="non-virtual"><scope>my_simplex</scope><name>print_all</name></member>
       <member refid="classmy__simplex_1a440c786f1b26781d40bdffe8766430d5" prot="public" virt="non-virtual"><scope>my_simplex</scope><name>print_Centroid</name></member>

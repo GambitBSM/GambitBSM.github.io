@@ -31,18 +31,20 @@ description: "[No description available]"
   * Pat Scott 
 
  ([p.scott@imperial.ac.uk](mailto:p.scott@imperial.ac.uk)) 
+  * Patrick Stoecker ([stoecker@physik.rwth-aachen.de](mailto:stoecker@physik.rwth-aachen.de)) 
 
 
 **Date**: 
 
   * 2011 Jul - Aug
   * 2013 May, Jun 
-  * 2014 Aug: Went through and cut out some stuff that seemed unused: removed the old ModelParametersBase class that didn't do much; removed the virtualisation since nothing derives from this class at the moment; incorporated the proper error handling system; put class definitions into a seperate source file. 
+  * 2014 Aug: Went through and cut out some stuff that seemed unused: removed the old ModelParametersBase class that didn't do much; removed the virtualisation since nothing derives from this class at the moment; incorporated the proper error handling system; put class definitions into a separate source file. 
   * 2015 Aug: Added copy_parameters_from function 
   * 2019 Jul: 
   * 2013 Oct 
   * 2014 Jan, Nov 
   * 2015 Sep
+  * 2026 Oct
 
 
 Class for holding model parameters. Defines the basic container and get/set functions for the model parameters. Originally adapted from SUfit version (the connection is basically gone now though.)
@@ -90,7 +92,7 @@ Authors (add name and date if you modify):
 ///                   from this class at the moment; 
 ///                   incorporated the proper error 
 ///                   handling system; put class 
-///                   definitions into a seperate source file.
+///                   definitions into a separate source file.
 ///  \date 2015 Aug:  Added copy_parameters_from function
 ///  \date 2019 Jul:  
 ///
@@ -99,6 +101,10 @@ Authors (add name and date if you modify):
 ///  \date 2013 Oct
 ///  \date 2014 Jan, Nov
 ///  \date 2015 Sep
+///
+///  \author Patrick Stoecker
+///          (stoecker@physik.rwth-aachen.de)
+///  \date 2026 Oct
 ///
 ///  *********************************************
 
@@ -112,9 +118,6 @@ Authors (add name and date if you modify):
 #include "gambit/Utils/export_symbols.hpp"
 
 namespace Gambit {
-
-  // Model parameter map type; used by all models
-  typedef std::map<std::string, double> parameterMap;
 
   class EXPORT_SYMBOLS ModelParameters
   {
@@ -199,6 +202,9 @@ namespace Gambit {
       std::string getOutputName() const;
       void setModelName (const std::string&);
       void setOutputName(const std::string&);
+
+      /// Validity check of the model parameters
+      bool isValid() const;
  
     private:
 
@@ -211,7 +217,6 @@ namespace Gambit {
       /// Output name (string used for labelling in output, related to the model_functor which produced these parameters)
       /// Currently used only by the postprocessor ScannerBit plugin and reader plugins.
       std::string outputname;
-
   };
 
 }
@@ -221,4 +226,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:33 +0000
+Updated on 2026-11-03 at 14:50:45 +0000

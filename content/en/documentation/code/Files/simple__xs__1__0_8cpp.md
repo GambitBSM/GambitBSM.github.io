@@ -52,7 +52,7 @@ Authors (add name and date if you modify):
 ///  *********************************************
 
 #include "gambit/Backends/frontend_macros.hpp"
-#include "gambit/Backends/frontends/simplexs_1_0.hpp"
+#include "gambit/Backends/frontends/simple_xs_1_0.hpp"
 
 BE_INI_FUNCTION {}
 END_BE_INI_FUNCTION
@@ -66,4 +66,4 @@ END_BE_NAMESPACE
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:36 +0000
+Updated on 2026-11-03 at 14:50:49 +0000

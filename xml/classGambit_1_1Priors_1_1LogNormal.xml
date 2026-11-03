@@ -120,10 +120,10 @@
         </inbodydescription>
         <location file="ScannerBit/include/gambit/ScannerBit/priors/lognormal.hpp" line="83" column="18" bodyfile="ScannerBit/include/gambit/ScannerBit/priors/lognormal.hpp" bodystart="83" bodyend="105"/>
       </memberdef>
-      <memberdef kind="function" id="classGambit_1_1Priors_1_1LogNormal_1a8750894cb906a89d40292095f6156a6c" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
+      <memberdef kind="function" id="classGambit_1_1Priors_1_1LogNormal_1a9d917859fdea0947a62bd962969b5227" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="virtual">
         <type>double</type>
         <definition>double Gambit::Priors::LogNormal::log_prior_density</definition>
-        <argsstring>(const std::unordered_map&lt; std::string, double &gt; &amp;physical) const</argsstring>
+        <argsstring>(const std::unordered_map&lt; std::string, double &gt; &amp;physical) const override</argsstring>
         <name>log_prior_density</name>
         <qualifiedname>Gambit::Priors::LogNormal::log_prior_density</qualifiedname>
         <reimplements refid="classGambit_1_1Priors_1_1BasePrior_1a77005c4519940bf6457e4d3a3aa9c1a0">log_prior_density</reimplements>
@@ -181,11 +181,12 @@
       <member refid="classGambit_1_1Priors_1_1BasePrior_1a421fbf213a5d7b1734ff5190cc27ff6a" prot="public" virt="non-virtual"><scope>Gambit::Priors::LogNormal</scope><name>BasePrior</name></member>
       <member refid="classGambit_1_1Priors_1_1LogNormal_1a1d3077483cc8fef153fb2352ce069eb2" prot="private" virt="non-virtual"><scope>Gambit::Priors::LogNormal</scope><name>col</name></member>
       <member refid="classGambit_1_1Priors_1_1BasePrior_1aaf6a0098f19105d7e11b5e7a8b74a873" prot="public" virt="non-virtual"><scope>Gambit::Priors::LogNormal</scope><name>getParameters</name></member>
+      <member refid="classGambit_1_1Priors_1_1BasePrior_1abcbe57175eb1293fb53309552c36fdcb" prot="public" virt="virtual"><scope>Gambit::Priors::LogNormal</scope><name>getSetParameters</name></member>
       <member refid="classGambit_1_1Priors_1_1BasePrior_1a6e59882ac88444b03d95ecd3607ec986" prot="public" virt="virtual"><scope>Gambit::Priors::LogNormal</scope><name>getShownParameters</name></member>
       <member refid="classGambit_1_1Priors_1_1LogNormal_1afea6dcac97f83f2afd9e2b22f0bbad52" prot="public" virt="virtual"><scope>Gambit::Priors::LogNormal</scope><name>inverse_transform</name></member>
       <member refid="classGambit_1_1Priors_1_1BasePrior_1ae97a234e263931674a3d2887aae871bb" prot="public" virt="non-virtual" ambiguityscope="Gambit::Priors::BasePrior::"><scope>Gambit::Priors::LogNormal</scope><name>inverse_transform</name></member>
       <member refid="classGambit_1_1Priors_1_1BasePrior_1aeb70ac565a8715a9a9dd223a1318ba6b" prot="public" virt="non-virtual" ambiguityscope="Gambit::Priors::BasePrior::"><scope>Gambit::Priors::LogNormal</scope><name>inverse_transform</name></member>
-      <member refid="classGambit_1_1Priors_1_1LogNormal_1a8750894cb906a89d40292095f6156a6c" prot="public" virt="virtual"><scope>Gambit::Priors::LogNormal</scope><name>log_prior_density</name></member>
+      <member refid="classGambit_1_1Priors_1_1LogNormal_1a9d917859fdea0947a62bd962969b5227" prot="public" virt="virtual"><scope>Gambit::Priors::LogNormal</scope><name>log_prior_density</name></member>
       <member refid="classGambit_1_1Priors_1_1LogNormal_1a0a4f7f875597268d50d84bc995347675" prot="public" virt="non-virtual"><scope>Gambit::Priors::LogNormal</scope><name>LogNormal</name></member>
       <member refid="classGambit_1_1Priors_1_1LogNormal_1a869b0cebf99150bde4ed876f78ebd7e6" prot="private" virt="non-virtual"><scope>Gambit::Priors::LogNormal</scope><name>mu</name></member>
       <member refid="classGambit_1_1Priors_1_1BasePrior_1ab54eef4c7b0188cc43c60e10f77fac3d" prot="protected" virt="non-virtual"><scope>Gambit::Priors::LogNormal</scope><name>param_names</name></member>

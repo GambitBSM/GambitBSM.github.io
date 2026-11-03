@@ -101,7 +101,7 @@ namespace Gambit {
         /**
         * @brief Abstract base class for priors
         */
-        class BasePrior 
+        class BasePrior
         {
         private:
             unsigned int param_size;
@@ -126,13 +126,13 @@ namespace Gambit {
             virtual void transform(hyper_cube_ref<double> unit, std::unordered_map<std::string, double> &physical) const = 0;
 
             /** @overload in place STL containers */
-            void transform(const std::vector<double> &unit, std::unordered_map<std::string, double> &physical) const 
+            void transform(const std::vector<double> &unit, std::unordered_map<std::string, double> &physical) const
             {
                 transform(map_vector<double>(const_cast<double *>(&unit[0]), unit.size()), physical);
             }
 
             /** @overload return STL containers */
-            std::unordered_map<std::string, double> transform(const std::vector<double> &unit) const 
+            std::unordered_map<std::string, double> transform(const std::vector<double> &unit) const
             {
                 std::unordered_map<std::string, double> physical;
                 transform(unit, physical);
@@ -143,13 +143,13 @@ namespace Gambit {
             virtual void inverse_transform(const std::unordered_map<std::string, double> &physical, hyper_cube_ref<double> unit) const = 0;
 
             /** @overload in place STL containers */
-            void inverse_transform(const std::unordered_map<std::string, double> &physical, std::vector<double> &unit) const 
+            void inverse_transform(const std::unordered_map<std::string, double> &physical, std::vector<double> &unit) const
             {
                 inverse_transform(physical, map_vector<double>(const_cast<double *>(&unit[0]), unit.size()));
             }
 
             /** @overload return STL containers */
-            std::vector<double> inverse_transform(const std::unordered_map<std::string, double> &physical) const 
+            std::vector<double> inverse_transform(const std::unordered_map<std::string, double> &physical) const
             {
                 std::vector<double> unit(param_size);
                 inverse_transform(physical, unit);
@@ -161,6 +161,8 @@ namespace Gambit {
 
             virtual std::vector<std::string> getShownParameters() const { return param_names; }
 
+            virtual std::vector<std::string> getSetParameters() const { return param_names; }
+
             inline unsigned int size() const { return param_size; }
 
             inline void setSize(const unsigned int size) { param_size = size; }
@@ -171,7 +173,7 @@ namespace Gambit {
         };
 
     }  // namespace Priors
-    
+
 }  // namespace Gambit
 
 #endif  // __BASE_PRIORS_HPP__
@@ -180,4 +182,4 @@ namespace Gambit {
 
 -------------------------------
 
-Updated on 2025-02-12 at 16:10:33 +0000
+Updated on 2026-11-03 at 14:50:45 +0000
