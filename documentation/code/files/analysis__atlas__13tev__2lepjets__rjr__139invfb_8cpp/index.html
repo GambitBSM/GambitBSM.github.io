@@ -1,0 +1,877 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="ie=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><link rel=preload as=font href=https://gambitbsm.org/fonts/vendor/jost/jost-v4-latin-regular.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://gambitbsm.org/fonts/vendor/jost/jost-v4-latin-500.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://gambitbsm.org/fonts/vendor/jost/jost-v4-latin-700.woff2 type=font/woff2 crossorigin><script>(()=>{var e=localStorage.getItem("theme");e==="dark"&&document.documentElement.setAttribute("data-dark-mode","")})()</script><link rel=stylesheet href=https://gambitbsm.org/main.c1f0838e2cac2d5bb45c4f51eac5017d94b53e71f279f5ef925be54abda180b5ad4c9a5384f3c141e772c408e3f24bd9c50c11e6b79424a45ac99a0d112b5f29.css integrity="sha512-wfCDjiysLVu0XE9R6sUBfZS1PnHyefXvklvlSr2hgLWtTJpThPPBQedyxAjj8kvZxQwR5reUJKRayZoNEStfKQ==" crossorigin=anonymous><noscript><style>img.lazyload{display:none}</style></noscript><meta name=robots content="index, follow"><meta name=googlebot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><meta name=bingbot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><title>file analyses/Analysis_ATLAS_13TeV_2LEPJETS_RJR_139invfb.cpp - GAMBIT</title><meta name=description content="[No description available]"><link rel=canonical href=https://gambitbsm.org/documentation/code/files/analysis__atlas__13tev__2lepjets__rjr__139invfb_8cpp/><meta property="og:locale" content="en_US"><meta property="og:type" content="article"><meta property="og:title" content="file analyses/Analysis_ATLAS_13TeV_2LEPJETS_RJR_139invfb.cpp"><meta property="og:description" content="[No description available]"><meta property="og:url" content="https://gambitbsm.org/documentation/code/files/analysis__atlas__13tev__2lepjets__rjr__139invfb_8cpp/"><meta property="og:site_name" content="GAMBIT"><meta property="og:image" content="https://gambitbsm.org/gambit_logo.png"><meta property="og:image:alt" content="GAMBIT"><meta name=twitter:card content="summary_large_image"><meta name=twitter:site content><meta name=twitter:creator content><meta name=twitter:title content="file analyses/Analysis_ATLAS_13TeV_2LEPJETS_RJR_139invfb.cpp"><meta name=twitter:description content="[No description available]"><meta name=twitter:image content="https://gambitbsm.org/gambit_logo.png"><meta name=twitter:image:alt content="file analyses/Analysis_ATLAS_13TeV_2LEPJETS_RJR_139invfb.cpp"><script type=application/ld+json>{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://gambitbsm.org/#/schema/organization/1","name":"Doks","url":"https://gambitbsm.org/","sameAs":["https://github.com/GambitBSM"],"logo":{"@type":"ImageObject","@id":"https://gambitbsm.org/#/schema/image/1","url":"https://gambitbsm.org/logo-doks.png","width":450,"height":416,"caption":"Doks"},"image":{"@id":"https://gambitbsm.org/#/schema/image/1"}},{"@type":"WebSite","@id":"https://gambitbsm.org/#/schema/website/1","url":"https://gambitbsm.org/","name":"GAMBIT","description":"Documentation for GAMBIT, the Global And Modular BSM Inference Tool","publisher":{"@id":"https://gambitbsm.org/#/schema/organization/1"}},{"@type":"WebPage","@id":"https://gambitbsm.org/documentation/code/files/analysis__atlas__13tev__2lepjets__rjr__139invfb_8cpp/","url":"https://gambitbsm.org/documentation/code/files/analysis__atlas__13tev__2lepjets__rjr__139invfb_8cpp/","name":"file analyses\/Analysis_ATLAS_13TeV_2LEPJETS_RJR_139invfb.cpp","description":"[No description available]","isPartOf":{"@id":"https://gambitbsm.org/#/schema/website/1"},"about":{"@id":"https://gambitbsm.org/#/schema/organization/1"},"datePublished":"0001-01-01T00:00:00CET","dateModified":"0001-01-01T00:00:00CET","breadcrumb":{"@id":"https://gambitbsm.org/documentation/code/files/analysis__atlas__13tev__2lepjets__rjr__139invfb_8cpp/#/schema/breadcrumb/1"},"primaryImageOfPage":{"@id":"https://gambitbsm.org/documentation/code/files/analysis__atlas__13tev__2lepjets__rjr__139invfb_8cpp/#/schema/image/2"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://gambitbsm.org/documentation/code/files/analysis__atlas__13tev__2lepjets__rjr__139invfb_8cpp/"]}]},{"@type":"BreadcrumbList","@id":"https://gambitbsm.org/documentation/code/files/analysis__atlas__13tev__2lepjets__rjr__139invfb_8cpp/#/schema/breadcrumb/1","name":"Breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"https://gambitbsm.org/","url":"https://gambitbsm.org/","name":"Home"}},{"@type":"ListItem","position":2,"item":{"@type":"WebPage","@id":"https://gambitbsm.org/documentation/","url":"https://gambitbsm.org/documentation/","name":"Documentation"}},{"@type":"ListItem","position":3,"item":{"@type":"WebPage","@id":"https://gambitbsm.org/documentation/code/","url":"https://gambitbsm.org/documentation/code/","name":"Code"}},{"@type":"ListItem","position":4,"item":{"@type":"WebPage","@id":"https://gambitbsm.org/documentation/code/files/","url":"https://gambitbsm.org/documentation/code/files/","name":"Files"}},{"@type":"ListItem","position":5,"item":{"@id":"https://gambitbsm.org/documentation/code/files/analysis__atlas__13tev__2lepjets__rjr__139invfb_8cpp/"}}]},{"@context":"https://schema.org","@graph":[{"@type":"ImageObject","@id":"https://gambitbsm.org/documentation/code/files/analysis__atlas__13tev__2lepjets__rjr__139invfb_8cpp/#/schema/image/2","url":"https://gambitbsm.org/gambit_logo.png","contentUrl":"https://gambitbsm.org/gambit_logo.png","caption":"file analyses\/Analysis_ATLAS_13TeV_2LEPJETS_RJR_139invfb.cpp"}]}]}</script><meta name=theme-color content="#fff"><link rel=icon href=https://gambitbsm.org/favicon.ico sizes=any><link rel=icon type=image/svg+xml href=https://gambitbsm.org/favicon.svg><link rel=apple-touch-icon sizes=180x180 href=https://gambitbsm.org/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=https://gambitbsm.org/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=https://gambitbsm.org/favicon-16x16.png><link rel=manifest crossorigin=use-credentials href=https://gambitbsm.org/site.webmanifest></head><body class="documentation single light"><div class=sticky-top><div class=header-bar></div><header class="navbar navbar-expand-md navbar-light doks-navbar"><nav class="container-xxl flex-wrap flex-md-nowrap" aria-label="Main navigation"><a class="navbar-brand p-0 me-auto" href=https://gambitbsm.org/ aria-label=GAMBIT><img class=logo-light src=https://gambitbsm.org/gambit_logo.png width=50px>
+<img class="logo-dark d-none" src=https://gambitbsm.org/gambit_logo.png width=50px>
+GAMBIT</a>
+<button class="btn btn-menu order-2 d-block d-lg-none" type=button data-bs-toggle=offcanvas data-bs-target=#offcanvasDoks aria-controls=offcanvasDoks aria-label="Open main menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button><div class="offcanvas offcanvas-end border-0 py-lg-1" tabindex=-1 id=offcanvasDoks data-bs-backdrop=true aria-labelledby=offcanvasDoksLabel><div class="header-bar d-lg-none"></div><div class="offcanvas-header d-lg-none"><h2 class="h5 offcanvas-title ps-2" id=offcanvasDoksLabel><a class=text-dark href=/>GAMBIT</a></h2><button type=button class="btn-close text-reset me-2" data-bs-dismiss=offcanvas aria-label="Close main menu"></button></div><div class="offcanvas-body p-4 p-lg-0"><ul class="nav flex-column flex-lg-row align-items-lg-center mt-2 mt-lg-0 ms-lg-2 me-lg-auto"><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Releases
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit/tree/release_2.7>GAMBIT 2-7 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.6>GAMBIT 2-6 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.5>GAMBIT 2-5 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.4>GAMBIT 2-4 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.3>GAMBIT 2-3 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.2>GAMBIT 2-2 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.1>GAMBIT 2-1 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_light_1.0>GAMBIT Light ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit/tags>All releases ⧉</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Documentation
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=/documentation/installation/introduction/>Installation</a></li><li><a class=dropdown-item href=/documentation/physics/analyses>Physics</a></li><li><a class=dropdown-item href=/documentation/tutorials/the_gambit_interface>Tutorials</a></li><li><a class=dropdown-item href=/documentation/help/common_problems_and_questions/>Help</a></li><li><a class=dropdown-item href=/documentation/code/index_classes>Code Reference</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Community
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=https://github.com/GambitBSM/wiki>Wiki</a></li><li><a class=dropdown-item href=/community/publications/>Publications</a></li><li><a class=dropdown-item href=/community/talks/>Talks</a></li><li><a class=dropdown-item href=/community/members/>Members</a></li><li><a class=dropdown-item href=/community/code_of_conduct/>Code of Conduct</a></li><li><a class=dropdown-item href=/community/contact/>Contact</a></li></ul></li></ul><hr class="text-black-50 my-4 d-lg-none"><form class="doks-search position-relative flex-grow-1 ms-lg-auto me-lg-2"><input id=search class="form-control is-search" type=search placeholder="Search site..." aria-label="Search site..." autocomplete=off><div id=suggestions class="shadow bg-white rounded d-none"></div></form><hr class="text-black-50 my-4 d-lg-none"><ul class="nav flex-column flex-lg-row"><li class=nav-item><a class="nav-link social-link" href=https://github.com/GambitBSM><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37.0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44.0 0020 4.77 5.07 5.07.0 0019.91 1S18.73.65 16 2.48a13.38 13.38.0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07.0 005 4.77 5.44 5.44.0 003.5 8.55c0 5.42 3.3 6.61 6.44 7A3.37 3.37.0 009 18.13V22"/></svg><small class="ms-2 d-lg-none">GitHub</small></a></li></ul><hr class="text-black-50 my-4 d-lg-none"><button id=mode class="btn btn-link" type=button aria-label="Toggle user interface mode">
+<span class=toggle-dark><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg></span><span class=toggle-light><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></span></button></div></div></nav></header></div><div class="wrap container-xxl" role=document><div class=content><div class="row flex-xl-nowrap"><div class="col-lg-5 col-xl-4 docs-sidebar"><nav class=docs-links aria-label="Main navigation"><ul class="list-unstyled collapsible-sidebar"><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-installation aria-expanded=false>
+Installation</button><div class=collapse id=section-installation><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/installation/introduction/>Getting Started</a></li><li><a class="docs-link rounded" href=/documentation/installation/docker_usage/>Docker Usage</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_linux/>Installation for Linux</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_windows/>Installation for Windows</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_macos/>Installation for macOS</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-tutorials aria-expanded=false>
+Tutorials</button><div class=collapse id=section-tutorials><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/tutorials/the_gambit_interface/>1 - The GAMBIT Interface</a></li><li><a class="docs-link rounded" href=/documentation/tutorials/in_person_tutorials/>In person tutorials</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-physics aria-expanded=false>
+Physics</button><div class=collapse id=section-physics><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/physics/analyses/>ColliderBit analysis</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-help aria-expanded=false>
+Help</button><div class=collapse id=section-help><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/help/common_problems_and_questions/>Common Problems and Questions</a></li><li><a class="docs-link rounded" href=/documentation/help/compiler_matrix/>Compiler Matrix</a></li><li><a class="docs-link rounded" href=/documentation/help/known_issues/>Known Issues</a></li><li><a class="docs-link rounded" href=/documentation/help/configuration_examples/>Configuration Examples</a></li><li><a class="docs-link rounded" href=/documentation/help/support/>Support</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-code aria-expanded=false>
+Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/code/index_classes/>Classes</a></li><li><a class="docs-link rounded" href=/documentation/code/index_files/>Files</a></li><li><a class="docs-link rounded" href=/documentation/code/index_pages/>Pages</a></li><li><a class="docs-link rounded" href=/documentation/code/index_namespaces/>Namespaces</a></li></ul></div></li></ul></nav></div><nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation"><div class=d-xl-none><button class="btn btn-outline-primary btn-sm doks-toc-toggle collapsed" type=button data-bs-toggle=collapse data-bs-target=#onThisPage aria-controls=doks-docs-nav aria-expanded=false aria-label="Toggle On this page navigation">
+<span>On this page</span>
+<span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg></span></button><div class=collapse id=onThisPage><div class="card card-body mt-3 py-1"><div class=page-links><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#classes>Classes</a></li><li><a href=#source-code>Source code</a></li></ul></nav></div></div></div></div><div class="page-links d-none d-xl-block"><h3>On this page</h3><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#classes>Classes</a></li><li><a href=#source-code>Source code</a></li></ul></nav></div></nav><main class="docs-content col-lg-11 col-xl-9 mx-xl-auto"><nav aria-label=breadcrumb><ol class=breadcrumb><li class=breadcrumb-item><a href=/>Home</a></li><li class=breadcrumb-item><a href=/documentation/>Documentation</a></li><li class=breadcrumb-item><a href=/documentation/code/>Code Reference</a></li><li class="breadcrumb-item active" aria-current=page>file analyses/Analysis_ATLAS_13TeV_2LEPJETS_RJR_139invfb.cpp</li></ol></nav><p class=lead></p><h1 id=file-analyses-analysis-atlas-13tev-2lepjets-rjr-139invfb-cpp>file analyses/Analysis_ATLAS_13TeV_2LEPJETS_RJR_139invfb.cpp <a href=#file-analyses-analysis-atlas-13tev-2lepjets-rjr-139invfb-cpp class=anchor aria-hidden=true>#</a></h1><p>[No description available]</p><h2 id=namespaces>Namespaces <a href=#namespaces class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th>Name</th></tr></thead><tbody><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit/>Gambit</a></strong><br>TODO: see if we can use this one:</td></tr><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit_1_1colliderbit/>Gambit::ColliderBit</a></strong></td></tr></tbody></table><h2 id=classes>Classes <a href=#classes class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th></th><th>Name</th></tr></thead><tbody><tr><td>class</td><td><strong><a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2lepjets__rjr__139invfb/>Gambit::ColliderBit::Analysis_ATLAS_13TeV_2LEPJETS_RJR_139invfb</a></strong></td></tr></tbody></table><h2 id=source-code>Source code <a href=#source-code class=anchor aria-hidden=true>#</a></h2><pre><code>///
+///  \author Martin White
+///  \date 2023 August
+///
+///  *********************************************
+
+// Based on RJR regions of https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-2018-05/
+// Luminosity: 139 fb^-1
+
+#include &quot;gambit/cmake/cmake_variables.hpp&quot;
+#ifndef EXCLUDE_ROOT
+#ifndef EXCLUDE_RESTFRAMES
+//#define CHECK_CUTFLOW
+
+#include &lt;vector&gt;
+#include &lt;cmath&gt;
+#include &lt;memory&gt;
+#include &lt;iomanip&gt;
+#include &lt;algorithm&gt;
+#include &lt;fstream&gt;
+
+#include &quot;gambit/ColliderBit/analyses/Analysis.hpp&quot;
+#include &quot;gambit/ColliderBit/ATLASEfficiencies.hpp&quot;
+#include &quot;gambit/ColliderBit/analyses/Cutflow.hpp&quot;
+#include &quot;gambit/ColliderBit/analyses/AnalysisMacros.hpp&quot;
+#include &quot;gambit/ColliderBit/mt2_bisect.h&quot;
+
+#include &quot;RestFrames/RestFrames.hh&quot;
+#include &quot;TLorentzVector.h&quot;
+
+using namespace std;
+
+// #define CHECK_CUTFLOW
+
+using namespace std;
+
+namespace Gambit
+{
+  namespace ColliderBit
+  {
+
+    bool SortLeptons2LJ(const pair&lt;TLorentzVector,int&gt; lv1, const pair&lt;TLorentzVector,int&gt; lv2)
+    //bool VariableConstruction::SortLeptons(const lep lv1, const lep lv2)
+    {
+      return lv1.first.Pt() &gt; lv2.first.Pt();
+    }
+
+    bool SortJets2LJ(const TLorentzVector jv1, const TLorentzVector jv2)
+    {
+      return jv1.Pt() &gt; jv2.Pt();
+    }
+
+    class Analysis_ATLAS_13TeV_2LEPJETS_RJR_139invfb : public Analysis
+    {
+
+    protected:
+
+      //vector&lt;int&gt; _test;
+      //int _test2;
+
+    private:
+
+      // Recursive jigsaw objects (using RestFrames)
+
+      unique_ptr&lt;RestFrames::LabRecoFrame&gt;       LAB_2L2J;
+      unique_ptr&lt;RestFrames::DecayRecoFrame&gt;     C1N2_2L2J;
+      unique_ptr&lt;RestFrames::DecayRecoFrame&gt;     C1a_2L2J;
+      unique_ptr&lt;RestFrames::DecayRecoFrame&gt;     N2b_2L2J;
+
+      unique_ptr&lt;RestFrames::VisibleRecoFrame&gt;   J1_2L2J;
+      unique_ptr&lt;RestFrames::VisibleRecoFrame&gt;   J2_2L2J;
+      unique_ptr&lt;RestFrames::VisibleRecoFrame&gt;   L1b_2L2J;
+      unique_ptr&lt;RestFrames::VisibleRecoFrame&gt;   L2b_2L2J;
+
+      unique_ptr&lt;RestFrames::InvisibleRecoFrame&gt; X1a_2L2J;
+      unique_ptr&lt;RestFrames::InvisibleRecoFrame&gt; X1b_2L2J;
+
+      unique_ptr&lt;RestFrames::InvisibleGroup&gt;    INV_2L2J;
+
+      unique_ptr&lt;RestFrames::SetMassInvJigsaw&gt;     X1_mass_2L2J;
+      unique_ptr&lt;RestFrames::SetRapidityInvJigsaw&gt; X1_eta_2L2J;
+
+      unique_ptr&lt;RestFrames::ContraBoostInvJigsaw&gt; X1X1_contra_2L2J;
+
+      // combinatoric (transverse) tree
+      // for jet assignment
+      unique_ptr&lt;RestFrames::LabRecoFrame&gt;        LAB_comb;
+      unique_ptr&lt;RestFrames::DecayRecoFrame&gt;      CM_comb;
+      unique_ptr&lt;RestFrames::DecayRecoFrame&gt;      S_comb;
+      unique_ptr&lt;RestFrames::VisibleRecoFrame&gt;    ISR_comb;
+      unique_ptr&lt;RestFrames::VisibleRecoFrame&gt;    J_comb;
+      unique_ptr&lt;RestFrames::VisibleRecoFrame&gt;    L_comb;
+      unique_ptr&lt;RestFrames::InvisibleRecoFrame&gt;  I_comb;
+      unique_ptr&lt;RestFrames::InvisibleGroup&gt;      INV_comb;
+      unique_ptr&lt;RestFrames::SetMassInvJigsaw&gt;    InvMass_comb;
+      unique_ptr&lt;RestFrames::CombinatoricGroup&gt;   JETS_comb;
+      unique_ptr&lt;RestFrames::MinMassesCombJigsaw&gt; SplitJETS_comb;
+
+      // 2L+NJ tree (Z-&gt;ll + W/Z-&gt;qq)
+      unique_ptr&lt;RestFrames::LabRecoFrame&gt;        LAB_2LNJ;
+      unique_ptr&lt;RestFrames::DecayRecoFrame&gt;      CM_2LNJ;
+      unique_ptr&lt;RestFrames::DecayRecoFrame&gt;      S_2LNJ;
+      unique_ptr&lt;RestFrames::VisibleRecoFrame&gt;    ISR_2LNJ;
+
+      unique_ptr&lt;RestFrames::DecayRecoFrame&gt;      Ca_2LNJ;
+      unique_ptr&lt;RestFrames::DecayRecoFrame&gt;      Z_2LNJ;
+      unique_ptr&lt;RestFrames::VisibleRecoFrame&gt;    L1_2LNJ;
+      unique_ptr&lt;RestFrames::VisibleRecoFrame&gt;    L2_2LNJ;
+
+      unique_ptr&lt;RestFrames::DecayRecoFrame&gt;          Cb_2LNJ;
+      unique_ptr&lt;RestFrames::SelfAssemblingRecoFrame&gt; JSA_2LNJ;
+      unique_ptr&lt;RestFrames::VisibleRecoFrame&gt;        J_2LNJ;
+
+      unique_ptr&lt;RestFrames::InvisibleRecoFrame&gt;  Ia_2LNJ;
+      unique_ptr&lt;RestFrames::InvisibleRecoFrame&gt;  Ib_2LNJ;
+
+      unique_ptr&lt;RestFrames::InvisibleGroup&gt;       INV_2LNJ;
+      unique_ptr&lt;RestFrames::SetMassInvJigsaw&gt;     InvMass_2LNJ;
+      unique_ptr&lt;RestFrames::SetRapidityInvJigsaw&gt; InvRapidity_2LNJ;
+      unique_ptr&lt;RestFrames::ContraBoostInvJigsaw&gt; SplitINV_2LNJ;
+      unique_ptr&lt;RestFrames::CombinatoricGroup&gt;    JETS_2LNJ;
+
+
+      struct ptComparison
+      {
+        bool operator() (const HEPUtils::Particle* i,const HEPUtils::Particle* j) {return (i-&gt;pT()&gt;j-&gt;pT());}
+      } comparePt;
+
+      struct ptJetComparison
+      {
+        bool operator() (const HEPUtils::Jet* i,const HEPUtils::Jet* j) {return (i-&gt;pT()&gt;j-&gt;pT());}
+      } compareJetPt;
+
+
+    public:
+
+      // Required detector sim
+      static constexpr const char* detector = &quot;ATLAS&quot;;
+
+      Analysis_ATLAS_13TeV_2LEPJETS_RJR_139invfb()
+      {
+
+        // Counters for the number of accepted events for each signal region
+
+        //_counters[&quot;SR2L_High&quot;] = EventCounter(&quot;SR2L_High&quot;);
+        _counters[&quot;SR2L_Low&quot;] = EventCounter(&quot;SR2L_Low&quot;);
+        //_counters[&quot;SR2L_Int&quot;] = EventCounter(&quot;SR2L_Int&quot;);
+        _counters[&quot;SR2L_ISR&quot;] = EventCounter(&quot;SR2L_ISR&quot;);
+
+
+        set_analysis_name(&quot;ATLAS_13TeV_2LEPJETS_RJR_139invfb&quot;);
+        set_detector_name(detector);
+        set_luminosity(139);
+
+        _cutflows.addCutflow(&quot;SR2L_low&quot;, {&quot;Trigger and 2 signal leptons&quot;, &quot;Preselection&quot;, &quot;0.35 &lt; HPP11/HPP41 &lt; 0.60&quot;, &quot;pTlabPP/(pTlabPP+HTPP11) &lt; 0.05&quot;, &quot;min(dPhi(j1/j2,ptmiss))&lt;2.4&quot;, &quot;HPP41 &gt; 400 GeV&quot;,});
+
+        _cutflows.addCutflow(&quot;SR2L_ISR&quot;, {&quot;Pre-selection&quot;, &quot;80 GeV &lt; mZ &lt; 100 GeV&quot;, &quot;50 GeV &lt; mJ &lt; 110 GeV&quot;, &quot;dPhiCMISR &gt; 2.8&quot;, &quot;0.4 &lt; RISR &lt; 0.75&quot;, &quot;pTCMISR &gt; 180 GeV&quot;,&quot;pTCM_I &gt; 100 GeV&quot;,&quot;pTCM &lt; 30 GeV&quot;});
+
+
+        // Recursive jigsaw setup
+        #pragma omp critical (init_ATLAS_13TeV_2LEPJETS_RJR_139invfb)
+        {
+
+          LAB_2L2J.reset(new RestFrames::LabRecoFrame(&quot;LAB_2L2J&quot;,&quot;lab2L2J&quot;));
+          C1N2_2L2J.reset(new RestFrames::DecayRecoFrame(&quot;C1N2_2L2J&quot;,&quot;#tilde{#chi}^{ #pm}_{1} #tilde{#chi}^{ 0}_{2}&quot;));
+          C1a_2L2J.reset(new RestFrames::DecayRecoFrame(&quot;C1a_2L2J&quot;,&quot;#tilde{#chi}^{ #pm}_{1}&quot;));
+          N2b_2L2J.reset(new RestFrames::DecayRecoFrame(&quot;N2b_2L2J&quot;,&quot;#tilde{#chi}^{ 0}_{2}&quot;));
+
+          J1_2L2J.reset(new RestFrames::VisibleRecoFrame(&quot;J1_2L2J&quot;,&quot;#it{j}_{1}&quot;));
+          J2_2L2J.reset(new RestFrames::VisibleRecoFrame(&quot;J2_2L2J&quot;,&quot;#it{j}_{2}&quot;));
+          L1b_2L2J.reset(new RestFrames::VisibleRecoFrame(&quot;L1b_2L2J&quot;,&quot;#it{l}_{1}&quot;));
+          L2b_2L2J.reset(new RestFrames::VisibleRecoFrame(&quot;L2b_2L2J&quot;,&quot;#it{l}_{2}&quot;));
+
+          X1a_2L2J.reset(new RestFrames::InvisibleRecoFrame(&quot;X1a_2L2J&quot;,&quot;#tilde{#chi}^{ 0}_{1 a}&quot;));
+          X1b_2L2J.reset(new RestFrames::InvisibleRecoFrame(&quot;X1b_2L2J&quot;,&quot;#tilde{#chi}^{ 0}_{1 b}&quot;));
+
+          LAB_2L2J-&gt;SetChildFrame(*C1N2_2L2J);
+
+          C1N2_2L2J-&gt;AddChildFrame(*C1a_2L2J);
+          C1N2_2L2J-&gt;AddChildFrame(*N2b_2L2J);
+
+          C1a_2L2J-&gt;AddChildFrame(*J1_2L2J);
+          C1a_2L2J-&gt;AddChildFrame(*J2_2L2J);
+          C1a_2L2J-&gt;AddChildFrame(*X1a_2L2J);
+
+          N2b_2L2J-&gt;AddChildFrame(*L1b_2L2J);
+          N2b_2L2J-&gt;AddChildFrame(*L2b_2L2J);
+          N2b_2L2J-&gt;AddChildFrame(*X1b_2L2J);
+
+          if(!LAB_2L2J-&gt;InitializeTree())
+          {
+            str errmsg;
+            errmsg  = &quot;Some problem occurred when calling LAB_2L2J-&gt;InitializeTree() from the Analysis_ATLAS_13TeV_2LEPJETS_RJR_139invfb analysis class.\n&quot;;
+            piped_errors.request(LOCAL_INFO, errmsg);
+          }
+
+          //setting the invisible components
+          INV_2L2J.reset(new RestFrames::InvisibleGroup(&quot;INV_2L2J&quot;,&quot;#tilde{#chi}_{1}^{ 0} Jigsaws&quot;));
+          INV_2L2J-&gt;AddFrame(*X1a_2L2J);
+          INV_2L2J-&gt;AddFrame(*X1b_2L2J);
+
+          // Set di-LSP mass to minimum Lorentz-invariant expression
+          X1_mass_2L2J.reset(new RestFrames::SetMassInvJigsaw(&quot;X1_mass_2L2J&quot;, &quot;Set M_{#tilde{#chi}_{1}^{ 0} #tilde{#chi}_{1}^{ 0}} to minimum&quot;));
+          INV_2L2J-&gt;AddJigsaw(*X1_mass_2L2J);
+
+          // Set di-LSP rapidity to that of visible particles
+          X1_eta_2L2J.reset(new RestFrames::SetRapidityInvJigsaw(&quot;X1_eta_2L2J&quot;, &quot;#eta_{#tilde{#chi}_{1}^{ 0} #tilde{#chi}_{1}^{ 0}} = #eta_{2jet+2#it{l}}&quot;));
+          INV_2L2J-&gt;AddJigsaw(*X1_eta_2L2J);
+          X1_eta_2L2J-&gt;AddVisibleFrames(C1N2_2L2J-&gt;GetListVisibleFrames());
+
+          X1X1_contra_2L2J.reset(new RestFrames::ContraBoostInvJigsaw(&quot;X1X1_contra_2L2J&quot;,&quot;Contraboost invariant Jigsaw&quot;));
+          INV_2L2J-&gt;AddJigsaw(*X1X1_contra_2L2J);
+          X1X1_contra_2L2J-&gt;AddVisibleFrames(C1a_2L2J-&gt;GetListVisibleFrames(), 0);
+          X1X1_contra_2L2J-&gt;AddVisibleFrames(N2b_2L2J-&gt;GetListVisibleFrames(), 1);
+          X1X1_contra_2L2J-&gt;AddInvisibleFrames(C1a_2L2J-&gt;GetListInvisibleFrames(),0);
+          X1X1_contra_2L2J-&gt;AddInvisibleFrames(N2b_2L2J-&gt;GetListInvisibleFrames(),1);
+
+
+          if(!LAB_2L2J-&gt;InitializeAnalysis())
+          {
+            str errmsg;
+            errmsg  = &quot;Some problem occurred when calling LAB_2L2J-&gt;InitializeAnalysis() from the Analysis_ATLAS_13TeV_2LEPJETS_RJR_139invfb analysis class.\n&quot;;
+            piped_errors.request(LOCAL_INFO, errmsg);
+          }
+
+          // Compressed tree time
+          LAB_comb.reset(new RestFrames::LabRecoFrame(&quot;LAB_comb&quot;,&quot;LAB&quot;));
+          CM_comb.reset(new RestFrames::DecayRecoFrame(&quot;CM_comb&quot;,&quot;CM&quot;));
+          S_comb.reset(new RestFrames::DecayRecoFrame(&quot;S_comb&quot;,&quot;S&quot;));
+          ISR_comb.reset(new RestFrames::VisibleRecoFrame(&quot;ISR_comb&quot;,&quot;ISR&quot;));
+          J_comb.reset(new RestFrames::VisibleRecoFrame(&quot;J_comb&quot;,&quot;Jets&quot;));
+          L_comb.reset(new RestFrames::VisibleRecoFrame(&quot;L_comb&quot;,&quot;#it{l}'s&quot;));
+          I_comb.reset(new RestFrames::InvisibleRecoFrame(&quot;I_comb&quot;,&quot;Inv&quot;));
+
+          LAB_comb-&gt;SetChildFrame(*CM_comb);
+          CM_comb-&gt;AddChildFrame(*ISR_comb);
+          CM_comb-&gt;AddChildFrame(*S_comb);
+          S_comb-&gt;AddChildFrame(*L_comb);
+          S_comb-&gt;AddChildFrame(*J_comb);
+          S_comb-&gt;AddChildFrame(*I_comb);
+
+          if(!LAB_comb-&gt;InitializeTree())
+          {
+            str errmsg;
+            errmsg  = &quot;Some problem occurred when calling LAB_comb-&gt;InitializeTree() from the Analysis_ATLAS_13TeV_2LEPJETS_RJR_139invfb analysis class.\n&quot;;
+            piped_errors.request(LOCAL_INFO, errmsg);
+          }
+
+          // 2L + NJ tree
+          LAB_2LNJ.reset(new RestFrames::LabRecoFrame(&quot;LAB_2LNJ&quot;,&quot;LAB&quot;));
+          CM_2LNJ.reset(new RestFrames::DecayRecoFrame(&quot;CM_2LNJ&quot;,&quot;CM&quot;));
+          S_2LNJ.reset(new RestFrames::DecayRecoFrame(&quot;S_2LNJ&quot;,&quot;S&quot;));
+          ISR_2LNJ.reset(new RestFrames::VisibleRecoFrame(&quot;ISR_2LNJ&quot;,&quot;ISR&quot;));
+          Ca_2LNJ.reset(new RestFrames::DecayRecoFrame(&quot;Ca_2LNJ&quot;,&quot;C_{a}&quot;));
+          Z_2LNJ.reset(new RestFrames::DecayRecoFrame(&quot;Z_2LNJ&quot;,&quot;Z&quot;));
+          L1_2LNJ.reset(new RestFrames::VisibleRecoFrame(&quot;L1_2LNJ&quot;,&quot;#it{l}_{1}&quot;));
+          L2_2LNJ.reset(new RestFrames::VisibleRecoFrame(&quot;L2_2LNJ&quot;,&quot;#it{l}_{2}&quot;));
+          Cb_2LNJ.reset(new RestFrames::DecayRecoFrame(&quot;Cb_2LNJ&quot;,&quot;C_{b}&quot;));
+          JSA_2LNJ.reset(new RestFrames::SelfAssemblingRecoFrame(&quot;JSA_2LNJ&quot;, &quot;J&quot;));
+          J_2LNJ.reset(new RestFrames::VisibleRecoFrame(&quot;J_2LNJ&quot;,&quot;Jets&quot;));
+          Ia_2LNJ.reset(new RestFrames::InvisibleRecoFrame(&quot;Ia_2LNJ&quot;,&quot;I_{a}&quot;));
+          Ib_2LNJ.reset(new RestFrames::InvisibleRecoFrame(&quot;Ib_2LNJ&quot;,&quot;I_{b}&quot;));
+
+          LAB_2LNJ-&gt;SetChildFrame(*CM_2LNJ);
+          CM_2LNJ-&gt;AddChildFrame(*ISR_2LNJ);
+          CM_2LNJ-&gt;AddChildFrame(*S_2LNJ);
+          S_2LNJ-&gt;AddChildFrame(*Ca_2LNJ);
+          S_2LNJ-&gt;AddChildFrame(*Cb_2LNJ);
+          Ca_2LNJ-&gt;AddChildFrame(*Z_2LNJ);
+          Ca_2LNJ-&gt;AddChildFrame(*Ia_2LNJ);
+          Cb_2LNJ-&gt;AddChildFrame(*JSA_2LNJ);
+          Cb_2LNJ-&gt;AddChildFrame(*Ib_2LNJ);
+          Z_2LNJ-&gt;AddChildFrame(*L1_2LNJ);
+          Z_2LNJ-&gt;AddChildFrame(*L2_2LNJ);
+          JSA_2LNJ-&gt;AddChildFrame(*J_2LNJ);
+
+          if(!LAB_2LNJ-&gt;InitializeTree())
+          {
+            str errmsg;
+            errmsg  = &quot;Some problem occurred when calling LAB_2LNJ-&gt;InitializeTree() from the Analysis_ATLAS_13TeV_2LEPJETS_RJR_139invfb analysis class.\n&quot;;
+            piped_errors.request(LOCAL_INFO, errmsg);
+          }
+
+          ////////////// Jigsaw rules set-up /////////////////
+
+          // combinatoric (transverse) tree
+          // for jet assignment
+          INV_comb.reset(new RestFrames::InvisibleGroup(&quot;INV_comb&quot;,&quot;Invisible System&quot;));
+          INV_comb-&gt;AddFrame(*I_comb);
+
+          InvMass_comb.reset(new RestFrames::SetMassInvJigsaw(&quot;InvMass_comb&quot;, &quot;Invisible system mass Jigsaw&quot;));
+          INV_comb-&gt;AddJigsaw(*InvMass_comb);
+
+          JETS_comb.reset(new RestFrames::CombinatoricGroup(&quot;JETS_comb&quot;,&quot;Jets System&quot;));
+          JETS_comb-&gt;AddFrame(*ISR_comb);
+          JETS_comb-&gt;SetNElementsForFrame(*ISR_comb, 1, false);
+          JETS_comb-&gt;AddFrame(*J_comb);
+          JETS_comb-&gt;SetNElementsForFrame(*J_comb, 0, false);
+
+          SplitJETS_comb.reset(new RestFrames::MinMassesCombJigsaw(&quot;SplitJETS_comb&quot;, &quot;Minimize M_{ISR} and M_{S} Jigsaw&quot;));
+          JETS_comb-&gt;AddJigsaw(*SplitJETS_comb);
+          SplitJETS_comb-&gt;AddCombFrame(*ISR_comb, 0);
+          SplitJETS_comb-&gt;AddCombFrame(*J_comb, 1);
+          SplitJETS_comb-&gt;AddObjectFrame(*ISR_comb,0);
+          SplitJETS_comb-&gt;AddObjectFrame(*S_comb,1);
+
+          if(!LAB_comb-&gt;InitializeAnalysis())
+          {
+            str errmsg;
+            errmsg  = &quot;Some problem occurred when calling LAB_comb-&gt;InitializeAnalysis() from the Analysis_ATLAS_13TeV_2LEPJETS_RJR_139invfb analysis class.\n&quot;;
+            piped_errors.request(LOCAL_INFO, errmsg);
+          }
+
+          // 2L+NJ tree (Z-&gt;ll + W/Z-&gt;qq)
+          INV_2LNJ.reset(new RestFrames::InvisibleGroup(&quot;INV_2LNJ&quot;,&quot;Invisible System&quot;));
+          INV_2LNJ-&gt;AddFrame(*Ia_2LNJ);
+          INV_2LNJ-&gt;AddFrame(*Ib_2LNJ);
+
+          InvMass_2LNJ.reset(new RestFrames::SetMassInvJigsaw(&quot;InvMass_2LNJ&quot;, &quot;Invisible system mass Jigsaw&quot;));
+          INV_2LNJ-&gt;AddJigsaw(*InvMass_2LNJ);
+          InvRapidity_2LNJ.reset(new RestFrames::SetRapidityInvJigsaw(&quot;InvRapidity_2LNJ&quot;, &quot;Set inv. system rapidity&quot;));
+          INV_2LNJ-&gt;AddJigsaw(*InvRapidity_2LNJ);
+          InvRapidity_2LNJ-&gt;AddVisibleFrames(S_2LNJ-&gt;GetListVisibleFrames());
+          SplitINV_2LNJ.reset(new RestFrames::ContraBoostInvJigsaw(&quot;SplitINV_2LNJ&quot;, &quot;INV -&gt; I_{a}+ I_{b} jigsaw&quot;));
+          INV_2LNJ-&gt;AddJigsaw(*SplitINV_2LNJ);
+          SplitINV_2LNJ-&gt;AddVisibleFrames(Ca_2LNJ-&gt;GetListVisibleFrames(), 0);
+          SplitINV_2LNJ-&gt;AddVisibleFrames(Cb_2LNJ-&gt;GetListVisibleFrames(), 1);
+          SplitINV_2LNJ-&gt;AddInvisibleFrame(*Ia_2LNJ, 0);
+          SplitINV_2LNJ-&gt;AddInvisibleFrame(*Ib_2LNJ, 1);
+
+          JETS_2LNJ.reset(new RestFrames::CombinatoricGroup(&quot;JETS_comb&quot;,&quot;Jets System&quot;));
+          JETS_2LNJ-&gt;AddFrame(*J_2LNJ);
+          JETS_2LNJ-&gt;SetNElementsForFrame(*J_2LNJ, 0);
+
+          if(!LAB_2LNJ-&gt;InitializeAnalysis())
+          {
+            str errmsg;
+            errmsg  = &quot;Some problem occurred when calling LAB_2LNJ-&gt;InitializeAnalysis() from the Analysis_ATLAS_13TeV_RJ3L_lowmass_36invfb analysis class.\n&quot;;
+            piped_errors.request(LOCAL_INFO, errmsg);
+          }
+
+
+        }
+
+      }
+
+      void run(const HEPUtils::Event* event)
+      {
+
+        // Clear
+        LAB_2L2J-&gt;ClearEvent();
+        LAB_comb-&gt;ClearEvent();
+        LAB_2LNJ-&gt;ClearEvent();
+
+        // Baseline objects
+        vector&lt;const HEPUtils::Particle*&gt; baselineElectrons;
+        vector&lt;const HEPUtils::Particle*&gt; baselineMuons;
+        vector&lt;const HEPUtils::Particle*&gt; baselineLeptons;
+        vector&lt;const HEPUtils::Jet*&gt; baselineJets;
+        vector&lt;const HEPUtils::Jet*&gt; baselineBJets;
+        vector&lt;const HEPUtils::Jet*&gt; baselineNonBJets;
+
+        // Missing momentum and energy
+        HEPUtils::P4 metVec = event-&gt;missingmom();
+        //double met = event-&gt;met();
+        TVector3 ETMiss;
+        ETMiss.SetXYZ(metVec.px(),metVec.py(),0.0);
+
+
+        // Baseline cuts taken from ATLAS code snippet
+
+        for (const HEPUtils::Particle* electron : event-&gt;electrons())
+        {
+          if (electron-&gt;pT()&gt;10. &amp;&amp; electron-&gt;abseta()&lt;2.47) baselineElectrons.push_back(electron);
+        }
+        //apply1DEfficiency(baselineElectrons, ATLAS::eff1DEl.at(&quot;PERF_2017_01_ID_Loose&quot;));
+        applyEfficiency(baselineElectrons, ATLAS::eff1DEl.at(&quot;EGAM_2018_01_Recon&quot;));
+
+
+        // Baseline muons have satisfy &quot;medium&quot; criteria and have pT &gt; 3 GeV and |eta| &lt; 2.7
+        for (const HEPUtils::Particle* muon : event-&gt;muons())
+        {
+          if (muon-&gt;pT()&gt;10. &amp;&amp; muon-&gt;abseta()&lt;2.7) baselineMuons.push_back(muon);
+        }
+        //ATLAS::applyMuonEffR2(baselineMuons);
+        applyEfficiency(baselineMuons, ATLAS::eff1DMu.at(&quot;MUON_2018_03_ID_Medium&quot;));
+
+        double jet_eff = 0.9;
+        for (const HEPUtils::Jet* jet : event-&gt;jets(&quot;antikt_R04&quot;))
+        {
+          if (jet-&gt;pT()&gt;20. &amp;&amp; jet-&gt;abseta()&lt;4.5)
+            if( (jet-&gt;pT() &gt;= 120. || jet-&gt;abseta() &gt;= 2.5) || random_bool(jet_eff) ) baselineJets.push_back(jet);
+        }
+
+        // Overlap removal
+        // Note: the paper and code snippet disagree on this
+        // Have used the overlap removal from the paper (shouldn't make much difference)
+        // 1) Remove muons with 0.01 of an electron, mimics shared tracks
+        removeOverlap(baselineMuons, baselineElectrons, 0.01);
+        // 2) Remove jets within DeltaR = 0.2 of electron
+        removeOverlap(baselineJets, baselineElectrons, 0.2);
+        // 3) If any lepton has Delta R &lt; min(0.4, 0.04 + 10/pT(l)) with a jet, remove the lepton.
+        auto lambda = [](double lepton_pT) { return std::min(0.4, 0.04 + 10./(lepton_pT) ); };
+        removeOverlap(baselineElectrons, baselineJets, lambda);
+        // 4) Remove muons within 0.2 of jets (incorporates shared track approximation)
+        removeOverlap(baselineMuons, baselineJets, 0.2);
+        // 5) Remove muons subject to pT-dependent deltaR requirement
+        removeOverlap(baselineMuons, baselineJets, lambda);
+
+        // Signal objects
+        vector&lt;const HEPUtils::Jet*&gt; signalJets;
+        vector&lt;const HEPUtils::Jet*&gt; signalBJets;
+        vector&lt;const HEPUtils::Jet*&gt; signalNonBJets;
+        vector&lt;const HEPUtils::Particle*&gt; signalElectrons;
+        vector&lt;const HEPUtils::Particle*&gt; signalMuons;
+        vector&lt;const HEPUtils::Particle*&gt; signalLeptons;
+
+        // Signal electrons must satisfy the “medium” identification requirement as defined in arXiv: 1902.04655 [hep-ex]
+        //apply1DEfficiency(signalElectrons, ATLAS::eff1DEl.at(&quot;PERF_2017_01_ID_Medium&quot;));
+        applyEfficiency(baselineElectrons, ATLAS::eff1DEl.at(&quot;EGAM_2018_01_ID_Medium&quot;));
+
+
+        // Signal electrons must have pT &gt; 25 GeV
+        for (const HEPUtils::Particle* signalElectron : baselineElectrons)
+        {
+          if (signalElectron-&gt;pT() &gt; 25.) signalElectrons.push_back(signalElectron);
+        }
+
+        // Signal muons must have pT &gt; 5 GeV.
+        for (const HEPUtils::Particle* signalMuon : baselineMuons)
+        {
+          if (signalMuon-&gt;pT() &gt; 25.) signalMuons.push_back(signalMuon);
+        }
+
+        // Signal jets must have pT &gt; 30 GeV
+        for (const HEPUtils::Jet* signalJet : baselineJets)
+        {
+          if (signalJet-&gt;pT() &gt; 30. &amp;&amp; signalJet-&gt;abseta()&lt;2.4) signalJets.push_back(signalJet);
+        }
+
+        // Find b-jets
+        double btag = 0.77; double cmisstag = 1/16.; double misstag = 1./113.;
+        for (const HEPUtils::Jet* jet : signalJets)
+        {
+          // Tag
+          if( jet-&gt;btag() &amp;&amp; random_bool(btag) ) signalBJets.push_back(jet);
+          // Misstag c-jet
+          else if( jet-&gt;ctag() &amp;&amp; random_bool(cmisstag) ) signalBJets.push_back(jet);
+          // Misstag light jet
+          else if( random_bool(misstag) ) signalBJets.push_back(jet);
+          // Non b-jet
+          else signalNonBJets.push_back(jet);
+        }
+
+        // Fill signal leptons
+        signalLeptons = signalElectrons;
+        signalLeptons.insert(signalLeptons.end(), signalMuons.begin(), signalMuons.end());
+
+        // Fill baseline leptons
+        baselineLeptons = baselineElectrons;
+        baselineLeptons.insert(baselineLeptons.end(), baselineMuons.begin(), baselineMuons.end());
+
+        // Sort by pT
+        sort(signalJets.begin(), signalJets.end(), compareJetPt);
+        sort(signalBJets.begin(), signalBJets.end(), compareJetPt);
+        sort(signalLeptons.begin(), signalLeptons.end(), comparePt);
+
+        // Now ready to start analysis
+
+        bool m_foundSFOS=false;
+        //bool m_is2Lep=false;
+        //bool m_is2Lep2Jet=false;
+        //bool m_is2L2JInt=false;
+
+
+        size_t nleptons = signalLeptons.size();
+        size_t njets = signalJets.size();
+        size_t nbjets = signalBJets.size();
+
+        bool cut_2lep=true;
+        if (nleptons &lt; 2)cut_2lep=false;
+
+        bool cut_2jets=true;
+        if(njets&lt;2)cut_2jets=false;
+
+        // Taken from previous RJ GAMBIT analysis
+        // Presumably TLorentzVector stuff is needed for RestFrames
+        TLorentzVector metLV;
+        //TLorentzVector bigFatJet;
+        metLV.SetPxPyPzE(metVec.px(),metVec.py(),0.,sqrt(metVec.px()*metVec.px()+metVec.py()*metVec.py()));
+
+        //Put the Jets in a more useful form
+        vector&lt;TLorentzVector&gt; myJets;
+        for(unsigned int ijet=0; ijet&lt;signalJets.size();ijet++)
+        {
+          TLorentzVector tmp;
+          tmp.SetPtEtaPhiM(signalJets[ijet]-&gt;pT(),signalJets[ijet]-&gt;eta(),signalJets[ijet]-&gt;phi(),signalJets[ijet]-&gt;mass());
+          myJets.push_back(tmp);
+        }
+
+
+        //Put the Leptons in a more useful form
+        vector&lt;pair&lt;TLorentzVector,int&gt; &gt; myLeptons;
+        //vector&lt;lep&gt; myLeptons;
+        for(unsigned int ilep=0; ilep&lt;signalLeptons.size(); ilep++)
+        {
+          pair&lt;TLorentzVector,int&gt; temp;
+          TLorentzVector tlv_temp;
+
+          tlv_temp.SetPtEtaPhiM(signalLeptons[ilep]-&gt;pT(),signalLeptons[ilep]-&gt;eta(),signalLeptons[ilep]-&gt;phi(),0.0);
+          temp.first = tlv_temp;
+          int lepton_charge=0;
+          if(signalLeptons[ilep]-&gt;pid()&lt;0)lepton_charge=-1;
+          if(signalLeptons[ilep]-&gt;pid()&gt;0)lepton_charge=1;
+          temp.second = lepton_charge;
+          myLeptons.push_back(temp);
+        }
+
+        sort(myJets.begin(), myJets.end(), SortJets2LJ);
+        sort(myLeptons.begin(), myLeptons.end(), SortLeptons2LJ);
+
+        //Only proceed if there are 2 leptons and 2 jets
+        if(cut_2lep &amp;&amp; cut_2jets)
+        {
+
+          bool iscomp = false;
+          if (njets&gt;2) iscomp = true;
+
+          // SFOS criteria
+          double diff = 10000000000.0;
+          int Zlep1 = -99;
+          int Zlep2 = -99;
+          double Zmass = -999.0;
+          bool foundSFOS = false;
+
+          for(unsigned int i=0; i&lt;myLeptons.size(); i++)
+          {
+            for(unsigned int j=i+1; j&lt;myLeptons.size(); j++)
+            {
+              //Opposite-Sign
+              if(myLeptons[i].second*myLeptons[j].second&lt;0)
+              {
+                //Same-Flavor
+                if(abs(myLeptons[i].second)==abs(myLeptons[j].second))
+                {
+                  double mass = (myLeptons[i].first+myLeptons[j].first).M();
+                  double massdiff = fabs(mass-91.1876);
+                  if(massdiff&lt;diff)
+                  {
+                    diff=massdiff;
+                    Zmass=mass;
+                    Zlep1 = i;
+                    Zlep2 = j;
+                    foundSFOS = true;
+                  }
+                }
+              }
+            }
+          }
+
+          if(!foundSFOS)
+          {
+            m_foundSFOS=false;
+          }
+          else
+          {
+            m_foundSFOS=true;
+          }
+
+          if(m_foundSFOS)
+          {
+
+            // Use first and second jets
+            double mjj = (signalJets.at(0)-&gt;mom()+signalJets.at(1)-&gt;mom()).m();
+
+            double mindphi=100000.;
+            double dphi=0;
+            TLorentzVector tempjet;
+            for(unsigned int ijet=0; ijet&lt;signalJets.size();ijet++)
+            {
+              tempjet.SetPtEtaPhiM(signalJets[ijet]-&gt;pT(),signalJets[ijet]-&gt;eta(),signalJets[ijet]-&gt;phi(),signalJets[ijet]-&gt;mass());
+              dphi = fabs(metLV.DeltaPhi(tempjet));
+              if(dphi&lt;mindphi) mindphi=dphi;
+            }
+
+
+            L1b_2L2J-&gt;SetLabFrameFourVector(myLeptons[Zlep1].first); // Set lepton 4-vectors
+            L2b_2L2J-&gt;SetLabFrameFourVector(myLeptons[Zlep2].first);
+            J1_2L2J-&gt;SetLabFrameFourVector(myJets[0]); // Set jets 4-vectors
+            J2_2L2J-&gt;SetLabFrameFourVector(myJets[1]);
+
+            TVector3 MET = ETMiss;                     // Get the MET
+            MET.SetZ(0.);
+            INV_2L2J-&gt;SetLabFrameThreeVector(MET);                  // Set the MET in reco tree
+
+            // Analyze the event
+            if(!LAB_2L2J-&gt;AnalyzeEvent())
+            {
+              str errmsg;
+              errmsg  = &quot;Some problem occurred when calling LAB_2L2J-&gt;AnalyzeEvent() from the Analysis_ATLAS_13TeV_2LEPJETS_RJR_139invfb analysis class.\n&quot;;
+              piped_warnings.request(LOCAL_INFO, errmsg);
+              return;
+            }
+
+            TLorentzVector vP_V1aPP  = J1_2L2J-&gt;GetFourVector(*C1N2_2L2J);
+            TLorentzVector vP_V2aPP  = J2_2L2J-&gt;GetFourVector(*C1N2_2L2J);
+            TLorentzVector vP_V1bPP  = L1b_2L2J-&gt;GetFourVector(*C1N2_2L2J);
+            TLorentzVector vP_V2bPP  = L2b_2L2J-&gt;GetFourVector(*C1N2_2L2J);
+            TLorentzVector vP_I1aPP  = X1a_2L2J-&gt;GetFourVector(*C1N2_2L2J);
+            TLorentzVector vP_I1bPP  = X1b_2L2J-&gt;GetFourVector(*C1N2_2L2J);
+
+            double H2PP = (vP_V1aPP + vP_V2aPP + vP_V1bPP + vP_V2bPP).P() + (vP_I1aPP + vP_I1bPP).P();//H(1,1)PP
+
+            double H5PP = vP_V1aPP.P() + vP_V2aPP.P() + vP_V1bPP.P() + vP_V2bPP.P() + (vP_I1aPP + vP_I1bPP).P();//H(3,1)PP
+            double HT5PP = vP_V1aPP.Pt() + vP_V2aPP.Pt() + vP_V1bPP.Pt() + vP_V2bPP.Pt() + (vP_I1aPP + vP_I1bPP).Pt();//HT(3,1)PP
+
+            double R_H2PP_H5PP = H2PP/H5PP;
+
+            TVector3 vP_PP = C1N2_2L2J-&gt;GetFourVector(*LAB_2L2J).Vect();
+            double Pt_PP = vP_PP.Pt();
+            double RPT_HT5PP = Pt_PP/(Pt_PP + HT5PP);
+
+            //double dphiVP = C1N2_2L2J-&gt;GetDeltaPhiDecayVisible();
+
+            // P frame
+
+            TLorentzVector vP_V1aPa  = J1_2L2J-&gt;GetFourVector(*C1a_2L2J);
+            TLorentzVector vP_V2aPa = J2_2L2J-&gt;GetFourVector(*C1a_2L2J);
+            TLorentzVector vP_I1aPa  = X1a_2L2J-&gt;GetFourVector(*C1a_2L2J);
+
+            TLorentzVector vP_V1bPb = L1b_2L2J-&gt;GetFourVector(*N2b_2L2J);
+            TLorentzVector vP_V2bPb = L2b_2L2J-&gt;GetFourVector(*N2b_2L2J);
+            TLorentzVector vP_I1bPb = X1b_2L2J-&gt;GetFourVector(*N2b_2L2J);
+
+            //double H2Pa = (vP_V1aPa + vP_V2aPa).P() + (vP_I1aPa).P(); //H(1,1)P
+            //double H2Pb = (vP_V1bPb + vP_V2bPb).P() + vP_I1bPb.P();//H(1,1)P
+
+            //double H3Pa = vP_V1aPa.P() + vP_V2aPa.P() + vP_I1aPa.P();//H(1,1)P
+            //double H3Pb = vP_V1bPb.P() + vP_V2bPb.P() + vP_I1bPb.P();//H(2,1)P
+
+            //double minH2P = std::min(H2Pa,H2Pb);
+            //double minH3P = std::min(H3Pa,H3Pb);
+            //    double R_H2Pa_H2Pb = H2Pa/H2Pb;
+            //double R_H3Pa_H3Pb = H3Pa/H3Pb;
+            //double R_minH2P_minH3P = minH2P/minH3P;
+
+            //std::cout &lt;&lt; &quot;STANDARD REGIONS&quot; &lt;&lt; std::endl;
+            // we are ready to go
+
+            // Low mass
+            if (njets==2 &amp;&amp; nbjets==0 &amp;&amp; signalJets[0]-&gt;pT()&gt;30. &amp;&amp; signalJets[1]-&gt;pT()&gt;30. &amp;&amp; Zmass&gt;80. &amp;&amp; Zmass&lt;100. &amp;&amp; mjj&gt;70. &amp;&amp; mjj&lt;90. &amp;&amp; H5PP&gt;400. &amp;&amp; RPT_HT5PP&lt;0.05 &amp;&amp; R_H2PP_H5PP&gt;0.35 &amp;&amp; R_H2PP_H5PP&lt;0.65 &amp;&amp; mindphi&gt;2.4)_counters.at(&quot;SR2L_Low&quot;).add_event(event);
+
+            // Now fill the low mass cutflow
+            // Note: pre-selection is already applied so first cut won't match
+            const double w = event-&gt;weight();
+            _cutflows.fillinit(w);
+
+            vector&lt;str&gt; SR2L_low = {&quot;Trigger and 2 signal leptons&quot;, &quot;Preselection&quot;, &quot;0.35 &lt; HPP11/HPP41 &lt; 0.60&quot;, &quot;pTlabPP/(pTlabPP+HTPP11) &lt; 0.05&quot;, &quot;min(dPhi(j1/j2,ptmiss))&gt;2.4&quot;, &quot;HPP41 &gt; 400 GeV&quot;};
+
+            bool cut_presel = cut_2lep &amp;&amp; cut_2jets &amp;&amp; m_foundSFOS &amp;&amp; nbjets==0 &amp;&amp; signalJets[0]-&gt;pT()&gt;30. &amp;&amp; signalJets[1]-&gt;pT()&gt;30. &amp;&amp; Zmass&gt;80. &amp;&amp; Zmass&lt;100.  &amp;&amp; mjj&gt;70. &amp;&amp; mjj&lt;90.;
+
+            _cutflows[&quot;SR2L_low&quot;].fillnext({cut_2lep,
+                                            cut_presel,
+                                            R_H2PP_H5PP&gt;0.35 &amp;&amp; R_H2PP_H5PP&lt;0.6,
+                                            RPT_HT5PP&lt;0.05,
+                                            mindphi&gt;2.4,
+                                            H5PP&gt;400.}, w);
+
+            // Intermediate
+            //Not used in paper, despite being in ATLAS code snippet!
+            //if (nbjets==0 &amp;&amp; leptons[0].Pt()&gt;25. &amp;&amp; leptons[1].Pt()&gt;25. &amp;&amp; jets[0].Pt()&gt;30. &amp;&amp; jets[1].Pt()&gt;30. &amp;&amp; Zmass&gt;80. &amp;&amp; Zmass&lt;100. &amp;&amp; mjj&gt;60. &amp;&amp; mjj&lt;100. &amp;&amp; H5PP&gt;600. &amp;&amp; RPT_HT5PP&lt;0.05 &amp;&amp; dphiVP&gt;0.6 &amp;&amp; dphiVP&lt;2.6 &amp;&amp; R_minH2P_minH3P&gt;0.8)_counters.at(&quot;SR2L_Int&quot;).add_event(event);;
+
+            // High
+            //Not used - see above
+            //if (leptons[0].Pt()&gt;25. &amp;&amp; leptons[1].Pt()&gt;25. &amp;&amp; jets[0].Pt()&gt;30. &amp;&amp; jets[1].Pt()&gt;30. &amp;&amp; Zmass&gt;80. &amp;&amp; Zmass&lt;100. &amp;&amp; mjj&gt;60. &amp;&amp; mjj&lt;100. &amp;&amp; H5PP&gt;800. &amp;&amp; RPT_HT5PP&lt;0.05 &amp;&amp; dphiVP&gt;0.3 &amp;&amp; dphiVP&lt;2.8 &amp;&amp; R_minH2P_minH3P&gt;0.8)_counters.at(&quot;SR2L_High&quot;).add_event(event);
+
+            // Compressed time
+            if(iscomp)
+            {
+
+              double NjS = 0;
+              double NjISR = 0;
+
+              vector&lt;RestFrames::RFKey&gt; jetID;
+
+              for(int i = 0; i &lt; int(myJets.size()); i++)
+              {
+
+                TLorentzVector jet = myJets[i];
+
+                // transverse view of jet 4-vectors
+                jet.SetPtEtaPhiM(jet.Pt(),0.0,jet.Phi(),jet.M());
+                jetID.push_back(JETS_comb-&gt;AddLabFrameFourVector(jet));
+              }
+
+              TLorentzVector lepSys(0.,0.,0.,0.);
+              for(int i = 0; i &lt; int(myLeptons.size()); i++)
+              {
+                TLorentzVector lep1;
+                // transverse view of mu 4-vectors
+                lep1.SetPtEtaPhiM(myLeptons[i].first.Pt(),0.0,myLeptons[i].first.Phi(),myLeptons[i].first.M());
+                lepSys = lepSys + lep1;
+              }
+              L_comb-&gt;SetLabFrameFourVector(lepSys);
+
+              INV_comb-&gt;SetLabFrameThreeVector(ETMiss);
+
+              if(!LAB_comb-&gt;AnalyzeEvent())
+              {
+                str errmsg;
+                errmsg  = &quot;Some problem occurred when calling LAB_comb-&gt;AnalyzeEvent() from the Analysis_ATLAS_13TeV_2LEPJETS_RJR_139invfb analysis class.\n&quot;;
+                piped_warnings.request(LOCAL_INFO, errmsg);
+                  return;
+              }
+
+              for(int i = 0; i &lt; int(signalJets.size()); i++)
+              {
+                if(JETS_comb-&gt;GetFrame(jetID[i]) == *J_comb)
+                {
+                  NjS++;
+                }
+                else
+                {
+                  NjISR++;
+                }
+              }
+
+              // put jets in their place
+              int NJ = jetID.size();
+              TLorentzVector vISR(0.,0.,0.,0.);
+              for(int i = 0; i &lt; NJ; i++)
+              {
+                if(JETS_comb-&gt;GetFrame(jetID[i]) == *J_comb)
+                {
+                  JETS_2LNJ-&gt;AddLabFrameFourVector(myJets[i]);
+                }
+                else
+                {
+                  vISR += myJets[i];
+                }
+              }
+
+              ISR_2LNJ-&gt;SetLabFrameFourVector(vISR);
+
+              L1_2LNJ-&gt;SetLabFrameFourVector(myLeptons[Zlep1].first);
+              L2_2LNJ-&gt;SetLabFrameFourVector(myLeptons[Zlep2].first);
+
+              INV_2LNJ-&gt;SetLabFrameThreeVector(ETMiss);
+
+              if(!LAB_2LNJ-&gt;AnalyzeEvent())
+              {
+                str errmsg;
+                errmsg  = &quot;Some problem occurred when calling LAB_2LNJ-&gt;AnalyzeEvent() from the Analysis_ATLAS_13TeV_2LEPJETS_RJR_139invfb analysis class.\n&quot;;
+                piped_warnings.request(LOCAL_INFO, errmsg);
+                return;
+              }
+
+              // Make the variables
+              TLorentzVector vP_CM;
+              TLorentzVector vP_ISR;
+              TLorentzVector vP_Ia;
+              TLorentzVector vP_Ib;
+              TLorentzVector vP_I;
+              vP_Ia = Ia_2LNJ-&gt;GetFourVector();
+              vP_Ib = Ib_2LNJ-&gt;GetFourVector();
+              vP_CM  = CM_2LNJ-&gt;GetFourVector();
+              vP_ISR = ISR_2LNJ-&gt;GetFourVector();
+              vP_I   = vP_Ia + vP_Ib;
+
+              double PTCM = vP_CM.Pt();
+
+              TVector3 boostZ = vP_CM.BoostVector();
+              boostZ.SetX(0.);
+              boostZ.SetY(0.);
+
+              vP_CM.Boost(-boostZ);
+              vP_ISR.Boost(-boostZ);
+              vP_I.Boost(-boostZ);
+
+              TVector3 boostT = vP_CM.BoostVector();
+              vP_ISR.Boost(-boostT);
+              vP_I.Boost(-boostT);
+
+              TVector3 vPt_ISR = vP_ISR.Vect();
+              TVector3 vPt_I   = vP_I.Vect();
+              vPt_ISR -= vPt_ISR.Dot(boostZ.Unit())*boostZ.Unit();
+              vPt_I   -= vPt_I.Dot(boostZ.Unit())*boostZ.Unit();
+
+              double PTISR =  vPt_ISR.Mag();
+              double RISR  = -vPt_I.Dot(vPt_ISR.Unit()) / PTISR;
+              double PTI = vPt_I.Mag();
+              double dphiISRI = fabs(vPt_ISR.Angle(vPt_I));
+              double MJ = J_2LNJ-&gt;GetMass();
+              double MZ = Z_2LNJ-&gt;GetMass();
+
+              // finally do the selections
+              if (NjS==2 &amp;&amp; NjISR&gt;0 &amp;&amp; njets &gt; 2 &amp;&amp; njets &lt; 5 &amp;&amp; signalLeptons[0]-&gt;pT()&gt;25. &amp;&amp; signalLeptons[1]-&gt;pT()&gt;25. &amp;&amp; signalJets[0]-&gt;pT()&gt;30. &amp;&amp; signalJets[1]-&gt;pT()&gt;30. &amp;&amp; MZ&gt;80. &amp;&amp; MZ&lt;100. &amp;&amp; MJ&gt;50. &amp;&amp; MJ&lt;110. &amp;&amp; dphiISRI&gt;2.8 &amp;&amp; RISR&gt;0.4 &amp;&amp; RISR&lt;0.75 &amp;&amp; PTISR&gt;180. &amp;&amp; PTI&gt;100. &amp;&amp; PTCM&lt;20.)_counters.at(&quot;SR2L_ISR&quot;).add_event(event);
+
+              bool cut_preselISR = NjS==2 &amp;&amp; NjISR &gt; 0 &amp;&amp; njets &gt; 2 &amp;&amp; nbjets==0 &amp;&amp; njets &lt; 5 &amp;&amp; signalLeptons[0]-&gt;pT()&gt;25. &amp;&amp; signalLeptons[1]-&gt;pT()&gt;25. &amp;&amp; signalJets[0]-&gt;pT()&gt;30. &amp;&amp; signalJets[1]-&gt;pT()&gt;30.;
+
+              // Fill the ISR cutflow
+              // Note the cutflow table has a mistake in the last cut
+              // (&lt; 30 GeV instead of &lt; 20 GeV)
+
+              _cutflows[&quot;SR2L_ISR&quot;].fillnext({cut_preselISR,
+                                              MZ&gt;80. &amp;&amp; MZ&lt;100.,
+                                              MJ&gt;50. &amp;&amp; MJ&lt;110.,
+                                              dphiISRI&gt;2.8,
+                                              RISR&gt;0.4 &amp;&amp; RISR&lt;0.75,
+                                              PTISR&gt;180.,
+                                              PTI&gt;100.,
+                                              PTCM&lt;20.}, w);
+
+            }
+
+          }
+
+        }
+
+
+      }
+
+      // This function can be overridden by the derived SR-specific classes
+      virtual void collect_results()
+      {
+
+        add_result(SignalRegionData(_counters.at(&quot;SR2L_Low&quot;), 39., {42., 9}));
+        add_result(SignalRegionData(_counters.at(&quot;SR2L_ISR&quot;), 30., {31., 9}));
+
+        COMMIT_CUTFLOWS
+
+        #ifdef CHECK_CUTFLOW
+          cout &lt;&lt; _cutflows &lt;&lt; endl;
+          //cout &lt;&lt; &quot;n signal leptons before = &quot; &lt;&lt; _test2 &lt;&lt; endl;
+          //cout &lt;&lt; &quot;n signal leptons = &quot; &lt;&lt; _test[0] &lt;&lt; endl;
+          //cout &lt;&lt; &quot;n baseline leptons = &quot; &lt;&lt; _test[1] &lt;&lt; endl;
+        #endif
+
+
+      }
+
+
+    protected:
+      void analysis_specific_reset()
+      {
+        for (auto&amp; pair : _counters) { pair.second.reset(); }
+      }
+
+    };
+
+    // Factory fn
+    DEFINE_ANALYSIS_FACTORY(ATLAS_13TeV_2LEPJETS_RJR_139invfb)
+
+
+  }
+}
+
+#endif
+#endif
+</code></pre><hr><p>Updated on 2026-11-03 at 14:50:47 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.d5e27a6ed00168b7a66eb637878a6be7d054db51d0e613bbcfda12ab0569b62177253b4e6453c477574b3a38f50eff49a68f0e19112bd82a68c78a66cd8d05df.js integrity="sha512-1eJ6btABaLembrY3h4pr59BU21HQ5hO7z9oSqwVptiF3JTtOZFPEd1dLOjj1Dv9Jpo8OGREr2Cpox4pmzY0F3w==" crossorigin=anonymous defer></script>
+<script src=/js/highlight.min.9003483b4531b86467c8b801b1d5fc5439bb0d6bdb6c6a760a1b54abf37d6bbadf8423dbc81a3359c935c7705bb7d183b46131ba4a9c861b5d48e6a61501461a.js integrity="sha512-kANIO0UxuGRnyLgBsdX8VDm7DWvbbGp2ChtUq/N9a7rfhCPbyBozWck1x3Bbt9GDtGExukqchhtdSOamFQFGGg==" crossorigin=anonymous defer></script>
+<script src=/main.min.9342d29d0e3e250a2c03282306b766e004888dba0fd661a17d7b106655e013bf85733f086ad330e3df0929c713dd81c0ea835966fa92e4a1e38f7ea9680524ed.js integrity="sha512-k0LSnQ4+JQosAygjBrdm4ASIjboP1mGhfXsQZlXgE7+Fcz8IatMw498JKccT3YHA6oNZZvqS5KHjj36paAUk7Q==" crossorigin=anonymous defer></script>
+<script src=https://gambitbsm.org/index.min.3a8ee06d0c346f1fb70040b0fbcbaaacf335cb34023c408954406a05db2089fc2ca349119b9f7d68b9e7044e82b8fdc8bd9661b6ef8b118246c5a2079d7fa8e9.js integrity="sha512-Oo7gbQw0bx+3AECw+8uqrPM1yzQCPECJVEBqBdsgifwso0kRm599aLnnBE6CuP3IvZZhtu+LEYJGxaIHnX+o6Q==" crossorigin=anonymous defer></script></body></html>

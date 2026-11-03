@@ -12,7 +12,7 @@ Physics</button><div class=collapse id=section-physics><ul class="btn-toggle-nav
 Help</button><div class=collapse id=section-help><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/help/common_problems_and_questions/>Common Problems and Questions</a></li><li><a class="docs-link rounded" href=/documentation/help/compiler_matrix/>Compiler Matrix</a></li><li><a class="docs-link rounded" href=/documentation/help/known_issues/>Known Issues</a></li><li><a class="docs-link rounded" href=/documentation/help/configuration_examples/>Configuration Examples</a></li><li><a class="docs-link rounded" href=/documentation/help/support/>Support</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-code aria-expanded=false>
 Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/code/index_classes/>Classes</a></li><li><a class="docs-link rounded" href=/documentation/code/index_files/>Files</a></li><li><a class="docs-link rounded" href=/documentation/code/index_pages/>Pages</a></li><li><a class="docs-link rounded" href=/documentation/code/index_namespaces/>Namespaces</a></li></ul></div></li></ul></nav></div><nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation"><div class=d-xl-none><button class="btn btn-outline-primary btn-sm doks-toc-toggle collapsed" type=button data-bs-toggle=collapse data-bs-target=#onThisPage aria-controls=doks-docs-nav aria-expanded=false aria-label="Toggle On this page navigation">
 <span>On this page</span>
-<span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg></span></button><div class=collapse id=onThisPage><div class="card card-body mt-3 py-1"><div class=page-links><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#defines>Defines</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#macros-documentation>Macros Documentation</a><ul><li><a href=#define-debug-prefix>define DEBUG_PREFIX</a></li></ul></li><li><a href=#source-code>Source code</a></li></ul></nav></div></div></div></div><div class="page-links d-none d-xl-block"><h3>On this page</h3><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#defines>Defines</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#macros-documentation>Macros Documentation</a><ul><li><a href=#define-debug-prefix>define DEBUG_PREFIX</a></li></ul></li><li><a href=#source-code>Source code</a></li></ul></nav></div></nav><main class="docs-content col-lg-11 col-xl-9 mx-xl-auto"><nav aria-label=breadcrumb><ol class=breadcrumb><li class=breadcrumb-item><a href=/>Home</a></li><li class=breadcrumb-item><a href=/documentation/>Documentation</a></li><li class=breadcrumb-item><a href=/documentation/code/>Code Reference</a></li><li class="breadcrumb-item active" aria-current=page>file src/ColliderBit_eventloop.cpp</li></ol></nav><p class=lead></p><h1 id=file-src-colliderbit-eventloop-cpp>file src/ColliderBit_eventloop.cpp <a href=#file-src-colliderbit-eventloop-cpp class=anchor aria-hidden=true>#</a></h1><p>[No description available] <a href=#detailed-description>More&mldr;</a></p><h2 id=namespaces>Namespaces <a href=#namespaces class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th>Name</th></tr></thead><tbody><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit/>Gambit</a></strong><br>TODO: see if we can use this one:</td></tr><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit_1_1colliderbit/>Gambit::ColliderBit</a></strong></td></tr></tbody></table><h2 id=defines>Defines <a href=#defines class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th></th><th>Name</th></tr></thead><tbody><tr><td></td><td><strong><a href=/documentation/code/files/colliderbit__eventloop_8cpp/#define-debug-prefix>DEBUG_PREFIX</a></strong></td></tr></tbody></table><h2 id=detailed-description>Detailed Description <a href=#detailed-description class=anchor aria-hidden=true>#</a></h2><p><strong>Author</strong>:</p><ul><li>Abram Krislock (<a href=mailto:a.m.b.krislock@fys.uio.no>a.m.b.krislock@fys.uio.no</a>)</li><li>Aldo Saavedra</li><li>Andy Buckley</li><li>Chris Rogan (<a href=mailto:crogan@cern.ch>crogan@cern.ch</a>)</li><li>Pat Scott (<a href=mailto:p.scott@imperial.ac.uk>p.scott@imperial.ac.uk</a>)</li><li>Anders Kvellestad (<a href=mailto:anders.kvellestad@fys.uio.no>anders.kvellestad@fys.uio.no</a>)</li></ul><p><strong>Date</strong>:</p><ul><li>2014 Aug</li><li>2015 May</li><li>2015 Jul</li><li>2018 Jan</li><li>2019 Jan</li><li>2017 March</li><li>2018 Jan</li><li>2018 May</li></ul><p>Functions of ColliderBit event loop.</p><hr><p>Authors (add name and date if you modify):</p><hr><h2 id=macros-documentation>Macros Documentation <a href=#macros-documentation class=anchor aria-hidden=true>#</a></h2><h3 id=define-debug-prefix>define DEBUG_PREFIX <a href=#define-debug-prefix class=anchor aria-hidden=true>#</a></h3><pre><code>#define DEBUG_PREFIX &quot;DEBUG: OMP thread &quot; &lt;&lt; omp_get_thread_num() &lt;&lt; &quot;:  &quot; &lt;&lt; __FILE__ &lt;&lt; &quot;:&quot; &lt;&lt; __LINE__ &lt;&lt; &quot;:  &quot;
+<span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg></span></button><div class=collapse id=onThisPage><div class="card card-body mt-3 py-1"><div class=page-links><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#defines>Defines</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#macros-documentation>Macros Documentation</a><ul><li><a href=#define-debug-prefix>define DEBUG_PREFIX</a></li></ul></li><li><a href=#source-code>Source code</a></li></ul></nav></div></div></div></div><div class="page-links d-none d-xl-block"><h3>On this page</h3><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#defines>Defines</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#macros-documentation>Macros Documentation</a><ul><li><a href=#define-debug-prefix>define DEBUG_PREFIX</a></li></ul></li><li><a href=#source-code>Source code</a></li></ul></nav></div></nav><main class="docs-content col-lg-11 col-xl-9 mx-xl-auto"><nav aria-label=breadcrumb><ol class=breadcrumb><li class=breadcrumb-item><a href=/>Home</a></li><li class=breadcrumb-item><a href=/documentation/>Documentation</a></li><li class=breadcrumb-item><a href=/documentation/code/>Code Reference</a></li><li class="breadcrumb-item active" aria-current=page>file src/ColliderBit_eventloop.cpp</li></ol></nav><p class=lead></p><h1 id=file-src-colliderbit-eventloop-cpp>file src/ColliderBit_eventloop.cpp <a href=#file-src-colliderbit-eventloop-cpp class=anchor aria-hidden=true>#</a></h1><p>[No description available] <a href=#detailed-description>More&mldr;</a></p><h2 id=namespaces>Namespaces <a href=#namespaces class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th>Name</th></tr></thead><tbody><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit/>Gambit</a></strong><br>TODO: see if we can use this one:</td></tr><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit_1_1colliderbit/>Gambit::ColliderBit</a></strong></td></tr></tbody></table><h2 id=defines>Defines <a href=#defines class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th></th><th>Name</th></tr></thead><tbody><tr><td></td><td><strong><a href=/documentation/code/files/colliderbit__eventloop_8cpp/#define-debug-prefix>DEBUG_PREFIX</a></strong></td></tr></tbody></table><h2 id=detailed-description>Detailed Description <a href=#detailed-description class=anchor aria-hidden=true>#</a></h2><p><strong>Author</strong>:</p><ul><li>Abram Krislock (<a href=mailto:a.m.b.krislock@fys.uio.no>a.m.b.krislock@fys.uio.no</a>)</li><li>Aldo Saavedra</li><li>Andy Buckley</li><li>Chris Rogan (<a href=mailto:crogan@cern.ch>crogan@cern.ch</a>)</li><li>Pat Scott (<a href=mailto:p.scott@imperial.ac.uk>p.scott@imperial.ac.uk</a>)</li><li>Anders Kvellestad (<a href=mailto:anders.kvellestad@fys.uio.no>anders.kvellestad@fys.uio.no</a>)</li><li>Tomas Gonzalo (<a href=mailto:tomas.gonzalo@kit.edu>tomas.gonzalo@kit.edu</a>)</li></ul><p><strong>Date</strong>:</p><ul><li>2014 Aug</li><li>2015 May</li><li>2015 Jul</li><li>2018 Jan</li><li>2019 Jan</li><li>2017 March</li><li>2018 Jan</li><li>2018 May</li><li>2023 Aug</li></ul><p>Functions of ColliderBit event loop.</p><hr><p>Authors (add name and date if you modify):</p><hr><h2 id=macros-documentation>Macros Documentation <a href=#macros-documentation class=anchor aria-hidden=true>#</a></h2><h3 id=define-debug-prefix>define DEBUG_PREFIX <a href=#define-debug-prefix class=anchor aria-hidden=true>#</a></h3><pre><code>#define DEBUG_PREFIX &quot;DEBUG: OMP thread &quot; &lt;&lt; omp_get_thread_num() &lt;&lt; &quot;:  &quot; &lt;&lt; __FILE__ &lt;&lt; &quot;:&quot; &lt;&lt; __LINE__ &lt;&lt; &quot;:  &quot;
 </code></pre><h2 id=source-code>Source code <a href=#source-code class=anchor aria-hidden=true>#</a></h2><pre><code>//   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
 ///  \file
@@ -47,10 +47,16 @@ Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle
 ///  \date   2018 Jan
 ///  \date   2018 May
 ///
+///  \author Tomas Gonzalo
+///          (tomas.gonzalo@kit.edu)
+///  \date 2023 Aug
+///
 ///  *********************************************
 
 #include &quot;gambit/Elements/gambit_module_headers.hpp&quot;
 #include &quot;gambit/ColliderBit/ColliderBit_eventloop.hpp&quot;
+#include &quot;gambit/ColliderBit/PoissonCalculators.hpp&quot;
+#include &quot;gambit/ColliderBit/analyses/Analysis.hpp&quot;
 
 // #define COLLIDERBIT_DEBUG
 #define DEBUG_PREFIX &quot;DEBUG: OMP thread &quot; &lt;&lt; omp_get_thread_num() &lt;&lt; &quot;:  &quot; &lt;&lt; __FILE__ &lt;&lt; &quot;:&quot; &lt;&lt; __LINE__ &lt;&lt; &quot;:  &quot;
@@ -60,6 +66,51 @@ namespace Gambit
 
   namespace ColliderBit
   {
+
+    /// Calculate the required number of MC events
+    /// Currently can pick between fixed, or provide the mean and pull from a Poisson
+    int calc_N_MC(std::string method, double n_mc_mean)
+    {
+      if (method == &quot;UMVUE&quot;)
+      {
+        return Gambit::ColliderBit::PoissonCalculators::umvue_draw_n_mc_threadsafe(n_mc_mean);
+      }
+      else
+      {
+        // default to fixed
+        return n_mc_mean;
+      }
+    }
+
+
+    /// Get the maximum luminosity required for any analysis in a given collider
+    double GetMaxLumi(const std::vector&lt;str&gt;&amp; analyses)
+    {
+      AnalysisContainer Container;
+
+      try
+      {
+        Container.init(analyses);
+      }
+      catch (std::runtime_error&amp; e)
+      {
+        ColliderBit_error().raise(LOCAL_INFO,&quot;Failed to initialise Analysis Containers in GetMaxLumi.&quot;);
+      }
+
+      // Loop over all analyses and get the maximum luminosity
+      double max_lumi = 0.0;
+      if (Container.has_analyses())
+      {
+        for (auto&amp; analysis_pointer_pair : Container.get_current_analyses_map())
+        {
+          double lumi = analysis_pointer_pair.second-&gt;luminosity();
+          if (lumi &gt; max_lumi) {max_lumi = lumi;}
+        }
+      }
+
+      return max_lumi;
+    }
+
 
     /// LHC Loop Manager
     void operateLHCLoop(MCLoopInfo&amp; result)
@@ -78,26 +129,80 @@ namespace Gambit
       static std::map&lt;str,int&gt; min_nEvents;
       static std::map&lt;str,int&gt; max_nEvents;
       static std::map&lt;str,int&gt; stoppingres;
+      static bool fixed_nEvents = true;
       if (first)
       {
         // Should we silence stdout during the loop?
         silenceLoop = runOptions-&gt;getValueOrDef&lt;bool&gt;(true, &quot;silenceLoop&quot;);
 
-        // Retrieve all the names of all entries in the yaml options node.
-        std::vector&lt;str&gt; vec = runOptions-&gt;getNames();
-        // Step though the names, and accept only those with a &quot;min_nEvents&quot; sub-entry as colliders.
-        for (str&amp; name : vec)
+        // Retrieve all collider names form the YAML options
+        result.collider_names = runOptions-&gt;getValueOrDef&lt;std::vector&lt;str&gt;&gt;(std::vector&lt;str&gt;(), &quot;use_colliders&quot;);
+        if ((result.collider_names).size() == 0)
         {
-          YAML::Node node = runOptions-&gt;getNode(name);
-          if (not node.IsScalar() and node[&quot;min_nEvents&quot;]) result.collider_names.push_back(name);
+          ColliderBit_error().set_fatal(true); // This one must regarded fatal since there is something wrong in the user input
+          ColliderBit_error().raise(LOCAL_INFO,&quot;Cannot find any collider names in use_colliders option for operateLHCLoop. Please correct your YAML file.&quot;);
         }
+
 
         // Retrieve the options for each collider.
         for (auto&amp; collider : result.collider_names)
         {
           Options colOptions(runOptions-&gt;getValue&lt;YAML::Node&gt;(collider));
-          min_nEvents[collider]                                           = colOptions.getValue&lt;int&gt;(&quot;min_nEvents&quot;);
-          max_nEvents[collider]                                           = colOptions.getValue&lt;int&gt;(&quot;max_nEvents&quot;);
+
+          result.analyses[collider]                                       = colOptions.getValueOrDef&lt;std::vector&lt;str&gt;&gt;(std::vector&lt;str&gt;(), &quot;analyses&quot;);
+          // Check that the analyses all correspond to actual ColliderBit analyses, and sort them into separate maps for each detector.
+          for (str&amp; analysis : result.analyses.at(collider))
+          {
+            result.detector_analyses[collider][getDetector(analysis)].push_back(analysis);
+          }
+
+          // Specify whether the number of MC events should be the same for each param point
+          fixed_nEvents = colOptions.hasKey(&quot;max_nEvents&quot;);
+
+          // Check that the nEvents options given make sense.
+          if (  (colOptions.hasKey(&quot;mean_nEvents&quot;) and colOptions.hasKey(&quot;mean_relative_nEvents&quot;))
+             or (colOptions.hasKey(&quot;mean_nEvents&quot;) and colOptions.hasKey(&quot;max_nEvents&quot;))
+             or (colOptions.hasKey(&quot;max_nEvents&quot;)  and colOptions.hasKey(&quot;mean_relative_nEvents&quot;)))
+          {
+            ColliderBit_error().set_fatal(true); // This one must regarded fatal since there is something wrong in the user input
+            ColliderBit_error().raise(LOCAL_INFO,&quot;Options mean_nEvents, mean_relative_nEvents and max_nEvents must not be used together for collider&quot;
+                                                 +collider+&quot;. Please correct your YAML file.&quot;);
+          }
+
+          min_nEvents[collider]                                           = colOptions.getValueOrDef&lt;int&gt;(10000, &quot;min_nEvents&quot;);
+          max_nEvents[collider]                                           = colOptions.getValueOrDef&lt;int&gt;(10000, &quot;max_nEvents&quot;);
+          double mean_nEvents                                             = colOptions.getValueOrDef&lt;double&gt;(10000, &quot;mean_nEvents&quot;);
+          result.ratio_MC_expected[collider]                              = colOptions.getValueOrDef&lt;double&gt;(1.0, &quot;mean_relative_nEvents&quot;);
+          result.estimator                                                = colOptions.getValueOrDef&lt;std::string&gt;(&quot;MLE&quot;, &quot;poisson_like_estimator&quot;);
+
+          // Check that the nEvents options given make sense.
+          if (fixed_nEvents and (min_nEvents.at(collider) &gt; max_nEvents.at(collider)) )
+          {
+            ColliderBit_error().set_fatal(true); // This one must regarded fatal since there is something wrong in the user input
+            ColliderBit_error().raise(LOCAL_INFO,&quot;Option min_nEvents is greater than corresponding max_nEvents for collider &quot;
+                                                 +collider+&quot;. Please correct your YAML file.&quot;);
+          }
+
+          // In the case of a relative number of events, set mean_nEvents based on expected nEvents
+          if (colOptions.hasKey(&quot;mean_relative_nEvents&quot;))
+          {
+            double max_lumi = GetMaxLumi(result.analyses.at(collider));
+
+            std::map&lt;std::string, xsec_container&gt; xsec_map = *Dep::InitialTotalCrossSection;
+            double xsec = xsec_map[collider].xsec();
+            mean_nEvents = max_lumi * xsec * result.ratio_MC_expected[collider];
+
+            #ifdef COLLIDERBIT_DEBUG
+              // Check for zero events
+              if (mean_nEvents == 0)
+              {
+                cout &lt;&lt; DEBUG_PREFIX &lt;&lt; &quot;Zero events predicted for collider &quot; + collider + &quot;. Perhaps consider a cross-section veto.&quot; &lt;&lt; endl;
+              }
+            #endif
+          }
+
+          result.mean_nEvents                                             = mean_nEvents;
+          result.desired_nEvents[collider]                                = calc_N_MC(result.estimator, mean_nEvents);
           result.convergence_options[collider].target_stat                = colOptions.getValue&lt;double&gt;(&quot;target_fractional_uncert&quot;);
           result.convergence_options[collider].stop_at_sys                = colOptions.getValueOrDef&lt;bool&gt;(true, &quot;halt_when_systematic_dominated&quot;);
           result.convergence_options[collider].all_analyses_must_converge = colOptions.getValueOrDef&lt;bool&gt;(false, &quot;all_analyses_must_converge&quot;);
@@ -105,19 +210,20 @@ namespace Gambit
           result.maxFailedEvents[collider]                                = colOptions.getValueOrDef&lt;int&gt;(1, &quot;maxFailedEvents&quot;);
           result.invalidate_failed_points[collider]                       = colOptions.getValueOrDef&lt;bool&gt;(false, &quot;invalidate_failed_points&quot;);
           stoppingres[collider]                                           = colOptions.getValueOrDef&lt;int&gt;(200, &quot;events_between_convergence_checks&quot;);
-          result.analyses[collider]                                       = colOptions.getValueOrDef&lt;std::vector&lt;str&gt;&gt;(std::vector&lt;str&gt;(), &quot;analyses&quot;);
           result.event_count[collider]                                    = 0;
-          // Check that the nEvents options given make sense.
-          if (min_nEvents.at(collider) &gt; max_nEvents.at(collider))
+
+          // In the case of using the UMVUE estimator, override some options
+          if (result.estimator == &quot;UMVUE&quot;)
           {
-            ColliderBit_error().set_fatal(true); // This one must regarded fatal since there is something wrong in the user input
-            ColliderBit_error().raise(LOCAL_INFO,&quot;Option min_nEvents is greater than corresponding max_nEvents for collider &quot;
-                                                 +collider+&quot;. Please correct your YAML file.&quot;);
-          }
-          // Check that the analyses all correspond to actual ColliderBit analyses, and sort them into separate maps for each detector.
-          for (str&amp; analysis : result.analyses.at(collider))
-          {
-            result.detector_analyses[collider][getDetector(analysis)].push_back(analysis);
+            if (fixed_nEvents)
+            {
+              ColliderBit_error().set_fatal(true); // This one must regarded fatal since there is something wrong in the user input
+              ColliderBit_error().raise(LOCAL_INFO,&quot;Options min_nEvents and max_nEvents should not be used for the UMVUE estimator for collider &quot;
+                                                   +collider+&quot;. Please correct your YAML file.&quot;);
+            }
+
+            // Avoid convergence checks by setting the number of events higher than are actually generated
+            stoppingres[collider] = result.desired_nEvents[collider]*2;
           }
         }
         first = false;
@@ -172,7 +278,7 @@ namespace Gambit
         piped_errors.check(ColliderBit_error());
         piped_invalid_point.check();
 
-        // Execute the sigle-thread iteration XSEC_CALCULATION 
+        // Execute the sigle-thread iteration XSEC_CALCULATION
         #ifdef COLLIDERBIT_DEBUG
           cout &lt;&lt; DEBUG_PREFIX &lt;&lt; &quot;operateLHCLoop: Will execute XSEC_CALCULATION&quot; &lt;&lt; endl;
         #endif
@@ -198,20 +304,26 @@ namespace Gambit
         piped_errors.check(ColliderBit_error());
         piped_invalid_point.check();
 
+        const int max_nEvents_collider = max_nEvents.at(collider);
+        const int min_nEvents_collider = min_nEvents.at(collider);
+        const int stoppingres_collider = stoppingres.at(collider);
+        const int desired_nEvents_collider = result.desired_nEvents[collider];
+
         // Convergence loop
-        while(result.current_event_count() &lt; max_nEvents.at(collider) and not *Loop::done)
+        while(((fixed_nEvents &amp;&amp; result.current_event_count() &lt; max_nEvents_collider) or (!fixed_nEvents &amp;&amp; result.current_event_count() &lt; desired_nEvents_collider)) and not *Loop::done)
         {
+
           int eventCountBetweenConvergenceChecks = 0;
           #ifdef COLLIDERBIT_DEBUG
-            cout &lt;&lt; DEBUG_PREFIX &lt;&lt; &quot;Starting main event loop.  Will do &quot; &lt;&lt; stoppingres.at(collider) &lt;&lt; &quot; events before testing convergence.&quot; &lt;&lt; endl;
+            cout &lt;&lt; DEBUG_PREFIX &lt;&lt; &quot;Starting main event loop.  Will do &quot; &lt;&lt; stoppingres_collider &lt;&lt; &quot; events before testing convergence.&quot; &lt;&lt; endl;
           #endif
 
           // Main event loop
           result.event_generation_began = true;
           #pragma omp parallel
           {
-            while(eventCountBetweenConvergenceChecks &lt; stoppingres.at(collider) and
-                  result.current_event_count() &lt; max_nEvents.at(collider) and
+            while(eventCountBetweenConvergenceChecks &lt; stoppingres_collider and
+                  ((fixed_nEvents &amp;&amp; result.current_event_count() &lt; max_nEvents_collider) or (!fixed_nEvents &amp;&amp; result.current_event_count() &lt; desired_nEvents_collider)) and
                   not *Loop::done and
                   not result.end_of_event_file and
                   not result.exceeded_maxFailedEvents and
@@ -221,11 +333,12 @@ namespace Gambit
               bool thread_do_iteration = true;
               int thread_my_iteration;
 
-              // Increment counters before executing the corresponding event loop iteration, 
+              // Increment counters before executing the corresponding event loop iteration,
               // to stop other threads from starting any event iterations beyond max_nEvents.
               #pragma omp critical
               {
-                if(result.current_event_count() &lt; max_nEvents.at(collider))
+                if (   (fixed_nEvents &amp;&amp; result.current_event_count() &lt; max_nEvents_collider)
+                    or (!fixed_nEvents &amp;&amp; result.current_event_count() &lt; desired_nEvents_collider))
                 {
                   result.current_event_count()++;
                   thread_my_iteration = result.current_event_count();
@@ -236,7 +349,7 @@ namespace Gambit
                   thread_do_iteration = false;
                 }
               }
-              
+
               if(thread_do_iteration)
               {
                 try
@@ -272,8 +385,9 @@ namespace Gambit
           // Break convergence loop if too many events fail
           if(result.exceeded_maxFailedEvents) break;
 
-          // Don't bother with convergence stuff if we haven't passed the minimum number of events yet
-          if (result.current_event_count() &gt;= min_nEvents.at(collider))
+          // Don't bother with convergence stuff if we haven't passed the minimum number of events yet.
+          // Only do this if we are using a fixed number of events.
+          if (fixed_nEvents and result.current_event_count() &gt;= min_nEvents_collider)
           {
             #pragma omp parallel
             {
@@ -348,6 +462,8 @@ namespace Gambit
     {
       using namespace Pipes::CollectAnalyses;
       static bool first = true;
+      static bool print_cutflows;
+      static bool normalized_cutflows;
 
       // Start with an empty vector
       result.clear();
@@ -366,6 +482,10 @@ namespace Gambit
       // When first called, check that all analyses contain at least one signal region.
       if (first)
       {
+        // Print cutflow at the end of the run
+        print_cutflows = runOptions-&gt;getValueOrDef&lt;bool&gt;(false, &quot;print_cutflows&quot;);
+        normalized_cutflows = runOptions-&gt;getValueOrDef&lt;bool&gt;(false, &quot;normalized_cutflows&quot;);
+
         // Loop over all AnalysisData pointers
         for (auto&amp; adp : result)
         {
@@ -379,6 +499,23 @@ namespace Gambit
         first = false;
       }
 
+      // Print cutflows of analyses
+      if(print_cutflows)
+      {
+        std::cout &lt;&lt; &quot;Cutflows&quot; &lt;&lt; std::endl;
+        std::cout &lt;&lt; &quot;========&quot; &lt;&lt; std::endl;
+        for(auto&amp; adp : result)
+        {
+          std::cout &lt;&lt; adp-&gt;analysis_name &lt;&lt; std::endl;
+          std::cout &lt;&lt; &quot;-----------------&quot; &lt;&lt; std::endl;
+
+          if(normalized_cutflows)
+          {
+            adp-&gt;cutflows.normalize(Dep::TotalCrossSection-&gt;xsec() * adp-&gt;luminosity);
+          }
+          std::cout &lt;&lt; adp-&gt;cutflows &lt;&lt; std::endl;
+        }
+      }
 
       // #ifdef COLLIDERBIT_DEBUG
       //   cout &lt;&lt; DEBUG_PREFIX &lt;&lt; &quot;CollectAnalyses: Current size of 'result': &quot; &lt;&lt; result.size() &lt;&lt; endl;
@@ -404,7 +541,7 @@ namespace Gambit
   }
 
 }
-</code></pre><hr><p>Updated on 2025-02-12 at 16:10:36 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.d5e27a6ed00168b7a66eb637878a6be7d054db51d0e613bbcfda12ab0569b62177253b4e6453c477574b3a38f50eff49a68f0e19112bd82a68c78a66cd8d05df.js integrity="sha512-1eJ6btABaLembrY3h4pr59BU21HQ5hO7z9oSqwVptiF3JTtOZFPEd1dLOjj1Dv9Jpo8OGREr2Cpox4pmzY0F3w==" crossorigin=anonymous defer></script>
+</code></pre><hr><p>Updated on 2026-11-03 at 14:50:48 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.d5e27a6ed00168b7a66eb637878a6be7d054db51d0e613bbcfda12ab0569b62177253b4e6453c477574b3a38f50eff49a68f0e19112bd82a68c78a66cd8d05df.js integrity="sha512-1eJ6btABaLembrY3h4pr59BU21HQ5hO7z9oSqwVptiF3JTtOZFPEd1dLOjj1Dv9Jpo8OGREr2Cpox4pmzY0F3w==" crossorigin=anonymous defer></script>
 <script src=/js/highlight.min.9003483b4531b86467c8b801b1d5fc5439bb0d6bdb6c6a760a1b54abf37d6bbadf8423dbc81a3359c935c7705bb7d183b46131ba4a9c861b5d48e6a61501461a.js integrity="sha512-kANIO0UxuGRnyLgBsdX8VDm7DWvbbGp2ChtUq/N9a7rfhCPbyBozWck1x3Bbt9GDtGExukqchhtdSOamFQFGGg==" crossorigin=anonymous defer></script>
 <script src=/main.min.9342d29d0e3e250a2c03282306b766e004888dba0fd661a17d7b106655e013bf85733f086ad330e3df0929c713dd81c0ea835966fa92e4a1e38f7ea9680524ed.js integrity="sha512-k0LSnQ4+JQosAygjBrdm4ASIjboP1mGhfXsQZlXgE7+Fcz8IatMw498JKccT3YHA6oNZZvqS5KHjj36paAUk7Q==" crossorigin=anonymous defer></script>
-<script src=https://gambitbsm.org/index.min.03ab9c2e460a36904d0b1544581433f337b9e5e23e6798a396683f418d37e30979da1ab2a8ef201c110075d73ccb12f8cc2605c7d9723f99bef11ed7c8b97844.js integrity="sha512-A6ucLkYKNpBNCxVEWBQz8ze55eI+Z5ijlmg/QY034wl52hqyqO8gHBEAddc8yxL4zCYFx9lyP5m+8R7XyLl4RA==" crossorigin=anonymous defer></script></body></html>
+<script src=https://gambitbsm.org/index.min.3a8ee06d0c346f1fb70040b0fbcbaaacf335cb34023c408954406a05db2089fc2ca349119b9f7d68b9e7044e82b8fdc8bd9661b6ef8b118246c5a2079d7fa8e9.js integrity="sha512-Oo7gbQw0bx+3AECw+8uqrPM1yzQCPECJVEBqBdsgifwso0kRm599aLnnBE6CuP3IvZZhtu+LEYJGxaIHnX+o6Q==" crossorigin=anonymous defer></script></body></html>

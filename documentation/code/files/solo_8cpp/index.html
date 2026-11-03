@@ -24,10 +24,10 @@ bool apply_setting_if_present(
 )
 </code></pre><p>ColliderBit Solo main program.</p><h2 id=macros-documentation>Macros Documentation <a href=#macros-documentation class=anchor aria-hidden=true>#</a></h2><h3 id=define-nulike-version>define NULIKE_VERSION <a href=#define-nulike-version class=anchor aria-hidden=true>#</a></h3><pre><code>#define NULIKE_VERSION &quot;1.0.9&quot;
 </code></pre><p><strong>Author</strong>:</p><ul><li>Pat Scott (<a href=mailto:p.scott@imperial.ac.uk>p.scott@imperial.ac.uk</a>)</li><li>Tomek Procter (<a href=mailto:t.procter.1@research.gla.ac.uk>t.procter.1@research.gla.ac.uk</a>)</li></ul><p><strong>Date</strong>:</p><ul><li>May 2019</li><li>November 2021</li></ul><p>ColliderBit Solo: an event-based LHC recast tool using the GAMBIT ColliderBit module.</p><hr><p>Authors (add name and date if you modify):</p><hr><h3 id=define-nulike-safe-version>define NULIKE_SAFE_VERSION <a href=#define-nulike-safe-version class=anchor aria-hidden=true>#</a></h3><pre><code>#define NULIKE_SAFE_VERSION 1_0_9
-</code></pre><h3 id=define-rivet-version>define RIVET_VERSION <a href=#define-rivet-version class=anchor aria-hidden=true>#</a></h3><pre><code>#define RIVET_VERSION &quot;3.1.5&quot;
-</code></pre><h3 id=define-rivet-safe-version>define RIVET_SAFE_VERSION <a href=#define-rivet-safe-version class=anchor aria-hidden=true>#</a></h3><pre><code>#define RIVET_SAFE_VERSION 3_1_5
-</code></pre><h3 id=define-contur-version>define CONTUR_VERSION <a href=#define-contur-version class=anchor aria-hidden=true>#</a></h3><pre><code>#define CONTUR_VERSION &quot;2.1.1&quot;
-</code></pre><h3 id=define-contur-safe-version>define CONTUR_SAFE_VERSION <a href=#define-contur-safe-version class=anchor aria-hidden=true>#</a></h3><pre><code>#define CONTUR_SAFE_VERSION 2_1_1
+</code></pre><h3 id=define-rivet-version>define RIVET_VERSION <a href=#define-rivet-version class=anchor aria-hidden=true>#</a></h3><pre><code>#define RIVET_VERSION &quot;4.1.0&quot;
+</code></pre><h3 id=define-rivet-safe-version>define RIVET_SAFE_VERSION <a href=#define-rivet-safe-version class=anchor aria-hidden=true>#</a></h3><pre><code>#define RIVET_SAFE_VERSION 4_1_0
+</code></pre><h3 id=define-contur-version>define CONTUR_VERSION <a href=#define-contur-version class=anchor aria-hidden=true>#</a></h3><pre><code>#define CONTUR_VERSION &quot;3.0.0&quot;
+</code></pre><h3 id=define-contur-safe-version>define CONTUR_SAFE_VERSION <a href=#define-contur-safe-version class=anchor aria-hidden=true>#</a></h3><pre><code>#define CONTUR_SAFE_VERSION 3_0_0
 </code></pre><h3 id=define-fulllikes-version>define FULLLIKES_VERSION <a href=#define-fulllikes-version class=anchor aria-hidden=true>#</a></h3><pre><code>#define FULLLIKES_VERSION &quot;1.0&quot;
 </code></pre><h3 id=define-fulllikes-safe-version>define FULLLIKES_SAFE_VERSION <a href=#define-fulllikes-safe-version class=anchor aria-hidden=true>#</a></h3><pre><code>#define FULLLIKES_SAFE_VERSION 1_0
 </code></pre><h2 id=source-code>Source code <a href=#source-code class=anchor aria-hidden=true>#</a></h2><pre><code>//   GAMBIT: Global and Modular BSM Inference Tool
@@ -59,10 +59,10 @@ bool apply_setting_if_present(
 #define NULIKE_VERSION &quot;1.0.9&quot;
 #define NULIKE_SAFE_VERSION 1_0_9
 
-#define RIVET_VERSION &quot;3.1.5&quot;
-#define RIVET_SAFE_VERSION 3_1_5
-#define CONTUR_VERSION &quot;2.1.1&quot;
-#define CONTUR_SAFE_VERSION 2_1_1
+#define RIVET_VERSION &quot;4.1.0&quot;
+#define RIVET_SAFE_VERSION 4_1_0
+#define CONTUR_VERSION &quot;3.0.0&quot;
+#define CONTUR_SAFE_VERSION 3_0_0
 
 #define FULLLIKES_VERSION &quot;1.0&quot;
 #define FULLLIKES_SAFE_VERSION 1_0
@@ -149,7 +149,7 @@ int main(int argc, char* argv[])
     // Translate relevant settings into appropriate variables
     bool debug = settings.getValueOrDef&lt;bool&gt;(false, &quot;debug&quot;);
     // TODO: Use the use_FullLikes setting to allow CBS runs without having ATLAS_FullLikes installed
-    // bool use_FullLikes = settings.getValueOrDef&lt;bool&gt;(false, &quot;use_FullLikes&quot;); 
+    // bool use_FullLikes = settings.getValueOrDef&lt;bool&gt;(false, &quot;use_FullLikes&quot;);
     bool use_lnpiln = settings.getValueOrDef&lt;bool&gt;(false, &quot;use_lognormal_distribution_for_1d_systematic&quot;);
     double jet_pt_min = settings.getValueOrDef&lt;double&gt;(10.0, &quot;jet_pt_min&quot;);
     str event_filename = settings.getValue&lt;str&gt;(&quot;event_file&quot;);
@@ -158,6 +158,10 @@ int main(int argc, char* argv[])
                                 || Gambit::Utils::endsWith(event_filename, &quot;.hepmc3&quot;) );
     if (not event_file_is_HepMC)
       throw std::runtime_error(&quot;Unrecognised event file format in &quot;+event_filename+&quot;; must be .hepmc.&quot;);
+
+    // Extract the jet collections yaml node
+    YAML::Node jet_collections = settings.getValue&lt;YAML::Node&gt;(&quot;jet_collections&quot;);
+    std::string jet_collection_taus = settings.getValueOrDef&lt;std::string&gt;(&quot;antikt_R04&quot;, &quot;jet_collection_taus&quot;);
 
     // Check if Rivet &amp; Contur requested and/or enabled then extract options from yaml
     bool withRivet;
@@ -215,12 +219,14 @@ int main(int argc, char* argv[])
     if (debug) cout &lt;&lt; &quot;Reading HepMC&quot; &lt;&lt; &quot; file: &quot; &lt;&lt; event_filename &lt;&lt; endl;
     auto&amp; getEvent = getHepMCEvent;
     auto&amp; convertEvent = convertHepMCEvent_HEPUtils;
+    auto&amp; AnalysisNumbers = CollectAnalyses;
+    AnalysisNumbers.setOption&lt;bool&gt;(&quot;print_cutflows&quot;, true);
 
     // Initialise logs
     logger().set_log_debug_messages(debug);
     initialise_standalone_logs(&quot;CBS_logs/&quot;);
     logger()&lt;&lt;&quot;Running CBS&quot;&lt;&lt;LogTags::info&lt;&lt;EOM;
-    
+
     // Initialise settings for printer (required)
     YAML::Node printerNode = get_standalone_printer(&quot;cout&quot;, &quot;CBS_logs/&quot;, &quot;&quot;);
     Printers::PrinterManager printerManager(printerNode, false);
@@ -230,6 +236,8 @@ int main(int argc, char* argv[])
     int seed = settings.getValueOrDef&lt;int&gt;(-1, &quot;seed&quot;);
     Random::create_rng_engine(&quot;default&quot;, seed);
 
+    std::vector&lt;std::string&gt; use_colliders = {&quot;CBS&quot;};
+
     // Pass options to the main event loop
     YAML::Node CBS(infile[&quot;settings&quot;]);
     CBS[&quot;analyses&quot;] = analyses;
@@ -237,23 +245,31 @@ int main(int argc, char* argv[])
     CBS[&quot;max_nEvents&quot;] = (long long)(1000000000);
     operateLHCLoop.setOption&lt;YAML::Node&gt;(&quot;CBS&quot;, CBS);
     operateLHCLoop.setOption&lt;bool&gt;(&quot;silenceLoop&quot;, not debug);
+    operateLHCLoop.setOption&lt;std::vector&lt;std::string&gt;&gt;(&quot;use_colliders&quot;, use_colliders);
 
     // Pass the filename and the jet pt cutoff to the HepMC reader/HEPUtils converter function
     getEvent.setOption&lt;str&gt;(&quot;hepmc_filename&quot;, event_filename);
     convertEvent.setOption&lt;double&gt;(&quot;jet_pt_min&quot;, jet_pt_min);
 
+    // Pass the jet collections yaml node to the hepMC reader/HEPUtils converter function
+    getEvent.setOption&lt;std::string&gt;(&quot;jet_collection_taus&quot;, jet_collection_taus);
+    getEvent.setOption&lt;YAML::Node&gt;(&quot;jet_collections&quot;, jet_collections);
+    convertEvent.setOption&lt;std::string&gt;(&quot;jet_collection_taus&quot;, jet_collection_taus);
+    convertEvent.setOption&lt;YAML::Node&gt;(&quot;jet_collections&quot;, jet_collections);
+
     // Pass options to the cross-section function
+    InitialTotalCrossSection_YAMLCBS.setOption&lt;std::vector&lt;std::string&gt;&gt;(&quot;use_colliders&quot;, use_colliders);
     if (settings.hasKey(&quot;cross_section_pb&quot;))
     {
-      getYAMLCrossSection.setOption&lt;double&gt;(&quot;cross_section_pb&quot;, settings.getValue&lt;double&gt;(&quot;cross_section_pb&quot;));
-      if (settings.hasKey(&quot;cross_section_fractional_uncert&quot;)) { getYAMLCrossSection.setOption&lt;double&gt;(&quot;cross_section_fractional_uncert&quot;, settings.getValue&lt;double&gt;(&quot;cross_section_fractional_uncert&quot;)); }
-      else {getYAMLCrossSection.setOption&lt;double&gt;(&quot;cross_section_uncert_pb&quot;, settings.getValue&lt;double&gt;(&quot;cross_section_uncert_pb&quot;)); }
+      InitialTotalCrossSection_YAMLCBS.setOption&lt;double&gt;(&quot;cross_section_pb&quot;, settings.getValue&lt;double&gt;(&quot;cross_section_pb&quot;));
+      if (settings.hasKey(&quot;cross_section_fractional_uncert&quot;)) { InitialTotalCrossSection_YAMLCBS.setOption&lt;double&gt;(&quot;cross_section_fractional_uncert&quot;, settings.getValue&lt;double&gt;(&quot;cross_section_fractional_uncert&quot;)); }
+      else {InitialTotalCrossSection_YAMLCBS.setOption&lt;double&gt;(&quot;cross_section_uncert_pb&quot;, settings.getValue&lt;double&gt;(&quot;cross_section_uncert_pb&quot;)); }
     }
     else // &lt;-- must have option &quot;cross_section_fb&quot;
     {
-      getYAMLCrossSection.setOption&lt;double&gt;(&quot;cross_section_fb&quot;, settings.getValue&lt;double&gt;(&quot;cross_section_fb&quot;));
-      if (settings.hasKey(&quot;cross_section_fractional_uncert&quot;)) { getYAMLCrossSection.setOption&lt;double&gt;(&quot;cross_section_fractional_uncert&quot;, settings.getValue&lt;double&gt;(&quot;cross_section_fractional_uncert&quot;)); }
-      else { getYAMLCrossSection.setOption&lt;double&gt;(&quot;cross_section_uncert_fb&quot;, settings.getValue&lt;double&gt;(&quot;cross_section_uncert_fb&quot;)); }
+      InitialTotalCrossSection_YAMLCBS.setOption&lt;double&gt;(&quot;cross_section_fb&quot;, settings.getValue&lt;double&gt;(&quot;cross_section_fb&quot;));
+      if (settings.hasKey(&quot;cross_section_fractional_uncert&quot;)) { InitialTotalCrossSection_YAMLCBS.setOption&lt;double&gt;(&quot;cross_section_fractional_uncert&quot;, settings.getValue&lt;double&gt;(&quot;cross_section_fractional_uncert&quot;)); }
+      else { InitialTotalCrossSection_YAMLCBS.setOption&lt;double&gt;(&quot;cross_section_uncert_fb&quot;, settings.getValue&lt;double&gt;(&quot;cross_section_uncert_fb&quot;)); }
     }
 
     // Pass options to the likelihood function
@@ -302,6 +318,7 @@ int main(int argc, char* argv[])
     get_LHC_LogLike_per_analysis.resolveDependency(&amp;calc_LHC_LogLikes_full);
     calc_LHC_LogLikes_full.resolveDependency(&amp;CollectAnalyses);
     calc_LHC_LogLikes_full.resolveDependency(&amp;operateLHCLoop);
+    calc_LHC_LogLikes_full.resolveDependency(&amp;InitialTotalCrossSection_YAMLCBS);
     calc_LHC_LogLikes_full.resolveBackendReq(use_lnpiln ? &amp;nulike_lnpiln : &amp;nulike_lnpin);
     calc_LHC_LogLikes_full.resolveBackendReq(&amp;FullLikes_FileExists);
     calc_LHC_LogLikes_full.resolveBackendReq(&amp;FullLikes_ReadIn);
@@ -315,9 +332,9 @@ int main(int argc, char* argv[])
     runCMSAnalyses.resolveDependency(&amp;smearEventCMS);
     runIdentityAnalyses.resolveDependency(&amp;getIdentityAnalysisContainer);
     runIdentityAnalyses.resolveDependency(&amp;copyEvent);
-    getATLASAnalysisContainer.resolveDependency(&amp;getYAMLCrossSection);
-    getCMSAnalysisContainer.resolveDependency(&amp;getYAMLCrossSection);
-    getIdentityAnalysisContainer.resolveDependency(&amp;getYAMLCrossSection);
+    getATLASAnalysisContainer.resolveDependency(&amp;InitialTotalCrossSection_YAMLCBS);
+    getCMSAnalysisContainer.resolveDependency(&amp;InitialTotalCrossSection_YAMLCBS);
+    getIdentityAnalysisContainer.resolveDependency(&amp;InitialTotalCrossSection_YAMLCBS);
     smearEventATLAS.resolveDependency(&amp;getBuckFastATLAS);
     smearEventATLAS.resolveDependency(&amp;convertEvent);
     smearEventCMS.resolveDependency(&amp;getBuckFastCMS);
@@ -349,7 +366,6 @@ int main(int argc, char* argv[])
     smearEventATLAS.resolveLoopManager(&amp;operateLHCLoop);
     smearEventCMS.resolveLoopManager(&amp;operateLHCLoop);
     copyEvent.resolveLoopManager(&amp;operateLHCLoop);
-    getYAMLCrossSection.resolveLoopManager(&amp;operateLHCLoop);
     runATLASAnalyses.resolveLoopManager(&amp;operateLHCLoop);
     runCMSAnalyses.resolveLoopManager(&amp;operateLHCLoop);
     runIdentityAnalyses.resolveLoopManager(&amp;operateLHCLoop);
@@ -358,7 +374,6 @@ int main(int argc, char* argv[])
                                                                   &amp;getBuckFastATLAS,
                                                                   &amp;getBuckFastCMS,
                                                                   &amp;getBuckFastIdentity,
-                                                                  &amp;getYAMLCrossSection,
                                                                   &amp;getATLASAnalysisContainer,
                                                                   &amp;getCMSAnalysisContainer,
                                                                   &amp;getIdentityAnalysisContainer,
@@ -389,6 +404,7 @@ int main(int argc, char* argv[])
     }
 
     // Run the detector sim and selected analyses on all the events read in.
+    InitialTotalCrossSection_YAMLCBS.reset_and_calculate();
     operateLHCLoop.reset_and_calculate();
     CollectAnalyses.reset_and_calculate();
     calc_LHC_LogLikes_full.reset_and_calculate();
@@ -446,7 +462,7 @@ int main(int argc, char* argv[])
     cout &lt;&lt; &quot;Read and analysed &quot; &lt;&lt; n_events &lt;&lt; &quot; events from HepMC file.&quot; &lt;&lt; endl &lt;&lt; endl;
     cout &lt;&lt; &quot;Analysis details:&quot; &lt;&lt; endl &lt;&lt; endl &lt;&lt; summary_line.str() &lt;&lt; endl;
     // TODO: Mention LHCb as contur can include an LHCb pool?
-    cout &lt;&lt; std::scientific &lt;&lt; &quot;Total combined ATLAS+CMS&quot; &lt;&lt; (withContur?&quot; analysis and searches &quot;:&quot; &quot;) 
+    cout &lt;&lt; std::scientific &lt;&lt; &quot;Total combined ATLAS+CMS&quot; &lt;&lt; (withContur?&quot; analysis and searches &quot;:&quot; &quot;)
          &lt;&lt; &quot;log-likelihood: &quot; &lt;&lt; loglike &lt;&lt; endl;
     cout &lt;&lt; endl;
 
@@ -463,7 +479,7 @@ int main(int argc, char* argv[])
   return 1;
 
 }
-</code></pre><hr><p>Updated on 2025-02-12 at 16:10:35 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.d5e27a6ed00168b7a66eb637878a6be7d054db51d0e613bbcfda12ab0569b62177253b4e6453c477574b3a38f50eff49a68f0e19112bd82a68c78a66cd8d05df.js integrity="sha512-1eJ6btABaLembrY3h4pr59BU21HQ5hO7z9oSqwVptiF3JTtOZFPEd1dLOjj1Dv9Jpo8OGREr2Cpox4pmzY0F3w==" crossorigin=anonymous defer></script>
+</code></pre><hr><p>Updated on 2026-11-03 at 14:50:47 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.d5e27a6ed00168b7a66eb637878a6be7d054db51d0e613bbcfda12ab0569b62177253b4e6453c477574b3a38f50eff49a68f0e19112bd82a68c78a66cd8d05df.js integrity="sha512-1eJ6btABaLembrY3h4pr59BU21HQ5hO7z9oSqwVptiF3JTtOZFPEd1dLOjj1Dv9Jpo8OGREr2Cpox4pmzY0F3w==" crossorigin=anonymous defer></script>
 <script src=/js/highlight.min.9003483b4531b86467c8b801b1d5fc5439bb0d6bdb6c6a760a1b54abf37d6bbadf8423dbc81a3359c935c7705bb7d183b46131ba4a9c861b5d48e6a61501461a.js integrity="sha512-kANIO0UxuGRnyLgBsdX8VDm7DWvbbGp2ChtUq/N9a7rfhCPbyBozWck1x3Bbt9GDtGExukqchhtdSOamFQFGGg==" crossorigin=anonymous defer></script>
 <script src=/main.min.9342d29d0e3e250a2c03282306b766e004888dba0fd661a17d7b106655e013bf85733f086ad330e3df0929c713dd81c0ea835966fa92e4a1e38f7ea9680524ed.js integrity="sha512-k0LSnQ4+JQosAygjBrdm4ASIjboP1mGhfXsQZlXgE7+Fcz8IatMw498JKccT3YHA6oNZZvqS5KHjj36paAUk7Q==" crossorigin=anonymous defer></script>
-<script src=https://gambitbsm.org/index.min.03ab9c2e460a36904d0b1544581433f337b9e5e23e6798a396683f418d37e30979da1ab2a8ef201c110075d73ccb12f8cc2605c7d9723f99bef11ed7c8b97844.js integrity="sha512-A6ucLkYKNpBNCxVEWBQz8ze55eI+Z5ijlmg/QY034wl52hqyqO8gHBEAddc8yxL4zCYFx9lyP5m+8R7XyLl4RA==" crossorigin=anonymous defer></script></body></html>
+<script src=https://gambitbsm.org/index.min.3a8ee06d0c346f1fb70040b0fbcbaaacf335cb34023c408954406a05db2089fc2ca349119b9f7d68b9e7044e82b8fdc8bd9661b6ef8b118246c5a2079d7fa8e9.js integrity="sha512-Oo7gbQw0bx+3AECw+8uqrPM1yzQCPECJVEBqBdsgifwso0kRm599aLnnBE6CuP3IvZZhtu+LEYJGxaIHnX+o6Q==" crossorigin=anonymous defer></script></body></html>

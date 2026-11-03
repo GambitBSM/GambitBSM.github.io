@@ -17,9 +17,7 @@ Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle
 #include &quot;gambit/ColliderBit/analyses/Cutflow.hpp&quot;
 #include &quot;gambit/ColliderBit/ATLASEfficiencies.hpp&quot;
 
-#include &quot;gambit/Utils/begin_ignore_warnings_eigen.hpp&quot;
 #include &quot;Eigen/Eigen&quot;
-#include &quot;gambit/Utils/end_ignore_warnings.hpp&quot;
 
 // #define CHECK_CUTFLOW
 
@@ -48,23 +46,6 @@ namespace Gambit
         // Required detector sim
         static constexpr const char* detector = &quot;ATLAS&quot;;
 
-        // Numbers passing cuts
-        std::map&lt;string, EventCounter&gt; _counters = {
-          {&quot;2j-1600&quot;, EventCounter(&quot;2j-1600&quot;)},
-          {&quot;2j-2200&quot;, EventCounter(&quot;2j-2200&quot;)},
-          {&quot;2j-2800&quot;, EventCounter(&quot;2j-2800&quot;)},
-          {&quot;4j-1000&quot;, EventCounter(&quot;4j-1000&quot;)},
-          {&quot;4j-2200&quot;, EventCounter(&quot;4j-2200&quot;)},
-          {&quot;4j-3400&quot;, EventCounter(&quot;4j-3400&quot;)},
-          {&quot;5j-1600&quot;, EventCounter(&quot;5j-1600&quot;)},
-          {&quot;6j-1000&quot;, EventCounter(&quot;6j-1000&quot;)},
-          {&quot;6j-2200&quot;, EventCounter(&quot;6j-2200&quot;)},
-          {&quot;6j-3400&quot;, EventCounter(&quot;6j-3400&quot;)},
-        };
-
-        Cutflows _cutflows;
-
-
         // static const size_t NUMSR = 10;
         // double _srnums[NUMSR] = {0., 0., 0., 0., 0., 0., 0., 0., 0., 0.};
         // enum SRNames { SR2J_1600=0, &quot;2j_2200&quot;, &quot;2j_2800&quot;,
@@ -75,7 +56,22 @@ namespace Gambit
         Analysis_ATLAS_13TeV_0LEP_139invfb()
         {
 
+          // Numbers passing cuts
+          _counters[&quot;2j-1600&quot;] = EventCounter(&quot;2j-1600&quot;);
+          _counters[&quot;2j-2200&quot;] = EventCounter(&quot;2j-2200&quot;);
+          _counters[&quot;2j-2800&quot;] = EventCounter(&quot;2j-2800&quot;);
+          _counters[&quot;4j-1000&quot;] = EventCounter(&quot;4j-1000&quot;);
+          _counters[&quot;4j-2200&quot;] = EventCounter(&quot;4j-2200&quot;);
+          _counters[&quot;4j-3400&quot;] = EventCounter(&quot;4j-3400&quot;);
+          _counters[&quot;5j-1600&quot;] = EventCounter(&quot;5j-1600&quot;);
+          _counters[&quot;6j-1000&quot;] = EventCounter(&quot;6j-1000&quot;);
+          _counters[&quot;6j-2200&quot;] = EventCounter(&quot;6j-2200&quot;);
+          _counters[&quot;6j-3400&quot;] = EventCounter(&quot;6j-3400&quot;);
+
+
+
           set_analysis_name(&quot;ATLAS_13TeV_0LEP_139invfb&quot;);
+          set_detector_name(detector);
           set_luminosity(139.0);
 
           // Book cut-flows
@@ -133,7 +129,7 @@ namespace Gambit
             if (electron-&gt;pT() &gt; 7. &amp;&amp; electron-&gt;abseta() &lt; 2.47)
               baselineElectrons.push_back(electron);
           }
-          ATLAS::applyElectronEff(baselineElectrons);
+          applyEfficiency(baselineElectrons, ATLAS::eff2DEl.at(&quot;Generic&quot;));
 
           // Get baseline muons and apply efficiency
           vector&lt;const Particle*&gt; baselineMuons;
@@ -142,7 +138,7 @@ namespace Gambit
             if (muon-&gt;pT() &gt; 6. &amp;&amp; muon-&gt;abseta() &lt; 2.7)
               baselineMuons.push_back(muon);
           }
-          ATLAS::applyMuonEff(baselineMuons);
+          applyEfficiency(baselineMuons, ATLAS::eff2DMu.at(&quot;Generic&quot;));
 
           // Remove any |eta| &lt; 2.8 jet within dR = 0.2 of an electron
           vector&lt;const Jet*&gt; signalJets;
@@ -156,7 +152,7 @@ namespace Gambit
             if (all_of(signalJets, [&amp;](const Jet* j){ return deltaR_rap(*e, *j) &gt; min(0.4, 0.04+10/e-&gt;pT()); }))
               signalElectrons.push_back(e);
           // Apply electron ID selection
-          ATLAS::applyLooseIDElectronSelectionR2(signalElectrons);
+          applyEfficiency(signalElectrons, ATLAS::eff2DEl.at(&quot;ATLAS_PHYS_PUB_2015_041_Loose&quot;));
           /// @todo And tight ID for high purity... used where?
 
           // Remove muons with dR = 0.4 of surviving |eta| &lt; 2.8 jets
@@ -344,13 +340,6 @@ namespace Gambit
         }
 
 
-        /// Combine the variables of another copy of this analysis (typically on another thread) into this one.
-        void combine(const Analysis* other)
-        {
-          const Analysis_ATLAS_13TeV_0LEP_139invfb* specificOther = dynamic_cast&lt;const Analysis_ATLAS_13TeV_0LEP_139invfb*&gt;(other);
-          for (auto&amp; pair : _counters) { pair.second += specificOther-&gt;_counters.at(pair.first); }
-        }
-
 
         /// Register results objects with the results for each SR; obs &amp; bkg numbers from the CONF note
         void collect_results()
@@ -366,41 +355,35 @@ namespace Gambit
           add_result(SignalRegionData(_counters.at(&quot;6j-2200&quot;),    5, {  4.6,  1.0}));
           add_result(SignalRegionData(_counters.at(&quot;6j-3400&quot;),    0, {  0.8,  0.4}));
 
-          // Cutflow printout
-          #ifdef CHECK_CUTFLOW
-            // const double sf = 139*crossSection()/femtobarn/sumOfWeights();
 
-            // // Confnote cutflows:
-            // _cutflows[&quot;2j-1600&quot;].normalize(1763, 1);
-            // _cutflows[&quot;2j-2200&quot;].normalize(1763, 1);
-            // _cutflows[&quot;2j-2800&quot;].normalize(1763, 1);
-            // _cutflows[&quot;4j-1000&quot;].normalize(2562, 1);
-            // _cutflows[&quot;4j-2200&quot;].normalize(2562, 1);
-            // _cutflows[&quot;4j-3400&quot;].normalize(2562, 1);
-            // _cutflows[&quot;5j-1600&quot;].normalize(6101, 1);
-            // _cutflows[&quot;6j-1000&quot;].normalize(6101, 1);
-            // _cutflows[&quot;6j-2200&quot;].normalize(6101, 1);
-            // _cutflows[&quot;6j-3400&quot;].normalize(6101, 1);
+          // const double sf = 139*crossSection()/femtobarn/sumOfWeights();
 
-            // Paper cutflows:
-            _cutflows[&quot;2j-1600&quot;].normalize(1423, 1);  // m_sq = 1200, m_N1 = 600, direct decay
-            _cutflows[&quot;2j-2200&quot;].normalize(1423, 1);  // m_sq = 1200, m_N1 = 600, direct decay
-            _cutflows[&quot;2j-2800&quot;].normalize(1423, 1);  // m_sq = 1200, m_N1 = 600, direct decay
-            _cutflows[&quot;4j-1000&quot;].normalize(1787, 1);  // m_g = 1400, m_N1 = 1000, direct decay
-            _cutflows[&quot;4j-2200&quot;].normalize(1787, 1);  // m_g = 1400, m_N1 = 1000, direct decay
-            _cutflows[&quot;4j-3400&quot;].normalize(1787, 1);  // m_g = 1400, m_N1 = 1000, direct decay
-            _cutflows[&quot;5j-1600&quot;].normalize(1787, 1);  // m_g = 1400, m_N1 = 1000, direct decay
-            _cutflows[&quot;6j-1000&quot;].normalize(2651, 1);  // m_q = 800, m_C1 = 600, m_N1 = 400, one-step decay
-            _cutflows[&quot;6j-2200&quot;].normalize(2651, 1);  // m_q = 800, m_C1 = 600, m_N1 = 400, one-step decay
-            _cutflows[&quot;6j-3400&quot;].normalize(2651, 1);  // m_q = 800, m_C1 = 600, m_N1 = 400, one-step decay
+          // // Confnote cutflows:
+          // _cutflows[&quot;2j-1600&quot;].normalize(1763, 1);
+          // _cutflows[&quot;2j-2200&quot;].normalize(1763, 1);
+          // _cutflows[&quot;2j-2800&quot;].normalize(1763, 1);
+          // _cutflows[&quot;4j-1000&quot;].normalize(2562, 1);
+          // _cutflows[&quot;4j-2200&quot;].normalize(2562, 1);
+          // _cutflows[&quot;4j-3400&quot;].normalize(2562, 1);
+          // _cutflows[&quot;5j-1600&quot;].normalize(6101, 1);
+          // _cutflows[&quot;6j-1000&quot;].normalize(6101, 1);
+          // _cutflows[&quot;6j-2200&quot;].normalize(6101, 1);
+          // _cutflows[&quot;6j-3400&quot;].normalize(6101, 1);
+
+          // Paper cutflows:
+          _cutflows[&quot;2j-1600&quot;].normalize(1423, 1);  // m_sq = 1200, m_N1 = 600, direct decay
+          _cutflows[&quot;2j-2200&quot;].normalize(1423, 1);  // m_sq = 1200, m_N1 = 600, direct decay
+          _cutflows[&quot;2j-2800&quot;].normalize(1423, 1);  // m_sq = 1200, m_N1 = 600, direct decay
+          _cutflows[&quot;4j-1000&quot;].normalize(1787, 1);  // m_g = 1400, m_N1 = 1000, direct decay
+          _cutflows[&quot;4j-2200&quot;].normalize(1787, 1);  // m_g = 1400, m_N1 = 1000, direct decay
+          _cutflows[&quot;4j-3400&quot;].normalize(1787, 1);  // m_g = 1400, m_N1 = 1000, direct decay
+          _cutflows[&quot;5j-1600&quot;].normalize(1787, 1);  // m_g = 1400, m_N1 = 1000, direct decay
+          _cutflows[&quot;6j-1000&quot;].normalize(2651, 1);  // m_q = 800, m_C1 = 600, m_N1 = 400, one-step decay
+          _cutflows[&quot;6j-2200&quot;].normalize(2651, 1);  // m_q = 800, m_C1 = 600, m_N1 = 400, one-step decay
+          _cutflows[&quot;6j-3400&quot;].normalize(2651, 1);  // m_q = 800, m_C1 = 600, m_N1 = 400, one-step decay
 
 
-            cout &lt;&lt; &quot;\nCUTFLOWS:\n&quot; &lt;&lt; _cutflows &lt;&lt; endl;
-            cout &lt;&lt; &quot;\nSRCOUNTS:\n&quot;;
-            // for (double x : _srnums) cout &lt;&lt; x &lt;&lt; &quot;  &quot;;
-            for (auto&amp; pair : _counters) cout &lt;&lt; pair.second.weight_sum() &lt;&lt; &quot;  &quot;;
-            cout &lt;&lt; &quot;\n&quot; &lt;&lt; endl;
-          #endif
+          add_cutflows(_cutflows);
         }
 
 
@@ -420,7 +403,7 @@ namespace Gambit
 
   }
 }
-</code></pre><hr><p>Updated on 2025-02-12 at 16:10:35 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.d5e27a6ed00168b7a66eb637878a6be7d054db51d0e613bbcfda12ab0569b62177253b4e6453c477574b3a38f50eff49a68f0e19112bd82a68c78a66cd8d05df.js integrity="sha512-1eJ6btABaLembrY3h4pr59BU21HQ5hO7z9oSqwVptiF3JTtOZFPEd1dLOjj1Dv9Jpo8OGREr2Cpox4pmzY0F3w==" crossorigin=anonymous defer></script>
+</code></pre><hr><p>Updated on 2026-11-03 at 14:50:47 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.d5e27a6ed00168b7a66eb637878a6be7d054db51d0e613bbcfda12ab0569b62177253b4e6453c477574b3a38f50eff49a68f0e19112bd82a68c78a66cd8d05df.js integrity="sha512-1eJ6btABaLembrY3h4pr59BU21HQ5hO7z9oSqwVptiF3JTtOZFPEd1dLOjj1Dv9Jpo8OGREr2Cpox4pmzY0F3w==" crossorigin=anonymous defer></script>
 <script src=/js/highlight.min.9003483b4531b86467c8b801b1d5fc5439bb0d6bdb6c6a760a1b54abf37d6bbadf8423dbc81a3359c935c7705bb7d183b46131ba4a9c861b5d48e6a61501461a.js integrity="sha512-kANIO0UxuGRnyLgBsdX8VDm7DWvbbGp2ChtUq/N9a7rfhCPbyBozWck1x3Bbt9GDtGExukqchhtdSOamFQFGGg==" crossorigin=anonymous defer></script>
 <script src=/main.min.9342d29d0e3e250a2c03282306b766e004888dba0fd661a17d7b106655e013bf85733f086ad330e3df0929c713dd81c0ea835966fa92e4a1e38f7ea9680524ed.js integrity="sha512-k0LSnQ4+JQosAygjBrdm4ASIjboP1mGhfXsQZlXgE7+Fcz8IatMw498JKccT3YHA6oNZZvqS5KHjj36paAUk7Q==" crossorigin=anonymous defer></script>
-<script src=https://gambitbsm.org/index.min.03ab9c2e460a36904d0b1544581433f337b9e5e23e6798a396683f418d37e30979da1ab2a8ef201c110075d73ccb12f8cc2605c7d9723f99bef11ed7c8b97844.js integrity="sha512-A6ucLkYKNpBNCxVEWBQz8ze55eI+Z5ijlmg/QY034wl52hqyqO8gHBEAddc8yxL4zCYFx9lyP5m+8R7XyLl4RA==" crossorigin=anonymous defer></script></body></html>
+<script src=https://gambitbsm.org/index.min.3a8ee06d0c346f1fb70040b0fbcbaaacf335cb34023c408954406a05db2089fc2ca349119b9f7d68b9e7044e82b8fdc8bd9661b6ef8b118246c5a2079d7fa8e9.js integrity="sha512-Oo7gbQw0bx+3AECw+8uqrPM1yzQCPECJVEBqBdsgifwso0kRm599aLnnBE6CuP3IvZZhtu+LEYJGxaIHnX+o6Q==" crossorigin=anonymous defer></script></body></html>

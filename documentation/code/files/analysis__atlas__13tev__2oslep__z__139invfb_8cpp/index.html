@@ -25,7 +25,7 @@ Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle
 // Updated to paper version (3-lepton and 1-lepton SRs):
 // - https://arxiv.org/abs/2006.05880
 // - https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-2018-21/
-// 
+//
 // Luminosity: 139 fb^-1
 
 
@@ -55,16 +55,6 @@ namespace Gambit
 
     protected:
 
-      // Counters for the number of accepted events for each signal region
-      std::map&lt;string, EventCounter&gt; _counters = {
-        {&quot;SRZ1A&quot;, EventCounter(&quot;SRZ1A&quot;)},
-        {&quot;SRZ1B&quot;, EventCounter(&quot;SRZ1B&quot;)},
-        {&quot;SRZ2A&quot;, EventCounter(&quot;SRZ2A&quot;)},
-        {&quot;SRZ2B&quot;, EventCounter(&quot;SRZ2B&quot;)},
-        // {&quot;SRh1A&quot;, EventCounter(&quot;SRh1A&quot;)},
-        // {&quot;SRh1B&quot;, EventCounter(&quot;SRh1B&quot;)},
-      };
-
        vector&lt;Cutflow&gt; _cutflow;
 
        //vector&lt;int&gt; _test;
@@ -91,7 +81,17 @@ namespace Gambit
       Analysis_ATLAS_13TeV_2OSLEP_Z_139invfb()
       {
 
+        // Counters for the number of accepted events for each signal region
+        _counters[&quot;SRZ1A&quot;] = EventCounter(&quot;SRZ1A&quot;);
+        _counters[&quot;SRZ1B&quot;] = EventCounter(&quot;SRZ1B&quot;);
+        _counters[&quot;SRZ2A&quot;] = EventCounter(&quot;SRZ2A&quot;);
+        _counters[&quot;SRZ2B&quot;] = EventCounter(&quot;SRZ2B&quot;);
+          // _counters[&quot;SRh1A&quot;] = EventCounter(&quot;SRh1A&quot;);
+          // _counters[&quot;SRh1B&quot;] = EventCounter(&quot;SRh1B&quot;);
+
+
         set_analysis_name(&quot;ATLAS_13TeV_2OSLEP_Z_139invfb&quot;);
+        set_detector_name(detector);
         set_luminosity(139);
 
 
@@ -143,7 +143,7 @@ namespace Gambit
 
         // Apply electron efficiency
         // Loose electron ID selection
-        ATLAS::applyElectronIDEfficiency2019(baselineElectrons, &quot;Loose&quot;);
+        applyEfficiency(baselineElectrons, ATLAS::eff1DEl.at(&quot;PERF_2017_01_ID_Loose&quot;));
 
         // Muon candidates are reconstructed in the region |η| &lt; 2.4 from muon spectrometer tracks matching ID tracks. Candidate muons must have pT &gt; 4 GeV and pass the medium identification requirements defined in arXiv: 1603.05598 [hep-ex].
         for (const HEPUtils::Particle* muon : event-&gt;muons())
@@ -153,7 +153,7 @@ namespace Gambit
 
         // Apply muon efficiency
         // Missing: &quot;Medium&quot; muon ID criteria
-        ATLAS::applyMuonEffR2(baselineMuons);
+        applyEfficiency(baselineMuons, ATLAS::eff2DMu.at(&quot;R2&quot;));
 
         // Missing: transverse and longitudinal impact parameter cuts
 
@@ -223,7 +223,7 @@ namespace Gambit
         vector&lt;const HEPUtils::Particle*&gt; signalLeptons;
 
         // Signal electrons must satisfy the “medium” identification requirement as defined in arXiv: 1902.04655 [hep-ex]
-        ATLAS::applyElectronIDEfficiency2019(signalElectrons, &quot;Medium&quot;);
+        applyEfficiency(signalElectrons, ATLAS::eff1DEl.at(&quot;PERF_2017_01_ID_Medium&quot;));
 
 
         // Signal muons must have pT &gt; 5 GeV.
@@ -288,12 +288,12 @@ namespace Gambit
             Zlike = true;
         }
 
-        // h candidate
-        vector&lt;vector&lt;const HEPUtils::Jet*&gt;&gt; BJetPairs = getBJetPairs(signalBJets);
-        double h_id_eff = 0.52; // Paper claims an efficiency between 50% and 54% but, depending on the mass of stop1
-        int nhcand = 0;
-        for(size_t i=0; i&lt;BJetPairs.size(); ++i)
-          if(random_bool(h_id_eff)) nhcand++;
+        // h candidate // Curently not used
+        // vector&lt;vector&lt;const HEPUtils::Jet*&gt;&gt; BJetPairs = getBJetPairs(signalBJets);
+        // double h_id_eff = 0.52; // Paper claims an efficiency between 50% and 54% but, depending on the mass of stop1
+        // int nhcand = 0;
+        // for(size_t i=0; i&lt;BJetPairs.size(); ++i)
+        //   if(random_bool(h_id_eff)) nhcand++;
    
         // Transverse mass from leading lepton with pT
         // double mT = nSignalLeptons &gt; 0 and get_mT(signalLeptons.at(0)-&gt;mom(), ptot);  // currently not used
@@ -347,7 +347,7 @@ namespace Gambit
         // Construct Object-based MET significance
         // FIXME: Can only do event-based MET signficance for now
         // double met_significance = met / sqrt(HT); // currently not used
-        
+
 
         // Signal Regions
         // 3l
@@ -534,30 +534,30 @@ namespace Gambit
         // {
         //   _cutflow[4].fill(1);
         //   _cutflow[5].fill(1);
- 
+
         //   // 1
         //   if (nSignalBJets &gt;= 4 and signalBJets.at(3)-&gt;pT() &gt; 30.)
         //   {
         //     _cutflow[4].fill(2);
         //     _cutflow[5].fill(2);
- 
+
         //     // 2
         //     if (nhcand &gt;= 1)
         //     {
         //       _cutflow[4].fill(3);
         //       _cutflow[5].fill(3);
- 
+
         //       // 3
         //       if (mT &gt; 150.)
         //       {
         //         _cutflow[4].fill(4);
         //         _cutflow[5].fill(4);
- 
+
         //         // 4, SRh1A
         //         if (nSignalJets &gt;= 4 and signalJets.at(3)-&gt;pT() &gt; 60.)
         //         {
         //           _cutflow[4].fill(5);
- 
+
         //           // 5
         //           if (met_significance &gt; 12.)
         //             _cutflow[4].fill(6);
@@ -565,8 +565,8 @@ namespace Gambit
         //         // 4, SRh1B
         //         if (nSignalJets &gt;= 6 and signalJets.at(3)-&gt;pT() &gt; 60.)
         //         {
-        //           _cutflow[5].fill(5); 
- 
+        //           _cutflow[5].fill(5);
+
         //           // 5
         //           if (met_significance &gt; 7.)
         //             _cutflow[5].fill(6);
@@ -574,18 +574,10 @@ namespace Gambit
         //       }
         //     }
         //   }
-        // } 
- 
+        // }
+
       }
 
-      /// Combine the variables of another copy of this analysis (typically on another thread) into this one.
-      void combine(const Analysis* other)
-      {
-        const Analysis_ATLAS_13TeV_2OSLEP_Z_139invfb* specificOther
-                = dynamic_cast&lt;const Analysis_ATLAS_13TeV_2OSLEP_Z_139invfb*&gt;(other);
-
-        for (auto&amp; pair : _counters) { pair.second += specificOther-&gt;_counters.at(pair.first); }
-      }
 
       // This function can be overridden by the derived SR-specific classes
       virtual void collect_results()
@@ -623,7 +615,7 @@ namespace Gambit
 
   }
 }
-</code></pre><hr><p>Updated on 2025-02-12 at 16:10:35 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.d5e27a6ed00168b7a66eb637878a6be7d054db51d0e613bbcfda12ab0569b62177253b4e6453c477574b3a38f50eff49a68f0e19112bd82a68c78a66cd8d05df.js integrity="sha512-1eJ6btABaLembrY3h4pr59BU21HQ5hO7z9oSqwVptiF3JTtOZFPEd1dLOjj1Dv9Jpo8OGREr2Cpox4pmzY0F3w==" crossorigin=anonymous defer></script>
+</code></pre><hr><p>Updated on 2026-11-03 at 14:50:47 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.d5e27a6ed00168b7a66eb637878a6be7d054db51d0e613bbcfda12ab0569b62177253b4e6453c477574b3a38f50eff49a68f0e19112bd82a68c78a66cd8d05df.js integrity="sha512-1eJ6btABaLembrY3h4pr59BU21HQ5hO7z9oSqwVptiF3JTtOZFPEd1dLOjj1Dv9Jpo8OGREr2Cpox4pmzY0F3w==" crossorigin=anonymous defer></script>
 <script src=/js/highlight.min.9003483b4531b86467c8b801b1d5fc5439bb0d6bdb6c6a760a1b54abf37d6bbadf8423dbc81a3359c935c7705bb7d183b46131ba4a9c861b5d48e6a61501461a.js integrity="sha512-kANIO0UxuGRnyLgBsdX8VDm7DWvbbGp2ChtUq/N9a7rfhCPbyBozWck1x3Bbt9GDtGExukqchhtdSOamFQFGGg==" crossorigin=anonymous defer></script>
 <script src=/main.min.9342d29d0e3e250a2c03282306b766e004888dba0fd661a17d7b106655e013bf85733f086ad330e3df0929c713dd81c0ea835966fa92e4a1e38f7ea9680524ed.js integrity="sha512-k0LSnQ4+JQosAygjBrdm4ASIjboP1mGhfXsQZlXgE7+Fcz8IatMw498JKccT3YHA6oNZZvqS5KHjj36paAUk7Q==" crossorigin=anonymous defer></script>
-<script src=https://gambitbsm.org/index.min.03ab9c2e460a36904d0b1544581433f337b9e5e23e6798a396683f418d37e30979da1ab2a8ef201c110075d73ccb12f8cc2605c7d9723f99bef11ed7c8b97844.js integrity="sha512-A6ucLkYKNpBNCxVEWBQz8ze55eI+Z5ijlmg/QY034wl52hqyqO8gHBEAddc8yxL4zCYFx9lyP5m+8R7XyLl4RA==" crossorigin=anonymous defer></script></body></html>
+<script src=https://gambitbsm.org/index.min.3a8ee06d0c346f1fb70040b0fbcbaaacf335cb34023c408954406a05db2089fc2ca349119b9f7d68b9e7044e82b8fdc8bd9661b6ef8b118246c5a2079d7fa8e9.js integrity="sha512-Oo7gbQw0bx+3AECw+8uqrPM1yzQCPECJVEBqBdsgifwso0kRm599aLnnBE6CuP3IvZZhtu+LEYJGxaIHnX+o6Q==" crossorigin=anonymous defer></script></body></html>

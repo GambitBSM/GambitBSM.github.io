@@ -1,0 +1,616 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="ie=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><link rel=preload as=font href=https://gambitbsm.org/fonts/vendor/jost/jost-v4-latin-regular.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://gambitbsm.org/fonts/vendor/jost/jost-v4-latin-500.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://gambitbsm.org/fonts/vendor/jost/jost-v4-latin-700.woff2 type=font/woff2 crossorigin><script>(()=>{var e=localStorage.getItem("theme");e==="dark"&&document.documentElement.setAttribute("data-dark-mode","")})()</script><link rel=stylesheet href=https://gambitbsm.org/main.c1f0838e2cac2d5bb45c4f51eac5017d94b53e71f279f5ef925be54abda180b5ad4c9a5384f3c141e772c408e3f24bd9c50c11e6b79424a45ac99a0d112b5f29.css integrity="sha512-wfCDjiysLVu0XE9R6sUBfZS1PnHyefXvklvlSr2hgLWtTJpThPPBQedyxAjj8kvZxQwR5reUJKRayZoNEStfKQ==" crossorigin=anonymous><noscript><style>img.lazyload{display:none}</style></noscript><meta name=robots content="index, follow"><meta name=googlebot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><meta name=bingbot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><title>file src/BDT.cpp - GAMBIT</title><meta name=description content="[No description available]"><link rel=canonical href=https://gambitbsm.org/documentation/code/files/bdt_8cpp/><meta property="og:locale" content="en_US"><meta property="og:type" content="article"><meta property="og:title" content="file src/BDT.cpp"><meta property="og:description" content="[No description available]"><meta property="og:url" content="https://gambitbsm.org/documentation/code/files/bdt_8cpp/"><meta property="og:site_name" content="GAMBIT"><meta property="og:image" content="https://gambitbsm.org/gambit_logo.png"><meta property="og:image:alt" content="GAMBIT"><meta name=twitter:card content="summary_large_image"><meta name=twitter:site content><meta name=twitter:creator content><meta name=twitter:title content="file src/BDT.cpp"><meta name=twitter:description content="[No description available]"><meta name=twitter:image content="https://gambitbsm.org/gambit_logo.png"><meta name=twitter:image:alt content="file src/BDT.cpp"><script type=application/ld+json>{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://gambitbsm.org/#/schema/organization/1","name":"Doks","url":"https://gambitbsm.org/","sameAs":["https://github.com/GambitBSM"],"logo":{"@type":"ImageObject","@id":"https://gambitbsm.org/#/schema/image/1","url":"https://gambitbsm.org/logo-doks.png","width":450,"height":416,"caption":"Doks"},"image":{"@id":"https://gambitbsm.org/#/schema/image/1"}},{"@type":"WebSite","@id":"https://gambitbsm.org/#/schema/website/1","url":"https://gambitbsm.org/","name":"GAMBIT","description":"Documentation for GAMBIT, the Global And Modular BSM Inference Tool","publisher":{"@id":"https://gambitbsm.org/#/schema/organization/1"}},{"@type":"WebPage","@id":"https://gambitbsm.org/documentation/code/files/bdt_8cpp/","url":"https://gambitbsm.org/documentation/code/files/bdt_8cpp/","name":"file src\/BDT.cpp","description":"[No description available]","isPartOf":{"@id":"https://gambitbsm.org/#/schema/website/1"},"about":{"@id":"https://gambitbsm.org/#/schema/organization/1"},"datePublished":"0001-01-01T00:00:00CET","dateModified":"0001-01-01T00:00:00CET","breadcrumb":{"@id":"https://gambitbsm.org/documentation/code/files/bdt_8cpp/#/schema/breadcrumb/1"},"primaryImageOfPage":{"@id":"https://gambitbsm.org/documentation/code/files/bdt_8cpp/#/schema/image/2"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://gambitbsm.org/documentation/code/files/bdt_8cpp/"]}]},{"@type":"BreadcrumbList","@id":"https://gambitbsm.org/documentation/code/files/bdt_8cpp/#/schema/breadcrumb/1","name":"Breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"https://gambitbsm.org/","url":"https://gambitbsm.org/","name":"Home"}},{"@type":"ListItem","position":2,"item":{"@type":"WebPage","@id":"https://gambitbsm.org/documentation/","url":"https://gambitbsm.org/documentation/","name":"Documentation"}},{"@type":"ListItem","position":3,"item":{"@type":"WebPage","@id":"https://gambitbsm.org/documentation/code/","url":"https://gambitbsm.org/documentation/code/","name":"Code"}},{"@type":"ListItem","position":4,"item":{"@type":"WebPage","@id":"https://gambitbsm.org/documentation/code/files/","url":"https://gambitbsm.org/documentation/code/files/","name":"Files"}},{"@type":"ListItem","position":5,"item":{"@id":"https://gambitbsm.org/documentation/code/files/bdt_8cpp/"}}]},{"@context":"https://schema.org","@graph":[{"@type":"ImageObject","@id":"https://gambitbsm.org/documentation/code/files/bdt_8cpp/#/schema/image/2","url":"https://gambitbsm.org/gambit_logo.png","contentUrl":"https://gambitbsm.org/gambit_logo.png","caption":"file src\/BDT.cpp"}]}]}</script><meta name=theme-color content="#fff"><link rel=icon href=https://gambitbsm.org/favicon.ico sizes=any><link rel=icon type=image/svg+xml href=https://gambitbsm.org/favicon.svg><link rel=apple-touch-icon sizes=180x180 href=https://gambitbsm.org/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=https://gambitbsm.org/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=https://gambitbsm.org/favicon-16x16.png><link rel=manifest crossorigin=use-credentials href=https://gambitbsm.org/site.webmanifest></head><body class="documentation single light"><div class=sticky-top><div class=header-bar></div><header class="navbar navbar-expand-md navbar-light doks-navbar"><nav class="container-xxl flex-wrap flex-md-nowrap" aria-label="Main navigation"><a class="navbar-brand p-0 me-auto" href=https://gambitbsm.org/ aria-label=GAMBIT><img class=logo-light src=https://gambitbsm.org/gambit_logo.png width=50px>
+<img class="logo-dark d-none" src=https://gambitbsm.org/gambit_logo.png width=50px>
+GAMBIT</a>
+<button class="btn btn-menu order-2 d-block d-lg-none" type=button data-bs-toggle=offcanvas data-bs-target=#offcanvasDoks aria-controls=offcanvasDoks aria-label="Open main menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button><div class="offcanvas offcanvas-end border-0 py-lg-1" tabindex=-1 id=offcanvasDoks data-bs-backdrop=true aria-labelledby=offcanvasDoksLabel><div class="header-bar d-lg-none"></div><div class="offcanvas-header d-lg-none"><h2 class="h5 offcanvas-title ps-2" id=offcanvasDoksLabel><a class=text-dark href=/>GAMBIT</a></h2><button type=button class="btn-close text-reset me-2" data-bs-dismiss=offcanvas aria-label="Close main menu"></button></div><div class="offcanvas-body p-4 p-lg-0"><ul class="nav flex-column flex-lg-row align-items-lg-center mt-2 mt-lg-0 ms-lg-2 me-lg-auto"><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Releases
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit/tree/release_2.7>GAMBIT 2-7 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.6>GAMBIT 2-6 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.5>GAMBIT 2-5 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.4>GAMBIT 2-4 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.3>GAMBIT 2-3 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.2>GAMBIT 2-2 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.1>GAMBIT 2-1 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_light_1.0>GAMBIT Light ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit/tags>All releases ⧉</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Documentation
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=/documentation/installation/introduction/>Installation</a></li><li><a class=dropdown-item href=/documentation/physics/analyses>Physics</a></li><li><a class=dropdown-item href=/documentation/tutorials/the_gambit_interface>Tutorials</a></li><li><a class=dropdown-item href=/documentation/help/common_problems_and_questions/>Help</a></li><li><a class=dropdown-item href=/documentation/code/index_classes>Code Reference</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Community
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=https://github.com/GambitBSM/wiki>Wiki</a></li><li><a class=dropdown-item href=/community/publications/>Publications</a></li><li><a class=dropdown-item href=/community/talks/>Talks</a></li><li><a class=dropdown-item href=/community/members/>Members</a></li><li><a class=dropdown-item href=/community/code_of_conduct/>Code of Conduct</a></li><li><a class=dropdown-item href=/community/contact/>Contact</a></li></ul></li></ul><hr class="text-black-50 my-4 d-lg-none"><form class="doks-search position-relative flex-grow-1 ms-lg-auto me-lg-2"><input id=search class="form-control is-search" type=search placeholder="Search site..." aria-label="Search site..." autocomplete=off><div id=suggestions class="shadow bg-white rounded d-none"></div></form><hr class="text-black-50 my-4 d-lg-none"><ul class="nav flex-column flex-lg-row"><li class=nav-item><a class="nav-link social-link" href=https://github.com/GambitBSM><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37.0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44.0 0020 4.77 5.07 5.07.0 0019.91 1S18.73.65 16 2.48a13.38 13.38.0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07.0 005 4.77 5.44 5.44.0 003.5 8.55c0 5.42 3.3 6.61 6.44 7A3.37 3.37.0 009 18.13V22"/></svg><small class="ms-2 d-lg-none">GitHub</small></a></li></ul><hr class="text-black-50 my-4 d-lg-none"><button id=mode class="btn btn-link" type=button aria-label="Toggle user interface mode">
+<span class=toggle-dark><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg></span><span class=toggle-light><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></span></button></div></div></nav></header></div><div class="wrap container-xxl" role=document><div class=content><div class="row flex-xl-nowrap"><div class="col-lg-5 col-xl-4 docs-sidebar"><nav class=docs-links aria-label="Main navigation"><ul class="list-unstyled collapsible-sidebar"><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-installation aria-expanded=false>
+Installation</button><div class=collapse id=section-installation><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/installation/introduction/>Getting Started</a></li><li><a class="docs-link rounded" href=/documentation/installation/docker_usage/>Docker Usage</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_linux/>Installation for Linux</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_windows/>Installation for Windows</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_macos/>Installation for macOS</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-tutorials aria-expanded=false>
+Tutorials</button><div class=collapse id=section-tutorials><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/tutorials/the_gambit_interface/>1 - The GAMBIT Interface</a></li><li><a class="docs-link rounded" href=/documentation/tutorials/in_person_tutorials/>In person tutorials</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-physics aria-expanded=false>
+Physics</button><div class=collapse id=section-physics><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/physics/analyses/>ColliderBit analysis</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-help aria-expanded=false>
+Help</button><div class=collapse id=section-help><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/help/common_problems_and_questions/>Common Problems and Questions</a></li><li><a class="docs-link rounded" href=/documentation/help/compiler_matrix/>Compiler Matrix</a></li><li><a class="docs-link rounded" href=/documentation/help/known_issues/>Known Issues</a></li><li><a class="docs-link rounded" href=/documentation/help/configuration_examples/>Configuration Examples</a></li><li><a class="docs-link rounded" href=/documentation/help/support/>Support</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-code aria-expanded=false>
+Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/code/index_classes/>Classes</a></li><li><a class="docs-link rounded" href=/documentation/code/index_files/>Files</a></li><li><a class="docs-link rounded" href=/documentation/code/index_pages/>Pages</a></li><li><a class="docs-link rounded" href=/documentation/code/index_namespaces/>Namespaces</a></li></ul></div></li></ul></nav></div><nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation"><div class=d-xl-none><button class="btn btn-outline-primary btn-sm doks-toc-toggle collapsed" type=button data-bs-toggle=collapse data-bs-target=#onThisPage aria-controls=doks-docs-nav aria-expanded=false aria-label="Toggle On this page navigation">
+<span>On this page</span>
+<span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg></span></button><div class=collapse id=onThisPage><div class="card card-body mt-3 py-1"><div class=page-links><nav id=TableOfContents><ul><li><a href=#source-code>Source code</a></li></ul></nav></div></div></div></div><div class="page-links d-none d-xl-block"><h3>On this page</h3><nav id=TableOfContents><ul><li><a href=#source-code>Source code</a></li></ul></nav></div></nav><main class="docs-content col-lg-11 col-xl-9 mx-xl-auto"><nav aria-label=breadcrumb><ol class=breadcrumb><li class=breadcrumb-item><a href=/>Home</a></li><li class=breadcrumb-item><a href=/documentation/>Documentation</a></li><li class=breadcrumb-item><a href=/documentation/code/>Code Reference</a></li><li class="breadcrumb-item active" aria-current=page>file src/BDT.cpp</li></ol></nav><p class=lead></p><h1 id=file-src-bdt-cpp>file src/BDT.cpp <a href=#file-src-bdt-cpp class=anchor aria-hidden=true>#</a></h1><p>[No description available]</p><h2 id=source-code>Source code <a href=#source-code class=anchor aria-hidden=true>#</a></h2><pre><code>#include &quot;gambit/cmake/cmake_variables.hpp&quot;
+#ifndef EXCLUDE_ROOT
+
+#include &quot;gambit/ColliderBit/BDT.h&quot;
+#include &quot;mvautils/NodeImpl.h&quot;
+#include &quot;mvautils/ForestLGBM.h&quot;
+#include &quot;mvautils/ForestXGBoost.h&quot;
+#include &quot;mvautils/ForestTMVA.h&quot;
+
+#include &quot;TMVA/MethodBDT.h&quot;
+#include &quot;TMVA/DecisionTree.h&quot;
+
+#include &quot;TTree.h&quot;
+#include &lt;stack&gt;
+#include &lt;string&gt;
+#include &lt;sstream&gt;
+#include &lt;set&gt;
+#include &lt;memory&gt;
+#include &lt;stdexcept&gt;
+
+using namespace MVAUtils;
+
+
+void NodeTMVA::Print(index_t index) const
+{
+  std::cout &lt;&lt; &quot;     Variable: &quot; &lt;&lt; int(m_var) &lt;&lt; &quot;, Cut: &quot; &lt;&lt; m_cut
+            &lt;&lt; &quot; (index = &quot; &lt;&lt; index &lt;&lt; &quot;)&quot; &lt;&lt; std::endl;
+}
+
+
+void NodeLGBMSimple::Print(index_t index) const
+{
+  std::cout &lt;&lt; &quot;     Variable: &quot; &lt;&lt; int(m_var) &lt;&lt; &quot;, Cut: &quot; &lt;&lt; m_cut
+            &lt;&lt; &quot; (index = &quot; &lt;&lt; index &lt;&lt; &quot;)&quot; &lt;&lt; std::endl;
+}
+
+
+void NodeLGBM::Print(index_t index) const
+{
+  std::cout &lt;&lt; &quot;     Variable: &quot; &lt;&lt; int(m_var) &lt;&lt; &quot;, Cut: &quot; &lt;&lt; m_cut &lt;&lt; &quot;, DefaultLeft: &quot; &lt;&lt; (int)m_default_left
+            &lt;&lt; &quot; (index = &quot; &lt;&lt; index &lt;&lt; &quot;)&quot; &lt;&lt; std::endl;
+}
+
+void NodeXGBoost::Print(index_t index) const
+{
+  std::cout &lt;&lt; &quot;     Variable: &quot; &lt;&lt; int(m_var) &lt;&lt; &quot;, Cut: &quot; &lt;&lt; m_cut &lt;&lt; &quot;, DefaultLeft: &quot; &lt;&lt; (int)m_default_left
+            &lt;&lt; &quot; (index = &quot; &lt;&lt; index &lt;&lt; &quot;)&quot; &lt;&lt; std::endl;
+}
+
+
+namespace{
+
+/*  utility functions : to split option (e.g. &quot;creator=lgbm;node=lgbm_simple&quot;)
+ *  in a std::map {{&quot;creator&quot;, &quot;lgbm&quot;}, {&quot;node&quot;, &quot;lgbm_simple&quot;}}
+ */
+
+std::string get_default_string_map(const std::map &lt;std::string, std::string&gt; &amp; m,
+                                   const std::string&amp; key, const std::string &amp; defval=&quot;&quot;)
+{
+   std::map&lt;std::string, std::string&gt;::const_iterator it = m.find(key);
+   if (it == m.end()) { return defval; }
+   else { return it-&gt;second; }
+}
+
+std::map&lt;std::string, std::string&gt; parseOptions(std::string raw_options)
+{
+  std::stringstream ss(raw_options);
+  std::map&lt;std::string, std::string&gt; options;
+  std::string item;
+  while (std::getline(ss, item, ';')) {
+    auto pos = item.find_first_of('=');
+    const auto right = item.substr(pos+1);
+    const auto left = item.substr(0, pos);
+    if (!options.insert(std::make_pair(left, right)).second)
+    {
+      throw std::runtime_error(std::string(&quot;option &quot;) + left + &quot; duplicated in title of TTree used as input&quot;);
+    }
+  }
+
+  return options;
+}
+
+
+}
+
+
+/** c-tor from TTree **/
+BDT::BDT(::TTree *tree)
+{
+  // at runtime decide which flavour of BDT we need to build
+  // the information is coming from the title of the TTree
+  std::map&lt;std::string, std::string&gt; options = parseOptions(tree-&gt;GetTitle());
+  std::string creator = get_default_string_map(options, std::string(&quot;creator&quot;));
+  if (creator == &quot;lgbm&quot;)
+  {
+    std::string node_type = get_default_string_map (options, std::string(&quot;node_type&quot;));
+    if (node_type == &quot;lgbm&quot;) {
+      m_forest = std::make_unique&lt;ForestLGBM&gt;(tree);
+    }
+    else if (node_type == &quot;lgbm_simple&quot;) {
+      m_forest = std::make_unique&lt;ForestLGBMSimple&gt;(tree);  // this do not support nan as inputs
+    }
+    else
+    {
+      throw std::runtime_error(&quot;the title of the input tree is misformatted: cannot understand which BDT implementation to use&quot;);
+    }
+  }
+  else if (creator == &quot;xgboost&quot;)
+  {
+    //this do support nan as inputs
+    m_forest = std::make_unique&lt;ForestXGBoost&gt;(tree);
+  }
+  else {
+    // default for compatibility: old TTree (based on TMVA) don't have a special title
+    m_forest = std::make_unique&lt;ForestTMVA&gt;(tree);
+  }
+}
+
+BDT::~BDT(){}
+
+unsigned int BDT::GetNTrees() const { return m_forest-&gt;GetNTrees(); }
+int BDT::GetNVars() const { return m_forest-&gt;GetNVars(); }
+float BDT::GetOffset() const { return m_forest-&gt;GetOffset(); }
+
+
+/** c-tor from TMVA::MethodBDT **/
+BDT::BDT(TMVA::MethodBDT* bdt, bool isRegression, bool useYesNoLeaf)
+{
+  if (!bdt) { throw std::runtime_error(&quot;bdt pointer to BDT constructor is null&quot;); }
+  m_forest = std::make_unique&lt;ForestTMVA&gt;(bdt, isRegression, useYesNoLeaf);
+}
+
+
+/** Return offset + the sum of the response of each tree  **/
+float BDT::GetResponse(const std::vector&lt;float&gt;&amp; values) const
+{
+  return m_forest-&gt;GetResponse(values);
+}
+
+
+/** Return offset + the sum of the response of each tree  **/
+float BDT::GetResponse(const std::vector&lt;float*&gt;&amp; pointers) const
+{
+  return m_forest-&gt;GetResponse(pointers);
+}
+
+
+float BDT::GetClassification(const std::vector&lt;float&gt;&amp; values) const
+{
+  return m_forest-&gt;GetClassification(values);
+}
+
+
+float BDT::GetClassification(const std::vector&lt;float*&gt;&amp; pointers) const
+{
+  return m_forest-&gt;GetClassification(pointers);
+}
+
+float BDT::GetGradBoostMVA(const std::vector&lt;float&gt;&amp; values) const
+{
+  const float sum = m_forest-&gt;GetRawResponse(values);  // ignores the offset
+  return 2. / (1 + exp(-2 * sum)) - 1;  //output shaping for gradient boosted decision tree (-1,1)
+}
+
+float BDT::GetGradBoostMVA(const std::vector&lt;float*&gt;&amp; pointers) const
+{
+  const float sum = m_forest-&gt;GetRawResponse(pointers);  // ignores the offset
+  return 2. / (1 + exp(-2 * sum)) - 1;  //output shaping for gradient boosted decision tree (-1,1)
+}
+
+
+std::vector&lt;float&gt; BDT::GetMultiResponse(const std::vector&lt;float&gt;&amp; values,
+                                         unsigned int numClasses) const
+{
+  return m_forest-&gt;GetMultiResponse(values, numClasses);
+}
+
+
+std::vector&lt;float&gt; BDT::GetMultiResponse(const std::vector&lt;float*&gt;&amp; pointers,
+                                         unsigned int numClasses) const
+{
+  return m_forest-&gt;GetMultiResponse(pointers, numClasses);
+}
+
+
+float BDT::GetTreeResponse(const std::vector&lt;float&gt;&amp; values, MVAUtils::index_t index) const
+{
+  return m_forest-&gt;GetTreeResponse(values, index);
+}
+
+
+float BDT::GetTreeResponse(const std::vector&lt;float*&gt;&amp; pointers, MVAUtils::index_t index) const
+{
+  return m_forest-&gt;GetTreeResponse(pointers, index);
+}
+
+TTree* BDT::WriteTree(TString name) const { return m_forest-&gt;WriteTree(name); }
+
+void BDT::PrintForest() const { m_forest-&gt;PrintForest(); }
+void BDT::PrintTree(unsigned int itree) const { m_forest-&gt;PrintTree(itree); }
+
+ForestLGBMSimple::ForestLGBMSimple(TTree* tree) : ForestLGBMBase&lt;NodeLGBMSimple&gt;()
+{
+    m_max_var = 0;
+
+    // variables read from the TTree
+    std::vector&lt;int&gt; *vars = nullptr;
+    std::vector&lt;float&gt; *values = nullptr;
+
+    std::vector&lt;NodeLGBMSimple&gt; nodes;
+
+    tree-&gt;SetBranchAddress(&quot;vars&quot;, &amp;vars);
+    tree-&gt;SetBranchAddress(&quot;values&quot;, &amp;values);
+
+    for (int i = 0; i &lt; tree-&gt;GetEntries(); ++i)
+    {
+        // each entry in the TTree is a decision tree
+        tree-&gt;GetEntry(i);
+        if (!vars) { throw std::runtime_error(&quot;vars pointer is null in ForestLGBMSimple constructor&quot;); }
+        if (!values) { throw std::runtime_error(&quot;values pointers is null in ForestLGBMSimple constructor&quot;); }
+        if (vars-&gt;size() != values-&gt;size()) { throw std::runtime_error(&quot;inconsistent size for vars and values in ForestLGBMSimple constructor&quot;); }
+
+        nodes.clear();
+
+        std::vector&lt;MVAUtils::index_t&gt; right = detail::computeRight(*vars);
+
+        for (size_t i = 0; i &lt; vars-&gt;size(); ++i) {
+            nodes.emplace_back(vars-&gt;at(i), values-&gt;at(i), right[i]);
+            if (vars-&gt;at(i) &gt; m_max_var) { m_max_var = vars-&gt;at(i); }
+        }
+        newTree(nodes);
+    }  // end loop on TTree, all decision tree loaded
+    delete vars;
+    delete values;
+}
+
+
+TTree* ForestLGBMSimple::WriteTree(TString name) const
+{
+    TTree *tree = new TTree(name.Data(), &quot;creator=lgbm;node_type=lgbm_simple&quot;);
+
+    std::vector&lt;int&gt; vars;
+    std::vector&lt;float&gt; values;
+
+    tree-&gt;Branch(&quot;vars&quot;, &amp;vars);
+    tree-&gt;Branch(&quot;values&quot;, &amp;values);
+
+    for (size_t itree = 0; itree &lt; GetNTrees(); ++itree) {
+        vars.clear();
+        values.clear();
+        for(const auto&amp; node : GetTree(itree)) {
+            vars.push_back(node.GetVar());
+            values.push_back(node.GetVal());
+        }
+        tree-&gt;Fill();
+    }
+    return tree;
+}
+
+void ForestLGBMSimple::PrintForest() const
+{
+    std::cout &lt;&lt; &quot;***BDT LGBMSimple: Printing entire forest***&quot; &lt;&lt; std::endl;
+    Forest::PrintForest();
+}
+
+
+ForestLGBM::ForestLGBM(TTree* tree) : ForestLGBMBase&lt;NodeLGBM&gt;()
+{
+    m_max_var = 0;
+
+    // variables read from the TTree
+    std::vector&lt;int&gt; *vars = nullptr;
+    std::vector&lt;float&gt; *values = nullptr;
+    std::vector&lt;bool&gt; *default_left = nullptr;
+
+    std::vector&lt;NodeLGBM&gt; nodes;
+
+    tree-&gt;SetBranchAddress(&quot;vars&quot;, &amp;vars);
+    tree-&gt;SetBranchAddress(&quot;values&quot;, &amp;values);
+    tree-&gt;SetBranchAddress(&quot;default_left&quot;, &amp;default_left);
+
+    for (int i = 0; i &lt; tree-&gt;GetEntries(); ++i)
+    {
+        // each entry in the TTree is a decision tree
+        tree-&gt;GetEntry(i);
+        if (!vars) { throw std::runtime_error(&quot;vars pointer is null in ForestLGBM constructor&quot;); }
+        if (!values) { throw std::runtime_error(&quot;values pointers is null in ForestLGBM constructor&quot;); }
+        if (!default_left) { throw std::runtime_error(&quot;default_left pointers is null in ForestLGBM constructor&quot;
+); }
+        if (vars-&gt;size() != values-&gt;size()) { throw std::runtime_error(&quot;inconsistent size for vars and values in ForestLGBM constructor&quot;); }
+        if (default_left-&gt;size() != values-&gt;size()) { throw std::runtime_error(&quot;inconsistent size for default_left and values in ForestLGBM constructor&quot;); }
+
+        nodes.clear();
+
+        std::vector&lt;MVAUtils::index_t&gt; right = detail::computeRight(*vars);
+
+        for (size_t i = 0; i &lt; vars-&gt;size(); ++i) {
+            nodes.emplace_back(vars-&gt;at(i), values-&gt;at(i), right[i], default_left-&gt;at(i));
+            if (vars-&gt;at(i) &gt; m_max_var) { m_max_var = vars-&gt;at(i); }
+        }
+        newTree(nodes);
+    }  // end loop on TTree, all decision tree loaded
+    delete vars;
+    delete values;
+    delete default_left;
+}
+
+
+TTree* ForestLGBM::WriteTree(TString name) const
+{
+    TTree *tree = new TTree(name.Data(), &quot;creator=lgbm;node_type=lgbm&quot;);
+
+    std::vector&lt;int&gt; vars;
+    std::vector&lt;float&gt; values;
+    std::vector&lt;bool&gt; default_left;
+
+    tree-&gt;Branch(&quot;vars&quot;, &amp;vars);
+    tree-&gt;Branch(&quot;values&quot;, &amp;values);
+    tree-&gt;Branch(&quot;default_left&quot;, &amp;default_left);
+
+    for (size_t itree = 0; itree &lt; GetNTrees(); ++itree) {
+        vars.clear();
+        values.clear();
+        default_left.clear();
+        for(const auto&amp; node : GetTree(itree)) {
+            vars.push_back(node.GetVar());
+            values.push_back(node.GetVal());
+            default_left.push_back(node.GetDefaultLeft());
+        }
+        tree-&gt;Fill();
+    }
+    return tree;
+}
+
+void ForestLGBM::PrintForest() const
+{
+    std::cout &lt;&lt; &quot;***BDT LGBM: Printing entire forest***&quot; &lt;&lt; std::endl;
+    Forest::PrintForest();
+}
+
+ForestTMVA::ForestTMVA(TTree* tree) : ForestWeighted&lt;NodeTMVA&gt;()
+{
+    m_max_var = 0;
+
+    // variables read from the TTree
+    std::vector&lt;int&gt; *vars = nullptr;
+    std::vector&lt;float&gt; *values = nullptr;
+    float offset;  // the offset is the weight
+
+    std::vector&lt;NodeTMVA&gt; nodes;
+
+    tree-&gt;SetBranchAddress(&quot;vars&quot;, &amp;vars);
+    tree-&gt;SetBranchAddress(&quot;values&quot;, &amp;values);
+    tree-&gt;SetBranchAddress(&quot;offset&quot;, &amp;offset);
+
+    for (int i = 0; i &lt; tree-&gt;GetEntries(); ++i)
+    {
+        // each entry in the TTree is a decision tree
+        tree-&gt;GetEntry(i);
+        if (!vars) { throw std::runtime_error(&quot;vars pointer is null in ForestTMVA constructor&quot;); }
+        if (!values) { throw std::runtime_error(&quot;values pointers is null in ForestTMVA constructor&quot;); }
+        if (vars-&gt;size() != values-&gt;size()) { throw std::runtime_error(&quot;inconsistent size for vars and values in ForestTMVA constructor&quot;); }
+
+        nodes.clear();
+
+        std::vector&lt;MVAUtils::index_t&gt; right = detail::computeRight(*vars);
+
+        for (size_t i = 0; i &lt; vars-&gt;size(); ++i) {
+            nodes.emplace_back(vars-&gt;at(i), values-&gt;at(i), right[i]);
+            if (vars-&gt;at(i) &gt; m_max_var) { m_max_var = vars-&gt;at(i); }
+        }
+        newTree(nodes, offset);
+    }  // end loop on TTree, all decision tree loaded
+    delete vars;
+    delete values;
+}
+
+ForestTMVA::ForestTMVA(TMVA::MethodBDT* bdt, bool isRegression, bool useYesNoLeaf)
+{
+    m_max_var = 0;
+    std::vector&lt;TMVA::DecisionTree*&gt;::const_iterator it;
+    for(it = bdt-&gt;GetForest().begin(); it != bdt-&gt;GetForest().end(); ++it) {
+        uint index = it - bdt-&gt;GetForest().begin();
+        float weight = 0.;
+        if(bdt-&gt;GetBoostWeights().size() &gt; index) {
+            weight = bdt-&gt;GetBoostWeights()[index];
+        }
+
+        newTree((*it)-&gt;GetRoot(), weight, isRegression, useYesNoLeaf);
+    }
+}
+
+/**
+ * Creates the full tree structure from TMVA::DecisionTree node.
+ **/
+void ForestTMVA::newTree(const TMVA::DecisionTreeNode *node, float weight, bool isRegression, bool useYesNoLeaf
+)
+{
+    // index is relative to the current node
+    std::vector&lt;MVAUtils::index_t&gt; right;
+    {
+        // not strictly parent if doing a right node
+        std::stack&lt;const TMVA::DecisionTreeNode *&gt; parent;
+        std::stack&lt;MVAUtils::index_t&gt; parentIndex;
+
+        parentIndex.push(-1);
+        parent.push(nullptr);
+
+        auto currNode = node;
+        int i = -1;
+        while (currNode) {
+            ++i;
+            right.push_back(-1);
+            if (!currNode-&gt;GetLeft()) {
+                // a leaf
+                auto currParent = parent.top();
+                auto currParentIndex = parentIndex.top();
+                // if right has not been visited, next will be right
+                if (currParentIndex &gt;= 0) {
+                    right[currParentIndex] = i + 1 - currParentIndex;
+                    currNode = currParent-&gt;GetCutType() ? currParent-&gt;GetLeft() : currParent-&gt;GetRight();
+                } else {
+                    currNode = nullptr;
+                }
+                parent.pop();
+                parentIndex.pop();
+            } else {
+                // not a leaf
+                parent.push(currNode);
+                parentIndex.push(i);
+                currNode = currNode-&gt;GetCutType() ? currNode-&gt;GetRight() : currNode-&gt;GetLeft();
+            }
+        }
+    }
+    {
+        std::stack&lt;const TMVA::DecisionTreeNode *&gt; parent; // not strictly parent if doing a right node
+
+        parent.push(nullptr);
+
+        auto currNode = node;
+        int i = -1;
+        std::vector&lt;NodeTMVA&gt; nodes;
+        while (currNode) {
+            ++i;
+            if (!currNode-&gt;GetLeft()) {
+                // a leaf
+                nodes.emplace_back(-1,
+                            isRegression ?
+                            currNode-&gt;GetResponse() : useYesNoLeaf ? currNode-&gt;GetNodeType() : currNode-&gt;GetPurity(),
+                            right[i]);
+                auto currParent = parent.top();
+                // if right has not been visited, next will be right
+                if (currParent) {
+                    currNode = currParent-&gt;GetCutType() ? currParent-&gt;GetLeft() : currParent-&gt;GetRight();
+                } else {
+                    currNode = nullptr;
+                }
+                parent.pop();
+            } else {
+                // not a leaf
+                parent.push(currNode);
+
+                if (currNode-&gt;GetSelector() &gt; m_max_var) { m_max_var = currNode-&gt;GetSelector(); }
+
+                nodes.emplace_back(currNode-&gt;GetSelector(), currNode-&gt;GetCutValue(), right[i]);
+
+                currNode = currNode-&gt;GetCutType() ? currNode-&gt;GetRight() : currNode-&gt;GetLeft();
+            }
+        }
+        newTree(nodes, weight);
+    }
+}
+
+TTree* ForestTMVA::WriteTree(TString name) const
+{
+    TTree *tree = new TTree(name.Data(), &quot;creator=TMVA&quot;);
+
+    std::vector&lt;int&gt; vars;
+    std::vector&lt;float&gt; values;
+    float offset;
+
+    tree-&gt;Branch(&quot;offset&quot;, &amp;offset);
+    tree-&gt;Branch(&quot;vars&quot;, &amp;vars);
+    tree-&gt;Branch(&quot;values&quot;, &amp;values);
+
+    for (size_t itree = 0; itree &lt; GetNTrees(); ++itree) {
+        vars.clear();
+        values.clear();
+        for(const auto&amp; node : GetTree(itree)) {
+            vars.push_back(node.GetVar());
+            values.push_back(node.GetVal());
+        }
+        offset = GetTreeWeight(itree);
+        tree-&gt;Fill();
+    }
+    return tree;
+}
+
+float ForestTMVA::GetResponse(const std::vector&lt;float&gt;&amp; values) const {
+    return GetRawResponse(values) + GetOffset();
+}
+
+float ForestTMVA::GetResponse(const std::vector&lt;float*&gt;&amp; pointers) const {
+    return GetRawResponse(pointers) + GetOffset();
+}
+
+float ForestTMVA::GetClassification(const std::vector&lt;float&gt;&amp; values) const
+{
+    float result = GetWeightedResponse(values);
+    return result / GetSumWeights();
+}
+
+float ForestTMVA::GetClassification(const std::vector&lt;float*&gt;&amp; pointers) const
+{
+    float result = GetWeightedResponse(pointers);
+    return result / GetSumWeights();
+}
+
+void ForestTMVA::PrintForest() const
+{
+    std::cout &lt;&lt; &quot;***BDT TMVA: Printing entire forest***&quot; &lt;&lt; std::endl;
+    Forest::PrintForest();
+}
+
+ForestXGBoost::ForestXGBoost(TTree* tree) : ForestXGBoostBase&lt;NodeXGBoost&gt;()
+{
+    m_max_var = 0;
+
+    // variables read from the TTree
+    std::vector&lt;int&gt; *vars = nullptr;
+    std::vector&lt;float&gt; *values = nullptr;
+    std::vector&lt;bool&gt; *default_left = nullptr;
+
+    std::vector&lt;NodeXGBoost&gt; nodes;
+
+    tree-&gt;SetBranchAddress(&quot;vars&quot;, &amp;vars);
+    tree-&gt;SetBranchAddress(&quot;values&quot;, &amp;values);
+    tree-&gt;SetBranchAddress(&quot;default_left&quot;, &amp;default_left);
+
+    for (int i = 0; i &lt; tree-&gt;GetEntries(); ++i)
+    {
+        // each entry in the TTree is a decision tree
+        tree-&gt;GetEntry(i);
+        if (!vars) { throw std::runtime_error(&quot;vars pointer is null in ForestXGBoost constructor&quot;); }
+        if (!values) { throw std::runtime_error(&quot;values pointers is null in ForestXGBoost constructor&quot;); }
+        if (!default_left) { throw std::runtime_error(&quot;default_left pointers is null in ForestXGBoost constructor&quot;); }
+        if (vars-&gt;size() != values-&gt;size()) { throw std::runtime_error(&quot;inconsistent size for vars and values in ForestXGBoost constructor&quot;); }
+        if (default_left-&gt;size() != values-&gt;size()) { throw std::runtime_error(&quot;inconsistent size for default_left and values in ForestXGBoost constructor&quot;); }
+
+        nodes.clear();
+
+        std::vector&lt;MVAUtils::index_t&gt; right = detail::computeRight(*vars);
+
+        for (size_t i = 0; i &lt; vars-&gt;size(); ++i) {
+            nodes.emplace_back(vars-&gt;at(i), values-&gt;at(i), right[i], default_left-&gt;at(i));
+            if (vars-&gt;at(i) &gt; m_max_var) { m_max_var = vars-&gt;at(i); }
+        }
+        newTree(nodes);
+    }  // end loop on TTree, all decision tree loaded
+    delete vars;
+    delete values;
+    delete default_left;
+}
+
+
+TTree* ForestXGBoost::WriteTree(TString name) const
+{
+    TTree *tree = new TTree(name.Data(), &quot;creator=xgboost&quot;);
+
+    std::vector&lt;int&gt; vars;
+    std::vector&lt;float&gt; values;
+    std::vector&lt;bool&gt; default_left;
+
+    tree-&gt;Branch(&quot;vars&quot;, &amp;vars);
+    tree-&gt;Branch(&quot;values&quot;, &amp;values);
+    tree-&gt;Branch(&quot;default_left&quot;, &amp;default_left);
+
+    for (size_t itree = 0; itree &lt; GetNTrees(); ++itree) {
+        vars.clear();
+        values.clear();
+        default_left.clear();
+        for(const auto&amp; node : GetTree(itree)) {
+            vars.push_back(node.GetVar());
+            values.push_back(node.GetVal());
+            default_left.push_back(node.GetDefaultLeft());
+        }
+        tree-&gt;Fill();
+    }
+    return tree;
+}
+
+void ForestXGBoost::PrintForest() const
+{
+    std::cout &lt;&lt; &quot;***BDT XGBoost: Printing entire forest***&quot; &lt;&lt; std::endl;
+    Forest::PrintForest();
+}
+
+#endif
+</code></pre><hr><p>Updated on 2026-11-03 at 14:50:48 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.d5e27a6ed00168b7a66eb637878a6be7d054db51d0e613bbcfda12ab0569b62177253b4e6453c477574b3a38f50eff49a68f0e19112bd82a68c78a66cd8d05df.js integrity="sha512-1eJ6btABaLembrY3h4pr59BU21HQ5hO7z9oSqwVptiF3JTtOZFPEd1dLOjj1Dv9Jpo8OGREr2Cpox4pmzY0F3w==" crossorigin=anonymous defer></script>
+<script src=/js/highlight.min.9003483b4531b86467c8b801b1d5fc5439bb0d6bdb6c6a760a1b54abf37d6bbadf8423dbc81a3359c935c7705bb7d183b46131ba4a9c861b5d48e6a61501461a.js integrity="sha512-kANIO0UxuGRnyLgBsdX8VDm7DWvbbGp2ChtUq/N9a7rfhCPbyBozWck1x3Bbt9GDtGExukqchhtdSOamFQFGGg==" crossorigin=anonymous defer></script>
+<script src=/main.min.9342d29d0e3e250a2c03282306b766e004888dba0fd661a17d7b106655e013bf85733f086ad330e3df0929c713dd81c0ea835966fa92e4a1e38f7ea9680524ed.js integrity="sha512-k0LSnQ4+JQosAygjBrdm4ASIjboP1mGhfXsQZlXgE7+Fcz8IatMw498JKccT3YHA6oNZZvqS5KHjj36paAUk7Q==" crossorigin=anonymous defer></script>
+<script src=https://gambitbsm.org/index.min.3a8ee06d0c346f1fb70040b0fbcbaaacf335cb34023c408954406a05db2089fc2ca349119b9f7d68b9e7044e82b8fdc8bd9661b6ef8b118246c5a2079d7fa8e9.js integrity="sha512-Oo7gbQw0bx+3AECw+8uqrPM1yzQCPECJVEBqBdsgifwso0kRm599aLnnBE6CuP3IvZZhtu+LEYJGxaIHnX+o6Q==" crossorigin=anonymous defer></script></body></html>

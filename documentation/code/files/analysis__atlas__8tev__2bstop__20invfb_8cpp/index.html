@@ -22,6 +22,8 @@ Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle
 #include &quot;gambit/ColliderBit/mt2_bisect.h&quot;
 //#include &quot;gambit/ColliderBit/analyses/Perf_Plot.hpp&quot;
 
+// #define CHECK_CUTFLOW
+
 using namespace std;
 
 
@@ -48,10 +50,6 @@ namespace Gambit
     {
       private:
 
-        // Numbers passing cuts
-        double _numSRA, _numSRB;
-        double _numSRA15, _numSRA20, _numSRA25, _numSRA30, _numSRA35;
-
         vector&lt;int&gt; cutFlowVector;
         vector&lt;string&gt; cutFlowVector_str;
         int NCUTS; //=2;
@@ -76,9 +74,18 @@ namespace Gambit
         {
 
           set_analysis_name(&quot;ATLAS_8TeV_2bStop_20invfb&quot;);
+          set_detector_name(detector);
           set_luminosity(20.1);
 
-          _numSRA = 0 ; _numSRB = 0; _numSRA15 = 0; _numSRA20 = 0; _numSRA25 = 0; _numSRA30 = 0; _numSRA35 = 0;
+          _counters[&quot;SRA&quot;] = EventCounter(&quot;SRA&quot;);
+          _counters[&quot;SRB&quot;] = EventCounter(&quot;SRB&quot;);
+          _counters[&quot;SRA15&quot;] = EventCounter(&quot;SRA15&quot;);
+          _counters[&quot;SRA20&quot;] = EventCounter(&quot;SRA20&quot;);
+          _counters[&quot;SRA25&quot;] = EventCounter(&quot;SRA25&quot;);
+          _counters[&quot;SRA30&quot;] = EventCounter(&quot;SRA30&quot;);
+          _counters[&quot;SRA35&quot;] = EventCounter(&quot;SRA35&quot;);
+
+
           NCUTS=30;
 
           for(int i=0;i&lt;NCUTS;i++)
@@ -113,7 +120,7 @@ namespace Gambit
           }
 
           // Apply electron efficiency
-          ATLAS::applyElectronEff(baselineElectrons);
+          applyEfficiency(baselineElectrons, ATLAS::eff2DEl.at(&quot;Generic&quot;));
 
           // Now define vector of baseline muons
           vector&lt;const HEPUtils::Particle*&gt; baselineMuons;
@@ -123,7 +130,7 @@ namespace Gambit
           }
 
           // Apply muon efficiency
-          ATLAS::applyMuonEff(baselineMuons);
+          applyEfficiency(baselineMuons, ATLAS::eff2DMu.at(&quot;Generic&quot;));
 
           const std::vector&lt;double&gt; a = {0,10.};
           const std::vector&lt;double&gt; b = {0,10000.};
@@ -454,49 +461,29 @@ namespace Gambit
           }
 
           //We're now ready to apply the cuts for each signal region
-          //_numSRA, _numSRB, _numSRA15, _numSRA20, _numSRA25, _numSRA30, _numSRA35;
+          //SRA, SRB, SRA15, SRA20, SRA25, SRA30, SRA35;
 
           if(cut_ElectronVeto &amp;&amp; cut_MuonVeto &amp;&amp; cut_METGt150 &amp;&amp; passSRAJetCut &amp;&amp; passSRAbJetCut &amp;&amp; cut_dPhiJets &amp;&amp; cut_METmeff2 &amp;&amp; mbb&gt;200.)
           {
-            _numSRA += event-&gt;weight();
-            if(mCT&gt;150.) _numSRA15 += event-&gt;weight();
-            if(mCT&gt;200.) _numSRA20 += event-&gt;weight();
-            if(mCT&gt;250.) _numSRA25 += event-&gt;weight();
-            if(mCT&gt;300.) _numSRA30 += event-&gt;weight();
-            if(mCT&gt;350.) _numSRA35 += event-&gt;weight();
+            _counters[&quot;SRA &quot;].add_event(event);
+            if(mCT&gt;150.) _counters[&quot;SRA15&quot;].add_event(event);
+            if(mCT&gt;200.) _counters[&quot;SRA20 &quot;].add_event(event);
+            if(mCT&gt;250.) _counters[&quot;SRA25 &quot;].add_event(event);
+            if(mCT&gt;300.) _counters[&quot;SRA30 &quot;].add_event(event);
+            if(mCT&gt;350.) _counters[&quot;SRA35 &quot;].add_event(event);
           }
-          if(cut_ElectronVeto &amp;&amp; cut_MuonVeto &amp;&amp; cut_METGt250 &amp;&amp; passSRBJetCut &amp;&amp; cut_dPhiJet1 &amp;&amp; passSRBbJetCut &amp;&amp; cut_dPhiJets &amp;&amp; cut_METmeff3 &amp;&amp; ht3&lt;50.) _numSRB += event-&gt;weight();
+          if(cut_ElectronVeto &amp;&amp; cut_MuonVeto &amp;&amp; cut_METGt250 &amp;&amp; passSRBJetCut &amp;&amp; cut_dPhiJet1 &amp;&amp; passSRBbJetCut &amp;&amp; cut_dPhiJets &amp;&amp; cut_METmeff3 &amp;&amp; ht3&lt;50.) _counters[&quot;SRB &quot;].add_event(event);
 
 
           return;
 
         }
 
-        /// Combine the variables of another copy of this analysis (typically on another thread) into this one.
-        void combine(const Analysis* other)
-        {
-          const Analysis_ATLAS_8TeV_2bStop_20invfb* specificOther
-                  = dynamic_cast&lt;const Analysis_ATLAS_8TeV_2bStop_20invfb*&gt;(other);
-
-          if (NCUTS != specificOther-&gt;NCUTS) NCUTS = specificOther-&gt;NCUTS;
-          for (int j=0; j&lt;NCUTS; j++)
-          {
-            cutFlowVector[j] += specificOther-&gt;cutFlowVector[j];
-            cutFlowVector_str[j] = specificOther-&gt;cutFlowVector_str[j];
-          }
-          _numSRA += specificOther-&gt;_numSRA;
-          _numSRB += specificOther-&gt;_numSRB;
-          _numSRA15 += specificOther-&gt;_numSRA15;
-          _numSRA20 += specificOther-&gt;_numSRA20;
-          _numSRA25 += specificOther-&gt;_numSRA25;
-          _numSRA30 += specificOther-&gt;_numSRA30;
-          _numSRA35 += specificOther-&gt;_numSRA35;
-        }
-
 
         void collect_results()
         {
 
+          #ifdef CHECK_CUTFLOW
           double scale_by=1.;
           cout &lt;&lt; &quot;------------------------------------------------------------------------------------------------------------------------------ &quot;&lt;&lt;endl;
           cout &lt;&lt; &quot;CUT FLOW: ATLAS 8 TeV 2b stop paper SUSY-2013-05&quot;&lt;&lt;endl;
@@ -509,15 +496,14 @@ namespace Gambit
               &lt;&lt; 100.*cutFlowVector[j]/cutFlowVector[0] &lt;&lt; &quot;%&quot; &lt;&lt; endl;
           }
           cout &lt;&lt; &quot;------------------------------------------------------------------------------------------------------------------------------ &quot;&lt;&lt;endl;
+          #endif
 
-          // add_result(SignalRegionData(&quot;SR label&quot;, n_obs, {n_sig_MC, n_sig_MC_sys}, {n_bkg, n_bkg_err}));
-
-          add_result(SignalRegionData(&quot;SRA15&quot;, 102., {_numSRA15, 0.}, { 94., 13.}));
-          add_result(SignalRegionData(&quot;SRA20&quot;, 48., {_numSRA20, 0.}, { 39., 6.}));
-          add_result(SignalRegionData(&quot;SRA25&quot;, 14., {_numSRA25, 0.}, { 15.8, 2.8}));
-          add_result(SignalRegionData(&quot;SRA30&quot;, 7., {_numSRA30, 0.}, { 5.9, 1.1}));
-          add_result(SignalRegionData(&quot;SRA35&quot;, 3., {_numSRA35, 0.}, { 2.5, 0.6}));
-          add_result(SignalRegionData(&quot;SRB&quot;, 65., {_numSRB, 0.}, { 64., 10.}));
+          add_result(SignalRegionData(_counters.at(&quot;SRA15&quot;), 102., { 94., 13.}));
+          add_result(SignalRegionData(_counters.at(&quot;SRA20&quot;), 48., { 39., 6.}));
+          add_result(SignalRegionData(_counters.at(&quot;SRA25&quot;), 14., { 15.8, 2.8}));
+          add_result(SignalRegionData(_counters.at(&quot;SRA30&quot;), 7., { 5.9, 1.1}));
+          add_result(SignalRegionData(_counters.at(&quot;SRA35&quot;), 3., { 2.5, 0.6}));
+          add_result(SignalRegionData(_counters.at(&quot;SRB&quot;), 65., { 64., 10.}));
 
   //        plots_mct-&gt;createFile(luminosity(),(85.5847/50000));
   //        plots_mbb-&gt;createFile(luminosity(),(85.5847/50000));
@@ -533,7 +519,8 @@ namespace Gambit
       protected:
         void analysis_specific_reset()
         {
-          _numSRA = 0 ; _numSRB = 0; _numSRA15 = 0; _numSRA20 = 0; _numSRA25 = 0; _numSRA30 = 0; _numSRA35 = 0;
+
+          for (auto&amp; pair : _counters) { pair.second.reset(); }
 
           std::fill(cutFlowVector.begin(), cutFlowVector.end(), 0);
         }
@@ -546,7 +533,7 @@ namespace Gambit
 
   }
 }
-</code></pre><hr><p>Updated on 2025-02-12 at 16:10:35 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.d5e27a6ed00168b7a66eb637878a6be7d054db51d0e613bbcfda12ab0569b62177253b4e6453c477574b3a38f50eff49a68f0e19112bd82a68c78a66cd8d05df.js integrity="sha512-1eJ6btABaLembrY3h4pr59BU21HQ5hO7z9oSqwVptiF3JTtOZFPEd1dLOjj1Dv9Jpo8OGREr2Cpox4pmzY0F3w==" crossorigin=anonymous defer></script>
+</code></pre><hr><p>Updated on 2026-11-03 at 14:50:47 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.d5e27a6ed00168b7a66eb637878a6be7d054db51d0e613bbcfda12ab0569b62177253b4e6453c477574b3a38f50eff49a68f0e19112bd82a68c78a66cd8d05df.js integrity="sha512-1eJ6btABaLembrY3h4pr59BU21HQ5hO7z9oSqwVptiF3JTtOZFPEd1dLOjj1Dv9Jpo8OGREr2Cpox4pmzY0F3w==" crossorigin=anonymous defer></script>
 <script src=/js/highlight.min.9003483b4531b86467c8b801b1d5fc5439bb0d6bdb6c6a760a1b54abf37d6bbadf8423dbc81a3359c935c7705bb7d183b46131ba4a9c861b5d48e6a61501461a.js integrity="sha512-kANIO0UxuGRnyLgBsdX8VDm7DWvbbGp2ChtUq/N9a7rfhCPbyBozWck1x3Bbt9GDtGExukqchhtdSOamFQFGGg==" crossorigin=anonymous defer></script>
 <script src=/main.min.9342d29d0e3e250a2c03282306b766e004888dba0fd661a17d7b106655e013bf85733f086ad330e3df0929c713dd81c0ea835966fa92e4a1e38f7ea9680524ed.js integrity="sha512-k0LSnQ4+JQosAygjBrdm4ASIjboP1mGhfXsQZlXgE7+Fcz8IatMw498JKccT3YHA6oNZZvqS5KHjj36paAUk7Q==" crossorigin=anonymous defer></script>
-<script src=https://gambitbsm.org/index.min.03ab9c2e460a36904d0b1544581433f337b9e5e23e6798a396683f418d37e30979da1ab2a8ef201c110075d73ccb12f8cc2605c7d9723f99bef11ed7c8b97844.js integrity="sha512-A6ucLkYKNpBNCxVEWBQz8ze55eI+Z5ijlmg/QY034wl52hqyqO8gHBEAddc8yxL4zCYFx9lyP5m+8R7XyLl4RA==" crossorigin=anonymous defer></script></body></html>
+<script src=https://gambitbsm.org/index.min.3a8ee06d0c346f1fb70040b0fbcbaaacf335cb34023c408954406a05db2089fc2ca349119b9f7d68b9e7044e82b8fdc8bd9661b6ef8b118246c5a2079d7fa8e9.js integrity="sha512-Oo7gbQw0bx+3AECw+8uqrPM1yzQCPECJVEBqBdsgifwso0kRm599aLnnBE6CuP3IvZZhtu+LEYJGxaIHnX+o6Q==" crossorigin=anonymous defer></script></body></html>

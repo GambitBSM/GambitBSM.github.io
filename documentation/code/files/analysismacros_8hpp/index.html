@@ -1,0 +1,1152 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="ie=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><link rel=preload as=font href=https://gambitbsm.org/fonts/vendor/jost/jost-v4-latin-regular.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://gambitbsm.org/fonts/vendor/jost/jost-v4-latin-500.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://gambitbsm.org/fonts/vendor/jost/jost-v4-latin-700.woff2 type=font/woff2 crossorigin><script>(()=>{var e=localStorage.getItem("theme");e==="dark"&&document.documentElement.setAttribute("data-dark-mode","")})()</script><link rel=stylesheet href=https://gambitbsm.org/main.c1f0838e2cac2d5bb45c4f51eac5017d94b53e71f279f5ef925be54abda180b5ad4c9a5384f3c141e772c408e3f24bd9c50c11e6b79424a45ac99a0d112b5f29.css integrity="sha512-wfCDjiysLVu0XE9R6sUBfZS1PnHyefXvklvlSr2hgLWtTJpThPPBQedyxAjj8kvZxQwR5reUJKRayZoNEStfKQ==" crossorigin=anonymous><noscript><style>img.lazyload{display:none}</style></noscript><meta name=robots content="index, follow"><meta name=googlebot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><meta name=bingbot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><title>file analyses/AnalysisMacros.hpp - GAMBIT</title><meta name=description content="[No description available]"><link rel=canonical href=https://gambitbsm.org/documentation/code/files/analysismacros_8hpp/><meta property="og:locale" content="en_US"><meta property="og:type" content="article"><meta property="og:title" content="file analyses/AnalysisMacros.hpp"><meta property="og:description" content="[No description available]"><meta property="og:url" content="https://gambitbsm.org/documentation/code/files/analysismacros_8hpp/"><meta property="og:site_name" content="GAMBIT"><meta property="og:image" content="https://gambitbsm.org/gambit_logo.png"><meta property="og:image:alt" content="GAMBIT"><meta name=twitter:card content="summary_large_image"><meta name=twitter:site content><meta name=twitter:creator content><meta name=twitter:title content="file analyses/AnalysisMacros.hpp"><meta name=twitter:description content="[No description available]"><meta name=twitter:image content="https://gambitbsm.org/gambit_logo.png"><meta name=twitter:image:alt content="file analyses/AnalysisMacros.hpp"><script type=application/ld+json>{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://gambitbsm.org/#/schema/organization/1","name":"Doks","url":"https://gambitbsm.org/","sameAs":["https://github.com/GambitBSM"],"logo":{"@type":"ImageObject","@id":"https://gambitbsm.org/#/schema/image/1","url":"https://gambitbsm.org/logo-doks.png","width":450,"height":416,"caption":"Doks"},"image":{"@id":"https://gambitbsm.org/#/schema/image/1"}},{"@type":"WebSite","@id":"https://gambitbsm.org/#/schema/website/1","url":"https://gambitbsm.org/","name":"GAMBIT","description":"Documentation for GAMBIT, the Global And Modular BSM Inference Tool","publisher":{"@id":"https://gambitbsm.org/#/schema/organization/1"}},{"@type":"WebPage","@id":"https://gambitbsm.org/documentation/code/files/analysismacros_8hpp/","url":"https://gambitbsm.org/documentation/code/files/analysismacros_8hpp/","name":"file analyses\/AnalysisMacros.hpp","description":"[No description available]","isPartOf":{"@id":"https://gambitbsm.org/#/schema/website/1"},"about":{"@id":"https://gambitbsm.org/#/schema/organization/1"},"datePublished":"0001-01-01T00:00:00CET","dateModified":"0001-01-01T00:00:00CET","breadcrumb":{"@id":"https://gambitbsm.org/documentation/code/files/analysismacros_8hpp/#/schema/breadcrumb/1"},"primaryImageOfPage":{"@id":"https://gambitbsm.org/documentation/code/files/analysismacros_8hpp/#/schema/image/2"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://gambitbsm.org/documentation/code/files/analysismacros_8hpp/"]}]},{"@type":"BreadcrumbList","@id":"https://gambitbsm.org/documentation/code/files/analysismacros_8hpp/#/schema/breadcrumb/1","name":"Breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"https://gambitbsm.org/","url":"https://gambitbsm.org/","name":"Home"}},{"@type":"ListItem","position":2,"item":{"@type":"WebPage","@id":"https://gambitbsm.org/documentation/","url":"https://gambitbsm.org/documentation/","name":"Documentation"}},{"@type":"ListItem","position":3,"item":{"@type":"WebPage","@id":"https://gambitbsm.org/documentation/code/","url":"https://gambitbsm.org/documentation/code/","name":"Code"}},{"@type":"ListItem","position":4,"item":{"@type":"WebPage","@id":"https://gambitbsm.org/documentation/code/files/","url":"https://gambitbsm.org/documentation/code/files/","name":"Files"}},{"@type":"ListItem","position":5,"item":{"@id":"https://gambitbsm.org/documentation/code/files/analysismacros_8hpp/"}}]},{"@context":"https://schema.org","@graph":[{"@type":"ImageObject","@id":"https://gambitbsm.org/documentation/code/files/analysismacros_8hpp/#/schema/image/2","url":"https://gambitbsm.org/gambit_logo.png","contentUrl":"https://gambitbsm.org/gambit_logo.png","caption":"file analyses\/AnalysisMacros.hpp"}]}]}</script><meta name=theme-color content="#fff"><link rel=icon href=https://gambitbsm.org/favicon.ico sizes=any><link rel=icon type=image/svg+xml href=https://gambitbsm.org/favicon.svg><link rel=apple-touch-icon sizes=180x180 href=https://gambitbsm.org/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=https://gambitbsm.org/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=https://gambitbsm.org/favicon-16x16.png><link rel=manifest crossorigin=use-credentials href=https://gambitbsm.org/site.webmanifest></head><body class="documentation single light"><div class=sticky-top><div class=header-bar></div><header class="navbar navbar-expand-md navbar-light doks-navbar"><nav class="container-xxl flex-wrap flex-md-nowrap" aria-label="Main navigation"><a class="navbar-brand p-0 me-auto" href=https://gambitbsm.org/ aria-label=GAMBIT><img class=logo-light src=https://gambitbsm.org/gambit_logo.png width=50px>
+<img class="logo-dark d-none" src=https://gambitbsm.org/gambit_logo.png width=50px>
+GAMBIT</a>
+<button class="btn btn-menu order-2 d-block d-lg-none" type=button data-bs-toggle=offcanvas data-bs-target=#offcanvasDoks aria-controls=offcanvasDoks aria-label="Open main menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button><div class="offcanvas offcanvas-end border-0 py-lg-1" tabindex=-1 id=offcanvasDoks data-bs-backdrop=true aria-labelledby=offcanvasDoksLabel><div class="header-bar d-lg-none"></div><div class="offcanvas-header d-lg-none"><h2 class="h5 offcanvas-title ps-2" id=offcanvasDoksLabel><a class=text-dark href=/>GAMBIT</a></h2><button type=button class="btn-close text-reset me-2" data-bs-dismiss=offcanvas aria-label="Close main menu"></button></div><div class="offcanvas-body p-4 p-lg-0"><ul class="nav flex-column flex-lg-row align-items-lg-center mt-2 mt-lg-0 ms-lg-2 me-lg-auto"><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Releases
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit/tree/release_2.7>GAMBIT 2-7 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.6>GAMBIT 2-6 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.5>GAMBIT 2-5 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.4>GAMBIT 2-4 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.3>GAMBIT 2-3 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.2>GAMBIT 2-2 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.1>GAMBIT 2-1 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_light_1.0>GAMBIT Light ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit/tags>All releases ⧉</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Documentation
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=/documentation/installation/introduction/>Installation</a></li><li><a class=dropdown-item href=/documentation/physics/analyses>Physics</a></li><li><a class=dropdown-item href=/documentation/tutorials/the_gambit_interface>Tutorials</a></li><li><a class=dropdown-item href=/documentation/help/common_problems_and_questions/>Help</a></li><li><a class=dropdown-item href=/documentation/code/index_classes>Code Reference</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Community
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=https://github.com/GambitBSM/wiki>Wiki</a></li><li><a class=dropdown-item href=/community/publications/>Publications</a></li><li><a class=dropdown-item href=/community/talks/>Talks</a></li><li><a class=dropdown-item href=/community/members/>Members</a></li><li><a class=dropdown-item href=/community/code_of_conduct/>Code of Conduct</a></li><li><a class=dropdown-item href=/community/contact/>Contact</a></li></ul></li></ul><hr class="text-black-50 my-4 d-lg-none"><form class="doks-search position-relative flex-grow-1 ms-lg-auto me-lg-2"><input id=search class="form-control is-search" type=search placeholder="Search site..." aria-label="Search site..." autocomplete=off><div id=suggestions class="shadow bg-white rounded d-none"></div></form><hr class="text-black-50 my-4 d-lg-none"><ul class="nav flex-column flex-lg-row"><li class=nav-item><a class="nav-link social-link" href=https://github.com/GambitBSM><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37.0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44.0 0020 4.77 5.07 5.07.0 0019.91 1S18.73.65 16 2.48a13.38 13.38.0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07.0 005 4.77 5.44 5.44.0 003.5 8.55c0 5.42 3.3 6.61 6.44 7A3.37 3.37.0 009 18.13V22"/></svg><small class="ms-2 d-lg-none">GitHub</small></a></li></ul><hr class="text-black-50 my-4 d-lg-none"><button id=mode class="btn btn-link" type=button aria-label="Toggle user interface mode">
+<span class=toggle-dark><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg></span><span class=toggle-light><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></span></button></div></div></nav></header></div><div class="wrap container-xxl" role=document><div class=content><div class="row flex-xl-nowrap"><div class="col-lg-5 col-xl-4 docs-sidebar"><nav class=docs-links aria-label="Main navigation"><ul class="list-unstyled collapsible-sidebar"><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-installation aria-expanded=false>
+Installation</button><div class=collapse id=section-installation><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/installation/introduction/>Getting Started</a></li><li><a class="docs-link rounded" href=/documentation/installation/docker_usage/>Docker Usage</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_linux/>Installation for Linux</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_windows/>Installation for Windows</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_macos/>Installation for macOS</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-tutorials aria-expanded=false>
+Tutorials</button><div class=collapse id=section-tutorials><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/tutorials/the_gambit_interface/>1 - The GAMBIT Interface</a></li><li><a class="docs-link rounded" href=/documentation/tutorials/in_person_tutorials/>In person tutorials</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-physics aria-expanded=false>
+Physics</button><div class=collapse id=section-physics><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/physics/analyses/>ColliderBit analysis</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-help aria-expanded=false>
+Help</button><div class=collapse id=section-help><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/help/common_problems_and_questions/>Common Problems and Questions</a></li><li><a class="docs-link rounded" href=/documentation/help/compiler_matrix/>Compiler Matrix</a></li><li><a class="docs-link rounded" href=/documentation/help/known_issues/>Known Issues</a></li><li><a class="docs-link rounded" href=/documentation/help/configuration_examples/>Configuration Examples</a></li><li><a class="docs-link rounded" href=/documentation/help/support/>Support</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-code aria-expanded=false>
+Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/code/index_classes/>Classes</a></li><li><a class="docs-link rounded" href=/documentation/code/index_files/>Files</a></li><li><a class="docs-link rounded" href=/documentation/code/index_pages/>Pages</a></li><li><a class="docs-link rounded" href=/documentation/code/index_namespaces/>Namespaces</a></li></ul></div></li></ul></nav></div><nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation"><div class=d-xl-none><button class="btn btn-outline-primary btn-sm doks-toc-toggle collapsed" type=button data-bs-toggle=collapse data-bs-target=#onThisPage aria-controls=doks-docs-nav aria-expanded=false aria-label="Toggle On this page navigation">
+<span>On this page</span>
+<span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg></span></button><div class=collapse id=onThisPage><div class="card card-body mt-3 py-1"><div class=page-links><nav id=TableOfContents><ul><li><a href=#defines>Defines</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#macros-documentation>Macros Documentation</a><ul><li><a href=#define-etamin>define ETAMIN</a></li><li><a href=#define-ptmin>define PTMIN</a></li><li><a href=#define-etamax>define ETAMAX</a></li><li><a href=#define-ptmax>define PTMAX</a></li><li><a href=#define-baseline-objects-3>define BASELINE_OBJECTS_3</a></li><li><a href=#define-baseline-objects-5>define BASELINE_OBJECTS_5</a></li><li><a href=#define-baseline-objects-6>define BASELINE_OBJECTS_6</a></li><li><a href=#define-baseline-objects-7>define BASELINE_OBJECTS_7</a></li><li><a href=#define-baseline-objects-8>define BASELINE_OBJECTS_8</a></li><li><a href=#define-baseline-particles-2>define BASELINE_PARTICLES_2</a></li><li><a href=#define-baseline-particles-4>define BASELINE_PARTICLES_4</a></li><li><a href=#define-baseline-particles-5>define BASELINE_PARTICLES_5</a></li><li><a href=#define-baseline-particles-6>define BASELINE_PARTICLES_6</a></li><li><a href=#define-baseline-particles-7>define BASELINE_PARTICLES_7</a></li><li><a href=#define-baseline-jets-2>define BASELINE_JETS_2</a></li><li><a href=#define-baseline-jets-4>define BASELINE_JETS_4</a></li><li><a href=#define-baseline-jets-5>define BASELINE_JETS_5</a></li><li><a href=#define-baseline-jets-6>define BASELINE_JETS_6</a></li><li><a href=#define-baseline-jets-7>define BASELINE_JETS_7</a></li><li><a href=#define-baseline-particles>define BASELINE_PARTICLES</a></li><li><a href=#define-baseline-jets>define BASELINE_JETS</a></li><li><a href=#define-baseline-objects>define BASELINE_OBJECTS</a></li><li><a href=#define-baseline-bjets-4>define BASELINE_BJETS_4</a></li><li><a href=#define-baseline-bjets-5>define BASELINE_BJETS_5</a></li><li><a href=#define-baseline-bjets-6>define BASELINE_BJETS_6</a></li><li><a href=#define-baseline-bjets-7>define BASELINE_BJETS_7</a></li><li><a href=#define-baseline-bjets-8>define BASELINE_BJETS_8</a></li><li><a href=#define-baseline-bjets>define BASELINE_BJETS</a></li><li><a href=#define-baseline-object-combination-8>define BASELINE_OBJECT_COMBINATION_8</a></li><li><a href=#define-baseline-particle-combination-7>define BASELINE_PARTICLE_COMBINATION_7</a></li><li><a href=#define-baseline-jet-combination-7>define BASELINE_JET_COMBINATION_7</a></li><li><a href=#define-baseline-object-combination-4>define BASELINE_OBJECT_COMBINATION_4</a></li><li><a href=#define-baseline-particle-combination-3>define BASELINE_PARTICLE_COMBINATION_3</a></li><li><a href=#define-baseline-jet-combination-3>define BASELINE_JET_COMBINATION_3</a></li><li><a href=#define-baseline-particle-combination>define BASELINE_PARTICLE_COMBINATION</a></li><li><a href=#define-baseline-jet-combination>define BASELINE_JET_COMBINATION</a></li><li><a href=#define-baseline-object-combination>define BASELINE_OBJECT_COMBINATION</a></li><li><a href=#define-signal-objects-8>define SIGNAL_OBJECTS_8</a></li><li><a href=#define-signal-particles-7>define SIGNAL_PARTICLES_7</a></li><li><a href=#define-signal-jets-7>define SIGNAL_JETS_7</a></li><li><a href=#define-signal-objects-4>define SIGNAL_OBJECTS_4</a></li><li><a href=#define-signal-particles-3>define SIGNAL_PARTICLES_3</a></li><li><a href=#define-signal-jets-3>define SIGNAL_JETS_3</a></li><li><a href=#define-signal-objects-3>define SIGNAL_OBJECTS_3</a></li><li><a href=#define-signal-particles-2>define SIGNAL_PARTICLES_2</a></li><li><a href=#define-signal-jets-2>define SIGNAL_JETS_2</a></li><li><a href=#define-signal-particles>define SIGNAL_PARTICLES</a></li><li><a href=#define-signal-jets>define SIGNAL_JETS</a></li><li><a href=#define-signal-objects>define SIGNAL_OBJECTS</a></li><li><a href=#define-signal-object-combination>define SIGNAL_OBJECT_COMBINATION</a></li><li><a href=#define-signal-particle-combination>define SIGNAL_PARTICLE_COMBINATION</a></li><li><a href=#define-signal-jet-combination>define SIGNAL_JET_COMBINATION</a></li><li><a href=#define-create-pair>define CREATE_PAIR</a></li><li><a href=#define-begin-preselection>define BEGIN_PRESELECTION</a></li><li><a href=#define-end-preselection>define END_PRESELECTION</a></li><li><a href=#define-log-cut-1>define LOG_CUT_1</a></li><li><a href=#define-log-cut-2>define LOG_CUT_2</a></li><li><a href=#define-log-cut-3>define LOG_CUT_3</a></li><li><a href=#define-log-cut-4>define LOG_CUT_4</a></li><li><a href=#define-log-cut-5>define LOG_CUT_5</a></li><li><a href=#define-log-cut-6>define LOG_CUT_6</a></li><li><a href=#define-log-cut-7>define LOG_CUT_7</a></li><li><a href=#define-log-cut-8>define LOG_CUT_8</a></li><li><a href=#define-log-cut-9>define LOG_CUT_9</a></li><li><a href=#define-log-cut-10>define LOG_CUT_10</a></li><li><a href=#define-log-cut>define LOG_CUT</a></li><li><a href=#define-log-cut-n>define LOG_CUT_N</a></li><li><a href=#define-log-cuts-2>define LOG_CUTS_2</a></li><li><a href=#define-log-cuts-3>define LOG_CUTS_3</a></li><li><a href=#define-log-cuts-4>define LOG_CUTS_4</a></li><li><a href=#define-log-cuts-5>define LOG_CUTS_5</a></li><li><a href=#define-log-cuts-6>define LOG_CUTS_6</a></li><li><a href=#define-log-cuts-7>define LOG_CUTS_7</a></li><li><a href=#define-log-cuts-8>define LOG_CUTS_8</a></li><li><a href=#define-log-cuts-9>define LOG_CUTS_9</a></li><li><a href=#define-log-cuts-10>define LOG_CUTS_10</a></li><li><a href=#define-log-cuts-11>define LOG_CUTS_11</a></li><li><a href=#define-log-cuts>define LOG_CUTS</a></li><li><a href=#define-log-cuts-n>define LOG_CUTS_N</a></li><li><a href=#define-fill-signal-region>define FILL_SIGNAL_REGION</a></li><li><a href=#define-commit-signal-region>define COMMIT_SIGNAL_REGION</a></li><li><a href=#define-commit-covariance-matrix>define COMMIT_COVARIANCE_MATRIX</a></li><li><a href=#define-commit-cutflows>define COMMIT_CUTFLOWS</a></li></ul></li><li><a href=#source-code>Source code</a></li></ul></nav></div></div></div></div><div class="page-links d-none d-xl-block"><h3>On this page</h3><nav id=TableOfContents><ul><li><a href=#defines>Defines</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#macros-documentation>Macros Documentation</a><ul><li><a href=#define-etamin>define ETAMIN</a></li><li><a href=#define-ptmin>define PTMIN</a></li><li><a href=#define-etamax>define ETAMAX</a></li><li><a href=#define-ptmax>define PTMAX</a></li><li><a href=#define-baseline-objects-3>define BASELINE_OBJECTS_3</a></li><li><a href=#define-baseline-objects-5>define BASELINE_OBJECTS_5</a></li><li><a href=#define-baseline-objects-6>define BASELINE_OBJECTS_6</a></li><li><a href=#define-baseline-objects-7>define BASELINE_OBJECTS_7</a></li><li><a href=#define-baseline-objects-8>define BASELINE_OBJECTS_8</a></li><li><a href=#define-baseline-particles-2>define BASELINE_PARTICLES_2</a></li><li><a href=#define-baseline-particles-4>define BASELINE_PARTICLES_4</a></li><li><a href=#define-baseline-particles-5>define BASELINE_PARTICLES_5</a></li><li><a href=#define-baseline-particles-6>define BASELINE_PARTICLES_6</a></li><li><a href=#define-baseline-particles-7>define BASELINE_PARTICLES_7</a></li><li><a href=#define-baseline-jets-2>define BASELINE_JETS_2</a></li><li><a href=#define-baseline-jets-4>define BASELINE_JETS_4</a></li><li><a href=#define-baseline-jets-5>define BASELINE_JETS_5</a></li><li><a href=#define-baseline-jets-6>define BASELINE_JETS_6</a></li><li><a href=#define-baseline-jets-7>define BASELINE_JETS_7</a></li><li><a href=#define-baseline-particles>define BASELINE_PARTICLES</a></li><li><a href=#define-baseline-jets>define BASELINE_JETS</a></li><li><a href=#define-baseline-objects>define BASELINE_OBJECTS</a></li><li><a href=#define-baseline-bjets-4>define BASELINE_BJETS_4</a></li><li><a href=#define-baseline-bjets-5>define BASELINE_BJETS_5</a></li><li><a href=#define-baseline-bjets-6>define BASELINE_BJETS_6</a></li><li><a href=#define-baseline-bjets-7>define BASELINE_BJETS_7</a></li><li><a href=#define-baseline-bjets-8>define BASELINE_BJETS_8</a></li><li><a href=#define-baseline-bjets>define BASELINE_BJETS</a></li><li><a href=#define-baseline-object-combination-8>define BASELINE_OBJECT_COMBINATION_8</a></li><li><a href=#define-baseline-particle-combination-7>define BASELINE_PARTICLE_COMBINATION_7</a></li><li><a href=#define-baseline-jet-combination-7>define BASELINE_JET_COMBINATION_7</a></li><li><a href=#define-baseline-object-combination-4>define BASELINE_OBJECT_COMBINATION_4</a></li><li><a href=#define-baseline-particle-combination-3>define BASELINE_PARTICLE_COMBINATION_3</a></li><li><a href=#define-baseline-jet-combination-3>define BASELINE_JET_COMBINATION_3</a></li><li><a href=#define-baseline-particle-combination>define BASELINE_PARTICLE_COMBINATION</a></li><li><a href=#define-baseline-jet-combination>define BASELINE_JET_COMBINATION</a></li><li><a href=#define-baseline-object-combination>define BASELINE_OBJECT_COMBINATION</a></li><li><a href=#define-signal-objects-8>define SIGNAL_OBJECTS_8</a></li><li><a href=#define-signal-particles-7>define SIGNAL_PARTICLES_7</a></li><li><a href=#define-signal-jets-7>define SIGNAL_JETS_7</a></li><li><a href=#define-signal-objects-4>define SIGNAL_OBJECTS_4</a></li><li><a href=#define-signal-particles-3>define SIGNAL_PARTICLES_3</a></li><li><a href=#define-signal-jets-3>define SIGNAL_JETS_3</a></li><li><a href=#define-signal-objects-3>define SIGNAL_OBJECTS_3</a></li><li><a href=#define-signal-particles-2>define SIGNAL_PARTICLES_2</a></li><li><a href=#define-signal-jets-2>define SIGNAL_JETS_2</a></li><li><a href=#define-signal-particles>define SIGNAL_PARTICLES</a></li><li><a href=#define-signal-jets>define SIGNAL_JETS</a></li><li><a href=#define-signal-objects>define SIGNAL_OBJECTS</a></li><li><a href=#define-signal-object-combination>define SIGNAL_OBJECT_COMBINATION</a></li><li><a href=#define-signal-particle-combination>define SIGNAL_PARTICLE_COMBINATION</a></li><li><a href=#define-signal-jet-combination>define SIGNAL_JET_COMBINATION</a></li><li><a href=#define-create-pair>define CREATE_PAIR</a></li><li><a href=#define-begin-preselection>define BEGIN_PRESELECTION</a></li><li><a href=#define-end-preselection>define END_PRESELECTION</a></li><li><a href=#define-log-cut-1>define LOG_CUT_1</a></li><li><a href=#define-log-cut-2>define LOG_CUT_2</a></li><li><a href=#define-log-cut-3>define LOG_CUT_3</a></li><li><a href=#define-log-cut-4>define LOG_CUT_4</a></li><li><a href=#define-log-cut-5>define LOG_CUT_5</a></li><li><a href=#define-log-cut-6>define LOG_CUT_6</a></li><li><a href=#define-log-cut-7>define LOG_CUT_7</a></li><li><a href=#define-log-cut-8>define LOG_CUT_8</a></li><li><a href=#define-log-cut-9>define LOG_CUT_9</a></li><li><a href=#define-log-cut-10>define LOG_CUT_10</a></li><li><a href=#define-log-cut>define LOG_CUT</a></li><li><a href=#define-log-cut-n>define LOG_CUT_N</a></li><li><a href=#define-log-cuts-2>define LOG_CUTS_2</a></li><li><a href=#define-log-cuts-3>define LOG_CUTS_3</a></li><li><a href=#define-log-cuts-4>define LOG_CUTS_4</a></li><li><a href=#define-log-cuts-5>define LOG_CUTS_5</a></li><li><a href=#define-log-cuts-6>define LOG_CUTS_6</a></li><li><a href=#define-log-cuts-7>define LOG_CUTS_7</a></li><li><a href=#define-log-cuts-8>define LOG_CUTS_8</a></li><li><a href=#define-log-cuts-9>define LOG_CUTS_9</a></li><li><a href=#define-log-cuts-10>define LOG_CUTS_10</a></li><li><a href=#define-log-cuts-11>define LOG_CUTS_11</a></li><li><a href=#define-log-cuts>define LOG_CUTS</a></li><li><a href=#define-log-cuts-n>define LOG_CUTS_N</a></li><li><a href=#define-fill-signal-region>define FILL_SIGNAL_REGION</a></li><li><a href=#define-commit-signal-region>define COMMIT_SIGNAL_REGION</a></li><li><a href=#define-commit-covariance-matrix>define COMMIT_COVARIANCE_MATRIX</a></li><li><a href=#define-commit-cutflows>define COMMIT_CUTFLOWS</a></li></ul></li><li><a href=#source-code>Source code</a></li></ul></nav></div></nav><main class="docs-content col-lg-11 col-xl-9 mx-xl-auto"><nav aria-label=breadcrumb><ol class=breadcrumb><li class=breadcrumb-item><a href=/>Home</a></li><li class=breadcrumb-item><a href=/documentation/>Documentation</a></li><li class=breadcrumb-item><a href=/documentation/code/>Code Reference</a></li><li class="breadcrumb-item active" aria-current=page>file analyses/AnalysisMacros.hpp</li></ol></nav><p class=lead></p><h1 id=file-analyses-analysismacros-hpp>file analyses/AnalysisMacros.hpp <a href=#file-analyses-analysismacros-hpp class=anchor aria-hidden=true>#</a></h1><p>[No description available] <a href=#detailed-description>More&mldr;</a></p><h2 id=defines>Defines <a href=#defines class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th></th><th>Name</th></tr></thead><tbody><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-etamin>ETAMIN</a></strong><br>Min and max values of eta and pT.</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-ptmin>PTMIN</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-etamax>ETAMAX</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-ptmax>PTMAX</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-baseline-objects-3>BASELINE_OBJECTS_3</a></strong>(TYPE, OBJECTS, NAME)<br>Define baseline objects without cuts.</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-baseline-objects-5>BASELINE_OBJECTS_5</a></strong>(TYPE, OBJECTS, NAME, MINPT, MINETA)<br>Define baseline objects with min pT and min eta.</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-baseline-objects-6>BASELINE_OBJECTS_6</a></strong>(TYPE, OBJECTS, NAME, MINPT, MINETA, EFF)<br>Define baseline objects with min pT, min eta and selection efficiency.</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-baseline-objects-7>BASELINE_OBJECTS_7</a></strong>(TYPE, OBJECTS, NAME, MINPT, MINETA, MAXPT, MAXETA)<br>Define baseline objects with min pT, min eta, max pT and max eta.</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-baseline-objects-8>BASELINE_OBJECTS_8</a></strong>(TYPE, OBJECTS, NAME, MINPT, MINETA, MAXPT, MAXETA, EFF)<br>Define baseline objects with min pT, min eta, max pT, max eta and selection efficiency.</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-baseline-particles-2>BASELINE_PARTICLES_2</a></strong>(OBJECTS, NAME)<br>Define baseline particles without cuts.</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-baseline-particles-4>BASELINE_PARTICLES_4</a></strong>(OBJECTS, NAME, MINPT, MINETA)<br>Define baseline particles with min pT and min et.</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-baseline-particles-5>BASELINE_PARTICLES_5</a></strong>(OBJECTS, NAME, MINPT, MINETA, EFF)<br>Define baseline particles with min pT, min eta and selection efficiency.</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-baseline-particles-6>BASELINE_PARTICLES_6</a></strong>(OBJECTS, NAME, MINPT, MINETA, MAXPT, MAXETA)<br>Define baseline particles with min pT, min eta, max pT and max eta.</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-baseline-particles-7>BASELINE_PARTICLES_7</a></strong>(OBJECTS, NAME, MINPT, MINETA, MAXPT, MAXETA, EFF)<br>Define baseline particles with min pT, min eta, max pT, max eta and selection efficiency.</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-baseline-jets-2>BASELINE_JETS_2</a></strong>(OBJECTS, NAME)<br>Define baseline jets without cuts.</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-baseline-jets-4>BASELINE_JETS_4</a></strong>(OBJECTS, NAME, MINPT, MINETA)<br>Define baseline jets with a min pT and a min eta.</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-baseline-jets-5>BASELINE_JETS_5</a></strong>(OBJECTS, NAME, MINPT, MINETA, EFF)<br>Define baseline jets with a min pT, a min eta and selection efficiency.</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-baseline-jets-6>BASELINE_JETS_6</a></strong>(OBJECTS, NAME, MINPT, MINETA, MAXPT, MAXETA)<br>Define baseline jets with a min pT, a min eta, max pT and max eta.</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-baseline-jets-7>BASELINE_JETS_7</a></strong>(OBJECTS, NAME, MINPT, MINETA, MAXPT, MAXETA, EFF)<br>Define baseline jets with a min pT, a min eta, max pT, max eta and selection efficiency.</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-baseline-particles>BASELINE_PARTICLES</a></strong>(&mldr;)<br>Redirection macro.</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-baseline-jets>BASELINE_JETS</a></strong>(&mldr;)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-baseline-objects>BASELINE_OBJECTS</a></strong>(&mldr;)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-baseline-bjets-4>BASELINE_BJETS_4</a></strong>(OBJECTS, NAME, MINPT, MINETA)<br>Define baseline bjets with a min pT and a min eta.</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-baseline-bjets-5>BASELINE_BJETS_5</a></strong>(OBJECTS, NAME, MINPT, MINETA, EFF)<br>Define baseline bjets with a min pT, a min eta and selection efficiency.</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-baseline-bjets-6>BASELINE_BJETS_6</a></strong>(OBJECTS, NAME, MINPT, MINETA, MAXPT, MAXETA)<br>Define baseline bjets with a min pT, a min eta, a max pT and a max eta.</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-baseline-bjets-7>BASELINE_BJETS_7</a></strong>(OBJECTS, NAME, MINPT, MINETA, MAXPT, MAXETA, EFF)<br>Define baseline bjets with a min pT, a min eta, a max pT, a max eta and selection efficiency.</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-baseline-bjets-8>BASELINE_BJETS_8</a></strong>(OBJECTS, NAME, MINPT, MINETA, MAXPT, MAXETA, EFF, MISID)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-baseline-bjets>BASELINE_BJETS</a></strong>(&mldr;)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-baseline-object-combination-8>BASELINE_OBJECT_COMBINATION_8</a></strong>(TYPE, TARGET, OBJECT1, OBJECT2, MINPT, MINETA, MAXPT, MAXETA)<br>Define a combination of baseline objects with pT and eta cuts.</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-baseline-particle-combination-7>BASELINE_PARTICLE_COMBINATION_7</a></strong>(TARGET, OBJECT1, OBJECT2, MINPT, MINETA, MAXPT, MAXETA)<br>Define a combination of baseline particles with pT and eta cuts.</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-baseline-jet-combination-7>BASELINE_JET_COMBINATION_7</a></strong>(TARGET, OBJECT1, OBJECT2, MINPT, MINETA, MAXPT, MAXETA)<br>Define a combination of baseline jets with pT and eta cuts.</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-baseline-object-combination-4>BASELINE_OBJECT_COMBINATION_4</a></strong>(TYPE, TARGET, OBJECT1, OBJECT2)<br>Define a combination of baseline objects.</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-baseline-particle-combination-3>BASELINE_PARTICLE_COMBINATION_3</a></strong>(TARGET, OBJECT1, OBJECT2)<br>Define a combination of baseline particles.</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-baseline-jet-combination-3>BASELINE_JET_COMBINATION_3</a></strong>(TARGET, OBJECT1, OBJECT2)<br>Define a combination of baseline jets.</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-baseline-particle-combination>BASELINE_PARTICLE_COMBINATION</a></strong>(&mldr;)<br>Redirection macro.</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-baseline-jet-combination>BASELINE_JET_COMBINATION</a></strong>(&mldr;)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-baseline-object-combination>BASELINE_OBJECT_COMBINATION</a></strong>(&mldr;)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-signal-objects-8>SIGNAL_OBJECTS_8</a></strong>(TYPE, BASELINE, SIGNAL, SORTED, MINPT, MINETA, MAXPT, MAXETA)<br>Define (potentially sorted) signal objects from baseline objects with pT and eta cuts.</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-signal-particles-7>SIGNAL_PARTICLES_7</a></strong>(BASELINE, SIGNAL, SORTED, MINPT, MINETA, MAXPT, MAXETA)<br>Define (potentially sorted) signal particles from baseline particles with pT and eta cuts.</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-signal-jets-7>SIGNAL_JETS_7</a></strong>(BASELINE, SIGNAL, SORTED, MINPT, MINETA, MAXPT, MAXETA)<br>Define (potentially sorted) signal jets from baseline jets with pT and eta cuts.</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-signal-objects-4>SIGNAL_OBJECTS_4</a></strong>(TYPE, BASELINE, SIGNAL, SORTED)<br>Define (potentially sorted) signal objects from baseline objects.</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-signal-particles-3>SIGNAL_PARTICLES_3</a></strong>(BASELINE, SIGNAL, SORTED)<br>Define a (potentially sorted) signal particles from baseline particles.</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-signal-jets-3>SIGNAL_JETS_3</a></strong>(BASELINE, SIGNAL, SORTED)<br>Define a (potentially sorted) signal jets from a baseline jets.</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-signal-objects-3>SIGNAL_OBJECTS_3</a></strong>(TYPE, BASELINE, SIGNAL)<br>Define a sorted signal objects from a baseline objects.</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-signal-particles-2>SIGNAL_PARTICLES_2</a></strong>(BASELINE, SIGNAL)<br>Define sorted signal particles from baseline particles.</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-signal-jets-2>SIGNAL_JETS_2</a></strong>(BASELINE, SIGNAL)<br>Define a signal jets from a baseline jets.</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-signal-particles>SIGNAL_PARTICLES</a></strong>(&mldr;)<br>Redirection macros.</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-signal-jets>SIGNAL_JETS</a></strong>(&mldr;)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-signal-objects>SIGNAL_OBJECTS</a></strong>(&mldr;)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-signal-object-combination>SIGNAL_OBJECT_COMBINATION</a></strong>(TYPE, TARGET, OBJECT1, OBJECT2)<br>Define a combination of signal objects.</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-signal-particle-combination>SIGNAL_PARTICLE_COMBINATION</a></strong>(TARGET, OBJECT1, OBJECT2)<br>Define a combination of signal particles.</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-signal-jet-combination>SIGNAL_JET_COMBINATION</a></strong>(TARGET, OBJECT1, OBJECT2)<br>Define a combination of signal jets.</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-create-pair>CREATE_PAIR</a></strong>(TYPE, SOURCE, CONTAINER, UNIQUE)<br>Types of predefined pairs.</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-begin-preselection>BEGIN_PRESELECTION</a></strong><br>Preselection, at the start initialize cutflows, at the end fill preselection cutflow.</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-end-preselection>END_PRESELECTION</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-log-cut-1>LOG_CUT_1</a></strong>(A)<br>Log current event for one or more signal regions.</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-log-cut-2>LOG_CUT_2</a></strong>(A, B)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-log-cut-3>LOG_CUT_3</a></strong>(A, B, C)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-log-cut-4>LOG_CUT_4</a></strong>(A, B, C, D)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-log-cut-5>LOG_CUT_5</a></strong>(A, B, C, D, E)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-log-cut-6>LOG_CUT_6</a></strong>(A, B, C, D, E, F)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-log-cut-7>LOG_CUT_7</a></strong>(A, B, C, D, E, F, G)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-log-cut-8>LOG_CUT_8</a></strong>(A, B, C, D, E, F, G, H)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-log-cut-9>LOG_CUT_9</a></strong>(A, B, C, D, E, F, G, H, I)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-log-cut-10>LOG_CUT_10</a></strong>(A, B, C, D, E, F, G, H, I, J)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-log-cut>LOG_CUT</a></strong>(&mldr;)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-log-cut-n>LOG_CUT_N</a></strong>(SR, N)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-log-cuts-2>LOG_CUTS_2</a></strong>(CUTS, A)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-log-cuts-3>LOG_CUTS_3</a></strong>(CUTS, A, B)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-log-cuts-4>LOG_CUTS_4</a></strong>(CUTS, A, B, C)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-log-cuts-5>LOG_CUTS_5</a></strong>(CUTS, A, B, C, D)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-log-cuts-6>LOG_CUTS_6</a></strong>(CUTS, A, B, C, D, E)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-log-cuts-7>LOG_CUTS_7</a></strong>(CUTS, A, B, C, D, E, F)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-log-cuts-8>LOG_CUTS_8</a></strong>(CUTS, A, B, C, D, E, F, G)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-log-cuts-9>LOG_CUTS_9</a></strong>(CUTS, A, B, C, D, E, F, G, H)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-log-cuts-10>LOG_CUTS_10</a></strong>(CUTS, A, B, C, D, E, F, G, H, I)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-log-cuts-11>LOG_CUTS_11</a></strong>(CUTS, A, B, C, D, E, F, G, H, I, J)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-log-cuts>LOG_CUTS</a></strong>(&mldr;)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-log-cuts-n>LOG_CUTS_N</a></strong>(CUTS, SR, N)</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-fill-signal-region>FILL_SIGNAL_REGION</a></strong>(NAME)<br>Fill signal region and cutflow.</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-commit-signal-region>COMMIT_SIGNAL_REGION</a></strong>(NAME, OBS, BKG_CENTRAL, BKG_ERR)<br>Commit values for the signal region: predictions, observed and backgrounds.</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-commit-covariance-matrix>COMMIT_COVARIANCE_MATRIX</a></strong>(COV)<br>Commit a covariance matrix.</td></tr><tr><td></td><td><strong><a href=/documentation/code/files/analysismacros_8hpp/#define-commit-cutflows>COMMIT_CUTFLOWS</a></strong><br>Commit cutflows.</td></tr></tbody></table><h2 id=detailed-description>Detailed Description <a href=#detailed-description class=anchor aria-hidden=true>#</a></h2><p><strong>Author</strong>: Tomas Gonzalo (<a href=mailto:tomas.gonzalo@kit.edu>tomas.gonzalo@kit.edu</a>)</p><p><strong>Date</strong>: 2023 July, Aug</p><p>Macros for ColliderBit analyses. These macros define an analysis language that simplify writing analyses and avoid code repetition.</p><hr><p>Authors (add name and date if you modify):</p><hr><h2 id=macros-documentation>Macros Documentation <a href=#macros-documentation class=anchor aria-hidden=true>#</a></h2><h3 id=define-etamin>define ETAMIN <a href=#define-etamin class=anchor aria-hidden=true>#</a></h3><pre><code>#define ETAMIN 0
+</code></pre><p>Min and max values of eta and pT.</p><h3 id=define-ptmin>define PTMIN <a href=#define-ptmin class=anchor aria-hidden=true>#</a></h3><pre><code>#define PTMIN 0
+</code></pre><h3 id=define-etamax>define ETAMAX <a href=#define-etamax class=anchor aria-hidden=true>#</a></h3><pre><code>#define ETAMAX DBL_MAX
+</code></pre><h3 id=define-ptmax>define PTMAX <a href=#define-ptmax class=anchor aria-hidden=true>#</a></h3><pre><code>#define PTMAX DBL_MAX
+</code></pre><h3 id=define-baseline-objects-3>define BASELINE_OBJECTS_3 <a href=#define-baseline-objects-3 class=anchor aria-hidden=true>#</a></h3><pre><code>#define BASELINE_OBJECTS_3(
+    TYPE,
+    OBJECTS,
+    NAME
+)
+  std::vector&lt;const HEPUtils::TYPE*&gt; NAME;                                        \
+  for (const HEPUtils::TYPE* object : OBJECTS)                                    \
+  {                                                                               \
+    NAME.push_back(object);                                                       \
+  }
+</code></pre><p>Define baseline objects without cuts.</p><h3 id=define-baseline-objects-5>define BASELINE_OBJECTS_5 <a href=#define-baseline-objects-5 class=anchor aria-hidden=true>#</a></h3><pre><code>#define BASELINE_OBJECTS_5(
+    TYPE,
+    OBJECTS,
+    NAME,
+    MINPT,
+    MINETA
+)
+  std::vector&lt;const HEPUtils::TYPE*&gt; NAME;                                        \
+  for (const HEPUtils::TYPE* object : OBJECTS)                                    \
+  {                                                                               \
+    if (object-&gt;pT() &gt; MINPT and                                                  \
+        fabs(object-&gt;eta()) &gt; MINETA)                                             \
+    {                                                                             \
+      NAME.push_back(object);                                                     \
+    }                                                                             \
+  }
+</code></pre><p>Define baseline objects with min pT and min eta.</p><h3 id=define-baseline-objects-6>define BASELINE_OBJECTS_6 <a href=#define-baseline-objects-6 class=anchor aria-hidden=true>#</a></h3><pre><code>#define BASELINE_OBJECTS_6(
+    TYPE,
+    OBJECTS,
+    NAME,
+    MINPT,
+    MINETA,
+    EFF
+)
+  std::vector&lt;const HEPUtils::TYPE*&gt; NAME;                                        \
+  for (const HEPUtils::TYPE* object : OBJECTS)                                    \
+  {                                                                               \
+    if (object-&gt;pT() &gt; MINPT and                                                  \
+        fabs(object-&gt;eta()) &gt; MINETA and                                          \
+        has_tag(EFF, fabs(object-&gt;eta()), object-&gt;pT()))                          \
+    {                                                                             \
+      NAME.push_back(object);                                                     \
+    }                                                                             \
+  }
+</code></pre><p>Define baseline objects with min pT, min eta and selection efficiency.</p><h3 id=define-baseline-objects-7>define BASELINE_OBJECTS_7 <a href=#define-baseline-objects-7 class=anchor aria-hidden=true>#</a></h3><pre><code>#define BASELINE_OBJECTS_7(
+    TYPE,
+    OBJECTS,
+    NAME,
+    MINPT,
+    MINETA,
+    MAXPT,
+    MAXETA
+)
+  std::vector&lt;const HEPUtils::TYPE*&gt; NAME;                                        \
+  for (const HEPUtils::TYPE* object : OBJECTS)                                    \
+  {                                                                               \
+    if(object-&gt;pT() &gt; MINPT and                                                   \
+       object-&gt;pT() &lt; MAXPT and                                                   \
+       fabs(object-&gt;eta()) &gt; MINETA and                                           \
+       fabs(object-&gt;eta()) &lt; MAXETA)                                              \
+    {                                                                             \
+      NAME.push_back(object);                                                     \
+    }                                                                             \
+  }
+</code></pre><p>Define baseline objects with min pT, min eta, max pT and max eta.</p><h3 id=define-baseline-objects-8>define BASELINE_OBJECTS_8 <a href=#define-baseline-objects-8 class=anchor aria-hidden=true>#</a></h3><pre><code>#define BASELINE_OBJECTS_8(
+    TYPE,
+    OBJECTS,
+    NAME,
+    MINPT,
+    MINETA,
+    MAXPT,
+    MAXETA,
+    EFF
+)
+  std::vector&lt;const HEPUtils::TYPE*&gt; NAME;                                        \
+  for (const HEPUtils::TYPE* object : OBJECTS)                                    \
+  {                                                                               \
+    if (object-&gt;pT() &gt; MINPT and                                                  \
+        object-&gt;pT() &lt; MAXPT and                                                  \
+        fabs(object-&gt;eta()) &gt; MINETA and                                          \
+        fabs(object-&gt;eta()) &lt; MAXETA and                                          \
+        has_tag(EFF, fabs(object-&gt;eta()), object-&gt;pT()))                          \
+    {                                                                             \
+      NAME.push_back(object);                                                     \
+    }                                                                             \
+  }
+</code></pre><p>Define baseline objects with min pT, min eta, max pT, max eta and selection efficiency.</p><h3 id=define-baseline-particles-2>define BASELINE_PARTICLES_2 <a href=#define-baseline-particles-2 class=anchor aria-hidden=true>#</a></h3><pre><code>#define BASELINE_PARTICLES_2(
+    OBJECTS,
+    NAME
+)
+BASELINE_OBJECTS_3(Particle, OBJECTS, NAME)
+</code></pre><p>Define baseline particles without cuts.</p><h3 id=define-baseline-particles-4>define BASELINE_PARTICLES_4 <a href=#define-baseline-particles-4 class=anchor aria-hidden=true>#</a></h3><pre><code>#define BASELINE_PARTICLES_4(
+    OBJECTS,
+    NAME,
+    MINPT,
+    MINETA
+)
+BASELINE_OBJECTS_5(Particle, OBJECTS, NAME, MINPT, MINETA)
+</code></pre><p>Define baseline particles with min pT and min et.</p><h3 id=define-baseline-particles-5>define BASELINE_PARTICLES_5 <a href=#define-baseline-particles-5 class=anchor aria-hidden=true>#</a></h3><pre><code>#define BASELINE_PARTICLES_5(
+    OBJECTS,
+    NAME,
+    MINPT,
+    MINETA,
+    EFF
+)
+BASELINE_OBJECTS_6(Particle, OBJECTS, NAME, MINPT, MINETA, EFF)
+</code></pre><p>Define baseline particles with min pT, min eta and selection efficiency.</p><h3 id=define-baseline-particles-6>define BASELINE_PARTICLES_6 <a href=#define-baseline-particles-6 class=anchor aria-hidden=true>#</a></h3><pre><code>#define BASELINE_PARTICLES_6(
+    OBJECTS,
+    NAME,
+    MINPT,
+    MINETA,
+    MAXPT,
+    MAXETA
+)
+BASELINE_OBJECTS_7(Particle, OBJECTS, NAME, MINPT, MINETA, MAXPT, MAXETA)
+</code></pre><p>Define baseline particles with min pT, min eta, max pT and max eta.</p><h3 id=define-baseline-particles-7>define BASELINE_PARTICLES_7 <a href=#define-baseline-particles-7 class=anchor aria-hidden=true>#</a></h3><pre><code>#define BASELINE_PARTICLES_7(
+    OBJECTS,
+    NAME,
+    MINPT,
+    MINETA,
+    MAXPT,
+    MAXETA,
+    EFF
+)
+BASELINE_OBJECTS_8(Particle, OBJECTS, NAME, MINPT, MINETA, MAXPT, MAXETA, EFF)
+</code></pre><p>Define baseline particles with min pT, min eta, max pT, max eta and selection efficiency.</p><h3 id=define-baseline-jets-2>define BASELINE_JETS_2 <a href=#define-baseline-jets-2 class=anchor aria-hidden=true>#</a></h3><pre><code>#define BASELINE_JETS_2(
+    OBJECTS,
+    NAME
+)
+BASELINE_OBJECTS_3(Jet, OBJECTS, NAME)
+</code></pre><p>Define baseline jets without cuts.</p><h3 id=define-baseline-jets-4>define BASELINE_JETS_4 <a href=#define-baseline-jets-4 class=anchor aria-hidden=true>#</a></h3><pre><code>#define BASELINE_JETS_4(
+    OBJECTS,
+    NAME,
+    MINPT,
+    MINETA
+)
+BASELINE_OBJECTS_5(Jet, OBJECTS, NAME, MINPT, MINETA)
+</code></pre><p>Define baseline jets with a min pT and a min eta.</p><h3 id=define-baseline-jets-5>define BASELINE_JETS_5 <a href=#define-baseline-jets-5 class=anchor aria-hidden=true>#</a></h3><pre><code>#define BASELINE_JETS_5(
+    OBJECTS,
+    NAME,
+    MINPT,
+    MINETA,
+    EFF
+)
+BASELINE_OBJECTS_6(Jet, OBJECTS, NAME, MINPT, MINETA, EFF)
+</code></pre><p>Define baseline jets with a min pT, a min eta and selection efficiency.</p><h3 id=define-baseline-jets-6>define BASELINE_JETS_6 <a href=#define-baseline-jets-6 class=anchor aria-hidden=true>#</a></h3><pre><code>#define BASELINE_JETS_6(
+    OBJECTS,
+    NAME,
+    MINPT,
+    MINETA,
+    MAXPT,
+    MAXETA
+)
+BASELINE_OBJECTS_7(Jet, OBJECTS, NAME, MINPT, MINETA, MAXPT, MAXETA)
+</code></pre><p>Define baseline jets with a min pT, a min eta, max pT and max eta.</p><h3 id=define-baseline-jets-7>define BASELINE_JETS_7 <a href=#define-baseline-jets-7 class=anchor aria-hidden=true>#</a></h3><pre><code>#define BASELINE_JETS_7(
+    OBJECTS,
+    NAME,
+    MINPT,
+    MINETA,
+    MAXPT,
+    MAXETA,
+    EFF
+)
+BASELINE_OBJECTS_8(Jet, OBJECTS, NAME, MINPT, MINETA, MAXPT, MAXETA, EFF)
+</code></pre><p>Define baseline jets with a min pT, a min eta, max pT, max eta and selection efficiency.</p><h3 id=define-baseline-particles>define BASELINE_PARTICLES <a href=#define-baseline-particles class=anchor aria-hidden=true>#</a></h3><pre><code>#define BASELINE_PARTICLES(
+    ...
+)
+VARARG(BASELINE_PARTICLES, __VA_ARGS__)
+</code></pre><p>Redirection macro.</p><h3 id=define-baseline-jets>define BASELINE_JETS <a href=#define-baseline-jets class=anchor aria-hidden=true>#</a></h3><pre><code>#define BASELINE_JETS(
+    ...
+)
+VARARG(BASELINE_JETS, __VA_ARGS__)
+</code></pre><h3 id=define-baseline-objects>define BASELINE_OBJECTS <a href=#define-baseline-objects class=anchor aria-hidden=true>#</a></h3><pre><code>#define BASELINE_OBJECTS(
+    ...
+)
+VARARG(BASELINE_OBJECTS, __VA_ARGS__)
+</code></pre><h3 id=define-baseline-bjets-4>define BASELINE_BJETS_4 <a href=#define-baseline-bjets-4 class=anchor aria-hidden=true>#</a></h3><pre><code>#define BASELINE_BJETS_4(
+    OBJECTS,
+    NAME,
+    MINPT,
+    MINETA
+)
+  std::vector&lt;const HEPUtils::Jet*&gt; NAME;                                         \
+  for (const HEPUtils::Jet* object : OBJECTS)                                     \
+  {                                                                               \
+    if (object-&gt;btag() and                                                        \
+        object-&gt;pT() &gt; MINPT and                                                  \
+        fabs(object-&gt;eta()) &gt; MINETA)                                             \
+    {                                                                             \
+      NAME.push_back(object);                                                     \
+    }                                                                             \
+  }
+</code></pre><p>Define baseline bjets with a min pT and a min eta.</p><h3 id=define-baseline-bjets-5>define BASELINE_BJETS_5 <a href=#define-baseline-bjets-5 class=anchor aria-hidden=true>#</a></h3><pre><code>#define BASELINE_BJETS_5(
+    OBJECTS,
+    NAME,
+    MINPT,
+    MINETA,
+    EFF
+)
+  std::vector&lt;const HEPUtils::Jet*&gt; NAME;                                         \
+  for (const HEPUtils::Jet* object : OBJECTS)                                     \
+  {                                                                               \
+    if (object-&gt;btag() and                                                        \
+        object-&gt;pT() &gt; MINPT and                                                  \
+        fabs(object-&gt;eta()) &gt; MINETA and                                          \
+        has_tag(EFF, fabs(object-&gt;eta()), object-&gt;pT()))                          \
+    {                                                                             \
+      NAME.push_back(object);                                                     \
+    }                                                                             \
+  }
+</code></pre><p>Define baseline bjets with a min pT, a min eta and selection efficiency.</p><h3 id=define-baseline-bjets-6>define BASELINE_BJETS_6 <a href=#define-baseline-bjets-6 class=anchor aria-hidden=true>#</a></h3><pre><code>#define BASELINE_BJETS_6(
+    OBJECTS,
+    NAME,
+    MINPT,
+    MINETA,
+    MAXPT,
+    MAXETA
+)
+  std::vector&lt;const HEPUtils::Jet*&gt; NAME;                                         \
+  for (const HEPUtils::Jet* object : OBJECTS)                                     \
+  {                                                                               \
+    if (object-&gt;btag() and                                                        \
+        object-&gt;pT() &gt; MINPT and                                                  \
+        object-&gt;pT() &lt; MAXPT and                                                  \
+        fabs(object-&gt;eta()) &gt; MINETA and                                          \
+        fabs(object-&gt;eta()) &lt; MAXETA)                                             \
+    {                                                                             \
+      NAME.push_back(object);                                                     \
+    }                                                                             \
+  }
+</code></pre><p>Define baseline bjets with a min pT, a min eta, a max pT and a max eta.</p><h3 id=define-baseline-bjets-7>define BASELINE_BJETS_7 <a href=#define-baseline-bjets-7 class=anchor aria-hidden=true>#</a></h3><pre><code>#define BASELINE_BJETS_7(
+    OBJECTS,
+    NAME,
+    MINPT,
+    MINETA,
+    MAXPT,
+    MAXETA,
+    EFF
+)
+  std::vector&lt;const HEPUtils::Jet*&gt; NAME;                                         \
+  for (const HEPUtils::Jet* object : OBJECTS)                                     \
+  {                                                                               \
+    if (object-&gt;btag() and                                                        \
+        object-&gt;pT() &gt; MINPT and                                                  \
+        object-&gt;pT() &lt; MAXPT and                                                  \
+        fabs(object-&gt;eta()) &gt; MINETA and                                          \
+        fabs(object-&gt;eta()) &lt; MAXETA and                                          \
+        has_tag(EFF, fabs(object-&gt;eta()), object-&gt;pT()))                          \
+    {                                                                             \
+      NAME.push_back(object);                                                     \
+    }                                                                             \
+  }
+</code></pre><p>Define baseline bjets with a min pT, a min eta, a max pT, a max eta and selection efficiency.</p><h3 id=define-baseline-bjets-8>define BASELINE_BJETS_8 <a href=#define-baseline-bjets-8 class=anchor aria-hidden=true>#</a></h3><pre><code>#define BASELINE_BJETS_8(
+    OBJECTS,
+    NAME,
+    MINPT,
+    MINETA,
+    MAXPT,
+    MAXETA,
+    EFF,
+    MISID
+)
+  std::vector&lt;const HEPUtils::Jet*&gt; NAME;                                         \
+  for (const HEPUtils::Jet* object : OBJECTS)                                     \
+  {                                                                               \
+    if ((object-&gt;btag() or has_tag(MISID)) and                                    \
+        object-&gt;pT() &gt; MINPT and                                                  \
+        object-&gt;pT() &lt; MAXPT and                                                  \
+        fabs(object-&gt;eta()) &gt; MINETA and                                          \
+        fabs(object-&gt;eta()) &lt; MAXETA and                                          \
+        has_tag(EFF, fabs(object-&gt;eta()), object-&gt;pT()))                          \
+    {                                                                             \
+      NAME.push_back(object);                                                     \
+    }                                                                             \
+  }
+</code></pre><p>Define baseline bjets with a min pT, a min eta, a max pT, a max eta, a selection efficiency and a misidentification efficiency</p><h3 id=define-baseline-bjets>define BASELINE_BJETS <a href=#define-baseline-bjets class=anchor aria-hidden=true>#</a></h3><pre><code>#define BASELINE_BJETS(
+    ...
+)
+VARARG(BASELINE_BJETS, __VA_ARGS__)
+</code></pre><h3 id=define-baseline-object-combination-8>define BASELINE_OBJECT_COMBINATION_8 <a href=#define-baseline-object-combination-8 class=anchor aria-hidden=true>#</a></h3><pre><code>#define BASELINE_OBJECT_COMBINATION_8(
+    TYPE,
+    TARGET,
+    OBJECT1,
+    OBJECT2,
+    MINPT,
+    MINETA,
+    MAXPT,
+    MAXETA
+)
+  std::vector&lt;const HEPUtils::TYPE*&gt; TARGET;                                      \
+  for(const HEPUtils::TYPE* obj1 : OBJECT1)                                       \
+  {                                                                               \
+    if(obj1-&gt;pT() &gt; MINPT and                                                     \
+       obj1-&gt;pT() &lt; MAXPT and                                                     \
+       fabs(obj1-&gt;eta()) &gt; MINETA and                                             \
+       fabs(obj1-&gt;eta()) &lt; MAXETA)                                                \
+    {                                                                             \
+      TARGET.push_back(obj1);                                                     \
+    }                                                                             \
+  }                                                                               \
+  for(const HEPUtils::TYPE* obj2 : OBJECT2)                                       \
+  {                                                                               \
+    if(obj2-&gt;pT() &gt; MINPT and                                                     \
+       obj2-&gt;pT() &lt; MAXPT and                                                     \
+       fabs(obj2-&gt;eta()) &gt; MINETA and                                             \
+       fabs(obj2-&gt;eta()) &lt; MAXETA)                                                \
+    {                                                                             \
+      TARGET.push_back(obj2);                                                     \
+    }                                                                             \
+  }
+</code></pre><p>Define a combination of baseline objects with pT and eta cuts.</p><h3 id=define-baseline-particle-combination-7>define BASELINE_PARTICLE_COMBINATION_7 <a href=#define-baseline-particle-combination-7 class=anchor aria-hidden=true>#</a></h3><pre><code>#define BASELINE_PARTICLE_COMBINATION_7(
+    TARGET,
+    OBJECT1,
+    OBJECT2,
+    MINPT,
+    MINETA,
+    MAXPT,
+    MAXETA
+)
+BASELINE_OBJECT_COMBINATION_8(Particle, TARGET, OBJECT1, OBJECT2, MINPT, MINETA, MAXPT, MAXETA)  \
+</code></pre><p>Define a combination of baseline particles with pT and eta cuts.</p><h3 id=define-baseline-jet-combination-7>define BASELINE_JET_COMBINATION_7 <a href=#define-baseline-jet-combination-7 class=anchor aria-hidden=true>#</a></h3><pre><code>#define BASELINE_JET_COMBINATION_7(
+    TARGET,
+    OBJECT1,
+    OBJECT2,
+    MINPT,
+    MINETA,
+    MAXPT,
+    MAXETA
+)
+BASELINE_OBJECT_COMBINATION_8(Jet, TARGET, OBJECT1, OBJECT2, MINPT, MINETA, MAXPT, MAXETA)  \
+</code></pre><p>Define a combination of baseline jets with pT and eta cuts.</p><h3 id=define-baseline-object-combination-4>define BASELINE_OBJECT_COMBINATION_4 <a href=#define-baseline-object-combination-4 class=anchor aria-hidden=true>#</a></h3><pre><code>#define BASELINE_OBJECT_COMBINATION_4(
+    TYPE,
+    TARGET,
+    OBJECT1,
+    OBJECT2
+)
+  std::vector&lt;const HEPUtils::TYPE*&gt; TARGET;                                      \
+  for(const HEPUtils::TYPE* obj1 : OBJECT1)                                       \
+    TARGET.push_back(obj1);                                                       \
+  for(const HEPUtils::TYPE* obj2 : OBJECT2)                                       \
+    TARGET.push_back(obj2);
+</code></pre><p>Define a combination of baseline objects.</p><h3 id=define-baseline-particle-combination-3>define BASELINE_PARTICLE_COMBINATION_3 <a href=#define-baseline-particle-combination-3 class=anchor aria-hidden=true>#</a></h3><pre><code>#define BASELINE_PARTICLE_COMBINATION_3(
+    TARGET,
+    OBJECT1,
+    OBJECT2
+)
+BASELINE_OBJECT_COMBINATION_4(Particle, TARGET, OBJECT1, OBJECT2)
+</code></pre><p>Define a combination of baseline particles.</p><h3 id=define-baseline-jet-combination-3>define BASELINE_JET_COMBINATION_3 <a href=#define-baseline-jet-combination-3 class=anchor aria-hidden=true>#</a></h3><pre><code>#define BASELINE_JET_COMBINATION_3(
+    TARGET,
+    OBJECT1,
+    OBJECT2
+)
+BASELINE_OBJECT_COMBINATION_4(Jet, TARGET, OBJECT1, OBJECT2)
+</code></pre><p>Define a combination of baseline jets.</p><h3 id=define-baseline-particle-combination>define BASELINE_PARTICLE_COMBINATION <a href=#define-baseline-particle-combination class=anchor aria-hidden=true>#</a></h3><pre><code>#define BASELINE_PARTICLE_COMBINATION(
+    ...
+)
+VARARG(BASELINE_PARTICLE_COMBINATION, __VA_ARGS__)
+</code></pre><p>Redirection macro.</p><h3 id=define-baseline-jet-combination>define BASELINE_JET_COMBINATION <a href=#define-baseline-jet-combination class=anchor aria-hidden=true>#</a></h3><pre><code>#define BASELINE_JET_COMBINATION(
+    ...
+)
+VARARG(BASELINE_JET_COMBINATION, __VA_ARGS__)
+</code></pre><h3 id=define-baseline-object-combination>define BASELINE_OBJECT_COMBINATION <a href=#define-baseline-object-combination class=anchor aria-hidden=true>#</a></h3><pre><code>#define BASELINE_OBJECT_COMBINATION(
+    ...
+)
+VARARG(BASELINE_OBJECT_COMBINATION, __VA_ARGS__)
+</code></pre><h3 id=define-signal-objects-8>define SIGNAL_OBJECTS_8 <a href=#define-signal-objects-8 class=anchor aria-hidden=true>#</a></h3><pre><code>#define SIGNAL_OBJECTS_8(
+    TYPE,
+    BASELINE,
+    SIGNAL,
+    SORTED,
+    MINPT,
+    MINETA,
+    MAXPT,
+    MAXETA
+)
+  std::vector&lt;const HEPUtils::TYPE*&gt; SIGNAL;                                      \
+  for (const HEPUtils::TYPE* object : BASELINE)                                   \
+  {                                                                               \
+    if (object-&gt;pT() &gt; MINPT and                                                  \
+        object-&gt;pT() &lt; MAXPT and                                                  \
+        fabs(object-&gt;eta()) &gt; MINETA and                                          \
+        fabs(object-&gt;eta()) &lt; MAXETA)                                             \
+    {                                                                             \
+      SIGNAL.push_back(object);                                                   \
+    }                                                                             \
+  }                                                                               \
+  if(SORTED) sortByPt(SIGNAL);
+</code></pre><p>Define (potentially sorted) signal objects from baseline objects with pT and eta cuts.</p><h3 id=define-signal-particles-7>define SIGNAL_PARTICLES_7 <a href=#define-signal-particles-7 class=anchor aria-hidden=true>#</a></h3><pre><code>#define SIGNAL_PARTICLES_7(
+    BASELINE,
+    SIGNAL,
+    SORTED,
+    MINPT,
+    MINETA,
+    MAXPT,
+    MAXETA
+)
+SIGNAL_OBJECTS_8(Particle, BASELINE, SIGNAL, SORTED, MINPT, MINETA, MAXPT, MAXETA)   \
+</code></pre><p>Define (potentially sorted) signal particles from baseline particles with pT and eta cuts.</p><h3 id=define-signal-jets-7>define SIGNAL_JETS_7 <a href=#define-signal-jets-7 class=anchor aria-hidden=true>#</a></h3><pre><code>#define SIGNAL_JETS_7(
+    BASELINE,
+    SIGNAL,
+    SORTED,
+    MINPT,
+    MINETA,
+    MAXPT,
+    MAXETA
+)
+SIGNAL_OBJECTS_8(Jet, BASELINE, SIGNAL, SORTED, MINPT, MINETA, MAXPT, MAXETA)   \
+</code></pre><p>Define (potentially sorted) signal jets from baseline jets with pT and eta cuts.</p><h3 id=define-signal-objects-4>define SIGNAL_OBJECTS_4 <a href=#define-signal-objects-4 class=anchor aria-hidden=true>#</a></h3><pre><code>#define SIGNAL_OBJECTS_4(
+    TYPE,
+    BASELINE,
+    SIGNAL,
+    SORTED
+)
+  std::vector&lt;const HEPUtils::TYPE*&gt; SIGNAL(BASELINE);                            \
+  if(SORTED) sortByPt(SIGNAL);
+</code></pre><p>Define (potentially sorted) signal objects from baseline objects.</p><h3 id=define-signal-particles-3>define SIGNAL_PARTICLES_3 <a href=#define-signal-particles-3 class=anchor aria-hidden=true>#</a></h3><pre><code>#define SIGNAL_PARTICLES_3(
+    BASELINE,
+    SIGNAL,
+    SORTED
+)
+SIGNAL_OBJECTS_4(Particle, BASELINE, SIGNAL, SORTED)                            \
+</code></pre><p>Define a (potentially sorted) signal particles from baseline particles.</p><h3 id=define-signal-jets-3>define SIGNAL_JETS_3 <a href=#define-signal-jets-3 class=anchor aria-hidden=true>#</a></h3><pre><code>#define SIGNAL_JETS_3(
+    BASELINE,
+    SIGNAL,
+    SORTED
+)
+SIGNAL_OBJECTS_4(Jet, BASELINE, SIGNAL, SORTED)
+</code></pre><p>Define a (potentially sorted) signal jets from a baseline jets.</p><h3 id=define-signal-objects-3>define SIGNAL_OBJECTS_3 <a href=#define-signal-objects-3 class=anchor aria-hidden=true>#</a></h3><pre><code>#define SIGNAL_OBJECTS_3(
+    TYPE,
+    BASELINE,
+    SIGNAL
+)
+SIGNAL_OBJECTS_4(TYPE, BASELINE, SIGNAL, 1)
+</code></pre><p>Define a sorted signal objects from a baseline objects.</p><h3 id=define-signal-particles-2>define SIGNAL_PARTICLES_2 <a href=#define-signal-particles-2 class=anchor aria-hidden=true>#</a></h3><pre><code>#define SIGNAL_PARTICLES_2(
+    BASELINE,
+    SIGNAL
+)
+SIGNAL_OBJECTS_3(Particle, BASELINE, SIGNAL)
+</code></pre><p>Define sorted signal particles from baseline particles.</p><h3 id=define-signal-jets-2>define SIGNAL_JETS_2 <a href=#define-signal-jets-2 class=anchor aria-hidden=true>#</a></h3><pre><code>#define SIGNAL_JETS_2(
+    BASELINE,
+    SIGNAL
+)
+SIGNAL_OBJECTS_3(Jet, BASELINE, SIGNAL)
+</code></pre><p>Define a signal jets from a baseline jets.</p><h3 id=define-signal-particles>define SIGNAL_PARTICLES <a href=#define-signal-particles class=anchor aria-hidden=true>#</a></h3><pre><code>#define SIGNAL_PARTICLES(
+    ...
+)
+VARARG(SIGNAL_PARTICLES, __VA_ARGS__)
+</code></pre><p>Redirection macros.</p><h3 id=define-signal-jets>define SIGNAL_JETS <a href=#define-signal-jets class=anchor aria-hidden=true>#</a></h3><pre><code>#define SIGNAL_JETS(
+    ...
+)
+VARARG(SIGNAL_JETS, __VA_ARGS__)
+</code></pre><h3 id=define-signal-objects>define SIGNAL_OBJECTS <a href=#define-signal-objects class=anchor aria-hidden=true>#</a></h3><pre><code>#define SIGNAL_OBJECTS(
+    ...
+)
+VARARG(SIGNAL_OBJECTS, __VA_ARGS__)
+</code></pre><h3 id=define-signal-object-combination>define SIGNAL_OBJECT_COMBINATION <a href=#define-signal-object-combination class=anchor aria-hidden=true>#</a></h3><pre><code>#define SIGNAL_OBJECT_COMBINATION(
+    TYPE,
+    TARGET,
+    OBJECT1,
+    OBJECT2
+)
+  std::vector&lt;const HEPUtils::TYPE*&gt; TARGET = OBJECT1;                            \
+  TARGET.insert(TARGET.end(), OBJECT2.begin(), OBJECT2.end());                    \
+  sortByPt(TARGET);
+</code></pre><p>Define a combination of signal objects.</p><h3 id=define-signal-particle-combination>define SIGNAL_PARTICLE_COMBINATION <a href=#define-signal-particle-combination class=anchor aria-hidden=true>#</a></h3><pre><code>#define SIGNAL_PARTICLE_COMBINATION(
+    TARGET,
+    OBJECT1,
+    OBJECT2
+)
+SIGNAL_OBJECT_COMBINATION(Particle, TARGET, OBJECT1, OBJECT2)
+</code></pre><p>Define a combination of signal particles.</p><h3 id=define-signal-jet-combination>define SIGNAL_JET_COMBINATION <a href=#define-signal-jet-combination class=anchor aria-hidden=true>#</a></h3><pre><code>#define SIGNAL_JET_COMBINATION(
+    TARGET,
+    OBJECT1,
+    OBJECT2
+)
+SIGNAL_OBJECT_COMBINATION(Jet, TARGET, OBJECT1, OBJECT2)
+</code></pre><p>Define a combination of signal jets.</p><h3 id=define-create-pair>define CREATE_PAIR <a href=#define-create-pair class=anchor aria-hidden=true>#</a></h3><pre><code>#define CREATE_PAIR(
+    TYPE,
+    SOURCE,
+    CONTAINER,
+    UNIQUE
+)
+  typedef std::vector&lt;std::vector&lt;const HEPUtils::Particle*&gt;&gt; ParticleContainer;  \
+  ParticleContainer CONTAINER = CAT_3(get,TYPE,pairs)(SOURCE);                    \
+  if(UNIQUE)                                                                      \
+    uniquePairs(CONTAINER);
+</code></pre><p>Types of predefined pairs.</p><p>Create a container for pairs</p><h3 id=define-begin-preselection>define BEGIN_PRESELECTION <a href=#define-begin-preselection class=anchor aria-hidden=true>#</a></h3><pre><code>#define BEGIN_PRESELECTION   _cutflows.fillinit(event-&gt;weight());
+</code></pre><p>Preselection, at the start initialize cutflows, at the end fill preselection cutflow.</p><h3 id=define-end-preselection>define END_PRESELECTION <a href=#define-end-preselection class=anchor aria-hidden=true>#</a></h3><pre><code>#define END_PRESELECTION   _cutflows.fillnext(event-&gt;weight());
+</code></pre><h3 id=define-log-cut-1>define LOG_CUT_1 <a href=#define-log-cut-1 class=anchor aria-hidden=true>#</a></h3><pre><code>#define LOG_CUT_1(
+    A
+)
+_cutflows[A].fillnext(event-&gt;weight());
+</code></pre><p>Log current event for one or more signal regions.</p><h3 id=define-log-cut-2>define LOG_CUT_2 <a href=#define-log-cut-2 class=anchor aria-hidden=true>#</a></h3><pre><code>#define LOG_CUT_2(
+    A,
+    B
+)
+LOG_CUT_1(A) LOG_CUT_1(B)
+</code></pre><h3 id=define-log-cut-3>define LOG_CUT_3 <a href=#define-log-cut-3 class=anchor aria-hidden=true>#</a></h3><pre><code>#define LOG_CUT_3(
+    A,
+    B,
+    C
+)
+LOG_CUT_1(A) LOG_CUT_2(B,C)
+</code></pre><h3 id=define-log-cut-4>define LOG_CUT_4 <a href=#define-log-cut-4 class=anchor aria-hidden=true>#</a></h3><pre><code>#define LOG_CUT_4(
+    A,
+    B,
+    C,
+    D
+)
+LOG_CUT_1(A) LOG_CUT_3(B,C,D)
+</code></pre><h3 id=define-log-cut-5>define LOG_CUT_5 <a href=#define-log-cut-5 class=anchor aria-hidden=true>#</a></h3><pre><code>#define LOG_CUT_5(
+    A,
+    B,
+    C,
+    D,
+    E
+)
+LOG_CUT_1(A) LOG_CUT_4(B,C,D,E)
+</code></pre><h3 id=define-log-cut-6>define LOG_CUT_6 <a href=#define-log-cut-6 class=anchor aria-hidden=true>#</a></h3><pre><code>#define LOG_CUT_6(
+    A,
+    B,
+    C,
+    D,
+    E,
+    F
+)
+LOG_CUT_1(A) LOG_CUT_5(B,C,D,E,F)
+</code></pre><h3 id=define-log-cut-7>define LOG_CUT_7 <a href=#define-log-cut-7 class=anchor aria-hidden=true>#</a></h3><pre><code>#define LOG_CUT_7(
+    A,
+    B,
+    C,
+    D,
+    E,
+    F,
+    G
+)
+LOG_CUT_1(A) LOG_CUT_6(B,C,D,E,F,G)
+</code></pre><h3 id=define-log-cut-8>define LOG_CUT_8 <a href=#define-log-cut-8 class=anchor aria-hidden=true>#</a></h3><pre><code>#define LOG_CUT_8(
+    A,
+    B,
+    C,
+    D,
+    E,
+    F,
+    G,
+    H
+)
+LOG_CUT_1(A) LOG_CUT_7(B,C,D,E,F,G,H)
+</code></pre><h3 id=define-log-cut-9>define LOG_CUT_9 <a href=#define-log-cut-9 class=anchor aria-hidden=true>#</a></h3><pre><code>#define LOG_CUT_9(
+    A,
+    B,
+    C,
+    D,
+    E,
+    F,
+    G,
+    H,
+    I
+)
+LOG_CUT_1(A) LOG_CUT_8(B,C,D,E,F,G,H,I)
+</code></pre><h3 id=define-log-cut-10>define LOG_CUT_10 <a href=#define-log-cut-10 class=anchor aria-hidden=true>#</a></h3><pre><code>#define LOG_CUT_10(
+    A,
+    B,
+    C,
+    D,
+    E,
+    F,
+    G,
+    H,
+    I,
+    J
+)
+LOG_CUT_1(A) LOG_CUT_9(B,C,D,E,F,G,H,I,J)
+</code></pre><h3 id=define-log-cut>define LOG_CUT <a href=#define-log-cut class=anchor aria-hidden=true>#</a></h3><pre><code>#define LOG_CUT(
+    ...
+)
+VARARG(LOG_CUT, __VA_ARGS__)
+</code></pre><h3 id=define-log-cut-n>define LOG_CUT_N <a href=#define-log-cut-n class=anchor aria-hidden=true>#</a></h3><pre><code>#define LOG_CUT_N(
+    SR,
+    N
+)
+  for(size_t i=1; i&lt;=N; ++i)                                                      \
+  {                                                                               \
+    str basename(SR);                                                             \
+    str name = basename + std::to_string(i);                                      \
+    _cutflows[name].fillnext(event-&gt;weight());                                    \
+  }
+</code></pre><h3 id=define-log-cuts-2>define LOG_CUTS_2 <a href=#define-log-cuts-2 class=anchor aria-hidden=true>#</a></h3><pre><code>#define LOG_CUTS_2(
+    CUTS,
+    A
+)
+_cutflows[A].fillnext(CUTS,event-&gt;weight());
+</code></pre><h3 id=define-log-cuts-3>define LOG_CUTS_3 <a href=#define-log-cuts-3 class=anchor aria-hidden=true>#</a></h3><pre><code>#define LOG_CUTS_3(
+    CUTS,
+    A,
+    B
+)
+LOG_CUTS_2(CUTS,A) LOG_CUTS_2(CUTS,B)
+</code></pre><h3 id=define-log-cuts-4>define LOG_CUTS_4 <a href=#define-log-cuts-4 class=anchor aria-hidden=true>#</a></h3><pre><code>#define LOG_CUTS_4(
+    CUTS,
+    A,
+    B,
+    C
+)
+LOG_CUTS_2(CUTS,A) LOG_CUTS_3(CUTS,B,C)
+</code></pre><h3 id=define-log-cuts-5>define LOG_CUTS_5 <a href=#define-log-cuts-5 class=anchor aria-hidden=true>#</a></h3><pre><code>#define LOG_CUTS_5(
+    CUTS,
+    A,
+    B,
+    C,
+    D
+)
+LOG_CUTS_2(CUTS,A) LOG_CUTS_4(CUTS,B,C,D)
+</code></pre><h3 id=define-log-cuts-6>define LOG_CUTS_6 <a href=#define-log-cuts-6 class=anchor aria-hidden=true>#</a></h3><pre><code>#define LOG_CUTS_6(
+    CUTS,
+    A,
+    B,
+    C,
+    D,
+    E
+)
+LOG_CUTS_2(CUTS,A) LOG_CUTS_5(CUTS,B,C,D,E)
+</code></pre><h3 id=define-log-cuts-7>define LOG_CUTS_7 <a href=#define-log-cuts-7 class=anchor aria-hidden=true>#</a></h3><pre><code>#define LOG_CUTS_7(
+    CUTS,
+    A,
+    B,
+    C,
+    D,
+    E,
+    F
+)
+LOG_CUTS_2(CUTS,A) LOG_CUTS_6(CUTS,B,C,D,E,F)
+</code></pre><h3 id=define-log-cuts-8>define LOG_CUTS_8 <a href=#define-log-cuts-8 class=anchor aria-hidden=true>#</a></h3><pre><code>#define LOG_CUTS_8(
+    CUTS,
+    A,
+    B,
+    C,
+    D,
+    E,
+    F,
+    G
+)
+LOG_CUTS_2(CUTS,A) LOG_CUTS_7(CUTS,B,C,D,E,F,G)
+</code></pre><h3 id=define-log-cuts-9>define LOG_CUTS_9 <a href=#define-log-cuts-9 class=anchor aria-hidden=true>#</a></h3><pre><code>#define LOG_CUTS_9(
+    CUTS,
+    A,
+    B,
+    C,
+    D,
+    E,
+    F,
+    G,
+    H
+)
+LOG_CUTS_2(CUTS,A) LOG_CUTS_8(CUTS,B,C,D,E,F,G,H)
+</code></pre><h3 id=define-log-cuts-10>define LOG_CUTS_10 <a href=#define-log-cuts-10 class=anchor aria-hidden=true>#</a></h3><pre><code>#define LOG_CUTS_10(
+    CUTS,
+    A,
+    B,
+    C,
+    D,
+    E,
+    F,
+    G,
+    H,
+    I
+)
+LOG_CUTS_2(CUTS,A) LOG_CUTS_9(CUTS,B,C,D,E,F,G,H,I)
+</code></pre><h3 id=define-log-cuts-11>define LOG_CUTS_11 <a href=#define-log-cuts-11 class=anchor aria-hidden=true>#</a></h3><pre><code>#define LOG_CUTS_11(
+    CUTS,
+    A,
+    B,
+    C,
+    D,
+    E,
+    F,
+    G,
+    H,
+    I,
+    J
+)
+LOG_CUTS_2(CUTS,A) LOG_CUTS_10(CUTS,B,C,D,E,F,G,H,I,J)
+</code></pre><h3 id=define-log-cuts>define LOG_CUTS <a href=#define-log-cuts class=anchor aria-hidden=true>#</a></h3><pre><code>#define LOG_CUTS(
+    ...
+)
+VARARG(LOG_CUTS, __VA_ARGS__)
+</code></pre><h3 id=define-log-cuts-n>define LOG_CUTS_N <a href=#define-log-cuts-n class=anchor aria-hidden=true>#</a></h3><pre><code>#define LOG_CUTS_N(
+    CUTS,
+    SR,
+    N
+)
+  for(size_t i=1; i&lt;=N; ++i)                                                      \
+  {                                                                               \
+    str basename(SR);                                                             \
+    str name = basename + std::to_string(i);                                      \
+    _cutflows[name].fillnext(CUTS,event-&gt;weight());                               \
+  }
+</code></pre><h3 id=define-fill-signal-region>define FILL_SIGNAL_REGION <a href=#define-fill-signal-region class=anchor aria-hidden=true>#</a></h3><pre><code>#define FILL_SIGNAL_REGION(
+    NAME
+)
+  _cutflows[NAME].fillnext(event-&gt;weight());                                      \
+  _counters.at(NAME).add_event(event);
+</code></pre><p>Fill signal region and cutflow.</p><h3 id=define-commit-signal-region>define COMMIT_SIGNAL_REGION <a href=#define-commit-signal-region class=anchor aria-hidden=true>#</a></h3><pre><code>#define COMMIT_SIGNAL_REGION(
+    NAME,
+    OBS,
+    BKG_CENTRAL,
+    BKG_ERR
+)
+  add_result(SignalRegionData(_counters.at(NAME), OBS, {BKG_CENTRAL, BKG_ERR}));
+</code></pre><p>Commit values for the signal region: predictions, observed and backgrounds.</p><h3 id=define-commit-covariance-matrix>define COMMIT_COVARIANCE_MATRIX <a href=#define-commit-covariance-matrix class=anchor aria-hidden=true>#</a></h3><pre><code>#define COMMIT_COVARIANCE_MATRIX(
+    COV
+)
+  set_covariance(COV);
+</code></pre><p>Commit a covariance matrix.</p><h3 id=define-commit-cutflows>define COMMIT_CUTFLOWS <a href=#define-commit-cutflows class=anchor aria-hidden=true>#</a></h3><pre><code>#define COMMIT_CUTFLOWS   add_cutflows(_cutflows);
+</code></pre><p>Commit cutflows.</p><h2 id=source-code>Source code <a href=#source-code class=anchor aria-hidden=true>#</a></h2><pre><code>//   GAMBIT: Global and Modular BSM Inference Tool
+//   *********************************************
+///  \file
+///
+///  Macros for ColliderBit analyses.
+///  These macros define an analysis language that
+///  simplify writing analyses and avoid code
+///  repetition.
+///
+///  *********************************************
+///
+///  Authors (add name and date if you modify):
+///
+///  \author Tomas Gonzalo
+///          (tomas.gonzalo@kit.edu)
+///  \date 2023 July, Aug
+///
+///  *********************************************
+
+#pragma once
+
+/// Min and max values of eta and pT
+#define ETAMIN 0
+#define PTMIN 0
+#define ETAMAX DBL_MAX
+#define PTMAX DBL_MAX
+
+/// Define baseline objects without cuts
+#define BASELINE_OBJECTS_3(TYPE, OBJECTS, NAME)                                   \
+  std::vector&lt;const HEPUtils::TYPE*&gt; NAME;                                        \
+  for (const HEPUtils::TYPE* object : OBJECTS)                                    \
+  {                                                                               \
+    NAME.push_back(object);                                                       \
+  }
+
+/// Define baseline objects with min pT and min eta
+#define BASELINE_OBJECTS_5(TYPE, OBJECTS, NAME, MINPT, MINETA)                    \
+  std::vector&lt;const HEPUtils::TYPE*&gt; NAME;                                        \
+  for (const HEPUtils::TYPE* object : OBJECTS)                                    \
+  {                                                                               \
+    if (object-&gt;pT() &gt; MINPT and                                                  \
+        fabs(object-&gt;eta()) &gt; MINETA)                                             \
+    {                                                                             \
+      NAME.push_back(object);                                                     \
+    }                                                                             \
+  }
+
+/// Define baseline objects with min pT, min eta and selection efficiency
+#define BASELINE_OBJECTS_6(TYPE, OBJECTS, NAME, MINPT, MINETA, EFF)               \
+  std::vector&lt;const HEPUtils::TYPE*&gt; NAME;                                        \
+  for (const HEPUtils::TYPE* object : OBJECTS)                                    \
+  {                                                                               \
+    if (object-&gt;pT() &gt; MINPT and                                                  \
+        fabs(object-&gt;eta()) &gt; MINETA and                                          \
+        has_tag(EFF, fabs(object-&gt;eta()), object-&gt;pT()))                          \
+    {                                                                             \
+      NAME.push_back(object);                                                     \
+    }                                                                             \
+  }
+
+/// Define baseline objects with min pT, min eta, max pT and max eta
+#define BASELINE_OBJECTS_7(TYPE, OBJECTS, NAME, MINPT, MINETA, MAXPT, MAXETA)     \
+  std::vector&lt;const HEPUtils::TYPE*&gt; NAME;                                        \
+  for (const HEPUtils::TYPE* object : OBJECTS)                                    \
+  {                                                                               \
+    if(object-&gt;pT() &gt; MINPT and                                                   \
+       object-&gt;pT() &lt; MAXPT and                                                   \
+       fabs(object-&gt;eta()) &gt; MINETA and                                           \
+       fabs(object-&gt;eta()) &lt; MAXETA)                                              \
+    {                                                                             \
+      NAME.push_back(object);                                                     \
+    }                                                                             \
+  }
+
+/// Define baseline objects with min pT, min eta, max pT, max eta and selection efficiency
+#define BASELINE_OBJECTS_8(TYPE, OBJECTS, NAME, MINPT, MINETA, MAXPT, MAXETA, EFF) \
+  std::vector&lt;const HEPUtils::TYPE*&gt; NAME;                                        \
+  for (const HEPUtils::TYPE* object : OBJECTS)                                    \
+  {                                                                               \
+    if (object-&gt;pT() &gt; MINPT and                                                  \
+        object-&gt;pT() &lt; MAXPT and                                                  \
+        fabs(object-&gt;eta()) &gt; MINETA and                                          \
+        fabs(object-&gt;eta()) &lt; MAXETA and                                          \
+        has_tag(EFF, fabs(object-&gt;eta()), object-&gt;pT()))                          \
+    {                                                                             \
+      NAME.push_back(object);                                                     \
+    }                                                                             \
+  }
+
+/// Define baseline particles without cuts
+#define BASELINE_PARTICLES_2(OBJECTS, NAME)                                       \
+  BASELINE_OBJECTS_3(Particle, OBJECTS, NAME)
+
+/// Define baseline particles with min pT and min et
+#define BASELINE_PARTICLES_4(OBJECTS, NAME, MINPT, MINETA)                         \
+  BASELINE_OBJECTS_5(Particle, OBJECTS, NAME, MINPT, MINETA)
+
+/// Define baseline particles with min pT, min eta and selection efficiency
+#define BASELINE_PARTICLES_5(OBJECTS, NAME, MINPT, MINETA, EFF)                    \
+  BASELINE_OBJECTS_6(Particle, OBJECTS, NAME, MINPT, MINETA, EFF)
+
+/// Define baseline particles with min pT, min eta, max pT and max eta
+#define BASELINE_PARTICLES_6(OBJECTS, NAME, MINPT, MINETA, MAXPT, MAXETA)          \
+  BASELINE_OBJECTS_7(Particle, OBJECTS, NAME, MINPT, MINETA, MAXPT, MAXETA)
+
+/// Define baseline particles with min pT, min eta, max pT, max eta and selection efficiency
+#define BASELINE_PARTICLES_7(OBJECTS, NAME, MINPT, MINETA, MAXPT, MAXETA, EFF)     \
+  BASELINE_OBJECTS_8(Particle, OBJECTS, NAME, MINPT, MINETA, MAXPT, MAXETA, EFF)
+
+/// Define baseline jets without cuts
+#define BASELINE_JETS_2(OBJECTS, NAME)                                             \
+  BASELINE_OBJECTS_3(Jet, OBJECTS, NAME)
+
+/// Define baseline jets with a min pT and a min eta
+#define BASELINE_JETS_4(OBJECTS, NAME, MINPT, MINETA)                              \
+  BASELINE_OBJECTS_5(Jet, OBJECTS, NAME, MINPT, MINETA)
+
+/// Define baseline jets with a min pT, a min eta and selection efficiency
+#define BASELINE_JETS_5(OBJECTS, NAME, MINPT, MINETA, EFF)                         \
+  BASELINE_OBJECTS_6(Jet, OBJECTS, NAME, MINPT, MINETA, EFF)
+
+/// Define baseline jets with a min pT, a min eta, max pT and max eta
+#define BASELINE_JETS_6(OBJECTS, NAME, MINPT, MINETA, MAXPT, MAXETA)               \
+  BASELINE_OBJECTS_7(Jet, OBJECTS, NAME, MINPT, MINETA, MAXPT, MAXETA)
+
+/// Define baseline jets with a min pT, a min eta, max pT, max eta and selection efficiency
+#define BASELINE_JETS_7(OBJECTS, NAME, MINPT, MINETA, MAXPT, MAXETA, EFF)          \
+  BASELINE_OBJECTS_8(Jet, OBJECTS, NAME, MINPT, MINETA, MAXPT, MAXETA, EFF)
+
+/// Redirection macro
+#define BASELINE_PARTICLES(...)      VARARG(BASELINE_PARTICLES, __VA_ARGS__)
+#define BASELINE_JETS(...)           VARARG(BASELINE_JETS, __VA_ARGS__)
+#define BASELINE_OBJECTS(...)        VARARG(BASELINE_OBJECTS, __VA_ARGS__)
+
+/// Define baseline bjets with a min pT and a min eta
+#define BASELINE_BJETS_4(OBJECTS, NAME, MINPT, MINETA)                            \
+  std::vector&lt;const HEPUtils::Jet*&gt; NAME;                                         \
+  for (const HEPUtils::Jet* object : OBJECTS)                                     \
+  {                                                                               \
+    if (object-&gt;btag() and                                                        \
+        object-&gt;pT() &gt; MINPT and                                                  \
+        fabs(object-&gt;eta()) &gt; MINETA)                                             \
+    {                                                                             \
+      NAME.push_back(object);                                                     \
+    }                                                                             \
+  }
+
+/// Define baseline bjets with a min pT, a min eta and selection efficiency
+#define BASELINE_BJETS_5(OBJECTS, NAME, MINPT, MINETA, EFF)                       \
+  std::vector&lt;const HEPUtils::Jet*&gt; NAME;                                         \
+  for (const HEPUtils::Jet* object : OBJECTS)                                     \
+  {                                                                               \
+    if (object-&gt;btag() and                                                        \
+        object-&gt;pT() &gt; MINPT and                                                  \
+        fabs(object-&gt;eta()) &gt; MINETA and                                          \
+        has_tag(EFF, fabs(object-&gt;eta()), object-&gt;pT()))                          \
+    {                                                                             \
+      NAME.push_back(object);                                                     \
+    }                                                                             \
+  }
+
+/// Define baseline bjets with a min pT, a min eta, a max pT and a max eta
+#define BASELINE_BJETS_6(OBJECTS, NAME, MINPT, MINETA, MAXPT, MAXETA)             \
+  std::vector&lt;const HEPUtils::Jet*&gt; NAME;                                         \
+  for (const HEPUtils::Jet* object : OBJECTS)                                     \
+  {                                                                               \
+    if (object-&gt;btag() and                                                        \
+        object-&gt;pT() &gt; MINPT and                                                  \
+        object-&gt;pT() &lt; MAXPT and                                                  \
+        fabs(object-&gt;eta()) &gt; MINETA and                                          \
+        fabs(object-&gt;eta()) &lt; MAXETA)                                             \
+    {                                                                             \
+      NAME.push_back(object);                                                     \
+    }                                                                             \
+  }
+
+/// Define baseline bjets with a min pT, a min eta, a max pT, a max eta and selection efficiency
+#define BASELINE_BJETS_7(OBJECTS, NAME, MINPT, MINETA, MAXPT, MAXETA, EFF)        \
+  std::vector&lt;const HEPUtils::Jet*&gt; NAME;                                         \
+  for (const HEPUtils::Jet* object : OBJECTS)                                     \
+  {                                                                               \
+    if (object-&gt;btag() and                                                        \
+        object-&gt;pT() &gt; MINPT and                                                  \
+        object-&gt;pT() &lt; MAXPT and                                                  \
+        fabs(object-&gt;eta()) &gt; MINETA and                                          \
+        fabs(object-&gt;eta()) &lt; MAXETA and                                          \
+        has_tag(EFF, fabs(object-&gt;eta()), object-&gt;pT()))                          \
+    {                                                                             \
+      NAME.push_back(object);                                                     \
+    }                                                                             \
+  }
+
+/// Define baseline bjets with a min pT, a min eta, a max pT, a max eta,
+/// a selection efficiency and a misidentification efficiency
+#define BASELINE_BJETS_8(OBJECTS, NAME, MINPT, MINETA, MAXPT, MAXETA, EFF, MISID) \
+  std::vector&lt;const HEPUtils::Jet*&gt; NAME;                                         \
+  for (const HEPUtils::Jet* object : OBJECTS)                                     \
+  {                                                                               \
+    if ((object-&gt;btag() or has_tag(MISID)) and                                    \
+        object-&gt;pT() &gt; MINPT and                                                  \
+        object-&gt;pT() &lt; MAXPT and                                                  \
+        fabs(object-&gt;eta()) &gt; MINETA and                                          \
+        fabs(object-&gt;eta()) &lt; MAXETA and                                          \
+        has_tag(EFF, fabs(object-&gt;eta()), object-&gt;pT()))                          \
+    {                                                                             \
+      NAME.push_back(object);                                                     \
+    }                                                                             \
+  }
+
+
+#define BASELINE_BJETS(...)          VARARG(BASELINE_BJETS, __VA_ARGS__)
+
+
+/// Define a combination of baseline objects with pT and eta cuts
+#define BASELINE_OBJECT_COMBINATION_8(TYPE, TARGET, OBJECT1, OBJECT2, MINPT, MINETA, MAXPT, MAXETA)  \
+  std::vector&lt;const HEPUtils::TYPE*&gt; TARGET;                                      \
+  for(const HEPUtils::TYPE* obj1 : OBJECT1)                                       \
+  {                                                                               \
+    if(obj1-&gt;pT() &gt; MINPT and                                                     \
+       obj1-&gt;pT() &lt; MAXPT and                                                     \
+       fabs(obj1-&gt;eta()) &gt; MINETA and                                             \
+       fabs(obj1-&gt;eta()) &lt; MAXETA)                                                \
+    {                                                                             \
+      TARGET.push_back(obj1);                                                     \
+    }                                                                             \
+  }                                                                               \
+  for(const HEPUtils::TYPE* obj2 : OBJECT2)                                       \
+  {                                                                               \
+    if(obj2-&gt;pT() &gt; MINPT and                                                     \
+       obj2-&gt;pT() &lt; MAXPT and                                                     \
+       fabs(obj2-&gt;eta()) &gt; MINETA and                                             \
+       fabs(obj2-&gt;eta()) &lt; MAXETA)                                                \
+    {                                                                             \
+      TARGET.push_back(obj2);                                                     \
+    }                                                                             \
+  }
+
+/// Define a combination of baseline particles with pT and eta cuts
+#define BASELINE_PARTICLE_COMBINATION_7(TARGET, OBJECT1, OBJECT2, MINPT, MINETA, MAXPT, MAXETA)  \
+  BASELINE_OBJECT_COMBINATION_8(Particle, TARGET, OBJECT1, OBJECT2, MINPT, MINETA, MAXPT, MAXETA)  \
+
+/// Define a combination of baseline jets with pT and eta cuts
+#define BASELINE_JET_COMBINATION_7(TARGET, OBJECT1, OBJECT2, MINPT, MINETA, MAXPT, MAXETA)  \
+  BASELINE_OBJECT_COMBINATION_8(Jet, TARGET, OBJECT1, OBJECT2, MINPT, MINETA, MAXPT, MAXETA)  \
+
+/// Define a combination of baseline objects
+#define BASELINE_OBJECT_COMBINATION_4(TYPE, TARGET, OBJECT1, OBJECT2)             \
+  std::vector&lt;const HEPUtils::TYPE*&gt; TARGET;                                      \
+  for(const HEPUtils::TYPE* obj1 : OBJECT1)                                       \
+    TARGET.push_back(obj1);                                                       \
+  for(const HEPUtils::TYPE* obj2 : OBJECT2)                                       \
+    TARGET.push_back(obj2);
+
+/// Define a combination of baseline particles
+#define BASELINE_PARTICLE_COMBINATION_3(TARGET, OBJECT1, OBJECT2)                   \
+  BASELINE_OBJECT_COMBINATION_4(Particle, TARGET, OBJECT1, OBJECT2)
+
+/// Define a combination of baseline jets
+#define BASELINE_JET_COMBINATION_3(TARGET, OBJECT1, OBJECT2)                        \
+  BASELINE_OBJECT_COMBINATION_4(Jet, TARGET, OBJECT1, OBJECT2)
+
+/// Redirection macro
+#define BASELINE_PARTICLE_COMBINATION(...)     VARARG(BASELINE_PARTICLE_COMBINATION, __VA_ARGS__)
+#define BASELINE_JET_COMBINATION(...)          VARARG(BASELINE_JET_COMBINATION, __VA_ARGS__)
+#define BASELINE_OBJECT_COMBINATION(...)       VARARG(BASELINE_OBJECT_COMBINATION, __VA_ARGS__)
+
+/// Define (potentially sorted) signal objects from baseline objects with pT and eta cuts
+#define SIGNAL_OBJECTS_8(TYPE, BASELINE, SIGNAL, SORTED, MINPT, MINETA, MAXPT, MAXETA)   \
+  std::vector&lt;const HEPUtils::TYPE*&gt; SIGNAL;                                      \
+  for (const HEPUtils::TYPE* object : BASELINE)                                   \
+  {                                                                               \
+    if (object-&gt;pT() &gt; MINPT and                                                  \
+        object-&gt;pT() &lt; MAXPT and                                                  \
+        fabs(object-&gt;eta()) &gt; MINETA and                                          \
+        fabs(object-&gt;eta()) &lt; MAXETA)                                             \
+    {                                                                             \
+      SIGNAL.push_back(object);                                                   \
+    }                                                                             \
+  }                                                                               \
+  if(SORTED) sortByPt(SIGNAL);
+
+/// Define (potentially sorted) signal particles from baseline particles with pT and eta cuts
+#define SIGNAL_PARTICLES_7(BASELINE, SIGNAL, SORTED, MINPT, MINETA, MAXPT, MAXETA)     \
+  SIGNAL_OBJECTS_8(Particle, BASELINE, SIGNAL, SORTED, MINPT, MINETA, MAXPT, MAXETA)   \
+
+/// Define (potentially sorted) signal jets from baseline jets with pT and eta cuts
+#define SIGNAL_JETS_7(BASELINE, SIGNAL, SORTED, MINPT, MINETA, MAXPT, MAXETA)     \
+  SIGNAL_OBJECTS_8(Jet, BASELINE, SIGNAL, SORTED, MINPT, MINETA, MAXPT, MAXETA)   \
+
+/// Define (potentially sorted) signal objects from baseline objects
+#define SIGNAL_OBJECTS_4(TYPE, BASELINE, SIGNAL, SORTED)                          \
+  std::vector&lt;const HEPUtils::TYPE*&gt; SIGNAL(BASELINE);                            \
+  if(SORTED) sortByPt(SIGNAL);
+
+/// Define a (potentially sorted) signal particles from baseline particles
+#define SIGNAL_PARTICLES_3(BASELINE, SIGNAL, SORTED)                              \
+  SIGNAL_OBJECTS_4(Particle, BASELINE, SIGNAL, SORTED)                            \
+
+/// Define a (potentially sorted) signal jets from a baseline jets
+#define SIGNAL_JETS_3(BASELINE, SIGNAL, SORTED)                                   \
+  SIGNAL_OBJECTS_4(Jet, BASELINE, SIGNAL, SORTED)
+
+/// Define a sorted signal objects from a baseline objects
+#define SIGNAL_OBJECTS_3(TYPE, BASELINE, SIGNAL)                                  \
+  SIGNAL_OBJECTS_4(TYPE, BASELINE, SIGNAL, 1)
+
+/// Define sorted signal particles from baseline particles
+#define SIGNAL_PARTICLES_2(BASELINE, SIGNAL)                                      \
+  SIGNAL_OBJECTS_3(Particle, BASELINE, SIGNAL)
+
+/// Define a signal jets from a baseline jets
+#define SIGNAL_JETS_2(BASELINE, SIGNAL)                                           \
+  SIGNAL_OBJECTS_3(Jet, BASELINE, SIGNAL)
+
+/// Redirection macros
+#define SIGNAL_PARTICLES(...)    VARARG(SIGNAL_PARTICLES, __VA_ARGS__)
+#define SIGNAL_JETS(...)         VARARG(SIGNAL_JETS, __VA_ARGS__)
+#define SIGNAL_OBJECTS(...)      VARARG(SIGNAL_OBJECTS, __VA_ARGS__)
+
+/// Define a combination of signal objects
+#define SIGNAL_OBJECT_COMBINATION(TYPE, TARGET, OBJECT1, OBJECT2)                 \
+  std::vector&lt;const HEPUtils::TYPE*&gt; TARGET = OBJECT1;                            \
+  TARGET.insert(TARGET.end(), OBJECT2.begin(), OBJECT2.end());                    \
+  sortByPt(TARGET);
+
+/// Define a combination of signal particles
+#define SIGNAL_PARTICLE_COMBINATION(TARGET, OBJECT1, OBJECT2)                     \
+  SIGNAL_OBJECT_COMBINATION(Particle, TARGET, OBJECT1, OBJECT2)
+
+/// Define a combination of signal jets
+#define SIGNAL_JET_COMBINATION(TARGET, OBJECT1, OBJECT2)                          \
+  SIGNAL_OBJECT_COMBINATION(Jet, TARGET, OBJECT1, OBJECT2)
+
+/// Types of predefined pairs
+/*#define OS    1  // opposite sign
+#define SS    2  // same sign
+#define SF    3  // same flavour
+#define OSSF  4  // opposite sign, same flavour
+#define SSSF  5  // ssame sign, same flavour
+*/
+/// Create a container for pairs
+#define CREATE_PAIR(TYPE, SOURCE, CONTAINER, UNIQUE)                              \
+  typedef std::vector&lt;std::vector&lt;const HEPUtils::Particle*&gt;&gt; ParticleContainer;  \
+  ParticleContainer CONTAINER = CAT_3(get,TYPE,pairs)(SOURCE);                    \
+  if(UNIQUE)                                                                      \
+    uniquePairs(CONTAINER);
+
+/// Preselection, at the start initialize cutflows, at the end fill preselection cutflow
+#define BEGIN_PRESELECTION                                                        \
+  _cutflows.fillinit(event-&gt;weight());
+
+#define END_PRESELECTION                                                          \
+  _cutflows.fillnext(event-&gt;weight());
+
+/// Log current event for one or more signal regions
+#define LOG_CUT_1(A)                      _cutflows[A].fillnext(event-&gt;weight());
+#define LOG_CUT_2(A,B)                    LOG_CUT_1(A) LOG_CUT_1(B)
+#define LOG_CUT_3(A,B,C)                  LOG_CUT_1(A) LOG_CUT_2(B,C)
+#define LOG_CUT_4(A,B,C,D)                LOG_CUT_1(A) LOG_CUT_3(B,C,D)
+#define LOG_CUT_5(A,B,C,D,E)              LOG_CUT_1(A) LOG_CUT_4(B,C,D,E)
+#define LOG_CUT_6(A,B,C,D,E,F)            LOG_CUT_1(A) LOG_CUT_5(B,C,D,E,F)
+#define LOG_CUT_7(A,B,C,D,E,F,G)          LOG_CUT_1(A) LOG_CUT_6(B,C,D,E,F,G)
+#define LOG_CUT_8(A,B,C,D,E,F,G,H)        LOG_CUT_1(A) LOG_CUT_7(B,C,D,E,F,G,H)
+#define LOG_CUT_9(A,B,C,D,E,F,G,H,I)      LOG_CUT_1(A) LOG_CUT_8(B,C,D,E,F,G,H,I)
+#define LOG_CUT_10(A,B,C,D,E,F,G,H,I,J)   LOG_CUT_1(A) LOG_CUT_9(B,C,D,E,F,G,H,I,J)
+#define LOG_CUT(...)                      VARARG(LOG_CUT, __VA_ARGS__)
+
+// Log specific cuts for a sequential list of signal regions
+#define LOG_CUT_N(SR, N)                                                          \
+  for(size_t i=1; i&lt;=N; ++i)                                                      \
+  {                                                                               \
+    str basename(SR);                                                             \
+    str name = basename + std::to_string(i);                                      \
+    _cutflows[name].fillnext(event-&gt;weight());                                    \
+  }
+
+
+// Log specific cuts for one or more signal region
+#define LOG_CUTS_2(CUTS,A)                     _cutflows[A].fillnext(CUTS,event-&gt;weight());
+#define LOG_CUTS_3(CUTS,A,B)                   LOG_CUTS_2(CUTS,A) LOG_CUTS_2(CUTS,B)
+#define LOG_CUTS_4(CUTS,A,B,C)                 LOG_CUTS_2(CUTS,A) LOG_CUTS_3(CUTS,B,C)
+#define LOG_CUTS_5(CUTS,A,B,C,D)               LOG_CUTS_2(CUTS,A) LOG_CUTS_4(CUTS,B,C,D)
+#define LOG_CUTS_6(CUTS,A,B,C,D,E)             LOG_CUTS_2(CUTS,A) LOG_CUTS_5(CUTS,B,C,D,E)
+#define LOG_CUTS_7(CUTS,A,B,C,D,E,F)           LOG_CUTS_2(CUTS,A) LOG_CUTS_6(CUTS,B,C,D,E,F)
+#define LOG_CUTS_8(CUTS,A,B,C,D,E,F,G)         LOG_CUTS_2(CUTS,A) LOG_CUTS_7(CUTS,B,C,D,E,F,G)
+#define LOG_CUTS_9(CUTS,A,B,C,D,E,F,G,H)       LOG_CUTS_2(CUTS,A) LOG_CUTS_8(CUTS,B,C,D,E,F,G,H)
+#define LOG_CUTS_10(CUTS,A,B,C,D,E,F,G,H,I)    LOG_CUTS_2(CUTS,A) LOG_CUTS_9(CUTS,B,C,D,E,F,G,H,I)
+#define LOG_CUTS_11(CUTS,A,B,C,D,E,F,G,H,I,J)  LOG_CUTS_2(CUTS,A) LOG_CUTS_10(CUTS,B,C,D,E,F,G,H,I,J)
+#define LOG_CUTS(...)                          VARARG(LOG_CUTS, __VA_ARGS__)
+
+// Log specific cuts for a sequential list of signal regions
+#define LOG_CUTS_N(CUTS, SR, N)                                                   \
+  for(size_t i=1; i&lt;=N; ++i)                                                      \
+  {                                                                               \
+    str basename(SR);                                                             \
+    str name = basename + std::to_string(i);                                      \
+    _cutflows[name].fillnext(CUTS,event-&gt;weight());                               \
+  }
+
+
+/// Fill signal region and cutflow
+#define FILL_SIGNAL_REGION(NAME)                                                  \
+  _cutflows[NAME].fillnext(event-&gt;weight());                                      \
+  _counters.at(NAME).add_event(event);
+
+/// Commit values for the signal region: predictions, observed and backgrounds
+#define COMMIT_SIGNAL_REGION(NAME, OBS, BKG_CENTRAL, BKG_ERR)                     \
+  add_result(SignalRegionData(_counters.at(NAME), OBS, {BKG_CENTRAL, BKG_ERR}));
+
+/// Commit a covariance matrix
+#define COMMIT_COVARIANCE_MATRIX(COV)                                             \
+  set_covariance(COV);
+
+/// Commit cutflows
+#define COMMIT_CUTFLOWS                                                           \
+  add_cutflows(_cutflows);
+</code></pre><hr><p>Updated on 2026-11-03 at 14:50:47 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.d5e27a6ed00168b7a66eb637878a6be7d054db51d0e613bbcfda12ab0569b62177253b4e6453c477574b3a38f50eff49a68f0e19112bd82a68c78a66cd8d05df.js integrity="sha512-1eJ6btABaLembrY3h4pr59BU21HQ5hO7z9oSqwVptiF3JTtOZFPEd1dLOjj1Dv9Jpo8OGREr2Cpox4pmzY0F3w==" crossorigin=anonymous defer></script>
+<script src=/js/highlight.min.9003483b4531b86467c8b801b1d5fc5439bb0d6bdb6c6a760a1b54abf37d6bbadf8423dbc81a3359c935c7705bb7d183b46131ba4a9c861b5d48e6a61501461a.js integrity="sha512-kANIO0UxuGRnyLgBsdX8VDm7DWvbbGp2ChtUq/N9a7rfhCPbyBozWck1x3Bbt9GDtGExukqchhtdSOamFQFGGg==" crossorigin=anonymous defer></script>
+<script src=/main.min.9342d29d0e3e250a2c03282306b766e004888dba0fd661a17d7b106655e013bf85733f086ad330e3df0929c713dd81c0ea835966fa92e4a1e38f7ea9680524ed.js integrity="sha512-k0LSnQ4+JQosAygjBrdm4ASIjboP1mGhfXsQZlXgE7+Fcz8IatMw498JKccT3YHA6oNZZvqS5KHjj36paAUk7Q==" crossorigin=anonymous defer></script>
+<script src=https://gambitbsm.org/index.min.3a8ee06d0c346f1fb70040b0fbcbaaacf335cb34023c408954406a05db2089fc2ca349119b9f7d68b9e7044e82b8fdc8bd9661b6ef8b118246c5a2079d7fa8e9.js integrity="sha512-Oo7gbQw0bx+3AECw+8uqrPM1yzQCPECJVEBqBdsgifwso0kRm599aLnnBE6CuP3IvZZhtu+LEYJGxaIHnX+o6Q==" crossorigin=anonymous defer></script></body></html>

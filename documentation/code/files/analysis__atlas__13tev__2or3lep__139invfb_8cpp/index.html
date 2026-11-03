@@ -1,0 +1,797 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="ie=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><link rel=preload as=font href=https://gambitbsm.org/fonts/vendor/jost/jost-v4-latin-regular.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://gambitbsm.org/fonts/vendor/jost/jost-v4-latin-500.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://gambitbsm.org/fonts/vendor/jost/jost-v4-latin-700.woff2 type=font/woff2 crossorigin><script>(()=>{var e=localStorage.getItem("theme");e==="dark"&&document.documentElement.setAttribute("data-dark-mode","")})()</script><link rel=stylesheet href=https://gambitbsm.org/main.c1f0838e2cac2d5bb45c4f51eac5017d94b53e71f279f5ef925be54abda180b5ad4c9a5384f3c141e772c408e3f24bd9c50c11e6b79424a45ac99a0d112b5f29.css integrity="sha512-wfCDjiysLVu0XE9R6sUBfZS1PnHyefXvklvlSr2hgLWtTJpThPPBQedyxAjj8kvZxQwR5reUJKRayZoNEStfKQ==" crossorigin=anonymous><noscript><style>img.lazyload{display:none}</style></noscript><meta name=robots content="index, follow"><meta name=googlebot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><meta name=bingbot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><title>file analyses/Analysis_ATLAS_13TeV_2OR3LEP_139invfb.cpp - GAMBIT</title><meta name=description content="[No description available]"><link rel=canonical href=https://gambitbsm.org/documentation/code/files/analysis__atlas__13tev__2or3lep__139invfb_8cpp/><meta property="og:locale" content="en_US"><meta property="og:type" content="article"><meta property="og:title" content="file analyses/Analysis_ATLAS_13TeV_2OR3LEP_139invfb.cpp"><meta property="og:description" content="[No description available]"><meta property="og:url" content="https://gambitbsm.org/documentation/code/files/analysis__atlas__13tev__2or3lep__139invfb_8cpp/"><meta property="og:site_name" content="GAMBIT"><meta property="og:image" content="https://gambitbsm.org/gambit_logo.png"><meta property="og:image:alt" content="GAMBIT"><meta name=twitter:card content="summary_large_image"><meta name=twitter:site content><meta name=twitter:creator content><meta name=twitter:title content="file analyses/Analysis_ATLAS_13TeV_2OR3LEP_139invfb.cpp"><meta name=twitter:description content="[No description available]"><meta name=twitter:image content="https://gambitbsm.org/gambit_logo.png"><meta name=twitter:image:alt content="file analyses/Analysis_ATLAS_13TeV_2OR3LEP_139invfb.cpp"><script type=application/ld+json>{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://gambitbsm.org/#/schema/organization/1","name":"Doks","url":"https://gambitbsm.org/","sameAs":["https://github.com/GambitBSM"],"logo":{"@type":"ImageObject","@id":"https://gambitbsm.org/#/schema/image/1","url":"https://gambitbsm.org/logo-doks.png","width":450,"height":416,"caption":"Doks"},"image":{"@id":"https://gambitbsm.org/#/schema/image/1"}},{"@type":"WebSite","@id":"https://gambitbsm.org/#/schema/website/1","url":"https://gambitbsm.org/","name":"GAMBIT","description":"Documentation for GAMBIT, the Global And Modular BSM Inference Tool","publisher":{"@id":"https://gambitbsm.org/#/schema/organization/1"}},{"@type":"WebPage","@id":"https://gambitbsm.org/documentation/code/files/analysis__atlas__13tev__2or3lep__139invfb_8cpp/","url":"https://gambitbsm.org/documentation/code/files/analysis__atlas__13tev__2or3lep__139invfb_8cpp/","name":"file analyses\/Analysis_ATLAS_13TeV_2OR3LEP_139invfb.cpp","description":"[No description available]","isPartOf":{"@id":"https://gambitbsm.org/#/schema/website/1"},"about":{"@id":"https://gambitbsm.org/#/schema/organization/1"},"datePublished":"0001-01-01T00:00:00CET","dateModified":"0001-01-01T00:00:00CET","breadcrumb":{"@id":"https://gambitbsm.org/documentation/code/files/analysis__atlas__13tev__2or3lep__139invfb_8cpp/#/schema/breadcrumb/1"},"primaryImageOfPage":{"@id":"https://gambitbsm.org/documentation/code/files/analysis__atlas__13tev__2or3lep__139invfb_8cpp/#/schema/image/2"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://gambitbsm.org/documentation/code/files/analysis__atlas__13tev__2or3lep__139invfb_8cpp/"]}]},{"@type":"BreadcrumbList","@id":"https://gambitbsm.org/documentation/code/files/analysis__atlas__13tev__2or3lep__139invfb_8cpp/#/schema/breadcrumb/1","name":"Breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"https://gambitbsm.org/","url":"https://gambitbsm.org/","name":"Home"}},{"@type":"ListItem","position":2,"item":{"@type":"WebPage","@id":"https://gambitbsm.org/documentation/","url":"https://gambitbsm.org/documentation/","name":"Documentation"}},{"@type":"ListItem","position":3,"item":{"@type":"WebPage","@id":"https://gambitbsm.org/documentation/code/","url":"https://gambitbsm.org/documentation/code/","name":"Code"}},{"@type":"ListItem","position":4,"item":{"@type":"WebPage","@id":"https://gambitbsm.org/documentation/code/files/","url":"https://gambitbsm.org/documentation/code/files/","name":"Files"}},{"@type":"ListItem","position":5,"item":{"@id":"https://gambitbsm.org/documentation/code/files/analysis__atlas__13tev__2or3lep__139invfb_8cpp/"}}]},{"@context":"https://schema.org","@graph":[{"@type":"ImageObject","@id":"https://gambitbsm.org/documentation/code/files/analysis__atlas__13tev__2or3lep__139invfb_8cpp/#/schema/image/2","url":"https://gambitbsm.org/gambit_logo.png","contentUrl":"https://gambitbsm.org/gambit_logo.png","caption":"file analyses\/Analysis_ATLAS_13TeV_2OR3LEP_139invfb.cpp"}]}]}</script><meta name=theme-color content="#fff"><link rel=icon href=https://gambitbsm.org/favicon.ico sizes=any><link rel=icon type=image/svg+xml href=https://gambitbsm.org/favicon.svg><link rel=apple-touch-icon sizes=180x180 href=https://gambitbsm.org/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=https://gambitbsm.org/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=https://gambitbsm.org/favicon-16x16.png><link rel=manifest crossorigin=use-credentials href=https://gambitbsm.org/site.webmanifest></head><body class="documentation single light"><div class=sticky-top><div class=header-bar></div><header class="navbar navbar-expand-md navbar-light doks-navbar"><nav class="container-xxl flex-wrap flex-md-nowrap" aria-label="Main navigation"><a class="navbar-brand p-0 me-auto" href=https://gambitbsm.org/ aria-label=GAMBIT><img class=logo-light src=https://gambitbsm.org/gambit_logo.png width=50px>
+<img class="logo-dark d-none" src=https://gambitbsm.org/gambit_logo.png width=50px>
+GAMBIT</a>
+<button class="btn btn-menu order-2 d-block d-lg-none" type=button data-bs-toggle=offcanvas data-bs-target=#offcanvasDoks aria-controls=offcanvasDoks aria-label="Open main menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button><div class="offcanvas offcanvas-end border-0 py-lg-1" tabindex=-1 id=offcanvasDoks data-bs-backdrop=true aria-labelledby=offcanvasDoksLabel><div class="header-bar d-lg-none"></div><div class="offcanvas-header d-lg-none"><h2 class="h5 offcanvas-title ps-2" id=offcanvasDoksLabel><a class=text-dark href=/>GAMBIT</a></h2><button type=button class="btn-close text-reset me-2" data-bs-dismiss=offcanvas aria-label="Close main menu"></button></div><div class="offcanvas-body p-4 p-lg-0"><ul class="nav flex-column flex-lg-row align-items-lg-center mt-2 mt-lg-0 ms-lg-2 me-lg-auto"><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Releases
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit/tree/release_2.7>GAMBIT 2-7 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.6>GAMBIT 2-6 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.5>GAMBIT 2-5 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.4>GAMBIT 2-4 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.3>GAMBIT 2-3 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.2>GAMBIT 2-2 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.1>GAMBIT 2-1 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_light_1.0>GAMBIT Light ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit/tags>All releases ⧉</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Documentation
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=/documentation/installation/introduction/>Installation</a></li><li><a class=dropdown-item href=/documentation/physics/analyses>Physics</a></li><li><a class=dropdown-item href=/documentation/tutorials/the_gambit_interface>Tutorials</a></li><li><a class=dropdown-item href=/documentation/help/common_problems_and_questions/>Help</a></li><li><a class=dropdown-item href=/documentation/code/index_classes>Code Reference</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Community
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=https://github.com/GambitBSM/wiki>Wiki</a></li><li><a class=dropdown-item href=/community/publications/>Publications</a></li><li><a class=dropdown-item href=/community/talks/>Talks</a></li><li><a class=dropdown-item href=/community/members/>Members</a></li><li><a class=dropdown-item href=/community/code_of_conduct/>Code of Conduct</a></li><li><a class=dropdown-item href=/community/contact/>Contact</a></li></ul></li></ul><hr class="text-black-50 my-4 d-lg-none"><form class="doks-search position-relative flex-grow-1 ms-lg-auto me-lg-2"><input id=search class="form-control is-search" type=search placeholder="Search site..." aria-label="Search site..." autocomplete=off><div id=suggestions class="shadow bg-white rounded d-none"></div></form><hr class="text-black-50 my-4 d-lg-none"><ul class="nav flex-column flex-lg-row"><li class=nav-item><a class="nav-link social-link" href=https://github.com/GambitBSM><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37.0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44.0 0020 4.77 5.07 5.07.0 0019.91 1S18.73.65 16 2.48a13.38 13.38.0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07.0 005 4.77 5.44 5.44.0 003.5 8.55c0 5.42 3.3 6.61 6.44 7A3.37 3.37.0 009 18.13V22"/></svg><small class="ms-2 d-lg-none">GitHub</small></a></li></ul><hr class="text-black-50 my-4 d-lg-none"><button id=mode class="btn btn-link" type=button aria-label="Toggle user interface mode">
+<span class=toggle-dark><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg></span><span class=toggle-light><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></span></button></div></div></nav></header></div><div class="wrap container-xxl" role=document><div class=content><div class="row flex-xl-nowrap"><div class="col-lg-5 col-xl-4 docs-sidebar"><nav class=docs-links aria-label="Main navigation"><ul class="list-unstyled collapsible-sidebar"><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-installation aria-expanded=false>
+Installation</button><div class=collapse id=section-installation><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/installation/introduction/>Getting Started</a></li><li><a class="docs-link rounded" href=/documentation/installation/docker_usage/>Docker Usage</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_linux/>Installation for Linux</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_windows/>Installation for Windows</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_macos/>Installation for macOS</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-tutorials aria-expanded=false>
+Tutorials</button><div class=collapse id=section-tutorials><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/tutorials/the_gambit_interface/>1 - The GAMBIT Interface</a></li><li><a class="docs-link rounded" href=/documentation/tutorials/in_person_tutorials/>In person tutorials</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-physics aria-expanded=false>
+Physics</button><div class=collapse id=section-physics><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/physics/analyses/>ColliderBit analysis</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-help aria-expanded=false>
+Help</button><div class=collapse id=section-help><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/help/common_problems_and_questions/>Common Problems and Questions</a></li><li><a class="docs-link rounded" href=/documentation/help/compiler_matrix/>Compiler Matrix</a></li><li><a class="docs-link rounded" href=/documentation/help/known_issues/>Known Issues</a></li><li><a class="docs-link rounded" href=/documentation/help/configuration_examples/>Configuration Examples</a></li><li><a class="docs-link rounded" href=/documentation/help/support/>Support</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-code aria-expanded=false>
+Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/code/index_classes/>Classes</a></li><li><a class="docs-link rounded" href=/documentation/code/index_files/>Files</a></li><li><a class="docs-link rounded" href=/documentation/code/index_pages/>Pages</a></li><li><a class="docs-link rounded" href=/documentation/code/index_namespaces/>Namespaces</a></li></ul></div></li></ul></nav></div><nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation"><div class=d-xl-none><button class="btn btn-outline-primary btn-sm doks-toc-toggle collapsed" type=button data-bs-toggle=collapse data-bs-target=#onThisPage aria-controls=doks-docs-nav aria-expanded=false aria-label="Toggle On this page navigation">
+<span>On this page</span>
+<span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg></span></button><div class=collapse id=onThisPage><div class="card card-body mt-3 py-1"><div class=page-links><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#classes>Classes</a></li><li><a href=#source-code>Source code</a></li></ul></nav></div></div></div></div><div class="page-links d-none d-xl-block"><h3>On this page</h3><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#classes>Classes</a></li><li><a href=#source-code>Source code</a></li></ul></nav></div></nav><main class="docs-content col-lg-11 col-xl-9 mx-xl-auto"><nav aria-label=breadcrumb><ol class=breadcrumb><li class=breadcrumb-item><a href=/>Home</a></li><li class=breadcrumb-item><a href=/documentation/>Documentation</a></li><li class=breadcrumb-item><a href=/documentation/code/>Code Reference</a></li><li class="breadcrumb-item active" aria-current=page>file analyses/Analysis_ATLAS_13TeV_2OR3LEP_139invfb.cpp</li></ol></nav><p class=lead></p><h1 id=file-analyses-analysis-atlas-13tev-2or3lep-139invfb-cpp>file analyses/Analysis_ATLAS_13TeV_2OR3LEP_139invfb.cpp <a href=#file-analyses-analysis-atlas-13tev-2or3lep-139invfb-cpp class=anchor aria-hidden=true>#</a></h1><p>[No description available]</p><h2 id=namespaces>Namespaces <a href=#namespaces class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th>Name</th></tr></thead><tbody><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit/>Gambit</a></strong><br>TODO: see if we can use this one:</td></tr><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit_1_1colliderbit/>Gambit::ColliderBit</a></strong></td></tr></tbody></table><h2 id=classes>Classes <a href=#classes class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th></th><th>Name</th></tr></thead><tbody><tr><td>class</td><td><strong><a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2or3lep__139invfb/>Gambit::ColliderBit::Analysis_ATLAS_13TeV_2OR3LEP_139invfb</a></strong></td></tr></tbody></table><h2 id=source-code>Source code <a href=#source-code class=anchor aria-hidden=true>#</a></h2><pre><code>// -*- C++ -*-
+///
+///  \author Ida-Marie Johansson
+///  \date 2023 November
+///
+///  *********************************************
+
+/// based on https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-2019-22/
+/// arXiv:2305.09322
+#include &lt;vector&gt;
+#include &lt;cmath&gt;
+#include &lt;memory&gt;
+#include &lt;iomanip&gt;
+#include &lt;algorithm&gt;
+#include &lt;fstream&gt;
+#include &lt;numeric&gt;
+
+#include &quot;gambit/ColliderBit/analyses/Analysis.hpp&quot;
+#include &quot;gambit/ColliderBit/analyses/AnalysisMacros.hpp&quot;
+#include &quot;gambit/ColliderBit/ATLASEfficiencies.hpp&quot;
+#include &quot;gambit/ColliderBit/analyses/Cutflow.hpp&quot;
+#include &quot;gambit/ColliderBit/mt2_bisect.h&quot;
+#include &quot;METSignificance/METSignificance.hpp&quot;
+
+using namespace std;
+
+namespace Gambit
+{
+  namespace ColliderBit
+  {
+    static bool SSLeptons(vector&lt;const HEPUtils::Particle*&gt; leptons){
+      bool samesign;
+      if (leptons.size()&lt; 2){samesign=false;}
+      else if (leptons.size() == 2){
+        samesign = (leptons.at(0)-&gt;pid()*leptons.at(1)-&gt;pid()) &gt; 0;
+      }
+      else if (leptons.size()&gt;3){samesign=true;}
+      return samesign;
+    }
+
+    class Analysis_ATLAS_13TeV_2OR3LEP_139invfb : public Analysis
+    {
+
+    public:
+
+      // Required detector sim
+      static constexpr const char* detector = &quot;ATLAS&quot;;
+
+
+      Analysis_ATLAS_13TeV_2OR3LEP_139invfb()
+      {
+        set_analysis_name(&quot;ATLAS_13TeV_2OR3LEP_139invfb&quot;);
+        set_detector_name(detector);
+        set_luminosity(139);
+
+        //Defining signal regions
+        // wh
+        defineSignalRegion(&quot;SRWh-high-mt2-ee-1&quot;,   &quot;n jets (pt&gt;25) &gt;= 1&quot;, &quot;Nsig &gt;= 2&quot;, &quot;pt(l) &gt;= 25GeV&quot;, &quot;Nsig = 2&quot;, &quot;same-sign&quot;, &quot;n bjets = 0&quot;, &quot;met &gt;= 50&quot;, &quot;mjj &lt; 350 GeV&quot;, &quot;mt2 &gt;= 80 GeV&quot;,  &quot;met sig &gt;= 7&quot;, &quot;met: [75, 125) GeV&quot;,  &quot;type ee&quot;);
+        defineSignalRegion(&quot;SRWh-high-mt2-ee-2&quot;,   &quot;n jets (pt&gt;25) &gt;= 1&quot;, &quot;Nsig &gt;= 2&quot;, &quot;pt(l) &gt;= 25GeV&quot;, &quot;Nsig = 2&quot;, &quot;same-sign&quot;, &quot;n bjets = 0&quot;, &quot;met &gt;= 50&quot;, &quot;mjj &lt; 350 GeV&quot;, &quot;mt2 &gt;= 80 GeV&quot;,  &quot;met sig &gt;= 7&quot;, &quot;met: [125,175) GeV&quot;,  &quot;type ee&quot;);
+        defineSignalRegion(&quot;SRWh-high-mt2-ee-3&quot;,   &quot;n jets (pt&gt;25) &gt;= 1&quot;, &quot;Nsig &gt;= 2&quot;, &quot;pt(l) &gt;= 25GeV&quot;, &quot;Nsig = 2&quot;, &quot;same-sign&quot;, &quot;n bjets = 0&quot;, &quot;met &gt;= 50&quot;, &quot;mjj &lt; 350 GeV&quot;, &quot;mt2 &gt;= 80 GeV&quot;,  &quot;met sig &gt;= 7&quot;, &quot;met &gt;= 175 GeV&quot;,      &quot;type ee&quot;);
+        defineSignalRegion(&quot;SRWh-high-mt2-emu-1&quot;,  &quot;n jets (pt&gt;25) &gt;= 1&quot;, &quot;Nsig &gt;= 2&quot;, &quot;pt(l) &gt;= 25GeV&quot;, &quot;Nsig = 2&quot;, &quot;same-sign&quot;, &quot;n bjets = 0&quot;, &quot;met &gt;= 50&quot;, &quot;mjj &lt; 350 GeV&quot;, &quot;mt2 &gt;= 80 GeV&quot;,  &quot;met sig &gt;= 7&quot;, &quot;met: [75, 125) GeV&quot;,  &quot;type emu&quot;);
+        defineSignalRegion(&quot;SRWh-high-mt2-emu-2&quot;,  &quot;n jets (pt&gt;25) &gt;= 1&quot;, &quot;Nsig &gt;= 2&quot;, &quot;pt(l) &gt;= 25GeV&quot;, &quot;Nsig = 2&quot;, &quot;same-sign&quot;, &quot;n bjets = 0&quot;, &quot;met &gt;= 50&quot;, &quot;mjj &lt; 350 GeV&quot;, &quot;mt2 &gt;= 80 GeV&quot;,  &quot;met sig &gt;= 7&quot;, &quot;met: [125, 175) GeV&quot;, &quot;type emu&quot;);
+        defineSignalRegion(&quot;SRWh-high-mt2-emu-3&quot;,  &quot;n jets (pt&gt;25) &gt;= 1&quot;, &quot;Nsig &gt;= 2&quot;, &quot;pt(l) &gt;= 25GeV&quot;, &quot;Nsig = 2&quot;, &quot;same-sign&quot;, &quot;n bjets = 0&quot;, &quot;met &gt;= 50&quot;, &quot;mjj &lt; 350 GeV&quot;, &quot;mt2 &gt;= 80 GeV&quot;,  &quot;met sig &gt;= 7&quot;, &quot;met &gt;= 175 GeV&quot;,      &quot;type emu&quot;);
+        defineSignalRegion(&quot;SRWh-high-mt2-mumu-1&quot;, &quot;n jets (pt&gt;25) &gt;= 1&quot;, &quot;Nsig &gt;= 2&quot;, &quot;pt(l) &gt;= 25GeV&quot;, &quot;Nsig = 2&quot;, &quot;same-sign&quot;, &quot;n bjets = 0&quot;, &quot;met &gt;= 50&quot;, &quot;mjj &lt; 350 GeV&quot;, &quot;mt2 &gt;= 80 GeV&quot;,  &quot;met sig &gt;= 7&quot;, &quot;met: [75, 125) GeV&quot;,  &quot;type mumu&quot;);
+        defineSignalRegion(&quot;SRWh-high-mt2-mumu-2&quot;, &quot;n jets (pt&gt;25) &gt;= 1&quot;, &quot;Nsig &gt;= 2&quot;, &quot;pt(l) &gt;= 25GeV&quot;, &quot;Nsig = 2&quot;, &quot;same-sign&quot;, &quot;n bjets = 0&quot;, &quot;met &gt;= 50&quot;, &quot;mjj &lt; 350 GeV&quot;, &quot;mt2 &gt;= 80 GeV&quot;,  &quot;met sig &gt;= 7&quot;, &quot;met: [125, 175) GeV&quot;, &quot;type mumu&quot;);
+        defineSignalRegion(&quot;SRWh-high-mt2-mumu-3&quot;, &quot;n jets (pt&gt;25) &gt;= 1&quot;, &quot;Nsig &gt;= 2&quot;, &quot;pt(l) &gt;= 25GeV&quot;, &quot;Nsig = 2&quot;, &quot;same-sign&quot;, &quot;n bjets = 0&quot;, &quot;met &gt;= 50&quot;, &quot;mjj &lt; 350 GeV&quot;, &quot;mt2 &gt;= 80 GeV&quot;,  &quot;met sig &gt;= 7&quot;, &quot;met &gt;= 175 GeV&quot;,      &quot;type mumu&quot;);
+
+        defineSignalRegion(&quot;SRWh-low-mt2-ee&quot;,      &quot;n jets (pt&gt;25) &gt;= 1&quot;, &quot;Nsig &gt;= 2&quot;, &quot;pt(l) &gt;= 25GeV&quot;, &quot;Nsig = 2&quot;, &quot;same-sign&quot;, &quot;n bjets = 0&quot;, &quot;met &gt;= 50&quot;, &quot;mjj &lt; 350 GeV&quot;, &quot;mt2 &lt; 80 GeV&quot;, &quot;mtmin &gt;= 100 GeV&quot;, &quot;met sig &gt;= 6&quot;, &quot;type ee&quot;);
+        defineSignalRegion(&quot;SRWh-low-mt2-emu&quot;,     &quot;n jets (pt&gt;25) &gt;= 1&quot;, &quot;Nsig &gt;= 2&quot;, &quot;pt(l) &gt;= 25GeV&quot;, &quot;Nsig = 2&quot;, &quot;same-sign&quot;, &quot;n bjets = 0&quot;, &quot;met &gt;= 50&quot;, &quot;mjj &lt; 350 GeV&quot;, &quot;mt2 &lt; 80 GeV&quot;, &quot;mtmin &gt;= 100 GeV&quot;, &quot;met sig &gt;= 6&quot;, &quot;type emu&quot;);
+        defineSignalRegion(&quot;SRWh-low-mt2-mumu&quot;,    &quot;n jets (pt&gt;25) &gt;= 1&quot;, &quot;Nsig &gt;= 2&quot;, &quot;pt(l) &gt;= 25GeV&quot;, &quot;Nsig = 2&quot;, &quot;same-sign&quot;, &quot;n bjets = 0&quot;, &quot;met &gt;= 50&quot;, &quot;mjj &lt; 350 GeV&quot;, &quot;mt2 &lt; 80 GeV&quot;, &quot;mtmin &gt;= 100 GeV&quot;, &quot;met sig &gt;= 6&quot;, &quot;type mumu&quot;);
+
+        //wz
+        defineSignalRegion(&quot;SRWZ-high-mt2-1&quot;, &quot;n jets &gt;= 1&quot;, &quot;Nsig(l) &gt;= 2 &amp;&amp; Nbl(l) &gt;= 2&quot;, &quot;same-sign&quot;, &quot;Nbl(l)=2&quot;, &quot;Nsig(l)==2&quot;, &quot;pt(l) &gt;= 25GeV&quot;, &quot;n jets (pt&gt;25) &gt;= 1&quot;, &quot;n bjets = 0&quot;, &quot;mjj &lt;= 350 GeV&quot;, &quot;mt2 &gt;= 100 GeV&quot;,  &quot;mtmin &gt;= 100 GeV&quot;, &quot;met &gt;= 100 GeV&quot;, &quot;MET sig: [0,10]&quot;, &quot;spread &gt;= 2.2&quot;);
+        defineSignalRegion(&quot;SRWZ-high-mt2-2&quot;, &quot;n jets &gt;= 1&quot;, &quot;Nsig(l) &gt;= 2 &amp;&amp; Nbl(l) &gt;= 2&quot;, &quot;same-sign&quot;, &quot;Nbl(l)=2&quot;, &quot;Nsig(l)==2&quot;, &quot;pt(l) &gt;= 25GeV&quot;, &quot;n jets (pt&gt;25) &gt;= 1&quot;, &quot;n bjets = 0&quot;, &quot;mjj &lt;= 350 GeV&quot;, &quot;mt2 &gt;= 100 GeV&quot;,  &quot;mtmin &gt;= 100 GeV&quot;, &quot;met &gt;= 100 GeV&quot;, &quot;MET sig: [10,13]&quot;);
+        defineSignalRegion(&quot;SRWZ-high-mt2-3&quot;, &quot;n jets &gt;= 1&quot;, &quot;Nsig(l) &gt;= 2 &amp;&amp; Nbl(l) &gt;= 2&quot;, &quot;same-sign&quot;, &quot;Nbl(l)=2&quot;, &quot;Nsig(l)==2&quot;, &quot;pt(l) &gt;= 25GeV&quot;, &quot;n jets (pt&gt;25) &gt;= 1&quot;, &quot;n bjets = 0&quot;, &quot;mjj &lt;= 350 GeV&quot;, &quot;mt2 &gt;= 100 GeV&quot;,  &quot;mtmin &gt;= 100 GeV&quot;, &quot;met &gt;= 100 GeV&quot;, &quot;MET sig &gt;= 13&quot;,   &quot;dR_ll &gt;= 1&quot;);
+        defineSignalRegion(&quot;SRWZ-low-mt2&quot;,    &quot;n jets &gt;= 1&quot;, &quot;Nsig(l) &gt;= 2 &amp;&amp; Nbl(l) &gt;= 2&quot;, &quot;same-sign&quot;, &quot;Nbl(l)=2&quot;, &quot;Nsig(l)==2&quot;, &quot;pt(l) &gt;= 25GeV&quot;, &quot;n jets (pt&gt;25) &gt;= 1&quot;, &quot;n bjets = 0&quot;, &quot;mjj &lt;= 350 GeV&quot;, &quot;mt2 &lt;= 100 GeV&quot;,  &quot;mtmin &gt;= 130 GeV&quot;, &quot;met &gt;= 140 GeV&quot;, &quot;meff &lt;= 600 GeV&quot;, &quot;dR_ll &lt;= 3&quot;);
+
+        // // bRPV
+        // defineSignalRegion(&quot;SRbRPV-2l-SS&quot;, &quot;pt &gt;= 20GeV&quot;, &quot;n jets (&gt; 25GeV) &gt;= 1&quot;, &quot;Nsig = 2&quot;, &quot;charge = same-sign&quot;, &quot;mt2 &gt;= 60 GeV&quot; , &quot;met &gt;= 100 GeV&quot;, &quot;n bjets = 0&quot;, &quot;njets (&gt;40 GeV) &lt;= 4&quot;);
+        // defineSignalRegion(&quot;SRbRPV-3l&quot;,    &quot;pt &gt;= 20GeV&quot;, &quot;n jets (&gt; 25GeV) &gt;= 1&quot;, &quot;Nsig = 3&quot;, &quot;mt2 &gt;= 80 GeV&quot; , &quot;met &gt;= 120 GeV&quot;, &quot;meff &gt;= 350 GeV&quot;, &quot;mee,mmumu notin [81,101] GeV&quot;);
+
+
+        // //UDD
+        // defineSignalRegion(&quot;SRRPV-2l1b-L&quot;, &quot;Nbl=2&quot;, &quot;Nsig = 2&quot;, &quot;charge = same-sign&quot;, &quot;pt &gt; 25GeV&quot;, &quot;n jets (&gt; 25GeV) &gt;= 1&quot;, &quot;n bjets = 1&quot;,  &quot;sum pt(l) &gt;= 100&quot; , &quot;met &gt;= 100 GeV&quot;, &quot;njets (&gt;20 GeV) &lt;= 2&quot;,     &quot;sum pt_bjet / sum pt jet &gt;= 0.7&quot;,  &quot;sum pt jet &gt;= 120GeV&quot;, &quot;dR(l_1, jet)min &lt;= 1.2&quot;, &quot;dRll&gt;=2.0&quot;);
+        // defineSignalRegion(&quot;SRRPV-2l1b-M&quot;, &quot;Nbl=2&quot;, &quot;Nsig = 2&quot;, &quot;charge = same-sign&quot;, &quot;pt &gt; 25GeV&quot;, &quot;n jets (&gt; 25GeV) &gt;= 1&quot;, &quot;n bjets = 1&quot;,  &quot;sum pt(l) &gt;= 100&quot; , &quot;met &gt;= 50 GeV&quot;,  &quot;njets (&gt;20 GeV) = 2 or 3&quot;, &quot;sum pt_bjet / sum pt jet &gt;= 0.45&quot;, &quot;sum pt jet &gt;= 400GeV&quot;, &quot;dR(l_1, jet)min &lt;= 1.0&quot;, &quot;dRll&gt;=2.5&quot;);
+        // defineSignalRegion(&quot;SRRPV-2l2b-L&quot;, &quot;Nbl=2&quot;, &quot;Nsig = 2&quot;, &quot;charge = same-sign&quot;, &quot;pt &gt; 25GeV&quot;, &quot;n jets (&gt; 25GeV) &gt;= 1&quot;, &quot;n bjets = 2&quot;,  &quot;met &gt;= 80 GeV&quot;, &quot;njets (&gt;20 GeV) &lt;= 3&quot;,     &quot;sum pt_bjet / sum pt jet &gt;= 097&quot;,  &quot;sum pt jet &gt;= 300GeV&quot;, &quot;dR(l_1, jet)min &lt;= 1.0&quot;, &quot;dRll&gt;=2.5&quot;);
+        // defineSignalRegion(&quot;SRRPV-2l2b-M&quot;, &quot;Nbl=2&quot;, &quot;Nsig = 2&quot;, &quot;charge = same-sign&quot;, &quot;pt &gt; 25GeV&quot;, &quot;n jets (&gt; 25GeV) &gt;= 1&quot;, &quot;n bjets = 2&quot;,  &quot;met &gt;= 80 GeV&quot;, &quot;njets (&gt;20 GeV) = 3 or 4&quot;, &quot;sum pt_bjet / sum pt jet &gt;= 0.75&quot;, &quot;sum pt jet &gt;= 420GeV&quot;, &quot;dR(l_1, jet)min &lt;= 1.0&quot;, &quot;dRll&gt;=2.5&quot;);
+        // defineSignalRegion(&quot;SRRPV-2l2b-H&quot;, &quot;Nbl=2&quot;, &quot;Nsig = 2&quot;, &quot;charge = same-sign&quot;, &quot;pt &gt; 25GeV&quot;, &quot;n jets (&gt; 25GeV) &gt;= 1&quot;, &quot;n bjets = 2&quot;,  &quot;met &gt;= 80 GeV&quot;, &quot;njets (&gt;20 GeV) =&gt; 5 or &lt;=6&quot;, &quot;sum pt jet &gt;= 420GeV&quot;, &quot;dR(l_1, jet)min &lt;= 1.0&quot;, &quot;dRll&gt;=2.0&quot;);
+        // defineSignalRegion(&quot;SRRPV-2l3b-L&quot;, &quot;Nbl=2&quot;, &quot;Nsig = 2&quot;, &quot;charge = same-sign&quot;, &quot;pt &gt; 25GeV&quot;, &quot;n jets (&gt; 25GeV) &gt;= 1&quot;, &quot;n bjets &gt;= 3&quot;, &quot;met &gt;= 20 GeV&quot;, &quot;njets (&gt;20 GeV) &lt;= 3 &quot;, &quot;sum pt_bjet / sum pt jet &gt;= 0.8&quot;, &quot;dR(l_1, jet)min &lt;= 1.5&quot;, &quot;dRll&gt;=2.0&quot;);
+        // defineSignalRegion(&quot;SRRPV-2l3b-M&quot;, &quot;Nbl=2&quot;, &quot;Nsig = 2&quot;, &quot;charge = same-sign&quot;, &quot;pt &gt; 25GeV&quot;, &quot;n jets (&gt; 25GeV) &gt;= 1&quot;, &quot;n bjets &gt;= 3&quot;, &quot;met &gt;= 20 GeV&quot;, &quot;njets (&gt;20 GeV) &lt;= 3 &quot;, &quot;sum pt_bjet / sum pt jet &gt;= 0.8&quot;);
+        // defineSignalRegion(&quot;SRRPV-2l3b-H&quot;, &quot;Nbl=2&quot;, &quot;Nsig = 2&quot;, &quot;charge = same-sign&quot;, &quot;pt &gt; 25GeV&quot;, &quot;n jets (&gt; 25GeV) &gt;= 1&quot;, &quot;n bjets &gt;= 3&quot;, &quot;met &gt;= 20 GeV&quot;, &quot;njets (&gt;20 GeV) &lt;= 6&quot;,  &quot;sum pt_bjet / sum pt jet &gt;= 0.5&quot;, &quot;sum pt jet &gt;= 350GeV&quot;, &quot;dR(l_1, jet)min &lt;= 1.0&quot;, &quot;dRll&gt;=2.0&quot;);
+
+      }
+
+
+      void run(const HEPUtils::Event* event)
+      {
+        // Containers for baseline objects
+        vector&lt;const HEPUtils::Particle*&gt; baselineElectrons;
+        vector&lt;const HEPUtils::Particle*&gt; baselineMuons;
+        vector&lt;const HEPUtils::Particle*&gt; baselineTaus;
+        vector&lt;const HEPUtils::Particle*&gt; baselinePhotons;
+        vector&lt;const HEPUtils::Jet*&gt; baselineJets;
+
+
+        // Missing momentim and energy
+        HEPUtils::P4 metVec = event-&gt;missingmom();
+        double met = event-&gt;met();
+
+
+        // Get baseline electrons and apply efficiency
+        for (const HEPUtils::Particle* electron : event-&gt;electrons())
+        {
+          if (electron-&gt;pT() &gt; 10. &amp;&amp; electron-&gt;abseta() &lt; 2.47)
+          {
+            if (electron-&gt;abseta() &lt; 1.37 || electron-&gt;abseta() &gt; 1.52)
+            {
+              baselineElectrons.push_back(electron);
+            }
+          }
+        }
+        // Apply electron isolation efficiency from &quot;Loose&quot; criteria in 1908.00005
+        // applyEfficiency(baselineElectrons, ATLAS::eff1DEl.at(&quot;EGAM_2018_01_Iso_Loose&quot;));
+        // // Apply electron ID efficiency from &quot;Loose&quot; criteria in 1908.00005
+        applyEfficiency(baselineElectrons, ATLAS::eff1DEl.at(&quot;EGAM_2018_01_ID_Loose&quot;));
+
+
+        // Get baseline muons and apply efficiency
+        for (const HEPUtils::Particle* muon : event-&gt;muons())
+        {
+          if (muon-&gt;pT() &gt; 10. &amp;&amp; muon-&gt;abseta() &lt; 2.5)
+          {
+            baselineMuons.push_back(muon);
+          }
+        }
+        // Apply muon Id efficiency from &quot;Medium&quot; creteria in 2012.00578
+        applyEfficiency(baselineMuons, ATLAS::eff1DMu.at(&quot;MUON_2018_03_ID_Medium&quot;));
+        // // Apply muon isolation efficiency from &quot;Tight&quot; criteria in 2012.00578
+        // applyEfficiency(baselineMuons, ATLAS::eff1DMu.at(&quot;MUON_2018_03_Iso_Tight&quot;));
+
+
+        // Get baseline jets
+        for (const HEPUtils::Jet* jet : event-&gt;jets(&quot;antikt_R04&quot;))
+        {
+          if (jet-&gt;pT() &gt; 20. &amp;&amp; jet-&gt;abseta() &lt; 4.5)
+          {
+            baselineJets.push_back(jet);
+          }
+        }
+
+
+        //
+        // Overlap removal
+        //
+        const bool use_rapidity = true;
+        removeOverlap(baselineElectrons, baselineElectrons, 0.05, use_rapidity, DBL_MAX);
+
+        // // // 1) Remove electrons within DeltaR = 0.01 of muons
+        removeOverlap(baselineElectrons, baselineMuons, 0.01, use_rapidity, DBL_MAX);
+
+        // // 2) Remove jets within DeltaR = 0.2 of electron
+        removeOverlap(baselineJets, baselineElectrons, 0.2, use_rapidity, DBL_MAX, 0.70);
+
+        auto deltaRLimitFunc = [](double pT_lepton) { return std::min(0.4, 0.1 + 9.6 / pT_lepton); };
+        removeOverlap(baselineElectrons, baselineJets, deltaRLimitFunc, use_rapidity, DBL_MAX);
+
+        removeOverlap(baselineJets, baselineMuons, 0.4, use_rapidity, DBL_MAX);
+
+
+        removeOverlap(baselineMuons, baselineJets, deltaRLimitFunc, use_rapidity, DBL_MAX);
+
+        vector&lt;const HEPUtils::Jet*&gt; overlapBJets;
+        // Find b-jets
+        double btag = 0.70; double cmisstag = 1/6.; double misstag = 1./134.;
+        for (const HEPUtils::Jet* jet : baselineJets)
+        {
+          // Tag
+          if( jet-&gt;btag() &amp;&amp; random_bool(btag) ) overlapBJets.push_back(jet);
+          // Misstag c-jet
+          else if( jet-&gt;ctag() &amp;&amp; random_bool(cmisstag) ) overlapBJets.push_back(jet);
+          // Misstag light jet
+          else if( random_bool(misstag) ) overlapBJets.push_back(jet);
+        }
+
+        removeOverlap(baselineElectrons, overlapBJets, 0.2, use_rapidity, DBL_MAX);
+
+        // // // 3) Remove jets within DeltaR = 0.4 of muon
+
+        // // // 4) Remove electrons and muons within DeltaR = min(0.4, 0.1 + 9.6 GeV / pT(e)) of a jet
+        // // // Construct a lambda function to calculate the DeltaR limit as function of lepton pT
+
+
+
+
+        // Collect all baseline leptons
+        vector&lt;const HEPUtils::Particle*&gt; baselineLeptons = baselineElectrons;
+        baselineLeptons.insert(baselineLeptons.end(), baselineMuons.begin(), baselineMuons.end());
+
+
+        // Signal object containers
+        vector&lt;const HEPUtils::Particle*&gt; signalMuons = baselineMuons;
+        vector&lt;const HEPUtils::Jet*&gt; signalJets;
+        vector&lt;const HEPUtils::Particle*&gt; signalElectrons;
+        vector&lt;const HEPUtils::Particle*&gt; signalLeptons;
+        vector&lt;const HEPUtils::Jet*&gt; signalNonBJets;
+        vector&lt;const HEPUtils::Jet*&gt; signalBJets;
+
+
+        // Require signalElectrons within |eta| &lt; 2.0 and apply &quot;Medium&quot; ID efficiency
+        for (const HEPUtils::Particle* p : baselineElectrons)
+        {
+          if (p-&gt;abseta() &lt; 2.0) { signalElectrons.push_back(p); }
+        }
+        applyEfficiency(signalElectrons, ATLAS::eff1DEl.at(&quot;EGAM_2018_01_ID_Medium&quot;));
+
+        //Signal jets |eta| &lt; 2.8
+        for (const HEPUtils::Jet* jet : baselineJets)
+        {
+          if (jet-&gt;abseta() &lt; 2.8)
+          {
+            signalJets.push_back(jet);
+          }
+        }
+
+        // Collect all signal leptons
+        signalLeptons = signalElectrons;
+        signalLeptons.insert(signalLeptons.end(), signalMuons.begin(), signalMuons.end());
+
+        // Find b-jets
+        // double btag = 0.70; double cmisstag = 1/6.; double misstag = 1./134.;
+        for (const HEPUtils::Jet* jet : signalJets)
+        {
+          // Tag
+          if( jet-&gt;btag() &amp;&amp; random_bool(btag) ) signalBJets.push_back(jet);
+          // Misstag c-jet
+          else if( jet-&gt;ctag() &amp;&amp; random_bool(cmisstag) ) signalBJets.push_back(jet);
+          // Misstag light jet
+          else if( random_bool(misstag) ) signalBJets.push_back(jet);
+          // Non b-jet
+          else signalNonBJets.push_back(jet);
+        }
+
+
+        // Sort by pT
+        sortByPt(baselineLeptons);
+        sortByPt(signalLeptons);
+        sortByPt(signalElectrons);
+        sortByPt(signalMuons);
+        sortByPt(signalJets);
+        sortByPt(signalBJets);
+
+
+        // Count signal objects
+        const size_t n_signal_Leptons = signalLeptons.size();
+        const size_t n_baseline_Leptons = baselineLeptons.size();
+        const size_t n_bjets = signalBJets.size();
+        const size_t n_jets = signalJets.size();
+        const size_t nElectrons = signalElectrons.size();
+        const size_t nMuons = signalMuons.size();
+
+
+        //
+        // Preselection
+        //
+        BEGIN_PRESELECTION
+        END_PRESELECTION
+
+
+
+
+        //
+        // Construct selection variables
+        //
+
+        // njets pt&gt;25GeV
+        int nJets25 = countPt(signalJets, 25.);
+
+        // njets pt&gt;40GeV
+        // int nJets40 = countPt(signalJets, 40.);
+
+        // mjj
+        double mjj = 0;
+        if (n_jets &gt; 1)
+        {
+          HEPUtils::P4 dijets = signalJets.at(0)-&gt;mom() + signalJets.at(1)-&gt;mom();
+          mjj = dijets.m();
+        }
+
+        //  mt2
+        double mt2 = 0;
+        if(n_signal_Leptons &gt; 1)
+        {
+          double pa[3] = { 0, signalLeptons.at(0)-&gt;mom().px(), signalLeptons.at(0)-&gt;mom().py() };
+          double pb[3] = { 0, signalLeptons.at(1)-&gt;mom().px(), signalLeptons.at(1)-&gt;mom().py() };
+          double pmiss[3] = { 0, event-&gt;missingmom().px(), event-&gt;missingmom().py()};
+          double mn = 0.;
+
+          mt2_bisect::mt2 mt2_calc;
+          mt2_calc.set_momenta(pa,pb,pmiss);
+          mt2_calc.set_mn(mn);
+          mt2 = mt2_calc.get_mt2();
+        }
+
+        //mtmin
+        double mTmin;
+        HEPUtils::P4 p_lep1, p_lep2;
+        if (n_signal_Leptons &gt; 1)
+        {
+          HEPUtils::P4 p_lep1 = signalLeptons.at(0)-&gt;mom();
+          HEPUtils::P4 p_lep2 = signalLeptons.at(1)-&gt;mom();
+
+          double mT_lep1 = sqrt( 2.*p_lep1.pT()*met*( 1.-cos( p_lep1.deltaPhi(metVec) ) ) );
+          double mT_lep2 = sqrt( 2.*p_lep2.pT()*met*( 1.-cos( p_lep2.deltaPhi(metVec) ) ) );
+
+          mTmin = min(mT_lep1, mT_lep2);
+        }
+
+        // met significance
+        double metsig = calcMETSignificance(baselineElectrons, event-&gt;photons(), baselineMuons, baselineJets, event-&gt;taus(), metVec);
+
+        //meff
+        double meff = scalarSumPt(signalLeptons) + scalarSumPt(signalJets) + met;
+
+        // Delta R(l,l)
+        double dRll;
+        if (n_signal_Leptons &gt; 1){
+          dRll = fabs(signalLeptons.at(0)-&gt;mom().deltaR_eta(signalLeptons.at(1)-&gt;mom()));
+        }
+
+        // Spread
+        double spread;
+        if (n_signal_Leptons &gt; 1){
+          vector &lt;double&gt; phi_1 = {p_lep1.phi(), p_lep2.phi(), metVec.phi() };
+          vector &lt;double&gt; phi_2;
+          for (const HEPUtils::Jet* jet : signalJets) {
+              phi_2.push_back(jet-&gt;phi());
+          }
+          vector &lt;double&gt; phi_total = phi_1;
+
+          phi_total.insert(phi_total.end(), phi_2.begin(), phi_2.end());
+
+          // mean of phi vectors
+          double mean_phi1 = std::accumulate(phi_1.begin(), phi_1.end(), 0.0) / phi_1.size();
+          double mean_phi2 = std::accumulate(phi_2.begin(), phi_2.end(), 0.0) / phi_2.size();
+          double mean_phi_total = std::accumulate(phi_total.begin(), phi_total.end(), 0.0) / phi_total.size();
+
+          //RMSE
+          double sumOfSquares1 = 0.0;
+          for (double phi : phi_1) {
+              sumOfSquares1 += pow(phi-mean_phi1, 2);
+          }
+          double rmse_1 = sqrt(sumOfSquares1 / phi_1.size());
+          //RMSE
+          double sumOfSquares2 = 0.0;
+          for (double phi : phi_2) {
+              sumOfSquares2 += pow(phi-mean_phi2,2);
+          }
+          double rmse_2 = sqrt(sumOfSquares2 / phi_2.size());
+          //RMSE
+          double sumOfSquares3 = 0.0;
+          for (double phi : phi_total) {
+              sumOfSquares3 += pow(phi-mean_phi_total,2);
+          }
+
+          double rmse_total = sqrt(sumOfSquares3 / phi_total.size());
+
+          spread = rmse_1*rmse_2 / rmse_total;
+
+        }
+
+        // // m_ee, m_mumu
+        // double meemumu = 0.0;
+        // if (n_signal_Leptons == 3) {
+        //     HEPUtils::P4 p_lep3 = signalLeptons[2]-&gt;mom();
+        //     if (nElectrons==2){
+        //         meemumu = signalElectrons[0]-&gt;mom().dot(signalElectrons[1]-&gt;mom());
+        //     }
+        //     else if (nMuons==2){
+        //         meemumu = signalMuons[0]-&gt;mom().dot(signalMuons[1]-&gt;mom());
+        //     }
+        // }
+
+        // // sum pt(l)
+        // double sumpt_l = p_lep1.pT() + p_lep2.pT();
+
+        // // sum pt_bjet / sum pt_jet
+        // double sumpt_jet = 0.0;
+        // for (const HEPUtils::Jet* jet : signalJets) {
+        //     sumpt_jet += jet-&gt;pT();
+        // }
+        // double sumpt_bjet = 0.0;
+        // for (const HEPUtils::Jet* jet : signalBJets) {
+        //     sumpt_bjet += jet-&gt;pT();
+        // }
+        // double sumpt_bjet_jet = sumpt_bjet/sumpt_jet;
+
+        // //dRl_jet
+        // vector &lt;double&gt; dRl_jet;
+        // for (const HEPUtils::Jet* jet : signalJets) {
+        //     dRl_jet.push_back(jet-&gt;mom().deltaR_eta(p_lep1));
+        // }
+        // double dRl_jet_min = *min_element(dRl_jet.begin(), dRl_jet.end());
+
+
+
+
+        /* Signal Regions */
+        // Avoiding repetition with some of the more commonly used cuts
+        bool met_75_125  = false; // met between 75 and 125
+        bool met_125_175 = false; // met between 125 and 175
+        bool met_gt_175  = false; // met greater than 175
+        // bool met_gt_50   = false; // met greater than 50
+        bool mt2_gt_80   = false; // mt2 greater than 80 GeV
+        bool mt2_lt_80   = false; // mt2 less than 80 GeV
+        bool mt2_gt_100  = false; // mt2 greater than 100 GeV
+        bool mt2_lt_100  = false; // mt2 less than 100 GeV
+
+
+
+        if (75 &lt; met &amp;&amp; met &lt; 125) {met_75_125 = true;}
+        if (125 &lt; met &amp;&amp; met &lt; 175) {met_125_175 = true;}
+        if (met &gt;= 175) {met_gt_175 = true;}
+        if (mt2 &gt;= 80) {mt2_gt_80 = true;}
+        if (mt2 &lt; 80) {mt2_lt_80 = true;}
+        if (mt2 &gt;= 100) {mt2_gt_100 = true;}
+        if (mt2 &lt; 100) {mt2_lt_100 = true;}
+
+
+
+        // SR_Wh
+        while (true)
+        {   //njets (pt &gt; 25 GeV) &gt;= 1
+            if (nJets25 &gt;= 1)
+            {
+              LOG_CUT(&quot;SRWh-high-mt2-ee-1&quot;, &quot;SRWh-high-mt2-ee-2&quot;, &quot;SRWh-high-mt2-ee-3&quot;, &quot;SRWh-high-mt2-emu-1&quot;, &quot;SRWh-high-mt2-emu-2&quot; ,&quot;SRWh-high-mt2-emu-3&quot;, &quot;SRWh-high-mt2-mumu-1&quot;, &quot;SRWh-high-mt2-mumu-2&quot;, &quot;SRWh-high-mt2-mumu-3&quot;)
+              LOG_CUT(&quot;SRWh-low-mt2-ee&quot;, &quot;SRWh-low-mt2-emu&quot;, &quot;SRWh-low-mt2-mumu&quot;)
+            }
+            else {break;}
+
+            //N_sig(l) &gt;= 2
+            if (n_signal_Leptons &gt;= 2)
+            {
+              LOG_CUT(&quot;SRWh-high-mt2-ee-1&quot;, &quot;SRWh-high-mt2-ee-2&quot;, &quot;SRWh-high-mt2-ee-3&quot;, &quot;SRWh-high-mt2-emu-1&quot;, &quot;SRWh-high-mt2-emu-2&quot; ,&quot;SRWh-high-mt2-emu-3&quot;, &quot;SRWh-high-mt2-mumu-1&quot;, &quot;SRWh-high-mt2-mumu-2&quot;, &quot;SRWh-high-mt2-mumu-3&quot;)
+              LOG_CUT(&quot;SRWh-low-mt2-ee&quot;, &quot;SRWh-low-mt2-emu&quot;, &quot;SRWh-low-mt2-mumu&quot;)
+            }
+            else {break;}
+
+            //pt(l) &gt;= 25
+            if (signalLeptons.at(0)-&gt;pT() &gt;= 25)
+            {
+              LOG_CUT(&quot;SRWh-high-mt2-ee-1&quot;, &quot;SRWh-high-mt2-ee-2&quot;, &quot;SRWh-high-mt2-ee-3&quot;, &quot;SRWh-high-mt2-emu-1&quot;, &quot;SRWh-high-mt2-emu-2&quot; ,&quot;SRWh-high-mt2-emu-3&quot;, &quot;SRWh-high-mt2-mumu-1&quot;, &quot;SRWh-high-mt2-mumu-2&quot;, &quot;SRWh-high-mt2-mumu-3&quot;)
+              LOG_CUT(&quot;SRWh-low-mt2-ee&quot;, &quot;SRWh-low-mt2-emu&quot;, &quot;SRWh-low-mt2-mumu&quot;)
+            }
+            else {break;}
+
+            //N_sig(l) == 2
+            if (n_signal_Leptons == 2)
+            {
+              LOG_CUT(&quot;SRWh-high-mt2-ee-1&quot;, &quot;SRWh-high-mt2-ee-2&quot;, &quot;SRWh-high-mt2-ee-3&quot;, &quot;SRWh-high-mt2-emu-1&quot;, &quot;SRWh-high-mt2-emu-2&quot; ,&quot;SRWh-high-mt2-emu-3&quot;, &quot;SRWh-high-mt2-mumu-1&quot;, &quot;SRWh-high-mt2-mumu-2&quot;, &quot;SRWh-high-mt2-mumu-3&quot;)
+              LOG_CUT(&quot;SRWh-low-mt2-ee&quot;, &quot;SRWh-low-mt2-emu&quot;, &quot;SRWh-low-mt2-mumu&quot;)
+            }
+            else {break;}
+
+            // Same sign
+            if (SSLeptons(signalLeptons))
+            {
+              LOG_CUT(&quot;SRWh-high-mt2-ee-1&quot;, &quot;SRWh-high-mt2-ee-2&quot;, &quot;SRWh-high-mt2-ee-3&quot;, &quot;SRWh-high-mt2-emu-1&quot;, &quot;SRWh-high-mt2-emu-2&quot; ,&quot;SRWh-high-mt2-emu-3&quot;, &quot;SRWh-high-mt2-mumu-1&quot;, &quot;SRWh-high-mt2-mumu-2&quot;, &quot;SRWh-high-mt2-mumu-3&quot;)
+              LOG_CUT(&quot;SRWh-low-mt2-ee&quot;, &quot;SRWh-low-mt2-emu&quot;, &quot;SRWh-low-mt2-mumu&quot;)
+            }
+            else {break;}
+
+            //nbjets
+            if (n_bjets == 0)
+            {
+              LOG_CUT(&quot;SRWh-high-mt2-ee-1&quot;, &quot;SRWh-high-mt2-ee-2&quot;, &quot;SRWh-high-mt2-ee-3&quot;, &quot;SRWh-high-mt2-emu-1&quot;, &quot;SRWh-high-mt2-emu-2&quot; ,&quot;SRWh-high-mt2-emu-3&quot;, &quot;SRWh-high-mt2-mumu-1&quot;, &quot;SRWh-high-mt2-mumu-2&quot;, &quot;SRWh-high-mt2-mumu-3&quot;)
+              LOG_CUT(&quot;SRWh-low-mt2-ee&quot;, &quot;SRWh-low-mt2-emu&quot;, &quot;SRWh-low-mt2-mumu&quot;)
+            }
+            else {break;}
+
+            // met &gt;= 50
+            if (met &gt;= 50)
+            {
+              LOG_CUT(&quot;SRWh-high-mt2-ee-1&quot;, &quot;SRWh-high-mt2-ee-2&quot;, &quot;SRWh-high-mt2-ee-3&quot;, &quot;SRWh-high-mt2-emu-1&quot;, &quot;SRWh-high-mt2-emu-2&quot; ,&quot;SRWh-high-mt2-emu-3&quot;, &quot;SRWh-high-mt2-mumu-1&quot;, &quot;SRWh-high-mt2-mumu-2&quot;, &quot;SRWh-high-mt2-mumu-3&quot;)
+              LOG_CUT(&quot;SRWh-low-mt2-ee&quot;, &quot;SRWh-low-mt2-emu&quot;, &quot;SRWh-low-mt2-mumu&quot;)
+            }
+            else {break;}
+
+            //mjj &lt; 350
+            if (mjj &lt; 350)
+            {
+              LOG_CUT(&quot;SRWh-high-mt2-ee-1&quot;, &quot;SRWh-high-mt2-ee-2&quot;, &quot;SRWh-high-mt2-ee-3&quot;, &quot;SRWh-high-mt2-emu-1&quot;, &quot;SRWh-high-mt2-emu-2&quot; ,&quot;SRWh-high-mt2-emu-3&quot;, &quot;SRWh-high-mt2-mumu-1&quot;, &quot;SRWh-high-mt2-mumu-2&quot;, &quot;SRWh-high-mt2-mumu-3&quot;)
+              LOG_CUT(&quot;SRWh-low-mt2-ee&quot;, &quot;SRWh-low-mt2-emu&quot;, &quot;SRWh-low-mt2-mumu&quot;)
+            }
+            else {break;}
+
+            //high mt2 &gt; 80
+            if (mt2_gt_80)
+            {
+              LOG_CUT(&quot;SRWh-high-mt2-ee-1&quot;, &quot;SRWh-high-mt2-ee-2&quot;, &quot;SRWh-high-mt2-ee-3&quot;, &quot;SRWh-high-mt2-emu-1&quot;, &quot;SRWh-high-mt2-emu-2&quot; ,&quot;SRWh-high-mt2-emu-3&quot;, &quot;SRWh-high-mt2-mumu-1&quot;, &quot;SRWh-high-mt2-mumu-2&quot;, &quot;SRWh-high-mt2-mumu-3&quot;)
+              //met significance &gt;= 7
+              if (metsig &gt;= 7)
+              {
+                LOG_CUT(&quot;SRWh-high-mt2-ee-1&quot;, &quot;SRWh-high-mt2-ee-2&quot;, &quot;SRWh-high-mt2-ee-3&quot;, &quot;SRWh-high-mt2-emu-1&quot;, &quot;SRWh-high-mt2-emu-2&quot; ,&quot;SRWh-high-mt2-emu-3&quot;, &quot;SRWh-high-mt2-mumu-1&quot;, &quot;SRWh-high-mt2-mumu-2&quot;, &quot;SRWh-high-mt2-mumu-3&quot;)
+
+                //75 &lt;= met &lt; 125
+                if (met_75_125)
+                {
+                  LOG_CUT(&quot;SRWh-high-mt2-ee-1&quot;, &quot;SRWh-high-mt2-emu-1&quot;, &quot;SRWh-high-mt2-mumu-1&quot;)
+
+                  //type
+                  if (nElectrons == 2) {FILL_SIGNAL_REGION(&quot;SRWh-high-mt2-ee-1&quot;);}
+                  else if (nMuons == 2){FILL_SIGNAL_REGION(&quot;SRWh-high-mt2-mumu-1&quot;);}
+                  else {FILL_SIGNAL_REGION(&quot;SRWh-high-mt2-emu-1&quot;);}
+                }
+                else if (met_125_175)
+                {
+                  LOG_CUT(&quot;SRWh-high-mt2-ee-2&quot;, &quot;SRWh-high-mt2-emu-2&quot;, &quot;SRWh-high-mt2-mumu-2&quot;)
+
+                  //type
+                  if (nElectrons == 2) {FILL_SIGNAL_REGION(&quot;SRWh-high-mt2-ee-2&quot;);}
+                  else if (nMuons == 2){FILL_SIGNAL_REGION(&quot;SRWh-high-mt2-mumu-2&quot;);}
+                  else {FILL_SIGNAL_REGION(&quot;SRWh-high-mt2-emu-2&quot;);}
+                }
+                else if (met_gt_175)
+                {
+                  LOG_CUT(&quot;SRWh-high-mt2-ee-3&quot;, &quot;SRWh-high-mt2-emu-3&quot;, &quot;SRWh-high-mt2-mumu-3&quot;)
+
+                  // type
+                  if (nElectrons == 2) {FILL_SIGNAL_REGION(&quot;SRWh-high-mt2-ee-3&quot;);}
+                  else if (nMuons == 2){FILL_SIGNAL_REGION(&quot;SRWh-high-mt2-mumu-3&quot;);}
+                  else {FILL_SIGNAL_REGION(&quot;SRWh-high-mt2-emu-3&quot;);}
+                }
+              }
+            }
+            //low mt2 &lt; 80
+            else if( mt2_lt_80)
+            {
+              LOG_CUT(&quot;SRWh-low-mt2-ee&quot;, &quot;SRWh-low-mt2-emu&quot;, &quot;SRWh-low-mt2-mumu&quot;)
+
+              // mTmin &gt;= 100
+              if (mTmin &gt;= 100)
+              {
+                LOG_CUT(&quot;SRWh-low-mt2-ee&quot;, &quot;SRWh-low-mt2-emu&quot;, &quot;SRWh-low-mt2-mumu&quot;)
+
+                //met significance &gt;= 6
+                if( metsig &gt;=6)
+                {
+                  LOG_CUT(&quot;SRWh-low-mt2-ee&quot;, &quot;SRWh-low-mt2-emu&quot;, &quot;SRWh-low-mt2-mumu&quot;)
+
+                  // type
+                  if (nElectrons == 2)  {FILL_SIGNAL_REGION(&quot;SRWh-low-mt2-ee&quot;);}
+                  else if (nMuons == 2) {FILL_SIGNAL_REGION(&quot;SRWh-low-mt2-mumu&quot;);}
+                  else{FILL_SIGNAL_REGION(&quot;SRWh-low-mt2-emu&quot;);}
+                }
+              }
+            }
+
+            // Applied all cuts
+            break;
+        }
+
+
+        // WZ
+        while (true)
+        {   //n jets &gt;= 1
+            if (n_jets &gt;= 1)
+            {
+              LOG_CUT(&quot;SRWZ-high-mt2-1&quot;, &quot;SRWZ-high-mt2-2&quot;, &quot;SRWZ-high-mt2-3&quot;, &quot;SRWZ-low-mt2&quot;)}
+            else {break;}
+
+            //Nsig(l) &gt;= 2 &amp;&amp; Nbl(l) &gt;= 2
+            if (n_baseline_Leptons &gt;= 2 &amp;&amp; n_signal_Leptons &gt;= 2)
+            {
+              LOG_CUT(&quot;SRWZ-high-mt2-1&quot;, &quot;SRWZ-high-mt2-2&quot;, &quot;SRWZ-high-mt2-3&quot;, &quot;SRWZ-low-mt2&quot;)}
+            else {break;}
+
+            // same sign
+            if (SSLeptons(signalLeptons))
+            {
+              LOG_CUT(&quot;SRWZ-high-mt2-1&quot;, &quot;SRWZ-high-mt2-2&quot;, &quot;SRWZ-high-mt2-3&quot;, &quot;SRWZ-low-mt2&quot;)
+            }
+            else {break;}
+
+            // Nbl(l) == 2
+            if (n_baseline_Leptons == 2)
+            {
+                LOG_CUT(&quot;SRWZ-high-mt2-1&quot;, &quot;SRWZ-high-mt2-2&quot;, &quot;SRWZ-high-mt2-3&quot;, &quot;SRWZ-low-mt2&quot;)
+            }
+            else {break;}
+
+            // Nsig(l) == 2
+            if (n_signal_Leptons == 2)
+            {
+              LOG_CUT(&quot;SRWZ-high-mt2-1&quot;, &quot;SRWZ-high-mt2-2&quot;, &quot;SRWZ-high-mt2-3&quot;, &quot;SRWZ-low-mt2&quot;)
+            }
+            else {break;}
+
+            //pt(l) &gt;= 25
+            if (signalLeptons.at(0)-&gt;pT() &gt;= 25)
+            {
+              LOG_CUT(&quot;SRWZ-high-mt2-1&quot;, &quot;SRWZ-high-mt2-2&quot;, &quot;SRWZ-high-mt2-3&quot;, &quot;SRWZ-low-mt2&quot;)
+            }
+            else {break;}
+
+            //njets (pt &gt; 25) &gt;= 1
+            if (nJets25 &gt;= 1)
+            {
+              LOG_CUT(&quot;SRWZ-high-mt2-1&quot;, &quot;SRWZ-high-mt2-2&quot;, &quot;SRWZ-high-mt2-3&quot;, &quot;SRWZ-low-mt2&quot;)
+            }
+            else {break;}
+
+            //nbjets == 0
+            if (n_bjets == 0)
+            {
+              LOG_CUT(&quot;SRWZ-high-mt2-1&quot;, &quot;SRWZ-high-mt2-2&quot;, &quot;SRWZ-high-mt2-3&quot;, &quot;SRWZ-low-mt2&quot;)
+            }
+            else {break;}
+
+            //mjj &lt;= 350
+            if (mjj &lt;= 350)
+            {
+              LOG_CUT(&quot;SRWZ-high-mt2-1&quot;, &quot;SRWZ-high-mt2-2&quot;, &quot;SRWZ-high-mt2-3&quot;, &quot;SRWZ-low-mt2&quot;)
+            }
+            else {break;}
+
+            //high mt2 &gt;= 100
+            if (mt2_gt_100)
+            {
+              LOG_CUT(&quot;SRWZ-high-mt2-1&quot;, &quot;SRWZ-high-mt2-2&quot;, &quot;SRWZ-high-mt2-3&quot;)
+
+              //mTmin &gt;= 100
+              if (mTmin &gt;= 100)
+              {
+                LOG_CUT(&quot;SRWZ-high-mt2-1&quot;, &quot;SRWZ-high-mt2-2&quot;, &quot;SRWZ-high-mt2-3&quot;)
+
+                // met &gt;= 100
+                if (met&gt;=100)
+                {
+                  LOG_CUT(&quot;SRWZ-high-mt2-1&quot;, &quot;SRWZ-high-mt2-2&quot;, &quot;SRWZ-high-mt2-3&quot;)
+
+                  //type
+                  if (0 &lt;= metsig &amp;&amp; metsig &lt; 10 &amp;&amp; spread&gt;=2.2) {FILL_SIGNAL_REGION(&quot;SRWZ-high-mt2-1&quot;);}
+                  else if (10 &lt;= metsig &amp;&amp; metsig &lt; 13){FILL_SIGNAL_REGION(&quot;SRWZ-high-mt2-2&quot;);}
+                  else if (metsig &gt;= 13 &amp;&amp; dRll&gt;=1){FILL_SIGNAL_REGION(&quot;SRWZ-high-mt2-3&quot;);}
+                }
+              }
+            }
+            // low mt2 &lt;= 100
+            else if (mt2_lt_100)
+            {
+              LOG_CUT(&quot;SRWZ-low-mt2&quot;)
+              // mTmin &gt;= 130
+              if (mTmin &gt;= 130)
+              {
+                LOG_CUT(&quot;SRWZ-low-mt2&quot;)
+                // met &gt;= 140
+                if (met &gt;= 140)
+                {
+                  LOG_CUT(&quot;SRWZ-low-mt2&quot;)
+                  // meff &lt;= 600
+                  if (meff &lt;= 600)
+                  {
+                    LOG_CUT(&quot;SRWZ-low-mt2&quot;)
+
+                    // dRll &lt;= 3
+                    if (dRll &lt;= 3) {FILL_SIGNAL_REGION(&quot;SRWZ-low-mt2&quot;);}
+                  }
+                }
+              }
+            }
+            // Applied all cuts
+            break;
+        }
+
+
+        // //bRVP
+        // while (true)
+        // {   //pt
+        //     if (p_lep2.pT() &gt;= 20) {LOG_CUT(&quot;SRbRPV-2l-SS&quot;, &quot;SRbRPV-3l&quot;)}
+        //     else {break;}
+        //     //njets &gt; 25 GeV
+        //     if (nJets25 &gt;= 1) {LOG_CUT(&quot;SRbRPV-2l-SS&quot;, &quot;SRbRPV-3l&quot;)}
+        //     else {break;}
+        //     //nsig
+        //     if (n_signal_Leptons == 2) {
+        //         LOG_CUT(&quot;SRbRPV-2l-SS&quot;)
+        //         // charge
+        //         if (signalLeptons.at(0)-&gt;pid() == signalLeptons.at(1)-&gt;pid()) {
+        //             LOG_CUT(&quot;SRbRPV-2l-SS&quot;)
+        //             //mt2
+        //             if (mt2 &gt;= 60){
+        //                 LOG_CUT(&quot;SRbRPV-2l-SS&quot;)
+        //                 //met
+        //                 if (met &gt;= 100){
+        //                     LOG_CUT(&quot;SRbRPV-2l-SS&quot;)
+        //                     // nbjets
+        //                     if (n_bjets == 0){
+        //                         LOG_CUT(&quot;SRbRPV-2l-SS&quot;)
+        //                         // njets &gt; 40
+        //                         if (nJets40&gt;=4) {
+        //                             FILL_SIGNAL_REGION(&quot;SRbRPV-2l-SS&quot;);
+        //                         }
+        //                     }
+        //                 }
+        //             }
+        //         }
+        //     }
+        //     else if (n_signal_Leptons == 3){
+        //         if (mt2&gt;=80) {
+        //             LOG_CUT(&quot;SRbRPV-3l&quot;)
+        //             if (met &gt;= 120) {
+        //                 LOG_CUT(&quot;SRbRPV-3l&quot;)
+        //                 if (meff &gt;= 350) {
+        //                     LOG_CUT(&quot;SRbRPV-3l&quot;)
+        //                     if (81 &lt;= meemumu &amp;&amp; meemumu&lt;= 101) {
+        //                         FILL_SIGNAL_REGION(&quot;SRbRPV-3l&quot;);
+        //                     }
+        //                 }
+        //             }
+        //         }
+        //     }
+        //     // Applied all cuts
+        //     break;
+        // }
+
+        // UDD
+
+
+
+      } // End run function
+
+
+
+
+      /// Register results objects with the results for each SR; obs &amp; bkg numbers from the paper
+      virtual void collect_results()
+      {
+        // //Wh
+        COMMIT_SIGNAL_REGION(&quot;SRWh-high-mt2-ee-1&quot;, 22., 14.22, 1.87)
+        COMMIT_SIGNAL_REGION(&quot;SRWh-high-mt2-ee-2&quot;, 8., 7.03, 0.78)
+        COMMIT_SIGNAL_REGION(&quot;SRWh-high-mt2-ee-3&quot;, 5., 4.24, 0.94)
+        COMMIT_SIGNAL_REGION(&quot;SRWh-high-mt2-emu-1&quot;, 37., 25.59, 3.62)
+        COMMIT_SIGNAL_REGION(&quot;SRWh-high-mt2-emu-2&quot;, 10., 14.56, 2.20)
+        COMMIT_SIGNAL_REGION(&quot;SRWh-high-mt2-emu-3&quot;, 3., 4.77, 0.73)
+        COMMIT_SIGNAL_REGION(&quot;SRWh-high-mt2-mumu-1&quot;, 25., 24.13, 3.17)
+        COMMIT_SIGNAL_REGION(&quot;SRWh-high-mt2-mumu-2&quot;, 12., 13.41, 1.49)
+        COMMIT_SIGNAL_REGION(&quot;SRWh-high-mt2-mumu-3&quot;, 2., 7.11, 1.68)
+        COMMIT_SIGNAL_REGION(&quot;SRWh-low-mt2-ee&quot;, 28., 23.57, 3.33)
+        COMMIT_SIGNAL_REGION(&quot;SRWh-low-mt2-emu&quot;, 54., 50.59, 4.54)
+        COMMIT_SIGNAL_REGION(&quot;SRWh-low-mt2-mumu&quot;, 50., 47.70, 4.28)
+        //WZ
+        //COMMIT_SIGNAL_REGION(&quot;SRWZ-high-mt2&quot;, 32., 44.59, 15.02)
+        // COMMIT_SIGNAL_REGION(&quot;SRWZ-high-mt2-1&quot;, 0., 1.92, 1.29)
+        // COMMIT_SIGNAL_REGION(&quot;SRWZ-high-mt2-2&quot;, 7., 8.62, 2.98)
+        // COMMIT_SIGNAL_REGION(&quot;SRWZ-high-mt2-3&quot;, 5., 7.37, 2.62)
+        // COMMIT_SIGNAL_REGION(&quot;SRWZ-low-mt2&quot;, 3., 1.71, 0.89)
+        //bRPV
+        // COMMIT_SIGNAL_REGION(&quot;SRbRPV-2l-SS&quot;, 40., 44.59, 14.39)
+        // COMMIT_SIGNAL_REGION(&quot;SRbRPV-3l&quot;, 227., 251.19, 59.29)
+        //UDD
+
+        COMMIT_CUTFLOWS
+      }
+
+
+    protected:
+
+      void analysis_specific_reset()
+      {
+        for (auto&amp; pair : _counters) { pair.second.reset(); }
+      }
+
+    };
+
+    // Factory fn
+    DEFINE_ANALYSIS_FACTORY(ATLAS_13TeV_2OR3LEP_139invfb)
+
+  }
+}
+</code></pre><hr><p>Updated on 2026-11-03 at 14:50:47 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.d5e27a6ed00168b7a66eb637878a6be7d054db51d0e613bbcfda12ab0569b62177253b4e6453c477574b3a38f50eff49a68f0e19112bd82a68c78a66cd8d05df.js integrity="sha512-1eJ6btABaLembrY3h4pr59BU21HQ5hO7z9oSqwVptiF3JTtOZFPEd1dLOjj1Dv9Jpo8OGREr2Cpox4pmzY0F3w==" crossorigin=anonymous defer></script>
+<script src=/js/highlight.min.9003483b4531b86467c8b801b1d5fc5439bb0d6bdb6c6a760a1b54abf37d6bbadf8423dbc81a3359c935c7705bb7d183b46131ba4a9c861b5d48e6a61501461a.js integrity="sha512-kANIO0UxuGRnyLgBsdX8VDm7DWvbbGp2ChtUq/N9a7rfhCPbyBozWck1x3Bbt9GDtGExukqchhtdSOamFQFGGg==" crossorigin=anonymous defer></script>
+<script src=/main.min.9342d29d0e3e250a2c03282306b766e004888dba0fd661a17d7b106655e013bf85733f086ad330e3df0929c713dd81c0ea835966fa92e4a1e38f7ea9680524ed.js integrity="sha512-k0LSnQ4+JQosAygjBrdm4ASIjboP1mGhfXsQZlXgE7+Fcz8IatMw498JKccT3YHA6oNZZvqS5KHjj36paAUk7Q==" crossorigin=anonymous defer></script>
+<script src=https://gambitbsm.org/index.min.3a8ee06d0c346f1fb70040b0fbcbaaacf335cb34023c408954406a05db2089fc2ca349119b9f7d68b9e7044e82b8fdc8bd9661b6ef8b118246c5a2079d7fa8e9.js integrity="sha512-Oo7gbQw0bx+3AECw+8uqrPM1yzQCPECJVEBqBdsgifwso0kRm599aLnnBE6CuP3IvZZhtu+LEYJGxaIHnX+o6Q==" crossorigin=anonymous defer></script></body></html>

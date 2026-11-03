@@ -25,9 +25,11 @@ Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle
 
 #include &quot;gambit/ColliderBit/analyses/Analysis.hpp&quot;
 #include &quot;gambit/ColliderBit/ATLASEfficiencies.hpp&quot;
+#include &quot;gambit/ColliderBit/analyses/Cutflow.hpp&quot;
+#include &quot;gambit/ColliderBit/analyses/AnalysisMacros.hpp&quot;
 #include &quot;gambit/ColliderBit/mt2_bisect.h&quot;
 
-// #define CHECK_CUTFLOW
+//#define CHECK_CUTFLOW
 
 
 using namespace std;
@@ -38,6 +40,10 @@ using namespace std;
 ///  - https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2021-028/
 ///  - code in Analysis_ATLAS_13TeV_PhotonGGM_36invfb.cpp by Martin White
 ///
+///
+/// August 2023: Updated to the paper version by Martin White
+/// https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-2018-11/
+///
 /// @author Anders Kvellestad
 ///
 ///
@@ -45,19 +51,12 @@ using namespace std;
 
 namespace Gambit
 {
-  namespace ColliderBit 
+  namespace ColliderBit
   {
 
     class Analysis_ATLAS_13TeV_PhotonGGM_1Photon_139invfb : public Analysis
     {
     protected:
-
-      // Numbers passing cuts
-      std::map&lt;string, EventCounter&gt; _counters = {
-        {&quot;SRL&quot;, EventCounter(&quot;SRL&quot;)},
-        {&quot;SRM&quot;, EventCounter(&quot;SRM&quot;)},
-        {&quot;SRH&quot;, EventCounter(&quot;SRH&quot;)},
-      };
 
 
     public:
@@ -65,10 +64,38 @@ namespace Gambit
       // Required detector sim
       static constexpr const char* detector = &quot;ATLAS&quot;;
 
-      Analysis_ATLAS_13TeV_PhotonGGM_1Photon_139invfb() 
+      Analysis_ATLAS_13TeV_PhotonGGM_1Photon_139invfb()
       {
+
+        // Numbers passing cuts
+        _counters[&quot;SRL&quot;] = EventCounter(&quot;SRL&quot;);
+        _counters[&quot;SRM&quot;] = EventCounter(&quot;SRM&quot;);
+        _counters[&quot;SRH&quot;] = EventCounter(&quot;SRH&quot;);
+
+
         set_analysis_name(&quot;ATLAS_13TeV_PhotonGGM_1Photon_139invfb&quot;);
+        set_detector_name(detector);
         set_luminosity(139.);
+
+        _cutflows.addCutflow(&quot;SRL&quot;, {&quot;Trigger (one photon pT &gt; 140 GeV)&quot;,
+                                     &quot;At least one photon&quot;, &quot;Lepton veto&quot;,
+                                     &quot;Leading photon pT &gt; 145 GeV&quot;, &quot;MET &gt; 250 GeV&quot;,
+                                     &quot;njets &gt;= 5&quot;, &quot;dPhi(jet,MET) &gt; 0.4&quot;,
+                                     &quot;dPhi(gamma,MET)&gt;0.4&quot;, &quot;HT &gt; 2000 GeV&quot;, &quot;RT4&lt;0.9&quot;,});
+
+        _cutflows.addCutflow(&quot;SRM&quot;, {&quot;Trigger (one photon pT &gt; 140 GeV)&quot;,
+                                     &quot;At least one photon&quot;, &quot;Lepton veto&quot;,
+                                     &quot;Leading photon pT &gt; 300 GeV&quot;, &quot;MET &gt; 300 GeV&quot;,
+                                     &quot;njets &gt;= 5&quot;, &quot;dPhi(jet,MET) &gt; 0.4&quot;,
+                                     &quot;dPhi(gamma,MET)&gt;0.4&quot;, &quot;HT &gt; 1600 GeV&quot;, &quot;RT4&lt;0.9&quot;,});
+
+        _cutflows.addCutflow(&quot;SRH&quot;, {&quot;Trigger (one photon pT &gt; 140 GeV)&quot;,
+                                     &quot;At least one photon&quot;, &quot;Lepton veto&quot;,
+                                     &quot;Leading photon pT &gt; 400 GeV&quot;, &quot;MET &gt; 600 GeV&quot;,
+                                     &quot;njets &gt;= 3&quot;, &quot;dPhi(jet,MET) &gt; 0.4&quot;,
+                                     &quot;dPhi(gamma,MET)&gt;0.4&quot;, &quot;HT &gt; 1600 GeV&quot;,});
+
+
       }
 
       void run(const HEPUtils::Event* event)
@@ -79,81 +106,93 @@ namespace Gambit
         HEPUtils::P4 pmiss = event-&gt;missingmom();
 
 
-        // Photons
-        // - tight ID [MISSING]
-        // - pT &gt; 50
-        // - |eta| &lt; 2.37
-        // - |eta| not in (1.37, 1.52)
-        // - both track and calorimetric isolation requirements [MISSING]
-        vector&lt;const HEPUtils::Particle*&gt; signalPhotons;
+        // Baseline Photons
+        vector&lt;const HEPUtils::Particle*&gt; baselinePhotons;
         for (const HEPUtils::Particle* photon : event-&gt;photons())
         {
-          bool crack = (photon-&gt;abseta() &gt; 1.37) &amp;&amp; (photon-&gt;abseta() &lt; 1.52);
-          if (photon-&gt;pT() &gt; 50. &amp;&amp; photon-&gt;abseta() &lt; 2.37 &amp;&amp; !crack) signalPhotons.push_back(photon);
+          if (photon-&gt;pT() &gt; 25. &amp;&amp; photon-&gt;abseta() &lt; 2.37) baselinePhotons.push_back(photon);
         }
         // Apply photon efficiency
-        ATLAS::applyPhotonEfficiencyR2(signalPhotons);
+        applyEfficiency(baselinePhotons, ATLAS::eff2DPhoton.at(&quot;R2&quot;));
 
 
-        // Electrons
-        // - pT &gt; 25
-        // - |eta| &lt; 2.47
-        // - |eta| not in (1.37, 1.52)
-        // - loose ID
-        // - loose isolation
-        vector&lt;const HEPUtils::Particle*&gt; signalElectrons;
+        // Baseline electrons
+        vector&lt;const HEPUtils::Particle*&gt; baselineElectrons;
         for (const HEPUtils::Particle* electron : event-&gt;electrons())
         {
           bool crack = (electron-&gt;abseta() &gt; 1.37) &amp;&amp; (electron-&gt;abseta() &lt; 1.52);
-          if (electron-&gt;pT() &gt; 25. &amp;&amp; electron-&gt;abseta() &lt; 2.47 &amp;&amp; !crack) signalElectrons.push_back(electron);
+          if (electron-&gt;pT() &gt; 10. &amp;&amp; electron-&gt;abseta() &lt; 2.47 &amp;&amp; !crack) baselineElectrons.push_back(electron);
         }
         // Apply electron efficiency
-        ATLAS::applyElectronEff(signalElectrons);
+        applyEfficiency(baselineElectrons, ATLAS::eff2DEl.at(&quot;Generic&quot;));
         // Apply loose electron ID efficiency
-        ATLAS::applyElectronIDEfficiency2020(signalElectrons, &quot;Loose&quot;);
+        applyEfficiency(baselineElectrons, ATLAS::eff1DEl.at(&quot;EGAM_2018_01_ID_Loose&quot;));
         // Apply loose electron isolation efficiency
-        ATLAS::applyElectronIsolationEfficiency2020(signalElectrons, &quot;Loose&quot;);
+        applyEfficiency(baselineElectrons, ATLAS::eff1DEl.at(&quot;EGAM_2018_01_Iso_Loose&quot;));
 
 
-        // Muons
-        // - pT &gt; 25
-        // - |eta| &lt; 2.7
-        // - loose isolation
-        vector&lt;const HEPUtils::Particle*&gt; signalMuons;
+        // Baseline Muons
+        vector&lt;const HEPUtils::Particle*&gt; baselineMuons;
         for (const HEPUtils::Particle* muon : event-&gt;muons())
         {
-          if (muon-&gt;pT() &gt; 25. &amp;&amp; muon-&gt;abseta() &lt; 2.7) signalMuons.push_back(muon);
+          if (muon-&gt;pT() &gt; 10. &amp;&amp; muon-&gt;abseta() &lt; 2.7) baselineMuons.push_back(muon);
         }
         // Apply muon efficiency
-        ATLAS::applyMuonEff(signalMuons);
+        applyEfficiency(baselineMuons, ATLAS::eff2DMu.at(&quot;Generic&quot;));
         // Apply loose muon isolation efficiency
-        ATLAS::applyMuonIsolationEfficiency2020(signalMuons, &quot;Loose&quot;);
+        applyEfficiency(baselineMuons, ATLAS::eff1DMu.at(&quot;MUON_2018_03_Iso_Loose&quot;));
 
 
-        // Jets
-        // - pT &gt; 30
-        // - |eta| &lt; 2.5
-        vector&lt;const HEPUtils::Jet*&gt; signalJets;
+        // Baseline Jets
+        vector&lt;const HEPUtils::Jet*&gt; baselineJets;
         for (const HEPUtils::Jet* jet : event-&gt;jets(&quot;antikt_R04&quot;))
         {
-          if (jet-&gt;pT() &gt; 30. &amp;&amp; fabs(jet-&gt;eta()) &lt; 2.5)
+          if (jet-&gt;pT() &gt; 30. &amp;&amp; fabs(jet-&gt;eta()) &lt; 2.8)
           {
-            signalJets.push_back(jet);
+            baselineJets.push_back(jet);
           }
         }
 
 
         // Overlap removal
-        // - If jet and photon within deltaR &lt; 0.4, remove jet
-        // - If jet and electron within deltaR &lt; 0.2, remove jet
-        // - If jet and electron within 0.2 &lt; deltaR &lt; 0.4, remove electron
-        // - If jet and muon within deltaR &lt; 0.4, remove muon
+        // Inspire by ATLAS code snippet on HEPData
+        // Doesn't exactly match the earlier paper description
 
-        removeOverlap(signalPhotons,signalElectrons, 0.01); // &lt;-- taken from ATLAS code snippets on HEPData
-        removeOverlap(signalJets, signalPhotons, 0.4);
-        removeOverlap(signalJets, signalElectrons, 0.2);
-        removeOverlap(signalElectrons, signalJets, 0.4);
-        removeOverlap(signalMuons, signalJets, 0.4);
+        removeOverlap(baselineElectrons, baselineMuons, 0.01);
+        removeOverlap(baselinePhotons, baselineElectrons, 0.4);
+        removeOverlap(baselinePhotons, baselineMuons, 0.4);
+        removeOverlap(baselineJets, baselineElectrons, 0.2);
+        removeOverlap(baselineElectrons, baselineJets, 0.4);
+        removeOverlap(baselineJets, baselinePhotons, 0.4);
+
+        // Define signal objects
+        vector&lt;const HEPUtils::Particle*&gt; signalElectrons;
+        vector&lt;const HEPUtils::Particle*&gt; signalMuons;
+        vector&lt;const HEPUtils::Particle*&gt; signalPhotons;
+        vector&lt;const HEPUtils::Jet*&gt; signalJets;
+
+
+        for (size_t i=0;i&lt;baselinePhotons.size();i++)
+        {
+          bool crack = (baselinePhotons.at(i)-&gt;abseta() &gt; 1.37) &amp;&amp; (baselinePhotons.at(i)-&gt;abseta() &lt; 1.52);
+          if (baselinePhotons.at(i)-&gt;pT()&gt;50. &amp;&amp; !crack) signalPhotons.push_back(baselinePhotons.at(i));
+        }
+
+        for (size_t i=0;i&lt;baselineMuons.size();i++)
+        {
+          if (baselineMuons.at(i)-&gt;pT()&gt;25.) signalMuons.push_back(baselineMuons.at(i));
+        }
+
+        for (size_t i=0;i&lt;baselineElectrons.size();i++)
+        {
+          bool crack = (baselineElectrons.at(i)-&gt;abseta() &gt; 1.37) &amp;&amp; (baselineElectrons.at(i)-&gt;abseta() &lt; 1.52);
+          if (baselineElectrons.at(i)-&gt;pT()&gt;25. &amp;&amp; !crack) signalElectrons.push_back(baselineElectrons.at(i));
+        }
+
+        for (size_t i=0;i&lt;baselineJets.size();i++)
+        {
+          if (baselineJets.at(i)-&gt;pT()&gt;30.) signalJets.push_back(baselineJets.at(i));
+        }
 
 
         // Put objects in pT order
@@ -224,27 +263,54 @@ namespace Gambit
         if (nPhotons &gt;= 1 &amp;&amp; pTLeadingPhoton &gt; 300. &amp;&amp; nLep == 0 &amp;&amp; nJets &gt;= 5 &amp;&amp; deltaPhiJetPmiss &gt; 0.4 &amp;&amp; deltaPhiPhotonPmiss &gt; 0.4 &amp;&amp; met &gt; 300. &amp;&amp; HT &gt; 1600. &amp;&amp; RT4 &lt; 0.9) _counters.at(&quot;SRM&quot;).add_event(event);
         if (nPhotons &gt;= 1 &amp;&amp; pTLeadingPhoton &gt; 400. &amp;&amp; nLep == 0 &amp;&amp; nJets &gt;= 3 &amp;&amp; deltaPhiJetPmiss &gt; 0.4 &amp;&amp; deltaPhiPhotonPmiss &gt; 0.4 &amp;&amp; met &gt; 600. &amp;&amp; HT &gt; 1600.) _counters.at(&quot;SRH&quot;).add_event(event);
 
+        // Increment cutflows for debugging
+
+        const double w = event-&gt;weight();
+        _cutflows.fillinit(w);
+
+        if (_cutflows[&quot;SRL&quot;].fillnext({
+                  nPhotons&gt;=1 &amp;&amp; pTLeadingPhoton &gt; 140.,
+                  nPhotons&gt;=1, nLep==0,
+                  pTLeadingPhoton&gt;145., met&gt;250., nJets&gt;=5,
+                  deltaPhiJetPmiss &gt; 0.4, deltaPhiPhotonPmiss &gt; 0.4, HT &gt; 2000., RT4&lt;0.9}, w)) _counters.at(&quot;SRL&quot;).add_event(event);
+
+        if (_cutflows[&quot;SRM&quot;].fillnext({
+                  nPhotons&gt;=1 &amp;&amp; pTLeadingPhoton &gt; 140.,
+                  nPhotons&gt;=1, nLep==0,
+                  pTLeadingPhoton&gt;300., met&gt;300., nJets&gt;=5,
+                  deltaPhiJetPmiss &gt; 0.4, deltaPhiPhotonPmiss &gt; 0.4, HT &gt; 1600., RT4&lt;0.9}, w)) _counters.at(&quot;SRL&quot;).add_event(event);
+
+        if (_cutflows[&quot;SRH&quot;].fillnext({
+                  nPhotons&gt;=1 &amp;&amp; pTLeadingPhoton &gt; 140.,
+                  nPhotons&gt;=1, nLep==0,
+                  pTLeadingPhoton&gt;400., met&gt;600., nJets&gt;=3,
+                  deltaPhiJetPmiss &gt; 0.4, deltaPhiPhotonPmiss &gt; 0.4, HT &gt; 1600.}, w)) _counters.at(&quot;SRL&quot;).add_event(event);
         return;
 
-      }
-
-      /// Combine the variables of another copy of this analysis (typically on another thread) into this one.
-      void combine(const Analysis* other)
-      {
-        const Analysis_ATLAS_13TeV_PhotonGGM_1Photon_139invfb* specificOther
-          = dynamic_cast&lt;const Analysis_ATLAS_13TeV_PhotonGGM_1Photon_139invfb*&gt;(other);
-
-        for (auto&amp; pair : _counters) { pair.second += specificOther-&gt;_counters.at(pair.first); }
       }
 
 
       virtual void collect_results()
       {
-        // add_result(SignalRegionData(&quot;SR label&quot;, n_obs, {n_sig_MC, n_sig_MC_sys}, {n_bkg, n_bkg_err}));
 
         add_result(SignalRegionData(_counters.at(&quot;SRL&quot;), 2., { 2.67, 0.75}));
         add_result(SignalRegionData(_counters.at(&quot;SRM&quot;), 0., { 2.55, 0.64}));
         add_result(SignalRegionData(_counters.at(&quot;SRH&quot;), 5., { 2.55, 0.44}));
+
+        COMMIT_CUTFLOWS
+
+        // Cutflow printout
+        #ifdef CHECK_CUTFLOW
+          _cutflows[&quot;SRL&quot;].normalize(47.26, 1);
+          _cutflows[&quot;SRM&quot;].normalize(79.60, 1);
+          _cutflows[&quot;SRH&quot;].normalize(92.73, 1);
+          cout &lt;&lt; &quot;\nCUTFLOWS:\n&quot; &lt;&lt; _cutflows &lt;&lt; endl;
+          cout &lt;&lt; &quot;\nSRCOUNTS:\n&quot;;
+          // for (double x : _srnums) cout &lt;&lt; x &lt;&lt; &quot;  &quot;;
+          for (auto&amp; pair : _counters) cout &lt;&lt; pair.second.weight_sum() &lt;&lt; &quot;  &quot;;
+          cout &lt;&lt; &quot;\n&quot; &lt;&lt; endl;
+        #endif
+
 
         return;
       }
@@ -264,7 +330,7 @@ namespace Gambit
 
   }
 }
-</code></pre><hr><p>Updated on 2025-02-12 at 16:10:35 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.d5e27a6ed00168b7a66eb637878a6be7d054db51d0e613bbcfda12ab0569b62177253b4e6453c477574b3a38f50eff49a68f0e19112bd82a68c78a66cd8d05df.js integrity="sha512-1eJ6btABaLembrY3h4pr59BU21HQ5hO7z9oSqwVptiF3JTtOZFPEd1dLOjj1Dv9Jpo8OGREr2Cpox4pmzY0F3w==" crossorigin=anonymous defer></script>
+</code></pre><hr><p>Updated on 2026-11-03 at 14:50:47 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.d5e27a6ed00168b7a66eb637878a6be7d054db51d0e613bbcfda12ab0569b62177253b4e6453c477574b3a38f50eff49a68f0e19112bd82a68c78a66cd8d05df.js integrity="sha512-1eJ6btABaLembrY3h4pr59BU21HQ5hO7z9oSqwVptiF3JTtOZFPEd1dLOjj1Dv9Jpo8OGREr2Cpox4pmzY0F3w==" crossorigin=anonymous defer></script>
 <script src=/js/highlight.min.9003483b4531b86467c8b801b1d5fc5439bb0d6bdb6c6a760a1b54abf37d6bbadf8423dbc81a3359c935c7705bb7d183b46131ba4a9c861b5d48e6a61501461a.js integrity="sha512-kANIO0UxuGRnyLgBsdX8VDm7DWvbbGp2ChtUq/N9a7rfhCPbyBozWck1x3Bbt9GDtGExukqchhtdSOamFQFGGg==" crossorigin=anonymous defer></script>
 <script src=/main.min.9342d29d0e3e250a2c03282306b766e004888dba0fd661a17d7b106655e013bf85733f086ad330e3df0929c713dd81c0ea835966fa92e4a1e38f7ea9680524ed.js integrity="sha512-k0LSnQ4+JQosAygjBrdm4ASIjboP1mGhfXsQZlXgE7+Fcz8IatMw498JKccT3YHA6oNZZvqS5KHjj36paAUk7Q==" crossorigin=anonymous defer></script>
-<script src=https://gambitbsm.org/index.min.03ab9c2e460a36904d0b1544581433f337b9e5e23e6798a396683f418d37e30979da1ab2a8ef201c110075d73ccb12f8cc2605c7d9723f99bef11ed7c8b97844.js integrity="sha512-A6ucLkYKNpBNCxVEWBQz8ze55eI+Z5ijlmg/QY034wl52hqyqO8gHBEAddc8yxL4zCYFx9lyP5m+8R7XyLl4RA==" crossorigin=anonymous defer></script></body></html>
+<script src=https://gambitbsm.org/index.min.3a8ee06d0c346f1fb70040b0fbcbaaacf335cb34023c408954406a05db2089fc2ca349119b9f7d68b9e7044e82b8fdc8bd9661b6ef8b118246c5a2079d7fa8e9.js integrity="sha512-Oo7gbQw0bx+3AECw+8uqrPM1yzQCPECJVEBqBdsgifwso0kRm599aLnnBE6CuP3IvZZhtu+LEYJGxaIHnX+o6Q==" crossorigin=anonymous defer></script></body></html>

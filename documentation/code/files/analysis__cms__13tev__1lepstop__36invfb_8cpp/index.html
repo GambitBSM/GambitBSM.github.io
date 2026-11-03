@@ -41,49 +41,6 @@ namespace Gambit {
     class Analysis_CMS_13TeV_1LEPStop_36invfb : public Analysis {
     private:
 
-        // Numbers passing cuts
-        std::map&lt;string, EventCounter&gt; _counters = {
-            // Aggregate SRs
-            {&quot;aggregateSR0&quot;, EventCounter(&quot;aggregateSR0&quot;)},
-            {&quot;aggregateSR1&quot;, EventCounter(&quot;aggregateSR1&quot;)},
-            {&quot;aggregateSR2&quot;, EventCounter(&quot;aggregateSR2&quot;)},
-            {&quot;aggregateSR3&quot;, EventCounter(&quot;aggregateSR3&quot;)},
-            {&quot;aggregateSR4&quot;, EventCounter(&quot;aggregateSR4&quot;)},
-            {&quot;aggregateSR5&quot;, EventCounter(&quot;aggregateSR5&quot;)},
-            // Fine-binned SRs
-            // {&quot;SR0&quot;, EventCounter(&quot;SR0&quot;)},
-            // {&quot;SR1&quot;, EventCounter(&quot;SR1&quot;)},
-            // {&quot;SR2&quot;, EventCounter(&quot;SR2&quot;)},
-            // {&quot;SR3&quot;, EventCounter(&quot;SR3&quot;)},
-            // {&quot;SR4&quot;, EventCounter(&quot;SR4&quot;)},
-            // {&quot;SR5&quot;, EventCounter(&quot;SR5&quot;)},
-            // {&quot;SR6&quot;, EventCounter(&quot;SR6&quot;)},
-            // {&quot;SR7&quot;, EventCounter(&quot;SR7&quot;)},
-            // {&quot;SR8&quot;, EventCounter(&quot;SR8&quot;)},
-            // {&quot;SR9&quot;, EventCounter(&quot;SR9&quot;)},
-            // {&quot;SR10&quot;, EventCounter(&quot;SR10&quot;)},
-            // {&quot;SR11&quot;, EventCounter(&quot;SR11&quot;)},
-            // {&quot;SR12&quot;, EventCounter(&quot;SR12&quot;)},
-            // {&quot;SR13&quot;, EventCounter(&quot;SR13&quot;)},
-            // {&quot;SR14&quot;, EventCounter(&quot;SR14&quot;)},
-            // {&quot;SR15&quot;, EventCounter(&quot;SR15&quot;)},
-            // {&quot;SR16&quot;, EventCounter(&quot;SR16&quot;)},
-            // {&quot;SR17&quot;, EventCounter(&quot;SR17&quot;)},
-            // {&quot;SR18&quot;, EventCounter(&quot;SR18&quot;)},
-            // {&quot;SR19&quot;, EventCounter(&quot;SR19&quot;)},
-            // {&quot;SR20&quot;, EventCounter(&quot;SR20&quot;)},
-            // {&quot;SR21&quot;, EventCounter(&quot;SR21&quot;)},
-            // {&quot;SR22&quot;, EventCounter(&quot;SR22&quot;)},
-            // {&quot;SR23&quot;, EventCounter(&quot;SR23&quot;)},
-            // {&quot;SR24&quot;, EventCounter(&quot;SR24&quot;)},
-            // {&quot;SR25&quot;, EventCounter(&quot;SR25&quot;)},
-            // {&quot;SR26&quot;, EventCounter(&quot;SR26&quot;)},
-            // {&quot;SR27&quot;, EventCounter(&quot;SR27&quot;)},
-            // {&quot;SR28&quot;, EventCounter(&quot;SR28&quot;)},
-            // {&quot;SR29&quot;, EventCounter(&quot;SR29&quot;)},
-            // {&quot;SR30&quot;, EventCounter(&quot;SR30&quot;)},
-        };
-
         static const size_t NUM_aggregateSR = 6;
 
         // Cut Flow
@@ -132,9 +89,53 @@ namespace Gambit {
             &quot;**t_mod&gt;0&quot;,
             &quot;**t_mod&gt;10&quot;,
             &quot;**Mlb&lt;175&quot;,
-            &quot;**Mlb&gt;175&quot;}) {
+            &quot;**Mlb&gt;175&quot;})
+        {
+
+          // Numbers passing cuts
+          // Aggregate SRs
+          _counters[&quot;aggregateSR0&quot;] = EventCounter(&quot;aggregateSR0&quot;);
+          _counters[&quot;aggregateSR1&quot;] = EventCounter(&quot;aggregateSR1&quot;);
+          _counters[&quot;aggregateSR2&quot;] = EventCounter(&quot;aggregateSR2&quot;);
+          _counters[&quot;aggregateSR3&quot;] = EventCounter(&quot;aggregateSR3&quot;);
+          _counters[&quot;aggregateSR4&quot;] = EventCounter(&quot;aggregateSR4&quot;);
+          _counters[&quot;aggregateSR5&quot;] = EventCounter(&quot;aggregateSR5&quot;);
+              // Fine-binned SRs
+            // _counters[&quot;SR0&quot;] = EventCounter(&quot;SR0&quot;);
+            // _counters[&quot;SR1&quot;] = EventCounter(&quot;SR1&quot;);
+            // _counters[&quot;SR2&quot;] = EventCounter(&quot;SR2&quot;);
+            // _counters[&quot;SR3&quot;] = EventCounter(&quot;SR3&quot;);
+            // _counters[&quot;SR4&quot;] = EventCounter(&quot;SR4&quot;);
+            // _counters[&quot;SR5&quot;] = EventCounter(&quot;SR5&quot;);
+            // _counters[&quot;SR6&quot;] = EventCounter(&quot;SR6&quot;);
+            // _counters[&quot;SR7&quot;] = EventCounter(&quot;SR7&quot;);
+            // _counters[&quot;SR8&quot;] = EventCounter(&quot;SR8&quot;);
+            // _counters[&quot;SR9&quot;] = EventCounter(&quot;SR9&quot;);
+            // _counters[&quot;SR10&quot;] = EventCounter(&quot;SR10&quot;);
+            // _counters[&quot;SR11&quot;] = EventCounter(&quot;SR11&quot;);
+            // _counters[&quot;SR12&quot;] = EventCounter(&quot;SR12&quot;);
+            // _counters[&quot;SR13&quot;] = EventCounter(&quot;SR13&quot;);
+            // _counters[&quot;SR14&quot;] = EventCounter(&quot;SR14&quot;);
+            // _counters[&quot;SR15&quot;] = EventCounter(&quot;SR15&quot;);
+            // _counters[&quot;SR16&quot;] = EventCounter(&quot;SR16&quot;);
+            // _counters[&quot;SR17&quot;] = EventCounter(&quot;SR17&quot;);
+            // _counters[&quot;SR18&quot;] = EventCounter(&quot;SR18&quot;);
+            // _counters[&quot;SR19&quot;] = EventCounter(&quot;SR19&quot;);
+            // _counters[&quot;SR20&quot;] = EventCounter(&quot;SR20&quot;);
+            // _counters[&quot;SR21&quot;] = EventCounter(&quot;SR21&quot;);
+            // _counters[&quot;SR22&quot;] = EventCounter(&quot;SR22&quot;);
+            // _counters[&quot;SR23&quot;] = EventCounter(&quot;SR23&quot;);
+            // _counters[&quot;SR24&quot;] = EventCounter(&quot;SR24&quot;);
+            // _counters[&quot;SR25&quot;] = EventCounter(&quot;SR25&quot;);
+            // _counters[&quot;SR26&quot;] = EventCounter(&quot;SR26&quot;);
+            // _counters[&quot;SR27&quot;] = EventCounter(&quot;SR27&quot;);
+            // _counters[&quot;SR28&quot;] = EventCounter(&quot;SR28&quot;);
+            // _counters[&quot;SR29&quot;] = EventCounter(&quot;SR29&quot;);
+            // _counters[&quot;SR30&quot;] = EventCounter(&quot;SR30&quot;);
+
 
             set_analysis_name(&quot;CMS_13TeV_1LEPStop_36invfb&quot;);
+            set_detector_name(detector);
             set_luminosity(35.9);
         }
 
@@ -155,7 +156,7 @@ namespace Gambit {
                 if (electron-&gt;pT() &gt; 5. &amp;&amp; electron-&gt;abseta() &lt; 2.4 ) baselineElectrons.push_back(electron);
 
             // Apply electron efficiency
-            CMS::applyElectronEff(baselineElectrons);
+            applyEfficiency(baselineElectrons, CMS::eff2DEl.at(&quot;Generic&quot;));
 
             // Muon objects
             vector&lt;const HEPUtils::Particle*&gt; baselineMuons;
@@ -163,7 +164,7 @@ namespace Gambit {
                 if (muon-&gt;pT() &gt; 5. &amp;&amp; muon-&gt;abseta() &lt; 2.4 ) baselineMuons.push_back(muon);
 
             // Apply muon efficiency
-            CMS::applyMuonEff(baselineMuons);
+            applyEfficiency(baselineMuons, CMS::eff2DMu.at(&quot;Generic&quot;));
 
             // Jets
             vector&lt;const HEPUtils::Jet*&gt; baselineJets;
@@ -416,15 +417,6 @@ namespace Gambit {
 
         }
 
-        /// Combine the variables of another copy of this analysis (typically on another thread) into this one.
-        void combine(const Analysis* other)
-        {
-            const Analysis_CMS_13TeV_1LEPStop_36invfb* specificOther
-                = dynamic_cast&lt;const Analysis_CMS_13TeV_1LEPStop_36invfb*&gt;(other);
-
-            for (auto&amp; pair : _counters) { pair.second += specificOther-&gt;_counters.at(pair.first); }
-        }
-
 
         void collect_results() {
 
@@ -487,7 +479,7 @@ namespace Gambit {
 
   }
 }
-</code></pre><hr><p>Updated on 2025-02-12 at 16:10:35 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.d5e27a6ed00168b7a66eb637878a6be7d054db51d0e613bbcfda12ab0569b62177253b4e6453c477574b3a38f50eff49a68f0e19112bd82a68c78a66cd8d05df.js integrity="sha512-1eJ6btABaLembrY3h4pr59BU21HQ5hO7z9oSqwVptiF3JTtOZFPEd1dLOjj1Dv9Jpo8OGREr2Cpox4pmzY0F3w==" crossorigin=anonymous defer></script>
+</code></pre><hr><p>Updated on 2026-11-03 at 14:50:47 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.d5e27a6ed00168b7a66eb637878a6be7d054db51d0e613bbcfda12ab0569b62177253b4e6453c477574b3a38f50eff49a68f0e19112bd82a68c78a66cd8d05df.js integrity="sha512-1eJ6btABaLembrY3h4pr59BU21HQ5hO7z9oSqwVptiF3JTtOZFPEd1dLOjj1Dv9Jpo8OGREr2Cpox4pmzY0F3w==" crossorigin=anonymous defer></script>
 <script src=/js/highlight.min.9003483b4531b86467c8b801b1d5fc5439bb0d6bdb6c6a760a1b54abf37d6bbadf8423dbc81a3359c935c7705bb7d183b46131ba4a9c861b5d48e6a61501461a.js integrity="sha512-kANIO0UxuGRnyLgBsdX8VDm7DWvbbGp2ChtUq/N9a7rfhCPbyBozWck1x3Bbt9GDtGExukqchhtdSOamFQFGGg==" crossorigin=anonymous defer></script>
 <script src=/main.min.9342d29d0e3e250a2c03282306b766e004888dba0fd661a17d7b106655e013bf85733f086ad330e3df0929c713dd81c0ea835966fa92e4a1e38f7ea9680524ed.js integrity="sha512-k0LSnQ4+JQosAygjBrdm4ASIjboP1mGhfXsQZlXgE7+Fcz8IatMw498JKccT3YHA6oNZZvqS5KHjj36paAUk7Q==" crossorigin=anonymous defer></script>
-<script src=https://gambitbsm.org/index.min.03ab9c2e460a36904d0b1544581433f337b9e5e23e6798a396683f418d37e30979da1ab2a8ef201c110075d73ccb12f8cc2605c7d9723f99bef11ed7c8b97844.js integrity="sha512-A6ucLkYKNpBNCxVEWBQz8ze55eI+Z5ijlmg/QY034wl52hqyqO8gHBEAddc8yxL4zCYFx9lyP5m+8R7XyLl4RA==" crossorigin=anonymous defer></script></body></html>
+<script src=https://gambitbsm.org/index.min.3a8ee06d0c346f1fb70040b0fbcbaaacf335cb34023c408954406a05db2089fc2ca349119b9f7d68b9e7044e82b8fdc8bd9661b6ef8b118246c5a2079d7fa8e9.js integrity="sha512-Oo7gbQw0bx+3AECw+8uqrPM1yzQCPECJVEBqBdsgifwso0kRm599aLnnBE6CuP3IvZZhtu+LEYJGxaIHnX+o6Q==" crossorigin=anonymous defer></script></body></html>

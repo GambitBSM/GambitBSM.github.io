@@ -47,145 +47,6 @@ namespace Gambit {
     class Analysis_CMS_13TeV_2SSLEP_Stop_36invfb : public Analysis {
     protected:
 
-        // Counters for the number of accepted events for each signal region
-        std::map&lt;string, EventCounter&gt; _counters = {
-            // HH
-            {&quot;SRHH-0&quot;, EventCounter(&quot;SRHH-0&quot;)},
-            {&quot;SRHH-1&quot;, EventCounter(&quot;SRHH-1&quot;)},
-            {&quot;SRHH-2&quot;, EventCounter(&quot;SRHH-2&quot;)},
-            {&quot;SRHH-3&quot;, EventCounter(&quot;SRHH-3&quot;)},
-            {&quot;SRHH-4&quot;, EventCounter(&quot;SRHH-4&quot;)},
-            {&quot;SRHH-5&quot;, EventCounter(&quot;SRHH-5&quot;)},
-            {&quot;SRHH-6&quot;, EventCounter(&quot;SRHH-6&quot;)},
-            {&quot;SRHH-7&quot;, EventCounter(&quot;SRHH-7&quot;)},
-            {&quot;SRHH-8&quot;, EventCounter(&quot;SRHH-8&quot;)},
-            {&quot;SRHH-9&quot;, EventCounter(&quot;SRHH-9&quot;)},
-            {&quot;SRHH-10&quot;, EventCounter(&quot;SRHH-10&quot;)},
-            {&quot;SRHH-11&quot;, EventCounter(&quot;SRHH-11&quot;)},
-            {&quot;SRHH-12&quot;, EventCounter(&quot;SRHH-12&quot;)},
-            {&quot;SRHH-13&quot;, EventCounter(&quot;SRHH-13&quot;)},
-            {&quot;SRHH-14&quot;, EventCounter(&quot;SRHH-14&quot;)},
-            {&quot;SRHH-15&quot;, EventCounter(&quot;SRHH-15&quot;)},
-            {&quot;SRHH-16&quot;, EventCounter(&quot;SRHH-16&quot;)},
-            {&quot;SRHH-17&quot;, EventCounter(&quot;SRHH-17&quot;)},
-            {&quot;SRHH-18&quot;, EventCounter(&quot;SRHH-18&quot;)},
-            {&quot;SRHH-19&quot;, EventCounter(&quot;SRHH-19&quot;)},
-            {&quot;SRHH-20&quot;, EventCounter(&quot;SRHH-20&quot;)},
-            {&quot;SRHH-21&quot;, EventCounter(&quot;SRHH-21&quot;)},
-            {&quot;SRHH-22&quot;, EventCounter(&quot;SRHH-22&quot;)},
-            {&quot;SRHH-23&quot;, EventCounter(&quot;SRHH-23&quot;)},
-            {&quot;SRHH-24&quot;, EventCounter(&quot;SRHH-24&quot;)},
-            {&quot;SRHH-25&quot;, EventCounter(&quot;SRHH-25&quot;)},
-            {&quot;SRHH-26&quot;, EventCounter(&quot;SRHH-26&quot;)},
-            {&quot;SRHH-27&quot;, EventCounter(&quot;SRHH-27&quot;)},
-            {&quot;SRHH-28&quot;, EventCounter(&quot;SRHH-28&quot;)},
-            {&quot;SRHH-29&quot;, EventCounter(&quot;SRHH-29&quot;)},
-            {&quot;SRHH-30&quot;, EventCounter(&quot;SRHH-30&quot;)},
-            {&quot;SRHH-31&quot;, EventCounter(&quot;SRHH-31&quot;)},
-            {&quot;SRHH-32&quot;, EventCounter(&quot;SRHH-32&quot;)},
-            {&quot;SRHH-33&quot;, EventCounter(&quot;SRHH-33&quot;)},
-            {&quot;SRHH-34&quot;, EventCounter(&quot;SRHH-34&quot;)},
-            {&quot;SRHH-35&quot;, EventCounter(&quot;SRHH-35&quot;)},
-            {&quot;SRHH-36&quot;, EventCounter(&quot;SRHH-36&quot;)},
-            {&quot;SRHH-37&quot;, EventCounter(&quot;SRHH-37&quot;)},
-            {&quot;SRHH-38&quot;, EventCounter(&quot;SRHH-38&quot;)},
-            {&quot;SRHH-39&quot;, EventCounter(&quot;SRHH-39&quot;)},
-            {&quot;SRHH-40&quot;, EventCounter(&quot;SRHH-40&quot;)},
-            {&quot;SRHH-41&quot;, EventCounter(&quot;SRHH-41&quot;)},
-            {&quot;SRHH-42&quot;, EventCounter(&quot;SRHH-42&quot;)},
-            {&quot;SRHH-43&quot;, EventCounter(&quot;SRHH-43&quot;)},
-            {&quot;SRHH-44&quot;, EventCounter(&quot;SRHH-44&quot;)},
-            {&quot;SRHH-45&quot;, EventCounter(&quot;SRHH-45&quot;)},
-            {&quot;SRHH-46&quot;, EventCounter(&quot;SRHH-46&quot;)},
-            {&quot;SRHH-47&quot;, EventCounter(&quot;SRHH-47&quot;)},
-            {&quot;SRHH-48&quot;, EventCounter(&quot;SRHH-48&quot;)},
-            {&quot;SRHH-49&quot;, EventCounter(&quot;SRHH-49&quot;)},
-            {&quot;SRHH-50&quot;, EventCounter(&quot;SRHH-50&quot;)},
-            // HL
-            {&quot;SRHL-0&quot;, EventCounter(&quot;SRHL-0&quot;)},
-            {&quot;SRHL-1&quot;, EventCounter(&quot;SRHL-1&quot;)},
-            {&quot;SRHL-2&quot;, EventCounter(&quot;SRHL-2&quot;)},
-            {&quot;SRHL-3&quot;, EventCounter(&quot;SRHL-3&quot;)},
-            {&quot;SRHL-4&quot;, EventCounter(&quot;SRHL-4&quot;)},
-            {&quot;SRHL-5&quot;, EventCounter(&quot;SRHL-5&quot;)},
-            {&quot;SRHL-6&quot;, EventCounter(&quot;SRHL-6&quot;)},
-            {&quot;SRHL-7&quot;, EventCounter(&quot;SRHL-7&quot;)},
-            {&quot;SRHL-8&quot;, EventCounter(&quot;SRHL-8&quot;)},
-            {&quot;SRHL-9&quot;, EventCounter(&quot;SRHL-9&quot;)},
-            {&quot;SRHL-10&quot;, EventCounter(&quot;SRHL-10&quot;)},
-            {&quot;SRHL-11&quot;, EventCounter(&quot;SRHL-11&quot;)},
-            {&quot;SRHL-12&quot;, EventCounter(&quot;SRHL-12&quot;)},
-            {&quot;SRHL-13&quot;, EventCounter(&quot;SRHL-13&quot;)},
-            {&quot;SRHL-14&quot;, EventCounter(&quot;SRHL-14&quot;)},
-            {&quot;SRHL-15&quot;, EventCounter(&quot;SRHL-15&quot;)},
-            {&quot;SRHL-16&quot;, EventCounter(&quot;SRHL-16&quot;)},
-            {&quot;SRHL-17&quot;, EventCounter(&quot;SRHL-17&quot;)},
-            {&quot;SRHL-18&quot;, EventCounter(&quot;SRHL-18&quot;)},
-            {&quot;SRHL-19&quot;, EventCounter(&quot;SRHL-19&quot;)},
-            {&quot;SRHL-20&quot;, EventCounter(&quot;SRHL-20&quot;)},
-            {&quot;SRHL-21&quot;, EventCounter(&quot;SRHL-21&quot;)},
-            {&quot;SRHL-22&quot;, EventCounter(&quot;SRHL-22&quot;)},
-            {&quot;SRHL-23&quot;, EventCounter(&quot;SRHL-23&quot;)},
-            {&quot;SRHL-24&quot;, EventCounter(&quot;SRHL-24&quot;)},
-            {&quot;SRHL-25&quot;, EventCounter(&quot;SRHL-25&quot;)},
-            {&quot;SRHL-26&quot;, EventCounter(&quot;SRHL-26&quot;)},
-            {&quot;SRHL-27&quot;, EventCounter(&quot;SRHL-27&quot;)},
-            {&quot;SRHL-28&quot;, EventCounter(&quot;SRHL-28&quot;)},
-            {&quot;SRHL-29&quot;, EventCounter(&quot;SRHL-29&quot;)},
-            {&quot;SRHL-30&quot;, EventCounter(&quot;SRHL-30&quot;)},
-            {&quot;SRHL-31&quot;, EventCounter(&quot;SRHL-31&quot;)},
-            {&quot;SRHL-32&quot;, EventCounter(&quot;SRHL-32&quot;)},
-            {&quot;SRHL-33&quot;, EventCounter(&quot;SRHL-33&quot;)},
-            {&quot;SRHL-34&quot;, EventCounter(&quot;SRHL-34&quot;)},
-            {&quot;SRHL-35&quot;, EventCounter(&quot;SRHL-35&quot;)},
-            {&quot;SRHL-36&quot;, EventCounter(&quot;SRHL-36&quot;)},
-            {&quot;SRHL-37&quot;, EventCounter(&quot;SRHL-37&quot;)},
-            {&quot;SRHL-38&quot;, EventCounter(&quot;SRHL-38&quot;)},
-            {&quot;SRHL-39&quot;, EventCounter(&quot;SRHL-39&quot;)},
-            {&quot;SRHL-40&quot;, EventCounter(&quot;SRHL-40&quot;)},
-            // LL
-            {&quot;SRLL-0&quot;, EventCounter(&quot;SRLL-0&quot;)},
-            {&quot;SRLL-1&quot;, EventCounter(&quot;SRLL-1&quot;)},
-            {&quot;SRLL-2&quot;, EventCounter(&quot;SRLL-2&quot;)},
-            {&quot;SRLL-3&quot;, EventCounter(&quot;SRLL-3&quot;)},
-            {&quot;SRLL-4&quot;, EventCounter(&quot;SRLL-4&quot;)},
-            {&quot;SRLL-5&quot;, EventCounter(&quot;SRLL-5&quot;)},
-            {&quot;SRLL-6&quot;, EventCounter(&quot;SRLL-6&quot;)},
-            {&quot;SRLL-7&quot;, EventCounter(&quot;SRLL-7&quot;)},
-            // inc
-            {&quot;SRinc-0&quot;, EventCounter(&quot;SRinc-0&quot;)},
-            {&quot;SRinc-1&quot;, EventCounter(&quot;SRinc-1&quot;)},
-            {&quot;SRinc-2&quot;, EventCounter(&quot;SRinc-2&quot;)},
-            {&quot;SRinc-3&quot;, EventCounter(&quot;SRinc-3&quot;)},
-            {&quot;SRinc-4&quot;, EventCounter(&quot;SRinc-4&quot;)},
-            {&quot;SRinc-5&quot;, EventCounter(&quot;SRinc-5&quot;)},
-            {&quot;SRinc-6&quot;, EventCounter(&quot;SRinc-6&quot;)},
-            {&quot;SRinc-7&quot;, EventCounter(&quot;SRinc-7&quot;)},
-            {&quot;SRinc-8&quot;, EventCounter(&quot;SRinc-8&quot;)},
-            {&quot;SRinc-9&quot;, EventCounter(&quot;SRinc-9&quot;)},
-            {&quot;SRinc-10&quot;, EventCounter(&quot;SRinc-10&quot;)},
-            {&quot;SRinc-11&quot;, EventCounter(&quot;SRinc-11&quot;)},
-            {&quot;SRinc-12&quot;, EventCounter(&quot;SRinc-12&quot;)},
-            {&quot;SRinc-13&quot;, EventCounter(&quot;SRinc-13&quot;)},
-            {&quot;SRinc-14&quot;, EventCounter(&quot;SRinc-14&quot;)},
-            // exc
-            {&quot;SRexc-0&quot;, EventCounter(&quot;SRexc-0&quot;)},
-            {&quot;SRexc-1&quot;, EventCounter(&quot;SRexc-1&quot;)},
-            {&quot;SRexc-2&quot;, EventCounter(&quot;SRexc-2&quot;)},
-            {&quot;SRexc-3&quot;, EventCounter(&quot;SRexc-3&quot;)},
-            {&quot;SRexc-4&quot;, EventCounter(&quot;SRexc-4&quot;)},
-            {&quot;SRexc-5&quot;, EventCounter(&quot;SRexc-5&quot;)},
-            {&quot;SRexc-6&quot;, EventCounter(&quot;SRexc-6&quot;)},
-            {&quot;SRexc-7&quot;, EventCounter(&quot;SRexc-7&quot;)},
-            {&quot;SRexc-8&quot;, EventCounter(&quot;SRexc-8&quot;)},
-            {&quot;SRexc-9&quot;, EventCounter(&quot;SRexc-9&quot;)},
-            {&quot;SRexc-10&quot;, EventCounter(&quot;SRexc-10&quot;)},
-            {&quot;SRexc-11&quot;, EventCounter(&quot;SRexc-11&quot;)},
-            {&quot;SRexc-12&quot;, EventCounter(&quot;SRexc-12&quot;)},
-            {&quot;SRexc-13&quot;, EventCounter(&quot;SRexc-13&quot;)},
-            {&quot;SRexc-14&quot;, EventCounter(&quot;SRexc-14&quot;)},
-        };
-
         Cutflow _cutflow;
 
       // The following section copied from Analysis_ATLAS_1LEPStop_20invfb.cpp
@@ -248,7 +109,146 @@ namespace Gambit {
         Analysis_CMS_13TeV_2SSLEP_Stop_36invfb():
         _cutflow(&quot;CMS_13TeV_2SSLEP_Stop_36invfb&quot;, {&quot;Trigger_and_2leptons&quot;, &quot;At_least_one_SS_lepton_pair&quot;, &quot;Baseline&quot;})
         {
+            // Counters for the number of accepted events for each signal region
+            // HH
+            _counters[&quot;SRHH-0&quot;] = EventCounter(&quot;SRHH-0&quot;);
+            _counters[&quot;SRHH-1&quot;] = EventCounter(&quot;SRHH-1&quot;);
+            _counters[&quot;SRHH-2&quot;] = EventCounter(&quot;SRHH-2&quot;);
+            _counters[&quot;SRHH-3&quot;] = EventCounter(&quot;SRHH-3&quot;);
+            _counters[&quot;SRHH-4&quot;] = EventCounter(&quot;SRHH-4&quot;);
+            _counters[&quot;SRHH-5&quot;] = EventCounter(&quot;SRHH-5&quot;);
+            _counters[&quot;SRHH-6&quot;] = EventCounter(&quot;SRHH-6&quot;);
+            _counters[&quot;SRHH-7&quot;] = EventCounter(&quot;SRHH-7&quot;);
+            _counters[&quot;SRHH-8&quot;] = EventCounter(&quot;SRHH-8&quot;);
+            _counters[&quot;SRHH-9&quot;] = EventCounter(&quot;SRHH-9&quot;);
+            _counters[&quot;SRHH-10&quot;] = EventCounter(&quot;SRHH-10&quot;);
+            _counters[&quot;SRHH-11&quot;] = EventCounter(&quot;SRHH-11&quot;);
+            _counters[&quot;SRHH-12&quot;] = EventCounter(&quot;SRHH-12&quot;);
+            _counters[&quot;SRHH-13&quot;] = EventCounter(&quot;SRHH-13&quot;);
+            _counters[&quot;SRHH-14&quot;] = EventCounter(&quot;SRHH-14&quot;);
+            _counters[&quot;SRHH-15&quot;] = EventCounter(&quot;SRHH-15&quot;);
+            _counters[&quot;SRHH-16&quot;] = EventCounter(&quot;SRHH-16&quot;);
+            _counters[&quot;SRHH-17&quot;] = EventCounter(&quot;SRHH-17&quot;);
+            _counters[&quot;SRHH-18&quot;] = EventCounter(&quot;SRHH-18&quot;);
+            _counters[&quot;SRHH-19&quot;] = EventCounter(&quot;SRHH-19&quot;);
+            _counters[&quot;SRHH-20&quot;] = EventCounter(&quot;SRHH-20&quot;);
+            _counters[&quot;SRHH-21&quot;] = EventCounter(&quot;SRHH-21&quot;);
+            _counters[&quot;SRHH-22&quot;] = EventCounter(&quot;SRHH-22&quot;);
+            _counters[&quot;SRHH-23&quot;] = EventCounter(&quot;SRHH-23&quot;);
+            _counters[&quot;SRHH-24&quot;] = EventCounter(&quot;SRHH-24&quot;);
+            _counters[&quot;SRHH-25&quot;] = EventCounter(&quot;SRHH-25&quot;);
+            _counters[&quot;SRHH-26&quot;] = EventCounter(&quot;SRHH-26&quot;);
+            _counters[&quot;SRHH-27&quot;] = EventCounter(&quot;SRHH-27&quot;);
+            _counters[&quot;SRHH-28&quot;] = EventCounter(&quot;SRHH-28&quot;);
+            _counters[&quot;SRHH-29&quot;] = EventCounter(&quot;SRHH-29&quot;);
+            _counters[&quot;SRHH-30&quot;] = EventCounter(&quot;SRHH-30&quot;);
+            _counters[&quot;SRHH-31&quot;] = EventCounter(&quot;SRHH-31&quot;);
+            _counters[&quot;SRHH-32&quot;] = EventCounter(&quot;SRHH-32&quot;);
+            _counters[&quot;SRHH-33&quot;] = EventCounter(&quot;SRHH-33&quot;);
+            _counters[&quot;SRHH-34&quot;] = EventCounter(&quot;SRHH-34&quot;);
+            _counters[&quot;SRHH-35&quot;] = EventCounter(&quot;SRHH-35&quot;);
+            _counters[&quot;SRHH-36&quot;] = EventCounter(&quot;SRHH-36&quot;);
+            _counters[&quot;SRHH-37&quot;] = EventCounter(&quot;SRHH-37&quot;);
+            _counters[&quot;SRHH-38&quot;] = EventCounter(&quot;SRHH-38&quot;);
+            _counters[&quot;SRHH-39&quot;] = EventCounter(&quot;SRHH-39&quot;);
+            _counters[&quot;SRHH-40&quot;] = EventCounter(&quot;SRHH-40&quot;);
+            _counters[&quot;SRHH-41&quot;] = EventCounter(&quot;SRHH-41&quot;);
+            _counters[&quot;SRHH-42&quot;] = EventCounter(&quot;SRHH-42&quot;);
+            _counters[&quot;SRHH-43&quot;] = EventCounter(&quot;SRHH-43&quot;);
+            _counters[&quot;SRHH-44&quot;] = EventCounter(&quot;SRHH-44&quot;);
+            _counters[&quot;SRHH-45&quot;] = EventCounter(&quot;SRHH-45&quot;);
+            _counters[&quot;SRHH-46&quot;] = EventCounter(&quot;SRHH-46&quot;);
+            _counters[&quot;SRHH-47&quot;] = EventCounter(&quot;SRHH-47&quot;);
+            _counters[&quot;SRHH-48&quot;] = EventCounter(&quot;SRHH-48&quot;);
+            _counters[&quot;SRHH-49&quot;] = EventCounter(&quot;SRHH-49&quot;);
+            _counters[&quot;SRHH-50&quot;] = EventCounter(&quot;SRHH-50&quot;);
+            // HL
+            _counters[&quot;SRHL-0&quot;] = EventCounter(&quot;SRHL-0&quot;);
+            _counters[&quot;SRHL-1&quot;] = EventCounter(&quot;SRHL-1&quot;);
+            _counters[&quot;SRHL-2&quot;] = EventCounter(&quot;SRHL-2&quot;);
+            _counters[&quot;SRHL-3&quot;] = EventCounter(&quot;SRHL-3&quot;);
+            _counters[&quot;SRHL-4&quot;] = EventCounter(&quot;SRHL-4&quot;);
+            _counters[&quot;SRHL-5&quot;] = EventCounter(&quot;SRHL-5&quot;);
+            _counters[&quot;SRHL-6&quot;] = EventCounter(&quot;SRHL-6&quot;);
+            _counters[&quot;SRHL-7&quot;] = EventCounter(&quot;SRHL-7&quot;);
+            _counters[&quot;SRHL-8&quot;] = EventCounter(&quot;SRHL-8&quot;);
+            _counters[&quot;SRHL-9&quot;] = EventCounter(&quot;SRHL-9&quot;);
+            _counters[&quot;SRHL-10&quot;] = EventCounter(&quot;SRHL-10&quot;);
+            _counters[&quot;SRHL-11&quot;] = EventCounter(&quot;SRHL-11&quot;);
+            _counters[&quot;SRHL-12&quot;] = EventCounter(&quot;SRHL-12&quot;);
+            _counters[&quot;SRHL-13&quot;] = EventCounter(&quot;SRHL-13&quot;);
+            _counters[&quot;SRHL-14&quot;] = EventCounter(&quot;SRHL-14&quot;);
+            _counters[&quot;SRHL-15&quot;] = EventCounter(&quot;SRHL-15&quot;);
+            _counters[&quot;SRHL-16&quot;] = EventCounter(&quot;SRHL-16&quot;);
+            _counters[&quot;SRHL-17&quot;] = EventCounter(&quot;SRHL-17&quot;);
+            _counters[&quot;SRHL-18&quot;] = EventCounter(&quot;SRHL-18&quot;);
+            _counters[&quot;SRHL-19&quot;] = EventCounter(&quot;SRHL-19&quot;);
+            _counters[&quot;SRHL-20&quot;] = EventCounter(&quot;SRHL-20&quot;);
+            _counters[&quot;SRHL-21&quot;] = EventCounter(&quot;SRHL-21&quot;);
+            _counters[&quot;SRHL-22&quot;] = EventCounter(&quot;SRHL-22&quot;);
+            _counters[&quot;SRHL-23&quot;] = EventCounter(&quot;SRHL-23&quot;);
+            _counters[&quot;SRHL-24&quot;] = EventCounter(&quot;SRHL-24&quot;);
+            _counters[&quot;SRHL-25&quot;] = EventCounter(&quot;SRHL-25&quot;);
+            _counters[&quot;SRHL-26&quot;] = EventCounter(&quot;SRHL-26&quot;);
+            _counters[&quot;SRHL-27&quot;] = EventCounter(&quot;SRHL-27&quot;);
+            _counters[&quot;SRHL-28&quot;] = EventCounter(&quot;SRHL-28&quot;);
+            _counters[&quot;SRHL-29&quot;] = EventCounter(&quot;SRHL-29&quot;);
+            _counters[&quot;SRHL-30&quot;] = EventCounter(&quot;SRHL-30&quot;);
+            _counters[&quot;SRHL-31&quot;] = EventCounter(&quot;SRHL-31&quot;);
+            _counters[&quot;SRHL-32&quot;] = EventCounter(&quot;SRHL-32&quot;);
+            _counters[&quot;SRHL-33&quot;] = EventCounter(&quot;SRHL-33&quot;);
+            _counters[&quot;SRHL-34&quot;] = EventCounter(&quot;SRHL-34&quot;);
+            _counters[&quot;SRHL-35&quot;] = EventCounter(&quot;SRHL-35&quot;);
+            _counters[&quot;SRHL-36&quot;] = EventCounter(&quot;SRHL-36&quot;);
+            _counters[&quot;SRHL-37&quot;] = EventCounter(&quot;SRHL-37&quot;);
+            _counters[&quot;SRHL-38&quot;] = EventCounter(&quot;SRHL-38&quot;);
+            _counters[&quot;SRHL-39&quot;] = EventCounter(&quot;SRHL-39&quot;);
+            _counters[&quot;SRHL-40&quot;] = EventCounter(&quot;SRHL-40&quot;);
+            // LL
+            _counters[&quot;SRLL-0&quot;] = EventCounter(&quot;SRLL-0&quot;);
+            _counters[&quot;SRLL-1&quot;] = EventCounter(&quot;SRLL-1&quot;);
+            _counters[&quot;SRLL-2&quot;] = EventCounter(&quot;SRLL-2&quot;);
+            _counters[&quot;SRLL-3&quot;] = EventCounter(&quot;SRLL-3&quot;);
+            _counters[&quot;SRLL-4&quot;] = EventCounter(&quot;SRLL-4&quot;);
+            _counters[&quot;SRLL-5&quot;] = EventCounter(&quot;SRLL-5&quot;);
+            _counters[&quot;SRLL-6&quot;] = EventCounter(&quot;SRLL-6&quot;);
+            _counters[&quot;SRLL-7&quot;] = EventCounter(&quot;SRLL-7&quot;);
+            // inc
+            _counters[&quot;SRinc-0&quot;] = EventCounter(&quot;SRinc-0&quot;);
+            _counters[&quot;SRinc-1&quot;] = EventCounter(&quot;SRinc-1&quot;);
+            _counters[&quot;SRinc-2&quot;] = EventCounter(&quot;SRinc-2&quot;);
+            _counters[&quot;SRinc-3&quot;] = EventCounter(&quot;SRinc-3&quot;);
+            _counters[&quot;SRinc-4&quot;] = EventCounter(&quot;SRinc-4&quot;);
+            _counters[&quot;SRinc-5&quot;] = EventCounter(&quot;SRinc-5&quot;);
+            _counters[&quot;SRinc-6&quot;] = EventCounter(&quot;SRinc-6&quot;);
+            _counters[&quot;SRinc-7&quot;] = EventCounter(&quot;SRinc-7&quot;);
+            _counters[&quot;SRinc-8&quot;] = EventCounter(&quot;SRinc-8&quot;);
+            _counters[&quot;SRinc-9&quot;] = EventCounter(&quot;SRinc-9&quot;);
+            _counters[&quot;SRinc-10&quot;] = EventCounter(&quot;SRinc-10&quot;);
+            _counters[&quot;SRinc-11&quot;] = EventCounter(&quot;SRinc-11&quot;);
+            _counters[&quot;SRinc-12&quot;] = EventCounter(&quot;SRinc-12&quot;);
+            _counters[&quot;SRinc-13&quot;] = EventCounter(&quot;SRinc-13&quot;);
+            _counters[&quot;SRinc-14&quot;] = EventCounter(&quot;SRinc-14&quot;);
+            // exc
+            _counters[&quot;SRexc-0&quot;] = EventCounter(&quot;SRexc-0&quot;);
+            _counters[&quot;SRexc-1&quot;] = EventCounter(&quot;SRexc-1&quot;);
+            _counters[&quot;SRexc-2&quot;] = EventCounter(&quot;SRexc-2&quot;);
+            _counters[&quot;SRexc-3&quot;] = EventCounter(&quot;SRexc-3&quot;);
+            _counters[&quot;SRexc-4&quot;] = EventCounter(&quot;SRexc-4&quot;);
+            _counters[&quot;SRexc-5&quot;] = EventCounter(&quot;SRexc-5&quot;);
+            _counters[&quot;SRexc-6&quot;] = EventCounter(&quot;SRexc-6&quot;);
+            _counters[&quot;SRexc-7&quot;] = EventCounter(&quot;SRexc-7&quot;);
+            _counters[&quot;SRexc-8&quot;] = EventCounter(&quot;SRexc-8&quot;);
+            _counters[&quot;SRexc-9&quot;] = EventCounter(&quot;SRexc-9&quot;);
+            _counters[&quot;SRexc-10&quot;] = EventCounter(&quot;SRexc-10&quot;);
+            _counters[&quot;SRexc-11&quot;] = EventCounter(&quot;SRexc-11&quot;);
+            _counters[&quot;SRexc-12&quot;] = EventCounter(&quot;SRexc-12&quot;);
+            _counters[&quot;SRexc-13&quot;] = EventCounter(&quot;SRexc-13&quot;);
+            _counters[&quot;SRexc-14&quot;] = EventCounter(&quot;SRexc-14&quot;);
+
+
             set_analysis_name(&quot;CMS_13TeV_2SSLEP_Stop_36invfb&quot;);
+            set_detector_name(detector);
             set_luminosity(36);
         }
 
@@ -623,14 +623,6 @@ namespace Gambit {
             return;
         }
 
-        /// Combine the variables of another copy of this analysis (typically on another thread) into this one.
-        void combine(const Analysis* other)
-        {
-            const Analysis_CMS_13TeV_2SSLEP_Stop_36invfb* specificOther
-                = dynamic_cast&lt;const Analysis_CMS_13TeV_2SSLEP_Stop_36invfb*&gt;(other);
-            for (auto&amp; pair : _counters) { pair.second += specificOther-&gt;_counters.at(pair.first); }
-        }
-
 
         void collect_results() {
 
@@ -851,7 +843,7 @@ namespace Gambit {
 
   }
 }
-</code></pre><hr><p>Updated on 2025-02-12 at 16:10:35 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.d5e27a6ed00168b7a66eb637878a6be7d054db51d0e613bbcfda12ab0569b62177253b4e6453c477574b3a38f50eff49a68f0e19112bd82a68c78a66cd8d05df.js integrity="sha512-1eJ6btABaLembrY3h4pr59BU21HQ5hO7z9oSqwVptiF3JTtOZFPEd1dLOjj1Dv9Jpo8OGREr2Cpox4pmzY0F3w==" crossorigin=anonymous defer></script>
+</code></pre><hr><p>Updated on 2026-11-03 at 14:50:48 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.d5e27a6ed00168b7a66eb637878a6be7d054db51d0e613bbcfda12ab0569b62177253b4e6453c477574b3a38f50eff49a68f0e19112bd82a68c78a66cd8d05df.js integrity="sha512-1eJ6btABaLembrY3h4pr59BU21HQ5hO7z9oSqwVptiF3JTtOZFPEd1dLOjj1Dv9Jpo8OGREr2Cpox4pmzY0F3w==" crossorigin=anonymous defer></script>
 <script src=/js/highlight.min.9003483b4531b86467c8b801b1d5fc5439bb0d6bdb6c6a760a1b54abf37d6bbadf8423dbc81a3359c935c7705bb7d183b46131ba4a9c861b5d48e6a61501461a.js integrity="sha512-kANIO0UxuGRnyLgBsdX8VDm7DWvbbGp2ChtUq/N9a7rfhCPbyBozWck1x3Bbt9GDtGExukqchhtdSOamFQFGGg==" crossorigin=anonymous defer></script>
 <script src=/main.min.9342d29d0e3e250a2c03282306b766e004888dba0fd661a17d7b106655e013bf85733f086ad330e3df0929c713dd81c0ea835966fa92e4a1e38f7ea9680524ed.js integrity="sha512-k0LSnQ4+JQosAygjBrdm4ASIjboP1mGhfXsQZlXgE7+Fcz8IatMw498JKccT3YHA6oNZZvqS5KHjj36paAUk7Q==" crossorigin=anonymous defer></script>
-<script src=https://gambitbsm.org/index.min.03ab9c2e460a36904d0b1544581433f337b9e5e23e6798a396683f418d37e30979da1ab2a8ef201c110075d73ccb12f8cc2605c7d9723f99bef11ed7c8b97844.js integrity="sha512-A6ucLkYKNpBNCxVEWBQz8ze55eI+Z5ijlmg/QY034wl52hqyqO8gHBEAddc8yxL4zCYFx9lyP5m+8R7XyLl4RA==" crossorigin=anonymous defer></script></body></html>
+<script src=https://gambitbsm.org/index.min.3a8ee06d0c346f1fb70040b0fbcbaaacf335cb34023c408954406a05db2089fc2ca349119b9f7d68b9e7044e82b8fdc8bd9661b6ef8b118246c5a2079d7fa8e9.js integrity="sha512-Oo7gbQw0bx+3AECw+8uqrPM1yzQCPECJVEBqBdsgifwso0kRm599aLnnBE6CuP3IvZZhtu+LEYJGxaIHnX+o6Q==" crossorigin=anonymous defer></script></body></html>

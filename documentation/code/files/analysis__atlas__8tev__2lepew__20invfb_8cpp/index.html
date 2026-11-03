@@ -57,21 +57,6 @@ namespace Gambit
     {
       private:
 
-        // Numbers passing cuts (doubles because we will use the trigger eff)
-        double _num_MT2_90_SF;
-        double _num_MT2_90_DF;
-        double _num_MT2_120_SF;
-        double _num_MT2_120_DF;
-        double _num_MT2_150_SF;
-        double _num_MT2_150_DF;
-        double _num_WWa_SF;
-        double _num_WWa_DF;
-        double _num_WWb_SF;
-        double _num_WWb_DF;
-        double _num_WWc_SF;
-        double _num_WWc_DF;
-        double _num_Zjets;
-
         vector&lt;double&gt; cutFlowVector;
         vector&lt;double&gt; cutFlowIncrements;
         vector&lt;string&gt; cutFlowVector_str;
@@ -95,21 +80,22 @@ namespace Gambit
         {
 
           set_analysis_name(&quot;ATLAS_8TeV_2LEPEW_20invfb&quot;);
+          set_detector_name(detector);
           set_luminosity(20.3);
 
-          _num_MT2_90_SF=0;
-          _num_MT2_90_DF=0;
-          _num_MT2_120_SF=0;
-          _num_MT2_120_DF=0;
-          _num_MT2_150_SF=0;
-          _num_MT2_150_DF=0;
-          _num_WWa_SF=0;
-          _num_WWa_DF=0;
-          _num_WWb_SF=0;
-          _num_WWb_DF=0;
-          _num_WWc_SF=0;
-          _num_WWc_DF=0;
-          _num_Zjets=0;
+          _counters[&quot;MT2_90_SF&quot;] = EventCounter(&quot;MT2_90_SF&quot;);
+          _counters[&quot;MT2_90_DF&quot;] = EventCounter(&quot;MT2_90_DF&quot;);
+          _counters[&quot;MT2_120_SF&quot;] = EventCounter(&quot;MT2_120_SF&quot;);
+          _counters[&quot;MT2_120_DF&quot;] = EventCounter(&quot;MT2_120_DF&quot;);
+          _counters[&quot;MT2_150_SF&quot;] = EventCounter(&quot;MT2_150_SF&quot;);
+          _counters[&quot;MT2_150_DF&quot;] = EventCounter(&quot;MT2_150_DF&quot;);
+          _counters[&quot;WWa_SF&quot;] = EventCounter(&quot;WWa_SF&quot;);
+          _counters[&quot;WWa_DF&quot;] = EventCounter(&quot;WWa_DF&quot;);
+          _counters[&quot;WWb_SF&quot;] = EventCounter(&quot;WWb_SF&quot;);
+          _counters[&quot;WWb_DF&quot;] = EventCounter(&quot;WWb_DF&quot;);
+          _counters[&quot;WWc_SF&quot;] = EventCounter(&quot;WWc_SF&quot;);
+          _counters[&quot;WWc_DF&quot;] = EventCounter(&quot;WWc_DF&quot;);
+          _counters[&quot;Zjets&quot;] = EventCounter(&quot;Zjets&quot;);
 
           for(int i=0;i&lt;NCUTS;i++)
           {
@@ -288,7 +274,7 @@ namespace Gambit
           }
 
           // Apply electron efficiency
-          ATLAS::applyElectronEff(signalElectrons);
+          applyEfficiency(signalElectrons, ATLAS::eff2DEl.at(&quot;Generic&quot;));
 
           // Now define vector of baseline muons
           vector&lt;const HEPUtils::Particle*&gt; signalMuons;
@@ -298,7 +284,7 @@ namespace Gambit
           }
 
           // Apply muon efficiency
-          ATLAS::applyMuonEff(signalMuons);
+          applyEfficiency(signalMuons, ATLAS::eff2DMu.at(&quot;Generic&quot;));
 
           vector&lt;const HEPUtils::Jet*&gt; signalJets;
           for (const HEPUtils::Jet* jet : event-&gt;jets(&quot;antikt_R04&quot;))
@@ -312,7 +298,7 @@ namespace Gambit
           {
             if (tau-&gt;pT() &gt; 20. &amp;&amp; tau-&gt;abseta() &lt; 2.5) signalTaus.push_back(tau);
           }
-          ATLAS::applyTauEfficiencyR1(signalTaus);
+          applyEfficiency(signalTaus, ATLAS::effTau.at(&quot;R1&quot;));
 
           // Overlap removal
 
@@ -347,7 +333,7 @@ namespace Gambit
             candidateLeptons.push_back(muo);
           }
 
-          ATLAS::applyTightIDElectronSelection(signalElectrons);
+          applyEfficiency(signalElectrons, ATLAS::eff2DEl.at(&quot;ATLAS_CONF_2014_032_Tight&quot;));
 
           int numElectrons=signalElectrons.size();
           int numMuons=signalMuons.size();
@@ -458,17 +444,17 @@ namespace Gambit
             if(mt2&gt;150.)cut_SRMT2150=true;
 
             //Signal region increments use the trigger efficiencies for ee, emu and mumu triggers
-            if(mt2 &gt; 90. &amp;&amp; (numElectrons==1 &amp;&amp; numMuons==1)) _num_MT2_90_DF += event-&gt;weight() * 0.89;
-            if(passZVeto &amp;&amp; mt2 &gt; 90. &amp;&amp; (numElectrons==2 &amp;&amp; fabs(mll-91.)&gt;10)) _num_MT2_90_SF += event-&gt;weight() * 0.97;
-            if(passZVeto &amp;&amp; mt2 &gt; 90. &amp;&amp; (numMuons==2 &amp;&amp; fabs(mll-91.)&gt;10)) _num_MT2_90_SF += event-&gt;weight() * 0.75;
+            if(mt2 &gt; 90. &amp;&amp; (numElectrons==1 &amp;&amp; numMuons==1)) _counters[&quot;MT2_90_DF&quot;].add_event(event, event-&gt;weight() * 0.89);
+            if(passZVeto &amp;&amp; mt2 &gt; 90. &amp;&amp; (numElectrons==2 &amp;&amp; fabs(mll-91.)&gt;10)) _counters[&quot;MT2_90_SF&quot;].add_event(event, event-&gt;weight() * 0.97);
+            if(passZVeto &amp;&amp; mt2 &gt; 90. &amp;&amp; (numMuons==2 &amp;&amp; fabs(mll-91.)&gt;10)) _counters[&quot;MT2_90_SF&quot;].add_event(event, event-&gt;weight() * 0.75);
 
-            if(mt2 &gt; 120. &amp;&amp; (numElectrons==1 &amp;&amp; numMuons==1)) _num_MT2_120_DF += event-&gt;weight() * 0.89;
-            if(passZVeto &amp;&amp; mt2 &gt; 120. &amp;&amp; (numElectrons==2 &amp;&amp; fabs(mll-91.)&gt;10)) _num_MT2_120_SF += event-&gt;weight() * 0.97;
-            if(passZVeto &amp;&amp; mt2 &gt; 120. &amp;&amp;  (numMuons==2 &amp;&amp; fabs(mll-91.)&gt;10)) _num_MT2_120_SF += event-&gt;weight() * 0.75;
+            if(mt2 &gt; 120. &amp;&amp; (numElectrons==1 &amp;&amp; numMuons==1)) _counters[&quot;MT2_120_DF&quot;].add_event(event, event-&gt;weight() * 0.89);
+            if(passZVeto &amp;&amp; mt2 &gt; 120. &amp;&amp; (numElectrons==2 &amp;&amp; fabs(mll-91.)&gt;10)) _counters[&quot;MT2_120_SF&quot;].add_event(event, event-&gt;weight() * 0.97);
+            if(passZVeto &amp;&amp; mt2 &gt; 120. &amp;&amp;  (numMuons==2 &amp;&amp; fabs(mll-91.)&gt;10)) _counters[&quot;MT2_120_SF&quot;].add_event(event, event-&gt;weight() * 0.75);
 
-            if(mt2 &gt; 150. &amp;&amp; (numElectrons==1 &amp;&amp; numMuons==1)) _num_MT2_150_DF += event-&gt;weight() * 0.89;
-            if(passZVeto &amp;&amp; mt2 &gt; 150. &amp;&amp; (numElectrons==2 &amp;&amp; fabs(mll-91.)&gt;10)) _num_MT2_150_SF += event-&gt;weight() * 0.97;
-            if(passZVeto &amp;&amp; mt2 &gt; 150. &amp;&amp; (numMuons==2 &amp;&amp; fabs(mll-91.)&gt;10)) _num_MT2_150_SF += event-&gt;weight() * 0.75;
+            if(mt2 &gt; 150. &amp;&amp; (numElectrons==1 &amp;&amp; numMuons==1)) _counters[&quot;MT2_150_DF&quot;].add_event(event, event-&gt;weight() * 0.89);
+            if(passZVeto &amp;&amp; mt2 &gt; 150. &amp;&amp; (numElectrons==2 &amp;&amp; fabs(mll-91.)&gt;10)) _counters[&quot;MT2_150_SF&quot;].add_event(event, event-&gt;weight() * 0.97);
+            if(passZVeto &amp;&amp; mt2 &gt; 150. &amp;&amp; (numMuons==2 &amp;&amp; fabs(mll-91.)&gt;10)) _counters[&quot;MT2_150_SF&quot;].add_event(event, event-&gt;weight() * 0.75);
 
           }
 
@@ -549,36 +535,36 @@ namespace Gambit
             if((signalLeptons[0]-&gt;mom() + signalLeptons[1]-&gt;mom()).pT() &gt; 80. &amp;&amp;
                ETmiss_rel &gt; 80. &amp;&amp;
                mll &lt; 120. &amp;&amp;
-               (numElectrons==1 &amp;&amp; numMuons==1)) _num_WWa_DF += event-&gt;weight() * 0.89;
+               (numElectrons==1 &amp;&amp; numMuons==1)) _counters[&quot;WWa_DF&quot;].add_event(event, event-&gt;weight() * 0.89);
 
             if((signalLeptons[0]-&gt;mom() + signalLeptons[1]-&gt;mom()).pT() &gt; 80. &amp;&amp;
                ETmiss_rel &gt; 80. &amp;&amp;
                mll &lt; 120. &amp;&amp;
-               (numElectrons==2 &amp;&amp; fabs(mll-91.)&gt;10.)) _num_WWa_SF += event-&gt;weight() * 0.97;
+               (numElectrons==2 &amp;&amp; fabs(mll-91.)&gt;10.)) _counters[&quot;WWa_SF&quot;].add_event(event, event-&gt;weight() * 0.97);
 
             if((signalLeptons[0]-&gt;mom() + signalLeptons[1]-&gt;mom()).pT() &gt; 80. &amp;&amp;
                ETmiss_rel &gt; 80. &amp;&amp;
                mll &lt; 120. &amp;&amp;
-               (numMuons==2 &amp;&amp; fabs(mll-91.)&gt;10.)) _num_WWa_SF += event-&gt;weight() * 0.75;
+               (numMuons==2 &amp;&amp; fabs(mll-91.)&gt;10.)) _counters[&quot;WWa_SF&quot;].add_event(event, event-&gt;weight() * 0.75);
 
             if(mt2 &gt; 90. &amp;&amp;
                mll &lt; 170. &amp;&amp;
-               (numElectrons==1 &amp;&amp; numMuons==1)) _num_WWb_DF += event-&gt;weight() * 0.89;
+               (numElectrons==1 &amp;&amp; numMuons==1)) _counters[&quot;WWb_DF&quot;].add_event(event, event-&gt;weight() * 0.89);
 
             if(mt2 &gt; 90. &amp;&amp;
                mll &lt; 170. &amp;&amp;
-               (numElectrons==2 &amp;&amp; fabs(mll-91.)&gt;10.)) _num_WWb_SF += event-&gt;weight() * 0.97;
+               (numElectrons==2 &amp;&amp; fabs(mll-91.)&gt;10.)) _counters[&quot;WWb_SF&quot;].add_event(event, event-&gt;weight() * 0.97);
 
 
             if(mt2 &gt; 90. &amp;&amp;
                mll &lt; 170. &amp;&amp;
-               (numMuons==2 &amp;&amp; fabs(mll-91.)&gt;10.)) _num_WWb_SF += event-&gt;weight() * 0.75;
+               (numMuons==2 &amp;&amp; fabs(mll-91.)&gt;10.)) _counters[&quot;WWb_SF&quot;].add_event(event, event-&gt;weight() * 0.75);
 
-            if(mt2 &gt; 100. &amp;&amp; (numElectrons==1 &amp;&amp; numMuons==1)) _num_WWc_DF += event-&gt;weight() * 0.89;
+            if(mt2 &gt; 100. &amp;&amp; (numElectrons==1 &amp;&amp; numMuons==1)) _counters[&quot;WWc_DF&quot;].add_event(event, event-&gt;weight() * 0.89);
 
-            if(mt2 &gt; 100. &amp;&amp; (numElectrons==2 &amp;&amp; fabs(mll-91.)&gt;10.)) _num_WWc_SF += event-&gt;weight() * 0.97;
+            if(mt2 &gt; 100. &amp;&amp; (numElectrons==2 &amp;&amp; fabs(mll-91.)&gt;10.)) _counters[&quot;WWc_SF&quot;].add_event(event, event-&gt;weight() * 0.97);
 
-            if(mt2 &gt; 100. &amp;&amp; (numMuons==2 &amp;&amp; fabs(mll-91.)&gt;10.)) _num_WWc_SF += event-&gt;weight() * 0.75;
+            if(mt2 &gt; 100. &amp;&amp; (numMuons==2 &amp;&amp; fabs(mll-91.)&gt;10.)) _counters[&quot;WWc_SF&quot;].add_event(event, event-&gt;weight() * 0.75);
 
           }
 
@@ -643,9 +629,9 @@ namespace Gambit
             if(!(mjj &gt; 50. &amp;&amp; mjj&lt;100.))passMjj=false;
             if(!(centralNonBJets[0]-&gt;pT()&gt;45. &amp;&amp; centralNonBJets[1]-&gt;pT()&gt;45.))passJetPT=false;
 
-            if(fabs(mll-91.)&lt;10 &amp;&amp; ETmiss_rel&gt;80. &amp;&amp; (signalLeptons[0]-&gt;mom()+signalLeptons[1]-&gt;mom()).pT()&gt;80. &amp;&amp; dRll &gt; 0.3 &amp;&amp; dRll &lt; 1.5 &amp;&amp; mjj &gt; 50. &amp;&amp; mjj&lt;100. &amp;&amp; passJetPT &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0)) _num_Zjets += event-&gt;weight() * 0.97;
+            if(fabs(mll-91.)&lt;10 &amp;&amp; ETmiss_rel&gt;80. &amp;&amp; (signalLeptons[0]-&gt;mom()+signalLeptons[1]-&gt;mom()).pT()&gt;80. &amp;&amp; dRll &gt; 0.3 &amp;&amp; dRll &lt; 1.5 &amp;&amp; mjj &gt; 50. &amp;&amp; mjj&lt;100. &amp;&amp; passJetPT &amp;&amp; (numElectrons==2 &amp;&amp; numMuons==0)) _counters[&quot;Zjets&quot;].add_event(event, event-&gt;weight() * 0.97);
 
-            if(fabs(mll-91.)&lt;10 &amp;&amp; ETmiss_rel&gt;80. &amp;&amp; (signalLeptons[0]-&gt;mom()+signalLeptons[1]-&gt;mom()).pT()&gt;80. &amp;&amp; dRll &gt; 0.3 &amp;&amp; dRll &lt; 1.5 &amp;&amp; mjj &gt; 50. &amp;&amp; mjj&lt;100. &amp;&amp; passJetPT &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2)) _num_Zjets += event-&gt;weight() * 0.75;
+            if(fabs(mll-91.)&lt;10 &amp;&amp; ETmiss_rel&gt;80. &amp;&amp; (signalLeptons[0]-&gt;mom()+signalLeptons[1]-&gt;mom()).pT()&gt;80. &amp;&amp; dRll &gt; 0.3 &amp;&amp; dRll &lt; 1.5 &amp;&amp; mjj &gt; 50. &amp;&amp; mjj&lt;100. &amp;&amp; passJetPT &amp;&amp; (numElectrons==0 &amp;&amp; numMuons==2)) _counters[&quot;Zjets&quot;].add_event(event, event-&gt;weight() * 0.75);
 
           }
 
@@ -953,35 +939,6 @@ namespace Gambit
           return;
         }
 
-        /// Combine the variables of another copy of this analysis (typically on another thread) into this one.
-        void combine(const Analysis* other)
-        {
-          const Analysis_ATLAS_8TeV_2LEPEW_20invfb* specificOther
-                  = dynamic_cast&lt;const Analysis_ATLAS_8TeV_2LEPEW_20invfb*&gt;(other);
-
-          for (int j=0; j&lt;NCUTS; j++)
-          {
-            cutFlowVector[j] += specificOther-&gt;cutFlowVector[j];
-            cutFlowIncrements[j] += specificOther-&gt;cutFlowIncrements[j];
-            cutFlowVector_str[j] = specificOther-&gt;cutFlowVector_str[j];
-          }
-
-          _num_MT2_90_SF += specificOther-&gt;_num_MT2_90_SF;
-          _num_MT2_90_DF += specificOther-&gt;_num_MT2_90_DF;
-          _num_MT2_120_SF += specificOther-&gt;_num_MT2_120_SF;
-          _num_MT2_120_DF += specificOther-&gt;_num_MT2_120_DF;
-          _num_MT2_150_SF += specificOther-&gt;_num_MT2_150_SF;
-          _num_MT2_150_DF += specificOther-&gt;_num_MT2_150_DF;
-          _num_WWa_SF += specificOther-&gt;_num_WWa_SF;
-          _num_WWa_DF += specificOther-&gt;_num_WWa_DF;
-          _num_WWb_SF += specificOther-&gt;_num_WWb_SF;
-          _num_WWb_DF += specificOther-&gt;_num_WWb_DF;
-          _num_WWc_SF += specificOther-&gt;_num_WWc_SF;
-          _num_WWc_DF += specificOther-&gt;_num_WWc_DF;
-          _num_Zjets += specificOther-&gt;_num_Zjets;
-        }
-
-
         void collect_results()
         {
 
@@ -1001,21 +958,21 @@ namespace Gambit
             cout &lt;&lt; &quot;------------------------------------------------------------------------------------------------------------------------------ &quot;&lt;&lt;endl;
           #endif
 
-          // add_result(SignalRegionData(&quot;SR label&quot;, n_obs, {n_sig_MC, n_sig_MC_sys}, {n_bkg, n_bkg_err}));
+          // add_result(SignalRegionData(_counters.at(&quot;SR label&quot;), n_obs, {n_bkg, n_bkg_err}));
 
-          add_result(SignalRegionData(&quot;MT2_90_SF&quot;, 33., {_num_MT2_90_SF, 0.}, {38.2, 5.1}));
-          add_result(SignalRegionData(&quot;MT2_90_DF&quot;, 21., {_num_MT2_90_DF, 0.}, {23.3, 3.7}));
-          add_result(SignalRegionData(&quot;MT2_120_SF&quot;, 5., {_num_MT2_120_SF, 0.}, {8.9, 2.1}));
-          add_result(SignalRegionData(&quot;MT2_120_DF&quot;, 5., {_num_MT2_120_DF, 0.}, {3.6, 1.2}));
-          add_result(SignalRegionData(&quot;MT2_150_SF&quot;, 3., {_num_MT2_150_SF, 0.}, {3.2, 0.7}));
-          add_result(SignalRegionData(&quot;MT2_150_DF&quot;, 2., {_num_MT2_150_DF, 0.}, {1.0, 0.5}));
-          add_result(SignalRegionData(&quot;WWa_SF&quot;, 73., {_num_WWa_SF, 0.}, {86.5, 7.4}));
-          add_result(SignalRegionData(&quot;WWa_DF&quot;, 70., {_num_WWa_DF, 0.}, {73.6, 7.9}));
-          add_result(SignalRegionData(&quot;WWb_SF&quot;, 26., {_num_WWb_SF, 0.}, {30.2, 3.5}));
-          add_result(SignalRegionData(&quot;WWb_DF&quot;, 17., {_num_WWb_DF, 0.}, {18.1, 2.6}));
-          add_result(SignalRegionData(&quot;WWc_SF&quot;, 10., {_num_WWc_SF, 0.}, {20.3, 3.5}));
-          add_result(SignalRegionData(&quot;WWc_DF&quot;, 11., {_num_WWc_DF, 0.}, {9.0, 2.2}));
-          add_result(SignalRegionData(&quot;Zjets&quot;, 1., {_num_Zjets, 0.}, {1.4, 0.6}));
+          add_result(SignalRegionData(_counters.at(&quot;MT2_90_SF&quot;), 33., {38.2, 5.1}));
+          add_result(SignalRegionData(_counters.at(&quot;MT2_90_DF&quot;), 21., {23.3, 3.7}));
+          add_result(SignalRegionData(_counters.at(&quot;MT2_120_SF&quot;), 5., {8.9, 2.1}));
+          add_result(SignalRegionData(_counters.at(&quot;MT2_120_DF&quot;), 5., {3.6, 1.2}));
+          add_result(SignalRegionData(_counters.at(&quot;MT2_150_SF&quot;), 3., {3.2, 0.7}));
+          add_result(SignalRegionData(_counters.at(&quot;MT2_150_DF&quot;), 2., {1.0, 0.5}));
+          add_result(SignalRegionData(_counters.at(&quot;WWa_SF&quot;), 73., {86.5, 7.4}));
+          add_result(SignalRegionData(_counters.at(&quot;WWa_DF&quot;), 70., {73.6, 7.9}));
+          add_result(SignalRegionData(_counters.at(&quot;WWb_SF&quot;), 26., {30.2, 3.5}));
+          add_result(SignalRegionData(_counters.at(&quot;WWb_DF&quot;), 17., {18.1, 2.6}));
+          add_result(SignalRegionData(_counters.at(&quot;WWc_SF&quot;), 10., {20.3, 3.5}));
+          add_result(SignalRegionData(_counters.at(&quot;WWc_DF&quot;), 11., {9.0, 2.2}));
+          add_result(SignalRegionData(_counters.at(&quot;Zjets&quot;), 1., {1.4, 0.6}));
 
   //        plots_mt2_NOmt2_SF-&gt;createFile(luminosity(),(34.38103/50000));
   //        plots_mt2_NOmt2_DF-&gt;createFile(luminosity(),(34.38103/50000));
@@ -1032,19 +989,8 @@ namespace Gambit
       protected:
         void analysis_specific_reset()
         {
-          _num_MT2_90_SF=0;
-          _num_MT2_90_DF=0;
-          _num_MT2_120_SF=0;
-          _num_MT2_120_DF=0;
-          _num_MT2_150_SF=0;
-          _num_MT2_150_DF=0;
-          _num_WWa_SF=0;
-          _num_WWa_DF=0;
-          _num_WWb_SF=0;
-          _num_WWb_DF=0;
-          _num_WWc_SF=0;
-          _num_WWc_DF=0;
-          _num_Zjets=0;
+          for (auto&amp; pair : _counters) { pair.second.reset(); }
+
 
           std::fill(cutFlowVector.begin(), cutFlowVector.end(), 0);
         }
@@ -1057,7 +1003,7 @@ namespace Gambit
 
   }
 }
-</code></pre><hr><p>Updated on 2025-02-12 at 16:10:35 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.d5e27a6ed00168b7a66eb637878a6be7d054db51d0e613bbcfda12ab0569b62177253b4e6453c477574b3a38f50eff49a68f0e19112bd82a68c78a66cd8d05df.js integrity="sha512-1eJ6btABaLembrY3h4pr59BU21HQ5hO7z9oSqwVptiF3JTtOZFPEd1dLOjj1Dv9Jpo8OGREr2Cpox4pmzY0F3w==" crossorigin=anonymous defer></script>
+</code></pre><hr><p>Updated on 2026-11-03 at 14:50:47 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.d5e27a6ed00168b7a66eb637878a6be7d054db51d0e613bbcfda12ab0569b62177253b4e6453c477574b3a38f50eff49a68f0e19112bd82a68c78a66cd8d05df.js integrity="sha512-1eJ6btABaLembrY3h4pr59BU21HQ5hO7z9oSqwVptiF3JTtOZFPEd1dLOjj1Dv9Jpo8OGREr2Cpox4pmzY0F3w==" crossorigin=anonymous defer></script>
 <script src=/js/highlight.min.9003483b4531b86467c8b801b1d5fc5439bb0d6bdb6c6a760a1b54abf37d6bbadf8423dbc81a3359c935c7705bb7d183b46131ba4a9c861b5d48e6a61501461a.js integrity="sha512-kANIO0UxuGRnyLgBsdX8VDm7DWvbbGp2ChtUq/N9a7rfhCPbyBozWck1x3Bbt9GDtGExukqchhtdSOamFQFGGg==" crossorigin=anonymous defer></script>
 <script src=/main.min.9342d29d0e3e250a2c03282306b766e004888dba0fd661a17d7b106655e013bf85733f086ad330e3df0929c713dd81c0ea835966fa92e4a1e38f7ea9680524ed.js integrity="sha512-k0LSnQ4+JQosAygjBrdm4ASIjboP1mGhfXsQZlXgE7+Fcz8IatMw498JKccT3YHA6oNZZvqS5KHjj36paAUk7Q==" crossorigin=anonymous defer></script>
-<script src=https://gambitbsm.org/index.min.03ab9c2e460a36904d0b1544581433f337b9e5e23e6798a396683f418d37e30979da1ab2a8ef201c110075d73ccb12f8cc2605c7d9723f99bef11ed7c8b97844.js integrity="sha512-A6ucLkYKNpBNCxVEWBQz8ze55eI+Z5ijlmg/QY034wl52hqyqO8gHBEAddc8yxL4zCYFx9lyP5m+8R7XyLl4RA==" crossorigin=anonymous defer></script></body></html>
+<script src=https://gambitbsm.org/index.min.3a8ee06d0c346f1fb70040b0fbcbaaacf335cb34023c408954406a05db2089fc2ca349119b9f7d68b9e7044e82b8fdc8bd9661b6ef8b118246c5a2079d7fa8e9.js integrity="sha512-Oo7gbQw0bx+3AECw+8uqrPM1yzQCPECJVEBqBdsgifwso0kRm599aLnnBE6CuP3IvZZhtu+LEYJGxaIHnX+o6Q==" crossorigin=anonymous defer></script></body></html>

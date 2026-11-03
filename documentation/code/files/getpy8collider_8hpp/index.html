@@ -179,7 +179,6 @@ namespace Gambit
 
       else if (iteration == COLLIDER_INIT_OMP)
       {
-
         std::vector&lt;str&gt; pythiaOptions;
 
         // By default we tell Pythia to be quiet. (Can be overridden from yaml settings)
@@ -246,21 +245,13 @@ namespace Gambit
         // We need &quot;SLHA:file = slhaea&quot; for the SLHAea interface.
         pythiaOptions.push_back(&quot;SLHA:file = slhaea&quot;);
 
-        // If the collider energy is not given in the list of Pythia options, we set it to 13 TeV by default.
-        // We search for the substring &quot;Beams:e&quot;, meaning that if any of the Pythia options &quot;Beams:eCM&quot;, &quot;Beams:eA&quot; 
-        // or &quot;Beams:eB&quot; are present we don't apply the default.
+        // Make sure the user has selected a collider energy in their Pythia settings by searching
+        // for the substring &quot;Beams:e&quot;, to match Pythia options &quot;Beams:eCM&quot;, &quot;Beams:eA&quot; or &quot;Beams:eB&quot;.
         bool has_beam_energy_option = std::any_of(pythiaOptions.begin(), pythiaOptions.end(), [](const str&amp; s){ return s.find(&quot;Beams:e&quot;) != str::npos; });
         if (!has_beam_energy_option)
         {
-          pythiaOptions.push_back(&quot;Beams:eCM = 13000&quot;);
-          logger() &lt;&lt; LogTags::debug &lt;&lt; &quot;Could not find a beam energy in the list of Pythia settings. Will add the setting 'Beams:eCM = 13000'.&quot; &lt;&lt; EOM;
+          ColliderBit_error().raise(LOCAL_INFO,&quot;Could not find a beam energy in the list of Pythia settings. Please add one, e.g. 'Beams:eCM = 13000'.&quot;);
         }
-
-        // Variables needed for the xsec veto
-        std::stringstream processLevelOutput;
-        str _junk, readline;
-        int code, nxsec;
-        double xsec, totalxsec;
 
         // Each thread needs an independent Pythia instance at the start
         // of each event generation loop.
@@ -279,7 +270,7 @@ namespace Gambit
 
         try
         {
-          result.init(pythia_doc_path, pythiaOptions, &amp;slha, processLevelOutput);
+          result.init(pythia_doc_path, pythiaOptions, &amp;slha);
         }
         catch (typename Py8Collider&lt;PythiaT,EventT,hepmc_writerT&gt;::InitializationError&amp; e)
         {
@@ -288,7 +279,7 @@ namespace Gambit
           pythiaOptions.push_back(&quot;Random:seed = &quot; + std::to_string(newSeedBase));
           try
           {
-            result.init(pythia_doc_path, pythiaOptions, &amp;slha, processLevelOutput);
+            result.init(pythia_doc_path, pythiaOptions, &amp;slha);
           }
           catch (typename Py8Collider&lt;PythiaT,EventT,hepmc_writerT&gt;::InitializationError&amp; e)
           {
@@ -304,30 +295,14 @@ namespace Gambit
         // Should we apply the xsec veto and skip event generation?
 
         // - Get the upper limt xsec as estimated by Pythia
-        code = -1;
-        nxsec = 0;
-        totalxsec = 0.;
-        while(true)
-        {
-          std::getline(processLevelOutput, readline);
-          std::istringstream issPtr(readline);
-          issPtr.seekg(47, issPtr.beg);
-          issPtr &gt;&gt; code;
-          if (!issPtr.good() &amp;&amp; nxsec &gt; 0) break;
-          issPtr &gt;&gt; _junk &gt;&gt; xsec;
-          if (issPtr.good())
-          {
-            totalxsec += xsec;
-            nxsec++;
-          }
-        }
+        double max_xsec_fb = result.max_xsec_fb();
 
         #ifdef COLLIDERBIT_DEBUG
-          cout &lt;&lt; DEBUG_PREFIX &lt;&lt; &quot;totalxsec [fb] = &quot; &lt;&lt; totalxsec * 1e12 &lt;&lt; &quot;, veto limit [fb] = &quot; &lt;&lt; xsec_veto_fb &lt;&lt; endl;
+          cout &lt;&lt; DEBUG_PREFIX &lt;&lt; &quot;max xsec [fb] = &quot; &lt;&lt; max_xsec_fb &lt;&lt; &quot;, veto limit [fb] = &quot; &lt;&lt; xsec_veto_fb &lt;&lt; endl;
         #endif
 
         // - Check for NaN xsec
-        if (Utils::isnan(totalxsec))
+        if (Utils::isnan(max_xsec_fb))
         {
           #ifdef COLLIDERBIT_DEBUG
           cout &lt;&lt; DEBUG_PREFIX &lt;&lt; &quot;Got NaN cross-section estimate from Pythia.&quot; &lt;&lt; endl;
@@ -338,14 +313,15 @@ namespace Gambit
         }
 
         // - Wrap up loop if veto applies
-        if (totalxsec * 1e12 &lt; xsec_veto_fb)
+        if (max_xsec_fb &lt; xsec_veto_fb)
         {
           #ifdef COLLIDERBIT_DEBUG
           cout &lt;&lt; DEBUG_PREFIX &lt;&lt; &quot;Cross-section veto applies. Will now call Loop::wrapup() to skip event generation for this collider.&quot; &lt;&lt; endl;
           #endif
           wrapup();
-        } else {
-
+        }
+        else
+        {
           // Create a dummy event to make Pythia fill its internal list of process codes
           EventT dummy_pythia_event;
           try
@@ -369,7 +345,7 @@ namespace Gambit
               #pragma omp critical (pythia_event_failure)
               {
                 std::stringstream ss;
-                dummy_pythia_event.list(ss, 1);
+                dummy_pythia_event.list(false, false, 1, ss);
                 logger() &lt;&lt; LogTags::debug &lt;&lt; &quot;Failed to generate dummy test event during COLLIDER_INIT_OMP iteration in getPy8Collider. Pythia record for the event that failed:\n&quot; &lt;&lt; ss.str() &lt;&lt; EOM;
               }
             }
@@ -499,7 +475,7 @@ namespace Gambit
   }
 
 }
-</code></pre><hr><p>Updated on 2025-02-12 at 16:10:35 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.d5e27a6ed00168b7a66eb637878a6be7d054db51d0e613bbcfda12ab0569b62177253b4e6453c477574b3a38f50eff49a68f0e19112bd82a68c78a66cd8d05df.js integrity="sha512-1eJ6btABaLembrY3h4pr59BU21HQ5hO7z9oSqwVptiF3JTtOZFPEd1dLOjj1Dv9Jpo8OGREr2Cpox4pmzY0F3w==" crossorigin=anonymous defer></script>
+</code></pre><hr><p>Updated on 2026-11-03 at 14:50:47 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.d5e27a6ed00168b7a66eb637878a6be7d054db51d0e613bbcfda12ab0569b62177253b4e6453c477574b3a38f50eff49a68f0e19112bd82a68c78a66cd8d05df.js integrity="sha512-1eJ6btABaLembrY3h4pr59BU21HQ5hO7z9oSqwVptiF3JTtOZFPEd1dLOjj1Dv9Jpo8OGREr2Cpox4pmzY0F3w==" crossorigin=anonymous defer></script>
 <script src=/js/highlight.min.9003483b4531b86467c8b801b1d5fc5439bb0d6bdb6c6a760a1b54abf37d6bbadf8423dbc81a3359c935c7705bb7d183b46131ba4a9c861b5d48e6a61501461a.js integrity="sha512-kANIO0UxuGRnyLgBsdX8VDm7DWvbbGp2ChtUq/N9a7rfhCPbyBozWck1x3Bbt9GDtGExukqchhtdSOamFQFGGg==" crossorigin=anonymous defer></script>
 <script src=/main.min.9342d29d0e3e250a2c03282306b766e004888dba0fd661a17d7b106655e013bf85733f086ad330e3df0929c713dd81c0ea835966fa92e4a1e38f7ea9680524ed.js integrity="sha512-k0LSnQ4+JQosAygjBrdm4ASIjboP1mGhfXsQZlXgE7+Fcz8IatMw498JKccT3YHA6oNZZvqS5KHjj36paAUk7Q==" crossorigin=anonymous defer></script>
-<script src=https://gambitbsm.org/index.min.03ab9c2e460a36904d0b1544581433f337b9e5e23e6798a396683f418d37e30979da1ab2a8ef201c110075d73ccb12f8cc2605c7d9723f99bef11ed7c8b97844.js integrity="sha512-A6ucLkYKNpBNCxVEWBQz8ze55eI+Z5ijlmg/QY034wl52hqyqO8gHBEAddc8yxL4zCYFx9lyP5m+8R7XyLl4RA==" crossorigin=anonymous defer></script></body></html>
+<script src=https://gambitbsm.org/index.min.3a8ee06d0c346f1fb70040b0fbcbaaacf335cb34023c408954406a05db2089fc2ca349119b9f7d68b9e7044e82b8fdc8bd9661b6ef8b118246c5a2079d7fa8e9.js integrity="sha512-Oo7gbQw0bx+3AECw+8uqrPM1yzQCPECJVEBqBdsgifwso0kRm599aLnnBE6CuP3IvZZhtu+LEYJGxaIHnX+o6Q==" crossorigin=anonymous defer></script></body></html>

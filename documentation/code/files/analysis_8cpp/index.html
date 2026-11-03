@@ -12,7 +12,7 @@ Physics</button><div class=collapse id=section-physics><ul class="btn-toggle-nav
 Help</button><div class=collapse id=section-help><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/help/common_problems_and_questions/>Common Problems and Questions</a></li><li><a class="docs-link rounded" href=/documentation/help/compiler_matrix/>Compiler Matrix</a></li><li><a class="docs-link rounded" href=/documentation/help/known_issues/>Known Issues</a></li><li><a class="docs-link rounded" href=/documentation/help/configuration_examples/>Configuration Examples</a></li><li><a class="docs-link rounded" href=/documentation/help/support/>Support</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-code aria-expanded=false>
 Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/code/index_classes/>Classes</a></li><li><a class="docs-link rounded" href=/documentation/code/index_files/>Files</a></li><li><a class="docs-link rounded" href=/documentation/code/index_pages/>Pages</a></li><li><a class="docs-link rounded" href=/documentation/code/index_namespaces/>Namespaces</a></li></ul></div></li></ul></nav></div><nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation"><div class=d-xl-none><button class="btn btn-outline-primary btn-sm doks-toc-toggle collapsed" type=button data-bs-toggle=collapse data-bs-target=#onThisPage aria-controls=doks-docs-nav aria-expanded=false aria-label="Toggle On this page navigation">
 <span>On this page</span>
-<span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg></span></button><div class=collapse id=onThisPage><div class="card card-body mt-3 py-1"><div class=page-links><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#source-code>Source code</a></li></ul></nav></div></div></div></div><div class="page-links d-none d-xl-block"><h3>On this page</h3><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#source-code>Source code</a></li></ul></nav></div></nav><main class="docs-content col-lg-11 col-xl-9 mx-xl-auto"><nav aria-label=breadcrumb><ol class=breadcrumb><li class=breadcrumb-item><a href=/>Home</a></li><li class=breadcrumb-item><a href=/documentation/>Documentation</a></li><li class=breadcrumb-item><a href=/documentation/code/>Code Reference</a></li><li class="breadcrumb-item active" aria-current=page>file analyses/Analysis.cpp</li></ol></nav><p class=lead></p><h1 id=file-analyses-analysis-cpp>file analyses/Analysis.cpp <a href=#file-analyses-analysis-cpp class=anchor aria-hidden=true>#</a></h1><p>[No description available] <a href=#detailed-description>More&mldr;</a></p><h2 id=namespaces>Namespaces <a href=#namespaces class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th>Name</th></tr></thead><tbody><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit/>Gambit</a></strong><br>TODO: see if we can use this one:</td></tr><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit_1_1colliderbit/>Gambit::ColliderBit</a></strong></td></tr></tbody></table><h2 id=detailed-description>Detailed Description <a href=#detailed-description class=anchor aria-hidden=true>#</a></h2><p><strong>Author</strong>:</p><ul><li>Abram Krislock (<a href=mailto:a.m.b.krislock@fys.uio.no>a.m.b.krislock@fys.uio.no</a>)</li><li>Andy Buckley (<a href=mailto:mostlikelytobefound@facebook.com>mostlikelytobefound@facebook.com</a>)</li><li>Anders Kvellestad (<a href=mailto:anders.kvellestad@fys.uio.no>anders.kvellestad@fys.uio.no</a>)</li><li>Pat Scott (<a href=mailto:p.scott@imperial.ac.uk>p.scott@imperial.ac.uk</a>)</li></ul><p><strong>Date</strong>:</p><ul><li>often</li><li>2019 Feb</li></ul><p>Class for ColliderBit analyses.</p><hr><p>Authors (add name and date if you modify):</p><hr><h2 id=source-code>Source code <a href=#source-code class=anchor aria-hidden=true>#</a></h2><pre><code>//   GAMBIT: Global and Modular BSM Inference Tool
+<span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg></span></button><div class=collapse id=onThisPage><div class="card card-body mt-3 py-1"><div class=page-links><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#source-code>Source code</a></li></ul></nav></div></div></div></div><div class="page-links d-none d-xl-block"><h3>On this page</h3><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#source-code>Source code</a></li></ul></nav></div></nav><main class="docs-content col-lg-11 col-xl-9 mx-xl-auto"><nav aria-label=breadcrumb><ol class=breadcrumb><li class=breadcrumb-item><a href=/>Home</a></li><li class=breadcrumb-item><a href=/documentation/>Documentation</a></li><li class=breadcrumb-item><a href=/documentation/code/>Code Reference</a></li><li class="breadcrumb-item active" aria-current=page>file analyses/Analysis.cpp</li></ol></nav><p class=lead></p><h1 id=file-analyses-analysis-cpp>file analyses/Analysis.cpp <a href=#file-analyses-analysis-cpp class=anchor aria-hidden=true>#</a></h1><p>[No description available] <a href=#detailed-description>More&mldr;</a></p><h2 id=namespaces>Namespaces <a href=#namespaces class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th>Name</th></tr></thead><tbody><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit/>Gambit</a></strong><br>TODO: see if we can use this one:</td></tr><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit_1_1colliderbit/>Gambit::ColliderBit</a></strong></td></tr></tbody></table><h2 id=detailed-description>Detailed Description <a href=#detailed-description class=anchor aria-hidden=true>#</a></h2><p><strong>Author</strong>:</p><ul><li>Abram Krislock (<a href=mailto:a.m.b.krislock@fys.uio.no>a.m.b.krislock@fys.uio.no</a>)</li><li>Andy Buckley (<a href=mailto:mostlikelytobefound@facebook.com>mostlikelytobefound@facebook.com</a>)</li><li>Anders Kvellestad (<a href=mailto:anders.kvellestad@fys.uio.no>anders.kvellestad@fys.uio.no</a>)</li><li>Pat Scott (<a href=mailto:p.scott@imperial.ac.uk>p.scott@imperial.ac.uk</a>)</li><li>Tomas Gonzalo (<a href=mailto:tomas.gonzalo@kit.edu>tomas.gonzalo@kit.edu</a>)</li></ul><p><strong>Date</strong>:</p><ul><li>often</li><li>2019 Feb</li><li>2023 Aug</li></ul><p>Class for ColliderBit analyses.</p><hr><p>Authors (add name and date if you modify):</p><hr><h2 id=source-code>Source code <a href=#source-code class=anchor aria-hidden=true>#</a></h2><pre><code>//   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
 ///  \file
 ///
@@ -36,6 +36,10 @@ Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle
 ///          (p.scott@imperial.ac.uk)
 ///  \date 2019 Feb
 ///
+///  \author Tomas Gonzalo
+///          (tomas.gonzalo@kit.edu)
+///  \date 2023 Aug
+///
 ///  *********************************************
 
 #include &lt;vector&gt;
@@ -51,7 +55,11 @@ namespace Gambit
                          , _luminosity_is_set(false)
                          , _is_scaled(false)
                          , _needs_collection(true)
-                         { }
+                         , _collider_name(&quot;&quot;)
+                         , _counters(_results._counters)
+    {
+      // _counters = _results._counters;
+    }
 
     /// Public method to reset this instance for reuse, avoiding the need for &quot;new&quot; or &quot;delete&quot;.
     void Analysis::reset()
@@ -76,7 +84,12 @@ namespace Gambit
     double Analysis::luminosity() const { return _luminosity; }
 
     /// Set the integrated luminosity.
-    void Analysis::set_luminosity(double lumi) { _luminosity_is_set = true; _luminosity = lumi; }
+    void Analysis::set_luminosity(double lumi)
+    {
+      _luminosity_is_set = true;
+      _luminosity = lumi;
+      _results.luminosity = lumi;
+    }
 
     /// Set the analysis name
     void Analysis::set_analysis_name(str aname)
@@ -88,6 +101,26 @@ namespace Gambit
     /// Get the analysis name
     str Analysis::analysis_name() { return _analysis_name; }
 
+    /// Set the detector name
+    void Analysis::set_detector_name(str detname)
+    {
+      _detector_name = detname;
+      _results.detector_name = _detector_name;
+    }
+
+    /// Get the detector name
+    str Analysis::detector_name() { return _detector_name; }
+
+    /// Set the collider name
+    void Analysis::set_collider_name(str collname)
+    {
+      _collider_name = collname;
+      _results.collider_name = _collider_name;
+    }
+
+    /// Get the collider name
+    str Analysis::collider_name() { return _collider_name; }
+
     /// Get the collection of SignalRegionData for likelihood computation.
     const AnalysisData&amp; Analysis::get_results()
     {
@@ -96,6 +129,32 @@ namespace Gambit
         collect_results();
         _needs_collection = false;
       }
+
+      // Collect the SR names for all SRs that have been added to _results
+      std::vector&lt;std::string&gt; SRs_in_results;
+      SRs_in_results.reserve(_results.srdata_identifiers.size());
+      for (auto const&amp; kv : _results.srdata_identifiers)
+      {
+       SRs_in_results.push_back(kv.first);
+      }
+
+      // In _results, clear the EventCounter::_event_acceptance_record
+      // vector for each SR that has not been added to _result.
+      // (Reminder: _counters is a reference to _results._counters.)
+      for (auto&amp; kv : _counters)
+      {
+        const str&amp; SR_name = kv.first;
+        EventCounter&amp; counter = kv.second;
+        if (counter.store_accepted_event_IDs())
+        {
+          // If SR_name not in SRs_in_results, clear the event acceptance record
+          if (std::find(SRs_in_results.begin(), SRs_in_results.end(), SR_name) == SRs_in_results.end())
+          {
+            counter.clear_event_acceptance_record();
+          }
+        }
+      }
+
       return _results;
     }
 
@@ -132,9 +191,21 @@ namespace Gambit
     /// Add the given result to the internal results list.
     void Analysis::add_result(const SignalRegionData&amp; sr) { _results.add(sr); }
 
+    /// Get the cutflows
+    const Cutflows&amp; Analysis::get_cutflows()
+    {
+      return _results.cutflows;
+    }
+
+    /// Add cutflows to the internal results list
+    void Analysis::add_cutflows(const Cutflows&amp; cf)
+    {
+      _results.add_cutflows(cf);
+    }
+
     /// Set the path to the FullLikes BKG file
     void Analysis::set_bkgjson(const std::string&amp; bkgpath)
-    { 
+    {
       _results.bkgjson_path = bkgpath;
     }
 
@@ -171,7 +242,12 @@ namespace Gambit
     void Analysis::add(Analysis* other)
     {
       if (_results.empty()) collect_results();
-      if (this == other) return;
+      if (this == other)
+      {
+        _cutflows.combine(other-&gt;get_cutflows());
+        _results.add_cutflows(_cutflows);
+        return;
+      }
       const AnalysisData otherResults = other-&gt;get_results();
       /// @todo Access by name, including merging disjoint region sets?
       assert(otherResults.size() == _results.size());
@@ -179,12 +255,34 @@ namespace Gambit
       {
         _results[i].combine_SR_MC_signal(otherResults[i]);
       }
-      combine(other);
+
+      for (auto&amp; kv : _counters)
+      {
+        // kv.first (key) is the SR name
+        // kv.second (value) is the EventCounter instance
+        kv.second += other-&gt;_counters.at(kv.first);
+      }
+
+      _cutflows.combine(other-&gt;get_cutflows());
+      _results.add_cutflows(_cutflows);
+
     }
+
+    /// Set the store_accepted_event_IDs bool for the EventCounter instances in this analysis
+    void Analysis::set_store_accepted_event_IDs(bool setting)
+    {
+      for (auto&amp; kv : _counters)
+      {
+        // kv.first (key) is the SR name
+        // kv.second (value) is the EventCounter instance
+        kv.second.set_store_accepted_event_IDs(setting);
+      }
+    }
+
 
   }
 }
-</code></pre><hr><p>Updated on 2025-02-12 at 16:10:35 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.d5e27a6ed00168b7a66eb637878a6be7d054db51d0e613bbcfda12ab0569b62177253b4e6453c477574b3a38f50eff49a68f0e19112bd82a68c78a66cd8d05df.js integrity="sha512-1eJ6btABaLembrY3h4pr59BU21HQ5hO7z9oSqwVptiF3JTtOZFPEd1dLOjj1Dv9Jpo8OGREr2Cpox4pmzY0F3w==" crossorigin=anonymous defer></script>
+</code></pre><hr><p>Updated on 2026-11-03 at 14:50:47 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.d5e27a6ed00168b7a66eb637878a6be7d054db51d0e613bbcfda12ab0569b62177253b4e6453c477574b3a38f50eff49a68f0e19112bd82a68c78a66cd8d05df.js integrity="sha512-1eJ6btABaLembrY3h4pr59BU21HQ5hO7z9oSqwVptiF3JTtOZFPEd1dLOjj1Dv9Jpo8OGREr2Cpox4pmzY0F3w==" crossorigin=anonymous defer></script>
 <script src=/js/highlight.min.9003483b4531b86467c8b801b1d5fc5439bb0d6bdb6c6a760a1b54abf37d6bbadf8423dbc81a3359c935c7705bb7d183b46131ba4a9c861b5d48e6a61501461a.js integrity="sha512-kANIO0UxuGRnyLgBsdX8VDm7DWvbbGp2ChtUq/N9a7rfhCPbyBozWck1x3Bbt9GDtGExukqchhtdSOamFQFGGg==" crossorigin=anonymous defer></script>
 <script src=/main.min.9342d29d0e3e250a2c03282306b766e004888dba0fd661a17d7b106655e013bf85733f086ad330e3df0929c713dd81c0ea835966fa92e4a1e38f7ea9680524ed.js integrity="sha512-k0LSnQ4+JQosAygjBrdm4ASIjboP1mGhfXsQZlXgE7+Fcz8IatMw498JKccT3YHA6oNZZvqS5KHjj36paAUk7Q==" crossorigin=anonymous defer></script>
-<script src=https://gambitbsm.org/index.min.03ab9c2e460a36904d0b1544581433f337b9e5e23e6798a396683f418d37e30979da1ab2a8ef201c110075d73ccb12f8cc2605c7d9723f99bef11ed7c8b97844.js integrity="sha512-A6ucLkYKNpBNCxVEWBQz8ze55eI+Z5ijlmg/QY034wl52hqyqO8gHBEAddc8yxL4zCYFx9lyP5m+8R7XyLl4RA==" crossorigin=anonymous defer></script></body></html>
+<script src=https://gambitbsm.org/index.min.3a8ee06d0c346f1fb70040b0fbcbaaacf335cb34023c408954406a05db2089fc2ca349119b9f7d68b9e7044e82b8fdc8bd9661b6ef8b118246c5a2079d7fa8e9.js integrity="sha512-Oo7gbQw0bx+3AECw+8uqrPM1yzQCPECJVEBqBdsgifwso0kRm599aLnnBE6CuP3IvZZhtu+LEYJGxaIHnX+o6Q==" crossorigin=anonymous defer></script></body></html>

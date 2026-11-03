@@ -39,14 +39,17 @@ namespace Gambit
       // Required detector sim
       static constexpr const char* detector = &quot;ATLAS&quot;;
 
-      double numEE=0;
-      double numUU=0;
-      double numEU=0;
-
 
       Analysis_ATLAS_7TeV_2LEPStop_4_7invfb()
       {
+
+        _counters[&quot;EE&quot;] = EventCounter(&quot;EE&quot;);
+        _counters[&quot;UU&quot;] = EventCounter(&quot;UU&quot;);
+        _counters[&quot;EU&quot;] = EventCounter(&quot;EU&quot;);
+
+
         set_analysis_name(&quot;ATLAS_7TeV_2LEPStop_4_7invfb&quot;);
+        set_detector_name(detector);
         set_luminosity(4.7);
         //clear();
       }
@@ -79,7 +82,7 @@ namespace Gambit
         muons = AnalysisUtil::leptonJetOverlapRemoval(muons, jets, 0.4);
 
         // This uses 8TeV tight electron selection, but it is close enough to the 7TeV implementation so we still use it
-        ATLAS::applyTightIDElectronSelection(electrons);
+        applyEfficiency(electrons, ATLAS::eff2DEl.at(&quot;ATLAS_CONF_2014_032_Tight&quot;));
 
         // fill a vector with all of the leptons
         std::vector&lt;const Particle*&gt; leptons;
@@ -125,76 +128,42 @@ namespace Gambit
                 // ee channel
                 if (electrons.size() == 2 &amp;&amp; electrons[0]-&gt;pT() &gt; 17)
                   {
-                    numEE += event-&gt;weight();
+                    _counters[&quot;EE&quot;].add_event(event);
                   }
                 // mu-mu channel
                 if (muons.size() == 2 &amp;&amp; muons[0]-&gt;pT() &gt; 12 &amp;&amp; AnalysisUtil::muonFilter7TeV(muons))
                   {
-                    numUU += event-&gt;weight();
+                    _counters[&quot;UU&quot;].add_event(event);
                   }
               }
             // e-mu channel
             if (muons.size() == 1 &amp;&amp; electrons.size() == 1 &amp;&amp; electrons[0]-&gt;pT() &gt; 17 &amp;&amp; muons[0]-&gt;pT() &gt; 12)
               {
-                numEU += event-&gt;weight();
+                _counters[&quot;EU&quot;].add_event(event);
               }
           }
-        // cout &lt;&lt; numEE &lt;&lt; &quot;, &quot; &lt;&lt; numEU &lt;&lt; &quot;, &quot; &lt;&lt; numUU &lt;&lt; endl;
-      }
-
-      /*void Analysis_ATLAS_7TeV_2LEPStop_4_7invfb::scale(double factor)
-      {
-        HEPUtilsAnalysis::scale(factor);
-        cout &lt;&lt; &quot;SAVE_XSEC:&quot; &lt;&lt; xsec() &lt;&lt; endl;
-        auto save = [](double value, std::string name)
-          {
-            cout &lt;&lt; &quot;SAVE_START:&quot; &lt;&lt; name &lt;&lt; endl;
-            cout &lt;&lt; value &lt;&lt; endl;
-            cout &lt;&lt; &quot;SAVE_END&quot; &lt;&lt; endl;
-          };
-        save(numEE, &quot;numEE&quot;);
-        save(numUU, &quot;numUU&quot;);
-        save(numEU, &quot;numEU&quot;);
-        }*/
-
-      void combine(const Analysis* other)
-      {
-        const Analysis_ATLAS_7TeV_2LEPStop_4_7invfb* specificOther = dynamic_cast&lt;const Analysis_ATLAS_7TeV_2LEPStop_4_7invfb*&gt;(other);
-
-
-        // Here we will add the subclass member variables:
-        numEE += specificOther-&gt;numEE;
-        numEU += specificOther-&gt;numEU;
-        numUU += specificOther-&gt;numUU;
-
       }
 
 
       void collect_results()
       {
-        add_result(SignalRegionData(&quot;ee&quot;, 48, {numEE,  0.}, {61., 6.}));
-        add_result(SignalRegionData(&quot;eu&quot;, 188, {numEU,  0.}, {189., 21.}));
-        add_result(SignalRegionData(&quot;uu&quot;, 195, {numUU,  0.}, {190., 31.}));
-
-        // std::cout &lt;&lt; &quot;Results ee &quot; &lt;&lt; numEE &lt;&lt; std::endl;
-        // std::cout &lt;&lt; &quot;Results emu &quot; &lt;&lt; numEU &lt;&lt; std::endl;
-        // std::cout &lt;&lt; &quot;Results mumu &quot; &lt;&lt; numUU &lt;&lt; std::endl;
+        add_result(SignalRegionData(_counters[&quot;EE&quot;], 48, {61., 6.}));
+        add_result(SignalRegionData(_counters[&quot;EU&quot;], 188, {189., 21.}));
+        add_result(SignalRegionData(_counters[&quot;UU&quot;], 195, {190., 31.}));
 
       }
 
     protected:
       void analysis_specific_reset()
       {
-        numEE = 0;
-        numUU = 0;
-        numEU = 0;
+        for (auto&amp; pair : _counters) { pair.second.reset(); }
       }
     };
 
     DEFINE_ANALYSIS_FACTORY(ATLAS_7TeV_2LEPStop_4_7invfb)
   }
 }
-</code></pre><hr><p>Updated on 2025-02-12 at 16:10:35 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.d5e27a6ed00168b7a66eb637878a6be7d054db51d0e613bbcfda12ab0569b62177253b4e6453c477574b3a38f50eff49a68f0e19112bd82a68c78a66cd8d05df.js integrity="sha512-1eJ6btABaLembrY3h4pr59BU21HQ5hO7z9oSqwVptiF3JTtOZFPEd1dLOjj1Dv9Jpo8OGREr2Cpox4pmzY0F3w==" crossorigin=anonymous defer></script>
+</code></pre><hr><p>Updated on 2026-11-03 at 14:50:47 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.d5e27a6ed00168b7a66eb637878a6be7d054db51d0e613bbcfda12ab0569b62177253b4e6453c477574b3a38f50eff49a68f0e19112bd82a68c78a66cd8d05df.js integrity="sha512-1eJ6btABaLembrY3h4pr59BU21HQ5hO7z9oSqwVptiF3JTtOZFPEd1dLOjj1Dv9Jpo8OGREr2Cpox4pmzY0F3w==" crossorigin=anonymous defer></script>
 <script src=/js/highlight.min.9003483b4531b86467c8b801b1d5fc5439bb0d6bdb6c6a760a1b54abf37d6bbadf8423dbc81a3359c935c7705bb7d183b46131ba4a9c861b5d48e6a61501461a.js integrity="sha512-kANIO0UxuGRnyLgBsdX8VDm7DWvbbGp2ChtUq/N9a7rfhCPbyBozWck1x3Bbt9GDtGExukqchhtdSOamFQFGGg==" crossorigin=anonymous defer></script>
 <script src=/main.min.9342d29d0e3e250a2c03282306b766e004888dba0fd661a17d7b106655e013bf85733f086ad330e3df0929c713dd81c0ea835966fa92e4a1e38f7ea9680524ed.js integrity="sha512-k0LSnQ4+JQosAygjBrdm4ASIjboP1mGhfXsQZlXgE7+Fcz8IatMw498JKccT3YHA6oNZZvqS5KHjj36paAUk7Q==" crossorigin=anonymous defer></script>
-<script src=https://gambitbsm.org/index.min.03ab9c2e460a36904d0b1544581433f337b9e5e23e6798a396683f418d37e30979da1ab2a8ef201c110075d73ccb12f8cc2605c7d9723f99bef11ed7c8b97844.js integrity="sha512-A6ucLkYKNpBNCxVEWBQz8ze55eI+Z5ijlmg/QY034wl52hqyqO8gHBEAddc8yxL4zCYFx9lyP5m+8R7XyLl4RA==" crossorigin=anonymous defer></script></body></html>
+<script src=https://gambitbsm.org/index.min.3a8ee06d0c346f1fb70040b0fbcbaaacf335cb34023c408954406a05db2089fc2ca349119b9f7d68b9e7044e82b8fdc8bd9661b6ef8b118246c5a2079d7fa8e9.js integrity="sha512-Oo7gbQw0bx+3AECw+8uqrPM1yzQCPECJVEBqBdsgifwso0kRm599aLnnBE6CuP3IvZZhtu+LEYJGxaIHnX+o6Q==" crossorigin=anonymous defer></script></body></html>

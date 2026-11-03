@@ -12,7 +12,7 @@ Physics</button><div class=collapse id=section-physics><ul class="btn-toggle-nav
 Help</button><div class=collapse id=section-help><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/help/common_problems_and_questions/>Common Problems and Questions</a></li><li><a class="docs-link rounded" href=/documentation/help/compiler_matrix/>Compiler Matrix</a></li><li><a class="docs-link rounded" href=/documentation/help/known_issues/>Known Issues</a></li><li><a class="docs-link rounded" href=/documentation/help/configuration_examples/>Configuration Examples</a></li><li><a class="docs-link rounded" href=/documentation/help/support/>Support</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-code aria-expanded=false>
 Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/code/index_classes/>Classes</a></li><li><a class="docs-link rounded" href=/documentation/code/index_files/>Files</a></li><li><a class="docs-link rounded" href=/documentation/code/index_pages/>Pages</a></li><li><a class="docs-link rounded" href=/documentation/code/index_namespaces/>Namespaces</a></li></ul></div></li></ul></nav></div><nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation"><div class=d-xl-none><button class="btn btn-outline-primary btn-sm doks-toc-toggle collapsed" type=button data-bs-toggle=collapse data-bs-target=#onThisPage aria-controls=doks-docs-nav aria-expanded=false aria-label="Toggle On this page navigation">
 <span>On this page</span>
-<span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg></span></button><div class=collapse id=onThisPage><div class="card card-body mt-3 py-1"><div class=page-links><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#classes>Classes</a></li><li><a href=#defines>Defines</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#macros-documentation>Macros Documentation</a><ul><li><a href=#define-normal-dependency>define NORMAL_DEPENDENCY</a></li><li><a href=#define-loop-manager-dependency>define LOOP_MANAGER_DEPENDENCY</a></li></ul></li><li><a href=#source-code>Source code</a></li></ul></nav></div></div></div></div><div class="page-links d-none d-xl-block"><h3>On this page</h3><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#classes>Classes</a></li><li><a href=#defines>Defines</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#macros-documentation>Macros Documentation</a><ul><li><a href=#define-normal-dependency>define NORMAL_DEPENDENCY</a></li><li><a href=#define-loop-manager-dependency>define LOOP_MANAGER_DEPENDENCY</a></li></ul></li><li><a href=#source-code>Source code</a></li></ul></nav></div></nav><main class="docs-content col-lg-11 col-xl-9 mx-xl-auto"><nav aria-label=breadcrumb><ol class=breadcrumb><li class=breadcrumb-item><a href=/>Home</a></li><li class=breadcrumb-item><a href=/documentation/>Documentation</a></li><li class=breadcrumb-item><a href=/documentation/code/>Code Reference</a></li><li class="breadcrumb-item active" aria-current=page>file src/depresolver.cpp</li></ol></nav><p class=lead></p><h1 id=file-src-depresolver-cpp>file src/depresolver.cpp <a href=#file-src-depresolver-cpp class=anchor aria-hidden=true>#</a></h1><p>[No description available] <a href=#detailed-description>More&mldr;</a></p><h2 id=namespaces>Namespaces <a href=#namespaces class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th>Name</th></tr></thead><tbody><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit/>Gambit</a></strong><br>TODO: see if we can use this one:</td></tr><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit_1_1dres/>Gambit::DRes</a></strong><br>Forward declaration of <a href>Rule</a> and Observables classes for saving pointers to ignored and matched examples.</td></tr></tbody></table><h2 id=classes>Classes <a href=#classes class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th></th><th>Name</th></tr></thead><tbody><tr><td>class</td><td><strong><a href=/documentation/code/classes/classgambit_1_1dres_1_1edgewriter/>Gambit::DRes::edgeWriter</a></strong><br>Graphviz output for edges/dependencies.</td></tr><tr><td>class</td><td><strong><a href=/documentation/code/classes/classgambit_1_1dres_1_1labelwriter/>Gambit::DRes::labelWriter</a></strong><br>Graphviz output for individual vertices/nodes/module functions.</td></tr></tbody></table><h2 id=defines>Defines <a href=#defines class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th></th><th>Name</th></tr></thead><tbody><tr><td></td><td><strong><a href=/documentation/code/files/depresolver_8cpp/#define-normal-dependency>NORMAL_DEPENDENCY</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/files/depresolver_8cpp/#define-loop-manager-dependency>LOOP_MANAGER_DEPENDENCY</a></strong></td></tr></tbody></table><h2 id=detailed-description>Detailed Description <a href=#detailed-description class=anchor aria-hidden=true>#</a></h2><p><strong>Author</strong>:</p><ul><li>Christoph Weniger (<a href=mailto:c.weniger@uva.nl>c.weniger@uva.nl</a>)</li><li>Pat Scott (<a href=mailto:patrickcolinscott@gmail.com>patrickcolinscott@gmail.com</a>)</li><li>Ben Farmer (<a href=mailto:benjamin.farmer@monash.edu>benjamin.farmer@monash.edu</a>)</li><li>Tomas Gonzalo (<a href=mailto:gonzalo@physik.rwth-aachen.de>gonzalo@physik.rwth-aachen.de</a>)</li><li>Patrick Stoecker (<a href=mailto:stoecker@physik.rwth-aachen.de>stoecker@physik.rwth-aachen.de</a>)</li></ul><p><strong>Date</strong>:</p><ul><li>2013 May, Jun, Jul, Sep</li><li>2014 Feb, Mar, Apr</li><li>2013 May, Jul, Aug, Nov 2014 Jan, Mar, Apr, Dec 2018 Sep, Nov 2022 Nov, Dec 2023 Jan</li><li>2013 Sep</li><li>2017 June 2019 May 2020 June 2021 Sep</li><li>2020 May, Nov</li></ul><p>Dependency resolution with boost graph library</p><pre><code>    unravels the un-unravelable
+<span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg></span></button><div class=collapse id=onThisPage><div class="card card-body mt-3 py-1"><div class=page-links><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#classes>Classes</a></li><li><a href=#defines>Defines</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#macros-documentation>Macros Documentation</a><ul><li><a href=#define-normal-dependency>define NORMAL_DEPENDENCY</a></li><li><a href=#define-loop-manager-dependency>define LOOP_MANAGER_DEPENDENCY</a></li></ul></li><li><a href=#source-code>Source code</a></li></ul></nav></div></div></div></div><div class="page-links d-none d-xl-block"><h3>On this page</h3><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#classes>Classes</a></li><li><a href=#defines>Defines</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#macros-documentation>Macros Documentation</a><ul><li><a href=#define-normal-dependency>define NORMAL_DEPENDENCY</a></li><li><a href=#define-loop-manager-dependency>define LOOP_MANAGER_DEPENDENCY</a></li></ul></li><li><a href=#source-code>Source code</a></li></ul></nav></div></nav><main class="docs-content col-lg-11 col-xl-9 mx-xl-auto"><nav aria-label=breadcrumb><ol class=breadcrumb><li class=breadcrumb-item><a href=/>Home</a></li><li class=breadcrumb-item><a href=/documentation/>Documentation</a></li><li class=breadcrumb-item><a href=/documentation/code/>Code Reference</a></li><li class="breadcrumb-item active" aria-current=page>file src/depresolver.cpp</li></ol></nav><p class=lead></p><h1 id=file-src-depresolver-cpp>file src/depresolver.cpp <a href=#file-src-depresolver-cpp class=anchor aria-hidden=true>#</a></h1><p>[No description available] <a href=#detailed-description>More&mldr;</a></p><h2 id=namespaces>Namespaces <a href=#namespaces class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th>Name</th></tr></thead><tbody><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit/>Gambit</a></strong><br>TODO: see if we can use this one:</td></tr><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit_1_1dres/>Gambit::DRes</a></strong><br>Forward declaration of <a href>Rule</a> and Observables classes for saving pointers to ignored and matched examples.</td></tr></tbody></table><h2 id=classes>Classes <a href=#classes class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th></th><th>Name</th></tr></thead><tbody><tr><td>class</td><td><strong><a href=/documentation/code/classes/classgambit_1_1dres_1_1edgewriter/>Gambit::DRes::edgeWriter</a></strong><br>Graphviz output for edges/dependencies.</td></tr><tr><td>class</td><td><strong><a href=/documentation/code/classes/classgambit_1_1dres_1_1labelwriter/>Gambit::DRes::labelWriter</a></strong><br>Graphviz output for individual vertices/nodes/module functions.</td></tr></tbody></table><h2 id=defines>Defines <a href=#defines class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th></th><th>Name</th></tr></thead><tbody><tr><td></td><td><strong><a href=/documentation/code/files/depresolver_8cpp/#define-normal-dependency>NORMAL_DEPENDENCY</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/files/depresolver_8cpp/#define-loop-manager-dependency>LOOP_MANAGER_DEPENDENCY</a></strong></td></tr></tbody></table><h2 id=detailed-description>Detailed Description <a href=#detailed-description class=anchor aria-hidden=true>#</a></h2><p><strong>Author</strong>:</p><ul><li>Christoph Weniger (<a href=mailto:c.weniger@uva.nl>c.weniger@uva.nl</a>)</li><li>Pat Scott (<a href=mailto:patrickcolinscott@gmail.com>patrickcolinscott@gmail.com</a>)</li><li>Ben Farmer (<a href=mailto:benjamin.farmer@monash.edu>benjamin.farmer@monash.edu</a>)</li><li>Tomas Gonzalo (<a href=mailto:gonzalo@physik.rwth-aachen.de>gonzalo@physik.rwth-aachen.de</a>)</li><li>Patrick Stoecker (<a href=mailto:stoecker@physik.rwth-aachen.de>stoecker@physik.rwth-aachen.de</a>)</li></ul><p><strong>Date</strong>:</p><ul><li>2013 May, Jun, Jul, Sep</li><li>2014 Feb, Mar, Apr</li><li>2013 May, Jul, Aug, Nov 2014 Jan, Mar, Apr, Dec 2018 Sep, Nov 2022 Nov, Dec 2023 Jan</li><li>2013 Sep</li><li>2017 June 2019 May 2020 June 2021 Sep</li><li>2020 May, Nov</li><li>2026 Oct</li></ul><p>Dependency resolution with boost graph library</p><pre><code>    unravels the un-unravelable
 </code></pre><hr><p>Authors (add name and date if you modify):</p><hr><h2 id=macros-documentation>Macros Documentation <a href=#macros-documentation class=anchor aria-hidden=true>#</a></h2><h3 id=define-normal-dependency>define NORMAL_DEPENDENCY <a href=#define-normal-dependency class=anchor aria-hidden=true>#</a></h3><pre><code>#define NORMAL_DEPENDENCY 1
 </code></pre><h3 id=define-loop-manager-dependency>define LOOP_MANAGER_DEPENDENCY <a href=#define-loop-manager-dependency class=anchor aria-hidden=true>#</a></h3><pre><code>#define LOOP_MANAGER_DEPENDENCY 2
 </code></pre><h2 id=source-code>Source code <a href=#source-code class=anchor aria-hidden=true>#</a></h2><pre><code>//   GAMBIT: Global and Modular BSM Inference Tool
@@ -54,6 +54,7 @@ Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle
 ///  \author Patrick Stoecker
 ///          (stoecker@physik.rwth-aachen.de)
 ///  \date 2020 May, Nov
+///  \date 2026 Oct
 ///
 ///  *********************************************
 
@@ -66,6 +67,7 @@ Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle
 #include &quot;gambit/Utils/version.hpp&quot;
 #include &quot;gambit/Utils/bibtex_functions.hpp&quot;
 #include &quot;gambit/Utils/citation_keys.hpp&quot;
+#include &quot;gambit/Utils/model_validation.hpp&quot;
 #include &quot;gambit/Logs/logger.hpp&quot;
 #include &quot;gambit/Backends/backend_singleton.hpp&quot;
 #include &quot;gambit/cmake/cmake_variables.hpp&quot;
@@ -136,11 +138,15 @@ namespace Gambit
       for (std::tie(it, iend) = in_edges(vertex, graph);
           it != iend; ++it)
       {
-        if (std::find(myVertexList.begin(), myVertexList.end(), source(*it, graph)) == myVertexList.end() )
+        // Use the fact that insert() returns {iterator, true} when 
+        // the parent is new, in which case we recurse. (Should give 
+        // a O(log N) tree traversal rather than O(N) when using 
+        // std::find + insert.)
+        const VertexID parent = source(*it, graph);
+        if (myVertexList.insert(parent).second)
         {
-          myVertexList.insert(source(*it, graph));
-          getParentVertices(source(*it, graph), graph, myVertexList);
-        }
+          getParentVertices(parent, graph, myVertexList);          
+        }  
       }
     }
 
@@ -273,12 +279,13 @@ namespace Gambit
       for (const Observable&amp; obslike : obslikes)
       {
         // Format output
-        logger() &lt;&lt; LogTags::dependency_resolver &lt;&lt; endl &lt;&lt; obslike.capability &lt;&lt; &quot; (&quot; &lt;&lt; obslike.type &lt;&lt; &quot;) [&quot; &lt;&lt; obslike.purpose &lt;&lt; &quot;]&quot;;
+        logger() &lt;&lt; LogTags::dependency_resolver &lt;&lt; endl &lt;&lt; obslike.capability &lt;&lt; &quot; (&quot; &lt;&lt; obslike.type &lt;&lt; &quot;) [&quot; &lt;&lt; obslike.purpose &lt;&lt; &quot;] critical:&quot; &lt;&lt; obslike.critical &lt;&lt; &quot;&quot;;
         QueueEntry target;
         target.quantity.first = obslike.capability;
         target.quantity.second = obslike.type;
         target.obslike = &amp;obslike;
         target.printme = obslike.printme;
+        target.critical = obslike.critical;
         resolutionQueue.push(target);
       }
       logger() &lt;&lt; EOM;
@@ -340,6 +347,19 @@ namespace Gambit
       // Get the scanID
       set_scanID();
 
+      // Set the model validation handling
+      setModelValidationHandling();
+
+      // Build the vertex ID -&gt; OutputVertex* map used by getPurpose() and
+      // getCritical(). outputVertices is finalised by this point and is never
+      // mutated again, so the pointers stored here remain valid.
+      outputVertexIndex.clear();
+      outputVertexIndex.reserve(outputVertices.size());
+      for (const OutputVertex&amp; ov : outputVertices)
+      {
+        outputVertexIndex.emplace(ov.vertex, &amp;ov);
+      }
+
       // Done
     }
 
@@ -350,11 +370,11 @@ namespace Gambit
       makeFunctorsModelCompatible();
 
       graph_traits&lt;MasterGraphType&gt;::vertex_iterator vi, vi_end;
-      const str formatString = &quot;%-20s %-32s %-32s %-32s %-15s %-7i %-5i %-5i\n&quot;;
+      const str formatString = &quot;%-20s %-32s %-32s %-32s %-15s %-5i %-7i %-5i %-5i\n&quot;;
       logger() &lt;&lt; LogTags::dependency_resolver &lt;&lt; endl &lt;&lt; &quot;Vertices registered in masterGraph&quot; &lt;&lt; endl;
       logger() &lt;&lt; &quot;----------------------------------&quot; &lt;&lt; endl;
       logger() &lt;&lt; boost::format(formatString)%
-       &quot;MODULE&quot;% &quot;FUNCTION&quot;% &quot;CAPABILITY&quot;% &quot;TYPE&quot;% &quot;PURPOSE&quot;% &quot;STATUS&quot;% &quot;#DEPs&quot;% &quot;#BE_REQs&quot;;
+       &quot;MODULE&quot;% &quot;FUNCTION&quot;% &quot;CAPABILITY&quot;% &quot;TYPE&quot;% &quot;PURPOSE&quot;% &quot;CRITICAL&quot;% &quot;STATUS&quot;% &quot;#DEPs&quot;% &quot;#BE_REQs&quot;;
       for (std::tie(vi, vi_end) = vertices(masterGraph); vi != vi_end; ++vi)
       {
         logger() &lt;&lt; boost::format(formatString)%
@@ -363,6 +383,7 @@ namespace Gambit
          (*masterGraph[*vi]).capability()%
          (*masterGraph[*vi]).type()%
          (*masterGraph[*vi]).purpose()%
+         (*masterGraph[*vi]).critical()%
          (*masterGraph[*vi]).status()%
          (*masterGraph[*vi]).dependencies().size()%
          (*masterGraph[*vi]).backendreqs().size();
@@ -626,9 +647,10 @@ namespace Gambit
     /// Evaluates ObsLike vertex, and everything it depends on, and prints results
     void DependencyResolver::calcObsLike(VertexID vertex)
     {
-      if (SortedParentVertices.find(vertex) == SortedParentVertices.end())
+      auto found = SortedParentVertices.find(vertex);
+      if (found == SortedParentVertices.end())
         core_error().raise(LOCAL_INFO, &quot;Tried to calculate a function not in or not at top of dependency graph.&quot;);
-      std::vector&lt;VertexID&gt; order = SortedParentVertices.at(vertex);
+      std::vector&lt;VertexID&gt; order = found-&gt;second;
 
       for (const VertexID&amp; v : order)
       {
@@ -656,9 +678,10 @@ namespace Gambit
       // pointID is supplied by the scanner, and is used to tell the printer which model
       // point the results should be associated with.
 
-      if (SortedParentVertices.find(vertex) == SortedParentVertices.end())
+      auto found = SortedParentVertices.find(vertex);
+      if (found == SortedParentVertices.end())
         core_error().raise(LOCAL_INFO, &quot;Tried to calculate a function not in or not at top of dependency graph.&quot;);
-      std::vector&lt;VertexID&gt; order = SortedParentVertices.at(vertex);
+      std::vector&lt;VertexID&gt; order = found-&gt;second;
 
       for (const VertexID&amp; v : order)
       {
@@ -715,13 +738,20 @@ namespace Gambit
     /// Return the purpose associated with a given functor.
     const str&amp; DependencyResolver::getPurpose(VertexID v)
     {
-      for (const OutputVertex&amp; ov : outputVertices)
-      {
-        if (ov.vertex == v) return ov.purpose;
-      }
+      auto it = outputVertexIndex.find(v);
+      if (it != outputVertexIndex.end()) return it-&gt;second-&gt;purpose;
       /// '__no_purpose' if the functor does not correspond to an ObsLike entry in the ini file.
       static const str none(&quot;__no_purpose&quot;);
       return none;
+    }
+
+    /// Return whether a given functor is critical.
+    bool DependencyResolver::getCritical(VertexID v)
+    {
+      auto it = outputVertexIndex.find(v);
+      if (it != outputVertexIndex.end()) return it-&gt;second-&gt;critical;
+      /// critical can safely be false if the functor does not correspond to an ObsLike entry in the ini file.
+      return false;
     }
 
     /// Tell functor that it invalidated the current point in model space (due to a large or NaN contribution to lnL)
@@ -943,7 +973,7 @@ namespace Gambit
 
     std::vector&lt;std::pair&lt;VertexID,bool&gt;&gt; DependencyResolver::closestCandidateForModel(std::vector&lt;std::pair&lt;VertexID,bool&gt;&gt; candidates)
     {
-      // In case of doubt (and if not explicitely disabled in the ini-file), prefer functors
+      // In case of doubt (and if not explicitly disabled in the ini-file), prefer functors
       // that are more specifically tailored for the model being scanned. Do not consider functors
       // that are accessible via INTERPRET_AS_X links, as these are all considered to be equally 'far'
       // from the model being scanned, with the 'distance' being one step further than the most distant
@@ -1503,10 +1533,11 @@ namespace Gambit
 
               // Take any dependencies of loop-managed vertices that have already been resolved,
               // and add them as &quot;hidden&quot; dependencies to this loop manager.
-              if (edges_to_force_on_manager.find(entry.toVertex) != edges_to_force_on_manager.end())
+              auto found_edges_it = edges_to_force_on_manager.find(entry.toVertex);
+              if (found_edges_it != edges_to_force_on_manager.end())
               {
-                for (auto it = edges_to_force_on_manager.at(entry.toVertex).begin();
-                     it != edges_to_force_on_manager.at(entry.toVertex).end(); ++it)
+                for (auto it = found_edges_it-&gt;second.begin();
+                     it != found_edges_it-&gt;second.end(); ++it)
                 {
                   logger() &lt;&lt; &quot;Dynamically adding dependency of &quot; &lt;&lt; masterGraph[fromVertex]-&gt;origin()
                            &lt;&lt; &quot;::&quot; &lt;&lt; masterGraph[fromVertex]-&gt;name() &lt;&lt; &quot; on &quot;
@@ -1581,7 +1612,8 @@ namespace Gambit
           else // if output vertex
           {
             outVertex.vertex = fromVertex;
-            outVertex.purpose = entry.obslike-&gt;purpose;;
+            outVertex.purpose = entry.obslike-&gt;purpose;
+            outVertex.critical = entry.obslike-&gt;critical;
             outputVertices.push_back(outVertex);
             // Don't need subcaps during dry-run
             if (not boundCore-&gt;show_runorder)
@@ -2406,10 +2438,39 @@ namespace Gambit
       }
     }
 
+    void DependencyResolver::setModelValidationHandling() const
+    {
+      const str&amp; model_validation_handling_str = boundIniFile-&gt;getValueOrDef&lt;str&gt;(&quot;pass&quot;, &quot;model_validation&quot;);
+
+      auto&amp; model_validation_handler = ModelValidationHandler::getInstance();
+
+      if (model_validation_handling_str == &quot;pass&quot;)
+      {
+        model_validation_handler.setModelValidationHandling(ModelValidationHandling::pass);
+      }
+      else if (model_validation_handling_str == &quot;invalidate&quot;)
+      {
+        model_validation_handler.setModelValidationHandling(ModelValidationHandling::invalidate);
+      }
+      else if (model_validation_handling_str == &quot;raise&quot;)
+      {
+        model_validation_handler.setModelValidationHandling(ModelValidationHandling::raise);
+      }
+      else
+      {
+        std::ostringstream errmsg;
+        errmsg &lt;&lt; &quot;Invalid model_validation_handling value: &quot; &lt;&lt; model_validation_handling_str &lt;&lt; &quot;.&quot; &lt;&lt; endl;
+        errmsg &lt;&lt; &quot;Valid values are: pass, invalidate, raise.&quot; &lt;&lt; endl;
+        dependency_resolver_error().raise(LOCAL_INFO,errmsg.str());
+      }
+
+      logger() &lt;&lt; LogTags::dependency_resolver &lt;&lt; &quot;Model validation handling set to \&quot;&quot; &lt;&lt; model_validation_handling_str &lt;&lt; &quot;\&quot;.&quot; &lt;&lt; EOM;
+    }
+
   }
 
 }
-</code></pre><hr><p>Updated on 2025-02-12 at 16:10:35 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.d5e27a6ed00168b7a66eb637878a6be7d054db51d0e613bbcfda12ab0569b62177253b4e6453c477574b3a38f50eff49a68f0e19112bd82a68c78a66cd8d05df.js integrity="sha512-1eJ6btABaLembrY3h4pr59BU21HQ5hO7z9oSqwVptiF3JTtOZFPEd1dLOjj1Dv9Jpo8OGREr2Cpox4pmzY0F3w==" crossorigin=anonymous defer></script>
+</code></pre><hr><p>Updated on 2026-11-03 at 14:50:47 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.d5e27a6ed00168b7a66eb637878a6be7d054db51d0e613bbcfda12ab0569b62177253b4e6453c477574b3a38f50eff49a68f0e19112bd82a68c78a66cd8d05df.js integrity="sha512-1eJ6btABaLembrY3h4pr59BU21HQ5hO7z9oSqwVptiF3JTtOZFPEd1dLOjj1Dv9Jpo8OGREr2Cpox4pmzY0F3w==" crossorigin=anonymous defer></script>
 <script src=/js/highlight.min.9003483b4531b86467c8b801b1d5fc5439bb0d6bdb6c6a760a1b54abf37d6bbadf8423dbc81a3359c935c7705bb7d183b46131ba4a9c861b5d48e6a61501461a.js integrity="sha512-kANIO0UxuGRnyLgBsdX8VDm7DWvbbGp2ChtUq/N9a7rfhCPbyBozWck1x3Bbt9GDtGExukqchhtdSOamFQFGGg==" crossorigin=anonymous defer></script>
 <script src=/main.min.9342d29d0e3e250a2c03282306b766e004888dba0fd661a17d7b106655e013bf85733f086ad330e3df0929c713dd81c0ea835966fa92e4a1e38f7ea9680524ed.js integrity="sha512-k0LSnQ4+JQosAygjBrdm4ASIjboP1mGhfXsQZlXgE7+Fcz8IatMw498JKccT3YHA6oNZZvqS5KHjj36paAUk7Q==" crossorigin=anonymous defer></script>
-<script src=https://gambitbsm.org/index.min.03ab9c2e460a36904d0b1544581433f337b9e5e23e6798a396683f418d37e30979da1ab2a8ef201c110075d73ccb12f8cc2605c7d9723f99bef11ed7c8b97844.js integrity="sha512-A6ucLkYKNpBNCxVEWBQz8ze55eI+Z5ijlmg/QY034wl52hqyqO8gHBEAddc8yxL4zCYFx9lyP5m+8R7XyLl4RA==" crossorigin=anonymous defer></script></body></html>
+<script src=https://gambitbsm.org/index.min.3a8ee06d0c346f1fb70040b0fbcbaaacf335cb34023c408954406a05db2089fc2ca349119b9f7d68b9e7044e82b8fdc8bd9661b6ef8b118246c5a2079d7fa8e9.js integrity="sha512-Oo7gbQw0bx+3AECw+8uqrPM1yzQCPECJVEBqBdsgifwso0kRm599aLnnBE6CuP3IvZZhtu+LEYJGxaIHnX+o6Q==" crossorigin=anonymous defer></script></body></html>

@@ -69,24 +69,6 @@ namespace Gambit
 
       protected:
 
-        // Signal region map
-        std::map&lt;string, EventCounter&gt; _counters = {
-          // Exclusion regions
-          {&quot;SR-4Q-WW&quot;, EventCounter(&quot;SR-4Q-WW&quot;)},
-          {&quot;SR-4Q-WZ&quot;, EventCounter(&quot;SR-4Q-WZ&quot;)},
-          {&quot;SR-4Q-ZZ&quot;, EventCounter(&quot;SR-4Q-ZZ&quot;)},
-          {&quot;SR-4Q-VV&quot;, EventCounter(&quot;SR-4Q-VV&quot;)},
-  //        {&quot;SR-2B2Q-WZ&quot;, EventCounter(&quot;SR-2B2Q-WZ&quot;)},
-  //        {&quot;SR-2B2Q-ZZ&quot;, EventCounter(&quot;SR-2B2Q-ZZ&quot;)},
-  //        {&quot;SR-2B2Q-Wh&quot;, EventCounter(&quot;SR-2B2Q-Wh&quot;)},
-  //        {&quot;SR-2B2Q-Zh&quot;, EventCounter(&quot;SR-2B2Q-Zh&quot;)},
-  //        {&quot;SR-2B2Q-VZ&quot;, EventCounter(&quot;SR-2B2Q-VZ&quot;)},
-  //        {&quot;SR-2B2Q-Vh&quot;, EventCounter(&quot;SR-2B2Q-Vh&quot;)},
-  //        // Discovery regions
-  //        {&quot;Disc-SR-2B2Q&quot;, EventCounter(&quot;Disc-SR-2B2Q&quot;)},  // Union of SR-2B2Q-VZ and SR-2B2Q-Vh
-  //        {&quot;Disc-SR-Incl&quot;, EventCounter(&quot;Disc-SR-Incl&quot;)},  // Union of SR-4Q-VV and Disc-SR-2B2Q
-        };
-
       public:
 
         #ifdef CHECK_CUTFLOW
@@ -110,7 +92,25 @@ namespace Gambit
         Analysis_ATLAS_13TeV_2BoostedBosons_139invfb()
         {
 
+          // Signal region map
+          // Exclusion regions
+          _counters[&quot;SR-4Q-WW&quot;] = EventCounter(&quot;SR-4Q-WW&quot;);
+          _counters[&quot;SR-4Q-WZ&quot;] = EventCounter(&quot;SR-4Q-WZ&quot;);
+          _counters[&quot;SR-4Q-ZZ&quot;] = EventCounter(&quot;SR-4Q-ZZ&quot;);
+          _counters[&quot;SR-4Q-VV&quot;] = EventCounter(&quot;SR-4Q-VV&quot;);
+    //      _counters[&quot;SR-2B2Q-WZ&quot;] = EventCounter(&quot;SR-2B2Q-WZ&quot;);
+    //      _counters[&quot;SR-2B2Q-ZZ&quot;] = EventCounter(&quot;SR-2B2Q-ZZ&quot;);
+    //      _counters[&quot;SR-2B2Q-Wh&quot;] = EventCounter(&quot;SR-2B2Q-Wh&quot;);
+    //      _counters[&quot;SR-2B2Q-Zh&quot;] = EventCounter(&quot;SR-2B2Q-Zh&quot;);
+    //      _counters[&quot;SR-2B2Q-VZ&quot;] = EventCounter(&quot;SR-2B2Q-VZ&quot;);
+    //      _counters[&quot;SR-2B2Q-Vh&quot;] = EventCounter(&quot;SR-2B2Q-Vh&quot;);
+    //      // Discovery regions
+    //      _counters[&quot;Disc-SR-2B2Q&quot;] = EventCounter(&quot;Disc-SR-2B2Q&quot;);  // Union of SR-2B2Q-VZ and SR-2B2Q-Vh
+    //      _counters[&quot;Disc-SR-Incl&quot;] = EventCounter(&quot;Disc-SR-Incl&quot;);  // Union of SR-4Q-VV and Disc-SR-2B2Q
+
+
           set_analysis_name(&quot;ATLAS_13TeV_2BoostedBosons_139invfb&quot;);
+          set_detector_name(detector);
           set_luminosity(139.);
 
         }
@@ -162,7 +162,7 @@ namespace Gambit
               electrons.push_back(electron);
           }
           // Apply electron efficiency from &quot;Loose&quot; criteria in 1902.04655
-          ATLAS::applyElectronIDEfficiency2019(electrons, &quot;Loose&quot;);
+          applyEfficiency(electrons, ATLAS::eff1DEl.at(&quot;PERF_2017_01_ID_Loose&quot;));
           // Baseline muons
           vector&lt;const HEPUtils::Particle*&gt; muons;
           for (const HEPUtils::Particle* muon : event-&gt;muons())
@@ -172,7 +172,7 @@ namespace Gambit
               muons.push_back(muon);
           }
           // Apply muon efficiency
-          ATLAS::applyMuonEffR2(muons);
+          applyEfficiency(muons, ATLAS::eff2DMu.at(&quot;R2&quot;));
 
           // Number of leptons
           size_t nMuons = muons.size();
@@ -181,7 +181,7 @@ namespace Gambit
 
           // Look at jets to see if they fulfil criteria for fat jets
           vector&lt;const HEPUtils::Jet*&gt; fatJets;
-          for (const HEPUtils::Jet* jet : event-&gt;jets(&quot;antikt_R04&quot;))
+          for (const HEPUtils::Jet* jet : event-&gt;jets(&quot;antikt_R1&quot;))
           {
             //  cout  &lt;&lt; jet-&gt;pT() &lt;&lt; &quot; &quot; &lt;&lt; jet-&gt;mass() &lt;&lt; &quot; Z-tag &quot; &lt;&lt;  jet-&gt;tagged(23) &lt;&lt; &quot; W-tag &quot; &lt;&lt; jet-&gt;tagged(24) &lt;&lt; &quot; &quot; &lt;&lt; endl;
             if (jet-&gt;pT() &gt; 200. &amp;&amp; fabs(jet-&gt;eta()) &lt; 2.0 &amp;&amp; jet-&gt;mass() &gt; 40.)
@@ -194,7 +194,10 @@ namespace Gambit
           size_t nfat = fatJets.size();
 
           // Tag the large jets (only look at two hardest jets)
-          int nW = 0; int nZ = 0; int nH = 0; int ntest = 0;
+          int nW = 0; int nZ = 0; int ntest = 0;
+          #ifdef CHECK_CUTFLOW
+            int nH = 0;
+          #endif
           const vector&lt;double&gt; bpT = {200., 300., 500., 700., 900., DBL_MAX}; // pT bin edges
           const vector&lt;double&gt; pW = {0.469, 0.475, 0.481, 0.496, 0.522}; // W tag prob
           const vector&lt;double&gt; pWmiss = {1/10.2574, 1/20.2997, 1/33.4745, 1/36.0622, 1/29.1341}; // W misstag prob
@@ -213,7 +216,9 @@ namespace Gambit
             // Tag Z
             if( jet-&gt;tagged(23) &amp;&amp; random_bool( _eff1dZ.get_at( jet-&gt;pT() ) ) ) nZ++;
             // Tag SM Higgs
-            if( jet-&gt;tagged(25) &amp;&amp; random_bool( _eff1dH.get_at( jet-&gt;pT() )  ) ) nH++;
+            #ifdef CHECK_CUTFLOW
+              if( jet-&gt;tagged(25) &amp;&amp; random_bool( _eff1dH.get_at( jet-&gt;pT() )  ) ) nH++;
+            #endif
             // Misstag as Z or W
             if( !jet-&gt;tagged(23) &amp;&amp; !jet-&gt;tagged(24) )
             {
@@ -237,7 +242,7 @@ namespace Gambit
           // double btag = 0.83;
           double cmisstag = 1/3.; double misstag = 1./33.;
           int nb = 0;
-          for ( const HEPUtils::Jet* jet : event-&gt;jets(&quot;antikt_R04&quot;) )
+          for ( const HEPUtils::Jet* jet : event-&gt;jets(&quot;antikt_R1&quot;) )
           {
             // Tag b-jet
             if( jet-&gt;btag() ) nb++;
@@ -311,14 +316,6 @@ namespace Gambit
 
 
         } // End of analyze
-
-
-        /// Combine the variables of another copy of this analysis (typically on another thread) into this one.
-        void combine(const Analysis* other)
-        {
-          const Analysis_ATLAS_13TeV_2BoostedBosons_139invfb* specificOther = dynamic_cast&lt;const Analysis_ATLAS_13TeV_2BoostedBosons_139invfb*&gt;(other);
-          for (auto&amp; pair : _counters) { pair.second += specificOther-&gt;_counters.at(pair.first); }
-        }
 
 
         void collect_results()
@@ -559,7 +556,7 @@ namespace Gambit
 
 
  */
-</code></pre><hr><p>Updated on 2025-02-12 at 16:10:35 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.d5e27a6ed00168b7a66eb637878a6be7d054db51d0e613bbcfda12ab0569b62177253b4e6453c477574b3a38f50eff49a68f0e19112bd82a68c78a66cd8d05df.js integrity="sha512-1eJ6btABaLembrY3h4pr59BU21HQ5hO7z9oSqwVptiF3JTtOZFPEd1dLOjj1Dv9Jpo8OGREr2Cpox4pmzY0F3w==" crossorigin=anonymous defer></script>
+</code></pre><hr><p>Updated on 2026-11-03 at 14:50:47 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.d5e27a6ed00168b7a66eb637878a6be7d054db51d0e613bbcfda12ab0569b62177253b4e6453c477574b3a38f50eff49a68f0e19112bd82a68c78a66cd8d05df.js integrity="sha512-1eJ6btABaLembrY3h4pr59BU21HQ5hO7z9oSqwVptiF3JTtOZFPEd1dLOjj1Dv9Jpo8OGREr2Cpox4pmzY0F3w==" crossorigin=anonymous defer></script>
 <script src=/js/highlight.min.9003483b4531b86467c8b801b1d5fc5439bb0d6bdb6c6a760a1b54abf37d6bbadf8423dbc81a3359c935c7705bb7d183b46131ba4a9c861b5d48e6a61501461a.js integrity="sha512-kANIO0UxuGRnyLgBsdX8VDm7DWvbbGp2ChtUq/N9a7rfhCPbyBozWck1x3Bbt9GDtGExukqchhtdSOamFQFGGg==" crossorigin=anonymous defer></script>
 <script src=/main.min.9342d29d0e3e250a2c03282306b766e004888dba0fd661a17d7b106655e013bf85733f086ad330e3df0929c713dd81c0ea835966fa92e4a1e38f7ea9680524ed.js integrity="sha512-k0LSnQ4+JQosAygjBrdm4ASIjboP1mGhfXsQZlXgE7+Fcz8IatMw498JKccT3YHA6oNZZvqS5KHjj36paAUk7Q==" crossorigin=anonymous defer></script>
-<script src=https://gambitbsm.org/index.min.03ab9c2e460a36904d0b1544581433f337b9e5e23e6798a396683f418d37e30979da1ab2a8ef201c110075d73ccb12f8cc2605c7d9723f99bef11ed7c8b97844.js integrity="sha512-A6ucLkYKNpBNCxVEWBQz8ze55eI+Z5ijlmg/QY034wl52hqyqO8gHBEAddc8yxL4zCYFx9lyP5m+8R7XyLl4RA==" crossorigin=anonymous defer></script></body></html>
+<script src=https://gambitbsm.org/index.min.3a8ee06d0c346f1fb70040b0fbcbaaacf335cb34023c408954406a05db2089fc2ca349119b9f7d68b9e7044e82b8fdc8bd9661b6ef8b118246c5a2079d7fa8e9.js integrity="sha512-Oo7gbQw0bx+3AECw+8uqrPM1yzQCPECJVEBqBdsgifwso0kRm599aLnnBE6CuP3IvZZhtu+LEYJGxaIHnX+o6Q==" crossorigin=anonymous defer></script></body></html>

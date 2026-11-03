@@ -38,7 +38,6 @@ namespace Gambit
 
       protected:
         // Counters for the number of accepted events for each signal region
-        std::map&lt;str, EventCounter&gt; _counters;
 
       private:
 
@@ -48,11 +47,10 @@ namespace Gambit
         }
 
       public:
- 
+
         // Required detector sim
         static constexpr const char* detector = &quot;CMS&quot;;
 
-        Cutflows _cutflows;
 
         Analysis_CMS_13TeV_MultiLEP_137invfb()
         {
@@ -133,6 +131,7 @@ namespace Gambit
 
 
           set_analysis_name(&quot;CMS_13TeV_MultiLEP_137invfb&quot;);
+          set_detector_name(detector);
           set_luminosity(137.0);
 
         }
@@ -267,12 +266,12 @@ namespace Gambit
 
           // - OS pairs, only light leptons
           std::vector&lt;std::vector&lt;const HEPUtils::Particle*&gt; &gt; OSpairs = getOSpairs(signalLightLeptons);
-          sortByParentMass(OSpairs, mZ);         
+          sortByParentMass(OSpairs, mZ);
           uniquePairs(OSpairs);
 
           // - OS pairs, including taus
           std::vector&lt;std::vector&lt;const HEPUtils::Particle*&gt; &gt; OSpairsWithTaus = getOSpairs(signalLeptons);
-          sortByParentMass(OSpairsWithTaus, mZ);         
+          sortByParentMass(OSpairsWithTaus, mZ);
           uniquePairs(OSpairsWithTaus);
 
           // - OSSF pairs, only light leptons
@@ -302,8 +301,7 @@ namespace Gambit
           }
 
           // Apply b-tag efficiency on b-jets
-          CMS::applyCSVv2TightBtagEff(signalBJets);
-          
+          applyEfficiency(signalBJets, CMS::eff2DBJet.at(&quot;CSVv2Tight&quot;));
 
 
           ///////////////////////////////
@@ -355,7 +353,7 @@ namespace Gambit
           // Signal regions //
 
           // 2SSLep, (2lSS)
-          if(nLightLeptons == 2 and nLeptons == 2 and nSSpairs == 1 and 
+          if(nLightLeptons == 2 and nLeptons == 2 and nSSpairs == 1 and
              ( (muonPair and signalLeptons.at(0)-&gt;pT() &gt; 20.) or ((electronPair or mixedPair) and signalLeptons.at(0)-&gt;pT() &gt; 25.) ) and
              ( (amIanElectron(signalLeptons.at(1)) and signalLeptons.at(1)-&gt;pT() &gt;  15.) or (amIaMuon(signalLeptons.at(1)) and signalLeptons.at(1)-&gt;pT() &gt; 10.) ) and
              ( nJets &lt; 2 or signalJets.at(1)-&gt;pT() &lt; 40) and
@@ -396,17 +394,17 @@ namespace Gambit
           }
 
           // Selection conditon for 3 lepton events
-          if(nLeptons == 3 and nLightLeptons &gt;0)
-          {
-            static int n3lepevents = 0;
-            n3lepevents++;
-          }
+          // if(nLeptons == 3 and nLightLeptons &gt;0)
+          // {
+          //   static int n3lepevents = 0;
+          //   n3lepevents++;
+          // }
           bool _3Lep = nLeptons == 3 and 
                       nLightLeptons &gt; 0 and 
                       ( (amIanElectron(signalLightLeptons.at(0)) and signalLightLeptons.at(0)-&gt;pT() &gt; 25.) or 
                         (amIaMuon(signalLightLeptons.at(0)) and signalLightLeptons.at(0)-&gt;pT() &gt; 20.) ) and
-                      ( nLightLeptons &lt; 2 or 
-                        (amIanElectron(signalLightLeptons.at(1)) and signalLightLeptons.at(1)-&gt;pT() &gt; 15.) or 
+                      ( nLightLeptons &lt; 2 or
+                        (amIanElectron(signalLightLeptons.at(1)) and signalLightLeptons.at(1)-&gt;pT() &gt; 15.) or
                         (amIaMuon(signalLightLeptons.at(1)) and signalLightLeptons.at(1)-&gt;pT() &gt; 10.) ) and
                       met &gt; 50;
 
@@ -589,14 +587,14 @@ namespace Gambit
             // Set mlth to zero is the tau has the same sign as the pair of light leptons
             if(sameSign(signalTaus.at(0), signalLightLeptons.at(0))) mlth = 0.;
 
-            // mT2 varaible
+            // mT2 variable
             double mT2 = get_mT2(signalLightLeptons.at(0), signalTaus.at(0), mmom, 0.);
 
             if(mT2 &gt;= 0. and mT2 &lt; 80. and mlth &lt;= 50. and met &gt;=  50. and met &lt; 100.) counter_cutflow(&quot;E01&quot;,event,w);
             if(mT2 &gt;= 0. and mT2 &lt; 80. and mlth &lt;= 50. and met &gt;= 100. and met &lt; 250.) counter_cutflow(&quot;E02&quot;,event,w);
             if(mT2 &gt;= 0. and mT2 &lt; 80. and mlth &lt;= 50. and met &gt;= 250.) counter_cutflow(&quot;E03&quot;,event,w);
             if(mT2 &gt;= 0. and mT2 &lt; 80. and mlth &gt;  50. and met &gt;=  50. and met &lt; 100.) counter_cutflow(&quot;E04&quot;,event,w);
-            if(mT2 &gt;= 0. and mT2 &lt; 80. and mlth &gt;  50. and met &gt;= 100.) counter_cutflow(&quot;E05&quot;,event,w); 
+            if(mT2 &gt;= 0. and mT2 &lt; 80. and mlth &gt;  50. and met &gt;= 100.) counter_cutflow(&quot;E05&quot;,event,w);
 
             if(mT2 &gt;= 80. and mlth &lt;= 100. and met &gt;=  50. and met &lt; 150.) counter_cutflow(&quot;E06&quot;,event,w);
             if(mT2 &gt;= 80. and mlth &lt;= 100. and met &gt;= 150.) counter_cutflow(&quot;E07&quot;,event,w);
@@ -713,12 +711,6 @@ namespace Gambit
 
         }
 
-        /// Combine the variables of another copy of this analysis (typically on another thread) into this one.
-        void combine(const Analysis* other)
-        {
-          const Analysis_CMS_13TeV_MultiLEP_137invfb* specificOther = dynamic_cast&lt;const Analysis_CMS_13TeV_MultiLEP_137invfb*&gt;(other);
-          for (auto&amp; pair : _counters) { pair.second += specificOther-&gt;_counters.at(pair.first); }
-        }
 
         virtual void collect_results()
         {
@@ -900,24 +892,9 @@ namespace Gambit
           add_result(SignalRegionData(_counters.at(&quot;K02&quot;), 5., {5.2, 2.45}));
           add_result(SignalRegionData(_counters.at(&quot;K03&quot;), 1., {0.61, 0.61}));
 
-          // Cutflow printout
-          #ifdef CHECK_CUTFLOW
-            //const double xsec = 5180.86; // 150 GeV winos
-            const double xsec = 3832.31; // 150 GeV higgsinos
-            //const double xsec = 1165.09; // 225 GeV winos
-            // const double xsec = 284.855; // 300 GeV higgsinos
-            //const double xsec = 121.013; // 400 GeV winos
-            //const double xsec = 46.3533; // 500 GeV winos
-            //const double xsec = 20.1372; // 600 GeV winos
-            //const double xsec = 2.49667; // 900 GeV winos
-            //const double xsec = 0.415851; // 1200 GeV winos
-            const double sf = 137*xsec;
-            _cutflows.normalize(sf);
-            cout &lt;&lt; &quot;\nCUTFLOWS:\n&quot; &lt;&lt; _cutflows &lt;&lt; endl;
-            cout &lt;&lt; &quot;\nSRCOUNTS:\n&quot;;
-            for (auto&amp; pair : _counters) cout &lt;&lt; pair.second.weight_sum() &lt;&lt; &quot;  &quot;;
-            cout &lt;&lt; &quot;\n&quot; &lt;&lt; endl;
-          #endif
+          // Add cutflow data to the analysis results
+          add_cutflows(_cutflows);
+
         }
 
       protected:
@@ -967,6 +944,9 @@ namespace Gambit
           add_result(SignalRegionData(_counters.at(&quot;SS18&quot;), 5.8, {4., 1.6}));
           add_result(SignalRegionData(_counters.at(&quot;SS19&quot;), 5.8, {3.7, 1.2}));
           add_result(SignalRegionData(_counters.at(&quot;SS20&quot;), 5.8, {3.9, 1.6}));
+
+          // Add cutflow data to the analysis results
+          add_cutflows(_cutflows);
         }
 
     };
@@ -1057,6 +1037,9 @@ namespace Gambit
           add_result(SignalRegionData(_counters.at(&quot;B01&quot;), 14., {8.2, 1.6}));
           add_result(SignalRegionData(_counters.at(&quot;B02&quot;), 110., {110., 25.}));
           add_result(SignalRegionData(_counters.at(&quot;B03&quot;), 327, {322., 83.}));
+
+          // Add cutflow data to the analysis results
+          add_cutflows(_cutflows);
         }
 
     };
@@ -1130,6 +1113,9 @@ namespace Gambit
           add_result(SignalRegionData(_counters.at(&quot;F10&quot;), 19., {17., 6.}));
           add_result(SignalRegionData(_counters.at(&quot;F11&quot;), 18., {23., 6.}));
           add_result(SignalRegionData(_counters.at(&quot;F12&quot;), 2., {3.5, 1.4}));
+
+          // Add cutflow data to the analysis results
+          add_cutflows(_cutflows);
         }
 
     };
@@ -1161,6 +1147,9 @@ namespace Gambit
           add_result(SignalRegionData(_counters.at(&quot;H01&quot;), 49., {41.7, 5.}));
           add_result(SignalRegionData(_counters.at(&quot;H02&quot;), 4., {3., 1.}));
           add_result(SignalRegionData(_counters.at(&quot;H03&quot;), 3., {4.3, 0.9}));
+
+          // Add cutflow data to the analysis results
+          add_cutflows(_cutflows);
         }
 
     };
@@ -1195,16 +1184,19 @@ namespace Gambit
           add_result(SignalRegionData(_counters.at(&quot;K01&quot;), 8., {16., 6.5}));
           add_result(SignalRegionData(_counters.at(&quot;K02&quot;), 5., {5.2, 2.45}));
           add_result(SignalRegionData(_counters.at(&quot;K03&quot;), 1., {0.61, 0.61}));
+
+          // Add cutflow data to the analysis results
+          add_cutflows(_cutflows);
         }
 
     };
 
     // Factory fn
     DEFINE_ANALYSIS_FACTORY(CMS_13TeV_MultiLEP_4LEPTau_137invfb)
-   
+
   }
 }
-</code></pre><hr><p>Updated on 2025-02-12 at 16:10:35 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.d5e27a6ed00168b7a66eb637878a6be7d054db51d0e613bbcfda12ab0569b62177253b4e6453c477574b3a38f50eff49a68f0e19112bd82a68c78a66cd8d05df.js integrity="sha512-1eJ6btABaLembrY3h4pr59BU21HQ5hO7z9oSqwVptiF3JTtOZFPEd1dLOjj1Dv9Jpo8OGREr2Cpox4pmzY0F3w==" crossorigin=anonymous defer></script>
+</code></pre><hr><p>Updated on 2026-11-03 at 14:50:48 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.d5e27a6ed00168b7a66eb637878a6be7d054db51d0e613bbcfda12ab0569b62177253b4e6453c477574b3a38f50eff49a68f0e19112bd82a68c78a66cd8d05df.js integrity="sha512-1eJ6btABaLembrY3h4pr59BU21HQ5hO7z9oSqwVptiF3JTtOZFPEd1dLOjj1Dv9Jpo8OGREr2Cpox4pmzY0F3w==" crossorigin=anonymous defer></script>
 <script src=/js/highlight.min.9003483b4531b86467c8b801b1d5fc5439bb0d6bdb6c6a760a1b54abf37d6bbadf8423dbc81a3359c935c7705bb7d183b46131ba4a9c861b5d48e6a61501461a.js integrity="sha512-kANIO0UxuGRnyLgBsdX8VDm7DWvbbGp2ChtUq/N9a7rfhCPbyBozWck1x3Bbt9GDtGExukqchhtdSOamFQFGGg==" crossorigin=anonymous defer></script>
 <script src=/main.min.9342d29d0e3e250a2c03282306b766e004888dba0fd661a17d7b106655e013bf85733f086ad330e3df0929c713dd81c0ea835966fa92e4a1e38f7ea9680524ed.js integrity="sha512-k0LSnQ4+JQosAygjBrdm4ASIjboP1mGhfXsQZlXgE7+Fcz8IatMw498JKccT3YHA6oNZZvqS5KHjj36paAUk7Q==" crossorigin=anonymous defer></script>
-<script src=https://gambitbsm.org/index.min.03ab9c2e460a36904d0b1544581433f337b9e5e23e6798a396683f418d37e30979da1ab2a8ef201c110075d73ccb12f8cc2605c7d9723f99bef11ed7c8b97844.js integrity="sha512-A6ucLkYKNpBNCxVEWBQz8ze55eI+Z5ijlmg/QY034wl52hqyqO8gHBEAddc8yxL4zCYFx9lyP5m+8R7XyLl4RA==" crossorigin=anonymous defer></script></body></html>
+<script src=https://gambitbsm.org/index.min.3a8ee06d0c346f1fb70040b0fbcbaaacf335cb34023c408954406a05db2089fc2ca349119b9f7d68b9e7044e82b8fdc8bd9661b6ef8b118246c5a2079d7fa8e9.js integrity="sha512-Oo7gbQw0bx+3AECw+8uqrPM1yzQCPECJVEBqBdsgifwso0kRm599aLnnBE6CuP3IvZZhtu+LEYJGxaIHnX+o6Q==" crossorigin=anonymous defer></script></body></html>

@@ -50,53 +50,6 @@ namespace Gambit
     {
 
       protected:
-        // Signal region map
-        std::map&lt;string, EventCounter&gt; _counters = {
-          // WZ on-shell
-          {&quot;SR-WZ-1&quot;, EventCounter(&quot;SR-WZ-1&quot;)},
-          {&quot;SR-WZ-2&quot;, EventCounter(&quot;SR-WZ-2&quot;)},
-          {&quot;SR-WZ-3&quot;, EventCounter(&quot;SR-WZ-3&quot;)},
-          {&quot;SR-WZ-4&quot;, EventCounter(&quot;SR-WZ-4&quot;)},
-          {&quot;SR-WZ-5&quot;, EventCounter(&quot;SR-WZ-5&quot;)},
-          {&quot;SR-WZ-6&quot;, EventCounter(&quot;SR-WZ-6&quot;)},
-          {&quot;SR-WZ-7&quot;, EventCounter(&quot;SR-WZ-7&quot;)},
-          {&quot;SR-WZ-8&quot;, EventCounter(&quot;SR-WZ-8&quot;)},
-          {&quot;SR-WZ-9&quot;, EventCounter(&quot;SR-WZ-9&quot;)},
-          {&quot;SR-WZ-10&quot;, EventCounter(&quot;SR-WZ-10&quot;)},
-          {&quot;SR-WZ-11&quot;, EventCounter(&quot;SR-WZ-11&quot;)},
-          {&quot;SR-WZ-12&quot;, EventCounter(&quot;SR-WZ-12&quot;)},
-          {&quot;SR-WZ-13&quot;, EventCounter(&quot;SR-WZ-13&quot;)},
-          {&quot;SR-WZ-14&quot;, EventCounter(&quot;SR-WZ-14&quot;)},
-          {&quot;SR-WZ-15&quot;, EventCounter(&quot;SR-WZ-15&quot;)},
-          {&quot;SR-WZ-16&quot;, EventCounter(&quot;SR-WZ-16&quot;)},
-          {&quot;SR-WZ-17&quot;, EventCounter(&quot;SR-WZ-17&quot;)},
-          {&quot;SR-WZ-18&quot;, EventCounter(&quot;SR-WZ-18&quot;)},
-          {&quot;SR-WZ-19&quot;, EventCounter(&quot;SR-WZ-19&quot;)},
-          {&quot;SR-WZ-20&quot;, EventCounter(&quot;SR-WZ-20&quot;)},
-          // Wh
-          {&quot;SR-Wh-1&quot;, EventCounter(&quot;SR-Wh-1&quot;)},
-          {&quot;SR-Wh-2&quot;, EventCounter(&quot;SR-Wh-2&quot;)},
-          {&quot;SR-Wh-3&quot;, EventCounter(&quot;SR-Wh-3&quot;)},
-          {&quot;SR-Wh-4&quot;, EventCounter(&quot;SR-Wh-4&quot;)},
-          {&quot;SR-Wh-5&quot;, EventCounter(&quot;SR-Wh-5&quot;)},
-          {&quot;SR-Wh-6&quot;, EventCounter(&quot;SR-Wh-6&quot;)},
-          {&quot;SR-Wh-7&quot;, EventCounter(&quot;SR-Wh-7&quot;)},
-          {&quot;SR-Wh-8&quot;, EventCounter(&quot;SR-Wh-8&quot;)},
-          {&quot;SR-Wh-9&quot;, EventCounter(&quot;SR-Wh-9&quot;)},
-          {&quot;SR-Wh-10&quot;, EventCounter(&quot;SR-Wh-10&quot;)},
-          {&quot;SR-Wh-11&quot;, EventCounter(&quot;SR-Wh-11&quot;)},
-          {&quot;SR-Wh-12&quot;, EventCounter(&quot;SR-Wh-12&quot;)},
-          {&quot;SR-Wh-13&quot;, EventCounter(&quot;SR-Wh-13&quot;)},
-          {&quot;SR-Wh-14&quot;, EventCounter(&quot;SR-Wh-14&quot;)},
-          {&quot;SR-Wh-15&quot;, EventCounter(&quot;SR-Wh-15&quot;)},
-          {&quot;SR-Wh-16&quot;, EventCounter(&quot;SR-Wh-16&quot;)},
-          {&quot;SR-Wh-17&quot;, EventCounter(&quot;SR-Wh-17&quot;)},
-          {&quot;SR-Wh-18&quot;, EventCounter(&quot;SR-Wh-18&quot;)},
-          {&quot;SR-Wh-19&quot;, EventCounter(&quot;SR-Wh-19&quot;)},
-  //        {&quot;SR-Wh-DFOS-1&quot;, EventCounter(&quot;SR-Wh-DFOS-1&quot;)},
-  //        {&quot;SR-Wh-DFOS-2&quot;, EventCounter(&quot;SR-Wh-DFOS-2&quot;)},
-          // WZ off-shell
-        };
 
       private:
 
@@ -120,7 +73,55 @@ namespace Gambit
         Analysis_ATLAS_13TeV_3LEP_139invfb()
         {
 
+          // Signal region map
+          // WZ on-shell
+          _counters[&quot;SR-WZ-1&quot;] = EventCounter(&quot;SR-WZ-1&quot;);
+          _counters[&quot;SR-WZ-2&quot;] = EventCounter(&quot;SR-WZ-2&quot;);
+          _counters[&quot;SR-WZ-3&quot;] = EventCounter(&quot;SR-WZ-3&quot;);
+          _counters[&quot;SR-WZ-4&quot;] = EventCounter(&quot;SR-WZ-4&quot;);
+          _counters[&quot;SR-WZ-5&quot;] = EventCounter(&quot;SR-WZ-5&quot;);
+          _counters[&quot;SR-WZ-6&quot;] = EventCounter(&quot;SR-WZ-6&quot;);
+          _counters[&quot;SR-WZ-7&quot;] = EventCounter(&quot;SR-WZ-7&quot;);
+          _counters[&quot;SR-WZ-8&quot;] = EventCounter(&quot;SR-WZ-8&quot;);
+          _counters[&quot;SR-WZ-9&quot;] = EventCounter(&quot;SR-WZ-9&quot;);
+          _counters[&quot;SR-WZ-10&quot;] = EventCounter(&quot;SR-WZ-10&quot;);
+          _counters[&quot;SR-WZ-11&quot;] = EventCounter(&quot;SR-WZ-11&quot;);
+          _counters[&quot;SR-WZ-12&quot;] = EventCounter(&quot;SR-WZ-12&quot;);
+          _counters[&quot;SR-WZ-13&quot;] = EventCounter(&quot;SR-WZ-13&quot;);
+          _counters[&quot;SR-WZ-14&quot;] = EventCounter(&quot;SR-WZ-14&quot;);
+          _counters[&quot;SR-WZ-15&quot;] = EventCounter(&quot;SR-WZ-15&quot;);
+          _counters[&quot;SR-WZ-16&quot;] = EventCounter(&quot;SR-WZ-16&quot;);
+          _counters[&quot;SR-WZ-17&quot;] = EventCounter(&quot;SR-WZ-17&quot;);
+          _counters[&quot;SR-WZ-18&quot;] = EventCounter(&quot;SR-WZ-18&quot;);
+          _counters[&quot;SR-WZ-19&quot;] = EventCounter(&quot;SR-WZ-19&quot;);
+          _counters[&quot;SR-WZ-20&quot;] = EventCounter(&quot;SR-WZ-20&quot;);
+          // Wh
+          _counters[&quot;SR-Wh-1&quot;] = EventCounter(&quot;SR-Wh-1&quot;);
+          _counters[&quot;SR-Wh-2&quot;] = EventCounter(&quot;SR-Wh-2&quot;);
+          _counters[&quot;SR-Wh-3&quot;] = EventCounter(&quot;SR-Wh-3&quot;);
+          _counters[&quot;SR-Wh-4&quot;] = EventCounter(&quot;SR-Wh-4&quot;);
+          _counters[&quot;SR-Wh-5&quot;] = EventCounter(&quot;SR-Wh-5&quot;);
+          _counters[&quot;SR-Wh-6&quot;] = EventCounter(&quot;SR-Wh-6&quot;);
+          _counters[&quot;SR-Wh-7&quot;] = EventCounter(&quot;SR-Wh-7&quot;);
+          _counters[&quot;SR-Wh-8&quot;] = EventCounter(&quot;SR-Wh-8&quot;);
+          _counters[&quot;SR-Wh-9&quot;] = EventCounter(&quot;SR-Wh-9&quot;);
+          _counters[&quot;SR-Wh-10&quot;] = EventCounter(&quot;SR-Wh-10&quot;);
+          _counters[&quot;SR-Wh-11&quot;] = EventCounter(&quot;SR-Wh-11&quot;);
+          _counters[&quot;SR-Wh-12&quot;] = EventCounter(&quot;SR-Wh-12&quot;);
+          _counters[&quot;SR-Wh-13&quot;] = EventCounter(&quot;SR-Wh-13&quot;);
+          _counters[&quot;SR-Wh-14&quot;] = EventCounter(&quot;SR-Wh-14&quot;);
+          _counters[&quot;SR-Wh-15&quot;] = EventCounter(&quot;SR-Wh-15&quot;);
+          _counters[&quot;SR-Wh-16&quot;] = EventCounter(&quot;SR-Wh-16&quot;);
+          _counters[&quot;SR-Wh-17&quot;] = EventCounter(&quot;SR-Wh-17&quot;);
+          _counters[&quot;SR-Wh-18&quot;] = EventCounter(&quot;SR-Wh-18&quot;);
+          _counters[&quot;SR-Wh-19&quot;] = EventCounter(&quot;SR-Wh-19&quot;);
+    //      _counters[&quot;SR-Wh-DFOS-1&quot;] = EventCounter(&quot;SR-Wh-DFOS-1&quot;);
+    //      _counters[&quot;SR-Wh-DFOS-2&quot;] = EventCounter(&quot;SR-Wh-DFOS-2&quot;);
+          // WZ off-shell
+
+
           set_analysis_name(&quot;ATLAS_13TeV_3LEP_139invfb&quot;);
+          set_detector_name(detector);
           set_luminosity(139.);
 
         }
@@ -197,18 +198,22 @@ namespace Gambit
 
 
           // Baseline electrons
-          int nFilterLeptons = 0;  // This is just for checking ATLAS event generation
+          #ifdef CHECK_CUTFLOW
+            int nFilterLeptons = 0;  // This is just for checking ATLAS event generation
+          #endif
           vector&lt;const HEPUtils::Particle*&gt; baselineElectrons;
           for (const HEPUtils::Particle* electron : event-&gt;electrons())
           {
             if (electron-&gt;pT() &gt; 4.5 &amp;&amp; fabs(electron-&gt;eta()) &lt; 2.47)
             {
-              nFilterLeptons++;
+              #ifdef CHECK_CUTFLOW
+                nFilterLeptons++;
+              #endif
               baselineElectrons.push_back(electron);
             }
           }
           // Apply electron reconstruction efficiency from 1908.00005
-          ATLAS::applyElectronReconstructionEfficiency2020(baselineElectrons, &quot;Candidate&quot;);
+          applyEfficiency(baselineElectrons, ATLAS::eff1DEl.at(&quot;EGAM_2018_01_Recon&quot;));
           // Baseline muons
           vector&lt;const HEPUtils::Particle*&gt; baselineMuons;
           int nHighEtaMuons = 0;
@@ -217,7 +222,9 @@ namespace Gambit
             if (muon-&gt;pT() &gt; 3. &amp;&amp; fabs(muon-&gt;eta()) &lt; 2.5)
             {
               baselineMuons.push_back(muon);
-              nFilterLeptons++;
+              #ifdef CHECK_CUTFLOW
+                nFilterLeptons++;
+              #endif
             }
             if (muon-&gt;pT() &gt; 3. &amp;&amp; fabs(muon-&gt;eta()) &gt; 2.5 &amp;&amp; fabs(muon-&gt;eta()) &lt; 2.7)
             {
@@ -225,7 +232,7 @@ namespace Gambit
             }
           }
           // Apply muon ID efficiency from &quot;Medium&quot; criteria in 2012.00578
-          ATLAS::applyMuonIDEfficiency2020(baselineMuons, &quot;Medium&quot;);
+          applyEfficiency(baselineMuons, ATLAS::eff1DMu.at(&quot;MUON_2018_03_ID_Medium&quot;));
 
           // Number of baseline leptons used in preselection
           // This also counts muons in 2.5 &lt; |\eta| &lt; 2.7
@@ -257,11 +264,12 @@ namespace Gambit
 
           // Apply cuts to get signal electrons
           // Apply electron ID efficiency from &quot;Medium&quot; criteria in 1908.00005
-          ATLAS::applyElectronIDEfficiency2020(baselineElectrons, &quot;Medium&quot;);
+          applyEfficiency(baselineElectrons, ATLAS::eff1DEl.at(&quot;EGAM_2018_01_ID_Medium&quot;));
           // Apply electron isolation efficiency from &quot;Tight&quot; criteria in 1908.00005
-          ATLAS::applyElectronIsolationEfficiency2020(baselineElectrons, &quot;Tight&quot;);
+          applyEfficiency(baselineElectrons, ATLAS::eff1DEl.at(&quot;EGAM_2018_01_Iso_Tight&quot;));
           // Apply muon isolation efficiency from &quot;Tight&quot; criteria in 2012.00578
-          ATLAS::applyMuonIsolationEfficiency2020(baselineMuons, &quot;Tight&quot;);
+          applyEfficiency(baselineMuons, ATLAS::eff1DMu.at(&quot;MUON_2018_03_Iso_Tight&quot;));
+
 
           // Signal jets
           vector&lt;const HEPUtils::Jet*&gt; signalJets;
@@ -359,7 +367,6 @@ namespace Gambit
           //cout &lt;&lt; iZ1 &lt;&lt; &quot; &quot; &lt;&lt; iZ2 &lt;&lt; &quot; &quot; &lt;&lt; iW &lt;&lt; &quot; &quot; &lt;&lt; mll &lt;&lt; endl;
 
 
-
           //
           // Count signal region events
           //
@@ -385,17 +392,18 @@ namespace Gambit
               double weight = event-&gt;weight()*weight_trigger_WZ*weight_SR1_8_WZ;
               if(mT &gt; 100 &amp;&amp; mT &lt; 160)
               {
-                if(             met &lt; 100) _counters.at(&quot;SR-WZ-1&quot;).add_event(weight, 0.0);
-                if(met &gt; 100 &amp;&amp; met &lt; 150) _counters.at(&quot;SR-WZ-2&quot;).add_event(weight, 0.0);
-                if(met &gt; 150 &amp;&amp; met &lt; 200) _counters.at(&quot;SR-WZ-3&quot;).add_event(weight, 0.0);
-                if(met &gt; 200             ) _counters.at(&quot;SR-WZ-4&quot;).add_event(weight, 0.0);
+                // if(             met &lt; 100) _counters.at(&quot;SR-WZ-1&quot;).add_event(event, weight, 0.0);
+                if(             met &lt; 100) _counters.at(&quot;SR-WZ-1&quot;).add_event(event, weight, 0.0);
+                if(met &gt; 100 &amp;&amp; met &lt; 150) _counters.at(&quot;SR-WZ-2&quot;).add_event(event, weight, 0.0);
+                if(met &gt; 150 &amp;&amp; met &lt; 200) _counters.at(&quot;SR-WZ-3&quot;).add_event(event, weight, 0.0);
+                if(met &gt; 200             ) _counters.at(&quot;SR-WZ-4&quot;).add_event(event, weight, 0.0);
               }
               if(mT &gt; 160)
               {
-                if(             met &lt; 150) _counters.at(&quot;SR-WZ-5&quot;).add_event(weight, 0.0);
-                if(met &gt; 150 &amp;&amp; met &lt; 200) _counters.at(&quot;SR-WZ-6&quot;).add_event(weight, 0.0);
-                if(met &gt; 200 &amp;&amp; met &lt; 350) _counters.at(&quot;SR-WZ-7&quot;).add_event(weight, 0.0);
-                if(met &gt; 350             ) _counters.at(&quot;SR-WZ-8&quot;).add_event(weight, 0.0);
+                if(             met &lt; 150) _counters.at(&quot;SR-WZ-5&quot;).add_event(event, weight, 0.0);
+                if(met &gt; 150 &amp;&amp; met &lt; 200) _counters.at(&quot;SR-WZ-6&quot;).add_event(event, weight, 0.0);
+                if(met &gt; 200 &amp;&amp; met &lt; 350) _counters.at(&quot;SR-WZ-7&quot;).add_event(event, weight, 0.0);
+                if(met &gt; 350             ) _counters.at(&quot;SR-WZ-8&quot;).add_event(event, weight, 0.0);
               }
             }
             if(njets &gt; 0 &amp;&amp; HT &lt; 200)
@@ -403,17 +411,17 @@ namespace Gambit
               double weight = event-&gt;weight()*weight_trigger_WZ*weight_SR9_16_WZ;
               if(mT &gt; 100 &amp;&amp; mT &lt; 160)
               {
-                if(met &gt; 100 &amp;&amp; met &lt; 150) _counters.at(&quot;SR-WZ-9&quot;).add_event(weight, 0.0);
-                if(met &gt; 150 &amp;&amp; met &lt; 250) _counters.at(&quot;SR-WZ-10&quot;).add_event(weight, 0.0);
-                if(met &gt; 250 &amp;&amp; met &lt; 300) _counters.at(&quot;SR-WZ-11&quot;).add_event(weight, 0.0);
-                if(met &gt; 300             ) _counters.at(&quot;SR-WZ-12&quot;).add_event(weight, 0.0);
+                if(met &gt; 100 &amp;&amp; met &lt; 150) _counters.at(&quot;SR-WZ-9&quot;).add_event(event, weight, 0.0);
+                if(met &gt; 150 &amp;&amp; met &lt; 250) _counters.at(&quot;SR-WZ-10&quot;).add_event(event, weight, 0.0);
+                if(met &gt; 250 &amp;&amp; met &lt; 300) _counters.at(&quot;SR-WZ-11&quot;).add_event(event, weight, 0.0);
+                if(met &gt; 300             ) _counters.at(&quot;SR-WZ-12&quot;).add_event(event, weight, 0.0);
               }
               if(mT &gt; 160)
               {
-                if(             met &lt; 150) _counters.at(&quot;SR-WZ-13&quot;).add_event(weight, 0.0);
-                if(met &gt; 150 &amp;&amp; met &lt; 250) _counters.at(&quot;SR-WZ-14&quot;).add_event(weight, 0.0);
-                if(met &gt; 250 &amp;&amp; met &lt; 400) _counters.at(&quot;SR-WZ-15&quot;).add_event(weight, 0.0);
-                if(met &gt; 400             ) _counters.at(&quot;SR-WZ-16&quot;).add_event(weight, 0.0);
+                if(             met &lt; 150) _counters.at(&quot;SR-WZ-13&quot;).add_event(event, weight, 0.0);
+                if(met &gt; 150 &amp;&amp; met &lt; 250) _counters.at(&quot;SR-WZ-14&quot;).add_event(event, weight, 0.0);
+                if(met &gt; 250 &amp;&amp; met &lt; 400) _counters.at(&quot;SR-WZ-15&quot;).add_event(event, weight, 0.0);
+                if(met &gt; 400             ) _counters.at(&quot;SR-WZ-16&quot;).add_event(event, weight, 0.0);
               }
             }
             if(njets &gt; 0 &amp;&amp; HT &gt; 200 &amp;&amp; HTlep &lt; 350)
@@ -421,10 +429,10 @@ namespace Gambit
               double weight = event-&gt;weight()*weight_trigger_WZ*weight_SR17_20_WZ;
               if(mT &gt; 100)
               {
-                if(met &gt; 150 &amp;&amp; met &lt; 200) _counters.at(&quot;SR-WZ-17&quot;).add_event(weight, 0.0);
-                if(met &gt; 200 &amp;&amp; met &lt; 300) _counters.at(&quot;SR-WZ-18&quot;).add_event(weight, 0.0);
-                if(met &gt; 300 &amp;&amp; met &lt; 400) _counters.at(&quot;SR-WZ-19&quot;).add_event(weight, 0.0);
-                if(met &gt; 400             ) _counters.at(&quot;SR-WZ-20&quot;).add_event(weight, 0.0);
+                if(met &gt; 150 &amp;&amp; met &lt; 200) _counters.at(&quot;SR-WZ-17&quot;).add_event(event, weight, 0.0);
+                if(met &gt; 200 &amp;&amp; met &lt; 300) _counters.at(&quot;SR-WZ-18&quot;).add_event(event, weight, 0.0);
+                if(met &gt; 300 &amp;&amp; met &lt; 400) _counters.at(&quot;SR-WZ-19&quot;).add_event(event, weight, 0.0);
+                if(met &gt; 400             ) _counters.at(&quot;SR-WZ-20&quot;).add_event(event, weight, 0.0);
               }
             }
           }
@@ -440,54 +448,54 @@ namespace Gambit
               {
                 if(mT &lt; 100)
                 {
-                  if(             met &lt; 100) _counters.at(&quot;SR-Wh-1&quot;).add_event(weight, 0.0);
-                  if(met &gt; 100 &amp;&amp; met &lt; 150) _counters.at(&quot;SR-Wh-2&quot;).add_event(weight, 0.0);
-                  if(met &gt; 150             ) _counters.at(&quot;SR-Wh-3&quot;).add_event(weight, 0.0);
+                  if(             met &lt; 100) _counters.at(&quot;SR-Wh-1&quot;).add_event(event, weight, 0.0);
+                  if(met &gt; 100 &amp;&amp; met &lt; 150) _counters.at(&quot;SR-Wh-2&quot;).add_event(event, weight, 0.0);
+                  if(met &gt; 150             ) _counters.at(&quot;SR-Wh-3&quot;).add_event(event, weight, 0.0);
                 }
                 if(mT &gt; 100 &amp;&amp; mT &lt; 160)
                 {
-                  if(             met &lt; 100) _counters.at(&quot;SR-Wh-4&quot;).add_event(weight, 0.0);
-                  if(met &gt; 100             ) _counters.at(&quot;SR-Wh-5&quot;).add_event(weight, 0.0);
+                  if(             met &lt; 100) _counters.at(&quot;SR-Wh-4&quot;).add_event(event, weight, 0.0);
+                  if(met &gt; 100             ) _counters.at(&quot;SR-Wh-5&quot;).add_event(event, weight, 0.0);
                 }
                 if(mT &gt; 160)
                 {
-                  if(             met &lt; 100) _counters.at(&quot;SR-Wh-6&quot;).add_event(weight, 0.0);
-                  if(met &gt; 100             ) _counters.at(&quot;SR-Wh-7&quot;).add_event(weight, 0.0);
+                  if(             met &lt; 100) _counters.at(&quot;SR-Wh-6&quot;).add_event(event, weight, 0.0);
+                  if(met &gt; 100             ) _counters.at(&quot;SR-Wh-7&quot;).add_event(event, weight, 0.0);
                 }
               }
               if(njets &gt; 0 &amp;&amp; mll &lt; 75 &amp;&amp; HT &lt; 200)
               {
                 if(mT &lt; 50)
                 {
-                  if(             met &lt; 100) _counters.at(&quot;SR-Wh-8&quot;).add_event(weight, 0.0);
+                  if(             met &lt; 100) _counters.at(&quot;SR-Wh-8&quot;).add_event(event, weight, 0.0);
                 }
                 if(mT &gt; 50 &amp;&amp; mT &lt; 100)
                 {
-                  if(             met &lt; 100) _counters.at(&quot;SR-Wh-9&quot;).add_event(weight, 0.0);
+                  if(             met &lt; 100) _counters.at(&quot;SR-Wh-9&quot;).add_event(event, weight, 0.0);
                 }
                 if(mT &lt; 100)
                 {
-                  if(met &gt; 100 &amp;&amp; met &lt; 150) _counters.at(&quot;SR-Wh-10&quot;).add_event(weight, 0.0);
-                  if(met &gt; 150             ) _counters.at(&quot;SR-Wh-11&quot;).add_event(weight, 0.0);
+                  if(met &gt; 100 &amp;&amp; met &lt; 150) _counters.at(&quot;SR-Wh-10&quot;).add_event(event, weight, 0.0);
+                  if(met &gt; 150             ) _counters.at(&quot;SR-Wh-11&quot;).add_event(event, weight, 0.0);
                 }
                 if(mT &gt; 100 &amp;&amp; mT &lt; 160)
                 {
-                  if(             met &lt; 100) _counters.at(&quot;SR-Wh-12&quot;).add_event(weight, 0.0);
-                  if(met &gt; 100 &amp;&amp; met &lt; 150) _counters.at(&quot;SR-Wh-13&quot;).add_event(weight, 0.0);
-                  if(met &gt; 150             ) _counters.at(&quot;SR-Wh-14&quot;).add_event(weight, 0.0);
+                  if(             met &lt; 100) _counters.at(&quot;SR-Wh-12&quot;).add_event(event, weight, 0.0);
+                  if(met &gt; 100 &amp;&amp; met &lt; 150) _counters.at(&quot;SR-Wh-13&quot;).add_event(event, weight, 0.0);
+                  if(met &gt; 150             ) _counters.at(&quot;SR-Wh-14&quot;).add_event(event, weight, 0.0);
                 }
                 if(mT &gt; 160)
                 {
-                  if(             met &lt; 150) _counters.at(&quot;SR-Wh-15&quot;).add_event(weight, 0.0);
-                  if(met &gt; 150             ) _counters.at(&quot;SR-Wh-16&quot;).add_event(weight, 0.0);
+                  if(             met &lt; 150) _counters.at(&quot;SR-Wh-15&quot;).add_event(event, weight, 0.0);
+                  if(met &gt; 150             ) _counters.at(&quot;SR-Wh-16&quot;).add_event(event, weight, 0.0);
                 }
                 if(njets == 0 &amp;&amp; mll &gt; 105)
                 {
                   if(mT &gt; 100)
                   {
-                    if(             met &lt; 100) _counters.at(&quot;SR-Wh-17&quot;).add_event(weight, 0.0);
-                    if(met &gt; 100 &amp;&amp; met &lt; 200) _counters.at(&quot;SR-Wh-18&quot;).add_event(weight, 0.0);
-                    if(met &gt; 200             ) _counters.at(&quot;SR-Wh-19&quot;).add_event(weight, 0.0);
+                    if(             met &lt; 100) _counters.at(&quot;SR-Wh-17&quot;).add_event(event, weight, 0.0);
+                    if(met &gt; 100 &amp;&amp; met &lt; 200) _counters.at(&quot;SR-Wh-18&quot;).add_event(event, weight, 0.0);
+                    if(met &gt; 200             ) _counters.at(&quot;SR-Wh-19&quot;).add_event(event, weight, 0.0);
                   }
                 }
               }
@@ -613,13 +621,6 @@ namespace Gambit
 
         } // End of event analysis
 
-
-        /// Combine the variables of another copy of this analysis (typically on another thread) into this one.
-        void combine(const Analysis* other)
-        {
-          const Analysis_ATLAS_13TeV_3LEP_139invfb* specificOther = dynamic_cast&lt;const Analysis_ATLAS_13TeV_3LEP_139invfb*&gt;(other);
-          for (auto&amp; pair : _counters) { pair.second += specificOther-&gt;_counters.at(pair.first); }
-        }
 
 
         void collect_results()
@@ -877,7 +878,7 @@ namespace Gambit
  31:  0.17    0.06    0.08    2.14        SR^Wh-19
 
  */
-</code></pre><hr><p>Updated on 2025-02-12 at 16:10:35 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.d5e27a6ed00168b7a66eb637878a6be7d054db51d0e613bbcfda12ab0569b62177253b4e6453c477574b3a38f50eff49a68f0e19112bd82a68c78a66cd8d05df.js integrity="sha512-1eJ6btABaLembrY3h4pr59BU21HQ5hO7z9oSqwVptiF3JTtOZFPEd1dLOjj1Dv9Jpo8OGREr2Cpox4pmzY0F3w==" crossorigin=anonymous defer></script>
+</code></pre><hr><p>Updated on 2026-11-03 at 14:50:47 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.d5e27a6ed00168b7a66eb637878a6be7d054db51d0e613bbcfda12ab0569b62177253b4e6453c477574b3a38f50eff49a68f0e19112bd82a68c78a66cd8d05df.js integrity="sha512-1eJ6btABaLembrY3h4pr59BU21HQ5hO7z9oSqwVptiF3JTtOZFPEd1dLOjj1Dv9Jpo8OGREr2Cpox4pmzY0F3w==" crossorigin=anonymous defer></script>
 <script src=/js/highlight.min.9003483b4531b86467c8b801b1d5fc5439bb0d6bdb6c6a760a1b54abf37d6bbadf8423dbc81a3359c935c7705bb7d183b46131ba4a9c861b5d48e6a61501461a.js integrity="sha512-kANIO0UxuGRnyLgBsdX8VDm7DWvbbGp2ChtUq/N9a7rfhCPbyBozWck1x3Bbt9GDtGExukqchhtdSOamFQFGGg==" crossorigin=anonymous defer></script>
 <script src=/main.min.9342d29d0e3e250a2c03282306b766e004888dba0fd661a17d7b106655e013bf85733f086ad330e3df0929c713dd81c0ea835966fa92e4a1e38f7ea9680524ed.js integrity="sha512-k0LSnQ4+JQosAygjBrdm4ASIjboP1mGhfXsQZlXgE7+Fcz8IatMw498JKccT3YHA6oNZZvqS5KHjj36paAUk7Q==" crossorigin=anonymous defer></script>
-<script src=https://gambitbsm.org/index.min.03ab9c2e460a36904d0b1544581433f337b9e5e23e6798a396683f418d37e30979da1ab2a8ef201c110075d73ccb12f8cc2605c7d9723f99bef11ed7c8b97844.js integrity="sha512-A6ucLkYKNpBNCxVEWBQz8ze55eI+Z5ijlmg/QY034wl52hqyqO8gHBEAddc8yxL4zCYFx9lyP5m+8R7XyLl4RA==" crossorigin=anonymous defer></script></body></html>
+<script src=https://gambitbsm.org/index.min.3a8ee06d0c346f1fb70040b0fbcbaaacf335cb34023c408954406a05db2089fc2ca349119b9f7d68b9e7044e82b8fdc8bd9661b6ef8b118246c5a2079d7fa8e9.js integrity="sha512-Oo7gbQw0bx+3AECw+8uqrPM1yzQCPECJVEBqBdsgifwso0kRm599aLnnBE6CuP3IvZZhtu+LEYJGxaIHnX+o6Q==" crossorigin=anonymous defer></script></body></html>

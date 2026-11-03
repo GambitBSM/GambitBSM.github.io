@@ -102,6 +102,11 @@ namespace Gambit
     // Common constructor tasks
     void asciiPrinter::common_constructor(const Options&amp; options)
     {
+      // Pick up the resume flag set by PrinterManager. BasePrinter does not
+      // initialise BaseBasePrinter::resume, so without this any later call
+      // to get_resume() would read uninitialised memory.
+      set_resume(options.getValue&lt;bool&gt;(&quot;resume&quot;));
+
       if( this-&gt;is_auxilliary_printer() ) // check if this is an auxilliary printer
       {
 
@@ -111,9 +116,10 @@ namespace Gambit
          // Get primary printer (need to cast from BasePrinter type to asciiPrinter)
          asciiPrinter* primary = dynamic_cast&lt;asciiPrinter*&gt;(this-&gt;get_primary_printer());
 
-         // Name files based on the primary printer filenames
+         // Use the primary's pre-rank filename, otherwise the MPI block
+         // below would append the rank a second time.
          std::ostringstream f;
-         f &lt;&lt; primary-&gt;get_output_filename() &lt;&lt; &quot;_&quot; &lt;&lt; printer_name;
+         f &lt;&lt; primary-&gt;get_base_output_filename() &lt;&lt; &quot;_&quot; &lt;&lt; printer_name;
          output_file = Utils::ensure_path_exists(options.getValueOrDef&lt;std::string&gt;(f.str(),&quot;output_file&quot;));
 
          // Match the buffer length to the primary printer, or use a user-supplied option
@@ -137,6 +143,9 @@ namespace Gambit
 
          bufferlength = options.getValueOrDef&lt;uint&gt;(100,&quot;buffer_length&quot;);
       }
+
+      // Snapshot the pre-rank-suffix name for auxiliary printers to query.
+      base_output_file = output_file;
 
       // Name &quot;info&quot; file to match &quot;output&quot; file
       std::ostringstream finfo;
@@ -162,6 +171,22 @@ namespace Gambit
       info_file = finfo2.str();
       #endif
 
+      // Refuse to overwrite a pre-existing output or info file unless the
+      // user has set 'delete_file_on_restart: true', or we are resuming.
+      bool overwrite_file = options.getValueOrDef&lt;bool&gt;(false,&quot;delete_file_on_restart&quot;);
+      for(const std::string&amp; f : {output_file, info_file})
+      {
+        if(Utils::file_exists(f) and not overwrite_file and not get_resume())
+        {
+          std::ostringstream errmsg;
+          errmsg &lt;&lt; &quot;Refusing to overwrite pre-existing asciiPrinter output file '&quot;&lt;&lt;f&lt;&lt;&quot;'. Please take one of the following actions:&quot; &lt;&lt; std::endl
+                 &lt;&lt; &quot;  1. Set 'delete_file_on_restart: true' in the Printer options of your input YAML file to give GAMBIT permission to automatically overwrite this file;&quot; &lt;&lt; std::endl
+                 &lt;&lt; &quot;  2. Choose a different output filename via the 'output_file' printer option;&quot; &lt;&lt; std::endl
+                 &lt;&lt; &quot;  3. Manually move or delete the existing file '&quot;&lt;&lt;f&lt;&lt;&quot;'.&quot;;
+          printer_error().raise(LOCAL_INFO, errmsg.str());
+        }
+      }
+
       // Erase contents of output_file and info_file if they already exist
       std::ofstream output;
       open_output_file(output, output_file, std::ofstream::trunc);
@@ -176,6 +201,7 @@ namespace Gambit
     asciiPrinter::asciiPrinter(const Options&amp; options, BasePrinter* const primary)
       : BasePrinter(primary,options.getValueOrDef&lt;bool&gt;(false,&quot;auxilliary&quot;))
       , output_file(&quot;&quot;)
+      , base_output_file(&quot;&quot;)
       , info_file(&quot;&quot;)
       , bufferlength(100)
       , global(false)
@@ -184,6 +210,7 @@ namespace Gambit
       , myComm() // attaches to MPI_COMM_WORLD, beware collisions with e.g. scanning algorithms.
       , mpiSize(1)
      #endif
+      , precision(10)
       , lastPointID(nullpoint)
     {
       common_constructor(options);
@@ -191,6 +218,19 @@ namespace Gambit
       // Choose whether or not to print invalid and suspicious point codes
       print_suspicious_point_code = options.getValueOrDef&lt;bool&gt;(true,&quot;print_suspicious_point_code&quot;);
       print_invalidation_code = options.getValueOrDef&lt;bool&gt;(true,&quot;print_invalidation_code&quot;);
+
+      // Number of digits of precision to use in output columns
+      precision = options.getValueOrDef&lt;int&gt;(10,&quot;precision&quot;);
+      if(precision &lt; 0)
+      {
+        std::ostringstream errmsg;
+        errmsg &lt;&lt; &quot;Invalid value for asciiPrinter option 'precision': &quot; &lt;&lt; precision
+               &lt;&lt; &quot;. Must be a non-negative integer (number of digits to use for std::setprecision).&quot;;
+        printer_error().raise(LOCAL_INFO, errmsg.str());
+      }
+
+      // Optional '#'-prefixed shorthand-label header line at top of data file.
+      write_header = options.getValueOrDef&lt;bool&gt;(false,&quot;write_header&quot;);
     }
 
 
@@ -261,8 +301,9 @@ namespace Gambit
     }
 
     // getters for internal variables
-    std::string asciiPrinter::get_output_filename() { return output_file; }
-    int         asciiPrinter::get_bufferlength()    { return bufferlength; }
+    std::string asciiPrinter::get_output_filename()      { return output_file; }
+    std::string asciiPrinter::get_base_output_filename() { return base_output_file; }
+    int         asciiPrinter::get_bufferlength()         { return bufferlength; }
 
     // add results to printer buffer
     void asciiPrinter::addtobuffer(const std::vector&lt;double&gt;&amp; functor_data, const std::vector&lt;std::string&gt;&amp; functor_labels, const int vID, const int rank, const int pointID)
@@ -471,6 +512,24 @@ namespace Gambit
         printer_error().raise(LOCAL_INFO,errmsg.str());
       }
 
+      // Single column width, shared by the header line and data rows.
+      const int colwidth = precision + 13;
+
+      // Shorthand column name: substring after the last &quot;::&quot; (or the whole
+      // label), with whitespace replaced by '_' and prefixed with the
+      // column number to disambiguate collisions.
+      auto shorthand = [](const std::string&amp; full, int col_index_1based)
+      {
+        std::string suffix;
+        std::size_t pos = full.rfind(&quot;::&quot;);
+        if(pos != std::string::npos) suffix = full.substr(pos + 2);
+        else suffix = full;
+        for(char&amp; c : suffix) if(c == ' ' || c == '\t') c = '_';
+        std::ostringstream out;
+        out &lt;&lt; col_index_1based &lt;&lt; &quot;_&quot; &lt;&lt; suffix;
+        return out.str();
+      };
+
       // Write the file explaining what is in each column of the output file
       if (info_file_written==false)
       {
@@ -485,7 +544,7 @@ namespace Gambit
         {
           int vID        = it-&gt;first;
           int length     = it-&gt;second;     // slots reserved in output file for these results
-          
+
           for (int i=0; i&lt;length; i++)
           {
             AP_DBUG( std::cout&lt;&lt;&quot;Column &quot;&lt;&lt;column_index&lt;&lt;&quot;: &quot;&lt;&lt;label_record.at(vID)[i]&lt;&lt;std::endl; )
@@ -495,6 +554,32 @@ namespace Gambit
         }
         info_fstream.close();
         info_file_written=true;
+      }
+
+      // Optional shorthand-label header line. The '#' marks it as a comment
+      // for numpy/pandas/gnuplot. A space prefix (or the '#' for the first
+      // column) is emitted before each label so columns stay whitespace-
+      // separated even when a label is wider than colwidth.
+      if (write_header &amp;&amp; !header_written)
+      {
+        AP_DBUG( std::cout &lt;&lt; &quot;asciiPrinter: Writing data-file header line...&quot; &lt;&lt; std::endl; )
+        my_fstream &lt;&lt; &quot;#&quot;;
+        int column_index = 1;
+        for (std::map&lt;int,int&gt;::iterator
+          it = lineindexrecord.begin(); it != lineindexrecord.end(); it++)
+        {
+          int vID    = it-&gt;first;
+          int length = it-&gt;second;
+          for (int i = 0; i &lt; length; i++)
+          {
+            if (column_index &gt; 1) my_fstream &lt;&lt; &quot; &quot;;
+            my_fstream &lt;&lt; std::setw(colwidth - 1)
+                       &lt;&lt; shorthand(label_record.at(vID)[i], column_index);
+            column_index++;
+          }
+        }
+        my_fstream &lt;&lt; std::endl;
+        header_written = true;
       }
 
       // Actual dump of buffer to file
@@ -538,8 +623,8 @@ namespace Gambit
               default_value = stream.str();
             }
 
-            // Print to the fstream!
-            int colwidth = precision + 8;  // Just kind of guessing here; tweak as needed
+            // Print to the fstream. Same field width for numeric values and
+            // 'none'/default placeholders so columns align across rows.
             for (uint j=0;j&lt;length;j++)
             {
               if(j&gt;=results-&gt;size())
@@ -550,7 +635,7 @@ namespace Gambit
               else
               {
                 // print an entry from the results vector
-                my_fstream&lt;&lt;std::setw(colwidth+5)&lt;&lt;std::scientific&lt;&lt;(*results)[j];
+                my_fstream&lt;&lt;std::setw(colwidth)&lt;&lt;std::scientific&lt;&lt;(*results)[j];
               }
             }
           }
@@ -577,6 +662,11 @@ namespace Gambit
     // Print metadata info to file
     void asciiPrinter::_print_metadata(map_str_str metadata)
     {
+      // Only rank 0 writes; metadata_file is not rank-suffixed, so writes
+      // from other ranks would interleave. Setup metadata is identical
+      // across ranks, and lastPointID is only used by (unimplemented) resume.
+      if(getRank() != 0) return;
+
       // Open metadata file in append mode
       std::ofstream metadata_fstream;
       open_output_file(metadata_fstream, metadata_file, std::ofstream::app);
@@ -592,7 +682,7 @@ namespace Gambit
 
   } // end namespace printers
 } // end namespace Gambit
-</code></pre><hr><p>Updated on 2025-02-12 at 16:10:34 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.d5e27a6ed00168b7a66eb637878a6be7d054db51d0e613bbcfda12ab0569b62177253b4e6453c477574b3a38f50eff49a68f0e19112bd82a68c78a66cd8d05df.js integrity="sha512-1eJ6btABaLembrY3h4pr59BU21HQ5hO7z9oSqwVptiF3JTtOZFPEd1dLOjj1Dv9Jpo8OGREr2Cpox4pmzY0F3w==" crossorigin=anonymous defer></script>
+</code></pre><hr><p>Updated on 2026-11-03 at 14:50:45 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.d5e27a6ed00168b7a66eb637878a6be7d054db51d0e613bbcfda12ab0569b62177253b4e6453c477574b3a38f50eff49a68f0e19112bd82a68c78a66cd8d05df.js integrity="sha512-1eJ6btABaLembrY3h4pr59BU21HQ5hO7z9oSqwVptiF3JTtOZFPEd1dLOjj1Dv9Jpo8OGREr2Cpox4pmzY0F3w==" crossorigin=anonymous defer></script>
 <script src=/js/highlight.min.9003483b4531b86467c8b801b1d5fc5439bb0d6bdb6c6a760a1b54abf37d6bbadf8423dbc81a3359c935c7705bb7d183b46131ba4a9c861b5d48e6a61501461a.js integrity="sha512-kANIO0UxuGRnyLgBsdX8VDm7DWvbbGp2ChtUq/N9a7rfhCPbyBozWck1x3Bbt9GDtGExukqchhtdSOamFQFGGg==" crossorigin=anonymous defer></script>
 <script src=/main.min.9342d29d0e3e250a2c03282306b766e004888dba0fd661a17d7b106655e013bf85733f086ad330e3df0929c713dd81c0ea835966fa92e4a1e38f7ea9680524ed.js integrity="sha512-k0LSnQ4+JQosAygjBrdm4ASIjboP1mGhfXsQZlXgE7+Fcz8IatMw498JKccT3YHA6oNZZvqS5KHjj36paAUk7Q==" crossorigin=anonymous defer></script>
-<script src=https://gambitbsm.org/index.min.03ab9c2e460a36904d0b1544581433f337b9e5e23e6798a396683f418d37e30979da1ab2a8ef201c110075d73ccb12f8cc2605c7d9723f99bef11ed7c8b97844.js integrity="sha512-A6ucLkYKNpBNCxVEWBQz8ze55eI+Z5ijlmg/QY034wl52hqyqO8gHBEAddc8yxL4zCYFx9lyP5m+8R7XyLl4RA==" crossorigin=anonymous defer></script></body></html>
+<script src=https://gambitbsm.org/index.min.3a8ee06d0c346f1fb70040b0fbcbaaacf335cb34023c408954406a05db2089fc2ca349119b9f7d68b9e7044e82b8fdc8bd9661b6ef8b118246c5a2079d7fa8e9.js integrity="sha512-Oo7gbQw0bx+3AECw+8uqrPM1yzQCPECJVEBqBdsgifwso0kRm599aLnnBE6CuP3IvZZhtu+LEYJGxaIHnX+o6Q==" crossorigin=anonymous defer></script></body></html>

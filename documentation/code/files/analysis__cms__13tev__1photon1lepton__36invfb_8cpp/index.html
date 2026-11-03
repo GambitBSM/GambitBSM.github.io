@@ -28,10 +28,10 @@ Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle
 
     - No published cutflows, so we'll validate by reproducing exclusion contours
 
-    - No table with event count numbers -- had to digitze from a log-scale histogram. 
+    - No table with event count numbers -- had to digitze from a log-scale histogram.
       (But I think I got it reasonable accurate.)
 
-  
+
   Event selection summary:
 
     - Both e+gamma and mu+gamma signal regions
@@ -46,7 +46,7 @@ Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle
 
     - Trigger for mu+gamma SRs:
       - CMS use a combination of two triggers for muon+photon events
-      - 1) Photon isolation + pT_gamma &gt; 30, pT_muon &gt; 17   
+      - 1) Photon isolation + pT_gamma &gt; 30, pT_muon &gt; 17
       - 2) No photon isolation, pT_gamma &gt; 38, pT_muon &gt; 38
       - Avg. trigger eff: 94%
 
@@ -63,7 +63,7 @@ Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle
       mT = sqrt(2 * pT_lepton * pTmiss * (1 - cos DeltaPhi(lepton,pTmiss_vector)))
 
     - Selection variable: HT
-      HT = scalar sum of pT for all jets that have DeltaR(jet, leading photon) &gt; 0.4 
+      HT = scalar sum of pT for all jets that have DeltaR(jet, leading photon) &gt; 0.4
            and DeltaR(jet, leading lepon) &gt; 0.4
 
     - Signal regions defined in terms of pTmss, pTgamma and HT:
@@ -72,45 +72,45 @@ Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle
 
       - SR1:   35 &lt; pTgamma &lt; 200, 120 &lt; pTmiss &lt; 200,   0 &lt; HT &lt; 100
       - SR2:   35 &lt; pTgamma &lt; 200, 120 &lt; pTmiss &lt; 200, 100 &lt; HT &lt; 400
-      - SR3:   35 &lt; pTgamma &lt; 200, 120 &lt; pTmiss &lt; 200, 400 &lt; HT &lt; 
+      - SR3:   35 &lt; pTgamma &lt; 200, 120 &lt; pTmiss &lt; 200, 400 &lt; HT &lt;
       - SR4:   35 &lt; pTgamma &lt; 200, 200 &lt; pTmiss &lt; 400,   0 &lt; HT &lt; 100
       - SR5:   35 &lt; pTgamma &lt; 200, 200 &lt; pTmiss &lt; 400, 100 &lt; HT &lt; 400
-      - SR6:   35 &lt; pTgamma &lt; 200, 200 &lt; pTmiss &lt; 400, 400 &lt; HT &lt; 
+      - SR6:   35 &lt; pTgamma &lt; 200, 200 &lt; pTmiss &lt; 400, 400 &lt; HT &lt;
       - SR7:   35 &lt; pTgamma &lt; 200, 400 &lt; pTmiss      ,   0 &lt; HT &lt; 100
       - SR8:   35 &lt; pTgamma &lt; 200, 400 &lt; pTmiss      , 100 &lt; HT &lt; 400
-      - SR9:   35 &lt; pTgamma &lt; 200, 400 &lt; pTmiss      , 400 &lt; HT &lt; 
+      - SR9:   35 &lt; pTgamma &lt; 200, 400 &lt; pTmiss      , 400 &lt; HT &lt;
 
       - SR10: 200 &lt; pTgamma     , 120 &lt; pTmiss &lt; 200,   0 &lt; HT &lt; 100
       - SR11: 200 &lt; pTgamma     , 120 &lt; pTmiss &lt; 200, 100 &lt; HT &lt; 400
-      - SR12: 200 &lt; pTgamma     , 120 &lt; pTmiss &lt; 200, 400 &lt; HT &lt; 
+      - SR12: 200 &lt; pTgamma     , 120 &lt; pTmiss &lt; 200, 400 &lt; HT &lt;
       - SR13: 200 &lt; pTgamma     , 200 &lt; pTmiss &lt; 400,   0 &lt; HT &lt; 100
       - SR14: 200 &lt; pTgamma     , 200 &lt; pTmiss &lt; 400, 100 &lt; HT &lt; 400
-      - SR15: 200 &lt; pTgamma     , 200 &lt; pTmiss &lt; 400, 400 &lt; HT &lt; 
+      - SR15: 200 &lt; pTgamma     , 200 &lt; pTmiss &lt; 400, 400 &lt; HT &lt;
       - SR16: 200 &lt; pTgamma     , 400 &lt; pTmiss      ,   0 &lt; HT &lt; 100
       - SR17: 200 &lt; pTgamma     , 400 &lt; pTmiss      , 100 &lt; HT &lt; 400
-      - SR18: 200 &lt; pTgamma     , 400 &lt; pTmiss      , 400 &lt; HT &lt; 
+      - SR18: 200 &lt; pTgamma     , 400 &lt; pTmiss      , 400 &lt; HT &lt;
 
     - mu+gamma SRs:
 
       - SR19:   35 &lt; pTgamma &lt; 200, 120 &lt; pTmiss &lt; 200,   0 &lt; HT &lt; 100
       - SR20:   35 &lt; pTgamma &lt; 200, 120 &lt; pTmiss &lt; 200, 100 &lt; HT &lt; 400
-      - SR21:   35 &lt; pTgamma &lt; 200, 120 &lt; pTmiss &lt; 200, 400 &lt; HT &lt; 
+      - SR21:   35 &lt; pTgamma &lt; 200, 120 &lt; pTmiss &lt; 200, 400 &lt; HT &lt;
       - SR22:   35 &lt; pTgamma &lt; 200, 200 &lt; pTmiss &lt; 400,   0 &lt; HT &lt; 100
       - SR23:   35 &lt; pTgamma &lt; 200, 200 &lt; pTmiss &lt; 400, 100 &lt; HT &lt; 400
-      - SR24:   35 &lt; pTgamma &lt; 200, 200 &lt; pTmiss &lt; 400, 400 &lt; HT &lt; 
+      - SR24:   35 &lt; pTgamma &lt; 200, 200 &lt; pTmiss &lt; 400, 400 &lt; HT &lt;
       - SR25:   35 &lt; pTgamma &lt; 200, 400 &lt; pTmiss      ,   0 &lt; HT &lt; 100
       - SR26:   35 &lt; pTgamma &lt; 200, 400 &lt; pTmiss      , 100 &lt; HT &lt; 400
-      - SR27:   35 &lt; pTgamma &lt; 200, 400 &lt; pTmiss      , 400 &lt; HT &lt; 
+      - SR27:   35 &lt; pTgamma &lt; 200, 400 &lt; pTmiss      , 400 &lt; HT &lt;
 
       - SR28: 200 &lt; pTgamma     , 120 &lt; pTmiss &lt; 200,   0 &lt; HT &lt; 100
       - SR29: 200 &lt; pTgamma     , 120 &lt; pTmiss &lt; 200, 100 &lt; HT &lt; 400
-      - SR30: 200 &lt; pTgamma     , 120 &lt; pTmiss &lt; 200, 400 &lt; HT &lt; 
+      - SR30: 200 &lt; pTgamma     , 120 &lt; pTmiss &lt; 200, 400 &lt; HT &lt;
       - SR31: 200 &lt; pTgamma     , 200 &lt; pTmiss &lt; 400,   0 &lt; HT &lt; 100
       - SR32: 200 &lt; pTgamma     , 200 &lt; pTmiss &lt; 400, 100 &lt; HT &lt; 400
-      - SR33: 200 &lt; pTgamma     , 200 &lt; pTmiss &lt; 400, 400 &lt; HT &lt; 
+      - SR33: 200 &lt; pTgamma     , 200 &lt; pTmiss &lt; 400, 400 &lt; HT &lt;
       - SR34: 200 &lt; pTgamma     , 400 &lt; pTmiss      ,   0 &lt; HT &lt; 100
       - SR35: 200 &lt; pTgamma     , 400 &lt; pTmiss      , 100 &lt; HT &lt; 400
-      - SR36: 200 &lt; pTgamma     , 400 &lt; pTmiss      , 400 &lt; HT &lt; 
+      - SR36: 200 &lt; pTgamma     , 400 &lt; pTmiss      , 400 &lt; HT &lt;
 
 */
 
@@ -132,58 +132,58 @@ using namespace std;
 namespace Gambit {
   namespace ColliderBit {
 
-    // This analysis class is also a base class for the analysis 
-    // class Analysis_CMS_13TeV_1Photon1Lepton_emu_combined_36invfb 
+    // This analysis class is also a base class for the analysis
+    // class Analysis_CMS_13TeV_1Photon1Lepton_emu_combined_36invfb
     // defined further down
     class Analysis_CMS_13TeV_1Photon1Lepton_36invfb : public Analysis {
     public:
 
       static constexpr const char* detector = &quot;CMS&quot;;
 
-      // Counters for the number of accepted events for each signal region
-      std::map&lt;string, EventCounter&gt; _counters = {
-        {&quot;SR1&quot;, EventCounter(&quot;SR1&quot;)},
-        {&quot;SR2&quot;, EventCounter(&quot;SR2&quot;)},
-        {&quot;SR3&quot;, EventCounter(&quot;SR3&quot;)},
-        {&quot;SR4&quot;, EventCounter(&quot;SR4&quot;)},
-        {&quot;SR5&quot;, EventCounter(&quot;SR5&quot;)},
-        {&quot;SR6&quot;, EventCounter(&quot;SR6&quot;)},
-        {&quot;SR7&quot;, EventCounter(&quot;SR7&quot;)},
-        {&quot;SR8&quot;, EventCounter(&quot;SR8&quot;)},
-        {&quot;SR9&quot;, EventCounter(&quot;SR9&quot;)},
-        {&quot;SR10&quot;, EventCounter(&quot;SR10&quot;)},
-        {&quot;SR11&quot;, EventCounter(&quot;SR11&quot;)},
-        {&quot;SR12&quot;, EventCounter(&quot;SR12&quot;)},
-        {&quot;SR13&quot;, EventCounter(&quot;SR13&quot;)},
-        {&quot;SR14&quot;, EventCounter(&quot;SR14&quot;)},
-        {&quot;SR15&quot;, EventCounter(&quot;SR15&quot;)},
-        {&quot;SR16&quot;, EventCounter(&quot;SR16&quot;)},
-        {&quot;SR17&quot;, EventCounter(&quot;SR17&quot;)},
-        {&quot;SR18&quot;, EventCounter(&quot;SR18&quot;)},
-        {&quot;SR19&quot;, EventCounter(&quot;SR19&quot;)},
-        {&quot;SR20&quot;, EventCounter(&quot;SR20&quot;)},
-        {&quot;SR21&quot;, EventCounter(&quot;SR21&quot;)},
-        {&quot;SR22&quot;, EventCounter(&quot;SR22&quot;)},
-        {&quot;SR23&quot;, EventCounter(&quot;SR23&quot;)},
-        {&quot;SR24&quot;, EventCounter(&quot;SR24&quot;)},
-        {&quot;SR25&quot;, EventCounter(&quot;SR25&quot;)},
-        {&quot;SR26&quot;, EventCounter(&quot;SR26&quot;)},
-        {&quot;SR27&quot;, EventCounter(&quot;SR27&quot;)},
-        {&quot;SR28&quot;, EventCounter(&quot;SR28&quot;)},
-        {&quot;SR29&quot;, EventCounter(&quot;SR29&quot;)},
-        {&quot;SR30&quot;, EventCounter(&quot;SR30&quot;)},
-        {&quot;SR31&quot;, EventCounter(&quot;SR31&quot;)},
-        {&quot;SR32&quot;, EventCounter(&quot;SR32&quot;)},
-        {&quot;SR33&quot;, EventCounter(&quot;SR33&quot;)},
-        {&quot;SR34&quot;, EventCounter(&quot;SR34&quot;)},
-        {&quot;SR35&quot;, EventCounter(&quot;SR35&quot;)},
-        {&quot;SR36&quot;, EventCounter(&quot;SR36&quot;)},
-      };
-
       // Analysis_CMS_13TeV_1Photon1Lepton_36invfb():
       Analysis_CMS_13TeV_1Photon1Lepton_36invfb()
       {
+        // Counters for the number of accepted events for each signal region
+        _counters[&quot;SR1&quot;] = EventCounter(&quot;SR1&quot;);
+        _counters[&quot;SR2&quot;] = EventCounter(&quot;SR2&quot;);
+        _counters[&quot;SR3&quot;] = EventCounter(&quot;SR3&quot;);
+        _counters[&quot;SR4&quot;] = EventCounter(&quot;SR4&quot;);
+        _counters[&quot;SR5&quot;] = EventCounter(&quot;SR5&quot;);
+        _counters[&quot;SR6&quot;] = EventCounter(&quot;SR6&quot;);
+        _counters[&quot;SR7&quot;] = EventCounter(&quot;SR7&quot;);
+        _counters[&quot;SR8&quot;] = EventCounter(&quot;SR8&quot;);
+        _counters[&quot;SR9&quot;] = EventCounter(&quot;SR9&quot;);
+        _counters[&quot;SR10&quot;] = EventCounter(&quot;SR10&quot;);
+        _counters[&quot;SR11&quot;] = EventCounter(&quot;SR11&quot;);
+        _counters[&quot;SR12&quot;] = EventCounter(&quot;SR12&quot;);
+        _counters[&quot;SR13&quot;] = EventCounter(&quot;SR13&quot;);
+        _counters[&quot;SR14&quot;] = EventCounter(&quot;SR14&quot;);
+        _counters[&quot;SR15&quot;] = EventCounter(&quot;SR15&quot;);
+        _counters[&quot;SR16&quot;] = EventCounter(&quot;SR16&quot;);
+        _counters[&quot;SR17&quot;] = EventCounter(&quot;SR17&quot;);
+        _counters[&quot;SR18&quot;] = EventCounter(&quot;SR18&quot;);
+        _counters[&quot;SR19&quot;] = EventCounter(&quot;SR19&quot;);
+        _counters[&quot;SR20&quot;] = EventCounter(&quot;SR20&quot;);
+        _counters[&quot;SR21&quot;] = EventCounter(&quot;SR21&quot;);
+        _counters[&quot;SR22&quot;] = EventCounter(&quot;SR22&quot;);
+        _counters[&quot;SR23&quot;] = EventCounter(&quot;SR23&quot;);
+        _counters[&quot;SR24&quot;] = EventCounter(&quot;SR24&quot;);
+        _counters[&quot;SR25&quot;] = EventCounter(&quot;SR25&quot;);
+        _counters[&quot;SR26&quot;] = EventCounter(&quot;SR26&quot;);
+        _counters[&quot;SR27&quot;] = EventCounter(&quot;SR27&quot;);
+        _counters[&quot;SR28&quot;] = EventCounter(&quot;SR28&quot;);
+        _counters[&quot;SR29&quot;] = EventCounter(&quot;SR29&quot;);
+        _counters[&quot;SR30&quot;] = EventCounter(&quot;SR30&quot;);
+        _counters[&quot;SR31&quot;] = EventCounter(&quot;SR31&quot;);
+        _counters[&quot;SR32&quot;] = EventCounter(&quot;SR32&quot;);
+        _counters[&quot;SR33&quot;] = EventCounter(&quot;SR33&quot;);
+        _counters[&quot;SR34&quot;] = EventCounter(&quot;SR34&quot;);
+        _counters[&quot;SR35&quot;] = EventCounter(&quot;SR35&quot;);
+        _counters[&quot;SR36&quot;] = EventCounter(&quot;SR36&quot;);
+
+
         set_analysis_name(&quot;CMS_13TeV_1Photon1Lepton_36invfb&quot;);
+        set_detector_name(detector);
         set_luminosity(35.9);
       }
 
@@ -238,7 +238,7 @@ namespace Gambit {
                                   };
         HEPUtils::BinnedFn2D&lt;double&gt; _eff2dEl(aEl,bEl,cEl);
         vector&lt;const HEPUtils::Particle*&gt; electrons;
-        for (const HEPUtils::Particle* electron : event-&gt;electrons()) 
+        for (const HEPUtils::Particle* electron : event-&gt;electrons())
         {
           bool isEl=has_tag(_eff2dEl, electron-&gt;abseta(), electron-&gt;pT());
           if (isEl &amp;&amp; electron-&gt;pT() &gt; 25. &amp;&amp; electron-&gt;abseta() &lt; 2.5)
@@ -319,7 +319,7 @@ namespace Gambit {
         bool is_egamma = true;
         if (lepton1-&gt;abspid() == 13) is_egamma = false;
 
-        // If e+gamma event, require m(e,gamma) &gt; 101.2 
+        // If e+gamma event, require m(e,gamma) &gt; 101.2
         if (is_egamma)
         {
           double m_egamma = (lepton1-&gt;mom() + photon1-&gt;mom()).m();
@@ -351,9 +351,9 @@ namespace Gambit {
         // SR selection variable: pTgamma
         double pTgamma = photon1-&gt;pT();
 
-        // 
+        //
         // Fill signal regions
-        // 
+        //
 
         // e+gamma SRs
         if (is_egamma)
@@ -413,15 +413,6 @@ namespace Gambit {
       } // END: run function
 
 
-      /// Combine the variables of another copy of this analysis (typically on another thread) into this one.
-      void combine(const Analysis* other)
-      {
-        const Analysis_CMS_13TeV_1Photon1Lepton_36invfb* specificOther
-                = dynamic_cast&lt;const Analysis_CMS_13TeV_1Photon1Lepton_36invfb*&gt;(other);
-
-        for (auto&amp; pair : _counters) { pair.second += specificOther-&gt;_counters.at(pair.first); }
-      }
-
 
       virtual void collect_results()
       {
@@ -477,7 +468,7 @@ namespace Gambit {
 
 
     //
-    // Derived analysis class, where we combine the e+gamma and 
+    // Derived analysis class, where we combine the e+gamma and
     // mu+gamma SRs, to reduce the SR flip-flopping issue
     //
     class Analysis_CMS_13TeV_1Photon1Lepton_emu_combined_36invfb : public Analysis_CMS_13TeV_1Photon1Lepton_36invfb {
@@ -489,7 +480,7 @@ namespace Gambit {
 
       virtual void collect_results() {
 
-        // We could of course combine the e+gamma and mu+gamma data once and just 
+        // We could of course combine the e+gamma and mu+gamma data once and just
         // hardcode those numbers here, but doing it explicitly here in the code
         // makes it clear what is going on.
         add_result(SignalRegionData( _counters.at(&quot;SR1&quot;).combine(_counters.at(&quot;SR19&quot;)),  153 + 308, { 175.0 + 333.9   , sqrt(pow(14.9,2) + pow(37.20,2)) } ));
@@ -521,7 +512,7 @@ namespace Gambit {
 
   }
 }
-</code></pre><hr><p>Updated on 2025-02-12 at 16:10:35 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.d5e27a6ed00168b7a66eb637878a6be7d054db51d0e613bbcfda12ab0569b62177253b4e6453c477574b3a38f50eff49a68f0e19112bd82a68c78a66cd8d05df.js integrity="sha512-1eJ6btABaLembrY3h4pr59BU21HQ5hO7z9oSqwVptiF3JTtOZFPEd1dLOjj1Dv9Jpo8OGREr2Cpox4pmzY0F3w==" crossorigin=anonymous defer></script>
+</code></pre><hr><p>Updated on 2026-11-03 at 14:50:47 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.d5e27a6ed00168b7a66eb637878a6be7d054db51d0e613bbcfda12ab0569b62177253b4e6453c477574b3a38f50eff49a68f0e19112bd82a68c78a66cd8d05df.js integrity="sha512-1eJ6btABaLembrY3h4pr59BU21HQ5hO7z9oSqwVptiF3JTtOZFPEd1dLOjj1Dv9Jpo8OGREr2Cpox4pmzY0F3w==" crossorigin=anonymous defer></script>
 <script src=/js/highlight.min.9003483b4531b86467c8b801b1d5fc5439bb0d6bdb6c6a760a1b54abf37d6bbadf8423dbc81a3359c935c7705bb7d183b46131ba4a9c861b5d48e6a61501461a.js integrity="sha512-kANIO0UxuGRnyLgBsdX8VDm7DWvbbGp2ChtUq/N9a7rfhCPbyBozWck1x3Bbt9GDtGExukqchhtdSOamFQFGGg==" crossorigin=anonymous defer></script>
 <script src=/main.min.9342d29d0e3e250a2c03282306b766e004888dba0fd661a17d7b106655e013bf85733f086ad330e3df0929c713dd81c0ea835966fa92e4a1e38f7ea9680524ed.js integrity="sha512-k0LSnQ4+JQosAygjBrdm4ASIjboP1mGhfXsQZlXgE7+Fcz8IatMw498JKccT3YHA6oNZZvqS5KHjj36paAUk7Q==" crossorigin=anonymous defer></script>
-<script src=https://gambitbsm.org/index.min.03ab9c2e460a36904d0b1544581433f337b9e5e23e6798a396683f418d37e30979da1ab2a8ef201c110075d73ccb12f8cc2605c7d9723f99bef11ed7c8b97844.js integrity="sha512-A6ucLkYKNpBNCxVEWBQz8ze55eI+Z5ijlmg/QY034wl52hqyqO8gHBEAddc8yxL4zCYFx9lyP5m+8R7XyLl4RA==" crossorigin=anonymous defer></script></body></html>
+<script src=https://gambitbsm.org/index.min.3a8ee06d0c346f1fb70040b0fbcbaaacf335cb34023c408954406a05db2089fc2ca349119b9f7d68b9e7044e82b8fdc8bd9661b6ef8b118246c5a2079d7fa8e9.js integrity="sha512-Oo7gbQw0bx+3AECw+8uqrPM1yzQCPECJVEBqBdsgifwso0kRm599aLnnBE6CuP3IvZZhtu+LEYJGxaIHnX+o6Q==" crossorigin=anonymous defer></script></body></html>

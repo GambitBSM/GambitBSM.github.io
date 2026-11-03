@@ -46,10 +46,6 @@ namespace Gambit {
     class Analysis_ATLAS_8TeV_0LEPStop_20invfb : public Analysis {
     private:
 
-      // Numbers passing cuts
-      double _numSRA1, _numSRA2, _numSRA3, _numSRA4;
-      double _numSRC1, _numSRC2, _numSRC3;
-
       vector&lt;int&gt; cutFlowVector;
       vector&lt;string&gt; cutFlowVector_str;
       int NCUTS; //=16;
@@ -115,10 +111,18 @@ namespace Gambit {
       Analysis_ATLAS_8TeV_0LEPStop_20invfb() {
 
         set_analysis_name(&quot;ATLAS_8TeV_0LEPStop_20invfb&quot;);
+        set_detector_name(detector);
         set_luminosity(20.1);
 
-        _numSRA1 = 0 ; _numSRA2 = 0; _numSRA3 = 0; _numSRA4 = 0;
-        _numSRC1 = 0 ; _numSRC2 = 0; _numSRC3 = 0;
+        // Numbers passing cuts
+        _counters[&quot;SRA1&quot;] = EventCounter(&quot;SRA1&quot;);
+        _counters[&quot;SRA2&quot;] = EventCounter(&quot;SRA2&quot;);
+        _counters[&quot;SRA3&quot;] = EventCounter(&quot;SRA3&quot;);
+        _counters[&quot;SRA4&quot;] = EventCounter(&quot;SRA4&quot;);
+        _counters[&quot;SRC1&quot;] = EventCounter(&quot;SRC1&quot;);
+        _counters[&quot;SRC2&quot;] = EventCounter(&quot;SRC2&quot;);
+        _counters[&quot;SRC3&quot;] = EventCounter(&quot;SRC3&quot;);
+
         NCUTS=23;
 
         for(int i=0;i&lt;NCUTS;i++){
@@ -144,19 +148,19 @@ namespace Gambit {
         }
 
         // Apply electron efficiency
-        ATLAS::applyElectronEff(baselineElectrons);
+        applyEfficiency(baselineElectrons, ATLAS::eff2DEl.at(&quot;Generic&quot;));
 
         for (const HEPUtils::Particle* muon : event-&gt;muons()) {
           if (muon-&gt;pT() &gt; 10. &amp;&amp; muon-&gt;abseta() &lt; 2.4) baselineMuons.push_back(muon);
         }
 
         // Apply muon efficiency
-        ATLAS::applyMuonEff(baselineMuons);
+        applyEfficiency(baselineMuons, ATLAS::eff2DMu.at(&quot;Generic&quot;));
 
         for (const HEPUtils::Particle* tau : event-&gt;taus()) {
           if (tau-&gt;pT() &gt; 10. &amp;&amp; tau-&gt;abseta() &lt; 2.47) baselineTaus.push_back(tau);
         }
-        ATLAS::applyTauEfficiencyR1(baselineTaus);
+        applyEfficiency(baselineTaus, ATLAS::effTau.at(&quot;R1&quot;));
 
 
         // Jets
@@ -657,62 +661,38 @@ namespace Gambit {
           }*/
 
         //We're now ready to apply the cuts for each signal region
-        //_numSR1, _numSR2, _numSR3;
 
-        if(isSRA1) _numSRA1 += event-&gt;weight();
-        if(isSRA2) _numSRA2 += event-&gt;weight();
-        if(isSRA3) _numSRA3 += event-&gt;weight();
-        if(isSRA4) _numSRA4 += event-&gt;weight();
+        if(isSRA1) _counters[&quot;SRA1&quot;].add_event(event);
+        if(isSRA2) _counters[&quot;SRA2&quot;].add_event(event);
+        if(isSRA3) _counters[&quot;SRA3&quot;].add_event(event);
+        if(isSRA4) _counters[&quot;SRA4&quot;].add_event(event);
 
-        if(isSRC1) _numSRC1 += event-&gt;weight();
-        if(isSRC2) _numSRC2 += event-&gt;weight();
-        if(isSRC3) _numSRC3 += event-&gt;weight();
+        if(isSRC1) _counters[&quot;SRC1&quot;].add_event(event);
+        if(isSRC2) _counters[&quot;SRC2&quot;].add_event(event);
+        if(isSRC3) _counters[&quot;SRC3&quot;].add_event(event);
 
         return;
 
       }
 
-      /// Combine the variables of another copy of this analysis (typically on another thread) into this one.
-      void combine(const Analysis* other)
-      {
-        const Analysis_ATLAS_8TeV_0LEPStop_20invfb* specificOther
-                = dynamic_cast&lt;const Analysis_ATLAS_8TeV_0LEPStop_20invfb*&gt;(other);
-
-        if (NCUTS != specificOther-&gt;NCUTS) NCUTS = specificOther-&gt;NCUTS;
-        for (int j=0; j&lt;NCUTS; j++) {
-          cutFlowVector[j] += specificOther-&gt;cutFlowVector[j];
-          cutFlowVector_str[j] = specificOther-&gt;cutFlowVector_str[j];
-        }
-        _numSRA1 += specificOther-&gt;_numSRA1;
-        _numSRA2 += specificOther-&gt;_numSRA2;
-        _numSRA3 += specificOther-&gt;_numSRA3;
-        _numSRA4 += specificOther-&gt;_numSRA4;
-        _numSRC1 += specificOther-&gt;_numSRC1;
-        _numSRC2 += specificOther-&gt;_numSRC2;
-        _numSRC3 += specificOther-&gt;_numSRC3;
-      }
-
-
       void collect_results() {
 
-        // add_result(SignalRegionData(&quot;SR label&quot;, n_obs, {n_sig_MC, n_sig_MC_sys}, {n_bkg, n_bkg_err}));
-
-        add_result(SignalRegionData(&quot;SRA1&quot;, 11., {_numSRA1, 0.}, {15.8, 1.9}));
-        add_result(SignalRegionData(&quot;SRA2&quot;, 4., {_numSRA2, 0.}, {4.1, 0.8}));
-        add_result(SignalRegionData(&quot;SRA3&quot;, 5., {_numSRA3, 0.}, {4.1, 0.9}));
-        add_result(SignalRegionData(&quot;SRA4&quot;, 4., {_numSRA4, 0.}, {2.4, 0.7}));
-        add_result(SignalRegionData(&quot;SRC1&quot;, 59., {_numSRC1, 0.}, {68., 7.}));
-        add_result(SignalRegionData(&quot;SRC2&quot;, 30., {_numSRC2, 0.}, {34., 5.}));
-        add_result(SignalRegionData(&quot;SRC3&quot;, 15., {_numSRC3, 0.}, {20.3, 3.}));
+        add_result(SignalRegionData(_counters[&quot;SRA1&quot;], 11., {15.8, 1.9}));
+        add_result(SignalRegionData(_counters[&quot;SRA2&quot;], 4., {4.1, 0.8}));
+        add_result(SignalRegionData(_counters[&quot;SRA3&quot;], 5., {4.1, 0.9}));
+        add_result(SignalRegionData(_counters[&quot;SRA4&quot;], 4., {2.4, 0.7}));
+        add_result(SignalRegionData(_counters[&quot;SRC1&quot;], 59., {68., 7.}));
+        add_result(SignalRegionData(_counters[&quot;SRC2&quot;], 30., {34., 5.}));
+        add_result(SignalRegionData(_counters[&quot;SRC3&quot;], 15., {20.3, 3.}));
 
         return;
       }
 
 
     protected:
-      void analysis_specific_reset() {
-        _numSRA1 = 0 ; _numSRA2 = 0; _numSRA3 = 0; _numSRA4 = 0;
-        _numSRC1 = 0 ; _numSRC2 = 0; _numSRC3 = 0;
+      void analysis_specific_reset()
+      {
+        for (auto&amp; pair : _counters) { pair.second.reset(); }
 
         std::fill(cutFlowVector.begin(), cutFlowVector.end(), 0);
       }
@@ -724,7 +704,7 @@ namespace Gambit {
 
   }
 }
-</code></pre><hr><p>Updated on 2025-02-12 at 16:10:35 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.d5e27a6ed00168b7a66eb637878a6be7d054db51d0e613bbcfda12ab0569b62177253b4e6453c477574b3a38f50eff49a68f0e19112bd82a68c78a66cd8d05df.js integrity="sha512-1eJ6btABaLembrY3h4pr59BU21HQ5hO7z9oSqwVptiF3JTtOZFPEd1dLOjj1Dv9Jpo8OGREr2Cpox4pmzY0F3w==" crossorigin=anonymous defer></script>
+</code></pre><hr><p>Updated on 2026-11-03 at 14:50:47 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.d5e27a6ed00168b7a66eb637878a6be7d054db51d0e613bbcfda12ab0569b62177253b4e6453c477574b3a38f50eff49a68f0e19112bd82a68c78a66cd8d05df.js integrity="sha512-1eJ6btABaLembrY3h4pr59BU21HQ5hO7z9oSqwVptiF3JTtOZFPEd1dLOjj1Dv9Jpo8OGREr2Cpox4pmzY0F3w==" crossorigin=anonymous defer></script>
 <script src=/js/highlight.min.9003483b4531b86467c8b801b1d5fc5439bb0d6bdb6c6a760a1b54abf37d6bbadf8423dbc81a3359c935c7705bb7d183b46131ba4a9c861b5d48e6a61501461a.js integrity="sha512-kANIO0UxuGRnyLgBsdX8VDm7DWvbbGp2ChtUq/N9a7rfhCPbyBozWck1x3Bbt9GDtGExukqchhtdSOamFQFGGg==" crossorigin=anonymous defer></script>
 <script src=/main.min.9342d29d0e3e250a2c03282306b766e004888dba0fd661a17d7b106655e013bf85733f086ad330e3df0929c713dd81c0ea835966fa92e4a1e38f7ea9680524ed.js integrity="sha512-k0LSnQ4+JQosAygjBrdm4ASIjboP1mGhfXsQZlXgE7+Fcz8IatMw498JKccT3YHA6oNZZvqS5KHjj36paAUk7Q==" crossorigin=anonymous defer></script>
-<script src=https://gambitbsm.org/index.min.03ab9c2e460a36904d0b1544581433f337b9e5e23e6798a396683f418d37e30979da1ab2a8ef201c110075d73ccb12f8cc2605c7d9723f99bef11ed7c8b97844.js integrity="sha512-A6ucLkYKNpBNCxVEWBQz8ze55eI+Z5ijlmg/QY034wl52hqyqO8gHBEAddc8yxL4zCYFx9lyP5m+8R7XyLl4RA==" crossorigin=anonymous defer></script></body></html>
+<script src=https://gambitbsm.org/index.min.3a8ee06d0c346f1fb70040b0fbcbaaacf335cb34023c408954406a05db2089fc2ca349119b9f7d68b9e7044e82b8fdc8bd9661b6ef8b118246c5a2079d7fa8e9.js integrity="sha512-Oo7gbQw0bx+3AECw+8uqrPM1yzQCPECJVEBqBdsgifwso0kRm599aLnnBE6CuP3IvZZhtu+LEYJGxaIHnX+o6Q==" crossorigin=anonymous defer></script></body></html>

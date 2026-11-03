@@ -40,6 +40,7 @@ Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle
 #include &lt;cctype&gt;  // ::tolower function
 #include &lt;sstream&gt; // stringstream
 #include &lt;string&gt;  // string
+#include &lt;cstdlib&gt; // environment variable handling
 #include &lt;regex&gt;   // regular expressions
 
 /// POSIX filesystem libraries
@@ -67,6 +68,53 @@ namespace Gambit
   {
 
     const char* whitespaces[] = {&quot; &quot;, &quot;\t&quot;, &quot;\n&quot;, &quot;\f&quot;, &quot;\r&quot;};
+
+    /// Get an environment variable, or &quot;&quot; if the variable is not set
+    std::string getEnvVar( std::string const &amp; key )
+    {
+        char * val = std::getenv( key.c_str() );
+        return val == NULL ? std::string(&quot;&quot;) : std::string(val);
+    }
+
+    std::string get_GAMBIT_root_dir()
+    {
+       std::string root_dir;
+       /// The initial assumption is that this is provided by CMake
+       /// via the GAMBIT_RUN_DIR variable
+       /// However, in situations where GAMBIT is built in some
+       /// temporary directory and then moved (as occurs in the
+       /// pip installation of pyScannerBit), then we need to
+       /// locate the root directory via an environment variable
+       /// at runtime instead. If this environment variable is set
+       /// then it will override the value set at build time.
+       root_dir = getEnvVar(&quot;GAMBIT_RUN_DIR&quot;);
+       if(root_dir==std::string(&quot;&quot;))
+       {
+          root_dir = GAMBIT_RUN_DIR;
+       }
+
+       if(root_dir==std::string(&quot;&quot;))
+       {
+          utils_error().raise(LOCAL_INFO, &quot;Could not determine GAMBIT root directory! This should have been set by 'GAMBIT_RUN_DIR' at build time, however the value we found is empty. The environment variable GAMBIT_RUN_DIR is also not set. If you suspect that this is a bug in the build system then please report it.&quot;);
+       }
+       return root_dir;
+    }
+
+    /// Return the root directory of GAMBIT.
+    /// Useful for locating configuration files and other such things
+    /// in a robust manner 
+    const std::string&amp; GAMBIT_root_dir()
+    {
+       static const std::string root_dir = get_GAMBIT_root_dir();
+       return root_dir;
+    }
+
+    /// Return the path to the build-time scratch directory
+    const str&amp; buildtime_scratch()
+    {
+       static const str path = GAMBIT_root_dir() + &quot;/scratch/build_time/&quot;;
+       return path;
+    }
 
     /// Return the path to the run-specific scratch directory
     /// Don't call this from a destructor, as the internal static str may have already been destroyed.
@@ -203,6 +251,30 @@ namespace Gambit
        return (*p == 0) ;
     }
 
+    /// Wrappers of all_of, any_of and none_of using vectors
+    bool all_of(const std::vector&lt;bool&gt;&amp; vec)
+    {
+      return std::all_of(vec.begin(), vec.end(), [](bool x) { return x; });
+    }
+
+    bool any_of(const std::vector&lt;bool&gt;&amp; vec)
+    {
+      return std::any_of(vec.begin(), vec.end(), [](bool x) { return x; });
+    }
+
+    bool none_of(const std::vector&lt;bool&gt;&amp; vec)
+    {
+      return std::none_of(vec.begin(), vec.end(), [](bool x) { return x; });
+    }
+
+    /// Perform outer product of two vectors
+    std::vector&lt;double&gt; outer_product(const std::vector&lt;double&gt;&amp; v1, const std::vector&lt;double&gt;&amp; v2)
+    {
+      std::vector&lt;double&gt; result;
+      for(auto &amp;el1 : v1) for(auto &amp;el2: v2) result.push_back(el1*el2);
+      return result;
+    }
+
     /// Copy a std::string to a character array, stripping the null termination character.  Good for sending to Fortran.
     void strcpy2f(char* arr, int len, str s)
     {
@@ -296,8 +368,14 @@ namespace Gambit
     /// Get directory name from full path+filename (POSIX)
     std::string dir_name(const std::string&amp; path)
     {
+       if(path.size() &gt;= 1000)
+       {
+          std::string msg = &quot;Utils::dir_name error: path length (&quot; + std::to_string(path.size()) + &quot;) exceeds buffer size (1000)!&quot;;
+          std::cerr &lt;&lt; msg &lt;&lt; std::endl;
+          abort();
+       }
        char buffer[1000]; // temporary buffer for dirname to work with (it is a C function)
-       path.copy(buffer, path.size()); //TODO: error if path.size()&gt;1000
+       path.copy(buffer, path.size());
        buffer[path.size()] = '\0';
        std::string result = dirname(&amp;buffer[0]); // should use the C function...
        return result;
@@ -306,8 +384,14 @@ namespace Gambit
     /// Get file name from full path+filename (POSIX)
     std::string base_name(const std::string&amp; path)
     {
+       if(path.size() &gt;= 1000)
+       {
+          std::string msg = &quot;Utils::base_name error: path length (&quot; + std::to_string(path.size()) + &quot;) exceeds buffer size (1000)!&quot;;
+          std::cerr &lt;&lt; msg &lt;&lt; std::endl;
+          abort();
+       }
        char buffer[1000]; // temporary buffer for basename to work with (it is a C function)
-       path.copy(buffer, path.size()); //TODO: error if path.size()&gt;1000
+       path.copy(buffer, path.size());
        buffer[path.size()] = '\0';
        std::string result = basename(&amp;buffer[0]); // should use the C function...
        return result;
@@ -375,17 +459,15 @@ namespace Gambit
     bool check1(const std::string&amp; s1, const std::string&amp; s2)
     {
       if(s2.length() - s1.length() != 1){ return false; }
-      unsigned int i,j;
-      for(i=0,j=0; i&lt;s2.length(); i++,j++)
+      unsigned int i = 0;
+      unsigned int j = 0;
+      while (i &lt; s2.length() &amp;&amp; j &lt; s1.length()) 
       {
-          if(s2[i] == s1[j])
-          {/*do  nothing*/}
-          else if(i == j)
-          { j++;}
-          else
-          {return false;}
+        if (s2[i] == s1[j]) { i++; j++; } 
+        else { i++; } // Skip character in s2 only
       }
-      return true;
+      // If we reached the end of s1, it's a match
+      return (j == s1.length());
     }
 
     /// true if s1 can be obtained from s2 by changing no more than X characters (X=2 for now)
@@ -472,11 +554,11 @@ namespace Gambit
     {
       return tolower (c1) &lt; tolower (c2);
     }
-        
+
   }
 
 }
-</code></pre><hr><p>Updated on 2025-02-12 at 16:10:33 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.d5e27a6ed00168b7a66eb637878a6be7d054db51d0e613bbcfda12ab0569b62177253b4e6453c477574b3a38f50eff49a68f0e19112bd82a68c78a66cd8d05df.js integrity="sha512-1eJ6btABaLembrY3h4pr59BU21HQ5hO7z9oSqwVptiF3JTtOZFPEd1dLOjj1Dv9Jpo8OGREr2Cpox4pmzY0F3w==" crossorigin=anonymous defer></script>
+</code></pre><hr><p>Updated on 2026-11-03 at 14:50:45 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.d5e27a6ed00168b7a66eb637878a6be7d054db51d0e613bbcfda12ab0569b62177253b4e6453c477574b3a38f50eff49a68f0e19112bd82a68c78a66cd8d05df.js integrity="sha512-1eJ6btABaLembrY3h4pr59BU21HQ5hO7z9oSqwVptiF3JTtOZFPEd1dLOjj1Dv9Jpo8OGREr2Cpox4pmzY0F3w==" crossorigin=anonymous defer></script>
 <script src=/js/highlight.min.9003483b4531b86467c8b801b1d5fc5439bb0d6bdb6c6a760a1b54abf37d6bbadf8423dbc81a3359c935c7705bb7d183b46131ba4a9c861b5d48e6a61501461a.js integrity="sha512-kANIO0UxuGRnyLgBsdX8VDm7DWvbbGp2ChtUq/N9a7rfhCPbyBozWck1x3Bbt9GDtGExukqchhtdSOamFQFGGg==" crossorigin=anonymous defer></script>
 <script src=/main.min.9342d29d0e3e250a2c03282306b766e004888dba0fd661a17d7b106655e013bf85733f086ad330e3df0929c713dd81c0ea835966fa92e4a1e38f7ea9680524ed.js integrity="sha512-k0LSnQ4+JQosAygjBrdm4ASIjboP1mGhfXsQZlXgE7+Fcz8IatMw498JKccT3YHA6oNZZvqS5KHjj36paAUk7Q==" crossorigin=anonymous defer></script>
-<script src=https://gambitbsm.org/index.min.03ab9c2e460a36904d0b1544581433f337b9e5e23e6798a396683f418d37e30979da1ab2a8ef201c110075d73ccb12f8cc2605c7d9723f99bef11ed7c8b97844.js integrity="sha512-A6ucLkYKNpBNCxVEWBQz8ze55eI+Z5ijlmg/QY034wl52hqyqO8gHBEAddc8yxL4zCYFx9lyP5m+8R7XyLl4RA==" crossorigin=anonymous defer></script></body></html>
+<script src=https://gambitbsm.org/index.min.3a8ee06d0c346f1fb70040b0fbcbaaacf335cb34023c408954406a05db2089fc2ca349119b9f7d68b9e7044e82b8fdc8bd9661b6ef8b118246c5a2079d7fa8e9.js integrity="sha512-Oo7gbQw0bx+3AECw+8uqrPM1yzQCPECJVEBqBdsgifwso0kRm599aLnnBE6CuP3IvZZhtu+LEYJGxaIHnX+o6Q==" crossorigin=anonymous defer></script></body></html>

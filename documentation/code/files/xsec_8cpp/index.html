@@ -45,12 +45,12 @@ namespace Gambit
   {
 
 
-    /// 
+    ///
     /// Definitions of xsec members
     ///
 
     /// Constructor
-    xsec_container::xsec_container() : 
+    xsec_container::xsec_container() :
       _xsec(0),
       _xsecerr(0),
       _info_string(&quot;&quot;),
@@ -144,7 +144,7 @@ namespace Gambit
       key = base_key + &quot;xsec_relerr&quot;;
       content_map[key] = this-&gt;xsec_relerr();
 
-      content_map[&quot;trust_level&quot;] = static_cast&lt;double&gt;(this-&gt;trust_level());  
+      content_map[&quot;trust_level&quot;] = static_cast&lt;double&gt;(this-&gt;trust_level());
 
       return content_map;
     }
@@ -166,12 +166,12 @@ namespace Gambit
 
 
 
-    /// 
+    ///
     /// Definitions of MC_xsec_container members
     ///
 
     /// Constructor
-    MC_xsec_container::MC_xsec_container() : 
+    MC_xsec_container::MC_xsec_container() :
       xsec_container::xsec_container(),
       _ntot(0)
     { }
@@ -294,12 +294,12 @@ namespace Gambit
 
 
 
-    /// 
+    ///
     /// Definitions of process_xsec_container members
     ///
 
     /// Constructor
-    process_xsec_container::process_xsec_container() : 
+    process_xsec_container::process_xsec_container() :
       xsec_container::xsec_container(),
       _process_code(-1),
       _processes_sharing_xsec(std::vector&lt;int&gt;()),
@@ -327,7 +327,7 @@ namespace Gambit
       assert(_process_code &gt; 0);
       // Check that we are working with the same process code
       assert(other.process_code() == _process_code);
-      // @todo Should we also check the content of the vectors 
+      // @todo Should we also check the content of the vectors
       //       _processes_sharing_xsec and _related_pid_pairs?
       process_xsec_container::average_xsec(other.xsec(), other.xsec_err());
     }
@@ -344,56 +344,56 @@ namespace Gambit
       assert(_process_code &gt; 0);
       // Check that we are working with the same process code
       assert(other.process_code() == _process_code);
-      // @todo Should we also check the content of the vectors 
+      // @todo Should we also check the content of the vectors
       //       _processes_sharing_xsec and _related_pid_pairs?
       process_xsec_container::sum_xsecs(other.xsec(), other.xsec_err());
     }
 
 
     /// Return the process code
-    int process_xsec_container::process_code() const 
+    int process_xsec_container::process_code() const
     { return _process_code; }
 
     /// Set the process code
-    void process_xsec_container::set_process_code(int process_code_in) 
-    { _process_code = process_code_in; } 
+    void process_xsec_container::set_process_code(int process_code_in)
+    { _process_code = process_code_in; }
 
-    /// Return the list of process codes that share this cross-section 
-    /// (This is due to the many-to-many mapping between Pythia process 
+    /// Return the list of process codes that share this cross-section
+    /// (This is due to the many-to-many mapping between Pythia process
     /// codes and the PID pairs we use as basis for external cross-section calculations)
-    const std::vector&lt;int&gt;&amp; process_xsec_container::processes_sharing_xsec() const 
+    const std::vector&lt;int&gt;&amp; process_xsec_container::processes_sharing_xsec() const
     { return _processes_sharing_xsec; }
 
-    /// Add a process code to the list of processes sharing this cross-section, 
-    void process_xsec_container::register_process_sharing_xsec(int process_code_in) 
-    { 
+    /// Add a process code to the list of processes sharing this cross-section,
+    void process_xsec_container::register_process_sharing_xsec(int process_code_in)
+    {
       if(std::find(_processes_sharing_xsec.begin(), _processes_sharing_xsec.end(), process_code_in) == _processes_sharing_xsec.end())
       {
-        _processes_sharing_xsec.push_back(process_code_in); 
+        _processes_sharing_xsec.push_back(process_code_in);
       }
     }
 
     /// Return the list of PID pairs related to this cross-section
-    const std::vector&lt;PID_pair&gt;&amp; process_xsec_container::related_pid_pairs() const 
-    { return _related_pid_pairs; } 
+    const std::vector&lt;PID_pair&gt;&amp; process_xsec_container::related_pid_pairs() const
+    { return _related_pid_pairs; }
 
     /// Add a PID pair to the list of PID pairs related to this cross-section
-    void process_xsec_container::register_related_pid_pair(PID_pair pid_pair_in) 
-    { 
+    void process_xsec_container::register_related_pid_pair(PID_pair pid_pair_in)
+    {
       if(std::find(_related_pid_pairs.begin(), _related_pid_pairs.end(), pid_pair_in) == _related_pid_pairs.end())
       {
-        _related_pid_pairs.push_back(pid_pair_in); 
+        _related_pid_pairs.push_back(pid_pair_in);
       }
-    }  
+    }
 
 
 
-    /// 
+    ///
     /// Definitions of PID_pair_xsec_container members
     ///
 
     /// Constructor
-    PID_pair_xsec_container::PID_pair_xsec_container() : 
+    PID_pair_xsec_container::PID_pair_xsec_container() :
       xsec_container::xsec_container(),
       _pid_pair(PID_pair()),
       _pid_pairs_sharing_xsec(std::vector&lt;PID_pair&gt;()),
@@ -421,7 +421,7 @@ namespace Gambit
       assert((_pid_pair.pid1() != 0) &amp;&amp; (_pid_pair.pid2() != 0));
       // Check that we are working with the same PID pair
       assert(other.pid_pair() == _pid_pair);
-      // @todo Should we also check the content of the vectors 
+      // @todo Should we also check the content of the vectors
       //       _pid_pairs_sharing_xsec and _related_processes?
       PID_pair_xsec_container::average_xsec(other.xsec(), other.xsec_err());
     }
@@ -438,51 +438,51 @@ namespace Gambit
       assert((_pid_pair.pid1() != 0) &amp;&amp; (_pid_pair.pid2() != 0));
       // Check that we are working with the same PID pair
       assert(other.pid_pair() == _pid_pair);
-      // @todo Should we also check the content of the vectors 
+      // @todo Should we also check the content of the vectors
       //       _pid_pairs_sharing_xsec and _related_processes?
       PID_pair_xsec_container::sum_xsecs(other.xsec(), other.xsec_err());
     }
 
     /// Return the PID pair
-    const PID_pair&amp; PID_pair_xsec_container::pid_pair() const 
+    const PID_pair&amp; PID_pair_xsec_container::pid_pair() const
     { return _pid_pair; }
 
     /// Set the PID pair
-    void PID_pair_xsec_container::set_pid_pair(const PID_pair&amp; pid_pair_in) 
-    { _pid_pair = pid_pair_in; } 
+    void PID_pair_xsec_container::set_pid_pair(const PID_pair&amp; pid_pair_in)
+    { _pid_pair = pid_pair_in; }
 
-    /// Return the list of PID pairs that share this cross-section 
-    /// (This is due to the many-to-many mapping between Pythia process 
+    /// Return the list of PID pairs that share this cross-section
+    /// (This is due to the many-to-many mapping between Pythia process
     /// codes and the PID pairs we use as basis for external cross-section calculations)
-    const std::vector&lt;PID_pair&gt;&amp; PID_pair_xsec_container::pid_pairs_sharing_xsec() const 
+    const std::vector&lt;PID_pair&gt;&amp; PID_pair_xsec_container::pid_pairs_sharing_xsec() const
     { return _pid_pairs_sharing_xsec; }
 
-    /// Add a PID pair to the list of PID pairs sharing this cross-section 
-    void PID_pair_xsec_container::register_pid_pair_sharing_xsec(PID_pair pid_pair_in) 
-    { 
+    /// Add a PID pair to the list of PID pairs sharing this cross-section
+    void PID_pair_xsec_container::register_pid_pair_sharing_xsec(PID_pair pid_pair_in)
+    {
       if(std::find(_pid_pairs_sharing_xsec.begin(), _pid_pairs_sharing_xsec.end(), pid_pair_in) == _pid_pairs_sharing_xsec.end())
       {
-        _pid_pairs_sharing_xsec.push_back(pid_pair_in); 
+        _pid_pairs_sharing_xsec.push_back(pid_pair_in);
       }
     }
 
     /// Return the list of process codes related to this cross-section
-    const std::vector&lt;int&gt;&amp; PID_pair_xsec_container::related_processes() const 
-    { return _related_processes; } 
+    const std::vector&lt;int&gt;&amp; PID_pair_xsec_container::related_processes() const
+    { return _related_processes; }
 
     /// Add a process code to the list of processes related to this cross-section
-    void PID_pair_xsec_container::register_related_process(int process_code_in) 
-    { 
+    void PID_pair_xsec_container::register_related_process(int process_code_in)
+    {
       if(std::find(_related_processes.begin(), _related_processes.end(), process_code_in) == _related_processes.end())
       {
-        _related_processes.push_back(process_code_in); 
+        _related_processes.push_back(process_code_in);
       }
-    }  
+    }
 
 
   }
 }
-</code></pre><hr><p>Updated on 2025-02-12 at 16:10:36 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.d5e27a6ed00168b7a66eb637878a6be7d054db51d0e613bbcfda12ab0569b62177253b4e6453c477574b3a38f50eff49a68f0e19112bd82a68c78a66cd8d05df.js integrity="sha512-1eJ6btABaLembrY3h4pr59BU21HQ5hO7z9oSqwVptiF3JTtOZFPEd1dLOjj1Dv9Jpo8OGREr2Cpox4pmzY0F3w==" crossorigin=anonymous defer></script>
+</code></pre><hr><p>Updated on 2026-11-03 at 14:50:48 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.d5e27a6ed00168b7a66eb637878a6be7d054db51d0e613bbcfda12ab0569b62177253b4e6453c477574b3a38f50eff49a68f0e19112bd82a68c78a66cd8d05df.js integrity="sha512-1eJ6btABaLembrY3h4pr59BU21HQ5hO7z9oSqwVptiF3JTtOZFPEd1dLOjj1Dv9Jpo8OGREr2Cpox4pmzY0F3w==" crossorigin=anonymous defer></script>
 <script src=/js/highlight.min.9003483b4531b86467c8b801b1d5fc5439bb0d6bdb6c6a760a1b54abf37d6bbadf8423dbc81a3359c935c7705bb7d183b46131ba4a9c861b5d48e6a61501461a.js integrity="sha512-kANIO0UxuGRnyLgBsdX8VDm7DWvbbGp2ChtUq/N9a7rfhCPbyBozWck1x3Bbt9GDtGExukqchhtdSOamFQFGGg==" crossorigin=anonymous defer></script>
 <script src=/main.min.9342d29d0e3e250a2c03282306b766e004888dba0fd661a17d7b106655e013bf85733f086ad330e3df0929c713dd81c0ea835966fa92e4a1e38f7ea9680524ed.js integrity="sha512-k0LSnQ4+JQosAygjBrdm4ASIjboP1mGhfXsQZlXgE7+Fcz8IatMw498JKccT3YHA6oNZZvqS5KHjj36paAUk7Q==" crossorigin=anonymous defer></script>
-<script src=https://gambitbsm.org/index.min.03ab9c2e460a36904d0b1544581433f337b9e5e23e6798a396683f418d37e30979da1ab2a8ef201c110075d73ccb12f8cc2605c7d9723f99bef11ed7c8b97844.js integrity="sha512-A6ucLkYKNpBNCxVEWBQz8ze55eI+Z5ijlmg/QY034wl52hqyqO8gHBEAddc8yxL4zCYFx9lyP5m+8R7XyLl4RA==" crossorigin=anonymous defer></script></body></html>
+<script src=https://gambitbsm.org/index.min.3a8ee06d0c346f1fb70040b0fbcbaaacf335cb34023c408954406a05db2089fc2ca349119b9f7d68b9e7044e82b8fdc8bd9661b6ef8b118246c5a2079d7fa8e9.js integrity="sha512-Oo7gbQw0bx+3AECw+8uqrPM1yzQCPECJVEBqBdsgifwso0kRm599aLnnBE6CuP3IvZZhtu+LEYJGxaIHnX+o6Q==" crossorigin=anonymous defer></script></body></html>

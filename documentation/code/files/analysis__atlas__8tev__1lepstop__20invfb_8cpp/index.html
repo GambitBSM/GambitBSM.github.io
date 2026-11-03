@@ -59,10 +59,6 @@ namespace Gambit {
     class Analysis_ATLAS_8TeV_1LEPStop_20invfb : public Analysis {
     private:
 
-      // Numbers passing cuts
-      double _numTN1Shape_bin1, _numTN1Shape_bin2, _numTN1Shape_bin3,
-        _numTN2, _numTN3, _numBC1, _numBC2,_numBC3;
-
       vector&lt;int&gt; cutFlowVector_alt;
       vector&lt;int&gt; cutFlowVector;
       vector&lt;string&gt; cutFlowVector_str;
@@ -73,13 +69,25 @@ namespace Gambit {
       // Required detector sim
       static constexpr const char* detector = &quot;ATLAS&quot;;
 
-      Analysis_ATLAS_8TeV_1LEPStop_20invfb() {
-        set_analysis_name(&quot;ATLAS_8TeV_1LEPStop_20invfb&quot;);
-        set_luminosity(20.7);
+      Analysis_ATLAS_8TeV_1LEPStop_20invfb()
+      {
 
-        _numTN1Shape_bin1 = 0; _numTN1Shape_bin2 = 0; _numTN1Shape_bin3 = 0;
-        _numTN2 = 0; _numTN3 = 0; _numBC1 = 0;
-        _numBC2 = 0; _numBC3 = 0; NCUTS = 41;
+        // Numbers passing cuts
+        _counters[&quot;TN1Shape_bin1&quot;] = EventCounter(&quot;TN1Shape_bin1&quot;);
+        _counters[&quot;TN1Shape_bin2&quot;] = EventCounter(&quot;TN1Shape_bin2&quot;);
+        _counters[&quot;TN1Shape_bin3&quot;] = EventCounter(&quot;TN1Shape_bin3&quot;);
+        _counters[&quot;TN2&quot;] = EventCounter(&quot;TN2&quot;);
+        _counters[&quot;TN3&quot;] = EventCounter(&quot;TN3&quot;);
+        _counters[&quot;BC1&quot;] = EventCounter(&quot;BC1&quot;);
+        _counters[&quot;BC2&quot;] = EventCounter(&quot;BC2&quot;);
+        _counters[&quot;BC3&quot;] = EventCounter(&quot;BC3&quot;);
+
+        NCUTS = 41;
+
+
+        set_analysis_name(&quot;ATLAS_8TeV_1LEPStop_20invfb&quot;);
+        set_detector_name(detector);
+        set_luminosity(20.7);
 
         for(int i=0;i&lt;NCUTS;i++){
           cutFlowVector.push_back(0);
@@ -132,9 +140,9 @@ namespace Gambit {
         if(nTrueBJets&lt;2)return results;
 
 
-    HEPUtils::P4 jet1B, jet2B;
-    jet1B.setXYZE(trueBjet1-&gt;mom().px(), trueBjet1-&gt;mom().py(), trueBjet1-&gt;mom().pz(), trueBjet1-&gt;E());
-    jet2B.setXYZE(trueBjet2-&gt;mom().px(), trueBjet2-&gt;mom().py(), trueBjet2-&gt;mom().pz(), trueBjet2-&gt;E());
+        HEPUtils::P4 jet1B, jet2B;
+        jet1B.setXYZE(trueBjet1-&gt;mom().px(), trueBjet1-&gt;mom().py(), trueBjet1-&gt;mom().pz(), trueBjet1-&gt;E());
+        jet2B.setXYZE(trueBjet2-&gt;mom().px(), trueBjet2-&gt;mom().py(), trueBjet2-&gt;mom().pz(), trueBjet2-&gt;E());
 
 
         HEPUtils::P4 leptontmp;
@@ -149,12 +157,12 @@ namespace Gambit {
         }
 
 
-    HEPUtils::P4 lepton;
-    lepton.setXYZE(leptontmp.px(),leptontmp.py(),leptontmp.pz(),leptontmp.E());
+        HEPUtils::P4 lepton;
+        lepton.setXYZE(leptontmp.px(),leptontmp.py(),leptontmp.pz(),leptontmp.E());
 
 
-    HEPUtils::P4 lepton_plus_jet1B;
-    HEPUtils::P4 lepton_plus_jet2B;
+        HEPUtils::P4 lepton_plus_jet1B;
+        HEPUtils::P4 lepton_plus_jet2B;
 
         lepton_plus_jet1B = lepton+jet1B;
         lepton_plus_jet2B = lepton+jet2B;
@@ -195,8 +203,8 @@ namespace Gambit {
           }
 
 
-      HEPUtils::P4 jet3B;
-      jet3B.setXYZE(jet3-&gt;mom().px(), jet3-&gt;mom().py(), jet3-&gt;mom().pz(), jet3-&gt;mom().E());
+          HEPUtils::P4 jet3B;
+          jet3B.setXYZE(jet3-&gt;mom().px(), jet3-&gt;mom().py(), jet3-&gt;mom().pz(), jet3-&gt;mom().E());
 
           double pa_tau[3] = { 0, jet3B.px(), jet3B.py() };
           double pb_tau[3] = { 0, lepton.px(), lepton.py() };
@@ -234,7 +242,7 @@ namespace Gambit {
         }
 
         // Apply electron efficiency
-        ATLAS::applyElectronEff(baselineElectrons);
+        applyEfficiency(baselineElectrons, ATLAS::eff2DEl.at(&quot;Generic&quot;));
 
         // Now define vector of baseline muons
         vector&lt;const HEPUtils::Particle*&gt; baselineMuons;
@@ -244,7 +252,7 @@ namespace Gambit {
         }
 
         // Apply muon efficiency
-        ATLAS::applyMuonEff(baselineMuons);
+        applyEfficiency(baselineMuons, ATLAS::eff2DMu.at(&quot;Generic&quot;));
 
         // Get b jets with efficiency and mistag (fake) rates
         vector&lt;const HEPUtils::Jet*&gt; baselineJets, bJets; // trueBJets; //for debugging
@@ -294,7 +302,8 @@ namespace Gambit {
 
         // Calculate common variables and cuts first
 
-        ATLAS::applyTightIDElectronSelection(signalElectrons);
+        applyEfficiency(signalElectrons, ATLAS::eff2DEl.at(&quot;ATLAS_CONF_2014_032_Tight&quot;));
+
 
         int nElectrons = signalElectrons.size();
         int nMuons = signalMuons.size();
@@ -415,12 +424,12 @@ namespace Gambit {
           for(int jJet=0;jJet&lt;nJets;jJet++){
             if(iJet != jJet){
 
-          HEPUtils::P4 iJetVec;
-          iJetVec.setXYZE(signalJets[iJet]-&gt;mom().px(),signalJets[iJet]-&gt;mom().py(),signalJets[iJet]-&gt;mom().pz(),signalJets[iJet]-&gt;E());
+              HEPUtils::P4 iJetVec;
+              iJetVec.setXYZE(signalJets[iJet]-&gt;mom().px(),signalJets[iJet]-&gt;mom().py(),signalJets[iJet]-&gt;mom().pz(),signalJets[iJet]-&gt;E());
 
 
-          HEPUtils::P4 jJetVec;
-          jJetVec.setXYZE(signalJets[jJet]-&gt;mom().px(),signalJets[jJet]-&gt;mom().py(),signalJets[jJet]-&gt;mom().pz(),signalJets[jJet]-&gt;E());
+              HEPUtils::P4 jJetVec;
+              jJetVec.setXYZE(signalJets[jJet]-&gt;mom().px(),signalJets[jJet]-&gt;mom().py(),signalJets[jJet]-&gt;mom().pz(),signalJets[jJet]-&gt;E());
 
               if(iJetVec.deltaR_eta(jJetVec) &lt; mindR1 &amp;&amp; (iJetVec+jJetVec).m() &gt; 60.){
                 mindR1 =iJetVec.deltaR_eta(jJetVec);
@@ -436,16 +445,16 @@ namespace Gambit {
             if(kJet !=index1 &amp;&amp; kJet !=index2){
 
 
-          HEPUtils::P4 kJetVec;
-          kJetVec.setXYZE(signalJets[kJet]-&gt;mom().px(),signalJets[kJet]-&gt;mom().py(),signalJets[kJet]-&gt;mom().pz(),signalJets[kJet]-&gt;E());
+              HEPUtils::P4 kJetVec;
+              kJetVec.setXYZE(signalJets[kJet]-&gt;mom().px(),signalJets[kJet]-&gt;mom().py(),signalJets[kJet]-&gt;mom().pz(),signalJets[kJet]-&gt;E());
 
 
-          HEPUtils::P4 JetVec1;
-          JetVec1.setXYZE(signalJets[index1]-&gt;mom().px(),signalJets[index1]-&gt;mom().py(),signalJets[index1]-&gt;mom().pz(),signalJets[index1]-&gt;E());
+              HEPUtils::P4 JetVec1;
+              JetVec1.setXYZE(signalJets[index1]-&gt;mom().px(),signalJets[index1]-&gt;mom().py(),signalJets[index1]-&gt;mom().pz(),signalJets[index1]-&gt;E());
 
 
-          HEPUtils::P4 JetVec2;
-          JetVec2.setXYZE(signalJets[index2]-&gt;mom().px(),signalJets[index2]-&gt;mom().py(),signalJets[index2]-&gt;mom().pz(),signalJets[index2]-&gt;E());
+              HEPUtils::P4 JetVec2;
+              JetVec2.setXYZE(signalJets[index2]-&gt;mom().px(),signalJets[index2]-&gt;mom().py(),signalJets[index2]-&gt;mom().pz(),signalJets[index2]-&gt;E());
 
 
               if(kJetVec.deltaR_eta(JetVec1+JetVec2)&lt;mindR2 &amp;&amp; (JetVec1+JetVec2+kJetVec).m() &gt; 130.){
@@ -458,14 +467,14 @@ namespace Gambit {
         }
         if(Thad){
 
-      HEPUtils::P4 JetVec1;
-      JetVec1.setXYZE(signalJets[index1]-&gt;mom().px(),signalJets[index1]-&gt;mom().py(),signalJets[index1]-&gt;mom().pz(),signalJets[index1]-&gt;E());
+          HEPUtils::P4 JetVec1;
+          JetVec1.setXYZE(signalJets[index1]-&gt;mom().px(),signalJets[index1]-&gt;mom().py(),signalJets[index1]-&gt;mom().pz(),signalJets[index1]-&gt;E());
 
-      HEPUtils::P4 JetVec2;
-      JetVec2.setXYZE(signalJets[index2]-&gt;mom().px(),signalJets[index2]-&gt;mom().py(),signalJets[index2]-&gt;mom().pz(),signalJets[index2]-&gt;E());
+          HEPUtils::P4 JetVec2;
+          JetVec2.setXYZE(signalJets[index2]-&gt;mom().px(),signalJets[index2]-&gt;mom().py(),signalJets[index2]-&gt;mom().pz(),signalJets[index2]-&gt;E());
 
-      HEPUtils::P4 JetVec3;
-      JetVec3.setXYZE(signalJets[index3]-&gt;mom().px(),signalJets[index3]-&gt;mom().py(),signalJets[index3]-&gt;mom().pz(),signalJets[index3]-&gt;E());
+          HEPUtils::P4 JetVec3;
+          JetVec3.setXYZE(signalJets[index3]-&gt;mom().px(),signalJets[index3]-&gt;mom().py(),signalJets[index3]-&gt;mom().pz(),signalJets[index3]-&gt;E());
 
 
           mHadTop = (JetVec1+JetVec2+JetVec3).m();
@@ -658,7 +667,6 @@ namespace Gambit {
         }
 
         //We're now ready to apply the cuts for each signal region
-        //_numTN1Shape_bin1, _numTN1Shape_bin2, _numTN1Shape_bin3,_numTN2, _numTN3, _numBC1, _numBC2, _numBC3;
 
         //Do the three bins of the TN1 shape fit
         if(dphi_jetmet1&gt;0.8 &amp;&amp;
@@ -668,9 +676,9 @@ namespace Gambit {
            passHadTop &amp;&amp;
            nBjets &gt;= 1 &amp;&amp;
            bJets[0]-&gt;pT()&gt;25.){
-          if(met&gt;100. &amp;&amp; met&lt;125.) _numTN1Shape_bin1 += event-&gt;weight();
-          if(met&gt;125. &amp;&amp; met&lt;150.) _numTN1Shape_bin2 += event-&gt;weight();
-          if(met&gt;150.) _numTN1Shape_bin3 += event-&gt;weight();
+          if(met&gt;100. &amp;&amp; met&lt;125.) _counters[&quot;TN1Shape_bin1&quot;].add_event(event);
+          if(met&gt;125. &amp;&amp; met&lt;150.) _counters[&quot;TN1Shape_bin2&quot;].add_event(event);
+          if(met&gt;150.) _counters[&quot;TN1Shape_bin3&quot;].add_event(event);
         }
 
         //We're now ready to apply the cuts for each signal region
@@ -686,9 +694,9 @@ namespace Gambit {
              nBjets &gt;= 1 &amp;&amp;
              bJets[0]-&gt;pT()&gt;25.){
 
-            if(met&gt;100. &amp;&amp; met&lt;125.) _numTN1Shape_bin1 += event-&gt;weight();
-            if(met&gt;125. &amp;&amp; met&lt;150.) _numTN1Shape_bin2 += event-&gt;weight();
-            if(met&gt;150.) _numTN1Shape_bin3 += event-&gt;weight();
+            if(met&gt;100. &amp;&amp; met&lt;125.) _counters[&quot;TN1Shape_bin1&quot;].add_event(event);
+            if(met&gt;125. &amp;&amp; met&lt;150.) _counters[&quot;TN1Shape_bin2&quot;].add_event(event);
+            if(met&gt;150.) _counters[&quot;TN1Shape_bin3&quot;].add_event(event);
           }
         }
 
@@ -700,7 +708,7 @@ namespace Gambit {
              mT&gt;140. &amp;&amp;
              amt2&gt;170. &amp;&amp;
              passHadTop &amp;&amp;
-             bJets[0]-&gt;pT()&gt;25.) _numTN2 += event-&gt;weight();
+             bJets[0]-&gt;pT()&gt;25.) _counters[&quot;TN2&quot;].add_event(event);
         }
 
         //Do SRtN3
@@ -713,7 +721,7 @@ namespace Gambit {
              amt2&gt;175. &amp;&amp;
              mt2tau&gt;80. &amp;&amp;
              passHadTop &amp;&amp;
-             bJets[0]-&gt;pT()&gt;25.) _numTN3 += event-&gt;weight();
+             bJets[0]-&gt;pT()&gt;25.) _counters[&quot;TN3&quot;].add_event(event);
         }
 
         //Do SRbC1
@@ -723,7 +731,7 @@ namespace Gambit {
              met&gt;150. &amp;&amp;
              metOverSqrtHT&gt;7. &amp;&amp;
              mT&gt;120. &amp;&amp;
-             bJets[0]-&gt;pT()&gt;25.) _numBC1 += event-&gt;weight();
+             bJets[0]-&gt;pT()&gt;25.) _counters[&quot;BC1&quot;].add_event(event);
         }
 
         //Do SRbC2
@@ -737,7 +745,7 @@ namespace Gambit {
              amt2&gt;175. &amp;&amp;
              nBjets &gt;=2 &amp;&amp;
              bJets[0]-&gt;pT()&gt;100.&amp;&amp;
-             bJets[1]-&gt;pT()&gt;50) _numBC2 += event-&gt;weight();
+             bJets[1]-&gt;pT()&gt;50) _counters[&quot;BC2&quot;].add_event(event);
         }
 
         //Do SRbC3
@@ -751,32 +759,9 @@ namespace Gambit {
              amt2&gt;200. &amp;&amp;
              nBjets &gt;=2 &amp;&amp;
              bJets[0]-&gt;pT()&gt;120.&amp;&amp;
-             bJets[1]-&gt;pT()&gt;90) _numBC3 += event-&gt;weight();
+             bJets[1]-&gt;pT()&gt;90) _counters[&quot;BC3&quot;].add_event(event);
         }
         return;
-      }
-
-      /// Combine the variables of another copy of this analysis (typically on another thread) into this one.
-      void combine(const Analysis* other)
-      {
-        const Analysis_ATLAS_8TeV_1LEPStop_20invfb* specificOther
-                = dynamic_cast&lt;const Analysis_ATLAS_8TeV_1LEPStop_20invfb*&gt;(other);
-
-        if (NCUTS != specificOther-&gt;NCUTS) NCUTS = specificOther-&gt;NCUTS;
-        for (int j=0; j&lt;NCUTS; j++)
-        {
-          cutFlowVector[j] += specificOther-&gt;cutFlowVector.at(j);
-          cutFlowVector_str[j] = specificOther-&gt;cutFlowVector_str.at(j);
-          cutFlowVector_alt[j] += specificOther-&gt;cutFlowVector_alt.at(j);
-        }
-        _numTN1Shape_bin1 += specificOther-&gt;_numTN1Shape_bin1;
-        _numTN1Shape_bin2 += specificOther-&gt;_numTN1Shape_bin2;
-        _numTN1Shape_bin3 += specificOther-&gt;_numTN1Shape_bin3;
-        _numTN2 += specificOther-&gt;_numTN2;
-        _numTN3 += specificOther-&gt;_numTN3;
-        _numBC1 += specificOther-&gt;_numBC1;
-        _numBC2 += specificOther-&gt;_numBC2;
-        _numBC3 += specificOther-&gt;_numBC3;
       }
 
 
@@ -784,24 +769,22 @@ namespace Gambit {
         //Note: am not using shape fit bins
         //They need to be added (but will probably update to paper result)
 
-        // add_result(SignalRegionData(&quot;SR label&quot;, n_obs, {n_sig_MC, n_sig_MC_sys}, {n_bkg, n_bkg_err}));
+        // add_result(SignalRegionData(_counters[&quot;&quot;SR label&quot;&quot;], n_obs, {n_bkg, n_bkg_err}));
 
-        add_result(SignalRegionData(&quot;BC1&quot;, 456., {_numBC1, 0.}, {482., 76.}));
-        add_result(SignalRegionData(&quot;BC2&quot;, 25., {_numBC2, 0.}, {18., 5.}));
-        add_result(SignalRegionData(&quot;BC3&quot;, 6., {_numBC3, 0.}, {7., 3.}));
-        add_result(SignalRegionData(&quot;TN2&quot;, 14., {_numTN2, 0.}, {13., 3.}));
-        add_result(SignalRegionData(&quot;TN3&quot;, 7., {_numTN3, 0.}, {5., 2.}));
+        add_result(SignalRegionData(_counters[&quot;BC1&quot;], 456.,  {482., 76.}));
+        add_result(SignalRegionData(_counters[&quot;BC2&quot;], 25., {18., 5.}));
+        add_result(SignalRegionData(_counters[&quot;BC3&quot;], 6., {7., 3.}));
+        add_result(SignalRegionData(_counters[&quot;TN2&quot;], 14., {13., 3.}));
+        add_result(SignalRegionData(_counters[&quot;TN3&quot;], 7., {5., 2.}));
 
         return;
       }
 
 
     protected:
-      void analysis_specific_reset() {
-        _numTN1Shape_bin1 = 0; _numTN1Shape_bin2 = 0; _numTN1Shape_bin3 = 0;
-        _numTN2 = 0; _numTN3 = 0; _numBC1 = 0;
-        _numBC2 = 0; _numBC3 = 0;
-
+      void analysis_specific_reset()
+      {
+        for (auto&amp; pair : _counters) { pair.second.reset(); }
         std::fill(cutFlowVector.begin(), cutFlowVector.end(), 0);
       }
 
@@ -813,7 +796,7 @@ namespace Gambit {
 
   }
 }
-</code></pre><hr><p>Updated on 2025-02-12 at 16:10:35 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.d5e27a6ed00168b7a66eb637878a6be7d054db51d0e613bbcfda12ab0569b62177253b4e6453c477574b3a38f50eff49a68f0e19112bd82a68c78a66cd8d05df.js integrity="sha512-1eJ6btABaLembrY3h4pr59BU21HQ5hO7z9oSqwVptiF3JTtOZFPEd1dLOjj1Dv9Jpo8OGREr2Cpox4pmzY0F3w==" crossorigin=anonymous defer></script>
+</code></pre><hr><p>Updated on 2026-11-03 at 14:50:47 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.d5e27a6ed00168b7a66eb637878a6be7d054db51d0e613bbcfda12ab0569b62177253b4e6453c477574b3a38f50eff49a68f0e19112bd82a68c78a66cd8d05df.js integrity="sha512-1eJ6btABaLembrY3h4pr59BU21HQ5hO7z9oSqwVptiF3JTtOZFPEd1dLOjj1Dv9Jpo8OGREr2Cpox4pmzY0F3w==" crossorigin=anonymous defer></script>
 <script src=/js/highlight.min.9003483b4531b86467c8b801b1d5fc5439bb0d6bdb6c6a760a1b54abf37d6bbadf8423dbc81a3359c935c7705bb7d183b46131ba4a9c861b5d48e6a61501461a.js integrity="sha512-kANIO0UxuGRnyLgBsdX8VDm7DWvbbGp2ChtUq/N9a7rfhCPbyBozWck1x3Bbt9GDtGExukqchhtdSOamFQFGGg==" crossorigin=anonymous defer></script>
 <script src=/main.min.9342d29d0e3e250a2c03282306b766e004888dba0fd661a17d7b106655e013bf85733f086ad330e3df0929c713dd81c0ea835966fa92e4a1e38f7ea9680524ed.js integrity="sha512-k0LSnQ4+JQosAygjBrdm4ASIjboP1mGhfXsQZlXgE7+Fcz8IatMw498JKccT3YHA6oNZZvqS5KHjj36paAUk7Q==" crossorigin=anonymous defer></script>
-<script src=https://gambitbsm.org/index.min.03ab9c2e460a36904d0b1544581433f337b9e5e23e6798a396683f418d37e30979da1ab2a8ef201c110075d73ccb12f8cc2605c7d9723f99bef11ed7c8b97844.js integrity="sha512-A6ucLkYKNpBNCxVEWBQz8ze55eI+Z5ijlmg/QY034wl52hqyqO8gHBEAddc8yxL4zCYFx9lyP5m+8R7XyLl4RA==" crossorigin=anonymous defer></script></body></html>
+<script src=https://gambitbsm.org/index.min.3a8ee06d0c346f1fb70040b0fbcbaaacf335cb34023c408954406a05db2089fc2ca349119b9f7d68b9e7044e82b8fdc8bd9661b6ef8b118246c5a2079d7fa8e9.js integrity="sha512-Oo7gbQw0bx+3AECw+8uqrPM1yzQCPECJVEBqBdsgifwso0kRm599aLnnBE6CuP3IvZZhtu+LEYJGxaIHnX+o6Q==" crossorigin=anonymous defer></script></body></html>

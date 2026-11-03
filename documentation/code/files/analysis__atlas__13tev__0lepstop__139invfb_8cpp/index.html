@@ -1,0 +1,952 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="ie=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><link rel=preload as=font href=https://gambitbsm.org/fonts/vendor/jost/jost-v4-latin-regular.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://gambitbsm.org/fonts/vendor/jost/jost-v4-latin-500.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://gambitbsm.org/fonts/vendor/jost/jost-v4-latin-700.woff2 type=font/woff2 crossorigin><script>(()=>{var e=localStorage.getItem("theme");e==="dark"&&document.documentElement.setAttribute("data-dark-mode","")})()</script><link rel=stylesheet href=https://gambitbsm.org/main.c1f0838e2cac2d5bb45c4f51eac5017d94b53e71f279f5ef925be54abda180b5ad4c9a5384f3c141e772c408e3f24bd9c50c11e6b79424a45ac99a0d112b5f29.css integrity="sha512-wfCDjiysLVu0XE9R6sUBfZS1PnHyefXvklvlSr2hgLWtTJpThPPBQedyxAjj8kvZxQwR5reUJKRayZoNEStfKQ==" crossorigin=anonymous><noscript><style>img.lazyload{display:none}</style></noscript><meta name=robots content="index, follow"><meta name=googlebot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><meta name=bingbot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><title>file analyses/Analysis_ATLAS_13TeV_0LEPStop_139invfb.cpp - GAMBIT</title><meta name=description content="[No description available]"><link rel=canonical href=https://gambitbsm.org/documentation/code/files/analysis__atlas__13tev__0lepstop__139invfb_8cpp/><meta property="og:locale" content="en_US"><meta property="og:type" content="article"><meta property="og:title" content="file analyses/Analysis_ATLAS_13TeV_0LEPStop_139invfb.cpp"><meta property="og:description" content="[No description available]"><meta property="og:url" content="https://gambitbsm.org/documentation/code/files/analysis__atlas__13tev__0lepstop__139invfb_8cpp/"><meta property="og:site_name" content="GAMBIT"><meta property="og:image" content="https://gambitbsm.org/gambit_logo.png"><meta property="og:image:alt" content="GAMBIT"><meta name=twitter:card content="summary_large_image"><meta name=twitter:site content><meta name=twitter:creator content><meta name=twitter:title content="file analyses/Analysis_ATLAS_13TeV_0LEPStop_139invfb.cpp"><meta name=twitter:description content="[No description available]"><meta name=twitter:image content="https://gambitbsm.org/gambit_logo.png"><meta name=twitter:image:alt content="file analyses/Analysis_ATLAS_13TeV_0LEPStop_139invfb.cpp"><script type=application/ld+json>{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://gambitbsm.org/#/schema/organization/1","name":"Doks","url":"https://gambitbsm.org/","sameAs":["https://github.com/GambitBSM"],"logo":{"@type":"ImageObject","@id":"https://gambitbsm.org/#/schema/image/1","url":"https://gambitbsm.org/logo-doks.png","width":450,"height":416,"caption":"Doks"},"image":{"@id":"https://gambitbsm.org/#/schema/image/1"}},{"@type":"WebSite","@id":"https://gambitbsm.org/#/schema/website/1","url":"https://gambitbsm.org/","name":"GAMBIT","description":"Documentation for GAMBIT, the Global And Modular BSM Inference Tool","publisher":{"@id":"https://gambitbsm.org/#/schema/organization/1"}},{"@type":"WebPage","@id":"https://gambitbsm.org/documentation/code/files/analysis__atlas__13tev__0lepstop__139invfb_8cpp/","url":"https://gambitbsm.org/documentation/code/files/analysis__atlas__13tev__0lepstop__139invfb_8cpp/","name":"file analyses\/Analysis_ATLAS_13TeV_0LEPStop_139invfb.cpp","description":"[No description available]","isPartOf":{"@id":"https://gambitbsm.org/#/schema/website/1"},"about":{"@id":"https://gambitbsm.org/#/schema/organization/1"},"datePublished":"0001-01-01T00:00:00CET","dateModified":"0001-01-01T00:00:00CET","breadcrumb":{"@id":"https://gambitbsm.org/documentation/code/files/analysis__atlas__13tev__0lepstop__139invfb_8cpp/#/schema/breadcrumb/1"},"primaryImageOfPage":{"@id":"https://gambitbsm.org/documentation/code/files/analysis__atlas__13tev__0lepstop__139invfb_8cpp/#/schema/image/2"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://gambitbsm.org/documentation/code/files/analysis__atlas__13tev__0lepstop__139invfb_8cpp/"]}]},{"@type":"BreadcrumbList","@id":"https://gambitbsm.org/documentation/code/files/analysis__atlas__13tev__0lepstop__139invfb_8cpp/#/schema/breadcrumb/1","name":"Breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"https://gambitbsm.org/","url":"https://gambitbsm.org/","name":"Home"}},{"@type":"ListItem","position":2,"item":{"@type":"WebPage","@id":"https://gambitbsm.org/documentation/","url":"https://gambitbsm.org/documentation/","name":"Documentation"}},{"@type":"ListItem","position":3,"item":{"@type":"WebPage","@id":"https://gambitbsm.org/documentation/code/","url":"https://gambitbsm.org/documentation/code/","name":"Code"}},{"@type":"ListItem","position":4,"item":{"@type":"WebPage","@id":"https://gambitbsm.org/documentation/code/files/","url":"https://gambitbsm.org/documentation/code/files/","name":"Files"}},{"@type":"ListItem","position":5,"item":{"@id":"https://gambitbsm.org/documentation/code/files/analysis__atlas__13tev__0lepstop__139invfb_8cpp/"}}]},{"@context":"https://schema.org","@graph":[{"@type":"ImageObject","@id":"https://gambitbsm.org/documentation/code/files/analysis__atlas__13tev__0lepstop__139invfb_8cpp/#/schema/image/2","url":"https://gambitbsm.org/gambit_logo.png","contentUrl":"https://gambitbsm.org/gambit_logo.png","caption":"file analyses\/Analysis_ATLAS_13TeV_0LEPStop_139invfb.cpp"}]}]}</script><meta name=theme-color content="#fff"><link rel=icon href=https://gambitbsm.org/favicon.ico sizes=any><link rel=icon type=image/svg+xml href=https://gambitbsm.org/favicon.svg><link rel=apple-touch-icon sizes=180x180 href=https://gambitbsm.org/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=https://gambitbsm.org/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=https://gambitbsm.org/favicon-16x16.png><link rel=manifest crossorigin=use-credentials href=https://gambitbsm.org/site.webmanifest></head><body class="documentation single light"><div class=sticky-top><div class=header-bar></div><header class="navbar navbar-expand-md navbar-light doks-navbar"><nav class="container-xxl flex-wrap flex-md-nowrap" aria-label="Main navigation"><a class="navbar-brand p-0 me-auto" href=https://gambitbsm.org/ aria-label=GAMBIT><img class=logo-light src=https://gambitbsm.org/gambit_logo.png width=50px>
+<img class="logo-dark d-none" src=https://gambitbsm.org/gambit_logo.png width=50px>
+GAMBIT</a>
+<button class="btn btn-menu order-2 d-block d-lg-none" type=button data-bs-toggle=offcanvas data-bs-target=#offcanvasDoks aria-controls=offcanvasDoks aria-label="Open main menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button><div class="offcanvas offcanvas-end border-0 py-lg-1" tabindex=-1 id=offcanvasDoks data-bs-backdrop=true aria-labelledby=offcanvasDoksLabel><div class="header-bar d-lg-none"></div><div class="offcanvas-header d-lg-none"><h2 class="h5 offcanvas-title ps-2" id=offcanvasDoksLabel><a class=text-dark href=/>GAMBIT</a></h2><button type=button class="btn-close text-reset me-2" data-bs-dismiss=offcanvas aria-label="Close main menu"></button></div><div class="offcanvas-body p-4 p-lg-0"><ul class="nav flex-column flex-lg-row align-items-lg-center mt-2 mt-lg-0 ms-lg-2 me-lg-auto"><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Releases
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit/tree/release_2.7>GAMBIT 2-7 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.6>GAMBIT 2-6 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.5>GAMBIT 2-5 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.4>GAMBIT 2-4 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.3>GAMBIT 2-3 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.2>GAMBIT 2-2 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.1>GAMBIT 2-1 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_light_1.0>GAMBIT Light ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit/tags>All releases ⧉</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Documentation
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=/documentation/installation/introduction/>Installation</a></li><li><a class=dropdown-item href=/documentation/physics/analyses>Physics</a></li><li><a class=dropdown-item href=/documentation/tutorials/the_gambit_interface>Tutorials</a></li><li><a class=dropdown-item href=/documentation/help/common_problems_and_questions/>Help</a></li><li><a class=dropdown-item href=/documentation/code/index_classes>Code Reference</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Community
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=https://github.com/GambitBSM/wiki>Wiki</a></li><li><a class=dropdown-item href=/community/publications/>Publications</a></li><li><a class=dropdown-item href=/community/talks/>Talks</a></li><li><a class=dropdown-item href=/community/members/>Members</a></li><li><a class=dropdown-item href=/community/code_of_conduct/>Code of Conduct</a></li><li><a class=dropdown-item href=/community/contact/>Contact</a></li></ul></li></ul><hr class="text-black-50 my-4 d-lg-none"><form class="doks-search position-relative flex-grow-1 ms-lg-auto me-lg-2"><input id=search class="form-control is-search" type=search placeholder="Search site..." aria-label="Search site..." autocomplete=off><div id=suggestions class="shadow bg-white rounded d-none"></div></form><hr class="text-black-50 my-4 d-lg-none"><ul class="nav flex-column flex-lg-row"><li class=nav-item><a class="nav-link social-link" href=https://github.com/GambitBSM><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37.0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44.0 0020 4.77 5.07 5.07.0 0019.91 1S18.73.65 16 2.48a13.38 13.38.0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07.0 005 4.77 5.44 5.44.0 003.5 8.55c0 5.42 3.3 6.61 6.44 7A3.37 3.37.0 009 18.13V22"/></svg><small class="ms-2 d-lg-none">GitHub</small></a></li></ul><hr class="text-black-50 my-4 d-lg-none"><button id=mode class="btn btn-link" type=button aria-label="Toggle user interface mode">
+<span class=toggle-dark><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg></span><span class=toggle-light><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></span></button></div></div></nav></header></div><div class="wrap container-xxl" role=document><div class=content><div class="row flex-xl-nowrap"><div class="col-lg-5 col-xl-4 docs-sidebar"><nav class=docs-links aria-label="Main navigation"><ul class="list-unstyled collapsible-sidebar"><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-installation aria-expanded=false>
+Installation</button><div class=collapse id=section-installation><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/installation/introduction/>Getting Started</a></li><li><a class="docs-link rounded" href=/documentation/installation/docker_usage/>Docker Usage</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_linux/>Installation for Linux</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_windows/>Installation for Windows</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_macos/>Installation for macOS</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-tutorials aria-expanded=false>
+Tutorials</button><div class=collapse id=section-tutorials><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/tutorials/the_gambit_interface/>1 - The GAMBIT Interface</a></li><li><a class="docs-link rounded" href=/documentation/tutorials/in_person_tutorials/>In person tutorials</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-physics aria-expanded=false>
+Physics</button><div class=collapse id=section-physics><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/physics/analyses/>ColliderBit analysis</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-help aria-expanded=false>
+Help</button><div class=collapse id=section-help><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/help/common_problems_and_questions/>Common Problems and Questions</a></li><li><a class="docs-link rounded" href=/documentation/help/compiler_matrix/>Compiler Matrix</a></li><li><a class="docs-link rounded" href=/documentation/help/known_issues/>Known Issues</a></li><li><a class="docs-link rounded" href=/documentation/help/configuration_examples/>Configuration Examples</a></li><li><a class="docs-link rounded" href=/documentation/help/support/>Support</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-code aria-expanded=false>
+Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/code/index_classes/>Classes</a></li><li><a class="docs-link rounded" href=/documentation/code/index_files/>Files</a></li><li><a class="docs-link rounded" href=/documentation/code/index_pages/>Pages</a></li><li><a class="docs-link rounded" href=/documentation/code/index_namespaces/>Namespaces</a></li></ul></div></li></ul></nav></div><nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation"><div class=d-xl-none><button class="btn btn-outline-primary btn-sm doks-toc-toggle collapsed" type=button data-bs-toggle=collapse data-bs-target=#onThisPage aria-controls=doks-docs-nav aria-expanded=false aria-label="Toggle On this page navigation">
+<span>On this page</span>
+<span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg></span></button><div class=collapse id=onThisPage><div class="card card-body mt-3 py-1"><div class=page-links><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#classes>Classes</a></li><li><a href=#source-code>Source code</a></li></ul></nav></div></div></div></div><div class="page-links d-none d-xl-block"><h3>On this page</h3><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#classes>Classes</a></li><li><a href=#source-code>Source code</a></li></ul></nav></div></nav><main class="docs-content col-lg-11 col-xl-9 mx-xl-auto"><nav aria-label=breadcrumb><ol class=breadcrumb><li class=breadcrumb-item><a href=/>Home</a></li><li class=breadcrumb-item><a href=/documentation/>Documentation</a></li><li class=breadcrumb-item><a href=/documentation/code/>Code Reference</a></li><li class="breadcrumb-item active" aria-current=page>file analyses/Analysis_ATLAS_13TeV_0LEPStop_139invfb.cpp</li></ol></nav><p class=lead></p><h1 id=file-analyses-analysis-atlas-13tev-0lepstop-139invfb-cpp>file analyses/Analysis_ATLAS_13TeV_0LEPStop_139invfb.cpp <a href=#file-analyses-analysis-atlas-13tev-0lepstop-139invfb-cpp class=anchor aria-hidden=true>#</a></h1><p>[No description available]</p><h2 id=namespaces>Namespaces <a href=#namespaces class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th>Name</th></tr></thead><tbody><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit/>Gambit</a></strong><br>TODO: see if we can use this one:</td></tr><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit_1_1colliderbit/>Gambit::ColliderBit</a></strong></td></tr></tbody></table><h2 id=classes>Classes <a href=#classes class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th></th><th>Name</th></tr></thead><tbody><tr><td>class</td><td><strong><a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__0lepstop__139invfb/>Gambit::ColliderBit::Analysis_ATLAS_13TeV_0LEPStop_139invfb</a></strong></td></tr><tr><td>struct</td><td><strong><a href=/documentation/code/classes/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__0lepstop__139invfb_1_1ptcomparison/>Gambit::ColliderBit::Analysis_ATLAS_13TeV_0LEPStop_139invfb::ptComparison</a></strong></td></tr><tr><td>struct</td><td><strong><a href=/documentation/code/classes/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__0lepstop__139invfb_1_1ptjetcomparison/>Gambit::ColliderBit::Analysis_ATLAS_13TeV_0LEPStop_139invfb::ptJetComparison</a></strong></td></tr></tbody></table><h2 id=source-code>Source code <a href=#source-code class=anchor aria-hidden=true>#</a></h2><pre><code>#include &quot;gambit/cmake/cmake_variables.hpp&quot;
+#include &quot;gambit/Utils/threadsafe_rng.hpp&quot;
+#include &quot;gambit/ColliderBit/analyses/Analysis.hpp&quot;
+#include &quot;gambit/ColliderBit/ATLASEfficiencies.hpp&quot;
+#include &quot;gambit/ColliderBit/mt2_bisect.h&quot;
+#include &quot;METSignificance/METSignificance.hpp&quot;
+#include &quot;HEPUtils/FastJet.h&quot;
+#include &lt;random&gt;
+#include &lt;cmath&gt;
+
+
+using namespace std;
+// #define CHECK_CUTFLOW
+
+/* The ATLAS 0 lepton direct stop analysis
+
+   Based on: https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/SUSY-2018-12/
+
+   Code by Martin White (based on ATLAS public code snippet on HepData)
+   Validation by Pengxuan Zhu
+
+   Note: RJR regions will be coded up in a separate file
+
+*/
+
+namespace Gambit
+{
+  namespace ColliderBit
+  {
+
+    // Need two different functions here for use with std::sort
+    //bool sortByPT(const HEPUtils::Jet* jet1, const HEPUtils::Jet* jet2) { return (jet1-&gt;pT() &gt; jet2-&gt;pT()); }
+    //bool sortByPT_sharedptr(std::shared_ptr&lt;HEPUtils::Jet&gt; jet1, std::shared_ptr&lt;HEPUtils::Jet&gt; jet2) { return sortByPT(jet1.get(), jet2.get()); }
+
+    bool sortByPT0l(const HEPUtils::Jet* jet1, const HEPUtils::Jet* jet2) { return (jet1-&gt;pT() &gt; jet2-&gt;pT()); }
+    bool sortByPT0l_sharedptr(std::shared_ptr&lt;HEPUtils::Jet&gt; jet1, std::shared_ptr&lt;HEPUtils::Jet&gt; jet2) { return sortByPT0l(jet1.get(), jet2.get()); }
+
+    class Analysis_ATLAS_13TeV_0LEPStop_139invfb : public Analysis
+    {
+
+    private:
+
+    public:
+
+      // Required detector sim
+      static constexpr const char* detector = &quot;ATLAS&quot;;
+
+
+      void muJetSpecialOverlapRemoval(vector&lt;const HEPUtils::Jet*&gt; &amp;jetvec, vector&lt;const HEPUtils::Particle*&gt; &amp;lepvec)
+      {
+
+        vector&lt;const HEPUtils::Jet*&gt; Survivors;
+
+        for(unsigned int itjet = 0; itjet &lt; jetvec.size(); itjet++)
+        {
+          bool overlap = false;
+          HEPUtils::P4 jetmom=jetvec.at(itjet)-&gt;mom();
+          for(unsigned int itlep = 0; itlep &lt; lepvec.size(); itlep++)
+          {
+            HEPUtils::P4 lepmom=lepvec.at(itlep)-&gt;mom();
+            double dR;
+
+            dR=jetmom.deltaR_eta(lepmom);
+
+            double DeltaRMax = 0.;
+            if(lepmom.pT()/jetmom.pT()&gt;0.5) DeltaRMax = 0.2;
+            if(fabs(dR) &lt;= DeltaRMax) overlap=true;
+          }
+          if(overlap) continue;
+          Survivors.push_back(jetvec.at(itjet));
+        }
+        jetvec=Survivors;
+
+        return;
+
+      }
+
+
+      struct ptComparison
+      {
+        bool operator() (const HEPUtils::Particle* i,const HEPUtils::Particle* j) {return (i-&gt;pT()&gt;j-&gt;pT());}
+      } comparePt;
+
+      struct ptJetComparison
+      {
+        bool operator() (const HEPUtils::Jet* i,const HEPUtils::Jet* j) {return (i-&gt;pT()&gt;j-&gt;pT());}
+      } compareJetPt;
+
+
+      Analysis_ATLAS_13TeV_0LEPStop_139invfb()
+      {
+
+        set_analysis_name(&quot;ATLAS_13TeV_0LEPStop_139invfb&quot;);
+        set_detector_name(detector);
+        set_luminosity(139.);
+
+        _counters = {
+          //{&quot;SRA&quot;, EventCounter(&quot;SRA&quot;)},
+          {&quot;SRATT&quot;, EventCounter(&quot;SRATT&quot;)},
+          {&quot;SRATW&quot;, EventCounter(&quot;SRATW&quot;)},
+          {&quot;SRAT0&quot;, EventCounter(&quot;SRAT0&quot;)},
+          {&quot;SRBTT&quot;, EventCounter(&quot;SRBTT&quot;)},
+          {&quot;SRBTW&quot;, EventCounter(&quot;SRBTW&quot;)},
+          {&quot;SRBT0&quot;, EventCounter(&quot;SRBT0&quot;)},
+          {&quot;SRD0&quot;, EventCounter(&quot;SRD0&quot;)},
+          {&quot;SRD1&quot;, EventCounter(&quot;SRD1&quot;)},
+          {&quot;SRD2&quot;, EventCounter(&quot;SRD2&quot;)},
+        };
+
+        #ifdef CHECK_CUTFLOW
+        _cutflows.addCutflow(&quot;SRATT&quot;,
+          {&quot;MET &gt; 250.&quot;,
+           &quot;njets &gt;= 4&quot;,
+           &quot;nbjets &gt;=2&quot;,
+           &quot;Lepton veto&quot;,
+           &quot;pT j4 &gt; 40 GeV&quot;,
+           &quot;pT j2 &gt; 80 GeV&quot;,
+           &quot;|dPhi(pT1-4, MET)| &gt; 0.4&quot;,
+           &quot;Pass MET trigger&quot;,
+           &quot;S &gt; 5&quot;,
+           &quot;mTbmin &gt; 50 GeV&quot;,
+           &quot;tau veto&quot;,
+           &quot;mTbmin &gt; 200 GeV&quot;,
+           &quot;m1(R=1.2) &gt; 120 GeV&quot;,
+           &quot;m2(R=1.2) &gt; 120 GeV&quot;,
+           &quot;mT2, chi^2 &gt; 450 GeV&quot;,
+           &quot;m1(R=0.8) &gt; 60 GeV&quot;,
+           &quot;S &gt; 25&quot;,
+           &quot;j1(R=1.2)&quot;,
+           &quot;j2(R=1.2)&quot;,
+           &quot;deltaR(b1.b2) &gt; 1&quot;,});
+
+        _cutflows.addCutflow(&quot;SRATW&quot;,
+          {&quot;MET &gt; 250.&quot;,
+           &quot;njets &gt;= 4&quot;,
+           &quot;nbjets &gt;=2&quot;,
+           &quot;Lepton veto&quot;,
+           &quot;pT j4 &gt; 40 GeV&quot;,
+           &quot;pT j2 &gt; 80 GeV&quot;,
+           &quot;|dPhi(pT1-4, MET)| &gt; 0.4&quot;,
+           &quot;Pass MET trigger&quot;,
+           &quot;S &gt; 5&quot;,
+           &quot;mTbmin &gt; 50 GeV&quot;,
+           &quot;tau veto&quot;,
+           &quot;mTbmin &gt; 200 GeV&quot;,
+           &quot;m1(R=1.2) &gt; 120 GeV&quot;,
+           &quot;m2(R=1.2) &gt; 60 GeV&quot;,
+           &quot;m2(R=1.2) &lt; 120 GeV&quot;,
+           &quot;mT2, chi^2 &gt; 450 GeV&quot;,
+           &quot;m1(R=0.8) &gt; 60 GeV&quot;,
+           &quot;S &gt; 25&quot;,
+           &quot;j1(R=1.2)&quot;,});
+
+        _cutflows.addCutflow(&quot;SRAT0&quot;,
+          {&quot;MET &gt; 250.&quot;,
+           &quot;njets &gt;= 4&quot;,
+           &quot;nbjets &gt;=2&quot;,
+           &quot;Lepton veto&quot;,
+           &quot;pT j4 &gt; 40 GeV&quot;,
+           &quot;pT j2 &gt; 80 GeV&quot;,
+           &quot;|dPhi(pT1-4, MET)| &gt; 0.4&quot;,
+           &quot;Pass MET trigger&quot;,
+           &quot;S &gt; 5&quot;,
+           &quot;mTbmin &gt; 50 GeV&quot;,
+           &quot;tau veto&quot;,
+           &quot;mTbmin &gt; 200 GeV&quot;,
+           &quot;m1(R=1.2) &gt; 120 GeV&quot;,
+           &quot;m2(R=1.2) &lt; 60 GeV&quot;,
+           &quot;mT2, chi^2 &gt; 450 GeV&quot;,
+           &quot;m1(R=0.8) &gt; 60 GeV&quot;,
+           &quot;S &gt; 25&quot;,
+           &quot;j1(R=1.2)&quot;,});
+
+        _cutflows.addCutflow(&quot;SRB&quot;,
+          {&quot;MET &gt; 250.&quot;,
+           &quot;njets &gt;= 4&quot;,
+           &quot;nbjets &gt;=2&quot;,
+           &quot;Lepton veto&quot;,
+           &quot;pT j4 &gt; 40 GeV&quot;,
+           &quot;pT j2 &gt; 80 GeV&quot;,
+           &quot;|dPhi(pT1-4, MET)| &gt; 0.4&quot;,
+           &quot;Pass MET trigger&quot;,
+           &quot;S &gt; 5&quot;,
+           &quot;mTbmin &gt; 50 GeV&quot;,
+           &quot;tau veto&quot;,
+           &quot;mTbmin &gt; 200 GeV&quot;,
+           &quot;mTbmax &gt; 200 GeV&quot;,
+           &quot;deltaR(b1.b2) &gt; 1.4&quot;,
+           &quot;m1(R=1.2) &gt; 120 GeV&quot;,
+           &quot;mT2, chi^2 &lt; 450 GeV&quot;,
+           &quot;S &gt; 14&quot;,
+           &quot;m2(R=1.2) &gt; 120 GeV (SRB-TT)&quot;,
+           &quot;60 &lt;= m2(R=1.2) &lt;= 120 GeV (SRB-TW)&quot;,
+           &quot;m2(R=1.2) &lt;60 GeV (SRB-T0)&quot;,});
+
+        _cutflows.addCutflow(&quot;SRD0&quot;,
+          {&quot;Leading jet tight cleaning&quot;,
+           &quot;Pass MET trigger&quot;,
+           &quot;MET &gt; 250.&quot;,
+           &quot;Lepton veto&quot;,
+           &quot;pT jISR &gt;= 250 GeV&quot;,
+           &quot;|dPhi(pTjISR, MET)| &gt; 2.4&quot;,
+           &quot;|dPhi(MET,pTmissTrack)| &lt; Pi/3&quot;,
+           &quot;ETmissTrack &gt; 30 GeV&quot;,
+           &quot;MET/Sqrt(HT) &gt;= 26 Sqrt(GeV)&quot;,
+           &quot;Nbtrack &gt; 0&quot;,
+           &quot;Nb == 0&quot;,
+           &quot;|dPhi(pT1btrack, pT2btrack)| &lt; 2.5&quot;,
+           &quot;pT1btrack &lt; 50&quot;,
+           &quot;|dPhi(pT1,1-4, pTjISR)| &lt; 1.2&quot;,
+           &quot;|dPhimin(pT1-4, MET)| &gt; 0.4&quot;,
+           &quot;max|dPhi(pTjISR, pTbtrack)| &gt; 2.2&quot;,
+           &quot;No track jet and jet overlap&quot;,});
+
+        _cutflows.addCutflow(&quot;SRD1&quot;,
+          {&quot;Leading jet tight cleaning&quot;,
+           &quot;Pass MET trigger&quot;,
+           &quot;MET &gt; 250.&quot;,
+           &quot;Lepton veto&quot;,
+           &quot;pT jISR &gt;= 250 GeV&quot;,
+           &quot;|dPhi(pTjISR, MET)| &gt; 2.4&quot;,
+           &quot;|dPhi(MET,pTmissTrack)| &lt; Pi/3&quot;,
+           &quot;ETmissTrack &gt; 30 GeV&quot;,
+           &quot;pT1btrack &gt; 10&quot;,
+           &quot;MET/Sqrt(HT) &gt;= 22 Sqrt(GeV)&quot;,
+           &quot;Nbtrack &gt; 0&quot;,
+           &quot;Nb == 1&quot;,
+           &quot;pT1btrack &lt; 40&quot;,
+           &quot;|dPhi(pTjISR, pT1b)| &gt; 2.2&quot;,
+           &quot;|eta1b| &lt; 1.6&quot;,
+           &quot;|dPhi(pT1,1-4, pTjISR)| &gt; 1.2&quot;,
+           &quot;No track jet and jet overlap&quot;,});
+
+        _cutflows.addCutflow(&quot;SRD2&quot;,
+          {&quot;Leading jet tight cleaning&quot;,
+           &quot;Pass MET trigger&quot;,
+           &quot;MET &gt; 250.&quot;,
+           &quot;Lepton veto&quot;,
+           &quot;pT jISR &gt;= 250 GeV&quot;,
+           &quot;|dPhi(pTjISR, MET)| &gt; 2.4&quot;,
+           &quot;|dPhi(MET,pTmissTrack)| &lt; Pi/3&quot;,
+           &quot;ETmissTrack &gt; 30 GeV&quot;,
+           &quot;MET/Sqrt(HT) &gt;= 22 Sqrt(GeV)&quot;,
+           &quot;Nb &gt;= 2&quot;,
+           &quot;|dPhi(pTjISR, pT1btrack)| &gt; 2.2&quot;,
+           &quot;|dPhi(pTjISR, pT2btrack)| &gt; 1.6&quot;,
+           &quot;pT1b &lt; 175&quot;,
+           &quot;pT1b &gt; 0&quot;,
+           &quot;|eta2b| &lt; 1.2&quot;, });
+
+        std::cout &lt;&lt; &quot;======= CutFlow ========&quot;
+            &lt;&lt; _cutflows[&quot;SRATT&quot;] &lt;&lt; std::endl;
+
+        #endif
+
+
+      }
+
+      void run(const HEPUtils::Event* event)
+      {
+        // std::cout &lt;&lt; &quot;Start New Events&quot; &lt;&lt; std::endl;
+
+        // Missing energy
+        HEPUtils::P4 metVec = event-&gt;missingmom();
+        double Met = event-&gt;met();
+
+        // Baseline electrons
+        vector&lt;const HEPUtils::Particle*&gt; baselineElectrons;
+        for (const HEPUtils::Particle* electron : event-&gt;electrons())
+        {
+          if (electron-&gt;pT() &gt; 4.5 &amp;&amp; electron-&gt;abseta() &lt; 2.47) baselineElectrons.push_back(electron);
+        }
+        // Apply electron efficiency
+        // Loose electron ID selection
+        applyEfficiency(baselineElectrons, ATLAS::eff1DEl.at(&quot;EGAM_2018_01_Recon&quot;));
+
+        //applyEfficiency(baselineElectrons, ATLAS::eff1DEl.at(&quot;eff1DEl_PERF_2017_01_ID_Loose&quot;));
+
+        // Baseline muons have satisfy &quot;medium&quot; criteria and have pT &gt; 3 GeV and |eta| &lt; 2.7
+        vector&lt;const HEPUtils::Particle*&gt; baselineMuons;
+        for (const HEPUtils::Particle* muon : event-&gt;muons())
+        {
+          if (muon-&gt;pT() &gt; 4.0 &amp;&amp; muon-&gt;abseta() &lt; 2.7) baselineMuons.push_back(muon);
+        }
+
+        // Apply muon efficiency
+        // Missing: &quot;Medium&quot; muon ID criteria
+        applyEfficiency(baselineMuons, ATLAS::eff2DMu.at(&quot;R2&quot;));
+        // applyEfficiency(baselineMuons, ATLAS::eff1DMu.at(&quot;MUON_2018_03_ID_Medium&quot;));
+
+        // Baseline jets
+        vector&lt;const HEPUtils::Jet*&gt; baselineJets;
+        for (const HEPUtils::Jet* jet : event-&gt;jets(&quot;antikt_R04&quot;))
+        {
+          if (jet-&gt;pT() &gt; 20. &amp;&amp; fabs(jet-&gt;eta()) &lt; 2.8 )
+            baselineJets.push_back(jet);
+        }
+
+        // Jets
+        vector&lt;const HEPUtils::Jet*&gt; bJets;
+        vector&lt;const HEPUtils::Jet*&gt; nonBJets;
+        vector&lt;const HEPUtils::Jet*&gt; trueBJets; //for debugging
+
+        // Taus
+        float MtTauCand = -1;
+        vector&lt;const HEPUtils::Particle*&gt; tauCands;
+        for (const HEPUtils::Particle* tau : event-&gt;taus())
+        {
+          if (tau-&gt;pT() &gt; 20. &amp;&amp; tau-&gt;abseta() &lt; 2.47) {
+            tauCands.push_back(tau);
+            // HEPUtils::Jet* newJet = new HEPUtils::Jet(tau-&gt;mom());
+            // nonBJets.push_back(newJet);
+            }
+        }
+        applyEfficiency(tauCands, ATLAS::effTau.at(&quot;R1&quot;));
+
+
+
+        // B-tag efficiencies
+        std::map&lt;const Jet*, bool&gt; analysisBtags = generateBTagsMap(baselineJets, 0.77, 0.10, 0.005);
+
+        const double accbtag = pow(0.7 / 0.77, 2);
+        std::random_device rd;
+        std::mt19937 gen(rd());
+        std::uniform_real_distribution&lt;&gt; dis(0.0, 1.0);
+        double randomNumber = dis(gen);
+        bool accbtag_SRA = randomNumber &lt; accbtag;
+
+        // Get b jets
+        /// @note We assume that b jets have previously been 100% tagged
+        // const std::vector&lt;double&gt;  a = {0,5.};
+        // const std::vector&lt;double&gt;  b = {0,110.};
+        // const std::vector&lt;double&gt; c = {0.77}; // set b-tag efficiency to 77%
+        // HEPUtils::BinnedFn2D&lt;double&gt; _eff2d(a,b,c);
+        for (const HEPUtils::Jet* jet : baselineJets)
+        {
+          bool hasTag = analysisBtags.at(jet);
+
+          if(hasTag &amp;&amp; fabs(jet-&gt;eta()) &lt; 2.5 &amp;&amp; jet-&gt;pT() &gt; 20.)
+          {
+            bJets.push_back(jet);
+          }
+          else
+          {
+            nonBJets.push_back(jet);
+          }
+        }
+
+        // Overlap removal
+        // Note: ATLAS uses rapidity rather than eta so this version is not 100% accurate
+        removeOverlap(baselineElectrons, baselineMuons, 0.01);
+
+        removeOverlap(nonBJets, baselineElectrons, 0.2);
+        removeOverlap(baselineElectrons,nonBJets,0.2);
+        removeOverlap(baselineElectrons,bJets,0.2);
+
+
+        muJetSpecialOverlapRemoval(nonBJets, baselineMuons);
+        removeOverlap(baselineMuons, nonBJets, 0.2);
+        removeOverlap(baselineMuons, bJets, 0.2);
+
+        auto lambda = [](double lepton_pT) { return std::min(0.4, 0.04 + 10./(lepton_pT) ); };
+
+        removeOverlap(baselineMuons, nonBJets, lambda);
+        removeOverlap(baselineMuons, bJets, lambda);
+        removeOverlap(baselineElectrons, nonBJets, lambda);
+        removeOverlap(baselineElectrons, bJets, lambda);
+
+        // // Fill a jet-pointer-to-bool map to make it easy to check
+        // // if a given jet is treated as a b-jet in this analysis
+        // map&lt;const HEPUtils::Jet*,bool&gt; analysisBtags;
+        for (const HEPUtils::Jet* jet : bJets) {
+          analysisBtags[jet] = true;
+        }
+        for (const HEPUtils::Jet* jet : nonBJets) {
+          analysisBtags[jet] = false;
+        }
+
+
+        // After OR Baseline Leptons
+        int nBaseElectrons = baselineElectrons.size();
+        int nBaseMuons = baselineMuons.size();
+        int nLep = nBaseElectrons + nBaseMuons;
+
+        vector&lt;const HEPUtils::Particle*&gt; baselineLeptons = baselineElectrons;
+        baselineLeptons.insert(baselineLeptons.end(), baselineMuons.begin(), baselineMuons.end());
+
+        // Signal object containers
+        vector&lt;const HEPUtils::Particle*&gt; signalElectrons;
+        vector&lt;const HEPUtils::Particle*&gt; signalMuons;
+
+        vector&lt;const HEPUtils::Jet*&gt; signalJets;
+        vector&lt;const HEPUtils::Jet*&gt; signalBJets;
+        vector&lt;const HEPUtils::Jet*&gt; signalNonBJets;
+
+        // Now apply signal jet cuts
+        for (const HEPUtils::Jet* jet : bJets)
+        {
+          if(jet-&gt;pT() &gt; 20. &amp;&amp; fabs(jet-&gt;eta())&lt;2.5)
+          {
+            signalJets.push_back(jet);
+            signalBJets.push_back(jet);
+          }
+        }
+
+        for (const HEPUtils::Jet* jet : nonBJets)
+        {
+          if(jet-&gt;pT() &gt; 20. &amp;&amp; fabs(jet-&gt;eta())&lt;2.8)
+          {
+            signalJets.push_back(jet);
+            signalNonBJets.push_back(jet);
+          }
+        }
+
+        // Sort by pT
+        //Put signal jets in pT order
+        sort(signalJets.begin(), signalJets.end(), compareJetPt);
+        sort(signalBJets.begin(), signalBJets.end(), compareJetPt);
+        sort(signalNonBJets.begin(), signalNonBJets.end(), compareJetPt);
+
+        for (const HEPUtils::Particle* electron : baselineElectrons)
+        {
+          signalElectrons.push_back(electron);
+        }
+
+        for (const HEPUtils::Particle* muon : baselineMuons)
+        {
+          signalMuons.push_back(muon);
+        }
+
+        // Now do the met sig calculation
+        // Note: use signal jets since pT and eta requirements are same as baseline
+        //       but overlap removal has been done correctly
+        // Get the photons for the purpose of the calculation: no info in paper, have guessed pT and eta from other analyses
+        vector&lt;const HEPUtils::Particle*&gt; baselinePhotons;
+        for (const HEPUtils::Particle* photon : event-&gt;photons())
+        {
+          if (photon-&gt;pT() &gt; 25. &amp;&amp; photon-&gt;abseta() &lt; 2.37) baselinePhotons.push_back(photon);
+        }
+        // Apply photon efficiency
+        applyEfficiency(baselinePhotons, ATLAS::eff2DPhoton.at(&quot;R2&quot;));
+
+
+        double MetSig = calcMETSignificance(baselineElectrons, baselinePhotons, baselineMuons, signalJets, tauCands, metVec);
+
+        // Need to recluster jets at this point (R=0.8 and R=1.2)
+        vector&lt;std::shared_ptr&lt;HEPUtils::Jet&gt;&gt; fatJetsR8=get_jets(signalJets,0.8);
+        vector&lt;std::shared_ptr&lt;HEPUtils::Jet&gt;&gt; fatJetsR12=get_jets(signalJets,1.2);
+
+        //int nFatJetsR8 = fatJetsR8.size();
+        int nFatJetsR12 = fatJetsR12.size();
+
+        //Put 1_2 signal jets in decreasing pT order
+        std::sort(fatJetsR12.begin(), fatJetsR12.end(), sortByPT0l_sharedptr);
+
+        //Put 0_8 signal jets in pT order
+        std::sort(fatJetsR8.begin(), fatJetsR8.end(), sortByPT0l_sharedptr);
+
+        int nBJets = signalBJets.size();
+        int nNonBJets = signalNonBJets.size();
+        int nSignalJets = signalJets.size();
+
+        // DRBB
+        float DRBB = 0;
+        if (nBJets &gt; 1) DRBB=signalBJets[1]-&gt;mom().deltaR_eta(signalBJets[0]-&gt;mom());
+
+        // dPhiJetMet
+        double dPhiJetMetMin2 = 0;
+        double dPhiJetMetMin3 = 0;
+        double dPhiJetMetMin4 = 0;
+        if (nSignalJets &gt;= 2) {
+          dPhiJetMetMin2 = std::min(fabs(metVec.deltaPhi(signalJets[0]-&gt;mom())), fabs(metVec.deltaPhi(signalJets[1]-&gt;mom())));
+          if (nSignalJets&gt;=3) {
+            dPhiJetMetMin3 = std::min(dPhiJetMetMin2, fabs(metVec.deltaPhi(signalJets[2]-&gt;mom())));
+            if (nSignalJets&gt;=4) {
+              dPhiJetMetMin4 = std::min(dPhiJetMetMin3, fabs(metVec.deltaPhi(signalJets[3]-&gt;mom())));
+            }
+          }
+        }
+
+        float AntiKt8M_0 = 0;
+        //float AntiKt8M_1 = 0;
+        float AntiKt12M_0 = 0;
+        float AntiKt12M_1 = 0;
+
+        if (fatJetsR8.size()&gt;0)  AntiKt8M_0 = fatJetsR8[0]-&gt;mass() ;
+        //if (fatJetsR8.size()&gt;1)  AntiKt8M_1 = fatJetsR8[1]-&gt;mass() ;
+        if (fatJetsR12.size()&gt;0) AntiKt12M_0 = fatJetsR12[0]-&gt;mass() ;
+        if (fatJetsR12.size()&gt;1) AntiKt12M_1 = fatJetsR12[1]-&gt;mass() ;
+
+
+        bool hasTaus = false;
+        for (const HEPUtils::Particle* tau : tauCands) {
+          // cout &lt;&lt; tau-&gt;mom().deltaPhi(metVec) &lt;&lt; endl;
+          if (tau-&gt;mom().deltaPhi(metVec) &lt; M_PI/5.) {
+            hasTaus = true;
+          }
+          MtTauCand = get_mT(tau-&gt;mom(), metVec);
+          if (MtTauCand &gt; 0) hasTaus = true;
+        }
+
+        // Close-by b-jets and MtBMets
+        int NCloseByBJets12Leading = 0;
+        int NCloseByBJets12Subleading = 0;
+        float MtBMin = 0;
+        float MtBMax = 0;
+        double dPhi_min = 1000.;
+        double dPhi_max = 0.;
+        if (nBJets &gt;= 2) {
+          for (const HEPUtils::Jet* jet : signalBJets) {
+            double dphi = fabs(metVec.deltaPhi(jet-&gt;mom()));
+            if (dphi &lt; dPhi_min) {
+              dPhi_min = dphi;
+              MtBMin = get_mT(jet-&gt;mom(), metVec);
+            }
+            if (dphi &gt; dPhi_max) {
+              dPhi_max = dphi;
+              MtBMax = get_mT(jet-&gt;mom(), metVec);
+            }
+            if (nFatJetsR12 &gt; 0 &amp;&amp; jet-&gt;mom().deltaR_eta(fatJetsR12[0]-&gt;mom()) &lt;= 1.2)
+              NCloseByBJets12Leading++;
+            if (nFatJetsR12 &gt; 1 &amp;&amp; jet-&gt;mom().deltaR_eta(fatJetsR12[1]-&gt;mom()) &lt;= 1.2)
+              NCloseByBJets12Subleading++;
+          }
+        }
+
+
+
+        //Chi2 method (Same as stop0L2015.cxx)
+        float realWMass = 80.385;
+        float realTopMass = 173.210;
+        float MT2Chi2 = 0.;
+        double Chi2min = DBL_MAX;
+        int W1j1_low = -1, W1j2_low = -1, W2j1_low = -1, W2j2_low = -1, b1_low = -1, b2_low = -1;
+        if (nSignalJets &gt;= 4 &amp;&amp; nBJets &gt;= 2 &amp;&amp; nNonBJets &gt;= 2)
+        {
+          for (int W1j1 = 0; W1j1 &lt; (int) nNonBJets; W1j1++)
+          {
+            for (int W2j1 = 0; W2j1 &lt; (int) nNonBJets; W2j1++)
+            {
+              if (W2j1 == W1j1) continue;
+              for (int b1 = 0; b1 &lt; (int) nBJets; b1++)
+              {
+                for (int b2 = 0; b2 &lt; (int) nBJets; b2++)
+                {
+                  if (b2 == b1) continue;
+                  double chi21, chi22, mW1, mW2, mt1, mt2;
+                  if (W2j1 &gt; W1j1)
+                  {
+                    mW1 = nonBJets[W1j1]-&gt;mass();
+                    mW2 = nonBJets[W2j1]-&gt;mass();
+                    mt1 = (nonBJets[W1j1]-&gt;mom() + signalBJets[b1]-&gt;mom()).m();
+                    mt2 = (nonBJets[W2j1]-&gt;mom() + signalBJets[b2]-&gt;mom()).m();
+                    chi21 = (mW1 - realWMass) * (mW1 - realWMass) / realWMass + (mt1 - realTopMass) * (mt1 - realTopMass) / realTopMass;
+                    chi22 = (mW2 - realWMass) * (mW2 - realWMass) / realWMass + (mt2 - realTopMass) * (mt2 - realTopMass) / realTopMass;
+                    if (Chi2min &gt; (chi21 + chi22))
+                    {
+                      Chi2min = chi21 + chi22;
+                      if (chi21 &lt; chi22)
+                      {
+                        W1j1_low = W1j1;
+                        W1j2_low = -1;
+                        W2j1_low = W2j1;
+                        W2j2_low = -1;
+                        b1_low = b1;
+                        b2_low = b2;
+                      }
+                      else
+                      {
+                        W2j1_low = W1j1;
+                        W2j2_low = -1;
+                        W1j1_low = W2j1;
+                        W1j2_low = -1;
+                        b2_low = b1;
+                        b1_low = b2;
+                      }
+                    }
+                  }
+                  if (nNonBJets &lt; 3)
+                  continue;
+                  for (int W1j2 = W1j1 + 1; W1j2 &lt; nNonBJets; W1j2++)
+                  {
+                    if (W1j2 == W2j1) continue;
+                    //try bll,bl top candidates
+                    mW1 = (nonBJets[W1j1]-&gt;mom() + nonBJets[W1j2]-&gt;mom()).m();
+                    mW2 = (nonBJets[W2j1]-&gt;mom()).m();
+                    mt1 = (nonBJets[W1j1]-&gt;mom() + nonBJets[W1j2]-&gt;mom() + signalBJets[b1]-&gt;mom()).m();
+                    mt2 = (nonBJets[W2j1]-&gt;mom() + signalBJets[b2]-&gt;mom()).m();
+                    chi21 = (mW1 - realWMass) * (mW1 - realWMass) / realWMass + (mt1 - realTopMass) * (mt1 - realTopMass) / realTopMass;
+                    chi22 = (mW2 - realWMass) * (mW2 - realWMass) / realWMass + (mt2 - realTopMass) * (mt2 - realTopMass) / realTopMass;
+                    if (Chi2min &gt; (chi21 + chi22))
+                    {
+                      Chi2min = chi21 + chi22;
+                      if (chi21 &lt; chi22)
+                      {
+                        W1j1_low = W1j1;
+                        W1j2_low = W1j2;
+                        W2j1_low = W2j1;
+                        W2j2_low = -1;
+                        b1_low = b1;
+                        b2_low = b2;
+                      }
+                      else
+                      {
+                        W2j1_low = W1j1;
+                        W2j2_low = W1j2;
+                        W1j1_low = W2j1;
+                        W1j2_low = -1;
+                        b2_low = b1;
+                        b1_low = b2;
+                      }
+                    }
+                    if (nNonBJets &lt; 4) continue;
+                    //try bll, bll top candidates
+                    for (int W2j2 = W2j1 + 1; W2j2 &lt; (int) nNonBJets; W2j2++)
+                    {
+                      if ((W2j2 == W1j1) || (W2j2 == W1j2)) continue;
+                      if (W2j1 &lt; W1j1) continue; //runtime reasons, we don't want combinations checked twice &lt;--------------------This line should be added
+                      mW1 = (nonBJets[W1j1]-&gt;mom() + nonBJets[W1j2]-&gt;mom()).m();
+                      mW2 = (nonBJets[W2j1]-&gt;mom() + nonBJets[W2j2]-&gt;mom()).m();
+                      mt1 = (nonBJets[W1j1]-&gt;mom() + nonBJets[W1j2]-&gt;mom() + signalBJets[b1]-&gt;mom()).m();
+                      mt2 = (nonBJets[W2j1]-&gt;mom() + nonBJets[W2j2]-&gt;mom() + signalBJets[b2]-&gt;mom()).m();
+                      chi21 = (mW1 - realWMass) * (mW1 - realWMass) / realWMass + (mt1 - realTopMass) * (mt1 - realTopMass) / realTopMass;
+                      chi22 = (mW2 - realWMass) * (mW2 - realWMass) / realWMass + (mt2 - realTopMass) * (mt2 - realTopMass) / realTopMass;
+                      if (Chi2min &gt; (chi21 + chi22))
+                      {
+                        Chi2min = chi21 + chi22;
+                        if (chi21 &lt; chi22)
+                        {
+                          W1j1_low = W1j1;
+                          W1j2_low = W1j2;
+                          W2j1_low = W2j1;
+                          W2j2_low = W2j2;
+                          b1_low = b1;
+                          b2_low = b2;
+                        }
+                        else
+                        {
+                          W2j1_low = W1j1;
+                          W2j2_low = W1j2;
+                          W1j1_low = W2j1;
+                          W1j2_low = W2j2;
+                          b2_low = b1;
+                          b1_low = b2;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          HEPUtils::P4 WCand0 = nonBJets[W1j1_low]-&gt;mom();
+          if (W1j2_low != -1) WCand0 += signalNonBJets[W1j2_low]-&gt;mom();
+          HEPUtils::P4 topCand0 = WCand0 + signalBJets[b1_low]-&gt;mom();
+
+          HEPUtils::P4 WCand1 = signalNonBJets[W2j1_low]-&gt;mom();
+          if(W2j2_low != -1) WCand1 += signalNonBJets[W2j2_low]-&gt;mom();
+          HEPUtils::P4 topCand1 = WCand1 + signalBJets[b2_low]-&gt;mom();
+
+          HEPUtils::P4 tempTop0=HEPUtils::P4::mkEtaPhiMPt(0.,topCand0.phi(),173.210,topCand0.pT());
+          HEPUtils::P4 tempTop1=HEPUtils::P4::mkEtaPhiMPt(0.,topCand1.phi(),173.210,topCand1.pT());
+
+          // Note that the first component here is the mass
+          // This must be the top mass (i.e. mass of our vectors) and not zero!
+
+          double pa_a[3] = { tempTop0.m() , tempTop0.px(), tempTop0.py() };
+          double pb_a[3] = { tempTop1.m() , tempTop1.px(), tempTop1.py() };
+          double pmiss_a[3] = { 0, metVec.px(), metVec.py() };
+          double mn_a = 0.;
+
+          mt2_bisect::mt2 mt2_event_a;
+
+          mt2_event_a.set_momenta(pa_a,pb_a,pmiss_a);
+          mt2_event_a.set_mn(mn_a);
+
+          MT2Chi2 = mt2_event_a.get_mt2();
+        }
+
+
+        double Ht=0;
+
+        for(size_t jet=0;jet&lt;signalJets.size();jet++)Ht+=signalJets[jet]-&gt;pT();
+
+        double HtSig = Met/sqrt(Ht);
+
+        int nBadJets=0;
+
+        //////////////////////////////////////
+        // Region Cuts
+        bool pre1B4J0L = Met &gt; 250 &amp;&amp; nLep == 0 &amp;&amp; nSignalJets &gt;= 4 &amp;&amp; nBJets &gt;= 1 &amp;&amp; signalJets[1]-&gt;pT() &gt; 80 &amp;&amp; signalJets[3]-&gt;pT() &gt; 40 &amp;&amp; dPhiJetMetMin2&gt;0.4;
+        bool pre2B4J0L = pre1B4J0L &amp;&amp; nBJets &gt;= 2 &amp;&amp; dPhiJetMetMin4 &gt; 0.4 &amp;&amp; MetSig &gt; 5 &amp;&amp; MtBMin &gt; 50 &amp;&amp; MtTauCand &lt; 0;
+        bool pre2B4J0Ltight = pre2B4J0L &amp;&amp; MtBMin &gt; 200;
+        bool pre2B4J0LtightTT = pre2B4J0Ltight &amp;&amp; accbtag_SRA &amp;&amp; nFatJetsR12&gt;=2 &amp;&amp; AntiKt12M_0&gt;120. &amp;&amp; AntiKt12M_1&gt;120;
+        bool pre2B4J0LtightTW = pre2B4J0Ltight &amp;&amp; accbtag_SRA &amp;&amp; nFatJetsR12&gt;=2 &amp;&amp; AntiKt12M_0&gt;120. &amp;&amp; AntiKt12M_1&gt;60 &amp;&amp; AntiKt12M_1&lt;120;
+        bool pre2B4J0LtightT0 = pre2B4J0Ltight &amp;&amp; accbtag_SRA &amp;&amp; nFatJetsR12&gt;=2 &amp;&amp; AntiKt12M_0&gt;120. &amp;&amp; AntiKt12M_1&gt;0 &amp;&amp; AntiKt12M_1&lt;60;
+
+        //bool SRA = pre2B4J0Ltight &amp;&amp; MT2Chi2 &gt; 450 &amp;&amp; nFatJetsR12&gt;=2 &amp;&amp; AntiKt12M_0&gt;120 &amp;&amp; AntiKt8M_0 &gt; 60.00 &amp;&amp; MetSig &gt; 25.00 &amp;&amp; NCloseByBJets12Leading &gt;= 1;
+        bool SRATT = !hasTaus &amp;&amp; pre2B4J0LtightTT &amp;&amp; MT2Chi2 &gt; 450 &amp;&amp; AntiKt8M_0 &gt; 60.00 &amp;&amp; MetSig &gt; 25.00 &amp;&amp; NCloseByBJets12Leading &gt;= 1 &amp;&amp; NCloseByBJets12Subleading &gt;= 1 &amp;&amp; DRBB &gt; 1.00;
+        bool SRATW = !hasTaus &amp;&amp; pre2B4J0LtightTW &amp;&amp; MT2Chi2 &gt; 450 &amp;&amp; AntiKt8M_0 &gt; 60.00 &amp;&amp; MetSig &gt; 25.00 &amp;&amp; NCloseByBJets12Leading &gt;= 1;
+        bool SRAT0 = !hasTaus &amp;&amp; pre2B4J0LtightT0 &amp;&amp; MT2Chi2 &gt; 450 &amp;&amp; AntiKt8M_0 &gt; 60.00 &amp;&amp; MetSig &gt; 25.00 &amp;&amp; NCloseByBJets12Leading &gt;= 1;
+
+        bool SRB = !hasTaus &amp;&amp; pre2B4J0Ltight &amp;&amp; MtBMax&gt;200 &amp;&amp; DRBB&gt;1.4 &amp;&amp; nFatJetsR12&gt;=2 &amp;&amp; AntiKt12M_0&gt;120 &amp;&amp; MT2Chi2&lt;450 &amp;&amp; MetSig&gt;14;
+        bool SRBTT = SRB &amp;&amp; nFatJetsR12&gt;=2 &amp;&amp; AntiKt12M_0&gt;120. &amp;&amp; AntiKt12M_1&gt;120;
+        bool SRBTW = SRB &amp;&amp; nFatJetsR12&gt;=2 &amp;&amp; AntiKt12M_0&gt;120. &amp;&amp; AntiKt12M_1&gt;60 &amp;&amp; AntiKt12M_1&lt;120;
+        bool SRBT0 = SRB &amp;&amp; nFatJetsR12&gt;=2 &amp;&amp; AntiKt12M_0&gt;120. &amp;&amp; AntiKt12M_1&gt;0 &amp;&amp; AntiKt12M_1&lt;60;
+
+        if (SRATT)_counters.at(&quot;SRATT&quot;).add_event(event);
+        if (SRATW)_counters.at(&quot;SRATW&quot;).add_event(event);
+        if (SRAT0)_counters.at(&quot;SRAT0&quot;).add_event(event);
+        if (SRBTT)_counters.at(&quot;SRBTT&quot;).add_event(event);
+        if (SRBTW)_counters.at(&quot;SRBTW&quot;).add_event(event);
+        if (SRBT0)_counters.at(&quot;SRBT0&quot;).add_event(event);
+
+        // SRC missing (these are the RJR regions)
+        bool SRDLoose = nLep == 0 &amp;&amp; nBadJets == 0 &amp;&amp; Met &gt; 250 &amp;&amp; nonBJets.size() &gt; 0 &amp;&amp; nonBJets.size() &gt; 0 &amp;&amp; nonBJets[0]-&gt;pT()&gt;250 &amp;&amp; nonBJets[0]-&gt;mom().deltaR_eta(metVec) &gt; 2.4 &amp;&amp; HtSig &gt; 22;
+        bool SRD0 = SRDLoose &amp;&amp; nBJets == 0 &amp;&amp; dPhiJetMetMin4&gt;0.4 &amp;&amp; HtSig &gt; 26;
+        bool SRD1 = SRDLoose &amp;&amp; nBJets == 1 &amp;&amp; fabs(signalBJets[0]-&gt;eta())&lt;1.6 &amp;&amp; signalBJets[0]-&gt;mom().deltaPhi(nonBJets[0]-&gt;mom())&gt;2.0 &amp;&amp; signalBJets[0]-&gt;mom().deltaPhi(nonBJets[0]-&gt;mom())&gt;2.2;
+        bool SRD2 = SRDLoose &amp;&amp; nBJets &gt;= 2 &amp;&amp; signalBJets[0]-&gt;pT()&lt;175 &amp;&amp; fabs(signalBJets[1]-&gt;eta())&lt;1.2 &amp;&amp; signalBJets[0]-&gt;mom().deltaPhi(nonBJets[0]-&gt;mom())&gt;2.2 &amp;&amp; signalBJets[1]-&gt;mom().deltaPhi(nonBJets[0]-&gt;mom())&gt;1.6;
+        //bool SRD = SRD0 || SRD1 || SRD2;
+
+        if ( SRD0 )_counters.at(&quot;SRD0&quot;).add_event(event);
+        if ( SRD1 )_counters.at(&quot;SRD1&quot;).add_event(event);
+        if ( SRD2 )_counters.at(&quot;SRD2&quot;).add_event(event);
+
+        #ifdef CHECK_CUTFLOW
+          // Now fill the cutflows
+          const double w = event-&gt;weight();
+
+          _cutflows.fillinit(w);
+
+          _cutflows[&quot;SRATT&quot;].fillnext({
+            Met &gt; 250.,
+            nSignalJets &gt;=4,
+            nBJets &gt;=2 &amp;&amp; accbtag_SRA,
+            nLep == 0,
+            nSignalJets &gt;=4 &amp;&amp; signalJets[3]-&gt;pT() &gt; 40,
+            nSignalJets &gt;=2 &amp;&amp; signalJets[1]-&gt;pT() &gt; 80,
+            dPhiJetMetMin4&gt;0.4,
+            true,
+            MetSig &gt; 5,
+            MtBMin &gt; 50.,
+            !hasTaus,
+            MtBMin &gt; 200.,
+            AntiKt12M_0&gt;120.,
+            AntiKt12M_1&gt;120,
+            MT2Chi2 &gt; 450,
+            AntiKt8M_0 &gt; 60.,
+            MetSig &gt; 25.,
+            NCloseByBJets12Leading &gt;= 1,
+            NCloseByBJets12Subleading &gt;= 1,
+            DRBB &gt; 1.}, w);
+
+          _cutflows[&quot;SRATW&quot;].fillnext({
+            Met &gt; 250.,
+            nSignalJets &gt;=4,
+            nBJets &gt;=2 &amp;&amp; accbtag_SRA,
+            nLep == 0,
+            nSignalJets &gt;=4 &amp;&amp; signalJets[3]-&gt;pT() &gt; 40,
+            nSignalJets &gt;=2 &amp;&amp; signalJets[1]-&gt;pT() &gt; 80,
+            dPhiJetMetMin4&gt;0.4,
+            true,
+            MetSig &gt; 5,
+            MtBMin &gt; 50.,
+            !hasTaus,
+            MtBMin &gt; 200.,
+            AntiKt12M_0&gt;120.,
+            AntiKt12M_1&gt;60.,
+            AntiKt12M_1&lt;120.,
+            MT2Chi2 &gt; 450.,
+            AntiKt8M_0 &gt; 60.,
+            MetSig &gt; 25.,
+            NCloseByBJets12Leading &gt;= 1},w);
+
+          _cutflows[&quot;SRAT0&quot;].fillnext({
+            Met &gt; 250.,
+            nSignalJets &gt;=4,
+            nBJets &gt;=2 &amp;&amp; accbtag_SRA,
+            nLep == 0,
+            nSignalJets &gt;=4 &amp;&amp; signalJets[3]-&gt;pT() &gt; 40,
+            nSignalJets &gt;=2 &amp;&amp; signalJets[1]-&gt;pT() &gt; 80,
+            dPhiJetMetMin4&gt;0.4,
+            true,
+            MetSig &gt; 5,
+            MtBMin &gt; 50.,
+            !hasTaus,
+            MtBMin &gt; 200.,
+            AntiKt12M_0&gt;120.,
+            AntiKt12M_1&lt;60,
+            MT2Chi2 &gt; 450,
+            AntiKt8M_0 &gt; 60.,
+            MetSig &gt; 25.,
+            NCloseByBJets12Leading &gt;= 1,}, w);
+
+          _cutflows[&quot;SRB&quot;].fillnext({
+            Met &gt; 250.,
+            nSignalJets &gt;=4,
+            nBJets &gt;=2,
+            nLep == 0,
+            nSignalJets &gt;=4 &amp;&amp; signalJets[3]-&gt;pT() &gt; 40,
+            nSignalJets &gt;=2 &amp;&amp; signalJets[1]-&gt;pT() &gt; 80,
+            dPhiJetMetMin4&gt;0.4,
+            true,
+            MetSig &gt; 5,
+            MtBMin &gt; 50.,
+            !hasTaus,
+            MtBMin &gt; 200.,
+            MtBMax &gt; 200.,
+            DRBB &gt; 1.4,
+            AntiKt12M_0&gt;120.,
+            MT2Chi2 &lt; 450,
+            MetSig &gt; 14.,}, w);
+            if (SRB){
+              if (AntiKt12M_1 &gt; 120.)
+                _cutflows[&quot;SRB&quot;].fill(18, true, w);
+              if (AntiKt12M_1 &gt; 60. &amp;&amp; AntiKt12M_1 &lt;= 120.)
+                _cutflows[&quot;SRB&quot;].fill(19, true, w);
+              if (AntiKt12M_1 &lt;= 60.)
+                _cutflows[&quot;SRB&quot;].fill(20, true, w);
+            }
+
+          _cutflows[&quot;SRD0&quot;].fillnext({
+            nonBJets.size() &gt; 0,
+            true,
+            Met &gt; 250.,
+            nLep == 0,
+            nonBJets.size() &gt; 0 &amp;&amp; nonBJets[0]-&gt;pT()&gt;250.,
+            nonBJets.size() &gt; 0 &amp;&amp; nonBJets[0]-&gt;mom().deltaR_eta(metVec) &gt; 2.4,
+            true,
+            true,
+            HtSig &gt; 26.,
+            true,
+            nBJets == 0,
+            true,
+            true,
+            true,
+            dPhiJetMetMin4 &gt; 0.4,
+            true,
+            true,}, w);
+
+
+          _cutflows[&quot;SRD1&quot;].fillnext({
+            nonBJets.size() &gt; 0,
+            true,
+            Met &gt; 250.,
+            nLep == 0,
+            nonBJets.size() &gt; 0 &amp;&amp; nonBJets[0]-&gt;pT()&gt;250.,
+            nonBJets.size() &gt; 0 &amp;&amp; nonBJets[0]-&gt;mom().deltaR_eta(metVec) &gt; 2.4,
+            true,
+            true,
+            true,
+            HtSig &gt;= 22.,
+            true,
+            signalBJets.size() == 1,
+            true,
+            signalBJets.size() == 1 &amp;&amp; nonBJets.size() &gt; 0 &amp;&amp; signalBJets[0]-&gt;mom().deltaPhi(nonBJets[0]-&gt;mom()) &gt; 2.2,
+            signalBJets.size() == 1 &amp;&amp; fabs(signalBJets[0]-&gt;eta())&lt;1.6,
+            true,
+            true}, w);
+
+          _cutflows[&quot;SRD2&quot;].fillnext({
+            nonBJets.size() &gt; 0,
+            true,
+            Met &gt; 250.,
+            nLep == 0,
+            nonBJets.size() &gt; 0 &amp;&amp; nonBJets[0]-&gt;pT()&gt;250.,
+            nonBJets.size() &gt; 0 &amp;&amp; nonBJets[0]-&gt;mom().deltaR_eta(metVec) &gt; 2.4,
+            true,
+            true,
+            HtSig &gt;= 22.,
+            signalBJets.size() &gt;=2,
+            signalBJets.size() &gt;=2 &amp;&amp; nonBJets.size() &gt; 0 &amp;&amp; signalBJets[0]-&gt;mom().deltaPhi(nonBJets[0]-&gt;mom())&gt;2.2,
+            signalBJets.size() &gt;=2 &amp;&amp; nonBJets.size() &gt; 0 &amp;&amp; signalBJets[1]-&gt;mom().deltaPhi(nonBJets[0]-&gt;mom())&gt;1.6,
+            signalBJets.size() &gt;=2 &amp;&amp; signalBJets[0]-&gt;pT()&lt;175.,
+            signalBJets.size() &gt;=2 &amp;&amp; signalBJets[0]-&gt;pT() &gt; 0.,
+            signalBJets.size() &gt;=2 &amp;&amp; fabs(signalBJets[1]-&gt;eta())&lt;1.2,}, w);
+
+
+
+        #endif
+
+        return;
+
+      }
+
+      virtual void collect_results()
+      {
+
+        add_result(SignalRegionData(_counters.at(&quot;SRATT&quot;), 4.0, { 3.2, 0.5}));
+        add_result(SignalRegionData(_counters.at(&quot;SRATW&quot;), 8.0, { 5.6, 0.7}));
+        add_result(SignalRegionData(_counters.at(&quot;SRAT0&quot;), 11., { 17.3, 1.7}));
+        add_result(SignalRegionData(_counters.at(&quot;SRBTT&quot;), 67., { 46.0, 7.0}));
+        add_result(SignalRegionData(_counters.at(&quot;SRBTW&quot;), 84., { 81., 7.}));
+        add_result(SignalRegionData(_counters.at(&quot;SRBT0&quot;), 292., { 276., 24.}));
+        add_result(SignalRegionData(_counters.at(&quot;SRD0&quot;), 5., { 6.9, 1.3}));
+        add_result(SignalRegionData(_counters.at(&quot;SRD1&quot;), 4., { 3.1, 1.0}));
+        add_result(SignalRegionData(_counters.at(&quot;SRD2&quot;), 10., { 12.2, 1.5}));
+
+        #ifdef CHECK_CUTFLOW
+          std::cout &lt;&lt; &quot;\n ===== CUTFLOWS ====== \n&quot;
+               &lt;&lt; _cutflows[&quot;SRATT&quot;] &lt;&lt; std::endl;
+          std::cout &lt;&lt; &quot;\n ===== CUTFLOWS ====== \n&quot;
+               &lt;&lt; _cutflows[&quot;SRATW&quot;] &lt;&lt; std::endl;
+          std::cout &lt;&lt; &quot;\n ===== CUTFLOWS ====== \n&quot;
+               &lt;&lt; _cutflows[&quot;SRAT0&quot;] &lt;&lt; std::endl;
+          std::cout &lt;&lt; &quot;\n ===== CUTFLOWS ====== \n&quot;
+               &lt;&lt; _cutflows[&quot;SRB&quot;] &lt;&lt; std::endl;
+          std::cout &lt;&lt; &quot;\n ===== CUTFLOWS ====== \n&quot;
+               &lt;&lt; _cutflows[&quot;SRD0&quot;] &lt;&lt; std::endl;
+          std::cout &lt;&lt; &quot;\n ===== CUTFLOWS ====== \n&quot;
+               &lt;&lt; _cutflows[&quot;SRD1&quot;] &lt;&lt; std::endl;
+          std::cout &lt;&lt; &quot;\n ===== CUTFLOWS ====== \n&quot;
+               &lt;&lt; _cutflows[&quot;SRD2&quot;] &lt;&lt; std::endl;
+
+          add_cutflows(_cutflows);
+        #endif
+
+        return;
+      }
+
+
+    protected:
+      void analysis_specific_reset()
+      {
+        for (auto&amp; pair : _counters) { pair.second.reset(); }
+      }
+
+    };
+
+    DEFINE_ANALYSIS_FACTORY(ATLAS_13TeV_0LEPStop_139invfb)
+
+  }
+}
+</code></pre><hr><p>Updated on 2026-11-03 at 14:50:47 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.d5e27a6ed00168b7a66eb637878a6be7d054db51d0e613bbcfda12ab0569b62177253b4e6453c477574b3a38f50eff49a68f0e19112bd82a68c78a66cd8d05df.js integrity="sha512-1eJ6btABaLembrY3h4pr59BU21HQ5hO7z9oSqwVptiF3JTtOZFPEd1dLOjj1Dv9Jpo8OGREr2Cpox4pmzY0F3w==" crossorigin=anonymous defer></script>
+<script src=/js/highlight.min.9003483b4531b86467c8b801b1d5fc5439bb0d6bdb6c6a760a1b54abf37d6bbadf8423dbc81a3359c935c7705bb7d183b46131ba4a9c861b5d48e6a61501461a.js integrity="sha512-kANIO0UxuGRnyLgBsdX8VDm7DWvbbGp2ChtUq/N9a7rfhCPbyBozWck1x3Bbt9GDtGExukqchhtdSOamFQFGGg==" crossorigin=anonymous defer></script>
+<script src=/main.min.9342d29d0e3e250a2c03282306b766e004888dba0fd661a17d7b106655e013bf85733f086ad330e3df0929c713dd81c0ea835966fa92e4a1e38f7ea9680524ed.js integrity="sha512-k0LSnQ4+JQosAygjBrdm4ASIjboP1mGhfXsQZlXgE7+Fcz8IatMw498JKccT3YHA6oNZZvqS5KHjj36paAUk7Q==" crossorigin=anonymous defer></script>
+<script src=https://gambitbsm.org/index.min.3a8ee06d0c346f1fb70040b0fbcbaaacf335cb34023c408954406a05db2089fc2ca349119b9f7d68b9e7044e82b8fdc8bd9661b6ef8b118246c5a2079d7fa8e9.js integrity="sha512-Oo7gbQw0bx+3AECw+8uqrPM1yzQCPECJVEBqBdsgifwso0kRm599aLnnBE6CuP3IvZZhtu+LEYJGxaIHnX+o6Q==" crossorigin=anonymous defer></script></body></html>

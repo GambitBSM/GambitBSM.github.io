@@ -1,0 +1,1450 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="ie=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><link rel=preload as=font href=https://gambitbsm.org/fonts/vendor/jost/jost-v4-latin-regular.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://gambitbsm.org/fonts/vendor/jost/jost-v4-latin-500.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://gambitbsm.org/fonts/vendor/jost/jost-v4-latin-700.woff2 type=font/woff2 crossorigin><script>(()=>{var e=localStorage.getItem("theme");e==="dark"&&document.documentElement.setAttribute("data-dark-mode","")})()</script><link rel=stylesheet href=https://gambitbsm.org/main.c1f0838e2cac2d5bb45c4f51eac5017d94b53e71f279f5ef925be54abda180b5ad4c9a5384f3c141e772c408e3f24bd9c50c11e6b79424a45ac99a0d112b5f29.css integrity="sha512-wfCDjiysLVu0XE9R6sUBfZS1PnHyefXvklvlSr2hgLWtTJpThPPBQedyxAjj8kvZxQwR5reUJKRayZoNEStfKQ==" crossorigin=anonymous><noscript><style>img.lazyload{display:none}</style></noscript><meta name=robots content="index, follow"><meta name=googlebot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><meta name=bingbot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><title>file analyses/Analysis_ATLAS_13TeV_2LEPsoft_139invfb.cpp - GAMBIT</title><meta name=description content="[No description available]"><link rel=canonical href=https://gambitbsm.org/documentation/code/files/analysis__atlas__13tev__2lepsoft__139invfb_8cpp/><meta property="og:locale" content="en_US"><meta property="og:type" content="article"><meta property="og:title" content="file analyses/Analysis_ATLAS_13TeV_2LEPsoft_139invfb.cpp"><meta property="og:description" content="[No description available]"><meta property="og:url" content="https://gambitbsm.org/documentation/code/files/analysis__atlas__13tev__2lepsoft__139invfb_8cpp/"><meta property="og:site_name" content="GAMBIT"><meta property="og:image" content="https://gambitbsm.org/gambit_logo.png"><meta property="og:image:alt" content="GAMBIT"><meta name=twitter:card content="summary_large_image"><meta name=twitter:site content><meta name=twitter:creator content><meta name=twitter:title content="file analyses/Analysis_ATLAS_13TeV_2LEPsoft_139invfb.cpp"><meta name=twitter:description content="[No description available]"><meta name=twitter:image content="https://gambitbsm.org/gambit_logo.png"><meta name=twitter:image:alt content="file analyses/Analysis_ATLAS_13TeV_2LEPsoft_139invfb.cpp"><script type=application/ld+json>{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://gambitbsm.org/#/schema/organization/1","name":"Doks","url":"https://gambitbsm.org/","sameAs":["https://github.com/GambitBSM"],"logo":{"@type":"ImageObject","@id":"https://gambitbsm.org/#/schema/image/1","url":"https://gambitbsm.org/logo-doks.png","width":450,"height":416,"caption":"Doks"},"image":{"@id":"https://gambitbsm.org/#/schema/image/1"}},{"@type":"WebSite","@id":"https://gambitbsm.org/#/schema/website/1","url":"https://gambitbsm.org/","name":"GAMBIT","description":"Documentation for GAMBIT, the Global And Modular BSM Inference Tool","publisher":{"@id":"https://gambitbsm.org/#/schema/organization/1"}},{"@type":"WebPage","@id":"https://gambitbsm.org/documentation/code/files/analysis__atlas__13tev__2lepsoft__139invfb_8cpp/","url":"https://gambitbsm.org/documentation/code/files/analysis__atlas__13tev__2lepsoft__139invfb_8cpp/","name":"file analyses\/Analysis_ATLAS_13TeV_2LEPsoft_139invfb.cpp","description":"[No description available]","isPartOf":{"@id":"https://gambitbsm.org/#/schema/website/1"},"about":{"@id":"https://gambitbsm.org/#/schema/organization/1"},"datePublished":"0001-01-01T00:00:00CET","dateModified":"0001-01-01T00:00:00CET","breadcrumb":{"@id":"https://gambitbsm.org/documentation/code/files/analysis__atlas__13tev__2lepsoft__139invfb_8cpp/#/schema/breadcrumb/1"},"primaryImageOfPage":{"@id":"https://gambitbsm.org/documentation/code/files/analysis__atlas__13tev__2lepsoft__139invfb_8cpp/#/schema/image/2"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://gambitbsm.org/documentation/code/files/analysis__atlas__13tev__2lepsoft__139invfb_8cpp/"]}]},{"@type":"BreadcrumbList","@id":"https://gambitbsm.org/documentation/code/files/analysis__atlas__13tev__2lepsoft__139invfb_8cpp/#/schema/breadcrumb/1","name":"Breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"https://gambitbsm.org/","url":"https://gambitbsm.org/","name":"Home"}},{"@type":"ListItem","position":2,"item":{"@type":"WebPage","@id":"https://gambitbsm.org/documentation/","url":"https://gambitbsm.org/documentation/","name":"Documentation"}},{"@type":"ListItem","position":3,"item":{"@type":"WebPage","@id":"https://gambitbsm.org/documentation/code/","url":"https://gambitbsm.org/documentation/code/","name":"Code"}},{"@type":"ListItem","position":4,"item":{"@type":"WebPage","@id":"https://gambitbsm.org/documentation/code/files/","url":"https://gambitbsm.org/documentation/code/files/","name":"Files"}},{"@type":"ListItem","position":5,"item":{"@id":"https://gambitbsm.org/documentation/code/files/analysis__atlas__13tev__2lepsoft__139invfb_8cpp/"}}]},{"@context":"https://schema.org","@graph":[{"@type":"ImageObject","@id":"https://gambitbsm.org/documentation/code/files/analysis__atlas__13tev__2lepsoft__139invfb_8cpp/#/schema/image/2","url":"https://gambitbsm.org/gambit_logo.png","contentUrl":"https://gambitbsm.org/gambit_logo.png","caption":"file analyses\/Analysis_ATLAS_13TeV_2LEPsoft_139invfb.cpp"}]}]}</script><meta name=theme-color content="#fff"><link rel=icon href=https://gambitbsm.org/favicon.ico sizes=any><link rel=icon type=image/svg+xml href=https://gambitbsm.org/favicon.svg><link rel=apple-touch-icon sizes=180x180 href=https://gambitbsm.org/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=https://gambitbsm.org/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=https://gambitbsm.org/favicon-16x16.png><link rel=manifest crossorigin=use-credentials href=https://gambitbsm.org/site.webmanifest></head><body class="documentation single light"><div class=sticky-top><div class=header-bar></div><header class="navbar navbar-expand-md navbar-light doks-navbar"><nav class="container-xxl flex-wrap flex-md-nowrap" aria-label="Main navigation"><a class="navbar-brand p-0 me-auto" href=https://gambitbsm.org/ aria-label=GAMBIT><img class=logo-light src=https://gambitbsm.org/gambit_logo.png width=50px>
+<img class="logo-dark d-none" src=https://gambitbsm.org/gambit_logo.png width=50px>
+GAMBIT</a>
+<button class="btn btn-menu order-2 d-block d-lg-none" type=button data-bs-toggle=offcanvas data-bs-target=#offcanvasDoks aria-controls=offcanvasDoks aria-label="Open main menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button><div class="offcanvas offcanvas-end border-0 py-lg-1" tabindex=-1 id=offcanvasDoks data-bs-backdrop=true aria-labelledby=offcanvasDoksLabel><div class="header-bar d-lg-none"></div><div class="offcanvas-header d-lg-none"><h2 class="h5 offcanvas-title ps-2" id=offcanvasDoksLabel><a class=text-dark href=/>GAMBIT</a></h2><button type=button class="btn-close text-reset me-2" data-bs-dismiss=offcanvas aria-label="Close main menu"></button></div><div class="offcanvas-body p-4 p-lg-0"><ul class="nav flex-column flex-lg-row align-items-lg-center mt-2 mt-lg-0 ms-lg-2 me-lg-auto"><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Releases
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit/tree/release_2.7>GAMBIT 2-7 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.6>GAMBIT 2-6 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.5>GAMBIT 2-5 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.4>GAMBIT 2-4 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.3>GAMBIT 2-3 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.2>GAMBIT 2-2 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.1>GAMBIT 2-1 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_light_1.0>GAMBIT Light ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit/tags>All releases ⧉</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Documentation
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=/documentation/installation/introduction/>Installation</a></li><li><a class=dropdown-item href=/documentation/physics/analyses>Physics</a></li><li><a class=dropdown-item href=/documentation/tutorials/the_gambit_interface>Tutorials</a></li><li><a class=dropdown-item href=/documentation/help/common_problems_and_questions/>Help</a></li><li><a class=dropdown-item href=/documentation/code/index_classes>Code Reference</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Community
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=https://github.com/GambitBSM/wiki>Wiki</a></li><li><a class=dropdown-item href=/community/publications/>Publications</a></li><li><a class=dropdown-item href=/community/talks/>Talks</a></li><li><a class=dropdown-item href=/community/members/>Members</a></li><li><a class=dropdown-item href=/community/code_of_conduct/>Code of Conduct</a></li><li><a class=dropdown-item href=/community/contact/>Contact</a></li></ul></li></ul><hr class="text-black-50 my-4 d-lg-none"><form class="doks-search position-relative flex-grow-1 ms-lg-auto me-lg-2"><input id=search class="form-control is-search" type=search placeholder="Search site..." aria-label="Search site..." autocomplete=off><div id=suggestions class="shadow bg-white rounded d-none"></div></form><hr class="text-black-50 my-4 d-lg-none"><ul class="nav flex-column flex-lg-row"><li class=nav-item><a class="nav-link social-link" href=https://github.com/GambitBSM><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37.0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44.0 0020 4.77 5.07 5.07.0 0019.91 1S18.73.65 16 2.48a13.38 13.38.0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07.0 005 4.77 5.44 5.44.0 003.5 8.55c0 5.42 3.3 6.61 6.44 7A3.37 3.37.0 009 18.13V22"/></svg><small class="ms-2 d-lg-none">GitHub</small></a></li></ul><hr class="text-black-50 my-4 d-lg-none"><button id=mode class="btn btn-link" type=button aria-label="Toggle user interface mode">
+<span class=toggle-dark><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg></span><span class=toggle-light><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></span></button></div></div></nav></header></div><div class="wrap container-xxl" role=document><div class=content><div class="row flex-xl-nowrap"><div class="col-lg-5 col-xl-4 docs-sidebar"><nav class=docs-links aria-label="Main navigation"><ul class="list-unstyled collapsible-sidebar"><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-installation aria-expanded=false>
+Installation</button><div class=collapse id=section-installation><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/installation/introduction/>Getting Started</a></li><li><a class="docs-link rounded" href=/documentation/installation/docker_usage/>Docker Usage</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_linux/>Installation for Linux</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_windows/>Installation for Windows</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_macos/>Installation for macOS</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-tutorials aria-expanded=false>
+Tutorials</button><div class=collapse id=section-tutorials><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/tutorials/the_gambit_interface/>1 - The GAMBIT Interface</a></li><li><a class="docs-link rounded" href=/documentation/tutorials/in_person_tutorials/>In person tutorials</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-physics aria-expanded=false>
+Physics</button><div class=collapse id=section-physics><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/physics/analyses/>ColliderBit analysis</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-help aria-expanded=false>
+Help</button><div class=collapse id=section-help><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/help/common_problems_and_questions/>Common Problems and Questions</a></li><li><a class="docs-link rounded" href=/documentation/help/compiler_matrix/>Compiler Matrix</a></li><li><a class="docs-link rounded" href=/documentation/help/known_issues/>Known Issues</a></li><li><a class="docs-link rounded" href=/documentation/help/configuration_examples/>Configuration Examples</a></li><li><a class="docs-link rounded" href=/documentation/help/support/>Support</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-code aria-expanded=false>
+Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/code/index_classes/>Classes</a></li><li><a class="docs-link rounded" href=/documentation/code/index_files/>Files</a></li><li><a class="docs-link rounded" href=/documentation/code/index_pages/>Pages</a></li><li><a class="docs-link rounded" href=/documentation/code/index_namespaces/>Namespaces</a></li></ul></div></li></ul></nav></div><nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation"><div class=d-xl-none><button class="btn btn-outline-primary btn-sm doks-toc-toggle collapsed" type=button data-bs-toggle=collapse data-bs-target=#onThisPage aria-controls=doks-docs-nav aria-expanded=false aria-label="Toggle On this page navigation">
+<span>On this page</span>
+<span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg></span></button><div class=collapse id=onThisPage><div class="card card-body mt-3 py-1"><div class=page-links><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#classes>Classes</a></li><li><a href=#source-code>Source code</a></li></ul></nav></div></div></div></div><div class="page-links d-none d-xl-block"><h3>On this page</h3><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#classes>Classes</a></li><li><a href=#source-code>Source code</a></li></ul></nav></div></nav><main class="docs-content col-lg-11 col-xl-9 mx-xl-auto"><nav aria-label=breadcrumb><ol class=breadcrumb><li class=breadcrumb-item><a href=/>Home</a></li><li class=breadcrumb-item><a href=/documentation/>Documentation</a></li><li class=breadcrumb-item><a href=/documentation/code/>Code Reference</a></li><li class="breadcrumb-item active" aria-current=page>file analyses/Analysis_ATLAS_13TeV_2LEPsoft_139invfb.cpp</li></ol></nav><p class=lead></p><h1 id=file-analyses-analysis-atlas-13tev-2lepsoft-139invfb-cpp>file analyses/Analysis_ATLAS_13TeV_2LEPsoft_139invfb.cpp <a href=#file-analyses-analysis-atlas-13tev-2lepsoft-139invfb-cpp class=anchor aria-hidden=true>#</a></h1><p>[No description available]</p><h2 id=namespaces>Namespaces <a href=#namespaces class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th>Name</th></tr></thead><tbody><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit/>Gambit</a></strong><br>TODO: see if we can use this one:</td></tr><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit_1_1colliderbit/>Gambit::ColliderBit</a></strong></td></tr></tbody></table><h2 id=classes>Classes <a href=#classes class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th></th><th>Name</th></tr></thead><tbody><tr><td>class</td><td><strong><a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2lepsoft__139invfb/>Gambit::ColliderBit::Analysis_ATLAS_13TeV_2LEPsoft_139invfb</a></strong></td></tr><tr><td>class</td><td><strong><a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2lepsoft__exclusive__139invfb/>Gambit::ColliderBit::Analysis_ATLAS_13TeV_2LEPsoft_exclusive_139invfb</a></strong></td></tr><tr><td>class</td><td><strong><a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2lepsoft__combined__139invfb/>Gambit::ColliderBit::Analysis_ATLAS_13TeV_2LEPsoft_combined_139invfb</a></strong></td></tr></tbody></table><h2 id=source-code>Source code <a href=#source-code class=anchor aria-hidden=true>#</a></h2><pre><code>///
+///  \author Tomas Gonzalo
+///  \date 2019 June
+///  \date 2023 Sep
+///
+///  \author Chris Chang
+///  \date 2024 Nov
+///
+///  *********************************************
+
+// Based on https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/CONFNOTES/ATLAS-CONF-2019-014/
+// Updated by the published paper SUSY-2018-16, https://arxiv.org/abs/1911.12606
+
+// - 139 fb^-1 data
+
+#include &quot;gambit/cmake/cmake_variables.hpp&quot;
+#ifndef EXCLUDE_ROOT
+#ifndef EXCLUDE_RESTFRAMES
+
+#include &lt;vector&gt;
+#include &lt;cmath&gt;
+#include &lt;memory&gt;
+#include &lt;iomanip&gt;
+#include &lt;algorithm&gt;
+#include &lt;fstream&gt;
+
+#include &quot;gambit/Utils/util_functions.hpp&quot;
+#include &quot;gambit/ColliderBit/analyses/Analysis.hpp&quot;
+#include &quot;gambit/ColliderBit/analyses/AnalysisMacros.hpp&quot;
+#include &quot;gambit/ColliderBit/ATLASEfficiencies.hpp&quot;
+#include &quot;gambit/ColliderBit/analyses/Cutflow.hpp&quot;
+#include &quot;gambit/ColliderBit/mt2_bisect.h&quot;
+
+#include &quot;RestFrames/RestFrames.hh&quot;
+#include &quot;TLorentzVector.h&quot;
+
+using namespace std;
+
+namespace Gambit
+{
+  namespace ColliderBit
+  {
+
+    class Analysis_ATLAS_13TeV_2LEPsoft_139invfb : public Analysis
+    {
+
+    private:
+
+      unique_ptr&lt;RestFrames::LabRecoFrame&gt;        LAB;
+      unique_ptr&lt;RestFrames::DecayRecoFrame&gt;      CM;
+      unique_ptr&lt;RestFrames::DecayRecoFrame&gt;      S;
+
+      unique_ptr&lt;RestFrames::VisibleRecoFrame&gt;    ISR;
+      unique_ptr&lt;RestFrames::VisibleRecoFrame&gt;    V;
+      unique_ptr&lt;RestFrames::VisibleRecoFrame&gt;    L;
+
+      unique_ptr&lt;RestFrames::InvisibleRecoFrame&gt;  I;
+      unique_ptr&lt;RestFrames::InvisibleGroup&gt;      INV;
+
+      unique_ptr&lt;RestFrames::SetMassInvJigsaw&gt;    INV_Mass;
+
+      unique_ptr&lt;RestFrames::CombinatoricGroup&gt;   VIS;
+
+      unique_ptr&lt;RestFrames::MinMassesCombJigsaw&gt; SplitVis;
+
+
+    public:
+
+      // Required detector sim
+      static constexpr const char* detector = &quot;ATLAS&quot;;
+
+      Analysis_ATLAS_13TeV_2LEPsoft_139invfb()
+      {
+
+        defineSignalRegions(&quot;SR-E-low-ee-&quot;, 6, &quot;njets &gt; 0&quot;, &quot;MET trigger&quot;, &quot;2 leptons&quot;, &quot;veto 3 GeV &lt; mll &lt; 3.2 GeV&quot;,
+                                   &quot;lepton author 16 veto&quot;, &quot;min(DeltaPhi(any jet)) &gt; 0.4&quot;, &quot;DeltaPhi(j1) &gt; 2.0&quot;,
+                           &quot;lepton truth matching&quot;, &quot;1&lt;mll &lt; 60 GeV&quot;, &quot;DeltaRee &gt; 0.3, DeltaRmumu &gt; 0.05, DeltaRemu &gt; 0.2&quot;,
+                           &quot;leading lepton pT &gt; 5GeV&quot;, &quot;number of jets &gt; 1&quot;, &quot;leading jet pT &gt; 100GeV&quot;,
+                           &quot;number of b-tagged jets = 0&quot;, &quot;mtautau &lt; 0 or &gt; 160 GeV&quot;, &quot;ee or mumu&quot;, &quot;120 &lt; met &lt; 200 GeV&quot;,
+                           &quot;met/HTlep &lt; 10&quot;, &quot;0.8 &lt; RISR &lt; 1.0&quot;, &quot;subleading lepton pT &gt; 5+mll/4&quot;, &quot;10 &lt; mTl1 &lt; 60 GeV&quot;);
+        defineSignalRegions(&quot;SR-E-low-mumu-&quot;, 8, &quot;njets &gt; 0&quot;, &quot;MET trigger&quot;, &quot;2 leptons&quot;, &quot;veto 3 GeV &lt; mll &lt; 3.2 GeV&quot;, &quot;lepton author 16 veto&quot;,
+                                     &quot;min(DeltaPhi(any jet)) &gt; 0.4&quot;, &quot;DeltaPhi(j1) &gt; 2.0&quot;, &quot;lepton truth matching&quot;, &quot;1&lt;mll &lt; 60 GeV&quot;,
+                         &quot;DeltaRee &gt; 0.3, DeltaRmumu &gt; 0.05, DeltaRemu &gt; 0.2&quot;, &quot;leading lepton pT &gt; 5GeV&quot;,
+                         &quot;number of jets &gt; 1&quot;, &quot;leading jet pT &gt; 100GeV&quot;, &quot;number of b-tagged jets = 0&quot;,
+                         &quot;mtautau &lt; 0 or &gt; 160 GeV&quot;, &quot;ee or mumu&quot;, &quot;120 &lt; met &lt; 200 GeV&quot;, &quot;met/HTlep &lt; 10&quot;,
+                         &quot;0.8 &lt; RISR &lt; 1.0&quot;, &quot;subleading lepton pT &gt; 5+mll/4&quot;, &quot;10 &lt; mTl1 &lt; 60 GeV&quot;);
+        defineSignalRegions(&quot;SR-E-low-combined-&quot;, 8, &quot;njets &gt; 0&quot;, &quot;MET trigger&quot;, &quot;2 leptons&quot;, &quot;veto 3 GeV &lt; mll &lt; 3.2 GeV&quot;, &quot;lepton author 16 veto&quot;,
+                                         &quot;min(DeltaPhi(any jet)) &gt; 0.4&quot;, &quot;DeltaPhi(j1) &gt; 2.0&quot;, &quot;lepton truth matching&quot;, &quot;1&lt;mll &lt; 60 GeV&quot;,
+                             &quot;DeltaRee &gt; 0.3, DeltaRmumu &gt; 0.05, DeltaRemu &gt; 0.2&quot;, &quot;leading lepton pT &gt; 5GeV&quot;,
+                             &quot;number of jets &gt; 1&quot;, &quot;leading jet pT &gt; 100GeV&quot;, &quot;number of b-tagged jets = 0&quot;,
+                             &quot;mtautau &lt; 0 or &gt; 160 GeV&quot;, &quot;ee or mumu&quot;, &quot;120 &lt; met &lt; 200 GeV&quot;, &quot;met/HTlep &lt; 10&quot;,
+                             &quot;0.8 &lt; RISR &lt; 1.0&quot;, &quot;subleading lepton pT &gt; 5+mll/4&quot;, &quot;10 &lt; mTl1 &lt; 60 GeV&quot;);
+
+
+        defineSignalRegions(&quot;SR-E-med-ee-&quot;, 4, &quot;njets &gt; 0&quot;, &quot;MET trigger&quot;, &quot;2 leptons&quot;, &quot;veto 3 GeV &lt; mll &lt; 3.2 GeV&quot;, &quot;lepton author 16 veto&quot;,
+                                   &quot;min(DeltaPhi(any jet)) &gt; 0.4&quot;, &quot;DeltaPhi(j1) &gt; 2.0&quot;, &quot;lepton truth matching&quot;, &quot;1&lt;mll &lt; 60 GeV&quot;,
+                           &quot;DeltaRee &gt; 0.3, DeltaRmumu &gt; 0.05, DeltaRemu &gt; 0.2&quot;, &quot;leading lepton pT &gt; 5GeV&quot;,
+                           &quot;number of jets &gt; 1&quot;, &quot;leading jet pT &gt; 100GeV&quot;, &quot;number of b-tagged jets = 0&quot;,
+                           &quot;mtautau &lt; 0 or &gt; 160 GeV&quot;, &quot;ee or mumu&quot;, &quot;120 &lt; met &lt; 200 GeV&quot;, &quot;met/HTlep &gt; 10&quot;, &quot;MTS &lt; 50 GeV&quot;);
+        defineSignalRegions(&quot;SR-E-med-mumu-&quot;, 6, &quot;njets &gt; 0&quot;, &quot;MET trigger&quot;, &quot;2 leptons&quot;, &quot;veto 3 GeV &lt; mll &lt; 3.2 GeV&quot;, &quot;lepton author 16 veto&quot;,
+                                     &quot;min(DeltaPhi(any jet)) &gt; 0.4&quot;, &quot;DeltaPhi(j1) &gt; 2.0&quot;, &quot;lepton truth matching&quot;, &quot;1&lt;mll &lt; 60 GeV&quot;,
+                         &quot;DeltaRee &gt; 0.3, DeltaRmumu &gt; 0.05, DeltaRemu &gt; 0.2&quot;, &quot;leading lepton pT &gt; 5GeV&quot;,
+                         &quot;number of jets &gt; 1&quot;, &quot;leading jet pT &gt; 100GeV&quot;, &quot;number of b-tagged jets = 0&quot;,
+                         &quot;mtautau &lt; 0 or &gt; 160 GeV&quot;, &quot;ee or mumu&quot;, &quot;120 &lt; met &lt; 200 GeV&quot;, &quot;met/HTlep &gt; 10&quot;, &quot;MTS &lt; 50 GeV&quot;);
+        defineSignalRegions(&quot;SR-E-med-combined-&quot;, 6, &quot;njets &gt; 0&quot;, &quot;MET trigger&quot;, &quot;2 leptons&quot;, &quot;veto 3 GeV &lt; mll &lt; 3.2 GeV&quot;, &quot;lepton author 16 veto&quot;,
+                                         &quot;min(DeltaPhi(any jet)) &gt; 0.4&quot;, &quot;DeltaPhi(j1) &gt; 2.0&quot;, &quot;lepton truth matching&quot;,
+                             &quot;1&lt;mll &lt; 60 GeV&quot;, &quot;DeltaRee &gt; 0.3, DeltaRmumu &gt; 0.05, DeltaRemu &gt; 0.2&quot;,
+                             &quot;leading lepton pT &gt; 5GeV&quot;, &quot;number of jets &gt; 1&quot;, &quot;leading jet pT &gt; 100GeV&quot;,
+                             &quot;number of b-tagged jets = 0&quot;, &quot;mtautau &lt; 0 or &gt; 160 GeV&quot;, &quot;ee or mumu&quot;,
+                             &quot;120 &lt; met &lt; 200 GeV&quot;, &quot;met/HTlep &gt; 10&quot;, &quot;MTS &lt; 50 GeV&quot;);
+
+        defineSignalRegions(&quot;SR-E-high-ee-&quot;, 6, &quot;njets &gt; 0&quot;, &quot;MET trigger&quot;, &quot;2 leptons&quot;, &quot;veto 3 GeV &lt; mll &lt; 3.2 GeV&quot;, &quot;lepton author 16 veto&quot;,
+                                    &quot;min(DeltaPhi(any jet)) &gt; 0.4&quot;, &quot;DeltaPhi(j1) &gt; 2.0&quot;, &quot;lepton truth matching&quot;, &quot;1&lt;mll &lt; 60 GeV&quot;,
+                        &quot;DeltaRee &gt; 0.3, DeltaRmumu &gt; 0.05, DeltaRemu &gt; 0.2&quot;, &quot;leading lepton pT &gt; 5GeV&quot;,
+                        &quot;number of jets &gt; 1&quot;, &quot;leading jet pT &gt; 100GeV&quot;, &quot;number of b-tagged jets = 0&quot;,
+                        &quot;mtautau &lt; 0 or &gt; 160 GeV&quot;, &quot;ee or mumu&quot;, &quot;mTl1 &lt; 60 GeV&quot;, &quot;met &gt; 200 GeV&quot;,
+                        &quot;max(0.85, 0.98-0.02xmll) &lt; RISR &lt; 1.0&quot;, &quot;subleading lepton pT &gt; min(10,2+mll/3)&quot;);
+        defineSignalRegions(&quot;SR-E-high-mumu-&quot;, 8, &quot;njets &gt; 0&quot;, &quot;MET trigger&quot;, &quot;2 leptons&quot;, &quot;veto 3 GeV &lt; mll &lt; 3.2 GeV&quot;, &quot;lepton author 16 veto&quot;,
+                                          &quot;min(DeltaPhi(any jet)) &gt; 0.4&quot;, &quot;DeltaPhi(j1) &gt; 2.0&quot;, &quot;lepton truth matching&quot;, &quot;1&lt;mll &lt; 60 GeV&quot;,
+                          &quot;DeltaRee &gt; 0.3, DeltaRmumu &gt; 0.05, DeltaRemu &gt; 0.2&quot;, &quot;leading lepton pT &gt; 5GeV&quot;,
+                          &quot;number of jets &gt; 1&quot;, &quot;leading jet pT &gt; 100GeV&quot;, &quot;number of b-tagged jets = 0&quot;,
+                          &quot;mtautau &lt; 0 or &gt; 160 GeV&quot;, &quot;ee or mumu&quot;, &quot;mTl1 &lt; 60 GeV&quot;, &quot;met &gt; 200 GeV&quot;,
+                          &quot;max(0.85, 0.98-0.02xmll) &lt; RISR &lt; 1.0&quot;, &quot;subleading lepton pT &gt; min(10,2+mll/3)&quot;);
+        defineSignalRegions(&quot;SR-E-high-combined-&quot;, 8, &quot;njets &gt; 0&quot;, &quot;MET trigger&quot;, &quot;2 leptons&quot;, &quot;veto 3 GeV &lt; mll &lt; 3.2 GeV&quot;, &quot;lepton author 16 veto&quot;,
+                                          &quot;min(DeltaPhi(any jet)) &gt; 0.4&quot;, &quot;DeltaPhi(j1) &gt; 2.0&quot;, &quot;lepton truth matching&quot;,
+                              &quot;1&lt;mll &lt; 60 GeV&quot;, &quot;DeltaRee &gt; 0.3, DeltaRmumu &gt; 0.05, DeltaRemu &gt; 0.2&quot;,
+                              &quot;leading lepton pT &gt; 5GeV&quot;, &quot;number of jets &gt; 1&quot;, &quot;leading jet pT &gt; 100GeV&quot;,
+                              &quot;number of b-tagged jets = 0&quot;, &quot;mtautau &lt; 0 or &gt; 160 GeV&quot;, &quot;ee or mumu&quot;,
+                              &quot;mTl1 &lt; 60 GeV&quot;, &quot;met &gt; 200 GeV&quot;, &quot;max(0.85, 0.98-0.02xmll) &lt; RISR &lt; 1.0&quot;, &quot;subleading lepton pT &gt; min(10,2+mll/3)&quot;);
+
+        defineSignalRegions(&quot;SR-E-1l1T-&quot;, 6, &quot;njets &gt; 0&quot;, &quot;MET trigger&quot;, &quot;1 lepton and &gt;=1 track&quot;, &quot;veto 3 GeV &lt; mll &lt; 3.2 GeV&quot;,
+                                 &quot;lepton author 16 veto&quot;, &quot;MET &gt; 200GeV&quot;, &quot;min(DeltaPhi(any jet,MET) &gt; 0.4&quot;, &quot;Delta(j1) &gt; 2.0&quot;,
+                         &quot;0.5 &lt; mltrack &lt; 5GeV&quot;, &quot;DeltaRltrack &gt; 0.05&quot;, &quot;number of jets &gt;= 1&quot;, &quot;leading jet pT &gt; 100 GeV&quot;,
+                         &quot;MET/HTlep &gt; 30&quot;, &quot;Deltaltrack &lt; 1.5&quot;, &quot;Lepton pT &lt; 10 GeV&quot;, &quot;Track pT &lt; 5 GeV&quot;,
+                         &quot;DeltaPhi(l,MET) &lt; 1.0&quot;, &quot;SF lepton-track pair&quot;, &quot;OS lepton-track pair&quot;);
+
+        defineSignalRegions(&quot;SR-VBF-low-&quot;, 7, &quot;pTl1 &gt; 5&quot;, &quot;2 baseline leptons&quot;, &quot;2 signal leptons&quot;, &quot;MET trigger&quot;, &quot;lepton author 16 veto&quot;,
+                                  &quot;min(DeltaPhi(any jet)) &gt; 0.4&quot;, &quot;DeltaRee &gt; 0.3, DeltaRmumu &gt; 0.05, DeltaRemu &gt; 0.2&quot;, &quot;SF&quot;, &quot;OS&quot;,
+                          &quot;1 &lt; mll &lt; 60 GeV&quot;, &quot;veto 3 GeV &lt; mll &lt; 3.2 GeV&quot;, &quot;mtautau &lt; 0 or &gt; 160 GeV&quot;, &quot;number of b-tagged jets = 0&quot;,
+                          &quot;leading jet pT &gt; 100 GeV&quot;, &quot;pT(j2) &gt; 40 GeV&quot;, &quot;met &gt; 200 GeV&quot;, &quot;met/HTlep &gt; 2.0&quot;,
+                          &quot;subleading lepton pT &gt; min(10,2+mll/3)&quot;, &quot;mTl1 &lt; 60 GeV&quot;, &quot;RVBF &lt; 1.0&quot;, &quot;RVBF &gt; max(0.6,0.92-mll/2 GeV)&quot;,
+                          &quot;etaj1*etaj2 &lt; 0&quot;, &quot;mjj &gt; 400 GeV&quot;, &quot;Deltaetajj &gt; 2&quot;);
+        defineSignalRegions(&quot;SR-VBF-high-&quot;, 7, &quot;pTl1 &gt; 5&quot;, &quot;2 baseline leptons&quot;, &quot;2 signal leptons&quot;, &quot;MET trigger&quot;, &quot;lepton author 16 veto&quot;,
+                                   &quot;min(DeltaPhi(any jet)) &gt; 0.4&quot;, &quot;DeltaRee &gt; 0.3, DeltaRmumu &gt; 0.05, DeltaRemu &gt; 0.2&quot;, &quot;SF&quot;, &quot;OS&quot;,
+                           &quot;1 &lt; mll &lt; 60 GeV&quot;, &quot;veto 3 GeV &lt; mll &lt; 3.2 GeV&quot;, &quot;mtautau &lt; 0 or &gt; 160 GeV&quot;, &quot;number of b-tagged jets = 0&quot;,
+                           &quot;leading jet pT &gt; 100 GeV&quot;, &quot;pT(j2) &gt; 40 GeV&quot;, &quot;met &gt; 200 GeV&quot;, &quot;met/HTlep &gt; 2.0&quot;,
+                           &quot;subleading lepton pT &gt; min(10,2+mll/3)&quot;, &quot;mTl1 &lt; 60 GeV&quot;, &quot;RVBF &lt; 1.0&quot;,
+                           &quot;RVBF &gt; max(0.6,0.92-mll/2 GeV)&quot;, &quot;etaj1*etaj2 &lt; 0&quot;, &quot;mjj &gt; 400 GeV&quot;, &quot;Deltaetajj &gt; 2&quot;);
+
+        defineSignalRegions(&quot;SR-S-low-ee-&quot;, 8, &quot;njets &gt; 0&quot;, &quot;MET trigger&quot;, &quot;2 leptons&quot;, &quot;veto 3 GeV &lt; mll &lt; 3.2 GeV&quot;, &quot;lepton author 16 veto&quot;,
+                                   &quot;min(DeltaPhi(any jet)) &gt; 0.4&quot;, &quot;DeltaPhi(j1) &gt; 2.0&quot;, &quot;lepton truth matching&quot;, &quot;1&lt;mll &lt; 60 GeV&quot;,
+                           &quot;DeltaRee &gt; 0.3, DeltaRmumu &gt; 0.05, DeltaRemu &gt; 0.2&quot;, &quot;leading lepton pT &gt; 5GeV&quot;, &quot;number of jets &gt; 1&quot;,
+                           &quot;leading jet pT &gt; 100GeV&quot;, &quot;number of b-tagged jets = 0&quot;, &quot;mtautau &lt; 0 or &gt; 160 GeV&quot;, &quot;ee or mumu&quot;,
+                           &quot;150 &lt; met &lt; 200 GeV&quot;, &quot;0.8 &lt; RISR &lt; 1.0&quot;, &quot;subleading lepton pT &gt; min(15,7.5+0.75*(mT2100-100))&quot;);
+        defineSignalRegions(&quot;SR-S-low-mumu-&quot;, 8, &quot;njets &gt; 0&quot;, &quot;MET trigger&quot;, &quot;2 leptons&quot;, &quot;veto 3 GeV &lt; mll &lt; 3.2 GeV&quot;, &quot;lepton author 16 veto&quot;,
+                                     &quot;min(DeltaPhi(any jet)) &gt; 0.4&quot;, &quot;DeltaPhi(j1) &gt; 2.0&quot;, &quot;lepton truth matching&quot;, &quot;1&lt;mll &lt; 60 GeV&quot;,
+                         &quot;DeltaRee &gt; 0.3, DeltaRmumu &gt; 0.05, DeltaRemu &gt; 0.2&quot;, &quot;leading lepton pT &gt; 5GeV&quot;, &quot;number of jets &gt; 1&quot;,
+                         &quot;leading jet pT &gt; 100GeV&quot;, &quot;number of b-tagged jets = 0&quot;, &quot;mtautau &lt; 0 or &gt; 160 GeV&quot;, &quot;ee or mumu&quot;,
+                         &quot;150 &lt; met &lt; 200 GeV&quot;, &quot;0.8 &lt; RISR &lt; 1.0&quot;, &quot;subleading lepton pT &gt; min(15,7.5+0.75*(mT2100-100))&quot;);
+        defineSignalRegions(&quot;SR-S-low-combined-&quot;, 8, &quot;njets &gt; 0&quot;, &quot;MET trigger&quot;, &quot;2 leptons&quot;, &quot;veto 3 GeV &lt; mll &lt; 3.2 GeV&quot;, &quot;lepton author 16 veto&quot;,
+                                         &quot;min(DeltaPhi(any jet)) &gt; 0.4&quot;, &quot;DeltaPhi(j1) &gt; 2.0&quot;, &quot;lepton truth matching&quot;, &quot;1&lt;mll &lt; 60 GeV&quot;,
+                             &quot;DeltaRee &gt; 0.3, DeltaRmumu &gt; 0.05, DeltaRemu &gt; 0.2&quot;, &quot;leading lepton pT &gt; 5GeV&quot;, &quot;number of jets &gt; 1&quot;,
+                             &quot;leading jet pT &gt; 100GeV&quot;, &quot;number of b-tagged jets = 0&quot;, &quot;mtautau &lt; 0 or &gt; 160 GeV&quot;, &quot;ee or mumu&quot;,
+                             &quot;150 &lt; met &lt; 200 GeV&quot;, &quot;0.8 &lt; RISR &lt; 1.0&quot;, &quot;subleading lepton pT &gt; min(15,7.5+0.75*(mT2100-100))&quot;);
+
+        defineSignalRegions(&quot;SR-S-high-ee-&quot;, 8, &quot;njets &gt; 0&quot;, &quot;MET trigger&quot;, &quot;2 leptons&quot;, &quot;veto 3GeV &lt; mll &lt; 3.2GeV&quot;, &quot;lepton author 16 veto&quot;,
+                                    &quot;min(DeltaPhi(any jet)) &gt; 0.4&quot;, &quot;DeltaPhi(j1) &gt; 2.0&quot;, &quot;lepton truth matching&quot;, &quot;1&lt;mll &lt; 60 GeV&quot;,
+                        &quot;DeltaRee &gt; 0.3, DeltaRmumu &gt; 0.05, DeltaRemu &gt; 0.2&quot;, &quot;leading lepton pT &gt; 5GeV&quot;, &quot;number of jets &gt; 1&quot;,
+                        &quot;leading jet pT &gt; 100GeV&quot;, &quot;number of b-tagged jets = 0&quot;, &quot;mtautau &lt; 0 or &gt; 160 GeV&quot;, &quot;ee or mumu&quot;,
+                        &quot;met &gt; 200 GeV&quot;, &quot;max(0.85,0.98-0.02*mT2100) &lt; RISR &lt; 1.0&quot;, &quot;subleading lepton pT &gt; min(20,2.5+2.5*(mT2100-100))&quot;);
+        defineSignalRegions(&quot;SR-S-high-mumu-&quot;, 8, &quot;njets &gt; 0&quot;, &quot;MET trigger&quot;, &quot;2 leptons&quot;, &quot;veto 3GeV &lt; mll &lt; 3.2GeV&quot;, &quot;lepton author 16 veto&quot;,
+                                      &quot;min(DeltaPhi(any jet)) &gt; 0.4&quot;, &quot;DeltaPhi(j1) &gt; 2.0&quot;, &quot;lepton truth matching&quot;, &quot;1&lt;mll &lt; 60 GeV&quot;,
+                          &quot;DeltaRee &gt; 0.3, DeltaRmumu &gt; 0.05, DeltaRemu &gt; 0.2&quot;, &quot;leading lepton pT &gt; 5GeV&quot;, &quot;number of jets &gt; 1&quot;,
+                          &quot;leading jet pT &gt; 100GeV&quot;, &quot;number of b-tagged jets = 0&quot;, &quot;mtautau &lt; 0 or &gt; 160 GeV&quot;, &quot;ee or mumu&quot;,
+                          &quot;met &gt; 200 GeV&quot;, &quot;max(0.85,0.98-0.02*mT2100) &lt; RISR &lt; 1.0&quot;, &quot;subleading lepton pT &gt; min(20,2.5+2.5*(mT2100-100))&quot;);
+        defineSignalRegions(&quot;SR-S-high-combined-&quot;, 8, &quot;njets &gt; 0&quot;, &quot;MET trigger&quot;, &quot;2 leptons&quot;, &quot;veto 3GeV &lt; mll &lt; 3.2GeV&quot;, &quot;lepton author 16 veto&quot;,
+                                          &quot;min(DeltaPhi(any jet)) &gt; 0.4&quot;, &quot;DeltaPhi(j1) &gt; 2.0&quot;, &quot;lepton truth matching&quot;, &quot;1&lt;mll &lt; 60 GeV&quot;,
+                              &quot;DeltaRee &gt; 0.3, DeltaRmumu &gt; 0.05, DeltaRemu &gt; 0.2&quot;, &quot;leading lepton pT &gt; 5GeV&quot;, &quot;number of jets &gt; 1&quot;,
+                              &quot;leading jet pT &gt; 100GeV&quot;, &quot;number of b-tagged jets = 0&quot;, &quot;mtautau &lt; 0 or &gt; 160 GeV&quot;, &quot;ee or mumu&quot;,
+                              &quot;met &gt; 200 GeV&quot;, &quot;max(0.85,0.98-0.02*mT2100) &lt; RISR &lt; 1.0&quot;, &quot;subleading lepton pT &gt; min(20,2.5+2.5*(mT2100-100))&quot;);
+
+        set_analysis_name(&quot;ATLAS_13TeV_2LEPsoft_139invfb&quot;);
+        set_detector_name(detector);
+        set_luminosity(139);
+
+
+        // Recursive jigsaw stuff
+        #pragma omp critical (init_ATLAS_13TeV_2LEPsoft_139invfb)
+        {
+          LAB.reset(new RestFrames::LabRecoFrame(&quot;LAB&quot;,&quot;LAB&quot;));
+          CM.reset(new RestFrames::DecayRecoFrame(&quot;CM&quot;,&quot;CM&quot;));
+          S.reset(new RestFrames::DecayRecoFrame(&quot;S&quot;,&quot;S&quot;));
+          ISR.reset(new RestFrames::VisibleRecoFrame(&quot;ISR&quot;,&quot;ISR&quot;));
+          V.reset(new RestFrames::VisibleRecoFrame(&quot;V&quot;,&quot;V&quot;));
+          L.reset(new RestFrames::VisibleRecoFrame(&quot;L&quot;,&quot;L&quot;));
+          I.reset(new RestFrames::InvisibleRecoFrame(&quot;I&quot;,&quot;I&quot;));
+
+          INV.reset(new RestFrames::InvisibleGroup(&quot;INV&quot;,&quot;INV&quot;));
+          INV_Mass.reset(new RestFrames::SetMassInvJigsaw(&quot;INV_Mass&quot;, &quot;INV_Mass&quot;));
+
+          VIS.reset(new RestFrames::CombinatoricGroup(&quot;VIS&quot;,&quot;VIS&quot;));
+          SplitVis.reset(new RestFrames::MinMassesCombJigsaw(&quot;SplitVis&quot;, &quot;SplitVis&quot;));
+
+          LAB-&gt;SetChildFrame(*CM);
+          CM-&gt;AddChildFrame(*ISR);
+          CM-&gt;AddChildFrame(*S);
+          S-&gt;AddChildFrame(*V);
+          S-&gt;AddChildFrame(*I);
+          S-&gt;AddChildFrame(*L);
+
+          if(!LAB-&gt;InitializeTree())
+          {
+            str errmsg;
+            errmsg  = &quot;Some problem occurred when calling LAB-&gt;InitializeTree() from the Analysis_ATLAS_13TeV_2LEPsoft_139invfb analysis class.\n&quot;;
+            piped_errors.request(LOCAL_INFO, errmsg);
+          }
+
+          //////////////////////////////
+          //Setting the invisible
+          //////////////////////////////
+          INV-&gt;AddFrame(*I);
+
+          VIS-&gt;AddFrame(*ISR);
+          VIS-&gt;SetNElementsForFrame(*ISR, 1, false);
+          VIS-&gt;AddFrame(*V);
+          VIS-&gt;SetNElementsForFrame(*V, 0, false);
+
+          INV-&gt;AddJigsaw(*INV_Mass);
+          VIS-&gt;AddJigsaw(*SplitVis);
+
+          SplitVis-&gt;AddFrame(*ISR,0);
+          SplitVis-&gt;AddFrame(*V,1);
+          SplitVis-&gt;AddFrame(*I,1);
+          SplitVis-&gt;AddFrame(*L,1);
+
+          if(!LAB-&gt;InitializeAnalysis())
+          {
+            str errmsg;
+            errmsg  = &quot;Some problem occurred when calling LAB-&gt;InitializeAnalysis() from the Analysis_ATLAS_13TeV_2LEPsoft_139invfb analysis class.\n&quot;;
+            piped_errors.request(LOCAL_INFO, errmsg);
+          }
+        }
+      }
+
+      void run(const HEPUtils::Event* event)
+      {
+
+        // Missing momentum and energy
+        double met = event-&gt;met();
+        HEPUtils::P4 ptot = event-&gt;missingmom();
+
+        // TODO: Candidate events are required to have at least one reconstructed pp interaction vertex
+        // with a minimum of two associated tracks with pT &gt; 500 MeV
+        // TODO: In events with multiple vertices, the primary vertex is defined as the one
+        // with the highest sum pT^2 of associated tracks.
+        // Missing: We cannot reject events with detector noise or non-collision backgrounds.
+
+        // *******************
+        // Preselected objects
+
+        // Electrons are required to have pT &gt; 4.5 GeV and |η| &lt; 2.47.
+        // There is no VeryLoose criterium in 1908.00005, so using Loose
+        BASELINE_PARTICLES(event-&gt;electrons(), preselectedElectrons, 4.5, 0, DBL_MAX, 2.47)
+        applyEfficiency(preselectedElectrons, ATLAS::eff1DEl.at(&quot;ATLAS_SUSY_2018_16&quot;), /* bin_pT*/ true);
+
+        // Preselected electrons are further required to pass the calorimeter-
+        // and tracking-based VeryLoose likelihood identification (arXiv:1902.04655),
+        // and to have a longitudinal impact parameter z0 relative to the primary vertex
+        // that satisfies |z0 sin θ| &lt; 0.5 mm.
+        // Missing: We cannot add cuts relating to impact parameters
+
+        // Muons are required to satisfy pT &gt; 3 GeV and |η| &lt; 2.5.
+        // Preselected muons are identified using the LowPt criterion,
+        // a re-optimised selection similar to those defined in (arXiv:1603.05598)
+        // but with improved signal efficiency and background rejection for pT &lt; 10 GeV muon candidates.
+        // Preselected muons must also satisfy |z0 sin θ| &lt; 0.5 mm
+        // Missing: No impact parameter info
+
+        BASELINE_PARTICLES(event-&gt;muons(), preselectedMuons, 3.0, 0, DBL_MAX, 2.5)
+        applyEfficiency(preselectedMuons, ATLAS::eff1DMu.at(&quot;ATLAS_SUSY_2018_16&quot;), /* bin_pT*/ true);
+
+        // Preselected tracks with pT &gt; 500 MeV and η &lt; 2.5
+        // Signal tracks are required to be within ∆R = 0.01 of a reconstructed electron or muon candidate.
+        // Electron (muon) candidates can be reconstructed with transverse momenta as low as 1 (2) GeV,
+        // and are required to fail the signal lepton requirements defined above to avoid any overlap
+        // We do not really have tracks, so for our purposes, signal tracks are just leptons
+        // down to 500 MeV that are not signal leptons.
+        // First select the preselected tracks and we'll compare to signal leptons later
+        std::vector&lt;const HEPUtils::Particle*&gt; preselectedTracks;
+        for (const HEPUtils::Particle* e : event-&gt;electrons())
+        {
+          if (e-&gt;pT() &gt; 0.5 &amp;&amp; e-&gt;pT() &lt; 4.5 &amp;&amp; e-&gt;abseta() &lt; 2.5) preselectedTracks.push_back(e);
+        }
+
+        for (const HEPUtils::Particle* mu : event-&gt;muons())
+        {
+          if (mu-&gt;pT() &gt; 0.5 &amp;&amp; mu-&gt;pT() &lt; 3.0 &amp;&amp; mu-&gt;abseta() &lt; 2.5) preselectedTracks.push_back(mu);
+        }
+
+        // Apply Track Efficiency (Figure 3 of 1911.12606)
+        applyEfficiency(preselectedTracks, ATLAS::eff1DTrack.at(&quot;ATLAS_SUSY_2018_16_isolated_track&quot;), /* use pT bins*/ true);
+
+
+        // Preselected jets are reconstructed from calorimeter topological energy clusters [105]
+        // in the region |η| &lt; 4.5 using the anti-kt algorithm [106, 107]
+        // with radius parameter R = 0.4. The jets are required to have pT &gt; 20 GeV
+        // after being calibrated in accord with Ref. [108]
+        // and having the expected energy contribution from pileup subtracted according to the jet area [109].
+        // In order to suppress jets due to pileup, jets with pT &lt; 120 GeV
+        // and |η| &lt; 2.5 are required to satisfy the Medium working point of the jet vertex tagger [109],
+        // which uses information from the tracks associated with the jet.
+        // The Loose working point of the forward jet vertex tagger [110] is in turn used
+        // to suppress pileup in jets with pT &lt; 50 GeV and |η| &gt; 2.5.
+        // TODO: There are neither Medium nor Loose WP defined in the references, so not sure which efficiency to apply
+        BASELINE_JETS(event-&gt;jets(&quot;antikt_R04&quot;), preselectedJets, 20, 0, DBL_MAX, 4.5)
+
+        // B-tagged jets, are identified from preselected jets within |η| &lt; 2.5.
+        // The pT &gt; 20 GeV requirement is maintained to maximise the rejection of the tt¯ background.
+        // The b-tagging algorithm working point is chosen so that b-jets
+        // from simulated tt¯ events are identified with an 85% efficiency,
+        // with rejection factors of 3 for charm-quark jets and 34 for light-quark and gluon jets.
+        // Jets identified as containing b-hadron decays, referred to as b-tagged jets,
+        // are identified from preselected jets within |η| &lt; 2.5 using the MV2c10 algorithm [111].
+        // The pT &gt; 20 GeV requirement is maintained to maximize the rejection of the tt¯ background.
+        // The b-tagging algorithm working point is chosen so that b-jets from simulated tt¯ events
+        // are identified with an 85% efficiency, with rejection factors of 2.7 for charm-quark jets
+        // and 25 for light-quark and gluon jets.
+        std::vector&lt;const HEPUtils::Jet*&gt; preselectedBJets, preselectedNonBJets;
+        double btag = 0.85; double cmisstag = 1/2.7; double misstag = 1/25.;
+        for (const HEPUtils::Jet* jet : preselectedJets)
+        {
+          if (jet-&gt;btag() &amp;&amp; jet-&gt;abseta() &lt; 2.5 &amp;&amp; random_bool(btag) ) preselectedBJets.push_back(jet);
+          else if (jet-&gt;ctag() &amp;&amp; random_bool(cmisstag) ) preselectedBJets.push_back(jet);
+          else if (random_bool(misstag)) preselectedBJets.push_back(jet);
+          else preselectedNonBJets.push_back(jet);
+        }
+
+        // ***************
+        // Overlap removal
+
+        // Electrons within R &lt; 0.2 of a muon are removed
+        removeOverlap(preselectedElectrons, preselectedMuons, 0.01);
+
+        // Non-b-tagged jets that are separated from the remaining electrons by ∆Ry &lt; 0.2 are removed
+        // Using rapidity instead of pseudorapidity
+        removeOverlap(preselectedNonBJets, preselectedElectrons, 0.2, true);
+
+        // Jets containing a muon candidate within ∆Ry &lt; 0.4 and with fewer than three tracks
+        // with pT &gt; 500 MeV are removed to suppress muon bremsstrahlung.
+        // Using rapidity instead of pseudorapidity
+        // Do this for both on b-tagged and non-b-tagged jets
+        // Missing: We have no information about internal jet tracks
+        removeOverlap(preselectedBJets, preselectedMuons, 0.4, true);
+        removeOverlap(preselectedNonBJets, preselectedMuons, 0.4, true);
+
+        // Electrons or muons with ∆Ry &lt; 0.4 from surviving jet candidates are removed
+        // to suppress bottom and charm hadron decays
+        // Do this for both b-tagged and non-b-tagged jets
+        removeOverlap(preselectedElectrons, preselectedNonBJets, 0.4);
+        removeOverlap(preselectedMuons, preselectedNonBJets, 0.4);
+        removeOverlap(preselectedElectrons, preselectedBJets, 0.4);
+        removeOverlap(preselectedMuons, preselectedBJets, 0.4);
+
+        // Preselected leptons
+        BASELINE_PARTICLE_COMBINATION(preselectedLeptons, preselectedElectrons, preselectedMuons)
+        size_t nBaselineLeptons = preselectedLeptons.size();
+
+        int Filter_N_jets = preselectedBJets.size() + preselectedNonBJets.size();
+
+        //***************
+        // Signal objects
+
+        // Signal electrons must satisfy the Medium identification criterion (arXiv:1902.04655),
+        // and be compatible with originating from the primary vertex,
+        // with the significance of the transverse impact parameter defined relative to
+        // the beam position satisfying |d0|/σ(d0) &lt; 5.
+        // Signal electrons are further refined using the Gradient isolation working point (arXiv:1902.04655),
+        // which uses both tracking and calorimeter information.
+        // Missing: No impact parameter info
+        // All Electron Efficiency is covered in the preselected Electrons
+        SIGNAL_PARTICLES(preselectedElectrons, signalElectrons)
+
+        // All Muon Efficiency is covered in the preselected muons
+        SIGNAL_PARTICLES(preselectedMuons, signalMuons)
+
+        // Signal leptons
+        SIGNAL_PARTICLE_COMBINATION(signalLeptons, signalElectrons, signalMuons)
+
+        // Signal tracks
+        // Signal tracks are required to be within ∆R = 0.01 of a reconstructed electron or muon candidate.
+        // Electron (muon) candidates can be reconstructed with transverse momenta as low as 1 (2) GeV,
+        // and are required to fail the signal lepton requirements defined above to avoid any overlap
+        // Remove all signals that match a signallepton
+        std::vector&lt;const HEPUtils::Particle*&gt; candidateTracks;
+        for(auto &amp;track : preselectedTracks)
+        {
+          bool isSignalLepton = false;
+          for(auto &amp;lep : signalLeptons)
+          {
+            if(lep == track) isSignalLepton = true;
+          }
+          if(not isSignalLepton) candidateTracks.push_back(track);
+        }
+
+        // The sum pT of preselected tracks within ∆R &lt; 0.3 of signal tracks, excluding the contributions
+        // from nearby leptons, is required to be smaller than 0.5 GeV.
+        // Finally, signal tracks must satisfy pT &gt; 1 GeV, |z0 sin θ| &lt; 0.5 mm and |d0|/σ(d0) &lt; 3.
+        // Mising: cannot do impact parameter cuts
+        std::vector&lt;const HEPUtils::Particle*&gt; signalTracks;
+        for (const HEPUtils::Particle* track1 : candidateTracks)
+        {
+          double pTSum = 0;
+          for (const HEPUtils::Particle* track2 : candidateTracks)
+          {
+            if (track2 != track1 &amp;&amp; track1-&gt;mom().deltaR_eta(track2-&gt;mom()) &lt; 0.3) pTSum += track2-&gt;pT();
+          }
+          if (pTSum &lt; 0.5 &amp;&amp; track1-&gt;pT() &gt; 1.) signalTracks.push_back(track1);
+        }
+
+        // Signal tracks must also satisfy dedicated isolation criteria – they are required
+        // to be separated from preselected jets by at least ∆R &gt; 0.5
+        removeOverlap(signalTracks, preselectedNonBJets, 0.5);
+        removeOverlap(signalTracks, preselectedBJets, 0.5);
+
+        // Signal jets. From the sample of preselected jets, signal jets are selected
+        // if they satisfy pT &gt; 30 GeV and |η| &lt; 2.8.
+        // The VBF search uses a modified version of signal jets, labeled VBF jets, satisfying pT &gt; 30 GeV and |η| &lt; 4.5.
+        std::vector&lt;const HEPUtils::Jet*&gt; signalJets;
+        std::vector&lt;const HEPUtils::Jet*&gt; signalVBFJets;
+        std::vector&lt;const HEPUtils::Jet*&gt; signalBJets;
+
+        // Signal jets are selected if they satisfy pT &gt; 30 GeV and |η| &lt; 2.8.
+        for (const HEPUtils::Jet* jet : preselectedNonBJets)
+        {
+          if (jet-&gt;pT() &gt; 30. &amp;&amp; jet-&gt;abseta() &lt; 2.8) signalJets.push_back(jet);
+          if (jet-&gt;pT() &gt; 30. &amp;&amp; jet-&gt;abseta() &lt; 4.5) signalVBFJets.push_back(jet);
+        }
+        for (const HEPUtils::Jet* jet : preselectedBJets)
+        {
+          if (jet-&gt;pT() &gt; 30. &amp;&amp; jet-&gt;abseta() &lt; 2.8)
+          {
+            signalJets.push_back(jet);
+            signalBJets.push_back(jet);
+          }
+          if (jet-&gt;pT() &gt; 30. &amp;&amp; jet-&gt;abseta() &lt; 4.5) signalVBFJets.push_back(jet);
+        }
+
+        // Sort by pT
+        sortByPt(signalJets);
+        sortByPt(signalBJets);
+        sortByPt(signalVBFJets);
+        sortByPt(signalLeptons);
+        sortByPt(signalTracks);
+
+        // Preselection requirements
+        // Variable            2l                                              1l1T
+        // ------------------------------------------------------------------------------
+        // n-leptons           =2                                          =1 l + &gt;=1 T
+        // lepton-1  pT        &gt; 5                                          &lt; 10
+        // Delta Rll           DRee &gt; 0.3, DRmm &gt; 0.05, DRem &gt; 0.2      0.05 &lt; DRlT &lt; 1.5
+        // Charge/Flav         e+- e-+ or mu+- mu-+                     e+- e-+ or mu+- mu-+
+        // Inv mass            3 &lt; mee &lt; 60,  1 &lt; mmumu &lt; 60               0.5 &lt; mlT &lt; 5
+        // J/psi inv mass      veto 3 &lt; mll &lt; 3.2                         veto 3 &lt; mlT &lt; 3.2
+        // mtt                 &lt; 0 or &gt; 160                                     -
+        // MET                 &gt; 120                                          &gt; 120
+        // n-jets              &gt;= 1                                           &gt;= 1
+        // n-b-tagged-jets     = 0                                              -
+        // leading jet pT      &gt; 100                                         &gt; 100
+        // min(Dphi(j,ptmiss)  &gt; 0.4                                         &gt; 0.4
+        // Dphi(j1,ptmiss)     &gt;= 2.0                                        &gt;= 2.0
+
+        // Count signal leptons and jets
+        size_t nSignalLeptons = signalLeptons.size();
+        size_t nSignalJets = signalJets.size();
+        size_t nSignalVBFJets = signalVBFJets.size();
+        size_t nSignalBJets = signalBJets.size();
+        size_t nSignalTracks = signalTracks.size();
+
+        // MET trigger
+        bool mettrigger = random_bool(ATLAS::eff1DMET.at(&quot;CERN_EP_2015_241&quot;), met);
+
+        // 2-particle system
+        std::vector&lt;const HEPUtils::Particle *&gt; signalParticles;
+
+        if (nSignalLeptons == 2)
+        {
+          signalParticles.push_back(signalLeptons.at(0));
+          signalParticles.push_back(signalLeptons.at(1));
+        }
+        else if (nSignalLeptons == 1 &amp;&amp; nSignalTracks &gt;=1 )
+        {
+          signalParticles.push_back(signalLeptons.at(0));
+          signalParticles.push_back(signalTracks.at(0));
+        }
+        size_t nSignalParticles = signalParticles.size();
+
+        // DeltaR
+        double deltaR = nSignalParticles &gt; 1 ? signalParticles.at(0)-&gt;mom().deltaR_eta(signalParticles.at(1)-&gt;mom()) : 0.;
+
+        // ID
+        bool electron_pair = nSignalParticles &gt; 1 ? (signalParticles.at(0)-&gt;isElectron() &amp;&amp; signalParticles.at(1)-&gt;isElectron()) : false;
+        bool muon_pair = nSignalParticles &gt; 1 ? (signalParticles.at(0)-&gt;isMuon() &amp;&amp; signalParticles.at(1)-&gt;isMuon()) : false;
+
+        // SFOS
+        bool SF = nSignalParticles &gt; 1 ? signalParticles.at(0)-&gt;abspid() == signalParticles.at(1)-&gt;abspid() : false;
+        bool OS = nSignalParticles &gt; 1 ? signalParticles.at(0)-&gt;pid() * signalParticles.at(1)-&gt;pid() &lt; 0 : false;
+        bool SFOS = SF &amp;&amp; OS;
+
+        // Invariant mass
+        double mll = nSignalParticles &gt; 1 ? (signalParticles.at(0)-&gt;mom() + signalParticles.at(1)-&gt;mom() ).m() : 0.;
+
+        // HTlep
+        double metOverHTlep = nSignalParticles &gt; 1 ? met/(signalParticles.at(0)-&gt;pT() + signalParticles.at(1)-&gt;pT()) : 0.;
+
+        // mtautau
+        double mtautau = 0.;
+        if (nSignalLeptons == 2 and SFOS)
+        {
+          double determinant = signalLeptons.at(0)-&gt;mom().px() * signalLeptons.at(1)-&gt;mom().py() - signalLeptons.at(0)-&gt;mom().py() * signalLeptons.at(1)-&gt;mom().px();
+          double xi_1 = (ptot.px() * signalLeptons.at(1)-&gt;mom().py() - signalLeptons.at(1)-&gt;mom().px() * ptot.py()) / determinant;
+          double xi_2 = (ptot.py() * signalLeptons.at(0)-&gt;mom().px() - signalLeptons.at(0)-&gt;mom().py() * ptot.px()) / determinant;
+          mtautau = (1.+xi_1) * (1.+xi_2) * 2. * signalLeptons.at(0)-&gt;mom().dot(signalLeptons.at(1)-&gt;mom());
+          if(mtautau &gt; 0) mtautau = sqrt(mtautau);
+          if(mtautau &lt; 0) mtautau = -sqrt(-mtautau);
+        }
+
+        // DeltaPhi
+        double minPhi = M_PI;
+        for(const HEPUtils::Jet *jet : signalJets)
+        {
+          if(jet != signalJets.at(0))
+          {
+            double deltaphi = jet-&gt;mom().deltaPhi(ptot);
+            if (deltaphi &lt; minPhi)
+            {
+              minPhi = deltaphi;
+            }
+          }
+        }
+
+
+        // Initialize cutflow counters
+        BEGIN_PRESELECTION
+        // There is no particular preseletion cut
+        END_PRESELECTION
+
+        // Preselection cuts for 2l regions
+        std::vector&lt;bool&gt; preselection_2l = {(Filter_N_jets &gt; 0 ),
+                                             mettrigger,
+                                             nSignalLeptons == 2,
+                                             (mll &lt; 3. || mll &gt; 3.2),
+                                             true, // lepton author 16 veto
+                                             (minPhi  &gt; 0.4),
+                                             (nSignalJets &gt; 0 &amp;&amp; signalJets.at(0)-&gt;mom().deltaPhi(ptot) &gt;= 2.),
+                                             true, // lepton truth matching
+                                             (mll &gt; (electron_pair ? 3. : 1.) &amp;&amp; mll &lt; 60.),
+                                             (deltaR &gt; (electron_pair ? 0.3 : (muon_pair ? 0.05 : 0.2) ) ),
+                                             (nSignalLeptons &gt; 0 &amp;&amp; signalLeptons.at(0)-&gt;pT() &gt; 5.),
+                                             (nSignalJets &gt;= 1),
+                                             (nSignalJets &gt; 0 &amp;&amp; signalJets.at(0)-&gt;pT() &gt;= 100.),
+                                             (nSignalBJets == 0),
+                                             (mtautau &lt;= 0. || mtautau &gt; 160.),
+                                             (SFOS)
+                                           };
+
+
+        LOG_CUTS_N(preselection_2l, &quot;SR-E-low-ee-&quot;, 6)
+        LOG_CUTS_N(preselection_2l, &quot;SR-E-low-mumu-&quot;, 8)
+        LOG_CUTS_N(preselection_2l, &quot;SR-E-low-combined-&quot;, 8)
+        LOG_CUTS_N(preselection_2l, &quot;SR-E-med-ee-&quot;, 4)
+        LOG_CUTS_N(preselection_2l, &quot;SR-E-med-mumu-&quot;, 6)
+        LOG_CUTS_N(preselection_2l, &quot;SR-E-med-combined-&quot;, 6)
+        LOG_CUTS_N(preselection_2l, &quot;SR-E-high-ee-&quot;, 6)
+        LOG_CUTS_N(preselection_2l, &quot;SR-E-high-mumu-&quot;, 8)
+        LOG_CUTS_N(preselection_2l, &quot;SR-E-high-combined-&quot;, 8)
+        LOG_CUTS_N(preselection_2l, &quot;SR-S-low-ee-&quot;, 6)
+        LOG_CUTS_N(preselection_2l, &quot;SR-S-low-mumu-&quot;, 8)
+        LOG_CUTS_N(preselection_2l, &quot;SR-S-low-combined-&quot;, 8)
+        LOG_CUTS_N(preselection_2l, &quot;SR-S-high-ee-&quot;, 6)
+        LOG_CUTS_N(preselection_2l, &quot;SR-S-high-mumu-&quot;, 8)
+        LOG_CUTS_N(preselection_2l, &quot;SR-S-high-combined-&quot;, 8)
+
+        // Preselection cuts for 2l VBF regions
+        std::vector&lt;bool&gt; preselection_2l_VBF = { (nSignalLeptons &gt; 0 &amp;&amp; signalLeptons.at(0)-&gt;pT() &gt; 5.),
+                                                  (nBaselineLeptons == 2),
+                                                  (nSignalLeptons == 2),
+                                                  (mettrigger),
+                                                  true, // lepton author 16 veto
+                                                  (minPhi  &gt; 0.4),
+                                                  (deltaR &gt; (electron_pair ? 0.3 : (muon_pair ? 0.05 : 0.2) ) ),
+                                                  SF,
+                                                  OS,
+                                                  (mll &gt; (electron_pair ? 3. : 1.) &amp;&amp; mll &lt; 60.),
+                                                  (mll &lt; 3. || mll &gt; 3.2),
+                                                  (mtautau &lt; 0. || mtautau &gt; 160.),
+                                                  (nSignalBJets == 0),
+                                                  (nSignalVBFJets &gt;= 1 &amp;&amp; signalVBFJets.at(0)-&gt;pT() &gt;= 100.)
+                                                };
+        LOG_CUTS_N(preselection_2l_VBF, &quot;SR-VBF-low-&quot;, 7)
+        LOG_CUTS_N(preselection_2l_VBF, &quot;SR-VBF-high-&quot;, 7)
+
+        // Preselecton cuts for 1l1T region
+        std::vector&lt;bool&gt; preselection_1l1T = { (Filter_N_jets &gt; 0 ),
+                                                (mettrigger),
+                                                (nSignalLeptons == 1 &amp;&amp; nSignalTracks &gt;= 1),
+                                                (mll &lt; 3. || mll &gt; 3.2),
+                                                true, // lepton author 16 veto
+                                                (met &gt; 200.),
+                                                (minPhi &gt; 0.4),
+                                                (nSignalJets &gt; 0 &amp;&amp; signalJets.at(0)-&gt;mom().deltaPhi(ptot) &gt;= 2.),
+                                                (mll &gt; 0.5 &amp;&amp; mll &lt; 5),
+                                                (deltaR &gt; 0.05),
+                                                (nSignalJets &gt;= 1),
+                                                (nSignalJets &gt; 0 &amp;&amp; signalJets.at(0)-&gt;pT() &gt;= 100.),
+                                                (metOverHTlep &gt; 30.),
+                                                (deltaR &lt; 1.5),
+                                                (nSignalLeptons &gt; 0 &amp;&amp; signalLeptons.at(0)-&gt;pT() &lt; 10.)
+                                              };
+        LOG_CUTS_N(preselection_1l1T, &quot;SR-E-1l1T-&quot;, 6)
+
+        // EWino Signal regions
+        // Variable                   SR-E-low          SR-E-med                SR-E-high                        SR-E-1l1T
+        // ---------------------------------------------------------------------------------------------------------------
+        // MET                        [120,200]         [120,200]               &gt; 200                            &gt; 200
+        // MET/HTlep                  &lt; 10              &gt; 10                    -                                &gt; 30
+        // DPhi(lep,ptot)             -                 -                       -                                &lt; 1.0
+        // l2 or track pT             -                 &gt; 5 + mll/4             &gt; min(10, 2+mll/3)               &lt; 5
+        // MTS                        -                 &lt; 50                       -                             -
+        // mTl1                       -                 [10,60]                 &lt; 60                             -
+        // RISR                       [0.8,1.0]         -               [max(0.85, 0.98-0.02 mll),1.0]           -
+
+        // mTl1 variable
+        double mTl1 = 0.0;
+        if (nSignalLeptons &gt; 0)
+        {
+         double v1_mt = sqrt(signalLeptons.at(0)-&gt;mom().E2() - signalLeptons.at(0)-&gt;mom().pz2());
+         mTl1 = sqrt(signalLeptons.at(0)-&gt;mom().m2() + 2.0*v1_mt*ptot.pT() - 2.0*signalLeptons.at(0)-&gt;mom().pT()*ptot.pT()*cos(signalLeptons.at(0)-&gt;mom().deltaPhi(ptot)));
+        }
+
+
+        //---------------------
+        // RJR Variables
+        // -------------------
+        double Pt_ISR = 0.0;
+        double RISR = 0.0;
+        double MTS = 0.0;
+
+        // Only calculate RJR variables in the case that there is at least 1 signal jet, this will also cover the VBF case
+        if (nSignalJets &gt; 0)
+        {
+          LAB-&gt;ClearEvent();
+
+          vector&lt;RestFrames::RFKey&gt; jetID;
+          for (const auto jet : signalJets)
+          {
+            TLorentzVector jetmom;
+            jetmom.SetPtEtaPhiM((jet-&gt;mom()).pT(),0.0,(jet-&gt;mom()).phi(),(jet-&gt;mom()).m());
+            jetID.push_back(VIS-&gt;AddLabFrameFourVector(jetmom));
+          }
+
+          TLorentzVector lepSys(0.,0.,0.,0.);
+          for(const auto lep1 : signalLeptons)
+          {
+            TLorentzVector tmom;
+            tmom.SetPtEtaPhiM((lep1-&gt;mom()).pT(),0.0,(lep1-&gt;mom()).phi(),(lep1-&gt;mom()).m());
+            lepSys = lepSys + tmom;
+          }
+
+          L-&gt;SetLabFrameFourVector(lepSys);
+          TLorentzVector metVec;
+          metVec.SetPtEtaPhiM(ptot.pT(),ptot.eta(),ptot.phi(),ptot.m());
+          TVector3 met3Vec = metVec.Vect();
+          met3Vec.SetZ(0.0);
+          INV-&gt;SetLabFrameThreeVector(met3Vec);
+
+
+          if (!LAB-&gt;AnalyzeEvent())
+          {
+            str errmsg;
+            errmsg  = &quot;Some problem occurred when calling LAB-&gt;AnalyzeEvent() from the Analysis_ATLAS_13TeV_2LEPsoft_139invfb analysis class.\n&quot;;
+            piped_warnings.request(LOCAL_INFO, errmsg);
+            return;
+          }
+
+          TVector3 v_P_ISR = ISR-&gt;GetFourVector(*CM).Vect();
+          TVector3 v_P_I   = I-&gt;GetFourVector(*CM).Vect();
+          Pt_ISR = v_P_ISR.Mag();
+          RISR = fabs(v_P_I.Dot(v_P_ISR.Unit())) / Pt_ISR;
+          MTS = S-&gt;GetMass();
+        }
+
+
+        // SR-E-low
+        std::vector&lt;bool&gt; cuts_2l_e_low = { met &gt; 120. &amp;&amp; met &lt; 200.,
+                                            metOverHTlep &lt; 10.,
+                                            RISR &gt;= 0.8 &amp;&amp; RISR &lt;= 1.0,
+                                            nSignalLeptons &gt; 1 &amp;&amp; signalLeptons.at(1)-&gt;pT() &gt; 5. + mll/4.,
+                                            mTl1 &gt;= 10. &amp;&amp; mTl1 &lt;= 60
+                                          };
+        if (Utils::all_of(preselection_2l))
+        {
+          LOG_CUTS_N(cuts_2l_e_low, &quot;SR-E-low-ee-&quot;, 6)
+          LOG_CUTS_N(cuts_2l_e_low, &quot;SR-E-low-mumu-&quot;, 8)
+          LOG_CUTS_N(cuts_2l_e_low, &quot;SR-E-low-combined-&quot;, 8)
+        }
+        if (Utils::all_of(preselection_2l) &amp;&amp; Utils::all_of(cuts_2l_e_low))
+        {
+          if (electron_pair)
+          {
+            if (mll &gt; 3.2 &amp;&amp; mll &lt;= 5)      { FILL_SIGNAL_REGION(&quot;SR-E-low-ee-1&quot;) }
+            else if (mll &gt; 5 &amp;&amp; mll &lt;= 10)  { FILL_SIGNAL_REGION(&quot;SR-E-low-ee-2&quot;) }
+            else if (mll &gt; 10 &amp;&amp; mll &lt;= 20) { FILL_SIGNAL_REGION(&quot;SR-E-low-ee-3&quot;) }
+            else if (mll &gt; 20 &amp;&amp; mll &lt;= 30) { FILL_SIGNAL_REGION(&quot;SR-E-low-ee-4&quot;) }
+            else if (mll &gt; 30 &amp;&amp; mll &lt;= 40) { FILL_SIGNAL_REGION(&quot;SR-E-low-ee-5&quot;) }
+            else if (mll &gt; 40 &amp;&amp; mll &lt;= 60) { FILL_SIGNAL_REGION(&quot;SR-E-low-ee-6&quot;) }
+          }
+          else if (muon_pair)
+          {
+            if(mll &gt;= 1 &amp;&amp; mll &lt;= 2)        { FILL_SIGNAL_REGION(&quot;SR-E-low-mumu-1&quot;) }
+            else if (mll &gt; 2 &amp;&amp; mll &lt;= 3)   { FILL_SIGNAL_REGION(&quot;SR-E-low-mumu-2&quot;) }
+            else if (mll &gt; 3.2 &amp;&amp; mll &lt;= 5) { FILL_SIGNAL_REGION(&quot;SR-E-low-mumu-3&quot;) }
+            else if (mll &gt; 5 &amp;&amp; mll &lt;= 10)  { FILL_SIGNAL_REGION(&quot;SR-E-low-mumu-4&quot;) }
+            else if (mll &gt; 10 &amp;&amp; mll &lt;= 20) { FILL_SIGNAL_REGION(&quot;SR-E-low-mumu-5&quot;) }
+            else if (mll &gt; 20 &amp;&amp; mll &lt;= 30) { FILL_SIGNAL_REGION(&quot;SR-E-low-mumu-6&quot;) }
+            else if (mll &gt; 30 &amp;&amp; mll &lt;= 40) { FILL_SIGNAL_REGION(&quot;SR-E-low-mumu-7&quot;) }
+            else if (mll &gt; 40 &amp;&amp; mll &lt;= 60) { FILL_SIGNAL_REGION(&quot;SR-E-low-mumu-8&quot;) }
+          }
+
+          if(mll &gt;= 1 &amp;&amp; mll &lt;= 2)        { FILL_SIGNAL_REGION(&quot;SR-E-low-combined-1&quot;) }
+          else if (mll &gt; 2 &amp;&amp; mll &lt;= 3)   { FILL_SIGNAL_REGION(&quot;SR-E-low-combined-2&quot;) }
+          else if (mll &gt; 3.2 &amp;&amp; mll &lt;= 5) { FILL_SIGNAL_REGION(&quot;SR-E-low-combined-3&quot;) }
+          else if (mll &gt; 5 &amp;&amp; mll &lt;= 10)  { FILL_SIGNAL_REGION(&quot;SR-E-low-combined-4&quot;) }
+          else if (mll &gt; 10 &amp;&amp; mll &lt;= 20) { FILL_SIGNAL_REGION(&quot;SR-E-low-combined-5&quot;) }
+          else if (mll &gt; 20 &amp;&amp; mll &lt;= 30) { FILL_SIGNAL_REGION(&quot;SR-E-low-combined-6&quot;) }
+          else if (mll &gt; 30 &amp;&amp; mll &lt;= 40) { FILL_SIGNAL_REGION(&quot;SR-E-low-combined-7&quot;) }
+          else if (mll &gt; 40 &amp;&amp; mll &lt;= 60) { FILL_SIGNAL_REGION(&quot;SR-E-low-combined-8&quot;) }
+        }
+
+        // SR-E-med
+        std::vector&lt;bool&gt; cuts_2l_e_med = { met &gt; 120. &amp;&amp; met &lt; 200.,
+                                            metOverHTlep &gt; 10.,
+                                            MTS &lt; 50.
+                                          };
+        if (Utils::all_of(preselection_2l))
+        {
+          LOG_CUTS_N(cuts_2l_e_med, &quot;SR-E-med-ee-&quot;, 4)
+          LOG_CUTS_N(cuts_2l_e_med, &quot;SR-E-med-mumu-&quot;, 6)
+          LOG_CUTS_N(cuts_2l_e_med, &quot;SR-E-med-combined-&quot;, 6)
+        }
+        if (Utils::all_of(preselection_2l) &amp;&amp; Utils::all_of(cuts_2l_e_med))
+        {
+          if (electron_pair)
+          {
+            if (mll &gt; 3.2 &amp;&amp; mll &lt;= 5)      { FILL_SIGNAL_REGION(&quot;SR-E-med-ee-1&quot;) }
+            else if (mll &gt; 5 &amp;&amp; mll &lt;= 10)  { FILL_SIGNAL_REGION(&quot;SR-E-med-ee-2&quot;) }
+            else if (mll &gt; 10 &amp;&amp; mll &lt;= 20) { FILL_SIGNAL_REGION(&quot;SR-E-med-ee-3&quot;) }
+            else if (mll &gt; 20 &amp;&amp; mll &lt;= 30) { FILL_SIGNAL_REGION(&quot;SR-E-med-ee-4&quot;) }
+          }
+          else if (muon_pair)
+          {
+            if(mll &gt;= 1 &amp;&amp; mll &lt;= 2)        { FILL_SIGNAL_REGION(&quot;SR-E-med-mumu-1&quot;) }
+            else if (mll &gt; 2 &amp;&amp; mll &lt;= 3)   { FILL_SIGNAL_REGION(&quot;SR-E-med-mumu-2&quot;) }
+            else if (mll &gt; 3.2 &amp;&amp; mll &lt;= 5) { FILL_SIGNAL_REGION(&quot;SR-E-med-mumu-3&quot;) }
+            else if (mll &gt; 5 &amp;&amp; mll &lt;= 10)  { FILL_SIGNAL_REGION(&quot;SR-E-med-mumu-4&quot;) }
+            else if (mll &gt; 10 &amp;&amp; mll &lt;= 20) { FILL_SIGNAL_REGION(&quot;SR-E-med-mumu-5&quot;) }
+            else if (mll &gt; 20 &amp;&amp; mll &lt;= 30) { FILL_SIGNAL_REGION(&quot;SR-E-med-mumu-6&quot;) }
+          }
+          if(mll &gt;= 1 &amp;&amp; mll &lt;= 2)        { FILL_SIGNAL_REGION(&quot;SR-E-med-combined-1&quot;) }
+          else if (mll &gt; 2 &amp;&amp; mll &lt;= 3)   { FILL_SIGNAL_REGION(&quot;SR-E-med-combined-2&quot;) }
+          else if (mll &gt; 3.2 &amp;&amp; mll &lt;= 5) { FILL_SIGNAL_REGION(&quot;SR-E-med-combined-3&quot;) }
+          else if (mll &gt; 5 &amp;&amp; mll &lt;= 10)  { FILL_SIGNAL_REGION(&quot;SR-E-med-combined-4&quot;) }
+          else if (mll &gt; 10 &amp;&amp; mll &lt;= 20) { FILL_SIGNAL_REGION(&quot;SR-E-med-combined-5&quot;) }
+          else if (mll &gt; 20 &amp;&amp; mll &lt;= 30) { FILL_SIGNAL_REGION(&quot;SR-E-med-combined-6&quot;) }
+        }
+
+        // SR-E-high
+        std::vector&lt;bool&gt; cuts_2l_e_high = { mTl1 &lt; 60.,
+                                             met &gt; 200.,
+                                             RISR &gt;= max(0.85, 0.98 - 0.02*mll) &amp;&amp; RISR &lt;= 1.0,
+                                             nSignalLeptons &gt; 1 &amp;&amp; signalLeptons.at(1)-&gt;pT() &gt; min(10., 2.+mll/3)
+                                           };
+        if (Utils::all_of(preselection_2l))
+        {
+          LOG_CUTS_N(cuts_2l_e_high, &quot;SR-E-high-ee-&quot;, 6)
+          LOG_CUTS_N(cuts_2l_e_high, &quot;SR-E-high-mumu-&quot;, 8)
+          LOG_CUTS_N(cuts_2l_e_high, &quot;SR-E-high-combined-&quot;, 8)
+        }
+        if (Utils::all_of(preselection_2l) &amp;&amp; Utils::all_of(cuts_2l_e_high))
+        {
+          if (electron_pair)
+          {
+            if (mll &gt; 3.2 &amp;&amp; mll &lt;= 5) { FILL_SIGNAL_REGION(&quot;SR-E-high-ee-1&quot;) }
+            else if (mll &gt; 5 &amp;&amp; mll &lt;= 10)  { FILL_SIGNAL_REGION(&quot;SR-E-high-ee-2&quot;) }
+            else if (mll &gt; 10 &amp;&amp; mll &lt;= 20) { FILL_SIGNAL_REGION(&quot;SR-E-high-ee-3&quot;) }
+            else if (mll &gt; 20 &amp;&amp; mll &lt;= 30) { FILL_SIGNAL_REGION(&quot;SR-E-high-ee-4&quot;) }
+            else if (mll &gt; 30 &amp;&amp; mll &lt;= 40) { FILL_SIGNAL_REGION(&quot;SR-E-high-ee-5&quot;) }
+            else if (mll &gt; 40 &amp;&amp; mll &lt;= 60) { FILL_SIGNAL_REGION(&quot;SR-E-high-ee-6&quot;) }
+          }
+          else if (muon_pair)
+          {
+            if(mll &gt;= 1 &amp;&amp; mll &lt;= 2)        { FILL_SIGNAL_REGION(&quot;SR-E-high-mumu-1&quot;) }
+            else if (mll &gt; 2 &amp;&amp; mll &lt;= 3)   { FILL_SIGNAL_REGION(&quot;SR-E-high-mumu-2&quot;) }
+            else if (mll &gt; 3.2 &amp;&amp; mll &lt;= 5) { FILL_SIGNAL_REGION(&quot;SR-E-high-mumu-3&quot;) }
+            else if (mll &gt; 5 &amp;&amp; mll &lt;= 10)  { FILL_SIGNAL_REGION(&quot;SR-E-high-mumu-4&quot;) }
+            else if (mll &gt; 10 &amp;&amp; mll &lt;= 20) { FILL_SIGNAL_REGION(&quot;SR-E-high-mumu-5&quot;) }
+            else if (mll &gt; 20 &amp;&amp; mll &lt;= 30) { FILL_SIGNAL_REGION(&quot;SR-E-high-mumu-6&quot;) }
+            else if (mll &gt; 30 &amp;&amp; mll &lt;= 40) { FILL_SIGNAL_REGION(&quot;SR-E-high-mumu-7&quot;) }
+            else if (mll &gt; 40 &amp;&amp; mll &lt;= 60) { FILL_SIGNAL_REGION(&quot;SR-E-high-mumu-8&quot;) }
+          }
+          if(mll &gt;= 1 &amp;&amp; mll &lt;= 2)        { FILL_SIGNAL_REGION(&quot;SR-E-high-combined-1&quot;) }
+          else if (mll &gt; 2 &amp;&amp; mll &lt;= 3)   { FILL_SIGNAL_REGION(&quot;SR-E-high-combined-2&quot;) }
+          else if (mll &gt; 3.2 &amp;&amp; mll &lt;= 5) { FILL_SIGNAL_REGION(&quot;SR-E-high-combined-3&quot;) }
+          else if (mll &gt; 5 &amp;&amp; mll &lt;= 10)  { FILL_SIGNAL_REGION(&quot;SR-E-high-combined-4&quot;) }
+          else if (mll &gt; 10 &amp;&amp; mll &lt;= 20) { FILL_SIGNAL_REGION(&quot;SR-E-high-combined-5&quot;) }
+          else if (mll &gt; 20 &amp;&amp; mll &lt;= 30) { FILL_SIGNAL_REGION(&quot;SR-E-high-combined-6&quot;) }
+          else if (mll &gt; 30 &amp;&amp; mll &lt;= 40) { FILL_SIGNAL_REGION(&quot;SR-E-high-combined-7&quot;) }
+          else if (mll &gt; 40 &amp;&amp; mll &lt;= 60) { FILL_SIGNAL_REGION(&quot;SR-E-high-combined-8&quot;) }
+        }
+
+        // SR-E-1l1T
+        std::vector&lt;bool&gt; cuts_1l1T = { nSignalTracks &gt; 0 &amp;&amp; signalTracks.at(0)-&gt;pT() &lt; 5.,
+                                        nSignalLeptons &gt; 0 &amp;&amp; signalLeptons.at(0)-&gt;mom().deltaPhi(ptot) &lt; 1.0,
+                                        SF,
+                                        OS
+                                      };
+        if (Utils::all_of(preselection_1l1T)) { LOG_CUTS_N(cuts_1l1T, &quot;SR-E-1l1T-&quot;, 6) }
+        if (Utils::all_of(preselection_1l1T) &amp;&amp; Utils::all_of(cuts_1l1T))
+        {
+           if(mll &gt;= 0.5 &amp;&amp; mll &lt;= 1.0)        { FILL_SIGNAL_REGION(&quot;SR-E-1l1T-1&quot;) }
+           else if (mll &gt; 1.0 &amp;&amp; mll &lt;= 1.5)   { FILL_SIGNAL_REGION(&quot;SR-E-1l1T-2&quot;) }
+           else if (mll &gt; 1.5 &amp;&amp; mll &lt;= 2.0)   { FILL_SIGNAL_REGION(&quot;SR-E-1l1T-3&quot;) }
+           else if (mll &gt; 2.0 &amp;&amp; mll &lt;= 3.0)   { FILL_SIGNAL_REGION(&quot;SR-E-1l1T-4&quot;) }
+           else if (mll &gt; 3.2 &amp;&amp; mll &lt;= 4.0)   { FILL_SIGNAL_REGION(&quot;SR-E-1l1T-5&quot;) }
+           else if (mll &gt; 4.0 &amp;&amp; mll &lt;= 5.0)   { FILL_SIGNAL_REGION(&quot;SR-E-1l1T-6&quot;) }
+        }
+
+        // VBF Signal regions
+        // Variable             SR-VBF-low                      SR-VBF-high
+        // ----------------------------------------------------------------
+        // mll                  &lt; 40                            &lt; 40
+        // N jets               &gt;= 2                            &gt;= 2
+        // pTj2                 &gt; 40                            &gt; 40
+        // MET                  &gt; 150                           &gt; 40
+        // MET/HTlep            &gt; 2                             &gt; 2
+        // pTl2                 &gt; min(10, 2 + mll/3)           &gt; min(10, 2 + mll/3)
+        // mTl1                 &lt; 60                           &lt; 60
+        // RVBF                 [max(0.6, 0.92-mll/60), 1.0]   [max(0.6, 0.92-mll/60), 1.0]
+        // etaj1 . etaj2        &lt; 0                            &lt; 0
+        // mjj                  &gt; 400                          &gt; 400
+        // Delta etajj          [2,4]                          &gt; 4
+
+
+        // RVBF variable
+        // TODO: This RJ variable has not been coded up in RestFrames format yet
+        double RVBF = RISR;
+
+        // mjj variable
+        double mjj = 0.;
+        if(nSignalVBFJets &gt;= 2) { mjj = (signalVBFJets.at(0)-&gt;mom() + signalVBFJets.at(1)-&gt;mom()).m(); }
+
+        // Deletaetajj variable
+        double Deltaetajj = 0.;
+        if(nSignalVBFJets == 2) { Deltaetajj = fabs(signalVBFJets.at(0)-&gt;eta() - signalVBFJets.at(1)-&gt;eta()); }
+
+
+        // SR-VBF-low
+        // TODO: Lower limit on RVBF differs from paper (max(0.6, 0.92-mll/60))
+        //       and cutflow (max(0.6, 0.92-mll/2)), going with cutflow for now
+        std::vector&lt;bool&gt; cuts_2l_VBF = { (nSignalVBFJets &gt; 1 &amp;&amp; signalVBFJets.at(1)-&gt;pT() &gt; 40.),
+                                          (met &gt; 200.), // or 150 from paper
+                                          (metOverHTlep &gt; 2.),
+                                          (nSignalLeptons &gt; 1 &amp;&amp; signalLeptons.at(1)-&gt;pT() &gt; min(10., 2+mll/3)),
+                                          (mTl1 &lt; 60.),
+                                          (RVBF &lt;= 1.),
+                                          (RVBF &gt;= max(0.6, 0.92-mll/2)), // or mll/60 from paper
+                                          (nSignalVBFJets &gt; 1 &amp;&amp; signalVBFJets.at(0)-&gt;eta() * signalVBFJets.at(1)-&gt;eta() &lt; 0),
+                                          (mjj &gt; 400),
+                                          (Deltaetajj &gt;= 2.)
+                                        };
+        if (Utils::all_of(preselection_2l_VBF)) { LOG_CUTS_N(cuts_2l_VBF, &quot;SR-VBF-low-&quot;, 7) }
+        if (Utils::all_of(preselection_2l_VBF) &amp;&amp; Utils::all_of(cuts_2l_VBF) &amp;&amp; mll &lt; 40. &amp;&amp; Deltaetajj &lt;= 4)
+         {
+           if(mll &gt;= 1 &amp;&amp; mll &lt;= 2)         { FILL_SIGNAL_REGION(&quot;SR-VBF-low-1&quot;) }
+           else if(mll &gt;= 2 &amp;&amp; mll &lt;= 3)    { FILL_SIGNAL_REGION(&quot;SR-VBF-low-2&quot;) }
+           else if(mll &gt;= 3.2 &amp;&amp; mll &lt;= 5)  { FILL_SIGNAL_REGION(&quot;SR-VBF-low-3&quot;) }
+           else if(mll &gt;= 5 &amp;&amp; mll &lt;= 10)   { FILL_SIGNAL_REGION(&quot;SR-VBF-low-4&quot;) }
+           else if(mll &gt;= 10 &amp;&amp; mll &lt;= 20)  { FILL_SIGNAL_REGION(&quot;SR-VBF-low-5&quot;) }
+           else if(mll &gt;= 20 &amp;&amp; mll &lt;= 30)  { FILL_SIGNAL_REGION(&quot;SR-VBF-low-6&quot;) }
+           else if(mll &gt;= 30 &amp;&amp; mll &lt;= 40)  { FILL_SIGNAL_REGION(&quot;SR-VBF-low-7&quot;) }
+         }
+
+        // SR-VBF-high
+        if (Utils::all_of(preselection_2l_VBF)) { LOG_CUTS_N(cuts_2l_VBF, &quot;SR-VBF-high-&quot;, 7) }
+        if (Utils::all_of(preselection_2l_VBF) &amp;&amp; Utils::all_of(cuts_2l_VBF) &amp;&amp; mll &lt; 40. &amp;&amp; Deltaetajj &gt; 4.)
+         {
+           if(mll &gt;= 1 &amp;&amp; mll &lt;= 2)         { FILL_SIGNAL_REGION(&quot;SR-VBF-high-1&quot;) }
+           else if(mll &gt;= 2 &amp;&amp; mll &lt;= 3)    { FILL_SIGNAL_REGION(&quot;SR-VBF-high-2&quot;) }
+           else if(mll &gt;= 3.2 &amp;&amp; mll &lt;= 5)  { FILL_SIGNAL_REGION(&quot;SR-VBF-high-3&quot;) }
+           else if(mll &gt;= 5 &amp;&amp; mll &lt;= 10)   { FILL_SIGNAL_REGION(&quot;SR-VBF-high-4&quot;) }
+           else if(mll &gt;= 10 &amp;&amp; mll &lt;= 20)  { FILL_SIGNAL_REGION(&quot;SR-VBF-high-5&quot;) }
+           else if(mll &gt;= 20 &amp;&amp; mll &lt;= 30)  { FILL_SIGNAL_REGION(&quot;SR-VBF-high-6&quot;) }
+           else if(mll &gt;= 30 &amp;&amp; mll &lt;= 40)  { FILL_SIGNAL_REGION(&quot;SR-VBF-high-7&quot;) }
+         }
+
+
+        // Slepton Signal regions
+        // Variable           SR-S-low                     SR-S-high
+        // ----------------------------------------------------------------------------------------------
+        // MET                [150,200]                       &gt; 200
+        // mT2                &lt; 140                           &lt; 140
+        // pTl2               &gt; min(15, 7.5+0.75(mT2-100))    &gt; min(20, 2.5+2.5(mT2-100)
+        // RISR               [0.8, 1.0]                      [max(0.85, 0.98 − 0.02 × (mT2 − 100)), 1.0]
+
+        // mT2 variable
+        double mT2100 = 0;
+        if(nSignalLeptons &gt; 1)
+        {
+          double pa[3] = { 0, signalLeptons.at(0)-&gt;mom().px(), signalLeptons.at(0)-&gt;mom().py() };
+          double pb[3] = { 0, signalLeptons.at(1)-&gt;mom().px(), signalLeptons.at(1)-&gt;mom().py() };
+          double pmiss[3] = { 0, ptot.px(), ptot.py() };
+          double mn = 100.;
+
+          mt2_bisect::mt2 mt2_calc;
+          mt2_calc.set_momenta(pa,pb,pmiss);
+          mt2_calc.set_mn(mn);
+          mT2100 = mt2_calc.get_mt2();
+        }
+
+
+        // SR-S-low
+        std::vector&lt;bool&gt; cuts_2l_s_low = { met &gt;= 150. &amp;&amp; met &lt;= 200.,
+                                            RISR &gt;= 0.8 &amp;&amp; RISR &lt;= 1.0,
+                                            nSignalLeptons &gt; 1 &amp;&amp;signalLeptons.at(1)-&gt;pT() &gt; min(15., 7.5 + 0.75*(mT2100-100.))
+                                          };
+        if (Utils::all_of(preselection_2l))
+        {
+          LOG_CUTS_N(cuts_2l_s_low, &quot;SR-S-low-ee-&quot;, 8)
+          LOG_CUTS_N(cuts_2l_s_low, &quot;SR-S-low-mumu-&quot;, 8)
+          LOG_CUTS_N(cuts_2l_s_low, &quot;SR-S-low-combined-&quot;, 8)
+        }
+        if (Utils::all_of(preselection_2l) &amp;&amp; Utils::all_of(cuts_2l_s_low))
+        {
+          if (electron_pair)
+          {
+            if(mT2100 &gt;= 100 &amp;&amp; mT2100 &lt;= 100.5)      { FILL_SIGNAL_REGION(&quot;SR-S-low-ee-1&quot;) }
+            else if(mT2100 &gt;= 100.5 &amp;&amp; mT2100 &lt;= 101) { FILL_SIGNAL_REGION(&quot;SR-S-low-ee-2&quot;) }
+            else if(mT2100 &gt;= 101 &amp;&amp; mT2100 &lt;= 102)   { FILL_SIGNAL_REGION(&quot;SR-S-low-ee-3&quot;) }
+            else if(mT2100 &gt;= 102 &amp;&amp; mT2100 &lt;= 105)   { FILL_SIGNAL_REGION(&quot;SR-S-low-ee-4&quot;) }
+            else if(mT2100 &gt;= 105 &amp;&amp; mT2100 &lt;= 110)   { FILL_SIGNAL_REGION(&quot;SR-S-low-ee-5&quot;) }
+            else if(mT2100 &gt;= 110 &amp;&amp; mT2100 &lt;= 120)   { FILL_SIGNAL_REGION(&quot;SR-S-low-ee-6&quot;) }
+            else if(mT2100 &gt;= 120 &amp;&amp; mT2100 &lt;= 130)   { FILL_SIGNAL_REGION(&quot;SR-S-low-ee-7&quot;) }
+            else if(mT2100 &gt;= 130 &amp;&amp; mT2100 &lt;= 140)   { FILL_SIGNAL_REGION(&quot;SR-S-low-ee-8&quot;) }
+          }
+          else if (muon_pair)
+          {
+            if(mT2100 &gt;= 100 &amp;&amp; mT2100 &lt;= 100.5)      { FILL_SIGNAL_REGION(&quot;SR-S-low-mumu-1&quot;) }
+            else if(mT2100 &gt;= 100.5 &amp;&amp; mT2100 &lt;= 101) { FILL_SIGNAL_REGION(&quot;SR-S-low-mumu-2&quot;) }
+            else if(mT2100 &gt;= 101 &amp;&amp; mT2100 &lt;= 102)   { FILL_SIGNAL_REGION(&quot;SR-S-low-mumu-3&quot;) }
+            else if(mT2100 &gt;= 102 &amp;&amp; mT2100 &lt;= 105)   { FILL_SIGNAL_REGION(&quot;SR-S-low-mumu-4&quot;) }
+            else if(mT2100 &gt;= 105 &amp;&amp; mT2100 &lt;= 110)   { FILL_SIGNAL_REGION(&quot;SR-S-low-mumu-5&quot;) }
+            else if(mT2100 &gt;= 110 &amp;&amp; mT2100 &lt;= 120)   { FILL_SIGNAL_REGION(&quot;SR-S-low-mumu-6&quot;) }
+            else if(mT2100 &gt;= 120 &amp;&amp; mT2100 &lt;= 130)   { FILL_SIGNAL_REGION(&quot;SR-S-low-mumu-7&quot;) }
+            else if(mT2100 &gt;= 130 &amp;&amp; mT2100 &lt;= 140)   { FILL_SIGNAL_REGION(&quot;SR-S-low-mumu-8&quot;) }
+          }
+
+          if(mT2100 &gt;= 100 &amp;&amp; mT2100 &lt;= 100.5)      { FILL_SIGNAL_REGION(&quot;SR-S-low-combined-1&quot;) }
+          else if(mT2100 &gt;= 100.5 &amp;&amp; mT2100 &lt;= 101) { FILL_SIGNAL_REGION(&quot;SR-S-low-combined-2&quot;) }
+          else if(mT2100 &gt;= 101 &amp;&amp; mT2100 &lt;= 102)   { FILL_SIGNAL_REGION(&quot;SR-S-low-combined-3&quot;) }
+          else if(mT2100 &gt;= 102 &amp;&amp; mT2100 &lt;= 105)   { FILL_SIGNAL_REGION(&quot;SR-S-low-combined-4&quot;) }
+          else if(mT2100 &gt;= 105 &amp;&amp; mT2100 &lt;= 110)   { FILL_SIGNAL_REGION(&quot;SR-S-low-combined-5&quot;) }
+          else if(mT2100 &gt;= 110 &amp;&amp; mT2100 &lt;= 120)   { FILL_SIGNAL_REGION(&quot;SR-S-low-combined-6&quot;) }
+          else if(mT2100 &gt;= 120 &amp;&amp; mT2100 &lt;= 130)   { FILL_SIGNAL_REGION(&quot;SR-S-low-combined-7&quot;) }
+          else if(mT2100 &gt;= 130 &amp;&amp; mT2100 &lt;= 140)   { FILL_SIGNAL_REGION(&quot;SR-S-low-combined-8&quot;) }
+        }
+
+        // SR-S-high
+        std::vector&lt;bool&gt; cuts_2l_s_high = { met &gt; 200.,
+                                             RISR &gt;= max(0.85, 0.98 - 0.02*(mT2100 - 100.)) &amp;&amp; RISR &lt;= 1.0,
+                                             nSignalLeptons &gt; 1 &amp;&amp; signalLeptons.at(1)-&gt;pT() &gt; min(20., 2.5+2.5*(mT2100-100.))
+                                           };
+        if (Utils::all_of(preselection_2l))
+        {
+          LOG_CUTS_N(cuts_2l_s_high, &quot;SR-S-high-ee-&quot;, 8)
+          LOG_CUTS_N(cuts_2l_s_high, &quot;SR-S-high-mumu-&quot;, 8)
+          LOG_CUTS_N(cuts_2l_s_high, &quot;SR-S-high-combined-&quot;, 8)
+        }
+        if (Utils::all_of(preselection_2l) &amp;&amp; Utils::all_of(cuts_2l_s_high))
+        {
+          if (electron_pair)
+          {
+            if(mT2100 &gt;= 100 &amp;&amp; mT2100 &lt;= 100.5)      { FILL_SIGNAL_REGION(&quot;SR-S-high-ee-1&quot;) }
+            else if(mT2100 &gt;= 100.5 &amp;&amp; mT2100 &lt;= 101) { FILL_SIGNAL_REGION(&quot;SR-S-high-ee-2&quot;) }
+            else if(mT2100 &gt;= 101 &amp;&amp; mT2100 &lt;= 102)   { FILL_SIGNAL_REGION(&quot;SR-S-high-ee-3&quot;) }
+            else if(mT2100 &gt;= 102 &amp;&amp; mT2100 &lt;= 105)   { FILL_SIGNAL_REGION(&quot;SR-S-high-ee-4&quot;) }
+            else if(mT2100 &gt;= 105 &amp;&amp; mT2100 &lt;= 110)   { FILL_SIGNAL_REGION(&quot;SR-S-high-ee-5&quot;) }
+            else if(mT2100 &gt;= 110 &amp;&amp; mT2100 &lt;= 120)   { FILL_SIGNAL_REGION(&quot;SR-S-high-ee-6&quot;) }
+            else if(mT2100 &gt;= 120 &amp;&amp; mT2100 &lt;= 130)   { FILL_SIGNAL_REGION(&quot;SR-S-high-ee-7&quot;) }
+            else if(mT2100 &gt;= 130 &amp;&amp; mT2100 &lt;= 140)   { FILL_SIGNAL_REGION(&quot;SR-S-high-ee-8&quot;) }
+          }
+          else if (muon_pair)
+          {
+            if(mT2100 &gt;= 100 &amp;&amp; mT2100 &lt;= 100.5)      { FILL_SIGNAL_REGION(&quot;SR-S-high-mumu-1&quot;) }
+            else if(mT2100 &gt;= 100.5 &amp;&amp; mT2100 &lt;= 101) { FILL_SIGNAL_REGION(&quot;SR-S-high-mumu-2&quot;) }
+            else if(mT2100 &gt;= 101 &amp;&amp; mT2100 &lt;= 102)   { FILL_SIGNAL_REGION(&quot;SR-S-high-mumu-3&quot;) }
+            else if(mT2100 &gt;= 102 &amp;&amp; mT2100 &lt;= 105)   { FILL_SIGNAL_REGION(&quot;SR-S-high-mumu-4&quot;) }
+            else if(mT2100 &gt;= 105 &amp;&amp; mT2100 &lt;= 110)   { FILL_SIGNAL_REGION(&quot;SR-S-high-mumu-5&quot;) }
+            else if(mT2100 &gt;= 110 &amp;&amp; mT2100 &lt;= 120)   { FILL_SIGNAL_REGION(&quot;SR-S-high-mumu-6&quot;) }
+            else if(mT2100 &gt;= 120 &amp;&amp; mT2100 &lt;= 130)   { FILL_SIGNAL_REGION(&quot;SR-S-high-mumu-7&quot;) }
+            else if(mT2100 &gt;= 130 &amp;&amp; mT2100 &lt;= 140)   { FILL_SIGNAL_REGION(&quot;SR-S-high-mumu-8&quot;) }
+          }
+          if(mT2100 &gt;= 100 &amp;&amp; mT2100 &lt;= 100.5)      { FILL_SIGNAL_REGION(&quot;SR-S-high-combined-1&quot;) }
+          else if(mT2100 &gt;= 100.5 &amp;&amp; mT2100 &lt;= 101) { FILL_SIGNAL_REGION(&quot;SR-S-high-combined-2&quot;) }
+          else if(mT2100 &gt;= 101 &amp;&amp; mT2100 &lt;= 102)   { FILL_SIGNAL_REGION(&quot;SR-S-high-combined-3&quot;) }
+          else if(mT2100 &gt;= 102 &amp;&amp; mT2100 &lt;= 105)   { FILL_SIGNAL_REGION(&quot;SR-S-high-combined-4&quot;) }
+          else if(mT2100 &gt;= 105 &amp;&amp; mT2100 &lt;= 110)   { FILL_SIGNAL_REGION(&quot;SR-S-high-combined-5&quot;) }
+          else if(mT2100 &gt;= 110 &amp;&amp; mT2100 &lt;= 120)   { FILL_SIGNAL_REGION(&quot;SR-S-high-combined-6&quot;) }
+          else if(mT2100 &gt;= 120 &amp;&amp; mT2100 &lt;= 130)   { FILL_SIGNAL_REGION(&quot;SR-S-high-combined-7&quot;) }
+          else if(mT2100 &gt;= 130 &amp;&amp; mT2100 &lt;= 140)   { FILL_SIGNAL_REGION(&quot;SR-S-high-combined-8&quot;) }
+        }
+      }
+
+      // This function can be overridden by the derived SR-specific classes
+      virtual void collect_results()
+      {
+        // SR-E-low observed and background events, from Table 11 of 1911.12606
+        COMMIT_SIGNAL_REGION(&quot;SR-E-low-ee-1&quot;, 7., 5.3, 1.5)
+        COMMIT_SIGNAL_REGION(&quot;SR-E-low-ee-2&quot;, 11., 8.6, 1.8)
+        COMMIT_SIGNAL_REGION(&quot;SR-E-low-ee-3&quot;, 16., 16.7, 2.5)
+        COMMIT_SIGNAL_REGION(&quot;SR-E-low-ee-4&quot;, 16., 15.5, 2.6)
+        COMMIT_SIGNAL_REGION(&quot;SR-E-low-ee-5&quot;, 10., 12.9, 2.1)
+        COMMIT_SIGNAL_REGION(&quot;SR-E-low-ee-6&quot;, 9., 18.8, 2.2)
+
+        COMMIT_SIGNAL_REGION(&quot;SR-E-low-mumu-1&quot;, 9., 15.4, 2.4)
+        COMMIT_SIGNAL_REGION(&quot;SR-E-low-mumu-2&quot;, 7., 8.0, 1.7)
+        COMMIT_SIGNAL_REGION(&quot;SR-E-low-mumu-3&quot;, 7., 6.5, 1.6)
+        COMMIT_SIGNAL_REGION(&quot;SR-E-low-mumu-4&quot;, 12., 11.3, 1.9)
+        COMMIT_SIGNAL_REGION(&quot;SR-E-low-mumu-5&quot;, 17., 15.6, 2.3)
+        COMMIT_SIGNAL_REGION(&quot;SR-E-low-mumu-6&quot;, 18., 16.7, 2.3)
+        COMMIT_SIGNAL_REGION(&quot;SR-E-low-mumu-7&quot;, 16., 15.3, 2.0)
+        COMMIT_SIGNAL_REGION(&quot;SR-E-low-mumu-8&quot;, 44., 35.9, 3.3)
+
+        COMMIT_SIGNAL_REGION(&quot;SR-E-low-combined-1&quot;, 9., 15.4, 2.4)
+        COMMIT_SIGNAL_REGION(&quot;SR-E-low-combined-2&quot;, 7., 8.0, 1.7)
+        COMMIT_SIGNAL_REGION(&quot;SR-E-low-combined-3&quot;, 7.+7., 5.3+6.5, sqrt(1.5*1.5 + 1.6*1.6))
+        COMMIT_SIGNAL_REGION(&quot;SR-E-low-combined-4&quot;, 11.+12., 8.6+11.3, sqrt(1.8*1.8 + 1.9*1.9))
+        COMMIT_SIGNAL_REGION(&quot;SR-E-low-combined-5&quot;, 16.+17., 16.7+15.6, sqrt(2.5*2.5 + 2.3*2.3))
+        COMMIT_SIGNAL_REGION(&quot;SR-E-low-combined-6&quot;, 16.+18., 15.5+16.7, sqrt(2.6*2.6 + 2.3*2.3))
+        COMMIT_SIGNAL_REGION(&quot;SR-E-low-combined-7&quot;, 10.+16., 12.9+15.3, sqrt(2.1*2.1 + 2.0*2.0))
+        COMMIT_SIGNAL_REGION(&quot;SR-E-low-combined-8&quot;, 9.+44., 18.8+35.9, sqrt(2.2*2.2 + 3.3*3.3))
+
+        // SR-E-med observed and background events, from Table 11 of 1911.12606
+        COMMIT_SIGNAL_REGION(&quot;SR-E-med-ee-1&quot;, 0., 0.11, 0.08)
+        COMMIT_SIGNAL_REGION(&quot;SR-E-med-ee-2&quot;, 4., 5.1, 1.6)
+        COMMIT_SIGNAL_REGION(&quot;SR-E-med-ee-3&quot;, 11., 7.3, 1.9)
+        COMMIT_SIGNAL_REGION(&quot;SR-E-med-ee-4&quot;, 4., 2.2, 0.9)
+
+        COMMIT_SIGNAL_REGION(&quot;SR-E-med-mumu-1&quot;, 16., 14.6, 2.9)
+        COMMIT_SIGNAL_REGION(&quot;SR-E-med-mumu-2&quot;, 8., 6.9, 2.1)
+        COMMIT_SIGNAL_REGION(&quot;SR-E-med-mumu-3&quot;, 6., 6.2, 1.9)
+        COMMIT_SIGNAL_REGION(&quot;SR-E-med-mumu-4&quot;, 41., 34., 4.)
+        COMMIT_SIGNAL_REGION(&quot;SR-E-med-mumu-5&quot;, 59., 52., 6.)
+        COMMIT_SIGNAL_REGION(&quot;SR-E-med-mumu-6&quot;, 21., 18.5, 3.2)
+
+        COMMIT_SIGNAL_REGION(&quot;SR-E-med-combined-1&quot;, 16., 14.6, 2.9)
+        COMMIT_SIGNAL_REGION(&quot;SR-E-med-combined-2&quot;, 8., 6.9, 2.1)
+        COMMIT_SIGNAL_REGION(&quot;SR-E-med-combined-3&quot;, 6.+0., 6.2+0.11, sqrt(1.9*1.9 + 0.08*0.08))
+        COMMIT_SIGNAL_REGION(&quot;SR-E-med-combined-4&quot;, 41.+4., 34.+5.1, sqrt(4.*4. + 1.6*1.6))
+        COMMIT_SIGNAL_REGION(&quot;SR-E-med-combined-5&quot;, 59.+11., 52.+7.3, sqrt(6.*6. + 1.9*1.9))
+        COMMIT_SIGNAL_REGION(&quot;SR-E-med-combined-6&quot;, 21.+4., 18.5+2.2, sqrt(3.2*3.2 + 0.9*0.9))
+
+        // SR-E-high observed and background events, from Table 11 of 1911.12606
+    COMMIT_SIGNAL_REGION(&quot;SR-E-high-ee-1&quot;, 1., 0.7, 0.4)
+        COMMIT_SIGNAL_REGION(&quot;SR-E-high-ee-2&quot;, 16., 10.3, 2.5)
+        COMMIT_SIGNAL_REGION(&quot;SR-E-high-ee-3&quot;, 13., 12.1, 2.2)
+        COMMIT_SIGNAL_REGION(&quot;SR-E-high-ee-4&quot;, 8., 10.1, 1.7)
+        COMMIT_SIGNAL_REGION(&quot;SR-E-high-ee-5&quot;, 8., 10.4, 1.7)
+        COMMIT_SIGNAL_REGION(&quot;SR-E-high-ee-6&quot;, 18, 19.3, 2.5)
+
+        COMMIT_SIGNAL_REGION(&quot;SR-E-high-mumu-1&quot;, 5., 3.4, 1.2)
+        COMMIT_SIGNAL_REGION(&quot;SR-E-high-mumu-2&quot;, 5., 3.5, 1.3)
+        COMMIT_SIGNAL_REGION(&quot;SR-E-high-mumu-3&quot;, 0., 3.9, 1.3)
+        COMMIT_SIGNAL_REGION(&quot;SR-E-high-mumu-4&quot;, 9., 11.0, 2.0)
+        COMMIT_SIGNAL_REGION(&quot;SR-E-high-mumu-5&quot;, 23., 17.8, 2.7)
+        COMMIT_SIGNAL_REGION(&quot;SR-E-high-mumu-6&quot;, 3., 8.3, 1.4)
+        COMMIT_SIGNAL_REGION(&quot;SR-E-high-mumu-7&quot;, 5., 10.1, 1.5)
+        COMMIT_SIGNAL_REGION(&quot;SR-E-high-mumu-8&quot;, 20., 19.6, 2.3)
+
+        COMMIT_SIGNAL_REGION(&quot;SR-E-high-combined-1&quot;, 5., 3.4, 1.2)
+        COMMIT_SIGNAL_REGION(&quot;SR-E-high-combined-2&quot;, 5., 3.5, 1.3)
+        COMMIT_SIGNAL_REGION(&quot;SR-E-high-combined-3&quot;, 0.+1., 3.9+0.7, sqrt(1.3*1.3 + 0.4*0.4))
+        COMMIT_SIGNAL_REGION(&quot;SR-E-high-combined-4&quot;, 9.+16., 11.0+10.3, sqrt(2.0*2.0 + 2.5*2.5))
+        COMMIT_SIGNAL_REGION(&quot;SR-E-high-combined-5&quot;, 23.+13., 17.8+12.1, sqrt(2.7*2.7 + 2.2*2.2))
+        COMMIT_SIGNAL_REGION(&quot;SR-E-high-combined-6&quot;, 3.+8., 8.3+10.1, sqrt(1.4*1.4 + 1.7*1.7))
+        COMMIT_SIGNAL_REGION(&quot;SR-E-high-combined-7&quot;, 5.+8., 10.1+10.4, sqrt(1.5*1.5 + 1.7*1.7))
+        COMMIT_SIGNAL_REGION(&quot;SR-E-high-combined-8&quot;, 20.+18, 19.6+19.3, sqrt(2.3*2.3 + 2.5*2.5))
+
+        // SR-E-1l1T observed and background events, from Table 12 of 1911.12606
+        COMMIT_SIGNAL_REGION(&quot;SR-E-1l1T-1&quot;, 0., 0.5, 0.5)
+        COMMIT_SIGNAL_REGION(&quot;SR-E-1l1T-2&quot;, 8., 6.0, 1.9)
+        COMMIT_SIGNAL_REGION(&quot;SR-E-1l1T-3&quot;, 8., 7.6, 2.1)
+        COMMIT_SIGNAL_REGION(&quot;SR-E-1l1T-4&quot;, 24., 20.7, 3.4)
+        COMMIT_SIGNAL_REGION(&quot;SR-E-1l1T-5&quot;, 24., 24, 4)
+        COMMIT_SIGNAL_REGION(&quot;SR-E-1l1T-6&quot;, 16., 18.1, 3.1)
+
+        // SR-VBF-low observed and background events, from Table 13 of 1911.12606
+        COMMIT_SIGNAL_REGION(&quot;SR-VBF-low-1&quot;, 0., 0.7, 0.4)
+        COMMIT_SIGNAL_REGION(&quot;SR-VBF-low-2&quot;, 0., 0.47, 0.25)
+        COMMIT_SIGNAL_REGION(&quot;SR-VBF-low-3&quot;, 0., 0.64, 0.32)
+        COMMIT_SIGNAL_REGION(&quot;SR-VBF-low-4&quot;, 6., 4.9, 1.2)
+        COMMIT_SIGNAL_REGION(&quot;SR-VBF-low-5&quot;, 21., 17.3, 2.6)
+        COMMIT_SIGNAL_REGION(&quot;SR-VBF-low-6&quot;, 14., 12.5, 1.8)
+        COMMIT_SIGNAL_REGION(&quot;SR-VBF-low-7&quot;, 15., 15.2, 2.7)
+
+        // SR-VBF-high observed and background events, from Table 13 of 1911.12606
+        COMMIT_SIGNAL_REGION(&quot;SR-VBF-high-1&quot;, 0., 1.6, 0.7)
+        COMMIT_SIGNAL_REGION(&quot;SR-VBF-high-2&quot;, 1., 0.8, 0.6)
+        COMMIT_SIGNAL_REGION(&quot;SR-VBF-high-3&quot;, 1., 0.25, 0.13)
+        COMMIT_SIGNAL_REGION(&quot;SR-VBF-high-4&quot;, 1., 0.9, 0.5)
+        COMMIT_SIGNAL_REGION(&quot;SR-VBF-high-5&quot;, 6., 7.1, 1.5)
+        COMMIT_SIGNAL_REGION(&quot;SR-VBF-high-6&quot;, 8., 8.5, 2.2)
+        COMMIT_SIGNAL_REGION(&quot;SR-VBF-high-7&quot;, 9., 7.7, 1.5)
+
+        // SR-S-low observed and background events, from Table 14 of 1911.12606
+        // Combined ee and mumu SR data
+        COMMIT_SIGNAL_REGION(&quot;SR-S-low-ee-1&quot;, 8., 6.0, 1.4 )
+        COMMIT_SIGNAL_REGION(&quot;SR-S-low-ee-2&quot;, 5., 5.3, 2.1)
+        COMMIT_SIGNAL_REGION(&quot;SR-S-low-ee-3&quot;, 15., 11.6, 2.5 )
+        COMMIT_SIGNAL_REGION(&quot;SR-S-low-ee-4&quot;, 19., 22.9, 3.3 )
+        COMMIT_SIGNAL_REGION(&quot;SR-S-low-ee-5&quot;, 30., 31., 4. )
+        COMMIT_SIGNAL_REGION(&quot;SR-S-low-ee-6&quot;, 24., 23.3, 3.0 )
+        COMMIT_SIGNAL_REGION(&quot;SR-S-low-ee-7&quot;, 32., 27.1, 3.1 )
+        COMMIT_SIGNAL_REGION(&quot;SR-S-low-ee-8&quot;, 11., 16.8, 2.1 )
+
+        COMMIT_SIGNAL_REGION(&quot;SR-S-low-mumu-1&quot;, 3., 5.2, 1.1)
+        COMMIT_SIGNAL_REGION(&quot;SR-S-low-mumu-2&quot;, 6., 4.3, 1.0)
+        COMMIT_SIGNAL_REGION(&quot;SR-S-low-mumu-3&quot;, 15., 12.8, 1.8)
+        COMMIT_SIGNAL_REGION(&quot;SR-S-low-mumu-4&quot;, 23., 24.8, 2.6)
+        COMMIT_SIGNAL_REGION(&quot;SR-S-low-mumu-5&quot;, 37., 38., 5.)
+        COMMIT_SIGNAL_REGION(&quot;SR-S-low-mumu-6&quot;, 44., 37.8, 3.3)
+        COMMIT_SIGNAL_REGION(&quot;SR-S-low-mumu-7&quot;, 41., 36.0, 3.4)
+        COMMIT_SIGNAL_REGION(&quot;SR-S-low-mumu-8&quot;, 28., 28.0, 2.7)
+
+        COMMIT_SIGNAL_REGION(&quot;SR-S-low-combined-1&quot;, 8.+3., 6.0+5.2, sqrt(1.4*1.4 + 1.1*1.1))
+        COMMIT_SIGNAL_REGION(&quot;SR-S-low-combined-2&quot;, 5.+6., 5.3+4.3, sqrt(2.1*2.1 + 1.0*1.0))
+        COMMIT_SIGNAL_REGION(&quot;SR-S-low-combined-3&quot;, 15.+15., 11.6+12.8, sqrt(2.5*2.5 + 1.8*1.8))
+        COMMIT_SIGNAL_REGION(&quot;SR-S-low-combined-4&quot;, 19.+23., 22.9+24.8, sqrt(3.3*3.3 + 2.6*2.6))
+        COMMIT_SIGNAL_REGION(&quot;SR-S-low-combined-5&quot;, 30.+37., 31.+38., sqrt(4.*4. + 5.*5.))
+        COMMIT_SIGNAL_REGION(&quot;SR-S-low-combined-6&quot;, 24.+44., 23.3+37.8, sqrt(3.0*3.0 + 3.3*3.3))
+        COMMIT_SIGNAL_REGION(&quot;SR-S-low-combined-7&quot;, 32.+41., 27.1+36.0, sqrt(3.1*3.1 + 3.4*3.4))
+        COMMIT_SIGNAL_REGION(&quot;SR-S-low-combined-8&quot;, 11.+28., 16.8+28.0, sqrt(2.1*2.1 + 2.7*2.7))
+
+        // SR-S-high observed and background events, from Table 14 of 1911.12606
+        // Combined ee and mumu SR data
+        COMMIT_SIGNAL_REGION(&quot;SR-S-high-ee-1&quot;, 3., 4.0, 1.1 )
+        COMMIT_SIGNAL_REGION(&quot;SR-S-high-ee-2&quot;, 3., 3.6, 1.0 )
+        COMMIT_SIGNAL_REGION(&quot;SR-S-high-ee-3&quot;, 9., 7.9, 1.9 )
+        COMMIT_SIGNAL_REGION(&quot;SR-S-high-ee-4&quot;, 13., 13.2, 2.1 )
+        COMMIT_SIGNAL_REGION(&quot;SR-S-high-ee-5&quot;, 9., 8.6, 1.4 )
+        COMMIT_SIGNAL_REGION(&quot;SR-S-high-ee-6&quot;, 6., 5.7, 1.0 )
+        COMMIT_SIGNAL_REGION(&quot;SR-S-high-ee-7&quot;, 8., 7.0, 1.2 )
+        COMMIT_SIGNAL_REGION(&quot;SR-S-high-ee-8&quot;, 6., 6.8, 1.1 )
+
+        COMMIT_SIGNAL_REGION(&quot;SR-S-high-mumu-1&quot;, 10., 11.0, 2.2)
+        COMMIT_SIGNAL_REGION(&quot;SR-S-high-mumu-2&quot;, 3., 5.8, 1.3)
+        COMMIT_SIGNAL_REGION(&quot;SR-S-high-mumu-3&quot;, 11., 8.6, 1.6)
+        COMMIT_SIGNAL_REGION(&quot;SR-S-high-mumu-4&quot;, 12., 14.2, 1.9)
+        COMMIT_SIGNAL_REGION(&quot;SR-S-high-mumu-5&quot;, 9., 10.0, 1.5)
+        COMMIT_SIGNAL_REGION(&quot;SR-S-high-mumu-6&quot;, 11., 11.2, 1.6)
+        COMMIT_SIGNAL_REGION(&quot;SR-S-high-mumu-7&quot;, 10., 11.5, 1.5)
+        COMMIT_SIGNAL_REGION(&quot;SR-S-high-mumu-8&quot;, 8., 7.8, 1.4)
+
+        COMMIT_SIGNAL_REGION(&quot;SR-S-high-combined-1&quot;, 3.+10., 4.0+11.0, sqrt(1.1*1.1 + 2.2*2.2))
+        COMMIT_SIGNAL_REGION(&quot;SR-S-high-combined-2&quot;, 3.+3., 3.6+5.8, sqrt(1.0*1.0 + 1.3*1.3))
+        COMMIT_SIGNAL_REGION(&quot;SR-S-high-combined-3&quot;, 9.+11., 7.9+8.6, sqrt(1.9*1.9 + 1.6*1.6))
+        COMMIT_SIGNAL_REGION(&quot;SR-S-high-combined-4&quot;, 13.+12., 13.2+14.2, sqrt(2.1*2.1 + 1.9*1.9))
+        COMMIT_SIGNAL_REGION(&quot;SR-S-high-combined-5&quot;, 9.+9., 8.6+10.0, sqrt(1.4*1.4 + 1.5*1.5))
+        COMMIT_SIGNAL_REGION(&quot;SR-S-high-combined-6&quot;, 6.+11., 5.7+11.2, sqrt(1.0*1.0 + 1.6*1.6))
+        COMMIT_SIGNAL_REGION(&quot;SR-S-high-combined-7&quot;, 8.+10., 7.0+11.5, sqrt(.2*.2 + 1.5*1.5))
+        COMMIT_SIGNAL_REGION(&quot;SR-S-high-combined-8&quot;, 6.+8., 6.8+7.8, sqrt(1.1*1.1 + 1.4*1.4))
+
+        COMMIT_CUTFLOWS
+      }
+
+
+    protected:
+      void analysis_specific_reset()
+      {
+        for (auto&amp; pair : _counters) { pair.second.reset(); }
+      }
+
+    };
+
+    // Factory fn
+    DEFINE_ANALYSIS_FACTORY(ATLAS_13TeV_2LEPsoft_139invfb)
+
+
+    // Derived analysis that does not combine ee and mu mu signal regions
+    class Analysis_ATLAS_13TeV_2LEPsoft_exclusive_139invfb : public Analysis_ATLAS_13TeV_2LEPsoft_139invfb
+    {
+
+      public:
+
+        Analysis_ATLAS_13TeV_2LEPsoft_exclusive_139invfb()
+        {
+          set_analysis_name(&quot;ATLAS_13TeV_2LEPsoft_exclusive_139invfb&quot;);
+        }
+
+        virtual void collect_results()
+        {
+          // SR-E-low observed and background events, from Table 11 of 1911.12606
+          COMMIT_SIGNAL_REGION(&quot;SR-E-low-ee-1&quot;, 7., 5.3, 1.5)
+          COMMIT_SIGNAL_REGION(&quot;SR-E-low-ee-2&quot;, 11., 8.6, 1.8)
+          COMMIT_SIGNAL_REGION(&quot;SR-E-low-ee-3&quot;, 16., 16.7, 2.5)
+          COMMIT_SIGNAL_REGION(&quot;SR-E-low-ee-4&quot;, 16., 15.5, 2.6)
+          COMMIT_SIGNAL_REGION(&quot;SR-E-low-ee-5&quot;, 10., 12.9, 2.1)
+          COMMIT_SIGNAL_REGION(&quot;SR-E-low-ee-6&quot;, 9., 18.8, 2.2)
+
+          COMMIT_SIGNAL_REGION(&quot;SR-E-low-mumu-1&quot;, 9., 15.4, 2.4)
+          COMMIT_SIGNAL_REGION(&quot;SR-E-low-mumu-2&quot;, 7., 8.0, 1.7)
+          COMMIT_SIGNAL_REGION(&quot;SR-E-low-mumu-3&quot;, 7., 6.5, 1.6)
+          COMMIT_SIGNAL_REGION(&quot;SR-E-low-mumu-4&quot;, 12., 11.3, 1.9)
+          COMMIT_SIGNAL_REGION(&quot;SR-E-low-mumu-5&quot;, 17., 15.6, 2.3)
+          COMMIT_SIGNAL_REGION(&quot;SR-E-low-mumu-6&quot;, 18., 16.7, 2.3)
+          COMMIT_SIGNAL_REGION(&quot;SR-E-low-mumu-7&quot;, 16., 15.3, 2.0)
+          COMMIT_SIGNAL_REGION(&quot;SR-E-low-mumu-8&quot;, 44., 35.9, 3.3)
+
+          // SR-E-med observed and background events, from Table 11 of 1911.12606
+      COMMIT_SIGNAL_REGION(&quot;SR-E-med-ee-1&quot;, 0., 0.11, 0.08)
+          COMMIT_SIGNAL_REGION(&quot;SR-E-med-ee-2&quot;, 4., 5.1, 1.6)
+          COMMIT_SIGNAL_REGION(&quot;SR-E-med-ee-3&quot;, 11., 7.3, 1.9)
+          COMMIT_SIGNAL_REGION(&quot;SR-E-med-ee-4&quot;, 4., 2.2, 0.9)
+
+          COMMIT_SIGNAL_REGION(&quot;SR-E-med-mumu-1&quot;, 16., 14.6, 2.9)
+          COMMIT_SIGNAL_REGION(&quot;SR-E-med-mumu-2&quot;, 8., 6.9, 2.1)
+          COMMIT_SIGNAL_REGION(&quot;SR-E-med-mumu-3&quot;, 6., 6.2, 1.9)
+          COMMIT_SIGNAL_REGION(&quot;SR-E-med-mumu-4&quot;, 41., 34., 4.)
+          COMMIT_SIGNAL_REGION(&quot;SR-E-med-mumu-5&quot;, 59., 52., 6.)
+          COMMIT_SIGNAL_REGION(&quot;SR-E-med-mumu-6&quot;, 21., 18.5, 3.2)
+
+          // SR-E-high observed and background events, from Table 11 of 1911.12606
+      COMMIT_SIGNAL_REGION(&quot;SR-E-high-ee-1&quot;, 1., 0.7, 0.4)
+          COMMIT_SIGNAL_REGION(&quot;SR-E-high-ee-2&quot;, 16., 10.3, 2.5)
+          COMMIT_SIGNAL_REGION(&quot;SR-E-high-ee-3&quot;, 13., 12.1, 2.2)
+          COMMIT_SIGNAL_REGION(&quot;SR-E-high-ee-4&quot;, 8., 10.1, 1.7)
+          COMMIT_SIGNAL_REGION(&quot;SR-E-high-ee-5&quot;, 8., 10.4, 1.7)
+          COMMIT_SIGNAL_REGION(&quot;SR-E-high-ee-6&quot;, 18, 19.3, 2.5)
+
+          COMMIT_SIGNAL_REGION(&quot;SR-E-high-mumu-1&quot;, 5., 3.4, 1.2)
+          COMMIT_SIGNAL_REGION(&quot;SR-E-high-mumu-2&quot;, 5., 3.5, 1.3)
+          COMMIT_SIGNAL_REGION(&quot;SR-E-high-mumu-3&quot;, 0., 3.9, 1.3)
+          COMMIT_SIGNAL_REGION(&quot;SR-E-high-mumu-4&quot;, 9., 11.0, 2.0)
+          COMMIT_SIGNAL_REGION(&quot;SR-E-high-mumu-5&quot;, 23., 17.8, 2.7)
+          COMMIT_SIGNAL_REGION(&quot;SR-E-high-mumu-6&quot;, 3., 8.3, 1.4)
+          COMMIT_SIGNAL_REGION(&quot;SR-E-high-mumu-7&quot;, 5., 10.1, 1.5)
+          COMMIT_SIGNAL_REGION(&quot;SR-E-high-mumu-8&quot;, 20., 19.6, 2.3)
+
+          // SR-E-1l1T observed and background events, from Table 12 of 1911.12606
+          COMMIT_SIGNAL_REGION(&quot;SR-E-1l1T-1&quot;, 0., 0.5, 0.5)
+          COMMIT_SIGNAL_REGION(&quot;SR-E-1l1T-2&quot;, 8., 6.0, 1.9)
+          COMMIT_SIGNAL_REGION(&quot;SR-E-1l1T-3&quot;, 8., 7.6, 2.1)
+          COMMIT_SIGNAL_REGION(&quot;SR-E-1l1T-4&quot;, 24., 20.7, 3.4)
+          COMMIT_SIGNAL_REGION(&quot;SR-E-1l1T-5&quot;, 24., 24, 4)
+          COMMIT_SIGNAL_REGION(&quot;SR-E-1l1T-6&quot;, 16., 18.1, 3.1)
+
+          // SR-VBF-low observed and background events, from Table 13 of 1911.12606
+          COMMIT_SIGNAL_REGION(&quot;SR-VBF-low-1&quot;, 0., 0.7, 0.4)
+          COMMIT_SIGNAL_REGION(&quot;SR-VBF-low-2&quot;, 0., 0.47, 0.25)
+          COMMIT_SIGNAL_REGION(&quot;SR-VBF-low-3&quot;, 0., 0.64, 0.32)
+          COMMIT_SIGNAL_REGION(&quot;SR-VBF-low-4&quot;, 6., 4.9, 1.2)
+          COMMIT_SIGNAL_REGION(&quot;SR-VBF-low-5&quot;, 21., 17.3, 2.6)
+          COMMIT_SIGNAL_REGION(&quot;SR-VBF-low-6&quot;, 14., 12.5, 1.8)
+          COMMIT_SIGNAL_REGION(&quot;SR-VBF-low-7&quot;, 15., 15.2, 2.7)
+
+          // SR-VBF-high observed and background events, from Table 13 of 1911.12606
+          COMMIT_SIGNAL_REGION(&quot;SR-VBF-high-1&quot;, 0., 1.6, 0.7)
+          COMMIT_SIGNAL_REGION(&quot;SR-VBF-high-2&quot;, 1., 0.8, 0.6)
+          COMMIT_SIGNAL_REGION(&quot;SR-VBF-high-3&quot;, 1., 0.25, 0.13)
+          COMMIT_SIGNAL_REGION(&quot;SR-VBF-high-4&quot;, 1., 0.9, 0.5)
+          COMMIT_SIGNAL_REGION(&quot;SR-VBF-high-5&quot;, 6., 7.1, 1.5)
+          COMMIT_SIGNAL_REGION(&quot;SR-VBF-high-6&quot;, 8., 8.5, 2.2)
+          COMMIT_SIGNAL_REGION(&quot;SR-VBF-high-7&quot;, 9., 7.7, 1.5)
+
+          // SR-S-low observed and background events, from Table 14 of 1911.12606
+          // Combined ee and mumu SR data
+          COMMIT_SIGNAL_REGION(&quot;SR-S-low-ee-1&quot;, 8., 6.0, 1.4 )
+          COMMIT_SIGNAL_REGION(&quot;SR-S-low-ee-2&quot;, 5., 5.3, 2.1)
+          COMMIT_SIGNAL_REGION(&quot;SR-S-low-ee-3&quot;, 15., 11.6, 2.5 )
+          COMMIT_SIGNAL_REGION(&quot;SR-S-low-ee-4&quot;, 19., 22.9, 3.3 )
+          COMMIT_SIGNAL_REGION(&quot;SR-S-low-ee-5&quot;, 30., 31., 4. )
+          COMMIT_SIGNAL_REGION(&quot;SR-S-low-ee-6&quot;, 24., 23.3, 3.0 )
+          COMMIT_SIGNAL_REGION(&quot;SR-S-low-ee-7&quot;, 32., 27.1, 3.1 )
+          COMMIT_SIGNAL_REGION(&quot;SR-S-low-ee-8&quot;, 11., 16.8, 2.1 )
+
+          COMMIT_SIGNAL_REGION(&quot;SR-S-low-mumu-1&quot;, 3., 5.2, 1.1)
+          COMMIT_SIGNAL_REGION(&quot;SR-S-low-mumu-2&quot;, 6., 4.3, 1.0)
+          COMMIT_SIGNAL_REGION(&quot;SR-S-low-mumu-3&quot;, 15., 12.8, 1.8)
+          COMMIT_SIGNAL_REGION(&quot;SR-S-low-mumu-4&quot;, 23., 24.8, 2.6)
+          COMMIT_SIGNAL_REGION(&quot;SR-S-low-mumu-5&quot;, 37., 38., 5.)
+          COMMIT_SIGNAL_REGION(&quot;SR-S-low-mumu-6&quot;, 44., 37.8, 3.3)
+          COMMIT_SIGNAL_REGION(&quot;SR-S-low-mumu-7&quot;, 41., 36.0, 3.4)
+          COMMIT_SIGNAL_REGION(&quot;SR-S-low-mumu-8&quot;, 28., 28.0, 2.7)
+
+          // SR-S-high observed and background events, from Table 14 of 1911.12606
+          // Combined ee and mumu SR data
+          COMMIT_SIGNAL_REGION(&quot;SR-S-high-ee-1&quot;, 3., 4.0, 1.1 )
+          COMMIT_SIGNAL_REGION(&quot;SR-S-high-ee-2&quot;, 3., 3.6, 1.0 )
+          COMMIT_SIGNAL_REGION(&quot;SR-S-high-ee-3&quot;, 9., 7.9, 1.9 )
+          COMMIT_SIGNAL_REGION(&quot;SR-S-high-ee-4&quot;, 13., 13.2, 2.1 )
+          COMMIT_SIGNAL_REGION(&quot;SR-S-high-ee-5&quot;, 9., 8.6, 1.4 )
+          COMMIT_SIGNAL_REGION(&quot;SR-S-high-ee-6&quot;, 6., 5.7, 1.0 )
+          COMMIT_SIGNAL_REGION(&quot;SR-S-high-ee-7&quot;, 8., 7.0, 1.2 )
+          COMMIT_SIGNAL_REGION(&quot;SR-S-high-ee-8&quot;, 6., 6.8, 1.1 )
+
+          COMMIT_SIGNAL_REGION(&quot;SR-S-high-mumu-1&quot;, 10., 11.0, 2.2)
+          COMMIT_SIGNAL_REGION(&quot;SR-S-high-mumu-2&quot;, 3., 5.8, 1.3)
+          COMMIT_SIGNAL_REGION(&quot;SR-S-high-mumu-3&quot;, 11., 8.6, 1.6)
+          COMMIT_SIGNAL_REGION(&quot;SR-S-high-mumu-4&quot;, 12., 14.2, 1.9)
+          COMMIT_SIGNAL_REGION(&quot;SR-S-high-mumu-5&quot;, 9., 10.0, 1.5)
+          COMMIT_SIGNAL_REGION(&quot;SR-S-high-mumu-6&quot;, 11., 11.2, 1.6)
+          COMMIT_SIGNAL_REGION(&quot;SR-S-high-mumu-7&quot;, 10., 11.5, 1.5)
+          COMMIT_SIGNAL_REGION(&quot;SR-S-high-mumu-8&quot;, 8., 7.8, 1.4)
+
+          COMMIT_CUTFLOWS
+        }
+
+    };
+
+    // Factory fn
+    DEFINE_ANALYSIS_FACTORY(ATLAS_13TeV_2LEPsoft_exclusive_139invfb)
+
+
+    // Derived analysis that combines ee and mu mu signal regions
+    class Analysis_ATLAS_13TeV_2LEPsoft_combined_139invfb : public Analysis_ATLAS_13TeV_2LEPsoft_139invfb
+    {
+
+      public:
+
+        Analysis_ATLAS_13TeV_2LEPsoft_combined_139invfb()
+        {
+          set_analysis_name(&quot;ATLAS_13TeV_2LEPsoft_combined_139invfb&quot;);
+        }
+
+        virtual void collect_results()
+        {
+          // SR-E-low observed and background events, from Table 11 of 1911.12606
+          COMMIT_SIGNAL_REGION(&quot;SR-E-low-combined-1&quot;, 9., 15.4, 2.4)
+          COMMIT_SIGNAL_REGION(&quot;SR-E-low-combined-2&quot;, 7., 8.0, 1.7)
+          COMMIT_SIGNAL_REGION(&quot;SR-E-low-combined-3&quot;, 7.+7., 5.3+6.5, sqrt(1.5*1.5 + 1.6*1.6))
+          COMMIT_SIGNAL_REGION(&quot;SR-E-low-combined-4&quot;, 11.+12., 8.6+11.3, sqrt(1.8*1.8 + 1.9*1.9))
+          COMMIT_SIGNAL_REGION(&quot;SR-E-low-combined-5&quot;, 16.+17., 16.7+15.6, sqrt(2.5*2.5 + 2.3*2.3))
+          COMMIT_SIGNAL_REGION(&quot;SR-E-low-combined-6&quot;, 16.+18., 15.5+16.7, sqrt(2.6*2.6 + 2.3*2.3))
+          COMMIT_SIGNAL_REGION(&quot;SR-E-low-combined-7&quot;, 10.+16., 12.9+15.3, sqrt(2.1*2.1 + 2.0*2.0))
+          COMMIT_SIGNAL_REGION(&quot;SR-E-low-combined-8&quot;, 9.+44., 18.8+35.9, sqrt(2.2*2.2 + 3.3*3.3))
+
+          // SR-E-med observed and background events, from Table 11 of 1911.12606
+          COMMIT_SIGNAL_REGION(&quot;SR-E-med-combined-1&quot;, 16., 14.6, 2.9)
+          COMMIT_SIGNAL_REGION(&quot;SR-E-med-combined-2&quot;, 8., 6.9, 2.1)
+          COMMIT_SIGNAL_REGION(&quot;SR-E-med-combined-3&quot;, 6.+0., 6.2+0.11, sqrt(1.9*1.9 + 0.08*0.08))
+          COMMIT_SIGNAL_REGION(&quot;SR-E-med-combined-4&quot;, 41.+4., 34.+5.1, sqrt(4.*4. + 1.6*1.6))
+          COMMIT_SIGNAL_REGION(&quot;SR-E-med-combined-5&quot;, 59.+11., 52.+7.3, sqrt(6.*6. + 1.9*1.9))
+          COMMIT_SIGNAL_REGION(&quot;SR-E-med-combined-6&quot;, 21.+4., 18.5+2.2, sqrt(3.2*3.2 + 0.9*0.9))
+
+          // SR-E-high observed and background events, from Table 11 of 1911.12606
+          COMMIT_SIGNAL_REGION(&quot;SR-E-high-combined-1&quot;, 5., 3.4, 1.2)
+          COMMIT_SIGNAL_REGION(&quot;SR-E-high-combined-2&quot;, 5., 3.5, 1.3)
+          COMMIT_SIGNAL_REGION(&quot;SR-E-high-combined-3&quot;, 0.+1., 3.9+0.7, sqrt(1.3*1.3 + 0.4*0.4))
+          COMMIT_SIGNAL_REGION(&quot;SR-E-high-combined-4&quot;, 9.+16., 11.0+10.3, sqrt(2.0*2.0 + 2.5*2.5))
+          COMMIT_SIGNAL_REGION(&quot;SR-E-high-combined-5&quot;, 23.+13., 17.8+12.1, sqrt(2.7*2.7 + 2.2*2.2))
+          COMMIT_SIGNAL_REGION(&quot;SR-E-high-combined-6&quot;, 3.+8., 8.3+10.1, sqrt(1.4*1.4 + 1.7*1.7))
+          COMMIT_SIGNAL_REGION(&quot;SR-E-high-combined-7&quot;, 5.+8., 10.1+10.4, sqrt(1.5*1.5 + 1.7*1.7))
+          COMMIT_SIGNAL_REGION(&quot;SR-E-high-combined-8&quot;, 20.+18, 19.6+19.3, sqrt(2.3*2.3 + 2.5*2.5))
+
+          // SR-E-1l1T observed and background events, from Table 12 of 1911.12606
+          COMMIT_SIGNAL_REGION(&quot;SR-E-1l1T-1&quot;, 0., 0.5, 0.5)
+          COMMIT_SIGNAL_REGION(&quot;SR-E-1l1T-2&quot;, 8., 6.0, 1.9)
+          COMMIT_SIGNAL_REGION(&quot;SR-E-1l1T-3&quot;, 8., 7.6, 2.1)
+          COMMIT_SIGNAL_REGION(&quot;SR-E-1l1T-4&quot;, 24., 20.7, 3.4)
+          COMMIT_SIGNAL_REGION(&quot;SR-E-1l1T-5&quot;, 24., 14, 4)
+          COMMIT_SIGNAL_REGION(&quot;SR-E-1l1T-6&quot;, 16., 18.1, 3.1)
+
+          // SR-VBF-low observed and background events, from Table 13 of 1911.12606
+          COMMIT_SIGNAL_REGION(&quot;SR-VBF-low-1&quot;, 0., 0.7, 0.4)
+          COMMIT_SIGNAL_REGION(&quot;SR-VBF-low-2&quot;, 0., 0.47, 0.25)
+          COMMIT_SIGNAL_REGION(&quot;SR-VBF-low-3&quot;, 0., 0.64, 0.32)
+          COMMIT_SIGNAL_REGION(&quot;SR-VBF-low-4&quot;, 6., 4.9, 1.2)
+          COMMIT_SIGNAL_REGION(&quot;SR-VBF-low-5&quot;, 21., 17.3, 2.6)
+          COMMIT_SIGNAL_REGION(&quot;SR-VBF-low-6&quot;, 14., 12.5, 1.8)
+          COMMIT_SIGNAL_REGION(&quot;SR-VBF-low-7&quot;, 15., 15.2, 2.7)
+
+          // SR-VBF-high observed and background events, from Table 13 of 1911.12606
+          COMMIT_SIGNAL_REGION(&quot;SR-VBF-high-1&quot;, 0., 1.6, 0.7)
+          COMMIT_SIGNAL_REGION(&quot;SR-VBF-high-2&quot;, 1., 0.8, 0.6)
+          COMMIT_SIGNAL_REGION(&quot;SR-VBF-high-3&quot;, 1., 0.25, 0.13)
+          COMMIT_SIGNAL_REGION(&quot;SR-VBF-high-4&quot;, 1., 0.9, 0.5)
+          COMMIT_SIGNAL_REGION(&quot;SR-VBF-high-5&quot;, 6., 7.1, 1.5)
+          COMMIT_SIGNAL_REGION(&quot;SR-VBF-high-6&quot;, 8., 8.5, 2.2)
+          COMMIT_SIGNAL_REGION(&quot;SR-VBF-high-7&quot;, 9., 7.7, 1.5)
+
+          // SR-S-low observed and background events, from Table 14 of 1911.12606
+          // Combined ee and mumu SR data
+          COMMIT_SIGNAL_REGION(&quot;SR-S-low-combined-1&quot;, 8.+3., 6.0+5.2, sqrt(1.4*1.4 + 1.1*1.1))
+          COMMIT_SIGNAL_REGION(&quot;SR-S-low-combined-2&quot;, 5.+6., 5.3+4.3, sqrt(2.1*2.1 + 1.0*1.0))
+          COMMIT_SIGNAL_REGION(&quot;SR-S-low-combined-3&quot;, 15.+15., 11.6+12.8, sqrt(2.5*2.5 + 1.8*1.8))
+          COMMIT_SIGNAL_REGION(&quot;SR-S-low-combined-4&quot;, 19.+23., 22.9+24.8, sqrt(3.3*3.3 + 2.6*2.6))
+          COMMIT_SIGNAL_REGION(&quot;SR-S-low-combined-5&quot;, 30.+37., 31.+38., sqrt(4.*4. + 5.*5.))
+          COMMIT_SIGNAL_REGION(&quot;SR-S-low-combined-6&quot;, 24.+44., 23.3+37.8, sqrt(3.0*3.0 + 3.3*3.3))
+          COMMIT_SIGNAL_REGION(&quot;SR-S-low-combined-7&quot;, 32.+41., 27.1+36.0, sqrt(3.1*3.1 + 3.4*3.4))
+          COMMIT_SIGNAL_REGION(&quot;SR-S-low-combined-8&quot;, 11.+28., 16.8+28.0, sqrt(2.1*2.1 + 2.7*2.7))
+
+          // SR-S-high observed and background events, from Table 14 of 1911.12606
+          // Combined ee and mumu SR data
+          COMMIT_SIGNAL_REGION(&quot;SR-S-high-combined-1&quot;, 3.+10., 4.0+11.0, sqrt(1.1*1.1 + 2.2*2.2))
+          COMMIT_SIGNAL_REGION(&quot;SR-S-high-combined-2&quot;, 3.+3., 3.6+5.8, sqrt(1.0*1.0 + 1.3*1.3))
+          COMMIT_SIGNAL_REGION(&quot;SR-S-high-combined-3&quot;, 9.+11., 7.9+8.6, sqrt(1.9*1.9 + 1.6*1.6))
+          COMMIT_SIGNAL_REGION(&quot;SR-S-high-combined-4&quot;, 13.+12., 13.2+14.2, sqrt(2.1*2.1 + 1.9*1.9))
+          COMMIT_SIGNAL_REGION(&quot;SR-S-high-combined-5&quot;, 9.+9., 8.6+10.0, sqrt(1.4*1.4 + 1.5*1.5))
+          COMMIT_SIGNAL_REGION(&quot;SR-S-high-combined-6&quot;, 6.+11., 5.7+11.2, sqrt(1.0*1.0 + 1.6*1.6))
+          COMMIT_SIGNAL_REGION(&quot;SR-S-high-combined-7&quot;, 8.+10., 7.0+11.5, sqrt(.2*.2 + 1.5*1.5))
+          COMMIT_SIGNAL_REGION(&quot;SR-S-high-combined-8&quot;, 6.+8., 6.8+7.8, sqrt(1.1*1.1 + 1.4*1.4))
+
+          COMMIT_CUTFLOWS
+        }
+
+    };
+
+    // Factory fn
+    DEFINE_ANALYSIS_FACTORY(ATLAS_13TeV_2LEPsoft_combined_139invfb)
+
+  }
+}
+#endif
+#endif
+</code></pre><hr><p>Updated on 2026-11-03 at 14:50:47 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.d5e27a6ed00168b7a66eb637878a6be7d054db51d0e613bbcfda12ab0569b62177253b4e6453c477574b3a38f50eff49a68f0e19112bd82a68c78a66cd8d05df.js integrity="sha512-1eJ6btABaLembrY3h4pr59BU21HQ5hO7z9oSqwVptiF3JTtOZFPEd1dLOjj1Dv9Jpo8OGREr2Cpox4pmzY0F3w==" crossorigin=anonymous defer></script>
+<script src=/js/highlight.min.9003483b4531b86467c8b801b1d5fc5439bb0d6bdb6c6a760a1b54abf37d6bbadf8423dbc81a3359c935c7705bb7d183b46131ba4a9c861b5d48e6a61501461a.js integrity="sha512-kANIO0UxuGRnyLgBsdX8VDm7DWvbbGp2ChtUq/N9a7rfhCPbyBozWck1x3Bbt9GDtGExukqchhtdSOamFQFGGg==" crossorigin=anonymous defer></script>
+<script src=/main.min.9342d29d0e3e250a2c03282306b766e004888dba0fd661a17d7b106655e013bf85733f086ad330e3df0929c713dd81c0ea835966fa92e4a1e38f7ea9680524ed.js integrity="sha512-k0LSnQ4+JQosAygjBrdm4ASIjboP1mGhfXsQZlXgE7+Fcz8IatMw498JKccT3YHA6oNZZvqS5KHjj36paAUk7Q==" crossorigin=anonymous defer></script>
+<script src=https://gambitbsm.org/index.min.3a8ee06d0c346f1fb70040b0fbcbaaacf335cb34023c408954406a05db2089fc2ca349119b9f7d68b9e7044e82b8fdc8bd9661b6ef8b118246c5a2079d7fa8e9.js integrity="sha512-Oo7gbQw0bx+3AECw+8uqrPM1yzQCPECJVEBqBdsgifwso0kRm599aLnnBE6CuP3IvZZhtu+LEYJGxaIHnX+o6Q==" crossorigin=anonymous defer></script></body></html>

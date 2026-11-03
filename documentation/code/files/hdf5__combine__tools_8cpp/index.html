@@ -118,17 +118,17 @@ namespace Gambit
 
 
 
-            inline herr_t op_func (hid_t loc_id, const char *name_in, const H5L_info_t *,
+            inline herr_t op_func (hid_t loc_id, const char *name_in, const GAMBIT_H5L_INFO_T *,
                     void *operator_data)
             {
                 //herr_t          status;
                 herr_t          return_val = 0;
-                H5O_info_t      infobuf;
+                GAMBIT_H5O_INFO_T infobuf;
                 std::vector&lt;std::string&gt; &amp;od = *static_cast&lt;std::vector&lt;std::string&gt; *&gt; (operator_data);
                 std::string name(name_in);
 
-                //status = H5Oget_info_by_name (loc_id, name.c_str(), &amp;infobuf, H5P_DEFAULT);
-                H5Oget_info_by_name (loc_id, name.c_str(), &amp;infobuf, H5P_DEFAULT);
+                //status = GAMBIT_H5OGET_INFO_BY_NAME (loc_id, name.c_str(), &amp;infobuf, H5P_DEFAULT);
+                GAMBIT_H5OGET_INFO_BY_NAME (loc_id, name.c_str(), &amp;infobuf, H5P_DEFAULT);
 
                 switch (infobuf.type)
                 {
@@ -158,17 +158,17 @@ namespace Gambit
                 return return_val;
             }
 
-            inline herr_t op_func_aux (hid_t loc_id, const char *name_in, const H5L_info_t *,
+            inline herr_t op_func_aux (hid_t loc_id, const char *name_in, const GAMBIT_H5L_INFO_T *,
                     void *operator_data)
             {
                 //herr_t          status;
                 herr_t          return_val = 0;
-                H5O_info_t      infobuf;
+                GAMBIT_H5O_INFO_T infobuf;
                 std::vector&lt;std::string&gt; &amp;od = *static_cast&lt;std::vector&lt;std::string&gt; *&gt; (operator_data);
                 std::string name(name_in);
 
-                //status = H5Oget_info_by_name (loc_id, name.c_str(), &amp;infobuf, H5P_DEFAULT);
-                H5Oget_info_by_name (loc_id, name.c_str(), &amp;infobuf, H5P_DEFAULT);
+                //status = GAMBIT_H5OGET_INFO_BY_NAME (loc_id, name.c_str(), &amp;infobuf, H5P_DEFAULT);
+                GAMBIT_H5OGET_INFO_BY_NAME (loc_id, name.c_str(), &amp;infobuf, H5P_DEFAULT);
 
                 switch (infobuf.type)
                 {
@@ -320,7 +320,7 @@ namespace Gambit
                         errmsg &lt;&lt; &quot;  Number of files to be combined (num=&quot;&lt;&lt;num&lt;&lt;&quot;) is less than two! Therefore there is no combining to be done!&quot;&lt;&lt;std::endl;
                         printer_error().raise(LOCAL_INFO, errmsg.str());
                     }
-                    std::cout &lt;&lt; &quot;  Running combination routines in 'custom' mode. Primary datasets from all specified files (in the specified group) will be concatenated. Auxilliary (\&quot;random access\&quot;) datasets will be IGNORED! If you need auxilliary datasets to be merged into the primary datasets then please merge them in 'normal' mode.&quot; &lt;&lt; std::endl;
+                    std::cout &lt;&lt; &quot;  Running combination routines in 'custom' mode. Primary datasets from all specified files (in the specified group) will be concatenated. Auxilliary (\&quot;random access\&quot;) datasets will be IGNORED! If you need auxiliary datasets to be merged into the primary datasets then please merge them in 'normal' mode.&quot; &lt;&lt; std::endl;
                     // TODO: It would actually be good to write out an extra dataset which records which points come from which files. Could just be an int, and could write out a txt file which gives the mapping from indices to input files. This is too much work for now though.
                 }
 
@@ -550,13 +550,9 @@ namespace Gambit
                                size_tot_l = size_tot + size; // Last?
                            //}
 
-                           for (auto it = valids.end()-1; size &gt; 0; --it)
-                           {
-                               if (*it)
-                                   break;
-                               else
-                                   --size;
-                           }
+                           // Trim any trailing invalid points (size &lt;= valids.size() ensured above)
+                           while (size &gt; 0 &amp;&amp; !valids[size-1])
+                               --size;
 
                            HDF5::closeSpace(dataspace);
                            HDF5::closeSpace(dataspace2);
@@ -717,7 +713,7 @@ namespace Gambit
                 if(size_tot==0 and aux_param_names.size()==0)
                 {
                     // If size_tot==0 then there are no primary sync datapoints in any of the temp files (or previous combined output)
-                    // If there are also no auxilliary datapoints found, then there is nothing to combine! Raise an error, because
+                    // If there are also no auxiliary datapoints found, then there is nothing to combine! Raise an error, because
                     // this is a weird situation, and the run would effectively be starting again anyway.
                     // TODO: Keep this? Someone could restart a run from old scanner data, but just have deleted all the old
                     // printer output. Not sure if we want to allow this or not.
@@ -727,10 +723,10 @@ namespace Gambit
                 }
                 else if(size_tot==0 and aux_param_names.size()!=0)
                 {
-                    // Ok now size_tot==0 AND there are auxillary datapoints to be combined. Currently we require primary
-                    // datapoints to exist in order to write auxilliary data to them.
+                    // Ok now size_tot==0 AND there are auxiliary datapoints to be combined. Currently we require primary
+                    // datapoints to exist in order to write auxiliary data to them.
                     std::ostringstream errmsg;
-                    errmsg &lt;&lt; &quot;Error combining HDF5 temporary data! No model points in primary (synchronised) datasets were found in the existing temporary files, however auxilliary datasets WERE found. Currently auxilliary datasets cannot be 'combined' with nothing, i.e. they must have a corresponding model point in a 'primary' dataset to which they should be associated. It is possible to loosen this requirement, so if you have written a scanner or likelihood container which writes only to auxillary datasets then please report this error and request the print system be upgraded. Otherwise this error indicates a bug, please report it.&quot; &lt;&lt; std::endl;
+                    errmsg &lt;&lt; &quot;Error combining HDF5 temporary data! No model points in primary (synchronised) datasets were found in the existing temporary files, however auxiliary datasets WERE found. Currently auxiliary datasets cannot be 'combined' with nothing, i.e. they must have a corresponding model point in a 'primary' dataset to which they should be associated. It is possible to loosen this requirement, so if you have written a scanner or likelihood container which writes only to auxiliary datasets then please report this error and request the print system be upgraded. Otherwise this error indicates a bug, please report it.&quot; &lt;&lt; std::endl;
                     printer_error().raise(LOCAL_INFO, errmsg.str());
                 }
                 // else everything is cool
@@ -818,13 +814,9 @@ namespace Gambit
                        ranks.push_back(valid_rank);
                        ptids.push_back(valid_ptid);
 
-                       for (auto it = valids.end()-1; size &gt; 0; --it)
-                       {
-                           if (*it)
-                               break;
-                           else
-                               --size;
-                       }
+                       // Trim any trailing invalid points (size &lt;= valids.size() ensured above)
+                       while (size &gt; 0 &amp;&amp; !valids[size-1])
+                           --size;
                        aux_sizes.push_back(size);
 
                        HDF5::closeSpace(dataspace);
@@ -1006,6 +998,8 @@ namespace Gambit
                             // Close resources
                             HDF5::closeDataset(dataset_out);
                             HDF5::closeDataset(dataset2_out);
+                            H5Tclose(type);
+                            H5Tclose(type2);
 
                             // Move offset so that next batch is written to correct place in output file
                             offset += batch_size_tot + pc_offset;
@@ -1072,7 +1066,7 @@ namespace Gambit
                       counter = 1; //reset counter
                       for (auto it = aux_param_names.begin(), end = aux_param_names.end(); it != end; ++it, ++counter)
                       {
-                          std::cout &lt;&lt; &quot;  Combining auxilliary datasets... &quot;&lt;&lt;int(100*counter/aux_param_names.size())&lt;&lt;&quot;%    (merged &quot;&lt;&lt;counter&lt;&lt;&quot; parameters of &quot;&lt;&lt;aux_param_names.size()&lt;&lt;&quot;)         \r&quot;&lt;&lt;std::flush;
+                          std::cout &lt;&lt; &quot;  Combining auxiliary datasets... &quot;&lt;&lt;int(100*counter/aux_param_names.size())&lt;&lt;&quot;%    (merged &quot;&lt;&lt;counter&lt;&lt;&quot; parameters of &quot;&lt;&lt;aux_param_names.size()&lt;&lt;&quot;)         \r&quot;&lt;&lt;std::flush;
                           std::vector&lt;hid_t&gt; file_ids, group_ids, datasets, datasets2;
                           int valid_dset  = -1; // index of a validly opened dataset (-1 if none)
 
@@ -1166,6 +1160,8 @@ namespace Gambit
                              }
                              // Create new dataset
                              setup_hdf5_points(new_group, type, type2, size_tot, *it);
+                             if(type&gt;=0)  H5Tclose(type);
+                             if(type2&gt;=0) H5Tclose(type2);
                           }
                           // Reopen output datasets for copying
                           hid_t dataset_out  = HDF5::openDataset(new_group, *it);
@@ -1182,11 +1178,11 @@ namespace Gambit
                               if(file_ids[i]&gt;=0)  HDF5::closeFile(file_ids[i]);
                           }
                       }
-                      std::cout &lt;&lt; &quot;  Combining auxilliary datasets... Done.                 &quot;&lt;&lt;std::endl;
+                      std::cout &lt;&lt; &quot;  Combining auxiliary datasets... Done.                 &quot;&lt;&lt;std::endl;
                    }
                    else
                    {
-                      std::cout &lt;&lt; &quot;  Combining auxilliary datasets... None found, skipping. &quot;&lt;&lt;std::endl;
+                      std::cout &lt;&lt; &quot;  Combining auxiliary datasets... None found, skipping. &quot;&lt;&lt;std::endl;
                    }
                 }
 
@@ -1321,6 +1317,7 @@ namespace Gambit
 
                             // Close resources
                             HDF5::closeDataset(dataset_out);
+                            H5Tclose(type);
 
                             // Move offset so that next batch is written to correct place in output file
                             offset += batch_size_tot + pc_offset;
@@ -1501,7 +1498,7 @@ namespace Gambit
                if( left_to_match.size() &gt; 0 )
                {
                    std::ostringstream errmsg;
-                   errmsg &lt;&lt; &quot;Error generating hash map for Auxilliary parameter copy! Failed to find matches in primary datasets for all auxilliary data! There were &quot;&lt;&lt;left_to_match.size()&lt;&lt;&quot; unmatched auxilliary points. Unmatched points follow:&quot; &lt;&lt; std::endl;
+                   errmsg &lt;&lt; &quot;Error generating hash map for Auxilliary parameter copy! Failed to find matches in primary datasets for all auxiliary data! There were &quot;&lt;&lt;left_to_match.size()&lt;&lt;&quot; unmatched auxiliary points. Unmatched points follow:&quot; &lt;&lt; std::endl;
                    for(auto it=left_to_match.begin(); it!=left_to_match.end(); ++it)
                    {
                       errmsg &lt;&lt; &quot;  rank: &quot;&lt;&lt;it-&gt;rank&lt;&lt;&quot;, pointID: &quot;&lt;&lt;it-&gt;pointID&lt;&lt; std::endl;
@@ -1565,7 +1562,7 @@ namespace Gambit
         }
     }
 }
-</code></pre><hr><p>Updated on 2025-02-12 at 16:10:34 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.d5e27a6ed00168b7a66eb637878a6be7d054db51d0e613bbcfda12ab0569b62177253b4e6453c477574b3a38f50eff49a68f0e19112bd82a68c78a66cd8d05df.js integrity="sha512-1eJ6btABaLembrY3h4pr59BU21HQ5hO7z9oSqwVptiF3JTtOZFPEd1dLOjj1Dv9Jpo8OGREr2Cpox4pmzY0F3w==" crossorigin=anonymous defer></script>
+</code></pre><hr><p>Updated on 2026-11-03 at 14:50:45 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.d5e27a6ed00168b7a66eb637878a6be7d054db51d0e613bbcfda12ab0569b62177253b4e6453c477574b3a38f50eff49a68f0e19112bd82a68c78a66cd8d05df.js integrity="sha512-1eJ6btABaLembrY3h4pr59BU21HQ5hO7z9oSqwVptiF3JTtOZFPEd1dLOjj1Dv9Jpo8OGREr2Cpox4pmzY0F3w==" crossorigin=anonymous defer></script>
 <script src=/js/highlight.min.9003483b4531b86467c8b801b1d5fc5439bb0d6bdb6c6a760a1b54abf37d6bbadf8423dbc81a3359c935c7705bb7d183b46131ba4a9c861b5d48e6a61501461a.js integrity="sha512-kANIO0UxuGRnyLgBsdX8VDm7DWvbbGp2ChtUq/N9a7rfhCPbyBozWck1x3Bbt9GDtGExukqchhtdSOamFQFGGg==" crossorigin=anonymous defer></script>
 <script src=/main.min.9342d29d0e3e250a2c03282306b766e004888dba0fd661a17d7b106655e013bf85733f086ad330e3df0929c713dd81c0ea835966fa92e4a1e38f7ea9680524ed.js integrity="sha512-k0LSnQ4+JQosAygjBrdm4ASIjboP1mGhfXsQZlXgE7+Fcz8IatMw498JKccT3YHA6oNZZvqS5KHjj36paAUk7Q==" crossorigin=anonymous defer></script>
-<script src=https://gambitbsm.org/index.min.03ab9c2e460a36904d0b1544581433f337b9e5e23e6798a396683f418d37e30979da1ab2a8ef201c110075d73ccb12f8cc2605c7d9723f99bef11ed7c8b97844.js integrity="sha512-A6ucLkYKNpBNCxVEWBQz8ze55eI+Z5ijlmg/QY034wl52hqyqO8gHBEAddc8yxL4zCYFx9lyP5m+8R7XyLl4RA==" crossorigin=anonymous defer></script></body></html>
+<script src=https://gambitbsm.org/index.min.3a8ee06d0c346f1fb70040b0fbcbaaacf335cb34023c408954406a05db2089fc2ca349119b9f7d68b9e7044e82b8fdc8bd9661b6ef8b118246c5a2079d7fa8e9.js integrity="sha512-Oo7gbQw0bx+3AECw+8uqrPM1yzQCPECJVEBqBdsgifwso0kRm599aLnnBE6CuP3IvZZhtu+LEYJGxaIHnX+o6Q==" crossorigin=anonymous defer></script></body></html>

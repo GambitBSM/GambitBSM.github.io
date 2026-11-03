@@ -44,167 +44,6 @@ namespace Gambit {
     class Analysis_CMS_13TeV_2OSLEP_chargino_stop_36invfb : public Analysis {
 
     protected:
-      // Counters for the number of accepted events for each signal region
-
-      std::map&lt;string, EventCounter&gt; _counters = {
-        // Stop SRs
-        {&quot;SR-stop-0&quot;, EventCounter(&quot;SR-stop-0&quot;)},
-        {&quot;SR-stop-1&quot;, EventCounter(&quot;SR-stop-1&quot;)},
-        {&quot;SR-stop-2&quot;, EventCounter(&quot;SR-stop-2&quot;)},
-        {&quot;SR-stop-3&quot;, EventCounter(&quot;SR-stop-3&quot;)},
-        {&quot;SR-stop-4&quot;, EventCounter(&quot;SR-stop-4&quot;)},
-        {&quot;SR-stop-5&quot;, EventCounter(&quot;SR-stop-5&quot;)},
-        {&quot;SR-stop-6&quot;, EventCounter(&quot;SR-stop-6&quot;)},
-        {&quot;SR-stop-7&quot;, EventCounter(&quot;SR-stop-7&quot;)},
-        {&quot;SR-stop-8&quot;, EventCounter(&quot;SR-stop-8&quot;)},
-        {&quot;SR-stop-9&quot;, EventCounter(&quot;SR-stop-9&quot;)},
-        {&quot;SR-stop-10&quot;, EventCounter(&quot;SR-stop-10&quot;)},
-        {&quot;SR-stop-11&quot;, EventCounter(&quot;SR-stop-11&quot;)},
-        {&quot;SR-stop-12&quot;, EventCounter(&quot;SR-stop-12&quot;)},
-        {&quot;SR-stop-13&quot;, EventCounter(&quot;SR-stop-13&quot;)},
-        {&quot;SR-stop-14&quot;, EventCounter(&quot;SR-stop-14&quot;)},
-        {&quot;SR-stop-15&quot;, EventCounter(&quot;SR-stop-15&quot;)},
-        {&quot;SR-stop-16&quot;, EventCounter(&quot;SR-stop-16&quot;)},
-        {&quot;SR-stop-17&quot;, EventCounter(&quot;SR-stop-17&quot;)},
-        {&quot;SR-stop-18&quot;, EventCounter(&quot;SR-stop-18&quot;)},
-        {&quot;SR-stop-19&quot;, EventCounter(&quot;SR-stop-19&quot;)},
-        {&quot;SR-stop-20&quot;, EventCounter(&quot;SR-stop-20&quot;)},
-        {&quot;SR-stop-21&quot;, EventCounter(&quot;SR-stop-21&quot;)},
-        {&quot;SR-stop-22&quot;, EventCounter(&quot;SR-stop-22&quot;)},
-        {&quot;SR-stop-23&quot;, EventCounter(&quot;SR-stop-23&quot;)},
-        {&quot;SR-stop-24&quot;, EventCounter(&quot;SR-stop-24&quot;)},
-        {&quot;SR-stop-25&quot;, EventCounter(&quot;SR-stop-25&quot;)},
-        {&quot;SR-stop-26&quot;, EventCounter(&quot;SR-stop-26&quot;)},
-        {&quot;SR-stop-27&quot;, EventCounter(&quot;SR-stop-27&quot;)},
-        {&quot;SR-stop-28&quot;, EventCounter(&quot;SR-stop-28&quot;)},
-        {&quot;SR-stop-29&quot;, EventCounter(&quot;SR-stop-29&quot;)},
-        {&quot;SR-stop-30&quot;, EventCounter(&quot;SR-stop-30&quot;)},
-        {&quot;SR-stop-31&quot;, EventCounter(&quot;SR-stop-31&quot;)},
-        {&quot;SR-stop-32&quot;, EventCounter(&quot;SR-stop-32&quot;)},
-        {&quot;SR-stop-33&quot;, EventCounter(&quot;SR-stop-33&quot;)},
-        {&quot;SR-stop-34&quot;, EventCounter(&quot;SR-stop-34&quot;)},
-        {&quot;SR-stop-35&quot;, EventCounter(&quot;SR-stop-35&quot;)},
-        {&quot;SR-stop-36&quot;, EventCounter(&quot;SR-stop-36&quot;)},
-        {&quot;SR-stop-37&quot;, EventCounter(&quot;SR-stop-37&quot;)},
-        {&quot;SR-stop-38&quot;, EventCounter(&quot;SR-stop-38&quot;)},
-        {&quot;SR-stop-39&quot;, EventCounter(&quot;SR-stop-39&quot;)},
-        {&quot;SR-stop-40&quot;, EventCounter(&quot;SR-stop-40&quot;)},
-        {&quot;SR-stop-41&quot;, EventCounter(&quot;SR-stop-41&quot;)},
-        {&quot;SR-stop-42&quot;, EventCounter(&quot;SR-stop-42&quot;)},
-        {&quot;SR-stop-43&quot;, EventCounter(&quot;SR-stop-43&quot;)},
-        {&quot;SR-stop-44&quot;, EventCounter(&quot;SR-stop-44&quot;)},
-        {&quot;SR-stop-45&quot;, EventCounter(&quot;SR-stop-45&quot;)},
-        {&quot;SR-stop-46&quot;, EventCounter(&quot;SR-stop-46&quot;)},
-        {&quot;SR-stop-47&quot;, EventCounter(&quot;SR-stop-47&quot;)},
-        {&quot;SR-stop-48&quot;, EventCounter(&quot;SR-stop-48&quot;)},
-        {&quot;SR-stop-49&quot;, EventCounter(&quot;SR-stop-49&quot;)},
-        {&quot;SR-stop-50&quot;, EventCounter(&quot;SR-stop-50&quot;)},
-        {&quot;SR-stop-51&quot;, EventCounter(&quot;SR-stop-51&quot;)},
-        {&quot;SR-stop-52&quot;, EventCounter(&quot;SR-stop-52&quot;)},
-        {&quot;SR-stop-53&quot;, EventCounter(&quot;SR-stop-53&quot;)},
-        {&quot;SR-stop-54&quot;, EventCounter(&quot;SR-stop-54&quot;)},
-        {&quot;SR-stop-55&quot;, EventCounter(&quot;SR-stop-55&quot;)},
-        {&quot;SR-stop-56&quot;, EventCounter(&quot;SR-stop-56&quot;)},
-        {&quot;SR-stop-57&quot;, EventCounter(&quot;SR-stop-57&quot;)},
-        {&quot;SR-stop-58&quot;, EventCounter(&quot;SR-stop-58&quot;)},
-        {&quot;SR-stop-59&quot;, EventCounter(&quot;SR-stop-59&quot;)},
-        {&quot;SR-stop-60&quot;, EventCounter(&quot;SR-stop-60&quot;)},
-        {&quot;SR-stop-61&quot;, EventCounter(&quot;SR-stop-61&quot;)},
-        {&quot;SR-stop-62&quot;, EventCounter(&quot;SR-stop-62&quot;)},
-        {&quot;SR-stop-63&quot;, EventCounter(&quot;SR-stop-63&quot;)},
-        {&quot;SR-stop-64&quot;, EventCounter(&quot;SR-stop-64&quot;)},
-        {&quot;SR-stop-65&quot;, EventCounter(&quot;SR-stop-65&quot;)},
-        {&quot;SR-stop-66&quot;, EventCounter(&quot;SR-stop-66&quot;)},
-        {&quot;SR-stop-67&quot;, EventCounter(&quot;SR-stop-67&quot;)},
-        {&quot;SR-stop-68&quot;, EventCounter(&quot;SR-stop-68&quot;)},
-        {&quot;SR-stop-69&quot;, EventCounter(&quot;SR-stop-69&quot;)},
-        {&quot;SR-stop-70&quot;, EventCounter(&quot;SR-stop-70&quot;)},
-        {&quot;SR-stop-71&quot;, EventCounter(&quot;SR-stop-71&quot;)},
-        {&quot;SR-stop-72&quot;, EventCounter(&quot;SR-stop-72&quot;)},
-        {&quot;SR-stop-73&quot;, EventCounter(&quot;SR-stop-73&quot;)},
-        {&quot;SR-stop-74&quot;, EventCounter(&quot;SR-stop-74&quot;)},
-        {&quot;SR-stop-75&quot;, EventCounter(&quot;SR-stop-75&quot;)},
-        {&quot;SR-stop-76&quot;, EventCounter(&quot;SR-stop-76&quot;)},
-        {&quot;SR-stop-77&quot;, EventCounter(&quot;SR-stop-77&quot;)},
-        {&quot;SR-stop-78&quot;, EventCounter(&quot;SR-stop-78&quot;)},
-        {&quot;SR-stop-79&quot;, EventCounter(&quot;SR-stop-79&quot;)},
-        {&quot;SR-stop-80&quot;, EventCounter(&quot;SR-stop-80&quot;)},
-        {&quot;SR-stop-81&quot;, EventCounter(&quot;SR-stop-81&quot;)},
-        {&quot;SR-stop-82&quot;, EventCounter(&quot;SR-stop-82&quot;)},
-        {&quot;SR-stop-83&quot;, EventCounter(&quot;SR-stop-83&quot;)},
-        // Chargino SRs
-        {&quot;SR-chargino-0&quot;, EventCounter(&quot;SR-chargino-0&quot;)},
-        {&quot;SR-chargino-1&quot;, EventCounter(&quot;SR-chargino-1&quot;)},
-        {&quot;SR-chargino-2&quot;, EventCounter(&quot;SR-chargino-2&quot;)},
-        {&quot;SR-chargino-3&quot;, EventCounter(&quot;SR-chargino-3&quot;)},
-        {&quot;SR-chargino-4&quot;, EventCounter(&quot;SR-chargino-4&quot;)},
-        {&quot;SR-chargino-5&quot;, EventCounter(&quot;SR-chargino-5&quot;)},
-        {&quot;SR-chargino-6&quot;, EventCounter(&quot;SR-chargino-6&quot;)},
-        {&quot;SR-chargino-7&quot;, EventCounter(&quot;SR-chargino-7&quot;)},
-        {&quot;SR-chargino-8&quot;, EventCounter(&quot;SR-chargino-8&quot;)},
-        {&quot;SR-chargino-9&quot;, EventCounter(&quot;SR-chargino-9&quot;)},
-        {&quot;SR-chargino-10&quot;, EventCounter(&quot;SR-chargino-10&quot;)},
-        {&quot;SR-chargino-11&quot;, EventCounter(&quot;SR-chargino-11&quot;)},
-        {&quot;SR-chargino-12&quot;, EventCounter(&quot;SR-chargino-12&quot;)},
-        {&quot;SR-chargino-13&quot;, EventCounter(&quot;SR-chargino-13&quot;)},
-        {&quot;SR-chargino-14&quot;, EventCounter(&quot;SR-chargino-14&quot;)},
-        {&quot;SR-chargino-15&quot;, EventCounter(&quot;SR-chargino-15&quot;)},
-        {&quot;SR-chargino-16&quot;, EventCounter(&quot;SR-chargino-16&quot;)},
-        {&quot;SR-chargino-17&quot;, EventCounter(&quot;SR-chargino-17&quot;)},
-        {&quot;SR-chargino-18&quot;, EventCounter(&quot;SR-chargino-18&quot;)},
-        {&quot;SR-chargino-19&quot;, EventCounter(&quot;SR-chargino-19&quot;)},
-        {&quot;SR-chargino-20&quot;, EventCounter(&quot;SR-chargino-20&quot;)},
-        {&quot;SR-chargino-21&quot;, EventCounter(&quot;SR-chargino-21&quot;)},
-        {&quot;SR-chargino-22&quot;, EventCounter(&quot;SR-chargino-22&quot;)},
-        {&quot;SR-chargino-23&quot;, EventCounter(&quot;SR-chargino-23&quot;)},
-        {&quot;SR-chargino-24&quot;, EventCounter(&quot;SR-chargino-24&quot;)},
-        {&quot;SR-chargino-25&quot;, EventCounter(&quot;SR-chargino-25&quot;)},
-        {&quot;SR-chargino-26&quot;, EventCounter(&quot;SR-chargino-26&quot;)},
-        {&quot;SR-chargino-27&quot;, EventCounter(&quot;SR-chargino-27&quot;)},
-        {&quot;SR-chargino-28&quot;, EventCounter(&quot;SR-chargino-28&quot;)},
-        {&quot;SR-chargino-29&quot;, EventCounter(&quot;SR-chargino-29&quot;)},
-        {&quot;SR-chargino-30&quot;, EventCounter(&quot;SR-chargino-30&quot;)},
-        {&quot;SR-chargino-31&quot;, EventCounter(&quot;SR-chargino-31&quot;)},
-        {&quot;SR-chargino-32&quot;, EventCounter(&quot;SR-chargino-32&quot;)},
-        {&quot;SR-chargino-33&quot;, EventCounter(&quot;SR-chargino-33&quot;)},
-        {&quot;SR-chargino-34&quot;, EventCounter(&quot;SR-chargino-34&quot;)},
-        {&quot;SR-chargino-35&quot;, EventCounter(&quot;SR-chargino-35&quot;)},
-        {&quot;SR-chargino-36&quot;, EventCounter(&quot;SR-chargino-36&quot;)},
-        {&quot;SR-chargino-37&quot;, EventCounter(&quot;SR-chargino-37&quot;)},
-        {&quot;SR-chargino-38&quot;, EventCounter(&quot;SR-chargino-38&quot;)},
-        {&quot;SR-chargino-39&quot;, EventCounter(&quot;SR-chargino-39&quot;)},
-        {&quot;SR-chargino-40&quot;, EventCounter(&quot;SR-chargino-40&quot;)},
-        {&quot;SR-chargino-41&quot;, EventCounter(&quot;SR-chargino-41&quot;)},
-        {&quot;SR-chargino-42&quot;, EventCounter(&quot;SR-chargino-42&quot;)},
-        {&quot;SR-chargino-43&quot;, EventCounter(&quot;SR-chargino-43&quot;)},
-        {&quot;SR-chargino-44&quot;, EventCounter(&quot;SR-chargino-44&quot;)},
-        {&quot;SR-chargino-45&quot;, EventCounter(&quot;SR-chargino-45&quot;)},
-        {&quot;SR-chargino-46&quot;, EventCounter(&quot;SR-chargino-46&quot;)},
-        {&quot;SR-chargino-47&quot;, EventCounter(&quot;SR-chargino-47&quot;)},
-        {&quot;SR-chargino-48&quot;, EventCounter(&quot;SR-chargino-48&quot;)},
-        {&quot;SR-chargino-49&quot;, EventCounter(&quot;SR-chargino-49&quot;)},
-        {&quot;SR-chargino-50&quot;, EventCounter(&quot;SR-chargino-50&quot;)},
-        {&quot;SR-chargino-51&quot;, EventCounter(&quot;SR-chargino-51&quot;)},
-        {&quot;SR-chargino-52&quot;, EventCounter(&quot;SR-chargino-52&quot;)},
-        {&quot;SR-chargino-53&quot;, EventCounter(&quot;SR-chargino-53&quot;)},
-        {&quot;SR-chargino-54&quot;, EventCounter(&quot;SR-chargino-54&quot;)},
-        {&quot;SR-chargino-55&quot;, EventCounter(&quot;SR-chargino-55&quot;)},
-        {&quot;SR-chargino-56&quot;, EventCounter(&quot;SR-chargino-56&quot;)},
-        {&quot;SR-chargino-57&quot;, EventCounter(&quot;SR-chargino-57&quot;)},
-        {&quot;SR-chargino-58&quot;, EventCounter(&quot;SR-chargino-58&quot;)},
-        {&quot;SR-chargino-59&quot;, EventCounter(&quot;SR-chargino-59&quot;)},
-        {&quot;SR-chargino-60&quot;, EventCounter(&quot;SR-chargino-60&quot;)},
-        {&quot;SR-chargino-61&quot;, EventCounter(&quot;SR-chargino-61&quot;)},
-        {&quot;SR-chargino-62&quot;, EventCounter(&quot;SR-chargino-62&quot;)},
-        {&quot;SR-chargino-63&quot;, EventCounter(&quot;SR-chargino-63&quot;)},
-        {&quot;SR-chargino-64&quot;, EventCounter(&quot;SR-chargino-64&quot;)},
-        {&quot;SR-chargino-65&quot;, EventCounter(&quot;SR-chargino-65&quot;)},
-        {&quot;SR-chargino-66&quot;, EventCounter(&quot;SR-chargino-66&quot;)},
-        {&quot;SR-chargino-67&quot;, EventCounter(&quot;SR-chargino-67&quot;)},
-        {&quot;SR-chargino-68&quot;, EventCounter(&quot;SR-chargino-68&quot;)},
-        {&quot;SR-chargino-69&quot;, EventCounter(&quot;SR-chargino-69&quot;)},
-      };
-
       static const size_t NUMSR_stop = 84;
       static const size_t NUMSR_chargino = 70;
 
@@ -218,7 +57,169 @@ namespace Gambit {
       Analysis_CMS_13TeV_2OSLEP_chargino_stop_36invfb():
       _cutflow(&quot;CMS 2-lep stop 13 TeV&quot;, {&quot;Two_OC_leptons&quot;, &quot;Third_lepton_veto&quot;, &quot;mll_20&quot;, &quot;mll_mZ_15&quot;, &quot;PTmiss_140&quot;})
       {
+
+        // Counters for the number of accepted events for each signal region
+
+          // Stop SRs
+        _counters[&quot;SR-stop-0&quot;] = EventCounter(&quot;SR-stop-0&quot;);
+        _counters[&quot;SR-stop-1&quot;] = EventCounter(&quot;SR-stop-1&quot;);
+        _counters[&quot;SR-stop-2&quot;] = EventCounter(&quot;SR-stop-2&quot;);
+        _counters[&quot;SR-stop-3&quot;] = EventCounter(&quot;SR-stop-3&quot;);
+        _counters[&quot;SR-stop-4&quot;] = EventCounter(&quot;SR-stop-4&quot;);
+        _counters[&quot;SR-stop-5&quot;] = EventCounter(&quot;SR-stop-5&quot;);
+        _counters[&quot;SR-stop-6&quot;] = EventCounter(&quot;SR-stop-6&quot;);
+        _counters[&quot;SR-stop-7&quot;] = EventCounter(&quot;SR-stop-7&quot;);
+        _counters[&quot;SR-stop-8&quot;] = EventCounter(&quot;SR-stop-8&quot;);
+        _counters[&quot;SR-stop-9&quot;] = EventCounter(&quot;SR-stop-9&quot;);
+        _counters[&quot;SR-stop-10&quot;] = EventCounter(&quot;SR-stop-10&quot;);
+        _counters[&quot;SR-stop-11&quot;] = EventCounter(&quot;SR-stop-11&quot;);
+        _counters[&quot;SR-stop-12&quot;] = EventCounter(&quot;SR-stop-12&quot;);
+        _counters[&quot;SR-stop-13&quot;] = EventCounter(&quot;SR-stop-13&quot;);
+        _counters[&quot;SR-stop-14&quot;] = EventCounter(&quot;SR-stop-14&quot;);
+        _counters[&quot;SR-stop-15&quot;] = EventCounter(&quot;SR-stop-15&quot;);
+        _counters[&quot;SR-stop-16&quot;] = EventCounter(&quot;SR-stop-16&quot;);
+        _counters[&quot;SR-stop-17&quot;] = EventCounter(&quot;SR-stop-17&quot;);
+        _counters[&quot;SR-stop-18&quot;] = EventCounter(&quot;SR-stop-18&quot;);
+        _counters[&quot;SR-stop-19&quot;] = EventCounter(&quot;SR-stop-19&quot;);
+        _counters[&quot;SR-stop-20&quot;] = EventCounter(&quot;SR-stop-20&quot;);
+        _counters[&quot;SR-stop-21&quot;] = EventCounter(&quot;SR-stop-21&quot;);
+        _counters[&quot;SR-stop-22&quot;] = EventCounter(&quot;SR-stop-22&quot;);
+        _counters[&quot;SR-stop-23&quot;] = EventCounter(&quot;SR-stop-23&quot;);
+        _counters[&quot;SR-stop-24&quot;] = EventCounter(&quot;SR-stop-24&quot;);
+        _counters[&quot;SR-stop-25&quot;] = EventCounter(&quot;SR-stop-25&quot;);
+        _counters[&quot;SR-stop-26&quot;] = EventCounter(&quot;SR-stop-26&quot;);
+        _counters[&quot;SR-stop-27&quot;] = EventCounter(&quot;SR-stop-27&quot;);
+        _counters[&quot;SR-stop-28&quot;] = EventCounter(&quot;SR-stop-28&quot;);
+        _counters[&quot;SR-stop-29&quot;] = EventCounter(&quot;SR-stop-29&quot;);
+        _counters[&quot;SR-stop-30&quot;] = EventCounter(&quot;SR-stop-30&quot;);
+        _counters[&quot;SR-stop-31&quot;] = EventCounter(&quot;SR-stop-31&quot;);
+        _counters[&quot;SR-stop-32&quot;] = EventCounter(&quot;SR-stop-32&quot;);
+        _counters[&quot;SR-stop-33&quot;] = EventCounter(&quot;SR-stop-33&quot;);
+        _counters[&quot;SR-stop-34&quot;] = EventCounter(&quot;SR-stop-34&quot;);
+        _counters[&quot;SR-stop-35&quot;] = EventCounter(&quot;SR-stop-35&quot;);
+        _counters[&quot;SR-stop-36&quot;] = EventCounter(&quot;SR-stop-36&quot;);
+        _counters[&quot;SR-stop-37&quot;] = EventCounter(&quot;SR-stop-37&quot;);
+        _counters[&quot;SR-stop-38&quot;] = EventCounter(&quot;SR-stop-38&quot;);
+        _counters[&quot;SR-stop-39&quot;] = EventCounter(&quot;SR-stop-39&quot;);
+        _counters[&quot;SR-stop-40&quot;] = EventCounter(&quot;SR-stop-40&quot;);
+        _counters[&quot;SR-stop-41&quot;] = EventCounter(&quot;SR-stop-41&quot;);
+        _counters[&quot;SR-stop-42&quot;] = EventCounter(&quot;SR-stop-42&quot;);
+        _counters[&quot;SR-stop-43&quot;] = EventCounter(&quot;SR-stop-43&quot;);
+        _counters[&quot;SR-stop-44&quot;] = EventCounter(&quot;SR-stop-44&quot;);
+        _counters[&quot;SR-stop-45&quot;] = EventCounter(&quot;SR-stop-45&quot;);
+        _counters[&quot;SR-stop-46&quot;] = EventCounter(&quot;SR-stop-46&quot;);
+        _counters[&quot;SR-stop-47&quot;] = EventCounter(&quot;SR-stop-47&quot;);
+        _counters[&quot;SR-stop-48&quot;] = EventCounter(&quot;SR-stop-48&quot;);
+        _counters[&quot;SR-stop-49&quot;] = EventCounter(&quot;SR-stop-49&quot;);
+        _counters[&quot;SR-stop-50&quot;] = EventCounter(&quot;SR-stop-50&quot;);
+        _counters[&quot;SR-stop-51&quot;] = EventCounter(&quot;SR-stop-51&quot;);
+        _counters[&quot;SR-stop-52&quot;] = EventCounter(&quot;SR-stop-52&quot;);
+        _counters[&quot;SR-stop-53&quot;] = EventCounter(&quot;SR-stop-53&quot;);
+        _counters[&quot;SR-stop-54&quot;] = EventCounter(&quot;SR-stop-54&quot;);
+        _counters[&quot;SR-stop-55&quot;] = EventCounter(&quot;SR-stop-55&quot;);
+        _counters[&quot;SR-stop-56&quot;] = EventCounter(&quot;SR-stop-56&quot;);
+        _counters[&quot;SR-stop-57&quot;] = EventCounter(&quot;SR-stop-57&quot;);
+        _counters[&quot;SR-stop-58&quot;] = EventCounter(&quot;SR-stop-58&quot;);
+        _counters[&quot;SR-stop-59&quot;] = EventCounter(&quot;SR-stop-59&quot;);
+        _counters[&quot;SR-stop-60&quot;] = EventCounter(&quot;SR-stop-60&quot;);
+        _counters[&quot;SR-stop-61&quot;] = EventCounter(&quot;SR-stop-61&quot;);
+        _counters[&quot;SR-stop-62&quot;] = EventCounter(&quot;SR-stop-62&quot;);
+        _counters[&quot;SR-stop-63&quot;] = EventCounter(&quot;SR-stop-63&quot;);
+        _counters[&quot;SR-stop-64&quot;] = EventCounter(&quot;SR-stop-64&quot;);
+        _counters[&quot;SR-stop-65&quot;] = EventCounter(&quot;SR-stop-65&quot;);
+        _counters[&quot;SR-stop-66&quot;] = EventCounter(&quot;SR-stop-66&quot;);
+        _counters[&quot;SR-stop-67&quot;] = EventCounter(&quot;SR-stop-67&quot;);
+        _counters[&quot;SR-stop-68&quot;] = EventCounter(&quot;SR-stop-68&quot;);
+        _counters[&quot;SR-stop-69&quot;] = EventCounter(&quot;SR-stop-69&quot;);
+        _counters[&quot;SR-stop-70&quot;] = EventCounter(&quot;SR-stop-70&quot;);
+        _counters[&quot;SR-stop-71&quot;] = EventCounter(&quot;SR-stop-71&quot;);
+        _counters[&quot;SR-stop-72&quot;] = EventCounter(&quot;SR-stop-72&quot;);
+        _counters[&quot;SR-stop-73&quot;] = EventCounter(&quot;SR-stop-73&quot;);
+        _counters[&quot;SR-stop-74&quot;] = EventCounter(&quot;SR-stop-74&quot;);
+        _counters[&quot;SR-stop-75&quot;] = EventCounter(&quot;SR-stop-75&quot;);
+        _counters[&quot;SR-stop-76&quot;] = EventCounter(&quot;SR-stop-76&quot;);
+        _counters[&quot;SR-stop-77&quot;] = EventCounter(&quot;SR-stop-77&quot;);
+        _counters[&quot;SR-stop-78&quot;] = EventCounter(&quot;SR-stop-78&quot;);
+        _counters[&quot;SR-stop-79&quot;] = EventCounter(&quot;SR-stop-79&quot;);
+        _counters[&quot;SR-stop-80&quot;] = EventCounter(&quot;SR-stop-80&quot;);
+        _counters[&quot;SR-stop-81&quot;] = EventCounter(&quot;SR-stop-81&quot;);
+        _counters[&quot;SR-stop-82&quot;] = EventCounter(&quot;SR-stop-82&quot;);
+        _counters[&quot;SR-stop-83&quot;] = EventCounter(&quot;SR-stop-83&quot;);
+          // Chargino SRs
+        _counters[&quot;SR-chargino-0&quot;] = EventCounter(&quot;SR-chargino-0&quot;);
+        _counters[&quot;SR-chargino-1&quot;] = EventCounter(&quot;SR-chargino-1&quot;);
+        _counters[&quot;SR-chargino-2&quot;] = EventCounter(&quot;SR-chargino-2&quot;);
+        _counters[&quot;SR-chargino-3&quot;] = EventCounter(&quot;SR-chargino-3&quot;);
+        _counters[&quot;SR-chargino-4&quot;] = EventCounter(&quot;SR-chargino-4&quot;);
+        _counters[&quot;SR-chargino-5&quot;] = EventCounter(&quot;SR-chargino-5&quot;);
+        _counters[&quot;SR-chargino-6&quot;] = EventCounter(&quot;SR-chargino-6&quot;);
+        _counters[&quot;SR-chargino-7&quot;] = EventCounter(&quot;SR-chargino-7&quot;);
+        _counters[&quot;SR-chargino-8&quot;] = EventCounter(&quot;SR-chargino-8&quot;);
+        _counters[&quot;SR-chargino-9&quot;] = EventCounter(&quot;SR-chargino-9&quot;);
+        _counters[&quot;SR-chargino-10&quot;] = EventCounter(&quot;SR-chargino-10&quot;);
+        _counters[&quot;SR-chargino-11&quot;] = EventCounter(&quot;SR-chargino-11&quot;);
+        _counters[&quot;SR-chargino-12&quot;] = EventCounter(&quot;SR-chargino-12&quot;);
+        _counters[&quot;SR-chargino-13&quot;] = EventCounter(&quot;SR-chargino-13&quot;);
+        _counters[&quot;SR-chargino-14&quot;] = EventCounter(&quot;SR-chargino-14&quot;);
+        _counters[&quot;SR-chargino-15&quot;] = EventCounter(&quot;SR-chargino-15&quot;);
+        _counters[&quot;SR-chargino-16&quot;] = EventCounter(&quot;SR-chargino-16&quot;);
+        _counters[&quot;SR-chargino-17&quot;] = EventCounter(&quot;SR-chargino-17&quot;);
+        _counters[&quot;SR-chargino-18&quot;] = EventCounter(&quot;SR-chargino-18&quot;);
+        _counters[&quot;SR-chargino-19&quot;] = EventCounter(&quot;SR-chargino-19&quot;);
+        _counters[&quot;SR-chargino-20&quot;] = EventCounter(&quot;SR-chargino-20&quot;);
+        _counters[&quot;SR-chargino-21&quot;] = EventCounter(&quot;SR-chargino-21&quot;);
+        _counters[&quot;SR-chargino-22&quot;] = EventCounter(&quot;SR-chargino-22&quot;);
+        _counters[&quot;SR-chargino-23&quot;] = EventCounter(&quot;SR-chargino-23&quot;);
+        _counters[&quot;SR-chargino-24&quot;] = EventCounter(&quot;SR-chargino-24&quot;);
+        _counters[&quot;SR-chargino-25&quot;] = EventCounter(&quot;SR-chargino-25&quot;);
+        _counters[&quot;SR-chargino-26&quot;] = EventCounter(&quot;SR-chargino-26&quot;);
+        _counters[&quot;SR-chargino-27&quot;] = EventCounter(&quot;SR-chargino-27&quot;);
+        _counters[&quot;SR-chargino-28&quot;] = EventCounter(&quot;SR-chargino-28&quot;);
+        _counters[&quot;SR-chargino-29&quot;] = EventCounter(&quot;SR-chargino-29&quot;);
+        _counters[&quot;SR-chargino-30&quot;] = EventCounter(&quot;SR-chargino-30&quot;);
+        _counters[&quot;SR-chargino-31&quot;] = EventCounter(&quot;SR-chargino-31&quot;);
+        _counters[&quot;SR-chargino-32&quot;] = EventCounter(&quot;SR-chargino-32&quot;);
+        _counters[&quot;SR-chargino-33&quot;] = EventCounter(&quot;SR-chargino-33&quot;);
+        _counters[&quot;SR-chargino-34&quot;] = EventCounter(&quot;SR-chargino-34&quot;);
+        _counters[&quot;SR-chargino-35&quot;] = EventCounter(&quot;SR-chargino-35&quot;);
+        _counters[&quot;SR-chargino-36&quot;] = EventCounter(&quot;SR-chargino-36&quot;);
+        _counters[&quot;SR-chargino-37&quot;] = EventCounter(&quot;SR-chargino-37&quot;);
+        _counters[&quot;SR-chargino-38&quot;] = EventCounter(&quot;SR-chargino-38&quot;);
+        _counters[&quot;SR-chargino-39&quot;] = EventCounter(&quot;SR-chargino-39&quot;);
+        _counters[&quot;SR-chargino-40&quot;] = EventCounter(&quot;SR-chargino-40&quot;);
+        _counters[&quot;SR-chargino-41&quot;] = EventCounter(&quot;SR-chargino-41&quot;);
+        _counters[&quot;SR-chargino-42&quot;] = EventCounter(&quot;SR-chargino-42&quot;);
+        _counters[&quot;SR-chargino-43&quot;] = EventCounter(&quot;SR-chargino-43&quot;);
+        _counters[&quot;SR-chargino-44&quot;] = EventCounter(&quot;SR-chargino-44&quot;);
+        _counters[&quot;SR-chargino-45&quot;] = EventCounter(&quot;SR-chargino-45&quot;);
+        _counters[&quot;SR-chargino-46&quot;] = EventCounter(&quot;SR-chargino-46&quot;);
+        _counters[&quot;SR-chargino-47&quot;] = EventCounter(&quot;SR-chargino-47&quot;);
+        _counters[&quot;SR-chargino-48&quot;] = EventCounter(&quot;SR-chargino-48&quot;);
+        _counters[&quot;SR-chargino-49&quot;] = EventCounter(&quot;SR-chargino-49&quot;);
+        _counters[&quot;SR-chargino-50&quot;] = EventCounter(&quot;SR-chargino-50&quot;);
+        _counters[&quot;SR-chargino-51&quot;] = EventCounter(&quot;SR-chargino-51&quot;);
+        _counters[&quot;SR-chargino-52&quot;] = EventCounter(&quot;SR-chargino-52&quot;);
+        _counters[&quot;SR-chargino-53&quot;] = EventCounter(&quot;SR-chargino-53&quot;);
+        _counters[&quot;SR-chargino-54&quot;] = EventCounter(&quot;SR-chargino-54&quot;);
+        _counters[&quot;SR-chargino-55&quot;] = EventCounter(&quot;SR-chargino-55&quot;);
+        _counters[&quot;SR-chargino-56&quot;] = EventCounter(&quot;SR-chargino-56&quot;);
+        _counters[&quot;SR-chargino-57&quot;] = EventCounter(&quot;SR-chargino-57&quot;);
+        _counters[&quot;SR-chargino-58&quot;] = EventCounter(&quot;SR-chargino-58&quot;);
+        _counters[&quot;SR-chargino-59&quot;] = EventCounter(&quot;SR-chargino-59&quot;);
+        _counters[&quot;SR-chargino-60&quot;] = EventCounter(&quot;SR-chargino-60&quot;);
+        _counters[&quot;SR-chargino-61&quot;] = EventCounter(&quot;SR-chargino-61&quot;);
+        _counters[&quot;SR-chargino-62&quot;] = EventCounter(&quot;SR-chargino-62&quot;);
+        _counters[&quot;SR-chargino-63&quot;] = EventCounter(&quot;SR-chargino-63&quot;);
+        _counters[&quot;SR-chargino-64&quot;] = EventCounter(&quot;SR-chargino-64&quot;);
+        _counters[&quot;SR-chargino-65&quot;] = EventCounter(&quot;SR-chargino-65&quot;);
+        _counters[&quot;SR-chargino-66&quot;] = EventCounter(&quot;SR-chargino-66&quot;);
+        _counters[&quot;SR-chargino-67&quot;] = EventCounter(&quot;SR-chargino-67&quot;);
+        _counters[&quot;SR-chargino-68&quot;] = EventCounter(&quot;SR-chargino-68&quot;);
+        _counters[&quot;SR-chargino-69&quot;] = EventCounter(&quot;SR-chargino-69&quot;);
+
+
         set_analysis_name(&quot;Analysis_CMS_13TeV_2OSLEP_chargino_stop_36invfb&quot;);
+        set_detector_name(detector);
         set_luminosity(35.9);
       }
 
@@ -589,18 +590,10 @@ namespace Gambit {
 
       }
 
-      /// Combine the variables of another copy of this analysis (typically on another thread) into this one.
-      void combine(const Analysis* other)
-      {
-        const Analysis_CMS_13TeV_2OSLEP_chargino_stop_36invfb* specificOther
-                = dynamic_cast&lt;const Analysis_CMS_13TeV_2OSLEP_chargino_stop_36invfb*&gt;(other);
-        for (auto&amp; pair : _counters) { pair.second += specificOther-&gt;_counters.at(pair.first); }
-      }
-
 
       virtual void collect_results()
       {
-        cout &lt;&lt; _cutflow &lt;&lt; endl;
+        //cout &lt;&lt; _cutflow &lt;&lt; endl;
 
         // Chargino SRs
         add_result(SignalRegionData(_counters.at(&quot;SR-chargino-0&quot;), 39, {41.9, 5}));
@@ -1139,7 +1132,7 @@ namespace Gambit {
 
   }
 }
-</code></pre><hr><p>Updated on 2025-02-12 at 16:10:35 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.d5e27a6ed00168b7a66eb637878a6be7d054db51d0e613bbcfda12ab0569b62177253b4e6453c477574b3a38f50eff49a68f0e19112bd82a68c78a66cd8d05df.js integrity="sha512-1eJ6btABaLembrY3h4pr59BU21HQ5hO7z9oSqwVptiF3JTtOZFPEd1dLOjj1Dv9Jpo8OGREr2Cpox4pmzY0F3w==" crossorigin=anonymous defer></script>
+</code></pre><hr><p>Updated on 2026-11-03 at 14:50:47 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.d5e27a6ed00168b7a66eb637878a6be7d054db51d0e613bbcfda12ab0569b62177253b4e6453c477574b3a38f50eff49a68f0e19112bd82a68c78a66cd8d05df.js integrity="sha512-1eJ6btABaLembrY3h4pr59BU21HQ5hO7z9oSqwVptiF3JTtOZFPEd1dLOjj1Dv9Jpo8OGREr2Cpox4pmzY0F3w==" crossorigin=anonymous defer></script>
 <script src=/js/highlight.min.9003483b4531b86467c8b801b1d5fc5439bb0d6bdb6c6a760a1b54abf37d6bbadf8423dbc81a3359c935c7705bb7d183b46131ba4a9c861b5d48e6a61501461a.js integrity="sha512-kANIO0UxuGRnyLgBsdX8VDm7DWvbbGp2ChtUq/N9a7rfhCPbyBozWck1x3Bbt9GDtGExukqchhtdSOamFQFGGg==" crossorigin=anonymous defer></script>
 <script src=/main.min.9342d29d0e3e250a2c03282306b766e004888dba0fd661a17d7b106655e013bf85733f086ad330e3df0929c713dd81c0ea835966fa92e4a1e38f7ea9680524ed.js integrity="sha512-k0LSnQ4+JQosAygjBrdm4ASIjboP1mGhfXsQZlXgE7+Fcz8IatMw498JKccT3YHA6oNZZvqS5KHjj36paAUk7Q==" crossorigin=anonymous defer></script>
-<script src=https://gambitbsm.org/index.min.03ab9c2e460a36904d0b1544581433f337b9e5e23e6798a396683f418d37e30979da1ab2a8ef201c110075d73ccb12f8cc2605c7d9723f99bef11ed7c8b97844.js integrity="sha512-A6ucLkYKNpBNCxVEWBQz8ze55eI+Z5ijlmg/QY034wl52hqyqO8gHBEAddc8yxL4zCYFx9lyP5m+8R7XyLl4RA==" crossorigin=anonymous defer></script></body></html>
+<script src=https://gambitbsm.org/index.min.3a8ee06d0c346f1fb70040b0fbcbaaacf335cb34023c408954406a05db2089fc2ca349119b9f7d68b9e7044e82b8fdc8bd9661b6ef8b118246c5a2079d7fa8e9.js integrity="sha512-Oo7gbQw0bx+3AECw+8uqrPM1yzQCPECJVEBqBdsgifwso0kRm599aLnnBE6CuP3IvZZhtu+LEYJGxaIHnX+o6Q==" crossorigin=anonymous defer></script></body></html>

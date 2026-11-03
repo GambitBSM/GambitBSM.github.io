@@ -26,59 +26,34 @@ Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle
 
 using namespace std;
 
-/* 
+/*
   The ATLAS 2 lepton direct stop analysis (139 fb^-1) - `heavy stop'.
 
-  Based on: 
+  Based on:
   - ATLAS analysis arXiv:2102.01444, and the GAMBIT implenmen
-  - The code in Analysis_ATLAS_13TeV_2LEPStop_139invfb.cpp (by Yang Zhang)
+  - The code in Analysis_ATLAS_13TeV_2LEPStop_36invfb.cpp (by Yang Zhang)
 
   Author: Anders Kvellestad
 
   Known issues:
   - 3-body and 4-body SRs not yet implemented
-  - Use the event-based ETmiss significance rather than the object-based one. 
+  - Use the event-based ETmiss significance rather than the object-based one.
     See https://cds.cern.ch/record/2630948/files/ATLAS-CONF-2018-038.pdf
 
 */
 
-namespace Gambit 
+namespace Gambit
 {
-  namespace ColliderBit 
+  namespace ColliderBit
   {
 
     // This analysis class is a base class for two SR-specific analysis classes
     // defined further down:
     // - ATLAS_13TeV_2LEPStop_inclusive_139invfb
     // - ATLAS_13TeV_2LEPStop_exclusive_139invfb
-    class Analysis_ATLAS_13TeV_2LEPStop_139invfb : public Analysis 
+    class Analysis_ATLAS_13TeV_2LEPStop_139invfb : public Analysis
     {
     public:
-
-        // Numbers passing cuts
-        std::map&lt;string, EventCounter&gt; _counters = {
-            {&quot;SR2bSF110&quot;, EventCounter(&quot;SR2bSF110&quot;)},
-            {&quot;SR2bSF120&quot;, EventCounter(&quot;SR2bSF120&quot;)},
-            {&quot;SR2bSF140&quot;, EventCounter(&quot;SR2bSF140&quot;)},
-            {&quot;SR2bSF160&quot;, EventCounter(&quot;SR2bSF160&quot;)},
-            {&quot;SR2bSF180&quot;, EventCounter(&quot;SR2bSF180&quot;)},
-            {&quot;SR2bSF220&quot;, EventCounter(&quot;SR2bSF220&quot;)},
-            // 
-            {&quot;SR2bDF110&quot;, EventCounter(&quot;SR2bDF110&quot;)},
-            {&quot;SR2bDF120&quot;, EventCounter(&quot;SR2bDF120&quot;)},
-            {&quot;SR2bDF140&quot;, EventCounter(&quot;SR2bDF140&quot;)},
-            {&quot;SR2bDF160&quot;, EventCounter(&quot;SR2bDF160&quot;)},
-            {&quot;SR2bDF180&quot;, EventCounter(&quot;SR2bDF180&quot;)},
-            {&quot;SR2bDF220&quot;, EventCounter(&quot;SR2bDF220&quot;)},
-            //
-            {&quot;SR2bInc110&quot;, EventCounter(&quot;SR2bInc110&quot;)},
-            {&quot;SR2bInc120&quot;, EventCounter(&quot;SR2bInc120&quot;)},
-            {&quot;SR2bInc140&quot;, EventCounter(&quot;SR2bInc140&quot;)},
-            {&quot;SR2bInc160&quot;, EventCounter(&quot;SR2bInc160&quot;)},
-            {&quot;SR2bInc180&quot;, EventCounter(&quot;SR2bInc180&quot;)},
-            {&quot;SR2bInc200&quot;, EventCounter(&quot;SR2bInc200&quot;)},
-            {&quot;SR2bInc220&quot;, EventCounter(&quot;SR2bInc220&quot;)},
-        };
 
         #ifdef CHECK_CUTFLOW
             Cutflows _cutflows;
@@ -90,7 +65,33 @@ namespace Gambit
         Analysis_ATLAS_13TeV_2LEPStop_139invfb()
         {
 
+            // Numbers passing cuts
+            _counters[&quot;SR2bSF110&quot;] = EventCounter(&quot;SR2bSF110&quot;);
+            _counters[&quot;SR2bSF120&quot;] = EventCounter(&quot;SR2bSF120&quot;);
+            _counters[&quot;SR2bSF140&quot;] = EventCounter(&quot;SR2bSF140&quot;);
+            _counters[&quot;SR2bSF160&quot;] = EventCounter(&quot;SR2bSF160&quot;);
+            _counters[&quot;SR2bSF180&quot;] = EventCounter(&quot;SR2bSF180&quot;);
+            _counters[&quot;SR2bSF220&quot;] = EventCounter(&quot;SR2bSF220&quot;);
+            //
+            _counters[&quot;SR2bDF110&quot;] = EventCounter(&quot;SR2bDF110&quot;);
+            _counters[&quot;SR2bDF120&quot;] = EventCounter(&quot;SR2bDF120&quot;);
+            _counters[&quot;SR2bDF140&quot;] = EventCounter(&quot;SR2bDF140&quot;);
+            _counters[&quot;SR2bDF160&quot;] = EventCounter(&quot;SR2bDF160&quot;);
+            _counters[&quot;SR2bDF180&quot;] = EventCounter(&quot;SR2bDF180&quot;);
+            _counters[&quot;SR2bDF220&quot;] = EventCounter(&quot;SR2bDF220&quot;);
+            //
+            _counters[&quot;SR2bInc110&quot;] = EventCounter(&quot;SR2bInc110&quot;);
+            _counters[&quot;SR2bInc120&quot;] = EventCounter(&quot;SR2bInc120&quot;);
+            _counters[&quot;SR2bInc140&quot;] = EventCounter(&quot;SR2bInc140&quot;);
+            _counters[&quot;SR2bInc160&quot;] = EventCounter(&quot;SR2bInc160&quot;);
+            _counters[&quot;SR2bInc180&quot;] = EventCounter(&quot;SR2bInc180&quot;);
+            _counters[&quot;SR2bInc200&quot;] = EventCounter(&quot;SR2bInc200&quot;);
+            _counters[&quot;SR2bInc220&quot;] = EventCounter(&quot;SR2bInc220&quot;);
+
+
+
             set_analysis_name(&quot;ATLAS_13TeV_2LEPStop_139invfb&quot;);
+            set_detector_name(detector);
             set_luminosity(139.);
 
             #ifdef CHECK_CUTFLOW
@@ -121,9 +122,9 @@ namespace Gambit
             #endif
 
 
-            // 
+            //
             // Collect baseline objects
-            // 
+            //
 
             // Missing energy
             double met = event-&gt;met();
@@ -137,10 +138,10 @@ namespace Gambit
             }
 
             // Apply electron efficiency
-            ATLAS::applyElectronEff(baselineElectrons);
+            applyEfficiency(baselineElectrons, ATLAS::eff2DEl.at(&quot;Generic&quot;));
 
             // Apply loose electron selection
-            ATLAS::applyLooseIDElectronSelectionR2(baselineElectrons);
+            applyEfficiency(baselineElectrons, ATLAS::eff2DEl.at(&quot;ATLAS_PHYS_PUB_2015_041_Loose&quot;));
 
             // Create a list of baseline electrons with pT &gt; 100 (used for overlap removal)
             vector&lt;const HEPUtils::Particle*&gt; baselineElectronsPTgt100;
@@ -165,21 +166,21 @@ namespace Gambit
             }
 
             // Apply muon efficiency
-            ATLAS::applyMuonEffR2(baselineMuons);
+            applyEfficiency(baselineMuons, ATLAS::eff2DMu.at(&quot;R2&quot;));
 
             // AK: Is &quot;Medium&quot; identification included in applyMuonEffR2 efficiency?
             // TG: No, and it is also missing from the ATLAS efficiencies, but it's generally over 99% effieciency
 
             // Jets
-            // 
-            // - Including a 90% efficiency for jets w/ pT &lt; 120 and |eta| &lt; 2.5, 
-            //   to emualte the requirement that many tracks are consistent with 
+            //
+            // - Including a 90% efficiency for jets w/ pT &lt; 120 and |eta| &lt; 2.5,
+            //   to emualte the requirement that many tracks are consistent with
             //   primary vertex (see paper)
 
             vector&lt;const HEPUtils::Jet*&gt; baselineJets;
-            for (const HEPUtils::Jet* jet : event-&gt;jets(&quot;antikt_R04&quot;)) 
+            for (const HEPUtils::Jet* jet : event-&gt;jets(&quot;antikt_R04&quot;))
             {
-                if (jet-&gt;pT() &gt; 20. &amp;&amp; jet-&gt;abseta() &lt; 2.8) 
+                if (jet-&gt;pT() &gt; 20. &amp;&amp; jet-&gt;abseta() &lt; 2.8)
                 {
                     if (jet-&gt;pT() &lt; 120 &amp;&amp; jet-&gt;abseta() &lt; 2.5)
                     {
@@ -213,7 +214,7 @@ namespace Gambit
                 }
                 else
                 {
-                    baselineNonBJets.push_back(j);                    
+                    baselineNonBJets.push_back(j);
                 }
             }
 
@@ -243,9 +244,9 @@ namespace Gambit
             for (const HEPUtils::Particle* e : baselineElectrons) HT += e-&gt;pT();
             for (const HEPUtils::Particle* mu : baselineMuons) HT += mu-&gt;pT();
 
-            // 
+            //
             // Signal objects
-            // 
+            //
 
             // b jets
             vector&lt;const HEPUtils::Jet*&gt; signalBJets = baselineBJets;
@@ -259,7 +260,7 @@ namespace Gambit
 
             // electrons
             vector&lt;const HEPUtils::Particle*&gt; signalElectrons = baselineElectrons;
-            ATLAS::applyMediumIDElectronSelectionR2(signalElectrons);
+            applyEfficiency(signalElectrons, ATLAS::eff2DEl.at(&quot;ATLAS_PHYS_PUB_2015_041_Medium&quot;));
 
             // muons
             vector&lt;const HEPUtils::Particle*&gt; signalMuons = baselineMuons;
@@ -279,9 +280,9 @@ namespace Gambit
             sortByPt(signalLeptons);
 
 
-            // 
+            //
             // Event selection
-            // 
+            //
 
             // Implements the selection via a bunch of bools instead of early return
             // statements, to make it easy to implement cut-flows for SR2b*, SR3b* and
@@ -353,7 +354,7 @@ namespace Gambit
                 // Require same-flavour leptons w/ |mll - mZ| &gt; 20
                 // or different-flavour leptons
                 if (lep1-&gt;abspid() == lep2-&gt;abspid())
-                { 
+                {
                     SR2b_SF = true;
                 }
                 else
@@ -424,10 +425,10 @@ namespace Gambit
                 if (SR2b_OS) _cutflows[&quot;SR2b&quot;].fillnext(w);                    // &quot;OS leptons&quot;
                 if (SR2b_mll) _cutflows[&quot;SR2b&quot;].fillnext(w);                   // &quot;mll &gt; 20&quot;
                 if (SR2b_SF_mll_req || SR2b_DF) _cutflows[&quot;SR2b&quot;].fillnext(w); // &quot;SF w/ |mll - mZ| &gt; 20 or DF&quot;
-                if (SR2b_nbjets) _cutflows[&quot;SR2b&quot;].fillnext(w);                // &quot;n_bjets &gt;= 1&quot;            
-                if (SR2b_dphiboost) _cutflows[&quot;SR2b&quot;].fillnext(w);             // &quot;Delta phi_boost &lt; 1.5&quot;            
-                if (SR2b_ETmiss_sig) _cutflows[&quot;SR2b&quot;].fillnext(w);            // &quot;ETmiss significance &gt; 12&quot;            
-                if (SR2b_mT2) _cutflows[&quot;SR2b&quot;].fillnext(w);                   // &quot;mT2 &gt;= 110&quot;            
+                if (SR2b_nbjets) _cutflows[&quot;SR2b&quot;].fillnext(w);                // &quot;n_bjets &gt;= 1&quot;
+                if (SR2b_dphiboost) _cutflows[&quot;SR2b&quot;].fillnext(w);             // &quot;Delta phi_boost &lt; 1.5&quot;
+                if (SR2b_ETmiss_sig) _cutflows[&quot;SR2b&quot;].fillnext(w);            // &quot;ETmiss significance &gt; 12&quot;
+                if (SR2b_mT2) _cutflows[&quot;SR2b&quot;].fillnext(w);                   // &quot;mT2 &gt;= 110&quot;
             #endif
 
 
@@ -469,17 +470,8 @@ namespace Gambit
         }
 
 
-        /// Combine the variables of another copy of this analysis (typically on another thread) into this one.
-        void combine(const Analysis* other)
-        {
-            const Analysis_ATLAS_13TeV_2LEPStop_139invfb* specificOther
-                = dynamic_cast&lt;const Analysis_ATLAS_13TeV_2LEPStop_139invfb*&gt;(other);
 
-            for (auto&amp; pair : _counters) { pair.second += specificOther-&gt;_counters.at(pair.first); }
-        }
-
-
-        virtual void collect_results() 
+        virtual void collect_results()
         {
             // Two-body SRs (SR2b*)
             // - SF + DF, inclusive mT2 binning
@@ -518,7 +510,7 @@ namespace Gambit
 
 
     protected:
-      void analysis_specific_reset() 
+      void analysis_specific_reset()
       {
         for (auto&amp; pair : _counters) { pair.second.reset(); }
       }
@@ -532,16 +524,16 @@ namespace Gambit
     //
     // Derived analysis class using the SR2b inclusive SRs
     //
-    class Analysis_ATLAS_13TeV_2LEPStop_inclusive_139invfb : public Analysis_ATLAS_13TeV_2LEPStop_139invfb 
+    class Analysis_ATLAS_13TeV_2LEPStop_inclusive_139invfb : public Analysis_ATLAS_13TeV_2LEPStop_139invfb
     {
 
     public:
-        Analysis_ATLAS_13TeV_2LEPStop_inclusive_139invfb() 
+        Analysis_ATLAS_13TeV_2LEPStop_inclusive_139invfb()
         {
             set_analysis_name(&quot;ATLAS_13TeV_2LEPStop_inclusive_139invfb&quot;);
         }
 
-        virtual void collect_results() 
+        virtual void collect_results()
         {
             // Two-body SRs (SR2b*)
             // - SF + DF, inclusive mT2 binning
@@ -562,7 +554,7 @@ namespace Gambit
                 for (auto&amp; pair : _counters) cout &lt;&lt; pair.second.weight_sum() &lt;&lt; &quot;  &quot;;
                 cout &lt;&lt; &quot;\n&quot; &lt;&lt; endl;
             #endif
- 
+
         }
 
     };
@@ -574,16 +566,16 @@ namespace Gambit
     //
     // Derived analysis class using the SR2b exclusive SRs
     //
-    class Analysis_ATLAS_13TeV_2LEPStop_exclusive_139invfb : public Analysis_ATLAS_13TeV_2LEPStop_139invfb 
+    class Analysis_ATLAS_13TeV_2LEPStop_exclusive_139invfb : public Analysis_ATLAS_13TeV_2LEPStop_139invfb
     {
 
     public:
-        Analysis_ATLAS_13TeV_2LEPStop_exclusive_139invfb() 
+        Analysis_ATLAS_13TeV_2LEPStop_exclusive_139invfb()
         {
             set_analysis_name(&quot;ATLAS_13TeV_2LEPStop_exclusive_139invfb&quot;);
         }
 
-        virtual void collect_results() 
+        virtual void collect_results()
         {
             // Two-body SRs (SR2b*)
             // - SF, exclusive mT2 binning
@@ -610,7 +602,7 @@ namespace Gambit
                 for (auto&amp; pair : _counters) cout &lt;&lt; pair.second.weight_sum() &lt;&lt; &quot;  &quot;;
                 cout &lt;&lt; &quot;\n&quot; &lt;&lt; endl;
             #endif
- 
+
         }
 
     };
@@ -620,7 +612,7 @@ namespace Gambit
 
   }
 }
-</code></pre><hr><p>Updated on 2025-02-12 at 16:10:35 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.d5e27a6ed00168b7a66eb637878a6be7d054db51d0e613bbcfda12ab0569b62177253b4e6453c477574b3a38f50eff49a68f0e19112bd82a68c78a66cd8d05df.js integrity="sha512-1eJ6btABaLembrY3h4pr59BU21HQ5hO7z9oSqwVptiF3JTtOZFPEd1dLOjj1Dv9Jpo8OGREr2Cpox4pmzY0F3w==" crossorigin=anonymous defer></script>
+</code></pre><hr><p>Updated on 2026-11-03 at 14:50:47 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.d5e27a6ed00168b7a66eb637878a6be7d054db51d0e613bbcfda12ab0569b62177253b4e6453c477574b3a38f50eff49a68f0e19112bd82a68c78a66cd8d05df.js integrity="sha512-1eJ6btABaLembrY3h4pr59BU21HQ5hO7z9oSqwVptiF3JTtOZFPEd1dLOjj1Dv9Jpo8OGREr2Cpox4pmzY0F3w==" crossorigin=anonymous defer></script>
 <script src=/js/highlight.min.9003483b4531b86467c8b801b1d5fc5439bb0d6bdb6c6a760a1b54abf37d6bbadf8423dbc81a3359c935c7705bb7d183b46131ba4a9c861b5d48e6a61501461a.js integrity="sha512-kANIO0UxuGRnyLgBsdX8VDm7DWvbbGp2ChtUq/N9a7rfhCPbyBozWck1x3Bbt9GDtGExukqchhtdSOamFQFGGg==" crossorigin=anonymous defer></script>
 <script src=/main.min.9342d29d0e3e250a2c03282306b766e004888dba0fd661a17d7b106655e013bf85733f086ad330e3df0929c713dd81c0ea835966fa92e4a1e38f7ea9680524ed.js integrity="sha512-k0LSnQ4+JQosAygjBrdm4ASIjboP1mGhfXsQZlXgE7+Fcz8IatMw498JKccT3YHA6oNZZvqS5KHjj36paAUk7Q==" crossorigin=anonymous defer></script>
-<script src=https://gambitbsm.org/index.min.03ab9c2e460a36904d0b1544581433f337b9e5e23e6798a396683f418d37e30979da1ab2a8ef201c110075d73ccb12f8cc2605c7d9723f99bef11ed7c8b97844.js integrity="sha512-A6ucLkYKNpBNCxVEWBQz8ze55eI+Z5ijlmg/QY034wl52hqyqO8gHBEAddc8yxL4zCYFx9lyP5m+8R7XyLl4RA==" crossorigin=anonymous defer></script></body></html>
+<script src=https://gambitbsm.org/index.min.3a8ee06d0c346f1fb70040b0fbcbaaacf335cb34023c408954406a05db2089fc2ca349119b9f7d68b9e7044e82b8fdc8bd9661b6ef8b118246c5a2079d7fa8e9.js integrity="sha512-Oo7gbQw0bx+3AECw+8uqrPM1yzQCPECJVEBqBdsgifwso0kRm599aLnnBE6CuP3IvZZhtu+LEYJGxaIHnX+o6Q==" crossorigin=anonymous defer></script></body></html>

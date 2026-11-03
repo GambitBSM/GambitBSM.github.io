@@ -198,8 +198,8 @@ namespace Gambit
       n_interpolators = interpolator_names.size();
 
       // Get unique entries of &quot;xi&quot; for the grid and grid size.
-      x1_vec = tab[x1_name];
       x1_vec_unsorted = tab[x1_name];
+      x1_vec = x1_vec_unsorted;
       sort(x1_vec.begin(), x1_vec.end());
       x1_vec.erase(unique(x1_vec.begin(), x1_vec.end()), x1_vec.end());
       int nx1 = x1_vec.size();
@@ -237,21 +237,23 @@ namespace Gambit
 
       for (size_t i=0;i&lt;(x1_vec.size());i++)
       {
+        double x1_curr = x1_vec[i];    // Cache current value
+        double x1_next = x1_vec[i+1];  // Cache next value
         // In case of exact match
-        if (x1 == x1_vec[i])
+        if (x1 == x1_curr)
         {
-          xi_lower[0] = x1_vec[i];
-          xi_upper[0] = x1_vec[i];
+          xi_lower[0] = x1_curr;
+          xi_upper[0] = x1_curr;
           x1_equal = true;
         }
         // Otherwise bounds as normal
-        if (x1 &gt; x1_vec[i] &amp;&amp; x1 &lt; x1_vec[i+1])
+        if (x1 &gt; x1_curr &amp;&amp; x1 &lt; x1_next)
         {
-          xi_lower[0] = x1_vec[i];
-          xi_upper[0] = x1_vec[i+1];
+          xi_lower[0] = x1_curr;
+          xi_upper[0] = x1_next;
         }
         // End early if you have found all of the bounds
-        if (x1 &lt; x1_vec[i] ) break;
+        if (x1 &lt; x1_curr) break;
       }
 
       // Find the corresponding function values
@@ -259,7 +261,7 @@ namespace Gambit
       bool test_u[] = {false};
       bool test_l[] = {false};
 
-      //Loop over all interp_data, and match value to coresponding value.
+      //Loop over all interp_data, and match value to corresponding value.
       for (size_t k=0;k&lt;fi_values.size();k++)
       {
         // Reset Values
@@ -461,16 +463,16 @@ namespace Gambit
       n_interpolators = interpolator_names.size();
 
       // Get unique entries of &quot;xi&quot; for the grid and grid size.
-      x1_vec = tab[x1_name];
       x1_vec_unsorted = tab[x1_name];
+      x1_vec = x1_vec_unsorted;
       sort(x1_vec.begin(), x1_vec.end());
       x1_vec.erase(unique(x1_vec.begin(), x1_vec.end()), x1_vec.end());
       int nx1 = x1_vec.size();
       x1_min = x1_vec.front();
       x1_max = x1_vec.back();
 
-      x2_vec = tab[x2_name];
       x2_vec_unsorted = tab[x2_name];
+      x2_vec = x2_vec_unsorted;
       sort(x2_vec.begin(), x2_vec.end());
       x2_vec.erase(unique(x2_vec.begin(), x2_vec.end()), x2_vec.end());
       int nx2 = x2_vec.size();
@@ -509,40 +511,44 @@ namespace Gambit
 
       for (size_t i=0;i&lt;(x1_vec.size());i++)
       {
+        double x1_curr = x1_vec[i];
+        double x1_next = x1_vec[i+1];
         // In case of exact match
-        if (x1 == x1_vec[i])
+        if (x1 == x1_curr)
         {
-          xi_lower[0] = x1_vec[i];
-          xi_upper[0] = x1_vec[i];
+          xi_lower[0] = x1_curr;
+          xi_upper[0] = x1_curr;
           x1_equal = true;
         }
         // Otherwise bounds as normal
-        if (x1 &gt; x1_vec[i] &amp;&amp; x1 &lt; x1_vec[i+1])
+        if (x1 &gt; x1_curr &amp;&amp; x1 &lt; x1_next)
         {
-          xi_lower[0] = x1_vec[i];
-          xi_upper[0] = x1_vec[i+1];
+          xi_lower[0] = x1_curr;
+          xi_upper[0] = x1_next;
         }
         // End early if you have found all of the bounds
-        if (x1 &lt; x1_vec[i] ) break;
+        if (x1 &lt; x1_curr ) break;
       }
 
       for (size_t i=0;i&lt;(x2_vec.size());i++)
       {
+        double x2_curr = x2_vec[i];
+        double x2_next = x2_vec[i+1];
         // In case of exact match
-        if (x2 == x2_vec[i])
+        if (x2 == x2_curr)
         {
-          xi_lower[1] = x2_vec[i];
-          xi_upper[1] = x2_vec[i];
+          xi_lower[1] = x2_curr;
+          xi_upper[1] = x2_curr;
           x2_equal = true;
         }
         // Otherwise bounds as normal
-        if (x2 &gt; x2_vec[i] &amp;&amp; x2 &lt; x2_vec[i+1])
+        if (x2 &gt; x2_curr &amp;&amp; x2 &lt; x2_next)
         {
-          xi_lower[1] = x2_vec[i];
-          xi_upper[1] = x2_vec[i+1];
+          xi_lower[1] = x2_curr;
+          xi_upper[1] = x2_next;
         }
 
-        if (x2 &lt; x2_vec[i]) break;
+        if (x2 &lt; x2_curr) break;
       }
 
       // Find the corresponding function values
@@ -550,7 +556,7 @@ namespace Gambit
       bool test_u[] = {false,false};
       bool test_l[] = {false,false};
 
-      //Loop over all interp_data, and match value to coresponding value.
+      //Loop over all interp_data, and match value to corresponding value.
       for (size_t k=0;k&lt;fi_values.size();k++)
       {
         // Reset Values
@@ -655,32 +661,32 @@ namespace Gambit
       n_interpolators = interpolator_names.size();
 
       // Get unique entries of &quot;xi&quot; for the grid and grid size.
-      x1_vec = tab[x1_name];
       x1_vec_unsorted = tab[x1_name];
+      x1_vec = x1_vec_unsorted;
       sort(x1_vec.begin(), x1_vec.end());
       x1_vec.erase(unique(x1_vec.begin(), x1_vec.end()), x1_vec.end());
       int nx1 = x1_vec.size();
       x1_min = x1_vec.front();
       x1_max = x1_vec.back();
 
-      x2_vec = tab[x2_name];
       x2_vec_unsorted = tab[x2_name];
+      x2_vec = x2_vec_unsorted;
       sort(x2_vec.begin(), x2_vec.end());
       x2_vec.erase(unique(x2_vec.begin(), x2_vec.end()), x2_vec.end());
       int nx2 = x2_vec.size();
       x2_min = x2_vec.front();
       x2_max = x2_vec.back();
 
-      x3_vec = tab[x3_name];
       x3_vec_unsorted = tab[x3_name];
+      x3_vec = x3_vec_unsorted;
       sort(x3_vec.begin(), x3_vec.end());
       x3_vec.erase(unique(x3_vec.begin(), x3_vec.end()), x3_vec.end());
       int nx3 = x3_vec.size();
       x3_min = x3_vec.front();
       x3_max = x3_vec.back();
 
-      x4_vec = tab[x4_name];
       x4_vec_unsorted = tab[x4_name];
+      x4_vec = x4_vec_unsorted;
       sort(x4_vec.begin(), x4_vec.end());
       x4_vec.erase(unique(x4_vec.begin(), x4_vec.end()), x4_vec.end());
       int nx4 = x4_vec.size();
@@ -722,65 +728,73 @@ namespace Gambit
       // Determine edges (-1 to make sure it doesn't run over the last element)
       for (size_t i=0;i&lt;(x1_vec.size());i++)
       {
-        // // In case of exact match
-        if (x1 == x1_vec[i])
+        double x1_curr = x1_vec[i];
+        double x1_next = x1_vec[i+1];
+        // In case of exact match
+        if (x1 == x1_curr)
         {
-          xi_lower[0] = x1_vec[i];
-          xi_upper[0] = x1_vec[i];
+          xi_lower[0] = x1_curr;
+          xi_upper[0] = x1_curr;
         }
         // Otherwise bounds as normal
-        if (x1 &gt; x1_vec[i] &amp;&amp; x1 &lt; x1_vec[i+1])
+        if (x1 &gt; x1_curr &amp;&amp; x1 &lt; x1_next)
         {
-          xi_lower[0] = x1_vec[i];
-          xi_upper[0] = x1_vec[i+1];
+          xi_lower[0] = x1_curr;
+          xi_upper[0] = x1_next;
         }
         // End early if you have found all of the bounds
-        if (x1 &lt; x1_vec[i] ) break;
+        if (x1 &lt; x1_curr) break;
       }
 
       for (size_t i=0;i&lt;(x2_vec.size());i++)
       {
-        if (x2 == x2_vec[i])
+        double x2_curr = x2_vec[i];
+        double x2_next = x2_vec[i+1];
+        if (x2 == x2_curr)
         {
-          xi_lower[1] = x2_vec[i];
-          xi_upper[1] = x2_vec[i];
+          xi_lower[1] = x2_curr;
+          xi_upper[1] = x2_curr;
         }
-        if (x2 &gt; x2_vec[i] &amp;&amp; x2 &lt; x2_vec[i+1])
+        if (x2 &gt; x2_curr &amp;&amp; x2 &lt; x2_next)
         {
-          xi_lower[1] = x2_vec[i];
-          xi_upper[1] = x2_vec[i+1];
+          xi_lower[1] = x2_curr;
+          xi_upper[1] = x2_next;
         }
-        if (x2 &lt; x2_vec[i]) break;
+        if (x2 &lt; x2_curr) break;
       }
 
       for (size_t i=0;i&lt;(x3_vec.size());i++)
       {
-        if (x3 == x3_vec[i])
+        double x3_curr = x3_vec[i];
+        double x3_next = x3_vec[i+1];
+        if (x3 == x3_curr)
         {
-          xi_lower[2] = x3_vec[i];
-          xi_upper[2] = x3_vec[i];
+          xi_lower[2] = x3_curr;
+          xi_upper[2] = x3_curr;
         }
-        if (x3 &gt; x3_vec[i] &amp;&amp; x3 &lt; x3_vec[i+1])
+        if (x3 &gt; x3_curr &amp;&amp; x3 &lt; x3_next)
         {
-          xi_lower[2] = x3_vec[i];
-          xi_upper[2] = x3_vec[i+1];
+          xi_lower[2] = x3_curr;
+          xi_upper[2] = x3_next;
         }
-        if (x3 &lt; x3_vec[i]) break;
+        if (x3 &lt; x3_curr) break;
       }
 
       for (size_t i=0;i&lt;(x4_vec.size());i++)
       {
-        if (x4 == x4_vec[i])
+        double x4_curr = x4_vec[i];
+        double x4_next = x4_vec[i+1];
+        if (x4 == x4_curr)
         {
-          xi_lower[3] = x4_vec[i];
-          xi_upper[3] = x4_vec[i];
+          xi_lower[3] = x4_curr;
+          xi_upper[3] = x4_curr;
         }
-        if (x4 &gt; x4_vec[i] &amp;&amp; x4 &lt; x4_vec[i+1])
+        if (x4 &gt; x4_curr &amp;&amp; x4 &lt; x4_next)
         {
-          xi_lower[3] = x4_vec[i];
-          xi_upper[3] = x4_vec[i+1];
+          xi_lower[3] = x4_curr;
+          xi_upper[3] = x4_next;
         }
-        if (x4 &lt; x4_vec[i]) break;
+        if (x4 &lt; x4_curr) break;
       }
 
       // Find the corresponding function values
@@ -789,7 +803,7 @@ namespace Gambit
       bool test_u[] = {false,false,false,false};
       bool test_l[] = {false,false,false,false};
 
-      //Loop over all interp_data, and match value to coresponding value.
+      //Loop over all interp_data, and match value to corresponding value.
       for (size_t k=0;k&lt;fi_values.size();k++)
       {
         // Reset Values
@@ -921,40 +935,40 @@ namespace Gambit
       n_interpolators = interpolator_names.size();
 
       // Get unique entries of &quot;xi&quot; for the grid and grid size.
-      x1_vec = tab[x1_name];
       x1_vec_unsorted = tab[x1_name];
+      x1_vec = x1_vec_unsorted;
       sort(x1_vec.begin(), x1_vec.end());
       x1_vec.erase(unique(x1_vec.begin(), x1_vec.end()), x1_vec.end());
       int nx1 = x1_vec.size();
       x1_min = x1_vec.front();
       x1_max = x1_vec.back();
 
-      x2_vec = tab[x2_name];
       x2_vec_unsorted = tab[x2_name];
+      x2_vec = x2_vec_unsorted;
       sort(x2_vec.begin(), x2_vec.end());
       x2_vec.erase(unique(x2_vec.begin(), x2_vec.end()), x2_vec.end());
       int nx2 = x2_vec.size();
       x2_min = x2_vec.front();
       x2_max = x2_vec.back();
 
-      x3_vec = tab[x3_name];
       x3_vec_unsorted = tab[x3_name];
+      x3_vec = x3_vec_unsorted;
       sort(x3_vec.begin(), x3_vec.end());
       x3_vec.erase(unique(x3_vec.begin(), x3_vec.end()), x3_vec.end());
       int nx3 = x3_vec.size();
       x3_min = x3_vec.front();
       x3_max = x3_vec.back();
 
-      x4_vec = tab[x4_name];
       x4_vec_unsorted = tab[x4_name];
+      x4_vec = x4_vec_unsorted;
       sort(x4_vec.begin(), x4_vec.end());
       x4_vec.erase(unique(x4_vec.begin(), x4_vec.end()), x4_vec.end());
       int nx4 = x4_vec.size();
       x4_min = x4_vec.front();
       x4_max = x4_vec.back();
 
-      x5_vec = tab[x5_name];
       x5_vec_unsorted = tab[x5_name];
+      x5_vec = x5_vec_unsorted;
       sort(x5_vec.begin(), x5_vec.end());
       x5_vec.erase(unique(x5_vec.begin(), x5_vec.end()), x5_vec.end());
       int nx5 = x5_vec.size();
@@ -997,80 +1011,90 @@ namespace Gambit
       // This is split into 5 different loops since the number in each dimension may be different
       for (size_t i=0;i&lt;(x1_vec.size());i++)
       {
+        double x1_curr = x1_vec[i];
+        double x1_next = x1_vec[i+1];
         // In case of exact match
-        if (x1 == x1_vec[i])
+        if (x1 == x1_curr)
         {
-          xi_lower[0] = x1_vec[i];
-          xi_upper[0] = x1_vec[i];
+          xi_lower[0] = x1_curr;
+          xi_upper[0] = x1_curr;
         }
         // Otherwise bounds as normal
-        if (x1 &gt; x1_vec[i] &amp;&amp; x1 &lt; x1_vec[i+1])
+        if (x1 &gt; x1_curr &amp;&amp; x1 &lt; x1_next)
         {
-          xi_lower[0] = x1_vec[i];
-          xi_upper[0] = x1_vec[i+1];
+          xi_lower[0] = x1_curr;
+          xi_upper[0] = x1_next;
         }
         // End early if you have found all of the bounds
-        if (x1 &lt; x1_vec[i] ) break;
+        if (x1 &lt; x1_curr) break;
       }
 
       for (size_t i=0;i&lt;(x2_vec.size());i++)
       {
-        if (x2 == x2_vec[i])
+        double x2_curr = x2_vec[i];
+        double x2_next = x2_vec[i+1];
+        if (x2 == x2_curr)
         {
-          xi_lower[1] = x2_vec[i];
-          xi_upper[1] = x2_vec[i];
+          xi_lower[1] = x2_curr;
+          xi_upper[1] = x2_curr;
         }
-        if (x2 &gt; x2_vec[i] &amp;&amp; x2 &lt; x2_vec[i+1])
+        if (x2 &gt; x2_curr &amp;&amp; x2 &lt; x2_next)
         {
-          xi_lower[1] = x2_vec[i];
-          xi_upper[1] = x2_vec[i+1];
+          xi_lower[1] = x2_curr;
+          xi_upper[1] = x2_next;
         }
-        if (x2 &lt; x2_vec[i]) break;
+        if (x2 &lt; x2_curr) break;
       }
 
       for (size_t i=0;i&lt;(x3_vec.size());i++)
       {
-        if (x3 == x3_vec[i])
+        double x3_curr = x3_vec[i];
+        double x3_next = x3_vec[i+1];
+        if (x3 == x3_curr)
         {
-          xi_lower[2] = x3_vec[i];
-          xi_upper[2] = x3_vec[i];
+          xi_lower[1] = x3_curr;
+          xi_upper[1] = x3_curr;
         }
-        if (x3 &gt; x3_vec[i] &amp;&amp; x3 &lt; x3_vec[i+1])
+        if (x3 &gt; x3_curr &amp;&amp; x3 &lt; x3_next)
         {
-          xi_lower[2] = x3_vec[i];
-          xi_upper[2] = x3_vec[i+1];
+          xi_lower[1] = x3_curr;
+          xi_upper[1] = x3_next;
         }
-        if (x3 &lt; x3_vec[i]) break;
+        if (x3 &lt; x3_curr) break;
       }
 
       for (size_t i=0;i&lt;(x4_vec.size());i++)
       {
-        if (x4 == x4_vec[i])
+        double x4_curr = x4_vec[i];
+        double x4_next = x4_vec[i+1];
+        if (x4 == x4_curr)
         {
-          xi_lower[3] = x4_vec[i];
-          xi_upper[3] = x4_vec[i];
+          xi_lower[1] = x4_curr;
+          xi_upper[1] = x4_curr;
         }
-        if (x4 &gt; x4_vec[i] &amp;&amp; x4 &lt; x4_vec[i+1])
+        if (x4 &gt; x4_curr &amp;&amp; x4 &lt; x4_next)
         {
-          xi_lower[3] = x4_vec[i];
-          xi_upper[3] = x4_vec[i+1];
+          xi_lower[1] = x4_curr;
+          xi_upper[1] = x4_next;
         }
-        if (x4 &lt; x4_vec[i]) break;
+        if (x4 &lt; x4_curr) break;
       }
 
       for (size_t i=0;i&lt;(x5_vec.size());i++)
       {
-        if (x5 == x5_vec[i])
+        double x5_curr = x5_vec[i];
+        double x5_next = x5_vec[i+1];
+        if (x5 == x5_curr)
         {
-          xi_lower[4] = x5_vec[i];
-          xi_upper[4] = x5_vec[i];
+          xi_lower[1] = x5_curr;
+          xi_upper[1] = x5_curr;
         }
-        if (x5 &gt; x5_vec[i] &amp;&amp; x5 &lt; x5_vec[i+1])
+        if (x5 &gt; x5_curr &amp;&amp; x5 &lt; x5_next)
         {
-          xi_lower[4] = x5_vec[i];
-          xi_upper[4] = x5_vec[i+1];
+          xi_lower[1] = x5_curr;
+          xi_upper[1] = x5_next;
         }
-        if (x5 &lt; x5_vec[i]) break;
+        if (x5 &lt; x5_curr) break;
       }
 
       // Find the corresponding function values
@@ -1083,7 +1107,7 @@ namespace Gambit
       bool test_u[] = {false,false,false,false,false};
       bool test_l[] = {false,false,false,false,false};
 
-      //Loop over all interp_data, and match value to coresponding value.
+      //Loop over all interp_data, and match value to corresponding value.
       for (size_t k=0;k&lt;fi_values.size();k++)
       {
         // Reset Values
@@ -1218,7 +1242,7 @@ namespace Gambit
 
   }
 }
-</code></pre><hr><p>Updated on 2025-02-12 at 16:10:33 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.d5e27a6ed00168b7a66eb637878a6be7d054db51d0e613bbcfda12ab0569b62177253b4e6453c477574b3a38f50eff49a68f0e19112bd82a68c78a66cd8d05df.js integrity="sha512-1eJ6btABaLembrY3h4pr59BU21HQ5hO7z9oSqwVptiF3JTtOZFPEd1dLOjj1Dv9Jpo8OGREr2Cpox4pmzY0F3w==" crossorigin=anonymous defer></script>
+</code></pre><hr><p>Updated on 2026-11-03 at 14:50:45 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.d5e27a6ed00168b7a66eb637878a6be7d054db51d0e613bbcfda12ab0569b62177253b4e6453c477574b3a38f50eff49a68f0e19112bd82a68c78a66cd8d05df.js integrity="sha512-1eJ6btABaLembrY3h4pr59BU21HQ5hO7z9oSqwVptiF3JTtOZFPEd1dLOjj1Dv9Jpo8OGREr2Cpox4pmzY0F3w==" crossorigin=anonymous defer></script>
 <script src=/js/highlight.min.9003483b4531b86467c8b801b1d5fc5439bb0d6bdb6c6a760a1b54abf37d6bbadf8423dbc81a3359c935c7705bb7d183b46131ba4a9c861b5d48e6a61501461a.js integrity="sha512-kANIO0UxuGRnyLgBsdX8VDm7DWvbbGp2ChtUq/N9a7rfhCPbyBozWck1x3Bbt9GDtGExukqchhtdSOamFQFGGg==" crossorigin=anonymous defer></script>
 <script src=/main.min.9342d29d0e3e250a2c03282306b766e004888dba0fd661a17d7b106655e013bf85733f086ad330e3df0929c713dd81c0ea835966fa92e4a1e38f7ea9680524ed.js integrity="sha512-k0LSnQ4+JQosAygjBrdm4ASIjboP1mGhfXsQZlXgE7+Fcz8IatMw498JKccT3YHA6oNZZvqS5KHjj36paAUk7Q==" crossorigin=anonymous defer></script>
-<script src=https://gambitbsm.org/index.min.03ab9c2e460a36904d0b1544581433f337b9e5e23e6798a396683f418d37e30979da1ab2a8ef201c110075d73ccb12f8cc2605c7d9723f99bef11ed7c8b97844.js integrity="sha512-A6ucLkYKNpBNCxVEWBQz8ze55eI+Z5ijlmg/QY034wl52hqyqO8gHBEAddc8yxL4zCYFx9lyP5m+8R7XyLl4RA==" crossorigin=anonymous defer></script></body></html>
+<script src=https://gambitbsm.org/index.min.3a8ee06d0c346f1fb70040b0fbcbaaacf335cb34023c408954406a05db2089fc2ca349119b9f7d68b9e7044e82b8fdc8bd9661b6ef8b118246c5a2079d7fa8e9.js integrity="sha512-Oo7gbQw0bx+3AECw+8uqrPM1yzQCPECJVEBqBdsgifwso0kRm599aLnnBE6CuP3IvZZhtu+LEYJGxaIHnX+o6Q==" crossorigin=anonymous defer></script></body></html>

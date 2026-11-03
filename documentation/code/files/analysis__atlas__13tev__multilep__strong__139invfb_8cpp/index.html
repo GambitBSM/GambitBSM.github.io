@@ -23,8 +23,10 @@ Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle
 
 // #define CHECK_CUTFLOW
 
-namespace Gambit {
-  namespace ColliderBit {
+namespace Gambit
+{
+  namespace ColliderBit
+  {
 
     using namespace std;
     using namespace HEPUtils;
@@ -36,11 +38,11 @@ namespace Gambit {
     ///   - https://arxiv.org/pdf/1909.08457
     ///   - https://www.hepdata.net/record/ins1754675
     ///   - C++ code example and SLHA benchmark files available on HEPData (link above)
-    /// 
+    ///
     /// Cross-sections for cutflows taken from https://twiki.cern.ch/twiki/bin/view/LHCPhysics/SUSYCrossSections#Cross_sections_for_various_subpr
-    /// 
+    ///
 
-    /* 
+    /*
       Notes on analysis logic:
       ------------------------
 
@@ -54,13 +56,13 @@ namespace Gambit {
 
       - b-tagging for jets within |eta| &lt; 2.5, using MV2c10 b-tagging algorithm
 
-      - basline muons: 
+      - basline muons:
         - |eta| &lt; 2.5
         - pT &gt; 10 GeV
       - signal muons:
         - sufficiently isolated from jets and other leptons
 
-      - basline electrons: 
+      - basline electrons:
         - |eta| &lt; 2.47, excluding the range (1.37, 1.52)
         - pT &gt; 10 GeV
       - signal electrons:
@@ -70,7 +72,7 @@ namespace Gambit {
       - ETmiss has a &quot;soft term&quot; correction
 
       - Overlap removal:
-        - Exclude any baseline leptons that are too close to a jet. 
+        - Exclude any baseline leptons that are too close to a jet.
           Requirement:
 
             Delta R &gt; min(0.4, 0.1 + 9.6 [GeV] / pT_lepton)
@@ -79,12 +81,12 @@ namespace Gambit {
 
 
       *** From Sec 4: Event selection ***
-      
+
       - At least two signal leptons with pT &gt; 20 GeV
 
       - If only two leptons: must have same sign
       - Else if more than two leptons (pT &gt; 10 GeV): no sign requirement
-      
+
       - [ETmiss-dependent trigger details in second paragraph of Sec 4 ignored for now]
 
       - Selection variables:
@@ -98,39 +100,39 @@ namespace Gambit {
         - mee_near_mZ: is there a same-sign(!) electron pair with an invariant mass near mZ, i.e. in (81,101) GeV?
 
       - Five signal regions (units GeV):
-        - Rpv2L: nl &gt;= 2; nb &gt;= 0; nj &gt;= 6 (pT &gt; 40); meff &gt; 2600 
-        - Rpc2L0b: nl &gt;= 2; nb == 0; nj &gt;= 6 (pT &gt; 40); ETmiss &gt; 200; meff &gt; 1000; ETmiss/meff &gt; 0.2 
-        - Rpc2L1b: nl &gt;= 2; nb &gt;= 1; nj &gt;= 6 (pT &gt; 40); ETmiss/meff &gt; 0.25 
-        - Rpc2L2b: nl &gt;= 2; nb &gt;= 2; nj &gt;= 6 (pT &gt; 25); ETmiss &gt; 300; meff &gt; 1400; ETmiss/meff &gt; 0.14 
-        - Rpc3LSS1b: nl &gt;= 3 (same sign); nb &gt;= 1; not mee_near_mZmee; ETmiss/meff &gt; 0.14 
+        - Rpv2L: nl &gt;= 2; nb &gt;= 0; nj &gt;= 6 (pT &gt; 40); meff &gt; 2600
+        - Rpc2L0b: nl &gt;= 2; nb == 0; nj &gt;= 6 (pT &gt; 40); ETmiss &gt; 200; meff &gt; 1000; ETmiss/meff &gt; 0.2
+        - Rpc2L1b: nl &gt;= 2; nb &gt;= 1; nj &gt;= 6 (pT &gt; 40); ETmiss/meff &gt; 0.25
+        - Rpc2L2b: nl &gt;= 2; nb &gt;= 2; nj &gt;= 6 (pT &gt; 25); ETmiss &gt; 300; meff &gt; 1400; ETmiss/meff &gt; 0.14
+        - Rpc3LSS1b: nl &gt;= 3 (same sign); nb &gt;= 1; not mee_near_mZmee; ETmiss/meff &gt; 0.14
 
     */
 
 
-    class Analysis_ATLAS_13TeV_MultiLEP_strong_139invfb : public Analysis 
+    class Analysis_ATLAS_13TeV_MultiLEP_strong_139invfb : public Analysis
     {
     public:
 
       // Required detector sim
       static constexpr const char* detector = &quot;ATLAS&quot;;
 
-      // Numbers passing cuts
-      std::map&lt;string, EventCounter&gt; _counters = {
-        {&quot;Rpv2L&quot;, EventCounter(&quot;Rpv2L&quot;)},
-        {&quot;Rpc2L0b&quot;, EventCounter(&quot;Rpc2L0b&quot;)},
-        {&quot;Rpc2L1b&quot;, EventCounter(&quot;Rpc2L1b&quot;)},
-        {&quot;Rpc2L2b&quot;, EventCounter(&quot;Rpc2L2b&quot;)},
-        {&quot;Rpc3LSS1b&quot;, EventCounter(&quot;Rpc3LSS1b&quot;)},
-      };
-
       #ifdef CHECK_CUTFLOW
         Cutflows _cutflows;
       #endif
 
 
-      Analysis_ATLAS_13TeV_MultiLEP_strong_139invfb() 
+      Analysis_ATLAS_13TeV_MultiLEP_strong_139invfb()
       {
+        // Numbers passing cuts
+        _counters[&quot;Rpv2L&quot;] = EventCounter(&quot;Rpv2L&quot;);
+        _counters[&quot;Rpc2L0b&quot;] = EventCounter(&quot;Rpc2L0b&quot;);
+        _counters[&quot;Rpc2L1b&quot;] = EventCounter(&quot;Rpc2L1b&quot;);
+        _counters[&quot;Rpc2L2b&quot;] = EventCounter(&quot;Rpc2L2b&quot;);
+        _counters[&quot;Rpc3LSS1b&quot;] = EventCounter(&quot;Rpc3LSS1b&quot;);
+
+
         set_analysis_name(&quot;ATLAS_13TeV_MultiLEP_strong_139invfb&quot;);
+        set_detector_name(detector);
         set_luminosity(139.0);
 
 
@@ -146,7 +148,7 @@ namespace Gambit {
       }
 
 
-      void run(const Event* event) 
+      void run(const Event* event)
       {
         #ifdef CHECK_CUTFLOW
           const double w = event-&gt;weight();
@@ -166,7 +168,7 @@ namespace Gambit {
         vector&lt;const Jet*&gt; baselineJets;
 
         // Get baseline electrons and apply efficiency
-        for (const Particle* electron : event-&gt;electrons()) 
+        for (const Particle* electron : event-&gt;electrons())
         {
           if (electron-&gt;pT() &gt; 10. &amp;&amp; electron-&gt;abseta() &lt; 2.47)
           {
@@ -176,26 +178,26 @@ namespace Gambit {
             }
           }
         }
-        ATLAS::applyElectronEff(baselineElectrons);
-        ATLAS::applyElectronIDEfficiency2019(baselineElectrons, &quot;Loose&quot;);
-        /// @todo Use applyElectronIsolationEfficiency2019 or something similar?
+        applyEfficiency(baselineElectrons, ATLAS::eff2DEl.at(&quot;Generic&quot;));
+        applyEfficiency(baselineElectrons, ATLAS::eff1DEl.at(&quot;PERF_2017_01_ID_Loose&quot;));
+        /// @todo Use ElectronIsolationEfficiency2019 or something similar?
 
         // Get baseline muons and apply efficiency
-        for (const Particle* muon : event-&gt;muons()) 
+        for (const Particle* muon : event-&gt;muons())
         {
           if (muon-&gt;pT() &gt; 10. &amp;&amp; muon-&gt;abseta() &lt; 2.5)
           {
             baselineMuons.push_back(muon);
           }
         }
-        ATLAS::applyMuonEff(baselineMuons);
+        applyEfficiency(baselineMuons, ATLAS::eff2DMu.at(&quot;Generic&quot;));
 
 
         // Get baseline jets
         /// @todo Drop b-tag if |eta| &gt; 2.5?
-        for (const Jet* jet : event-&gt;jets(&quot;antikt_R04&quot;)) 
+        for (const Jet* jet : event-&gt;jets(&quot;antikt_R04&quot;))
         {
-          if (jet-&gt;pT() &gt; 20. &amp;&amp; jet-&gt;abseta() &lt; 2.8) 
+          if (jet-&gt;pT() &gt; 20. &amp;&amp; jet-&gt;abseta() &lt; 2.8)
           {
             baselineJets.push_back(jet);
           }
@@ -218,11 +220,11 @@ namespace Gambit {
 
 
         // DEBUG: Get number of true baseline b-jets
-        int nBaseBjetsTrue = 0;
-        for (const Jet* j : baselineJets)
-        {
-          if (j-&gt;btag()) { nBaseBjetsTrue++; }
-        }
+        // int nBaseBjetsTrue = 0;
+        // for (const Jet* j : baselineJets)
+        // {
+        //   if (j-&gt;btag()) { nBaseBjetsTrue++; }
+        // }
 
 
         // Get map&lt;Jet*,bool&gt; with generated btags for this analysis.
@@ -230,15 +232,15 @@ namespace Gambit {
         // - for correctly tagging a b-jet: 70%
         // - for misstagging a c-jet: 9%
         // - for misstagging a gluon or light-quark jet: 0.3%
-        // Other inputs for tagging: 
+        // Other inputs for tagging:
         // - pTmin = 0 GeV (baselineJets anyways only includes jets with pT &gt; 20 GeV)
         // - absEtaMax = 2.5
         std::map&lt;const Jet*,bool&gt; analysisBtags = generateBTagsMap(baselineJets, 0.7, 0.09, 0.003, 0., 2.5);
 
 
-        // 
+        //
         // Overlap removal
-        // 
+        //
         const bool use_rapidity = true;
 
         // 1) Remove jets within DeltaR = 0.2 of electron
@@ -255,7 +257,7 @@ namespace Gambit {
         // This is a guess, based on 1706.03731
         removeOverlapIfBjet(baselineMuons, baselineJets, 0.4, use_rapidity, DBL_MAX);
         // Corresponding line from ATLAS code snippet:
-        //   jets = overlapRemoval(jets, baselineMuons, 0.4, LessThan3Tracks); 
+        //   jets = overlapRemoval(jets, baselineMuons, 0.4, LessThan3Tracks);
 
         // Construct a lambda function to calculate the DeltaR limit as function of lepton pT
         auto deltaRLimitFunc = [](double pT_lepton) { return std::min(0.4, 0.1 + 9.6 / pT_lepton); };
@@ -264,18 +266,18 @@ namespace Gambit {
         removeOverlap(baselineElectrons, baselineJets, deltaRLimitFunc, use_rapidity, DBL_MAX);
         // Corresponding lines from ATLAS code snippet:
         //   auto radiusCalcEl = [] (const AnalysisObject&amp; electron, const AnalysisObject&amp; ) { return 0.1 + 9.6/electron.Pt(); };
-        //   baselineElectrons = overlapRemoval(baselineElectrons, jets, radiusCalcEl); 
+        //   baselineElectrons = overlapRemoval(baselineElectrons, jets, radiusCalcEl);
 
         // 4) Remove muons within DeltaR = min(0.4, 0.1 + 9.6 GeV / pT(e)) of a jet
         removeOverlap(baselineMuons, baselineJets, deltaRLimitFunc, use_rapidity, DBL_MAX);
         // Corresponding lines from ATLAS code snippet:
         //   auto radiusCalcMuon = [] (const AnalysisObject&amp; muon, const AnalysisObject&amp; ) { return 0.1 + 9.6/muon.Pt(); };
-        //   baselineMuons = overlapRemoval(baselineMuons, jets, radiusCalcMuon); 
+        //   baselineMuons = overlapRemoval(baselineMuons, jets, radiusCalcMuon);
 
         // 5) Remove electrons within DeltaR = 0.01 of muons
         removeOverlap(baselineElectrons, baselineMuons, 0.01, use_rapidity, DBL_MAX);
         // Corresponding lines from ATLAS code snippet:
-        //   baselineElectrons = overlapRemoval(baselineElectrons, baselineMuons,0.01);  
+        //   baselineElectrons = overlapRemoval(baselineElectrons, baselineMuons,0.01);
 
         // Collect all baseline leptons
         vector&lt;const HEPUtils::Particle*&gt; baselineLeptons = baselineElectrons;
@@ -295,7 +297,7 @@ namespace Gambit {
         {
           if (p-&gt;abseta() &lt; 2.0) { signalElectrons.push_back(p); }
         }
-        ATLAS::applyElectronIDEfficiency2019(signalElectrons, &quot;Medium&quot;);
+        applyEfficiency(signalElectrons, ATLAS::eff1DEl.at(&quot;PERF_2017_01_ID_Medium&quot;));
 
         // Collect all signal leptons
         signalLeptons = signalElectrons;
@@ -315,9 +317,9 @@ namespace Gambit {
         // const size_t nMuons = signalMuons.size();
 
 
-        // 
+        //
         // Preselection
-        // 
+        //
         // Require at least two leptons
         if (nLeptons &lt; 2) return;
 
@@ -330,7 +332,7 @@ namespace Gambit {
           if (lep0-&gt;abspid() == 11 &amp;&amp; lep1-&gt;abspid() == 11 &amp;&amp; lep0-&gt;pT() &lt; 24.) { return; }  // 2e trigger
           if (lep0-&gt;abspid() == 13 &amp;&amp; lep1-&gt;abspid() == 13 &amp;&amp; lep0-&gt;pT() &lt; 21.) { return; }  // 2mu trigger
           if (lep0-&gt;abspid() == 11 &amp;&amp; lep1-&gt;abspid() == 13 &amp;&amp; lep0-&gt;pT() &lt; 17 ) { return; }  // 1e1mu trigger, leading e
-          if (lep0-&gt;abspid() == 13 &amp;&amp; lep1-&gt;abspid() == 11 &amp;&amp; lep0-&gt;pT() &lt; 14 ) { return; }  // 1e1mu trigger, leading mu 
+          if (lep0-&gt;abspid() == 13 &amp;&amp; lep1-&gt;abspid() == 11 &amp;&amp; lep0-&gt;pT() &lt; 14 ) { return; }  // 1e1mu trigger, leading mu
         }
 
         // Require pT &gt; 20 GeV for the first two leptons
@@ -357,15 +359,15 @@ namespace Gambit {
         int nJets40 = countPt(signalJets, 40.);
 
         double meff = scalarSumPt(signalLeptons) + scalarSumPt(signalJets) + met;
-        double met_meff_ratio = met / meff; 
+        double met_meff_ratio = met / meff;
 
 
         // Count number of b-tagged jets in signalJets
         int nBJets20 = 0;
-        int nBJets20true = 0;
+        // int nBJets20true = 0;
         for (const Jet* j : signalJets)
         {
-          if (j-&gt;btag()) { nBJets20true++; }
+          // if (j-&gt;btag()) { nBJets20true++; }
           if (analysisBtags.at(j)) { nBJets20++; }
         }
 
@@ -381,8 +383,8 @@ namespace Gambit {
         }
         if (nPosLep &gt;= 3 || nNegLep &gt;= 3) { is3LSS = true; }
 
-        // The Rpc3LSS1b SR vetos events with an same-sign electron pair 
-        // with invariant mass close to the Z mass 
+        // The Rpc3LSS1b SR vetos events with an same-sign electron pair
+        // with invariant mass close to the Z mass
         bool mee_near_mZ = false;
         if (nElectrons &gt;= 2)
         {
@@ -390,8 +392,8 @@ namespace Gambit {
           for(vector&lt;const HEPUtils::Particle*&gt;&amp; pair : elSSpairs)
           {
             double mee = (pair.at(0)-&gt;mom() + pair.at(1)-&gt;mom()).m();
-            if (mee &gt; 81. &amp;&amp; mee &lt; 101.) 
-            { 
+            if (mee &gt; 81. &amp;&amp; mee &lt; 101.)
+            {
               mee_near_mZ = true;
               break;
             }
@@ -399,9 +401,9 @@ namespace Gambit {
         }
 
 
-        // 
+        //
         // Fill SR counters
-        // 
+        //
 
         // Rpv2L:
         if (nLeptons &gt;= 2 &amp;&amp; nBJets20 &gt;= 0 &amp;&amp; nJets40 &gt;= 6 &amp;&amp; meff &gt; 2600.) _counters.at(&quot;Rpv2L&quot;).add_event(event);
@@ -424,18 +426,11 @@ namespace Gambit {
       }
 
 
-      /// Combine the variables of another copy of this analysis (typically on another thread) into this one.
-      void combine(const Analysis* other)
-      {
-        const Analysis_ATLAS_13TeV_MultiLEP_strong_139invfb* specificOther = dynamic_cast&lt;const Analysis_ATLAS_13TeV_MultiLEP_strong_139invfb*&gt;(other);
-        for (auto&amp; pair : _counters) { pair.second += specificOther-&gt;_counters.at(pair.first); }
-      }
-
 
       /// Register results objects with the results for each SR; obs &amp; bkg numbers from the paper
-      void collect_results() 
+      void collect_results()
       {
-        // Using average, symmetrized background errors 
+        // Using average, symmetrized background errors
         add_result(SignalRegionData(_counters.at(&quot;Rpv2L&quot;),      5., {5.5, 1.8}));
         add_result(SignalRegionData(_counters.at(&quot;Rpc2L0b&quot;),    6., {4.7, 1.4}));
         add_result(SignalRegionData(_counters.at(&quot;Rpc2L1b&quot;),   11., {6.5, 1.55}));
@@ -456,7 +451,7 @@ namespace Gambit {
 
     protected:
 
-      void analysis_specific_reset() 
+      void analysis_specific_reset()
       {
         for (auto&amp; pair : _counters) { pair.second.reset(); }
       }
@@ -468,7 +463,7 @@ namespace Gambit {
 
   }
 }
-</code></pre><hr><p>Updated on 2025-02-12 at 16:10:35 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.d5e27a6ed00168b7a66eb637878a6be7d054db51d0e613bbcfda12ab0569b62177253b4e6453c477574b3a38f50eff49a68f0e19112bd82a68c78a66cd8d05df.js integrity="sha512-1eJ6btABaLembrY3h4pr59BU21HQ5hO7z9oSqwVptiF3JTtOZFPEd1dLOjj1Dv9Jpo8OGREr2Cpox4pmzY0F3w==" crossorigin=anonymous defer></script>
+</code></pre><hr><p>Updated on 2026-11-03 at 14:50:47 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.d5e27a6ed00168b7a66eb637878a6be7d054db51d0e613bbcfda12ab0569b62177253b4e6453c477574b3a38f50eff49a68f0e19112bd82a68c78a66cd8d05df.js integrity="sha512-1eJ6btABaLembrY3h4pr59BU21HQ5hO7z9oSqwVptiF3JTtOZFPEd1dLOjj1Dv9Jpo8OGREr2Cpox4pmzY0F3w==" crossorigin=anonymous defer></script>
 <script src=/js/highlight.min.9003483b4531b86467c8b801b1d5fc5439bb0d6bdb6c6a760a1b54abf37d6bbadf8423dbc81a3359c935c7705bb7d183b46131ba4a9c861b5d48e6a61501461a.js integrity="sha512-kANIO0UxuGRnyLgBsdX8VDm7DWvbbGp2ChtUq/N9a7rfhCPbyBozWck1x3Bbt9GDtGExukqchhtdSOamFQFGGg==" crossorigin=anonymous defer></script>
 <script src=/main.min.9342d29d0e3e250a2c03282306b766e004888dba0fd661a17d7b106655e013bf85733f086ad330e3df0929c713dd81c0ea835966fa92e4a1e38f7ea9680524ed.js integrity="sha512-k0LSnQ4+JQosAygjBrdm4ASIjboP1mGhfXsQZlXgE7+Fcz8IatMw498JKccT3YHA6oNZZvqS5KHjj36paAUk7Q==" crossorigin=anonymous defer></script>
-<script src=https://gambitbsm.org/index.min.03ab9c2e460a36904d0b1544581433f337b9e5e23e6798a396683f418d37e30979da1ab2a8ef201c110075d73ccb12f8cc2605c7d9723f99bef11ed7c8b97844.js integrity="sha512-A6ucLkYKNpBNCxVEWBQz8ze55eI+Z5ijlmg/QY034wl52hqyqO8gHBEAddc8yxL4zCYFx9lyP5m+8R7XyLl4RA==" crossorigin=anonymous defer></script></body></html>
+<script src=https://gambitbsm.org/index.min.3a8ee06d0c346f1fb70040b0fbcbaaacf335cb34023c408954406a05db2089fc2ca349119b9f7d68b9e7044e82b8fdc8bd9661b6ef8b118246c5a2079d7fa8e9.js integrity="sha512-Oo7gbQw0bx+3AECw+8uqrPM1yzQCPECJVEBqBdsgifwso0kRm599aLnnBE6CuP3IvZZhtu+LEYJGxaIHnX+o6Q==" crossorigin=anonymous defer></script></body></html>

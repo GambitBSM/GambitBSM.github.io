@@ -1,0 +1,1481 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="ie=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><link rel=preload as=font href=https://gambitbsm.org/fonts/vendor/jost/jost-v4-latin-regular.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://gambitbsm.org/fonts/vendor/jost/jost-v4-latin-500.woff2 type=font/woff2 crossorigin><link rel=preload as=font href=https://gambitbsm.org/fonts/vendor/jost/jost-v4-latin-700.woff2 type=font/woff2 crossorigin><script>(()=>{var e=localStorage.getItem("theme");e==="dark"&&document.documentElement.setAttribute("data-dark-mode","")})()</script><link rel=stylesheet href=https://gambitbsm.org/main.c1f0838e2cac2d5bb45c4f51eac5017d94b53e71f279f5ef925be54abda180b5ad4c9a5384f3c141e772c408e3f24bd9c50c11e6b79424a45ac99a0d112b5f29.css integrity="sha512-wfCDjiysLVu0XE9R6sUBfZS1PnHyefXvklvlSr2hgLWtTJpThPPBQedyxAjj8kvZxQwR5reUJKRayZoNEStfKQ==" crossorigin=anonymous><noscript><style>img.lazyload{display:none}</style></noscript><meta name=robots content="index, follow"><meta name=googlebot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><meta name=bingbot content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"><title>file analyses/Analysis_ATLAS_13TeV_2LEP0JET_EW_139invfb.cpp - GAMBIT</title><meta name=description content="[No description available]"><link rel=canonical href=https://gambitbsm.org/documentation/code/files/analysis__atlas__13tev__2lep0jet__ew__139invfb_8cpp/><meta property="og:locale" content="en_US"><meta property="og:type" content="article"><meta property="og:title" content="file analyses/Analysis_ATLAS_13TeV_2LEP0JET_EW_139invfb.cpp"><meta property="og:description" content="[No description available]"><meta property="og:url" content="https://gambitbsm.org/documentation/code/files/analysis__atlas__13tev__2lep0jet__ew__139invfb_8cpp/"><meta property="og:site_name" content="GAMBIT"><meta property="og:image" content="https://gambitbsm.org/gambit_logo.png"><meta property="og:image:alt" content="GAMBIT"><meta name=twitter:card content="summary_large_image"><meta name=twitter:site content><meta name=twitter:creator content><meta name=twitter:title content="file analyses/Analysis_ATLAS_13TeV_2LEP0JET_EW_139invfb.cpp"><meta name=twitter:description content="[No description available]"><meta name=twitter:image content="https://gambitbsm.org/gambit_logo.png"><meta name=twitter:image:alt content="file analyses/Analysis_ATLAS_13TeV_2LEP0JET_EW_139invfb.cpp"><script type=application/ld+json>{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://gambitbsm.org/#/schema/organization/1","name":"Doks","url":"https://gambitbsm.org/","sameAs":["https://github.com/GambitBSM"],"logo":{"@type":"ImageObject","@id":"https://gambitbsm.org/#/schema/image/1","url":"https://gambitbsm.org/logo-doks.png","width":450,"height":416,"caption":"Doks"},"image":{"@id":"https://gambitbsm.org/#/schema/image/1"}},{"@type":"WebSite","@id":"https://gambitbsm.org/#/schema/website/1","url":"https://gambitbsm.org/","name":"GAMBIT","description":"Documentation for GAMBIT, the Global And Modular BSM Inference Tool","publisher":{"@id":"https://gambitbsm.org/#/schema/organization/1"}},{"@type":"WebPage","@id":"https://gambitbsm.org/documentation/code/files/analysis__atlas__13tev__2lep0jet__ew__139invfb_8cpp/","url":"https://gambitbsm.org/documentation/code/files/analysis__atlas__13tev__2lep0jet__ew__139invfb_8cpp/","name":"file analyses\/Analysis_ATLAS_13TeV_2LEP0JET_EW_139invfb.cpp","description":"[No description available]","isPartOf":{"@id":"https://gambitbsm.org/#/schema/website/1"},"about":{"@id":"https://gambitbsm.org/#/schema/organization/1"},"datePublished":"0001-01-01T00:00:00CET","dateModified":"0001-01-01T00:00:00CET","breadcrumb":{"@id":"https://gambitbsm.org/documentation/code/files/analysis__atlas__13tev__2lep0jet__ew__139invfb_8cpp/#/schema/breadcrumb/1"},"primaryImageOfPage":{"@id":"https://gambitbsm.org/documentation/code/files/analysis__atlas__13tev__2lep0jet__ew__139invfb_8cpp/#/schema/image/2"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://gambitbsm.org/documentation/code/files/analysis__atlas__13tev__2lep0jet__ew__139invfb_8cpp/"]}]},{"@type":"BreadcrumbList","@id":"https://gambitbsm.org/documentation/code/files/analysis__atlas__13tev__2lep0jet__ew__139invfb_8cpp/#/schema/breadcrumb/1","name":"Breadcrumbs","itemListElement":[{"@type":"ListItem","position":1,"item":{"@type":"WebPage","@id":"https://gambitbsm.org/","url":"https://gambitbsm.org/","name":"Home"}},{"@type":"ListItem","position":2,"item":{"@type":"WebPage","@id":"https://gambitbsm.org/documentation/","url":"https://gambitbsm.org/documentation/","name":"Documentation"}},{"@type":"ListItem","position":3,"item":{"@type":"WebPage","@id":"https://gambitbsm.org/documentation/code/","url":"https://gambitbsm.org/documentation/code/","name":"Code"}},{"@type":"ListItem","position":4,"item":{"@type":"WebPage","@id":"https://gambitbsm.org/documentation/code/files/","url":"https://gambitbsm.org/documentation/code/files/","name":"Files"}},{"@type":"ListItem","position":5,"item":{"@id":"https://gambitbsm.org/documentation/code/files/analysis__atlas__13tev__2lep0jet__ew__139invfb_8cpp/"}}]},{"@context":"https://schema.org","@graph":[{"@type":"ImageObject","@id":"https://gambitbsm.org/documentation/code/files/analysis__atlas__13tev__2lep0jet__ew__139invfb_8cpp/#/schema/image/2","url":"https://gambitbsm.org/gambit_logo.png","contentUrl":"https://gambitbsm.org/gambit_logo.png","caption":"file analyses\/Analysis_ATLAS_13TeV_2LEP0JET_EW_139invfb.cpp"}]}]}</script><meta name=theme-color content="#fff"><link rel=icon href=https://gambitbsm.org/favicon.ico sizes=any><link rel=icon type=image/svg+xml href=https://gambitbsm.org/favicon.svg><link rel=apple-touch-icon sizes=180x180 href=https://gambitbsm.org/apple-touch-icon.png><link rel=icon type=image/png sizes=32x32 href=https://gambitbsm.org/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=https://gambitbsm.org/favicon-16x16.png><link rel=manifest crossorigin=use-credentials href=https://gambitbsm.org/site.webmanifest></head><body class="documentation single light"><div class=sticky-top><div class=header-bar></div><header class="navbar navbar-expand-md navbar-light doks-navbar"><nav class="container-xxl flex-wrap flex-md-nowrap" aria-label="Main navigation"><a class="navbar-brand p-0 me-auto" href=https://gambitbsm.org/ aria-label=GAMBIT><img class=logo-light src=https://gambitbsm.org/gambit_logo.png width=50px>
+<img class="logo-dark d-none" src=https://gambitbsm.org/gambit_logo.png width=50px>
+GAMBIT</a>
+<button class="btn btn-menu order-2 d-block d-lg-none" type=button data-bs-toggle=offcanvas data-bs-target=#offcanvasDoks aria-controls=offcanvasDoks aria-label="Open main menu"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button><div class="offcanvas offcanvas-end border-0 py-lg-1" tabindex=-1 id=offcanvasDoks data-bs-backdrop=true aria-labelledby=offcanvasDoksLabel><div class="header-bar d-lg-none"></div><div class="offcanvas-header d-lg-none"><h2 class="h5 offcanvas-title ps-2" id=offcanvasDoksLabel><a class=text-dark href=/>GAMBIT</a></h2><button type=button class="btn-close text-reset me-2" data-bs-dismiss=offcanvas aria-label="Close main menu"></button></div><div class="offcanvas-body p-4 p-lg-0"><ul class="nav flex-column flex-lg-row align-items-lg-center mt-2 mt-lg-0 ms-lg-2 me-lg-auto"><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Releases
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit/tree/release_2.7>GAMBIT 2-7 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.6>GAMBIT 2-6 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.5>GAMBIT 2-5 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.4>GAMBIT 2-4 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.3>GAMBIT 2-3 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.2>GAMBIT 2-2 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_2.1>GAMBIT 2-1 ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit_light_1.0>GAMBIT Light ⧉</a></li><li><a class=dropdown-item href=https://github.com/GambitBSM/gambit/tags>All releases ⧉</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Documentation
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=/documentation/installation/introduction/>Installation</a></li><li><a class=dropdown-item href=/documentation/physics/analyses>Physics</a></li><li><a class=dropdown-item href=/documentation/tutorials/the_gambit_interface>Tutorials</a></li><li><a class=dropdown-item href=/documentation/help/common_problems_and_questions/>Help</a></li><li><a class=dropdown-item href=/documentation/code/index_classes>Code Reference</a></li></ul></li><li class="nav-item dropdown"><a class="nav-link dropdown-toggle ps-0 py-1" href=# id=navbarDropdownMenuLink role=button data-bs-toggle=dropdown aria-expanded=false>Community
+<span class=dropdown-caret><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down"><polyline points="6 9 12 15 18 9"/></svg></span></a><ul class="dropdown-menu dropdown-menu-main shadow rounded border-0" aria-labelledby=navbarDropdownMenuLink><li><a class=dropdown-item href=https://github.com/GambitBSM/wiki>Wiki</a></li><li><a class=dropdown-item href=/community/publications/>Publications</a></li><li><a class=dropdown-item href=/community/talks/>Talks</a></li><li><a class=dropdown-item href=/community/members/>Members</a></li><li><a class=dropdown-item href=/community/code_of_conduct/>Code of Conduct</a></li><li><a class=dropdown-item href=/community/contact/>Contact</a></li></ul></li></ul><hr class="text-black-50 my-4 d-lg-none"><form class="doks-search position-relative flex-grow-1 ms-lg-auto me-lg-2"><input id=search class="form-control is-search" type=search placeholder="Search site..." aria-label="Search site..." autocomplete=off><div id=suggestions class="shadow bg-white rounded d-none"></div></form><hr class="text-black-50 my-4 d-lg-none"><ul class="nav flex-column flex-lg-row"><li class=nav-item><a class="nav-link social-link" href=https://github.com/GambitBSM><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-github"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37.0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44.0 0020 4.77 5.07 5.07.0 0019.91 1S18.73.65 16 2.48a13.38 13.38.0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07.0 005 4.77 5.44 5.44.0 003.5 8.55c0 5.42 3.3 6.61 6.44 7A3.37 3.37.0 009 18.13V22"/></svg><small class="ms-2 d-lg-none">GitHub</small></a></li></ul><hr class="text-black-50 my-4 d-lg-none"><button id=mode class="btn btn-link" type=button aria-label="Toggle user interface mode">
+<span class=toggle-dark><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg></span><span class=toggle-light><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></span></button></div></div></nav></header></div><div class="wrap container-xxl" role=document><div class=content><div class="row flex-xl-nowrap"><div class="col-lg-5 col-xl-4 docs-sidebar"><nav class=docs-links aria-label="Main navigation"><ul class="list-unstyled collapsible-sidebar"><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-installation aria-expanded=false>
+Installation</button><div class=collapse id=section-installation><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/installation/introduction/>Getting Started</a></li><li><a class="docs-link rounded" href=/documentation/installation/docker_usage/>Docker Usage</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_linux/>Installation for Linux</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_windows/>Installation for Windows</a></li><li><a class="docs-link rounded" href=/documentation/installation/installation_for_macos/>Installation for macOS</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-tutorials aria-expanded=false>
+Tutorials</button><div class=collapse id=section-tutorials><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/tutorials/the_gambit_interface/>1 - The GAMBIT Interface</a></li><li><a class="docs-link rounded" href=/documentation/tutorials/in_person_tutorials/>In person tutorials</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-physics aria-expanded=false>
+Physics</button><div class=collapse id=section-physics><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/physics/analyses/>ColliderBit analysis</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-help aria-expanded=false>
+Help</button><div class=collapse id=section-help><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/help/common_problems_and_questions/>Common Problems and Questions</a></li><li><a class="docs-link rounded" href=/documentation/help/compiler_matrix/>Compiler Matrix</a></li><li><a class="docs-link rounded" href=/documentation/help/known_issues/>Known Issues</a></li><li><a class="docs-link rounded" href=/documentation/help/configuration_examples/>Configuration Examples</a></li><li><a class="docs-link rounded" href=/documentation/help/support/>Support</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-code aria-expanded=false>
+Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/code/index_classes/>Classes</a></li><li><a class="docs-link rounded" href=/documentation/code/index_files/>Files</a></li><li><a class="docs-link rounded" href=/documentation/code/index_pages/>Pages</a></li><li><a class="docs-link rounded" href=/documentation/code/index_namespaces/>Namespaces</a></li></ul></div></li></ul></nav></div><nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation"><div class=d-xl-none><button class="btn btn-outline-primary btn-sm doks-toc-toggle collapsed" type=button data-bs-toggle=collapse data-bs-target=#onThisPage aria-controls=doks-docs-nav aria-expanded=false aria-label="Toggle On this page navigation">
+<span>On this page</span>
+<span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg></span></button><div class=collapse id=onThisPage><div class="card card-body mt-3 py-1"><div class=page-links><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#classes>Classes</a></li><li><a href=#source-code>Source code</a></li></ul></nav></div></div></div></div><div class="page-links d-none d-xl-block"><h3>On this page</h3><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#classes>Classes</a></li><li><a href=#source-code>Source code</a></li></ul></nav></div></nav><main class="docs-content col-lg-11 col-xl-9 mx-xl-auto"><nav aria-label=breadcrumb><ol class=breadcrumb><li class=breadcrumb-item><a href=/>Home</a></li><li class=breadcrumb-item><a href=/documentation/>Documentation</a></li><li class=breadcrumb-item><a href=/documentation/code/>Code Reference</a></li><li class="breadcrumb-item active" aria-current=page>file analyses/Analysis_ATLAS_13TeV_2LEP0JET_EW_139invfb.cpp</li></ol></nav><p class=lead></p><h1 id=file-analyses-analysis-atlas-13tev-2lep0jet-ew-139invfb-cpp>file analyses/Analysis_ATLAS_13TeV_2LEP0JET_EW_139invfb.cpp <a href=#file-analyses-analysis-atlas-13tev-2lep0jet-ew-139invfb-cpp class=anchor aria-hidden=true>#</a></h1><p>[No description available]</p><h2 id=namespaces>Namespaces <a href=#namespaces class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th>Name</th></tr></thead><tbody><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit/>Gambit</a></strong><br>TODO: see if we can use this one:</td></tr><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit_1_1colliderbit/>Gambit::ColliderBit</a></strong></td></tr></tbody></table><h2 id=classes>Classes <a href=#classes class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th></th><th>Name</th></tr></thead><tbody><tr><td>struct</td><td><strong><a href=/documentation/code/classes/structgambit_1_1colliderbit_1_1ellipseparams/>Gambit::ColliderBit::EllipseParams</a></strong></td></tr><tr><td>class</td><td><strong><a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1asymm__mt2__lester__bisect/>Gambit::ColliderBit::asymm_mt2_lester_bisect</a></strong></td></tr><tr><td>class</td><td><strong><a href=/documentation/code/classes/classgambit_1_1colliderbit_1_1analysis__atlas__13tev__2lep0jet__ew__139invfb/>Gambit::ColliderBit::Analysis_ATLAS_13TeV_2LEP0JET_EW_139invfb</a></strong></td></tr><tr><td>struct</td><td><strong><a href=/documentation/code/classes/structgambit_1_1colliderbit_1_1analysis__atlas__13tev__2lep0jet__ew__139invfb_1_1pt__sort/>Gambit::ColliderBit::Analysis_ATLAS_13TeV_2LEP0JET_EW_139invfb::pt_sort</a></strong></td></tr></tbody></table><h2 id=source-code>Source code <a href=#source-code class=anchor aria-hidden=true>#</a></h2><pre><code>#include &quot;gambit/cmake/cmake_variables.hpp&quot;
+#ifndef EXCLUDE_ROOT
+///
+///  \author Roberto Ruiz
+///  \date 2023 October
+///
+///  *********************************************
+
+#include &lt;vector&gt;
+#include &lt;cmath&gt;
+#include &lt;memory&gt;
+#include &lt;iomanip&gt;
+
+#include &quot;gambit/Utils/threadsafe_rng.hpp&quot;
+#include &quot;gambit/ColliderBit/analyses/Analysis.hpp&quot;
+#include &quot;gambit/ColliderBit/ATLASEfficiencies.hpp&quot;
+#include &quot;gambit/ColliderBit/mt2_bisect.h&quot;
+#include &quot;gambit/ColliderBit/MVA.h&quot;
+#include &quot;TLorentzVector.h&quot;
+#include &quot;TVector3.h&quot;
+#include &quot;HEPUtils/FastJet.h&quot;
+#include &quot;TRandom3.h&quot;
+
+// #define CHECK_CUTFLOW
+
+using namespace std;
+
+// Based on EW regions of https://atlas.web.cern.ch/Atlas/GROUPS/PHYSICS/PAPERS/NA-SUSY-2019-02-PAPER.pdf
+// Luminosity: 139 fb^-1
+// Note that this uses the ATLAS object-based met significance
+
+namespace Gambit
+{
+  namespace ColliderBit
+  {
+
+    bool sortBypT_j(const Jet* jet1, const Jet* jet2) { return (jet1-&gt;pT() &gt; jet2-&gt;pT()); }
+    bool sortBypT_l(const Particle* lep1, const Particle* lep2) { return (lep1-&gt;pT() &gt; lep2-&gt;pT()); }
+
+    static void rotateXY(TMatrix &amp;mat, TMatrix &amp;mat_new, double phi)
+    {
+      double c = cos(phi);
+      double s = sin(phi);
+      double cc = c * c;
+      double ss = s * s;
+      double cs = c * s;
+
+      mat_new(0, 0) = mat(0, 0) * cc + mat(1, 1) * ss - cs * (mat(1, 0) + mat(0, 1));
+      mat_new(0, 1) = mat(0, 1) * cc - mat(1, 0) * ss + cs * (mat(0, 0) - mat(1, 1));
+      mat_new(1, 0) = mat(1, 0) * cc - mat(0, 1) * ss + cs * (mat(0, 0) - mat(1, 1));
+      mat_new(1, 1) = mat(0, 0) * ss + mat(1, 1) * cc + cs * (mat(1, 0) + mat(0, 1));
+    }
+
+    struct EllipseParams
+    {
+      // Constructor for non-degenerate ellipses:
+      /*
+       * Ellipse is represented algebraically by:
+       * c_xx x^2 + 2 c_xy x y + c_yy y^2 + 2 c_x x + 2 c_y y + c = 0.
+      */
+      EllipseParams(const double c_xx2, const double c_yy2, const double c_xy2,
+                    const double c_x2, const double c_y2, const double c2)
+                  : c_xx(c_xx2), c_yy(c_yy2), c_xy(c_xy2), c_x(c_x2), c_y(c_y2), c(c2)
+      {
+        // Etayo et al REQUIRE that c_xx and c_yy are non-negative, so:
+        if (c_xx &lt; 0 || c_yy &lt; 0)
+        {
+          throw &quot;precondition violation&quot;;
+        }
+        setDet();
+      }
+
+      EllipseParams() {}
+
+      void setDet()
+      {
+        det = (2.0 * c_x * c_xy * c_y + c * c_xx * c_yy - c_yy * c_x * c_x -
+               c * c_xy * c_xy - c_xx * c_y * c_y);
+      }
+
+      // Consstructor for degenerate ellipse (i.e. a &quot;dot&quot; at (x0,y0) ).
+      EllipseParams(const double x0, const double y0) : c_xx(1), c_yy(1), c_xy(0), c_x(-x0), c_y(-y0), c(x0 * x0 + y0 * y0), det(0) {}
+
+      double lesterFactor(const EllipseParams &amp;e2) const
+      {
+        const EllipseParams &amp;e1 = *this;
+        const double ans =
+        e1.c_xx * e1.c_yy * e2.c + 2.0 * e1.c_xy * e1.c_y * e2.c_x -
+        2.0 * e1.c_x * e1.c_yy * e2.c_x + e1.c * e1.c_yy * e2.c_xx -
+        2.0 * e1.c * e1.c_xy * e2.c_xy + 2.0 * e1.c_x * e1.c_y * e2.c_xy +
+        2.0 * e1.c_x * e1.c_xy * e2.c_y - 2.0 * e1.c_xx * e1.c_y * e2.c_y +
+        e1.c * e1.c_xx * e2.c_yy - e2.c_yy * (e1.c_x * e1.c_x) -
+        e2.c * (e1.c_xy * e1.c_xy) - e2.c_xx * (e1.c_y * e1.c_y);
+        return ans;
+      }
+
+      bool operator==(const EllipseParams &amp;other) const
+      {
+        return c_xx == other.c_xx &amp;&amp; c_yy == other.c_yy &amp;&amp; c_xy == other.c_xy &amp;&amp;
+               c_x == other.c_x &amp;&amp; c_y == other.c_y &amp;&amp; c == other.c;
+      }
+
+      public:
+        // Data
+        double c_xx;
+        double c_yy;
+        double c_xy; // note factor of 2 above
+        double c_x;  // note factor of 2 above
+        double c_y;  // note factor of 2 above
+        double c;
+        double det; // The determinant of the 3x3 conic matrix
+    };
+
+    // This is the interface: users should call this function:
+    bool ellipsesAreDisjoint(const EllipseParams &amp;e1, const EllipseParams &amp;e2);
+
+    // This is an implementation thing: users should not call it:
+    bool __private_ellipsesAreDisjoint(const double coeffLamPow3, const double coeffLamPow2, const double coeffLamPow1, const double coeffLamPow0);
+
+    bool ellipsesAreDisjoint(const EllipseParams &amp;e1, const EllipseParams &amp;e2)
+    {
+      /* We want to construct the polynomial &quot;Det(lamdba A + B)&quot; where A and B are
+         the 3x3 matrices associated with e1 and e2, and we want to get that polynomial
+         in the form lambda^3 + a lambda^2 + b lambda + c.
+
+
+         Note that by default we will not have unity as the coefficient of the lambda^3
+         term, however the redundancy in the parametrisation of A and B allows us to
+         scale the whole ply until the first term does have a unit coefficient.
+      */
+
+      if (e1 == e2)
+      {
+        return false; // Probably won't catch many cases, but may as well have it here.
+      }
+
+      // first get unscaled terms:
+      const double coeffLamPow3 = e1.det; // Note that this is the determinant of the symmetric matrix associated with e1.
+      const double coeffLamPow2 = e1.lesterFactor(e2);
+      const double coeffLamPow1 = e2.lesterFactor(e1);
+      const double coeffLamPow0 = e2.det; // Note that this is the determinant of the symmetric matrix associated with e2.
+
+      // Since question is &quot;symmetric&quot; and since we need to dovide by coeffLamPow3
+      // ... do this the way round that involves dividing by the largest number:
+
+      if (fabs(coeffLamPow3) &gt;= fabs(coeffLamPow0))
+      {
+        return __private_ellipsesAreDisjoint(coeffLamPow3, coeffLamPow2, coeffLamPow1, coeffLamPow0); // normal order
+      }
+      else
+      {
+        return __private_ellipsesAreDisjoint(coeffLamPow0, coeffLamPow1,coeffLamPow2,coeffLamPow3); // reversed order
+      }
+    }
+
+    bool __private_ellipsesAreDisjoint(const double coeffLamPow3,
+                                       const double coeffLamPow2,
+                                       const double coeffLamPow1,
+                                       const double coeffLamPow0)
+    {
+
+      // precondition of being called:
+      // assert(fabs(coeffLamPow3)&gt;=fabs(coeffLamPow0));
+
+      if (coeffLamPow3 == 0)
+      {
+        // The ellipses were singular in some way.
+        // Cannot determine whether they are overlapping or not.
+        throw 1;
+      }
+
+      // now scale terms to monomial form:
+      const double a = coeffLamPow2 / coeffLamPow3;
+      const double b = coeffLamPow1 / coeffLamPow3;
+      const double c = coeffLamPow0 / coeffLamPow3;
+
+      // Use the main result of the above paper:
+      const double thing1 = -3.0 * b + a * a;
+      if (thing1 &lt;= 0) return false;
+      const double thing2 = -27.0 * c * c + 18.0 * c * a * b + a * a * b * b -
+                        4.0 * a * a * a * c - 4.0 * b * b * b;
+      if (thing2 &lt;= 0) return false;
+
+      // ans true means ellipses are disjoint:
+      const bool ans =
+        ((a &gt;= 0 /*&amp;&amp; thing1 &gt; 0*/ &amp;&amp;
+        3.0 * a * c + b * a * a - 4.0 * b * b &lt; 0 /*&amp;&amp; thing2 &gt; 0*/) ||
+        (a &lt; 0 /*&amp;&amp; thing1 &gt; 0*/ /*&amp;&amp; thing2 &gt; 0*/));
+      return ans;
+    }
+
+    class asymm_mt2_lester_bisect
+    {
+      public:
+        static const int MT2_ERROR = -1;
+
+        // returns asymmetric mT2 (which is &gt;=0), or returns a negative
+        // number (such as MT2_ERROR) in the case of an error.
+        // desiredPrecisionOnMT2 must be non-negative.  If set to zero (default) MT2 will be
+        // calculated to the highest precision available on the machine (or
+        // as close to that as the algorithm permits).  If set to a
+        // positive value, MT2 (note that is MT2, not its square) will be
+        // calculated to within +- desiredPrecisionOnMT2. Note that by
+        // requesting precision of +- 0.01 GeV on an MT2 value of 100 GeV
+        // can result in speedups of a factor of ...
+        // If useDeciSectionsInitially is true, interval is cut at the 10% point until first
+        // acceptance, which gives factor 3 increase in speed calculating
+        // kinematic min, but 3% slowdown for events in the bulk.  Is on
+        // (true) by default, but can be turned off by setting to false.
+        static double get_mT2( const double mVis1, const double pxVis1, const double pyVis1,
+                               const double mVis2, const double pxVis2, const double pyVis2,
+                               const double pxMiss, const double pyMiss, const double mInvis1,
+                               const double mInvis2,
+                               const double desiredPrecisionOnMT2 = 0,
+                               const bool useDeciSectionsInitially = true)
+        {
+
+          const double mT2_Sq = get_mT2_Sq( mVis1, pxVis1, pyVis1, mVis2, pxVis2, pyVis2, pxMiss, pyMiss, mInvis1,
+                                            mInvis2, desiredPrecisionOnMT2, useDeciSectionsInitially);
+          if (mT2_Sq == MT2_ERROR)
+          {
+            return MT2_ERROR;
+          }
+          return sqrt(mT2_Sq);
+        }
+
+        static void disableCopyrightMessage(const bool printIfFirst = false)
+        {
+          static bool first = true;
+          if (first &amp;&amp; printIfFirst)
+          {
+            std::cout
+            &lt;&lt; &quot;\n\n&quot;
+            &lt;&lt; &quot;#=========================================================\n&quot;
+            &lt;&lt; &quot;# To disable this message, place a call to \n&quot;
+            &lt;&lt; &quot;# \n&quot;
+            &lt;&lt; &quot;#     asymm_mt2_lester_bisect::disableCopyrightMessage();\n&quot;
+            &lt;&lt; &quot;# \n&quot;
+            &lt;&lt; &quot;# somewhere before you begin to calculate your MT2 values.\n&quot;
+            &lt;&lt; &quot;#=========================================================\n&quot;
+            &lt;&lt; &quot;# You are calculating symmetric or asymmetric MT2 using\n&quot;
+            &lt;&lt; &quot;# the implementation defined in:\n&quot;
+            &lt;&lt; &quot;# \n&quot;
+            &lt;&lt; &quot;#     http://arxiv.org/abs/1411.4312\n&quot;
+            &lt;&lt; &quot;# \n&quot;
+            &lt;&lt; &quot;# Please cite the paper above if you use the MT2 values\n&quot;
+            &lt;&lt; &quot;# for a scholarly purpose. For the variable MT2 itself,\n&quot;
+            &lt;&lt; &quot;# please also cite:\n&quot;
+            &lt;&lt; &quot;# \n&quot;
+            &lt;&lt; &quot;#     http://arxiv.org/abs/hep-ph/9906349\n&quot;
+            &lt;&lt; &quot;#=========================================================\n&quot;
+            &lt;&lt; &quot;\n\n&quot;
+            &lt;&lt; std::flush;
+          }
+          first = false;
+        }
+
+        // returns square of asymmetric mT2 (which is &gt;=0), or returns a
+        // negative number (such as MT2_ERROR) in the case of an error.
+        // desiredPrecisionOnMT2 must be non-negative.  If set to zero (default) MT2 will be
+        // calculated to the highest precision available on the machine (or
+        // as close to that as the algorithm permits).  If set to a
+        // positive value, MT2 (note that is MT2, not its square) will be
+        // calculated to within +- desiredPrecisionOnMT2. Note that by
+        // requesting precision of +- 0.01 GeV on an MT2 value of 100 GeV
+        // can resJult in speedups of a factor of ..
+        // If useDeciSectionsInitially is true, interval is cut at the 10% point until first
+        // acceptance, which gives factor 3 increase in speed calculating
+        // kinematic min, but 3% slowdown for events in the bulk.  Is on
+        // (true) by default, but can be turned off by setting to false.
+        static double get_mT2_Sq( const double mVis1, const double pxVis1, const double pyVis1,
+                                  const double mVis2, const double pxVis2, const double pyVis2,
+                                  const double pxMiss, const double pyMiss, const double mInvis1,
+                                  const double mInvis2,
+                                  const double desiredPrecisionOnMT2 = 0,
+                                  const bool useDeciSectionsInitially = true)
+        {
+          // By supplying an argument to disable, we actually ask for the
+          // message to be printed, if printing is not already disabled.
+          // This counterintuitive function naming is to avoid the need to
+          // introduce static variable initialisations ....
+          disableCopyrightMessage(true);
+
+          const double m1Min = mVis1 + mInvis1; // when parent has this mass, ellipse
+                                                // 1 has smallest physical size
+          const double m2Min = mVis2 + mInvis2; // when parent has this mass, ellipse
+                                                // 2 has smallest physical size
+
+          if (m1Min &gt; m2Min)
+          {
+            // swap 1 and 2
+            return asymm_mt2_lester_bisect::get_mT2_Sq(mVis2, pxVis2, pyVis2, mVis1, pxVis1, pyVis1,
+                                                       pxMiss, pyMiss, mInvis2, mInvis1, desiredPrecisionOnMT2);
+          }
+
+          // By now, we can be sure that m1Min &lt;= m2Min
+          assert(m1Min &lt;= m2Min);
+
+          // when parent has this mass, both ellipses are physical, and at
+          // least one has zero size.  Note that the name &quot;min&quot; expresses
+          // that it is the minimum potential parent mass we should
+          // consider, not that it is the min of m1Min and m2Min.  It is in
+          // fact the MAX of them!
+          const double mMin = m2Min;
+
+          // TODO: What about rounding?  What about idiots who give us mVis values
+          // that have been computed from E^2-p^2 terms that are perilously close to
+          // zero, or perilously degenerate?
+
+          const double msSq = mVis1 * mVis1;
+          const double sx = pxVis1;
+          const double sy = pyVis1;
+          const double mpSq = mInvis1 * mInvis1;
+
+          const double mtSq = mVis2 * mVis2;
+          const double tx = pxVis2;
+          const double ty = pyVis2;
+          const double mqSq = mInvis2 * mInvis2;
+
+          const double sSq = sx * sx + sy * sy;
+          const double tSq = tx * tx + ty * ty;
+          const double pMissSq = pxMiss * pxMiss + pyMiss * pyMiss;
+          const double massSqSum = msSq + mtSq + mpSq + mqSq;
+          const double scaleSq = (massSqSum + sSq + tSq + pMissSq) / 8.0;
+
+          // #define LESTER_DBG 1
+
+          // Check for an easy MT2 zero, not because we think it will speed up many
+          // cases, but because it will allow us to, ever after, assume that
+          // scaleSq&gt;0.
+          if (scaleSq == 0)
+          {
+           return 0;
+          }
+          const double scale = sqrt(scaleSq);
+
+          // disjoint at mMin.  So find an mUpper at which they are not disjoint:
+          double mLower = mMin;
+          // since scaleSq is guaranteed to be &gt;0 at this stage, the
+          // adition of scaleSq quarantees that mUpperSq is also &gt;0,
+          // so it can be exponentially grown (later) by doubling.
+          double mUpper = mMin + scale;
+          unsigned int attempts = 0;
+          const unsigned int maxAttempts = 10000;
+          while (true)
+          {
+            ++attempts;
+
+            const double mUpperSq = mUpper * mUpper;
+            // see side1Coeffs in mathematica notebook
+            const EllipseParams &amp;side1 = helper(mUpperSq, msSq, -sx, -sy, mpSq, 0, 0);
+            // see side2Coeffs in mathematica notebook
+            const EllipseParams &amp;side2 = helper(mUpperSq, mtSq, +tx, +ty, mqSq, pxMiss, pyMiss);
+
+            bool disjoint;
+            try
+            {
+              disjoint = ellipsesAreDisjoint(side1, side2);
+            }
+            catch (...)
+            {
+              return MT2_ERROR;
+            }
+
+            if (!disjoint)
+            {
+              break;
+            }
+
+            if (attempts &gt;= maxAttempts)
+            {
+              std::cerr &lt;&lt; &quot;MT2 algorithm failed to find upper bound to MT2&quot; &lt;&lt; std::endl;
+              return MT2_ERROR;
+            }
+
+            mUpper *= 2; // grow mUpper exponentially
+          }
+
+          // const double tol = relativeTolerance * sqrt(scaleSq);
+
+          // Now begin the bisection:
+          bool goLow = useDeciSectionsInitially;
+          while (desiredPrecisionOnMT2 &lt;= 0 || mUpper - mLower &gt; desiredPrecisionOnMT2)
+          {
+            // worry about this not being between mUpperSq and mLowerSq! TODO
+            const double trialM =
+                    (goLow ? (mLower * 15 + mUpper) / 16 // bias low until evidence this is not a special case
+                  : (mUpper + mLower) / 2.0); // bisect
+
+            if (trialM &lt;= mLower || trialM &gt;= mUpper)
+            {
+              // We reached a numerical precision limit:  the interval can no longer
+              // be bisected!
+              return trialM * trialM;
+            }
+            const double trialMSq = trialM * trialM;
+            // see side1Coeffs in mathematica notebook
+            const EllipseParams &amp;side1 = helper(trialMSq, msSq, -sx, -sy, mpSq, 0, 0);
+            // see side2Coeffs in mathematica notebook
+            const EllipseParams &amp;side2 = helper(trialMSq, mtSq, +tx, +ty, mqSq, pxMiss, pyMiss);
+
+            try
+            {
+              const bool disjoint = ellipsesAreDisjoint(side1, side2);
+              if (disjoint)
+              {
+                mLower = trialM;
+                goLow = false;
+              }
+              else
+              {
+                mUpper = trialM;
+              }
+            }
+            catch (...)
+            {
+              // The test for ellipses being disjoint failed ... this means the
+              // ellipses became degenerate, which can only happen right at the bottom
+              // of the MT2 search range (subject to numerical precision).  So:
+              return mLower * mLower;
+            }
+          }
+
+          const double mAns = (mLower + mUpper) / 2.0;
+          return mAns * mAns;
+        };
+
+      private:
+        static double lestermax(const double x, const double y)
+        {
+          return (x &gt; y) ? x : y;
+        }
+
+        static const EllipseParams helper(const double mSq, // The test parent-mass value (squared)
+                                          const double mtSq,
+                                          const double tx,
+                                          const double ty,   // The visible particle transverse momentum
+                                          const double mqSq, // The mass of the invisible particle
+                                          const double pxmiss,
+                                          const double pymiss)
+      {
+        const double txSq = tx * tx;
+        const double tySq = ty * ty;
+        const double pxmissSq = pxmiss * pxmiss;
+        const double pymissSq = pymiss * pymiss;
+
+        const double c_xx = +4.0 * mtSq + 4.0 * tySq;
+
+        const double c_yy = +4.0 * mtSq + 4.0 * txSq;
+
+        const double c_xy = -4.0 * tx * ty;
+
+        const double c_x = -4.0 * mtSq * pxmiss - 2.0 * mqSq * tx + 2.0 * mSq * tx -
+                         2.0 * mtSq * tx + 4.0 * pymiss * tx * ty -
+                         4.0 * pxmiss * tySq;
+
+        const double c_y = -4.0 * mtSq * pymiss - 4.0 * pymiss * txSq -
+                         2.0 * mqSq * ty + 2.0 * mSq * ty - 2.0 * mtSq * ty +
+                         4.0 * pxmiss * tx * ty;
+
+        const double c = -mqSq * mqSq + 2 * mqSq * mSq - mSq * mSq +
+                       2 * mqSq * mtSq + 2 * mSq * mtSq - mtSq * mtSq +
+                       4.0 * mtSq * pxmissSq + 4.0 * mtSq * pymissSq +
+                       4.0 * mqSq * pxmiss * tx - 4.0 * mSq * pxmiss * tx +
+                       4.0 * mtSq * pxmiss * tx + 4.0 * mqSq * txSq +
+                       4.0 * pymissSq * txSq + 4.0 * mqSq * pymiss * ty -
+                       4.0 * mSq * pymiss * ty + 4.0 * mtSq * pymiss * ty -
+                       8.0 * pxmiss * pymiss * tx * ty + 4.0 * mqSq * tySq +
+                       4.0 * pxmissSq * tySq;
+
+        return EllipseParams(c_xx, c_yy, c_xy, c_x, c_y, c);
+      }
+    };
+
+    void myversion()
+    {
+      std::cout &lt;&lt; &quot;version 5: arXiv:1411.4312v5&quot; &lt;&lt; std::endl;
+    }
+
+    double MT(double px1, double px2, double py1, double py2, double m1, double m2)
+    {
+      double E1 = sqrt(px1 * px1 + py1 * py1 + m1 * m1);
+      double E2 = sqrt(px2 * px2 + py2 * py2 + m2 * m2);
+      double Msq = (E1 + E2) * (E1 + E2) - (px1 + px2) * (px1 + px2) - (py1 + py2) * (py1 + py2);
+      if (Msq &lt; 0) Msq = 0;
+      return sqrt(Msq);
+    }
+
+    std::pair&lt;double, double&gt; ben_findsols(double MT2, double px, double py,
+                                           double visM, double Ma, double pxb,
+                                           double pyb, double metx, double mety,
+                                           double visMb, double Mb)
+    {
+      // Visible particle (px,py,visM)
+      std::pair&lt;double, double&gt; sols;
+
+      ///////
+      // Find the minimizing points given MT2
+      //////
+
+      double Pt = sqrt(px * px + py * py);
+      double E = sqrt(Pt * Pt + visM * visM);
+      double M = MT2;
+      double E2 = E * E;
+      double M2 = M * M;
+      double M4 = M2 * M2;
+      double Ma2 = Ma * Ma;
+      double Ma4 = Ma2 * Ma2;
+      double px2 = px * px;
+      double py2 = py * py;
+      double px4 = px2 * px2;
+      double py4 = py2 * py2;
+      double py3 = py2 * py;
+      double E4 = E2 * E2;
+      double TermA = E2 * px - M2 * px + Ma2 * px - px2 * px - px * py2;
+      double TermB = -2. * px * py;
+      double TermSqy0 = E4 * E2 - 2. * E4 * M2 - 2. * E4 * Ma2 - 2. * E4 * px2 -
+                    2. * E4 * py2 + E2 * M4 - 2. * E2 * M2 * Ma2 +
+                    2. * E2 * M2 * px2 + 2. * E2 * M2 * py2 + E2 * Ma4 +
+                    2. * E2 * Ma2 * px2 - 2. * E2 * Ma2 * py2 + E2 * px4 +
+                    2. * E2 * px2 * py2 + E2 * py4;
+      double TermSqy1 = -4. * E4 * py + 4. * E2 * M2 * py - 4. * E2 * Ma2 * py +
+                    4. * E2 * px2 * py + 4. * E2 * py3;
+      double TermSqy2 = -4. * E4 + 4. * E2 * px2 + 4. * E2 * py2;
+
+      // First, determine the range.
+      double myx = 0.;
+      double myy = 0.;
+      if (TermSqy1 * TermSqy1 - 4. * TermSqy0 * TermSqy2 &lt; 0)
+      {
+        // unbalanced
+      }
+      else
+      {
+        double sol1 = (-TermSqy1 - sqrt(TermSqy1 * TermSqy1 - 4. * TermSqy0 * TermSqy2)) / (2. * TermSqy2);
+        double sol2 = (-TermSqy1 + sqrt(TermSqy1 * TermSqy1 - 4. * TermSqy0 * TermSqy2)) / (2. * TermSqy2);
+        double low = sol1;
+        double high = sol2;
+        if (low &gt; high)
+        {
+          low = sol2;
+          high = sol1;
+        }
+
+        double myclose = 99999999.;
+        for (double metpy = low; metpy &lt;= high; metpy += (high - low) / 10000.)
+        {
+          double metpx = -(TermB * metpy + TermA - sqrt(TermSqy0 + TermSqy1 * metpy + TermSqy2 * metpy * metpy)) * 0.5 / (E2 - px2);
+          double metpx2 = -(TermB * metpy + TermA + sqrt(TermSqy0 + TermSqy1 * metpy + TermSqy2 * metpy * metpy)) * 0.5 / (E2 - px2);
+          double mt1a = MT(px, metpx, py, metpy, visM, Ma);
+          double mt1b = MT(px, metpx2, py, metpy, visM, Ma);
+          double metpxb = metx - metpx;
+          double metpx2b = metx - metpx2;
+          double mt2a = MT(pxb, metpxb, pyb, mety - metpy, visMb, Mb);
+          double mt2b = MT(pxb, metpx2b, pyb, mety - metpy, visMb, Mb);
+          if (fabs(mt1a - mt2a) &lt; myclose)
+          {
+            myclose = fabs(mt1a - mt2a);
+            myy = metpy;
+            myx = metpx;
+          }
+          if (fabs(mt1b - mt2b) &lt; myclose)
+          {
+            myclose = fabs(mt1b - mt2b);
+            myy = metpy;
+            myx = metpx2;
+          }
+        }
+      }
+
+      sols.first = myx;
+      sols.second = myy;
+
+      return sols;
+    }
+
+    class Analysis_ATLAS_13TeV_2LEP0JET_EW_139invfb : public Analysis
+    {
+      private:
+
+      #ifdef CHECK_CUTFLOW
+        // Cut Flow
+        vector&lt;int&gt; cutFlowVector;
+        vector&lt;string&gt; cutFlowVector_str;
+        int NCUTS;
+      #endif
+
+        std::map&lt;std::string, MVA *&gt; m_MVAs;
+
+      public:
+
+        // Required detector sim
+        static constexpr const char* detector = &quot;ATLAS&quot;;
+
+        Analysis_ATLAS_13TeV_2LEP0JET_EW_139invfb()
+        {
+
+          set_analysis_name(&quot;ATLAS_13TeV_2LEP0JET_EW_139invfb&quot;);
+          set_detector_name(detector);
+          set_luminosity(139.0);
+
+          // Slepton regions
+          _counters[&quot;SR0j_100_infty&quot;] = EventCounter(&quot;SR0j_100_infty&quot;);
+          _counters[&quot;SR0j_110_infty&quot;] = EventCounter(&quot;SR0j_110_infty&quot;);
+          _counters[&quot;SR0j_120_infty&quot;] = EventCounter(&quot;SR0j_120_infty&quot;);
+          _counters[&quot;SR0j_130_infty&quot;] = EventCounter(&quot;SR0j_130_infty&quot;);
+          _counters[&quot;SR0j_140_infty&quot;] = EventCounter(&quot;SR0j_140_infty&quot;);
+          //_counters[&quot;SR0j_100_105&quot;] = EventCounter(&quot;SR0j_100_105&quot;);
+          //_counters[&quot;SR0j_105_110&quot;] = EventCounter(&quot;SR0j_105_110&quot;);
+          //_counters[&quot;SR0j_110_115&quot;] = EventCounter(&quot;SR0j_110_115&quot;);
+          //_counters[&quot;SR0j_115_120&quot;] = EventCounter(&quot;SR0j_115_120&quot;);
+          //_counters[&quot;SR0j_120_125&quot;] = EventCounter(&quot;SR0j_120_125&quot;);
+          //_counters[&quot;SR0j_125_130&quot;] = EventCounter(&quot;SR0j_125_130&quot;);
+          //_counters[&quot;SR0j_130_140&quot;] = EventCounter(&quot;SR0j_130_140&quot;);
+          _counters[&quot;SR1j_100_infty&quot;] = EventCounter(&quot;SR1j_100_infty&quot;);
+          _counters[&quot;SR1j_110_infty&quot;] = EventCounter(&quot;SR1j_110_infty&quot;);
+          _counters[&quot;SR1j_120_infty&quot;] = EventCounter(&quot;SR1j_120_infty&quot;);
+          _counters[&quot;SR1j_130_infty&quot;] = EventCounter(&quot;SR1j_130_infty&quot;);
+          _counters[&quot;SR1j_140_infty&quot;] = EventCounter(&quot;SR1j_140_infty&quot;);
+          //_counters[&quot;SR1j_100_105&quot;] = EventCounter(&quot;SR1j_100_105&quot;);
+          //_counters[&quot;SR1j_105_110&quot;] = EventCounter(&quot;SR1j_105_110&quot;);
+          //_counters[&quot;SR1j_110_115&quot;] = EventCounter(&quot;SR1j_110_115&quot;);
+          //_counters[&quot;SR1j_115_120&quot;] = EventCounter(&quot;SR1j_115_120&quot;);
+          //_counters[&quot;SR1j_120_125&quot;] = EventCounter(&quot;SR1j_120_125&quot;);
+          //_counters[&quot;SR1j_125_130&quot;] = EventCounter(&quot;SR1j_125_130&quot;);
+          //_counters[&quot;SR1j_130_140&quot;] = EventCounter(&quot;SR1j_130_140&quot;);
+
+          // Chargino regions
+          _counters[&quot;SR_DF_81_inc&quot;] = EventCounter(&quot;SR_DF_81_inc&quot;);
+          //_counters[&quot;SR_DF_81_8125&quot;] = EventCounter(&quot;SR_DF_81_8125&quot;);
+          //_counters[&quot;SR_DF_8125_815&quot;] = EventCounter(&quot;SR_DF_8125_815&quot;);
+          //_counters[&quot;SR_DF_815_8175&quot;] = EventCounter(&quot;SR_DF_815_8175&quot;);
+          //_counters[&quot;SR_DF_8175_82&quot;] = EventCounter(&quot;SR_DF_8175_82&quot;);
+          //_counters[&quot;SR_DF_82_8225&quot;] = EventCounter(&quot;SR_DF_82_8225&quot;);
+          //_counters[&quot;SR_DF_8225_825&quot;] = EventCounter(&quot;SR_DF_8225_825&quot;);
+          //_counters[&quot;SR_DF_825_8275&quot;] = EventCounter(&quot;SR_DF_825_8275&quot;);
+          //_counters[&quot;SR_DF_8275_83&quot;] = EventCounter(&quot;SR_DF_8275_83&quot;);
+          //_counters[&quot;SR_DF_83_8325&quot;] = EventCounter(&quot;SR_DF_83_8325&quot;);
+          //_counters[&quot;SR_DF_8325_835&quot;] = EventCounter(&quot;SR_DF_8325_835&quot;);
+          //_counters[&quot;SR_DF_835_8375&quot;] = EventCounter(&quot;SR_DF_835_8375&quot;);
+          //_counters[&quot;SR_DF_8375_84&quot;] = EventCounter(&quot;SR_DF_8375_84&quot;);
+          //_counters[&quot;SR_DF_84_845&quot;] = EventCounter(&quot;SR_DF_84_845&quot;);
+          //_counters[&quot;SR_DF_845_85&quot;] = EventCounter(&quot;SR_DF_845_85&quot;);
+          //_counters[&quot;SR_DF_85_86&quot;] = EventCounter(&quot;SR_DF_85_86&quot;);
+          //_counters[&quot;SR_DF_86_inc&quot;] = EventCounter(&quot;SR_DF_86_inc&quot;);
+          _counters[&quot;SR_SF_77_inc&quot;] = EventCounter(&quot;SR_SF_77_inc&quot;);
+          //_counters[&quot;SR_SF_77_775&quot;] = EventCounter(&quot;SR_SF_77_775&quot;);
+          //_counters[&quot;SR_SF_775_78&quot;] = EventCounter(&quot;SR_SF_775_78&quot;);
+          //_counters[&quot;SR_SF_78_785&quot;] = EventCounter(&quot;SR_SF_78_785&quot;);
+          //_counters[&quot;SR_SF_785_79&quot;] = EventCounter(&quot;SR_SF_785_79&quot;);
+          //_counters[&quot;SR_SF_79_795&quot;] = EventCounter(&quot;SR_SF_79_795&quot;);
+          //_counters[&quot;SR_SF_795_80&quot;] = EventCounter(&quot;SR_SF_795_80&quot;);
+          //_counters[&quot;SR_SF_80_81&quot;] = EventCounter(&quot;SR_SF_80_81&quot;);
+          _counters[&quot;SR_SF_81_inc&quot;] = EventCounter(&quot;SR_SF_81_inc&quot;);
+          //_counters[&quot;SR_inc&quot;] = EventCounter(&quot;SR_inc&quot;);
+          _counters[&quot;SR_DF_82_inc&quot;] = EventCounter(&quot;SR_DF_82_inc&quot;);
+          _counters[&quot;SR_DF_83_inc&quot;] = EventCounter(&quot;SR_DF_83_inc&quot;);
+          _counters[&quot;SR_DF_84_inc&quot;] = EventCounter(&quot;SR_DF_84_inc&quot;);
+          _counters[&quot;SR_DF_85_inc&quot;] = EventCounter(&quot;SR_DF_85_inc&quot;);
+          _counters[&quot;SR_SF_78_inc&quot;] = EventCounter(&quot;SR_SF_78_inc&quot;);
+          _counters[&quot;SR_SF_79_inc&quot;] = EventCounter(&quot;SR_SF_79_inc&quot;);
+          _counters[&quot;SR_SF_80_inc&quot;] = EventCounter(&quot;SR_SF_80_inc&quot;);
+
+          #ifdef CHECK_CUTFLOW
+          // Cut flows
+          NCUTS = 54;
+
+          for(int i = 0; i &lt; NCUTS; i++)
+          {
+            cutFlowVector.push_back(0);
+            cutFlowVector_str.push_back(&quot;&quot;);
+          }
+          #endif
+
+          // Instances for BDT
+          #pragma omp critical (init_ATLAS_13TeV_2LEP0JET_EW_139invfb)
+          {
+            addMVABDT(&quot;lgbm_DF&quot;, GAMBIT_DIR &quot;/ColliderBit/data/BDT_data/ANA-SUSY-2019-02_DF0J_trained_odd.root&quot;, GAMBIT_DIR &quot;/ColliderBit/data/BDT_data/ANA-SUSY-2019-02_DF0J_trained_even.root&quot;);
+            addMVABDT(&quot;lgbm_SF&quot;, GAMBIT_DIR &quot;/ColliderBit/data/BDT_data/ANA-SUSY-2019-02_SF0J_trained_odd.root&quot;, GAMBIT_DIR &quot;/ColliderBit/data/BDT_data/ANA-SUSY-2019-02_SF0J_trained_even.root&quot;);
+          }
+        }
+
+        void addMVABDT(const std::string &amp;name, const std::string &amp;fname1, const std::string &amp;fname2)
+        {
+          if (m_MVAs.find(name) != m_MVAs.end()) throw std::runtime_error(&quot;Duplicate MVA name&quot;);
+          m_MVAs[name] = new MVAUtilsReader(name, fname1, fname2);
+          // Assuming MVAUtilsReader returns a pointer to MVA
+        }
+
+        virtual MVA *getMVA(const std::string &amp;name)
+        {
+          if (m_MVAs.find(name) == m_MVAs.end()) throw std::runtime_error(&quot;Unknown MVA name&quot;);
+          return m_MVAs[name];
+        }
+
+        // Assuming Particle and Particles are correct type names.
+        vector&lt;const Particle*&gt; filterLeptons(vector&lt;const Particle*&gt; &amp;cands, float ptCut, float etaCut)
+        {
+
+          vector&lt;const Particle*&gt; reducedList;
+          for (const auto &amp;cand : cands)
+          {
+            if ((cand-&gt;pT() &gt;= ptCut) &amp;&amp; (cand-&gt;abseta() &lt; etaCut)) reducedList.push_back(cand);
+          }
+          return reducedList;
+        }
+
+        // Assuming Particle and Particles are correct type names.
+        vector&lt;const Jet*&gt; filterJets(vector&lt;const Jet*&gt; &amp;cands, float ptCut, float etaCut)
+        {
+          vector&lt;const Jet*&gt; reducedList;
+          for (const auto &amp;cand : cands)
+          {
+            if ((cand-&gt;pT() &gt;= ptCut) &amp;&amp; (cand-&gt;abseta() &lt; etaCut)) reducedList.push_back(cand);
+          }
+          return reducedList;
+        }
+
+        struct pt_sort
+        {
+          bool operator()(const Particle* p1, const Particle* p2) const
+          {
+            return p1-&gt;pT() &gt; p2-&gt;pT();
+          }
+        };
+
+        void sortObjectsByPt(vector&lt;const Particle*&gt; &amp;cands)
+        {
+          return std::sort(cands.begin(), cands.end(), pt_sort());
+        }
+
+        int countObjects(vector&lt;const Particle*&gt; &amp;cands, float ptCut, float etaCut)
+        {
+          int count = 0;
+          for (const auto &amp;cand : cands)
+          {
+            if (cand-&gt;pT() &gt;= ptCut &amp;&amp; cand-&gt;abseta() &lt; etaCut) count++;
+          }
+          return count;
+        }
+
+        int countObjects(vector&lt;const Jet*&gt; &amp;cands, float ptCut, float etaCut)
+        {
+          int count = 0;
+          for (const auto &amp;cand : cands)
+          {
+            if (cand-&gt;pT() &gt;= ptCut &amp;&amp; cand-&gt;abseta() &lt; etaCut) count++;
+          }
+          return count;
+        }
+
+        /*
+        // Jet overlap removal
+        void JetLeptonOverlapRemoval(vector&lt;const HEPUtils::Jet*&gt; &amp;jetvec, vector&lt;const HEPUtils::Particle*&gt; &amp;lepvec, double DeltaRMax) {
+              //Routine to do jet-lepton check
+              //Discards jets if they are within DeltaRMax of a lepton
+
+              vector&lt;const HEPUtils::Jet*&gt; Survivors;
+
+              for(unsigned int itjet = 0; itjet &lt; jetvec.size(); itjet++) {
+                bool overlap = false;
+                HEPUtils::P4 jetmom=jetvec.at(itjet)-&gt;mom();
+                for(unsigned int itlep = 0; itlep &lt; lepvec.size(); itlep++) {
+                    HEPUtils::P4 lepmom=lepvec.at(itlep)-&gt;mom();
+                    double dR;
+
+                    dR=jetmom.deltaR_eta(lepmom);
+
+                    if(fabs(dR) &lt;= DeltaRMax) overlap=true;
+                }
+                if(overlap) continue;
+                Survivors.push_back(jetvec.at(itjet));
+            }
+            jetvec = Survivors;
+
+            return;
+        }
+
+        // Lepton overlap removal
+        void LeptonJetOverlapRemoval(vector&lt;const HEPUtils::Particle*&gt; &amp;lepvec, vector&lt;const HEPUtils::Jet*&gt; &amp;jetvec, double DeltaRMax) {
+            //Routine to do lepton-jet check
+            //Discards leptons if they are within DeltaRMax of a jet
+
+            vector&lt;const HEPUtils::Particle*&gt; Survivors;
+
+            for(unsigned int itlep = 0; itlep &lt; lepvec.size(); itlep++) {
+                bool overlap = false;
+                HEPUtils::P4 lepmom=lepvec.at(itlep)-&gt;mom();
+                for(unsigned int itjet= 0; itjet &lt; jetvec.size(); itjet++) {
+                    HEPUtils::P4 jetmom=jetvec.at(itjet)-&gt;mom();
+                    double dR;
+
+                    dR=jetmom.deltaR_eta(lepmom);
+
+                    if(fabs(dR) &lt;= DeltaRMax) overlap=true;
+                }
+                if(overlap) continue;
+                Survivors.push_back(lepvec.at(itlep));
+            }
+            lepvec = Survivors;
+
+            return;
+        }
+        */
+
+        float calcMT2(const Particle &amp;o1, const Particle &amp;o2, const P4 &amp;met)
+        {
+          return calcAMT2(o1, o2, met, 0, 0);
+        }
+
+        float calcAMT2(const Particle &amp;o1, const Particle &amp;o2, const P4 &amp;met, float m1, float m2)
+        {
+          asymm_mt2_lester_bisect::disableCopyrightMessage();
+          return asymm_mt2_lester_bisect::get_mT2(o1.mom().m(), o1.mom().px(), o1.mom().py(), o2.mom().m(),
+                                                  o2.mom().px(), o2.mom().py(), met.px(), met.py(), m1, m2);
+        }
+
+        float calcMTauTau(const Particle &amp;o1, const Particle &amp;o2, const P4 &amp;met)
+        {
+          float determinant = o1.mom().px() * o2.mom().py() - o1.mom().py() * o2.mom().px();
+          float xi_1 = (met.px() * o2.mom().py() - o2.mom().px() * met.py()) / determinant;
+          float xi_2 = (met.py() * o1.mom().px() - o1.mom().py() * met.px()) / determinant;
+
+          float MSqTauTau = (1. + xi_1) * (1. + xi_2) * 2 * o1.mom().dot(o2.mom());
+
+          float MTauTau = 0.;
+          if (MSqTauTau &gt;= 0) MTauTau = sqrt(MSqTauTau);
+          if (MSqTauTau &lt; 0) MTauTau = -sqrt(fabs(MSqTauTau));
+
+          return MTauTau;
+        }
+
+        vector&lt;const Particle*&gt; LeptonLeptonOverlapRemoval(vector&lt;const Particle*&gt; &amp;cands, vector&lt; const Particle*&gt; &amp;others,
+                                                           std::function&lt;float(const Particle* , const Particle* )&gt; radiusFunc)
+        {
+          vector&lt;const Particle*&gt; reducedList;
+          for (const auto &amp;cand : cands)
+          {
+            bool overlap = false;
+            for (const auto &amp;other : others)
+            {
+              if (cand-&gt;mom().deltaR_eta(other-&gt;mom()) &lt; radiusFunc(cand, other) &amp;&amp; cand != other)
+              {
+                overlap = true;
+                break;
+              }
+            }
+            if (!overlap) reducedList.push_back(cand);
+          }
+          return reducedList;
+        }
+
+        vector&lt;const Jet*&gt; JetLeptonOverlapRemoval(vector&lt;const Jet*&gt; &amp;cands, vector&lt; const Particle*&gt; &amp;others,
+                                                   std::function&lt;float(const Jet* , const Particle* )&gt; radiusFunc)
+        {
+          vector&lt;const Jet*&gt; reducedList;
+          for (const auto &amp;cand : cands)
+          {
+            bool overlap = false;
+            for (const auto &amp;other : others)
+            {
+              //if (cand-&gt;mom().deltaR_eta(other-&gt;mom()) &lt; radiusFunc(cand, other) &amp;&amp; cand != other) {
+              if (cand-&gt;mom().deltaR_eta(other-&gt;mom()) &lt; radiusFunc(cand, other))
+              {
+                overlap = true;
+                break;
+              }
+            }
+            if (!overlap) reducedList.push_back(cand);
+          }
+          return reducedList;
+        }
+
+        vector&lt;const Particle*&gt; LeptonJetOverlapRemoval(vector&lt;const Particle*&gt; &amp;cands, vector&lt; const Jet*&gt; &amp;others,
+                                                        std::function&lt;float(const Particle* , const Jet* )&gt; radiusFunc)
+        {
+          vector&lt;const Particle*&gt; reducedList;
+          for (const auto &amp;cand : cands)
+          {
+            bool overlap = false;
+            for (const auto &amp;other : others)
+            {
+              if (cand-&gt;mom().deltaR_eta(other-&gt;mom()) &lt; radiusFunc(cand, other))
+              {
+                overlap = true;
+                break;
+              }
+            }
+            if (!overlap) reducedList.push_back(cand);
+          }
+          return reducedList;
+        }
+
+        vector&lt;const Particle*&gt; LeptonLeptonOverlapRemoval(vector&lt;const Particle*&gt; &amp;cands,
+                                                           vector&lt;const Particle*&gt; &amp;others,
+                                                           float deltaR)
+        {
+          return LeptonLeptonOverlapRemoval( cands, others, [deltaR](const Particle*, const Particle*) { return deltaR; } );
+        }
+
+        vector&lt;const Jet*&gt; JetLeptonOverlapRemoval(vector&lt;const Jet*&gt; &amp;cands,
+                                                   vector&lt;const Particle*&gt; &amp;others,
+                                                   float deltaR)
+        {
+          return JetLeptonOverlapRemoval(cands, others,[deltaR](const Jet*, const Particle*) {return deltaR;});
+        }
+
+        vector&lt;const Particle*&gt; LeptonJetOverlapRemoval(vector&lt;const Particle*&gt; &amp;cands,
+                                                        vector&lt;const Jet*&gt; &amp;others,
+                                                        float deltaR)
+        {
+          return LeptonJetOverlapRemoval(cands, others,[deltaR](const Particle*, const Jet*) {return deltaR;});
+        }
+
+        double calcMETSignificance(vector&lt;const Particle*&gt; &amp;electrons,
+                                   vector&lt;const Particle*&gt; &amp;photons,
+                                   vector&lt;const Particle*&gt; &amp;muons,
+                                   vector&lt;const Jet*&gt; &amp;jets,
+                                   vector&lt;const Particle*&gt; &amp;taus,
+                                   HEPUtils::P4 &amp;metVec,
+                                   double met)
+        {
+
+          //auto objects = electrons + photons + muons + jets + taus;
+
+          std::vector&lt;const Particle*&gt; particles;
+          //std::vector&lt;const Jet*&gt; Jets;
+
+          for (auto obj : electrons)
+          {
+            particles.push_back(obj);
+          }
+
+          for (auto obj : muons)
+          {
+            particles.push_back(obj);
+          }
+
+          for (auto obj : photons)
+          {
+            particles.push_back(obj);
+          }
+
+          for (auto obj : taus)
+          {
+            particles.push_back(obj);
+          }
+
+          // Process particles
+          //for (const auto&amp; particle : particles) {
+            // Do something with particle
+          //}
+
+          // Process jets
+          //for (auto obj : jets) {
+            // Do something with jet
+          //}
+
+          auto softVec = metVec;
+          //double met = metVec.Et();
+
+          TMatrix cov_sum(2, 2);
+
+          TMatrix particle_u(2, 2), particle_u_rot(2, 2);
+          for (auto obj : particles)
+          {
+            softVec += obj-&gt;mom(); // soft term is everything not included in hard objects
+            double pt_reso = 0.0, phi_reso = 0.0;
+            //getObjectResolution(obj, pt_reso, phi_reso);
+            particle_u(0, 0) = pow(pt_reso * obj-&gt;pT(), 2);
+            particle_u(1, 1) = pow(phi_reso * obj-&gt;pT(), 2);
+            rotateXY(particle_u, particle_u_rot, metVec.deltaPhi(obj-&gt;mom()));
+            cov_sum += particle_u_rot;
+          }
+
+          for (auto obj : jets)
+          {
+            softVec += obj-&gt;mom(); // soft term is everything not included in hard objects
+            double pt_reso = 0.0, phi_reso = 0.0;
+            //getObjectResolution(obj, pt_reso, phi_reso);
+            particle_u(0, 0) = pow(pt_reso * obj-&gt;pT(), 2);
+            particle_u(1, 1) = pow(phi_reso * obj-&gt;pT(), 2);
+            rotateXY(particle_u, particle_u_rot, metVec.deltaPhi(obj-&gt;mom()));
+            cov_sum += particle_u_rot;
+          }
+
+          // add soft term resolution (fixed 10 GeV) but tunned to 12 GeV
+          particle_u(0, 0) = 10 * 10;
+          particle_u(1, 1) = 10 * 10;
+          rotateXY(particle_u, particle_u_rot, metVec.deltaPhi(softVec));
+          cov_sum += particle_u_rot;
+
+          // calculate significance
+          double varL = cov_sum(0, 0);
+          double varT = cov_sum(1, 1);
+          double covLT = cov_sum(0, 1);
+
+          double significance = 0;
+          double rho = 0;
+          if (varL != 0)
+          {
+            rho = covLT / sqrt(varL * varT);
+            if (fabs(rho) &gt;= 0.9) rho = 0; // too large - ignore it
+            significance = met / sqrt((varL * (1 - pow(rho, 2))));
+          }
+          return significance;
+        }
+
+        double calcMETSignificance(const HEPUtils::Event &amp;event, bool applyOverlapRemoval)
+        {
+          auto electrons = getObjects(&amp;event, &quot;electrons&quot;, 10, 2.47);
+          auto photons = getObjects(&amp;event, &quot;photons&quot;, 10, 2.47);
+          auto muons = getObjects(&amp;event, &quot;muons&quot;, 10, 2.5);
+          auto jets = getJets(&amp;event, 20., 4.5);
+          auto taus = getObjects(&amp;event, &quot;taus&quot;, 10., 2.5);
+          auto metVec = event.missingmom();
+          double MET = event.met();
+
+          // This is a default overlap removal
+          if (applyOverlapRemoval)
+          {
+            auto radiusCalcLepton = [](const Particle* lepton, const Jet* /*jet*/) {return std::min(0.4, 0.04 + 10 / lepton-&gt;pT());};
+
+            auto muJetSpecial = [](const Jet* jet, const Particle* muon)
+            {
+              if (muon-&gt;pT() / jet-&gt;pT() &gt; 0.5) return 0.2;
+              else return 0.;
+            };
+
+            muons = LeptonLeptonOverlapRemoval(muons, electrons, 0.01);
+            electrons = LeptonLeptonOverlapRemoval(electrons, muons, 0.01);
+            jets = JetLeptonOverlapRemoval(jets, electrons, 0.2);
+            electrons = LeptonJetOverlapRemoval(electrons, jets, 0.2);
+
+            jets = JetLeptonOverlapRemoval(jets, muons, muJetSpecial);
+            muons = LeptonJetOverlapRemoval(muons, jets, 0.2);
+
+            muons = LeptonJetOverlapRemoval(muons, jets, radiusCalcLepton);
+            electrons = LeptonJetOverlapRemoval(electrons, jets, radiusCalcLepton);
+
+          }
+
+          return calcMETSignificance(electrons, photons, muons, jets, taus, metVec, MET);
+        }
+
+        vector&lt;const Particle*&gt; getObjects(const HEPUtils::Event* event, std::string type, double ptcut, double etacut)
+        {
+          vector&lt;const Particle*&gt; cands;
+
+          if (type == &quot;electrons&quot;)
+          {
+            // Get baseline electrons
+            for (const Particle* electron : event-&gt;electrons())
+            {
+              if (electron-&gt;pT() &gt; ptcut &amp;&amp; electron-&gt;abseta() &lt; etacut) cands.push_back(electron);
+            }
+          }
+
+          if (type == &quot;muons&quot;)
+          {
+            for (const Particle* muon : event-&gt;muons())
+            {
+              if (muon-&gt;pT() &gt; ptcut &amp;&amp; muon-&gt;abseta() &lt; etacut) cands.push_back(muon);
+            }
+          }
+
+          if (type == &quot;photons&quot;)
+          {
+            for (const Particle* photon : event-&gt;photons())
+            {
+              if (photon-&gt;pT() &gt; ptcut &amp;&amp; photon-&gt;abseta() &lt; etacut) cands.push_back(photon);
+            }
+          }
+
+          if (type == &quot;taus&quot;)
+          {
+            for (const Particle* tau : event-&gt;taus())
+            {
+              if (tau-&gt;pT() &gt; ptcut &amp;&amp; tau-&gt;abseta() &lt; etacut) cands.push_back(tau);
+            }
+          }
+
+          return cands;
+        }
+
+        vector&lt;const Jet*&gt; getJets(const HEPUtils::Event* event, double ptcut, double etacut)
+        {
+           vector&lt;const Jet*&gt; candJets;
+           for (const Jet* jet : event-&gt;jets(&quot;antikt_R04&quot;))
+           {
+             if (jet-&gt;pT() &gt; ptcut &amp;&amp; jet-&gt;abseta() &lt; etacut) candJets.push_back(jet);
+           }
+           return candJets;
+        }
+
+
+        /// Main Run Function
+        void run(const HEPUtils::Event* event)
+        {
+          // Get baseline electrons
+          vector&lt;const Particle*&gt; electrons = getObjects(event, &quot;electrons&quot;, 9., 2.47);
+
+          // Get baseline muons
+          vector&lt;const Particle*&gt; muons = getObjects(event, &quot;muons&quot;, 9., 2.6);
+
+          // Get baseline jets
+          vector&lt;const Jet*&gt; candJets = getJets(event, 20., 2.8);
+
+          // Get the missing energy in the event
+          double MET = event-&gt;met();
+          HEPUtils::P4 METVec = event-&gt;missingmom();
+          double METsig = calcMETSignificance(*event, false);
+
+          // Overlap removal - including with object Pt-dependent radius calculation
+
+          // Electrons
+          candJets = JetLeptonOverlapRemoval(candJets, electrons, 0.2);
+          auto radiusCalcEle = [](const Particle* ele, const Jet*) -&gt; float {return std::min(0.4, 0.04 + 10.0/ele-&gt;pT());};
+          electrons = LeptonJetOverlapRemoval(electrons, candJets, radiusCalcEle);
+
+          // Muons
+          candJets = JetLeptonOverlapRemoval(candJets, muons, 0.4);
+          auto radiusCalcMuon = [](const Particle* muon, const Jet*) -&gt; float {return std::min(0.4, 0.04 + 10.0/muon-&gt;pT());};
+          muons = LeptonJetOverlapRemoval(muons, candJets, radiusCalcMuon);
+
+          // Basic filtering by pT, eta and &quot;ID&quot;
+          auto signalJets = filterJets(candJets, 20., 2.4);
+          //vector&lt;const HEPUtils::Jet*&gt; bjets;
+          //vector&lt;const HEPUtils::Jet*&gt; Nonbjets;
+
+          /*
+          // Find b-jets
+          double btag = 0.77; double cmisstag = 1/16.; double misstag = 1./113.;
+          for (const HEPUtils::Jet* jet : signalJets) {
+
+            // Tag
+            if( jet-&gt;btag() &amp;&amp; random_bool(btag) ) bjets.push_back(jet);
+            // Misstag c-jet
+            else if( jet-&gt;ctag() &amp;&amp; random_bool(cmisstag) ) bjets.push_back(jet);
+            // Misstag light jet
+            else if( random_bool(misstag) ) bjets.push_back(jet);
+            // Non b-jet
+            else Nonbjets.push_back(jet);
+          }
+          */
+          auto signalElectrons = filterLeptons(electrons, 9., 2.47);
+          auto signalMuons = filterLeptons(muons, 9., 2.6);
+
+          // Merges electrons and muons to leptons
+          vector&lt;const Particle*&gt; signalLeptons;
+          for (const Particle* electron : signalElectrons)
+          {
+            signalLeptons.push_back(electron);
+          }
+          for (const Particle* muon : signalMuons)
+          {
+            signalLeptons.push_back(muon);
+          }
+
+          //Put signal jets/leptons in pT order
+          std::sort(signalJets.begin(), signalJets.end(), sortBypT_j);
+          std::sort(signalLeptons.begin(), signalLeptons.end(), sortBypT_l);
+          std::sort(signalElectrons.begin(), signalElectrons.end(), sortBypT_l);
+          std::sort(signalMuons.begin(), signalMuons.end(), sortBypT_l);
+
+          // Object counting
+          int nlep = signalLeptons.size();
+
+          // I set the number of bjets to zero to avoid issues
+          // with b-tagging. At the end of the day for electroweak
+          // searches does not have an effective impact both in slsl
+          // and in chargino production
+          int nbjet   = 0; //bjets.size();
+          int njet    = countObjects(candJets, 20, 2.4);
+          //int njet30  = countObjects(candJets, 30, 2.4);
+          //int njet40  = countObjects(candJets, 40, 2.4);
+          //int njet50  = countObjects(candJets, 50, 2.4);
+          //int njet60  = countObjects(candJets, 60, 2.4);
+
+          //cutFlowVector[0]++;
+
+          // Preselection
+          if(nlep != 2) return;
+          //return this
+          if(signalLeptons[1]-&gt;pT() &lt; 9.) return;
+
+          //this to back
+          if(signalLeptons[0]-&gt;pT() &lt; 27.) return;
+
+          //return back this
+          if (njet &gt; 1) return;
+
+          bool isSF = (abs(signalLeptons[0]-&gt;pid()) == abs(signalLeptons[1]-&gt;pid()));
+          bool isOS = (signalLeptons[0]-&gt;pid()*signalLeptons[1]-&gt;pid()) &lt; 0;
+
+          //return back this
+          if (not isOS) return;
+
+          HEPUtils::P4 lepton0 = signalLeptons.at(0)-&gt;mom();
+          HEPUtils::P4 lepton1 = signalLeptons.at(1)-&gt;mom();
+          double mll = (lepton0 + lepton1).m();
+
+          //if((signalLeptons[0] + signalLeptons[1]).M() &lt; 10.) return;
+          //Back this later
+          if (mll &lt; 12.) return;
+
+          if (METsig &lt; 8) return;
+
+          //Calculate MT2
+          double MT2 = 0;
+          double pa_a[3] = { 0, signalLeptons[0]-&gt;mom().px(), signalLeptons[0]-&gt;mom().py() };
+          double pb_a[3] = { 0, signalLeptons[1]-&gt;mom().px(), signalLeptons[1]-&gt;mom().py() };
+          double pmiss_a[3] = { 0, METVec.px(), METVec.py() };
+          double mn_a = 0.;
+
+          mt2_bisect::mt2 mt2_event_a;
+          mt2_event_a.set_momenta(pa_a, pb_a, pmiss_a);
+          mt2_event_a.set_mn(mn_a);
+          MT2 = mt2_event_a.get_mt2();
+
+          //double mll = (signalLeptons[0] + signalLeptons[1]).M();
+          //double METphi = METVec.phi();
+          /*
+          double jet1pT = 0.0, jet1phi = 0.0, jet1eta = 0.0;
+          if (signalJets.size() &gt; 0){
+            jet1pT = signalJets[0]-&gt;pT();
+            jet1phi = signalJets[0]-&gt;phi();
+            jet1eta = signalJets[0]-&gt;eta();
+          }
+
+          double jet2pT = 0.0, jet2phi = 0.0, jet2eta = 0.0;
+          if (signalJets.size() &gt; 1) {
+            jet2pT = signalJets[1]-&gt;pT();
+            jet2phi = signalJets[1]-&gt;phi();
+            jet2eta = signalJets[1]-&gt;eta();
+          }
+         */
+
+          //leptons
+          double lep1pT = signalLeptons[0]-&gt;pT(), lep2pT = signalLeptons[1]-&gt;pT();
+          //double lep1phi = signalLeptons[0]-&gt;phi(), lep2phi = signalLeptons[1]-&gt;phi();
+          //double lep1eta = signalLeptons[0]-&gt;eta(), lep2eta = signalLeptons[1]-&gt;eta();
+
+          //extra variables
+          double MT2_100 = calcAMT2(signalLeptons[0], signalLeptons[1], METVec, 100., 100.); //mass of final state invis = 100
+          //double MT2_200 = calcAMT2(signalLeptons[0], signalLeptons[1], METVec, 200., 200.);
+          //std::cout &lt;&lt; &quot; MT2   &quot;  &lt;&lt; MT2_100 &lt;&lt; &quot;  &quot; &lt;&lt; MT2_200 &lt;&lt; std::endl;
+
+          //double dRll = signalLeptons[0]-&gt;mom().deltaR_eta(signalLeptons[1]-&gt;mom());
+          //double dRMETl1 = signalLeptons[0]-&gt;mom().deltaR_eta(METVec), dRMETl2 = signalLeptons[1]-&gt;mom().deltaR_eta(METVec);
+
+          double dphill = std::fabs( signalLeptons[0]-&gt;mom().deltaPhi(signalLeptons[1]-&gt;mom()) );
+          //double dphiMETll = std::fabs( METVec.deltaPhi(signalLeptons[0]-&gt;mom() + signalLeptons[1]-&gt;mom()) );
+          double dphiMETl1 = std::fabs( METVec.deltaPhi(signalLeptons[0]-&gt;mom()) );
+          double dphiMETl2 = std::fabs( METVec.deltaPhi(signalLeptons[1]-&gt;mom()) );
+          //double dRMETll = METVec.deltaR_eta(signalLeptons[0]-&gt;mom() + signalLeptons[1]-&gt;mom());
+
+          //double mtt = calcMTauTau(signalLeptons[0], signalLeptons[1], METVec);
+
+          double pbll = (signalLeptons[0]-&gt;mom() + signalLeptons[1]-&gt;mom() + METVec).pT();
+
+
+          /*
+          double R1 = MET / pbll;
+
+          double meff2l1j = -10;
+          double R2 = -10;
+
+          //std::cout &lt;&lt; mtt &lt;&lt; &quot;  &quot; &lt;&lt; R1 &lt;&lt; &quot;  &quot; &lt;&lt; std::endl;
+
+          if (signalJets.size() &gt; 0) {
+            meff2l1j =  (signalLeptons[0]-&gt;mom() + signalLeptons[1]-&gt;mom() + METVec + signalJets[0]-&gt;mom()).pT();
+            R2 = MET / meff2l1j;
+          }
+          */
+          double DPhib = std::fabs(  METVec.deltaPhi(signalLeptons[0]-&gt;mom() + signalLeptons[1]-&gt;mom() + METVec) ) ;
+
+          //double MllMET = (signalLeptons[0]-&gt;mom() + signalLeptons[1]-&gt;mom() + METVec).m();
+
+          /*
+          double lepflav1 = -10;
+          if (signalLeptons[0]-&gt;abspid() == 11) lepflav1 = 11;
+          else if (signalLeptons[0]-&gt;abspid() == 13) lepflav1 = 13;
+
+          double lepflav2 = -10;
+          if (signalLeptons[1]-&gt;abspid() == 11) lepflav2 = 11;
+          else if (signalLeptons[1]-&gt;abspid() == 13) lepflav2 = 13;
+          */
+
+          /*
+          int njetTruth = 0;
+          for(auto jet : candJets) {
+            auto truth = event-&gt;getTruthParticle(jet);
+            if (truth.valid()) {
+              if(truth.Pt()&gt;20 &amp;&amp; truth.Eta()&lt;2.4) njetTruth++;
+            }
+          }
+          */
+
+          // Add additional variable for slepton analysis
+          double cosTstar = std::fabs( std::tanh( 0.5*(signalLeptons[0]-&gt;eta() - signalLeptons[1]-&gt;eta()) ) );
+
+          // Preselection
+          //if(nlep == 2 &amp;&amp; signalLeptons[0]-&gt;pT() &gt; 27. &amp;&amp; signalLeptons[1]-&gt;pT() &gt; 9. &amp;&amp; isOS &amp;&amp; mll &gt; 11. &amp;&amp; METsig &gt; 3.) {
+          //}
+
+          //std::cout &lt;&lt; cosTstar  &lt;&lt; &quot;  &quot; &lt;&lt; std::endl;
+          //exit(0);
+
+          /*
+          ***************************************************************** SLEPTONS 0-jet
+          */
+          if (nbjet == 0 &amp;&amp; njet == 0 &amp;&amp; isSF &amp;&amp; lep1pT &gt; 140. &amp;&amp; lep2pT &gt; 20. &amp;&amp; METsig &gt; 7. &amp;&amp; TMath::Abs(mll - 91.) &gt; 15. &amp;&amp; pbll &lt; 5. &amp;&amp; cosTstar &lt; 0.2 &amp;&amp; dphill &gt; 2.2 &amp;&amp; dphiMETl1 &gt; 2.2)
+          {
+            if (MT2_100 &gt;= 100.                  ) _counters.at(&quot;SR0j_100_infty&quot;).add_event(event);
+            if (MT2_100 &gt;= 110.                  ) _counters.at(&quot;SR0j_110_infty&quot;).add_event(event);
+            if (MT2_100 &gt;= 120.                  ) _counters.at(&quot;SR0j_120_infty&quot;).add_event(event);
+            if (MT2_100 &gt;= 130.                  ) _counters.at(&quot;SR0j_130_infty&quot;).add_event(event);
+            if (MT2_100 &gt;= 140.                  ) _counters.at(&quot;SR0j_140_infty&quot;).add_event(event);
+            //if (MT2_100 &gt;= 100. &amp;&amp; MT2_100 &lt; 105.) _counters.at(&quot;SR0j_100_105&quot;).add_event(event);
+            //if (MT2_100 &gt;= 105. &amp;&amp; MT2_100 &lt; 110.) _counters.at(&quot;SR0j_105_110&quot;).add_event(event);
+            //if (MT2_100 &gt;= 110. &amp;&amp; MT2_100 &lt; 115.) _counters.at(&quot;SR0j_110_115&quot;).add_event(event);
+            //if (MT2_100 &gt;= 115. &amp;&amp; MT2_100 &lt; 120.) _counters.at(&quot;SR0j_115_120&quot;).add_event(event);
+            //if (MT2_100 &gt;= 120. &amp;&amp; MT2_100 &lt; 125.) _counters.at(&quot;SR0j_120_125&quot;).add_event(event);
+            //if (MT2_100 &gt;= 125. &amp;&amp; MT2_100 &lt; 130.) _counters.at(&quot;SR0j_125_130&quot;).add_event(event);
+            //if (MT2_100 &gt;= 130. &amp;&amp; MT2_100 &lt; 140.) _counters.at(&quot;SR0j_130_140&quot;).add_event(event);
+          }
+
+          /*
+           ***************************************************************** SLEPTONS 1-jet
+          */
+          if (nbjet == 0 &amp;&amp; njet == 1 &amp;&amp; isSF &amp;&amp; lep1pT &gt; 100. &amp;&amp; lep2pT &gt; 50. &amp;&amp; METsig &gt; 7. &amp;&amp; mll &gt; 60. &amp;&amp; TMath::Abs(mll - 91.) &gt; 15. &amp;&amp; cosTstar &lt; 0.1 &amp;&amp; dphill &gt; 2.8)
+          {
+            if (MT2_100 &gt;= 100.                  ) _counters.at(&quot;SR1j_100_infty&quot;).add_event(event);
+            if (MT2_100 &gt;= 110.                  ) _counters.at(&quot;SR1j_110_infty&quot;).add_event(event);
+            if (MT2_100 &gt;= 120.                  ) _counters.at(&quot;SR1j_120_infty&quot;).add_event(event);
+            if (MT2_100 &gt;= 130.                  ) _counters.at(&quot;SR1j_130_infty&quot;).add_event(event);
+            if (MT2_100 &gt;= 140.                  ) _counters.at(&quot;SR1j_140_infty&quot;).add_event(event);
+            //if (MT2_100 &gt;= 100. &amp;&amp; MT2_100 &lt; 105.) _counters.at(&quot;SR1j_100_105&quot;).add_event(event);
+            //if (MT2_100 &gt;= 105. &amp;&amp; MT2_100 &lt; 110.) _counters.at(&quot;SR1j_105_110&quot;).add_event(event);
+            //if (MT2_100 &gt;= 110. &amp;&amp; MT2_100 &lt; 115.) _counters.at(&quot;SR1j_110_115&quot;).add_event(event);
+            //if (MT2_100 &gt;= 115. &amp;&amp; MT2_100 &lt; 120.) _counters.at(&quot;SR1j_115_120&quot;).add_event(event);
+            //if (MT2_100 &gt;= 120. &amp;&amp; MT2_100 &lt; 125.) _counters.at(&quot;SR1j_120_125&quot;).add_event(event);
+            //if (MT2_100 &gt;= 125. &amp;&amp; MT2_100 &lt; 130.) _counters.at(&quot;SR1j_125_130&quot;).add_event(event);
+            //if (MT2_100 &gt;= 130. &amp;&amp; MT2_100 &lt; 140.) _counters.at(&quot;SR1j_130_140&quot;).add_event(event);
+          }
+
+          double BDT = 0, BDTothers = 0;
+          /*
+          ***************************************************************** C1C1WW DF
+          */
+
+          if (!isSF &amp;&amp; njet == 0 &amp;&amp; nbjet == 0 &amp;&amp; METsig &gt; 8. &amp;&amp; MT2 &gt; 50.)
+          {
+            std::vector&lt;double&gt; inDF{lep1pT, lep2pT, MET, MT2, mll, DPhib, dphiMETl1, dphiMETl2, cosTstar, METsig};
+            auto DF_MVA = getMVA(&quot;lgbm_DF&quot;);
+            auto results = DF_MVA-&gt;evaluateMulti(inDF, 4);
+            BDT = results[1];
+
+            if (BDT &gt; 0.81                   )
+            {
+              //_counters.at(&quot;SR_inc&quot;).add_event(event);
+              _counters.at(&quot;SR_DF_81_inc&quot;).add_event(event);
+            }
+            //if (BDT &gt; 0.81   &amp;&amp; BDT &lt;= 0.8125) _counters.at(&quot;SR_DF_81_8125&quot;).add_event(event);
+            //if (BDT &gt; 0.8125 &amp;&amp; BDT &lt;= 0.815 ) _counters.at(&quot;SR_DF_8125_815&quot;).add_event(event);
+            //if (BDT &gt; 0.815  &amp;&amp; BDT &lt;= 0.8175) _counters.at(&quot;SR_DF_815_8175&quot;).add_event(event);
+            //if (BDT &gt; 0.8175 &amp;&amp; BDT &lt;= 0.82  ) _counters.at(&quot;SR_DF_8175_82&quot;).add_event(event);
+            if (BDT &gt; 0.82                   ) _counters.at(&quot;SR_DF_82_inc&quot;).add_event(event);
+            //if (BDT &gt; 0.82   &amp;&amp; BDT &lt;= 0.8225) _counters.at(&quot;SR_DF_82_8225&quot;).add_event(event);
+            //if (BDT &gt; 0.8225 &amp;&amp; BDT &lt;= 0.825 ) _counters.at(&quot;SR_DF_8225_825&quot;).add_event(event);
+            //if (BDT &gt; 0.825  &amp;&amp; BDT &lt;= 0.8275) _counters.at(&quot;SR_DF_825_8275&quot;).add_event(event);
+            //if (BDT &gt; 0.8275 &amp;&amp; BDT &lt;= 0.83  ) _counters.at(&quot;SR_DF_8275_83&quot;).add_event(event);
+            if (BDT &gt; 0.83                   ) _counters.at(&quot;SR_DF_83_inc&quot;).add_event(event);
+            //if (BDT &gt; 0.83   &amp;&amp; BDT &lt;= 0.8325) _counters.at(&quot;SR_DF_83_8325&quot;).add_event(event);
+            //if (BDT &gt; 0.8325 &amp;&amp; BDT &lt;= 0.835 ) _counters.at(&quot;SR_DF_8325_835&quot;).add_event(event);
+            //if (BDT &gt; 0.835  &amp;&amp; BDT &lt;= 0.8375) _counters.at(&quot;SR_DF_835_8375&quot;).add_event(event);
+            //if (BDT &gt; 0.8375 &amp;&amp; BDT &lt;= 0.84  ) _counters.at(&quot;SR_DF_8375_84&quot;).add_event(event);
+            if (BDT &gt; 0.84                   ) _counters.at(&quot;SR_DF_84_inc&quot;).add_event(event);
+            //if (BDT &gt; 0.84   &amp;&amp; BDT &lt;= 0.845 ) _counters.at(&quot;SR_DF_84_845&quot;).add_event(event);
+            //if (BDT &gt; 0.845  &amp;&amp; BDT &lt;= 0.85  ) _counters.at(&quot;SR_DF_845_85&quot;).add_event(event);
+            if (BDT &gt; 0.85                   ) _counters.at(&quot;SR_DF_85_inc&quot;).add_event(event);
+            //if (BDT &gt; 0.85   &amp;&amp; BDT &lt;= 0.86  ) _counters.at(&quot;SR_DF_85_86&quot;).add_event(event);
+            //if (BDT &gt; 0.86) _counters.at(&quot;SR_DF_86_inc&quot;).add_event(event);
+          }
+
+          /*
+          ***************************************************************** C1C1WW SF
+          */
+          //std::cout &lt;&lt; isSF &lt;&lt; &quot;  &quot; &lt;&lt;  TMath::Abs(mll - 91.) &lt;&lt; &quot;  &quot; &lt;&lt; njet &lt;&lt; &quot;  &quot; &lt;&lt; nbjet &lt;&lt; &quot;  &quot; &lt;&lt; METsig &lt;&lt; &quot;  &quot; &lt;&lt; MT2 &lt;&lt; std::endl;
+          if (isSF &amp;&amp; TMath::Abs(mll - 91.) &gt; 15. &amp;&amp; njet == 0 &amp;&amp; nbjet == 0 &amp;&amp; METsig &gt; 8. &amp;&amp; MT2 &gt; 50.)
+          {
+            std::vector&lt;double&gt; inSF{lep1pT, lep2pT, MET, MT2, mll, DPhib, dphiMETl1, dphiMETl2, cosTstar, METsig};
+            auto SF_MVA = getMVA(&quot;lgbm_SF&quot;);
+            auto results = SF_MVA-&gt;evaluateMulti(inSF, 4);
+
+            BDT = results[1];
+            BDTothers = results[3];
+
+            //std::cout &lt;&lt; BDT &lt;&lt; &quot;  &quot; &lt;&lt; BDTothers &lt;&lt; std::endl;
+            //exit(0);
+            if (BDTothers &lt; 0.01 &amp;&amp; BDT &gt; 0.77                 )
+            {
+              //_counters.at(&quot;SR_inc&quot;).add_event(event);
+              _counters.at(&quot;SR_SF_77_inc&quot;).add_event(event);
+            }
+            //if (BDTothers &lt; 0.01 &amp;&amp; BDT &gt; 0.77  &amp;&amp; BDT &lt;= 0.775) _counters.at(&quot;SR_SF_77_775&quot;).add_event(event);
+            //if (BDTothers &lt; 0.01 &amp;&amp; BDT &gt; 0.775 &amp;&amp; BDT &lt;= 0.78 ) _counters.at(&quot;SR_SF_775_78&quot;).add_event(event);
+            if (BDTothers &lt; 0.01 &amp;&amp; BDT &gt; 0.78                 ) _counters.at(&quot;SR_SF_78_inc&quot;).add_event(event);
+            //if (BDTothers &lt; 0.01 &amp;&amp; BDT &gt; 0.78  &amp;&amp; BDT &lt;= 0.785) _counters.at(&quot;SR_SF_78_785&quot;).add_event(event);
+            //if (BDTothers &lt; 0.01 &amp;&amp; BDT &gt; 0.785 &amp;&amp; BDT &lt;= 0.79 ) _counters.at(&quot;SR_SF_785_79&quot;).add_event(event);
+            if (BDTothers &lt; 0.01 &amp;&amp; BDT &gt; 0.79                 ) _counters.at(&quot;SR_SF_79_inc&quot;).add_event(event);
+            //if (BDTothers &lt; 0.01 &amp;&amp; BDT &gt; 0.79  &amp;&amp; BDT &lt;= 0.795) _counters.at(&quot;SR_SF_79_795&quot;).add_event(event);
+            //if (BDTothers &lt; 0.01 &amp;&amp; BDT &gt; 0.795 &amp;&amp; BDT &lt;= 0.80 ) _counters.at(&quot;SR_SF_795_80&quot;).add_event(event);
+            if (BDTothers &lt; 0.01 &amp;&amp; BDT &gt; 0.80                 ) _counters.at(&quot;SR_SF_80_inc&quot;).add_event(event);
+            //if (BDTothers &lt; 0.01 &amp;&amp; BDT &gt; 0.80  &amp;&amp; BDT &lt;= 0.81 ) _counters.at(&quot;SR_SF_80_81&quot;).add_event(event);
+            //if (BDTothers &lt; 0.01 &amp;&amp; BDT &gt; 0.81) _counters.at(&quot;SR_SF_81_inc&quot;).add_event(event);
+          }
+
+        }
+
+        /// Register results objects with the results for each SR; obs &amp; bkg numbers from the CONF note
+        void collect_results()
+        {
+
+          // Slepton regions
+          add_result(SignalRegionData(_counters.at(&quot;SR0j_100_infty&quot;), 58, {89., 63.}));
+          add_result(SignalRegionData(_counters.at(&quot;SR0j_110_infty&quot;), 39, {69., 47.}));
+          add_result(SignalRegionData(_counters.at(&quot;SR0j_120_infty&quot;), 30, {48., 32.}));
+          add_result(SignalRegionData(_counters.at(&quot;SR0j_130_infty&quot;), 23, {30., 18.}));
+          add_result(SignalRegionData(_counters.at(&quot;SR0j_140_infty&quot;), 7, {12.6, 5.8}));
+          add_result(SignalRegionData(_counters.at(&quot;SR1j_100_infty&quot;), 82, {91., 65.}));
+          add_result(SignalRegionData(_counters.at(&quot;SR1j_110_infty&quot;), 39, {67., 33.}));
+          add_result(SignalRegionData(_counters.at(&quot;SR1j_120_infty&quot;), 12, {21., 11.}));
+          add_result(SignalRegionData(_counters.at(&quot;SR1j_130_infty&quot;), 2, {9.7, 4.1}));
+          add_result(SignalRegionData(_counters.at(&quot;SR1j_140_infty&quot;), 0, {4., 0.8}));
+          // Chargino regions
+          add_result(SignalRegionData(_counters.at(&quot;SR_DF_81_inc&quot;), 477, {520, 420}));
+          add_result(SignalRegionData(_counters.at(&quot;SR_SF_77_inc&quot;), 143, {199, 135}));
+          add_result(SignalRegionData(_counters.at(&quot;SR_DF_82_inc&quot;), 340, {390, 310}));
+          add_result(SignalRegionData(_counters.at(&quot;SR_DF_83_inc&quot;), 222, {257, 205}));
+          add_result(SignalRegionData(_counters.at(&quot;SR_DF_84_inc&quot;), 130, {141, 111}));
+          add_result(SignalRegionData(_counters.at(&quot;SR_DF_85_inc&quot;), 69, {75, 55}));
+          add_result(SignalRegionData(_counters.at(&quot;SR_SF_78_inc&quot;), 86, {131, 85}));
+          add_result(SignalRegionData(_counters.at(&quot;SR_SF_79_inc&quot;), 47, {73, 43}));
+          add_result(SignalRegionData(_counters.at(&quot;SR_SF_80_inc&quot;), 22, {36, 20}));
+        }
+
+      protected:
+
+        void analysis_specific_reset()
+        {
+          for (auto&amp; pair : _counters) { pair.second.reset(); }
+        }
+
+    };
+
+    DEFINE_ANALYSIS_FACTORY(ATLAS_13TeV_2LEP0JET_EW_139invfb)
+
+  }
+}
+
+#endif
+</code></pre><hr><p>Updated on 2026-11-03 at 14:50:47 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.d5e27a6ed00168b7a66eb637878a6be7d054db51d0e613bbcfda12ab0569b62177253b4e6453c477574b3a38f50eff49a68f0e19112bd82a68c78a66cd8d05df.js integrity="sha512-1eJ6btABaLembrY3h4pr59BU21HQ5hO7z9oSqwVptiF3JTtOZFPEd1dLOjj1Dv9Jpo8OGREr2Cpox4pmzY0F3w==" crossorigin=anonymous defer></script>
+<script src=/js/highlight.min.9003483b4531b86467c8b801b1d5fc5439bb0d6bdb6c6a760a1b54abf37d6bbadf8423dbc81a3359c935c7705bb7d183b46131ba4a9c861b5d48e6a61501461a.js integrity="sha512-kANIO0UxuGRnyLgBsdX8VDm7DWvbbGp2ChtUq/N9a7rfhCPbyBozWck1x3Bbt9GDtGExukqchhtdSOamFQFGGg==" crossorigin=anonymous defer></script>
+<script src=/main.min.9342d29d0e3e250a2c03282306b766e004888dba0fd661a17d7b106655e013bf85733f086ad330e3df0929c713dd81c0ea835966fa92e4a1e38f7ea9680524ed.js integrity="sha512-k0LSnQ4+JQosAygjBrdm4ASIjboP1mGhfXsQZlXgE7+Fcz8IatMw498JKccT3YHA6oNZZvqS5KHjj36paAUk7Q==" crossorigin=anonymous defer></script>
+<script src=https://gambitbsm.org/index.min.3a8ee06d0c346f1fb70040b0fbcbaaacf335cb34023c408954406a05db2089fc2ca349119b9f7d68b9e7044e82b8fdc8bd9661b6ef8b118246c5a2079d7fa8e9.js integrity="sha512-Oo7gbQw0bx+3AECw+8uqrPM1yzQCPECJVEBqBdsgifwso0kRm599aLnnBE6CuP3IvZZhtu+LEYJGxaIHnX+o6Q==" crossorigin=anonymous defer></script></body></html>

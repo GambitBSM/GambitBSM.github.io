@@ -18,12 +18,12 @@ Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle
 ///
 ///  Combine several priors to a prior for
 ///  e.g. an entire model
-///  
+///
 ///
 ///  *********************************************
 ///
 ///  Authors (add name and date if you modify):
-///   
+///
 ///  \author Ben Farmer
 ///          (benjamin.farmer@monash.edu.au)
 ///  \date 2013 Dec
@@ -50,9 +50,9 @@ Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle
 #include &quot;gambit/ScannerBit/scanner_utils.hpp&quot;
 
 
-namespace Gambit 
+namespace Gambit
 {
-    namespace Priors 
+    namespace Priors
     {
         /// Special &quot;build-a-prior&quot; class
         /// This is the class to use for setting simple 1D priors (from the library above) on individual parameters.
@@ -61,32 +61,35 @@ namespace Gambit
 
         class CompositePrior : public BasePrior
         {
-                        
+
         private:
             // References to component prior objects
             std::vector&lt;BasePrior*&gt; my_subpriors;
             std::vector&lt;std::string&gt; shown_param_names;
-                
+            std::set&lt;std::string&gt; set_param_names;
+
         public:
-        
+
             // Constructors defined in composite.cpp
             CompositePrior(const Options &amp;model_options, const Options &amp;prior_options);
-            
+
             CompositePrior(const std::vector&lt;std::string&gt; &amp;params, const Options &amp;options);
-            
-            double log_prior_density(const std::unordered_map&lt;std::string, double&gt; &amp;physical) const override 
+
+            double log_prior_density(const std::unordered_map&lt;std::string, double&gt; &amp;physical) const override
             {
                 double log_pdf_density = 0.0;
                 for (auto it = my_subpriors.begin(), end = my_subpriors.end(); it != end; ++it)
                 {
                     log_pdf_density += (*it)-&gt;log_prior_density(physical);
                 }
-                
+
                 return log_pdf_density;
             }
-            
+
             inline std::vector&lt;std::string&gt; getShownParameters() const override { return shown_param_names; }
-            
+
+            inline std::vector&lt;std::string&gt; getSetParameters() const override { return std::vector&lt;std::string&gt;(set_param_names.begin(), set_param_names.end()); }
+
             // Transformation from unit hypercube to physical parameters
             void transform(hyper_cube_ref&lt;double&gt; unitPars, std::unordered_map&lt;std::string,double&gt; &amp;outputMap) const override
             {
@@ -122,7 +125,7 @@ namespace Gambit
                 auto round_trip = physical;
                 transform(unit, round_trip);
                 const double rtol = 1e-4;
-                for (const auto &amp;s : physical) 
+                for (const auto &amp;s : physical)
                 {
                     const double a = round_trip.at(s.first);
                     const double b = s.second;
@@ -133,25 +136,25 @@ namespace Gambit
                     }
                 }
             }
-            
+
             //~CompositePrior() noexcept
             ~CompositePrior()
             {
                 // Need to destroy all the prior objects that we created using 'new'
                 for (auto it = my_subpriors.begin(), end = my_subpriors.end(); it != end; it++)
-                {  
+                {
                     // Delete prior object
                     delete *it;
                 }
-            }  
+            }
         };
-            
+
         LOAD_PRIOR(composite, CompositePrior)
     } // end namespace Priors
 } // end namespace Gambit
 
 #endif
-</code></pre><hr><p>Updated on 2025-02-12 at 16:10:33 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.d5e27a6ed00168b7a66eb637878a6be7d054db51d0e613bbcfda12ab0569b62177253b4e6453c477574b3a38f50eff49a68f0e19112bd82a68c78a66cd8d05df.js integrity="sha512-1eJ6btABaLembrY3h4pr59BU21HQ5hO7z9oSqwVptiF3JTtOZFPEd1dLOjj1Dv9Jpo8OGREr2Cpox4pmzY0F3w==" crossorigin=anonymous defer></script>
+</code></pre><hr><p>Updated on 2026-11-03 at 14:50:45 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.d5e27a6ed00168b7a66eb637878a6be7d054db51d0e613bbcfda12ab0569b62177253b4e6453c477574b3a38f50eff49a68f0e19112bd82a68c78a66cd8d05df.js integrity="sha512-1eJ6btABaLembrY3h4pr59BU21HQ5hO7z9oSqwVptiF3JTtOZFPEd1dLOjj1Dv9Jpo8OGREr2Cpox4pmzY0F3w==" crossorigin=anonymous defer></script>
 <script src=/js/highlight.min.9003483b4531b86467c8b801b1d5fc5439bb0d6bdb6c6a760a1b54abf37d6bbadf8423dbc81a3359c935c7705bb7d183b46131ba4a9c861b5d48e6a61501461a.js integrity="sha512-kANIO0UxuGRnyLgBsdX8VDm7DWvbbGp2ChtUq/N9a7rfhCPbyBozWck1x3Bbt9GDtGExukqchhtdSOamFQFGGg==" crossorigin=anonymous defer></script>
 <script src=/main.min.9342d29d0e3e250a2c03282306b766e004888dba0fd661a17d7b106655e013bf85733f086ad330e3df0929c713dd81c0ea835966fa92e4a1e38f7ea9680524ed.js integrity="sha512-k0LSnQ4+JQosAygjBrdm4ASIjboP1mGhfXsQZlXgE7+Fcz8IatMw498JKccT3YHA6oNZZvqS5KHjj36paAUk7Q==" crossorigin=anonymous defer></script>
-<script src=https://gambitbsm.org/index.min.03ab9c2e460a36904d0b1544581433f337b9e5e23e6798a396683f418d37e30979da1ab2a8ef201c110075d73ccb12f8cc2605c7d9723f99bef11ed7c8b97844.js integrity="sha512-A6ucLkYKNpBNCxVEWBQz8ze55eI+Z5ijlmg/QY034wl52hqyqO8gHBEAddc8yxL4zCYFx9lyP5m+8R7XyLl4RA==" crossorigin=anonymous defer></script></body></html>
+<script src=https://gambitbsm.org/index.min.3a8ee06d0c346f1fb70040b0fbcbaaacf335cb34023c408954406a05db2089fc2ca349119b9f7d68b9e7044e82b8fdc8bd9661b6ef8b118246c5a2079d7fa8e9.js integrity="sha512-Oo7gbQw0bx+3AECw+8uqrPM1yzQCPECJVEBqBdsgifwso0kRm599aLnnBE6CuP3IvZZhtu+LEYJGxaIHnX+o6Q==" crossorigin=anonymous defer></script></body></html>

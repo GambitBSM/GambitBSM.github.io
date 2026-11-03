@@ -45,6 +45,7 @@ Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle
 #include &quot;plugin_interface.hpp&quot;
 #include &quot;scanner_plugin.hpp&quot;
 #include &quot;twalk.hpp&quot;
+#include &quot;mpi_distribute.hpp&quot;
 
 scanner_plugin(twalk, version(1, 0, 1))
 {
@@ -146,7 +147,7 @@ namespace Gambit
             double Rsum = massiveR, Rmax = massiveR;
             bool resumed = false;
 
-            unsigned int quit = 0; // signal for early shutdown
+            bool quit = 0; // signal for early shutdown
 
             std::chrono::time_point&lt;std::chrono::system_clock&gt; startTWalk;
 
@@ -164,8 +165,6 @@ namespace Gambit
                 set_resume_params(tints, talls);
             #endif
 
-            std::ofstream temp_file_out;
-
             if (mins_max &gt; 0 and rank == 0)
             {
                 // Begin timing of TWalk run
@@ -179,12 +178,15 @@ namespace Gambit
             }
 
             // Try opening the temporary file for saving the mutliplicities etc.
-            str filename = set_resume_params.get_temp_file_name(&quot;temp&quot;);
-            temp_file_out.open(filename, std::ofstream::binary | std::ofstream::app);
-            if (not temp_file_out.is_open()) scan_error().raise(LOCAL_INFO, &quot;Problem opening temp file &quot; + filename + &quot; in TWalk!&quot;);
+            std::ofstream temp_file_out;
+            std::string filename = set_resume_params.get_temp_file_name(&quot;temp&quot;);
 
             if (resumed)
             {
+                temp_file_out.open(filename, std::ofstream::binary | std::ofstream::app);
+                if (not temp_file_out.is_open()) 
+                    scan_err &lt;&lt; &quot;Problem opening temp file &quot; &lt;&lt; filename &lt;&lt; &quot; in TWalk!&quot; &lt;&lt; scan_end;
+                
                 #ifdef WITH_MPI
                     for (int i = 0; i &lt; numtasks; i++)
                     {
@@ -200,6 +202,10 @@ namespace Gambit
             }
             else
             {
+                temp_file_out.open(filename, std::ofstream::binary | std::ofstream::trunc);
+                if (not temp_file_out.is_open()) 
+                    scan_err &lt;&lt; &quot;Problem opening temp file &quot; &lt;&lt; filename &lt;&lt; &quot; in TWalk!&quot; &lt;&lt; scan_end;
+                /*
                 resumed = true;
                 for (t = 0; t &lt; NChains; t++)
                 {
@@ -227,14 +233,59 @@ namespace Gambit
                        break;
                     }
                 }
+                */
+                std::vector&lt;int&gt; loop_ranks;
+                loop_ranks = mpi_distribute(t, NChains)
+                {
+                    if (not quit)
+                    {
+                        for (int j = 0; j &lt; dimension; j++)
+                            a0[t][j] = (gDev[0]-&gt;Doub());
+                        chisq[t] = -LogLike(a0[t]);
+                        quit = Gambit::Scanner::Plugins::plugin_info.early_shutdown_in_progress();
+                        ids[t] = LogLike-&gt;getPtID();
+                        ranks[t] = rank;
+                    }
+                };
+                
+                #ifdef WITH_MPI
+                    bool quit_buf;
+                    MPI_Barrier(MPI_COMM_WORLD);
+                    MPI_Allreduce (&amp;quit, &amp;quit_buf, 1, MPI_C_BOOL, MPI_LOR, MPI_COMM_WORLD);
+                    quit = quit_buf;
+                #endif
+                
+                if(quit)
+                {
+                    std::cout
+                    #ifdef WITH_MPI
+                        &lt;&lt;&quot;Rank &quot;&lt;&lt;rank&lt;&lt;&quot;: &quot;
+                    #endif
+                    &lt;&lt;&quot;Quit signal received during TWalk chain initialisation, aborting run&quot; &lt;&lt; std::endl;
+                }
+                else
+                    resumed = true;
+                
+                //std::cout &lt;&lt; loop_ranks &lt;&lt; std::endl;
+                
+#ifdef WITH_MPI
+                for (int i = 0; i &lt; NChains; i++)
+                {
+                    MPI_Barrier(MPI_COMM_WORLD);
+                    MPI_Bcast (c_ptr(a0[i]), a0[i].size(), MPI_DOUBLE, loop_ranks[i], MPI_COMM_WORLD);
+                    MPI_Bcast (&amp;chisq[i], 1, MPI_DOUBLE, loop_ranks[i], MPI_COMM_WORLD);
+                    MPI_Bcast (&amp;ranks[i], 1, MPI_INT, loop_ranks[i], MPI_COMM_WORLD);
+                    MPI_Bcast (&amp;ids[i], 1, MPI_UNSIGNED_LONG_LONG, loop_ranks[i], MPI_COMM_WORLD);
+                }
+#endif
             }
 
-            #ifdef WITH_MPI
-                MPI_Barrier(MPI_COMM_WORLD);
-                MPI_Bcast (c_ptr(chisq), chisq.size(), MPI_DOUBLE, 0, MPI_COMM_WORLD);
-                MPI_Bcast (c_ptr(ids), ids.size(), MPI_UNSIGNED_LONG_LONG, 0, MPI_COMM_WORLD);
-                MPI_Bcast (c_ptr(ranks), ranks.size(), MPI_INT, 0, MPI_COMM_WORLD);
-            #endif
+/*#ifdef WITH_MPI
+            MPI_Barrier(MPI_COMM_WORLD);
+            MPI_Bcast (c_ptr(chisq), chisq.size(), MPI_DOUBLE, 0, MPI_COMM_WORLD);
+            MPI_Bcast (c_ptr(ids), ids.size(), MPI_UNSIGNED_LONG_LONG, 0, MPI_COMM_WORLD);
+            MPI_Bcast (c_ptr(ranks), ranks.size(), MPI_INT, 0, MPI_COMM_WORLD);
+#endif*/
 
             std::cout &lt;&lt; &quot;Metropolis Hastings/TWalk Algorithm Started&quot;  &lt;&lt; std::endl;
 
@@ -264,12 +315,12 @@ namespace Gambit
 
                     t = talls[rank];
                     tt = talls[rank + numtasks];
-                    double logZ = gDev[t]-&gt;Dev(aNext, a0, t, tt, NChains - numtasks, tints);
+                    double logZ = gDev[t]-&gt;Dev(aNext, a0, t, tt, NChains - numtasks, tints);// t -&gt; 0
                 #else
                     t = int(NChains*gDev[0]-&gt;Doub());
                     tt = int((NChains - 1)*gDev[0]-&gt;Doub());
                     if (tt &gt;= t) tt++;
-                    double logZ = gDev[t]-&gt;Dev(aNext, a0, t, tt);
+                    double logZ = gDev[t]-&gt;Dev(aNext, a0, t, tt); // t -&gt; 0
                 #endif
 
                 if(!(hyper_grid &amp;&amp; notUnit(aNext)))
@@ -398,11 +449,20 @@ namespace Gambit
                 }
 
                 quit = Gambit::Scanner::Plugins::plugin_info.early_shutdown_in_progress();
-                #ifdef WITH_MPI
+                /*#ifdef WITH_MPI
                     MPI_Barrier(MPI_COMM_WORLD);
                     MPI_Bcast (&amp;converged, 1, MPI_C_BOOL, 0, MPI_COMM_WORLD);
                     MPI_Bcast (&amp;quit, 1, MPI_UNSIGNED, 0, MPI_COMM_WORLD);
+                #endif*/
+                    
+                #ifdef WITH_MPI
+                    bool quit_buf;
+                    MPI_Barrier(MPI_COMM_WORLD);
+                    MPI_Bcast (&amp;converged, 1, MPI_C_BOOL, 0, MPI_COMM_WORLD);
+                    MPI_Allreduce (&amp;quit, &amp;quit_buf, 1, MPI_C_BOOL, MPI_LOR, MPI_COMM_WORLD);
+                    quit = quit_buf;
                 #endif
+                
                 if(quit)
                 {
                    std::cout
@@ -435,7 +495,7 @@ namespace Gambit
                 set_resume_params.dump(); // Better way
                 // This works I think, but it still has problems. In particular,
                 // it looks like you must resume with the same number of processes
-                // that you started the run with, which is kind of crap.
+                // that you started the run with, which is not good.
             }
 
             for (auto &amp;&amp;gd : gDev) delete gd;
@@ -444,10 +504,9 @@ namespace Gambit
             Gambit::Scanner::printer *out_stream = printer.get_stream(&quot;txt&quot;);
             std::ifstream temp_file_in(set_resume_params.get_temp_file_name(&quot;temp&quot;).c_str(), std::ifstream::binary);
             point_info info;
-            int i = 0;
+
             while (temp_file_in.read((char *)&amp;info, sizeof(point_info)))
-            {i++;
-                //std::cout&lt;&lt;&quot;Twalk rank &quot;&lt;&lt;rank&lt;&lt;&quot; printing mult and chain for &quot;&lt;&lt;i&lt;&lt;&quot;th point of posterior chain (rank=&quot;&lt;&lt;info.rank&lt;&lt;&quot;, pointID=&quot;&lt;&lt;info.id&lt;&lt;&quot;)&quot;&lt;&lt;std::endl;
+            {
                 out_stream-&gt;print(info.mult, &quot;Posterior&quot;, info.rank, info.id);
                 out_stream-&gt;print(info.chain, &quot;chain&quot;, info.rank, info.id);
             }
@@ -461,7 +520,7 @@ namespace Gambit
     }
 
 }
-</code></pre><hr><p>Updated on 2025-02-12 at 16:10:33 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.d5e27a6ed00168b7a66eb637878a6be7d054db51d0e613bbcfda12ab0569b62177253b4e6453c477574b3a38f50eff49a68f0e19112bd82a68c78a66cd8d05df.js integrity="sha512-1eJ6btABaLembrY3h4pr59BU21HQ5hO7z9oSqwVptiF3JTtOZFPEd1dLOjj1Dv9Jpo8OGREr2Cpox4pmzY0F3w==" crossorigin=anonymous defer></script>
+</code></pre><hr><p>Updated on 2026-11-03 at 14:50:45 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.d5e27a6ed00168b7a66eb637878a6be7d054db51d0e613bbcfda12ab0569b62177253b4e6453c477574b3a38f50eff49a68f0e19112bd82a68c78a66cd8d05df.js integrity="sha512-1eJ6btABaLembrY3h4pr59BU21HQ5hO7z9oSqwVptiF3JTtOZFPEd1dLOjj1Dv9Jpo8OGREr2Cpox4pmzY0F3w==" crossorigin=anonymous defer></script>
 <script src=/js/highlight.min.9003483b4531b86467c8b801b1d5fc5439bb0d6bdb6c6a760a1b54abf37d6bbadf8423dbc81a3359c935c7705bb7d183b46131ba4a9c861b5d48e6a61501461a.js integrity="sha512-kANIO0UxuGRnyLgBsdX8VDm7DWvbbGp2ChtUq/N9a7rfhCPbyBozWck1x3Bbt9GDtGExukqchhtdSOamFQFGGg==" crossorigin=anonymous defer></script>
 <script src=/main.min.9342d29d0e3e250a2c03282306b766e004888dba0fd661a17d7b106655e013bf85733f086ad330e3df0929c713dd81c0ea835966fa92e4a1e38f7ea9680524ed.js integrity="sha512-k0LSnQ4+JQosAygjBrdm4ASIjboP1mGhfXsQZlXgE7+Fcz8IatMw498JKccT3YHA6oNZZvqS5KHjj36paAUk7Q==" crossorigin=anonymous defer></script>
-<script src=https://gambitbsm.org/index.min.03ab9c2e460a36904d0b1544581433f337b9e5e23e6798a396683f418d37e30979da1ab2a8ef201c110075d73ccb12f8cc2605c7d9723f99bef11ed7c8b97844.js integrity="sha512-A6ucLkYKNpBNCxVEWBQz8ze55eI+Z5ijlmg/QY034wl52hqyqO8gHBEAddc8yxL4zCYFx9lyP5m+8R7XyLl4RA==" crossorigin=anonymous defer></script></body></html>
+<script src=https://gambitbsm.org/index.min.3a8ee06d0c346f1fb70040b0fbcbaaacf335cb34023c408954406a05db2089fc2ca349119b9f7d68b9e7044e82b8fdc8bd9661b6ef8b118246c5a2079d7fa8e9.js integrity="sha512-Oo7gbQw0bx+3AECw+8uqrPM1yzQCPECJVEBqBdsgifwso0kRm599aLnnBE6CuP3IvZZhtu+LEYJGxaIHnX+o6Q==" crossorigin=anonymous defer></script></body></html>

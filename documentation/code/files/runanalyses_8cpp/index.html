@@ -12,20 +12,8 @@ Physics</button><div class=collapse id=section-physics><ul class="btn-toggle-nav
 Help</button><div class=collapse id=section-help><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/help/common_problems_and_questions/>Common Problems and Questions</a></li><li><a class="docs-link rounded" href=/documentation/help/compiler_matrix/>Compiler Matrix</a></li><li><a class="docs-link rounded" href=/documentation/help/known_issues/>Known Issues</a></li><li><a class="docs-link rounded" href=/documentation/help/configuration_examples/>Configuration Examples</a></li><li><a class="docs-link rounded" href=/documentation/help/support/>Support</a></li></ul></div></li><li class=mb-1><button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle=collapse data-bs-target=#section-code aria-expanded=false>
 Code Reference</button><div class=collapse id=section-code><ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small"><li><a class="docs-link rounded" href=/documentation/code/index_classes/>Classes</a></li><li><a class="docs-link rounded" href=/documentation/code/index_files/>Files</a></li><li><a class="docs-link rounded" href=/documentation/code/index_pages/>Pages</a></li><li><a class="docs-link rounded" href=/documentation/code/index_namespaces/>Namespaces</a></li></ul></div></li></ul></nav></div><nav class="docs-toc d-none d-xl-block col-xl-3" aria-label="Secondary navigation"><div class=d-xl-none><button class="btn btn-outline-primary btn-sm doks-toc-toggle collapsed" type=button data-bs-toggle=collapse data-bs-target=#onThisPage aria-controls=doks-docs-nav aria-expanded=false aria-label="Toggle On this page navigation">
 <span>On this page</span>
-<span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg></span></button><div class=collapse id=onThisPage><div class="card card-body mt-3 py-1"><div class=page-links><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#defines>Defines</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#macros-documentation>Macros Documentation</a><ul><li><a href=#define-debug-prefix>define DEBUG_PREFIX</a></li><li><a href=#define-run-analyses>define RUN_ANALYSES</a></li></ul></li><li><a href=#source-code>Source code</a></li></ul></nav></div></div></div></div><div class="page-links d-none d-xl-block"><h3>On this page</h3><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#defines>Defines</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#macros-documentation>Macros Documentation</a><ul><li><a href=#define-debug-prefix>define DEBUG_PREFIX</a></li><li><a href=#define-run-analyses>define RUN_ANALYSES</a></li></ul></li><li><a href=#source-code>Source code</a></li></ul></nav></div></nav><main class="docs-content col-lg-11 col-xl-9 mx-xl-auto"><nav aria-label=breadcrumb><ol class=breadcrumb><li class=breadcrumb-item><a href=/>Home</a></li><li class=breadcrumb-item><a href=/documentation/>Documentation</a></li><li class=breadcrumb-item><a href=/documentation/code/>Code Reference</a></li><li class="breadcrumb-item active" aria-current=page>file src/runAnalyses.cpp</li></ol></nav><p class=lead></p><h1 id=file-src-runanalyses-cpp>file src/runAnalyses.cpp <a href=#file-src-runanalyses-cpp class=anchor aria-hidden=true>#</a></h1><p>[No description available] <a href=#detailed-description>More&mldr;</a></p><h2 id=namespaces>Namespaces <a href=#namespaces class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th>Name</th></tr></thead><tbody><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit/>Gambit</a></strong><br>TODO: see if we can use this one:</td></tr><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit_1_1colliderbit/>Gambit::ColliderBit</a></strong></td></tr></tbody></table><h2 id=defines>Defines <a href=#defines class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th></th><th>Name</th></tr></thead><tbody><tr><td></td><td><strong><a href=/documentation/code/files/runanalyses_8cpp/#define-debug-prefix>DEBUG_PREFIX</a></strong></td></tr><tr><td></td><td><strong><a href=/documentation/code/files/runanalyses_8cpp/#define-run-analyses>RUN_ANALYSES</a></strong>(NAME, EXPERIMENT, SMEARED_EVENT_DEP)<br>Run all analyses for EXPERIMENT.</td></tr></tbody></table><h2 id=detailed-description>Detailed Description <a href=#detailed-description class=anchor aria-hidden=true>#</a></h2><p><strong>Author</strong>:</p><ul><li>Abram Krislock (<a href=mailto:a.m.b.krislock@fys.uio.no>a.m.b.krislock@fys.uio.no</a>)</li><li>Aldo Saavedra</li><li>Andy Buckley</li><li>Chris Rogan (<a href=mailto:crogan@cern.ch>crogan@cern.ch</a>)</li><li>Pat Scott (<a href=mailto:p.scott@imperial.ac.uk>p.scott@imperial.ac.uk</a>)</li><li>Anders Kvellestad (<a href=mailto:anders.kvellestad@fys.uio.no>anders.kvellestad@fys.uio.no</a>)</li></ul><p><strong>Date</strong>:</p><ul><li>2014 Aug</li><li>2015 May</li><li>2015 Jul</li><li>2018 Jan</li><li>2019 Jan, Feb</li><li>2017 March</li><li>2018 Jan</li><li>2018 May</li><li>2021 Oct</li></ul><p>Accumulator functions for ColliderBit analyses.</p><hr><p>Authors (add name and date if you modify):</p><hr><h2 id=macros-documentation>Macros Documentation <a href=#macros-documentation class=anchor aria-hidden=true>#</a></h2><h3 id=define-debug-prefix>define DEBUG_PREFIX <a href=#define-debug-prefix class=anchor aria-hidden=true>#</a></h3><pre><code>#define DEBUG_PREFIX &quot;DEBUG: OMP thread &quot; &lt;&lt; omp_get_thread_num() &lt;&lt; &quot;:  &quot;
-</code></pre><h3 id=define-run-analyses>define RUN_ANALYSES <a href=#define-run-analyses class=anchor aria-hidden=true>#</a></h3><pre><code>#define RUN_ANALYSES(
-    NAME,
-    EXPERIMENT,
-    SMEARED_EVENT_DEP
-)
-    void NAME(AnalysisDataPointers&amp; result)                                   \
-    {                                                                         \
-      using namespace Pipes::NAME;                                            \
-      runAnalyses(result, #EXPERIMENT, *Dep::RunMC,                           \
-       *Dep::CAT(EXPERIMENT,AnalysisContainer), *Dep::SMEARED_EVENT_DEP,      \
-       *Loop::iteration, Loop::wrapup);                                       \
-    }
-</code></pre><p>Run all analyses for EXPERIMENT.</p><h2 id=source-code>Source code <a href=#source-code class=anchor aria-hidden=true>#</a></h2><pre><code>//   GAMBIT: Global and Modular BSM Inference Tool
+<span><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-expand" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Expand</title><polyline points="7 13 12 18 17 13"/><polyline points="7 6 12 11 17 6"/></svg><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" class="doks doks-collapse" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><title>Collapse</title><polyline points="17 11 12 6 7 11"/><polyline points="17 18 12 13 7 18"/></svg></span></button><div class=collapse id=onThisPage><div class="card card-body mt-3 py-1"><div class=page-links><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#defines>Defines</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#macros-documentation>Macros Documentation</a><ul><li><a href=#define-debug-prefix>define DEBUG_PREFIX</a></li></ul></li><li><a href=#source-code>Source code</a></li></ul></nav></div></div></div></div><div class="page-links d-none d-xl-block"><h3>On this page</h3><nav id=TableOfContents><ul><li><a href=#namespaces>Namespaces</a></li><li><a href=#defines>Defines</a></li><li><a href=#detailed-description>Detailed Description</a></li><li><a href=#macros-documentation>Macros Documentation</a><ul><li><a href=#define-debug-prefix>define DEBUG_PREFIX</a></li></ul></li><li><a href=#source-code>Source code</a></li></ul></nav></div></nav><main class="docs-content col-lg-11 col-xl-9 mx-xl-auto"><nav aria-label=breadcrumb><ol class=breadcrumb><li class=breadcrumb-item><a href=/>Home</a></li><li class=breadcrumb-item><a href=/documentation/>Documentation</a></li><li class=breadcrumb-item><a href=/documentation/code/>Code Reference</a></li><li class="breadcrumb-item active" aria-current=page>file src/runAnalyses.cpp</li></ol></nav><p class=lead></p><h1 id=file-src-runanalyses-cpp>file src/runAnalyses.cpp <a href=#file-src-runanalyses-cpp class=anchor aria-hidden=true>#</a></h1><p>[No description available] <a href=#detailed-description>More&mldr;</a></p><h2 id=namespaces>Namespaces <a href=#namespaces class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th>Name</th></tr></thead><tbody><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit/>Gambit</a></strong><br>TODO: see if we can use this one:</td></tr><tr><td><strong><a href=/documentation/code/namespaces/namespacegambit_1_1colliderbit/>Gambit::ColliderBit</a></strong></td></tr></tbody></table><h2 id=defines>Defines <a href=#defines class=anchor aria-hidden=true>#</a></h2><table><thead><tr><th></th><th>Name</th></tr></thead><tbody><tr><td></td><td><strong><a href=/documentation/code/files/runanalyses_8cpp/#define-debug-prefix>DEBUG_PREFIX</a></strong></td></tr></tbody></table><h2 id=detailed-description>Detailed Description <a href=#detailed-description class=anchor aria-hidden=true>#</a></h2><p><strong>Author</strong>:</p><ul><li>Abram Krislock (<a href=mailto:a.m.b.krislock@fys.uio.no>a.m.b.krislock@fys.uio.no</a>)</li><li>Aldo Saavedra</li><li>Andy Buckley</li><li>Chris Rogan (<a href=mailto:crogan@cern.ch>crogan@cern.ch</a>)</li><li>Pat Scott (<a href=mailto:p.scott@imperial.ac.uk>p.scott@imperial.ac.uk</a>)</li><li>Anders Kvellestad (<a href=mailto:anders.kvellestad@fys.uio.no>anders.kvellestad@fys.uio.no</a>)</li></ul><p><strong>Date</strong>:</p><ul><li>2014 Aug</li><li>2015 May</li><li>2015 Jul</li><li>2018 Jan</li><li>2019 Jan, Feb</li><li>2017 March</li><li>2018 Jan</li><li>2018 May</li><li>2021 Oct</li></ul><p>Accumulator functions for ColliderBit analyses.</p><hr><p>Authors (add name and date if you modify):</p><hr><h2 id=macros-documentation>Macros Documentation <a href=#macros-documentation class=anchor aria-hidden=true>#</a></h2><h3 id=define-debug-prefix>define DEBUG_PREFIX <a href=#define-debug-prefix class=anchor aria-hidden=true>#</a></h3><pre><code>#define DEBUG_PREFIX &quot;DEBUG: OMP thread &quot; &lt;&lt; omp_get_thread_num() &lt;&lt; &quot;:  &quot;
+</code></pre><h2 id=source-code>Source code <a href=#source-code class=anchor aria-hidden=true>#</a></h2><pre><code>//   GAMBIT: Global and Modular BSM Inference Tool
 //   *********************************************
 ///  \file
 ///
@@ -147,7 +135,7 @@ namespace Gambit
           cout &lt;&lt; DEBUG_PREFIX &lt;&lt; &quot;run&quot;+detname+&quot;Analyses: 'result' contains &quot; &lt;&lt; result.size() &lt;&lt; &quot; results:&quot; &lt;&lt; endl;
           for (const AnalysisData* a: result)
           {
-            cout &lt;&lt; DEBUG_PREFIX &lt;&lt; &quot;run&quot;+detname+&quot;Analyses: - &quot; &lt;&lt; a-&gt;analysis_name &lt;&lt; endl;            
+            cout &lt;&lt; DEBUG_PREFIX &lt;&lt; &quot;run&quot;+detname+&quot;Analyses: - &quot; &lt;&lt; a-&gt;analysis_name &lt;&lt; endl;
           }
         #endif
         return;
@@ -155,28 +143,43 @@ namespace Gambit
 
       if (iteration &lt;= BASE_INIT) return;
 
+      // Assign event ID. The event ID is only unique within
+      // the current collider and detector.
+      SmearedEvent.set_id(iteration);
+
       // Loop over contained analyses and run them.
       Container.analyze(SmearedEvent);
 
     }
 
-    /// Run all analyses for EXPERIMENT
-    #define RUN_ANALYSES(NAME, EXPERIMENT, SMEARED_EVENT_DEP)                 \
-    void NAME(AnalysisDataPointers&amp; result)                                   \
-    {                                                                         \
-      using namespace Pipes::NAME;                                            \
-      runAnalyses(result, #EXPERIMENT, *Dep::RunMC,                           \
-       *Dep::CAT(EXPERIMENT,AnalysisContainer), *Dep::SMEARED_EVENT_DEP,      \
-       *Loop::iteration, Loop::wrapup);                                       \
+    /// Run all analyses for the given experiment
+    void runATLASAnalyses(AnalysisDataPointers&amp; result)
+    {
+      using namespace Pipes::runATLASAnalyses;
+      runAnalyses(result, &quot;ATLAS&quot;, *Dep::RunMC,
+       *Dep::ATLASAnalysisContainer, *Dep::ATLASSmearedEvent,
+       *Loop::iteration, Loop::wrapup);
     }
 
-    RUN_ANALYSES(runATLASAnalyses, ATLAS, ATLASSmearedEvent)
-    RUN_ANALYSES(runCMSAnalyses, CMS, CMSSmearedEvent)
-    RUN_ANALYSES(runIdentityAnalyses, Identity, CopiedEvent)
+    void runCMSAnalyses(AnalysisDataPointers&amp; result)
+    {
+      using namespace Pipes::runCMSAnalyses;
+      runAnalyses(result, &quot;CMS&quot;, *Dep::RunMC,
+       *Dep::CMSAnalysisContainer, *Dep::CMSSmearedEvent,
+       *Loop::iteration, Loop::wrapup);
+    }
+
+    void runIdentityAnalyses(AnalysisDataPointers&amp; result)
+    {
+      using namespace Pipes::runIdentityAnalyses;
+      runAnalyses(result, &quot;Identity&quot;, *Dep::RunMC,
+       *Dep::IdentityAnalysisContainer, *Dep::CopiedEvent,
+       *Loop::iteration, Loop::wrapup);
+    }
 
   }
 }
-</code></pre><hr><p>Updated on 2025-02-12 at 16:10:36 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.d5e27a6ed00168b7a66eb637878a6be7d054db51d0e613bbcfda12ab0569b62177253b4e6453c477574b3a38f50eff49a68f0e19112bd82a68c78a66cd8d05df.js integrity="sha512-1eJ6btABaLembrY3h4pr59BU21HQ5hO7z9oSqwVptiF3JTtOZFPEd1dLOjj1Dv9Jpo8OGREr2Cpox4pmzY0F3w==" crossorigin=anonymous defer></script>
+</code></pre><hr><p>Updated on 2026-11-03 at 14:50:48 +0000</p></main></div></div></div><footer class="footer text-muted"><div class=container-xxl><div class=row><div class="col-lg-8 order-last order-lg-first"><ul class=list-inline><li class=list-inline-item>Powered by <a href=https://gohugo.io/>Hugo</a> and <a href=https://getdoks.org/>Doks</a></li></ul></div><div class="col-lg-8 order-first order-lg-last text-lg-end"><ul class=list-inline><li class=list-inline-item><a href=/license/>License</a></li></ul></div></div></div></footer><script src=/js/bootstrap.min.d5e27a6ed00168b7a66eb637878a6be7d054db51d0e613bbcfda12ab0569b62177253b4e6453c477574b3a38f50eff49a68f0e19112bd82a68c78a66cd8d05df.js integrity="sha512-1eJ6btABaLembrY3h4pr59BU21HQ5hO7z9oSqwVptiF3JTtOZFPEd1dLOjj1Dv9Jpo8OGREr2Cpox4pmzY0F3w==" crossorigin=anonymous defer></script>
 <script src=/js/highlight.min.9003483b4531b86467c8b801b1d5fc5439bb0d6bdb6c6a760a1b54abf37d6bbadf8423dbc81a3359c935c7705bb7d183b46131ba4a9c861b5d48e6a61501461a.js integrity="sha512-kANIO0UxuGRnyLgBsdX8VDm7DWvbbGp2ChtUq/N9a7rfhCPbyBozWck1x3Bbt9GDtGExukqchhtdSOamFQFGGg==" crossorigin=anonymous defer></script>
 <script src=/main.min.9342d29d0e3e250a2c03282306b766e004888dba0fd661a17d7b106655e013bf85733f086ad330e3df0929c713dd81c0ea835966fa92e4a1e38f7ea9680524ed.js integrity="sha512-k0LSnQ4+JQosAygjBrdm4ASIjboP1mGhfXsQZlXgE7+Fcz8IatMw498JKccT3YHA6oNZZvqS5KHjj36paAUk7Q==" crossorigin=anonymous defer></script>
-<script src=https://gambitbsm.org/index.min.03ab9c2e460a36904d0b1544581433f337b9e5e23e6798a396683f418d37e30979da1ab2a8ef201c110075d73ccb12f8cc2605c7d9723f99bef11ed7c8b97844.js integrity="sha512-A6ucLkYKNpBNCxVEWBQz8ze55eI+Z5ijlmg/QY034wl52hqyqO8gHBEAddc8yxL4zCYFx9lyP5m+8R7XyLl4RA==" crossorigin=anonymous defer></script></body></html>
+<script src=https://gambitbsm.org/index.min.3a8ee06d0c346f1fb70040b0fbcbaaacf335cb34023c408954406a05db2089fc2ca349119b9f7d68b9e7044e82b8fdc8bd9661b6ef8b118246c5a2079d7fa8e9.js integrity="sha512-Oo7gbQw0bx+3AECw+8uqrPM1yzQCPECJVEBqBdsgifwso0kRm599aLnnBE6CuP3IvZZhtu+LEYJGxaIHnX+o6Q==" crossorigin=anonymous defer></script></body></html>
